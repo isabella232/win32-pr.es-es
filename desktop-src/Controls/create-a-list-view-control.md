@@ -4,12 +4,12 @@ description: En este tema se muestra cómo crear un control list-view. Para crea
 ms.assetid: FEAA0ACA-A086-46DF-9DD2-A3E32F2CCDA3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d71eddfb60a2ea035a5afe62423289da40a47b61841d3ba58c4cafa2824a65b2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3050498b87aaf701249a06cfe2c3ad18afdc1d84
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119826615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061403"
 ---
 # <a name="how-to-create-a-list-view-control"></a>Cómo crear un control List-View control
 

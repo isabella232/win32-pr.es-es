@@ -4,12 +4,12 @@ ms.assetid: addde51d-2982-4964-b16a-406fea89a0ce
 title: Filtro de filtro de filtro de AVI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa074f5ad4a72fe1e1a32f45baa4888a526b1a0532a562c2fadb7753ea71e0aa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 212ab58eb3800e0ad5531ebc5c50d3b054e7866c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118159277"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161719"
 ---
 # <a name="avi-compressor-filter"></a>Filtro de filtro de filtro de AVI
 
@@ -26,7 +26,7 @@ Si el códec admite un cuadro de diálogo de configuración de VFW de estilo ant
 
 
 
-| Etiqueta | Valor |
+| Etiqueta | Value |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Interfaces de filtro                        | [**IAMVfwCompressDialogs,**](/windows/desktop/api/Strmif/nn-strmif-iamvfwcompressdialogs) [**IBaseFilter,**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)IPersistPropertyBag, ISpecifyPropertyPages                                                                                                             |
 | Tipos de medios de pin de entrada                    | VÍDEO \_ MEDIATYPE, MEDIASUBTYPE \_ NULL                                                                                                                                                                                                               |

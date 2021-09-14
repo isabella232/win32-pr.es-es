@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2daec97e66c160cc9da1369e44970f5d9e9ee7c5dcbbcea14cee1e4847a9df0a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef1e500f0492ad010e88719a467fda38f85e184c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118132374"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886500"
 ---
 # <a name="showmessageaction-object"></a>Objeto ShowMessageAction
 
@@ -28,7 +28,7 @@ ms.locfileid: "118132374"
 
 Para el scripting, representa una acción que muestra un cuadro de mensaje cuando se activa una tarea.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto ShowMessageAction** tiene estos tipos de miembros:
 
@@ -42,16 +42,16 @@ El **objeto ShowMessageAction** tiene estas propiedades.
 
 | Propiedad                                                        | Tipo de acceso           | Descripción                                                                                               |
 |:----------------------------------------------------------------|:----------------------|:----------------------------------------------------------------------------------------------------------|
-| [**Id**](action-id.md)<br/>                              | Lectura/escritura<br/> | Se hereda del [**objeto Action.**](action.md) Obtiene o establece el identificador de la acción.<br/> |
-| [**MessageBody**](showmessageaction-messagebody.md)<br/> | Lectura/escritura<br/> | Obtiene o establece el texto del mensaje que se muestra en el cuerpo del cuadro de mensaje.<br/>                |
-| [**Título**](showmessageaction-title.md)<br/>             | Lectura/escritura<br/> | Obtiene o establece el título del cuadro de mensaje.<br/>                                                     |
+| [**Id**](action-id.md)<br/>                              | Lectura y escritura<br/> | Se hereda del [**objeto Action.**](action.md) Obtiene o establece el identificador de la acción.<br/> |
+| [**MessageBody**](showmessageaction-messagebody.md)<br/> | Lectura y escritura<br/> | Obtiene o establece el texto del mensaje que se muestra en el cuerpo del cuadro de mensaje.<br/>                |
+| [**Título**](showmessageaction-title.md)<br/>             | Lectura y escritura<br/> | Obtiene o establece el título del cuadro de mensaje.<br/>                                                     |
 | [**Tipo**](action-type.md)<br/>                          | Solo lectura<br/>  | Se hereda del [**objeto Action.**](action.md) Obtiene el tipo de la acción.<br/>               |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para una tarea, que contiene una acción de cuadro de mensaje, se mostrará el cuadro de mensaje si la tarea está activada y la tarea tiene un tipo de inicio de sesión interactivo. Para establecer el tipo de inicio de sesión de tarea en interactivo, especifique 3 (**TASK \_ LOGON INTERACTIVE \_ \_ TOKEN**) o 4 (**TASK LOGON \_ \_ GROUP**) en la propiedad [**LogonType**](principal-logontype.md) de la entidad de seguridad de tarea o en el parámetro *logonType* de [**TaskFolder.RegisterTask**](taskfolder-registertask.md) [**o TaskFolder.RegisterTaskDefinition**](taskfolder-registertaskdefinition.md).
 
@@ -65,7 +65,7 @@ Para obtener más información y código de ejemplo para este objeto de scriptin
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |

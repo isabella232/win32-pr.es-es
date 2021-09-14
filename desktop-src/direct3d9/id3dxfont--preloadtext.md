@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 874b2d6106a7dcbfb8992a8677a28841f7d44e8b1512c6258b7e3bef45770eb3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 958979e3008cf9ae0b79e2de3591635187df0f12
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119629875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060597"
 ---
 # <a name="id3dxfontpreloadtext-method"></a>Método ID3DXFont::P reloadText
 
@@ -65,7 +65,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada a la función se resuelve como PreloadTextW. De lo contrario, la llamada de función se resuelve como PreloadTextA porque se usan cadenas ANSI.
 
@@ -86,7 +86,7 @@ Este método convierte internamente caracteres en glifos mediante la función GD
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

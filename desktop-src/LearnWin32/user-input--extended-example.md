@@ -8,9 +8,9 @@ Vamos a combinar todo lo que hemos aprendido sobre la entrada del usuario para c
 
 ![captura de pantalla del programa de dibujo](images/input03.png)
 
-El usuario puede dibujar puntos suspensivos en varios colores diferentes y seleccionar, mover o eliminar puntos suspensivos. Para que la interfaz de usuario sea sencilla, el programa no permite al usuario seleccionar los colores de elipse. En su lugar, el programa recorrerá automáticamente una lista predefinida de colores. El programa no admite formas distintas de los puntos suspensivos. Obviamente, este programa no ganará ningún premio por el software de gráficos. Sin embargo, sigue siendo un ejemplo útil del que aprender. Puede descargar el código fuente completo de [Ejemplo de dibujo simple](simple-drawing-sample.md). En esta sección solo se tratarán algunos aspectos destacados.
+El usuario puede dibujar puntos suspensivos en varios colores diferentes y seleccionar, mover o eliminar puntos suspensivos. Para que la interfaz de usuario sea sencilla, el programa no permite al usuario seleccionar los colores de elipse. En su lugar, el programa pasa automáticamente por una lista predefinida de colores. El programa no admite formas distintas de los puntos suspensivos. Obviamente, este programa no ganará ningún premio por el software de gráficos. Sin embargo, sigue siendo un ejemplo útil del que aprender. Puede descargar el código fuente completo de [Ejemplo de dibujo simple](simple-drawing-sample.md). En esta sección solo se tratarán algunos aspectos destacados.
 
-Los puntos suspensivos se representan en el programa mediante una estructura que contiene los datos de elipse ([**D2D1 \_ ELLIPSE**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_ellipse)) y el color ([**D2D1 \_ COLOR \_ F**](/windows/desktop/Direct2D/d2d1-color-f)). La estructura también define dos métodos: un método para dibujar la elipse y un método para realizar pruebas de impacto.
+Los puntos suspensivos se representan en el programa mediante una estructura que contiene los datos de elipse [**(D2D1 \_ ELLIPSE**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_ellipse)) y el color ([**D2D1 \_ COLOR \_ F**](/windows/desktop/Direct2D/d2d1-color-f)). La estructura también define dos métodos: un método para dibujar la elipse y un método para realizar pruebas de acceso.
 
 
 ```C++
@@ -63,7 +63,7 @@ El programa tiene tres modos:
 -   Modo de selección. El usuario puede seleccionar una elipse.
 -   Modo de arrastre. El usuario puede arrastrar una elipse seleccionada.
 
-El usuario puede cambiar entre el modo de dibujo y el modo de selección mediante los mismos métodos abreviados de teclado descritos en [Tablas de aceleradores](accelerator-tables.md). Desde el modo de selección, el programa cambia al modo de arrastre si el usuario hace clic en una elipse. Vuelve al modo de selección cuando el usuario suelta el botón del mouse. La selección actual se almacena como un iterador en la lista de puntos suspensivos. El método auxiliar devuelve un puntero a la elipse seleccionada o el valor `MainWindow::Selection` **nullptr** si no hay ninguna selección.
+El usuario puede cambiar entre el modo de dibujo y el modo de selección mediante los mismos métodos abreviados de teclado que se describen en [Tablas de aceleradores](accelerator-tables.md). Desde el modo de selección, el programa cambia al modo de arrastre si el usuario hace clic en una elipse. Vuelve al modo de selección cuando el usuario suelta el botón del mouse. La selección actual se almacena como iterador en la lista de puntos suspensivos. El método auxiliar `MainWindow::Selection` devuelve un puntero a la elipse seleccionada o el valor **nullptr** si no hay ninguna selección.
 
 
 ```C++
@@ -93,14 +93,14 @@ En la tabla siguiente se resumen los efectos de la entrada del mouse en cada uno
 | Entrada del mouse      | Modo de dibujo                                          | Modo de selección                                                                                                                               | Modo de arrastre                  |
 |------------------|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
 | Botón izquierdo hacia abajo | Establezca la captura del mouse y empiece a dibujar una nueva elipse. | Libere la selección actual y realice una prueba de selección. Si se pulsa una elipse, capture el cursor, selecciónelo y cambie al modo de arrastre. | No se requiere ninguna acción.                 |
-| Movimiento del mouse       | Si el botón izquierdo está abajo, cambie el tamaño de la elipse.    | No se requiere ninguna acción.                                                                                                                                   | Mueva la elipse seleccionada. |
-| Botón izquierdo hacia arriba   | Deje de dibujar la elipse.                          | No se requiere ninguna acción.                                                                                                                                   | Cambie al modo de selección.  |
+| Movimiento del mouse       | Si el botón izquierdo está abajo, cambie el tamaño de los puntos suspensivos.    | No se requiere ninguna acción.                                                                                                                                   | Mueva los puntos suspensivos seleccionados. |
+| Botón izquierdo hacia arriba   | Deje de dibujar los puntos suspensivos.                          | No se requiere ninguna acción.                                                                                                                                   | Cambie al modo de selección.  |
 
 
 
  
 
-El método siguiente de la `MainWindow` clase controla los mensajes WM [**\_ LBUTTONDOWN.**](/windows/desktop/inputdev/wm-lbuttondown)
+El método siguiente de la `MainWindow` clase controla los mensajes [**\_ LBUTTONDOWN de WM.**](/windows/desktop/inputdev/wm-lbuttondown)
 
 
 ```C++
@@ -142,9 +142,9 @@ void MainWindow::OnLButtonDown(int pixelX, int pixelY, DWORD flags)
 
 
 
-Las coordenadas del mouse se pasan a este método en píxeles y, a continuación, se convierten en DIP. Es importante no confundir estas dos unidades. Por ejemplo, la [**función DragDetect**](/windows/desktop/api/winuser/nf-winuser-dragdetect) usa píxeles, pero el dibujo y las pruebas de impacto usan DIP. La regla general es que las funciones relacionadas con las ventanas o la entrada del mouse usan píxeles, mientras que Direct2D y DirectWrite DIP. Pruebe siempre el programa con una configuración de valores altos de PPP y recuerde marcar el programa como compatible con PPP. Para obtener más información, vea [PPP y Device-Independent Píxeles](dpi-and-device-independent-pixels.md).
+Las coordenadas del mouse se pasan a este método en píxeles y, a continuación, se convierten en DIP. Es importante no confundir estas dos unidades. Por ejemplo, la [**función DragDetect**](/windows/desktop/api/winuser/nf-winuser-dragdetect) usa píxeles, pero el dibujo y las pruebas de impacto usan DIP. La regla general es que las funciones relacionadas con las ventanas o la entrada del mouse usan píxeles, mientras que Direct2D DirectWrite usan DIP. Pruebe siempre el programa con una configuración de valores altos de PPP y recuerde marcar el programa como compatible con PPP. Para obtener más información, vea [PPP y Device-Independent Píxeles](dpi-and-device-independent-pixels.md).
 
-Este es el código que controla los [**mensajes \_ WM MOUSEMOVE.**](/windows/desktop/inputdev/wm-mousemove)
+Este es el código que controla los [**mensajes \_ MOUSEMOVE de WM.**](/windows/desktop/inputdev/wm-mousemove)
 
 
 ```C++
@@ -178,7 +178,7 @@ void MainWindow::OnMouseMove(int pixelX, int pixelY, DWORD flags)
 
 
 
-La lógica para cambiar el tamaño de una elipse se describió anteriormente, en la sección [Ejemplo: Círculos de dibujo](mouse-movement.md). Observe también la llamada a [**InvalidateRect**](/windows/desktop/api/winuser/nf-winuser-invalidaterect). Esto se asegura de que la ventana se vuelva a dibujar. El código siguiente controla los [**mensajes \_ LBUTTONUP de WM.**](/windows/desktop/inputdev/wm-lbuttonup)
+La lógica para cambiar el tamaño de una elipse se describió anteriormente, en la sección [Ejemplo: Círculos de dibujo](mouse-movement.md). Observe también la llamada a [**InvalidateRect**](/windows/desktop/api/winuser/nf-winuser-invalidaterect). Esto asegura que la ventana se vuelva a dibujar. El código siguiente controla los [**mensajes \_ LBUTTONUP de WM.**](/windows/desktop/inputdev/wm-lbuttonup)
 
 
 ```C++
@@ -199,9 +199,9 @@ void MainWindow::OnLButtonUp()
 
 
 
-Como puede ver, los controladores de mensajes para la entrada del mouse tienen código de bifurcación, dependiendo del modo actual. Este es un diseño aceptable para este programa bastante sencillo. Sin embargo, podría volverse demasiado complejo si se agregan nuevos modos. Para un programa más grande, una arquitectura de controlador de vista de modelos (MVC) podría ser un mejor diseño. En este tipo de arquitectura, el *controlador*, que controla la entrada del usuario, está separado del modelo *,* que administra los datos de la aplicación.
+Como puede ver, los controladores de mensajes para la entrada del mouse tienen código de bifurcación, dependiendo del modo actual. Se trata de un diseño aceptable para este programa bastante sencillo. Sin embargo, podría volverse demasiado complejo si se agregan nuevos modos. Para un programa más grande, una arquitectura de controlador de vista de modelos (MVC) podría ser un mejor diseño. En este tipo de arquitectura, el *controlador*, que controla la entrada del usuario, se separa del modelo *,* que administra los datos de la aplicación.
 
-Cuando el programa cambia de modo, el cursor cambia para enviar comentarios al usuario.
+Cuando el programa cambia de modo, el cursor cambia para proporcionar comentarios al usuario.
 
 
 ```C++
@@ -233,7 +233,7 @@ void MainWindow::SetMode(Mode m)
 
 
 
-Por último, recuerde establecer el cursor cuando la ventana reciba un [**mensaje \_ SETCURSOR de WM:**](/windows/desktop/menurc/wm-setcursor)
+Por último, recuerde establecer el cursor cuando la ventana recibe un [**mensaje \_ SETCURSOR de WM:**](/windows/desktop/menurc/wm-setcursor)
 
 
 ```C++

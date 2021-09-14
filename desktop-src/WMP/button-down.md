@@ -1,9 +1,9 @@
 ---
-title: BOTÓN. abajo
-description: El atributo Down especifica o recupera un valor que indica si el botón está en la posición arriba o abajo.
+title: BUTTON.down
+description: El atributo down especifica o recupera un valor que indica si button está en la posición arriba o abajo.
 ms.assetid: 75398e8c-b13e-4836-b487-ed880da753ea
 keywords:
-- BOTÓN. bajar ventanas Media Player
+- Button.down Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,15 +13,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 29a0e2c7f97f782b51c145f3974f1490d0286fbe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105699766"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889492"
 ---
-# <a name="buttondown"></a>BOTÓN. abajo
+# <a name="buttondown"></a>BUTTON.down
 
-El atributo **Down** especifica o recupera un valor que indica si el **botón** está en la posición arriba o abajo.
+El **atributo** down especifica o recupera un valor que indica si **button** está en la posición arriba o abajo.
 
 ``` syntax
         elementID.down
@@ -29,14 +29,14 @@ El atributo **Down** especifica o recupera un valor que indica si el **botón** 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un **valor booleano** de lectura/escritura.
+Este atributo es un booleano de lectura **y escritura.**
 
 
 
 | Value | Descripción                                                   |
 |-------|---------------------------------------------------------------|
-| true  | Indica que el **botón** está en la posición hacia abajo.        |
-| false | Predeterminada. Indica que el **botón** está en la posición arriba. |
+| true  | Indica que button **está** en la posición de abajo.        |
+| false | Predeterminada. Indica que button **está** en la posición de arriba. |
 
 
 
@@ -44,7 +44,7 @@ Este atributo es un **valor booleano** de lectura/escritura.
 
 ## <a name="remarks"></a>Observaciones
 
-Para que un **botón** permanezca en la posición hacia abajo **, se** debe establecer en true. De forma predeterminada, la **permanencia** es falsa y se omitirá cualquier intento **de establecer en** true.
+Para que **button** permanezca en la posición de abajo, el valor **de sticky** debe establecerse en true. De forma predeterminada, **sticky** es false y cualquier intento de establecer **en** true se omitirá.
 
 Si se especifica un valor no válido, se mantiene el estado anterior.
 
@@ -54,21 +54,21 @@ Si se especifica un valor no válido, se mantiene el estado anterior.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior<br/> |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Elemento BUTTON**](button-element.md)
 </dt> <dt>
 
-[**BUTTON. downImage**](button-downimage.md)
+[**BUTTON.downImage**](button-downimage.md)
 </dt> <dt>
 
-[**BUTTON. downToolTip**](button-downtooltip.md)
+[**BUTTON.downToolTip**](button-downtooltip.md)
 </dt> </dl>
 
  

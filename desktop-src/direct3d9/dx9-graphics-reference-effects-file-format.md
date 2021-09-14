@@ -4,12 +4,12 @@ ms.assetid: 7358ac24-3f09-410d-8d19-6597295cc456
 title: Formato de efecto (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f7579d203118df76c9d0065897141c76c67ade5ebf210cb8966ded2e1e0da6b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f7195e21eade88dbeba417bcfa90d51f7cae534
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119986075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060665"
 ---
 # <a name="effect-format-direct3d-9"></a>Formato de efecto (Direct3D 9)
 

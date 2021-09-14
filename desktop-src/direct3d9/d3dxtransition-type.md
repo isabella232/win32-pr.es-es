@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: f451b94fe204a82cd15c65e424cc214025aa670f82af5224897100cbc6f8f6e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0ca6ef7f9dcee8e865a1cd4089aecd1bc239d5d4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117730942"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060716"
 ---
-# <a name="d3dxtransition_type-enumeration"></a>Enumeración D3DXTRANSITION \_ TYPE
+# <a name="d3dxtransition_type-enumeration"></a>D3DXTRANSITION \_ TYPE (enumeración)
 
 Define el estilo de transición entre los valores de una animación de malla.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -51,18 +51,18 @@ Transición lineal entre valores.
 <span id="D3DXTRANSITION_EASEINEASEOUT"></span><span id="d3dxtransition_easeineaseout"></span>**D3DXTRANSITION \_ EASEINEASEOUT**
 </dt> <dd>
 
-Transición spline de fácil entrada y salida entre valores.
+Transición de spline de facilidad de entrada y salida entre valores.
 
 </dd> <dt>
 
 <span id="D3DXTRANSITION_FORCE_DWORD"></span><span id="d3dxtransition_force_dword"></span>**D3DXTRANSITION \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase a un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El cálculo de la rampa de la facilidad de entrada a la salida se calcula de la siguiente manera:
 
@@ -72,12 +72,12 @@ El cálculo de la rampa de la facilidad de entrada a la salida se calcula de la 
 donde la rampa es una función Q(t) con las siguientes propiedades:
 
 -   Q(t) es una spline cúbica.
--   Q(t) interpola entre x e y como intervalos t de 0 a 1.
+-   Q(t) interpola entre x e y, ya que t oscila entre 0 y 1.
 -   Q(t) es horizontal cuando t = 0 y t = 1.
 
 Matemáticamente, esto se traduce en:
 
-<dl> Q(t) = At'+ Bt' + Ct + D (y, por lo tanto, Q'(t) = 3Atincompatibilidad + 2Bt + C)  
+<dl> Q(t) = Atincompatibilidad + Btincompatibilidad + Ct + D (y, por lo tanto, Q'(t) = 3Atincompatibilidad + 2Bt + C)  
 2a) Q(0) = x  
 2b) Q(1) = y  
 3a) Q'(0) = 0  
@@ -88,7 +88,7 @@ Solución de A, B, C, D:
 
 <dl> D = x (de 2a)  
 C = 0 (de 3a)  
-3A + 2B = 0 (de 3b)  
+3A + 2B = 0 (desde 3b)  
 A + B = y - x (de 2b y D = x)  
 </dl>
 
@@ -107,7 +107,7 @@ Por lo tanto:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

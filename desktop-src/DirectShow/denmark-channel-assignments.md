@@ -4,12 +4,12 @@ ms.assetid: 6ef5e1b9-08a0-4f3e-a26f-cf5bdf4ea464
 title: Asignaciones de canales de Dinamarca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd54c7161be11375fb899b985ecbf1f00f5d23de31e808fcfd23616b984932f2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 33597d1f6a3d0e32365630362dcd3d7dd83272a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120079275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061231"
 ---
 # <a name="denmark-channel-assignments"></a>Asignaciones de canales de Dinamarca
 

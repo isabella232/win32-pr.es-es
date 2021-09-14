@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Win32_ClusterShare métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28410ff871e949ce4f1f4056f7f0b109c5d36a948324fa7a4d29989b6ff7c076
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f502f4cf98914f90e9560786e3264e890026a21
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119020303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160326"
 ---
 # <a name="win32_clustershare-methods"></a>Métodos ClusterShare de Win32 \_
 

@@ -16,7 +16,7 @@ keywords:
 - destinos de representación, control de errores
 - el control de errores
 - pinceles
-- destinos de representación, pinceles
+- representar destinos, pinceles
 - geometries
 - Direct2D, geometrías
 - mapas de bits para Direct2D
@@ -26,11 +26,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f757ea6f1dd2b5db0d0c96297098bc6a8443bf25
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882847"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162553"
 ---
 # <a name="direct2d-api-overview"></a>Introducción a la API de Direct2D
 
@@ -92,7 +92,7 @@ En la raíz de la API de Direct2D se encuentran las interfaces [**ID2D1Factory**
 -   Los recursos independientes del dispositivo no están asociados a un dispositivo de representación determinado y pueden conservarse durante la vida útil de una aplicación.
 -   Los recursos dependientes del dispositivo están asociados a un dispositivo de representación determinado y dejan de funcionar si se quita ese dispositivo.
 
-(Para más información sobre los recursos y el uso compartido de recursos, consulte Información [general sobre los recursos).](resources-and-resource-domains.md)
+(Para obtener más información sobre los recursos y el uso compartido de recursos, vea Información [general sobre los recursos).](resources-and-resource-domains.md)
 
 ## <a name="the-id2d1factory-interface"></a>La interfaz ID2D1Factory
 
@@ -104,7 +104,7 @@ Un generador define un conjunto de métodos Create *Resource* que pueden generar
 -   Los bloques de estado de dibujo son objetos que almacenan información de estado de dibujo, como la transformación actual y el modo de suavizado de contorno.
 -   Las geometrías son objetos que representan formas simples y potencialmente complejas.
 
-Uno de los objetos más útiles que puede crear un generador [**es ID2D1RenderTarget,**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)que se describe en la sección siguiente.
+Uno de los objetos más útiles que puede crear un generador es [**ID2D1RenderTarget,**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)que se describe en la sección siguiente.
 
 ## <a name="render-targets"></a>Destinos de representación
 
@@ -189,7 +189,7 @@ Dado que la creación de recursos de mapa de bits en destinos de representación
 
 ## <a name="drawing-text"></a>Dibujar texto
 
-Direct2D se diseñó para trabajar con las operaciones de texto de la nueva API de texto, DirectWrite. Para que el uso de DirectWrite API sea más sencillo, los destinos de representación proporcionan tres métodos para representar DirectWrite recursos de texto: [**DrawText**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)), [**DrawTextLayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout)y [**DrawGlyphRun**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawglyphrun). Dado que Direct2D usa la GPU para el proceso de representación de texto ClearType, Direct2D proporciona un menor uso de CPU que GDI para las operaciones de texto y una mejor escalabilidad a medida que hay más capacidad de procesamiento de GPU disponible.
+Direct2D se diseñó para trabajar con las operaciones de texto de la nueva API de texto, DirectWrite. Para que el uso de DirectWrite API sea más sencillo, los destinos de representación proporcionan tres métodos para representar DirectWrite recursos de texto: [**DrawText,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) [**DrawTextLayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout)y [**DrawGlyphRun**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawglyphrun). Dado que Direct2D usa la GPU para el proceso de representación de texto ClearType, Direct2D proporciona un menor uso de CPU que GDI para las operaciones de texto y una mejor escalabilidad a medida que hay más capacidad de procesamiento de GPU disponible.
 
 [**Id2D1RenderTarget::D rawText**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) está diseñado para los escenarios más sencillos que implican la representación de una cadena de texto Unicode con formato mínimo. Se proporciona un diseño más complejo y flexibilidad tipográfica a través del método [**ID2D1RenderTarget::D rawTextLayout,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) que usa un objeto [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) para especificar el contenido y el formato que se va a representar. **IDWriteTextLayout permite** especificar formatos individuales para subcadenas de texto y otras opciones avanzadas de tipografía.
 
@@ -197,7 +197,7 @@ En escenarios en los que se requiere un control preciso del diseño de nivel de 
 
 Para usar la API DirectWrite, incluya el encabezado dwrite.h. Al igual que Direct2D, DirectWrite un generador, [**IDWriteFactory,**](/windows/win32/api/dwrite/nn-dwrite-idwritefactory) para crear objetos de texto. Use la [**función DWriteCreateFactory**](/windows/win32/api/dwrite/nf-dwrite-dwritecreatefactory) para crear un generador y, a continuación, use sus métodos Create para crear DirectWrite recursos (como [**IDWriteTextFormat).**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode))
 
-Para obtener más información sobre DirectWrite, vea el tema [Introducing DirectWrite](../directwrite/introducing-directwrite.md) .
+Para obtener más información DirectWrite, vea el tema [Introducing DirectWrite](../directwrite/introducing-directwrite.md) .
 
 ## <a name="direct2d-primitives"></a>Primitivas de Direct2D
 

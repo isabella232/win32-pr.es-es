@@ -4,16 +4,16 @@ description: Muestra cómo combinar dos geometrías mediante Direct2D.
 ms.assetid: c5413e59-ae73-4797-b4ad-3a78ad700634
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d1baa10b78b1829da292656f44160c444e4441b5ef89b52b38a17efd375415b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8332421c62f49b60bb2186118ac7f741922fdc7c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119259585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163185"
 ---
 # <a name="how-to-combine-geometries"></a>Cómo combinar geometrías
 
-En este tema se describe cómo combinar dos geometrías. Direct2D admite cuatro modos para combinar geometrías: Unión, Intersección, XOR y Excluir. Estos modos se especifican en el tipo [**de enumeración D2D1 \_ COMBINE \_ MODE.**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_combine_mode)
+En este tema se describe cómo combinar dos geometrías. Direct2D admite cuatro modos para combinar geometrías: Unión, Intersección, XOR y Excluir. Estos modos se especifican en el tipo de [**enumeración D2D1 \_ COMBINE \_ MODE.**](/windows/desktop/api/d2d1/ne-d2d1-d2d1_combine_mode)
 
 **Para combinar dos geometrías mediante cualquiera de los cuatro modos**
 

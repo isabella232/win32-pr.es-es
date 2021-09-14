@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: da80cdb4810ea3e598ad9483ccf52e8033ccb1a5b7ee65351e2cfcc273a3415f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81e68c94420b3d7715845f8d6bd14e26b770b44f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118660022"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061777"
 ---
-# <a name="cbasedispatchgettypeinfocount-method"></a>CBaseDispatch.GetTypeInfoCount (método)
+# <a name="cbasedispatchgettypeinfocount-method"></a>Método CBaseDispatch.GetTypeInfoCount
 
 El `GetTypeInfoCount` método recupera el número de interfaces de información de tipo que proporciona el objeto .
 
@@ -45,7 +45,7 @@ HRESULT GetTypeInfoCount(
 *pctinfo* 
 </dt> <dd>
 
-Puntero a una variable que recibe el número de interfaces de información de tipos proporcionadas por el objeto . Cuando el método vuelve, el valor es 1.
+Puntero a una variable que recibe el número de interfaces de información de tipos proporcionadas por el objeto . Cuando el método devuelve un resultado, el valor es 1.
 
 </dd> </dl>
 
@@ -75,7 +75,7 @@ Devuelve uno de los valores siguientes.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb95b707fa7e14b00e86c5a65949ff9fba3ce3db32745116fa65ca4c53ac1998
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 31cc87260d4b0fca74d6063c757e6c3dae0db850
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118342678"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889260"
 ---
 # <a name="buttongroupshowbackground"></a>BUTTONGROUP.showBackground
 
@@ -33,20 +33,20 @@ Este atributo es un booleano de lectura **y escritura.**
 
 
 
-| Valor | Descripción                                                                                |
+| Value | Descripción                                                                                |
 |-------|--------------------------------------------------------------------------------------------|
-| true  | Se muestran los botones y el área no ocupada por los botones se dibuja desde el mapa de bits Imagen. |
+| true  | Se muestran botones y el área no ocupada por los botones se dibuja desde el mapa de bits Imagen. |
 | false | Predeterminada. Solo se muestran los botones.                                                   |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando **showBackground** es true, toda la imagen **principal** estará visible.
 
-Cuando **showBackground** es false, solo se representarán las áreas correspondientes a **mappingImage** colors asignadas. En otras palabras, solo **estarán visibles los BUTTONELEMENTs** con **su mappingColor** asignado.
+Cuando **showBackground** es false, solo se representarán las áreas correspondientes a **mappingImage** colors asignadas. En otras palabras, solo estarán visibles **los BUTTONELEMENTs** con **su mappingColor** asignado.
 
 Si se especifica un valor no válido, se mantiene el estado anterior.
 
@@ -54,7 +54,7 @@ Si se especifica un valor no válido, se mantiene el estado anterior.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 

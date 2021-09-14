@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9fcb2203be9a88bdf9eac8e32ccaf22be2aed6e8e5aaf7d7bf8e96e4b70fb846
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e364b665ee993c6d0933d95fc2bacbea62a94fa5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120016565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965567"
 ---
 # <a name="jet_rstinfotostring-method"></a>JET_RSTINFO. Método ToString
 
@@ -59,7 +59,7 @@ public override string ToString()
 Tipo: [System.String](/dotnet/api/system.string)  
 Cadena [que](/dotnet/api/system.string) representa el objeto [JET_RSTINFO](./jet-rstinfo-class.md).  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

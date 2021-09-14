@@ -1,7 +1,7 @@
 ---
 description: Obsoleto. Use AMovieSetupRegisterFilter2 en su lugar.
 ms.assetid: 42278829-d09e-46c7-8f1a-fa4572f7cc00
-title: Función AMovieSetupRegisterFilter (Dllsetup. h)
+title: Función AMovieSetupRegisterFilter (Dllsetup.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,15 +17,15 @@ api_location:
 - Strmbasd.lib
 - Strmbasd.dll
 ms.openlocfilehash: 398d2d727e26feaca23d6bddbdcbc8a578d096eb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690518"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162301"
 ---
-# <a name="amoviesetupregisterfilter-function"></a>AMovieSetupRegisterFilter función)
+# <a name="amoviesetupregisterfilter-function"></a>Función AMovieSetupRegisterFilter
 
-Obsoleto. Use [**AMovieSetupRegisterFilter2**](amoviesetupregisterfilter2.md) en su lugar.
+Obsoleto. Use [**AMovieSetupRegisterFilter2 en**](amoviesetupregisterfilter2.md) su lugar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -67,7 +67,7 @@ Reservado.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,12 +75,12 @@ Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo con
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Dllsetup. h (incluir streams. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Dllsetup.h (incluir Secuencias.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

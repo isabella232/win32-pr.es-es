@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 84059a66a77744b7ea570473474f6b773beae8005b7c4a68e73e59c76829f13a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c9caeed17d42d121ae9263bf6c1fcd011ed573c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119794285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161641"
 ---
 # <a name="cameventset-method"></a>Método CAMEvent.Set
 
-El `Set` método señala el evento .
+El `Set` método señala el evento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El comportamiento depende de si el objeto es un evento de restablecimiento automático o un evento de restablecimiento manual:
 
@@ -62,7 +62,7 @@ El comportamiento depende de si el objeto es un evento de restablecimiento autom
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

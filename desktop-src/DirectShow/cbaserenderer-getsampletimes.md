@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2d759cbcf2a9638b54e6194bcac7e7b24254c0d37987995d511fb4ffce85f1ef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c389c2ea55ddb15c59fe30e03f392d68aa3b5ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118954964"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161620"
 ---
 # <a name="cbaserenderergetsampletimes-method"></a>Método CBaseRenderer.GetSampleTimes
 
@@ -82,7 +82,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El filtro llama a este método para determinar cómo debe controlar un ejemplo. Si el valor devuelto es S \_ OK, el filtro representa el ejemplo inmediatamente. Si el valor devuelto es S FALSE, el filtro programa el ejemplo para su \_ representación, en función de las marcas de tiempo. Si el valor devuelto es un código de error, el filtro rechaza el ejemplo.
 
@@ -99,7 +99,7 @@ Este método devuelve S OK si el ejemplo no tiene marcas de tiempo o si \_ el fi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

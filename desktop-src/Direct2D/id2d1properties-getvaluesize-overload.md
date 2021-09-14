@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 89837444579ed38841232ce1f8704a30d0a428e0ec8e30177f6bde85ec87e1e7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 88d4a36f72844b97e5a7ff28675a8a47e3b962d4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119075269"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162869"
 ---
 # <a name="id2d1propertiesgetvaluesize-methods"></a>Métodos ID2D1Properties::GetValueSize
 

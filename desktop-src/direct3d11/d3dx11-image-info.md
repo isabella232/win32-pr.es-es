@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64366755e9bb9398e8107d931ee5425d2fcee78fdd9d03487b9533270cc17c19
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 927967f8e76d0147ccc264bcbdd773191a170ae7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118536872"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060876"
 ---
-# <a name="d3dx11_image_info-structure"></a>Estructura D3DX11 \_ IMAGE \_ INFO
+# <a name="d3dx11_image_info-structure"></a>Estructura DE INFORMACIÓN DE \_ IMAGEN D3DX11 \_
 
 > [!Note]  
 > La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
@@ -50,7 +50,7 @@ typedef struct D3DX11_IMAGE_INFO {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -105,7 +105,7 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Número máximo de niveles de mapa mip en la textura. Vea los comentarios en [**D3D11 \_ TEXAS1D \_ SRV**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_tex1d_srv). El uso de 0 o D3DX11 DEFAULT hará que se cree una \_ cadena de asignación mip completa.
+Número máximo de niveles de mapa mip en la textura. Vea los comentarios en [**D3D11 \_ TEX1D \_ SRV**](/windows/desktop/api/D3D11/ns-d3d11-d3d11_tex1d_srv). El uso de 0 o D3DX11 DEFAULT hará que se cree una cadena \_ de asignación mip completa.
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Propiedades de recursos varios especificadas con una [**marca \_ \_ MISC \_ DE RECURSOS D3D11.**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
+Propiedades de recursos varios especificadas con una marca [**\_ \_ MISC \_ FLAG DE RECURSOS D3D11.**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag)
 
 </dd> <dt>
 
@@ -138,7 +138,7 @@ Tipo: **[ **DIMENSIÓN DE \_ RECURSOS \_ D3D11**](/windows/desktop/api/D3D11/ne-
 
 </dd> <dd>
 
-Valor [**DE DIMENSIÓN DE \_ RECURSOS \_ D3D11,**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_dimension) que identifica el tipo de recurso.
+Valor DE DIMENSIÓN DE [**\_ RECURSOS \_ D3D11,**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_dimension) que identifica el tipo de recurso.
 
 </dd> <dt>
 
@@ -153,9 +153,9 @@ Valor [**D3DX11 \_ IMAGE FILE \_ \_ FORMAT,**](d3dx11-image-file-format.md) que 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta estructura la usan métodos [**como: D3DX11GetImageInfoFromFile**](d3dx11getimageinfofromfile.md), [**D3DX11GetImageInfoFromMemory**](d3dx11getimageinfofrommemory.md)o [**D3DX11GetImageInfoFromResource**](d3dx11getimageinfofromresource.md).
+Esta estructura la usan métodos como: [**D3DX11GetImageInfoFromFile**](d3dx11getimageinfofromfile.md), [**D3DX11GetImageInfoFromMemory**](d3dx11getimageinfofrommemory.md)o [**D3DX11GetImageInfoFromResource**](d3dx11getimageinfofromresource.md).
 
 ## <a name="requirements"></a>Requisitos
 

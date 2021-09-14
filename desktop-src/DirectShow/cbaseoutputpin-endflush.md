@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a85df585a570d7b35a0ac052c922b23dcb605cf4869b3a44cab880f9b6bef21d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 53153c6dbd941390c7ef616ee36c56e01214c341
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119910485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061374"
 ---
 # <a name="cbaseoutputpinendflush-method"></a>Método CBaseOutputPin.EndFlush
 
@@ -44,9 +44,9 @@ Este método no tiene parámetros.
 
 Devuelve E \_ UNEXPECTED.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Solo se debe llamar a este método en los pines de entrada, por lo que la implementación **de CBaseOutputPin** devuelve E \_ UNEXPECTED.
+Solo se debe llamar a este método en los pines de entrada, por lo que la **implementación de CBaseOutputPin** devuelve E \_ UNEXPECTED.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Solo se debe llamar a este método en los pines de entrada, por lo que la implem
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

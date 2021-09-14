@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102603
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: be7c21c6a0a548a12dab7718a1a876df2871b4c3c9b08a81facb34ea8abda34a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af48904e5e007b397564c426d0870a8c7b62b1dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119477995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964480"
 ---
 # <a name="esentrecordtoobigforbackwardcompatibilityexception-members"></a>Miembros de EsentRecordTooBigForBackwardCompatibilityException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para JET_err. Excepciones recordTooBigForBackwardCompatibility.
+Clase base para JET_err. Excepciones RecordTooBigForBackwardCompatibility.
 
 El [tipo EsentRecordTooBigForBackwardCompatibilityException](./esentrecordtoobigforbackwardcompatibilityexception-class.md) expone los miembros siguientes.
 
@@ -164,7 +164,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

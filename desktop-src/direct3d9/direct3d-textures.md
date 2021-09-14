@@ -4,12 +4,12 @@ ms.assetid: 48dcbc86-631e-4bc7-b809-b0e4a0a9ae8e
 title: Texturas de Direct3D (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2ebce13b3db2669123c0acc1cc3aa83233fb4699440801dc69bd6862f14b3fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7afebd7217b36ad5f740616e198963314a1d2aca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119986125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888588"
 ---
 # <a name="direct3d-textures-direct3d-9"></a>Texturas de Direct3D (Direct3D 9)
 

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: ec3f934d9d94bfcc1129414b652de770d205b6e190b9f901c6e4f35768f59217
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 228884435322992b8c87d20a9f351161f945c43c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117732407"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060746"
 ---
 # <a name="d3dformat"></a>D3DFORMAT
 
@@ -116,7 +116,7 @@ typedef enum _D3DFORMAT {
 } D3DFORMAT;
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Hay varios tipos de formatos:
 
@@ -143,7 +143,7 @@ Tenga en cuenta que los formatos los proporcionan proveedores de hardware indepe
 
 ### <a name="backbuffer-or-display-formats"></a>BackBuffer o formatos de presentación
 
-Estos formatos son los únicos válidos para un búfer de reserva o una presentación.
+Estos formatos son los únicos válidos para un búfer de reserva o una pantalla.
 
 
 
@@ -169,7 +169,7 @@ Los búferes de profundidad, galería de símbolos, vértices e índices tienen 
 | Marcas de búfer               | Value | Formato                                                                                                                                        |
 |----------------------------|-------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | **D3DFMT \_ D16 \_ LOCKABLE**  | 70    | Profundidad de bits de búfer z de 16 bits.                                                                                                                    |
-| **D3DFMT \_ D32**            | 71    | Profundidad de bits del búfer z de 32 bits.                                                                                                                    |
+| **D3DFMT \_ D32**            | 71    | Profundidad de bits de búfer z de 32 bits.                                                                                                                    |
 | **D3DFMT \_ D15S1**          | 73    | Profundidad de bits de búfer z de 16 bits donde 15 bits están reservados para el canal de profundidad y 1 bit está reservado para el canal de galería de símbolos.                     |
 | **D3DFMT \_ D24S8**          | 75    | Profundidad de bits de búfer z de 32 bits con 24 bits para el canal de profundidad y 8 bits para el canal de galería de símbolos.                                             |
 | **D3DFMT \_ D24X8**          | 77    | Profundidad de bits de búfer z de 32 bits con 24 bits para el canal de profundidad.                                                                                |
@@ -195,7 +195,7 @@ Estas marcas se usan para texturas comprimidas:
 
 
 
-| Marcas de textura comprimida DXTn | Value                          | Formato                          |
+| Marcas de textura comprimida dxtn | Value                          | Formato                          |
 |-------------------------------|--------------------------------|---------------------------------|
 | **D3DFMT \_ DXT1**              | MAKEFOURCC('D', 'X', 'T', '1') | Formato de textura de compresión DXT1 |
 | **D3DFMT \_ DXT2**              | MAKEFOURCC('D', 'X', 'T', '2') | Formato de textura de compresión DXT2 |
@@ -211,7 +211,7 @@ El tiempo de ejecución no permitirá que una aplicación cree una superficie co
 
 ### <a name="floating-point-formats"></a>Floating-Point formatos
 
-Estas marcas se usan para los formatos de superficie de punto flotante. Estos formatos de 16 bits por canal también se conocen como formatos s10e5.
+Estas marcas se usan para formatos de superficie de punto flotante. Estos formatos de 16 bits por canal también se conocen como formatos s10e5.
 
 
 
@@ -245,7 +245,7 @@ Estos son los formatos FOURCC definidos:
 
 | Marcas FOURCC              | Value                          | Formato                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |---------------------------|--------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **D3DFMT \_ MULTI2 \_ ARGB8** | MAKEFOURCC('M', 'E', 'T','1')    | Textura multielemento (no comprimida)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| **D3DFMT \_ MULTI2 \_ ARGB8** | MAKEFOURCC('M', 'E', 'T', '1')    | Textura multielemento (no comprimida)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **D3DFMT \_ G8R8 \_ G8B8**    | MAKEFOURCC('G', 'R', 'G', 'B') | Un formato RGB empaquetado de 16 bits análogo a YUY2 (Y0U0, Y1V0, Y2U2, y así sucesivamente). Requiere un par de píxeles para representar correctamente el valor de color. El primer píxel del par contiene 8 bits de verde (en los 8 bits superiores) y 8 bits de rojo (en los 8 bits inferiores). El segundo píxel contiene 8 bits de verde (en los 8 bits superiores) y 8 bits de azul (en los 8 bits inferiores). Juntos, los dos píxeles comparten los componentes rojo y azul, mientras que cada uno tiene un componente verde único (G0R0, G1B0, G2R2, y así sucesivamente). El muestreador de textura no normaliza los colores al buscar en un sombreador de píxeles. permanecen en el intervalo de 0,0f a 255,0f. Esto es así para todos los modelos de sombreador de píxeles programables. Para el sombreador de píxeles de función fija, el hardware debe normalizarse al intervalo de 0.f a 1.f y tratarlo básicamente como la textura YUY2. El hardware que expone este formato debe tener el miembro PixelShader1xMaxValue de [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) establecido en un valor capaz de controlar ese intervalo. |
 | **D3DFMT \_ R8G8 \_ B8G8**    | MAKEFOURCC('R', 'G', 'B', 'G') | Un formato RGB empaquetado de 16 bits análogo a UYVY (U0Y0, V0Y1, U2Y2, y así sucesivamente). Requiere un par de píxeles para representar correctamente el valor de color. El primer píxel del par contiene 8 bits de verde (en los 8 bits inferiores) y 8 bits de rojo (en los 8 bits superiores). El segundo píxel contiene 8 bits de verde (en los 8 bits inferiores) y 8 bits de azul (en los 8 bits superiores). Juntos, los dos píxeles comparten los componentes rojo y azul, mientras que cada uno tiene un componente verde único (R0G0, B0G1, R2G2, y así sucesivamente). El muestreador de textura no normaliza los colores al buscar en un sombreador de píxeles. permanecen en el intervalo de 0,0f a 255,0f. Esto es así para todos los modelos de sombreador de píxeles programables. Para el sombreador de píxeles de función fija, el hardware debe normalizarse al intervalo de 0.f a 1.f y tratarlo básicamente como la textura YUY2. El hardware que expone este formato debe tener el miembro PixelShader1xMaxValue de [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) establecido en un valor capaz de controlar ese intervalo.     |
 | **D3DFMT \_ UYVY**          | MAKEFOURCC('U', 'Y', 'V', 'Y') | Formato UYVY (cumplimiento de PC98)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -257,7 +257,7 @@ Estos son los formatos FOURCC definidos:
 
 ### <a name="ieee-formats"></a>Formatos IEEE
 
-Estas marcas se usan para los formatos de superficie de punto flotante. Estos formatos de 32 bits por canal también se conocen como formatos s23e8.
+Estas marcas se usan para formatos de superficie de punto flotante. Estos formatos de 32 bits por canal también se conocen como formatos s23e8.
 
 
 
@@ -281,7 +281,7 @@ Los datos en formatos mixtos pueden contener una combinación de datos sin firma
 |-------------------------|-------|------------------------------------------------------------------------------------------------|
 | **D3DFMT \_ L6V5U5**      | 61    | Formato de mapa de protuberancia de 16 bits con luminosidad con 6 bits para la luminosidad y 5 bits para v y usted. |
 | **D3DFMT \_ X8L8V8U8**    | 62    | Formato de mapa de protuberancia de 32 bits con luminosidad con 8 bits para cada canal.                           |
-| **D3DFMT \_ A2W10V10U10** | 67    | Formato de mapa de protuberancia de 32 bits con 2 bits para alfa y 10 bits cada uno para w, v y usted.                |
+| **D3DFMT \_ A2W10V10U10** | 67    | Formato de mapa de 32 bits con 2 bits para alfa y 10 bits cada uno para w, v y usted.                |
 
 
 
@@ -299,7 +299,7 @@ Los datos en un formato firmado pueden ser positivos y negativos. Los formatos f
 | **D3DFMT \_ Q8W8V8U8**     | 63    | Formato de mapa de 32 bits con 8 bits para cada canal.                                                     |
 | **D3DFMT \_ V16U16**       | 64    | Formato de mapa de 32 bits con 16 bits para cada canal.                                                    |
 | **D3DFMT \_ Q16W16V16U16** | 110   | Formato de mapa de protuberancia de 64 bits con 16 bits para cada componente.                                                  |
-| **D3DFMT \_ CxV8U8**       | 117   | Formato de compresión normal de 16 bits. El muestreador de textura calcula el canal de C a partir de: C = sqrt(1 - Untes - Vntes). |
+| **D3DFMT \_ CxV8U8**       | 117   | Formato de compresión normal de 16 bits. El muestreador de textura calcula el canal de C de: C = sqrt(1 - Untes - Vntes). |
 
 
 
@@ -329,7 +329,7 @@ Los datos en formato sin signo deben ser positivos. Los formatos sin signo usan 
 | **D3DFMT \_ X8B8G8R8**              | 33    | Formato de píxel RGB de 32 bits, donde se reservan 8 bits para cada color.                                                                                                        |
 | **D3DFMT \_ G16R16**                | 34    | Formato de píxel de 32 bits con 16 bits cada uno para verde y rojo.                                                                                                                 |
 | **D3DFMT \_ A2R10G10B10**           | 35    | Formato de píxel de 32 bits con 10 bits cada uno para rojo, verde y azul, y 2 bits para alfa.                                                                                    |
-| **D3DFMT \_ A16B16G16R16**          | 36    | Formato de píxeles de 64 bits con 16 bits para cada componente.                                                                                                                     |
+| **D3DFMT \_ A16B16G16R16**          | 36    | Formato de píxel de 64 bits con 16 bits para cada componente.                                                                                                                     |
 | **D3DFMT \_ A8P8**                  | 40    | Color de 8 bits indexado con 8 bits de alfa.                                                                                                                                 |
 | **D3DFMT \_ P8**                    | 41    | Color de 8 bits indexado.                                                                                                                                                      |
 | **D3DFMT \_ L8**                    | 50    | Solo luminosidad de 8 bits.                                                                                                                                                     |
@@ -368,7 +368,7 @@ Esta marca se usa para formatos no definidos.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

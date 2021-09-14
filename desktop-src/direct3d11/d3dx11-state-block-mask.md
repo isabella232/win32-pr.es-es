@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8087f45ad94fe3e45f78a1be9d86b30f6f7e3f2c9161b9c4498865b12582436e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41236c541fc251902a7a0a5ad6030a28dd36e3a4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119124940"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060868"
 ---
-# <a name="d3dx11_state_block_mask-structure"></a>Estructura STATE \_ BLOCK \_ \_ MASK de D3DX11
+# <a name="d3dx11_state_block_mask-structure"></a>Estructura D3DX11 \_ STATE \_ BLOCK \_ MASK
 
 Indica el estado del dispositivo.
 
@@ -79,11 +79,11 @@ typedef struct _D3DX11_STATE_BLOCK_MASK {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
-**Vs**
+**VS**
 </dt> <dd>
 
 Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
@@ -123,7 +123,7 @@ Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Matriz de búferes constantes del sombreador de vértices. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de búfer constante.
+Matriz de búferes constantes de sombreador de vértices. La matriz es una máscara de bits de varios bytes donde cada bit representa una ranura de búfer constante.
 
 </dd> <dt>
 
@@ -138,7 +138,7 @@ Matriz de interfaces de sombreador de vértices. La matriz es una máscara de bi
 
 </dd> <dt>
 
-**Hs**
+**HS**
 </dt> <dd>
 
 Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
@@ -303,7 +303,7 @@ Matriz de interfaces de sombreador de geometría. La matriz es una máscara de b
 
 </dd> <dt>
 
-**Ps**
+**PS**
 </dt> <dd>
 
 Tipo: **[ **BYTE**](/windows/desktop/WinProg/windows-data-types)**
@@ -567,7 +567,7 @@ Valor booleano que indica si se debe guardar el estado de predicado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una máscara de bloque de estado indica los estados del dispositivo que cambia un paso o una técnica.
 
@@ -581,7 +581,7 @@ Una máscara de bloque de estado indica los estados del dispositivo que cambia u
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

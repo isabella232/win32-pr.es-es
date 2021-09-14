@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 366ec8654e0e99ad497b516b82be524b9ed45f04cbc0bd20eb375af4f58f2880
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dd95af972765ebf5d3a05e7f3cb87e547baeb8cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118980695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965787"
 ---
 # <a name="indexinfocultureinfo-property"></a>IndexInfo.CultureInfo, propiedad
 
@@ -39,7 +39,7 @@ Obtiene cultureInfo por el que se ordena el índice.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -60,7 +60,7 @@ public CultureInfo CultureInfo { get; }
 
 Tipo: [System.Globalization.CultureInfo](/dotnet/api/system.globalization.cultureinfo)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

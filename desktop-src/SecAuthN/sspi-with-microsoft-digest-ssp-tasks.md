@@ -4,12 +4,12 @@ ms.assetid: 8867bd8f-271b-4f29-87e4-a487fcac2a9c
 title: SSPI con Microsoft Digest SSP Tasks
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4a7e00b0e94dae0bdabaece2c92d52842ef17de66b47b6e5b8581a768172ee9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 40f733f8d30a72ab834685da2324dfa21506f436
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118916731"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160958"
 ---
 # <a name="sspi-with-microsoft-digest-ssp-tasks"></a>SSPI con Microsoft Digest SSP Tasks
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05df56beb0b5b4a75716723330711714b7db9f4f27100ffe3296626d2be5798a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8eef628dd8ff748829542ace76642e20ad97786f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119544625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061953"
 ---
 # <a name="hdn_enddrag-notification-code"></a>Código de notificación \_ ENDDRAG de HDN
 
@@ -49,7 +49,7 @@ Puntero a una estructura [**NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-
 
 Para permitir que el control coloque y reordene automáticamente el elemento, devuelva **FALSE**. Para evitar que se coloque el elemento, devuelva **TRUE**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el propietario realiza una administración externa (manual) de arrastrar y colocar, debe devolver **FALSE.** A continuación, el propietario debe reordenar los elementos de encabezado manualmente mediante el envío de [**HDM \_ SETITEM**](hdm-setitem.md) [**o HDM \_ SETORDERARRAY**](hdm-setorderarray.md).
 
@@ -57,11 +57,11 @@ Si el propietario realiza una administración externa (manual) de arrastrar y co
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

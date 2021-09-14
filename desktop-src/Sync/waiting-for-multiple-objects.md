@@ -4,12 +4,12 @@ ms.assetid: 0132ac94-b45b-438a-b96a-e77cfe522702
 title: Esperando varios objetos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe4c8ac12585a32ede0fc96506fa770a19198b18fea833b42a5cf45c75be677b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a6fc04d8737b0c404cf6296e1264fa86eb359be6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117765053"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160684"
 ---
 # <a name="waiting-for-multiple-objects"></a>Esperando varios objetos
 

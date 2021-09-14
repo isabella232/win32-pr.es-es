@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d46726c1247f7ef93c00e495ca77ad3d337253705bd3018a0480fc9588c22f8d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a0b224e11212077703ab62ab6a180875672c879e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119437515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062073"
 ---
 # <a name="em_setreadonly-message"></a>Mensaje \_ EM SETREADONLY
 
@@ -32,7 +32,7 @@ Establece o quita el estilo de solo lectura [**(ES \_ READONLY)**](edit-control-
 *wParam* 
 </dt> <dd>
 
-Especifica si se debe establecer o quitar el [**estilo ES \_ READONLY.**](edit-control-styles.md) Un valor **true establece** el estilo ES **\_ READONLY;** un valor de **FALSE** quita el estilo **ES \_ READONLY.**
+Especifica si se debe establecer o quitar el [**estilo ES \_ READONLY.**](edit-control-styles.md) Un valor **true establece** el estilo ES **\_ READONLY;** un valor **de FALSE** quita el estilo ES **\_ READONLY.**
 
 </dd> <dt>
 
@@ -51,11 +51,11 @@ Si se produce un error en la operación, el valor devuelto es cero.
 
 ## <a name="remarks"></a>Observaciones
 
-Cuando un control de edición tiene [**el estilo ES \_ READONLY,**](edit-control-styles.md) el usuario no puede cambiar el texto dentro del control de edición.
+Cuando un control de edición tiene el estilo [**ES \_ READONLY,**](edit-control-styles.md) el usuario no puede cambiar el texto dentro del control de edición.
 
 Para determinar si un control de edición tiene el estilo [**ES \_ READONLY,**](edit-control-styles.md) use la [**función GetWindowLong**](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) con la marca GWL \_ STYLE.
 
-**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
+**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [Acerca de los controles rich edit](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,11 +65,11 @@ Para determinar si un control de edición tiene el estilo [**ES \_ READONLY,**](
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

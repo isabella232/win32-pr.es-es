@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.localizationpriority: low
 ms.date: 05/31/2018
-ms.openlocfilehash: f2aa358d8b2d772d45c6387221dd9e660a9630fbf90535ada7dcceefc3257879
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c689c9bfe611651248280f7536bd91a9f4d003d4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119851415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060804"
 ---
-# <a name="cd3dx12_box-structure"></a>Cd3DX12 \_ (estructura BOX)
+# <a name="cd3dx12_box-structure"></a>Cd3DX12 \_ (estructura box)
 
 Estructura auxiliar para permitir la inicialización sencilla de una [**estructura \_ BOX D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_box)
 
@@ -43,21 +43,21 @@ struct CD3DX12_BOX  : public D3D12_BOX{
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **CD3DX12 \_ BOX()**
 </dt> <dd>
 
-Crea una nueva instancia sin inicializar de un cuadro CD3DX12. \_
+Crea una nueva instancia de UN CD3DX12 BOX sin \_ inicializar.
 
 </dd> <dt>
 
 **explicit CD3DX12 \_ BOX(const D3D12 \_ BOX& o)**
 </dt> <dd>
 
-Crea una nueva instancia de un cuadro CD3DX12, inicializado con el contenido de otra estructura \_ [**BOX D3D12. \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_box)
+Crea una nueva instancia de un CUADRO CD3DX12, inicializado con el contenido de otra estructura \_ [**BOX D3D12. \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_box)
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Define el & de paso por referencia para el tipo de estructura primaria.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

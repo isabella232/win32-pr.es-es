@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 818a7682fed504028ebee1c3a5ff5d35a268e1daad8756b110bcfcb2ca8d9f80
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 27fbf603fd670cac2a39831114a7f141b17ffd2e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119016873"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061766"
 ---
 # <a name="cbaserenderershoulddrawsamplenow-method"></a>Método CBaseRenderer.ShouldDrawSampleNow
 
@@ -81,9 +81,9 @@ Devuelve S \_ FALSE. Si la clase derivada invalida este método, devuelva uno de
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El [**método CBaseRenderer::GetSampleTimes**](cbaserenderer-getsampletimes.md) llama a este método. De forma predeterminada, los ejemplos siempre están programados para su representación en función de sus marcas de tiempo. La clase derivada puede invalidar este método; por ejemplo, para implementar el control de calidad.
+El [**método CBaseRenderer::GetSampleTimes**](cbaserenderer-getsampletimes.md) llama a este método. De forma predeterminada, los ejemplos siempre se programan para su representación en función de sus marcas de tiempo. La clase derivada puede invalidar este método; por ejemplo, para implementar el control de calidad.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,7 +96,7 @@ El [**método CBaseRenderer::GetSampleTimes**](cbaserenderer-getsampletimes.md) 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

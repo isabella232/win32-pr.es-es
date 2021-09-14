@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: a9c3a5720ade42291037611c155c2cb9e834f0734e7af6e2c36277c409592143
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c0f941469983f2eaebf0363797fb54a81388bc51
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119904915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061629"
 ---
 # <a name="iamtimelinesplittablesplitat2-method"></a>IamTimelineSplittable::SplitAt2 (método)
 
@@ -69,7 +69,7 @@ Devuelve un **valor HRESULT.** Entre los valores posibles figuran los siguientes
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El archivo de encabezado Qedit.h no es compatible con los encabezados de Direct3D posteriores a la versión 7.
@@ -92,7 +92,7 @@ Devuelve un **valor HRESULT.** Entre los valores posibles figuran los siguientes
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

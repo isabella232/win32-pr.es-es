@@ -4,16 +4,16 @@ description: Cada elemento de un control de vista de árbol puede tener dos imá
 ms.assetid: 3683DB35-D70F-4181-9181-95354599B9FB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2b8edcff0d07f46aa6eb8612ddbbfa37145c5ab26ab463a7d57e9e6543430e3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 011d789da4eec39febae9d93436e23c23fa59507
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119019353"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061911"
 ---
 # <a name="how-to-initialize-the-image-list"></a>Inicialización de la lista de imágenes
 
-Cada elemento de un control de vista de árbol puede tener dos imágenes asociadas. Un elemento muestra una imagen cuando se selecciona y la otra cuando no lo está. Para incluir imágenes con elementos de vista de árbol, use primero las funciones [Listas](image-lists.md) de imágenes para crear una lista de imágenes y agregarle imágenes. A continuación, asocie la lista de imágenes con el control de vista de árbol mediante el [**mensaje \_ SETIMAGELIST de TVM.**](tvm-setimagelist.md)
+Cada elemento de un control de vista de árbol puede tener dos imágenes asociadas. Un elemento muestra una imagen cuando se selecciona y la otra cuando no lo está. Para incluir imágenes con elementos de vista de árbol, use primero las funciones [Listas](image-lists.md) de imágenes para crear una lista de imágenes y agregarle imágenes. A continuación, asocie la lista de imágenes con el control de vista de árbol mediante el mensaje [**\_ SETIMAGELIST de TVM.**](tvm-setimagelist.md)
 
 ## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
@@ -28,7 +28,7 @@ Cada elemento de un control de vista de árbol puede tener dos imágenes asociad
 
 ## <a name="instructions"></a>Instructions
 
-### <a name="initialize-the-image-list"></a>Inicializar la lista de imágenes
+### <a name="initialize-the-image-list"></a>Inicialización de la lista de imágenes
 
 En el ejemplo siguiente se crea una lista de imágenes, se agregan tres mapas de bits a la lista y se asocia la lista de imágenes a un control de vista de árbol.
 
@@ -89,7 +89,7 @@ BOOL InitTreeViewImageLists(HWND hwndTV)
 
 <dl> <dt>
 
-[Uso de Tree-View controles](using-treeview.md)
+[Usar Tree-View controles](using-treeview.md)
 </dt> <dt>
 
 [El ejemplo CustDTv muestra el dibujo personalizado en un control Tree-View datos](https://support.microsoft.com/default.aspx?scid=kb;EN-US;q248496)

@@ -1,9 +1,9 @@
 ---
-title: Mensaje de EM_SCROLLCARET (Winuser. h)
-description: Desplaza el símbolo de intercalación en la vista de un control de edición. Puede enviar este mensaje a un control de edición o a un control Rich Edit.
+title: EM_SCROLLCARET mensaje (Winuser.h)
+description: Desplaza el icono de aviso a la vista en un control de edición. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
 ms.assetid: 7a33034d-9369-49f8-a881-0c1d2cedff6a
 keywords:
-- EM_SCROLLCARET controles de mensajes de Windows
+- EM_SCROLLCARET controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: faa9f4bd69605f5e8fad36a683c9be2894546cb0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104151147"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062138"
 ---
-# <a name="em_scrollcaret-message"></a>\_Mensaje SCROLLCARET em
+# <a name="em_scrollcaret-message"></a>Mensaje DE EM \_ SCROLLCARET
 
-Desplaza el símbolo de intercalación en la vista de un control de edición. Puede enviar este mensaje a un control de edición o a un control Rich Edit.
+Desplaza el icono de aviso a la vista en un control de edición. Puede enviar este mensaje a un control de edición o a un control de edición enriquecido.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -49,7 +49,7 @@ El valor devuelto no es significativo.
 
 ## <a name="remarks"></a>Observaciones
 
-**Edición enriquecida:** Compatible con Microsoft Rich Edit 1,0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecidas con las distintas versiones del sistema, vea acerca de los [controles Rich Edit](about-rich-edit-controls.md).
+**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,26 +57,26 @@ El valor devuelto no es significativo.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                                           |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 **Referencia**
 </dt> <dt>
 
-[**\_LINESCROLL em**](em-linescroll.md)
+[**EM \_ LINESCROLL**](em-linescroll.md)
 </dt> <dt>
 
-[**\_desplazar em**](em-scroll.md)
+[**EM \_ SCROLL**](em-scroll.md)
 </dt> <dt>
 
-[**VSCROLL de WM \_**](wm-vscroll.md)
+[**WM \_ VSCROLL**](wm-vscroll.md)
 </dt> </dl>
 
  

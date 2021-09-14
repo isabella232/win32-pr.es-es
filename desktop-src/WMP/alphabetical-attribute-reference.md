@@ -3,9 +3,9 @@ title: Referencia alfabética de atributos
 description: Referencia alfabética de atributos
 ms.assetid: 12fdeba6-14db-4689-a3cb-cb36dbc9204f
 keywords:
-- Reproductor de Windows Media,atributos para elementos multimedia
+- Reproductor de Windows Media,attributes para elementos multimedia
 - Reproductor de Windows Media Móvil, atributos para elementos multimedia
-- Reproductor de Windows Media modelo de objetos, referencia
+- Reproductor de Windows Media modelo de objetos,reference
 - object model,reference
 - ActiveX control,reference
 - Reproductor de Windows Media ActiveX control,reference
@@ -19,12 +19,12 @@ keywords:
 - attributes,reference
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41fae63365e9670119d89d11a2faf2d2d9979e7c21aeac2fc5975f072a07f086
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eed878b474098e68701ad8bdde0e3d207c4b8596
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119055323"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126890113"
 ---
 # <a name="alphabetical-attribute-reference"></a>Referencia alfabética de atributos
 
@@ -113,24 +113,24 @@ En esta sección se proporciona una lista alfabética de los atributos predefini
 -   [**Atributo RequestState**](requeststate-attribute.md)
 -   [**Atributo ShadowFilePath**](shadowfilepath-attribute.md)
 -   [**Atributo SourceURL**](sourceurl-attribute.md)
--   [**Atributo Subject**](subject-attribute.md)
+-   [**Atributo subject**](subject-attribute.md)
 -   [**Atributo SyncState**](syncstate-attribute.md)
--   **Sync01**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync02**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync03**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync04**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync05**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync06**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync07**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync08**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync09**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync10**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync11**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync12**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync13**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync14**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync15**. Vea [**Atributos de sincronización.**](sync-attributes.md)
--   **Sync16**. Vea [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync01**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync02**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync03**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync04**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync05**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync06**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync07**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync08**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync09**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync10**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync11**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync12**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync13**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync14**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync15**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
+-   **Sync16**. Consulte [**Atributos de sincronización.**](sync-attributes.md)
 -   [**Atributo SyncOnly**](synconly-attribute.md)
 -   [**Atributo temporal**](temporary-attribute.md)
 -   [**Atributo Title**](title-attribute.md)
@@ -167,7 +167,7 @@ En esta sección se proporciona una lista alfabética de los atributos predefini
 -   [**Atributo WM/GenreID**](wm-genreid-attribute.md)
 -   [**Atributo WM/InitialKey**](wm-initialkey-attribute.md)
 -   [**Atributo WM/Language**](wm-language-attribute.md)
--   [**Atributo WM/Attribute**](wm-lyrics-attribute.md)
+-   [**Atributo WM/Desatribuciones**](wm-lyrics-attribute.md)
 -   [**Atributo WM/MCDI**](wm-mcdi-attribute.md)
 -   [**Atributo WM/MediaClassPrimaryID**](wm-mediaclassprimaryid-attribute.md)
 -   [**Atributo WM/MediaClassSecondaryID**](wm-mediaclasssecondaryid-attribute.md)

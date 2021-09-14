@@ -4,12 +4,12 @@ ms.assetid: b8abf5d8-ba7f-441d-beef-9f85859318d5
 title: Origen de archivo AVI/WAV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de8c99de9eed21afa716c4f3ee81a5d1cc4e9731739526f7c9531c758b30a22a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef659d880ef570176f94ac91875291ea9d200cf5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119689365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161708"
 ---
 # <a name="aviwav-file-source"></a>Origen de archivo AVI/WAV
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79339e08ef917780668cd54b6bdfc72cb0f4949aaa446cbc2c34db44b216602d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 51f49f96e3f12b1c21e81e8b5358e174e576d07f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119019323"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061890"
 ---
 # <a name="lb_getlistboxinfo-message"></a>Mensaje \_ GETLISTBOXINFO de LB
 
@@ -32,14 +32,14 @@ Obtiene el número de elementos por columna en un cuadro de lista especificado.
 *wParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza; debe ser cero.
+Este parámetro no se usa; debe ser cero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza; debe ser cero.
+Este parámetro no se usa; debe ser cero.
 
 </dd> </dl>
 
@@ -47,7 +47,7 @@ Este parámetro no se utiliza; debe ser cero.
 
 El valor devuelto es el número de elementos por columna.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje es equivalente a [**GetListBoxInfo.**](/windows/desktop/api/Winuser/nf-winuser-getlistboxinfo)
 
@@ -59,11 +59,11 @@ Este mensaje es equivalente a [**GetListBoxInfo.**](/windows/desktop/api/Winuser
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

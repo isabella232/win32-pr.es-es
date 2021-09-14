@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c47b861a47498cc29d80061c6c2da1ffc44e40b7446588cf7c3376e5ed18e837
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec36290b7cad66b2b5f27633d30ae76c3331eba9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118001988"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162321"
 ---
 # <a name="amoviedllregisterserver2-function"></a>Función AMovieDllRegisterServer2
 
@@ -53,7 +53,7 @@ HRESULT AMovieDllRegisterServer2(
 
 Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use esta función para configurar los filtros. Para obtener más información, [vea How to Register DirectShow Filters](how-to-register-directshow-filters.md).
 
@@ -68,7 +68,7 @@ Use esta función para configurar los filtros. Para obtener más información, [
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

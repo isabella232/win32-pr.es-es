@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4f5393daa483f2fa2c01cbe923e18635e75be9eadcb35356ce2246b24903dfc8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a0945cf6e5c40b1587b6bcae05331d391ab18685
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117894547"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964307"
 ---
 # <a name="jet_instancetostring-method"></a>JET_INSTANCE. Método ToString
 
@@ -55,7 +55,7 @@ public override string ToString()
 Tipo: [System.String](/dotnet/api/system.string)  
 Estructura como una cadena.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

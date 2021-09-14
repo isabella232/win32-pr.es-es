@@ -4,12 +4,12 @@ ms.assetid: eddc4880-dd78-4d96-8bff-c5c883a19927
 title: Método ActivateAtPosition
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fee8b81c10b010132d07ac4418f273be228595bab45e86ec03c7828d78ba74f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 64a83e7fcbc00990c7be7d1a99638a1b4a3de14b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119873555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162410"
 ---
 # <a name="activateatposition-method"></a>Método ActivateAtPosition
 
@@ -46,11 +46,11 @@ Especifica la coordenada y como un entero.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use este método al implementar el control personalizado del mouse después de establecer [**DisableAutoMouseProcessing en**](disableautomouseprocessing-property.md) **true.**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

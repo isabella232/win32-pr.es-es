@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6abd453b328a22765a9649e69bbe0f5e3e4d4bc8e45148a0777fa23901447ab3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dd595748380a35f74e591283ed3d03273c683e97
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119688845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061735"
 ---
 # <a name="cdynamicoutputpindynamicreconnect-method"></a>Método CDynamicOutputPin.DynamicReconnect
 
@@ -58,15 +58,15 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los que se muestran
 | Código devuelto                                                                            | Descripción                                                                                                                                         |
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                                                                                                                                 |
-| <dl> <dt>**E \_ FAIL**</dt> </dl> | Error. Posiblemente, el filtro propietario no llamó al [**método CDynamicOutputPin::SetConfigInfo.**](cdynamicoutputpin-setconfiginfo.md)<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Error. Posiblemente, el filtro propietario no llamó [**al método CDynamicOutputPin::SetConfigInfo.**](cdynamicoutputpin-setconfiginfo.md)<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se debe llamar a este método desde el mismo subproceso que entrega datos al pin. Una vez que se llama a este método, no se pueden entregar ejemplos con el tipo de medio antiguo. El autor de la llamada debe asegurarse de que no haya muestras antiguas pendientes.
+Se debe llamar a este método desde el mismo subproceso que entrega datos al pin. Una vez que se llama a este método, no se pueden entregar ejemplos con el tipo de medio anterior. El autor de la llamada debe asegurarse de que no hay ninguna muestra antigua pendiente.
 
 Llame [**a CDynamicOutputPin::StartUsingOutputPin antes**](cdynamicoutputpin-startusingoutputpin.md) de llamar a este método.
 
@@ -81,7 +81,7 @@ Llame [**a CDynamicOutputPin::StartUsingOutputPin antes**](cdynamicoutputpin-sta
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

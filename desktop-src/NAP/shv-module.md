@@ -4,12 +4,12 @@ description: Nota La plataforma de protección de acceso a redes no está dispon
 ms.assetid: 0f2edd23-d44a-4a01-ae33-f7eef0e4b27f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 344b3a6d74acee0e06e3d2a9fedd4784b1c9d76ac8ba84c68ed4b7ef8ceebc56
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b95784d05f4bf377f356a91fe5b0c1811fb9671d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118133440"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161232"
 ---
 # <a name="shv-module"></a>Módulo SHV
 
@@ -18,7 +18,7 @@ ms.locfileid: "118133440"
 
  
 
-Configura un módulo de validador de estado del sistema (SHV), incluido el registro y la anulación del registro con el sistema NAP.
+Configura un módulo de validador de estado del sistema (SHV), incluidos el registro y la anulación del registro con el sistema NAP.
 
 > [!Note]  
 > El SDK de NAP también contiene un conjunto completo de código de ejemplo que se puede encontrar en ... \\ Ejemplos \\ de NAP de NetDS... \\ directorio de la instalación del SDK. Este conjunto de ejemplo incluye un agente de mantenimiento del sistema (SHA), SHV y un cliente de cumplimiento (EC). Tiene escenarios NAP completos en funcionamiento que configura la comunicación entre SHA-SHV y SHA-EC.

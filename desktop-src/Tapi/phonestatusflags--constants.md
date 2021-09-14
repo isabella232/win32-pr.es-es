@@ -4,12 +4,12 @@ ms.assetid: e94da591-49ab-4932-8621-0a62b8a55dd6
 title: PHONESTATUSFLAGS_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b42f8e13adfae54c56e44244d04b3961216edb87e29730fec6f689f315380a7e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 969c2553274037797bdf9abea3e8bdbc1cd8d018
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119060653"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160621"
 ---
 # <a name="phonestatusflags_-constants"></a>Constantes \_ PHONESTATUSFLAGS
 
@@ -32,12 +32,12 @@ Especifica si el teléfono está conectado actualmente a TAPI. **TRUE si** está
 
 
 
-Especifica si se suspende la manipulación de TAPI del dispositivo telefónico. **TRUE si** se suspende, **FALSE en caso** contrario. El uso de un dispositivo telefónico por parte de una aplicación se puede suspender temporalmente cuando el conmutador quiere manipular el teléfono de una manera que no pueda tolerar interferencias de la aplicación.
+Especifica si se suspende la manipulación de TAPI del dispositivo telefónico. **TRUE si** se suspende, **FALSE en caso** contrario. El uso de un dispositivo de teléfono por parte de una aplicación se puede suspender temporalmente cuando el conmutador desea manipular el teléfono de forma que no pueda tolerar interferencias de la aplicación.
 
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Sin extensibilidad. Los 32 bits están reservados.
 
@@ -45,10 +45,10 @@ Sin extensibilidad. Los 32 bits están reservados.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 2.0 o posterior<br/>                                             |
-| Header<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 

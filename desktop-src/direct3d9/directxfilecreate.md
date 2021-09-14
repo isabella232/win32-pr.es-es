@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - d3dxof.dll
-ms.openlocfilehash: 6dbcf4836c33fd2acfc1adc21e47430a54ba7c54aeb2b220199846d31572619e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8ee1787941bbb902e6f0f50b082867aaf2f0a8bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119952185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964964"
 ---
 # <a name="directxfilecreate-function"></a>Función DirectXFileCreate
 
@@ -54,9 +54,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: DXFILEERR \_ BADALLOC, DXFILEERR \_ BADVALUE.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Después de usar esta función, use [**RegisterTemplates**](idirectxfile--registertemplates.md) para registrar plantillas, [**CreateEnumObject**](idirectxfile--createenumobject.md) para crear un objeto enumerador o [**CreateSaveObject**](idirectxfile--createsaveobject.md) para crear un objeto de guardado.
+Después de usar esta función, use [**RegisterTemplates**](idirectxfile--registertemplates.md) para registrar plantillas, [**CreateEnumObject para**](idirectxfile--createenumobject.md) crear un objeto enumerador o [**CreateSaveObject**](idirectxfile--createsaveobject.md) para crear un objeto save.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ Después de usar esta función, use [**RegisterTemplates**](idirectxfile--regist
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

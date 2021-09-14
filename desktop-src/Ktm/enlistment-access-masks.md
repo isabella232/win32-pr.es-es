@@ -4,12 +4,12 @@ ms.assetid: 93773eb7-141a-49f3-9306-ffbda2f4ab9f
 title: Enlistment Access Masks (WinNT.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85f3d774c474c27896c16bba5c7552713f248519aa86ef56da0da5b704234b19
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 63e4ebd67f93368215ebcdcd362595d0341adb52
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119870115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160047"
 ---
 # <a name="enlistment-access-masks"></a>Enlistment Access Masks
 
@@ -129,7 +129,7 @@ El autor de la llamada tiene los siguientes privilegios: **STANDARD \_ RIGHTS \_
 
 </dt> </dl> </dd> <dt>
 
-<span id="ENLISTMENT_ALL_ACCESS"></span><span id="enlistment_all_access"></span>**ALISTMENT \_ ALL \_ ACCESS**
+<span id="ENLISTMENT_ALL_ACCESS"></span><span id="enlistment_all_access"></span>**ENLISTMENT \_ ALL \_ ACCESS**
 </dt> <dd> <dl> <dt>
 
 0xF001F
@@ -150,7 +150,7 @@ Este valor establece todos los bits válidos para un valor de acceso de alta.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                     |
-| Header<br/>                   | <dl> <dt>WinNT.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WinNT.h</dt> </dl> |
 
 
 

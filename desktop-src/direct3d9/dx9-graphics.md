@@ -4,12 +4,12 @@ ms.assetid: 90a6b8ed-e1ed-4066-9590-1055380ff8e3
 title: Gráficos de Direct3D 9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab2c59667bbe6b7f6d5a04556012762a7f4ad0f194834b61cc2fd734827c8ad1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b4699d19f1d939520492ef99c3ce86ab15d3d54b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117730196"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060650"
 ---
 # <a name="direct3d-9-graphics"></a>Gráficos de Direct3D 9
 

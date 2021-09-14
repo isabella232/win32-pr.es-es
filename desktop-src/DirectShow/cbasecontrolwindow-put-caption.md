@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c7f0c9da5ad2c3ae409e14a1ca9918a0c1aa7ef04615ab4d647ce1a3467c7311
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aca8e5e7ad04acae9fab1cfe2d44f982266805e8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119983705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160209"
 ---
 # <a name="cbasecontrolwindowput_caption-method"></a>CBaseControlWindow.put \_ Caption (método)
 
-El `put_Caption` método establece el título o el título de la ventana.
+El `put_Caption` método establece el título o título de la ventana.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,9 +53,9 @@ Nuevo título de ventana.
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La mayoría de las ventanas de nivel superior de Windows escritorio basado en aplicaciones tienen un título (título) asociado a ellas. Esta propiedad se puede consultar y establecer a través de la [**interfaz IVideoWindow.**](/windows/desktop/api/Control/nn-control-ivideowindow) Cualquier conjunto de títulos solo será visible si la ventana tiene aplicado el estilo WS \_ CAPTION. Si no es así, el título todavía se puede establecer (y recuperar), aunque no será visible para el usuario.
+La mayoría de las ventanas de nivel superior de Windows escritorio basado en el escritorio tienen un título (título) asociado a ellas. Esta propiedad se puede consultar y establecer a través de la [**interfaz IVideoWindow.**](/windows/desktop/api/Control/nn-control-ivideowindow) Cualquier conjunto de títulos solo será visible si la ventana tiene aplicado el estilo WS \_ CAPTION. Si no es así, el título todavía se puede establecer (y recuperar), aunque no será visible para el usuario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ La mayoría de las ventanas de nivel superior de Windows escritorio basado en ap
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -6,12 +6,12 @@ keywords:
 - Direct2D, estructuras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6be3735335abc5b9242ec150ac583f837ae5c15936aaca677b322526b1c19f1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8ba4b668e143b3ab5b166582e504c68a05722da7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119537705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162570"
 ---
 # <a name="direct2d-structures"></a>Estructuras de Direct2D
 
@@ -44,7 +44,7 @@ Direct2D proporciona las estructuras siguientes. Las estructuras adicionales se 
 | [**PROPIEDADES DE MAPA DE BITS D2D1 \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_bitmap_properties) | Describe el formato de píxel y los ppp de un mapa de bits. |
 | [**D2D1 \_ BITMAP \_ PROPERTIES1**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_bitmap_properties1) | Esta estructura permite crear un [**ID2D1Bitmap1 con**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1bitmap1) opciones de mapa de bits e información de contexto de color disponible.  |
 | [**DESCRIPCIÓN DE BLEND D2D1 \_ \_**](/windows/desktop/api/D2d1effectauthor/ns-d2d1effectauthor-d2d1_blend_description) | Define una descripción de mezcla que se va a usar en una transformación de mezcla determinada. |
-| [**PROPIEDADES DEL PINCEL D2D1 \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_brush_properties) | Describe la opacidad y transformación de un pincel. |
+| [**PROPIEDADES DE PINCEL D2D1 \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_brush_properties) | Describe la opacidad y transformación de un pincel. |
 | [**D2D1 \_ COLOR \_ F**](d2d1-color-f.md) | Describe los componentes rojo, verde, azul y alfa de un color. |
 | [**PROPIEDADES DE CREACIÓN DE D2D1 \_ \_**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_creation_properties) | Especifica las opciones con las que se crean el dispositivo [Direct2D,](./direct2d-portal.md) la fábrica y el contexto del dispositivo.  |
 | [**PROPIEDADES PERSONALIZADAS DEL BÚFER DE \_ \_ \_ VÉRTICES D2D1 \_**](/windows/desktop/api/d2d1effectauthor/ns-d2d1effectauthor-d2d1_custom_vertex_buffer_properties) | Define un sombreador de vértices y la descripción del elemento de entrada para definir el diseño de entrada. |
@@ -55,7 +55,7 @@ Direct2D proporciona las estructuras siguientes. Las estructuras adicionales se 
 | [**OPCIONES DE GENERADOR D2D1 \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_factory_options) | Contiene el nivel de depuración de [**un objeto ID2D1Factory.**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory)  |
 | [**D2D1 \_ FEATURE \_ DATA \_ DOUBLES**](/windows/desktop/api/D2d1effectauthor/ns-d2d1effectauthor-d2d1_feature_data_doubles) | Describe la compatibilidad con los dobles en sombreadores. |
 | [**D2D1 \_ FEATURE \_ DATA \_ D3D10 \_ X \_ HARDWARE \_ OPTIONS**](/windows/desktop/api/D2d1effectauthor/ns-d2d1effectauthor-d2d1_feature_data_d3d10_x_hardware_options) | Describe la compatibilidad con el sombreador de proceso, que es una opción en el nivel de característica D3D10. |
-| [**REVISIÓN DE MALLA DE DEGRADADO D2D1 \_ \_ \_**](/windows/desktop/api/d2d1_3/ns-d2d1_3-d2d1_gradient_mesh_patch) | Representa una revisión de tensor con 16 puntos de control, 4 colores de esquina y marcas de límite. Id2D1GradientMesh se consiente de 1 o más revisiones de malla de degradado. Use la [**función GradientMeshPatch**](/windows/desktop/api/d2d1_3helper/nf-d2d1_3helper-gradientmeshpatch) o la [**función GradientMeshPatchFromCoonsPatch**](/windows/desktop/api/d2d1_3helper/nf-d2d1_3helper-gradientmeshpatchfromcoonspatch) para crear una.  |
+| [**REVISIÓN DE MALLA DE DEGRADADO D2D1 \_ \_ \_**](/windows/desktop/api/d2d1_3/ns-d2d1_3-d2d1_gradient_mesh_patch) | Representa una revisión de tensor con 16 puntos de control, 4 colores de esquina y marcas de límite. Un ID2D1GradientMesh se forma de 1 o más revisiones de malla de degradado. Use la [**función GradientMeshPatch**](/windows/desktop/api/d2d1_3helper/nf-d2d1_3helper-gradientmeshpatch) o la [**función GradientMeshPatchFromCoonsPatch**](/windows/desktop/api/d2d1_3helper/nf-d2d1_3helper-gradientmeshpatchfromcoonspatch) para crear una.  |
 | [**D2D1 \_ GRADIENT \_ STOP**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_gradient_stop) | Contiene la posición y el color de un delimitador de degradado.  |
 | [**PROPIEDADES DE DESTINO DE \_ REPRESENTACIÓN DE HWND D2D1 \_ \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_hwnd_render_target_properties) | Contiene las opciones HWND, tamaño de píxel y presentación de [**id2D1HwndRenderTarget.**](/windows/win32/api/d2d1/nn-d2d1-id2d1hwndrendertarget) |
 | [**PROPIEDADES DE ESTILO DE LÁPIZ D2D1 \_ \_ \_**](/windows/desktop/api/d2d1_3/ns-d2d1_3-d2d1_ink_style_properties) | Define la forma general de la punta de lápiz y la transformación utilizada en un [**objeto ID2D1InkStyle.**](/windows/win32/api/d2d1_3/nn-d2d1_3-id2d1inkstyle)  |
@@ -66,7 +66,7 @@ Direct2D proporciona las estructuras siguientes. Las estructuras adicionales se 
 | [**D2D1 \_ INPUT \_ ELEMENT \_ DESC**](/windows/desktop/api/D2d1effectauthor/ns-d2d1effectauthor-d2d1_input_element_desc) | Descripción de un único elemento para el diseño del vértice. |
 | [**PARÁMETROS DE CAPA D2D1 \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_layer_parameters) | Contiene los límites de contenido, la información de máscara, la configuración de opacidad y otras opciones para un recurso de capa.  |
 | [**PARÁMETROS DE CAPA D2D11 \_ \_**](/windows/desktop/api/d2d1_1/ns-d2d1_1-d2d1_layer_parameters1) | Contiene los límites de contenido, la información de máscara, la configuración de opacidad y otras opciones para un recurso de capa. |
-| [**PROPIEDADES DEL PINCEL DE DEGRADADO LINEAL D2D1 \_ \_ \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_linear_gradient_brush_properties) | Contiene el punto inicial y el punto de conexión del eje de degradado para [**un objeto ID2D1LinearGradientBrush.**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush)  |
+| [**PROPIEDADES DEL PINCEL DE DEGRADADO LINEAL D2D1 \_ \_ \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_linear_gradient_brush_properties) | Contiene el punto inicial y el punto de conexión del eje de degradado para [**id2D1LinearGradientBrush.**](/windows/win32/api/d2d1/nn-d2d1-id2d1lineargradientbrush)  |
 | [**MATRIZ D2D1 \_ \_ 3X2 \_ F**](d2d1-matrix-3x2-f.md) | Representa una matriz 3 por 2.  |
 | [**MATRIZ D2D1 \_ \_ 4X3 \_ F**](d2d1-matrix-4x3-f.md) | Representa una matriz 4 por 3.  |
 | [**MATRIZ D2D1 \_ \_ 4X4 \_ F**](d2d1-matrix-4x4-f.md) | Representa una matriz 4 por 4.  |
@@ -80,7 +80,7 @@ Direct2D proporciona las estructuras siguientes. Las estructuras adicionales se 
 | [**PROPIEDADES DEL CONTROL DE IMPRESIÓN D2D1 \_ \_ \_**](/windows/desktop/api/D2D1_1/ns-d2d1_1-d2d1_print_control_properties) | Propiedades de creación de un [**objeto ID2D1PrintControl.**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1printcontrol) |
 | [**ENLACE DE PROPIEDADES D2D1 \_ \_**](/windows/desktop/api/d2d1effectauthor/ns-d2d1effectauthor-d2d1_property_binding) | Define un enlace de propiedad a un par de funciones que obtienen y establecen la propiedad correspondiente.  |
 | [**SEGMENTO \_ BÉZIER CUADRÁTICO D2D1 \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_quadratic_bezier_segment) | Contiene el punto de control y el punto final de un segmento Bézier cuadrático. |
-| [**PROPIEDADES DEL PINCEL \_ DE DEGRADADO RADIAL D2D1 \_ \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_radial_gradient_brush_properties) | Contiene el desplazamiento de origen del degradado y el tamaño y la posición de la elipse de degradado de [**un objeto ID2D1RadialGradientBrush.**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush)  |
+| [**PROPIEDADES DEL PINCEL \_ DE DEGRADADO RADIAL D2D1 \_ \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_radial_gradient_brush_properties) | Contiene el desplazamiento de origen del degradado y el tamaño y la posición de la elipse de degradado para [**un id2D1RadialGradientBrush.**](/windows/win32/api/d2d1/nn-d2d1-id2d1radialgradientbrush)  |
 | [**D2D1 \_ RECT \_ F**](d2d1-rect-f.md) | Representa un rectángulo definido por las coordenadas de la esquina superior izquierda (izquierda, superior) y las coordenadas de la esquina inferior derecha (derecha, inferior).  |
 | [**D2D1 \_ RECT \_ L**](/previous-versions/windows/desktop/legacy/hh847950(v=vs.85)) | La estructura RECT define las coordenadas de las esquinas superior izquierda e inferior derecha de un rectángulo. |
 | [**D2D1 \_ RECT \_ U**](d2d1-rect-u.md) | Representa un rectángulo definido por las coordenadas de la esquina superior izquierda (izquierda, superior) y las coordenadas de la esquina inferior derecha (derecha, inferior).  |

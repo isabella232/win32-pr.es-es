@@ -3,7 +3,7 @@ title: Métodos ID2D1RenderTarget DrawRoundedRectangle (D2d1.h)
 description: Dibuja el contorno del rectángulo redondeado especificado utilizando el estilo de trazo especificado.
 ms.assetid: d718c355-ffd8-4a7f-90f3-9a10d37a19c8
 keywords:
-- Métodos DrawRoundedRectangle De Direct2D
+- Métodos DrawRoundedRectangle Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 9db4da23faaea274a105dcfabdd33254223eb3b23e6395fd6d7cd9113134af74
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1cc42449bd2e2db7ec6637a7c405228fd3b51c1d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119874365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162810"
 ---
 # <a name="id2d1rendertargetdrawroundedrectangle-methods"></a>Métodos ID2D1RenderTarget::D rawRoundedRectangle
 
@@ -34,7 +34,7 @@ Dibuja el contorno del rectángulo redondeado especificado utilizando el estilo 
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método no devuelve un código de error si se produce un error. Para determinar si se ha producido un error en una operación de dibujo (como **DrawRoundedRectangle),** compruebe el resultado devuelto por los métodos [**ID2D1RenderTarget::EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) o [**ID2D1RenderTarget::Flush.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush)
 
@@ -128,7 +128,7 @@ HRESULT DrawAndFillRoundedRectangleExample::OnRender()
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

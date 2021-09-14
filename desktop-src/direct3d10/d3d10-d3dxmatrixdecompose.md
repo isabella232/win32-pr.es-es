@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: be91b4b8ef6b0a18dc7691eb230ae755db31173ab8e42ab8ef0fb105d23630c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc87de99d72283c20f25b15ea8d0e5864e2550d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119498145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965115"
 ---
 # <a name="d3dxmatrixdecompose-function-d3dx10mathh"></a>Función D3DXMatrixDecompose (D3DX10Math.h)
 
@@ -57,7 +57,7 @@ Puntero a la salida [**D3DXVECTOR3**](d3d10-d3dxvector3.md) que contiene los fac
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Puntero a [**D3DXQUATERNION que**](d3d10-d3dxquaternion.md) describe la rotación.
+Puntero al [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) que describe la rotación.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Si la función se realiza correctamente, el valor devuelto es S \_ OK. Si se pro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

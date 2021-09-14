@@ -5,16 +5,16 @@ ms.assetid: 663743c9-16e9-4e3a-90b2-883ef0b8d5cf
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 1932dc6506c625332d61f4e549ae2dd169060731bfbea344f64c3aa826540ae0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe3509a80f80132f4a5e5d65f62476be1cac61d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119569275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163177"
 ---
 # <a name="how-to-create-a-radial-gradient-brush"></a>Cómo crear un pincel de degradado radial
 
-Para crear un pincel de degradado radial, use el método [**ID2DRenderTarget::CreateRadialGradientBrush**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush)) y especifique las propiedades del pincel de degradado radial y la colección de detenciones de degradado. Algunas sobrecargas permiten especificar las propiedades del pincel. En el código siguiente se muestra cómo crear un pincel de degradado radial para rellenar un círculo y un pincel negro sólido para dibujar el contorno del círculo.
+Para crear un pincel de degradado radial, use el método [**ID2DRenderTarget::CreateRadialGradientBrush**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush)) y especifique las propiedades del pincel de degradado radial y la colección de detenciones de degradado. Algunas sobrecargas permiten especificar las propiedades del pincel. El código siguiente muestra cómo crear un pincel de degradado radial para rellenar un círculo y un pincel negro sólido para dibujar el contorno del círculo.
 
 El código genera la salida que se muestra en la ilustración siguiente.
 
@@ -27,7 +27,7 @@ El código genera la salida que se muestra en la ilustración siguiente.
 
     
 
-2.  Cree una matriz de estructuras [**\_ GRADIENT \_ STOP de D2D1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_gradient_stop) para colocarla en la colección de detenciones de degradado. La **estructura GRADIENT \_ \_ STOP de D2D1** contiene la posición y el color de un delimitador de degradado. La posición indica la posición relativa del delimitador de degradado en el pincel. El valor está en el \[ intervalo 0.0f, 1.0f \] , como se muestra en el código siguiente.
+2.  Cree una matriz de estructuras [**\_ GRADIENT \_ STOP de D2D1**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_gradient_stop) para colocarla en la colección de detenciones de degradado. La **estructura D2D1 \_ GRADIENT \_ STOP** contiene la posición y el color de un detente de degradado. La posición indica la posición relativa del detente de degradado en el pincel. El valor está en el \[ intervalo 0.0f, 1.0f \] , como se muestra en el código siguiente.
 
     ```C++
     // Create an array of gradient stops to put in the gradient stop
@@ -52,7 +52,7 @@ El código genera la salida que se muestra en la ilustración siguiente.
 
     
 
-3.  Use el [**método ID2D1RenderTarget::CreateGradientStopCollection**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-creategradientstopcollection(constd2d1_gradient_stop_uint32_d2d1_gamma_d2d1_extend_mode_id2d1gradientstopcollection)) para crear la colección [**ID2D1GradientStopCollection**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection) a partir de una matriz declarada previamente de estructuras GRADIENT STOP de [**D2D1. \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_gradient_stop) A continuación, use [**CreateRadialGradientBrush para**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush)) crear un pincel de degradado radial.
+3.  Use el [**método ID2D1RenderTarget::CreateGradientStopCollection para**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-creategradientstopcollection(constd2d1_gradient_stop_uint32_d2d1_gamma_d2d1_extend_mode_id2d1gradientstopcollection)) crear la colección [**ID2D1GradientStopCollection**](/windows/win32/api/d2d1/nn-d2d1-id2d1gradientstopcollection) a partir de una matriz declarada previamente de estructuras GRADIENT STOP de [**D2D1. \_ \_**](/windows/desktop/api/d2d1/ns-d2d1-d2d1_gradient_stop) A continuación, use [**CreateRadialGradientBrush para**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createradialgradientbrush(constd2d1_radial_gradient_brush_properties__id2d1gradientstopcollection_id2d1radialgradientbrush)) crear un pincel de degradado radial.
 
     > [!Note]  
     > A partir de Windows 8, puede usar el método [**ID2D1DeviceContext::CreateGradientStopCollection**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-creategradientstopcollection) para crear una colección [**ID2D1GradientStopCollection1**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1gradientstopcollection1) en lugar del método [**ID2D1RenderTarget::CreateGradientStopCollection.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-creategradientstopcollection(constd2d1_gradient_stop_uint32_d2d1_gamma_d2d1_extend_mode_id2d1gradientstopcollection)) Esta interfaz agrega degradados de alto color y la interpolación de degradados en colores rectas o prmultiplicados. Consulte la **página ID2DDeviceContext::CreateGradientStopCollection** para obtener más información.

@@ -4,12 +4,12 @@ ms.assetid: bb1086e1-57e2-495a-9b7b-2d349a516e72
 title: SetDelayTime
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26ebd119f20977c98aa2664518dc2125b7b5c157b44ff53c3a37740bf40a1677
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c7653777be7e6603494d9ba04a671ed46d3d949
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119683745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061609"
 ---
 # <a name="setdelaytime"></a>SetDelayTime
 
@@ -35,7 +35,7 @@ Especifica el tipo de retraso como entero.
 
 
 
-| Valor | Descripción                                                                                                                                                                                                                                      |
+| Value | Descripción                                                                                                                                                                                                                                      |
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | -1    | Para restablecer el tiempo de retraso de autopop a su valor predeterminado, establezca *iNewVal* en -1.                                                                                                                                                                       |
 | 0     | Establezca el período de tiempo que una ventana de información sobre herramientas permanece visible si el puntero está estacionado dentro del rectángulo delimitador de una herramienta.                                                                                                                         |
@@ -56,7 +56,7 @@ Especifica el retraso, en milisegundos, como un entero.
 
 
 
-| Valor                    | Descripción                                                   |
+| Value                    | Descripción                                                   |
 |--------------------------|---------------------------------------------------------------|
 | -1                       | Establece el retraso especificado en *iDelayType* en su valor predeterminado. |
 | cualquier otro valor negativo | Establece todos los tipos de retraso en su valor predeterminado.                  |

@@ -1,9 +1,9 @@
 ---
 title: Métodos ID2D1Factory CreateStrokeStyle
-description: Crea un ID2D1StrokeStyle que describe el extremo inicial, el patrón de guiones y otras características de un trazo.
+description: Crea un id2D1StrokeStyle que describe el límite inicial, el patrón de guion y otras características de un trazo.
 ms.assetid: cc7bd68b-a6eb-4d05-b331-032ce80f375c
 keywords:
-- Métodos de CreateStrokeStyle Direct2D
+- Métodos CreateStrokeStyle de Direct2D
 topic_type:
 - apiref
 api_location:
@@ -14,15 +14,15 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 ms.openlocfilehash: 09a578cafe6795bbf742d9dac114365d6e850586
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105681182"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163010"
 ---
-# <a name="id2d1factorycreatestrokestyle-methods"></a>ID2D1Factory:: CreateStrokeStyle (métodos)
+# <a name="id2d1factorycreatestrokestyle-methods"></a>Métodos ID2D1Factory::CreateStrokeStyle
 
-Crea un [**ID2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) que describe el extremo inicial, el patrón de guiones y otras características de un trazo.
+Crea un [**id2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) que describe el límite inicial, el patrón de guion y otras características de un trazo.
 
 ### <a name="overload-list"></a>Lista de sobrecarga
 
@@ -30,14 +30,14 @@ Crea un [**ID2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle)
 
 | Método                                                                                                                                                                                                  | Descripción                                                                                                                                |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
-| [**CreateStrokeStyle ( \_ \_ \_ propiedades de estilo de trazo de D2D1&, Float \* , uint, ID2D1StrokeStyle \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createstrokestyle(constd2d1_stroke_style_properties__constfloat_uint32_id2d1strokestyle))  | Crea un [**ID2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) que describe el extremo inicial, el patrón de guiones y otras características de un trazo.<br/> |
-| [**CreateStrokeStyle ( \_ \_ \_ propiedades de estilo de trazo D2D1 \* , Float \* , uint, ID2D1StrokeStyle \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createstrokestyle(constd2d1_stroke_style_properties_constfloat_uint32_id2d1strokestyle)) | Crea un [**ID2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) que describe el extremo inicial, el patrón de guiones y otras características de un trazo.<br/> |
+| [**CreateStrokeStyle(D2D1 \_ STROKE STYLE PROPERTIES \_ \_&, FLOAT , \* UINT, ID2D1StrokeStyle \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createstrokestyle(constd2d1_stroke_style_properties__constfloat_uint32_id2d1strokestyle))  | Crea un [**id2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) que describe el límite inicial, el patrón de guion y otras características de un trazo.<br/> |
+| [**CreateStrokeStyle(D2D1 \_ STROKE STYLE PROPERTIES , \_ \_ \* \* FLOAT, UINT, ID2D1StrokeStyle \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createstrokestyle(constd2d1_stroke_style_properties_constfloat_uint32_id2d1strokestyle)) | Crea un [**id2D1StrokeStyle**](/windows/win32/api/d2d1/nn-d2d1-id2d1strokestyle) que describe el límite inicial, el patrón de guion y otras características de un trazo.<br/> |
 
 
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea un trazo que utiliza un patrón de guiones personalizado.
+En el ejemplo siguiente se crea un trazo que usa un patrón de guion personalizado.
 
 
 ```C++
@@ -86,12 +86,12 @@ m_pRenderTarget->DrawLine(
 
 | Requisito | Value |
 |--------------------|-------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | Archivo DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

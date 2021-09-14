@@ -4,12 +4,12 @@ ms.assetid: 8f25c60e-30be-4cc4-b924-b8d6654604d3
 title: Creación del archivo de recompresión Graph
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0432f51e5309a308b32535993fef04da1762d45f179e1ab3a6826d4c5432b02b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2b8ea604bead34c22c123bbabe5d88e985006a9e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118159114"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161662"
 ---
 # <a name="building-the-recompression-graph"></a>Creación del archivo de recompresión Graph
 
@@ -17,11 +17,11 @@ Un gráfico de filtros típico para la recompresión de archivos AVI tiene un as
 
 ![gráfico de recompresión avi](images/avi2avi4.png)
 
-El [filtro divisor AVI](avi-splitter-filter.md) extrae datos del filtro de origen de archivo [(asincrónico)](file-source--async--filter.md) y los analiza en secuencias de audio y vídeo. El descomprimidor de vídeo descodifica el vídeo comprimido, donde lo vuelve a comprimir el vídeo. La elección de los descompresores depende del archivo de código fuente; Intelligent Conectar lo [controlará Conectar](intelligent-connect.md). La aplicación debe elegir el resalte, normalmente mediante la presentación de una lista al usuario. (Consulte [Elección de un filtro de compresión).](choosing-a-compression-filter.md)
+El [filtro divisor AVI](avi-splitter-filter.md) extrae datos del filtro de origen de archivo [(asincrónico)](file-source--async--filter.md) y los analiza en secuencias de audio y vídeo. El descomprimidor de vídeo descodifica el vídeo comprimido, donde lo vuelve a comprimir el vídeo. La elección de los descompresores depende del archivo de origen; Intelligent Conectar lo [controlará Conectar](intelligent-connect.md). La aplicación debe elegir el resalte, normalmente mediante la presentación de una lista al usuario. (Consulte [Elección de un filtro de compresión).](choosing-a-compression-filter.md)
 
 A continuación, el vídeo comprimido va al filtro [Mux de AVI.](avi-mux-filter.md) La secuencia de audio de este ejemplo no está comprimida, por lo que va directamente desde el divisor AVI al Mux avi. El Mux avi intercala las dos secuencias y el filtro [del](file-writer-filter.md) escritor de archivos escribe la salida en el disco. Tenga en cuenta que el Mux avi es necesario incluso si el archivo original no tiene una secuencia de audio.
 
-La manera más fácil de compilar este gráfico de filtro es usar [Capture Graph Builder,](capture-graph-builder.md)que es un componente DirectShow para crear gráficos de captura y otros gráficos de filtro personalizados.
+La manera más fácil de compilar este gráfico de filtros es usar [Capture Graph Builder,](capture-graph-builder.md)que es un componente de DirectShow para crear gráficos de captura y otros gráficos de filtros personalizados.
 
 Para empezar, llame a CoCreateInstance para crear capture Graph Builder:
 
@@ -37,7 +37,7 @@ hr = CoCreateInstance(CLSID_CaptureGraphBuilder2,
 
 A continuación, use capture Graph Builder para compilar el gráfico de filtros:
 
-1.  Compile la sección de representación del gráfico, que incluye el filtro AVI Mux y [el escritor de archivos](file-writer-filter.md).
+1.  Compile la sección de representación del gráfico, que incluye el filtro AVI Mux y [file writer](file-writer-filter.md).
 2.  Agregue el filtro de origen y el filtro de compresión al gráfico.
 3.  Conectar el filtro de origen al filtro MUX. El generador de gráficos de captura inserta los filtros de divisor y descodificador necesarios para analizar el archivo de origen. También puede enrutar las secuencias de audio y vídeo a través de filtros de compresión.
 
@@ -61,7 +61,7 @@ hr = pBuild->SetOutputFileName(
 
 Cuando el método vuelve, el filtro MUX tiene un recuento de referencias pendiente, así que asegúrese de liberar el puntero más adelante.
 
-En el diagrama siguiente se muestra el gráfico de filtros en este punto.
+En el diagrama siguiente se muestra el gráfico de filtro en este punto.
 
 ![sección de representación del gráfico de filtros](images/avi2avi1.png)
 
@@ -72,7 +72,7 @@ El filtro MUX expone dos interfaces para controlar el formato AVI:
 
 Agregar los filtros de origen y compresión
 
-El siguiente paso consiste en agregar los filtros de origen y compresión al gráfico de filtros. Capture Graph Builder crea automáticamente una instancia del Administrador de filtros Graph cuando se llama a SetOutputFileName. Obtenga un puntero a él mediante una llamada [**al método ICaptureGraphBuilder2::GetFiltergraph:**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-getfiltergraph)
+El siguiente paso consiste en agregar los filtros de origen y compresión al gráfico de filtros. Capture Graph Builder crea automáticamente una instancia de Filter Graph Manager al llamar a SetOutputFileName. Obtenga un puntero a él mediante una llamada [**al método ICaptureGraphBuilder2::GetFiltergraph:**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-getfiltergraph)
 
 
 ```C++
@@ -93,11 +93,11 @@ hr = pGraph->AddFilter(pVComp, L"Compressor");
 
 
 
-En este momento, el filtro de origen y el filtro de compresión no están conectados a nada más en el gráfico, como se muestra en la ilustración siguiente:
+En este punto, el filtro de origen y el filtro de compresión no están conectados a nada más en el gráfico, como se muestra en la ilustración siguiente:
 
 ![gráfico de filtro con filtros de origen y compresión](images/avi2avi2.png)
 
-Conectar origen al Mux
+Conectar origen a Mux
 
 El último paso consiste en conectar el filtro de origen al filtro Mux de AVI, a través del vídeo de vídeo. Use el [**método ICaptureGraphBuilder2::RenderStream,**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) que conecta una clavija de salida del filtro de origen a un filtro de receptor especificado, opcionalmente a través de un filtro de compresión.
 
@@ -132,7 +132,7 @@ hr = pBuild->RenderStream(NULL, NULL, pSrc, NULL, pMux);
 
 Aquí no se especifica ningún filtro de compresión. El pin de salida del filtro de origen ya está conectado, por lo que el método RenderStream busca un pin de salida no conectado en el filtro divisor. Busca la clavija de audio y la conecta directamente al filtro MUX. Si el archivo de origen no tiene una secuencia de audio, se producirá un error en la segunda llamada a RenderStream. Este es el comportamiento esperado. El gráfico se completa después de la primera llamada a RenderStream, por lo que el error en la segunda llamada es inofensivo.
 
-En este ejemplo, el orden de las dos llamadas RenderStream es importante. Dado que la segunda llamada no especifica un resalte, conectará cualquier pin no conectado desde el divisor AVI. Si realiza esta llamada antes que la otra, podría conectar la secuencia de vídeo a AVI Mux, sin el vídeo. Por lo tanto, la llamada más específica (con el filtro de compresión) debe producirse primero.
+En este ejemplo, el orden de las dos llamadas RenderStream es importante. Dado que la segunda llamada no especifica un desenlazador, conectará cualquier pin no conectado desde el divisor AVI. Si realiza esta llamada antes que la otra, podría conectar la secuencia de vídeo a AVI Mux, sin el vídeo. Por lo tanto, la llamada más específica (con el filtro de compresión) debe producirse primero.
 
 En la explicación anterior se ha supuesto que el archivo de origen es un archivo AVI. Sin embargo, esta técnica también funciona con otros tipos de archivo, como archivos MPEG. El gráfico de filtros resultante será algo diferente.
 

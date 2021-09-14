@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Pwm.h
-ms.openlocfilehash: dda05c06ee8c53968647bc29da2febee14abf758d4ad228c16178703c2d1da08
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 607fcb1ab429e7cbe9aee593f75d48f0f9d308bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120053325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164322"
 ---
 # <a name="pwm_pin_get_active_duty_cycle_percentage_output-structure"></a>ESTRUCTURA DE SALIDA DE \_ PORCENTAJE DE CICLO DE SERVICIO \_ \_ \_ \_ ACTIVO \_ \_ DE PIN DE PWM
 
@@ -37,7 +37,7 @@ typedef struct _PWM_PIN_GET_ACTIVE_DUTY_CYCLE_PERCENTAGE_OUTPUT {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -58,11 +58,11 @@ El ciclo de servicio de señal de PWM actual, como porcentaje de \_ PWM, que es 
 | Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                             |
 | Versión mínima de KMDF<br/>     | 1.19<br/>                                                                                  |
 | Versión mínima de UMDF<br/>     | 2.19<br/>                                                                                  |
-| Header<br/>                   | <dl> <dt>Pwm.h (incluir Pwm.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Pwm.h (incluir Pwm.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

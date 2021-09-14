@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4812c21558fba07be2709c0fd1a011f31d79fad17e0b4146fa0c7d65843a087
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 48fbd93971a57cffa3441c2a3db0816572f761d7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118672675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062096"
 ---
 # <a name="em_setimemodebias-message"></a>Mensaje \_ EM SETIMEMODEBIAS
 
@@ -39,7 +39,7 @@ Valor de sesgo del modo IME. Puede ser uno de los siguientes.
 | Value                                                                                                                                                                                        | Significado                                    |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
 | <span id="IMF_SMODE_PLAURALCLAUSE"></span><span id="imf_smode_plauralclause"></span><dl> <dt>**\_PLAURALCLAUSE DE SMODE \_ PARA EL GOBIERNO DEL PAÍS**</dt> </dl> | Establece el sesgo del modo IME en Nombre.<br/> |
-| <span id="IMF_SMODE_NONE"></span><span id="imf_smode_none"></span><dl> <dt>**LA ZONA \_ DE SMODE \_ DEL FONDO MONETARIO NO EXISTE**</dt> </dl>                            | Sin sesgo.<br/>                        |
+| <span id="IMF_SMODE_NONE"></span><span id="imf_smode_none"></span><dl> <dt>**LA \_ SMODE DE LA \_ ZONA DE LA CONSEJEÍA NO EXISTE**</dt> </dl>                            | Sin sesgo.<br/>                        |
 
 
 
@@ -62,7 +62,7 @@ Este mensaje devuelve la nueva configuración de sesgo del modo IME.
 
 Cuando el IME genera una lista de opciones alternativas para un conjunto de caracteres, este mensaje establece los criterios por los que algunas de las opciones aparecerán en la parte superior de la lista.
 
-Para establecer el sesgo del modo Text Services Framework (TSF), use [**EM \_ SETCTFMODEBIAS**](em-setctfmodebias.md).
+Para establecer el sesgo Text Services Framework modo de Text Services Framework (TSF), use [**EM \_ SETCTFMODEBIAS**](em-setctfmodebias.md).
 
 La aplicación debe llamar a [**EM \_ ISIME antes**](em-isime.md) de llamar a esta función.
 
@@ -74,11 +74,11 @@ La aplicación debe llamar a [**EM \_ ISIME antes**](em-isime.md) de llamar a es
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP solo con aplicaciones de escritorio de SP1 \[\]<br/>                                  |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

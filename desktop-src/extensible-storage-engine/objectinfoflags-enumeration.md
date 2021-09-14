@@ -36,12 +36,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 06cd7cecaa536106f70cc469e3b690a46bee8301fe2d1142bc3fa1ff2c045346
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b3f301f1e786d126dbd57c071fe89356e0acc891
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119780275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964196"
 ---
 # <a name="objectinfoflags-enumeration"></a>Enumeración ObjectInfoFlags
 
@@ -67,7 +67,7 @@ Dim instance As ObjectInfoFlags
 public enum ObjectInfoFlags
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -80,7 +80,7 @@ public enum ObjectInfoFlags
 <tbody>
 <tr class="odd">
 <td></td>
-<td>Ninguno</td>
+<td>None</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
@@ -100,19 +100,19 @@ public enum ObjectInfoFlags
 </tr>
 <tr class="odd">
 <td></td>
-<td>TableDerived</td>
+<td>Derivado de table</td>
 <td>El DDL de tabla se hereda de una tabla de plantillas.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>TableNoFixedVarColumnsInDerivedTables</td>
-<td>Columnas fijas o variables en tablas derivadas (de modo que las columnas fijas o variables se puedan agregar a la plantilla en el futuro). Se usa junto con TableTemplate.</td>
+<td>Columnas fijas o variables en tablas derivadas (para que las columnas fijas o variables se puedan agregar a la plantilla en el futuro). Se usa junto con TableTemplate.</td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

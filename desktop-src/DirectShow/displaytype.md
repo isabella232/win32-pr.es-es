@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 4a48bc5f4afbfabc9bdc37ff2cfe8c5890629f3fcaacf135979b82523981ed66
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4f3d83bbe7a24463fc4cfaed4ace3adec9d6fcf7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119906505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061672"
 ---
 # <a name="displaytype-function"></a>Función DisplayType
 
@@ -61,7 +61,7 @@ ointer a la [**estructura \_ AM MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-st
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función genera varios mensajes LOG \_ TRACE. En el nivel de registro 2 o superior, la función muestra el tipo principal, el subtipo y el tipo de formato, así como los datos del bloque de formato. En el nivel de registro 5 o superior, la función muestra información adicional, como los rectángulos de origen y de destino para los tipos de vídeo.
 
@@ -76,7 +76,7 @@ Esta función genera varios mensajes LOG \_ TRACE. En el nivel de registro 2 o s
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

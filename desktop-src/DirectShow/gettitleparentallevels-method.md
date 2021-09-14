@@ -4,12 +4,12 @@ ms.assetid: 076808d7-6cb6-4d81-b26d-c7945db298f2
 title: GetTitleParentalLevels (método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 88ef462767c280f5e6f1c58679a78ee876e58042dce632f30711c198b4ca574a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6db82ca21c2fdd023aa472e4c3428260464a8612
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119536675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061099"
 ---
 # <a name="gettitleparentallevels-method"></a>GetTitleParentalLevels (método)
 
@@ -39,13 +39,13 @@ Especifica el título como entero.
 
 Devuelve un valor entero cuyos bits individuales indican qué niveles de administración parental (PML) se establecen en el título especificado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un título puede tener capítulos o incluso segmentos cortos que tienen una PML diferente de la PML general del título. Use este método para determinar todas las PML que se encontrarán al reproducir un título especificado. El entero devuelto es un conjunto de marcas de bits que se definen como se muestra en la tabla siguiente. Realice una operación AND bit a bit en *iLevels* y cada valor posible. Si la operación devuelve **true**, significa que la PML se encontrará en algún momento de este título.
 
 
 
-| Valor  | Descripción          |
+| Value  | Descripción          |
 |--------|----------------------|
 | 0x100  | DVD Parental Level 1 |
 | 0x200  | Dvd Parental Level 2 |
@@ -60,7 +60,7 @@ Un título puede tener capítulos o incluso segmentos cortos que tienen una PML 
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

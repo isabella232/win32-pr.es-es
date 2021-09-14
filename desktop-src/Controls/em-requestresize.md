@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7113f52e2fa3a293549443f779ba937bf20b85736c6751cd9ab77bdbecd45c3b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ec41e7be8e0f30d5c1ec011247f3964292c2218e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119440165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062139"
 ---
 # <a name="em_requestresize-message"></a>Mensaje \_ EM REQUESTRESIZE
 
@@ -59,11 +59,11 @@ Este mensaje es útil durante el [**procesamiento de WM \_ SIZE**](/windows/desk
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -76,7 +76,7 @@ Este mensaje es útil durante el [**procesamiento de WM \_ SIZE**](/windows/desk
 **Otros recursos**
 </dt> <dt>
 
-[**TAMAÑO \_ WM**](/windows/desktop/winmsg/wm-size)
+[**TAMAÑO \_ DE WM**](/windows/desktop/winmsg/wm-size)
 </dt> </dl>
 
  

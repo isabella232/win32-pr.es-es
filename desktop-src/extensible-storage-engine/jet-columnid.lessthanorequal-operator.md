@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0b2ffe6ff2a4b6af3234c9f5d85d577bae91a748ebb9224fef5a9d0d96864502
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e9d6f98c5861a57fa4916ebca1b421c538d752d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119039323"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965751"
 ---
 # <a name="jet_columnidlessthanorequal-operator"></a>JET_COLUMNID. Operador LessThanOrEqual
 
@@ -74,14 +74,14 @@ public static bool operator <=(
   - rhs  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
     
-    Segundo columnid que se compara.
+    Segundo columnid que se comparará.
 
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
-True si lhs va antes que o es igual a rhs.  
+True si lhs es anterior o es igual a rhs.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

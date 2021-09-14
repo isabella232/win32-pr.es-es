@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 556d4842772ed6c8055a9024a9a6112b466dc9c2fb804321ab605256ece079ce
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3bb8341bfd86b96a7358fb23036b71844f77d17a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119640565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061776"
 ---
 # <a name="cbasefiltergetpin-method"></a>Método CBaseFilter.GetPin
 
@@ -53,9 +53,9 @@ virtual CBasePin* GetPin(
 
 Devuelve un puntero al [**objeto CBasePin**](cbasepin.md) que implementa el pin.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Debe implementar este método virtual puro en la clase derivada. Devuelve un puntero al n.º pin de este filtro, indexado desde cero. Puede elegir un orden de indexación arbitrario, siempre que la ordenación sea fija. Si el filtro agrega o elimina pines, o la ordenación cambia por algún otro motivo en tiempo de ejecución, llame al método [**CBaseFilter::IncrementPinVersion.**](cbasefilter-incrementpinversion.md)
+Debe implementar este método virtual puro en la clase derivada. Devuelve un puntero al *enésimo* pin de este filtro, indexado desde cero. Puede elegir un orden de indexación arbitrario, siempre y cuando el orden sea fijo. Si el filtro agrega o elimina pines, o si el orden cambia por algún otro motivo en tiempo de ejecución, llame al método [**CBaseFilter::IncrementPinVersion.**](cbasefilter-incrementpinversion.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,7 +68,7 @@ Debe implementar este método virtual puro en la clase derivada. Devuelve un pun
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

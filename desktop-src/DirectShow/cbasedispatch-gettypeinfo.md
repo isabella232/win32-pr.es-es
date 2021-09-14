@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 294b9758aa79ab033c1e3cf8932056ca10e7bf2424de97a1cf9f3b509f1906bf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a9b1e21133b4fa561c743fefc6282c777b444e6f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120076685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061391"
 ---
 # <a name="cbasedispatchgettypeinfo-method"></a>Método CBaseDispatch.GetTypeInfo
 
-El método recupera la información de tipo para el objeto , que luego se puede usar `GetTypeInfo` para obtener la información de tipo de una interfaz.
+El método recupera la información de tipo del objeto , que luego se puede usar `GetTypeInfo` para obtener la información de tipo de una interfaz.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -89,9 +89,9 @@ Devuelve un **valor HRESULT.** Estos son algunos de los valores posibles.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método se comporta como **el método IDispatch::GetTypeInfo.** Sin embargo, incluye un parámetro adicional, *riid*, que especifica la interfaz para la que se va a recuperar información de tipo.
+Este método se comporta como el **método IDispatch::GetTypeInfo.** Sin embargo, incluye un parámetro adicional, *riid*, que especifica la interfaz para la que se va a recuperar información de tipo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -104,7 +104,7 @@ Este método se comporta como **el método IDispatch::GetTypeInfo.** Sin embargo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

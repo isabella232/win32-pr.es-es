@@ -1,5 +1,5 @@
 ---
-description: Determina el producto de punto de dos vectores 2D.
+description: Determina el producto de puntos de dos vectores 2D.
 ms.assetid: ae77ff29-44be-4b67-9c63-aaffa4fe8d59
 title: Función D3DXVec2Dot (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 98cb865ebd075dcd78db8200b18de1644107e9a497b977fe062017c758e52256
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 79b65127c415695b3df9f927b6edff8fcdd5c58d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118523831"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060704"
 ---
 # <a name="d3dxvec2dot-function"></a>Función D3DXVec2Dot
 
-Determina el producto de punto de dos vectores 2D.
+Determina el producto de puntos de dos vectores 2D.
 
 ## <a name="syntax"></a>Sintaxis
 

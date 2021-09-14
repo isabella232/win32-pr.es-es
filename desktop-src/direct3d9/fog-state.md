@@ -4,12 +4,12 @@ ms.assetid: 26fe4f7c-7bb3-4a52-b539-5de2b11256e9
 title: Estado de la infusión (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84004b8f261f9a6dc4c9b800ba5baa1f9a3c3e528db2b94e86286c3752414729
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 61d3103cbbd3dfb220e2ddd75078040702fd7557
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119564245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964928"
 ---
 # <a name="fog-state-direct3d-9"></a>Estado de la infusión (Direct3D 9)
 

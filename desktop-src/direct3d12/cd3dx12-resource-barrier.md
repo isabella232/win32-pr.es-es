@@ -1,6 +1,6 @@
 ---
 title: CD3DX12_RESOURCE_BARRIER estructura (D3dx12.h)
-description: Estructura auxiliar para permitir la inicialización sencilla de una estructura RESOURCE BARRIER de D3D12. \_ \_
+description: Una estructura auxiliar para permitir la inicialización sencilla de una estructura RESOURCE BARRIER de D3D12. \_ \_
 ms.assetid: 89E0F38C-8802-46E6-9583-95C5D853CD99
 keywords:
 - CD3DX12_RESOURCE_BARRIER estructura
@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc3490f48e04c97c845264f514e65db390a01e115ebff7c53aca792d29f0c522
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8eaa9b19a8bc7dcebba5982313bb362dbcee6157
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118098469"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965024"
 ---
 # <a name="cd3dx12_resource_barrier-structure"></a>Estructura DE BARRERA DE \_ RECURSOS CD3DX12 \_
 
@@ -42,7 +42,7 @@ struct CD3DX12_RESOURCE_BARRIER  : public D3D12_RESOURCE_BARRIER{
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -73,7 +73,7 @@ Transiciones entre estados de recursos mediante los parámetros siguientes:
 
 (opt) Subcurso UINT = [ **D3D12 \_ RESOURCE \_ BARRIER ALL \_ \_ SUBRESOURCES**](constants.md)
 
-(opt) [**D3D12 \_ MARCAS \_ DE \_ BARRERA DE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_barrier_flags) RECURSOS = D3D12 RESOURCE BARRIER FLAG \_ \_ \_ \_ NONE
+(opt) [**D3D12 \_ MARCAS \_ DE \_ BARRERA DE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_barrier_flags) RECURSOS MARCAS = D3D12 RESOURCE BARRIER FLAG \_ \_ \_ \_ NONE
 
 </dd> <dt>
 
@@ -114,7 +114,7 @@ Define el & de paso por referencia para el tipo de estructura primaria.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

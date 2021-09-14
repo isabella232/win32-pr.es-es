@@ -4,12 +4,12 @@ ms.assetid: af978044-e2ea-432c-8f62-cbc49e00ef73
 title: Detalles de implementación para copias de seguridad de VSS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 680111ba273698c169d226a19108d99fcdb351a45fc018bcb85b8b5ccdcc15f6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9fb5ec33dd2c388ff1cab2556491463e738280f0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117751784"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126885732"
 ---
 # <a name="implementation-details-for-vss-backups"></a>Detalles de implementación para copias de seguridad de VSS
 

@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102285
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 0bff3ce81640321657a455908d0fcb31f6012e1e8c9fbe932fc5f580034149a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 20419caf1f0b0b2b1644ccfa4ce65fe541cadd3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118775477"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964507"
 ---
 # <a name="esentnobackupexception-methods"></a>Métodos de EsentNoBackupException 
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentNoBackupException](./esentnobackupexception-class.md) expone los siguientes miembros.
+El [tipo EsentNoBackupException](./esentnobackupexception-class.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 

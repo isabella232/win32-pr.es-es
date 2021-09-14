@@ -3,7 +3,7 @@ title: Métodos SetValue de ID2D1Properties
 description: Establece la propiedad correspondiente por índice.
 ms.assetid: FA740482-BAAF-466F-8CD1-330253B581BF
 keywords:
-- Métodos de sobrecarga SetValue Direct2D
+- Métodos de métodos de sobrecarga SetValue Direct2D
 topic_type:
 - apiref
 api_type:
@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 97cc953c5e07708ca3d10b67d6dc9a08d1fbab7ad54f6c0f08f639a7ac701828
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: df960819e5b4e7d5391441fcfa0c6acc928ef218
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119636555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162862"
 ---
 # <a name="id2d1propertiessetvalue-methods"></a>Métodos ID2D1Properties::SetValue
 
@@ -36,7 +36,7 @@ Establece la propiedad correspondiente por índice.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

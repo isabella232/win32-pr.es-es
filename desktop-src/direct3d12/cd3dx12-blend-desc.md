@@ -1,6 +1,6 @@
 ---
 title: CD3DX12_BLEND_DESC estructura (D3dx12.h)
-description: Estructura auxiliar para permitir la inicialización sencilla de una estructura \_ \_ DESC de BLEND D3D12.
+description: Estructura auxiliar para permitir la inicialización sencilla de una estructura \_ \_ DESC BLEND de D3D12.
 ms.assetid: D37BB62E-904B-4953-9119-21F3B37570C0
 keywords:
 - CD3DX12_BLEND_DESC estructura
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 40acdedbe428d808a576b68645a3e662dc71389b4d6dd0c19424278f28deb93a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ddb88ce003f74251c3ce34a2ca47ae2fb55f892d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118989955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060805"
 ---
-# <a name="cd3dx12_blend_desc-structure"></a>Estructura \_ DESC de BLEND de CD3DX12 \_
+# <a name="cd3dx12_blend_desc-structure"></a>Estructura \_ DESC de BLEND CD3DX12 \_
 
-Estructura auxiliar para permitir la inicialización sencilla de una estructura [**\_ \_ DESC de BLEND D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_blend_desc)
+Estructura auxiliar para permitir la inicialización sencilla de una estructura [**\_ \_ DESC BLEND de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_blend_desc)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,45 +41,45 @@ struct CD3DX12_BLEND_DESC  : public D3D12_BLEND_DESC{
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **CD3DX12 \_ BLEND \_ DESC()**
 </dt> <dd>
 
-Crea una nueva instancia de BLEND DESC cd3DX12 sin \_ \_ inicializar.
+Crea una nueva instancia sin inicializar de un \_ DESC de BLEND \_ CD3DX12.
 
 </dd> <dt>
 
 **EXPLICIT CD3DX12 \_ BLEND \_ DESC(const D3D12 \_ BLEND \_ DESC& o)**
 </dt> <dd>
 
-Crea una nueva instancia de UN DESC BLEND CD3DX12, inicializado con el contenido de otra estructura \_ \_ [**\_ \_ DESC de BLEND D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_blend_desc)
+Crea una nueva instancia de un DESC BLEND CD3DX12, inicializado con el contenido de otra estructura \_ \_ [**\_ \_ DESC de BLEND D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_blend_desc)
 
 </dd> <dt>
 
 **EXPLICIT CD3DX12 \_ BLEND \_ DESC(CD3DX12 \_ DEFAULT)**
 </dt> <dd>
 
-Crea una nueva instancia de UN CD3DX12 \_ BLEND \_ DESC, inicializado con parámetros predeterminados.
+Crea una nueva instancia de UN \_ \_ DESC BLEND CD3DX12, inicializado con parámetros predeterminados.
 
 
 
-| Estado                                   | Valor predeterminado                    |
+| State                                   | Valor predeterminado                    |
 |-----------------------------------------|----------------------------------|
 | AlphaToCoverageEnable                   | **FALSE**                        |
 | IndependentBlendEnable                  | **FALSE**                        |
-| RenderTarget \[ 0 \] . BlendEnable           | **FALSE**                        |
-| RenderTarget \[ 0 \] . LogicOpEnable         | **FALSE**                        |
-| RenderTarget \[ 0 \] . SrcBlend              | D3D12 \_ BLEND \_ ONE                |
-| RenderTarget \[ 0 \] . DestBlend             | D3D12 \_ BLEND \_ ZERO               |
-| RenderTarget \[ 0 \] . BlendOp               | D3D12 \_ BLEND \_ OP \_ ADD            |
-| RenderTarget \[ 0 \] . SrcBlendAlpha         | D3D12 \_ BLEND \_ ONE                |
-| RenderTarget \[ 0 \] . DestBlendAlpha        | D3D12 \_ BLEND \_ ZERO               |
-| RenderTarget \[ 0 \] . BlendOpAlpha          | D3D12 \_ BLEND \_ OP \_ ADD            |
-| RenderTarget \[ 0 \] . LogicOp               | D3D12 \_ LOGIC \_ OP \_ NOOP           |
-| RenderTarget \[ 0 \] . RenderTargetWriteMask | D3D12 \_ COLOR \_ WRITE \_ ENABLE \_ ALL |
+| RenderTarget \[ \] 0. BlendEnable           | **FALSE**                        |
+| RenderTarget \[ \] 0. LogicOpEnable         | **FALSE**                        |
+| RenderTarget \[ \] 0. SrcBlend              | D3D12 \_ BLEND \_ ONE                |
+| RenderTarget \[ \] 0. DestBlend             | D3D12 \_ BLEND \_ ZERO               |
+| RenderTarget \[ \] 0. BlendOp               | D3D12 \_ BLEND \_ OP \_ ADD            |
+| RenderTarget \[ \] 0. SrcBlendAlpha         | D3D12 \_ BLEND \_ ONE                |
+| RenderTarget \[ \] 0. DestBlendAlpha        | D3D12 \_ BLEND \_ ZERO               |
+| RenderTarget \[ \] 0. BlendOpAlpha          | D3D12 \_ BLEND \_ OP \_ ADD            |
+| RenderTarget \[ \] 0. LogicOp               | D3D12 \_ LOGIC \_ OP \_ NOOP           |
+| RenderTarget \[ \] 0. RenderTargetWriteMask | D3D12 \_ COLOR \_ WRITE \_ ENABLE \_ ALL |
 
 
 
@@ -111,7 +111,7 @@ Define el & de paso por referencia para el tipo de estructura primaria.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ description: Para usar una interfaz COM, el programa crea primero una instancia 
 ms.assetid: 75f2115d-d49d-4e4e-8f99-67a231559ba6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7e15874e1d4dcb6bc29fad90f40f90b478c805ccc7b0d0085f560a8b56e2247
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 96f96e4d9c2afbac028bfcefffcec6a070c78c8b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119913775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127159995"
 ---
 # <a name="creating-an-object-in-com"></a>Crear un objeto en COM
 
@@ -18,7 +18,7 @@ Una vez que un subproceso ha inicializado la biblioteca COM, es seguro que el su
 En general, hay dos maneras de crear un objeto COM:
 
 -   El módulo que implementa el objeto podría proporcionar una función diseñada específicamente para crear instancias de ese objeto.
--   Como alternativa, COM proporciona una función de creación genérica denominada [**CoCreateInstance.**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)
+-   Como alternativa, COM proporciona una función de creación genérica denominada [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).
 
 Por ejemplo, tome el objeto `Shape` hipotético del tema [¿Qué es una interfaz COM?](what-is-a-com-interface-.md). En ese ejemplo, el `Shape` objeto implementa una interfaz denominada `IDrawable` . La biblioteca de gráficos que implementa el `Shape` objeto podría exportar una función con la firma siguiente.
 
@@ -62,12 +62,12 @@ La `CreateShape` función usa la dirección de *pShape* ( `&pShape` ) para escri
 
 ## <a name="cocreateinstance-a-generic-way-to-create-objects"></a>CoCreateInstance: una manera genérica de crear objetos
 
-La [**función CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) proporciona un mecanismo genérico para crear objetos. Para comprender **CoCreateInstance,** tenga en cuenta que dos objetos COM pueden implementar la misma interfaz y un objeto puede implementar dos o más interfaces. Por lo tanto, una función genérica que crea objetos necesita dos fragmentos de información.
+La [**función CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) proporciona un mecanismo genérico para crear objetos. Para entender **CoCreateInstance,** tenga en cuenta que dos objetos COM pueden implementar la misma interfaz y un objeto puede implementar dos o más interfaces. Por lo tanto, una función genérica que crea objetos necesita dos fragmentos de información.
 
 -   Objeto que se va a crear.
 -   Interfaz que se va a obtener del objeto .
 
-Pero, ¿cómo se indica esta información cuando se llama a la función? En COM, un objeto o una interfaz se identifica asignándolo un número de 128 bits, denominado identificador *único global* (GUID). Los GUID se generan de forma que sean únicos de forma eficaz. Los GUID son una solución al problema de cómo crear identificadores únicos sin una autoridad de registro central. A veces, los GUID se *denominan identificadores únicos universales* (UUD). Antes de COM, se usaban en DCE/RPC (Distributed Computing Environment/Remote Procedure Call). Existen varios algoritmos para crear nuevos GUID. No todos estos algoritmos garantizan estrictamente la unidad, pero la probabilidad de crear accidentalmente el mismo valor GUID dos veces es extremadamente pequeña, en efecto cero. Los GUID se pueden usar para identificar cualquier tipo de entidad, no solo objetos e interfaces. Sin embargo, este es el único uso que nos preocupa en este módulo.
+Pero, ¿cómo se indica esta información cuando se llama a la función? En COM, un objeto o una interfaz se identifica asignándolo un número de 128 bits, denominado identificador *único global* (GUID). Los GUID se generan de una manera que los hace únicos de forma eficaz. Los GUID son una solución al problema de cómo crear identificadores únicos sin una entidad de registro central. Los GUID a veces se *denominan identificadores únicos universales* (UUID). Antes de COM, se usaban en DCE/RPC (Distributed Computing Environment/Remote Procedure Call). Existen varios algoritmos para crear nuevos GUID. No todos estos algoritmos garantizan estrictamente la unidad, pero la probabilidad de crear accidentalmente el mismo valor GUID dos veces es extremadamente pequeña, en la práctica cero. Los GUID se pueden usar para identificar cualquier tipo de entidad, no solo objetos e interfaces. Sin embargo, este es el único uso que nos preocupa en este módulo.
 
 Por ejemplo, la `Shapes` biblioteca podría declarar dos constantes GUID:
 
@@ -79,7 +79,7 @@ extern const GUID IID_IDrawable;
 
 
 
-(Puede suponer que los valores numéricos reales de 128 bits para estas constantes se definen en otra parte). La constante **CLSID \_ Shape** identifica el objeto , mientras que `Shape` la constante **IID \_ IDrawable** identifica la `IDrawable` interfaz. El prefijo "CLSID" significa identificador de *clase* y el *prefijo IID* significa identificador *de interfaz*. Se trata de convenciones de nomenclatura estándar en COM.
+(Puede suponer que los valores numéricos reales de 128 bits para estas constantes se definen en otro lugar). La constante **CLSID \_ Shape** identifica el `Shape` objeto , mientras que el **IID \_ IDrawable** constante identifica la `IDrawable` interfaz . El prefijo "CLSID" significa identificador *de clase* y el *prefijo IID* significa identificador *de interfaz*. Se trata de convenciones de nomenclatura estándar en COM.
 
 Dados estos valores, crearía una nueva `Shape` instancia de la siguiente manera:
 
@@ -101,9 +101,9 @@ else
 
 
 
-La [**función CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) tiene cinco parámetros. El primer y cuarto parámetro son el identificador de clase y el identificador de interfaz. De hecho, estos parámetros le dicen a la función "Crear el objeto Shape y damos un puntero a la interfaz IDrawable".
+La [**función CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) tiene cinco parámetros. El primer y cuarto parámetro son el identificador de clase y el identificador de interfaz. En efecto, estos parámetros le dicen a la función "Crear el objeto Shape y damos un puntero a la interfaz IDrawable".
 
-Establezca el segundo parámetro en **NULL.** (Para obtener más información sobre el significado de este parámetro, vea el tema [Agregación](/windows/desktop/com/aggregation) en la documentación com). El tercer parámetro toma un conjunto de marcas cuyo propósito principal es especificar el *contexto de ejecución* del objeto. El contexto de ejecución especifica si el objeto se ejecuta en el mismo proceso que la aplicación; en un proceso diferente en el mismo equipo; o en un equipo remoto. En la tabla siguiente se muestran los valores más comunes para este parámetro.
+Establezca el segundo parámetro en **NULL.** (Para obtener más información sobre el significado de este parámetro, vea el tema [Agregación](/windows/desktop/com/aggregation) en la documentación com). El tercer parámetro toma un conjunto de marcas cuyo propósito principal es especificar el contexto *de ejecución* del objeto. El contexto de ejecución especifica si el objeto se ejecuta en el mismo proceso que la aplicación; en un proceso diferente en el mismo equipo; o en un equipo remoto. En la tabla siguiente se muestran los valores más comunes para este parámetro.
 
 
 
@@ -118,19 +118,19 @@ Establezca el segundo parámetro en **NULL.** (Para obtener más información so
 
  
 
-La documentación de un componente determinado podría decir qué contexto de ejecución admite el objeto. Si no es así, **use CLSCTX \_ ALL**. Si solicita un contexto de ejecución que el objeto no admite, la función [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) devuelve el código de error **REGDB \_ E \_ CLASSNOTREG**. Este código de error también puede indicar que clsid no corresponde a ningún componente registrado en el equipo del usuario.
+La documentación de un componente determinado podría avisarle del contexto de ejecución que admite el objeto. Si no es así, **use CLSCTX \_ ALL**. Si solicita un contexto de ejecución que el objeto no admite, la función [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) devuelve el código de error **REGDB \_ E \_ CLASSNOTREG**. Este código de error también puede indicar que el CLSID no se corresponde con ningún componente registrado en el equipo del usuario.
 
-El quinto parámetro de [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) recibe un puntero a la interfaz . Dado **que CoCreateInstance** es un mecanismo genérico, este parámetro no se puede escribir fuertemente. En su lugar, el tipo de datos **es void \* \*** y el autor de la llamada debe convertir la dirección del puntero en un tipo **void. \* \*** Ese es el propósito de la **conversión reinterpretación \_** en el ejemplo anterior.
+El quinto parámetro de [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) recibe un puntero a la interfaz . Dado **que CoCreateInstance** es un mecanismo genérico, este parámetro no se puede escribir fuertemente. En su lugar, el tipo de datos **es void \* \*** y el autor de la llamada debe convertir la dirección del puntero en un tipo **void. \* \*** Ese es el propósito de la **conversión de reinterpretación \_** en el ejemplo anterior.
 
-Es fundamental comprobar el valor devuelto de [**CoCreateInstance.**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) Si la función devuelve un código de error, el puntero de interfaz COM no es válido e intentar desreferenciar puede provocar que el programa se bloquea.
+Es fundamental comprobar el valor devuelto de [**CoCreateInstance.**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) Si la función devuelve un código de error, el puntero de interfaz COM no es válido y si se intenta desreferenciar, el programa se bloqueará.
 
-Internamente, [**la función CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) usa varias técnicas para crear un objeto. En el caso más sencillo, busca el identificador de clase en el Registro. La entrada del Registro apunta a un archivo DLL o EXE que implementa el objeto . **CoCreateInstance** también puede usar información de un catálogo de COM+ o un manifiesto en paralelo (SxS). Independientemente de ello, los detalles son transparentes para el autor de la llamada. Para obtener más información sobre los detalles internos de **CoCreateInstance**, vea [Clientes y servidores COM](/windows/desktop/com/com-clients-and-servers).
+Internamente, [**la función CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) usa varias técnicas para crear un objeto. En el caso más sencillo, busca el identificador de clase en el Registro. La entrada del Registro apunta a un archivo DLL o EXE que implementa el objeto . **CoCreateInstance** también puede usar información de un catálogo com+ o un manifiesto en paralelo (SxS). Independientemente de ello, los detalles son transparentes para el autor de la llamada. Para obtener más información sobre los detalles internos de **CoCreateInstance,** vea [Clientes y servidores COM](/windows/desktop/com/com-clients-and-servers).
 
 El ejemplo que hemos estado usando es bastante derivado, por lo que ahora vamos a pasar a un ejemplo real de COM en acción: mostrar el cuadro de diálogo Abrir para que el usuario seleccione un `Shapes` archivo. 
 
 ## <a name="next"></a>Siguientes
 
-[Ejemplo: El cuadro de diálogo Abrir](example--the-open-dialog-box.md)
+[Ejemplo: Cuadro de diálogo Abrir](example--the-open-dialog-box.md)
 
  
 

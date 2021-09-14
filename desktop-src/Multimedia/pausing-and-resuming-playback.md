@@ -1,6 +1,6 @@
 ---
-title: Pausar y reanudar la reproducción
-description: Pausar y reanudar la reproducción
+title: Pausa y reanudación de la reproducción
+description: Pausa y reanudación de la reproducción
 ms.assetid: f5a7ef22-993c-4aab-bab0-2700289da7a7
 keywords:
 - Macro MCIWndPause
@@ -8,13 +8,13 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: c1876417b821a57f7ebbac0cd35bec184cc9d2da
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370837"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161394"
 ---
-# <a name="pausing-and-resuming-playback"></a>Pausar y reanudar la reproducción
+# <a name="pausing-and-resuming-playback"></a>Pausa y reanudación de la reproducción
 
 Puede interrumpir la reproducción de un dispositivo o archivo asociado a una ventana de MCIWnd mediante la macro [**MCIWndPause.**](/windows/desktop/api/Vfw/nf-vfw-mciwndpause) A continuación, puede reiniciar la reproducción mediante la macro [**MCIWndResume.**](/windows/desktop/api/Vfw/nf-vfw-mciwndresume) Si el dispositivo no admite la reanudación o si se produce un error, puede usar la macro [**MCIWndPlay**](/windows/desktop/api/Vfw/nf-vfw-mciwndplay) para reiniciar la reproducción.
 

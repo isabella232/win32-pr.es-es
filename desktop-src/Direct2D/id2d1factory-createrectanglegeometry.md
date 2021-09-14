@@ -13,11 +13,11 @@ api_type:
 ms.date: 07/02/2019
 ms.topic: reference
 ms.openlocfilehash: 9fdb3073928739e28df63fc7d3ade918b29f9217
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110549400"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163014"
 ---
 # <a name="id2d1factorycreaterectanglegeometry-methods"></a>Métodos ID2D1Factory::CreateRectangleGeometry
 

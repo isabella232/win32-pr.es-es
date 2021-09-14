@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: ab6f1948da437bee7132699684575c42a2b0d7da59924149cb4b24b92c3f58aa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: feeb4df94709dbb160c5f3f61f45d5744b4b24af
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119498695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126963967"
 ---
 # <a name="d3dvector-structure-d3dx10mathh"></a>Estructura D3DVECTOR (D3DX10Math.h)
 
@@ -37,7 +37,7 @@ typedef struct D3DVECTOR {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -84,7 +84,7 @@ Componente z.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

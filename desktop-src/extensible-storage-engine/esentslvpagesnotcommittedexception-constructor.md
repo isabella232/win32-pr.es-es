@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a43fc591dc1fc8ca5992b1ceb397c45f7fbfb9d870c64e2fd2d89d8799e40e06
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 262c5c6de7bb52877ae9234366557f7743af5641
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117897146"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964419"
 ---
 # <a name="esentslvpagesnotcommittedexception-constructor"></a>Constructor EsentSLVPagesNotCommittedException
 
@@ -50,7 +50,7 @@ Dim instance As New EsentSLVPagesNotCommittedException()
 public EsentSLVPagesNotCommittedException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

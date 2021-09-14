@@ -5,11 +5,11 @@ title: Tecnologías de aplicaciones de escritorio
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: fd764c23b38e7239cea1d4d26d018ecbf9711b22
-ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121812219"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965120"
 ---
 # <a name="desktop-app-technologies"></a>Tecnologías de aplicaciones de escritorio
 
@@ -23,16 +23,16 @@ En esta sección se proporcionan instrucciones detalladas y ejemplos de código 
 | [Interfaz de usuario del escritorio](windows-application-ui-development.md) | Proporciona información que le permite desarrollar interfaces gráficas de usuario para las aplicaciones, incluidas características como ventanas y mensajes, recursos y controles. |
 | [Entorno de escritorio](user-interface.md) | Proporciona instrucciones para integrar y ampliar las características orientadas al usuario de escritorio de Windows, incluida la barra de tareas, el escritorio y Explorador de archivos. |
 | [Instalación y mantenimiento de aplicaciones](application-installing-and-servicing.md) | Proporciona información sobre el uso de las API y los servicios proporcionados por Windows para instalar, administrar y dar servicio a las aplicaciones de escritorio. |
-| [Audio y vídeo](audio-and-video.md) | Proporciona instrucciones sobre el uso de las características de audio y vídeo proporcionadas por Windows. |
+| [Audio y vídeo](audio-and-video.md) | Proporciona instrucciones sobre el uso de características de audio y vídeo proporcionadas por Windows. |
 | [Acceso y almacenamiento de datos](data-access-and-storage.md) | Proporciona información sobre las características de acceso a datos y almacenamiento que puede usar en las aplicaciones de escritorio, incluida la administración del sistema de archivos y los motores de sincronización en la nube.  |
 | [Dispositivos](devices.md) | Describe las API para interactuar con dispositivos y sensores. |
 | [Diagnóstico](diagnostics.md) | Proporciona instrucciones sobre la depuración y el control de errores, la generación de perfiles de rendimiento, la supervisión de red y otras características de diagnóstico. |
 | [Documentos e impresión](printdocs/documents-and-printing.md) | Describe los documentos y las características de impresión de Windows que permiten a las aplicaciones guardar, ver e imprimir.  |
-| [Gráficos y juegos](graphics-and-multimedia.md) | Proporciona información sobre las características de gráficos y juegos Windows, como DirectX y la creación de imágenes digitales.  |
+| [Gráficos y juegos](graphics-and-multimedia.md) | Proporciona información sobre las características de gráficos y juegos de Windows, como DirectX y la creación de imágenes digitales.  |
 | [Redes e Internet](networking.md) | Proporciona instrucciones sobre las redes y las características relacionadas con Internet de Windows, incluida la administración de redes, las API HTTP y la llamada a procedimiento remoto (RPC). |
-| [Seguridad e identidad](security.md) | Proporciona información sobre la autenticación, autorización, criptografía y otras características de seguridad de Windows. |
+| [Seguridad e identidad](security.md) | Proporciona información sobre autenticación, autorización, criptografía y otras características de seguridad de Windows. |
 | [Servicios del sistema](system-services.md) | Proporciona instrucciones sobre las características fundamentales del sistema operativo, como procesos y subprocesos, servicios, bibliotecas de vínculos dinámicos, COM, el registro, etc. |
-| [Inteligencia artificial y aprendizaje automático](/windows/ai/) | Transforme su aplicación de Windows con la potencia de la inteligencia artificial. La inteligencia artificial de Windows le permite a usted y a su empresa conseguir más objetivos al proporcionar soluciones inteligentes a problemas complejos. |
+| [AI y aprendizaje automático](/windows/ai/) | Transforme su aplicación de Windows con la potencia de la inteligencia artificial. La inteligencia artificial de Windows le permite a usted y a su empresa conseguir más objetivos al proporcionar soluciones inteligentes a problemas complejos. |
 
 <!--
 <br/>

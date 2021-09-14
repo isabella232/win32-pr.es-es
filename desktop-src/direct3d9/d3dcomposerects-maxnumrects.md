@@ -5,11 +5,11 @@ title: D3DCOMPOSERECTS_MAXNUMRECTS
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f2b5e8fc8cb819b3ae035a5a4a520b3a5e6de820
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110343360"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060750"
 ---
 # <a name="d3dcomposerects_maxnumrects"></a>D3DCOMPOSERECTS \_ MAXNUMRECTS
 

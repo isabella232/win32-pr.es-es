@@ -1,21 +1,21 @@
 ---
 title: Insertable (clave CLSID)
-description: Indica que los objetos de esta clase deben aparecer en el cuadro de lista Cuadro de diálogo Insertar objeto cuando los usan las aplicaciones de contenedor COM.
+description: Indica que los objetos de esta clase deben aparecer en el cuadro de lista Cuadro de diálogo Insertar objeto cuando lo usan las aplicaciones de contenedor COM.
 ms.assetid: 908cbfc4-ebf8-454e-b2e5-34449de60e7f
 keywords:
 - COM de clave del Registro insertable
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 699de5db82981e5f0f1db1229d31f96620adcb8c
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369468"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060907"
 ---
 # <a name="insertable-clsid-key"></a>Insertable (clave CLSID)
 
-Indica que los objetos de esta clase deben aparecer en el cuadro de lista Cuadro de **diálogo Insertar** objeto cuando los usan las aplicaciones de contenedor COM.
+Indica que los objetos de esta clase deben aparecer en el cuadro de lista Cuadro de **diálogo Insertar** objeto cuando lo usan las aplicaciones de contenedor COM.
 
 ## <a name="registry-entry"></a>Entrada del Registro
 
@@ -27,9 +27,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Classes\CLSID
 
 ## <a name="remarks"></a>Observaciones
 
-Esta clave es una entrada necesaria para aplicaciones COM de 32 bits cuyos objetos se pueden insertar en aplicaciones de 16 bits existentes. Las aplicaciones de 16 bits existentes buscan esta clave en el Registro, lo que informa a la aplicación de que el servidor admite inserciones. Si existe **la clave insertable,** las aplicaciones de 16 bits también pueden intentar comprobar que el servidor existe en la máquina. Las aplicaciones de 16 bits normalmente recuperan el valor de la clave [**LocalServer**](localserver.md) de la clase y comprueban si se trata de un archivo válido en el sistema. Por lo tanto, para que una aplicación de 32 bits pueda insertarse mediante una aplicación de 16 bits, la aplicación de 32 bits debe registrar la subclave **LocalServer** además de registrar [**LocalServer32**](localserver32.md).
+Esta clave es una entrada necesaria para aplicaciones COM de 32 bits cuyos objetos se pueden insertar en aplicaciones de 16 bits existentes. Las aplicaciones de 16 bits existentes buscan en el Registro esta clave, lo que informa a la aplicación de que el servidor admite inserciones. Si existe **la clave Insertable,** las aplicaciones de 16 bits también pueden intentar comprobar que el servidor existe en la máquina. Las aplicaciones de 16 bits normalmente recuperan el valor de la clave [**LocalServer**](localserver.md) de la clase y comprueban si se trata de un archivo válido en el sistema. Por lo tanto, para que una aplicación de 32 bits pueda insertarse mediante una aplicación de 16 bits, la aplicación de 32 bits debe registrar la subclave **LocalServer** además de registrar [**LocalServer32**](localserver32.md).
 
-Esta entrada, que se usa con controles, indica que un objeto solo puede actuar como un objeto incrustado en su lugar sin características de control especiales. Los objetos que tienen esta clave aparecen en el **cuadro de diálogo Insertar** objeto de su contenedor. Cuando se usa con controles, esta entrada también indica que el control se ha probado con contenedores que no son de control. Esta entrada también es opcional y se puede omitir cuando un control no está diseñado para trabajar con contenedores más antiguos que no entienden los controles.
+Usado con controles, esta entrada indica que un objeto solo puede actuar como un objeto incrustado en el lugar sin características de control especiales. Los objetos que tienen esta clave aparecen en el **cuadro de diálogo Insertar** objeto de su contenedor. Cuando se usa con controles, esta entrada también indica que el control se ha probado con contenedores que no son de control. Esta entrada también es opcional y se puede omitir cuando un control no está diseñado para funcionar con contenedores más antiguos que no entienden los controles.
 
 > [!Note]  
 > Esta clave no está presente para clases internas como las clases de moniker.

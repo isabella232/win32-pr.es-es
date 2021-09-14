@@ -1,5 +1,5 @@
 ---
-description: El método GetParams recupera la lista de argumentos DIS DISPARAMS en el método .
+description: El método GetParams recupera la lista de argumentos DIS DISRAMS en el método .
 ms.assetid: e32645ad-938b-4142-acc6-94ef573776c4
 title: Método CDeferredCommand.GetParams (Ctlutil.h)
 ms.topic: reference
@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b7d2d904c979e619d22441209d2cb490878afcd910c68b81de10f74ad9b93c91
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8f506f7e278c26478ab23ec27cf464f1be5956df
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119872155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061306"
 ---
 # <a name="cdeferredcommandgetparams-method"></a>Método CDeferredCommand.GetParams
 
@@ -42,7 +42,7 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve una **lista de argumentos DIS DISRAMS.**
+Devuelve una **lista de argumentos DIS DIS**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Devuelve una **lista de argumentos DIS DISRAMS.**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

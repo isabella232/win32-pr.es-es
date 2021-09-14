@@ -4,12 +4,12 @@ ms.assetid: d5bcdf54-061a-436b-8b1a-61ef7d7c90bf
 title: Propiedad AVEncCommonBufferOutLevel (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77159af0f328dcc6003c21bfa91544070d121e9aad4f8f42caf02853c218926e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 90d99cdea909a1fd1c3777aac4868a570161c3fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120103505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162033"
 ---
 # <a name="avenccommonbufferoutlevel-property"></a>Propiedad AVEncCommonBufferOutLevel
 
@@ -29,11 +29,11 @@ Esta propiedad es de lectura y escritura.
 
 Esta propiedad tiene un intervalo lineal de valores. Para obtener el intervalo admitido, llame a [**ICodecAPI::GetParameterRange**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-getparameterrange).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La propiedad solo está disponible si la duración de la codificación se define de antemano, mediante la propiedad [**AVEncVideoNoOfFieldsToEncode**](avencvideonooffieldstoencode-property.md) o la propiedad [**AVEncAudioIntervalToEncode.**](avencaudiointervaltoencode-property.md)
 
-En el caso del vídeo MPEG, esta propiedad define la integridad del comprobador de búfer de vídeo (VBV) al final del proceso de codificación. Admite la concatenación de secuencias durante la codificación.
+Para el vídeo MPEG, esta propiedad define la integridad del comprobador de búfer de vídeo (VBV) al final del proceso de codificación. Admite la concatenación de secuencias durante la codificación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,13 +41,13 @@ En el caso del vídeo MPEG, esta propiedad define la integridad del comprobador 
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

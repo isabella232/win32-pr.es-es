@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 1a027059854ba02e4a846660435731f140b6d04cb8d96f714fd63f1d24757ca1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5834183229580c1aadbcbe80e54a30e9b9b60c03
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120083725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886908"
 ---
 # <a name="imediadetget_streamtype-method"></a>IMediaDet::get \_ StreamType (método)
 
@@ -56,11 +56,11 @@ Recibe el GUID de tipo principal para el tipo de medio.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método recupera el miembro **majortype** de la [**estructura AM MEDIA \_ \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type) La **estructura AM MEDIA \_ \_ TYPE** describe el formato de la secuencia y el **miembro majortype** es un GUID que indica la categoría general, como audio o vídeo. Para una secuencia de vídeo, el GUID es MEDIATYPE \_ Video. En el caso del audio, es MEDIATYPE \_ Audio. Para recuperar toda la **estructura \_ AM MEDIA \_ TYPE,** llame al [**método IMediaDet::get \_ StreamMediaType.**](imediadet-get-streammediatype.md)
+Este método recupera el miembro **majortype** de la [**estructura AM MEDIA \_ \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type) La **estructura AM MEDIA \_ \_ TYPE** describe el formato de la secuencia y el miembro **majortype** es un GUID que indica la categoría general, como audio o vídeo. Para una secuencia de vídeo, el GUID es MEDIATYPE \_ Video. En el caso del audio, es AUDIO \_ MEDIATYPE. Para recuperar toda la **estructura \_ AM MEDIA \_ TYPE,** llame al [**método IMediaDet::get \_ StreamMediaType.**](imediadet-get-streammediatype.md)
 
-Antes de llamar a este método, establezca el nombre de archivo y la secuencia llamando a [**IMediaDet::p ut \_ Filename**](imediadet-put-filename.md) e [**IMediaDet::p ut \_ CurrentStream**](imediadet-put-currentstream.md).
+Antes de llamar a este método, establezca el nombre de archivo y la secuencia mediante una llamada a [**IMediaDet::p ut \_ Filename**](imediadet-put-filename.md) e [**IMediaDet::p ut \_ CurrentStream**](imediadet-put-currentstream.md).
 
 Si el detector de medios está en modo de captura de mapa de bits, este método devuelve E \_ INVALIDARG. Para obtener más información, [**vea IMediaDet::EnterBitmapGrabMode**](imediadet-enterbitmapgrabmode.md).
 
@@ -70,7 +70,7 @@ Si el detector de medios está en modo de captura de mapa de bits, este método 
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -85,14 +85,14 @@ Si el detector de medios está en modo de captura de mapa de bits, este método 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IMediaDet (interfaz)**](imediadet.md)
 </dt> <dt>
 
-[Códigos de error y correcto](error-and-success-codes.md)
+[Códigos de error y de éxito](error-and-success-codes.md)
 </dt> </dl>
 
  

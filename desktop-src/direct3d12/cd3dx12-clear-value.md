@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 785ab3c8312949bfc692fcd7c8d1dace28734ce08e5763387a744eb28f2000f8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6b9dc7afc62c6e9a3e229e6f5bdc4287bf4b85a9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119988495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060803"
 ---
 # <a name="cd3dx12_clear_value-structure"></a>Estructura CLEAR VALUE de CD3DX12 \_ \_
 
@@ -41,28 +41,28 @@ struct CD3DX12_CLEAR_VALUE  : public D3D12_CLEAR_VALUE{
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **CD3DX12 \_ CLEAR \_ VALUE()**
 </dt> <dd>
 
-Crea una nueva instancia sin inicializar de un valor CLEAR DE CD3DX12. \_ \_
+Crea una nueva instancia de CLEAR VALUE cd3DX12 sin \_ \_ inicializar.
 
 </dd> <dt>
 
 **explicit CD3DX12 \_ CLEAR \_ VALUE(const D3D12 \_ CLEAR VALUE &\_ o)**
 </dt> <dd>
 
-Crea una nueva instancia de un valor CLEAR VALUE de CD3DX12, inicializado con el contenido de otra estructura \_ \_ CLEAR VALUE [**\_ \_ de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_clear_value)
+Crea una nueva instancia de CLEAR VALUE de CD3DX12, inicializada con el contenido de otra estructura \_ \_ CLEAR VALUE [**\_ \_ de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_clear_value)
 
 </dd> <dt>
 
-**CD3DX12 \_ CLEAR \_ VALUE(formato DXGI \_ FORMAT, const FLOAT color \[ \] 4)**
+**CD3DX12 \_ CLEAR \_ VALUE(formato DXGI \_ FORMAT, const FLOAT color \[ 4 \] )**
 </dt> <dd>
 
-Crea una nueva instancia de UN VALOR CLEAR DE CD3DX12, \_ \_ inicializando los parámetros siguientes:
+Crea una nueva instancia de CLEAR VALUE de CD3DX12, \_ \_ inicializando los parámetros siguientes:
 
 [**DXGI \_ Formato FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
@@ -73,7 +73,7 @@ Color FLOAT \[ 4 \]
 **CD3DX12 \_ CLEAR \_ VALUE(formato DXGI \_ FORMAT, profundidad FLOAT, galería de símbolos UINT8)**
 </dt> <dd>
 
-Crea una nueva instancia de UN VALOR CLEAR DE CD3DX12, \_ \_ inicializando los parámetros siguientes:
+Crea una nueva instancia de CLEAR VALUE de CD3DX12, \_ \_ inicializando los parámetros siguientes:
 
 [**DXGI \_ Formato FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
@@ -100,7 +100,7 @@ Define el & de paso por referencia para el tipo de estructura primaria.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

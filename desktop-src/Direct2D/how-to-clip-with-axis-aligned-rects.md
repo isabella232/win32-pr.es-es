@@ -4,12 +4,12 @@ description: Muestra cómo recortar una región con un rectángulo de recorte al
 ms.assetid: 4196653a-9177-4a41-9db9-4738a41313aa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f666bac88d93cb8ea0f27bfb9c2d5b14975e0dc8bb67aba4f0e767178f6ebddc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4d9fea904f9df396918d2cdfdb5205f6dd0197d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119569324"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163206"
 ---
 # <a name="how-to-clip-with-an-axis-aligned-clip-rectangle"></a>Cómo recortar con un rectángulo Axis-Aligned clip
 
@@ -17,7 +17,7 @@ En este tema se describe cómo recortar una imagen con un rectángulo de recorte
 
 **Para recortar con un rectángulo de recorte alineado con el eje**
 
-1.  Cargue la imagen original desde un recurso. Para obtener información sobre cómo cargar un mapa de bits, [vea Cómo cargar un mapa de bits desde un recurso](how-to-load-a-bitmap-from-a-resource.md).
+1.  Cargue la imagen original desde un recurso. Para obtener información sobre cómo cargar un mapa de bits, [vea How to Load a Bitmap from a Resource](how-to-load-a-bitmap-from-a-resource.md).
 2.  Llame [**a ID2D1RenderTarget::P ushAxisAlignedClip para**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode)) especificar un rectángulo. Los comandos de representación se recortan al rectángulo.
 
 3.  Paint la imagen original.

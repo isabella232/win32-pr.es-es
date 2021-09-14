@@ -4,12 +4,12 @@ ms.assetid: 8c5d1050-a696-4a5d-be68-806420d0cd78
 title: Agregar un origen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ab2440ff50bbb4a3a610f9341405538a88dc6bf16ce2153a327f3b4578f3aec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee583cd8971c183f2e03b92f68e2d6ba555c41db
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119690535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162405"
 ---
 # <a name="adding-a-source"></a>Agregar un origen
 
@@ -17,7 +17,7 @@ ms.locfileid: "119690535"
 
 Cree un objeto de origen de la misma manera que crea otros objetos de escala de tiempo. Sin embargo, antes de insertarlo en la escala de tiempo, debe especificar al menos las siguientes propiedades en el origen.
 
--   Las horas de inicio y de detenerse, en relación con la escala de tiempo. Llame al [**método IAMTimelineObj::SetStartStop.**](iamtimelineobj-setstartstop.md)
+-   Horas de inicio y de detenerse, en relación con la escala de tiempo. Llame al [**método IAMTimelineObj::SetStartStop.**](iamtimelineobj-setstartstop.md)
 -   Archivo multimedia que se usará como origen. Llame al [**método IAMTimelineSrc::SetMediaName**](iamtimelinesrc-setmedianame.md) con una cadena de caracteres anchos que represente el nombre del archivo.
 -   Las horas de inicio y de detenerse del medio, que son relativas al archivo original. Llame al [**método IAMTimelineSrc::SetMediaTimes.**](iamtimelinesrc-setmediatimes.md) Para obtener más información sobre los tiempos multimedia, vea [Time in DirectShow Editing Services](time-in-directshow-editing-services.md).
 
@@ -39,7 +39,7 @@ pSource->SetMediaTimes(40000000, 140000000);
 
  
 
-Para obtener más información sobre los orígenes, vea [Trabajar con orígenes.](working-with-sources.md)
+Para obtener más información sobre los orígenes, vea [Trabajar con orígenes](working-with-sources.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

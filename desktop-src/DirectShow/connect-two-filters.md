@@ -4,18 +4,18 @@ ms.assetid: cfd85944-7ae7-49e6-948f-9e190cdeed12
 title: Conectar Dos filtros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab83e8608c088fde6d06c0a44621f1c066f177ecf76cbc8ba3f55d31218b49ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a7e70e607c510490e7ed841ea44303153a94e83f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118954214"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161581"
 ---
 # <a name="connect-two-filters"></a>Conectar Dos filtros
 
 En este tema se muestran algunas funciones auxiliares para conectar DirectShow filtros.
 
-Para conectar dos filtros, debe encontrar un pin de salida no conectado en el filtro ascendente y un pin de entrada no conectado en el filtro de nivel inferior.
+Para conectar dos filtros, debe encontrar un pin de salida no conectado en el filtro ascendente y un pin de entrada no conectado en el filtro de bajada.
 
 Si ya tiene punteros a ambos pines, llame al método [**IGraphBuilder::Conectar**](/windows/desktop/api/Strmif/nf-strmif-igraphbuilder-connect) para conectarlos. Si los pines no se pueden conectar directamente entre sí, el método **IGraphBuilder::Conectar** podría insertar filtros adicionales para completar la conexión. Para obtener más información, vea [Intelligent Conectar](intelligent-connect.md).
 
@@ -110,7 +110,7 @@ HRESULT ConnectFilters(IGraphBuilder *pGraph, IBaseFilter *pSrc, IBaseFilter *pD
 
 <dl> <dt>
 
-[Técnicas Graph-Building generales](general-graph-building-techniques.md)
+[Técnicas de Graph-Building generales](general-graph-building-techniques.md)
 </dt> <dt>
 
 [**ICaptureGraphBuilder2::RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream)

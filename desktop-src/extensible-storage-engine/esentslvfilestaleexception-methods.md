@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102850
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: a6e821b6c8fe6dbb56d0c0c1f02a2641703d21600d7db32bf995fd9c9e2f7d68
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 11fdfe17accb96f5a0f9ad3bd4c1e3b848875ade
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119850805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887812"
 ---
 # <a name="esentslvfilestaleexception-methods"></a>Métodos de EsentSLVFileStaleException 
 
@@ -78,7 +78,7 @@ El [tipo EsentSLVFileStaleException](./esentslvfilestaleexception-class.md) expo
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 83250450a0510949267ffd52f17e6e9013a646d40229efcf7d5bcc7a396e1b09
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1306283b098922706f39abc7ffe2514d2fba0e5c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119372085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060625"
 ---
 # <a name="id3dxeffectstatemanagersetlight-method"></a>Método ID3DXEffectStateManager::SetLight
 
@@ -46,7 +46,7 @@ HRESULT SetLight(
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Índice de base cero de la luz. Este es el mismo índice de [**IDirect3DDevice9::SetLight.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setlight)
+Índice de base cero de la luz. Este es el mismo índice de [**IDirect3DDevice9::SetLight**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setlight).
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 El método implementado por el usuario debe devolver S \_ OK. Si se produce un error en la devolución de llamada al establecer el estado del dispositivo, se producirá una de las siguientes acciones:
 
 -   Se producirá un error en el efecto [**durante ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md).
--   Se producirá un error en la llamada de estado de efecto dinámico (por [**ejemplo, IDirect3DDevice9::SetLight).**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setlight)
+-   Se producirá un error en la llamada de estado de efecto dinámico (como [**IDirect3DDevice9::SetLight).**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setlight)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,7 +79,7 @@ El método implementado por el usuario debe devolver S \_ OK. Si se produce un e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

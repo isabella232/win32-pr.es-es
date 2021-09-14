@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ca7182ecc16cd873732b2d39d2659f42017f9e01c1308642af4b8cac7ff2a682
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e5c2bde058267ae4c530f33a96778792d5fe247b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118662122"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160235"
 ---
 # <a name="camthread-class"></a>CLASE CAMThread
 
@@ -41,7 +41,7 @@ La `CAMThread` clase es una clase abstracta para administrar subprocesos de trab
 | [**InitialThreadProc**](camthread-initialthreadproc.md)   | Llama al método ThreadProc cuando se crea el subproceso.                      |
 | [**Crear**](camthread-create.md)                         | Crea el subproceso.                                                          |
 | [**CallWorker**](camthread-callworker.md)                 | Señala el subproceso con una solicitud.                                           |
-| [**Cerrar**](camthread-close.md)                           | Espera a que se cierre el subproceso y, a continuación, libera sus recursos.                   |
+| [**Cerca**](camthread-close.md)                           | Espera a que se cierre el subproceso y, a continuación, libera sus recursos.                   |
 | [**ThreadExists**](camthread-threadexists.md)             | Consulta si el subproceso existe.                                           |
 | [**GetRequest**](camthread-getrequest.md)                 | Espera a la siguiente solicitud.                                                  |
 | [**CheckRequest**](camthread-checkrequest.md)             | Comprueba si hay una solicitud, sin bloquear.                              |

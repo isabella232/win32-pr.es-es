@@ -5,17 +5,17 @@ ms.assetid: 7285e6ea-ebc7-4693-8a77-99bff0b5d0d1
 ms.topic: article
 ms.date: 03/09/2019
 ms.openlocfilehash: fe96ba4e0674392333173df7daeb5a354a379343
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105676529"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163154"
 ---
 # <a name="how-to-load-a-bitmap-from-a-resource-direct2d"></a>Cómo cargar un mapa de bits desde un recurso (Direct2D)
 
-Como se describe en [Cómo cargar un mapa de bits desde un archivo](how-to-load-a-direct2d-bitmap-from-a-file.md), Direct2D usa el componente de creación de imágenes de Windows (WIC) para cargar los mapas de bits. Para cargar un mapa de bits desde un recurso, utilice objetos WIC para cargar la imagen y convertirla a un formato compatible con Direct2D; a continuación, use el método [**CreateBitmapFromWicBitmap**](id2d1rendertarget-createbitmapfromwicbitmap.md) para crear un [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap).
+Como se describe [en Carga de](how-to-load-a-direct2d-bitmap-from-a-file.md)un mapa de bits desde un archivo , Direct2D usa el componente Windows Imaging Component (WIC) para cargar mapas de bits. Para cargar un mapa de bits desde un recurso, use objetos WIC para cargar la imagen y convertirla a un formato compatible con Direct2D. a continuación, use [**el método CreateBitmapFromWicBitmap**](id2d1rendertarget-createbitmapfromwicbitmap.md) para crear un [**id2D1Bitmap.**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap)
 
-1.  En el [archivo de definición de recursos](/windows/desktop/menurc/about-resource-files)de la aplicación, defina el recurso. En el ejemplo siguiente se define un recurso denominado "SampleImage".
+1.  En el archivo [de definición de recursos de](/windows/desktop/menurc/about-resource-files)la aplicación, defina el recurso. En el ejemplo siguiente se define un recurso denominado "SampleImage".
 
     ```C++
     // THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
@@ -29,7 +29,7 @@ Como se describe en [Cómo cargar un mapa de bits desde un archivo](how-to-load-
     SampleImage Image "sampleImage.jpg"
     ```
 
-Este recurso se agregará al archivo de recursos de la aplicación cuando se compile la aplicación.
+Este recurso se agregará al archivo de recursos de la aplicación cuando se haya creado la aplicación.
 
 2.  Cargue la imagen desde el archivo de recursos de la aplicación.
 
@@ -69,7 +69,7 @@ Este recurso se agregará al archivo de recursos de la aplicación cuando se com
 
     
 
-3.  Bloquear el recurso y calcular el tamaño de la imagen.
+3.  Bloquee el recurso y calcule el tamaño de la imagen.
     ```C++
         if (SUCCEEDED(hr))
         {
@@ -90,7 +90,7 @@ Este recurso se agregará al archivo de recursos de la aplicación cuando se com
 
     
 
-4.  Use el método [**IWICImagingFactory:: CreateStream (**](/windows/win32/api/wincodec/nf-wincodec-iwicimagingfactory-createstream) para crear un objeto [**IWICStream**](/windows/win32/api/wincodec/nn-wincodec-iwicstream) .
+4.  Use el [**método IWICImagingFactory::CreateStream**](/windows/win32/api/wincodec/nf-wincodec-iwicimagingfactory-createstream) para crear un [**objeto IWICStream.**](/windows/win32/api/wincodec/nn-wincodec-iwicstream)
     ```C++
         if (SUCCEEDED(hr))
         {
@@ -109,7 +109,7 @@ Este recurso se agregará al archivo de recursos de la aplicación cuando se com
 
     
 
-5.  Use el método [**IWICImagingFactory:: CreateDecoderFromStream**](/windows/win32/api/wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromstream) para crear un [**IWICBitmapDecoder**](/windows/win32/api/wincodec/nn-wincodec-iwicbitmapdecoder).
+5.  Use el [**método IWICImagingFactory::CreateDecoderFromStream**](/windows/win32/api/wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromstream) para crear un [**IWICBitmapDecoder**](/windows/win32/api/wincodec/nn-wincodec-iwicbitmapdecoder).
 
     ```C++
         if (SUCCEEDED(hr))
@@ -126,7 +126,7 @@ Este recurso se agregará al archivo de recursos de la aplicación cuando se com
 
     
 
-6.  Recupere un fotograma de la imagen y almacénelo en un objeto [**IWICBitmapFrameDecode**](/windows/win32/api/wincodec/nn-wincodec-iwicbitmapframedecode) .
+6.  Recupere un marco de la imagen y almacénelo en un [**objeto IWICBitmapFrameDecode.**](/windows/win32/api/wincodec/nn-wincodec-iwicbitmapframedecode)
 
     ```C++
         if (SUCCEEDED(hr))
@@ -138,7 +138,7 @@ Este recurso se agregará al archivo de recursos de la aplicación cuando se com
 
     
 
-7.  Antes de que Direct2D pueda usar la imagen, se debe convertir al formato de píxel 32bppPBGRA. Para convertir el formato de imagen, use el método [**IWICImagingFactory:: CreateFormatConverter**](/windows/win32/api/wincodec/nf-wincodec-iwicimagingfactory-createformatconverter) para crear un objeto [**IWICFormatConverter**](/windows/win32/api/wincodec/nn-wincodec-iwicformatconverter) y, a continuación, use el método [**Initialize**](/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize) del objeto **IWICFormatConverter** para realizar la conversión.
+7.  Para que Direct2D pueda usar la imagen, debe convertirse al formato de píxeles 32bppPBGRA. Para convertir el formato de imagen, use el método [**IWICImagingFactory::CreateFormatConverter**](/windows/win32/api/wincodec/nf-wincodec-iwicimagingfactory-createformatconverter) para crear un objeto [**IWICFormatConverter**](/windows/win32/api/wincodec/nn-wincodec-iwicformatconverter) y, a continuación, use el método [**Initialize**](/windows/win32/api/wincodec/nf-wincodec-iwicformatconverter-initialize) del objeto **IWICFormatConverter** para realizar la conversión.
  
 ```C++
         if (SUCCEEDED(hr))
@@ -162,7 +162,7 @@ Este recurso se agregará al archivo de recursos de la aplicación cuando se com
 
     
 
-8.  Por último, use el método [**CreateBitmapFromWicBitmap**](id2d1rendertarget-createbitmapfromwicbitmap.md) para crear un objeto [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) que pueda ser dibujado por un destino de representación y que se use con otros objetos de Direct2D.
+8.  Por último, use el [**método CreateBitmapFromWicBitmap**](id2d1rendertarget-createbitmapfromwicbitmap.md) para crear un objeto [**ID2D1Bitmap**](/windows/win32/api/d2d1/nn-d2d1-id2d1bitmap) que un destino de representación pueda dibujar y usar con otros objetos de Direct2D.
     ```C++
         if (SUCCEEDED(hr))
         {
@@ -187,7 +187,7 @@ Este recurso se agregará al archivo de recursos de la aplicación cuando se com
 
     
 
-En este ejemplo se ha omitido código.
+En este ejemplo se ha omitido algún código.
 
 ## <a name="related-topics"></a>Temas relacionados
 

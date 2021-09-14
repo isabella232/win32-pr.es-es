@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 55103760
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 1c826a38b7ce9c91501efecaa2d4d31005ad602e84713ab1e2be70e4f99e0a18
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4845860c0ea08f6dcdced3b7d6ab34660d2b73d2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120093775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126964272"
 ---
 # <a name="jet_objectinfo-members"></a>JET_OBJECTINFO miembros
 
@@ -21,7 +21,7 @@ Incluir miembros heredados
 
 La JET_OBJECTINFO contiene información sobre un objeto . Las tablas son los únicos tipos de objeto que se admiten actualmente.
 
-El [JET_OBJECTINFO](./jet-objectinfo-class.md) muestra los miembros siguientes.
+El [JET_OBJECTINFO](./jet-objectinfo-class.md) expone los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -74,12 +74,12 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335203(v=exchg.10).md">grbit</a></td>
-<td>Obtiene las opciones de la tabla.</td>
+<td>Obtiene las opciones de tabla.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335205(v=exchg.10).md">objtyp</a></td>
-<td>Obtiene el JET_OBJTYP de la tabla. Actualmente solo se devolverán tablas (es decir, <a href="hh565069(v=exchg.10).md">Tabla</a>).</td>
+<td>Obtiene el JET_OBJTYP de la tabla. Actualmente solo se devolverán tablas (es decir, <a href="hh565069(v=exchg.10).md">tabla</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -126,7 +126,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335198(v=exchg.10).md">ToString</a></td>
-<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el objeto <a href="dn335219(v=exchg.10).md">JET_OBJECTINFO</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
+<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el objeto <a href="dn335219(v=exchg.10).md">JET_OBJECTINFO</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>

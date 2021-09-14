@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: cdcedc25cf7f0998c6eac11de63f6e0d329e2ca8500576e0ad9e69cfc0bb3067
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a44aabf3386a4e906bd4f3e149c416642ba6c4fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120052415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061630"
 ---
 # <a name="iamtimelinesplittablesplitat-method"></a>IamTimelineSplittable::SplitAt (método)
 
@@ -69,7 +69,7 @@ Devuelve un **valor HRESULT.** Entre los valores posibles figuran los siguientes
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si divide un origen, efecto o transición, este método crea un segundo objeto del mismo tipo. El objeto original se trunca en el tiempo de división especificado y el nuevo objeto reemplaza la parte truncada. El nuevo objeto hereda todas las mismas propiedades. En un objeto de origen, el método también divide los efectos que se incluyen en el tiempo de división.
 
@@ -98,7 +98,7 @@ Para una pista, si el tiempo de división es posterior a todo en la pista, el m�
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

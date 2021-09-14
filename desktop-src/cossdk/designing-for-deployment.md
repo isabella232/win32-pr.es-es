@@ -4,18 +4,18 @@ ms.assetid: 31244998-34f5-4fd8-95f6-adcc134bcaf3
 title: Diseño para la implementación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54a755132f1be35ecb6913b7690bce11e342fceb957e63607ee4e9b579bcc758
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e60ac561bd05d08253433e52c7f00c2def54df3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118307320"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126884916"
 ---
 # <a name="designing-for-deployment"></a>Diseño para la implementación
 
 Planear el ámbito de las aplicaciones COM+ es una tarea de diseño importante que debe tener en cuenta al principio. Los sistemas distribuidos diseñados para ejecutarse con COM+ deben diseñarse para la implementación con la menor cantidad de configuración individual y para usar de forma más eficaz cada proceso. También hay técnicas que puede usar que le permitirán lograr un rendimiento óptimo al implementar una aplicación COM+. (Para obtener más información, vea [Implementación para una comunicación más rápida).](deploying-for-faster-communication.md)
 
-Cuando se ve con la herramienta administrativa Servicios de componentes, cada aplicación COM+ aparece como una carpeta dentro de la cual los conjuntos de componentes se agrupan lógicamente. Aunque puede mover componentes individuales  entre carpetas de componentes de aplicación COM+ (es decir, de una aplicación a otra), varios servicios establecidos en el nivel de aplicación COM+, como la seguridad, pueden diferir. Esta configuración del servicio puede afectar a la portabilidad.
+Cuando se ve con la herramienta administrativa Servicios de componentes, cada aplicación COM+ aparece como una carpeta dentro de la cual los conjuntos de componentes se agrupan lógicamente. Aunque puede mover componentes individuales  entre carpetas de componentes de aplicación COM+ (es decir, de una aplicación a otra), varios servicios establecidos en el nivel de aplicación COM+, como la seguridad, pueden diferir. Esta configuración de servicio puede afectar a la portabilidad.
 
 ## <a name="a-com-server-application-defines-a-process-boundary"></a>Una aplicación de servidor COM+ define un límite de proceso
 
@@ -26,11 +26,11 @@ Cuando se crea una nueva aplicación de servidor COM+, realmente se define un nu
 Dado que cada aplicación COM+ normalmente se implementa como un ejecutable independiente, el efecto de dividir una aplicación distribuida entre varias aplicaciones COM+ introduce llamadas COM fuera de proceso cuando los componentes de una aplicación COM+ llaman a los componentes de otra aplicación COM+. Esto introduce una degradación del rendimiento debido a la carga adicional que impone la serialización de parámetros COM entre procesos.
 
 > [!Note]  
-> No hay ningún problema inherente al incurrir en esta penalización del rendimiento; Solo tiene que tener en cuenta que se va a producir. En función del tiempo de respuesta necesario, el número de usuarios que solicitarán simultáneamente servicios empresariales y la carga de inicio agregada que cada componente agrega a cada aplicación COM+, es posible que el rendimiento atribuible a las llamadas entre aplicaciones sea aceptable.
+> No hay nada inherentemente incorrecto al incurrir en esta penalización de rendimiento. Solo tiene que tener en cuenta que se va a producir. Según el tiempo de respuesta necesario, el número de usuarios que solicitarán simultáneamente servicios empresariales y la carga de inicio agregada que cada componente agrega a cada aplicación COM+, es posible que el rendimiento atribuible a las llamadas entre aplicaciones sea aceptable.
 
  
 
-Una posibilidad que elimina la penalización de rendimiento de llamar a través de los límites de la aplicación COM+ es marcar una aplicación COM+ determinada como una aplicación de biblioteca. Una aplicación de biblioteca COM+ se ejecuta en el proceso del cliente que la crea. Por supuesto, ninguna ganancia de rendimiento tiene ningún costo. En este caso, el intercambio implica las limitaciones de las aplicaciones de biblioteca COM+. Aunque una aplicación de biblioteca puede usar la seguridad basada en roles, no puede admitir componentes en cola ni acceso remoto.
+Una posibilidad que elimina la penalización del rendimiento de llamar a través de los límites de la aplicación COM+ es marcar una aplicación COM+ determinada como una aplicación de biblioteca. Una aplicación de biblioteca COM+ se ejecuta en el proceso del cliente que la crea. Por supuesto, ninguna ganancia de rendimiento tiene un costo cero. En este caso, el intercambio implica las limitaciones de las aplicaciones de biblioteca COM+. Aunque una aplicación de biblioteca puede usar la seguridad basada en roles, no puede admitir componentes en cola ni acceso remoto.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -42,7 +42,7 @@ Una posibilidad que elimina la penalización de rendimiento de llamar a través 
 [Diseño para disponibilidad](designing-for-availability.md)
 </dt> <dt>
 
-[Diseño para la escalabilidad](designing-for-scalability.md)
+[Diseño para escalabilidad](designing-for-scalability.md)
 </dt> <dt>
 
 [Diseño para la seguridad](designing-for-security.md)

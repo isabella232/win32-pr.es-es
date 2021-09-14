@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc8a709fc28f0d1529c58725db5856931195a66cc370559dd9d14af61e869db6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 713b26fdee3062fbe803d05e034bc9896cdd5563
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118120061"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889305"
 ---
 # <a name="buttonelementsticky"></a>BUTTONELEMENT.sticky
 
@@ -42,7 +42,7 @@ Este atributo es un valor booleano de lectura **y escritura.**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el **atributo permanente** se establece en true, el elemento de botón cambiará al estado anterior cuando se haga clic en él y permanecerá en ese estado hasta que se vuelva a hacer clic en él. Cuando el elemento button está en estado down, el atributo **down** será true y se mostrará la parte adecuada del grupo de botones **downImage.**
 
@@ -56,7 +56,7 @@ Si el **atributo permanente** se establece en true, el elemento de botón cambia
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

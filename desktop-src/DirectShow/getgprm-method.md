@@ -4,12 +4,12 @@ ms.assetid: 66afd2a5-6aa1-4280-93cf-dd3cfed2499d
 title: GetGPRM (método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33c46307f1cbec49b4916cdbd528c2b22cfb42bf89a06285c5c779339786599d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0d82522f834a6f3bda8abefb492d5cc8b568872e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119812565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061125"
 ---
 # <a name="getgprm-method"></a>GetGPRM (método)
 
@@ -39,11 +39,11 @@ Especifica el registro que se recuperará como entero. El valor debe oscilar ent
 
 Devuelve un valor entero que representa el registro especificado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método no es necesario para ninguna funcionalidad de navegación o reproducción de DVD mediante **el objeto MSWebDVD.** Se proporciona para aquellos que tienen un conocimiento exhaustivo de la especificación de DVD que desean implementar características avanzadas. Los GPRM se pueden usar para contener cualquier valor, por lo que se pueden establecer y leer libremente. Sin embargo, dado que los GRM también se usan para almacenar comandos de disco, cambiar sus valores mediante [**SetGPRM**](setgprm-method.md) puede dar lugar a un comportamiento impredecible.
+Este método no es necesario para ninguna funcionalidad de navegación o reproducción de DVD mediante **el objeto MSWebDVD.** Se proporciona para aquellos que tienen un conocimiento exhaustivo de la especificación de DVD que desean implementar características avanzadas. Los GPRM se pueden usar para contener cualquier valor, por lo que se pueden establecer y leer libremente. Sin embargo, dado que los GPRM también se usan para almacenar comandos de disco, cambiar sus valores mediante [**SetGPRM**](setgprm-method.md) puede provocar un comportamiento imprevisible.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

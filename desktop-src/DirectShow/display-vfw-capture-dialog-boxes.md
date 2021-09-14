@@ -4,12 +4,12 @@ ms.assetid: 708212ca-d148-4079-8052-3bf6696a33ab
 title: Mostrar cuadros de diálogo de captura de VFW
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2713cc4d2eba52626c66974eed23f2c1752a1268fea78a30ca2bc9d7babc3a27
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 45b8b51b164630a8fa6e91b2e68ca8a9a3a875b6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117821143"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061679"
 ---
 # <a name="display-vfw-capture-dialog-boxes"></a>Mostrar cuadros de diálogo de captura de VFW
 
@@ -19,7 +19,7 @@ Un dispositivo de captura que todavía usa un controlador Video for Windows (VFW
 
 | Cuadro de diálogo    | Descripción                                                                                           |
 |---------------|-------------------------------------------------------------------------------------------------------|
-| Origen del vídeo  | Se usa para seleccionar la entrada de vídeo y para ajustar la configuración del dispositivo, como el brillo o el contraste de la imagen. |
+| Origen de vídeo  | Se usa para seleccionar la entrada de vídeo y ajustar la configuración del dispositivo, como el brillo o el contraste de la imagen. |
 | Formato de vídeo  | Se usa para seleccionar las dimensiones de imagen y la profundidad de bits.                                                    |
 | Visualización de vídeo | Se usa para controlar la apariencia del vídeo representado.                                                 |
 
@@ -31,11 +31,11 @@ Para mostrar uno de estos cuadros de diálogo, haga lo siguiente:
 
 1.  Detenga el gráfico de filtro.
 2.  Consulte el filtro de captura para la [**interfaz IAMVfwCaptureDialogs.**](/windows/desktop/api/Strmif/nn-strmif-iamvfwcapturedialogs) Si **QueryInterface se** realiza correctamente, significa que el dispositivo de captura es un dispositivo VFW.
-3.  Llame [**a IAMVfwCaptureDialogs::HasDialog**](/windows/desktop/api/Strmif/nf-strmif-iamvfwcapturedialogs-hasdialog) para comprobar si el controlador admite el cuadro de diálogo que desea mostrar. La [**enumeración VfwCaptureDialogs**](/windows/desktop/api/strmif/ne-strmif-vfwcapturedialogs) define marcas para cada uno de los cuadros de diálogo vfw. **HasDialog** devuelve S \_ OK si se admite el cuadro de diálogo. De lo contrario, devuelve S FALSE, así que compruebe el valor S OK directamente, en lugar de \_ \_ usar la macro **SUCCEEDED.**
+3.  Llame [**a IAMVfwCaptureDialogs::HasDialog**](/windows/desktop/api/Strmif/nf-strmif-iamvfwcapturedialogs-hasdialog) para comprobar si el controlador admite el cuadro de diálogo que desea mostrar. La [**enumeración VfwCaptureDialogs**](/windows/desktop/api/strmif/ne-strmif-vfwcapturedialogs) define marcas para cada uno de los cuadros de diálogo vfw. **HasDialog** devuelve S \_ OK si se admite el cuadro de diálogo. De lo contrario, devuelve S FALSE, así que compruebe el valor S OK directamente, en \_ lugar de usar la macro \_ **SUCCEEDED.**
 4.  Si se admite el cuadro de diálogo, llame a [**IAMVfwCaptureDialogs::ShowDialog**](/windows/desktop/api/Strmif/nf-strmif-iamvfwcapturedialogs-showdialog) para mostrar el cuadro de diálogo.
 5.  Reinicie el gráfico.
 
-En el código siguiente se muestran estos pasos para el cuadro de diálogo Origen del vídeo:
+El código siguiente muestra estos pasos para el cuadro de diálogo Origen de vídeo:
 
 
 ```C++

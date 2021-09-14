@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: f2c3c580a44b9cff35d7ee801cfc611b5cf8a8df828f54c28b022e5c1a1b862a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e83de26f1c2186293265dc39db603e0a9cf31436
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117819047"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886868"
 ---
 # <a name="imediadetgetsamplegrabber-method"></a>IMediaDet::GetSampleGrabber (método)
 
@@ -56,7 +56,7 @@ Recibe un puntero a la [**interfaz ISampleGrabber.**](isamplegrabber.md)
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Llame [**a IMediaDet::EnterBitmapGrabMode antes**](imediadet-enterbitmapgrabmode.md) de llamar a este método. La [**interfaz ISampleGrabber**](isamplegrabber.md) permite recuperar muestras de medios individuales de la secuencia. Si solo necesita un mapa de bits de un fotograma de vídeo, llame al método [**IMediaDet::GetBitmapBits**](imediadet-getbitmapbits.md) en su lugar. La **interfaz ISampleGrabber** es más flexible, pero requiere más trabajo por parte de la aplicación.
 
@@ -68,7 +68,7 @@ Si este método se realiza correctamente, la [**interfaz ISampleGrabber**](isamp
  
 
 > [!Note]  
-> Para obtener Qedit.h, descargue la actualización del SDK de [Microsoft Windows para Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
+> Para obtener Qedit.h, descargue la actualización del SDK de Microsoft Windows para [Windows Vista y .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit.h no está disponible en el SDK de Microsoft Windows para Windows 7 y .NET Framework 3.5 Service Pack 1.
 
  
 

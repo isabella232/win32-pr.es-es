@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 93225a7a550f86bb8b32bf5939a8c7b7aa862ac96c8459bd6bcceb4c6b76e516
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 026a0a85001818b6f69366e8dba80ef56a7a8f20
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117831156"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062078"
 ---
-# <a name="em_setpalette-message"></a>Mensaje \_ SETPALETTE DE EM
+# <a name="em_setpalette-message"></a>Mensaje \_ DE EM SETPALETTE
 
 Cambia la paleta que usa un control de edición enriquecido para su ventana de presentación.
 
@@ -32,14 +32,14 @@ Cambia la paleta que usa un control de edición enriquecido para su ventana de p
 *wParam* 
 </dt> <dd>
 
-Controle la nueva paleta que usa el control de edición enriquecido.
+Identificador de la nueva paleta usada por el control de edición enriquecido.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Este parámetro no se utiliza; debe ser cero.
+Este parámetro no se usa; debe ser cero.
 
 </dd> </dl>
 
@@ -47,7 +47,7 @@ Este parámetro no se utiliza; debe ser cero.
 
 Este mensaje no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El control rich edit no comprueba si la nueva paleta es válida.
 
@@ -55,11 +55,11 @@ El control rich edit no comprueba si la nueva paleta es válida.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 

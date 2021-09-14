@@ -1,5 +1,5 @@
 ---
-title: EM_SETTEXTMODE (Richedit.h)
+title: EM_SETTEXTMODE mensaje (Richedit.h)
 description: Establece el modo de texto o el nivel de deshacer de un control de edición enriquecido. Se produce un error en el mensaje si el control contiene texto.
 ms.assetid: d6741234-0ef3-4cd2-8817-6c852f1b500d
 keywords:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ea489dcdb60908cac8600188d40b9aae4b7e3e531c713094bb180e84ee24bee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 74ec5378213bdd32721ff95ae3f4505437973256
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118672374"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062056"
 ---
 # <a name="em_settextmode-message"></a>Mensaje \_ EM SETTEXTMODE
 
@@ -32,7 +32,7 @@ Establece el modo de texto o el nivel de deshacer de un control de edición enri
 *wParam* 
 </dt> <dd>
 
-Uno o varios valores del tipo [**de enumeración TEXTMODE.**](/windows/win32/api/richedit/ne-richedit-textmode) Los valores especifican la nueva configuración para el modo de texto del control y los parámetros de nivel de deshacer.
+Uno o varios valores del tipo de [**enumeración TEXTMODE.**](/windows/win32/api/richedit/ne-richedit-textmode) Los valores especifican la nueva configuración para el modo de texto del control y los parámetros de nivel de deshacer.
 
 Especifique uno de los siguientes valores para establecer el parámetro de modo de texto. Si no especifica un valor de modo de texto, el modo de texto permanece en su configuración actual. 
 
@@ -60,7 +60,7 @@ Especifique uno de los siguientes valores para establecer el parámetro de pági
 
 | Value                                                    | Significado                                                                                                                                                                                                                                                                                                    |
 |----------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**TM \_ SINGLECODEPAGE**](/windows/win32/api/richedit/ne-richedit-textmode) | El control solo permite el teclado en inglés y un teclado correspondiente al juego de caracteres predeterminado. Por ejemplo, podría tener griego e inglés. Tenga en cuenta que esto impide que el texto Unicode entre en el control . Por ejemplo, use este valor si un control Rich Edit debe estar restringido al texto ANSI. |
+| [**TM \_ SINGLECODEPAGE**](/windows/win32/api/richedit/ne-richedit-textmode) | El control solo permite el teclado en inglés y un teclado correspondiente al juego de caracteres predeterminado. Por ejemplo, podría tener griego e inglés. Tenga en cuenta que esto impide que el texto Unicode entre en el control. Por ejemplo, use este valor si un control Rich Edit debe estar restringido al texto ANSI. |
 | [**TM \_ MULTICODEPAGE**](/windows/win32/api/richedit/ne-richedit-textmode)   | El control permite varias páginas de códigos y texto Unicode en el control . Esta es la configuración predeterminada.                                                                                                                                                                                                     |
 
 
@@ -84,13 +84,13 @@ Si se produce un error en el mensaje, el valor devuelto es un valor distinto de 
 
 ## <a name="remarks"></a>Observaciones
 
-En el modo de texto enriquecido, un control de edición enriquecido tiene la funcionalidad de edición enriquección estándar. Sin embargo, en modo de texto sin formato, el control es similar a un control de edición estándar:
+En el modo de texto enriquecido, un control de edición enriquecido tiene la funcionalidad de edición enriquección estándar. Sin embargo, en el modo de texto sin formato, el control es similar a un control de edición estándar:
 
--   El texto de un control de texto sin formato solo puede tener un formato (por ejemplo, Negrita, 10pt Arial).
--   El usuario no puede pegar formatos de texto enriquecido, como formato de texto enriquecido (RTF) ni objetos incrustados en un control de texto sin formato.
--   Los controles de modo de texto enriquecido siempre tienen un marcador de fin de documento predeterminado o retorno de carro para dar formato a párrafos. Por otro lado, los controles de texto sin formato no necesitan el marcador de fin de documento predeterminado, por lo que se omite.
+-   El texto de un control de texto sin formato solo puede tener un formato (por ejemplo, Negrita, Arial de 10 ptos).
+-   El usuario no puede pegar formatos de texto enriquecido, como Formato de texto enriquecido (RTF) ni objetos incrustados en un control de texto sin formato.
+-   Los controles de modo de texto enriquecido siempre tienen un marcador de fin de documento predeterminado o retorno de carro, para dar formato a los párrafos. Por otro lado, los controles de texto sin formato no necesitan el marcador predeterminado de fin de documento, por lo que se omite.
 
-El control no debe contener texto cuando recibe el **mensaje EM \_ SETTEXTMODE.** Para asegurarse de que no hay texto, envíe un [**mensaje \_ WM SETTEXT**](/windows/desktop/winmsg/wm-settext) con una cadena vacía ("").
+El control no debe contener texto cuando recibe el **mensaje EM \_ SETTEXTMODE.** Para asegurarse de que no hay texto, envíe un [**mensaje \_ SETTEXT**](/windows/desktop/winmsg/wm-settext) de WM con una cadena vacía ("").
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,11 +100,11 @@ El control no debe contener texto cuando recibe el **mensaje EM \_ SETTEXTMODE.*
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

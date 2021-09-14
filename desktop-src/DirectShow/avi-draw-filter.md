@@ -5,11 +5,11 @@ title: Filtro de dibujo de AVI
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 44eb62bd686d0604f6a0c4966fa8af4a4ad0d69d
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122987188"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161717"
 ---
 # <a name="avi-draw-filter"></a>Filtro de dibujo de AVI
 

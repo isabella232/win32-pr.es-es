@@ -1,8 +1,8 @@
 ---
-description: Representa las propiedades que están asociadas a un gabinete del sistema físico.
+description: Representa las propiedades asociadas a un gabinete del sistema físico.
 ms.assetid: a8244dc0-a95e-4940-9b92-7820bdf14916
 ms.tgt_platform: multiple
-title: Win32_SystemEnclosure (clase)
+title: Win32_SystemEnclosure clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -53,15 +53,15 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: c7f3b65f6435d8ff828aebf5310f9b21a2ea7f6c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104000788"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061452"
 ---
-# <a name="win32_systemenclosure-class"></a>\_Clase Win32 SystemEnclosure
+# <a name="win32_systemenclosure-class"></a>Clase \_ SystemEnclosure de Win32
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ SystemEnclosure de Win32** representa las propiedades asociadas a un gabinete del sistema físico.
+La clase [WMI](../wmisdk/retrieving-a-class.md) **\_ SystemEnclosure de Win32** representa las propiedades asociadas a un gabinete del sistema físico.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -111,7 +111,7 @@ class Win32_SystemEnclosure : CIM_Chassis
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SystemEnclosure de Win32** tiene estos tipos de miembros:
 
@@ -120,7 +120,7 @@ La **clase \_ SystemEnclosure de Win32** tiene estos tipos de miembros:
 
 ### <a name="methods"></a>Métodos
 
-La clase **Win32 \_ SystemEnclosure** tiene estos métodos.
+La **clase \_ SystemEnclosure de Win32** tiene estos métodos.
 
 
 
@@ -147,9 +147,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, el marco está equipado con una alarma audible.
+Si **es TRUE,** el marco está equipado con una alarma de sonido.
 
-Esta propiedad se hereda de [**\_ PhysicalFrame CIM**](cim-physicalframe.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalFrame.**](cim-physicalframe.md)
 
 </dd> <dt>
 
@@ -165,9 +165,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ PhysicalFrame**](cim-physicalframe.md).**SecurityBreach**")
 </dt> </dl>
 
-Cadena de forma libre que proporciona más información si la propiedad **SecurityBreach** indica que se ha producido un evento relacionado con la seguridad.
+Cadena de forma libre que proporciona más información si la **propiedad SecurityBreach** indica que se ha producido un evento relacionado con la seguridad.
 
-Esta propiedad se hereda de [**\_ PhysicalFrame CIM**](cim-physicalframe.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalFrame.**](cim-physicalframe.md)
 
 </dd> <dt>
 
@@ -180,9 +180,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena de forma libre que contiene información sobre cómo se conectan y empaquetan los distintos cables del marco. Con muchos cables de red, relacionados con el almacenamiento y de alimentación, la administración de cables puede ser un esfuerzo complejo y desafiante. Esta propiedad contiene información para ayudar en el ensamblado y el servicio del marco.
+Cadena de forma libre que contiene información sobre cómo se conectan y agrupan los distintos cables para el marco. Con muchas redes, cables relacionados con el almacenamiento y alimentación, la administración de cables puede ser un desafío complejo y complejo. Esta propiedad contiene información para ayudar en el ensamblado y el servicio del marco.
 
-Esta propiedad se hereda de [**\_ PhysicalFrame CIM**](cim-physicalframe.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalFrame.**](cim-physicalframe.md)
 
 </dd> <dt>
 
@@ -195,38 +195,38 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**displayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
 Breve descripción del objeto: una cadena de una línea.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **ChassisTypes**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](../wmisdk/standard-qualifiers.md) ("indexado"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Tabla global de contenedor físico DMTF \| 002,1 "), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ([**" \_ chasis CIM**](cim-chassis.md).**TypeDescriptions**")
+Calificadores: [**ArrayType**](../wmisdk/standard-qualifiers.md) ("Indexed"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| Physical Container Global Table \| 002.1"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ Chassis**](cim-chassis.md).**TypeDescriptions**")
 </dt> </dl>
 
 Matriz de tipos de chasis.
 
-Este valor procede del miembro de **tipo** del **alojamiento del sistema o** de la estructura del chasis en la información de SMBIOS.
+Este valor procede del miembro **Type de** la estructura System Enclosure **o Chassis** en la información de SMBIOS.
 
-Esta propiedad se hereda del [**\_ chasis CIM**](cim-chassis.md).
+Esta propiedad se hereda del [**\_ chasis CIM.**](cim-chassis.md)
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -247,21 +247,21 @@ Esta propiedad se hereda del [**\_ chasis CIM**](cim-chassis.md).
 
 <span id="Low_Profile_Desktop"></span><span id="low_profile_desktop"></span><span id="LOW_PROFILE_DESKTOP"></span>
 
-**Escritorio de bajo perfil** (4)
+**Escritorio de perfil bajo** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pizza_Box"></span><span id="pizza_box"></span><span id="PIZZA_BOX"></span>
 
-**Cuadro de pizza** (5)
+**Pizza Box** (5)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Mini_Tower"></span><span id="mini_tower"></span><span id="MINI_TOWER"></span>
 
-**Minitorre (6** )
+**Mini-Torre** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -289,14 +289,14 @@ Esta propiedad se hereda del [**\_ chasis CIM**](cim-chassis.md).
 
 <span id="Notebook"></span><span id="notebook"></span><span id="NOTEBOOK"></span>
 
-**Cuaderno** (10)
+**Notebook** (10)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Hand_Held"></span><span id="hand_held"></span><span id="HAND_HELD"></span>
 
-**Mano** (11)
+**Hand Held** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -317,21 +317,21 @@ Esta propiedad se hereda del [**\_ chasis CIM**](cim-chassis.md).
 
 <span id="Sub_Notebook"></span><span id="sub_notebook"></span><span id="SUB_NOTEBOOK"></span>
 
-**Sub Notebook** (14)
+**Sub notebook** (14)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Space-Saving"></span><span id="space-saving"></span><span id="SPACE-SAVING"></span>
 
-**Ahorrar espacio** (15)
+**Ahorro de espacio** (15)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lunch_Box"></span><span id="lunch_box"></span><span id="LUNCH_BOX"></span>
 
-**Caja del almuerzo** (16)
+**Lunch Box** (16)
 
 
 </dt> <dd></dd> <dt>
@@ -352,7 +352,7 @@ Esta propiedad se hereda del [**\_ chasis CIM**](cim-chassis.md).
 
 <span id="SubChassis"></span><span id="subchassis"></span><span id="SUBCHASSIS"></span>
 
-**Subchasis** (19)
+**SubChassis** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -366,14 +366,14 @@ Esta propiedad se hereda del [**\_ chasis CIM**](cim-chassis.md).
 
 <span id="Peripheral_Chassis"></span><span id="peripheral_chassis"></span><span id="PERIPHERAL_CHASSIS"></span>
 
-**Chasis de periféricos** (21)
+**Chasis periférico** (21)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Storage_Chassis"></span><span id="storage_chassis"></span><span id="STORAGE_CHASSIS"></span>
 
-**Chasis de almacenamiento** (22)
+**Storage chasis** (22)
 
 
 </dt> <dd></dd> <dt>
@@ -387,7 +387,7 @@ Esta propiedad se hereda del [**\_ chasis CIM**](cim-chassis.md).
 
 <span id="Sealed-Case_PC"></span><span id="sealed-case_pc"></span><span id="SEALED-CASE_PC"></span>
 
-**Equipos sellados** (24)
+**Equipo de caso sellado** (24)
 
 </dt> <dd></dd> <dt>
 
@@ -405,7 +405,7 @@ Esta propiedad se hereda del [**\_ chasis CIM**](cim-chassis.md).
 
 <span id="Detachable"></span><span id="Detachable "></span><span id="Detachable "></span>
 
-**Desasociable** (32)
+**Separación** (32)
 
 
 </dt> <dd></dd> </dl>
@@ -421,12 +421,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**\_ Clave CIM,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia que se utiliza en la creación de una instancia de. Cuando se usa con las otras propiedades de clave de la clase, esta propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
+Nombre de la primera clase concreta que aparece en la cadena de herencia que se usa en la creación de una instancia de . Cuando se usa con las demás propiedades clave de la clase , esta propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -439,12 +439,12 @@ Tipo de datos: **sint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("amperios at 120 voltios")
+Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("amps a 120 volts")
 </dt> </dl>
 
-Actual que requiere el chasis a 120 v. Si el chasis proporciona alimentación, como en el caso de una fuente de alimentación ininterrumpida (SAI), esta propiedad puede indicar el amperaje producido (como un número negativo).
+Actual que requiere el chasis a 120 V. Si el chasis proporciona energía, como en el caso de una fuente de alimentación ininterrumpida (UPS), esta propiedad puede indicar el amperaje generado (como un número negativo).
 
-Esta propiedad se hereda del [**\_ chasis CIM**](cim-chassis.md).
+Esta propiedad se hereda del [**\_ chasis CIM.**](cim-chassis.md)
 
 </dd> <dt>
 
@@ -460,9 +460,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("pulgadas")
 </dt> </dl>
 
-Profundidad del paquete físico: en pulgadas.
+Profundidad del paquete físico, en pulgadas.
 
-Esta propiedad se hereda de [**\_ PhysicalPackage CIM**](cim-physicalpackage.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> <dt>
 
@@ -475,19 +475,19 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Descripción")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Description")
 </dt> </dl>
 
 Descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **HeatGeneration**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -496,9 +496,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("BTU por hora")
 </dt> </dl>
 
-Cantidad de calor generada por el chasis en BTU/hora.
+Cantidad de calor que genera el chasis en BTU/hora.
 
-Esta propiedad se hereda del [**\_ chasis CIM**](cim-chassis.md).
+Esta propiedad se hereda del [**\_ chasis CIM.**](cim-chassis.md)
 
 </dd> <dt>
 
@@ -514,9 +514,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("pulgadas")
 </dt> </dl>
 
-Alto del paquete físico: en pulgadas.
+Alto del paquete físico, en pulgadas.
 
-Esta propiedad se hereda de [**\_ PhysicalPackage CIM**](cim-physicalpackage.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> <dt>
 
@@ -529,27 +529,27 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, un paquete físico puede intercambiarse en caliente (si es posible reemplazarlo por uno físicamente diferente pero equivalente mientras el paquete contenedor tiene energía aplicada a él). Por ejemplo, un paquete de unidad de disco que se inserta mediante conectores SCA es extraíble y puede intercambiarse en caliente. Todos los paquetes que se pueden intercambiar en caliente son intrínsecamente extraíbles y reemplazables.
+Si **es TRUE,** un paquete físico se puede intercambiar en caliente (si es posible reemplazar el elemento por uno físicamente diferente, pero equivalente, mientras que el paquete que lo contiene tiene energía aplicada). Por ejemplo, un paquete de unidad de disco que se inserta mediante conectores SCA es extraíble y se puede intercambiar en caliente. Todos los paquetes que se pueden intercambiar en caliente son intrínsecamente extraíbles y reemplazables.
 
-Esta propiedad se hereda de [**\_ PhysicalPackage CIM**](cim-physicalpackage.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](../wmisdk/standard-qualifiers.md) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Fecha de instalación")
 </dt> </dl>
 
 Fecha y hora en que se instaló el objeto. Esta propiedad no requiere un valor para indicar que el objeto está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -562,13 +562,13 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, el marco está protegido con un bloqueo.
+Si **es TRUE,** el marco está protegido con un bloqueo.
 
-Esta propiedad se hereda de [**\_ PhysicalFrame CIM**](cim-physicalframe.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalFrame**](cim-physicalframe.md).
 
 </dd> <dt>
 
-**Le**
+**Fabricante**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -580,11 +580,11 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nombre de la organización que produce el elemento físico.
+Nombre de la organización que genera el elemento físico.
 
-Este valor procede del miembro **manufacturer** del alojamiento del **sistema o** de la estructura del chasis en la información de SMBIOS.
+Este valor procede del miembro **Fabricante** de la estructura Del gabinete del sistema o **chasis** en la información de SMBIOS.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -602,7 +602,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 
 Nombre por el que se conoce el elemento físico.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -615,27 +615,27 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Name")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Nombre")
 </dt> </dl>
 
-Etiqueta por la que se conoce el objeto. Cuando se subclasen, la propiedad se puede invalidar para ser una propiedad de clave.
+Etiqueta por la que se conoce el objeto. Cuando se subclasifica, la propiedad se puede invalidar para que sea una propiedad de clave.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **NumberOfPowerCords**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de cables de alimentación que deben estar conectados al chasis para que funcionen todos los componentes.
+Número de cables de alimentación que deben estar conectados al chasis para que todos los componentes funcionen.
 
-Esta propiedad se hereda del [**\_ chasis CIM**](cim-chassis.md).
+Esta propiedad se hereda del [**\_ chasis CIM.**](cim-chassis.md)
 
 </dd> <dt>
 
@@ -648,9 +648,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Datos adicionales, más allá de la información de etiquetas de recursos, que se pueden usar para identificar un elemento físico. Un ejemplo son los datos de código de barras que están asociados a un elemento que también tiene una etiqueta de recurso. Tenga en cuenta que si solo están disponibles los datos de código de barras y es único o se puede usar como una clave de elemento, esta propiedad sería **null** y los datos de código de barras usados como clave de clase en la propiedad de etiqueta.
+Datos adicionales, más allá de la información de etiquetas de recurso, que se pueden usar para identificar un elemento físico. Un ejemplo son los datos de código de barras asociados a un elemento que también tiene una etiqueta de recurso. Tenga en cuenta que si solo hay datos de código de barras disponibles y es único o se puede usar como clave de elemento, esta propiedad sería **NULL** y los datos del código de barras usados como clave de clase, en la propiedad de etiqueta.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -666,13 +666,13 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Número de pieza asignado por la organización que produce o fabrica el elemento físico.
+Número de parte asignado por la organización que genera o fabrica el elemento físico.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
-**Poweredon**
+**PoweredOn**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -681,13 +681,13 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, el elemento físico está encendido.
+Si **es TRUE,** el elemento físico está encendido.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
-**Quitar**
+**Extraíble**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -696,13 +696,13 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, un paquete físico es extraíble (si está diseñado para tomarse dentro y fuera del contenedor físico en el que se encuentra normalmente, sin perjudicar la función del empaquetado general). Un paquete todavía puede ser extraíble si la alimentación debe estar "desactivada" para realizar la eliminación. Si se puede quitar el paquete mientras la alimentación está activada, el elemento es extraíble y puede intercambiarse en caliente. Por ejemplo, una batería adicional en un equipo portátil es extraíble, como un paquete de unidad de disco que se inserta mediante conectores de la aplicación de configuración del servidor (SCA). Sin embargo, el último puede intercambiarse en caliente. Una pantalla de equipo portátil no es extraíble, ni es una fuente de alimentación no redundante. La eliminación de estos componentes afectaría a la función del empaquetado general o no es posible debido a la estrecha integración del paquete.
+Si **es TRUE,** un paquete físico es extraíble (si está diseñado para su entrada y salida del contenedor físico en el que se encuentra normalmente, sin afectar a la función del empaquetado general). Un paquete todavía puede ser extraíble si la alimentación debe ser "OFF" para realizar la eliminación. Si el paquete se puede quitar mientras la alimentación está on, el elemento es extraíble y se puede intercambiar en caliente. Por ejemplo, una batería adicional en un portátil es extraíble, al igual que un paquete de unidad de disco que se inserta mediante conectores de la aplicación de configuración del servidor (SCA). Sin embargo, este último se puede intercambiar en caliente. Una pantalla de portátil no es extraíble ni es una fuente de alimentación sin red. La eliminación de estos componentes afectaría a la función del empaquetado general o es imposible debido a la estrecha integración del paquete.
 
-Esta propiedad se hereda de [**\_ PhysicalPackage CIM**](cim-physicalpackage.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> <dt>
 
-**Reemplazables**
+**Reemplazable**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -711,33 +711,33 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es true**, este componente de medio físico se puede reemplazar por uno físicamente diferente. Por ejemplo, algunos sistemas informáticos permiten que el chip del procesador principal se actualice a una clasificación de reloj más alta. En este caso, se dice que el procesador es reemplazable. Otro ejemplo es un paquete de fuente de alimentación montado en raíles deslizantes. Todos los paquetes extraíbles se pueden reemplazar de forma inherente.
+Si **es TRUE,** este componente de medios físicos se puede reemplazar por uno físicamente diferente. Por ejemplo, algunos sistemas informáticos permiten actualizar el chip del procesador principal a una de las especificaciones de reloj más altas. En este caso, se dice que el procesador es reemplazable. Otro ejemplo es un paquete de fuente de alimentación montado en raíles deslizantes. Todos los paquetes extraíbles se pueden reemplazar de forma inherente.
 
-Esta propiedad se hereda de [**\_ PhysicalPackage CIM**](cim-physicalpackage.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> <dt>
 
 **SecurityBreach**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Tabla global de contenedor físico DMTF \| 002,12 "), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ PhysicalFrame**](cim-physicalframe.md).**BreachDescription**")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| Physical Container Global Table \| 002.12"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ PhysicalFrame**](cim-physicalframe.md).**BreachDescription**")
 </dt> </dl>
 
 Estado de una infracción física del marco.
 
-Esta propiedad se hereda de [**\_ PhysicalFrame CIM**](cim-physicalframe.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalFrame**](cim-physicalframe.md).
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -751,7 +751,7 @@ Esta propiedad se hereda de [**\_ PhysicalFrame CIM**](cim-physicalframe.md).
 
 <span id="No_Breach"></span><span id="no_breach"></span><span id="NO_BREACH"></span>
 
-**Sin brecha** (3)
+**Ninguna infracción** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -765,7 +765,7 @@ Esta propiedad se hereda de [**\_ PhysicalFrame CIM**](cim-physicalframe.md).
 
 <span id="Breach_Successful"></span><span id="breach_successful"></span><span id="BREACH_SUCCESSFUL"></span>
 
-**Infracción correcta** (5)
+**Brecha correcta** (5)
 
 
 </dt> <dd></dd> </dl>
@@ -775,24 +775,24 @@ Esta propiedad se hereda de [**\_ PhysicalFrame CIM**](cim-physicalframe.md).
 **SecurityStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("estado de seguridad de SMBIOS \| tipo 3 \| ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Estado de seguridad del tipo SMBIOS \| \| 3")
 </dt> </dl>
 
-Configuración de seguridad para la entrada externa, por ejemplo, un teclado, a un equipo.
+Configuración de seguridad para la entrada externa, por ejemplo, un teclado, en un equipo.
 
-Este valor procede del miembro de **Estado de seguridad** de la estructura **del chasis o del chasis del sistema** en la información de SMBIOS.
+Este valor procede del miembro **Security Status** de la estructura System Enclosure **o Chassis en** la información de SMBIOS.
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -839,47 +839,47 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 </dt> </dl>
 
-Número asignado por el fabricante que se usa para identificar el elemento físico.
+Número asignado por el fabricante usado para identificar el elemento físico.
 
-Este valor procede del miembro del **número de serie** del **alojamiento del sistema o** de la estructura del chasis en la información de SMBIOS.
+Este valor procede del miembro **Número de** serie de la estructura Del gabinete del sistema o **chasis** en la información de SMBIOS.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
 **ServiceDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](../wmisdk/standard-qualifiers.md) ("indexado"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ PhysicalFrame**](cim-physicalframe.md).**ServicePhilosophy**")
+Calificadores: [**ArrayType**](../wmisdk/standard-qualifiers.md) ("Indexed"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ PhysicalFrame**](cim-physicalframe.md).**ServiceXiaphy**")
 </dt> </dl>
 
-Matriz de explicaciones más detalladas para cualquiera de las entradas de la matriz **ServicePhilosophy** . Tenga en cuenta que cada entrada de esta matriz está relacionada con la entrada de **ServicePhilosophy** que se encuentra en el mismo índice.
+Matriz de explicaciones más detalladas de cualquiera de las entradas de la **matriz ServiceXiaphy.** Tenga en cuenta que cada entrada de esta matriz está relacionada con la entrada de **ServiceXiaosophy** que se encuentra en el mismo índice.
 
-Esta propiedad se hereda de [**\_ PhysicalFrame CIM**](cim-physicalframe.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalFrame**](cim-physicalframe.md).
 
 </dd> <dt>
 
-**ServicePhilosophy**
+**ServiceXiaphy**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](../wmisdk/standard-qualifiers.md) ("indexado"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ PhysicalFrame**](cim-physicalframe.md).**ServiceDescriptions**")
+Calificadores: [**ArrayType**](../wmisdk/standard-qualifiers.md) ("Indexed"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ PhysicalFrame**](cim-physicalframe.md).**ServiceDescriptions**")
 </dt> </dl>
 
-Matriz que incluye si el marco se va a mantener desde la parte superior, delantera, posterior o lateral, si el marco tiene bandejas deslizantes o lados extraíbles, y si el fotograma se va a mover, por ejemplo, con rodillos.
+Matriz que incluye si el marco se atiende desde la parte superior, frontal, atrás o lateral, si el marco tiene bandejas deslizantes o lados extraíbles y si el marco se puede mover, por ejemplo, si tiene rodillos.
 
-Esta propiedad se hereda de [**\_ PhysicalFrame CIM**](cim-physicalframe.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalFrame**](cim-physicalframe.md).
 
 <dt>
 
@@ -892,7 +892,7 @@ Esta propiedad se hereda de [**\_ PhysicalFrame CIM**](cim-physicalframe.md).
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -906,14 +906,14 @@ Esta propiedad se hereda de [**\_ PhysicalFrame CIM**](cim-physicalframe.md).
 
 <span id="Service_From_Front"></span><span id="service_from_front"></span><span id="SERVICE_FROM_FRONT"></span>
 
-**Servicio desde delante** (3)
+**Servicio desde el frente** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service_From_Back"></span><span id="service_from_back"></span><span id="SERVICE_FROM_BACK"></span>
 
-**Servicio de atrás** (4)
+**Servicio desde atrás** (4)
 
 
 </dt> <dd></dd> <dt>
@@ -941,7 +941,7 @@ Esta propiedad se hereda de [**\_ PhysicalFrame CIM**](cim-physicalframe.md).
 
 <span id="Moveable"></span><span id="moveable"></span><span id="MOVEABLE"></span>
 
-**Móvil** (8)
+**Moveable** (8)
 
 
 </dt> <dd></dd> </dl>
@@ -960,9 +960,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 </dt> </dl>
 
-Número de referencia de almacén para el elemento físico.
+Número de unidad de mantenimiento de existencias para el elemento físico.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
@@ -975,12 +975,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| etiqueta de recurso de tipo SMBIOS 3 \| ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("etiqueta de recurso de tipo SMBIOS \| \| 3")
 </dt> </dl>
 
-Número de etiqueta de activo del alojamiento del sistema.
+Número de etiqueta de recurso del gabinete del sistema.
 
-Este valor procede del miembro **número de etiqueta de activo** del **alojamiento del sistema o** de la estructura del chasis en la información de SMBIOS.
+Este valor procede del miembro **Asset Tag Number** de la estructura System Enclosure o **Chassis en** la información de SMBIOS.
 
 </dd> <dt>
 
@@ -993,12 +993,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**displayName**](../wmisdk/standard-qualifiers.md) ("status")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores son los siguientes:
 
@@ -1006,84 +1006,84 @@ Los valores son los siguientes:
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Desconocido** ("Desconocido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**A partir** de ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detención** ("Deteniendo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
@@ -1099,32 +1099,32 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**invalidación**](../wmisdk/standard-qualifiers.md) ("etiqueta"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
+Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**Override**](../wmisdk/standard-qualifiers.md) ("Tag"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
-Identificador único del alojamiento del sistema.
+Identificador único del gabinete del sistema.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
-Ejemplo: "gabinete del sistema 1"
+Ejemplo: "Gabinete del sistema 1"
 
 </dd> <dt>
 
 **TypeDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **cadenas**
+Tipo de datos: **matriz de** cadenas
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ArrayType**](../wmisdk/standard-qualifiers.md) ("indexado"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ([**" \_ chasis CIM**](cim-chassis.md).**ChassisTypes**")
+Calificadores: [**ArrayType**](../wmisdk/standard-qualifiers.md) ("Indexed"), [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**CIM \_ Chassis**](cim-chassis.md).**ChassisTypes**")
 </dt> </dl>
 
-Matriz de más información sobre las entradas de la matriz **ChassisTypes** . Tenga en cuenta que cada entrada de esta matriz está relacionada con la entrada de **ChassisTypes** que se encuentra en el mismo índice.
+Matriz de más información sobre las **entradas de la matriz ChassisTypes.** Tenga en cuenta que cada entrada de esta matriz está relacionada con la entrada de **ChassisTypes** que se encuentra en el mismo índice.
 
-Esta propiedad se hereda del [**\_ chasis CIM**](cim-chassis.md).
+Esta propiedad se hereda del [**\_ chasis CIM.**](cim-chassis.md)
 
 </dd> <dt>
 
@@ -1142,9 +1142,9 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 
 Versión del elemento físico.
 
-Este valor procede del miembro de la **versión** del **alojamiento del sistema o** de la estructura del chasis en la información de SMBIOS.
+Este valor procede del miembro **Version de** la estructura System Enclosure **o Chassis** en la información de SMBIOS.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -1157,9 +1157,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es true**, el equipo incluye una alarma visible.
+Si **es TRUE,** el equipo incluye una alarma visible.
 
-Esta propiedad se hereda de [**\_ PhysicalFrame CIM**](cim-physicalframe.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalFrame.**](cim-physicalframe.md)
 
 </dd> <dt>
 
@@ -1175,9 +1175,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("libras")
 </dt> </dl>
 
-Peso del paquete físico en libras.
+Peso del paquete físico en kilos.
 
-Esta propiedad se hereda de [**\_ PhysicalPackage CIM**](cim-physicalpackage.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> <dt>
 
@@ -1195,17 +1195,17 @@ Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("pulgadas")
 
 Ancho del paquete físico en pulgadas.
 
-Esta propiedad se hereda de [**\_ PhysicalPackage CIM**](cim-physicalpackage.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-La **clase \_ SystemEnclosure de Win32** se deriva [**del \_ chasis CIM**](cim-chassis.md).
+La **clase \_ SystemEnclosure de Win32** se deriva de [**CIM \_ Chassis**](cim-chassis.md).
 
 ## <a name="examples"></a>Ejemplos
 
-El ejemplo de [recopilación de recursos del sistema multiproceso con](https://Gallery.TechNet.Microsoft.Com/Multithreaded-System-Asset-856a8f7c) PowerShell de PowerShell en la galería de TechNet usa una serie de clases, incluido **Win32 \_ SystemEnclosure**, para recuperar datos de un sistema.
+El [ejemplo de recopilación](https://Gallery.TechNet.Microsoft.Com/Multithreaded-System-Asset-856a8f7c) de recursos del sistema multiproceso con PowerShell de PowerShell en la galería de TechNet usa una serie de clases, como **Win32 \_ SystemEnclosure,** para recuperar datos de un sistema.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -1215,23 +1215,23 @@ El ejemplo de [recopilación de recursos del sistema multiproceso con](https://G
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_Chasis CIM**](cim-chassis.md)
+[**Chasis \_ CIM**](cim-chassis.md)
 </dt> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[Tareas WMI: hardware del equipo](../wmisdk/wmi-tasks--computer-hardware.md)
+[Tareas wmi: hardware del equipo](../wmisdk/wmi-tasks--computer-hardware.md)
 </dt> </dl>
 
  

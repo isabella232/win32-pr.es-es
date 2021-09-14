@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102775
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 19773dc2efcc610f3c7698c7c7f12cc31a02b1d0dcc673f6fc483b8596c57163
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 65dff2e7ba7d0a3ee21aa2a05d45137579377236
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119970385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887777"
 ---
 # <a name="esentslvfileunknownexception-properties"></a>Propiedades de EsentSLVFileUnknownException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentSLVFileUnknownException](./esentslvfileunknownexception-class.md) expone los miembros siguientes.
+El [tipo EsentSLVFileUnknownException](./esentslvfileunknownexception-class.md) expone los siguientes miembros.
 
 ## <a name="properties"></a>Propiedades
 
@@ -34,7 +34,7 @@ El [tipo EsentSLVFileUnknownException](./esentslvfileunknownexception-class.md) 
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentSLVFileUnknownException](./esentslvfileunknownexception-class.md) 
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

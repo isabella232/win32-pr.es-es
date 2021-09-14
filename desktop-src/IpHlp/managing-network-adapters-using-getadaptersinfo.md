@@ -4,12 +4,12 @@ ms.assetid: 5bc72ee5-3065-4bfb-8dcb-8befb2a4bbd9
 title: Administración de adaptadores de red mediante GetAdaptersInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2da19541572af89e9429b9deba68efd4f4670324ffd9ff824e6c123295108f92
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 470e0ce7682a86b29df912fa4d4b1297c2263382
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118644635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160072"
 ---
 # <a name="managing-network-adapters-using-getadaptersinfo"></a>Administración de adaptadores de red mediante GetAdaptersInfo
 
@@ -17,7 +17,7 @@ La [**función GetAdaptersInfo**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-geta
 
 **Para usar GetAdaptersInfo**
 
-1.  Declare un puntero a una variable [**INFO del ADAPTADOR \_ \_ DE IP**](/windows/desktop/api/Iptypes/ns-iptypes-ip_adapter_info) denominada *pAdapterInfo* y una variable **ULONG** denominada *ulOutBufLen*. Estas variables se pasan como parámetros a [**la función GetAdaptersInfo.**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo) Cree también una variable **DWORD** denominada *dwRetVal* (para la comprobación de errores).
+1.  Declare un puntero a una variable INFO del ADAPTADOR [**\_ \_ DE IP**](/windows/desktop/api/Iptypes/ns-iptypes-ip_adapter_info) denominada *pAdapterInfo* y una variable **ULONG** denominada *ulOutBufLen*. Estas variables se pasan como parámetros a [**la función GetAdaptersInfo.**](/windows/desktop/api/Iphlpapi/nf-iphlpapi-getadaptersinfo) Cree también una variable **DWORD** denominada *dwRetVal* (para la comprobación de errores).
     ```C++
     IP_ADAPTER_INFO  *pAdapterInfo;
     ULONG            ulOutBufLen;

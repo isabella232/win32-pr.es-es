@@ -15,11 +15,11 @@ api_location:
 - d3dx9.lib
 - d3dx9.dll
 ms.openlocfilehash: 0878594baa8828c9cca4eca8dd2c20f225fb530e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090193"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126888372"
 ---
 # <a name="id3dxtextureshadersetvectorarray-method"></a>Método ID3DXTextureShader::SetVectorArray
 

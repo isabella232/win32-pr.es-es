@@ -1,19 +1,19 @@
 ---
-description: Genera implementaciones para las funciones de código auxiliar para las operaciones de tipo de puerto.
+description: Genera implementaciones para funciones de código auxiliar para operaciones de tipo de puerto.
 ms.assetid: 69899302-db54-493b-90de-596750be566f
 title: elemento stubDefinitions
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 42c60b071c901538122751f6e92cfd7049f7be88
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107994693"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889153"
 ---
 # <a name="stubdefinitions-element"></a>elemento stubDefinitions
 
-Genera implementaciones para las funciones de código auxiliar para las operaciones de tipo de puerto.
+Genera implementaciones para funciones de código auxiliar para operaciones de tipo de puerto.
 
 ## <a name="usage"></a>Uso
 
@@ -33,9 +33,9 @@ No hay atributos.
 
 | Elemento                                                         | Descripción                                                                                                             |
 |-----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [**deallocator**](deallocator.md)<br/>                   | Especifica el tipo de desasignador que va a usar una función de código auxiliar.<br/> <br/>                                 |
+| [**desasignador**](deallocator.md)<br/>                   | Especifica el tipo de desasignador que va a usar una función de código auxiliar.<br/> <br/>                                 |
 | [**eventArg**](eventarg.md)<br/>                         | Especifica si los argumentos de evento relacionados se incluyen en las funciones generadas.<br/> <br/>               |
-| [**Eventos**](events.md)<br/>                             | Especifica si los eventos relacionados se incluyen en las funciones generadas.<br/> <br/>                        |
+| [**events**](events.md)<br/>                             | Especifica si los eventos relacionados se incluyen en las funciones generadas.<br/> <br/>                        |
 | [**faultInfo**](faultinfo.md)<br/>                       | Especifica si los parámetros usados para pasar información de error se incluyen en las funciones generadas.<br/> <br/> |
 | [**Operación**](operation.md)<br/>                       | Especifica una operación para la que se va a generar código.<br/> <br/>                                        |
 | [**operationDeallocator**](operationdeallocator.md)<br/> | Especifica el tipo de desasignador que va a usar la función de código auxiliar de una operación.<br/> <br/>                    |
@@ -65,7 +65,7 @@ No hay atributos.
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**Archivo**](file.md)<br/> | Genera un archivo del generador de código.<br/> <br/> |
+| [**file**](file.md)<br/> | Genera un archivo del generador de código.<br/> <br/> |
 
 
 

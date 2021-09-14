@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7e170b8854e47da66bc81912284b2f44eca1231af6dda27330e1f93e061303be
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 131cf46f6f19937e7f813b9a4507ab21610791ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119476565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965840"
 ---
 # <a name="esentslvrootstillopenexception-constructor"></a>Constructor EsentSLVRootStengOpenException
 
@@ -50,7 +50,7 @@ Dim instance As New EsentSLVRootStillOpenException()
 public EsentSLVRootStillOpenException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

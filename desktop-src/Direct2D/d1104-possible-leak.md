@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: b3c8b49256b3e7009985e9acf6d2b581e2fe436e50325c26f1f7de59cb3b0b13
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b6629a0da2b89e13feebc33fe5742e3459fc082b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119075569"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164141"
 ---
 # <a name="d1104-possible-leak"></a>D1104: posible pérdida
 
@@ -44,7 +44,7 @@ Dirección de la interfaz que se creó en el *generador*.
 
 | &nbsp;      |    &nbsp;   |
 |-------------|-------------|
-| Nivel de error | Information |
+| Nivel de error | Información |
 
 
 

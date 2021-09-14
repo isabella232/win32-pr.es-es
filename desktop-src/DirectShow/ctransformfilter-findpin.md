@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e7db3ddf7336d1b10890a2af16aa218e983edb747ca860d52006837ecac6c00f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1631651932d5adbc49fb59d44291dccea55fd41f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120087045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061252"
 ---
 # <a name="ctransformfilterfindpin-method"></a>Método CTransformFilter.FindPin
 
@@ -74,7 +74,7 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!IMPORTANT]
 > La implementación de este método no llama a [**IPin::QueryId**](/windows/desktop/api/Strmif/nf-strmif-ipin-queryid) para que coincida con el identificador de pin. En su lugar, el método supone que el pin de entrada se denomina "In" y el pin de salida se denomina "Out". Si usa un conjunto diferente de identificadores de pin, invalide este método.
@@ -92,7 +92,7 @@ Devuelve uno de los **valores HRESULT** que se muestran en la tabla siguiente.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

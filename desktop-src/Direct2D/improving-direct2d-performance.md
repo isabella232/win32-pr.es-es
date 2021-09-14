@@ -19,12 +19,12 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 34adfd708ef3c1b8d7a6af145d9d1c9505b01beb1ba9b31834e267123ad05b69
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5a413b96e00514b64b3cf1b1ee451a84a9e9ff09
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119641505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162738"
 ---
 # <a name="improving-the-performance-of-direct2d-apps"></a>Mejora del rendimiento de las aplicaciones de Direct2D
 
@@ -77,7 +77,7 @@ En Direct2D, todos los comandos de representación se incluyen entre una llamada
 -   Realiza una llamada explícita a [**Flush:**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush)el método **Flush** hace que el lote se procese y se emita todos los comandos pendientes.
 -   El búfer que mantiene los comandos de representación está lleno. Si este búfer se llena antes de que se cumplan las dos condiciones anteriores, se vacían los comandos de representación.
 
-Hasta que se vacían las primitivas, Direct2D mantiene las referencias internas a los recursos correspondientes, como mapas de bits y pinceles.
+Hasta que se vacían las primitivas, Direct2D mantiene referencias internas a los recursos correspondientes, como mapas de bits y pinceles.
 
 ### <a name="reuse-resources"></a>Reutilización de recursos
 
@@ -94,7 +94,7 @@ Dado que [**el método Flush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarge
 
 ## <a name="bitmaps"></a>Mapas de bits
 
-Como se mencionó anteriormente, la creación y eliminación de recursos son operaciones muy costosas en hardware. Un mapa de bits es un tipo de recurso que se usa con frecuencia. La creación de mapas de bits en la tarjeta de vídeo es costosa. Volver a usarlos puede ayudar a que la aplicación sea más rápida.
+Como se mencionó anteriormente, la creación y eliminación de recursos son operaciones muy costosas en hardware. Un mapa de bits es un tipo de recurso que se usa con frecuencia. La creación de mapas de bits en la tarjeta de vídeo es costosa. Volver a usarlas puede ayudar a que la aplicación sea más rápida.
 
 ### <a name="create-large-bitmaps"></a>Creación de mapas de bits grandes
 
@@ -105,7 +105,7 @@ Las tarjetas de vídeo suelen tener un tamaño mínimo de asignación de memoria
 Hay algunos escenarios comunes para los que un atlas de mapa de bits puede servir muy bien. Los mapas de bits pequeños se pueden almacenar dentro de un mapa de bits grande. Estos mapas de bits pequeños se pueden sacar del mapa de bits más grande cuando los necesite especificando el rectángulo de destino. Por ejemplo, una aplicación tiene que dibujar varios iconos. Todos los mapas de bits asociados a los iconos se pueden cargar en un mapa de bits grande por adelantado. Y en el momento de la representación, se pueden recuperar del mapa de bits grande.
 
 > [!Note]  
-> Un mapa de bits de Direct2D creado en la memoria de vídeo se limita al tamaño máximo de mapa de bits admitido por el adaptador en el que se almacena. La creación de un mapa de bits mayor que podría dar lugar a un error.
+> Un mapa de bits de Direct2D creado en la memoria de vídeo se limita al tamaño máximo de mapa de bits admitido por el adaptador en el que se almacena. La creación de un mapa de bits mayor que eso podría dar lugar a un error.
 
  
 
@@ -119,13 +119,13 @@ Hay algunos escenarios comunes para los que un atlas de mapa de bits puede servi
 La creación de mapas de bits compartidos permite a los llamadores avanzados crear objetos de mapa de bits de Direct2D que están respaldos directamente por un objeto existente, ya compatible con el destino de representación. Esto evita la creación de varias superficies y ayuda a reducir la sobrecarga de rendimiento.
 
 > [!Note]  
-> Los mapas de bits compartidos suelen limitarse a destinos de software o a destinos interoperables con DXGI. Use los [**métodos CreateBitmapFromDxgiSurface**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromdxgisurface(idxgisurface_constd2d1_bitmap_properties1_id2d1bitmap1)), [**CreateBitmapFromWicBitmap**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromwicbitmap(iwicbitmapsource_constd2d1_bitmap_properties1_id2d1bitmap1))y [**CreateSharedBitmap**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsharedbitmap) para crear mapas de bits compartidos.
+> Los mapas de bits compartidos suelen limitarse a destinos de software o a destinos interoperables con DXGI. Use los [**métodos CreateBitmapFromDxgiSurface,**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromdxgisurface(idxgisurface_constd2d1_bitmap_properties1_id2d1bitmap1)) [**CreateBitmapFromWicBitmap**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromwicbitmap(iwicbitmapsource_constd2d1_bitmap_properties1_id2d1bitmap1))y [**CreateSharedBitmap**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsharedbitmap) para crear mapas de bits compartidos.
 
  
 
 ### <a name="copying-bitmaps"></a>Copiar mapas de bits
 
-La creación de una superficie DXGI es una operación costosa, por lo que reutilice las superficies existentes cuando pueda. Incluso en el software, si un mapa de bits tiene principalmente el formato que desea, excepto una pequeña parte, es mejor actualizar esa parte que quitar todo el mapa de bits y volver a crearlo todo. Aunque puede usar [**CreateCompatibleRenderTarget**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(id2d1bitmaprendertarget)) para lograr los mismos resultados, la representación suele ser una operación mucho más costosa que copiar. Esto se debe a que, para mejorar la localidad de la caché, el hardware no almacena realmente un mapa de bits en el mismo orden de memoria al que se dirige el mapa de bits. En su lugar, el mapa de bits podría deslizarse. El controlador (que es lento y solo se usa en partes inferiores) o el administrador de memoria de la GPU oculta el desdobado de la CPU. Debido a las restricciones en la forma en que los datos se escriben en un destino de representación al representar, los destinos de representación normalmente no se deslizan o se deslizan de una manera menos óptima de lo que se puede lograr si sabe que nunca tiene que representarse en la superficie. Por lo tanto, [los métodos CopyFrom](/windows/desktop/api/d2d1/nn-d2d1-id2d1bitmap) se proporcionan para copiar rectángulos de un \* origen al mapa de bits de Direct2D.
+La creación de una superficie DXGI es una operación costosa, por lo que reutilizar las superficies existentes cuando sea posible. Incluso en el software, si un mapa de bits tiene principalmente el formato que desea, excepto una pequeña parte, es mejor actualizar esa parte que quitar todo el mapa de bits y volver a crearlo todo. Aunque puede usar [**CreateCompatibleRenderTarget para**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createcompatiblerendertarget(id2d1bitmaprendertarget)) lograr los mismos resultados, la representación suele ser una operación mucho más costosa que copiar. Esto se debe a que, para mejorar la localidad de la caché, el hardware no almacena realmente un mapa de bits en el mismo orden de memoria al que se dirige el mapa de bits. En su lugar, el mapa de bits podría deslizarse. El controlador (que es lento y se usa solo en partes inferiores) o el administrador de memoria de la GPU oculta el desdobado de la CPU. Debido a las restricciones en la forma en que los datos se escriben en un destino de representación al representarse, los destinos de representación normalmente no se deslizan o se deslizan de una manera menos óptima de lo que se puede lograr si sabe que nunca tiene que representarse en la superficie. Por lo tanto, [los métodos CopyFrom](/windows/desktop/api/d2d1/nn-d2d1-id2d1bitmap) se proporcionan para copiar rectángulos de un \* origen al mapa de bits de Direct2D.
 
 CopyFrom se puede usar en cualquiera de sus tres formas:
 
@@ -133,9 +133,9 @@ CopyFrom se puede usar en cualquiera de sus tres formas:
 -   [**CopyFromRenderTarget**](/windows/win32/api/d2d1/nf-d2d1-id2d1bitmap-copyfromrendertarget)
 -   [**CopyFromMemory**](/windows/win32/api/d2d1/nf-d2d1-id2d1bitmap-copyfrommemory)
 
-## <a name="use-tiled-bitmap-over-dashing"></a>Uso de mapas de bits en mosaico sobre guiones
+## <a name="use-tiled-bitmap-over-dashing"></a>Uso de mapa de bits en mosaico sobre guiones
 
-Representar una línea discontinua es una operación muy costosa debido a la alta calidad y precisión del algoritmo subyacente. En la mayoría de los casos que no implican geometrías rectilíneas, el mismo efecto se puede generar más rápido mediante mapas de bits en mosaico.
+Representar una línea discontinua es una operación muy costosa debido a la alta calidad y precisión del algoritmo subyacente. En la mayoría de los casos que no implican geometrías rectilinear, el mismo efecto se puede generar más rápido mediante mapas de bits en mosaico.
 
 ## <a name="general-guidelines-for-rendering-complex-static-content"></a>Directrices generales para representar contenido estático complejo
 
@@ -153,7 +153,7 @@ Echemos un vistazo a cada uno de ellos con más detalle.
 
 Al representar contenido estático, en escenarios como la animación, cree otro mapa de bits de color completo en lugar de escribir directamente en el mapa de bits de la pantalla. Guarde el destino actual, establezca target en el mapa de bits intermedio y represente el contenido estático. A continuación, vuelva al mapa de bits de la pantalla original y dibuje el mapa de bits intermedio en él.
 
-Veamos un ejemplo:
+Este es un ejemplo:
 
 
 ```C++
@@ -188,9 +188,9 @@ En este ejemplo se usan mapas de bits intermedios para almacenar en caché y se 
 
 ### <a name="per-primitive-caching-using-an-a8-bitmap-and-the-fillopacitymask-method"></a>Por almacenamiento en caché primitivo mediante un mapa de bits A8 y el método FillOpacityMask
 
-Cuando la escena completa no es estática, pero consta de elementos como geometría o texto que son estáticos, puede usar una técnica de almacenamiento en caché por primitiva. Esta técnica conserva las características de suavizado de contorno de la primitiva que se almacena en caché y funciona con tipos de pincel cambiantes. Usa un mapa de bits A8 donde A8 es un tipo de formato de píxel que representa un canal alfa con 8 bits. Los mapas de bits A8 son útiles para dibujar geometría o texto como máscara. Cuando debe manipular la opacidad del contenido estático, en lugar de manipular el propio contenido, puede traducir, girar, sesgar o escalar la opacidad de la máscara.
+Cuando la escena completa no es estática, pero consta de elementos como geometría o texto estáticos, puede usar una técnica de almacenamiento en caché por primitiva. Esta técnica conserva las características de suavizado de contorno de la primitiva que se almacena en caché y funciona con tipos de pincel cambiantes. Usa un mapa de bits A8 donde A8 es un tipo de formato de píxel que representa un canal alfa con 8 bits. Los mapas de bits A8 son útiles para dibujar geometría o texto como máscara. Cuando debe manipular la opacidad del contenido estático, en lugar de manipular el propio contenido, puede traducir, girar, sesgar o escalar la opacidad de la máscara.
 
-Veamos un ejemplo:
+Este es un ejemplo:
 
 
 ```C++
@@ -227,9 +227,9 @@ m_d2dContext->FillOpacityMask(
 
 ## <a name="per-primitive-caching-using-geometry-realizations"></a>Almacenamiento en caché por primitiva mediante realizaciones de geometría
 
-Otra técnica de almacenamiento en caché por primitiva, denominada realizaciones de geometría, proporciona mayor flexibilidad al tratar con la geometría. Si desea dibujar repetidamente geometrías con alias o con suavizado de alias, es más rápido convertirlos en realizaciones de geometría y dibujar repetidamente las realizaciones que dibujar repetidamente las propias geometrías. Las realizaciones de geometría también suelen consumir menos memoria que las máscaras de opacidad (especialmente para geometrías grandes) y son menos sensibles a los cambios en la escala. Para obtener más información, vea [Información general sobre las realizaciones de geometría.](geometry-realizations-overview.md)
+Otra técnica de almacenamiento en caché por primitiva, denominada realizaciones de geometría, proporciona mayor flexibilidad al tratar con geometría. Si desea dibujar repetidamente geometrías con alias o con suavizado de alias, es más rápido convertirlos en realizaciones de geometría y dibujar repetidamente las realizaciones que dibujar repetidamente las propias geometrías. Las realizaciones de geometría también suelen consumir menos memoria que las máscaras de opacidad (especialmente para geometrías grandes) y son menos sensibles a los cambios en la escala. Para obtener más información, vea [Información general sobre las realizaciones de geometría.](geometry-realizations-overview.md)
 
-Veamos un ejemplo:
+Este es un ejemplo:
 
 
 ```C++
@@ -258,31 +258,31 @@ Veamos un ejemplo:
 
 ## <a name="geometry-rendering"></a>Representación de geometría
 
-### <a name="use-specific-draw-primitive-over-draw-geometry"></a>Usar una primitiva de dibujo específica sobre la geometría de dibujo
+### <a name="use-specific-draw-primitive-over-draw-geometry"></a>Uso de una primitiva de dibujo específica sobre la geometría de dibujo
 
-Use llamadas primitivas *de dibujo más* específicas, como [**DrawRectangle, en**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawrectangle(constd2d1_rect_f__id2d1brush_float_id2d1strokestyle)) llamadas a [**DrawGeometry genéricas.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) Esto se debe a **que, con DrawRectangle,** la geometría ya se conoce, por lo que la representación es más rápida.
+Use llamadas primitivas *de dibujo más* específicas, como [**DrawRectangle, en**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawrectangle(constd2d1_rect_f__id2d1brush_float_id2d1strokestyle)) llamadas a [**DrawGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawgeometry) genéricas. Esto se debe a **que, con DrawRectangle,** la geometría ya se conoce para que la representación sea más rápida.
 
 ### <a name="rendering-static-geometry"></a>Representación de geometría estática
 
-En escenarios en los que la geometría es estática, use las técnicas de almacenamiento en caché por primitiva que se han explicado anteriormente. Las máscaras de opacidad y las realizaciones de geometría pueden mejorar en gran manera la velocidad de representación de las escenas que contienen geometría estática.
+En escenarios donde la geometría es estática, use las técnicas de almacenamiento en caché por primitivas que se han explicado anteriormente. Las máscaras de opacidad y las realizaciones de geometría pueden mejorar enormemente la velocidad de representación de las escenas que contienen geometría estática.
 
 ### <a name="use-a-multithreaded-device-context"></a>Uso de un contexto de dispositivo multiproceso
 
-Las aplicaciones que esperan representar cantidades significativas de contenido geométrico complejo deben considerar la posibilidad de especificar la marca [**D2D1 \_ DEVICE CONTEXT OPTIONS ENABLE MULTI \_ \_ \_ \_ \_ THREADED \_ OPTIMIZATIONS**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_device_context_options) (HABILITAR OPTIMIZACIONES MULTIPROCESO) al crear un contexto de dispositivo [Direct2D.](./direct2d-portal.md) Cuando se especifica esta marca, Direct2D distribuirá la representación entre todos los núcleos lógicos presentes en el sistema, lo que puede reducir significativamente el tiempo de representación general.
+Las aplicaciones que esperan representar cantidades significativas de contenido geométrico complejo deben considerar la posibilidad de especificar la marca [**D2D1 \_ DEVICE CONTEXT OPTIONS ENABLE MULTI \_ \_ \_ \_ \_ THREADED \_ OPTIMIZATIONS**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_device_context_options) al crear un contexto de dispositivo [Direct2D.](./direct2d-portal.md) Cuando se especifica esta marca, Direct2D distribuirá la representación entre todos los núcleos lógicos presentes en el sistema, lo que puede reducir significativamente el tiempo de representación general.
 
 Notas:
 
 -   A Windows 8.1, esta marca solo afecta a la representación de geometría de ruta de acceso. No afecta a las escenas que contienen solo otros tipos primitivos (como texto, mapas de bits o realizaciones de geometría).
--   Esta marca tampoco tiene ningún impacto al representar en software (es decir, cuando se representa con un dispositivo WARP Direct3D). Para controlar el multithreading de software, los llamadores deben usar la marca CREATE DEVICE PREVENT INTERNAL THREADING OPTIMIZATIONS de D3D11 al crear el dispositivo \_ \_ WARP \_ \_ \_ \_ Direct3D.
--   La especificación de esta marca puede aumentar el máximo de trabajo durante la representación y también puede aumentar la contención de subprocesos en aplicaciones que ya aprovechan el procesamiento multiproceso.
+-   Esta marca tampoco tiene ningún impacto al representarse en software (es decir, cuando se representa con un dispositivo WARP Direct3D). Para controlar el multithreading de software, los autores de la llamada deben usar la marca D3D11 CREATE DEVICE PREVENT INTERNAL THREADING OPTIMIZATIONS al crear el dispositivo \_ \_ WARP \_ \_ \_ \_ Direct3D.
+-   Especificar esta marca puede aumentar el número máximo de trabajo durante la representación y también puede aumentar la contención de subprocesos en aplicaciones que ya aprovechan el procesamiento multiproceso.
 
-## <a name="drawing-text-with-direct2d"></a>Dibujo de texto con Direct2D
+## <a name="drawing-text-with-direct2d"></a>Dibujar texto con Direct2D
 
-La funcionalidad de representación de texto de Direct2D se ofrece en dos partes. La primera parte, expuesta como el [**método ID2D1RenderTarget::D rawText**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) e [**ID2D1RenderTarget::D rawTextLayout,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) permite a un autor de llamada pasar una cadena y parámetros de formato o un objeto de diseño de texto DWrite para varios formatos. Esto debe ser adecuado para la mayoría de los llamadores. La segunda manera de representar texto, expuesta como el método [**ID2D1RenderTarget::D rawGlyphRun,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawglyphrun) proporciona rasterización para los clientes que ya conocen la posición de los glifos que quieren representar. Las dos reglas generales siguientes pueden ayudar a mejorar el rendimiento del texto al dibujar en Direct2D.
+La funcionalidad de representación de texto de Direct2D se ofrece en dos partes. La primera parte, expuesta como el [**método ID2D1RenderTarget::D rawText**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) e [**ID2D1RenderTarget::D rawTextLayout,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) permite que un autor de la llamada pase una cadena y parámetros de formato o un objeto de diseño de texto DWrite para varios formatos. Esto debe ser adecuado para la mayoría de los llamadores. La segunda manera de representar texto, expuesta como el método [**ID2D1RenderTarget::D rawGlyphRun,**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawglyphrun) proporciona rasterización para los clientes que ya conocen la posición de los glifos que desean representar. Las dos reglas generales siguientes pueden ayudar a mejorar el rendimiento del texto al dibujar en Direct2D.
 
 ### <a name="drawtextlayout-vs-drawtext"></a>DrawTextLayout frente a DrawText
 
-DrawText [**y**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) [**DrawTextLayout permiten**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) a una aplicación representar fácilmente el texto con el formato de DirectWrite [API.](/windows/desktop/DirectWrite/direct-write-portal) **DrawTextLayout** dibuja un objeto [**DWriteTextLayout**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextlayout) existente en [**RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)y **DrawText** construye un diseño DirectWrite para el autor de la llamada, basándose en los parámetros que se pasan. Si el mismo texto se tiene que representar varias veces, use **DrawTextLayout** en lugar de **DrawText**, ya que **DrawText** crea un diseño cada vez que se llama.
+DrawText [**y**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtext(constwchar_uint32_idwritetextformat_constd2d1_rect_f__id2d1brush_d2d1_draw_text_options_dwrite_measuring_mode)) [**DrawTextLayout permiten**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) que una aplicación represente fácilmente el texto con el formato de DirectWrite [API.](/windows/desktop/DirectWrite/direct-write-portal) **DrawTextLayout** dibuja un objeto [**DWriteTextLayout**](/windows/desktop/api/dwrite/nn-dwrite-idwritetextlayout) existente en [**RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)y **DrawText** construye un diseño DirectWrite para el autor de la llamada, basándose en los parámetros que se pasan. Si el mismo texto tiene que representarse varias veces, use **DrawTextLayout** en lugar de **DrawText**, porque **DrawText** crea un diseño cada vez que se llama a él.
 
 ### <a name="choosing-the-right-text-rendering-mode"></a>Elección del modo de representación de texto correcto
 
@@ -290,7 +290,7 @@ Establezca el modo de suavizado de contorno de texto en [**D2D1 \_ TEXT \_ ANTIA
 
 ### <a name="caching"></a>Almacenamiento en memoria caché
 
-Use la escena completa o el almacenamiento en caché de mapa de bits primitivo, como con el dibujo de otras primitivas.
+Use la escena completa o el almacenamiento en caché de mapa de bits primitivo como con el dibujo de otras primitivas.
 
 ## <a name="clipping-an-arbitrary-shape"></a>Recorte de una forma arbitraria
 
@@ -300,7 +300,7 @@ En la ilustración siguiente se muestra el resultado de aplicar un clip a una im
 
 Puede obtener este resultado mediante capas con una máscara de geometría o el [**método FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) con un pincel de opacidad.
 
-Este es un ejemplo en el que se usa una capa:
+Este es un ejemplo que usa una capa:
 
 
 ```C++
@@ -349,15 +349,15 @@ m_d2dContext->FillGeometry(
 
 En este ejemplo de código, cuando se llama al método PushLayer, no se pasa una capa creada por la aplicación. Direct2D crea una capa automáticamente. Direct2D puede administrar la asignación y destrucción de este recurso sin intervención de la aplicación. Esto permite a Direct2D reutilizar capas internamente y aplicar optimizaciones de administración de recursos.
 
-En Windows 8 se han realizado muchas optimizaciones para el uso de capas y se recomienda intentar usar las API de capa en lugar de [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) siempre que sea posible.
+En Windows 8 se han realizado muchas optimizaciones para el uso de capas y se recomienda intentar usar api de capa en lugar de [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry) siempre que sea posible.
 
 ### <a name="pushlayer-in-windows-8"></a>PushLayer en Windows 8
 
-La interfaz [**ID2D1DeviceContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) se deriva de la interfaz [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) y es clave para mostrar contenido de Direct2D en Windows 8. Para obtener más información sobre esta interfaz, vea Dispositivos y [contextos de dispositivo.](devices-and-device-contexts.md) Con la interfaz de contexto del dispositivo, puede omitir la llamada al método [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) y, a continuación, pasar NULL al [**método ID2D1DeviceContext::P ushLayer.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) Direct2D administra automáticamente el recurso de capa y puede compartir recursos entre capas y gráficos de efectos.
+La interfaz [**ID2D1DeviceContext**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1devicecontext) se deriva de la interfaz [**ID2D1RenderTarget**](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) y es clave para mostrar contenido de Direct2D en Windows 8. Para más información sobre esta interfaz, consulte Dispositivos y [contextos de dispositivo.](devices-and-device-contexts.md) Con la interfaz de contexto del dispositivo, puede omitir la llamada al método [**CreateLayer**](/windows/desktop/api/d2d1/nf-d2d1-id2d1rendertarget-createlayer(id2d1layer)) y, a continuación, pasar NULL al [**método ID2D1DeviceContext::P ushLayer.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-pushlayer(constd2d1_layer_parameters1_id2d1layer)) Direct2D administra automáticamente el recurso de capa y puede compartir recursos entre capas y gráficos de efectos.
 
-### <a name="axis-aligned-clips"></a>Clips alineados con ejes
+### <a name="axis-aligned-clips"></a>Clips alineados con el eje
 
-Si la región que se va a recortar está alineada con el eje de la superficie de dibujo, en lugar de arbitraria. Este caso es adecuado para usar un rectángulo de recorte en lugar de una capa. La ganancia de rendimiento es más para la geometría con alias que la geometría suavizada. Para obtener más información sobre los clips alineados en el eje, vea el [**tema PushAxisAlignedClip.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode))
+Si la región que se va a recortar está alineada con el eje de la superficie de dibujo, en lugar de arbitraria. Este caso es adecuado para usar un rectángulo de recorte en lugar de una capa. La ganancia de rendimiento es más para la geometría con alias que para la geometría con suavizado de contorno. Para obtener más información sobre los clips alineados con el eje, vea el [**tema PushAxisAlignedClip.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-pushaxisalignedclip(constd2d1_rect_f__d2d1_antialias_mode))
 
 ## <a name="dxgi-interoperability-avoid-frequent-switches"></a>Interoperabilidad de DXGI: evitar conmutadores frecuentes
 
@@ -367,16 +367,16 @@ Al representar en una superficie DXGI, Direct2D guarda el estado de los disposit
 
 ## <a name="know-your-pixel-format"></a>Conocer el formato de píxel
 
-Al crear un destino de representación, puede usar la estructura [**D2D1 \_ PIXEL \_ FORMAT**](/windows/desktop/api/dcommon/ns-dcommon-d2d1_pixel_format) para especificar el formato de píxel y el modo alfa que usa el destino de representación. Un canal alfa forma parte del formato de píxel que especifica el valor de cobertura o la información de opacidad. Si un destino de representación no usa el canal alfa, debe crearse mediante el modo alfa [**D2D1 \_ ALPHA MODE \_ \_ IGNORE.**](/windows/desktop/api/dcommon/ne-dcommon-d2d1_alpha_mode) Esto ahorra el tiempo dedicado a representar un canal alfa que no es necesario.
+Al crear un destino de representación, puede usar la estructura [**D2D1 \_ PIXEL \_ FORMAT**](/windows/desktop/api/dcommon/ns-dcommon-d2d1_pixel_format) para especificar el formato de píxel y el modo alfa que usa el destino de representación. Un canal alfa forma parte del formato de píxel que especifica el valor de cobertura o la información de opacidad. Si un destino de representación no usa el canal alfa, debe crearse mediante el modo ALFA IGNORE alpha [**de \_ \_ \_ D2D1.**](/windows/desktop/api/dcommon/ne-dcommon-d2d1_alpha_mode) Esto ahorra el tiempo que se dedica a representar un canal alfa que no es necesario.
 
-Para obtener más información sobre los formatos de píxel y los modos alfa, vea [Formatos de píxeles y modos alfa admitidos.](supported-pixel-formats-and-alpha-modes.md)
+Para obtener más información sobre los formatos de píxel y los modos alfa, vea [Formatos de píxeles admitidos y Modos alfa.](supported-pixel-formats-and-alpha-modes.md)
 
 ## <a name="scene-complexity"></a>Complejidad de la escena
 
 Al analizar las zonas de acceso más populares de rendimiento de una escena que se representará, saber si la escena está enlazada a velocidad de relleno o enlazada a vértices puede proporcionar información útil.
 
--   Tasa de relleno: la tasa de relleno hace referencia al número de píxeles que una tarjeta gráfica puede representar y escribir en la memoria de vídeo por segundo.
--   Vértice enlazado: una escena está enlazada a vértices cuando contiene una gran cantidad de geometría compleja.
+-   Tasa de relleno: la velocidad de relleno hace referencia al número de píxeles que una tarjeta gráfica puede representar y escribir en la memoria de vídeo por segundo.
+-   Límite de vértice: una escena está enlazada a un vértice cuando contiene una gran cantidad de geometría compleja.
 
 ### <a name="understand-scene-complexity"></a>Comprender la complejidad de la escena
 
@@ -384,52 +384,52 @@ Puede analizar la complejidad de la escena modificando el tamaño del destino de
 
 Cuando una escena está enlazada a la velocidad de relleno, reducir el tamaño del destino de representación puede mejorar el rendimiento. Esto se debe a que el número de píxeles que se van a representar se reducirá proporcionalmente con el tamaño del destino de representación.
 
-Cuando una escena está enlazada a vértices, reduzca la complejidad de la geometría. Pero recuerde que esto se hace a costa de la calidad de la imagen. Por lo tanto, se debe tomar una cuidadosa decisión de equilibrio entre la calidad deseada y el rendimiento necesario.
+Cuando una escena está enlazada a un vértice, reduzca la complejidad de la geometría. Pero recuerde que esto se hace a costa de la calidad de la imagen. Por lo tanto, se debe tomar una decisión de equilibrio cuidadosa entre la calidad deseada y el rendimiento necesario.
 
 ## <a name="improving-performance-for-direct2d-printing-apps"></a>Mejora del rendimiento de las aplicaciones de impresión de Direct2D
 
-[Direct2D ofrece](./direct2d-portal.md) compatibilidad con la impresión. Puede enviar los mismos comandos de dibujo de Direct2D (en forma de listas de comandos de Direct2D) al control de impresión de Direct2D para imprimir, si no sabe en qué dispositivos está dibujando o cómo se traduce el dibujo a impresión.
+[Direct2D ofrece](./direct2d-portal.md) compatibilidad con la impresión. Puede enviar los mismos comandos de dibujo de Direct2D (en forma de listas de comandos de Direct2D) al control de impresión de Direct2D para imprimir, si no sabe a qué dispositivos está dibujando o cómo se traduce el dibujo a la impresión.
 
-Puede ajustar aún más su uso del control de impresión [de Direct2D](./direct2d-portal.md) y los comandos de dibujo de Direct2D para ofrecer resultados de impresión con un mejor rendimiento.
+Puede ajustar aún más su uso del control de [impresión Direct2D](./direct2d-portal.md) y los comandos de dibujo de Direct2D para ofrecer resultados de impresión con un mejor rendimiento.
 
-El control de impresión de [Direct2D](./direct2d-portal.md) genera mensajes de depuración cuando ve un patrón de código direct2D que conduce a una menor calidad o rendimiento de impresión (por ejemplo, patrones de código enumerados más adelante en este tema) para recordar dónde puede evitar problemas de rendimiento. Para ver esos mensajes de depuración, debe habilitar la capa de depuración de [Direct2D](direct2ddebuglayer-portal.md) en el código. Consulte [Depurar mensajes para](direct2ddebuglayer-debugmessages.md) obtener instrucciones para habilitar la salida de mensajes de depuración.
+El control de impresión [de Direct2D](./direct2d-portal.md) genera mensajes de depuración cuando ve un patrón de código direct2D que conduce a una menor calidad o rendimiento de impresión (por ejemplo, patrones de código enumerados más adelante en este tema) para recordar dónde puede evitar problemas de rendimiento. Para ver esos mensajes de depuración, debe habilitar capa de depuración de [Direct2D](direct2ddebuglayer-portal.md) en el código. Consulte [Depurar mensajes para](direct2ddebuglayer-debugmessages.md) obtener instrucciones para habilitar la salida de mensajes de depuración.
 
 ### <a name="set-the-right-property-values-when-you-create-the-d2d-print-control"></a>Establecer los valores de propiedad correctos al crear el control de impresión D2D
 
-Hay tres propiedades que puede establecer al crear el control [de impresión de Direct2D.](./direct2d-portal.md) Dos de estas propiedades afectan al modo en que el control de impresión de Direct2D controla determinados comandos de Direct2D y, a su vez, afectan al rendimiento general.
+Hay tres propiedades que puede establecer al crear el control [de impresión de Direct2D.](./direct2d-portal.md) Dos de estas propiedades afectan al modo en que el control de impresión de Direct2D controla determinados comandos de Direct2D y, a su vez, afecta al rendimiento general.
 
--   Modo de subconjunto de fuentes: los subconjuntos de fuentes de los subconjuntos de control de impresión de [Direct2D](./direct2d-portal.md) que se usan en cada página antes de enviar la página que se va a imprimir. Este modo reduce el tamaño de los recursos de página necesarios para imprimir. En función del uso de fuentes en la página, puede elegir diferentes modos de subconjunto de fuentes para obtener el mejor rendimiento.
+-   Modo de subconjunto de fuentes: el control [de impresión Direct2D](./direct2d-portal.md) subconjuntos de recursos de fuente usados en cada página antes de enviar la página que se va a imprimir. Este modo reduce el tamaño de los recursos de página necesarios para imprimir. En función del uso de fuentes en la página, puede elegir diferentes modos de subconjunto de fuentes para obtener el mejor rendimiento.
     -   [**D2D1 \_ PRINT \_ FONT SUBSET MODE DEFAULT \_ \_ \_ proporciona**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_print_font_subset_mode) el mejor rendimiento de impresión en la mayoría de los casos. Cuando se establece en este modo, el control [de impresión de Direct2D](./direct2d-portal.md) usa una estrategia heurística para decidir cuándo se deben crear subconjuntos de fuentes.
-    -   Para trabajos de impresión cortos con 1 o 2 páginas, se recomienda [**D2D1 \_ PRINT FONT SUBSET MODE \_ \_ \_ \_ EACHPAGE**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_print_font_subset_mode) , donde el control de impresión [direct2D](./direct2d-portal.md) inserta los recursos de fuente en cada página y, a continuación, descarta ese subconjunto de fuentes después de que se imprima la página. Esta opción se asegura de que cada página se pueda imprimir inmediatamente después de generarse, pero aumenta ligeramente el tamaño de los recursos de página necesarios para imprimir (con normalmente grandes subconjuntos de fuentes).
-    -   Para trabajos de impresión con muchas páginas de texto y tamaños de fuente pequeños (como 100 páginas de texto que usa una sola fuente), se recomienda [**D2D1 \_ PRINT FONT SUBSET MODE \_ \_ \_ \_ NONE**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_print_font_subset_mode), donde el control de impresión de [Direct2D](./direct2d-portal.md) no crea un subconjunto de recursos de fuente; en su lugar, envía los recursos de fuente originales junto con la página que usa primero la fuente y vuelve a usar los recursos de fuente para páginas posteriores sin reenviarlos.
--   PPP de rasterización: cuando el control de impresión de [Direct2D](./direct2d-portal.md) necesita rasterizar comandos de Direct2D durante la conversión de Direct2D-XPS, usa este PPP para la rasterización. En otras palabras, si la página no tiene ningún contenido rasterizado, el establecimiento de cualquier PPP no cambiará el rendimiento y la calidad. En función del uso de rasterización en la página, puede elegir diferentes DPI de rasterización para obtener el mejor equilibrio entre fidelidad y rendimiento.
-    -   150 es el valor predeterminado si no se especifica un valor al crear el control de impresión [de Direct2D,](./direct2d-portal.md) que es el mejor equilibrio entre la calidad de impresión y el rendimiento de impresión en la mayoría de los casos.
-    -   Los valores de PPP más altos suelen dar lugar a una mejor calidad de impresión (como se conserva en más detalles), pero un rendimiento menor debido a los mapas de bits más grandes que genera. No se recomienda ningún valor de PPP mayor que 300, ya que eso no introducirá información adicional que puedan obtener los ojos humanos visualmente.
+    -   Para trabajos de impresión cortos con 1 o 2 páginas, se recomienda [**D2D1 \_ PRINT FONT SUBSET MODE \_ \_ \_ \_ EACHPAGE**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_print_font_subset_mode) , donde el control de impresión [Direct2D](./direct2d-portal.md) crea subconjuntos e inserta recursos de fuente en cada página y, a continuación, descarta ese subconjunto de fuentes después de que se imprima la página. Esta opción se asegura de que cada página se pueda imprimir inmediatamente después de generarse, pero aumenta ligeramente el tamaño de los recursos de página necesarios para la impresión (con normalmente grandes subconjuntos de fuentes).
+    -   Para trabajos de impresión con muchas páginas de texto y tamaños de fuente pequeños (como 100 páginas de texto que usan una sola fuente), se recomienda [**D2D1 \_ PRINT FONT SUBSET MODE \_ \_ \_ \_ NONE**](/windows/desktop/api/d2d1_1/ne-d2d1_1-d2d1_print_font_subset_mode), donde el control de impresión [Direct2D](./direct2d-portal.md) no crea subconjuntos de recursos de fuente; en su lugar, envía los recursos de fuente originales junto con la página que usa primero la fuente y vuelve a usar los recursos de fuente para páginas posteriores sin volver a enviarlos.
+-   PPP de rasterización: cuando el control [de impresión de Direct2D](./direct2d-portal.md) necesita rasterizar comandos de Direct2D durante la conversión de Direct2D-XPS, usa este PPP para la rasterización. En otras palabras, si la página no tiene ningún contenido rasterizado, el establecimiento de un valor de PPP no cambiará el rendimiento y la calidad. En función del uso de rasterización en la página, puede elegir diferentes DPI de rasterización para el mejor equilibrio entre fidelidad y rendimiento.
+    -   150 es el valor predeterminado si no se especifica un valor al crear el control [de impresión Direct2D,](./direct2d-portal.md) que es el mejor equilibrio entre la calidad de impresión y el rendimiento de impresión en la mayoría de los casos.
+    -   Los valores de PPP más altos suelen dar lugar a una mejor calidad de impresión (como se conserva en más detalles), pero un rendimiento inferior debido a los mapas de bits más grandes que genera. No se recomienda ningún valor de PPP mayor que 300, ya que no introducirá información adicional que puedan obtener los ojos humanos.
     -   Un valor de PPP inferior puede significar un mejor rendimiento, pero también puede producir una calidad inferior.
 
 ### <a name="avoid-using-certain-direct2d-drawing-patterns"></a>Evitar el uso de determinados patrones de dibujo de Direct2D
 
-Hay diferencias entre lo [que Direct2D](./direct2d-portal.md) puede representar visualmente y lo que el subsistema de impresión puede mantener y transportar a lo largo de toda la canalización de impresión. El control de impresión de Direct2D une esas brechas mediante la aproximación o rasterización de primitivas de Direct2D que el subsistema de impresión no admite de forma nativa. Esta aproximación suele tener como resultado una menor fidelidad de impresión, un rendimiento de impresión inferior o ambos. Por lo tanto, aunque un cliente puede usar los mismos patrones de dibujo para la representación de pantalla e impresión, no es ideal en todos los casos. Es mejor no usar tales primitivos y patrones de Direct2D tanto como sea posible para la ruta de impresión, o bien para hacer que sea propietario de la rasterización, donde tenga control total de la calidad y el tamaño de las imágenes rasterizadas.
+Hay diferencias entre lo [que Direct2D](./direct2d-portal.md) puede representar visualmente y lo que el subsistema de impresión puede mantener y transportar a lo largo de toda la canalización de impresión. El control de impresión de Direct2D une esas brechas mediante la aproximación o la rasterización de primitivas de Direct2D que el subsistema de impresión no admite de forma nativa. Esta aproximación suele tener como resultado una menor fidelidad de impresión, un menor rendimiento de impresión o ambos. Por lo tanto, aunque un cliente puede usar los mismos patrones de dibujo para la representación de pantalla e impresión, no es ideal en todos los casos. Es mejor no usar estos primitivos y patrones de Direct2D tanto como sea posible para la ruta de impresión, o bien hacer su propia rasterización donde tenga control total de la calidad y el tamaño de las imágenes rasterizadas.
 
-Esta es una lista de casos en los que el rendimiento y la calidad de impresión no serán ideales y es posible que quiera considerar la posibilidad de cambiar la ruta de acceso del código para obtener un rendimiento de impresión óptimo.
+Esta es una lista de casos en los que el rendimiento y la calidad de impresión no serán ideales y es posible que quiera considerar la posibilidad de modificar la ruta de acceso del código para obtener un rendimiento de impresión óptimo.
 
--   Evite usar el modo de mezcla primitivo distinto de [**D2D1 \_ PRIMITIVE \_ BLEND \_ SOURCEOVER**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_primitive_blend).
+-   Evite usar el modo de combinación primitivo distinto de [**D2D1 \_ PRIMITIVE \_ BLEND \_ SOURCEOVER**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_primitive_blend).
 -   Evite usar modos de composición al dibujar una imagen que no sea [**D2D1 \_ COMPOSITE MODE SOURCE \_ \_ \_ OVER**](/windows/desktop/api/D2d1_1/ne-d2d1_1-d2d1_composite_mode) y **D2D1 \_ COMPOSITE MODE DESTINATION \_ \_ \_ OVER**.
 -   Evite dibujar un metarchivo GDI.
--   Evite insertar un recurso de capa que copie el fondo de origen (llamando a [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1commandsink-pushlayer) pasando [**D2D1 \_ LAYER \_ OPTIONS1 \_ INITIALIZE FROM \_ \_ BACKGROUND**](/windows/desktop/api/d2d1_1/ns-d2d1_1-d2d1_layer_parameters1) al **struct D2D1 \_ LAYER \_ PARAMETERS1).**
--   Evite crear un pincel de mapa de bits o un pincel de imagen con D2D1 \_ EXTEND \_ MODE \_ CLAMP. Se recomienda usar D2D1 EXTEND MODE MIRROR si no le importan los píxeles fuera de la imagen enlazada (como, se sabe que la imagen asociada al pincel es mayor que la región de destino \_ \_ \_ rellenada).
+-   Evite insertar un recurso de capa que copie el fondo de origen (llamando a [**PushLayer**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1commandsink-pushlayer) pasando [**D2D1 \_ LAYER \_ OPTIONS1 \_ INITIALIZE FROM \_ \_ BACKGROUND**](/windows/desktop/api/d2d1_1/ns-d2d1_1-d2d1_layer_parameters1) a la estructura **D2D1 \_ LAYER \_ PARAMETERS1).**
+-   Evite crear pincel de mapa de bits o pincel de imagen con D2D1 \_ EXTEND \_ MODE \_ CLAMP. Se recomienda usar D2D1 EXTEND MODE MIRROR si no le importan los píxeles fuera de la imagen enlazada (como, se sabe que la imagen asociada al pincel es mayor que la región de destino \_ \_ \_ rellenada).
 -   Evite dibujar mapas de bits con [transformaciones de perspectiva.](3d-perspective-transform.md)
 
 ### <a name="draw-text-in-a-direct-and-plain-way"></a>Dibujar texto de forma directa y sin formato
 
-Direct2D tiene varias optimizaciones al representar textos para mostrar para mejorar el rendimiento o una mejor calidad visual. Pero no todas las optimizaciones mejoran el rendimiento y la calidad de impresión, ya que la impresión en papel suele tener un valor de PPP mucho mayor y la impresión no necesita adaptarse a escenarios como la animación. Por lo tanto, se recomienda dibujar directamente el texto o glifos originales y evitar cualquiera de las siguientes optimizaciones al crear la lista de comandos para imprimir.
+Direct2D tiene varias optimizaciones al representar textos para mostrar para mejorar el rendimiento o una mejor calidad visual. Pero no todas las optimizaciones mejoran el rendimiento y la calidad de impresión, ya que la impresión en papel suele tener un ppp mucho mayor y la impresión no necesita adaptarse a escenarios como la animación. Por lo tanto, se recomienda dibujar el texto original o glifos directamente y evitar cualquiera de las siguientes optimizaciones al crear la lista de comandos para imprimir.
 
 -   Evite dibujar texto con [**el método FillOpacityMask.**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1commandsink-fillopacitymask)
 -   Evite dibujar texto en modo con alias.
 
 ### <a name="draw-the-original-bitmaps-when-possible"></a>Dibujar los mapas de bits originales cuando sea posible
 
-Si el mapa de bits de destino es JPEG, PNG, TIFF o JPEG-XR, puede crear un mapa de bits de WIC desde un archivo de disco o desde una secuencia en memoria, crear un mapa de bits de [Direct2D](./direct2d-portal.md) a partir de ese mapa de bits de WIC mediante [**ID2D1DeviceContext::CreateBitmapFromWicBitmap**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromwicbitmap(iwicbitmapsource_constd2d1_bitmap_properties1_id2d1bitmap1))y, por último, pasar directamente ese mapa de bits de Direct2D al control de impresión de Direct2D sin más manipulación. Al hacerlo, el control de impresión de Direct2D puede reutilizar la secuencia de mapa de bits, lo que normalmente conduce a un mejor rendimiento de impresión (omitiendo la codificación y la codificación de mapas de bits redundantes) y una mejor calidad de impresión (cuando se conservarán los metadatos, como los perfiles de color, en el mapa de bits).
+Si el mapa de bits de destino es JPEG, PNG, TIFF o JPEG-XR, puede crear un mapa de bits wic desde un archivo de disco o desde una secuencia en memoria, crear un mapa de bits de [Direct2D](./direct2d-portal.md) a partir de ese mapa de bits de WIC mediante [**ID2D1DeviceContext::CreateBitmapFromWicBitmap**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1devicecontext-createbitmapfromwicbitmap(iwicbitmapsource_constd2d1_bitmap_properties1_id2d1bitmap1))y, por último, pasar directamente ese mapa de bits de Direct2D al control de impresión de Direct2D sin más manipulación. Al hacerlo, el control de impresión de Direct2D puede reutilizar la secuencia de mapa de bits, lo que normalmente conduce a un mejor rendimiento de impresión (omitiendo la codificación y la codificación de mapas de bits redundantes) y una mejor calidad de impresión (cuando se conservarán los metadatos, como los perfiles de color, en el mapa de bits).
 
 Dibujar el mapa de bits original proporciona la siguiente ventaja para las aplicaciones.
 

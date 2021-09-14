@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Hh564749(v=EXCHG.10)
 ms:contentKeyID: 39511660
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: abb9eebf8cfff67a50519f7aa7dcab726387af17a859d734cdf73afb88a3cb8e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 83311ab33e2f5ee3a6a7d48b0fff1a2a52a66243
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118980065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965704"
 ---
 # <a name="jet_instance-operators"></a>JET_INSTANCE operadores
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_INSTANCE](./jet-instance-structure.md) muestra los miembros siguientes.
+El [JET_INSTANCE](./jet-instance-structure.md) expone los miembros siguientes.
 
 ## <a name="operators"></a>Operadores
 

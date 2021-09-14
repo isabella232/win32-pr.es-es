@@ -4,12 +4,12 @@ ms.assetid: 2e3124e3-32d0-4eb6-9c1d-91b625018ac4
 title: Establecimiento del registro de errores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5d28c337d146927ee624dad6f350d163e4bde3756acaf6fb0418821cc7ac5c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac96fb90570408ca41be06656f7cf1704e9f48dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119904205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061593"
 ---
 # <a name="setting-the-error-log"></a>Establecimiento del registro de errores
 

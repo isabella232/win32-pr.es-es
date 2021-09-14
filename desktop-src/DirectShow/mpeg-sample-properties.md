@@ -4,12 +4,12 @@ ms.assetid: 339aab84-e5ad-4071-8b67-2b04cb17e450
 title: Propiedades de ejemplo MPEG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c78872b41c579f6af594280b064bfbefc65ef13e8b9d4abf8c21ba9b19613bcf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8c20df4b9285a77d00bd98bc6f21558f0d6b3c60
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120075795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886660"
 ---
 # <a name="mpeg-sample-properties"></a>Propiedades de ejemplo MPEG
 

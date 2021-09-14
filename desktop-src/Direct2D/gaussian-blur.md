@@ -6,12 +6,12 @@ keywords:
 - Desenfoque gaussiano
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b759ed0f5f70c4fc11ad902c7a45db3b3059847ce6895d25c3dbb9c9eee8330
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cfbe8b309a498315e389be45d382eca3ee1b98ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119967094"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127163265"
 ---
 # <a name="gaussian-blur-effect"></a>Efecto de desenfoque gaussiano
 
@@ -68,7 +68,7 @@ m_d2dContext->EndDraw();
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | StandardDeviation<br/> D2D1 \_ GAUSSIANBLUR \_ PROP \_ STANDARD \_ DEVIATION<br/> | Cantidad de desenfoque que se va a aplicar a la imagen. Puede calcular el radio de desenfoque del kernel multiplicando la desviación estándar por 3. Las unidades de la desviación estándar y el radio de desenfoque son DIP. Un valor de cero DIP deshabilita este efecto por completo. El tipo es FLOAT.<br/> El valor predeterminado es 3,0f.<br/> |
 | Optimization<br/> OPTIMIZACIÓN DE PROPIEDADES DE D2D1 \_ GAUSSIANBLUR \_ \_<br/>             | Modo de optimización. Consulte [Modos de optimización](#optimization-modes) para obtener más información. El tipo es D2D1 \_ GAUSSIANBLUR \_ OPTIMIZATION.<br/> El valor predeterminado es D2D1 \_ GAUSSIANBLUR \_ OPTIMIZATION \_ BALANCED.<br/>                                                                                                            |
-| BorderMode<br/> D2D1 \_ MODO DE BORDE DE PROP DE GAUSSIANBLUR \_ \_ \_<br/>               | Modo utilizado para calcular el borde de la imagen, suave o duro. Consulte [Modos de borde](#border-modes) para obtener más información. <br/> El tipo es D2D1 \_ GAUSSIANBLUR \_ BORDER \_ MODE.<br/> El valor predeterminado es D2D1 \_ BORDER \_ MODE \_ SOFT.<br/>                                                                                   |
+| BorderMode<br/> D2D1 \_ MODO DE BORDE DE PROP DE GAUSSIANBLUR \_ \_ \_<br/>               | Modo que se usa para calcular el borde de la imagen, de forma flexible o dura. Consulte [Modos de borde](#border-modes) para obtener más información. <br/> El tipo es D2D1 \_ GAUSSIANBLUR \_ BORDER \_ MODE.<br/> El valor predeterminado es D2D1 \_ BORDER \_ MODE \_ SOFT.<br/>                                                                                   |
 
 
 
@@ -103,7 +103,7 @@ m_d2dContext->EndDraw();
 
 ## <a name="output-bitmap"></a>Mapa de bits de salida
 
-La salida de este efecto puede ser mayor que el mapa de bits de entrada en función del radio de desenfoque y el modo de borde. Si el modo de borde se establece en D2D1 BORDER MODE SOFT, el tamaño del mapa de bits de salida aumenta según el tamaño del kernel de desenfoque, representado \_ \_ en \_ píxeles. Esta tabla proporciona una ecuación que puede usar para calcular el mapa de bits de salida.
+La salida de este efecto puede ser mayor que el mapa de bits de entrada en función del radio de desenfoque y el modo de borde. Si el modo de borde se establece en D2D1 BORDER MODE SOFT, el tamaño del mapa de bits de salida aumenta por el tamaño del kernel de desenfoque, representado \_ \_ en \_ píxeles. Esta tabla proporciona una ecuación que puede usar para calcular el mapa de bits de salida.
 
 `Output bitmap growth (X and Y) = StandardDeviation  (DIPs)*6*((User DPI)/96)`
 
@@ -117,7 +117,7 @@ Por lo tanto, si el tamaño de la imagen aumenta en 10 píxeles en cada direcci�
 |--------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
 | Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
-| Header                   | d2d1effects.h                                                                      |
+| Encabezado                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 

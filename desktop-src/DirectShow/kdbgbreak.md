@@ -1,7 +1,7 @@
 ---
 description: Produce una excepción de punto de interrupción y registra la cadena especificada mediante la macro DbgLog. Se omite en las compilaciones comerciales.
 ms.assetid: 475810db-692b-4727-9ef1-ece74e9618d0
-title: Macro KDbgBreak (Wxdebug. h)
+title: Macro KDbgBreak (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Wxdebug.h
 ms.openlocfilehash: 9631dc8d956652137810b25ae5923cc1c6927bee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690019"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061046"
 ---
-# <a name="kdbgbreak-macro"></a>KDbgBreak (macro)
+# <a name="kdbgbreak-macro"></a>Macro KDbgBreak
 
-Produce una excepción de punto de interrupción y registra la cadena especificada mediante la macro [**DbgLog**](dbglog.md) . Se omite en las compilaciones comerciales.
+Produce una excepción de punto de interrupción y registra la cadena especificada mediante la macro [**DbgLog.**](dbglog.md) Se omite en las compilaciones comerciales.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,11 +48,11 @@ Cadena de texto.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Esta macro no devuelve ningún valor.
+Esta macro no devuelve un valor.
 
 ## <a name="remarks"></a>Observaciones
 
-A diferencia de la macro [**DbgBreak**](dbgbreak.md) , esta macro no muestra un cuadro de mensaje que pide al usuario. En las compilaciones de depuración, provoca automáticamente que se produzca una excepción de punto de interrupción.
+A diferencia de la macro [**DbgBreak,**](dbgbreak.md) esta macro no muestra un cuadro de mensaje que solicita al usuario. En las compilaciones de depuración, hace que se produzca automáticamente una excepción de punto de interrupción.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,15 +60,15 @@ A diferencia de la macro [**DbgBreak**](dbgbreak.md) , esta macro no muestra un 
 
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| Encabezado<br/> | <dl> <dt>Wxdebug. h (incluir streams. h)</dt> </dl> |
+| Encabezado<br/> | <dl> <dt>Wxdebug.h (incluir Secuencias.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Macros Assert y Breakpoint](assert-and-breakpoint-macros.md)
+[Aserción y macros de punto de interrupción](assert-and-breakpoint-macros.md)
 </dt> </dl>
 
  

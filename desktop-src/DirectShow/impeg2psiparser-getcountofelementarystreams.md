@@ -1,7 +1,7 @@
 ---
-description: 'Método IMpeg2PsiParser::GetCountOfElementaryStreams: la implementación de este método se proporciona como código de ejemplo con el SDK DirectShow. No se admite DirectShow API.'
+description: 'Método IMpeg2PsiParser::GetCountOfElementaryStreams: la implementación de este método se proporciona como código de ejemplo con el SDK DirectShow. No es una API de DirectShow compatible.'
 ms.assetid: 19ef96a8-3d5b-4da1-8cff-d6a271ad4915
-title: Método IMpeg2PsiParser::GetCountOfElementaryStreams
+title: IMpeg2PsiParser::GetCountOfElementaryStreams (método)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: e241697884a4b665c160dc9991e4cb7f02c76f1ba32bc7a0656515faf1117a58
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fc81c0a66751751a73a3895fd31fe8651aee8caf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119767385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126886785"
 ---
-# <a name="impeg2psiparsergetcountofelementarystreams-method"></a>Método IMpeg2PsiParser::GetCountOfElementaryStreams
+# <a name="impeg2psiparsergetcountofelementarystreams-method"></a>IMpeg2PsiParser::GetCountOfElementaryStreams (método)
 
-La implementación de este método se proporciona como código de ejemplo con DirectShow SDK. No se admite DirectShow API.
+La implementación de este método se proporciona como código de ejemplo con DirectShow SDK. No es una API de DirectShow compatible.
 
 El `GetCountOfElementaryStreams` método recupera el número de secuencias elementales en un programa especificado.
 
@@ -69,11 +69,11 @@ El método devuelve un **valor HRESULT.** Los valores posibles incluyen, entre o
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use el **método GetRecordProgramNumber** para obtener el número de programa.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

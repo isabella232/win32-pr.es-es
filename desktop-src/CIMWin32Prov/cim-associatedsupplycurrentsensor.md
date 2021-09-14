@@ -17,19 +17,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1b20b519c0ec89243aefd9c87aba235548f11f93984a45702f7670a27bf073cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 70a88d87c68b36db5bd44413e3c68940db44f29b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119080939"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061576"
 ---
 # <a name="cim_associatedsupplycurrentsensor-class"></a>Cim \_ AssociatedSupplyCurrentSensor (clase)
 
 La **clase \_ AssociatedSupplyCurrentSensor de CIM** asocia una fuente de alimentación a un sensor actual (amperage) que supervisa su frecuencia de entrada.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,7 +47,7 @@ class CIM_AssociatedSupplyCurrentSensor : CIM_AssociatedSensor
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ AssociatedSupplyCurrentSensor de CIM** tiene estos tipos de miembros:
 
@@ -71,7 +71,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedente")
 </dt> </dl>
 
-Cim [**\_ CurrentSensor que**](cim-currentsensor.md) describe el sensor actual.
+CurrentSensor [**\_ de CIM**](cim-currentsensor.md) que describe el sensor actual.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Tipo de datos: **CIM \_ PowerSupply**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependiente")
 </dt> </dl>
 
 Cim [**\_ PowerSupply**](cim-powersupply.md) que describe la fuente de alimentación asociada al sensor actual.
@@ -145,19 +145,19 @@ Intervalo 1 y 2
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase \_ AssociatedSupplyCurrentSensor de CIM** se deriva de CIM [**\_ AssociatedSensor.**](cim-associatedsensor.md)
+La **clase \_ AssociatedSupplyCurrentSensor de CIM** se deriva de CIM [**\_ AssociatedSensor**](cim-associatedsensor.md).
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -167,7 +167,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

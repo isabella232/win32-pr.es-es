@@ -17,18 +17,18 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 56c7a2781a690be5e2a1228140cec305da22469a5e0d43a1158c5aacd9307750
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ba3f8ac94ec882ee1df96da51d93d2c24fde9b3f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119917465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061443"
 ---
 # <a name="win32_systemoperatingsystem-class"></a>Clase \_ SystemOperatingSystem de Win32
 
-La **clase WMI de asociación \_ SystemOperatingSystem** [de](../wmisdk/retrieving-a-class.md) Win32 relaciona un sistema informático y su sistema operativo.
+La clase WMI **de asociación \_ SystemOperatingSystem** [de](../wmisdk/retrieving-a-class.md) Win32 relaciona un sistema informático y su sistema operativo.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
+La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ class Win32_SystemOperatingSystem : CIM_InstalledOS
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SystemOperatingSystem de Win32** tiene estos tipos de miembros:
 
@@ -66,7 +66,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**key**](../wmisdk/key-qualifier.md), [**Override**](../wmisdk/standard-qualifiers.md) ("GroupComponent"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
 </dt> </dl>
 
-Un [**equipo Win32 \_ ComputerSystem**](win32-computersystemprocessor.md) que describe las propiedades del sistema informático en el que está instalado el sistema operativo.
+Un [**sistema de equipos \_ Win32**](win32-computersystemprocessor.md) que describe las propiedades del sistema informático en el que está instalado el sistema operativo.
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ Esta propiedad se hereda de [**CIM \_ InstalledOS.**](cim-installedos.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ SystemOperatingSystem de Win32** se deriva de [**CIM \_ InstalledOS.**](cim-installedos.md)
 
@@ -122,7 +122,7 @@ La **clase \_ SystemOperatingSystem de Win32** se deriva de [**CIM \_ InstalledO
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

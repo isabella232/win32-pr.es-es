@@ -4,25 +4,25 @@ description: La información sobre herramientas de seguimiento permanece visible
 ms.assetid: 4BE1F9E6-92B6-4CA7-B89A-F2162BC86366
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a9b2aaf7475f6a4823e0628ab7010ae32bb8424ef0e90e52396ee20cbc7c7e35
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a614fef7ed69cd8c2763f9370ce0011d51eb0c82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120085604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061912"
 ---
 # <a name="how-to-implement-tracking-tooltips"></a>Cómo implementar información sobre herramientas de seguimiento
 
 La información sobre herramientas de seguimiento permanece visible hasta que la aplicación las cierra explícitamente y puede cambiar la posición en la pantalla dinámicamente. Son compatibles con la [versión 4.70](common-control-versions.md) y posteriores de los controles comunes.
 
-Para crear una información sobre herramientas de seguimiento, incluya la marca TTF TRACK en el \_ **miembro uFlags** de la [**estructura TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) al enviar el [**mensaje \_ ADDTOOL de TTM.**](ttm-addtool.md)
+Para crear una información sobre herramientas de seguimiento, incluya la marca TTF TRACK en el miembro uFlags de la estructura TOOLINFO al enviar el mensaje \_  [**\_ ADDTOOL de TTM.**](ttm-addtool.md) [](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa)
 
-La aplicación debe activar (mostrar) y desactivar (ocultar) manualmente una información sobre herramientas de seguimiento mediante el envío de un [**mensaje \_ TRACKACTIVATE de TTM.**](ttm-trackactivate.md) Mientras la información sobre herramientas de seguimiento está activa, la aplicación debe especificar la ubicación de la información sobre herramientas mediante el envío de mensajes [**\_ TRACKPOSITION de TTM**](ttm-trackposition.md) al control de información sobre herramientas. Dado que la aplicación controla tareas como colocar la información sobre herramientas, la información sobre herramientas de seguimiento no usa la marca **\_ SUBCLASS** de TTF ni el mensaje [**\_ RELAYEVENT de TTM.**](ttm-relayevent.md)
+La aplicación debe activar (mostrar) y desactivar (ocultar) manualmente una información sobre herramientas de seguimiento mediante el envío de un mensaje [**\_ TRACKACTIVATE de TTM.**](ttm-trackactivate.md) Mientras la información sobre herramientas de seguimiento está activa, la aplicación debe especificar la ubicación de la información sobre herramientas mediante el envío de mensajes [**DE SEGUIMIENTO DE LA MARCA DE DOMINIO AL \_**](ttm-trackposition.md) control de información sobre herramientas. Dado que la aplicación controla tareas como la posición de la información sobre herramientas, la información sobre herramientas de seguimiento no usa la marca **\_ TTF SUBCLASS** ni el [**mensaje DE \_ RETRANSMISIÓN DE TTM.**](ttm-relayevent.md)
 
-El [**mensaje \_ TRACKPOSITION de TTM**](ttm-trackposition.md) hace que el control de información sobre herramientas muestre la ventana con uno de los dos estilos de selección de ubicación:
+El [**mensaje TTM \_ TRACKPOSITION**](ttm-trackposition.md) hace que el control de información sobre herramientas muestre la ventana mediante uno de los dos estilos de selección de ubicación:
 
--   De forma predeterminada, la información sobre herramientas se muestra junto a la herramienta correspondiente en una posición que elija el control. La ubicación elegida es relativa a las coordenadas que se proporcionan mediante este mensaje.
--   Si incluye el valor **ABSOLUTO de TTF \_** en el miembro de la estructura [**TOOLINFO,**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) la información sobre herramientas se muestra en la ubicación de píxeles especificada en el mensaje. En este caso, el control no intenta cambiar la ubicación de la ventana de información sobre herramientas de las coordenadas que proporcione.
+-   De forma predeterminada, la información sobre herramientas se muestra junto a la herramienta correspondiente en una posición que el control elige. La ubicación elegida es relativa a las coordenadas que se proporcionan mediante este mensaje.
+-   Si incluye el valor **TTF \_ ABSOLUTE** en el miembro de la estructura [**TOOLINFO,**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) la información sobre herramientas se muestra en la ubicación de píxeles especificada en el mensaje. En este caso, el control no intenta cambiar la ubicación de la ventana de información sobre herramientas de las coordenadas que proporcione.
 
 ## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
@@ -91,7 +91,7 @@ Cuando el puntero del mouse está dentro del área de cliente, la información s
 
 ![captura de pantalla de un cuadro de diálogo; una información sobre herramientas muestra las coordenadas x e y del puntero del mouse](images/tt-tracking.png)
 
-El código de ejemplo siguiente es del procedimiento de ventana de un cuadro de diálogo que muestra la información sobre herramientas de seguimiento creada en el ejemplo anterior. La variable booleana global *g \_ TrackingMouse* se usa para determinar si es necesario reactivar la información sobre herramientas y restablecer el seguimiento del mouse para que la aplicación se notifique cuando el puntero del mouse salga del área de cliente del cuadro de diálogo.
+El código de ejemplo siguiente es del procedimiento de ventana de un cuadro de diálogo que muestra la información sobre herramientas de seguimiento creada en el ejemplo anterior. La variable booleana global *g \_ TrackingMouse* se usa para determinar si es necesario reactivar la información sobre herramientas y restablecer el seguimiento del mouse para que se notifique a la aplicación cuando el puntero del mouse sale del área cliente del cuadro de diálogo.
 
 
 ```
@@ -162,7 +162,7 @@ case WM_MOUSEMOVE:
 
 <dl> <dt>
 
-[Uso de controles de información sobre herramientas](using-tooltip-contro.md)
+[Usar controles de información sobre herramientas](using-tooltip-contro.md)
 </dt> </dl>
 
  

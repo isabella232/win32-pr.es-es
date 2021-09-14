@@ -5,13 +5,13 @@ title: AM_PROPERTY_COPY_ANALOG_COMPONENT propiedad (Dvdmedia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 6448bfbcc07be6ca37189c15c7c605887e6d22b3
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910313"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162369"
 ---
-# <a name="am_property_copy_analog_component-property"></a>Propiedad COPY \_ \_ ANALOG COMPONENT \_ \_ de AM PROPERTY
+# <a name="am_property_copy_analog_component-property"></a>Propiedad COPY ANALOG COMPONENT de LA \_ \_ PROPIEDAD \_ \_ AM
 
 Consulta si la salida del vídeo es vídeo de componentes análogos de definición estándar.
 
@@ -19,7 +19,7 @@ Consulta si la salida del vídeo es vídeo de componentes análogos de definici�
 
 | Etiqueta | Value |
 |-------------------|---------------------------------------|
-| GUID del conjunto de propiedades | CopyProt de \_ AM KSPROPSETID \_             |
+| GUID del conjunto de propiedades | CopyProt de AM \_ KSPROPSETID \_             |
 | Id. de propiedad       | COMPONENTE ANÁLOGO \_ DE COPIA DE PROPIEDAD \_ \_ \_ AM |
 | Tipo de datos         | **ULONG**                             |
 
@@ -27,7 +27,7 @@ Consulta si la salida del vídeo es vídeo de componentes análogos de definici�
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad es de solo lectura.
 

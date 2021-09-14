@@ -4,12 +4,12 @@ ms.assetid: cfc6ef62-c791-4714-93cb-4df682543c30
 title: Constantes de efecto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f47b9c469172b9ae41f819cea165709392c3e137def977eca3bfc3f204e447d5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c08f0520541c80b64fdfc9837130ed10fcf42517
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118803079"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060668"
 ---
 # <a name="effect-constants"></a>Constantes de efecto
 

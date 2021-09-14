@@ -15,11 +15,11 @@ api_location:
 - d3dx9.lib
 - d3dx9.dll
 ms.openlocfilehash: 0b109f71052657a5d9c32d9af5cb38b2cbcf1f0e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118113"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060721"
 ---
 # <a name="d3dxmatrixrotationz-function-d3dx9mathh"></a>Función D3DXMatrixRotationZ (D3dx9math.h)
 
@@ -65,7 +65,7 @@ Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
 Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) girada alrededor del eje Z.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXMatrixRotationZ** se puede usar como parámetro para otra función.
 

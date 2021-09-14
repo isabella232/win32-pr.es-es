@@ -1,8 +1,8 @@
 ---
-description: Win32 \_ SystemSlot &\# 32; La clase WMI representa puntos de conexión físicos, incluidos puertos, ranuras de la placa base y periféricos, y puntos de conexión de propiedad.
+description: Win32 \_ SystemSlot &\# 32; La clase WMI representa puntos de conexión físicos, incluidos puertos, ranuras de placa base y periféricos, y puntos de conexión propietarios.
 ms.assetid: 0bdce597-dcbe-4593-b0d6-68c3bfecd0ee
 ms.tgt_platform: multiple
-title: Win32_SystemSlot (clase)
+title: Win32_SystemSlot clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -50,15 +50,15 @@ api_type:
 api_location:
 - CIMWin32.dll
 ms.openlocfilehash: 1e2913aa2d8850aae4fdad8fbca71f216cd848f2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153484"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061430"
 ---
-# <a name="win32_systemslot-class"></a>\_Clase Win32 SystemSlot
+# <a name="win32_systemslot-class"></a>Clase SystemSlot de Win32 \_
 
-La [clase WMI](../wmisdk/retrieving-a-class.md) **\_ SystemSlot de Win32** representa los puntos de conexión físicos, incluidos los puertos, los periféricos y las ranuras de la placa base, y los puntos de conexión de propiedad.
+La clase [WMI](../wmisdk/retrieving-a-class.md) **\_ SystemSlot de Win32** representa puntos de conexión físicos, incluidos puertos, ranuras de placa base y periféricos, y puntos de conexión propietarios.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -106,7 +106,7 @@ class Win32_SystemSlot : CIM_Slot
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ SystemSlot de Win32** tiene estos tipos de miembros:
 
@@ -121,20 +121,20 @@ La **clase \_ SystemSlot de Win32** tiene estas propiedades.
 **BusNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("número de bus de tipo de SMBIOS \| 9 \| ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("SMBIOS \| Type 9 Bus \| Number")
 </dt> </dl>
 
-Número de bus de SMBIOS.
+Número de bus SMBIOS.
 
-Este valor procede del miembro del **número de bus** de la estructura **ranuras del sistema** en la información de SMBIOS.
+Este valor procede del miembro **Número de** bus de la estructura **Ranuras del** sistema en la información de SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 10 y Windows Server 2016.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 10 y Windows Server 2016.
 
 </dd> <dt>
 
@@ -147,12 +147,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**displayName**](../wmisdk/standard-qualifiers.md) ("Caption")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Caption")
 </dt> </dl>
 
-Breve descripción de un objeto: una cadena de una línea.
+Descripción breve de un objeto: una cadena de una línea.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -165,29 +165,29 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Cadena de forma libre que describe la configuración del PIN y el uso de la señal de un conector físico.
+Cadena de forma libre que describe la configuración del pin y el uso de señales de un conector físico.
 
-Esta propiedad se hereda de [**\_ PhysicalConnector CIM**](cim-physicalconnector.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalConnector.**](cim-physicalconnector.md)
 
 </dd> <dt>
 
 **ConnectorType**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**invalidación**](../wmisdk/standard-qualifiers.md) ("ConnectorType"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| tipo de ranura de tipo SMBIOS 9 \| ")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("ConnectorType"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("SMBIOS \| Type 9 Slot \| Type")
 </dt> </dl>
 
-Matriz de atributos físicos del conector que esta ranura usa.
+Matriz de atributos físicos del conector que usa esta ranura.
 
-Este valor procede del miembro de **tipo de ranura** de la estructura **ranuras del sistema** en la información de SMBIOS.
+Este valor procede del miembro **Slot Type** de la estructura **Ranuras del** sistema en la información de SMBIOS.
 
-Esta propiedad se hereda de [**\_ PhysicalConnector CIM**](cim-physicalconnector.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalConnector.**](cim-physicalconnector.md)
 
 Los valores posibles son.
 
@@ -202,35 +202,35 @@ Los valores posibles son.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Male"></span><span id="male"></span><span id="MALE"></span>
 
-**Macho** (2)
+**Varón** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Female"></span><span id="female"></span><span id="FEMALE"></span>
 
-**Hembra** (3)
+**Mujer** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Shielded"></span><span id="shielded"></span><span id="SHIELDED"></span>
 
-**Blindado** (4)
+**Blindada** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unshielded"></span><span id="unshielded"></span><span id="UNSHIELDED"></span>
 
-No **blindado** (5)
+**Sin protección** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -244,7 +244,7 @@ No **blindado** (5)
 
 <span id="SCSI__A__Low-Density__50_pins_"></span><span id="scsi__a__low-density__50_pins_"></span><span id="SCSI__A__LOW-DENSITY__50_PINS_"></span>
 
-**SCSI (A) Low-Density (50 Pin)** (7)
+**SCSI (A) Low-Density (50 pines)** (7)
 
 
 </dt> <dd></dd> <dt>
@@ -258,7 +258,7 @@ No **blindado** (5)
 
 <span id="SCSI_SCA-I__80_pins_"></span><span id="scsi_sca-i__80_pins_"></span><span id="SCSI_SCA-I__80_PINS_"></span>
 
-**SCSI SCA-I (80 pines)** (9)
+**SCA-I SCSI (80 pines)** (9)
 
 
 </dt> <dd></dd> <dt>
@@ -272,49 +272,49 @@ No **blindado** (5)
 
 <span id="SCSI_Fibre_Channel__DB-9__Copper_"></span><span id="scsi_fibre_channel__db-9__copper_"></span><span id="SCSI_FIBRE_CHANNEL__DB-9__COPPER_"></span>
 
-**Canal de fibra SCSI (DB-9, cobre)** (11)
+**SCSI Canal de fibra (DB-9, Cobre)** (11)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI_Fibre_Channel__Fibre_"></span><span id="scsi_fibre_channel__fibre_"></span><span id="SCSI_FIBRE_CHANNEL__FIBRE_"></span>
 
-**Canal de fibra SCSI (fibra)** (12)
+**SCSI Canal de fibra (fibra)** (12)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI_Fibre_Channel_SCA-II__40_pins_"></span><span id="scsi_fibre_channel_sca-ii__40_pins_"></span><span id="SCSI_FIBRE_CHANNEL_SCA-II__40_PINS_"></span>
 
-**SCSI canal de fibra SCA-II (40 pines)** (13)
+**SCSI Canal de fibra SCA-II (40 pines)** (13)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI_Fibre_Channel_SCA-II__20_pins_"></span><span id="scsi_fibre_channel_sca-ii__20_pins_"></span><span id="SCSI_FIBRE_CHANNEL_SCA-II__20_PINS_"></span>
 
-**SCSI canal de fibra SCA-II (20 clavijas)** (14)
+**SCSI Canal de fibra SCA-II (20 pines)** (14)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="SCSI_Fibre_Channel_BNC"></span><span id="scsi_fibre_channel_bnc"></span><span id="SCSI_FIBRE_CHANNEL_BNC"></span>
 
-**SCSI canal de fibra BNC** (15)
+**SCSI Canal de fibra BNC** (15)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ATA_3-1_2_Inch__40_pins_"></span><span id="ata_3-1_2_inch__40_pins_"></span><span id="ATA_3-1_2_INCH__40_PINS_"></span>
 
-**ATA 3-1/2 pulgada (40 PIN)** (16)
+**ATA de 3 a 1/2 pulgadas (40 pines)** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ATA_2-1_2_Inch__44_pins_"></span><span id="ata_2-1_2_inch__44_pins_"></span><span id="ATA_2-1_2_INCH__44_PINS_"></span>
 
-**ATA 2-1/2 pulgada (44 PIN)** (17)
+**ATA de 2 a 1/2 pulgadas (44 pines)** (17)
 
 
 </dt> <dd></dd> <dt>
@@ -405,14 +405,14 @@ No **blindado** (5)
 
 <span id="V.35"></span><span id="v.35"></span>
 
-**V. 35** (30)
+**V.35** (30)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="X.21"></span><span id="x.21"></span>
 
-**X. 21** (31)
+**X.21** (31)
 
 
 </dt> <dd></dd> <dt>
@@ -433,21 +433,21 @@ No **blindado** (5)
 
 <span id="UTP_Category_3"></span><span id="utp_category_3"></span><span id="UTP_CATEGORY_3"></span>
 
-**UTP categoría 3** (34)
+**Categoría UTP 3** (34)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="UTP_Category_4"></span><span id="utp_category_4"></span><span id="UTP_CATEGORY_4"></span>
 
-**UTP categoría 4** (35)
+**Categoría UTP 4** (35)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="UTP_Category_5"></span><span id="utp_category_5"></span><span id="UTP_CATEGORY_5"></span>
 
-**UTP categoría 5** (36)
+**Categoría UTP 5** (36)
 
 
 </dt> <dd></dd> <dt>
@@ -475,21 +475,21 @@ No **blindado** (5)
 
 <span id="Fiber_MIC"></span><span id="fiber_mic"></span><span id="FIBER_MIC"></span>
 
-**MIC de fibra** (40)
+**Mic de** fibra (40)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Apple_AUI"></span><span id="apple_aui"></span><span id="APPLE_AUI"></span>
 
-**AUI de Apple** (41)
+**Apple AUI** (41)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Apple_GeoPort"></span><span id="apple_geoport"></span><span id="APPLE_GEOPORT"></span>
 
-**Apple geoport** (42)
+**Apple GeoPort** (42)
 
 
 </dt> <dd></dd> <dt>
@@ -531,21 +531,21 @@ No **blindado** (5)
 
 <span id="PCMCIA_Type_I"></span><span id="pcmcia_type_i"></span><span id="PCMCIA_TYPE_I"></span>
 
-**PCMCIA tipo I** (48)
+**PCMCIA, tipo I** (48)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="PCMCIA_Type_II"></span><span id="pcmcia_type_ii"></span><span id="PCMCIA_TYPE_II"></span>
 
-**PCMCIA (tipo II** ) (49)
+**PCMCIA tipo II** (49)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="PCMCIA_Type_III"></span><span id="pcmcia_type_iii"></span><span id="PCMCIA_TYPE_III"></span>
 
-**PCMCIA, tipo III** (50)
+**PCMCIA Type III** (50)
 
 
 </dt> <dd></dd> <dt>
@@ -587,7 +587,7 @@ No **blindado** (5)
 
 <span id="HSSDC__6_pins_"></span><span id="hssdc__6_pins_"></span><span id="HSSDC__6_PINS_"></span>
 
-**HSSDC (6 clavijas)** (56)
+**HSSDC (6 pines)** (56)
 
 
 </dt> <dd></dd> <dt>
@@ -608,7 +608,7 @@ No **blindado** (5)
 
 <span id="Mini-DIN"></span><span id="mini-din"></span><span id="MINI-DIN"></span>
 
-**Mini DIN** (59)
+**Mini-DIN** (59)
 
 
 </dt> <dd></dd> <dt>
@@ -629,28 +629,28 @@ No **blindado** (5)
 
 <span id="Infrared"></span><span id="infrared"></span><span id="INFRARED"></span>
 
-**Infrarrojos** (62)
+**Desarroba** (62)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="HP-HIL"></span><span id="hp-hil"></span>
 
-**HP-Hil** (63)
+**HP-UNO** (63)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Access.bus"></span><span id="access.bus"></span><span id="ACCESS.BUS"></span>
 
-**Access. bus** (64)
+**Access.bus** (64)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NuBus"></span><span id="nubus"></span><span id="NUBUS"></span>
 
-**Nubus** (65)
+**NuBus** (65)
 
 
 </dt> <dd></dd> <dt>
@@ -664,28 +664,28 @@ No **blindado** (5)
 
 <span id="Mini-Centronics"></span><span id="mini-centronics"></span><span id="MINI-CENTRONICS"></span>
 
-**Minicontrolador-Centronics** (67)
+**Minicentros** (67)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Mini-Centronics_Type-14"></span><span id="mini-centronics_type-14"></span><span id="MINI-CENTRONICS_TYPE-14"></span>
 
-**Mini-Centronics tipo-14** (68)
+**Mini-Centronics Type-14** (68)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Mini-Centronics_Type-20"></span><span id="mini-centronics_type-20"></span><span id="MINI-CENTRONICS_TYPE-20"></span>
 
-**Mini-Centronics tipo-20** (69)
+**Mini-Centronics Type-20** (69)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Mini-Centronics_Type-26"></span><span id="mini-centronics_type-26"></span><span id="MINI-CENTRONICS_TYPE-26"></span>
 
-**Mini-Centronics tipo-26** (70)
+**Mini-Centronics Type-26** (70)
 
 
 </dt> <dd></dd> <dt>
@@ -734,28 +734,28 @@ No **blindado** (5)
 
 <span id="Proprietary_Processor_Card_Slot"></span><span id="proprietary_processor_card_slot"></span><span id="PROPRIETARY_PROCESSOR_CARD_SLOT"></span>
 
-**Ranura de tarjeta del procesador de propiedad** (77)
+**Ranura de tarjeta de procesador propietaria** (77)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Proprietary_Memory_Card_Slot"></span><span id="proprietary_memory_card_slot"></span><span id="PROPRIETARY_MEMORY_CARD_SLOT"></span>
 
-**Ranura de tarjeta de memoria de propiedad** (78)
+**Ranura de tarjeta de memoria propietaria** (78)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Proprietary_I_O_Riser_Slot"></span><span id="proprietary_i_o_riser_slot"></span><span id="PROPRIETARY_I_O_RISER_SLOT"></span>
 
-**Ranura de aumento de e/s de propiedad** (79)
+**Ranura de riser de E/S propietaria** (79)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="PCI-66MHZ"></span><span id="pci-66mhz"></span>
 
-**PCI-66** (80)
+**PCI-66MHZ** (80)
 
 
 </dt> <dd></dd> <dt>
@@ -818,14 +818,14 @@ No **blindado** (5)
 
 <span id="Sbus_IEEE_1396-1993_32_bit"></span><span id="sbus_ieee_1396-1993_32_bit"></span><span id="SBUS_IEEE_1396-1993_32_BIT"></span>
 
-**SBus IEEE 1396-1993 32 bit** (89)
+**Sbus IEEE 1396-1993 32 bits** (89)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Sbus_IEEE_1396-1993_64_bit"></span><span id="sbus_ieee_1396-1993_64_bit"></span><span id="SBUS_IEEE_1396-1993_64_BIT"></span>
 
-**SBus IEEE 1396-1993 64 bit** (90)
+**Sbus IEEE 1396-1993 de 64 bits** (90)
 
 
 </dt> <dd></dd> <dt>
@@ -839,28 +839,28 @@ No **blindado** (5)
 
 <span id="GIO"></span><span id="gio"></span>
 
-**Gio** (92)
+**ASÍNs** (92)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="XIO"></span><span id="xio"></span>
 
-**Xio** (93)
+**XIO** (93)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="HIO"></span><span id="hio"></span>
 
-**Hio** (94)
+**HIO** (94)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NGIO"></span><span id="ngio"></span>
 
-**NGIO** (95)
+**NAGIOS** (95)
 
 
 </dt> <dd></dd> <dt>
@@ -874,7 +874,7 @@ No **blindado** (5)
 
 <span id="Future_I_O"></span><span id="future_i_o"></span><span id="FUTURE_I_O"></span>
 
-**E/s futura** (97)
+**E/S futura** (97)
 
 
 </dt> <dd></dd> <dt>
@@ -888,7 +888,7 @@ No **blindado** (5)
 
 <span id="AGP8X"></span><span id="agp8x"></span>
 
-**AGP8x** (99)
+**AGP8X** (99)
 
 
 </dt> <dd></dd> <dt>
@@ -911,30 +911,30 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**\_ clave CIM**](../wmisdk/standard-wmi-qualifiers.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
+Calificadores: [**\_ clave CIM,**](../wmisdk/standard-wmi-qualifiers.md) [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de. Cuando se usa con las otras propiedades clave de una clase, esta propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
+Nombre de la primera clase concreta que aparece en la cadena de herencia utilizada en la creación de una instancia de . Cuando se usa con las otras propiedades clave de una clase, esta propiedad permite que todas las instancias de esta clase y sus subclases se identifiquen de forma única.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement**](cim-physicalelement.md).
 
 </dd> <dt>
 
 **CurrentUsage**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| uso actual del tipo de SMBIOS 9 \| ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Uso actual de tipo SMBIOS \| \| 9")
 </dt> </dl>
 
-Estado de uso de la ranura del sistema.
+Estado del uso de la ranura del sistema.
 
-Este valor procede del miembro de **uso actual** de la estructura **ranuras del sistema** en la información de SMBIOS.
+Este valor procede del miembro **Uso actual** de la estructura **Ranuras del** sistema en la información de SMBIOS.
 
 Los valores posibles son.
 
@@ -949,7 +949,7 @@ Los valores posibles son.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -986,52 +986,52 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Descripción")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Description")
 </dt> </dl>
 
 Descripción del objeto.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **DeviceNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| número de dispositivo de tipo SMBIOS 9 \| ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("SMBIOS \| Type 9 Device \| Number")
 </dt> </dl>
 
-Número de dispositivo de SMBIOS.
+Número de dispositivo SMBIOS.
 
-Este valor procede del miembro **número de dispositivo/función** de la estructura **ranuras del sistema** en la información de SMBIOS.
+Este valor procede del miembro **Device/Function Number** de la estructura **Ranuras del** sistema en la información de SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 10 y Windows Server 2016.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 10 y Windows Server 2016.
 
 </dd> <dt>
 
 **FunctionNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("número de función de tipo de SMBIOS \| 9 \| ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Número de función de tipo SMBIOS \| \| 9")
 </dt> </dl>
 
-Número de función de SMBIOS.
+Número de función SMBIOS.
 
-Este valor procede del miembro **número de dispositivo/función** de la estructura **ranuras del sistema** en la información de SMBIOS.
+Este valor procede del miembro **Device/Function Number** de la estructura **Ranuras del** sistema en la información de SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 10 y Windows Server 2016.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 10 y Windows Server 2016.
 
 </dd> <dt>
 
@@ -1049,25 +1049,25 @@ Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("pulgadas")
 
 Alto máximo de una tarjeta de adaptador que se puede insertar en la ranura, en pulgadas.
 
-Esta propiedad se hereda de [**la \_ ranura CIM**](cim-slot.md).
+Esta propiedad se hereda de la [**ranura CIM \_**](cim-slot.md).
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **DateTime**
+Tipo de datos: **datetime**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001,5 "), [**displayName**](../wmisdk/standard-qualifiers.md) (" instalación de fecha ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Fecha de instalación")
 </dt> </dl>
 
-Fecha y hora de instalación del objeto. Esta propiedad no necesita un valor para indicar que el objeto está instalado.
+Fecha y hora en que se instala el objeto. Esta propiedad no necesita un valor para indicar que el objeto está instalado.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -1085,11 +1085,11 @@ Calificadores: [**unidades**](../wmisdk/standard-qualifiers.md) ("pulgadas")
 
 Longitud máxima de una tarjeta adaptadora que se puede insertar en la ranura, en pulgadas.
 
-Esta propiedad se hereda de [**la \_ ranura CIM**](cim-slot.md).
+Esta propiedad se hereda de la [**ranura CIM \_**](cim-slot.md).
 
 </dd> <dt>
 
-**Le**
+**Fabricante**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -1101,29 +1101,29 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Nombre de la organización que produce el elemento físico.
+Nombre de la organización que genera el elemento físico.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **MaxDataWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**override**](../wmisdk/standard-qualifiers.md) ("MaxDataWidth"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Ranura del sistema DMTF \| 004,3 "), [**unidades**](../wmisdk/standard-qualifiers.md) (" bits ")
+Calificadores: [**Override**](../wmisdk/standard-qualifiers.md) ("MaxDataWidth"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. Ranura del sistema DMTF \| \| 004.3"), [**unidades**](../wmisdk/standard-qualifiers.md) ("bits")
 </dt> </dl>
 
-Ancho de bus máximo de las tarjetas adaptador que se pueden insertar en esta ranura, en bits. Puede ser uno de los valores siguientes.
+Ancho máximo de bus de tarjetas de adaptador que se pueden insertar en esta ranura, en bits. Puede ser uno de los siguientes valores.
 
-Este valor procede del miembro de **ancho de bus de datos de ranura** de la estructura **ranuras del sistema** en la información de SMBIOS.
+Este valor procede del miembro **Ancho del bus de** datos de ranura de la estructura **Ranuras** del sistema en la información de SMBIOS.
 
-Esta propiedad se hereda de [**la \_ ranura CIM**](cim-slot.md).
+Esta propiedad se hereda de la [**ranura CIM \_**](cim-slot.md).
 
 Los valores posibles son.
 
@@ -1136,7 +1136,7 @@ Los valores posibles son.
 
 </dt> <dd>
 
-Ancho de datos máximo (bits): 8
+Ancho máximo de datos (bits): 8
 
 </dd> <dt>
 
@@ -1147,7 +1147,7 @@ Ancho de datos máximo (bits): 8
 
 </dt> <dd>
 
-Ancho de datos máximo (bits): 16
+Ancho máximo de datos (bits): 16
 
 </dd> <dt>
 
@@ -1158,7 +1158,7 @@ Ancho de datos máximo (bits): 16
 
 </dt> <dd>
 
-Ancho de datos máximo (bits): 32
+Ancho máximo de datos (bits): 32
 
 </dd> <dt>
 
@@ -1169,7 +1169,7 @@ Ancho de datos máximo (bits): 32
 
 </dt> <dd>
 
-Ancho de datos máximo (bits): 64
+Ancho máximo de datos (bits): 64
 
 </dd> <dt>
 
@@ -1180,7 +1180,7 @@ Ancho de datos máximo (bits): 64
 
 </dt> <dd>
 
-Ancho de datos máximo (bits): 128
+Ancho máximo de datos (bits): 128
 
 </dd> </dl>
 
@@ -1200,7 +1200,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 
 Nombre del elemento físico.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -1213,29 +1213,29 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**displayName**](../wmisdk/standard-qualifiers.md) ("Name")
+Calificadores: [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Name")
 </dt> </dl>
 
-Etiqueta del objeto. Cuando se subclasen, esta propiedad se puede invalidar para ser una propiedad de clave.
+Etiqueta del objeto. Cuando se subclasifica, esta propiedad se puede invalidar para que sea una propiedad de clave.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Number**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt16**
+Tipo de datos: **uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Número de ranura física que se puede utilizar como índice en una tabla de ranuras del sistema, tanto si dicha ranura está vacía físicamente como si no.
+Número de ranura físico que se puede usar como índice en una tabla de ranuras del sistema, independientemente de si esa ranura está o no vacía físicamente.
 
-Este valor procede del miembro de ID. de **ranura** de la estructura **ranuras del sistema** en la información de SMBIOS.
+Este valor procede del miembro **Identificador de** ranura de la estructura **Ranuras del** sistema en la información de SMBIOS.
 
-Esta propiedad se hereda de [**la \_ ranura CIM**](cim-slot.md).
+Esta propiedad se hereda de la [**ranura CIM \_**](cim-slot.md).
 
 </dd> <dt>
 
@@ -1248,9 +1248,9 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Datos adicionales (es decir, más que la información de la etiqueta de recurso), que se pueden usar para identificar un elemento físico. Un ejemplo son los datos de código de barras asociados a un elemento que también tiene una etiqueta de recurso. Tenga en cuenta que si solo hay datos de código de barras disponibles y es único o se puede usar como una clave de elemento, esta propiedad es **null** y los datos de código de barras se usan como clave de clase en la propiedad de **etiqueta** .
+Datos adicionales (es decir, más que la información de etiqueta de recurso), que se pueden usar para identificar un elemento físico. Un ejemplo son los datos de código de barras asociados a un elemento que también tiene una etiqueta de recurso. Tenga en cuenta que si solo hay datos de código de barras disponibles y son únicos o se pueden usar como una clave de elemento, esta propiedad es **NULL** y los datos del código de barras se usan como clave de clase en la **propiedad Tag.**
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -1266,9 +1266,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (256)
 </dt> </dl>
 
-Número de pieza que el productor o fabricante asigna al elemento físico.
+Número de parte que el productor o fabricante asigna al elemento físico.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -1281,16 +1281,16 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("características de la \| ranura de tipo SMBIOS 9 \| 2")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("SMBIOS \| Type 9 Slot Characteristics \| 2")
 </dt> </dl>
 
-Si **es true**, esta ranura admite la señal de administración de energía de bus PCI habilitada (PME).
+Si **es TRUE,** esta ranura admite la señal pci bus Power Management Enabled (PME).
 
-Este valor procede del miembro **ranura 2** de la estructura **ranuras del sistema** en la información de SMBIOS.
+Este valor procede del miembro **Características de ranura 2** de la estructura **Ranuras del** sistema en la información de SMBIOS.
 
 </dd> <dt>
 
-**Poweredon**
+**PoweredOn**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **booleano**
@@ -1299,9 +1299,9 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si es **true**, el elemento físico está encendido.
+Si **es TRUE,** el elemento físico está encendido.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -1314,32 +1314,32 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**\_ espacio CIM**](cim-slot.md).**SpecialPurpose**")
+Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**Cim \_ Slot**](cim-slot.md).**SpecialPurpose**")
 </dt> </dl>
 
-Cadena de forma libre que describe cómo esta ranura es físicamente única y puede contener tipos especiales de hardware. Esta propiedad solo tiene significado cuando la propiedad **SpecialPurpose** correspondiente es **true**.
+Cadena de forma libre que describe cómo esta ranura es físicamente única y puede contener tipos especiales de hardware. Esta propiedad solo tiene significado cuando la propiedad **SpecialPurpose** correspondiente es **TRUE.**
 
-Esta propiedad se hereda de [**la \_ ranura CIM**](cim-slot.md).
+Esta propiedad se hereda de la [**ranura CIM \_**](cim-slot.md).
 
 </dd> <dt>
 
 **SegmentGroupNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) (" \| número de grupo de segmentos de tipo SMBIOS 9 \| ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("SMBIOS \| Type 9 Segment Group \| Number")
 </dt> </dl>
 
-Número de grupo de segmentos de SMBIOS.
+Número de grupo de segmentos SMBIOS.
 
-Este valor procede del miembro del **número de grupo de segmentos** de la estructura **ranuras del sistema** en la información de SMBIOS.
+Este valor procede del miembro **Número de grupo de** segmentos de la estructura **Ranuras del** sistema en la información de SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows server 2008 R2, Windows 7, Windows server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 10 y Windows Server 2016.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 y Windows Vista:** Esta propiedad no se admite antes de Windows 10 y Windows Server 2016.
 
 </dd> <dt>
 
@@ -1357,7 +1357,7 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 
 Número asignado por el fabricante que se usa para identificar el elemento físico.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -1370,12 +1370,12 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("características de la \| ranura de tipo SMBIOS 9 \| 1")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("SMBIOS \| Type 9 Slot Characteristics \| 1")
 </dt> </dl>
 
-Si **es true**, dos o más ranuras comparten una ubicación en la placa base, como una ranura compartida PCI/EISA.
+Si **es TRUE,** dos o más ranuras comparten una ubicación en el placa base, como una ranura compartida PCI/EISA.
 
-Este valor procede del miembro de la **ranura características 1** de la estructura **ranuras del sistema** en la información de SMBIOS.
+Este valor procede del miembro **Características de ranura 1** de la estructura **Ranuras del** sistema en la información de SMBIOS.
 
 </dd> <dt>
 
@@ -1391,9 +1391,9 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 </dt> </dl>
 
-Número de unidad de almacenamiento para el elemento físico.
+Número de unidad de mantenimiento para el elemento físico.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -1406,14 +1406,14 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("designación de la \| ranura de tipo SMBIOS 9 \| ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Designación de ranura de tipo SMBIOS \| \| 9")
 </dt> </dl>
 
-Cadena de SMBIOS que identifica la designación de la ranura del sistema de la ranura en la placa base.
+Cadena SMBIOS que identifica la designación de la ranura del sistema de la ranura en la placa base.
 
 Ejemplo: "PCI-1"
 
-Este valor procede del miembro de **designación de ranura** de la estructura **ranuras del sistema** en la información de SMBIOS.
+Este valor procede del miembro **Designación de** ranura de la **estructura Ranuras del** sistema en la información de SMBIOS.
 
 </dd> <dt>
 
@@ -1426,12 +1426,12 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**\_ espacio CIM**](cim-slot.md).**PurposeDescription**")
+Calificadores: [**ModelCorrespondence**](../wmisdk/standard-qualifiers.md) ("[**Cim \_ Slot**](cim-slot.md).**PurposeDescription**")
 </dt> </dl>
 
-Si es **true**, esta ranura es físicamente única y puede contener tipos especiales de hardware, como una ranura de procesador de gráficos. Si **es true**, **PurposeDescription** debe especificar la naturaleza de la unicidad o el propósito de la ranura.
+Si **es TRUE,** esta ranura es físicamente única y puede contener tipos especiales de hardware, como una ranura de procesador de gráficos. Si **es TRUE,** **PurposeDescription** debe especificar la naturaleza de la unidad o el propósito de la ranura.
 
-Esta propiedad se hereda de [**la \_ ranura CIM**](cim-slot.md).
+Esta propiedad se hereda de la [**ranura CIM \_**](cim-slot.md).
 
 </dd> <dt>
 
@@ -1444,12 +1444,12 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**displayName**](../wmisdk/standard-qualifiers.md) ("status")
+Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (10), [**DisplayName**](../wmisdk/standard-qualifiers.md) ("Status")
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios Estados operativos y no operativos. Los Estados operativos incluyen: "correcto", "degradado" y "Pred FAIL" (un elemento, como una unidad de disco duro habilitada para SMART, puede estar funcionando correctamente pero prediciendo un error en un futuro próximo). Los Estados no operativos incluyen: "error", "iniciando", "deteniendo" y "servicio". El último, "servicio", se puede aplicar durante la resilverización del reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo el trabajo está en línea, pero el elemento administrado no es "OK" ni está en uno de los otros Estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
-Esta propiedad se hereda del [**\_ ManagedSystemElement de CIM**](cim-managedsystemelement.md).
+Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Los valores posibles son.
 
@@ -1457,84 +1457,84 @@ Los valores posibles son.
 
 <span id="OK"></span><span id="ok"></span>
 
-**Aceptar** ("Aceptar")
+**Ok** ("OK")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Error** ("error")
+**Error** ("Error")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconocido** ("desconocido")
+**Unknown** ("Unknown")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Pred FAIL** ("Pred FAIL")
+**Error de pred** ("error previo")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span>
 
-**Iniciando** ("iniciando")
+**Starting** ("Starting")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Detener** ("detener")
+**Detención** ("Detención")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Servicio** ("servicio")
+**Servicio** ("Servicio")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-Con **estrés** ("acentuado")
+**Estresado** ("estresado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-**Recover** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sin contacto** ("sin contacto")
+**Sin contacto** ("Sin contacto")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Comunicación perdida** ("pérdida de comunicación")
+**Comm perdido** ("Comm perdido")
 
 
 </dt> <dd></dd> </dl>
@@ -1550,11 +1550,11 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Si **es true**, la ranura admite la conexión en caliente de tarjetas adaptadoras.
+Si **es TRUE,** la ranura admite la conexión en caliente de tarjetas de adaptador.
 
-Este valor procede del miembro **ranura 2** de la estructura **ranuras del sistema** en la información de SMBIOS.
+Este valor procede del miembro **Características de ranura 2** de la estructura **Ranuras del** sistema en la información de SMBIOS.
 
-Esta propiedad se hereda de [**la \_ ranura CIM**](cim-slot.md).
+Esta propiedad se hereda de la [**ranura CIM \_**](cim-slot.md).
 
 </dd> <dt>
 
@@ -1567,52 +1567,52 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**clave**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**invalidación**](../wmisdk/standard-qualifiers.md) ("etiqueta"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
+Calificadores: [**Key**](../wmisdk/key-qualifier.md), [**MaxLen**](../wmisdk/standard-qualifiers.md) (256), [**Override**](../wmisdk/standard-qualifiers.md) ("Tag"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI")
 </dt> </dl>
 
 Ranura del sistema representada por una instancia de esta clase.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
-Ejemplo: "ranura del sistema 1"
+Ejemplo: "Ranura del sistema 1"
 
 </dd> <dt>
 
-**ThermalRating**
+**Rating térmico**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Ranura del sistema DMTF \| 004,11 "), [**unidades**](../wmisdk/standard-qualifiers.md) (" milivatios ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. Ranura del sistema DMTF \| \| 004.11"), [**unidades**](../wmisdk/standard-qualifiers.md) ("milivatios")
 </dt> </dl>
 
-Disipación térmica máxima de la ranura en milivatios.
+Diipación térmico máxima de la ranura en milivatios.
 
-Esta propiedad se hereda de [**la \_ ranura CIM**](cim-slot.md).
+Esta propiedad se hereda de la [**ranura CIM \_**](cim-slot.md).
 
 </dd> <dt>
 
 **VccMixedVoltageSupport**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Ranura del sistema DMTF \| 004,9 ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. Ranura del sistema DMTF \| \| 004.9")
 </dt> </dl>
 
-Matriz de enteros enumerados que indica el voltaje VCC compatible con esta ranura.
+Matriz de enteros enumerados que indica el voltaje Vcc admitido por esta ranura.
 
-Este valor procede del miembro de la **ranura características 1** de la estructura **ranuras del sistema** en la información de SMBIOS.
+Este valor procede del miembro **Características de ranura 1** de la estructura **Ranuras del** sistema en la información de SMBIOS.
 
-Esta propiedad se hereda de [**la \_ ranura CIM**](cim-slot.md).
+Esta propiedad se hereda de la [**ranura CIM \_**](cim-slot.md).
 
 Los valores posibles son.
 
@@ -1627,21 +1627,21 @@ Los valores posibles son.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="3.3V"></span><span id="3.3v"></span>
 
-**3.3 v** (2)
+**3,3 V** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="5V"></span><span id="5v"></span>
 
-**5V** (3)
+**5 V** (3)
 
 
 </dt> <dd></dd> </dl>
@@ -1662,25 +1662,25 @@ Calificadores: [**MaxLen**](../wmisdk/standard-qualifiers.md) (64)
 
 Versión del elemento físico.
 
-Esta propiedad se hereda de [**\_ PhysicalElement CIM**](cim-physicalelement.md).
+Esta propiedad se hereda de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
 **VppMixedVoltageSupport**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz **UInt16**
+Tipo de datos: **matriz uint16**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. \|Ranura del sistema DMTF \| 004,10 ")
+Calificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("MIF. Ranura del sistema DMTF \| \| 004.10")
 </dt> </dl>
 
-Matriz de enteros enumerados que indican el voltaje Vpp compatible con esta ranura.
+Matriz de enteros enumerados que indica el voltaje Vpp admitido por esta ranura.
 
-Esta propiedad se hereda de [**la \_ ranura CIM**](cim-slot.md).
+Esta propiedad se hereda de la [**ranura CIM \_**](cim-slot.md).
 
 Los valores posibles son.
 
@@ -1695,28 +1695,28 @@ Los valores posibles son.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Otro** (1)
+**Otros** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="3.3V"></span><span id="3.3v"></span>
 
-**3.3 v** (2)
+**3,3 V** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="5V"></span><span id="5v"></span>
 
-**5V** (3)
+**5 V** (3)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="12V"></span><span id="12v"></span>
 
-**12V** (4)
+**12 V** (4)
 
 
 </dt> <dd></dd> </dl>
@@ -1725,7 +1725,7 @@ Los valores posibles son.
 
 ## <a name="remarks"></a>Observaciones
 
-La clase **Win32 \_ SystemSlot** se deriva de [**la \_ ranura CIM**](cim-slot.md).
+La **clase \_ SystemSlot de Win32** se deriva de [**la ranura CIM \_**](cim-slot.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -1735,20 +1735,20 @@ La clase **Win32 \_ SystemSlot** se deriva de [**la \_ ranura CIM**](cim-slot.md
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | Origen de \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[**\_Ranura CIM**](cim-slot.md)
+[**Ranura \_ CIM**](cim-slot.md)
 </dt> <dt>
 
-[Clases de hardware de sistema del equipo](computer-system-hardware-classes.md)
+[Clases de hardware del sistema de equipo](computer-system-hardware-classes.md)
 </dt> </dl>
 
  

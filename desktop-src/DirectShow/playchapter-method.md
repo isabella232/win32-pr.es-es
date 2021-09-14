@@ -4,12 +4,12 @@ ms.assetid: d0318a0d-4ff4-42f2-b009-996b7ff0f632
 title: Método PlayChapter
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 832b1da6940b26a3cc3a4ab5bdba8653806966f8a399b74eb5adf50600e22293
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bab4600d8d4fc09c4b63fa423c66823e92e95a2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120102347"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060989"
 ---
 # <a name="playchapter-method"></a>Método PlayChapter
 
@@ -39,11 +39,11 @@ Especifica el índice de capítulo del título actual como entero.
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando se alcanza el final del capítulo especificado, este método continúa reproduciendo capítulos posteriores, si existe alguno. Si solo desea reproducir un capítulo especificado, use [**PlayChaptersAutoStop**](playchaptersautostop-method.md).
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

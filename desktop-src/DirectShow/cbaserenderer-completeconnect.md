@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 833e19a6e7b100aac5322a54455c04c263569e33b3422d5957e5eeee15bbd283
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a9d2d35f99a3b3b8dc5b668b8ee9a9f94f0a53dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118157846"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161630"
 ---
 # <a name="cbaserenderercompleteconnect-method"></a>Método CBaseRenderer.CompleteConnect
 
@@ -53,7 +53,7 @@ Puntero a la interfaz [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin) del
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El pin de entrada del filtro llama a este método desde dentro de su propio método, al que se llama para `CompleteConnect` completar una conexión de pin. (Para obtener más información, [**vea CBasePin::CompleteConnect).**](cbasepin-completeconnect.md) El filtro llama al [**método CBaseRenderer::SetRepaintStatus**](cbaserenderer-setrepaintstatus.md) para habilitar [**eventos EC \_ REPAINT.**](ec-repaint.md)
 
@@ -68,7 +68,7 @@ El pin de entrada del filtro llama a este método desde dentro de su propio mét
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

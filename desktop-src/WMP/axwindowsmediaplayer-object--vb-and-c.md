@@ -1,15 +1,15 @@
 ---
 title: Objeto AxWindowsMediaPlayer (VB y C)
-description: Objeto AxWindowsMediaPlayer (VB y C\)
+description: Objeto AxWindowsMediaPlayer (VB y C\ )
 ms.assetid: d7eeac20-1afa-4e73-9af6-9772fbb65516
 keywords:
 - Reproductor de Windows Media objeto AxWindowsMediaPlayer
 - Reproductor de Windows Media Objeto Mobile,AxWindowsMediaPlayer
-- Reproductor de Windows Media objeto object model,AxWindowsMediaPlayer
+- Reproductor de Windows Media modelo de objetos, objeto AxWindowsMediaPlayer
 - object model,AxWindowsMediaPlayer object
 - ActiveX control, objeto AxWindowsMediaPlayer
 - Reproductor de Windows Media ActiveX control, objeto AxWindowsMediaPlayer
-- Reproductor de Windows Media Control ActiveX móvil,objeto AxWindowsMediaPlayer
+- Reproductor de Windows Media Control ActiveX móvil, objeto AxWindowsMediaPlayer
 - referencia para el objeto object model,AxWindowsMediaPlayer
 - Objeto AxWindowsMediaPlayer
 ms.topic: article
@@ -19,16 +19,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1d0c66360e80ea293795442472ce163292c38152baa859889086a5687f03764f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 32f814560c8b6eb13dc5abb8736378432ec4565e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119765285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126889804"
 ---
 # <a name="axwindowsmediaplayer-object-vb-and-c"></a>Objeto AxWindowsMediaPlayer (VB y C#)
 
-El objeto AxWindowsMediaPlayer es el objeto raíz del control Reproductor de Windows Media control . Admite las propiedades, métodos y eventos enumerados en las tablas siguientes.
+El objeto AxWindowsMediaPlayer es el objeto raíz del control Reproductor de Windows Media control. Admite las propiedades, métodos y eventos enumerados en las tablas siguientes.
 
 El objeto AxWindowsMediaPlayer admite las siguientes propiedades.
 
@@ -56,8 +56,8 @@ El objeto AxWindowsMediaPlayer admite las siguientes propiedades.
 | [playState](axwmplib-axwindowsmediaplayer-playstate--vb-and-c.md)                   | Obtiene un valor que indica el estado de la Reproductor de Windows Media operación.                                                           |
 | [settings](axwmplib-axwindowsmediaplayer-settings--vb-and-c.md)                     | Obtiene una interfaz IWMPSettings.                                                                                                    |
 | [status](axwmplib-axwindowsmediaplayer-status--vb-and-c.md)                         | Obtiene un valor que indica el estado actual de Reproductor de Windows Media.                                                                |
-| [stretchToFit](axwmplib-axwindowsmediaplayer-stretchtofit--vb-and-c.md)             | Obtiene o establece un valor que indica si el vídeo se ajustará para ajustarse al tamaño de la pantalla Reproductor de Windows Media vídeo de control.          |
-| [uiMode](axwmplib-axwindowsmediaplayer-uimode--vb-and-c.md)                         | Obtiene o establece un valor que indica qué controles se muestran en la interfaz de usuario cuando Reproductor de Windows Media se inserta en una página web. |
+| [stretchToFit](axwmplib-axwindowsmediaplayer-stretchtofit--vb-and-c.md)             | Obtiene o establece un valor que indica si el vídeo se ajustará para ajustarse al tamaño del Reproductor de Windows Media de vídeo del control.          |
+| [uiMode](axwmplib-axwindowsmediaplayer-uimode--vb-and-c.md)                         | Obtiene o establece un valor que indica qué controles se muestran en la interfaz de usuario cuando Reproductor de Windows Media está insertado en una página web. |
 | [URL](axwmplib-axwindowsmediaplayer-url--vb-and-c.md)                               | Obtiene o establece el nombre del clip que se va a reproducir.                                                                                         |
 | [versionInfo](axwmplib-axwindowsmediaplayer-versioninfo--vb-and-c.md)               | Obtiene un valor que especifica la versión del Reproductor de Windows Media.                                                               |
 | [windowlessVideo](axwmplib-axwindowsmediaplayer-windowlessvideo--vb-and-c.md)       | Obtiene o establece un valor que indica si el control Reproductor de Windows Media representa el vídeo en modo sin ventanas.                         |
@@ -72,7 +72,7 @@ El objeto AxWindowsMediaPlayer admite los métodos siguientes.
 
 | Método                                                       | Descripción                                               |
 |--------------------------------------------------------------|-----------------------------------------------------------|
-| [close](axwmplib-axwindowsmediaplayer-close.md)             | Versiones Reproductor de Windows Media recursos.                  |
+| [close](axwmplib-axwindowsmediaplayer-close.md)             | Libera Reproductor de Windows Media recursos.                  |
 | [launchURL](axwmplib-axwindowsmediaplayer-launchurl.md)     | Envía una dirección URL al explorador predeterminado del usuario que se va a representar. |
 | [newMedia](axwmplib-axwindowsmediaplayer-newmedia.md)       | Devuelve una interfaz IWMPMedia para un nuevo elemento multimedia.      |
 | [newPlaylist](axwmplib-axwindowsmediaplayer-newplaylist.md) | devuelve una interfaz IWMPPlaylist para una nueva lista de reproducción.     |
@@ -90,12 +90,12 @@ El objeto AxWindowsMediaPlayer admite los siguientes eventos.
 |--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | [AudioLanguageChange](axwmplib-axwindowsmediaplayer-audiolanguagechange.md)                                       | Se produce cuando cambia el idioma de audio actual.                                                            |
 | [de respuesta](axwmplib-axwindowsmediaplayer-buffering.md)                                                           | Se produce cuando el control Reproductor de Windows Media inicia o finaliza el almacenamiento en búfer.                                     |
-| [CdromError](axwmplib-axwindowsmediaplayer-cdromburnerror.md)                                                 | Se produce cuando se produce un error genérico durante una operación de grabación de CD.                                         |
+| [CdromErrorError](axwmplib-axwindowsmediaplayer-cdromburnerror.md)                                                 | Se produce cuando se produce un error genérico durante una operación de grabación de CD.                                         |
 | [CdromErrorMediaError](axwmplib-axwindowsmediaplayer-cdromburnmediaerror.md)                                       | Se produce cuando se produce un error al grabar un elemento multimedia individual en un CD.                               |
 | [CdromChangeStateChange](axwmplib-axwindowsmediaplayer-cdromburnstatechange.md)                                     | Se produce cuando una operación de grabación de CD cambia de estado.                                                          |
-| [CdromMediaChange](axwmplib-axwindowsmediaplayer-cdrommediachange.md)                                             | Se produce cuando se inserta o expulsa un CD o DVD en una unidad de CD o DVD.                                |
-| [CdromRipMediaError](axwmplib-axwindowsmediaplayer-cdromripmediaerror.md)                                         | Se produce cuando se produce un error mientras se realiza una pista individual desde un CD.                                  |
-| [CdromRipStateChange](axwmplib-axwindowsmediaplayer-cdromripstatechange.md)                                       | Se produce cuando cambia el estado de una operación de arrasado de CD.                                                          |
+| [CdromMediaChange](axwmplib-axwindowsmediaplayer-cdrommediachange.md)                                             | Se produce cuando se inserta o expulsa un CD o DVD desde una unidad de CD o DVD.                                |
+| [CdromRipMediaError](axwmplib-axwindowsmediaplayer-cdromripmediaerror.md)                                         | Se produce cuando se produce un error al localizar una pista individual desde un CD.                                  |
+| [CdromRipStateChange](axwmplib-axwindowsmediaplayer-cdromripstatechange.md)                                       | Se produce cuando una operación de arraso de CD cambia de estado.                                                          |
 | [Hacer clic](axwmplib-axwindowsmediaplayer-click.md)                                                                   | Se produce cuando el usuario hace clic en un botón del mouse.                                                                |
 | CreatePartnershipComplete                                                                                          | No se admite para la programación de .NET.                                                                        |
 | [CurrentItemChange](axwmplib-axwindowsmediaplayer-currentitemchange.md)                                           | Se produce cuando [cambia IWMPControls.currentItem.](wmplibiwmpcontrols-iwmpcontrols-currentitem--vb-and-c.md) |
@@ -121,8 +121,8 @@ El objeto AxWindowsMediaPlayer admite los siguientes eventos.
 | [LibraryDisconnect](axwmplib-axwindowsmediaplayer-librarydisconnect.md)                                           | Se produce cuando una biblioteca ya no está disponible.                                                              |
 | [MarkerHit](axwmplib-axwindowsmediaplayer-markerhit.md)                                                           | Se produce cuando se alcanza un marcador.                                                                           |
 | [MediaChange](axwmplib-axwindowsmediaplayer-mediachange.md)                                                       | Se produce cuando cambia un elemento multimedia.                                                                          |
-| [MediaCollectionAttributeString agregado](axwmplib-axwindowsmediaplayer-mediacollectionattributestringadded.md)       | Se produce cuando se agrega un valor de atributo a la biblioteca.                                                    |
-| [MediaCollectionAttributeStringChanged](axwmplib-axwindowsmediaplayer-mediacollectionattributestringchanged.md)   | Se produce cuando se cambia un valor de atributo en la biblioteca.                                                  |
+| [MediaCollectionAttributeString Agregado](axwmplib-axwindowsmediaplayer-mediacollectionattributestringadded.md)       | Se produce cuando se agrega un valor de atributo a la biblioteca.                                                    |
+| [MediaCollectionAttributeStringChanged](axwmplib-axwindowsmediaplayer-mediacollectionattributestringchanged.md)   | Se produce cuando se cambia un valor de atributo de la biblioteca.                                                  |
 | [MediaCollectionAttributeStringRemoved](axwmplib-axwindowsmediaplayer-mediacollectionattributestringremoved.md)   | Se produce cuando se quita un valor de atributo de la biblioteca.                                                |
 | [MediaCollectionChange](axwmplib-axwindowsmediaplayer-mediacollectionchange.md)                                   | Se produce cuando cambia la colección de medios.                                                                  |
 | [MediaCollectionMediaAdded](axwmplib-axwindowsmediaplayer-mediacollectionmediaadded.md)                           | Se produce cuando se agrega un elemento multimedia a la biblioteca local.                                                    |
@@ -133,23 +133,23 @@ El objeto AxWindowsMediaPlayer admite los siguientes eventos.
 | [Mousemove](axwmplib-axwindowsmediaplayer-mousemove.md)                                                           | Se produce cuando se mueve el puntero del mouse.                                                                    |
 | [MouseUp](axwmplib-axwindowsmediaplayer-mouseup.md)                                                               | Se produce cuando se libera un botón del mouse.                                                                    |
 | [NewStream](axwmplib-axwindowsmediaplayer-newstream.md)                                                           | Reservado para uso futuro.                                                                                   |
-| [OpenPlaylistSwitch](axwmplib-axwindowsmediaplayer-openplaylistswitch.md)                                         | Se produce cuando comienza a reproducirse un título de un DVD.                                                               |
+| [OpenPlaylistSwitch](axwmplib-axwindowsmediaplayer-openplaylistswitch.md)                                         | Se produce cuando un título de un DVD comienza a reproducirse.                                                               |
 | [OpenStateChange](axwmplib-axwindowsmediaplayer-openstatechange.md)                                               | Se produce cuando el control Reproductor de Windows Media cambia de estado.                                                |
 | PlayerDockedStateChange                                                                                            | No se admite para la programación de .NET.                                                                        |
 | PlayerReconnect                                                                                                    | No se admite para la programación de .NET.                                                                        |
 | [PlaylistChange](axwmplib-axwindowsmediaplayer-playlistchange.md)                                                 | Se produce cuando cambia una lista de reproducción.                                                                            |
 | [PlaylistCollectionChange](axwmplib-axwindowsmediaplayer-playlistcollectionchange.md)                             | Se produce cuando algo cambia en la colección de listas de reproducción.                                                  |
-| [Se ha agregado PlaylistCollectionPlaylist](axwmplib-axwindowsmediaplayer-playlistcollectionplaylistadded.md)               | Se produce cuando se agrega una lista de reproducción a la colección de listas de reproducción.                                                |
+| [Lista de reproducciónPlaylist agregada](axwmplib-axwindowsmediaplayer-playlistcollectionplaylistadded.md)               | Se produce cuando se agrega una lista de reproducción a la colección de listas de reproducción.                                                |
 | [PlaylistCollectionPlaylistRemoved](axwmplib-axwindowsmediaplayer-playlistcollectionplaylistremoved.md)           | Se produce cuando se quita una lista de reproducción de la colección de listas de reproducción.                                            |
 | [PlaylistCollectionPlaylistSetAsDeleted](axwmplib-axwindowsmediaplayer-playlistcollectionplaylistsetasdeleted.md) | Reservado para uso futuro.                                                                                   |
 | [PlayStateChange](axwmplib-axwindowsmediaplayer-playstatechange.md)                                               | Se produce cuando cambia el estado de reproducción Reproductor de Windows Media control.                                    |
 | [PositionChange](axwmplib-axwindowsmediaplayer-positionchange.md)                                                 | Se produce cuando se ha cambiado la posición actual del elemento multimedia.                                       |
-| [ScriptCommand](axwmplib-axwindowsmediaplayer-scriptcommand.md)                                                   | Se produce cuando se recibe un comando sincronizado o una dirección URL.                                                     |
-| [StatusChange](axwmplib-axwindowsmediaplayer-statuschange.md)                                                     | Se produce cuando cambia **el valor de** la propiedad status.                                                         |
+| [ScriptCommand](axwmplib-axwindowsmediaplayer-scriptcommand.md)                                                   | Se produce cuando se recibe un comando o una dirección URL sincronizados.                                                     |
+| [StatusChange](axwmplib-axwindowsmediaplayer-statuschange.md)                                                     | Se produce cuando la **propiedad status** cambia de valor.                                                         |
 | [StringCollectionChange](axwmplib-axwindowsmediaplayer-stringcollectionchange.md)                                 | Se produce cuando cambia una colección de cadenas.                                                                   |
 | SwitchedToControl                                                                                                  | No se admite para la programación de .NET.                                                                        |
 | SwitchedToPlayerApplication                                                                                        | No se admite para la programación de .NET.                                                                        |
-| [Advertencia](axwmplib-axwindowsmediaplayer-warning.md)                                                               | Reservado para uso futuro.                                                                                   |
+| [Warning (ADVERTENCIA)](axwmplib-axwindowsmediaplayer-warning.md)                                                               | Reservado para uso futuro.                                                                                   |
 
 
 

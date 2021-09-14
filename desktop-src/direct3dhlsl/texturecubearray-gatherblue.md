@@ -1,6 +1,6 @@
 ---
-title: Métodos de TextureCubeArray::TextureCubeArray GatherBlue
-description: Devuelve los componentes azules de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal. | Métodos de TextureCubeArray::TextureCubeArray GatherBlue
+title: Métodos TextureCubeArray::TextureCubeArray GatherBlue
+description: Devuelve los componentes azules de los cuatro valores de texel que se usarían en una operación de filtrado bi lineal. | Métodos TextureCubeArray::TextureCubeArray GatherBlue
 ms.assetid: 709EF549-20F6-44E1-8E8C-1FF71C259FC7
 keywords:
 - Métodos de GatherBlue HLSL
@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: bf6a87e4e4accb6a9c6742d6bb31b5cec36bc14f8120587e45f8979c9a5d3ee5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee3946a2a205a679da835b2523da090611372331
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118786328"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126883956"
 ---
 # <a name="texturecubearraygatherblue-methods"></a>Métodos TextureCubeArray::GatherBlue
 

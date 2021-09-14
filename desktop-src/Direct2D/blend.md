@@ -7,11 +7,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 853043123c6eea9a87656a7450b1295236ed5d6a
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122478201"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127164245"
 ---
 # <a name="blend-effect"></a>Efecto de fusión
 
@@ -128,9 +128,9 @@ Algunos de los modos de combinación requieren la conversión a y desde el espac
 | D2D1_BLEND_MODE_SATURATION | Fórmula de combinación básica solo para alfa. <img src="images/blend-mode-saturation-1.png" alt="Mathematical formula for a sturation blend effect." /> | 
 | D2D1_BLEND_MODE_COLOR | Fórmula de combinación básica solo para alfa. <img src="images/blend-mode-color-1.png" alt="Mathematical formula for a color blend effect." /> | 
 | D2D1_BLEND_MODE_LUMINOSITY | Fórmula de combinación básica solo para alfa. <img src="images/blend-mode-luminosity-1.png" alt="Mathematical formula for a luminosity blend effect." /> | 
-| D2D1_BLEND_MODE_DISSOLVE | Con estas premisas:<ul><li>Una coordenada de escena XY para el píxel actual</li><li>Un generador de números pseudo-aleatorios determinista rand(XY) basado en la coordenada de la ría XY, con distribución sesgo de valores de [0, 1]</li></ul><br /><img src="images/blend-mode-dissolve-1.png" alt="Mathematical formula for a dissolve blend effect." /><br /> | 
-| D2D1_BLEND_MODE_SUBTRACT | Fórmula de combinación básica solo para alfa. <img src="images/blend-mode-subtract-1.png" alt="Mathematical formula for a subtract blend effect." /> | 
-| D2D1_BLEND_MODE_DIVISION | Fórmula de combinación básica solo para alfa. <img src="images/blend-mode-division-1.png" alt="Mathematical formula for a division blend effect." /> | 
+| D2D1_BLEND_MODE_DISSOLVE | Con estas premisas:<ul><li>Una coordenada de escena XY para el píxel actual</li><li>Generador de números pseudo aleatorios determinista rand(XY) basado en la coordenada de valor de ed. XY, con distribución no sesgo de valores de [0, 1]</li></ul><br /><img src="images/blend-mode-dissolve-1.png" alt="Mathematical formula for a dissolve blend effect." /><br /> | 
+| D2D1_BLEND_MODE_SUBTRACT | Fórmula de mezcla básica solo para alfa. <img src="images/blend-mode-subtract-1.png" alt="Mathematical formula for a subtract blend effect." /> | 
+| D2D1_BLEND_MODE_DIVISION | Fórmula de mezcla básica solo para alfa. <img src="images/blend-mode-division-1.png" alt="Mathematical formula for a division blend effect." /> | 
 
 
 
@@ -142,9 +142,9 @@ Algunos de los modos de combinación requieren la conversión a y desde el espac
 
  
 
-## <a name="hsl-color-space-conversions"></a>Conversiones de espacios de color HSL
+## <a name="hsl-color-space-conversions"></a>Conversiones de espacio de color HSL
 
-El componente de luminosidad se calcula usando los pesos RGB aquí:
+El componente de luminosidad se calcula con los pesos RGB aquí:
 
 -   *k*<sub>R</sub> = 0,30
 -   *k*<sub>G</sub> = 0,59
@@ -152,21 +152,21 @@ El componente de luminosidad se calcula usando los pesos RGB aquí:
 
 ### <a name="converting-from-rgb-to-hsl"></a>Conversión de RGB a HSL
 
-![fórmula matemática que describe la transformación del color rgb al color hsl.](images/blend-rgb-to-hsl-1.png)
+![fórmula matemática que describe la transformación de color rgb a color hsl.](images/blend-rgb-to-hsl-1.png)
 
-Esto coloca *S* y *L en* el intervalo \[ 0,0, 1,0 y H en el \] intervalo  \[ -1,0, 5,0 \] .
+Esto coloca *S* y *L en* el intervalo \[ 0.0, 1.0 y H en el \] intervalo  \[ -1.0, 5.0 \] .
 
 ### <a name="converting-from-hsl-to-rgb"></a>Conversión de HSL a RGB
 
-Para convertir la otra manera, usamos el inverso de los cálculos anteriores.
+Para convertir la otra manera en que usamos el inverso de los cálculos anteriores.
 
 Si *S* = 0, *R*  =  *G*  =  *B*  =  *L*
 
 De lo contrario, hay seis casos dependientes de hue:
 
-Si *H* es mayor que 0, los valores se encuentran en el sector rojo/rojo-rojo,donde *R*  >  *B*  >  *G*.
+Si *H* es mayor que 0, los valores se encuentran en el sector rojo/después, *donde R*  >  *B*  >  *G*.
 
-![ecuación matemática, paso uno de seis que convierte el color hsl en rgb.](images/blend-hsl-to-rgb-1rm.png)
+![ecuación matemática paso uno de los seis que convierten el color hsl a rgb.](images/blend-hsl-to-rgb-1rm.png)
 
 Si *H* es mayor o igual que 0 y menor que 1, los valores se encuentran en el sector rojo/amarillo donde *R*  >  *G*  >  *B*.
 
@@ -176,21 +176,21 @@ Si *H* es mayor o igual que 1 y menor que 2, los valores se encuentran en el sec
 
 ![ecuación matemática, paso tres de seis, que convierte el color hsl en rgb.](images/blend-hsl-to-rgb-1yg.png)
 
-Si *H* es mayor o igual que 2 y menor que 3, los valores se encuentran en el sector verde/cian donde *G*  >  *B*  >  *R*.
+Si *H* es mayor o igual que 2 y menor que 3, los valores se encuentran en el sector verde/verde-verde donde *G*  >  *B*  >  *R*.
 
 ![ecuación matemática, paso cuatro de seis, que convierte el color hsl en rgb.](images/blend-hsl-to-rgb-1gc.png)
 
-Si *H* es mayor o igual que 3 y menor que 4, los valores se encuentran en el sector azul/cian donde *B*  >  *G*  >  *R*.
+Si *H* es mayor o igual que 3 y menor que 4, los valores se encuentran en el sector azul/azul donde *B*  >  *G*  >  *R*.
 
-![ecuación matemática, paso cinco de seis, que convierte el color hsl en rgb.](images/blend-hsl-to-rgb-1cb.png)
+![ecuación matemática, paso cinco de seis, que convierte el color hsl a rgb.](images/blend-hsl-to-rgb-1cb.png)
 
-Si *H* es mayor o igual que 4, los valores se encuentran en el sector blue/blue/blue-blue donde *B*  >  *R*  >  *G*.
+Si *H* es mayor o igual que 4, los valores se encuentran en el sector blue/blue/magenta donde *B*  >  *R*  >  *G*.
 
 ![ecuación matemática, paso seis de seis, que convierte el color hsl en rgb.](images/blend-hsl-to-rgb-1bm.png)
 
-Dado que los modos de combinación hacen combinaciones arbitrarias de componentes HSL a partir de dos colores diferentes, es habitual que el valor RGB convertido esté fuera de la gama, es decir, uno o varios componentes de canal pueden estar fuera del intervalo legal de \[ 0,0, 1,0 \] . Estos colores se convierten de nuevo en gama al reducir mínimamente la saturación, al tiempo que se conserva el matiz y la luminosidad:
+Dado que los modos de combinación hacen combinaciones arbitrarias de componentes HSL de dos colores diferentes, es habitual que el valor RGB convertido esté fuera de la gama, es decir, uno o varios componentes de canal pueden estar fuera del intervalo legal de \[ 0,0, 1,0 \] . Estos colores se han vuelto a la gama al reducir mínimamente la saturación, conservando al mismo tiempo el matiz y la luminosidad:
 
-![fórmula matemática que describe las correcciones necesarias para las instancias fuera de gama.](images/blend-gamut-correction.png)
+![fórmula matemática que describe las correcciones necesarias para instancias fuera de la gama.](images/blend-gamut-correction.png)
 
 ## <a name="output-bitmap"></a>Mapa de bits de salida
 
@@ -204,10 +204,10 @@ Para obtener un ejemplo de este efecto, descargue el ejemplo de modos de efecto 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows store\] |
-| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows store\] |
+| Cliente mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
+| Servidor mínimo compatible | Windows 8 y actualización de plataforma para Windows 7 aplicaciones \[ de escritorio \| Windows Store\] |
 | Encabezado                   | d2d1effects.h                                                                      |
 | Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 

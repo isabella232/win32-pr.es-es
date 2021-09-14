@@ -1,7 +1,7 @@
 ---
-description: La función FreeMediaType elimina el bloque de formato en una \_ estructura de tipo de medio am \_ .
+description: La función FreeMediaType elimina el bloque de formato en una estructura \_ AM MEDIA \_ TYPE.
 ms.assetid: b7ec335e-518d-4aa6-8cde-8cb92184d0b0
-title: Función FreeMediaType (mtype. h)
+title: Función FreeMediaType (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,15 +17,15 @@ api_location:
 - Strmbasd.lib
 - Strmbasd.dll
 ms.openlocfilehash: 9f332ccc9a60473a9d814481b759221dc6468d5c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105680873"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061169"
 ---
-# <a name="freemediatype-function"></a>FreeMediaType función)
+# <a name="freemediatype-function"></a>Función FreeMediaType
 
-La función **FreeMediaType** elimina el bloque de formato en una estructura de [**\_ \_ tipo de medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
+La **función FreeMediaType** elimina el bloque de formato en una [**estructura AM MEDIA \_ \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ void FreeMediaType(
 
 <dl> <dt>
 
-*MT* \[ CLI\]
+*mt* \[ Ref\]
 </dt> <dd>
 
-Referencia a una estructura [**de \_ \_ tipo de medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
+Referencia a una estructura [**\_ AM MEDIA \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type)
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Esta función no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-El bloque de formato se asigna en el montón. El miembro **pbFormat** del [**\_ \_ tipo de medio am**](/windows/win32/api/strmif/ns-strmif-am_media_type) apunta al bloque de formato. Use esta función para liberar solo el bloque de formato. Para eliminar una estructura **de \_ \_ tipo de medio am** asignada, llame a [**DeleteMediaType**](deletemediatype.md).
+El bloque de formato se asigna en el montón. El **miembro pbFormat** de [**AM MEDIA \_ \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) apunta al bloque de formato. Use esta función para liberar solo el bloque de formato. Para eliminar una estructura **AM \_ MEDIA TYPE \_ asignada,** llame a [**DeleteMediaType**](deletemediatype.md).
 
-Esta función se define en la biblioteca de [clases base de DirectShow](directshow-base-classes.md) . Si prefiere no vincular a la biblioteca de clases base, puede usar el código siguiente:
+Esta función se define en la biblioteca [DirectShow clases base.](directshow-base-classes.md) Si prefiere no vincular a la biblioteca de clases base, puede usar el código siguiente:
 
 
 ```C++
@@ -88,12 +88,12 @@ void _FreeMediaType(AM_MEDIA_TYPE& mt)
 
 | Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Mtype. h (incluir streams. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilaciones comerciales); </dt> <dt>Strmbasd. lib (compilaciones de depuración)</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Mtype.h (incluir Secuencias.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (compilaciones comerciales); </dt> <dt>Strmbasd.lib (compilaciones de depuración)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

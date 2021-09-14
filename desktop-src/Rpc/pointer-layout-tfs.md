@@ -4,12 +4,12 @@ description: El diseño de puntero describe los punteros de una estructura o una
 ms.assetid: 1a4984c1-97b9-4e95-a17e-851b67fa94a3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6616cc7d1000b042c6039b2abf3f79d4900cd0e5fadac748881666610b139c57
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f26a6639b0c4b56c911be1e688995aaf3fb9d2d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120019197"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127161038"
 ---
 # <a name="pointer-layout"></a>Diseño de puntero
 
@@ -17,7 +17,7 @@ El diseño de puntero describe los punteros de una estructura o una matriz.
 
 ## <a name="pointer_layout"></a>diseño \_ de puntero<>
 
-Un diseño de puntero<> campo consta de los caracteres de formato FC PP FC PAD seguidos de una o varias descripciones de puntero, como se describe más adelante, y termina con un carácter de formato \_ \_ FC \_ \_ END:
+Un campo de diseño<> puntero consta de los caracteres de formato FC PP FC PAD seguidos de una o varias descripciones de puntero, como se describe más adelante, y termina con un carácter de formato \_ \_ FC \_ \_ END:
 
 ``` syntax
 FC_PP
@@ -30,9 +30,9 @@ Un diseño de instancia de<> campo es una cadena de formato que describe una \_ 
 
 -   desplazamiento \_ en \_ memoria
 
-    Desplazamiento con firma a la ubicación del puntero en memoria. Para un puntero que reside en una estructura, este desplazamiento es un desplazamiento negativo desde el final de la estructura (el final de la parte no conforme de las estructuras conformes); para matrices, el desplazamiento es desde el principio de la matriz.
+    Desplazamiento con firma a la ubicación del puntero en memoria. Para un puntero que reside en una estructura, este desplazamiento es un desplazamiento negativo desde el final de la estructura (el final de la parte no conforme de las estructuras compatibles); para matrices, el desplazamiento es desde el principio de la matriz.
 
--   desplazamiento \_ en \_ búfer
+-   desplazamiento \_ en búfer \_
 
     Desplazamiento con firma a la ubicación del puntero en el búfer. Para un puntero que reside en una estructura, este desplazamiento es un desplazamiento negativo desde el final de la estructura (el final de la parte no conforme de las estructuras compatibles): para las matrices, el desplazamiento es desde el principio de la matriz.
 
@@ -114,7 +114,7 @@ Cada objeto que se describe en esta sección tiene punteros, por lo que, por eje
 
 3.  Estructura compleja, nivel único
 
-    Los miembros de puntero están marcados por FC \_ POINTER. El diseño del puntero se simplifica de forma que hay un descriptor de puntero (4 bytes) para cada entrada \_ DE PUNTERO FC en la lista. El diseño del puntero se pasea en paralelo con un recorrido de miembro, es decir, un PUNTERO FC hace que se procese la \_ siguiente descripción del puntero. La matriz CARRAY tiene un diseño de puntero con todos los descriptores de la matriz y, a continuación, el elemento , mediante el uso de un complejo incrustado. Se reutiliza el descriptor de elemento. El tamaño de la parte plana de la estructura se completa; en otras palabras, el tamaño plano de la estructura de nivel superior incluye el tamaño plano de la estructura insertada. El diseño de miembro precede al diseño de puntero para estructuras complejas.
+    Los miembros de puntero están marcados por FC \_ POINTER. El diseño del puntero se simplifica de forma que hay un descriptor de puntero (4 bytes) para cada entrada \_ DE PUNTERO FC en la lista. El diseño del puntero se pasea en paralelo con un recorrido de miembro, es decir, un PUNTERO FC hace que se procese la \_ siguiente descripción del puntero. La matriz CARRAY tiene un diseño de puntero con todos los descriptores de la matriz y, a continuación, el elemento , mediante el uso de un complejo incrustado. Se reutiliza el descriptor de elemento. El tamaño de la parte plana de la estructura aparece completo; En otras palabras, el tamaño plano de la estructura de nivel superior incluye el tamaño plano de la estructura insertada. El diseño de miembro precede al diseño de puntero para estructuras complejas.
 
     Por lo tanto, la generación de descripción de matriz compatible es diferente en función de si se trata de una matriz dentro de una estructura compatible o dentro de una estructura compleja.
 
@@ -144,7 +144,7 @@ En esta sección se describe el comportamiento del motor BAND.
 
 2.  Estructura compleja insertada con matriz compatible
 
-    Cualquier estructura compleja obliga a la estructura externa a ser una estructura compleja. La estructura insertada nunca serializa su matriz. Cada estructura siempre pasa por punteros incrustados simplemente serializando miembros y un miembro que pasa a ser un PUNTERO \_ FC.
+    Cualquier estructura compleja obliga a la estructura externa a ser una estructura compleja. La estructura incrustada nunca serializa su matriz. Cada estructura siempre pasa por punteros incrustados simplemente serializando miembros y un miembro que pasa a ser un PUNTERO \_ FC.
 
 3.  Estructura compleja con estructura compatible
 
@@ -152,27 +152,27 @@ En esta sección se describe el comportamiento del motor BAND.
 
 **Desmarque, evolucione y liberar pases**
 
-La desmarque es simétrica a la serialización; La primera operación que realiza para estructuras complejas es averiguar la ubicación de los estados en el búfer mediante una llamada a la **función ComposiciónComplexStructBufferSize.** A continuación, desmarshals los sentidos en paralelo, habilitando el mismo esquema para desmarque las ramas correctamente que se usarán. No debería haber confusión sobre los objetos de tamaño y las uniones. La imagen de memoria no debe usarse para objetos de tamaño y uniones, solo para el contenido del búfer.
+La desmarque es simétrica a la serialización; La primera operación que realiza para estructuras complejas es averiguar la ubicación de los destinos en el búfer mediante una llamada a la **función ComposiciónComplexStructBufferSize.** A continuación, desmarshals los sentidos en paralelo, lo que permite usar el mismo esquema para desmarque las ramas correctamente. No debería haber confusión sobre los objetos de tamaño y las uniones. La imagen de memoria no debe usarse para objetos de tamaño y uniones, solo para el contenido del búfer.
 
 Las marcas que se usan para realizar correctamente la serialización y la desmarque se usan de la misma manera en la operación de cambios y desenlazamiento para asegurarse de que los árboles se pasen exactamente una vez.
 
 **Paso de endianess**
 
-Al principio, el paso de endianess es algo similar a serializar o desmarque; Se requieren dos pases para procesar estructuras complejas. El primer paso convierte la parte plana y encuentra la ubicación de los árboles en el búfer de forma similar a la que realiza esta operación para desmarque. A continuación, el segundo paso convierte los contraversos.
+Al principio, el paso de endianess es algo similar a serializar o desmarque. Se requieren dos pases para procesar estructuras complejas. El primer paso convierte la parte plana y encuentra la ubicación de los árboles en el búfer de forma similar a la que realiza esta operación para desmarque. A continuación, el segundo paso convierte los contraversos.
 
-Los pasos de endianess difieren de la manera siguiente: cada estructura y cada miembro debe escalonarse hasta que el miembro o elemento hoja sea un tipo simple. Esto es diferente de la desmarque; en la desmarque, por ejemplo, nunca es necesario procesar estructuras compatibles incrustadas en estructuras conformes, ni ningún miembro de la estructura compatible, en ese caso. Otro problema es que la conversión no es una operación idempotente, por lo que el paso de desmarque podría rehacer la desmarque de algunas partes sin daños, mientras que la conversión se debe realizar estrictamente una vez por cada tipo simple.
+Los pasos de endianess difieren de la manera siguiente: cada estructura y cada miembro debe escalonarse hasta que el miembro o elemento hoja sea un tipo simple. Esto es diferente de la desmarque; en la desmarque, por ejemplo, nunca es necesario procesar estructuras compatibles incrustadas en estructuras conformes, ni ningún miembro de la estructura compatible, en ese caso. Otro problema es que la conversión no es una operación idempotente, por lo que el paso de desmarque podría rehacer la desmarque de algunas piezas sin daños, mientras que la conversión se debe realizar estrictamente una vez por cada tipo simple.
 
-Por lo tanto, el algoritmo de endianess se puede resumir como se muestra a continuación. BAND tiene una noción de la estructura compatible de nivel superior y una marca para marcarlo, según corresponda. Al recorrer la primera vez, por ejemplo, para convertir la parte plana y obtener la ubicación de los planos, no se usaría esta noción. PLACE bajaría a través de las partes planas de todos los niveles de estructuras y nunca se convertiría en el procesamiento de punteros. Por último, CONVERT convertiría sin formato la matriz en el nivel superior.
+Por lo tanto, el algoritmo de endianess se puede resumir como se muestra a continuación. BAND tiene una noción de la estructura compatible de nivel superior y una marca para marcarla, según corresponda. Al recorrer la primera vez, por ejemplo, para convertir la parte plana y obtener la ubicación de los nociones, no se usaría esta noción. MOUSE bajaría a través de las partes planas de todos los niveles de estructuras y nunca entraría en el procesamiento de punteros. Por último, CONVERT convertiría sin formato la matriz en el nivel superior.
 
-Al recorrer la segunda vez, la marca se usaría para marcar el paso del puntero incrustado para evitar entrar en niveles más profundos de las estructuras conformes y, a continuación, la estructura de mayor conformidad. De este modo, la marca forzaría el comportamiento común de serialización o desmarque, que es evitar la bajada a niveles más profundos de estructuras compatibles.
+Al recorrer la segunda vez, la marca se usaría para marcar el paso del puntero incrustado para evitar entrar en niveles más profundos de las estructuras compatibles y, a continuación, la estructura más compatible. De esta manera, la marca forzaría el comportamiento común de serialización o desmarque, que es evitar la degradación a niveles más profundos de estructuras compatibles.
 
-El segundo paso para estructuras complejas con matrices compatibles funciona de la siguiente manera: las estructuras complejas funcionan de la manera habitual; lo que significa que los niveles más profundos nunca verían ni omitirían su tamaño conforme o sus matrices conformes, y prefieren simplemente recorrer sus miembros sin tocar la matriz.
+El segundo paso para estructuras complejas con matrices compatibles funciona de la siguiente manera: las estructuras complejas funcionan de la manera común; lo que significa que los niveles más profundos nunca verían ni omitirían su tamaño de conformidad o sus matrices compatibles, y prefieren simplemente recorrer sus miembros sin tocar la matriz.
 
-En el caso de las estructuras complejas con estructuras compatibles, la estructura compatible debe ser consciente de si es de nivel superior y de si está en una estructura compleja. La parte plana de la matriz se procesa mediante la estructura de mayor conformidad. En el segundo paso, la estructura compatible de nivel superior omitiría la parte plana y pasaría por el diseño del puntero y la devolución. La estructura más compleja omitiría su parte plana y también omitiría el diseño del puntero.
+En el caso de estructuras complejas con estructuras compatibles, la estructura compatible debe tener en cuenta si es de nivel superior y si está en una estructura compleja. La parte plana de la matriz se procesa mediante la estructura de mayor conformidad. En el segundo paso, la estructura compatible de nivel superior omitiría la parte plana y pasará por el diseño del puntero y la devolución. La estructura superior más compleja omitiría su parte plana y también omitiría el diseño del puntero.
 
 **Aspecto sólido de los paseos por la endianess**
 
-El recorrido de endianess comprueba las condiciones habituales fuera del búfer y realiza otras comprobaciones de una naturaleza no relacionada. Las comprobaciones dirigidas a valores correlacionados (como el argumento de ajuste de tamaño frente al tamaño compatible) no se pueden realizar con este paso; se realizan más adelante, cuando se desmarque.
+El recorrido de endianess comprueba las condiciones habituales fuera del búfer y realiza otras comprobaciones de una naturaleza no relacionada. Las comprobaciones dirigidas a valores correlacionados (como el argumento de ajuste de tamaño frente al tamaño compatible) no se pueden realizar mediante este paso; se realizan más adelante, cuando se desmarque.
 
  
 

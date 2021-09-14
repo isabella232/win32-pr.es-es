@@ -1,17 +1,17 @@
 ---
 description: El método PlayForwards inicia la reproducción hacia delante desde la ubicación actual a la velocidad especificada.
 ms.assetid: 4f1a3e74-b343-413d-8df7-6c4bea39c62d
-title: Método PlayForwards
+title: PlayForwards (método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81e607779147ba057b9cfd747ebfe827a25e294e2b04cdfa7e61a0691ecf293c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 10d49d8d6d80613c4dd5b2b8a374002b37d9baa4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119830635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127060985"
 ---
-# <a name="playforwards-method"></a>Método PlayForwards
+# <a name="playforwards-method"></a>PlayForwards (método)
 
 > [!Note]  
 > Este componente está disponible para su uso en los sistemas operativos Microsoft Windows 2000, Windows XP y Windows Server 2003. En versiones posteriores podría modificarse o no estar disponible.
@@ -31,7 +31,7 @@ MSWebDVD.PlayForwards(nSpeed)
 <span id="nSpeed"></span><span id="nspeed"></span><span id="NSPEED"></span>*nSpeed*
 </dt> <dd>
 
-Especifica la velocidad a la que se va a reproducir como un valor entero. Este valor es un multiplicador: 1,0 es la velocidad de reproducción normal; 2.0 es doble velocidad, 0.5 es de media velocidad, y así sucesivamente. Cuando **nSpeed** no es igual a 1.0, el audio se muted y la subpicture está desactivada.
+Especifica la velocidad a la que se va a reproducir como un valor entero. Este valor es un multiplicador: 1,0 es la velocidad de reproducción normal; 2.0 es de doble velocidad, 0.5 es de media velocidad, y así sucesivamente. Cuando **nSpeed** no es igual a 1,0, el audio se silencia y la subaspección se apaga.
 
 </dd> </dl>
 
@@ -39,7 +39,7 @@ Especifica la velocidad a la que se va a reproducir como un valor entero. Este v
 
 No de devuelve ningún valor.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,19 +1,19 @@
 ---
-description: Especifica el corte de alto nivel cuando el descodificador realiza el control de intervalo dinámico en una secuencia de audio Ac-3 de Dolby.
+description: Especifica el corte de alto nivel cuando el descodificador realiza el control de intervalo dinámico en una secuencia de audio Dolby AC-3.
 ms.assetid: 8771a5f9-878b-43fd-8eaa-0bfc276194aa
 title: Propiedad AVDecDDDynamicRangeScaleHigh (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 725737b797d969d46293a9bf9e8f6d590e9fc51ac01d530fed6b8bc59c651629
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 521cd631d92db73f23c7018adeda9bd321d23c1a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120103535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162138"
 ---
-# <a name="avdecdddynamicrangescalehigh-property"></a>Propiedad AVDecDDDynamicRangeScaleHigh
+# <a name="avdecdddynamicrangescalehigh-property"></a>AvDecDDDynamicRangeScaleHigh, propiedad
 
-Especifica el corte de alto nivel cuando el descodificador realiza el control de intervalo dinámico en una secuencia de audio Ac-3 de Dolby.
+Especifica el corte de alto nivel cuando el descodificador realiza el control de intervalo dinámico en una secuencia de audio Dolby AC-3.
 
 Esta propiedad es de lectura y escritura.
 
@@ -40,7 +40,7 @@ El valor de esta propiedad tiene el intervalo siguiente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad solo se aplica cuando el valor de la propiedad [**AVDecDDOperationalMode**](avdecddoperationalmode-property.md) es eAVDecDDOperationalMode \_ LINE.
 
@@ -50,13 +50,13 @@ Esta propiedad solo se aplica cuando el valor de la propiedad [**AVDecDDOperatio
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional aplicaciones \[ de escritorio \| para UWP\]<br/>                     |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional \[ aplicaciones de escritorio para \| UWP\]<br/>                     |
 | Servidor mínimo compatible<br/> | Windows aplicaciones de escritorio de UWP para 2000 \[ \| Server\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

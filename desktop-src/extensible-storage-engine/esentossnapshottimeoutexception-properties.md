@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102399
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 651847b731aeb5cd2f9aea02c041b3e5476556419fe7b69d7a5652e777c7e430
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 52168428215446ecdb2e4fe18b5500085c54a281
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119851755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126965996"
 ---
 # <a name="esentossnapshottimeoutexception-properties"></a>Propiedades de EsentOSSnapshotTimeOutException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentOSSnapshotTimeOutException](./esentossnapshottimeoutexception-class.md) expone los miembros siguientes.
+El [tipo EsentOSSnapshotTimeOutException](./esentossnapshottimeoutexception-class.md) expone los siguientes miembros.
 
 ## <a name="properties"></a>Propiedades
 
@@ -34,7 +34,7 @@ El [tipo EsentOSSnapshotTimeOutException](./esentossnapshottimeoutexception-clas
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentOSSnapshotTimeOutException](./esentossnapshottimeoutexception-clas
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

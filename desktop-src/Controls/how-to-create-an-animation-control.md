@@ -4,12 +4,12 @@ description: En este tema se muestra cómo crear un control de animación.
 ms.assetid: 5852B636-F3D0-47A4-82F6-8BE570013E1B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8117d7c9393a828786532bd3d3fbfcf4f4eaaf6bb1bfdccdc5a2f97fa1c5cb38
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d4ff190617996e42e6580b82311fb51f4248000
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119435825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061917"
 ---
 # <a name="how-to-create-an-animation-control"></a>Cómo crear un control de animación
 

@@ -4,12 +4,12 @@ ms.assetid: 8e22fa2e-e7eb-4dd8-b365-631986bad03e
 title: GetDVDTextStringType (método)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4ad7985101379dd37d605f830ee9b20b4138e8f4c96092aaeb0ae347261adbe
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7205025f1f7269737a4be11639f2f0dfe5e43911
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119812542"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061135"
 ---
 # <a name="getdvdtextstringtype-method"></a>GetDVDTextStringType (método)
 
@@ -46,7 +46,7 @@ Especifica el número de índice de la cadena de texto como un entero.
 
 Devuelve un valor entero que indica el tipo de información contenida en la cadena.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6da4adbd789a8d9ae3344a1a49d39c7f5fbe22b7ec1ca51fcc6cead98ea7780
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 646e225ef269ccddca2cdc29caf635d94c1671e8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120048645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062156"
 ---
 # <a name="em_linescroll-message"></a>MENSAJE EM \_ LINESCROLL
 
@@ -34,7 +34,7 @@ Desplaza el texto en un control de edición multilínea.
 
 **Editar controles:** Número de caracteres que se desplazarán horizontalmente.
 
-**Controles de edición enriquecciones:** Este parámetro no se utiliza; debe ser cero.
+**Controles de edición enriquecciones:** Este parámetro no se usa; debe ser cero.
 
 </dd> <dt>
 
@@ -51,13 +51,13 @@ Si el mensaje se envía a un control de edición multilínea, el valor devuelto 
 
 Si el mensaje se envía a un control de edición de una sola línea, el valor devuelto es **FALSE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El control no se desplaza verticalmente más allá de la última línea de texto del control de edición. Si la línea actual más el número de líneas especificadas por el parámetro *lParam* supera el número total de líneas del control de edición, el valor se ajusta para que la última línea del control de edición se desplace hasta la parte superior de la ventana de control de edición.
 
 **Editar controles:** El **mensaje EM \_ LINESCROLL** desplaza el texto vertical u horizontalmente en un control de edición multilínea. El **mensaje EM \_ LINESCROLL** se puede usar para desplazarse horizontalmente más allá del último carácter de cualquier línea.
 
-**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. El **mensaje EM \_ LINESCROLL** desplaza el texto verticalmente en un control de edición multilínea. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
+**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. El **mensaje EM \_ LINESCROLL** desplaza el texto verticalmente en un control de edición multilínea. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [Acerca de los controles rich edit](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,7 +67,7 @@ El control no se desplaza verticalmente más allá de la última línea de texto
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

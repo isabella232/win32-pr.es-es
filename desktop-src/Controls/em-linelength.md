@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 941a14a40cdc8f0ba0457cff8c789659a4ac3db76e01cd2a1c30047ab888d971
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ce3cbf59cbe31886e55c34bce9f7c2421e431012
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118171394"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127062159"
 ---
 # <a name="em_linelength-message"></a>Mensaje \_ EM LINELENGTH
 
@@ -32,7 +32,7 @@ Recupera la longitud, en caracteres, de una línea en un control de edición. Pu
 *wParam* 
 </dt> <dd>
 
-Índice de caracteres de un carácter de la línea cuya longitud se va a recuperar. Si este parámetro es mayor que el número de caracteres del control , el valor devuelto es cero.
+Índice de caracteres de un carácter de la línea cuya longitud se va a recuperar. Si este parámetro es mayor que el número de caracteres del control, el valor devuelto es cero.
 
 Este parámetro puede ser -1. En este caso, el mensaje devuelve el número de caracteres no seleccionados en las líneas que contienen los caracteres seleccionados. Por ejemplo, si la selección se extiende desde el cuarto carácter de una línea hasta el octavo carácter desde el final de la línea siguiente, el valor devuelto sería 10 (tres caracteres en la primera línea y siete en la siguiente).
 
@@ -47,31 +47,31 @@ Este parámetro no se utiliza.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para los controles de edición multilínea, el valor devuelto es la longitud, en **TCHAR** s, de la línea especificada por el *parámetro wParam.* En el caso del texto ANSI, este es el número de bytes; para texto Unicode, este es el número de caracteres. No incluye el carácter de retorno de carro al final de la línea.
+Para los controles de edición multilínea, el valor devuelto es la longitud, en **TCHAR,** de la línea especificada por el *parámetro wParam.* Para el texto ANSI, este es el número de bytes; Para el texto Unicode, este es el número de caracteres. No incluye el carácter de retorno de carro al final de la línea.
 
-Para los controles de edición de una sola línea, el valor devuelto es la longitud, en **TCHAR** s, del texto del control de edición.
+Para los controles de edición de una sola línea, el valor devuelto es la longitud, en **TCHAR,** del texto del control de edición.
 
 Si *wParam es* mayor que el número de caracteres del control, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use el [**mensaje EM \_ LINEINDEX**](em-lineindex.md) para recuperar un índice de caracteres para un número de línea determinado dentro de un control de edición multilínea.
+Use el [**mensaje EM \_ LINEINDEX para**](em-lineindex.md) recuperar un índice de caracteres para un número de línea determinado dentro de un control de edición multilínea.
 
-**Edición enriqueceda:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [About Rich Edit Controls](about-rich-edit-controls.md).
+**Edición enriquecte:** Compatible con Microsoft Rich Edit 1.0 y versiones posteriores. Para obtener información sobre la compatibilidad de las versiones de edición enriquecciones con las distintas versiones del sistema, vea [Acerca de los controles rich edit](about-rich-edit-controls.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

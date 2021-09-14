@@ -3,7 +3,7 @@ title: Métodos ID2D1RenderTarget FillRectangle (D2d1 \_ 1.h)
 description: Pinta el interior del rectángulo especificado.
 ms.assetid: 08e498f9-b564-4da6-ba9b-bff08964ce08
 keywords:
-- Métodos FillRectangle Direct2D
+- Métodos FillRectangle de Direct2D
 topic_type:
 - apiref
 api_location:
@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 3ae33b1d63633361b43ff61cd7ff0297ac3b8a6553c6218f0fc093f566c31742
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 21339e535aec294b3737f8a81ce313d524004bcf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119874115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127162794"
 ---
 # <a name="id2d1rendertargetfillrectangle-methods"></a>Métodos ID2D1RenderTarget::FillRectangle
 
@@ -30,17 +30,17 @@ Pinta el interior del rectángulo especificado.
 | Método                                                                                                               | Descripción                                                 |
 |:---------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------|
 | [**FillRectangle(D2D1 \_ RECT \_ F&,ID2D1Brush \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillrectangle(constd2d1_rect_f__id2d1brush))  | Pinta el interior del rectángulo especificado. <br/> |
-| [**FillRectangle(D2D1 \_ RECT \_ F , \* ID2D1Brush \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillrectangle(constd2d1_rect_f__id2d1brush)) | Pinta el interior del rectángulo especificado. <br/> |
+| [**FillRectangle(D2D1 \_ RECT \_ F \* ,ID2D1Brush \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillrectangle(constd2d1_rect_f__id2d1brush)) | Pinta el interior del rectángulo especificado. <br/> |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método no devuelve un código de error si se produce un error. Para determinar si se ha producido un error en una operación de dibujo (como **FillRectangle),** compruebe el resultado devuelto por los métodos [**ID2D1RenderTarget::EndDraw**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-enddraw) o [**ID2D1RenderTarget::Flush.**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-flush)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se [**usa id2D1HwndRenderTarget**](/previous-versions/windows/desktop/legacy/dd371275(v=vs.85)) para dibujar y rellenar varios rectángulos. En este ejemplo se genera la salida que se muestra en la ilustración siguiente.
+En el ejemplo siguiente se [**usa un ID2D1HwndRenderTarget**](/previous-versions/windows/desktop/legacy/dd371275(v=vs.85)) para dibujar y rellenar varios rectángulos. En este ejemplo se genera la salida que se muestra en la ilustración siguiente.
 
 ![ilustración de dos rectángulos en un fondo de cuadrícula](images/drawrectangleexample-small.png)
 
@@ -140,7 +140,7 @@ Para ver un tutorial relacionado, consulte [Creación de una aplicación direct2
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

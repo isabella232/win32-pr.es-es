@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 37782b3b9942f34b95b2a2da79e4bd31319ca801
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 579b53a128406fd55466888248727f448950a762
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122468382"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126887553"
 ---
 # <a name="jet_dbinfomisc4-structure"></a>Estructura de JET_DBINFOMISC4
 
@@ -75,7 +75,7 @@ La **JET_DBINFOMISC4** contiene información diversa sobre una base de datos. Es
     } JET_DBINFOMISC4;
 ```
 
-### <a name="members"></a>Miembros
+### <a name="members"></a>Members
 
 **ulVersion**
 
@@ -101,11 +101,11 @@ Realiza un seguimiento de las actualizaciones de formato de base de datos increm
 | <p>0x620,8</p> | <p>Nuevo formato de columna de plantilla (25/1/99).</p> | 
 | <p>0x620,9</p> | <p>Columnas de plantilla ordenadas (24/6/99).</p> | 
 | <p>0x620,A</p> | <p>Código base combinado (26/3/2003).</p> | 
-| <p>0x620,B</p> | <p>Nuevo formato de suma de comprobación (08/1/2004).</p> | 
+| <p>0x620,B</p> | <p>Nuevo formato de suma de comprobación (1/08/2004).</p> | 
 | <p>0x620,C</p> | <p>Se ha aumentado la longitud máxima de clave a 1000/2000 bytes para páginas de 4/8 kb (1/15/2004).</p> | 
 | <p>0x620,D</p> | <p>Sugerencias de espacio del catálogo, space_header.v2 (15/7/2007).</p> | 
-| <p>0x620,E</p> | <p>Agregue el nuevo formato de nodo o extensión al administrador de espacios y úsel para los grupos de espacio reservados (9/8/2007).</p> | 
-| <p>0x620,F</p> | <p>Compresión para valores long intrínsecos (30/10/2007).</p> | 
+| <p>0x620,E</p> | <p>Agregue el nuevo formato de nodo o extensión al administrador de espacios, úsel para grupos reservados de espacio (9/8/2007).</p> | 
+| <p>0x620,F</p> | <p>Compresión para valores long intrínsecos (10/30/2007).</p> | 
 | <p>0x620,10</p> | <p>Compresión para valores largos separados (12/05/2007).</p> | 
 | <p>0x620,11</p> | <p>Nuevo tamaño de fragmento de LV para páginas grandes (29/12/2007).</p> | 
 
@@ -122,10 +122,10 @@ Este es el estado de la base de datos.
 Las siguientes opciones están disponibles para este miembro.
 
 
-| <p>Valor</p> | <p>Significado</p> | 
+| <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_dbstateJustCreated<br />1</p> | <p>La base de datos se acaba de crear.</p> | 
-| <p>JET_dbstateDirtyShutdown<br />2</p> | <p>La base de datos requiere que se ejecute una recuperación de forma dura o flexible para poderse usar o mover. No se debe intentar mover las bases de datos en este estado.</p> | 
+| <p>JET_dbstateDirtyShutdown<br />2</p> | <p>La base de datos requiere que se ejecute una recuperación de forma dura o flexible para poder usarse o moverse. No se debe intentar mover las bases de datos en este estado.</p> | 
 | <p>JET_dbstateCleanShutdown<br />3</p> | <p>La base de datos está en un estado limpio. La base de datos se puede adjuntar sin archivos de registro.</p> | 
 | <p>JET_dbstateBeingConverted<br />4</p> | <p>La base de datos se está actualizando.</p> | 
 | <p>JET_dbstateForceDetach<br />5</p> | <p>Interno.</p> | 
@@ -142,7 +142,7 @@ Null si la base de datos está en un estado desdeso. Esta es la hora en que la b
 
 **logtimeAttach**
 
-Hora en que la base de datos se adjunta por última vez [con JetAttachDatabase](./jetattachdatabase-function.md).
+Hora en que la base de datos se agregó por última vez [con JetAttachDatabase](./jetattachdatabase-function.md).
 
 **lgposAttach**
 
@@ -154,7 +154,7 @@ Hora en que la base de datos se desasocia por última vez [con JetDetachDatabase
 
 **lgposDetach**
 
-Posición del registro que se usó la última vez que la base de datos se desasocia [con JetDetachDatabase](./jetdetachdatabase-function.md).
+Posición del registro que se usó la última vez que la base de datos se desasociaba [con JetDetachDatabase](./jetdetachdatabase-function.md).
 
 **signLog**
 
@@ -277,7 +277,11 @@ Número máximo de generaciones de registros confirmados en la base de datos. No
 ### <a name="requirements"></a>Requisitos
 
 
-| | | <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | | <p><strong>Servidor</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p><strong>Cliente</strong></p> | <p>Requiere Windows Vista, Windows XP o Windows 2000 Professional.</p> | 
+| <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
+| <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 
 
 

@@ -47,19 +47,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6bbc73534914f1b6dc1bfd9f620a436bbcea2056a70cb50757afccf60beea04c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0badba05eafa5cba06e48b8494ca893936af360e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119924655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127160357"
 ---
 # <a name="cim_datafile-class"></a>Cim \_ DataFile (clase)
 
 La **clase \_ DataFile** de CIM representa una colección con nombre de datos o código ejecutable. Solo se devolverán instancias de archivos en discos fijos locales.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -107,7 +107,7 @@ class CIM_DataFile : CIM_LogicalFile
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ DataFile** de CIM tiene estos tipos de miembros:
 
@@ -131,7 +131,7 @@ La **clase \_ DataFile** de CIM tiene estos métodos.
 | [**Eliminar**](delete-method-in-class-cim-datafile.md)                                           | Elimina el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Implementado por WMI.<br/>                                                 |
 | [**DeleteEx**](deleteex-method-in-class-cim-datafile.md)                                       | Elimina el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Implementado por WMI.<br/>                                                 |
 | [**GetEffectivePermission**](geteffectivepermission-method-in-class-cim-datafile.md)           | Determina si el autor de la llamada tiene los permisos agregados especificados por el **argumento Permission.** Implementado por WMI.<br/>                |
-| [**Renombrar**](rename-method-in-class-cim-datafile.md)                                           | Cambia el nombre del archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Implementado por WMI.<br/>                                                 |
+| [**Cambiar nombre**](rename-method-in-class-cim-datafile.md)                                           | Cambia el nombre del archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Implementado por WMI.<br/>                                                 |
 | [**TakeOwnerShip**](takeownership-method-in-class-cim-datafile.md)                             | Obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto. Implementado por WMI.<br/>                                                   |
 | [**TakeOwnerShipEx**](takeownershipex-method-in-class-cim-datafile.md)                         | Obtiene la propiedad del archivo lógico especificado en la ruta de acceso del objeto. Implementado por WMI.<br/>                                                   |
 | [**Descomprimir**](uncompress-method-in-class-cim-datafile.md)                                   | Descomprime el archivo lógico (o directorio) especificado en la ruta de acceso del objeto. Implementado por WMI.<br/>                                            |
@@ -143,7 +143,7 @@ La **clase \_ DataFile** de CIM tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ DataFile** de CIM tiene estas propiedades.
+La **clase \_ DataFile** cim tiene estas propiedades.
 
 <dl> <dt>
 
@@ -159,7 +159,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Access Rights")
 </dt> </dl>
 
-Máscara de bits que representa los derechos de acceso necesarios para acceder o realizar operaciones específicas en el archivo. Para obtener valores de bits, [**vea File and Directory Access Rights Constants**](/windows/desktop/WmiSdk/file-and-directory-access-rights-constants).
+Máscara de bits que representa los derechos de acceso necesarios para acceder o realizar operaciones específicas en el archivo. Para obtener valores de bits, vea Constantes de derechos de [**acceso a archivos y directorios.**](/windows/desktop/WmiSdk/file-and-directory-access-rights-constants)
 
 > [!Note]  
 > En los volúmenes FAT, se devuelve el valor **\_ FULL ACCESS** en su lugar, lo que indica que no se ha establecido ninguna seguridad en el objeto .
@@ -387,7 +387,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ FileSystem**](cim-filesystem.md).**CSCreationClassName**"), [**Clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre de clase del sistema de equipo")
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ FileSystem**](cim-filesystem.md).**CSCreationClassName**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Computer System Class Name")
 </dt> </dl>
 
 Clase del sistema del equipo.
@@ -405,7 +405,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ FileSystem**](cim-filesystem.md).**CSName**"), [**Clave CIM \_**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre del sistema del equipo")
+Calificadores: [**Propagated**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ FileSystem**](cim-filesystem.md).**CSName**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Computer System Name")
 </dt> </dl>
 
 Nombre del sistema del equipo.
@@ -502,7 +502,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Método de cifrado")
 </dt> </dl>
 
-Cadena de forma libre que identifica el algoritmo o la herramienta que se usa para cifrar un archivo lógico. Si el esquema de cifrado no está en proceso (por motivos de seguridad, por ejemplo), use "Unknown". Si el archivo está cifrado, pero su esquema de cifrado es desconocido o no se ha divulgado, use "Encrypted". Si el archivo lógico no está cifrado, use "No cifrado".
+Cadena de forma libre que identifica el algoritmo o la herramienta que se usa para cifrar un archivo lógico. Si el esquema de cifrado no está en la lista (por motivos de seguridad, por ejemplo), use "Unknown". Si el archivo está cifrado, pero su esquema de cifrado es desconocido o no se ha divulgado, use "Encrypted". Si el archivo lógico no está cifrado, use "No cifrado".
 
 Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -520,7 +520,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**Fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Schema**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("File Extension")
 </dt> </dl>
 
-Extensión de nombre de archivo sin el punto anterior (punto).
+Extensión de nombre de archivo sin el período anterior (punto).
 
 Ejemplo: "txt", "mof", "mdb"
 
@@ -555,12 +555,12 @@ Tipo de datos: **uint64**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Tamaño"), [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
+Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Size"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bytes")
 </dt> </dl>
 
 Tamaño del archivo, en bytes.
 
-Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting en WMI.](/windows/desktop/WmiSdk/creating-a-wmi-script)
+Para obtener más información sobre el **uso de valores uint64** en scripts, vea [Scripting in WMI](/windows/desktop/WmiSdk/creating-a-wmi-script).
 
 Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
@@ -748,7 +748,7 @@ Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 </dd> <dt>
 
-**Ruta de acceso**
+**Path**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **cadena**
@@ -944,23 +944,23 @@ Esta propiedad se hereda de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase \_ DataFile** de CIM se deriva de [**CIM \_ LogicalFile**](cim-logicalfile.md).
+La **clase \_ Cim DataFile** se deriva de [**CIM \_ LogicalFile**](cim-logicalfile.md).
 
-WMI implementa la clase **\_ DataFile CIM** y todos sus métodos. La **clase \_ DataFile** de CIM es una clase dinámica.
+WMI implementa la clase **\_ DataFile cim** y todos sus métodos. La **clase \_ Cim DataFile** es una clase dinámica.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
-Por motivos de seguridad, WMI no admite directamente llamar a un equipo remoto e indicarle que copie archivos en sí mismo. Sin embargo, puede usar el lenguaje de programación correspondiente para llamar a FTP o RoboCopy, por ejemplo.
+Debido a los propósitos de seguridad, WMI no admite directamente la llamada a un equipo remoto y le indica que copie archivos a sí mismo. Sin embargo, puede usar el lenguaje de programación correspondiente para llamar a FTP o RoboCopy, por ejemplo.
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo de código [del Centro de scripting](https://Gallery.TechNet.Microsoft.Com/scriptcenter/Generate-Exchange-2388e7c9) se usa una clase **\_ DataFile cim** como parte de una aplicación más grande para generar informes de entorno de intercambio mediante PowerShell.
+En el siguiente ejemplo de código del Centro de [scripting](https://Gallery.TechNet.Microsoft.Com/scriptcenter/Generate-Exchange-2388e7c9) se usa una **clase \_ DataFile de CIM** como parte de una aplicación más grande para generar informes de entorno de intercambio mediante PowerShell.
 
 El ejemplo de código Buscar archivos con [WMI de PowerShell](https://Gallery.TechNet.Microsoft.Com/Find-files-with-WMI-8851e1ea) en la Galería de TechNet usa un archivo de datos **CIM \_** para buscar uno o varios archivos en varios equipos.
 
-En el siguiente ejemplo de código de VBS se describe cómo realizar una búsqueda de caracteres comodín estándar en un archivo de datos. Tenga en cuenta que los delimitadores de barra diagonal inversa deben ser de escape con otra barra diagonal inversa ( \\ \\ ). Además, cuando se usa "**CIM \_ DataFile**.**FileName**" en la cláusula WHERE, el proceso WMIPRVSE examinará todos los directorios de cualquier dispositivo de almacenamiento disponible. Esto puede tardar algún tiempo, especialmente si ha asignado recursos compartidos remotos y puede desencadenar advertencias antivirus.
+En el siguiente ejemplo de código de VBS se describe cómo realizar una búsqueda con caracteres comodín estándar en un archivo de datos. Tenga en cuenta que los delimitadores de barra diagonal inversa deben tener escape con otra barra diagonal inversa ( \\ \\ ). Además, cuando se usa "**CIM \_ DataFile**.**FileName**" en la cláusula WHERE, el proceso WMIPRVSE examinará todos los directorios de cualquier dispositivo de almacenamiento disponible. Esto puede tardar algún tiempo, especialmente si ha asignado recursos compartidos remotos y puede desencadenar advertencias antivirus.
 
 
 ```VB
@@ -974,7 +974,7 @@ Next
 
 
 
-El fragmento de código siguiente limita el intervalo de búsqueda a una unidad, ruta de acceso y extensión de archivo específicas.
+El fragmento de código siguiente limita el intervalo de búsqueda a una unidad, una ruta de acceso y una extensión de archivo específicas.
 
 
 ```VB
@@ -1017,7 +1017,7 @@ El siguiente ejemplo de código de PowerShell recupera un valor de atributo úni
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

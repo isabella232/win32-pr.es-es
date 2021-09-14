@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8903e4a404367327b677a239b8ab28e3cb47e5679203857154f453a5cc01e25e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ba12ffcd1b50b920f28e1969444a2d31a9d073d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119536685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127061157"
 ---
 # <a name="getbitmapsubtype-function"></a>Función GetBitmapSubtype
 
@@ -53,7 +53,7 @@ Puntero a una [**estructura BITMAPINFOHEADER.**](/windows/win32/api/wingdi/ns-wi
 
 Devuelve el GUID del subtipo **de medio**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para los tipos RGB sin comprimir, esta función asigna **el campo biBitCount** al subtipo. Para los tipos de vídeo comprimidos, esta función usa la [**clase FOURCCMap**](fourccmap.md) para asignar el **campo biCompression** al subtipo.
 
@@ -70,7 +70,7 @@ Si la función no puede hacer coincidir el formato con un subtipo, el valor devu
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
