@@ -1,19 +1,19 @@
 ---
-description: En este tema se presentan el nuevo esquema de Extensible Metadata Platform (XMP) y la propiedad de foto System.Photo.PeopleNames de Windows 7 que permite el etiquetado de personas en una foto digital.
+description: En este tema se presentan el nuevo esquema de Extensible Metadata Platform (XMP) y la propiedad de foto system.Photo.PeopleNames de Windows 7 que permite el etiquetado de personas en una foto digital.
 ms.assetid: 557c3e9a-1756-4abb-8465-b12195ecbc91
 title: Introducción al etiquetado de personas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66a262acd70474f75689e99a3bcd1087cd0117ae3602b78a90357aa932fdd7fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e64f2080e51d4d340474e0610fcce9512fc72429
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118205714"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362782"
 ---
 # <a name="people-tagging-overview"></a>Introducción al etiquetado de personas
 
-En este tema se presenta el nuevo esquema de Extensible Metadata Platform (XMP) y la propiedad de foto [System.Photo.PeopleNames](../properties/props-system-photo-peoplenames.md) de Windows 7 que permite el etiquetado de personas en una foto digital. En este tema también se describe cómo usar la API Windows Imaging Component (WIC) para leer y escribir los metadatos necesarios para el etiquetado de personas.
+En este tema se presentan el nuevo esquema de Extensible Metadata Platform (XMP) y la propiedad de foto [System.Photo.PeopleNames](../properties/props-system-photo-peoplenames.md) de Windows 7 que permite el etiquetado de personas en una foto digital. En este tema también se describe cómo usar la API Windows Imaging Component (WIC) para leer y escribir los metadatos necesarios para el etiquetado de personas.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -29,9 +29,9 @@ En este tema se incluyen las siguientes secciones.
     -   [Metadatos de ejemplo](#sample-metadata)
 -   [Temas relacionados](#related-topics)
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Prerrequisitos
 
-Para comprender este tema, debe estar familiarizado con las interfaces de descodificador de WIC y sus componentes del Modelo de objetos componentes (COM) relacionados, como se describe en la información general sobre componentes de creación de imágenes de [Windows.](-wic-about-windows-imaging-codec.md) También ayuda a familiarizarse con los metadatos de creación de imágenes, especialmente XMP.
+Para comprender este tema, debe estar familiarizado con las interfaces de descodificador de WIC y sus componentes de Modelo de objetos componentes (COM) relacionados, como se describe en la introducción a los componentes de creación de imágenes de [Windows.](-wic-about-windows-imaging-codec.md) También ayuda a familiarizarse con los metadatos de creación de imágenes, especialmente XMP.
 
 ## <a name="introduction"></a>Introducción
 
@@ -194,7 +194,7 @@ El esquema de Microsoft Photo 1.2 proporciona un conjunto de propiedades para la
 
 
 
-| Propiedad      | Tipo de valor | Categoría | Descripción                                                                                                                     |
+| Propiedad      | Tipo de valor | Category | Descripción                                                                                                                     |
 |---------------|------------|----------|---------------------------------------------------------------------------------------------------------------------------------|
 | MP:RegionInfo | RegionInfo | Interno | **required:** almacena la raíz de los metadatos de etiquetado de personas. Consulte la sección Microsoft Photo RegionInfo Schema (Esquema de Microsoft Photo RegionInfo) que se muestra a continuación. |
 
@@ -211,9 +211,9 @@ El esquema Microsoft Photo RegionInfo 1.2 proporciona un conjunto de propiedades
 
 
 
-| Propiedad              | Tipo de valor | Categoría | Descripción                                                                                                    |
+| Propiedad              | Tipo de valor | Category | Descripción                                                                                                    |
 |-----------------------|------------|----------|----------------------------------------------------------------------------------------------------------------|
-| MPRI:DateRegionsValid | Fecha       | Externo | **opcional:** fecha en que se creó la última región.                                                          |
+| MPRI:DateRegionsValid | Date       | Externo | **opcional:** fecha en que se creó la última región.                                                          |
 | MPRI:Regiones          | región de la bolsa | Externo | **required:** almacena las regiones de etiquetado de personas. Consulte la sección Esquema de la región foto de Microsoft que se muestra a continuación. |
 
 
@@ -229,7 +229,7 @@ El esquema de Microsoft Photo Region 1.2 proporciona un conjunto de propiedades 
 
 
 
-| MPReg:Property          | Tipo de valor | Categoría | Descripción                                                                                                                                                                                                                                                                                                     |
+| MPReg:Property          | Tipo de valor | Category | Descripción                                                                                                                                                                                                                                                                                                     |
 |-------------------------|------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | MPReg:PersonDisplayName | Texto       | Externo | **required:** almacena el nombre de la persona en el rectángulo especificado.                                                                                                                                                                                                                                            |
 | MPReg:Rectangle         | Texto       | Externo | **opcional:** almacena el rectángulo que identifica a la persona dentro de la foto. El rectángulo se almacena como cuatro valores decimales delimitados por comas. Los dos primeros valores especifican la coordenada superior izquierda; los dos últimos especifican el alto y el ancho del rectángulo. Los valores decimales deben normalizarse en 1. |

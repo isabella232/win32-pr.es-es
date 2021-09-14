@@ -1,5 +1,5 @@
 ---
-description: La clase MemoryOnCard de CIM asocia la memoria física ubicada en paneles de \_ hospedaje, tarjetas adaptadoras, entre otras. Esta asociación define explícitamente la relación de la memoria con las tarjetas.
+description: La clase MemoryOnCard de CIM asocia la memoria física ubicada en paneles de \_ hospedaje, tarjetas adaptadoras, entre otras. Esta asociación define explícitamente la relación de memoria con las tarjetas.
 ms.assetid: 0d094cad-c542-4794-b6e1-87cdc8067668
 ms.tgt_platform: multiple
 title: CIM_MemoryOnCard clase
@@ -17,19 +17,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a07a8894e237be24a4c7b49e8491278ffb9e9ea82109fee00c27fc4eb9d5fcb5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2094101ab0cbbbc769194793273bf080cfe52818
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119506795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254648"
 ---
 # <a name="cim_memoryoncard-class"></a>Cim \_ MemoryOnCard (clase)
 
-La **clase \_ MemoryOnCard de CIM** asocia la memoria física ubicada en paneles de hospedaje, tarjetas adaptadoras, entre otras. Esta asociación define explícitamente la relación de la memoria con las tarjetas.
+La **clase \_ MemoryOnCard de CIM** asocia la memoria física ubicada en paneles de hospedaje, tarjetas adaptadoras, entre otras. Esta asociación define explícitamente la relación de memoria con las tarjetas.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -47,7 +47,7 @@ class CIM_MemoryOnCard : CIM_PackagedComponent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ MemoryOnCard de CIM** tiene estos tipos de miembros:
 
@@ -106,7 +106,7 @@ Memoria [**\_ física CIM que**](cim-physicalmemory.md) describe la memoria fís
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ MemoryOnCard** de CIM se deriva de [**CIM \_ PackagedComponent**](cim-packagedcomponent.md).
 
@@ -118,7 +118,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

@@ -16,14 +16,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f4827d37a115f2bd1bb523f78bdb5975de4314056a174be4bfa886e1a076497
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 659623d892f0f5a556f4890703d4e0dd725536b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119915065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362575"
 ---
-# <a name="lvn_setdispinfo-notification-code"></a>Código de notificación \_ LVN SETDISPINFO
+# <a name="lvn_setdispinfo-notification-code"></a>Código de notificación SETDISPINFO de LVN \_
 
 Notifica a la ventana primaria de un control de vista de lista que debe actualizar la información que mantiene para un elemento. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
@@ -51,7 +51,7 @@ Puntero a una [**estructura NMLVDISPINFO**](/windows/win32/api/commctrl/ns-commc
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El receptor de notificaciones convierte *lParam* para recuperar la [**estructura NMLVDISPINFO.**](/windows/win32/api/commctrl/ns-commctrl-nmlvdispinfoa) El *parámetro wParam* contiene el código del mensaje.
 
@@ -63,12 +63,12 @@ El receptor de notificaciones convierte *lParam* para recuperar la [**estructura
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **LVN \_ SETDISPINFOW** (Unicode) y **LVN \_ SETDISPINFOA** (ANSI)<br/>           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,19 +4,19 @@ ms.assetid: 78cd05a4-df33-42b5-91b9-826ebce04a1d
 title: Programas predeterminados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f1cd54afe23291c191fdd045ca3cb42b68361aa8f7f3d8ef431042cfe9f5c06
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f8cd741794189e47888f4daa1d4585b2d8942cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117861362"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363167"
 ---
 # <a name="default-programs"></a>Programas predeterminados
 
-Use **Programas predeterminados para** establecer la experiencia del usuario predeterminada. Los usuarios pueden **acceder a los** programas predeterminados Panel de control o directamente desde el **menú** Inicio. Establezca la herramienta Acceso a programas y Valores predeterminados del equipo [(SPAD),](cpl-setprogramaccess.md) la experiencia de valores predeterminados principal para los usuarios de Windows XP, ahora es una parte de **programas predeterminados.**
+Use **Programas predeterminados para** establecer la experiencia del usuario predeterminada. Los usuarios pueden **acceder a los** programas predeterminados Panel de control o directamente desde el **menú** Inicio. Establezca la herramienta Acceso a programas y Valores predeterminados de equipo [(SPAD),](cpl-setprogramaccess.md) la experiencia de valores predeterminados principal para los usuarios de Windows XP, ahora es una parte de **programas predeterminados.**
 
 > [!IMPORTANT]
-> Este tema no se aplica a Windows 10. La forma en que funcionan las asociaciones de archivos predeterminadas ha cambiado Windows 10. Para obtener más información, vea la sección Sobre los cambios en **Windows 10 controla las aplicaciones predeterminadas** en esta [entrada](https://blogs.windows.com/windowsexperience/2015/05/20/announcing-windows-10-insider-preview-build-10122-for-pcs/).
+> Este tema no se aplica a Windows 10. La forma en que funcionan las asociaciones de archivos predeterminadas ha cambiado Windows 10. Para obtener más información, vea la sección Cambios en el modo **en que Windows 10 las aplicaciones predeterminadas** en esta [entrada](https://blogs.windows.com/windowsexperience/2015/05/20/announcing-windows-10-insider-preview-build-10122-for-pcs/).
 
  
 
@@ -24,7 +24,7 @@ Cuando un usuario establece los valores predeterminados del programa mediante Pr
 
 Este tema se organiza de la siguiente manera:
 
--   [Introducción a los programas predeterminados y su conjunto de API relacionado](#introduction-to-default-programs-and-its-related-api-set)
+-   [Introducción a los programas predeterminados y a su conjunto de API relacionado](#introduction-to-default-programs-and-its-related-api-set)
 -   [Registro de una aplicación para su uso con programas predeterminados](#registering-an-application-for-use-with-default-programs)
     -   [ProgID](#progids)
     -   [Subclave de registro y descripciones de valores](#registration-subkey-and-value-descriptions)
@@ -42,7 +42,7 @@ Este tema se organiza de la siguiente manera:
 
 **Programas predeterminados** está diseñado principalmente para aplicaciones que usan tipos de archivo estándar, como archivos .mp3 o .jpg o protocolos estándar, como HTTP o mailto. Las aplicaciones que usan sus propios protocolos propietarios y asociaciones de archivos no suelen usar la **funcionalidad Programas predeterminados.**
 
-Después de registrar una aplicación para la **funcionalidad programas** predeterminados, las siguientes opciones y funcionalidades están disponibles mediante el conjunto de API:
+Después de registrar una aplicación para la **funcionalidad Programas** predeterminados, las siguientes opciones y funcionalidades están disponibles mediante el conjunto de API:
 
 -   Restaure todos los valores predeterminados registrados para una aplicación. En desuso para Windows 8.
 -   Restaurar un único valor predeterminado registrado para una aplicación. En desuso para Windows 8.
@@ -69,7 +69,7 @@ Esta sección contiene los siguientes temas:
 -   [RegisteredApplications](#registeredapplications)
 -   [Ejemplo de registro completo](#full-registration-example)
 
-**Los programas predeterminados** requieren que cada aplicación registre explícitamente las asociaciones de archivo, las asociaciones MIME y los protocolos para los que la aplicación debe aparecer como un posible valor predeterminado. Las asociaciones se registran mediante los siguientes elementos del Registro, que se explican con detalle más adelante en este tema en Subclave de registro y Descripciones [de valores](#registration-subkey-and-value-descriptions):
+**Los programas predeterminados** requieren que cada aplicación registre explícitamente las asociaciones de archivo, las asociaciones MIME y los protocolos para los que la aplicación debe aparecer como un posible valor predeterminado. Las asociaciones se registran mediante los siguientes elementos del Registro, que se explican en detalle más adelante en este tema en Subclave de registro y Descripciones [de valores](#registration-subkey-and-value-descriptions):
 
 ```
 HKEY_LOCAL_MACHINE
@@ -122,7 +122,7 @@ HKEY_LOCAL_MACHINE
 
 ### <a name="progids"></a>ProgID
 
-Una aplicación debe proporcionar un [ProgID específico.](fa-progids.md) Asegúrese de incluir toda la información que normalmente se escribe en la subclave predeterminada genérica para la extensión. Por ejemplo, el reproductor multimedia ficticio litware proporciona las clases **HKEY \_ LOCAL \_ MACHINE** SOFTWARE específicas de \\  \\  \\ **la aplicaciónLitwarePlayer11.AssocFile.MP3** subclave. Esa subclave incluye toda la información de la subclave predeterminada genérica **HKEY \_ LOCAL \_ MACHINE** SOFTWARE Classes.mp3además de cualquier información adicional que desee que \\  \\  \\ **** la aplicación registre. Esto garantiza que si el usuario restaura la asociación .mp3 al reproductor de Litware, la información del reproductor de Litware está intacta y no se ha sobrescrito por otra aplicación. (La sobrescritura puede producirse si la subclave predeterminada es el único origen de esa información).
+Una aplicación debe proporcionar un [ProgID específico.](fa-progids.md) Asegúrese de incluir toda la información que normalmente se escribe en la subclave predeterminada genérica para la extensión. Por ejemplo, el reproductor multimedia ficticio litware proporciona las clases **HKEY \_ LOCAL \_ MACHINE** SOFTWARE específicas de \\  \\  \\ **la aplicaciónLitwarePlayer11.AssocFile.MP3** subclave. Esa subclave incluye toda la información de la subclave predeterminada genérica **HKEY \_ LOCAL \_ MACHINE** SOFTWARE Classes.mp3además de cualquier información adicional que desee que la aplicación \\  \\  \\ **** registre. Esto garantiza que si el usuario restaura la asociación .mp3 al reproductor de Litware, la información del reproductor de Litware está intacta y no se ha sobrescrito por otra aplicación. (La sobrescritura puede producirse si la subclave predeterminada es el único origen de esa información).
 
 Al asignar un ProgID a una extensión o protocolo de nombre de archivo, una aplicación puede asignar uno a uno o uno a varios. En el ejemplo de Contoso, ContosoHTML apunta a un solo ProgID que proporciona información de shellexecute para las extensiones .htm, .html, .shtml, .xht y .xhtml. Dado que existe un ProgID diferente para cada protocolo, cuando se usan protocolos, se habilita cada protocolo para que tenga su propia cadena de ejecución.
 
@@ -138,7 +138,7 @@ La  subclave Capabilities contiene toda la **información de programas** predete
 
 
 
-| Valor                  | Tipo                       | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Value                  | Tipo                       | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |------------------------|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ApplicationDescription | REG \_ SZ o REG EXPAND \_ \_ SZ | **Requerido**. Para permitir que un usuario realice una opción de asignación predeterminada informada, una aplicación debe proporcionar una cadena que describa las funcionalidades de la aplicación. Aunque en el ejemplo anterior de Contoso se asigna la descripción directamente al valor ApplicationDescription, las aplicaciones suelen proporcionar la descripción como un recurso insertado en un archivo .dll para facilitar la localización. Si no se proporciona ApplicationDescription, la aplicación no aparece en las listas de interfaz de usuario de los programas predeterminados potenciales.                                                            |
 | ApplicationName        | REG \_ SZ o REG EXPAND \_ \_ SZ | **Opcional.** Nombre por el que el programa aparece en la interfaz de usuario Programas predeterminados. Si la aplicación no proporciona estos datos, en la interfaz de usuario se usa el nombre del programa ejecutable asociado al primer ProgID registrado para la aplicación. ApplicationName siempre debe coincidir con el nombre registrado en [RegisteredApplications.](#registeredapplications) Puede usar ApplicationName si desea que distintos tipos de aplicación, como un explorador y un cliente de correo electrónico, apunten al mismo archivo ejecutable mientras aparecen como nombres diferentes.<br/> |
@@ -239,7 +239,7 @@ HKEY_LOCAL_MACHINE
                      (Default) = %ProgramFiles%\Litware\litware.exe
 ```
 
-Las entradas siguientes muestran el ProgID combinado para la extensión .mpeg tipo MIME y el nombre de archivo.
+Las entradas siguientes muestran el ProgID combinado para la extensión .mpeg tipo MIME y la extensión de nombre de archivo.
 
 ```
 HKEY_LOCAL_MACHINE
@@ -288,7 +288,7 @@ HKEY_LOCAL_MACHINE
 El registro del explorador debe seguir los procedimientos recomendados descritos en este tema. Cuando se instala el explorador, Windows puede presentar al usuario una notificación del sistema a través de la cual el usuario puede seleccionar el explorador como valor predeterminado del sistema. Esta notificación se muestra cuando se cumplen estas condiciones:
 
 -   El instalador del explorador llama a [**SHChangeNotify**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify) con la marca **\_ ASSOCCHANGED de SHCNE** para indicar a Windows que se han registrado nuevos controladores de protocolo.
--   Windows detecta que una o varias aplicaciones nuevas se han registrado para controlar los protocolos http:// y https://, y el usuario aún no ha recibido una notificación. En otras palabras, no se ha mostrado nada de lo siguiente al usuario: una notificación del sistema que anuncia la aplicación, un control flyout OpenWith que contiene la aplicación o la página Establecer valores predeterminados de usuario (SUD) Panel de control la aplicación.
+-   Windows detecta que una o varias aplicaciones nuevas se han registrado para controlar los protocolos http:// y https://, y el usuario aún no ha recibido una notificación. En otras palabras, no se ha mostrado nada de lo siguiente al usuario: una notificación del sistema que anuncia la aplicación, un control flyout OpenWith que contiene la aplicación o la página establecer valores predeterminados de usuario (SUD) Panel de control la aplicación.
 
 En el ejemplo siguiente se muestra el código de registro recomendado que el instalador del explorador debe ejecutar después de escribir sus claves del Registro.
 
@@ -344,7 +344,7 @@ En esta sección se proporcionan instrucciones de procedimientos recomendados pa
 
 Además de los procedimientos de instalación que se suelen practicar en Windows XP, una  aplicación basada en Windows Vista o posterior debe registrarse con la característica Programas predeterminados para aprovechar su funcionalidad.
 
-Realice la siguiente secuencia de pasos durante la instalación. Los pasos del 1 al 3 coinciden con los pasos que se usaron en Windows XP; El paso 4 era nuevo en Windows Vista.
+Realice la siguiente secuencia de pasos durante la instalación. Los pasos 1 a 3 coinciden con los pasos que se usaron en Windows XP; El paso 4 era nuevo en Windows Vista.
 
 1.  Instale los archivos binarios necesarios.
 2.  Escriba ProgID en HKEY \_ LOCAL \_ MACHINE. Tenga en cuenta que las aplicaciones deben crear progID específicos de la aplicación para sus asociaciones.
@@ -363,13 +363,13 @@ Cuando un usuario ejecuta la aplicación por primera vez, se recomienda que la a
 
 Antes de Windows 8, si el usuario acepta la configuración predeterminada, la aplicación llama a [**IApplicationAssociationRegistration::SetAppAsDefaultAll**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iapplicationassociationregistration-setappasdefaultall), que convierte todas las asociaciones de nivel de equipo declaradas durante la instalación en la configuración por usuario para ese usuario.
 
-Si el usuario decide personalizar la configuración, la aplicación llama a [**IApplicationAssociationRegistrationUI::LaunchAdvancedAssociationUI**](/windows/desktop/api/Shobjidl/nf-shobjidl-iapplicationassociationregistrationui-launchadvancedassociationui) para mostrar la interfaz de usuario de asociación de archivos. En la ilustración siguiente se muestra esta ventana para el reproductor multimedia ficticio litware.
+Si el usuario decide personalizar la configuración, la aplicación llama a [**IApplicationAssociationRegistrationUI::LaunchAdvancedAssociationUI**](/windows/desktop/api/Shobjidl/nf-shobjidl-iapplicationassociationregistrationui-launchadvancedassociationui) para mostrar la interfaz de usuario de asociación de archivos. En la ilustración siguiente se muestra esta ventana para el reproductor multimedia de Litware ficticio.
 
-![captura de pantalla de las asociaciones de conjunto para una página de programa para litware](images/setassociationsforaprogramforlitware.png)
+![captura de pantalla de las asociaciones de conjunto de una página del programa para litware](images/setassociationsforaprogramforlitware.png)
 
-La ventana de asociación de archivos muestra los valores predeterminados que registró la aplicación y también muestra el valor predeterminado actual para otras extensiones y protocolos. Una vez que el usuario termina de personalizar sus valores predeterminados, hace clic **en** el botón Guardar para confirmar los cambios. Si el usuario hace clic **en Cancelar**, la ventana se cierra sin guardar los cambios.
+La ventana de asociación de archivos muestra los valores predeterminados que registró la aplicación y también muestra el valor predeterminado actual para otras extensiones y protocolos. Una vez que el usuario termina de personalizar sus valores predeterminados, hace clic en el **botón** Guardar para confirmar los cambios. Si el usuario hace clic **en Cancelar**, la ventana se cierra sin guardar los cambios.
 
-Debe usar esta interfaz de usuario para las aplicaciones en lugar de crear la suya propia. Al hacerlo, guarda los recursos que anteriormente eran necesarios para desarrollar la interfaz de usuario de asociación de archivos. También garantiza que las asociaciones se guardan correctamente.
+Debe usar esta interfaz de usuario para las aplicaciones en lugar de crear las suyas propias. Al hacerlo, guarda los recursos que se requerían anteriormente para desarrollar la interfaz de usuario de asociación de archivos. También garantiza que las asociaciones se guardan correctamente.
 
 ### <a name="set-an-application-to-check-whether-it-is-the-default"></a>Establecer una aplicación para comprobar si es el valor predeterminado
 
@@ -378,9 +378,9 @@ Debe usar esta interfaz de usuario para las aplicaciones en lugar de crear la su
 
  
 
-Las aplicaciones suelen comprobar si se establecen como valor predeterminado cuando se ejecutan. Establezca las aplicaciones para realizar esta comprobación mediante una llamada a [**IApplicationAssociationRegistration::QueryAppIsDefault**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iapplicationassociationregistration-queryappisdefault) o [**IApplicationAssociationRegistration::QueryAppIsDefaultAll**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iapplicationassociationregistration-queryappisdefaultall).
+Las aplicaciones suelen comprobar si se establecen como valor predeterminado cuando se ejecutan. Establezca las aplicaciones para que realicen esta comprobación mediante una llamada a [**IApplicationAssociationRegistration::QueryAppIsDefault**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iapplicationassociationregistration-queryappisdefault) o [**IApplicationAssociationRegistration::QueryAppIsDefaultAll**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iapplicationassociationregistration-queryappisdefaultall).
 
-Si la aplicación determina que no es el valor predeterminado, puede presentar la interfaz de usuario que pregunta al usuario si debe aceptar la situación actual o si quiere que la aplicación sea el valor predeterminado. Incluya siempre una casilla en esta interfaz de usuario que esté seleccionada de forma predeterminada y que presente la opción que no se volverá a solicitar.
+Si la aplicación determina que no es el valor predeterminado, puede presentar la interfaz de usuario que pregunta al usuario si debe aceptar la situación actual o si quiere que la aplicación sea la predeterminada. Incluya siempre una casilla en esta interfaz de usuario que esté seleccionada de forma predeterminada y que presente la opción de no volver a preguntar.
 
 > [!Note]  
 > La opción predeterminada debe estar controlada por el usuario. Una aplicación nunca debe reclamar un valor predeterminado sin preguntar al usuario.
@@ -409,7 +409,7 @@ En la ilustración siguiente se muestra un cuadro de diálogo de ejemplo.
 [Directrices para administrar aplicaciones predeterminadas en Windows Vista y versiones posteriores](vista-managing-defaults.md)
 </dt> <dt>
 
-[Establecer el acceso a programas y los valores predeterminados del equipo (SPAD)](cpl-setprogramaccess.md)
+[Establecer el acceso al programa y los valores predeterminados del equipo (SPAD)](cpl-setprogramaccess.md)
 </dt> </dl>
 
  

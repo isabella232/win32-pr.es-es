@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 5e497d389646249c03bfaa4ac8625ce2a440b97f4ff6b8c0b0942ec957d0901e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 66f3c91d6023655daf85b2a0d726d98a685b001b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117669481"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362803"
 ---
 # <a name="iwiatransferenumwia_format_info-method"></a>IWiaTransfer::EnumWIA \_ FORMAT \_ INFO (método)
 
@@ -55,20 +55,20 @@ Tipo: **HRESULT**
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las aplicaciones deben llamar [al método IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) en el puntero de interfaz recibido a través del *parámetro ppIEnum.*
+Las aplicaciones deben llamar [al método IUnknown::Release en](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) el puntero de interfaz recibido a través del parámetro *ppIEnum.*
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
-| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
-| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
+| Encabezado<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
+| IDL<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
 | Biblioteca<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 

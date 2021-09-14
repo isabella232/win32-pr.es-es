@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 79b7db00eb2bab422adaa22d798c373ece7adf061faff43a67e13ee07528a2ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aae44fda5847e5b86616b40ab1bf4ab8cbd206b0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119028823"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362826"
 ---
 # <a name="desktop-app-functionality-is-impacted-if-not-run-in-windowed-mode"></a>La funcionalidad de la aplicación de escritorio se afecta si no se ejecuta en modo de ventana
 

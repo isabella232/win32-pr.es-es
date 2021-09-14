@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 481e64c00ced458be05255af451206a42d449c42d157794dfd1077cf2dda278a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 79d3abbed038e09f2e73c62e5e3d9b16545e8f60
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118721095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363078"
 ---
 # <a name="ishelldispatch2-object"></a>Objeto IShellDispatch2
 
@@ -29,7 +29,7 @@ Extiende el [**objeto IShellDispatch**](ishelldispatch.md) con una variedad de f
 
  
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto IShellDispatch2** tiene estos tipos de miembros:
 
@@ -57,7 +57,7 @@ El **objeto IShellDispatch2** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener una explicación de Windows servicios, consulte la [documentación de](../services/services.md) servicios.
 
@@ -65,12 +65,12 @@ Para obtener una explicación de Windows servicios, consulte la [documentación 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
@@ -82,7 +82,7 @@ Para obtener una explicación de Windows servicios, consulte la [documentación 
 [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)
 </dt> <dt>
 
-[**Objeto Shell**](shell.md)
+[**Objeto shell**](shell.md)
 </dt> <dt>
 
 [**IShellDispatch**](ishelldispatch.md)

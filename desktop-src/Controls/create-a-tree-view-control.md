@@ -4,12 +4,12 @@ description: Para crear un control de vista de árbol, use la función CreateWin
 ms.assetid: FEC3BF62-3085-47D4-B82E-7BD7B34B397D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c217ed9d1ea29d1c563ee1bc4246b43528182383b6f8d1dd78dd4f73a220e9f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 136ec22cc4f3f88e57266a4c2ac88df542a39429
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119920665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254558"
 ---
 # <a name="how-to-create-a-tree-view-control"></a>Cómo crear un control Tree-View control
 
@@ -21,7 +21,7 @@ Para crear un control de vista de árbol, use la [**función CreateWindowEx**](/
 
 -   [Windows Controles](window-controls.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
 -   Windows Interfaz de usuario programación
@@ -81,7 +81,7 @@ HWND CreateATreeView(HWND hwndParent)
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al crear un control de vista de árbol, también puede enviarle un mensaje [**\_ WM SETFONT**](/windows/desktop/winmsg/wm-setfont) para establecer la fuente que se usará para el texto. Debe enviar este mensaje antes de insertar los elementos. De forma predeterminada, una vista de árbol usa la fuente de título del icono. Aunque puede personalizar la fuente por elemento mediante El dibujo personalizado [,](custom-draw.md)el control de vista de árbol usa las dimensiones de la fuente especificada por el mensaje **WM \_ SETFONT** para determinar el espaciado y el diseño.
 

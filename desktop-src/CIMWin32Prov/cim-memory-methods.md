@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: CIM_Memory métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 625a58f6f1947eb25f2a0b4f85da95bf005ad50bfbb7d49f24205f4904b00af3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8e77165e2a9b8487362302573d8b0011c054d2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119548195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254690"
 ---
 # <a name="cim_memory-methods"></a>Métodos de memoria CIM \_
 

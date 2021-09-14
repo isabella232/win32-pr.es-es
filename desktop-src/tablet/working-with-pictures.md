@@ -4,12 +4,12 @@ ms.assetid: 9f4f0f96-68a3-447d-a239-599c9fd3e343
 title: Trabajar con imágenes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad6e3331d384f30084082e8ef29c5a3a5b44232843bc834a8282bf1786a088d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af3a90c0d18253eaf4aea60eafc48bd1c24fcc3e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118449206"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362879"
 ---
 # <a name="working-with-pictures"></a>Trabajar con imágenes
 
@@ -30,7 +30,7 @@ Para mostrar una imagen en tiempo de diseño en Visual Studio .NET:
 
 1.  Arrastre un control [InkPicture](/previous-versions/aa514604(v=msdn.10)) en un formulario o haga doble clic en el control InkPicture en el Cuadro de herramientas.
 2.  En la **ventana Propiedades,** seleccione la **propiedad Imagen** y, a continuación, haga clic en el botón de puntos suspensivos para abrir el **cuadro de** diálogo Abrir.
-3.  Si busca un tipo de archivo específico (por ejemplo, .jpg archivos), selecciónelo en el cuadro Archivos **de** tipo .
+3.  Si busca un tipo de archivo específico (por ejemplo, archivos .jpg), selecciónelo en el cuadro Archivos **de** tipo .
 4.  Seleccione el archivo que desea mostrar.
 
 Para borrar la imagen en tiempo de diseño:
@@ -49,7 +49,7 @@ ctlInkPicture.Image = Image.FromFile("c:\myImageFile")
 
 
 
-También puede incluir una imagen de fondo con la propiedad [BackgroundImage](/dotnet/api/system.drawing.image?view=dotnet-plat-ext-3.1&preserve-view=true) del objeto [Image](/dotnet/api/system.windows.forms.control.backgroundimage?view=netcore-3.1) heredado. sin embargo, no se puede cambiar el tamaño de esa imagen.
+También puede incluir una imagen de fondo con la propiedad [BackgroundImage](/dotnet/api/system.drawing.image?view=dotnet-plat-ext-3.1&preserve-view=true) del objeto [Image](/dotnet/api/system.windows.forms.control.backgroundimage?view=netcore-3.1) heredado; sin embargo, no se puede cambiar el tamaño de esa imagen.
 
  
 

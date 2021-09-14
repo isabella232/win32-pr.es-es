@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd8d07b636a14624632d0e41ebcf6db66f420b9df4f8ca852e55ab2f3e1578e6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a159710b3086bcba5298a5a88f9cab15f76e0d89
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119656205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362647"
 ---
 # <a name="lvm_setview-message"></a>Mensaje \_ SETVIEW de LVM
 
@@ -39,7 +39,7 @@ Establece la vista de un control list-view.
 
 Devuelve 1 si se realiza correctamente o -1 en caso contrario. Por ejemplo, se devuelve -1 si la vista no es válida.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 A continuación se encuentran los valores de las vistas.
 
@@ -58,11 +58,11 @@ A continuación se encuentran los valores de las vistas.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

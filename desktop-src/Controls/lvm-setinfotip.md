@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef739535e399550911adfbe86d7376d3efeb77cd797ba807b24ee682d1f3fe3d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 90827766a6f1218dbbd631ed4eaf6b2989257944
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119919905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362710"
 ---
 # <a name="lvm_setinfotip-message"></a>Mensaje \_ SETINFOTIP de LVM
 
-Establece texto de información sobre herramientas en respuesta retrasada a la [notificación \_ LVN GETINFOTIP.](lvn-getinfotip.md)
+Establece el texto de la información sobre herramientas en respuesta retrasada a [la \_ notificación GETINFOTIP de LVN.](lvn-getinfotip.md)
 
 ## <a name="parameters"></a>Parámetros
 
@@ -39,13 +39,13 @@ Establece texto de información sobre herramientas en respuesta retrasada a la [
 
 Devuelve **TRUE si** el texto de la información sobre herramientas se establece correctamente o **FALSE** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **mensaje LVM \_ SETINFOTIP permite** que una aplicación calcule información sobre información en segundo plano mediante los pasos siguientes:
 
 1.  En respuesta a la [notificación \_ LVN GETINFOTIP,](lvn-getinfotip.md) establezca el miembro **pszText** de la estructura [**NMLVGETINFOTIP**](/windows/win32/api/commctrl/ns-commctrl-nmlvgetinfotipa) en una cadena vacía y devuelva 0.
 2.  En segundo plano, calcule la información.
-3.  Después de calcular la información, envíe el mensaje **\_ LVM SETINFOTIP** y establezca el miembro **pszText** de la estructura [**LVSETINFOTIP**](/windows/win32/api/commctrl/ns-commctrl-lvsetinfotip) en la información y los miembros **iItem** e **iSubItem** al elemento y subelemento al que se aplica la información.
+3.  Después de calcular la información, envíe el mensaje **LVM \_ SETINFOTIP** y establezca el miembro **pszText** de la estructura [**LVSETINFOTIP**](/windows/win32/api/commctrl/ns-commctrl-lvsetinfotip) en la información y los miembros **iItem** e **iSubItem** al elemento y subelemento al que se aplica la información.
 
 El texto que se pasa al mensaje **\_ SETINFOTIP** de LVM solo aparece si el elemento y el sub item descritos por la estructura [**LVSETINFOTIP**](/windows/win32/api/commctrl/ns-commctrl-lvsetinfotip) siguen en un estado que requiere información
 
@@ -62,7 +62,7 @@ El texto que se pasa al mensaje **\_ SETINFOTIP** de LVM solo aparece si el elem
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

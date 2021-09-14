@@ -1,19 +1,19 @@
 ---
-description: El mensaje de la \_ tableta \_ de WM eliminada se envía cuando se quita un dispositivo de tableta gráfica de Windows.
+description: El mensaje WM TABLET DELETED se publica cuando se quita un \_ \_ dispositivo de tableta Windows.
 ms.assetid: af5be7f0-a213-49a1-800e-c922281522c8
-title: Mensaje de WM_TABLET_DELETED (Tpcshrd. h)
+title: WM_TABLET_DELETED mensaje (Tpcshrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: da8ade03d199f8ee7a258b9db2aeea039fd725e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105696330"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362890"
 ---
-# <a name="wm_tablet_deleted-message"></a>\_Mensaje eliminado de Tablet PC de WM \_
+# <a name="wm_tablet_deleted-message"></a>Mensaje \_ WM TABLET \_ DELETED
 
-El mensaje de la **tableta de WM \_ \_ eliminada** se envía cuando se quita un dispositivo de tableta gráfica de Windows.
+El **mensaje WM TABLET \_ \_ DELETED** se publica cuando se quita un dispositivo de tableta de Windows.
 
 
 ```C++
@@ -30,7 +30,7 @@ El mensaje de la **tableta de WM \_ \_ eliminada** se envía cuando se quita un 
 *wParam* 
 </dt> <dd>
 
-Índice del dispositivo de tableta gráfica que se va a quitar.
+Índice del dispositivo de tableta que se va a quitar.
 
 </dd> <dt>
 
@@ -43,9 +43,9 @@ Sin usar.
 
 ## <a name="remarks"></a>Observaciones
 
-Este mensaje se envía a todas las ventanas de nivel superior del sistema, incluidas las ventanas sin propietario deshabilitadas o invisibles, las ventanas superpuestas y las ventanas emergentes. pero el mensaje no se envía a las ventanas secundarias.
+Este mensaje se envía a todas las ventanas de nivel superior del sistema, incluidas las ventanas no instaladas deshabilitadas o invisibles, las ventanas superpuestas y las ventanas emergentes. pero el mensaje no se envía a las ventanas secundarias.
 
-Los índices pasados en *wParam* están relacionados con el índice utilizado por el método [**ITabletManager:: GetTablet**](/previous-versions/windows/desktop/legacy/aa373683(v=vs.85)) .
+Los índices pasados *en wParam* están relacionados con el índice utilizado por el [**método ITabletManager::GetTablet.**](/previous-versions/windows/desktop/legacy/aa373683(v=vs.85))
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Los índices pasados en *wParam* están relacionados con el índice utilizado po
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                        |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                            |
-| Encabezado<br/>                   | <dl> <dt>Tpcshrd. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Tpcshrd.h</dt> </dl> |
 
 
 

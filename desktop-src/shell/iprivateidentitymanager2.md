@@ -9,12 +9,12 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.assetid: 14b1182e-3442-4bd1-98d9-62fac2f91cf2
-ms.openlocfilehash: 96fc4e5600c032db4df150ab64e6617a494b006411f799f2ead472af151d398d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d411b6bb205e908d0cbb4fc6f6439d89b3c0310a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119032293"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363083"
 ---
 # <a name="iprivateidentitymanager2-interface"></a>Interfaz IPrivateIdentityManager2
 

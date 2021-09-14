@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 987eec4340a6ea5c63e145c2109eea5668aa0185869d23390988b333556041c3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ec7d04118cce54b0fe3e589ebb533b8527e1c51e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119640265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254517"
 ---
 # <a name="cbaseinputpinm_bflushing-member"></a>Miembro CBaseInputPin::m \_ bFlushing
 

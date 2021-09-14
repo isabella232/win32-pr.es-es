@@ -4,12 +4,12 @@ ms.assetid: 19902bfa-504e-40cd-882a-4fac4bb7daf6
 title: Uso de PenInputPanel con cuadros combinados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9da1e90d581e08f9a23346bbf13cf8c3866f6e947f1d9b23375248f3ba9c8636
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c5306708fd00871f07b241ca777e672e2d3de94
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119589305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362911"
 ---
 # <a name="using-the-peninputpanel-with-combo-boxes"></a>Uso de PenInputPanel con cuadros combinados
 

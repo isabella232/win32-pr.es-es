@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: a3f363300ae38817d39a9a6fb253f8d4a7bf34f4357b47e7e961b5cee5d5bb12
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f49666096f35f9871f8a3b3c141d4bc169dea0c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119093109"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363119"
 ---
 # <a name="folder2self-property"></a>Propiedad Folder2.Self
 
@@ -41,7 +41,7 @@ Objeto que se evalúa como el objeto [**FolderItem de la**](folderitem.md) carpe
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa Self** para recuperar [**folderItem**](folderitem.md) para la carpeta C: \\ Windows. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa Self** para recuperar [**folderItem**](folderitem.md) para la carpeta C: \\ Windows carpeta. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -138,13 +138,13 @@ End Sub
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

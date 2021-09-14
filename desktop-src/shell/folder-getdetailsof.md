@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: c703150069bc839f2d20024c0de8f3197fba09c5c3571e3de818dec3f3d6737c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3ab89f00f254778a2417644d894f1e9e81eb43cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117860333"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363154"
 ---
 # <a name="foldergetdetailsof-method"></a>Método Folder.GetDetailsOf
 
@@ -130,7 +130,7 @@ Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)\***
 
 Cadena que contiene el detalle recuperado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > No todos los métodos se implementan para todas las carpetas. Por ejemplo, el [**método ParseName**](folder-parsename.md) no se implementa para la carpeta Panel de control (CSIDL \_ CONTROLS). Si intenta llamar a un método sin implementar, se 0x800A01BD error (decimal 445).
@@ -139,7 +139,7 @@ Cadena que contiene el detalle recuperado.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa GetDetailsOf** para recuperar el tipo del archivo denominado Clock.avi. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa GetDetailsOf** para recuperar el tipo del archivo denominado Clock.avi. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -238,12 +238,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shlobj \_ core.h (incluir Shldisp.h)</dt> </dl>  |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

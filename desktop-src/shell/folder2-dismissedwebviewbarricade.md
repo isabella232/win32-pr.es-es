@@ -1,5 +1,5 @@
 ---
-description: Se llama en respuesta a la vista web descartada por el usuario.
+description: Se llama en respuesta a que el usuario descarta la vista web.
 ms.assetid: 170893b6-c947-45b1-b717-a93a0b083bda
 title: Método Folder2.DismissedWebViewBarricade (Shldisp.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 1a5380330e807eabe76cf1223811fd06147468e12d0c13244b0e44d391aa6e83
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cdedc7292b0dd52ca903b944993e32df1ec2c3b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119937105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363135"
 ---
 # <a name="folder2dismissedwebviewbarricade-method"></a>Método Folder2.DismissedWebViewBarricade
 
-Se llama en respuesta a la vista web descartada por el usuario.
+Se llama en respuesta a que el usuario descarta la vista web.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,13 +41,13 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación llama a este método después de que el usuario descarte la vista web.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa DismissedWebViewBarricade para** especificar que se ha descartado la vista web para C: Windows \\ carpeta. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa DismissedWebViewBarricade** para especificar que se ha descartado la vista web para la carpeta C: Windows \\ web. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -122,15 +122,15 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

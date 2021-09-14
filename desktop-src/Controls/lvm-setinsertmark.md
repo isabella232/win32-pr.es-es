@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fae1cad35bd20605c4cb229dac69eb7461add8b7240b495cc48fb809d39aa098
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dab80b1b73b620ce94b75aecab90f6bdd69bf228
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119919865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362706"
 ---
 # <a name="lvm_setinsertmark-message"></a>Mensaje \_ LVM SETINSERTMARK
 
@@ -37,9 +37,9 @@ Establece el punto de inserción en la posición definida.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario. **Se** devuelve FALSE si el tamaño del miembro **cbSize** de la estructura [**LVINSERTMARK**](/windows/desktop/api/Commctrl/ns-commctrl-lvinsertmark) no es igual al tamaño real de la estructura o cuando no se aplica un punto de inserción en la vista actual.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario. **Se** devuelve FALSE si el tamaño del miembro **cbSize** de la estructura [**LVINSERTMARK**](/windows/desktop/api/Commctrl/ns-commctrl-lvinsertmark) no es igual al tamaño real de la estructura o cuando no se aplica un punto de inserción en la vista actual.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un punto de inserción solo puede aparecer si el control de vista de lista está en la vista de iconos, la vista de icono pequeña o la vista de mosaico, y no está en modo de vista de grupo.
 
@@ -56,7 +56,7 @@ Un punto de inserción solo puede aparecer si el control de vista de lista está
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 6ef4db6bbd1cb2924de97907f04781cceccaf1554f3815483a8cbc82473053b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f48fc719525d290cc3f43965762e748569ef86b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118051086"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363182"
 ---
 # <a name="supporting-shell-applications"></a>Compatibilidad con aplicaciones de Shell
 
@@ -23,7 +23,7 @@ ms.locfileid: "118051086"
 -   [Windows Bibliotecas](library-ovw.md)
 -   [Carpetas conocidas](known-folders.md)
 -   [Administración del sistema de archivos](manage.md)
--   [Registro de un explorador de Internet o un cliente de correo electrónico con el Windows inicio](start-menu-reg.md)
+-   [Registrar un explorador de Internet o un cliente de correo electrónico con el Windows inicio](start-menu-reg.md)
 -   [Registro de programas con tipos de cliente](reg-middleware-apps.md)
 -   [Crear un vínculo de shell](./links.md)
 -   [Uso de autocompletar](ac-ovw.md)

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4151f7d6e3736e6fe28faa28bc258fb4f85bfb57622b1ec77c02ed83ea187941
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 779d31fd781a72dbdfbc4738e091482ca4a08528
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119919965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362718"
 ---
 # <a name="lvm_setimagelist-message"></a>Mensaje \_ SETIMAGELIST de LVM
 
@@ -60,7 +60,7 @@ Identificador de la lista de imágenes que se asignará.
 
 Devuelve el identificador a la lista de imágenes previamente asociada al control si se realiza correctamente o **NULL** en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La lista de imágenes actual se destruirá cuando se destruya el control list-view a menos que se establezca el estilo [**\_ LVS SHAREIMAGELISTS.**](list-view-window-styles.md) Si usa este mensaje para reemplazar una lista de imágenes por otra, la aplicación debe destruir explícitamente todas las listas de imágenes distintas de la actual.
 
@@ -72,7 +72,7 @@ La lista de imágenes actual se destruirá cuando se destruya el control list-vi
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

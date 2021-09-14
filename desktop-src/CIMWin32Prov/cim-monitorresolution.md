@@ -1,5 +1,5 @@
 ---
-description: La clase MonitorResolution de CIM representa la relación entre las resoluciones horizontales y verticales y la frecuencia de actualización y el modo de examen \_ de un monitor de escritorio. Los valores se especifican en el objeto de controlador de vídeo.
+description: La clase MonitorResolution de CIM representa la relación entre las resoluciones horizontal y vertical y la frecuencia de actualización y el modo \_ de examen de un monitor de escritorio. Los valores se especifican en el objeto de controlador de vídeo.
 ms.assetid: 064620dd-2d92-42d0-9167-35867830a077
 ms.tgt_platform: multiple
 title: CIM_MonitorResolution clase
@@ -23,19 +23,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: aa1fd025c87b3b497e400351aed91af71bf4958f3ee8748bf5d23255540dc6cf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b359a2e7eccf31b32aced8a2ea9f85fb6dc48b7a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119506724"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254631"
 ---
 # <a name="cim_monitorresolution-class"></a>Cim \_ MonitorResolution (clase)
 
-La **clase \_ MonitorResolution de CIM** representa la relación entre las resoluciones horizontales y verticales y la frecuencia de actualización y el modo de examen de un monitor de escritorio. Los valores se especifican en el objeto de controlador de vídeo.
+La **clase \_ MonitorResolution de CIM** representa la relación entre las resoluciones horizontal y vertical y la frecuencia de actualización y el modo de examen de un monitor de escritorio. Los valores se especifican en el objeto de controlador de vídeo.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DE DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de la versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -59,7 +59,7 @@ class CIM_MonitorResolution : CIM_Setting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ MonitorResolution de CIM** tiene estos tipos de miembros:
 
@@ -85,7 +85,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 
 Breve descripción textual del objeto actual.
 
-Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
+Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ Tipo de acceso: solo lectura
 
 Descripción textual del objeto actual.
 
-Esta propiedad se hereda de cim [**\_ setting**](cim-setting.md).
+Esta propiedad se hereda de la [**configuración de CIM \_**](cim-setting.md).
 
 </dd> <dt>
 
@@ -113,7 +113,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentHorizontalResolution**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Monitor Resolutions \| 002.2"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("pixels")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentHorizontalResolution**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DmTF \| Monitor Resolutions \| 002.2"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("pixels")
 </dt> </dl>
 
 Resolución horizontal del monitor, en píxeles.
@@ -132,7 +132,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**MaxRefreshRate**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Monitor Resolutions \| 002.7"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
 </dt> </dl>
 
-Frecuencia de actualización máxima del monitor, en hercios, cuando se admite un intervalo de velocidades en las resoluciones especificadas.
+Frecuencia máxima de actualización del monitor, en hercios, cuando se admite un intervalo de tarifas en las resoluciones especificadas.
 
 </dd> <dt>
 
@@ -148,7 +148,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**MinRefreshRate**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Monitor Resolutions \| 002.6"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
 </dt> </dl>
 
-Frecuencia de actualización mínima del monitor, en hercios, cuando se admite un intervalo de velocidades en las resoluciones especificadas.
+Frecuencia de actualización mínima del monitor, en hercios, cuando se admite un intervalo de tarifas en las resoluciones especificadas.
 
 </dd> <dt>
 
@@ -164,7 +164,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentRefreshRate**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Monitor Resolutions \| 002.4"), [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("hertz")
 </dt> </dl>
 
-Frecuencia de actualización del monitor, en hertz. Si se admite un intervalo de tarifas, use las propiedades **MinRefreshRate** y **MaxRefreshRate** y establezca esta propiedad en 0.
+Frecuencia de actualización del monitor, en hercios. Si se admite un intervalo de tarifas, use las propiedades **MinRefreshRate** y **MaxRefreshRate** y establezca esta propiedad en 0.
 
 </dd> <dt>
 
@@ -177,7 +177,7 @@ Tipo de datos: **uint16**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentScanMode**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DmTF \| Monitor Resolutions \| 002.5")
+Calificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ VideoController**](cim-videocontroller.md).**CurrentScanMode**"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Resoluciones del monitor DMTF \| \| 002.5")
 </dt> </dl>
 
 Modo de examen que usa el monitor.
@@ -253,11 +253,11 @@ Resolución vertical del monitor en píxeles.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 
-Esta documentación se deriva de las descripciones de clases CIM publicadas por dmtf. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
+Esta documentación se deriva de las descripciones de clases CIM publicadas por DMTF. Microsoft puede haber realizado cambios para corregir errores menores, ajustarse a los estándares de documentación del SDK de Microsoft o proporcionar más información.
 
 ## <a name="requirements"></a>Requisitos
 

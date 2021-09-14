@@ -1,6 +1,6 @@
 ---
 title: LVM_SETITEMINDEXSTATE mensaje (Commctrl.h)
-description: Establece el estado de un elemento de vista de lista. Envíe este mensaje explícitamente o mediante la macro \_ SetItemIndexState de ListView.
+description: Establece el estado de un elemento de vista de lista. Envíe este mensaje explícitamente o mediante la \_ macro SetItemIndexState de ListView.
 ms.assetid: 9fea6420-320a-4d2a-84b5-7923fbb14655
 keywords:
 - LVM_SETITEMINDEXSTATE controles de Windows mensaje
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18094986f5a57713e842b51b31c74ccfe4987d1c1fe62380ea8a986762e20c7a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 01ce8f6847c733127053e2162dd785d52fb77cfa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120062215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362695"
 ---
-# <a name="lvm_setitemindexstate-message"></a>Mensaje \_ SETITEMINDEXSTATE de LVM
+# <a name="lvm_setitemindexstate-message"></a>Mensaje \_ LVM SETITEMINDEXSTATE
 
 Establece el estado de un elemento de vista de lista. Envíe este mensaje explícitamente o mediante la macro [**\_ SetItemIndexState de ListView.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_setitemindexstate)
 
@@ -67,7 +67,7 @@ Devuelve uno de los siguientes valores de tipo **HRESULT.**
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

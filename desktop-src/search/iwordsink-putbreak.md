@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - search.h
-ms.openlocfilehash: d254e6e03ef9fe8af1ec65e519e4c873aea5b8a8887172329d3997424920c4e1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c6407f1307b4860960c5202af13de736c7921139
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117680442"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363199"
 ---
 # <a name="iwordsinkputbreak-method"></a>IWordSink::P utBreak (método)
 
@@ -60,7 +60,7 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los métodos [**IWordSinkPutWord**](iwordsink-putword.md) e [**IWordSink::P utAltWord**](iwordsink-putaltword.md) insertan automáticamente un salto de fin de palabra (EOW, indicado por el elemento EOW WORDREP BREAK del tipo enumerado \_ \_ [**WORDREP \_ BREAK \_ TYPE)**](/previous-versions/windows/desktop/legacy/ff819130(v=vs.85)) después de cada palabra. Llame al **método PutBreak** para insertar un tipo de interrupción distinto del final de la palabra. Este método no cambia el búfer de texto de origen (*pSourceText*) ni incrementa el recuento de caracteres (*cwc*). Sin embargo, incrementa la posición actual en el índice y afecta a los resultados de la consulta.
 
@@ -76,7 +76,7 @@ Los métodos [**IWordSinkPutWord**](iwordsink-putword.md) e [**IWordSink::P utAl
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

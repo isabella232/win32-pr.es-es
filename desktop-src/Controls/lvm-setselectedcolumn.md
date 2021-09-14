@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f6564e1fda50d11b3d4c520f85184439b0465f1cf5767e7926e6e1c9476f786
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 827c41fabaea722bb2372c6bd3f7c3a54bee92f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119019180"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362671"
 ---
 # <a name="lvm_setselectedcolumn-message"></a>Mensaje DE LVM \_ SETSELECTEDCOLUMN
 
@@ -39,7 +39,7 @@ Establece el índice de la columna seleccionada.
 
 No se usa el valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los índices de columna se almacenan en una **matriz int.** Vea el **miembro puColumns** de [**LVITEM.**](/windows/win32/api/commctrl/ns-commctrl-lvitema)
 
@@ -56,7 +56,7 @@ Los índices de columna se almacenan en una **matriz int.** Vea el **miembro puC
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

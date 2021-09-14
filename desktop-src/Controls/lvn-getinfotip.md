@@ -3,7 +3,7 @@ title: LVN_GETINFOTIP de notificación (Commctrl.h)
 description: Enviado por un control de vista de lista y vista de icono grande que tiene el estilo \_ extendido LVS EX \_ INFOTIP.
 ms.assetid: 62be5087-7e49-4722-a63a-1768e030af48
 keywords:
-- LVN_GETINFOTIP código de notificación Windows controles
+- LVN_GETINFOTIP de notificación Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f7477230913ec5efd0827bc48e1a6021619aa4cdbbad252426d1af364b5b36b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c2b4552456a575e2f03e02b2bfb78f7fcc1d8ca1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117830446"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362595"
 ---
 # <a name="lvn_getinfotip-notification-code"></a>Código de notificación \_ GETINFOTIP lvn
 
@@ -51,7 +51,7 @@ Puntero a una [**estructura NMLVGETINFOTIP**](/windows/win32/api/commctrl/ns-com
 
 No se usa el valor devuelto para esta notificación.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este código de notificación solo se envía mediante controles de vista de lista que tienen el estilo [**\_ extendido LVS EX \_ INFOTIP.**](extended-list-view-styles.md) El código de notificación \_ LVN GETINFOTIP solo se envía para el subelemento 0.
 
@@ -59,11 +59,11 @@ Este código de notificación solo se envía mediante controles de vista de list
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **LVN \_ GETINFOTIPW** (Unicode) y **LVN \_ GETINFOTIPA** (ANSI)<br/>             |
 
 

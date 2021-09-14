@@ -5,11 +5,11 @@ title: Elemento Vertical
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: f6f05ab8a2160dbf6b987177957e8285385fe4db
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479511"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362910"
 ---
 # <a name="vertical-element"></a>Elemento Vertical
 
@@ -34,11 +34,11 @@ Ninguno.
 
 
 
-| Atributo | Tipo | Requerido | Descripción | Valores posibles | 
+| Atributo | Tipo | Obligatorio | Descripción | Valores posibles | 
 |-----------|------|----------|-------------|-----------------|
-| <strong>Estilo</strong> | <a href="linelayoutstyletype-simple-type.md"><strong>LineLayoutStyleType</strong></a> simpleType | Requerido | Especifica el tipo de línea que se va a dibujar. | <ul><li>Ninguno</li><li>Sólido</li><li>Guión</li><li>Punto</li><li>DashDot</li><li>DashDotDot</li><li>Doble</li></ul> | 
+| <strong>Estilo</strong> | <a href="linelayoutstyletype-simple-type.md"><strong>LineLayoutStyleType</strong></a> simpleType | Obligatorio | Especifica el tipo de línea que se va a dibujar. | <ul><li>Ninguno</li><li>Sólido</li><li>Guión</li><li>Punto</li><li>DashDot</li><li>DashDotDot</li><li>Double</li></ul> | 
 | <strong>Color</strong> | <a href="colortype-simple-type.md"><strong>ColorType</strong></a> simpleType | Opcionales | Color del elemento. | Valor RGB hexadecimal. Coincide con la siguiente expresión regular: #[0-9a-zA-Z] {6} . Por ejemplo, #4a79B5.<br /> | 
-| <strong>SpacingBefore</strong> | <strong>xs:nonNegativeInteger</strong> | Opcionales | Espaciado delante del elemento . | Cualquier entero no negativo. | 
+| <strong>SpacingBefore</strong> | <strong>xs:nonNegativeInteger</strong> | Opcional | Espaciado delante del elemento . | Cualquier entero no negativo. | 
 | <strong>SpacingBetween</strong> | <strong>xs:nonNegativeInteger</strong> | Opcionales | Espaciado entre este elemento y los elementos circundantes. | Cualquier entero no negativo. | 
 
 

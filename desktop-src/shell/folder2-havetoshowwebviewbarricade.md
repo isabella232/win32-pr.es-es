@@ -9,12 +9,12 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.assetid: 28baaa6f-ae39-4110-b341-199ebda9d578
-ms.openlocfilehash: 7352559b49fdec38a69556a63f18d8fbecdc832a7e8a19e9cefcf88461645ff2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2739f59dd0c5e635f08828e597e40d630ebc4a76
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119715465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363130"
 ---
 # <a name="folder2havetoshowwebviewbarricade-property"></a>Propiedad Folder2.HaveToShowWebViewBarricade
 

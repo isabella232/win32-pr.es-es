@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 73cb34246f7b31393527aef053c0cb8cbd12702217dd7113d5714ac022bc3716
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0f851c85563095a66197b0dde8e6cbddc9581f07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119973450"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254564"
 ---
 # <a name="win32_loggedonuser-class"></a>Clase LoggedOnUser de Win32 \_
 
@@ -40,7 +40,7 @@ class Win32_LoggedOnUser : CIM_Dependency
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ LoggedOnUser de Win32** tiene estos tipos de miembros:
 
@@ -84,7 +84,7 @@ Una [**\_ LogonSession de Win32**](win32-logonsessionmappeddisk.md) que describe
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ LoggedOnUser de Win32** se deriva de [**la dependencia CIM \_**](cim-dependency.md).
 

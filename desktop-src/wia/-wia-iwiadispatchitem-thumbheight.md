@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 3e1e14d025262e0431d36cf3f185b71c89c8f72f8875e035cfcd51e0b8614734
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 196f96198abb6abe8c6392a8cdb05c7c8e420cd8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118965604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362827"
 ---
 # <a name="itemthumbheight-property"></a>Propiedad Item.ThumbHeight
 

@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 55684bb5382c5e253c8f72b929674b9730ba7cab51a6c0cae9c27946fad5ff8a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b95d1aa01def951802434e787931ce348d04ccb6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120085795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254571"
 ---
 # <a name="win32_loadordergroupservicedependencies-class"></a>Clase \_ LoadOrderGroupServiceDependencies de Win32
 
@@ -40,7 +40,7 @@ class Win32_LoadOrderGroupServiceDependencies : CIM_Dependency
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ LoadOrderGroupServiceDependencies de Win32** tiene estos tipos de miembros:
 
@@ -84,7 +84,7 @@ Referencia a la instancia de que representa las propiedades del servicio base qu
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ LoadOrderGroupServiceDependencies de Win32** se deriva de [**la dependencia CIM \_**](cim-dependency.md).
 

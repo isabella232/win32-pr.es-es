@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 3ac3705b4be60ce53fee411df1142fb64bbd1c393864b644e260829080be8f81
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e0881f68044c30731322c89d6cc2f19ce7277a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119450435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362815"
 ---
 # <a name="iwiaitem2getpreviewcomponent-method"></a>IWiaItem2::GetPreviewComponent (método)
 
@@ -78,12 +78,12 @@ Las aplicaciones deben llamar [al método IUnknown::Release](/windows/win32/api/
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

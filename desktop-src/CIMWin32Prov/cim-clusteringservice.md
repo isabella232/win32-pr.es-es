@@ -24,19 +24,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: dc31c760ea41761db06da5e1048d3ae1cc248c5fdde7f387e0cfeda209bb716a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 40dc0ebd8daebb79c323d54591fc16126e0ef97a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119700935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362775"
 ---
 # <a name="cim_clusteringservice-class"></a>Cim \_ ClusteringService (clase)
 
 La **clase Cim \_ ClusteringService** representa la funcionalidad proporcionada por un clúster. Por ejemplo, la funcionalidad de conmutación por error se puede modelar como un servicio de un clúster de conmutación por error.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -61,7 +61,7 @@ class CIM_ClusteringService : CIM_Service
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ ClusteringService** de CIM tiene estos tipos de miembros:
 
@@ -76,10 +76,10 @@ La **clase \_ ClusteringService** de CIM tiene estos métodos.
 
 | Método                                                                     | Descripción                                                                                                |
 |:---------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| [**AddNode**](addnode-method-in-class-cim-clusteringservice.md)           | Método de clase que incorpora un nuevo sistema informático a un clúster. Wmi no implementa.<br/>          |
-| [**EvictNode**](evictnode-method-in-class-cim-clusteringservice.md)       | Método de clase que quita un sistema informático de un clúster. Wmi no implementa.<br/>             |
-| [**StartService**](startservice-method-in-class-cim-clusteringservice.md) | Método de clase que intenta colocar el servicio en su estado de inicio. Wmi no implementa.<br/> |
-| [**StopService**](stopservice-method-in-class-cim-clusteringservice.md)   | Método de clase que coloca el servicio en estado detenido. Wmi no implementa.<br/>              |
+| [**AddNode**](addnode-method-in-class-cim-clusteringservice.md)           | Método de clase que incorpora un nuevo sistema informático a un clúster. Wmi no implementa .<br/>          |
+| [**EvictNode**](evictnode-method-in-class-cim-clusteringservice.md)       | Método de clase que quita un sistema informático de un clúster. Wmi no implementa .<br/>             |
+| [**StartService**](startservice-method-in-class-cim-clusteringservice.md) | Método de clase que intenta colocar el servicio en su estado de inicio. Wmi no implementa .<br/> |
+| [**StopService**](stopservice-method-in-class-cim-clusteringservice.md)   | Método de clase que coloca el servicio en estado detenido. Wmi no implementa .<br/>              |
 
 
 
@@ -211,7 +211,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Modo de inicio")
 </dt> </dl>
 
-Indica si el servicio se inicia automáticamente (por ejemplo, por un sistema operativo) o solo se inicia a petición.
+Indica si el servicio se inicia automáticamente (por ejemplo, mediante un sistema operativo) o solo se inicia a petición.
 
 Esta propiedad se hereda del [**servicio CIM. \_**](cim-service.md)
 
@@ -377,7 +377,7 @@ Esta propiedad se hereda del [**servicio CIM. \_**](cim-service.md)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ ClusteringService** de CIM se deriva del [**servicio CIM \_**](cim-service.md).
 
@@ -399,7 +399,7 @@ Esta documentación se deriva de las descripciones de clases CIM publicadas por 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

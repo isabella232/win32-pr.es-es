@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bea129a1b62b442b0fb545f29a57e9eab0d6d1bae057996df5bc269d9a4296d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c856292e9b94590b50593a6c3c5f145497f47f28
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117830389"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362587"
 ---
-# <a name="lvn_itemchanged-notification-code"></a>Código de notificación \_ LVN ITEMCHANGED
+# <a name="lvn_itemchanged-notification-code"></a>Código de notificación ITEMCHANGED de LVN \_
 
 Notifica a la ventana primaria de un control de vista de lista que un elemento ha cambiado. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
@@ -49,7 +49,7 @@ Puntero a una [**estructura NMLISTVIEW**](/windows/win32/api/commctrl/ns-commctr
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si un control de vista de lista tiene el estilo [**LVS \_ OWNERDATA**](list-view-window-styles.md) y el usuario selecciona un intervalo de elementos manteniendo presionada la tecla MAYÚS y haciendo clic en el mouse, los códigos de notificación LVN ITEMCHANGED no se envían para cada elemento seleccionado o \_ deseleccionado. En su lugar, recibirá un único código de [notificación LVN \_ ODSTATECHANGED,](lvn-odstatechanged.md) que indica que un intervalo de elementos ha cambiado de estado.
 
@@ -57,11 +57,11 @@ Si un control de vista de lista tiene el estilo [**LVS \_ OWNERDATA**](list-view
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

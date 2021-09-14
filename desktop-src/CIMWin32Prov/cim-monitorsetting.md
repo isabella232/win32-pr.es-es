@@ -16,19 +16,19 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 084b8bf9b1ca175f723fe7e15beaf6b79e315b318982c1a0bd505b82b58fbd2c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dc947f4bb484ec5392204747e583fbf80bbf88cf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119821035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254630"
 ---
 # <a name="cim_monitorsetting-class"></a>Cim \_ MonitorSetting (clase)
 
 La **clase \_ MonitorSetting de CIM** asocia la resolución del monitor con el monitor de escritorio al que se aplica.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 
@@ -45,15 +45,15 @@ class CIM_MonitorSetting : CIM_ElementSetting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **clase \_ MonitorSetting de CIM** tiene estos tipos de miembros:
+La **clase \_ Cim MonitorSetting** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La **clase \_ Cim MonitorSetting** tiene estas propiedades.
+La **clase \_ MonitorSetting de CIM** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -89,7 +89,7 @@ Monitor [**\_ CIMResolution que**](cim-monitorresolution.md) describe la resoluc
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 WMI no implementa esta clase.
 

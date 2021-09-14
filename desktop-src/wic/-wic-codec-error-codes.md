@@ -1,46 +1,46 @@
 ---
-description: Este documento contiene una lista de los códigos de error Windows Imaging Component (WIC) definidos.
+description: Este documento contiene una lista de los códigos de error definidos Windows Imaging Component (WIC).
 ms.assetid: 1ded909c-311b-49e3-ba23-b22cd7a77bc6
 title: Códigos de error de códec
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fb8f3911516f11c4a0614461786d6f94eaf00e038e53babb47d4df595797bdb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dd502ca1866114e2b471059bc9d9af1b0f96309f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118207264"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362795"
 ---
 # <a name="codec-error-codes"></a>Códigos de error de códec
 
-Este documento contiene una lista de los códigos de error Windows Imaging Component (WIC) definidos.
+Este documento contiene una lista de los códigos de error definidos Windows Imaging Component (WIC).
 
 -   [Errores de WIC por código](#wic-errors-by-code)
 -   [Errores de WIC por valor](#wic-errors-by-value)
 
 ## <a name="wic-errors-by-code"></a>Errores de WIC por código
 
-En la tabla siguiente se muestra una lista de los códigos de error usados por los WICAPIs ordenados alfabéticamente. 
+La tabla siguiente es una lista de los códigos de error usados por los WICAPIs ordenados en orden alfabético. 
 
 | Código de error                                      | Valor de error                      |
 |-------------------------------------------------|----------------------------------|
 | ERROR DE WINCODEC \_ \_ ANULADO                          | 0x80004004 (E \_ ABORT)            |
 | ACCESO DE \_ ERROR DE WINCODECDENIED \_                     | 0x80070005 (E \_ ACCESSDENIED)     |
-| ERROR DE WINCODEC \_ \_ ALREADYLOCKED                    | 0x88982f0D                       |
-| WINCODEC \_ ERR \_ BADHEADER                        | 0x88982f61                       |
+| ERROR DE WINCODEC \_ \_ YA CON BLOQUEO                    | 0x88982f0D                       |
+| ERROR \_ BADHEADER de WINCODEC \_                        | 0x88982f61                       |
 | ERROR \_ BADIMAGE de WINCODEC \_                         | 0x88982f60                       |
-| WINCODEC \_ ERR \_ BADMETADATAHEADER                | 0x88982f63                       |
+| ERROR DE WINCODEC \_ \_ BADMETADATAHEADER                | 0x88982f63                       |
 | ERROR DE WINCODEC \_ \_ BADSTREAMDATA                    | 0x88982f70                       |
 | CÓDEC DE \_ ERROR DE WINCODECNOTHUMBNAIL \_                 | 0x88982f44                       |
-| CODECPRESENT DE \_ ERROR DE WINCODEC \_                     | 0x88982f43                       |
-| \_ \_ CÓDECTOOMANYSCANLINES DE ERROR DE WINCODEC            | 0x88982f46                       |
-| COMPONENTE ERR \_ DE WINCODECINITIALIZEFAILURE \_       | 0x88982f8B                       |
-| COMPONENTE ERR \_ DE WINCODECNOTFOUND \_                | 0x88982f50                       |
+| CÓDECPRESENT \_ DE ERROR DE WINCODEC \_                     | 0x88982f43                       |
+| CÓDEC DE \_ ERROR DE WINCODECTOOMANYSCANLINES \_            | 0x88982f46                       |
+| COMPONENTE DE \_ ERROR DE WINCODECINITIALIZEFAILURE \_       | 0x88982f8B                       |
+| COMPONENTE DE \_ ERROR DE WINCODECNOTFOUND \_                | 0x88982f50                       |
 | ERROR DE WINCODEC \_ \_ DUPLICATEMETADATAPRESENT         | 0x88982f8D                       |
-| ERROR \_ \_ FRAMEMISSING DE WINCODEC                     | 0x88982f62                       |
+| ERROR DE WINCODEC \_ \_ FRAMEMISSING                     | 0x88982f62                       |
 | ERROR GENÉRICO DE ERROR GENÉRICO \_ DE ERROR \_ DE WINCODEC \_                   | 0x80004005 (E \_ FAIL)             |
 | IMÁGENES DE \_ ERROR DE WINCODECIZEOUTOFRANGE \_              | 0x88982f51                       |
-| ERROR \_ INSUFFICIENTBUFFER de WINCODEC \_               | 0x88982f8C                       |
+| ERROR DE WINCODEC \_ \_ INSUFFICIENTBUFFER               | 0x88982f8C                       |
 | ERROR \_ INTERNALERROR DE WINCODEC \_                    | 0x88982f48                       |
 | ERROR DE WINCODEC \_ \_ INVALIDPARAMETER                 | 0x80070057 (E \_ INVALIDARG)       |
 | ERROR DE WINCODEC \_ \_ INVALIDQUERYCHARACTER            | 0x88982f93                       |
@@ -58,17 +58,17 @@ En la tabla siguiente se muestra una lista de los códigos de error usados por l
 | WINCODEC \_ ERR \_ SOURCERECTDOESNOTMATCHDIMENSIONS | 0x88982f49                       |
 | WINCODEC \_ ERR \_ STREAMWRITE                      | 0x88982f71                       |
 | WINCODEC \_ ERR \_ STREAMREAD                       | 0x88982f72                       |
-| WINCODEC \_ ERR \_ STREAMNOTAVAILABLE               | 0x88982f73                       |
+| SECUENCIA DE ERROR DE WINCODECNO \_ \_ DISPONIBLE               | 0x88982f73                       |
 | ERROR DE WINCODEC \_ \_ TOOMUCHMETADATA                  | 0x88982f52                       |
 | ERROR DE WINCODEC \_ \_ UNKNOWNIMAGEFORMAT               | 0x88982f07                       |
-| ERROR INESPERADO \_ DE WINCODECMETADATATYPE \_           | 0x88982f91                       |
+| ERROR INESPERADO DE \_ WINCODECMETADATATYPE \_           | 0x88982f91                       |
 | ERROR DE WINCODEC \_ \_ UNEXPECTEDSIZE                   | 0x88982f8F                       |
 | ERROR DE WINCODEC \_ \_ UNSUPPORTEDOPERATION             | 0x88982f81                       |
-| ERROR DE WINCODEC \_ \_ NO COMPATIBLEPIXELFORMAT           | 0x88982f80                       |
+| ERROR DE WINCODEC \_ \_ UNSUPPORTEDPIXELFORMAT           | 0x88982f80                       |
 | ERROR DE WINCODEC \_ \_ UNSUPPORTEDVERSION               | 0x88982f0B                       |
 | ERROR DE WINCODEC \_ \_ VALUEOUTOFRANGE                  | 0x88982f05                       |
 | WINCODEC \_ ERR \_ VALUEOVERFLOW                    | DESBORDAMIENTO \_ \_ ARITMÉTICO INTSAFE E \_ |
-| ERROR \_ WRONGSTATE de WINCODEC \_                       | 0x88982f04                       |
+| ERROR DE ERROR DE WINCODEC \_ \_                       | 0x88982f04                       |
 
 
 
@@ -76,7 +76,7 @@ En la tabla siguiente se muestra una lista de los códigos de error usados por l
 
 ## <a name="wic-errors-by-value"></a>Errores de WIC por valor
 
-En la tabla siguiente se muestra una lista de los códigos de error usados por los WICAPIs ordenados en orden numérico. 
+La tabla siguiente es una lista de los códigos de error usados por los WICAPIs ordenados en orden numérico. 
 
 | Código de error                       | Valor de error                                     |
 |----------------------------------|-------------------------------------------------|
@@ -112,7 +112,7 @@ En la tabla siguiente se muestra una lista de los códigos de error usados por l
 | 0x88982f70                       | ERROR DE WINCODEC \_ \_ BADSTREAMDATA                    |
 | 0x88982f71                       | WINCODEC \_ ERR \_ STREAMWRITE                      |
 | 0x88982f72                       | WINCODEC \_ ERR \_ STREAMREAD                       |
-| 0x88982f73                       | SECUENCIA DE \_ ERROR DE WINCODECNOTAVAILABLE \_               |
+| 0x88982f73                       | WINCODEC \_ ERR \_ STREAMNOTAVAILABLE               |
 | 0x88982f80                       | ERROR DE WINCODEC \_ \_ UNSUPPORTEDPIXELFORMAT           |
 | 0x88982f81                       | ERROR DE WINCODEC \_ \_ UNSUPPORTEDOPERATION             |
 | 0x88982f8A                       | ERROR DE WINCODEC \_ \_ INVALIDREGISTRATION              |
@@ -122,7 +122,7 @@ En la tabla siguiente se muestra una lista de los códigos de error usados por l
 | 0x88982f8E                       | PROPIEDAD \_ ERR DE WINCODECUNEXPECTEDTYPE \_           |
 | 0x88982f8F                       | ERROR DE WINCODEC \_ \_ UNEXPECTEDSIZE                   |
 | 0x88982f90                       | ERROR DE WINCODEC \_ \_ INVALIDQUERYREQUEST              |
-| 0x88982f91                       | ERROR INESPERADO DE \_ WINCODECMETADATATYPE \_           |
+| 0x88982f91                       | ERROR INESPERADO \_ DE WINCODECMETADATATYPE \_           |
 | 0x88982f92                       | WINCODEC \_ ERR \_ REQUESTONLYVALIDATMETADATAROOT   |
 | 0x88982f93                       | ERROR DE WINCODEC \_ \_ INVALIDQUERYCHARACTER            |
 

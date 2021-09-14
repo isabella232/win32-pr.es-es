@@ -4,16 +4,16 @@ ms.assetid: 6cdfb7d3-f849-432c-960f-912e5024c583
 title: Indexación de eventos de priorización y conjunto de filas en Windows 7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92491300127c60ebdf2a265583fca77e77a09907b7f42b471f6d3d047a7f6aa4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6610500a3c2fcd359f346e5239507fb15ad896d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117680506"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363207"
 ---
 # <a name="indexing-prioritization-and-rowset-events-in-windows-7"></a>Indexación de eventos de priorización y conjunto de filas en Windows 7
 
-En este tema se describe la introducción de la priorización de indexación y los eventos de conjunto de filas para Windows 7.
+En este tema se describe la introducción de la priorización de indexación y los eventos de conjunto de filas Windows 7.
 
 Este tema se organiza de la siguiente manera:
 
@@ -25,7 +25,7 @@ Este tema se organiza de la siguiente manera:
 
 ## <a name="indexing-prioritization-and-rowset-events"></a>Indexación de priorización y eventos de conjunto de filas
 
-En Windows 7?, y versiones posteriores, hay una pila de prioridad en la que el contexto de cualquier consulta determinada, el cliente puede solicitar que los ámbitos usados en esa consulta se prioricen por encima del de los elementos normales.
+En Windows 7? y versiones posteriores, hay una pila de prioridad en la que el contexto de cualquier consulta determinada, el cliente puede solicitar que los ámbitos usados en esa consulta se prioricen por encima del de los elementos normales.
 
 Esta pila de priorización tiene las siguientes características:
 
@@ -39,7 +39,7 @@ Esta pila de priorización tiene las siguientes características:
 
 La pila de prioridad establece una prioridad general de los elementos que se procesan en el indexador de la siguiente manera:
 
--   Las notificaciones de prioridad alta no tienen ningún respaldo y normalmente solo se envían para un número reducido de elementos. Por ejemplo, Windows Explorer usa esta prioridad para operaciones pequeñas del motor de copia.
+-   Las notificaciones de prioridad alta no tienen ningún respaldo y normalmente solo se envían para un número reducido de elementos. Por ejemplo, Windows Explorer usa esta prioridad para las operaciones de motor de copia pequeños.
 -   Priority Stack es la parte superior de la pila, tiene un reenlazamiento y es la última consulta de prioridad solicitada.
 -   Segunda consulta de la pila.
 -   Tercera consulta de la pila.
@@ -92,7 +92,7 @@ interface IRowsetPrioritization : IUnknown
 
 La priorización de conjuntos de filas funciona de la siguiente manera:
 
-1.  [**IRowsetPrioritization**](/windows/desktop/api/Searchapi/nn-searchapi-irowsetprioritization) se adquiere con [el método IUnknown::QueryInterface en](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) un conjunto de filas de indexador. **DBPROP \_ ENABLEROWSETEVENTS** debe establecerse en **TRUE** con el método [OLE DB ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497(v=vs.85)) antes de ejecutar la consulta para usar la priorización de conjuntos de filas.
+1.  [**IRowsetPrioritization**](/windows/desktop/api/Searchapi/nn-searchapi-irowsetprioritization) se adquiere con [el método IUnknown::QueryInterface en](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) un conjunto de filas de indexador. **DBPROP \_ ENABLEROWSETEVENTS** debe establecerse en **TRUE** con OLE DB [método ICommandProperties::SetProperties](/previous-versions/windows/desktop/ms711497(v=vs.85)) antes de ejecutar la consulta para usar la priorización de conjuntos de filas.
 2.  [**IRowsetPrioritization::SetScopePriority**](/windows/desktop/api/Searchapi/nf-searchapi-irowsetprioritization-setscopepriority) establece la priorización de los ámbitos que pertenecen a la consulta y el intervalo en el que se genera el evento de estadísticas de ámbito cuando hay documentos pendientes que se van a indexar dentro de los ámbitos de consulta. Este evento se genera si el nivel de prioridad está establecido en el valor predeterminado.
 3.  [**IRowsetPrioritization::GetScopeStatistics**](/windows/desktop/api/Searchapi/nf-searchapi-irowsetprioritization-getscopestatistics) se puede usar para obtener el número de elementos indexados en el ámbito, el número de documentos pendientes que se van a agregar en el ámbito y el número de documentos que se deben volver a indexar dentro de este ámbito.
 

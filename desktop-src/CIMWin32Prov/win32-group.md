@@ -23,14 +23,14 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 1f5c6a7feda436129e910b4db21cd3b7457f5a3d6a737e6a99b1c43244659495
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a8849ba149e0de570150682d3afbad3a4ee33f36
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119699805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362758"
 ---
-# <a name="win32_group-class"></a>Clase Group de Win32 \_
+# <a name="win32_group-class"></a>Win32 \_ Group (clase)
 
 La **clase WMI de \_ grupo Win32** [representa](/windows/desktop/WmiSdk/retrieving-a-class) datos sobre una cuenta de grupo. Una cuenta de grupo permite cambiar los privilegios de acceso para una lista de usuarios. Ejemplo: Marketing2.
 
@@ -54,7 +54,7 @@ class Win32_Group : Win32_Account
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ Group de Win32** tiene estos tipos de miembros:
 
@@ -69,7 +69,7 @@ La **clase \_ Group de Win32** tiene estos métodos.
 
 | Método                                               | Descripción                        |
 |:-----------------------------------------------------|:-----------------------------------|
-| [**Renombrar**](rename-method-in-class-win32-group.md) | Cambia el nombre del grupo.<br/> |
+| [**Cambiar nombre**](rename-method-in-class-win32-group.md) | Cambia el nombre del grupo.<br/> |
 
 
 
@@ -165,7 +165,7 @@ Tipo de acceso: solo lectura
 Calificadores: [ **Corregido**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Si **es TRUE,** la cuenta se define en la máquina local. Para recuperar solo las cuentas definidas en el equipo local, diseñe una consulta que incluya la condición "LocalAccount=**TRUE".**
+Si **es TRUE,** la cuenta se define en el equipo local. Para recuperar solo las cuentas definidas en el equipo local, diseñe una consulta que incluya la condición "LocalAccount=**TRUE".**
 
 Esta propiedad se hereda de la [**cuenta de \_ Win32.**](win32-account.md)
 
@@ -180,7 +180,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Invalidación**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre de estructuras de administración de red win32API") \| \|
+Calificadores: [**Invalidar**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nombre de estructuras de administración de red win32API") \| \|
 </dt> </dl>
 
 Nombre de la Windows de grupo en el dominio especificado por la **propiedad Domain** de esta clase.
@@ -196,10 +196,10 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [**Corregido,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Identificadores de seguridad \| (SID) de Win32API")
+Calificadores: [**Fixed**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32API \| Security Identifiers (SIDs)")
 </dt> </dl>
 
-Identificador de seguridad (SID) de esta cuenta. Un SID es un valor de cadena de longitud variable que se usa para identificar a un administrador de confianza. Cada cuenta tiene un SID único emitido por una autoridad (por ejemplo, un dominio Windows), almacenado en una base de datos de seguridad. Cuando un usuario inicia sesión, el sistema recupera el SID del usuario de la base de datos y lo coloca en el token de acceso del usuario. El sistema usa el SID en el token de acceso del usuario para identificar al usuario en todas las interacciones posteriores con Windows seguridad. Cuando se ha usado un SID como identificador único de un usuario o grupo, no se puede volver a usar para identificar a otro usuario o grupo.
+Identificador de seguridad (SID) de esta cuenta. Un SID es un valor de cadena de longitud variable que se usa para identificar a un administrador de confianza. Cada cuenta tiene un SID único emitido por una autoridad (por ejemplo, un dominio Windows), almacenado en una base de datos de seguridad. Cuando un usuario inicia sesión, el sistema recupera el SID del usuario de la base de datos y lo coloca en el token de acceso del usuario. El sistema usa el SID en el token de acceso del usuario para identificar al usuario en todas las interacciones posteriores con Windows seguridad. Cuando se ha usado un SID como identificador único de un usuario o grupo, no se puede usar de nuevo para identificar a otro usuario o grupo.
 
 Esta propiedad se hereda de la [**cuenta de \_ Win32.**](win32-account.md)
 
@@ -302,7 +302,7 @@ Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [
 
 Cadena que indica el estado actual del objeto. Se puede definir el estado operativo y no operativo. El estado operativo puede incluir "Ok", "Degraded" y "Pred Fail". "Error previo" indica que un elemento funciona correctamente, pero predice un error (por ejemplo, una unidad de disco duro habilitada para SMART).
 
-El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". El "servicio" se puede aplicar durante la resilvering del reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
+El estado no operativo puede incluir "Error", "Starting", "Stopping" y "Service". "Servicio" se puede aplicar durante la resilvering de reflejo del disco, volver a cargar una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -396,7 +396,7 @@ Los valores son los siguientes:
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ Group de Win32** se deriva de [**la cuenta de Win32. \_**](win32-account.md)
 
@@ -433,7 +433,7 @@ Next
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
@@ -443,7 +443,7 @@ Next
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

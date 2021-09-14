@@ -1,5 +1,5 @@
 ---
-description: 'Método CBaseInputPin.Inactive: el método Inactivo notifica al pin que el filtro ya no está activo.'
+description: 'Método CBaseInputPin.Inactive: el método inactivo notifica al pin que el filtro ya no está activo.'
 ms.assetid: e00e1562-54bb-4968-8a86-b29e1077d7a5
 title: Método CBaseInputPin.Inactive (Amfilter.h)
 ms.topic: reference
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: dec73f0c691c7c644ead6456cc76fb1758202497ffcd968893780b2f0f61f93b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1324e9e2641e5e05bc3b0429ee269098c13d4bae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118403464"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127254546"
 ---
-# <a name="cbaseinputpininactive-method"></a>Método CBaseInputPin.Inactive
+# <a name="cbaseinputpininactive-method"></a>CBaseInputPin.Inactive (método)
 
 El `Inactive` método notifica al pin que el filtro ya no está activo.
 
@@ -55,7 +55,7 @@ Devuelve un **valor HRESULT.** Los valores posibles incluyen los enumerados en l
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método invalida el [**método CBasePin::Inactive.**](cbasepin-inactive.md) Llama al [**método IMemAllocator::D ecommit**](/windows/desktop/api/Strmif/nf-strmif-imemallocator-decommit) para desasignar el asignador de memoria.
 
@@ -72,7 +72,7 @@ Si invalida este método, llame al método de clase base desde el método de ree
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

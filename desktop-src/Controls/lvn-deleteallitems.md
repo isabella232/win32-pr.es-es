@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06f76ec4deaf67c1448fab5054c05ea8ede79c0972061c8be8e4f36b2e40ef54
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 583ad6e2372649ab5f63bd208fb97b93b1591c12
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119019133"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362610"
 ---
 # <a name="lvn_deleteallitems-notification-code"></a>Código de \_ notificación LVN DELETEALLITEMS
 
@@ -47,11 +47,11 @@ Puntero a una [**estructura NMLISTVIEW.**](/windows/win32/api/commctrl/ns-commct
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para suprimir los códigos [de notificación \_ LVN DELETEITEM](lvn-deleteitem.md) subsiguientes, devuelva **TRUE**.
+Para suprimir los códigos [de notificación \_ LVN DELETEITEM](lvn-deleteitem.md) posteriores, devuelva **TRUE**.
 
 Para recibir los códigos [de notificación \_ LVN DELETEITEM](lvn-deleteitem.md) posteriores, devuelva **FALSE**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un control de vista de lista envía el código de notificación [**LVM \_ DELETEALLITEMS**](lvm-deleteallitems.md) cuando se destruye o cuando recibe el mensaje **\_ LVM DELETEALLITEMS.** Si **LVM \_ DELETEALLITEMS** no devuelve **TRUE,** el control también enviará un código de [notificación \_ LVN DELETEITEM](lvn-deleteitem.md) a medida que se elimine cada elemento.
 
@@ -65,7 +65,7 @@ Si el controlador de [**mensajes LVM \_ DELETEALLITEMS**](lvm-deleteallitems.md)
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

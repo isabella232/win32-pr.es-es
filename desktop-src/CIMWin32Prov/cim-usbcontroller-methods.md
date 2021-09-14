@@ -5,19 +5,19 @@ ms.tgt_platform: multiple
 title: CIM_USBController métodos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 28139125b9495b549bcafec5304f8b3ebbfb0b8e5a0a79c9be533ba5b6948807
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 45910ce712cc410cf9c2ef00d3727890213c17c2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119080289"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362770"
 ---
 # <a name="cim_usbcontroller-methods"></a>Métodos \_ USBController de CIM
 
 La [**clase \_ CIM USBController**](cim-usbcontroller.md) expone los métodos siguientes.
 
 > [!IMPORTANT]
-> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se construyen las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
+> Las clases CIM (Modelo de información común) DMTF (Distributed Management Task Force) son las clases primarias en las que se han creado las clases WMI. WMI admite actualmente solo los esquemas [de versión CIM 2.x](https://dmtf.org/standards/cim/schemas).
 
  
 

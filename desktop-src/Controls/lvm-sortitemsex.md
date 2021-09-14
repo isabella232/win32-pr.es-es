@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef492ff11980e764b33942f54c0732a64e799a94dde0e3d872ef0cb7bfb66c0a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 99e524b00cb5ff1260eb68e7d86e185e5ae60c75
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118170371"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362631"
 ---
-# <a name="lvm_sortitemsex-message"></a>Mensaje \_ LVM SORTITEMSEX
+# <a name="lvm_sortitemsex-message"></a>Mensaje \_ DE LVM SORTITEMSEX
 
 Usa una función de comparación definida por la aplicación para ordenar los elementos de un control de vista de lista. El índice de cada elemento cambia para reflejar la nueva secuencia. Puede enviar este mensaje explícitamente o mediante la macro [**\_ ListView SortItemsEx.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_sortitemsex)
 
@@ -45,9 +45,9 @@ Puntero a una función de comparación definida por la aplicación. Se llama dur
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **TRUE si** se realiza correctamente o **FALSE** en caso contrario.
+Devuelve **TRUE si** se realiza correctamente o **FALSE** de lo contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La función de comparación tiene el formato siguiente:
 
@@ -55,7 +55,7 @@ La función de comparación tiene el formato siguiente:
 int CALLBACK CompareFunc(LPARAM lParam1, LPARAM lParam2, LPARAM lParamSort);  
 ```
 
-Este mensaje es similar a [**LVM \_ SORTITEMS,**](lvm-sortitems.md)excepto el tipo de información que se pasa a la función de comparación. Con **LVM \_ SORTITEMSEX,** *lParam1* es el índice actual del primer elemento y *lParam2* es el índice actual del segundo elemento. Puede enviar un mensaje [**\_ GETITEMTEXT de LVM**](lvm-getitemtext.md) para recuperar más información sobre un elemento, si es necesario.
+Este mensaje es similar a [**LVM \_ SORTITEMS,**](lvm-sortitems.md)excepto para el tipo de información que se pasa a la función de comparación. Con **LVM \_ SORTITEMSEX,** *lParam1* es el índice actual del primer elemento y *lParam2* es el índice actual del segundo elemento. Puede enviar un mensaje [**LVM \_ GETITEMTEXT**](lvm-getitemtext.md) para recuperar más información sobre un elemento, si es necesario.
 
 La función de comparación debe devolver un valor negativo si el primer elemento debe preceder al segundo, un valor positivo si el primer elemento debe seguir al segundo o cero si los dos elementos son equivalentes.
 
@@ -72,7 +72,7 @@ La función de comparación debe devolver un valor negativo si el primer element
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

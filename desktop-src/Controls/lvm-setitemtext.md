@@ -3,7 +3,7 @@ title: LVM_SETITEMTEXT mensaje (Commctrl.h)
 description: Cambia el texto de un elemento de vista de lista o un subelemento. Puede enviar este mensaje explícitamente o mediante la macro \_ ListView SetItemText.
 ms.assetid: 1a9c7e4d-78e0-44c7-bf4f-d0fc7a0049f3
 keywords:
-- LVM_SETITEMTEXT mensaje Controles de Windows
+- LVM_SETITEMTEXT controles de Windows mensaje
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14eb5ddcff18a84f93febb22ef6661d8871df9b5578cc79f071b6e51b557c87b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d326e48047325fc9aff2c6607da6d7d377965adf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118670878"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362678"
 ---
 # <a name="lvm_setitemtext-message"></a>Mensaje \_ SETITEMTEXT de LVM
 
@@ -55,9 +55,9 @@ Si envía este mensaje explícitamente, devuelve **TRUE** si se realiza correcta
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows \[ Vista\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **LVM \_ SETITEMTEXTW** (Unicode) y **LVM \_ SETITEMTEXTA** (ANSI)<br/>           |
 
 

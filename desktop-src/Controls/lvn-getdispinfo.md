@@ -1,6 +1,6 @@
 ---
 title: LVN_GETDISPINFO de notificación (Commctrl.h)
-description: Enviado por un control list-view a su ventana primaria. Es una solicitud para que la ventana primaria proporcione la información necesaria para mostrar u ordenar un elemento de vista de lista. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
+description: Enviado por un control de vista de lista a su ventana primaria. Es una solicitud para que la ventana primaria proporcione la información necesaria para mostrar u ordenar un elemento de vista de lista. Este código de notificación se envía en forma de mensaje WM \_ NOTIFY.
 ms.assetid: 04310e39-69bc-45d7-958c-00452279d7a9
 keywords:
 - LVN_GETDISPINFO código de notificación Windows controles
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f4f4fc6917b0de699d1ca561f46bc7789aa15eea7c40aa3681fe74991e3a122
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f1585524dd447c4a1324dc5c7a235490de776fb2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120088825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362599"
 ---
-# <a name="lvn_getdispinfo-notification-code"></a>Código de notificación GETDISPINFO de LVN \_
+# <a name="lvn_getdispinfo-notification-code"></a>Código de notificación \_ LVN GETDISPINFO
 
-Enviado por un control list-view a su ventana primaria. Es una solicitud para que la ventana primaria proporcione la información necesaria para mostrar u ordenar un elemento de vista de lista. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
+Enviado por un control de vista de lista a su ventana primaria. Es una solicitud para que la ventana primaria proporcione la información necesaria para mostrar u ordenar un elemento de vista de lista. Este código de notificación se envía en forma de mensaje [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,7 +43,7 @@ LVN_GETDISPINFO
 *lParam* 
 </dt> <dd>
 
-Puntero a una [**estructura NMLVDISPINFO.**](/windows/win32/api/commctrl/ns-commctrl-nmlvdispinfoa) En la entrada, la [**estructura LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema) contenida en esta estructura especifica el tipo de información necesaria e identifica el elemento o subelemento de interés. Use la **estructura LVITEM** para devolver la información solicitada al control . Si el controlador de mensajes establece la marca LVIF DI SETITEM en el miembro mask de la estructura \_ \_ **LVITEM,**  el control de vista de lista almacena la información solicitada y no la volverá a pedir.
+Puntero a una [**estructura NMLVDISPINFO.**](/windows/win32/api/commctrl/ns-commctrl-nmlvdispinfoa) En la entrada, [**la estructura LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema) contenida en esta estructura especifica el tipo de información necesaria e identifica el elemento o subelemento de interés. Use la **estructura LVITEM** para devolver la información solicitada al control . Si el controlador de mensajes establece la marca LVIF DI SETITEM en el miembro mask de la estructura LVITEM, el control de vista de lista almacena la información solicitada y no volverá a \_ \_ solicitarla.  
 
 </dd> </dl>
 
@@ -51,13 +51,13 @@ Puntero a una [**estructura NMLVDISPINFO.**](/windows/win32/api/commctrl/ns-comm
 
 No de devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El receptor de notificaciones convierte *lParam* para recuperar la [**estructura NMLVDISPINFO.**](/windows/win32/api/commctrl/ns-commctrl-nmlvdispinfoa) El *parámetro wParam* contiene el código de notificación.
 
-Un control de vista de lista envía el código **de notificación LVN \_ GETDISPINFO** para recuperar la información de elemento almacenada por la aplicación en lugar del control . La información puede ser información de texto o icono de un elemento. También puede ser información de estado de elemento. Vea el [**mensaje LVM \_ SETCALLBACKMASK**](lvm-setcallbackmask.md) para obtener más información sobre cómo implementar el estado del elemento en función de la devolución de llamada.
+Un control de vista de lista envía el código **de notificación \_ LVN GETDISPINFO** para recuperar la información de elemento almacenada por la aplicación en lugar del control . La información puede ser información de texto o icono de un elemento. También puede ser información de estado del elemento. Vea el [**mensaje LVM \_ SETCALLBACKMASK**](lvm-setcallbackmask.md) para obtener más información sobre cómo implementar el estado del elemento en una base de devolución de llamada.
 
-Para obtener más información sobre las devoluciones de llamada de vista de lista, vea Elementos de devolución de [llamada y máscara de devolución de llamada](list-view-controls-overview.md).
+Para obtener más información sobre las devoluciones de llamada de vista de lista, vea Elementos de devolución de [llamada y Máscara de devolución de llamada](list-view-controls-overview.md).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -122,16 +122,16 @@ Lo siguiente es del controlador WM \_ NOTIFY en el procedimiento de diálogo.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **LVN \_ GETDISPINFOW** (Unicode) y **LVN \_ GETDISPINFOA** (ANSI)<br/>           |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

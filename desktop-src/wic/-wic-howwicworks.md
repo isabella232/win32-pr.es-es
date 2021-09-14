@@ -1,17 +1,17 @@
 ---
 description: 'Más información sobre: Funcionamiento del componente Windows creación de imágenes'
 ms.assetid: c233e25b-bec6-4e67-8fbf-2bf9b70c7522
-title: Funcionamiento del componente Windows creación de imágenes
+title: Funcionamiento del componente Windows imaging
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a63fe341bbb16afe78b159caa5c50c13fdb2cb8ee7a92f4c482dd03f8d9b8a2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9bc9fe31ae4346f2c2d1f0b273e78ed10a0ec7e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118965114"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362790"
 ---
-# <a name="how-the-windows-imaging-component-works"></a>Funcionamiento del componente Windows creación de imágenes
+# <a name="how-the-windows-imaging-component-works"></a>Funcionamiento del componente Windows imaging
 
 Este tema contiene las siguientes secciones:
 
@@ -25,7 +25,7 @@ Este tema contiene las siguientes secciones:
 
 ## <a name="discovery-and-arbitration"></a>Detección y arbitraje
 
-Para poder descodificar una imagen, se debe encontrar un códec adecuado que pueda descodificar ese formato de imagen. En la mayoría de los sistemas, dado que los formatos de imagen admitidos están codificados de forma automática, no se requiere ningún proceso de detección. Dado que la plataforma Windows Imaging Component (WIC) es extensible, es necesario poder identificar el formato de una imagen y hacer coincidirlo con un códec adecuado.
+Para poder descodificar una imagen, se debe encontrar un códec adecuado que pueda descodificar ese formato de imagen. En la mayoría de los sistemas, dado que los formatos de imagen admitidos están codificados de forma automática, no se requiere ningún proceso de detección. Dado que la plataforma Windows Imaging Component (WIC) es extensible, es necesario poder identificar el formato de una imagen y hacer coincidirla con un códec adecuado.
 
 Para admitir la detección en tiempo de ejecución, cada formato de imagen debe tener un patrón de identificación que se pueda usar para identificar el descodificador adecuado para ese formato. (Se recomienda encarecidamente que, para los nuevos formatos de archivo, use un GUID para el patrón de identificación, ya que se garantiza que sea único). El patrón de identificación debe incrustarse en cada archivo de imagen que se ajuste a ese formato de imagen. Cada descodificador tiene una entrada del Registro que especifica el patrón de identificación o los patrones de los formatos de imagen que puede descodificar. Cuando una aplicación necesita abrir una imagen, solicita un descodificador de WIC. WIC busca los descodificadores disponibles en el registro y comprueba si cada entrada del Registro tiene un patrón de identificación que coincida con el patrón insertado en el archivo de imagen. Para obtener más información sobre las entradas del Registro de descodificación, vea [Entradas del Registro específicas del codificador.](-wic-decoderregentries.md)
 
@@ -52,7 +52,7 @@ Los descodificadores no son necesarios para admitir de forma nativa las operacio
 
 Las notificaciones de progreso y la compatibilidad con la cancelación permiten a una aplicación solicitar notificaciones de progreso para operaciones largas y también permitir que la aplicación dé al usuario la oportunidad de cancelar una operación que está tardando demasiado tiempo. Esto es importante porque si un usuario no puede cancelar una operación, puede parecer que el proceso se ha cerrado e intentar cancelarla cerrando la aplicación.
 
-Estas interfaces se describen en detalle en la sección Sobre [la implementación de un descodificador WIC-Enabled .](-wic-implementingwicdecoder.md)
+Estas interfaces se describen en detalle en la sección [Sobre la implementación de un descodificador WIC-Enabled .](-wic-implementingwicdecoder.md)
 
 Los servicios de procesamiento sin procesar incluyen el ajuste de la configuración de la cámara, como la exposición, el contraste y el ajuste, o el cambio del espacio de color antes de procesar los bits sin procesar.
 
@@ -62,7 +62,7 @@ Al igual que los descodificadores, los codificadores tienen responsabilidades qu
 
 -   Servicios de nivel de contenedor
 -   Servicios de nivel de marco
--   Servicios de enumeración y actualización de metadatos
+-   Enumeración de metadatos y servicios de actualización
 -   Soporte técnico de cancelación y notificación de progreso
 
 Los servicios de nivel de contenedor para un codificador incluyen establecer la miniatura de nivel superior (si se admite), la vista previa y la paleta (si procede) e iterar por los fotogramas de imagen individuales para que se puedan serializar en el contenedor.
@@ -71,7 +71,7 @@ Los servicios de nivel de marco para un codificador reflejan los del descodifica
 
 Además, los servicios de enumeración de metadatos para un codificador incluyen la iteración a través de los bloques de metadatos que se escribirán e invocación de los escritores de metadatos adecuados para serializar los metadatos en el disco.
 
-Estas interfaces se describen en detalle en la sección [Sobre la implementación de WIC-Enabled Encoder](-wic-implementingwicencoder.md).
+Estas interfaces se describen en detalle en la sección [Sobre la implementación de un WIC-Enabled Encoder.](-wic-implementingwicencoder.md)
 
 ## <a name="the-lifetime-of-a-codec"></a>Duración de un códec
 
@@ -85,7 +85,7 @@ Aunque algunos códecs tienen una duración que está limitada a la duración de
 2.  Implemente una clase de codificador de nivel de contenedor y una clase de codificador de nivel de fotograma que exponga las interfaces WIC necesarias para codificar imágenes y serializar bloques de metadatos en un archivo de imagen.
 3.  Si el formato del contenedor no se basa en un contenedor TIFF o JPEG, es posible que tenga que escribir controladores de metadatos para los formatos de metadatos comunes (EXIF, XMP). Sin embargo, si usa un formato de contenedor basado en TIFF o JPEG, esto no es necesario porque puede delegar en los controladores de metadatos proporcionados por el sistema.
 4.  Inserte un patrón de identificación único (se recomienda un GUID) en todos los archivos de imagen. Esto permite que el formato de la imagen coincida con el códec durante la detección. Si va a escribir un contenedor de WIC para un formato de imagen existente, debe encontrar un patrón de bits que el codificador siempre escribe en sus archivos de imagen que es único para ese formato de imagen y usarlo como patrón de identificación).
-5.  Registre el códec en el momento de la instalación. Esto permite detectar el códec en tiempo de ejecución mediante la coincidencia del patrón de identificación en el registro con el patrón insertado en el archivo de imagen.
+5.  Registre el códec en el momento de la instalación. Esto permite detectar el códec en tiempo de ejecución mediante la coincidencia del patrón de identificación en el Registro con el patrón incrustado en el archivo de imagen.
 6.  A partir Windows 7, WIC requiere que los códecs sean del tipo de apartamento COM "Both". Esto significa que debe realizar el bloqueo adecuado para controlar los autores de llamadas entre departamentos y los llamadores en escenarios multiproceso. Para obtener más información, consulte la siguiente sección sobre la compatibilidad con los departamentos multiproceso.
 7.  Compatibilidad con plataformas de 64 bits: para Windows 7, WIC requerirá que se entreguen códecs WIC de terceros como binarios nativos de 32 y 64 bits. Además, el formulario de 32 bits debe instalarse y ejecutarse en sistemas de 64 bits, y el instalador de códecs de Windows 7 de terceros debe instalar los archivos binarios de 32 y 64 bits en sistemas de 64 bits.
 
@@ -103,13 +103,13 @@ Cualquier número de subprocesos dentro del MTA puede llamar simultáneamente a 
 [Introducción (Cómo escribir un códec de WIC-Enabled)](-wic-howtowriteacodec-intro.md)
 </dt> <dt>
 
-[Implementación de un descodificador WIC-Enabled de datos](-wic-implementingwicdecoder.md)
+[Implementación de un descodificador de WIC-Enabled](-wic-implementingwicdecoder.md)
 </dt> <dt>
 
-[Cómo escribir un códec de WIC-Enabled](-wic-howtowriteacodec.md)
+[Cómo escribir un códec WIC-Enabled datos](-wic-howtowriteacodec.md)
 </dt> <dt>
 
-[Windows Información general sobre los componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
+[Windows Información general sobre componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
 [Introducción a los metadatos de WIC](-wic-about-metadata.md)

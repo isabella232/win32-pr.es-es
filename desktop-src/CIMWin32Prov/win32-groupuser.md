@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b71b3d183833ff822b40ff8e44e322b1d0e75880481d2e1f2d0f5825c002b24f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 79035ff3c56331a240704cf6605fdf72efa4e81c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119878655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127362755"
 ---
 # <a name="win32_groupuser-class"></a>Clase GroupUser de Win32 \_
 
@@ -40,7 +40,7 @@ class Win32_GroupUser : CIM_Component
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ GroupUser de Win32** tiene estos tipos de miembros:
 
@@ -84,7 +84,7 @@ Referencia a la instancia de que representa la cuenta de usuario o del sistema q
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase \_ GroupUser de Win32** se deriva del [**componente CIM \_**](cim-component.md).
 
@@ -108,7 +108,7 @@ En el ejemplo de código VBScript de WMI [Information Retriever](https://Gallery
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

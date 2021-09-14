@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 94d62de132a61bb357acac77aea41d2278ba1eb4453afa826ac32be90095ab25
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aa9b986b5cb76f14cc950f522e1e289224c17b58
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117860154"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127363099"
 ---
 # <a name="folderitems2invokeverbex-method"></a>Método FolderItems2.InvokeVerbEx
 
@@ -58,7 +58,7 @@ Variante **que** consta de una cadena con uno o varios argumentos para el comand
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un verbo es una cadena que se usa para especificar una acción determinada asociada a un elemento o colección de elementos. Normalmente, al llamar a un verbo se inicia una aplicación relacionada. Por ejemplo, al llamar al **verbo** abierto en un archivo .txt normalmente se abre el archivo con un editor de texto, normalmente Microsoft Bloc de notas. Para obtener más información sobre los verbos, vea [Iniciar aplicaciones.](launch.md)
 
@@ -159,12 +159,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 
