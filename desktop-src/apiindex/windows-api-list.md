@@ -1,29 +1,29 @@
 ---
-description: Lista del contenido de referencia para la API Windows.
+description: Una lista del contenido de referencia de la API Windows api.
 ms.assetid: 9CA123F9-92F1-4761-9468-266DA422F70E
 title: Índice de API de Windows
 ms.topic: article
-ms.date: 05/31/2018
-ms.openlocfilehash: 07e61a3f738905e98ad9cd1db85dbaa1746d7c613b1cc5b628805bcc3ddbea74
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.date: 09/10/2021
+ms.openlocfilehash: 7cc551b70e8d5c5af77b5a5416bd184d5a6c21d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117737642"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126792602"
 ---
 # <a name="windows-api-index"></a>Índice de API de Windows
 
-A continuación se muestra una lista del contenido de referencia de la Windows de programación de aplicaciones (API) para aplicaciones de escritorio y servidor.
+A continuación se muestra una lista del contenido de referencia de la interfaz Windows programación de aplicaciones (API) para aplicaciones de escritorio y servidor.
 
-Con la API Windows, puede desarrollar aplicaciones que se ejecutan correctamente en todas las versiones de Windows a la vez que aprovecha las características y funcionalidades únicas de cada versión. (Tenga en cuenta que anteriormente se denominaba API Win32. El nombre Windows API refleja con más precisión sus raíces en el Windows de 16 bits y su compatibilidad con aplicaciones de 64 Windows).
+Con la API Windows, puede desarrollar aplicaciones que se ejecuten correctamente en todas las versiones de Windows al tiempo que aprovecha las características y funcionalidades únicas de cada versión. (Tenga en cuenta que anteriormente se denominaba API Win32. El nombre Windows API refleja con más precisión sus raíces en el Windows de 16 bits y su compatibilidad con la api de 64 Windows).
 
 ## <a name="user-interface"></a>Interfaz de usuario
 
-La API Windows interfaz de usuario crea y usa ventanas para mostrar la salida, solicitar la entrada del usuario y llevar a cabo las demás tareas que admiten la interacción con el usuario. La mayoría de las aplicaciones crean al menos una ventana.
+La WINDOWS UI API crea y usa ventanas para mostrar la salida, solicitar la entrada del usuario y llevar a cabo las demás tareas que admiten la interacción con el usuario. La mayoría de las aplicaciones crean al menos una ventana.
 
 -   [Accesibilidad](../winauto/windows-accessibility-features-reference.md)
 -   [Administrador de ventanas de escritorio (DWM)](../dwm/reference.md)
--   [Globalization Services](../intl/globalization-services.md)
+-   [Servicios de globalización](../intl/globalization-services.md)
 -   [Valores altos de PPP](../hidpi/high-dpi-reference.md)
 -   [Interfaz de usuario multilingüe (MUI)](../intl/multilingual-user-interface-reference.md)
 -   [Compatibilidad con idiomas nacionales (NLS)](../intl/national-language-support-reference.md)
@@ -71,17 +71,17 @@ La API Windows interfaz de usuario crea y usa ventanas para mostrar la salida, s
     -   [Entrada de entrada de lápiz](/previous-versions/windows/desktop/input_ink/input-ink-portal)
     -   [Configuración de comentarios de entrada](/previous-versions/windows/desktop/input_feedback/input-feedback-configuration-portal)
     -   [Contexto de interacción](/previous-versions/windows/desktop/input_intcontext/interaction-context-portal)
-    -   [Pila de entrada de dispositivo de puntero](/previous-versions/windows/desktop/input_pointerdevice/pointer-device-stack-portal)
-    -   [Mensajes y notificaciones de entrada de puntero](/previous-versions/windows/desktop/inputmsg/messages-and-notifications)
+    -   [Pila de entrada del dispositivo de puntero](/previous-versions/windows/desktop/input_pointerdevice/pointer-device-stack-portal)
+    -   [Notificaciones y mensajes de entrada de puntero](/previous-versions/windows/desktop/inputmsg/messages-and-notifications)
     -   [Entrada del controlador radial](/previous-versions/windows/desktop/input_radial/radialcontroller-portal)
     -   [Text Services Framework (TSF)](../tsf/text-services-framework.md)
     -   [Prueba de impacto táctil](/previous-versions/windows/desktop/input_touchhittest/touch-hit-testing-portal)
     -   [Inserción táctil](/previous-versions/windows/desktop/input_touchinjection/touch-injection-portal)
--   [Interacción del usuario heredado](../legacy-user-interaction-features.md)
+-   [Interacción del usuario heredada](../legacy-user-interaction-features.md)
     -   [Entrada táctil](../wintouch/windows-touch-portal.md)
     -   [Entrada de teclado](../inputdev/keyboard-input.md)
     -   [Entrada del mouse](../inputdev/mouse-input.md)
-    -   [Entrada sin procesar](../inputdev/raw-input.md)
+    -   [Entrada sin formato](../inputdev/raw-input.md)
 -   [Windows y mensajes](../winmsg/windowing.md):
 
     -   [Mensajes y colas de mensajes](../winmsg/message-and-message-queue-reference.md)
@@ -145,7 +145,7 @@ La [API de diagnóstico le](/previous-versions//bb648685(v=vs.85)) permite soluc
 -   [Monitor de sistema](../sysmon/system-monitor-reference.md)
 -   [Recorrido de cadena de espera](../debug/wait-chain-traversal.md)
 -   [Informe de errores de Windows (WER)](../wer/wer-reference.md)
--   [Registro de sucesos de Windows](../wes/windows-event-log-reference.md)
+-   [Windows Registro de eventos](../wes/windows-event-log-reference.md)
 -   [Plataforma de solución de problemas de Windows](/previous-versions/windows/desktop/wintt/windows-troubleshooting-reference)
 
 ## <a name="graphics-and-multimedia"></a>Gráficos y multimedia
@@ -192,7 +192,7 @@ Las [API de gráficos, multimedia,](/previous-versions//aa969176(v=vs.85)) [audi
 -   [Impresión](/windows-hardware/drivers/print/introduction-to-printing)
     -   [Administrador de trabajos de impresión](../printdocs/printing-and-print-spooler-reference.md)
     -   [Imprimir paquete de documento](../printdocs/tailored-app-printing-api.md)
-    -   [Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+    -   [Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
     -   [Imprimir vale](../printdocs/print-ticket-api.md)
     -   [XPS Print](../printdocs/xpsprint-api.md)
 -   [Sensores](../sensorsapi/sensor-api-programming-reference.md)
@@ -201,7 +201,7 @@ Las [API de gráficos, multimedia,](/previous-versions//aa969176(v=vs.85)) [audi
 -   [UPnP](../upnp/universal-plug-and-play-start-page.md)
 -   [Servicios web en dispositivos](../wsdapi/web-services-for-devices-reference.md)
 -   [Adquisición de imágenes de Windows (WIA)](../wia/-wia-reference.md)
--   [Windows Archivos Administrador de dispositivos](../wmdm/programming-reference.md)
+-   [Windows Archivos multimedia Administrador de dispositivos](../wmdm/programming-reference.md)
 -   [Windows Dispositivos portátiles](../wpd_sdk/programming-reference.md)
 
 ## <a name="system-services"></a>Servicios del sistema
@@ -209,7 +209,7 @@ Las [API de gráficos, multimedia,](/previous-versions//aa969176(v=vs.85)) [audi
 Las [API de Servicios](/previous-versions//aa969179(v=vs.85)) del sistema ofrecen a las aplicaciones acceso a los recursos del equipo y a las características del sistema operativo subyacente, como memoria, sistemas de archivos, dispositivos, procesos y subprocesos.
 
 -   [COM](../com/reference.md)
--   [Com +](../cossdk/com--reference.md)
+-   [COM +](../cossdk/com--reference.md)
 -   [API de compresión](../cmpapi/-compression-portal.md)
 -   [Coordinador de transacciones distribuidas (DTC)](/previous-versions/windows/desktop/ms686108(v=vs.85))
 -   [Bibliotecas de vínculos dinámicos (DLL)](../dlls/dynamic-link-library-functions.md)
@@ -235,7 +235,7 @@ Las [API de Servicios](/previous-versions//aa969179(v=vs.85)) del sistema ofrece
 
 ## <a name="security-and-identity"></a>Seguridad e identidad
 
-Las [API de seguridad e](../devnotes/security.md) identidad habilitan la autenticación de contraseñas durante el inicio de sesión, la protección discrecional para todos los objetos del sistema compartibles, el control de acceso con privilegios, la administración de derechos y la auditoría de seguridad.
+Las [API de seguridad e identidad](../devnotes/security.md) habilitan la autenticación de contraseñas durante el inicio de sesión, la protección discrecional para todos los objetos del sistema que se pueden compartir, el control de acceso con privilegios, la administración de derechos y la auditoría de seguridad.
 
 -   [Autenticación](../secauthn/authentication-reference.md)
 -   [Autorización](../secauthz/authorization-reference.md)
@@ -244,9 +244,9 @@ Las [API de seguridad e](../devnotes/security.md) identidad habilitan la autenti
 -   [Cryptographic Next Generation (CNG)](../seccng/cng-reference.md)
 -   [Servicios de directorio](/previous-versions//ms682458(v=vs.85))
     -   [Active Directory Domain Services](../ad/active-directory-domain-services-reference.md)
-    -   [Active Directory interfaces de servicio (ADSI)](../adsi/adsi-reference.md)
+    -   [Active Directory Service Interfaces (ADSI)](../adsi/adsi-reference.md)
 -   [Protocolo de autenticación extensible (EAP)](../eap/extensible-authentication-protocol-reference.md)
--   [Host del protocolo de autenticación extensible (EAPHost)](../eaphost/about-eap-host.md)
+-   [Host de protocolo de autenticación extensible (EAPHost)](../eaphost/about-eap-host.md)
 -   [Administración de contraseñas de MS-CHAP](/previous-versions/windows/desktop/mschap/ms-chap-password-management-reference)
 -   [Protección de acceso a redes (NAP)](../nap/nap-reference.md)
 -   [Extensiones del servidor de directivas de red (NPS)](../nps/ias-internet-authentication-service-reference.md)
@@ -269,7 +269,7 @@ Las [API de seguridad e](../devnotes/security.md) identidad habilitan la autenti
 
 Las [interfaces de](../srvnodes/system-administration.md) administración del sistema permiten instalar, configurar y dar servicio a aplicaciones o sistemas.
 
--   [datos de la configuración de arranque (BCD) WMI](/previous-versions/windows/desktop/bcd/bcd-reference)
+-   [datos de la configuración de arranque (BCD) proveedor WMI](/previous-versions/windows/desktop/bcd/bcd-reference)
 -   [Clústeres de conmutación por error](/previous-versions/windows/desktop/mscs/failover-cluster-apis-portal)
 -   [Administrador de recursos del servidor de archivos (FSRM)](/previous-versions/windows/desktop/fsrm/fsrm-reference)
 -   [Directiva de grupo](/previous-versions/windows/desktop/Policy/group-policy-reference)
@@ -288,7 +288,7 @@ Las [interfaces de](../srvnodes/system-administration.md) administración del si
 -   [Microsoft Virtual Server](/previous-versions/windows/desktop/msvs/microsoft-virtual-server-reference)
 -   [Proveedor de equilibrio de carga de red](/previous-versions/windows/desktop/wlbsprov/network-load-balancing-provider-reference)
 -   [Windows Defender WMI v2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
--   [Windows Servicios de implementación](../wds/windows-deployment-services-portal.md)
+-   [Servicios de implementación de Windows](../wds/windows-deployment-services-portal.md)
 -   [Windows Genuine Advantage](/previous-versions/windows/desktop/wingen/windows-genuine-advantage-api-functions)
 -   [Windows Infraestructura de administración](/previous-versions/windows/desktop/wmi_v2/wmi-reference)
 -   [Instrumental de administración de Windows (WMI)](../wmisdk/wmi-reference.md)
@@ -307,12 +307,12 @@ Las [API de](../devnotes/networking.md) red permiten la comunicación entre apli
 -   [Servicio de fax](/previous-versions/windows/desktop/fax/-mfax-fax-service-reference)
 -   [Get Connected Wizard](/previous-versions/windows/desktop/get_connected/get-connected-wizard-api-reference)
 -   [Servidor HTTP](../http/http-server-api-reference.md)
--   [Uso compartido de conexión a Internet y firewall](/previous-versions/windows/desktop/ics/internet-connection-sharing-and-internet-connection-firewall-reference)
+-   [Firewall y uso compartido de conexiones a Internet](/previous-versions/windows/desktop/ics/internet-connection-sharing-and-internet-connection-firewall-reference)
 -   [Asistente IP](../iphlp/ip-helper-function-reference.md)
 -   [Firewall de conexión a Internet IPv6](/previous-versions/windows/desktop/ics/ipv6-firewall-configuration-reference)
 -   [Base de información de administración](/previous-versions/windows/desktop/mib/management-information-base-reference)
 -   [Cola de mensajes (MSMQ)](/previous-versions/windows/desktop/legacy/ms700112(v=vs.85))
--   [Protocolo de asignación dinámica de cliente de dirección de multidifusión (MADCAP)](/previous-versions/windows/desktop/madcap/madcap-reference)
+-   [Protocolo de asignación dinámica de cliente de direcciones de multidifusión (MADCAP)](/previous-versions/windows/desktop/madcap/madcap-reference)
 -   [Traducción de direcciones de red (NAT)](/previous-versions/windows/desktop/ics/network-address-translation-traversal-reference)
 -   [Administrador de listas de redes (NLM)](../nla/network-list-manager-api-reference.md)
 -   [Administración de red](../netmgmt/network-management-reference.md)
@@ -325,7 +325,7 @@ Las [API de](../devnotes/networking.md) red permiten la comunicación entre apli
 -   [Administración de SMB](/previous-versions/windows/desktop/smb/smb-management-api-portal)
 -   [Interfaces de programación de aplicaciones de telefonía (TAPI)](../tapi/telephony-application-programming-interfaces.md)
 -   [WebDAV](../webdav/webdav-api-reference.md)
--   [Componente de protocolo WebSocket](../websock/web-socket-protocol-component-api-portal.md)
+-   [Componente del protocolo WebSocket](../websock/web-socket-protocol-component-api-portal.md)
 -   Redes inalámbricas:
     -   [Bluetooth](../bluetooth/bluetooth-reference.md)
     -   [Irda](/previous-versions/windows/desktop/irda/irda-and-windows-sockets-reference)
@@ -346,18 +346,18 @@ Las [API de](../devnotes/networking.md) red permiten la comunicación entre apli
 
 ## <a name="deprecated-or-legacy-apis"></a>API en desuso o heredadas
 
-Las siguientes son tecnologías y API que están obsoletas o que se han reemplazado o que han quedado en desuso de los Windows operativos de cliente y servidor.
+Las siguientes son tecnologías y API que están obsoletas o que se han reemplazado o que han quedado en desuso Windows sistemas operativos cliente y servidor.
 
 -   [Directmusic](/previous-versions/ms807133(v=msdn.10))
 -   [DirectSound](/previous-versions/windows/desktop/ee416975(v=vs.85))
--   [El SDK udDI de Microsoft](/previous-versions/windows/desktop/aa966237(v=bts.10)) ahora se incluye [con Microsoft BizTalk Server](/previous-versions/bb905520(v=msdn.10)).
+-   [El SDK de UDDI](/previous-versions/windows/desktop/aa966237(v=bts.10)) de Microsoft ahora se incluye [con Microsoft BizTalk Server](/previous-versions/bb905520(v=msdn.10)).
 -   [Red datos dinámicos Exchange (DDE)](../ipc/network-dde-reference.md)
 -   [Servicio de instalación remota:](/previous-versions/windows/it-pro/windows-server-2003/cc786442(v=ws.10))use [Windows Deployment Services en](../wds/windows-deployment-services-portal.md) su lugar.
--   [Servicio de disco virtual (VDS):](../vds/vds-reference.md)use [Windows Storage en su](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal) lugar.
+-   [Virtual Disk Service (VDS):](../vds/vds-reference.md)en su [lugar, use Windows Storage administración de](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal) discos virtuales.
 -   Terminal Services: use [Servicios de Escritorio remoto](../termserv/terminal-services-reference.md).
 -   [Windows Media Rights Manager](/previous-versions//bb614742(v=vs.85))
 -   [Windows Messaging (MAPI):](/previous-versions/windows/desktop/windowsmapi/mapi-stub-library-and-simple-mapi)use [Office EN SU LUGAR.](/previous-versions/office/developer/office-2007/cc765775(v=office.12))
--   [Windows Platform de Platform:](/previous-versions/windows/desktop/gadgetplatform/windows-gadget-platform-portal)en su lugar, cree aplicaciones para UWP.
+-   [Windows platform de Platform:](/previous-versions/windows/desktop/gadgetplatform/windows-gadget-platform-portal)cree aplicaciones para UWP en su lugar.
 -   [Windows barra lateral:](/previous-versions/windows/desktop/sidebar/-sidebar-ref-entry)cree aplicaciones para UWP en su lugar.
 -   [Windows SideShow:](/previous-versions//ms744179(v=vs.85))Sin reemplazo.
 -   [Efectos de imagen de WPF](/previous-versions/windows/desktop/wibe/-wibe-about-bitmapeffects)
