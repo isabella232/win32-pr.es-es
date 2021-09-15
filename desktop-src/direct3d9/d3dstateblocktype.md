@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 7780b7ded37ba976f32f4439ab793ae711be2f5790d03555a6a8be4f031571e2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 03b1834a2bd8e1b5f89922d908a558aa97e58f76
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119850195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566124"
 ---
 # <a name="d3dstateblocktype-enumeration"></a>D3DSTATEBLOCKTYPE (enumeración)
 
 Conjuntos predefinidos de estado de canalización usados por los bloques de estado (vea State Blocks Save and Restore State (Direct3D 9) [Guardar y restaurar estado [(Direct3D 9)].](state-blocks-save-and-restore-state.md)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -70,7 +70,7 @@ Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, al
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Como se muestra en el diagrama siguiente, el estado de los vértices y los píxeles son subconjuntos del estado del dispositivo.
 
@@ -82,7 +82,7 @@ Solo hay algunos estados que se consideran estado de vértice y píxel. Estos es
 -   Estado de representación: D3DRSSTART \_ DESTART
 -   Estado de representación: \_ D3DRSEND
 -   Estado de textura: D3DTSS \_ TEXCOORDINDEX
--   Estado de textura: \_ TEXTURETRANSFORMFLAGS de D3DTSS
+-   Estado de textura: D3DTSS \_ TEXTURETRANSFORMFLAGS
 
 ## <a name="requirements"></a>Requisitos
 

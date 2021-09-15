@@ -15,12 +15,12 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34aef8bad8220e9f579560c8e47477a96313bbddd9ed6970710ffffc263da35e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 645d872e983cabbcd81aab05a59ee8f1f83cc403
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119124660"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566249"
 ---
 # <a name="d3dx11preprocessshaderfromresource-function"></a>Función D3DX11PreprocessShaderFromResource
 
@@ -73,7 +73,7 @@ Identificador del módulo de recursos que contiene el sombreador. HMODULE se pue
 
 Tipo: **[ **LPCTSTR**](/windows/desktop/WinProg/windows-data-types)**
 
-Nombre del recurso en el lado hModule que contiene el sombreador. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos se resuelve en LPCSTR.
+Nombre del recurso en el lado hModule que contiene el sombreador. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos se resuelve como LPCSTR.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Puntero a una interfaz include; establezca esta opción **en NULL** para especif
 
 Tipo: **[ **ID3DX11ThreadPump**](id3dx11threadpump.md)\***
 
-Puntero a una interfaz de bombeo de subprocesos (vea [**ID3DX11ThreadPump Interface**](id3dx11threadpump.md)). Use **NULL** para especificar que esta función no debe devolver hasta que se complete.
+Puntero a una interfaz de bombeo de subprocesos (vea [**ID3DX11ThreadPump Interface**](id3dx11threadpump.md)). Use **NULL** para especificar que esta función no debe devolverse hasta que se complete.
 
 </dd> <dt>
 

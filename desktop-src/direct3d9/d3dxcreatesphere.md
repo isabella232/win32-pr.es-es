@@ -1,5 +1,5 @@
 ---
-description: Usa un sistema de coordenadas a la izquierda para crear una malla que contiene una esfera.
+description: Usa un sistema de coordenadas izquierdo para crear una malla que contiene una esfera.
 ms.assetid: d3198805-9435-4849-892d-ec98dc2221d2
 title: Función D3DXCreateSphere (D3dx9shape.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4c1cea000071f0d097f29138b4e5f2db554f2214d8ca6343c16a39740d82c29e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e56ac6b8e8cc2195e2176e505cf430ea33b6b6ce
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120119355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566104"
 ---
 # <a name="d3dxcreatesphere-function"></a>Función D3DXCreateSphere
 
-Usa un sistema de coordenadas a la izquierda para crear una malla que contiene una esfera.
+Usa un sistema de coordenadas izquierdo para crear una malla que contiene una esfera.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -95,7 +95,7 @@ Dirección de un puntero a la forma de salida, una [**interfaz ID3DXMesh.**](id3
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Dirección de un puntero a una [**interfaz ID3DXBuffer.**](id3dxbuffer.md) Cuando el método devuelve un resultado, este parámetro se rellena con una matriz de tres DWORD por cara que especifican los tres vecinos de cada cara de la malla. Se puede especificar **NULL.**
+Dirección de un puntero a una [**interfaz ID3DXBuffer.**](id3dxbuffer.md) Cuando el método vuelve, este parámetro se rellena con una matriz de tres DWORD por cara que especifican los tres vecinos de cada cara de la malla. Se puede especificar **NULL.**
 
 </dd> </dl>
 
@@ -105,11 +105,11 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La esfera creada se centra en el origen y su eje se alinea con el eje Z.
 
-Esta función crea una malla con la opción de creación D3DXMESH MANAGED y el formato flexible de vértice \_ flexible (FVF) [D3DFVF \_ XYZ \| D3DFVF \_ NORMAL.](d3dfvf.md)
+Esta función crea una malla con la opción de creación D3DXMESH MANAGED y el formato de vértice \_ flexible (FVF) [D3DFVF \_ XYZ \| D3DFVF \_ NORMAL.](d3dfvf.md)
 
 ## <a name="requirements"></a>Requisitos
 

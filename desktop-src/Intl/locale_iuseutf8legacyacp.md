@@ -4,12 +4,12 @@ ms.assetid: 0b43eea7-1ca1-4c85-a4ba-0e6a0537f02c
 title: LOCALE_IUSEUTF8LEGACYACP
 ms.topic: article
 ms.date: 03/02/2020
-ms.openlocfilehash: f4a96f5c3b7720e468b6528545f0c4e081a90c81dbe3319f7e02e0cba3791bbc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d9d5904ee77704378dc148d78a623c1a4577aef4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120041295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566349"
 ---
 # <a name="locale_iuseutf8legacyacp"></a>CONFIGURACIÓN REGIONAL \_ IUSEUTF8LEGACYACP
 

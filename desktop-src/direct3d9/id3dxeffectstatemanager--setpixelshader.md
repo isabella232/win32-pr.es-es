@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 9b7289d6aeb537f6ae4b4c4fc912b09d7cd352a85cfc089221ece9613362e017
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 71a16bc267df95ed7efc1e0f74871b131e34ebe1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119044443"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565957"
 ---
 # <a name="id3dxeffectstatemanagersetpixelshader-method"></a>Método ID3DXEffectStateManager::SetPixelShader
 
@@ -45,7 +45,7 @@ HRESULT SetPixelShader(
 
 Tipo: **[ **LPDIRECT3DPIXELSHADER9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dpixelshader9)**
 
-Puntero a un objeto de sombreador de píxeles. Vea [**IDirect3DPixelShader9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dpixelshader9).
+Puntero a un objeto de sombreador de píxeles. Vea [**IDirect3DPixelShader9.**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3dpixelshader9)
 
 </dd> </dl>
 
@@ -56,7 +56,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 El método implementado por el usuario debe devolver S \_ OK. Si se produce un error en la devolución de llamada al establecer el estado del dispositivo, se producirá una de las siguientes acciones:
 
 -   Se producirá un error en el efecto [**durante ID3DXEffect::BeginPass**](id3dxeffect--beginpass.md).
--   Se producirá un error en la llamada de estado de efecto dinámico (como [**IDirect3DDevice9::SetPixelShader).**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshader)
+-   Se producirá un error en la llamada de estado de efecto dinámico (por [**ejemplo, IDirect3DDevice9::SetPixelShader).**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setpixelshader)
 
 ## <a name="requirements"></a>Requisitos
 

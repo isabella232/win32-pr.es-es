@@ -15,12 +15,12 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da992c258fe79bd1ed81274495e884339f40aed337fcf11665ec27110afaf422
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aac60b1d496e0f1d4ecb604b18a8ef71cac8b5d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118536264"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566280"
 ---
 # <a name="d3dx11createasynctextureinfoprocessor-function"></a>Función D3DX11CreateAsyncTextureInfoProcessor
 
@@ -71,13 +71,13 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta API crea una interfaz de procesador de datos; [**D3DX11CreateAsyncTextureProcessor crea**](d3dx11createasynctextureprocessor.md) la interfaz del procesador de datos y carga la textura.
 
 No hay ninguna implementación del cargador asincrónico fuera de D3DX 10 y D3DX 11.
 
-Para Windows Store, los ejemplos de DirectX (por ejemplo, el ejemplo de tutorial de [Direct3D)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample)incluyen el módulo **BasicLoader** que usa el modelo de programación asincrónica de Windows Runtime [**(AsyncBase).**](/previous-versions/visualstudio/visual-studio-2012/br244878(v=vs.110))
+Para Windows Store, los ejemplos de DirectX (por ejemplo, el [ejemplo de tutorial de Direct3D)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample)incluyen el módulo **BasicLoader** que usa el modelo de programación asincrónica de Windows Runtime [**(AsyncBase).**](/previous-versions/visualstudio/visual-studio-2012/br244878(v=vs.110))
 
 En el caso de las aplicaciones de escritorio Win32, puede usar el Runtime de simultaneidad [para](/previous-versions/visualstudio/visual-studio-2010/ee207192(v=vs.100)) implementar algo similar al modelo de programación asincrónica de Windows Runtime.
 
@@ -92,7 +92,7 @@ En el caso de las aplicaciones de escritorio Win32, puede usar el Runtime de sim
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

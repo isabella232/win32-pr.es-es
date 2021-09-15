@@ -15,11 +15,11 @@ ms.localizationpriority: low
 ms.topic: reference
 ms.date: 08/03/2021
 ms.openlocfilehash: cc3d65a9779c379debd94e7872717e4449a71ac8
-ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121813078"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566173"
 ---
 # <a name="cd3dx12_state_object_desc-class"></a>CD3DX12_STATE_OBJECT_DESC clase
 
@@ -39,7 +39,7 @@ class CD3DX12_STATE_OBJECT_DESC
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `CD3DX12_STATE_OBJECT_DESC`
 
@@ -47,7 +47,7 @@ Constructor predeterminado. Crea una nueva instancia de inicializada de forma pr
 
 `CD3DX12_STATE_OBJECT_DESC(D3D12_STATE_OBJECT_TYPE)`
 
-Constructor que crea una nueva instancia de un **CD3DX12_STATE_OBJECT_DESC** inicializado con un tipo de subjobject correspondiente al valor del D3D12_STATE_OBJECT_TYPE [**pasado**](/windows/win32/api/d3d12/ne-d3d12-d3d12_state_object_type) a él.
+Constructor que crea una nueva instancia de un **CD3DX12_STATE_OBJECT_DESC** inicializado con un tipo de subjobject correspondiente al valor del D3D12_STATE_OBJECT_TYPE [**que**](/windows/win32/api/d3d12/ne-d3d12-d3d12_state_object_type) se le pasa.
 
 `SetStateObjectType(D3D12_STATE_OBJECT_TYPE)`
 
@@ -67,7 +67,7 @@ Plantilla de función que crea un asistente sububject cuya duración pertenece a
 
 El parámetro *de plantilla T* especifica el tipo del asistente de subjobject, por ejemplo, [CD3DX12_HIT_GROUP_SUBOBJECT](cd3dx12-hit-group-subobject.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para usar los asistentes de creación de objetos de estado D3DX12, empiece por crear una instancia de un objeto CD3DX12_STATE_OBJECT_DESC y llame **a** su **función CreateSubobject** para crear subobjetos. Cada uno de los asistentes de subobjetos tiene métodos específicos de ese subobjeto para configurar su contenido.
 

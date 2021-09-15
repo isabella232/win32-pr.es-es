@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: 1edcf2b1cbe2363f805bee1f5eb67f5558702ea9e163a865e1a6c51d6f5ed6ff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64cc116199b688fc9dcd8d6fbf331d85da508948
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118523841"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566080"
 ---
 # <a name="d3dxuvatlas-enumeration"></a>D3DVATVATLAS (enumeración)
 
 Define opciones para realizar cálculos de distancia geodésica, al ajustar una textura a una superficie curva. Use esta marca para elegir entre cálculos rápidos y de alta calidad al calcular un atlas de textura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -51,7 +51,7 @@ Las mallas con más de 25 000 caras tendrán aplicado el método de distancia ge
 <span id="D3DXUVATLAS_GEODESIC_FAST"></span><span id="d3dxuvatlas_geodesic_fast"></span>**D3DVATVATLAS \_ GEODESIC \_ FAST**
 </dt> <dd>
 
-Usa aproximaciones para mejorar la velocidad de gráficos a costa de que se agregan gráficos extendidos o más que se van a generar para la malla.
+Usa aproximaciones para mejorar la velocidad de gráficos a costa de que se agregan gráficos extendidos o más para la malla.
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Proporciona gráficos de mejor calidad, pero requiere más tiempo y memoria que 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

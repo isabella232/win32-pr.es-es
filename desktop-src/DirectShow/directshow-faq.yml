@@ -1,17 +1,17 @@
 ### YamlMime:FAQ
 metadata:
-  description: DirectShow Preguntas más frecuentes
+  description: DirectShow PREGUNTAS MÁS FRECUENTES
   ms.assetid: 198758b9-025a-44af-958c-9ddea8cbb12d
-  title: DirectShow Preguntas más frecuentes
+  title: DirectShow PREGUNTAS MÁS FRECUENTES
   ms.topic: article
   ms.date: 05/31/2018
-  ms.openlocfilehash: b21916e381262be4a695abfeca0c570bc3b13f7b376c7728b33e3458f6e58c98
-  ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+  ms.openlocfilehash: a36cd1942fcc1b07e63a3ec7bfb8297b7d6b6e70
+  ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/11/2021
-  ms.locfileid: "117821180"
-title: DirectShow Preguntas más frecuentes
+  ms.lasthandoff: 09/13/2021
+  ms.locfileid: "127566341"
+title: DirectShow PREGUNTAS MÁS FRECUENTES
 summary: En este artículo se responden muchas preguntas frecuentes sobre Microsoft DirectShow.
 sections:
 - name: Omitido
@@ -47,7 +47,7 @@ sections:
   - question: >
       ¿Cómo DirectShow con Microsoft DirectX?
     answer: >
-      Internamente, DirectShow DirectSound y DirectDraw cuando el hardware lo admite. Los filtros videorenderer y overlay Mixer usan las superficies DirectDraw 3 y DirectDraw 5. El representador de mezcla de vídeo 7 (solo Windows XP) usa superficies de DirectDraw 7. El representador de mezcla de vídeo 9 y el representador de vídeo mejorado usan las API más recientes de Microsoft Direct3D. No es necesario usar las otras API de DirectX para escribir una DirectShow, aunque es posible combinarlas.
+      Internamente, DirectShow DirectSound y DirectDraw cuando el hardware lo admite. Los filtros De representador de vídeo Mixer superposición usan las superficies DirectDraw 3 y DirectDraw 5. El representador de mezcla de vídeo 7 (solo Windows XP) usa superficies de DirectDraw 7. El representador de mezcla de vídeo 9 y el representador de vídeo mejorado usan las API más recientes de Microsoft Direct3D. No es necesario usar las otras API de DirectX para escribir una DirectShow, aunque es posible combinarlas.
   - question: >
       ¿Cómo DirectShow con Microsoft ActiveMovie?
     answer: >
@@ -55,7 +55,7 @@ sections:
   - question: >
       ¿Está disponible el código fuente de la utilidad GraphEdit? ¿Se puede redistribuir GraphEdit?
     answer: >
-      No, el origen no está disponible y Graphedt.exe no es redistribuible.
+      No, el origen no está disponible y Graphedt.exe no se puede redistribuir.
   - question: >
       ¿Reemplazan las DDO DirectShow filtros?
     answer: >
@@ -70,7 +70,7 @@ sections:
   - question: >
       GraphEdit muestra una gran cantidad de filtros que no están documentados. ¿Cuáles son estos filtros?
     answer: >
-      GraphEdit enumera todos los filtros registrados en el sistema en una categoría de filtro. Esto puede incluir filtros instalados por aplicaciones de terceros o instalados por otras tecnologías de Microsoft, como Windows Media o NetMeeting. Además, algunos DirectShow de datos actúan como contenedores para códecs o dispositivos de hardware, y cada códec o dispositivo aparece como un filtro distinto. NetMeeting usa el códec de vídeo De Microsoft H.263 y ya no se admite en DirectShow. Para obtener más información, [vea Enumerar dispositivos y filtros.](enumerating-devices-and-filters.md)
+      GraphEdit enumera todos los filtros registrados en el sistema en una categoría de filtro. Esto puede incluir filtros instalados por aplicaciones de terceros o instalados por otras tecnologías de Microsoft, como Windows Media o NetMeeting. Además, algunos DirectShow actúan como contenedores para códecs o dispositivos de hardware, y cada códec o dispositivo aparece como un filtro distinto. NetMeeting usa el códec de vídeo De Microsoft H.263 y ya no se admite en DirectShow. Para obtener más información, [vea Enumerar dispositivos y filtros.](enumerating-devices-and-filters.md)
   - question: >
       Tengo problemas para compilar mi grafo personalizado mediante programación.
     answer: >
@@ -121,5 +121,5 @@ sections:
       Algunos descodificadores están diseñados para no funcionar mientras la aplicación está conectada al depurador. Intente ejecutar la aplicación fuera del depurador.
   - question: >
       ¿Cómo funciona la \_ macro DEFINE GUID?
-    answer: "La **macro \\_ DEFINE GUID** resuelve el problema de declarar referencias a valores GUID en el código `extern` fuente. Por ejemplo, supongamos que el proyecto tiene tres archivos de origen, Src1.cpp, Src2.cpp y Src3.cpp, y los tres archivos usan un determinado valor GUID que ha definido. El valor guid debe definirse exactamente una vez en el proyecto y los demás archivos de origen deben declarar `extern` referencias a él. Con la **macro \\_ DEFINE GUID,** puede usar el mismo archivo de encabezado para ambos fines. En el archivo de encabezado, declare el GUID como se muestra a continuación:\n\n\n```C++\nDEFINE_GUID(CLSID_MyObject, \n0x00000000, 0x0000, 0x0000, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00);\n```\n\n\n\n(Donde este ejemplo tiene ceros, coloque los valores guid reales). Puede usar la utilidad Guidgen.exe para crear un nuevo GUID y pegarlo en el archivo de encabezado en el **formato \\_ DEFINE GUID.** Incluya este archivo de encabezado en cada archivo de código fuente que haga referencia al GUID. En exactamente uno de los archivos de origen, incluya el archivo de encabezado Initguid.h antes del archivo de encabezado. Por ejemplo:\n\n\n```C++\n// Src1.cpp\n#include <initguid.h>\n#include \"MyGuids.h\"\n\n// Src2.cpp\n#include \"MyGuids.h\"\n\n// Src3.cpp\n#include \"MyGuids.h\"\n```\n\nSiempre que no se incluya el archivo de encabezado Initguid.h, la macro **\\_ DEFINE GUID** crea una referencia al valor `extern` GUID. Cuando se incluye el archivo de encabezado Initguid.h, vuelve a definir la macro **DEFINE \\_ GUID** para que **DEFINE \\_ GUID** cree una declaración de definición del GUID.\n\nSi no incluye Initguid.h en ninguno de los archivos de origen, recibirá un error de vínculo \"símbolo externo sin resolver\". Si incluye Initguid.h dos veces para el mismo GUID, recibirá un error de compilación \"redefinición; inicialización múltiple\". Para resolver estos errores, asegúrese de que Initguid.h se incluye exactamente una vez. Además, no incluya Initguid.h dentro de un archivo de encabezado precompilado, ya que, de hecho, el encabezado precompilado se incluye en todos los archivos de origen.\n"
+    answer: "La **macro \\_ DEFINE GUID** resuelve el problema de declarar referencias a valores GUID en el código `extern` fuente. Por ejemplo, supongamos que el proyecto tiene tres archivos de origen, Src1.cpp, Src2.cpp y Src3.cpp, y los tres archivos usan un determinado valor GUID que ha definido. El valor guid debe definirse exactamente una vez en el proyecto y los demás archivos de origen deben declarar `extern` referencias a él. Con la **macro \\_ DEFINE GUID,** puede usar el mismo archivo de encabezado para ambos fines. En el archivo de encabezado, declare el GUID como se muestra a continuación:\n\n\n```C++\nDEFINE_GUID(CLSID_MyObject, \n0x00000000, 0x0000, 0x0000, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00);\n```\n\n\n\n(Donde este ejemplo tiene ceros, coloque los valores guid reales). Puede usar la utilidad Guidgen.exe para crear un NUEVO GUID y pegarlo en el archivo de encabezado en el **formato DEFINE \\_ GUID.** Incluya este archivo de encabezado en cada archivo de código fuente que haga referencia al GUID. En exactamente uno de los archivos de origen, incluya el archivo de encabezado Initguid.h antes del archivo de encabezado. Por ejemplo:\n\n\n```C++\n// Src1.cpp\n#include <initguid.h>\n#include \"MyGuids.h\"\n\n// Src2.cpp\n#include \"MyGuids.h\"\n\n// Src3.cpp\n#include \"MyGuids.h\"\n```\n\nSiempre que no se incluya el archivo de encabezado Initguid.h, la macro **\\_ DEFINE GUID** crea una referencia al valor `extern` GUID. Cuando se incluye el archivo de encabezado Initguid.h, vuelve a definir la macro **DEFINE \\_ GUID** para que **DEFINE \\_ GUID** cree una declaración de definición del GUID.\n\nSi no incluye Initguid.h en ninguno de los archivos de origen, recibirá un error de vínculo \"símbolo externo sin resolver\". Si incluye Initguid.h dos veces para el mismo GUID, recibirá un error de compilación \"redefinición; inicialización múltiple\". Para resolver estos errores, asegúrese de que Initguid.h se incluye exactamente una vez. Además, no incluya Initguid.h dentro de un archivo de encabezado precompilado, ya que, en efecto, el encabezado precompilado se incluye en todos los archivos de origen.\n"
 additionalContent: "\n## <a name=\"related-topics\"></a>Temas relacionados\n\n[Introducción a DirectShow](introduction-to-directshow.md)"

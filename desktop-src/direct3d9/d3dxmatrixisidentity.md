@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 913034d9cf3781dce4bb8c1ee643eac90bd23054300fbaa8b0a55eab62914958
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c2ca91f74512b432d7cc18b28cef44d713cfc11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119044873"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566096"
 ---
 # <a name="d3dxmatrixisidentity-function"></a>Función D3DXMatrixIsIdentity
 
@@ -53,7 +53,7 @@ Puntero a la [**estructura D3DXMATRIX**](d3dxmatrix.md) que se probará para la 
 
 Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Si la matriz es una matriz de identidad, esta función devuelve **TRUE**. De lo contrario, esta función **devuelve FALSE.**
+Si la matriz es una matriz de identidad, esta función devuelve **TRUE**. De lo contrario, esta función devuelve **FALSE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ Si la matriz es una matriz de identidad, esta función devuelve **TRUE**. De lo 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

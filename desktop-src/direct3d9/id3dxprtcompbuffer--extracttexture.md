@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 6b6dd2f0a366cf371347d1f8f7289e1ad3c782e069dcd9f7007abbd7c1a5c33d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a6a2200c680c19019375a5e33d2d8b675992dc38
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119985655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565857"
 ---
 # <a name="id3dxprtcompbufferextracttexture-method"></a>Método ID3DXPRTCompBuffer::ExtractTexture
 

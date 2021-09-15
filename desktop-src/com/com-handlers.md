@@ -4,12 +4,12 @@ description: El propósito de los controladores COM es proporcionar algunos \ 00
 ms.assetid: 390b0228-4c52-453c-82d8-466600d23a04
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22409cd7e2b02bbfa0cc988b062d3417f448c75e41f1970af2cb3ddf5c0ffb6b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6cb66a94942cd46424339cfffbde925f62e20e5f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119048483"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566336"
 ---
 # <a name="com-handlers"></a>Controladores COM
 

@@ -15,12 +15,12 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f5d3767bafda4f1914d37b7baacf599335877c30de216282f172ebe55739920
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 533e487e65640b8c17a0ff8d061388e8b5a6c0f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119124910"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566300"
 ---
 # <a name="d3dx11createasynccompilerprocessor-function"></a>Función D3DX11CreateAsyncCompilerProcessor
 
@@ -87,7 +87,7 @@ Puntero a una interfaz include. Este parámetro puede ser **NULL**.
 
 Tipo: **[ **LPCSTR**](/windows/desktop/WinProg/windows-data-types)**
 
-Nombre de la función de punto de entrada del sombreador donde comienza la ejecución del sombreador. Al compilar un efecto, **D3DX11CreateAsyncCompilerProcessor** omite *pFunctionName*; Se recomienda establecer *pFunctionName* en **NULL** porque es una buena práctica de programación establecer un parámetro de puntero en **NULL** si la función llamada no lo va a usar.
+Nombre de la función de punto de entrada del sombreador donde comienza la ejecución del sombreador. Al compilar un efecto, **D3DX11CreateAsyncCompilerProcessor** omite *pFunctionName*; Se recomienda establecer *pFunctionName* en **NULL** porque es una buena práctica de programación establecer un parámetro de puntero en **NULL** si la función a la que se llama no lo usará.
 
 </dd> <dt>
 
@@ -151,11 +151,11 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No hay ninguna implementación del cargador asincrónico fuera de D3DX 10 y D3DX 11.
 
-Para Windows Store, los ejemplos de DirectX (por ejemplo, el ejemplo de tutorial de [Direct3D)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample)incluyen el módulo **BasicLoader** que usa el modelo de programación asincrónica de Windows Runtime [**(AsyncBase).**](/previous-versions/visualstudio/visual-studio-2012/br244878(v=vs.110))
+Para Windows Store, los ejemplos de DirectX (por ejemplo, el [ejemplo de tutorial de Direct3D)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Official%20Windows%20Platform%20Sample/Direct3D%20tutorial%20sample)incluyen el módulo **BasicLoader** que usa el modelo de programación asincrónica de Windows Runtime [**(AsyncBase).**](/previous-versions/visualstudio/visual-studio-2012/br244878(v=vs.110))
 
 En el caso de las aplicaciones de escritorio Win32, puede usar el Runtime de simultaneidad [para](/previous-versions/visualstudio/visual-studio-2010/ee207192(v=vs.100)) implementar algo similar al modelo de programación asincrónica de Windows Runtime.
 

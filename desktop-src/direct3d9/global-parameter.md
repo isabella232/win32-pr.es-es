@@ -4,12 +4,12 @@ ms.assetid: 2112db8d-6a11-451d-a9d2-ac1b3cb2da95
 title: Parámetro global
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4dc0a1337505cec30960ca12fa91ed692b9de9434e702c3fb03829e89ab46d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 647ef789e37cd7c8d6cd2fe554f1f8becbfd5e92
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118094776"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565965"
 ---
 # <a name="global-parameter"></a>Parámetro global
 
@@ -53,9 +53,9 @@ int3 SasVersion = { major, minor, revision };
 
 donde:
 
--   principal indica la versión principal de DXSAS. Las versiones principales de DXSAS pueden contener cambios de barrido en el conjunto de semántica y anotaciones definidas. La semántica y las anotaciones se pueden agregar y quitar y, en general, no se garantiza la compatibilidad con versiones anteriores.
+-   principal indica la versión principal de DXSAS. Las versiones principales de DXSAS pueden contener cambios de barrido en el conjunto de semánticas y anotaciones definidas. La semántica y las anotaciones se pueden agregar y quitar y, en general, no se garantiza la compatibilidad con versiones anteriores.
 -   minor indica la versión secundaria de SAS. Las versiones secundarias de DXSAS pueden incluir la adición de nuevas anotaciones o semánticas. Además, la semántica y las anotaciones se pueden marcar como en desuso en el estándar DXSAS. La semántica y las anotaciones en desuso deben seguir siendo compatibles con las aplicaciones host, pero pueden emitir un diagnóstico de advertencia cuando se usa dicha semántica o anotación. Las versiones secundarias son compatibles con versiones anteriores.
--   la revisión indica la revisión de DXSAS. Las revisiones de DXSAS solo existen como medio para corregir errores, quitar ambigüedades y refinar el estándar. Las revisiones del estándar son compatibles con versiones anteriores.
+-   revision indica la revisión DXSAS. Las revisiones de DXSAS solo existen como medio para corregir errores, quitar ambigüedad y refinar el estándar. Las revisiones del estándar son compatibles con versiones anteriores.
 
 La versión actual es 1.0.0. No hay ningún valor predeterminado para esta anotación.
 
@@ -70,11 +70,11 @@ string SasEffectAuthor = "value";
 
 
 
-donde value es una cadena que identifica el autor del efecto. El valor predeterminado es una cadena vacía.
+donde value es una cadena que identifica al autor del efecto. El valor predeterminado es una cadena vacía.
 
 ## <a name="saseffectauthoringsoftware"></a>SasEffectAuthoringSoftware
 
-Esto declara el software en el que se autorizó el efecto. Se declara de esta forma:
+Esto declara el software en el que se ha escrito el efecto. Se declara de esta forma:
 
 
 ```
@@ -96,7 +96,7 @@ string SasEffectCategory = "value";
 
 
 
-donde value es una cadena que identifica la categoría de efecto. El valor predeterminado es una cadena vacía. La categoría se expresa a través de un valor de tipo ruta de acceso mediante la barra diagonal como delimitador. Los efectos solo pueden pertenecer a una categoría, ya que no hay ninguna sintaxis para expresar la inclusión en varias rutas de acceso dentro de un único valor sasEffectCategory. La aplicación host no trata el valor de esta anotación como que distingue mayúsculas de minúsculas.
+donde value es una cadena que identifica la categoría de efecto. El valor predeterminado es una cadena vacía. La categoría se expresa a través de un valor de tipo ruta de acceso mediante la barra diagonal como delimitador. Los efectos solo pueden pertenecer a una categoría, ya que no hay ninguna sintaxis para expresar la inclusión en varias rutas de acceso dentro de un único valor SasEffectCategory. La aplicación host no trata el valor de esta anotación como que distingue mayúsculas de minúsculas.
 
 ## <a name="saseffectcompany"></a>SasEffectCompany
 
@@ -152,7 +152,7 @@ donde value es una cadena que identifica la revisión del efecto. El valor prede
 
 ## <a name="examples"></a>Ejemplos
 
-Este es un ejemplo en el que solo se usa la anotación necesaria única:
+Este es un ejemplo en el que solo se usa la anotación necesaria:
 
 
 ```
@@ -187,7 +187,7 @@ int gp : SasGlobal
 
 <dl> <dt>
 
-[Referencia de anotaciones y semánticas estándar de DirectX](dx9-graphics-reference-effects-dxsas.md)
+[Referencia de semántica y anotaciones estándar de DirectX](dx9-graphics-reference-effects-dxsas.md)
 </dt> </dl>
 
  

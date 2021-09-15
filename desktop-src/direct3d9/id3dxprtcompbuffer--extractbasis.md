@@ -1,5 +1,5 @@
 ---
-description: Extrae los vectores de base de análisis de componentes principales (PCA) y medio para un clúster determinado de un búfer de datos comprimido ID3DXPRTCompBuffer.
+description: Extrae los vectores de base de análisis de componentes principales y medio (PCA) para un clúster determinado de un búfer de datos comprimido ID3DXPRTCompBuffer.
 ms.assetid: dcb1372f-2c8f-4d18-9840-5982b2ed0d6e
 title: Método ID3DXPRTCompBuffer::ExtractBasis (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 288a96a5f56bc04b245eaaf032bbcd946ed227c5b4fcad9e5d5d200dfa9903bb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ebedef91c9f3d1e277a099ffd295903e9ba77ba8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118294044"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565868"
 ---
-# <a name="id3dxprtcompbufferextractbasis-method"></a>Id3DXPRTCompBuffer::ExtractBasis (método)
+# <a name="id3dxprtcompbufferextractbasis-method"></a>Método ID3DXPRTCompBuffer::ExtractBasis
 
-Extrae los vectores de base de análisis de componentes principales (PCA) y medio para un clúster determinado de un búfer de datos comprimido [**ID3DXPRTCompBuffer.**](id3dxprtcompbuffer.md)
+Extrae los vectores de base de análisis de componentes principales y medio (PCA) para un clúster determinado de un búfer de datos comprimido [**ID3DXPRTCompBuffer.**](id3dxprtcompbuffer.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ Clúster para el que se extraerá la base.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a una matriz de datos vectoriales base para Cluster. El tamaño de los datos FLOAT almacenados será: (1 + Número de vectores PCA por clúster) (Número de \* coeficientes) \* (Número de canales de color)
+Puntero a una matriz de datos vectoriales de base para Cluster. El tamaño de los datos FLOAT almacenados será: (1 + Número de vectores de PCA por clúster) (Número de \* coeficientes) \* (Número de canales de color)
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se prod
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

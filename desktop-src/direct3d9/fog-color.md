@@ -4,12 +4,12 @@ ms.assetid: 76366496-553d-4dbf-868d-d58b5377d36a
 title: Color de color rojo (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 395bb17c9d6495ade54bc7c761b8c8024c53fbd9a51f620a45ee3a807dc6e20d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 85c9ae217a26ab38be5e3f232fb9dfcd4c2977f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118988005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565997"
 ---
 # <a name="fog-color-direct3d-9"></a>Color de color rojo (Direct3D 9)
 

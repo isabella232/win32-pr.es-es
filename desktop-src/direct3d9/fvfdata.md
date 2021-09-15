@@ -4,12 +4,12 @@ ms.assetid: 30a95ca3-84ab-475d-9654-a3853263056b
 title: FVFData
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ec21cf354ed10e7229f1392dd31bf32bc416c27dff90d5d70858aeefc1b5c68
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d52af6096357c4855d2dc34442c6cd4814b6713b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118987995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565980"
 ---
 # <a name="fvfdata"></a>FVFData
 

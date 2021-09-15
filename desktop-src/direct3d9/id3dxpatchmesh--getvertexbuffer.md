@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f6b6a630a24ba5d0427862f7b0799d9b4c4b14661d2adf33b0e56ccae78dfa10
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b8c3bb79d4c04db072adef857de195df7a0f0fff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118802043"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565877"
 ---
 # <a name="id3dxpatchmeshgetvertexbuffer-method"></a>Método ID3DXPatchMesh::GetVertexBuffer
 
@@ -55,7 +55,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método supone una teselación uniforme.
 
@@ -70,7 +70,7 @@ Este método supone una teselación uniforme.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

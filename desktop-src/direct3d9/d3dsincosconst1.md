@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9types.h
-ms.openlocfilehash: 33838fc974d25fee0dcfb5f3357055b63583ea9976d56286136c92f1ea348d41
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41a039f95d1ee17aa00caa8ef1f42039da1ea34d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119987205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566128"
 ---
 # <a name="d3dsincosconst1"></a>D3DSINCOSCONST1
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 120a9f4179819b550502c2c3764d334159b647fd4c8621d3a088516b9a669d56
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0fde070b1b013e651c84ffea7098eb8225aed8f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119747855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565885"
 ---
 # <a name="id3dxpatchmeshgetdeclaration-method"></a>Método ID3DXPatchMesh::GetDeclaration
 
@@ -45,7 +45,7 @@ HRESULT GetDeclaration(
 
 Tipo: **[ **LPD3DVERTEXELEMENT9**](d3dvertexelement9.md)**
 
-Matriz [**de elementos D3DVERTEXELEMENT9**](d3dvertexelement9.md) que describen el formato de vértice de los vértices de malla. La dimensión de esta matriz declarator es [**MAX \_ FVF \_ DECL \_ SIZE.**](./max-fvf-decl-size.md) La matriz de elementos de vértice termina con la macro [**END D3DDECL. \_**](d3ddecl-end.md)
+Matriz [**de elementos D3DVERTEXELEMENT9**](d3dvertexelement9.md) que describen el formato de vértice de los vértices de la malla. La dimensión de esta matriz declarator es [**MAX \_ FVF \_ DECL \_ SIZE**](./max-fvf-decl-size.md). La matriz de elementos de vértice termina con la macro [**\_ END de D3DDECL.**](d3ddecl-end.md)
 
 </dd> </dl>
 
@@ -53,11 +53,11 @@ Matriz [**de elementos D3DVERTEXELEMENT9**](d3dvertexelement9.md) que describen 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La matriz de elementos incluye la macro [**\_ END D3DDECL,**](d3ddecl-end.md) que finaliza la declaración.
+La matriz de elementos incluye la macro [**\_ END de D3DDECL,**](d3ddecl-end.md) que finaliza la declaración.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -1,6 +1,6 @@
 ---
 title: Función D3DX11CreateAsyncShaderPreprocessProcessor (D3DX11async.h)
-description: 'Nota: La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios. Cree un procesador de datos para un sombreador de forma asincrónica.'
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios. Cree un procesador de datos para un sombreador de forma asincrónica.
 ms.assetid: a7e9754b-acc1-49d0-bd8e-b116bc3c7e3a
 keywords:
 - Función D3DX11CreateAsyncShaderPreprocessProcessor Direct3D 11
@@ -15,17 +15,17 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c1e19d0e4d8c2f722e1de882cb265ec6df4e206c5d845f535643c07feb672a1d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 46e58b267f186e5fd0104b10e9f9423f407aaf13
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119124890"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566284"
 ---
 # <a name="d3dx11createasyncshaderpreprocessprocessor-function"></a>Función D3DX11CreateAsyncShaderPreprocessProcessor
 
 > [!Note]  
-> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store. Vea la sección Comentarios.
 
  
 
@@ -111,7 +111,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No hay ninguna implementación del cargador asincrónico fuera de D3DX 10 y D3DX 11.
 

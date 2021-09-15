@@ -4,12 +4,12 @@ ms.assetid: b57974ab-5654-412d-ae59-58f67a88c121
 title: Full-Scene suavizado de contorno (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3fdeab18997db57ed1391af97f40f1500e7c326411019ddcb42453e4a68cc7e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3d73d559c4b4fec060efbff7468ee29e6c83b64c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119893995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565988"
 ---
 # <a name="full-scene-antialiasing-direct3d-9"></a>Full-Scene suavizado de contorno (Direct3D 9)
 
@@ -34,7 +34,7 @@ if( SUCCEEDED(pD3D->CheckDeviceMultiSampleType( D3DADAPTER_DEFAULT,
 
 
 
-El primer parámetro que [**acepta IDirect3D9::CheckDeviceMultiSampleType**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdevicemultisampletype) es un número ordinal que denota el adaptador de pantalla que se va a consultar. En este ejemplo se usa D3DADAPTER \_ DEFAULT para especificar el adaptador de pantalla principal. El segundo parámetro es un valor del [**tipo enumerado D3DDEVTYPE,**](./d3ddevtype.md) especificando el tipo de dispositivo. El tercer parámetro especifica el formato de la superficie. El cuarto parámetro indica a Direct3D si debe preguntar sobre el multimuestreo de ventana completa **(TRUE)** o el suavizado de contorno de escena completa **(FALSE).** En este ejemplo **se usa FALSE** para decir a Direct3D que está inquiriendo sobre el suavizado de contorno de escena completa. El último parámetro especifica la técnica de multimuestreo que desea probar. Use un valor del [**tipo enumerado D3DMULTISAMPLE \_ TYPE.**](./d3dmultisample-type.md) En este ejemplo se comprueba si se admiten dos niveles de multimuestreo.
+El primer parámetro que [**acepta IDirect3D9::CheckDeviceMultiSampleType**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdevicemultisampletype) es un número ordinal que denota el adaptador de pantalla que se va a consultar. En este ejemplo se usa D3DADAPTER \_ DEFAULT para especificar el adaptador de pantalla principal. El segundo parámetro es un valor del [**tipo enumerado D3DDEVTYPE,**](./d3ddevtype.md) que especifica el tipo de dispositivo. El tercer parámetro especifica el formato de la superficie. El cuarto parámetro indica a Direct3D si debe preguntar sobre el multimuestreo de ventana completa **(TRUE)** o el suavizado de contorno de escena completa **(FALSE).** En este ejemplo **se usa FALSE** para decir a Direct3D que está inquiriendo sobre el suavizado de contorno de escena completa. El último parámetro especifica la técnica de multimuestreo que desea probar. Use un valor del [**tipo enumerado D3DMULTISAMPLE \_ TYPE.**](./d3dmultisample-type.md) En este ejemplo se comprueba si se admiten dos niveles de multimuestreo.
 
 Si el dispositivo admite el nivel de multimuestreo que desea usar, el siguiente paso es establecer los parámetros de presentación rellenando los miembros adecuados de la estructura DE PARÁMETROS [**D3DPRESENT \_**](d3dpresent-parameters.md) para crear una superficie de representación multimuestreo. Después, puede crear el dispositivo. El código de ejemplo siguiente muestra cómo configurar un dispositivo con una superficie de representación multimuestreo.
 

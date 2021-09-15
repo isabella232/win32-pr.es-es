@@ -4,12 +4,12 @@ ms.assetid: 7cab559f-3e9d-46bd-b00f-439e0922aeeb
 title: Búferes de vértices FVF (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c99267945970e48c9447ad592433b304bd43d33ec05a8ebcef3287d2f3e68fd9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a86201c3ddc1cab6d492539caccc61c1430b3a2c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119564235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565984"
 ---
 # <a name="fvf-vertex-buffers-direct3d-9"></a>Búferes de vértices FVF (Direct3D 9)
 

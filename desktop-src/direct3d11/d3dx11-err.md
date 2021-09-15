@@ -1,6 +1,6 @@
 ---
 title: D3DX11_ERR enumeración (D3DX11.h)
-description: 'Nota: La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Los errores se representan mediante valores negativos y no se pueden combinar.'
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Los errores se representan mediante valores negativos y no se pueden combinar.
 ms.assetid: d042621d-a20b-4945-b6aa-714a451aa88a
 keywords:
 - D3DX11_ERR enumeración Direct3D 11
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d80b906b5b95693458eeea353f40fe446a22e8e33a6011b7851cf6d9663b3ed4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0607bd495bad4bdeacf66ae593670dbe3ad0d2e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119729325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566313"
 ---
 # <a name="d3dx11_err-enumeration"></a>Enumeración ERR D3DX11 \_
 
@@ -31,7 +31,7 @@ ms.locfileid: "119729325"
 
 Los errores se representan mediante valores negativos y no se pueden combinar. A continuación se muestra una lista de valores que pueden devolver los métodos incluidos con la biblioteca de utilidades D3DX. Consulte las descripciones de métodos individuales para obtener listas de los valores que cada uno puede devolver. Estas listas no son necesariamente completas.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -54,14 +54,14 @@ typedef enum D3DX11_ERR {
 
 <dl> <dt>
 
-<span id="D3DX11_ERR_CANNOT_MODIFY_INDEX_BUFFER"></span><span id="d3dx11_err_cannot_modify_index_buffer"></span>**ERROR D3DX11 \_ NO SE PUEDE MODIFICAR EL BÚFER DE \_ \_ \_ \_ ÍNDICE**
+<span id="D3DX11_ERR_CANNOT_MODIFY_INDEX_BUFFER"></span><span id="d3dx11_err_cannot_modify_index_buffer"></span>**ERROR D3DX11 \_ NO PUEDE MODIFICAR EL BÚFER DE \_ \_ \_ \_ ÍNDICE**
 </dt> <dd>
 
 No se puede modificar el búfer de índice.
 
 </dd> <dt>
 
-<span id="D3DX11_ERR_INVALID_MESH"></span><span id="d3dx11_err_invalid_mesh"></span>**D3DX11 \_ ERR \_ INVALID \_ MESH**
+<span id="D3DX11_ERR_INVALID_MESH"></span><span id="d3dx11_err_invalid_mesh"></span>**MALLA NO VÁLIDA DE ERROR D3DX11 \_ \_ \_**
 </dt> <dd>
 
 La malla no es válida.
@@ -75,7 +75,7 @@ La ordenación de atributos (D3DXMESHOPT \_ ATTRSORT) no se admite como técnica
 
 </dd> <dt>
 
-<span id="D3DX11_ERR_SKINNING_NOT_SUPPORTED"></span><span id="d3dx11_err_skinning_not_supported"></span>**D3DX11 \_ ERR \_ SKINNING \_ NOT \_ SUPPORTED**
+<span id="D3DX11_ERR_SKINNING_NOT_SUPPORTED"></span><span id="d3dx11_err_skinning_not_supported"></span>**D3DX11 \_ ERR \_ SKINNING NO \_ \_ COMPATIBLE**
 </dt> <dd>
 
 No se admite el desnasado.
@@ -117,9 +117,9 @@ No se puede eliminar el último elemento.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El código de la \_ instalación FACDD se usa para generar códigos de error, como en las macros siguientes.
+El código de instalación \_ FACDD se usa para generar códigos de error, como en las macros siguientes.
 
 
 ```

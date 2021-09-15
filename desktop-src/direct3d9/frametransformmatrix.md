@@ -4,12 +4,12 @@ ms.assetid: e9531d93-86a6-4606-ae3c-824e17f7b5fa
 title: FrameTransformMatrix
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 383acf4c55ae36c31bed061276ac2daa871279b0337433034eff7e6ba2c29ae8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 74971035ae950cc9cef4d64a95ebcfff6de98eaf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119728174"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565989"
 ---
 # <a name="frametransformmatrix"></a>FrameTransformMatrix
 

@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8530e913b96255050aa5c8cd15a025d0cf894b38b8c84833bfd3e4e22bc9db50
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0d582016b26df0d57f7792afd30fc4fcbf3ba97b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117912846"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566181"
 ---
 # <a name="cd3dx12_root_parameter1-structure"></a>Estructura CD3DX12 \_ ROOT \_ PARAMETER1
 
-Estructura auxiliar para permitir la inicialización sencilla de una [**estructura \_ ROOT \_ PARAMETER1 de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1)
+Estructura auxiliar para permitir la inicialización sencilla de una estructura [**\_ ROOT \_ PARAMETER1 de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,25 +48,25 @@ struct CD3DX12_ROOT_PARAMETER1  : public D3D12_ROOT_PARAMETER1{
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **CD3DX12 \_ ROOT \_ PARAMETER1()**
 </dt> <dd>
 
-Crea una nueva instancia sin inicializar de un PARÁMETRO RAÍZ CD3DX12 \_ \_ PARAMETER1.
+Crea una nueva instancia sin inicializar de un PARÁMETRO RAÍZ CD3DX12. \_ \_
 
 </dd> <dt>
 
 **explicit CD3DX12 \_ ROOT \_ PARAMETER1(const D3D12 \_ ROOT \_ PARAMETER1 &o)**
 </dt> <dd>
 
-Crea una nueva instancia de UN PARÁMETRO RAÍZ DE CD3DX121, inicializado con el contenido de otra estructura \_ ROOT \_ [**\_ \_ PARAMETER1 de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1)
+Crea una nueva instancia de UN PARÁMETRO RAÍZ CD3DX12, inicializado con el contenido de otra estructura \_ ROOT \_ [**\_ \_ PARAMETER1 de D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_root_parameter1)
 
 </dd> <dt>
 
-**static inline InitAsDescriptorTable(D3D12 \_ ROOT \_ PARAMETER1 &rootParam, UINT numDescriptorRanges, const D3D12 \_ DESCRIPTOR \_ RANGE1 \* pDescriptorRanges, Visibilidad del sombreador D3D12 Visibilidad del sombreador = VISIBILIDAD DE SOMBREADOR \_ \_ D3D12 \_ \_ \_ ALL)**
+**static inline InitAsDescriptorTable(D3D12 \_ ROOT \_ PARAMETER1 &rootParam, UINT numDescriptorRanges, const D3D12 \_ DESCRIPTOR \_ RANGE1 \* pDescriptorRanges, D3D12 \_ SHADER VISIBILITY VISIBILITY = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
@@ -81,7 +81,7 @@ const [**D3D12 \_ DESCRIPTOR \_ RANGE1**](/windows/desktop/api/d3d12/ns-d3d12-d3
 
 </dd> <dt>
 
-**static inline InitAsConstants(D3D12 \_ ROOT \_ PARAMETER1 &rootParam, UINT num32BitValues, UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ SHADER VISIBILITY VISIBILITY = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
+**static inline InitAsConstants(D3D12 \_ ROOT \_ PARAMETER1 &rootParam, UINT num32BitValues, UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ SHADER VISIBILITY visibility = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
@@ -149,7 +149,7 @@ UINT registerSpace = 0
 
 </dd> <dt>
 
-**inline InitAsDescriptorTable(UINT numDescriptorRanges, const D3D12 \_ DESCRIPTOR \_ RANGE1 \* pDescriptorRanges, D3D12 \_ SHADER VISIBILITY VISIBILITY = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
+**inline InitAsDescriptorTable(UINT numDescriptorRanges, const D3D12 \_ DESCRIPTOR \_ RANGE1 \* pDescriptorRanges, D3D12 \_ SHADER VISIBILITY visibility = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
@@ -177,7 +177,7 @@ UINT registerSpace = 0
 
 </dd> <dt>
 
-**inline InitAsConstantBufferView(UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ ROOT \_ DESCRIPTOR \_ FLAGS flags = D3D12 \_ ROOT DESCRIPTOR FLAG \_ \_ \_ NONE, D3D12 \_ SHADER VISIBILITY VISIBILITY = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
+**inline InitAsConstantBufferView(UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ ROOT \_ DESCRIPTOR \_ FLAGS flags = D3D12 \_ ROOT DESCRIPTOR FLAG \_ \_ \_ NONE, D3D12 \_ SHADER VISIBILITY = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:
@@ -207,7 +207,7 @@ UINT registerSpace = 0
 
 </dd> <dt>
 
-**inline InitAsUnorderedAccessView(UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ ROOT \_ DESCRIPTOR \_ FLAGS flags = D3D12 \_ ROOT DESCRIPTOR FLAG \_ \_ \_ NONE, D3D12 \_ SHADER VISIBILITY VISIBILITY = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
+**inline InitAsUnorderedAccessView(UINT shaderRegister, UINT registerSpace = 0, D3D12 \_ ROOT \_ DESCRIPTOR \_ FLAGS flags = D3D12 \_ ROOT DESCRIPTOR FLAG \_ \_ \_ NONE, D3D12 \_ SHADER VISIBILITY = \_ D3D12 \_ SHADER VISIBILITY \_ \_ ALL)**
 </dt> <dd>
 
 Especifica una función que inicializa los parámetros siguientes:

@@ -4,12 +4,12 @@ ms.assetid: 16fb04b9-4476-4dbe-a24f-51c0813a7917
 title: Filtrado de textura bilineal (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a1a4d6cefe6586511e0483c2afa7b03e94aeda58ef7960c411b90e9c6a7792a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f51213e5187c775963de2fa740847d55084c5be2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119565281"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566148"
 ---
 # <a name="bilinear-texture-filtering-direct3d-9"></a>Filtrado de textura bilineal (Direct3D 9)
 
@@ -21,7 +21,7 @@ Las texturas normalmente se representan como si estuvieran compuestas de bloques
 
 ![ilustración de textura 4x4 con elementos de textura definidos en el centro de las celdas de cuadrícula](images/bilinear-fig7b.png)
 
-Si le pide al muestreador de textura el color de esta textura en coordenadas UV (0,375, 0,375), tendrá un rojo sólido (255, 0, 0). Esto tiene sentido porque el centro exacto de la celda de texel rojo está en UV (0,375, 0,375). ¿Qué ocurre si pide al muestreador el color de la textura en UV (0,25, 0,25)? Esto no es tan fácil, ya que el punto de UV (0,25, 0,25) se encuentra en la esquina exacta de 4 elementos de textura.
+Si le pide al muestreador de textura el color de esta textura en coordenadas UV (0,375, 0,375), tendrá un rojo sólido (255, 0, 0). Esto tiene un sentido perfecto porque el centro exacto de la celda de texel rojo está en UV (0,375, 0,375). ¿Qué ocurre si pide al muestreador el color de la textura en UV (0,25, 0,25)? Esto no es tan fácil, ya que el punto de UV (0,25, 0,25) se encuentra en la esquina exacta de 4 elementos de textura.
 
 El esquema más sencillo es simplemente hacer que el muestreador devuelva el color del elemento de textura más cercano; esto se denomina Filtrado de puntos (consulte Muestreo de punto más cercano [(Direct3D 9) )](nearest-point-sampling.md)y normalmente no se desea debido a resultados de grano o bloques. El muestreo de punto de nuestra textura en UV (0,25, 0,25) muestra otro problema sutil con el filtrado de punto más cercano: hay cuatro elementos de textura equidistantes desde el punto de muestreo, por lo que no hay ningún único texel más cercano. Uno de esos cuatro elementos de textura se elegirá como color devuelto, pero la selección depende de cómo se redondee la coordenada, lo que puede introducir artefactos de desmontaje (consulte el artículo muestreo de Nearest-Point en el SDK).
 

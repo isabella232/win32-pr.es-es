@@ -15,11 +15,11 @@ ms.localizationpriority: low
 ms.topic: reference
 ms.date: 08/04/2021
 ms.openlocfilehash: 84d8ae4ab76845d2e188d4be41e57b7770dfe89c
-ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121813309"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566205"
 ---
 # <a name="cd3dx12_dxil_subobject_to_exports_association-class"></a>CD3DX12_DXIL_SUBOBJECT_TO_EXPORTS_ASSOCIATION clase
 
@@ -44,7 +44,7 @@ class CD3DX12_DXIL_SUBOBJECT_TO_EXPORTS_ASSOCIATION
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `CD3DX12_DXIL_SUBOBJECT_TO_EXPORTS_ASSOCIATION`
 
@@ -52,7 +52,7 @@ Constructor predeterminado. Crea una nueva instancia de inicializada de forma pr
 
 `CD3DX12_DXIL_SUBOBJECT_TO_EXPORTS_ASSOCIATION(CD3DX12_STATE_OBJECT_DESC&)`
 
-Constructor que crea una nueva instancia de un **CD3DX12_DXIL_SUBOBJECT_TO_EXPORTS_ASSOCIATION** inicializado con el contenido de un [**CD3DX12_STATE_OBJECT_DESC**](cd3dx12-state-object-desc.md) objeto.
+Constructor que crea una nueva instancia de un **CD3DX12_DXIL_SUBOBJECT_TO_EXPORTS_ASSOCIATION** inicializado con el contenido de un [**CD3DX12_STATE_OBJECT_DESC**](cd3dx12-state-object-desc.md) objeto .
 
 `SetSubobjectNameToAssociate(LPCWSTR)`
 
@@ -60,15 +60,15 @@ Función para establecer el nombre del subobjeto que se asociará.
 
 `AddExport(LPCWSTR)`
 
-Agrega una exportación que se asociará.
+Agrega una exportación para asociar.
 
 `AddExports(LPCWSTR(&)[N]);`
 
-Agrega una matriz de exportaciones que se asociará. El parámetro *de plantilla N* especifica el número de elementos de la matriz.
+Agrega una matriz de exportaciones para asociar. El parámetro *de plantilla N* especifica el número de elementos de la matriz.
 
 `AddExports(const LPCWSTR*, UINT)`
 
-Define una matriz de *N exportaciones* que se asocian.
+Define una matriz de *N exportaciones* que se asociará.
 
 `Type`
 

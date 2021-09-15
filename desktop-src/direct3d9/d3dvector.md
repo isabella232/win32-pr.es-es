@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: f97667127642c3b47837db5f40c071daf8746559e36d66c0c86c195214d5b0b7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8fc8d78490f192f5cbf222251d763ac73e862e78
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117911072"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566108"
 ---
 # <a name="d3dvector-structure-d3d9typesh"></a>Estructura D3DVECTOR (D3D9Types.h)
 
@@ -37,7 +37,7 @@ typedef struct D3DVECTOR {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 

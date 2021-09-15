@@ -4,18 +4,18 @@ ms.assetid: 74f106be-8f47-4875-9908-32ff35912968
 title: Controles Gamma (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5074f60199364ba86a0b5ad743fcc03121351cad0ac071d9231beef7c7156f9d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6484bcf7e8fa5e07a3bf4bb718cd361330560f8c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119122213"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565972"
 ---
 # <a name="gamma-controls-direct3d-9"></a>Controles Gamma (Direct3D 9)
 
 Los controles Gamma permiten cambiar la forma en que el sistema muestra el contenido de la superficie, sin afectar al contenido de la propia superficie. Piense en estos controles como filtros muy simples que Direct3D aplica a los datos a medida que sale de una superficie y antes de representarse en la pantalla.
 
-Los controles Gamma son una propiedad de una cadena de intercambio. Los controles Gamma hacen posible cambiar dinámicamente cómo se asignan los niveles rojo, verde y azul de una superficie a los niveles reales que muestra el sistema. Al establecer niveles gamma, puede hacer que la pantalla del usuario parpadee colores (rojo cuando se toma el carácter del usuario, verde cuando el carácter recoge un nuevo elemento, y así sucesivamente) sin copiar nuevas imágenes en el búfer de fotogramas para lograr el efecto. O bien, puede ajustar los niveles de color para aplicar un sesgo de color a las imágenes del búfer de reserva.
+Los controles Gamma son una propiedad de una cadena de intercambio. Los controles Gamma hacen posible cambiar dinámicamente la asignación de los niveles rojo, verde y azul de una superficie a los niveles reales que muestra el sistema. Al establecer niveles gamma, puede hacer que la pantalla del usuario parpadee colores (rojo cuando se toma el carácter del usuario, verde cuando el carácter recoge un nuevo elemento, y así sucesivamente) sin copiar nuevas imágenes en el búfer de fotogramas para lograr el efecto. O bien, puede ajustar los niveles de color para aplicar un sesgo de color a las imágenes del búfer de reserva.
 
 Siempre hay al menos una cadena de intercambio (la cadena de intercambio implícita) para cada dispositivo porque Direct3D 9 tiene una cadena de intercambio como propiedad del dispositivo. Dado que la rampa gamma es una propiedad de la cadena de intercambio, la rampa gamma se puede aplicar cuando se abre una ventana de la cadena de intercambio. La rampa gamma entra en vigor inmediatamente. No hay ninguna espera para una operación de sincronización vertical.
 
@@ -35,7 +35,7 @@ Los elementos de matriz del gráfico de la izquierda contienen valores idéntico
 
 ## <a name="setting-and-retrieving-gamma-ramp-levels"></a>Establecimiento y recuperación de niveles de rampa gamma
 
-Los niveles de rampa gamma son tablas de consulta que Direct3D usa para asignar los componentes de color del búfer de fotogramas a nuevos niveles que se mostrarán. Puede establecer y recuperar niveles de rampa para la superficie principal llamando a los [**métodos SetGammaRamp**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setgammaramp) [**y GetGammaRamp.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getgammaramp) **SetGammaRamp** acepta dos parámetros y **GetGammaRamp** acepta un parámetro. Para **SetGammaRamp,** el primer parámetro es D3DSGR \_ CALIBRATION o D3DSGR NO \_ \_ CALIBRATION. El segundo parámetro, pRamp, es un puntero a una [**estructura D3DGAMMARAMP.**](d3dgammaramp.md) La **estructura D3DGAMMARAMP** contiene tres matrices de 256 elementos de WORD, una matriz cada una para contener las rampas gamma roja, verde y azul. **GetGammaRamp tiene** un parámetro que toma un puntero a un tipo **D3DGAMMARAMP** que se rellenará con la rampa gamma actual.
+Los niveles de rampa gamma son tablas de consulta que Direct3D usa para asignar los componentes de color del búfer de fotogramas a nuevos niveles que se mostrarán. Puede establecer y recuperar niveles de rampa para la superficie principal llamando a los [**métodos SetGammaRamp**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setgammaramp) [**y GetGammaRamp.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getgammaramp) **SetGammaRamp** acepta dos parámetros y **GetGammaRamp** acepta un parámetro. Para **SetGammaRamp,** el primer parámetro es D3DSGR \_ CALIBRATION o D3DSGR NO \_ \_ CALIBRATION. El segundo parámetro, pRamp, es un puntero a una [**estructura D3DGAMMARAMP.**](d3dgammaramp.md) La **estructura D3DGAMMARAMP** contiene tres matrices de 256 elementos de WORD, una matriz cada una para contener las rampas gamma rojo, verde y azul. **GetGammaRamp tiene** un parámetro que toma un puntero a un tipo **D3DGAMMARAMP** que se rellenará con la rampa gamma actual.
 
 Puede incluir el valor D3DSGR CALIBRAR para el primer parámetro de \_ [**SetGammaRamp**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-setgammaramp) para invocar el calibrador al establecer nuevos niveles gamma. La calibración de las rampas gamma incurre en cierta sobrecarga de procesamiento y no se debe usar con frecuencia. Establecer una rampa gamma calibrada proporciona un valor gamma coherente y absoluto para el usuario, independientemente del adaptador de pantalla y el monitor.
 

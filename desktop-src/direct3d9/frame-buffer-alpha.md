@@ -4,12 +4,12 @@ ms.assetid: 3664215d-ad03-400e-beab-b0421cf6b693
 title: Búfer de fotogramas alfa (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec091e8cc42d6b21142d3b9372f6d2931ba25d1dfe12aa7717e0b09acf0b0718
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cb310e2c66f43282e65425fd0d6c6a24961accaa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118297500"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565993"
 ---
 # <a name="frame-buffer-alpha-direct3d-9"></a>Búfer de fotogramas alfa (Direct3D 9)
 

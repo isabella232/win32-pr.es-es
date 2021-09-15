@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c99cdef28acae9419a5b597d5be1703ea9e866d521d7f94bb330b151abc74842
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 467d2094a7124b96a08c7bab6d7a4209deee9996
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119124810"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566264"
 ---
 # <a name="d3dx11createeffectfrommemory-function"></a>Función D3DX11CreateEffectFromMemory
 
@@ -76,7 +76,7 @@ No existen marcas de efecto. Establecer en cero.
 
 Tipo: **[ **ID3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device)\***
 
-Puntero al [**id3D11Device en**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device) el que se crean los recursos de efecto.
+Puntero al [**id. 3D11Device**](/windows/desktop/api/D3D11/nn-d3d11-id3d11device) en el que se crean los recursos de efecto.
 
 </dd> <dt>
 
@@ -95,10 +95,10 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> Debe usar el [origen Effects 11 para](https://github.com/Microsoft/FX11) compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> Debe usar el [origen De efectos 11 para](https://github.com/Microsoft/FX11) compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 

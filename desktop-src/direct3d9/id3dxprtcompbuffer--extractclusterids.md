@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 94cbf51aaedd8cc0d5505ca91663eb014e2a3d417a631e93d71b8a0ebc600ceb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef68a972109e89e318adb83ab388c653c6a3deed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118987185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565864"
 ---
 # <a name="id3dxprtcompbufferextractclusterids-method"></a>Método ID3DXPRTCompBuffer::ExtractClusterIDs
 
@@ -40,7 +40,7 @@ HRESULT ExtractClusterIDs(
 
 <dl> <dt>
 
-*pClusterID* \[ in, out\]
+*pClusterIDs* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***

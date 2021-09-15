@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: f98e20d5bfa5efdb756e414808cda2506fda56fdf417f54b658f17d0b5c9658b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e27fc3e95280f29a33d4ececffc7c229563462a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119847935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565944"
 ---
 # <a name="id3dxfiledatagetname-method"></a>Método ID3DXFileData::GetName
 
@@ -63,9 +63,9 @@ Puntero al tamaño de la cadena que representa el nombre de este objeto de datos
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor: D3DXFERR \_ BADVALUE.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor: D3DXFERR \_ BADVALUE.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para que este método se haga correctamente, szName o *puiSize* deben ser distintos de **NULL.**
 

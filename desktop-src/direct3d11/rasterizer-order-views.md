@@ -4,12 +4,12 @@ description: Las vistas ordenadas por rasterizador (ROV) permiten que el código
 ms.assetid: 7FCFCD28-E68D-4594-8879-937F57245507
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f84ae8d51c0ae150866e8fafef24eb2460493d709309ccc730b50f051a193c9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d891701aeaadd6f4474aeed8303d9b0046d1b656
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120096185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566208"
 ---
 # <a name="rasterizer-order-views"></a>Vistas de orden de rasterizador
 
@@ -22,7 +22,7 @@ Las vistas ordenadas por rasterizador (ROV) permiten que el código del sombread
 
 ## <a name="overview"></a>Información general
 
-Las canalizaciones de gráficos estándar pueden tener problemas para componer correctamente varias texturas que contienen transparencia. Los objetos como las barreras de cable, el humo, el incendio, la humedad y el cristal coloreado usan la transparencia para obtener el efecto deseado. Los problemas surgen cuando varias texturas que contienen transparencia están alineadas entre sí (por ejemplo, el humo delante de una barrera delante de un edificio de cristal que contiene humedad). Las vistas ordenadas por rasterizador (ROV) permiten que los algoritmos DE LAV subyacentes usen características del hardware para intentar resolver el orden de transparencia correctamente. El sombreador de píxeles controla la transparencia.
+Las canalizaciones de gráficos estándar pueden tener problemas para componer correctamente varias texturas que contienen transparencia. Los objetos como las barreras de cable, el humo, el incendio, la humedad y el cristal coloreado usan la transparencia para obtener el efecto deseado. Los problemas surgen cuando varias texturas que contienen transparencia están en línea entre sí (por ejemplo, el humo delante de una barrera delante de un edificio de cristal que contiene humedad). Las vistas ordenadas por rasterizador (ROV) permiten que los algoritmos DE LAV subyacentes usen características del hardware para intentar resolver el orden de transparencia correctamente. El sombreador de píxeles controla la transparencia.
 
 Las vistas ordenadas por rasterizador (ROV) permiten que el código del sombreador de píxeles marque los enlaces UAV con una declaración que modifique los requisitos normales para el orden de los resultados de la canalización de gráficos para los UAV.
 

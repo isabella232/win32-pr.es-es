@@ -1,6 +1,6 @@
 ---
 title: Función D3DX11CreateAsyncShaderResourceViewProcessor (D3DX11async.h)
-description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store.
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
 ms.assetid: bd9349af-f433-47f9-b443-3049c32fc286
 keywords:
 - Función D3DX11CreateAsyncShaderResourceViewProcessor Direct3D 11
@@ -15,17 +15,17 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 305705a4fd82b7f2267e3d56630b78c8c8d98473d946b1629e713162f4a6ae92
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3164aac5ddaec3d61108a2cf129b76991b8f76a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118536574"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566273"
 ---
 # <a name="d3dx11createasyncshaderresourceviewprocessor-function"></a>Función D3DX11CreateAsyncShaderResourceViewProcessor
 
 > [!Note]  
-> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Vea la sección Comentarios.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store. Vea la sección Comentarios.
 
  
 
@@ -81,7 +81,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No hay ninguna implementación del cargador asincrónico fuera de D3DX 10 y D3DX 11.
 
@@ -100,7 +100,7 @@ En el caso de las aplicaciones de escritorio win32, puede usar el Runtime de sim
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

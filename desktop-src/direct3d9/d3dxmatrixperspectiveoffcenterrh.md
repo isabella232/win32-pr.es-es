@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXMatrixPerspectiveOffCenterRH (D3dx9math.h): crea una matriz de proyección de perspectiva personalizada y derecha.'
+description: 'Función D3DXMatrixPerspectiveOffCenterRH (D3dx9math.h): crea una matriz de proyección de perspectiva personalizada y con la mano derecha.'
 ms.assetid: e6826e46-fc80-41fa-b0d8-45b6797df76f
 title: Función D3DXMatrixPerspectiveOffCenterRH (D3dx9math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d86aa735f8bafba6da5d697dc89b5e97469a6181de30862515ba8b94190d9cab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3d051894a6706cf8d58b81a85003666513f2a956
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119122845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566093"
 ---
 # <a name="d3dxmatrixperspectiveoffcenterrh-function-d3dx9mathh"></a>Función D3DXMatrixPerspectiveOffCenterRH (D3dx9math.h)
 
@@ -64,7 +64,7 @@ Valor X mínimo del volumen de vista.
 
 </dd> <dt>
 
-*r* \[ in\]
+*r* \[ en\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -82,7 +82,7 @@ Valor Y mínimo del volumen de vista.
 
 </dd> <dt>
 
-*t* \[ en\]
+*t* \[ in\]
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -96,7 +96,7 @@ Valor Y máximo del volumen de vista.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor Z mínimo del volumen de vista.
+Valor z mínimo del volumen de vista.
 
 </dd> <dt>
 
@@ -113,15 +113,15 @@ Valor z máximo del volumen de vista.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es una matriz de proyección de perspectiva personalizada y con la mano derecha.
+Puntero a una [**estructura D3DXMATRIX que**](d3dxmatrix.md) es una matriz de proyección de perspectiva personalizada y con la derecha.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Todos los parámetros de la **función D3DXMatrixPerspectiveOffCenterRH** son distancias en el espacio de la cámara. Los parámetros describen las dimensiones del volumen de vista.
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la función **D3DXMatrixPerspectiveOffCenterRH** se puede usar como parámetro para otra función.
 
-Esta función usa la siguiente fórmula para calcular la matriz devuelta.
+Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 
 ```
@@ -144,7 +144,7 @@ Esta función usa la siguiente fórmula para calcular la matriz devuelta.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

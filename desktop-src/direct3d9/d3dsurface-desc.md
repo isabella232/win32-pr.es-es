@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: b18c9cd3428463f82a6e243a57ade3fffd650bb35f2c73234b725fa5bf0607eb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6424bbe9b78532657670bc5cd9ad0705de89a3b0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118300237"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566113"
 ---
 # <a name="d3dsurface_desc-structure"></a>D3DSURFACE \_ DESC (estructura)
 
@@ -42,7 +42,7 @@ typedef struct D3DSURFACE_DESC {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -75,7 +75,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Los valores D3DUSAGE \_ DEPTHSTENCIL o D3DUSAGE \_ RENDERTARGET. Para obtener más información, [**vea D3DUSAGE**](d3dusage.md).
+Los valores D3DUSAGE \_ DEPTHSTENCIL o D3DUSAGE \_ RENDERTARGET. Para obtener más información, [**vea D3DUSAGE.**](d3dusage.md)
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Tipo: **[ **D3DMULTISAMPLE \_ TYPE**](./d3dmultisample-type.md)**
 
 </dd> <dd>
 
-Miembro del [**tipo enumerado D3DMULTISAMPLE \_ TYPE,**](./d3dmultisample-type.md) especificando los niveles de multimuestreo de escena completa admitidos por la superficie.
+Miembro del [**tipo enumerado D3DMULTISAMPLE \_ TYPE,**](./d3dmultisample-type.md) que especifica los niveles de multimuestreo de escena completa admitidos por la superficie.
 
 </dd> <dt>
 
@@ -108,7 +108,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Nivel de calidad. El intervalo válido está entre cero y uno menos que el nivel devuelto por pQualityLevels usado por [**CheckDeviceMultiSampleType.**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdevicemultisampletype) Si se pasa un valor mayor, se devuelve el error D3DERR \_ INVALIDCALL. Los valores MultisampleQuality de los destinos de representación emparejados, las superficies de galería de símbolos de profundidad y el tipo MultiSample deben coincidir.
+Nivel de calidad. El intervalo válido está entre cero y uno menos que el nivel devuelto por pQualityLevels usado por [**CheckDeviceMultiSampleType.**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-checkdevicemultisampletype) Al pasar un valor mayor, se devuelve el error D3DERR \_ INVALIDCALL. Los valores MultisampleQuality de los destinos de representación emparejados, las superficies de galería de símbolos de profundidad y el tipo MultiSample deben coincidir.
 
 </dd> <dt>
 
@@ -144,7 +144,7 @@ Alto de la superficie, en píxeles.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

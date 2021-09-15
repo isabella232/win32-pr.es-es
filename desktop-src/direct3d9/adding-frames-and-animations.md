@@ -4,12 +4,12 @@ ms.assetid: a909b1f1-b54d-469c-8689-003db41a8f25
 title: Agregar fotogramas y animaciones (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fbe0da64e5eabff72f0977a8a55f23d3e4756c7681aa2c806b6ee1d794362cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: da88cf431825797943ed33df94742360f7629787
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118097197"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566161"
 ---
 # <a name="adding-frames-and-animations-direct3d-9"></a>Agregar fotogramas y animaciones (Direct3D 9)
 

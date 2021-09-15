@@ -4,12 +4,12 @@ ms.assetid: e44fc38f-5b08-497a-a6e7-cfd64661ed30
 title: Referencia de efecto (gráficos de Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18f0e5757a8f163fd4941b777c1a5fd800971938842dbfc738658bd0105cc650
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 42282e31906fd657f5b353b6741a00401961f19e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117730216"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566036"
 ---
 # <a name="effect-reference-direct3d-9-graphics"></a>Referencia de efecto (gráficos de Direct3D 9)
 

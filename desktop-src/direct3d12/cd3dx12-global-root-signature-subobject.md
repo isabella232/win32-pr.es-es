@@ -1,5 +1,5 @@
 ---
-title: CD3DX12_GLOBAL_ROOT_SIGNATURE_SUBOBJECT (D3dx12.h)
+title: CD3DX12_GLOBAL_ROOT_SIGNATURE_SUBOBJECT clase (D3dx12.h)
 description: Clase auxiliar para crear un suboject de estado de firma raíz global.
 keywords:
 - CD3DX12_GLOBAL_ROOT_SIGNATURE_SUBOBJECT clase
@@ -15,11 +15,11 @@ ms.localizationpriority: low
 ms.topic: reference
 ms.date: 08/04/2021
 ms.openlocfilehash: 7ee327c24f5cc99fa386376be76ae0908fea19b6
-ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121812491"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566201"
 ---
 # <a name="cd3dx12_global_root_signature_subobject-class"></a>CD3DX12_GLOBAL_ROOT_SIGNATURE_SUBOBJECT clase
 
@@ -41,7 +41,7 @@ class CD3DX12_GLOBAL_ROOT_SIGNATURE_SUBOBJECT
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `CD3DX12_GLOBAL_ROOT_SIGNATURE_SUBOBJECT`
 
@@ -49,7 +49,7 @@ Constructor predeterminado. Crea una nueva instancia de inicializada de forma pr
 
 `CD3DX12_GLOBAL_ROOT_SIGNATURE_SUBOBJECT(CD3DX12_STATE_OBJECT_DESC&)`
 
-Constructor que crea una nueva instancia de un **CD3DX12_GLOBAL_ROOT_SIGNATURE_SUBOBJECT** inicializado con el contenido de un [**CD3DX12_STATE_OBJECT_DESC**](cd3dx12-state-object-desc.md) objeto.
+Constructor que crea una nueva instancia de un **CD3DX12_GLOBAL_ROOT_SIGNATURE_SUBOBJECT** inicializado con el contenido de un [**CD3DX12_STATE_OBJECT_DESC**](cd3dx12-state-object-desc.md) objeto .
 
 `SetRootSignature(ID3D12RootSignature*)`
 

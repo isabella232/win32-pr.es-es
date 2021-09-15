@@ -15,25 +15,25 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 886e289905ba10be088cc1fdc21802a07051ae8f9ea65f6e8781644db2c42183
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5d9bea89fe4f8bf6632ada9461b048195335c72f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119124680"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566253"
 ---
 # <a name="d3dx11createtexturefromresource-function"></a>Función D3DX11CreateTextureFromResource
 
 > [!Note]  
-> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store.
 
  
 
 > [!Note]  
-> En lugar de usar esta función, se recomienda usar las funciones [de recursos](/windows/desktop/menurc/resources-functions)y, a continuación, estas:
+> En lugar de usar esta función, se recomienda usar funciones [de recursos](/windows/desktop/menurc/resources-functions)y, a continuación, estas:
 >
 > -   [Biblioteca DirectXTK](https://github.com/Microsoft/DirectXTK) (runtime), **CreateXXXTextureFromMemory** (donde XXX es DDS o WIC)
-> -   [Biblioteca DirectXTex](https://github.com/Microsoft/DirectXTex) (herramientas), **LoadFromXXXMemory** (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 compatible con TGA como un formato de origen de arte común para juegos) y, a **continuación, CreateTexture**
+> -   [Biblioteca DirectXTex](https://github.com/Microsoft/DirectXTex) (herramientas), **LoadFromXXXMemory** (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 compatible con TGA como formato de origen de arte común para juegos) y, a **continuación, CreateTexture**
 
  
 
@@ -74,7 +74,7 @@ Puntero al dispositivo (consulte [**ID3D11Device)**](/windows/desktop/api/D3D11/
 
 Tipo: **[ **HMODULE**](/windows/desktop/WinProg/windows-data-types)**
 
-Identificador del recurso de origen. HMODULE se puede obtener con la [función GetModuleHandle](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea).
+Identificador del recurso de origen. HMODULE se puede obtener con [la función GetModuleHandle](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea).
 
 </dd> <dt>
 
@@ -83,14 +83,14 @@ Identificador del recurso de origen. HMODULE se puede obtener con la [función G
 
 Tipo: **[ **LPCTSTR**](/windows/desktop/WinProg/windows-data-types)**
 
-Cadena que contiene el nombre del recurso de origen. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve como LPCWSTR. De lo contrario, el tipo de datos se resuelve como LPCSTR.
+Cadena que contiene el nombre del recurso de origen. Si la configuración del compilador requiere Unicode, el tipo de datos LPCTSTR se resuelve en LPCWSTR. De lo contrario, el tipo de datos se resuelve en LPCSTR.
 
 </dd> <dt>
 
 *pLoadInfo* \[ En\]
 </dt> <dd>
 
-Tipo: **[ **D3DX11 \_ IMAGE \_ LOAD \_ INFO**](d3dx11-image-load-info.md)\***
+Tipo: **[ **INFORMACIÓN DE CARGA DE \_ IMÁGENES \_ \_ D3DX11**](d3dx11-image-load-info.md)\***
 
 Opcional. Identifica las características de una textura (vea [**D3DX11 \_ IMAGE \_ LOAD \_ INFO**](d3dx11-image-load-info.md)) cuando se crea el procesador de datos; esta opción se establece en **NULL** para leer las características de una textura cuando se carga la textura.
 
@@ -101,7 +101,7 @@ Opcional. Identifica las características de una textura (vea [**D3DX11 \_ IMAGE
 
 Tipo: **[ **ID3DX11ThreadPump**](id3dx11threadpump.md)\***
 
-Puntero a una interfaz de bombeo de subprocesos (vea [**ID3DX11ThreadPump Interface**](id3dx11threadpump.md)). Si se especifica **NULL,** esta función se comportará sincrónicamente y no volverá hasta que finalice.
+Puntero a una interfaz de bombeo de subprocesos [**(vea ID3DX11ThreadPump Interface**](id3dx11threadpump.md)). Si se especifica **NULL,** esta función se comportará sincrónicamente y no volverá hasta que finalice.
 
 </dd> <dt>
 
@@ -110,7 +110,7 @@ Puntero a una interfaz de bombeo de subprocesos (vea [**ID3DX11ThreadPump Interf
 
 Tipo: **[ **ID3D11Resource**](/windows/desktop/api/D3D11/nn-d3d11-id3d11resource)\*\***
 
-Dirección de un puntero al recurso de textura (vea [**ID3D11Resource**](/windows/desktop/api/D3D11/nn-d3d11-id3d11resource)).
+Dirección de un puntero al recurso de textura (vea [**ID3D11Resource).**](/windows/desktop/api/D3D11/nn-d3d11-id3d11resource)
 
 </dd> <dt>
 

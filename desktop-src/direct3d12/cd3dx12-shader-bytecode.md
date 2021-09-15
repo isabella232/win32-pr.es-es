@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bd984268a8dcd083b2d42573c6fa0028d2b73e7a3daacecd3fefe41c68150db
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1227c18913492d6533b08f49f5761fab1b93e97b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119988375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566176"
 ---
 # <a name="cd3dx12_shader_bytecode-structure"></a>Estructura BYTECODE del SOMBREADOR CD3DX12 \_ \_
 
@@ -41,7 +41,7 @@ struct CD3DX12_SHADER_BYTECODE  : public D3D12_SHADER_BYTECODE{
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 

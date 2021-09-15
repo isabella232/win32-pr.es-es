@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXVec3ProjectArray (D3dx9math.h): proyecta una matriz (x, y, z, 0) desde el espacio del objeto al espacio de pantalla.'
+description: 'Función D3DXVec3ProjectArray (D3dx9math.h): proyecta una matriz (x, y, z, 0) desde el espacio del objeto en el espacio de la pantalla.'
 ms.assetid: cf022741-0bae-4c22-872f-bd94c3721aff
 title: Función D3DXVec3ProjectArray (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7ffc42934b9c341f4d07ef48a39470158155b4dfbcd352ffbc5e0ea188785752
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 10f0e19ad5bdbff59d7386223c88ed867e8d0d88
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119749395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566064"
 ---
 # <a name="d3dxvec3projectarray-function-d3dx9mathh"></a>Función D3DXVec3ProjectArray (D3dx9math.h)
 
-Proyecta una matriz (x, y, z, 0) desde el espacio del objeto al espacio de pantalla.
+Proyecta una matriz (x, y, z, 0) desde el espacio del objeto al espacio de la pantalla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,7 +62,7 @@ Puntero a la [**estructura D3DXVECTOR3**](d3dxvector3.md) que es el resultado de
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Pasos entre vectores en el flujo de datos de salida.
+Paso entre vectores en el flujo de datos de salida.
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Puntero a la estructura [**D3DXVECTOR3 de**](d3dxvector3.md) origen.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Pasos entre vectores en el flujo de datos de entrada.
+Paso entre vectores en el flujo de datos de entrada.
 
 </dd> <dt>
 
@@ -135,9 +135,9 @@ Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
 Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) que es la matriz proyectada desde el espacio de objetos al espacio de pantalla.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXVec3ProjectArray** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec3ProjectArray** se puede usar como parámetro para otra función.
 
 ## <a name="requirements"></a>Requisitos
 

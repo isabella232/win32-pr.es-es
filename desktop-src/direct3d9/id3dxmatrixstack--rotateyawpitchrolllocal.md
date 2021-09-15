@@ -1,7 +1,7 @@
 ---
-description: 'Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3dx9math.h): gira (con respecto al espacio de coordenadas local del objeto) alrededor de un eje arbitrario.'
+description: 'Método ID3DXMATRIXStack::RotateYawPtrixRollLocal (D3dx9math.h): gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.'
 ms.assetid: c69f5ea7-5d14-4187-9405-1ceff8230185
-title: Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3dx9math.h)
+title: Método ID3DXMATRIXStack::RotateYawPtrixRollLocal (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3cd1355039a570f0ef0e3546150cb9d8ebed5900b88ba14b6640f3d8a1799150
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d104676b6d346afd527552dbfba4bac23ed09cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119493195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565896"
 ---
-# <a name="id3dxmatrixstackrotateyawpitchrolllocal-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3dx9math.h)
+# <a name="id3dxmatrixstackrotateyawpitchrolllocal-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::RotateYawPtrixRollLocal (D3dx9math.h)
 
-Gira (con respecto al espacio de coordenadas local del objeto) alrededor de un eje arbitrario.
+Gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ La yaw alrededor del eje Y en radianes.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-El tono alrededor del eje X en radianes.
+El paso alrededor del eje X en radianes.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método agrega la rotación a la pila de matriz con la matriz de rotación calculada similar a la siguiente:
 

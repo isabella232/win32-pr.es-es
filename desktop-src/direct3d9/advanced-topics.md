@@ -4,12 +4,12 @@ ms.assetid: 567dea5e-92f4-4c5b-8027-32de93fb2c55
 title: Temas avanzados (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 063ff463ee29d3c50fb906f402a55f533e9a91c472f74d20cf1926820faafcc6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dcf2e1b33e53ec9c6aeff47e15a4d3db33c2e5a7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119045223"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566160"
 ---
 # <a name="advanced-topics-direct3d-9"></a>Temas avanzados (Direct3D 9)
 
@@ -20,12 +20,12 @@ Los temas siguientes contienen más información:
 -   [Canalización de vértices](vertex-pipeline.md)
 -   [Canalización de píxeles](pixel-pipeline.md)
 -   [Búfer de fotogramas](frame-buffer.md)
--   [Transferencia de radiancia precalutada](precomputed-radiance-transfer.md)
--   [Iluminación de HDR](hdr-lighting.md)
--   [Generación precisa de perfiles de llamadas API de Direct3D](accurately-profiling-direct3d-api-calls.md)
+-   [Transferencia de radiancia precalcalada](precomputed-radiance-transfer.md)
+-   [Iluminación DE HDR](hdr-lighting.md)
+-   [Generación de perfiles precisa de llamadas API de Direct3D](accurately-profiling-direct3d-api-calls.md)
 -   [Establecimiento del estado del dispositivo con la canalización de sombreador programable y de función fija](setting-render-states-with-fixed-function-and-programmable-shader-pipeline.md)
 -   [Consultas](queries.md)
--   [Dibujo eficaz de varias instancias de geometry](efficiently-drawing-multiple-instances-of-geometry.md)
+-   [Dibujar de forma eficaz varias instancias de geometry](efficiently-drawing-multiple-instances-of-geometry.md)
 -   [Uso de UVAtlas](using-uvatlas.md)
 
 ## <a name="related-topics"></a>Temas relacionados

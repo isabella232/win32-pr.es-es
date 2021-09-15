@@ -1,6 +1,6 @@
 ---
 title: Función D3DX11CreateTextureFromMemory (D3DX11.h)
-description: 'Nota: La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Nota En lugar de usar esta función, se recomienda usar estas bibliotecas DirectXTK (runtime), CreateXXXTextureFromMemory (donde XXX es DDS o WIC)Biblioteca DirectXTex (herramientas), LoadFromXXXMemory (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos) y, a continuación, CreateTexture Cree un recurso de textura a partir de un archivo que resida en la memoria del sistema.'
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Nota En lugar de usar esta función, se recomienda usar estas bibliotecas DirectXTK (runtime), CreateXXXTextureFromMemory (donde XXX es DDS o WIC)Biblioteca DirectXTex (herramientas), LoadFromXXXMemory (donde XXX es WIC, DDS o TGA; WIC no admite DDS ni TGA; D3DX 9 admite TGA como un formato de origen de arte común para juegos) y, a continuación, CreateTexture Cree un recurso de textura a partir de un archivo que resida en la memoria del sistema.
 ms.assetid: 1b07653e-8dc8-40b2-b591-bd25a54cfaa2
 keywords:
 - Función D3DX11CreateTextureFromMemory Direct3D 11
@@ -15,17 +15,17 @@ api_type:
 - LibDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c17ed4fb842d3a14ed1f8bde2e9371c134e98ba61a54cbde32c98b7fe3939bf7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 99987e882430da7f5e884f1b22e890947f7105e3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118099591"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566256"
 ---
 # <a name="d3dx11createtexturefrommemory-function"></a>Función D3DX11CreateTextureFromMemory
 
 > [!Note]  
-> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store.
 
  
 
@@ -101,7 +101,7 @@ Opcional. Identifica las características de una textura (vea [**D3DX11 \_ IMAGE
 
 Tipo: **[ **ID3DX11ThreadPump**](id3dx11threadpump.md)\***
 
-Puntero a una interfaz de bombeo de subprocesos [**(vea Interfaz ID3DX11ThreadPump**](id3dx11threadpump.md)). Si se especifica **NULL,** esta función se comportará sincrónicamente y no volverá hasta que finalice.
+Puntero a una interfaz de bombeo de subprocesos [**(vea ID3DX11ThreadPump Interface**](id3dx11threadpump.md)). Si se especifica **NULL,** esta función se comportará sincrónicamente y no volverá hasta que finalice.
 
 </dd> <dt>
 

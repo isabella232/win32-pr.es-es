@@ -4,12 +4,12 @@ ms.assetid: 54d8a02b-5376-49ac-a0d5-fc3cd8ab82e6
 title: Interfaces de archivos D3DX X
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2db018f9bd7beca0ca81b441fb463e46026e8a011b22e8de5ccd6c0f3a596794
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c460a57435eee8844776b73f362c981c716d820e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119564365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566052"
 ---
 # <a name="d3dx-x-file-interfaces"></a>Interfaces de archivos D3DX X
 

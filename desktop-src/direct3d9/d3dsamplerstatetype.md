@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 55e8efe80390f64f2376fd3995e414fed604ec8cb854c14b94f71922e146a32e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e12764db306e61422f8c06ef514f6fad59b3ed8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118988885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566132"
 ---
 # <a name="d3dsamplerstatetype-enumeration"></a>D3DSAMPLERSTATETYPE (enumeración)
 
-Los estados del muestreador definen operaciones de muestreo de textura, como el direccionamiento de textura y el filtrado de texturas. Algunos estados del muestreador establecen el procesamiento de vértices y otro para configurar el procesamiento de píxeles. Los estados del muestreador se pueden guardar y restaurar mediante bloques de estado (vea State Blocks Save and Restore State (Direct3D 9) [Estado de guardado y restauración de bloques de estado [(Direct3D 9)].](state-blocks-save-and-restore-state.md)
+Los estados del muestreador definen operaciones de muestreo de textura, como el direccionamiento de textura y el filtrado de texturas. Algunos estados del muestreador establecen el procesamiento de vértices y otros el procesamiento de píxeles configurado. Los estados del sampler se pueden guardar y restaurar mediante bloques de estado (vea State Blocks Save and Restore State (Direct3D 9) [Bloques de estado guardar y restaurar estado [(Direct3D 9)]).](state-blocks-save-and-restore-state.md)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -76,7 +76,7 @@ Modo de dirección de textura para la coordenada w. El valor predeterminado es D
 <span id="D3DSAMP_BORDERCOLOR"></span><span id="d3dsamp_bordercolor"></span>**D3DSAMP \_ BORDERCOLOR**
 </dt> <dd>
 
-Color de borde o escriba [**D3DCOLOR.**](d3dcolor.md) El color predeterminado es 0x00000000.
+Color del borde o escriba [**D3DCOLOR.**](d3dcolor.md) El color predeterminado es 0x00000000.
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Filtro de minificación de [**tipo D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertyp
 <span id="D3DSAMP_MIPFILTER"></span><span id="d3dsamp_mipfilter"></span>**MIPFILTER de D3DSAMP \_**
 </dt> <dd>
 
-Filtro mipmap que se usará durante la minificación. Vea [**D3DTEXTUREFILTERTYPE.**](./d3dtexturefiltertype.md) El valor predeterminado es D3DTEXF \_ NONE.
+Filtro Mipmap que se usará durante la minificación. Vea [**D3DTEXTUREFILTERTYPE.**](./d3dtexturefiltertype.md) El valor predeterminado es D3DTEXF \_ NONE.
 
 </dd> <dt>
 
@@ -118,35 +118,35 @@ Sesgo de nivel de detalle de Mipmap. El valor predeterminado es cero.
 <span id="D3DSAMP_MAXANISOTROPY"></span><span id="d3dsamp_maxanisotropy"></span>**D3DSAMP \_ MAXANISOTROPY**
 </dt> <dd>
 
-Anisotropía máxima de DWORD. Los valores oscilan entre 1 y el valor especificado en el **miembro MaxAnisotropy** de la [**estructura D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) El valor predeterminado es 1.
+Anisotropía máxima DWORD. Los valores oscilan entre 1 y el valor especificado en el **miembro MaxAnisotropy** de la [**estructura D3DCAPS9.**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) El valor predeterminado es 1.
 
 </dd> <dt>
 
 <span id="D3DSAMP_SRGBTEXTURE"></span><span id="d3dsamp_srgbtexture"></span>**D3DSAMP \_ SRGBTEXTURE**
 </dt> <dd>
 
-Valor de corrección gamma. El valor predeterminado es 0, lo que significa que gamma es 1,0 y no se requiere ninguna corrección. De lo contrario, este valor significa que el muestreador debe asumir gamma de 2,2 en el contenido y convertirlo en lineal (gamma 1.0) antes de presentarlo en el sombreador de píxeles.
+Valor de corrección gamma. El valor predeterminado es 0, lo que significa que gamma es 1,0 y no se requiere ninguna corrección. De lo contrario, este valor significa que el muestreador debe asumir gamma de 2,2 en el contenido y convertirlo en lineal (gamma 1.0) antes de presentarlo al sombreador de píxeles.
 
 </dd> <dt>
 
 <span id="D3DSAMP_ELEMENTINDEX"></span><span id="d3dsamp_elementindex"></span>**D3DSAMP \_ ELEMENTINDEX**
 </dt> <dd>
 
-Cuando se asigna una textura de varios elementos al muestreador, indica qué índice de elemento se va a usar. El valor predeterminado es 0.
+Cuando se asigna una textura de varios elementos al muestreador, esto indica qué índice de elemento se va a usar. El valor predeterminado es 0.
 
 </dd> <dt>
 
 <span id="D3DSAMP_DMAPOFFSET"></span><span id="d3dsamp_dmapoffset"></span>**D3DSAMP \_ DMAPOFFSET**
 </dt> <dd>
 
-Desplazamiento de vértice en el mapa de desplazamiento de muestra previa. Se trata de una constante usada por el teselador; su valor predeterminado es 0.
+Desplazamiento de vértices en el mapa de desplazamiento previamente muestreado. Se trata de una constante utilizada por el teselador, su valor predeterminado es 0.
 
 </dd> <dt>
 
 <span id="D3DSAMP_FORCE_DWORD"></span><span id="d3dsamp_force_dword"></span>**D3DSAMP \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase en un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 

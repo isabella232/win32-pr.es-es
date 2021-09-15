@@ -1,5 +1,5 @@
 ---
-description: 'Método ID3DXMATRIXStack::RotateYawPitchRoll (D3dx9math.h): gira (con respecto al espacio de coordenadas universal) alrededor de un eje arbitrario.'
+description: 'Método ID3DXMATRIXStack::RotateYawPitchRoll (D3dx9math.h): gira (en relación con el espacio de coordenadas del mundo) alrededor de un eje arbitrario.'
 ms.assetid: 25a7eff4-a575-4ddb-85eb-ef3fa2d6ae3b
 title: Método ID3DXMATRIXStack::RotateYawPitchRoll (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d054c125f5db545067b3fd105e7c27d7857cd5c1388a18b29ed0e4175c999f0c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8bb516e759e781ca3784e49253eeaddac68075bb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118987215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565897"
 ---
 # <a name="id3dxmatrixstackrotateyawpitchroll-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::RotateYawPitchRoll (D3dx9math.h)
 
-Gira (en relación con el espacio de coordenadas universal) alrededor de un eje arbitrario.
+Gira (en relación con el espacio de coordenadas del mundo) alrededor de un eje arbitrario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ La yaw alrededor del eje Y en radianes.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-El tono alrededor del eje X en radianes.
+El paso alrededor del eje X en radianes.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método agrega la rotación a la pila de matriz con la matriz de rotación calculada similar a la siguiente:
 
@@ -88,7 +88,7 @@ m_stack[m_currentPos] = m_stack[m_currentPos] * tmp;
 
 
 
-Dado que la rotación se multiplica a la derecha en la pila de matriz, la rotación es relativa al espacio de coordenadas universal.
+Dado que la rotación se multiplica a la derecha en la pila de matriz, la rotación es relativa al espacio de coordenadas del mundo.
 
 ## <a name="requirements"></a>Requisitos
 

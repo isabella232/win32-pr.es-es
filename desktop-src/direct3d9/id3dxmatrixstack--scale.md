@@ -1,5 +1,5 @@
 ---
-description: 'Método ID3DXMATRIXStack::Scale (D3dx9math.h): escale la matriz actual sobre el origen de coordenadas del mundo.'
+description: 'Método ID3DXMATRIXStack::Scale (D3dx9math.h): escale la matriz actual sobre el origen de la coordenada mundial.'
 ms.assetid: 6c4ef625-736e-41a0-8a79-4d71e8685754
 title: Método ID3DXMATRIXStack::Scale (D3dx9math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c140e1a4b39d79c3d28b13fa8ad3bf357b3beb903132d16f7221d52e8ed11eb1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6d877fccf5bfebfdc1f9cf3943c4334e5b8c7fff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119847545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565893"
 ---
 # <a name="id3dxmatrixstackscale-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::Scale (D3dx9math.h)
 
-Escale la matriz actual sobre el origen de coordenadas del mundo.
+Escale la matriz actual sobre el origen de la coordenada mundial.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Componente de escalado en la dirección X.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Componente de escalado en la dirección y.
+Componente de escalado en la dirección Y.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Componente de escalado en la dirección y.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Componente de escalado en la dirección Z.
+Componente de escalado en dirección z.
 
 </dd> </dl>
 
@@ -75,9 +75,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método multiplica a la derecha la matriz actual con la matriz de escala calculada. La transformación trata sobre el origen del mundo actual.
+Este método multiplica a la derecha la matriz actual por la matriz de escala calculada. La transformación trata sobre el origen del mundo actual.
 
 
 ```

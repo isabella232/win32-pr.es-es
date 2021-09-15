@@ -1,5 +1,5 @@
 ---
-description: 'Método ID3DXMATRIXStack::RotateAxisLocal (D3dx9math.h): gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.'
+description: 'Método ID3DXMATRIXStack::RotateAxisLocal (D3dx9math.h): gira (con respecto al espacio de coordenadas local del objeto) alrededor de un eje arbitrario.'
 ms.assetid: c7ef11e9-f4c4-4801-8f25-190066baeb52
 title: Método ID3DXMATRIXStack::RotateAxisLocal (D3dx9math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e46aa8767506aaabfcff6107ad184fad6dd8166097fbde955ac068f8f934ca22
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0bfcfd7301f90dcf49b03e7bbb3fd7e3b0de6c3e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119629485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127565900"
 ---
 # <a name="id3dxmatrixstackrotateaxislocal-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::RotateAxisLocal (D3dx9math.h)
 
@@ -46,7 +46,7 @@ HRESULT RotateAxisLocal(
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero al eje arbitrario de rotación. Vea [**D3DXVECTOR3.**](d3dxvector3.md)
+Puntero al eje arbitrario de rotación. Vea [**D3DXVECTOR3**](d3dxvector3.md).
 
 </dd> <dt>
 
@@ -63,9 +63,9 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método agrega la rotación a la pila de matriz con la matriz de rotación calculada similar a la siguiente:
 

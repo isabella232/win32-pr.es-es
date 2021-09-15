@@ -4,12 +4,12 @@ ms.assetid: e636c2eb-3c11-45bf-ab0b-a14ec878742c
 title: Datos (formato de archivo X)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28a520d05571f592243e71799ad21a7da3a8d8bea6a3f5819508a194eaca90ec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: efdf799b9f7f155c8d2a0e883c8d5e79f8091156
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119986005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566029"
 ---
 # <a name="data-x-file-format-binary-encoding"></a>Datos (formato de archivo X, codificación binaria)
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7372eef528b90582d3aec64facb7c1aefffdfc479e97e1a5291f1a6d2feacc56
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d0e3e45b42907c47d8c7f1b9e5294738b8997cd6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119279475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566085"
 ---
 # <a name="d3dxshprojectcubemap-function"></a>Función D3DXSHProjectCubeMap
 
@@ -49,7 +49,7 @@ HRESULT D3DXSHProjectCubeMap(
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación del armónico esférico (SH). Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos incluidos. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
+Orden de la evaluación armónica esférica (SH). Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
@@ -106,14 +106,14 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Funciones matemáticas](dx9-graphics-reference-d3dx-functions-math.md)
 </dt> <dt>
 
-[Transferencia de radiancia precalcalada (Direct3D 9)](precomputed-radiance-transfer.md)
+[Transferencia de radiancia precalutada (Direct3D 9)](precomputed-radiance-transfer.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ description: Hay varias maneras de acceder a los recursos.
 ms.assetid: 83950c4d-5df2-4ed1-9d8f-222a62791c18
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5b66ae5ad0f3a49f51281d12ba5e3c2c52cd822aadd5097485b571533ae1a04
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e69ab7bffd22b2271c4d648c3a95ec8d98656973
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119677175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566240"
 ---
 # <a name="accessing-resources"></a>Acceso a recursos
 
