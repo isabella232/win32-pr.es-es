@@ -1,21 +1,21 @@
 ---
-title: Examinar formatos de píxel compatibles con dispositivos
+title: Examinar formatos de píxeles compatibles con dispositivos
 description: La función DescribePixelFormat obtiene datos de formato de píxel para un contexto de dispositivo.
 ms.assetid: 1ebeb051-2dc9-4753-a0f3-7d2737b5f7f2
 keywords:
 - OpenGL en Windows,píxeles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6deb7dbb0f54a50bea4da5ba8f583a97442648096dbabc937a16a9aeaf49b645
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 05ee45212111354d79b7a23fd35490a08f0aead4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120082475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473680"
 ---
-# <a name="examining-a-devices-supported-pixel-formats"></a>Examinar formatos de píxel compatibles con dispositivos
+# <a name="examining-a-devices-supported-pixel-formats"></a>Examinar formatos de píxeles compatibles con dispositivos
 
-La [**función DescribePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-describepixelformat) obtiene datos de formato de píxel para un contexto de dispositivo. También devuelve un entero que es el índice de formato de píxel máximo para el contexto del dispositivo. En el ejemplo de código siguiente se muestra cómo usar ese resultado para examinar y examinar los formatos de píxel admitidos por un dispositivo:
+La [**función DescribePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-describepixelformat) obtiene datos de formato de píxel para un contexto de dispositivo. También devuelve un entero que es el índice de formato de píxel máximo para el contexto del dispositivo. En el ejemplo de código siguiente se muestra cómo usar ese resultado para examinar los formatos de píxel admitidos por un dispositivo:
 
 
 ```C++

@@ -4,12 +4,12 @@ ms.assetid: d9d97880-a563-420c-b598-c3ebd1ae8b74
 title: MF_BYTESTREAMHANDLER_ACCEPTS_SHARE_WRITE atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89ea9b6cf1d126fca44066e7d3292227ecf0ce01f3419b377b6d66b67845f990
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b46a3402585cbce9c1d1464ceb9fb161527673c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119941035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474227"
 ---
 # <a name="mf_bytestreamhandler_accepts_share_write-attribute"></a>MF \_ BYTESTREAMHANDLER \_ ACEPTA EL atributo SHARE \_ \_ WRITE
 
@@ -25,9 +25,9 @@ Para obtener este atributo, llame [**a IMFAttributes::GetUINT32**](/windows/desk
 
 Para establecer este atributo, llame [**a IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los controladores de flujo de bytes pueden admitir este atributo. Para obtener o establecer el atributo, consulte primero el controlador de flujo de bytes para la [**interfaz DEATTRIBUTEAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) A [**continuación, llame a IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32) o [**AATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+Los controladores de flujo de bytes pueden admitir este atributo. Para obtener o establecer el atributo, consulte primero el controlador de flujo de bytes para la [**interfaz DEATTRIBUTEAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) A [**continuación, llame a IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32) [**o AATTRIBUTEAttributes::SetUINT32.**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 
 Si este atributo es **TRUE,** significa que el controlador de flujo de bytes puede leer desde una secuencia mientras otro subproceso escribe en la misma secuencia. Cuando otro subproceso abre una secuencia para escribirla, el método [**IMFByteStream::GetCapabilities**](/windows/desktop/api/mfobjects/nf-mfobjects-imfbytestream-getcapabilities) devuelve la marca **MFBYTESTREAM \_ SHARE \_ WRITE.**
 
@@ -45,7 +45,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/>                                  |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                     |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -56,7 +56,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 [Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Controladores de esquema y Byte-Stream de esquema](scheme-handlers-and-byte-stream-handlers.md)
+[Controladores de esquemas y Byte-Stream de esquema](scheme-handlers-and-byte-stream-handlers.md)
 </dt> </dl>
 
  

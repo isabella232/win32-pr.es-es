@@ -4,12 +4,12 @@ ms.assetid: vs|winui|~\winui\windowsuserinterface\windowing\windowproperties.htm
 title: Propiedades de la ventana
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e82aba0544e1763d36c0378e5d06dc25d48f3297ba8bc8b3bd8687dbba4b0afe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 87a06be9fca67dedeb98afd7a56638622dabc858
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118200596"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572233"
 ---
 # <a name="window-properties"></a>Propiedades de la ventana
 

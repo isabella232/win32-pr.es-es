@@ -4,12 +4,12 @@ ms.assetid: 76d60b95-a34a-4747-b0fa-9230aa60bd63
 title: Novedades de Wi-Fi nativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b4a9430fa2c1645d574f8b4ab851a8cf5ce1407139cfe63a6aabeb3ebfd57abd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2126627f4cf6431fbac2bf4d1f6ec58561bfd8bb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119064865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473737"
 ---
 # <a name="whats-new-in-native-wifi"></a>Novedades de Wi-Fi nativo
 
@@ -19,13 +19,13 @@ Consulte [Aprovisionamiento de un Wi-Fi a través de un sitio web](prov-wifi-pro
 
 ## <a name="windows-10"></a>Windows 10
 
-Se ha agregado compatibilidad con Hotspot 2.0 al esquema [de \_ perfil WLAN.](wlan-profileschema-schema.md) Hotspot 2.0 permite la conexión automática a servicios de Wi-Fi públicos mediante credenciales existentes y pertenencia a redes de proveedor de servicios. Los proveedores de servicios especifican cómo se realizan las conexiones mediante los nuevos elementos de esquema para describir qué redes usar y cómo autenticarse en ellas. Consulte la documentación [**del elemento Hotspot2**](wlan-profileschema-hotspot2-element.md) para obtener más información.
+Se ha agregado compatibilidad con Hotspot 2.0 al esquema [de \_ perfil WLAN.](wlan-profileschema-schema.md) Hotspot 2.0 permite la conexión automática a servicios de Wi-Fi con credenciales existentes y pertenencia a redes de proveedor de servicios. Los proveedores de servicios especifican cómo se realizan las conexiones mediante los nuevos elementos de esquema para describir qué redes usar y cómo autenticarse en ellas. Consulte la documentación [**del elemento Hotspot2**](wlan-profileschema-hotspot2-element.md) para obtener más información.
 
 ## <a name="windows-8-and-windows-server-2012"></a>Windows 8 y Windows Server 2012
 
 Se han agregado las siguientes características a las API de Wi-Fi nativas en Windows 8 y Windows Server 2012.
 
-Una característica Wi-Fi Direct basada en el desarrollo de la especificación técnica punto a punto de Wi-Fi v1.1 por parte de Wi-Fi Alliance (consulte Especificaciones publicadas de [Wi-Fi Alliance).](https://www.wi-fi.org/) El objetivo de la especificación técnica punto a punto de Wi-Fi es proporcionar una solución para la conectividad de dispositivo Wi-Fi dispositivo sin necesidad de un punto de acceso inalámbrico (AP inalámbrico) para configurar la conexión o el uso del mecanismo Wi-Fi adhoc (IBSS) existente.
+Una Wi-Fi direct basada en el desarrollo de la especificación técnica punto a punto de Wi-Fi v1.1 por parte de Wi-Fi Alliance (consulte Especificaciones publicadas de [Wi-Fi Alliance).](https://www.wi-fi.org/) El objetivo de la especificación técnica punto a punto de Wi-Fi es proporcionar una solución para la conectividad de dispositivo Wi-Fi dispositivo a dispositivo sin necesidad de un punto de acceso inalámbrico (AP inalámbrico) para configurar la conexión o el uso del mecanismo Wi-Fi adhoc (IBSS) existente.
 
 Las siguientes funciones admiten la característica Wi-Fi Direct.
 

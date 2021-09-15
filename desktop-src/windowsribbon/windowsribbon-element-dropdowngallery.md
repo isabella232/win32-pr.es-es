@@ -14,11 +14,11 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 5ca7371f172237df53870b5165698bd24302643a
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122624601"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572253"
 ---
 # <a name="dropdowngallery-element"></a>Elemento DropDownGallery
 
@@ -54,7 +54,7 @@ Representa un [control Galería desplegable con](windowsribbon-controls-dropdown
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -102,7 +102,7 @@ Solo se aplica a galerías donde el valor del atributo <em>Type</em> es igual a 
 <td>TextPositionType<br/></td>
 <td>No<br/></td>
 <td>Restringido a uno de los siguientes valores:<br/> <br/>
-<dt><span></span><span></span><strong></strong> (Inferior)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Ocultar)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Izquierda)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Superposición)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Derecha)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Superior)<br/> </dt> <dd></dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (Abajo)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Ocultar)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Izquierda)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Superposición)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Derecha)<br/> </dt> <dd></dd> <dt><span></span><span></span><strong></strong> (Superior)<br/> </dt> <dd></dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Tipo</strong><br/></td>
@@ -123,7 +123,7 @@ Solo se aplica a galerías donde el valor del atributo <em>Type</em> es igual a 
 | Elemento                                                                                           | Descripción                                        |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**Button**](windowsribbon-element-button.md)<br/>                                         | Puede producirse una o varias veces<br/> <br/> |
-| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                                     | Puede producirse una o varias veces<br/> <br/> |
+| [**Casilla**](windowsribbon-element-checkbox.md)<br/>                                     | Puede producirse una o varias veces<br/> <br/> |
 | [**DropDownGallery.MenuGroups**](windowsribbon-element-dropdowngallery-menugroups.md)<br/> | Debe producirse exactamente una vez<br/> <br/>     |
 | [**DropDownGallery.MenuLayout**](windowsribbon-element-dropdowngallery-menulayout.md)<br/> | Puede producirse como máximo una vez<br/> <br/>      |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>                               | Puede producirse una o varias veces<br/> <br/> |
@@ -176,7 +176,7 @@ Windows 8 y versiones más recientes.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Opcional.
 
@@ -247,7 +247,7 @@ En esta sección de código se muestran las declaraciones de control **DropDownG
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

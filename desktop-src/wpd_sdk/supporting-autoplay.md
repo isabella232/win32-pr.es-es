@@ -4,12 +4,12 @@ ms.assetid: e91334d9-9041-4cb8-a6d0-0e2371800064
 title: Compatibilidad con la reproducción automática
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83091191d8468b7ea3d34146e4a4c02e8cf5bf80cb3e49c72dc43bb092d10f76
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 467a4f6289492177beab0469a181297b13accfce
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119083399"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572028"
 ---
 # <a name="supporting-autoplay"></a>Compatibilidad con la reproducción automática
 
@@ -17,11 +17,11 @@ Reproducción automática es una característica del Shell que inicia aplicacion
 
 En Windows Vista, la característica Reproducción automática se extendió para que un dispositivo WPD pueda proporcionar una lista de tipos de contenido que admite. De forma similar, las aplicaciones WPD pueden registrar los tipos de contenido que admiten. Por ejemplo, un asistente para adquisición de fotos puede registrarse como controlador para cualquier dispositivo WPD que proporciona imágenes, y una aplicación multimedia puede registrarse como controlador para cualquier dispositivo que almacena archivos de audio o vídeo.
 
-Las aplicaciones registran información específica del controlador escribiendo entradas en la clave **HKEY \_ LOCAL MACHINE SOFTWARE de Microsoft Windows controladores \_ \\ \\ \\ \\ \\ \\ autoplayHandlers \\ del Explorador de CurrentVersion.** Con un controlador de aplicación WPD (denominado MyWpdApplication.exe) como ejemplo, la aplicación puede insertar los valores siguientes en una clave **\\ \\ Handlers MyWpdApplicationHandler.**
+Las aplicaciones registran información específica del controlador escribiendo entradas en la clave **HKEY \_ LOCAL MACHINE SOFTWARE de Microsoft Windows controladores \_ \\ \\ \\ \\ \\ \\ autoplayHandlers \\** del Explorador de CurrentVersion. Con un controlador de aplicación WPD (denominado MyWpdApplication.exe) como ejemplo, la aplicación puede insertar los siguientes valores en una clave **\\ \\ Handlers MyWpdApplicationHandler.**
 
 
 
-| Valor          | Tipo            | Datos                                                 |
+| Value          | Tipo            | Datos                                                 |
 |----------------|-----------------|------------------------------------------------------|
 | Acción         | REG \_ SZ         | Examinar contenido en dispositivos portátiles.                  |
 | CLSIDForCancel | REG \_ SZ         | {00000000-0000-0000-0000-000000000000}               |
@@ -34,7 +34,7 @@ Las aplicaciones registran información específica del controlador escribiendo 
 
  
 
-Para obtener más información sobre las claves y los valores del Registro de Reproducción automática que se encuentran en la clave **HKEY \_ LOCAL MACHINE SOFTWARE Microsoft Windows \_ \\ \\ \\ \\ CurrentVersion Explorer \\ \\ AutoplayHandlers \\ Handlers** , consulte la documentación correspondiente en MSDN.
+Para obtener más información sobre los valores y las claves del Registro de Reproducción automática que se encuentran en la clave **HKEY \_ LOCAL MACHINE SOFTWARE Microsoft Windows \_ \\ \\ \\ \\ CurrentVersion Explorer \\ \\ AutoplayHandlers \\ Handlers** , consulte la documentación correspondiente en MSDN.
 
 ### <a name="the-wpd-autoplay-scheme"></a>Esquema de reproducción automática de WPD
 
@@ -42,7 +42,7 @@ El esquema de reproducción automática de WPD se integra con la Windows Vista A
 
 
 
-| Categoría | Descripción                                                                                                          |
+| Category | Descripción                                                                                                          |
 |----------|----------------------------------------------------------------------------------------------------------------------|
 | Source   | Un dispositivo WPD se puede tratar como un origen de contenido (es decir, el contenido se puede transferir desde el dispositivo).        |
 | Receptor     | Un dispositivo WPD se puede tratar como destino del contenido (es decir, el contenido se puede transferir al dispositivo).    |
@@ -85,7 +85,7 @@ En la tabla siguiente se enumeran los GUID que se encuentran en las claves **Sin
 | AUDIO DE \_ TIPO \_ DE CONTENIDO WPD \_                 | {4AD2C85E-5E2D-45E5-8864-4F229E3C6CF0} |
 | WPD \_ CONTENT \_ TYPE \_ AUDIO \_ ALBUM          | {AA18737E-5009-48FA-AE21-85F24383B4E6} |
 | CALENDARIO DE TIPO \_ DE \_ CONTENIDO DE \_ WPD              | {A1FD5967-6023-49A0-9DF1-F8060BE751B0} |
-| CERTIFICADO DE TIPO \_ DE \_ CONTENIDO \_ WPD           | {DC3876E8-A948-4060-9050-CDC77E8A3D87} |
+| CERTIFICADO DE \_ TIPO DE \_ CONTENIDO \_ WPD           | {DC3876E8-A948-4060-9050-CDC77E8A3D87} |
 | CONTACTO DE TIPO \_ \_ DE CONTENIDO WPD \_               | {EABA8313-4525-4707-9F0E-87C6808E9435} |
 | GRUPO DE CONTACTOS \_ DE TIPO DE CONTENIDO \_ \_ \_ WPD        | {346B8932-4C36-40D8-9415-1828291F9DE9} |
 | DOCUMENTO DE \_ TIPO DE CONTENIDO DE \_ \_ WPD              | {680ADF52-950A-4041-9B41-65E393648155} |
@@ -96,17 +96,17 @@ En la tabla siguiente se enumeran los GUID que se encuentran en las claves **Sin
 | MENSAJE GENÉRICO \_ DE TIPO DE CONTENIDO \_ \_ \_ WPD      | {E80EAAF8-B2DB-4133-B67E-1BEF4B4A6E5F} |
 | IMAGEN DE TIPO \_ DE \_ CONTENIDO \_ WPD                 | {EF2107D5-A52A-4243-A26B-62D4176D7603} |
 | WPD \_ CONTENT \_ TYPE \_ IMAGE \_ ALBUM          | {75793148-15F5-4A30-A813-54ED8A37E226} |
-| CONVERSIÓN MULTIMEDIA \_ DE TIPO DE CONTENIDO \_ \_ \_ WPD           | {5E88B3CC-3E65-4E62-BFFF-229495253AB0} |
+| CONVERSIÓN MULTIMEDIA \_ DE TIPO DE CONTENIDO \_ \_ WPD \_           | {5E88B3CC-3E65-4E62-BFFF-229495253AB0} |
 | WPD \_ CONTENT \_ TYPE \_ MEMO                  | {9CD20ECF-3B50-414F-A641-E473FFE45751} |
 | WPD \_ CONTENT \_ TYPE \_ MIXED \_ CONTENT \_ ALBUM | {00F0C3AC-A593-49AC-9219-24ABCA5A2563} |
-| ASOCIACIÓN DE RED \_ DEL TIPO DE CONTENIDO \_ \_ \_ WPD  | {031DA7EE-18C8-4205-847E-89A11261D0F3} |
+| ASOCIACIÓN DE \_ RED DE TIPO DE CONTENIDO \_ \_ \_ WPD  | {031DA7EE-18C8-4205-847E-89A11261D0F3} |
 | LISTA DE REPRODUCCIÓN \_ DE TIPO DE CONTENIDO \_ \_ WPD              | {1A33F7E4-AF13-48F5-994E-77369DFE04A3} |
-| PROGRAMA DE TIPO \_ DE \_ CONTENIDO \_ WPD               | {D269F96A-247C-4BFF-98FB-97F3C49220E6} |
-| SECCIÓN TIPO DE \_ CONTENIDO \_ \_ WPD               | {821089F5-1D91-4DC9-BE3C-BBB1B35B18CE} |
+| PROGRAMA DE \_ TIPO DE \_ CONTENIDO \_ WPD               | {D269F96A-247C-4BFF-98FB-97F3C49220E6} |
+| SECCIÓN TIPO DE \_ CONTENIDO \_ DE \_ WPD               | {821089F5-1D91-4DC9-BE3C-BBB1B35B18CE} |
 | TAREA TIPO \_ DE \_ CONTENIDO \_ WPD                  | {63252F2C-887F-4CB6-B1AC-D29855DCEF6C} |
 | WPD \_ CONTENT \_ TYPE \_ TV            | {60A169CF-F2AE-4E21-9375-9677F11C1C6E} |
-| TIPO DE \_ CONTENIDO \_ WPD \_ SIN ESPECIFICAR           | {28D8D31E-249C-454E-AABC-34883168E634} |
-| VÍDEO DE \_ TIPO DE \_ CONTENIDO \_ WPD                 | {9261B03C-3D78-4519-85E3-02C5E1F50BB9} |
+| TIPO DE \_ CONTENIDO WPD \_ SIN \_ ESPECIFICAR           | {28D8D31E-249C-454E-AABC-34883168E634} |
+| VÍDEO DE \_ TIPO CONTENIDO \_ WPD \_                 | {9261B03C-3D78-4519-85E3-02C5E1F50BB9} |
 | WPD \_ CONTENT \_ TYPE \_ VIDEO \_ ALBUM          | {012B0DB7-D4C1-45D6-B081-94B87779614F} |
 | PERFIL INALÁMBRICO \_ DE TIPO DE CONTENIDO \_ \_ \_ WPD     | {0BAC070A-9F5F-4DA4-A8F6-3DE44D68FD6C} |
 

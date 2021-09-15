@@ -4,12 +4,12 @@ ms.assetid: c24d397a-69c3-4a2c-a9b8-967a03a89e58
 title: System.Media.FrameCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a55eb350529a32bfdce1b5a3f22b5f1f11e04d54331adc783ad0b84df9c9efae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 12170c336a8c35fa6ec439b4304b9126e22a4029
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118230847"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571521"
 ---
 # <a name="systemmediaframecount"></a>System.Media.FrameCount
 
@@ -46,7 +46,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

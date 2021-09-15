@@ -9,12 +9,12 @@ keywords:
 - RRAS del servicio de enrutamiento y acceso remoto, administrador de grupos de multidifusión, descrito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9f83dc2b212f7d70d04b4a3ec08bf07e664fa2d67d9c638233a4e8e914369c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 034d37b99aaa9ca0139b5425cd5b85e7b3f280e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120030935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473629"
 ---
 # <a name="about-multicast-group-manager"></a>Acerca del Administrador de grupos de multidifusión
 
@@ -28,7 +28,7 @@ La API de MGM permite a los desarrolladores escribir protocolos de enrutamiento 
 
 Cuando se habilita más de un protocolo de enrutamiento de multidifusión en un enrutador, el administrador de grupos de multidifusión coordina las operaciones entre todos los protocolos de enrutamiento. El administrador de grupos de multidifusión informa a cada protocolo de enrutamiento cuando se producen cambios de pertenencia a grupos y cuando se reciben datos de multidifusión de un nuevo origen o destinados a un nuevo grupo.
 
-La API de MGM proporciona las siguientes características:
+MGM API proporciona las siguientes características:
 
 -   Registro de protocolos
 -   Administración de grupos

@@ -4,16 +4,16 @@ ms.assetid: 0d0c6b3d-23bc-4628-a684-14bb9e18967f
 title: Recuperar propiedades para varios objetos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d1ad9ec397daa90c149fe950c1fc4777c407e3f5f3a359f46cf8bef56e18b9f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 56c069f6a28b923339f66f8423f211eff4704ef6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119083519"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572060"
 ---
 # <a name="retrieving-properties-for-multiple-objects"></a>Recuperar propiedades para varios objetos
 
-Algunos controladores de dispositivos admiten la recuperación de propiedades para varios objetos en una sola llamada de función. esto se conoce como recuperación masiva. Hay dos tipos de operaciones de recuperación masiva: el primer tipo recupera las propiedades de una lista de objetos y el segundo tipo recupera las propiedades de todos los objetos de un formato determinado. En el ejemplo descrito en esta sección se muestra lo primero.
+Algunos controladores de dispositivo admiten la recuperación de propiedades para varios objetos en una sola llamada de función; esto se conoce como recuperación masiva. Hay dos tipos de operaciones de recuperación masiva: el primer tipo recupera las propiedades de una lista de objetos y el segundo tipo recupera las propiedades de todos los objetos de un formato determinado. En el ejemplo descrito en esta sección se muestra lo primero.
 
 La aplicación puede realizar una recuperación masiva mediante las interfaces descritas en la tabla siguiente.
 
@@ -22,8 +22,8 @@ La aplicación puede realizar una recuperación masiva mediante las interfaces d
 | Interfaz                                                                                      | Descripción                                                        |
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | [**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)                             | Proporciona acceso a los métodos específicos del contenido.                   |
-| [**IPortableDeviceKeyCollection (Interfaz)**](iportabledevicekeycollection.md)                 | Se usa para identificar las propiedades que se recuperarán.                   |
-| [**IPortableDeviceProperties (Interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties)                       | Se usa para determinar si un controlador determinado admite operaciones masivas. |
+| [**IPortableDeviceKeyCollection (interfaz)**](iportabledevicekeycollection.md)                 | Se usa para identificar las propiedades que se recuperarán.                   |
+| [**IPortableDeviceProperties (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties)                       | Se usa para determinar si un controlador determinado admite operaciones masivas. |
 | [**IPortableDevicePropertiesBulk (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicepropertiesbulk)               | Admite la operación de recuperación masiva.                             |
 | [**IPortableDevicePropVariantCollection (Interfaz)**](iportabledevicepropvariantcollection.md) | Se usa para almacenar los identificadores de objeto para la operación masiva.       |
 
@@ -82,7 +82,7 @@ if (SUCCEEDED(hr))
 
 
 
-Si el controlador admite operaciones masivas, el siguiente paso es crear una instancia de la interfaz [**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) y especificar las claves que corresponden a las propiedades que recuperará la aplicación. Para obtener una descripción de este proceso, vea el [tema Retrieving Properties for a Single Object](retrieving-properties-for-a-single-object.md) .
+Si el controlador admite operaciones masivas, el siguiente paso es crear una instancia de la interfaz [**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) y especificar las claves que corresponden a las propiedades que recuperará la aplicación. Para obtener una descripción de este proceso, vea el tema [Recuperación de propiedades para un objeto](retrieving-properties-for-a-single-object.md) único.
 
 Una vez especificadas las claves adecuadas, la aplicación de ejemplo crea una instancia de la [**interfaz IPortableDevicePropertiesBulkCallback**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicepropertiesbulk). La aplicación usará los métodos de esta interfaz para realizar un seguimiento del progreso de la operación asincrónica de recuperación masiva.
 
@@ -120,12 +120,12 @@ if (SUCCEEDED(hr))
 
 
 
-Una vez que se han realizado los pasos anteriores, la aplicación de ejemplo inicia la recuperación de la propiedad asincrónica. Para ello, haga lo siguiente:
+Una vez que se han realizado los pasos anteriores, la aplicación de ejemplo inicia la recuperación de propiedades asincrónicas. Para ello, haga lo siguiente:
 
 1.  Llamar a IPortableDevicePropertiesBulk::QueueGetValuesByObjectList, que pone en cola una solicitud para la recuperación masiva de propiedades. (Tenga en cuenta que, aunque la solicitud está en cola, no se inicia).
 2.  Llamar a IPortableDevicePropertiesBulk::Start para iniciar la solicitud en cola.
 
-Estos pasos se muestran en el siguiente extracto de código de la aplicación de ejemplo.
+Estos pasos se muestran en el siguiente fragmento de código de la aplicación de ejemplo.
 
 
 ```C++
@@ -179,16 +179,16 @@ Estos pasos se muestran en el siguiente extracto de código de la aplicación de
 
 <dl> <dt>
 
-[**IPortableDevice (Interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
+[**IPortableDevice (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
 </dt> <dt>
 
 [**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)
 </dt> <dt>
 
-[**IPortableDeviceKeyCollection (Interfaz)**](iportabledevicekeycollection.md)
+[**IPortableDeviceKeyCollection (interfaz)**](iportabledevicekeycollection.md)
 </dt> <dt>
 
-[**IPortableDeviceProperties (Interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties)
+[**IPortableDeviceProperties (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties)
 </dt> <dt>
 
 [**IPortableDevicePropertiesBulk (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicepropertiesbulk)

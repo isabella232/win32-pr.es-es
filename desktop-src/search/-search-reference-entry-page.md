@@ -4,12 +4,12 @@ ms.assetid: 3590cdab-5831-4372-adf7-61814031c931
 title: Windows Referencia de búsqueda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5224937bdfaa3e0e4a87c2bfca94e54f40ebcb63c12684ba105997af9e6a9c1b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: feff16b161a142e9f63b6ad14698f21c36c6f29f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117863708"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572556"
 ---
 # <a name="windows-search-reference"></a>Windows Referencia de búsqueda
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55e40b883192adc53b11f9965f1a92f4637b320d32b5fd6909e2b6d615437a6f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 549ca4b5245b12bda07b46407041a01175955693
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118926299"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473594"
 ---
 # <a name="rpc_mgr_epv"></a>RPC \_ MGR \_ EPV
 
@@ -33,7 +33,7 @@ typedef _if-name_SERVER-EPV {
 } if-name_SERVER_EPV:
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -65,7 +65,7 @@ Especifica los parámetros indicados para la función **Functionname** en el arc
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El vector de punto de entrada (EPV) del administrador es una matriz de punteros de función. La matriz contiene punteros a las implementaciones de las funciones especificadas en el archivo IDL. El número de elementos de la matriz se establece en el número de funciones especificadas en el archivo IDL. Una aplicación también puede tener varios EPV, que representan varias implementaciones de las funciones especificadas en la interfaz .
 

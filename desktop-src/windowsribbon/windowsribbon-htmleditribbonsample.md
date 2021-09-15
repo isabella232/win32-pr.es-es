@@ -4,12 +4,12 @@ description: En este ejemplo de código se muestra el marcado y el código neces
 ms.assetid: 1505aaea-76d2-47bc-bdc9-12e761da93f9
 ms.topic: article
 ms.date: 07/13/2021
-ms.openlocfilehash: 0f1299bdc20b1b94a5113d3cfcdda205b6ad8e513a59706d708362fbc8383bd8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cfe75d13a69e0122766e51a00bcb1b15d52eab4e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118202123"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572244"
 ---
 # <a name="htmleditribbon-sample"></a>Ejemplo HTMLEditRibbon
 
@@ -22,13 +22,13 @@ En este ejemplo de código se muestra el marcado y el código necesarios para mi
 - [Soporte técnico](#support)
 - [Requisitos mínimos](#minimum-requirements)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para obtener el ejemplo de MFC, vea [HtmlEdit Sample: Wraps the Internet Explorer Control de edición MSHTML](https://msdn.microsoft.com/library/ea8hhwb6(VS.80).aspx).
+Para obtener el ejemplo de MFC, vea [HtmlEdit Sample: Wraps the Internet Explorer control de edición MSHTML](https://msdn.microsoft.com/library/ea8hhwb6(VS.80).aspx).
 
 ## <a name="usage"></a>Uso
 
-Los ejemplos Windows marco de la cinta de opciones de Microsoft Visual Studio se pueden descargar como proyectos de Microsoft Visual Studio independientes desde el Centro de descarga de [Microsoft](https://www.microsoft.com/download/details.aspx?id=9620) o instalarse como parte del Kit de desarrollo de [software (SDK)](https://developer.microsoft.com/windows/downloads/sdk-archive/)de Windows.
+Los ejemplos Windows marco de la cinta de opciones de Windows se pueden descargar como proyectos de Microsoft Visual Studio independientes desde el Centro de descarga de [Microsoft](https://www.microsoft.com/download/details.aspx?id=9620) o instalarse como parte del Kit de desarrollo de [software (SDK)](https://developer.microsoft.com/windows/downloads/sdk-archive/)de Windows.
 
 - Windows Kit de desarrollo de software (SDK) (ruta de instalación estándar): %ProgramFiles% SDK de Microsoft Windows número de versión \\ \\ Ejemplos \\ \[ \] \\ \\ winui \\ WindowsRibbon \\ HTMLEditRibbon
 
@@ -56,11 +56,11 @@ El [foro Windows desarrollo de la cinta](https://social.msdn.microsoft.com/Forum
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible | Windows 7<br/> Windows Vista con Service Pack 2 (SP2) y [Platform Update para Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx)<br/>         |
-| Servidor mínimo compatible | Windows Server 2008 R2<br/> Windows Server 2008 con SP2 y [Actualización de plataforma para Windows Server 2008](https://msdn.microsoft.com/library/dd378748.aspx)<br/> |
-| Windows SDK              | 7,0                                                                                                                                                                      |
+| Servidor mínimo compatible | Windows Server 2008 R2<br/> Windows Server 2008 con SP2 y [actualización de plataforma para Windows Server 2008](https://msdn.microsoft.com/library/dd378748.aspx)<br/> |
+| Windows SDK              | 7.0                                                                                                                                                                      |
 | Visual Studio            | 2008                                                                                                                                                                     |
 | Archivos de encabezado e IDL     | uiribbon.h, uiribbon.idl                                                                                                                                                 |
 
@@ -69,7 +69,7 @@ El [foro Windows desarrollo de la cinta](https://social.msdn.microsoft.com/Forum
  
 
 > [!Note]  
-> La actualización de plataforma para [Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx) y la actualización de plataforma para Windows [Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) son conjuntos de bibliotecas en tiempo de ejecución que permiten a los desarrolladores dirigir aplicaciones de la cinta de opciones de Windows a Windows Vista y Windows Server 2008. Las actualizaciones de la plataforma estarán disponibles para todos los Windows Vista y Windows Server 2008 a través de Windows Update. Las aplicaciones de terceros que requieren Actualización de plataforma para [Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx) o Actualización de plataforma para Windows [Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) pueden hacer que Windows Update detecte si está instalada la actualización necesaria. Si no es así, Windows Update la descargará e instalará en segundo plano.
+> La actualización de plataforma para [Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx) y la actualización de plataforma para Windows [Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) son conjuntos de bibliotecas en tiempo de ejecución que permiten a los desarrolladores dirigir aplicaciones de cinta de opciones Windows Windows Vista y Windows Server 2008. Las actualizaciones de la plataforma estarán disponibles para todos los Windows Vista y Windows Server 2008 a través de Windows Update. Las aplicaciones de terceros que requieren Actualización de plataforma para [Windows Vista](https://msdn.microsoft.com/library/dd378748.aspx) o Actualización de plataforma para Windows [Server 2008](https://msdn.microsoft.com/library/dd378748.aspx) pueden hacer que Windows Update detecte si está instalada la actualización necesaria. Si no es así, Windows Update la descargará e instalará en segundo plano.
 
  
 

@@ -7,12 +7,12 @@ keywords:
 - RPC_STATUS
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 93cc6f682dbb46b65fc261b738b94e8000f3a77d96c4bd65d1fead4bf8c0e17a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 066022ce33676caadcf25a6814f3b4974701998e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118925992"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473576"
 ---
 # <a name="rpc_status"></a>ESTADO \_ DE RPC
 
@@ -26,7 +26,7 @@ typedef unsigned short RPC_STATUS;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La mayoría de las funciones RPC devuelven el tipo **RPC \_ STATUS** y forma parte de la definición del tipo de función [**RPC OBJECT \_ \_ INQ \_ FN.**](/windows/desktop/api/Rpcdce/nc-rpcdce-rpc_object_inq_fn)
 
@@ -34,7 +34,7 @@ La mayoría de las funciones RPC devuelven el tipo **RPC \_ STATUS** y forma par
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                |
@@ -42,7 +42,7 @@ La mayoría de las funciones RPC devuelven el tipo **RPC \_ STATUS** y forma par
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

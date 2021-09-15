@@ -5,12 +5,12 @@ ms.assetid: 6e6b85cc-83bc-4468-b1cf-3480022a8f12
 title: F (Monitor de red)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a41f27541d6c7bdae3ec8e520780348edab75b7f040db01d0f08e2b6ff745bb1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 605eb27b95526fa2f3839c06e6f259a2afec55c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118938900"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473698"
 ---
 # <a name="f-network-monitor"></a>F (Monitor de red)
 
@@ -26,7 +26,7 @@ Objeto binario grande (BLOB) que se usa para restringir la búsqueda de una tarj
 <span id="_netmon_follow_set_gly"></span><span id="_NETMON_FOLLOW_SET_GLY"></span>**seguir el conjunto**
 </dt> <dd>
 
-Conjunto de protocolos que sigue a un protocolo. Monitor de red usa el siguiente conjunto de un protocolo si el analizador no puede detectar el siguiente protocolo a partir de los datos de la captura. Consulte también [ *handoff set (Conjunto de entregas).*](h.md)
+Conjunto de protocolos que sigue a un protocolo. Monitor de red el siguiente conjunto de un protocolo si el analizador no puede detectar el siguiente protocolo a partir de los datos de la captura. Consulte también [ *handoff set (Conjunto de entregas).*](h.md)
 
 </dd> <dt>
 
@@ -40,7 +40,7 @@ Un paquete de datos que se transmite como una unidad a través de una red. Cada 
 <span id="_netmon_frame_viewer_window_gly"></span><span id="_NETMON_FRAME_VIEWER_WINDOW_GLY"></span>**ventana visor de fotogramas**
 </dt> <dd>
 
-Ventana Monitor de red que muestra información detallada sobre fotogramas individuales. Puede abrir varias ventanas de visor de fotogramas a la vez.
+Una Monitor de red que muestra información detallada sobre fotogramas individuales. Puede abrir varias ventanas de visor de fotogramas a la vez.
 
 </dd> </dl>
 

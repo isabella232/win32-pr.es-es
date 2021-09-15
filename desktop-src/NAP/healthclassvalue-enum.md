@@ -3,7 +3,7 @@ title: Enumeración HealthClassValue (NapProtocol.h)
 description: Indica el valor de la clase de mantenimiento TLV.
 ms.assetid: af80c27a-a686-494b-8795-73eb366deaa0
 keywords:
-- Nap de enumeración HealthClassValue
+- NAP de enumeración HealthClassValue
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b76b3fef268417f14bf22d2e25539a245cebc31820b746847f1e7b1091492b82
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ade44b74d03a69d6ccf410a042adf3819b8cc782
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119891645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473819"
 ---
 # <a name="healthclassvalue-enumeration"></a>Enumeración HealthClassValue
 
@@ -30,7 +30,7 @@ ms.locfileid: "119891645"
 
 El **tipo de enumeración HealthClassValue** indica el valor de la clase de mantenimiento TLV.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -59,7 +59,7 @@ La clase de mantenimiento TLV es firewall.
 <span id="healthClassPatchLevel"></span><span id="healthclasspatchlevel"></span><span id="HEALTHCLASSPATCHLEVEL"></span>**healthClassPatchLevel**
 </dt> <dd>
 
-La clase de mantenimiento TLV es el nivel de revisión.
+La clase de mantenimiento TLV es de nivel de revisión.
 
 </dd> <dt>
 
@@ -92,8 +92,8 @@ Reservado solo para uso del sistema.
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
 
 
 

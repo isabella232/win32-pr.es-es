@@ -1,7 +1,7 @@
 ---
-description: 'Método ID3DXMATRIXStack::RotateYawPitchRoll (D3DX10.h): gira (con respecto al espacio de coordenadas universal) alrededor de un eje arbitrario.'
+description: 'Método ID3DXMATRIXStack::RotateYawPitchRoll (D3DX10.h): gira (en relación con el espacio de coordenadas del mundo) alrededor de un eje arbitrario.'
 ms.assetid: 35e237f6-40f2-4001-adb0-f489d61f64e7
-title: Método ID3DXMATRIXStack::RotateYawPitchRoll (D3DX10.h)
+title: Método ID3DXMATRIXStack::RotateYawPtrixRoll (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: e43422e5872708a61b5f066725e61c16e55d04dd94f5c8527c7b86e1f7a543c4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8c4f167f769a1ed46404028916477d6784e4a436
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119128337"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474487"
 ---
-# <a name="id3dxmatrixstackrotateyawpitchroll-method-d3dx10h"></a>Método ID3DXMATRIXStack::RotateYawPitchRoll (D3DX10.h)
+# <a name="id3dxmatrixstackrotateyawpitchroll-method-d3dx10h"></a>Método ID3DXMATRIXStack::RotateYawPtrixRoll (D3DX10.h)
 
-Gira (en relación con el espacio de coordenadas universal) alrededor de un eje arbitrario.
+Gira (en relación con el espacio de coordenadas del mundo) alrededor de un eje arbitrario.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ La yaw alrededor del eje Y en radianes.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-El tono alrededor del eje X en radianes.
+El paso alrededor del eje X en radianes.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método agrega la rotación a la pila de matriz con la matriz de rotación calculada similar a la siguiente:
 
@@ -88,7 +88,7 @@ m_stack[m_currentPos] = m_stack[m_currentPos] * tmp;
 
 
 
-Dado que la rotación se multiplica a la derecha en la pila de matriz, la rotación es relativa al espacio de coordenadas universal.
+Dado que la rotación se multiplica a la derecha en la pila de matriz, la rotación es relativa al espacio de coordenadas del mundo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,7 +101,7 @@ Dado que la rotación se multiplica a la derecha en la pila de matriz, la rotaci
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

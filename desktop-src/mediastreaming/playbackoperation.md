@@ -14,12 +14,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cb0c1bad5fa3cef3223b4b2d6ca9a9ac4aac5523a2eff8cbaf7bcb6ebb884949
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 796ef1765deb4226470df09395c8a2cd7670513f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120092255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571660"
 ---
 # <a name="playbackoperation-class"></a>Clase PlaybackOperation
 
@@ -52,7 +52,7 @@ La **clase PlaybackOperation** tiene estas propiedades.
 
 | Propiedad                                                    | Tipo de acceso           | Descripción                                                                                                                                                                           |
 |:------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Completed**](playbackoperation-completed.md)<br/> | Lectura/escritura<br/> | Obtiene o establece un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por uno de los métodos de reproducción [**de MediaRenderer.**](mediarenderer.md) <br/> |
+| [**Completed**](playbackoperation-completed.md)<br/> | Lectura y escritura<br/> | Obtiene o establece un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por uno de los métodos de reproducción de [**MediaRenderer.**](mediarenderer.md) <br/> |
 
 
 

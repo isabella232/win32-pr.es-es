@@ -4,18 +4,18 @@ ms.assetid: 04a61ecc-d168-4f93-b143-3e6ba8aaf322
 title: Directiva de metadatos de fotos System.DateAcquired
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c95b8f68d99476db0832a321de1f61c6f3c4dc6be6f10d679735bd51fc92ce7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f126ccb4424d1489f671f61f719a505559a78c8d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119087886"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572276"
 ---
 # <a name="systemdateacquired-photo-metadata-policy"></a>Directiva de metadatos de fotos System.DateAcquired
 
 Directiva de metadatos de fotos para [la propiedad System.DateAcquired.](../properties/props-system-dateacquired.md)
 
-### <a name="pkey"></a>Pkey
+### <a name="pkey"></a>PKEY
 
 PKEY \_ DateAcquired
 
@@ -45,7 +45,7 @@ Si el archivo está en formato JPEG, el controlador busca los datos en el orden 
 
 
 
-| Pedido | Ruta de acceso                             | Formato de disco                        | Requerido |
+| Pedido | Ruta de acceso                             | Formato de disco                        | Obligatorio |
 |-------|----------------------------------|------------------------------------|----------|
 | 1     | /xmp/MicrosoftPhoto:DateAcquired | Cadena Unicode en formato de fecha XMP. | Sí      |
 
@@ -59,7 +59,7 @@ Si el archivo está en formato TIFF, el controlador busca los datos en el orden 
 
 
 
-| Pedido | Ruta de acceso                                 | Formato de disco                        | Requerido |
+| Pedido | Ruta de acceso                                 | Formato de disco                        | Obligatorio |
 |-------|--------------------------------------|------------------------------------|----------|
 | 1     | /ifd/xmp/MicrosoftPhoto:DateAcquired | Cadena Unicode en formato de fecha XMP. | Sí      |
 
@@ -67,7 +67,7 @@ Si el archivo está en formato TIFF, el controlador busca los datos en el orden 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ## <a name="related-topics"></a>Temas relacionados
 

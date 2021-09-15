@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 96b1d8ce92a847dcd4ffcebca6b45df2b652ad74c1216fc60b8aac72bb6a12ac
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 882aaf0d131ae6fe062c00c0181e2f913a0e1bc5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119659725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572289"
 ---
 # <a name="iwiaimagefilterfilterpreviewimage-method"></a>IWiaImageFilter::FilterPreviewImage (método)
 
@@ -84,13 +84,13 @@ Tipo: **HRESULT**
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No llame a este método directamente desde la aplicación.
 
 *pWiaChildItem2* debe ser un elemento secundario de *pWiaItem2* que se pasó a [**IWiaImageFilter::InitializeFilter**](-wia-iwiaimagefilter-initializefilter.md).
 
-*InputImageExtents* es necesario porque el filtro de procesamiento de imágenes es responsable de eliminar el área de imagen que *pWiaChildItem2* representa a partir de los datos de imagen pasados a través *de pInputStream*.
+*InputImageExtents* es necesario porque el filtro de procesamiento de imágenes es responsable de cortar el área de imagen que *pWiaChildItem2* representa a partir de los datos de imagen pasados a través *de pInputStream*.
 
 Una aplicación debe asegurarse de que *pWiaChildItem2* tiene el mismo formato de imagen (WIA \_ IPA FORMAT), resolución \_ (WIA IPS XRES y WIA IPS YRES) y profundidad de \_ \_ bits \_ \_ (WIA \_ IPA DEPTH) que tenía \_ *pWiaItem2* [](-wia-iwiapreview-getnewpreview.md)cuando se pasó a GetNewPreview .
 
@@ -98,12 +98,12 @@ Una aplicación debe asegurarse de que *pWiaChildItem2* tiene el mismo formato d
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

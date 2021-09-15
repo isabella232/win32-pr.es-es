@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7f9675eca27ff094b0929a1b138c189c65978227b35702a47a776e0262e36f8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72b4039d87dca77ce5150df41528a385e76d8f62
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120002025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474564"
 ---
 # <a name="texthoverforegroundcolor"></a>TEXT.hoverForegroundColor
 
@@ -31,7 +31,7 @@ El **atributo hoverForegroundColor** especifica o recupera el color de texto uti
 
 Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer microsoft.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si **no se especifica hoverForegroundColor,** se usa **foregroundColor.**
 

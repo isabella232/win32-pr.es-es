@@ -6,12 +6,12 @@ keywords:
 - Llamada a procedimiento remoto RPC, referencia, constantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8782fa94352e578e0b6e7d32645c0dda0dd997bf51c46869ecbc5e9642957f31
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bc0d92d9939ce31565796741b584cfa37e4a2690
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120127795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473604"
 ---
 # <a name="rpc-constants"></a>Constantes RPC
 
@@ -19,7 +19,7 @@ En esta sección se describen las siguientes constantes usadas por Rpc de Micros
 
 -   [Constantes de nivel de autenticación](authentication-level-constants.md)
 -   [Constantes de servicio de autenticación](authentication-service-constants.md)
--   [Constantes de authorization-service](authorization-service-constants.md)
+-   [Constantes de servicio de autorización](authorization-service-constants.md)
 -   [Constantes de tiempo de espera de enlace](binding-time-out-constants.md)
 -   [Constantes de opción de enlace](binding-option-constants.md)
 -   [DCE \_ C \_ ERROR \_ STRING \_ LEN](dce-c-error-string-len.md)

@@ -4,12 +4,12 @@ ms.assetid: 410f7126-5c4c-4c0c-8aa6-c94f15c903fc
 title: Eventos de objeto ink
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63217f603b06703b7824c19d3a709fdb97f31c9890e3148a6eeefd1e681d63b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d0375606b4f4a2f257aa00c360c764972f28c467
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118451949"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572376"
 ---
 # <a name="ink-object-events"></a>Eventos de objeto ink
 

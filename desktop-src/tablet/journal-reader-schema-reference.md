@@ -4,12 +4,12 @@ ms.assetid: fd4a34fb-39e9-47e5-9761-9cbf0f28d9fe
 title: Referencia de esquema del lector de diario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ede7f6449175113829c8491bb470fe84627a3188e477d111a072c5b6d008c3d7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f58e748798dec6c6d19ff47e0194c9caec2f814f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119843435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572309"
 ---
 # <a name="journal-reader-schema-reference"></a>Referencia de esquema del lector de diario
 

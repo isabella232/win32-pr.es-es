@@ -4,12 +4,12 @@ ms.assetid: 62fb3f0f-ab1f-4c61-8e7f-62908b947788
 title: MF_TOPOLOGY_STATIC_PLAYBACK_OPTIMIZATIONS atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f01b22e5b7e972e9d1eb453f317e8db6a902e994e83d075cd791d9261aa6ed09
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6f9f7d884c49078ca02571f8ba141f9a1e13589
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117691247"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474119"
 ---
 # <a name="mf_topology_static_playback_optimizations-attribute"></a>Atributo \_ MF TOPOLOGY \_ STATIC PLAYBACK \_ \_ OPTIMIZATIONS
 
@@ -29,7 +29,7 @@ Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT32**](/wind
 
 [**IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Establezca este atributo antes de cargar una topología. Si el atributo es **TRUE,** el cargador de topologías intenta optimizar la canalización antes de que se inicie la reproducción.
 
@@ -103,15 +103,15 @@ done:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

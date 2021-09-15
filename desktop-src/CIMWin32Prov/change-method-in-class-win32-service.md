@@ -2,7 +2,7 @@
 description: Modifica un servicio \_ Win32.
 ms.assetid: b32753c5-8fcf-44ee-a95f-e4f6076e0f28
 ms.tgt_platform: multiple
-title: Método change de la Win32_Service clase (Mbnapi.h)
+title: Método de cambio de Win32_Service clase (Mbnapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ca513a31eded5202639da13b8e9f2e817c9df336b227ba93d903e44068b98898
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 321b27239114fc86861c0360d507db6c8c520a9c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119440195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474016"
 ---
-# <a name="change-method-of-the-win32_service-class-mbnapih"></a>Método change de la Win32_Service clase (Mbnapi.h)
+# <a name="change-method-of-the-win32_service-class-mbnapih"></a>Método de cambio de Win32_Service clase (Mbnapi.h)
 
 El **método cambiar** [clase WMI](/windows/desktop/WmiSdk/retrieving-a-class) modifica un [**servicio Win32 \_**](win32-service.md).
 
-En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF. Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -229,7 +229,7 @@ Si **es True,** el servicio puede crear o comunicarse con una ventana en el escr
 *StartName* \[ En\]
 </dt> <dd>
 
-Nombre de cuenta en el que se ejecuta el servicio. Dependiendo del tipo de servicio, el nombre de cuenta puede tener el formato nombreDeUsuario nombreDeServidor o \\ . \\ nombre de usuario. El proceso de servicio se registrará mediante uno de estos dos formularios cuando se ejecute. Si la cuenta pertenece al dominio integrado, . \\ Se puede especificar el nombre de usuario. Si se especifica **NULL,** el servicio se inicia sesión como la cuenta LocalSystem. Para los controladores de kernel o de nivel de sistema, *StartName* contiene el nombre del objeto de controlador (es decir, FileSystem Rdr o Driver Xns) que el sistema de entrada y salida \\ \\ \\ (E/S) usa para cargar el controlador de \\ dispositivo. Si se especifica **NULL,** el controlador se ejecuta con un nombre de objeto predeterminado creado por el sistema de E/S basado en el nombre del servicio, por ejemplo, "DWDOM \\ Admin".
+Nombre de cuenta en el que se ejecuta el servicio. Dependiendo del tipo de servicio, el nombre de cuenta puede tener el formato nombreDeUsuario nombreDeServidor o \\ . \\ Nombre de usuario. El proceso de servicio se registrará mediante uno de estos dos formularios cuando se ejecute. Si la cuenta pertenece al dominio integrado, . \\ Se puede especificar el nombre de usuario. Si se especifica **NULL,** el servicio se inicia sesión como la cuenta LocalSystem. Para los controladores de kernel o de nivel de sistema, *StartName* contiene el nombre del objeto de controlador (es decir, FileSystem Rdr o Driver Xns) que el sistema de entrada y salida \\ \\ \\ (E/S) usa para cargar el controlador de \\ dispositivo. Si se especifica **NULL,** el controlador se ejecuta con un nombre de objeto predeterminado creado por el sistema de E/S basado en el nombre del servicio, por ejemplo, "DWDOM \\ Admin".
 
 También puede usar el formato de nombre principal de usuario (UPN) para especificar **startName,** por ejemplo, *Username@DomainName* .
 
@@ -514,14 +514,14 @@ El servicio se encuentra en pausa actualmente en el sistema.
 
 Cuando se inicia un equipo, también se inician todos los servicios de inicio automático. En ocasiones, uno de estos servicios podría no iniciarse junto con el equipo. Cuando se produce un error en un servicio durante el inicio del sistema, el equipo realiza una acción basada en el valor del código de control de errores del servicio.
 
-La mayoría de los servicios se instalan mediante el código de control de errores Normal. Algunas de las excepciones, que se instalan mediante el código de error Omitir, incluyen:
+la mayoría de los servicios se instalan mediante el código de control de errores Normal. Algunas de las excepciones, que se instalan mediante el código de error Omitir, incluyen:
 
 -   Servicio de replicación de archivos
 -   Tarjeta inteligente
 -   Inicio de sesión secundario
 -   WMI
 
-En el caso de los servicios instalados mediante el código de error Omitir, no se envía ninguna notificación al usuario de que se ha producido un error en el servicio. Si prefiere la notificación en pantalla de que un servicio no se pudo iniciar, puede usar WMI para cambiar el código de control de errores. Los códigos de control de errores solo se aplican al inicio del equipo; Los códigos de control de errores no se usan si detiene e intenta reiniciar un servicio después de que el equipo se esté ejecutando.
+Para los servicios instalados mediante el código de error Omitir, no se envía ninguna notificación al usuario de que el servicio ha producido un error. Si prefiere la notificación en pantalla de que un servicio no se pudo iniciar, puede usar WMI para cambiar el código de control de errores. Los códigos de control de errores solo se aplican al inicio del equipo; los códigos de control de errores no se usan si detiene e intenta reiniciar un servicio después de que el equipo se esté ejecutando.
 
 En ocasiones, es posible que tenga que cambiar la cuenta con la que se ejecuta un servicio determinado. Por ejemplo, puede ejecutar un servicio con una cuenta administrativa. Dado que esto puede crear una vulnerabilidad de seguridad, puede cambiar el servicio a una cuenta con menos privilegios. Como alternativa, es posible que tenga servicios que se ejecuten en una cuenta que esté a punto de eliminarse o que quiera asegurarse de que, en todos los servidores, determinados servicios se ejecutan con determinadas cuentas. Puede usar el método **Change de** la clase de servicio [**\_ Win32**](win32-service.md) para configurar los servicios para que se ejecuten con una cuenta de usuario especificada. Al seleccionar una cuenta, tenga en cuenta lo siguiente:
 
@@ -604,7 +604,7 @@ Next
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
 | Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
-| Header<br/>                   | <dl> <dt>Mbnapi.h</dt> </dl>     |
+| Encabezado<br/>                   | <dl> <dt>Mbnapi.h</dt> </dl>     |
 | MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 

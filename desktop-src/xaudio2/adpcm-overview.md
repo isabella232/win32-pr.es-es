@@ -4,12 +4,12 @@ ms.assetid: ae8a0a3e-293c-8193-d252-046d79771cfb
 title: Información general de ADPCM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e1be1155d6d9f5a542b605c497ce28aa34191c0ac129582c18ec4a47b9f510f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7fb918a611cb0840b2f02dfb13b547b795fb3304
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118962724"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571956"
 ---
 # <a name="adpcm-overview"></a>Información general de ADPCM
 
@@ -17,7 +17,7 @@ Adaptive Differential Pulse Code Compression (ADPCM) es un formato de compresió
 
 La implementación de ADPCM para XAudio2 proporciona características adicionales para especificar el tamaño del bloque de ejemplo de compresión. ADPCM permite al diseñador de audio elegir una configuración que sea un riesgo adecuado entre el tamaño, la calidad y la resolución (para colocar puntos de bucle).
 
-XAudio2 usa una versión modificada del códec Microsoft ADPCM que admite el formato de datos extendido necesario para proporcionar tamaños de bloque de ejemplo personalizados. Por este motivo, los motores de audio que no admiten esta versión del códec ADPCM no pueden reproducir datos de audio XAudio2.
+XAudio2 usa una versión modificada del códec Microsoft ADPCM que admite el formato de datos extendido necesario para proporcionar tamaños de bloque de ejemplo personalizados. Por esta razón, los motores de audio que no admiten esta versión del códec ADPCM no pueden reproducir datos de audio XAudio2.
 
 > [!Note]  
 > Actualmente, la compresión ADPCM solo está disponible para Windows, incluido XNA Game Studio Express para Windows implementaciones.
@@ -65,7 +65,7 @@ Dado que ADPCM usa bloques de ejemplo alineados uno tras otro, una onda comprimi
 
 El valor del parámetro *SamplesPerBlock* afecta a la resolución con la que puede alinear los datos de onda y los puntos de bucle.
 
-Si intenta aplicar la compresión a una onda no alineada, recibirá un error o una advertencia en función de si la onda se usa en cualquier evento de reproducción en bucle. No se puede comprimir una ola usada en los eventos de reproducción en bucle. Quítelo de los eventos de reproducción en bucle y vuelva a aplicar la compresión.
+Si intenta aplicar la compresión a una onda no alineada, recibirá un error o una advertencia en función de si la onda se usa en cualquier evento de reproducción en bucle. No se puede comprimir una onda usada en ningún evento de reproducción en bucle. Quítelo de los eventos de reproducción en bucle y vuelva a aplicar la compresión.
 
 Si usa la onda exclusivamente en modo sin bucle, no se aplica la restricción de alineación de bloques de ejemplo.
 
@@ -80,7 +80,7 @@ Un archivo ADPCM es un archivo RIFF estándar con los siguientes tipos de fragme
 | RIFF          | Fragmento RIFF estándar que contiene un tipo de archivo con el valor WAVE en los primeros cuatro bytes de su sección de datos y los otros fragmentos del archivo en el resto de su sección de datos.                                                                                                                                                                                                                                                                 |
 | Fmt           | Contiene el encabezado de formato para el archivo ADPCM. Los datos de este fragmento corresponden a una **estructura ADPCMWAVEFORMAT.**                                                                                                                                                                                                                                                                                                                             |
 | datos          | Contiene los datos de audio de ADPCM codificados. Cuando se usa ADPCM en XAudio2, es necesario leer el contenido del fragmento de datos en un búfer y pasarlo a una voz de origen como miembro **pAudioData** de una estructura [**\_ BUFFER de XAUDIO2.**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer) No es necesario intercambiar en bytes el contenido del fragmento de datos.                                                                                                                            |
-| smpl y wsmp | Tipos de fragmento opcionales que contienen la información de bucle para el archivo ADPCM. Cuando se usa ADPCM en XAudio2, los valores contenidos en los fragmentos smpl o wsmp se usan para rellenar los miembros **LoopBeginLoopLength** y **LoopCount** de la estructura BUFFER de [**XAUDIO2. \_**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer) En la Xbox 360, debe intercambiar en bytes los datos cargados desde un fragmento de smpl para tener en cuenta la diferencia de endianidad entre Windows y Xbox 360. |
+| smpl y wsmp | Tipos de fragmento opcionales que contienen la información de bucle para el archivo ADPCM. Cuando se usa ADPCM en XAudio2, los valores contenidos en los fragmentos smpl o wsmp se usan para rellenar los miembros **LoopBeginLoopLength** y **LoopCount** de la estructura BUFFER de [**XAUDIO2. \_**](/windows/desktop/api/xaudio2/ns-xaudio2-xaudio2_buffer) En el Xbox 360, debe intercambiar en bytes los datos cargados desde un fragmento de smpl para tener en cuenta la diferencia de endianness entre Windows y Xbox 360. |
 
 
 

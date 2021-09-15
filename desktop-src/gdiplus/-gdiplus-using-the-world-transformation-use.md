@@ -1,21 +1,21 @@
 ---
-description: La transformación del mundo es una propiedad de la clase Graphics.
+description: La transformación world es una propiedad de la clase Graphics.
 ms.assetid: 22f43b29-ea7b-4faf-9795-2242bf704ed3
 title: Utilizar la transformación de coordenadas universales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6288b5640e330a827e96b632541dac44e9463b87c566c16a94797810c4c92c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2138df1bbd2be6d3329695fc6898da49da93b3b4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118977245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474286"
 ---
 # <a name="using-the-world-transformation"></a>Utilizar la transformación de coordenadas universales
 
-La transformación del mundo es una propiedad de la [**clase Graphics.**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) Los números que especifican la transformación del mundo se almacenan en un [**objeto Matrix,**](/windows/desktop/api/gdiplusmatrix/nl-gdiplusmatrix-matrix) que representa una matriz de 3 ×3. Las **clases Matrix** y **Graphics** tienen varios métodos para establecer los números en la matriz de transformación del mundo. Los ejemplos de esta sección manipulan rectángulos porque los rectángulos son fáciles de dibujar y es fácil ver los efectos de las transformaciones en los rectángulos.
+La transformación world es una propiedad de la [**clase Graphics.**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) Los números que especifican la transformación del mundo se almacenan en un [**objeto Matrix,**](/windows/desktop/api/gdiplusmatrix/nl-gdiplusmatrix-matrix) que representa una matriz de 3 ×3. Las **clases Matrix** y Graphics **tienen** varios métodos para establecer los números en la matriz de transformación del mundo. Los ejemplos de esta sección manipulan rectángulos porque los rectángulos son fáciles de dibujar y es fácil ver los efectos de las transformaciones en los rectángulos.
 
-Comenzamos creando un rectángulo de 50 por 50 y ubicándose en el origen (0, 0). El origen está en la esquina superior izquierda del área de cliente.
+Para empezar, se crea un rectángulo de 50 por 50 y se busca en el origen (0, 0). El origen está en la esquina superior izquierda del área de cliente.
 
 
 ```

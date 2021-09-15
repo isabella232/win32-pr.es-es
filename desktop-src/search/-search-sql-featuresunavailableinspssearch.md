@@ -4,16 +4,16 @@ ms.assetid: e81c436e-3a33-4b00-9860-9a54bc0eebbf
 title: SQL Características no disponibles en Microsoft Windows Search
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66adb175aa7fae799e0ad9b69916415f12c94ee984d276b5a2238ebb19ec2f06
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 20cf0e082a10a7775ca2d880be6153b7d99b6bc7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119716125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572545"
 ---
 # <a name="sql-features-unavailable-in-microsoft-windows-search"></a>SQL Características no disponibles en Microsoft Windows Search
 
-El lenguaje de consulta de Microsoft Windows Search se basa en Lenguaje de consulta estructurado (SQL); sin embargo, no busca en una base de datos relacional con índices o tablas definidos por el usuario. Por este problema, no se aplican muchas SQL y características de sintaxis estándar. A continuación se muestra una lista de las características SQL más importantes que no se admiten en Windows Search.
+El lenguaje de consulta de Microsoft Windows Search se basa en Lenguaje de consulta estructurado (SQL); sin embargo, no busca en una base de datos relacional con índices o tablas definidos por el usuario. Por este problema, no se SQL las instrucciones estándar y las características de sintaxis. A continuación se muestra una lista de las características de SQL más importantes que no se admiten en Windows Search.
 
 
 -   Instrucciones BATCH
@@ -41,7 +41,7 @@ El lenguaje de consulta de Microsoft Windows Search se basa en Lenguaje de consu
 -   Palabra clave UNKNOWN
 -   Instrucción UPDATE
 
-Windows La búsqueda no admite el diccionario de sinónimos ni las palabras ruido.
+Windows La búsqueda no admite el diccionario de sinónimos ni las palabras ruidosas.
 
  
 

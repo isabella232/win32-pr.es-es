@@ -4,12 +4,12 @@ ms.assetid: 951b300f-03de-4a3d-9356-e3a7b5b17fdb
 title: Recuperar los eventos admitidos por un dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4e0e24b5a4424d03c916ca73fd0192f9b6de0a80b6a2e2e67a129deb832f7bd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5a542a34d0938c7e2ff86118818714f18b1224f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119263125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571169"
 ---
 # <a name="retrieving-the-events-supported-by-a-device"></a>Recuperar los eventos admitidos por un dispositivo
 

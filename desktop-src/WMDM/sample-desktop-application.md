@@ -12,16 +12,16 @@ keywords:
 - ejemplos, aplicaciones de escritorio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a14e8037ccf963f26637711cd6d0e77ea7d2b4ff3cede72fcbded6600226d36c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f4008a25ca4448d4d4be7c9f667c5a9e4f08023
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118584256"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474577"
 ---
 # <a name="sample-desktop-application"></a>Aplicación de escritorio de ejemplo
 
-La Windows media Administrador de dispositivos se incluye con una aplicación de escritorio de ejemplo denominada wmdmapp. Esta aplicación tiene una interfaz gráfica de usuario que permite examinar los dispositivos conectados, crear listas de reproducción en el dispositivo y arrastrar archivos multimedia al dispositivo.
+La Windows media Administrador de dispositivos incluye una aplicación de escritorio de ejemplo denominada wmdmapp. Esta aplicación tiene una interfaz gráfica de usuario que permite examinar los dispositivos conectados, crear listas de reproducción en el dispositivo y arrastrar archivos multimedia al dispositivo.
 
 Esta aplicación de ejemplo consta de dos partes:
 
@@ -30,7 +30,7 @@ Esta aplicación de ejemplo consta de dos partes:
 
 Para compilar la aplicación de ejemplo, puede usar Visual Studio. En la sección siguiente se describe cómo se hace esto:
 
--   [Compilar la aplicación de ejemplo mediante Visual Studio](compiling-the-sample-application-using-visual-studio.md)
+-   [Compilación de la aplicación de ejemplo mediante Visual Studio](compiling-the-sample-application-using-visual-studio.md)
 
 Después de compilar el proyecto, registre el proghelp.dll archivo. Para registrar este archivo DLL, abra un símbolo del sistema y vaya al directorio que contiene este archivo DLL y escriba `regsvr32 proghelp.dll` .
 

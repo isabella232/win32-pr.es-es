@@ -4,12 +4,12 @@ ms.assetid: 0686ba54-4782-42a4-8fdb-2325fc8d8bc2
 title: Establecer propiedades para varios objetos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14517e26843265d8273785657e98b691c155821c10f57b92d53e374c20d34ede
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e951662d9920cb22db0a417f1af94f3eb7eb4d7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117842687"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572041"
 ---
 # <a name="setting-properties-for-multiple-objects"></a>Establecer propiedades para varios objetos
 
@@ -20,7 +20,7 @@ Algunos controladores de dispositivos admiten la configuración de propiedades p
 | Interfaz                                                                                      | Descripción                                                  |
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
 | [**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)                             | Proporciona acceso a los métodos específicos del contenido.             |
-| [**IPortableDeviceProperties (Interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties)                       | Proporciona acceso a los métodos específicos de la propiedad.            |
+| [**IPortableDeviceProperties (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties)                       | Proporciona acceso a los métodos específicos de la propiedad.            |
 | [**IPortableDevicePropertiesBulk (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicepropertiesbulk)               | Admite la operación de escritura masiva.                           |
 | [**IPortableDevicePropVariantCollection (Interfaz)**](iportabledevicepropvariantcollection.md) | Se usa para almacenar los identificadores de objeto para la operación masiva. |
 | [**IPortableDeviceValuesCollection (Interfaz)**](iportabledevicevaluescollection.md)           | Se usa para identificar las propiedades que se escribirán.               |
@@ -31,7 +31,7 @@ Algunos controladores de dispositivos admiten la configuración de propiedades p
 
 La `WriteContentPropertiesBulk` función del módulo ContentProperties.cpp de la aplicación de ejemplo muestra una operación de escritura masiva.
 
-La primera tarea que se realiza en este ejemplo es determinar si el controlador determinado admite o no operaciones masivas. Esto se logra llamando a QueryInterface en un objeto **IPortableDeviceProperties** y comprobando la existencia de **IPortableDevicePropertiesBulk.**
+La primera tarea que se realiza en este ejemplo es determinar si el controlador determinado admite o no operaciones masivas. Esto se logra llamando a QueryInterface en un **objeto IPortableDeviceProperties** y comprobando la existencia de **IPortableDevicePropertiesBulk.**
 
 
 ```C++
@@ -136,7 +136,7 @@ if (SUCCEEDED(hr))
 
 
 
-La siguiente función a la que llama la aplicación de ejemplo es `CreateIPortableDevicePropVariantCollectionWithAllObjectIDs` la función auxiliar. Esta función enumera de forma recursiva todos los objetos de un dispositivo determinado y devuelve una interfaz [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) que contiene un identificador para cada objeto que encontró. Esta función se define en el módulo ContentEnumeration.cpp.
+La siguiente función a la que llama la aplicación de ejemplo es la `CreateIPortableDevicePropVariantCollectionWithAllObjectIDs` función auxiliar. Esta función enumera de forma recursiva todos los objetos de un dispositivo determinado y devuelve una interfaz [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) que contiene un identificador para cada objeto que encontró. Esta función se define en el módulo ContentEnumeration.cpp.
 
 
 ```C++
@@ -157,7 +157,7 @@ El **objeto IPortableDevicePropVariantCollection** contiene una colección de va
 
 Los identificadores de objeto y sus respectivas propiedades de nombre se almacenan en un [**objeto IPortableDeviceValuesCollection.**](iportabledevicevalues.md) Las propiedades de nombre se organizan para que al primer objeto se le asigne una propiedad name de "NewName0", al segundo objeto se le asigna una propiedad name de "NewName1", y así sucesivamente.
 
-El siguiente extracto del ejemplo muestra cómo se inicializó el objeto **IPortableDeviceValuesCollection** con identificadores de objeto y cadenas de nombre nuevas.
+El siguiente extracto del ejemplo muestra cómo se inicializó el objeto **IPortableDeviceValuesCollection** con identificadores de objeto y nuevas cadenas de nombre.
 
 
 ```C++
@@ -250,7 +250,7 @@ if (SUCCEEDED(hr))
 
 Una vez que el ejemplo crea **el objeto IPortableDeviceValuesCollection** que contiene el identificador de objeto y los pares de nombre, puede comenzar la operación asincrónica.
 
-La operación de escritura asincrónica comienza cuando el ejemplo llama al [**método IPortableDevicePropertiesBulk::QueueSetValuesByObjectList.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicepropertiesbulk-queuesetvaluesbyobjectlist) Este método notifica al controlador que una operación masiva está a punto de comenzar. Después de esto, el ejemplo llama al [**método IPortableDeviceBulk::Start**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicepropertiesbulk-start) para empezar a escribir realmente los nuevos valores de nombre.
+La operación de escritura asincrónica comienza cuando el ejemplo llama al método [**IPortableDevicePropertiesBulk::QueueSetValuesByObjectList.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicepropertiesbulk-queuesetvaluesbyobjectlist) Este método notifica al controlador que una operación masiva está a punto de comenzar. Después de esto, el ejemplo llama al [**método IPortableDeviceBulk::Start**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicepropertiesbulk-start) para empezar a escribir realmente los nuevos valores de nombre.
 
 
 ```C++
@@ -315,13 +315,13 @@ Tenga en cuenta que el ejemplo espera un período de tiempo infinitamente largo 
 
 <dl> <dt>
 
-[**IPortableDevice (Interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
+[**IPortableDevice (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
 </dt> <dt>
 
 [**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)
 </dt> <dt>
 
-[**IPortableDeviceProperties (Interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties)
+[**IPortableDeviceProperties (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties)
 </dt> <dt>
 
 [**IPortableDevicePropertiesBulk (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicepropertiesbulk)

@@ -4,18 +4,18 @@ ms.assetid: 885a522d-e1bf-43fb-a996-97e725b6cf0c
 title: Directiva de metadatos de fotos System.GPS.DestLongitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 917c65dbd580b00cf25603e04050386383967e3a70c1896405346652667ef5f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72e0a4f56e49dfbb3397b96cf7fae35a6065b7aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119087846"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572268"
 ---
 # <a name="systemgpsdestlongitude-photo-metadata-policy"></a>Directiva de metadatos de fotos System.GPS.DestLongitude
 
 Directiva de metadatos de fotos para [la propiedad System.GPS.DestLongitude.](../properties/props-system-gps-destlongitude.md)
 
-### <a name="pkey"></a>Pkey
+### <a name="pkey"></a>PKEY
 
 PKEY \_ GPS \_ DestLongitude
 
@@ -121,7 +121,7 @@ Este valor se genera a partir de System.GPS.DestLongitudeNumerator y System.GPS.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ## <a name="related-topics"></a>Temas relacionados
 

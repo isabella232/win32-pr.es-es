@@ -1,19 +1,19 @@
 ---
-description: Enviado por una transformación de Media Foundation (MFT) asincrónica en respuesta a un mensaje de MARCADOR DE COMANDOS DE MENSAJES \_ de MFT. \_ \_
+description: Enviado por una transformación Media Foundation (MFT) asincrónica en respuesta a un mensaje DE MARCADOR DE COMANDO DE MENSAJE \_ de MFT. \_ \_
 ms.assetid: d0c0d62d-9133-4d4b-8606-c2ae1d4c9f0a
 title: Evento METransformMarker (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7029119b30314e56531c0afb29accadb67e1efb343a906c2558af2157c0b1f82
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ab79c47e2ddb26f2366aff075548f7905807df1e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119827045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474244"
 ---
 # <a name="metransformmarker-event"></a>Evento METransformMarker
 
-Enviado por una transformación de Media Foundation asincrónica (MFT) en respuesta a un **mensaje MFT \_ MESSAGE COMMAND \_ \_ MARKER.**
+Enviado por una transformación de Media Foundation (MFT) asincrónica en respuesta a un **mensaje DE MARCADOR DE COMANDO DE MENSAJE \_ \_ \_ de MFT.**
 
 ## <a name="event-values"></a>Valores de evento
 
@@ -39,7 +39,7 @@ Para este evento, se definen los atributos siguientes.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las MTA asincrónicas envían este evento [**a través de la interfaz DESEDMEDIAEventGenerator.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) Las MTA sincrónicas nunca envían este evento.
 
@@ -55,7 +55,7 @@ Cuando MFT termina de procesar todos los datos de entrada disponibles en el mome
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                  |
-| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 

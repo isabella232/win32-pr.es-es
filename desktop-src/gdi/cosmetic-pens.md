@@ -4,12 +4,12 @@ ms.assetid: d4386681-3523-4872-b048-2a5cfbf7d039
 title: Lápices lápices
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae65f875ce5873b5f53cba19b5440751b8ac7683df99765ea7e8e6eec813ef73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fbb312ed0b3825397ff79ebc32d363956ad04519
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119966075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474340"
 ---
 # <a name="cosmetic-pens"></a>Lápices lápices
 

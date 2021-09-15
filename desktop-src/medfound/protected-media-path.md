@@ -4,18 +4,18 @@ ms.assetid: e88806ae-0041-4b4a-a8df-69718a651e82
 title: Ruta de acceso multimedia protegida
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52ebb2b22e6ad887134f91e93b43a698afdef0ebc36e1521d70e5e17fefedd8f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7304edadf1623d41bc2f1f5c6b2b4cda2dd5f598
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119035036"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474036"
 ---
 # <a name="protected-media-path"></a>Ruta de acceso multimedia protegida
 
 En este tema se tratan tres temas interrelacionados: entorno protegido, puerta de enlace de interoperabilidad de medios y revocación y renovación.
 
--   Un entorno protegido (PE) es un conjunto de tecnologías que permite que el contenido protegido fluya desde y Windows Vista de forma protegida. Todos los componentes dentro de un entorno protegido son de confianza y el proceso está protegido contra la manipulación.
+-   Un entorno protegido (PE) es un conjunto de tecnologías que permite que el contenido protegido fluya desde y a través de Windows Vista de forma protegida. Todos los componentes dentro de un entorno protegido son de confianza y el proceso está protegido contra la manipulación.
 -   La ruta de acceso multimedia protegida (PMP) es un archivo ejecutable que se ejecuta en un entorno protegido.
 -   Si un componente de confianza del PE se ve comprometido, después del debido proceso se revocará. Sin embargo, Microsoft proporciona un mecanismo de renovación para instalar una versión de confianza más reciente del componente cuando esté disponible.
 
@@ -75,7 +75,7 @@ El origen de medios se puede crear dentro del proceso de aplicación, como se mu
 
 Todos los demás componentes de canalización, como descodificadores y receptores multimedia, se crean en el proceso protegido. Si estos objetos exponen interfaces personalizadas para aplicaciones, deben proporcionar un proxy/código auxiliar DCOM para serializar la interfaz.
 
-Para aplicar la directiva en el contenido protegido a medida que fluye a través de la canalización, el PMP usa tres tipos de componentes: entidades de confianza de entrada (ITA), entidades de confianza de salida (ATA) y objetos de directiva. Estos componentes funcionan conjuntamente para conceder o restringir los derechos de uso del contenido y para especificar las protecciones de vínculo que se deben emplear al reproducir contenido, como La aplicación digital de ancho de banda alto Content Protection (HDCP).
+Para aplicar la directiva en el contenido protegido a medida que fluye a través de la canalización, el PMP usa tres tipos de componentes: entidades de confianza de entrada (ITA), entidades de confianza de salida (ATA) y objetos de directiva. Estos componentes funcionan conjuntamente para conceder o restringir los derechos de uso del contenido y para especificar las protecciones de vínculo que se deben emplear al reproducir contenido, como la protección digital de ancho de banda alto Content Protection (HDCP).
 
 ### <a name="input-trust-authorities"></a>Entidades de confianza de entrada
 
@@ -118,12 +118,12 @@ La manera más fácil de comprender el proceso es recorrer un ejemplo simplifica
 Cuando un usuario inicia una aplicación de reproductor y abre un archivo ASF que tiene una secuencia de audio protegida y una secuencia de vídeo protegida, se deben realizar los pasos siguientes:
 
 1.  La aplicación crea el origen de medios de ASF y la sesión de ruta de acceso multimedia protegida (PMP). Media Foundation crea un proceso PMP.
-2.  La aplicación crea una topología parcial que contiene un nodo de origen de audio conectado al representador de audio y un nodo de origen de vídeo conectado al representador de vídeo mejorado (EVR). Para los representadores, la aplicación no crea directamente el representador. En su lugar, la aplicación crea en el proceso desprotegido un objeto conocido como objeto *de activación*. El PMP usa el objeto de activación para crear los representadores en el proceso protegido. (Para obtener más información sobre los objetos de activación, vea [Objetos de activación).](activation-objects.md)
-3.  La aplicación establece la topología parcial en la sesión de PMP.
-4.  La sesión de PMP serializa la topología y la pasa al host PMP en el proceso protegido. El host PMP envía la topología al motor de directivas.
-5.  El cargador de topologías llama [**a CRYPTOInputTrustAuthority::GetDecrypter**](/windows/desktop/api/mfidl/nf-mfidl-imfinputtrustauthority-getdecrypter) en los ITA e inserta los descifradores en la topología inmediatamente inferior de los nodos de origen correspondientes.
-6.  El cargador de topologías inserta los descodificadores de audio y vídeo en la bajada de los nodos descifradores.
-7.  El motor de directivas examina los nodos insertados para determinar si algún implemente la interfaz [**IMFTrustedOutput.**](/windows/desktop/api/mfidl/nn-mfidl-imftrustedoutput) El EVR y el representador de audio implementan **LAPPtrustedOutput**, ya que envían datos fuera del PMP.
+2.  La aplicación crea una topología parcial que contiene un nodo de origen de audio conectado al representador de audio y un nodo de origen de vídeo conectado al representador de vídeo mejorado (EVR). Para los representadores, la aplicación no crea directamente el representador. En su lugar, la aplicación crea en el proceso no protegido un objeto conocido como objeto *de activación*. El PMP usa el objeto de activación para crear los representadores en el proceso protegido. (Para obtener más información sobre los objetos de activación, vea [Objetos de activación).](activation-objects.md)
+3.  La aplicación establece la topología parcial en la sesión PMP.
+4.  La sesión PMP serializa la topología y la pasa al host PMP en el proceso protegido. El host PMP envía la topología al motor de directivas.
+5.  El cargador de topologías llama [**a IMFInputTrustAuthority::GetDecrypter**](/windows/desktop/api/mfidl/nf-mfidl-imfinputtrustauthority-getdecrypter) en las ITA e inserta los descifradores en la topología inmediatamente inferior de los nodos de origen correspondientes.
+6.  El cargador de topologías inserta los descodificadores de audio y vídeo de bajada de los nodos descifradores.
+7.  El motor de directivas examina los nodos insertados para determinar si alguno implementa la [**interfaz IMFTrustedOutput.**](/windows/desktop/api/mfidl/nn-mfidl-imftrustedoutput) Tanto el EVR como el representador de audio implementan **IMFTrustedOutput**, ya que envían datos fuera del PMP.
 8.  Cada ITA confirma que se ejecuta dentro de un proceso protegido mediante la realización de un protocolo de enlace criptográfico con un módulo de kernel de entorno protegido.
 9.  Para cada secuencia, el motor de directivas negocia la directiva al obtener un objeto de directiva del ITA y pasarlo al OTA. El OTA proporciona una lista de los sistemas de protección que admite, y el objeto de directiva indica qué sistemas de protección se deben aplicar, junto con la configuración correcta. A continuación, el OTA aplica esta configuración. Si no puede hacerlo, el contenido se bloquea.
 
@@ -135,7 +135,7 @@ Los componentes de confianza se firman mediante un certificado criptográfico. M
 
 ## <a name="output-link-protection"></a>Protección de vínculos de salida
 
-Cuando se ve el contenido de vídeo premium, los fotogramas descifrados y sin comprimir viajan a través de un conector físico al dispositivo de visualización. Los proveedores de contenido pueden requerir que los fotogramas de vídeo estén protegidos en este momento, ya que viajan a través del conector físico. Existen varios mecanismos de protección para este propósito, incluidos High-Bandwidth Digital Content Protection (HDCP) y DisplayPort Content Protection (DPCP). El vídeo OTA aplica estas protecciones mediante el Administrador [de protección de salida](output-protection-manager.md) (OPM). El Administrador de protección de salida envía comandos al controlador de gráficos y el controlador de gráficos aplica los mecanismos de protección de vínculos que requiere la directiva.
+Cuando se ve el contenido de vídeo premium, los fotogramas descifrados y sin comprimir se desplazan a través de un conector físico al dispositivo de visualización. Los proveedores de contenido pueden requerir que los fotogramas de vídeo estén protegidos en este momento, ya que viajan a través del conector físico. Existen varios mecanismos de protección para este propósito, incluidos High-Bandwidth Digital Content Protection (HDCP) y DisplayPort Content Protection (DPCP). El vídeo OTA aplica estas protecciones mediante el Administrador [de protección de salida](output-protection-manager.md) (OPM). El Administrador de protección de salida envía comandos al controlador de gráficos y el controlador de gráficos aplica los mecanismos de protección de vínculos que requiere la directiva.
 
 ![diagrama que muestra la relación entre el vídeo ota y opm.](images/pmp05.png)
 

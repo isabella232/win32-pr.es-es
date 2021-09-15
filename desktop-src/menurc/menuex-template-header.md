@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 31e52661e04a036cf7a49791be96af002b801af0e0ed1c4b6ad3ddebf971c2c4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: caa255ccdbe76c3959d9c730bcaa52ec07428742
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119226125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571620"
 ---
-# <a name="menuex_template_header-structure"></a>ESTRUCTURA DE ENCABEZADO \_ DE \_ PLANTILLA MENUEX
+# <a name="menuex_template_header-structure"></a>ESTRUCTURA DE ENCABEZADO \_ DE PLANTILLA \_ MENUEX
 
 Define el encabezado de una plantilla de menú extendida. Esta definición de estructura es solo para explicación; no está presente en ningún archivo de encabezado estándar.
 
@@ -37,7 +37,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -76,7 +76,7 @@ Identificador de ayuda de la barra de menús.
 
 ## <a name="remarks"></a>Observaciones
 
-Una plantilla de menú extendida consta de una estructura **MENUEX \_ TEMPLATE \_ HEADER** seguida de una o varias estructuras [**MENUEX \_ TEMPLATE ITEM contiguas. \_**](menuex-template-item.md) Las **estructuras MENUEX \_ TEMPLATE \_ ITEM,** que tienen una longitud variable, se alinean en **los límites DWORD.** Para crear un menú a partir de una plantilla de menú extendida en memoria, use la [**función LoadMenuIndirect.**](/windows/desktop/api/Winuser/nf-winuser-loadmenuindirecta)
+Una plantilla de menú extendida consta de una estructura **MENUEX \_ TEMPLATE \_ HEADER** seguida de una o varias estructuras [**MENUEX \_ TEMPLATE ITEM contiguas. \_**](menuex-template-item.md) Las **estructuras MENUEX \_ TEMPLATE \_ ITEM,** que tienen una longitud variable, se alinean en los **límites DWORD.** Para crear un menú a partir de una plantilla de menú extendida en memoria, use la [**función LoadMenuIndirect.**](/windows/desktop/api/Winuser/nf-winuser-loadmenuindirecta)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,7 +89,7 @@ Una plantilla de menú extendida consta de una estructura **MENUEX \_ TEMPLATE \
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

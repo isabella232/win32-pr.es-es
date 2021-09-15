@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 956cd349089afb00a1350bf32e8f06acd5747599f6d5a731e4bf5d8dd1c96295
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64f4f394fcd91d50f323a8e46a9556daa6a8dbff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119928075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572085"
 ---
-# <a name="resource-attribute-properties"></a>Propiedades de atributo de recurso
+# <a name="resource-attribute-properties"></a>Propiedades del atributo de recurso
 
 Windows Dispositivos portátiles admite las siguientes propiedades de atributo de recurso.
 
@@ -28,15 +28,15 @@ Windows Dispositivos portátiles admite las siguientes propiedades de atributo d
 
 | Propiedad                                    | VarType         | Descripción                                                                                                                                                               |
 |---------------------------------------------|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CLAVE DE RECURSO \_ DEL ATRIBUTO DE RECURSO \_ \_ \_ WPD** | **VT \_ UNKNOWN** | Se trata de [**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) que contiene un valor único, que es la clave que identifica el recurso.                     |
-| **FORMATO DE ATRIBUTO \_ DE \_ RECURSO \_ WPD**        | **VT \_ CLSID**   | Valor GUID que especifica el formato del recurso. Vea [Formatos de](object-format-guids.md) objeto para obtener una lista de formatos definidos por Windows portables. |
-| **TAMAÑO TOTAL DEL \_ ATRIBUTO \_ DE RECURSO \_ \_ WPD**   | **VT \_ UI8**     | Tamaño total de los datos del recurso, en bytes.                                                                                                                            |
+| **CLAVE DE RECURSO \_ DEL ATRIBUTO DE RECURSO \_ \_ \_ WPD** | **VT \_ UNKNOWN** | Se trata de [**un objeto IPortableDeviceKeyCollection**](iportabledevicekeycollection.md) que contiene un único valor, que es la clave que identifica el recurso.                     |
+| **FORMATO DE ATRIBUTO \_ DE \_ RECURSO \_ WPD**        | **VT \_ CLSID**   | Valor GUID que especifica el formato del recurso. Vea [Formatos de](object-format-guids.md) objeto para obtener una lista de los formatos definidos por Windows portables. |
+| **TAMAÑO TOTAL DEL \_ ATRIBUTO \_ DE RECURSO \_ WPD \_**   | **VT \_ UI8**     | Tamaño total de los datos del recurso, en bytes.                                                                                                                            |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El método [**IPortableDeviceResources::GetResourceAttributes**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceresources-getresourceattributes) devuelve estos atributos.
 
@@ -50,7 +50,7 @@ El método [**IPortableDeviceResources::GetResourceAttributes**](/windows/deskto
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

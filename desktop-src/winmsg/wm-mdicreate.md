@@ -4,12 +4,12 @@ ms.assetid: f2313ffd-867f-4870-a667-3e5f5402776f
 title: WM_MDICREATE mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c69a894ebd2e55bb74486e26cd118366b1e533a490cc50feb5f77aad64c6be3f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1fc11e9dfc561b138a95b711d68ecd831a43d2ec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120056015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571301"
 ---
 # <a name="wm_mdicreate-message"></a>Mensaje \_ MDICREATE de WM
 
@@ -48,7 +48,7 @@ Si el mensaje se realiza correctamente, el valor devuelto es el identificador de
 
 Si se produce un error en el mensaje, el valor devuelto es **NULL.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La ventana secundaria MDI se crea con los [**bits**](window-styles.md) de estilo de ventana **WS \_ CHILD**, **WS \_ CLIPSIBLINGS**, **WS \_ CLIPCHILDREN**, **WS \_ SYSMENU**, **WS \_ CAPTION**, **WS \_ THICKFRAME,** **WS \_ MINIMIZEBOX** y **WS \_ MAXIMIZEBOX,** además de bits de estilo adicionales especificados en la [**estructura MDICREATESTRUCT.**](/windows/win32/api/winuser/ns-winuser-mdicreatestructa) El sistema agrega el título de la nueva ventana secundaria al menú de ventana de la ventana de marco. Una aplicación debe usar este mensaje para crear todas las ventanas secundarias de la ventana de cliente.
 

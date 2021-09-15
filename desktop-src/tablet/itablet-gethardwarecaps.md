@@ -14,12 +14,12 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 6faa286a95c27556427ed62dfebd6b16496b22b2e55263661f529709d546656b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5ada3ad58699952bac5458ddd079abaf84f63bf2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119031913"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572325"
 ---
 # <a name="itabletgethardwarecaps-method"></a>ITablet::GetHardwareCaps (método)
 
@@ -62,13 +62,13 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El *parámetro pdwCaps* es un conjunto de marcas de bits que describen las funcionalidades de hardware de tableta. En la tabla siguiente se describen estas marcas.
 
 
 
-| Nombre de marca                         | Valor                 | Descripción                                                                                                                    |
+| Nombre de marca                         | Value                 | Descripción                                                                                                                    |
 |-----------------------------------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | THWC \_ INTEGRATED<br/>       | 0x00000001<br/> | Indica que la pantalla y el digitalizador comparten la misma superficie.<br/>                                                    |
 | THWC \_ CSR \_ DEBE \_ TOCAR<br/> | 0x00000002<br/> | Indica que el cursor debe estar en contacto físico con el dispositivo para notificar la posición.<br/>                           |
@@ -91,7 +91,7 @@ El *parámetro pdwCaps* es un conjunto de marcas de bits que describen las funci
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

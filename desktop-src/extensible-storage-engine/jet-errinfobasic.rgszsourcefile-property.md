@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: propiedad JET_ERRINFOBASIC. rgszSourceFile'
-title: Propiedad JET_ERRINFOBASIC. rgszSourceFile (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: JET_ERRINFOBASIC.rgszSourceFile'
+title: JET_ERRINFOBASIC.rgszSourceFile (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'rgszSourceFile property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Windows8.JET_ERRINFOBASIC.rgszSourceFile
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_errinfobasic.rgszsourcefile(v=EXCHG.10)
@@ -27,18 +27,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: e3504112ed6c3d4de360e7da027e700237e5dbcd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716176"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571768"
 ---
-# <a name="jet_errinfobasicrgszsourcefile-property"></a>Propiedad JET_ERRINFOBASIC. rgszSourceFile
+# <a name="jet_errinfobasicrgszsourcefile-property"></a>JET_ERRINFOBASIC.rgszSourceFile, propiedad
 
-Obtiene o establece el nombre del archivo de código fuente para el nivel de información solicitado.
+Obtiene o establece el nombre del archivo de origen para el nivel de información solicitado.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,14 +62,14 @@ public string rgszSourceFile { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[JET_ERRINFOBASIC (clase)](./jet-errinfobasic-class.md)
+[JET_ERRINFOBASIC clase](./jet-errinfobasic-class.md)
 
-[Miembros de JET_ERRINFOBASIC](./jet-errinfobasic-members.md)
+[JET_ERRINFOBASIC miembros](./jet-errinfobasic-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

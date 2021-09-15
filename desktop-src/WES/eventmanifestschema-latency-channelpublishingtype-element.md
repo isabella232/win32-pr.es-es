@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8dcb2e7469f9a6b2171a4427128640bb3c3681421d946757fb52442b45363616
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0d48a98f2f319ec08d2fc1325728f798c5ec96e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119136408"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474582"
 ---
 # <a name="latency-channelpublishingtype-element"></a>elemento latency (ChannelPublishingType)
 
@@ -30,7 +30,7 @@ Tiempo de espera antes de vaciar los búferes, en milisegundos.
  />
 ```
 
-El tipo complejo [**ChannelPublishingType**](eventmanifestschema-channelpublishingtype-complextype.md) define el elemento **latency.**
+El **tipo complejo** [**ChannelPublishingType**](eventmanifestschema-channelpublishingtype-complextype.md) define el elemento de latencia.
 
 ## <a name="requirements"></a>Requisitos
 

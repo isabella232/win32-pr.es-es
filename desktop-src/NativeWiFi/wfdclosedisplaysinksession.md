@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - wifidisplay.dll
-ms.openlocfilehash: 7e8169c541535eb2c5adfd0959da47cee4951750687f7d926798534ddc7cbf88
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7697bc7ff1aa42569cf954b3f0b037f66ec67ded
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119064905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473742"
 ---
 # <a name="wfddisplaysinkclosesession-function"></a>Función WFDDisplaySinkCloseSession
 
@@ -50,7 +50,7 @@ Identificador recibido a través de la invocación de devolución de llamada de 
 
 Si la función se realiza correctamente, el valor devuelto es ERROR \_ SUCCESS.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La aplicación puede llamar a esta función para finalizar la Miracast sesión por cualquier motivo. No es necesario que la aplicación la llame cuando recibe el tipo **DisconnectedNotification** en su devolución de llamada.
 
@@ -58,19 +58,19 @@ La aplicación puede llamar a esta función para finalizar la Miracast sesión p
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows 10<br/>                                                                      |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2016<br/>                                                             |
-| Header<br/>                   | <dl> <dt>Wfdsink.h</dt> </dl>       |
+| Encabezado<br/>                   | <dl> <dt>Wfdsink.h</dt> </dl>       |
 | Biblioteca<br/>                  | <dl> <dt>Wifidisplay.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wifidisplay.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

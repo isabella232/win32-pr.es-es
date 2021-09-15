@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0ef00b95d978277790958c5d1945b810ae366f1dc4bd6e408accc3151d69f040
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5ee6865703603305f057eef8cc477c7ddb7d38ff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119561855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571877"
 ---
 # <a name="eapcommon-schema"></a>Esquema eapcommon
 

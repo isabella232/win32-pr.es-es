@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: b3cecaa43c6bc42526a34ed4859c8365fbd0f1d10f90970a1b6940019da249f5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2652168fa2846995aeb17ec23c194f908f22e5d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119773815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572424"
 ---
 # <a name="icontextnodegetstrokecount-method"></a>IContextNode::GetStrokeCount (método)
 
@@ -50,7 +50,7 @@ Número de trazos asociados al [**objeto IContextNode.**](icontextnode.md)
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Solo los nodos de contexto de hoja de lápiz tienen datos de trazo asociados (vea [**IContextNode::GetType).**](icontextnode-gettype.md)
 
@@ -59,7 +59,7 @@ Solo los nodos de contexto de hoja de lápiz tienen datos de trazo asociados (ve
 En este ejemplo se muestra un método, `ExploreContextNode` , que examina un [**IContextNode**](icontextnode.md). El método hace lo siguiente:
 
 -   Obtiene el tipo del nodo de contexto.
--   Examina propiedades específicas del tipo de nodo mediante una llamada a un método auxiliar, si el nodo de contexto es un nodo de lápiz, sugerencia de análisis o reconocedor personalizado sin clasificar.
+-   Examina propiedades específicas del tipo de nodo llamando a un método auxiliar, si el nodo de contexto es un nodo de lápiz, sugerencia de análisis o reconocedor personalizado sin clasificar.
 -   Examina cada subnodo mediante una llamada a sí mismo, si el nodo tiene subnodos.
 -   Examina los datos de trazo del nodo llamando a un método auxiliar, si el nodo es un nodo hoja de entrada de lápiz.
 
@@ -169,16 +169,16 @@ HRESULT CMyClass::ExploreContextNode(
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

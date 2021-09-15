@@ -4,12 +4,12 @@ description: Describe cómo un proveedor ProjFS participa en la enumeración de 
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 09/25/2018
 ms.topic: article
-ms.openlocfilehash: 606b379e206cdbc64726e0ea97aed34e00f5253ecbffb7f8b7d42469b0cbb5fa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e0712ceb927388b090a84a89f80f0e2d3a1befbb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117792818"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473645"
 ---
 # <a name="enumerating-files-and-directories"></a>Enumeración de archivos y directorios
 
@@ -21,11 +21,11 @@ Puesto que los elementos sin abrir no tienen presencia local, la enumeración de
 
 Para participar en la enumeración de directorios, el proveedor debe implementar PRJ_START_DIRECTORY_ENUMERATION_CB **[,](/windows/win32/api/projectedfslib/nc-projectedfslib-prj_start_directory_enumeration_cb)** **[PRJ_GET_DIRECTORY_ENUMERATION_CB](/windows/win32/api/projectedfslib/nc-projectedfslib-prj_get_directory_enumeration_cb)** y **[PRJ_END_DIRECTORY_ENUMERATION_CB](/windows/win32/api/projectedfslib/nc-projectedfslib-prj_end_directory_enumeration_cb)** devoluciones de llamada.  Cuando se enumera un directorio bajo la raíz de virtualización del proveedor, ProjFS realiza las siguientes acciones:
 
-1. ProjFS llama a la devolución de llamada **PRJ_START_DIRECTORY_ENUMERATION_CB** del proveedor para iniciar una sesión de enumeración.
+1. ProjFS llama a la devolución de **llamada** PRJ_START_DIRECTORY_ENUMERATION_CB del proveedor para iniciar una sesión de enumeración.
 
     Como parte del procesamiento de esta devolución de llamada, el proveedor debe prepararse para realizar la enumeración.  Por ejemplo, debe asignar cualquier memoria que necesite para realizar un seguimiento del progreso de la enumeración en su almacén de datos de respaldo.
 
-    ProjFS identifica el directorio que se enumera en el miembro **FilePathName** del parámetro _callbackData_ de la devolución de llamada.  Se especifica como una ruta de acceso relativa a la raíz de virtualización.  Por ejemplo, si la raíz de virtualización se encuentra en y el directorio que se `C:\virtRoot` enumera es , el miembro `C:\virtRoot\dir1\dir2` **FilePathName** contendrá `dir1\dir2` .  El proveedor se preparará para enumerar esa ruta de acceso en su almacén de datos de respaldo.  En función de las funcionalidades del almacén de respaldo de un proveedor, puede tener sentido realizar la enumeración de almacén de respaldo en la devolución PRJ_START_DIRECTORY_ENUMERATION_CB **de** llamada.
+    ProjFS identifica el directorio que se enumera en el miembro **FilePathName** del parámetro _callbackData_ de la devolución de llamada.  Se especifica como una ruta de acceso relativa a la raíz de virtualización.  Por ejemplo, si la raíz de virtualización se encuentra en y el directorio que se `C:\virtRoot` enumera es , el miembro `C:\virtRoot\dir1\dir2` **FilePathName** contendrá `dir1\dir2` .  El proveedor se preparará para enumerar esa ruta de acceso en su almacén de datos de respaldo.  En función de las funcionalidades del almacén de respaldo de un proveedor, puede tener sentido realizar la enumeración del almacén de respaldo en la devolución **PRJ_START_DIRECTORY_ENUMERATION_CB** de llamada.
 
     Dado que pueden producirse varias enumeraciones en paralelo en el mismo directorio, cada devolución de llamada de enumeración tiene un argumento _enumerationId_ para permitir que el proveedor asocie las invocaciones de devolución de llamada a una sola sesión de enumeración.
 
@@ -39,19 +39,19 @@ Para participar en la enumeración de directorios, el proveedor debe implementar
 
     El proveedor debe capturar el valor de _searchExpression_ en la primera invocación de esta devolución de llamada.  Usa el valor capturado en cualquier invocación posterior de la devolución de llamada en la misma sesión de enumeración, a menos que PRJ_CB_DATA_FLAG_ENUM_RESTART_SCAN se establezca en el campo **Flags** del parámetro _callbackData_ de la devolución de llamada.  En ese caso, debe volver a capturar el valor de _searchExpression_.
 
-    Si no hay entradas que coincidan en su almacén de respaldo, el proveedor simplemente devuelve S_OK de la devolución de llamada.  De lo contrario, el proveedor da formato **[a](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_file_basic_info)** cada entrada correspondiente de su almacén de respaldo en una estructura PRJ_FILE_BASIC_INFO y, a continuación, usa **[PrjFillDirEntryBuffer para](/windows/win32/api/projectedfslib/nf-projectedfslib-prjfilldirentrybuffer)** rellenar el búfer proporcionado por el parámetro _dirEntryBufferHandle_ de la devolución de llamada.  El proveedor sigue agregando entradas hasta que las ha agregado todas o hasta **que PrjFillDirEntryBuffer** devuelve HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER).  Después, el proveedor devuelve S_OK de la devolución de llamada.  Tenga en cuenta que el proveedor debe agregar las entradas al búfer _dirEntryBufferHandle_ en el criterio de ordenación correcto.  El proveedor debe usar **[PrjFileNameCompare](/windows/win32/api/projectedfslib/nf-projectedfslib-prjfilenamecompare)** para determinar el criterio de ordenación correcto.
+    Si no hay entradas que coincidan en su almacén de respaldo, el proveedor simplemente devuelve S_OK de la devolución de llamada.  De lo contrario, el proveedor da formato a cada entrada correspondiente de su almacén de respaldo en una estructura PRJ_FILE_BASIC_INFO y, **[a](/windows/win32/api/projectedfslib/ns-projectedfslib-prj_file_basic_info)** continuación, usa **[PrjFillDirEntryBuffer](/windows/win32/api/projectedfslib/nf-projectedfslib-prjfilldirentrybuffer)** para rellenar el búfer proporcionado por el parámetro _dirEntryBufferHandle_ de la devolución de llamada.  El proveedor sigue agregando entradas hasta que las ha agregado todas o hasta **que PrjFillDirEntryBuffer** devuelve HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER).  Después, el proveedor devuelve S_OK de la devolución de llamada.  Tenga en cuenta que el proveedor debe agregar las entradas al búfer _dirEntryBufferHandle_ en el criterio de ordenación correcto.  El proveedor debe usar **[PrjFileNameCompare](/windows/win32/api/projectedfslib/nf-projectedfslib-prjfilenamecompare)** para determinar el criterio de ordenación correcto.
 
     > El proveedor debe proporcionar un valor para el **miembro IsDirectory** de **PRJ_FILE_BASIC_INFO**.  Si **IsDirectory** es FALSE, el proveedor también debe proporcionar un valor para el **miembro FileSize.**
     >
     > Si el proveedor no proporciona valores para los miembros **CreationTime**, **LastAccessTime**, **LastWriteTime** y **ChangeTime,** ProjFS usará la hora actual del sistema.
     >
-    > ProjFS usará cualquier marca FILE_ATTRIBUTE los conjuntos de proveedores en el **miembro FileAttributes,** excepto para FILE_ATTRIBUTE_DIRECTORY; establecerá el valor correcto para FILE_ATTRIBUTE_DIRECTORY en el **miembro FileAttributes** según el valor proporcionado del **miembro IsDirectory.**
+    > ProjFS usará cualquier marca FILE_ATTRIBUTE los conjuntos de proveedores en el **miembro FileAttributes,** excepto FILE_ATTRIBUTE_DIRECTORY; establecerá el valor correcto para FILE_ATTRIBUTE_DIRECTORY en el **miembro FileAttributes** según el valor proporcionado del **miembro IsDirectory.**
 
-    Si **PrjFillDirEntryBuffer** devuelve HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER) antes de que el proveedor se queda sin entradas para agregarle, el proveedor debe realizar un seguimiento de la entrada que estaba intentando agregar cuando recibió el error.  La próxima vez que ProjFS llame PRJ_GET_DIRECTORY_ENUMERATION_CB la devolución de llamada de **PRJ_GET_DIRECTORY_ENUMERATION_CB** para la misma sesión de enumeración, el proveedor debe reanudar la adición de entradas al búfer _dirEntryBufferHandle_ con la entrada que estaba intentando agregar.
+    Si **PrjFillDirEntryBuffer** devuelve HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER) antes de que el proveedor se queda sin entradas para agregarle, el proveedor debe realizar un seguimiento de la entrada que estaba intentando agregar cuando recibió el error.  La próxima vez que ProjFS llame PRJ_GET_DIRECTORY_ENUMERATION_CB la devolución de llamada de PRJ_GET_DIRECTORY_ENUMERATION_CB para la misma sesión de enumeración, el proveedor debe reanudar la adición de entradas **al** búfer _dirEntryBufferHandle_ con la entrada que estaba intentando agregar.
 
     > Si el almacén de respaldo admite vínculos simbólicos, el proveedor debe usar **[PrjFillDirEntryBuffer2 para](/windows/win32/api/projectedfslib/nf-projectedfslib-prjfilldirentrybuffer2)** rellenar el búfer proporcionado por el parámetro _dirEntryBufferHandle_ de la devolución de llamada.  **PrjFillDirEntryBuffer2** admite una entrada de búfer adicional que permite al proveedor especificar que la entrada de enumeración es un vínculo simbólico y cuál es su destino.  De lo contrario, se comporta como se ha descrito anteriormente para **PrjFillDirEntryBuffer.**  En el ejemplo siguiente se **usa PrjFillDirEntryBuffer2 para** ilustrar la compatibilidad con vínculos simbólicos.
     >
-    > Tenga en **cuenta que PrjFillDirEntryBuffer2** se admite a partir Windows 10, versión 2004.  Un proveedor debe sondear la existencia de **PrjFillDirEntryBuffer2,** por ejemplo, mediante **[GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)**.
+    > Tenga en **cuenta que PrjFillDirEntryBuffer2 se** admite a partir Windows 10, versión 2004.  Un proveedor debe sondear la existencia de **PrjFillDirEntryBuffer2,** por ejemplo, mediante **[GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)**.
 
     ```C++
     typedef struct MY_ENUM_ENTRY MY_ENUM_ENTRY;

@@ -1,17 +1,17 @@
 ---
-description: 'InkPicture.Sysevento temGesture: se produce cuando se reconoce un gesto del sistema.'
+description: 'Evento InkPicture.SystemGesture: se produce cuando se reconoce un gesto del sistema.'
 ms.assetid: 36e2ac5a-dc91-47c2-a8e5-e555437c0a5d
-title: InkPicture.Sysevento temGesture (Mspontut.h)
+title: Evento InkPicture.SystemGesture (Ms inkut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11567b94360c8fa2bf736d295bf828ebc636bb0bee7a21acb4cc063c22780352
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1cde11b73b6b0d3861a79538a7f9ee19487b6384
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118966954"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572332"
 ---
-# <a name="inkpicturesystemgesture-event"></a>InkPicture.Sysevento temGesture
+# <a name="inkpicturesystemgesture-event"></a>Evento InkPicture.SystemGesture
 
 Se produce cuando se reconoce un gesto del sistema.
 
@@ -89,13 +89,13 @@ Valor que indica si el objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los gestos del sistema dan información sobre [**el objeto IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) que se usa para crear el gesto. También proporcionan accesos directos a combinaciones de eventos del mouse y son formas de detectar eventos del mouse con menos impacto en el rendimiento.
 
 Por ejemplo, en lugar de buscar un par de eventos [**MouseDown Event \[ \]**](inkpicture-mouseup.md) / [**InkPicture Control MouseDown Event \[ InkPicture Control \]**](inkpicture-mousedown.md) sin que se produzcan otros eventos del mouse entre ellos, puede buscar los gestos del sistema Tap o RightTap.
 
-Como otro ejemplo, en lugar de escuchar los eventos [**\[ MousePicture \] Control MouseMove**](inkpicture-mousedown.md)Event InkPicture Control / [**\[ \]**](inkpicture-mousemove.md) y obtener numerosos mensajes del **control \[ \] MouseMove Event InkPicture,** puede observar los gestos del sistema Drag o RightDrag siempre que no esté interesado en las coordenadas (x, y) de cada posición del mouse. Esto le permite recibir solo un mensaje en lugar de varios mensajes **del control \[ \] MouseMove Event InkPicture.**
+Como otro ejemplo, en lugar de escuchar los eventos [**\[ MousePicture \] Control MouseMove**](inkpicture-mousedown.md)Event InkPicture Control / [**\[ \]**](inkpicture-mousemove.md) y obtener numerosos mensajes del **control \[ \] MouseMove Event InkPicture,** puede observar los gestos del sistema Drag o RightDrag siempre que no esté interesado en las coordenadas (x, y) de cada posición del mouse. Esto le permite recibir solo un mensaje en lugar de varios mensajes **mousemove Event \[ InkPicture Control. \]**
 
 Para obtener una lista de gestos del sistema específicos, vea el tipo [**de enumeración InkSystemGesture.**](/windows/desktop/api/msinkaut/ne-msinkaut-inksystemgesture) Para obtener más información sobre los gestos del sistema, vea [Usar gestos](using-gestures.md) y [entradas de comandos en tablet PC.](/previous-versions//dd314533(v=vs.85))
 
@@ -107,14 +107,14 @@ Este método de evento se define en las interfaces de solo envío (dispinterface
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

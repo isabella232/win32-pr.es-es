@@ -1,6 +1,6 @@
 ---
 title: Escuchar eventos de la cinta de opciones
-description: El marco Windows cinta de opciones de Windows usa la infraestructura de seguimiento de eventos para Windows (ETW) para permitir a los desarrolladores aprender cómo interactúan los usuarios con la cinta de opciones de su aplicación.
+description: El marco Windows Ribbon usa la infraestructura de seguimiento de eventos para Windows (ETW) para permitir a los desarrolladores aprender cómo interactúan los usuarios con la cinta de opciones de su aplicación.
 ms.assetid: F29A8E41-C902-410E-BD28-653E078320E9
 keywords:
 - Windows Cinta de opciones, eventos
@@ -8,15 +8,15 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: dcf28052aa741437a7f96f90ddb1b4a773ae4c4a
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122473041"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572261"
 ---
 # <a name="listening-for-ribbon-events"></a>Escuchar eventos de la cinta de opciones
 
-El marco Windows cinta de opciones de Windows usa la infraestructura de seguimiento de eventos para [Windows (ETW)](../etw/event-tracing-portal.md) para permitir que los desarrolladores aprendan cómo interactúan los usuarios con la cinta de opciones de su aplicación.
+El marco Windows Cinta de opciones de Windows usa la infraestructura de seguimiento de eventos para [Windows (ETW)](../etw/event-tracing-portal.md) para permitir a los desarrolladores aprender cómo interactúan los usuarios con la cinta de opciones de su aplicación.
 
 ## <a name="introduction"></a>Introducción
 
@@ -43,7 +43,7 @@ Los eventos expuestos a las aplicaciones de cinta de opciones se describen en la
 | Comando | Identificador de comando<br /> Nombre de comando<br /> Verbo de evento<br /> Una de las siguientes ubicaciones de eventos:<ul><li>CINTA</li><li>QUICKACCESSTOOLBAR</li><li>APPLICATIONMENU</li><li>CONTEXTPOPUP</li></ul><br /> Identificador de comando primario<br /> Nombre del comando primario<br /> Uno de los métodos de invocación siguientes:<ul><li>HAGA CLIC</li><li>KEYTIP</li><li>TECLADO</li><li>TOCAR</li></ul><br /><blockquote>[!Note]<br />Las galerías de elementos y los cuadros combinados incluyen el índice de elemento seleccionado, pero no incluyen valores de cadena ni enteros. Los spinners no incluyen el valor entero.</blockquote><br /> | 
 | Cinta minimizada | Verbo de evento<br /> | 
 | Cinta expandida (botón Expandir clic o pulsar anclado) | Verbo de evento<br /> | 
-| Modo de aplicación cambiado | Verbo de evento<br /> Id. de modo (valor establecido a <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes"><strong>través de SetModes)</strong></a><br /><blockquote>[!Note]<br />La aplicación es responsable de desempaquetar este entero para determinar qué modos se han establecido.</blockquote><br /> | 
+| Modo de aplicación cambiado | Verbo de evento<br /> Id. de modo (valor establecido a <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setmodes"><strong>través de SetModes</strong></a>)<br /><blockquote>[!Note]<br />La aplicación es responsable de desempaquetar este entero para determinar qué modos se han establecido.</blockquote><br /> | 
 | Información sobre herramientas mostrada | Verbo de evento<br /> Identificador de comando primario<br /> Nombre del comando primario<br /> | 
 
 

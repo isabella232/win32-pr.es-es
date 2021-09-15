@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 98efb0054402f8bf019e91d639f16322a1378a23dfeee76cd31daea9d12bf6fe
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 73585bf63bc559f30ce114730274e30518497b05
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120013045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474182"
 ---
 # <a name="mf_media_engine_opm_status-enumeration"></a>MF \_ MEDIA \_ ENGINE \_ OPM STATUS \_ (enumeración)
 
 Define el estado de [Output Protection Manager](output-protection-manager.md) (OPM).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -58,7 +58,7 @@ OPM establecido correctamente.
 
 </dd> <dt>
 
-<span id="MF_MEDIA_ENGINE_OPM_FAILED_VM"></span><span id="mf_media_engine_opm_failed_vm"></span>**MF \_ MEDIA \_ ENGINE \_ OPM \_ FAILED \_ VM**
+<span id="MF_MEDIA_ENGINE_OPM_FAILED_VM"></span><span id="mf_media_engine_opm_failed_vm"></span>**MÁQUINA \_ VIRTUAL CON ERROR DE MF MEDIA ENGINE \_ \_ OPM \_ \_**
 </dt> <dd>
 
 Error de OPM porque se ejecuta en una máquina virtual (VM).
@@ -94,7 +94,7 @@ Error de OPM por otros motivos.
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
-| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: cb4f1c77204c45e4e0b056fa1d6c217e303fa62a6114d635aeda04dbe973a4d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 408e59e2cb0a5b0eba1e28b7d060a0d0a2b700ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117722922"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474454"
 ---
 # <a name="texture2dgathercmpblue-methods"></a>Métodos Texture2D::GatherCmpBlue
 

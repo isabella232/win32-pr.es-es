@@ -4,12 +4,12 @@ ms.assetid: c5054fc6-1273-4491-8fb9-30c4b8fc663f
 title: System.Video.FourCC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb575eff3a39de7ee737ff947113d0d4dab501bc07215319a13667b9f9869c14
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 475b1cebc0d19a89c70e0ebae2be4b7673697c23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119945005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572561"
 ---
 # <a name="systemvideofourcc"></a>System.Video.FourCC
 
@@ -30,7 +30,7 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un código FOURCC es un entero de 32 bits sin signo que se crea concatenando cuatro caracteres ASCII. Por ejemplo, el vídeo de FOURCC para H.264 es "H264" o 0x34363248.
 

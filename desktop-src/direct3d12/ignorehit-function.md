@@ -1,5 +1,5 @@
 ---
-description: Se llama desde cualquier sombreador de llamadas para rechazar el objeto hit y finalizar el sombreador.
+description: Se llama desde cualquier sombreador de llamadas para rechazar el sombreador y finalizar el sombreador.
 ms.assetid: ''
 title: Función IgnoreHit
 ms.localizationpriority: low
@@ -12,16 +12,16 @@ api_name:
 - IgnoreHit
 api_type:
 - NA
-ms.openlocfilehash: 5626074df107b89473edbe24b9c1cedd25577e7d987746bcf7ec330d2982e27d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 66d450ce5a03e07e779ca5131443cdf67398cf19
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117912799"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474473"
 ---
 # <a name="ignorehit-function"></a>Función IgnoreHit
 
-Se llama desde cualquier [sombreador de llamadas](any-hit-shader.md) para rechazar el objeto hit y finalizar el sombreador. La búsqueda de pulsaciones continúa sin confirmar la distancia y los atributos del hit actual.  La [**llamada a ReportHit**](reporthit-function.md) en el [sombreador de](intersection-shader.md)intersección , si hay una, devolverá false.  Se conservan las modificaciones realizadas en la carga del rayo hasta este punto en cualquier sombreador de impacto.
+Se llama desde cualquier [sombreador de llamadas](any-hit-shader.md) para rechazar el sombreador y finalizar el sombreador. La búsqueda de pulsaciones continúa sin confirmar la distancia y los atributos de la posición actual.  La [**llamada a ReportHit**](reporthit-function.md) en el [sombreador de intersección](intersection-shader.md), si hay una, devolverá false.  Se conservan las modificaciones realizadas en la carga del rayo hasta este punto en cualquier sombreador de impacto.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -35,9 +35,9 @@ void IgnoreHit();
 
 **void**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se puede llamar a esta función desde los siguientes tipos de sombreador:
+Se puede llamar a esta función desde los siguientes tipos de sombreador de raytracción:
 
 * [**Sombreador de cualquier acierto**](any-hit-shader.md)
 

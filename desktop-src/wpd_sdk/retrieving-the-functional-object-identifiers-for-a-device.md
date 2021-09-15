@@ -1,17 +1,17 @@
 ---
-description: Recuperar los identificadores de objeto funcionales de un dispositivo
+description: Recuperar los identificadores de objeto funcional de un dispositivo
 ms.assetid: 9a13071a-95a1-4330-92d5-11fa72a8f211
-title: Recuperar los identificadores de objeto funcionales de un dispositivo
+title: Recuperar los identificadores de objeto funcional de un dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93d0cc686a6997c10e26e3d83190503bba09fe15afc7f4e0cf75e297f0d905f2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f6a753324e24a6b78625a78b4128380288b6672f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119263005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571168"
 ---
-# <a name="retrieving-the-functional-object-identifiers-for-a-device"></a>Recuperar los identificadores de objeto funcionales de un dispositivo
+# <a name="retrieving-the-functional-object-identifiers-for-a-device"></a>Recuperar los identificadores de objeto funcional de un dispositivo
 
 Como se indicó en el tema [Recuperación](retrieving-the-functional-categories-supported-by-a-device.md) de las categorías funcionales admitidas por un dispositivo, Windows dispositivos portátiles pueden admitir una o varias categorías funcionales. Cualquier categoría funcional determinada puede admitir uno o varios objetos funcionales. Por ejemplo, la categoría de almacenamiento puede admitir tres objetos de almacenamiento funcionales, cada uno de los cuales se identifica mediante una cadena de identificador único. A continuación, el primer objeto de almacenamiento se puede identificar mediante la cadena "Storage1", el segundo por la cadena "Storage2" y el tercero por la cadena "Storage3".
 
@@ -30,7 +30,7 @@ La aplicación puede recuperar las categorías funcionales admitidas por un disp
 
  
 
-El código que se encuentra en la función ListFunctionalObjects es casi idéntico al código que se encuentra en la función ListFunctionalCategories. (Consulte el [tema Recuperación de categorías funcionales compatibles con un dispositivo).](retrieving-the-functional-categories-supported-by-a-device.md) La única diferencia es la llamada al método [**IPortableDeviceCapabilities::GetFunctionalObjects,**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getfunctionalobjects) que aparece dentro del bucle que recorre en iteración las categorías funcionales.
+El código que se encuentra en la función ListFunctionalObjects es casi idéntico al código que se encuentra en la función ListFunctionalCategories. (Vea el [tema Recuperación de categorías funcionales admitidas por un dispositivo).](retrieving-the-functional-categories-supported-by-a-device.md) La única diferencia es la llamada al método [**IPortableDeviceCapabilities::GetFunctionalObjects,**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getfunctionalobjects) que aparece dentro del bucle que recorre en iteración las categorías funcionales.
 
 
 ```C++
@@ -132,7 +132,7 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[**IPortableDevice (Interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
+[**IPortableDevice (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
 </dt> <dt>
 
 [**IPortableDeviceCapabilities (Interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecapabilities)

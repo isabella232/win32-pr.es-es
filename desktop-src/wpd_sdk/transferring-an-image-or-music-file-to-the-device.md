@@ -4,12 +4,12 @@ ms.assetid: bace274c-512a-46da-80a7-84734ee880b7
 title: Transferencia de una imagen Música archivo al dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44cf16c4c95080b5479825bbc4a0f8dcfd131fdb603821edab0a2e9df4d03c41
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f3308212825f6c67ea79a40873fc466164d62f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119928065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572025"
 ---
 # <a name="transferring-an-image-or-music-file-to-the-device"></a>Transferencia de una imagen Música archivo al dispositivo
 
@@ -24,7 +24,7 @@ Las transferencias de contenido se logran mediante las interfaces descritas en l
 | [**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)       | Proporciona acceso a los métodos específicos del contenido.               |
 | [**IPortableDeviceDataStream (Interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicedatastream) | Se usa al escribir el contenido en el dispositivo.                   |
 | [**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)         | Se usa para recuperar las propiedades que describen el contenido.         |
-| IStream (interfaz)                                                        | Se usa para simplificar la lectura de contenido y la escritura en el dispositivo. |
+| IStream (interfaz)                                                        | Se usa para simplificar la lectura del contenido y la escritura en el dispositivo. |
 
 
 
@@ -57,7 +57,7 @@ if (FAILED(hr))
 
 
 
-La segunda tarea que realiza la función es crear un objeto `TransferContentToDevice` [**IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) mediante una llamada al [**método IPortableDevice::Content.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-content)
+La segunda tarea que realiza la función es crear un objeto `TransferContentToDevice` [**IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) llamando al [**método IPortableDevice::Content.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-content)
 
 
 ```C++
@@ -102,7 +102,7 @@ if (SUCCEEDED(hr))
 
 La función pasa una cadena de filtro ( ) al método `TransferContentToDevice` GetOpenFileName, que determina el tipo de archivos `wszFileTypeFilter` que el usuario puede elegir. Consulte la función del módulo WpdApiSample.cpp para obtener ejemplos de los tres filtros `DoMenu` diferentes permitidos por el ejemplo.
 
-Una vez que el usuario identifica un archivo determinado para transferirlo al dispositivo, la función abre ese archivo como un objeto IStream y recupera las propiedades necesarias para `TransferContentToDevice` completar la transferencia.
+Una vez que el usuario identifica un archivo determinado para transferirlo al dispositivo, la función abre ese archivo como un objeto IStream y recupera las propiedades necesarias para completar `TransferContentToDevice` la transferencia.
 
 
 ```C++
@@ -236,7 +236,7 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[**IPortableDevice (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
+[**IPortableDevice (Interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
 </dt> <dt>
 
 [**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)

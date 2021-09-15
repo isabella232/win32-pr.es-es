@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 53526f57956ecaca65712b2abffacbba71ad049857b6a0fbddb9502cfdb05ff7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5bcc38ca0d89430c03cf254892a54b80cb2a2eb4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119064775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473701"
 ---
 # <a name="description-wlanpolicy-element"></a>elemento description (WLANPolicy)
 
-El elemento description (WLANPolicy) contiene la descripción de una directiva laN inalámbrica.
+El elemento description (WLANPolicy) contiene la descripción de una directiva de LAN inalámbrica.
 
 ``` syntax
 <xs:element name="description"
@@ -35,14 +35,14 @@ El **elemento description** se define mediante el elemento [**WLANPolicy.**](wla
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

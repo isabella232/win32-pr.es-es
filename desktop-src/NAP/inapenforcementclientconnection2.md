@@ -3,7 +3,7 @@ title: Interfaz INapEnforcementClientConnection2 (NapEnforcementClient.h)
 description: Permitir la administración de conexiones de cliente. | Interfaz INapEnforcementClientConnection2 (NapEnforcementClient.h)
 ms.assetid: f7b5d8cc-6a91-4e49-8957-cf67d1001089
 keywords:
-- NAP de la interfaz INapEnforcementClientConnection2
+- NAP de interfaz INapEnforcementClientConnection2
 - Interfaz NAP de INapEnforcementClientConnection2 , descrita
 topic_type:
 - apiref
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e60e91ffbc12534bb3b5a8ac22cbd13a1238ba32e09b4f56b4ab570ffd1ea8be
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3503e1bf6db01920e814b96e3daf5fe04eabc6b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119144398"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473786"
 ---
 # <a name="inapenforcementclientconnection2-interface"></a>Interfaz INapEnforcementClientConnection2
 
@@ -36,7 +36,7 @@ ms.locfileid: "119144398"
 
  
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz INapEnforcementClientConnection2** hereda de [**INapEnforcementClientConnection**](inapenforcementclientconnection.md). **INapEnforcementClientConnection2** también tiene estos tipos de miembros:
 
@@ -67,8 +67,8 @@ La **interfaz INapEnforcementClientConnection2** tiene estos métodos.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

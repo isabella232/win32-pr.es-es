@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 39eb56800b43bce0696bdfd8fe7dea2f6bbcb3c0b82fcffa39e3144af3c93620
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5488f962a1ba526b34ca2d10144a150d7c1417d4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119800324"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473710"
 ---
 # <a name="allowlist-networkfilter-element"></a>elemento allowList (networkFilter)
 

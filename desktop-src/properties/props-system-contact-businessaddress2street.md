@@ -4,12 +4,12 @@ ms.assetid: 8a4ebbe7-ba5b-487f-add4-20c5509ce0db
 title: System.Contact.BusinessAddress2Address
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a7d193105ce9d6db90254c5458a46cf47f1ee7ddddb8984fa1b180a3727ebca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2948a27d8f8afe386e525269839316d958e9906c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118468945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572709"
 ---
 # <a name="systemcontactbusinessaddress2street"></a>System.Contact.BusinessAddress2Address
 
@@ -28,7 +28,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 693159f44d3b8878e2b70b9878ced5234c51e79110de8771d57a1c59a22feb32
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 58741290d741cc18fd788282d0f302ef87bb15dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118047087"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571512"
 ---
 # <a name="smc_getobject-message"></a>Mensaje \_ GETOBJECT de SMC
 
@@ -56,7 +56,7 @@ Puntero void que recibe un puntero a la interfaz solicitada.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El método [**IShellMenuCallback::CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación. Cree el objeto solicitado y asigne un puntero a la interfaz solicitada a *pv*.
 
@@ -76,7 +76,7 @@ Se pueden solicitar las interfaces siguientes.
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
 | Encabezado<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

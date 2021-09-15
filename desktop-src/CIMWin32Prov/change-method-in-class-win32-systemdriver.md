@@ -2,7 +2,7 @@
 description: Modifica un servicio \_ SystemDriver de Win32.
 ms.assetid: 61ee3297-2a66-466e-bdba-74d683f3ea70
 ms.tgt_platform: multiple
-title: Método change de la Win32_SystemDriver (Mbnapi.h)
+title: Método de cambio de Win32_SystemDriver clase (Mbnapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 96ff327e84d3a5b6c66011506c162810f0fcc91d0cafe4053266aa8928f6e5a2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: da814c8321e35189594bc350bd1e278a219bac59
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119925115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474013"
 ---
 # <a name="change-method-of-the-win32_systemdriver-class"></a>Cambio del método de la clase SystemDriver de Win32 \_
 
-El **método de** [clase Change WMI](/windows/desktop/WmiSdk/retrieving-a-class) modifica un servicio [**\_ SystemDriver de Win32.**](win32-systemdriver.md) El [**parámetro \_ LoadOrderGroup de Win32**](win32-loadordergroup.md) representa una agrupación de servicios del sistema que definen las dependencias de ejecución. Los servicios deben iniciarse en el orden especificado por el grupo de pedidos de carga, ya que los servicios dependen entre sí. Estos servicios dependientes requieren la presencia de los servicios antecedentes para funcionar correctamente.
+El **método cambiar** clase [WMI](/windows/desktop/WmiSdk/retrieving-a-class) modifica un servicio [**\_ SystemDriver de Win32.**](win32-systemdriver.md) El [**parámetro \_ LoadOrderGroup de Win32 representa**](win32-loadordergroup.md) una agrupación de servicios del sistema que definen las dependencias de ejecución. Los servicios deben iniciarse en el orden especificado por el grupo de pedidos de carga, ya que los servicios dependen entre sí. Estos servicios dependientes requieren la presencia de los servicios antecedentes para funcionar correctamente.
 
-En este tema se usa Managed Object Format sintaxis MOF (MOF). Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
+En este tema se Managed Object Format sintaxis de MOF . Para obtener más información sobre el uso de este método, vea [Llamar a un método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -55,7 +55,7 @@ uint32 Change(
 *DisplayName* \[ En\]
 </dt> <dd>
 
-Nombre para mostrar del servicio. Esta cadena tiene una longitud máxima de 256 caracteres. El nombre se conserva entre mayúsculas y minúsculas en el administrador de control de servicios. *Las comparaciones* de DisplayName siempre no tienen en cuenta las mayúsculas y minúsculas.
+Nombre para mostrar del servicio. Esta cadena tiene una longitud máxima de 256 caracteres. El nombre se conserva entre mayúsculas y minúsculas en el administrador de control de servicios. *Las comparaciones* de DisplayName siempre no tienen en cuenta mayúsculas de minúsculas.
 
 Restricciones: acepta el mismo valor que el *parámetro Name.*
 
@@ -68,7 +68,7 @@ Ejemplo: "Atdisk"
 
 Ruta de acceso completa al archivo ejecutable que implementa el servicio.
 
-Ejemplo: *\\ Controladores SystemRoot \\ System32 \\ \\afd.sys*
+Ejemplo: *\\ Controladores systemRoot \\ System32 \\ \\afd.sys*
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Tipo de servicios proporcionados a los procesos que los llaman.
 1 (0x1)
 </dt> <dd>
 
-Controlador kernel
+Kernel Driver
 
 </dd> <dt>
 
@@ -103,7 +103,7 @@ Adapter (Adaptador)
 8 (0x8)
 </dt> <dd>
 
-Controlador de Recognizer
+Controlador de reconocedor
 
 </dd> <dt>
 
@@ -131,7 +131,7 @@ Proceso interactivo
 *ErrorControl* \[ En\]
 </dt> <dd>
 
-Gravedad del error si este servicio no se puede iniciar durante el inicio. El valor indica la acción realizada por el programa de inicio si se produce un error. El sistema registra todos los errores.
+Gravedad del error si este servicio no se inicia durante el inicio. El valor indica la acción realizada por el programa de inicio si se produce un error. El sistema registra todos los errores.
 
 <dt>
 
@@ -182,7 +182,7 @@ El sistema intenta reiniciarse con una configuración válida.
 *StartMode* \[ En\]
 </dt> <dd>
 
-Modo de inicio del servicio Windows base.
+El modo de inicio del Windows base.
 
 <dt>
 
@@ -237,7 +237,7 @@ Servicio que el administrador de control de servicios inicia automáticamente du
 
 </dt> <dd>
 
-Servicio que el administrador de control de servicios inicia cuando un proceso llama al [**método StartService.**](startservice-method-in-class-win32-systemdriver.md)
+Servicio que el administrador de control de servicio inicia cuando un proceso llama al [**método StartService.**](startservice-method-in-class-win32-systemdriver.md)
 
 </dd> <dt>
 
@@ -255,16 +255,16 @@ Servicio que no se puede iniciar.
 *DesktopInteract* \[ En\]
 </dt> <dd>
 
-Valor que, si es **True,** el servicio puede crear o comunicarse con las ventanas del escritorio.
+Valor que, si **es True,** el servicio puede crear o comunicarse con las ventanas del escritorio.
 
 </dd> <dt>
 
 *StartName* \[ En\]
 </dt> <dd>
 
-Nombre de cuenta en el que se ejecuta el servicio. Dependiendo del tipo de servicio, el nombre de cuenta puede tener el formato nombreDeServidor de dominio \\ o . \\ nombre de usuario. Cuando se ejecuta, el proceso de servicio se registra mediante uno de estos dos formularios. Si la cuenta pertenece al dominio integrado, . \\ Se puede especificar el nombre de usuario. Si se especifica una cadena vacía, el servicio se inicia sesión como la cuenta LocalSystem. Para los controladores de nivel de sistema o kernel, *StartName* contiene el nombre del objeto de controlador, por ejemplo, FileSystem Rdr o Driver Xns, que el sistema de entrada y salida \\ \\ \\ (E/S) usa para cargar el controlador de \\ dispositivo. Si se especifica **NULL,** el controlador se ejecuta con un nombre de objeto predeterminado que el sistema de E/S crea en función del nombre del servicio, por ejemplo, DWDOM \\ Admin.
+Nombre de cuenta con el que se ejecuta el servicio. Dependiendo del tipo de servicio, el nombre de cuenta puede tener el formato nombreDeUsuario nombreDeServidor o \\ . \\ Nombre de usuario. Cuando se ejecuta, el proceso de servicio se registra mediante uno de estos dos formularios. Si la cuenta pertenece al dominio integrado, . \\ Se puede especificar el nombre de usuario. Si se especifica una cadena vacía, el servicio inicia sesión como la cuenta LocalSystem. En el caso de los controladores de kernel o de nivel de sistema, *StartName* contiene el nombre del objeto de controlador, por ejemplo, FileSystem Rdr o Driver Xns, que el sistema de entrada y salida \\ \\ \\ (E/S) usa para cargar el controlador de \\ dispositivo. Si se especifica **NULL,** el controlador se ejecuta con un nombre de objeto predeterminado que el sistema de E/S crea en función del nombre del servicio, por ejemplo, DWDOM \\ Admin.
 
-También puede usar el formato de nombre principal de usuario (UPN) para especificar **startName**, por ejemplo, *Username@DomainName* .
+También puede usar el formato de nombre principal de usuario (UPN) para especificar **startName,** por ejemplo, *Username@DomainName* .
 
 </dd> <dt>
 
@@ -283,9 +283,9 @@ Contraseña del nombre de cuenta especificado por el *parámetro StartName.* Esp
 *LoadOrderGroup* \[ En\]
 </dt> <dd>
 
-Nombre del grupo al que está asociado. Los grupos de pedidos de carga se encuentran en el registro del sistema y determinan la secuencia en la que se cargan los servicios en el sistema operativo. Si el puntero es **NULL** o si apunta a una cadena vacía, el servicio no pertenece a un grupo. Las dependencias entre grupos deben aparecer en el *parámetro LoadOrderGroupDependencies.* Los servicios de la lista de grupos de ordenación de carga se inician primero, seguidos de los servicios de los grupos que no están en la lista de grupos de ordenación de carga, seguidos de los servicios que no pertenecen a un grupo. El registro del sistema tiene una lista de grupos de ordenación de carga ubicados en:
+Nombre del grupo al que está asociado. Los grupos de orden de carga se encuentran en el registro del sistema y determinan la secuencia en la que se cargan los servicios en el sistema operativo. Si el puntero es **NULL** o si apunta a una cadena vacía, el servicio no pertenece a un grupo. Las dependencias entre grupos deben aparecer en el *parámetro LoadOrderGroupDependencies.* Los servicios de la lista de grupos de ordenación de carga se inician primero, seguidos de los servicios de los grupos que no están en la lista de grupos de ordenación de carga, seguidos de los servicios que no pertenecen a un grupo. El registro del sistema tiene una lista de grupos de pedidos de carga ubicados en:
 
-**HKEY \_ Local \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **ServiceGroupOrder**
+**HKEY \_ LOCAL \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Control** \\ **ServiceGroupOrder**
 
 </dd> <dt>
 
@@ -339,7 +339,7 @@ Devuelve un valor de cero (0) si el servicio se modificó correctamente, 1 (uno)
 **Ruta de acceso no encontrada** (9)
 </dt> <dt>
 
-**Servicio ya en ejecución** (10)
+**Servicio que ya se** está ejecutando (10)
 </dt> <dt>
 
 **Base de datos de servicio bloqueada** (11)
@@ -369,7 +369,7 @@ Devuelve un valor de cero (0) si el servicio se modificó correctamente, 1 (uno)
 **Nombre duplicado de estado** (19)
 </dt> <dt>
 
-**Nombre no válido del estado** (20)
+**Estado Nombre no válido** (20)
 </dt> <dt>
 
 **Parámetro Status Invalid** (21)
@@ -387,7 +387,7 @@ Devuelve un valor de cero (0) si el servicio se modificó correctamente, 1 (uno)
 **Otros** (25 4294967295)
 </dt> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para cambiar un servicio de un servicio de red al sistema local, use los valores siguientes para los parámetros *StartName* *y StartPassword:*
 
@@ -418,7 +418,7 @@ StartPassword = "" // - empty string, not NULL
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
 | Espacio de nombres<br/>                | \\CIMV2 raíz<br/>                                                                  |
-| Header<br/>                   | <dl> <dt>Mbnapi.h</dt> </dl>     |
+| Encabezado<br/>                   | <dl> <dt>Mbnapi.h</dt> </dl>     |
 | MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 

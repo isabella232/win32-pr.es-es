@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c717ea717daedce069e84d82f76edabc285b7f43fbf0a3b8759ef129fbbfdc47
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 47abd2b14b43c77d160faab20608c524c3c257c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118118319"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571905"
 ---
 # <a name="textfontsize"></a>TEXT.fontSize
 
-El **atributo fontSize** especifica o recupera el tamaño de fuente para el control Text.
+El **atributo fontSize** especifica o recupera el tamaño de fuente del control Text.
 
 ``` syntax
         elementID.fontSize
@@ -43,7 +43,7 @@ Vea el [atributo value](text-value.md) para obtener un ejemplo que ilustra cómo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -8,12 +8,12 @@ keywords:
 - imágenes de vídeo, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88d37faf6f7f9292a2ea09909c1b58801b33e9a2cb2edf25b014701bcbf7b03f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0000f42390ab3719431e2d7b38b131463d3ef8f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119027163"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572132"
 ---
 # <a name="video-image"></a>Imagen de vídeo
 

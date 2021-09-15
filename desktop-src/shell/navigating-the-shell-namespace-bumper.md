@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: b58c067d8b6d63ebb79df5ad275550efdd69b484cf1a8260f06e234661964601
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a346600c35fe6bd14bd7c61975e2d837628c71bb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119821005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572489"
 ---
 # <a name="navigating-the-shell-namespace"></a>Navegar por el espacio de nombres del shell
 

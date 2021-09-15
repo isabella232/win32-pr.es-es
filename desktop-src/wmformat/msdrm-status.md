@@ -3,7 +3,7 @@ title: MSDRM_STATUS enumeración (Wmdrmsdk.h)
 description: El tipo de enumeración MSDRM \_ STATUS define las condiciones de estado para el subsistema DRM.
 ms.assetid: b26600ea-2603-4fca-9408-2d5c88091dcc
 keywords:
-- MSDRM_STATUS enumeración windows Media Format
+- MSDRM_STATUS de enumeración windows Media Format
 - enumeración windows Media Format
 topic_type:
 - apiref
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c4c1f9b37f237b1ae2399849ef3100e3d6fdbc12c7ee3bc1d169420e38bb85a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf2a73de9e33216e22a01966be8f2ed6a3185fdf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117654579"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572160"
 ---
 # <a name="msdrm_status-enumeration"></a>Enumeración MSDRM \_ STATUS
 
 El **tipo de enumeración MSDRM \_ STATUS** define las condiciones de estado para el subsistema DRM.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -115,7 +115,7 @@ Especifica que la operación drm no puede continuar porque el subsistema DRM deb
 
 </dd> <dt>
 
-<span id="DRM_PLAY_OPL_NOTIFICATION"></span><span id="drm_play_opl_notification"></span>**NOTIFICACIÓN \_ DE \_ OPL DE REPRODUCCIÓN DE DRM \_**
+<span id="DRM_PLAY_OPL_NOTIFICATION"></span><span id="drm_play_opl_notification"></span>**NOTIFICACIÓN \_ DE \_ OPL DE REPRODUCCIÓN \_ DE DRM**
 </dt> <dd>
 
 Especifica que no se puede completar una operación de reproducción porque no se ha cumplido un requisito de nivel de protección de salida.
@@ -150,7 +150,7 @@ Ninguno.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5161b24f983936b2eb380f1863489ea6c5c927d9b18a278e5942e162f156c6fe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ce59135de1c8f47d84a07f01dbb5f2bbe697f9d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119891655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473822"
 ---
 # <a name="freesystemhealthagentstate-function"></a>Función FreeSystemHealthAgentState
 
@@ -52,7 +52,7 @@ Puntero a la [**estructura de datos SystemHealthAgentState**](/windows/win32/api
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Todas las interfaces COM compatibles con el sistema NAP usan reglas de administración de memoria COM estándar y los asignadores de memoria COM (**CoTaskMemAlloc** y **CoTaskMemFree**):
 
@@ -70,7 +70,7 @@ Todas las funciones NAP para liberar memoria también liberan todos los punteros
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
-| Header<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl> |
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 1bac7ba2f2f9d394218d851f9bbe7939168c2abbc7df5fb8c57a52f29fa6e2b1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 89a3b2bf87d99c767ab3bea46a27c8a53fab7825
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118965764"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571381"
 ---
 # <a name="iwiaapperrorhandlergetwindow-method"></a>IWiaAppErrorHandler::GetWindow (método)
 
@@ -55,7 +55,7 @@ Tipo: **HRESULT**
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 *phwnd apunta* a la ventana pasada a [**ReportStatus**](-wia-iwiaerrorhandler-reportstatus.md) por el proxy Windows Image Acquisition (WIA) 2.0. Esta ventana debe seguir siendo válida mientras dure la transferencia de datos.
 
@@ -67,8 +67,8 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
-| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
-| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
+| Encabezado<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
+| IDL<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
 | Biblioteca<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 

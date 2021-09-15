@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: aa8c9c3c60f51ffd854ccdfebb6538337e7676a8c63e45899737333c41d99aad
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4367b1d52ee5d2a3bb65af0e4edd4922b8ae9a92
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120057965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572448"
 ---
 # <a name="ianalysiswarninggetbackgrounderror-method"></a>IAnalysisWarning::GetBackgroundError (método)
 
@@ -41,9 +41,9 @@ Este método no tiene parámetros.
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si se produce un error dentro de una operación de análisis en segundo plano, [**IInkAnalyzer**](iinkanalyzer.md) no puede devolver el código de error porque se está produciendo en un subproceso diferente. En su lugar, el controlador de eventos [**\_ IAnalysisEvents::Results**](-ianalysisevents-results.md) recibe un [**IAnalysisStatus**](ianalysisstatus.md) que contiene [**un objeto IAnalysisWarning**](ianalysiswarning.md) con una [**excepción AnalysisWarningCode**](/windows/desktop/tablet/analysiswarningcode) de **AnalysisWarningCode \_ BackgroundException.** **IAnalysisWarning contiene** el código de error de la operación de análisis en segundo plano. En general, el controlador de eventos **\_ IAnalysisEvents::Results** devolverá este código de error para que se pueda controlar en otra parte de la aplicación.
+Si se produce un error dentro de una operación de análisis en segundo plano, [**IInkAnalyzer**](iinkanalyzer.md) no puede devolver el código de error porque se está produciendo en un subproceso diferente. En su lugar, el controlador de eventos [**\_ IAnalysisEvents::Results**](-ianalysisevents-results.md) recibe un [**IAnalysisStatus**](ianalysisstatus.md) que contiene [**un objeto IAnalysisWarning**](ianalysiswarning.md) con [**analysisWarningCode**](/windows/desktop/tablet/analysiswarningcode) de **AnalysisWarningCode \_ BackgroundException.** **IAnalysisWarning contiene el** código de error de la operación de análisis en segundo plano. En general, el controlador de eventos **\_ IAnalysisEvents::Results** devolverá este código de error para que se pueda controlar en otra parte de la aplicación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,12 +53,12 @@ Si se produce un error dentro de una operación de análisis en segundo plano, [
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

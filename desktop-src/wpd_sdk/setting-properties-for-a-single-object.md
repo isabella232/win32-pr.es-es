@@ -1,33 +1,33 @@
 ---
-description: Establecer propiedades para un solo objeto
+description: Establecer propiedades para un único objeto
 ms.assetid: 1c003534-96b4-419b-94d1-73b5ffa2eba1
-title: Establecer propiedades para un solo objeto
+title: Establecer propiedades para un único objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44a38964282b4ff6a51ee104bafc596f40f6107a87ae8069eba84a25386e7842
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5649d05ccadfeaef0dd8805abd7d556f7725f175
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119704285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571161"
 ---
-# <a name="setting-properties-for-a-single-object"></a>Establecer propiedades para un solo objeto
+# <a name="setting-properties-for-a-single-object"></a>Establecer propiedades para un único objeto
 
-Una vez que la aplicación recupera un identificador de objeto (vea el tema [Enumeración](enumerating-content.md) de contenido) para un objeto determinado, puede establecer propiedades para ese objeto llamando a métodos en las interfaces descritas en la tabla siguiente.
+Una vez que la aplicación recupera un identificador de objeto (vea el tema [Enumeración](enumerating-content.md) de contenido) de un objeto determinado, puede establecer propiedades para ese objeto llamando a métodos en las interfaces descritas en la tabla siguiente.
 
 
 
 | Interfaz                                                                | Descripción                                                                                                                                                 |
 |--------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IPortableDeviceProperties (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) | Se usa para determinar si se puede escribir una propiedad determinada y enviar la operación de escritura.                                                                  |
+| [**IPortableDeviceProperties (Interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) | Se usa para determinar si se puede escribir una propiedad determinada y para enviar la operación de escritura.                                                                  |
 | [**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)       | Proporciona acceso a los métodos específicos del contenido.                                                                                                            |
-| [**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)         | Se usa para contener los valores que se escribirán, determinar los resultados de la operación de escritura y recuperar atributos de propiedades (al determinar la funcionalidad de escritura). |
+| [**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)         | Se usa para contener los valores que se escribirán, determinar los resultados de la operación de escritura y recuperar atributos de propiedades (al determinar la funcionalidad de escritura). |
 
 
 
  
 
-Las aplicaciones establecen propiedades en un objeto creando primero un bolsa de propiedades que especifica los nuevos valores mediante la [**interfaz IPortableDeviceValues**](iportabledevicevalues.md). Una vez creado el bolsa de propiedades, una aplicación establece esas propiedades mediante una llamada al método [**IPortableDeviceProperties::SetValues.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-setvalues)
+Las aplicaciones establecen propiedades en un objeto creando primero un bolsa de propiedades que especifica los nuevos valores mediante la [**interfaz IPortableDeviceValues**](iportabledevicevalues.md). Una vez creado el bolsa de propiedades, una aplicación establece esas propiedades mediante una llamada al [**método IPortableDeviceProperties::SetValues.**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-setvalues)
 
 La `WriteContentProperties` función del módulo ContentProperties.cpp de la aplicación de ejemplo muestra cómo una aplicación podría establecer una nueva propiedad de nombre de objeto para un objeto seleccionado.
 
@@ -56,7 +56,7 @@ if (FAILED(hr))
 
 
 
-Después de esto, la aplicación recupera el valor WPD PROPERTY ATTRIBUTE CAN WRITE para la propiedad WPD OBJECT NAME para determinar si se puede \_ \_ escribir la \_ \_ \_ \_ propiedad. (Tenga en cuenta que la aplicación podría establecer cualquier propiedad para la que el WPD \_ El \_ valor PROPERTY ATTRIBUTE CAN WRITE es \_ \_ true).
+Después de esto, la aplicación recupera el valor WPD PROPERTY ATTRIBUTE CAN WRITE para la propiedad WPD OBJECT NAME para determinar si se \_ \_ puede escribir la \_ \_ \_ \_ propiedad. (Tenga en cuenta que la aplicación podría establecer cualquier propiedad para la que el WPD \_ El \_ valor PROPERTY ATTRIBUTE CAN WRITE es \_ \_ true).
 
 
 ```C++
@@ -110,7 +110,7 @@ if (SUCCEEDED(hr))
 
 
 
-El siguiente paso consiste en solicitar al usuario la nueva cadena de nombre. (Tenga en cuenta que la llamada al método [**IPortableDeviceValues::SetStringValue**](iportabledevicevalues-setstringvalue.md) simplemente crea el bolsa de propiedades; la propiedad real aún no se ha escrito).
+El siguiente paso es solicitar al usuario la nueva cadena de nombre. (Tenga en cuenta que la llamada al método [**IPortableDeviceValues::SetStringValue**](iportabledevicevalues-setstringvalue.md) simplemente crea el bolsa de propiedades; la propiedad real aún no se ha escrito).
 
 
 ```C++
@@ -173,16 +173,16 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[**IPortableDevice (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
+[**IPortableDevice (Interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
 </dt> <dt>
 
 [**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)
 </dt> <dt>
 
-[**IPortableDeviceKeyCollection (interfaz)**](iportabledevicekeycollection.md)
+[**IPortableDeviceKeyCollection (Interfaz)**](iportabledevicekeycollection.md)
 </dt> <dt>
 
-[**IPortableDeviceProperties (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties)
+[**IPortableDeviceProperties (Interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties)
 </dt> <dt>
 
 [**IPortableDevicePropertiesBulk (interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevicepropertiesbulk)

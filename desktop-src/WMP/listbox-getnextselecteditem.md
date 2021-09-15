@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f4a5d95880b1300ebfb7f1732e7c20b6975ad82cf2d15514c58e68b9f9c42cc2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8afb3df1f1b6a6adc528e02dd6531ac4fc1a9a3e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120003405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474569"
 ---
 # <a name="listboxgetnextselecteditem"></a>LISTBOX.getNextSelectedItem
 
@@ -35,7 +35,7 @@ El **método getNextSelectedItem** recupera el siguiente elemento seleccionado e
 <span id="startIndex"></span><span id="startindex"></span><span id="STARTINDEX"></span>*Startindex*
 </dt> <dd>
 
-**Number** (**long**) que contiene el índice del elemento que precede al elemento que se va a recuperar.
+**Number** (**long**) que contiene el índice del elemento que precede al elemento que se recupera.
 
 </dd> </dl>
 
@@ -43,9 +43,9 @@ El **método getNextSelectedItem** recupera el siguiente elemento seleccionado e
 
 Este método devuelve un **valor Number** (**long**) que contiene el índice del siguiente elemento seleccionado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para iniciar la búsqueda desde el principio, use 1 para el índice inicial.
+Para iniciar la búsqueda desde el principio, use 1 para el índice de inicio.
 
 ## <a name="requirements"></a>Requisitos
 

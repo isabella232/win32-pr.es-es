@@ -4,12 +4,12 @@ description: La aplicación WpdServiceApiSample muestra cómo una aplicación pu
 ms.assetid: 7fbd6f65-366a-49ea-a680-be77ca0d64f2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b56b164980249911ce267050143611dc599520fc841e33157bd6ac84718c1728
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 98e57258993d0a81f68042195db2caf338c97c53
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119806695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572077"
 ---
 # <a name="retrieving-wpd-object-properties"></a>Recuperación de propiedades de objetos WPD
 
@@ -55,7 +55,7 @@ Este método recupera las cuatro propiedades siguientes para el objeto de contac
 
 Tenga en cuenta que antes de recuperar las propiedades de contenido, la aplicación de ejemplo abre un servicio Contactos en un dispositivo conectado.
 
-El código siguiente para el **método ReadContentProperties** muestra cómo la aplicación usa la interfaz [**IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2) para recuperar una [**interfaz IPortableDeviceProperties.**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) Al pasar propertykeys de las propiedades solicitadas al método [**IPortableDeviceProperties::GetValues,**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-getvalues) **ReadContentProperties** recupera los valores solicitados y, a continuación, los muestra en la ventana de la consola.
+El código siguiente para el **método ReadContentProperties** muestra cómo la aplicación usa la interfaz [**IPortableDeviceContent2**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledevicecontent2) para recuperar una [**interfaz IPortableDeviceProperties.**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledeviceproperties) Al pasar propertykeys de las propiedades solicitadas al método [**IPortableDeviceProperties::GetValues,**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledeviceproperties-getvalues) **ReadContentProperties** recupera los valores solicitados y, a continuación, los muestra en la ventana de consola.
 
 
 ```C++

@@ -1,6 +1,6 @@
 ---
 title: Método ID3DX11ThreadPump ProcessDeviceWorkItems (D3DX11core.h)
-description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store. Establece los elementos de trabajo en el dispositivo una vez que han terminado de cargarse y procesarse.
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Establece los elementos de trabajo en el dispositivo una vez que han terminado de cargarse y procesarse.
 ms.assetid: 154e6ea5-0a88-4c8a-9c20-e7fbf95f1946
 keywords:
 - Método ProcessDeviceWorkItems Direct3D 11
@@ -17,17 +17,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07a6918e9ecea9d66c3ebca034628387ea471e9173b4b14f24e9b7f866897325
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5ad570785ac7dc36fb5dd9d464e97ef46f52ca93
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119608675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474476"
 ---
 # <a name="id3dx11threadpumpprocessdeviceworkitems-method"></a>Método ID3DX11ThreadPump::P rocessDeviceWorkItems
 
 > [!Note]  
-> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store.
 
  
 
@@ -63,7 +63,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 El valor devuelto es uno de los valores enumerados en Códigos de retorno [de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando el bombeo de subprocesos haya terminado de cargar y procesar un recurso o sombreador, lo mantendrá en una cola hasta que se llame a esta API, momento en el que los elementos procesados se establecerán en el dispositivo. Esto es útil para controlar la cantidad de procesamiento que se dedica a enlazar recursos al dispositivo para cada fotograma.
 

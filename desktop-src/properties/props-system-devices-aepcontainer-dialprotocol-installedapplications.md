@@ -4,12 +4,12 @@ ms.assetid: bbe14a49-0649-4385-a0d8-89771badf0ee
 title: System.Devices.AepContainer.DialProtocol.InstalledApplications
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a681251e8eb6db819f6ddd16ba407fb1404eca1c29e6fe2d09a0389de91c9007
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ca9ed6f3ce60493a22eccf2657a4231c125ce99d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120010735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571572"
 ---
 # <a name="systemdevicesaepcontainerdialprotocolinstalledapplications"></a>System.Devices.AepContainer.DialProtocol.InstalledApplications
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

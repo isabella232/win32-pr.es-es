@@ -4,12 +4,12 @@ ms.assetid: 28d46969-448e-4a67-bfb3-4240b5cebe57
 title: Esquema del proveedor WMI de controles parentales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ea3c5cd54b14cc02f09f80558fe4cd5f9256c22bcdcc0f19da8553c4a8ff3b5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 541d7fd9126d1992fab105d4b289fabae268148b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119601215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571612"
 ---
 # <a name="parental-controls-wmi-provider-schema"></a>Esquema del proveedor WMI de controles parentales
 

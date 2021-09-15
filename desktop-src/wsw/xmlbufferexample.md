@@ -5,15 +5,15 @@ ms.assetid: cf4530c7-48f4-4a76-bd3d-1f21b5469902
 keywords:
 - XmlBufferExample Native-Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f02f68864ba46e3c70523423e0c0c552f66228e7ef00ed9d9acdf8f4e94f1d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bfc290509ad44264ce6986e07792170b3e230b51
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119707175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571957"
 ---
 # <a name="xmlbufferexample"></a>XmlBufferExample
 

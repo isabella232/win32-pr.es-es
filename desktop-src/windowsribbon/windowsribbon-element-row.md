@@ -3,7 +3,7 @@ title: Elemento Row
 description: Representa una fila de controles en una plantilla de diseño SizeDefinition personalizada.
 ms.assetid: c3dac35f-3537-4eb7-b378-501ea88813f5
 keywords:
-- Elemento Row Windows Cinta de opciones
+- Cinta de opciones del Windows fila
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d59913d8a733e4186f2c00e35431d68ebdea839e67103a46873e6f3f64f3a72b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d642cd209b3e00e2c63f7376e321132a1c0e686
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119449565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571313"
 ---
 # <a name="row-element"></a>Elemento Row
 
@@ -65,7 +65,7 @@ Puede producirse una o varias veces para cada [**elemento GroupSizeDefinition.**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra el marcado básico para una plantilla de diseño [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizada de cuatro botones con varios **elementos Row.**
+En el ejemplo de código siguiente se muestra el marcado básico para una plantilla de diseño [**SizeDefinition**](windowsribbon-element-sizedefinition.md) de cuatro botones personalizada con varios **elementos Row.**
 
 
 ```XML
@@ -169,7 +169,7 @@ En el ejemplo de código siguiente se muestra el marcado básico para una planti
 
 <dl> <dt>
 
-[Personalización de una cinta de opciones mediante definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
+[Personalizar una cinta de opciones mediante definiciones de tamaño y directivas de escalado](windowsribbon-templates.md)
 </dt> </dl>
 
  

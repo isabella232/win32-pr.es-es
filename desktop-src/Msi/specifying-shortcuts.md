@@ -1,19 +1,19 @@
 ---
-description: La tabla de métodos abreviados y las tablas relacionadas de la base de datos de instalación contiene la información necesaria para instalar accesos directos. Vea El grupo de tablas de información del programa y los métodos abreviados del instalador de edición.
+description: La tabla de métodos abreviados y las tablas relacionadas de la base de datos de instalación contiene la información necesaria para instalar accesos directos. Vea el grupo Tablas de información del programa y Editar métodos abreviados del instalador.
 ms.assetid: 0f3adf78-e650-414f-b85d-b53b986eafda
 title: Especificar accesos directos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a67b43a104ee05b3711ac98395098acf9393faab8e046296e58d93df4d6b9218
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 29edf10a51827880a67826320d7f8415e70ea52a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118624689"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473931"
 ---
 # <a name="specifying-shortcuts"></a>Especificar accesos directos
 
-La [tabla de métodos abreviados](shortcut-table.md) y las tablas relacionadas de la base de datos de instalación contiene la información necesaria para instalar accesos directos. Vea El grupo [de tablas de información del programa y](program-information-tables-group.md) los [métodos abreviados del instalador de edición](editing-installer-shortcuts.md).
+La [tabla de métodos abreviados](shortcut-table.md) y las tablas relacionadas de la base de datos de instalación contiene la información necesaria para instalar accesos directos. Vea El grupo [de tablas de información del programa y](program-information-tables-group.md) la [edición de los métodos abreviados del instalador](editing-installer-shortcuts.md).
 
 En esta sección agregará información que especifica los accesos directos anunciados y no anunciados para el Bloc de notas ejemplo.
 
@@ -39,7 +39,7 @@ Use el editor de bases de datos para MNP2000.msi y escriba los datos siguientes 
 
  
 
-La instalación de ejemplo debe habilitar la instalación de un acceso directo anunciado para la característica de béisbol. Esto requiere especificar una clave para la tabla Icono en la columna \_ Icono de la tabla Acceso directo. Para los fines de este ejemplo, puede copiar el icono del editor de bases de datos de Orca proporcionado con el SDK Windows Installer. Exporte [la tabla Icono Orca.msi](icon-table.md) y, a continuación, combine esta tabla en la base de datos MNP2000.msi mediante Orca u otra herramienta de combinación. Orca también crea un directorio denominado Icon en el directorio que MNP2000.msi y agrega el archivo de datos binarios icono o \_icon.exe.ibd. Vea la columna Datos en la tabla Icono. La tabla icono completada debe tener el siguiente aspecto cuando se vea en Orca.
+La instalación de ejemplo debe habilitar la instalación de un acceso directo anunciado para la característica Baseball. Esto requiere especificar una clave para la tabla Icono en la columna \_ Icono de la tabla Acceso directo. Para los fines de este ejemplo, puede copiar el icono del editor de bases de datos de Orca proporcionado con el SDK Windows Installer. Exporte [la tabla Icon](icon-table.md) Orca.msi y, a continuación, combine esta tabla en la base MNP2000.msi datos mediante Orca u otra herramienta de combinación. Orca también crea un directorio denominado Icon en el directorio que contiene MNP2000.msi y agrega el archivo de datos binarios de icono orca \_icon.exe.ibd. Vea la columna Datos en la tabla Icono. La tabla icono completada debe tener el siguiente aspecto cuando se ve en Orca.
 
 [Tabla de iconos](icon-table.md)
 
@@ -59,7 +59,7 @@ La instalación de ejemplo debe habilitar la instalación de un acceso directo a
 
 <dl> <dt>
 
-[Editar métodos abreviados del instalador](editing-installer-shortcuts.md)
+[Edición de métodos abreviados del instalador](editing-installer-shortcuts.md)
 </dt> </dl>
 
  

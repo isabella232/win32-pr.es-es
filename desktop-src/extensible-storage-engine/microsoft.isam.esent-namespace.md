@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: espacio de nombres Microsoft. ISAM. esent'
-title: Microsoft. ISAM. esent (espacio de nombres) ()
+description: 'Más información sobre: Espacio de nombres Microsoft.Isam.Esent'
+title: Espacio de nombres Microsoft.Isam.Esent ()
 TOCTitle: '@NoTitle'
 ms:assetid: N:Microsoft.Isam.Esent
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent(v=EXCHG.10)
@@ -15,13 +15,13 @@ dev_langs:
 - VB
 - other
 ms.openlocfilehash: 87ce1d1d4dbdd29adb924c31c6f499d7c75687a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104001244"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474344"
 ---
-# <a name="microsoftisamesent-namespace"></a>Espacio de nombres Microsoft. ISAM. esent
+# <a name="microsoftisamesent-namespace"></a>Espacio de nombres Microsoft.Isam.Esent
 
 ## <a name="classes"></a>Clases
 
@@ -37,7 +37,7 @@ ms.locfileid: "104001244"
 <tr class="odd">
 <td><img src="../images/dn292085.pubclass(EXCHG.10).gif" title="Clase pública" alt="Public class" /></td>
 <td><a href="dn292088(v=exchg.10).md">EsentException</a></td>
-<td>Clase base para las excepciones de ESENT.</td>
+<td>Clase base para excepciones DE ESENT.</td>
 </tr>
 </tbody>
 </table>

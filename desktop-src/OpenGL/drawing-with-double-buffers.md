@@ -4,19 +4,19 @@ description: Los búferes dobles suavizan la transición entre una imagen y otra
 ms.assetid: 10801cc7-d26c-4bfd-95c0-f352a1c7a1f5
 keywords:
 - OpenGL en Windows, búferes dobles
-- Double buffers OpenGL
+- double buffers OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 133a6e0794eb903215411016aeff14e3426854dcddc3a60bcfb2ba318481bee5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bbe52d427467b2a6e460ea56a9e72e580ea6f97d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118361395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473690"
 ---
 # <a name="drawing-with-double-buffers"></a>Dibujo con búferes dobles
 
-Los búferes dobles suavizan la transición entre una imagen y otra en la pantalla. El intercambio de búferes normalmente se produce al final de una secuencia de comandos de dibujo. De forma predeterminada, la implementación de Microsoft de OpenGL Windows dibuja en el búfer fuera de la pantalla; Una vez completado el dibujo, llame a la [**función SwapBuffers**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers) para copiar el búfer fuera de pantalla en el búfer en pantalla. El ejemplo de código siguiente se prepara para dibujar, llama a una función de dibujo y, a continuación, copia la imagen completada en la pantalla si el almacenamiento en búfer doble está disponible.
+Los búferes dobles suavizan la transición entre una imagen y otra en la pantalla. El intercambio de búferes normalmente se produce al final de una secuencia de comandos de dibujo. De forma predeterminada, la implementación de Microsoft de OpenGL Windows dibuja en el búfer fuera de la pantalla; Una vez completado el dibujo, se llama a la [**función SwapBuffers**](/windows/desktop/api/wingdi/nf-wingdi-swapbuffers) para copiar el búfer fuera de pantalla en el búfer en pantalla. El ejemplo de código siguiente se prepara para dibujar, llama a una función de dibujo y, a continuación, copia la imagen completa en la pantalla si el almacenamiento en búfer doble está disponible.
 
 
 ```C++

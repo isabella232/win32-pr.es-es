@@ -4,12 +4,12 @@ ms.assetid: 46869f52-323c-41ec-95f7-e7e5d177b782
 title: Cómo obtener eventos del origen de red
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ec85877a928a2f63648ec0dedded1c383988bf80a4182f83062fd296e68bcb1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 100241b069ae8976c20c68b6055571d5ff1e5c1f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119958325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474269"
 ---
 # <a name="how-to-get-events-from-the-network-source"></a>Cómo obtener eventos del origen de red
 
@@ -18,7 +18,7 @@ La resolución de origen permite a una aplicación crear un origen de red y abri
 Esta interfaz expone el método [**IMFSourceOpenMonitor::OnSourceEvent**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceopenmonitor-onsourceevent) al que el origen de red llama directamente cuando abre la dirección URL de forma asincrónica. El origen de red notifica a la aplicación cuando comienza a abrir la dirección URL generando el [evento MEConnectStart.](meconnectstart.md) A continuación, el origen de red [genera el evento MEConnectEnd](meconnectend.md) cuando completa la operación de apertura.
 
 > [!Note]  
-> Para enviar estos eventos a la aplicación, el origen de red no usa la interfaz [**IMFMediaEventGenerator**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) porque estos eventos se generan antes de que se cree el origen de red. La aplicación puede obtener todos los demás eventos de origen de red mediante la interfaz **DEMAMEDIAEventGenerator** de la sesión multimedia.
+> Para enviar estos eventos a la aplicación, el origen de red no usa la interfaz [**IMFMediaEventGenerator**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) porque estos eventos se generan antes de que se cree el origen de red. La aplicación puede obtener todos los demás eventos de origen de red mediante la interfaz **DEGMEDIAEventGenerator** de la sesión multimedia.
 
  
 
@@ -27,12 +27,12 @@ Esta interfaz expone el método [**IMFSourceOpenMonitor::OnSourceEvent**](/windo
 1.  Implemente [**la interfaz IMFSourceOpenMonitor.**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceopenmonitor) En la implementación del [**método IMFSourceOpenMonitor::OnSourceEvent,**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceopenmonitor-onsourceevent) haga lo siguiente:
     1.  Para obtener el estado del evento, llame [**a IMFMediaEvent::GetStatus**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getstatus). Este método indica si la operación que desencadenó el evento, como una llamada al método de resolución de origen, se ha hecho correctamente. Si la operación no se realiza correctamente, el estado es un código de error.
     2.  Procese el evento en función del tipo de evento: [MEConnectStart](meconnectstart.md) o [MEConnectEnd](meconnectend.md), que la aplicación puede obtener llamando a [**IMFMediaEvent::GetType**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-gettype).
-2.  Configure un par clave-valor en un objeto de almacén de propiedades para almacenar un puntero a la implementación [**de IMFSourceOpenMonitor**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceopenmonitor) descrita en el paso 1.
-    1.  Cree un objeto de almacén de propiedades mediante una llamada a la **función PSCreateMemoryPropertyStore.**
+2.  Configure un par clave-valor en un objeto de almacén de propiedades para almacenar un puntero a la implementación [**DEFUSOURCEOpenMonitor**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceopenmonitor) descrita en el paso 1.
+    1.  Cree un objeto de almacén de propiedades llamando a la **función PSCreateMemoryPropertyStore.**
     2.  Establezca la [**propiedad MFPKEY \_ SourceOpenMonitor**](mfpkey-sourceopenmonitor-property.md) en una **estructura PROPERTYKEY.**
-    3.  Proporcione el valor de datos de tipo UNKNOWN de VT en una estructura PROPVARIANT estableciendo el puntero IUnknown en la implementación de la aplicación de la \_ [**interfaz IMFSourceOpenMonitor.**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceopenmonitor)  
-    4.  Establezca el par clave-valor en el almacén de propiedades llamando a **IPropertyStore::SetValue**.
-3.  Pase el puntero del almacén de propiedades a los métodos de resolución de origen que usa la aplicación para crear el origen de red, como [**IMFSourceResolver::CreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-createobjectfromurl) y otros.
+    3.  Proporcione el valor de datos de tipo UNKNOWN de VT en una estructura PROPVARIANT estableciendo el puntero IUnknown en la implementación de la aplicación de la interfaz \_ [**IMFSourceOpenMonitor.**](/windows/desktop/api/mfidl/nn-mfidl-imfsourceopenmonitor)  
+    4.  Establezca el par clave-valor en el almacén de propiedades mediante una llamada **a IPropertyStore::SetValue**.
+3.  Pase el puntero del almacén de propiedades a los métodos de resolución de origen que usa la aplicación para crear el origen de red, como [**POR ejemplo, IMFSourceResolver::CreateObjectFromURL**](/windows/desktop/api/mfidl/nf-mfidl-imfsourceresolver-createobjectfromurl) y otros.
 
 ## <a name="example"></a>Ejemplo
 

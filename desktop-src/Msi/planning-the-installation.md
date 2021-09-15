@@ -4,12 +4,12 @@ ms.assetid: 8b0fb473-e19f-4427-b2a1-d0721cde9d38
 title: Planear la instalación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d406ec97fd5edb34468586eb9f707eff32b289df3dc88b803b8c55d4aad10cd1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5eb98368c5c5c8e13a8f9b03a44805a8cff6e517
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120042365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473969"
 ---
 # <a name="planning-the-installation"></a>Planear la instalación
 
@@ -67,7 +67,7 @@ En el ejemplo se instalan los siguientes accesos directos. Uno de estos accesos 
 |-----------|-------------------------------------------|---------------------------------------------------------|
 | sNotepad  | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park \_ \\Redpark.exe          |
 | sReadme   | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park \_ \\Readme.txt           |
-| sHelp     | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[Ejemplo programFilesFolder \] \\ \\ Bloc de notas \\Help.txt       |
+| sHelp     | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Sample Bloc de notas \\ \\Help.txt       |
 | sBaseball | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park Sports \_ \\ \\Baseball.txt |
 | sFootball | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park Sports \_ \\ \\Football.txt |
 | sDance    | \[Menú ProgramFilesFolder \] \\ Red \_ Park \\\\ | \[ProgramFilesFolder \] \\ Red Park Park \_ Park \\Dance.txt \\      |

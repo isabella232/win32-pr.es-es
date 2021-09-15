@@ -5,7 +5,7 @@ ms.assetid: 02f7ce40-3443-4263-86b2-4276cbc7b694
 keywords:
 - Método NAP de GetNapServerInfo
 - Método NAP de GetNapServerInfo, interfaz INapServerInfo
-- Nap de interfaz INapServerInfo , método GetNapServerInfo
+- INapServerInfo interface NAP , GetNapServerInfo method
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5eec9926e1a0bf94a1e3dac38c01a169d596c1c00bf032b8f6954f6331d5a4d4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5b182b9e1a5c8d7974128b062fd284c5af3f060f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119626135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473777"
 ---
 # <a name="inapserverinfogetnapserverinfo-method"></a>Método INapServerInfo::GetNapServerInfo
 
@@ -90,12 +90,12 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                               |
-| Header<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qsvrmgmt.dll</dt> </dl>            |
 
 

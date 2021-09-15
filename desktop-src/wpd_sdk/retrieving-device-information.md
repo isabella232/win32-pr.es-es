@@ -4,12 +4,12 @@ ms.assetid: 5c35da1c-f55c-4b92-8ac6-8c71466707f1
 title: Recuperar información del dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d9a24a157d8170cf3f4d6660c19f656faab0b02c9ce78e7d717011a14780263
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9facd9c1bba2b0153c0e3254578d3617352154ab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118193836"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571172"
 ---
 # <a name="retrieving-device-information"></a>Recuperar información del dispositivo
 

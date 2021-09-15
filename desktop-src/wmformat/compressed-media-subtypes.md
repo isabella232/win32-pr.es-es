@@ -13,12 +13,12 @@ keywords:
 - subtipos de medios comprimidos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f231c9c8ff666c11d3fb3bf101dc3b43c1cd2ff90ca3a28ca1af0113fe8fccd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7d92d192d04257f0375a618dda05aa97fd3f344b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119548095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571277"
 ---
 # <a name="compressed-media-subtypes"></a>Subtipos de medios comprimidos
 
@@ -36,11 +36,11 @@ En la tabla siguiente se enumeran los subtipos multimedia comprimidos. Estos tip
 | WMMEDIASUBTYPE \_ MSS2              | Vídeo codificado con el códec Windows Media Video 9 Screen.                                                                                                                                                                                                                                  |
 | WMMEDIASUBTYPE \_ WMVP              | Vídeo codificado con el códec Windows imagen de Media Video 9 para transformar mapas de bits y desasociados datos en una secuencia de vídeo.                                                                                                                                                                     |
 | WMMEDIASUBTYPE \_ WVP2              | Vídeo codificado con el códec Windows Media Video 9 Image v2.                                                                                                                                                                                                                                |
-| WMMEDIASUBTYPE \_ WMAudio \_ Lossless | Audio codificado con el códec Windows media audio 9 sin pérdida o el códec Windows Media Audio 9.1.                                                                                                                                                                                           |
+| WMMEDIASUBTYPE \_ WMAudio \_ Lossless | Audio codificado con el códec sin Windows Media Audio 9 o el códec Windows Media Audio 9.1.                                                                                                                                                                                           |
 | WMMEDIASUBTYPE \_ WMAudioV2         | Audio codificado con el códec Windows Media Audio versión 2. Este valor es idéntico a WMMEDIASUBTYPE \_ WMAudioV7 y WMMEDIASUBTYPE WMAudioV8, ya que las secuencias de bits de estas versiones de \_ códec son compatibles.                                                                             |
 | WMMEDIASUBTYPE \_ WMAudioV7         | Audio codificado con el códec Windows Media Audio versión 7. Este valor es idéntico a WMMEDIASUBTYPE \_ WMAudioV2 y WMMEDIASUBTYPE WMAudioV8, ya que las secuencias de bits de estas versiones de \_ códec son compatibles.                                                                             |
 | WMMEDIASUBTYPE \_ WMAudioV8         | Audio codificado con el códec Windows Media Audio 8, el códec Windows Media Audio 9 o el códec Windows Media Audio 9.1. Este valor es idéntico a WMMEDIASUBTYPE \_ WMAudioV2 y WMMEDIASUBTYPE WMAudioV7, ya que las secuencias de bits de estas versiones de \_ códec son compatibles.              |
-| WMMEDIASUBTYPE \_ WMAudioV9         | Audio codificado con el códec Windows Media Audio 9 Professional o el códec Windows Media Audio 9.1 Professional.                                                                                                                                                                          |
+| WMMEDIASUBTYPE \_ WMAudioV9         | Audio codificado con el códec Windows Media Audio 9 o el códec Professional Media Audio 9.1 Windows media 9. Professional 1.                                                                                                                                                                          |
 | WMMEDIASUBTYPE \_ M4S2              | Vídeo codificado con el códec ISO MPEG4 v1.1.                                                                                                                                                                                                                                                |
 | WMMEDIASUBTYPE \_ WMSP1             | Audio codificado con el códec Windows Media Audio 9 Voice.                                                                                                                                                                                                                                   |
 | WMMEDIASUBTYPE \_ WMV1              | Vídeo codificado con el códec Windows Media Video versión 7.                                                                                                                                                                                                                                |

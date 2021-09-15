@@ -24,12 +24,12 @@ keywords:
 - VBR (velocidad de bits variable),configurar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e28c32e9d0e237e72f693bded74c7620d33845261a6137afdf58b04f35f441f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3ad3931ec41e73c125417d39cdd177dc16056e9e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119548043"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571261"
 ---
 # <a name="configuring-audio-streams"></a>Configuración de audio Secuencias
 
@@ -54,7 +54,7 @@ if((pWave->nAvgBytesPerSec / pWave->nBlockAlign) >=
 
 ## <a name="getting-low-delay-audio-formats"></a>Obtención Low-Delay formatos de audio
 
-El códec Windows Media 9.1 y el códec Windows Media Audio 9.1 de Professional admiten formatos de retraso bajo. Estos formatos tienen una ventana de búfer más pequeña que otros formatos de audio. El audio de bajo retraso está pensado para mejorar el rendimiento en escenarios en los que los archivos o secuencias se cambiarán con frecuencia. por ejemplo, una aplicación que enumera una serie de canciones para streaming en la interfaz de usuario y permite a los usuarios cambiar arbitrariamente entre ellas.
+El códec Windows Media 9.1 y el códec Windows Media Audio 9.1 Professional admiten formatos de bajo retraso. Estos formatos tienen una ventana de búfer más pequeña que otros formatos de audio. El audio de bajo retraso está pensado para mejorar el rendimiento en escenarios en los que los archivos o secuencias se cambiarán con frecuencia. por ejemplo, una aplicación que enumera una serie de canciones para streaming en la interfaz de usuario y permite a los usuarios cambiar arbitrariamente entre ellas.
 
 Los formatos de retraso bajo solo están disponibles en el modo CBR (un paso o dos pases). Todas las descripciones de formato de retraso bajo contienen la cadena "Retraso bajo". Puede identificar los formatos mediante programación comprobando el valor de velocidad de bits del formato. A los formatos de retraso bajo se les asignan velocidades de bits de 1 kilobit inferiores a las velocidades de bits del formato normal equivalente. Por ejemplo, el códec Windows Media Audio 9.1 admite un formato CBR de un solo paso con una velocidad de bits de 192 kbps. El formato de retraso bajo equivalente tiene una velocidad de bits de 191 kbps. Además, a excepción del formato mono de 5 kbps admitido por el códec Windows Media Audio 9.1, los formatos de retraso bajo son los únicos que tienen un valor de velocidad de bits impar.
 
@@ -62,7 +62,7 @@ Los formatos de retraso bajo solo están disponibles en el modo CBR (un paso o d
 
 Si necesita un formato de velocidad de bits variable (VBR) para uno de los códecs de audio multimedia de Windows, puede obtenerlo estableciendo la configuración de enumeración en el método [**IWMCodecInfo3::SetCodecEnumerationSetting.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmcodecinfo3-setcodecenumerationsetting) Establezca g \_ wszVBREnabled en True y g wszNumPasses en 1 para VBR basado en calidad o 2 para VBR de dos pases (restringido o sin \_ restricciones). Si usa VBR de dos pasos restringido, debe establecer manualmente la velocidad de bits máxima y la ventana de búfer para la secuencia mediante los métodos de [**IWMPropertyVault,**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmpropertyvault) como se describe en Configuración de [VBR Secuencias](configuring-vbr-streams.md).
 
-En los perfiles de VBR basados en calidad, el miembro **nAvgBytesPerSec** de la estructura **DEDATOX** contiene el nivel de calidad (del 1 al 100) en el byte de orden bajo y los tres bytes de orden alto se establecen en 0x7fffff. No intente modificar la configuración de calidad modificando este valor manualmente; debe usar el formato a medida que se recupera del códec. Para usar un valor de calidad diferente, debe enumerar los formatos hasta que encuentre uno que satisfaga sus necesidades. Además, **nAvgBytesPerSec** no se conservará en el archivo ASF; cuando se obtiene la estructura **DESATEX** para un archivo que se ha abierto con el objeto de lector, **nAvgBytesPerSec** contiene un valor aproximado que representa el número medio de bytes por segundo.
+En los perfiles de VBR basados en la calidad, el miembro **nAvgBytesPerSec** de la estructura **DEDATOX** contiene el nivel de calidad (del 1 al 100) en el byte de orden bajo y los tres bytes de orden alto se establecen en 0x7fffff. No intente modificar la configuración de calidad modificando este valor manualmente; debe usar el formato a medida que se recupera del códec. Para usar un valor de calidad diferente, debe enumerar los formatos hasta que encuentre uno que satisfaga sus necesidades. Además, **nAvgBytesPerSec** no se conservará en el archivo ASF; cuando se obtiene la estructura **DESATEX** para un archivo que se ha abierto con el objeto de lector, **nAvgBytesPerSec** contiene un valor aproximado que representa el número medio de bytes por segundo.
 
 > [!Note]  
 > Al configurar secuencias de audio, nunca debe tener un valor de ventana de búfer de audio mayor que el valor de las secuencias de vídeo del archivo. Normalmente esto no es un problema, ya que los valores de la ventana del búfer de audio deben oscilar entre 1,5 y 3 segundos y los valores de vídeo deben oscilar entre 3 y 5 segundos. Si una ventana de búfer de audio es mayor que una ventana de búfer de vídeo, el archivo se reproducirá con las secuencias ligeramente fuera de sincronización.

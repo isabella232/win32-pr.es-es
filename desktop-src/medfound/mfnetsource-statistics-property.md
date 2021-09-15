@@ -4,12 +4,12 @@ ms.assetid: 1948481b-febd-434b-a5dc-faef592ea0ed
 title: MFNETSOURCE_STATISTICS propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 822e9ae2e65170f3bf6e0f9ce065dd0ea5c62189a9a2b77fe2cd59beeb164248
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3a09e6c0fe4697595ff3600135327ba093350e0e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118738572"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474110"
 ---
 # <a name="mfnetsource_statistics-property"></a>Propiedad MFNETSOURCE \_ STATISTICS
 
@@ -31,7 +31,7 @@ La constante MFNETSOURCE STATISTICS define un GUID que se usa junto con la enume
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

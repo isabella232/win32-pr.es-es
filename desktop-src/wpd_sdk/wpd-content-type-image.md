@@ -4,12 +4,12 @@ ms.assetid: 87342ac7-3f4d-4ed2-99f1-843a79032c6e
 title: WPD_CONTENT_TYPE_IMAGE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 846347ac83345ed685a10739126028ca1728bb16a52fe7083fcc7dd823447c2a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d547a6190df01f495c0a340010b4305f5c77bf5d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118193499"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572001"
 ---
 # <a name="wpd_content_type_image"></a>IMAGEN DE TIPO \_ DE \_ CONTENIDO \_ WPD
 
@@ -22,11 +22,11 @@ Este tipo de objeto admite las siguientes propiedades.
 | Nombre de la propiedad                                                                                                         | Obligatorio u opcional                                                                             |
 |-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | [IDENTIFICADOR DE OBJETO \_ \_ WPD](object-properties.md)                                                                | Obligatorio, de solo lectura. Un cliente no puede establecer esta propiedad, incluso en el momento de la creación.                   |
-| [IDENTIFICADOR PRIMARIO DEL \_ OBJETO \_ \_ WPD](object-properties.md)                                                 | Obligatorio.                                                                                        |
+| [IDENTIFICADOR PRIMARIO DEL \_ OBJETO \_ \_ WPD](object-properties.md)                                                 | Necesario.                                                                                        |
 | [NOMBRE DE OBJETO \_ \_ WPD](object-properties.md)                                                            | Obligatorio si el objeto representa un archivo.                                                        |
 | [IDENTIFICADOR ÚNICO \_ PERSISTENTE \_ DEL OBJETO \_ \_ WPD](object-properties.md)                          | Obligatorio, de solo lectura. Un cliente no puede establecer esta propiedad, incluso en el momento de la creación.                   |
-| [FORMATO DE OBJETO \_ \_ WPD](object-properties.md)                                                        | Obligatorio.                                                                                        |
-| [TIPO DE CONTENIDO \_ DE \_ OBJETO \_ WPD](object-properties.md)                                           | Obligatorio.                                                                                        |
+| [FORMATO DE OBJETO \_ \_ WPD](object-properties.md)                                                        | Necesario.                                                                                        |
+| [TIPO DE CONTENIDO \_ DE \_ OBJETO \_ WPD](object-properties.md)                                           | Necesario.                                                                                        |
 | [\_ISHIDDEN DEL \_ OBJETO WPD](object-properties.md)                                                    | Obligatorio si el objeto está oculto.                                                                |
 | [ISSYSTEM DEL \_ OBJETO \_ WPD](object-properties.md)                                                    | Obligatorio si el objeto es un objeto del sistema (representa un archivo del sistema).                            |
 | [TAMAÑO DEL OBJETO \_ \_ WPD](object-properties.md)                                                            | Obligatorio si el objeto tiene al menos un recurso.                                                |
@@ -51,8 +51,8 @@ Este tipo de objeto admite las siguientes propiedades.
 | [RESOLUCIÓN HORIZONTAL DE \_ LA IMAGEN \_ \_ WPD](image-properties.md)                                                            | Opcional.                                                                                        |
 | [RESOLUCIÓN \_ VERTICAL DE LA IMAGEN \_ \_ WPD](image-properties.md)                                                              | Opcional.                                                                                        |
 | [WPD \_ MEDIA \_ COPYRIGHT](media-properties.md)                                                     | Opcional.                                                                                        |
-| [ANCHO DE MEDIOS \_ \_ WPD](media-properties.md)                                                             | Obligatorio.                                                                                        |
-| [ALTO DE \_ MEDIOS \_ WPD](media-properties.md)                                                           | Obligatorio.                                                                                        |
+| [ANCHO DE MEDIOS \_ \_ WPD](media-properties.md)                                                             | Necesario.                                                                                        |
+| [ALTO DE \_ MEDIOS \_ WPD](media-properties.md)                                                           | Necesario.                                                                                        |
 | [WPD \_ MEDIA \_ ARTIST](media-properties.md)                                                                            | Se recomienda su uso.                                                                                     |
 | [WPD \_ MEDIA \_ ALBUM \_ ARTIST](media-properties.md)                                                                     | Se recomienda su uso. Esta propiedad identifica a la persona o personas que crearon originalmente este objeto. |
 | [DIRECCIÓN URL DE \_ ORIGEN MULTIMEDIA DE \_ \_ WPD](media-properties.md)                                                                       | Opcional.                                                                                        |
@@ -75,9 +75,9 @@ Estos objetos suelen incluir los siguientes recursos.
 
 | Nombre de recurso                                                 | Obligatorio u opcional | Descripción                                                                              |
 |---------------------------------------------------------------|----------------------|------------------------------------------------------------------------------------------|
-| [**WPD \_ RESOURCE \_ DEFAULT**](wpd-resource-default.md)        | Obligatorio.            | Contiene los datos de la imagen.                                                                 |
+| [**WPD \_ RESOURCE \_ DEFAULT**](wpd-resource-default.md)        | Necesario.            | Contiene los datos de la imagen.                                                                 |
 | [**MINIATURA DE RECURSOS DE WPD \_ \_**](wpd-resource-thumbnail.md)    | Se recomienda su uso.         | Contiene la miniatura de la imagen.                                                    |
-| [**CLIP DE \_ AUDIO DE \_ RECURSOS WPD \_**](wpd-resource-audio-clip.md) | Opcional.            | Si esta imagen tiene una anotación de audio asociada, este recurso contiene los datos de audio. |
+| [**CLIP DE \_ AUDIO DE RECURSOS \_ WPD \_**](wpd-resource-audio-clip.md) | Opcional.            | Si esta imagen tiene una anotación de audio asociada, este recurso contiene los datos de audio. |
 
 
 

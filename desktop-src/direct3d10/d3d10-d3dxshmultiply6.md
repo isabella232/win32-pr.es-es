@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: b442d6d8c64d7c1ef0b202bd2cfa5d6d625280eb7320609a11ea89420c2bc215
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0768bb8be1f2f23693a431a2c0ea8f3d5a6846d2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119990005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474505"
 ---
 # <a name="d3dxshmultiply6-function"></a>Función D3DXSHMultiply6
 
@@ -75,9 +75,9 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
 Puntero a coeficientes de salida sh.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El producto de dos funciones SH del orden N = 6 genera una función SH del orden 2 × *N* - 1 = 11, pero los resultados se truncan. Esto significa que el producto se desplaza ( *f* × *g* g × f ) pero no se asocia  =   ( *f* × ( *g* × *h* ) ≠ ( *f* × *g* ) × *h* ). 
+El producto de dos funciones SH del orden N = 6 genera una función SH del orden 2 × *N* - 1 = 11, pero los resultados se truncan. Esto significa que el producto conmuta ( *f* × *g g*× f ) pero no asocia (  =   *f* × ( *g* × *h* ) ≠ ( *f* × *g* ) × *h* ). 
 
 Esta función usa la siguiente ecuación:
 

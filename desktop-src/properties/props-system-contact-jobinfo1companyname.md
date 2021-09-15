@@ -5,11 +5,11 @@ title: System.Contact.JobInfo1CompanyName
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 7c25b44a25ed56093550bfb95273ff8acc4d267d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101993"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571581"
 ---
 # <a name="systemcontactjobinfo1companyname"></a>System.Contact.JobInfo1CompanyName
 
@@ -28,7 +28,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

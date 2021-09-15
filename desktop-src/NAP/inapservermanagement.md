@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b324f32c542a6a300266d26ceb5981bb6e14d0feff28aa225698d6b32bbe94b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5a5eed03f535653a3b9244ff1aa74fe499c1bf2f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119012533"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473768"
 ---
 # <a name="inapservermanagement-interface"></a>Interfaz INapServerManagement
 
@@ -31,7 +31,7 @@ ms.locfileid: "119012533"
 
 **INapServerManagement proporciona** métodos que se usan para administrar el servidor NAP.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz INapServerManagement** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapServerManagement** también tiene estos tipos de miembros:
 
@@ -61,8 +61,8 @@ La **interfaz INapServerManagement** tiene estos métodos.
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                               |
-| Header<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qsvrmgmt.dll</dt> </dl>            |
 
 

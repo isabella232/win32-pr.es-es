@@ -4,12 +4,12 @@ ms.assetid: ca9c2636-733b-4ef0-93d3-c4829ec43b05
 title: Recuperar información de objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3b378ca6ede8f7caaeb91777dda124c2031a6b168040b43a7f6df8404b1339e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 16dac0fe3335fcd2e6972a1d71298ce3c11b13c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118963494"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572068"
 ---
 # <a name="retrieving-object-information"></a>Recuperar información de objeto
 

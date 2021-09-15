@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 41a8845a41714ed1a775d19e14f0996aad698aaf99de18da4eceb4df92688409
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b773d8404997da20b4196c802ba12286679af683
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118431108"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571225"
 ---
 # <a name="common-information-properties"></a>Propiedades de información comunes
 
@@ -30,8 +30,8 @@ Windows Dispositivos portátiles admite las siguientes propiedades de informaci�
 |-----------------------------------------------|----------------|----------------------------------------------------------------------------------------------------------|
 | **NOTAS DE \_ INFORMACIÓN \_ COMÚN DE \_ WPD**           | **VT \_ LPWSTR** | Para citas, tareas y objetos similares, esta propiedad contiene las notas del objeto especificado.     |
 | **ASUNTO DE \_ INFORMACIÓN COMÚN \_ DE \_ WPD**         | **VT \_ LPWSTR** | Valor que especifica el campo asunto de este objeto.                                                 |
-| **TEXTO DEL CUERPO \_ DE INFORMACIÓN COMÚN DE \_ \_ \_ WPD**      | **VT \_ LPWSTR** | Esta propiedad contiene el texto del cuerpo de un objeto, en formato html o texto sin formato.                          |
-| **PRIORIDAD DE \_ INFORMACIÓN \_ COMÚN DE \_ WPD**        | **VT \_ UI4**    | Valor que especifica la prioridad de este objeto. 0 indica la prioridad más alta.                    |
+| **TEXTO DEL CUERPO \_ DE \_ INFORMACIÓN \_ COMÚN DE \_ WPD**      | **VT \_ LPWSTR** | Esta propiedad contiene el texto del cuerpo de un objeto, en formato html o texto sin formato.                          |
+| **PRIORIDAD DE INFORMACIÓN \_ \_ COMÚN DE \_ WPD**        | **VT \_ UI4**    | Valor que especifica la prioridad de este objeto. 0 indica la prioridad más alta.                    |
 | **WPD \_ COMMON \_ INFORMATION \_ START \_ DATETIME** | **VT \_ DATE**   | Valor que especifica la fecha y hora en que se programa el inicio de una cita, una tarea u otro objeto similar. |
 | **WPD \_ COMMON \_ INFORMATION \_ END \_ DATETIME**   | **VT \_ DATE**   | Valor que especifica la fecha y hora en que está programada la finalización de una cita, una tarea u otro objeto similar.   |
 

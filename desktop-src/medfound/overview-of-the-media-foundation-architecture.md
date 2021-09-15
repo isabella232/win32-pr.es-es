@@ -1,15 +1,15 @@
 ---
-description: En este tema se describe el diseño general de Microsoft Media Foundation. Para obtener información sobre el uso de Media Foundation para tareas de programación específicas, vea Media Foundation Programming Guide.
+description: En este tema se describe el diseño general de Microsoft Media Foundation. Para obtener información sobre cómo usar Media Foundation tareas de programación específicas, vea Media Foundation Programming Guide(Guía de programación de aplicaciones).
 ms.assetid: DEA2B19A-CF15-4BF4-84C3-9A6417C942E2
 title: Introducción a la arquitectura Media Foundation de datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de953d05c55c96d1affa2213e1a7f11143a71aa319b4671c159f085e65268d05
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b0944eae1a74c1a5ba3dda8d94b69088128237f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118239641"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474051"
 ---
 # <a name="overview-of-the-media-foundation-architecture"></a>Introducción a la arquitectura Media Foundation de datos
 
@@ -46,7 +46,7 @@ La [sesión multimedia controla](media-session.md) el flujo de datos a través d
 
 ### <a name="source-reader-and-sink-writer"></a>Lector de origen y escritor de receptores
 
-El [lector de origen](source-reader.md) y el escritor [de](sink-writer.md) receptores proporcionan una manera alternativa de usar los componentes Media Foundation (orígenes multimedia, transformaciones y receptores multimedia). El lector de origen hospeda un origen multimedia y cero o más descodificadores, mientras que el sistema de escritura del receptor hospeda un receptor multimedia y cero o más codificadores. Puede usar el lector de origen para obtener datos comprimidos o descomprimidos de un origen multimedia y usar el sistema de escritura del receptor para codificar los datos y enviar los datos a un receptor multimedia.
+El [lector de origen](source-reader.md) y el escritor [de](sink-writer.md) receptores proporcionan una manera alternativa de usar los componentes de Media Foundation básicos (orígenes multimedia, transformaciones y receptores multimedia). El lector de origen hospeda un origen multimedia y cero o más descodificadores, mientras que el escritor receptor hospeda un receptor multimedia y cero o más codificadores. Puede usar el lector de origen para obtener datos comprimidos o descomprimidos de un origen multimedia y usar el sistema de escritura del receptor para codificar los datos y enviar los datos a un receptor multimedia.
 
 > [!Note]  
 > El lector de origen y el escritor de receptores están disponibles en Windows 7.

@@ -4,12 +4,12 @@ ms.assetid: 31d7de71-5bbb-4c29-8ce0-df3684c56916
 title: MF_BYTESTREAM_ORIGIN_NAME atributo (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: abc485beeaf2b3fb80b7dc231dedf4082b848e003d0128c0cf4c73e8c2c5cc3a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fe32602501b3750f709135cf7ca458b6eb6a572f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119941065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474228"
 ---
 # <a name="mf_bytestream_origin_name-attribute"></a>Atributo \_ MF BYTESTREAM \_ ORIGIN \_ NAME
 
@@ -19,7 +19,7 @@ Especifica la dirección URL original de una secuencia de bytes.
 
 Cadena de caracteres anchos
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los flujos de bytes basados en archivos pueden admitir este atributo. El valor del atributo se establece cuando se crea la secuencia de bytes. Para obtener el valor del atributo, consulte el objeto de flujo de bytes para la [**interfaz DEATTRIBUTEAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
 
@@ -33,7 +33,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                                                    |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| para aplicaciones para UWP\]<br/>                                              |
-| Header<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 

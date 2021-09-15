@@ -10,16 +10,16 @@ keywords:
 - IID (identificadores de interfaz)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63d32dc097e251c7fd82ff3b7ae5320d6bc1bfc628d32d436256a8a5c15bd7e3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 253ca5b4110536c2207f7e18ab0f28067789df71
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119808925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572196"
 ---
 # <a name="interface-identifiers"></a>Identificadores de interfaz
 
-Debe usar un identificador de interfaz (IID) al realizar llamadas al **método QueryInterface.** Un IID es un valor de identificador único global (GUID). En el SDK Windows formato multimedia, la constante asignada al IID para una interfaz determinada es el nombre de interfaz precedido por \_ "IID".
+Debe usar un identificador de interfaz (IID) al realizar llamadas al **método QueryInterface.** Un IID es un valor de identificador único global (GUID). En el SDK Windows Media Format, la constante asignada al IID para una interfaz determinada es el nombre de interfaz precedido por \_ "IID".
 
 En la tabla siguiente se enumeran los identificadores de interfaz y las constantes asociadas para las interfaces de este SDK.
 

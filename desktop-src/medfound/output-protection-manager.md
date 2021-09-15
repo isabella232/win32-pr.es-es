@@ -4,12 +4,12 @@ ms.assetid: daae615b-37c4-4044-91c6-693357e0016a
 title: Administrador de protección de salida
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a17d52c909596dba2304a38960b708da0b92cc17fd3530cae886641de1f69e3f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9afd3af42e7e93576eaf8bdb731b177a4a6d8719
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119101874"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474053"
 ---
 # <a name="output-protection-manager"></a>Administrador de protección de salida
 

@@ -7,11 +7,11 @@ ms.topic: article
 ms.date: 05/17/2021
 ms.localizationpriority: low
 ms.openlocfilehash: 15e35f26b72ed8d685e8302f6222836507e5c6a3
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "124361300"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571701"
 ---
 # <a name="firewall-dynamic-keywords"></a>Palabras clave dinámicas del firewall
 
@@ -464,7 +464,7 @@ int main()
 
 ### <a name="subscribe-to-and-handle-dynamic-keyword-address-change-notifications"></a>Suscripción y control de notificaciones de cambio de dirección de palabras clave dinámicas
 
-En este ejemplo se muestra cómo usar las funciones [**FwpmDynamicKeywordSubscribe0**](/windows/win32/api/fwpmu/nf-fwpmu-fwpmdynamickeywordsubscribe0) y [**FwpmDynamicKeywordUnsubscribe0**](/windows/win32/api/fwpmu/nf-fwpmu-fwpmdynamickeywordunsubscribe0) y la devolución FWPM_DYNAMIC_KEYWORD_CALLBACK0 [**llamada.**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_dynamic_keyword_callback0)
+En este ejemplo se muestra cómo usar las funciones [**FwpmDynamicKeywordSubscribe0**](/windows/win32/api/fwpmu/nf-fwpmu-fwpmdynamickeywordsubscribe0) y [**FwpmDynamicKeywordUnsubscribe0,**](/windows/win32/api/fwpmu/nf-fwpmu-fwpmdynamickeywordunsubscribe0) y la devolución [**FWPM_DYNAMIC_KEYWORD_CALLBACK0**](/windows/win32/api/fwpmu/nc-fwpmu-fwpm_dynamic_keyword_callback0) llamada.
 
 ```cppwinrt
 // main.cpp in a Console App project.

@@ -1,5 +1,5 @@
 ---
-title: IMsRdpClientAdvancedSettings CachePersistenceActive, propiedad
+title: Propiedad IMsRdpClientAdvancedSettings CachePersistenceActive
 description: Especifica si se debe usar el almacenamiento en caché de mapa de bits persistente. El almacenamiento en caché persistente puede mejorar el rendimiento, pero requiere más espacio en disco.
 ms.assetid: 5eb986c4-98dd-426f-8d55-d3a9a526e1b2
 ms.tgt_platform: multiple
@@ -7,17 +7,17 @@ keywords:
 - Propiedad CachePersistenceActive Servicios de Escritorio remoto
 - Propiedad CachePersistenceActive Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings
 - Interfaz IMsRdpClientAdvancedSettings Servicios de Escritorio remoto , propiedad CachePersistenceActive
-- Propiedad CachePersistenceActive Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings2
+- Propiedad CachePersistenceActive Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings2
 - Interfaz IMsRdpClientAdvancedSettings2 Servicios de Escritorio remoto , propiedad CachePersistenceActive
-- Propiedad CachePersistenceActive Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings3
+- Propiedad CachePersistenceActive Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings3
 - Interfaz IMsRdpClientAdvancedSettings3 Servicios de Escritorio remoto , propiedad CachePersistenceActive
 - Propiedad CachePersistenceActive Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings4
 - Interfaz IMsRdpClientAdvancedSettings4 Servicios de Escritorio remoto , propiedad CachePersistenceActive
-- Propiedad CachePersistenceActive Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings5
+- Propiedad CachePersistenceActive Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings5
 - Interfaz IMsRdpClientAdvancedSettings5 Servicios de Escritorio remoto , propiedad CachePersistenceActive
-- Propiedad CachePersistenceActive Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings6
+- Propiedad CachePersistenceActive Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings6
 - Interfaz IMsRdpClientAdvancedSettings6 Servicios de Escritorio remoto , propiedad CachePersistenceActive
-- Propiedad CachePersistenceActive Servicios de Escritorio remoto interfaz , IMsRdpClientAdvancedSettings7
+- Propiedad CachePersistenceActive Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings7
 - Interfaz IMsRdpClientAdvancedSettings7 Servicios de Escritorio remoto , propiedad CachePersistenceActive
 - Propiedad CachePersistenceActive Servicios de Escritorio remoto , interfaz IMsRdpClientAdvancedSettings8
 - Interfaz IMsRdpClientAdvancedSettings8 Servicios de Escritorio remoto , propiedad CachePersistenceActive
@@ -54,20 +54,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e9975bcfeca8ff5dfbedf3507003432cb4bd3167c794ecd0b690492caf3e40d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fb34e90cc028e95c750a444d53f42c9c0ab77400
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119871185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474601"
 ---
-# <a name="imsrdpclientadvancedsettingscachepersistenceactive-property"></a>IMsRdpClientAdvancedSettings::CachePersistenceActive, propiedad
+# <a name="imsrdpclientadvancedsettingscachepersistenceactive-property"></a>Propiedad IMsRdpClientAdvancedSettings::CachePersistenceActive
 
 Especifica si se debe usar el almacenamiento en caché de mapa de bits persistente. El almacenamiento en caché persistente puede mejorar el rendimiento, pero requiere más espacio en disco.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -90,7 +90,7 @@ Establezca este parámetro en 0 para deshabilitar la característica o un valor 
 
 Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 

@@ -1,19 +1,19 @@
 ---
-description: Nombre de familia del paquete de la aplicación que originó la instancia del elemento de almacenamiento.
+description: Nombre de familia del paquete de la aplicación en la que se originó la instancia del elemento de almacenamiento.
 ms.assetid: ccebd9a4-03b8-4351-ac37-0b161ddbe2c9
 title: System.SourcePackageFamilyName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca4452e0a6d50cdede05aeb3391cc50953dd2aaf943c86f195eb72830c639dc9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72486c4d46e8f42460c8ec48ac16686fb43d4d63
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118227660"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572584"
 ---
 # <a name="systemsourcepackagefamilyname"></a>System.SourcePackageFamilyName
 
-Nombre de familia del paquete de la aplicación que originó la instancia del elemento de almacenamiento.
+Nombre de familia del paquete de la aplicación en la que se originó la instancia del elemento de almacenamiento.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

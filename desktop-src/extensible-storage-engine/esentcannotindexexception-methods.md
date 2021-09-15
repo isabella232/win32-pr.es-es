@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101261
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 8b1ec2b6ca2bd12543ed0d677763ef9d7b7016628cac9f1fa34037e04aee5ce1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 43c565f38b828ab7e39d014a5c75bdfc4b119175
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118783247"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474417"
 ---
 # <a name="esentcannotindexexception-methods"></a>Métodos de EsentCannotIndexException 
 
@@ -78,7 +78,7 @@ El [tipo EsentCannotIndexException](./esentcannotindexexception-class.md) expone
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

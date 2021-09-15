@@ -16,12 +16,12 @@ keywords:
 - templates,video device conformance templates
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df63d40152e814f879498f0f99e386c9b21ef1e32746cf0c405aa46ab9d2fa48
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc6735d029bc2339296fa2a0af8a48ace3303ae3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119584845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572133"
 ---
 # <a name="video-device-conformance-templates"></a>Plantillas de conformidad de dispositivos de vídeo
 
@@ -31,7 +31,7 @@ En las tablas siguientes se muestran las plantillas de conformidad de dispositiv
 
 
 
-| Parámetro                                | Valor                                                                                 |
+| Parámetro                                | Value                                                                                 |
 |------------------------------------------|---------------------------------------------------------------------------------------|
 | Cadena de plantilla                          | "SP@LL"                                                                               |
 | Dispositivos adecuados                      | Conjuntos de manos inalámbricos (Microsoft Windows-Powered SmartPhone Solution y dispositivos similares) |
@@ -49,7 +49,7 @@ En las tablas siguientes se muestran las plantillas de conformidad de dispositiv
 
 
 
-| Parámetro                                | Valor                                                                                |
+| Parámetro                                | Value                                                                                |
 |------------------------------------------|--------------------------------------------------------------------------------------|
 | Cadena de plantilla                          | "SP@ML"                                                                              |
 | Dispositivos adecuados                      | Equipos portátiles y asistentes de datos personalesHigh-end wireless handsets<br/> |
@@ -78,7 +78,7 @@ A una secuencia que cumpla las limitaciones algorítmicas del perfil simple, per
 | Resolución máxima                       | 352 x 288                                   |
 | Velocidad máxima de fotogramas                       | 30 fps                                      |
 | Velocidad de bits máxima                         | 2 Mbps                                      |
-| Tamaño máximo del búfer (en unidades de 16384 bits) | 306 (aproximadamente 2,5 segundos a velocidad de bits máxima) |
+| Tamaño máximo del búfer (en unidades de 16384 bits) | 306 (unos 2,5 segundos con velocidad de bits máxima) |
 | Codificación entrelazada                      | No                                          |
 
 
@@ -89,7 +89,7 @@ A una secuencia que cumpla las limitaciones algorítmicas del perfil simple, per
 
 
 
-| Parámetro                                | Valor                                                                                                                  |
+| Parámetro                                | Value                                                                                                                  |
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Cadena de plantilla                          | "MP@ML"                                                                                                                |
 | Dispositivos adecuados                      | Set-top boxesSlower computers using DirectX Video Acceleration<br/> Windows Reproductores de DVD habilitados para medios<br/> |
@@ -107,10 +107,10 @@ A una secuencia que cumpla las limitaciones algorítmicas del perfil simple, per
 
 
 
-| Parámetro                                | Valor                                                                                                                                                                 |
+| Parámetro                                | Value                                                                                                                                                                 |
 |------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cadena de plantilla                          | "MP@HL"                                                                                                                                                               |
-| Dispositivos adecuados                      | Equipos que usan reproductores de DVD habilitados para DirectX Video AccelerationHigh-Definition Windows Media<br/> Cámara digital<br/> streaming de alta definición<br/> |
+| Dispositivos adecuados                      | Equipos que usan reproductores de DVD habilitados para DirectX Video AccelerationHigh-Definition Windows Media<br/> Digital digital<br/> streaming de alta definición<br/> |
 | Resolución máxima                       | 1920 x 1080                                                                                                                                                           |
 | Velocidad máxima de fotogramas                       | 30 fps @ 1920 x 108060 fps @ 1280 x 720<br/>                                                                                                                    |
 | Velocidad de bits máxima                         | 20 Mbps                                                                                                                                                               |
@@ -129,10 +129,10 @@ A una secuencia que cumpla las limitaciones algorítmicas del perfil principal, 
 
 
 
-| Parámetro       | Valor                                                                                                                                  |
+| Parámetro       | Value                                                                                                                                  |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Cadena de plantilla | "CP"                                                                                                                                   |
-| Comentarios         | El perfil complejo no tiene limitaciones explícitas. Se usa para habilitar todos los algoritmos de códec, normalmente con fines de demostración. |
+| Observaciones         | El perfil complejo no tiene limitaciones explícitas. Se usa para habilitar todos los algoritmos de códec, normalmente con fines de demostración. |
 
 
 
@@ -144,7 +144,7 @@ En las tablas siguientes se muestran los parámetros de las plantillas de confor
 
 
 
-| Parámetro                                | Valor                                       |
+| Parámetro                                | Value                                       |
 |------------------------------------------|---------------------------------------------|
 | Cadena de plantilla                          | "I1"                                        |
 | Resolución máxima                       | 352 x 288                                   |
@@ -161,7 +161,7 @@ En las tablas siguientes se muestran los parámetros de las plantillas de confor
 
 
 
-| Parámetro                                | Valor                                       |
+| Parámetro                                | Value                                       |
 |------------------------------------------|---------------------------------------------|
 | Cadena de plantilla                          | "I2"                                        |
 | Resolución máxima                       | 1024 x 768                                  |

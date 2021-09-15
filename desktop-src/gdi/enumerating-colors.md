@@ -4,12 +4,12 @@ ms.assetid: cbaa3732-e55e-42af-93de-390450d38fc9
 title: Enumerar colores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fe7c180e013c940be194697b53ed4cb3c83fc2f08bface6b9dcd459e93f91bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dca39ec9817ecab07c2c2bc42b08fbee83333f82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119037993"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474330"
 ---
 # <a name="enumerating-colors"></a>Enumerar colores
 

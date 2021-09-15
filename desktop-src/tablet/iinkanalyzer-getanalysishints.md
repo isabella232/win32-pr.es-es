@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: b1aa2dede2e5027b3e626d3cbcc152d03348e34b87e4cbb5e9d3e2106d3b58c4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c5ce66eeb6362ed74f1df1a38f220603d3a30117
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120008385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572400"
 ---
 # <a name="iinkanalyzergetanalysishints-method"></a>IInkAnalyzer::GetAnalysisHints (método)
 
@@ -50,16 +50,16 @@ Puntero a todos los objetos [**IContextNode**](icontextnode.md) de la sugerencia
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Caution]  
 > Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppAnalysisHints* cuando ya no necesite usar el objeto .
 
  
 
-Este método devuelve una colección vacía si no hay nodos de sugerencias de análisis asociados a [**IInkAnalyzer**](iinkanalyzer.md).
+Este método devuelve una colección vacía si no hay nodos de sugerencias de análisis asociados a [**IInkAnalyzer.**](iinkanalyzer.md)
 
-Un nodo de sugerencia de análisis es [**un IContextNode**](icontextnode.md) con un tipo de nodo de contexto AnalysisHint (vea [**IContextNode::GetType**](icontextnode-gettype.md) y Tipos de nodo [de contexto).](context-node-types.md)
+Un nodo de sugerencia de análisis es [**un IContextNode**](icontextnode.md) con un tipo de nodo de contexto AnalysisHint (vea [**IContextNode::GetType**](icontextnode-gettype.md) y [Tipos de nodo de contexto).](context-node-types.md)
 
 Para agregar información de contexto a la sugerencia, use [**IContextNode::AddPropertyData**](icontextnode-addpropertydata.md) con el parámetro *pPropertyDataId* establecido en uno de los identificadores únicos globales (GUID) en las constantes [propiedades](analysis-hint-properties.md) de sugerencias de análisis.
 
@@ -73,12 +73,12 @@ Para buscar qué valores de propiedad se establecen en un nodo de contexto, use 
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

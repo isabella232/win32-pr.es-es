@@ -4,12 +4,12 @@ description: El par de asignador/desasignador predeterminado utilizado por los c
 ms.assetid: 9477e677-59cb-45d5-b485-ab0171ac17ba
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93648b56ed47eb98a83b27a39b606fa2a51de9bf5791ad1b732e7169ef5dfa63
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 26dca10ebea44fbb202240e981612e16e7960216
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120018185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473567"
 ---
 # <a name="rpcss-memory-management-package"></a>Paquete de administración de memoria rpcSs
 
@@ -20,7 +20,7 @@ El par de asignador/desasignador predeterminado utilizado por los códigos auxil
 
  
 
-En el modo **/osf,** el paquete RpcSs se habilita automáticamente para los códigos auxiliares generados por MIDL cuando se usan punteros completos, cuando los argumentos requieren asignación de memoria o como resultado de usar el atributo **\[ enable \_ allocate. \]** En el modo predeterminado (extendido de Microsoft), el paquete RpcSs solo se habilita cuando se usa el atributo **\[ \_ enable allocate. \]** El **\[ atributo enable \_ allocate \]** habilita el entorno rpcSs mediante los códigos auxiliares del lado servidor. El lado cliente se alerta de la posibilidad de que el paquete RpcSs esté habilitado. En **el modo /osf,** el lado cliente no se ve afectado.
+En el modo **/osf,** el paquete RpcSs se habilita automáticamente para los códigos auxiliares generados por MIDL cuando se usan punteros completos, cuando los argumentos requieren asignación de memoria o como resultado de usar el atributo **\[ enable \_ allocate. \]** En el modo predeterminado (microsoft extendido), el paquete RpcSs solo se habilita cuando se usa el atributo **\[ \_ enable allocate. \]** El **\[ atributo enable \_ allocate \]** habilita el entorno rpcSs mediante los códigos auxiliares del lado servidor. El lado cliente se alerta de la posibilidad de que el paquete RpcSs esté habilitado. En **el modo /osf,** el lado cliente no se ve afectado.
 
 Cuando el paquete RpcSs está habilitado, la asignación de memoria en el lado servidor se realiza con el asignador de administración de memoria rpcSs privado y el par de desasignadores. Puede asignar memoria mediante el mismo mecanismo llamando a [**RpcSmAllocate**](/windows/desktop/api/Rpcndr/nf-rpcndr-rpcsmallocate) (o [**RpcSsAllocate).**](/windows/desktop/api/Rpcndr/nf-rpcndr-rpcssallocate) Tras la devolución del código auxiliar del servidor, se libera automáticamente toda la memoria asignada por el paquete RpcSs. En el ejemplo siguiente se muestra cómo habilitar el paquete RpcSs:
 

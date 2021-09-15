@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 88d6c3a85c308da75998828a4fd3762590c28773982dffdc58f7b99b62a8a8cf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c3c0161b0b145e5862ce6093a25ac4c6ea913dfd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120066825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571812"
 ---
 # <a name="durablecommitcallbackdispose-method"></a>Método DurableCommitCallback.Dispose
 
@@ -53,7 +53,7 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

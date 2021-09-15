@@ -1,6 +1,6 @@
 ---
 title: Método ID3DX11ThreadPump GetQueueStatus (D3DX11core.h)
-description: 'Nota: La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Obtiene el número de elementos de cada una de las tres colas dentro de la bomba de subprocesos.'
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Obtiene el número de elementos de cada una de las tres colas dentro de la bomba de subprocesos.
 ms.assetid: 69e1c786-6c7d-4432-bf34-3bf7606a07f6
 keywords:
 - Método GetQueueStatus Direct3D 11
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41535dba7c5abb96c132714ecbc6ee4e02f1f42fcb6a45ebe8795286d8613c66
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c3c945cb2978af15263d3f72d34a47c5e8ca8a69
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119851505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474480"
 ---
 # <a name="id3dx11threadpumpgetqueuestatus-method"></a>Método ID3DX11ThreadPump::GetQueueStatus
 

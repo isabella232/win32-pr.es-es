@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 99da00f211530f231ad1ebcb6e6a6147fc2978b51b111a9648f45f608843f5a4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cfa0f4a82e3a8936ee3e7a262f8079396b95a54a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119116375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571796"
 ---
 # <a name="esentdatabasefailedincrementalreseedexception-class"></a>Clase EsentDatabaseFailedIncrementalReseedException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. DatabaseFailedIncrementalReseed exceptions.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

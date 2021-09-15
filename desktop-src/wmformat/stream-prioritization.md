@@ -7,21 +7,21 @@ keywords:
 - Formato de sistemas avanzados (ASF), priorización de secuencias
 - ASF (formato de sistemas avanzados), priorización de secuencias
 - Windows SDK de formato multimedia, orden de prioridad para secuencias
-- Formato de sistemas avanzados (ASF), orden de prioridad para secuencias
+- Formato de sistemas avanzados (ASF), orden de prioridad para las secuencias
 - ASF (formato de sistemas avanzados), orden de prioridad para las secuencias
 - streams,prioritization
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fd34bab6a7957d7cbcdf97a78fc3d8be1f663d43ef1eb1ec8d4c575571ad0a0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: abe1628ef050d393cd2d98e73708d5a9ad6c3be4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118197281"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571244"
 ---
 # <a name="stream-prioritization"></a>Priorización de secuencias
 
-Al crear un archivo ASF, puede especificar un orden de prioridad para sus flujos constituyentes. Si transmite un archivo con prioridad y el ancho de banda disponible no es suficiente para entregar todas las secuencias, el lector quitará los flujos en orden de prioridad inversa. De este modo, puede garantizar que las secuencias más importantes del archivo no se descartarán debido a dificultades de red.
+Al crear un archivo ASF, puede especificar un orden de prioridad para sus secuencias constituyentes. Si transmite un archivo con prioridad y el ancho de banda disponible no es suficiente para entregar todas las secuencias, el lector quitará los flujos en orden de prioridad inverso. De esta manera, puede garantizar que las secuencias más importantes del archivo no se descartarán debido a las dificultades de red.
 
 La priorización de secuencias se configura con un objeto de priorización de secuencias y se agrega al perfil. Un perfil solo puede contener un objeto de priorización de secuencias.
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 251d61e868cdd8bf5d49d0915763893ed4a85b0b0232afda728fef93d29779b6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bf94a4556762c68a886e5fab4b8f3fec2eeb003f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119783282"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474368"
 ---
 # <a name="esentinvalidparameterexception-class"></a>Clase EsentInvalidParameterException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones invalidParameter.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

@@ -4,12 +4,12 @@ ms.assetid: 11d38c9a-775d-41f7-a193-37b702b29a96
 title: Dibujar un objeto BitmapSource mediante Direct2D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d6636bb1d0b0294e7d496ffd8839c645ad046bb256001b2abd1744714eb4c48
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6f6dfdddb7cd6f7ab7341eb3c13a9fe40b797f09
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117668705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571325"
 ---
 # <a name="how-to-draw-a-bitmapsource-using-direct2d"></a>Dibujar un objeto BitmapSource mediante Direct2D
 
@@ -131,7 +131,7 @@ El código se ha omitido en este ejemplo. Para obtener el código completo, cons
 [Referencia](-wic-codec-reference.md)
 
 
-[Ejemplos](-wic-samples.md)
+[Muestras](-wic-samples.md)
 
 
 [Direct2D](../direct2d/direct2d-portal.md)

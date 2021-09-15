@@ -1,27 +1,27 @@
 ---
-description: Desplazamiento entre el tiempo de presentación y las marcas de tiempo de los orígenes multimedia.
+description: Desplazamiento entre el tiempo de presentación y las marcas de tiempo de los orígenes de medios.
 ms.assetid: 450f3c39-063e-4bf3-838a-0f7c240d6647
 title: MF_EVENT_PRESENTATION_TIME_OFFSET atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5ff2285bc624d42f17d4662cf93e3f46a65fcbef465e731874ef255c40c076d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 030d9d10eb5daf4fa1c920ad027397710b937881
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120013085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474196"
 ---
 # <a name="mf_event_presentation_time_offset-attribute"></a>Atributo MF \_ EVENT \_ PRESENTATION TIME \_ \_ OFFSET
 
-Desplazamiento entre el tiempo de presentación y las marcas de tiempo del origen del medio.
+Desplazamiento entre el tiempo de presentación y las marcas de tiempo del origen multimedia.
 
 ## <a name="data-type"></a>Tipo de datos
 
 **UINT64**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El desplazamiento se calcula de la siguiente manera: desplazamiento = tiempo de presentación - hora de origen. Este atributo se usa con los siguientes eventos:
+El desplazamiento se calcula de la siguiente manera: offset = tiempo de presentación - hora de origen. Este atributo se usa con los siguientes eventos:
 
 -   [MESessionNotifyPresentationTime](mesessionnotifypresentationtime.md)
 -   [MESessionStarted](mesessionstarted.md)
@@ -32,11 +32,11 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

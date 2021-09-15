@@ -1,5 +1,5 @@
 ---
-description: Más información sobre el método Windows7Api.JetConfigureProcessForCrashDump
+description: 'Más información sobre: Método Windows7Api.JetConfigureProcessForCrashDump'
 title: Método Windows7Api.JetConfigureProcessForCrashDump (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: 'JetConfigureProcessForCrashDump method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows7.Windows7Api.JetConfigureProcessForCrashDump(Microsoft.Isam.Esent.Interop.Windows7.CrashDumpGrbit)
@@ -25,12 +25,12 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 - esent.interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f68a6a7e2bc22a3272803d2b576ff36e81a3335a51eaa73941c5f1ca72695a26
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ecabba69d87d64995179de99e5fc4e42a93d0f3e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117889597"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571732"
 ---
 # <a name="windows7apijetconfigureprocessforcrashdump-method"></a>Método Windows7Api.JetConfigureProcessForCrashDump
 

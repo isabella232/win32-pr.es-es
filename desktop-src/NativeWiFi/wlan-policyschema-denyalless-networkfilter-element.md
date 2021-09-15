@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 5057f94dd91e2d7090c4f147ba987324e369dda706031ecebb8a79b165214414
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c3e83aeb14e0572f8e2ccc49bf2d04718afa7f30
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118619870"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473704"
 ---
 # <a name="denyalless-networkfilter-element"></a>elemento denyAllESS (networkFilter)
 

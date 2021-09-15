@@ -1,7 +1,7 @@
 ---
 description: Especifica la lista de redes LAN inalámbricas a las que una máquina no debe conectarse.
 ms.assetid: 01db3f7e-1e27-4378-9c42-bc38192f9507
-title: Elemento blockList (networkFilter)
+title: elemento blockList (networkFilter)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 9c5bd795ee9f5fc21dc205c24306820b4dec7f074638aa0e4f11ba3acde68cd0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e852286d00d93904bd185fef6c2f3444bb5987f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119684425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473709"
 ---
-# <a name="blocklist-networkfilter-element"></a>Elemento blockList (networkFilter)
+# <a name="blocklist-networkfilter-element"></a>elemento blockList (networkFilter)
 
 El elemento blockList (networkFilter) especifica la lista de redes LAN inalámbricas a las que una máquina no debe conectarse.
 
@@ -50,7 +50,7 @@ El **elemento blockList** se define mediante el [**elemento networkFilter.**](wl
 
 | Elemento                                                        | Tipo                                                                     | Descripción                      |
 |----------------------------------------------------------------|--------------------------------------------------------------------------|----------------------------------|
-| [**Red**](wlan-policyschema-network-blocklist-element.md) | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | Red bloqueada. <br/> |
+| [**Red**](wlan-policyschema-network-blocklist-element.md) | [**networkItemType**](wlan-policyschema-networkitemtype-complextype.md) | La red bloqueada. <br/> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 33ef8ecb-29e3-4809-9d56-8d884f9c9ff6
 title: System.Devices.ChargingState
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea4317d5f37959081bd4477353f7fe1b7b9f8c63bc203661f76c8aa940552851
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: de306cc44900849d74ba24924c9c4066c0ffe0a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118054436"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571556"
 ---
 # <a name="systemdeviceschargingstate"></a>System.Devices.ChargingState
 
@@ -51,7 +51,7 @@ propertyDescription
             defineToken = CHARGINGSTATE_UNKNOWN_STATE
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

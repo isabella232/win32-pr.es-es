@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 444f022c2f4db57c1c62f1405b30625bf7fed291674255ed6287026c9451e825
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6911f839a26aae67fbc1e57494e5a75291721663
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119059013"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474615"
 ---
 # <a name="imsrdpclient3-interface"></a>Interfaz IMsRdpClient3
 
 Proporciona los métodos y propiedades necesarios para configurar y usar el control de cliente. Deriva de la [**interfaz IMsRdpClient2.**](imsrdpclient2.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IMsRdpClient3** hereda de [**IMsRdpClient2**](imsrdpclient2.md). **IMsRdpClient3** también tiene estos tipos de miembros:
 
@@ -39,7 +39,7 @@ La **interfaz IMsRdpClient3** tiene estas propiedades.
 
 
 
-| Propiedad                                                                | Tipo de acceso          | Descripción                                                                                                                                                       |
+| Propiedad.                                                                | Tipo de acceso          | Descripción                                                                                                                                                       |
 |:------------------------------------------------------------------------|:---------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AdvancedSettings4**](imsrdpclient3-advancedsettings4.md)<br/> | Solo lectura<br/> | Puntero a la [**interfaz IMsRdpClientAdvancedSettings3,**](imsrdpclientadvancedsettings3.md) que se usa para establecer la configuración avanzada para el control de cliente.<br/> |
 
@@ -47,7 +47,7 @@ La **interfaz IMsRdpClient3** tiene estas propiedades.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las interfaces siguientes han ampliado la interfaz **IMsRdpClient3,** y cada nueva interfaz hereda todos los métodos y propiedades de las interfaces anteriores:
 

@@ -1,6 +1,6 @@
 ---
 title: MCI_RESUME comando (Mmsystem.h)
-description: El comando RESUME de MCI \_ hace que un dispositivo en pausa reanude la operación en pausa.
+description: El comando MCI \_ RESUME hace que un dispositivo en pausa reanude la operación en pausa.
 ms.assetid: 2df712c1-5005-4e89-a439-a651076bbb73
 keywords:
 - MCI_RESUME comando Windows Multimedia
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: bd83b6d753cd223235b8b11f2d4b0be4c828ec28
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370081"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473883"
 ---
-# <a name="mci_resume-command"></a>Comando RESUME de MCI \_
+# <a name="mci_resume-command"></a>Comando MCI \_ RESUME
 
-El comando RESUME de MCI \_ hace que un dispositivo en pausa reanude la operación en pausa. Los dispositivos de vídeo digital, VCR y audio de forma de onda reconocen este comando. Aunque los dispositivos cd audio, secuenciador MIDI y videodisc también reconocen este comando, los controladores de dispositivo MCICDA, MCISEQ y MCIPIONR no lo admiten.
+El comando MCI \_ RESUME hace que un dispositivo en pausa reanude la operación en pausa. Los dispositivos de audio y vídeo digital, VCR y forma de onda reconocen este comando. Aunque los dispositivos cd audio, secuenciador MIDI y videodisc también reconocen este comando, los controladores de dispositivo MCICDA, MCISEQ y MCIPIONR no lo admiten.
 
 Para enviar este comando, llame a la [**función mciSendCommand**](/previous-versions//dd757160(v=vs.85)) con los parámetros siguientes.
 
@@ -60,17 +60,17 @@ MCI \_ NOTIFY, MCI \_ WAIT o, para dispositivos de vídeo digital y VCR, MCI \_ 
 <span id="lpResume"></span><span id="lpresume"></span><span id="LPRESUME"></span>*lpResume*
 </dt> <dd>
 
-Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos pueden reemplazar esta estructura por una estructura específica del dispositivo).
+Puntero a una [**estructura \_ MCI GENERIC \_ PARMS.**](mci-generic-parms.md) (Los dispositivos con conjuntos de comandos extendidos podrían reemplazar esta estructura por una estructura específica del dispositivo).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
+Devuelve cero si se realiza correctamente o un error en caso contrario.
 
 ## <a name="remarks"></a>Observaciones
 
-Este comando reanuda la reproducción y grabación sin cambiar la posición de la pista actual establecida con [MCI \_ PLAY](mci-play.md) o [MCI \_ RECORD.](mci-record.md)
+Este comando reanuda la reproducción y grabación sin cambiar la posición actual de la pista establecida con [MCI \_ PLAY](mci-play.md) o [MCI \_ RECORD](mci-record.md).
 
 ## <a name="requirements"></a>Requisitos
 

@@ -4,12 +4,12 @@ ms.assetid: c059a14d-e698-433f-a483-d29d30ab703f
 title: System.Devices.DeviceCharacteristics
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b9551d6e2bbce49786b707d4482a42caae89f6fe534c0af97a4ae77a5d1f3ff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 287a1ba8180af959cb14ce84d1c317915c95e14a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118728519"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571529"
 ---
 # <a name="systemdevicesdevicecharacteristics"></a>System.Devices.DeviceCharacteristics
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

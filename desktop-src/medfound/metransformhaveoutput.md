@@ -1,29 +1,29 @@
 ---
-description: Enviado por una transformación de Media Foundation asincrónica (MFT) cuando los datos de salida nuevos están disponibles desde la MFT.
+description: Enviado por una transformación de Media Foundation asincrónica (MFT) cuando hay nuevos datos de salida disponibles desde MFT.
 ms.assetid: a9403ad3-81bf-4cd7-ba7f-816b901bb02c
-title: Evento METransformHaveOutput (Mfobjects. h)
+title: Evento METransformTransformTransformOutput (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: de6ee70f21c0edcf65a8090feaf90d310839749e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677437"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474245"
 ---
-# <a name="metransformhaveoutput-event"></a>Evento METransformHaveOutput
+# <a name="metransformhaveoutput-event"></a>Evento METransformTransformTransformOutput
 
-Enviado por una transformación de Media Foundation asincrónica (MFT) cuando los datos de salida nuevos están disponibles desde la MFT.
+Enviado por una transformación de Media Foundation asincrónica (MFT) cuando hay nuevos datos de salida disponibles desde MFT.
 
 ## <a name="event-values"></a>Valores de evento
 
-Los valores posibles recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) son los siguientes.
+Los valores posibles recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluyen lo siguiente.
 
 
 
 | VARTYPE              | Descripción               |
 |----------------------|---------------------------|
-| VT \_ vacío<br/> | Sin datos del evento.<br/> |
+| VT \_ EMPTY<br/> | Sin datos del evento.<br/> |
 
 
 
@@ -33,9 +33,9 @@ No hay atributos definidos para este evento.
 
 ## <a name="remarks"></a>Observaciones
 
-Los MFTs asincrónicos envían este evento a través de la interfaz [**IMFMediaEventGenerator**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) . Los MFTs sincrónicos nunca envían este evento.
+Las MTA asincrónicas envían este evento a través [**de la interfaz DEFMediaEventGenerator.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) Los MFT sincrónicos nunca envían este evento.
 
-Cuando el cliente del MFT recibe este evento, debe llamar a [**IMFTransform::P rocessoutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) para obtener la salida.
+Cuando el cliente de MFT recibe este evento, debe llamar a [**IMFTransform::P rocessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) para obtener la salida.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,9 +43,9 @@ Cuando el cliente del MFT recibe este evento, debe llamar a [**IMFTransform::P r
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 7 \[\]<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 R2 \[\]<br/>                                                  |
-| Encabezado<br/>                   | <dl> <dt>Mfobjects. h (incluye Mfidl. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 \[ aplicaciones de escritorio\]<br/>                                                               |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                  |
+| Encabezado<br/>                   | <dl> <dt>Mfobjects.h (incluir Mfidl.h)</dt> </dl> |
 
 
 
@@ -53,10 +53,10 @@ Cuando el cliente del MFT recibe este evento, debe llamar a [**IMFTransform::P r
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> <dt>
 
-[MFTs asincrónico](asynchronous-mfts.md)
+[MFT asincrónicos](asynchronous-mfts.md)
 </dt> </dl>
 
  

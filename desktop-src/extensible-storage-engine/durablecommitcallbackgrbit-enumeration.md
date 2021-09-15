@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: enumeración DurableCommitCallbackGrbit'
-title: Enumeración DurableCommitCallbackGrbit (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: Enumeración DurableCommitCallbackGrbit'
+title: Enumeración DurableCommitCallbackGrbit (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: DurableCommitCallbackGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.DurableCommitCallbackGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.durablecommitcallbackgrbit(v=EXCHG.10)
@@ -27,20 +27,20 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 5b4f28b0c466cb512c76d57d99fb26a44c18f806
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717098"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571797"
 ---
-# <a name="durablecommitcallbackgrbit-enumeration"></a>Enumeración DurableCommitCallbackGrbit
+# <a name="durablecommitcallbackgrbit-enumeration"></a>DurableCommitCallbackGrbit (enumeración)
 
-Opciones pasadas a la devolución de llamada del vaciado del registro.
+Opciones pasadas a la devolución de llamada de vaciado del registro.
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,7 +57,7 @@ Dim instance As DurableCommitCallbackGrbit
 public enum DurableCommitCallbackGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -77,8 +77,8 @@ public enum DurableCommitCallbackGrbit
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

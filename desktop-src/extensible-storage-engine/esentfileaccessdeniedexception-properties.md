@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101668
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: ca51d71551f00e563f940a48060af6e8a4ad355881b58ce6544b35cb2c34250e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d5d69b01b9bd4e0e50d3fe8bb752aadd1758325
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118269363"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474379"
 ---
 # <a name="esentfileaccessdeniedexception-properties"></a>Propiedades de EsentFileAccessDeniedException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentFileAccessDeniedException](./esentfileaccessdeniedexception-class.md) expone los miembros siguientes.
+El [tipo EsentFileAccessDeniedException](./esentfileaccessdeniedexception-class.md) expone los siguientes miembros.
 
 ## <a name="properties"></a>Propiedades
 
@@ -83,7 +83,7 @@ El [tipo EsentFileAccessDeniedException](./esentfileaccessdeniedexception-class.
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

@@ -1,25 +1,25 @@
 ---
-description: Indica al asignador de ejemplo de vídeo que cree texturas como compartibles mediante la exclusión mutua con clave.
+description: Indica al asignador de ejemplo de vídeo que cree texturas como compartibles mediante exclusión mutua con clave.
 ms.assetid: 798CA474-3B1A-4795-81B7-563749197104
 title: MF_SA_D3D11_SHARED atributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 439e92ca57c306434898bfe167646d4e9df98a4cee0b4db8b9c8f84e394cdc21
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ff6ecb23a99a732e183bc16942e33bbb4f8e3a40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117875995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474124"
 ---
-# <a name="mf_sa_d3d11_shared-attribute"></a>Atributo \_ SHARED DE MF SA \_ D3D11 \_
+# <a name="mf_sa_d3d11_shared-attribute"></a>Atributo SHARED de MF \_ SA \_ D3D11 \_
 
-Indica al asignador de ejemplo de vídeo que cree texturas como compartibles mediante la exclusión mutua con clave.
+Indica al asignador de ejemplo de vídeo que cree texturas como compartibles mediante exclusión mutua con clave.
 
 ## <a name="data-type"></a>Tipo de datos
 
 **UINT32**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ### <a name="sample-allocator"></a>Asignador de ejemplo
 
@@ -29,15 +29,15 @@ Este atributo se puede establecer en el asignador de ejemplo de vídeo, en el [*
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                              |
-| Header<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

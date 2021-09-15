@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 6c32039a82e3a0b5c086cbe18e895bdec1aaac09d4947b90d9ba18e8c6636d71
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c3ae68c0564c7f76f38e91b7d27c8c3deb5ef2b4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120108285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473992"
 ---
 # <a name="cqueuegetqueueobject-method"></a>Método CQueue.GetQueueObject
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Devuelve un objeto de tipo **T** (el tipo de plantilla).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método se bloquea hasta que un elemento está disponible en la cola.
 

@@ -6,12 +6,12 @@ keywords:
 - RPC_AUTH_IDENTITY_HANDLE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 973de2cf6dcefde6c640de4511b896520093b9fa978f22d5c7b7cab58af1ec6a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e86559e7852172d34898d48f13bb2975ed792d85
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120018685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473614"
 ---
 # <a name="rpc_auth_identity_handle"></a>IDENTIFICADOR \_ DE IDENTIDAD DE \_ AUTENTICACIÓN \_ RPC
 

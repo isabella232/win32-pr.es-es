@@ -1,29 +1,29 @@
 ---
 description: 'Puede haber ocasiones en las que quiera crear un mapa de bits fuera de la pantalla que tenga las siguientes características:'
 ms.assetid: 2a7590ce-daf4-4892-a838-603e3f89b1bb
-title: Usar el modo de composición para controlar la mezcla alfa
+title: Usar el modo de composición para controlar la combinación alfa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ea2fc9d5be10e3a73bacf7f5a6dc5cbecb8c2992ac8cd961701f55fc2cb524d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: db54c71ac9687a1ddf28db09b922b7799d0ebaa3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119611995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474290"
 ---
-# <a name="using-compositing-mode-to-control-alpha-blending"></a>Usar el modo de composición para controlar la mezcla alfa
+# <a name="using-compositing-mode-to-control-alpha-blending"></a>Usar el modo de composición para controlar la combinación alfa
 
 Puede haber ocasiones en las que quiera crear un mapa de bits fuera de la pantalla que tenga las siguientes características:
 
 -   Los colores tienen valores alfa inferiores a 255.
 -   Los colores no se mezclan alfa entre sí al crear el mapa de bits.
--   Cuando se muestra el mapa de bits finalizado, los colores del mapa de bits se mezclan alfa con los colores de fondo en el dispositivo de visualización.
+-   Cuando se muestra el mapa de bits terminado, los colores del mapa de bits se mezclan alfa con los colores de fondo en el dispositivo de visualización.
 
-Para crear este tipo de mapa de bits, construya un objeto [**Bitmap**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) en blanco y, a continuación, construya un [**objeto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) basado en ese mapa de bits. Establezca el modo de composición del objeto **Graphics** en CompositingModeSourceCopy.
+Para crear este tipo de mapa de bits, cree un objeto [**Bitmap**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) en blanco y, a continuación, construya un [**objeto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) basado en ese mapa de bits. Establezca el modo de composición del objeto **Graphics** en CompositingModeSourceCopy.
 
-En el ejemplo siguiente se crea un [**objeto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) basado en un [**objeto Bitmap.**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) El código usa el **objeto Graphics** junto con dos pinceles semitransparentes (alfa = 160) para pintar en el mapa de bits. El código rellena una elipse roja y una elipse verde mediante los pinceles semitransparentes. La elipse verde se superpone a la elipse roja, pero el verde no se mezcla con el rojo porque el modo de composición del objeto **Graphics** está establecido en CompositingModeSourceCopy.
+En el ejemplo siguiente se crea un [**objeto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) basado en un [**objeto Bitmap.**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) El código usa el **objeto Graphics** junto con dos pinceles semitransparentes (alfa = 160) para pintar en el mapa de bits. El código rellena una elipse roja y una elipse verde con los pinceles semitransparentes. La elipse verde se superpone a la elipse roja, pero el verde no se combina con el rojo porque el modo de composición del objeto **Graphics** está establecido en CompositingModeSourceCopy.
 
-A continuación, el código se prepara para dibujar en la pantalla mediante una llamada a [BeginPaint](/windows/win32/api/winuser/nf-winuser-beginpaint) y la creación de un [**objeto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) basado en un contexto de dispositivo. El código dibuja el mapa de bits en la pantalla dos veces: una vez sobre un fondo blanco y otra en un fondo de color azulado. Los píxeles del mapa de bits que forman parte de los dos puntos suspensivos tienen un componente alfa de 160, por lo que los puntos suspensivos se mezclan con los colores de fondo de la pantalla.
+A continuación, el código se prepara para dibujar en la pantalla llamando a [BeginPaint](/windows/win32/api/winuser/nf-winuser-beginpaint) y creando un [**objeto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) basado en un contexto de dispositivo. El código dibuja el mapa de bits en la pantalla dos veces: una en un fondo blanco y otra en un fondo con forma de fondo. Los píxeles del mapa de bits que forman parte de los dos puntos suspensivos tienen un componente alfa de 160, por lo que los puntos suspensivos se combinan con los colores de fondo de la pantalla.
 
 
 ```
@@ -65,9 +65,9 @@ EndPaint(hWnd, &ps);
 
 
 
-En la ilustración siguiente se muestra la salida del código anterior. Tenga en cuenta que los puntos suspensivos se mezclan con el fondo, pero no se mezclan entre sí.
+En la ilustración siguiente se muestra la salida del código anterior. Tenga en cuenta que los puntos suspensivos se combinan con el fondo, pero no se mezclan entre sí.
 
-![ilustración en la que se muestran dos puntos suspensivos de color diferente, cada uno de los cuales se combina con su fondo de color azulado.](images/sourcecopy.png)
+![ilustración en la que se muestran dos puntos suspensivos de color diferente, cada uno de los cuales se combina con su fondo con forma de rectángulo.](images/sourcecopy.png)
 
 El ejemplo de código anterior tiene la siguiente instrucción:
 
@@ -89,7 +89,7 @@ bitmapGraphics.SetCompositingMode(CompositingModeSourceOver);
 
 En la ilustración siguiente se muestra la salida del código revisado.
 
-![usar el modo de composición para controlar la ilustración de mezcla alfa](images/sourceover.png)
+![usar el modo de composición para controlar la ilustración de combinación alfa](images/sourceover.png)
 
  
 

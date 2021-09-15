@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: e894a6a81578aac7adbd7b0ec43f3f635b51a32250ee8bc400a0f879cec57275
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2236e937f2993b64324bee115b09e05c3ba92e3f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117675771"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571496"
 ---
 # <a name="synchronization-center"></a>Centro de sincronización
 

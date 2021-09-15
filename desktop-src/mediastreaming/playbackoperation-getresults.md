@@ -5,7 +5,7 @@ ms.assetid: EAA5B342-51EF-449A-A7E2-FFBDBE07757C
 keywords:
 - Método GetResults de Media Streaming API
 - Método GetResults de Media Streaming API, interfaz PlaybackOperation
-- Interfaz PlaybackOperation de Media Streaming API, método GetResults
+- Interfaz PlaybackOperation Media Streaming API, método GetResults
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9bd3c79164a78e7993eb8a58d0d89a64c7ceb31a0c33eaff2e9c1bc352144088
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f146876966cc4e003bd88ad295c9938e5240abfe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118235788"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571664"
 ---
 # <a name="playbackoperationgetresults-method"></a>Método PlaybackOperation.GetResults
 
@@ -62,7 +62,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Normalmente, se llama al método **GetResults** desde el controlador de eventos que se registró estableciendo la [**propiedad Completed.**](playbackoperation-completed.md)
 

@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f83d74c8c03f8b08936c3693c77e211cd87a8b42c2d020c26ee5133406a2a042
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4d57fcc71f912fe1ee896ec893ea8f556eeb2277
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117746213"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474561"
 ---
 # <a name="iwmplibraryservicesgetlibrarybytype-method"></a>IWMPLibraryServices::getLibraryByType (método)
 
@@ -58,7 +58,7 @@ Implements IWMPLibraryServices.getLibraryByType
 *wmplt* \[ En\]
 </dt> <dd>
 
-Valor de la **enumeración WMPLib.WMPLibraryType** que especifica el tipo de biblioteca que se recuperará.
+Valor de la **enumeración WMPLib.WMPLibraryType** que especifica el tipo de biblioteca que se debe recuperar.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Valor de la **enumeración WMPLib.WMPLibraryType** que especifica el tipo de bib
 
 Interfaz **WMPLib.IWMPLibrary** para la biblioteca que se devuelve.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Solo hay una biblioteca local y las bibliotecas de discos solo están disponibles en LOS CD y DVD de datos que contienen contenido multimedia.
 

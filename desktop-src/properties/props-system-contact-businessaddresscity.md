@@ -1,19 +1,19 @@
 ---
-description: Ciudad de la dirección empresarial del contacto.
+description: Ciudad de la dirección de negocio del contacto.
 ms.assetid: 13e95222-e94f-44d1-939d-26646d932a32
 title: System.Contact.BusinessAddressCity
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36c6b3287dbad87428053633bff6d118f9fb5fed81627cf1db8497b80ce0d809
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d6b3812a3a6a9df15a35fdd8adefc634bb46f303
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118468474"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572689"
 ---
 # <a name="systemcontactbusinessaddresscity"></a>System.Contact.BusinessAddressCity
 
-Ciudad de la dirección empresarial del contacto.
+Ciudad de la dirección de negocio del contacto.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

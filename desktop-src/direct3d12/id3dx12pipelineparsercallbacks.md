@@ -16,12 +16,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f83e0987009e60d5e207a9531cc4809f6cfcfbd5b50360a583df8cb0c01898f0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2b0061746da589c30e4745dfa3e4dc573f7b5d52
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117733748"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474474"
 ---
 # <a name="id3dx12pipelineparsercallbacks-interface"></a>Interfaz ID3DX12PipelineParserCallbacks
 
@@ -41,23 +41,23 @@ La **interfaz ID3DX12PipelineParserCallbacks** tiene estos métodos.
 | [**CachedPSOCb**](id3dx12pipelineparsercallbacks-cachedpsocb.md)                         | Llama a la devolución de llamada del subobjeto PSO (objeto de estado de canalización) almacenado en caché de un objeto que implementa esta interfaz.<br/>                                                      |
 | [**CSCb**](id3dx12pipelineparsercallbacks-cscb.md)                                       | Llama a la devolución de llamada del subobjeto del sombreador de proceso de un objeto que implementa esta interfaz.<br/>                                                                          |
 | [**DepthStencilState1Cb**](id3dx12pipelineparsercallbacks-depthstencilstate1cb.md)       | Llama a la devolución de llamada del subobjeto depth [**stencil DESC1 (D3D12 \_ DEPTH \_ STENCIL \_ DESC1)**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc1)de un objeto que implementa esta interfaz.<br/> |
-| [**DepthStencilStateCb**](id3dx12pipelineparsercallbacks-dsvformatcb.md)                 | Llama a la devolución de llamada de subobjeto de formato de valor de galería de símbolos de profundidad de un objeto que implementa esta interfaz.<br/>                                                              |
-| [**DepthStencilStateCb**](id3dx12pipelineparsercallbacks-depthstencilstatecb.md)         | Llama a la devolución de llamada del subobjeto de estado de galería de símbolos de profundidad de un objeto que implementa esta interfaz.<br/>                                                                     |
+| [**DepthStencilStateCb**](id3dx12pipelineparsercallbacks-dsvformatcb.md)                 | Llama a la devolución de llamada del subobjeto depth stencil value format de un objeto que implementa esta interfaz.<br/>                                                              |
+| [**DepthStencilStateCb**](id3dx12pipelineparsercallbacks-depthstencilstatecb.md)         | Llama a la devolución de llamada de subobjeto de estado de galería de símbolos de profundidad de un objeto que implementa esta interfaz.<br/>                                                                     |
 | [**DSCb**](id3dx12pipelineparsercallbacks-dscb.md)                                       | Llama a la devolución de llamada del subobjeto del sombreador de dominio de un objeto que implementa esta interfaz.<br/>                                                                           |
-| [**ErrorBadInputParameter**](id3dx12pipelineparsercallbacks-errorbadinputparameter.md)   | Llama a la devolución de llamada de error de parámetro de entrada no válido de un objeto que implementa esta interfaz.<br/>                                                                         |
+| [**ErrorBadInputParameter**](id3dx12pipelineparsercallbacks-errorbadinputparameter.md)   | Llama a la devolución de llamada de error del parámetro de entrada no válido de un objeto que implementa esta interfaz.<br/>                                                                         |
 | [**ErrorDuplicateSubobject**](id3dx12pipelineparsercallbacks-errorduplicatesubobject.md) | Llama a la devolución de llamada de error del subobjeto duplicado de un objeto que implementa esta interfaz.<br/>                                                                         |
-| [**ErrorUnknownSubobject**](id3dx12pipelineparsercallbacks-errorunknownsubobject.md)     | Llama a la devolución de llamada de error de subobjeto desconocido de un objeto que implementa esta interfaz.<br/>                                                                           |
+| [**ErrorUnknownSubobject**](id3dx12pipelineparsercallbacks-errorunknownsubobject.md)     | Llama a la devolución de llamada de error del subobjeto desconocido de un objeto que implementa esta interfaz.<br/>                                                                           |
 | [**FlagsCb**](id3dx12pipelineparsercallbacks-flagscb.md)                                 | Llama a la devolución de llamada del subobjeto flags de un objeto que implementa esta interfaz.<br/>                                                                                   |
 | [**GSCb**](id3dx12pipelineparsercallbacks-gscb.md)                                       | Llama a la devolución de llamada del subobjeto del sombreador geometry de un objeto que implementa esta interfaz.<br/>                                                                         |
 | [**HSCb**](id3dx12pipelineparsercallbacks-hscb.md)                                       | Llama a la devolución de llamada del subobjeto del sombreador de casco de un objeto que implementa esta interfaz.<br/>                                                                             |
-| [**IBStripCutValueCb**](id3dx12pipelineparsercallbacks-ibstripcutvaluecb.md)             | Llama a la devolución de llamada del subobjeto del valor de corte de búfer de índice de un objeto que implementa esta interfaz.<br/>                                                            |
+| [**IBStripCutValueCb**](id3dx12pipelineparsercallbacks-ibstripcutvaluecb.md)             | Llama a la devolución de llamada del subobjeto index buffer strip-cut value de un objeto que implementa esta interfaz.<br/>                                                            |
 | [**InputLayoutCb**](id3dx12pipelineparsercallbacks-inputlayoutcb.md)                     | Llama a la devolución de llamada del subobjeto de diseño de entrada de un objeto que implementa esta interfaz.<br/>                                                                            |
-| [**NodemaskCb**](id3dx12pipelineparsercallbacks-nodemaskcb.md)                           | Llama a la devolución de llamada del subobjeto nodemask de un objeto que implementa esta interfaz.<br/>                                                                                |
+| [**Máscara de nodoCb**](id3dx12pipelineparsercallbacks-nodemaskcb.md)                           | Llama a la devolución de llamada del subobjeto nodemask de un objeto que implementa esta interfaz.<br/>                                                                                |
 | [**PrimitiveTopologyTypeCb**](id3dx12pipelineparsercallbacks-primitivetopologytypecb.md) | Llama a la devolución de llamada de subobjeto de tipo de topología primitiva de un objeto que implementa esta interfaz.<br/>                                                                 |
 | [**PSCb**](id3dx12pipelineparsercallbacks-pscb.md)                                       | Llama a la devolución de llamada del subobjeto del sombreador de píxeles de un objeto que implementa esta interfaz.<br/>                                                                            |
-| [**RasterizerStateCb**](id3dx12pipelineparsercallbacks-rasterizerstatecb.md)             | Llama a la devolución de llamada del subobjeto de descripción del estado del rasterizador de un objeto que implementa esta interfaz.<br/>                                                            |
+| [**RasterizerStateCb**](id3dx12pipelineparsercallbacks-rasterizerstatecb.md)             | Llama a la devolución de llamada del subobjeto de descripción de estado del rasterizador de un objeto que implementa esta interfaz.<br/>                                                            |
 | [**RootSignatureCB**](id3dx12pipelineparsercallbacks-rootsignaturecb.md)                 | Llama a la devolución de llamada del subobjeto de firma raíz de un objeto que implementa esta interfaz.<br/>                                                                          |
-| [**RTVFormatsCb**](id3dx12pipelineparsercallbacks-rtvformatscb.md)                       | Llama a la devolución de llamada del subobjeto de la matriz de formato de destino de representación de un objeto que implementa esta interfaz.<br/>                                                              |
+| [**RTVFormatsCb**](id3dx12pipelineparsercallbacks-rtvformatscb.md)                       | Llama a la devolución de llamada del subobjeto de matriz de formato de destino de representación de un objeto que implementa esta interfaz.<br/>                                                              |
 | [**SampleDescCb**](id3dx12pipelineparsercallbacks-sampledesccb.md)                       | Llama a la devolución de llamada del subobjeto de descripción de ejemplo de un objeto que implementa esta interfaz.<br/>                                                                      |
 | [**SampleMaskCb**](id3dx12pipelineparsercallbacks-samplemaskcb.md)                       | Llama a la devolución de llamada del subobjeto mask de ejemplo de un objeto que implementa esta interfaz.<br/>                                                                             |
 | [**StreamOutputCb**](id3dx12pipelineparsercallbacks-streamoutputcb.md)                   | Llama a la devolución de llamada del subobjeto de descripción de salida de secuencia de un objeto que implementa esta interfaz.<br/>                                                               |

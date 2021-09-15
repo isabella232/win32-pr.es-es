@@ -4,12 +4,12 @@ ms.assetid: ff372163-c73b-41bb-afcb-7d5de7720967
 title: Función AcquireCredentialsHandle (Negotiate) (Sspi.h)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: 887b821143616951a17816d5beb4f1fc2dec84e1ab176ad78a894e2cdc3f918c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 80ab4b67866b60831dadb7d8eb9bf9f632c0661c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120101455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571920"
 ---
 # <a name="acquirecredentialshandle-negotiate-function"></a>Función AcquireCredentialsHandle (Negotiate)
 
@@ -46,10 +46,10 @@ SECURITY_STATUS SEC_Entry AcquireCredentialsHandle(
 *pszPrincipal* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en NULL que especifica el nombre de la entidad de seguridad cuyas credenciales hará referencia el identificador.
+Puntero a una cadena terminada en NULL que especifica el nombre de la entidad de seguridad a la que hará referencia el identificador.
 
 > [!Note]  
-> Si el proceso que solicita el identificador no tiene acceso a las credenciales, la función devuelve un error. Una cadena null indica que el proceso requiere un identificador para las credenciales del usuario en cuyo [*contexto de seguridad*](../secgloss/s-gly.md) se está ejecutando.
+> Si el proceso que solicita el identificador no tiene acceso a las credenciales, la función devuelve un error. Una cadena null indica que el proceso requiere un identificador para las credenciales del usuario en cuyo contexto [*de seguridad*](../secgloss/s-gly.md) se está ejecutando.
 
  
 
@@ -95,7 +95,7 @@ Puntero a un [*identificador único local*](../secgloss/l-gly.md) (LUID) que ide
 *pAuthData* \[ En\]
 </dt> <dd>
 
-Puntero a datos específicos del paquete. Este parámetro puede ser **NULL,** lo que indica que se deben usar las credenciales predeterminadas para [*ese*](../secgloss/s-gly.md) paquete de seguridad. Para usar las credenciales proporcionadas, pase una estructura **\_ \_ AUTH \_ IDENTITY \_ OPAQUE de WINNT de PSEC** devuelta por una llamada anterior a la función [**SspiPromptForCredentials.**](/windows/win32/api/sspi/nf-sspi-sspipromptforcredentialsa)
+Puntero a datos específicos del paquete. Este parámetro puede ser **NULL,** lo que indica que se deben usar las credenciales predeterminadas para ese [*paquete*](../secgloss/s-gly.md) de seguridad. Para usar las credenciales proporcionadas, pase una estructura **AUTH \_ IDENTITY \_ \_ \_ OPAQUE** de WINNT de PSEC devuelta por una llamada anterior a la función [**SspiPromptForCredentials.**](/windows/win32/api/sspi/nf-sspi-sspipromptforcredentialsa)
 
 **Windows Server 2008, Windows Vista, Windows Server 2003 y Windows XP:** No se admiten el tipo **\_ \_ \_ \_ PSEC WINNT AUTH IDENTITY OPAQUE** y la función [**SspiPromptForCredentials.**](/windows/win32/api/sspi/nf-sspi-sspipromptforcredentialsa) Para usar las credenciales proporcionadas, pase un puntero a una estructura [**SEC \_ WINNT \_ AUTH \_ IDENTITY**](/windows/win32/api/sspi/ns-sspi-sec_winnt_auth_identity_a) o [**SEC \_ WINNT \_ AUTH IDENTITY \_ \_ EX**](/windows/win32/api/sspi/ns-sspi-sec_winnt_auth_identity_ex2) que incluya esas credenciales.
 
@@ -154,11 +154,11 @@ Si se produce un error en la función, devuelve uno de los siguientes códigos d
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función AcquireCredentialsHandle (Negotiate)** devuelve un identificador a las credenciales de una entidad de seguridad, como un usuario o cliente, tal como lo usa una delegación [*restringida específica.*](../secgloss/s-gly.md) Puede ser el identificador de las credenciales preexistente o la función puede crear un nuevo conjunto de credenciales y devolverlo. Este identificador se puede usar en llamadas posteriores a las funciones [**AcceptSecurityContext (Negotiate)**](acceptsecuritycontext--negotiate.md) e [**InitializeSecurityContext (Negotiate).**](initializesecuritycontext--negotiate.md)
 
-En general, **AcquireCredentialsHandle (Negotiate)** no permite que un proceso obtenga un identificador de las credenciales de otros usuarios que iniciaron sesión en el mismo equipo. Sin embargo, un llamador con el privilegio SE TCB NAME tiene la opción de especificar el identificador de inicio de sesión \_ \_ (LUID) [](../secgloss/s-gly.md) [](../secgloss/l-gly.md) de cualquier token de sesión de inicio de sesión existente para obtener un identificador de las credenciales de esa sesión. Normalmente, esto lo usan los módulos en modo kernel que deben actuar en nombre de un usuario que ha iniciado sesión.
+En general, **AcquireCredentialsHandle (Negotiate)** no permite que un proceso obtenga un identificador de las credenciales de otros usuarios que han iniciado sesión en el mismo equipo. Sin embargo, un llamador con el privilegio SE TCB NAME tiene la opción de especificar el identificador de inicio de sesión \_ \_ (LUID) [](../secgloss/s-gly.md) [](../secgloss/l-gly.md) de cualquier token de sesión de inicio de sesión existente para obtener un identificador de las credenciales de esa sesión. Normalmente, esto lo usan los módulos en modo kernel que deben actuar en nombre de un usuario que ha iniciado sesión.
 
 Un paquete podría llamar a la función *en pGetKeyFn* proporcionada por el transporte en tiempo de ejecución de RPC. Si el transporte no admite la noción de devolución de llamada para recuperar credenciales, este parámetro debe ser **NULL.**
 
@@ -177,14 +177,14 @@ Cuando haya terminado de usar las credenciales devueltas, libera la memoria usad
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                   |
-| Header<br/>                   | <dl> <dt>Sspi.h (incluir Security.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sspi.h (incluir Security.h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Secur32.lib</dt> </dl>                 |
 | Archivo DLL<br/>                      | <dl> <dt>Secur32.dll</dt> </dl>                 |
 | Nombres Unicode y ANSI<br/>   | **AcquireCredentialsHandleW** (Unicode) y **AcquireCredentialsHandleA** (ANSI)<br/>            |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

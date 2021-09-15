@@ -4,12 +4,12 @@ ms.assetid: 3b73decf-75d4-4bc4-b7ca-5f16aaadff29
 title: Función AcquireCredentialsHandle (CredSSP)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: 22ab5b4f9696e266e6d07b3085cafe10384e8b6b266c9e20672021fa04e97998
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0dbece18bc7a7de8ec35764c9879380e29292e92
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120101485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571925"
 ---
 # <a name="acquirecredentialshandle-credssp-function"></a>Función AcquireCredentialsHandle (CredSSP)
 
@@ -38,7 +38,7 @@ SECURITY_STATUS SEC_ENTRY AcquireCredentialsHandle(
 
 *pszPrincipal* \[ en, opcional\]
 
-Puntero a una cadena terminada en NULL que especifica el nombre de la entidad de seguridad cuyas credenciales hará referencia el identificador.
+Puntero a una cadena terminada en NULL que especifica el nombre de la entidad de seguridad a la que hará referencia el identificador.
 
 > [!Note]  
 > Si el proceso que solicita el identificador no tiene acceso a las credenciales, la función devuelve un error. Una cadena null indica que el proceso requiere un identificador para las credenciales del usuario en cuyo contexto de seguridad se está ejecutando.
@@ -54,7 +54,7 @@ Marca que indica cómo se usarán estas credenciales. Este parámetro puede ser 
 | Valor                                                                                                                                                                                                                                        | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **SECPKG \_ CRED \_ INBOUND**<br/>0x1  | Valide una credencial de servidor entrante. Las credenciales entrantes se pueden validar mediante una autoridad de autenticación cuando se llama a [**InitializeSecurityContext (CredSSP)**](initializesecuritycontext--credssp.md) o [**AcceptSecurityContext (CredSSP).**](acceptsecuritycontext--credssp.md) Si dicha autoridad no está disponible, la función producirá un error y devolverá **SEC \_ E NO \_ \_ AUTHENTICATING \_ AUTHORITY**. La validación es específica del paquete |
-| **SECPKG \_ CRED \_ OUTBOUND**<br/>0x0 | Permita que una credencial de cliente local prepare un token de salida. |
+| **SECPKG \_ CRED \_ OUTBOUND**<br/>0x0 | Permitir que una credencial de cliente local prepare un token de salida. |
 
 *pvLogonId* \[ en, opcional\]
 
@@ -95,11 +95,11 @@ Si se produce un error en la función, devuelve uno de los siguientes códigos d
 | **SEC \_ E \_ SECPKG NO \_ \_ ENCONTRADO**   | El paquete de seguridad solicitado no existe.                           |
 | **CREDENCIALES \_ DESCONOCIDAS DE SEC E \_ \_** | No se han reconocido las credenciales proporcionadas al paquete.             |
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función AcquireCredentialsHandle (CredSSP)** devuelve un identificador a las credenciales de una entidad de seguridad, como un usuario o cliente, tal como lo usa un paquete de seguridad específico. La función puede devolver el identificador a las credenciales preexistente o a las credenciales recién creadas y devolverlo. Este identificador se puede usar en llamadas posteriores a las funciones [**AcceptSecurityContext (CredSSP)**](acceptsecuritycontext--credssp.md) e [**InitializeSecurityContext (CredSSP).**](initializesecuritycontext--credssp.md)
 
-En general, **AcquireCredentialsHandle (CredSSP)** no proporciona las credenciales de otros usuarios que han iniciado sesión en el mismo equipo. Sin embargo, un llamador con SE privilegio TCB NAME puede obtener las credenciales de una sesión de inicio de sesión existente especificando el identificador de inicio de sesión \_ \_ (LUID) de esa sesión. [](../secgloss/p-gly.md#_security_privilege_gly) [](../secgloss/l-gly.md#_security_logon_identifier_gly) Normalmente, esto lo usan los módulos en modo kernel que deben actuar en nombre de un usuario que ha iniciado sesión.
+En general, **AcquireCredentialsHandle (CredSSP)** no proporciona las credenciales de otros usuarios que iniciaron sesión en el mismo equipo. Sin embargo, un llamador con SE privilegio TCB NAME puede obtener las credenciales de una sesión de inicio de sesión existente especificando el identificador de inicio de sesión \_ \_ (LUID) de esa sesión. [](../secgloss/p-gly.md#_security_privilege_gly) [](../secgloss/l-gly.md#_security_logon_identifier_gly) Normalmente, esto lo usan los módulos en modo kernel que deben actuar en nombre de un usuario que ha iniciado sesión.
 
 Un paquete podría llamar a la función *en pGetKeyFn* proporcionada por el transporte en tiempo de ejecución de RPC. Si el transporte no admite la noción de devolución de llamada para recuperar credenciales, este parámetro debe ser **NULL.**
 
@@ -116,14 +116,14 @@ Cuando haya terminado de usar las credenciales devueltas, libera la memoria usad
 |--------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible | Windows Solo \[ aplicaciones de escritorio de Vista\]                                              |
 | Servidor mínimo compatible | Windows Solo aplicaciones de escritorio de Server 2008 \[\]                                        |
-| Header                   | Sspi.h (incluir Security.h)                                                      |
+| Encabezado                   | Sspi.h (incluir Security.h)                                                      |
 | Biblioteca                  | Secur32.lib                                                                      |
 | Archivo DLL                      | Secur32.dll                                                                      |
 | Nombres Unicode y ANSI   | **AcquireCredentialsHandleW** (Unicode) y **AcquireCredentialsHandleA** (ANSI) |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Funciones de SSPI](authentication-functions.md#sspi-functions)
+- [Funciones SSPI](authentication-functions.md#sspi-functions)
 - [**AcceptSecurityContext (CredSSP)**](acceptsecuritycontext--credssp.md)
 - [**InitializeSecurityContext (CredSSP)**](initializesecuritycontext--credssp.md)
 - [**FreeCredentialsHandle**](/windows/win32/api/sspi/nf-sspi-freecredentialshandle)

@@ -5,11 +5,11 @@ title: Directiva de metadatos de fotos System.Copyright
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d3e17190205b3df5c2ede9b1a7db231d0fdbbe21
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882693"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572277"
 ---
 # <a name="systemcopyright-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Copyright
 
@@ -45,7 +45,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido de | Ruta de acceso                                      | Formato de disco |
+| Pedido | Ruta de acceso                                      | Formato de disco |
 |-------|-------------------------------------------|-------------|
 |       | /app1/ifd/{ushort=33432}                  | ascii       |
 |       | /app13/irb/8bimiptc/iptc/copyright notice |             |
@@ -61,7 +61,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido de | Ruta de acceso                                      | Formato de disco |
+| Pedido | Ruta de acceso                                      | Formato de disco |
 |-------|-------------------------------------------|-------------|
 |       | /xmp/dc:rights                            | unicode     |
 |       | /xmp/ &lt; xmpalt &gt; dc:rights              | unicode     |
@@ -76,7 +76,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido de | Ruta de acceso                                      |
+| Pedido | Ruta de acceso                                      |
 |-------|-------------------------------------------|
 |       | /xmp/dc:rights                            |
 |       | /app13/irb/8bimiptc/iptc/copyright notice |
@@ -92,7 +92,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido de | Ruta de acceso                                    | Formato de disco |
+| Pedido | Ruta de acceso                                    | Formato de disco |
 |-------|-----------------------------------------|-------------|
 |       | /ifd/{ushort=33432}                     | ascii       |
 |       | /ifd/iptc/aviso de copyright              |             |
@@ -109,7 +109,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido de | Ruta de acceso                                    | Formato de disco |
+| Pedido | Ruta de acceso                                    | Formato de disco |
 |-------|-----------------------------------------|-------------|
 |       | /ifd/xmp/dc:rights                      | unicode     |
 |       | /ifd/xmp/ &lt; xmpalt &gt; dc:rights        | unicode     |
@@ -125,7 +125,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido de | Ruta de acceso                                    |
+| Pedido | Ruta de acceso                                    |
 |-------|-----------------------------------------|
 |       | /ifd/xmp/dc:rights                      |
 |       | /ifd/iptc/aviso de copyright              |
@@ -136,7 +136,7 @@ Los valores de esquemas diferentes se concilian.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ## <a name="related-topics"></a>Temas relacionados
 

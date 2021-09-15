@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 12b68a962fc79dd75d6ff90635be5dbe99f36c3170f06cd7d79af2eb23317e98
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c43917c8c26027713b4e5076e8eb3789b95f08e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118193586"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572040"
 ---
 # <a name="sms-properties"></a>Propiedades de SMS
 
@@ -28,10 +28,10 @@ Windows Dispositivos portátiles admite las siguientes propiedades de SMS.
 
 | Propiedad                   | VarType        | Descripción                                                                                                                                                                                                                                                                                                 |
 |----------------------------|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CODIFICACIÓN \_ DE SMS \_ WPD**     | **VT \_ LPWSTR** | Valor que especifica cómo codificará el controlador el mensaje de texto enviado por el cliente. Se trata de una propiedad de solo lectura; El cliente no puede especificar qué tipo de codificación usa un dispositivo para enviar mensajes. Estos valores duplican los valores enumerados de [**\_ WPD SMS \_ ENCODING \_ TYPES.**](wpd-sms-encoding-types.md) |
-| **CARGA MÁXIMA \_ DE SMS \_ WPD \_** | **VT \_ UI4**    | Número máximo de bytes que se pueden contener en un mensaje.                                                                                                                                                                                                                                             |
+| **CODIFICACIÓN \_ DE SMS \_ WPD**     | **VT \_ LPWSTR** | Valor que especifica cómo codificará el controlador el mensaje de texto enviado por el cliente. Se trata de una propiedad de solo lectura; El cliente no puede especificar qué tipo de codificación usa un dispositivo para enviar mensajes. Estos valores duplican los valores [**enumerados de WPD \_ SMS ENCODING \_ \_ TYPES.**](wpd-sms-encoding-types.md) |
+| **CARGA MÁXIMA DE \_ SMS \_ \_ WPD** | **VT \_ UI4**    | Número máximo de bytes que se pueden contener en un mensaje.                                                                                                                                                                                                                                             |
 | **PROVEEDOR DE \_ SMS \_ WPD**     | **VT \_ LPWSTR** | Nombre del proveedor de servicios.                                                                                                                                                                                                                                                                                |
-| **TIEMPO DE ESPERA DE SMS DE WPD \_ \_**      | **VT \_ UI4**    | Número de milisegundos hasta que se devuelve un tiempo de espera.                                                                                                                                                                                                                                                     |
+| **TIEMPO DE ESPERA \_ DE SMS \_ DE WPD**      | **VT \_ UI4**    | Número de milisegundos hasta que se devuelve un tiempo de espera.                                                                                                                                                                                                                                                     |
 
 
 

@@ -5,11 +5,11 @@ title: ReplayChapter
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 39c0f631d62ebc8d7a7d27202d48a9bf2377286e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104495431"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473976"
 ---
 # <a name="replaychapter"></a>ReplayChapter
 

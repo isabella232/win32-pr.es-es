@@ -4,12 +4,12 @@ ms.assetid: b8cbdb96-b4dd-44c2-b1fe-08b22c0380c2
 title: System.Devices.CategoryPlural
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95d429fa71e861cfdf97c460c0504acf9d79bb637ad2acb229e8d31f448daa8e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8ce03b9896fc409d0749572904ba6de6535e3809
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119945826"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571560"
 ---
 # <a name="systemdevicescategoryplural"></a>System.Devices.CategoryPlural
 
@@ -47,7 +47,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

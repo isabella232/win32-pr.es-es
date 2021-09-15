@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101163
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: f500fcba468fd528a5b56d5adfde9c364403abd93705fac8582e560cc151e0b1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3d68f1e6ab5bd6fa04a7ad47097c550a438b5e98
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118082723"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474424"
 ---
 # <a name="esentbadrestoretargetinstanceexception-methods"></a>Métodos de EsentBadRestoreTargetInstanceException 
 

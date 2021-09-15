@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 318a87c2bc118b9d0b221e658b7d8669cd3e04d97412173a2d6671e6c6865cd7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ade1952615b98d9ea41a7a1b83d0bf1a3c6fc8d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117716421"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571820"
 ---
 # <a name="durablecommitcallback-constructor"></a>Constructor DurableCommitCallback
 
@@ -75,12 +75,12 @@ public DurableCommitCallback(
     
     Devolución de llamada de código administrado a la que se llamará.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [DurableCommitCallback (clase)](./durablecommitcallback-class.md)
 
-[Miembros durableCommitCallback](./durablecommitcallback-members.md)
+[Miembros DurableCommitCallback](./durablecommitcallback-members.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

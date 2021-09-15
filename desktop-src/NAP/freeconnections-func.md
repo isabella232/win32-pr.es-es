@@ -3,7 +3,7 @@ title: Función FreeConnections (NapUtil.h)
 description: Libera una estructura de datos Connections.
 ms.assetid: bb339d71-f8e3-48d8-834d-8b957e0cb5ec
 keywords:
-- Función Nap de FreeConnections
+- Función NAP de FreeConnections
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 258295df0b12f30d98825dd139eb51a7d1bc277417cf4d06bba9e811a00740db
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f840d02572af3e6382a06a1873573fc7a30420e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118940642"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473840"
 ---
 # <a name="freeconnections-function"></a>Función FreeConnections
 
@@ -52,12 +52,12 @@ Puntero a la estructura [**Connections que se**](connections-struct.md) liberar�
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Todas las interfaces COM compatibles con el sistema NAP usan reglas de administración de memoria COM estándar y los asignadores de memoria COM (**CoTaskMemAlloc** y **CoTaskMemFree**):
 
--   **En,** el autor de la llamada asigna y libera los parámetros.
--   **El** destinatario asigna los parámetros out y los libera el autor de la llamada **mediante CoTaskMem.**
+-   **El** autor de la llamada asigna y libera los parámetros de .
+-   **El** destinatario asigna los parámetros out y el autor de la llamada lo libera **mediante CoTaskMem**.
 -   **El autor de** la llamada asigna los parámetros de entrada y salida, los libera y reasigna el destinatario y, en última instancia, los libera el autor de la llamada, mediante **CoTaskMem**.
 
 Todas las funciones NAP para liberar memoria también liberan todos los punteros incrustados.
@@ -70,7 +70,7 @@ Todas las funciones NAP para liberar memoria también liberan todos los punteros
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
-| Header<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl> |
 
 

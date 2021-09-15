@@ -6,12 +6,12 @@ keywords:
 - Llamada a procedimiento remoto RPC, referencia, tipos enumerados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59bdff5979091c5acecfdd8e5ca5e6d608a8c8dc944c3e99c3017282c89002e0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b5cb46ad718082c848524651abfdd9decc98834f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120080834"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473602"
 ---
 # <a name="rpc-enumerated-types"></a>Tipos enumerados de RPC
 

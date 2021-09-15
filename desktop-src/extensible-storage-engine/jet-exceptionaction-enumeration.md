@@ -28,12 +28,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7cfd19fdbddfb169e1f12fcb4ca3d0f54df361bde5fb065378f5cb1af726cd25
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0cba09666308ab55ae4327a9f9a683734aa28f41
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119362355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571765"
 ---
 # <a name="jet_exceptionaction-enumeration"></a>JET_ExceptionAction enumeración
 
@@ -55,7 +55,7 @@ Dim instance As JET_ExceptionAction
 public enum JET_ExceptionAction
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -73,14 +73,14 @@ public enum JET_ExceptionAction
 </tr>
 <tr class="even">
 <td></td>
-<td>Ninguno</td>
+<td>None</td>
 <td>No controle las excepciones. Indójelos en el autor de la llamada.</td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

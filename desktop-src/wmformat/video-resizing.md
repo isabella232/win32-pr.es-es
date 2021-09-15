@@ -12,12 +12,12 @@ keywords:
 - tamaño de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7a3261b5b78b386a0589e2e5554b52793d478f052765cb9caa63cf7e399d90e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b200496b1dead3abacfbfad7674519e0cf7ce4f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119027193"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572129"
 ---
 # <a name="video-resizing"></a>Tamaño de vídeo
 
@@ -27,7 +27,7 @@ El tamaño de la imagen de vídeo se puede pensar que pasa por tres fases: tama�
 
 El tamaño del vídeo de entrada es el tamaño de los fotogramas que se pasan como ejemplos al objeto de escritor. Este tamaño se define como una de las propiedades de entrada de vídeo necesarias. Para obtener más información sobre las propiedades de entrada, vea [Para enumerar formatos de entrada.](to-enumerate-input-formats.md)
 
-El tamaño del vídeo de secuencia es el tamaño de los fotogramas de la sección de datos del archivo ASF. Este tamaño se define como una de las opciones de configuración de flujo necesarias en el perfil. Si va a escribir un archivo y el tamaño del vídeo de entrada es diferente del tamaño del vídeo de secuencia, el escritor cambia el tamaño de los fotogramas durante la codificación. Para obtener más información sobre las propiedades de secuencias de vídeo, vea [Configuring Video Secuencias](configuring-video-streams.md).
+El tamaño del vídeo de secuencia es el tamaño de los fotogramas de la sección de datos del archivo ASF. Este tamaño se define como una de las opciones de configuración de flujo necesarias en el perfil. Si va a escribir un archivo y el tamaño del vídeo de entrada es diferente del tamaño del vídeo de secuencia, el escritor cambia el tamaño de los fotogramas durante la codificación. Para obtener más información sobre las propiedades de la secuencia de vídeo, vea [Configuring Video Secuencias](configuring-video-streams.md).
 
 El tamaño del vídeo de salida es el tamaño de los fotogramas entregados por el lector o el lector sincrónico. Este tamaño se define como una de las propiedades de salida de vídeo necesarias. Si está leyendo un archivo y el tamaño del vídeo de salida es diferente del tamaño del vídeo de secuencia, el lector cambia el tamaño de los fotogramas durante la decodificación.
 

@@ -4,12 +4,12 @@ ms.assetid: 659881f3-ada3-4731-95b9-2ef7a8a445a9
 title: Uso de GDI+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a9ff833fdfd5cc4a68df7ea78ce0246e3cd39395d4195152fbd32e9e8f9aaf37
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ecbf4b72d3d4519bafb035a0c9c3b20e55cd71c6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119778575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474289"
 ---
 # <a name="using-gdi"></a>Uso de GDI+
 

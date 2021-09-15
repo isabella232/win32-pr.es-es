@@ -4,12 +4,12 @@ ms.assetid: d96e56c3-3d38-4b4e-be31-05f825fec211
 title: Ejemplos de perfiles cableados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 988b97e4064094d550a5fe870ad40cab28d09bd4565af09d3ba149598352ac78
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1515ecb220f78acb251fe94d8b6886b3877177b3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118619970"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473734"
 ---
 # <a name="wired-profile-samples"></a>Ejemplos de perfiles cableados
 

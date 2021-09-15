@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: caad66946514eec91d1cac1dc9745b0d07d1546e32c9548297f01e76b921c46f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ae669bf19f531034eacafac7fb89f3c07fa1e0e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120061215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474254"
 ---
 # <a name="imfmediasourceextensionsetduration-method"></a>MÉTODO IMFMediaSourceExtension::SetDuration
 
@@ -39,7 +39,7 @@ HRESULT SetDuration(
 
 <dl> <dt>
 
-*duration* \[ En\]
+*duración* \[ En\]
 </dt> <dd>
 
 Duración del origen multimedia en unidades de 100 nanosegundos.
@@ -58,7 +58,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
-| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
@@ -66,7 +66,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 <dl> <dt>
 
-[**IMFMediaSourceExtension**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediasourceextension)
+[**EXTENSIONMediaSourceExtension**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediasourceextension)
 </dt> </dl>
 
  

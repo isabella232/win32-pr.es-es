@@ -1,17 +1,17 @@
 ---
-description: Referencia de consulta COPP
+description: Referencia de consultas COPP
 ms.assetid: 11eb1443-857d-4516-a5cb-c3cc02a5eba4
-title: Referencia de consulta COPP
+title: Referencia de consultas COPP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59d36cde152600faaa1dd567faac916bfa8281e2b2edb9464074fe34a58d5011
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41de36f3cdcc37a38e2ebc53caa7b6b37c204d9d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119909665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473998"
 ---
-# <a name="copp-query-reference"></a>Referencia de consulta COPP
+# <a name="copp-query-reference"></a>Referencia de consultas COPP
 
 En esta sección se describen las consultas de estado compatibles con el Protocolo de protección de salida certificado (COPP). Para cada consulta, se muestra el GUID que define la consulta, junto con los datos de entrada y los datos devueltos.
 
@@ -46,13 +46,13 @@ Devuelve el tipo de conector físico.
 
 -   **GUID:** DXVA \_ COPPQueryConnectorType
 -   **Datos de entrada:** Ninguno.
--   **Devolver datos:** devuelve una [**estructura \_ COPPStatusData de DXVA.**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxva_coppstatusdata) El tipo de conector se devuelve en el **miembro dwData** como una marca de la [**enumeración COPP \_ ConnectorType.**](/windows/desktop/api/dxva9typ/ne-dxva9typ-copp_connectortype)
+-   **Devolver datos:** devuelve una [**estructura \_ COPPStatusData de DXVA.**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxva_coppstatusdata) El tipo de conector se devuelve en el **miembro dwData** como una marca de la enumeración [**COPP \_ ConnectorType.**](/windows/desktop/api/dxva9typ/ne-dxva9typ-copp_connectortype)
 
 Mostrar consulta de datos
 
 Devuelve una descripción de la señal de vídeo que se transmite a través del conector.
 
-La señal de vídeo que se transmite a través del conector no tiene necesariamente el mismo formato que el modo de visualización de escritorio. Por ejemplo, el modo de visualización de escritorio podría ser de 1024 x 768 píxeles a 85 Hz, mientras que el conector podría ser un conector S-Video que transmite una señal de vídeo a 720 x 480 píxeles, 60/1,01 Hz entrelazada. En ese caso, el controlador devolvería la resolución de la señal S-Video, no la resolución de escritorio.
+La señal de vídeo que se transmite a través del conector no tiene necesariamente el mismo formato que el modo de visualización de escritorio. Por ejemplo, el modo de visualización de escritorio podría ser de 1024 x 768 píxeles a 85 Hz, mientras que el conector podría ser un conector S-Video que transmita una señal de vídeo a 720 x 480 píxeles, 60/1,01 Hz entrelazada. En ese caso, el controlador devolvería la resolución de la señal S-Video, no la resolución del escritorio.
 
 -   **GUID:** DXVA \_ COPPQueryDisplayData
 -   **Datos de entrada:** Ninguno.
@@ -77,14 +77,14 @@ Devuelve el nivel de protección global para un mecanismo de protección especif
 El nivel de protección global es el nivel de protección que se aplica actualmente en el conector, independientemente de cómo se indique al controlador de gráficos que aplique la protección. Por ejemplo, una aplicación puede establecer el nivel de protección ACP llamando a la **función ChangeDisplaySettingsEx.** En ese caso, el nivel de protección global reflejaría esta configuración, aunque no se solicitó a través de COPP.
 
 -   **GUID:** DXVA \_ COPPQueryGlobalProtectionLevel
--   **Datos de** entrada: mecanismo de protección que se consulta, especificado como un entero de 32 bits. Vea [Marcas de tipo de protección COPP](copp-protection-type-flags.md).
+-   **Datos de** entrada: mecanismo de protección que se consulta, especificado como un entero de 32 bits. Vea [Marcas de tipo de protección COPP.](copp-protection-type-flags.md)
 -   **Devolver datos:** devuelve una [**estructura \_ COPPStatusData de DXVA.**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxva_coppstatusdata) El nivel de protección actual se devuelve en el **miembro dwData.** El significado de este valor depende del mecanismo de protección que se consulta. Para cada mecanismo de protección, el valor del **miembro dwData** es una marca de una enumeración diferente, como se muestra en la tabla siguiente.
 
     | Mecanismo de protección | Enumeración                                                           |
     |----------------------|-----------------------------------------------------------------------|
     | ACP                  | [**Nivel de protección de COPP \_ ACP \_ \_**](/windows/desktop/api/dxva9typ/ne-dxva9typ-copp_acp_protection_level)     |
     | CGMS-A               | [**Nivel de protección \_ de COPP CGMSA \_ \_**](/windows/desktop/api/dxva9typ/ne-dxva9typ-copp_cgmsa_protection_level) |
-    | Hdcp                 | [**Nivel de protección \_ de HDCP \_ de \_ COPP**](/windows/desktop/api/dxva9typ/ne-dxva9typ-copp_hdcp_protection_level)   |
+    | HDCP                 | [**Nivel de protección \_ de HDCP \_ de \_ COPP**](/windows/desktop/api/dxva9typ/ne-dxva9typ-copp_hdcp_protection_level)   |
 
     
 
@@ -97,14 +97,14 @@ Devuelve el nivel de protección local para un mecanismo de protección especifi
 El nivel de protección local es el nivel de protección que se solicitó a través de la sesión actual de COPP. El controlador podría establecer un nivel de protección superior.
 
 -   **GUID:** DXVA \_ COPPQueryLocalProtectionLevel
--   **Datos de** entrada: mecanismo de protección que se consulta, como un entero de 32 bits. Vea [Marcas de tipo de protección COPP](copp-protection-type-flags.md).
+-   **Datos de** entrada: mecanismo de protección que se consulta, como un entero de 32 bits. Vea [Marcas de tipo de protección COPP.](copp-protection-type-flags.md)
 -   **Devolver datos:** devuelve una [**estructura \_ COPPStatusData de DXVA.**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxva_coppstatusdata) El nivel de protección actual se devuelve en el **miembro dwData.** El significado de este valor depende del mecanismo de protección que se consulta. Para cada mecanismo de protección, el valor del **miembro dwData** es una marca de una enumeración diferente, como se muestra en la tabla siguiente.
 
     | Mecanismo de protección | Enumeración                                                           |
     |----------------------|-----------------------------------------------------------------------|
     | ACP                  | [**Nivel de protección de COPP \_ ACP \_ \_**](/windows/desktop/api/dxva9typ/ne-dxva9typ-copp_acp_protection_level)     |
     | CGMS-A               | [**Nivel de protección \_ de COPP CGMSA \_ \_**](/windows/desktop/api/dxva9typ/ne-dxva9typ-copp_cgmsa_protection_level) |
-    | Hdcp                 | [**Nivel de protección \_ de HDCP \_ de \_ COPP**](/windows/desktop/api/dxva9typ/ne-dxva9typ-copp_hdcp_protection_level)   |
+    | HDCP                 | [**Nivel de protección \_ de HDCP \_ de \_ COPP**](/windows/desktop/api/dxva9typ/ne-dxva9typ-copp_hdcp_protection_level)   |
 
     
 
@@ -116,7 +116,7 @@ Devuelve los mecanismos de protección que están disponibles para el conector.
 
 -   **GUID:** DXVA \_ COPPQueryProtectionType
 -   **Datos de entrada:** Ninguno.
--   **Devolver datos:** devuelve una [**estructura \_ COPPStatusData de DXVA.**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxva_coppstatusdata) Los mecanismos de protección se devuelven en el **miembro dwData** como una combinación de cero o más marcas. Vea [Marcas de tipo de protección COPP](copp-protection-type-flags.md). Si hay más de un mecanismo de protección disponible, las marcas se combinan con un OR bit a **bit.**
+-   **Devolver datos:** devuelve una [**estructura \_ COPPStatusData de DXVA.**](/windows/desktop/api/dxva9typ/ns-dxva9typ-dxva_coppstatusdata) Los mecanismos de protección se devuelven en el **miembro dwData** como una combinación de cero o más marcas. Vea [Marcas de tipo de protección COPP.](copp-protection-type-flags.md) Si hay más de un mecanismo de protección disponible, las marcas se combinan con un OR bit a **bit.**
 
 Consulta de señalización
 

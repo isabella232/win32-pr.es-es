@@ -1,10 +1,10 @@
 ---
 title: Método INapServerManagement UnregisterSystemHealthValidator (NapServerManagement.h)
-description: Se usa para anular el registro de una SHV con el servidor NAP.
+description: Se usa para anular el registro de un SHV con el servidor NAP.
 ms.assetid: f4148df1-a230-4845-ac8b-9e04be9e0d6c
 keywords:
 - Nap del método UnregisterSystemHealthValidator
-- UnregisterSystemHealthValidator, método NAP, interfaz INapServerManagement
+- Método NAP unregisterSystemHealthValidator , interfaz INapServerManagement
 - INapServerManagement interface NAP , UnregisterSystemHealthValidator method
 topic_type:
 - apiref
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 116bcf2d2eec17389cf230bf0a1ad24ba386d2a6e35872570efda092e5992869
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d0715445504b862d9ae9e8478b543f8e80378f08
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473769"
 ---
 # <a name="inapservermanagementunregistersystemhealthvalidator-method"></a>Método INapServerManagement::UnregisterSystemHealthValidator
 
@@ -30,7 +30,7 @@ ms.locfileid: "120037835"
 
  
 
-El **método INapServerManagement::UnregisterSystemHealthValidator** se usa para anular el registro de una SHV con el servidor NAP.
+El **método INapServerManagement::UnregisterSystemHealthValidator** se usa para anular el registro de un SHV con el servidor NAP.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ HRESULT UnregisterSystemHealthValidator(
 *id* \[ en\]
 </dt> <dd>
 
-[**SystemHealthEntityId que**](nap-type-constants.md) contiene el identificador único de la SHV que se anula el registro.
+[**SystemHealthEntityId que**](nap-type-constants.md) contiene el identificador único de la SHV que se anulará del registro.
 
 </dd> </dl>
 
@@ -70,7 +70,7 @@ También se pueden devolver otros códigos de error específicos de COM.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si hay alguna llamada asincrónica pendiente en la SHV, se completará más adelante y se descartará.
 
@@ -82,8 +82,8 @@ Si hay alguna llamada asincrónica pendiente en la SHV, se completará más adel
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                               |
-| Header<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qsvrmgmt.dll</dt> </dl>            |
 
 

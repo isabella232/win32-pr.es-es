@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 921a6b6e85f906ef62683038b2bb28dd484d58fd20600b2ff85ae594fafb3cd7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2de76d9bf43d10e08e5a85cd2a32d6b377680d18
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118440423"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571341"
 ---
 # <a name="iwiaitem2enumchilditems-method"></a>IWiaItem2::EnumChildItems (método)
 
@@ -54,7 +54,7 @@ Especifica un puntero a una categoría para la que se enumeran los nodos secunda
 
 Tipo: **[ **IEnumWiaItem2**](-wia-ienumwiaitem2.md)\*\***
 
-Recibe la dirección de un puntero a la [**interfaz IEnumWiaItem2**](-wia-ienumwiaitem2.md) que crea este método.
+Recibe la dirección de un puntero a la [**interfaz IEnumWiaItem2**](-wia-ienumwiaitem2.md) que este método crea.
 
 </dd> </dl>
 
@@ -66,9 +66,9 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 ## <a name="remarks"></a>Observaciones
 
-El sistema en tiempo de ejecución de WIA 2.0 representa cada dispositivo de hardware WIA 2.0 como un árbol jerárquico de [**objetos IWiaItem2.**](-wia-iwiaitem2.md) El **método IWiaItem2::EnumChildItems permite** a las aplicaciones enumerar los elementos secundarios del elemento actual. Sin embargo, solo se puede aplicar a los elementos que son carpetas.
+El sistema en tiempo de ejecución WIA 2.0 representa cada dispositivo de hardware WIA 2.0 como un árbol jerárquico de [**objetos IWiaItem2.**](-wia-iwiaitem2.md) El **método IWiaItem2::EnumChildItems permite** a las aplicaciones enumerar los elementos secundarios del elemento actual. Sin embargo, solo se puede aplicar a elementos que son carpetas.
 
-Si la carpeta no está vacía, contiene un subárbol de [**objetos IWiaItem2.**](-wia-iwiaitem2.md) El **método IWiaItem2::EnumChildItems** enumera todos los elementos contenidos en la carpeta . Almacena un puntero a un enumerador en el *parámetro ppIEnumWiaItem2.* Las aplicaciones usan el puntero enumerador para realizar la enumeración de los elementos secundarios de un objeto.
+Si la carpeta no está vacía, contiene un subárbol de [**objetos IWiaItem2.**](-wia-iwiaitem2.md) El **método IWiaItem2::EnumChildItems** enumera todos los elementos contenidos en la carpeta . Almacena un puntero a un enumerador en el *parámetro ppIEnumWiaItem2.* Las aplicaciones usan el puntero de enumerador para realizar la enumeración de los elementos secundarios de un objeto.
 
 Las aplicaciones deben llamar [al método IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) en los punteros de interfaz que reciben a través del *parámetro ppIEnumWiaItem2.*
 
@@ -80,8 +80,8 @@ Las aplicaciones deben llamar [al método IUnknown::Release](/windows/win32/api/
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: UI_PKEY_CommandType
-description: Identifica la propiedad \_ PKEY \_ CommandType de la interfaz de usuario.
+description: Identifica la propiedad \_ CommandType de PKEY \_ de la interfaz de usuario.
 ms.assetid: e56d942e-d210-41f9-b603-40d188a2afbb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b30a9ad93623cb4884f16e193618dbc60f1303f664b7f6343dc816db83bd0f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f283529e93a21751a9e5f77fa42671507a2cf1a9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119932534"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571309"
 ---
 # <a name="ui_pkey_commandtype"></a>UI \_ PKEY \_ CommandType
 
-Identifica la propiedad \_ PKEY \_ CommandType de la interfaz de usuario.
+Identifica la propiedad \_ CommandType de PKEY \_ de la interfaz de usuario.
 
 ```
 propertyDescription
@@ -25,9 +25,9 @@ propertyDescription
       type = VT_UI4
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La \_ interfaz de usuario PKEY \_ CommandType la usa una aplicación para consultar los tipos de comandos de un control de galería.
+La \_ interfaz de usuario PKEY \_ CommandType la usa una aplicación para consultar los tipos de comandos de un control de la galería.
 
 El valor de propiedad es de la [**\_ enumeración COMMANDTYPE de la**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_commandtype) interfaz de usuario.
 

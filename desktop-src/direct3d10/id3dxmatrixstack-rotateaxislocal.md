@@ -1,5 +1,5 @@
 ---
-description: 'Método ID3DXMATRIXStack::RotateAxisLocal (D3DX10.h): gira (con respecto al espacio de coordenadas local del objeto) alrededor de un eje arbitrario.'
+description: 'Método ID3DXMATRIXStack::RotateAxisLocal (D3DX10.h): gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.'
 ms.assetid: 90837762-9bfe-4065-94b3-1ca61184a78e
 title: Método ID3DXMATRIXStack::RotateAxisLocal (D3DX10.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 94ebd2513dfb38936d1167e307026f00db96592a420d6fc1994a680e1336ffb3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8a81a4c4bd9a2f738274f98ce925799b34986fbb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119046853"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474488"
 ---
 # <a name="id3dxmatrixstackrotateaxislocal-method-d3dx10h"></a>Método ID3DXMATRIXStack::RotateAxisLocal (D3DX10.h)
 
@@ -46,7 +46,7 @@ HRESULT RotateAxisLocal(
 
 Tipo: **const [**D3DXVECTOR3**](../direct3d9/d3dxvector3.md) \***
 
-Puntero al eje arbitrario de rotación. Vea [**D3DXVECTOR3**](d3d10-d3dxvector3.md).
+Puntero al eje arbitrario de rotación. Vea [**D3DXVECTOR3.**](d3d10-d3dxvector3.md)
 
 </dd> <dt>
 
@@ -63,9 +63,9 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método agrega la rotación a la pila de matriz con la matriz de rotación calculada similar a la siguiente:
 

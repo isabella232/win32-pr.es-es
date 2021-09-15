@@ -1,5 +1,5 @@
 ---
-description: Un perfil de directiva de LAN inalámbrica Wi-Fi (WLAN) nativo se compone de los siguientes elementos de esquema.
+description: Un perfil de directiva DE LAN inalámbrica Wi-Fi (WLAN) nativo se compone de los siguientes elementos de esquema.
 ms.assetid: e3f45b02-6aea-4df3-938e-c13e7c52ca04
 title: WLAN_policy de esquema
 ms.topic: article
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 92bfca66e1eff2c8c180968c83b5dbb565d1d4aa27ace1ba89d1c70634d6e7b0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8346aab6aba209933b20790cf3747d5c0944f972
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118619550"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473700"
 ---
 # <a name="wlan_policy-schema-elements"></a>Elementos de esquema de directiva WLAN \_
 
-Un perfil de directiva de LAN inalámbrica Wi-Fi (WLAN) nativo se compone de los siguientes elementos de esquema. Todos los elementos con nombre están en el espacio de nombres `https://www.microsoft.com/networking/WLAN/policy/v1` .
+Un perfil de directiva DE LAN inalámbrica Wi-Fi (WLAN) nativo se compone de los siguientes elementos de esquema. Todos los elementos con nombre están en el espacio de nombres `https://www.microsoft.com/networking/WLAN/policy/v1` .
 
 En la lista siguiente se muestran los elementos definidos en el orden en que los elementos aparecen en un perfil. Se aplica el orden de los elementos. No todos los elementos están en todos los perfiles, ya que algunos elementos son opcionales.
 

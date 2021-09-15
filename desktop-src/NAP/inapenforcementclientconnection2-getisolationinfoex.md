@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb89cc4a5fed046173ebdef2d5ed38574e52648fddd5cb357d8726c07581f51b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6586dd5fc277e62d4478e685f49ac132e744bcc6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118368058"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473790"
 ---
 # <a name="inapenforcementclientconnection2getisolationinfoex-method"></a>INapEnforcementClientConnection2::GetIsolationInfoEx (método)
 
@@ -70,9 +70,9 @@ También se pueden devolver otros códigos de error específicos de COM.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-NapAgent establece esta información después de procesar [**un SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) y el ejecutor no debe establecer esta información.
+NapAgent establece esta información después de procesar un [**SoHResponse**](/windows/win32/api/naptypes/ns-naptypes-soh) y el ejecutor no debe establecer esta información.
 
 Sha debe liberar la estructura [**IsolationInfoEx**](/windows/win32/api/naptypes/ns-naptypes-isolationinfoex) llamando [**a FreeIsolationInfoEx.**](freeisolationinfoex.md)
 
@@ -80,17 +80,17 @@ Sha debe liberar la estructura [**IsolationInfoEx**](/windows/win32/api/naptypes
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -4,18 +4,18 @@ ms.assetid: 2a0abb9b-41e3-49ba-a60b-3096d9c032bd
 title: Directiva de metadatos de fotos System.GPS.DestLongitudeRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fca1095138b35767da94e2eeed85a11892ba6edea3fa32f37ea6bd85fb76462
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8139fcf5218d9863393888d7ab7b188a53e7f55f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118964954"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572264"
 ---
 # <a name="systemgpsdestlongituderef-photo-metadata-policy"></a>Directiva de metadatos de fotos System.GPS.DestLongitudeRef
 
 Directiva de metadatos de fotos [para la propiedad System.GPS.DestLongitudeRef.](../properties/props-system-gps-destlongituderef.md)
 
-### <a name="pkey"></a>Pkey
+### <a name="pkey"></a>PKEY
 
 PKEY \_ GPS. DestLongitudeRef
 

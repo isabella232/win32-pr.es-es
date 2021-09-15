@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 303f43f1061dd9d8b05855b3c2af94a1ace3c071c12b308303b1524b255a6133
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 300add64d332dbc509bef6ec5bb2ad124f7a6b3e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118963523"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571176"
 ---
 # <a name="resource-attributes"></a>Atributos de recursos
 

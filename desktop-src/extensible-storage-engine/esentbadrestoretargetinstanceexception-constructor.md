@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2c9594e3277d7a272ff945ed367e6a6dced1e1e2aa7e066c1593643315f6ebdf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b6ea47d1b537eb10b6fced97388eb85fb30f7adb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118082642"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474429"
 ---
 # <a name="esentbadrestoretargetinstanceexception-constructor"></a>Constructor EsentBadRestoreTargetInstanceException
 

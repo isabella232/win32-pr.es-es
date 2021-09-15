@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - wifidisplay.dll
-ms.openlocfilehash: a5e2da91e29535c1e2fd9553a2b6ec2bb0008e61f33cd55ebcda2746b93eb657
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d1ebaa9920ca7d38cff22cef6383b37065faa2ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117797935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473738"
 ---
 # <a name="wfddisplaysinkstop-function"></a>Función WFDDisplaySinkStop
 
@@ -41,21 +41,21 @@ Esta función no tiene parámetros.
 
 Si la función se realiza correctamente, el valor devuelto es ERROR \_ SUCCESS.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se espera que la aplicación haya desbloqueado las devoluciones de llamada en curso antes de llamar a **WFDStopDisplaySink.**
+Se espera que la aplicación haya desbloqueado las devoluciones de llamada en curso antes de llamar a **WFDStopDisplaySink**.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows 10<br/>                                                                      |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2016<br/>                                                             |
-| Header<br/>                   | <dl> <dt>Wfdsink.h</dt> </dl>       |
+| Encabezado<br/>                   | <dl> <dt>Wfdsink.h</dt> </dl>       |
 | Biblioteca<br/>                  | <dl> <dt>Wifidisplay.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wifidisplay.dll</dt> </dl> |
 

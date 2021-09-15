@@ -1,21 +1,21 @@
 ---
-title: Estructuras de palabras clave dinámicas del firewall
-description: Las palabras clave dinámicas del firewall contienen las estructuras siguientes.
+title: Estructuras de palabras clave dinámicas de firewall
+description: Las palabras clave dinámicas del firewall contienen las siguientes estructuras.
 keywords:
 - Palabras clave dinámicas del firewall, estructuras
 ms.topic: article
 ms.date: 05/13/2021
 ms.localizationpriority: low
 ms.openlocfilehash: b5ac4db0afd138261c211e21c9a20fe1a55d830c
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "124361301"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571704"
 ---
-# <a name="firewall-dynamic-keywords-structures"></a>Estructuras de palabras clave dinámicas del firewall
+# <a name="firewall-dynamic-keywords-structures"></a>Estructuras de palabras clave dinámicas de firewall
 
-Las palabras clave dinámicas del firewall contienen las estructuras siguientes.
+Las palabras clave dinámicas del firewall contienen las siguientes estructuras.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -26,4 +26,4 @@ Las palabras clave dinámicas del firewall contienen las estructuras siguientes.
 
 ## <a name="related-topics"></a>Temas relacionados
 
-* [Referencia de palabras clave dinámicas del firewall](firewall-dynamic-keywords-reference.md)
+* [Referencia de palabras clave dinámicas de firewall](firewall-dynamic-keywords-reference.md)

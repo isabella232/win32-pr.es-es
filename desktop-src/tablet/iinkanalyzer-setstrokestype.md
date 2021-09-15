@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 41852b0a4ec52b5ce07a12964cd03ebb0ab1bfe437e37bf8249752d0162470a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: de3f4e56b24226c2f74c6572561082c1d00afc8a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119091515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572384"
 ---
 # <a name="iinkanalyzersetstrokestype-method"></a>IInkAnalyzer::SetStrokesType (método)
 
@@ -58,7 +58,7 @@ Matriz que contiene los identificadores de trazo de los trazos a los que se va a
 *StrokeType* \[ En\]
 </dt> <dd>
 
-Valor [**de StrokeType**](stroketype.md) que se asignará a los trazos.
+Valor [**strokeType**](stroketype.md) que se asignará a los trazos.
 
 </dd> </dl>
 
@@ -66,11 +66,11 @@ Valor [**de StrokeType**](stroketype.md) que se asignará a los trazos.
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si el tipo del trazo es el valor [**StrokeType StrokeType**](stroketype.md) **\_ Unclassified**, [**IInkAnalyzer**](iinkanalyzer.md) clasifica el trazo durante el análisis de entrada manuscrita. De lo contrario, **IInkAnalyzer** usa el tipo establecido en el trazo.
+Si el tipo del trazo es el valor [**StrokeType**](stroketype.md) **StrokeType \_ Unclassified**, [**IInkAnalyzer**](iinkanalyzer.md) clasifica el trazo durante el análisis de lápiz. De lo contrario, **IInkAnalyzer** usa el tipo establecido en el trazo.
 
-[**IInkAnalyzer**](iinkanalyzer.md) no establece el valor del tipo de trazo como parte del análisis de entrada de lápiz. Para especificar o cambiar el tipo de trazo, use el método [**IInkAnalyzer::SetStrokeType o**](iinkanalyzer-setstroketype.md) el método **IInkAnalyzer::SetStrokesType**.
+[**IInkAnalyzer**](iinkanalyzer.md) no establece el valor del tipo de trazo como parte del análisis de lápiz. Para especificar o cambiar el tipo de trazo, use el método [**IInkAnalyzer::SetStrokeType o**](iinkanalyzer-setstroketype.md) el método **IInkAnalyzer::SetStrokesType**.
 
 Si un trazo está asociado a un [**IContextNode**](icontextnode.md) que no es un nodo de entrada de lápiz sin clasificar (vea [**IContextNode::GetType),**](icontextnode-gettype.md)este método mueve el trazo a un nodo de entrada de lápiz sin clasificar que contiene trazos del mismo lenguaje. Si no existe ningún nodo de contexto, este método crea un nuevo nodo de entrada de lápiz sin clasificar y le agrega el trazo. Un nodo de entrada de lápiz sin clasificar es **un IContextNode** de tipo UnclassifiedInk.
 
@@ -82,7 +82,7 @@ Si un trazo identificado en *strokeIds* no está asociado a [**IInkAnalyzer,**](
 
 Si ninguno de los trazos especificados identifica un trazo asociado a [**IInkAnalyzer,**](iinkanalyzer.md)este método devuelve sin actualizar **IInkAnalyzer**.
 
-Si se establece el tipo de trazo en los trazos asociados a un ContextNode que tiene NodeTypeAndProperties confirmado, se genera una excepción InvalidOperationException.
+Al establecer el tipo de trazo en los trazos asociados a un ContextNode que tiene NodeTypeAndProperties confirmado, se genera una excepción InvalidOperationException.
 
 Este método devuelve un código de error cuando *plStrokes* es **NULL.**
 
@@ -90,11 +90,11 @@ Este método devuelve un código de error cuando *plStrokes* es **NULL.**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

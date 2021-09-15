@@ -17,12 +17,12 @@ keywords:
 - DRM (administración de derechos digitales),WMStubDRM.lib
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5be729f04f67e1a2e4319bcc8d267c798942293c2df2ee97dcc6a559af612aa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 160a14d96da924bdb2a307bc804514a1ec3de083
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119809475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572225"
 ---
 # <a name="creating-protected-files"></a>Crear archivos protegidos
 
@@ -57,7 +57,7 @@ En los temas siguientes se describe en detalle cómo proteger archivos.
 [**Obtención de la biblioteca DRM necesaria**](obtaining-the-required-drm-library.md)
 </dt> <dt>
 
-[**Leer archivos protegidos**](reading-protected-files.md)
+[**Lectura de archivos protegidos**](reading-protected-files.md)
 </dt> </dl>
 
  

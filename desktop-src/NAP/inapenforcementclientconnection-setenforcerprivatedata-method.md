@@ -1,11 +1,11 @@
 ---
 title: Método INapEnforcementClientConnection SetEnforcerPrivateData (NapEnforcementClient.h)
-description: Lo usa el aplicador para establecer datos privados.
+description: Lo usa el ejecutor para establecer datos privados.
 ms.assetid: 56f6fec7-47ec-4b2c-b8c8-a4d519ba0f91
 keywords:
 - Método NAP de SetEnforcerPrivateData
 - Método NAP de SetEnforcerPrivateData, interfaz INapEnforcementClientConnection
-- Interfaz INapEnforcementClientConnection NAP, método SetEnforcerPrivateData
+- INapEnforcementClientConnection interface NAP , SetEnforcerPrivateData method
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ebf42212d55f059286aa7b3d67f965b3b861755cc0291e57f339465291e5099
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef5773294e229a59ff07db8ef546d9d691b369b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118368104"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473809"
 ---
 # <a name="inapenforcementclientconnectionsetenforcerprivatedata-method"></a>Método INapEnforcementClientConnection::SetEnforcerPrivateData
 
@@ -30,7 +30,7 @@ ms.locfileid: "118368104"
 
  
 
-El aplicador usa el método **INapEnforcementClientConnection::SetEnforcerPrivateData** para establecer datos privados.
+El ejecutor usa el método **INapEnforcementClientConnection::SetEnforcerPrivateData** para establecer datos privados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -74,17 +74,17 @@ También se pueden devolver otros códigos de error específicos de COM.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

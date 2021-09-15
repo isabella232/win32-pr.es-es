@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 92bc8aec275b0d99e8f0b57996940216a25947d30bfc5194bdb4e675da3e9537
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ae0e3b6bf805b6913abba5eb5bb59c5013672d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119116985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474415"
 ---
 # <a name="esentcannotlogduringrecoveryredoexception-class"></a>Clase EsentCannotLogDuringRecoveryRedoException
 
@@ -46,7 +46,7 @@ Clase base para JET_err. No se pueden crear excepciones CannotLogDuringRecoveryR
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -66,7 +66,7 @@ public sealed class EsentCannotLogDuringRecoveryRedoException : EsentErrorExcept
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

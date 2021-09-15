@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0af787dedcbfce4749773fb2000e305032414ef055f9f868b3679e65da529672
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c4859013b77f2ad7bfafb4ad79327ef0b208544
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118705191"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571285"
 ---
 # <a name="bannerimageurl"></a>BannerImageURL
 
@@ -31,7 +31,7 @@ g \_ wszWMBannerImageURL
 
 **CADENA DE \_ TIPO \_ WMT**
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

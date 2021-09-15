@@ -1,23 +1,23 @@
 ---
-description: En esta sección se enumeran los temas sobre los efectos de audio de XAudio2.
+description: En esta sección se enumeran los temas sobre los efectos de audio XAudio2.
 ms.assetid: edd663db-2893-cef7-ccfa-d84d8bb83ff1
 title: Efectos de audio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54b241b55db3bacd6490c1973af1da0769f3cb192a3f7a20040c99da5e5df5c1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 037d2b02a538a4bbfd0e1651e24ee8fad105d756
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118192331"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571953"
 ---
 # <a name="audio-effects"></a>Efectos de audio
 
-En esta sección se enumeran los temas sobre los efectos de audio de XAudio2.
+En esta sección se enumeran los temas sobre los efectos de audio XAudio2.
 
 <dl> <dt>
 
-<span id="XAudio2_Audio_Effects"></span><span id="xaudio2_audio_effects"></span><span id="XAUDIO2_AUDIO_EFFECTS"></span>[Efectos de audio de XAudio2](xaudio2-audio-effects.md)
+<span id="XAudio2_Audio_Effects"></span><span id="xaudio2_audio_effects"></span><span id="XAUDIO2_AUDIO_EFFECTS"></span>[Efectos de audio XAudio2](xaudio2-audio-effects.md)
 </dt> <dd>
 
 Presenta los efectos de audio XAudio2.
@@ -59,10 +59,10 @@ Proporciona un ejemplo de cómo usar un XAPO en XAudio2.
 
 </dd> <dt>
 
-<span id="XAPOFX_Overview"></span><span id="xapofx_overview"></span><span id="XAPOFX_OVERVIEW"></span>[Información general sobre XAPOFX](xapofx-overview.md)
+<span id="XAPOFX_Overview"></span><span id="xapofx_overview"></span><span id="XAPOFX_OVERVIEW"></span>[Información general de XAPOFX](xapofx-overview.md)
 </dt> <dd>
 
-Presenta la biblioteca de efectos de objeto de procesamiento de audio multiplataforma (XAPOFX).
+Presenta la biblioteca de efectos de objetos de procesamiento de audio multiplataforma (XAPOFX).
 
 </dd> <dt>
 

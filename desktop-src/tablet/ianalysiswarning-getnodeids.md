@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 97e6f4fde66faef14402c815f6b95517a2bd19adfb90eac4e865383770bc753f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a38abd054e457ef9dbaf5dd93c38954b1ce6dcb3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118967484"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572444"
 ---
 # <a name="ianalysiswarninggetnodeids-method"></a>IAnalysisWarning::GetNodeIds (método)
 
@@ -43,7 +43,7 @@ HRESULT GetNodeIds(
 *pulCount* \[ in, out\]
 </dt> <dd>
 
-Número de identificadores únicos globales (GUID) en *ppNodeIds.*
+Número de identificadores únicos globales (GUID) en *ppNodeIds*.
 
 </dd> <dt>
 
@@ -58,9 +58,9 @@ Puntero a una matriz de GUID que identifica los nodos de contexto asociados a es
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si *ppNodeIds se* pasa como **NULL,** el **método GetNodeIds** devuelve **S \_ OK** y el número de rectángulos se devuelve en *pulCount*.
+Si *ppNodeIds se* pasa como **NULL,** el método **GetNodeIds** devuelve **S \_ OK** y el número de rectángulos se devuelve *en pulCount*.
 
 > [!Caution]  
 > Para evitar una pérdida de memoria, use [**CoTaskMemFree**](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) para liberar la memoria de \* *ppNodeIds* cuando ya no necesite la información.
@@ -69,7 +69,7 @@ Si *ppNodeIds se* pasa como **NULL,** el **método GetNodeIds** devuelve **S \_ 
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo obtener los objetos [**IContextNode**](icontextnode.md) que están en [**IAnalysisWarning**](ianalysiswarning.md), y cómo obtener solo el número de objetos `warning` **IContextNode.**
+En el ejemplo siguiente se muestra cómo obtener los objetos [**IContextNode**](icontextnode.md) que se encuentran en [**IAnalysisWarning**](ianalysiswarning.md), y cómo obtener solo el número de objetos `warning` **IContextNode.**
 
 
 ```C++
@@ -97,12 +97,12 @@ warning->GetNodeIds(&number, NULL);
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

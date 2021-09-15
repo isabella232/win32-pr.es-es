@@ -4,12 +4,12 @@ ms.assetid: 2fa6a5d9-64d6-447f-bf2a-d3bf6ca7c093
 title: Definición de esquema del lector de diario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e749d6b6508fb161ec87a91e8790711f93a3e96e7d647fd314a205cafd07b9e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1fa38ae5b0bd1d635661e48aea49671182471609
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118716371"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572312"
 ---
 # <a name="journal-reader-schema-definition"></a>Definición de esquema del lector de diario
 

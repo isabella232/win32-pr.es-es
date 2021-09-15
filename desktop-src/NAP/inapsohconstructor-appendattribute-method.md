@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d7d7ca4636d0eaeea35054dc5330b17f1360dffec5231922ad0acc357231c3d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cc10fad9c775d324822700b77afed4e65a798db6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118939592"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473764"
 ---
-# <a name="inapsohconstructorappendattribute-method"></a>INapSoHConstructor::AppendAttribute (método)
+# <a name="inapsohconstructorappendattribute-method"></a>INapSoHConstructor::AppendAttribute (Método)
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
@@ -78,9 +78,9 @@ También se pueden devolver otros códigos de error específicos de COM.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El [**TLV sohAttributeTypeSystemHealthId**](sohattributetype-enum.md) no debe agregarse mediante esta función. [**INapSoHConstructor::Initialize**](inapsohconstructor-initialize-method.md) agrega como el primer TLV a los paquetes SOH recién construidos.
+El [**TLV sohAttributeTypeSystemHealthId**](sohattributetype-enum.md) no debe agregarse mediante esta función. [**INapSoHConstructor::Initialize**](inapsohconstructor-initialize-method.md) agrega como primer TLV a paquetes SOH recién construidos.
 
 Al anexar un atributo que el sistema Nap consumirá, no debe cifrarse ni modificarse de ninguna manera. Si HealthEntity requiere la comprobación de cifrado o integridad (MAC) de información privada, solo debe incluirse en el atributo [**sohAttributeTypeVendorSpecific.**](sohattributetype-enum.md)
 
@@ -92,8 +92,8 @@ Al anexar un atributo que el sistema Nap consumirá, no debe cifrarse ni modific
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl>       |
 
 

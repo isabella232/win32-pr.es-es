@@ -4,12 +4,12 @@ description: La directiva \ undef quita la definición actual del nombre especif
 ms.assetid: c9a0b538-3030-4d39-bfc2-d158061967b6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3adf208ecca3f130aefc99de8d2926028f25bcd46be46d42e4cbf92e708fa0b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a04b14eeea18a05795cd8ebbb94d81d0aead6a9d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118473065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571632"
 ---
 # <a name="undef"></a>\#undef
 

@@ -4,12 +4,12 @@ ms.assetid: 7d574bf0-bcb3-4e19-9659-fe741ace9f21
 title: Propiedades privadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d166f876bb953008a6920c3089fab5974ebbb05909c1b41db299212ee069dd8c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ab7b0196be016fecb625e139f308219582620d40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119558425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473949"
 ---
 # <a name="private-properties"></a>Propiedades privadas
 

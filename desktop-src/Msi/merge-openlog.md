@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: c69ecf0c7a4a629b2f6ebc303d34619ae9d4cc396c79e09ea37e2d4b27db5c3c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 46dc029c88b44540817e93e1e559829d88b9f62b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117804617"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473978"
 ---
 # <a name="mergeopenlog-method"></a>Método Merge.OpenLog
 
@@ -51,7 +51,7 @@ Nombre de archivo completo que apunta a un archivo que se debe abrir o crear.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los clientes pueden enviar sus propios mensajes a este archivo de registro a través del [**método Log.**](merge-log.md)
 
@@ -63,10 +63,10 @@ Consulte [**Función OpenLog.**](/windows/win32/api/mergemod/nf-mergemod-imsmmer
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versión<br/> | Mergemod.dll 1.0 o posterior<br/>                                                    |
-| Header<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
+| Encabezado<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | Archivo DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

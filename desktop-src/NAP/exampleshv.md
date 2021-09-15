@@ -4,12 +4,12 @@ description: En el ejemplo siguiente se configura un validador de estado del sis
 ms.assetid: 2264c1d7-b1fb-4937-bf24-d6fa05bdc6fe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82ec6d2f3f1c5f6aa7f9a1686d288177054f373a3962a9d7db47b9467d9b08a8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c071a1ce6ba974d2170cbd8a4cda2d7e66b18f46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118369019"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473844"
 ---
 # <a name="example-shv"></a>SHV de ejemplo
 

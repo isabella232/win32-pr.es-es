@@ -1,21 +1,21 @@
 ---
-title: Crear una función de devolución de llamada frame
-description: Crear una función de devolución de llamada frame
+title: Crear una función de devolución de llamada de marco
+description: Crear una función de devolución de llamada de marco
 ms.assetid: 37002ee0-9907-4aab-93cc-50fe9cd21cff
 keywords:
-- CapSetCallbackOnFrame macro
+- CapSetCallbackOnFrame (macro)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 07b2a921bfae235c50387c41865c44bb69b5c05a
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371359"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473898"
 ---
-# <a name="creating-a-frame-callback-function"></a>Crear una función de devolución de llamada frame
+# <a name="creating-a-frame-callback-function"></a>Crear una función de devolución de llamada de marco
 
-El ejemplo siguiente es una función de devolución de llamada de fotograma simple. Registre esta devolución de llamada mediante la [**macro capSetCallbackOnFrame.**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonframe)
+El ejemplo siguiente es una función de devolución de llamada de marco simple. Registre esta devolución de llamada mediante la [**macro capSetCallbackOnFrame.**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonframe)
 
 
 ```

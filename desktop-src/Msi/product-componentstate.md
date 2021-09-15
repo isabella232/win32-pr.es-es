@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: d2bc9c5c1f5325dc631f8866ba1a8c7d88ce18d624a2974974f4692bf4f7b067
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 240a854a899f46bf80703bbd6cfb6b1529848586
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118376784"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473942"
 ---
 # <a name="productcomponentstate-method"></a>Método Product.ComponentState
 
@@ -41,7 +41,7 @@ Product.ComponentState(
 
 <dl> <dt>
 
-*Id* 
+*ID* 
 </dt> <dd>
 
 GUID de código de componente del componente, tal como se encuentra en la columna ComponentID de la [tabla Component](component-table.md).
@@ -52,7 +52,7 @@ GUID de código de componente del componente, tal como se encuentra en la column
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la llamada se realiza correctamente, la propiedad contiene el valor como **DWORD**.
 
@@ -73,13 +73,13 @@ Si se produce un error en la llamada, la propiedad contiene un código de error 
 
 | Error                     | Significado                                                                                                            |
 |---------------------------|--------------------------------------------------------------------------------------------------------------------|
-| ACCESO DE ERROR \_ \_ DENEGADO     | El proceso de llamada debe tener privilegios administrativos para obtener información de un usuario distinto del usuario actual. |
+| ERROR \_ DE ACCESO \_ DENEGADO     | El proceso de llamada debe tener privilegios administrativos para obtener información de un usuario distinto del usuario actual. |
 | ERROR \_ DE CONFIGURACIÓN NO \_ ACTIVA | Los datos de configuración están dañados.                                                                                 |
-| ERROR \_ PARÁMETRO NO \_ VÁLIDO | Se pasó un parámetro no válido a la función.                                                                   |
+| ERROR \_ PARÁMETRO NO \_ VÁLIDO | Se pasó un parámetro no válido a la función .                                                                   |
 | ERROR \_ CORRECTO            | La función se completó correctamente.                                                                               |
 | COMPONENTE DESCONOCIDO \_ DE \_ ERROR | El identificador de componente no identifica un componente conocido.                                                              |
 | ERROR \_ PRODUCTO \_ DESCONOCIDO   | El código de producto no identifica un producto conocido.                                                                |
-| ERROR EN \_ LA FUNCIÓN \_   | Error interno inesperado.                                                                                    |
+| ERROR \_ EN LA FUNCIÓN \_   | Error interno inesperado.                                                                                    |
 
 
 
@@ -89,15 +89,15 @@ Si se produce un error en la llamada, la propiedad contiene un código de error 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Instalador 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
+| Versión<br/> | Windows Instalador 5.0 en Windows Server 2012, Windows 8, Windows Server 2008 R2 o Windows 7. Windows Instalador 4.0 o Windows Installer 4.5 en Windows Server 2008 o Windows Vista. Windows Instalador 3.0 o posterior en Windows Server 2003, Windows XP y Windows 2000<br/> |
 | Archivo DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                                                   |
-| IID<br/>     | IID IProduct se define como \_ 000C10A0-0000-0000-C000-000000000046<br/>                                                                                                                                                                                                          |
+| IID<br/>     | IID IProduct se define como \_ 000C10A0-0000-0000-C000-00000000046<br/>                                                                                                                                                                                                          |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

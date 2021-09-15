@@ -4,12 +4,12 @@ ms.assetid: CAEC8F92-8971-42B4-BED8-A6A93522D11E
 title: Introducción al formato GIF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 345f3856c01ff94ba51ce16ccc64bd299312d75777b1f269c0cf9a4e67c56a07
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ddf7e9924c921b7944de114f5fe667cb2aa33cae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118709504"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571317"
 ---
 # <a name="gif-format-overview"></a>Introducción al formato GIF
 

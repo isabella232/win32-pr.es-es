@@ -4,12 +4,12 @@ ms.assetid: 6b2f5a50-fabd-4c80-acc8-a0883c939632
 title: API Interfaz de usuario inalámbricas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e2b2af7faccc5452163ad89ed28d12e7de917f4b872011165e0cfb1760657dd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c5814ea8daa55ab3ec1bf431543174cf57fdfa7c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118619932"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473721"
 ---
 # <a name="wireless-user-interface-apis"></a>API Interfaz de usuario inalámbricas
 
@@ -17,11 +17,11 @@ Windows 8, Windows Server 2012 y versiones posteriores incluyen una nueva caract
 
 En Windows 7, Windows Server 2008 y Windows Vista, hay varias interfaces de usuario (URI) que se usan para conectarse a una red inalámbrica o configurarla. Estas URI se pueden iniciar en una aplicación mediante Native Wifi y Windows Shell. Estas URI no están disponibles en Windows 8, Windows Server 2012 y versiones posteriores.
 
-Windows XP con SP3 y LAN API inalámbrica **para Windows XP con SP2:** No se puede iniciar ninguna interfaz de usuario usada para conectarse a una red inalámbrica o configurarla en una aplicación mediante programación.
+Windows XP con SP3 y la API de LAN inalámbrica **para Windows XP con SP2:** No se puede iniciar ninguna interfaz de usuario usada para conectarse a una red inalámbrica o configurarla en una aplicación mediante programación.
 
 ## <a name="connect-to-a-network"></a>Conexión a una red
 
-En Windows 8, Windows Server 2012, Windows 7, Windows Server 2008 y Windows Vista, el asistente de **Conectar a** una red se puede usar para establecer una conexión a una red inalámbrica. Puede usar la función [**ShellExecute**](/windows/win32/api/shellapi/nf-shellapi-shellexecutea) para iniciar el Conectar **en un asistente de** red.
+En Windows 8, Windows Server 2012, Windows 7, Windows Server 2008 y Windows Vista, el asistente de **Conectar a** una red se puede usar para establecer una conexión a una red inalámbrica. Puede usar la [**función ShellExecute**](/windows/win32/api/shellapi/nf-shellapi-shellexecutea) para iniciar el Conectar **a un asistente de** red.
 
 El código siguiente muestra una [**llamada a ShellExecute**](/windows/win32/api/shellapi/nf-shellapi-shellexecutea) que inicia el **Conectar a un asistente de** red.
 

@@ -10,12 +10,12 @@ keywords:
 - uso compartido de ancho de banda, interfaz IWMProfile
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7259ddf441a4e32eb7eb4aea19a52d633c6aacd3a27ad6d392e4fea41c3f4fa8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 298c690b484a8b4b5990aacd5d525867da8923c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117845161"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572141"
 ---
 # <a name="using-bandwidth-sharing"></a>Uso compartido de ancho de banda
 

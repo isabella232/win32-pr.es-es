@@ -4,12 +4,12 @@ ms.assetid: d53147c3-5618-496f-b8b9-de20e1d33c01
 title: V (Windows instalador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 087840f1791290da4cf82f1583370395a53ccd58f53beeb814ef819b9efa577d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 22931a448c6dc1933e579af9d4f72d67ece354ca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118942255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473895"
 ---
 # <a name="v-windows-installer"></a>V (Windows instalador)
 

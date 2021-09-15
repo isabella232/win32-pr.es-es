@@ -4,12 +4,12 @@ description: Obtenga información sobre las enumeraciones Authenticator método 
 ms.assetid: 8c21625f-a9b7-4ea5-98ff-cdcce637dad8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 043ed53dfe3c358eb5c7a697261481f8a579d4f267f1ea989b0da01a1e45f120
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 14b9f19efba1756ce450683a2c3516d3f352ac84
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120094445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571884"
 ---
 # <a name="eaphost-authenticator-method-enumerations"></a>EapHost Authenticator enumeraciones de métodos
 

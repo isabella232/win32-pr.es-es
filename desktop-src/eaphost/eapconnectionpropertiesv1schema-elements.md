@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5c040f5a58b5e8855e3aea8aed2992b2a390e2bdc8eec8399bdf051c70117009
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c14591631e6f050318dcc88f78ee11ea4f443c79
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119948225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571864"
 ---
 # <a name="eapconnectionpropertiesv1-schema-elements"></a>elementos de esquema eapconnectionpropertiesv1
 
@@ -31,7 +31,7 @@ El [esquema eapconnectionpropertiesv1](eapconnectionpropertiesv1schema-schema.md
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[esquema eapconnectionpropertiesv1](eapconnectionpropertiesv1schema-schema.md)
+[Esquema eapconnectionpropertiesv1](eapconnectionpropertiesv1schema-schema.md)
 </dt> </dl>
 
  

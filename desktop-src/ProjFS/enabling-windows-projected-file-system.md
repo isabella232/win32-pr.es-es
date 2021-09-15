@@ -1,19 +1,19 @@
 ---
-title: Habilitar Windows sistema de archivos proyectado
+title: Habilitar Windows de archivos proyectados
 description: Describe cómo habilitar ProjFS en Windows
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 09/17/2018
 ms.topic: article
-ms.openlocfilehash: ca891b9b7f89b3722ea9db1c606961d4ba47f0a1a1d05d1bebc2951c68e00f35
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f903192190877631084e366bcaeafd8b5b0e7e72
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120031265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473646"
 ---
-# <a name="enabling-windows-projected-file-system"></a>Habilitar Windows sistema de archivos proyectado
+# <a name="enabling-windows-projected-file-system"></a>Habilitar Windows de archivos proyectados
 
-ProjFS se incluye Windows como componente opcional.  Para que un proveedor pueda usarlo, debe estar habilitado.  Puede usar <!--the GUI or--> PowerShell para habilitar ProjFS.
+ProjFS se distribuye con Windows como componente opcional.  Para que un proveedor pueda usarlo, debe estar habilitado.  Puede usar <!--the GUI or--> PowerShell para habilitar ProjFS.
 
 <!--
 ## How to enable ProjFS in the GUI

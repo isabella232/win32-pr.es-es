@@ -1,17 +1,17 @@
 ---
 description: Este tema es una introducción a las API de codificación de archivos proporcionadas en Microsoft Media Foundation.
 ms.assetid: 69dbef63-e272-4ad2-8d04-ae9366f79b33
-title: Introducción a la codificación en Media Foundation
+title: Información general sobre la codificación en Media Foundation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a663260d92aad4eb23902ec35721c252f15fbba64c3404ff97bfb60f0622c674
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81882bd6da43f4040614347b662d988844c7b7a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118239785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474052"
 ---
-# <a name="overview-of-encoding-in-media-foundation"></a>Introducción a la codificación en Media Foundation
+# <a name="overview-of-encoding-in-media-foundation"></a>Información general sobre la codificación en Media Foundation
 
 Este tema es una introducción a las API de codificación de archivos proporcionadas en Microsoft Media Foundation.
 
@@ -20,18 +20,18 @@ Este tema es una introducción a las API de codificación de archivos proporcion
 *La* codificación es un término general que abarca varios procesos distintos:
 
 1.  Codificación de una secuencia de audio o vídeo en formatos comprimidos. Por ejemplo, codificar una secuencia de vídeo en vídeo H.264.
-2.  Multiplexación ("muxing") de una o varias secuencias en una secuencia de bytes única. Normalmente, las secuencias entrantes se codifican primero. Este paso puede implicar el paquete de las secuencias codificadas.
-3.  Escribir una secuencia de bytes multiplexada en un archivo, como un archivo MP4 o advanced systems format (ASF). Como alternativa, la secuencia multiplexada se puede enviar a través de la red.
+2.  Multiplexar ("muxing") una o varias secuencias en una sola secuencia de bytes. Normalmente, las secuencias entrantes se codifican primero. Este paso puede implicar la aplicación de paquetes a las secuencias codificadas.
+3.  Escribir una secuencia de bytes multiplexada en un archivo, como un archivo MP4 o de formato de sistemas avanzados (ASF). Como alternativa, la secuencia multiplexada se puede enviar a través de la red.
 
 En el diagrama siguiente se muestran estos tres procesos:
 
 ![diagrama que muestra los procesos de codificación y multiplexación](images/encoding03.png)
 
-Entre las variaciones de este proceso se incluyen la transcodificación y la nueva experiencia:
+Las variaciones de este proceso incluyen transcodificación y reuxing:
 
--   *La transcodificación* significa descodificar un archivo existente, volver a codificar las secuencias y volver a multiplexar las secuencias codificadas. La transcodificación se puede realizar para convertir un archivo de un tipo de codificación a otro. por ejemplo, para convertir vídeo H.264 en Windows Media Video (WMV). También se puede hacer para cambiar la velocidad de bits codificada; el tamaño del fotograma de vídeo; la velocidad de fotogramas; u otros parámetros de formato.
--   *La remultiplexación* o *la nueva* experiencia significa desmultiplexar un archivo y volver a multiplexar las secuencias, sin ningún paso de descodificación o codificación. Esto puede hacerse para cambiar cómo se multiplexan los paquetes de audio y vídeo, quitar una secuencia o combinar secuencias de dos archivos de origen diferentes.
--   *La transratación* es un caso especial de transcodificación, donde la velocidad de bits cambia sin cambiar el tipo de compresión. Por ejemplo, puede convertir un archivo de velocidad de bits alta en una velocidad de bits inferior. Un escenario típico en el que se podría usar la transrrateación es al sincronizar contenido multimedia de un equipo a un dispositivo portátil. Si el dispositivo portátil no admite una velocidad de bits alta, es posible que el archivo se transrate antes de copiarlo en el dispositivo portátil.
+-   *La transcodificación* significa descodificar un archivo existente, volver a codificar las secuencias y volver a multiplexar las secuencias codificadas. La transcodificación se puede realizar para convertir un archivo de un tipo de codificación a otro. por ejemplo, para convertir vídeo H.264 a Windows Media Video (WMV). También se puede hacer para cambiar la velocidad de bits codificada; el tamaño del fotograma de vídeo; la velocidad de fotogramas; u otros parámetros de formato.
+-   *La remultiplexación* o *la* nueva experiencia significa desmultiplexar un archivo y volver a multiplexar las secuencias, sin ningún paso de descodificación o codificación. Esto puede hacerse para cambiar la forma en que se multiplexan los paquetes de audio y vídeo, para quitar una secuencia o para combinar secuencias de dos archivos de origen diferentes.
+-   *La transratación* es un caso especial de transcodificación, donde la velocidad de bits cambia sin cambiar el tipo de compresión. Por ejemplo, puede convertir un archivo de velocidad de bits alta en una velocidad de bits inferior. Un escenario típico en el que se podría usar la transratación es al sincronizar contenido multimedia desde un equipo a un dispositivo portátil. Si el dispositivo portátil no admite una velocidad de bits alta, es posible que el archivo se transrate antes de copiarlo en el dispositivo portátil.
 
 En el siguiente diagrama de bloques se muestra el proceso de transcodificación.
 
@@ -41,7 +41,7 @@ En el siguiente diagrama de bloques se muestra el proceso de reuxing.
 
 ![diagrama que muestra el proceso de reuxing](images/encoding06.png)
 
-En esta documentación, a veces se usa el término *codificación* para incluir la transcodificación y el remuxing. Cuando es importante distinguir entre ellos, la documentación tendrá en cuenta la diferencia.
+En esta documentación a veces se usa el término *codificación* para incluir la transcodificación y la reuxing. Cuando sea importante distinguirlos, la documentación tendrá en cuenta la diferencia.
 
 Vea también: [Media Foundation: Conceptos esenciales](media-foundation-programming--essential-concepts.md).
 
@@ -57,33 +57,33 @@ En el diagrama siguiente se muestra el flujo de datos entre estos componentes en
 
 ![diagrama que muestra los componentes usados en la transcodificación](images/encoding04.png)
 
-La mayoría de las aplicaciones no usarán estos componentes directamente. En su lugar, una aplicación usará las API de nivel superior que administran estos componentes de nivel inferior. Media Foundation proporciona dos API de nivel superior para la codificación:
+La mayoría de las aplicaciones no usarán estos componentes directamente. En su lugar, una aplicación usará API de nivel superior que administran estos componentes de nivel inferior. Media Foundation proporciona dos API de nivel superior para la codificación:
 
 <dl> <dt>
 
 <span id="Media_Session"></span><span id="media_session"></span><span id="MEDIA_SESSION"></span>[Sesión multimedia](media-session.md)
 </dt> <dd>
 
-La sesión multimedia proporciona una canalización de un extremo a otro que mueve los datos desde el origen multimedia, a través de los códecs y, por último, al receptor de medios. La aplicación controla la sesión multimedia y recibe eventos de estado de la sesión multimedia.
+La sesión multimedia proporciona una canalización de un extremo a otro que mueve los datos desde el origen multimedia, a través de los códecs y, por último, al receptor multimedia. La aplicación controla la sesión multimedia y recibe eventos de estado de la sesión multimedia.
 
 </dd> <dt>
 
-<span id="Source_Reader_plus_Sink_Writer"></span><span id="source_reader_plus_sink_writer"></span><span id="SOURCE_READER_PLUS_SINK_WRITER"></span>[Lector de origen más](source-reader.md) [escritor de receptores](sink-writer.md)
+<span id="Source_Reader_plus_Sink_Writer"></span><span id="source_reader_plus_sink_writer"></span><span id="SOURCE_READER_PLUS_SINK_WRITER"></span>[Lector de origen](source-reader.md) más [escritor receptor](sink-writer.md)
 </dt> <dd>
 
-El Lector de origen encapsula el origen de medios y, opcionalmente, los descodificadores. Proporciona ejemplos codificados o descodificados de la aplicación. Sink Writer encapsula el receptor multimedia y, opcionalmente, los codificadores. La aplicación pasa ejemplos al escritor receptor.
+El Lector de origen ajusta el origen multimedia y, opcionalmente, los descodificadores. Proporciona ejemplos codificados o descodificados de la aplicación. Sink Writer encapsula el receptor multimedia y, opcionalmente, los codificadores. La aplicación pasa ejemplos al escritor de receptores.
 
 </dd> </dl>
 
 En el diagrama siguiente se muestra la sesión multimedia:
 
-![diagrama que muestra cómo realiza la sesión multimedia la transcodificación](images/encoding01.png)
+![diagrama que muestra cómo realiza la transcodificación la sesión multimedia](images/encoding01.png)
 
 [Transcode API](transcode-api.md) (el cuadro sombreado azul) es un conjunto de API introducidas en Windows 7, que facilitan la configuración de la sesión multimedia para la codificación.
 
 En el diagrama siguiente se muestran el lector de origen y el escritor de receptores:
 
-![diagrama que muestra la transcodificación con el lector de origen y el escritor del receptor](images/encoding02.png)
+![diagrama que muestra la transcodificación con el lector de origen y el escritor de receptores](images/encoding02.png)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -92,7 +92,7 @@ En el diagrama siguiente se muestran el lector de origen y el escritor de recept
 [Codificación y creación de archivos](encoding-and-file-authoring.md)
 </dt> <dt>
 
-[Media Foundation programación: conceptos esenciales](media-foundation-programming--essential-concepts.md)
+[Media Foundation programación: Conceptos esenciales](media-foundation-programming--essential-concepts.md)
 </dt> </dl>
 
  

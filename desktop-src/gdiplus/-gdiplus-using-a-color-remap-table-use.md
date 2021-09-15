@@ -4,12 +4,12 @@ ms.assetid: 2b56ccd5-b9f3-4c5e-8a0b-4b3d1f2b7122
 title: Uso de una tabla de reasignación de colores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a00f36c493bbdc696fa672b2899d4d7c6d3231a9e40c0e4162b5113d78a67164
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe1c07bc0a67a02ea07aeaa3931e661af5665e33
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119036303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474299"
 ---
 # <a name="using-a-color-remap-table"></a>Uso de una tabla de reasignación de colores
 

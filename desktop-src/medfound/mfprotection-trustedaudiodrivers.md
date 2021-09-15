@@ -1,17 +1,17 @@
 ---
 description: Especifica controladores de audio de confianza.
 ms.assetid: 6728D066-2954-4CE7-936B-CCAADC04CE30
-title: MFPROTECTION_TRUSTEDAUDIODRIVERS atributo (Mfidl. h)
+title: MFPROTECTION_TRUSTEDAUDIODRIVERS atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 389bee6b79a3239cdbc0c5bc8fc6c690a5ee744d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104155376"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474073"
 ---
-# <a name="mfprotection_trustedaudiodrivers-attribute"></a>\_Atributo TRUSTEDAUDIODRIVERS de MFPROTECTION
+# <a name="mfprotection_trustedaudiodrivers-attribute"></a>Atributo MFPROTECTION \_ TRUSTEDAUDIODRIVERS
 
 Especifica controladores de audio de confianza.
 
@@ -25,9 +25,9 @@ Especifica controladores de audio de confianza.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                         |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                         |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                               |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Especifica controladores de audio de confianza.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

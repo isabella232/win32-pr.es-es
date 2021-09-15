@@ -4,12 +4,12 @@ ms.assetid: bd9f903d-bea6-494f-af81-d90457dc2647
 title: Navegar por el espacio de nombres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e2778fc21df12e9228f9335a52c04556e97563cba5f8a4cb6b82eb779944c451
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d24993369222fb32f9de6c79a0c998b1d7be9f2e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120111485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572492"
 ---
 # <a name="navigating-the-namespace"></a>Navegar por el espacio de nombres
 
@@ -23,10 +23,10 @@ Repita estos pasos con la frecuencia necesaria para llegar al destino.
 
 ## <a name="a-simple-example-of-namespace-navigation"></a>Un ejemplo sencillo de navegación de espacio de nombres
 
-El siguiente fragmento de código de ejemplo es una aplicación de consola sencilla que muestra una serie de procedimientos descritos en las secciones anteriores. Se ha omitido la comprobación de errores para mayor claridad. La aplicación realiza las tareas siguientes:
+El siguiente fragmento de código de ejemplo es una aplicación de consola sencilla que ilustra una serie de procedimientos descritos en las secciones anteriores. Se ha omitido la comprobación de errores para mayor claridad. La aplicación realiza las tareas siguientes:
 
 1.  Recupera la interfaz [**IShellFolder**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) de la carpeta Archivos de programa ([mediante la interfaz IShellFolder](folder-info.md)).
-2.  Enumera el contenido de la carpeta ([Enumerando el contenido de una carpeta](folder-info.md)).
+2.  Enumera el contenido de la carpeta ([enumerando el contenido de una carpeta](folder-info.md)).
 3.  Determina todos los nombres para mostrar y los imprime (Determinar nombres[para mostrar y otras propiedades).](folder-info.md)
 4.  Busca una subcarpeta ( Obtener un puntero a la interfaz[IShellFolder](folder-info.md)de una subcarpeta ).
 5.  Enlaza a la primera subcarpeta que encuentra ([Getting a Pointer to a Subfolder's IShellFolder Interface](folder-info.md)).

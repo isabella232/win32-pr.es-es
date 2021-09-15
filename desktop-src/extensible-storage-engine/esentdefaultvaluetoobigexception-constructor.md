@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c5f1a63d688bc3851427099b3a4093aaf266294017a44d6591659970d8b9d132
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 00320ad205b93e1cec1cfce1689f034e10bafc6c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119974225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474396"
 ---
 # <a name="esentdefaultvaluetoobigexception-constructor"></a>Constructor EsentDefaultValueTooBigException
 

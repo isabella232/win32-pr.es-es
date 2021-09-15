@@ -4,12 +4,12 @@ ms.assetid: 33c0aeed-3b68-4cdc-befe-4df3b1e6f2a3
 title: System.Devices.Connected
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd12dea781caee33793e93c41560fa2ae9acad75832eadabc75c3ea666e99fbe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bb61d437958e293a40443dc5d983317c0e2daeb9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119033593"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571537"
 ---
 # <a name="systemdevicesconnected"></a>System.Devices.Connected
 
@@ -47,7 +47,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

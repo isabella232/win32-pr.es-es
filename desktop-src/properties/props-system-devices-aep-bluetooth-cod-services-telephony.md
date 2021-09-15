@@ -1,19 +1,19 @@
 ---
-description: Bluetooth clase de telefonía del servicio de dispositivo.
+description: Bluetooth clase de telefonía del servicio de dispositivos.
 ms.assetid: be9c4050-b429-4e95-8145-0926356b5464
-title: System.Devices.Aep. Bluetooth. Cod.Services.Telefonía
+title: System.Devices.Aep. Bluetooth. Cod.Services.Telephony
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11a7635b1a05f9815822c18e6a1aa9461233a49d8799079c3ee95076fd7034ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1cafdbf31dd17d28d47f98187ec82b97ebf45f24
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119599145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572653"
 ---
-# <a name="systemdevicesaepbluetoothcodservicestelephony"></a>System.Devices.Aep. Bluetooth. Cod.Services.Telefonía
+# <a name="systemdevicesaepbluetoothcodservicestelephony"></a>System.Devices.Aep. Bluetooth. Cod.Services.Telephony
 
-Bluetooth clase de telefonía del servicio de dispositivo.
+Bluetooth clase de telefonía del servicio de dispositivos.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

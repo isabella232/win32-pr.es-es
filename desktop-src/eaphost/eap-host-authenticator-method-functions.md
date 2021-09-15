@@ -1,19 +1,19 @@
 ---
 title: Funciones del método Authenticator EAPHost
-description: Obtenga información sobre las funciones Authenticator API del método eapHost, como EapMethodAuthenticatorFreeErrorMemory.
+description: Obtenga información sobre las funciones Authenticator API de eapHost, como EapMethodAuthenticatorFreeErrorMemory.
 ms.assetid: 319516ee-b21d-4375-8c90-e3abe0a457e8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f3cc21d636c2a1b107897c3b000fca3f279288e13c14d1219f5b13515c2e8a0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 93fac5114085fe6c620084d564bbff97cc3b4535
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118984275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571881"
 ---
 # <a name="eaphost-authenticator-method-functions"></a>Funciones del método Authenticator EAPHost
 
-Las funciones de Authenticator API del método eapHost son las siguientes.
+Las funciones de LA API Authenticator método eapHost son las siguientes.
 
 
 
@@ -29,7 +29,7 @@ Las funciones de Authenticator API del método eapHost son las siguientes.
 | [**EapMethodAuthenticatorInvokeConfigUI**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorinvokeconfigui)                   | Define una función que genera el cuadro de diálogo interfaz de usuario de configuración de conexión del método EAP en el cliente.                                                                           |
 | [**EapMethodAuthenticatorReceivePacket**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorreceivepacket)                     | Procesa un paquete de autenticación EAP recibido por el servidor EAPHost y devuelve una acción de respuesta.                                                                                        |
 | [**EapMethodAuthenticatorSendPacket**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorsendpacket)                           | Obtiene un paquete de autenticación del método autenticador EAP para enviarlo al suplicante.                                                                                               |
-| [**EapMethodAuthenticatorSetAttributes**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorsetattributes)                     | Proporciona atributos de autenticación EAP actualizados para establecer en el método autenticador eap.                                                                                                      |
+| [**EapMethodAuthenticatorSetAttributes**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorsetattributes)                     | Proporciona atributos de autenticación EAP actualizados para establecer en el método autenticador de EAP.                                                                                                      |
 | [**EapMethodAuthenticatorShutdown**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorshutdown)                               | Apaga el método autenticador eap y se prepara para descargarlo del servidor EAPHost.                                                                                                  |
 | [**EapMethodAuthenticatorUpdateInnerMethodParams**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorupdateinnermethodparams) | Actualiza la configuración de sesión de autenticación de EAP establecida anteriormente mediante una llamada a [**EapMethodAuthenticatorBeginSession**](/previous-versions/windows/desktop/api/eapmethodauthenticatorapis/nf-eapmethodauthenticatorapis-eapmethodauthenticatorbeginsession) desde el servidor EAPHost. |
 

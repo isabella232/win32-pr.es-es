@@ -1,17 +1,17 @@
 ---
 description: Las métricas se usan para medir aspectos del rendimiento de la red y del protocolo.
 ms.assetid: ee5faaf6-e230-4084-9829-e8cae8759587
-title: Terminología de red (Windows Sockets 2)
+title: Terminología de red (Windows sockets 2)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a3d0c5fc67932b5c756ae52b9a7ffefef0f18c2728f2b2773de3741d0e5b7d41
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b04e84621cdaec2638762d54f67e5aca7e3d55ae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119794775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474519"
 ---
-# <a name="network-terminology-windows-sockets-2"></a>Terminología de red (Windows Sockets 2)
+# <a name="network-terminology-windows-sockets-2"></a>Terminología de red (Windows sockets 2)
 
 Las métricas se usan para medir aspectos del rendimiento de la red y del protocolo. Los valores de estas métricas en varios escenarios indican el nivel de rendimiento de una aplicación de red. En esta sección se definen los términos y las métricas usados en todo el sector para medir el rendimiento de las aplicaciones de red. Estos términos se usan en el resto de esta guía.
 

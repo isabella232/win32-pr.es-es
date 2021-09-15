@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: c996989661703c4a9c7416cd63904c376fdb7fcca3071d4558551bdd78470d3a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: adbc8b6a29f97066c8dc5b2e45b7ddc5834f2b60
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118208791"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571373"
 ---
 # <a name="deviceinfogetpropbyid-method"></a>Método DeviceInfo.GetPropById
 
@@ -54,11 +54,11 @@ Tipo: **VARIANT**
 
 Este método devuelve el valor de la propiedad especificada por *id.*.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use este método para buscar el valor de una propiedad de dispositivo a partir de su identificador. Para obtener una lista de los IDs de propiedad, vea [WiA Property Constant Definitions](-wia-wia-property-constant-definitions.md). Para obtener información sobre Windows propiedades de adquisición de imágenes (WIA), vea WiA Property Constants (Constantes [de propiedad de WIA).](-wia-wia-property-constants.md)
+Use este método para buscar el valor de una propiedad de dispositivo a partir de su identificador. Para obtener una lista de los iDs de propiedad, vea [Definiciones de constantes de propiedad de WIA.](-wia-wia-property-constant-definitions.md) Para obtener información sobre Windows propiedades de adquisición de imágenes (WIA), vea WiA Property Constants (Constantes [de propiedad de WIA).](-wia-wia-property-constants.md)
 
-Para las aplicaciones Visual Basic Microsoft, agregue una referencia a "Windows biblioteca de tipos de adquisición de imágenes 1.01". Las siguientes constantes definidas en ese archivo son válidas para este método:
+Para las aplicaciones Visual Basic Microsoft, agregue una referencia a "biblioteca de tipos Windows image acquisition 1.01". Las siguientes constantes definidas en ese archivo son válidas para este método:
 
 ``` syntax
 const DeviceID = 2
@@ -101,9 +101,9 @@ Next
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 

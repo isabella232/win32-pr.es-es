@@ -4,12 +4,12 @@ ms.assetid: 2d012508-de13-411f-9102-22e47faddffd
 title: Procesamiento de entrada y salida de MFT de códec
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c3cbec9b92ae11d8f1f3722f2cb2540a5b5b01bb5d680e448d298a36ec682ec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1af3a16fa1855574f1b7618bc0d41bf85c15412f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119101844"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474037"
 ---
 # <a name="processing-codec-mft-input-and-output"></a>Procesamiento de entrada y salida de MFT de códec
 

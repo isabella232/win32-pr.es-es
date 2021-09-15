@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: b655be140a6c54902ef9c0f47babafeeaf7b3dc2cb7cd3b1eadb97808f7da82c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9bacdf98a24d749b5128bc286f06e99299aef437
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118968384"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572472"
 ---
 # <a name="shelllinkobjectshowcommand-property"></a>Propiedad ShellLinkObject.ShowCommand
 
@@ -26,7 +26,7 @@ Obtiene o establece el estado de presentación inicial (tamaño, minimizado o ma
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```JScript
@@ -49,7 +49,7 @@ el estado de presentación del vínculo. Puede ser uno de los siguientes valores
 
 </dt> <dd>
 
-Activa y muestra una ventana. Si la ventana está minimizada o maximizada, el sistema la restaura a su tamaño y posición originales.
+Activa y muestra una ventana. Si la ventana se minimiza o maximiza, el sistema la restaura a su tamaño y posición originales.
 
 </dd> <dt>
 
@@ -208,10 +208,10 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 

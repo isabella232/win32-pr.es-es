@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ad61be7a611eefc18f408f3f325a45b5f5952e81d53279f04f002f8d87dc2f7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fb40ef8c0c984258dc11dd00c80807db2f4eb64a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120031066"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474557"
 ---
 # <a name="iwmpmediagetattributename-method"></a>IWMPMedia::getAttributeName (método)
 
@@ -64,13 +64,13 @@ Implements IWMPMedia.getAttributeName
 
 **System.String que** es el nombre del atributo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El nombre del atributo devuelto se puede usar junto con **getItemInfo** para recuperar el valor de un atributo con nombre específico.
 
 Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
-Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea referencia [de atributos](attribute-reference.md).
+Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea la [Referencia de atributos](attribute-reference.md).
 
 ## <a name="examples"></a>Ejemplos
 

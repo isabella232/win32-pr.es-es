@@ -1,19 +1,19 @@
 ---
-description: Permite al lector de código fuente o al escritor de receptores usar transformaciones de Media Foundation basadas en hardware (MFTs).
+description: Permite que el lector de origen o el escritor de receptores usen transformaciones de Media Foundation basadas en hardware (MFT).
 ms.assetid: 03f2fa76-b828-40b1-929d-60e7d5ab49bb
-title: MF_READWRITE_ENABLE_HARDWARE_TRANSFORMS atributo (Mfreadwrite. h)
+title: MF_READWRITE_ENABLE_HARDWARE_TRANSFORMS atributo (Mfreadwrite.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 642be732a51f064d07e57609a886810f2a9c40b2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104361100"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474130"
 ---
-# <a name="mf_readwrite_enable_hardware_transforms-attribute"></a>MF \_ ReadWrite \_ habilitar \_ el \_ atributo de transformaciones de hardware
+# <a name="mf_readwrite_enable_hardware_transforms-attribute"></a>Atributo MF \_ READWRITE \_ ENABLE \_ HARDWARE \_ TRANSFORMS
 
-Permite al lector de código fuente o al escritor de receptores usar transformaciones de Media Foundation basadas en hardware (MFTs).
+Permite que el lector de origen o el escritor de receptores usen transformaciones de Media Foundation basadas en hardware (MFT).
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,15 +21,15 @@ Permite al lector de código fuente o al escritor de receptores usar transformac
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame a [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obtener este atributo, llame [**a IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para establecer este atributo, llame a [**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para establecer este atributo, llame [**a IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="remarks"></a>Observaciones
 
-De forma predeterminada, el lector de origen y el escritor del receptor no usan descodificadores ni codificadores de hardware. Para habilitar el uso de MFTs de hardware, establezca este atributo en **true** al crear el lector de origen o el escritor del receptor.
+De forma predeterminada, el lector de origen y el escritor de receptores no usan codificadores ni descodificadores de hardware. Para habilitar el uso de MTA de hardware, establezca este atributo en **TRUE** al crear el lector de origen o el escritor de receptores.
 
-Utilice este atributo con las siguientes funciones:
+Use este atributo con las siguientes funciones:
 
 -   [**MFCreateSourceReaderFromByteStream**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesourcereaderfrombytestream)
 -   [**MFCreateSourceReaderFromMediaSource**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesourcereaderfrommediasource)
@@ -37,11 +37,11 @@ Utilice este atributo con las siguientes funciones:
 -   [**MFCreateSinkWriterFromMediaSink**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesinkwriterfrommediasink)
 -   [**MFCreateSinkWriterFromURL**](/windows/desktop/api/mfreadwrite/nf-mfreadwrite-mfcreatesinkwriterfromurl)
 
-Existe una excepción al comportamiento predeterminado. El lector de origen y el escritor de receptores usan automáticamente MFTs que se registran localmente en el proceso del llamador. Para registrar una MFT localmente, llame a [**MFTRegisterLocal**](/windows/desktop/api/mfapi/nf-mfapi-mftregisterlocal) o [**MFTRegisterLocalByCLSID**](/windows/desktop/api/mfapi/nf-mfapi-mftregisterlocalbyclsid). Los MFTs de hardware que se registran localmente se usan aunque no se haya establecido el atributo **MF \_ ReadWrite \_ habilitar \_ \_ transformaciones de hardware** .
+Hay una excepción al comportamiento predeterminado. El lector de origen y el sistema de escritura del receptor usan automáticamente MTA registrados localmente en el proceso del autor de la llamada. Para registrar un MFT localmente, llame a [**MFTRegisterLocal**](/windows/desktop/api/mfapi/nf-mfapi-mftregisterlocal) o [**MFTRegisterLocalByCLSID**](/windows/desktop/api/mfapi/nf-mfapi-mftregisterlocalbyclsid). Los MTA de hardware registrados localmente se usan incluso si no se ha establecido el atributo **MF \_ READWRITE \_ ENABLE HARDWARE \_ \_ TRANSFORMS.**
 
-Este atributo no afecta a la descodificación de vídeo acelerado por hardware que usa la aceleración de vídeo de DirectX (DXVA). Para habilitar la descodificación de DXVA en el lector de origen, establezca el atributo de [Administrador de D3D del \_ lector de origen \_ \_ \_ MF](mf-source-reader-d3d-manager.md) .
+Este atributo no afecta a lacodización de vídeo acelerada por hardware que usa la aceleración de vídeo directX (DXVA). Para habilitar la decodificación dxva en el lector de origen, establezca el atributo [MF \_ SOURCE READER \_ \_ D3D \_ MANAGER.](mf-source-reader-d3d-manager.md)
 
-Si este atributo es **true**, no establezca el atributo [MF \_ ReadWrite \_ Disable \_ Converters](mf-readwrite-disable-converters.md) .
+Si este atributo es **TRUE,** no establezca el atributo [MF \_ READWRITE \_ DISABLE \_ CONVERTERS.](mf-readwrite-disable-converters.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,9 +49,9 @@ Si este atributo es **true**, no establezca el atributo [MF \_ ReadWrite \_ Disa
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows 7 \|\]<br/>                                        |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 R2 \|\]<br/>                           |
-| Encabezado<br/>                   | <dl> <dt>Mfreadwrite. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                           |
+| Encabezado<br/>                   | <dl> <dt>Mfreadwrite.h</dt> </dl> |
 
 
 
@@ -59,13 +59,13 @@ Si este atributo es **true**, no establezca el atributo [MF \_ ReadWrite \_ Disa
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos del escritor de receptor](sink-writer-attributes.md)
+[Atributos del escritor de receptores](sink-writer-attributes.md)
 </dt> <dt>
 
-[Atributos del lector de código fuente](source-reader-attributes.md)
+[Atributos del lector de origen](source-reader-attributes.md)
 </dt> </dl>
 
  

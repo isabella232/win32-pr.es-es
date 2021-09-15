@@ -1,5 +1,5 @@
 ---
-description: Recupera el identificador del Windows de hardware de adquisición de imágenes (WIA). Solo lectura.
+description: Recupera el identificador del dispositivo de hardware Windows adquisición de imágenes (WIA). Solo lectura.
 ms.assetid: b3719c04-42d0-44d2-834b-ac11989c56da
 title: DeviceInfo.Id propiedad
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 95c124e623e0c832b7e2e8a737f56b97582ae2b7fcc7df842a154acf7be975eb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 42505feaab673f8d48e71b96caac5c81b756e614
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118441323"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571376"
 ---
 # <a name="deviceinfoid-property"></a>DeviceInfo.Id propiedad
 
-Recupera el identificador del Windows de hardware de adquisición de imágenes (WIA). Solo lectura.
+Recupera el identificador del dispositivo de hardware Windows adquisición de imágenes (WIA). Solo lectura.
 
 Esta propiedad es de solo lectura.
 
@@ -45,7 +45,7 @@ Cadena que recibe el identificador.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 

@@ -4,12 +4,12 @@ ms.assetid: f1dbcc9b-e60b-4044-9167-e9e87ead0a8b
 title: Referencia ad hoc inalámbrica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d515ed688d09a4ebf67a1dd47aa314dad3943df4665851833c66b2c21bd9d4a5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 95dc938df2d9cb8d0e3a44e6133ef09de4b04874
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119780075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473726"
 ---
 # <a name="wireless-ad-hoc-reference"></a>Referencia ad hoc inalámbrica
 

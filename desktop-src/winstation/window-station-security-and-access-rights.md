@@ -1,17 +1,17 @@
 ---
-title: Derechos de acceso y seguridad de la estación de windows
+title: Derechos de acceso y seguridad de las estaciones de ventana
 description: La seguridad permite controlar el acceso a los objetos de la estación de ventana. Para obtener más información sobre la seguridad, vea Access-Control modelo.
 ms.assetid: b132da61-26b7-4457-9433-4894ca0e640a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04e3b6871fe0e465b4394e871537fbb8ca07f6439577833d61a7fe0c3106685f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4c41bfb6d7990c104b60bd9770fde3f45cee0432
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118436000"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571293"
 ---
-# <a name="window-station-security-and-access-rights"></a>Derechos de acceso y seguridad de la estación de windows
+# <a name="window-station-security-and-access-rights"></a>Derechos de acceso y seguridad de las estaciones de ventana
 
 La seguridad permite controlar el acceso a los objetos de la estación de ventana. Para obtener más información sobre la seguridad, vea [Modelo de control de acceso](/windows/desktop/SecAuthZ/access-control-model).
 
@@ -19,17 +19,17 @@ Puede especificar un [descriptor de seguridad para](/windows/desktop/SecAuthZ/se
 
 Para obtener o establecer el descriptor de seguridad de un objeto de estación de ventana, llame a las [**funciones GetSecurityInfo**](/windows/desktop/api/aclapi/nf-aclapi-getsecurityinfo) [**y SetSecurityInfo.**](/windows/desktop/api/aclapi/nf-aclapi-setsecurityinfo)
 
-Cuando se llama a [**la función OpenWindowStation,**](/windows/win32/api/winuser/nf-winuser-openwindowstationa) el sistema comprueba los derechos de acceso solicitados con el descriptor de seguridad del objeto.
+Al llamar a la [**función OpenWindowStation,**](/windows/win32/api/winuser/nf-winuser-openwindowstationa) el sistema comprueba los derechos de acceso solicitados con el descriptor de seguridad del objeto.
 
 Los derechos de acceso válidos para los objetos de estación de ventana incluyen [los derechos de acceso estándar](/windows/desktop/SecAuthZ/standard-access-rights) y algunos derechos de acceso específicos del objeto. En la tabla siguiente se enumeran los derechos de acceso estándar utilizados por todos los objetos.
 
-| Valor                       | Significado                                                                                                                                                                                                                                                                              |
+| Value                       | Significado                                                                                                                                                                                                                                                                              |
 |-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | DELETE (0x00010000L)        | Necesario para eliminar el objeto.                                                                                                                                                                                                                                                       |
-| CONTROL \_ DE LECTURA (0x00020000L) | Necesario para leer información en el descriptor de seguridad del objeto, sin incluir la información en sacl. Para leer o escribir la SACL, debe solicitar el derecho de acceso ACCESS \_ SYSTEM \_ SECURITY. Para obtener más información, vea [SACL Access Right](/windows/desktop/SecAuthZ/sacl-access-right). |
+| CONTROL \_ DE LECTURA (0x00020000L) | Necesario para leer información en el descriptor de seguridad del objeto, sin incluir la información en la SACL. Para leer o escribir la SACL, debe solicitar el derecho de acceso ACCESS \_ SYSTEM \_ SECURITY. Para obtener más información, vea [SACL Access Right](/windows/desktop/SecAuthZ/sacl-access-right). |
 | SYNCHRONIZE (0x00100000L)   | No se admite para objetos de estación de ventana.                                                                                                                                                                                                                                            |
 | WRITE \_ DAC (0x00040000L)    | Necesario para modificar la DACL en el descriptor de seguridad del objeto .                                                                                                                                                                                                               |
-| WRITE \_ OWNER (0x00080000L)  | Necesario para cambiar el propietario en el descriptor de seguridad del objeto.                                                                                                                                                                                                              |
+| WRITE \_ OWNER (0x00080000L)  | Necesario para cambiar el propietario en el descriptor de seguridad del objeto .                                                                                                                                                                                                              |
 
 
 
@@ -56,7 +56,7 @@ En la tabla siguiente se enumeran los derechos de acceso específicos del objeto
 
  
 
-Estos son los derechos [de acceso](/windows/desktop/SecAuthZ/generic-access-rights) genéricos para el objeto de estación de ventana interactiva, que es la estación de ventana asignada a la sesión de inicio de sesión del usuario interactivo.
+Estos son los [derechos](/windows/desktop/SecAuthZ/generic-access-rights) de acceso genéricos para el objeto de estación de ventana interactiva, que es la estación de ventana asignada a la sesión de inicio de sesión del usuario interactivo.
 
 
 

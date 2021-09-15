@@ -3,9 +3,9 @@ title: Método INapEnforcementClientConnection SetPrivateData (NapEnforcementCli
 description: NapAgent lo usa para establecer datos privados.
 ms.assetid: 2559a612-8857-4e60-b5bc-dd8235ff69f9
 keywords:
-- Método NAP de SetPrivateData
-- Método NAP de SetPrivateData, interfaz INapEnforcementClientConnection
-- INapEnforcementClientConnection interface NAP , SetPrivateData method
+- Nap del método SetPrivateData
+- Método NAP de SetPrivateData , interfaz INapEnforcementClientConnection
+- Interfaz INapEnforcementClientConnection NAP, método SetPrivateData
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62bcfcefdebbdea7a8b76279416a2067b069891d0b41b14ebafb10b0fdcec797
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a3e73248e546b1f0e48438553877f0523bd30b56
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118621704"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473802"
 ---
-# <a name="inapenforcementclientconnectionsetprivatedata-method"></a>INapEnforcementClientConnection::SetPrivateData (método)
+# <a name="inapenforcementclientconnectionsetprivatedata-method"></a>Método INapEnforcementClientConnection::SetPrivateData
 
 > [!Note]  
 > La plataforma de protección de acceso a redes no está disponible a partir de Windows 10
@@ -78,8 +78,8 @@ También se pueden devolver otros códigos de error específicos de COM.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

@@ -4,12 +4,12 @@ ms.assetid: 7D2A9003-B36E-4082-877E-8AC7F5645E89
 title: MFPROTECTION_VIDEO_FRAMES atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35d8756ed823b110d2ca7834016183e6a1cecf5c8c2731f68a81fa4c9224fdb8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 67a8ccfc56fb1c1b52b14e16d8e702111f3d8564
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119355415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474068"
 ---
 # <a name="mfprotection_video_frames-attribute"></a>Atributo MFPROTECTION \_ VIDEO \_ FRAMES
 
@@ -19,7 +19,7 @@ Especifica si se permite a una aplicación el acceso a fotogramas de vídeo sin 
 
 **UINT32**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un valor de 0 indica que se permite a la aplicación el acceso a los fotogramas. Esto puede determinarse como resultado de un acuerdo privado entre la aplicación y el sistema de protección de contenido concreto en uso.
 
@@ -35,7 +35,7 @@ Un valor de 0xFFFFFFFF, que es el valor predeterminado, indica que no se permite
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 Solo aplicaciones para UWP\]<br/>                                             |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 Solo aplicaciones para UWP\]<br/>                                   |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

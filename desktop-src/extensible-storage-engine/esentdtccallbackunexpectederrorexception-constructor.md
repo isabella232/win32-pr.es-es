@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9611b45dac031a5897cc358c344a161197d04475aa44185cdc66ae2c498c0676
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b3334aa6fc7c2d29e3a55854bc043c677c262b81
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117711185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474383"
 ---
 # <a name="esentdtccallbackunexpectederrorexception-constructor"></a>Constructor EsentDTCCallbackUnexpectedErrorException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentDTCCallbackUnexpectedErrorException()
 public EsentDTCCallbackUnexpectedErrorException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

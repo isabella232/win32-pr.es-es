@@ -1,7 +1,7 @@
 ---
-description: Permite que el filtro de procesamiento de imágenes escriba las propiedades de nuevo en el controlador (y en el dispositivo).
+description: Permite que el filtro de procesamiento de imágenes vuelva a escribir propiedades en el controlador (y el dispositivo).
 ms.assetid: b9bb8d81-2945-46ba-a0a2-7009000574aa
-title: 'IWiaImageFilter:: ApplyProperties (método) (WIA. h)'
+title: Método IWiaImageFilter::ApplyProperties (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Wia.h
 ms.openlocfilehash: 3c20527ee587b975adea34e7c480349836620015
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105716050"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572292"
 ---
-# <a name="iwiaimagefilterapplyproperties-method"></a>IWiaImageFilter:: ApplyProperties (método)
+# <a name="iwiaimagefilterapplyproperties-method"></a>IWiaImageFilter::ApplyProperties (método)
 
-Permite que el filtro de procesamiento de imágenes escriba las propiedades de nuevo en el controlador (y en el dispositivo).
+Permite que el filtro de procesamiento de imágenes vuelva a escribir propiedades en el controlador (y el dispositivo).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,12 +39,12 @@ HRESULT ApplyProperties(
 
 <dl> <dt>
 
-*pWiaPropertyStorage* \[ de\]
+*pWiaPropertyStorage* \[ En\]
 </dt> <dd>
 
-Tipo: **[**IWiaPropertyStorage**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiapropertystorage) \** _
+Tipo: **[ **IWiaPropertyStorage**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiapropertystorage)\***
 
-Especifica un puntero a [_ *IWiaPropertyStorage* *](/windows/desktop/api/wia_xp/nn-wia_xp-iwiapropertystorage) para las propiedades que se van a aplicar.
+Especifica un puntero a [**IWiaPropertyStorage**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiapropertystorage) para las propiedades que se aplicarán.
 
 </dd> </dl>
 
@@ -52,15 +52,15 @@ Especifica un puntero a [_ *IWiaPropertyStorage* *](/windows/desktop/api/wia_xp/
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-No llame a este método directamente desde su aplicación. Lo llama la adquisición de imágenes de Windows (WIA) 2,0 después de que el filtro de procesamiento de imágenes haya procesado los datos sin procesar.
+No llame a este método directamente desde la aplicación. Se llama mediante Windows Adquisición de imágenes (WIA) 2.0 después de que el filtro de procesamiento de imágenes haya procesado los datos sin procesar.
 
-*pWiaPropertyStorage* es la interfaz de [**IWiaPropertyStorage**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiapropertystorage) en la que el filtro de procesamiento de imágenes debe escribir propiedades. Un filtro de procesamiento de imágenes solo debe usar el método [IPropertyStorage:: WriteMultiple](/windows/win32/api/propidlbase/nf-propidlbase-ipropertystorage-writemultiple) para escribir propiedades.
+*pWiaPropertyStorage es* la [**interfaz IWiaPropertyStorage**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiapropertystorage) en la que el filtro de procesamiento de imágenes debe escribir propiedades. Un filtro de procesamiento de imágenes solo debe usar [el método IPropertyStorage::WriteMultiple](/windows/win32/api/propidlbase/nf-propidlbase-ipropertystorage-writemultiple) para escribir propiedades.
 
-Este método permite que el filtro de procesamiento de imágenes escriba las propiedades de nuevo en el controlador (y en el dispositivo). Esto puede ser necesario para los filtros que implementan características como la exposición automática durante el análisis de la película.
+Este método permite que el filtro de procesamiento de imágenes vuelva a escribir propiedades en el controlador (y el dispositivo). Esto puede ser necesario para los filtros que implementan características como la exposición automática durante el examen de películas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,10 +68,10 @@ Este método permite que el filtro de procesamiento de imágenes escriba las pro
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Encabezado<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

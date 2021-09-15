@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: b35cda4534bc5c791e4815c584f6da5d9972c018283b6c9385f6bad998187505
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: da2fcde7015e993e13e47673b271c560b6c3d72a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119092045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572396"
 ---
 # <a name="iinkanalyzermodifytopalternate-method"></a>Método IInkAnalyzer::ModifyTopAlternate
 
@@ -50,7 +50,7 @@ Objeto [**IAnalysisAlternate**](ianalysisalternate.md) que contiene la nueva alt
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener alternativas de análisis, use el método [**IInkAnalyzer::GetAlternates**](iinkanalyzer-getalternates.md), [**IInkAnalyzer::GetAlternatesForContextNodes o**](iinkanalyzer-getalternatesforcontextnodes.md)el método [**IInkAnalyzer::GetAlternatesForStrokes**](iinkanalyzer-getalternatesforstrokes.md). Para obtener los [**objetos IContextNode**](icontextnode.md) asociados a una alternativa de análisis, use el método [**IAnalysisAlternate::GetAlternateNodes**](ianalysisalternate-getalternatenodes.md).
 
@@ -60,11 +60,11 @@ Para cambiar el tipo de confirmación de un nodo de contexto, use [**IContextNod
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

@@ -1,7 +1,7 @@
 ---
 description: El método GetCount recupera el número de elementos de esta colección.
 ms.assetid: b7c8acd2-67f2-47d3-b42a-26aa701fd613
-title: IPortableDevicePropVariantCollection::GetCount (PortableDeviceTypes.h)
+title: Método IPortableDevicePropVariantCollection::GetCount (PortableDeviceTypes.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 2b82ce3c916df3603478888ecdc388e80ee4b4d635a25b238f9ba6a03ef61901
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d3a06cb5d89bc09a35a58f9269ba19c488c11e0f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120055205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571213"
 ---
 # <a name="iportabledevicepropvariantcollectiongetcount-method"></a>IPortableDevicePropVariantCollection::GetCount (método)
 
@@ -64,7 +64,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo de cómo usar este método, vea [Recuperación de las categorías funcionales admitidas por un dispositivo.](retrieving-the-functional-categories-supported-by-a-device.md)
+Para obtener un ejemplo de cómo usar este método, vea [Retrieving the Functional Categories Supported by a Device](retrieving-the-functional-categories-supported-by-a-device.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,10 +87,10 @@ Para obtener un ejemplo de cómo usar este método, vea [Recuperación de las ca
 [Recuperación de eventos de servicio admitidos](retrieving-supported-events.md)
 </dt> <dt>
 
-[Recuperar formatos de servicio admitidos](retrieving-supported-formats.md)
+[Recuperación de formatos de servicio admitidos](retrieving-supported-formats.md)
 </dt> <dt>
 
-[Recuperar métodos de servicio admitidos](retrieving-supported-methods.md)
+[Recuperación de métodos de servicio admitidos](retrieving-supported-methods.md)
 </dt> <dt>
 
 [Recuperar las categorías funcionales admitidas por un dispositivo](retrieving-the-functional-categories-supported-by-a-device.md)

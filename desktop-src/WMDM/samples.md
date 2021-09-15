@@ -11,12 +11,12 @@ keywords:
 - samples,service providers
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a513a70f7310d445be0dd159858412e3142d7cbd341e00dd63d06defb2ebd45
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cf3ba0d7b91736940efe6b9f85e9f6043a721be1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118584257"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474572"
 ---
 # <a name="wmdm-samples"></a>Ejemplos de WMDM
 

@@ -1,6 +1,6 @@
 ---
 title: WM_MENUCHAR mensaje (Winuser.h)
-description: Se envía cuando un menú está activo y el usuario presiona una tecla que no se corresponde con ninguna tecla mnemotécnica o de aceleración. Este mensaje se envía a la ventana propietaria del menú.
+description: Se envía cuando un menú está activo y el usuario presiona una tecla que no corresponde a ninguna tecla mnemotécnica o de acelerador. Este mensaje se envía a la ventana que posee el menú.
 ms.assetid: de6c91bb-80fd-44b2-8d96-d016477a6547
 keywords:
 - WM_MENUCHAR menús de mensajes y otros recursos
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d276418636857fb7ce76159111b8e8b24519235823225fccb68fa1523b4137d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a278e4a1b4333631741a6a542318a8a55e40b512
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117869614"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571617"
 ---
 # <a name="wm_menuchar-message"></a>Mensaje \_ MENUCHAR de WM
 
-Se envía cuando un menú está activo y el usuario presiona una tecla que no se corresponde con ninguna tecla mnemotécnica o de aceleración. Este mensaje se envía a la ventana propietaria del menú.
+Se envía cuando un menú está activo y el usuario presiona una tecla que no corresponde a ninguna tecla mnemotécnica o de acelerador. Este mensaje se envía a la ventana que posee el menú.
 
 
 ```C++
@@ -39,7 +39,7 @@ Se envía cuando un menú está activo y el usuario presiona una tecla que no se
 *wParam* 
 </dt> <dd>
 
-La palabra de orden bajo especifica el código de carácter que corresponde a la tecla presionada por el usuario.
+La palabra de orden bajo especifica el código de carácter que corresponde a la clave que el usuario ha presionado.
 
 La palabra de orden superior especifica el tipo de menú activo. Este parámetro puede ser uno de los valores siguientes.
 
@@ -80,7 +80,7 @@ Una aplicación que procesa este mensaje debe devolver uno de los siguientes val
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La palabra de orden bajo se omite si la palabra de orden superior contiene 0 o 1.
 
@@ -90,7 +90,7 @@ Una aplicación debe procesar este mensaje cuando se usa un acelerador para sele
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |

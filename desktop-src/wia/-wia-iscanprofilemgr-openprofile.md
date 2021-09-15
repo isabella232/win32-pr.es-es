@@ -1,7 +1,7 @@
 ---
-description: Abre un perfil de digitalización que se ha guardado en el disco como archivo XML.
+description: Abre un perfil de examen que se ha guardado en el disco como un archivo XML.
 ms.assetid: 2b45280e-a1b6-4db9-af8c-09faff34b067
-title: 'IScanProfileMgr:: OpenProfile (método) (Scanprofilemgr. h)'
+title: Método IScanProfileMgr::OpenProfile (Scanprofilemgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Scanprofilemgr.h
 ms.openlocfilehash: 40d380a2b0405445cba72a0aac73c4b529114fcb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105716059"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571400"
 ---
-# <a name="iscanprofilemgropenprofile-method"></a>IScanProfileMgr:: OpenProfile (método)
+# <a name="iscanprofilemgropenprofile-method"></a>IScanProfileMgr::OpenProfile (método)
 
-Abre un perfil de digitalización que se ha guardado en el disco como archivo XML.
+Abre un perfil de examen que se ha guardado en el disco como un archivo XML.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ HRESULT OpenProfile(
 
 <dl> <dt>
 
-*GUID* \[ de de\]
+*GUID* \[ En\]
 </dt> <dd>
 
 Tipo: **GUID**
@@ -49,7 +49,7 @@ GUID del perfil.
 
 </dd> <dt>
 
-*ppScanProfile* \[ enuncia\]
+*ppScanProfile* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IScanProfile**](-wia-iscanprofile.md)\*\***
@@ -62,11 +62,11 @@ Dirección de un puntero al perfil.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-Si un perfil de digitalización se guarda con el método [**Save**](-wia-iscanprofile-save.md) , se almacena como un archivo XML en% userprofile% \\ Application Data \\ Microsoft \\ Document Center \\ UserScanProfiles.
+Si un perfil de examen se guarda mediante el [**método Save,**](-wia-iscanprofile-save.md) se almacena como un archivo XML en %USERPROFILE% \\ Application Data Microsoft Document Center \\ \\ \\ UserScanProfiles.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,21 +74,21 @@ Si un perfil de digitalización se guarda con el método [**Save**](-wia-iscanpr
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
+| Encabezado<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**IScanProfileMgr**](-wia-iscanprofilemgr.md)
 </dt> <dt>
 
-[Esquema de análisis de perfil](-wia-scan-profile-schema.md)
+[Esquema de perfil de examen](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

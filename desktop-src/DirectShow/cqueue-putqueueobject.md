@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8e6e3539b12f81421e90de1f8311210aa2acb77173be2991bd6f15a1c84d39ac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5371c843bb348f50539535a3df9a0f6aed00893e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119539016"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473989"
 ---
 # <a name="cqueueputqueueobject-method"></a>Método CQueue.PutQueueObject
 
@@ -53,7 +53,7 @@ Objeto de tipo **T** (tipo de plantilla).
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método se bloquea hasta que hay espacio en la cola para el elemento.
 

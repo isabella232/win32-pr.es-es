@@ -4,12 +4,12 @@ ms.assetid: 2260ad3a-44d4-4fe2-aa8c-608ffc11fbfb
 title: Cómo cargar un mapa de bits desde un recurso (Windows de creación de imágenes)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88bc10766ed6720e60dd85a9600107c883da80d7b326ddd810b6261e509915da
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: deb33ad57b3b9dac1cb5d98719c681adb38c11de
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118034747"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571321"
 ---
 # <a name="how-to-load-a-bitmap-from-a-resource-windows-imaging-component"></a>Cómo cargar un mapa de bits desde un recurso (Windows de creación de imágenes)
 

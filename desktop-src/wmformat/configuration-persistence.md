@@ -13,12 +13,12 @@ keywords:
 - persistencia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9b5b2442779fb709299f42e0194317aadaf54a51cd4946e61adf7a90a50957d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3707c82ff9d7ce6821ad33e83b158c11b5a9030c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118434362"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571265"
 ---
 # <a name="configuration-persistence"></a>Persistencia de configuración
 

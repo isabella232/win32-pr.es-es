@@ -1,9 +1,9 @@
 ---
 title: Enumeración TransportState
-description: Define los estados de transporte disponibles tal como se definen en las directrices de UPnP.
+description: Define los estados de transporte disponibles, tal como se define en las directrices de UPnP.
 ms.assetid: 2F942EAC-514B-4E65-A12F-85558E9A96A0
 keywords:
-- Enumeración TransportState Media Streaming API
+- Api de streaming multimedia de enumeración TransportState
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - IDLDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a21fc8d0f2799cfba734d605d0c4d2835744ddeb130327ea39a22090d13464f0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 865d7e0f6a96727915833bb402860cde661162f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119663104"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571641"
 ---
 # <a name="transportstate-enumeration"></a>Enumeración TransportState
 
-Define los estados de transporte disponibles tal como se definen en las directrices de UPnP.
+Define los estados de transporte disponibles, tal como se define en las directrices de UPnP.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -85,7 +85,7 @@ El transporte del dispositivo está en estado en pausa.
 <span id="Recording"></span><span id="recording"></span><span id="RECORDING"></span>**Grabación**
 </dt> <dd>
 
-El transporte del dispositivo está en un estado de grabación.
+El transporte del dispositivo está en estado de grabación.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Estado anterior del dispositivo al estado de transporte actual.
 
 | Requisito | Value |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Idl<br/> | <dl> <dt>Windows. Media.Streaming.idl (referencia Windows. Media.Streaming.idl)</dt> </dl> |
+| IDL<br/> | <dl> <dt>Windows. Media.Streaming.idl (referencia Windows. Media.Streaming.idl)</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: e49920d0-5b66-4aa1-b3ca-641629df5f8a
 title: Solicitantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59f0e7fa7b1718b0da278dabb164fbffee43c939cd688c150e202bfafc4731a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b676b8cd287365b257e3b6ee85a7e47a70f88ef3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119866385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474591"
 ---
 # <a name="requesters"></a>Solicitantes
 

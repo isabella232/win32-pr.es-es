@@ -4,12 +4,12 @@ ms.assetid: 6621529c-717b-4f36-8d9e-769d6b720b8a
 title: Registrar el controlador de la hoja de propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91f1642c03a068a24b37cd5647bcdef63222ed2dbe5d78832daeea31e8abd67d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a6a59a03ebd13f5a541674012da7b07045e0a510
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119083539"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571200"
 ---
 # <a name="registering-your-property-sheet-handler"></a>Registrar el controlador de la hoja de propiedades
 
@@ -38,7 +38,7 @@ En el ejemplo anterior se registra un controlador personalizado con el espacio d
 | **WPDContextMenu.Folder**      | CARPETA DE \_ TIPO DE \_ CONTENIDO \_ WPD                                                                                                     |
 | **WPDContextMenu.Image**       | IMAGEN DE \_ TIPO DE \_ CONTENIDO \_ WPD                                                                                                      |
 | **WPDContextMenu.Audio**       | AUDIO DE \_ TIPO DE \_ CONTENIDO WPD \_                                                                                                      |
-| **WPDContextMenu.Video**       | VÍDEO DE \_ TIPO DE \_ CONTENIDO \_ WPD                                                                                                      |
+| **WPDContextMenu.Video**       | VÍDEO DE \_ TIPO CONTENIDO \_ WPD \_                                                                                                      |
 | **WPDContextMenu.Playlist**    | LISTA DE REPRODUCCIÓN \_ DE TIPO DE CONTENIDO \_ \_ WPD                                                                                                   |
 | **WPDContextMenu.Document**    | DOCUMENTO DE \_ TIPO DE \_ CONTENIDO \_ WPD                                                                                                   |
 | **WPDContextMenu.Contact**     | CONTACTO DE \_ TIPO DE \_ CONTENIDO WPD \_                                                                                                    |
@@ -50,7 +50,7 @@ En el ejemplo anterior se registra un controlador personalizado con el espacio d
 | **WPDContextMenu.AudioAlbum**  | WPD \_ CONTENT \_ TYPE \_ AUDIO \_ ALBUM                                                                                               |
 | **WPDContextMenu.VideoAlbum**  | WPD \_ CONTENT \_ TYPE \_ VIDEO \_ ALBUM                                                                                               |
 | **WPDContextMenu.MixedAlbum**  | WPD \_ CONTENT \_ TYPE \_ MIXED \_ CONTENT \_ ALBUM                                                                                      |
-| **WPDContextMenu.Generic**     | TIPO DE \_ CONTENIDO \_ WPD \_ SIN ESPECIFICAR<br/> ARCHIVO GENÉRICO \_ DE TIPO DE CONTENIDO \_ \_ \_ WPD<br/> PROGRAMA DE TIPO \_ DE \_ CONTENIDO \_ WPD<br/> |
+| **WPDContextMenu.Generic**     | TIPO DE \_ CONTENIDO WPD \_ SIN \_ ESPECIFICAR<br/> ARCHIVO GENÉRICO \_ DE TIPO DE CONTENIDO \_ \_ \_ WPD<br/> PROGRAMA DE \_ TIPO DE \_ CONTENIDO \_ WPD<br/> |
 
 
 

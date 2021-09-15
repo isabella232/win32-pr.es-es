@@ -4,12 +4,12 @@ ms.assetid: d5917421-fbd4-477c-b29b-9f983c93cfdb
 title: Emisión del comando SetDevicePropValue
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f30190fc7de07c4ae84bbb53f4b3ddd23fcb438c1f08d497d901bd3185db8e95
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b8949cbf4fe22662de32c4c07de689fec2e6dbad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118696669"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571201"
 ---
 # <a name="issuing-the-setdevicepropvalue-command"></a>Emisión del comando SetDevicePropValue
 
@@ -25,13 +25,13 @@ La lista anterior se traduce en la siguiente secuencia de comandos:
 
 1.  COMANDO MTP EXT EXECUTE DE WPD CON DATOS PARA ESCRIBIR O COMANDO \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ MTP EXT EXECUTE DE WPD CON \_ \_ DATOS PARA \_ \_ \_ \_ \_ LEER.
 2.  WPD \_ COMMAND \_ MTP EXT WRITE DATA o \_ \_ \_ WPD COMMAND \_ \_ MTP EXT READ \_ \_ \_ DATA.
-3.  TRANSFERENCIA DE DATOS \_ \_ FINALES EXT DE MTP DEL COMANDO \_ \_ \_ \_ WPD.
+3.  TRANSFERENCIA DE DATOS FINALES EXT DE MTP DEL COMANDO \_ \_ \_ \_ \_ \_ WPD.
 
 En el caso de **SetDevicePropValue,** el código de ejemplo usa la secuencia siguiente:
 
-1.  COMANDO \_ \_ MTP EXT EXECUTE DE WPD \_ CON DATOS \_ PARA \_ \_ \_ \_ \_ ESCRIBIR.
+1.  COMANDO \_ \_ MTP EXT EXECUTE DE WPD \_ CON DATOS QUE SE \_ \_ \_ \_ \_ \_ ESCRIBIRÁN.
 2.  MTP \_ EXT WRITE DATA DEL COMANDO \_ \_ WPD. \_ \_
-3.  TRANSFERENCIA DE DATOS \_ \_ FINALES EXT DE MTP DEL COMANDO \_ \_ \_ \_ WPD.
+3.  TRANSFERENCIA DE DATOS FINALES EXT DE MTP DEL COMANDO \_ \_ \_ \_ \_ \_ WPD.
 
 En el ejemplo de código siguiente se muestra cómo una aplicación WPD inicia la secuencia de comandos.
 

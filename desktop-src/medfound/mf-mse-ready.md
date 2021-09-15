@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 28f476c32abbffa8faadd8a7c527f07d81632eee10f1c6cfc54eacc926b4f4e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bff2155a2cb2cb21d4c25d868f95472f47f15b1a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119104581"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474162"
 ---
-# <a name="mf_mse_ready-enumeration"></a>Enumeración \_ MF MSE \_ READY
+# <a name="mf_mse_ready-enumeration"></a>Enumeración \_ MSE READY de MF \_
 
 Define los distintos estados listos de la extensión de origen de medios.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -44,7 +44,7 @@ typedef enum _MF_MSE_READY {
 <span id="MF_MSE_READY_CLOSED"></span><span id="mf_mse_ready_closed"></span>**MF \_ MSE \_ READY \_ CLOSED**
 </dt> <dd>
 
-El origen de medios está cerrado.
+El origen del medio está cerrado.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ El origen multimedia está abierto.
 <span id="MF_MSE_READY_ENDED"></span><span id="mf_mse_ready_ended"></span>**MF \_ MSE \_ READY \_ ENDED**
 </dt> <dd>
 
-El origen del medio ha finalizado.
+El origen del medio finaliza.
 
 </dd> </dl>
 
@@ -66,15 +66,15 @@ El origen del medio ha finalizado.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
-| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

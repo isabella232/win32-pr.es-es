@@ -1,15 +1,15 @@
 ---
 title: IPv6-Aware y funciones auxiliares de WPAD heredadas
-description: Diferencias entre las IPv6-Aware auxiliares de WPAD y las funciones auxiliares heredadas de WPAD
+description: Diferencias entre las IPv6-Aware auxiliares de WPAD y las funciones auxiliares WPAD heredadas
 ms.assetid: ea4b1c0d-ce02-477b-85c8-44e1beef90c1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6423b9bcb6a609cf21b8399ca03d7da1e0b19450994eb78a66f4c7aaad7d31d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 511b7f04aa0a2abe04b99562c15aeb3a53bdaadf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119861005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474538"
 ---
 # <a name="ipv6-aware-and-legacy-wpad-helper-functions"></a>IPv6-Aware y funciones auxiliares de WPAD heredadas
 
@@ -20,23 +20,23 @@ En las tablas siguientes se explican las diferencias entre las nuevas funciones 
 <table>
 <thead>
 <tr class="header">
-<th>Funciones</th>
+<th>Functions</th>
 <th>Entrada</th>
-<th>Salida</th>
+<th>Output</th>
 <th>Motivo del cambio</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>dnsResolve</td>
-<td>Host</td>
+<td>administrador de flujos de trabajo</td>
 <td>Dirección IPv4</td>
 <td rowspan="2">La función ex devolverá una lista de IPv6/IPv4. Necesario, ya que las direcciones IPv6 o IPv4 pueden tener varias direcciones de unidifusión para una sola interfaz.${REMOVE}$<br />
 </td>
 </tr>
 <tr class="even">
 <td>dnsResolveEx*</td>
-<td>Host</td>
+<td>administrador de flujos de trabajo</td>
 <td>Lista de direcciones IPv6/IPv4</td>
 
 </tr>
@@ -52,9 +52,9 @@ En las tablas siguientes se explican las diferencias entre las nuevas funciones 
 <table>
 <thead>
 <tr class="header">
-<th>Funciones</th>
+<th>Functions</th>
 <th>Entrada</th>
-<th>Salida</th>
+<th>Output</th>
 <th>Motivo del cambio</th>
 </tr>
 </thead>
@@ -84,9 +84,9 @@ En las tablas siguientes se explican las diferencias entre las nuevas funciones 
 <table>
 <thead>
 <tr class="header">
-<th>Funciones</th>
+<th>Functions</th>
 <th>Entrada</th>
-<th>Salida</th>
+<th>Output</th>
 <th>Motivo del cambio</th>
 </tr>
 </thead>
@@ -116,9 +116,9 @@ En las tablas siguientes se explican las diferencias entre las nuevas funciones 
 <table>
 <thead>
 <tr class="header">
-<th>Funciones</th>
+<th>Functions</th>
 <th>Entrada</th>
-<th>Salida</th>
+<th>Output</th>
 <th>Motivo del cambio</th>
 </tr>
 </thead>
@@ -145,7 +145,7 @@ En las tablas siguientes se explican las diferencias entre las nuevas funciones 
 
 
 
-| Funciones           | Entrada                       | Salida                             | Motivo del cambio                                                                                                                           |
+| Functions           | Entrada                       | Output                             | Motivo del cambio                                                                                                                           |
 |---------------------|-----------------------------|------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | sortIPAddressList\* | Lista de direcciones IPv6/IPv4 | Lista ordenada de direcciones IPv6/IPv4 | No hay ninguna función heredada equivalente porque las funciones heredadas solo devolvieron una única dirección IPv4, por lo que no era necesario ordenar . |
 
@@ -155,9 +155,9 @@ En las tablas siguientes se explican las diferencias entre las nuevas funciones 
 
 
 
-| Funciones          | Entrada | Salida                     | Motivo del cambio                                                                                                                                                                                                           |
+| Functions          | Entrada | Output                     | Motivo del cambio                                                                                                                                                                                                           |
 |--------------------|-------|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| getClientVersion\* | ninguno  | Número de versión del motor WPAD | Actualmente, esta función devuelve la versión 1.0. Hemos agregado esta función para permitir que los administradores de TI actualicen su WPAD para que funcione con diferentes versiones del motor de WPAD sin provocar interrupciones en su implementación existente. |
+| getClientVersion\* | ninguno  | Número de versión del motor WPAD | Actualmente, esta función devuelve la versión 1.0. Hemos agregado esta función para permitir que los administradores de TI actualicen su WPAD para que funcione con distintas versiones del motor de WPAD sin provocar interrupciones en su implementación existente. |
 
 
 

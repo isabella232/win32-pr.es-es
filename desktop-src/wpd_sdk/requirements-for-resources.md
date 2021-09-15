@@ -4,16 +4,16 @@ ms.assetid: 6b654cd6-7e9f-4e12-a687-4110e600ba7b
 title: Requisitos de recursos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ca302fcd11abf4bbadc1adfafb1a1be67141055ea7f9a5366991f231cca44fab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5702555704137f4280e527f0fc26f176435238ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118027152"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572088"
 ---
 # <a name="requirements-for-resources"></a>Requisitos de recursos
 
-Windows Dispositivos portátiles define las siguientes categorías de recursos como **valores PROPERTYKEY.** Estos valores se usan para describir recursos individuales en un objeto . El *miembro pid* de la clave de propiedad puede ser diferente para describir distintos recursos del mismo tipo para todos los tipos excepto **WPD RESOURCE \_ \_ DEFAULT**, que solo puede describir un recurso. En la página de descripción vinculada de cada tipo de recurso se enumeran los atributos admitidos por ese recurso.
+Windows Dispositivos portátiles define las siguientes categorías de recursos como **valores PROPERTYKEY.** Estos valores se usan para describir recursos individuales en un objeto . El *miembro pid* de la clave de propiedad puede ser diferente para describir distintos recursos del mismo tipo para todos los tipos excepto **WPD RESOURCE \_ \_ DEFAULT,** que solo puede describir un recurso. En la página de descripción vinculada de cada tipo de recurso se enumeran los atributos admitidos por ese recurso.
 
 
 

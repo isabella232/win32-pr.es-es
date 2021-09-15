@@ -4,12 +4,12 @@ ms.assetid: bc679f0e-17f6-455c-8a00-1d435538ef86
 title: MF_PD_SAMI_STYLELIST atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7f57d418eb86c19d3aa2db12808dde810456c38ec6abd45fbece450b30f60f5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ebb07dd1713faa81fd02bfe7a32c81398cddb736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117876178"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474137"
 ---
 # <a name="mf_pd_sami_stylelist-attribute"></a>Atributo MF \_ PD \_ SAMI \_ STYLELIST
 
@@ -21,7 +21,7 @@ El [origen de medios SAMI](sami-media-source.md) establece este atributo en el d
 
 Byte array
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El blob de atributos tiene la siguiente estructura:
 
@@ -103,7 +103,7 @@ HRESULT DisplaySAMIStyleNames(IMFPresentationDescriptor *pPD)
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

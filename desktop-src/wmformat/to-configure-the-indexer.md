@@ -9,20 +9,20 @@ keywords:
 - indexes,configuring indexers
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da5a624a4ed9ae749559a1908e3809500bf8aece2b29b8ad406769c5f639e547
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 618316e22b13ca05ff0fc1bbfb6b4583e79ca858
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117845631"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571237"
 ---
 # <a name="to-configure-the-indexer"></a>Para configurar el indexador
 
 Puede configurar el indexador antes de usarlo para indexar un archivo ASF. Cada secuencia del archivo se puede configurar por separado o puede establecer la misma configuración para todas las secuencias.
 
-Si va a configurar varios reenvía para la indexación en un archivo, debe configurarlos todos y, a continuación, comenzar la indexación. Si configura e indexa una secuencia y, a continuación, configura otra secuencia en el mismo archivo, al volver a iniciar el indexador se eliminará el primer índice. Esto es para cumplir con el formato de archivo ASF.
+Si va a configurar varios puertos para la indexación en un archivo, debe configurarlos todos y, a continuación, comenzar la indexación. Si configura e indexa una secuencia y, a continuación, configura otra secuencia en el mismo archivo, al iniciar de nuevo el indexador se eliminará el primer índice. Esto es para cumplir con el formato de archivo ASF.
 
-El código siguiente muestra cómo configurar el indexador. El código supone que el archivo que se va a indexar tiene dos secuencias: la primera es una secuencia de audio que no es necesario indexar y la segunda es una secuencia de vídeo. Este código muestra solo cómo configurar el indexador. Para indexar un archivo, debe seguir los pasos presentados en [Para indexar un archivo ASF](to-index-an-asf-file.md).
+El código siguiente muestra cómo configurar el indexador. El código supone que el archivo que se va a indexar tiene dos secuencias: la primera es una secuencia de audio que no es necesario indexar y la segunda es una secuencia de vídeo. Este código muestra solo cómo configurar el indexador. Para indexar un archivo, debe seguir los pasos que se presentan en [Para indexar un archivo ASF](to-index-an-asf-file.md).
 
 
 ```C++
@@ -65,7 +65,7 @@ pMyIndexer = NULL;
 
 
 > [!Note]  
-> El tipo de índice predeterminado es WMT \_ IT \_ NEAREST CLEAN \_ \_ POINT. Aunque puede establecer el tipo de índice en otros valores, al hacerlo se degradará el rendimiento de búsqueda.
+> El tipo de índice predeterminado es WMT \_ IT \_ NEAREST CLEAN \_ \_ POINT. Aunque puede establecer el tipo de índice en otros valores, al hacerlo se degradará el rendimiento de la búsqueda.
 
  
 

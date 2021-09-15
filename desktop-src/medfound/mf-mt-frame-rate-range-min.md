@@ -4,12 +4,12 @@ ms.assetid: d3725796-f683-4ca1-a37f-22c40fff0b76
 title: MF_MT_FRAME_RATE_RANGE_MIN atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11253444255e3bac36cb4563e632ebe04d1782b0ae8edadabc08e34cf1d38a99
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9692927242eea7ec65b86572db455e610e30c711
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120113795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474154"
 ---
 # <a name="mf_mt_frame_rate_range_min-attribute"></a>Atributo MF \_ MT FRAME RATE RANGE \_ \_ \_ \_ MIN
 
@@ -25,7 +25,7 @@ Para obtener este atributo, llame [**a MFGetAttributeRatio**](/windows/desktop/a
 
 Para establecer este atributo, llame [**a MFSetAttributeRatio**](/windows/desktop/api/mfapi/nf-mfapi-mfsetattributeratio).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La velocidad de fotogramas se expresa como una relación. Los 32 bits superiores del valor del atributo contienen el numerador y los 32 bits inferiores contienen el denominador. Por ejemplo, si la velocidad de fotogramas es de 30 fotogramas por segundo (fps), la proporción es de 30/1.
 
@@ -43,7 +43,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/>                                  |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                     |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

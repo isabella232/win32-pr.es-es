@@ -1,5 +1,5 @@
 ---
-description: Contiene información que define una nueva lista usada más recientemente (MRU). Lo usa CreateMRUListW.
+description: Contiene información que define una nueva lista usada más recientemente (MRU). Usado por CreateMRUListW.
 title: Estructura MRUINFO
 ms.topic: reference
 ms.date: 05/31/2018
@@ -14,16 +14,16 @@ api_type:
 - NA
 api_location: ''
 ms.assetid: 31d5831d-9a19-4bd9-8439-ce844966c414
-ms.openlocfilehash: 7f3f18f785bb91a4edcdc3401d595c449cba10b34f155ac71b7c705f2938ea4b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 652168e6a4e61ac754aac3202e0681ec6b7d9e66
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118049207"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572496"
 ---
 # <a name="mruinfo-structure"></a>Estructura MRUINFO
 
-Contiene información que define una nueva lista usada más recientemente (MRU). Utilizado por [**CreateMRUListW.**](createmrulist.md)
+Contiene información que define una nueva lista usada más recientemente (MRU). Utilizado por [**CreateMRUListW**](createmrulist.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,7 +41,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -96,7 +96,7 @@ Los datos se almacenan en el Registro como datos binarios en lugar de datos de c
 
 </dt> <dd>
 
-Escriba los cambios en la versión de MRU almacenada en el Registro solo cuando se agrega un nuevo elemento o los recursos de la lista de MRU se liberan de la memoria. Tenga en cuenta que la versión activa de MRU en memoria se actualiza inmediatamente en respuesta a cualquier cambio en el contenido u orden.
+Escriba cambios en la versión de MRU almacenada en el Registro solo cuando se agrega un nuevo elemento o los recursos de la lista de MRU se liberan de la memoria. Tenga en cuenta que la versión activa de MRU en memoria se actualiza inmediatamente en respuesta a cualquier cambio en el contenido u orden.
 
 </dd> </dl> </dd> <dt>
 
@@ -124,7 +124,7 @@ Tipo: **LPCTSTR**
 
 </dd> <dd>
 
-Subclave en la que se almacenarán los datos de MRU.
+Subclave en la que se almacenan los datos de MRU.
 
 </dd> <dt>
 
@@ -135,11 +135,11 @@ Tipo: **[ **MRUCMPPROC**](mrucmpproc.md)**
 
 </dd> <dd>
 
-Puntero a una función de comparación de datos opcional que se puede usar para determinar si un elemento está presente en la lista de MRU. Esto resulta útil cuando se creó la lista de MRU con la **marca \_ BINARY de MRU.** Si este miembro es **NULL,** se usan funciones de comparación de cadenas estándar; Para los datos binarios, se usa una comparación de memoria directa.
+Puntero a una función de comparación de datos opcional que se puede usar para determinar si un elemento está presente en la lista de MRU. Esto resulta útil cuando se creó la lista de MRU con la **marca \_ BINARY de MRU.** Si este miembro es **NULL, se** usan funciones de comparación de cadenas estándar; Para los datos binarios, se usa una comparación de memoria directa.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta estructura no se define en un archivo de encabezado. Debe definirlo usted mismo.
 
@@ -147,7 +147,7 @@ Esta estructura no se define en un archivo de encabezado. Debe definirlo usted m
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/> |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>       |

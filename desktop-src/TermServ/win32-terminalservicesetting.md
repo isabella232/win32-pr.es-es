@@ -1,6 +1,6 @@
 ---
 title: Win32_TerminalServiceSetting clase
-description: Representa la configuración de un Escritorio remoto host de sesión de escritorio remoto.
+description: Representa la configuración de un servidor Escritorio remoto host de sesión de Escritorio remoto.
 ms.assetid: 4cd047db-921f-4ccb-946b-d2c7b8d6beea
 ms.tgt_platform: multiple
 keywords:
@@ -70,12 +70,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a4d7aefdd3f0a684c91fda3ab73d17de32327f34e8d20d5a7f844ea07e21906
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bc03f02028a331a3688152a1ce8c57ada7269d07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119769895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474599"
 ---
 # <a name="win32_terminalservicesetting-class"></a>Clase \_ TerminalServiceSetting de Win32
 
@@ -146,7 +146,7 @@ class Win32_TerminalServiceSetting : CIM_Setting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ TerminalServiceSetting de Win32** tiene estos tipos de miembros:
 
@@ -163,8 +163,8 @@ La **clase \_ TerminalServiceSetting de Win32** tiene estos métodos.
 |:----------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AddDirectConnectLicenseServer**](win32-terminalservicesetting-adddirectconnectlicenseserver.md)                   | Configura un nuevo servidor de licencias en la empresa.<br/>                                                                                                                  |
 | [**AddLSToSpecifiedLicenseServerList**](addlstospecifiedlicenseserverlist-win32-terminalservicesetting.md)           | Agrega el servidor de licencias especificado al final de la lista de servidores de licencias especificados.<br/>                                                                                  |
-| [**CanAccessLicenseServer**](canaccesslicenseserver-win32-terminalservicesetting.md)                                 | Determina si el servidor host de sesión de Escritorio remoto puede solicitar Servicios de Escritorio remoto licencias de acceso de cliente (CAL de RDS) desde un servidor de Escritorio remoto licencias.<br/> |
-| [**ChangeMode**](win32-terminalservicesetting-changemode.md)                                                         | Establece el tipo de licencia del Escritorio remoto de licencias.<br/>                                                                                                       |
+| [**CanAccessLicenseServer**](canaccesslicenseserver-win32-terminalservicesetting.md)                                 | Determina si el servidor host de sesión de Escritorio remoto puede solicitar Servicios de Escritorio remoto licencias de acceso de cliente (CAL de RDS) desde un servidor Escritorio remoto licencias.<br/> |
+| [**ChangeMode**](win32-terminalservicesetting-changemode.md)                                                         | Establece el tipo de licencia del servidor Escritorio remoto licencias.<br/>                                                                                                       |
 | [**CreateWinstation**](createwinstation-win32-terminalservicesetting.md)                                             | Crea una nueva pila de agentes de escucha basada en la combinación única de nombre de agente de escucha y NIC.<br/>                                                                              |
 | [**DeleteDirectConnectLicenseServer**](win32-terminalservicesetting-deletedirectconnectlicenseserver.md)             | Elimina el servidor de licencias especificado de la empresa.<br/>                                                                                                           |
 | [**EmptySpecifiedLicenseServerList**](emptyspecifiedlicenseserverlist-win32-terminalservicesetting.md)               | Quita todos los servidores de licencias de la lista de servidores de licencias especificados.<br/>                                                                                             |
@@ -173,7 +173,7 @@ La **clase \_ TerminalServiceSetting de Win32** tiene estos métodos.
 | [**GetGracePeriodDays**](getgraceperioddays-win32-terminalservicesetting.md)                                         | Recupera el número de días restantes en el período de gracia de licencias de Escritorio remoto para un servidor host de sesión de Escritorio remoto.<br/>                                                     |
 | [**GetRegisteredLicenseServerList**](getregisteredlicenseserverlist-win32-terminalservicesetting.md)                 | Obtiene la lista de servidores de licencias registrados.<br/>                                                                                                                        |
 | [**GetSpecifiedLicenseServerList**](getspecifiedlicenseserverlist-win32-terminalservicesetting.md)                   | Recupera la lista de servidores de licencias especificados.<br/>                                                                                                                    |
-| [**GetTSLanaIds**](gettslanaids-win32-terminalservicesetting.md)                                                     | Obtiene los IDs y descripciones de los Servicios de Escritorio remoto de red.<br/>                                                                                          |
+| [**GetTSLanaIds**](gettslanaids-win32-terminalservicesetting.md)                                                     | Obtiene los IDs y descripciones de Servicios de Escritorio remoto adaptadores de red.<br/>                                                                                          |
 | [**GetTStoLSConnectivityStatus**](gettstolsconnectivitystatus-win32-terminalservicesetting.md)                       | Determina el estado de conectividad entre Servicios de Escritorio remoto y un servidor de licencias.<br/>                                                                            |
 | [**GetWinstationDriverNames**](getwinstationdrivernames-win32-terminalservicesetting.md)                             | Recupera una lista de nombres de controladores de Winstation.<br/>                                                                                                                        |
 | [**PingLicenseServer**](pinglicenseserver-win32-terminalservicesetting.md)                                           | Hace ping al servidor de licencias para determinar si es un servidor de licencias válido.<br/>                                                                                         |
@@ -717,7 +717,7 @@ Servidor host de sesión de Escritorio remoto personal.
 
 </dt> <dd>
 
-Escritorio remoto para administración.
+Escritorio remoto administración.
 
 </dd> <dt>
 
@@ -765,13 +765,13 @@ Tipo de datos: **uint32**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Indica si la característica para limitar el número de sesiones activas e inactivas que se permiten en un servidor host de sesión de Escritorio remoto está habilitada. Por ejemplo, puede establecer **LimitedUserSessions** para garantizar el cumplimiento de licencias para una aplicación determinada que está instalada en el servidor host de sesión de Escritorio remoto. O bien, puede limitar el número máximo de sesiones en un servidor host de sesión de Escritorio remoto en una granja de servidores con equilibrio de carga para que el servidor no se sobrecargue si se produce un error en otro servidor de la granja.
+Indica si la característica para limitar el número de sesiones activas e inactivas permitidas en un servidor host de sesión de Escritorio remoto está habilitada. Por ejemplo, puede establecer **LimitedUserSessions** para garantizar el cumplimiento de licencias para una aplicación determinada que está instalada en el servidor host de sesión de Escritorio remoto. O bien, puede limitar el número máximo de sesiones en un servidor host de sesión de Escritorio remoto en una granja de servidores con equilibrio de carga para que el servidor no se sobrecargue si se produce un error en otro servidor de la granja.
 
 > [!Note]
 >
-> La sesión que se usa para conectarse al servidor con fines administrativos no se ve afectada por **LimitedUserSessions.**
+> La sesión que se usa para conectarse al servidor con fines administrativos no se ve afectada por **LimitedUserSessions**.
 >
-> En una granja de servidores host de sesión de Escritorio remoto, si un usuario supera el límite de sesión, el equilibrio de carga del Agente de conexión a Escritorio remoto dirigirá la sesión a otro servidor. Si el servidor es un servidor independiente, el usuario no podrá conectarse.
+> En una granja de servidores host de sesión de Escritorio remoto, si un usuario supera el límite de sesión, el equilibrio de carga del Agente de conexión a Escritorio remoto dirigirá la sesión a otro servidor. Si el servidor es independiente, el usuario no podrá conectarse.
 >
 > Debido a la sesión que se usa para conectarse al servidor con fines administrativos y el tiempo de cumplimiento del número de sesiones durante el ciclo de inicio de sesión, se recomienda establecer **LimitedUserSessions** en un valor ligeramente inferior al límite físico para el número de sesiones en un servidor.
 >
@@ -850,7 +850,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Especifica el peso del recurso compartido justo de red predeterminado para el tráfico de red de captura total. Los valores válidos son de 1 a 9.
+Especifica el peso del recurso compartido justo de red predeterminado para el tráfico de red catch-all. Los valores válidos son de 1 a 9.
 
 **Windows Server 2008 R2 y Windows Server 2008:** Esta propiedad no está disponible.
 
@@ -895,7 +895,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la **propiedad AllowTSConnections** está configurada por el servidor o por la directiva de grupo.
+Indica si la **propiedad AllowTSConnections está** configurada por el servidor o por la directiva de grupo.
 
 <dt>
 
@@ -955,7 +955,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la **propiedad DeleteTempFolders está** configurada por el servidor o por la directiva de grupo.
+Indica si el servidor o la directiva de grupo configuran la propiedad **DeleteTempFolders.**
 
 <dt>
 
@@ -1049,7 +1049,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la directiva de servidor o grupo configura la propiedad **EnableAutomaticReconnection.**
+Indica si la **propiedad EnableAutomaticReconnection** está configurada por la directiva de servidor o grupo.
 
 <dt>
 
@@ -1111,7 +1111,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la directiva de servidor o grupo configura la propiedad **EnableRemoteDesktopMSI.**
+Indica si la **propiedad EnableRemoteDesktopMSI** está configurada por la directiva de servidor o grupo.
 
 <dt>
 
@@ -1171,7 +1171,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la propiedad **HomeDirectory** está configurada por el servidor o por la directiva de grupo.
+Indica si el servidor o la directiva de grupo configuran la propiedad **HomeDirectory.**
 
 <dt>
 
@@ -1229,7 +1229,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si el servidor o la directiva de grupo configuran la propiedad **ProfilePath.**
+Indica si la propiedad **ProfilePath** está configurada por el servidor o por la directiva de grupo.
 
 <dt>
 
@@ -1258,7 +1258,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la directiva de servidor o grupo configura la propiedad **RedirectSmartCards.**
+Indica si la **propiedad RedirectSmartCards** está configurada por la directiva de servidor o grupo.
 
 <dt>
 
@@ -1338,7 +1338,7 @@ Directiva de grupo
 
 </dd> <dt>
 
-**PolicySourceUseRDPrintPrintDriver**
+**PolicySourceUseRDPrintDriver**
 </dt> <dd> <dl> <dt>
 
 Tipo de datos: **uint32**
@@ -1347,7 +1347,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la directiva de servidor o grupo configura la propiedad **UseRDPrintPrintDriver.**
+Indica si la **propiedad UseRDPrintPrintDriver** está configurada por la directiva de servidor o grupo.
 
 <dt>
 
@@ -1378,7 +1378,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Indica si la **propiedad UseTempFolders** está configurada por el servidor o por la directiva de grupo.
+Indica si la **propiedad UseTempFolders está** configurada por el servidor o por la directiva de grupo.
 
 <dt>
 
@@ -1453,7 +1453,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Ruta de acceso del perfil del equipo.
+Ruta de acceso del perfil para el equipo.
 
 </dd> <dt>
 
@@ -1473,7 +1473,7 @@ Especifica si se permite el redireccionamiento de dispositivos de tarjeta inteli
 0 (0x0)
 </dt> <dd>
 
-No se permite la redirección de dispositivos de tarjeta inteligente.
+No se permite el redireccionamiento de dispositivos de tarjeta inteligente.
 
 </dd> <dt>
 
@@ -1497,7 +1497,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Nombre del servidor host de sesión de Escritorio remoto cuyas propiedades son de interés.
@@ -1589,7 +1589,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -1662,7 +1662,7 @@ Tipo de datos: **uint32**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-El modo de funcionamiento del servidor host de sesión de Escritorio remoto Servicios de Escritorio remoto servicio. Este modo controla las directivas de licencia aplicables, así como si las características de compatibilidad de aplicaciones están habilitadas.
+Modo de funcionamiento del servidor host de sesión de Escritorio remoto Servicios de Escritorio remoto servicio. Este modo controla las directivas de licencia aplicables, así como si las características de compatibilidad de aplicaciones están habilitadas.
 
 <dt>
 
@@ -1673,7 +1673,7 @@ El modo de funcionamiento del servidor host de sesión de Escritorio remoto Serv
 
 </dt> <dd>
 
-El servidor funciona como un servidor de aplicaciones.
+El servidor funciona como servidor de aplicaciones.
 
 </dd> <dt>
 
@@ -1742,7 +1742,7 @@ El servidor host de sesión de Escritorio remoto intenta encontrar un controlado
 1
 </dt> <dd>
 
-El servidor host de sesión de Escritorio remoto primero intenta usar el controlador Easy Print de Escritorio remoto impresora para instalar todas las impresoras cliente. Si por algún motivo no Easy Print de Escritorio remoto controlador de impresora, se usa un controlador de impresora en el servidor host de sesión de Escritorio remoto que coincida con la impresora cliente.
+El servidor host de sesión de Escritorio remoto primero intenta usar el controlador Easy Print de Escritorio remoto impresora para instalar todas las impresoras cliente. Si por algún motivo no Easy Print de Escritorio remoto el controlador de impresora, se usa un controlador de impresora en el servidor host de sesión de Escritorio remoto que coincida con la impresora cliente.
 
 </dd> </dl>
 
@@ -1824,15 +1824,15 @@ Los directorios temporales se crean y eliminan para cada sesión.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **Win32 \_ TerminalServiceSetting está** asociado a [**\_ TerminalService de Win32**](win32-terminalservice.md) como la **propiedad Setting** de la asociación [**\_ TerminalServiceToSetting de Win32.**](win32-terminalservicetosetting.md)
 
-[**Win32 \_ TerminalSetting está**](win32-terminalsetting.md) asociado a [**\_ Terminal Win32**](win32-terminal.md) como la **propiedad Setting** de la asociación [**\_ TerminalTerminalSetting de Win32.**](win32-terminalterminalsetting.md)
+[**Win32 \_ TerminalSetting está**](win32-terminalsetting.md) asociado a [**Terminal Win32 \_ como**](win32-terminal.md) la **propiedad Setting** de la asociación [**\_ TerminalTerminalSetting de Win32.**](win32-terminalterminalsetting.md)
 
 Para conectarse al espacio de \\ nombres Root CIMV2 \\ TerminalServices, el nivel de autenticación debe incluir privacidad de paquetes. Para las llamadas de C/C++, se trata de un nivel de autenticación de **RPC \_ C \_ AUTHN LEVEL \_ \_ PKT \_ PRIVACY**. Para Visual Basic y llamadas de scripting, se trata de un nivel de autenticación de **WbemAuthenticationLevelPktPrivacy** o "pktPrivacy", con un valor de seis.
 
-En el ejemplo Visual Basic Scripting Edition (VBScript) siguiente se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
+En el ejemplo Visual Basic Scripting Edition (VBScript) se muestra cómo conectarse a un equipo remoto con privacidad de paquetes.
 
 
 ```VB
@@ -1843,13 +1843,13 @@ Set objServices = GetObject( _
 
 
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ac9660384e15827b3a1bc6949e448ff2f9ce99c3d034de02c86a3831cc219ee
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 056fc4a091db7c71df3c9e259db51d752bc7f350
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119475595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474609"
 ---
 # <a name="imsrdpclient4-interface"></a>Interfaz IMsRdpClient4
 
 Proporciona los métodos y propiedades necesarios para configurar y usar el control de cliente. Deriva de la [**interfaz IMsRdpClient3.**](imsrdpclient3.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IMsRdpClient4** hereda de [**IMsRdpClient3.**](imsrdpclient3.md) **IMsRdpClient4** también tiene estos tipos de miembros:
 
@@ -39,7 +39,7 @@ La **interfaz IMsRdpClient4** tiene estas propiedades.
 
 
 
-| Propiedad                                                                | Tipo de acceso          | Descripción                                                                                             |
+| Propiedad.                                                                | Tipo de acceso          | Descripción                                                                                             |
 |:------------------------------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------|
 | [**AdvancedSettings5**](imsrdpclient4-advancedsettings5.md)<br/> | Solo lectura<br/> | Puntero [**de interfaz IMsRdpClientAdvancedSettings4.**](imsrdpclientadvancedsettings4.md)<br/> |
 
@@ -47,7 +47,7 @@ La **interfaz IMsRdpClient4** tiene estas propiedades.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **interfaz IMsRdpClient4** se ha ampliado mediante las interfaces siguientes, y cada nueva interfaz hereda todos los métodos y propiedades de las interfaces anteriores:
 

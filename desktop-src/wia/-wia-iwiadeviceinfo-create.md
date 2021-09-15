@@ -1,7 +1,7 @@
 ---
-description: El método Create del objeto DeviceInfo establece una conexión con el dispositivo de adquisición de imágenes de Windows (WIA) especificado por el objeto DeviceInfo y devuelve un objeto de elemento que representa el dispositivo.
+description: El método Create del objeto DeviceInfo establece una conexión con el dispositivo Windows Image Acquisition (WIA) especificado por el objeto DeviceInfo y devuelve un objeto Item que representa el dispositivo.
 ms.assetid: 57f3698c-3f9f-4775-8b53-a65a5591aa3d
-title: DeviceInfo. Create (método)
+title: Método DeviceInfo.Create
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Wiascr.dll
 ms.openlocfilehash: 1efc36ea8794de4b64c9af616320b09d547f6490
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105720398"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571377"
 ---
-# <a name="deviceinfocreate-method"></a>DeviceInfo. Create (método)
+# <a name="deviceinfocreate-method"></a>Método DeviceInfo.Create
 
-El método **Create** del objeto [**DeviceInfo**](-wia-deviceinfo.md) establece una conexión con el dispositivo de adquisición de imágenes de Windows (WIA) especificado por el objeto **DeviceInfo** y devuelve un objeto de [**elemento**](-wia-item.md) que representa el dispositivo.
+El **método Create** del objeto [**DeviceInfo**](-wia-deviceinfo.md) establece una conexión con el dispositivo Windows Image Acquisition (WIA) especificado por el objeto **DeviceInfo** y devuelve un objeto [**Item**](-wia-item.md) que representa el dispositivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,15 +41,15 @@ Este método no tiene parámetros.
 
 Tipo: **IWiaDispatchItem**
 
-Este método devuelve el objeto de [**elemento**](-wia-item.md) que representa el dispositivo que se crea.
+Este método devuelve el [**objeto Item**](-wia-item.md) que representa el dispositivo que se crea.
 
 ## <a name="remarks"></a>Observaciones
 
-Use el método **Create** para crear una conexión a un dispositivo de hardware WIA después de enumerar la recopilación de [**dispositivos**](-wia-iwia-devices.md) . El método devuelve un objeto de [**elemento**](-wia-item.md) que representa el dispositivo (un elemento raíz).
+Use el **método Create** para crear una conexión a un dispositivo de hardware WIA después de enumerar la [**colección Devices.**](-wia-iwia-devices.md) El método devuelve un [**objeto Item**](-wia-item.md) que representa el dispositivo (un elemento raíz).
 
 ## <a name="examples"></a>Ejemplos
 
-En el siguiente ejemplo se muestra el uso del método **Create** .
+En el ejemplo siguiente se muestra el uso del **método Create.**
 
 
 ```JScript
@@ -77,9 +77,9 @@ Next
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                                          |
-| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4,90 o posterior)</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
+| Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 
 
 

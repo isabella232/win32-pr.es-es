@@ -4,12 +4,12 @@ ms.assetid: d99400a4-3661-4162-bfd6-8c2a27e0f328
 title: Evento IWinHttpRequestEvents::OnError
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31127dcc3155b804bbda1c3ab94ee8a410c73f5a96c3ecfc6f787479ccd51539
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c8582deec90eb6bfc2985460f3127d5c7ee9c01b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117744343"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474525"
 ---
 # <a name="iwinhttprequesteventsonerror-event"></a>Evento IWinHttpRequestEvents::OnError
 
@@ -49,7 +49,7 @@ Especifica una breve descripción del error que se produjo.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Para Windows XP y Windows 2000, consulte la sección [Requisitos](winhttp-start-page.md) en tiempo de ejecución de la página de inicio de WinHTTP.
@@ -62,10 +62,10 @@ Este evento no devuelve un valor.
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>            |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>            |
 | Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
 | Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
-| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
 
 
 
@@ -79,7 +79,7 @@ Este evento no devuelve un valor.
 [**WinHttpRequest**](winhttprequest.md)
 </dt> <dt>
 
-[Versiones winHTTP](winhttp-versions.md)
+[Versiones de WinHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

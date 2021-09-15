@@ -1,5 +1,5 @@
 ---
-description: Establece el ejemplo para el origen de la secuencia multimedia.
+description: Establece el ejemplo para el origen del flujo multimedia.
 ms.assetid: a35c5e18-f307-4e40-bc92-f91aa9eb80ba
 title: MÉTODO IMFMediaStreamSourceSampleRequest::SetSample
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - mfidl.h
-ms.openlocfilehash: 80430e7902f4511e85c1b472f967aec6b6cc690f1d98ca14f5c883b600e1b250
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bc3b2693a4690207f0b39d7f1b846e1e63069a8c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119957865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474252"
 ---
 # <a name="imfmediastreamsourcesamplerequestsetsample-method"></a>MÉTODO IMFMediaStreamSourceSampleRequest::SetSample
 
-Establece el ejemplo para el origen de la secuencia multimedia.
+Establece el ejemplo para el origen del flujo multimedia.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ HRESULT SetSample(
 *value* \[ En\]
 </dt> <dd>
 
-Ejemplo del origen de la secuencia multimedia.
+Ejemplo del origen del flujo multimedia.
 
 </dd> </dl>
 
@@ -58,7 +58,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| para aplicaciones para UWP\]<br/>                       |
-| Idl<br/>                      | <dl> <dt>Mfidl.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Mfidl.idl</dt> </dl> |
 
 
 

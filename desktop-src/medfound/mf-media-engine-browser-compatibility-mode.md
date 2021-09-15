@@ -4,12 +4,12 @@ ms.assetid: 9F850CDE-D862-4E72-8B55-5FAFDA43E399
 title: MF_MEDIA_ENGINE_BROWSER_COMPATIBILITY_MODE atributo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 749d0918794c8f568399008ebb1155c5c2fa7e281f72c082916ea5a2869ded68
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e8d6ce4858a35270187f7adf8e42e37c5b11f58
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118060618"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474192"
 ---
 # <a name="mf_media_engine_browser_compatibility_mode-attribute"></a>Atributo MF \_ MEDIA ENGINE BROWSER COMPATIBILITY \_ \_ \_ \_ MODE
 
@@ -29,11 +29,11 @@ Establezca MF MEDIA ENGINE BROWSER COMPATIBILITY MODE (MODO DE COMPATIBILIDAD DE
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

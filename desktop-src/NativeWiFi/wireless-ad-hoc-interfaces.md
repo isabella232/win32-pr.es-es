@@ -4,12 +4,12 @@ ms.assetid: 8e975750-cfcc-4e36-a3d1-539b7c077459
 title: Interfaces ad hoc inalámbricas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c486da50a922a893f4378c4d139741953705f0500cfb78484548db933bb285c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bcc4fe481a5be1ff428396e5fd9b199f5a291fbe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119800285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473728"
 ---
 # <a name="wireless-ad-hoc-interfaces"></a>Interfaces ad hoc inalámbricas
 

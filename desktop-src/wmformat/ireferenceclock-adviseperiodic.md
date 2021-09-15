@@ -3,7 +3,7 @@ title: Método IReferenceClock AdvisePeriodic
 description: Este método no se implementa.
 ms.assetid: b34ef914-992e-4ce2-943b-8bc36687a88a
 keywords:
-- Formato multimedia de Windows del método AdvisePeriodic
+- AdvisePeriodic method windows Media Format
 - Método AdvisePeriodic windows Media Format , interfaz IReferenceClock
 - IReferenceClock interface windows Media Format , AdvisePeriodic (método)
 topic_type:
@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2502109f3e28fedc411e69888725360632966e052c44555b25a72978f9cbbe63
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 65b4020c42430d10e48125fa7d5f1481e7f0ee7c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118701673"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572192"
 ---
 # <a name="ireferenceclockadviseperiodic-method"></a>IReferenceClock::AdvisePeriodic (método)
 

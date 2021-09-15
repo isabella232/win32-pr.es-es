@@ -3,7 +3,7 @@ title: WM_CAP_DLG_VIDEOSOURCE mensaje (Vfw.h)
 description: El mensaje DLG VIDEOSOURCE de WM CAP muestra un cuadro de diálogo en el que \_ el usuario puede controlar el origen del \_ \_ vídeo.
 ms.assetid: 8dc2f271-1f48-4e63-badf-9f3322063018
 keywords:
-- WM_CAP_DLG_VIDEOSOURCE mensaje Windows Multimedia
+- WM_CAP_DLG_VIDEOSOURCE mensaje Windows multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 38e8ae7e3d619964a547fbe0db4517fd1e7d277f
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371402"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473858"
 ---
 # <a name="wm_cap_dlg_videosource-message"></a>Mensaje \_ DE \_ DLG \_ VIDEOSOURCE DE WM CAP
 

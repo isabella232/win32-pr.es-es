@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: df3fa5ab53307c3527024c2faac0f9b79194e488d040ec49de3ed282c29d36ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a730ce6779f41fb348a7e9685dd9ffc132897824
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119041954"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474420"
 ---
 # <a name="esentcallbacknotresolvedexception-class"></a>Clase EsentCallbackNotResolvedException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones CallbackNotResolved.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

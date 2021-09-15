@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 47f385334f1b16f3d7de46b8cfc53ee6b94f485c9768f973b745af335cd5c12f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 76c7fed63b38f1b4fc058fbe7676a727c2d47f19
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119713385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572397"
 ---
 # <a name="iinkanalyzerloadresults-method"></a>IInkAnalyzer::LoadResults (método)
 
@@ -82,7 +82,7 @@ Matriz de nuevos identificadores de trazo.
 *pfSuccessful* \[ out, retval\]
 </dt> <dd>
 
-**VARIANT \_ TRUE si** la carga se ha realizado correctamente; en caso contrario, **VARIANT \_ FALSE**.
+**VARIANT \_ TRUE** si la carga se ha realizado correctamente; en caso contrario, **VARIANT \_ FALSE**.
 
 </dd> </dl>
 
@@ -90,13 +90,13 @@ Matriz de nuevos identificadores de trazo.
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando [**IInkAnalyzer**](iinkanalyzer.md) agrega un [**IContextNode**](icontextnode.md) a partir de los resultados guardados, asigna un nuevo identificador único global (GUID) a **IContextNode** (vea [**IContextNode::GetPropertyData**](icontextnode-getpropertydata.md) y Propiedades del nodo [de contexto).](context-node-properties.md)
 
 Este método agrega los resultados del análisis guardados al árbol [**IContextNode**](icontextnode.md) existente. Para asegurarse de que los resultados combinados se ordenan correctamente, agregue el área que contiene los nodos de contexto cargados a la región desusada del objeto [**IInkAnalyzer**](iinkanalyzer.md) (vea [**IInkAnalyzer::GetDirtyRegion Method)**](iinkanalyzer-getdirtyregion.md)y vuelva aanalizar la entrada de lápiz.
 
-Los [**métodos IInkAnalyzer::SaveResults**](iinkanalyzer-saveresults.md), [**IInkAnalyzer::SaveResultsForNodes y**](iinkanalyzer-saveresultsfornodes.md)el método [**IInkAnalyzer::SaveResultsForStrokes**](iinkanalyzer-saveresultsforstrokes.md) no guarda los datos del paquete junto con los resultados del análisis.
+Los [**métodos IInkAnalyzer::SaveResults**](iinkanalyzer-saveresults.md), [**IInkAnalyzer::SaveResultsForNodes**](iinkanalyzer-saveresultsfornodes.md)y el método [**IInkAnalyzer::SaveResultsForStrokes**](iinkanalyzer-saveresultsforstrokes.md) no guarda los datos del paquete junto con los resultados del análisis.
 
 Cada identificador de *plOriginalStrokeIds* es el identificador de trazo del trazo en los resultados del análisis guardados. Cada identificador de *plNewStrokeIds* es el nuevo identificador por el que reemplazar el identificador original en los resultados del análisis cargado.
 
@@ -112,12 +112,12 @@ Este método puede generar los eventos [**\_ IAnalysisProxyEvents::ContextNodeCr
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

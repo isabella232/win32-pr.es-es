@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 88a70c9d8b57663e393d6eecb736a19e203e8f186d56e8b47042e30743664861
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 80fabea58bd30b0db9b3ff41b522614007fe4b7d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120028685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474484"
 ---
 # <a name="id3dxmatrixstacktranslatelocal-method-d3dx10h"></a>Método ID3DXMATRIXStack::TranslateLocal (D3DX10.h)
 
@@ -75,7 +75,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método multiplica a la izquierda la matriz actual con la matriz de traducción calculada (la transformación trata sobre el origen local del objeto).
 

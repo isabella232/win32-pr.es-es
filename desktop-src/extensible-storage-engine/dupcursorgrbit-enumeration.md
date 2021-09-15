@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: Enumeración DupCursorGrbit'
-title: DupCursorGrbit (enumeración)
+title: Enumeración DupCursorGrbit
 TOCTitle: DupCursorGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.DupCursorGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.dupcursorgrbit(v=EXCHG.10)
@@ -26,14 +26,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: aa4b7ece939815325fd66765b08643543c46c4445457923d32897778adb56680
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5217d2aeae127a1bf8c649312874b31d305da9e7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119737785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571833"
 ---
-# <a name="dupcursorgrbit-enumeration"></a>DupCursorGrbit (enumeración)
+# <a name="dupcursorgrbit-enumeration"></a>Enumeración DupCursorGrbit
 
 Opciones de [JetDupCursor(JET_SESID, JET_TABLEID, JET_TABLEID, DupCursorGrbit).](./api.jetdupcursor-method.md)
 
@@ -57,7 +57,7 @@ Dim instance As DupCursorGrbit
 public enum DupCursorGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -70,14 +70,14 @@ public enum DupCursorGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>Ninguno</td>
+<td>None</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

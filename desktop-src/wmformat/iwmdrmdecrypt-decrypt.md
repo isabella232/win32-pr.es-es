@@ -1,5 +1,5 @@
 ---
-title: Método IWMDRMDecrypt Decrypt (Wmdrmsdk.h)
+title: Método Decrypt de IWMDRMDecrypt (Wmdrmsdk.h)
 description: El método Decrypt descifra un búfer de datos en su lugar.
 ms.assetid: ca0a5b2f-d25f-423e-8956-fca264399083
 keywords:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7be82ec976da39103698b93a09b3d5235c8c8ee712783ca8284dc7b18c6a8a27
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6eb3c1437bc4b4d2f442c61e54f238f176adf66b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119027758"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572172"
 ---
 # <a name="iwmdrmdecryptdecrypt-method"></a>IWMDRMDecrypt::D ecrypt (método)
 
@@ -93,7 +93,7 @@ Ninguno.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

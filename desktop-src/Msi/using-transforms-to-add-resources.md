@@ -4,12 +4,12 @@ ms.assetid: 3d9328d0-4d95-449c-bf2b-5487f7ba5971
 title: Uso de transformaciones para agregar recursos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2999371079ac57d0e44800c9374d496db6eb400864fed3422d88f2b03731724
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7c11fac7ad65601286fb550abd950bf5ac49af1f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120038995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473915"
 ---
 # <a name="using-transforms-to-add-resources"></a>Uso de transformaciones para agregar recursos
 

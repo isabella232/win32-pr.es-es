@@ -4,16 +4,16 @@ ms.assetid: bec4333a-62ca-4254-a39b-04bc2c556992
 title: Ejemplo de formulario de notificaciones automáticas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fe22545d60ad4116e2607f3fcf01feb94dbfecaa74bc591288e4d91b6d3d465
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 71c5ff78a3c38036ef9352660b4d7959e2ad87e5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117857124"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571445"
 ---
 # <a name="auto-claims-form-sample"></a>Ejemplo de formulario de notificaciones automáticas
 
-El ejemplo de notificaciones automáticas aborda un escenario hipotético para un asesor de seguros. El trabajo del asesor requiere que visite con clientes en su casa o negocio y que escriba su información de reclamación en un formulario. Para aumentar la productividad del asesor, su departamento de TI desarrolla una aplicación de tableta que le permite escribir de forma rápida y precisa la información de las reclamaciones a través de dos controles de entrada de lápiz: [InkEdit](/previous-versions/ms835842(v=msdn.10)) y [InkPicture.](/previous-versions/ms583740(v=vs.100))
+El ejemplo de notificaciones automáticas aborda un escenario hipotético para un asesor de seguros. El trabajo del asesor requiere que visite con clientes en su casa o negocio y que escriba su información de notificación en un formulario. Para aumentar la productividad del asesor, su departamento de TI desarrolla una aplicación de tableta que le permite escribir de forma rápida y precisa la información de las reclamaciones a través de dos controles de entrada de lápiz: [InkEdit](/previous-versions/ms835842(v=msdn.10)) y [InkPicture.](/previous-versions/ms583740(v=vs.100))
 
 En este ejemplo, se usa un control [InkEdit](/previous-versions/ms835842(v=msdn.10)) para cada campo de entrada de texto. Un usuario escribe la información pertinente sobre una directiva de seguros y un vehículo en estos campos con un lápiz. El control [InkPicture](/previous-versions/ms583740(v=vs.100)) se usa para agregar entrada de lápiz sobre una imagen de automóvil para resaltar las áreas dañadas del automóvil. El ejemplo de notificaciones automáticas está disponible para C \# y Microsoft Visual Basic .NET. En este tema se describe Visual Basic .NET.
 
@@ -48,7 +48,7 @@ using Microsoft.Ink;
 
 
 
-A continuación, en la clase AutoClaims, se define una clase anidada y se declara una `InkLayer` matriz `InkLayer` de cuatro objetos. (InkLayer contiene un objeto [Microsoft.Ink.Ink](/previous-versions/ms583670(v=vs.100)) para almacenar la entrada de lápiz, y los valores [System.Drawing.Color](/dotnet/api/system.drawing.color?view=netcore-3.1) y **Boolean** para almacenar el color y el estado oculto de la capa). Se declara un quinto objeto Ink para controlar la entrada de lápiz para [InkPicture](/previous-versions/ms583740(v=vs.100)) cuando se ocultan todas las capas de entrada de lápiz.
+A continuación, en la clase AutoClaims, se define una clase anidada y se declara `InkLayer` una matriz `InkLayer` de cuatro objetos. (InkLayer contiene un objeto [Microsoft.Ink.Ink](/previous-versions/ms583670(v=vs.100)) para almacenar la entrada de lápiz, y los valores [System.Drawing.Color](/dotnet/api/system.drawing.color?view=netcore-3.1) y **Boolean** para almacenar el color y el estado oculto de la capa). Se declara un quinto objeto Ink para controlar la entrada de lápiz para [InkPicture](/previous-versions/ms583740(v=vs.100)) cuando se ocultan todas las capas de entrada de lápiz.
 
 
 ```VB
@@ -160,7 +160,7 @@ inkPictVehicle.DefaultDrawingAttributes.Color = inkLayers[lstAnnotationLayer.Sel
 
 ## <a name="redrawing-the-inkpicture-control"></a>Volver a dibujar el control InkPicture
 
-En el controlador de eventos [](/dotnet/api/system.windows.forms.control.paint?view=netcore-3.1) heredado Paint control [InkPicture,](/previous-versions/ms583740(v=vs.100)) se comprueban las capas de entrada de lápiz para determinar cuáles están ocultas. Si una capa no está oculta, el procedimiento de evento la muestra mediante el método Draw de la [propiedad](/previous-versions/ms828488(v=msdn.10)) [Renderer.](/previous-versions/ms582196(v=vs.100)) Si busca en el Explorador de objetos, verá que la propiedad Microsoft.Ink.InkPicture.Renderer se define como un objeto [Microsoft.Ink.Renderer:](/previous-versions/ms828481(v=msdn.10))
+En el controlador de eventos [](/dotnet/api/system.windows.forms.control.paint?view=netcore-3.1) Paint control [InkPicture,](/previous-versions/ms583740(v=vs.100)) se comprueban las capas de entrada de lápiz para determinar cuáles están ocultas. Si una capa no está oculta, el procedimiento de evento la muestra mediante el método Draw de la [propiedad](/previous-versions/ms828488(v=msdn.10)) [Renderer.](/previous-versions/ms582196(v=vs.100)) Si busca en el Explorador de objetos, verá que la propiedad Microsoft.Ink.InkPicture.Renderer se define como un objeto [Microsoft.Ink.Renderer:](/previous-versions/ms828481(v=msdn.10))
 
 
 ```VB
@@ -284,7 +284,7 @@ private void lstAnnotationLayer_SelectedIndexChanged(object sender, System.Event
 
 ## <a name="changing-the-visibility-of-an-ink-layer"></a>Cambiar la visibilidad de una capa de entrada de lápiz
 
-El `CheckedChanged` controlador de eventos comprueba primero que la selección ha cambiado y que el control [InkPicture](/previous-versions/ms583740(v=vs.100)) no está recopilando actualmente la entrada de lápiz. A continuación, actualiza el estado oculto de la capa de entrada de lápiz seleccionada, establece InkEnabled del control InkPicture en **FALSE**, .
+El controlador de eventos comprueba primero que la selección ha cambiado y que el `CheckedChanged` control [InkPicture](/previous-versions/ms583740(v=vs.100)) no está recopilando actualmente la entrada de lápiz. A continuación, actualiza el estado oculto de la capa de entrada de lápiz seleccionada, establece InkEnabled del control InkPicture en **FALSE**, .
 
 A continuación, la propiedad InkEnabled del control InkPicture se establece en **FALSE** antes de actualizar su propiedad Ink.
 

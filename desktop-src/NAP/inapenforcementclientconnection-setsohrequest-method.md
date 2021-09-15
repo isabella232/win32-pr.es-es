@@ -3,9 +3,9 @@ title: Método INapEnforcementClientConnection SetSoHRequest (NapEnforcementClie
 description: Establece soH-request.
 ms.assetid: 87dbb982-a337-4644-a2fe-970bfdd6c140
 keywords:
-- Nap del método SetSoHRequest
-- Método NAP de SetSoHRequest , interfaz INapEnforcementClientConnection
-- INapEnforcementClientConnection interface NAP , Método SetSoHRequest
+- Método NAP de SetSoHRequest
+- Método NAP de SetSoHRequest, interfaz INapEnforcementClientConnection
+- Interfaz NAP de INapEnforcementClientConnection, método SetSoHRequest
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be2d2d3a4574b086d49cba7d9c0afda72cf62621dbed37add8550a7ae2f93cd4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 92559d532e99bfa29d7f62fd29b279db20f2c0a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117799639"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473799"
 ---
 # <a name="inapenforcementclientconnectionsetsohrequest-method"></a>Método INapEnforcementClientConnection::SetSoHRequest
 
@@ -70,22 +70,22 @@ También se pueden devolver otros códigos de error específicos de COM.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Lo establece NapAgent y los aplicadores lo consultan para enviarlos en la conexión.
+Lo establece NapAgent y lo consultan los aplicadores para enviarlos en la conexión.
 
-Un paquete SoH de longitud cero byte no es válido.
+Un paquete SoH de longitud de cero bytes no es válido.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

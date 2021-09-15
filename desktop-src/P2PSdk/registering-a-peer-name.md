@@ -4,12 +4,12 @@ ms.assetid: 4de87146-3ea1-4019-9d3f-59de296083ae
 title: Registro de un nombre del mismo nivel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 41fcedbe3e405e21ec9709289e8a9237179703b1b8e81f40b449479373524beb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8b0944c4a41c02ff221aa1cc6a0b84ed881a9453
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119011493"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473666"
 ---
 # <a name="registering-a-peer-name"></a>Registro de un nombre del mismo nivel
 
@@ -39,7 +39,7 @@ La [**estructura WSAQUERYSET**](pnrp-and-wsaqueryset.md) debe configurarse segú
 
 -   **dwSize** debe especificar el tamaño de la [**estructura WSAQUERYSET.**](pnrp-and-wsaqueryset.md)
 -   **lpszServiceInstanceName** debe apuntar al nombre del mismo nivel que se está registrando.
--   **lpBlob** debe apuntar a una [**estructura PNRPINFO.**](/windows/desktop/api/Pnrpns/ns-pnrpns-pnrpinfo_v1)
+-   **lpBlob debe** apuntar a una [**estructura PNRPINFO.**](/windows/desktop/api/Pnrpns/ns-pnrpns-pnrpinfo_v1)
 -   **lpcsaBuffer debe** apuntar a la lista de direcciones.
 
 > [!Note]  
@@ -47,11 +47,11 @@ La [**estructura WSAQUERYSET**](pnrp-and-wsaqueryset.md) debe configurarse segú
 
  
 
-Una vez registrado un nombre del mismo nivel, la información está disponible para la infraestructura del mismo nivel. Sin embargo, hay un retraso entre el tiempo de registro y la propagación de la información de registro a otros nodos. Durante ese tiempo, es posible que otros nodos no puedan resolver el elemento del mismo nivel recién registrado.
+Una vez registrado un nombre del mismo nivel, la información está disponible para la infraestructura del mismo nivel. Sin embargo, hay un retraso entre la hora de registro y la propagación de la información de registro a otros nodos. Durante ese tiempo, es posible que otros nodos no puedan resolver el elemento del mismo nivel recién registrado.
 
 ## <a name="example-of-registering-a-peer-name"></a>Ejemplo de registro de un nombre del mismo nivel
 
-El siguiente fragmento de código muestra cómo registrar un nombre del mismo nivel proporcionando la información correcta al llamar a [**WSASetService**](pnrp-and-wsasetservice.md) mediante la estructura [**WSAQUERYSET.**](pnrp-and-wsaqueryset.md)
+El siguiente fragmento de código muestra cómo registrar un nombre del mismo nivel proporcionando la información correcta al llamar a [**WSASetService**](pnrp-and-wsasetservice.md) mediante la [**estructura WSAQUERYSET.**](pnrp-and-wsaqueryset.md)
 
 
 ```C++

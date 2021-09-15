@@ -4,12 +4,12 @@ ms.assetid: 8dec8338-ee12-493e-8b12-92a6d3a46400
 title: System.DeviceInterface. Bluetooth. VendorId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5312a540213a9193a1a486271397a929aef1f8f80a16314a015a07d0cce66927
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ea34f472bb4872922a52ae70e0df7d34a3c19e23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119033683"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572669"
 ---
 # <a name="systemdeviceinterfacebluetoothvendorid"></a>System.DeviceInterface. Bluetooth. VendorId
 
@@ -47,7 +47,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

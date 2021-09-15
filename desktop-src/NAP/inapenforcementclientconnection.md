@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ba017ca0948c5769466be9ad43ef68dc5ff60e75ecea430c96a1e8b0c36ab1d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5c5f132da021e7970ec2f15a872091c101cd5c42
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119686255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473796"
 ---
 # <a name="inapenforcementclientconnection-interface"></a>Interfaz INapEnforcementClientConnection
 
@@ -36,7 +36,7 @@ ms.locfileid: "119686255"
 
  
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz INapEnforcementClientConnection** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapEnforcementClientConnection** también tiene estos tipos de miembros:
 
@@ -52,7 +52,7 @@ La **interfaz INapEnforcementClientConnection** tiene estos métodos.
 |:---------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
 | [**INapEnforcementClientConnection::GetConnectionId**](inapenforcementclientconnection-getconnectionid-method.md)               | Obtiene el identificador de conexión del cliente.<br/>                                                                                          |
 | [**INapEnforcementClientConnection::GetCorrelationId**](inapenforcementclientconnection-getcorrelationid-method.md)             | Obtiene el identificador utilizado para poner en correlación soH-requests y SoH-responses.<br/>                                                                  |
-| [**INapEnforcementClientConnection::GetEnforcerPrivateData**](inapenforcementclientconnection-getenforcerprivatedata-method.md) | Usado por el ejecutor para obtener datos privados.<br/>                                                                                      |
+| [**INapEnforcementClientConnection::GetEnforcerPrivateData**](inapenforcementclientconnection-getenforcerprivatedata-method.md) | Lo usa el ejecutor para obtener datos privados.<br/>                                                                                      |
 | [**INapEnforcementClientConnection::GetFlags**](inapenforcementclientconnection-getflags-method.md)                             | Obtiene el valor de la marca que diferencia las respuestas por primera vez de las respuestas debido a las solicitudes SoHRequest almacenadas en caché por los aplicadores.<br/> |
 | [**INapEnforcementClientConnection::GetIsolationInfo**](inapenforcementclientconnection-getisolationinfo-method.md)             | Los usados obtienen la información de aislamiento del cliente.<br/>                                                                              |
 | [**INapEnforcementClientConnection::GetMaxSize**](inapenforcementclientconnection-getmaxsize-method.md)                         | Obtiene el tamaño máximo del paquete SoH para este cliente.<br/>                                                                       |
@@ -79,12 +79,12 @@ La **interfaz INapEnforcementClientConnection** tiene estos métodos.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                |
-| Header<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

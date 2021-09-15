@@ -4,12 +4,12 @@ ms.assetid: E5271D72-FE16-4D28-9BBA-1440C7CE0921
 title: MF_MEDIA_ENGINE_OPM_HWND atributo (Mfmediaengine.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e1079e7b9503c73ea678e4f9fd3642ec94fe43a1326e6f33a635f81d1bc1a64
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d60dd38f4f9eaca3e4eefbf84142c1509463f9b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120013075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474188"
 ---
 # <a name="mf_media_engine_opm_hwnd-attribute"></a>Atributo \_ \_ \_ HWND OPM \_ de MF MEDIA ENGINE
 
@@ -19,7 +19,7 @@ Especifica una ventana para que el motor de medios [aplique](output-protection-m
 
 **HWND almacenado** como **UINT64**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se usa con el [**método IMFMediaEngineClassFactory::CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance) para inicializar el motor multimedia.
 
@@ -37,7 +37,7 @@ Para habilitar las protecciones de OPM para la reproducción de vídeo, la aplic
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                          |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                |
-| Header<br/>                   | <dl> <dt>Mfmediaengine.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfmediaengine.h</dt> </dl> |
 
 
 

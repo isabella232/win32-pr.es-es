@@ -4,12 +4,12 @@ ms.assetid: 8dcae150-2363-47ba-b0d3-0bc182574d81
 title: MF_PD_ASF_FILEPROPERTIES_MAX_PACKET_SIZE atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 003fe57938bc2f4b344e6e24b91b255cf2517350f869437b61995893d854b168
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6d9c95b7511525570a9e04a33db8128f374f9472
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118059645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474139"
 ---
 # <a name="mf_pd_asf_fileproperties_max_packet_size-attribute"></a>ATRIBUTO \_ MF PD \_ ASF \_ FILEPROPERTIES MAX PACKET \_ \_ \_ SIZE
 
@@ -19,7 +19,7 @@ Especifica el tamaño máximo del paquete, en bytes, de un archivo de formato de
 
 **UINT32**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se aplica a los descriptores de presentación para el contenido de ASF.
 
@@ -33,7 +33,7 @@ El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desk
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 

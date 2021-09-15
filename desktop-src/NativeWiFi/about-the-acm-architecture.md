@@ -4,16 +4,16 @@ ms.assetid: 4a5c0085-0e7b-424d-9205-5ec39518a088
 title: Acerca de la arquitectura de ACM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d75b6b365970c34174facd035ddf38c625e3e4fac72f011e612998c46e9bee3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f037a1823f7045ccaf1dc573c6d213beeebe0a63
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473751"
 ---
 # <a name="about-the-acm-architecture"></a>Acerca de la arquitectura de ACM
 
-El módulo de configuración automática (ACM) es el nuevo componente de configuración inalámbrica para Windows Vista. Windows XP con Service Pack 3 (SP3) y la API de LAN inalámbrica para Windows XP con Service Pack 2 (SP2) usa el servicio Configuración inalámbrica cero (WZC) en su lugar.
+El módulo de configuración automática (ACM) es el nuevo componente de configuración inalámbrica para Windows Vista. Windows XP con Service Pack 3 (SP3) y la API de LAN inalámbrica para Windows XP con Service Pack 2 (SP2) usan el servicio Configuración inalámbrica cero (WZC) en su lugar.
 
 El ACM examina las redes periódicamente y usa un proceso iterativo para seleccionar y conectarse a la red más preferida del intervalo, si esa red tiene una interfaz habilitada para la conexión automática. El ACM también guarda y recupera perfiles de red, que contienen ACM, módulo específico de medios (MSM), seguridad y configuración de proveedor de hardware independiente (IHV). Estos perfiles de red son para la configuración automática.
 

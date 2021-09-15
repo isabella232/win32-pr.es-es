@@ -1,19 +1,19 @@
 ---
-description: Especifica el ancho de banda del vínculo para el origen de red, en bits por segundo.
+description: Especifica el ancho de banda de vínculo para el origen de red, en bits por segundo.
 ms.assetid: 1b71dce1-8744-4114-9629-2a9d0afb7c43
 title: MFNETSOURCE_CONNECTIONBANDWIDTH propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2dd12a36db2529001d96729c2f019c017b333585c215106b4051a4deb7995a9d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a6b852b3eb8dbfe5d3abc85e2223e868c5be708c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120113565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474114"
 ---
 # <a name="mfnetsource_connectionbandwidth-property"></a>Propiedad MFNETSOURCE \_ CONNECTIONBANDWIDTH
 
-Especifica el ancho de banda del vínculo para el origen de red, en bits por segundo.
+Especifica el ancho de banda de vínculo para el origen de red, en bits por segundo.
 
 
 
@@ -31,7 +31,7 @@ VT \_ I4
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La constante **MFNETSOURCE \_ CONNECTIONBANDWIDTH** define el GUID de esta clave de propiedad. El identificador de propiedad (PID) es cero.
 
@@ -45,7 +45,7 @@ Las aplicaciones pueden usar esta propiedad para configurar el origen de red. Pa
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

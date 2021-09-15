@@ -1,7 +1,7 @@
 ---
-description: Realiza la inicialización necesaria para permitir que la aplicación que realiza la llamada se convierta en un receptor de pantalla Miracast.
+description: Realiza la inicialización necesaria para permitir que la aplicación que realiza la llamada se convierta en un receptor Miracast pantalla.
 ms.assetid: D87B427B-0B7F-44BB-BC34-726FDF87CCCC
-title: Función WFDDisplaySinkStart (Wfdsink. h)
+title: Función WFDDisplaySinkStart (Wfdsink.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - wifidisplay.dll
 ms.openlocfilehash: 423ca68364fbe7c4beb89ab3b1d9f8e8fdb891be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473739"
 ---
-# <a name="wfddisplaysinkstart-function"></a>WFDDisplaySinkStart función)
+# <a name="wfddisplaysinkstart-function"></a>Función WFDDisplaySinkStart
 
-Realiza la inicialización necesaria para permitir que la aplicación que realiza la llamada se convierta en un receptor de pantalla Miracast. La aplicación debe llamarla una vez al inicio.
+Realiza la inicialización necesaria para permitir que la aplicación que realiza la llamada se convierta en un receptor Miracast pantalla. La aplicación debe llamar a esto una vez en el inicio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,14 +42,14 @@ DWORD WINAPI WFDStartDisplaySink(
 
 <dl> <dt>
 
-*uDeviceCategory* \[ de\]
+*uDeviceCategory* \[ En\]
 </dt> <dd>
 
-La categoría de dispositivos.
+Categoría del dispositivo.
 
 </dd> <dt>
 
-*uSubCategory* \[ de\]
+*uSubCategory* \[ En\]
 </dt> <dd>
 
 Subcategoría del dispositivo.
@@ -59,20 +59,20 @@ Subcategoría del dispositivo.
 *pCallbackContext* \[ en, opcional\]
 </dt> <dd>
 
-Un puntero de contexto opcional que se pasa a la función de devolución de llamada especificada en el parámetro *pfnCallback* .
+Puntero de contexto opcional que se pasa a la función de devolución de llamada especificada en el *parámetro pfnCallback.*
 
 </dd> <dt>
 
-*pfnCallback* \[ de\]
+*pfnCallback* \[ En\]
 </dt> <dd>
 
-Un puntero a la función de devolución de llamada a la que se llamará siempre que haya una notificación para la aplicación. Las notificaciones que se pueden enviar se describen en la [**devolución de llamada de notificación de receptor de visualización de WFD \_ \_ \_ \_**](wfd-display-sink-notification-callback.md).
+Puntero a la función de devolución de llamada a la que se llamará cada vez que haya una notificación para la aplicación. Las notificaciones que se pueden enviar se describen en [**WFD \_ DISPLAY SINK \_ NOTIFICATION \_ \_ CALLBACK**](wfd-display-sink-notification-callback.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la función se ejecuta correctamente, el valor devuelto es ERROR \_ Success.
+Si la función se realiza correctamente, el valor devuelto es ERROR \_ SUCCESS.
 
 Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes códigos de retorno.
 
@@ -80,7 +80,7 @@ Si se produce un error en la función, el valor devuelto puede ser uno de los si
 
 | Código devuelto                                                                                          | Descripción                                                    |
 |------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| <dl> <dt>**ERROR \_ no \_ admitido**</dt> </dl> | El receptor de pantalla no es compatible con este hardware.<br/> |
+| <dl> <dt>**ERROR \_ NO \_ ADMITIDO**</dt> </dl> | El receptor de pantalla no se admite en este hardware.<br/> |
 
 
 
@@ -91,9 +91,9 @@ Si se produce un error en la función, el valor devuelto puede ser uno de los si
 Esta función realiza las siguientes tareas:
 
 -   Hace que el equipo sea reconocible
--   Establece la información del dispositivo P2P para reflejar la categoría y la subcategoría especificada.
--   Establece las s de Miracast en todas Wi-Fi tramas directas con el tipo de dispositivo como receptor
--   Registra la devolución de llamada especificada que se va a invocar siempre que haya una conexión entrante.
+-   Establece la información del dispositivo P2P para reflejar la categoría y la subcategoría especificadas.
+-   Establece las Miracast en todos los Wi-Fi marcos directos con el tipo de dispositivo como receptor
+-   Registra la devolución de llamada especificada que se invocará siempre que haya una conexión entrante.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,12 +101,12 @@ Esta función realiza las siguientes tareas:
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio Windows 8.1\]<br/>                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 R2 \[\]<br/>                                    |
+| Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                               |
+| Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows 10<br/>                                                                      |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2016<br/>                                                             |
-| Encabezado<br/>                   | <dl> <dt>Wfdsink. h</dt> </dl>       |
-| Biblioteca<br/>                  | <dl> <dt>Wifidisplay. lib</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wfdsink.h</dt> </dl>       |
+| Biblioteca<br/>                  | <dl> <dt>Wifidisplay.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wifidisplay.dll</dt> </dl> |
 
 
@@ -115,7 +115,7 @@ Esta función realiza las siguientes tareas:
 
 <dl> <dt>
 
-[**\_devolución de \_ llamada de notificación de receptor de pantalla de \_ WFD \_**](wfd-display-sink-notification-callback.md)
+[**DEVOLUCIÓN DE LLAMADA \_ DE NOTIFICACIÓN DEL RECEPTOR DE VISUALIZACIÓN \_ \_ \_ DE WFD**](wfd-display-sink-notification-callback.md)
 </dt> </dl>
 
  

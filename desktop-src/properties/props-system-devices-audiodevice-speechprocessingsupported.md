@@ -4,12 +4,12 @@ ms.assetid: 1ed8b831-df74-4612-aeef-009160325248
 title: System.Devices.AudioDevice.SpeechProcessingSupported
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71b2b9339b04a2eb3510847ee45db3d321460d57979d679a47fd3c8bc1108911
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 097b3961e19fa9fe0e76f5c68c13e2e685be585f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119097846"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572641"
 ---
 # <a name="systemdevicesaudiodevicespeechprocessingsupported"></a>System.Devices.AudioDevice.SpeechProcessingSupported
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

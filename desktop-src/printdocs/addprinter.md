@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 6034c330da19f5982e9bbacbf75cc16f0a7d10dd65f9c8bded2efa5cbda70835
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 51416ed59bc1c6df1d2c69de87d61bdecab522f0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119601145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571608"
 ---
 # <a name="addprinter-function"></a>Función AddPrinter
 
@@ -60,7 +60,7 @@ Versión de la estructura a la que *apunta pPrinter.* Este valor debe ser 2.
 *pPrinter* \[ En\]
 </dt> <dd>
 
-Puntero a una [**estructura PRINTER \_ INFO \_ 2**](printer-info-2.md) que contiene información sobre la impresora. Debe especificar valores distintos de **NULL** para los miembros **pPrinterName**, **pPortName**, **pDriverName** y **pPrintProcessor** de esta estructura antes de llamar a **AddPrinter**.
+Puntero a una [**estructura PRINTER \_ INFO \_ 2**](printer-info-2.md) que contiene información sobre la impresora. Debe especificar valores que **no** son NULL para los miembros **pPrinterName**, **pPortName**, **pDriverName** y **pPrintProcessor** de esta estructura antes de llamar a **AddPrinter**.
 
 </dd> </dl>
 
@@ -70,7 +70,7 @@ Si la función se realiza correctamente, el valor devuelto es un identificador (
 
 Si se produce un error en la función, el valor devuelto es **NULL.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No llame a este método en [**DllMain**](/windows/desktop/Dlls/dllmain).
 
@@ -79,11 +79,11 @@ No llame a este método en [**DllMain**](/windows/desktop/Dlls/dllmain).
 
  
 
-El autor de la llamada debe [tener SeLoadDriverPrivilege.](/windows/desktop/SecAuthZ/authorization-constants)
+El autor de la llamada debe [tener seLoadDriverPrivilege](/windows/desktop/SecAuthZ/authorization-constants).
 
-El identificador devuelto no es seguro para subprocesos. Si los autores de la llamada necesitan usarlo simultáneamente en varios subprocesos, deben proporcionar acceso de sincronización personalizado al identificador de impresora mediante las [funciones de sincronización](/windows/desktop/Sync/synchronization-functions). Para evitar escribir código personalizado, la aplicación puede abrir un identificador de impresora en cada subproceso, según sea necesario.
+El identificador devuelto no es seguro para subprocesos. Si los llamadores necesitan usarlo simultáneamente en varios subprocesos, deben proporcionar acceso de sincronización personalizado al identificador de impresora mediante las [funciones de sincronización](/windows/desktop/Sync/synchronization-functions). Para evitar escribir código personalizado, la aplicación puede abrir un identificador de impresora en cada subproceso, según sea necesario.
 
-Estos son los miembros de la estructura [**PRINTER \_ INFO \_ 2**](printer-info-2.md) que se pueden establecer antes de llamar a **la función AddPrinter:**
+Estos son los miembros de la estructura [**PRINTER \_ INFO \_ 2**](printer-info-2.md) que se pueden establecer antes de llamar a la función **AddPrinter:**
 
 -   **Atributos**
 -   **pPrintProcessor**
@@ -108,23 +108,23 @@ Si **pSecurityDescriptor** es **NULL,** el sistema asigna un descriptor de segur
 
 | Value                          | Descripción                                                                                                                                                                                                                                                                                                                                            |
 |--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Administradores y usuarios avanzados | Control total en la cola de impresión. Esto significa que los miembros de estos grupos pueden imprimir, administrar la cola (puede eliminar la cola, cambiar cualquier configuración de la cola, incluido el descriptor de seguridad) y administrar los trabajos de impresión de todos los usuarios (eliminar, pausar, reanudar, reiniciar trabajos). Tenga en cuenta que los usuarios avanzados no existen antes de Windows XP Professional.<br/> |
+| Administradores y usuarios avanzados | Control total en la cola de impresión. Esto significa que los miembros de estos grupos pueden imprimir, administrar la cola (puede eliminar la cola, cambiar cualquier configuración de la cola, incluido el descriptor de seguridad) y administrar los trabajos de impresión de todos los usuarios (eliminar, pausar, reanudar y reiniciar trabajos). Tenga en cuenta que los usuarios avanzados no existen antes Windows XP Professional.<br/> |
 | Creador/propietario                  | Puede administrar trabajos propios. Esto significa que el usuario que envía trabajos puede administrar (eliminar, pausar, reanudar, reiniciar) sus propios trabajos.                                                                                                                                                                                                                                  |
-| Todos.                       | Ejecutar y el control de lectura estándar. Esto significa que los miembros del grupo todos pueden imprimir y leer las propiedades de la cola de impresión.                                                                                                                                                                                                                     |
+| Todos                       | Ejecutar y el control de lectura estándar. Esto significa que los miembros del grupo todos pueden imprimir y leer las propiedades de la cola de impresión.                                                                                                                                                                                                                     |
 
 
 
  
 
-Una vez que una aplicación crea un objeto de impresora con la función **AddPrinter,** debe usar la [**función PrinterProperties**](printerproperties.md) para especificar la configuración correcta para el controlador de impresora asociado al objeto de impresora.
+Una vez que una aplicación crea un objeto de impresora con la función **AddPrinter,** debe usar la función [**PrinterProperties**](printerproperties.md) para especificar la configuración correcta para el controlador de impresora asociado al objeto de impresora.
 
-La **función AddPrinter** devuelve un error si ya existe un objeto de impresora con el mismo nombre, a menos que ese objeto esté marcado como pendiente de eliminación. En ese caso, no se elimina la impresora existente y los parámetros de creación de **AddPrinter** se usan para cambiar la configuración de impresora existente (como si la aplicación hubiera usado la [**función SetPrinter).**](setprinter.md)
+La **función AddPrinter** devuelve un error si ya existe un objeto de impresora con el mismo nombre, a menos que ese objeto esté marcado como eliminación pendiente. En ese caso, la impresora existente no se elimina y los parámetros de creación de **AddPrinter** se usan para cambiar la configuración de impresora existente (como si la aplicación hubiera usado la [**función SetPrinter).**](setprinter.md)
 
 Use la [**función EnumPrintProcessors**](enumprintprocessors.md) para enumerar el conjunto de procesadores de impresión instalados en un servidor. Use la [**función EnumPrintProcessorDatatypes**](enumprintprocessordatatypes.md) para enumerar el conjunto de tipos de datos que admite un procesador de impresión. Use la [**función EnumPorts**](enumports.md) para enumerar el conjunto de puertos disponibles. Use la [**función EnumPrinterDrivers para**](enumprinterdrivers.md) enumerar los controladores de impresora instalados.
 
-El autor de la llamada **de la función AddPrinter** debe tener acceso SERVER ACCESS ADMINISTER al servidor en el que se va \_ a crear la \_ impresora. El identificador devuelto por la función tendrá el permiso PRINTER ALL ACCESS y se puede usar \_ para realizar operaciones administrativas en la \_ impresora.
+El autor de la llamada de la **función AddPrinter** debe tener acceso SERVER ACCESS ADMINISTER al servidor en el que se va \_ a crear la \_ impresora. El identificador devuelto por la función tendrá el permiso PRINTER ALL ACCESS y se puede usar \_ para realizar operaciones administrativas en la \_ impresora.
 
-Si se **pasa a la función DrvPrinterEvent** la marca de interfaz de usuario PRINTER EVENT FLAG NO, el controlador no debe usar una llamada de interfaz de usuario durante \_ \_ \_ \_ **DrvPrinterEvent**. Para realizar trabajos relacionados con la interfaz de usuario, el instalador debe usar la entrada **VendorSetup** en el archivo .inf de la impresora o, en el caso de los dispositivos Plug and Play, el instalador puede usar un coins instalador específico del dispositivo. Para obtener más información sobre **VendorSetup,** vea Microsoft Windows Driver Development Kit (DDK).
+Si se pasa a la función **DrvPrinterEvent** la marca de interfaz de usuario PRINTER EVENT FLAG NO, el controlador no debe usar una llamada de interfaz de usuario \_ \_ durante \_ \_ **DrvPrinterEvent**. Para realizar trabajos relacionados con la interfaz de usuario, el instalador debe usar la entrada **VendorSetup** en el archivo .inf de la impresora o, en el caso de los dispositivos Plug and Play, el instalador puede usar un co-installer específico del dispositivo. Para obtener más información sobre **VendorSetup,** consulte Microsoft Windows Driver Development Kit (DDK).
 
 El Firewall de conexión a Internet (ICF) bloquea los puertos de impresora de forma predeterminada, pero se habilita una excepción para el uso compartido de archivos e impresión al **ejecutar AddPrinter**.
 
@@ -174,7 +174,7 @@ El Firewall de conexión a Internet (ICF) bloquea los puertos de impresora de fo
 [**GetPrinter**](getprinter.md)
 </dt> <dt>
 
-[**INFORMACIÓN \_ DE IMPRESORA \_ 2**](printer-info-2.md)
+[**PRINTER \_ INFO \_ 2**](printer-info-2.md)
 </dt> <dt>
 
 [**PrinterProperties**](printerproperties.md)

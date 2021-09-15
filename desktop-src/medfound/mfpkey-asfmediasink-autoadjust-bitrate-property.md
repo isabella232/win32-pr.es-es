@@ -1,31 +1,31 @@
 ---
-description: Especifica si el receptor de medios ASF ajusta automáticamente la velocidad de bits.
+description: Especifica si el receptor de medios de ASF ajusta automáticamente la velocidad de bits.
 ms.assetid: 0a6f4dd4-4ad7-4aab-a33d-14b4716f9902
-title: Propiedad MFPKEY_ASFMEDIASINK_AUTOADJUST_BITRATE (Mfidl. h)
+title: MFPKEY_ASFMEDIASINK_AUTOADJUST_BITRATE propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: d2d22463f477eb5abc1bb84254ad312427ecef52
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105697974"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474104"
 ---
-# <a name="mfpkey_asfmediasink_autoadjust_bitrate-property"></a>\_ \_ Propiedad autoajuste de \_ velocidad de bits de MFPKEY ASFMEDIASINK
+# <a name="mfpkey_asfmediasink_autoadjust_bitrate-property"></a>Propiedad MFPKEY \_ ASFMEDIASINK \_ AUTOADJUST \_ BITRATE
 
-Especifica si el receptor de medios ASF ajusta automáticamente la velocidad de bits.
+Especifica si el receptor de medios de ASF ajusta automáticamente la velocidad de bits.
 
 
 
 Tipo de datos
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Miembro de PROPVARIANT
 
-**VARIANTE \_ bool**
+**VARIANT \_ BOOL**
 
-VT \_ bool
+VT \_ BOOL
 
 **boolVal**
 
@@ -33,32 +33,32 @@ VT \_ bool
 
 ## <a name="remarks"></a>Observaciones
 
-Si el valor de esta propiedad es VARIANT \_ true, el receptor de medios ASF ajusta automáticamente la velocidad de bits del contenido ASF en respuesta a las características de las secuencias que se multiplexan.
+Si el valor de esta propiedad es VARIANT TRUE, el receptor de medios de ASF ajusta automáticamente la velocidad de bits del contenido de ASF en respuesta a las características de las secuencias que se \_ multiplexan.
 
-Esta propiedad afecta a cómo se comporta el receptor de medios ASF cuando una secuencia desborda los parámetros del "cubo de fugas" del receptor:
+Esta propiedad afecta a cómo se comporta el receptor de medios de ASF cuando una secuencia desborda los parámetros de "cubo de pérdida" del receptor:
 
 
 
 | Value              | Comportamiento                                                                                                                                      |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| **VARIANTE \_ true**  | El receptor de medios ASF ajusta automáticamente la velocidad de bits del contenido ASF en respuesta a las características de las secuencias que se multiplexan. |
-| **VARIANTE \_ false** | El receptor de medios ASF usa el valor de velocidad de bits de transmisión proporcionado por la aplicación.                                                                |
+| **VARIANT \_ TRUE**  | El receptor de medios de ASF ajusta automáticamente la velocidad de bits del contenido de ASF en respuesta a las características de las secuencias que se multiplexa. |
+| **VARIANT \_ FALSE** | El receptor de medios de ASF usa el valor de velocidad de bits de flujo proporcionado por la aplicación.                                                                |
 
 
 
  
 
-El valor predeterminado es **Variant \_ false**.
+El valor predeterminado es **VARIANT \_ FALSE.**
 
-Establezca esta propiedad al configurar el receptor de medios ASF. El uso depende de la función a la que llame para crear el receptor de medios ASF:
+Establezca esta propiedad al configurar el receptor de medios de ASF. El uso depende de la función a la que llame para crear el receptor de medios de ASF:
 
--   [**MFCreateASFMediaSink**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmediasink): Consulte el puntero [**IMFMediaSink**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasink) recuperado para la interfaz **IPropertyStore** .
+-   [**MFCreateASFMediaSink:**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmediasink)consulta el puntero [**DE TIPO MFMediaSink**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasink) recuperado para la **interfaz IPropertyStore.**
 
--   [**MFCreateASFMediaSinkActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmediasinkactivate): llame a [**IMFASFContentInfo:: GetEncodingConfigurationPropertyStore**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getencodingconfigurationpropertystore) en el puntero [**IMFASFContentInfo**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) especificado en el parámetro *pContentInfo* .
+-   [**MFCreateASFMediaSinkActivate**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfmediasinkactivate): llame a [**MFASFContentInfo::GetEncodingConfigurationPropertyStore**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-getencodingconfigurationpropertystore) en el puntero [**MFASFContentInfo**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfcontentinfo) especificado en el *parámetro pContentInfo.*
 
-Establecer esta propiedad en VARIANT \_ true hace que el receptor de medios ASF establezca la marca de **\_ velocidad de \_ \_ bits de autoajuste del multiplexor de MFASF** en el multiplexor ASF. Vea [**IMFASFMultiplexer:: SetFlags**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-setflags).
+Al establecer esta propiedad en VARIANT TRUE, el receptor de medios de ASF establece la marca \_ **MFASF \_ \_ MULTIPLEXER AUTOADJUST \_ BITRATE** en el multiplexor de ASF. Vea [**ALFMultiplexer::SetFlags.**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfmultiplexer-setflags)
 
-Para obtener más información sobre el concepto de depósito con fugas, vea el tema sobre el modelo de búfer de depósitos con fugas en la documentación del SDK de Windows Media Format.
+Para obtener más información sobre el concepto de cubo filtrado, vea el tema "The Leaky Bucket Buffer Model" en la documentación del SDK Windows Media Format.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,9 +66,9 @@ Para obtener más información sobre el concepto de depósito con fugas, vea el 
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Para obtener más información sobre el concepto de depósito con fugas, vea el 
 
 <dl> <dt>
 
-[Propiedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propiedades](media-foundation-properties.md)
 </dt> <dt>
 
 [**MF \_ ASFSTREAMCONFIG \_ LEAKYBUCKET1**](mf-asfstreamconfig-leakybucket1-attribute.md)

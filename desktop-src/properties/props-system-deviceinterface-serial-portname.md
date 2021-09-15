@@ -4,12 +4,12 @@ ms.assetid: 22bdef67-dc40-4ba9-80f1-8c4477580f1a
 title: System.DeviceInterface.Serial.PortName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70233fd1fbc036725c8d6924aec772cbcf251f3ed74f50dcab789252a24c3823
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 547409929543b3ec95de6f101babf7ed5bf464d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120010985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572664"
 ---
 # <a name="systemdeviceinterfaceserialportname"></a>System.DeviceInterface.Serial.PortName
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

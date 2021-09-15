@@ -4,12 +4,12 @@ ms.assetid: 27d7676c-f4e8-43b4-856b-826e07afcd78
 title: Habilitación del almacén de datos en Windows búsqueda federada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d26feb231f17dbaacb9656f2ef91e1cdb64bc598831a1e4808327dff7e5787bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8cef227cb82c64f391ec61b2a7fef0fe35acf131
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119456765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572557"
 ---
 # <a name="enabling-your-data-store-in-windows-federated-search"></a>Habilitación del almacén de datos en Windows búsqueda federada
 
@@ -23,7 +23,7 @@ Este tema se organiza de la siguiente manera:
 -   [Envío de consultas y devolución de resultados de búsqueda en RSS o Atom](#sending-queries-and-returning-search-results-in-rss-or-atom)
     -   [Ejemplo de una salida de fuente RSS](#example-of-an-rss-feed-output)
 -   [Asignación automática a Windows shell](#automatic-mapping-to-windows-shell-properties)
--   [Descripción de cómo Mapas de Windows a tipos de archivo](#understanding-how-windows-maps-items-to-file-types)
+-   [Descripción de cómo Mapas de Windows elementos a tipos de archivo](#understanding-how-windows-maps-items-to-file-types)
 -   [Evitar posibles barreras para habilitar un almacén de datos](#avoiding-potential-barriers-to-enabling-a-data-store)
 -   [Recursos adicionales](#additional-resources)
 -   [Temas relacionados](#related-topics)
@@ -52,7 +52,7 @@ Para obtener más información sobre cómo construir una dirección URL, vea "Pa
 
 ### <a name="supported-query-syntax"></a>Sintaxis de consulta admitida
 
-No se espera ninguna sintaxis de consulta específica en Windows 7. El OpenSearch acepta los términos que el usuario escribe en el cuadro de entrada en Windows Explorer y lo codifica en la dirección URL. Lo hace según la plantilla de dirección URL descrita en "Parámetros de plantilla de dirección URL" en Creación de un archivo de descripción de OpenSearch en [Windows búsqueda federada.](-search-federated-search-osdx-file.md)
+No se espera ninguna sintaxis de consulta específica en Windows 7. El OpenSearch acepta los términos que el usuario escribe en el cuadro de entrada en Windows Explorer y lo codifica en la dirección URL. Lo hace según la plantilla de dirección URL descrita en "Parámetros de plantilla de dirección URL" en Creación de un archivo de descripción de OpenSearch en [Windows búsqueda federada](-search-federated-search-osdx-file.md).
 
 Los usuarios esperan que los términos independientes se traten como ANDed implícitamente juntos. Por ejemplo, una consulta para "Microsoft Windows" solo debe devolver resultados que contengan "Windows" y "Microsoft".
 
@@ -67,7 +67,7 @@ Windows Federated Search admite Windows autenticación basada en aplicaciones y 
 
 ## <a name="sending-queries-and-returning-search-results-in-rss-or-atom"></a>Envío de consultas y devolución de resultados de búsqueda en RSS o Atom
 
-El [OpenSearch](https://github.com/dewitt/opensearch) es responsable de asignar los valores de elemento XML a las propiedades del sistema Windows Shell que pueden usar Windows aplicaciones. Pero no está limitado a las asignaciones predeterminadas de elementos ESTÁNDAR RSS o Atom, y puede incluir elementos XML personalizados en el espacio de nombres Windows para cada una de las propiedades. Por ejemplo, puede agregar sus propios elementos XML personalizados dentro del elemento **de** elemento para proporcionar metadatos adicionales a Windows. También puede asignar elementos de otros espacios de nombres XML, como iTunes.
+El [OpenSearch](https://github.com/dewitt/opensearch) es responsable de asignar los valores de elemento XML a las Windows del sistema shell que pueden usar Windows aplicaciones. Pero no está limitado a las asignaciones predeterminadas de elementos ESTÁNDAR RSS o Atom, y puede incluir elementos XML personalizados en el espacio de nombres Windows para cada una de las propiedades. Por ejemplo, puede agregar sus propios elementos XML personalizados dentro del elemento **para** proporcionar metadatos adicionales a Windows. También puede asignar elementos de otros espacios de nombres XML, como iTunes.
 
 ### <a name="example-of-an-rss-feed-output"></a>Ejemplo de una salida de fuente RSS
 
@@ -97,7 +97,7 @@ Para obtener información más detallada sobre la asignación de propiedades, ve
 
 ## <a name="automatic-mapping-to-windows-shell-properties"></a>Asignación automática a Windows shell
 
-Dentro de los elementos de la fuente RSS, puede elegir incluir otros elementos XML que se asignan automáticamente a Windows del sistema shell. Para ello, incluya un elemento denominado después de la propiedad Windows Shell y con el prefijo del espacio de nombres del sistema Windows Shell. En el ejemplo siguiente se muestra la declaración de espacio de `win=" http://schemas.microsoft.com/windows/2008/propertynamespace"` nombres y la inclusión de un elemento para la asignación de propiedades `win:System.Contact.PrimaryEmailAddress` :
+Dentro de los elementos de la fuente RSS, puede elegir incluir otros elementos XML que se asignan automáticamente a Windows del sistema shell. Para ello, incluya un elemento denominado después de la propiedad Windows Shell y con el prefijo Windows espacio de nombres del sistema shell. En el ejemplo siguiente se muestra la declaración de espacio de `win=" http://schemas.microsoft.com/windows/2008/propertynamespace"` nombres y la inclusión de un elemento para la asignación de propiedades `win:System.Contact.PrimaryEmailAddress` :
 
 
 ```
@@ -123,7 +123,7 @@ http://schemas.microsoft.com/windows/2008/propertynamespace
 
 **Acerca de Windows del sistema shell**
 
-Windows una lista completa de propiedades [del sistema](../properties/props.md) y el formato de tipo de valor necesario para cada propiedad. La documentación de la propiedad Shell de ventana [System.FileExtension,](../properties/props-system-fileextension.md) por ejemplo, especifica que el valor debe contener el punto inicial (".docx" y no "docx").
+Windows define una lista completa de propiedades [del sistema](../properties/props.md) y el formato de tipo de valor necesario para cada propiedad. La documentación de la propiedad Shell de ventana [System.FileExtension,](../properties/props-system-fileextension.md) por ejemplo, especifica que el valor debe contener el punto inicial (".docx" y no "docx").
 
 **Valores de fecha y hora**
 
@@ -158,7 +158,7 @@ Por ejemplo, si el elemento tiene una dirección URL de vínculo que usa una rut
 Si el elemento usa el gabinete RSS estándar o el elemento **media:content de MediaRSS,** el proveedor [de OpenSearch](https://github.com/dewitt/opensearch) asume que el elemento es un archivo e identifica la extensión de nombre de archivo de la siguiente manera:
 
 -   Si la [propiedad System.FileExtension](../properties/props-system-fileextension.md) Windows Shell se ha asignado para el elemento, el proveedor usa esa extensión de nombre de archivo.
--   Si no se ha asignado la propiedad [System.FileExtension](../properties/props-system-fileextension.md) Windows Shell, el proveedor usa el atributo **Type** especificado en el gabinete o el elemento content. Este elemento debe contener una `MIMEType` cadena, como `"image/jpeg"` . Si está asociado a una extensión de nombre de archivo registrada en el equipo cliente, el elemento se considera `MIMEType` un archivo de ese tipo. Si no está asociado a una extensión de nombre de archivo registrada en el equipo cliente, el elemento `MIMEType` se trata como un tipo de vínculo web. El [OpenSearch](https://github.com/dewitt/opensearch) no intenta analizar el atributo **Url** para buscar la extensión de nombre de archivo.
+-   Si no se ha asignado la propiedad [System.FileExtension](../properties/props-system-fileextension.md) Windows Shell, el proveedor usa el atributo **Type** especificado en el gabinete o elemento content. Este elemento debe contener una `MIMEType` cadena, como `"image/jpeg"` . Si está asociado a una extensión de nombre de archivo registrada en el equipo cliente, el elemento se considera `MIMEType` un archivo de ese tipo. Si no está asociado a una extensión de nombre de archivo registrada en el equipo cliente, el elemento `MIMEType` se trata como un tipo de vínculo web. El [OpenSearch](https://github.com/dewitt/opensearch) no intenta analizar el atributo **Url** para buscar la extensión de nombre de archivo.
 -   Si está asociado a una extensión de nombre de archivo registrada en el equipo cliente, el proveedor determina si la extensión de nombre de archivo es un tipo de archivo web conocido `MIMEType` (.htm, .html, .asp, .aspx, .php, .mq, .stm). Si es así, el tipo de archivo se considera un tipo de vínculo web; de lo contrario, se considera un tipo de archivo. Por ejemplo, si está asociado a la extensión .htm nombre de archivo, ese elemento se considera un vínculo web en lugar de como un tipo .htm `MIMEType "text/html"` archivo.
 
 ## <a name="avoiding-potential-barriers-to-enabling-a-data-store"></a>Evitar posibles barreras para habilitar un almacén de datos
@@ -182,13 +182,13 @@ Sin embargo, hay alternativas que pueden evitar barreras para habilitar un almac
 1.  Escriba un servicio web de intermediario que pueda aceptar una consulta Windows 7.
 2.  Conectar al origen de datos y recupere los resultados de la consulta.
 3.  Vuelva a formatear los resultados en formato RSS o Atom.
-4.  Devuelve los resultados al Windows 7.
+4.  Devuelve los resultados al cliente Windows 7.
 5.  Tenga en cuenta que para los servicios de datos empresariales y muchos servicios de datos de Internet, es posible que tenga que pasar las credenciales de usuario a través en nombre del servicio web para realizar el recorte de resultados en función de los permisos del usuario.
 
 **Para usar un motor de búsqueda existente cuando no se puede habilitar un almacén de datos público:**
 
 1.  Use un motor de búsqueda público que ya [admita OpenSearch](https://github.com/dewitt/opensearch) con RSS. Para ello, proporcione a los usuarios un archivo .osdx que tenga una plantilla de dirección URL que restrinja los resultados solo a los del dominio específico.
-2.  Vea el ejemplo siguiente de una [descripción OpenSearch](https://github.com/dewitt/opensearch) para buscar solo el contenido de la Ayuda Windows mediante una consulta en live.com.
+2.  Consulte el ejemplo siguiente de una [OpenSearch](https://github.com/dewitt/opensearch) para buscar solo el contenido de la Ayuda Windows mediante una consulta en live.com.
 
     ```
     <?xml version="1.0" encoding="UTF-8"?>
@@ -206,12 +206,12 @@ Sin embargo, hay alternativas que pueden evitar barreras para habilitar un almac
 **Para usar un servidor de indexación existente que admita OpenSearch cuando no se puedan habilitar los índices o almacenes de datos empresariales propietarios:**
 
 1.  Seleccione un servidor de indexación existente que [admita OpenSearch](https://github.com/dewitt/opensearch) indexar el contenido, como SharePoint Search Server.
-2.  Cree un archivo .osdx que restrinja los resultados del índice de SharePoint solo a los del servidor mediante su sintaxis KeyWord dentro de la plantilla de dirección URL.
+2.  Cree un archivo .osdx que restrinja los resultados del índice SharePoint a solo los del servidor mediante su sintaxis KeyWord dentro de la plantilla de dirección URL.
 
 **Para escribir un almacén de datos del lado cliente si una solución solo del lado servidor no funciona:**
 
 1.  Escriba un origen de datos [OpenSearch](https://github.com/dewitt/opensearch) cliente que se encuentra entre el proveedor Windows [OpenSearch](https://github.com/dewitt/opensearch) y el origen de datos externo.
-2.  Use la API de interfaz [IOpenSearchSource](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iopensearchsource) en el SDK de Windows para crear un archivo .searchconnector-ms configurado correctamente a través del cual Windows Explorer puede llamar a la implementación con los parámetros de consulta. A continuación, la implementación puede devolver resultados con formato RSS o Atom. Esto permite a la implementación proporcionar una interfaz de usuario de autenticación personalizada y conectarse al origen de datos mediante su API propietaria.
+2.  Use la API de interfaz [IOpenSearchSource](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iopensearchsource) en el SDK de Windows para crear un archivo .searchconnector-ms configurado correctamente a través del cual Windows Explorer puede llamar a la implementación con los parámetros de consulta. Después, la implementación puede devolver resultados con formato RSS o Atom. Esto permite a la implementación proporcionar una interfaz de usuario de autenticación personalizada y conectarse al origen de datos mediante su API propietaria.
 
 > [!Note]  
 > Al abrir un archivo .osdx, se crea un archivo .searchconnector-ms (conector de búsqueda) en el directorio %userprofile%/searches y se coloca un vínculo a él en el directorio %userprofile%/links.
@@ -220,7 +220,7 @@ Sin embargo, hay alternativas que pueden evitar barreras para habilitar un almac
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
-Para obtener información adicional sobre cómo implementar la federación de búsqueda en almacenes de datos remotos mediante tecnologías de OpenSearch en Windows 7 y versiones posteriores, vea "Recursos adicionales" en [Búsqueda federada en Windows](/previous-versions//dd742958(v=vs.85)).
+Para obtener información adicional sobre cómo implementar la federación de búsqueda en almacenes de datos remotos mediante tecnologías de OpenSearch en Windows 7 y versiones posteriores, vea "Recursos adicionales" en Búsqueda federada [en Windows](/previous-versions//dd742958(v=vs.85)).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -238,7 +238,7 @@ Para obtener información adicional sobre cómo implementar la federación de b�
 [Crear un archivo OpenSearch descripción en Windows búsqueda federada](-search-federated-search-osdx-file.md)
 </dt> <dt>
 
-[Seguir los procedimientos recomendados en Windows federated Search](-search-fedsearch-best.md)
+[Procedimientos recomendados siguientes en Windows búsqueda federada](-search-fedsearch-best.md)
 </dt> <dt>
 
 [Implementación de conectores de búsqueda en Windows búsqueda federada](-search-federated-search-deploying.md)

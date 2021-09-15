@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 758c27b1b3a67b91b7921276ec26e9c9776b65255c4cfa88d32b839f9950c2af
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 634dd081513e576c7aabaac17cc5f9d207a8769f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119725275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571805"
 ---
 # <a name="durablecommitcallbackreleaseresource-method"></a>Método DurableCommitCallback.ReleaseResource
 
@@ -52,16 +52,16 @@ Me.ReleaseResource()
 protected override void ReleaseResource()
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No intente establecer el parámetro de instancia en NULL, ya que la devolución de llamada se elimina después de JetTerm y la devolución de llamada no se puede establecer después de JetTerm.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [DurableCommitCallback (clase)](./durablecommitcallback-class.md)
 
-[Miembros DurableCommitCallback](./durablecommitcallback-members.md)
+[Miembros durableCommitCallback](./durablecommitcallback-members.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

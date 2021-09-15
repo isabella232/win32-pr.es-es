@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 608330b368fc6661f039cb5a62a18aa0310c7c6da85065bf62b923a8d2c8916a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e61c1583e0fbeaeb289ef40b6fd1fc587c44c351
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118484124"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571752"
 ---
 # <a name="vistaparamlegacyfilenames-field"></a>Campo VistaParam.LegacyFileNames
 

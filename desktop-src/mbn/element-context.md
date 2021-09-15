@@ -1,5 +1,5 @@
 ---
-description: Contexto MBNProfileExt \/ (v4)
+description: Contexto de MBNProfileExt \/ (v4)
 MS-HAID: WWAN\_profile\_v4.element\_Context
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -17,13 +17,13 @@ topic_type:
 - APIRef
 - kbSyntax
 ms.openlocfilehash: fa14cd19e5502c227d1f7f0814966959680dfe20
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122624121"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571685"
 ---
-# <a name="span-idwwan_profile_v4element_contextspanmbnprofileextcontext-v4"></a><span id="WWAN_profile_v4.element_Context"></span>Contexto MBNProfileExt \/ (v4)
+# <a name="span-idwwan_profile_v4element_contextspanmbnprofileextcontext-v4"></a><span id="WWAN_profile_v4.element_Context"></span>Contexto de MBNProfileExt \/ (v4)
 
 Especifica los parámetros necesarios para establecer una conexión de datos.
 
@@ -58,7 +58,7 @@ Especifica los parámetros necesarios para establecer una conexión de datos.
 
 ### <a name="span-idattributesspanspan-idattributesspanattributes"></a><span id="attributes"></span><span id="ATTRIBUTES"></span>Atributos
 
-Ninguna.
+Ninguno.
 
 ### <a name="span-idchild_elementsspanspan-idchild_elementsspanspan-idchild_elementsspanchild-elements"></a><span id="Child_Elements"></span><span id="child_elements"></span><span id="CHILD_ELEMENTS"></span>Elementos secundarios
 
@@ -77,23 +77,23 @@ Ninguna.
 <tr class="odd">
 <td><a href="element-accessstring.md">AccessString</a></td>
 <td><p>Identifica el APN o la cadena de marcado que se va a usar para establecer una conexión de datos.</p>
-<p>Para obtener más información, consulte la documentación del elemento <a href="../mbn/schema-accessstring-contexttype-element.md"><strong>AccessString</strong></a> v1.</p></td>
+<p>Para obtener más información, vea la documentación del elemento <a href="../mbn/schema-accessstring-contexttype-element.md"><strong>AccessString</strong></a> v1.</p></td>
 </tr>
 <tr class="even">
 <td><a href="element-authprotocol.md">AuthProtocol</a></td>
 <td><p>>Especifica el protocolo de autenticación que se usará para activar un contexto de Protocolo de datos de paquetes (PDP).</p>
-<p>Tenga en cuenta que, en la versión v4, hay disponible un nuevo valor de enumeración para este elemento. <strong>AutoSelection</strong> significa que un protocolo de autenticación se debe seleccionar por capas inferiores.</p>
+<p>Tenga en cuenta que en v4, hay disponible un nuevo valor de enumeración para este elemento. <strong>AutoSelection</strong> significa que un protocolo de autenticación se debe seleccionar mediante capas inferiores.</p>
 <p>Para más información, consulte la documentación del elemento <a href="../mbn/schema-authprotocol-contexttype-element.md"><strong>AuthProtocol</strong></a> v1.</p></td>
 </tr>
 <tr class="odd">
 <td><a href="element-compression.md">Compresión</a></td>
-<td><p>Especifica si se usará la compresión en el vínculo de datos para el encabezado y la transferencia de datos.</p>
-<p>Para obtener más información, consulte la documentación del elemento <a href="../mbn/schema-compression-contexttype-element.md"><strong>Compression</strong></a> v1.</p></td>
+<td><p>Especifica si se usará la compresión en el vínculo de datos para la transferencia de encabezados y datos.</p>
+<p>Para obtener más información, vea la documentación del elemento <a href="../mbn/schema-compression-contexttype-element.md"><strong>Compression</strong></a> v1.</p></td>
 </tr>
 <tr class="even">
 <td><a href="element-iptype.md">IPType</a></td>
 <td><p>Especifica el tipo de IP que se va a usar en esta conexión de datos.</p>
-<p>Este elemento es nuevo en la versión 4 del esquema. El elemento puede tener uno de los siguientes valores.</p>
+<p>Este elemento es nuevo en la versión 4 del esquema. El elemento puede tener uno de los valores siguientes.</p>
 <table>
 <thead>
 <tr class="header">
@@ -103,7 +103,7 @@ Ninguna.
 </thead>
 <tbody>
 <tr class="odd">
-<td>Predeterminado</td>
+<td>Valor predeterminado</td>
 <td>El tipo de IP se debe seleccionar por capas inferiores.</td>
 </tr>
 <tr class="even">
@@ -120,7 +120,7 @@ Ninguna.
 </tr>
 <tr class="odd">
 <td>XLAT</td>
-<td>Uso de 464XLAT para tunelización de IPv4 a través de redes IPv6</td>
+<td>Uso de 464XLAT para tuner IPv4 a través de redes IPv6</td>
 </tr>
 </tbody>
 </table>
@@ -152,7 +152,7 @@ Ninguna.
 <tr class="odd">
 <td><a href="element-mbnprofileext.md">MBNProfileExt</a></td>
 <td><p>El <strong>elemento MBNProfileExt</strong> es una extensión del elemento MBNProfile anterior. Identifica un perfil de banda ancha móvil con un conjunto de opciones más completo que el elemento MBNProfile.</p>
-<p>Puede haber más de un elemento MbnProfileExt en un perfil, que describe la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el <a href="element-profileconditionedon.md"><strong>elemento secundario ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento hacen que un perfil determinado sea el perfil activo.</p></td>
+<p>Puede haber más de un elemento MbnProfileExt en un perfil que describa la configuración del perfil para un conjunto determinado de condiciones de funcionamiento. Use el <a href="element-profileconditionedon.md"><strong>elemento secundario ProfileConditionedOn</strong></a> de <strong>MBNProfileExt</strong> para especificar qué condiciones de funcionamiento convierten un perfil determinado en el perfil activo.</p></td>
 </tr>
 <tr class="even">
 <td><a href="element-modemdmconfigprofile.md">ModemDMConfigProfile</a></td>

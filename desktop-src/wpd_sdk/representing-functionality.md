@@ -4,12 +4,12 @@ ms.assetid: 34a4a015-614d-4fac-98d8-29ae43165798
 title: Representación de la funcionalidad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f969bcf6352cd4eef02c1580a93bebcbf769953e2ae658243b4499e6d1ca763
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 101614592224a1a5ac079b1f9c3dc89cea9afefe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117842707"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572089"
 ---
 # <a name="representing-functionality"></a>Representación de la funcionalidad
 

@@ -6,12 +6,12 @@ keywords:
 - OpenGL en Windows,píxeles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b76dd8db71356b16a5a258669ffe2938d0982ab5e1417389840610c57a0fcdc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ea36f0f25b2cf76a6fb2ffb3159a4f2763a95af3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118361375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473681"
 ---
 # <a name="examining-a-device-contexts-current-pixel-format"></a>Examinar el formato de píxel actual de los contextos de dispositivo
 

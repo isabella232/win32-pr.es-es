@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 56a5b435aa2900fc02335f5dd92d509734e0c67ba0183a20dad389728202f443
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8d694849b3436f9f30a687579362d01a111ace80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118044404"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572413"
 ---
 # <a name="icontextnodesgetcount-method"></a>IContextNodes::GetCount (método)
 
@@ -42,7 +42,7 @@ HRESULT GetCount(
 *pulCount* \[ out\]
 </dt> <dd>
 
-Número de objetos [**IContextNode**](icontextnode.md) contenidos en esta colección.
+Número de [**objetos IContextNode**](icontextnode.md) contenidos en esta colección.
 
 </dd> </dl>
 
@@ -58,12 +58,12 @@ Para obtener una descripción de los valores [devueltos, vea Clases e interfaces
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

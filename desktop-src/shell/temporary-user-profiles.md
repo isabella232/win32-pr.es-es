@@ -1,5 +1,5 @@
 ---
-description: Se emite un perfil de usuario temporal cada vez que una condición de error impide que el perfil del usuario se cargue.
+description: Se emite un perfil de usuario temporal cada vez que una condición de error impide que se cargue el perfil del usuario.
 title: Perfiles de usuario temporales
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 26a51c12899fb4779c515359a0bbf1afa03c36826d599abded4f6c21c04d60a6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fc4b562ca3b0b032324b3f3bb9b7ccdd7d01fd85
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117857057"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571461"
 ---
 # <a name="temporary-user-profiles"></a>Perfiles de usuario temporales
 
-Se emite un perfil de usuario temporal cada vez que una condición de error impide que el perfil del usuario se cargue. Los perfiles temporales se eliminan al final de cada sesión y los cambios realizados por el usuario en la configuración de escritorio y los archivos se pierden cuando el usuario cierra la sesión. Los perfiles temporales solo están disponibles en equipos que ejecutan Windows 2000 y versiones posteriores.
+Se emite un perfil de usuario temporal cada vez que una condición de error impide que se cargue el perfil del usuario. Los perfiles temporales se eliminan al final de cada sesión y los cambios realizados por el usuario en la configuración de escritorio y los archivos se pierden cuando el usuario cierra la sesión. Los perfiles temporales solo están disponibles en equipos que ejecutan Windows 2000 y versiones posteriores.
 
  
 

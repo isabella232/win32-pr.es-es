@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d17d98903a48b995cfe3c82ac746dfe7b8f0268beb03f34ae8228f50f5022920
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e8f0b72716dcbfb438a84eb1ce852f8fc07f2898
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119908935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473993"
 ---
 # <a name="cpullpincpullpin-destructor"></a>Destructor CPullPin.~CPullPin
 

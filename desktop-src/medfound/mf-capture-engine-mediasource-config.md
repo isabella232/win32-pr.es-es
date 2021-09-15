@@ -4,14 +4,14 @@ ms.assetid: 9A21D21B-E77F-4C7C-B41F-361CEDA322E7
 title: MF_CAPTURE_ENGINE_MEDIASOURCE_CONFIG atributo (Mfcaptureengine.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3d111aa41d423f39bb55597d75ec18cc2ee24d93a7f250074a10882c6f38f66
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8afaea6e47b729e325e67135c8a1d39fa88bdc4c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119464375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474217"
 ---
-# <a name="mf_capture_engine_mediasource_config-attribute"></a>Atributo \_ DE CONFIGURACIÓN \_ \_ MEDIASOURCE DEL MOTOR DE CAPTURA \_ DE MF
+# <a name="mf_capture_engine_mediasource_config-attribute"></a>Atributo \_ DE CONFIGURACIÓN \_ MEDIASOURCE del MOTOR DE CAPTURA \_ \_ DE MF
 
 Contiene propiedades de configuración para el origen de captura.
 
@@ -19,7 +19,7 @@ Contiene propiedades de configuración para el origen de captura.
 
 **IPropertyStore \* *_ almacenado como _* IUnknown\***
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Actualmente, este atributo se omite. En el futuro, se podría usar para pasar propiedades de configuración al origen de medios.
 
@@ -31,7 +31,7 @@ Actualmente, este atributo se omite. En el futuro, se podría usar para pasar pr
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                   |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                         |
-| Header<br/>                   | <dl> <dt>Mfcaptureengine.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfcaptureengine.h</dt> </dl> |
 
 
 

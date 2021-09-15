@@ -4,19 +4,19 @@ ms.assetid: 14d520e7-7c15-441d-9662-24b972d208ac
 title: Barra de tareas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8a4943c242b0b3f0993a4cf542c8625e19cf25c32b71cb01e4ef8581d12d64c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cce37991c6265f02ab92ece62dbae341031d272a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119773725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571476"
 ---
 # <a name="the-taskbar"></a>Barra de tareas
 
 La Windows incluye una barra de [herramientas especial de escritorio de aplicaciones](application-desktop-toolbars.md) denominada barra de *tareas*. Puede usar la barra de tareas para tareas como cambiar entre ventanas abiertas e iniciar nuevas aplicaciones.
 
 > [!Note]  
-> Para obtener información sobre los cambios realizados en la barra de tareas a partir Windows 7, vea [Extensiones de la barra de tareas](taskbar-extensions.md).
+> Para obtener información sobre los cambios realizados en la barra de tareas Windows 7, vea [Extensiones de la barra de tareas](taskbar-extensions.md).
 
  
 
@@ -42,7 +42,7 @@ La barra de tareas incluye lo siguiente:
 -   Barras de herramientas (opcional)
 -   Área de notificaciones
 
-El **menú** Inicio contiene comandos que pueden tener acceso a programas, documentos y configuraciones. Estos comandos incluyen Todos los **programas,** **Documentos,** **Panel de control** **,** **Juegos,** Ayuda y soporte **técnico,** Apagar y Buscar **programas y archivos.**
+El **menú** Inicio contiene comandos que pueden tener acceso a programas, documentos y configuraciones. Estos comandos incluyen **Todos** los programas , **Documentos**, **Panel de control** **,** Juegos **,** Ayuda y soporte **técnico,** Apagar y Buscar programas **y archivos**.
 
 El **elemento Iniciar** en versiones anteriores de Windows  contenía elementos como Buscar y  ejecutar **,** cuya funcionalidad se incluía en buscar programas y archivos en Windows Vista y versiones posteriores.
 
@@ -54,19 +54,19 @@ Las aplicaciones pueden colocar iconos en el área de notificación para indicar
 
 El área de notificación también muestra la hora actual si se selecciona esa opción. La opción se encuentra como:
 
--   **Windows 7** y versiones posteriores: la lista  desplegable Reloj de la página Activar o desactivar iconos del sistema de la aplicación Iconos de área de notificación **Panel de control** (también accesible a través de las propiedades del área de notificación). 
--   **Windows Vista:** **la** casilla Reloj de la página Área de **notificación** de la barra de tareas y la ventana de propiedades **del menú** Inicio.
--   **Windows XP:** la **casilla Mostrar el** reloj de la ventana Propiedades de la barra de tareas y **del menú** Inicio.
+-   **Windows 7** y versiones  posteriores: la lista  desplegable Reloj de la página Activar o desactivar iconos del sistema de la aplicación Iconos de área de notificación **Panel de control** (también accesible a través de las propiedades del área de notificación).
+-   **Windows Vista:** la casilla **Reloj** de la página Área de **notificación** de la barra de tareas y la ventana de propiedades **del menú** Inicio.
+-   **Windows XP:** la **casilla Mostrar el** reloj de la barra de **tareas y la ventana propiedades del menú** Inicio.
 
-El usuario puede hacer clic con el botón derecho en la barra de tareas para mostrar el menú contextual. El menú contextual incluye comandos para ventanas en cascada, ventanas de pila, mostrar ventanas en paralelo, mostrar el escritorio, iniciar Administrador de tareas y establecer las propiedades de la barra de tareas. El menú contextual también proporciona la opción de agregar o quitar un conjunto de barras de herramientas de la barra de tareas. Puede agregar nuevas barras de herramientas a este menú registrándolos en la categoría CATID \_ DeskBand. Para obtener más información, vea [Implementing Band Objects](band-objects.md). Tenga en cuenta que Windows 7, la barra de tareas y el área de notificación tienen menús contextuales independientes. Estos menús contextuales comparten algunas opciones, como la disposición de ventanas, y agregan otras.
+El usuario puede hacer clic con el botón derecho en la barra de tareas para mostrar el menú contextual. El menú contextual incluye comandos para ventanas en cascada, ventanas de pila, mostrar ventanas en paralelo, mostrar el escritorio, iniciar Administrador de tareas y establecer las propiedades de la barra de tareas. El menú contextual también proporciona la opción de agregar o quitar un conjunto de barras de herramientas de la barra de tareas. Puede agregar nuevas barras de herramientas a este menú registrándolos en la categoría CATID \_ DeskBand. Para obtener más información, vea [Implementar objetos de banda](band-objects.md). Tenga en cuenta que Windows 7, la barra de tareas y el área de notificación tienen menús contextuales independientes. Estos menús contextuales comparten algunas opciones, como la disposición de ventanas, y agregan otras.
 
 ### <a name="taskbar-display-options"></a>Opciones para mostrar de la barra de tareas
 
-La barra de tareas admite dos opciones de presentación: Ocultar automáticamente y, solo en Windows Vista y versiones anteriores, Always On Superior (la barra de tareas siempre está en este modo en Windows 7 y versiones posteriores). Para establecer estas opciones, el usuario debe abrir el menú contextual  de la barra de tareas,  hacer clic en Propiedades y activar o borrar la casilla Ocultar automáticamente la barra de tareas o mantener la barra de tareas encima de otras ventanas.  Para recuperar el estado de estas opciones de visualización, use el [**mensaje \_ GETSTATE de ABM.**](abm-getstate.md) Si desea recibir una notificación cuando cambie el estado de estas opciones de visualización, procese el mensaje de notificación [**\_ ABN STATECHANGE**](abn-statechange.md) en el procedimiento de la ventana. Para cambiar el estado de estas opciones de visualización, use el [**mensaje \_ SETSTATE de ABM.**](abm-setstate.md)
+La barra de tareas admite dos opciones de presentación: Ocultar automáticamente y, en Windows Vista y versiones anteriores solo, Always On Superior (la barra de tareas siempre está en este modo en Windows 7 y versiones posteriores). Para establecer estas opciones, el usuario debe abrir el menú contextual  de la barra de tareas,  hacer clic en Propiedades y activar o borrar la casilla Ocultar automáticamente la barra de tareas o mantener la barra de tareas encima de otras ventanas.  Para recuperar el estado de estas opciones de visualización, use el [**mensaje \_ GETSTATE de ABM.**](abm-getstate.md) Si desea recibir una notificación cuando cambie el estado de estas opciones de visualización, procese el mensaje de notificación [**\_ ABN STATECHANGE**](abn-statechange.md) en el procedimiento de la ventana. Para cambiar el estado de estas opciones de visualización, use el [**mensaje \_ SETSTATE de ABM.**](abm-setstate.md)
 
 El *área de trabajo* es la parte de la pantalla que la barra de tareas no oculta. Para recuperar el tamaño del área de trabajo, llame a la función [**SystemParametersInfo**](/windows/win32/api/winuser/nf-winuser-systemparametersinfoa) con el **valor \_ GETWORKAREA de SPI** establecido. Para recuperar las coordenadas del rectángulo que describen la ubicación de la barra de tareas, use el [**mensaje \_ GETTASKBARPOS de ABM.**](abm-gettaskbarpos.md)
 
-Es posible cubrir la barra de tareas estableciendo explícitamente el tamaño del rectángulo de ventana igual al tamaño de la pantalla [**con SetWindowPos**](/windows/win32/api/winuser/nf-winuser-setwindowpos). Para Windows 2000 sistemas o versiones posteriores, la ventana debe carecer de [**WS \_ CAPTION**](../winmsg/window-styles.md) o [**WS \_ THICKFRAME,**](../winmsg/window-styles.md)de lo contrario, la ventana debe tener un tamaño para que el área de cliente cubra toda la pantalla. Especialmente para esos sistemas, si la barra de tareas se establece en Always On Superior, permanecerá oculta solo mientras la aplicación sea la aplicación en primer plano.
+Es posible cubrir la barra de tareas estableciendo explícitamente el tamaño del rectángulo de la ventana igual al tamaño de la pantalla [**con SetWindowPos**](/windows/win32/api/winuser/nf-winuser-setwindowpos). Para Windows 2000 sistemas o versiones posteriores, la ventana debe carecer de [**WS \_ CAPTION**](../winmsg/window-styles.md) o [**WS \_ THICKFRAME,**](../winmsg/window-styles.md)o bien debe tener el tamaño de la ventana para que el área de cliente atrape toda la pantalla. Especialmente para esos sistemas, si la barra de tareas está establecida en Always On Superior, permanecerá oculta solo mientras la aplicación sea la aplicación en primer plano.
 
 ### <a name="adding-shortcuts-to-the-start-menu"></a>Agregar accesos directos al menú Inicio
 
@@ -102,43 +102,43 @@ Puede realizar las siguientes acciones con iconos de área de notificación.
 -   Para modificar la información de un icono, incluido su identificador de icono, texto de información sobre herramientas e identificador de mensaje de devolución de llamada, llame a [**Shell \_ NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) con *dwMessage* establecido en NIM \_ MODIFY.
 -   Para eliminar un icono del área de notificación, llame a [**Shell \_ NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) con el *parámetro dwMessage* establecido en NIM \_ DELETE.
 
-Cuando haya completado una operación de interfaz de usuario, devuelva el foco al área de notificación mediante una llamada a [**\_ Shell NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) con *dwMessage* establecido en NIM \_ SETFOCUS. Por ejemplo, podría hacerlo cuando un icono de la barra de tareas muestra un menú contextual, pero el usuario lo cancela presionando la tecla ESCAPE.
+Cuando haya completado una operación de interfaz de usuario, devuelva el foco al área de notificación mediante una llamada a [**Shell \_ NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) con *dwMessage* establecido en NIM \_ SETFOCUS. Por ejemplo, podría hacerlo cuando un icono de la barra de tareas muestra un menú contextual, pero el usuario lo cancela presionando la tecla ESCAPE.
 
 ### <a name="receiving-notification-area-callback-messages"></a>Recepción de mensajes de devolución de llamada del área de notificación
 
 Las aplicaciones normalmente coloca iconos en el área de notificación de la barra de tareas para que sirvan como indicadores de estado. Puede proporcionar información adicional cuando el usuario realiza acciones del mouse, como mover el puntero del mouse sobre el icono o hacer clic en el icono.
 
-El sistema le notifica los eventos del mouse y el teclado mediante el envío de un mensaje de devolución de llamada definido por la aplicación que está asociado a un icono determinado. De este modo, el sistema puede notificar a una aplicación cuando el usuario, por ejemplo, hace clic en el icono o la selecciona presionando una tecla.
+El sistema le notifica los eventos del mouse y el teclado mediante el envío de un mensaje de devolución de llamada definido por la aplicación que está asociado a un icono determinado. De este modo, el sistema puede notificar a una aplicación cuando el usuario, por ejemplo, hace clic en el icono o lo selecciona presionando una tecla.
 
-El mensaje de devolución de llamada de un icono se define al agregar el icono a la barra de tareas. El identificador del mensaje de devolución de llamada se especifica en el **miembro uCallbackMessage** de la estructura [**NOTIFYICONDATA**](/windows/desktop/api/Shellapi/ns-shellapi-notifyicondataa) pasada con NIM \_ ADD. Cuando se produce un evento, el sistema envía el mensaje de devolución de llamada al procedimiento de ventana de la ventana especificada por el **miembro hWnd.** El *parámetro wParam* del mensaje contiene el identificador del icono de la barra de tareas en el que se produjo el evento. El *parámetro lParam* contiene el mensaje del mouse o del teclado asociado al evento. Por ejemplo, cuando el puntero del mouse se mueve a un icono de la barra de tareas, *lParam* contiene [**WM \_ MOUSEMOVE**](../inputdev/wm-mousemove.md).
+El mensaje de devolución de llamada de un icono se define al agregar el icono a la barra de tareas. El identificador del mensaje de devolución de llamada se especifica en el **miembro uCallbackMessage** de la [**estructura NOTIFYICONDATA**](/windows/desktop/api/Shellapi/ns-shellapi-notifyicondataa) pasada con NIM \_ ADD. Cuando se produce un evento, el sistema envía el mensaje de devolución de llamada al procedimiento de ventana de la ventana especificada por el **miembro hWnd.** El *parámetro wParam* del mensaje contiene el identificador del icono de la barra de tareas en el que se produjo el evento. El *parámetro lParam* contiene el mensaje del mouse o del teclado asociado al evento. Por ejemplo, cuando el puntero del mouse se mueve a un icono de la barra de tareas, *lParam* contiene [**WM \_ MOUSEMOVE**](../inputdev/wm-mousemove.md).
 
 Los resultados de varios eventos del mouse se pueden resumir de la siguiente manera:
 
--   Cuando el usuario mueve el puntero del mouse sobre el icono, el sistema muestra el texto de información sobre herramientas especificado en [**NOTIFYICONDATA**](/windows/desktop/api/Shellapi/ns-shellapi-notifyicondataa).
+-   Cuando el usuario mueve el puntero del mouse sobre el icono, el sistema muestra el texto de información sobre herramientas que se especificó [**en NOTIFYICONDATA**](/windows/desktop/api/Shellapi/ns-shellapi-notifyicondataa).
 -   Cuando el usuario hace clic en el icono, la aplicación recibe una [**notificación \_ WM LBUTTONDOWN.**](../inputdev/wm-lbuttondown.md)
 -   Cuando el usuario hace clic con el botón derecho en el icono, la aplicación recibe una [**notificación \_ WM RBUTTONDOWN.**](../inputdev/wm-rbuttondown.md)
 -   Cuando el usuario hace doble clic en el icono, la aplicación recibe una notificación [**\_ WM LBUTTONDBLCLK.**](../inputdev/wm-lbuttondblclk.md)
 
 Normalmente, al hacer clic en el icono, la aplicación muestra una ventana con información adicional, al hacer clic con el botón derecho se muestra un menú contextual y al hacer doble clic se ejecuta el comando de menú contextual predeterminado.
 
-Para obtener un ejemplo de cómo cambiar el texto de información sobre herramientas asociado a un icono de área de notificación, vea Información sobre [herramientas de globo para iconos de barra de estado](../controls/tooltip-controls.md).
+Para obtener un ejemplo de cómo cambiar el texto de información sobre herramientas asociado a un icono de área de notificación, vea Información sobre herramientas [de globo para iconos de barra de estado.](../controls/tooltip-controls.md)
 
-Las versiones 5.0 y posteriores del shell controlan los eventos de mouse y teclado [**de Shell \_ NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) de maneras diferentes a las versiones anteriores de Shell encontradas en Windows NT 4.0, Windows 95 y Windows 98. Las diferencias son las siguientes:
+Las versiones 5.0 y posteriores del shell controlan eventos de mouse y teclado [**de Shell \_ NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) de maneras diferentes a las versiones anteriores de Shell encontradas en Windows NT 4.0, Windows 95 y Windows 98. Las diferencias son las siguientes:
 
--   Si un usuario solicita un menú contextual del icono de notificación con el teclado, el Shell de la versión 5.0 envía a la aplicación asociada un mensaje [**\_ CONTEXTMENU de WM.**](../menurc/wm-contextmenu.md) Las versiones anteriores envían [**mensajes \_ WM RBUTTONDOWN**](../inputdev/wm-rbuttondown.md) y [**WM \_ RBUTTONUP.**](../inputdev/wm-rbuttonup.md)
--   Si un usuario selecciona un icono de notificación con el teclado y lo activa con la barra espaciador o la tecla ENTRAR, el shell de la versión 5.0 envía a la aplicación asociada una notificación **NIN \_ KEYSELECT.** Las versiones anteriores envían [**mensajes \_ WM RBUTTONDOWN**](../inputdev/wm-rbuttondown.md) y [**WM \_ RBUTTONUP.**](../inputdev/wm-rbuttonup.md)
--   Si un usuario selecciona un icono de notificación con el mouse y lo activa con la clave ENTRAR, el Shell de la versión 5.0 envía a la aplicación asociada una **notificación NIN \_ SELECT.** Las versiones anteriores envían [**mensajes \_ WM RBUTTONDOWN**](../inputdev/wm-rbuttondown.md) y [**WM \_ RBUTTONUP.**](../inputdev/wm-rbuttonup.md)
+-   Si un usuario solicita un menú contextual del icono de notificación con el teclado, el Shell de la versión 5.0 envía a la aplicación asociada un [**mensaje \_ CONTEXTMENU de WM.**](../menurc/wm-contextmenu.md) Las versiones anteriores envían [**mensajes \_ WM RBUTTONDOWN**](../inputdev/wm-rbuttondown.md) [**y WM \_ RBUTTONUP.**](../inputdev/wm-rbuttonup.md)
+-   Si un usuario selecciona un icono de notificación con el teclado y lo activa con la barra espaciador o la tecla ENTRAR, el Shell de la versión 5.0 envía a la aplicación asociada una notificación **NIN \_ KEYSELECT.** Las versiones anteriores envían [**mensajes \_ WM RBUTTONDOWN**](../inputdev/wm-rbuttondown.md) [**y WM \_ RBUTTONUP.**](../inputdev/wm-rbuttonup.md)
+-   Si un usuario selecciona un icono de notificación con el mouse y lo activa con la clave ENTRAR, el shell de la versión 5.0 envía a la aplicación asociada una **notificación NIN \_ SELECT.** Las versiones anteriores envían [**mensajes \_ WM RBUTTONDOWN**](../inputdev/wm-rbuttondown.md) [**y WM \_ RBUTTONUP.**](../inputdev/wm-rbuttonup.md)
 -   Si un usuario pasa el puntero del mouse sobre un icono al que está asociada la información sobre herramientas de un globo, el shell de la versión 6.0 (Windows XP) envía los mensajes siguientes.
     -   -   **NIN \_ BALLOONSHOW:** se envía cuando se muestra el globo (los globos se ponen en cola).
-        -   **NIN \_ BALLOONHIDE:** se envía cuando desaparece el globo, por ejemplo, cuando se elimina el icono. Este mensaje no se envía si el globo se descarta debido a un tiempo de espera o a un clic del mouse.
+        -   **NIN \_ BALLOONHIDE:** se envía cuando el globo desaparece, por ejemplo, cuando se elimina el icono. Este mensaje no se envía si el globo se descarta debido a un tiempo de espera o a un clic del mouse.
         -   **NIN \_ BALLOONTIMEOUT:** se envía cuando se descarta el globo debido a un tiempo de espera.
         -   **NIN \_ BALLOONUSERCLICK:** se envía cuando se descarta el globo debido a un clic del mouse.
 
-Puede seleccionar la forma en que se debe comportar el Shell llamando a [**\_ Shell NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) con *dwMessage* establecido en **NIM \_ SETVERSION**. Establezca el **miembro uVersion** de la estructura [**NOTIFYICONDATA**](/windows/desktop/api/Shellapi/ns-shellapi-notifyicondataa) para indicar si desea un comportamiento de la versión 5.0 o anterior a la 5.0.
+Puede seleccionar la forma en que se debe comportar el shell llamando a [**\_ Shell NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) con *dwMessage* establecido en **NIM \_ SETVERSION.** Establezca el **miembro uVersion** de la estructura [**NOTIFYICONDATA**](/windows/desktop/api/Shellapi/ns-shellapi-notifyicondataa) para indicar si desea un comportamiento de la versión 5.0 o anterior a la 5.0.
 
 ### <a name="taskbar-creation-notification"></a>Notificación de creación de la barra de tareas
 
-Con Microsoft Internet Explorer 4.0 y versiones posteriores, shell notifica a las aplicaciones que se ha creado la barra de tareas. Cuando se crea la barra de tareas, registra un mensaje con la cadena TaskbarCreated y, a continuación, difunde este mensaje a todas las ventanas de nivel superior. Cuando la aplicación de la barra de tareas recibe este mensaje, debe suponer que se han quitado los iconos de la barra de tareas que agregó y agregarlos de nuevo. Por lo general, esta característica solo se aplica a los servicios que ya se están ejecutando cuando se inicia el shell. En el ejemplo siguiente se muestra un método muy simplificado para controlar este caso.
+Con Microsoft Internet Explorer 4.0 y versiones posteriores, shell notifica a las aplicaciones que se ha creado la barra de tareas. Cuando se crea la barra de tareas, registra un mensaje con la cadena TaskbarCreated y, a continuación, difunde este mensaje a todas las ventanas de nivel superior. Cuando la aplicación de la barra de tareas recibe este mensaje, debe suponer que se han quitado todos los iconos de la barra de tareas que agregó y agregarlos de nuevo. Por lo general, esta característica solo se aplica a los servicios que ya se están ejecutando cuando se inicia el shell. En el ejemplo siguiente se muestra un método muy simplificado para controlar este caso.
 
 En Windows 10, la barra de tareas también difunde este mensaje cuando cambia el valor de PPP de la pantalla principal.
 
@@ -174,7 +174,7 @@ En esta sección se incluyen ejemplos que muestran cómo agregar iconos al área
 
 ### <a name="adding-and-deleting-taskbar-icons-in-the-notification-area"></a>Agregar y eliminar iconos de la barra de tareas en el área de notificación
 
-Para agregar un icono al área de notificación de la barra de tareas, rellene una estructura [**NOTIFYICONDATA**](/windows/desktop/api/Shellapi/ns-shellapi-notifyicondataa) y, a continuación, pase la estructura a [**\_ Shell NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) con *dwMessage* establecido en **NIM \_ ADD**. Los miembros de la estructura deben especificar el identificador de la ventana que agrega el icono, así como el identificador de icono y el identificador de icono. También puede especificar texto de información sobre herramientas para el icono. Si necesita recibir mensajes del mouse para el icono, especifique el identificador del mensaje de devolución de llamada que el sistema debe usar para enviar el mensaje al procedimiento de ventana.
+Agregue un icono al área de notificación de la barra de tareas rellenando una estructura [**NOTIFYICONDATA**](/windows/desktop/api/Shellapi/ns-shellapi-notifyicondataa) y, a continuación, pasando la estructura a [**Shell \_ NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) con *dwMessage* establecido en **NIM \_ ADD**. Los miembros de la estructura deben especificar el identificador de la ventana que agrega el icono, así como el identificador de icono y el identificador de icono. También puede especificar texto de información sobre herramientas para el icono. Si necesita recibir mensajes del mouse para el icono, especifique el identificador del mensaje de devolución de llamada que el sistema debe usar para enviar el mensaje al procedimiento de ventana.
 
 La función del ejemplo siguiente muestra cómo agregar un icono a la barra de tareas.
 
@@ -216,7 +216,7 @@ BOOL MyTaskBarAddIcon(HWND hwnd, UINT uID, HICON hicon, LPSTR lpszTip)
 
 
 
-Para eliminar un icono del área de notificación de la barra de tareas, rellene una estructura [**NOTIFYICONDATA**](/windows/desktop/api/Shellapi/ns-shellapi-notifyicondataa) y llame a [**Shell \_ NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) con *dwMessage* establecido en **NIM \_ DELETE**. Al eliminar un icono de barra de tareas, especifique solo los **miembros cbSize**, **hWnd** y **uID** de la estructura. Por ejemplo:
+Para eliminar un icono del área de notificación de la barra de tareas, rellene una estructura [**NOTIFYICONDATA**](/windows/desktop/api/Shellapi/ns-shellapi-notifyicondataa) y llame a [**Shell \_ NotifyIcon**](/windows/desktop/api/Shellapi/nf-shellapi-shell_notifyicona) *con dwMessage* establecido en **NIM \_ DELETE**. Al eliminar un icono de la barra de tareas, especifique solo los miembros **cbSize**, **hWnd** y **uID** de la estructura. Por ejemplo:
 
 
 ```

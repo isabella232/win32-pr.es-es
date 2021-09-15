@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8674ecbf7951ca0c208f9ffb50c0e5d9591b16552fda266c7d641905edd09a4a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cd2b894bf78163a7b2d2387e43ecb5cec76ffdf4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120052195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474002"
 ---
 # <a name="cbasevideorenderernotify-method"></a>CBaseVideoRenderer.Notify (método)
 
@@ -61,11 +61,11 @@ Estructura de notificación de calidad.
 
 Devuelve un **valor HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta función miembro implementa el [**método IQualityControl::Notify**](/windows/desktop/api/Strmif/nf-strmif-iqualitycontrol-notify) en el representador de vídeo. Esto se llama, normalmente mediante el administrador de gráficos de filtros, cuando se debe reducir la calidad. Esto puede ocurrir cuando se ha aumentado la calidad de la reproducción de audio hasta el punto de que se debe reducir la calidad de reproducción de vídeo.
+Esta función miembro implementa el método [**IQualityControl::Notify**](/windows/desktop/api/Strmif/nf-strmif-iqualitycontrol-notify) en el representador de vídeo. Esto se llama, normalmente por el administrador de gráficos de filtro, cuando se debe reducir la calidad. Esto puede ocurrir cuando se ha aumentado la calidad de reproducción de audio hasta el punto de que se debe reducir la calidad de reproducción de vídeo.
 
-`Notify`establece el **miembro de datos m \_ trThrottle** en un valor de retraso que throttleWait va a insertar [**entre fotogramas.**](cbasevideorenderer-throttlewait.md)
+`Notify` establece el **miembro de datos m \_ trThrottle** en un valor de retraso que [**throttleWait**](cbasevideorenderer-throttlewait.md)va a insertar entre fotogramas.
 
 ## <a name="requirements"></a>Requisitos
 

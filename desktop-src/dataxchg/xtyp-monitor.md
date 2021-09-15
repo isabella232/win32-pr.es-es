@@ -1,6 +1,6 @@
 ---
 title: XTYP_MONITOR transacción (Ddeml.h)
-description: La datos dinámicos Exchange de devolución de llamada DDE de un depurador de datos dinámicos Exchange (DDE), DdeCallback, recibe la transacción monitor de XTYP cada vez que se produce un evento DDE en \_ el sistema.
+description: La función de devolución de llamada DDE de un depurador de datos dinámicos Exchange (DDE), DdeCallback, recibe la transacción monitor de XTYP cada vez que se produce un evento DDE en el \_ sistema.
 ms.assetid: a27791b1-c1b4-4516-b050-71da164fa80a
 keywords:
 - XTYP_MONITOR datos de transacción Exchange
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 11a86235c2964bbd09d51ce3adc2e602e23fed09597df14721e92e76c0cd8109
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6a1cb86a1cbf7e0c02c082719e0a7d302d03975
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119047263"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474516"
 ---
-# <a name="xtyp_monitor-transaction"></a>Transacción monitor de XTYP \_
+# <a name="xtyp_monitor-transaction"></a>Transacción XTYP \_ MONITOR
 
-La datos dinámicos Exchange de devolución de llamada DDE de un depurador de datos dinámicos Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe la transacción monitor de **\_ XTYP** cada vez que se produce un evento DDE en el sistema. Para recibir esta transacción, una aplicación debe especificar el valor **\_ MONITOR de APPCLASS** cuando llama a la [**función DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
+La función de devolución de llamada DDE de un depurador de datos dinámicos Exchange (DDE), [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recibe la transacción monitor de **\_ XTYP** cada vez que se produce un evento DDE en el sistema. Para recibir esta transacción, una aplicación debe especificar el **valor \_ MONITOR de APPCLASS** cuando llama a la [**función DdeInitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeinitializea)
 
 
 ```C++
@@ -48,28 +48,28 @@ El tipo de transacción.
 *uFmt* 
 </dt> <dd>
 
-No se usa.
+No se utiliza.
 
 </dd> <dt>
 
 *hconv* 
 </dt> <dd>
 
-No se usa.
+No se utiliza.
 
 </dd> <dt>
 
 *hsz1* 
 </dt> <dd>
 
-No se usa.
+No se utiliza.
 
 </dd> <dt>
 
 *hsz2* 
 </dt> <dd>
 
-No se usa.
+No se utiliza.
 
 </dd> <dt>
 
@@ -83,7 +83,7 @@ Identificador de un objeto DDE que contiene información sobre el evento DDE. La
 *dwData1* 
 </dt> <dd>
 
-No se usa.
+No se utiliza.
 
 </dd> <dt>
 
@@ -101,7 +101,7 @@ Evento DDE. Este parámetro puede ser uno de los valores siguientes.
 | <span id="MF_ERRORS"></span><span id="mf_errors"></span><dl> <dt>**MF \_ ERRORES**</dt> <dt>0x10000000</dt> </dl>          | Se produjo un error DDE. El objeto DDE contiene una [**estructura MONERRSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monerrstruct) que proporciona información sobre el error.<br/>                                                                                                                                                                                       |
 | <span id="MF_HSZ_INFO"></span><span id="mf_hsz_info"></span><dl> <dt>**MF \_ HSZ \_ INFO**</dt> <dt>0x01000000</dt> </dl>   | Una aplicación DDE creó, libera o incrementó el recuento de uso de un identificador de cadena, o bien se libera un identificador de cadena como resultado de una llamada a la función [**DdeUninitialize.**](/windows/desktop/api/Ddeml/nf-ddeml-ddeuninitialize) El objeto DDE contiene una [**estructura MONHSZSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monhszstructa) que proporciona información sobre el identificador de cadena.<br/> |
 | <span id="MF_LINKS"></span><span id="mf_links"></span><dl> <dt>**MF \_ Vínculos**</dt> <dt>0x20000000</dt> </dl>             | Una aplicación DDE inició o detuvo un bucle de aviso. El objeto DDE contiene una [**estructura MONLINKSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monlinkstruct) que proporciona información sobre el bucle advise.<br/>                                                                                                                                                |
-| <span id="MF_POSTMSGS"></span><span id="mf_postmsgs"></span><dl> <dt>**MF \_ 0x04000000 POSTMSGS**</dt> <dt></dt> </dl>    | El sistema o una aplicación publicaron un mensaje DDE. El objeto DDE contiene una [**estructura MONMSGSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monmsgstruct) que proporciona información sobre el mensaje.<br/>                                                                                                                                                        |
+| <span id="MF_POSTMSGS"></span><span id="mf_postmsgs"></span><dl> <dt>**MF \_ PostMSGS**</dt> <dt>0x04000000</dt> </dl>    | El sistema o una aplicación publicaron un mensaje DDE. El objeto DDE contiene una [**estructura MONMSGSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monmsgstruct) que proporciona información sobre el mensaje.<br/>                                                                                                                                                        |
 | <span id="MF_SENDMSGS"></span><span id="mf_sendmsgs"></span><dl> <dt>**MF \_ SendMSGS**</dt> <dt>0x02000000</dt> </dl>    | El sistema o una aplicación enviaron un mensaje DDE. El objeto DDE contiene una [**estructura MONMSGSTRUCT**](/windows/win32/api/ddeml/ns-ddeml-monmsgstruct) que proporciona información sobre el mensaje.<br/>                                                                                                                                                          |
 
 

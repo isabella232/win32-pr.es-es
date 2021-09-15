@@ -14,13 +14,13 @@ topic_type:
 - APIRef
 - kbSyntax
 ms.openlocfilehash: 612b43c193cd1919db4a5cf9dba3a8fdba1c81c7
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086613"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571513"
 ---
-# <a name="smc_getsfobject-message"></a>Mensaje \_ DE SMC GETSFOBJECT
+# <a name="smc_getsfobject-message"></a>Mensaje \_ GETSFOBJECT de SMC
 
 Solicita un puntero a un objeto especificado.
 
@@ -56,7 +56,7 @@ Puntero void que recibe un puntero a la interfaz solicitada.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El método [**IShellMenuCallback::CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación. Es similar a [**SMC \_ GETOBJECT, pero**](smc-getobject.md) se usa para los elementos de carpeta de Shell. Cree el objeto solicitado y asigne un puntero a la interfaz solicitada a *pv*.
 
@@ -70,12 +70,12 @@ Se pueden solicitar las interfaces siguientes.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
 | Encabezado<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

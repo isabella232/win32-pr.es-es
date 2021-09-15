@@ -4,12 +4,12 @@ ms.assetid: c3cebb9d-9094-493f-96d3-763a0c282dfb
 title: Proveedores de servicios de seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b53353dc9ed3236ccca5d9a345053870151a7b79e004c5e2ea69e39944209b5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b2121940337d0f4e06c53981cf30f0125180c466
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118612158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473656"
 ---
 # <a name="security-service-providers"></a>Proveedores de servicios de seguridad
 

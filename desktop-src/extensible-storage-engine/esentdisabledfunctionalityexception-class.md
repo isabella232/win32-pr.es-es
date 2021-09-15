@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f7f4200a437842900e369680b2e515edf6ad5b5007d38e30529c479a7040815c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 67ec4458b1306f11240f2090403dcc6ae4c7db07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117901456"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474395"
 ---
 # <a name="esentdisabledfunctionalityexception-class"></a>Clase EsentDisabledFunctionalityException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones DisabledFunctionality.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

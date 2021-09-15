@@ -4,12 +4,12 @@ ms.assetid: 67143f6f-0bb8-4740-9289-8bbfeb7caadf
 title: Restaurar copias de seguridad incrementales y diferenciales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fcc0c2df57e2f7c0f21436248ddaa46231c7bf6440c76a38f4d1c92ab2adf97f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 639919ea24f12fbc036116bd89b1630321cbae54
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119864055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474588"
 ---
 # <a name="restoring-incremental-and-differential-backups"></a>Restaurar copias de seguridad incrementales y diferenciales
 

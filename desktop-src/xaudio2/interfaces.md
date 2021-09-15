@@ -4,12 +4,12 @@ description: Esta sección contiene información sobre las interfaces proporcion
 ms.assetid: 96691e00-9ed0-b31c-fbe9-4daaba0daf98
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c6fbf50cd4913f1d66e82c1791777777a639a1d8c6bd7e9b08f41be35af5c0bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a2d9f2c777a7b98c5cbc78a130c0a1431be5971d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119926435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571944"
 ---
 # <a name="xaudio2-interfaces"></a>Interfaces XAudio2
 
@@ -27,7 +27,7 @@ Esta sección contiene información sobre las interfaces proporcionadas por la A
 | [**IXAudio2SubmixVoice**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2submixvoice)<br/>       | Una voz de submezcla se usa principalmente para las mejoras de rendimiento y el procesamiento de efectos. <br/>                                                                                                                                                                                                                                        |
 | [**IXAudio2MasteringVoice**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2masteringvoice)<br/> | Se usa una voz maestra para representar el dispositivo de salida de audio.<br/>                                                                                                                                                                                                                                                               |
 | [**IXAudio2EngineCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2enginecallback)<br/> | La interfaz IXAudio2EngineCallback contiene métodos que notifican al cliente cuándo se suceden determinados eventos en el [**motor IXAudio2.**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2)<br/>                                                                                                                                                                           |
-| [**IXAudio2VoiceCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2voicecallback)<br/>   | La [**interfaz IXAudio2VoiceCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2voicecallback) contiene métodos que notifican al cliente cuando se suceden determinados eventos en un [**IXAudio2SourceVoice determinado.**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2sourcevoice) <br/>                                                                                                                       |
+| [**IXAudio2VoiceCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2voicecallback)<br/>   | La [**interfaz IXAudio2VoiceCallback**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2voicecallback) contiene métodos que notifican al cliente cuándo se suceden determinados eventos en un [**IXAudio2SourceVoice determinado.**](/windows/desktop/api/xaudio2/nn-xaudio2-ixaudio2sourcevoice) <br/>                                                                                                                       |
 | [**IXAPO**](/windows/desktop/api/XAPO/nn-xapo-ixapo)<br/>                                   | Interfaz de un objeto de procesamiento de audio que se usa en una cadena de efectos XAudio2.<br/>                                                                                                                                                                                                                                        |
 | [**IXAPOParameters**](/windows/desktop/api/XAPO/nn-xapo-ixapoparameters)<br/>               | Interfaz opcional que permite que un XAPO use parámetros específicos del efecto.<br/>                                                                                                                                                                                                                                                  |
 | [**IXAPOHrtfParameters**](/windows/win32/api/hrtfapoapi/nn-hrtfapoapi-ixapohrtfparameters)<br/>       | Interfaz que se usa para establecer parámetros que controlan cómo se aplica la función de transferencia relacionada con la cabeza (HRTF) a un sonido.<br/>                                                                                                                                                                                                            |

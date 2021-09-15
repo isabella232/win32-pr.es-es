@@ -13,11 +13,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: c5d0a171c6768caf1b947a0d07cb46e5cccd28c6
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369892"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473896"
 ---
 # <a name="list-command"></a>Comando list
 
@@ -49,14 +49,14 @@ Identificador de un dispositivo MCI. Este identificador o alias se asigna cuando
 <span id="lpszList"></span><span id="lpszlist"></span><span id="LPSZLIST"></span>*lpszList*
 </dt> <dd>
 
-Marca que identifica el número y los tipos de entradas de vídeo y audio. En la tabla siguiente se enumeran los tipos de dispositivo que reconocen el comando **list** y las marcas usadas por cada tipo.
+Marca que identifica el número y los tipos de entradas de audio y vídeo. En la tabla siguiente se enumeran los tipos de dispositivo que reconocen el comando **list** y las marcas usadas por cada tipo.
 
 
 
 | Value        | Significado                                                                           | Significado                                                                                                                      |
 |--------------|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| digitalvideo | audio algorithmaudio quality *algorithm* audio streamcountnumber *index* | still algorithmstil quality *algorithm* video algorithmvideo quality algorithm *video sourcevideo* stream |
-| Vcr          | índice de número de origen countaudio de origen de *audio*                                     | recuento de orígenes de vídeo índice de número de origen de *vídeo*                                                                                |
+| digitalvideo | audio algorithmaudio quality algorithm *audio* streamcountnumber *index* | still algorithmstil algorithm video algorithm *video* algorithmvideo quality *algorithm video* sourcevideo stream |
+| Vcr          | audio source countaudio source number *index*                                     | recuento de orígenes de vídeo Índice de número de origen de *vídeo*                                                                                |
 
 
 
@@ -74,15 +74,15 @@ En la tabla siguiente se enumeran las marcas que se pueden especificar en el **p
 | índice de número de origen *de audio*         | Devuelve el tipo de entrada de audio del índice de *origen.*                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | secuencia de audio                        | Especifica que el comando debe recuperar los nombres de las secuencias de audio asociadas al área de trabajo. Estas cadenas (como "Inglés" o "Alemán") se incrustan en el archivo e identifican la secuencia.                                                                                                                                                                                                                                                                                    |
 | count                               | Devuelve el número de opciones del tipo especificado.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| number *index*                      | Devuelve una cadena que describe una opción específica (identificada por *el índice*) del tipo de opción especificado. *El* índice debe ser un entero entre 1 y el valor devuelto por "count".                                                                                                                                                                                                                                                                                                         |
+| number *index*                      | Devuelve una cadena que describe una opción específica (identificada por *el índice)* del tipo de opción especificado. *Index* debe ser un entero entre 1 y el valor devuelto por "count".                                                                                                                                                                                                                                                                                                         |
 | algoritmo still                     | Especifica que el comando debe recuperar nombres de algoritmos todavía.                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| algoritmo de calidad *todavía* | Especifica que el comando debe recuperar los niveles de calidad asociados al algoritmo todavía *especificado.* Si *el* algoritmo es "actual", se devuelve el nivel de calidad del algoritmo actual.                                                                                                                                                                                                                                                                                             |
+| algoritmo de calidad *todavía* | Especifica que el comando debe recuperar los niveles de calidad asociados al algoritmo still *especificado.* Si *el* algoritmo es "actual", se devuelve el nivel de calidad del algoritmo actual.                                                                                                                                                                                                                                                                                             |
 | algoritmo de vídeo                     | Especifica que el comando debe recuperar nombres de algoritmos de vídeo.                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| algoritmo de calidad de *vídeo* | Especifica que el comando debe recuperar los niveles de calidad asociados al algoritmo de vídeo *especificado.* Si *el* algoritmo es "actual", se devuelve el nivel de calidad del algoritmo actual.                                                                                                                                                                                                                                                                                             |
+| algoritmo de calidad de *vídeo* | Especifica que el comando debe recuperar los niveles de calidad asociados al algoritmo de *vídeo especificado.* Si *el* algoritmo es "actual", se devuelve el nivel de calidad del algoritmo actual.                                                                                                                                                                                                                                                                                             |
 | origen de vídeo                        | Especifica que el comando debe devolver información sobre los orígenes de vídeo. Cuando se usa con la marca "count", devuelve el número de orígenes de vídeo. Cuando se usa con la marca "number", devuelve el tipo de un origen de vídeo. MCI define las siguientes constantes para el tipo: "cide", "rgb", "pal", "secam", "svideo" y "generic". Puede haber más de un origen de cada tipo devuelto. El tipo de origen "genérico" se usa cuando se permite más de una señal para ese conector. |
 | recuento de orígenes de vídeo                  | Devuelve el número total de entradas de vídeo.                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| índice de número de origen de *vídeo*         | Devuelve el tipo de entrada de vídeo del índice de *origen*.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| secuencia de vídeo                        | Especifica que el comando debe recuperar los nombres de las secuencias de vídeo asociadas al área de trabajo. Estas cadenas (como "final inesperado" o "final lamentablemente") se insertan en el archivo e identifican la secuencia.                                                                                                                                                                                                                                                                               |
+| índice de número de origen de *vídeo*         | Devuelve el tipo de entrada de vídeo del índice de *origen.*                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| secuencia de vídeo                        | Especifica que el comando debe recuperar los nombres de las secuencias de vídeo asociadas al área de trabajo. Estas cadenas (por ejemplo, "final desastados" o "final desastados") se incrustan en el archivo e identifican la secuencia.                                                                                                                                                                                                                                                                               |
 
 
 
@@ -99,11 +99,11 @@ Puede ser "wait", "notify" o "test". Para obtener más información sobre estas 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="remarks"></a>Observaciones
 
-En el caso de los dispositivos VCR, se debe especificar "origen de vídeo" o "origen de audio" con las marcas "count" o "number". Si se especifica "count", se devuelve el número total de entradas de vídeo o audio. Si se especifica "number", el controlador devuelve un tipo correspondiente a la entrada. El tipo puede ser cualquiera de los siguientes: "tuner", "line", "svideo", "aux" o "generic". Normalmente, primero debe consultar el VCR para el "recuento" y, a continuación, usar el recuento como intervalo para la marca "number". Los números de "origen" comienzan en 1.
+En el caso de los dispositivos VCR, se debe especificar "origen de vídeo" o "origen de audio" con las marcas "count" o "number". Si se especifica "count", se devuelve el número total de entradas de vídeo o audio. Si se especifica "number", el controlador devuelve un tipo correspondiente a la entrada. El tipo puede ser cualquiera de los siguientes: "tuner", "line", "svideo", "aux" o "generic". Normalmente, primero debe consultar el vcr para el "recuento" y, a continuación, usar el recuento como intervalo para la marca "number". Los números de "origen" comienzan a partir de 1.
 
 ## <a name="requirements"></a>Requisitos
 

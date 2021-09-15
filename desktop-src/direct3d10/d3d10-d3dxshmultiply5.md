@@ -1,5 +1,5 @@
 ---
-description: Calcula el producto de dos funciones de armónicas esféricas (f y g). Ambas funciones tienen el orden N = 5.
+description: Calcula el producto de dos funciones armónicas esféricas (f y g). Ambas funciones son del orden N = 5.
 ms.assetid: c72231a1-9db3-4701-b7ad-4509028ce508
 title: Función D3DXSHMultiply5 (D3DX10Math.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: a022fa883a1b1e809f965ec94813741a285447e9f6935c1adca370b5aef6c061
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b43fb89bdd5d6f75a4adca86323786d4a2bddac1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118990775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474506"
 ---
 # <a name="d3dxshmultiply5-function"></a>Función D3DXSHMultiply5
 
-Calcula el producto de dos funciones de armónicas esféricas (f y g). Ambas funciones tienen el orden N = 5.
+Calcula el producto de dos funciones armónicas esféricas (f y g). Ambas funciones son del orden N = 5.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ FLOAT* D3DXSHMultiply5(
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Puntero a los coeficientes sh de salida: la función base *Y* lm se almacena en *l* ntes + *m* + l. El orden N determina la longitud de la matriz, donde siempre debe haber *N* coeficientes mientos.
+Puntero a los coeficientes SH de salida: la función base *Y* lm se almacena en *l* miento + *m* + l. El orden N determina la longitud de la matriz, donde siempre debe haber *N* coeficientes ntes.
 
 </dd> <dt>
 
@@ -56,7 +56,7 @@ Puntero a los coeficientes sh de salida: la función base *Y* lm se almacena en 
 
 Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Coeficientes sh de entrada para la primera función.
+Coeficientes SH de entrada para la primera función.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Coeficientes sh de entrada para la primera función.
 
 Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Segundo conjunto de coeficientes sh de entrada.
+Segundo conjunto de coeficientes SH de entrada.
 
 </dd> </dl>
 
@@ -75,11 +75,11 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
 Puntero a coeficientes de salida sh.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El producto de dos funciones SH del orden N = 5 genera una función SH del orden 2 × *N* - 1 = 9, pero los resultados se truncan. Esto significa que el producto se desplaza ( *f* × *g* g × f ) pero no se asocia  =   ( *f* × ( *g* × *h* ) ≠ ( *f* × *g* ) × *h* ). 
+El producto de dos funciones SH del orden N = 5 genera una función SH del orden 2 × *N* - 1 = 9, pero los resultados se truncan. Esto significa que el producto conmuta ( *f* × *g g*× f ) pero no asocia (  =   *f* × ( *g* × *h* ) ≠ ( *f* × *g* ) × *h* ). 
 
-Esta función usa la ecuación siguiente:
+Esta función usa la siguiente ecuación:
 
 
 ```

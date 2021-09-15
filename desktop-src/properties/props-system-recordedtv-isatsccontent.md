@@ -5,11 +5,11 @@ title: System.RecordedTV.IsATSCContent
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f2d7b37055c55aced24db2b9ecdfaf3e4bdf7dec
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091733"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572613"
 ---
 # <a name="systemrecordedtvisatsccontent"></a>System.RecordedTV.IsATSCContent
 
@@ -42,7 +42,7 @@ propertyDescription
       type = Boolean
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

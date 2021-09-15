@@ -5,15 +5,15 @@ ms.assetid: 69d50793-1d5b-4fc7-bf69-128f8e23a98d
 keywords:
 - Servicios web del escritor XML para Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a75b7937ac6d8f6e9daff40289dd34729eaf235f203a02b91b5d1af3632049b2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 085a02b3aca33ffa3b31e4579d47068a683ee4d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119026063"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571961"
 ---
 # <a name="xml-writer"></a>Escritor XML
 
@@ -29,7 +29,7 @@ Se admiten los siguientes tipos de salida de escritor:
 Las devoluciones de llamada siguientes se usan con el sistema de escritura XML:
 
 -   [**WS \_ DYNAMIC \_ STRING \_ CALLBACK**](/windows/desktop/api/WebServices/nc-webservices-ws_dynamic_string_callback)
--   [**WS \_ PULL \_ BYTES \_ CALLBACK**](/windows/desktop/api/WebServices/nc-webservices-ws_pull_bytes_callback)
+-   [**DEVOLUCIÓN DE LLAMADA \_ \_ DE BYTES DE \_ EXTRACCIÓN DE WS**](/windows/desktop/api/WebServices/nc-webservices-ws_pull_bytes_callback)
 -   [**WS \_ PUSH \_ BYTES \_ CALLBACK**](/windows/desktop/api/WebServices/nc-webservices-ws_push_bytes_callback)
 -   [**WS \_ WRITE \_ CALLBACK**](/windows/desktop/api/WebServices/nc-webservices-ws_write_callback)
 

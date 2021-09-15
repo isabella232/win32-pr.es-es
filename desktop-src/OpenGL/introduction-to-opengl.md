@@ -6,12 +6,12 @@ keywords:
 - OpenGL,introduction
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa30507db7d7994fe9bf88d6b056d48ee0266b9e7f4959d82a31134a9c3ce5dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0cece636e51348288e587116bf13f95696b93ab9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120035025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473669"
 ---
 # <a name="introduction-to-opengl"></a>Introducción a OpenGL
 
@@ -19,11 +19,11 @@ Como interfaz de software para hardware gráfico, el propósito principal de Ope
 
 Los temas siguientes presentan una vista global de cómo funciona OpenGL:
 
--   [Primitivos y comandos describe](primitives-and-commands.md) puntos, segmentos de línea y polígonos como unidades básicas de dibujo; y el procesamiento de comandos.
+-   [Primitives and Commands](primitives-and-commands.md) describe puntos, segmentos de línea y polígonos como unidades básicas de dibujo. y el procesamiento de comandos.
 -   [OpenGL Graphic Control](opengl-graphic-control.md) describe qué operaciones gráficas controla OpenGL y cuáles no.
--   [Modelo de](execution-model.md) ejecución describe el modelo de cliente/servidor para interpretar comandos OpenGL.
--   [Basic OpenGL Operation (Operación](basic-opengl-operation.md) básica de OpenGL) proporciona una descripción general de cómo OpenGL procesa los datos para generar una imagen correspondiente en el búfer de fotogramas.
--   [OpenGL Function Names](opengl-function-names.md) describe las convenciones de nomenclatura usadas en OpenGL.
+-   [Modelo de](execution-model.md) ejecución describe el modelo cliente/servidor para interpretar comandos OpenGL.
+-   [Basic OpenGL Operation (Operación](basic-opengl-operation.md) básica de OpenGL) proporciona una descripción de alto nivel de cómo OpenGL procesa los datos para generar una imagen correspondiente en el búfer de fotogramas.
+-   [En Nombres de función openGL](opengl-function-names.md) se describen las convenciones de nomenclatura que se usan en OpenGL.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -38,7 +38,7 @@ Los temas siguientes presentan una vista global de cómo funciona OpenGL:
 [Realización de la selección y los comentarios](performing-selection-and-feedback.md)
 </dt> <dt>
 
-[Uso de listas para mostrar](using-display-lists.md)
+[Usar listas para mostrar](using-display-lists.md)
 </dt> <dt>
 
 [Administración de modos y ejecución](managing-modes-and-execution.md)

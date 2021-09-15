@@ -1,19 +1,19 @@
 ---
-description: En esta sección se muestra cómo usar funciones de forma rellena. En el ejemplo se usa el procedimiento de ventana principal de una aplicación que permite al usuario dibujar elipses, rectángulos y rectángulos con esquinas redondeadas.
+description: En esta sección se muestra cómo usar funciones de forma rellenada. En el ejemplo se usa el procedimiento de ventana principal de una aplicación que permite al usuario dibujar puntos suspensivos, rectángulos y rectángulos con esquinas redondeadas.
 ms.assetid: c5fc3346-e5d7-49c0-979b-10d91ab965c5
 title: Usar formas rellenas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a63cf1371f18d6c21fb373bf787a0c93cb5de28143466b5860115a5493b8582
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 03092c0eea329759b70c18c4fa8247081ca99fa8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117698022"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474314"
 ---
 # <a name="using-filled-shapes"></a>Usar formas rellenas
 
-En esta sección se muestra cómo usar funciones de forma rellena. En el ejemplo se usa el procedimiento de ventana principal de una aplicación que permite al usuario dibujar elipses, rectángulos y rectángulos con esquinas redondeadas.
+En esta sección se muestra cómo usar funciones de forma rellenada. En el ejemplo se usa el procedimiento de ventana principal de una aplicación que permite al usuario dibujar puntos suspensivos, rectángulos y rectángulos con esquinas redondeadas.
 
 El usuario dibuja una forma rellena seleccionando una forma determinada en el menú, colocando el cursor en la esquina superior izquierda de la forma (o el rectángulo delimitador de la forma en el caso de una elipse) y arrastrando el mouse hasta que se obtienen las dimensiones deseadas.
 

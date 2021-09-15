@@ -4,12 +4,12 @@ ms.assetid: 60306702-97d4-4627-8fbe-e7c8750f3902
 title: Implementar un pin de vista previa (opcional)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7de47b86df70500c83c794fe1074dc927622d571e78ef6175b944702277da492
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0d1e09d070be2aa154428cb8684ff1c405fac959
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119015563"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473979"
 ---
 # <a name="implementing-a-preview-pin-optional"></a>Implementar un pin de vista previa (opcional)
 

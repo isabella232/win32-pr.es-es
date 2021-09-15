@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 4d5eec1105e490e68b5fecb46253154b3ed85a112b10641e8394bcc713b71c62
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4827fea8e4259609cbb54f2b58a3d1c88ad6c23e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118059170"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474123"
 ---
 # <a name="mf_signature-structure"></a>Estructura \_ MF SIGNATURE
 
@@ -36,7 +36,7 @@ typedef struct _MF_SIGNATURE {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -61,15 +61,15 @@ Matriz de bytes de tamaño **cbSign** que contiene la firma. El tamaño real de 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta estructura no se declara en un encabezado del SDK. Para usar esta estructura, agregue la declaración que se muestra aquí al código fuente.
+Esta estructura no se declara en un encabezado sdk. Para usar esta estructura, agregue la declaración que se muestra aquí al código fuente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |

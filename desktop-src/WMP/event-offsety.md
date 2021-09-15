@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61ee08d610fbc4ab6ccd32157850cbbf0a87d54d8d6334a114e48b82adcec464
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d4765eb1948386f335ba5c4827ccedb947fa7c4a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118577061"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474571"
 ---
 # <a name="eventoffsety"></a>event.offsetY
 
@@ -35,13 +35,13 @@ Este atributo es un número de solo **lectura** (**long**).
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

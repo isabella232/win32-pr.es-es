@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 6748966beaa3bf16f668c4b8b0de60a4302ebcf514f06a3d588999d5faebaf3a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e771aa636b42d9cd7e4024a1684ebe3edf02eeb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119450465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571336"
 ---
 # <a name="iwiaitem2enumdevicecapabilities-method"></a>IWiaItem2::EnumDeviceCapabilities (método)
 
@@ -92,7 +92,7 @@ Este método se usa para crear un objeto enumerador para obtener el conjunto de 
 
 Solo se puede llamar a este método en el elemento raíz de [**objetos IWiaItem2**](-wia-iwiaitem2.md) de un árbol de dispositivos.
 
-Las aplicaciones deben llamar [al método IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) en los punteros de interfaz que reciben a través del parámetro *ppIEnumWIA \_ DEV \_ CAPS.*
+Las aplicaciones deben llamar [al método IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) en los punteros de interfaz que reciben a través del parámetro *PPIEnumWIA \_ DEV \_ CAPS.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,8 +102,8 @@ Las aplicaciones deben llamar [al método IUnknown::Release](/windows/win32/api/
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

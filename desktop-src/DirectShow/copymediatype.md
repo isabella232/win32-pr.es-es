@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: b193f64edb55a342546f26db1975080490f0e69b2caa91695b3bc63240750983
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2e37f277244ae9b82c395d7901917e1fc1e78b35
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119634384"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473999"
 ---
 # <a name="copymediatype-function"></a>Función CopyMediaType
 
@@ -61,7 +61,7 @@ Puntero a una estructura [**AM \_ MEDIA TYPE \_ de**](/windows/win32/api/strmif/
 
 Devuelve S \_ OK o E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función asigna la memoria para el bloque de formato. Si el *parámetro pmtTarget* ya contiene un bloque de formato asignado, se producirá una pérdida de memoria. Para evitar una pérdida de memoria, llame [**a FreeMediaType antes**](freemediatype.md) de llamar a esta función.
 
@@ -78,7 +78,7 @@ Una vez que el método vuelva, llame [**a FreeMediaType**](freemediatype.md) en 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

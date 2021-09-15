@@ -4,12 +4,12 @@ description: Para completar cualquier llamada a procedimiento remoto, todas las 
 ms.assetid: 7b8adba2-19aa-4179-b6b3-ef27f4383bd4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8ed8bce6f97ecfc7bd257d20eebbb35d068624fe017c01a662b47fceb463b98
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 56fdd64352df4bbefc1ec41960b78109b22510c6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118926036"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473579"
 ---
 # <a name="rpc-security-essentials"></a>RPC Security Essentials
 

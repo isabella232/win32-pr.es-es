@@ -4,12 +4,12 @@ ms.assetid: 8904d104-ebcc-474d-b6b5-b262b6f62ee9
 title: MFSampleExtension_DeviceTimestamp atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3322f295908ae2bbdc095a21ab57ee2e0f2ed10dd2267eaea227b9248ddc226b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 285b354ecd0e399fc297d3677d29b88847f9eba8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118241130"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474067"
 ---
 # <a name="mfsampleextension_devicetimestamp-attribute"></a>Atributo MFSampleExtension \_ DeviceTimestamp
 
@@ -29,27 +29,27 @@ Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT64**](/wind
 
 [**SAMPLESample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se establece en ejemplos de medios creados por un origen multimedia para un dispositivo de captura. El valor de este atributo está en el dominio [**MFTIME,**](mftime.md) comparte una época con el tiempo del contador de rendimiento de consultas (QPC) y siempre se expresa en unidades de 100ns. Este atributo está disponible para las MTO insertadas en la canalización de captura.
 
 Para obtener la marca de tiempo con respecto al inicio del streaming, llame al [**métodoSAMPLESample::GetSampleTime.**](/windows/desktop/api/mfobjects/nf-mfobjects-imfsample-getsampletime)
 
-La constante GUID de este atributo se exporta desde mfuuid.lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
