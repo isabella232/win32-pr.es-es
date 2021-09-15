@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8d718b11c23fcf77f452e224a51439f7d6f422d3c81d5238167cbf87c7c3014a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 917a927ff80d4abe1b6509fd41281992a998c945
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117725419"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573641"
 ---
 # <a name="outputtopology"></a>outputtopology
 
@@ -27,7 +27,7 @@ outputtopology(X)
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 X debe ser [**point**](dx-graphics-hlsl-geometry-shader.md), **line**, **triangle \_ cw** o **triangle \_ ccw** y debe estar entre comillas. Estas son las opciones válidas para este atributo:
 
@@ -45,7 +45,7 @@ Este atributo se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        | x    |        |          |       |         |
 
