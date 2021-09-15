@@ -4,12 +4,12 @@ ms.assetid: 735e7a00-78f9-4384-aec7-8caa1fdb3ac3
 title: System.GPS.ImgDirection Proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b283b67ecba8862fc24290c5cd7d9c257d66275329b50cb0fb97e0f5618028a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 69cdcf9a94d17299fc6434689398812be50fba94
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119087263"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579397"
 ---
 # <a name="systemgpsimgdirection-proxy"></a>System.GPS.ImgDirection Proxy
 
@@ -39,7 +39,7 @@ HighPart de la clase uhVal.
 
 LowPart de la clase uhVal.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ## <a name="related-topics"></a>Temas relacionados
 

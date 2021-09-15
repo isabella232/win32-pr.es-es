@@ -1,6 +1,6 @@
 ---
 title: Funciones intrínsecas del modelo de sombreador 5
-description: El modelo de sombreador 5 implementa las funciones intrínsecas del modelo de sombreador 4 y versiones adicionales (vea Funciones intrínsecas (HlSL de DirectX) para obtener una lista completa de las funciones admitidas), así como las siguientes funciones nuevas
+description: El modelo de sombreador 5 implementa las funciones intrínsecas del modelo de sombreador 4 y versiones adicionales (vea Funciones intrínsecas (DirectX HLSL) para obtener una lista completa de las funciones admitidas, así como las siguientes funciones nuevas.
 ms.assetid: 6f91fb40-d6d0-459f-adf7-cff263d7d346
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,26 +9,26 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3e68d3abc645617eb72f2bc892df2ff93bd7dde6d4ced4b375ab4faf5daedf04
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0cd5976526f75b676a853ef7480d4e81e0e00a91
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119855665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574000"
 ---
 # <a name="shader-model-5-intrinsic-functions"></a>Funciones intrínsecas del modelo de sombreador 5
 
-El modelo de sombreador 5 implementa las funciones intrínsecas del modelo de sombreador 4 y versiones adicionales (vea Funciones intrínsecas [**(HlSL de DirectX)**](dx-graphics-hlsl-intrinsic-functions.md) para obtener una lista completa de las funciones admitidas), así como las siguientes funciones nuevas:
+El modelo de sombreador 5 implementa las funciones intrínsecas del modelo de sombreador 4 y versiones adicionales (vea Funciones intrínsecas [**(DirectX HLSL)**](dx-graphics-hlsl-intrinsic-functions.md) para obtener una lista completa de las funciones admitidas, así como las siguientes funciones nuevas:
 
--   [**AllMemoryBarmore**](allmemorybarrier.md)
--   [**AllMemoryBarwithGroupSync**](allmemorybarrierwithgroupsync.md)
+-   [**AllMemoryBartero**](allmemorybarrier.md)
+-   [**AllMemoryBargroupWithGroupSync**](allmemorybarrierwithgroupsync.md)
 -   [**asdouble**](asdouble.md)
 -   [**asuint**](asuint.md)
 -   [**countbits**](countbits.md)
--   [**general \_ de ddx**](ddx-coarse.md)
+-   [**ddx \_ general**](ddx-coarse.md)
 -   [**ddy \_ coarse**](ddy-coarse.md)
--   [**DeviceMemoryBarmore**](devicememorybarrier.md)
--   [**DeviceMemoryBarmoreWithGroupSync**](devicememorybarrierwithgroupsync.md)
+-   [**DeviceMemoryBartero**](devicememorybarrier.md)
+-   [**DeviceMemoryBargroupWithGroupSync**](devicememorybarrierwithgroupsync.md)
 -   [**EvaluateAttributeAtCentroid**](evaluateattributeatcentroid.md)
 -   [**EvaluateAttributeAtSample**](evaluateattributeatsample.md)
 -   [**f16tof32**](f16tof32.md)
@@ -36,8 +36,8 @@ El modelo de sombreador 5 implementa las funciones intrínsecas del modelo de so
 -   [**firstbithigh**](firstbithigh.md)
 -   [**firstbitlow**](firstbitlow.md)
 -   [**Fma**](dx-graphics-hlsl-fma.md)
--   [**GroupMemoryBarmore**](groupmemorybarrier.md)
--   [**GroupMemoryBar syncWithGroupSync**](groupmemorybarrierwithgroupsync.md)
+-   [**GroupMemoryBartero**](groupmemorybarrier.md)
+-   [**GroupMemoryBargroupWithGroupSync**](groupmemorybarrierwithgroupsync.md)
 -   [**InterlockedAdd**](interlockedadd.md)
 -   [**InterlockedAnd**](interlockedand.md)
 -   [**InterlockedCompareExchange**](interlockedcompareexchange.md)
@@ -65,7 +65,7 @@ El modelo de sombreador 5 implementa las funciones intrínsecas del modelo de so
 
 <dl> <dt>
 
-[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
+[Shader Model 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

@@ -4,14 +4,14 @@ ms.assetid: 5251234b-0280-4d5d-80f5-295d720a89d1
 title: WPCEVENT_IM_JOIN evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 181bc849cf89e8a78a7a5aaad97463baf0c611d99ca0dc05caf9bfaf879eb804
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b020eb3d4204f946002f59f472e5c95b715f88f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119951295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574673"
 ---
-# <a name="wpcevent_im_join-event"></a>Evento WPCEVENT \_ IM \_ JOIN
+# <a name="wpcevent_im_join-event"></a>Evento IM \_ JOIN de WPCEVENT \_
 
 Evento por usuario generado por una aplicación de mensajería instantánea cuando una entidad intenta unirse a una conversación en curso en Controles parentales.
 
@@ -78,7 +78,7 @@ Valor de la enumeración [**\_ WPCFLAG ISBLOCKED**](/windows/win32/api/wpcevent/
 *MemberCount* 
 </dt> <dd>
 
-Recuento de participantes que están en la conversación y que tienen identidades definidas en el campo de miembro.
+Recuento de participantes que están en la conversación y que tienen identidades definidas en el campo miembro.
 
 </dd> <dt>
 
@@ -104,11 +104,11 @@ Cadena de identidad de la cuenta de mensajería instantánea para el usuario que
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Header<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 478cc11e-afbd-411a-ab84-b8ca7c3aa503
 title: WPCEVENT_MEDIA_PLAYBACK evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 036f88b657ea53a0d1a44679cc55c5cd109f9d16cada16f1812d301b472ef93b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cfdf4e884cc0e87f579d245676f78232a5ae0177
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119951145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574669"
 ---
 # <a name="wpcevent_media_playback-event"></a>Evento DE REPRODUCCIÓN MULTIMEDIA DE WPCEVENT \_ \_
 
@@ -47,7 +47,7 @@ Valor de la [**enumeración WPC \_ MEDIA \_ TYPE**](/windows/win32/api/wpcevent/
 
 </dd> <dt>
 
-*Ruta de acceso* 
+*Path* 
 </dt> <dd>
 
 Ruta de acceso al origen del contenido multimedia.
@@ -57,11 +57,11 @@ Ruta de acceso al origen del contenido multimedia.
 *Título* 
 </dt> <dd>
 
-Metadatos del título para el contenido.
+Metadatos de título para el contenido.
 
 </dd> <dt>
 
-*Pml* 
+*PML* 
 </dt> <dd>
 
 Nivel de administración parental.
@@ -97,11 +97,11 @@ Valor de la enumeración [**\_ WPCFLAG ISBLOCKED**](/windows/win32/api/wpcevent/
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |
-| Header<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

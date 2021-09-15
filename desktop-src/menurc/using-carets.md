@@ -22,12 +22,12 @@ keywords:
 - entrada mediante teclado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c930931df8ce401fbed8cc9af16db3cb52de08ebe9cf539109b426497318d5d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6450a3169588b3072d1fee271f4890a7cdeafd2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118472651"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579773"
 ---
 # <a name="using-carets"></a>Uso de carets
 
@@ -177,7 +177,7 @@ case WM_KILLFOCUS:
 
 ## <a name="adjusting-the-blink-time"></a>Ajustar el tiempo de parpadeo
 
-En un Windows de 16 bits, una aplicación basada en Windows podría llamar a la función [**GetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-getcaretblinktime) para guardar el tiempo de parpadeo actual y, a continuación, llamar a la [**función SetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-setcaretblinktime) para ajustar el tiempo de parpadeo durante su procesamiento del [**mensaje \_ SETFOCUS de WM.**](/windows/desktop/inputdev/wm-setfocus) La aplicación restauraría el tiempo de parpadeo guardado para el uso de otras aplicaciones llamando a **SetCaretBlinkTime** durante su procesamiento del [**\_ mensaje KILLFOCUS de WM.**](/windows/desktop/inputdev/wm-killfocus) Sin embargo, esta técnica no funciona en entornos multiproceso. En concreto, la desactivación de una aplicación no se sincroniza con la activación de otra aplicación, por lo que si una aplicación se detiene, se puede activar otra aplicación.
+En Windows de 16 bits, una aplicación basada en Windows podría llamar a la función [**GetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-getcaretblinktime) para guardar el tiempo de parpadeo actual y, a continuación, llamar a la [**función SetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-setcaretblinktime) para ajustar el tiempo de parpadeo durante su procesamiento del mensaje [**\_ SETFOCUS de WM.**](/windows/desktop/inputdev/wm-setfocus) La aplicación restauraría el tiempo de parpadeo guardado para el uso de otras aplicaciones llamando a **SetCaretBlinkTime** durante su procesamiento del [**\_ mensaje KILLFOCUS de WM.**](/windows/desktop/inputdev/wm-killfocus) Sin embargo, esta técnica no funciona en entornos multiproceso. En concreto, la desactivación de una aplicación no se sincroniza con la activación de otra aplicación, por lo que si una aplicación se detiene, se puede activar otra aplicación.
 
 Las aplicaciones deben respetar el tiempo de parpadeo elegido por el usuario. La [**función SetCaretBlinkTime**](/windows/desktop/api/Winuser/nf-winuser-setcaretblinktime) solo debe llamarla una aplicación que permita al usuario establecer la hora de parpadeo.
 

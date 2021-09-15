@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e84f33833e9d69c39cb50ff81bd6c97ff8f79d1e2f881f82d6e4d293e78d87bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: db3e35143242c5ca7888ffc50feb006f586e68d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119761275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579381"
 ---
 # <a name="wmpeffects"></a>WMPEFFECTS
 
@@ -33,13 +33,13 @@ tabStop="false"
 onclick="next();"
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esto creará un elemento **EFFECTS** que pasará por los valores preestablecidos de visualización cuando el usuario haga clic en el control. También ajustará las visualizaciones cuando se cambie el tamaño del reproductor.
 
-El valor preestablecido de visualización inicial que se muestra es el seleccionado en el **menú Ver** en **Visualizaciones.** Al cambiar la selección de este menú, se cambiará automáticamente el valor preestablecido que muestra este elemento cuando el reproductor está en modo de máscara. El **menú** Ver se muestra en el modo completo del reproductor o cuando el atributo **VIEW.titleBar** se establece en true en una máscara.
+El valor preestablecido de visualización inicial que se muestra es el seleccionado en el **menú Ver** en **Visualizaciones.** Al cambiar la selección en este menú, se cambiará automáticamente el valor preestablecido que muestra este elemento cuando el reproductor está en modo de máscara. El **menú** Ver se muestra en el modo completo del reproductor o cuando el atributo **VIEW.titleBar** se establece en true en una máscara.
 
-Todas las propiedades de **este elemento EFFECTS** se pueden invalidar especificándolos explícitamente.
+Todas las propiedades de **este elemento EFFECTS** se pueden invalidar si se especifican explícitamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,7 +55,7 @@ Todas las propiedades de **este elemento EFFECTS** se pueden invalidar especific
 
 <dl> <dt>
 
-[**ELEMENTO EFFECTS**](effects-element.md)
+[**EFFECTS, elemento**](effects-element.md)
 </dt> </dl>
 
  

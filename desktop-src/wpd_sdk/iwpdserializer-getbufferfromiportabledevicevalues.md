@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 10a483331d15c09de8398d11e940453d8f239e2207fdefb82d86fd4bb1460daf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 44f4e9e7011e6a4766183307e81ef7e783da899f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117843018"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574292"
 ---
 # <a name="iwpdserializergetbufferfromiportabledevicevalues-method"></a>Método IWpdSerializer::GetBufferFromIPortableDeviceValues
 
-El **método GetBufferFromIPortableDeviceValues** serializa una interfaz **IPortableDeviceValues** enviada a una matriz de bytes asignada. La matriz de bytes devuelta se asigna al autor de la llamada y el autor de la llamada debe liberarla **mediante CoTaskMemFree.**
+El **método GetBufferFromIPortableDeviceValues** serializa una interfaz **IPortableDeviceValues** enviada a una matriz de bytes asignada. La matriz de bytes devuelta se asigna al autor de la llamada y la debe liberar el autor de la llamada **mediante CoTaskMemFree.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Puntero a una [**interfaz IPortableDeviceValues**](iportabledevicevalues.md) par
 *ppBuffer* \[ out\]
 </dt> <dd>
 
-Puntero a un **byte _ que contiene los datos \* *serializados. Windows Dispositivos portátiles asigna esta memoria; el autor de la llamada debe liberarlo llamando a _* CoTaskMemFree**.
+Puntero a un **byte _ que contiene los datos \* *serializados. Windows Dispositivos portátiles asigna esta memoria; El autor de la llamada debe liberarlo llamando a _* CoTaskMemFree**.
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

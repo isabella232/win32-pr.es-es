@@ -4,18 +4,18 @@ ms.assetid: b02b38bd-f3dd-4bf8-a36e-44ff9fbbe550
 title: Función EncryptMessage (Schannel)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: de792e543a8cb67bd6b608d79832fd31a68267fc297a85e0e178d268bbc069d6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3075b2fe7e5b4167a5a8527a16009282b2fca1b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119008293"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575393"
 ---
 # <a name="encryptmessage-schannel-function"></a>Función EncryptMessage (Schannel)
 
 La **función EncryptMessage (Schannel)** cifra un mensaje para proporcionar [*privacidad.*](../secgloss/p-gly.md) **EncryptMessage (Schannel) permite** que una aplicación elija entre los algoritmos [*criptográficos*](../secgloss/c-gly.md) admitidos por el mecanismo elegido. La **función EncryptMessage (Schannel)** usa el [*contexto de seguridad*](../secgloss/s-gly.md) al que hace referencia el identificador de contexto. Algunos paquetes no tienen mensajes que cifrar o descifrar, sino que proporcionan un hash de [*integridad*](../secgloss/h-gly.md) que se puede comprobar.
 
-Cuando se usa SChannel SSP, esta función [](../secgloss/s-gly.md) cifra los mensajes mediante una clave de sesión negociada con la parte remota que recibirá el mensaje. El algoritmo de cifrado viene determinado por el conjunto [ [*de cifrado*](../secgloss/c-gly.md)]([*cipher*](../secgloss/c-gly.md)-suites-in-schannel.md) en uso.
+Cuando se usa Schannel SSP, esta función [](../secgloss/s-gly.md) cifra los mensajes mediante una clave de sesión negociada con la parte remota que recibirá el mensaje. El algoritmo de cifrado viene determinado por el conjunto [ [*de cifrado*](../secgloss/c-gly.md)]([*cipher*](../secgloss/c-gly.md)-suites-in-schannel.md) en uso.
 
 > [!Note]  
 > Se puede llamar a **EncryptMessage (Schannel)** y [**DecryptMessage (Schannel)**](decryptmessage--schannel.md) al mismo tiempo desde dos subprocesos diferentes en un único contexto de interfaz de proveedor de compatibilidad de seguridad [](../secgloss/s-gly.md) (SSPI) si se cifra un subproceso y el otro se descifra. Si se cifra más de un subproceso o se descifra más de un subproceso, cada subproceso debe obtener un contexto único.
@@ -59,7 +59,7 @@ La longitud de la estructura [**SecBuffer**](/windows/win32/api/sspi/ns-sspi-sec
 
 Número de secuencia que la aplicación de transporte asignó al mensaje. Si la aplicación de transporte no mantiene números de secuencia, este parámetro debe ser cero.
 
-Cuando se usa el SSP de Schannel, este parámetro debe establecerse en cero. Schannel SSP no usa números de secuencia.
+Cuando se usa SChannel SSP, este parámetro debe establecerse en cero. Schannel SSP no usa números de secuencia.
 
 ## <a name="return-value"></a>Valor devuelto
 
@@ -77,7 +77,7 @@ Si se produce un error en la función, devuelve uno de los siguientes códigos d
 | <dl> <dt>**TOKEN \_ NO VÁLIDO DE SEC E \_ \_**</dt> </dl>          | No se encontró ningún \_ búfer de tipo DE DATOS SECBUFFER.<br/>                                                                                                        |
 | <dl> <dt>**SEG \_ E \_ QOP \_ NO \_ COMPATIBLE**</dt> </dl>     | El contexto de seguridad [*no*](../secgloss/i-gly.md) admite la confidencialidad ni la [*integridad.*](../secgloss/s-gly.md)<br/> |
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función EncryptMessage (Schannel)** cifra un mensaje basado en el mensaje y la clave [*de sesión*](../secgloss/s-gly.md) desde un contexto de [*seguridad*](../secgloss/s-gly.md).
 
@@ -107,11 +107,11 @@ Para obtener un rendimiento óptimo, las *estructuras pMessage* se deben asignar
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible | Windows XP \[ solo aplicaciones de escritorio\]          |
 | Servidor mínimo compatible | Windows Solo aplicaciones de escritorio de Server 2003 \[\] |
-| Header                   | Sspi.h (incluir Security.h)               |
+| Encabezado                   | Sspi.h (incluir Security.h)               |
 | Biblioteca                  | Secur32.lib                               |
 | Archivo DLL                      | Secur32.dll                               |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Funciones de SSPI](authentication-functions.md#sspi-functions)
 - [**AcceptSecurityContext (Schannel)**](acceptsecuritycontext--schannel.md)

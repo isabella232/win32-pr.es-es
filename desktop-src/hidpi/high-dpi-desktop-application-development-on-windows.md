@@ -1,6 +1,6 @@
 ---
 title: Desarrollo de aplicaciones de escritorio con valores altos de PPP en Windows
-description: Este contenido está dirigido a los desarrolladores que buscan actualizar aplicaciones de escritorio para controlar el factor de escala de pantalla dinámica (también es decir,
+description: Este contenido está dirigido a desarrolladores que buscan actualizar aplicaciones de escritorio para controlar el factor de escala de pantalla dinámica (también es decir,
 ms.assetid: 6C419EEF-D898-4B50-8D16-E65A594487AA
 ms.topic: article
 ms.date: 05/31/2018
@@ -10,15 +10,15 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: 01958791dccd7c836babedbe726233797eddb646
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122471331"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580461"
 ---
 # <a name="high-dpi-desktop-application-development-on-windows"></a>Desarrollo de aplicaciones de escritorio con valores altos de PPP en Windows
 
-Este contenido está dirigido a desarrolladores que buscan actualizar aplicaciones de escritorio para controlar los cambios del factor de escala de pantalla (puntos por pulgada o PPP) de forma dinámica, lo que permite que sus aplicaciones estén nítidas en cualquier pantalla en la que se representen.
+Este contenido está dirigido a desarrolladores que buscan actualizar las aplicaciones de escritorio para controlar dinámicamente los cambios del factor de escala de pantalla (puntos por pulgada o PPP), lo que permite que sus aplicaciones estén nítidas en cualquier pantalla en la que se representen.
 
 Para empezar, si va a crear una nueva aplicación Windows desde cero, se recomienda encarecidamente crear una aplicación de plataforma Windows universal [(UWP).](/windows/uwp/get-started/whats-a-uwp) Las aplicaciones para UWP se escalan de forma automática y dinámica para cada pantalla en la &mdash; &mdash; que se ejecutan.
 
@@ -28,35 +28,35 @@ Las aplicaciones de escritorio que usan tecnologías de programación de Windows
 
 A medida que ha progresado la tecnología de visualización, los fabricantes de paneles de pantalla han empaquetado un número creciente de píxeles en cada unidad de espacio físico en sus paneles. Esto ha dado lugar a que los puntos por pulgada (PPP) de los paneles de pantalla modernos sean mucho más altos de lo que históricamente han sido. En el pasado, la mayoría de las pantallas tenían 96 píxeles por pulgada lineal de espacio físico (96 PPP); en 2017, las pantallas con casi 300 PPP o superior están disponibles.
 
-La mayoría de los marcos de interfaz de usuario de escritorio heredados tienen suposiciones integradas de que el PPP de presentación no cambiará durante la vigencia del proceso.  Esta suposición ya no es cierta, ya que las DPI de visualización normalmente cambian varias veces a lo largo de la duración de un proceso de aplicación. Algunos escenarios comunes en los que el factor de escala de pantalla o los cambios de PPP son:
+La mayoría de los marcos de interfaz de usuario de escritorio heredados tienen suposiciones integradas de que el ppp de visualización no cambiará durante la vigencia del proceso.  Esta suposición ya no es cierta, ya que las DPI de pantalla normalmente cambian varias veces a lo largo de la duración de un proceso de aplicación. Algunos escenarios comunes en los que el factor de escala de pantalla o los cambios de PPP son:
 
 -   Configuraciones de varios monitores en las que cada pantalla tiene un factor de escala diferente y la aplicación se mueve de una pantalla a otra (por ejemplo, una pantalla de 4K y una pantalla de 1080p).
 -   Acoplamiento y desacoplamiento de un portátil con valores altos de PPP con una pantalla externa de bajo PPP (o viceversa)
--   Conexión a Escritorio remoto desde un portátil o tableta con valores altos de PPP a un dispositivo de bajo ppp (o viceversa)
+-   Conexión mediante Escritorio remoto desde un portátil o tableta con valores altos de PPP a un dispositivo de bajo ppp (o viceversa)
 -   Realizar un cambio en la configuración del factor de escalado de pantalla mientras se ejecutan las aplicaciones
 
 En estos escenarios, las aplicaciones para UWP se dibujan automáticamente para el nuevo PPP. De forma predeterminada, y sin trabajo adicional del desarrollador, las aplicaciones de escritorio no lo hacen. Las aplicaciones de escritorio que no hacen este trabajo adicional para responder a los cambios de PPP pueden parecer desenfocados o con un tamaño incorrecto para el usuario.
 
 ## <a name="dpi-awareness-mode"></a>Modo de reconocimiento de PPP
 
-Las aplicaciones de escritorio deben Windows si admiten el escalado de PPP. De forma predeterminada, el sistema considera que las aplicaciones de escritorio no son conscientes de los valores de PPP y que el mapa de bits extiende sus ventanas. Al establecer uno de los siguientes modos de reconocimiento de PPP disponibles, las aplicaciones pueden Windows cómo desean controlar el escalado de PPP:
+Las aplicaciones de escritorio deben Windows si admiten el escalado de PPP. De forma predeterminada, el sistema considera que las aplicaciones de escritorio no son conscientes de ppp y que el mapa de bits extiende sus ventanas. Al establecer uno de los siguientes modos de reconocimiento de PPP disponibles, las aplicaciones pueden Windows cómo desean controlar el escalado de PPP:
 
 ### <a name="dpi-unaware"></a>PPP no consciente
 
-Las aplicaciones sin reconocimiento de PPP se representan con un valor de PPP fijo de 96 (100 %). Cada vez que estas aplicaciones se ejecutan en una pantalla con una escala de pantalla superior a 96 PPP, Windows ajustará el mapa de bits de la aplicación al tamaño físico esperado. Esto hace que la aplicación aparezca desenfoque.
+Las aplicaciones sin reconocimiento de PPP se representan con un valor de PPP fijo de 96 (100 %). Siempre que estas aplicaciones se ejecuten en una pantalla con una escala de pantalla superior a 96 PPP, Windows ajustará el mapa de bits de la aplicación al tamaño físico esperado. Esto hace que la aplicación aparezca desenfoque.
 
 ### <a name="system-dpi-awareness"></a>Reconocimiento de PPP del sistema
 
-Las aplicaciones de escritorio que tienen reconocimiento de PPP del sistema normalmente reciben el valor de PPP del monitor conectado principal en el momento del inicio de sesión del usuario. Durante la inicialización, la interfaz de usuario se encuentra correctamente (controles de tamaño, elección de tamaños de fuente, carga de recursos, etc.) con ese valor de PPP del sistema. Por lo tanto, las aplicaciones con reconocimiento de PPP del sistema no se escalan con PPP (mapa de bits extendido) Windows en las pantallas que se muestran en ese solo PPP. Cuando la aplicación se mueve a una pantalla con un factor de escala diferente, o si el factor de escala de pantalla cambia, Windows escalará las ventanas de la aplicación, lo que hará que parezcan desenfoque. De forma eficaz, las aplicaciones de escritorio con reconocimiento de PPP del sistema solo se representan de forma nítida en un único factor de escala de pantalla, desenfocándose cada vez que cambia el ppp.
+Las aplicaciones de escritorio que tienen reconocimiento de PPP del sistema normalmente reciben el valor de PPP del monitor conectado principal en el momento del inicio de sesión del usuario. Durante la inicialización, la interfaz de usuario se encuentra correctamente (controles de tamaño, elección de tamaños de fuente, carga de recursos, etc.) con ese valor de PPP del sistema. Por lo tanto, las aplicaciones con reconocimiento de PPP del sistema no se escalan con PPP (mapa de bits extendido) Windows en las pantallas que se muestran en ese solo PPP. Cuando la aplicación se mueve a una pantalla con un factor de escala diferente, o si el factor de escala de pantalla cambia, Windows escalará de mapa de bits las ventanas de la aplicación, lo que hará que parezcan desenfoque. De forma eficaz, las aplicaciones de escritorio con reconocimiento de PPP del sistema solo se representan de forma nítida en un único factor de escala de pantalla, lo que se vuelve desenfocado cada vez que cambia el valor de PPP.
 
 ### <a name="per-monitor-and-per-monitor-v2-dpi-awareness"></a>Per-Monitor y Per-Monitor reconocimiento de PPP (V2)
 
-Se recomienda que las aplicaciones de escritorio se actualicen para usar el modo de reconocimiento de PPP por monitor, lo que les permite representarse inmediatamente correctamente cada vez que cambia el ppp. Cuando una aplicación informa a Windows que quiere ejecutarse en este modo, Windows no ajustará el mapa de bits de la aplicación cuando cambie el valor de PPP y, en su lugar, enviará [WM \_ PPPCHANGED](wm-dpichanged.md) a la ventana de la aplicación. A continuación, es responsabilidad completa de la aplicación controlar el ajuste de tamaño para el nuevo PPP. La mayoría de los marcos de interfaz de usuario que usan las aplicaciones de escritorio (controles comunes de Windows (comctl32), Windows Forms, Windows Presentation Framework, etc.) no admiten el escalado automático de PPP, lo que requiere que los desarrolladores cambien el tamaño y cambien la posición del contenido de sus propias ventanas.
+Se recomienda actualizar las aplicaciones de escritorio para usar el modo de reconocimiento de PPP por monitor, lo que les permite representarse inmediatamente correctamente cada vez que cambia el valor de PPP. Cuando una aplicación informa Windows que quiere ejecutarse en este modo, Windows no ajustará el mapa de bits de la aplicación cuando cambie el valor de PPP, en su lugar enviará [WM \_ PPPCHANGED](wm-dpichanged.md) a la ventana de la aplicación. A continuación, es responsabilidad completa de la aplicación controlar el propio ajuste de tamaño para el nuevo PPP. La mayoría de los marcos de interfaz de usuario que usan las aplicaciones de escritorio (controles comunes de Windows (comctl32), Windows Forms, Windows Presentation Framework, etc.) no admiten el escalado automático de PPP, lo que requiere que los desarrolladores cambien el tamaño y cambien la posición del contenido de sus propias ventanas.
 
 Hay dos versiones de Per-Monitor que una aplicación puede registrarse como: versión 1 y versión 2 (PMv2). Al registrar un proceso como en ejecución en el modo de reconocimiento PMv2, se produce lo siguiente:
 
-1.  La aplicación a la que se notifica cuando cambia el VALOR DE PPP (hwnd de nivel superior y secundario)
-2.  La aplicación ve los píxeles sin procesar de cada pantalla
+1.  La aplicación a la que se notifica cuando cambia el VALOR DE PPP (HWND de nivel superior y secundario)
+2.  La aplicación que ve los píxeles sin procesar de cada pantalla
 3.  Nunca se escala el mapa de bits de la aplicación Windows
 4.  Área no cliente automática (título de ventana, barras de desplazamiento, etc.) Escalado de PPP Windows
 5.  Los cuadros de diálogo de Win32 (desde [CreateDialog)](/windows/desktop/api/winuser/nf-winuser-createdialogw)escalan automáticamente ppp Windows
@@ -70,7 +70,7 @@ Cuando se ejecuta en Per-Monitor de reconocimiento v2, las aplicaciones se notif
 En la tabla siguiente se muestra cómo se representarán las aplicaciones en distintos escenarios:
 
 
-| Modo de reconocimiento de PPP | Windows Versión introducida | Vista de PPP de la aplicación | Comportamiento en el cambio de PPP | 
+| Modo de reconocimiento de PPP | Windows Versión introducida | Vista de PPP de la aplicación | Comportamiento en cambio de PPP | 
 |--------------------|----------------------------|---------------------------|------------------------|
 | Conscientes | N/D | Todas las pantallas tienen 96 PPP | Extensión de mapa de bits (desenfoque) | 
 | Sistema | Vista | Todas las pantallas tienen el mismo PPP (el ppp de la pantalla principal en el momento en que se inició la sesión de usuario actual) | Extensión de mapa de bits (desenfoque) | 
@@ -84,7 +84,7 @@ Per-Monitor el modo de reconocimiento de PPP V1 (PMv1) se introdujo con Windows 
 
 La compatibilidad inicial con el reconocimiento por monitor solo ofrecía a las aplicaciones lo siguiente:
 
-1.  Se notifica a los HWND de nivel superior de un cambio de PPP y se proporciona un nuevo tamaño sugerido.
+1.  Se notifica a los HWND de nivel superior un cambio de PPP y se proporciona un nuevo tamaño sugerido.
 2.  Windows mapa de bits ajustará la interfaz de usuario de la aplicación
 3.  La aplicación ve todas las pantallas en píxeles físicos (consulte virtualización).
 
@@ -98,7 +98,7 @@ En la tabla siguiente se muestra el nivel de compatibilidad con reconocimiento d
 | Marco de trabajo/tecnología | Soporte técnico | Versión del SO. | Ajuste de escala de PPP que controla | Lecturas adicionales | 
 |------------------------|---------|------------|------------------------|-----------------|
 | Plataforma universal de Windows (UWP) | Completo | 1607 | Marco de interfaz de usuario | <a href="/windows/uwp/get-started/whats-a-uwp">Plataforma universal de Windows (UWP)</a> | 
-| Controles win32/common sin formato V6 (comctl32.dll) | <ul><li>Mensajes de notificación de cambio de PPP enviados a todos los HWND</li><li>Los recursos dibujados con tema se representan correctamente en los controles comunes</li><li>Escalado automático de PPP para diálogos</li></ul> | 1703 | Application | <a href="https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/DPIAwarenessPerWindow">GitHub Muestra</a> | 
+| Controles win32/common sin procesar V6 (comctl32.dll) | <ul><li>Mensajes de notificación de cambio de PPP enviados a todos los HWND</li><li>Los recursos dibujados con tema se representan correctamente en controles comunes</li><li>Escalado automático de PPP para diálogos</li></ul> | 1703 | Application | <a href="https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/DPIAwarenessPerWindow">GitHub Muestra</a> | 
 | Windows Forms | Escalado de PPP por monitor automático limitado para algunos controles | 1703 | Marco de interfaz de usuario | <a href="/dotnet/framework/winforms/high-dpi-support-in-windows-forms">Compatibilidad con valores altos de PPP en Windows Forms</a> | 
 | Windows Presentation Framework (WPF) | Las aplicaciones wpf nativas escalarán wpf hospedados en otros marcos de trabajo y otros marcos hospedados en WPF no escalarán automáticamente | 1607 | Marco de interfaz de usuario | <a href="https://github.com/Microsoft/WPF-Samples/tree/master/PerMonitorDPI">GitHub Muestra</a> | 
 | GDI | None | N/D | Application | Consulte <a href="https://blogs.windows.com/buildingapps/2017/05/19/improving-high-dpi-experience-gdi-based-desktop-apps/">Escalado de valores altos de PPP de GDI.</a> | 
@@ -114,7 +114,7 @@ En la tabla siguiente se muestra el nivel de compatibilidad con reconocimiento d
 
 Para actualizar una aplicación de escritorio existente para controlar correctamente el escalado de PPP, es necesario actualizarla para que, como mínimo, se actualicen las partes importantes de su interfaz de usuario para responder a los cambios de PPP.
 
-La mayoría de las aplicaciones de escritorio se ejecutan en modo de reconocimiento de PPP del sistema. Las aplicaciones que tienen en cuenta los valores de PPP del sistema se escalan normalmente al valor de PPP de la pantalla principal (la pantalla en la que se encontraba la bandeja del sistema en el momento en que se inició la Windows sesión). Cuando cambia el valor de PPP, Windows mapa de bits ajustará la interfaz de usuario de estas aplicaciones, lo que suele hacer que se desenfoque. Al actualizar una aplicación compatible con PPP del sistema para que sea compatible con PPP por monitor, el código que controla el diseño de la interfaz de usuario debe actualizarse para que se realice no solo durante la inicialización de la aplicación, sino también siempre que se reciba una notificación de cambio de PPP[(WM \_ PPPCHANGED](wm-dpichanged.md) en el caso de Win32). Normalmente, esto implica volver a examinar las suposiciones en el código de que la interfaz de usuario solo debe escalarse una vez.
+La mayoría de las aplicaciones de escritorio se ejecutan en modo de reconocimiento de PPP del sistema. Las aplicaciones que tienen en cuenta los valores de PPP del sistema se escalan normalmente al valor de PPP de la pantalla principal (la pantalla en la que se encontraba la bandeja del sistema en el momento en que se inició la Windows sesión). Cuando cambia el valor de PPP, Windows mapa de bits ajustará la interfaz de usuario de estas aplicaciones, lo que suele hacer que se desenfoque. Al actualizar una aplicación compatible con PPP del sistema para que sea compatible con PPP por monitor, el código que controla el diseño de la interfaz de usuario debe actualizarse para que se realice no solo durante la inicialización de la aplicación, sino también siempre que se reciba una notificación de cambio de[PPP (WM \_ PPPCHANGED](wm-dpichanged.md) en el caso de Win32). Normalmente, esto implica volver a examinar las suposiciones en el código de que la interfaz de usuario solo debe escalarse una vez.
 
 Además, en el caso de la programación win32, muchas API de Win32 no tienen ningún valor de PPP ni contexto de presentación, por lo que solo devolverán valores relativos al VALOR DE PPP del sistema. Puede ser útil pasar por el código para buscar algunas de estas API y reemplazarlas por variantes con reconocimiento de PPP. Algunas de las API comunes que tienen variantes que tienen reconocimiento de PPP son:
 
@@ -131,11 +131,11 @@ Además, en el caso de la programación win32, muchas API de Win32 no tienen nin
 
  
 
-También es una buena idea buscar tamaños codificados de forma fuerte en el código base que asumen un PPP constante, reemplazándolos por código que tiene en cuenta correctamente el escalado de PPP. A continuación se muestra un ejemplo que incorpora todas estas sugerencias:
+También es una buena idea buscar tamaños codificados de forma fuerte en el código base que asumen un PPP constante, reemplazándolos por código que se ajuste correctamente al escalado de PPP. A continuación se muestra un ejemplo que incorpora todas estas sugerencias:
 
 ### <a name="example"></a>Ejemplo:
 
-En el ejemplo siguiente se muestra un caso win32 simplificado de creación de un HWND secundario. La llamada a CreateWindow supone que la aplicación se ejecuta a 96 PPP y que ni el tamaño ni la posición del botón serán correctos en las DPI superiores:
+En el ejemplo siguiente se muestra un caso win32 simplificado de creación de un HWND secundario. En la llamada a CreateWindow se da por supuesto que la aplicación se ejecuta a 96 PPP y que ni el tamaño ni la posición del botón serán correctos en las DPI superiores:
 
 
 ```
@@ -216,25 +216,25 @@ Al actualizar una aplicación compatible con PPP del sistema, algunos pasos comu
 
 1.  Marque el proceso como compatible con PPP por monitor (V2) mediante un manifiesto de aplicación (u otro método, en función de los marcos de interfaz de usuario usados).
 2.  Hacer que la lógica de diseño de la interfaz de usuario sea reutilizable y sacarla del código de inicialización de la aplicación para que se pueda reutilizar cuando se produzca un cambio de PPP (WM PPPCHANGED en el caso de la programación Windows \_ (Win32).
-3.  Invalide cualquier código que suponga que nunca es necesario actualizar los datos confidenciales de PPP (PPP/fuentes/tamaños/etc.). Es una práctica muy común almacenar en caché los tamaños de fuente y los valores de PPP en la inicialización del proceso. Al actualizar una aplicación para que sea compatible con PPP por monitor, los datos confidenciales de PPP se deben volver a evaluar cada vez que se encuentre un nuevo PPP.
+3.  Invalide cualquier código que suponga que nunca es necesario actualizar los datos confidenciales de PPP (PPP/fuentes/tamaños/etc.). Es una práctica muy común almacenar en caché los tamaños de fuente y los valores de PPP durante la inicialización del proceso. Al actualizar una aplicación para que sea compatible con PPP por monitor, los datos confidenciales de PPP se deben volver a evaluar cada vez que se encuentre un nuevo PPP.
 4.  Cuando se produce un cambio de PPP, vuelva a cargar (o volver a rasterizar) los recursos de mapa de bits para el nuevo PPP o, opcionalmente, ajuste los recursos cargados actualmente al tamaño correcto.
-5.  Grep para las API que no tienen en cuenta Per-Monitor PPP y reemplazarlas por Per-Monitor API con reconocimiento de PPP (si procede). Ejemplo: reemplace GetSystemMetrics por GetSystemMetricsForDpi.
+5.  Grep para las API que no tienen en cuenta Per-Monitor ppp y reemplazarlas por Per-Monitor API con reconocimiento de PPP (si procede). Ejemplo: reemplace GetSystemMetrics por GetSystemMetricsForDpi.
 6.  Pruebe la aplicación en un sistema de varias pantallas o varios PPP.
 7.  En el caso de las ventanas de nivel superior de la aplicación que no pueda actualizar a la escala de PPP correctamente, use el escalado de PPP en modo mixto (que se describe a continuación) para permitir el ajuste de mapa de bits de estas ventanas de nivel superior por parte del sistema.
 
-## <a name="mixed-mode-dpi-scaling-sub-process-dpi-scaling"></a>Mixed-Mode de PPP (ajuste de escala de PPP de sub process)
+## <a name="mixed-mode-dpi-scaling-sub-process-dpi-scaling"></a>Mixed-Mode de PPP (escalado de PPP de sub process)
 
-Al actualizar una aplicación para admitir el reconocimiento de PPP por monitor, a veces puede ser poco práctico o imposible actualizar todas las ventanas de la aplicación de una en una. Esto puede deberse simplemente al tiempo y al esfuerzo necesarios para actualizar y probar toda la interfaz de usuario, o bien porque no posee todo el código de la interfaz de usuario que necesita ejecutar (si la aplicación quizás carga la interfaz de usuario de terceros). En estas situaciones, Windows ofrece una manera de facilitar el conocimiento por monitor al permitirle ejecutar algunas de las ventanas de aplicación (solo de nivel superior) en su modo original de reconocimiento de PPP mientras centra el tiempo y la energía en actualizar las partes más importantes de la interfaz de usuario.
+Al actualizar una aplicación para admitir el reconocimiento de PPP por monitor, a veces puede ser poco práctico o imposible actualizar todas las ventanas de la aplicación de una en una. Esto puede deberse simplemente al tiempo y al esfuerzo necesarios para actualizar y probar toda la interfaz de usuario, o porque no posee todo el código de la interfaz de usuario que necesita ejecutar (si la aplicación quizás carga la interfaz de usuario de terceros). En estas situaciones, Windows ofrece una manera de facilitar el conocimiento por monitor al permitirle ejecutar algunas de las ventanas de la aplicación (solo de nivel superior) en su modo original de reconocimiento de PPP mientras se centra en la actualización de tiempo y energía en las partes más importantes de la interfaz de usuario.
 
 A continuación se muestra una ilustración de cómo podría ser esto: actualice la interfaz de usuario de la aplicación principal ("Ventana principal" en la ilustración) para que se ejecute con reconocimiento de PPP por monitor mientras ejecuta otras ventanas en su modo existente ("Ventana secundaria").
 
 ![diferencias en el escalado de ppp entre modos de reconocimiento](images/hub-page-illustrations.png)
 
-Antes de la Windows 10 de aniversario (1607), el modo de reconocimiento de PPP de un proceso era una propiedad de todo el proceso. A partir de la Windows 10 de aniversario, esta propiedad ahora se puede establecer por **ventana de nivel** superior. (**Las** ventanas secundarias deben seguir siendo iguales al tamaño de escalado de su elemento primario). Una ventana de nivel superior se define como una ventana sin elemento primario. Suele ser una ventana "normal" con botones minimizar, maximizar y cerrar. El escenario para el que está pensado el reconocimiento de PPP del subproceso es que la interfaz de usuario secundaria se escale mediante Windows (mapa de bits extendido) mientras se centra el tiempo y los recursos en la actualización de la interfaz de usuario principal.
+Antes de la Windows 10 de aniversario (1607), el modo de reconocimiento de PPP de un proceso era una propiedad para todo el proceso. A partir de la Windows 10 de aniversario, esta propiedad ahora se puede establecer por **ventana de nivel** superior. (**Las** ventanas secundarias deben seguir siendo iguales al tamaño de escalado de su elemento primario). Una ventana de nivel superior se define como una ventana sin elemento primario. Suele ser una ventana "normal" con botones minimizar, maximizar y cerrar. El escenario para el que está pensado el reconocimiento de PPP del subproceso es que la interfaz de usuario secundaria se escale mediante Windows (mapa de bits extendido) mientras se centra el tiempo y los recursos en actualizar la interfaz de usuario principal.
 
 Para habilitar el reconocimiento de PPP del subproceso, llame a [**SetThreadDpiAwarenessContext**](/windows/desktop/api/Winuser/nf-winuser-setthreaddpiawarenesscontext) antes y después de cualquier llamada de creación de ventana. La ventana que se crea se asociará con el reconocimiento de PPP que estableció a través de SetThreadDpiAwarenessContext. Use la segunda llamada para restaurar el reconocimiento de PPP del subproceso actual.
 
-Aunque el escalado de PPP del sub process le permite confiar en Windows para realizar parte del escalado de PPP para la aplicación, puede aumentar la complejidad de la aplicación. Es importante que comprenda las desventajas de este enfoque y la naturaleza de las complejidades que presenta. Para obtener más información sobre el reconocimiento de PPP de sub process, consulte [Mixed-Mode PPP Scaling and DPI-aware APIs (Escalado](high-dpi-improvements-for-desktop-applications.md) de PPP en modo mixto y API con reconocimiento de PPP).
+Aunque el escalado de PPP del sub process le permite confiar en Windows realizar parte del escalado de PPP para la aplicación, puede aumentar la complejidad de la aplicación. Es importante que comprenda las desventajas de este enfoque y la naturaleza de las complejidades que presenta. Para obtener más información sobre el reconocimiento de PPP de sub process, consulte [Mixed-Mode PPP Scaling and DPI-aware APIs (Escalado](high-dpi-improvements-for-desktop-applications.md) de PPP en modo mixto y API con reconocimiento de PPP).
 
 ## <a name="testing-your-changes"></a>Prueba de los cambios
 
@@ -243,7 +243,7 @@ Después de actualizar la aplicación para que sea compatible con PPP por monito
 1.  Mover ventanas de aplicación de un lado a otro entre pantallas de distintos valores de PPP
 2.  Inicio de la aplicación en pantallas de distintos valores de PPP
 3.  Cambio del factor de escala para el monitor mientras se ejecuta la aplicación
-4.  Cambiar la pantalla que se usa como pantalla principal, salir de Windows y, a continuación, volver _a_ probar la aplicación después de volver a iniciar sesión. Esto es especialmente útil para buscar código que usa dimensiones o tamaños codificados de forma fuerte.
+4.  Cambiar la pantalla que se usa como pantalla principal, salir de Windows y, _a_ continuación, volver a probar la aplicación después de volver a iniciar sesión. Esto es especialmente útil para buscar código que usa dimensiones o tamaños codificados de forma fuerte.
 
 ## <a name="common-pitfalls-win32"></a>Problemas comunes (Win32)
 
@@ -252,26 +252,26 @@ Después de actualizar la aplicación para que sea compatible con PPP por monito
 Cuando Windows la ventana de la aplicación un mensaje [**\_ WM PPPCHANGED,**](wm-dpichanged.md) este mensaje incluye un rectángulo sugerido que debe usar para cambiar el tamaño de la ventana. Es fundamental que la aplicación use este rectángulo para cambiar su tamaño, ya que esto hará lo siguiente:
 
 1.  Asegúrese de que el cursor del mouse permanecerá en la misma posición relativa en la ventana al arrastrar entre las pantallas.
-2.  Impedir que la ventana de la aplicación entre en un ciclo de cambio de ppp recursivo donde un cambio de PPP desencadena un cambio posterior de PPP, lo que desencadena otro cambio de PPP.
+2.  Evite que la ventana de la aplicación entre en un ciclo recursivo de cambio de ppp en el que un cambio de PPP desencadena un cambio posterior de PPP, lo que desencadena otro cambio de PPP.
 
-Si tiene requisitos específicos de la aplicación que le impiden usar el rectángulo sugerido que Windows proporciona en el mensaje WM \_ PPPCHANGED, vea [**WM \_ GETDPISCALEDSIZE**](wm-getdpiscaledsize.md). Este mensaje se puede usar para proporcionar Windows tamaño deseado que quiera usar una vez que se haya producido el cambio de PPP, a la vez que se evitan los problemas descritos anteriormente.
+Si tiene requisitos específicos de la aplicación que le impiden usar el rectángulo sugerido que Windows proporciona en el mensaje WM \_ PPPCHANGED, vea [**WM \_ GETDPISCALEDSIZE**](wm-getdpiscaledsize.md). Este mensaje se puede usar para proporcionar Windows tamaño deseado que le gustaría usar una vez que se haya producido el cambio de PPP, a la vez que se evitan los problemas descritos anteriormente.
 
 **Falta de documentación sobre virtualización**
 
-Cuando un HWND o un proceso se ejecuta como PPP no consciente o compatible con PPP del sistema, se puede ajustar el mapa de bits Windows. Cuando esto sucede, Windows escala y convierte la información confidencial de PPP de algunas API en el espacio de coordenadas del subproceso que realiza la llamada. Por ejemplo, si un subproceso sin reconocimiento de PPP consulta el tamaño de la pantalla mientras se ejecuta en una pantalla de valores altos de PPP, Windows virtualizará la respuesta dada a la aplicación como si la pantalla estuviera en unidades de 96 PPP. Como alternativa, cuando un subproceso compatible con PPP del sistema interactúa con una pantalla con un PPP diferente al que estaba en uso cuando se inició la sesión del usuario actual, Windows escalará con PPP algunas llamadas API al espacio de coordenadas que usaría el HWND si se estaba ejecutando en su factor de escala de PPP original.
+Cuando un HWND o un proceso se ejecuta como ppp sin reconocimiento o reconocimiento de PPP del sistema, se puede ajustar el mapa de bits Windows. Cuando esto sucede, Windows escala y convierte la información confidencial de PPP de algunas API en el espacio de coordenadas del subproceso que realiza la llamada. Por ejemplo, si un subproceso sin reconocimiento de PPP consulta el tamaño de la pantalla mientras se ejecuta en una pantalla con valores altos de PPP, Windows virtualizará la respuesta dada a la aplicación como si la pantalla estuviera en unidades de 96 PPP. Como alternativa, cuando un subproceso compatible con PPP del sistema interactúa con una pantalla con un PPP diferente al que estaba en uso cuando se inició la sesión del usuario actual, Windows escalará con PPP algunas llamadas API al espacio de coordenadas que usaría el HWND si se ejecutase en su factor de escala de PPP original.
 
-Al actualizar correctamente la aplicación de escritorio a un escalado de PPP, puede ser difícil saber qué llamadas API pueden devolver valores virtualizados en función del contexto del subproceso. Esta información no está suficientemente documentada actualmente por Microsoft. Tenga en cuenta que si llama a cualquier API del sistema desde un contexto de subproceso que no es consciente de PPP o compatible con PPP del sistema, el valor devuelto podría virtualizarse. Por lo tanto, asegúrese de que el subproceso se ejecuta en el contexto de PPP que espera al interactuar con la pantalla o ventanas individuales. Al cambiar temporalmente el contexto de PPP de un subproceso mediante [SetThreadDpiAwarenessContext](/windows/desktop/api/Winuser/nf-winuser-setthreaddpiawarenesscontext), asegúrese de restaurar el contexto anterior cuando haya terminado para evitar que se provoque un comportamiento incorrecto en otra parte de la aplicación.
+Al actualizar la aplicación de escritorio a un escalado de PPP correctamente, puede ser difícil saber qué llamadas API pueden devolver valores virtualizados en función del contexto del subproceso. Esta información no está suficientemente documentada actualmente por Microsoft. Tenga en cuenta que si llama a cualquier API del sistema desde un contexto de subproceso que no es consciente de PPP o compatible con PPP del sistema, el valor devuelto podría estar virtualizado. Por lo tanto, asegúrese de que el subproceso se ejecuta en el contexto de PPP que espera al interactuar con la pantalla o ventanas individuales. Al cambiar temporalmente el contexto de PPP de un subproceso mediante [SetThreadDpiAwarenessContext,](/windows/desktop/api/Winuser/nf-winuser-setthreaddpiawarenesscontext)asegúrese de restaurar el contexto anterior cuando haya terminado para evitar que se provoque un comportamiento incorrecto en otra parte de la aplicación.
 
 **Muchas Windows API no tienen un contexto de PPP**
 
-Muchas API de Windows heredadas no incluyen un contexto DE PPP o HWND como parte de su interfaz. Como resultado, los desarrolladores a menudo tienen que realizar trabajo adicional para controlar el escalado de cualquier información confidencial de PPP, como tamaños, puntos o iconos. Por ejemplo, los desarrolladores que usan [LoadIcon](/windows/desktop/api/winuser/nf-winuser-loadiconw) deben usar iconos cargados extendidos de mapa de bits o usar API alternativas para cargar iconos con el tamaño correcto para el PPP adecuado, como [LoadImage.](/windows/desktop/api/winuser/nf-winuser-loadimagew)
+Muchas API de Windows heredadas no incluyen un contexto DE PPP o HWND como parte de su interfaz. Como resultado, los desarrolladores a menudo tienen que realizar trabajo adicional para controlar el escalado de cualquier información confidencial de PPP, como tamaños, puntos o iconos. Por ejemplo, los desarrolladores que usan [LoadIcon](/windows/desktop/api/winuser/nf-winuser-loadiconw) deben usar iconos cargados de ajuste de mapa de bits o usar API alternativas para cargar iconos con el tamaño correcto para el PPP adecuado, como [LoadImage.](/windows/desktop/api/winuser/nf-winuser-loadimagew)
 
 **Restablecimiento forzado del reconocimiento de PPP en todo el proceso**
 
 En general, el modo de reconocimiento de PPP del proceso no se puede cambiar después de la inicialización del proceso. Windows cambiar a la fuerza el modo de reconocimiento de PPP del proceso si intenta interrumpir el requisito de que todos los HWND de un árbol de ventana tengan el mismo modo de reconocimiento de PPP. En todas las versiones de Windows, a partir de Windows 10 1703, no es posible que los HWND diferentes de un árbol HWND se ejecuten en distintos modos de reconocimiento de PPP. Si intenta crear una relación de elementos primarios secundarios que interrumpe esta regla, se puede restablecer el reconocimiento de PPP de todo el proceso. Esto se puede desencadenar mediante:
 
-1.  Una llamada a CreateWindow en la que el objeto pasado en la ventana primaria tiene un modo de reconocimiento de PPP diferente que el subproceso que realiza la llamada.
-2.  Una llamada SetParent donde las dos ventanas están asociadas a diferentes modos de reconocimiento de PPP.
+1.  Una llamada a CreateWindow en la que el objeto pasado en la ventana primaria tiene un modo de reconocimiento de PPP diferente al del subproceso que realiza la llamada.
+2.  Una llamada SetParent donde las dos ventanas están asociadas a distintos modos de reconocimiento de PPP.
 
 En la tabla siguiente se muestra lo que sucede si intenta infringir esta regla:
 
@@ -279,7 +279,7 @@ En la tabla siguiente se muestra lo que sucede si intenta infringir esta regla:
 
 | Operación                 | Windows 8.1                                  | Windows 10 (1607 y versiones anteriores)                | Windows 10 (1703 y versiones posteriores)                  |
 |---------------------------|----------------------------------------------|----------------------------------------------|----------------------------------------------|
-| CreateWindow (en proceso)    | N/D                                          | **Herencias secundarias** (modo mixto)              | **Herencias secundarias** (modo mixto)              |
+| CreateWindow (In-Proc)    | N/D                                          | **Herencias secundarias** (modo mixto)              | **Herencias secundarias** (modo mixto)              |
 | CreateWindow (cross-proc) | **Restablecimiento forzado** (del proceso del autor de la llamada)       | **Herencias secundarias** (modo mixto)              | **Restablecimiento forzado** (del proceso del autor de la llamada)       |
 | SetParent (In-Proc)       | N/D                                          | **Restablecimiento forzado** (del proceso actual)        | **Error** (ERROR \_ ESTADO NO \_ VÁLIDO)             |
 | SetParent (cross-proc)    | **Restablecimiento forzado** (del proceso de la ventana secundaria) | **Restablecimiento forzado** (del proceso de la ventana secundaria) | **Restablecimiento forzado** (del proceso de la ventana secundaria) |
@@ -292,9 +292,9 @@ En la tabla siguiente se muestra lo que sucede si intenta infringir esta regla:
 
 <dl> <dt>
 
-[Referencia de API de valores altos de PPP](high-dpi-reference.md)
+[Referencia de LA API con valores altos de PPP](high-dpi-reference.md)
 </dt> <dt>
 
-[API de escalado de PPP en modo mixto y API con reconocimiento de PPP.](high-dpi-improvements-for-desktop-applications.md)
+[API con reconocimiento de PPP y escalado de PPP en modo mixto.](high-dpi-improvements-for-desktop-applications.md)
 </dt> </dl>
 

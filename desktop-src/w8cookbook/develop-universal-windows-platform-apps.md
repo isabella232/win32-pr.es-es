@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 332864b00614ceb494b2832c0b565a5a10819d631ecb6c4098284a94ad2c038e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b3654c1c8773a813fcc7f88b21a86c2ef6049184
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119935445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574413"
 ---
 # <a name="develop-universal-windows-platform-uwp-apps"></a>Desarrollo de aplicaciones Windows plataforma universal (UWP)
 
-Animamos a todos los ISV de aplicaciones de escritorio (Win32) a que traigan sus aplicaciones de escritorio a la Plataforma universal de [Windows (UWP)](https://developer.microsoft.com/windows/bridges/desktop/) a través de Puente de dispositivo de escritorio. Las aplicaciones para UWP también se admiten en la [Tienda Windows](https://blogs.windows.com/buildingapps/2016/02/04/windows-store-trends-february-2016/), por lo que es más fácil actualizar automáticamente a los usuarios a una versión coherente, y esto reduce los costes de soporte técnico.
+Animamos a todos los ISV de aplicaciones de escritorio (Win32) a que traigan sus aplicaciones de escritorio a la Plataforma universal de [Windows (UWP)](https://developer.microsoft.com/windows/bridges/desktop/) a través del Puente de dispositivo de escritorio. Las aplicaciones para UWP también se admiten en la [Tienda Windows](https://blogs.windows.com/buildingapps/2016/02/04/windows-store-trends-february-2016/), por lo que es más fácil actualizar automáticamente a los usuarios a una versión coherente, y esto reduce los costes de soporte técnico.
 
-Si las aplicaciones de escritorio no se pueden convertir mediante el Puente de dispositivo de escritorio, se recomienda encarecidamente usar un instalador que siga los procedimientos recomendados y asegurarse de que está totalmente probado. Un instalador es la primera experiencia del usuario o cliente con la aplicación. Con demasiada frecuencia, el instalador no funciona correctamente o no se ha probado de forma completa en todos los escenarios. El Kit de certificación de aplicaciones de [Windows](https://dev.windows.com/develop/app-certification-kit) puede ayudarle a probar la instalación y desinstalación de la aplicación Win32 y a identificar el uso de API no documentadas, así como otros problemas básicos de procedimientos recomendados relacionados con el rendimiento antes de que lo hagan los usuarios.
+Si las aplicaciones de escritorio no se pueden convertir mediante el Puente de dispositivo de escritorio, se recomienda encarecidamente usar un instalador que siga los procedimientos recomendados y asegurarse de que está totalmente probado. Un instalador es la primera experiencia del usuario o cliente con la aplicación. Con demasiada frecuencia, el instalador no funciona correctamente o no se ha probado de forma completa en todos los escenarios. El Kit de certificación de aplicaciones de [Windows](https://dev.windows.com/develop/app-certification-kit) puede ayudarle a probar la instalación y desinstalación de la aplicación Win32 y a identificar el uso de API no documentadas, así como otros problemas básicos de procedimientos recomendados relacionados con el rendimiento antes que los usuarios.
 
 ## <a name="best-practices"></a>Procedimientos recomendados:
 

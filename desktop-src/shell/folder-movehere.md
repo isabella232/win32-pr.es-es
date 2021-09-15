@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: eb826d23a168d81d838341e96fa5e613f8b6f5261a3cda548a2be320acebbde8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: da6590d63f4a3c79252e25f3625c0ee75b146b6d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118458923"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574561"
 ---
 # <a name="foldermovehere-method"></a>Método Folder.MoveHere
 
@@ -49,7 +49,7 @@ Elemento o elementos que se moverá. Puede ser una cadena que representa un nomb
 
 </dd> <dt>
 
-*vOptions* \[ en, opcional\]
+*vOptions* \[ in, opcional\]
 </dt> <dd>
 
 Tipo: **Variant**
@@ -76,7 +76,7 @@ No mostrar un cuadro de diálogo de progreso.
 
 </dt> <dd>
 
-Asigne al archivo que se está operando con un nombre nuevo en una operación de movimiento, copia o cambio de nombre si ya existe un archivo con el nombre de destino.
+Asigne al archivo que se está operando con un nuevo nombre en una operación de movimiento, copia o cambio de nombre si ya existe un archivo con el nombre de destino.
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Conserve la información de deshacer, si es posible.
 
 </dt> <dd>
 
-Realice la operación en los archivos solo si se especifica un nombre de archivo comodín ( \* . \* ).
+Realice la operación en archivos solo si se especifica un nombre de archivo comodín ( \* . \* ).
 
 </dd> <dt>
 
@@ -183,16 +183,16 @@ Solo funciona en el directorio local. No funcione de forma recursiva en subdirec
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> No todos los métodos se implementan para todas las carpetas. Por ejemplo, el [**método ParseName**](folder-parsename.md) no se implementa para la carpeta Panel de control (CSIDL \_ CONTROLS). Si intenta llamar a un método sin implementar, se 0x800A01BD error (decimal 445).
+> No todos los métodos se implementan para todas las carpetas. Por ejemplo, el [**método ParseName**](folder-parsename.md) no se implementa para la carpeta Panel de control (CSIDL \_ CONTROLS). Si intenta llamar a un método sin implementar, se genera 0x800A01BD error (decimal 445).
 
  
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa MoveHere** para mover el archivo Temp.txt desde el directorio raíz de la unidad C a la Windows \\ C: . Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa MoveHere** para mover el archivo Temp.txt desde el directorio raíz de la unidad C a la carpeta Windows \\ C: . Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -271,12 +271,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

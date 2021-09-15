@@ -5,15 +5,15 @@ title: Función EncryptMessage (NTLM)
 ms.topic: reference
 ms.date: 07/25/2019
 ms.openlocfilehash: 5c36ce31793a7dc889b6dec40acac7606cc38bf3
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122480811"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575396"
 ---
 # <a name="encryptmessage-ntlm-function"></a>Función EncryptMessage (NTLM)
 
-La **función EncryptMessage (NTLM)** cifra un mensaje para proporcionar [*privacidad.*](../secgloss/p-gly.md) **EncryptMessage (NTLM) permite** que una aplicación elija entre los algoritmos [*criptográficos*](../secgloss/c-gly.md) admitidos por el mecanismo elegido. La **función EncryptMessage (NTLM)** usa el contexto [*de seguridad*](../secgloss/s-gly.md) al que hace referencia el identificador de contexto. Algunos paquetes no tienen mensajes que cifrar o descifrar, sino que proporcionan un hash de [*integridad*](../secgloss/h-gly.md) que se puede comprobar.
+La **función EncryptMessage (NTLM)** cifra un mensaje para proporcionar [*privacidad.*](../secgloss/p-gly.md) **EncryptMessage (NTLM) permite** que una aplicación elija entre los algoritmos [*criptográficos*](../secgloss/c-gly.md) admitidos por el mecanismo elegido. La **función EncryptMessage (NTLM)** usa el [*contexto de seguridad*](../secgloss/s-gly.md) al que hace referencia el identificador de contexto. Algunos paquetes no tienen mensajes que cifrar o descifrar, sino que proporcionan un hash de [*integridad*](../secgloss/h-gly.md) que se puede comprobar.
 
 > [!Note]  
 > Se puede llamar a **EncryptMessage (NTLM)** y [**DecryptMessage (NTLM)**](decryptmessage--ntlm.md) al mismo tiempo desde dos subprocesos diferentes en un único contexto de interfaz de proveedor de compatibilidad de seguridad [](../secgloss/s-gly.md) (SSPI) si se cifra un subproceso y el otro se descifra. Si se cifra más de un subproceso o se descifra más de un subproceso, cada subproceso debe obtener un contexto único.
@@ -42,18 +42,18 @@ Marcas específicas del paquete que indican la calidad de la protección. Un [*p
 Este parámetro puede ser la marca siguiente.
 
 
-| Valor | Significado | 
+| Value | Significado | 
 |-------|---------|
 | <span id="SECQOP_WRAP_NO_ENCRYPT"></span><span id="secqop_wrap_no_encrypt"></span><dl><dt><strong>SECQOP_WRAP_NO_ENCRYPT</strong></dt></dl> | Generar un encabezado o finalizador, pero no cifrar el mensaje.<br /><blockquote>[!Note]<br />KERB_WRAP_NO_ENCRYPT tiene el mismo valor y el mismo significado.</blockquote><br /> | 
 
 
 *pMessage* \[ in, out\]
 
-Puntero a una [**estructura SecBufferDesc.**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) En la entrada, la estructura hace referencia a una o varias [**estructuras secBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer) que pueden ser de tipo SECBUFFER \_ DATA. Ese búfer contiene el mensaje que se va a cifrar. El mensaje se cifra en su lugar, sobrescribiendo el contenido original de la estructura.
+Puntero a una [**estructura SecBufferDesc.**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) En la entrada, la estructura hace referencia a una o varias [**estructuras SecBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer) que pueden ser de tipo SECBUFFER \_ DATA. Ese búfer contiene el mensaje que se va a cifrar. El mensaje se cifra en su lugar, sobrescribiendo el contenido original de la estructura.
 
 La función no procesa búferes con el atributo SECBUFFER \_ READONLY.
 
-La longitud de la estructura [**SecBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer) que contiene el mensaje no debe ser mayor que **cbMaximumMessage,** que se obtiene de la función [**QueryContextAttributes (NTLM) (SECPKG**](querycontextattributes--ntlm.md) \_ ATTR \_ STREAM \_ SIZES).
+La longitud de la estructura [**SecBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer) que contiene el mensaje no debe ser mayor que **cbMaximumMessage**, que se obtiene de la función [**QueryContextAttributes (NTLM) (SECPKG**](querycontextattributes--ntlm.md) \_ ATTR \_ STREAM \_ SIZES).
 
 Las aplicaciones que no usan SSL deben proporcionar [**un SecBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer) de tipo SECBUFFER \_ PADDING.
 
@@ -77,7 +77,7 @@ Si se produce un error en la función, devuelve uno de los siguientes códigos d
 | **TOKEN \_ NO VÁLIDO DE SEC E \_ \_**          | No se encontró ningún \_ búfer de tipo DE DATOS SECBUFFER.                                                                                            |
 | **SEG \_ E \_ QOP \_ NO \_ COMPATIBLE**>    | El contexto de seguridad [*no*](../secgloss/i-gly.md) admite la confidencialidad ni la [*integridad.*](../secgloss/s-gly.md)             |
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función EncryptMessage (NTLM)** cifra un mensaje basado en el mensaje y la clave [*de sesión*](../secgloss/s-gly.md) desde un contexto de [*seguridad*](../secgloss/s-gly.md).
 
@@ -99,7 +99,7 @@ Para obtener un rendimiento óptimo, las *estructuras pMessage* se deben asignar
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Valor |
+| Requisito | Value |
 | -------------------------|-------------------------------------------|
 | Cliente mínimo compatible | Windows XP \[ solo aplicaciones de escritorio\]          |
 | Servidor mínimo compatible | Windows Solo aplicaciones de escritorio de Server 2003 \[\] |

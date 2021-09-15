@@ -7,12 +7,12 @@ keywords:
 - WNet WNet , descrito
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ae26c503456d803edaed0b976e33020565aaa2364e7fc465c17a62cadf9068c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c91f7c8f58d4e44439bac18a2b7d7b850b21f955
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119760485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575613"
 ---
 # <a name="about-windows-networking"></a>Acerca de Windows Networking
 

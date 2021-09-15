@@ -4,12 +4,12 @@ ms.assetid: 76bb9bb7-3383-4e5a-ae75-a11c40f318e2
 title: System.Communication.TaskStatus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 982f0b1be8b4cd284f50d0132d9fda02fc434a226fba61fc8cc83ca046cd7f99
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd74f25400093d9719607a718b4d1fc727ff36de
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118970734"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574653"
 ---
 # <a name="systemcommunicationtaskstatus"></a>System.Communication.TaskStatus
 
@@ -94,7 +94,7 @@ propertyDescription
             defineName = TASKSTATUS_DEFERRED
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

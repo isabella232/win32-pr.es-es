@@ -1,6 +1,6 @@
 ---
-title: 'breakp: vs'
-description: Interrumpir condicionalmente el bucle actual en el endloop más cercano (frente a o endrep) frente a Usar uno de los componentes del registro de predicado como condición para determinar si se debe realizar o no la instrucción.
+title: breakp- vs
+description: Interrumpir condicionalmente el bucle actual en el punto de conexión más cercano (frente a o endrep) frente a usar uno de los componentes del registro de predicado como condición para determinar si se debe realizar o no la instrucción.
 ms.assetid: 940252a0-6f6a-45d8-9d2f-315cc97686ca
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8a768acaecaa77a42990b34c50cd8eccb24d61353550751f3ed830e7844d7624
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dbd0d5e20040bc2d353287eb4243c9e9d6d21dc8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118794319"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574017"
 ---
-# <a name="breakp---vs"></a>breakp: vs
+# <a name="breakp---vs"></a>breakp- vs
 
-Interrumpir condicionalmente el bucle actual en el [endloop más](endloop---vs.md) cercano ( frente a [o endrep ) frente a](endrep---vs.md). Use uno de los componentes del registro de predicado como condición para determinar si se debe realizar o no la instrucción.
+Salga condicionalmente del bucle actual en el punto de conexión más cercano [( frente](endloop---vs.md) a o [endrep ) frente a](endrep---vs.md). Use uno de los componentes del registro de predicado como condición para determinar si se debe realizar o no la instrucción.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -35,9 +35,9 @@ Donde:
 
 -   \[!\] booleano opcional NOT.
 -   p0 es el registro de predicado. Vea [Predicate Register](dx9-graphics-reference-asm-vs-registers-predicate.md).
--   {x \| y \| z \| w} es el swzzle de replicación necesario en p0.
+-   {x \| y \| z \| w} es la réplica necesaria en p0.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

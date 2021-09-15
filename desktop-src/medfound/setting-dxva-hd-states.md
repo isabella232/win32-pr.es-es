@@ -4,12 +4,12 @@ ms.assetid: 7f339ee8-01e6-4bbb-8563-020ff0e02499
 title: Configuración de estados DXVA-HD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 293057c5452eec45b8377b5cddbe8fe959214f5f11f445171ecf22ba752242c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 91766e3eb10399d908ab361e13db4b94fe07b653
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118057821"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574792"
 ---
 # <a name="setting-dxva-hd-states"></a>Configuración de estados DXVA-HD
 
@@ -56,7 +56,7 @@ Se definen los siguientes estados de blit:
 | **DXVAHD \_ BLT \_ STATE \_ TARGET \_ RECT**         | Rectángulo de destino.                                                            |
 | **COLOR DE FONDO DE \_ ESTADO BLT DXVAHD \_ \_ \_**    | Color de fondo.                                                            |
 | **ESPACIO DE COLOR DE SALIDA \_ DE ESTADO BLT DXVAHD \_ \_ \_ \_** | Espacio de color de salida.                                                          |
-| **DXVAHD \_ BLT \_ STATE \_ ALPHA \_ FILL**          | Modo de relleno alfa.                                                             |
+| **RELLENO ALFA DE ESTADO BLT DXVAHD \_ \_ \_ \_**          | Modo de relleno alfa.                                                             |
 | **CONSTRICCIÓN DEL \_ ESTADO BLT \_ DE DXVAHD \_**         | Constricción. Este estado controla si el dispositivo reduce la muestra de la salida. |
 
 

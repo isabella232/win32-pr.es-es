@@ -1,7 +1,7 @@
 ---
 description: Ordena una lista de direcciones IP.
 ms.assetid: 1266d6f3-e9f5-4e6b-9431-7329df156f0a
-title: función sortIpAddressList
+title: Función sortIpAddressList
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 3144ecf044f832a49dd6aa4d9fabf76ce8e81c79c195ec101d294c432a8081e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 600d87a58248aafdef5b0a8a7f284f4094c95780
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118562460"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581321"
 ---
-# <a name="sortipaddresslist-function"></a>función sortIpAddressList
+# <a name="sortipaddresslist-function"></a>Función sortIpAddressList
 
 Ordena una lista de direcciones IP.
 
@@ -38,7 +38,7 @@ Cadena delimitada por punto y coma que contiene direcciones IP.
 
 Lista de direcciones IP delimitadas por punto y coma ordenadas o una cadena vacía si no se puede ordenar la lista de direcciones IP.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los implementadores FindProxyforURLEx deben agregar código que divide la cadena de direcciones IP delimitadas por punto y coma en direcciones independientes.
 

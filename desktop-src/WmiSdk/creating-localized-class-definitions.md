@@ -2,17 +2,17 @@
 description: La creación de definiciones de clase localizadas es un proceso de tres pasos.
 ms.assetid: e303b894-07c4-44e3-9c57-58b1db16ae9a
 ms.tgt_platform: multiple
-title: Crear definiciones de clases localizadas
+title: Crear definiciones de clase localizadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2d7cb5f2970c3696de7cdd1bdb9d61d6eed5e86dc60c8941eec475d15145dd0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d41a183c1478c259b0428cd827088a769e680425
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119374775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575385"
 ---
-# <a name="creating-localized-class-definitions"></a>Crear definiciones de clases localizadas
+# <a name="creating-localized-class-definitions"></a>Crear definiciones de clase localizadas
 
 La creación de definiciones de clase localizadas es un proceso de tres pasos. Para empezar, escriba código MOF que defina las clases, incluidos todos los calificadores que deben localizarse. Este archivo original se denomina archivo "MOF maestro" porque contiene todos los calificadores y propiedades que definen la clase.
 
@@ -55,7 +55,7 @@ En los pasos siguientes se describe cómo crear y almacenar una definición de c
     };
     ```
 
-2.  Cree versiones específicas del idioma y del lenguaje neutros del archivo MOF mediante la compilación del archivo MasterMOF.mof.
+2.  Cree versiones del archivo MOF sin idioma y específicas del idioma mediante la compilación del archivo MasterMOF.mof.
 
     Escriba el siguiente comando en un símbolo del sistema para compilar el archivo MasterMOF.mof.
 

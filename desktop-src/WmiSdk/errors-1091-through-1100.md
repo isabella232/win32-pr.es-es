@@ -6,11 +6,11 @@ title: Errores del 1091 al 1100
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: dc57b8eb628de86b4a7d737bacec13bc2fdeadfb
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880084"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581288"
 ---
 # <a name="errors-1091-through-1100"></a>Errores del 1091 al 1100
 
@@ -36,7 +36,7 @@ Describe los errores del proveedor SNMP de WMI del 1091 al 1100.
 
 <dl> <dt>
 
-<span id="_1091__Warning_____fileName___line___IMPLIED_clause_is_not_allowed_for_fixed_size_objects_"></span><span id="_1091__warning_____filename___line___implied_clause_is_not_allowed_for_fixed_size_objects_"></span><span id="_1091__WARNING_____FILENAME___LINE___IMPLIED_CLAUSE_IS_NOT_ALLOWED_FOR_FIXED_SIZE_OBJECTS_"></span>**<1091, Advertencia>: " fileName :<línea> cláusula IMPLIED no se permite para objetos de &lt; &gt; tamaño \# fijo"**
+<span id="_1091__Warning_____fileName___line___IMPLIED_clause_is_not_allowed_for_fixed_size_objects_"></span><span id="_1091__warning_____filename___line___implied_clause_is_not_allowed_for_fixed_size_objects_"></span><span id="_1091__WARNING_____FILENAME___LINE___IMPLIED_CLAUSE_IS_NOT_ALLOWED_FOR_FIXED_SIZE_OBJECTS_"></span>**<1091, Advertencia>: " fileName :<línea> cláusula IMPLIED no se permite para objetos &lt; &gt; de tamaño \# fijo"**
 </dt> <dd>
 
 Advertencia semántica de módulo específico de SNMPv2C de invocación de macro **OBJECT-TYPE.** La palabra clave IMPLIED solo puede estar presente para un objeto que tenga una sintaxis de longitud variable, como OBJECT IDENTIFIER o OCTET STRING de longitud variable, en la cláusula INDEX.
@@ -69,7 +69,7 @@ Asignación de tipos, error semántico de módulo específico de SNMPv1. Una enu
 
 <dl> <dt>
 
-<span id="_1094._Fatal_____fileName__line____The_type_used_in_the_enumeration_does_not_resolve_to_one_of_the_allowed_types_"></span><span id="_1094._fatal_____filename__line____the_type_used_in_the_enumeration_does_not_resolve_to_one_of_the_allowed_types_"></span><span id="_1094._FATAL_____FILENAME__LINE____THE_TYPE_USED_IN_THE_ENUMERATION_DOES_NOT_RESOLVE_TO_ONE_OF_THE_ALLOWED_TYPES_"></span>**<1094. Error>: " fileName<línea>: el tipo usado en la enumeración no se &lt; resuelve en uno de los tipos &gt; \# permitidos"**
+<span id="_1094._Fatal_____fileName__line____The_type_used_in_the_enumeration_does_not_resolve_to_one_of_the_allowed_types_"></span><span id="_1094._fatal_____filename__line____the_type_used_in_the_enumeration_does_not_resolve_to_one_of_the_allowed_types_"></span><span id="_1094._FATAL_____FILENAME__LINE____THE_TYPE_USED_IN_THE_ENUMERATION_DOES_NOT_RESOLVE_TO_ONE_OF_THE_ALLOWED_TYPES_"></span>**<1094. Error>: " fileName<línea>: el tipo utilizado en la enumeración no se resuelve en uno de los &lt; &gt; tipos \# permitidos"**
 </dt> <dd>
 
 Asignación de tipos, error semántico de módulo específico de SNMPv2C. El tipo utilizado en una enumeración debe ser INTEGER o un tipo equivalente, u otra enumeración.
@@ -102,10 +102,10 @@ Asignación de tipos, error semántico de módulo específico de SNMPv2C. Los va
 
 <dl> <dt>
 
-<span id="_1098__Fatal_____fileName__line____Duplicate_value__value__in_BITS_construct_"></span><span id="_1098__fatal_____filename__line____duplicate_value__value__in_bits_construct_"></span><span id="_1098__FATAL_____FILENAME__LINE____DUPLICATE_VALUE__VALUE__IN_BITS_CONSTRUCT_"></span>**<1098, error irresal>: &lt; "fileName &gt;<line \#>: Duplicate value value in BITS &lt; &gt; construct"**
+<span id="_1098__Fatal_____fileName__line____Duplicate_value__value__in_BITS_construct_"></span><span id="_1098__fatal_____filename__line____duplicate_value__value__in_bits_construct_"></span><span id="_1098__FATAL_____FILENAME__LINE____DUPLICATE_VALUE__VALUE__IN_BITS_CONSTRUCT_"></span>**<1098, error irresal>: " fileName<línea>: Valor duplicado en la &lt; &gt; construcción \# &lt; &gt; bits"**
 </dt> <dd>
 
-Asignación de tipos, error semántico de módulo específico de SNMPv2C. No debe haber nombres ni valores duplicados en una construcción de BITS. El <de \#> es la posición de la periodicidad del nombre o valor.
+Asignación de tipos, error semántico de módulo específico de SNMPv2C. No debe haber nombres ni valores duplicados en una construcción de BITS. El <línea \#> parámetro es la posición de la periodicidad del nombre o valor.
 
 </dd> </dl>
 
@@ -116,7 +116,7 @@ Asignación de tipos, error semántico de módulo específico de SNMPv2C. No deb
 <span id="_1099__Fatal_____fileName__line____Duplicate_name__identifier__in_BITS_construct_"></span><span id="_1099__fatal_____filename__line____duplicate_name__identifier__in_bits_construct_"></span><span id="_1099__FATAL_____FILENAME__LINE____DUPLICATE_NAME__IDENTIFIER__IN_BITS_CONSTRUCT_"></span>**<1099, error irre>: " fileName<línea>: Identificador de nombre duplicado en la &lt; &gt; construcción \# &lt; &gt; bits"**
 </dt> <dd>
 
-Asignación de tipos, error semántico de módulo específico de SNMPv2C. No debe haber nombres ni valores duplicados en una construcción de BITS. El <de \#> es la posición de la periodicidad del nombre o valor.
+Asignación de tipos, error semántico de módulo específico de SNMPv2C. No debe haber nombres ni valores duplicados en una construcción de BITS. El <línea \#> parámetro es la posición de la periodicidad del nombre o valor.
 
 </dd> </dl>
 

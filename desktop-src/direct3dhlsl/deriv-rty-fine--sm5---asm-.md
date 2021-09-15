@@ -4,12 +4,12 @@ description: Calcula la velocidad de cambio de los componentes. | deriv_rty_fine
 ms.assetid: 7C5769A6-443C-4208-BD09-3DF3C5902624
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 331ec5c887b221533f7d7d420530d009f32b203151b681b8c187bfb950462e65
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 97f0274fd04ae88ee412c95947691628754ba197
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119625925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573861"
 ---
 # <a name="deriv_rty_fine-sm5---asm"></a>deriv \_ rty \_ fine (sm5 - asm)
 
@@ -35,7 +35,7 @@ Calcula la velocidad de cambio de los componentes.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información, [vea deriv \_ rtx \_ fine.](deriv-rtx-fine--sm5---asm-.md)
 
@@ -59,12 +59,12 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 

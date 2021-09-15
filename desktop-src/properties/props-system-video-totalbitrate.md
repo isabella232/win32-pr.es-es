@@ -1,15 +1,15 @@
 ---
-description: Indica la velocidad total de datos &\# 0034;bits por segundo&0034; para todas las secuencias de \# audio y vídeo.
+description: Indica la velocidad total de datos &\# 0034;bits por segundo&0034; para todas las secuencias de \# vídeo y audio.
 ms.assetid: 7667da66-261c-4627-8322-2c939738659b
 title: System.Video.TotalBitrate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e02616f2961af961f44875dfa28edda9b3beb15c585908727ebebbdd5a6b7e20
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f89af8e54051c8c6b1c5a2a2408f7bb24a6ae2a9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119396634"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579661"
 ---
 # <a name="systemvideototalbitrate"></a>System.Video.TotalBitrate
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

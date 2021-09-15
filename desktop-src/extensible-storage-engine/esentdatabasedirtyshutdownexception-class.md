@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e56b68f893f0669733efc620d4b9fc68446d0f120ae0fa4dfdc4d2a5bc947e86
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a7fcb7a3dffd5626bcf8bfc926103951747ee07e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119736035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580093"
 ---
 # <a name="esentdatabasedirtyshutdownexception-class"></a>Clase EsentDatabaseDirtyShutdownException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. DatabaseDirtyShutdown exceptions.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

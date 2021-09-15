@@ -1,7 +1,7 @@
 ---
-description: Proporciona acceso a la memoria compartida entre los subprocesos de tableta.
+description: Proporciona acceso a la memoria compartida entre subprocesos de tableta.
 ms.assetid: 047ff598-7d20-49d7-bdd3-498fe5c778c6
-title: 'ITabletContextP:: UseSharedMemoryCommunications (método)'
+title: Método ITabletContextP::UseSharedMemoryCommunications
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,15 +15,15 @@ api_location:
 - Wisptis.exe
 - Wisptis.exe.dll
 ms.openlocfilehash: d7880e1d0377d9d0140a0c82509abd31182c724e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579461"
 ---
-# <a name="itabletcontextpusesharedmemorycommunications-method"></a>ITabletContextP:: UseSharedMemoryCommunications (método)
+# <a name="itabletcontextpusesharedmemorycommunications-method"></a>Método ITabletContextP::UseSharedMemoryCommunications
 
-Proporciona acceso a la memoria compartida entre los subprocesos de tableta.
+Proporciona acceso a la memoria compartida entre subprocesos de tableta.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,35 +44,35 @@ HRESULT UseSharedMemoryCommunications(
 
 <dl> <dt>
 
-*PID* \[ de de\]
+*pid* \[ En\]
 </dt> <dd>
 
-Identificador de proceso.
+Id. de proceso.
 
 </dd> <dt>
 
-*phEventMoreData* \[ enuncia\]
+*phEventMoreData* \[ out\]
 </dt> <dd>
 
-Identificador de evento que indica cuándo están disponibles los nuevos datos para su procesamiento.
+Identificador de eventos que indica cuándo hay nuevos datos disponibles para procesarse.
 
 </dd> <dt>
 
-*phEventClientReady* \[ enuncia\]
+*phEventClientReady* \[ out\]
 </dt> <dd>
 
-Identificador de evento devuelto que se usa para indicar que el cliente está listo para recibir datos. Señalado después del procesamiento de datos nuevos.
+Identificador de evento devuelto que se usa para indicar que el cliente está listo para recibir datos. Se señala después de procesar nuevos datos.
 
 </dd> <dt>
 
-*phMutexAccess* \[ enuncia\]
+*phMutexAccess* \[ out\]
 </dt> <dd>
 
-La exclusión mutua que concede acceso a la memoria compartida.
+Exclusión mutua que concede acceso a la memoria compartida.
 
 </dd> <dt>
 
-*phFileMapping* \[ enuncia\]
+*phFileMapping* \[ out\]
 </dt> <dd>
 
 Puntero al bloque de memoria compartida.
@@ -87,7 +87,7 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                            | Descripción                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>   | Correcto.<br/>                       |
+| <dl> <dt>**S \_ OK**</dt> </dl>   | Correcto.<br/>                       |
 | <dl> <dt>**E \_ FAIL**</dt> </dl> | Se ha producido un error no especificado.<br/> |
 
 
@@ -96,18 +96,18 @@ Este método puede devolver uno de estos valores.
 
 ## <a name="remarks"></a>Observaciones
 
-El método **UseSharedMemoryCommunications** se usa como parte del Protocolo de memoria compartida de Tablet PC. Dado que el servicio Wisptis tiene un nivel de integridad alto (IL), puede almacenar y obtener acceso a los datos almacenados en la memoria compartida sin necesidad de elevar sus privilegios.
+El **método UseSharedMemoryCommunications** se usa como parte del protocolo de memoria compartida de Tablet PC. Dado que el servicio Wisptis tiene un alto nivel de integridad (IL), puede almacenar y acceder a los datos almacenados en memoria compartida sin necesidad de elevar sus privilegios.
 
-La estructura de [**\_ encabezado SHAREDMEMORY**](sharedmemory-header.md) se convierte a partir de los datos a los que hace referencia la asignación de archivos y los datos de paquete sin formato siguen el **\_ encabezado SHAREDMEMORY**. Los datos de paquetes sin formato se pueden leer en la memoria compartida cuando se genera el evento al que hace referencia *pdwEventClientReady* .
+La [**estructura SHAREDMEMORY \_ HEADER**](sharedmemory-header.md) se convierte a partir de los datos a los que hace referencia la asignación de archivos y los datos de paquetes sin procesar siguen **a SHAREDMEMORY \_ HEADER**. Los datos de paquetes sin procesar se pueden leer de la memoria compartida cuando se genera el evento al que hace referencia *pdwEventClientReady.*
 
-En la lista siguiente se describe la secuencia de eventos para obtener acceso y usar la memoria compartida.
+En la lista siguiente se describe la secuencia de eventos para acceder a la memoria compartida y usarla.
 
 -   El cliente establece el evento clientReady.
 -   El cliente espera el evento moreData.
 -   El cliente adquiere la exclusión mutua.
--   El cliente Lee los datos de paquetes de la sección de memoria compartida después del encabezado y los números de serie después de los paquetes.
--   El cliente controla los datos en función del valor de **dwEvent**.
--   El cliente escribe-1 (0xFFFFFFFF) en **dwEvent**.
+-   El cliente lee los datos de paquetes de la sección de memoria compartida después del encabezado y los números de serie después de los paquetes.
+-   El cliente controla los datos en función del valor **de dwEvent**.
+-   El cliente escribe -1 (0xFFFFFFFF) en **dwEvent**.
 -   El cliente libera la exclusión mutua.
 -   El cliente establece el evento clientReady.
 
@@ -117,7 +117,7 @@ En la lista siguiente se describe la secuencia de eventos para obtener acceso y 
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -127,7 +127,7 @@ En la lista siguiente se describe la secuencia de eventos para obtener acceso y 
 
 <dl> <dt>
 
-[**Interfaz ITabletContextP**](itabletcontextp.md)
+[**ITabletContextP (interfaz)**](itabletcontextp.md)
 </dt> <dt>
 
 [**UseNamedSharedMemoryCommunications**](itabletcontextp-usenamedsharedmemorycommunications.md)

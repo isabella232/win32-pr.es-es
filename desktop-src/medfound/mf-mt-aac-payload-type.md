@@ -4,12 +4,12 @@ ms.assetid: a032fcf4-2584-4047-adbd-d94d4fc4e841
 title: MF_MT_AAC_PAYLOAD_TYPE atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c4c7852e5719f2293e21f7f37c761c39a14dca132113c6b9224038c640e3d2b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bd3edba98bdac54b12fb6e3e44fb67373f7fce6a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119940685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579901"
 ---
 # <a name="mf_mt_aac_payload_type-attribute"></a>Atributo MF \_ MT \_ AAC \_ PAYLOAD \_ TYPE
 
@@ -44,7 +44,7 @@ Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT32**](/wind
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 MF \_ MT \_ AAC PAYLOAD TYPE es \_ \_ opcional. Si no se especifica este atributo, se usa el valor predeterminado 0, que especifica que la secuencia solo contiene elementos \_ de bloque de datos sin \_ procesar.
 

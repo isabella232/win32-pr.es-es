@@ -4,18 +4,18 @@ description: Describe los distintos estados de caché que puede tener un archivo
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 01/17/2020
 ms.topic: article
-ms.openlocfilehash: 378973075017cc1ac06bf46840ea9d2d1058150a46587eb537374d501396ce30
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 43d62ceb1f5ef5bf07000666f336077270b1e86a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117792872"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580221"
 ---
 # <a name="cache-state-in-the-virtualization-root"></a>Estado de caché en la raíz de virtualización
 
 El proveedor usa el sistema de archivos local en la raíz de virtualización como caché de los elementos que administra.  Un elemento (archivo o directorio) puede estar en uno de los seis estados del sistema de archivos local:
 
-* Virtual
+* Las máquinas
 
   El elemento no existe localmente en el disco.  Se proyecta, es decir, sintetizado, durante las enumeraciones de su directorio primario.  Los elementos virtuales se combinan con los elementos que pueden existir en el disco para presentar el contenido completo del directorio primario.
 

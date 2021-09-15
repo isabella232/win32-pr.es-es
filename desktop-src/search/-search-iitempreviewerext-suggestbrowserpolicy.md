@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 84446b49ab723f161de8f148e95916202efe06176191e820ab8bafc88ed9158a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0a4f248edbfa4a1779016e40d73051d8c1d9acac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118969764"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574584"
 ---
 # <a name="iitempreviewerextsuggestbrowserpolicy-method"></a>IItemPreviewerExt::SuggestBrowserPolicy (método)
 
@@ -63,13 +63,13 @@ Tipo: **HRESULT**
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La [**interfaz IItemPreviewerExt**](-search-iitempreviewerext.md) solo se admite en Windows XP y Windows Server 2003 y ya no se debe usar.
 
 Para obtener una vista previa de los datos adjuntos con un controlador de protocolo de terceros en equipos que ejecutan Windows XP o Windows Server 2003, puede que sea necesario usar la interfaz [**IItemPreviewerExt**](-search-iitempreviewerext.md) y las siguientes API: las interfaces [**ISearchProtocolUI,**](-search-isearchprotocolui.md) [**IItemPropertyBag**](iitempropertybag.md) e [**ISearchItem,**](-search-isearchitem.md) la estructura [**LINKINFO**](-search-linkinfo.md) y la enumeración [**LINKTYPE.**](-search-linktype.md)
 
-Se recomienda encarecidamente usar la marca **BROWSERPOLICY \_ UNTRUSTED \_ CONTENT** para deshabilitar cualquier posibilidad de que la versión preliminar pueda ejecutar script o ActiveX. El **método IItemPreviewerExt::SuggestBrowserPolicy** puede devolver información sobre si el elemento que se está visualizando es de confianza o no. Esto permitirá que el control tridente del vista previa ejecute el script e incluso ActiveX controles. Dado que el programa de vista previa suele usar archivos temporales para generar la vista previa, esto puede dar lugar a una ejecución inesperada de código y script en la zona Equipo local.
+Se recomienda encarecidamente usar la marca **BROWSERPOLICY \_ UNTRUSTED \_ CONTENT** para deshabilitar cualquier posibilidad de que la versión preliminar pueda ejecutar script o ActiveX. El **método IItemPreviewerExt::SuggestBrowserPolicy** puede devolver información sobre si el elemento que se está visualizando es de confianza o no. Esto permitirá que el control tridente del control de vista previa ejecute el script e incluso ActiveX controles. Dado que el programa de vista previa suele usar archivos temporales para generar la vista previa, esto puede dar lugar a una ejecución inesperada de código y script en la zona Equipo local.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,7 +83,7 @@ Se recomienda encarecidamente usar la marca **BROWSERPOLICY \_ UNTRUSTED \_ CONT
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

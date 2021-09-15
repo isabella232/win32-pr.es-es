@@ -4,12 +4,12 @@ ms.assetid: 2bd427e2-106d-4997-86aa-fae221e429eb
 title: MF_PD_ASF_FILEPROPERTIES_SEND_DURATION atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce635cd02766a3c9ca8b0a0d327db93a4bcaaca76bccd6ae54fda726684ec641
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: deed3f78208a0f0c7e555e8113f05ac0800cdb97
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118740947"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574909"
 ---
 # <a name="mf_pd_asf_fileproperties_send_duration-attribute"></a>Atributo \_ \_ ASF \_ FILEPROPERTIES \_ SEND DURATION \_ de MF PD
 
@@ -33,11 +33,11 @@ El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desk
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

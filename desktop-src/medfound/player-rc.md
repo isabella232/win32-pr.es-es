@@ -4,16 +4,16 @@ ms.assetid: 5454c92b-5f71-4be3-ac98-b2195c482ea4
 title: player.rc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6489fce2f63c9abc394fbcac1ecb122bffee9896084674d3fc7f846b2e983890
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 73ed6537a42b572d88571a5d81abb97f6fb7fe35
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118239237"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580237"
 ---
 # <a name="playerrc"></a>player.rc
 
-Este tema contiene el archivo de recursos del tutorial [Cómo reproducir archivos multimedia con Media Foundation](how-to-play-unprotected-media-files.md).
+Este tema contiene el archivo de recursos del tutorial [How to Play Media Files with Media Foundation](how-to-play-unprotected-media-files.md).
 
 
 ```C++

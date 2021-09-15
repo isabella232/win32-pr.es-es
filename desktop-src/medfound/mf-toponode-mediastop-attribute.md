@@ -4,12 +4,12 @@ ms.assetid: c1022538-ea9f-41e9-9075-c106e8b16b7b
 title: MF_TOPONODE_MEDIASTOP atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea2abc172151afe404f3acc6cf8c75d03bd0ac495564cb0f322283998677f83b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0a5b763d1d5adabc520900dde6839d1599ddcb3d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119663875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574885"
 ---
 # <a name="mf_toponode_mediastop-attribute"></a>Atributo \_ MF TOPONODE \_ MEDIASTOP
 
@@ -31,7 +31,7 @@ Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT64**](/wind
 
 [**NODETopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo especifica la posición en el origen donde se detiene la reproducción, en unidades de 100 nanosegundos, con respecto al inicio del origen. Si el atributo no está establecido, la reproducción se detiene al final del origen. Por ejemplo, para detener la reproducción en la marca de 5 segundos, establezca este atributo en 50000000. Establezca el atributo en los nodos de origen de la topología (nodos con el tipo igual a **MF \_ TOPOLOGY \_ SOURCESTREAM \_ NODE**). Establezca el atributo antes de llamar [**a IMFMediaSession::SetTopology**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-settopology).
 
@@ -50,15 +50,15 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,19 +1,19 @@
 ---
-description: Esta sección contiene un ejemplo en el que se muestra la creación de una imagen y el proceso de almacenamiento de los registros correspondientes en un metarchivo.
+description: Esta sección contiene un ejemplo que muestra la creación de una imagen y el proceso de almacenamiento de los registros correspondientes en un metarchivo.
 ms.assetid: 8be95fef-93dc-4c9c-a0d3-840918c00e43
 title: Mostrar una imagen y almacenarla en un metarchivo mejorado
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e8eee65f2f82a7b8ccdad86e99987df6a06a4f5c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103811977"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581129"
 ---
 # <a name="displaying-a-picture-and-storing-it-in-an-enhanced-metafile"></a>Mostrar una imagen y almacenarla en un metarchivo mejorado
 
-Esta sección contiene un ejemplo en el que se muestra la creación de una imagen y el proceso de almacenamiento de los registros correspondientes en un metarchivo. En el ejemplo se dibuja una imagen en la pantalla o se almacena en un metarchivo. Si se proporciona un identificador de contexto de dispositivo de pantalla, se dibuja una imagen en la pantalla mediante varias funciones GDI. Si se proporciona un contexto de dispositivo de metarchivo mejorado, almacena la misma imagen en el metarchivo mejorado.
+Esta sección contiene un ejemplo que muestra la creación de una imagen y el proceso de almacenamiento de los registros correspondientes en un metarchivo. En el ejemplo se dibuja una imagen en la pantalla o se almacena en un metarchivo. Si se da un identificador de contexto de dispositivo de presentación, dibuja una imagen en la pantalla mediante varias funciones GDI. Si se proporciona un contexto de dispositivo de metarchivo mejorado, almacena la misma imagen en el metarchivo mejorado.
 
 
 ```C++

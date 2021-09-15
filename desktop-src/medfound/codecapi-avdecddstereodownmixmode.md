@@ -4,12 +4,12 @@ ms.assetid: 270893C6-8B44-4A4D-AE2B-2E58E260F649
 title: CODECAPI_AVDecDDStereoDownMixMode propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 81bba5cd5a75ecfbdbbd19ec7dbe063b06217322074559b8d24dae3073c244ac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: de7caaed1af804e22b3ec6085241746bdf01eb7d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118065063"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574977"
 ---
 # <a name="codecapi_avdecddstereodownmixmode-property"></a>Propiedad CODECAPI \_ AVDecDDStereoDownMixMode
 
@@ -27,7 +27,7 @@ Especifica el modo de bajada estéreo para un descodificador de audio Dolby Digi
 
 El valor de esta propiedad es un miembro de la [**enumeración eAVDecDDStereoDownMixMode.**](/windows/win32/api/codecapi/ne-codecapi-eavdecddstereodownmixmode)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se aplica cuando la entrada al descodificador es audio PCM multicanal y la salida es audio estéreo.
 
@@ -35,11 +35,11 @@ Este atributo se aplica cuando la entrada al descodificador es audio PCM multica
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                     |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 

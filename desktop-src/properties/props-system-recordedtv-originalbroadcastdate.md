@@ -4,12 +4,12 @@ ms.assetid: 95074b6f-371b-449a-ba98-eadd3235e49b
 title: System.RecordedTV.OriginalBroadcastDate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5559f9aed4e47c0efa2659269f033403896055f041a6f0eef2c8b874ad90b94f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 04cda1e959f519b6f33424cb826171ca9a9faa78
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119095857"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574592"
 ---
 # <a name="systemrecordedtvoriginalbroadcastdate"></a>System.RecordedTV.OriginalBroadcastDate
 
@@ -42,7 +42,7 @@ propertyDescription
       type = DateTime
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

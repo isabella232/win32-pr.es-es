@@ -5,11 +5,11 @@ title: Elemento Background
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 3585b8ca37fe86bd1c687601975ea0ad189d5746
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122473901"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579508"
 ---
 # <a name="background-element"></a>Elemento Background
 
@@ -34,10 +34,10 @@ Contiene el fondo de un [**elemento JournalDocument**](journaldocument-element.m
 
 
 
-| Atributo | Tipo | Requerido | Descripción | Valores posibles | 
+| Atributo | Tipo | Obligatorio | Descripción | Valores posibles | 
 |-----------|------|----------|-------------|-----------------|
-| <strong>Estilo</strong> | <strong>xs:string</strong> | Requerido | Especifica el estilo del fondo. | <ul><li>Ninguno</li><li>Sólido</li></ul> | 
-| <strong>Color</strong> | <a href="colortype-simple-type.md"><strong>ColorType</strong></a> simpleType | Opcionales | Especifica el color del fondo. | Consulte <a href="colortype-simple-type.md"><strong>ColorType</strong></a> simpleType. | 
+| <strong>Estilo</strong> | <strong>xs:string</strong> | Obligatorio | Especifica el estilo del fondo. | <ul><li>None</li><li>Sólido</li></ul> | 
+| <strong>Color</strong> | <a href="colortype-simple-type.md"><strong>ColorType</strong></a> simpleType | Opcional | Especifica el color del fondo. | Consulte <a href="colortype-simple-type.md"><strong>ColorType</strong></a> simpleType. | 
 
 
 
@@ -48,7 +48,7 @@ Contiene el fondo de un [**elemento JournalDocument**](journaldocument-element.m
 
 
 
-|                  | Valor                                                             |
+|                  | Value                                                             |
 |------------------|-------------------------------------------------------------------|
 | **Tipo de elemento** | [**BackgroundType**](backgroundtype-complex-type.md) complexType |
 | **Espacio de nombres**    | urn:schemas-microsoft-com:tabletpc:richink                        |

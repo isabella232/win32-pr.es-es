@@ -1,33 +1,33 @@
 ---
-description: El escritor de receptores es un componente para codificar archivos de audio o vídeo.
+description: El sistema de escritura del receptor es un componente para codificar archivos de audio o vídeo.
 ms.assetid: 23AF25B8-B94C-48BC-83D8-5863ACFFD4CA
 title: Escritor de receptores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a1cfa60abb9b107030aba18e30175592d637c7676ff44781d62b3f5c1509351
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d6b30d75e369de343bae61ba56dfd05c0d5d12a4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119887364"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574764"
 ---
 # <a name="sink-writer"></a>Escritor de receptores
 
-El escritor de receptores es un componente para codificar archivos de audio o vídeo.
+El sistema de escritura del receptor es un componente para codificar archivos de audio o vídeo.
 
-En el diagrama siguiente se muestra, en un nivel alto, cómo una aplicación usa el escritor de receptores para codificar y el archivo de audio y vídeo.
+En el diagrama siguiente se muestra, en un nivel alto, cómo una aplicación usa el sistema de escritura del receptor para codificar y el archivo de audio y vídeo.
 
-![diagrama que muestra el escritor de receptores.](images/encoding09.png)
+![diagrama que muestra el sistema de escritura del receptor.](images/encoding09.png)
 
-El sistema de escritura del receptor hospeda un receptor multimedia y, opcionalmente, uno o varios codificadores. Los codificadores convierten datos de audio o vídeo sin comprimir en secuencias de bits codificadas. El receptor de medios genera las secuencias de bits en un archivo. El escritor de receptores realiza las siguientes tareas:
+El sistema de escritura del receptor hospeda un receptor multimedia y, opcionalmente, uno o varios codificadores. Los codificadores convierten datos de audio o vídeo sin comprimir en secuencias de bits codificadas. El receptor multimedia genera las secuencias de bits en un archivo. El escritor de receptores realiza las siguientes tareas:
 
 -   Carga el receptor de medios.
 -   Busca y carga los codificadores.
 -   Administra el flujo de datos a los codificadores y al receptor multimedia.
 
-La aplicación pasa datos de audio y vídeo al escritor del receptor como entrada. No importa cómo la aplicación obtenga o genere los datos de entrada. Una opción es usar el Lector [de origen](source-reader.md), como se muestra en el diagrama siguiente. Sin embargo, el escritor de receptores no requiere el uso del lector de origen. Estos dos componentes son independientes.
+La aplicación pasa datos de audio y vídeo al sistema de escritura del receptor como entrada. No importa cómo la aplicación obtenga o genere los datos de entrada. Una opción es usar el Lector [de origen](source-reader.md), como se muestra en el diagrama siguiente. Sin embargo, el escritor receptor no requiere el uso del lector de origen. Estos dos componentes son independientes.
 
-![diagrama que muestra el lector de origen y el escritor de receptores.](images/encoding02.png)
+![diagrama que muestra el lector de origen y el escritor del receptor.](images/encoding02.png)
 
 ## <a name="in-this-section"></a>En esta sección
 

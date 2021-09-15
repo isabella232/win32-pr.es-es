@@ -4,12 +4,12 @@ ms.assetid: 0d095e25-5ccf-4319-8767-07b417ed7ee8
 title: Tiempos de presentación de secuencia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b45ea9c8b315171365810f33bb9a66ca4d223fb2119d7aea19288c3ebdd93ac5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d17f5b0ff4bd6f0cfee2b1b461d6fbd11bdbf0fb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118238371"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574804"
 ---
 # <a name="sequence-presentation-times"></a>Tiempos de presentación de secuencia
 
@@ -38,10 +38,10 @@ En una secuencia de lista de reproducción, el reloj de presentación comienza e
 
 El valor de *offset es* el tiempo de presentación en el que finalizó el segmento anterior. Para el primer segmento, el desplazamiento es cero. Estos son dos ejemplos de cómo se calculan estas conversiones de marca de tiempo:
 
--   Ejemplo 1: supongamos que el primer segmento (S1) tiene una duración de 10 segundos y el segundo segmento (S2) tiene una hora de inicio multimedia de cero. El origen nativo usa la hora del medio para sus marcas de tiempo, por lo que el primer ejemplo de S2 tiene una marca de tiempo de cero. El desplazamiento es de 10 segundos (la duración de S1), por lo que la marca de tiempo ajustada es:0 + 10 - 0 = 10 segundos.
+-   Ejemplo 1: supongamos que el primer segmento (S1) tiene una duración de 10 segundos y el segundo segmento (S2) tiene una hora de inicio multimedia de cero. El origen nativo usa la hora del medio para sus marcas de tiempo, por lo que la primera muestra de S2 tiene una marca de tiempo de cero. El desplazamiento es de 10 segundos (la duración de S1), por lo que la marca de tiempo ajustada es:0 + 10 - 0 = 10 segundos.
 -   Ejemplo 2: Supongamos que el segmento S1 tiene una longitud de 10 segundos y S2 tiene una hora de inicio multimedia de 5 segundos. El primer ejemplo de S2 tiene una marca de tiempo de 5 segundos (tiempo medio). El desplazamiento es de 10 segundos, por lo que la marca de tiempo ajustada es:5 + 10 - 5 = 10 segundos.
 
-Todos los componentes de canalización de nivel inferior de los nodos de origen reciben ejemplos con las marcas de tiempo ajustadas. Los nodos de origen de una topología pueden tener diferentes horas de inicio multimedia, por lo que los ajustes se calculan por separado para cada rama de la topología.
+Todos los componentes de canalización de bajada de los nodos de origen reciben ejemplos con las marcas de tiempo ajustadas. Los nodos de origen de una topología pueden tener diferentes horas de inicio multimedia, por lo que los ajustes se calculan por separado para cada rama de la topología.
 
 Cuando la presentación cambia al segmento siguiente, el reloj de presentación no se detiene ni se restablece, y el tiempo de presentación aumenta de forma monótica. Antes de que se inicie un nuevo segmento, la sesión multimedia envía a la aplicación un [evento MESessionNotifyPresentationTime.](mesessionnotifypresentationtime.md) El evento especifica la hora de inicio del segmento, en relación con el reloj de presentación, y el valor del desplazamiento. Cuando se inicia un nuevo segmento, la canalización llama a [**Start en**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasource-start) el origen del secuenciador con el valor VT \_ EMPTY. El origen del secuenciador envía un [evento MESourceStarted](mesourcestarted.md) sin hora de inicio.
 
@@ -49,11 +49,11 @@ Para buscar, la aplicación especifica un identificador de segmento más un desp
 
 -   Ejemplo 3: la aplicación busca segmentar S3, con un desplazamiento de segmento de 10 segundos. El reloj de presentación comienza en 10 segundos (desplazamiento del segmento). El desplazamiento no incluye la duración de los segmentos S1 y S2. El origen del secuenciador envía un [evento MESourceStarted](mesourcestarted.md) con una hora de inicio igual al desplazamiento del segmento, 10 segundos.
 
-Después de una búsqueda, si la reproducción continúa hasta el segmento siguiente, la transición funciona igual que en los ejemplos anteriores, salvo que el desplazamiento no incluye los segmentos omitido.
+Después de una búsqueda, si la reproducción continúa hasta el siguiente segmento, la transición funciona igual que en los ejemplos anteriores, salvo que el desplazamiento no incluye los segmentos omitido.
 
 Estos son algunos detalles adicionales que afectan a cómo se marca el tiempo de las muestras:
 
--   Los descodificadores pueden necesitar datos más allá del tiempo de detenerse los medios. La canalización extrae tantos datos del origen como el descodificador requiere y, a continuación, recorta los ejemplos de salida del descodificador.
+-   Es posible que los descodificadores necesiten datos más allá del tiempo de detenerse de los medios. La canalización extrae tantos datos del origen como requiera el descodificador y, a continuación, recorta los ejemplos de salida del descodificador.
 -   Las transformaciones pueden almacenar en búfer los datos. Por ejemplo, un efecto de audio podría necesitar hacerlo. Cuando finaliza un segmento, la marca de tiempo de la última muestra de la transformación es anterior al final del segmento, porque la transformación retiene algunos datos. Cuando se inicia el segmento siguiente, la marca de tiempo de la primera muestra es ligeramente anterior al inicio del segmento. No hay ninguna diferencia en las marcas de tiempo, por lo que los datos que llegan al receptor de medios son continuos. Cuando finaliza el segmento final, la canalización purga la transformación, por lo que no se pierde ningún dato.
 -   Es posible que el origen deba iniciarse ligeramente antes de la hora de inicio del medio para seleccionar el fotograma clave anterior. Por lo tanto, después del ajuste, el primer ejemplo podría tener un tiempo de presentación negativo.
 

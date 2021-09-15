@@ -4,12 +4,12 @@ description: Las siguientes funciones de devolución de llamada se declaran en p
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 01/17/2020
 ms.topic: article
-ms.openlocfilehash: 595fac418ce57e1e6caff718d75b458390efd31c2e8727cd2feb8ee5a5d86eb3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1412fc4b406b668ad6651d69835f8cdea56857c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120031165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580213"
 ---
 # <a name="callback-functions"></a>Funciones de devolución de llamada
 

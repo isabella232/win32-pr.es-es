@@ -4,12 +4,12 @@ ms.assetid: 384bdeaa-5360-42af-9f95-b791af2dcafc
 title: Relación de aspecto de la imagen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71ae59cf213a9d44c9075f33be4bd422b81ced6dea270cf4fc9408990442529e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 74e81f1b8e26af753a5c8c1bc7ecb09d8a658582
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118972987"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580261"
 ---
 # <a name="picture-aspect-ratio"></a>Relación de aspecto de la imagen
 
@@ -38,7 +38,7 @@ A veces, la imagen de vídeo no tiene la misma forma que el área de presentaci�
 -   Escale la imagen para ajustarla al área de visualización, manteniendo al mismo tiempo la relación de aspecto de la imagen original.
 -   Recorte la imagen.
 
-El ajuste de la imagen para ajustarse al área de presentación es casi siempre incorrecto, ya que no conserva la relación de aspecto de la imagen correcta.
+Ajustar la imagen para ajustarla al área de presentación es casi siempre incorrecto, ya que no conserva la relación de aspecto de la imagen correcta.
 
 ### <a name="letterboxing"></a>Letterboxing
 
@@ -62,11 +62,11 @@ El análisis panorámico es una técnica por la que una imagen de pantalla ancha
 
 Cuando se captura una imagen digital, la imagen se muestrea vertical y horizontalmente, lo que da lugar a una matriz rectangular de muestras cuantificadas, *denominadas píxeles* *o pór.* La forma de la cuadrícula de muestreo determina la forma de los píxeles de la imagen digitalizado.
 
-Este es un ejemplo que usa números pequeños para mantener la matemática simple. Supongamos que la imagen original es cuadrada (es decir, la relación de aspecto de la imagen es 1:1); y supongamos que la cuadrícula de muestreo contiene 12 elementos, organizados en una cuadrícula de 4×3. La forma de cada píxel resultante será más alta que la ancha. En concreto, la forma de cada píxel será 3×4. Los píxeles que no son cuadrados se *denominan píxeles no cuadrados.*
+Este es un ejemplo que usa números pequeños para mantener la matemática simple. Supongamos que la imagen original es cuadrada (es decir, la relación de aspecto de la imagen es 1:1); y suponga que la cuadrícula de muestreo contiene 12 elementos, organizados en una cuadrícula de 4×3. La forma de cada píxel resultante será más alta que la ancha. En concreto, la forma de cada píxel será 3×4. Los píxeles que no son cuadrados se *denominan píxeles no cuadrados.*
 
 ![diagrama que muestra una cuadrícula de muestreo no cuadrada](images/aspect-ratio05.png)
 
-La relación de aspecto de píxeles también se aplica al dispositivo de pantalla. La forma física del dispositivo de pantalla y la resolución de píxeles física (a través y hacia abajo) determinan el PAR del dispositivo de pantalla. Los monitores de equipo suelen usar píxeles cuadrados. Si la imagen PAR y la pantalla PAR no coinciden, la imagen se debe escalar en una dimensión, ya sea vertical u horizontalmente, para que se muestre correctamente. La fórmula siguiente relaciona PAR, la relación de aspecto de pantalla (DAR) y el tamaño de la imagen en píxeles:
+La relación de aspecto de píxeles también se aplica al dispositivo de visualización. La forma física del dispositivo de pantalla y la resolución de píxeles física (a través y hacia abajo) determinan el PAR del dispositivo de pantalla. Los monitores de equipo suelen usar píxeles cuadrados. Si la imagen PAR y la pantalla PAR no coinciden, la imagen se debe escalar en una dimensión, ya sea vertical u horizontalmente, para que se muestre correctamente. La fórmula siguiente relaciona PAR, la relación de aspecto de pantalla (DAR) y el tamaño de la imagen en píxeles:
 
 *DAR* = ( ancho *de imagen en píxeles*  /  *alto de imagen en píxeles*) × *PAR*
 
@@ -300,7 +300,7 @@ RECT LetterBoxRect(const RECT& rcSrc, const RECT& rcDst)
 [Tipos de medios de vídeo](video-media-types.md)
 </dt> <dt>
 
-[**APERTURA \_ DE PANTALLA MÍNIMA \_ DE \_ \_ MF MT**](mf-mt-minimum-display-aperture-attribute.md)
+[**APERTURA \_ DE PANTALLA MÍNIMA DE MF MT \_ \_ \_**](mf-mt-minimum-display-aperture-attribute.md)
 </dt> <dt>
 
 [**MF \_ MT \_ PAN \_ SCAN \_ APERTURE**](mf-mt-pan-scan-aperture-attribute.md)
@@ -309,7 +309,7 @@ RECT LetterBoxRect(const RECT& rcSrc, const RECT& rcDst)
 [**MF \_ MT \_ PAN \_ SCAN \_ ENABLED**](mf-mt-pan-scan-enabled-attribute.md)
 </dt> <dt>
 
-[**RELACIÓN \_ DE ASPECTO DE \_ \_ PÍXELES MF MT \_**](mf-mt-pixel-aspect-ratio-attribute.md)
+[**RELACIÓN DE \_ ASPECTO \_ DE PÍXELES DE MT \_ DE \_ MF**](mf-mt-pixel-aspect-ratio-attribute.md)
 </dt> </dl>
 
  

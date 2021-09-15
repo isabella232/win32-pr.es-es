@@ -12,12 +12,12 @@ api_type:
 - COM
 api_location:
 - shobjidl.h
-ms.openlocfilehash: 26fe9079e7fdf53809f8c0763fa38f271536f1339d16647936fb141f8d213be5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c7df9296f2261e3907702067ca36265095102f34
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117677983"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574529"
 ---
 # <a name="istorageprovidercopyhookcopycallback-method"></a>IStorageProviderCopyHook::CopyCallback (Método)
 
@@ -45,7 +45,7 @@ HRESULT CopyCallback(
 *hwnd* \[ En\]
 </dt> <dd>
 
-Identificador de la ventana que el controlador de enlace de copia debe usar como elemento primario para cualquier elemento de la interfaz de usuario que el controlador deba mostrar. Si **FOF_SILENT** especifica en la *operación*, el método debe omitir este parámetro.
+Identificador de la ventana que el controlador de enlace de copia debe usar como elemento primario para cualquier elemento de la interfaz de usuario que el controlador necesite mostrar. Si **FOF_SILENT** especifica en la *operación*, el método debe omitir este parámetro.
 
 </dd> </dl>
 
@@ -67,10 +67,10 @@ Marcas que controlan la operación. Este parámetro puede ser uno o varios de lo
 
 Para los enlaces de copia de impresora, este valor es uno de los siguientes valores definidos en shellapi.h.
 
-| Valor       | Descripción |
+| Value       | Descripción |
 |-------------|------------|
 |  **PO_DELETE**      | Se está eliminando una impresora. El *parámetro srcFile* apunta a la ruta de acceso completa a la impresora especificada.           |
-|  **PO_RENAME**       | Se va a cambiar el nombre de una impresora. El *parámetro srcFile* apunta al nuevo nombre de la impresora. El *parámetro destFile* apunta al nombre antiguo.           |
+|  **PO_RENAME**       | Se va a cambiar el nombre de una impresora. El *parámetro srcFile* apunta al nuevo nombre de la impresora. El *parámetro destFile* apunta al nombre anterior.           |
 | **PO_PORTCHANGE**    | No compatible. No debe usarse.          |
 | **PO_REN_PORT**    | No compatible. No debe usarse.           |
 
@@ -109,7 +109,7 @@ Atributos de la carpeta de destino. Este parámetro puede ser una combinación d
 *resultado* \[ out\]
 </dt> <dd>
 
-Valor entero que indica si el Shell debe realizar la operación. Uno de los siguientes:
+Valor entero que indica si el shell debe realizar la operación. Uno de los siguientes:
 
 | Valor       | Descripción |
 |-------------|------------|
@@ -123,21 +123,21 @@ Valor entero que indica si el Shell debe realizar la operación. Uno de los sigu
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve **S_OK** si se realiza correctamente o un código de error de lo contrario.
+Devuelve **S_OK** si se realiza correctamente o un código de error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Shell llama al controlador de enlace de copia del proveedor de nube para cada carpeta de la raíz de sincronización registrada. Para registrar un controlador de enlace de copia para carpetas en la nube, establezca el valor **de CopyHook** en la clave **HKEY_LOCAL_MACHINE/Software/Microsoft/Windows/CurrentVersion/Explorer/SyncRootManager/{SyncRootId}** en el CLSID del objeto de enlace de copia.
+Shell llama al controlador de enlace de copia del proveedor de nube para cada carpeta de la raíz de sincronización registrada. Para registrar un controlador de enlace de copia para carpetas en la nube, establezca el valor **copyHook** bajo la clave **HKEY_LOCAL_MACHINE/Software/Microsoft/Windows/CurrentVersion/Explorer/SyncRootManager/{SyncRootId}** en el CLSID del objeto de enlace de copia.
 
-Cuando se **llama al método CopyCallback,** el shell inicializa la interfaz [IStorageProviderCopyHook](nn-shobjidl-istorageprovidercopyhook.md) directamente sin usar primero una [interfaz IShellExtInit.](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellextinit)
+Cuando se **llama al método CopyCallback,** el shell inicializa la interfaz [IStorageProviderCopyHook](nn-shobjidl-istorageprovidercopyhook.md) directamente sin usar primero [una interfaz IShellExtInit.](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellextinit)
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible | Windows 10 Insider Preview Build 19624                                |
-| Header                   | shobjidl.h   |
+| Encabezado                   | shobjidl.h   |
 
 ## <a name="see-also"></a>Consulte también
 
-[Compilación de un motor de Sincronización en la nube que admita archivos de marcador de posición](../cfapi/build-a-cloud-file-sync-engine.md)
+[Compilación de un motor de sincronización en la nube que admita archivos de marcador de posición](../cfapi/build-a-cloud-file-sync-engine.md)

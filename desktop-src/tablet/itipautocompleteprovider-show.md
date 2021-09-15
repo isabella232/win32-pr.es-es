@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - tiptsf.dll
-ms.openlocfilehash: 2afc5fc264df4d38e85dfa3374714b06908eee8ec1c5517b49dc32cbcbd44f99
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 950358ae28d1cb68af803ed6b7f520f1bbad8c03
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118716464"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579429"
 ---
-# <a name="itipautocompleteprovidershow-method"></a>ITipAutocompleteProvider::Show (método)
+# <a name="itipautocompleteprovidershow-method"></a>ITipAutocompleteProvider::Show (Método)
 
 Muestra u oculta la lista de autocompletar.
 
@@ -42,7 +42,7 @@ HRESULT Show(
 *fShow* \[ En\]
 </dt> <dd>
 
-**TRUE** para mostrar la interfaz de usuario autocompletar, **FALSE** para ocultar la interfaz de usuario de la lista de autocompletar.
+**TRUE** para mostrar la interfaz de usuario autocompletar, **FALSE** para ocultar la interfaz de usuario de lista de autocompletar.
 
 </dd> </dl>
 
@@ -61,7 +61,7 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El cliente llama a este método para mostrar u ocultar la lista de autocompletar. Si no se muestra la lista autocompletar y *fShow* es **FALSE,** este método no hace nada. Si se muestra la lista autocompletar y *fShow* es **TRUE,** este método no hace nada.
 
@@ -69,16 +69,16 @@ El cliente llama a este método para mostrar u ocultar la lista de autocompletar
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                                       |
-| Header<br/>                   | <dl> <dt>TipAutoComplete.h (también requiere Peninputpanel \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>TipAutoComplete.h (también requiere Peninputpanel \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Tiptsf.dll</dt> </dl>                                           |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

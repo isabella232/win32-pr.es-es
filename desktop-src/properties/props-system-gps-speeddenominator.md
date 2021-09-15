@@ -4,12 +4,12 @@ ms.assetid: cbe5b6cd-db27-47f0-9458-d2ed9a7aa882
 title: System.GPS.SpeedDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 37b738e733383e8fb519fcac42881630c6db377f5b7d2b4cbf7f5666c5c6d2c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5667cbdf425f065decf41e3b1aa454a65793095a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118727463"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579725"
 ---
 # <a name="systemgpsspeeddenominator"></a>System.GPS.SpeedDenominator
 
@@ -30,7 +30,7 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

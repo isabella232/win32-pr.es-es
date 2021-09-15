@@ -4,7 +4,7 @@ description: Posibles acciones de amenaza.
 ms.assetid: 142249A5-4C9D-4E3A-A06E-70C040F9C14F
 keywords:
 - MPTHREAT_ACTION enumeración heredada de Windows environment
-- PMPTHREAT_ACTION puntero de enumeración heredado Windows environment
+- PMPTHREAT_ACTION puntero de enumeración heredados Windows environment
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a3cd46583b9736ad8304c16e3b12d4f0157edcdb319fd0923a0fe737d504415
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2ae0377517af590072b797a57c051ad062842ea9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118247269"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574993"
 ---
 # <a name="mpthreat_action-enumeration"></a>Enumeración MPTHREAT \_ ACTION
 
 Posibles acciones de amenaza.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -80,11 +80,11 @@ typedef enum tagMPTHREAT_ACTION {
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

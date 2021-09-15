@@ -1,17 +1,17 @@
 ---
-title: El almacenamiento mejorado ahora es opcional para WINPE y la SKU de servidor
-description: El almacenamiento mejorado ahora es opcional para WINPE y la SKU de servidor
+title: El almacenamiento mejorado ahora es opcional para WINPE y sku de servidor
+description: El almacenamiento mejorado ahora es opcional para WINPE y sku de servidor
 ms.assetid: 8A6B6194-5867-4B76-BD7B-152FD8A7DD77
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3777d4df386b071166fcfa17a60654c62e039d9137f73deaf2d85d54e2519e1e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f7601ee35e6d4be35a39874dd85650f051c1c718
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119028853"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575649"
 ---
-# <a name="enhanced-storage-is-now-optional-for-winpe-and-server-sku"></a>El almacenamiento mejorado ahora es opcional para WINPE y la SKU de servidor
+# <a name="enhanced-storage-is-now-optional-for-winpe-and-server-sku"></a>El almacenamiento mejorado ahora es opcional para WINPE y sku de servidor
 
 ## <a name="platforms"></a>Plataformas
 
@@ -21,19 +21,19 @@ ms.locfileid: "119028853"
 
 ## <a name="description"></a>Descripción
 
-El almacenamiento mejorado siempre estaba disponible en Windows 7 dispositivos USB. Con la versión de Windows 8, está disponible para todos los dispositivos de almacenamiento. En los dispositivos basados en cliente, está habilitado de forma predeterminada; en los dispositivos de servidor es opcional y se debe aprovisionar a través Windows entorno de preinstalación (WinPE).
+El almacenamiento mejorado siempre estaba disponible en Windows 7 dispositivos USB. Con el lanzamiento de Windows 8, está disponible para todos los dispositivos de almacenamiento. En los dispositivos basados en cliente, está habilitado de forma predeterminada; en dispositivos de servidor es opcional y se debe aprovisionar mediante Windows de preinstalación (WinPE).
 
 ## <a name="manifestation"></a>Manifestación
 
-Se producirá un error en el dispositivo del servidor si el almacenamiento mejorado no está habilitado.
+Se producirá un error en el dispositivo de servidor si el almacenamiento mejorado no está habilitado.
 
-Los dispositivos de arranque deben aprovisionarse a través de WinPE con esta opción habilitada.
+Los dispositivos de arranque se deben aprovisionar a través de WinPE con esta opción habilitada.
 
 ## <a name="solution"></a>Solución
 
-Dado que el almacenamiento mejorado es opcional para el servidor en tiempo de ejecución, los desarrolladores deben agregarlo a WinPE para el aprovisionamiento y la activación de esas unidades. Consulte la guía de implementación para obtener más información.
+Dado que el almacenamiento mejorado es opcional para el servidor en tiempo de ejecución, los desarrolladores deben agregarlo a WinPE para aprovisionar y activar esas unidades. Consulte la guía de implementación para obtener más información.
 
-A continuación, los administradores del servidor deben configurar explícitamente su servidor para usar el almacenamiento mejorado.
+A continuación, los administradores del servidor deben configurar explícitamente su servidor para que use el almacenamiento mejorado.
 
  
 

@@ -1,15 +1,15 @@
 ---
 description: Ajusta el contraste.
 ms.assetid: 32ae514a-eeba-4205-b6e6-70fc01b93a95
-title: MFPKEY_COLOR_CONTRAST (Propiedad, Wmcodecdsp.h)
+title: MFPKEY_COLOR_CONTRAST propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 94c1c794b10580cbb323d19f52eed7d3bfb5fc6cf96e316d708491025776cfff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b5de0733e743c3ce12bfe9a04159a2e881bf2143
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119954475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580305"
 ---
 # <a name="mfpkey_color_contrast-property"></a>Propiedad MFPKEY \_ COLOR \_ CONTRAST
 
@@ -31,7 +31,7 @@ VT \_ I4
 
 -   [DSP de transformación de control de color](colorcontroltransform.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El ajuste de contraste se realiza multiplicando los valores de YCbCr por un factor de escalado.
 
@@ -45,7 +45,7 @@ Esta propiedad tiene un intervalo de -127 a 127. Cero indica que no hay ningún 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 25315E05-2988-4E1A-8128-8420C8DBBB7C
 title: CODECAPI_AVEncCommonTranscodeEncodingProfile propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5a538451d72b28084feab4876858bf2c03babc5d1d98b89121b6085fc372391
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a18ec4835b2b535e028caf51c9102e0f2f1bb8cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119346995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574969"
 ---
 # <a name="codecapi_avenccommontranscodeencodingprofile-property"></a>Propiedad CODECAPI \_ AVEncCommonTranscodeEncodingProfile
 
@@ -17,7 +17,7 @@ Especifica el perfil de codificación de transcodificación común.
 
 ## <a name="data-type"></a>Tipo de datos
 
-**Bstr**
+**BSTR**
 
 ## <a name="property-guid"></a>GUID de propiedad
 
@@ -31,11 +31,11 @@ Especifica el perfil de codificación de transcodificación común.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                     |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

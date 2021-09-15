@@ -4,35 +4,35 @@ ms.assetid: 83b64ad8-2552-41d1-bc61-20361831020b
 title: Atributos de secuencia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d066520926363b27ed5f29e29079d960a0f8e1e395c3dc0df56af918b5fed34a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a25de9ae6cf769268b3868d36bac2e293cfd8d60
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119034733"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580225"
 ---
 # <a name="stream-attributes"></a>Atributos de secuencia
 
-Los atributos siguientes se aplican a las secuencias multimedia. Para obtener los atributos de un ejemplo multimedia, use el [**método IMFMediaSourceEx::GetStreamAttributes.**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasourceex-getstreamattributes)
+Los atributos siguientes se aplican a los flujos multimedia. Para obtener los atributos de un ejemplo multimedia, use el [**método IMFMediaSourceEx::GetStreamAttributes.**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasourceex-getstreamattributes)
 
 
 
 | Atributo                                                                                   | Descripción                                   |
 |---------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [MFStreamExtension \_ CameraExtrinsics](mfstreamextension-cameraextrinsics.md)               | La cámara es extrínsica para la secuencia.         |
-| [MFStreamExtension \_ PinholeCameraIntrinsics](mfstreamextension-pinholecameraintrinsics.md) | Intrínsecos de la cámara del pinhole para la secuencia. |
+| [MFStreamExtension \_ CameraExtrinsics](mfstreamextension-cameraextrinsics.md)               | La cámara extrínsica de la secuencia.         |
+| [MFStreamExtension \_ PinholeCameraIntrinsics](mfstreamextension-pinholecameraintrinsics.md) | Intrínsecos de la cámara de sondeo para la secuencia. |
 
 
 
  
 
-No todos los flujos multimedia contienen todos los atributos enumerados aquí. En algunos casos, un atributo solo se aplica a determinados tipos de datos.
+No todas las secuencias multimedia contienen todos los atributos enumerados aquí. En algunos casos, un atributo solo se aplica a determinados tipos de datos.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**SAMPLESample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
+[**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
 </dt> <dt>
 
 [Media Foundation atributos](media-foundation-attributes.md)

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 2df0be51eaf634879c2f8e90ae864b2e0dad5ce54271c55f5a81251141471843
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dcb06352065b28739a616a9f2216c20eedebb913
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119942085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579973"
 ---
 # <a name="imfmediaengineemeget_keys-method"></a>MÉTODO IMFMediaEngineEME::get \_ Keys
 
@@ -39,7 +39,7 @@ HRESULT get_Keys(
 
 <dl> <dt>
 
-*Llaves* 
+*claves* 
 </dt> <dd>
 
 Objeto de claves multimedia asociado al motor de medios o **null** si no hay un objeto de claves multimedia.
@@ -58,7 +58,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
-| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: bbdd18d27c8b9f5f4b7567e6aa22fd0c74f5e2c2dc74d80e1f46aca4195b93ba
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ed05e110c13af8fe73eebf004183de42eb9fffd7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118717304"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579468"
 ---
 # <a name="itablet3ismultitouch-method"></a>ITablet3::IsMultiTouch (método)
 
@@ -51,7 +51,7 @@ Indica si el dispositivo es multitouch.
 
 Devuelve **S OK si \_ se** ejecuta correctamente; de lo contrario, devuelve un código de error como **E \_ FAIL.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Después de determinar a través de [**IRealTimeStylus3::MultiTouchEnabled**](/windows/desktop/api/rtscom/nf-rtscom-irealtimestylus3-get_multitouchenabled) o **ITablet3::IsMultiTouch** que multitouch está disponible, una aplicación puede optar por participar en los mensajes de entrada multitouch. Encontrará información adicional sobre el filtrado de métodos multitouch en la sección de la propiedad **IRealTimeStylus3::MultiTouchEnabled.**
 
@@ -70,15 +70,15 @@ spITablet3->get_IsMultiTouch(&b);
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

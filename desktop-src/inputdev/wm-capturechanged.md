@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bb5253c1b9da7a5d9c70eb261e09a6dbb9ad70ddaaefde744cbb4a949431160
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 050bc00a7ab19e22e0fe4ea1f35271707180d4d4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117884282"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580021"
 ---
 # <a name="wm_capturechanged-message"></a>Mensaje \_ CAPTURECHANGED de WM
 
@@ -56,7 +56,7 @@ Identificador de la ventana que obtiene la captura del mouse.
 
 Una aplicación debe devolver cero si procesa este mensaje.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una ventana recibe este mensaje incluso si llama a [**ReleaseCapture.**](/windows/win32/api/winuser/nf-winuser-releasecapture) Una aplicación no debe intentar establecer la captura del mouse en respuesta a este mensaje.
 
@@ -66,7 +66,7 @@ Cuando recibe este mensaje, una ventana debe volver a dibujarse a sí misma, si 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |

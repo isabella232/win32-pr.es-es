@@ -1,6 +1,6 @@
 ---
 title: Tab (Elemento)
-description: Representa una pestaña contextual o de núcleo.
+description: Representa una pestaña principal o contextual.
 ms.assetid: 2e73a89c-4d31-4075-93c8-e43213a20791
 keywords:
 - Tab, elemento Windows Cinta de opciones
@@ -14,15 +14,15 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 349004f65713160acc75bdb6f77765ad9f0c3034
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122625961"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574365"
 ---
 # <a name="tab-element"></a>Tab (Elemento)
 
-Representa una [pestaña contextual](windowsribbon-controls-tab.md) o [de núcleo.](windowsribbon-controls-tabgroup.md)
+Representa una [pestaña principal](windowsribbon-controls-tab.md) [o contextual.](windowsribbon-controls-tabgroup.md)
 
 ## <a name="usage"></a>Uso
 
@@ -49,7 +49,7 @@ Representa una [pestaña contextual](windowsribbon-controls-tab.md) o [de núcle
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -95,7 +95,7 @@ Representa una [pestaña contextual](windowsribbon-controls-tab.md) o [de núcle
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Necesario.
 
@@ -200,7 +200,7 @@ En esta sección de código se muestran las **declaraciones de** control Tab.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

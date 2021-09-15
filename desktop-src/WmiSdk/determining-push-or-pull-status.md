@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Determinar el estado de inserción o extracción
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df69fcc88195f26611636fc5292521ec31dd070fce53a61ea80ffebe310a9503
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bee037b4c81e43080ee119540b05568eb00cdc70
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117924829"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575357"
 ---
 # <a name="determining-push-or-pull-status"></a>Determinar el estado de inserción o extracción
 
@@ -18,7 +18,7 @@ Puede modelar un proveedor de clases como un proveedor de inserción o extracci�
 
 Un proveedor de extracción genera definiciones de clase dinámicamente. Normalmente, los datos administrados por un proveedor de extracción cambian con frecuencia, lo que requiere que el proveedor genere la clase dinámicamente o recupere la clase de una caché local cada vez que una aplicación emite una solicitud. Un proveedor de extracción debe implementar sus propios mecanismos de recuperación de datos, caché y notificación de eventos. Dado que la mayoría de los proveedores son proveedores de extracción, en la documentación de este archivo se supone que está creando un proveedor de extracción a menos que se indique explícitamente lo contrario.
 
-En cambio, WMI usa datos en el repositorio WMI para controlar todas las solicitudes de aplicación para los proveedores de inserción. Los proveedores de inserción también usan menos métodos de interfaz y, por tanto, son más fáciles de implementar. Un proveedor de inserción usa el repositorio WMI como un área de almacenamiento para obtener información sobre el objeto administrado y actualiza esa información solo durante la inicialización. Por ejemplo, el proveedor de clases WDM incluido en la sección WMI del Kit de desarrollo de software (SDK) de Microsoft Windows se modela como un proveedor de inserción.
+En cambio, WMI usa datos en el repositorio WMI para controlar todas las solicitudes de aplicación para los proveedores de inserción. Los proveedores de inserción también usan menos métodos de interfaz y, por tanto, son más fáciles de implementar. Un proveedor de inserción usa el repositorio WMI como área de almacenamiento para obtener información sobre el objeto administrado y actualiza esa información solo durante la inicialización. Por ejemplo, el proveedor de clases WDM incluido en la sección WMI del Kit de desarrollo de software (SDK) de Microsoft Windows se modela como un proveedor de inserción.
 
 Al usar el repositorio WMI como área de almacenamiento, un proveedor de inserción obtiene las siguientes ventajas sobre un proveedor de extracción:
 
@@ -27,7 +27,7 @@ Al usar el repositorio WMI como área de almacenamiento, un proveedor de inserci
 -   Cuando una aplicación solicita los datos proporcionados por el proveedor, WMI la cumple.
 -   El proveedor también puede confiar en WMI para admitir la notificación de eventos.
 
-Sin embargo, dado que un proveedor de inserción solo se actualiza durante la inicialización, es posible que los cambios en una clase no se reflejen en el repositorio WMI durante algún tiempo. Por lo tanto, el modelo del proveedor de inserción funciona mejor con clases que cambian poco o que son completamente estáticas.
+Sin embargo, dado que un proveedor de inserción solo se actualiza durante la inicialización, es posible que los cambios en una clase no se reflejen en el repositorio WMI durante algún tiempo. Por lo tanto, el modelo de proveedor de inserción funciona mejor con clases que cambian poco o que, de lo contrario, son completamente estáticas.
 
  
 

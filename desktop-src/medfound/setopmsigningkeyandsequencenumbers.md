@@ -13,17 +13,17 @@ api_type:
 - DllExport
 api_location:
 - gdi32.dll
-ms.openlocfilehash: 7096b45d722ecbd3d70048a3e6de8cd6de260741abdb610f52a0694ca5ee6200
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cbd088b83acd4e93cc186e6c7b5635ad1e3d8346
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119953215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574800"
 ---
 # <a name="setopmsigningkeyandsequencenumbers-function"></a>Función SetOPMSigningKeyAndSequenceNumbers
 
 > [!IMPORTANT]
-> El Administrador de [](output-protection-manager.md) protección de salida (OPM) usa esta función para acceder a la funcionalidad del controlador de pantalla. Las aplicaciones no deben llamar a esta función.
+> Output [Protection Manager](output-protection-manager.md) (OPM) usa esta función para acceder a la funcionalidad del controlador de pantalla. Las aplicaciones no deben llamar a esta función.
 
  
 
@@ -55,7 +55,7 @@ Identificador del objeto de salida protegido. Este identificador se obtiene medi
 *pParameters* \[ out\]
 </dt> <dd>
 
-Puntero a una [**estructura DXGKMDT \_ OPM \_ ENCRYPTED \_ PARAMETERS**](/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_dxgkmdt_opm_encrypted_parameters) que contiene una matriz de 256 bytes. Para obtener más información sobre cómo inicializar esta matriz, vea [DxgkDdiOPMSetSigningKeyAndSequenceNumbers](https://msdn.microsoft.com/library/aa906703.aspx).
+Puntero a una estructura [**DXGKMDT \_ OPM \_ ENCRYPTED \_ PARAMETERS**](/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_dxgkmdt_opm_encrypted_parameters) que contiene una matriz de 256 bytes. Para obtener más información sobre cómo inicializar esta matriz, vea [DxgkDdiOPMSetSigningKeyAndSequenceNumbers](https://msdn.microsoft.com/library/aa906703.aspx).
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Puntero a una [**estructura DXGKMDT \_ OPM \_ ENCRYPTED \_ PARAMETERS**](/window
 
 Si el método se realiza correctamente, devuelve **STATUS \_ SUCCESS**. De lo contrario, devuelve un código de error **NTSTATUS.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las aplicaciones deben [**llamar a IOPMVideoOutput::FinishInitialization en**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-finishinitialization) lugar de llamar a esta función.
 
@@ -81,7 +81,7 @@ Esta función no tiene ninguna biblioteca de importación asociada. Para llamar 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

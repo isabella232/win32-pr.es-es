@@ -3,7 +3,7 @@ title: Función MpManagerOpen (MpClient.h)
 description: Establece una conexión con el administrador de protección contra malware en el equipo local.
 ms.assetid: 40513A74-AFCC-4E22-9B78-D46FEB575A00
 keywords:
-- Función MpManagerOpen Características heredadas del Windows entorno
+- MpManagerOpen function Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 324d013c46777ac48af32e6c91f557b7feda3a03fbdf0c21a7c79e8cf5e3d9dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af432cc7d91530fd3d37176592f7f457b31b6314
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117883370"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580017"
 ---
 # <a name="mpmanageropen-function"></a>Función MpManagerOpen
 
@@ -55,7 +55,7 @@ Reservado para uso futuro. Se debe establecer en 0.
 
 Tipo: **PMPHANDLE**
 
-Controlar la interfaz del administrador de protección contra malware. Este identificador debe cerrarse con la [**función MpHandleClose.**](mphandleclose.md)
+Identificador de la interfaz del administrador de protección contra malware. Este identificador debe cerrarse con la [**función MpHandleClose.**](mphandleclose.md)
 
 </dd> </dl>
 
@@ -63,24 +63,24 @@ Controlar la interfaz del administrador de protección contra malware. Este iden
 
 Tipo: **HRESULT**
 
-Si la función se realiza correctamente, el valor devuelto es **S \_ OK**. Se garantiza que esta llamada de función se realiza correctamente aunque no se esté ejecutando un servicio AntiMalware.
+Si la función se realiza correctamente, el valor devuelto es **S \_ OK**. Se garantiza que esta llamada de función se realiza correctamente incluso si no se está ejecutando un servicio AntiMalware.
 
-Si se produce un error en la función, el valor devuelto es un **código HRESULT con** errores. El autor de la llamada puede usar [**la función MpErrorMessageFormat**](mperrormessageformat.md) para obtener una descripción genérica del mensaje de error.
+Si se produce un error en la función, el valor devuelto es un **código HRESULT** con errores. El autor de la llamada puede [**usar la función MpErrorMessageFormat**](mperrormessageformat.md) para obtener una descripción genérica del mensaje de error.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
 | Archivo DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 55103517
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: f61b7a90efa4ee0bd5843bdb72317c9c9c3deeaca9205447fd8bf2ebd6b9b7b8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 10d1b16f194a6e6f0c11882d43441ae60f8434d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119039353"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581145"
 ---
 # <a name="jet_columnlist-members"></a>JET_COLUMNLIST miembros
 
@@ -21,7 +21,7 @@ Incluir miembros heredados
 
 Información sobre una tabla temporal que contiene información sobre todas las columnas de una tabla determinada.
 
-El [JET_COLUMNLIST](./jet-columnlist-class.md) muestra los miembros siguientes.
+El [JET_COLUMNLIST](./jet-columnlist-class.md) expone los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -99,7 +99,7 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335107(v=exchg.10).md">tableid</a></td>
-<td>Obtiene el tableid de la tabla temporal. Debe cerrarse cuando la tabla ya no sea necesaria.</td>
+<td>Obtiene tableid de la tabla temporal. Debe cerrarse cuando la tabla ya no sea necesaria.</td>
 </tr>
 </tbody>
 </table>

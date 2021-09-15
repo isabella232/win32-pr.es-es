@@ -1,7 +1,7 @@
 ---
-description: Restringe el área del IAnalysisRegion a la parte de su área que no forma una intersección con el rectángulo especificado.
+description: Restringe el área de IAnalysisRegion a la parte de su área que no forma una intersección con el rectángulo especificado.
 ms.assetid: a35b8bfc-a87a-4e9a-908f-2b13a128d222
-title: 'IAnalysisRegion:: ExcludeRectangle (método) (IACom. h)'
+title: Método IAnalysisRegion::ExcludeRectangle (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - IACom.dll
 ms.openlocfilehash: 684ce2ceb57c7954c732fb2816aca50fcbae5297
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715244"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579485"
 ---
-# <a name="ianalysisregionexcluderectangle-method"></a>IAnalysisRegion:: ExcludeRectangle (método)
+# <a name="ianalysisregionexcluderectangle-method"></a>IAnalysisRegion::ExcludeRectangle (método)
 
-Restringe el área del [**IAnalysisRegion**](ianalysisregion.md) a la parte de su área que no forma una intersección con el rectángulo especificado.
+Restringe el área de [**IAnalysisRegion**](ianalysisregion.md) a la parte de su área que no forma una intersección con el rectángulo especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,22 +39,22 @@ HRESULT ExcludeRectangle(
 
 <dl> <dt>
 
-*pExcludingRectangle* \[ de\]
+*pExcludingRectangle* \[ En\]
 </dt> <dd>
 
-Rectángulo que se va a excluir de este [**IAnalysisRegion**](ianalysisregion.md).
+Rectángulo que se va a excluir de [**esta región IAnalysisRegion.**](ianalysisregion.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Para obtener una descripción de los valores devueltos, vea [clases e interfaces-análisis de tinta](classes-and-interfaces---ink-analysis.md).
+Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Observaciones
 
-Las coordenadas del rectángulo están en unidades de HIMETRIC.
+Las coordenadas del rectángulo están en unidades HIMETRIC.
 
-Si las dos áreas no forman una intersección, el [**IAnalysisRegion**](ianalysisregion.md) no cambia.
+Si las dos áreas no se intersecan, [**IAnalysisRegion**](ianalysisregion.md) no cambia.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,9 +62,9 @@ Si las dos áreas no forman una intersección, el [**IAnalysisRegion**](ianalysi
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Encabezado<br/>                   | <dl> <dt>IACom. h (también requiere IACom \_ i. c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -76,22 +76,22 @@ Si las dos áreas no forman una intersección, el [**IAnalysisRegion**](ianalysi
 [**IAnalysisRegion**](ianalysisregion.md)
 </dt> <dt>
 
-[**IAnalysisRegion:: ExcludeRegion (método)**](ianalysisregion-excluderegion.md)
+[**IAnalysisRegion::ExcludeRegion (Método)**](ianalysisregion-excluderegion.md)
 </dt> <dt>
 
-[**IAnalysisRegion:: IntersectRectangle (método)**](ianalysisregion-intersectrectangle.md)
+[**IAnalysisRegion::IntersectRectangle (Método)**](ianalysisregion-intersectrectangle.md)
 </dt> <dt>
 
-[**IAnalysisRegion:: IntersectRegion (método)**](ianalysisregion-intersectregion.md)
+[**IAnalysisRegion::IntersectRegion (Método)**](ianalysisregion-intersectregion.md)
 </dt> <dt>
 
-[**IAnalysisRegion:: UnionRectangle (método)**](ianalysisregion-unionrectangle.md)
+[**IAnalysisRegion::UnionRectangle (Método)**](ianalysisregion-unionrectangle.md)
 </dt> <dt>
 
-[**IAnalysisRegion:: UnionRegion (método)**](ianalysisregion-unionregion.md)
+[**IAnalysisRegion::UnionRegion (Método)**](ianalysisregion-unionregion.md)
 </dt> <dt>
 
-[Referencia de análisis de tinta](ink-analysis-reference.md)
+[Referencia de análisis de entrada de lápiz](ink-analysis-reference.md)
 </dt> </dl>
 
  

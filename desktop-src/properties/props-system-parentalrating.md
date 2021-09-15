@@ -4,12 +4,12 @@ ms.assetid: db5fb8a2-719f-4bef-9ab1-0856945ed240
 title: System.ParentalRating
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bd27f3fd3377e60d4fa517fbd5704d6abd25a2e3a2b568ccf2718db93f173a3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3775c487921c6987810ba09f3b3ee94f60e91145
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119596825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579693"
 ---
 # <a name="systemparentalrating"></a>System.ParentalRating
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

@@ -1,5 +1,5 @@
 ---
-description: El calificador dinámico indica una clase cuyas instancias se crean dinámicamente. El valor de este calificador debe establecerse en TRUE.
+description: El calificador Dinámico indica una clase cuyas instancias se crean dinámicamente. El valor de este calificador debe establecerse en TRUE.
 ms.assetid: 63286687-abbf-49f0-8061-3b47fba75806
 ms.tgt_platform: multiple
 title: Calificador dinámico
@@ -14,23 +14,23 @@ api_type:
 - NA
 api_location: ''
 ms.openlocfilehash: f6530942859c8c3de571ba9ddb94e9b1ce78cc0d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103908677"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575344"
 ---
 # <a name="dynamic-qualifier"></a>Calificador dinámico
 
-El calificador **dinámico** indica una clase cuyas instancias se crean dinámicamente. El valor de este calificador debe establecerse en **true**.
+El **calificador** Dinámico indica una clase cuyas instancias se crean dinámicamente. El valor de este calificador debe establecerse en **TRUE.**
 
-El calificador **dinámico** debe especificarse en todas las clases que contienen datos y cuyas instancias se crean dinámicamente. El calificador de [**proveedor**](/windows/desktop/api/Provider/nl-provider-provider) se suele especificar también para identificar el proveedor responsable de proporcionar los datos.
+El **calificador** dinámico debe especificarse en todas las clases que contienen datos y para qué instancias se crean dinámicamente. [**Normalmente,**](/windows/desktop/api/Provider/nl-provider-provider) el calificador Provider también se especifica para identificar el proveedor responsable de proporcionar los datos.
 
-Las clases que solo contienen métodos que necesitan implementación no requieren el calificador **dinámico** . Solo se requiere el calificador de [**proveedor**](/windows/desktop/api/Provider/nl-provider-provider) para especificar el nombre del proveedor para proporcionar la implementación.
+Las clases que contienen solo métodos que necesitan implementación no requieren el **calificador Dinámico.** Solo el [**calificador Provider**](/windows/desktop/api/Provider/nl-provider-provider) es necesario para especificar el nombre del proveedor para proporcionar la implementación.
 
 Todas las clases derivadas de una clase dinámica deben ser dinámicas. No se puede derivar una clase estática de una clase dinámica.
 
-Cuando se especifica **Dynamic** en una propiedad de una instancia de, también se debe especificar el calificador **PropertyContext** .
+Cuando **se** especifica Dynamic en una propiedad de una instancia de , también se debe especificar el calificador **PropertyContext.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Cuando se especifica **Dynamic** en una propiedad de una instancia de, también 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -53,7 +53,7 @@ Cuando se especifica **Dynamic** en una propiedad de una instancia de, también 
 [Calificadores WMI](wmi-qualifiers.md)
 </dt> <dt>
 
-[Adición de un calificador](adding-a-qualifier.md)
+[Agregar un calificador](adding-a-qualifier.md)
 </dt> </dl>
 
  

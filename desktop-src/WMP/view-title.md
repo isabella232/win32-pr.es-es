@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c27d14f0a1ce41e45b4c012113549ce5a2c2b35d24764b675ab64326537a67e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0446d068b4a61f6befbad9390437dc4574d7f1d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120001295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581329"
 ---
 # <a name="viewtitle"></a>VIEW.title
 
@@ -31,7 +31,7 @@ El **atributo** title especifica o recupera el título de **VIEW.**
 
 Este atributo es una **cadena especificada** en tiempo de diseño y de solo lectura a partir de entonces. Puede tener hasta 255 caracteres y no tiene ningún valor predeterminado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El título especificado o recuperado es el nombre para mostrar del tema.
 

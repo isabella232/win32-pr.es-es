@@ -4,12 +4,12 @@ description: Use estos temas para ayudarle a diseñar la experiencia del usuario
 ms.assetid: 3711c6fa-7db2-4aad-93e9-e7970bc0678f
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: e171c7a79d834d876715db86907e015ba40aad00176b109956726f3e34ef1dca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f5ac13a932f4b315bd827ac6072a8d5c16f35f30
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118216715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574424"
 ---
 # <a name="design-basics-for-desktop-applications"></a>Conceptos básicos de diseño para aplicaciones de escritorio
 
@@ -20,11 +20,11 @@ Use estos artículos para ayudarle a diseñar la experiencia del usuario para su
 
 -   [Cómo diseñar una experiencia de usuario excelente](how-to-design-desktop-ux.md)
 
-    Recomendaciones para lograr eficacia y simplicidad a través de una selección y presentación de características cuidadosamente equilibradas.
+    Recomendaciones para lograr eficacia y simplicidad a través de una presentación y selección de características cuidadosamente equilibradas.
 
 <!-- -->
 
--   [Lista de comprobación de experiencia de usuario](top-violations.md)
+-   [Lista de comprobación de la experiencia de usuario](top-violations.md)
 
     Algunos errores comunes e incoherencias que hay que tener en cuenta en el diseño de la interfaz de usuario.
 

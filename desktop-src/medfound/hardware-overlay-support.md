@@ -1,17 +1,17 @@
 ---
 description: Describe cómo usar superposiciones de hardware en Direct3D 9.
 ms.assetid: fa9d5bf5-4c0f-471a-b639-d329b0cd89a4
-title: Compatibilidad con superposición de hardware
+title: Compatibilidad con la superposición de hardware
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f537c91bc217344206c0a23cf5ca8a14254a9c983e4ae550e96457bbb055e5d7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: adcae33cdf55de59bdcd074829d52b4c1c43ea5f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119600405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581069"
 ---
-# <a name="hardware-overlay-support"></a>Compatibilidad con superposición de hardware
+# <a name="hardware-overlay-support"></a>Compatibilidad con la superposición de hardware
 
 Una superposición de hardware es un área dedicada de memoria de vídeo que se puede superponer en la superficie principal. No se realiza ninguna copia cuando se muestra la superposición. La operación de superposición se realiza en hardware, sin modificar los datos de la superficie principal.
 
@@ -52,7 +52,7 @@ Las siguientes **marcas \_ de parámetros D3DPRESENT** se definen para crear sup
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **D3DPRESENTFLAG \_ OVERLAY \_ LIMITEDRGB**   | El intervalo RGB es de 16 a 235. El valor predeterminado es de 0 a 255. <br/> Requiere la **funcionalidad D3DOVERLAYCAPS \_ LIMITEDRANGERGB.**<br/>                                                 |
 | **D3DPRESENTFLAG \_ OVERLAY \_ YCbCr \_ BT709** | Los colores YUV usan la definición BT.709. El valor predeterminado es BT.601. <br/> Requiere la **funcionalidad D3DOVERLAYCAPS \_ YCbCr \_ BT709.**<br/>                                      |
-| **D3DPRESENTFLAG \_ OVERLAY \_ YCbCr \_ scryCC** | Generar los datos mediante YCbCr extendido (sipYCC).<br/> Requiere la **funcionalidad D3DOVERLAYCAPS \_ YCbCr \_ BT601 \_ trasACC** o **D3DOVERLAYCAPS \_ YCbCr \_ BT709. \_**<br/> |
+| **D3DPRESENTFLAG \_ OVERLAY \_ YCbCr \_ scryCC** | Generación de los datos mediante YCbCr extendido (sipYCC).<br/> Requiere la **funcionalidad D3DOVERLAYCAPS \_ YCbCr \_ BT601 \_ trasACC** o **D3DOVERLAYCAPS \_ YCbCr \_ BT709. \_**<br/> |
 
 
 

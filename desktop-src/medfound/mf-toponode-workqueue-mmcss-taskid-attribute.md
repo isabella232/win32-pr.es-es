@@ -4,12 +4,12 @@ ms.assetid: ccecc1e6-2d30-4e89-849f-c3acad97f312
 title: MF_TOPONODE_WORKQUEUE_MMCSS_TASKID atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bf75dc911c9d00cab2d21d937ef16a43b38cc4271299c6fae4f2ed7381ec63a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 53af119c58d725d42ec5737ffd9bf96286a65ac1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118739633"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579845"
 ---
 # <a name="mf_toponode_workqueue_mmcss_taskid-attribute"></a>Atributo \_ TASKID DE MMCSS MF TOPONODE \_ \_ \_ WORKQUEUE
 
@@ -42,7 +42,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

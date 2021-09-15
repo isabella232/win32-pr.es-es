@@ -4,12 +4,12 @@ ms.assetid: 5dd0eda3-83a6-4077-a7a3-e371c9413b0f
 title: WM_NCCREATE mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 84fa5638ef1b97365d202f2049fc79712d0ed3eec167825110f7c7967ce4605c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e8757cbdeba49d54f6e5d842a5b40c7f7ae61cac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118200061"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574340"
 ---
 # <a name="wm_nccreate-message"></a>Mensaje \_ WM NCCREATE
 
@@ -46,13 +46,13 @@ Puntero a la [**estructura CREATESTRUCT**](/windows/win32/api/winuser/ns-winuser
 
 Tipo: **LRESULT**
 
-Si una aplicación procesa este mensaje, debe devolver **TRUE** para continuar con la creación de la ventana. Si la aplicación devuelve **FALSE,** la [**función CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) devolverá un **identificador NULL.**
+Si una aplicación procesa este mensaje, debe devolver **TRUE** para continuar con la creación de la ventana. Si la aplicación devuelve **FALSE**, la [**función CreateWindow**](/windows/win32/api/winuser/nf-winuser-createwindowa) o [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) devolverá un **identificador NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |

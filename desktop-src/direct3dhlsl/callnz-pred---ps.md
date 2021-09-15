@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f56699a4853b7012401529ecfad6fbfb0006e21990a99a2fe5631faebd57674d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a04bd4b1bfa16d965a90b66e3956674ecb112590
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119983295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574005"
 ---
 # <a name="callnz-pred---ps"></a>callnz pred - ps
 
 Llame a con un predicado, si no es cero. Realiza una llamada condicional a la instrucción marcada por el índice de etiqueta. Predication usa un valor booleano para determinar si no se debe realizar la instrucción.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -38,7 +38,7 @@ Donde:
 -   p0 es el registro de predicado. Vea [Predicate Register](dx9-graphics-reference-asm-ps-registers-predicate.md).
 -   {x \| y \| z \| w} es la réplica necesaria en p0.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

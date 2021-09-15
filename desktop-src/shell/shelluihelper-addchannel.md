@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: b62e6e82-429a-4d41-96d4-cba639b611f5
-ms.openlocfilehash: 6be928a7cae9d9349bb39fc3a27a49a16495a8609c8e1cb448de888ac190619b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d08c1360cb2a96fbc7b87daecb650bbf46aa6ad9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118047518"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574509"
 ---
 # <a name="shelluihelperaddchannel-method"></a>Método ShellUIHelper.AddChannel
 
@@ -52,7 +52,7 @@ Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 Valor **string** que especifica la dirección URL del archivo CDF.
 
 > [!Note]  
-> Los vínculos del archivo CDF deben usar protocolos HTTP, HTTPS o FTP. Si el archivo CDF contiene cualquier otro protocolo, se produce un error en la adición del canal y no aparece ningún cuadro de diálogo.
+> Los vínculos del archivo CDF deben usar los protocolos HTTP, HTTPS o FTP. Si el archivo CDF contiene cualquier otro protocolo, se produce un error en la adición del canal y no aparece ningún cuadro de diálogo.
 
  
 
@@ -111,7 +111,7 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |

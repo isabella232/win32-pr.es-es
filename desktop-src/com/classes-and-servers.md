@@ -5,15 +5,15 @@ ms.assetid: cc88be56-0d96-47d2-b23b-6a6ad376bdae
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d319fd985b812692e6d0bfc421c4bb9da2a2605c
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369676"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574108"
 ---
 # <a name="classes-and-servers"></a>Clases y servidores
 
-COM usa **HKEY \_ CLASSES ROOT \_ para** la configuración de todo el equipo, pero también permite la configuración por usuario de CLSIDS para mayor seguridad y flexibilidad. COM consulta primero las clases **de software HKEY \_ CURRENT \_ USER \\ \\** antes de buscar en **HKEY CLASSES \_ \_ ROOT**. COM mantiene la información de todo el equipo relacionada con LOS CLID en **HKEY \_ CLASSES ROOT \_ \\ CLSID** y mantiene la información de clase por usuario en **HKEY CURRENT USER Software \_ \_ Classes \\ \\ \\ CLSID**.
+COM usa **HKEY \_ CLASSES ROOT \_ para** la configuración de todo el equipo, pero también permite la configuración por usuario de CLSIDS para mayor seguridad y flexibilidad. COM consulta primero las clases **de software HKEY \_ CURRENT \_ USER \\ \\** antes de buscar **en HKEY CLASSES \_ \_ ROOT**. COM mantiene la información de todo el equipo relacionada con LOS CLID en **HKEY \_ CLASSES ROOT \_ \\ CLSID** y mantiene la información de clase por usuario en **HKEY CURRENT USER Software \_ \_ Classes \\ \\ \\ CLSID**.
 
 Los servidores COM admiten el registro propio. Para un servidor en proceso, esto significa que el archivo DLL debe exportar las siguientes funciones:
 

@@ -4,12 +4,12 @@ ms.assetid: 744b30c3-916d-418a-9a74-904de51b8494
 title: System.DeviceInterface.WinUsb.DeviceInterfaceClasses
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 378d7ec1856c5978f6b0153b93ac5eb13c2cebf92aa2469337570549cd2bd0ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ffec53cb5bcea1045d289cfd50068f934f291455
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119946325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574616"
 ---
 # <a name="systemdeviceinterfacewinusbdeviceinterfaceclasses"></a>System.DeviceInterface.WinUsb.DeviceInterfaceClasses
 
@@ -30,7 +30,7 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

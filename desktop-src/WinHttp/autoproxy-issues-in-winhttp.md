@@ -4,12 +4,12 @@ ms.assetid: 9bae89b7-8f54-42ec-a240-998c97e26d25
 title: Problemas de AutoProxy en WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc07ca7320fee028431ff0d89be78ee0b2dc4bb63e8191386808f0936c8a1518
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 22c6edbf56ec1ffc4dfac930a5d4858429cc6447
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119052093"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580673"
 ---
 # <a name="autoproxy-issues-in-winhttp"></a>Problemas de AutoProxy en WinHTTP
 
@@ -24,7 +24,7 @@ WinHTTP no admite actualmente configuraciones de proxy que especifiquen más de 
 El procesamiento del archivo de configuración automática del proxy requiere la ejecución del código de script descargado. Algunos problemas de seguridad que se deben tener en cuenta: si el servidor en el que reside el archivo PAC se ha puesto en peligro, es posible que el código de script PAC sea malintencionado. Por lo tanto, WinHTTP usa las precauciones siguientes para proteger el cliente:
 
 1.  Se impide que el código de script cree instancias de ActiveX objetos. Esto bloquea una gran cantidad de funcionalidades potencialmente peligrosas, como la capacidad de acceder a archivos y realizar E/S de red.
-2.  **Windows Server 2003: **[**WinHttpGetProxyForUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) delega todo el procesamiento de WPAD en un servicio externo fuera de proceso, el servicio de detección automática de proxy web WinHTTP, que se ejecuta en la cuenta de usuario integrada servicio local con pocos privilegios.
+2.  **Windows Server 2003: **[**WinHttpGetProxyForUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) delega todo el procesamiento de WPAD en un servicio externo fuera de proceso, el servicio de detección automática de proxy web WinHTTP, que se ejecuta en la cuenta de usuario integrada del servicio local con pocos privilegios.
 
 3.  **Windows XP con SP2 y Windows Server 2003:** No se permite que un script PAC se ejecute durante más de 60 segundos, después de lo cual se finaliza la ejecución del script.
 

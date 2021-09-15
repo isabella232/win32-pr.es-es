@@ -4,12 +4,12 @@ ms.assetid: F06CACF0-AE75-4707-8CD0-7BA7D51BB80A
 title: MFSampleExtension_ROIRectangle atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 311b17cab20de16a83d145563e8ba0b8ead6f055428ffc6a3823c99deab05fc3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 71d84d2054caa96feaf7bfb4ccc7a91ecf4ac9f8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118240330"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580281"
 ---
 # <a name="mfsampleextension_roirectangle-attribute"></a>Atributo MFSampleExtension \_ ROIRectangle
 
@@ -19,7 +19,7 @@ Especifica los límites de la región de interés que indica la región del marc
 
 **[**ROI \_ AREA**](/windows/desktop/api/mfapi/ns-mfapi-roi_area)** almacenado como **BLOB**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Después de establecer [correctamente CODECAPI \_ AVEncVideoROIEnabled](codecapi-avencvideoroienabled.md) en un valor distinto de cero en un MFT del codificador, la aplicación puede establecer este atributo en los ejemplos de entrada y esperar que se respeta.
 
@@ -37,15 +37,15 @@ No es necesario que la región especificada esté alineada con MB. Los codificad
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| aplicaciones para UWP\]<br/>                     |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

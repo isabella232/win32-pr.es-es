@@ -4,18 +4,18 @@ ms.assetid: 330d1f88-5f54-4e29-b57f-eb7112203e04
 title: Directiva de metadatos de fotos System.GPS.Differential
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 728df47fd8e6e9748b7208b79444ba8fa257fa49c92587df199441de941f4fdd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4dc3f114683d324a067fe4ce4034e2de5cfc88da
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119931805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575625"
 ---
 # <a name="systemgpsdifferential-photo-metadata-policy"></a>Directiva de metadatos de fotos System.GPS.Differential
 
 Directiva de metadatos de fotos para [la propiedad System.GPS.Differential.](../properties/props-system-gps-differential.md)
 
-### <a name="pkey"></a>Pkey
+### <a name="pkey"></a>PKEY
 
 Diferencial gps PKEY \_ \_
 
@@ -121,7 +121,7 @@ Los valores de esquemas diferentes se concilian.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ## <a name="related-topics"></a>Temas relacionados
 

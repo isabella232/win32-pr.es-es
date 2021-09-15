@@ -4,12 +4,12 @@ ms.assetid: 3cb80e75-e803-493b-a22d-e485e77b5177
 title: MFSampleExtension_Interlaced atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36d928d42fc2399536d5beee4f4af87cbacaa82171048ad191a4e9fc7ef3e939
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 43a273b548192ac52da8604eb36fde5ec0e9fcf2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118240652"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580289"
 ---
 # <a name="mfsampleextension_interlaced-attribute"></a>Atributo MFSampleExtension \_ entrelazado
 
@@ -29,7 +29,7 @@ Para establecer este atributo, llame [**a IMFAttributes::SetUINT32**](/windows/d
 
 [**IMFSample**](/windows/desktop/api/mfobjects/nn-mfobjects-imfsample)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para el contenido de vídeo que contiene fotogramas mixtos progresivas e entrelazados, establezca el tipo de medio en entrelazado y use este atributo en cada fotograma para indicar si el marco es progresiva o entrelazada.
 
@@ -43,15 +43,15 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| para aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

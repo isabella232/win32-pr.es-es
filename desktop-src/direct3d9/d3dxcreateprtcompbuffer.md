@@ -1,5 +1,5 @@
 ---
-description: Crea un búfer de transferencia de radiancia precalutados (PRT) comprimido a partir de un objeto ID3DXPRTBuffer sin comprimir. Esta función debe usarse con búferes por vértice o volumen.
+description: Crea un búfer de transferencia de base precalutada (PRT) comprimido a partir de un objeto ID3DXPRTBuffer sin comprimir. Esta función debe usarse con búferes por vértice o volumen.
 ms.assetid: 1464d2dd-05db-4d9a-84ac-39d57b6fff4f
 title: Función D3DXCreatePRTCompBuffer (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: cba1f4106a4dd04c3265bcb5cc5b19fe6a81b9ef7bd8824673e89918f9baeec4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6906067c8f2b412b58c728756ecaa6415168f05a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118096590"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575236"
 ---
 # <a name="d3dxcreateprtcompbuffer-function"></a>Función D3DXCreatePRTCompBuffer
 
-Crea un búfer de transferencia de radiancia precalutada (PRT) comprimido a partir de un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) sin comprimir. Esta función debe usarse con búferes por vértice o volumen.
+Crea un búfer de transferencia de base precalutada (PRT) comprimido a partir de un objeto [**ID3DXPRTBuffer**](id3dxprtbuffer.md) sin comprimir. Esta función debe usarse con búferes por vértice o volumen.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -78,7 +78,7 @@ Número de vectores de base de análisis de componentes principales (PCA) que se
 
 Tipo: **[LPD3DXSHPRTSIMCB](lpd3dxshprtsimcb.md)**
 
-Puntero opcional a la función de devolución de [llamada LPD3DXSHPRTSIMCB](lpd3dxshprtsimcb.md) que se usa para calcular el porcentaje de cálculos de compresión PRT completados. La función de devolución de llamada debe implementarse para devolver S \_ OK para seguir ejecutando la rutina de compresión. Cualquier otro valor detendrá la compresión. Puede ser **NULL.**
+Puntero opcional a la función de devolución de llamada [LPD3DXSHPRTSIMCB](lpd3dxshprtsimcb.md) que se usa para calcular el porcentaje de cálculos de compresión PRT completados. La función de devolución de llamada debe implementarse para devolver S \_ OK para seguir ejecutando la rutina de compresión. Cualquier otro valor detendrá la compresión. Puede ser **NULL.**
 
 </dd> <dt>
 
@@ -126,11 +126,11 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Funciones de transferencia de radiancia precalcaladas](dx9-graphics-reference-d3dx-functions-prt.md)
+[Funciones de transferencia de radiancia precalutadas](dx9-graphics-reference-d3dx-functions-prt.md)
 </dt> <dt>
 
 [**D3DXCreatePRTBuffer**](d3dxcreateprtbuffer.md)

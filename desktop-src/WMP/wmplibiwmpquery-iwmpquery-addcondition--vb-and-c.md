@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe85999c60364827d483f81d14ff88602c9b2831c16e7cff8a3e17076b77671d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9de3015ef0389fef82934cbd8e9326b6f9ec2307
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117745710"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580168"
 ---
 # <a name="iwmpqueryaddcondition-method"></a>IWMPQuery::addCondition (método)
 
-El **método addCondition** agrega una condición a la consulta compuesta mediante **la lógica AND.**
+El **método addCondition** agrega una condición a la consulta compuesta mediante la **lógica AND.**
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -82,7 +82,7 @@ Implements IWMPQuery.addCondition
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las condiciones contenidas en una consulta compuesta se organizan en grupos de condiciones. Varias condiciones dentro de un grupo de condiciones siempre se concatenan mediante la **lógica AND.** Los grupos de condiciones siempre se concatenan entre sí mediante la **lógica OR.** Para iniciar un nuevo grupo de condiciones, llame [a IWMPQuery.beginNextGroup](wmplibiwmpquery-iwmpquery-beginnextgroup--vb-and-c.md).
 
@@ -90,7 +90,7 @@ Las consultas compuestas **que usan IWMPQuery** no distinguen mayúsculas de min
 
 Puede encontrar una lista de valores para *el parámetro bstrAttribute* en [Referencia alfabética de atributos](alphabetical-attribute-reference.md).
 
-En la tabla siguiente se enumeran los valores admitidos *para bstrOperator.*
+En la tabla siguiente se enumeran los valores admitidos *para bstrOperator*.
 
 
 
@@ -98,7 +98,7 @@ En la tabla siguiente se enumeran los valores admitidos *para bstrOperator.*
 |---------------------|----------------|
 | BeginsWith          | Cadenas        |
 | Contiene            | Cadenas        |
-| Es igual que              | Todos los tipos      |
+| es igual a              | Todos los tipos      |
 | GreaterThan         | Números, fechas |
 | GreaterThanOrEquals | Números, fechas |
 | LessThan            | Números, fechas |

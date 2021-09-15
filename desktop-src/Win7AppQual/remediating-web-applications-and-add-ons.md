@@ -4,12 +4,12 @@ ms.assetid: 36255598-C96B-428A-AB87-D0ED140FA6FD
 title: Corrección de problemas de compatibilidad en aplicaciones web y Add-Ons
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45e8ec69c11498f98a58cac4736bd60a0fcd86437392f2cb60c38959749ebe0a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f612847491c64820c93f643dce86f9aa854f637
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118329620"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580677"
 ---
 # <a name="fixing-compatibility-issues-in-web-applications-and-add-ons"></a>Corrección de problemas de compatibilidad en aplicaciones web y Add-Ons
 
@@ -26,7 +26,7 @@ En las secciones siguientes se describe cómo actualizar aplicaciones web y comp
 | [Cadena del agente de usuario](user-agent-string.md)                                                                                              | Describe la cadena del agente de usuario para Internet Explorer.                                                                         |
 | [Protección de DEP/NX](dep-nx-protection.md)                                                                                              | Describe la prevención de ejecución de datos (DEP) o No-Execute(NX).                                                                   |
 | [Compatibilidad](remediating-compatibility.md)                                                                                          | Describe DPE/NX en Windows Internet Explorer 7.                                                                               |
-| [Ajax](ajax.md)                                                                                                                        | Proporciona consideraciones de compatibilidad para JavaScript asincrónico y XML (AJAX).                                              |
+| [AJAX](ajax.md)                                                                                                                        | Proporciona consideraciones de compatibilidad para JavaScript asincrónico y XML (AJAX).                                              |
 | [Modo protegido](protected-mode.md)                                                                                                    | Describe las consideraciones de compatibilidad con el modo protegido.                                                                    |
 | [Notación de objetos JavaScript (JSON)](javascript-object-notation--json-.md)                                                              | Describe las consideraciones de compatibilidad con JSON.                                                                              |
 

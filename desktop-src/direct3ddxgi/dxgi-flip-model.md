@@ -1,19 +1,19 @@
 ---
-description: Windows 8 agrega compatibilidad con el modelo de presentación de volteo y sus estadísticas presentes asociadas en DXGI 1.2.
+description: Windows 8 compatibilidad con el modelo de presentación de volteo y sus estadísticas presentes asociadas en DXGI 1.2.
 ms.assetid: E132DAF5-80B7-4C52-A760-3779CC140CE7
 title: Modelo de volteo DXGI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04b4b4cf8f792a23d4d32e5cb4b4273594745283cb803a638ea3d0cf4c45977f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 49ee82febd13a3b57a06d93fd01eb8d230d6b78a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118289458"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574053"
 ---
 # <a name="dxgi-flip-model"></a>Modelo de volteo DXGI
 
-Windows 8 agrega compatibilidad con el modelo de presentación de volteo y sus estadísticas presentes asociadas en DXGI 1.2. Windows 8 modelo de presentación de volteo DXGI de Windows la presentación del modo de volteo de [Direct3D 9EX](../direct3darticles/direct3d-9ex-improvements.md)de 7. Las aplicaciones de presentación basadas en velocidad de fotogramas o vídeo, como los juegos, pueden beneficiarse más mediante el modelo de presentación de volteo. Las aplicaciones que usan el modelo de presentación de volteo DXGI reducen la carga de recursos del sistema y aumentan el rendimiento. Las aplicaciones también pueden usar mejoras de estadísticas presentes con el modelo de presentación de volteo para controlar mejor la tasa de presentación proporcionando comentarios en tiempo real y mecanismos de corrección.
+Windows 8 compatibilidad con el modelo de presentación de volteo y sus estadísticas presentes asociadas en DXGI 1.2. Windows 8 modelo de presentación de volteo DXGI de Windows la presentación en modo de volteo de [Direct3D 9EX de 7.](../direct3darticles/direct3d-9ex-improvements.md) Las aplicaciones de presentación basadas en velocidad de fotogramas o vídeo, como los juegos, pueden beneficiarse más mediante el modelo de presentación de volteo. Las aplicaciones que usan el modelo de presentación de volteo DXGI reducen la carga de recursos del sistema y aumentan el rendimiento. Las aplicaciones también pueden usar mejoras de estadísticas presentes con el modelo de presentación de volteo para controlar mejor la tasa de presentación proporcionando comentarios en tiempo real y mecanismos de corrección.
 
 -   [Comparación del modelo de volteo DXGI y el modelo BitBlt](#comparing-the-dxgi-flip-model-and-the-bitblt-model)
 -   [Uso del modelo de volteo DXGI](#how-to-use-dxgi-flip-model)
@@ -23,7 +23,7 @@ Windows 8 agrega compatibilidad con el modelo de presentación de volteo y sus e
 
 ## <a name="comparing-the-dxgi-flip-model-and-the-bitblt-model"></a>Comparación del modelo de volteo DXGI y el modelo BitBlt
 
-El tiempo de ejecución usa la transferencia de bloques de bits (bitblt) y los modelos de presentación de volteo para presentar contenido gráfico en los monitores de pantalla. La diferencia más importante entre los modelos de presentación bitblt y flip es cómo el contenido del búfer de reserva obtiene el Windows 8 DWM para la composición. En el modelo bitblt, el contenido del búfer de reserva se copia en la superficie de redireccionamiento en cada llamada a [**IDXGISwapChain1::P resent1**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1). En el modelo de volteo, todos los búferes de reserva se comparten con el Administrador de ventanas de escritorio (DWM). Por lo tanto, dwm puede crear directamente desde esos búferes de reserva sin ninguna operación de copia adicional. En general, el modelo de volteo es más eficaz. El modelo de volteo también proporciona más características, como estadísticas actuales mejoradas.
+El tiempo de ejecución usa la transferencia de bloques de bits (bitblt) y los modelos de presentación de volteo para presentar contenido gráfico en los monitores de pantalla. La diferencia más importante entre los modelos de presentación bitblt y flip es cómo el contenido del búfer de reserva obtiene la Windows 8 DWM para la composición. En el modelo bitblt, el contenido del búfer de reserva se copia en la superficie de redireccionamiento en cada llamada a [**IDXGISwapChain1::P resent1**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1). En el modelo de volteo, todos los búferes de reserva se comparten con el Administrador de ventanas de escritorio (DWM). Por lo tanto, dwm puede crear directamente desde esos búferes de reserva sin ninguna operación de copia adicional. En general, el modelo de volteo es más eficaz. El modelo de volteo también proporciona más características, como estadísticas actuales mejoradas.
 
 Si tiene componentes heredados que usan Windows Interfaz de dispositivo gráfico (GDI) para escribir directamente en [**un HWND,**](../winprog/windows-data-types.md) use el modelo bitblt.
 
@@ -51,13 +51,13 @@ Las aplicaciones de Direct3D 11.1 que tienen como destino Windows 8 usan el mode
 
 -   **BufferCount** en un valor entre 2 y 16 para evitar una penalización del rendimiento como resultado de esperar a que DWM libere el búfer de presentación anterior.
 -   **Formato** a DXGI \_ FORMAT \_ R16G16B16A16 \_ FLOAT, DXGI \_ FORMAT \_ B8G8R8A8 UNORM o \_ DXGI FORMAT \_ \_ R8G8B8A8 \_ UNORM
--   **Miembro Count** de la estructura [**\_ DXGI SAMPLE \_ DESC**](/windows/desktop/api/dxgicommon/ns-dxgicommon-dxgi_sample_desc) que el miembro **SampleDesc** especifica en uno y el miembro **Quality** de **DXGI \_ SAMPLE \_ DESC** a cero porque no se admite el suavizado de contorno de varias muestras (MSAA).
+-   **Miembro Count** de la estructura [**\_ DXGI SAMPLE \_ DESC**](/windows/desktop/api/dxgicommon/ns-dxgicommon-dxgi_sample_desc) que el miembro **SampleDesc** especifica en uno y el miembro **Quality** de **DXGI \_ SAMPLE \_ DESC** en cero porque no se admite el suavizado de contorno de varias muestras (MSAA).
 
 Si usa [**DXGI \_ SWAP EFFECT FLIP \_ \_ \_ SEQUENTIAL**](/windows/desktop/api/DXGI/ne-dxgi-dxgi_swap_effect) en Windows sistema operativo 7 o versiones anteriores, se produce un error en la creación del dispositivo. Al usar el modelo de volteo, puede usar estadísticas de presentación de pantalla completa en modo de ventana. El comportamiento de pantalla completa no se ve afectado. Si pasa **NULL** al parámetro *pFullscreenDesc* de [**IDXGIFactory2::CreateSwapChainForHwnd**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgifactory2-createswapchainforhwnd) para una cadena de intercambio en ventanas y establece **SwapEffect** en **DXGI SWAP EFFECT FLIP \_ \_ \_ \_ SEQUENTIAL**, el tiempo de ejecución crea un búfer de reserva adicional y gira el controlador que pertenezca al búfer que se convierta en el búfer front-time en tiempo de presentación.
 
 Cuando use el modelo de volteo, tenga en cuenta estas sugerencias:
 
--   Use una cadena de intercambio de modelos de volteo [**por HWND.**](../winprog/windows-data-types.md) No dirigir varias cadenas de intercambio de modelos de volteo al mismo **HWND.**
+-   Use una cadena de intercambio de modelos de volteo [**por HWND.**](../winprog/windows-data-types.md) No tiene como destino varias cadenas de intercambio de modelos de volteo al mismo **HWND.**
 -   No use la cadena de intercambio de modelos de volteo con las funciones [**ScrollWindow**](/windows/win32/api/winuser/nf-winuser-scrollwindow) o [**ScrollWindowEx de**](/windows/win32/api/winuser/nf-winuser-scrollwindowex) GDI. Algunas aplicaciones de Direct3D usan las funciones **ScrollWindow** y **ScrollWindowEx** de GDI para actualizar el contenido de la ventana después de que se produzca un evento de desplazamiento del usuario. **ScrollWindow** y **ScrollWindowEx** realizan bitblts de contenido de la ventana en pantalla a medida que el usuario se desplaza por una ventana. Estas funciones también requieren actualizaciones del modelo bitblt para el contenido de GDI y Direct3D. Las aplicaciones que usan cualquiera de las funciones no mostrarán necesariamente el contenido visible de la ventana que se desplaza en pantalla cuando la aplicación está en modo de ventana. Se recomienda no usar las funciones **ScrollWindow** y **ScrollWindowEx** de GDI y, en su lugar, volver a dibujar el contenido de GDI y Direct3D en la pantalla en respuesta al desplazamiento.
 -   Use el modelo de volteo en [**un HWND**](../winprog/windows-data-types.md) que no sea el destino de otras API, incluido el modelo de presentación de bitblt DXGI, otras versiones de Direct3D o GDI. Dado que el modelo bitblt mantiene una copia adicional de la superficie, puede agregar GDI y otros contenidos de Direct3D al mismo **HWND** mediante actualizaciones por fragmentos de Direct3D y GDI. Cuando se usa el modelo de volteo, solo se puede ver el contenido de Direct3D en las cadenas de intercambio del modelo de volteo que el tiempo de ejecución pasa a DWM. El tiempo de ejecución omite todas las demás actualizaciones de contenido direct3D o GDI del modelo bitblt.
 
@@ -68,7 +68,7 @@ Las estadísticas presentes son información de tiempo de fotogramas que las apl
 Para las estadísticas presentes del modelo de volteo, [**IDXGISwapChain::GetFrameStatistics**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-getframestatistics) devuelve **DXGI \_ ERROR FRAME \_ \_ STATISTICS \_ DISJOINT** en estas situaciones:
 
 -   Primera llamada a [**GetFrameStatistics,**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-getframestatistics)que indica el principio de una secuencia
--   Cambio de modo: modo con ventanas hacia o desde pantalla completa o de pantalla completa a transiciones de pantalla completa
+-   Cambio de modo: modo de ventana hacia o desde pantalla completa o de pantalla completa a transiciones de pantalla completa
 
 Los valores de **los miembros PresentRefreshCount**, **SyncRefreshCount** y **SyncQPCTime** de [**DXGI FRAME \_ \_ STATISTICS**](/windows/desktop/api/DXGI/ns-dxgi-dxgi_frame_statistics) tienen las siguientes características:
 
@@ -81,7 +81,7 @@ El método [**IDXGISwapChain::GetLastPresentCount**](/windows/desktop/api/DXGI/n
 
 Realice estos pasos para evitar, detectar y recuperarse de problemas en la presentación de fotogramas:
 
-1.  Poner [**en cola llamadas IDXGISwapChain1::P resent1**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) (es decir, llamar a **IDXGISwapChain1::P resent1** varias veces, lo que hace que se recopile en una cola).
+1.  Llamadas [**IDXGISwapChain1::P resent1**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1) de cola (es decir, llame a **IDXGISwapChain1::P resent1** varias veces, lo que hace que se recopile en una cola).
 2.  Cree una estructura present-queue para almacenar todos los valores [**IDXGISwapChain1::P resent1**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1)(devueltos por [**IDXGISwapChain::GetLastPresentCount)**](/windows/desktop/api/DXGI/nf-dxgi-idxgiswapchain-getlastpresentcount)y los valores **presentRefreshCount** asociados, calculados o esperados.
 3.  Para detectar un problema:
 
@@ -104,17 +104,17 @@ Este es un escenario de ejemplo de recuperación de problemas en la presentació
 
 ![ilustración de un escenario de ejemplo de recuperación de problemas en la presentación de fotogramas](images/frame-sync-glitch-recover.png)
 
-En el escenario de ejemplo, espera que el fotograma A se vaya a la pantalla con un recuento de vsync de 1. Pero realmente se detecta el recuento de vsync que el fotograma A aparece en pantalla como 4. Por lo tanto, se determina que se produjo un problema. A continuación, puede descartar 3 fotogramas, es decir, puede pasar 0 al parámetro *SyncInterval* en 3 llamadas a [**IDXGISwapChain1::P resent1**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1). En el escenario de ejemplo anterior, para recuperarse del problema, necesita un total de 8 llamadas **IDXGISwapChain1::P resent1.** Después, el no.9 fotograma es visible según el recuento de vsync que se espera.
+En el escenario de ejemplo, espera que el fotograma A se vaya a la pantalla con un recuento de vsync de 1. Pero realmente se detecta el recuento de vsync que el fotograma A aparece en la pantalla como 4. Por lo tanto, se determina que se produjo un problema. A continuación, puede descartar 3 fotogramas, es decir, puede pasar 0 al parámetro *SyncInterval* en 3 llamadas a [**IDXGISwapChain1::P resent1**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1). En el escenario de ejemplo anterior, para recuperarse del problema, necesita un total de 8 llamadas **IDXGISwapChain1::P resent1.** A continuación, el no.9 fotograma es visible según el recuento de vsync que se espera.
 
-Esta es una línea de tiempo de eventos de presentación. Cada línea vertical representa una vsync. La dirección horizontal es el tiempo, que aumenta a la derecha. Puede usar la ilustración para imaginar cómo pueden producirse problemas.
+Esta es una línea de tiempo de eventos de presentación. Cada línea vertical representa un vsync. La dirección horizontal es el tiempo, que aumenta a la derecha. Puede usar la ilustración para imaginar cómo pueden producirse problemas.
 
 ![ilustración de una línea de tiempo de eventos de presentaciónl](images/present-timeline.png)
 
 En la ilustración se muestra esta secuencia:
 
 1.  La aplicación se reactiva en vsync, se representa en azul, llama a [**IDXGISwapChain1::P resent1**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1)y, a continuación, vuelve a suspensión.
-2.  La unidad de procesamiento gráfico (GPU) se reactiva de inactividad, realiza la representación en azul y, a continuación, vuelve a suspensión.
-3.  DwM se reactiva en la siguiente instancia de vsync, se compone de azul en su búfer de reserva, llama a [**IDXGISwapChain1::P resent1**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1)y, a continuación, vuelve a suspensión.
+2.  La unidad de procesamiento gráfico (GPU) se reactiva de la inactividad, realiza la representación en azul y, a continuación, vuelve a suspensión.
+3.  El DWM se reactiva en la siguiente instancia de vsync, se compone de azul en su búfer de reserva, llama a [**IDXGISwapChain1::P resent1**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1)y, a continuación, vuelve a suspensión.
 4.  La aplicación se reactiva, se representa en verde, llama a [**IDXGISwapChain1::P resent1**](/windows/desktop/api/DXGI1_2/nf-dxgi1_2-idxgiswapchain1-present1)y, a continuación, vuelve a suspensión.
     > [!Note]  
     > La aplicación se ejecuta simultáneamente mientras la GPU realiza la composición de azul.

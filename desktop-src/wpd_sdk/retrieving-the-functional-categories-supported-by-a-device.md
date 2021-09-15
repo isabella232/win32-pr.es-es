@@ -4,12 +4,12 @@ ms.assetid: 7748e111-9987-4685-8fc8-10c5d4631080
 title: Recuperar las categorías funcionales admitidas por un dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d410788616cc20563b914a293afcd8e2bbbd87099f738ae21463d2092c620597
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6514c6255fa089dc235b5edd8a25b5ef581aee84
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117842697"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574265"
 ---
 # <a name="retrieving-the-functional-categories-supported-by-a-device"></a>Recuperar las categorías funcionales admitidas por un dispositivo
 
@@ -17,7 +17,7 @@ Windows Los dispositivos portátiles pueden admitir una o varias categorías fun
 
 
 
-| Categoría                    | Descripción                                                                          |
+| Category                    | Descripción                                                                          |
 |-----------------------------|--------------------------------------------------------------------------------------|
 | Captura de audio               | El dispositivo se puede usar para grabar audio.                                              |
 | Información de representación       | El dispositivo proporciona datos que describen los archivos multimedia que es capaz de representar. |

@@ -4,18 +4,18 @@ ms.assetid: c8f9001e-9f92-405a-8f3a-bc59b47c9e35
 title: JobPrimaryBannerSheet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56e16c3f371a92924dd7d9b5bf9a2746386b615b821d1f58b2e57acd03f9ed11
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 39922f65d71ea0cc6d6de6103bc159f79467038f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119711825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579737"
 ---
 # <a name="jobprimarybannersheet"></a>JobPrimaryBannerSheet
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe la hoja de banner que se va a generar para el trabajo. La hoja de banner debe generarse en el valor predeterminado PageMediaSize y usar el valor predeterminado PageMediaType. La hoja del banner debe aislarse del resto del trabajo. Esto significa que las opciones de finalización o procesamiento (como JobDuplexAllDocumentsContiguously, JobStapleAllDocuments o JobBindAllDocuments) no deben incluir la hoja de banners. La hoja de banner debe aparecer como la primera hoja del trabajo.
+Describe la hoja de banner que se va a generar para el trabajo. La hoja de banner debe generarse en el valor predeterminado PageMediaSize y usar el valor predeterminado PageMediaType. La hoja de banners debe aislarse del resto del trabajo. Esto significa que las opciones de finalización o procesamiento (como JobDuplexAllDocumentsContiguously, JobStapleAllDocuments o JobBindAllDocuments) no deben incluir la hoja de banners. La hoja de banner debe aparecer como la primera hoja del trabajo.
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
@@ -71,7 +71,7 @@ En la tabla siguiente se describen las características de las variables definid
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>contenido lenguaje de marcado extensible (XML)
+## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
 Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 
@@ -98,7 +98,7 @@ Las palabras clave del esquema de impresión público se definen en el espacio d
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

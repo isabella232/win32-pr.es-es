@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101638
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 0f2292d4cb57cdf404f52f6df9b214754a1fd645aa1feeac285478520a581e3d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a3f55182882b528209bbe40d6d51949e6c110e71
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119236925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575145"
 ---
 # <a name="esentdtcmissingcallbackonrecoveryexception-properties"></a>Propiedades de EsentDTCMissingCallbackOnRecoveryException
 
@@ -83,7 +83,7 @@ El [tipo EsentDTCMissingCallbackOnRecoveryException](./esentdtcmissingcallbackon
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

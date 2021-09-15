@@ -4,12 +4,12 @@ description: Las estructuras siguientes se declaran en projectedfslib.h.
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 01/17/2020
 ms.topic: article
-ms.openlocfilehash: 9524b1244406c1de129ed0056fa6e2f3f7b0cb10552087e2d06639d168bb1d13
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0bf72bd479e273c6c8cbdaa9ed588625298f4f95
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117792426"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580192"
 ---
 # <a name="projfs-structures"></a>Estructuras ProjFS
 

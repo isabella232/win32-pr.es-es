@@ -4,12 +4,12 @@ ms.assetid: deca6d17-fe2c-4130-88ca-d0605bcb6084
 title: Escala de tiempo de mensajes del mouse y eventos del sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 635147b3f30b8746c75901de78336102ac8d1b41a685919c27f990496f5f225d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8aee3e6cb7882e1628fee0d2bc40f79ed1e29f55
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119819614"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574437"
 ---
 # <a name="timeline-of-mouse-messages-and-system-events"></a>Escala de tiempo de mensajes del mouse y eventos del sistema
 

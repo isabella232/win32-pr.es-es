@@ -4,12 +4,12 @@ ms.assetid: 43d78acd-1f02-417d-97be-1682e90a81a2
 title: Usar controles personalizados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70699a141f0319f917953e25363db0e0cd38eb21ecc06345c581b55526ad6bbb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9c713d2b3912d2bbe4a689c7d8d05d4d977a6eb7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119551885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574432"
 ---
 # <a name="using-custom-controls"></a>Usar controles personalizados
 
@@ -17,7 +17,7 @@ Puede personalizar los controles estándar mediante el dibujo del propietario pa
 
 Un control dibujado por el propietario que se basa en un control estándar aparece como el control estándar para la accesibilidad ayuda y admite Microsoft Active Accessibility; sin embargo, tiene una apariencia personalizada. Algunas aplicaciones usan controles personalizados para cambiar la apariencia de un control, pero los controles dibujados por el propietario son una solución más accesible. Para obtener más información sobre cómo definir menús dibujados por el propietario y exponer controles dibujados por el propietario, vea [Accesibilidad.](../accessibility/accessibility.md)
 
-El establecimiento de una superclase o subclase es una técnica para personalizar el comportamiento de los controles existentes. Según el nuevo comportamiento del control, puede ser necesario complementar la información de accesibilidad que expone. Por ejemplo, una aplicación puede usar un control dibujado por el propietario para mostrar una X en una casilla seleccionada, en lugar de una marca de verificación, o etiquetar un botón de comando con una imagen en lugar de una palabra.
+Establecer una superclase o subclase es una técnica para personalizar el comportamiento de los controles existentes. Según el nuevo comportamiento del control, puede ser necesario complementar la información de accesibilidad que expone. Por ejemplo, una aplicación puede usar un control dibujado por el propietario para mostrar una X en una casilla seleccionada, en lugar de una marca de verificación, o etiquetar un botón de comando con una imagen en lugar de una palabra.
 
 Cuando se usan controles dibujados por el propietario que son una superclase o una subclase:
 

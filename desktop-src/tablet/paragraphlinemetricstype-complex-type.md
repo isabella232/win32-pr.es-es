@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: cec22ff65dc3afe452d59d3a9abb3201b8cddf70c4fed600bc4868ea91e7db84
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e3cafa4ac937f049de2698200b21a0e952edc660
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119335595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579417"
 ---
 # <a name="paragraphlinemetricstype-complex-type"></a>Tipo complejo ParagraphLineMetricsType
 
@@ -31,7 +31,7 @@ Define el tipo que contiene información sobre las métricas de línea de un pá
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |

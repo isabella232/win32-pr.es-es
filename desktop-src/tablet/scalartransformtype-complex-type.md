@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: f13ff60f20fae850f4692ff4a052428ea06a41afe8825b608df4f076dc93de40
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c6ed2635955e86bc1be1c56bd775205bd9db8b3f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118449315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574444"
 ---
 # <a name="scalartransformtype-complex-type"></a>Tipo complejo ScalarTransformType
 
@@ -31,7 +31,7 @@ Define el tipo que contiene la información sobre cualquier transformación apli
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |

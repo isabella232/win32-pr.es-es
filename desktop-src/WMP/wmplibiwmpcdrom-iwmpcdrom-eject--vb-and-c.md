@@ -5,7 +5,7 @@ ms.assetid: c0a69252-fd79-452c-bc61-3c3e8bcaaf48
 keywords:
 - método de Reproductor de Windows Media
 - método de Reproductor de Windows Media , interfaz IWMPCdrom
-- Interfaz IWMPCdrom Reproductor de Windows Media método de expulsión
+- Interfaz IWMPCdrom Reproductor de Windows Media , método de expulsión
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00dbdf22d8eb0ba4073a1b74c25c0d610f3091477e5921dd0856fa835a9bccc1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7b8ca2403b86b648e98861d91a21db80ddb64aac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119246765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579380"
 ---
-# <a name="iwmpcdromeject-method"></a>IWMPCdrom::dispose (método)
+# <a name="iwmpcdromeject-method"></a>IWMPCdrom::botón de expulsión (método)
 
 El **método de** expulsión expulsa el CD o DVD de la unidad.
 
@@ -57,7 +57,7 @@ Este método no devuelve ningún valor.
 
 Si la puerta de la unidad está abierta, este método cierra la puerta.
 
-Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
+Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="examples"></a>Ejemplos
 

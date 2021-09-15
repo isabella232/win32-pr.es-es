@@ -5,17 +5,17 @@ title: Uso de MFTrace
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d8416fbde708dd44858fe5df580945f326944a1f
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122469972"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579796"
 ---
 # <a name="using-mftrace"></a>Uso de MFTrace
 
 MFTrace es una herramienta para generar registros de seguimiento para Microsoft Media Foundation aplicaciones.
 
-MFTrace usa la biblioteca Detours para enlazarse a Media Foundation API y generar registros de seguimiento. MFTrace también puede registrar seguimientos de cualquier componente que use seguimiento de eventos para Windows (ETW) o el preprocesador de seguimiento de software (WPP) para generar seguimientos. Los registros de seguimiento se pueden generar iniciando un nuevo proceso desde MFTrace o adjuntando MFTrace a un proceso existente.
+MFTrace usa la biblioteca Detours para enlazarse a las Media Foundation API y generar registros de seguimiento. MFTrace también puede registrar seguimientos de cualquier componente que use seguimiento de eventos para Windows (ETW) o el preprocesador de seguimiento de software (WPP) para generar seguimientos. Los registros de seguimiento se pueden generar iniciando un nuevo proceso desde MFTrace o adjuntando MFTrace a un proceso existente.
 
 ## <a name="usage"></a>Uso
 
@@ -30,12 +30,12 @@ MFTrace usa la biblioteca Detours para enlazarse a Media Foundation API y genera
 | <span id="-c_Configuration_File"></span><span id="-c_configuration_file"></span><span id="-C_CONFIGURATION_FILE"></span><strong>-c</strong> <strong></strong> <em>Archivo de configuración</em><br /> | Lee la configuración del archivo de configuración especificado. Vea <a href="mftrace-configuration-file.md">Archivo de configuración de MFTrace</a>.<br /> | 
 | <span id="-dc"></span><span id="-DC"></span><strong>-dc</strong><br /> | Deshabilite el seguimiento para los procesos secundarios. De forma predeterminada, el seguimiento está habilitado para los procesos secundarios.<br /> | 
 | <span id="-es"></span><span id="-ES"></span><strong>-es</strong><br /> | Habilitar símbolos públicos.<br /> | 
-| <span id="-k_Keywords"></span><span id="-k_keywords"></span><span id="-K_KEYWORDS"></span><strong>-k</strong> <strong></strong> <em>Palabras clave</em><br /> | Lista separada por comas de palabras clave. Vea <a href="mftrace-keywords.md">Palabras clave de MFTrace</a>.<br /> | 
+| <span id="-k_Keywords"></span><span id="-k_keywords"></span><span id="-K_KEYWORDS"></span><strong>-k</strong> <strong></strong> <em>Palabras clave</em><br /> | Lista de palabras clave separadas por comas. Vea <a href="mftrace-keywords.md">Palabras clave de MFTrace</a>.<br /> | 
 | <span id="-l_Level"></span><span id="-l_level"></span><span id="-L_LEVEL"></span><strong>-l</strong> <strong></strong> <em>Nivel</em><br /> | Nivel de seguimiento.<br /><ul><li>0: Ninguno</li><li>1: Crítico</li><li>2: Error</li><li>3: Advertencia</li><li>4: Informativo</li><li>5: Detallado</li><li>16: Depuración</li></ul> | 
 | <span id="-o_Output_File"></span><span id="-o_output_file"></span><span id="-O_OUTPUT_FILE"></span><strong>-o</strong> <strong></strong> <em>Archivo de salida</em><br /> | Escriba la salida de seguimiento en el archivo especificado. De forma predeterminada, la salida va <strong>a stdout</strong>.<br /> Si se especifica un archivo de salida, la extensión de nombre de archivo debe ser una de las siguientes:<br /><ul><li>.etl: archivo de registro de seguimiento de eventos (ETL).</li><li>.log o .txt: archivo de texto.</li></ul> | 
 | <span id="-v"></span><span id="-V"></span><strong>-v</strong><br /> | Habilite el modo detallado.<br /> | 
 | <span id="-_"></span><strong>-?</strong><br /> | Muestra información de uso.<br /> | 
-| <span id="COMMAND"></span><span id="command"></span><em>COMANDO</em><br /> | Argumentos de la línea de comandos para crear un nuevo proceso.<br /> | 
+| <span id="COMMAND"></span><span id="command"></span><em>COMANDO</em><br /> | Argumentos de línea de comandos para crear un nuevo proceso.<br /> | 
 | <span id="ETL_FILE"></span><span id="etl_file"></span><em>ETL_FILE</em><br /> | Nombre de un archivo ETL existente. Si se proporciona este argumento, el archivo ETL se convierte en salida de texto.<br /> | 
 
 
@@ -100,7 +100,7 @@ Convertir un archivo ETL en un archivo de texto:
 mftrace.exe -o trace.txt trace.etl
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 De forma predeterminada, MFTrace solo genera seguimientos de desviados. Para generar seguimientos ETW o WPP, debe proporcionar un archivo de configuración. El archivo de configuración proporciona los nombres de los proveedores de seguimiento. Para obtener más información, vea [Archivo de configuración de MFTrace](mftrace-configuration-file.md).
 

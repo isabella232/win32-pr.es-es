@@ -4,12 +4,12 @@ ms.assetid: 6529859f-cfb6-4983-a489-bcc2f04e721f
 title: Control de velocidad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e5016fa55447ad8b2a77f8a9e48f19b3beeb2dfe411276f148bfb5d3e65882b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8f484a0469d96578ca1bb7e1d661d7e2319bd8bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119847815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579801"
 ---
 # <a name="rate-control"></a>Control de velocidad
 

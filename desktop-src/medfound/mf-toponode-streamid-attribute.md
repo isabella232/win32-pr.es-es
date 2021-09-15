@@ -1,19 +1,19 @@
 ---
-description: Identificador de flujo del receptor de flujo asociado a este nodo de topología.
+description: Identificador de secuencia del receptor de flujo asociado a este nodo de topología.
 ms.assetid: 0b8060ab-1463-45c2-8277-d15122561248
 title: MF_TOPONODE_STREAMID atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4cf1edc8918af91144de4f408e7913c3f40b1f0246059bc5bf9e4f1193a1cf7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e2377183927cf75c6e0a7436384426dcab94680c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118739894"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579848"
 ---
-# <a name="mf_toponode_streamid-attribute"></a>Atributo MF \_ TOPONODE \_ STREAMID
+# <a name="mf_toponode_streamid-attribute"></a>Atributo \_ MF TOPONODE \_ STREAMID
 
-Identificador de flujo del receptor de flujo asociado a este nodo de topología.
+Identificador de secuencia del receptor de flujo asociado a este nodo de topología.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -23,7 +23,7 @@ Identificador de flujo del receptor de flujo asociado a este nodo de topología.
 
 Este atributo se aplica a los nodos de salida (**MF \_ TOPOLOGY \_ OUTPUT \_ NODE**).
 
-Cuando la sesión multimedia carga la topología, consulta el receptor de medios para un receptor de flujo con el identificador especificado. Si se produce un error, intenta agregar un nuevo receptor de flujo al receptor multimedia.
+Cuando la sesión multimedia carga la topología, consulta al receptor de medios un receptor de flujo con el identificador especificado. Si se produce un error, intenta agregar un nuevo receptor de flujo al receptor multimedia.
 
 La constante GUID para este atributo se exporta desde mfuuid.lib.
 
@@ -35,7 +35,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -52,7 +52,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 [**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
-[**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
+[**NODETopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
 </dt> <dt>
 
 [Atributos de nodo de topología](topology-node-attributes.md)

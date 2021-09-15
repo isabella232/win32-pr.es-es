@@ -4,12 +4,12 @@ ms.assetid: 9c501d33-847e-448e-a19c-39dfbc7757ca
 title: Usar el indexador para buscar dentro de un archivo ASF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a3c674aa809c858856abf0c0e84c5d854b399c6fbc125ac9210e19b695380bd0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c40c35f876fdc5452c596048d121fb0c2933094a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119887245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579788"
 ---
 # <a name="using-the-indexer-to-seek-within-an-asf-file"></a>Usar el indexador para buscar dentro de un archivo ASF
 
@@ -27,9 +27,9 @@ Para inicializar el indexador de ASF para buscar:
 
 1.  Llame [**a MFCreateASFIndexer**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfindexer) para crear una nueva instancia del indexador de ASF.
 2.  Llame [**a IMFASFIndexer::Initialize**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-initialize) para inicializar el indexador. Este método obtiene información del encabezado ASF para determinar qué secuencias de ASF se indexa. De forma predeterminada, el objeto de indexador está configurado para la búsqueda.
-3.  Llame [**a IMFASFIndexer::GetIndexPosition**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-getindexposition) para buscar el desplazamiento del índice en el archivo ASF.
+3.  Llame [**a IMFASFIndexer::GetIndexPosition para**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-getindexposition) buscar el desplazamiento del índice dentro del archivo ASF.
 4.  Llame a [**la función MFCreateASFIndexerByteStream**](/windows/desktop/api/wmcontainer/nf-wmcontainer-mfcreateasfindexerbytestream) para crear una secuencia de bytes para leer el índice. La entrada a esta función es un puntero a una secuencia de bytes que contiene el archivo ASF y el desplazamiento del índice (del paso anterior).
-5.  Llame [**a IMFASFIndexer::SetIndexByteStreams**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-setindexbytestreams) para establecer la secuencia de bytes de índice en el indexador.
+5.  Llame [**a BYTEASFIndexer::SetIndexByteStreams**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-setindexbytestreams) para establecer la secuencia de bytes de índice en el indexador.
 
 El siguiente código muestra estos pasos:
 
@@ -119,13 +119,13 @@ done:
 
 ## <a name="getting-the-seek-position"></a>Obtener la posición de búsqueda.
 
-1.  Para averiguar si una secuencia determinada está indexada, llame a [**IMFASFIndexer::GetIndexStatus**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-getindexstatus). Si la secuencia está indexada, el *parámetro pfIsIndexed* recibe el valor **TRUE**; de lo contrario, recibe el **valor FALSE.**
-2.  De forma predeterminada, el indexador usa la búsqueda hacia delante. Para la búsqueda inversa (es decir, buscar desde el final del archivo), llame a [**IMFASFIndexer::SetFlags**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-setflags) y establezca la marca **READ FOR \_ \_ \_ \_ REVERSEPLAYBACK del INDEXER de MFASF.** De lo contrario, omita este paso.
-3.  Si la secuencia está indexada, obtenga la posición de búsqueda durante un tiempo de presentación especificado llamando a [**IMFASFIndexer::GetSeekPositionForValue**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-getseekpositionforvalue). Este método lee el índice de ASF y busca la entrada de índice más cercana a la hora solicitada. El método devuelve el desplazamiento de bytes del paquete de datos especificado por la entrada de índice. El desplazamiento de bytes es relativo al inicio del objeto de datos de ASF.
+1.  Para averiguar si una secuencia determinada está indexada, llame a [**ALFIndexer::GetIndexStatus**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-getindexstatus). Si la secuencia está indexada, el *parámetro pfIsIndexed* recibe el valor **TRUE**; de lo contrario, recibe el **valor FALSE.**
+2.  De forma predeterminada, el indexador usa la búsqueda hacia delante. Para la búsqueda inversa (es decir, buscar desde el final del archivo), llame a [**ALFIndexer::SetFlags**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-setflags) y establezca la marca **READ FOR \_ \_ \_ \_ REVERSEPLAYBACK del INDEXER de MFASF.** De lo contrario, omita este paso.
+3.  Si la secuencia está indexada, obtenga la posición de búsqueda para un tiempo de presentación especificado mediante una llamada a [**IMFASFIndexer::GetSeekPositionForValue**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-getseekpositionforvalue). Este método lee el índice de ASF y busca la entrada de índice más cercana a la hora solicitada. El método devuelve el desplazamiento de bytes del paquete de datos especificado por la entrada de índice. El desplazamiento de bytes es relativo al inicio del objeto de datos de ASF.
 
-El [**método GetSeekPositionForValue**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-getseekpositionforvalue) toma un puntero a la estructura [**ASF INDEX \_ \_ IDENTIFIER.**](/windows/desktop/api/wmcontainer/ns-wmcontainer-asf_index_identifier) Esta estructura especifica un tipo de índice y un identificador de flujo. Actualmente, el tipo de índice debe ser \_ GUID NULL, que especifica la indexación basada en el tiempo.
+El [**método GetSeekPositionForValue**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfindexer-getseekpositionforvalue) toma un puntero a la estructura [**ASF INDEX \_ \_ IDENTIFIER.**](/windows/desktop/api/wmcontainer/ns-wmcontainer-asf_index_identifier) Esta estructura especifica un tipo de índice y un identificador de flujo. Actualmente, el tipo de índice debe ser \_ NULL de GUID, que especifica la indexación basada en tiempo.
 
-El código siguiente obtiene una posición de búsqueda, dado un identificador de flujo y un tiempo de presentación de destino. Si la llamada se realiza correctamente, devuelve el desplazamiento de datos en el parámetro *pwDataOffset* y el tiempo de búsqueda real aproximado en *phnsApproxSeekTime*.
+El código siguiente obtiene una posición de búsqueda, dado un identificador de secuencia y el tiempo de presentación de destino. Si la llamada se realiza correctamente, devuelve el desplazamiento de datos en el parámetro *pwDataOffset* y el tiempo de búsqueda real aproximado en *phnsApproxSeekTime.*
 
 
 ```C++

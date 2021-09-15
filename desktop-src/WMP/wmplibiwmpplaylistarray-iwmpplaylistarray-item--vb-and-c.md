@@ -5,7 +5,7 @@ ms.assetid: 5cb4b89f-b679-4d92-a5f9-5d0fe686775d
 keywords:
 - Método item Reproductor de Windows Media
 - Método item Reproductor de Windows Media , interfaz IWMPPlaylistArray
-- Interfaz IWMPPlaylistArray Reproductor de Windows Media , Método Item
+- Interfaz IWMPPlaylistArray Reproductor de Windows Media método , Item
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e73614e1ef00f29d6b09d3d49e2c7e514bae807245f00f30f4d3382d8f1a2e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 660e919ef51bbb9584971f25bdf92296d331de23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118331164"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574189"
 ---
 # <a name="iwmpplaylistarrayitem-method"></a>IWMPPlaylistArray::Item (Método)
 
@@ -56,7 +56,7 @@ Implements IWMPPlaylistArray.Item
 *lIndex* \[ En\]
 </dt> <dd>
 
-**System.Int32** que contiene el índice que identifica la lista de reproducción que el método debe recuperar.
+**System.Int32 que** contiene el índice que identifica la lista de reproducción que el método debe recuperar.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Implements IWMPPlaylistArray.Item
 
 Interfaz **WMPLib.IWMPPlaylist** para la lista de reproducción recuperada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
@@ -72,7 +72,7 @@ Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Pa
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior.<br/>                                                                     |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

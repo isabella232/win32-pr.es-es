@@ -1,30 +1,30 @@
 ---
-description: Establecer un administrador de credenciales
+description: Establecer un Administrador de credenciales
 ms.assetid: a20c2e6c-e9d9-438f-a57a-e3080587c11c
-title: Establecer un administrador de credenciales
+title: Establecer un Administrador de credenciales
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 0c98d9d9572438a63f93f916a0084f8a33a7bca5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715491"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574793"
 ---
-# <a name="setting-a-credential-manager"></a>Establecer un administrador de credenciales
+# <a name="setting-a-credential-manager"></a>Establecer un Administrador de credenciales
 
-Una aplicación que proporciona credenciales para el origen de red debe hacer lo siguiente:
+Una aplicación que proporciona credenciales al origen de red debe hacer lo siguiente:
 
-1.  Implemente un objeto de administrador de credenciales que exponga la interfaz [**IMFNetCredentialManager**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredentialmanager) .
+1.  Implemente un objeto de administrador de credenciales que exponga la [**interfaz IMFNetCredentialManager.**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredentialmanager)
 2.  Antes de crear el origen de red, cree un nuevo almacén de propiedades.
-3.  Establezca la [**propiedad \_ \_ Administrador de credenciales de MFNETSOURCE**](mfnetsource-credential-manager-property.md) en el almacén de propiedades. El valor de la propiedad es un puntero a la interfaz [**IMFNetCredentialManager**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredentialmanager) .
-4.  Pase un puntero al almacén de propiedades para la resolución de origen, tal y como se describe en [configuración de un origen de medios](configuring-a-media-source.md).
+3.  Establezca la [**propiedad MFNETSOURCE \_ CREDENTIAL \_ MANAGER**](mfnetsource-credential-manager-property.md) en el almacén de propiedades. El valor de la propiedad es un puntero a la [**interfaz IMFNetCredentialManager.**](/windows/desktop/api/mfidl/nn-mfidl-imfnetcredentialmanager)
+4.  Pase un puntero al almacén de propiedades al solucionador de origen, como se describe en [Configuración de un origen de medios.](configuring-a-media-source.md)
 
-Los orígenes de red usan el administrador de credenciales para obtener las credenciales del usuario. Si el origen de red requiere credenciales para tener acceso a un recurso de red, llama al método [**IMFNetCredentialManager:: BeginGetCredentials**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-begingetcredentials) de la aplicación. Esta llamada inicia una solicitud asincrónica para obtener las credenciales del usuario. El método **BeginGetCredentials** puede obtener las credenciales de la memoria caché de credenciales o del usuario. Las credenciales se almacenan en un *objeto Credential*. Una vez completada la operación, la aplicación invoca la interfaz de devolución de llamada para notificar al origen de red. El origen de red llama a [**IMFNetCredentialManager:: EndGetCredentials**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-endgetcredentials) para completar la operación asincrónica.
+Los orígenes de red usan el administrador de credenciales para obtener las credenciales de usuario. Si el origen de red requiere credenciales para acceder a un recurso de red, llama al método [**DE CREDENCIALNET DE LA APLICACIÓN::BeginGetCredentials.**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-begingetcredentials) Esta llamada inicia una solicitud asincrónica para obtener las credenciales del usuario. El **método BeginGetCredentials** puede obtener las credenciales de la caché de credenciales o del usuario. Las credenciales se almacenan en un *objeto de credencial*. Una vez completada la operación, la aplicación invoca la interfaz de devolución de llamada para notificar al origen de red. El origen de red llama [**a IMFNetCredentialManager::EndGetCredentials**](/windows/desktop/api/mfidl/nf-mfidl-imfnetcredentialmanager-endgetcredentials) para completar la operación asincrónica.
 
-Dado que se trata de una operación asincrónica, la aplicación debe enviar la devolución de llamada al final de la operación. Para obtener instrucciones paso a paso sobre cómo escribir un método asincrónico, consulte [escribir un método asincrónico](writing-an-asynchronous-method.md).
+Dado que se trata de una operación asincrónica, la aplicación debe enviar la devolución de llamada al final de la operación. Para obtener instrucciones paso a paso sobre cómo escribir un método asincrónico, vea [Escribir un método asincrónico.](writing-an-asynchronous-method.md)
 
-En el ejemplo siguiente se muestra cómo establecer la propiedad del [**\_ \_ Administrador de credenciales de MFNETSOURCE**](mfnetsource-credential-manager-property.md) en el origen de red.
+En el ejemplo siguiente se muestra cómo establecer la [**propiedad MFNETSOURCE \_ CREDENTIAL \_ MANAGER**](mfnetsource-credential-manager-property.md) en el origen de red.
 
 
 ```C++

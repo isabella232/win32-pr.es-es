@@ -4,12 +4,12 @@ description: La API de Direct3D define varios elementos de API de capa.
 ms.assetid: 6acca19e-92b1-46d3-b5cc-58d35686381c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6d2cacf81caf5f701808a4ab6df0d6c6e41150b327e18c8e35ed0b2c1b277d4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e00e792f82b189a5a15b512257ae8c25a39fb63e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118300754"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575280"
 ---
 # <a name="layer-reference"></a>Referencia de capas
 

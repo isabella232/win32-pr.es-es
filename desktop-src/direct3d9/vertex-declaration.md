@@ -4,12 +4,12 @@ ms.assetid: 09dae498-3b33-4c33-bc7e-47f2bf784e4c
 title: Declaración de vértice (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76537b36897e66e45c9c35143ca9f2cfe7db130410a0a75245bba31eaaa4f67f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c769aa6fb80de1fd83067ebb9f32b591baa8e883
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119627885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580108"
 ---
 # <a name="vertex-declaration-direct3d-9"></a>Declaración de vértice (Direct3D 9)
 

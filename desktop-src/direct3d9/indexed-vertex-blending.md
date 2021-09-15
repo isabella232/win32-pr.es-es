@@ -4,12 +4,12 @@ ms.assetid: d320cb8a-48b6-4a53-a051-d50f239c1aa3
 title: Mezcla de vértices indexados (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec3d45e3ff72a33cd21265d1e4aa25e237e2a73e473914898d5c1057316d4ca0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c4cfe7b45831317fdf9e92525ed74bbd27323e99
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117728717"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574077"
 ---
 # <a name="indexed-vertex-blending-direct3d-9"></a>Mezcla de vértices indexados (Direct3D 9)
 
@@ -33,7 +33,7 @@ La ecuación siguiente determina el caso general de cómo las matrices tienen ef
 
 ![ecuación de combinación de vértices indexados](images/indexedvblend.png)
 
-El modelo <sub>V es</sub> la posición del vértice del espacio del modelo de entrada. Index0.. Index3 son los índices de matriz por vértice empaquetados en una DWORD. M \[ \] es la matriz de matrices del mundo en las que se indexa. b₀.. b3 son los pesos de mezcla. V<sub>world es</sub> la posición del vértice del espacio del mundo de salida.
+El modelo <sub>V es</sub> la posición del vértice del espacio del modelo de entrada. Index0.. Index3 son los índices de matriz por vértice empaquetados en una DWORD. M \[ \] es la matriz de matrices del mundo en las que se indexa. b₀.. b3 son las ponderaciones de mezcla. V<sub>world es</sub> la posición del vértice del espacio del mundo de salida.
 
 Para obtener más información sobre la combinación de vértices indexados, vea [Using Indexed Vertex Blending (Direct3D 9)](using-indexed-vertex-blending.md)(Uso de la combinación de vértices indexados [Direct3D 9]).
 

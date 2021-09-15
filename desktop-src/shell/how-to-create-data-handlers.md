@@ -3,21 +3,21 @@ description: Extender el Portapapeles con controladores de formato de datos pers
 title: Cómo crear controladores de datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0a3761b4dc8ce3e7d50d967d2267971537d3609e7a7cf76785623734558adac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 33ecc08769068d975c1fa16ef1385f362c67e43c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119715055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579569"
 ---
 # <a name="how-to-create-data-handlers"></a>Cómo crear controladores de datos
 
-Cuando un archivo se copia en el Portapapeles o se arrastra y se descarta, el Shell crea un objeto de datos que admite una variedad de formatos estándar [del Portapapeles.](dragdrop.md) Para los archivos que son de un tipo de archivo específico, puede ampliar los formatos disponibles del Portapapeles implementando y registrando un *controlador de datos*. Cuando se transfiere un archivo del tipo de archivo, el Shell delega las llamadas a la interfaz [**IDataObject**](/windows/win32/api/objidl/nn-objidl-idataobject) del objeto de datos al controlador de datos si se usa uno de los formatos personalizados.
+Cuando un archivo se copia en el Portapapeles o se arrastra y se descarta, el Shell crea un objeto de datos que admite una variedad de formatos estándar [del Portapapeles.](dragdrop.md) Para los archivos que son de un tipo de archivo específico, puede ampliar los formatos de Portapapeles disponibles implementando y registrando un *controlador de datos*. Cuando se transfiere un archivo del tipo de archivo, shell delega las llamadas a la interfaz [**IDataObject**](/windows/win32/api/objidl/nn-objidl-idataobject) del objeto de datos al controlador de datos si se usa uno de los formatos personalizados.
 
-Los procedimientos generales para implementar y registrar un controlador de extensión de Shell se de abordan en [Crear controladores de extensión de shell](handlers.md). Este documento se centra en los aspectos de implementación específicos de los controladores de datos.
+Los procedimientos generales para implementar y registrar un controlador de extensión de Shell se de abordan en [Creación de controladores de extensión de shell](handlers.md). Este documento se centra en los aspectos de implementación específicos de los controladores de datos.
 
 -   [Implementar controladores de datos](#step-1-implementing-data-handlers)
--   [Registro de controladores de datos](#step-2-registering-data-handlers)
+-   [Registrar controladores de datos](#step-2-registering-data-handlers)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="instructions"></a>Instructions
@@ -34,7 +34,7 @@ Una vez inicializado el controlador de datos, el Shell delega las llamadas desde
 
 Los controladores de datos se registran en la subclave *ProgID* del tipo de archivo, como se muestra aquí: **HKEY \_ CLASSES \_ ROOT** \\ *ProgID* \\ **shellex** \\ **DataHandler**
 
-Cree una subclave denominada para el controlador en **DataHandler** y establezca el valor predeterminado de la subclave de ese controlador en el formato de cadena del GUID de CLSID del controlador. Para obtener una explicación general de cómo registrar controladores de extensión de Shell, vea [Creating Shell Extension Handlers](handlers.md).
+Cree una subclave denominada para el controlador en **DataHandler** y establezca el valor predeterminado de la subclave de ese controlador en el formato de cadena del GUID de CLSID del controlador. Para obtener una explicación general sobre cómo registrar controladores de extensión de Shell, vea [Creating Shell Extension Handlers](handlers.md).
 
 En el ejemplo siguiente se muestran las entradas del Registro que habilitan un controlador de datos para un tipo de archivo .myp de ejemplo.
 

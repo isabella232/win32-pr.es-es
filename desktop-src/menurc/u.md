@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: fb8826ef-4fb8-4fd2-af3e-89544ffadbea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72af5521854d70b22cda4acf7caafd3cf8f7f63fd43c5660aae09ca8045b13b8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 98b84f6ef3f31ae1c15ae8e35f6c8cada177d7ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118472723"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574729"
 ---
 # <a name="u-menus-and-other-resources"></a>U (menús y otros recursos)
 

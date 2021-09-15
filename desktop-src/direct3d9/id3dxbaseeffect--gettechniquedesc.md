@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: e7d2d317e49c1f883cf7b509eeeb59d435c6df29fcf213f06d0daf8999382cf7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6027cf24576a29a1f447e5c20f99634c42adf00d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119848635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580633"
 ---
 # <a name="id3dxbaseeffectgettechniquedesc-method"></a>Método ID3DXBaseEffect::GetTechniqueDesc
 
@@ -63,7 +63,7 @@ Devuelve una descripción de la técnica. Vea [**D3DXTECHNIQUE \_ DESC**](d3dxte
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 

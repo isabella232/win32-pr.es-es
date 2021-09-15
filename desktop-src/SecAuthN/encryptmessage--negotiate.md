@@ -4,16 +4,16 @@ ms.assetid: b80b3d64-9c0a-4602-9378-1e208f6593fc
 title: Función EncryptMessage (Negotiate)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: d4aac05a4ad030e72953cc997671b7d348cb2a598a0f56f80963f69847cdf357
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 037866088f58fa1d70939b84062161a6e4f610b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119008313"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575397"
 ---
 # <a name="encryptmessage-negotiate-function"></a>Función EncryptMessage (Negotiate)
 
-La **función EncryptMessage (Negotiate)** cifra un mensaje para proporcionar [*privacidad.*](../secgloss/p-gly.md) **EncryptMessage (Negotiate) permite** a la aplicación elegir entre los [*algoritmos criptográficos*](../secgloss/c-gly.md) admitidos por el mecanismo elegido. La **función EncryptMessage (Negotiate)** usa el [*contexto de seguridad*](../secgloss/s-gly.md) al que hace referencia el identificador de contexto. Algunos paquetes no tienen mensajes que cifrar o descifrar, sino que proporcionan un hash de [*integridad*](../secgloss/h-gly.md) que se puede comprobar.
+La **función EncryptMessage (Negotiate)** cifra un mensaje para proporcionar [*privacidad.*](../secgloss/p-gly.md) **EncryptMessage (Negotiate) permite** a la aplicación elegir entre los algoritmos [*criptográficos*](../secgloss/c-gly.md) admitidos por el mecanismo elegido. La **función EncryptMessage (Negotiate)** usa el [*contexto de seguridad*](../secgloss/s-gly.md) al que hace referencia el identificador de contexto. Algunos paquetes no tienen mensajes que cifrar o descifrar, sino que proporcionan un hash de [*integridad*](../secgloss/h-gly.md) que se puede comprobar.
 
 > [!Note]  
 > Se puede llamar a **EncryptMessage (Negotiate)** y [**DecryptMessage (Negotiate)**](decryptmessage--negotiate.md) al mismo tiempo desde dos subprocesos diferentes en un único contexto de interfaz de proveedor de compatibilidad de seguridad [](../secgloss/s-gly.md) (SSPI) si se cifra un subproceso y el otro se descifra. Si se cifra más de un subproceso o se descifra más de un subproceso, cada subproceso debe obtener un contexto único.
@@ -44,7 +44,7 @@ Este parámetro puede ser la marca siguiente.
 > [!NOTE]
 > KERB_WRAP_NO_ENCRYPT tiene el mismo valor y el mismo significado.
 
-*pMessage* \[ in, out \] Puntero a una estructura [**SecBufferDesc.**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) En la entrada, la estructura hace referencia a una o varias [**estructuras secBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer) que pueden ser de tipo SECBUFFER \_ DATA. Ese búfer contiene el mensaje que se va a cifrar. El mensaje se cifra en su lugar, sobrescribiendo el contenido original de la estructura.
+*pMessage* \[ in, out \] Puntero a una estructura [**SecBufferDesc.**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) En la entrada, la estructura hace referencia a una o varias [**estructuras SecBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer) que pueden ser de tipo SECBUFFER \_ DATA. Ese búfer contiene el mensaje que se va a cifrar. El mensaje se cifra en su lugar, sobrescribiendo el contenido original de la estructura.
 
 La función no procesa búferes con el atributo SECBUFFER \_ READONLY.
 
@@ -70,11 +70,11 @@ Si se produce un error en la función, devuelve uno de los siguientes códigos d
 | **TOKEN \_ NO VÁLIDO DE SEC E \_ \_**          | No se encontró ningún \_ búfer de tipo DE DATOS SECBUFFER.                                                                                            |
 | **SEG \_ E \_ QOP \_ NO \_ COMPATIBLE**     | El contexto de seguridad [*no*](../secgloss/i-gly.md) admite la confidencialidad ni la [*integridad.*](../secgloss/s-gly.md)             |
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función EncryptMessage (Negotiate)** cifra un mensaje basado en el mensaje y la clave [*de sesión*](../secgloss/s-gly.md) de un contexto de [*seguridad*](../secgloss/s-gly.md).
 
-Si la aplicación de transporte creó [*el*](../secgloss/s-gly.md) contexto de seguridad para admitir la detección de secuencia y el autor de la llamada proporciona un número de secuencia, la función incluye esta información con el mensaje cifrado. La inclusión de esta información protege contra la reproducción, inserción y supresión de mensajes. El [*paquete de seguridad*](../secgloss/s-gly.md) incorpora el número de secuencia que se pasa desde la aplicación de transporte.
+Si la aplicación de transporte creó [*el*](../secgloss/s-gly.md) contexto de seguridad para admitir la detección de secuencia y el autor de la llamada proporciona un número de secuencia, la función incluye esta información con el mensaje cifrado. La inclusión de esta información protege contra la reproducción, inserción y supresión de mensajes. El [*paquete de seguridad*](../secgloss/s-gly.md) incorpora el número de secuencia pasado desde la aplicación de transporte.
 
 > [!Note]  
 > Estos búferes deben proporcionarse en el orden mostrado.
@@ -96,13 +96,13 @@ Para obtener un rendimiento óptimo, las *estructuras pMessage* se deben asignar
 |--------------------------|-------------------------------------------------|
 | Cliente mínimo compatible | Windows XP \[ solo aplicaciones de escritorio\]                |
 | Servidor mínimo compatible | Windows Solo aplicaciones de escritorio de Server 2003 \[\]       |
-| Header                   | Sspi.h (incluir Security.h)                     |
+| Encabezado                   | Sspi.h (incluir Security.h)                     |
 | Biblioteca                  | Secur32.lib                                     |
 | Archivo DLL                      | Secur32.dll                                     |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-- [Funciones SSPI](authentication-functions.md#sspi-functions)
+- [Funciones de SSPI](authentication-functions.md#sspi-functions)
 - [**AcceptSecurityContext (Negotiate)**](acceptsecuritycontext--negotiate.md)
 - [**DecryptMessage (Negotiate)**](decryptmessage--negotiate.md)
 - [**InitializeSecurityContext (Negotiate)**](initializesecuritycontext--negotiate.md)

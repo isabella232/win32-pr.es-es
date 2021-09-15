@@ -4,12 +4,12 @@ description: Puede usar el método DrawImage de la clase Graphics para dibujar y
 ms.assetid: 81d20adc-0481-4b1b-80aa-ae218fdecd84
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9e69adb7f817c36b955ed313290cf0b762c279b4296e06ad52aa6175ff2c467
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2b44a13b5cee632e6ceafe327f94eca48edd93dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119036843"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580045"
 ---
 # <a name="about-cropping-and-scaling-gdi-images"></a>Acerca del recorte y el escalado de imágenes GDI+
 
@@ -29,7 +29,7 @@ myGraphics.DrawImage(&myBitmap, compressionRect);
 
 
 
-El código anterior, junto con un archivo determinado, Spiral.png, generaba la siguiente salida.
+El código anterior, junto con un archivo determinado, Spiral.png generaba la siguiente salida.
 
 ![ilustración que muestra tres versiones de una imagen: normal, de ancho extendido y reducido a la mitad del tamaño original](images/aboutgdip03-art06.png)
 

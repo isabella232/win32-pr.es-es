@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Wisptis.exe
 - Wisptis.exe.dll
-ms.openlocfilehash: a8ce5d4dde7f3fd678e4ac748a0f148750344a1e5e8da9f6481ad25eafa016a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81e8c653dd12600ae02fe7e6038de6e6a38786e7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119712235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579464"
 ---
 # <a name="itabletcontextpusenamedsharedmemorycommunications-method"></a>Método ITabletContextP::UseNamedSharedMemoryCommunications
 
@@ -99,7 +99,7 @@ Entero que identifica la memoria compartida.
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **método UseNamedSharedMemoryCommunications** forma parte del protocolo de memoria compartida de Tablet PC. Un cliente sin privilegios elevados pasa un identificador de seguridad (SID) y un identificador de seguridad de nivel de integridad (IL-SID) para que tablet service pueda usar listas de control de acceso (ACL) para acceder a los objetos de memoria compartida. Si el cliente tiene privilegios elevados, debe usar UseSharedMemoryCommunications, que es la API a la que se llama si el servicio ya tiene un privilegio elevado.
 

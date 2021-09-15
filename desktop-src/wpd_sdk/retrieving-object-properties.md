@@ -4,12 +4,12 @@ description: Una aplicación puede recuperar las propiedades de un único objeto
 ms.assetid: 499644ee-9eef-4267-9c45-7c7ba9ef61af
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fdab57cd527cd9b6bf47cea6915dcf098fd57f3486d30597d51a8cad50fcd152
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b19815fb6b3f3e5be57f8705d3bbaeff7b44fb5c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120054765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574280"
 ---
 # <a name="retrieving-object-properties-overview"></a>Información general sobre la recuperación de propiedades de objeto
 

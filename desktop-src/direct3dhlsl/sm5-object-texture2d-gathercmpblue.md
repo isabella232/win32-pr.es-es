@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5344414ce35b1063fff938eb6ea0f6ed0813d407f99d1fc2202c2cb58b6a74b6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eedeb21141c1e694effe4eb8c7be70c828aa0a3c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119671325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581212"
 ---
 # <a name="texture2dgathercmpbluesfloatfloatint-function"></a>Función Texture2D::GatherCmpBlue(S,float,float,int)
 
@@ -66,7 +66,7 @@ Valor que se compara con cada valor muestreado.
 
 </dd> <dt>
 
-*desplazamiento* \[ En\]
+*offset* \[ En\]
 </dt> <dd>
 
 Tipo: **int2**
@@ -81,7 +81,7 @@ Tipo: **float4**
 
 Un valor de cuatro componentes, cada componente es el resultado de una comparación por componente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los ejemplos de textura se pueden usar para la interpolación bilineal.
 

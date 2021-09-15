@@ -1,6 +1,6 @@
 ---
-title: break_comp- ps
-description: 'Salga del bucle actual en el endloop más cercano: ps o endrep - ps, en función de una comparación por componente.'
+title: 'break_comp: ps'
+description: 'Salga del bucle actual en el punto de conexión más cercano: ps o endrep - ps, en función de una comparación por componente.'
 ms.assetid: d21e850f-05db-4a29-b15b-85bb1c1410d0
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2fa79b7aa50bc734ddc1f9fb1fd54e4130c48518dd47ed429b4177b8fb867d95
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5088312a16102153ad78afffdcd9ea1275d34e0d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118794470"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574029"
 ---
-# <a name="break_comp---ps"></a>break \_ comp - ps
+# <a name="break_comp---ps"></a>break \_ comp: ps
 
-Salga del bucle actual en el [endloop](endloop---ps.md) más cercano: ps o [endrep - ps](endrep---ps.md), en función de una comparación por componente.
+Salga del bucle actual en el punto de conexión más [cercano: ps](endloop---ps.md) o [endrep - ps](endrep---ps.md), en función de una comparación por componente.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -35,7 +35,7 @@ Donde:
 
 -   \_comp es una comparación escalar (o única) entre los dos registros de origen. Puede tener uno de los valores siguientes: 
 
-    | Syntax | De comparación            |
+    | Sintaxis | De comparación            |
     |--------|-----------------------|
     | \_Gt   | Mayor que          |
     | \_Lt   | Menor que             |
@@ -48,12 +48,12 @@ Donde:
 
      
 
--   src0 es un registro de origen. Es necesario replicar swzzle si se selecciona un único componente.
--   src1 es un registro de origen. Es necesario replicar swzzle si se selecciona un único componente.
+-   src0 es un registro de origen. Se requiere la replicación de swzzle si se selecciona un único componente.
+-   src1 es un registro de origen. Se requiere la replicación de swzzle si se selecciona un único componente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta instrucción se admite en las versiones siguientes.
+Esta instrucción se admite en las siguientes versiones.
 
 
 

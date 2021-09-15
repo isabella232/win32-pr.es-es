@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c2b73afb5ef0547cbbccd8e5fdd87d7581edcaf19d5d73bc49ea3151166d882
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0a5cdb564c7bf012255b339a13691d2ecf214a86
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119601945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574741"
 ---
 # <a name="menu-resource"></a>Recurso MENU
 
@@ -48,7 +48,7 @@ Este parámetro puede ser cero de más de las instrucciones siguientes.
 | .                                                        | Descripción                                                                                                                                                                             |
 |------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**CHARACTERISTICS**](characteristics-statement.md) *dword*     | Información definida por el usuario sobre un recurso que pueden usar las herramientas que leen y escriben archivos de recursos. Para obtener más información, vea [**CHARACTERISTICS**](characteristics-statement.md). |
-| [**Language**](language-statement.md) *language*, *sublanguage* | Idioma del recurso. Para obtener más información, vea [**LANGUAGE**](language-statement.md).                                                                                            |
+| [**Language**](language-statement.md) *Language*, *sublanguage* | Idioma del recurso. Para obtener más información, vea [**LANGUAGE**](language-statement.md).                                                                                            |
 | [**VERSION**](version-statement.md) *dword*                     | Número de versión definido por el usuario para el recurso que pueden usar las herramientas que leen y escriben archivos de recursos. Para obtener más información, vea [**VERSION**](version-statement.md).              |
 
 
@@ -61,7 +61,7 @@ Algunos atributos también se admiten por compatibilidad con versiones anteriore
 
 ## <a name="examples"></a>Ejemplos
 
-A continuación se muestra un ejemplo de una **instrucción MENU** completa:
+A continuación se muestra un ejemplo de una instrucción **MENU** completa:
 
 ``` syntax
 sample MENU
@@ -82,29 +82,29 @@ sample MENU
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Uso de los menús](./using-menus.md)
 </dt> <dt>
 
-[**Aceleradores**](accelerators-resource.md)
+[**ACELERADORES**](accelerators-resource.md)
 </dt> <dt>
 
-[**Características**](characteristics-statement.md)
+[**CARACTERÍSTICAS**](characteristics-statement.md)
 </dt> <dt>
 
-[**Lengua**](language-statement.md)
+[**LENGUA**](language-statement.md)
 </dt> <dt>
 
 [**MENUEX**](menuex-resource.md)
 </dt> <dt>
 
-[**Menuitem**](menuitem-statement.md)
+[**MENUITEM**](menuitem-statement.md)
 </dt> <dt>
 
-[**Popup**](popup-resource.md)
+[**POPUP**](popup-resource.md)
 </dt> <dt>
 
 [**RCDATA**](rcdata-resource.md)
@@ -113,7 +113,7 @@ sample MENU
 [**STRINGTABLE**](stringtable-resource.md)
 </dt> <dt>
 
-[**Versión**](version-statement.md)
+[**VERSIÓN**](version-statement.md)
 </dt> </dl>
 
  

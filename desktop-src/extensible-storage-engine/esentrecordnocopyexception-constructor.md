@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1457371f077533c921a3cd8e650befbe0f79e717b58a71889f1ea46bc1ba0bec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f5de333565513e636b1938f4ca4344a36b693b68
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118079574"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575096"
 ---
 # <a name="esentrecordnocopyexception-constructor"></a>Constructor EsentRecordNoCopyException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentRecordNoCopyException()
 public EsentRecordNoCopyException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

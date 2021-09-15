@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 77dfc11089ccedf5d435e9c15c3ec97559938d5f90506975bf15cbcdbbaa609b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d81de43dde2b4f0df5913831ddfcefbab1a41855
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119952415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575228"
 ---
 # <a name="d3dxcreateskininfofromblendedmesh-function"></a>Función D3DXCreateSkinInfoFromBlendedMesh
 
@@ -48,7 +48,7 @@ HRESULT D3DXCreateSkinInfoFromBlendedMesh(
 
 Tipo: **[ **LPD3DXBASEMESH**](id3dxbasemesh.md)**
 
-Puntero a un [**objeto ID3DXBaseMesh,**](id3dxbasemesh.md) la malla a partir de la cual se va a crear la malla de máscara.
+Puntero a un [**objeto ID3DXBaseMesh,**](id3dxbasemesh.md) la malla a partir de la que se va a crear la malla de máscara.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

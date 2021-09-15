@@ -1,17 +1,17 @@
 ---
 description: Especifica cuándo se purga una transformación.
 ms.assetid: 68332106-d1fe-467b-8baa-1e592b9cc243
-title: MF_TOPONODE_DRAIN atributo (Mfidl. h)
+title: MF_TOPONODE_DRAIN atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 679b87d626738b82f4504673392bd0fe159e2722
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715390"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579864"
 ---
-# <a name="mf_toponode_drain-attribute"></a>\_Atributo de \_ purga MF TOPONODE
+# <a name="mf_toponode_drain-attribute"></a>Atributo MF \_ TOPONODE \_ DRAIN
 
 Especifica cuándo se purga una transformación.
 
@@ -21,13 +21,13 @@ Especifica cuándo se purga una transformación.
 
 ## <a name="remarks"></a>Observaciones
 
-Este atributo se aplica a los nodos de transformación (**\_ nodo de \_ transformación \_ de topología MF**).
+Este atributo se aplica a los nodos de transformación **(MF \_ TOPOLOGY \_ TRANSFORM \_ NODE**).
 
-El valor del atributo es un miembro de la enumeración del [**\_ modo de \_ purga \_ MF TOPONODE**](/windows/desktop/api/mfidl/ne-mfidl-mf_toponode_drain_mode) . Si no se establece este atributo, el valor predeterminado es **MF \_ TOPONODE \_ \_ valor predeterminado de Drain**.
+El valor del atributo es un miembro de la enumeración [**MF \_ TOPONODE \_ DRAIN \_ MODE.**](/windows/desktop/api/mfidl/ne-mfidl-mf_toponode_drain_mode) Si no se establece este atributo, el valor predeterminado **es MF \_ TOPONODE \_ DRAIN \_ DEFAULT**.
 
-La purga se realiza mediante una llamada a [**IMFTransform::P rocessmessage**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage) en la transformación con el mensaje de [**\_ agotamiento del \_ comando \_ de mensaje MFT**](mft-message-command-drain.md) . Para obtener más información, consulte enumeración de [**\_ \_ tipo de mensaje de MFT**](/windows/desktop/api/mftransform/ne-mftransform-mft_message_type) .
+El purgado se realiza mediante una llamada [**a IMFTransform::P rocessMessage**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage) en la transformación con el mensaje DE PURGA [**DEL COMANDO \_ \_ MFT \_ MESSAGE.**](mft-message-command-drain.md) Para obtener más información, vea [**Enumeración \_ MFT MESSAGE \_ TYPE.**](/windows/desktop/api/mftransform/ne-mftransform-mft_message_type)
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -45,16 +45,16 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
-[**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
+[**NODETopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)
 </dt> <dt>
 
 [Atributos de nodo de topología](topology-node-attributes.md)

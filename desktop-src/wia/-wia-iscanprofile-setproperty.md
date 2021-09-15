@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scanprofile.h
-ms.openlocfilehash: ba4c7aff5139f1230179299d80065f1b933a6cf2d01d4ca03c045ccbe142c3cd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f8f21891ae0cc5fa8e64fafd4acb9e61334a7279
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118441431"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574408"
 ---
 # <a name="iscanprofilesetproperty-method"></a>IScanProfile::SetProperty (método)
 
@@ -76,7 +76,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 ## <a name="remarks"></a>Observaciones
 
-Cada valor de la matriz a la que *apunta pid* es una de las constantes de la [propiedad WIA](-wia-wia-property-constants.md). Puede ampliar este sistema de identificación. Vea [Definir propiedades personalizadas.](-wia-defining-custom-properties.md)
+Cada valor de la matriz a la que *apunta pid* es una de las constantes de propiedad [de WIA](-wia-wia-property-constants.md). Puede extender este sistema de identificación. Vea [Definición de propiedades personalizadas.](-wia-defining-custom-properties.md)
 
 Los cambios en un perfil no se guardan en el disco hasta que la aplicación llama al [**método IScanProfile::Save.**](-wia-iscanprofile-save.md)
 
@@ -90,12 +90,12 @@ Si dos aplicaciones crean objetos de perfil de examen a partir del mismo archivo
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
-| Header<br/>                   | <dl> <dt>Scanprofile.h</dt> </dl>    |
-| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Scanprofile.h</dt> </dl>    |
+| IDL<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

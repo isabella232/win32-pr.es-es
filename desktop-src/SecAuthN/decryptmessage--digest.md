@@ -5,20 +5,20 @@ title: Función DecryptMessage (Digest)
 ms.topic: reference
 ms.date: 07/25/2019
 ms.openlocfilehash: f87828263766643a10cf5400e38cabe9d3096403
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122480871"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581341"
 ---
 # <a name="decryptmessage-digest-function"></a>Función DecryptMessage (Digest)
 
 La **función DecryptMessage (Digest)** descifra un mensaje. Algunos paquetes no cifran y descifran mensajes, sino que realizan y comprueban un [*hash de integridad.*](../secgloss/h-gly.md)
 
-El proveedor de [*compatibilidad de seguridad implícita*](../secgloss/s-gly.md) (SSP) proporciona confidencialidad de cifrado y descifrado para los mensajes intercambiados entre el cliente y el servidor como un mecanismo SASL únicamente.
+El proveedor de [*compatibilidad de seguridad*](../secgloss/s-gly.md) implícita (SSP) proporciona confidencialidad de cifrado y descifrado para los mensajes intercambiados entre el cliente y el servidor como un mecanismo SASL únicamente.
 
 > [!Note]  
-> Se puede llamar a [**EncryptMessage (Digest)**](encryptmessage--digest.md) y **DecryptMessage (Digest)** al mismo tiempo desde dos subprocesos diferentes en un único contexto de interfaz de proveedor de compatibilidad de seguridad [](../secgloss/s-gly.md) (SSPI) si se cifra un subproceso y el otro se descifra. Si se cifra más de un subproceso o se descifra más de un subproceso, cada subproceso debe obtener un contexto único.
+> Se puede llamar a [**EncryptMessage (Digest)**](encryptmessage--digest.md) y **DecryptMessage (Digest)** al mismo tiempo desde dos subprocesos diferentes en un único contexto de interfaz de proveedor de compatibilidad de seguridad [](../secgloss/s-gly.md) (SSPI) si un subproceso está cifrando y el otro está descifrando. Si se cifra más de un subproceso o se descifra más de un subproceso, cada subproceso debe obtener un contexto único.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,10 +56,10 @@ Puntero a una variable de tipo **ULONG** que recibe marcas específicas del paqu
 Este parámetro puede ser una de las marcas siguientes.
 
 
-| Valor | Significado | 
+| Value | Significado | 
 |-------|---------|
 | <span id="SECQOP_WRAP_NO_ENCRYPT"></span><span id="secqop_wrap_no_encrypt"></span><dl><dt><strong>SECQOP_WRAP_NO_ENCRYPT</strong></dt></dl> | El mensaje no se ha cifrado, pero se ha generado un encabezado o finalizador.<br /><blockquote>[!Note]<br />KERB_WRAP_NO_ENCRYPT tiene el mismo valor y el mismo significado.</blockquote><br /> | 
-| <span id="SIGN_ONLY_"></span><span id="sign_only_"></span><dl><dt><strong>SIGN_ONLY</strong></dt></dl> | Cuando use el SSP de resumen, use esta marca cuando el contexto [*de*](../secgloss/s-gly.md) seguridad esté establecido para comprobar solo [*la firma.*](../secgloss/s-gly.md) Para obtener más información, vea [Calidad de protección.](quality-of-protection.md)<br /> | 
+| <span id="SIGN_ONLY_"></span><span id="sign_only_"></span><dl><dt><strong>SIGN_ONLY</strong></dt></dl> | Cuando use el SSP de resumen, use esta marca cuando el contexto [*de*](../secgloss/s-gly.md) seguridad esté establecido para comprobar solo la [*firma.*](../secgloss/s-gly.md) Para obtener más información, vea [Calidad de protección.](quality-of-protection.md)<br /> | 
 
 
 ## <a name="return-value"></a>Valor devuelto
@@ -70,31 +70,31 @@ Si la función no puede descifrar el mensaje, devuelve uno de los siguientes có
 
 | Código devuelto                         | Descripción                                                                                                                                                                  |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **BÚFER \_ E DE S DEMASIADO \_ \_ \_ PEQUEÑO**      | El búfer de mensajes es demasiado pequeño. Se usa con el SSP de resumen.                                                                                                                   |
+| **BÚFER \_ E DE SEGUNDO DEMASIADO \_ \_ \_ PEQUEÑO**      | El búfer de mensajes es demasiado pequeño. Se usa con el SSP de resumen.                                                                                                                   |
 | **SEC \_ E \_ CRYPTO \_ SYSTEM \_ INVALID** | No [*se admite*](../secgloss/c-gly.md) el cifrado elegido para el [*contexto*](../secgloss/s-gly.md) de seguridad. Se usa con el SSP de resumen.                                                                                       |
-| **MENSAJE \_ INCOMPLETO DE SEC E \_ \_**     | Los datos del búfer de entrada están incompletos. La aplicación debe leer más datos del servidor y volver a llamar [**a DecryptMessage (Digest).**](decryptmessage--digest.md) |
-| **IDENTIFICADOR \_ NO VÁLIDO DE SEC E \_ \_**         | Se especificó un identificador de contexto que no es válido en el *parámetro phContext.* Se usa con el SSP de resumen.                                                                     |
+| **S \_ E \_ MENSAJE \_ INCOMPLETO**     | Los datos del búfer de entrada están incompletos. La aplicación debe leer más datos del servidor y volver a llamar a [**DecryptMessage (Digest).**](decryptmessage--digest.md) |
+| **SEG \_ E \_ IDENTIFICADOR NO \_ VÁLIDO**         | Se especificó un identificador de contexto que no es válido en el *parámetro phContext.* Se usa con el SSP de resumen.                                                                     |
 | **SEG \_ E \_ MESSAGE \_ ALTERED**        | El mensaje se ha modificado. Se usa con el SSP de resumen.                                                                                                                      |
 | **SEC \_ E \_ OUT \_ OF \_ SEQUENCE**       | El mensaje no se recibió en la secuencia correcta.                                                                                                                        |
-| **SEG \_ E \_ QOP \_ NO \_ COMPATIBLE**     | El contexto de seguridad [*no*](../secgloss/i-gly.md) admite la confidencialidad ni la [*integridad.*](../secgloss/s-gly.md) Se usa con el SSP de resumen.                           |
+| **SEG \_ E \_ QOP \_ NO \_ COMPATIBLE**     | El contexto de [*seguridad*](../secgloss/i-gly.md) no admite la confidencialidad ni la [*integridad.*](../secgloss/s-gly.md) Se usa con el SSP de resumen.                           |
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-A veces, una aplicación leerá datos de la parte remota, intentará descifrarlo mediante **DecryptMessage (Digest)** y detectará que **DecryptMessage (Digest)** se ha creado correctamente, pero los búferes de salida están vacíos. Este es un comportamiento normal y las aplicaciones deben ser capaces de abordarlo.
+A veces, una aplicación leerá datos de la parte remota, intentará descifrarlo mediante **DecryptMessage (Digest)** y detectará que **DecryptMessage (Digest)** se ha hecho correctamente, pero los búferes de salida están vacíos. Este es un comportamiento normal y las aplicaciones deben ser capaces de tratar con él.
 
 **Windows XP:** Esta función también se conocía como **UnsealMessage**. Las aplicaciones ahora solo **deben usar DecryptMessage (Digest).**
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|-------------------------------------------|
-| Cliente mínimo compatible | Windows XP \[ solo aplicaciones de escritorio\]          |
+| Cliente mínimo compatible | Windows Solo \[ aplicaciones de escritorio XP\]          |
 | Servidor mínimo compatible | Windows Solo aplicaciones de escritorio de Server 2003 \[\] |
 | Encabezado                   | Sspi.h (incluir Security.h)               |
 | Biblioteca                  | Secur32.lib                               |
 | Archivo DLL                      | Secur32.dll                               |
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 - [Funciones de SSPI](authentication-functions.md#sspi-functions)
 - [**EncryptMessage (digest)**](encryptmessage--digest.md)

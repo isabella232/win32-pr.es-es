@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 7baa5f58-62c2-406e-a81e-4ca9c446a756
-ms.openlocfilehash: c725a61a6711dab22d50b774cb02556916dae802a66008a48721d7311e163bce
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 00b0e58ed18ab0da9c3fa362da4b8e3e066cdcc4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119660645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579517"
 ---
 # <a name="shellfolderviewocenumdone-event"></a>Evento ShellFolderViewOC.EnumDone
 
@@ -43,7 +43,7 @@ ShellFolderViewOC.EnumDone = EventHandler;
 
 Este controlador de eventos no tiene parámetros.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El [**objeto ShellFolderView**](shellfolderview.md) debe enumerar el contenido de una carpeta para poder mostrarlo. Con carpetas grandes o ubicadas en un sistema remoto, este proceso puede tardar hasta varios minutos. Durante este tiempo, se muestra un gráfico animado de la luz para indicar al usuario que se está procesando. Una vez completada la enumeración, se desencadena el evento **EnumDone** y el gráfico de la linterna se reemplaza por el contenido de la carpeta.
 
@@ -64,12 +64,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 

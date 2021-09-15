@@ -1,5 +1,5 @@
 ---
-description: La estructura WIA RAW HEADER define una imagen en el formato de datos RAW de un dispositivo y permite a las aplicaciones usar el formato RAW en las transferencias Windows adquisición de imágenes \_ \_ (WIA).
+description: La estructura WIA RAW HEADER define una imagen en el formato de datos RAW de un dispositivo y permite a las aplicaciones usar el formato RAW en \_ las transferencias de Windows Image Acquisition \_ (WIA).
 ms.assetid: c7b50816-d596-4c62-a00e-cd8d6e303e42
 title: WIA_RAW_HEADER estructura (Wiadef.h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wiadef.h
-ms.openlocfilehash: 2b4e89f47737788fa9ebf238f06f6420eafbc31d7b27ab7933372d0716fb6588
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8da33f0b257168712f1b16fb7f940df5db862d3f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119812955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574405"
 ---
 # <a name="wia_raw_header-structure"></a>Estructura DE \_ ENCABEZADO SIN FORMATO DE WIA \_
 
@@ -53,7 +53,7 @@ typedef struct _WIA_RAW_HEADER {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -174,7 +174,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-EL DATATYPE de IPA de WIA \_ \_ de la imagen. Puesto que WIA IPA FORMAT se establece en \_ \_ WiaImgFmt RAW, se trata de una lista de valores permitidos entre los que \_ elige la aplicación.
+EL TIPO DE DATOS IPA DE WIA \_ \_ de la imagen. Puesto que WIA IPA FORMAT se establece en \_ \_ WiaImgFmt RAW, se trata de una lista de valores permitidos de los que \_ elige la aplicación.
 
 </dd> <dt>
 
@@ -196,7 +196,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Valor IPA COMPRESSION de WIA \_ que especifica el tipo de compresión \_ utilizado, si lo hay.
+Valor COMPRESSION \_ de WIA IPA \_ que especifica el tipo de compresión usado, si lo hay.
 
 </dd> <dt>
 
@@ -207,7 +207,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Valor DE WIA \_ IPA \_ PHOTOMETRIC \_ INTERP que especifica la interpretación fotométrica de la imagen.
+Valor PHOTOMETRIC INTERP de WIA \_ IPA \_ que especifica la \_ interpretación fotométrica de la imagen.
 
 </dd> <dt>
 
@@ -218,7 +218,7 @@ Tipo: **DWORD**
 
 </dd> <dd>
 
-Valor que representa el orden de línea de la imagen. Siempre se trata de WIA \_ LINE ORDER TOP TO BOTTOM o \_ \_ \_ \_ WIA LINE ORDER BOTTOM \_ TO \_ \_ \_ \_ TOP.
+Valor que representa el orden de línea de la imagen. Siempre es WIA \_ LINE ORDER TOP TO BOTTOM o \_ \_ \_ \_ WIA LINE ORDER BOTTOM TO \_ \_ \_ \_ \_ TOP.
 
 </dd> <dt>
 
@@ -266,7 +266,7 @@ Tamaño, en bytes, de la tabla de paleta. (Es 0, si no hay ninguna paleta).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Dado que no se trata de un formato de archivo, use una cadena vacía para la propiedad WIA \_ IPA \_ FILE \_ EXTENSION.
 
@@ -280,11 +280,11 @@ La paleta y los datos pueden estar en cualquier orden.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                |
-| Header<br/>                   | <dl> <dt>Wiadef.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wiadef.h</dt> </dl> |
 
 
 

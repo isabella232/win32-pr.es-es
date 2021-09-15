@@ -4,16 +4,16 @@ ms.assetid: 45918739-de36-4b92-824f-ad7c23995ec2
 title: Declaración de problema de los controles parentales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ed1ceec99e97bc5d566c1d50b18ae90008945da5788365dc7ed19dc26205c40
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 137a328efe96b38873af53377583ec76f24f381b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118971674"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574696"
 ---
 # <a name="parental-controls-problem-statement"></a>Declaración de problema de los controles parentales
 
-El uso de equipos para actividades en línea y sin conexión abre un nuevo mundo para la recopilación de información, la comunicación, el comercio, la productividad y el entretenimiento. También presenta nuevos riesgos para los juegos, la divulgación de información y el acceso sencillo a contenido inadecuado en sitios web, mensajes, descargas de archivos y multimedia de juegos y audio y vídeo. Para adultos, los riesgos pueden controlarse mediante tecnologías de filtrado configuradas por un adultos para su propia cuenta o para un equipo en su conjunto. La administración de cookies, los bloqueadores de elementos emergentes, los filtros anti spam, la configuración de sitios web de confianza y bloqueados y la administración de listas de compañeros de mensajería instantánea son ejemplos comunes de esfuerzos de filtrado automático.
+El uso de equipos para actividades en línea y sin conexión abre un nuevo mundo para la recopilación de información, la comunicación, el comercio, la productividad y el entretenimiento. También presenta nuevos riesgos para los juegos, la divulgación de información y el acceso sencillo a contenido inadecuado en sitios web, mensajes, descargas de archivos y multimedia de juegos y audio y vídeo. Para adultos, los riesgos pueden controlarse mediante tecnologías de filtrado configuradas por un adultos para su propia cuenta o para un equipo en su conjunto. La administración de cookies, los bloqueadores de elementos emergentes, los filtros anti spam, la configuración de sitios web de confianza y bloqueados, y la administración de listas de compañeros de mensajería instantánea son ejemplos comunes de esfuerzos de filtrado automático.
 
 La aplicación de controles parentales es diferente del filtrado automático. Las directivas establecidas por un elemento primario o guardián deben aplicarse a los dependientes sin que los dependientes puedan modificarlas fácilmente. Lo mismo se aplica a la manipulación de la información de registro de actividad que puede ser esencial para que un elemento primario o guardián tenga información suficiente para establecer y mantener directivas eficaces. El bastión del control y el estado se convierte en una identidad con privilegios, asociada a una identidad de derechos reducida cuyos procesos suelen implementar restricciones de supervisión y actividad sin poder modificar trivialmente las directivas o registrar datos.
 

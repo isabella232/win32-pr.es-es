@@ -7,11 +7,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: cdad2b80625d6a60460d43f242d7897e0ae7eb40
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369539"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574141"
 ---
 # <a name="appidflags"></a>AppIDFlags
 
@@ -43,7 +43,7 @@ Se trata de **un valor \_ REG DWORD.**
 
 ### <a name="appidregflags_activate_iuserver_indesktop-description"></a>APPIDREGFLAGS \_ ACTIVATE \_ IUSERVER \_ INDESKTOP Description
 
-Si la marca **APPIDREGFLAGS \_ ACTIVATE \_ IUSERVER \_ INDESKTOP** está desactivada en **AppIDFlags** o **si AppIDFlags** no está presente, el cliente de una sesión de terminal server que realiza una solicitud de activación para un servidor [COM](interactive-user.md) de usuario interactivo se enlazará al servidor COM en el escritorio "predeterminado" de la estación de ventana "winsta0" [](/windows/desktop/winstation/window-stations) de la sesión en la solicitud de activación. Por ejemplo, si el cliente ejecuta "winsta0 desktop1" de la sesión 3, la solicitud de activación de la sesión 3 se enlazará o se iniciará y enlazará al servidor COM en "winsta0 default" de la sesión 3, incluso si una instancia del servidor COM ya se está ejecutando en \\ \\ "winsta0 desktop1" de la sesión \\ 3.
+Si la marca **APPIDREGFLAGS \_ ACTIVATE \_ IUSERVER \_ INDESKTOP** está desactivada en **AppIDFlags** o **si AppIDFlags** no está presente, el cliente de una sesión de terminal server que realiza una solicitud de activación para un servidor [COM](interactive-user.md) de usuario interactivo se enlazará al servidor COM en el escritorio "predeterminado" de la estación de ventana "winsta0" [](/windows/desktop/winstation/window-stations) de la sesión en la solicitud de activación. Por ejemplo, si el cliente ejecuta "winsta0 desktop1" de la sesión 3, la solicitud de activación de la sesión 3 se enlazará o iniciará y enlazará al servidor COM en "winsta0 default" de la sesión 3, incluso si una instancia del servidor COM ya se está ejecutando en \\ \\ "winsta0 desktop1" de la sesión \\ 3.
 
 Si la marca **APPIDREGFLAGS \_ ACTIVATE \_ IUSERVER \_ INDESKTOP** está establecida en el valor **AppIDFlags,** COM se enlazará o iniciará y enlazará al proceso de servidor que se ejecuta en el escritorio del cliente y a la sesión de la solicitud de activación. Por ejemplo, si el cliente ejecuta "winsta0 desktop1" en la sesión 3, la solicitud de activación de la sesión 3 se enlazará o iniciará y enlazará al servidor COM en "winsta0 desktop1" en la sesión 3, incluso si una instancia del servidor COM ya se está ejecutando en \\ "winsta0 default" en la sesión \\ \\ 3.
 
@@ -77,7 +77,7 @@ Si la marca **APPIDREGFLAGS \_ ISSUE ACTIVATION RPC AT \_ \_ \_ \_ IDENTIFY** no
 
 Se deben tener en cuenta las siguientes consideraciones de seguridad al usar la marca **APPIDREGFLAGS \_ ISSUE ACTIVATION RPC AT \_ \_ \_ \_ IDENTIFY:**
 
--   La **marca APPIDREGFLAGS \_ ISSUE ACTIVATION RPC AT \_ \_ \_ \_ IDENTIFY** está pensada para que la usen los servidores COM que no realizan el trabajo en nombre de los clientes en las solicitudes de activación de objetos. Para estos servidores, si el SCM com emite solicitudes de activación de objetos en RPC [ \_ C IMP LEVEL \_ \_ \_ IDENTIFY,](impersonation-levels.md) se minimizan las posibilidades de que aparezcan SE tokens con privilegios con un nivel [**\_ IMPERSONATE \_ NAME**](/windows/desktop/SecAuthZ/privilege-constants) en el proceso.
+-   La **marca APPIDREGFLAGS \_ ISSUE ACTIVATION RPC AT \_ \_ \_ \_ IDENTIFY** está pensada para que la usen los servidores COM que no realizan el trabajo en nombre de los clientes en las solicitudes de activación de objetos. Para estos servidores, hacer que el SCM COM emita solicitudes de activación de objetos en [RPC C IMP LEVEL \_ \_ \_ \_ IDENTIFY](impersonation-levels.md) minimiza las posibilidades de que aparezcan SE tokens con privilegios con un nivel [**\_ IMPERSONATE \_ NAME**](/windows/desktop/SecAuthZ/privilege-constants) en el proceso.
 
 La **marca APPIDREGFLAGS \_ ISSUE ACTIVATION RPC AT \_ \_ \_ \_ IDENTIFY** se admite en Windows 7 y versiones posteriores de Windows.
 

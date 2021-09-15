@@ -4,12 +4,12 @@ ms.assetid: 508d8670-5f5f-422b-9fa1-150115e2dbb8
 title: MF_PD_ASF_METADATA_V8_BUFFERAVERAGE atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ac9328d0b176df23b103c49890ffa7646ae8c02e7205df95fecc5a64e5eebc4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d3f1efcb464ee62a1f3838c1a684e3c87dc58227
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119955415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579872"
 ---
 # <a name="mf_pd_asf_metadata_v8_bufferaverage-attribute"></a>Atributo \_ \_ \_ \_ \_ BUFFERAVERAGE de MF PD ASF METADATA V8
 
@@ -19,7 +19,7 @@ Especifica el tamaño medio de búfer necesario para un archivo de formato de si
 
 **UINT32**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se aplica a los descriptores de presentación para el contenido de ASF.
 
@@ -38,7 +38,7 @@ El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desk
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 

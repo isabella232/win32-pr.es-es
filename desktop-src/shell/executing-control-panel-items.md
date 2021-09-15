@@ -1,15 +1,15 @@
 ---
-description: Describe los métodos para abrir un Panel de control para Windows Vista y sistemas posteriores, así como para abarcar comandos Panel de control heredados.
+description: Describe los métodos para abrir un elemento Panel de control para Windows Vista y sistemas posteriores, así como para abarcar los comandos Panel de control heredados.
 ms.assetid: c17167ab-e9a0-4290-955c-484d038b82af
 title: Ejecución de Panel de control elementos
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 5bb941bb7542b0d786d682e6626e8d78faea8bd7
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122478421"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579609"
 ---
 # <a name="executing-control-panel-items"></a>Ejecución de Panel de control elementos
 
@@ -84,7 +84,7 @@ Para obtener una lista completa de Panel de control de elementos canónicos, vea
 
 En Windows Vista, algunas opciones a las que se ha accedido mediante un módulo .cpl en Windows XP ahora se implementan como .exe archivos. Esto proporciona mayor seguridad al permitir que se pida a los usuarios estándar que proporcionen credenciales de administrador al intentar iniciar los archivos. Se accede a las opciones que no requieren seguridad adicional mediante las mismas líneas de comandos que se usaron en Windows XP. A continuación se muestra una lista de los comandos que se usan en Windows Vista para acceder a pestañas específicas de Panel de control elementos:
 
-### <a name="personalization"></a>Personalization
+### <a name="personalization"></a>Personalización
 
 -   Tamaño de fuente y PPP: %windir% \\ system32 \\DpiScaling.exe
 -   Resolución de pantalla: %windir% \\ system32 \\control.exe desk.cpl,Configuración,@Settings
@@ -128,10 +128,10 @@ En Windows Vista, algunas opciones a las que se ha accedido mediante un módulo 
 
 ### <a name="power-options"></a>Opciones de energía
 
--   Editar la configuración del plan actual: %windir% \\ system32 \\control.exe /name Microsoft.PowerOptions /page pagePlanSettings
+-   Editar la configuración actual del plan: %windir% \\ system32 \\control.exe /name Microsoft.PowerOptions /page pagePlanSettings
 -   Configuración del sistema: %windir% \\ system32 \\control.exe /name Microsoft.PowerOptions /pageGlobalSettings
 -   Crear un plan de energía: %windir% \\ system32 \\control.exe /name Microsoft.PowerOptions /pageCreateNewPlan
--   No hay ningún comando canónico para la página Advanced Configuración, se accede a él de la manera anterior: %windir% \\ system32 \\control.exe powercfg.cpl,3
+-   No hay ningún comando canónico para la página advanced Configuración, se accede a él de la manera anterior: %windir% \\ system32 \\control.exe powercfg.cpl,3
 
 ## <a name="legacy-control-panel-commands"></a>Comandos de Panel de control heredados
 
@@ -140,7 +140,7 @@ Cuando se usa [**la función WinExec,**](/windows/win32/api/winbase/nf-winbase-w
 
 
 
-| | | control.exe escritorio | Inicia la ventana <strong>Propiedades de pantalla</strong> inicio.<blockquote>[!Note]<br />Las ediciones Starter y Basic no admiten este comando.</blockquote><br /> | | control.exe color | Inicia la ventana <strong>Propiedades de pantalla</strong> con la <strong>pestaña Apariencia</strong> preseleccionada. | | control.exe fecha y hora | Inicia la ventana <strong>Propiedades de fecha y</strong> hora. | | control.exe internacional | Inicia la ventana <strong>Opciones regionales y de</strong> idioma. | | control.exe de | Inicia la ventana <strong>Propiedades del</strong> mouse. | | control.exe teclado | Inicia la ventana <strong>Propiedades del</strong> teclado. | | control.exe impresoras | Muestra la <strong>carpeta Impresoras y faxes.</strong> | | control.exe fuentes | Muestra la <strong>carpeta Fuentes.</strong> | 
+| | | control.exe escritorio | Inicia la ventana <strong>Propiedades de pantalla</strong> ventana.<blockquote>[!Note]<br />Las ediciones Starter y Basic no admiten este comando.</blockquote><br /> | | control.exe color | Inicia la ventana <strong>Propiedades de pantalla</strong> con la <strong>pestaña Apariencia</strong> preseleccionada. | | control.exe fecha y hora | Inicia la ventana <strong>Propiedades de fecha y</strong> hora. | | control.exe internacional | Inicia la ventana <strong>Opciones regionales y de</strong> idioma. | | control.exe del mouse | Inicia la ventana <strong>Propiedades del</strong> mouse. | | control.exe teclado | Inicia la ventana <strong>Propiedades del</strong> teclado. | | control.exe impresoras | Muestra la <strong>carpeta Impresoras y faxes.</strong> | | control.exe fuentes | Muestra la <strong>carpeta Fuentes.</strong> | 
 
 
 
@@ -151,7 +151,7 @@ Para Windows sistemas 2000 y posteriores:
 
 
 
-| Comando                    | Descripción                                              |
+| Get-Help                    | Descripción                                              |
 |----------------------------|----------------------------------------------------------|
 | control.exe carpetas        | Inicia la ventana **Opciones de carpeta.**                  |
 | control.exe netware        | Inicia la ventana **NetWare de Asíns** (si está instalada).   |

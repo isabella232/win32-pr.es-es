@@ -4,12 +4,12 @@ ms.assetid: 6331033F-7EEB-41B3-B166-29686D4AADB6
 title: CODECAPI_AVEncVideoEncodeFrameTypeQP propiedad (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e9ebd4a25f3779ce1c721eb3cb1188b487be4d313ae5dbeb02dd41e494f4c17
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 76e68e0cb6cbdc076dbf523f3ae9dfd7b5870f47
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118743883"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574961"
 ---
 # <a name="codecapi_avencvideoencodeframetypeqp-property"></a>Propiedad CODECAPI \_ AVEncVideoEncodeFrameTypeQP
 
@@ -25,7 +25,7 @@ Especifica los tipos de marco (I, P o B) a los que se aplica el parámetro de cu
 
 ## <a name="remarks"></a>Observaciones
 
-Para los codificadores que admiten la configuración de un parámetro de cuantificación (QP) para diferentes tipos de fotogramas (I, P, B), expondrán esta API además de [CODECAPI \_ AVEncVideoEncodeQP](codecapi-avencvideoencodeqp.md). Si un codificador solo admite un único QP para todos los tipos de fotogramas, solo admitirán CODECAPI \_ AVEncVideoEncodeQP.
+Para los codificadores que admiten la configuración de un parámetro de cuantificación (QP) para diferentes tipos de fotogramas (I, P, B), expondrán esta API además de [CODECAPI \_ AVEncVideoEncodeQP](codecapi-avencvideoencodeqp.md). Si un codificador solo admite un QP único para todos los tipos de fotogramas, solo admitirán CODECAPI \_ AVEncVideoEncodeQP.
 
 Se trata de una propiedad de codificación dinámica que significa que se puede establecer un nuevo valor en cualquier momento durante la sesión de codificación.
 
@@ -56,11 +56,11 @@ Cuando [CODECAPI \_ AVEncVideoSelectLayer](codecapi-avencvideoselectlayer.md) se
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                   |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Aplicaciones de \[ escritorio R2 \| para aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

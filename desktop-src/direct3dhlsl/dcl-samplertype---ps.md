@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 764c3b992cd248a8900c3762c7c9e68abd3bed973ca4f7d44b1705122984f321
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7a6da220e50b43ce990c090c61d1caf84afec653
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119726745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573904"
 ---
 # <a name="dcl_samplertype-sm2-sm3---ps-asm"></a>dcl \_ samplerType (sm2, sm3 - ps asm)
 
 Declare un muestreador de sombreador de píxeles.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 dcl \_ samplerType s\#
 
@@ -36,7 +36,7 @@ donde:
     -   \_Volumen
 -   s \# identifica un muestreador donde s es una abreviatura del muestreador y \# es el número del muestreador. Los muestreadores son pseudo registros porque no se pueden leer ni escribir directamente en ellos.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

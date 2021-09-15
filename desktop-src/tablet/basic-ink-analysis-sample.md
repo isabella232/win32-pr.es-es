@@ -1,29 +1,29 @@
 ---
-description: En el ejemplo Análisis básico de entrada de lápiz se muestra cómo la clase InkAnalyzer divide la entrada de lápiz en varios segmentos de palabra y dibujo. Este ejemplo es una versión actualizada del ejemplo de divisor de lápiz.
+description: El ejemplo análisis básico de entrada de lápiz muestra cómo la clase InkAnalyzer divide la entrada de lápiz en varios segmentos de palabras y dibujos. Este ejemplo es una versión actualizada del ejemplo de divisor de lápiz.
 ms.assetid: cb9a28d9-f8c6-478e-ae43-2d30106edc7b
 title: Ejemplo básico de análisis de entrada de lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ab307deac8ac58a741b0c7f332986b09074f4f5c6a8afa53f0156a94916bf16
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e94ac73ca9049169c6e406059665a66e8eaa6f3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119660835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579496"
 ---
 # <a name="basic-ink-analysis-sample"></a>Ejemplo básico de análisis de entrada de lápiz
 
-En el ejemplo Análisis básico de entrada de lápiz se muestra cómo [la clase InkAnalyzer](/previous-versions/ms583671(v=vs.100)) divide la entrada de lápiz en varios segmentos de palabra y dibujo.
+El ejemplo análisis básico de entrada de lápiz muestra cómo [la clase InkAnalyzer](/previous-versions/ms583671(v=vs.100)) divide la entrada de lápiz en varios segmentos de palabras y dibujos.
 
-Este ejemplo es una versión actualizada del ejemplo [de divisor de lápiz.](ink-divider-sample.md) Mientras que el ejemplo de divisor de entrada de lápiz usa la [clase Divider,](/previous-versions/ms839398(v=msdn.10)) en este ejemplo se usa la API InkAnalysis más reciente y preferida. InkAnalysis API combina [RecognizerContext](/previous-versions/ms828542(v=msdn.10)) y Divider en una API y amplía la funcionalidad de ambos.
+Este ejemplo es una versión actualizada del ejemplo [de divisor de lápiz.](ink-divider-sample.md) Mientras que el ejemplo de divisor de lápiz usa la [clase Divider,](/previous-versions/ms839398(v=msdn.10)) este ejemplo usa la API InkAnalysis más reciente y preferida. InkAnalysis API combina [RecognizerContext](/previous-versions/ms828542(v=msdn.10)) y Divider en una API y amplía la funcionalidad de ambos.
 
-Al actualizar el formulario, el ejemplo dibuja un rectángulo alrededor de cada unidad analizada: palabras, líneas, párrafos, regiones de escritura, dibujos y viñetas. El formulario usa colores diferentes para las distintas unidades. Los rectángulos también se amplían en diferentes cantidades para asegurarse de que ningún otro rectángulo esté oculto por ningún otro.
+Al actualizar el formulario, el ejemplo dibuja un rectángulo alrededor de cada unidad analizada: palabras, líneas, párrafos, regiones de escritura, dibujos y viñetas. El formulario usa colores diferentes para las distintas unidades. Los rectángulos también se amplían en diferentes cantidades para garantizar que ningún otro rectángulo esté oculto.
 
-En la tabla siguiente se especifica el color y la temperatura de cada unidad analizada.
+En la tabla siguiente se especifica el color y el tamaño de cada unidad analizada.
 
 
 
-| Unidad analizada             | Color del rectángulo | Rectángulo de rectángulo (píxeles) |
+| Unidad analizada             | Color del rectángulo | Rectángulo de rectángulos (píxeles) |
 |---------------------------|--------------------|--------------------------------|
 | Word<br/>           | Verde<br/>   | 1<br/>                   |
 | Línea<br/>           | Fucsia<br/> | 3<br/>                   |
@@ -36,7 +36,7 @@ En la tabla siguiente se especifica el color y la temperatura de cada unidad ana
 
  
 
-Puede borrar trazos en el formulario. En la aplicación de ejemplo, puede alternar entre el modo de entrada manuscrita y el modo de borrado para cambiar la función del lápiz.
+Puede borrar trazos en el formulario. En la aplicación de ejemplo, puede alternar entre el modo Ink y Erase para cambiar la función del lápiz.
 
 
 ```C++
@@ -106,16 +106,16 @@ Al agregar o eliminar trazos, los ejemplos actualiza [InkAnalyzer](/previous-ver
 
 
 
-Tenga en cuenta que, en el menú Modo, Análisis de diseño automático está seleccionado de forma predeterminada. Con esta opción seleccionada, los controladores de eventos [Stroke](/previous-versions/ms835344(v=msdn.10)) y [StrokesDeleting](/previous-versions/ms835360(v=msdn.10)) del objeto [InkOverlay](/previous-versions/ms833057(v=msdn.10)) llaman al método [BackgroundAnalyze](/previous-versions/ms568972(v=vs.100)) cada vez que se crea o elimina un trazo.
+Tenga en cuenta que, en el menú Modo, análisis de diseño automático está en el valor predeterminado. Con esta opción seleccionada, los controladores de eventos [Stroke](/previous-versions/ms835344(v=msdn.10)) y [StrokesDeleting](/previous-versions/ms835360(v=msdn.10)) del objeto [InkOverlay](/previous-versions/ms833057(v=msdn.10)) llaman al método [BackgroundAnalyze](/previous-versions/ms568972(v=vs.100)) cada vez que se crea o elimina un trazo.
 
 > [!Note]  
-> Llamar al método Analyze del [](/previous-versions/ms568971(v=vs.100)) objeto [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) con más de unos cuantos trazos presentes crea un retraso apreciable en una aplicación. Esto se debe a que Analizar es una operación de análisis de entrada de lápiz sincrónica. En la práctica, llame al método Analyze solo cuando necesite el resultado. De lo contrario, use [el método BackgroundAnalyze asincrónico,](/previous-versions/ms568972(v=vs.100)) como se muestra en el ejemplo.
+> Llamar al método Analyze del [](/previous-versions/ms568971(v=vs.100)) objeto [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) con más de unos cuantos trazos presentes crea un retraso notable en una aplicación. Esto se debe a que Analizar es una operación de análisis de entrada de lápiz sincrónica. En la práctica, llame al método Analyze solo cuando necesite el resultado. De lo contrario, use [el método BackgroundAnalyze asincrónico,](/previous-versions/ms568972(v=vs.100)) como se muestra en el ejemplo.
 
  
 
 ## <a name="handling-the-analysis-results"></a>Control de los resultados del análisis
 
-El ejemplo crea dos matrices para contener los distintos rectángulos, ya sea horizontal o girado. Use un rectángulo de selección girado para obtener el ángulo en el que se escribe una línea de palabras. En el ejemplo se muestran las propiedades devueltas por [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) y se muestra el rectángulo de selección o el rectángulo de selección girado (en función de la selección del menú).
+El ejemplo crea dos matrices para contener los distintos rectángulos, ya sea horizontal o girado. Use un cuadro de límite girado para obtener el ángulo en el que se escribe una línea de palabras. El ejemplo muestra las propiedades devueltas por [InkAnalyzer](/previous-versions/ms583671(v=vs.100)) y muestra el cuadro de límite o el rectángulo de selección girado (según la selección del menú).
 
 
 ```C++
@@ -274,7 +274,7 @@ El ejemplo crea dos matrices para contener los distintos rectángulos, ya sea ho
 
 
 
-El analizador calcula [GetRotatedBoundingBox durante](/previous-versions/ms569544(v=vs.100)) el análisis. Puede acceder a la información desde los rectángulos de selección girados en la aplicación por una serie de motivos útiles:
+El analizador calcula [GetRotatedBoundingBox durante](/previous-versions/ms569544(v=vs.100)) el análisis. Puede acceder a la información desde los rectángulos de selección girados de la aplicación por varios motivos útiles:
 
 -   Detecte o dibuje los límites de una sola línea, párrafo u otra unidad.
 -   Determine el ángulo en el que se escribe una línea o párrafo.
@@ -290,7 +290,7 @@ El analizador calcula [GetRotatedBoundingBox durante](/previous-versions/ms56954
 [Ejemplo de formulario de papel digitalizado](scanned-paper-form-sample.md)
 </dt> <dt>
 
-[Ejemplo de divisor de entrada manuscrita](ink-divider-sample.md)
+[Ejemplo de divisor de entrada de lápiz](ink-divider-sample.md)
 </dt> </dl>
 
  

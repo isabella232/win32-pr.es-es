@@ -4,14 +4,14 @@ ms.assetid: 2e1bf3e3-c005-418b-b9fd-1d43c42dad6f
 title: MF_MT_MPEG2_FLAGS atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a8cd73616edff4e9b35f7c082b9bdec3b8932a5bd5ce862a7c62d77f9041b9e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f2ef0a0def9c3e5413ec9b9bf7568fcbe9add851
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119104431"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580360"
 ---
-# <a name="mf_mt_mpeg2_flags-attribute"></a>Atributo MF \_ MT \_ MPEG2 \_ FLAGS
+# <a name="mf_mt_mpeg2_flags-attribute"></a>Atributo \_ MF MT \_ MPEG2 \_ FLAGS
 
 Contiene varias marcas para un tipo de medio de vídeo MPEG-2.
 
@@ -19,7 +19,7 @@ Contiene varias marcas para un tipo de medio de vídeo MPEG-2.
 
 **UINT32**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo corresponde al miembro **dwFlags** de la [**estructura MPEG2VIDEOINFO.**](/previous-versions/windows/desktop/api/dvdmedia/ns-dvdmedia-mpeg2videoinfo) Para obtener una lista de marcas válidas, consulte la documentación de **MPEG2VIDEOINFO**.
 
@@ -29,15 +29,15 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
-| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| para aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -53,7 +53,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[Atributos de tipo de medio](media-type-attributes.md)
+[Atributos de tipo multimedia](media-type-attributes.md)
 </dt> </dl>
 
  

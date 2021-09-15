@@ -14,20 +14,20 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 0df1114f5808e5fd08a1a2dbe00ccfb451eaa7096c978d3f4d454e508c0a2fcd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b402695aa278105ad57209f3ff33e66ccaf8c746
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118717354"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579469"
 ---
 # <a name="itablet2-interface"></a>Interfaz ITablet2
 
 Extiende la [**interfaz ITablet**](itablet.md).
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La **interfaz ITablet2** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITablet2** también tiene estos tipos de miembros:
+La **interfaz ITablet2** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITablet2 también** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 
@@ -39,13 +39,13 @@ La **interfaz ITablet2** tiene estos métodos.
 
 | Método                                          | Descripción                                                                                              |
 |:------------------------------------------------|:---------------------------------------------------------------------------------------------------------|
-| [**GetDeviceKind**](itablet2-getdevicekind.md) | Devuelve el tipo de dispositivo de hardware que el objeto de tableta representa, como mouse, lápiz o táctil.<br/> |
+| [**GetDeviceKind**](itablet2-getdevicekind.md) | Devuelve el tipo de dispositivo de hardware que el objeto de tableta representa, como el mouse, el lápiz o la entrada táctil.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta interfaz se introdujo en Windows Vista.
 
@@ -71,7 +71,7 @@ interface ITablet2 : IUnknown
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |

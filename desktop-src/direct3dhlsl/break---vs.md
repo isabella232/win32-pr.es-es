@@ -1,6 +1,6 @@
 ---
 title: break- vs
-description: Salga del bucle actual en el punto de conexión más cercano ( frente a o endrep ) frente a
+description: Salir del bucle actual en el endloop más cercano ( vs o endrep ) frente a
 ms.assetid: d46a5ecd-8142-4134-b4c8-121a644a85c2
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bb51d7c6b398a1ee86afbffe78cd1bf54cf8e5290e5c04f8d7815525137ce303
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 27751d1d6f17a6c3d64baf3dbb1b4d8b37570209
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118794573"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574032"
 ---
 # <a name="break---vs"></a>break- vs
 
-Salga del bucle actual en el punto de conexión más [cercano ( frente a](endloop---vs.md) o [endrep ) frente a](endrep---vs.md).
+Salga del bucle actual en el [endloop más cercano ( frente](endloop---vs.md) a o [endrep ) frente a](endrep---vs.md).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -31,9 +31,9 @@ Salga del bucle actual en el punto de conexión más [cercano ( frente a](endloo
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta instrucción se admite en las siguientes versiones.
+Esta instrucción se admite en las versiones siguientes.
 
 
 

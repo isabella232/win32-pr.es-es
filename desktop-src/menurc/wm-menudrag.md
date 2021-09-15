@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22792c7606bb001b72b7c4751d14129bca02c5b4a5b337e0349a9a9a2120b62a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b67e83c41576a716d292187df4cb08fa803271c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118971804"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574716"
 ---
-# <a name="wm_menudrag-message"></a>Mensaje \_ DE WM MENUDRAG
+# <a name="wm_menudrag-message"></a>Mensaje \_ MENUDRAG de WM
 
 Se envía al propietario de un menú de arrastrar y colocar cuando el usuario arrastra un elemento de menú.
 
@@ -65,11 +65,11 @@ La aplicación debe devolver uno de los siguientes valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La aplicación puede llamar a la [**función DoDragDrop**](/windows/win32/api/ole2/nf-ole2-dodragdrop) en respuesta a este mensaje.
 
-Para crear un menú de arrastrar y colocar, llame a [**SetMenuInfo**](/windows/desktop/api/Winuser/nf-winuser-setmenuinfo) con **\_ DRAGDROP de MNS.**
+Para crear un menú de arrastrar y colocar, llame a [**SetMenuInfo**](/windows/desktop/api/Winuser/nf-winuser-setmenuinfo) con **MNS \_ DRAGDROP**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,7 +83,7 @@ Para crear un menú de arrastrar y colocar, llame a [**SetMenuInfo**](/windows/d
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

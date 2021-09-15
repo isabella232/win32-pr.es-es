@@ -7,11 +7,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 183bc18e55ee157e42fc2b35ef1d0b278e2683f0
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574148"
 ---
 # <a name="appid-appid-key"></a>AppID (clave appID)
 
