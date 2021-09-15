@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d278a6104a6c47d84623b185f78b921d61899f296eeaa557a6c6c6d5344097b6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a68da290ecb04e9cb7ae49c5525997fbf4c112a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119487085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573684"
 ---
 # <a name="setp_comp---ps"></a>setp \_ comp - ps
 
 Establezca el registro del predicado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -35,7 +35,7 @@ Donde:
 
 -   \_comp es una comparación por canal entre los dos registros de origen. Puede tener uno de los valores siguientes: 
 
-    | Syntax | De comparación            |
+    | Sintaxis | De comparación            |
     |--------|-----------------------|
     | \_Gt   | Mayor que          |
     | \_Lt   | Menor que             |
@@ -48,11 +48,11 @@ Donde:
 
      
 
--   dst es el [registro de registro de](dx9-graphics-reference-asm-ps-registers-predicate.md) predicado, p0.
+-   dst es el [registro del registro de](dx9-graphics-reference-asm-ps-registers-predicate.md) predicado, p0.
 -   src0 es un registro de origen.
 -   src1 es un registro de origen.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0102716529471b3e867e17b0e9b635274cdfc28ec603f239d66c76ffb0fdaa19
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2b378cd97bc9779951d62873d393009c98d32823
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119983215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573757"
 ---
 # <a name="register"></a>registro
 
@@ -26,7 +26,7 @@ Palabra clave opcional para asignar una variable de sombreador a un registro det
 
 
 
-| : register ( *\[ shader \_ profile \]*, *Type \# \[ subcomponent \]* ) |
+| : register ( *\[ perfil de \_ sombreador \]*, *tipo \# \[ subcomponente \]* ) |
 |----------------------------------------------------------------|
 
 
@@ -40,14 +40,14 @@ Palabra clave opcional para asignar una variable de sombreador a un registro det
 <span id="register"></span><span id="REGISTER"></span>Registro
 </dt> <dd>
 
-Palabra clave required.
+Palabra clave Required.
 
 </dd> <dt>
 
 <span id="_shader_profile_"></span><span id="_SHADER_PROFILE_"></span>*\[perfil de \_ sombreador\]*
 </dt> <dd>
 
-Perfil [de sombreador opcional,](/windows/desktop/direct3dtools/dx-graphics-tools-fxc-syntax)que puede ser un destino de sombreador o simplemente **ps** o **vs.**
+Perfil [de sombreador opcional,](/windows/desktop/direct3dtools/dx-graphics-tools-fxc-syntax)que puede ser un destino de sombreador o simplemente **ps** o **vs**.
 
 </dd> <dt>
 
@@ -77,15 +77,15 @@ Registre la declaración de tipo, número y subcomponente.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede agregar una o varias asignaciones de registro a la misma declaración de variable, separadas por espacios.
 
-En el caso de las variables de Direct3D 10 en el ámbito global, la palabra clave **register** actúa igual que la palabra clave [packoffset (HlSL de DirectX).](dx-graphics-hlsl-variable-packoffset.md)
+Para las variables de Direct3D 10 en el ámbito global, la palabra clave **register** actúa igual que la palabra clave [packoffset (DirectX HLSL).](dx-graphics-hlsl-variable-packoffset.md)
 
 ## <a name="examples"></a>Ejemplos
 
-Estos son algunos ejemplos:
+A continuación se muestran algunos ejemplos:
 
 
 ```
@@ -110,14 +110,14 @@ sampler myVar : register( ps, s[2] )
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Sintaxis de variables](dx-graphics-hlsl-variable-syntax.md)
 </dt> <dt>
 
-[Variables (HLSL de DirectX)](dx-graphics-hlsl-variables.md)
+[Variables (DirectX HLSL)](dx-graphics-hlsl-variables.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-title: Cargar (objeto de textura HLSL de DirectX)
-description: Lee datos de textura sin ningún filtrado ni muestreo.
+title: Load (objeto de textura HLSL de DirectX)
+description: Lee datos de texel sin ningún filtrado ni muestreo.
 ms.assetid: a2fbda88-29c7-4d28-bd3e-df1d9aa36ee8
 ms.topic: reference
 ms.date: 05/31/2018
@@ -10,15 +10,15 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: 01e8fccbf461befd8016d813098a542a98cdc858
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122887221"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573804"
 ---
-# <a name="load-directx-hlsl-texture-object"></a>Cargar (objeto de textura HLSL de DirectX)
+# <a name="load-directx-hlsl-texture-object"></a>Load (objeto de textura HLSL de DirectX)
 
-Lee datos de textura sin ningún filtrado ni muestreo.
+Lee datos de texel sin ningún filtrado ni muestreo.
 
 
 
@@ -69,7 +69,7 @@ Un [tipo de objeto de](dx-graphics-hlsl-to-type.md) textura (excepto TextureCube
 Por ejemplo, para acceder a una textura 2D, proporcione coordenadas UV para los dos primeros componentes y un nivel de mapa mip para el tercer componente.
 
 > [!Note]  
-> Cuando una o varias de las coordenadas de *Ubicación* superan las dimensiones de nivel mipmap u, v o w de la textura, **Load** devuelve cero en todos los componentes. Direct3D garantiza que se devuelva cero para cualquier recurso al que se acceda fuera de los límites.
+> Cuando una o varias de las coordenadas de *Ubicación* superan las dimensiones de nivel mipmap u, v o w de la textura, **Load** devuelve cero en todos los componentes. Direct3D garantiza devolver cero para cualquier recurso al que se accede fuera de los límites.
 
  
 
@@ -92,7 +92,7 @@ Por ejemplo, para acceder a una textura 2D, proporcione coordenadas UV para los 
  
 
 > [!Note]  
-> *SampleIndex* solo está disponible para texturas de varias muestras.
+> *SampleIndex* solo está disponible para texturas de varios ejemplos.
 
  
 
@@ -101,7 +101,7 @@ Por ejemplo, para acceder a una textura 2D, proporcione coordenadas UV para los 
 <span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span>*Compensar*
 </dt> <dd>
 
-\[en \] Un desplazamiento opcional aplicado a las coordenadas de textura antes del muestreo. El tipo de desplazamiento depende del tipo de objeto de textura y debe ser estático.
+\[en \] Un desplazamiento opcional aplicado a las coordenadas de textura antes del muestreo. El tipo de desplazamiento depende del tipo texture-object y debe ser estático.
 
 
 
@@ -116,7 +116,7 @@ Por ejemplo, para acceder a una textura 2D, proporcione coordenadas UV para los 
  
 
 > [!Note]  
-> Si usa Offset *con* texturas de varias muestras, también debe especificar *SampleIndex*.
+> Si usa *Offset con* texturas de varias muestras, también debe especificar *SampleIndex*.
 
  
 
@@ -124,7 +124,7 @@ Por ejemplo, para acceder a una textura 2D, proporcione coordenadas UV para los 
 
 ## <a name="return-value"></a>Valor devuelto
 
-El tipo de valor devuelto coincide con el tipo de la *declaración object.* Por ejemplo, un objeto Texture2D que se declaró como "Texture2d &lt; uint4 myTexture;" tiene un valor devuelto de &gt; **tipo uint4**.
+El tipo de valor devuelto coincide con el tipo de la *declaración object.* Por ejemplo, un objeto Texture2D declarado como "Texture2d &lt; uint4 myTexture;" tiene un valor devuelto de &gt; **tipo uint4**.
 
 ## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
@@ -140,7 +140,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
  
 
--   El modelo de sombreador 4.1 está disponible en Direct3D 10.1 o superior.
+-   El modelo de sombreador 4.1 está disponible en Direct3D 10.1 o posterior.
 
 ## <a name="example"></a>Ejemplo
 

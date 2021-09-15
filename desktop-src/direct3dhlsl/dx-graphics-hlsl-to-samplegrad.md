@@ -10,17 +10,17 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: 1e315cfc32b10274eee47258360e85543f15311a
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122624101"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573781"
 ---
 # <a name="samplegrad-directx-hlsl-texture-object"></a>SampleGrad (objeto de textura HLSL de DirectX)
 
 Muestrea una textura mediante un degradado para influir en la forma en que se calcula la ubicación de la muestra.
 
-&lt;Tipo de &gt; plantilla Object.SampleGrad( sampler \_ state S, float Location, float DDX, float DDY \[ , int Offset \] );
+&lt;Template Type &gt; Object.SampleGrad( sampler \_ state S, float Location, float DDX, float DDY \[ , int Offset \] );
 
 
 
@@ -56,7 +56,7 @@ Muestrea una textura mediante un degradado para influir en la forma en que se ca
 <table>
 <thead>
 <tr class="header">
-<th>Texture-Object tipo</th>
+<th>Texture-Object type</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -93,7 +93,7 @@ Muestrea una textura mediante un degradado para influir en la forma en que se ca
 <table>
 <thead>
 <tr class="header">
-<th>Texture-Object tipo</th>
+<th>Texture-Object type</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -126,7 +126,7 @@ Muestrea una textura mediante un degradado para influir en la forma en que se ca
 <table>
 <thead>
 <tr class="header">
-<th>Texture-Object tipo</th>
+<th>Texture-Object type</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -154,12 +154,12 @@ Muestrea una textura mediante un degradado para influir en la forma en que se ca
 </tr>
 <tr class="even">
 <td><p><span id="Offset"></span><span id="offset"></span><span id="OFFSET"></span><em>Compensar</em></p></td>
-<td><p>[in] Desplazamiento de coordenadas de textura opcional, que se puede usar para cualquier tipo de objeto de textura. El desplazamiento se aplica a la ubicación antes del muestreo. Use un desplazamiento solo en un valor miplevel entero; De lo contrario, puede obtener resultados que no se traducen bien al hardware. El tipo de argumento depende del tipo texture-object. Para obtener más información,<a href="dx-graphics-hlsl-to-sample.md">vea Aplicar desplazamientos de enteros.</a></p>
+<td><p>[in] Desplazamiento de coordenadas de textura opcional, que se puede usar para cualquier tipo de objeto de textura. El desplazamiento se aplica a la ubicación antes del muestreo. Use un desplazamiento solo en un miplevel entero; De lo contrario, puede obtener resultados que no se traducen bien al hardware. El tipo de argumento depende del tipo texture-object. Para obtener más información,<a href="dx-graphics-hlsl-to-sample.md">vea Aplicar desplazamientos de enteros.</a></p>
 
 <table>
 <thead>
 <tr class="header">
-<th>Texture-Object tipo</th>
+<th>Texture-Object type</th>
 <th>Tipo de parámetro</th>
 </tr>
 </thead>
@@ -198,7 +198,7 @@ Muestrea una textura mediante un degradado para influir en la forma en que se ca
 
 ## <a name="return-value"></a>Valor devuelto
 
-El tipo de plantilla de la textura, que puede ser un vector de uno o varios componentes. El formato se basa en el [**FORMATO DXGI de la \_ textura.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
+El tipo de plantilla de la textura, que puede ser un vector de uno o varios componentes. El formato se basa en EL [**FORMATO DXGI de la \_ textura.**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 ## <a name="minimum-shader-model"></a>Modelo mínimo de sombreador
 
@@ -215,7 +215,7 @@ Esta función se admite en los siguientes modelos de sombreador.
  
 
 1.  TextureCubeArray está disponible en Shader Model 4.1 o superior.
-2.  El modelo de sombreador 4.1 está disponible en Direct3D 10.1 o superior.
+2.  El modelo de sombreador 4.1 está disponible en Direct3D 10.1 o posterior.
 
 ## <a name="example"></a>Ejemplo
 

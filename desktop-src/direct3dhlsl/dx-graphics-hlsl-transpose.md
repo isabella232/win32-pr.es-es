@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e6e545e657e6d9eaded92affba5bbb52a22222db2bf87acd5dddb72335a17ab0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 44f129a87edaff260de87136954be7598ee3acb6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119759"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573777"
 ---
 # <a name="transpose"></a>Transpuesta
 
@@ -49,9 +49,9 @@ Transpone la matriz de entrada especificada.
 
 Valor transpuesto del *parámetro x.*
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si las dimensiones de la matriz de origen son columnas *de* *filas*, la matriz resultante es *filas de* *columnas*.
+Si las dimensiones de la matriz de origen son columnas *de* filas *,* la matriz resultante es filas *de* *columnas*.
 
 ## <a name="type-description"></a>Descripción del tipo
 
@@ -74,13 +74,13 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible |
 |------------------------------------------------------------------------------------|-----------|
-| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) y modelos de sombreador superiores | Sí       |
+| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) y modelos de sombreador superiores | sí       |
 
 
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

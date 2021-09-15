@@ -10,11 +10,11 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: 473a68c44f7e98f1a2d1e1e90711585804482e0d
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122624111"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573805"
 ---
 # <a name="sample-directx-hlsl-texture-object"></a>Ejemplo (objeto de textura HLSL de DirectX)
 
@@ -156,7 +156,7 @@ VS_OUTPUT In;
         Output.RGBColor = g_MeshTexture.Sample(MeshTextureSampler, In.TextureUV) * In.Diffuse;
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El muestreo de textura usa la posición del texel para buscar un valor de texel. Se puede aplicar un desplazamiento a la posición antes de la búsqueda. El estado del muestreador contiene las opciones de muestreo y filtrado. Este método se puede invocar dentro de un sombreador de píxeles, pero no se admite en un sombreador de vértices o un sombreador de geometría.
 

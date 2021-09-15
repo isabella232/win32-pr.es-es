@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: fbfe0ca4785f0f623e95b32dc98193532305116c3d301b2d64a83999094e9a0c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 82150ce0331e3942ec84506b8f74a33236a71a3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118513029"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573789"
 ---
 # <a name="samplecmplevelzero-directx-hlsl-texture-object"></a>SampleCmpLevelZero (objeto de textura HLSL de DirectX)
 

@@ -1,9 +1,9 @@
 ---
 title: Función SampleGrad::SampleGrad(S,float,float,float,int,float) para Texture2D
-description: Muestrea un objeto Texture2D, usando un degradado para influir en la forma en que se calcula la ubicación de la muestra, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra. Para Texture2D.
+description: Muestrea un objeto Texture2D con un degradado para influir en la forma en que se calcula la ubicación de la muestra, con un valor opcional para fijar los valores de nivel de detalle (LOD) de la muestra. Para Texture2D.
 ms.assetid: 1216B02A-4F70-4804-9B04-37E83DFC1CE8
 keywords:
-- Función HLSL de SampleGrad
+- Función SampleGrad HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2b043b04480de5cfa709b31a951afc13d5432a3684e61b4d29f23e7157f13a16
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b309eb9bc0ce7cbd968be81fa05eee91ee577b4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118510584"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573713"
 ---
 # <a name="samplegradsamplegradsfloatfloatfloatintfloat-function-for-texture2d"></a>Función SampleGrad::SampleGrad(S,float,float,float,int,float) para Texture2D
 
@@ -62,7 +62,7 @@ Las coordenadas de textura. El tipo de argumento depende del tipo texture-object
 
 
 
-| Texture-Object type                    | Tipo de parámetro |
+| Texture-Object tipo                    | Tipo de parámetro |
 |----------------------------------------|----------------|
 | Texture1D                              | FLOAT          |
 | Texture1DArray, Texture2D              | float2         |
@@ -84,7 +84,7 @@ Velocidad de cambio de la geometría de la superficie en la dirección x. El tip
 
 
 
-| Texture-Object type                      | Tipo de parámetro |
+| Texture-Object tipo                      | Tipo de parámetro |
 |------------------------------------------|----------------|
 | Texture1D, Texture1DArray                | FLOAT          |
 | Texture2D, Texture2DArray                | float2         |
@@ -106,7 +106,7 @@ Velocidad de cambio de la geometría de la superficie en la dirección y. El tip
 
 
 
-| Texture-Object type                      | Tipo de parámetro |
+| Texture-Object tipo                      | Tipo de parámetro |
 |------------------------------------------|----------------|
 | Texture1D, Texture1DArray                | FLOAT          |
 | Texture2D, Texture2DArray                | float2         |
@@ -124,11 +124,11 @@ Velocidad de cambio de la geometría de la superficie en la dirección y. El tip
 
 Tipo: **int**
 
-Desplazamiento de coordenadas de textura opcional, que se puede usar para cualquier tipo de objeto de textura; el desplazamiento se aplica a la ubicación antes del muestreo. Use un desplazamiento solo en un miplevel entero; De lo contrario, puede obtener resultados que no se traducen bien al hardware. El tipo de argumento depende del tipo texture-object. Para obtener más información, [vea Aplicar desplazamientos de enteros.](dx-graphics-hlsl-to-sample.md)
+Desplazamiento de coordenadas de textura opcional, que se puede usar para cualquier tipo de objeto de textura; el desplazamiento se aplica a la ubicación antes del muestreo. Use un desplazamiento solo en un valor miplevel entero; De lo contrario, puede obtener resultados que no se traducen bien al hardware. El tipo de argumento depende del tipo texture-object. Para obtener más información, [vea Aplicar desplazamientos de enteros.](dx-graphics-hlsl-to-sample.md)
 
 
 
-| Texture-Object type           | Tipo de parámetro |
+| Texture-Object tipo           | Tipo de parámetro |
 |-------------------------------|----------------|
 | Texture1D, Texture1DArray     | int            |
 | Texture2D, Texture2DArray     | int2           |
@@ -146,7 +146,7 @@ Desplazamiento de coordenadas de textura opcional, que se puede usar para cualqu
 
 Tipo: **float**
 
-Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pasa 2,0f para el valor de la fijación, asegúrese de que ninguna muestra individual acceda a un nivel de mip inferior a 2,0f.
+Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pasa 2,0f para el valor de fijación, asegúrese de que ninguna muestra individual tiene acceso a un nivel de mip inferior a 2,0f.
 
 </dd> </dl>
 
@@ -154,7 +154,7 @@ Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pa
 
 Tipo: **[ **DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-El formato de textura, que es uno de los valores con tipo enumerados en [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+Formato de textura, que es uno de los valores con tipo enumerados [**en DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
 ## <a name="see-also"></a>Consulte también
 

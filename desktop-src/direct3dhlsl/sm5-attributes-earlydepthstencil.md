@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ed108d4f8e9d8d719d36fc859d5cc01a2317db4756bfbc6b0a548b669d9ca025
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a7dd8507986970f2066538cc00b53af08807910e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118986175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573648"
 ---
 # <a name="earlydepthstencil"></a>earlydepthstencil
 
@@ -27,17 +27,17 @@ earlydepthstencil
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las pruebas de galería de símbolos de profundidad se realizan normalmente durante el procesamiento de píxeles mediante un sombreador de píxeles. Al forzar las primeras pruebas de galería de símbolos de profundidad, las pruebas se realizan antes de la ejecución del sombreador. el propósito es mejorar el rendimiento por píxel mediante la selección, reducción y evitación del procesamiento innecesario de píxeles.
+Las pruebas de galería de símbolos de profundidad se realizan normalmente durante el procesamiento de píxeles mediante un sombreador de píxeles. Al forzar las primeras pruebas de galería de símbolos de profundidad, las pruebas se realizan antes de la ejecución del sombreador. el propósito es mejorar el rendimiento por píxel mediante la selección, reducción y evitación de un procesamiento de píxeles innecesario.
 
-Una aplicación puede forzar las primeras pruebas de galería de símbolos de profundidad al proporcionar el atributo o el hardware puede ejecutar pruebas tempranas de galería de símbolos de profundidad siempre que no se escriban valores de profundidad y no se realice ninguna operación de acceso desordenado en un sombreador como una optimización.
+Una aplicación puede forzar las primeras pruebas de galería de símbolos de profundidad al proporcionar el atributo o el hardware puede ejecutar pruebas tempranas de galería de símbolos de profundidad siempre que no se escriban valores de profundidad y no se realice ninguna operación de acceso desordenada en un sombreador como una optimización.
 
 Este atributo se admite en los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     |         |
 
@@ -52,7 +52,7 @@ Este atributo se admite en los siguientes tipos de sombreadores:
 [Atributos del modelo de sombreador 5](d3d11-graphics-reference-sm5-attributes.md)
 </dt> <dt>
 
-[Shader Model 5](d3d11-graphics-reference-sm5.md)
+[Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-title: sincos- ps
-description: Calcula el seno y el coseno, en radianes. | sincos- ps
+title: 'sincos: ps'
+description: 'Calcula el seno y el coseno, en radianes. | sincos: ps'
 ms.assetid: 639237ea-1b7a-4959-9093-78f134c11863
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 95f61c3a1cfc15f699e0e637dce8d58b9517ffe58ef36e529ec297661bff6a3c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1e7ccdca91af206862384ae14cf25a85d0817814
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119671575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573653"
 ---
-# <a name="sincos---ps"></a>sincos- ps
+# <a name="sincos---ps"></a>sincos: ps
 
 Calcula el seno y el coseno, en radianes.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ### <a name="ps_2_0-and-ps_2_x"></a>ps \_ 2 \_ 0 y ps \_ 2 \_ x
 
@@ -36,8 +36,8 @@ Calcula el seno y el coseno, en radianes.
 Donde:
 
 -   dst es el registro de destino y debe ser [un registro temporal](dx9-graphics-reference-asm-ps-registers-temporary.md) (r \# ). El registro de destino debe tener exactamente una de las tres máscaras siguientes: .x \| .y \| .xy.
--   src0 es un registro de origen que proporciona el ángulo de entrada, que debe estar dentro \[ de -pi, +pi \] . {x \| y \| z \| w} es el swzzle de replicación necesario.
--   src1 y src2 son registros de origen y deben ser dos [registros flotantes](dx9-graphics-reference-asm-ps-registers-constant-float.md)constantes diferentes (c \# ). Los valores de src1 y src2 deben ser los de las macros [**D3DSINCOSCONST1**](/windows/desktop/direct3d9/d3dsincosconst1) y [**D3DSINCOSCONST2,**](/windows/desktop/direct3d9/d3dsincosconst2) respectivamente.
+-   src0 es un registro de origen que proporciona el ángulo de entrada, que debe estar dentro \[ de -pi, +pi \] . {x \| y \| z \| w} es la réplica necesaria swpliquen.
+-   src1 y src2 son registros de origen y deben ser dos [registros flotantes constantes](dx9-graphics-reference-asm-ps-registers-constant-float.md)diferentes (c \# ). Los valores de src1 y src2 deben ser los de las macros [**D3DSINCOSCONST1**](/windows/desktop/direct3d9/d3dsincosconst1) y [**D3DSINCOSCONST2,**](/windows/desktop/direct3d9/d3dsincosconst2) respectivamente.
 
 ### <a name="ps_3_0"></a>ps \_ 3 \_ 0
 
@@ -53,9 +53,9 @@ Donde:
 Donde:
 
 -   dst es un registro de destino y debe ser [un registro temporal](dx9-graphics-reference-asm-ps-registers-temporary.md) (r \# ). El registro de destino debe tener exactamente una de las tres máscaras siguientes: .x \| .y \| .xy.
--   src0 es un registro de origen que proporciona el ángulo de entrada, que debe estar dentro \[ de -pi, +pi \] . {x \| y \| z \| w} es el swzzle de replicación necesario.
+-   src0 es un registro de origen que proporciona el ángulo de entrada, que debe estar dentro \[ de -pi, +pi \] . {x \| y \| z \| w} es la réplica necesaria swpliquen.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 
@@ -69,9 +69,9 @@ Donde:
 
 ### <a name="ps_2_0-and-ps_2_x"></a>ps \_ 2 \_ 0 y ps \_ 2 \_ x
 
-Para ps 2 0 y ps 2 x, se pueden usar sincos con predicado, pero con una restricción para el swzzle del registro de predicado (p0): solo se permite replicar \_ \_ \_ \_ swzzle (.x [](dx9-graphics-reference-asm-ps-registers-predicate.md) \| \| .y .z \| .w).
+Para ps 2 0 y ps 2 x, los sincos se pueden usar con predicado, pero con una restricción para el swzzle del registro de predicado (p0): solo se permite replicar \_ \_ \_ \_ swique (.x [](dx9-graphics-reference-asm-ps-registers-predicate.md) \| \| .y .z \| .w).
 
-Para ps 2 0 y ps 2 x, la instrucción funciona de la siguiente manera (V = el valor escalar de \_ \_ \_ src0 con un \_ swzzle de replicación):
+Para ps 2 0 y ps 2 x, la instrucción funciona de la siguiente manera (V = el valor escalar de src0 con un sw \_ \_ hoja de \_ \_ replicación):
 
 -   Si la máscara de escritura es .x:
     ```
@@ -107,7 +107,7 @@ Para ps 2 0 y ps 2 x, la instrucción funciona de la siguiente manera (V = el va
 
 Para ps \_ 3 \_ 0, sincos se puede usar con predicado sin ninguna restricción. Vea [Predicate Register](dx9-graphics-reference-asm-ps-registers-predicate.md).
 
-Para ps 3 0, la instrucción funciona de la siguiente manera (V = el valor escalar de \_ \_ src0 con un swzzle de replicación):
+Para ps 3 0, la instrucción funciona de la siguiente manera (V = el valor escalar de \_ \_ src0 con un swlino de replicación):
 
 -   Si la máscara de escritura es .x:
     ```
@@ -139,7 +139,7 @@ Para ps 3 0, la instrucción funciona de la siguiente manera (V = el valor escal
 
     
 
-La aplicación puede asignar un ángulo arbitrario (en radianes) al intervalo \[ -pi, +pi mediante \] el pseudocódigo de sombreador siguiente:
+La aplicación puede asignar un ángulo arbitrario (en radianes) al intervalo \[ -pi, +pi mediante el \] siguiente pseudocódigo de sombreador:
 
 
 ```

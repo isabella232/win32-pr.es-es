@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 899284777f86c3a1e5d77da9a2f21ed9aa4b5368b540082cc92bd56b7fb780da
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2d87c791694e91de135052b4172e3bd5f55577d7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119788645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573673"
 ---
 # <a name="shader-model-3-hlsl-reference"></a>Modelo de sombreador 3 (referencia hlsl)
 
@@ -42,9 +42,9 @@ El modelo de sombreador de \_ vértices 3 0 (frente a 3 0) se expande en las car
 
 Todos los registros [(registros de](dx9-graphics-reference-asm-vs-registers-input.md) entrada y de [salida)](dx9-graphics-reference-asm-vs-registers-output.md)se pueden indexar mediante el registro de contadores de [bucles](dx9-graphics-reference-asm-vs-registers-loop-counter.md) (solo los registros constantes se podían indexar en versiones anteriores).
 
-Debe declarar los registros de entrada y salida antes de indexarlos. Sin embargo, no puede indexar ningún registro de salida que se haya declarado con una semántica de tamaño de punto o posición. De hecho, si se usa la indexación, la semántica de la posición y el tamaño psize deben declararse en los registros o0 y o1, respectivamente.
+Debe declarar los registros de entrada y salida antes de indexarlos. Sin embargo, no puede indexar ningún registro de salida que se haya declarado con una semántica de posición o tamaño de punto. De hecho, si se usa la indexación, la semántica de la posición y el tamaño psize deben declararse en los registros o0 y o1, respectivamente.
 
-Solo puede indexar un intervalo continuo de registros. es decir, no se puede indexar entre registros que no se han declarado. Aunque esta restricción puede resultar inconveniente, permite que se lleve a cabo la optimización del hardware. Si se intenta indexar entre registros no contiguos, se producirán resultados no definidos. La validación del sombreador no aplica esta restricción.
+Solo puede indexar un intervalo continuo de registros. es decir, no se puede indexar entre registros que no se han declarado. Aunque esta restricción puede ser inconveniente, permite que se lleve a cabo la optimización del hardware. Si se intenta indexar entre registros no contiguos, se producirán resultados no definidos. La validación del sombreador no aplica esta restricción.
 
 ### <a name="simplify-output-registers"></a>Simplificación de los registros de salida
 
@@ -64,7 +64,7 @@ El sombreador de \_ vértices 3 0 admite la búsqueda de textura en el sombreado
 
 ## <a name="pixel-shader-model-3-features"></a>Características del modelo 3 del sombreador de píxeles
 
-El color del sombreador de píxeles y los registros de textura se han contraído en diez registros de entrada (vea [Tipos de registro de entrada).](dx9-graphics-reference-asm-ps-registers-ps-3-0.md) Face Register es un registro escalar de punto flotante. Solo el signo de este registro es válido. Si el signo es negativo, la primitiva es una cara posterior. Esto se puede usar dentro de un sombreador de píxeles para lograr una iluminación de dos lados, por ejemplo. El registro de posición hace referencia a los píxeles actuales (x,y).
+El color del sombreador de píxeles y los registros de textura se han contraído en diez registros de entrada (vea [Input Register Types](dx9-graphics-reference-asm-ps-registers-ps-3-0.md)). Face Register es un registro escalar de punto flotante. Solo el signo de este registro es válido. Si el signo es negativo, la primitiva es una cara posterior. Esto se puede usar dentro de un sombreador de píxeles para lograr una iluminación de dos lados, por ejemplo. El registro de posición hace referencia a los píxeles actuales (x,y).
 
 Los registros constantes del sombreador se pueden establecer mediante:
 
@@ -167,7 +167,7 @@ dcl_texcoord3 o9
 
 ## <a name="fog-depth-and-shading-mode-changes"></a>Cambios en el modo de sombreado, profundidad y profundidad
 
-Cuando D3DRS SHADEMODE se establece para sombreado plano durante el recorte y la rasterización de triángulos, los atributos con \_ color D3DDECLUSAGE se interpolan como \_ sombreado plano. Si algún componente de un registro se declara con una semántica de color pero a otros componentes del mismo registro se les da una semántica diferente, la interpolación de sombreado plano (lineal frente a plana) no se definirá en los componentes de ese registro sin una semántica de color.
+Cuando D3DRS SHADEMODE se establece para sombreado plano durante el recorte y la rasterización de triángulos, los atributos con \_ color D3DDECLUSAGE se interpolan como \_ sombreado plano. Si algún componente de un registro se declara con una semántica de color, pero a otros componentes del mismo registro se les da una semántica diferente, la interpolación de sombreado plano (lineal frente a plana) no se definirá en los componentes de ese registro sin una semántica de color.
 
 Si se desea la representación en forma de nube, frente a \_ 3 \_ 0 y ps \_ 3 \_ 0, los sombreadores deben implementar el sombreador. No se realizan cálculos de cálculo fuera de los sombreadores. No hay ningún registro en comparación con 3 0, y se han agregado semánticas adicionales D3DDECLUSAGE PHP (para el factor de fusión calculado por vértice) y \_ \_ \_ D3DDECLUSAGE \_ DEPTH (para pasar un valor de profundidad al sombreador de píxeles para calcular el factor de fusión).
 
@@ -210,7 +210,7 @@ Tanto ps \_ 3 \_ 0 como ps \_ 2 \_ x proporcionan compatibilidad con dos niveles
 
 
 
-| ps \_ 3 \_ 0 | ps \_ 2 \_ 0 | Precisión         | Valor                |
+| ps \_ 3 \_ 0 | ps \_ 2 \_ 0 | Precisión         | Value                |
 |----------|----------|-------------------|----------------------|
 | x        |          | Completo              | fp32 o superior       |
 | x        |          | Precisión parcial | fp16=s10e5           |
@@ -223,38 +223,38 @@ Tanto ps \_ 3 \_ 0 como ps \_ 2 \_ x proporcionan compatibilidad con dos niveles
 
 ps \_ 3 \_ 0 admite más precisión que ps \_ 2 \_ 0. De forma predeterminada, todas las operaciones se producen en el nivel de precisión completa.
 
-La precisión parcial (vea Modificadores de registro [de sombreador](dx9-graphics-reference-asm-ps-registers-modifiers.md)de píxeles) se solicita agregando el modificador pp al código del \_ sombreador (siempre que la implementación subyacente lo admita). Las implementaciones siempre pueden omitir el modificador y realizar las operaciones afectadas con precisión completa.
+La precisión parcial (vea [Modificadores de](dx9-graphics-reference-asm-ps-registers-modifiers.md)registro del sombreador de píxeles) se solicita agregando el modificador pp al código del sombreador (siempre que la \_ implementación subyacente lo admita). Las implementaciones siempre son libres de omitir el modificador y realizar las operaciones afectadas con precisión completa.
 
 El \_ modificador pp puede producirse en dos contextos:
 
--   En una declaración de coordenadas de textura para pasar coordenadas de textura de precisión parcial al sombreador de píxeles. Esto se puede usar cuando la textura coordina los datos de color de retransmisión al sombreador de píxeles, que puede ser más rápido con precisión parcial que con precisión completa en algunas implementaciones.
+-   En una declaración de coordenada de textura para pasar coordenadas de textura de precisión parcial al sombreador de píxeles. Esto se puede usar cuando la textura coordina los datos de color de retransmisión al sombreador de píxeles, que puede ser más rápido con precisión parcial que con precisión completa en algunas implementaciones.
 -   En cualquier instrucción para solicitar el uso de precisión parcial, incluidas las instrucciones de carga de textura. Esto indica que la implementación puede ejecutar la instrucción con precisión parcial y almacenar un resultado de precisión parcial. En ausencia de un modificador explícito, la instrucción debe realizarse con precisión completa (independientemente de la precisión de los operandos de entrada).
 
 Una aplicación podría elegir deliberadamente cambiar la precisión por el rendimiento. Hay varios tipos de datos de entrada de sombreador que son candidatos naturales para el procesamiento de precisión parcial:
 
 -   Los iteradores de color están bien representados por valores de precisión parcial.
 -   Los valores de textura de la mayoría de los formatos se pueden representar con precisión mediante valores de precisión parcial (los valores muestreados de texturas de formato de punto flotante de 32 bits son una excepción obvia).
--   Las constantes se pueden representar mediante una representación de precisión parcial según corresponda al sombreador.
+-   Las constantes se pueden representar mediante una representación de precisión parcial según corresponda para el sombreador.
 
-En todos estos casos, el desarrollador puede optar por especificar una precisión parcial para procesar los datos, sabiendo que no se pierde ninguna precisión de datos de entrada. En algunos casos, un sombreador puede requerir que los pasos internos de un cálculo se realicen con precisión completa, incluso cuando los valores de entrada y salida final no tengan una precisión mayor que parcial.
+En todos estos casos, el desarrollador puede optar por especificar una precisión parcial para procesar los datos, sabiendo que no se pierde ninguna precisión de datos de entrada. En algunos casos, un sombreador puede requerir que los pasos internos de un cálculo se realicen con precisión completa, incluso cuando los valores de entrada y salida final no tengan más de precisión parcial.
 
 ## <a name="software-vertex-and-pixel-shaders"></a>Sombreadores de vértices y píxeles de software
 
-Las implementaciones de software (en tiempo de ejecución y referencia para sombreadores de vértices y referencia para sombreadores de píxeles) de sombreadores de la versión 2 0 y posteriores tienen cierta validación \_ relajada. Esto es útil para fines de depuración y creación de prototipos. La aplicación indica al runtime o ensamblador que necesita parte de la validación relajada mediante la marca sw en el \_ ensamblador (por ejemplo, frente \_ a 2 \_ sw). Un sombreador de software no funcionará con hardware.
+Las implementaciones de software (en tiempo de ejecución y referencia para sombreadores de vértices y referencia para sombreadores de píxeles) de los sombreadores de la versión 2 0 y posteriores tienen cierta validación \_ relajada. Esto es útil para fines de depuración y creación de prototipos. La aplicación indica al runtime o ensamblador que necesita parte de la validación relajada mediante la marca sw en el \_ ensamblador (por ejemplo, frente a \_ 2 \_ sw). Un sombreador de software no funcionará con hardware.
 
-vs 2 sw es una relajación para los límites máximos de frente a 2 x; de forma similar, ps 2 sw es una relajación a los \_ \_ límites máximos de ps \_ \_ \_ \_ \_ 2 \_ x. En concreto, las validaciones siguientes son relajadas:
+vs 2 sw es una relajación a los límites máximos de frente a 2 x; de forma similar, ps 2 sw es una relajación hasta los \_ \_ límites máximos de ps \_ \_ \_ \_ \_ 2 \_ x. En concreto, las validaciones siguientes son relajadas:
 
 
 
 | Modelo de sombreador                                           |  Recurso                                    |  Límite                                                                                                                                  |
 |--------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Recuentos de instrucciones                   | ilimitadas                                                                                                                         |
+| vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Recuentos de instrucciones                   | Sin límite                                                                                                                         |
 | vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Registros de constantes float             | 8192                                                                                                                              |
 | vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Registros constantes enteros           | 2048                                                                                                                              |
 | vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Registros de constantes booleanos           | 2048                                                                                                                              |
-| ps \_ 2 \_ sw                                  | Profundidad de lectura dependiente                 | ilimitadas                                                                                                                         |
-| vs \_ 2 \_ sw                                  | instrucciones y etiquetas de control de flujo | ilimitadas                                                                                                                         |
-| vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Bucle start/step/counts               | El tamaño del paso de inicio e iteración de iteración para las instrucciones de repetición y bucle son enteros de 32 bits con signo. El recuento puede ser de hasta MAX \_ INT/64. |
+| ps \_ 2 \_ sw                                  | Profundidad de lectura dependiente                 | Sin límite                                                                                                                         |
+| vs \_ 2 \_ sw                                  | etiquetas y instrucciones de control de flujo | Sin límite                                                                                                                         |
+| vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Inicio,paso/recuentos de bucles               | El tamaño del paso de inicio e iteración de iteración para las instrucciones de repetición y bucle son enteros de 32 bits con signo. El recuento puede ser de hasta MAX \_ INT/64. |
 | vs \_ 2 \_ sw, vs \_ 3 \_ sw, ps \_ 2 \_ sw, ps \_ 3 \_ sw | Límites de puerto                          | Los límites de puerto para todos los archivos de registro son relajadas.                                                                                   |
 | vs \_ 3 \_ sw                                  | Número de interpoladores              | 16 registros de salida en vs \_ 3 \_ sw.                                                                                                 |
 | ps \_ 3 \_ sw                                  | Número de interpoladores              | 14 (16-2) registros de entrada para ps \_ 3 \_ sw.                                                                                           |

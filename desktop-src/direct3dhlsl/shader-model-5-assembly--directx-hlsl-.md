@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8d62936d1b5dd1372e978ed1f5aa4104b44422b574bb8ee364cb7a92e11ffd7c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64e84cc84741a524bc6592980c5c2aba82f8be74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119981515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573657"
 ---
 # <a name="shader-model-5-assembly"></a>Ensamblado del modelo de sombreador 5
 
@@ -232,7 +232,7 @@ En esta sección se describen las instrucciones admitidas por Shader Model 5.
 
 <dl> <dt>
 
-[Referencia del sombreador asm](dx9-graphics-reference-asm.md)
+[Referencia de sombreador de Asm](dx9-graphics-reference-asm.md)
 </dt> </dl>
 
  
