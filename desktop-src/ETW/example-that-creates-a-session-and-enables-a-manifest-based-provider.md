@@ -1,17 +1,17 @@
 ---
 description: En el ejemplo siguiente se muestra cómo iniciar una sesión de seguimiento, habilitar un proveedor basado en manifiestos o clásico, deshabilitar el proveedor y, a continuación, detiene la sesión.
 ms.assetid: 13c83b62-9235-4101-82a9-a118e6ece3d5
-title: Ejemplo en el que se crea una sesión y se habilita un proveedor clásico o basado en manifiestos
+title: Ejemplo que crea una sesión y habilita un proveedor clásico o basado en manifiestos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b660daf969db71e9d4c6f7f9d7b5afaeb32737f1575923663df678d88b14cde1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d407bc1570e154dca99784c24a93911fe55409f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117814612"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476924"
 ---
-# <a name="example-that-creates-a-session-and-enables-a-manifest-based-or-classic-provider"></a>Ejemplo en el que se crea una sesión y se habilita un proveedor clásico o basado en manifiestos
+# <a name="example-that-creates-a-session-and-enables-a-manifest-based-or-classic-provider"></a>Ejemplo que crea una sesión y habilita un proveedor clásico o basado en manifiestos
 
 En el ejemplo siguiente se muestra cómo iniciar una sesión de seguimiento, habilitar un proveedor basado en manifiestos o clásico, deshabilitar el proveedor y, a continuación, detiene la sesión.
 

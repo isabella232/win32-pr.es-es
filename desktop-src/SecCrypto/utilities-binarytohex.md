@@ -1,7 +1,7 @@
 ---
-description: Convierte una cadena empaquetada en binaria en una cadena hexadecimal.
+description: Convierte una cadena empaquetada binariamente en una cadena hexadecimal.
 ms.assetid: fead5950-3494-4869-ae5b-0394b73c5ba4
-title: Utilities. BinaryToHex (método)
+title: Método Utilities.BinaryToHex
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - Capicom.dll
 ms.openlocfilehash: 2b592148fdb094d3c44d944bc482504309f309fa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690372"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127477641"
 ---
-# <a name="utilitiesbinarytohex-method"></a>Utilities. BinaryToHex (método)
+# <a name="utilitiesbinarytohex-method"></a>Método Utilities.BinaryToHex
 
-\[El método **BinaryToHex** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos.\]
+\[El **método BinaryToHex** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos.\]
 
-El método **BinaryToHex** convierte una cadena empaquetada en binaria en una cadena hexadecimal.
+El **método BinaryToHex** convierte una cadena empaquetada binariamente en una cadena hexadecimal.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,7 +41,7 @@ Utilities.BinaryToHex( _
 
 <dl> <dt>
 
-*BinaryString* \[ de\]
+*BinaryString* \[ En\]
 </dt> <dd>
 
 Cadena empaquetada binaria que se va a convertir en una cadena hexadecimal.
@@ -50,7 +50,7 @@ Cadena empaquetada binaria que se va a convertir en una cadena hexadecimal.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Cadena hexadecimal que es equivalente a la cadena empaquetada binaria especificada.
+Cadena hexadecimal equivalente a la cadena empaquetada binaria especificada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,7 +58,7 @@ Cadena hexadecimal que es equivalente a la cadena empaquetada binaria especifica
 
 | Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

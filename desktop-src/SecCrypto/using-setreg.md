@@ -4,18 +4,18 @@ ms.assetid: c34c00fe-da99-4c2e-9e9a-0ef6406ae5ae
 title: Uso de SetReg
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e0de37d236b978217d8c2a713e9595fbaad70afb69beb32cd0f5200738d2d8e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 706463f86d38a03bc3416713be7427df55424d09
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118896742"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127477656"
 ---
 # <a name="using-setreg"></a>Uso de SetReg
 
 La herramienta SetReg establece el valor de las claves del Registro que controlan el comportamiento del proceso de comprobación del certificado Authenticode. Estas claves, denominadas claves de estado de publicación de software, controlan si confiar en una raíz de prueba, permiten la aprobación sin conexión de certificados, prueban las fechas de expiración del certificado y realizan comprobaciones de revocación.
 
-El comando siguiente muestra la sintaxis y las opciones para usar SetReg.
+El siguiente comando enumera la sintaxis y las opciones para usar SetReg.
 
 **setreg -?**
 

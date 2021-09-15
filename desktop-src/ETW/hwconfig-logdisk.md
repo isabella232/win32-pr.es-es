@@ -16,12 +16,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 01d200fc5c34546c96f6a78fd55548e8d5a7b0dacf74d46c411174beb66f6f4a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dce4faed913d01f76ff23177b2dad42ea74e5c08
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118394809"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476899"
 ---
 # <a name="hwconfig_logdisk-class"></a>HWConfig \_ LogDisk (clase)
 
@@ -42,7 +42,7 @@ class HWConfig_LogDisk : HWConfig
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase HWConfig \_ LogDisk** tiene estos tipos de miembros:
 
@@ -122,14 +122,14 @@ Desplazamiento inicial (en bytes) de la partición desde el principio del disco.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                   |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -7,28 +7,28 @@ keywords:
 - Clase de ventana MCIWnd, mensajes
 - Ventana de MCIWnd, mensajes
 - Referencia de MCIWnd, mensajes
-- Mensajes MCIWnd
+- Mensajes de MCIWnd
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: fad9bb2d1e1dc44aab6d30e2c66a9dffbaf5a9f9
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124372368"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476833"
 ---
 # <a name="mciwnd-messages"></a>Mensajes MCIWnd
 
 Los mensajes siguientes se usan con MCIWnd.
 
--   [**MCIWNDM \_ PUEDE \_ CONFIGURAR**](mciwndm-can-config.md)
+-   [**MCIWNDM \_ CAN \_ CONFIG**](mciwndm-can-config.md)
 -   [**MCIWNDM \_ PUEDE \_ EXPULSAR**](mciwndm-can-eject.md)
 -   [**MCIWNDM \_ PUEDE \_ REPRODUCIR**](mciwndm-can-play.md)
--   [**MCIWNDM \_ PUEDE \_ GRABAR**](mciwndm-can-record.md)
+-   [**MCIWNDM \_ PUEDE \_ REGISTRAR**](mciwndm-can-record.md)
 -   [**MCIWNDM \_ PUEDE \_ GUARDAR**](mciwndm-can-save.md)
--   [**VENTANA DE LA PUEDE \_ MCIWNDM \_**](mciwndm-can-window.md)
+-   [**VENTANA DE LA PUEDE \_ DE MCIWNDM \_**](mciwndm-can-window.md)
 -   [**MCIWNDM \_ CHANGESTYLES**](mciwndm-changestyles.md)
--   [**EXPULSIÓN DE \_ MCIWNDM**](mciwndm-eject.md)
+-   [**EXPULSIÓN DE MCIWNDM \_**](mciwndm-eject.md)
 -   [**MCIWNDM \_ GETACTIVETIMER**](mciwndm-getactivetimer.md)
 -   [**MCIWNDM \_ GETALIAS**](mciwndm-getalias.md)
 -   [**MCIWNDM \_ GET \_ DEST**](mciwndm-get-dest.md)
@@ -37,7 +37,7 @@ Los mensajes siguientes se usan con MCIWnd.
 -   [**MCIWNDM \_ GETEND**](mciwndm-getend.md)
 -   [**MCIWNDM \_ GETERROR**](mciwndm-geterror.md)
 -   [**MCIWNDM \_ GETFILENAME**](mciwndm-getfilename.md)
--   [**MCIWNDM \_ GETCIÓNTIMER**](mciwndm-getinactivetimer.md)
+-   [**MCIWNDM \_ GETINACTIVETIMER**](mciwndm-getinactivetimer.md)
 -   [**MCIWNDM \_ GETLENGTH**](mciwndm-getlength.md)
 -   [**MCIWNDM \_ GETMODE**](mciwndm-getmode.md)
 -   [**MCIWNDM \_ GETPALETTE**](mciwndm-getpalette.md)
@@ -67,7 +67,7 @@ Los mensajes siguientes se usan con MCIWnd.
 -   [**MCIWNDM \_ RETURNSTRING**](mciwndm-returnstring.md)
 -   [**MCIWNDM \_ SENDSTRING**](mciwndm-sendstring.md)
 -   [**MCIWNDM \_ SETACTIVETIMER**](mciwndm-setactivetimer.md)
--   [**MCIWNDM \_ SETCIÓNTIMER**](mciwndm-setinactivetimer.md)
+-   [**MCIWNDM \_ SETINACTIVETIMER**](mciwndm-setinactivetimer.md)
 -   [**MCIWNDM \_ SETOWNER**](mciwndm-setowner.md)
 -   [**MCIWNDM \_ SETPALETTE**](mciwndm-setpalette.md)
 -   [**MCIWNDM \_ SETREPEAT**](mciwndm-setrepeat.md)

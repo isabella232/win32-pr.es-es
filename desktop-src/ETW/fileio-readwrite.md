@@ -19,12 +19,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: d265bd5927f8d8b433c1a489886c6f651a595670e4c61c1073481d47601efc40
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c684444ea35efe0fee9c38b15be8fe7e45e9a102
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120041955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476916"
 ---
 # <a name="fileio_readwrite-class"></a>Clase FileIo \_ ReadWrite
 
@@ -48,7 +48,7 @@ class FileIo_ReadWrite : FileIo
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase FileIo \_ ReadWrite** tiene estos tipos de miembros:
 
@@ -88,7 +88,7 @@ Tipo de acceso: solo lectura
 Calificadores: WmiDataId(4), Pointer
 </dt> </dl>
 
-Identificador que se puede usar para correlacionar las operaciones con la misma instancia de objeto de archivo abierta entre eventos de creación y cierre de archivos.
+Identificador que se puede usar para correlacionar las operaciones con la misma instancia de objeto de archivo abierta entre los eventos de creación y cierre de archivos.
 
 </dd> <dt>
 

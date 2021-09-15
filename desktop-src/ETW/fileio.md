@@ -1,5 +1,5 @@
 ---
-description: 'Clase FileIo: esta clase es la clase primaria para los eventos de E/S de archivos. La sintaxis siguiente se simplifica a partir del código MOF.'
+description: 'Clase FileIo: esta clase es la clase primaria para los eventos de E/S de archivo. La sintaxis siguiente se simplifica a partir del código MOF.'
 ms.assetid: 8e006a63-a061-4b62-8f90-b8c8823bb047
 title: Clase FileIo
 ms.topic: reference
@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: df82479b2bb2f82f93d83a655b4e5cd45003b0d6b211be24086365f139219ad6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 716528902a115e23eae5b49ef572b87a71d11e25
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120041875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476901"
 ---
 # <a name="fileio-class"></a>Clase FileIo
 
@@ -34,11 +34,11 @@ class FileIo : MSNT_SystemTrace
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase FileIo** no define ningún miembro.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para habilitar los eventos de E/S de archivo en una sesión de registro del kernel de NT, especifique la marca **EVENT TRACE FLAG DISK FILE \_ \_ \_ \_ \_ IO** en el miembro **EnableFlags** de una estructura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) al llamar a la [**función StartTrace.**](/windows/win32/api/evntrace/nf-evntrace-starttracea) También puede especificar una o varias de las marcas siguientes:
 

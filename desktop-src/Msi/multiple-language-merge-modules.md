@@ -4,18 +4,18 @@ ms.assetid: b3a0b635-49c7-4f95-b31f-6c8688466dd2
 title: Módulos de combinación de varios idiomas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 17f32d219e1071cd431117919d3eb3f3361d30213f59a26f9ec2cdf2e81e591b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d414cce484022bf81647110ac032d0db270d383
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118943426"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476878"
 ---
 # <a name="multiple-language-merge-modules"></a>Módulos de combinación de varios idiomas
 
-Varios módulos de lenguaje pueden entregar componentes con varios idiomas diferentes como un único archivo compuesto. El diseño y la funcionalidad de varios módulos de combinación de lenguajes es similar a los módulos de lenguaje único. Un módulo de combinación de varios idiomas tiene más de un idioma enumerado en la [**propiedad Resumen de**](template-summary.md) plantilla. La base de datos de un módulo de combinación de varios idiomas contiene toda la información de configuración de varios idiomas. El MergeModule.CABde conjunto de cambios dentro de un módulo de combinación de varios idiomas contiene todos los archivos de todos los idiomas admitidos.
+Varios módulos de lenguaje pueden entregar componentes con varios idiomas diferentes como un único archivo compuesto. El diseño y la funcionalidad de varios módulos de combinación de lenguajes es similar a los módulos de lenguaje único. Un módulo de combinación de varios idiomas tiene más de un idioma enumerado en la [**propiedad Resumen de**](template-summary.md) plantilla. La base de datos de un módulo de combinación de varios idiomas contiene toda la información de configuración de varios idiomas. El archivador MergeModule.CABinet dentro de un módulo de combinación de varios idiomas contiene todos los archivos de todos los idiomas admitidos.
 
-Al aplicar un archivo .msm de varios idiomas a un archivo .msi, debe indicar el idioma final del paquete de instalación después de la combinación. En el caso de un módulo de combinación [](file-table.md) de lenguaje único, la tabla Archivo del módulo de mezcla muestra todos los archivos presentes en el MergeModule.CABde conjunto de cambios. En el caso de un módulo de combinación de varios idiomas, MergeModule.CABinet contiene todos los archivos para cada idioma admitido por el módulo, pero solo el subconjunto de archivos para el idioma final entra en la tabla File del módulo. La herramienta de combinación debe asegurarse de que el módulo proporciona el subconjunto de información y archivos necesarios para el idioma final solicitado.
+Al aplicar un archivo .msm de varios idiomas a un archivo .msi, debe indicar el idioma final del paquete de instalación después de la combinación. En el caso de un módulo de combinación [](file-table.md) de lenguaje único, la tabla Archivo del módulo de mezcla enumera todos los archivos presentes en el gabinete MergeModule.CABinet. En el caso de un módulo de combinación de varios idiomas, MergeModule.CABinet contiene todos los archivos para cada idioma admitido por el módulo, pero solo el subconjunto de archivos para el idioma final entra en la tabla Archivo del módulo. La herramienta de combinación debe asegurarse de que el módulo proporciona el subconjunto de información y archivos necesarios para el idioma final solicitado.
 
 Cada módulo de combinación tiene un idioma predeterminado especificado en la columna Language de la [tabla ModuleSignature](modulesignature-table.md). El idioma predeterminado de un módulo de combinación también se muestra como el primer idioma, o solo, en la [**propiedad Resumen de**](template-summary.md) plantilla. Según el idioma final solicitado y el idioma predeterminado del módulo, la herramienta de combinación puede aplicar transformaciones de idioma a un módulo de combinación de varios idiomas para que se pueda abrir en el idioma solicitado o una aproximación del idioma solicitado. Las transformaciones de lenguaje se incrustan dentro del módulo merge. Las herramientas de combinación deben aplicar transformaciones de lenguaje en cumplimiento de las siguientes reglas generales:
 

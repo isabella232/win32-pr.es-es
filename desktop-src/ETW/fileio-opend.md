@@ -1,5 +1,5 @@
 ---
-description: Esta clase es la clase de tipo de evento para los eventos finales de la operación de archivo. La sintaxis siguiente se simplifica a partir del código MOF.
+description: Esta clase es la clase de tipo de evento para los eventos de finalización de la operación de archivo. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 3925d5bf-f412-4248-a61f-e667efa9debd
 title: FileIo_OpEnd clase
 ms.topic: reference
@@ -15,16 +15,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 74042df74f8e128c4d92b6e4f1c886a7bba2f673c1a8a998a4b7f251475c3f93
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d3f1c495cf44b84f8d7661b40cadec6ea255c6a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120130595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476917"
 ---
-# <a name="fileio_opend-class"></a>FileIo \_ OpEnd (clase)
+# <a name="fileio_opend-class"></a>Clase FileIo \_ OpEnd
 
-Esta clase es la clase de tipo de evento para los eventos finales de la operación de archivo.
+Esta clase es la clase de tipo de evento para los eventos de finalización de la operación de archivo.
 
 La sintaxis siguiente se simplifica a partir del código MOF.
 
@@ -40,7 +40,7 @@ class FileIo_OpEnd : FileIo
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase FileIo \_ OpEnd** tiene estos tipos de miembros:
 
@@ -64,7 +64,7 @@ Tipo de acceso: solo lectura
 Calificadores: WmiDataId(2), Pointer
 </dt> </dl>
 
-Información adicional devuelta por el sistema de archivos para la operación. Por ejemplo, para una solicitud de lectura, el número real de bytes leídos.
+Información adicional devuelta por el sistema de archivos para la operación. Por ejemplo, para una solicitud de lectura, el número real de bytes que se leyeron.
 
 </dd> <dt>
 
@@ -100,9 +100,9 @@ Valor devuelto de la operación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-[**Los eventos FileIo**](fileio.md) se registran al principio de la operación. Los eventos OpEnd se pueden habilitar por separado para indicar el final de esas operaciones. Irp se puede usar para correlacionar los eventos de inicio y fin.
+[**Los eventos FileIo**](fileio.md) se registran al principio de la operación. Los eventos OpEnd se pueden habilitar por separado para indicar el final de esas operaciones. Irp se puede usar para correlacionar los eventos de inicio y finalización.
 
 ## <a name="requirements"></a>Requisitos
 

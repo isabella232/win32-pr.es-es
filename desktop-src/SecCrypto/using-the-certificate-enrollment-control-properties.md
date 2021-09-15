@@ -4,18 +4,18 @@ ms.assetid: e31dd6df-bc2a-401f-9343-a7dbb0f374bb
 title: Uso de las propiedades del control de inscripción de certificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a556af6b75fe23e25efb3dcd4a6863a80592637921f6851f855aa8abccf5786
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 192ad4efd3d2438f800d4a3872a8cf1057ca9920
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118896644"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127477648"
 ---
 # <a name="using-the-certificate-enrollment-control-properties"></a>Uso de las propiedades del control de inscripción de certificados
 
 Cada propiedad control de inscripción de certificados es de lectura y escritura y tiene un valor predeterminado inicializado, así como un conjunto de valores aceptables. Puede establecer una propiedad en cualquier valor dentro de este conjunto para modificar el comportamiento de los métodos que usan la propiedad . Para obtener un comportamiento deseado, establezca la propiedad antes de llamar al método que usa el valor de esa propiedad.
 
-Tenga en cuenta, sin embargo, que después de llamar a los métodos siguientes
+Sin embargo, tenga en cuenta que después de llamar a los métodos siguientes
 
 -   [**acceptPKCS7**](/windows/desktop/api/Xenroll/nf-xenroll-icenroll-acceptpkcs7)
 -   [**acceptFilePKCS7**](/windows/desktop/api/Xenroll/nf-xenroll-icenroll-acceptfilepkcs7)

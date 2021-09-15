@@ -4,16 +4,16 @@ ms.assetid: fa8ee4d3-8927-4f7d-a09e-dbcf75a164d3
 title: Usar SignTool para firmar un archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a71d8e85e8e22f65ccbe8b5f15453b0a0cac34fc27697bad648b1c815f255b10
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 089026cde629278e5c6ac033164c2a9d26528917
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117971475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127477653"
 ---
 # <a name="using-signtool-to-sign-a-file"></a>Usar SignTool para firmar un archivo
 
-El comando siguiente firma el archivo denominado MyControl.exe [*mediante*](../secgloss/c-gly.md) un certificado almacenado en un archivo de Exchange personal (PFX):
+El comando siguiente firma el archivo denominado [](../secgloss/c-gly.md) MyControl.exe un certificado almacenado en un archivo de Exchange personal (PFX):
 
 <pre>SignTool sign /f <b>MyCert</b>.pfx MyControl.exe</pre>
 
@@ -39,7 +39,7 @@ El comando siguiente firma el archivo mediante un certificado ubicado en Mi tien
 
 <pre>SignTool sign /n "<b>My Company Publisher</b>" MyControl.exe</pre>
 
-El comando siguiente firma un control ActiveX y proporciona información que Internet Explorer cuando se le pide al usuario que instale el control:
+El comando siguiente firma un control ActiveX y proporciona información que muestra Internet Explorer cuando se solicita al usuario que instale el control:
 
 <pre>SignTool sign /f <b>MyCert</b>.pfx /d "<b>My Product Name</b>" /du <b>"https://www.example.com/myproductinfo.html"</b> MyControl.exe</pre>
 

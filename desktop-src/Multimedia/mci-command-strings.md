@@ -8,15 +8,15 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d7298a1ad4d571446532f7198e5bd41ae988194e
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369824"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476839"
 ---
 # <a name="mci-command-strings"></a>Cadenas de comandos de MCI
 
-Las cadenas de comandos siguientes se usan con MCI.
+Las siguientes cadenas de comandos se usan con MCI.
 
 -   [**break**](break.md)
 -   [**Capacidad**](capability.md)
@@ -29,7 +29,7 @@ Las cadenas de comandos siguientes se usan con MCI.
 -   [**Eliminar**](delete.md)
 -   [Escapar](escape.md)
 -   [**Congelar**](freeze.md)
--   [**índice**](./windows-multimedia-start-page.md)
+-   [**Índice**](./windows-multimedia-start-page.md)
 -   [**Información**](info.md)
 -   [**Lista**](list.md)
 -   [**Carga**](load.md)
@@ -62,7 +62,7 @@ Las cadenas de comandos siguientes se usan con MCI.
 -   [**Deshacer**](undo.md)
 -   [**Descongelar**](unfreeze.md)
 -   [**actualizar**](update.md)
--   [**where**](where.md)
+-   [**, donde**](where.md)
 -   [**Ventana**](window.md)
 
 ## <a name="related-topics"></a>Temas relacionados

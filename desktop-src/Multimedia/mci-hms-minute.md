@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 49c91d2dcb13ea6b206df2a0dbc0d6a2e7096e59
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370196"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476843"
 ---
 # <a name="mci_hms_minute-macro"></a>Macro MCI \_ HMS \_ MINUTE
 

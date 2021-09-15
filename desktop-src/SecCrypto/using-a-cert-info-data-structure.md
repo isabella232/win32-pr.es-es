@@ -4,12 +4,12 @@ ms.assetid: 3e058ca7-9334-4fde-afe1-93d5ea3a9697
 title: Usar una estructura CERT_INFO datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61c7ef533e4f93941950dc525136a4566af522f8f9527430ce35aade25650313
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ace9356a1a21bf72f01afe14cec00daeb1757206
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118897157"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127477677"
 ---
 # <a name="using-a-cert_info-data-structure"></a>Usar una estructura de \_ datos CERT INFO
 

@@ -18,12 +18,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 9987095c8c2a1e9b9abbb54eb66816277428e2296c98395d36340297cc541bfa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 493952e25080d4a64e018477ca1b45033c8747af
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119070195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476900"
 ---
 # <a name="hwconfig_cpu-class"></a>HwConfig \_ CPU (clase)
 
@@ -46,7 +46,7 @@ class HWConfig_CPU : HWConfig
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase DE CPU \_ HWConfig** tiene estos tipos de miembros:
 
@@ -158,7 +158,7 @@ Tamaño de una página de intercambio, en bytes.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                   |

@@ -7,11 +7,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: cd975b0dd5004fb4b1209003568b7fd5901cfc4e
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124371653"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476794"
 ---
 # <a name="opening-a-device"></a>Abrir un dispositivo
 
@@ -59,7 +59,7 @@ MCI clasifica los controladores de dispositivo como *compuestos* o *simples.* Lo
 
 Los dispositivos simples **incluyen dispositivos cdaudio** **y videodisc.** Hay dos maneras de abrir dispositivos simples:
 
--   Especifique un puntero a una cadena terminada en NULL que contenga el nombre del dispositivo del Registro o del SYSTEM.INI archivo.
+-   Especifique un puntero a una cadena terminada en NULL que contenga el nombre del dispositivo desde el Registro o el SYSTEM.INI archivo.
 
     Por ejemplo, puede abrir un **dispositivo videodisc** mediante el comando siguiente:
 
@@ -97,7 +97,7 @@ En la interfaz de cadena de comandos, también puede abreviar la especificación
 
 ## <a name="opening-a-device-using-the-filename-extension"></a>Abrir un dispositivo mediante la extensión filename
 
-Si el [**comando open**](open.md) [**(MCI \_ OPEN)**](mci-open.md)especifica solo el nombre de archivo, MCI usa la extensión filename para seleccionar el dispositivo adecuado en la lista del Registro o en la sección de extensiones mci del archivo \[ \] SYSTEM.INI. Las entradas de la sección \[ mci extensions \] usan el formato siguiente:
+Si el [**comando open**](open.md) [**(MCI \_ OPEN)**](mci-open.md)especifica solo el nombre de archivo, MCI usa la extensión filename para seleccionar el dispositivo adecuado en la lista del Registro o la sección de extensiones mci del archivo \[ \] SYSTEM.INI. Las entradas de la sección \[ mci extensions \] usan el formato siguiente:
 
 *nombre de \_ dispositivo de extensión* de nombre de  =  *\_ archivo*
 

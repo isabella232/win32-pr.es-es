@@ -4,16 +4,16 @@ description: Proporciona un breve tutorial sobre cómo agregar pruebas de acceso
 ms.assetid: ef30c931-10f6-4317-b2ea-b446990778b9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d42967b069a7a5008de75c1cecb453a6158857eb2b05d2dd0298584a67cef69
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c2ca80ac641920c4e63c08f4cbb0fd9e24eb7b2d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117816579"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476954"
 ---
 # <a name="how-to-perform-hit-testing-on-a-text-layout"></a>Cómo realizar pruebas de acceso en un diseño de texto
 
-Proporciona un breve tutorial sobre cómo agregar pruebas de acceso a una aplicación [DirectWrite](direct-write-portal.md) que muestra texto mediante la [**interfaz IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout)
+Proporciona un breve tutorial sobre cómo agregar pruebas de acceso a una [aplicación DirectWrite](direct-write-portal.md) que muestra texto mediante la [**interfaz IDWriteTextLayout.**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout)
 
 El resultado de este tutorial es una aplicación que subraya el carácter en el que se hace clic con el botón izquierdo del mouse, como se muestra en la siguiente captura de pantalla.
 
@@ -24,7 +24,7 @@ Este procedimiento contiene las siguientes partes:
 - [Paso 1: Crear un diseño de texto.](#step-1-create-a-text-layout)
 - [Paso 2: Agregar un método OnClick.](#step-2-add-an-onclick-method)
 - [Paso 3: Realizar pruebas de impacto.](#step-3-perform-hit-testing)
-- [Paso 4: Subraya el texto en el que se ha hecho clic.](#step-4-underline-the-clicked-text)
+- [Paso 4: Subrayado del texto en el que se ha hecho clic.](#step-4-underline-the-clicked-text)
 - [Paso 5: Controlar el mensaje \_ WM LBUTTONDOWN.](/windows)
 
 ## <a name="step-1-create-a-text-layout"></a>Paso 1: Crear un diseño de texto.
@@ -126,9 +126,9 @@ Agregue lo siguiente al **método OnClick** que definió en el paso 2.
                     );
     ```
 
-    El código de este ejemplo pasa las variables *x* e *y* para la posición sin ninguna modificación. Esto se puede hacer en este ejemplo porque el diseño de texto tiene el mismo tamaño que la ventana y se origina en la esquina superior izquierda de la ventana. Si este no fuera el caso, tendría que determinar las coordenadas en relación con el origen del diseño de texto.
+    El código de este ejemplo pasa las variables *x* *e y* para la posición sin ninguna modificación. Esto se puede hacer en este ejemplo porque el diseño de texto tiene el mismo tamaño que la ventana y se origina en la esquina superior izquierda de la ventana. Si este no fuera el caso, tendría que determinar las coordenadas en relación con el origen del diseño de texto.
 
-## <a name="step-4-underline-the-clicked-text"></a>Paso 4: Subraya el texto en el que se ha hecho clic.
+## <a name="step-4-underline-the-clicked-text"></a>Paso 4: Subrayado del texto en el que se ha hecho clic.
 
 Agregue lo siguiente a **OnClick** que definió en el paso 2, después de la llamada al [**método HitTestPoint.**](/windows/win32/api/dwrite/nf-dwrite-idwritetextlayout-hittestpoint)
 
@@ -148,7 +148,7 @@ if (isInside == TRUE)
 Este código hace lo siguiente.
 
 1. Comprueba si el punto de prueba de acceso estaba dentro del texto mediante la variable *isInside.*
-2. El **miembro textPosition** de la *estructura hitTestMetrics* contiene el índice de base cero del carácter en el que se ha hecho clic.
+2. El **miembro textPosition** de la *estructura hitTestMetrics* contiene el índice de base cero del carácter en el que se hizo clic.
 
     Obtiene el subrayado de este carácter pasando este valor al [**método IDWriteTextLayout::GetUnderline.**](/windows/win32/api/dwrite/nf-dwrite-idwritetextlayout-getunderline)
 

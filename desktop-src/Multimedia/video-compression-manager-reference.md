@@ -1,6 +1,6 @@
 ---
-title: Referencia del administrador de compresión de vídeo
-description: Referencia del administrador de compresión de vídeo
+title: Referencia del Administrador de compresión de vídeo
+description: Referencia del Administrador de compresión de vídeo
 ms.assetid: dd678b24-62af-495f-bdd6-3082c1a753dd
 keywords:
 - Vídeo para Windows (VFW), administrador de compresión de vídeo (VCM)
@@ -8,17 +8,17 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: c801df7ecdf0f6468762c2742235d4ef627f5aee
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370411"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476774"
 ---
-# <a name="video-compression-manager-reference"></a>Referencia del administrador de compresión de vídeo
+# <a name="video-compression-manager-reference"></a>Referencia del Administrador de compresión de vídeo
 
 En esta sección se describen las funciones, estructuras, mensajes y macros asociados a VCM. Estos elementos se agrupan como se muestra a continuación.
 
-## <a name="compressor-installation-and-removal"></a>Instalación y eliminación de los residuos
+## <a name="compressor-installation-and-removal"></a>Instalación y eliminación de la instalación y eliminación de instalaciones
 
 -   [**ICInstall**](/windows/desktop/api/Vfw/nf-vfw-icinstall)
 -   [**ICLocate**](/windows/desktop/api/Vfw/nf-vfw-iclocate)
@@ -27,11 +27,11 @@ En esta sección se describen las funciones, estructuras, mensajes y macros asoc
 -   [**ICRemove**](/windows/desktop/api/Vfw/nf-vfw-icremove)
 -   [**ICOpenFunction**](/windows/desktop/api/Vfw/nf-vfw-icopenfunction)
 
-## <a name="locating-and-opening-a-compressor"></a>Buscar y abrir un insódor
+## <a name="locating-and-opening-a-compressor"></a>Buscar y abrir un archivo Desenlazador
 
 -   [**ICLocate**](/windows/desktop/api/Vfw/nf-vfw-iclocate)
 -   [**ICOPEN**](/windows/desktop/api/Vfw/ns-vfw-icopen)
--   [**ICDecompressOpen**](/windows/desktop/api/Vfw/nf-vfw-icdecompressopen)
+-   [**ICDecompressAbrir**](/windows/desktop/api/Vfw/nf-vfw-icdecompressopen)
 -   [**ICDrawOpen**](/windows/desktop/api/Vfw/nf-vfw-icdrawopen)
 -   [**ICINFO**](/windows/desktop/api/Vfw/ns-vfw-icinfo)
 -   [**ICClose**](/windows/desktop/api/Vfw/nf-vfw-icclose)
@@ -42,7 +42,7 @@ En esta sección se describen las funciones, estructuras, mensajes y macros asoc
 -   [**ICCompressorFree**](/windows/desktop/api/Vfw/nf-vfw-iccompressorfree)
 -   [**COMPVARS**](/windows/desktop/api/Vfw/ns-vfw-compvars)
 
-## <a name="configuring-compressors"></a>Configuración de insaseciones
+## <a name="configuring-compressors"></a>Configuración de los trastes
 
 -   [**\_ICM CONFIGURAR**](icm-configure.md)
 -   [**\_ICM GETSTATE**](icm-getstate.md)
@@ -76,12 +76,12 @@ En esta sección se describen las funciones, estructuras, mensajes y macros asoc
 
 -   [**ICCOMPRESS**](/windows/desktop/api/Vfw/ns-vfw-iccompress)
 -   [**\_ICM COMPRIMIR \_ GET \_ FORMAT**](icm-compress-get-format.md)
--   [**\_ICM COMPRIMIR \_ CONSULTA**](icm-compress-query.md)
+-   [**\_ICM COMPRESS \_ QUERY**](icm-compress-query.md)
 -   [**\_ICM COMPRIMIR \_ GET \_ SIZE**](icm-compress-get-size.md)
 -   [**\_ICM COMPRESS \_ BEGIN**](icm-compress-begin.md)
 -   [**\_ICM COMPRESS \_ END**](icm-compress-end.md)
 
-## <a name="compressor-monitoring"></a>Supervisión de los procesos de supervisión
+## <a name="compressor-monitoring"></a>Supervisión de supervisión de supervisión
 
 -   [**ICSETSTATUSPROC**](/windows/desktop/api/Vfw/ns-vfw-icsetstatusproc)
 
@@ -89,16 +89,16 @@ En esta sección se describen las funciones, estructuras, mensajes y macros asoc
 
 -   [**ICImageDecompress**](/windows/desktop/api/Vfw/nf-vfw-icimagedecompress)
 
-## <a name="decompressing-image-data"></a>Descomprimir datos de imagen
+## <a name="decompressing-image-data"></a>Descompresión de datos de imagen
 
 -   [**ICDECOMPRESSEX**](/windows/desktop/api/Vfw/ns-vfw-icdecompressex)
 -   [**ICDecompressExBegin**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexbegin)
--   [**\_ICM DESCOMPRESSEX \_ END**](icm-decompressex-end.md)
+-   [**\_ICM DECOMPRESSEX \_ END**](icm-decompressex-end.md)
 -   [**\_ICM OBTENER FORMATO DE DESCOMPRESIÓN \_ \_**](icm-decompress-get-format.md)
--   [**\_ICM DESCOMPRIMIR \_ OBTENER \_ PALETA**](icm-decompress-get-palette.md)
+-   [**\_ICM DESCOMPRESIÓN \_ DE LA PALETA GET \_**](icm-decompress-get-palette.md)
 -   [**ICDecompressExQuery**](/windows/desktop/api/Vfw/nf-vfw-icdecompressexquery)
 -   [**ICDECOMPRESS**](/windows/desktop/api/Vfw/ns-vfw-icdecompress)
--   [**\_ICM DESCOMPRESS \_ BEGIN**](icm-decompress-begin.md)
+-   [**\_ICM DECOMPRESS \_ BEGIN**](icm-decompress-begin.md)
 -   [**\_ICM DESCOMPRESIÓN \_ FINAL**](icm-decompress-end.md)
 -   [**\_ICM CONSULTA DE DESCOMPRESIÓN \_**](icm-decompress-query.md)
 
