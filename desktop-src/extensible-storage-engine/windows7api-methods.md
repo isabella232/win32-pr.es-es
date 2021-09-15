@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Métodos Windows7Api'
+description: 'Más información sobre: Métodos De Windows7Api'
 title: Métodos Windows7Api (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: Windows7Api methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.Windows7.Windows7Api
@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.wind
 ms:contentKeyID: 55104363
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 13124a41d81a52dab628f4e2bc4251219edbe4a10fef1f86aebf5180bacbe452
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9e801526c8d2e01612e2ecd317dd9934e8f7ccd4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119038643"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466575"
 ---
 # <a name="windows7api-methods"></a>Métodos de Windows7Api
 
@@ -53,7 +53,7 @@ El [tipo Windows7Api](./windows7api-class.md) expone los siguientes miembros.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

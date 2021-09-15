@@ -4,12 +4,12 @@ ms.assetid: 934f045a-0e41-42df-b588-770851718890
 title: System.Image.CompressedBitsPerPixelNumerator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09de687dbe4ed9cc8e7533d9634a2594e0958e4559f225661d2e8267eea4fe25
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bf89395afc0be576ebf2cb79fa10826f991c60f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119598735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360398"
 ---
 # <a name="systemimagecompressedbitsperpixelnumerator"></a>System.Image.CompressedBitsPerPixelNumerator
 
@@ -30,7 +30,7 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

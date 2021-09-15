@@ -4,12 +4,12 @@ ms.assetid: fdd3fce9-f507-4581-bd68-74a854581200
 title: System.Video.Compression
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7494bc8d08a8c53081d18e28b2cb2b399ef15bf0cb81d97eded8a491476c478a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a2bff7eb807d98f00115edd7956f9cdcfb43fb98
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118464463"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360390"
 ---
 # <a name="systemvideocompression"></a>System.Video.Compression
 
@@ -31,9 +31,9 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El valor de esta propiedad es una representación de cadena de un GUID en formato canónico: "{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}". El GUID especifica el formato de vídeo. Para ver los valores posibles, [consulte GUID de subtipo de vídeo.](../medfound/video-subtype-guids.md)
+El valor de esta propiedad es una representación de cadena de un GUID en forma canónica: "{xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}". El GUID especifica el formato de vídeo. Para ver los valores posibles, [consulte GUID de subtipo de vídeo.](../medfound/video-subtype-guids.md)
 
 Los valores PKEY se definen en Propkey.h.
 

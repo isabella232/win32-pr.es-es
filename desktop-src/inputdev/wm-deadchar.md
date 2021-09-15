@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e4921d399c4a1c7a86596bfcc907b52d9c834235d133d6455b88c5a5a40c89a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6053095b912360e9875fa062c2daba7cafcfd43b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119778755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468831"
 ---
 # <a name="wm_deadchar-message"></a>Mensaje \_ DEADCHAR de WM
 
@@ -52,7 +52,7 @@ El recuento de repeticiones, el código de examen, la marca de clave extendida, 
 
 | Bits  | Significado                                                                                                                                                                                                                                                               |
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0-15  | Recuento de repeticiones para el mensaje actual. El valor es el número de veces que la pulsación de tecla se carga de forma automática como resultado de que el usuario mantiene presionada la tecla. Si la pulsación de tecla se mantiene lo suficientemente larga, se envían varios mensajes. Sin embargo, el recuento de repeticiones no es acumulativo. |
+| 0-15  | Recuento de repeticiones para el mensaje actual. El valor es el número de veces que se autorpeda la pulsación de tecla como resultado de que el usuario mantiene presionada la tecla. Si la pulsación de tecla se mantiene lo suficientemente larga, se envían varios mensajes. Sin embargo, el recuento de repeticiones no es acumulativo. |
 | 16-23 | Código de examen. El valor depende del OEM.                                                                                                                                                                                                                          |
 | 24    | Indica si la tecla es una tecla extendida, como las teclas ALT y CTRL de la derecha que aparecen en un teclado mejorado de 101 o 102 teclas. El valor es 1 si es una clave extendida; de lo contrario, es 0.                                                              |
 | 25-28 | Reservado; no se usan.                                                                                                                                                                                                                                                 |
@@ -68,7 +68,7 @@ Para obtener más información, vea [Marcas de mensajes de pulsación de teclas]
 
 Una aplicación debe devolver cero si procesa este mensaje.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las aplicaciones suelen usar el mensaje **\_ DEADCHAR** de WM para proporcionar al usuario comentarios sobre cada tecla presionada. Por ejemplo, una aplicación puede mostrar el acento en la posición del carácter actual sin mover el carácter de diálogo.
 

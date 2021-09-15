@@ -4,12 +4,12 @@ ms.assetid: 2675ef16-2018-47e8-bb22-2fc0d62e6681
 title: MF_TOPOLOGY_ENUMERATE_SOURCE_TYPES atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cc9ff7cf9e1497f0d15f68e68c254483f0c9f074e2ce4204e9d77d84aee4ea8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 015042bbf9994f81058c621239224196e6ec9ac8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117691301"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360456"
 ---
 # <a name="mf_topology_enumerate_source_types-attribute"></a>ATRIBUTO \_ ENUMERATE SOURCE TYPES DE LA TOPOLOGÍA \_ \_ \_ DE MF
 
@@ -42,7 +42,7 @@ Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT32**](/wind
 
 [**IMFTopology**](/windows/desktop/api/mfidl/nn-mfidl-imftopology)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cada secuencia de un origen multimedia puede ofrecer más de un tipo de medio. La lista de tipos se enumera a través de la [**interfaz IMFMediaTypeHandler**](/windows/desktop/api/mfidl/nn-mfidl-imfmediatypehandler) en el descriptor de secuencia.
 
@@ -51,7 +51,7 @@ El orden en que el cargador de topologías intenta los tipos de medios de un ori
 -   El atributo \_ TOPOLOGY DE MF \_ ENUMERATE \_ SOURCE TYPES en \_ la topología.
 -   Atributo [**MF \_ TOPONODE \_ CONNECT \_ METHOD**](mf-toponode-connect-method-attribute.md) en el nodo de origen.
 
-Si el atributo MF TOPOLOGY ENUMERATE SOURCE TYPES es FALSE o no está establecido, el cargador de topologías usa el tipo \_ de medio actual de la \_ \_ \_ secuencia.  No enumera la lista de tipos posibles. Si el tipo de medio actual no es compatible con el nodo de topología de bajada y no se encuentra ninguna combinación de descodificadores o convertidores, se produce un error en la resolución de la topología.
+Si el atributo ENUMERATE SOURCE TYPES de MF TOPOLOGY es FALSE o no está establecido, el cargador de topologías usa el tipo de medio actual \_ \_ de la \_ \_ secuencia.  No enumera la lista de tipos posibles. Si el tipo de medio actual no es compatible con el nodo de topología de bajada y no se encuentra ninguna combinación de descodificadores o convertidores, se produce un error en la resolución de la topología.
 
 Si el atributo ENUMERATE SOURCE TYPES de MF TOPOLOGY es TRUE, el cargador de topologías enumera los tipos de medios del origen hasta que encuentra \_ \_ un tipo \_ \_ compatible.  En ese caso, el orden exacto de las operaciones depende de si el atributo [**MF \_ TOPONODE \_ CONNECT \_ METHOD**](mf-toponode-connect-method-attribute.md) del nodo de origen incluye la marca **MF CONNECT RESOLVE INDEPENDENT \_ \_ \_ \_ OUTPUTTYPES.**
 
@@ -64,7 +64,7 @@ foreach media type T
     if failed, connect with decoders using T
 ```
 
-Si LA ENUMERACIÓN DE TOPOLOGÍA DE MF SOURCE TYPES es TRUE pero \_ MF CONNECT RESOLVE INDEPENDENT \_ \_ \_ **\_ \_ \_ \_ OUTPUTTYPES**  no está establecido, el cargador de topologías intenta una conexión directa con cada tipo de medio, prueba cada tipo de medio con convertidores y, por último, prueba cada tipo de medio con descodificadores:
+Si ENUMERATE SOURCE TYPES de MF TOPOLOGY es TRUE pero \_ MF CONNECT RESOLVE INDEPENDENT \_ \_ \_ **\_ \_ \_ \_ OUTPUTTYPES**  no está establecido, el cargador de topologías intenta una conexión directa con cada tipo de medio, prueba cada tipo de medio con convertidores y, por último, prueba cada tipo de medio con descodificadores:
 
 ``` syntax
 foreach media type T
@@ -77,7 +77,7 @@ if failed
         connect with decoders using T
 ```
 
-Si LA TOPOLOGÍA DE MF ENUMERATE SOURCE TYPES es FALSE, se omite la marca \_ MF CONNECT RESOLVE \_ INDEPENDENT \_ \_ **\_ \_ \_ \_ OUTPUTTYPES.** 
+Si MF TOPOLOGY ENUMERATE SOURCE TYPES es FALSE , se omite la marca \_ MF CONNECT RESOLVE \_ INDEPENDENT \_ \_ **\_ \_ \_ \_ OUTPUTTYPES.** 
 
 El valor predeterminado de MF \_ TOPOLOGY \_ ENUMERATE \_ SOURCE TYPES es \_ **FALSE,** por compatibilidad con las aplicaciones existentes.
 
@@ -98,7 +98,7 @@ El receptor de medios acepta los siguientes tipos:
 Caso 1: se establece la marca **MF CONNECT RESOLVE INDEPENDENT \_ \_ \_ \_ OUTPUTTYPES.**
 
 1.  El cargador de topologías intenta una conexión directa con T1. El receptor rechaza T1.
-2.  El cargador de topologías inserta un descodificador que acepta T1 y genera la salida T4. El receptor acepta T4.
+2.  El cargador de topología inserta un descodificador que acepta T1 y genera la salida T4. El receptor acepta T4.
 3.  La topología final contiene: origen de medios → descodificador → receptor multimedia.
 
 Caso 2: la marca no está establecida.
@@ -114,13 +114,13 @@ Caso 2: la marca no está establecida.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

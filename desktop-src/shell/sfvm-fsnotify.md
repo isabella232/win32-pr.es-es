@@ -1,6 +1,6 @@
 ---
-description: 'Notifica al objeto de devolución de llamada que se ha producido un evento que afecta a uno de sus elementos. Usado por IShellFolderViewCB:: MessageSFVCB.'
-title: Mensaje de SFVM_FSNOTIFY (ShlObj. h)
+description: Notifica al objeto de devolución de llamada que se ha realizado un evento que afecta a uno de sus elementos. Usado por IShellFolderViewCB::MessageSFVCB.
+title: SFVM_FSNOTIFY mensaje (Shlobj.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.assetid: ff159c35-afdf-4147-8dd6-7febd9519b18
@@ -14,15 +14,15 @@ topic_type:
 - APIRef
 - kbSyntax
 ms.openlocfilehash: 74c17f9d4b8c8c1979fa7da2d6f0ff63dff74a9b
-ms.sourcegitcommit: cd9672511263d04c0e4bc41758dd1d9e89ea92b4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "104997977"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467179"
 ---
-# <a name="sfvm_fsnotify-message"></a>SFVM \_ FSNOTIFY
+# <a name="sfvm_fsnotify-message"></a>Mensaje \_ FSNOTIFY de SFVM
 
-Notifica al objeto de devolución de llamada que se ha producido un evento que afecta a uno de sus elementos. Usado por [**IShellFolderViewCB:: MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
+Notifica al objeto de devolución de llamada que se ha realizado un evento que afecta a uno de sus elementos. Usado por [**IShellFolderViewCB::MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
 
 
 ```C++
@@ -41,17 +41,17 @@ SFVM_FSNOTIFY
 
 <dl> <dt>
 
-*ppidl* \[ de\]
+*pppdl* \[ En\]
 </dt> <dd>
 
-Puntero de PIDL del elemento afectado.
+Puntero del PIDL del elemento afectado.
 
 </dd> <dt>
 
-*lEvent* \[ de\]
+*lEvent* \[ En\]
 </dt> <dd>
 
-Valor de SHCNE que indica qué evento se ha producido. Para obtener una lista de los valores posibles, vea [**SHChangeNotify**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify).
+Valor SHCNE que indica qué evento se ha producido. Para obtener una lista de valores posibles, [**vea SHChangeNotify.**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify)
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Valor de SHCNE que indica qué evento se ha producido. Para obtener una lista de
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                |
-| Encabezado<br/>                   | <dl> <dt>ShlObj. h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shlobj.h</dt> </dl> |
 
 
 

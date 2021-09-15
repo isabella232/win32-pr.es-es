@@ -5,15 +5,15 @@ ms.assetid: 9874f00d-1efa-47ed-8029-f93962046789
 keywords:
 - HttpPurchaseOrderWithUsernameOverSslClientExample Native-Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f776230a3c87e105c11b44e2cd3d0762b34baf50f2ff6670d0b118a84d6a626
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e014bce5cd877681583e0fc4cbf27dd74bda62c1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118963134"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466633"
 ---
 # <a name="httppurchaseorderwithusernameoversslclientexample"></a>HttpPurchaseOrderWithUsernameOverSslClientExample
 

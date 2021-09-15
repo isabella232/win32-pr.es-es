@@ -4,12 +4,12 @@ ms.assetid: bf4b9916-737c-4efe-8e93-da85df5f0567
 title: Elemento Reflow
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eceb00bcf01b4052ee17a50637fcfdc5979e66ac42cfc7cf9b1bb35b58f9d337
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7c16a6754182d82d92bfc77a8107cc25aecc8c9c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119335415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467146"
 ---
 # <a name="reflow-element"></a>Elemento Reflow
 

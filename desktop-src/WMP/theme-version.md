@@ -1,6 +1,6 @@
 ---
 title: THEME.version
-description: El atributo version especifica o recupera el número de Reproductor de Windows Media versión para el que se autorizó la máscara.
+description: El atributo version especifica o recupera el Reproductor de Windows Media de versión para el que se creara la máscara.
 ms.assetid: 74405b82-96a3-4ac2-aba2-24daceb0a429
 keywords:
 - Theme.version Reproductor de Windows Media
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a224275a581faa35f85094813d0d2378938fdf17398d57ca2eda0d740e748c72
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 08a8d4050f76219481541d27394fef47434855af
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117932539"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465851"
 ---
 # <a name="themeversion"></a>THEME.version
 
-El **atributo** version especifica o recupera el número de Reproductor de Windows Media versión para el que se autorizó la máscara.
+El **atributo** version especifica o recupera el número Reproductor de Windows Media versión para el que se edizó la máscara.
 
 ``` syntax
 theme.version

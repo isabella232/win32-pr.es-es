@@ -3,18 +3,18 @@ title: Calcular la velocidad de bits y los valores de la ventana de búfer para 
 description: Calcular la velocidad de bits y los valores de la ventana de búfer para los valores Secuencias
 ms.assetid: 28ba863b-9c3e-4b0e-875d-6b696600888c
 keywords:
-- secuencias, velocidades de bits
+- flujos, velocidades de bits
 - códecs, calcular las tasas de bits para secuencias arbitrarias
-- velocidades de bits, calcular para secuencias arbitrarias
+- velocidades de bits, cálculo de secuencias arbitrarias
 - secuencias, calcular las tasas de bits para secuencias arbitrarias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c86a866536bbe2565a3bc44bbe9f40743db26d948555bc6ec8a11eb60d7aa4c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 45d704352d414b1fe5079fb068593c2d0d8b2f8c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118434489"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466213"
 ---
 # <a name="calculating-bit-rate-and-buffer-window-values-for-arbitrary-streams"></a>Calcular la velocidad de bits y los valores de la ventana de búfer para los valores Secuencias
 

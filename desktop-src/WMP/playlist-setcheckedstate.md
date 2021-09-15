@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 93e143f738197524e1555f18aedf84aa606626de645a98149c65507b71291cde
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6a8c86459dcf590b1ff1e884a8aa671dc1bba78a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118336252"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359483"
 ---
 # <a name="playlistsetcheckedstate"></a>PLAYLIST.setCheckedState
 
@@ -43,7 +43,7 @@ El **método setCheckedState** especifica que el elemento indexado de la lista d
 
 Este método devuelve un **valor booleano**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede establecer todos los elementos en el estado activado especificando 1 en el parámetro *item.*
 

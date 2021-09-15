@@ -5,11 +5,11 @@ ms.assetid: ddcf3669-4ad0-4a4e-80a6-eb78058cff09
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 57b692502ba44519a2c51a661ef62a51e133ac04
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369511"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359851"
 ---
 # <a name="item-monikers"></a>Monikers de elementos
 
@@ -17,7 +17,7 @@ Otra clase de moniker implementada por OLE es el *moniker* de elemento , que se 
 
 Un moniker de elemento es útil principalmente cuando se concatena, o se *compone,* con otro moniker, que identifica el contenedor. Normalmente, se crea un moniker de elemento y, a continuación, se compone en (por ejemplo) un moniker de archivo para crear el equivalente de una ruta de acceso completa al objeto. Por ejemplo, puede crear el moniker de archivo "c: workreport.doc" (que identifica el objeto contenedor) con el moniker de elemento "embedobj1" (que identifica un objeto dentro del contenedor) para formar el \\ \\ moniker "c: \\ work \\report.doc\\ embedobj1", que identifica de forma única un objeto determinado dentro de un archivo determinado. También puede concatenar monikers de elementos adicionales para identificar objetos profundamente anidados. Por ejemplo, si "embedobj1" es el nombre de un objeto de hoja de cálculo, para identificar un determinado intervalo de celdas en ese objeto de hoja de cálculo, podría anexar otro moniker de elemento para crear un moniker que sería el equivalente de "c: \\ work \\report.doc\\ embedobj1 \\ 1A:7F".
 
-Cuando se combina con un moniker de archivo, un moniker de elemento forma una ruta de acceso completa. Por lo tanto, los monikers de elementos amplían la noción de nombres de ruta de acceso más allá del sistema de archivos, definiendo los nombres de ruta de acceso para identificar objetos individuales, no solo archivos.
+Cuando se combina con un moniker de archivo, un moniker de elemento forma una ruta de acceso completa. Por lo tanto, los monikers de elementos amplían la noción de nombres de ruta de acceso más allá del sistema de archivos, definiendo nombres de ruta de acceso para identificar objetos individuales, no solo archivos.
 
 Hay una diferencia significativa entre un moniker de elemento y un moniker de archivo. La ruta de acceso contenida en un moniker de archivo es significativa para cualquier persona que comprenda el sistema de archivos, mientras que la ruta de acceso parcial contenida en un moniker de elemento solo es significativa para un contenedor determinado. Todo el mundo sabe a qué hace referencia "c: workreport.doc", pero solo un objeto contenedor determinado sabe a qué hace referencia \\ \\ "1A:7F". Un contenedor no puede interpretar un moniker de elemento creado por otra aplicación; El único contenedor que sabe a qué objeto hace referencia un moniker de elemento es el contenedor que asignó el moniker de elemento al objeto en primer lugar. Por este motivo, el origen del objeto denominado por la combinación de un archivo y un moniker de elemento no solo debe implementar [**IPersistFile**](/windows/desktop/api/ObjIdl/nn-objidl-ipersistfile)para facilitar el enlace del moniker de archivo, sino también [**IOleItemContainer**](/windows/desktop/api/OleIdl/nn-oleidl-ioleitemcontainer) para facilitar la resolución del nombre del moniker de elemento en el objeto adecuado, en el contexto de un archivo.
 

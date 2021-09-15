@@ -1,20 +1,20 @@
 ---
-description: Espacio de nombres WMI es un objeto de programación que define el ámbito de un conjunto de clases e instancias. Las clases de proveedor WMI deben definirse dentro de un espacio de nombres.
+description: El espacio de nombres WMI es un objeto de programación que define el ámbito de un conjunto de clases e instancias. Las clases de proveedor WMI deben definirse dentro de un espacio de nombres.
 ms.assetid: a00f26e6-bb81-45bc-a530-9346a074bb3c
 ms.tgt_platform: multiple
 title: Crear jerarquías dentro de WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a2649fb764c1710613b27e1c9bbe518dd4cb8d02215df935ddccb59c9d7e922
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5743c8da8c40fc0419a96a8ec9c65e7e112573a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119568785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466375"
 ---
 # <a name="creating-hierarchies-within-wmi"></a>Crear jerarquías dentro de WMI
 
-[*Espacio de nombres WMI*](gloss-n.md) es un objeto de programación que define el ámbito de un conjunto de clases e instancias. Las clases de proveedor WMI deben definirse dentro de un espacio de nombres.
+[*El espacio de*](gloss-n.md) nombres WMI es un objeto de programación que define el ámbito de un conjunto de clases e instancias. Las clases de proveedor WMI deben definirse dentro de un espacio de nombres.
 
 Los espacios de nombres describen diferentes entornos administrados, como el entorno de SMS. Dado que las clases e instancias de un esquema definen los componentes de un entorno administrado, cada nuevo esquema requiere un nuevo espacio de nombres. Por ejemplo, el espacio de nombres cimv2 raíz contiene las clases e instancias definidas en el esquema Win32, así como las clases Modelo de información común (CIM) primarias de las que hereda el esquema \\ Win32. El grupo de tareas de administración distribuida[(DMTF)](https://www.dmtf.org/home)define las clases CIM .
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f3b1044d01ac3ca6a8cc4f1212232bfcc630eb73831f90eb7fd5f423f5dc38d4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 183b25547e456cb90cac4d2137354679e13d8a96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118118366"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466627"
 ---
 # <a name="textfontface"></a>TEXT.fontFace
 
@@ -31,11 +31,11 @@ El **atributo fontFace** especifica o recupera el tipo de letra para el control 
 
 Este atributo es una cadena de lectura y **escritura.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo puede ser el nombre de cualquier fuente válida disponible en Windows. Reproductor de Windows Media admitirá la instalación de fuentes, así que elija una fuente que sepa que estará en el sistema previsto.
 
-Si la **fontFace** especificada no está disponible en el sistema del usuario, el control Texto tiene como valor predeterminado la Windows del sistema.
+Si el **fontFace** especificado no está disponible en el sistema del usuario, el control Text tiene como valor predeterminado la Windows del sistema.
 
 Vea el [atributo value](text-value.md) para obtener un ejemplo que ilustra cómo se usan los atributos del **elemento TEXT.**
 
@@ -49,7 +49,7 @@ Vea el [atributo value](text-value.md) para obtener un ejemplo que ilustra cómo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

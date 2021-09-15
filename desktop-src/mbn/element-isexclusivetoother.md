@@ -8,11 +8,11 @@ title: IsExclusiveToOther
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: be2b66d4e3566b95f830291234faf099a8e28e29
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122986288"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465723"
 ---
 # <a name="span-idwwan_profile_v4element_isexclusivetootherspanisexclusivetoother"></a><span id="WWAN_profile_v4.element_IsExclusiveToOther"></span>IsExclusiveToOther
 

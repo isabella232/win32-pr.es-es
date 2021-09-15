@@ -4,12 +4,12 @@ ms.assetid: 2d81a45a-9762-48b9-8395-3c3a4dcd5e8c
 title: Quitar una cuenta de usuario o un grupo de un rol
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43ed038867fad8ff24f274bf733de43d0b534cf74671b855c6e3d43ade05b657
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 176272aef16af0d0a65d90f6a1d7628a5af232fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120070375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465771"
 ---
 # <a name="removing-a-user-account-or-group-from-a-role"></a>Quitar una cuenta de usuario o un grupo de un rol
 
@@ -21,7 +21,7 @@ Si cambian los privilegios de un usuario o si se agregan roles a una aplicación
 
     1.  En el árbol de consola de la herramienta administrativa Servicios de componentes, busque la aplicación COM+ que contiene el rol que le interesa. Expanda la vista en el árbol de consola hasta que los usuarios del rol estén visibles.
 
-    2.  Haga clic con el botón derecho en la cuenta de usuario o el grupo que desea quitar y, a continuación, haga clic **en Eliminar.**
+    2.  Haga clic con el botón derecho en la cuenta de usuario o el grupo que desea quitar y, a continuación, haga clic **en Eliminar**.
 
     3.  Cuando se le solicite en el **cuadro de diálogo Confirmar eliminación** de elementos, haga clic en **Sí** para eliminar la cuenta de usuario o el grupo.
 

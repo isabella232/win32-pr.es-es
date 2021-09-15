@@ -4,12 +4,12 @@ ms.assetid: c3859590-7674-4315-b171-3747e5d9350b
 title: WPD_CONTENT_TYPE_DOCUMENT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 47684fa261b3455adba371c81095dea5cc5243266a662a922da7108e0d3b07c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af8a0a902fb30eb0343a3846eaf3668a4a005a82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118193518"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466437"
 ---
 # <a name="wpd_content_type_document"></a>DOCUMENTO DE \_ TIPO DE CONTENIDO DE \_ \_ WPD
 
@@ -22,11 +22,11 @@ Este tipo de objeto puede hospedar las siguientes propiedades.
 | Nombre de la propiedad                                                                                                         | Obligatorio u opcional                                                           |
 |-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [IDENTIFICADOR DE OBJETO \_ \_ WPD](object-properties.md)                                                                | Obligatorio, de solo lectura. Un cliente no puede establecer esta propiedad, incluso en el momento de la creación. |
-| [IDENTIFICADOR PRIMARIO DEL \_ OBJETO \_ \_ WPD](object-properties.md)                                                 | Obligatorio.                                                                      |
+| [IDENTIFICADOR PRIMARIO DEL \_ OBJETO \_ \_ WPD](object-properties.md)                                                 | Necesario.                                                                      |
 | [NOMBRE DE OBJETO \_ \_ WPD](object-properties.md)                                                            | Obligatorio si el objeto representa un archivo.                                      |
 | [IDENTIFICADOR ÚNICO \_ PERSISTENTE \_ DEL OBJETO \_ \_ WPD](object-properties.md)                          | Obligatorio, de solo lectura. Un cliente no puede establecer esta propiedad, incluso en el momento de la creación. |
-| [FORMATO DE OBJETO \_ \_ WPD](object-properties.md)                                                        | Obligatorio.                                                                      |
-| [TIPO DE CONTENIDO \_ DE \_ OBJETO \_ WPD](object-properties.md)                                           | Obligatorio.                                                                      |
+| [FORMATO DE OBJETO \_ \_ WPD](object-properties.md)                                                        | Necesario.                                                                      |
+| [TIPO DE CONTENIDO \_ DE \_ OBJETO \_ WPD](object-properties.md)                                           | Necesario.                                                                      |
 | [\_ISHIDDEN DEL \_ OBJETO WPD](object-properties.md)                                                    | Obligatorio si el objeto está oculto.                                              |
 | [ISSYSTEM DEL \_ OBJETO \_ WPD](object-properties.md)                                                    | Obligatorio si el objeto es un objeto del sistema (representa un archivo del sistema).          |
 | [TAMAÑO DEL OBJETO \_ \_ WPD](object-properties.md)                                                            | Obligatorio si el objeto tiene al menos un recurso.                              |
@@ -66,7 +66,7 @@ Estos objetos suelen incluir los siguientes recursos.
 
 | Nombre de recurso                                          | Obligatorio u opcional | Descripción                     |
 |--------------------------------------------------------|----------------------|---------------------------------|
-| [**WPD \_ RESOURCE \_ DEFAULT**](wpd-resource-default.md) | Requerido             | Contiene el documento físico. |
+| [**WPD \_ RESOURCE \_ DEFAULT**](wpd-resource-default.md) | Obligatorio             | Contiene el documento físico. |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: fa943e9b-d379-441f-8c6e-f0a0f5f7f1a3
 title: Finalización de una sesión de SSPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4669d3143b480df20f1a5f1d76e73cc75802766d1db83da9b75d304e256ae4dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cb1fdc51ba1c31ae4ac8abb52c6d4c4372a9d161
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119008273"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271463"
 ---
 # <a name="ending-an-sspi-session"></a>Finalización de una sesión de SSPI
 

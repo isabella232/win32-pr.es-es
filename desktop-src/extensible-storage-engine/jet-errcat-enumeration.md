@@ -60,16 +60,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f259edf0e087831cfb667caa5fa8dcf215638ab6d739812fa2e6208327a22f7c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e08ec4ce308003dc30edaa32a07000e244dc9f37
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119232805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360118"
 ---
 # <a name="jet_errcat-enumeration"></a>JET_ERRCAT enumeración
 
-Categoría de error. La jerarquía es la siguiente: JET_errcatError | |-- JET_errcatOperation | |-- JET_errcatFatal | |-- JET_errcatIO // problemas de E/S no son transitorios. | |-- JET_errcatResource | |-- JET_errcatMemory // falta de memoria (todas las variantes) | |-- JET_errcatQuota | |-- JET_errcatDisk // fuera del espacio en disco (todas las variantes) |-- JET_errcatData | |-- JET_errcatCorruption | |-- JET_errcatInconsistent // normalmente causado por una administración errónea de | |-- JET_errcatFragmentation |-- JET_errcatApi |-- JET_errcatUsage |-- JET_errcatState |-- JET_errcatObsolete
+Categoría de error. La jerarquía es la siguiente: JET_errcatError | |-- JET_errcatOperation | |-- JET_errcatFatal | |-- JET_errcatIO // problemas de E/S no son transitorios. | |-- JET_errcatResource | |-- JET_errcatMemory // falta de memoria (todas las variantes) | |-- JET_errcatQuota | |-- JET_errcatDisk // falta de espacio en disco (todas las variantes) |-- JET_errcatData | |-- JET_errcatCorruption | |-- JET_errcatInconsistent // normalmente causado por un control | |-- JET_errcatFragmentation |-- JET_errcatApi |-- JET_errcatUsage |-- JET_errcatState |-- JET_errcatObsolete
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -87,7 +87,7 @@ Dim instance As JET_ERRCAT
 public enum JET_ERRCAT
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -145,7 +145,7 @@ public enum JET_ERRCAT
 </tr>
 <tr class="even">
 <td></td>
-<td>data</td>
+<td>Datos</td>
 <td>Error relacionado con los datos.</td>
 </tr>
 <tr class="odd">
@@ -156,7 +156,7 @@ public enum JET_ERRCAT
 <tr class="even">
 <td></td>
 <td>Inconsistente</td>
-<td>Esto es similar a Daños en que la base de datos o los archivos de registro están en un estado incoherente y no conciliable entre sí. A menudo, esto se debe a un uso desacertado de la aplicación o el administrador. Recuperación: restaure a partir de la copia de seguridad, quizás la operación de reparación de utilidades de ese (que solo recupera qué datos quedan o pierden). También en el caso de la recuperación (JetInit), es posible que se pueda realizar la recuperación permitiendo la pérdida de datos.</td>
+<td>Esto es similar a Daños en que la base de datos o los archivos de registro están en un estado incoherente y no conciliable entre sí. A menudo, esto se debe a un uso desacertado de la aplicación o el administrador. Recuperación: restauración a partir de la copia de seguridad, quizás la operación de reparación de utilidades de ese (que solo recupera los datos que se quedan o pierden). También en el caso de la recuperación (JetInit), quizás se puede realizar la recuperación permitiendo la pérdida de datos.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -175,7 +175,7 @@ public enum JET_ERRCAT
 </tr>
 <tr class="even">
 <td></td>
-<td>Estado</td>
+<td>State</td>
 <td>Esta es la clasificación de las distintas señales que la API podría devolver y describe el estado de la base de datos; un caso clásico es JET_errRecordNotFound que JetSeek() puede devolver cuando no se encuentra el registro que solicitó. Recuperación: no es realmente relevante, depende en gran medida de la API.</td>
 </tr>
 <tr class="odd">
@@ -185,14 +185,14 @@ public enum JET_ERRCAT
 </tr>
 <tr class="even">
 <td></td>
-<td>Máx.</td>
+<td>Max</td>
 <td>Valor máximo de la enumeración. No se debe usar.</td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

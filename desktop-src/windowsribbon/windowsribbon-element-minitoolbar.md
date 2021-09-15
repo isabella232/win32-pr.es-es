@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e47fee9fbf2b6b0bc95153fd512f6484129dc7f3edebd56e1d97664ecc2bbef0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ceea8ba1a220674f177e740411bf98a13d7bfc2e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119881745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466242"
 ---
 # <a name="minitoolbar-element"></a>MiniToolbar, elemento
 
@@ -37,7 +37,7 @@ Representa una barra de herramientas contextual.
 
 
 
-| Atributo           | Tipo                 | Requerido       | Descripción                                                                                                                                                                                                                |
+| Atributo           | Tipo                 | Obligatorio       | Descripción                                                                                                                                                                                                                |
 |---------------------|----------------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Nombre**<br/> | xs:string<br/> | Sí<br/> | <dt> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl> |
 
@@ -63,7 +63,7 @@ Representa una barra de herramientas contextual.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Opcional.
 
@@ -78,7 +78,7 @@ Si se muestra sin [**un ContextMenu**](windowsribbon-element-contextmenu.md), **
 
  
 
-Dado que los controles de **MiniToolbar** no son accesibles mediante el teclado, los comandos que exponen deben estar disponibles en otra parte de la interfaz de usuario de la cinta de opciones.
+Dado que los controles de **MiniToolbar** no son accesibles mediante el teclado, los comandos que exponen deben estar disponibles en otra parte en la interfaz de usuario de la cinta de opciones.
 
 ## <a name="examples"></a>Ejemplos
 

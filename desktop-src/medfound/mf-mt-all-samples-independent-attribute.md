@@ -4,12 +4,12 @@ ms.assetid: 40434f63-e191-45e1-b788-5f80fe7f49ae
 title: MF_MT_ALL_SAMPLES_INDEPENDENT atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ada34232ccbc7eb30fc9a5bcb64e96542b0375140de426fae951f5e0317c9e1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f82173e99a30e033b3d90f6cfec0dc2aa8b3af97
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120060755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468704"
 ---
 # <a name="mf_mt_all_samples_independent-attribute"></a>Atributo MF \_ MT \_ ALL SAMPLES \_ \_ INDEPENDENT
 
@@ -21,7 +21,7 @@ Especifica para un tipo de medio si cada muestra es independiente de las otras m
 
 Tratar como un valor booleano.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si este atributo es **FALSE,** algunos ejemplos no se pueden usar sin hacer referencia a otros ejemplos de la secuencia. Por ejemplo, si un formato de vídeo contiene marcos delta, este atributo debe ser **FALSE.**
 
@@ -39,7 +39,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| para aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

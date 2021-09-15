@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 5ef163c8473c049d3bbe6fbfa8b36876765bf07df0b26cd1d68d3f92c5d315f4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9ff12fe39f2ea54c90530133263bceb157d79dcf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118972134"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468575"
 ---
 # <a name="acceltableentry-structure"></a>ACCELTABLEENTRY (estructura)
 
@@ -38,7 +38,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -101,7 +101,7 @@ Número de bytes insertados para asegurarse de que la estructura está alineada 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **estructura ACCELTABLEENTRY se** repite para todas las entradas de la tabla de aceleradores del recurso. La última entrada de la tabla se marca con el valor 0x0080.
 

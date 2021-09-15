@@ -1,11 +1,11 @@
 ---
-title: Método GetStatus de IWMDRMLicenseBackupRestoreStatus (wmdrmsdk. h)
-description: El método GetStatus recupera información de estado detallada sobre una operación de copia de seguridad o restauración de una licencia.
+title: Método IWMDRMLicenseBackupRestoreStatus GetStatus (Wmdrmsdk.h)
+description: El método GetStatus recupera información de estado detallada sobre una operación de copia de seguridad o restauración de licencias.
 ms.assetid: 1a695baf-0971-4dbf-90fa-1b10178a3348
 keywords:
-- Método GetStatus formato de Windows Media
-- Método GetStatus formato de Windows Media, interfaz IWMDRMLicenseBackupRestoreStatus
-- Interfaz IWMDRMLicenseBackupRestoreStatus formato de Windows Media, método GetStatus
+- Formato multimedia de windows del método GetStatus
+- Método GetStatus windows Media Format , interfaz IWMDRMLicenseBackupRestoreStatus
+- IWMDRMLicenseBackupRestoreStatus de la interfaz windows Media Format , método GetStatus
 topic_type:
 - apiref
 api_name:
@@ -18,15 +18,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 3373e71bcae9dc1054e97e8b758ac72389b9a712
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105709170"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466481"
 ---
-# <a name="iwmdrmlicensebackuprestorestatusgetstatus-method"></a>IWMDRMLicenseBackupRestoreStatus:: GetStatus (método)
+# <a name="iwmdrmlicensebackuprestorestatusgetstatus-method"></a>IWMDRMLicenseBackupRestoreStatus::GetStatus (método)
 
-El método **getStatus** recupera información de estado detallada sobre una operación de copia de seguridad o restauración de una licencia.
+El **método GetStatus** recupera información de estado detallada sobre una operación de copia de seguridad o restauración de licencias.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,22 +43,22 @@ HRESULT GetStatus(
 
 <dl> <dt>
 
-*pStatus* \[ enuncia\]
+*pStatus* \[ out\]
 </dt> <dd>
 
-Puntero a una estructura de [**Estado de restauración de copia de seguridad de WM \_ \_ \_**](wm-backup-restore-status.md) que recibe la información de estado.
+Puntero a una [**estructura WM BACKUP RESTORE \_ \_ \_ STATUS**](wm-backup-restore-status.md) que recibe la información de estado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
 | Código devuelto                                                                          | Descripción                      |
 |--------------------------------------------------------------------------------------|----------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
+| <dl> <dt>**S \_ OK**</dt> </dl> | El método se ha llevado a cabo de forma correcta.<br/> |
 
 
 
@@ -74,8 +74,8 @@ Ninguno.
 
 | Requisito | Value |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 

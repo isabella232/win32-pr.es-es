@@ -4,12 +4,12 @@ ms.assetid: a0c8de2b-b21e-4b22-96d1-2a77e33f1780
 title: System.Link.DateVisited
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71fcefa6811a07a6269640697dcafd6849158aafbeee290426ddbf30b7e7a1f9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e380e44b1afe6064e4962c5fd6430832ed9ba4e4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120090955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468475"
 ---
 # <a name="systemlinkdatevisited"></a>System.Link.DateVisited
 
@@ -45,7 +45,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

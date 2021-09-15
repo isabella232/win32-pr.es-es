@@ -4,7 +4,7 @@ description: La interfaz ID3DX11EffectType tiene acceso a las variables de efect
 ms.assetid: 700076ee-a5fe-4af2-a5f4-053c05d8ddf0
 keywords:
 - Interfaz ID3DX11EffectType direct3D 11
-- Interfaz ID3DX11EffectType Direct3D 11, descrita
+- Interfaz ID3DX11EffectType Direct3D 11 , descrita
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d397f856fec49cf9909cd7089a1067250e78ca3f97c72d913d0ffdc146efb93
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4e3c210ca60abc9e55b8864a2b121cf92be369a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118532162"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465756"
 ---
 # <a name="id3dx11effecttype-interface"></a>Interfaz ID3DX11EffectType
 
@@ -51,7 +51,7 @@ La **interfaz ID3DX11EffectType** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener información sobre un tipo de efecto de una variable de efecto, llame a [**ID3DX11EffectVariable::GetType**](id3dx11effectvariable-gettype.md).
 
@@ -75,7 +75,7 @@ Para obtener información sobre un tipo de efecto de una variable de efecto, lla
 
 <dl> <dt>
 
-[Efectos 11 Interfaces](d3d11-graphics-reference-effects11-interfaces.md)
+[Efectos 11 interfaces](d3d11-graphics-reference-effects11-interfaces.md)
 </dt> <dt>
 
 [D3DX Interfaces](d3d11-graphics-reference-d3dx11-interfaces.md)

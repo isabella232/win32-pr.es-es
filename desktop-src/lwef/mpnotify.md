@@ -3,7 +3,7 @@ title: Enumeración MPNOTIFY (MpClient.h)
 description: Posibles notificaciones de devolución de llamada.
 ms.assetid: CCD0CD89-2C6E-453F-9437-E6ED87AD9F29
 keywords:
-- Enumeración MPNOTIFY Características heredadas Windows entorno
+- Características heredadas del entorno de Windows MPNOTIFY
 - Puntero de enumeración PMPNOTIFY Características heredadas Windows entorno
 topic_type:
 - apiref
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed62a9f868aa39cbc0cfc7702afc99849005a22106892696eca857ffb20673af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: afa0eeb6cb1d610f28cc82f578617f7bd71cf886
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118747793"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359747"
 ---
 # <a name="mpnotify-enumeration"></a>Enumeración MPNOTIFY
 
 Posibles notificaciones de devolución de llamada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -443,7 +443,7 @@ Se ha iniciado una acción de limpieza.
 <span id="MPNOTIFY_THREAT_CLEAN_EVENT_COMPLETE"></span><span id="mpnotify_threat_clean_event_complete"></span>**EVENTO MPNOTIFY \_ THREAT \_ CLEAN \_ \_ COMPLETADO**
 </dt> <dd>
 
-Ha finalizado una acción de limpieza.
+Finalizó una acción de limpieza.
 
 </dd> <dt>
 
@@ -478,7 +478,7 @@ Actualización de software disponible.
 <span id="MPNOTIFY_SIGUPDATE_DOWNLOAD_START"></span><span id="mpnotify_sigupdate_download_start"></span>**INICIO DE DESCARGA DE MPNOTIFY \_ SIGUPDATE \_ \_**
 </dt> <dd>
 
-Descarga iniciada.
+Se ha iniciado la descarga.
 
 </dd> <dt>
 
@@ -562,7 +562,7 @@ Se inició el envío de elementos de ejemplo específicos. El índice de element
 <span id="MPNOTIFY_SAMPLE_ITEM_SUCCEEDED"></span><span id="mpnotify_sample_item_succeeded"></span>**EL ELEMENTO DE EJEMPLO MPNOTIFY \_ \_ SE HA INSTALADO \_ CORRECTAMENTE**
 </dt> <dd>
 
-Envío de elementos de ejemplo específicos correctamente.
+El envío de elementos de ejemplo específicos se ha publicado correctamente.
 
 </dd> <dt>
 
@@ -573,7 +573,7 @@ Error en el envío de elementos de ejemplo específicos. El código de error est
 
 </dd> <dt>
 
-<span id="MPNOTIFY_RESERVED_DATA"></span><span id="mpnotify_reserved_data"></span>**DATOS \_ RESERVADOS DE MPNOTIFY \_**
+<span id="MPNOTIFY_RESERVED_DATA"></span><span id="mpnotify_reserved_data"></span>**MPNOTIFY \_ RESERVED \_ DATA**
 </dt> <dd>
 
 Datos reservados internos.
@@ -583,7 +583,7 @@ Datos reservados internos.
 <span id="MPNOTIFY_FASTPATH_SIG_ADDED"></span><span id="mpnotify_fastpath_sig_added"></span>**SE HA AGREGADO \_ MPNOTIFY FASTPATH \_ SIG \_**
 </dt> <dd>
 
-Una firma Fastpath ha agregado o deshabilitado una firma.
+Una firma fastpath ha agregado o deshabilitado una firma.
 
 </dd> <dt>
 
@@ -640,11 +640,11 @@ El servicio AM ha detectado malware que podría haber provocado un cambio de con
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

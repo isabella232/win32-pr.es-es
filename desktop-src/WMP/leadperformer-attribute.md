@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f0fade2d85a00e60fa17ef095daffe38189620031a512ec19cc5f85d9c8e592d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c4e5495e218a5e759d868fbef6561aaf80818a7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118575125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360567"
 ---
 # <a name="leadperformer-attribute"></a>Atributo LeadPerformer
 
@@ -27,7 +27,7 @@ El **atributo LeadPerformer** es el nombre del actor potencial asociado al conte
 
 -   [DVDs](dvd-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la memoria caché de la biblioteca.
 
@@ -37,7 +37,7 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 

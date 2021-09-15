@@ -4,12 +4,12 @@ ms.assetid: 18ec02f1-6a1b-486c-9493-c435ae0103f1
 title: System.GPS.TrackNumerator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8524965887c666a3e1afdfc5bfb93dd54566553ccdd0625ef342c70d6cf39cb0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 05c94c9e7903842154862201f9dbc77059031c4b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119033513"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466891"
 ---
 # <a name="systemgpstracknumerator"></a>System.GPS.TrackNumerator
 
@@ -30,7 +30,7 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

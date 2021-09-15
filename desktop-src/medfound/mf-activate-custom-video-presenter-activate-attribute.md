@@ -4,12 +4,12 @@ ms.assetid: 65d88832-0969-4d85-bee2-fd0aa68e9f3b
 title: MF_ACTIVATE_CUSTOM_VIDEO_PRESENTER_ACTIVATE atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d17d7c54691b629caed33d0cdfffe59e7b1da9d025f25026f7416de75741a354
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 75855c18faba8568547f9efcfb19e04574c4885e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119957105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468733"
 ---
 # <a name="mf_activate_custom_video_presenter_activate-attribute"></a>Atributo MF \_ ACTIVATE \_ CUSTOM VIDEO \_ \_ PRESENTER \_ ACTIVATE
 
@@ -19,7 +19,7 @@ Especifica un objeto de activación que crea un presentador de vídeo personaliz
 
 **IUnknown\***
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si va a crear la EVR a través de un objeto de activación, puede usar este atributo para establecer un presentador de vídeo personalizado en la EVR. Use este atributo como se muestra a continuación:
 
@@ -38,7 +38,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

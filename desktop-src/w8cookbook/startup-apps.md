@@ -10,12 +10,12 @@ keywords:
 - carpeta de inicio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dbc2dc2a73a08c3aebd265c209b407646e50a6cb1b7cba630884cf719330b8dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 75a12f01dac073712512206a5c432561b4a0b75e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119815055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466267"
 ---
 # <a name="startup-apps"></a>Aplicaciones de inicio
 
@@ -26,23 +26,23 @@ ms.locfileid: "119815055"
 
 ## <a name="description"></a>Descripción
 
-Una de las grandes opciones con Windows es la capacidad de encender varios factores de forma, desde los equipos de escritorio y portátiles tradicionales hasta las tabletas de bajo consumo. Para asegurarse de que nuestros clientes mutuos tienen una gran experiencia en cualquier factor de forma que elijan con Windows, dos métricas clave de éxito que deben abordarse son el aumento de la duración de la batería y la excelente capacidad de respuesta del equipo. Para lograrlos, se han realizado mejoras en varias áreas de Windows como el ciclo de vida del proceso, los estados de suspensión y las aplicaciones de inicio (aplicaciones con inicio automatizado después del arranque de la máquina). En este tema se resaltan algunos de los impactos que las aplicaciones de inicio tienen en un dispositivo Windows y se proporcionan instrucciones a los desarrolladores (ISV/IHV) y a los OEM para replantearse los patrones de uso de las aplicaciones de inicio con el fin de mejorar la duración de la batería y la capacidad de respuesta de nuestros clientes mutuos. También se describen los cambios en Windows que ponen a los usuarios en el control de determinar cuál de las aplicaciones de inicio se puede ejecutar realmente.
+Una de las grandes opciones con Windows es la capacidad de encender varios factores de forma, desde los equipos de escritorio y portátiles tradicionales hasta las tabletas de bajo consumo. Para asegurarse de que nuestros clientes mutuos tienen una gran experiencia en cualquier factor de forma que elijan con Windows, dos métricas clave de éxito que deben abordarse son una mayor duración de la batería y una excelente capacidad de respuesta del equipo. Para lograrlos, se han realizado mejoras en varias áreas de Windows incluido el ciclo de vida del proceso, los estados de suspensión y las aplicaciones de inicio (aplicaciones con inicio automatizado después del arranque de la máquina). En este tema se resaltan algunos de los efectos que tienen las aplicaciones de inicio en un dispositivo Windows y se proporcionan instrucciones a los desarrolladores (ISV/IHV) y los OEM para que replanteen los patrones de uso de las aplicaciones de inicio con el fin de mejorar la duración de la batería y la capacidad de respuesta de nuestros clientes mutuos. También se describen los cambios en Windows que ponen a los usuarios en el control de determinar qué aplicaciones de inicio se pueden ejecutar realmente.
 
-Windows Las aplicaciones de la tienda están diseñadas para cumplir los nuevos estándares de consumo y capacidad de respuesta de la batería, y Windows administra su ciclo de vida suspendiendo o finalizando. Sin embargo, las aplicaciones de escritorio diseñadas para versiones anteriores de Windows no se han diseñado necesariamente para conservar la duración de la batería o ser sensibles a la actividad del usuario, y pueden afectar a la capacidad de respuesta del sistema (por ejemplo, cuando una aplicación envía un latido normal de 1 segundo para comprobar si hay actualizaciones o asigna previamente la memoria por adelantado en caso de que la necesite más adelante). Esto puede crear una experiencia deficiente para el usuario que compra un pc de tableta Windows con una duración de batería larga y semanas de espera, pero detecta que la duración de la batería de la tableta no logra estos objetivos. Además, dado que las aplicaciones de inicio se ejecutan en segundo plano, el número de aplicaciones que se ejecutan en el sistema puede ser significativamente mayor que lo que el usuario conoce y afectar a la capacidad de respuesta del sistema. Las aplicaciones de inicio se clasifican para incluir aquellas que aprovechan estos mecanismos para iniciarse:
+Windows Las aplicaciones de la tienda están diseñadas para cumplir los nuevos estándares de consumo y capacidad de respuesta de la batería, y Windows administra su ciclo de vida suspendiendo o finalizando. Sin embargo, las aplicaciones de escritorio diseñadas para versiones anteriores de Windows no se han diseñado necesariamente para conservar la duración de la batería o ser sensibles a la actividad del usuario, y pueden afectar a la capacidad de respuesta del sistema (por ejemplo, cuando una aplicación envía un latido normal de 1 segundo para comprobar si hay actualizaciones o asigna previamente memoria por adelantado en caso de que la necesite más adelante). Esto puede crear una experiencia deficiente para el usuario que compra un pc de tableta Windows con una larga duración de la batería y semanas de espera, pero detecta que la duración de la batería de la tableta no logra estos objetivos. Además, dado que las aplicaciones de inicio se ejecutan en segundo plano, el número de aplicaciones que se ejecutan en el sistema puede ser significativamente mayor que lo que el usuario conoce y afectar a la capacidad de respuesta del sistema. Las aplicaciones de inicio se clasifican para incluir aquellas que aprovechan estos mecanismos para empezar:
 
--   Ejecución de claves del Registro (HKLM, HKCU, nodos wow64 incluidos)
+-   Ejecutar claves del Registro (hklm, HKCU, nodos wow64 incluidos)
 -   Claves del Registro RunOnce
 -   Carpetas de inicio en el menú inicio para ubicaciones públicas y de usuario
 
-Se ha agregado nueva funcionalidad a Windows asegurarse de que los usuarios finales siempre tienen el control de las aplicaciones que se ejecutan en sus sistemas. La pestaña Inicio de Administrador de tareas muestra una lista de aplicaciones de inicio, junto con controles que permiten a los usuarios deshabilitar las aplicaciones de inicio. Para ayudar a los usuarios a determinar qué deshabilitar, Administrador de tareas una medida del impacto de cada aplicación de inicio. El impacto se evalúa en función del uso de la CPU y el disco de una aplicación en el inicio. Los valores de impacto se determinan mediante la aplicación de estos criterios:
+Se ha agregado nueva funcionalidad a Windows asegurarse de que los usuarios finales siempre tienen el control de las aplicaciones que se ejecutan en sus sistemas. La pestaña Inicio de Administrador de tareas muestra una lista de aplicaciones de inicio, junto con controles que permiten a los usuarios deshabilitar las aplicaciones de inicio. Para ayudar a los usuarios a determinar qué deshabilitar, Administrador de tareas muestra una medida del impacto de cada aplicación de inicio. El impacto se evalúa en función del uso de la CPU y el disco de una aplicación en el inicio. Los valores de impacto se determinan mediante la aplicación de estos criterios:
 
--   **Alto impacto**   Aplicaciones que usan más de un segundo de tiempo de CPU o más de 3 MB de E/S de disco en el inicio
+-   **Alto impacto**   Aplicaciones que usan más de 1 segundo de tiempo de CPU o más de 3 MB de E/S de disco en el inicio
 -   **Impacto medio**   Aplicaciones que usan 300 ms - 1000 ms de tiempo de CPU o 300 KB - 3 MB de E/S de disco
 -   **Bajo impacto**   Aplicaciones que usan menos de 300 ms de tiempo de CPU y menos de 300 KB de E/S de disco
 
-Microsoft proporciona herramientas para ayudar a los desarrolladores de aplicaciones a evaluar, analizar y tomar medidas para reducir su impacto en el inicio y mejorar la experiencia del usuario. El Kit de evaluación e implementación proporciona la capacidad de ejecutar una evaluación del rendimiento de arranque y medir el impacto de las aplicaciones que se ejecutan en el inicio. Los resultados de la evaluación contienen información detallada de análisis e corrección, si procede, para los componentes de mayor impacto en Windows inicio. Con el Windows Analizador de rendimiento, los desarrolladores de aplicaciones pueden realizar análisis profundos para encontrar la causa principal del impacto en el rendimiento y mejorar Windows de inicio. Instale el Windows ADK desde [aquí.](/previous-versions/windows/hh825494(v=win.10))
+Microsoft proporciona herramientas para ayudar a los desarrolladores de aplicaciones a evaluar, analizar y tomar medidas para reducir su impacto en el inicio y mejorar la experiencia del usuario. El Kit de evaluación e implementación proporciona la capacidad de ejecutar una evaluación del rendimiento de arranque y medir el impacto de las aplicaciones que se ejecutan en el inicio. Los resultados de la evaluación contienen información detallada de análisis y corrección, si procede, para los componentes de mayor impacto en Windows inicio. Con el Windows Analizador de rendimiento, los desarrolladores de aplicaciones pueden realizar análisis profundos para encontrar la causa principal del impacto en el rendimiento y mejorar Windows de inicio. Instale el Windows ADK desde [aquí.](/previous-versions/windows/hh825494(v=win.10))
 
-## <a name="guidance"></a>Guía
+## <a name="guidance"></a>Instrucciones
 
 Las aplicaciones de inicio abarcan varias categorías, como se describe en la tabla siguiente. Un conjunto de recomendaciones para desarrolladores se asigna a las categorías de aplicaciones de inicio para alinearse con los Windows funcionales descritos anteriormente.
 
@@ -61,7 +61,7 @@ Supervisión y actualización de usuarios para actualizaciones en línea
 **Tarea de mantenimiento**
 
 > [!Note]  
-> Todas las actualizaciones deben ser tareas de mantenimiento, sin ningún requisito de interacción de la interfaz de usuario. Las aplicaciones solo deben actualizarse de forma silenciosa y revertir en caso de error
+> Todas las actualizaciones deben ser tareas de mantenimiento, sin requisitos de interacción con la interfaz de usuario. Las aplicaciones solo deben actualizarse de forma silenciosa y revertir en caso de error
 
 <br/>
 
@@ -69,7 +69,7 @@ ${ROWSPAN2}$**Asistencia de hardware**${REMOVE}$
 
 Puntos de acceso alternativos
 
-Proporcionar acceso a Windows y aplicaciones a las que se puede acceder a través de otros puntos de acceso de Windows
+Proporcione acceso a Windows y aplicaciones que son accesibles a través de otros puntos de acceso de Windows
 
 **Remove**
 
@@ -80,7 +80,7 @@ Proporcionar acceso a Windows y aplicaciones a las que se puede acceder a travé
 
 Notificadores
 
-Proporcionar a los usuarios notificaciones relacionadas con sus dispositivos
+Proporcionar a los usuarios notificaciones relativas a sus dispositivos
 
 **Remove**
 
@@ -100,7 +100,7 @@ Algunas de las actividades preliminares necesarias para las aplicaciones se desc
 
 <br/>
 
-${ROWSPAN4}$**(Utilidad)**${REMOVE}$  
+${ROWSPAN4}$**Utilidad**${REMOVE}$  
 
 Sincronización de PC
 
@@ -110,7 +110,7 @@ Proporcionar funcionalidad de sincronización en varios sistemas
 
 Copia de seguridad y recuperación
 
-Punto de entrada para guardar y restaurar el estado de los archivos, la configuración o sistemas completos
+Punto de entrada para guardar y restaurar el estado de los archivos, la configuración o todos los sistemas
 
 **Windows Aplicación de la Tienda para la interacción con los usuarios**
 
@@ -133,9 +133,9 @@ Proporcionar notificaciones y supervisión del estado del sistema no solicitados
 
 ${ROWSPAN2}$**Seguridad**${REMOVE}$  
 
-Filtros de control & parentales
+Filtros de & control parental
 
-Aplicación de reglas y restricciones establecidas para el acceso y el uso de Internet
+Aplicación de reglas y restricciones establecidas para el acceso a Internet y el uso
 
 **Startup**
 
@@ -159,7 +159,7 @@ Reproducir, almacenar y administrar música
 
 **Photo & Video**
 
-Detección, registro, representación, almacenamiento y administración de fotos y vídeos
+Detección, grabación, representación, almacenamiento y administración de fotos y vídeos
 
 **Windows Aplicación de la Tienda**
 
@@ -180,7 +180,7 @@ Llamar la atención sobre los bienes y servicios disponibles para la compra
  
 
 > [!Note]  
-> Las directrices de las aplicaciones de accesibilidad están cubiertas por interacciones directas independientes con isv. Consulte [*Programming for Accesibilidad (Programación*](../winauto/ease-of-access---assistive-technology-registration.md) para Accesibilidad para obtener más información).
+> Las directrices de las aplicaciones de accesibilidad están cubiertas por interacciones directas independientes con ISV. Vea [*Programming for Accesibilidad (Programación*](../winauto/ease-of-access---assistive-technology-registration.md) para Accesibilidad para obtener más información).
 
  
 
@@ -197,11 +197,11 @@ La información agregada para desarrollar aplicaciones Windows Store está dispo
 Ejemplos:
 
 -   [Desarrollo de Windows Store](/previous-versions/windows/apps/hh452744(v=win.10))
--   [Desarrollo de aplicaciones Windows Store que usan medios](/previous-versions/windows/apps/hh465132(v=win.10))
+-   [Desarrollo de Windows store que usan medios](/previous-versions/windows/apps/hh465132(v=win.10))
 
 **Tareas de mantenimiento automático**
 
-La actividad en segundo plano periódica debe diseñarse como Mantenimiento automático tareas. Se programan en tiempo de inactividad del sistema para aumentar la capacidad de respuesta y la eficiencia energética de Windows equipos. Las tareas de mantenimiento se pueden crear y configurar mediante una aplicación de escritorio en el momento de la instalación, mediante el SDK de escritorio. Consulte el Mantenimiento automático siguiente para obtener más información.
+La actividad en segundo plano periódica debe diseñarse Mantenimiento automático tareas. Se programan en tiempo de inactividad del sistema para aumentar la capacidad de respuesta y la eficiencia energética de Windows equipos. Las tareas de mantenimiento se pueden crear y configurar mediante una aplicación de escritorio en el momento de la instalación, mediante el SDK de escritorio. Consulte el Mantenimiento automático siguiente para obtener más información.
 
 ## <a name="resources"></a>Recursos
 

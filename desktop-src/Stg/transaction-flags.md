@@ -4,12 +4,12 @@ description: Un objeto se puede abrir en modo directo o en modo de transacción.
 ms.assetid: f3be52b9-957c-4ab9-8fc1-e765faae2489
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79a3f389def4bdbb9d0cabf92500b316ae354878ec5f790b44e9f01121aeb57a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 581d21db07921fe6d635aac44ceed256fee4ad85
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118886787"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270548"
 ---
 # <a name="transaction-flags"></a>Marcas de transacción
 

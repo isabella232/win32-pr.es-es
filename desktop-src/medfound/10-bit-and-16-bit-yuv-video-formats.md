@@ -1,19 +1,19 @@
 ---
-description: En este tema se describen los formatos YUV de 10 y 16 bits que se recomiendan para capturar, procesar y mostrar vídeo en el sistema operativo Microsoft Windows.
+description: En este tema se describen los formatos YUV de 10 y 16 bits que se recomiendan para capturar, procesar y mostrar vídeo en el sistema operativo microsoft Windows.
 ms.assetid: fcaaaa6f-f886-4f6e-9c3c-e513ccc90d37
 title: Formatos de vídeo YUV de 10 y 16 bits
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 09652929257c071bd735e1d6c7ec36e1767d904da7d2364ac3e30c61c81f342f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6bbc357653848cd51ce6f56ebd8a1da3e5f60403
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118065743"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467217"
 ---
 # <a name="10-bit-and-16-bit-yuv-video-formats"></a>Formatos de vídeo YUV de 10 y 16 bits
 
-En este tema se describen los formatos YUV de 10 y 16 bits que se recomiendan para capturar, procesar y mostrar vídeo en el sistema operativo Microsoft Windows.
+En este tema se describen los formatos YUV de 10 y 16 bits que se recomiendan para capturar, procesar y mostrar vídeo en el sistema operativo microsoft Windows.
 
 Este tema contiene las siguientes secciones:
 
@@ -40,7 +40,7 @@ Cuando el hardware gráfico lee una superficie que contiene una representación 
 
 En los formatos que contienen alfa, un píxel completamente transparente tiene un valor alfa de cero y un píxel completamente opaco tiene un valor alfa de (2^n) – 1, donde n es el número de bits alfa. Alfa se supone que es un valor lineal que se aplica a cada componente después de que el componente se haya convertido a su forma lineal normalizada.
 
-En el caso de las imágenes en la memoria de vídeo, el controlador de gráficos selecciona la alineación de la memoria de la superficie. La superficie debe estar **alineada con DWORD.** Es decir, se garantiza que las líneas individuales de una superficie comienzan en un límite de 32 bits, aunque la alineación puede ser mayor que 32 bits. El origen (0,0) siempre es la esquina superior izquierda de la superficie.
+En el caso de las imágenes en la memoria de vídeo, el controlador de gráficos selecciona la alineación de la memoria de la superficie. La superficie debe estar **alineada con DWORD.** Es decir, se garantiza que las líneas individuales de una superficie comienzan en un límite de 32 bits, aunque la alineación puede ser superior a 32 bits. El origen (0,0) siempre es la esquina superior izquierda de la superficie.
 
 Para los fines de esta documentación, el término *U* es equivalente a *Cb* y el término *V* es equivalente a *Cr*.
 
@@ -85,7 +85,7 @@ Con este esquema, se han definido los siguientes códigos FOURCC. No se han defi
 
  
 
-Los GUID de subtipo también se han definido a partir de estos FOURCC; consulte [GUID de subtipo de vídeo.](video-subtype-guids.md)
+Los GUID de subtipo también se han definido a partir de estos FOURCC; vea [GUID de subtipo de vídeo.](video-subtype-guids.md)
 
 ## <a name="surface-definitions"></a>Definiciones de surface
 
@@ -130,7 +130,7 @@ En estos dos formatos empaquetados, cada par de píxeles se almacena como una ma
 
 ![diagrama que muestra el diseño de píxeles y216 e y210.](images/6f68aeeb-18ca-48ee-82c4-5b79d5510e9f.gif)
 
-La primera **palabra** de la matriz contiene el primer ejemplo Y del  par, la segunda **palabra** contiene el ejemplo U, la tercera palabra contiene el segundo ejemplo Y y la cuarta **palabra** contiene la muestra V.
+La primera **PALABRA** de la matriz contiene la primera muestra Y del  par, la segunda **WORD** contiene el ejemplo U, la tercera WORD contiene la segunda muestra Y y la cuarta **word** contiene la muestra V.
 
 Y210 es idéntico a Y216, salvo que cada muestra contiene solo 10 bits de datos significativos. Los 6 bits menos significativos se establecen en cero, como se ha descrito anteriormente.
 

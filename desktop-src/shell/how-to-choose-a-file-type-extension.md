@@ -3,12 +3,12 @@ description: Los tipos de archivo se identifican mediante una extensión de nomb
 title: Cómo elegir una extensión de tipo de archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 438af6ff9715ed9ebb83e427a3d380bd1dfc78d37c5e55385dfc89e88410b33d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 351a90be42125b26433c5849a2c47e231cc8b460
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119593235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360372"
 ---
 # <a name="how-to-choose-a-file-type-extension"></a>Cómo elegir una extensión de tipo de archivo
 
@@ -18,7 +18,7 @@ Los tipos de archivo se identifican mediante una extensión de nombre de archivo
 
 ### <a name="step-1"></a>Paso 1:
 
-Elija una extensión de nombre de archivo larga que quiera usar para identificar el tipo de archivo. Para obtener más información, vea [Controladores de tipos de archivo](fa-file-extensions.md).
+Elija una extensión de nombre de archivo larga que desee usar para identificar el tipo de archivo. Para obtener más información, vea [Controladores de tipos de archivo](fa-file-extensions.md).
 
 ### <a name="step-2"></a>Paso 2:
 

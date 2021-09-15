@@ -4,12 +4,12 @@ ms.assetid: 16011302-7c2d-4c34-9953-51cceb96e4b3
 title: ABM_ACTIVATE mensaje (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 224f04a88a1e69a1a67fc08c6018d33af2bcdbc6f34ff9fbd00d1dd76f82ce5c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 94a44bcc33efcd3d1a9af5e7e2abca33893e9fe9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118461138"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468311"
 ---
 # <a name="abm_activate-message"></a>Mensaje ACTIVATE de ABM \_
 
@@ -40,7 +40,7 @@ Puntero a una [**estructura APPBARDATA**](/windows/desktop/api/Shellapi/ns-shell
 
 Siempre devuelve **TRUE.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje se omite si el **miembro hWnd** de la estructura a la que apunta *pabd* identifica una barra de aplicaciones autohide. El sistema establece automáticamente el orden Z para mostrar automáticamente las barras de aplicaciones.
 
@@ -48,7 +48,7 @@ Este mensaje se omite si el **miembro hWnd** de la estructura a la que apunta *p
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |

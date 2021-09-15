@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - tiptsf.dll
-ms.openlocfilehash: 99fc67b5ba6495e2bdfb8a54de2412ca01cbdd37475d08d20d227b203f2da1bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c66e625639aa7088b1b3934a2f984d0f4097536
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118716435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467968"
 ---
 # <a name="itipautocompleteproviderupdatependingtext-method"></a>ITipAutocompleteProvider::UpdatePendingText (método)
 
@@ -61,7 +61,7 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este texto no contendrá el texto ya insertado en el campo centrado. El proveedor de autocompletar es responsable de tener en cuenta el texto del campo actual y la selección para generar la lista de autocompletar. Cuando *bstrPendingText* es **NULL,** la lista autocompletar se genera con el texto actual a la izquierda de la selección en el campo .
 
@@ -69,16 +69,16 @@ Este texto no contendrá el texto ya insertado en el campo centrado. El proveedo
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                                       |
-| Header<br/>                   | <dl> <dt>TipAutoComplete.h (también requiere Peninputpanel \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>TipAutoComplete.h (también requiere Peninputpanel \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Tiptsf.dll</dt> </dl>                                           |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

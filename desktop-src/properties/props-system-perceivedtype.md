@@ -4,12 +4,12 @@ ms.assetid: dc5122a1-43b3-4c91-a44f-315fec5b4862
 title: System.PerceivedType
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fa74fcb51163bf1f4d694ec11d9db820f97ffa34f4e57d0f7a85689d051697c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6fc0be5e2ba481d113981efc264c4da66428e675
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118052483"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468445"
 ---
 # <a name="systemperceivedtype"></a>System.PerceivedType
 
@@ -157,7 +157,7 @@ propertyDescription
             text = Contacts
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h. El shell asigna automáticamente este valor.
 

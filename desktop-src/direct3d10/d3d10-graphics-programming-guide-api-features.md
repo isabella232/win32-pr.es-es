@@ -4,16 +4,16 @@ ms.assetid: 2e24de6c-4f73-4844-b87f-3487ef069db6
 title: Características de API (Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 416018fcddf2643ba9fbc8e633ec2f636b8158ff329780a55205034e5dbbe240
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ab12285509441bb429c78d995e68ed1753ceb5bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119858665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359025"
 ---
 # <a name="api-features-direct3d-10"></a>Características de API (Direct3D 10)
 
-La canalización de gráficos de Direct3D 10 representa un cambio de arquitectura fundamental, recompilado desde el principio en hardware y software para dar potencia a la próxima generación de juegos y aplicaciones multimedia 3D. Usa el modelo Windows display driver model (WDDM), que permite mejoras de rendimiento y comportamiento, como la memoria de GPU virtual.
+La canalización de gráficos de Direct3D 10 representa un cambio de arquitectura fundamental, recompilado desde el principio en hardware y software para dar potencia a la próxima generación de juegos y aplicaciones multimedia 3D. Usa el modelo de Windows modelo de controlador de pantalla (WDDM), que permite mejoras de rendimiento y comportamiento, como la memoria de GPU virtual.
 
 Los desarrolladores familiarizados con Direct3D 9 detectarán una serie de mejoras funcionales y mejoras de rendimiento en Direct3D 10, entre las que se incluyen:
 

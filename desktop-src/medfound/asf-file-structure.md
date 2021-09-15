@@ -4,12 +4,12 @@ ms.assetid: 4a817efa-5452-46bf-8921-2ba199c21949
 title: Estructura de archivos asf
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80dd154978f3796236cd39c0db6743101da8099b695096d375d9214d0bcec799
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 672067b5f933884326038a93b6d4538c68558856
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117881236"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468774"
 ---
 # <a name="asf-file-structure"></a>Estructura de archivos asf
 
@@ -21,7 +21,7 @@ La unidad base de organización para los archivos ASF se denomina *objeto*. Un o
 
 
 
-| data                                                        | Size     |
+| Datos                                                        | Size     |
 |-------------------------------------------------------------|----------|
 | GUID que identifica el objeto.                          | 128 bits |
 | El tamaño del objeto.                                     | 64 bits. |
@@ -62,11 +62,11 @@ El objeto de encabezado es obligatorio y aparece al principio de cada archivo AS
 
 El objeto header contiene varios subelementos madatory:
 
--   El objeto De propiedades de archivo describe los atributos globales del archivo, como el tamaño del archivo, la duración de reproducción, el número de paquetes de datos, el tamaño mínimo y máximo de paquetes y la velocidad de bits máxima.
+-   El objeto de propiedades de archivo describe los atributos globales del archivo, como el tamaño del archivo, la duración de reproducción, el número de paquetes de datos, el tamaño mínimo y máximo de paquetes y la velocidad de bits máxima.
 -   El objeto de extensión de encabezado permite agregar funcionalidad adicional a un archivo ASF mientras se mantiene la compatibilidad con versiones anteriores.
--   El objeto Propiedades de secuencia describe una secuencia del archivo. Un archivo ASF debe contener al menos una secuencia y, por tanto, al menos un objeto de propiedades de secuencia.
+-   El objeto De propiedades de secuencia describe una secuencia del archivo. Un archivo ASF debe contener al menos una secuencia y, por tanto, al menos un objeto de propiedades de secuencia.
 
-El objeto de encabezado puede contener información opcional adicional, incluidos los metadatos sobre el archivo (como el título y el autor), una lista de los códecs usados para codificar el archivo y la información de protección de contenido.
+El objeto header puede contener información opcional adicional, incluidos los metadatos sobre el archivo (por ejemplo, title y author), una lista de los códecs usados para codificar el archivo y la información de protección de contenido.
 
 ### <a name="data-object"></a>Objetos de datos
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 46d44f2e2df24c5ee1cbf646643810e09d007eb15ba6c9a352eb492dfb104752
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a4ce4205ee8bcc73c78bd1aabe7d8659ac3f5489
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119943115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468259"
 ---
 # <a name="diskquotacontroldefaultquotathreshold-property"></a>Propiedad DiskQuotaControl.DefaultQuotaThreshold
 
@@ -26,7 +26,7 @@ Establece u obtiene el umbral de cuota predeterminado.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```JScript
@@ -40,9 +40,9 @@ DiskQuotaControl.DefaultQuotaThreshold = iDefaultQuotaThreshold
 
 Valor **entero** que se establece en el umbral de advertencia predeterminado para los nuevos usuarios, en bytes.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El umbral de cuota predeterminado se aplica automáticamente a los nuevos usuarios del volumen. Si el uso de disco de un usuario supera este valor y la propiedad [**LogQuotaThreshold**](diskquotacontrol-logquotathreshold.md) se establece en **TRUE,** el sistema genera una entrada del registro de eventos. Por ejemplo, si el umbral predeterminado es 10,0 MB, el valor de la propiedad es "10,0 MB". Si el volumen no tiene ningún umbral predeterminado, la propiedad se establece en "Sin límite" o en el equivalente localizado.
+El umbral de cuota predeterminado se aplica automáticamente a los nuevos usuarios del volumen. Si el uso del disco de un usuario supera este valor y la propiedad [**LogQuotaThreshold**](diskquotacontrol-logquotathreshold.md) se establece en **TRUE,** el sistema genera una entrada del registro de eventos. Por ejemplo, si el umbral predeterminado es 10,0 MB, el valor de la propiedad es "10,0 MB". Si el volumen no tiene ningún umbral predeterminado, la propiedad se establece en "Sin límite" o en el equivalente localizado.
 
 ## <a name="requirements"></a>Requisitos
 

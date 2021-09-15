@@ -1,19 +1,19 @@
 ---
-description: Modo de medición utilizado por la cámara, tomado de la información de Archivo de imagen intercambiable (EXIF).
+description: Modo de medición usado por la cámara, tomado de la información de Archivo de imagen intercambiable (EXIF).
 ms.assetid: 9dd031a8-f1fa-4753-a86b-18051c624a00
 title: System.Photo.MeteringMode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd6eb62320e8561e9c486ad34816647ac9176912d49200c56409913f4efa8e19
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6e90fff67abe04486504ecda67684f85cb5ac1a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118228135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468389"
 ---
 # <a name="systemphotometeringmode"></a>System.Photo.MeteringMode
 
-Modo de medición utilizado por la cámara, tomado de la información de Archivo de imagen intercambiable (EXIF).
+Modo de medición usado por la cámara, tomado de la información de Archivo de imagen intercambiable (EXIF).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -112,7 +112,7 @@ propertyDescription
             defineName = PHOTO_METERINGMODE_PARTIAL
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 
@@ -120,7 +120,7 @@ Los valores PKEY se definen en Propkey.h.
 
 <dl> <dt>
 
-[Exchangeable Image File Format para cámaras digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format para cámaras de imágenes digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
 [propertyDescription](./propdesc-schema-propertydescription.md)

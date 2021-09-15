@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47208d1fad03a57e26d1f5591adf658c7553a9087254b49c7aecfd904bd4d95f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8ff42e56e549100044db0881bb38ade5f2f1711a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118335752"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359477"
 ---
 # <a name="playlistsetiteminfo-method"></a>Método Playlist.setItemInfo
 
@@ -61,7 +61,7 @@ Playlist.setItemInfo(
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un uso especial del **método setItemInfo** consiste en ordenar los elementos de la lista de reproducción mediante el atributo SortAttribute. En el JScript siguiente se ordena una lista de reproducción por los valores del atributo UserLastPlayedTime. La lista de reproducción de variables es una referencia a un objeto **Playlist.**
 
@@ -84,7 +84,7 @@ Vea la [propiedad attributeCount](playlist-attributecount.md) para obtener códi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

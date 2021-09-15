@@ -3,7 +3,7 @@ title: Propiedad SplitButtonGallery.MenuGroups
 description: Representa un contenedor para un conjunto de elementos de menú desplegable en un control SplitButtonGallery.
 ms.assetid: e30fcf9a-488b-423a-8bc4-fccbc78f74de
 keywords:
-- Propiedad SplitButtonGallery.MenuGroups Windows Ribbon
+- Propiedad SplitButtonGallery.MenuGroups Windows Cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 931a66ffca192a1655f3eeffc405c4c02c8e298c28fe9cb9d0d8c6612e29d793
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 72176e7d7e79b076c3a7cf4d1fd847aa4f4e0561
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119441725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466522"
 ---
 # <a name="splitbuttongallerymenugroups-property"></a>Propiedad SplitButtonGallery.MenuGroups
 
@@ -55,9 +55,9 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Obligatorio.
+Necesario.
 
 Debe producirse exactamente una vez para [**cada elemento SplitButtonGallery.**](windowsribbon-element-splitbuttongallery.md)
 
@@ -98,7 +98,7 @@ En esta sección de código se muestra la declaración de control **SplitButtonG
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>              |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 

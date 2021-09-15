@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50d4b404988e8b317ec7b090adcb96aac8e26a5a82590aa1138848dc797e3e79
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c9b0cd48d45ac5e5e5d77d0150b8acdf13347e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118115828"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465713"
 ---
 # <a name="iwmperrorwebhelp-method"></a>IWMPError::webHelp (método)
 
-El **método webHelp** inicia la Reproductor de Windows Media Web Help para mostrar más información sobre el primer error en la cola de errores (índice cero).
+El **método webHelp** inicia la Reproductor de Windows Media web para mostrar más información sobre el primer error en la cola de errores (índice cero).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las páginas de Ayuda web siempre contienen la información más reciente y más detallada sobre Reproductor de Windows Media errores. Este método transfiere automáticamente la otra información necesaria para la Ayuda web, como la versión del sistema operativo que se usa.
 
@@ -64,7 +64,7 @@ Para acceder directamente a las páginas de Ayuda web, use el código de error s
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se crea un botón que inicia la página microsoft Reproductor de Windows Media Web Help en el explorador. El objeto AxWMPLib.AxWindowsMediaPlayer se representa mediante la variable denominada player.
+En el ejemplo siguiente se crea un botón que inicia la Reproductor de Windows Media Web Help de Microsoft en el explorador. El objeto AxWMPLib.AxWindowsMediaPlayer se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -94,7 +94,7 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -102,7 +102,7 @@ End Sub
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e79453ee2d69a0c6b227006416e49b4d4c24b99b3b02dd2bd00cd3bafafc5b9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2d171fa1afc129dd1d13c1d9d12d71c4370cba9a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119734845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467016"
 ---
 # <a name="iwmpnetworksetproxyport-method"></a>IWMPNetwork::setProxyPort (método)
 
@@ -73,7 +73,7 @@ Implements IWMPNetwork.setProxyPort
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método no tiene ningún efecto a menos que el valor recuperado de **IWMPNetwork.getProxySettings** sea 2 (use la configuración manual).
 
@@ -136,7 +136,7 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -144,7 +144,7 @@ End Sub
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c781c441478d6a16b38e6d835077d4fc0f457b14d5a63f1e365c6c8320cbc6c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 158e350dc3d85b99b4651c448c8b1b7d51a1ce14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119840295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359778"
 ---
 # <a name="apiretrievecolumnasint64-method-jet_sesid-jet_tableid-jet_columnid-retrievecolumngrbit"></a>Método Api.RetrieveColumnAsInt64 (JET_SESID, JET_TABLEID, JET_COLUMNID, RetrieveColumnGrbit)
 
@@ -95,16 +95,16 @@ public static Nullable<long> RetrieveColumnAsInt64(
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [System.Nullable](/dotnet/api/system.nullable-1)\<[Int64](/dotnet/api/system.int64)\>  
-Los datos recuperados de la columna como un valor long. Null si la columna es NULL.  
+Los datos recuperados de la columna como long. Null si la columna es NULL.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 
-[Sobrecarga de RetrieveColumnAsInt64](./api.retrievecolumnasint64-method.md)
+[Sobrecarga retrieveColumnAsInt64](./api.retrievecolumnasint64-method.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

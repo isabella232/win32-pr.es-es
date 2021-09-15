@@ -4,12 +4,12 @@ description: ShowPopupMenu (método)
 ms.assetid: 7f964d53-2594-41b1-9450-1ba7e9f85882
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0cfd080adcf0158a628f019b4d48be5cd10b9c5b47d7a4b71ccd2393ad83ce6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b0325a552cc3c1f91a64c1240964f1d0c329292c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119600995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468781"
 ---
 # <a name="showpopupmenu-method"></a>ShowPopupMenu (método)
 
@@ -33,8 +33,8 @@ Muestra el menú emergente del carácter en la ubicación especificada.
 
 | Parte | Descripción                                                                                                                                          |
 |------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *x*  | Obligatorio. Valor entero que indica la coordenada de pantalla horizontal *(x)* para mostrar el menú. Estas coordenadas deben especificarse en píxeles. |
-| *y*  | Obligatorio. Valor entero que indica la coordenada de pantalla vertical (*y*) para mostrar el menú. Estas coordenadas deben especificarse en píxeles.   |
+| *x*  | Necesario. Valor entero que indica la coordenada de pantalla horizontal *(x)* para mostrar el menú. Estas coordenadas deben especificarse en píxeles. |
+| *y*  | Necesario. Valor entero que indica la coordenada de pantalla vertical (*y*) para mostrar el menú. Estas coordenadas deben especificarse en píxeles.   |
 
 
 
@@ -42,7 +42,7 @@ Muestra el menú emergente del carácter en la ubicación especificada.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El agente muestra automáticamente el menú emergente del carácter cuando el usuario hace clic con el botón derecho en el carácter. Si establece [**AutoPopupMenu**](autopopupmenu-property.md) en **False,** puede usar este método para mostrar el menú.
 

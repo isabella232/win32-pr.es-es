@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: a542b6a0432ccf7065d94eeb8ebb3acbd8e2ace22044f2cc8984a1f4b2404299
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d7c175b0c90853a592e0ff979095d41432c16b38
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119846085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468527"
 ---
 # <a name="enumprinterdata-function"></a>Función EnumPrinterData
 
@@ -63,9 +63,9 @@ Identificador de la impresora cuyos datos de configuración se obtendrán. Use l
 
 Valor de índice que especifica el valor de datos de configuración que se recuperará.
 
-Establezca este parámetro en cero para la primera llamada a **EnumPrinterData para** un identificador de impresora especificado. A continuación, incremente el parámetro en uno para las llamadas posteriores que impliquen la misma impresora, hasta que la función devuelva ERROR \_ NO \_ MORE \_ ITEMS. Consulte la siguiente sección Comentarios para obtener más información.
+Establezca este parámetro en cero para la primera llamada a **EnumPrinterData** para un identificador de impresora especificado. A continuación, incremente el parámetro en uno para las llamadas posteriores que impliquen la misma impresora, hasta que la función devuelva ERROR \_ NO \_ MORE \_ ITEMS. Consulte la siguiente sección Comentarios para obtener más información.
 
-Si usa la técnica mencionada en las descripciones de los parámetros *cbValueName* y *cbData* para obtener los valores de tamaño de búfer adecuados, estableciendo ambos parámetros en cero en una primera llamada a **EnumPrinterData** para un identificador de impresora especificado, el valor de *dwIndex* no importa para esa llamada. Establezca *dwIndex* en cero en la siguiente llamada a **EnumPrinterData para** iniciar el proceso de enumeración real.
+Si usa la técnica mencionada en las descripciones de los parámetros *cbValueName* y *cbData* para obtener los valores de tamaño de búfer adecuados, estableciendo ambos parámetros en cero en una primera llamada a **EnumPrinterData** para un identificador de impresora especificado, el valor de *dwIndex* no importa para esa llamada. Establezca *dwIndex* en cero en la siguiente llamada a **EnumPrinterData** para iniciar el proceso de enumeración real.
 
 Los valores de datos de configuración no están ordenados. Los nuevos valores tendrán un índice arbitrario. Esto significa que la **función EnumPrinterData** puede devolver valores en cualquier orden.
 
@@ -81,9 +81,9 @@ Puntero a un búfer que recibe el nombre del valor de datos de configuración, i
 *cbValueName* \[ En\]
 </dt> <dd>
 
-Tamaño, en bytes, del búfer al que apunta *pValueName.*
+Tamaño, en bytes, del búfer al que apunta *pValueName*.
 
-Si desea que el sistema operativo proporcione un tamaño de búfer adecuado, establezca este parámetro y el parámetro *cbData* en cero para la primera llamada a **EnumPrinterData** para un identificador de impresora especificado. Cuando la función devuelve un resultado, la variable a la que apunta *kbValueName* contendrá un tamaño de búfer lo suficientemente grande como para enumerar correctamente todos los nombres de valor de datos de configuración de la impresora.
+Si desea que el sistema operativo proporcione un tamaño de búfer adecuado, establezca este parámetro y el parámetro *cbData* en cero para la primera llamada a **EnumPrinterData** para un identificador de impresora especificado. Cuando la función devuelve un resultado, la variable a la que apunta *el parámetronameValueName* contendrá un tamaño de búfer lo suficientemente grande como para enumerar correctamente todos los nombres de valor de los datos de configuración de la impresora.
 
 </dd> <dt>
 
@@ -104,9 +104,9 @@ Puntero a una variable que recibe un código que indica el tipo de datos almacen
 *pData* \[ out\]
 </dt> <dd>
 
-Puntero a un búfer que recibe el valor de datos de configuración.
+Puntero a un búfer que recibe el valor de los datos de configuración.
 
-Este parámetro puede ser **NULL si** no se requiere el valor de los datos de configuración.
+Este parámetro puede ser **NULL** si no se requiere el valor de los datos de configuración.
 
 </dd> <dt>
 
@@ -115,7 +115,7 @@ Este parámetro puede ser **NULL si** no se requiere el valor de los datos de co
 
 Tamaño, en bytes, del búfer al que apunta *pData*.
 
-Si desea que el sistema operativo proporcione un tamaño de búfer adecuado, establezca este parámetro y el parámetro *cbValueName* en cero para la primera llamada a **EnumPrinterData** para un identificador de impresora especificado. Cuando la función devuelve un resultado, la variable a la que apunta *pwData* contendrá un tamaño de búfer lo suficientemente grande como para enumerar correctamente todos los nombres de valor de datos de configuración de la impresora.
+Si desea que el sistema operativo proporcione un tamaño de búfer adecuado, establezca este parámetro y el parámetro *cbValueName* en cero para la primera llamada a **EnumPrinterData** para un identificador de impresora especificado. Cuando la función devuelve un resultado, la variable a la que apunta *pwData* contendrá un tamaño de búfer lo suficientemente grande como para enumerar correctamente todos los nombres de valor de los datos de configuración de la impresora.
 
 </dd> <dt>
 
@@ -124,7 +124,7 @@ Si desea que el sistema operativo proporcione un tamaño de búfer adecuado, est
 
 Puntero a una variable que recibe el número de bytes almacenados en el búfer al que apunta *pData*.
 
-Este parámetro puede ser **NULL si** *pData* es **NULL.**
+Este parámetro puede ser **NULL** si *pData* es **NULL.**
 
 </dd> </dl>
 
@@ -136,18 +136,18 @@ Si se produce un error en la función, el valor devuelto es un código de error 
 
 La función devuelve ERROR NO MORE ITEMS cuando no hay más valores de datos de configuración que recuperar \_ para un identificador de impresora \_ \_ especificado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
-**EnumPrinterData recupera los** datos de configuración de impresora establecidos por la [**función SetPrinterData.**](setprinterdata.md) Los datos de configuración de una impresora constan de un conjunto de valores con nombre y con tipo. La **función EnumPrinterData** obtiene uno de estos valores, y su nombre y un código de tipo, cada vez que se llama a él. Llame a **la función EnumPrinterData varias** veces seguidas para obtener todos los valores de datos de configuración de una impresora.
+**EnumPrinterData recupera** los datos de configuración de impresora establecidos por [**la función SetPrinterData.**](setprinterdata.md) Los datos de configuración de una impresora constan de un conjunto de valores con nombre y con tipo. La **función EnumPrinterData** obtiene uno de estos valores, su nombre y un código de tipo, cada vez que lo llame. Llame a **la función EnumPrinterData** varias veces seguidas para obtener todos los valores de datos de configuración de una impresora.
 
-Los datos de configuración de impresora se almacenan en el Registro. Al enumerar los datos de configuración de la impresora, debe evitar llamar a funciones del Registro que puedan cambiar los datos.
+Los datos de configuración de la impresora se almacenan en el Registro. Al enumerar los datos de configuración de la impresora, debe evitar llamar a funciones del Registro que podrían cambiar los datos.
 
-Si desea que el sistema operativo proporcione un tamaño de búfer adecuado, llame primero a **EnumPrinterData** con los parámetros *cbValueName* y *cbData* establecidos en cero, como se indicó anteriormente en la sección Parámetros. El valor de *dwIndex* no importa para esta llamada. Cuando la función devuelve un \* *resultado,nameValueName* y \* *pwData* contendrán tamaños de búfer lo suficientemente grandes como para enumerar todos los nombres y valores de los valores de los datos de configuración de la impresora. En la siguiente llamada, asigne el nombre de valor y los búferes de datos, establezca *cbValueName* y *cbData* en los tamaños en bytes de los búferes asignados y *establezca dwIndex* en cero. A partir de entonces, continúe con la llamada a la función **EnumPrinterData,** *incrementando dwIndex* en una cada vez, hasta que la función devuelva ERROR \_ NO MORE \_ \_ ITEMS.
+Si desea que el sistema operativo proporcione un tamaño de búfer adecuado, llame primero **a EnumPrinterData** con los parámetros *cbValueName* y *cbData* establecidos en cero, como se indicó anteriormente en la sección Parámetros. El valor de *dwIndex* no importa para esta llamada. Cuando la función devuelve un \* *resultado,nameValueName* y \* *pwData* contendrán tamaños de búfer lo suficientemente grandes como para enumerar todos los valores y nombres de los valores de los datos de configuración de la impresora. En la siguiente llamada, asigne el nombre del valor y los búferes de datos, establezca *cbValueName* y *cbData* en los tamaños en bytes de los búferes asignados y *establezca dwIndex* en cero. A partir de ese momento, continúe con la llamada a la función **EnumPrinterData,** incrementando *dwIndex* en una cada vez, hasta que la función devuelva ERROR \_ NO MORE \_ \_ ITEMS.
 
 ## <a name="requirements"></a>Requisitos
 

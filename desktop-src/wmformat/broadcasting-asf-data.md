@@ -8,19 +8,19 @@ keywords:
 - ASF (formato de sistemas avanzados), difusión de datos
 - Windows SDK de formato multimedia, envío de datos de ASF
 - Formato de sistemas avanzados (ASF), envío de datos
-- ASF (formato de sistemas avanzados), envío de datos
+- ASF (formato de sistemas avanzados), enviar datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a44fc9ea0515822c765b0cb3af457254341a64f08e64d566aa9e226a48758e7f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 42339b4a3e60666c1ea0cb69a07dfdc836b19409
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118434469"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467106"
 ---
 # <a name="broadcasting-asf-data"></a>Difusión de datos de ASF
 
-En este tema se describe cómo enviar datos de ASF a través de una red mediante el protocolo HTTP. El envío de archivos a través de una red requiere el uso del objeto de escritura, por lo que debe tener un conocimiento general de este objeto antes de leer este tema. Para obtener más información, vea [Escribir archivos ASF.](writing-asf-files.md)
+En este tema se describe cómo enviar datos de ASF a través de una red mediante el protocolo HTTP. El envío de archivos a través de una red requiere el uso del objeto de escritor, por lo que debe tener un conocimiento general de este objeto antes de leer este tema. Para obtener más información, vea [Escribir archivos ASF.](writing-asf-files.md)
 
 Si empieza con datos sin comprimir, haga lo siguiente:
 
@@ -105,7 +105,7 @@ Otra manera de transmitir contenido de ASF a través de una red es leerlo desde 
 7.  Dado que los ejemplos del lector ya están comprimidos, use el método [**IWMWriterAdvanced::WriteStreamSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced-writestreamsample) para escribir los ejemplos, en lugar del **método WriteSample.** El **método WriteStreamSample** omite los procedimientos de compresión habituales del objeto de escritura.
 8.  Cuando el lector llega al final del archivo, envía una notificación \_ WMT EOF a la aplicación.
 
-Además, la aplicación debe impulsar el reloj en el objeto de lector, de modo que el lector extraiga los datos del archivo lo antes posible. Para ello, llame al método [**IWMReaderAdvanced::SetUserProvidedClock**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-setuserprovidedclock) en el lector, con el **valor TRUE**. Después de que el lector envíe la notificación WMT STARTED, llame a \_ [**IWMReaderAdvanced::D eliverTime**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-delivertime) y especifique el intervalo de tiempo que debe entregar el lector. Una vez que el lector ha terminado de leer este intervalo de tiempo, llama al método de devolución de llamada [**IWMReaderCallbackAdvanced::OnTime**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreadercallbackadvanced-ontime) de la aplicación. La aplicación debe llamar de **nuevo a DeliverTime** para leer el siguiente intervalo de tiempo. Por ejemplo, para leer del archivo en intervalos de un segundo:
+Además, la aplicación debe impulsar el reloj en el objeto de lector, de modo que el lector extraiga los datos del archivo lo antes posible. Para ello, llame al método [**IWMReaderAdvanced::SetUserProvidedClock**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-setuserprovidedclock) en el lector, con el **valor TRUE**. Una vez que el lector envíe la notificación WMT STARTED, llame a \_ [**IWMReaderAdvanced::D eliverTime**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced-delivertime) y especifique el intervalo de tiempo que debe entregar el lector. Una vez que el lector ha terminado de leer este intervalo de tiempo, llama al método de devolución de llamada [**IWMReaderCallbackAdvanced::OnTime**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreadercallbackadvanced-ontime) de la aplicación. La aplicación debe llamar de **nuevo a DeliverTime** para leer el siguiente intervalo de tiempo. Por ejemplo, para leer del archivo en intervalos de un segundo:
 
 
 ```C++

@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0f37530888bd26099513ace346ceed3214adce585e11fd19c33edab724e3dca8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 07b9fe3383331aaa91e26589dd0768bbee56869d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119475785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360122"
 ---
 # <a name="jet_bklogtimeequals-method-jet_bklogtime"></a>JET_BKLOGTIME. Método Equals (JET_BKLOGTIME)
 
@@ -57,7 +57,7 @@ public bool Equals(
 
 #### <a name="parameters"></a>Parámetros
 
-  - Otros  
+  - otro  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_BKLOGTIME](./jet-bklogtime-structure2.md)  
     
     Instancia de que se va a comparar con esta instancia.
@@ -71,7 +71,7 @@ True si las dos instancias son iguales.
 
 [IEquatable \<T\> . Equals(T)](/dotnet/api/system.iequatable-1.equals#System_IEquatable_1_Equals__0_)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

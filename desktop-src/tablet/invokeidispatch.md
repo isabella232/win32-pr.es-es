@@ -14,12 +14,12 @@ api_type:
 api_location:
 - InkObj.dll
 - InkObj.dll.dll
-ms.openlocfilehash: 9708ebc5675d918c959be132d16037ac4e128650280b8243dcfe5c48834b602b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e4989e3ec23a1ffa97ba317831143ecf0920ef9b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118041875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467989"
 ---
 # <a name="invokeidispatch-function"></a>Función InvokeIDispatch
 
@@ -91,7 +91,7 @@ Si el método se realiza correctamente, devuelve S \_ OK. Si se produce un error
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                         |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                             |

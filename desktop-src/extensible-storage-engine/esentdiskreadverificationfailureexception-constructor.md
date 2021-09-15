@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3ca5065211629c686b06a90b05cfc5e995aef94efe049519aaab75e3c4d9dc1c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7167aa9b6a5e7e36bcfb53380189363428ee6d71
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118779412"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360500"
 ---
 # <a name="esentdiskreadverificationfailureexception-constructor"></a>Constructor EsentDiskReadVerificationFailureException
 

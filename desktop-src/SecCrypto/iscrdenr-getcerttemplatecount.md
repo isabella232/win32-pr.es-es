@@ -1,7 +1,7 @@
 ---
 description: Recupera el número de plantillas de certificado.
 ms.assetid: f56e6e72-1562-4c53-b0da-b4bc69511559
-title: 'ISCrdEnr:: getCertTemplateCount (método)'
+title: Método ISCrdEnr::getCertTemplateCount
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,15 +15,15 @@ api_type:
 api_location:
 - Scrdenrl.dll
 ms.openlocfilehash: 86a78f03929bc6cdcfc7b611944b81c59a1c9fc9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912826"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270964"
 ---
-# <a name="iscrdenrgetcerttemplatecount-method"></a>ISCrdEnr:: getCertTemplateCount (método)
+# <a name="iscrdenrgetcerttemplatecount-method"></a>Método ISCrdEnr::getCertTemplateCount
 
-El método **getCertTemplateCount** recupera el número de plantillas de certificado.
+El **método getCertTemplateCount** recupera el número de plantillas de certificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,17 +52,17 @@ SCrdEnr.getCertTemplateCount( _
 
 <dl> <dt>
 
-*dwFlags* \[ de\]
+*dwFlags* \[ En\]
 </dt> <dd>
 
-Un valor que determina si la plantilla es para certificados de usuario o de equipo. Si este valor es \_ \_ la plantilla de certificado de usuario SCard ENROLL \_ \_ (definida como 1), el recuento devuelto será para las plantillas de certificado de usuario. Si este valor es PPAC \_ inscribir \_ \_ la plantilla de certificado de la máquina \_ (definida como 2), el recuento devuelto será para las plantillas de certificado de equipo.
+Valor que determina si la plantilla es para certificados de usuario o equipo. Si este valor es SCARD ENROLL USER CERT TEMPLATE (definido como \_ \_ 1), el recuento devuelto será para \_ las plantillas de certificado de \_ usuario. Si este valor es SCARD ENROLL MACHINE CERT TEMPLATE (definido como \_ \_ 2), el recuento devuelto será para \_ las plantillas de certificado de \_ equipo.
 
 </dd> <dt>
 
-*pdwCertTemplateCount* \[ enuncia\]
+*pdwCertTemplateCount* \[ out\]
 </dt> <dd>
 
-Un puntero a un **Long** que devuelve el número de plantillas de certificado.
+Puntero a **long** que devuelve el número de plantillas de certificado.
 
 </dd> </dl>
 
@@ -70,13 +70,13 @@ Un puntero a un **Long** que devuelve el número de plantillas de certificado.
 
 ### <a name="c"></a>C++
 
-Si el método se ejecuta correctamente, el método devuelve S \_ correcto.
+Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método, devuelve un valor **HRESULT** que indica el error. Para obtener una lista de los códigos de error comunes, vea [Valores HRESULT comunes](common-hresult-values.md).
+Si se produce un error en el método, devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
 ### <a name="vb"></a>VB
 
-Un valor de **tipo Long** que representa el número de plantillas de certificado.
+Valor **Long** que representa el número de plantillas de certificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,13 +85,13 @@ Un valor de **tipo Long** que representa el número de plantillas de certificado
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Archivo DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr se define como 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID ISCrdEnr se define como \_ 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

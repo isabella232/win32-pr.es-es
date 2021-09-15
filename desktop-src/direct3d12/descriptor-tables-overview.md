@@ -6,11 +6,11 @@ ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 3edae00c37a451aa0fb71355a1dea5860de4398f
-ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121813106"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359804"
 ---
 # <a name="descriptor-tables-overview"></a>Información general sobre las tablas de descriptores
 

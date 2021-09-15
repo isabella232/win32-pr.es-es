@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 67a623e98b72ee26e6a9325120d26b26f92d03384318e90f28983a3a1978edf8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1154cae0864b9d034ff356657d689cd3a768186f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119949635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468531"
 ---
 # <a name="enummonitors-function"></a>Función EnumMonitors
 
@@ -100,7 +100,7 @@ Si la función se realiza correctamente, el valor devuelto es un valor distinto 
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.

@@ -17,12 +17,12 @@ keywords:
 - configuración de entrada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ad72a8a5cc70dc28dcaa7be1e24b721e0b3f644e7694ea5c00d87ba2418846a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f70ef0db6a3d9371bd1c8e9a20157f5f0ac73b3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118701810"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466708"
 ---
 # <a name="input-settings"></a>Entrada Configuración
 

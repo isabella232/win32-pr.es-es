@@ -14,11 +14,11 @@ api_type:
 api_location:
 - Mssign32.dll
 ms.openlocfilehash: 7eb5c19292b451b1a3d0265da4bb178eafcc6f00
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122468562"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270836"
 ---
 # <a name="signertimestampex3-function"></a>Función SignerTimeStampEx3
 
@@ -61,7 +61,7 @@ Marca que especifica el tipo de marca de tiempo que se generará. Este parámetr
 
 
 
-| Valor | Significado | 
+| Value | Significado | 
 |-------|---------|
 | <span id="SIGNER_TIMESTAMP_AUTHENTICODE"></span><span id="signer_timestamp_authenticode"></span><dl><dt><strong>SIGNER_TIMESTAMP_AUTHENTICODE</strong></dt></dl> | Especifica una marca de tiempo Authenticode.<br /><blockquote>[!Note]<br />Authenticode ya no es el tipo preferido de marca de tiempo. La compatibilidad con marcas de tiempo de Authenticode puede quitarse en el futuro. Se recomienda usar RFC 3161 en su lugar.</blockquote><br /> | 
 | <span id="SIGNER_TIMESTAMP_RFC3161"></span><span id="signer_timestamp_rfc3161"></span><dl><dt><strong>SIGNER_TIMESTAMP_RFC3161</strong></dt></dl> | Especifica una marca de tiempo compatible con RFC 3161.<br /> | 
@@ -151,7 +151,7 @@ Si se produce un error en la función, devuelve un **valor HRESULT** que indica 
 
 | Código devuelto | Descripción | 
 |-------------|-------------|
-| <dl><dt><strong>E_INVALIDARG</strong></dt></dl> | Este error se puede devolver para las siguientes condiciones:<br /><ul><li>Debe establecer <strong>SIGNER_TIMESTAMP_AUTHENTICODE</strong> o <strong>SIGNER_TIMESTAMP_RFC3161</strong> para el <em>parámetro dwFlags.</em></li><li>El <em>parámetro pReserved</em> debe ser <strong>NULL.</strong></li><li>Si establece la <strong>marca SIGNER_TIMESTAMP_AUTHENTICODE</strong> en el parámetro <em>dwFlags,</em> debe establecer el <em>parámetro dwIndex</em> en cero.</li></ul> | 
+| <dl><dt><strong>E_INVALIDARG</strong></dt></dl> | Este error se puede devolver para las siguientes condiciones:<br /><ul><li>Debe establecer <strong>SIGNER_TIMESTAMP_AUTHENTICODE</strong> o <strong>SIGNER_TIMESTAMP_RFC3161</strong> para el <em>parámetro dwFlags.</em></li><li>El <em>parámetro pReserved</em> debe ser <strong>NULL.</strong></li><li>Si establece la <strong>marca SIGNER_TIMESTAMP_AUTHENTICODE</strong> en el <em>parámetro dwFlags,</em> debe establecer el <em>parámetro dwIndex</em> en cero.</li></ul> | 
 
 
 
@@ -162,7 +162,7 @@ Si se produce un error en la función, devuelve un **valor HRESULT** que indica 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                 |

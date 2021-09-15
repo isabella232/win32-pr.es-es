@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 98b2ab6963bf547b3fbf8321fde37359264286f77da98697f5ef88cc145be2e8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 64a8b9b336a1e7aa6007b17d2e878f1ace5e6163
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119794395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465595"
 ---
 # <a name="swbemservicesreferencestoasync-method"></a>Método SWbemServices.ReferencesToAsync
 
@@ -58,14 +58,14 @@ SWbemServices.ReferencesToAsync( _
 *ObjWbemSink* 
 </dt> <dd>
 
-Obligatorio. Receptor de objetos que recibe los objetos de forma asincrónica. Cree un [**objeto SWbemSink**](swbemsink.md) para recibir los objetos.
+Necesario. Receptor de objetos que recibe los objetos de forma asincrónica. Cree un [**objeto SWbemSink**](swbemsink.md) para recibir los objetos.
 
 </dd> <dt>
 
 *strObjectPath* 
 </dt> <dd>
 
-Obligatorio. Cadena que contiene la ruta de acceso del objeto de origen para este método. Para obtener más información, vea [Localizing WMI Class Information](localizing-wmi-class-information.md).
+Necesario. Cadena que contiene la ruta de acceso del objeto de origen para este método. Para obtener más información, vea [Localizing WMI Class Information](localizing-wmi-class-information.md).
 
 </dd> <dt>
 
@@ -93,7 +93,7 @@ Valor booleano que indica si se debe devolver o no una lista de nombres de clase
 *bSchemaOnly* \[ Opcional\]
 </dt> <dd>
 
-Valor booleano que indica si la consulta se aplica o no al esquema en lugar de a los datos. El valor predeterminado de este parámetro es **FALSE.** Solo se puede establecer en **TRUE si** el *parámetro strObjectPath* especifica la ruta de acceso del objeto de una clase. Cuando se establece en **TRUE,** el conjunto de puntos de conexión devueltos representa las clases asociadas a la clase de origen en el esquema.
+Valor booleano que indica si la consulta se aplica o no al esquema en lugar de a los datos. El valor predeterminado de este parámetro es **FALSE.** Solo se puede establecer en **TRUE si** el *parámetro strObjectPath* especifica la ruta de acceso del objeto de una clase. Cuando se establece en **TRUE,** el conjunto de extremos devueltos representa las clases asociadas a la clase de origen en el esquema.
 
 </dd> <dt>
 
@@ -201,9 +201,9 @@ No hay suficiente memoria para completar la operación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta llamada se devuelve inmediatamente. Los objetos y el estado solicitados se devuelven al autor de la llamada a través de devoluciones de llamada entregadas al receptor especificado en *objWbemSink*. Para procesar cada objeto cuando vuelva, cree *un objeto objWbemSink*. Subrutina de eventos [**OnObjectReady.**](swbemsink-onobjectready.md) Una vez devueltos todos los objetos, puede realizar el procesamiento final en la implementación de *objWbemSink*. [**Evento OnCompleted.**](swbemsink-oncompleted.md)
+Esta llamada se devuelve inmediatamente. Los objetos y el estado solicitados se devuelven al autor de la llamada a través de devoluciones de llamada entregadas al receptor especificado en *objWbemSink*. Para procesar cada objeto cuando vuelva, cree *un objeto objWbemSink*. [**Subrutina de eventos OnObjectReady.**](swbemsink-onobjectready.md) Una vez devueltos todos los objetos, puede realizar el procesamiento final en la implementación de *objWbemSink*. [**Evento OnCompleted.**](swbemsink-oncompleted.md)
 
 Una devolución de llamada asincrónica permite a un usuario no autenticado proporcionar datos al receptor. Esto supone riesgos de seguridad para los scripts y las aplicaciones. Para eliminar los riesgos, vea [Establecer la seguridad en una llamada asincrónica.](setting-security-on-an-asynchronous-call.md)
 
@@ -215,7 +215,7 @@ Una devolución de llamada asincrónica permite a un usuario no autenticado prop
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemServices<br/>                                                         |
@@ -223,7 +223,7 @@ Una devolución de llamada asincrónica permite a un usuario no autenticado prop
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

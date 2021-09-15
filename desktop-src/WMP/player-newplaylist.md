@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 380d1f2751487f5c648b154852be625a5c93103851541dea7e2488ba75080ca0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fa65ae4b453fe919116a33c5ee86b14ba353f681
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118572835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466014"
 ---
 # <a name="playernewplaylist-method"></a>Método Player.newPlaylist
 
@@ -53,7 +53,7 @@ retVal = Player.newPlaylist(
 *DIRECCIÓN URL* \[ En\]
 </dt> <dd>
 
-**Cadena** que contiene la dirección URL de la lista de Windows de metarchivo multimedia con la que crear el objeto **Playlist.**
+**Cadena** que contiene la dirección URL de la lista de Windows de metarchivo multimedia con la que se crea el objeto **Lista de** reproducción.
 
 </dd> </dl>
 
@@ -61,7 +61,7 @@ retVal = Player.newPlaylist(
 
 Este método devuelve un objeto **Playlist.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el *parámetro url* se establece en null o "" (cadena vacía), se creará un objeto **De lista** de reproducción vacío. Si el *parámetro name* se establece en "", se usa el nombre del metarchivo.
 
@@ -73,14 +73,14 @@ Dado que la biblioteca permite varias listas de reproducción con el mismo nombr
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/>                                 |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

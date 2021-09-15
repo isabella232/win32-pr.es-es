@@ -4,12 +4,12 @@ ms.assetid: 9A68B650-97C0-4323-ACBF-5C8E496E8566
 title: MF_MSE_BUFFERLIST_CALLBACK atributo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64a9e17625789a8318a37128fa80ec71e4255c20988919c57a38843b9e0ecde9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 503b4850656a85385c8b58dc3949feb4b0234c9c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119104621"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468707"
 ---
 # <a name="mf_mse_bufferlist_callback-attribute"></a>Atributo \_ \_ CALLBACK MSE BUFFERLIST \_ de MF
 
@@ -23,15 +23,15 @@ Contiene un puntero a la interfaz de devolución de llamada de la aplicación pa
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
-| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

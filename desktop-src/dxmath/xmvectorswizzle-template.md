@@ -1,19 +1,19 @@
 ---
-description: Desvía un vector.
+description: Desliza un vector.
 ms.assetid: 75608e80-5911-45a8-beca-ceac1f4d2c1c
 title: Plantilla XMVectorSwcela (DirectXMath.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 800d976d63480f88defea7f1db07651563df44e8985ae5925810617b44302e87
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e8e872d76f3251eccc8616c143c645b388e2dca4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118984485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465887"
 ---
 # <a name="xmvectorswizzle-template"></a>Plantilla XMVectorSwzzle
 
-Desvía un vector.
+Desliza un vector.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,7 +38,7 @@ template<uint32_t SwizzleX, uint32_t SwizzleY, uint32_t SwizzleZ, uint32_t Swizz
 
 Devuelve el [**XMVECTOR girado.**](xmvector-data-type.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función es una versión de plantilla de [**XMVectorSwzzle**](/windows/win32/api/directxmath/nf-directxmath-xmvectorswizzle) donde los argumentos *swzzle \** son valores de plantilla.
 
@@ -53,7 +53,7 @@ Esta función es una versión de plantilla de [**XMVectorSwzzle**](/windows/win3
 
 ### <a name="platform-requirements"></a>Requisitos de la plataforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK Windows para Windows 8. Compatible con aplicaciones de escritorio Win32, Windows store y Windows Phone 8 aplicaciones.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK de Windows para Windows 8. Compatible con aplicaciones de escritorio Win32, Windows store y Windows Phone 8 aplicaciones.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,7 +65,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK Windows p
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

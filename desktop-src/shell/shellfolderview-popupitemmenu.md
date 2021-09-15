@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 1610d91e-87c3-4ba5-9147-1595eddb2c3a
-ms.openlocfilehash: cf538a468e9664810e4a6869e47629adc585bea8ce81431cf3c0de3c583f5285
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a2feda23d6e1759e1c0be27805fefbb6b592df7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118968444"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468068"
 ---
 # <a name="shellfolderviewpopupitemmenu-method"></a>Método ShellFolderView.PopupItemMenu
 
@@ -59,7 +59,7 @@ Posición horizontal del menú, en coordenadas de pantalla.
 
 </dd> <dt>
 
-*vy* \[ in, opcional\]
+*vy* \[ en, opcional\]
 </dt> <dd>
 
 Tipo: **Variant**
@@ -80,10 +80,10 @@ Cadena **que** recibe la cadena de comando.
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

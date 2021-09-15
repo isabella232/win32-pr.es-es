@@ -4,12 +4,12 @@ ms.assetid: CA3A81D6-332F-4867-881F-AC6859A076CF
 title: 'Cómo: Iniciar y detener un subproceso de impresión'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 393f1f95efbb52c7cdd81316db000de22d45ca9e5dda0eadebb82ebaa3942350
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2d9a47f81e384a135bb70e6deabefe15a3408a04
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117686717"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468523"
 ---
 # <a name="how-to-start-and-stop-a-printing-thread"></a>Cómo: Iniciar y detener un subproceso de impresión
 

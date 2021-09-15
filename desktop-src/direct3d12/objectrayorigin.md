@@ -12,12 +12,12 @@ api_name:
 - ObjectRayOrigin
 api_type:
 - NA
-ms.openlocfilehash: e580709f9b9c343990c8fcc122fb178e438a0bed344589630ffdba518548f402
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b64d3f2e6648d47659f180bf2aa3c1e912882677
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120069485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465552"
 ---
 # <a name="objectrayorigin"></a>ObjectRayOrigin
 
@@ -30,7 +30,7 @@ float3 ObjectRayOrigin();
 
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se puede llamar a esta función desde los siguientes tipos de sombreador de raytracción:
 
@@ -42,7 +42,7 @@ Se puede llamar a esta función desde los siguientes tipos de sombreador de rayt
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

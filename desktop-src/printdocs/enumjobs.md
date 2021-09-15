@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 57c8416b1c1f5820f632271b0ef0973c76a14be9ef08f24b217ebee441fb29d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 174f58ba3fb1012e6ff46612fe312579969e6945
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118056515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468534"
 ---
 # <a name="enumjobs-function"></a>Función EnumJobs
 
@@ -65,7 +65,7 @@ Posición de base cero dentro de la cola de impresión del primer trabajo de imp
 *NoJobs* \[ En\]
 </dt> <dd>
 
-Número total de trabajos de impresión que se enumeran.
+Número total de trabajos de impresión que se enumerará.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Tipo de información devuelta en el *búfer pJob.*
 
 
 
-| Valor                                                                                                | Significado                                                                              |
+| Value                                                                                                | Significado                                                                              |
 |------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | *pJob* recibe una matriz de [**estructuras JOB INFO \_ \_ 1**](job-info-1.md)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | *pJob* recibe una matriz de [**estructuras JOB INFO \_ \_ 2**](job-info-2.md)<br/> |
@@ -114,7 +114,7 @@ Puntero a una variable que recibe el número de bytes copiados si la función se
 *pcReturned* \[ out\]
 </dt> <dd>
 
-Puntero a una variable que recibe el número de estructuras [**JOB \_ INFO \_ 1,**](job-info-1.md) [**JOB INFO \_ \_ 2**](job-info-2.md)o [**JOB INFO \_ \_ 3**](job-info-3.md) devueltas en el *búfer pJob.*
+Puntero a una variable que recibe el número de estructuras [**JOB \_ INFO \_ 1,**](job-info-1.md) [**JOB INFO \_ \_ 2**](job-info-2.md)o [**JOB INFO \_ \_ 3**](job-info-3.md) devueltas en el *búfer de pJob.*
 
 </dd> </dl>
 
@@ -124,7 +124,7 @@ Si la función se realiza correctamente, el valor devuelto es un valor distinto 
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
@@ -133,13 +133,13 @@ Si la función no se realiza correctamente, el valor devuelto es cero.
 
 La [**estructura JOB INFO \_ \_ 1**](job-info-1.md) contiene información general del trabajo de impresión; la estructura [**JOB INFO \_ \_ 2**](job-info-2.md) tiene información mucho más detallada. La [**estructura JOB INFO \_ \_ 3**](job-info-3.md) contiene información sobre cómo se vinculan los trabajos.
 
-Para determinar el número de trabajos de impresión en la cola de impresoras, llame a la [**función GetPrinter**](getprinter.md) con el *parámetro Level* establecido en 2.
+Para determinar el número de trabajos de impresión en la cola de impresoras, llame a la función [**GetPrinter**](getprinter.md) con el *parámetro Level* establecido en 2.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -169,7 +169,7 @@ Para determinar el número de trabajos de impresión en la cola de impresoras, l
 [**INFORMACIÓN \_ DEL \_ TRABAJO 1**](job-info-1.md)
 </dt> <dt>
 
-[**INFORMACIÓN \_ DEL \_ TRABAJO 2**](job-info-2.md)
+[**INFORMACIÓN \_ DE \_ TRABAJO 2**](job-info-2.md)
 </dt> <dt>
 
 [**INFORMACIÓN \_ DEL \_ TRABAJO 3**](job-info-3.md)

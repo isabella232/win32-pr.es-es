@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: beb4016eafb936428c1966914dca3a2f5a76b6aed062e0b854d8df32311602ef
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6c0d317e3bca986d299d70369641f48db95e058f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120009175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468016"
 ---
 # <a name="baselinetype-complex-type"></a>Tipo complejo BaselineType
 

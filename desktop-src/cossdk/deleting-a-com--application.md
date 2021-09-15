@@ -4,12 +4,12 @@ ms.assetid: 5cce94c9-8eff-40b9-946d-a57749da073d
 title: Eliminación de una aplicación COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d8332cd59ecde4115daa43ea97bc87d4354338e3ea94073317bfa293102deb78
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: da685e5a7ae7590fcc247caa765d49dc34d076e9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119047513"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466971"
 ---
 # <a name="deleting-a-com-application"></a>Eliminación de una aplicación COM+
 

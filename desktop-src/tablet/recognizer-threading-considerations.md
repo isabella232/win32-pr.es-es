@@ -1,15 +1,15 @@
 ---
-description: Aunque la plataforma de Tablet PC no puede acceder simultáneamente a un contexto de&\# 160;recognizer&160;, se puede llamar a la función AdviseInkChange en cualquier momento en cualquier \# subproceso.
+description: Aunque no se puede tener acceso a un contexto de&\# 160;recognizer&160;en dos subprocesos simultáneamente mediante la plataforma tablet PC, se puede llamar a la función AdviseInkChange en cualquier momento en \# cualquier subproceso.
 ms.assetid: 2cd19819-08d0-418d-830b-2288a66ca0d0
 title: Consideraciones sobre el subprocesamiento del reconocedor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93f28f387a0073eab7b85250d02d3983f83c3e9633c955d0f5503c06766745ee
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4297cc28e084bbb7c1c09593deb5babc2319ab43
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119843345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467157"
 ---
 # <a name="recognizer-threading-considerations"></a>Consideraciones sobre el subprocesamiento del reconocedor
 

@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 92b4f8db5626ec34c66c769f86afe1eac9d37940dce0374b1340430d3e62939d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 883c34f42f8d31f3581599445b398b93676d416b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120009085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468009"
 ---
 # <a name="colortype-simple-type"></a>Tipo simple ColorType
 
@@ -31,7 +31,7 @@ Define el tipo que se usa para especificar valores válidos para el color de det
 </xs:simpleType>
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un color puede ser un valor RGB hexadecimal con el formato \# RRGGBB. Debe coincidir con la siguiente expresión regular: \# \[ 0-9a-fA-F \] {6} . Por ejemplo: \# "4a79B5".
 

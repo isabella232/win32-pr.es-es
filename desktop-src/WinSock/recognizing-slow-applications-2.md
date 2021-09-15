@@ -1,19 +1,19 @@
 ---
-description: En esta guía se identifica una aplicación lenta como una aplicación de Microsoft Windows con un rendimiento deficiente.
+description: En esta guía se identifica una aplicación lenta como una aplicación Windows Microsoft con un rendimiento deficiente.
 ms.assetid: cacf55d8-ab64-47a4-a55b-59a3c4e3877b
 title: Reconocimiento de aplicaciones lentas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 775239b76cfd287a446596f9a4a0eda6298caab35c31f70fade378ec0d44d586
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 07be9484a3b08951b8b64989757459531ff72906
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118111819"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465978"
 ---
 # <a name="recognizing-slow-applications"></a>Reconocimiento de aplicaciones lentas
 
-En esta guía se identifica una *aplicación* lenta como una aplicación de Microsoft Windows con un rendimiento deficiente. Una aplicación lenta presenta uno o varios de los síntomas siguientes:
+En esta guía se identifica una *aplicación* lenta como una aplicación Windows Microsoft con un rendimiento deficiente. Una aplicación lenta presenta uno o varios de los síntomas siguientes:
 
 -   El uso de CPU y red es bajo.
 
@@ -29,7 +29,7 @@ En esta guía se identifica una *aplicación* lenta como una aplicación de Micr
 
 -   La respuesta de la aplicación se ralentiza cuando la conexión tiene un RTT grande.
 
-    Suponiendo que la aplicación no se aproxima al ancho de banda del vínculo, un RTT grande debería tener poco o ningún efecto. Una ralentización drástica con un RTT grande es un claro signo de procesamiento serializado y muchas transacciones pequeñas.
+    Suponiendo que la aplicación no se aproxima al ancho de banda del vínculo, un RTT grande debería tener poco o ningún efecto. Una ralentización drástica con un RTT grande es un signo claro de procesamiento serializado y muchas transacciones pequeñas.
 
 Todas las aplicaciones deben probarse en un entorno con un RTT grande. Esto revela la mayoría de las aplicaciones que sufren de opciones de desarrollo deficientes. Estas pruebas se pueden realizar en varios entornos, como una red LAN inalámbrica, un simulador de retraso de vínculo o una red satélite.
 
@@ -40,7 +40,7 @@ Todas las aplicaciones deben probarse en un entorno con un RTT grande. Esto reve
 [Comportamiento de la aplicación](application-behavior-2.md)
 </dt> <dt>
 
-[Aplicaciones de sockets Windows alto rendimiento](high-performance-windows-sockets-applications-2.md)
+[Aplicaciones de sockets de Windows alto rendimiento](high-performance-windows-sockets-applications-2.md)
 </dt> <dt>
 
 [Algoritmo de Nagle](https://msdn.microsoft.com/library/ms817942.aspx)

@@ -5,12 +5,12 @@ title: Manifiestos de aplicación
 ms.topic: article
 ms.date: 10/08/2020
 ms.custom: 19H1
-ms.openlocfilehash: 2978e72ea7c87f6beee32c8c55b3789556a8ec38
-ms.sourcegitcommit: 0ab75073bbeec7ca2899f8051626a8b772073f82
+ms.openlocfilehash: a1ced7ffb4052f418e989e907f26abb85c2c63db
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122400998"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271756"
 ---
 # <a name="application-manifests"></a>Manifiestos de aplicación
 
@@ -20,7 +20,7 @@ Para obtener una lista completa del esquema XML, vea [Esquema de archivo de mani
 
 Los manifiestos de aplicación tienen los siguientes elementos y atributos.
 
-| Elemento                               | Atributos                | Obligatorio |
+| Elemento                               | Atributos                | Requerido |
 |---------------------------------------|---------------------------|----------|
 | **ensamblaje**                          |                           | Sí      |
 |                                       | **manifestVersion**       | Sí      |
@@ -46,7 +46,7 @@ Los manifiestos de aplicación tienen los siguientes elementos y atributos.
 | **autoElevate**                       |                           | No       |
 | **disableTheming**                    |                           | No       |
 | **disableWindowFiltering**            |                           | No       |
-| **dpiAware**                          |                           | No       |
+| **pppAware**                          |                           | No       |
 | **pppAwareness**                      |                           | No       |
 | **gdiScaling**                        |                           | No       |
 | **highResolutionScrollingAware**      |                           | No       |
@@ -68,9 +68,9 @@ El nombre de un archivo de manifiesto de aplicación es el nombre del ejecutable
 
 Por ejemplo, un manifiesto de aplicación que hace referencia a example.exe o example.dll usaría la siguiente sintaxis de nombre de archivo. Puede omitir el campo <*id.>* recurso si el identificador de recurso es 1.
 
-**example.exe.<*id. de* recurso>.manifest**
+**example.exe.<*id. de recurso*>.manifest**
 
-**example.dll.<*id. de* recurso>.manifest**
+**example.dll.<*id. de recurso*>.manifest**
 
 ## <a name="elements"></a>Elementos
 
@@ -99,7 +99,7 @@ El **elemento** de ensamblado tiene los siguientes atributos.
 
 Incluya este elemento en un manifiesto de aplicación para establecer los contextos de activación [generados](activation-contexts.md) a partir del manifiesto con la marca "no inherit". Cuando esta marca no se establece en un contexto de activación y el contexto de activación está activo, lo heredan los nuevos subprocesos en el mismo proceso, ventanas, procedimientos de ventana y llamadas a procedimientos [asincrónicos](/windows/desktop/Sync/asynchronous-procedure-calls). Establecer esta marca impide que el nuevo objeto herede el contexto activo.
 
-El **elemento noInherit** es opcional y normalmente se omite. La mayoría de los ensamblados no funcionan correctamente mediante un contexto de activación sin heredar porque el ensamblado debe diseñarse explícitamente para administrar la propagación de su propio contexto de activación. El uso del **elemento noInherit** requiere que los ensamblados dependientes a los que hace referencia el manifiesto de aplicación tengan **un elemento noInherit** en su manifiesto [de ensamblado.](assembly-manifests.md)
+El **elemento noInherit** es opcional y normalmente se omite. La mayoría de los ensamblados no funcionan correctamente con un contexto de activación sin heredar porque el ensamblado debe diseñarse explícitamente para administrar la propagación de su propio contexto de activación. El uso del **elemento noInherit** requiere que los ensamblados dependientes a los que hace referencia el manifiesto de aplicación tengan **un elemento noInherit** en su manifiesto [de ensamblado.](assembly-manifests.md)
 
 Si **noInherit se** usa en un manifiesto, debe ser el primer subelemento del **elemento de** ensamblado. El **elemento assemblyIdentity** debe ir inmediatamente después del **elemento noInherit.** Si **no se usa noInherit,** **assemblyIdentity** debe ser el primer subelemento del **elemento de** ensamblado. El **elemento noInherit** no tiene elementos secundarios. No es un elemento válido en los [manifiestos de ensamblado.](assembly-manifests.md)
 
@@ -140,7 +140,7 @@ El **elemento supportedOS** tiene el atributo siguiente. No tiene subelementos.
 
 | Atributo | Descripción   |
 |-----------|-----------------------|
-| **Id**    | Establezca el atributo Id en **{e2011457-1546-43c5-a5fe-008deee3d3f0}** para ejecutar la aplicación mediante la funcionalidad vista. Esto puede permitir que una aplicación diseñada para Windows Vista se ejecute en un sistema operativo posterior. <br/> Establezca el atributo Id en **{35138b9a-5d96-4fbd-8e2d-a2440225f93a}** para ejecutar la aplicación Windows funcionalidad 7.<br/> Las aplicaciones que admiten Windows vista, Windows 7 y Windows 8 no requieren manifiestos independientes. En este caso, agregue los GUID para todos los Windows operativos.<br/> Para obtener información sobre el **comportamiento del** atributo Id en Windows, consulte la guía Windows 8 y Windows Server 2012 [Compatibility .](https://www.microsoft.com/download/details.aspx?id=27416)<br/> Los siguientes GUID se corresponden con los sistemas operativos indicados:<br/> **{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}** -> Windows 10, Windows Server 2016 y Windows Server 2019<br/> **{1f676c76-80e1-4239-95bb-83d0f6d0da78}** -> Windows 8.1 y Windows Server 2012 R2<br/> **{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}** -> Windows 8 y Windows Server 2012<br/> **{35138b9a-5d96-4fbd-8e2d-a2440225f93a}** -> Windows 7 y Windows Server 2008 R2<br/> **{e2011457-1546-43c5-a5fe-008deee3d3f0}** -> Windows Vista y Windows Server 2008<br/> Para probar esto en Windows 7 o Windows 8.x, ejecute Monitor de recursos (resmon), vaya a la pestaña CPU, haga clic con el botón derecho en las etiquetas de columna, "Seleccionar columna..." y compruebe "Contexto del sistema operativo". En Windows 8.x, también puede encontrar esta columna disponible en el Administrador de tareas (taskmgr). El contenido de la columna muestra el valor más alto encontrado o "Windows Vista" como valor predeterminado. <br/> |
+| **Id**    | Establezca el atributo Id en **{e2011457-1546-43c5-a5fe-008deee3d3f0}** para ejecutar la aplicación mediante la funcionalidad vista. Esto puede permitir que una aplicación diseñada para Windows Vista se ejecute en un sistema operativo posterior. <br/> Establezca el atributo Id en **{35138b9a-5d96-4fbd-8e2d-a2440225f93a}** para ejecutar la aplicación mediante la funcionalidad Windows 7.<br/> Las aplicaciones que admiten Windows vista, Windows 7 y Windows 8 no requieren manifiestos independientes. En este caso, agregue los GUID de todos los Windows sistemas operativos.<br/> Para obtener información sobre el **comportamiento del** atributo Id en Windows, consulte la guía Windows 8 y Windows Server 2012 [Compatibility ....](https://www.microsoft.com/download/details.aspx?id=27416)<br/> Los siguientes GUID se corresponden con los sistemas operativos indicados:<br/> **{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}** -> Windows 10, Windows Server 2016 y Windows Server 2019<br/> **{1f676c76-80e1-4239-95bb-83d0f6d0da78}** -> Windows 8.1 y Windows Server 2012 R2<br/> **{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}** -> Windows 8 and Windows Server 2012<br/> **{35138b9a-5d96-4fbd-8e2d-a2440225f93a}** -> Windows 7 y Windows Server 2008 R2<br/> **{e2011457-1546-43c5-a5fe-008deee3d3f0}** -> Windows Vista y Windows Server 2008<br/> Para probar esto en Windows 7 o Windows 8.x, ejecute Monitor de recursos (resmon), vaya a la pestaña CPU, haga clic con el botón derecho en las etiquetas de columna, "Seleccionar columna..." y active "Contexto del sistema operativo". En Windows 8.x, también puede encontrar esta columna disponible en el Administrador de tareas (taskmgr). El contenido de la columna muestra el valor más alto encontrado o "Windows Vista" como valor predeterminado. <br/> |
 
 <span id="maxVersionTested"></span><span id="maxversiontested"></span><span id="MAXVERSIONTESTED"></span>
 
@@ -188,12 +188,12 @@ El **elemento** file tiene los atributos que se muestran en la tabla siguiente.
 
 En Windows 10, este elemento fuerza a un proceso a usar UTF-8 como página de códigos del proceso. Para obtener más información, [vea Usar la página de códigos UTF-8](/windows/uwp/design/globalizing/use-utf8-code-page). En Windows 10, el único valor válido para **activeCodePage** es **UTF-8.**
 
-A partir de Windows 11, este elemento también permite la selección de la página de códigos heredada que no es UTF-8 o páginas de códigos para una configuración regional específica para la compatibilidad de aplicaciones heredadas. Se recomienda encarecidamente que las aplicaciones modernas usen Unicode. En Windows 11, este valor también  puede establecerse en Heredado o en un nombre de configuración regional como **en-US** o **ja-JP**.
+A partir de Windows 11, este elemento también permite la selección de la página de códigos heredada que no es UTF-8 o páginas de códigos para una configuración regional específica para la compatibilidad de aplicaciones heredadas. Se recomienda encarecidamente que las aplicaciones modernas usen Unicode. En Windows 11, **activeCodePage** también se puede establecer en el valor **heredado** o en un nombre de configuración regional como **en-US** o **ja-JP.**
 
-- En las máquinas configuradas para una página de códigos activa del sistema UTF-8, **Legacy** revertirá el proceso a las páginas de códigos de configuración regional del sistema. Si la configuración regional del sistema no tiene páginas de códigos definidas, se Windows-1252/437. La **configuración de página** de códigos heredada solo se admite en los manifiestos de Fusion y solo a partir de Windows 11
-- Cuando se proporciona un nombre de configuración regional como **en-US,** la página de códigos del proceso se establecerá correctamente para esa página de códigos de configuración regional. Por ejemplo, Windows-1252 y 437 para en-US o 932 para ja-JP.
+- En las máquinas configuradas para una página de códigos activa del sistema UTF-8, **Legacy** revertirá el proceso a las páginas de códigos de configuración regional del sistema. Si la configuración regional del sistema no tiene páginas de códigos definidas, se Windows-1252/437. La **configuración de página** de códigos heredada solo se admite en los manifiestos de Fusion y solo a partir Windows 11.
+- Cuando se proporciona un nombre de configuración regional como **en-US,** la página de códigos del proceso se establecerá correctamente para esa página de códigos de configuración regional. Por ejemplo, Windows-1252 y 437 para en-US, o 932 para ja-JP.
 
-Este elemento se agregó por primera vez Windows 10 versión 1903 (actualización de mayo de 2019). Puede declarar esta propiedad y destino/ejecutar en compilaciones anteriores Windows, pero debe controlar la conversión y la detección de páginas de códigos heredadas como de costumbre. Este elemento no tiene atributos. 
+Este elemento se agregó por primera vez Windows 10 versión 1903 (actualización de mayo de 2019). Puede declarar esta propiedad y destino/ejecutar en compilaciones anteriores Windows, pero debe controlar la detección y conversión de páginas de códigos heredadas como de costumbre. Este elemento no tiene atributos. 
 
 En el ejemplo siguiente se muestra cómo usar este elemento para forzar al proceso actual a usar UTF-8 como página de códigos del proceso.
 
@@ -280,7 +280,7 @@ Para obtener más información sobre la configuración de reconocimiento de ppp,
 
 Especifica si el proceso actual es compatible con puntos por pulgada (ppp).
 
-La versión mínima del sistema operativo que admite el **elemento dpiAwareness** es Windows 10, versión 1607. Para las versiones que admiten **el elemento dpiAwareness,** **pppAwareness** invalida el **elemento dpiAware.** Puede incluir ambos elementos en un manifiesto si desea especificar un comportamiento diferente para Windows 10, versión 1607 que para una versión anterior del sistema operativo.
+La versión mínima del sistema operativo que admite el elemento **pppAwareness** es Windows 10, versión 1607. Para las versiones que admiten **el elemento dpiAwareness,** **pppAwareness** invalida el **elemento dpiAware.** Puede incluir ambos elementos en un manifiesto si desea especificar un comportamiento diferente para Windows 10, versión 1607 que para una versión anterior del sistema operativo.
 
 El **elemento dpiAwareness** puede contener un solo elemento o una lista de elementos separados por comas. En el último caso, se usa el primer elemento (situado más a la izquierda) de la lista reconocido por el sistema operativo. De esta manera, puede especificar distintos comportamientos admitidos en futuras versiones Windows sistema operativo.
 
@@ -315,11 +315,11 @@ Para obtener más información sobre la configuración de reconocimiento de ppp 
 
 ### <a name="gdiscaling"></a>gdiScaling
 
-Especifica si el escalado de GDI está habilitado. La versión mínima del sistema operativo que admite el **elemento gdiScaling** es Windows 10 versión 1703.
+Especifica si el escalado de GDI está habilitado. La versión mínima del sistema operativo que admite el **elemento gdiScaling** Windows 10 versión 1703.
 
 El marco GDI (interfaz de dispositivo gráfico) puede aplicar el escalado de PPP a primitivos y texto por monitor sin actualizaciones en la propia aplicación. Esto puede ser útil para las aplicaciones GDI que ya no se actualizan activamente.
 
-Este elemento no puede escalar gráficos no vectoriales (como mapas de bits, iconos o barras de herramientas). Además, este elemento tampoco puede escalar gráficos y texto que aparecen dentro de mapas de bits construidos dinámicamente por aplicaciones.
+Este elemento no puede escalar gráficos no vectoriales (como mapas de bits, iconos o barras de herramientas). Además, los gráficos y el texto que aparecen dentro de los mapas de bits creados dinámicamente por las aplicaciones tampoco se pueden escalar mediante este elemento.
 
 **TRUE** indica que este elemento está habilitado. No tiene atributos.
 
@@ -346,7 +346,7 @@ Especifica si está habilitado el desplazamiento de alta resolución. **TRUE** i
 
 ### <a name="longpathaware"></a>longPathAware
 
-Habilita rutas de acceso largas **que superan MAX_PATH** longitud. Este elemento se admite en Windows 10, versión 1607 y posteriores. Para obtener más información, consulta [este artículo](../fileio/maximum-file-path-limitation.md).
+Habilita rutas de acceso largas **que superan MAX_PATH** longitud. Este elemento se admite en Windows 10, versión 1607 y posteriores. Para obtener más información, consulte [este artículo](../fileio/maximum-file-path-limitation.md).
 
 ```XML
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3">
@@ -383,21 +383,21 @@ Especifica si el aislamiento del controlador de impresora está habilitado. **TR
 
 ### <a name="ultrahighresolutionscrollingaware"></a>ultraHighResolutionScrollingAware
 
-Especifica si está habilitado el desplazamiento con resolución ultra alta. **TRUE** indica que está habilitado. No tiene atributos.
+Especifica si está habilitado el desplazamiento de resolución ultra alta. **TRUE** indica que está habilitado. No tiene atributos.
 
 <span id="msix"></span><span id="MSIX"></span>
 
 ### <a name="msix"></a>msix
 
-Especifica la información de identidad de un [paquete MSIX](/windows/apps/desktop/modernize/grant-identity-to-nonpackaged-apps) disperso para la aplicación actual. Este elemento se admite en Windows 10, versión 2004 y versiones posteriores.
+Especifica la información de identidad de un [paquete MSIX disperso](/windows/apps/desktop/modernize/grant-identity-to-nonpackaged-apps) para la aplicación actual. Este elemento se admite en Windows 10, versión 2004 y versiones posteriores.
 
 El **elemento msix** debe estar en el espacio de nombres `urn:schemas-microsoft-com:msix.v1` . Tiene los atributos que se muestran en la tabla siguiente.
 
 | Atributo   | Descripción                                                                                             |
 |-------------|---------------------------------------------------------------------------------------------------------|
-| **publisher**    | Describe la información del publicador. Este valor debe coincidir con **el atributo Publisher** en el elemento [Identity](/uwp/schemas/appxpackage/uapmanifestschema/element-identity) del manifiesto del paquete disperso. |
+| **publisher**    | Describe la información del publicador. Este valor debe coincidir con **el Publisher** en el [elemento Identity](/uwp/schemas/appxpackage/uapmanifestschema/element-identity) del manifiesto de paquete disperso. |
 | **packageName** | Describe el contenido del paquete. Este valor debe coincidir con **el atributo Name** del elemento [Identity](/uwp/schemas/appxpackage/uapmanifestschema/element-identity) del manifiesto del paquete disperso.    |
-| **applicationId**    | Identificador único de la aplicación. Este valor debe coincidir con el **atributo Id** del [elemento Application](/uwp/schemas/appxpackage/uapmanifestschema/element-application) del manifiesto del paquete disperso.  |
+| **applicationId**    | Identificador único de la aplicación. Este valor debe coincidir con **el atributo Id** del elemento [Application](/uwp/schemas/appxpackage/uapmanifestschema/element-application) del manifiesto de paquete disperso.  |
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -413,9 +413,9 @@ El **elemento msix** debe estar en el espacio de nombres `urn:schemas-microsoft-
 
 ### <a name="heaptype"></a>heapType
 
-Invalida la implementación predeterminada del montón para que las API de montón [de Win32](../Memory/heap-functions.md) las usen.
+Invalida la implementación predeterminada del montón para que las API de montón de [Win32](../Memory/heap-functions.md) las usen.
 
-* El valor **SegmentHeap** indica que se usará el montón de segmentos. El montón de segmentos es una implementación moderna del montón que generalmente reducirá el uso general de memoria. Este elemento se admite en Windows 10 versión 2004 (compilación 19041) y versiones posteriores.
+* El valor **SegmentHeap** indica que se usará el montón de segmentos. El montón de segmentos es una implementación moderna del montón que generalmente reducirá el uso general de memoria. Este elemento se admite en Windows 10, versión 2004 (compilación 19041) y versiones posteriores.
 * Se omiten todos los demás valores.
 
 Este elemento no tiene atributos.

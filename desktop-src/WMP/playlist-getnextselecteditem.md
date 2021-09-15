@@ -3,7 +3,7 @@ title: PLAYLIST.getNextSelectedItem
 description: El método getNextSelectedItem recupera el índice del siguiente elemento seleccionado en la lista de reproducción después del índice especificado.
 ms.assetid: d46d3a65-8863-4a2f-9add-0701c8283a6b
 keywords:
-- Lista de reproducción.getNextSelectedItem Reproductor de Windows Media
+- PLAYLIST.getNextSelectedItem Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 872dd31694384dfa35d7ce98c2f26756ede14539f4e788cbb6f699d17ca78a8b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c5e37ad5109066a11cf28a593ed69f8c86b8b639
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119467755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466176"
 ---
 # <a name="playlistgetnextselecteditem"></a>PLAYLIST.getNextSelectedItem
 
@@ -35,7 +35,7 @@ El **método getNextSelectedItem** recupera el índice del siguiente elemento se
 <span id="item"></span><span id="ITEM"></span>*Artículo*
 </dt> <dd>
 
-**Number** (**long**) que indica el índice del elemento del que se buscará.
+**Number** (**long**) que indica el índice del elemento después del que se buscará.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Este método se ha reemplazado por **getNextSelectedItem2,** que admite listas d
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
 [**PLAYLIST.getNextSelectedItem2**](playlist-getnextselecteditem2.md)

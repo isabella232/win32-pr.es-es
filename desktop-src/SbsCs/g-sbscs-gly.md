@@ -2,19 +2,19 @@
 description: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 904FE2AB-9E94-47E4-88BA-DB215775797B
-title: G (aplicaciones aisladas y ensamblados en paralelo)
+title: G (Aplicaciones aisladas y ensamblados en paralelo)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68bf680560a6ded86af62e80ff2375e83c9163ca7e209ac6caa8e26ab95654ca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5a4488c03da1c4c1f568db039a8b0e0a05d60ed5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119142228"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271575"
 ---
-# <a name="g-isolated-applications-and-side-by-side-assemblies"></a>G (aplicaciones aisladas y ensamblados en paralelo)
+# <a name="g-isolated-applications-and-side-by-side-assemblies"></a>G (Aplicaciones aisladas y ensamblados en paralelo)
 
-[A](a-sbscs-gly.md) B C [D](d-sbscs-gly.md) E F G H [I](i-sbscs-gly.md) J K L [M N](m-sbscs-gly.md) O [P](p-sbscs-gly.md) Q [R](r-sbscs-gly.md) [S](s-sbscs-gly.md) T U V W X Y Z
+[A](a-sbscs-gly.md) B C [D](d-sbscs-gly.md) E F G H [I](i-sbscs-gly.md) J K L [M N](m-sbscs-gly.md) O [P P](p-sbscs-gly.md) Q [R](r-sbscs-gly.md) [S](s-sbscs-gly.md) T U V W X Y Z
 
 <dl> <dt>
 

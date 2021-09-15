@@ -13,16 +13,16 @@ keywords:
 - licenses,DRM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 144ec9847477c92150f1a28d3ca37e9e748fa3de59dbe22564e0ab8b6467c345
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9d866250b9fa29ad3946aae998d80b96e91c7ea1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120110245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467065"
 ---
 # <a name="protected-files"></a>Archivos protegidos
 
-Cuando un archivo está protegido mediante drm Windows multimedia, se cifra la sección de datos del archivo. El proceso de protección de un archivo también se denomina empaquetado del archivo. Las WINDOWS api extendidas del cliente DRM multimedia no permiten empaquetar archivos. Puede empaquetar archivos mediante los objetos del SDK Windows Media Rights Manager o el SDK Windows Media Format.
+Cuando un archivo está protegido mediante drm Windows multimedia, se cifra la sección de datos del archivo. El proceso de protección de un archivo también se denomina empaquetado del archivo. Las WINDOWS api extendidas de cliente DRM multimedia no permiten empaquetar archivos. Puede empaquetar archivos mediante los objetos del SDK Windows Media Rights Manager o el SDK Windows Media Format.
 
 Un usuario no puede acceder a los datos de un archivo protegido sin obtener primero una licencia para ese archivo.
 

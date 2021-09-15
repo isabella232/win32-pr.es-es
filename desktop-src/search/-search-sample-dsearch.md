@@ -4,12 +4,12 @@ ms.assetid: 9c09b1fe-c63e-4c6e-9c8b-f5e29cf0fe9e
 title: DSearch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2505a8482a698f3147ae9c13ddb135c1da1c584f16cf52a5a05ca469efbc968
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4285596a8109361accd6b3adecf80ea98074e55e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117680728"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360385"
 ---
 # <a name="dsearch"></a>DSearch
 
@@ -34,7 +34,7 @@ En este tema se incluyen las siguientes secciones.
 
 Este ejemplo está disponible en la siguiente ubicación.
 
-| Ubicación      | Dirección URL de ruta de acceso                                                                  |
+| Location      | Dirección URL de ruta de acceso                                                                  |
 |---------------|---------------------------------------------------------------------------|
 | GitHub        | [Ejemplo de DSearch](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch/DSearch)         |
 
@@ -54,7 +54,7 @@ Este ejemplo está disponible en la siguiente ubicación.
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
 1. Vaya al directorio que contiene el nuevo ejecutable, mediante la ventana símbolo del sistema o Windows Explorador.
-2. En el símbolo del sistema, escriba , o en Windows Explorer, haga doble clic en `DSearch.exe` el icono de DSearch.exe.
+2. En el símbolo del sistema, escriba o, en Windows Explorer, haga doble clic en el `DSearch.exe` icono de DSearch.exe.
 
 ## <a name="related-topics"></a>Temas relacionados
 

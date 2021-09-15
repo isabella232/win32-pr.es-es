@@ -5,15 +5,15 @@ ms.assetid: 522af5d7-ba7b-4127-9cdb-48ef4d0f8e65
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ff44e03e9eae0226ac57279c37d4a5dfd32fc6bd
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369680"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466984"
 ---
 # <a name="categorizing-by-component-capabilities"></a>Categorización por funcionalidades de componentes
 
-Las categorías de componentes se pueden usar para mostrar un subconjunto de todos los componentes instalados. Cada categoría de componente se identifica mediante un GUID, denominado identificador de categoría (CATID). Cada CATID tiene una lista de nombres legibles y etiquetados con configuración regional asociados. Una lista de los CATID y los nombres legibles se almacena en una ubicación conocida del registro.
+Las categorías de componentes se pueden usar para mostrar un subconjunto de todos los componentes instalados. Cada categoría de componente se identifica mediante un GUID, denominado id. de categoría (CATID). Cada CATID tiene una lista de nombres legibles y etiquetados con configuración regional asociados. Una lista de los CATID y los nombres legibles se almacena en una ubicación conocida del registro.
 
 Por ejemplo, todos los componentes que implementan la funcionalidad para la inserción de documentos OLE se pueden clasificar dentro de una categoría de componentes. En el pasado, estos objetos se habrían identificado mediante la clave "Insertable" en el Registro. Para usar categorías de componentes en su lugar, se agregaría la siguiente información al Registro:
 
@@ -39,7 +39,7 @@ Con esta información, un contenedor puede enumerar los controles instalados en 
 
 <dl> <dt>
 
-[Asociación de iconos a una categoría](associating-icons-with-a-category.md)
+[Asociar iconos a una categoría](associating-icons-with-a-category.md)
 </dt> <dt>
 
 [Categorización por funcionalidades de contenedor](categorizing-by-container-capabilities.md)

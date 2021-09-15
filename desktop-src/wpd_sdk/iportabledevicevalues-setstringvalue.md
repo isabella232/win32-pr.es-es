@@ -1,5 +1,5 @@
 ---
-description: El método SetStringValue agrega un nuevo valor de cadena (tipo \_ VT LPWSTR) o sobrescribe uno existente.
+description: El método SetStringValue agrega un nuevo valor de cadena (tipo VT \_ LPWSTR) o sobrescribe uno existente.
 ms.assetid: a6eba2b9-de18-431e-874e-af68695e8d3f
 title: Método IPortableDeviceValues::SetStringValue (PortableDeviceTypes.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 0c00195823d71a59e706af1c0a627670f583776140772c3b8634ac10d7d95919
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 163b5cd81ce8da64fc6d9f4304de5783b248522f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119806865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466442"
 ---
-# <a name="iportabledevicevaluessetstringvalue-method"></a>IPortableDeviceValues::SetStringValue (método)
+# <a name="iportabledevicevaluessetstringvalue-method"></a>IPortableDeviceValues::SetStringValue (Método)
 
-El **método SetStringValue** agrega un nuevo valor de cadena (tipo \_ VT LPWSTR) o sobrescribe uno existente.
+El **método SetStringValue** agrega un nuevo valor de cadena (tipo VT \_ LPWSTR) o sobrescribe uno existente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -69,7 +69,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cualquier memoria de clave existente se liberará correctamente.
 
@@ -95,13 +95,13 @@ Para obtener un ejemplo de cómo usar este método, vea [Especificar informació
 [Agregar un recurso a un objeto](adding-a-resource-to-an-object.md)
 </dt> <dt>
 
-[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
+[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::GetStringValue**](iportabledevicevalues-getstringvalue.md)
 </dt> <dt>
 
-[Establecer propiedades para un único objeto](setting-properties-for-a-single-object.md)
+[Establecer propiedades para un solo objeto](setting-properties-for-a-single-object.md)
 </dt> <dt>
 
 [Establecer propiedades para varios objetos](setting-properties-for-multiple-objects.md)

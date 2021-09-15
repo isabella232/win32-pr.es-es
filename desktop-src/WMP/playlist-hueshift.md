@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a615549c25b57ed9693843a09433200f73c8e4ffad131c2a4e4057932c5e92b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 99e9dbe89989ddd8f02d67ac8f14532b9b1fbf15
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117747086"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466172"
 ---
 # <a name="playlisthueshift"></a>PLAYLIST.hueShift
 
@@ -29,9 +29,9 @@ El **atributo hueShift** especifica o recupera la cantidad por la que se desplaz
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un número de lectura y **escritura** **(float)** con un valor que va de 0,0 a 360,0 con un valor predeterminado de 0,0.
+Este atributo es un número de lectura y **escritura** (**float**) con un valor que va de 0,0 a 360,0 con un valor predeterminado de 0,0.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo cambia el valor de matiz de las imágenes especificadas por los atributos **dropDownBackgroundImage** y **dropDownImage** si se han especificado y hacen referencia a imágenes BMP de 8 bits.
 
@@ -49,7 +49,7 @@ Este atributo cambia el valor de matiz de las imágenes especificadas por los at
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
 [**PLAYLIST.dropDownBackgroundImage**](playlist-dropdownbackgroundimage.md)

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ef7813d4331308e8fdc081918f6b0bd2385199a88e07f51475c6344234b9e065
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1788a83d7be6a153a2ec3c6e3afce3b2586d42d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119967204"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466585"
 ---
 # <a name="vistaparamtableclass5name-field"></a>Campo VistaParam.TableClass5Name
 

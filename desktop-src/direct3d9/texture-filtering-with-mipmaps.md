@@ -4,18 +4,18 @@ ms.assetid: b64abca9-0efb-4939-849d-e75a8d0dc10b
 title: Filtrado de texturas con mapas Mip (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c68f98c1189f130261981fdd309bb3f06bcca1e66f6e23a70e141a5abfe32f4a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bdc109ae6de93a26b5d5e5b90e948761e92ee92c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118291646"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465653"
 ---
 # <a name="texture-filtering-with-mipmaps-direct3d-9"></a>Filtrado de texturas con mapas Mip (Direct3D 9)
 
 Un mapa mip es una secuencia de texturas, cada una de las cuales es una representación de resolución progresivamente inferior de la misma imagen. El alto y ancho de cada imagen, o nivel, en el mapa mip es una potencia de dos menores que el nivel anterior. Los mapas Mip no tienen que ser cuadrados.
 
-Se usa una imagen mipmap de alta resolución para los objetos que están cerca del usuario. Las imágenes de resolución inferior se usan a medida que el objeto aparece más lejos. Mipmapping mejora la calidad de las texturas representados a costa de usar más memoria.
+Se usa una imagen mipmap de alta resolución para los objetos que están cerca del usuario. Las imágenes de menor resolución se usan cuando el objeto aparece más lejos. Mipmapping mejora la calidad de las texturas representados a costa de usar más memoria.
 
 Direct3D representa mapas MIP como una cadena de superficies adjuntas. La textura de resolución más alta está en la parte superior de la cadena y tiene el siguiente nivel de mipmap como datos adjuntos. A su vez, ese nivel tiene un dato adjunto que es el siguiente nivel del mapa mip, y así sucesivamente, hasta el nivel de resolución más bajo del mapa mip.
 
@@ -70,7 +70,7 @@ Los dos primeros parámetros aceptados por [**IDirect3DDevice9::CreateTexture**]
 
 Llame al [**método IDirect3DDevice9::SetTexture**](/windows/desktop/api) para establecer el conjunto de texturas mipmap como la primera textura de la lista de texturas actuales. Para obtener más información, vea [Mezcla de textura (Direct3D 9).](texture-blending.md)
 
-Una vez que la aplicación selecciona el conjunto de texturas mipmap, debe asignar valores del tipo enumerado [**D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md) al estado del muestreador MIPFILTER de D3DSAMP. \_ A continuación, Direct3D realiza automáticamente el filtrado de textura de mapa mip. La habilitación del filtrado de texturas mipmap se muestra en el ejemplo de código siguiente.
+Una vez que la aplicación selecciona el conjunto de texturas mipmap, debe asignar valores del tipo enumerado [**D3DTEXTUREFILTERTYPE**](./d3dtexturefiltertype.md) al estado del muestreador MIPFILTER de D3DSAMP. \_ A continuación, Direct3D realiza automáticamente el filtrado de textura de mapa mipmap. La habilitación del filtrado de texturas mipmap se muestra en el ejemplo de código siguiente.
 
 
 ```
@@ -101,7 +101,7 @@ Las aplicaciones deben atravesar manualmente una cadena de mapas mipmap para car
 
 <dl> <dt>
 
-[Filtrado de textura](texture-filtering.md)
+[Filtrado de texturas](texture-filtering.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: Wi-Fi lista de canales del dispositivo Direct.
+description: Wi-Fi lista de canales del dispositivo direct.
 ms.assetid: 57875502-e6ac-4b2a-9c51-b467d5feab9d
 title: System.Devices.WiFiDirect.SupportedChannelList
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d166e9f047242c6f469bc31885213676596358322996d91b9d0f0284020fcf2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7126d34e1aec4077eb2005e7c9d752d63daf7061
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118466982"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359680"
 ---
 # <a name="systemdeviceswifidirectsupportedchannellist"></a>System.Devices.WiFiDirect.SupportedChannelList
 
-Wi-Fi lista de canales del dispositivo Direct
+Wi-Fi lista de canales del dispositivo direct
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

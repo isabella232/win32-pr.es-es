@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 40ff2dbed37aa8ceb80072870c78cee4e63cba3656550081be2c655cb6f6ddf9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 370fddc1428c8f77edb77cdac2dc04123fc5211f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117857714"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468071"
 ---
 # <a name="shellfolderviewfolder-property"></a>Propiedad ShellFolderView.Folder
 
@@ -39,7 +39,7 @@ Folder = ShellFolderView.Folder
 
 Objeto que recibe el [**objeto Folder.**](folder.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **Solo** se puede llamar a la carpeta en el sistema local. No funcionará cuando se ejecute en una página web a través de HTTP o UNC.
 
@@ -97,12 +97,12 @@ En el ejemplo siguiente se muestra el uso adecuado de esta propiedad para JScrip
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

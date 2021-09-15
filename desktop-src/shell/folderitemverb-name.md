@@ -1,7 +1,7 @@
 ---
 description: Contiene el nombre del verbo.
 ms.assetid: d18fddac-eb51-4031-a572-1bfef2f757a9
-title: Propiedad FolderItemVerb.Name (Shldisp. h)
+title: FolderItemVerb.Name propiedad (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,13 +14,13 @@ api_type:
 api_location:
 - Shell32.dll
 ms.openlocfilehash: 5d352f02486f1d7304d4c474aa836401bfef635e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984159"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468217"
 ---
-# <a name="folderitemverbname-property"></a>Propiedad FolderItemVerb.Name
+# <a name="folderitemverbname-property"></a>FolderItemVerb.Name propiedad
 
 Contiene el nombre del verbo.
 
@@ -41,9 +41,9 @@ Variable de tipo [**BSTR**](/previous-versions/windows/desktop/automat/bstr) que
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **Name** para recuperar el nombre del primer elemento de la colección de verbos a la que responde la carpeta de programa del usuario. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa Name** para recuperar el nombre del primer elemento de la colección de verbos a los que responde la carpeta Program del usuario. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -74,7 +74,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -147,11 +147,11 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: aea8cb7db76cf77f3ac8f694412a937d5dfaf2e5c879ad81245edd1f75e9ab98
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6f966ab31644a41ff745e19b99fb06be8691a2d7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119032863"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468292"
 ---
 # <a name="conversion-functions"></a>Funciones de conversión
 

@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101688
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: b4f4c8d31bb8e9575bff1de2161265056683f5593e42606e0a9732c106cf55fa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: abc9a88a96bc062ede0c242f0a832e39acc6fb40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119839065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466032"
 ---
 # <a name="esentfileioabortexception-properties"></a>Propiedades de EsentFileIOAbortException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentFileIOAbortException](./esentfileioabortexception-class.md) expone los siguientes miembros.
+El [tipo EsentFileIOAbortException](./esentfileioabortexception-class.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -34,7 +34,7 @@ El [tipo EsentFileIOAbortException](./esentfileioabortexception-class.md) expone
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">

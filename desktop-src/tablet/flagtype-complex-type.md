@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 62556e58f8574dc196655c8f11ca0f2bb0a670d7210aa100f96875e574a8b1b7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a0105aa8c0c8bc777ab97f751bdb7b2d819dcdb2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118967634"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360321"
 ---
 # <a name="flagtype-complex-type"></a>Tipo complejo FlagType
 
@@ -33,7 +33,7 @@ Define el tipo que contiene la imagen binaria codificada y la información de po
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 

@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 433b255615a3fb57d59589b09a4a8b3e0f4cec5c02115bc737041d1fd94a197f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a69f0671c82363ff61179c0120b3db8f6e755de9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119100629"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468579"
 ---
-# <a name="ibasicdevicetype-method"></a>IBasicDevice::Type (Método)
+# <a name="ibasicdevicetype-method"></a>IBasicDevice::Type (método)
 
 Recupera un valor de enumeración que indica el tipo de dispositivo del dispositivo DLNA.
 
@@ -62,7 +62,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

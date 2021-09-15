@@ -1,19 +1,19 @@
 ---
-description: La forma fácil de usar de System.Photo.ExposureProgram. No diseñado para analizarse mediante programación.
+description: La forma fácil de usar de System.Photo.ExposureProgram. No está pensado para analizarse mediante programación.
 ms.assetid: ea9c9a56-595b-4fdc-a2ea-f06b915b1754
 title: System.Photo.ExposureProgramText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83bbcc220061a664b9c61d338c1c1b2f30db3ce03ceda94b31b0b5c0474580b7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e3bf60ee4a0991ecd3b434c4c53a296bec257f9b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120111975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468396"
 ---
 # <a name="systemphotoexposureprogramtext"></a>System.Photo.ExposureProgramText
 
-La forma fácil de usar de System.Photo.ExposureProgram. No diseñado para analizarse mediante programación.
+La forma fácil de usar de System.Photo.ExposureProgram. No está pensado para analizarse mediante programación.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

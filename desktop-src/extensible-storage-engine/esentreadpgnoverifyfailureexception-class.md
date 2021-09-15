@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9bca310e9eae421bc930efc4616d6252f2612450ff6094071ce3b71b42b8b250
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0de6967016196e48fe15bf6f190d1a4207678bcd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119835965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467244"
 ---
 # <a name="esentreadpgnoverifyfailureexception-class"></a>Clase EsentReadPgnoVerifyFailureException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones ReadPgnoVerifyFailure.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -68,7 +68,7 @@ public sealed class EsentReadPgnoVerifyFailureException : EsentCorruptionExcepti
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

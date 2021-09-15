@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 086cb0f3fbb4cb009cd156013ce3ea16a2a7dee3b2346824d51b79094c06c45e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c5e4f6570faff459126a32ea4680d41a3b8302e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119592895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360358"
 ---
 # <a name="playlist-creator-sample"></a>Ejemplo de creador de listas de reproducción
 
@@ -34,7 +34,7 @@ En este tema se incluyen las siguientes secciones.
 | Producto                                | Versión mínima del producto |
 |----------------------------------------|-------------------------|
 | Windows                                | Windows Vista           |
-| Kit de desarrollo de software de Windows (SDK) | 7,0                     |
+| Kit de desarrollo de software de Windows (SDK) | 7.0                     |
 
 
 
@@ -53,7 +53,7 @@ Para compilar el ejemplo desde el símbolo del sistema:
 1.  Abra la ventana del símbolo del sistema y vaya al directorio del proyecto **PlaylistCreator.**
 2.  Escriba `msbuild PlaylistCreator.sln`.
 
-Para compilar el ejemplo mediante Microsoft Visual Studio (preferido):
+Para compilar el ejemplo mediante Microsoft Visual Studio (opción preferida):
 
 > [!Note]  
 > Este ejemplo también se puede usar con la Visual C++ Express Edition si el Visual Studio completo no está disponible.
@@ -64,18 +64,18 @@ Para compilar el ejemplo mediante Microsoft Visual Studio (preferido):
 2.  Haga doble clic en el icono del archivo PlaylistCreator.sln para abrir el proyecto en Visual Studio.
 3.  En el menú **Compilar**, seleccione **Compilar solución**.
     > [!Note]  
-    > Si está compilando 64 bits con Visual C++ Express Edition, debe usar el compilador cruzado x64 proporcionado con el SDK de Windows.
+    > Si va a compilar 64 bits con Visual C++ Express Edition, debe usar el compilador cruzado x64 proporcionado con el SDK de Windows.
 
      
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-1.  Vaya al directorio que contiene el nuevo ejecutable, mediante el símbolo del sistema o Windows Explorer.
+1.  Vaya al directorio que contiene el nuevo ejecutable mediante el símbolo del sistema o Windows Explorador.
 2.  En la línea de comandos, escriba `PlaylistCreator.exe` . Como alternativa, en Windows Explorer haga doble clic en el icono de PlaylistCreator.exe.
 3.  Haga clic con el botón derecho en cualquier archivo de música o carpeta que contenga archivos de música en Windows Explorer para crear una lista de reproducción para abrir el menú contextual.
 4.  Puede crear una lista de reproducción .m3u o .wpl. Las listas de reproducción se crean en la `%userprofile%\Music\Playlists` carpeta .
     > [!Note]  
-    > Los verbos nuevos del menú contextual se pueden encontrar en la carpeta **Música,** pilas de música, pilas de la biblioteca **Música y** colecciones de archivos de música.
+    > Los verbos nuevos del menú contextual se pueden encontrar en la carpeta **Música,** las pilas de música, las pilas de la biblioteca **Música y** las colecciones de archivos de música.
 
      
 

@@ -3,7 +3,7 @@ title: Propiedad ContextPopup.ContextMaps
 description: Representa un contenedor para los elementos ContextMap.
 ms.assetid: 06dfd4ba-a1d8-48bb-b185-d265e007a820
 keywords:
-- Propiedad ContextPopup.ContextMaps Windows Cinta de opciones
+- Propiedad ContextPopup.ContextMaps Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 05b6f6e2f1533553c33949b300213c1957cb47b8606d811f1b6f1f8f6cf33b9a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 034381c4af840219ff1d6dd4d7a73aa34f528915
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119840835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466531"
 ---
 # <a name="contextpopupcontextmaps-property"></a>Propiedad ContextPopup.ContextMaps
 
@@ -55,7 +55,7 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Opcional.
 

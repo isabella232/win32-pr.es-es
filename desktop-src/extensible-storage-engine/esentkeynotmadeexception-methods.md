@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102045
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: e8d8804ebeb765234538c74bd60eacfd1284089cac0316d8e43fbda54127a8f9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4082833964f29f9c1209b6a8491acbf6994a511e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118777403"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465639"
 ---
 # <a name="esentkeynotmadeexception-methods"></a>Métodos de EsentKeyNotMadeException 
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentKeyNotException expone](./esentkeynotmadeexception-class.md) los miembros siguientes.
+El [tipo EsentKeyNotMadeException](./esentkeynotmadeexception-class.md) expone los siguientes miembros.
 
 ## <a name="methods"></a>Métodos
 
@@ -82,6 +82,6 @@ Superior
 
 #### <a name="reference"></a>Referencia
 
-[Clase EsentKeyNotException](./esentkeynotmadeexception-class.md)
+[Clase EsentKeyNotMadeException](./esentkeynotmadeexception-class.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

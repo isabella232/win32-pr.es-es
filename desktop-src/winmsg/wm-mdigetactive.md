@@ -4,12 +4,12 @@ ms.assetid: 3ee445be-dd55-4825-8508-fa18a346ffcd
 title: WM_MDIGETACTIVE mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7716138028f7fe7447cc89d8feded7806f4f8757cd4a18b4bef6f2d812de3f17
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c49f4ec321f526cd4c9766555e2361ef2cfbd040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118200145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466505"
 ---
 # <a name="wm_mdigetactive-message"></a>Mensaje \_ MDIGETACTIVE de WM
 
@@ -50,7 +50,7 @@ El valor devuelto es el identificador de la ventana secundaria MDI activa.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
@@ -58,7 +58,7 @@ El valor devuelto es el identificador de la ventana secundaria MDI activa.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -4,14 +4,14 @@ ms.assetid: 97B68B0A-8266-4FCF-8CD9-35890E1AC774
 title: MF_MPEG4SINK_MOOV_BEFORE_MDAT atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e98614484beee5187364570e3c5517ba0f61e0d77161484b59af93a9f5a6512c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5b5d345dc027c457ceb6123ce3854fff4b74f987
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119104741"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468709"
 ---
-# <a name="mf_mpeg4sink_moov_before_mdat-attribute"></a>Atributo \_ MOOV MF MPEG4SINK \_ BEFORE \_ \_ MDAT
+# <a name="mf_mpeg4sink_moov_before_mdat-attribute"></a>Atributo \_ MF MPEG4SINK \_ MOOV BEFORE \_ \_ MDAT
 
 Indica que "moov" se escribirá antes del cuadro "mdat" en el archivo generado.
 
@@ -19,34 +19,34 @@ Indica que "moov" se escribirá antes del cuadro "mdat" en el archivo generado.
 
 **UINT32**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El comportamiento predeterminado del receptor multimedia mpeg4 es escribir "moov" después del cuadro "mdat". Al establecer este atributo, el archivo generado escribe "moov" antes del cuadro "mdat".
 
 Para que el receptor mpeg4 use este atributo, la secuencia de bytes que se pasa no debe ser de búsqueda lenta ni remota para .
 
-Esta característica implica una copia o reuxación de archivos adicionales.
+Esta característica implica una copia o reuxing de archivos adicionales.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                  |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos de tipo multimedia](media-type-attributes.md)
+[Atributos de tipo de medio](media-type-attributes.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: ff612a76-b49c-462a-8559-d3d789617182
 title: System.Devices.StorageFreeSpace
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4eb8a3fb3dc515c5843302739f5f3413569d26ba799845ad468297edeb5fa101
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c0b7ddf480560bd20c2c19ad4e1163861ac0ab42
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119097084"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468507"
 ---
 # <a name="systemdevicesstoragefreespace"></a>System.Devices.StorageFreeSpace
 
@@ -37,7 +37,7 @@ propertyDescription
             setValue = 0
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

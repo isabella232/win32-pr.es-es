@@ -4,12 +4,12 @@ ms.assetid: F1B8A8C8-2E41-4321-A94D-C50447C69941
 title: MF_READWRITE_MMCSS_CLASS_AUDIO atributo (Mfreadwrite.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f416c22619c0777ef244e6566328154bf7a7336587fc73a3f29626fcdaa1c462
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fa35db710c6b72c103855fa2c0a9f169f49c4511
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119345285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467211"
 ---
 # <a name="mf_readwrite_mmcss_class_audio-attribute"></a>Atributo \_ AUDIO MF READWRITE \_ MMCSS \_ CLASS \_
 
@@ -25,11 +25,11 @@ Para obtener este atributo, llame [**a IMFAttributes::GetString**](/windows/desk
 
 Para establecer este atributo, llame [**a IMFAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Opcionalmente, establezca este atributo al crear una instancia del lector de [origen](source-reader.md) o del [escritor de receptores.](sink-writer.md) El valor del atributo debe ser un nombre de clase MMCSS válido.
 
-Si se establece este atributo, el lector de origen o el escritor de receptores registran sus subprocesos de procesamiento de audio con la clase MMCSS especificada. MMCSS garantiza que el procesamiento de datos en el lector de origen o el escritor de receptores tiene prioridad sobre otras tareas del sistema.
+Si se establece este atributo, el lector de origen o el escritor receptor registran sus subprocesos de procesamiento de audio con la clase MMCSS especificada. MMCSS garantiza que el procesamiento de datos en el lector de origen o el escritor de receptores tiene prioridad sobre otras tareas del sistema.
 
 Para especificar la prioridad base de los subprocesos de audio, establezca el atributo [MF \_ READWRITE \_ MMCSS \_ PRIORITY \_ AUDIO.](mf-readwrite-mmcss-priority-audio.md) Si no se establece ese atributo, la prioridad base para los subprocesos de audio es cero.
 
@@ -45,11 +45,11 @@ En la mayoría de las aplicaciones, los problemas de audio son mucho más percep
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                              |
-| Header<br/>                   | <dl> <dt>Mfreadwrite.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfreadwrite.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

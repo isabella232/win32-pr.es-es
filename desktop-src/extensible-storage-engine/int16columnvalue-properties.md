@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.int1
 ms:contentKeyID: 55103328
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 69e2569a3cc92b9ff07bd60f0d53b70ab4441666eb608d443c011c068d5b284c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 30eacfbd92cfcbd3b342eba180733c0e06313561
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118076742"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465417"
 ---
 # <a name="int16columnvalue-properties"></a>Propiedades Int16ColumnValue
 
@@ -83,7 +83,7 @@ El [tipo Int16ColumnValue](./int16columnvalue-class.md) expone los miembros sigu
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

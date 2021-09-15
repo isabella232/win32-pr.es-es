@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc993317d154a3b769f071b7c7187a2cf71d188dd7e73ac834bbec4874c89f91
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 594f406420b3b18f88b8890ca4248345ba77fa8e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117687922"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468558"
 ---
 # <a name="cursor-resource"></a>Recurso CURSOR
 
@@ -47,7 +47,7 @@ Nombre del archivo que contiene el recurso. El nombre debe ser un nombre de arch
 
 Algunos atributos también se admiten por compatibilidad con versiones anteriores. Para más información, consulte [Atributos de recursos comunes.](common-resource-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los recursos de icono y cursor pueden contener más de una imagen.
 

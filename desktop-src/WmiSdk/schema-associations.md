@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Asociaciones de esquema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 461dc7c64267376baf1515ed7784da59bc789f6f1cc1171587823adb27799830
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ea2f0c3b753bf4657c66a635319bab7dbe435a3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119995695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359850"
 ---
 # <a name="schema-associations"></a>Asociaciones de esquema
 

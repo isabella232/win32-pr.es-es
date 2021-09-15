@@ -4,12 +4,12 @@ ms.assetid: 33d04859-4220-40a6-be46-74a812a44ca8
 title: WM_MDICASCADE mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 59977b86a63c62d69571a6e5c631dd9044fb57f072adf04b0882e16af4f65e17
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a6208ce924ab6185399f3f673a435e1fbaca2741
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119448735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466506"
 ---
 # <a name="wm_mdicascade-message"></a>Mensaje \_ MDICASCADE de WM
 

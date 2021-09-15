@@ -4,12 +4,12 @@ ms.assetid: f035ee56-7582-45d3-bafe-dd9c821b6326
 title: MF_ACTIVATE_CUSTOM_VIDEO_PRESENTER_CLSID atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5afd39cf31cd0efaff4dc4d32756e1e27433d87fac643e4058897babd0f4f50f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c0eb913a56671d5d2ac8d27c785e1cc1fbfc51a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117877258"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468731"
 ---
 # <a name="mf_activate_custom_video_presenter_clsid-attribute"></a>Atributo \_ \_ \_ \_ \_ CLSID DE MF ACTIVATE CUSTOM VIDEO PRESENTER
 
@@ -19,7 +19,7 @@ CLSID de un presentador de vídeo personalizado para el receptor multimedia de r
 
 **GUID**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si va a crear la EVR a través de un objeto de activación, puede usar este atributo para establecer un presentador de vídeo personalizado en la EVR. Use este atributo como se muestra a continuación:
 
@@ -35,15 +35,15 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

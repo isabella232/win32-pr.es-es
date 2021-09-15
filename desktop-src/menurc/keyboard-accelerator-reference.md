@@ -4,12 +4,12 @@ description: Referencia del acelerador de teclado
 ms.assetid: cc7c6271-6aac-4463-aaf4-c3b209982046
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00bd634c0016da6dffc8092fa85e01673ff287b571a09aae05fbdc9355323a36
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4bcdb400d7a0ebda3e6ea5a44d02b6f8eb74e393
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119825985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468555"
 ---
 # <a name="keyboard-accelerator-reference"></a>Referencia del acelerador de teclado
 

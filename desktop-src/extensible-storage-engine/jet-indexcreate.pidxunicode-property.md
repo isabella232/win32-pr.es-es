@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f00dd405cae5ca03933c3b3d6932ce7cf8c81098d80b41446e585eb8d4474362
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 394ae0a8ef77bd591e76a0e1c886a7abc56b754c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119039023"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466309"
 ---
 # <a name="jet_indexcreatepidxunicode-property"></a>JET_INDEXCREATE.pidxUnicode, propiedad
 
@@ -40,7 +40,7 @@ Obtiene o establece las opciones de comparación unicode opcionales.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -64,7 +64,7 @@ public JET_UNICODEINDEX pidxUnicode { get; set; }
 
 Tipo: [Microsoft.Isam.Esent.Interop.JET_UNICODEINDEX](./jet-unicodeindex-class.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

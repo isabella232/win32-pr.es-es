@@ -4,12 +4,12 @@ ms.assetid: 529a8b7a-08b4-47de-8ed3-28e8fff0ede2
 title: Control de eventos desde el dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: efb972e0de232ce281923ae2f763e264ef7120f363981778dcab7a8cb254fbfa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 74692b73e39aa83286604408f3c556f5fbeb3f58
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117843247"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467057"
 ---
 # <a name="handling-events-from-the-device"></a>Control de eventos desde el dispositivo
 

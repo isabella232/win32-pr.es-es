@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.colu
 ms:contentKeyID: 55100951
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: f197a18f1ef0f024a51f8d51f00cb269705edcf65ffac713ce91ef416cd9d7f6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2e428cb559aac02ded18126b944638cbee0b3cfc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120066985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359081"
 ---
 # <a name="columnvalue-members"></a>Miembros ColumnValue
 

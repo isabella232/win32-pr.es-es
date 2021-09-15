@@ -4,12 +4,12 @@ ms.assetid: 97515703-0bf4-4230-ae35-181b48b70c40
 title: Creación de una instalación redistribuible
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80bdd63a00f1f4245ea83173e1a7e609094fe30e5357f5e1ebf3d6da63182cde
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d1ad9b9ec8b10032d4a2bb44cca52e5c2f4178b6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119936875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360324"
 ---
 # <a name="creating-a-redistributable-setup"></a>Creación de una instalación redistribuible
 
@@ -17,7 +17,7 @@ Para distribuir una aplicación habilitada para entrada de lápiz a equipos que 
 
 El módulo de combinación Mstpcrt.msm incluye todos los archivos, recursos, entradas del Registro y lógica de configuración necesarios para que Windows Installer instale los archivos compartidos que otras plataformas necesitan para ejecutar aplicaciones no administradas desarrolladas para tablet PC. Mstpcrt.msm lo consumen los Windows Installer (.msi). Para las aplicaciones que usan [**el objeto InkDivider,**](inkdivider-class.md) también debe redistribuir InkDiv.msm. En el caso de las aplicaciones que usan componentes administrados, también debe incluir los archivos de módulo de combinación para esos componentes administrados.
 
-En la tabla siguiente se describen los archivos de módulo de combinación que se envían con el kit de desarrollo de software (SDK) Windows XP Tablet PC Edition.
+En la tabla siguiente se describen los archivos del módulo de combinación que se envían con el kit de desarrollo de software (SDK) Windows XP Tablet PC Edition.
 
 
 
@@ -46,16 +46,16 @@ En la tabla siguiente se describen los archivos de módulo de combinación que s
 
 ## <a name="reduced-feature-set"></a>Conjunto de características reducido
 
-Las aplicaciones habilitadas para lápiz tratan los eventos del mouse como movimientos de lápiz para simular el trabajo con un lápiz de tableta. Los usuarios pueden agregar entrada manuscrita, borrarla y guardar documentos de entrada manuscrita. Sin embargo, el reconocimiento y los gestos no están disponibles para usuarios distintos de los que ejecutan Windows XP Tablet PC Edition.
+Las aplicaciones habilitadas para entrada de lápiz tratan los eventos del mouse como movimientos de lápiz para simular el trabajo con un lápiz de tableta. Los usuarios pueden agregar entrada manuscrita, borrarla y guardar documentos de entrada manuscrita. Sin embargo, el reconocimiento y los gestos no están disponibles para usuarios distintos de los que ejecutan Windows XP Tablet PC Edition.
 
-Mstpcrt.msm no incluye Windows de entrada del equipo de tableta o de diario.
+Mstpcrt.msm no incluye Windows de entrada de Tablet PC o Journal.
 
 El [**objeto PenInputPanel**](peninputpanel-class.md) no funciona en ningún sistema operativo además de Windows XP Tablet PC Edition.
 
 ## <a name="deployment"></a>Implementación
 
 > [!Note]  
-> Si la aplicación usa código administrado, también debe implementar framework. El marco debe instalarse antes de que se instalen los ensamblados administrados de Tablet PC.
+> Si la aplicación usa código administrado, también debe implementar framework. El marco debe instalarse antes de instalar los ensamblados administrados de Tablet PC.
 
  
 
@@ -71,12 +71,12 @@ Para incluir Mstpcrt.msm en un Microsoft Visual Studio de instalación de .NET:
 3.  En el **cuadro de diálogo** Agregar módulos, vaya a Y seleccione **Mstpcrt.msm**.
 4.  Haga clic en **Abrir**.
 
-Mstpcrt.msm se agrega al proyecto de instalación y aparece en Explorador de soluciones ventana.
+Mstpcrt.msm se agrega al proyecto de instalación y aparece en la Explorador de soluciones configuración.
 
 Windows El instalador agrega los archivos contenidos en el módulo de combinación a la carpeta Archivos de programa. Para usar estos archivos, los usuarios finales deben iniciar sesión con una cuenta que tenga acceso a la carpeta Archivos de programa.
 
 > [!Note]  
-> Debe agregar las [acciones Acción SelfRegModules y](../msi/selfregmodules-action.md) Acción [SelfUnregModules](../msi/selfunregmodules-action.md) a la secuencia de instalación. Las [acciones MsiPublishAssemblies Action](../msi/msipublishassemblies-action.md) y [MsiUnpublishAssemblies Action](/windows/desktop/Msi/msiunpublishassemblies-action) reciben su orden en la secuencia de instalación de estas acciones.
+> Debe agregar las [acciones Acción SelfRegModules](../msi/selfregmodules-action.md) y [Acción SelfUnregModules](../msi/selfunregmodules-action.md) a la secuencia de instalación. Las [acciones MsiPublishAssemblies Action](../msi/msipublishassemblies-action.md) y [MsiUnpublishAssemblies Action](/windows/desktop/Msi/msiunpublishassemblies-action) reciben su orden en la secuencia de instalación de estas acciones.
 
  
 

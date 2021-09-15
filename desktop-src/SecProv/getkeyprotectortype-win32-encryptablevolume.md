@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: d55603644c675d80341f1b82713ba66ae9ea310aadc19843dd724b233e34dc24
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 483394f2e1c80f97442a9e6758f604093d513c3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119667675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270756"
 ---
 # <a name="getkeyprotectortype-method-of-the-win32_encryptablevolume-class"></a>Método GetKeyProtectorType de la clase EncryptableVolume de Win32 \_
 
@@ -69,7 +69,7 @@ Entero sin signo que especifica el tipo del protector de clave.
 | <dl> <dt>6</dt> </dl>  | TPM y PIN y clave de inicio<br/>               |
 | <dl> <dt>7</dt> </dl>  | Clave pública<br/>                                |
 | <dl> <dt>8</dt> </dl>  | Passphrase<br/>                                |
-| <dl> <dt>9</dt> </dl>  | Certificado de TPM<br/>                           |
+| <dl> <dt>9</dt> </dl>  | Certificado tpm<br/>                           |
 | <dl> <dt>10</dt> </dl> | CryptoAPI Next Generation (CNG) Protector<br/> |
 
 
@@ -96,15 +96,15 @@ Este método devuelve uno de los códigos siguientes u otro código de error si 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista Ultimate \[\]<br/>                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
@@ -113,7 +113,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

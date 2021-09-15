@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b569f90546b9f07dc288e37422171c57cf5189ab047aec2afcecd14b37d1208e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d539df352119d24e1c8ddf7df816b8715f659417
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119781115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248864"
 ---
 # <a name="jet_columnbasecbmax-property"></a>JET_COLUMNBASE.cbMax, propiedad
 
-Obtiene la longitud máxima de la columna. Esto solo es significativo para las columnas de tipo [Text](./jet-coltyp-enumeration.md), [LongText](./jet-coltyp-enumeration.md), [Binary](./jet-coltyp-enumeration.md) y [LongBinary](./jet-coltyp-enumeration.md).
+Obtiene la longitud máxima de la columna. Esto solo es significativo para las columnas de tipo [Text](./jet-coltyp-enumeration.md), [LongText](./jet-coltyp-enumeration.md), [Binary](./jet-coltyp-enumeration.md) [y LongBinary](./jet-coltyp-enumeration.md).
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -62,7 +62,7 @@ public int cbMax { get; internal set; }
 
 Tipo: [System.Int32](/dotnet/api/system.int32)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

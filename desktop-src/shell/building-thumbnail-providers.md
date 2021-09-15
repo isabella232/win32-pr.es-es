@@ -1,6 +1,6 @@
 ---
-description: A partir de Windows Vista, se usa un mayor uso de imágenes en miniatura específicas del archivo que en versiones anteriores de Windows.
-title: Crear controladores de miniaturas
+description: A Windows vista, se usa más en imágenes en miniatura específicas del archivo que en versiones anteriores de Windows.
+title: Compilar controladores de miniaturas
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: 218264a9-ed26-4049-a721-232943f6ec53
@@ -10,23 +10,23 @@ api_location: ''
 topic_type:
 - kbArticle
 ms.openlocfilehash: c05e13f24a2f4d70a58bab904150b1e488f74854
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104984355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360382"
 ---
-# <a name="building-thumbnail-handlers"></a>Crear controladores de miniaturas
+# <a name="building-thumbnail-handlers"></a>Compilar controladores de miniaturas
 
-A partir de Windows Vista, se usa un mayor uso de imágenes en miniatura específicas del archivo que en versiones anteriores de Windows. Se usan en todas las vistas, en los cuadros de diálogo y para cualquier tipo de archivo que las proporcione. También se ha cambiado la presentación en miniatura. Hay disponible un espectro continuo de tamaños seleccionables por el usuario en lugar de los tamaños discretos, como iconos y miniaturas.
+A Windows vista, se usa más en imágenes en miniatura específicas del archivo que en versiones anteriores de Windows. Se usan en todas las vistas, en los cuadros de diálogo y en cualquier tipo de archivo que las proporciona. También se ha cambiado la visualización de miniaturas. Hay disponible un espectro continuo de tamaños seleccionables por el usuario en lugar de los tamaños discretos, como iconos y miniaturas.
 
-La interfaz [**IThumbnailProvider**](/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider) facilita una miniatura más sencilla que la anterior [**IExtractImage**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iextractimage) o [**IExtractImage2**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iextractimage2). Sin embargo, tenga en cuenta que el código existente que usa **IExtractImage** o **IExtractImage2** sigue siendo válido y es compatible.
+La [**interfaz IThumbnailProvider**](/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider) hace que proporcionar una miniatura sea más sencilla que la anterior [**IExtractImage**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iextractimage) [**o IExtractImage2.**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iextractimage2) Sin embargo, tenga en cuenta que el código existente que **usa IExtractImage** o **IExtractImage2** sigue siendo válido y compatible.
 
 ## <a name="the-recipethumbnailprovider-sample"></a>El ejemplo RecipeThumbnailProvider
 
-El ejemplo [RecipeThumbnailProvider](samples-recipethumbnailprovider.md) que se disecciona en esta sección se incluye en el kit de desarrollo de software (SDK) de Windows. La ubicación de instalación predeterminada es C: \\ archivos de programa \\ Microsoft SDK \\ Windows \\ v 6.0 \\ Samples \\ WinUI \\ Shell \\ AppShellIntegration \\ RecipeThumbnailProvider. Sin embargo, la mayor parte del código también se incluye aquí.
+El [ejemplo RecipeThumbnailProvider](samples-recipethumbnailprovider.md) que se ha diseccionado en esta sección se incluye en Windows Software Development Kit (SDK). Su ubicación de instalación predeterminada es C: Archivos de programa SDK de Microsoft Windows ejemplos de \\ \\ \\ \\ \\ \\ WinUI \\ Shell \\ AppShellIntegration \\ RecipeThumbnailProvider. Sin embargo, aquí también se incluye la mayor parte del código.
 
-En el ejemplo [RecipeThumbnailProvider](samples-recipethumbnailprovider.md) se muestra la implementación de un controlador de miniaturas para un nuevo tipo de archivo registrado con una extensión. Recipe. En el ejemplo se muestra el uso de las distintas API de controlador de miniaturas para registrar los servidores del modelo de objetos componentes (COM) de extracción en miniatura para tipos de archivo personalizados. Este tema le guía a través del código de ejemplo, resaltando las opciones de codificación y las instrucciones.
+El [ejemplo RecipeThumbnailProvider](samples-recipethumbnailprovider.md) muestra la implementación de un controlador de miniaturas para un nuevo tipo de archivo registrado con una extensión .recipe. En el ejemplo se muestra el uso de las distintas API de controlador de miniaturas para registrar servidores del Modelo de objetos componentes (COM) de extracción de miniaturas para tipos de archivo personalizados. Este tema le guía por el código de ejemplo, resaltando las opciones de codificación y las directrices.
 
 Un controlador de miniaturas siempre debe implementar [**IThumbnailProvider**](/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider) junto con una de estas interfaces:
 
@@ -34,7 +34,7 @@ Un controlador de miniaturas siempre debe implementar [**IThumbnailProvider**](/
 -   [**IInitializeWithItem**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem)
 -   [**IInitializeWithFile**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithfile)
 
-Hay casos en los que no es posible la inicialización con secuencias. En escenarios en los que el controlador de miniaturas no implementa [**IInitializeWithStream**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithstream), debe dejar de ejecutarse en el proceso aislado, donde el indexador del sistema lo coloca de forma predeterminada cuando se produce un cambio en la secuencia. Para no participar en la característica de aislamiento de procesos, establezca el siguiente valor del registro.
+Hay casos en los que no es posible inicializar con secuencias. En escenarios en los que el controlador de miniaturas no implementa [**IInitializeWithStream**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithstream), debe dejar de ejecutarse en el proceso aislado donde el indexador del sistema lo coloca de forma predeterminada cuando hay un cambio en la secuencia. Para no participar en la característica de aislamiento de procesos, establezca el siguiente valor del Registro.
 
 ```
 HKEY_CLASSES_ROOT
@@ -43,15 +43,15 @@ HKEY_CLASSES_ROOT
          DisableProcessIsolation = 1
 ```
 
-Si implementa [**IInitializeWithStream**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithstream) y realiza una inicialización basada en secuencias, el controlador es más seguro y confiable. Normalmente, deshabilitar el aislamiento de procesos solo está pensado para los controladores heredados; Evite deshabilitar esta característica para cualquier código nuevo. **IInitializeWithStream** debe ser la primera opción de la interfaz de inicialización siempre que sea posible.
+Si implementa [**IInitializeWithStream y realiza**](/windows/desktop/api/Propsys/nn-propsys-iinitializewithstream) una inicialización basada en secuencias, el controlador es más seguro y confiable. Normalmente, deshabilitar el aislamiento de procesos solo está pensado para controladores heredados; evite deshabilitar esta característica para cualquier código nuevo. **IInitializeWithStream** debe ser la primera opción de interfaz de inicialización siempre que sea posible.
 
-Dado que el archivo de imagen en el ejemplo no está incrustado en el archivo. receta y no forma parte de su secuencia de archivos, se usa [**IInitializeWithItem**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem) en el ejemplo. La implementación del método [**IInitializeWithItem:: Initialize**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iinitializewithitem-initialize) simplemente pasa sus parámetros a las variables de clase privada.
+Dado que el archivo de imagen del ejemplo no está incrustado en el archivo .recipe y no forma parte de su secuencia de archivos, se usa [**IInitializeWithItem**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iinitializewithitem) en el ejemplo. La implementación del [**método IInitializeWithItem::Initialize**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-iinitializewithitem-initialize) simplemente pasa sus parámetros a variables de clase privada.
 
-[**IThumbnailProvider**](/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider) tiene solo un método,[**GetThumbnail**](/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailprovider-getthumbnail), al que se llama con el mayor tamaño deseado de la imagen, en píxeles. Aunque el parámetro se denomina *CX*, su valor se utiliza como el tamaño máximo de las dimensiones x e y de la imagen. Si la miniatura recuperada no es cuadrada, el eje más largo está limitado por *CX* y se conserva la relación de aspecto de la imagen original.
+[**IThumbnailProvider solo**](/windows/desktop/api/Thumbcache/nn-thumbcache-ithumbnailprovider) tiene un método,[**GetThumbnail,**](/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailprovider-getthumbnail)al que se llama con el mayor tamaño deseado de la imagen, en píxeles. Aunque el parámetro se denomina *cx*, su valor se usa como el tamaño máximo de las dimensiones x e y de la imagen. Si la miniatura recuperada no es cuadrada, el eje más largo está limitado por *cx* y se conserva la relación de aspecto de la imagen original.
 
-Cuando devuelve, [**GetThumbnail**](/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailprovider-getthumbnail) proporciona un identificador a la imagen recuperada. También proporciona un valor que indica el formato de color de la imagen y si tiene información alfa válida.
+Cuando vuelve, [**GetThumbnail**](/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailprovider-getthumbnail) proporciona un identificador a la imagen recuperada. También proporciona un valor que indica el formato de color de la imagen y si tiene información alfa válida.
 
-La implementación de GetThumbnail en el ejemplo comienza con una llamada al método privado **\_ GetBase64EncodedImageString** .
+La implementación de GetThumbnail del ejemplo comienza con una llamada al método **\_ privado GetBase64EncodedImageString.**
 
 
 ```C++
@@ -65,11 +65,11 @@ IFACEMETHODIMP CRecipeThumbProvider::GetThumbnail(UINT cx,
 
 
 
-El tipo de archivo. Recipe es simplemente un archivo XML registrado como una extensión de nombre de archivo única. Incluye un elemento denominado **imagen** que proporciona la ruta de acceso relativa y el nombre de archivo de la imagen que se va a usar como miniatura para este archivo. receta determinado. El elemento de **imagen** está formado por el atributo de **origen** que especifica una imagen codificada en base 64 y un atributo de **tamaño** opcional.
+El tipo de archivo .recipe es simplemente un archivo XML registrado como una extensión de nombre de archivo única. Incluye un elemento denominado **Picture** que proporciona la ruta de acceso relativa y el nombre de archivo de la imagen que se va a usar como miniatura para este archivo .recipe concreto. El **elemento Picture** consta del atributo **Source** que especifica una imagen codificada en base 64 y un atributo **Size** opcional.
 
-**El tamaño** tiene dos valores: pequeño y grande. Esto le permite proporcionar varios nodos de **imagen** con imágenes independientes. La imagen recuperada depende del valor de tamaño máximo (*CX*) proporcionado en la llamada a [**GetThumbnail**](/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailprovider-getthumbnail). Dado que Windows nunca cambia el tamaño de la imagen a un tamaño mayor que el tamaño máximo, se pueden proporcionar diferentes imágenes para diferentes resoluciones. Sin embargo, para simplificar, el ejemplo omite el atributo de **tamaño** y proporciona una sola imagen para todas las situaciones.
+**El** tamaño tiene dos valores, Pequeño y Grande. Esto le permite proporcionar varios nodos **de imagen** con imágenes independientes. La imagen recuperada depende del valor de tamaño máximo (*cx*) proporcionado en la llamada a [**GetThumbnail**](/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailprovider-getthumbnail). Dado Windows tamaño de la imagen es mayor que su tamaño máximo, se pueden proporcionar diferentes imágenes para diferentes resoluciones. Sin embargo, para simplificar, el ejemplo omite el **atributo Size** y proporciona solo una imagen para todas las situaciones.
 
-El método **\_ GetBase64EncodedImageString** , cuya implementación se muestra aquí, usa las API de Document Object Model XML (dom) para recuperar el nodo de **imagen** . Desde ese nodo, extrae la imagen de los datos del atributo de **origen** .
+El **\_ método GetBase64EncodedImageString,** cuya implementación se muestra aquí, usa las API xml Document Object Model (DOM) para recuperar el **nodo Picture.** Desde ese nodo extrae la imagen de los datos **del** atributo Source.
 
 
 ```C++
@@ -128,7 +128,7 @@ HRESULT CRecipeThumbProvider::_GetBase64EncodedImageString(UINT /* cx */,
 
 
 
-A continuación, [**GetThumbnail**](/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailprovider-getthumbnail) pasa la cadena recuperada a **\_ GetStreamFromString**.
+[**A continuación, GetThumbnail**](/windows/desktop/api/Thumbcache/nf-thumbcache-ithumbnailprovider-getthumbnail) pasa la cadena recuperada a **\_ GetStreamFromString.**
 
 
 ```C++
@@ -146,7 +146,7 @@ IFACEMETHODIMP CRecipeThumbProvider::GetThumbnail(UINT cx,
 
 
 
-El método **\_ GetStreamFromString** , cuya implementación se muestra aquí, que convierte la imagen codificada en una secuencia.
+Método **\_ GetStreamFromString,** cuya implementación se muestra aquí, que convierte la imagen codificada en una secuencia.
 
 
 ```C++
@@ -197,7 +197,7 @@ HRESULT CRecipeThumbProvider::_GetStreamFromString(PCWSTR pszImageName,
 
 
 
-A continuación, **GetThumbnail** usa las API de Windows Imaging Component (WIC) para extraer un mapa de bits de la secuencia y obtener un identificador para dicho mapa de bits. La información alfa está establecida, WIC está correctamente cerrado y el método finaliza correctamente.
+**GetThumbnail** usa Windows API del componente de creación de imágenes (WIC) para extraer un mapa de bits de la secuencia y obtener un identificador para ese mapa de bits. Se establece la información alfa, WIC se cierra correctamente y el método finaliza correctamente.
 
 
 ```C++
@@ -232,13 +232,13 @@ IFACEMETHODIMP CRecipeThumbProvider::GetThumbnail(UINT cx,
 
 <dl> <dt>
 
-[Controladores en miniatura](thumbnail-providers.md)
+[Controladores de miniaturas](thumbnail-providers.md)
 </dt> <dt>
 
-[Instrucciones de controlador de miniaturas](thumbnail-provider-guidelines.md)
+[Instrucciones del controlador de miniaturas](thumbnail-provider-guidelines.md)
 </dt> <dt>
 
-[**IID \_ PPV \_ args**](/windows/win32/api/combaseapi/nf-combaseapi-iid_ppv_args)
+[**ARGUMENTOS \_ de IID PPV \_**](/windows/win32/api/combaseapi/nf-combaseapi-iid_ppv_args)
 </dt> </dl>
 
  

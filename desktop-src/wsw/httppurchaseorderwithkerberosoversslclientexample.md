@@ -1,23 +1,23 @@
 ---
 title: HttpPurchaseOrderWithKerberosOverSslClientExample
-description: En este ejemplo se muestra un cliente HTTP que usa el proxy de servicio para hablar con un servicio PurchaseOrder, con Kerberos sobre la seguridad en modo mixto de SSL.
+description: En este ejemplo se muestra un cliente HTTP que usa el proxy de servicio para hablar con un servicio PurchaseOrder, con kerberos sobre la seguridad en modo mixto de SSL.
 ms.assetid: 6756043c-ef4c-4fa6-a27b-7ecb900601f9
 keywords:
 - HttpPurchaseOrderWithKerberosOverSslClientExample Native-Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6cfb786d2b100006c4a9fa80edbfd4253d21de0322fcbe2ad4713dfe1b7840cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2b5ca33bd87467a18857c20208fdc243b04f6224
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118963184"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466635"
 ---
 # <a name="httppurchaseorderwithkerberosoversslclientexample"></a>HttpPurchaseOrderWithKerberosOverSslClientExample
 
-En este ejemplo se muestra un cliente HTTP que usa el proxy de servicio para hablar con un servicio PurchaseOrder, con Kerberos sobre la seguridad en modo mixto de SSL. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación de cliente se proporciona mediante un vale de APREQ de Kerberos en un WS-Security encabezado del mensaje.
+En este ejemplo se muestra un cliente HTTP que usa el proxy de servicio para hablar con un servicio PurchaseOrder, con kerberos sobre la seguridad en modo mixto de SSL. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación de cliente se proporciona mediante un vale de APREQ de Kerberos en un WS-Security encabezado del mensaje.
 
 -   [PurchaseOrderClientKerberosOverSsl.cpp](#purchaseorderclientkerberosoversslcpp)
 -   [PurchaseOrder.wsdl](#purchaseorderwsdl)

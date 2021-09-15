@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Creación y declaración de una instancia mediante C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 046c8c32944c7b726e09eade2701f8d35c9edb0363635eca2a16f7e3d630799a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bd316975c68625383a9d2a2d1fe2fc389d30494a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119568805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465779"
 ---
 # <a name="creating-and-declaring-an-instance-using-c"></a>Creación y declaración de una instancia mediante C++
 
-Puede crear una instancia en C++ a través de [**la interfaz IWbemServices.**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices)
+Puede crear una instancia en C++ a través de la [**interfaz IWbemServices.**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices)
 
 Los ejemplos de código de este tema requieren que la \# siguiente instrucción include se compile correctamente.
 
@@ -31,7 +31,7 @@ En el procedimiento siguiente se describe cómo crear una instancia de una clase
 
 1.  Recupere la definición de la clase existente llamando a los [**métodos IWbemServices::GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) o [**IWbemServices::GetObjectAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync)
 
-    En el ejemplo de código siguiente se muestra cómo usar los métodos [**GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) y [**GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) para obtener un puntero a la interfaz [**IWbemClassObject**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemclassobject) que proporciona acceso a la definición de clase.
+    En el ejemplo de código siguiente se muestra cómo usar los métodos [**GetObject**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobject) y [**GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) para obtener un puntero a la [**interfaz IWbemClassObject**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemclassobject) que proporciona acceso a la definición de clase.
 
     ```C++
     // The pSv variable is of type IWbemServices *
@@ -49,9 +49,9 @@ En el procedimiento siguiente se describe cómo crear una instancia de una clase
 
     
 
-2.  Cree la nueva instancia mediante una llamada [**al método IWbemClassObject::SpawnInstance.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-spawninstance)
+2.  Cree la nueva instancia llamando al [**método IWbemClassObject::SpawnInstance.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-spawninstance)
 
-    En el ejemplo de código siguiente se muestra cómo crear una nueva instancia de y, a continuación, liberar la clase .
+    En el ejemplo de código siguiente se muestra cómo crear una nueva instancia y, a continuación, liberar la clase .
 
     ```C++
     pExampleClass->SpawnInstance(0, &pNewInstance);
@@ -60,11 +60,11 @@ En el procedimiento siguiente se describe cómo crear una instancia de una clase
 
     
 
-3.  Establezca valores para cualquier propiedad que no herede los valores definidos para la clase llamando al [**método IWbemClassObject::P ut.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-put)
+3.  Establezca valores para cualquier propiedad que no herede los valores definidos para la clase llamando al método [**IWbemClassObject::P ut.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-put)
 
     Cada instancia de una clase hereda todas las propiedades definidas para la clase. Sin embargo, puede especificar valores de propiedad diferentes si lo desea.
 
-    Si la clase existente tiene una propiedad de clave, debe establecer la propiedad en **NULL** o en un valor único garantizado. Si establece la clave en **NULL** y la clave es una cadena, [**PutInstanceAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putinstanceasync) o [**PutInstance**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putinstance) genera internamente y asigna un GUID a la clave. De este modo, especificar **NULL para** una propiedad de clave le permite crear una instancia única que no sobrescribirá ninguna instancia anterior.
+    Si la clase existente tiene una propiedad de clave, debe establecer la propiedad en **NULL** o en un valor único garantizado. Si establece la clave en **NULL** y la clave es una cadena, [**PutInstanceAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putinstanceasync) o [**PutInstance**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putinstance) genera internamente y asigna un GUID a la clave. De este modo, especificar **NULL para** una propiedad de clave permite crear una instancia única que no sobrescribirá ninguna instancia anterior.
 
     En el ejemplo de código siguiente se muestra cómo establecer el [**valor de la propiedad Index**](swbemrefreshableitem-index.md) de la clase de instancia de ejemplo.
 
@@ -89,9 +89,9 @@ En el procedimiento siguiente se describe cómo crear una instancia de una clase
 
     Como opción, también puede definir calificadores adicionales para la clase de instancia. Puede definir calificadores adicionales para la propiedad de instancia o instancia que no es necesario que aparezcan en la declaración de clase.
 
-5.  Guarde la instancia llamando al método [**IWbemServices::P utInstance**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putinstance) o [**IWbemServices::P utInstanceAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putinstanceasync)
+5.  Guarde la instancia llamando al método [**IWbemServices::P utInstance**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putinstance) [**o IWbemServices::P utInstanceAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putinstanceasync)
 
-    WMI guarda la instancia en el espacio de nombres WMI actual. Por lo tanto, la ruta de acceso completa de la instancia depende del espacio de nombres , que suele ser el valor \\ predeterminado raíz. En este ejemplo de código, el nombre completo de la ruta de acceso sería \\ \\ . \\ root \\ default:Example.Index="IX100".
+    WMI guarda la instancia en el espacio de nombres WMI actual. Por lo tanto, la ruta de acceso completa de la instancia depende del espacio de nombres , que normalmente es el valor \\ predeterminado raíz. En este ejemplo de código, el nombre completo de la ruta de acceso sería \\ \\ . \\ root \\ default:Example.Index="IX100".
 
     En el ejemplo de código siguiente se muestra cómo guardar una instancia de .
 
@@ -104,15 +104,15 @@ En el procedimiento siguiente se describe cómo crear una instancia de una clase
 
 Al guardar la instancia en WMI, se bloquean varias de las propiedades de la instancia.
 
-En concreto, no puede realizar ninguna de las siguientes operaciones a través de la API wmi después de que exista una instancia dentro de la infraestructura WMI:
+En concreto, no puede realizar ninguna de las siguientes operaciones a través de la API de WMI después de que exista una instancia dentro de la infraestructura WMI:
 
 -   Cambie la clase primaria de la clase a la que pertenece la instancia.
 -   Agregar o quitar propiedades.
--   Cambiar los tipos de propiedad.
--   Agregue o quite [**calificadores**](standard-qualifiers.md) de clave **o indizados.**
--   Agregue o quite [**calificadores singleton,**](standard-wmi-qualifiers.md) **dinámicos** [**o abstractos.**](standard-qualifiers.md)
+-   Cambie los tipos de propiedad.
+-   Agregue o quite [**calificadores**](standard-qualifiers.md) key **o indexed.**
+-   Agregue o quite [**calificadores Singleton,**](standard-wmi-qualifiers.md) **Dynamic** [**o Abstract.**](standard-qualifiers.md)
 
-En el ejemplo de código siguiente se combinan los ejemplos de código que se han descrito en el procedimiento anterior para mostrar cómo crear una instancia mediante la API WMI.
+En el ejemplo de código siguiente se combinan los ejemplos de código que se han descrito en el procedimiento anterior para mostrar cómo crear una instancia mediante la API wmi.
 
 
 ```C++

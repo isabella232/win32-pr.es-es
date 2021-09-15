@@ -14,12 +14,12 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 586f18750e832bad653a3df92d14efb41b39547ee532913ac52c986a9b5e137c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e163fd01933ad0fc1a11429e77b37163655f39b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119712135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467982"
 ---
 # <a name="itableteventsinkcursorup-method"></a>ITabletEventSink::CursorUp (método)
 
@@ -75,7 +75,7 @@ Número de bytes de un paquete de datos de lápiz óptico.
 *pbPkt* \[ En\]
 </dt> <dd>
 
-Los datos del lápiz óptico que indican la ubicación en la que se ha lifted el lápiz óptico de la tableta.
+Los datos del lápiz óptico que indican la ubicación en la que se el lápiz se ha lifted de la tableta.
 
 </dd> </dl>
 
@@ -87,7 +87,7 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |

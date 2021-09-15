@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 29c8a966a21b07744ce05063ae8c68f09156c47717fcff825875f82b4535f945
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 67395437303de0adc8c1af226210f8ca2f45958d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118235654"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468561"
 ---
 # <a name="autoradiobutton-control"></a>Control AUTORADIOBUTTON
 
@@ -51,13 +51,13 @@ Para obtener más información sobre la sintaxis general de una instrucción de 
 
 <dl> <dt>
 
-[**Control**](control-control.md)
+[**CONTROL**](control-control.md)
 </dt> <dt>
 
 [Botones de radio](https://www.bing.com/search?q=Radio+Buttons)
 </dt> <dt>
 
-[**Radiobutton**](radiobutton-control.md)
+[**RADIOBUTTON**](radiobutton-control.md)
 </dt> </dl>
 
  

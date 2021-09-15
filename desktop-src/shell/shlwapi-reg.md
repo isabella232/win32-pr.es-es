@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 7bd7204ada31db6791d3cb78d1a11087d19eae45f0cacbfdf6ae6e032ae66a04
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8a3e4f65904fa97635b3ef4dc3abd9f01344f6a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117676504"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468033"
 ---
 # <a name="shell-registry-handling-functions"></a>Funciones de control del Registro de Shell
 
@@ -29,7 +29,7 @@ En esta sección se describen las Windows control del registro de Shell. Los ele
 | [**AssocCreate**](/windows/desktop/api/Shlwapi/nf-shlwapi-assoccreate)<br/>                     | Devuelve un puntero a un [**objeto IQueryAssociations.**](/windows/win32/api/shlwapi/nn-shlwapi-iqueryassociations)<br/>                                                                                         |
 | [**AssocGetPerceivedType**](/windows/desktop/api/Shlwapi/nf-shlwapi-assocgetperceivedtype)<br/> | Recupera el tipo percibido de un archivo en función de su extensión.<br/>                                                                                                                |
 | [**AssocIsDaous**](/windows/desktop/api/Shlwapi/nf-shlwapi-associsdangerous)<br/>           | Determina si un tipo de archivo se considera un riesgo de seguridad potencial.<br/>                                                                                                  |
-| [**AssocQueryKey**](/windows/desktop/api/Shlwapi/nf-shlwapi-assocquerykeya)<br/>                 | Busca y recupera una clave relacionada con una asociación de archivos o protocolos del registro.<br/>                                                                            |
+| [**AssocQueryKey**](/windows/desktop/api/Shlwapi/nf-shlwapi-assocquerykeya)<br/>                 | Busca y recupera una clave relacionada con una asociación de archivos o protocolos del Registro.<br/>                                                                            |
 | [**AssocQueryString**](/windows/desktop/api/Shlwapi/nf-shlwapi-assocquerystringa)<br/>           | Busca y recupera una cadena relacionada con la asociación de archivos o protocolos del Registro.<br/>                                                                              |
 | [**AssocQueryStringByKey**](/windows/desktop/api/Shlwapi/nf-shlwapi-assocquerystringbykeya)<br/> | Busca y recupera una cadena relacionada con la asociación de archivos del Registro a partir de una clave especificada.<br/>                                                            |
 | [**SHCopyKey**](/windows/desktop/api/Shlwapi/nf-shlwapi-shcopykeya)<br/>                         | Copia de forma recursiva las subclaves y los valores de la subclave de origen en la clave de destino. [**SHCopyKey**](/windows/desktop/api/Shlwapi/nf-shlwapi-shcopykeya) no copia los atributos de seguridad de las claves.<br/> |

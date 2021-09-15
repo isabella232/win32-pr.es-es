@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 9c58569554cf9170788524bdcb233bf42b3318f1e954050bb713711c93337543
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7dc237e5cdba120a08899035dc20f6fb6b2b63f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119928465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467054"
 ---
 # <a name="iportabledevicevaluessetunsignedintegervalue-method"></a>IPortableDeviceValues::SetUnsignedIntegerValue (método)
 
@@ -69,7 +69,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si un valor existente tiene la misma clave especificada por el parámetro *key,* sobrescribe el valor existente sin ninguna advertencia.
 
@@ -88,7 +88,7 @@ Para obtener un ejemplo de cómo usar este método, vea [**Especificar informaci
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

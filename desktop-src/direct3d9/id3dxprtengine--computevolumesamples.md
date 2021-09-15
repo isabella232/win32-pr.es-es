@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: edc13e8b6f0e5c725e957be22f1b297f825a4f3b622ced68adf19b34a0b64b5c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd77fff723f0cf7e3dc2a52be6a40ff6f0d71fe1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118293506"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359340"
 ---
 # <a name="id3dxprtenginecomputevolumesamples-method"></a>Método ID3DXPRTEngine::ComputeVolumeSamples
 
@@ -95,7 +95,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método calcula cómo la luz de la función de radiancia de origen se refleja fuera de la superficie que representa la escena (pSampleDataIn) y llega a cada punto del espacio especificado por pSampleLocs. Los coeficientes sh representan la asignación, en cada punto pSampleLocs, de la radiancia de origen a la radiación del incidente transferido.
 
@@ -110,7 +110,7 @@ Este método calcula cómo la luz de la función de radiancia de origen se refle
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

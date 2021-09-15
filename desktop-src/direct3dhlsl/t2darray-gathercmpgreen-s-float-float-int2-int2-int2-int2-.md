@@ -1,6 +1,6 @@
 ---
-title: Función Texture2DArray::GatherCmpGreen(S,float,float,int2,int2,int2,int2)
-description: Para cuatro valores de texel que se usarían en una operación de filtrado bi lineal, devuelve una comparación de su componente verde con un valor de comparación. | Función Texture2DArray::GatherCmpGreen(S,float,float,int2,int2,int2,int2)
+title: Función Texture2DArray::GatherCmpGreen(S,float,float,int2,int2,int2,int2,int2)
+description: Para cuatro valores de texel que se usarían en una operación de filtrado bi linear, devuelve una comparación de su componente verde con un valor de comparación. | Función Texture2DArray::GatherCmpGreen(S,float,float,int2,int2,int2,int2,int2)
 ms.assetid: 5A4B8AEB-B278-4456-893A-CAE61BFD6CA5
 keywords:
 - Función GatherCmpGreen HLSL
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e45997d3238038d3260594b5e568ca628f170af73dbabf7e382dddb2587dbb4e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef5c22819e4c582fc354a9069036586e3b7fd028
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118507368"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465537"
 ---
-# <a name="texture2darraygathercmpgreensfloatfloatint2int2int2int2-function"></a>Función Texture2DArray::GatherCmpGreen(S,float,float,int2,int2,int2,int2)
+# <a name="texture2darraygathercmpgreensfloatfloatint2int2int2int2-function"></a>Función Texture2DArray::GatherCmpGreen(S,float,float,int2,int2,int2,int2,int2)
 
-Para cuatro valores de texel que se usarían en una operación de filtrado bi lineal, devuelve una comparación de su componente verde con un valor de comparación.
+Para cuatro valores de texel que se usarían en una operación de filtrado bi linear, devuelve una comparación de su componente verde con un valor de comparación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -114,15 +114,15 @@ Tipo: **TemplateType**
 
 Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las muestras de textura se pueden usar para la interpolación bilineal.
+Los ejemplos de textura se pueden usar para la interpolación bilineal.
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

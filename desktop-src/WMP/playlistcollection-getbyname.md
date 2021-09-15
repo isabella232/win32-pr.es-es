@@ -5,7 +5,7 @@ ms.assetid: 0308a98d-1149-4367-b602-33fa54c1760f
 keywords:
 - Método getByName Reproductor de Windows Media
 - Método getByName Reproductor de Windows Media , clase PlaylistCollection
-- Clase PlaylistCollection Reproductor de Windows Media , método getByName
+- Clase PlaylistCollection Reproductor de Windows Media método , getByName
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 300307ff011abf8b28c645901422291ccab4cf7c66a7a3ba81121ffe1c22e573
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7954df8e0ccc487df77ea31b3a26dce9eea6d2e0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118334646"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466143"
 ---
 # <a name="playlistcollectiongetbyname-method"></a>Método PlaylistCollection.getByName
 
@@ -53,7 +53,7 @@ retVal = PlaylistCollection.getByName(
 
 Este método devuelve un objeto **PlaylistArray.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use *PlaylistArray*. **count** para determinar si existe una lista de reproducción. Si **count** es cero, no existe una lista de reproducción.
 
@@ -61,7 +61,7 @@ Para usar este método, se requiere acceso de lectura a la biblioteca. Para obte
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo JScript siguiente se usa *playlistCollection*. **getByName para** comprobar el objeto **playlistCollection** de una lista de reproducción denominada "ThreeList". Si existe la lista de reproducción "Threelist", **getByName** establece "ThreeList" como la lista de reproducción actual. El **objeto Player** se creó con el identificador = "Player".
+En el ejemplo JScript siguiente se *usa playlistCollection*. **getByName para** comprobar el objeto **playlistCollection** de una lista de reproducción denominada "ThreeList". Si existe la lista de reproducción "Threelist", **getByName** establece "ThreeList" como la lista de reproducción actual. El **objeto Player** se creó con el identificador = "Player".
 
 
 ```JScript
@@ -87,14 +87,14 @@ if (Checkit > 0){
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

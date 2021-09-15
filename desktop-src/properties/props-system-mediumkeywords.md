@@ -4,12 +4,12 @@ ms.assetid: 8350c7c1-da61-4011-b588-444054eff850
 title: System.MediumKeywords
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5d45b892b41b12ac54d4ba2d07d276cb3d16f9c2788ce5a0686f09de5d2f817
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2b18dd3e14881f2f2b019b22b2d7c56c5eadcac4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117865408"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468464"
 ---
 # <a name="systemmediumkeywords"></a>System.MediumKeywords
 
@@ -30,7 +30,7 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

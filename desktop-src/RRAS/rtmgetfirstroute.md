@@ -3,7 +3,7 @@ title: Función RtmGetFirstRoute (Rtm.h)
 description: La función RtmGetFirstRoute devuelve la primera ruta del subconjunto de rutas especificado en la tabla.
 ms.assetid: f2071b50-4b06-432f-8dbf-45696f8a5cb1
 keywords:
-- Función RAS de RtmGetFirstRoute
+- Ras de función RtmGetFirstRoute
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a12539e0e04422fca2f759d751c37e7a8d36828afe8017ba9a058bf0d850990d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 32e98a5deb0f925fbf3b27c21302060bbe4869b4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120073835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271895"
 ---
 # <a name="rtmgetfirstroute-function"></a>Función RtmGetFirstRoute
 
@@ -61,11 +61,11 @@ Especifica los límites del conjunto de rutas eliminadas a un subconjunto defini
 *Ruta* \[ in, out\]
 </dt> <dd>
 
-En la entrada, *la ruta* apunta a una estructura específica de la familia de protocolos [**(RTM \_ IP \_ ROUTE**](rtm-ip-route.md) o [**\_ RTM IPX \_ ROUTE).**](rtm-ipx-route.md)
+En la entrada, *Route* apunta a una estructura específica de la familia de protocolos [**(RTM \_ IP \_ ROUTE**](rtm-ip-route.md) o [**RTM \_ IPX \_ ROUTE**](rtm-ipx-route.md)).
 
-La función que realiza la llamada proporciona valores de miembro para esta estructura. Estos valores, junto con el parámetro *EnumerationFlags,* especifican el conjunto desde el que se devolverán las rutas.
+La función de llamada proporciona valores de miembro para esta estructura. Estos valores, junto con el parámetro *EnumerationFlags,* especifican el conjunto desde el que se devuelven las rutas.
 
-Salida, *Ruta apunta* a la primera ruta que coincidió con los criterios especificados.
+Salida, *Ruta* apunta a la primera ruta que coincide con los criterios especificados.
 
 </dd> </dl>
 
@@ -77,17 +77,17 @@ Si se produce un error en la función, el valor devuelto es uno de los siguiente
 
 
 
-| Valor                                                                                                       | Descripción                                                             |
+| Value                                                                                                       | Descripción                                                             |
 |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | <dl> <dt>**ERROR \_ PARÁMETRO NO \_ VÁLIDO**</dt> </dl>    | Uno de los parámetros no es válido.<br/>                            |
 | <dl> <dt>**ERROR \_ SIN \_ RUTAS**</dt> </dl>            | No hay rutas que coincidan con los criterios especificados.<br/>       |
-| <dl> <dt>**ERROR \_ SIN RECURSOS DEL \_ \_ SISTEMA**</dt> </dl> | No hay recursos suficientes para llevar a cabo la operación.<br/> |
+| <dl> <dt>**ERROR \_ NO HAY RECURSOS DEL \_ \_ SISTEMA**</dt> </dl> | No hay recursos suficientes para llevar a cabo la operación.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las rutas se devuelven en el orden siguiente:
 
@@ -96,28 +96,28 @@ Las rutas se devuelven en el orden siguiente:
 3.  Identificador de interfaz
 4.  Dirección del próximo salto
 
-Esta función es menos eficaz que la función de identificador de enumeración correspondiente, [**RtmEnumerateGetNextRoute.**](rtmenumerategetnextroute.md)
+Esta función es menos eficaz que la función de identificador de enumeración correspondiente, [**RtmEnumerateGetNextRoute**](rtmenumerategetnextroute.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Rtm.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Referencia de la versión 1 de Routing Table Manager](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
 [Funciones de Routing Table Manager versión 1](routing-table-manager-version-1-functions.md)

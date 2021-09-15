@@ -3,7 +3,7 @@ title: PLAYLIST.itemPlaylist
 description: El atributo itemPlaylist recupera la lista de reproducción del elemento multimedia que se muestra en el índice especificado en el elemento PLAYLIST.
 ms.assetid: 094bcb5d-8a59-4531-96b8-0e993ca00be6
 keywords:
-- LISTA DE REPRODUCCIÓN.elementoPlaylist Reproductor de Windows Media
+- LISTA DE REPRODUCCIÓN.elementoLista de reproducción Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33f2ed3173042d68ec048486189d909be60427df92e9936d4446f8d7a99ef592
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d1d414692050e16dfd0aebe05901bcee0bc26580
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118571187"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466164"
 ---
 # <a name="playlistitemplaylist"></a>PLAYLIST.itemPlaylist
 
@@ -29,7 +29,7 @@ El **atributo itemPlaylist** recupera la lista de reproducción del elemento mul
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un objeto De lista de **reproducción de solo** lectura.
+Este atributo es un objeto De lista de reproducción **de** solo lectura.
 
 ## <a name="parameters"></a>Parámetros
 
@@ -42,7 +42,7 @@ Este atributo es un objeto De lista de **reproducción de solo** lectura.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **propiedad itemPlaylist** devolverá el objeto de lista de reproducción que se expande en el elemento **PLAYLIST.** Por ejemplo, si hay dos listas de reproducción anidadas que no se expanden en el elemento **PLAYLIST** y que contienen tres clips multimedia cada una, **itemPlaylist**(1) devolverá la lista de reproducción primaria que contiene las dos listas de reproducción anidadas. Si se expande la segunda lista de reproducción, **itemPlaylist**(1) devolverá la segunda lista de reproducción. Si ambas listas de reproducción se expanden, **itemPlaylist**(1) devolverá la primera lista de reproducción.
 
@@ -50,17 +50,17 @@ La **propiedad itemPlaylist** devolverá el objeto de lista de reproducción que
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**ELEMENTO PLAYLIST**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
 [**Objeto de lista de reproducción**](playlist-object.md)

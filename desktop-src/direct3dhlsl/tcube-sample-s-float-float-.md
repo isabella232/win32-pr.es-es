@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 08613bb9b9465f1908828025316018d1747b1b0f7805478ce535457e45a2be18
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2ce841eb68e426fc76032d45353f2b439f0f3e4b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118788177"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465471"
 ---
 # <a name="texturecubesamplesfloatfloat-function"></a>Función TextureCube::Sample(S,float,float)
 
@@ -59,7 +59,7 @@ Las coordenadas de textura. El tipo de argumento depende del tipo texture-object
 
 
 
-| Texture-Object type                    | Tipo de parámetro |
+| Texture-Object tipo                    | Tipo de parámetro |
 |----------------------------------------|----------------|
 | Texture1D                              | FLOAT          |
 | Texture1DArray, Texture2D              | float2         |
@@ -77,7 +77,7 @@ Las coordenadas de textura. El tipo de argumento depende del tipo texture-object
 
 Tipo: **float**
 
-Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pasa 2,0f para el valor de la fijación, asegúrese de que ninguna muestra individual acceda a un nivel de mip inferior a 2,0f.
+Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pasa 2,0f para el valor de fijación, asegúrese de que ninguna muestra individual tiene acceso a un nivel de mip inferior a 2,0f.
 
 </dd> </dl>
 
@@ -85,7 +85,7 @@ Valor opcional al que se fijan los valores de LOD de ejemplo. Por ejemplo, si pa
 
 Tipo: **[ **DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)**
 
-El formato de textura, que es uno de los valores con tipo enumerados en [**DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
+Formato de textura, que es uno de los valores con tipo enumerados [**en DXGI \_ FORMAT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format).
 
 ## <a name="see-also"></a>Consulte también
 

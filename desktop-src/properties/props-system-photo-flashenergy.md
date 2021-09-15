@@ -1,19 +1,19 @@
 ---
-description: Indica la energía estrobómica en el momento en que se capturó la imagen, medida en Los segundos de energía de los rayos. Se calcula a partir de PKEY \_ Photo \_ FlashEnergyNumerator y PKEY \_ Photo \_ FlashEnergyDenominator.
+description: Indica la energía estrobón en el momento en que se capturó la imagen, medida en Los segundos de energía de los rayos. Se calcula a partir de PKEY \_ Photo \_ FlashEnergyNumerator y PKEY \_ Photo \_ FlashEnergyDenominator.
 ms.assetid: afdd1bc6-87c3-4c47-9d29-43422fd699b3
 title: System.Photo.FlashEnergy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 431d311725717d9da0b696b79567d12908f7c48f867bc0a105304b389e23de94
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 09b4277b1cca48666f14ac2b68e31317ceda82d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118229970"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467190"
 ---
 # <a name="systemphotoflashenergy"></a>System.Photo.FlashEnergy
 
-Indica la energía estrobómica en el momento en que se capturó la imagen, medida en Los segundos de energía de los rayos. Se calcula a partir de PKEY \_ Photo \_ FlashEnergyNumerator y PKEY \_ Photo \_ FlashEnergyDenominator.
+Indica la energía estrobón en el momento en que se capturó la imagen, medida en Los segundos de energía de los rayos. Se calcula a partir de PKEY \_ Photo \_ FlashEnergyNumerator y PKEY \_ Photo \_ FlashEnergyDenominator.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 
@@ -39,7 +39,7 @@ Los valores PKEY se definen en Propkey.h.
 
 <dl> <dt>
 
-[Exchangeable Image File Format para cámaras Digital Still: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format para cámaras digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
 [propertyDescription](./propdesc-schema-propertydescription.md)

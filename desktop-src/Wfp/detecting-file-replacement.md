@@ -1,21 +1,21 @@
 ---
-description: Windows Resource Protection (WRP) impide el reemplazo de archivos esenciales del sistema, carpetas y claves del Registro que se instalan como parte de Windows Vista o Windows Server 2008.
+description: Windows Protección de recursos (WRP) impide el reemplazo de archivos esenciales del sistema, carpetas y claves del Registro que se instalan como parte de Windows Vista o Windows Server 2008.
 ms.assetid: 1cb67b4a-dc75-4bd7-b314-d695c10d5558
 title: Detección de reemplazo de recursos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e452b9fba0a8002e13d7fc309ff3c8a12ec114a6a33b1bd7d8d253d710ffa77
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 62dc1855b98ca5834ef9e13e2f48bf7cca492e94
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119053232"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360554"
 ---
 # <a name="detecting-resource-replacement"></a>Detección de reemplazo de recursos
 
-Windows Resource Protection (WRP) impide el reemplazo de archivos esenciales del sistema, carpetas y claves del Registro que se instalan como parte de Windows Vista o Windows Server 2008.
+Windows Protección de recursos (WRP) impide el reemplazo de archivos esenciales del sistema, carpetas y claves del Registro que se instalan como parte de Windows Vista o Windows Server 2008.
 
-WRP protege archivos, carpetas y claves del Registro en Windows Vista o Windows Server 2008 al detectar e impedir intentos de reemplazar recursos protegidos. Esta protección se basa en una lista Windows control de acceso discrecional (DACL) y listas de control de acceso (ACL) definidas para los recursos protegidos. El permiso para el acceso completo para modificar recursos protegidos con WRP está restringido a TrustedInstaller. Los recursos protegidos con WRP solo se pueden cambiar mediante los mecanismos de reemplazo de recursos [admitidos](supported-file-replacement-mechanisms.md) con Windows instalador de módulos. Las aplicaciones que intentan modificar un recurso protegido por WRP nunca cambian el recurso y pueden recibir un mensaje de error que indica que se denegó el acceso al recurso.
+WRP protege archivos, carpetas y claves del Registro en Windows Vista o Windows Server 2008 al detectar e impedir intentos de reemplazar recursos protegidos. Esta protección se basa en una Windows de control de acceso discrecional (DACL) y listas de control de acceso (ACL) definidas para los recursos protegidos. El permiso para el acceso completo para modificar recursos protegidos por WRP está restringido a TrustedInstaller. Los recursos protegidos con WRP solo se pueden cambiar mediante los mecanismos de reemplazo de recursos admitidos con el Windows Instalador de [módulos](supported-file-replacement-mechanisms.md) de almacenamiento. Las aplicaciones que intentan modificar un recurso protegido por WRP nunca cambian el recurso y pueden recibir un mensaje de error que indica que se denegó el acceso al recurso.
 
 Las aplicaciones e instaladores pueden usar las funciones [**SfcIsFileProtected**](/windows/desktop/api/Sfc/nf-sfc-sfcisfileprotected) y [**SfcIsKeyProtected**](/windows/desktop/api/Sfc/nf-sfc-sfciskeyprotected) para determinar si un archivo o clave del Registro está protegido.
 
@@ -29,7 +29,7 @@ Windows La protección de archivos (WFP) protege los archivos del sistema median
 
 Si WFP no encuentra automáticamente el archivo en las dos primeras ubicaciones, muestra el mensaje siguiente:
 
-![Mensaje wfp que se muestra cuando no se encuentra el archivo en el directorio de caché o la ruta de acceso de instalación de red](images/wfp-1.png)
+![Mensaje wfp que se muestra cuando no se encuentra el archivo en el directorio de caché o la ruta de instalación de red](images/wfp-1.png)
 
 Si el sistema se instaló mediante un CD-ROM, WFP muestra el mensaje siguiente:
 

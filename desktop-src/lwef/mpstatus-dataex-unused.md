@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 245315d12b5fbe76ec2f552e510336aa3974753678e04f87c33546737f180c56
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bfcbc987a97a8cc47501a24e633c5da2d776a42d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119961095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468793"
 ---
-# <a name="mpstatus_dataex_unused-structure"></a>Estructura NO \_ UTILIZADA DE MPSTATUS DATAEX \_
+# <a name="mpstatus_dataex_unused-structure"></a>ESTRUCTURA \_ NO UTILIZADA DE MPSTATUS DATAEX \_
 
 Estructura ficticia para no SRP.
 
@@ -37,7 +37,7 @@ typedef struct tagMPSTATUS_DATAEX_UNUSED {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -56,7 +56,7 @@ Tipo: **DWORD**
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

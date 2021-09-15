@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec33ff5932d40a146811056d74ca3b91f0bdbfdd772a04a2d7392390d63209e3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: da8592855e0c30cef2ed43b7818badd336bc2ab6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120073825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271879"
 ---
 # <a name="rtmgetnextroute-function"></a>Función RtmGetNextRoute
 
-\[Esta API ha sido reemplazada por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
+\[Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
 La **función RtmGetNextRoute** devuelve la siguiente ruta del subconjunto de rutas especificado en la tabla.
 
@@ -77,7 +77,7 @@ Si se produce un error en la función, el valor devuelto es uno de los siguiente
 
 
 
-| Valor                                                                                                       | Descripción                                                             |
+| Value                                                                                                       | Descripción                                                             |
 |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | <dl> <dt>**ERROR \_ PARÁMETRO NO \_ VÁLIDO**</dt> </dl>    | Uno de los parámetros no es válido.<br/>                            |
 | <dl> <dt>**ERROR \_ SIN \_ RUTAS**</dt> </dl>            | No hay rutas que coincidan con los criterios especificados.<br/>       |
@@ -87,7 +87,7 @@ Si se produce un error en la función, el valor devuelto es uno de los siguiente
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las rutas se devuelven en el orden siguiente:
 
@@ -102,18 +102,18 @@ Esta función es menos eficaz que las funciones de identificador de enumeración
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Rtm.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

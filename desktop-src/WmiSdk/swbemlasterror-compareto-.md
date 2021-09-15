@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: cc169b8a18f97cd6fd8f51a0e8d1456e3619cfbebf0cbf1f107adfac2787bb54
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4c24eb6e57e81c6c44922b2d6643be65198951ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118314599"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466111"
 ---
 # <a name="swbemlasterrorcompareto_-method"></a>Método SWbemLastError.CompareTo \_
 
@@ -48,14 +48,14 @@ bAreEqual = .CompareTo_( _
 *objwbemObject* \[ En\]
 </dt> <dd>
 
-Obligatorio. Objeto [**de clase SWbemObject.**](swbemobject.md) Este parámetro es el objeto con el que se compara el primer objeto. El objeto debe ser una instancia **de SWbemObject** válida.
+Necesario. Objeto [**de clase SWbemObject.**](swbemobject.md) Este parámetro es el objeto con el que se compara el primer objeto. El objeto debe ser una instancia **de SWbemObject** válida.
 
 </dd> <dt>
 
-*iFlags* \[ in, opcional\]
+*iFlags* \[ en, opcional\]
 </dt> <dd>
 
-Entero que especifica marcas adicionales para la operación. Este parámetro especifica las características del objeto que se deben tener en cuenta cuando se realizan comparaciones de objetos. Puede usar **wbemComparisonFlagIncludeAll para** tener en cuenta todas las características (valor predeterminado) o cualquier combinación de los valores siguientes.
+Entero que especifica marcas adicionales para la operación. Este parámetro especifica las características del objeto que se deben tener en cuenta cuando se realizan comparaciones de objetos. Puede usar **wbemComparisonFlagIncludeAll** para tener en cuenta todas las características (valor predeterminado) o cualquier combinación de los valores siguientes.
 
 <dt>
 
@@ -77,7 +77,7 @@ Hace que se comparen todas las propiedades, calificadores y flavors.
 
 </dt> <dd>
 
-Hace que todos los calificadores **(incluidos Key** y **Dynamic)** se ignoren en comparación.
+Hace que todos los calificadores **(incluidos Key** y **Dynamic)** se ignoren en la comparación.
 
 </dd> <dt>
 
@@ -121,7 +121,7 @@ Indica al sistema que suponga que los objetos que se comparan son instancias de 
 
 </dt> <dd>
 
-Hace que los valores de cadena se comparen sin diferenciar mayúsculas de minúsculas. Esto se aplica tanto a las cadenas como a los valores de calificador. Los nombres de propiedades y calificadores siempre se comparan sin distinguir entre mayúsculas y minúsculas, se especifique o no este marcador.
+Hace que los valores de cadena se comparen sin tener en cuenta las mayúsculas y minúsculas. Esto se aplica tanto a las cadenas como a los valores de calificador. Los nombres de propiedades y calificadores siempre se comparan sin distinguir entre mayúsculas y minúsculas, se especifique o no este marcador.
 
 </dd> <dt>
 
@@ -132,13 +132,13 @@ Hace que los valores de cadena se comparen sin diferenciar mayúsculas de minús
 
 </dt> <dd>
 
-Hace que los calificadores se ignoren. Este marcador sigue tomando valores del calificador en una cuenta, pero omite las distinciones de modos tales como las reglas de propagación y las restricciones de reemplazamiento.
+Hace que se ignoren los formatos de calificador. Este marcador sigue tomando valores del calificador en una cuenta, pero omite las distinciones de modos tales como las reglas de propagación y las restricciones de reemplazamiento.
 
 </dd> </dl> </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-El **método \_ CompareTo** devuelve el valor **booleano TRUE si** los objetos coinciden; de lo contrario, devuelve **FALSE.**
+El **método \_ CompareTo** devuelve el valor **booleano TRUE** si los objetos coinciden; de lo contrario, devuelve **FALSE.**
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -171,11 +171,11 @@ No hay suficiente memoria para completar la operación.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemLastError<br/>                                                        |
@@ -183,7 +183,7 @@ No hay suficiente memoria para completar la operación.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

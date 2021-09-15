@@ -1,23 +1,23 @@
 ---
-description: La Directiva de metadatos de fotos para la propiedad System. Photo. FocalLengthInFilm.
+description: Directiva de metadatos de fotos para la propiedad System.Photo.FocalLengthInSimo.
 ms.assetid: 3ad63a7a-5ced-4e7f-a4a0-e1463f3d3fa3
-title: Directiva de metadatos de la foto de System. Photo. FocalLengthInFilm
+title: Directiva de metadatos de fotos System.Photo.FocalLengthInArt
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 5df46f3e52c447cb7902fe3cce2da201dae16d9c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104498029"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467927"
 ---
-# <a name="systemphotofocallengthinfilm-photo-metadata-policy"></a>Directiva de metadatos de la foto de System. Photo. FocalLengthInFilm
+# <a name="systemphotofocallengthinfilm-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Photo.FocalLengthInArt
 
-La Directiva de metadatos de fotos para la propiedad [System. Photo. FocalLengthInFilm](../properties/props-system-photo-focallengthinfilm.md) .
+Directiva de metadatos de fotos [para la propiedad System.Photo.FocalLengthInSimo.](../properties/props-system-photo-focallengthinfilm.md)
 
 ### <a name="pkey"></a>PKEY
 
-PKEY \_ FocalLengthInFilm
+PKEY \_ FocalLengthInLíning
 
 ### <a name="containers"></a>Contenedores
 
@@ -27,7 +27,7 @@ JPEG, TIFF
 
 No
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de salida
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de salida
 
 VT \_ UI4
 
@@ -37,7 +37,7 @@ UShort
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se reconcilian los valores de los distintos esquemas.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
@@ -45,23 +45,23 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                            | Formato de disco |
+| Pedido | Path                            | Formato de disco |
 |-------|---------------------------------|-------------|
-| 1     | /app1/IFD/Exif/{ushort = 41989}   | ushort      |
-| 2     | /xmp/exif:FocalLengthIn35mmFilm | unicode     |
+| 1     | /app1/ifd/exif/{ushort=41989}   | ushort      |
+| 2     | /xmp/exif:FocalLengthIn35mmAca | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                            | Formato de disco |
+| Pedido | Path                            | Formato de disco |
 |-------|---------------------------------|-------------|
-| 1     | /app1/IFD/Exif/{ushort = 41989}   | ushort      |
-| 2     | /xmp/exif:FocalLengthIn35mmFilm | unicode     |
+| 1     | /app1/ifd/exif/{ushort=41989}   | ushort      |
+| 2     | /xmp/exif:FocalLengthIn35mmAca | unicode     |
 
 
 
@@ -71,10 +71,10 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                            |
+| Pedido | Path                            |
 |-------|---------------------------------|
-| 1     | /app1/IFD/Exif/{ushort = 41989}   |
-| 2     | /xmp/exif:focallengthin35mmfilm |
+| 1     | /app1/ifd/exif/{ushort=41989}   |
+| 2     | /xmp/exif:focallengthin35mmhin |
 
 
 
@@ -86,23 +86,23 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                                | Formato de disco |
+| Pedido | Path                                | Formato de disco |
 |-------|-------------------------------------|-------------|
-| 1     | /IFD/Exif/{ushort = 41989}            | ushort      |
-| 2     | /ifd/xmp/exif:FocalLengthIn35mmFilm | unicode     |
+| 1     | /ifd/exif/{ushort=41989}            | ushort      |
+| 2     | /ifd/xmp/exif:FocalLengthIn35mmAca | unicode     |
 
 
 
  
 
-### <a name="write-paths"></a>Escribir rutas de acceso
+### <a name="write-paths"></a>Rutas de acceso de escritura
 
 
 
-| Pedido | Ruta                                | Formato de disco |
+| Pedido | Path                                | Formato de disco |
 |-------|-------------------------------------|-------------|
-| 1     | /IFD/Exif/{ushort = 41989}            | ushort      |
-| 2     | /ifd/xmp/exif:FocalLengthIn35mmFilm | unicode     |
+| 1     | /ifd/exif/{ushort=41989}            | ushort      |
+| 2     | /ifd/xmp/exif:FocalLengthIn35mmAca | unicode     |
 
 
 
@@ -112,10 +112,10 @@ Se reconcilian los valores de los distintos esquemas.
 
 
 
-| Pedido | Ruta                                |
+| Pedido | Path                                |
 |-------|-------------------------------------|
-| 1     | /IFD/Exif/{ushort = 41989}            |
-| 2     | /ifd/xmp/exif:focallengthin35mmfilm |
+| 1     | /ifd/exif/{ushort=41989}            |
+| 2     | /ifd/xmp/exif:focallengthin35mmmpl |
 
 
 
@@ -127,7 +127,7 @@ Se reconcilian los valores de los distintos esquemas.
 
 <dl> <dt>
 
-[System. Photo. FocalLengthInFilm](../properties/props-system-photo-focallengthinfilm.md)
+[System.Photo.FocalLengthInLín](../properties/props-system-photo-focallengthinfilm.md)
 </dt> </dl>
 
  

@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f427dc67695ebaca3e3e7502f2f1961b738a8f775ace394948ef445f3ad9a64e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a1521738af4411baa2c11f3d20722e09e2d22a83
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118703091"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466492"
 ---
 # <a name="iconfigasfwriterconfigurefilterusingprofileguid-method"></a>IConfigAsfWriter::ConfigureFilterUsingProfileGuid (método)
 
@@ -66,7 +66,7 @@ Devuelve uno de los siguientes **valores HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-A partir de Windows SDK de la serie Media Format 9, no se ha definido ningún perfil de sistema nuevo. Con este método solo se pueden usar GUID de perfil de sistema de la versión 8 (o anterior).
+A partir de Windows SDK de la serie Media Format 9, no se han definido nuevos perfiles del sistema. Con este método solo se pueden usar GUID de perfil de sistema de la versión 8 (o anterior).
 
 ## <a name="see-also"></a>Vea también
 

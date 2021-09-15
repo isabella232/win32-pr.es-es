@@ -4,12 +4,12 @@ description: Redistribuir Reproductor de Windows Media serie 9
 ms.assetid: 812e3fc7-e23d-489c-a486-62c7602cf46e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 418a780836c0a64a1b31b0d3c01a69841b695803f5db61b049915ec0d981f9c9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 62f48da20123255ae08a0993d361a95deb8ed335
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119861685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465521"
 ---
 # <a name="redistributing-windows-media-player-9-series"></a>Redistribuir Reproductor de Windows Media serie 9
 
@@ -19,15 +19,15 @@ Puede instalar Reproductor de Windows Media serie 9 en Windows XP mediante uno d
 -   MPSetup.exe
 
 > [!Note]  
-> MPSetup.exe es un superconjunto del programa de MPSetupXP.exe programa de instalación. Contiene archivos necesarios para los sistemas operativos publicados antes de Windows XP. MPSetup.exe es funcionalmente equivalente a MPSetupXP.exe cuando se ejecuta en Windows XP, pero el tamaño del archivo del programa de instalación es mayor porque no se ha optimizado para la instalación en sistemas operativos Windows XP.
+> MPSetup.exe es un superconjunto del programa de MPSetupXP.exe programa de instalación. Contiene archivos que son necesarios para los sistemas operativos publicados antes Windows XP. MPSetup.exe es funcionalmente equivalente a MPSetupXP.exe cuando se ejecuta en Windows XP, pero el tamaño del archivo del programa de instalación es mayor porque no se ha optimizado para la instalación en Windows XP.
 
  
 
-Puede instalar Reproductor de Windows Media serie 9 en Windows 98 Second Edition, Windows Millennium Edition o Windows 2000 mediante el programa de instalación siguiente.
+Puede instalar Reproductor de Windows Media serie 9 en Windows 98 Second Edition, Windows Millennium Edition o Windows 2000 mediante el siguiente programa de instalación.
 
 -   MPSetup.exe
 
-Este es un ejemplo de una línea de comandos para la instalación sin interfaz de usuario y sin aviso de reinicio o reinicio.
+Este es un ejemplo de una línea de comandos para la instalación sin interfaz de usuario y sin símbolo del sistema de reinicio o reinicio.
 
 
 ```
@@ -37,7 +37,7 @@ MPSetup.exe /q:A /c:"setup_wm.exe /Q /R:N /P:#e"
 
 
 > [!Note]  
-> El parámetro /P: e especifica que el paquete de instalación Reproductor de Windows Media se debe almacenar en caché \# durante Reproductor de Windows Media instalación. Este comando se usa para controlar futuras actualizaciones del sistema operativo. Este comando solo deben omitirlo los administradores de TI corporativos. El único caso en el que /P: e no debe incluirse en la línea de comandos es cuando posee el sistema de destino y sabe que el sistema de destino nunca se actualizará a un sistema \# operativo posterior. Por ejemplo, si va a instalar Reproductor de Windows Media serie 9 en Windows 2000 y es posible que el equipo se actualice a Windows XP, debe usar /P: e en la línea de \# comandos. De lo contrario, después Windows la instalación de XP, los Reproductor de Windows Media se sobrescribirán con los archivos para Reproductor de Windows Media para Windows XP.
+> El parámetro /P: e especifica que el paquete de instalación Reproductor de Windows Media se debe almacenar en caché durante \# Reproductor de Windows Media instalación. Este comando se usa para controlar futuras actualizaciones del sistema operativo. Este comando solo debe omitirlo los administradores de TI corporativos. El único caso en el que /P: e no debe incluirse en la línea de comandos es cuando posee el sistema de destino y sabe que el sistema de destino nunca se actualizará a un \# sistema operativo posterior. Por ejemplo, si va Reproductor de Windows Media instalar la serie 9 en Windows 2000 y el equipo puede actualizarse a Windows XP, debe usar /P: e en la línea de \# comandos. De lo contrario, después Windows la instalación de XP, los archivos Reproductor de Windows Media se sobrescribirán con los archivos de Reproductor de Windows Media para Windows XP.
 
  
 
@@ -47,9 +47,9 @@ En la tabla siguiente se muestran parámetros adicionales que puede usar con Rep
 
 | Parámetro              | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| /NoMigrate             | Impedir la migración de bibliotecas.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| /NestedRestore         | Cree un punto de restauración del sistema anidado. Úsese esto si la aplicación crea un punto de restauración del sistema para anidar el Reproductor de Windows Media de restauración dentro del punto de restauración de la aplicación.                                                                                                                                                                                                                                                                                                                             |
-| /DisallowSystemRestore | No permitir la creación de un punto de restauración del sistema. Esta marca deshabilitará la creación de un punto de restauración del sistema. En la mayoría de los casos, esta marca no debe usarse para la redistribución de software general. Solo se debe usar cuando se puede realizar una elección explícita en nombre del usuario final para no admitir la reversión de los archivos Reproductor de Windows Media a una versión anterior del reproductor. Esta marca solo debe usarse para la implementación corporativa o la instalación del fabricante de equipos originales (OEM). |
+| /NoMigrate             | Evitar la migración de bibliotecas.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| /NestedRestore         | Cree un punto de restauración del sistema anidado. Úsenos si la aplicación crea un punto de restauración del sistema para anidar el Reproductor de Windows Media de restauración dentro del punto de restauración de la aplicación.                                                                                                                                                                                                                                                                                                                             |
+| /DisallowSystemRestore | No permitir la creación de un punto de restauración del sistema. Esta marca deshabilitará la creación de un punto de restauración del sistema. En la mayoría de las circunstancias, esta marca no debe usarse para la redistribución general de software. Esto solo se debe usar cuando se puede realizar una elección explícita en nombre del usuario final para no admitir la reversión de los archivos Reproductor de Windows Media a una versión anterior del Reproductor. Esta marca solo debe usarse para la implementación corporativa o la instalación del fabricante de equipos originales (OEM). |
 
 
 

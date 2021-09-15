@@ -4,18 +4,18 @@ description: Trabajar con el reproductor
 ms.assetid: 27aff735-2142-4506-b9d0-2c0fbe60fd6b
 keywords:
 - Reproductor de Windows Media máscaras, atributo player en JScript
-- skins,player attribute in JScript
+- máscaras, atributo player en JScript
 - attributes,player
 - atributo player
-- JScript para máscaras, atributo player
+- JScript archivos para máscaras,atributo player
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77098f161244488d5097d2d022f105628a43ba50a40218da01295d99f2de0cd7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0d47ea74b4c91f92ef33106e40e9896b98de6a34
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118566987"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467332"
 ---
 # <a name="working-with-the-player"></a>Trabajar con el reproductor
 
@@ -29,7 +29,7 @@ player.Controls.Stop()
 
 
 
-El **atributo** global del reproductor es la clave para acceder al control Reproductor de Windows Media mediante scripting de máscara. A través de este atributo, todos los objetos del control Reproductor de Windows Media pueden ser accesibles para la modificación en tiempo de ejecución a través de sus propiedades y métodos. Además, el elemento **PLAYER** está disponible para que pueda especificar controladores de eventos y el atributo **url** en tiempo de diseño.
+El **atributo** global del reproductor es la clave para acceder al control Reproductor de Windows Media mediante scripting de máscara. A través de este atributo, todos los objetos del control Reproductor de Windows Media se vuelven accesibles para la modificación en tiempo de ejecución a través de sus propiedades y métodos. Además, el elemento **PLAYER** está disponible para que pueda especificar controladores de eventos y el atributo **url** en tiempo de diseño.
 
 ## <a name="related-topics"></a>Temas relacionados
 

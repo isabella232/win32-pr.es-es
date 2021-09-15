@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fb566bf8925c8d6a79b107ce440504318d188c9b7ab551dd7dc405fa80dcd48
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4969a4cba3c874a2c5ec857b8a3e737c74bff420
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118116790"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465512"
 ---
 # <a name="viewmaxwidth"></a>VIEW.maxWidth
 
@@ -35,13 +35,13 @@ Este atributo es un número de **lectura** y escritura (**long**) con un valor d
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
+| Version<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

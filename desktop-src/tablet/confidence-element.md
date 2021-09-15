@@ -1,19 +1,19 @@
 ---
-description: Contiene la clasificación de confianza devuelta por el analizador de entrada de lápiz Journal para InkWord.
+description: Contiene la clasificación de confianza devuelta por el analizador de entrada manuscrita Journal para InkWord.
 ms.assetid: cb0ed0d0-5e2f-44a3-b72b-61cbfd22bae8
 title: Elemento Confidence
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e86e4169767f3bf40d49e71e84214d50d3c0c0b4ecf5d3f7a9034ee6c8ea279d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a5fdaaed8d9c57822ad94ec49183a399ed317917
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119936985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360020"
 ---
 # <a name="confidence-element"></a>Elemento Confidence
 
-Contiene la clasificación de confianza devuelta por el analizador de entrada manuscrita Journal para [**InkWord**](inkword-element.md).
+Contiene la clasificación de confianza devuelta por el analizador de entrada de lápiz Journal para [**InkWord.**](inkword-element.md)
 
 ## <a name="definition"></a>Definición
 

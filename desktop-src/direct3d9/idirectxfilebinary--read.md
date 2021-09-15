@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 2e0c926580df3471ae314d2c6127b38bf3c2231946010a0ab58500125edc6f39
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 60548640fbbb0e67909eab1fed2df24a3465bf95
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117728991"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466066"
 ---
-# <a name="idirectxfilebinaryread-method"></a>IDirectXFileBinary::Read (método)
+# <a name="idirectxfilebinaryread-method"></a>IDirectXFileBinary::Read (Método)
 
 Lee los datos binarios. En desuso.
 
@@ -47,7 +47,7 @@ HRESULT Read(
 
 Tipo: **[ **LPVOID**](../winprog/windows-data-types.md)**
 
-Puntero al búfer que recibe los datos que se han leído.
+Puntero al búfer que recibe los datos leídos.
 
 </dd> <dt>
 

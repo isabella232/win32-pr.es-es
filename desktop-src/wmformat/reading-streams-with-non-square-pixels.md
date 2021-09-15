@@ -22,16 +22,16 @@ keywords:
 - píxeles (no cuadrados)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9173c7b5dca81f11a6e35afafe30efa33d86c604adcadb59a51b17ab8130422c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ecfc14019e9822aefedb7600adc4209317293b2f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117846032"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466662"
 ---
 # <a name="reading-streams-with-non-square-pixels"></a>Lectura Secuencias con píxeles no cuadrados
 
-Las aplicaciones de lector que necesitan controlar correctamente los píxeles no cuadrados deben examinar los atributos de nivel de flujo en el encabezado ASF y las extensiones de unidad de datos de cada ejemplo. Hay dos casos en los que el rectángulo de salida debe ajustarse para compensar píxeles no cuadrados.
+Las aplicaciones de lector que necesitan controlar correctamente los píxeles no cuadrados deben examinar los atributos de nivel de flujo en el encabezado ASF y las extensiones de unidad de datos de cada ejemplo. Hay dos casos en los que el rectángulo de salida debe ajustarse para compensar los píxeles no cuadrados.
 
 Cuando el contenido de origen se ha capturado desde un dispositivo como una cámara DV (vídeo digital) con píxeles no cuadrados en su CCD, una aplicación lectora debe ajustar su rectángulo de salida de vídeo para que la imagen se muestre correctamente en un monitor de equipo con píxeles cuadrados.
 

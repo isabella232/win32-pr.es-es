@@ -1,5 +1,5 @@
 ---
-description: Windows Los dispositivos de hardware de adquisición de imágenes (WIA) tienen valores de propiedad que se almacenan en el registro Windows imágenes.
+description: Windows Los dispositivos de hardware de adquisición de imágenes (WIA) tienen valores de propiedad que se almacenan en Windows registro.
 ms.assetid: 78caa3af-927b-4143-9e88-4b5c918d00a4
 title: Constantes de propiedad del dispositivo del analizador (Wiadef.h)
 ms.topic: reference
@@ -48,17 +48,17 @@ api_type:
 api_location:
 - wiadef.h
 ms.openlocfilehash: d9e7afee9b5b639c21e52dc797e7ad42a6ee0dd0
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122627191"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467343"
 ---
 # <a name="scanner-device-property-constants"></a>Constantes de propiedad del dispositivo del analizador
 
-Windows Los dispositivos de hardware de adquisición de imágenes (WIA) tienen valores de propiedad que se almacenan en el registro Windows imágenes. Para obtener más información, vea [**Constantes comunes de propiedades de dispositivo.**](-wia-wiaitempropcommondevice.md) Las siguientes constantes de propiedad de dispositivo, con sus cadenas asociadas, son específicas de los escáneres de imágenes digitales.
+Windows Los dispositivos de hardware de adquisición de imágenes (WIA) tienen valores de propiedad que se almacenan en Windows registro. Para obtener más información, [**vea Constantes comunes de propiedades de dispositivo.**](-wia-wiaitempropcommondevice.md) Las siguientes constantes de propiedad de dispositivo, con sus cadenas asociadas, son específicas de los escáneres de imágenes digitales.
 
-El prefijo "WIA DPS" indica una propiedad de dispositivo para dispositivos de escáner y es la convención de nomenclatura usada \_ \_ en C/C++. Con fines de scripting, estas constantes usan el prefijo "ScannerDevice" y forman parte del tipo enumerado [WiaItemPropertyId.](-wia-wiaitempropertyid.md) El nombre de miembro correspondiente de esa enumeración de script aparece entre paréntesis junto al nombre de constante de C/C++ en la lista siguiente.
+El prefijo "WIA DPS" indica una propiedad de dispositivo para dispositivos scanner y es la convención de nomenclatura \_ \_ usada en C/C++. Con fines de scripting, estas constantes usan el prefijo "ScannerDevice" y forman parte del tipo enumerado [WiaItemPropertyId.](-wia-wiaitempropertyid.md) El nombre de miembro correspondiente de esa enumeración de script aparece entre paréntesis junto al nombre de constante de C/C++ en la lista siguiente.
 
 
 
@@ -80,7 +80,7 @@ El prefijo "WIA DPS" indica una propiedad de dispositivo para dispositivos de es
 [!Note]<br />
 Esta propiedad solo se admite en Windows Vista y versiones posteriores.
 </blockquote>
-<br/> Contiene un identificador de instancia de función único para un dispositivo de analizador de servicios web. Este identificador representa el servicio web en el dispositivo del analizador con el que se comunica el mini driver wia. No se debe realizar ninguna suposición sobre la forma de este identificador. El mini driver de WIA crea y mantiene esta propiedad. <br/> Las aplicaciones WIA pueden usar el valor de WIA_DPS_DEVICE_ID para buscar, mediante la API de detección de funciones, el objeto de instancia de función que representa el dispositivo de analizador de servicios web usado en la sesión actual de WIA 2.0.<br/> Tipo: <strong>VT_BSTR</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a><br/></td>
+<br/> Contiene un identificador de instancia de función único para un dispositivo de analizador de servicios web. Este identificador representa el servicio web en el dispositivo del analizador con el que se comunica el mini controlador WIA. No se debe realizar ninguna suposición sobre la forma de este identificador. El mini controlador WIA crea y mantiene esta propiedad. <br/> Las aplicaciones WIA pueden usar el valor de WIA_DPS_DEVICE_ID para buscar, mediante la API de detección de funciones, el objeto de instancia de función que representa el dispositivo de analizador de servicios web usado en la sesión actual de WIA 2.0.<br/> Tipo: <strong>VT_BSTR</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a><br/></td>
 </tr>
 <tr class="even">
 <td ><span id="WIA_DPS_DITHER_PATTERN_DATA"></span><span id="wia_dps_dither_pattern_data"></span><dl> <dt><strong>WIA_DPS_DITHER_PATTERN_DATA</strong></dt> </dl></td>
@@ -92,7 +92,7 @@ Esta propiedad solo se admite en Windows Vista y versiones posteriores.
 </tr>
 <tr class="even">
 <td ><span id="WIA_DPS_DOCUMENT_HANDLING_CAPABILITIES"></span><span id="wia_dps_document_handling_capabilities"></span><dl> <dt><strong>WIA_DPS_DOCUMENT_HANDLING_CAPABILITIES</strong></dt> <dt>ScannerDeviceDocumentHandlingCapabilities</dt> </dl></td>
-<td >Contiene las funcionalidades del analizador. El minidriver crea y mantiene esta propiedad. <br/> Una aplicación lee esta propiedad para determinar si el analizador tiene instalado un sistema de distribución de documentos, una fuente de documentos o un dúplex. Esta propiedad también se usa para definir aún más las características instaladas.<br/> Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a><br/> En la tabla siguiente se describen las constantes que son válidas solo Windows 7.<br/> 
+<td >Contiene las funcionalidades del analizador. El minidriver crea y mantiene esta propiedad. <br/> Una aplicación lee esta propiedad para determinar si el analizador tiene instalado un dúplex, un fuente de documentos o una fuente de distribución de documentos planas. Esta propiedad también se usa para definir aún más las características instaladas.<br/> Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a><br/> En la tabla siguiente se describen las constantes que son válidas solo Windows 7.<br/> 
 <table>
 <thead>
 <tr class="header">
@@ -137,13 +137,13 @@ Esta propiedad solo se admite en Windows Vista y versiones posteriores.
 </tr>
 <tr class="odd">
 <td>STOR</td>
-<td>El escáner está equipado con un dispositivo de almacenamiento de imágenes interno.</td>
+<td>El analizador está equipado con un dispositivo de almacenamiento de imágenes interno.</td>
 </tr>
 </tbody>
 </table>
 
 <p> </p>
-<p>En la tabla siguiente se describen las constantes que son válidas con Windows XP o posterior.</p>
+<p>En la tabla siguiente se describen las constantes que son válidas Windows XP o posterior.</p>
 <p></p>
 <table>
 <thead>
@@ -175,13 +175,13 @@ Esta propiedad solo se admite en Windows Vista y versiones posteriores.
 </tr>
 <tr class="even">
 <td>PLANA</td>
-<td>El escáner tiene una placa plana.</td>
+<td>El analizador tiene una placa plana.</td>
 </tr>
 </tbody>
 </table>
 
 <p> </p>
-<p>En la tabla siguiente se describen las constantes que son válidas solo Windows XP. Estos valores han quedado en desuso Windows 7 y Windows Vista y no deben usarse.</p>
+<p>En la tabla siguiente se describen las constantes que son válidas Windows XP. Estos valores han quedado en desuso Windows 7 y Windows Vista y no deben usarse.</p>
 <p></p>
 <table>
 <thead>
@@ -201,7 +201,7 @@ Esta propiedad solo se admite en Windows Vista y versiones posteriores.
 </tr>
 <tr class="odd">
 <td>DETECT_FEED_AVAIL</td>
-<td>El analizador puede saber cuándo está instalado el feeder automático de documentos.</td>
+<td>El analizador puede saber cuándo está instalado el alimentador automático de documentos.</td>
 </tr>
 </tbody>
 </table>
@@ -209,7 +209,7 @@ Esta propiedad solo se admite en Windows Vista y versiones posteriores.
 <p> </p></td>
 </tr>
 <tr class="odd">
-<td ><span id="WIA_DPS_DOCUMENT_HANDLING_SELECT"></span><span id="wia_dps_document_handling_select"></span><dl> <dt><strong>WIA_DPS_DOCUMENT_HANDLING_SELECT</strong></dt> <dt>ScannerDeviceDocumentHandlingSeleccionar</dt> </dl></td>
+<td ><span id="WIA_DPS_DOCUMENT_HANDLING_SELECT"></span><span id="wia_dps_document_handling_select"></span><dl> <dt><strong>WIA_DPS_DOCUMENT_HANDLING_SELECT</strong></dt> <dt>ScannerDeviceDocumentHandlingSelect</dt> </dl></td>
 <td ><div class="alert">
 <blockquote>
 [!Note]<br />
@@ -249,7 +249,7 @@ Esta propiedad no se admite en Windows Vista y versiones posteriores. Use <a hre
 </tr>
 <tr class="odd">
 <td>FRONT_FIRST</td>
-<td>Examinar primero la parte delantera del documento. Este valor es válido cuando se establece DUPLEX.</td>
+<td>Examinar primero la parte frontal del documento. Este valor es válido cuando se establece DUPLEX.</td>
 </tr>
 <tr class="even">
 <td>BACK_FIRST</td>
@@ -281,7 +281,7 @@ Esta propiedad no se admite en Windows Vista y versiones posteriores. Use <a hre
 <td ><p>Contiene el estado actual del sistema de distribución de documentos, fuente de documentos o dúplex instalados del analizador. El minidriver crea y mantiene esta propiedad.</p>
 <p>Una aplicación lee esta propiedad para determinar si el dispositivo del analizador está listo para usarse. Esta es una manera ideal de comprobar si el papel está en la fuente antes de adquirir una imagen.</p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p>
-<p>En la tabla siguiente se tienen las constantes que son válidas con esta propiedad. Un asterisco * indica que la marca no se admite en Windows Vista o posterior. El <strong>símbolo V</strong> indica que la marca solo se admite en Windows Vista y versiones posteriores. </p>
+<p>En la tabla siguiente se tienen las constantes que son válidas con esta propiedad. Un asterisco * indica que la marca no se admite en Windows Vista o versiones posteriores. El <strong>símbolo V</strong> indica que la marca solo se admite en Windows Vista y versiones posteriores. </p>
 <table>
 <thead>
 <tr class="header">
@@ -345,7 +345,7 @@ Esta propiedad no se admite en Windows Vista y versiones posteriores. Use <a hre
 </tr>
 <tr class="odd">
 <td ><span id="WIA_DPS_ENDORSER_CHARACTERS"></span><span id="wia_dps_endorser_characters"></span><dl> <dt><strong>WIA_DPS_ENDORSER_CHARACTERS</strong></dt> <dt>ScannerDeviceEndorserCharacters</dt> </dl></td>
-<td ><p>Contiene todos los caracteres válidos que una aplicación puede usar para crear cadenas de aprobador válidas. Un aprobador es una impresora instalada en un escáner que imprime un mensaje de texto en cada página examinada. El minidriver debe validar la configuración de la propiedad <strong>WIA_DPS_ENDORSER_STRING</strong> con el juego de caracteres válido de esta propiedad. El minidriver crea y mantiene esta propiedad.</p>
+<td ><p>Contiene todos los caracteres válidos que una aplicación puede usar para crear cadenas de aprobador válidas. Un aprobador es una impresora instalada en un escáner que imprime un mensaje de texto en cada página examinada. El minidriver debe validar la configuración de la <strong>propiedad WIA_DPS_ENDORSER_STRING</strong> con el juego de caracteres válido de esta propiedad. El minidriver crea y mantiene esta propiedad.</p>
 <p>Tipo: <strong>VT_BSTR</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
 </tr>
 <tr class="even">
@@ -463,7 +463,7 @@ Esta propiedad no se admite con Windows Vista y versiones posteriores. Use <a hr
 <div>
  
 </div>
-<p>Especifica el ancho máximo, en milésimas de pulgada, que se examina en el eje horizontal (X) desde la placa de un escáner plano en la resolución actual. Esta propiedad también se aplica a los fuentes de documentos automáticas que mueven las hojas a la placa de un escáner de pantalla plana para su examen. Esta propiedad es obligatoria para los escáneres que tienen una placa. En su lugar, otros tipos de analizador <strong>implementarán WIA_DPS_HORIZONTAL_SHEET_FEED_SIZE</strong> propiedad .</p>
+<p>Especifica el ancho máximo, en milésimas de pulgada, que se examina en el eje horizontal (X) desde la placa de un escáner de pantalla plana en la resolución actual. Esta propiedad también se aplica a los alimentadores de documentos automáticos que mueven las hojas a la placa de un escáner plano para su examen. Esta propiedad es obligatoria para los escáneres que tienen una placa. En su lugar, otros tipos de analizador <strong>implementarán WIA_DPS_HORIZONTAL_SHEET_FEED_SIZE</strong> propiedad .</p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
 </tr>
 <tr class="odd">
@@ -477,12 +477,12 @@ Esta propiedad no se admite con Windows Vista y versiones posteriores. Use <a hr
 <div>
  
 </div>
-<p>Especifica el ancho máximo, en milésimas de pulgada, que se examina en el eje horizontal (X) desde un escáner de fuente de hoja o de mano en la resolución actual. Esta propiedad también se aplica a los fuentes de documentos automáticas que analizan sin mover hojas a la placa de un escáner de pantalla plana. Esta propiedad es obligatoria para los escáneres de hoja, de desplazamiento y de mano.</p>
+<p>Especifica el ancho máximo, en milésimas de pulgada, que se examina en el eje horizontal (X) desde un escáner de fuente de hoja o portátil en la resolución actual. Esta propiedad también se aplica a los alimentadores de documentos automáticos que analizan sin mover hojas a la placa de un escáner de pantalla plana. Esta propiedad es obligatoria para los escáneres de hoja, de desplazamiento y de mano.</p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
 </tr>
 <tr class="even">
 <td ><span id="WIA_DPS_MAX_SCAN_TIME"></span><span id="wia_dps_max_scan_time"></span><dl> <dt><strong>WIA_DPS_MAX_SCAN_TIME</strong></dt> <dt>ScannerDeviceMaxScanTime</dt> </dl></td>
-<td ><p>Contiene el tiempo máximo para examinar una sola página con la configuración de propiedad actual, en milisegundos. Una aplicación lee esta propiedad para calcular el tiempo que se va a tardar en examinar una página. Esto resulta útil al determinar las condiciones de un dispositivo que ha dejado de responder. El minidriver crea y mantiene esta propiedad. Esta propiedad es necesaria para todos los analizadores.</p>
+<td ><p>Contiene el tiempo máximo para examinar una sola página con la configuración de propiedades actual, en milisegundos. Una aplicación lee esta propiedad para calcular el tiempo que se va a tardar en examinar una página. Esto resulta útil al determinar las condiciones de un dispositivo que ha dejado de responder. El minidriver crea y mantiene esta propiedad. Esta propiedad es necesaria para todos los analizadores.</p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
 </tr>
 <tr class="odd">
@@ -548,7 +548,7 @@ Esta propiedad no es compatible con Windows Vista. Use <a href="-wia-wiaitemprop
 <tr class="odd">
 <td ><span id="WIA_DPS_ORIENTATION"></span><span id="wia_dps_orientation"></span><dl> <dt><strong>WIA_DPS_ORIENTATION</strong></dt> <dt>ScannerDeviceOrientation</dt> </dl></td>
 <td ><p>Contiene la configuración de orientación actual. El minidriver crea y mantiene esta propiedad.</p>
-<p>Una aplicación establece la <strong>WIA_DPS_ORIENTATION</strong> propiedad para definir la orientación original de una página o imagen que se va a adquirir. Para obtener información sobre cómo usar WIA_DPS_ORIENTATION, <strong>vea WIA_DPS_PAGE_SIZE</strong></p>
+<p>Una aplicación establece la <strong>WIA_DPS_ORIENTATION</strong> propiedad para definir la orientación original de una página o imagen que se va a adquirir. Para obtener información sobre cómo usar WIA_DPS_ORIENTATION, <strong>consulte WIA_DPS_PAGE_SIZE</strong></p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Lectura/escritura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_LIST</a></p>
 <p>La tabla siguiente tiene las cuatro constantes que son válidas con esta propiedad.</p>
 
@@ -562,7 +562,7 @@ Esta propiedad no es compatible con Windows Vista. Use <a href="-wia-wiaitemprop
 <tbody>
 <tr class="odd">
 <td>PAISAJE</td>
-<td>Rotación en el sentido contrario a las agujas del reloj de 90 grados, en relación con la orientación VERTICAL.</td>
+<td>Rotación en sentido contrario a las agujas del reloj de 90 grados, en relación con la orientación VERTICAL.</td>
 </tr>
 <tr class="even">
 <td>RETRATO</td>
@@ -570,11 +570,11 @@ Esta propiedad no es compatible con Windows Vista. Use <a href="-wia-wiaitemprop
 </tr>
 <tr class="odd">
 <td>ROT180</td>
-<td>Rotación en el sentido contrario a las agujas del reloj de 180 grados, en relación con la orientación VERTICAL.</td>
+<td>Rotación en sentido contrario a las agujas del reloj de 180 grados, en relación con la orientación VERTICAL.</td>
 </tr>
 <tr class="even">
 <td>ROT270</td>
-<td>Rotación en el sentido contrario a las agujas del reloj de 270 grados, en relación con la orientación VERTICAL.</td>
+<td>Rotación en sentido contrario a las agujas del reloj de 270 grados, con respecto a la orientación VERTICAL.</td>
 </tr>
 </tbody>
 </table>
@@ -585,7 +585,7 @@ Esta propiedad no es compatible con Windows Vista. Use <a href="-wia-wiaitemprop
 </tr>
 <tr class="even">
 <td ><span id="WIA_DPS_PAD_COLOR"></span><span id="wia_dps_pad_color"></span><dl> <dt><strong>WIA_DPS_PAD_COLOR</strong></dt> <dt>ScannerDevicePadColor</dt> </dl></td>
-<td ><p>Color que se usa para rellenar cuando no hay suficientes datos de imagen para rellenar un búfer solicitado. Esta propiedad se implementa para los analizadores que alocan el búfer. Esta propiedad es opcional para todos los analizadores. El minidriver crea y mantiene esta propiedad.</p>
+<td ><p>Color que se usa para rellenar cuando no hay suficientes datos de imagen para rellenar un búfer solicitado. Esta propiedad se implementa para los analizadores que alojen el búfer. Esta propiedad es opcional para todos los analizadores. El minidriver crea y mantiene esta propiedad.</p>
 <p>Tipo: <strong>VT_UI1</strong>  |  <strong>VT_VECTOR</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p>
 <p>El formato de la información de color <a href="/windows/win32/api/wingdi/ns-wingdi-rgbquad">es RGBQUAD.</a></p></td>
 </tr>
@@ -641,16 +641,16 @@ Esta propiedad no es compatible con Windows Vista. Use <a href="-wia-wiaitemprop
 </table>
 
 <p> </p>
-<p>El valor de la <a href="-wia-wiaitempropscanneritem.md"><strong>WIA_IPS_ORIENTATION</strong></a> determina la orientación de la página seleccionada actualmente. Las <strong>WIA_DPS_PAGE_WIDTH</strong> y <strong>WIA_DPS_PAGE_HEIGHT</strong> informen de las dimensiones de la página, en milésimas de pulgada. Tenga en cuenta que estas propiedades deben estar de acuerdo <strong>con WIA_IPS_XEXTENT</strong> y <strong>WIA_IPS_YEXTENT</strong>, que contienen las dimensiones de la página en píxeles. Los valores válidos de tipo WIA_PROP_LIST deben depender de la configuración válida de la <strong>WIA_IPS_ORIENTATION</strong> propiedad . Si el dispositivo no puede examinar documentos orientados horizontalmente con una configuración de WIA_PAGE_A4, WIA_PAGE_A4 no debe aparecer en la lista de valores válidos para la propiedad <strong>WIA_DPS_PAGE_SIZE</strong> cuando <strong>WIA_IPS_ORIENTATION</strong> está establecido en LANSCAPE.</p>
+<p>El valor de la <a href="-wia-wiaitempropscanneritem.md"><strong>WIA_IPS_ORIENTATION</strong></a> determina la orientación de la página seleccionada actualmente. Las <strong>WIA_DPS_PAGE_WIDTH</strong> y <strong>WIA_DPS_PAGE_HEIGHT</strong> informen de las dimensiones de la página, en milésimas de pulgada. Tenga en cuenta que estas propiedades deben estar de acuerdo con <strong>WIA_IPS_XEXTENT</strong> y <strong>WIA_IPS_YEXTENT</strong>, que contienen las dimensiones de la página en píxeles. Los valores válidos de tipo WIA_PROP_LIST deben depender de la configuración válida de la <strong>WIA_IPS_ORIENTATION</strong> propiedad. Si el dispositivo no puede examinar documentos orientados horizontalmente con una configuración de WIA_PAGE_A4, WIA_PAGE_A4 no debe aparecer en la lista de valores válidos para la propiedad <strong>WIA_DPS_PAGE_SIZE</strong> cuando <strong>WIA_IPS_ORIENTATION</strong> esté establecido en LANSCAPE.</p>
 <p>Si una aplicación establece <strong>WIA_DPS_PAGE_SIZE</strong> en cualquier valor distinto de WIA_PAGE_CUSTOM, el minidriver debe ajustar los valores de <strong>WIA_DPS_PAGE_WIDTH</strong> y <strong>WIA_DPS_PAGE_HEIGHT a</strong> las dimensiones de la página en milésimas de pulgada. También debe ajustar los valores de <a href="-wia-wiaitempropscanneritem.md"><strong>WIA_IPS_XEXTENT</strong></a> y <strong>WIA_IPS_YEXTENT</strong> a las dimensiones de la página en píxeles.</p>
-<p>Si se cambia una configuración de extensión (<a href="-wia-wiaitempropscanneritem.md"><strong>WIA_IPS_XEXTENT</strong></a> <strong>o WIA_IPS_YEXTENT</strong>) a un valor que no coincide con la configuración de tamaño de página actual, el minidriver debe cambiar el valor de la propiedad <strong>WIA_DPS_PAGE_SIZE a</strong> WIA_PAGE_CUSTOM. El minidriver también debe modificar <strong>WIA_DPS_PAGE_WIDTH</strong> o <strong>WIA_DPS_PAGE_HEIGHT</strong> de acuerdo con la nueva configuración de extensión.</p>
-<p>Si <a href="-wia-wiaitempropscanneritem.md"><strong>WIA_IPS_ORIENTATION</strong></a> se establece en LANSCAPE, se volteará la configuración &quot; de extensión. &quot; Por ejemplo, si una aplicación establece <strong>WIA_DPS_PAGE_SIZE</strong> en WIA_PAGE_A4, el minidriver debe establecer <strong>WIA_DPS_PAGE_WIDTH</strong> en 11692 y <strong>WIA_DPS_PAGE_HEIGHT</strong> en 8267. (El minidriver también debe <strong>establecer WIA_IPS_XEXTENT</strong> <strong>y WIA_IPS_YEXTENT</strong> en consecuencia). Tenga en <strong>cuenta que WIA_DPS_PAGE_SIZE</strong> se establece en WIA_PAGE_CUSTOM, el valor de orientación no se usa para determinar las dimensiones de extensión de la página que se va a examinar.</p>
-<p>El minidriver es responsable de garantizar que la <a href="-wia-wiaitempropscanneritem.md"><strong>propiedad WIA_IPS_ORIENTATION</strong></a> esté de acuerdo con el área de selección actual. Si una aplicación cambia el valor de <strong>WIA_IPS_ORIENTATION a</strong> uno que no es válido para el tamaño de página seleccionado actualmente, el minidriver debe cambiar el valor de <strong>WIA_DPS_PAGE_SIZE</strong> a un tamaño de página compatible con el nuevo valor de orientación.</p>
-<p>Si una aplicación establece la <strong>propiedad WIA_DPS_PAGE_SIZE</strong> en WIA_PAGE_CUSTOM, el área de selección actual no se ve afectada. El minidriver wia debe obtener el diseño de imagen actual, empezando por la configuración actual de las propiedades <a href="-wia-wiaitempropscanneritem.md"><strong>WIA_IPS_XPOS</strong></a> y <strong>WIA_IPS_YPOS</strong> propiedades. Si la configuración de tamaño de página da como resultado un área de selección que está fuera de la cámara del analizador, el minidriver debe ajustar automáticamente los valores de las propiedades <strong>WIA_IPS_XPOS</strong> y <strong>WIA_IPS_YPOS</strong> a la configuración válida. Si las propiedades <strong>WIA_DPS_PAGE_SIZE</strong> y <strong>WIA_IPS_ORIENTATION</strong> se establecen al mismo tiempo y no son válidas cuando se aplican en combinación, el minidriver debe producir un error en la configuración de la aplicación devolviendo un error en <a href="https://msdn.microsoft.com/library/ms794145.aspx">IWiaMiniDrv::d rvValidateItemProperties</a>. .</p>
-<p>En los cuatro ejemplos siguientes se muestran <strong>diferentes WIA_DPS_PAGE_SIZE</strong> escenarios.</p>
+<p>Si se cambia una configuración de extensión (<a href="-wia-wiaitempropscanneritem.md"><strong>WIA_IPS_XEXTENT</strong></a> <strong>o WIA_IPS_YEXTENT</strong>) a un valor que no coincide con la configuración de tamaño de página actual, el minidriver debe cambiar el valor de la propiedad <strong>WIA_DPS_PAGE_SIZE</strong> a WIA_PAGE_CUSTOM. El minidriver también debe modificar <strong>WIA_DPS_PAGE_WIDTH</strong> o <strong>WIA_DPS_PAGE_HEIGHT</strong> de acuerdo con la nueva configuración de extensión.</p>
+<p>Si <a href="-wia-wiaitempropscanneritem.md"><strong>WIA_IPS_ORIENTATION</strong></a> se establece en LANSCAPE, se volteará la configuración &quot; de extensión. &quot; Por ejemplo, si una aplicación establece <strong>WIA_DPS_PAGE_SIZE</strong> en WIA_PAGE_A4, el minidriver debe establecer <strong>WIA_DPS_PAGE_WIDTH</strong> en 11692 y <strong>WIA_DPS_PAGE_HEIGHT</strong> en 8267. (El minidriver también debe establecer <strong>WIA_IPS_XEXTENT</strong> y <strong>WIA_IPS_YEXTENT</strong> en consecuencia). Tenga en <strong>cuenta que WIA_DPS_PAGE_SIZE</strong> se establece en WIA_PAGE_CUSTOM, el valor de orientación no se usa para determinar las dimensiones de extensión de la página que se va a examinar.</p>
+<p>El minidriver es responsable de garantizar que la <a href="-wia-wiaitempropscanneritem.md"><strong>propiedad WIA_IPS_ORIENTATION</strong></a> esté de acuerdo con el área de selección actual. Si una aplicación cambia el valor de <strong>WIA_IPS_ORIENTATION a</strong> uno que no es válido para el tamaño de página seleccionado actualmente, el minidriver debe cambiar el valor de <strong>WIA_DPS_PAGE_SIZE a</strong> un tamaño de página compatible con el nuevo valor de orientación.</p>
+<p>Si una aplicación establece la <strong>propiedad WIA_DPS_PAGE_SIZE</strong> en WIA_PAGE_CUSTOM, el área de selección actual no se ve afectada. El minidriver wia debe obtener el diseño de imagen actual, empezando por la configuración actual de las propiedades <a href="-wia-wiaitempropscanneritem.md"><strong>WIA_IPS_XPOS</strong></a> y <strong>WIA_IPS_YPOS</strong> propiedades. Si la configuración de tamaño de página da como resultado un área de selección que está fuera de la habitación del analizador, el minidriver debe ajustar automáticamente los valores de las propiedades <strong>WIA_IPS_XPOS</strong> y <strong>WIA_IPS_YPOS</strong> a la configuración válida. Si las propiedades <strong>WIA_DPS_PAGE_SIZE</strong> y <strong>WIA_IPS_ORIENTATION</strong> se establecen al mismo tiempo y no son válidas cuando se aplican en combinación, el minidriver debe producir un error en la configuración de la aplicación devolviendo un error en <a href="https://msdn.microsoft.com/library/ms794145.aspx">IWiaMiniDrv::d rvValidateItemProperties</a>. .</p>
+<p>Los cuatro ejemplos siguientes muestran diferentes <strong>WIA_DPS_PAGE_SIZE</strong> escenarios.</p>
 <ol>
 <li>El controlador informa de la configuración.</li>
-<li>Una aplicación establece la <strong>WIA_DPS_PAGE_SIZE</strong> propiedad en WIA_PAGE_LETTER.</li>
+<li>Una aplicación establece la <strong>propiedad WIA_DPS_PAGE_SIZE</strong> en WIA_PAGE_LETTER.</li>
 <li>Una aplicación establece la <a href="-wia-wiaitempropscanneritem.md"><strong>WIA_IPS_ORIENTATION</strong></a> propiedad en LANSCAPE.</li>
 <li>Una aplicación cambia la <a href="-wia-wiaitempropscanneritem.md"><strong>propiedad WIA_IPS_XEXTENT</strong></a> a un valor más pequeño.</li>
 </ol>
@@ -728,8 +728,8 @@ WIA_IPS_YRES = 100</code></pre></td>
 </table>
 
 </div>
-<p><strong>Ejemplo 4: una aplicación cambia la propiedad</strong> <a href="-wia-wiaitempropscanneritem.md"><strong>WIA_IPS_XEXTENT</strong></a>a un valor<strong>más pequeño</strong>  </p>
-<p>En el ejemplo siguiente, una aplicación cambia la <a href="-wia-wiaitempropscanneritem.md"><strong>WIA_IPS_XEXTENT</strong></a> propiedad a 1000. El minidriver debe suponer que el nuevo valor contenido en <strong>WIA_IPS_XEXTENT</strong> ya no es <strong></strong> válido para la propiedad <strong>WIA_DPS_PAGE_SIZE</strong> y, por tanto, debe cambiar WIA_DPS_PAGE_SIZE a WIA_PAGE_CUSTOM. El minidriver también debe <strong>ajustar</strong>WIA_DPS_PAGE_WIDTH .</p>
+<p><strong>Ejemplo 4: Una aplicación cambia la propiedad</strong> <a href="-wia-wiaitempropscanneritem.md"><strong>WIA_IPS_XEXTENT</strong></a>a un valor<strong>más pequeño</strong>  </p>
+<p>En el ejemplo siguiente, una aplicación cambia la <a href="-wia-wiaitempropscanneritem.md"><strong>WIA_IPS_XEXTENT</strong></a> propiedad a 1000. El minidriver debe suponer que el nuevo valor contenido en <strong>WIA_IPS_XEXTENT</strong> ya no es válido <strong></strong> para la propiedad <strong>WIA_DPS_PAGE_SIZE</strong> y, por tanto, debe cambiar WIA_DPS_PAGE_SIZE a WIA_PAGE_CUSTOM. El minidriver también debe <strong>ajustar</strong>WIA_DPS_PAGE_WIDTH .</p>
 <div class="code">
 <span data-codelanguage=""></span>
 <table>
@@ -785,14 +785,14 @@ Esta propiedad no es compatible con Windows Vista. Use <a href="-wia-wiaitemprop
 <div class="alert">
 <blockquote>
 [!Note]<br />
-Si el modo dúplex está habilitado (<strong>WIA_DPS_DOCUMENT_HANDLING_SELECT</strong> se establece en FEEDER | DUPLEX ), <strong>WIA_DPS_PAGES</strong> sigue siendo igual al número de páginas que se examinarán.
+Si el modo dúplex está habilitado (<strong>WIA_DPS_DOCUMENT_HANDLING_SELECT</strong> se establece en FEEDER | DUPLEX ), <strong>WIA_DPS_PAGES</strong> sigue siendo igual al número de páginas que se va a examinar.
 </blockquote>
 </div>
 <div>
  
 </div>
 <p>Una hoja de papel contendrá automáticamente dos páginas si DUPLEX está habilitado, incluso si el lado posterior de la página está en blanco.</p>
-<p>Si <strong>WIA_DPS_PAGES</strong> en 1, un analizador procesa uno de los lados de la página. Se recomienda que si un analizador no puede examinar solo un lado de una página en modo dúplex, el valor válido de WIA_DPS_PAGES para el miembro Inc de la estructura WIA_PROPERTY_INFO se debe cambiar <strong>a</strong> 2. Este valor indica a la aplicación que debe solicitar páginas en múltiplo de dos. Un valor de cero significa <em>que se</em> examinarán todas las páginas que se cargan actualmente en el feeder de documentos.</p></td>
+<p>Si <strong>WIA_DPS_PAGES</strong> en 1, un analizador procesa uno de los lados de la página. Se recomienda que si un analizador no puede examinar solo un lado de una página en modo <strong>dúplex,</strong> el valor válido de WIA_DPS_PAGES para el miembro Inc de la estructura WIA_PROPERTY_INFO se debe cambiar a 2. Este valor indica a la aplicación que debe solicitar páginas en múltiplo de dos. Un valor de cero significa <em>que se</em> examinarán todas las páginas que se cargan actualmente en el feeder de documentos.</p></td>
 </tr>
 <tr class="odd">
 <td ><span id="WIA_DPS_PLATEN_COLOR"></span><span id="wia_dps_platen_color"></span><dl> <dt><strong>WIA_DPS_PLATEN_COLOR</strong></dt> <dt>ScannerDevicePlatenColor</dt> </dl></td>
@@ -839,7 +839,7 @@ Esta propiedad no es compatible con Windows Vista. Use <a href="-wia-wiaitemprop
 <td ><span id="WIA_DPS_SCAN_AHEAD_PAGES"></span><span id="wia_dps_scan_ahead_pages"></span><dl> <dt><strong>WIA_DPS_SCAN_AHEAD_PAGES</strong></dt> <dt>ScannerDeviceScanAheadPages</dt> </dl></td>
 <td ><p>Contiene un valor que indica si el analizador almacenará en caché las páginas de un búfer del analizador antes de enviarlos a la aplicación.</p>
 <p>Un valor de cero deshabilita el examen por adelantado y no se examinará ninguna página con antelación. Al realizar transferencias de datos normales en el elemento de análisis por adelantado almacenado en búfer, se recuperan las páginas en búfer. Las propiedades de WIA no se pueden cambiar durante una operación de examen por adelantado. Esta propiedad es opcional.</p>
-<p>Tipo: <strong>VT_I4</strong>, Acceso: Lectura/escritura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_RANGE</a> de cero al número máximo de páginas que puede contener el fuente de documentos.</p></td>
+<p>Tipo: <strong>VT_I4</strong>, Acceso: lectura/escritura, Valores válidos: <a href="-wia-property-attributes.md"></a> WIA_PROP_RANGE de cero al número máximo de páginas que puede contener el fuente de documentos.</p></td>
 </tr>
 <tr class="even">
 <td ><span id="WIA_DPS_SCAN_AVAILABLE_ITEM"></span><span id="wia_dps_scan_available_item"></span><dl> <dt><strong>WIA_DPS_SCAN_AVAILABLE_ITEM</strong></dt> <dt>ScannerDeviceScanAvailableItem</dt> </dl></td>
@@ -854,7 +854,7 @@ Esta propiedad solo es compatible con Windows 7 y versiones posteriores.
 </div>
 <p>Indica el origen de entrada (plano, el adaptador de fuente de documentos automático o el adaptador de análisis de fil) desde el que se debe examinar o la ubicación de almacenamiento desde la que se transfieren los datos.</p>
 <p>Un evento de examen notifica a la aplicación que el usuario ha iniciado un examen, pero el evento no proporciona el nombre del elemento WIA que representa el origen de entrada. El controlador de eventos de la aplicación puede consultar la propiedad WIA_DPS_SCAN_AVAILABLE_ITEM del elemento raíz para obtener el nombre del elemento de origen de entrada.</p>
-<p>Tipo: <strong>VT_I4</strong>, Acceso: Lectura/escritura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_RANGE</a> de cero al número máximo de páginas que puede contener el fuente de documentos.</p></td>
+<p>Tipo: <strong>VT_I4</strong>, Acceso: lectura/escritura, Valores válidos: <a href="-wia-property-attributes.md"></a> WIA_PROP_RANGE de cero al número máximo de páginas que puede contener el fuente de documentos.</p></td>
 </tr>
 <tr class="odd">
 <td ><span id="WIA_DPS_SERVICE_ID"></span><span id="wia_dps_service_id"></span><dl> <dt><strong>WIA_DPS_SERVICE_ID</strong></dt> <dt>ScannerDeviceServiceId</dt> </dl></td>
@@ -1013,7 +1013,7 @@ Esta propiedad no se admite con Windows Vista y versiones posteriores. Use <a hr
 <div>
  
 </div>
-<p>Especifica el alto máximo, en milésimas de pulgada, que se examina en el eje vertical (Y) desde la placa de un escáner plano en la resolución actual. Esta propiedad también se aplica a los alimentadores de documentos automáticos, que mueven las hojas a la placa de un escáner de pantalla plana para su examen. Esta propiedad es obligatoria para los escáneres que tienen una placa. En su lugar, otros tipos de analizador <strong>implementarán WIA_DPS_VERTICAL_SHEET_FEED_SIZE</strong> propiedad .</p>
+<p>Especifica el alto máximo, en milésimas de pulgada, que se examina en el eje vertical (Y) desde la placa de un escáner plano en la resolución actual. Esta propiedad también se aplica a los alimentadores de documentos automáticos, que mueven las hojas a la placa de un escáner de pantalla plana para el examen. Esta propiedad es obligatoria para los escáneres que tienen una placa. En su lugar, otros tipos de analizador <strong>implementarán WIA_DPS_VERTICAL_SHEET_FEED_SIZE</strong> propiedad .</p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
 </tr>
 <tr class="odd">
@@ -1041,7 +1041,7 @@ Esta propiedad no se admite con Windows Vista y versiones posteriores. Use <a hr
 
 | Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>              |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                |
 | Encabezado<br/>                   | <dl> <dt>Wiadef.h</dt> </dl> |
 

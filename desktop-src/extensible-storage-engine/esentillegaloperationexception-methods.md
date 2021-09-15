@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101793
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: cbffdd4bb2e75610bf54bb4b025094c6ae6decde21643be1ddcdd6b590ba9760
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 802863334e09d056ed0d7599613dbd9208385c91
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118081336"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466318"
 ---
 # <a name="esentillegaloperationexception-methods"></a>Métodos de EsentIllegalOperationException 
 
@@ -78,10 +78,10 @@ El [tipo Esent QuegalOperationException](./esentillegaloperationexception-class.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase Esent QuegalOperationException](./esentillegaloperationexception-class.md)
+[Clase EsentGalegalOperationException](./esentillegaloperationexception-class.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

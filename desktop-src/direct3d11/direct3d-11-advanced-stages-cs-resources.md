@@ -9,12 +9,12 @@ keywords:
 - Búfer de acceso desordenado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e6ab9e6f1677770b1a40766b846f4675df9eaa3809b42838783ddb834044bfe2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a4b7a75ec95917a5ee819126e42dce3117994574
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119566305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465405"
 ---
 # <a name="new-resource-types"></a>Nuevos tipos de recursos
 

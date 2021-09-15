@@ -4,18 +4,18 @@ ms.assetid: 9ccce1b6-4a53-41fd-92f0-c1ed48320781
 title: Referencia de criptografía
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 37ebb3a86b52a51dfdbd625aaa197de14555fd938fed027e41723c8d76d0c2df
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f8664c6ac0b12966849f1f21cead5820b55ddf9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117768276"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271071"
 ---
 # <a name="cryptography-reference"></a>Referencia de criptografía
 
 Las páginas de referencia de criptografía contienen descripciones detalladas de las funciones de criptografía, interfaces, objetos y otros elementos de programación de Microsoft. Estas páginas incluyen descripciones de referencia de la API para trabajar con certificados digitales, servicios de certificados y control de inscripción de certificados.
 
-Las páginas de referencia se dividen en los siguientes grupos. 
+Las páginas de referencia se dividen en los grupos siguientes. 
 
 | Sección                                                      | Descripción                                                                                        |
 |--------------------------------------------------------------|----------------------------------------------------------------------------------------------------|

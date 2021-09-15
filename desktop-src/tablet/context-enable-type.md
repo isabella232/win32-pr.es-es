@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 94bffba211f75416ccae5e9a55342441b7b11b41b1a9f1f4b085ec190f991645
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cd741eeff1cc3e2ce055a84dd646c3aa2563f217
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120110975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360338"
 ---
-# <a name="context_enable_type-enumeration"></a>ENUMERACIÓN \_ CONTEXT ENABLE \_ TYPE
+# <a name="context_enable_type-enumeration"></a>ENUMERACIÓN CONTEXT \_ ENABLE \_ TYPE
 
 Indica si se deben enviar mensajes de contexto al procedimiento de ventana de la ventana propietaria.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -49,7 +49,7 @@ El contexto de la tableta debe estar habilitado, lo que da lugar a que se envíe
 <span id="CONTEXT_DISABLE"></span><span id="context_disable"></span>**DESHABILITACIÓN DE \_ CONTEXTO**
 </dt> <dd>
 
-El contexto de la tableta debe deshabilitarse, lo que impide que se envíen más mensajes de contexto al procedimiento de ventana o receptor de eventos de la ventana propietaria.
+El contexto de la tableta debe deshabilitarse, lo que impide que se envíen más mensajes de contexto al procedimiento de ventana o al receptor de eventos de la ventana propietaria.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ El contexto de la tableta debe deshabilitarse, lo que impide que se envíen más
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

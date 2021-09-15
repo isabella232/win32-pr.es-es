@@ -4,12 +4,12 @@ ms.assetid: 0b819984-c048-4512-962a-e2320e1585b2
 title: System.Photo.ExposureBias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f134ded74622d4ea0877c59bea6515b1ca1b2ac9700b7b7e8d32cc8ab03a8ee
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cc539b0b709d871b987ed10f9509fe14e9f53f52
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120112075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468412"
 ---
 # <a name="systemphotoexposurebias"></a>System.Photo.ExposureBias
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 
@@ -39,7 +39,7 @@ Los valores PKEY se definen en Propkey.h.
 
 <dl> <dt>
 
-[Exchangeable Image File Format para cámaras Digital Still: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format para cámaras de digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
 [propertyDescription](./propdesc-schema-propertydescription.md)

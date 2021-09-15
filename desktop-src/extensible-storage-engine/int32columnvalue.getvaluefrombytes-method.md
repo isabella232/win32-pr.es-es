@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 734be77c337a6f953252f08be79da09efd854241ed24871577ba70b38d217cb5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c17ee9bc638a0adc2250ac0b3f2e53571ff6fdd8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118767805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465630"
 ---
 # <a name="int32columnvaluegetvaluefrombytes-method"></a>Método Int32ColumnValue.GetValueFromBytes
 
@@ -83,7 +83,7 @@ protected override void GetValueFromBytes(
 
 <!-- end list -->
 
-  - recuento  
+  - count  
     Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Número de bytes que se van a descodificar.

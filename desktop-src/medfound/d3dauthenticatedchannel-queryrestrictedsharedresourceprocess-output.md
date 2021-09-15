@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: a8a9f3f916dff486be01584d98bef59aa3bda4851d41e2b03f8f86819be28ec6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd93e1cadb7da500a82218924044af79fbb1f493
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118742921"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468761"
 ---
 # <a name="d3dauthenticatedchannel_queryrestrictedsharedresourceprocess_output-structure"></a>D3DAUTHENTICATEDCHANNEL \_ QUERYRESTRICTEDSHAREDRESOURCEPROCESS \_ OUTPUT structure
 
@@ -40,7 +40,7 @@ typedef struct _D3DAUTHENTICATEDCHANNEL_QUERYRESTRICTEDSHAREDRESOURCEPROCESS_OUT
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -72,9 +72,9 @@ Un identificador de proceso. Si el **miembro ProcessIdentifier** es igual a **PR
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El Administrador de ventanas de escritorio de Administrador de ventanas de escritorio (DWM) se identifica estableciendo **ProcessIdentifier** como **PROCESSIDTYPE \_ DWM.** Otros procesos se identifican estableciendo el identificador de proceso **en ProcessHandle** y estableciendo **ProcessIdentifier** igual a **PROCESSIDTYPE \_ HANDLE**.
+El Administrador de ventanas de escritorio (DWM) se identifica estableciendo **ProcessIdentifier** igual a **PROCESSIDTYPE \_ DWM.** Otros procesos se identifican estableciendo el identificador de proceso **en ProcessHandle** y estableciendo **ProcessIdentifier** igual a **PROCESSIDTYPE \_ HANDLE**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,7 +84,7 @@ El Administrador de ventanas de escritorio de Administrador de ventanas de escri
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
-| Header<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

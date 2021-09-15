@@ -4,16 +4,16 @@ ms.assetid: b41fe0aa-a4cf-4d4a-9543-8eb0b38f07a2
 title: Registro de un recurso en una transacción
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 327ef1ab34d32853be0ca7d4641958b4f57ab55577865aad8612821e98882c71
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: db0a0bf93f373872c8be79054899dea4199dda7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119858965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465688"
 ---
 # <a name="enlisting-a-resource-in-a-transaction"></a>Registro de un recurso en una transacción
 
-Después de asignar un recurso, pero justo antes de devolver el recurso al dispensador de recursos, el administrador del dispensador comprueba con COM+ si el objeto que realiza la llamada se ejecuta dentro de una transacción. Si el objeto de llamada se ejecuta dentro de una transacción, el administrador del dispensador vuelve a llamar al dispensador de recursos y le pide que inste al recurso en la transacción. A continuación, el recurso se devuelve al dispensador de recursos, que lo devuelve a la instancia de llamada.
+Después de asignar un recurso, pero justo antes de devolver el recurso al dispensador de recursos, el administrador del dispensador comprueba con COM+ para ver si el objeto de llamada se ejecuta dentro de una transacción. Si el objeto de llamada se ejecuta dentro de una transacción, el administrador del dispensador vuelve a llamar al dispensador de recursos y le pide que inste al recurso en la transacción. A continuación, el recurso se devuelve al dispensador de recursos, que lo devuelve a la instancia de llamada.
 
 El dispensador de recursos debe ser capaz de dar de alta en una transacción OLE con el Coordinador de transacciones distribuidas (DTC).
 

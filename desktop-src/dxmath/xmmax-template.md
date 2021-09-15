@@ -4,12 +4,12 @@ ms.assetid: m:microsoft.directx_sdk.reference.xmmax(t,t)
 title: Plantilla XMMax (DirectXMath.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 362f486861400223024da5442c5103722bf35dcf8cba715da1397ad4b54c19b8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e6f8de32a32004289249cea269400d711831d640
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119117975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360504"
 ---
 # <a name="xmmax-template"></a>Plantilla XMMax
 
@@ -46,7 +46,7 @@ template<class T> T XMMax(
 
 Devuelve el mayor de los dos objetos de entrada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 `XMMax` es una plantilla y se especifica el tipo T cuando se crea una instancia de la plantilla.
 

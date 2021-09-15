@@ -4,12 +4,12 @@ ms.assetid: 8f94a82c-de93-4649-a9b5-0adcbe01333d
 title: Core Tablet PC Functions
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bb9e58300321f2b483cc062472950f5d252a292dc1380b3e5c030993ddbe6a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc9d0369a223959f011612b5aefc820a3668eeff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118967553"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468006"
 ---
 # <a name="core-tablet-pc-functions"></a>Core Tablet PC Functions
 
@@ -24,8 +24,8 @@ Esta sección contiene las funciones principales de Tablet PC.
 | [**AddOneStroke**](addonestroke.md)                             | Agrega un nuevo [**objeto IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) al [**objeto InkDivider**](inkdivider-class.md) que se pasó.                                                                 |
 | [**CallDivide**](calldivide.md)                                 | Recupera información de análisis del [**objeto InkDivider.**](inkdivider-class.md)                                                                                                              |
 | [**CallDivideResults**](calldivideresults.md)                   | Devuelve los resultados del análisis del [**objeto InkDivider.**](inkdivider-class.md)                                                                                                                    |
-| [**CallDivideResultsStrokeIds**](calldivideresultsstrokeids.md) | Recupera las propiedades [**Id**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokedisp-get_id) de los objetos [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) de la palabra, línea, párrafo o dibujo correspondientes determinados por el análisis de entrada de lápiz. |
-| [**CreateInkDivider**](createinkdivider.md)                     | Crea instancias de una implementación de la interfaz [**InkDivider**](inkdivider-class.md) y devuelve su identificador.                                                                                      |
+| [**CallDivideResultsStrokeIds**](calldivideresultsstrokeids.md) | Recupera las propiedades [**Id**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokedisp-get_id) de los objetos [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) de la palabra, línea, párrafo o dibujo correspondientes determinados por el análisis de lápiz. |
+| [**CreateInkDivider**](createinkdivider.md)                     | Crea una instancia de una implementación de la interfaz [**InkDivider**](inkdivider-class.md) y devuelve su identificador.                                                                                      |
 | [**DeleteInkDivider**](deleteinkdivider.md)                     | Elimina un objeto [**InkDivider**](inkdivider-class.md) y libera los recursos asociados.                                                                                                         |
 | [**InvokeIDispatch**](invokeidispatch.md)                       | Invoca la funcionalidad del asistente para la interfaz IDispatch.                                                                                                                                           |
 | [**RecognizerContextSet**](recognizercontextset.md)             | Comprueba si el [**objeto InkDivider**](inkdivider-class.md) puede usar la [**clase InkRecognizerContext**](inkrecognizercontext-class.md) para analizar palabras.                                      |

@@ -1,7 +1,7 @@
 ---
-description: Establece un valor de influencia de un ángulo en un solo vértice.
+description: Establece un valor de influencia de un triángulo en un solo vértice.
 ms.assetid: 9283866f-3dfe-467d-a74f-77e89c2778c4
-title: Método ID3DXSkinInfo::SetIonalVertexInfluence (D3DX9Mesh.h)
+title: Método ID3DXSkinInfo::SetVertexInfluence (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 950c72ed89c9204fb2369f175effd381548cb1913e9a2949666f6a0f4ea9aad9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: db84cdf9a1647bc5302c421e52d50f812e74596e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119674695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465660"
 ---
 # <a name="id3dxskininfosetbonevertexinfluence-method"></a>Método ID3DXSkinInfo::SetIonalVertexInfluence
 
-Establece un valor de influencia de un ángulo en un solo vértice.
+Establece un valor de influencia de un triángulo en un solo vértice.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,7 +65,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Factor de mezcla de la influencia de la influjo especificada.
+Factor de mezcla de la influencia de los restos especificados.
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Factor de mezcla de la influencia de la influjo especificada.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,17 +86,17 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se prod
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [ID3DXSkinInfo](id3dxskininfo.md)
 </dt> <dt>
 
-[**ID3DXSkinInfo::GetIonalVertexInfluence**](id3dxskininfo--getbonevertexinfluence.md)
+[**ID3DXSkinInfo::GetVertexInfluence**](id3dxskininfo--getbonevertexinfluence.md)
 </dt> <dt>
 
-[**ID3DXSkinInfo::FindIonalVertexInfluenceIndex**](id3dxskininfo--findbonevertexinfluenceindex.md)
+[**ID3DXSkinInfo::FindVertexInfluenceIndex**](id3dxskininfo--findbonevertexinfluenceindex.md)
 </dt> <dt>
 
 [**ID3DXSkinInfo::GetIonalInfluence**](id3dxskininfo--getboneinfluence.md)

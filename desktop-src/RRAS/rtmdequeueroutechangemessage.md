@@ -3,7 +3,7 @@ title: Función RtmDequeueRouteChangeMessage (Rtm.h)
 description: La función RtmDequeueRouteChangeMessage devuelve el siguiente mensaje de cambio de ruta en la cola asociada al cliente especificado.
 ms.assetid: 44f2116a-3c8d-4ac6-896e-b12930b218a5
 keywords:
-- Función RAS rtmDequeueRouteChangeMessage
+- Función RAS de RtmDequeueRouteChangeMessage
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ad69b711568fd8233a60e829da8fb6fd6ce5f74d3556afa82c721a835b98e60
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 448df230742b03f82294de102bf14b50fefa035c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120035885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271924"
 ---
 # <a name="rtmdequeueroutechangemessage-function"></a>Función RtmDequeueRouteChangeMessage
 
@@ -48,7 +48,7 @@ DWORD RtmDequeueRouteChangeMessage(
 *ClientHandle* \[ En\]
 </dt> <dd>
 
-Identificador que identifica el cliente para el que se realiza la operación. Obtenga este identificador mediante una llamada [**a RtmRegisterClient**](rtmregisterclient.md).
+Identificador que identifica el cliente para el que se realiza la operación. Para obtener este identificador, llame [**a RtmRegisterClient.**](rtmregisterclient.md)
 
 </dd> <dt>
 
@@ -61,7 +61,7 @@ Puntero a una variable **DWORD.** El valor de esta variable lo establece el admi
 
 | Marcas                                                                                                                                                                      | Significado                                                                                                                                                                                                                                                                                                           |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="RTM_ROUTE_ADDED"></span><span id="rtm_route_added"></span><dl> <dt>**RUTA RTM \_ \_ AGREGADA**</dt> </dl>       | La primera ruta se agregó para una red de destino determinada. El *parámetro CurBestRoute* apunta a la información de la ruta agregada.<br/>                                                                                                                                                            |
+| <span id="RTM_ROUTE_ADDED"></span><span id="rtm_route_added"></span><dl> <dt>**RUTA \_ RTM \_ AGREGADA**</dt> </dl>       | Se agregó la primera ruta para una red de destino determinada. El *parámetro CurBestRoute* apunta a la información de la ruta agregada.<br/>                                                                                                                                                            |
 | <span id="RTM_ROUTE_DELETED"></span><span id="rtm_route_deleted"></span><dl> <dt>**RUTA RTM \_ \_ ELIMINADA**</dt> </dl> | Se eliminó la única ruta disponible para una red de destino determinada. El *parámetro PrevBestRoute* apunta a la información de la ruta eliminada.<br/>                                                                                                                                              |
 | <span id="RTM_ROUTE_CHANGED"></span><span id="rtm_route_changed"></span><dl> <dt>**RUTA RTM \_ \_ MODIFICADA**</dt> </dl> | Se cambió al menos uno de los parámetros significativos para una mejor ruta a una red de destino determinada. Los parámetros significativos son: <br/> Identificador de protocolo<br/> Índice de interfaz<br/> Dirección del próximo salto<br/> Datos específicos de la familia de protocolos (incluidas las métricas de ruta)<br/> |
 
@@ -99,11 +99,11 @@ El valor devuelto es uno de los códigos siguientes.
 
 | Value                                                                                                       | Descripción                                                                                                                                                                                                                                  |
 |-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**NO \_ HAY NINGÚN ERROR**</dt> </dl>                    | Este mensaje fue el último en la cola del cliente. Se restablece el objeto de evento.<br/>                                                                                                                                               |
-| <dl> <dt>**IDENTIFICADOR \_ DE ERROR NO \_ VÁLIDO**</dt> </dl>       | El *parámetro ClientHandle* no es un identificador válido o, en el registro, el cliente no ha especificado un objeto de evento para la notificación de mensajes de cambio (vea [**RtmRegisterClient**](rtmregisterclient.md)).<br/>                           |
-| <dl> <dt>**ERROR \_ MÁS \_ MENSAJES**</dt> </dl>        | La cola del cliente contiene mensajes adicionales. El cliente debe llamar de nuevo a **RtmDequeueRouteChangeMessage** tan pronto como sea posible para permitir que el administrador de tablas de enrutamiento libre los recursos asociados a los mensajes pendientes.<br/> |
-| <dl> <dt>**ERROR \_ SIN \_ MENSAJES**</dt> </dl>          | La cola del cliente no contiene ningún mensaje; la llamada no se ha solicitado. Se restablece el evento.<br/>                                                                                                                                            |
-| <dl> <dt>**ERROR \_ SIN RECURSOS DEL \_ \_ SISTEMA**</dt> </dl> | No hay recursos suficientes para llevar a cabo la operación.<br/>                                                                                                                                                                      |
+| <dl> <dt>**NO \_ ERROR**</dt> </dl>                    | Este mensaje era el último mensaje de la cola del cliente. Se restablece el objeto de evento.<br/>                                                                                                                                               |
+| <dl> <dt>**IDENTIFICADOR \_ DE ERROR NO \_ VÁLIDO**</dt> </dl>       | El *parámetro ClientHandle* no es un identificador válido o, en el registro, el cliente no ha especificado un objeto de evento para la notificación de mensajes de cambio (vea [**RtmRegisterClient).**](rtmregisterclient.md)<br/>                           |
+| <dl> <dt>**ERROR \_ MÁS \_ MENSAJES**</dt> </dl>        | La cola del cliente contiene mensajes adicionales. El cliente debe volver a llamar a **RtmDequeueRouteChangeMessage** lo antes posible para permitir que el administrador de tablas de enrutamiento libre los recursos asociados a los mensajes pendientes.<br/> |
+| <dl> <dt>**ERROR \_ SIN \_ MENSAJES**</dt> </dl>          | La cola del cliente no contiene mensajes; la llamada no se ha solicitado. El evento se restablece.<br/>                                                                                                                                            |
+| <dl> <dt>**ERROR \_ NO HAY RECURSOS DEL \_ \_ SISTEMA**</dt> </dl> | No hay recursos suficientes para llevar a cabo la operación.<br/>                                                                                                                                                                      |
 
 
 
@@ -118,17 +118,17 @@ El valor devuelto es uno de los códigos siguientes.
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Rtm.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Referencia de la versión 1 de Routing Table Manager](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
 [Funciones de Routing Table Manager versión 1](routing-table-manager-version-1-functions.md)

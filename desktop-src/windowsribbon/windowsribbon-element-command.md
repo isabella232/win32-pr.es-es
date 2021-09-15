@@ -14,11 +14,11 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 0c29539c9c76342b8b88603ea3dd2926554228ac
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122626951"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466761"
 ---
 # <a name="command-element"></a>Command, elemento
 
@@ -56,7 +56,7 @@ Representa una definición de comando.
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -66,35 +66,35 @@ Representa una definición de comando.
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Se usa para anotar el elemento de comando.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> Longitud máxima: 250 caracteres.<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena compuesta de cualquier secuencia de caracteres, incluidos los espacios en blanco y los caracteres de salto de línea.<br/> Longitud máxima: 250 caracteres.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Id</strong><br/></td>
 <td>xs:positiveInteger union xs:string<br/></td>
 <td>No<br/></td>
 <td>Identificador de recurso único. <br/> <br/>
-<dt><span></span><span></span><strong></strong> (La unión de xs:positiveInteger y xs:string)<br/> </dt> <dd> Valor entero comprendido entre 2 y 59999, inclusivo o 0x2 y 0xea5f en hexadecimal, inclusivo. <br/> La longitud máxima es de 10 caracteres, incluidos los ceros iniciales opcionales. <br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (La unión de xs:positiveInteger y xs:string)<br/> </dt> <dd> Valor entero comprendido entre 2 y 59999, ambos incluidos, o 0x2 y 0xea5f en hexadecimal, inclusivo. <br/> La longitud máxima es de 10 caracteres, incluidos ceros iniciales opcionales. <br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>Keytip</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Cadena que representa el método abreviado de teclado de un elemento de comando.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena compuesta de cualquier secuencia de caracteres, incluidos los espacios en blanco.<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena compuesta de cualquier secuencia de caracteres, incluido el espacio en blanco.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>LabelDescription</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Cadena que representa el texto mostrado en un elemento de comando.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena compuesta de cualquier secuencia de caracteres, incluidos los espacios en blanco y los caracteres de salto de línea.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>LabelTitle</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Cadena que representa el texto mostrado en un elemento de comando.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena compuesta de cualquier secuencia de caracteres, incluidos los espacios en blanco y los caracteres de salto de línea.<br/> </dd> </dl></td>
 </tr>
 <tr class="even">
 <td><strong>Nombre</strong><br/></td>
@@ -113,14 +113,14 @@ Representa una definición de comando.
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Cadena que representa el texto mostrado en un elemento de comando.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena compuesta de cualquier secuencia de caracteres, incluidos los espacios en blanco y los caracteres de salto de línea.<br/> </dd> </dl></td>
 </tr>
 <tr class="odd">
 <td><strong>TooltipTitle</strong><br/></td>
 <td>xs:string<br/></td>
 <td>No<br/></td>
 <td>Cadena que representa el texto mostrado en un elemento de comando.<br/> <br/>
-<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena formada por cualquier secuencia de caracteres, incluidos los caracteres de espacio en blanco y de salto de línea.<br/> </dd> </dl></td>
+<dt><span></span><span></span><strong></strong> (xs:string)<br/> </dt> <dd> Cadena compuesta de cualquier secuencia de caracteres, incluidos los espacios en blanco y los caracteres de salto de línea.<br/> </dd> </dl></td>
 </tr>
 </tbody>
 </table>
@@ -159,7 +159,7 @@ Representa una definición de comando.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Necesario.
 

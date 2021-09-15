@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 437dba087a336322fe1574112dce0b6b5805d05778613924f577c16343d33604
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ea4a890ae03d3adf3b28bb2dce03e2eac5578abe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118704786"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467095"
 ---
 # <a name="drm_actionallowed_copy"></a>Acción \_ de DRMAllowed \_ Copy
 
@@ -31,9 +31,9 @@ g \_ wszWMDRM \_ ActionAllowed \_ Copy
 
 **WMT \_ TYPE \_ BOOL**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-En Windows DRM 10 de multimedia, todas las operaciones de copia están restringidas mediante la acción Copiar.
+En Windows DRM 10 multimedia, todas las operaciones de copia están restringidas mediante la acción Copiar.
 
 Se trata de una propiedad de solo lectura que se recupera mediante [**IWMDRMReader::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty).
 

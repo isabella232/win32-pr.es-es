@@ -4,12 +4,12 @@ ms.assetid: 0a0d5e74-d1ee-4a90-abf1-809698d215e2
 title: Extensión de Windows Explorer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f257a349018813bfb9a8b921c4d2d9071a67b40a3d4ad5898a8a9421f4c21e5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 720e8c05b51952b263a0a609d9591543cefd859f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118050425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468251"
 ---
 # <a name="extending-windows-explorer"></a>Extensión de Windows Explorer
 
