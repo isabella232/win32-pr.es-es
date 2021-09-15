@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f81f8b0a530e7c6c85f2ad1749e0a7373f68b0bf902b71a86889b92184806ffc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: de3d15bf250685e0b0cad935cd5e8094b2f2ceee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119034283"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248463"
 ---
 # <a name="iconresdir-structure"></a>ICONRESDIR (estructura)
 
@@ -38,7 +38,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -86,7 +86,7 @@ Reservado; debe establecerse en el mismo valor que el del campo reservado en el 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **estructura ICONRESDIR** se pasa en la [**estructura RESDIR**](resdir.md) si la **estructura RESDIR** describe un icono.
 

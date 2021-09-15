@@ -5,11 +5,11 @@ title: Codificador de vídeo H.265/HEVC
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 0b95eee96d3313df2604919883cf631b0aef999f
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467492"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248534"
 ---
 # <a name="h265--hevc-video-encoder"></a>Codificador de vídeo H.265/HEVC
 
@@ -67,7 +67,7 @@ Una vez establecido el tipo de salida, el codificador de vídeo actualiza el tip
 
 ## <a name="supported-imftransform-methods"></a>Métodos DETRANSFORM admitidos
 
-Los siguientes métodos de la [**interfaz DETRANSFORM son**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) compatibles con el codificador H.265/HEVC:
+Se admiten los métodos siguientes de la interfaz [**DETRANSFORM**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) para el codificador H.265/HEVC:
 
 -   [**GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes)
 -   [**GetInputAvailableType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getinputavailabletype)
@@ -113,19 +113,19 @@ Para ver los requisitos de códec para la certificación del codificador HCK, co
 
 | Propiedad | Descripción | 
 |----------|-------------|
-| <a href="/windows/desktop/DirectShow/avenccommonratecontrolmode-property"><strong>CODECAPI_AVEncCommonRateControlMode</strong></a> | Establece el modo de control de velocidad. Los modos admitidos son:<br /><ul><li><strong>eAVEncCommonRateControlMode_CBR</strong></li><li><strong>eAVEncCommonRateControlMode_Quality</strong></li></ul>Si se especifican otros modos, <strong>se usará eAVEncCommonRateControlMode_CBR</strong> de velocidad.<br /> Se trata de VT_UI4 valor.<br /> | 
+| <a href="/windows/desktop/DirectShow/avenccommonratecontrolmode-property"><strong>CODECAPI_AVEncCommonRateControlMode</strong></a> | Establece el modo de control de velocidad. Los modos admitidos son:<br /><ul><li><strong>eAVEncCommonRateControlMode_CBR</strong></li><li><strong>eAVEncCommonRateControlMode_Quality</strong></li></ul>Si se especifican otros modos, <strong>se usará eAVEncCommonRateControlMode_CBR</strong> control de velocidad.<br /> Se trata de VT_UI4 valor.<br /> | 
 | <a href="/windows/desktop/DirectShow/avenccommonmeanbitrate-property">CODECAPI_AVEncCommonMeanBitRate</a> | Establece la velocidad de bits media de la secuencia de bits codificada, en bits por segundo. <br /> El intervalo válido es [1 ... 2):1]. <br /> Se trata de VT_UI4 valor.<br /> | 
 | <a href="/windows/desktop/DirectShow/avenccommonbuffersize-property">CODECAPI_AVEncCommonBufferSize</a> | Establece el tamaño del búfer, en bytes, para la codificación de velocidad de bits constante (CBR).<br /> El intervalo válido es [1 ... 2):1]. <br /> Se trata de VT_UI4 valor.<br /> | 
 | <a href="/windows/desktop/DirectShow/avenccommonmaxbitrate-property">CODECAPI_AVEncCommonMaxBitRate</a> | Establece la velocidad de bits máxima para los modos de control de velocidad que permiten una velocidad de bits máxima. <br /> El intervalo válido es [1 ... 2):1]. <br /> Se trata de VT_UI4 valor.<br /> | 
 | <a href="/windows/desktop/DirectShow/avencmpvgopsize-property">CODECAPI_AVEncMPVGOPSize</a> | Establece el número de imágenes de un encabezado GOP al siguiente, incluido el delimitador inicial, pero no el siguiente. <br /> El intervalo válido es [0 ... 2):1]. Si es cero, el codificador selecciona el tamaño de GOP. El valor predeterminado es cero. <br /> Se trata de VT_UI4 valor.<br /> | 
-| <a href="codecapi-avlowlatencymode.md">CODECAPI_AVLowLatencyMode</a> | Habilita o deshabilita el modo de baja latencia. <br /> Se trata de un VT_BOOL valor.<br /> | 
-| <a href="/windows/desktop/DirectShow/avenccommonqualityvsspeed-property">CODECAPI_AVEncCommonQualityVsSpeed</a> | Establece la diferencia entre calidad y velocidad. Este valor afecta a la forma en que el codificador realiza varias operaciones de codificación, como la compensación de movimiento. En niveles de complejidad más altos, el codificador se ejecuta más lentamente, pero genera una mejor calidad a la misma velocidad de bits. <br /> El intervalo válido es de 0 a 100. Internamente, este valor se asigna a un conjunto más pequeño de niveles de calidad y velocidad admitidos por el codificador.<br /> Se trata de VT_UI4 valor.<br /> | 
-| <a href="codecapi-avencvideoforcekeyframe.md">CODECAPI_AVEncVideoForceKeyFrame</a> | Fuerza al codificador a codificar el fotograma siguiente como fotograma clave.<br /> Se trata de VT_UI4 valor.<br /> | 
+| <a href="codecapi-avlowlatencymode.md">CODECAPI_AVLowLatencyMode</a> | Habilita o deshabilita el modo de baja latencia. <br /> Se trata de un VT_BOOL predeterminado.<br /> | 
+| <a href="/windows/desktop/DirectShow/avenccommonqualityvsspeed-property">CODECAPI_AVEncCommonQualityVsSpeed</a> | Establece la diferencia entre calidad y velocidad. Este valor afecta a cómo el codificador realiza varias operaciones de codificación, como la compensación de movimiento. En niveles de complejidad más altos, el codificador se ejecuta más lentamente, pero genera una mejor calidad a la misma velocidad de bits. <br /> El intervalo válido es de 0 a 100. Internamente, este valor se asigna a un conjunto más pequeño de niveles de calidad y velocidad admitidos por el codificador.<br /> Se trata de VT_UI4 valor.<br /> | 
+| <a href="codecapi-avencvideoforcekeyframe.md">CODECAPI_AVEncVideoForceKeyFrame</a> | Fuerza al codificador a codificar el fotograma siguiente como un fotograma clave.<br /> Se trata de VT_UI4 valor.<br /> | 
 | <a href="codecapi-avencvideoencodeqp.md">CODECAPI_AVEncVideoEncodeQP</a> | Cuando se establece esta propiedad, el codificador usará el QP especificado para codificar el fotograma siguiente y todos los fotogramas posteriores hasta que se especifique un nuevo QP. <br /> Intervalo válido: 0–51, ambos inclusive <br /> | 
-| <a href="codecapi-avencvideominqp.md">CODECAPI_AVEncVideoMinQP</a> | Esta propiedad establecerá un límite en el QP mínimo que el codificador puede usar durante el control de velocidad CBR.<br /> Se trata de VT_UI4 valor.<br /> | 
+| <a href="codecapi-avencvideominqp.md">CODECAPI_AVEncVideoMinQP</a> | Esta propiedad establecerá un límite en el QP mínimo que el codificador puede usar durante el control ratecontrol de CBR.<br /> Se trata de VT_UI4 valor.<br /> | 
 | <a href="codecapi-avencvideomaxqp.md">CODECAPI_AVEncVideoMaxQP</a> | Esta propiedad establecerá un límite en el QP máximo que el codificador puede usar durante el control de velocidad CBR.<br /> Se trata de VT_UI4 valor.<br /> | 
 | <a href="codecapi-videoencoderdisplaycontenttype.md">CODECAPI_VideoEncoderDisplayContentType</a> | Establece si el contenido es vídeo de pantalla completa, en lugar de contenido de pantalla que podría tener una ventana de vídeo más pequeña o no tener ningún vídeo.<br /> Se trata de VT_UI4 valor.<br /> | 
-| <a href="codecapi-avencnumworkerthreads.md">CODECAPI_AVEncNumWorkerThreads</a> | Establece el número de subprocesos usados para realizar la operación de compresión. El codificador dividirá el marco en mosaicos de forma que el número de subprocesos sea igual al número de iconos.<br /><ul><li>Número de procesadores lógicos. El número de subprocesos debe ser menor o igual que el número de procesadores lógicos.</li><li>Tamaño del marco. El tamaño de un icono debe ser mayor o igual que 265 x 64 píxeles.</li><li>Paridad. El número de subprocesos debe ser un valor par. Si el valor especificado es impar, se usará el siguiente valor par inferior.</li></ul>Se trata de VT_UI4 valor.<br /> | 
+| <a href="codecapi-avencnumworkerthreads.md">CODECAPI_AVEncNumWorkerThreads</a> | Establece el número de subprocesos utilizados para realizar la operación de compresión. El codificador dividirá el marco en mosaicos para que el número de subprocesos sea igual al número de iconos.<br /><ul><li>Número de procesadores lógicos. El número de subprocesos debe ser menor o igual que el número de procesadores lógicos.</li><li>Tamaño del marco. El tamaño de un icono debe ser mayor o igual que 265 x 64 píxeles.</li><li>Paridad. El número de subprocesos debe ser un valor par. Si el valor especificado es impar, se usará el siguiente valor par inferior.</li></ul>Se trata de VT_UI4 valor.<br /> | 
 
 
 
@@ -134,7 +134,7 @@ Para ver los requisitos de códec para la certificación del codificador HCK, co
 
 ## <a name="certified-hardware-encoder"></a>Codificador de hardware certificado
 
-Si hay un codificador de hardware certificado, generalmente se usará en lugar del codificador del sistema de bandeja de entrada para Media Foundation escenarios relacionados. Los codificadores certificados son necesarios para admitir un determinado conjunto de propiedades **ICodecAPI** y, opcionalmente, pueden admitir otro conjunto de propiedades. El proceso de certificación debe garantizar que las propiedades necesarias se admiten correctamente y, si se admite una propiedad opcional, que también se admite correctamente.
+Si hay un codificador de hardware certificado, normalmente se usará en lugar del codificador del sistema de bandeja de entrada para Media Foundation escenarios relacionados. Los codificadores certificados son necesarios para admitir un determinado conjunto de propiedades **ICodecAPI** y, opcionalmente, pueden admitir otro conjunto de propiedades. El proceso de certificación debe garantizar que las propiedades necesarias se admiten correctamente y, si se admite una propiedad opcional, que también se admite correctamente.
 
 A continuación se muestra el conjunto de propiedades **ICodecAPI** obligatorias y opcionales para que los codificadores pasen la certificación del codificador HCK.
 
@@ -150,7 +150,7 @@ A continuación se muestra el conjunto de propiedades **ICodecAPI** obligatorias
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                              |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                |
@@ -158,7 +158,7 @@ A continuación se muestra el conjunto de propiedades **ICodecAPI** obligatorias
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

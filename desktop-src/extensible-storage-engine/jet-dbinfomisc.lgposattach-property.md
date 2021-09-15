@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 50a4f507c9ed826b1c21888d9c837cf1518f80effff0a2d24dc4746505b18c3d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bff266e056b620a45adcf58f092277399c979c88
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118766255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248847"
 ---
 # <a name="jet_dbinfomisclgposattach-property"></a>JET_DBINFOMISC.lgposAttach, propiedad
 
@@ -40,7 +40,7 @@ Obtiene los lgpos de la última asociación.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

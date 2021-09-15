@@ -33,11 +33,11 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 6c8280bf4abfbc9eb5818d1aab460a17298db7b0
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477461"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248750"
 ---
 # <a name="stopservicegrbit-enumeration"></a>StopServiceGrbit (enumeración)
 
@@ -63,15 +63,15 @@ Dim instance As StopServiceGrbit
 public enum StopServiceGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 
 |  | Nombre del miembro | Descripción | 
 |--|-------------|-------------|
 |  | Todo | Detiene todos los servicios ese para la instancia especificada. | 
 |  | BackgroundUserTasks | Detiene las tareas de mantenimiento en segundo plano específicas del cliente reiniciables (desfragmentación de árbol B+). | 
-|  | QuiesceCaches | Se desasocian todas las cachés desasembladas en el disco. Asincrónica La anulación de la actividad se cancela si se llama al bit Reanudar posteriormente. | 
-|  | Reanudar | Reanuda las operaciones StopService emitidas anteriormente, es decir, "reinicia el servicio". Se puede combinar con los bits grbits anteriores para reanudar servicios específicos o con 0x0 reanuda todos los servicios detenidos anteriores.<p>Advertencia: Este bit solo se puede usar para reanudar JET_bitStopServiceBackground y JET_bitStopServiceQuiesceCaches, si ha hecho una JET_bitStopServiceAll o JET_bitStopServiceAPI, se producirá un error al intentar usar JET_bitStopServiceResume.</p> | 
+|  | QuiesceCaches | Se desasocian todas las memorias caché desasembladas en el disco. Asincrónica Si se llama posteriormente al bit Resume, se cancela la anulación. | 
+|  | Reanudar | Reanuda las operaciones StopService emitidas previamente, es decir, "reinicia el servicio". Se puede combinar con los bits grbits anteriores para reanudar servicios específicos o con 0x0 reanuda todos los servicios detenidos anteriores.<p>Advertencia: Este bit solo se puede usar para reanudar JET_bitStopServiceBackground y JET_bitStopServiceQuiesceCaches, si ha hecho una JET_bitStopServiceAll o JET_bitStopServiceAPI, se producirá un error al intentar JET_bitStopServiceResume.</p> | 
 
 
 

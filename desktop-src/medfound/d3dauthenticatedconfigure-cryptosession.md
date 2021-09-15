@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 3e1df4b58750d5b2d82eb518d5dfc0ef24bdbe4e5569ebcaf708b8df60691d04
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4b6fda19aef9629214aaa410fd43c4d64f16dd29
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119449445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248577"
 ---
 # <a name="d3dauthenticatedconfigure_cryptosession"></a>D3DAUTHENTICATEDCONFIGURE \_ CRYPTOSESSION
 
@@ -28,21 +28,21 @@ Asocia una sesión criptográfica a un dispositivo descodificador directX Video 
 
 | Requisito | Value |
 |--------------|-----------------------------------------------------------------------------------------------------------|
-| GUID del comando | **D3DAUTHENTICATEDCONFIGURE \_ CRYPTOSESSION**                                                              |
+| GUID de comando | **D3DAUTHENTICATEDCONFIGURE \_ CRYPTOSESSION**                                                              |
 | Datos de entrada   | [**D3DAUTHENTICATEDCHANNEL \_ CONFIGURECRYPTOSESSION**](d3dauthenticatedchannel-configurecryptosession.md) |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Después de enviar este comando, puede enviar la consulta [ \_ OUTPUTID D3DAUTHENTICATEDQUERY](d3dauthenticatedquery-outputid.md) para averiguar qué salidas de vídeo están asociadas a la sesión criptográfica.
+Una vez enviado este comando, puede enviar la consulta [ \_ OUTPUTID D3DAUTHENTICATEDQUERY](d3dauthenticatedquery-outputid.md) para averiguar qué salidas de vídeo están asociadas a la sesión criptográfica.
 
 Los siguientes tipos de canal admiten este comando:
 
 -   **D3DAUTHENTICATEDCHANNEL \_ D3D9**
--   **SOFTWARE DEL CONTROLADOR D3DAUTHENTICATEDCHANNEL \_ \_**
+-   **SOFTWARE DE CONTROLADOR D3DAUTHENTICATEDCHANNEL \_ \_**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,9 +50,9 @@ Los siguientes tipos de canal admiten este comando:
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
-| Header<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

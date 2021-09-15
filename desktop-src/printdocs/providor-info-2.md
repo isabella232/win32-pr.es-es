@@ -1,5 +1,5 @@
 ---
-description: La estructura PROVIDOR \_ INFO \_ 2 anexa un proveedor de impresión a la lista de pedidos del proveedor de impresión.
+description: La estructura PROVIDOR \_ INFO 2 anexa un proveedor de impresión a la lista de pedidos del proveedor de \_ impresión.
 ms.assetid: 840523ca-22d0-460f-81fb-e0a9e2d4f5d6
 title: PROVIDOR_INFO_2 estructura (Winspool.h)
 ms.topic: reference
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 969af36fe0a64bb586fbf62912ca27c6ebba9ba0a627701e4bc57f6202bfe1b5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d40f5843bf68254b92e3d814d9f308ba4f058889
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120091685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248390"
 ---
-# <a name="providor_info_2-structure"></a>Estructura DE PROVIDOR \_ INFO \_ 2
+# <a name="providor_info_2-structure"></a>PROVIDOR \_ INFO \_ 2 (estructura)
 
 La **estructura PROVIDOR \_ INFO \_ 2** anexa un proveedor de impresión a la lista de pedidos del proveedor de impresión.
 
@@ -37,7 +37,7 @@ typedef struct _PROVIDOR_INFO_2 {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -48,15 +48,15 @@ Puntero a una cadena terminada en NULL que especifica el nombre del proveedor de
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta estructura se usa al llamar a [**AddPrintProvidor**](addprintprovidor.md), nivel 2, para agregar el proveedor de impresión especificado al final de la lista de pedidos del proveedor de impresión. El proveedor se usa inmediatamente para el enrutamiento si la llamada se realiza correctamente.
+Esta estructura se usa al llamar a [**AddPrintProvidor,**](addprintprovidor.md)nivel 2, para agregar el proveedor de impresión especificado al final de la lista de pedidos del proveedor de impresión. El proveedor se usa inmediatamente para el enrutamiento si la llamada se realiza correctamente.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -65,14 +65,14 @@ Esta estructura se usa al llamar a [**AddPrintProvidor**](addprintprovidor.md), 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API de Spooler de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de LA API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**AddPrintProvidor**](addprintprovidor.md)

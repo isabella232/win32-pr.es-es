@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b39a744f8f62abe86f2784a2e51696b8d73aa11791f9671fc2ff60d47f06f0e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d4e9f863feba0ee1c2f29cb0c9141a87babf20ff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118486070"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248805"
 ---
 # <a name="jet_dbinfomisculeccfixfailold-property"></a>JET_DBINFOMISC.ulECCFixFailOld, propiedad
 
@@ -40,7 +40,7 @@ Obtiene el número de veces que se encontró un error de un bit incorregible.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

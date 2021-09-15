@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: caa86fd4-ee66-48dc-9d3f-c525690a9cad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec9019b6a68e1c52f2fab7e85276c4f8bc62b82d641fa3e127ec13274862d0c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c453ac6c618425dc501e0994dcfbbeff582f763a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119034333"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248468"
 ---
 # <a name="i-menus-and-other-resources"></a>I (menús y otros recursos)
 
@@ -42,7 +42,7 @@ Un carácter de control de la [**instrucción ACCELERATORS**](accelerators-resou
 <span id="tools.i_4_gly"></span><span id="TOOLS.I_4_GLY"></span>**Tipo de control no válido**
 </dt> <dd>
 
-La instrucción de control de una instrucción [**DIALOG**](dialog-resource.md) debe ser una de las siguientes: [**AUTO3STATE**](auto3state-control.md), [**AUTOCHECKBOX**](autocheckbox-control.md), [**AUTORADIOBUTTON**](autoradiobutton-control.md), [**CHECKBOX**](checkbox-control.md), [**COMBOBOX**](combobox-control.md), [**CONTROL**](control-control.md), [**CTEXT**](ctext-control.md), [**DEFPUSHBUTTON**](defpushbutton-control.md), [**EDITTEXT**](edittext-control.md), [**GROUPBOX**](groupbox-control.md), [**ICON**](icon-control.md), [**LISTBOX**](listbox-control.md), [**LTEXT**](ltext-control.md), [**PUSHBOX**](pushbutton-control.md), [**PUSHBUTTON**](pushbox-control.md), [**RADIOBUTTON**](radiobutton-control.md), [**RTEXT**](rtext-control.md), [**SCROLLBAR**](scrollbar-control.md), [**STATE3**](state3-control.md).
+La instrucción de control de una instrucción [**DIALOG**](dialog-resource.md) debe ser una de las siguientes: [**AUTO3STATE**](auto3state-control.md), [**AUTOCHECKBOX**](autocheckbox-control.md), [**AUTORADIOBUTTON**](autoradiobutton-control.md), [**CHECKBOX**](checkbox-control.md), [**COMBOBOX**](combobox-control.md), [**CONTROL**](control-control.md), [**CTEXT**](ctext-control.md), [**DEFPUSHBUTTON**](defpushbutton-control.md), [**EDITTEXT**](edittext-control.md), [**GROUPBOX**](groupbox-control.md), [**ICON**](icon-control.md), [**LISTBOX**](listbox-control.md), [**LTEXT**](ltext-control.md), [**PUSHBOX**](pushbox-control.md), [**PUSHBUTTON**](pushbutton-control.md), [**RADIOBUTTON**](radiobutton-control.md), [**RTEXT**](rtext-control.md), [**SCROLLBAR**](scrollbar-control.md), [**STATE3**](state3-control.md).
 
 </dd> <dt>
 

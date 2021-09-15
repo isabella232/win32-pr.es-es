@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Método StringColumnValue.GetValueFromBytes'
+description: Más información sobre el método StringColumnValue.GetValueFromBytes
 title: Método StringColumnValue.GetValueFromBytes
 TOCTitle: 'GetValueFromBytes method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.StringColumnValue.GetValueFromBytes(System.Byte[],System.Int32,System.Int32,System.Int32)
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cd67d69dd68b08833be8b415d1a080eae763becaf0d96443cbb5556674e3a9e9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 20e8f0f3d30adf73959650415c12018eceeb2642
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118485414"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248727"
 ---
 # <a name="stringcolumnvaluegetvaluefrombytes-method"></a>Método StringColumnValue.GetValueFromBytes
 
@@ -83,7 +83,7 @@ protected override void GetValueFromBytes(
 
 <!-- end list -->
 
-  - recuento  
+  - count  
     Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Número de bytes que se van a descodificar.

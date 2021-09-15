@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - gdi32.dll
-ms.openlocfilehash: c84738fe37661d2a593432b571c6022b0369e28ee3b2a3cb028b8eb84276a21a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 87139f0b485ef3c01e5196db85b36faeb662e4d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117879382"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248535"
 ---
 # <a name="getsuggestedopmprotectedoutputarraysize-function"></a>Función GetSuggestedOPMProtectedOutputArraySize
 
@@ -63,7 +63,7 @@ Recibe el tamaño que se debe asignar para la matriz, en número de elementos de
 
 Si el método se realiza correctamente, devuelve **STATUS \_ SUCCESS**. De lo contrario, devuelve un código de error **NTSTATUS.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función no tiene ninguna biblioteca de importación asociada. Para llamar a esta función, debe usar las [**funciones LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinámicamente a Gdi32.dll.
 
@@ -71,7 +71,7 @@ Esta función no tiene ninguna biblioteca de importación asociada. Para llamar 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |

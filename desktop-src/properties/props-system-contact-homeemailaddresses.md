@@ -4,12 +4,12 @@ ms.assetid: e88afa55-424b-4e99-b930-04bdc31fca45
 title: System.Contact.HomeEmailAddresses
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d54a6bae09c2c8e778f8b093f5517b74cc4b04e8594264ba28c4aff333a4f3f5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ffb9c3778d67b003be01908ae5b4b723dbbca202
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119776335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248313"
 ---
 # <a name="systemcontacthomeemailaddresses"></a>System.Contact.HomeEmailAddresses
 
@@ -28,7 +28,7 @@ propertyDescription
       type = Multivalue String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

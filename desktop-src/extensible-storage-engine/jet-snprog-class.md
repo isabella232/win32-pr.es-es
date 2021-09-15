@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_SNPROG (clase)'
-title: JET_SNPROG (clase)
+description: 'Más información sobre: JET_SNPROG clase'
+title: JET_SNPROG clase
 TOCTitle: JET_SNPROG class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_SNPROG
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_snprog(v=EXCHG.10)
@@ -25,23 +25,23 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: a5e8e5b5134a5449ad243b0ddc331d4fbf4cafe2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103808497"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248768"
 ---
-# <a name="jet_snprog-class"></a>JET_SNPROG (clase)
+# <a name="jet_snprog-class"></a>JET_SNPROG clase
 
-Contiene información sobre el progreso de una operación de ejecución prolongada.
+Contiene información sobre el progreso de una operación de ejecución larga.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.JET_SNPROG  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,10 +63,10 @@ public class JET_SNPROG : IEquatable<JET_SNPROG>
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_SNPROG](./jet-snprog-members.md)
+[JET_SNPROG miembros](./jet-snprog-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
