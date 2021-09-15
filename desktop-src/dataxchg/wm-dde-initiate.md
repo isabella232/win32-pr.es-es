@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27d2d5cf46221e268cf27f7557349185b32aafff65bdd20b0ac20063fde151a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf65e222c7711d429db44e391d4f03c35997e219
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117915153"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570013"
 ---
 # <a name="wm_dde_initiate-message"></a>Mensaje \_ WM DDE \_ INITIATE
 
-Una datos dinámicos Exchange cliente (DDE) envía un mensaje **WM \_ DDE \_ INITIATE** para iniciar una conversación con una aplicación de servidor que responda a los nombres de aplicación y tema especificados. Tras recibir este mensaje, se espera que todas las aplicaciones de servidor con nombres que coincidan con la aplicación especificada y que admitan el tema especificado la confirmen. (Para obtener más información, vea el mensaje [**\_ WM DDE \_ ACK).**](wm-dde-ack.md)
+Una datos dinámicos Exchange cliente de datos dinámicos Exchange (DDE) envía un mensaje **WM \_ DDE \_ INITIATE** para iniciar una conversación con una aplicación de servidor que responde a los nombres de aplicación y tema especificados. Tras recibir este mensaje, se espera que todas las aplicaciones de servidor con nombres que coincidan con la aplicación especificada y que admitan el tema especificado la confirmen. (Para obtener más información, vea el mensaje [**\_ WM DDE \_ ACK).**](wm-dde-ack.md)
 
 
 ```C++
@@ -52,7 +52,7 @@ La palabra de orden superior contiene un átomo que identifica el tema para el q
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la palabra de orden bajo de *lParam* **es NULL,** cualquier aplicación de servidor puede responder. Si la palabra de orden superior de *lParam* **es NULL,** cualquier tema es válido. Al recibir una solicitud **WM \_ DDE \_ INITIATE** con la palabra de orden superior del parámetro *lParam* establecida en **NULL,** un servidor debe enviar un mensaje [**WM \_ DDE \_ ACK**](wm-dde-ack.md) para cada uno de los temas que admite.
 

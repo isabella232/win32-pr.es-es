@@ -11,12 +11,12 @@ api_name:
 - SecurityCallContext
 api_type:
 - COM
-ms.openlocfilehash: f0efa73ef704d77cc68b5a1193ccdc3de71b1ed0a5b8c730a2ea67474600bf5a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd15b7e0317a507a2340cc148bb927bb5d94a37b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118546269"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570016"
 ---
 # <a name="securitycallcontext-class"></a>Clase SecurityCallContext
 
@@ -30,7 +30,7 @@ ESTA clase se implementa mediante COM+.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |------------|------------------------------------------------------|
 | Interfaces | [**ISecurityCallersColl**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallerscoll) |
 
@@ -42,7 +42,7 @@ ESTA clase se implementa mediante COM+.
 
 Use esta clase para tener acceso a los métodos [**de ISecurityCallContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallcontext).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No se puede crear directamente un **objeto SecurityCallContext.** Para usar los métodos de [**ISecurityCallContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallcontext), debe obtener una referencia a su implementación mediante una llamada a [**CoGetCallContext**](/windows/desktop/api/combaseapi/nf-combaseapi-cogetcallcontext), que proporciona IID ISecurityCallContext para el \_ parámetro *riid.*
 
@@ -52,7 +52,7 @@ Para usar esta clase de Microsoft Visual Basic, agregue una referencia a la bibl
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
@@ -60,7 +60,7 @@ Para usar esta clase de Microsoft Visual Basic, agregue una referencia a la bibl
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

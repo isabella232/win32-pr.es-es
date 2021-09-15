@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da4c4ac66c8cafee3636491513ba7a70c19be752c6d0769902bb91e771487177
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1625b9d72b3ff4afe1880b48125d244da1f68844
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118531121"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569997"
 ---
 # <a name="id3dx11effectvariablegetdesc-method"></a>Método ID3DX11EffectVariable::GetDesc
 
@@ -48,7 +48,7 @@ HRESULT GetDesc(
 
 Tipo: **[ **D3DX11 \_ EFFECT \_ VARIABLE \_ DESC**](d3dx11-effect-variable-desc.md)\***
 
-Puntero a una descripción de la variable de efecto (vea [**D3DX11 \_ EFFECT \_ VARIABLE \_ DESC).**](d3dx11-effect-variable-desc.md)
+Puntero a una descripción de variable de efecto (vea [**D3DX11 \_ EFFECT \_ VARIABLE \_ DESC**](d3dx11-effect-variable-desc.md)).
 
 </dd> </dl>
 
@@ -58,10 +58,10 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -72,7 +72,7 @@ Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graph
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

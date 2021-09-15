@@ -4,12 +4,12 @@ description: Windows ofrece dos especificaciones de API para la accesibilidad de
 ms.assetid: ba67b10b-4a4d-4859-ae9c-7e92eb7f2e49
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9cca1a0305a0c413b7c036c841643f7d21746d1b44ef2877aae22c77cc6afc6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 987b3f1cebf7720fd4d514ef823cb63505b7d944
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119998785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570052"
 ---
 # <a name="common-infrastructure"></a>Infraestructura común
 
@@ -18,10 +18,10 @@ Windows ofrece dos especificaciones de API para la accesibilidad de la interfaz 
 ## <a name="in-this-section"></a>En esta sección
 
 -   [WinEvents](winevents-infrastructure.md)
--   [El mensaje \_ GETOBJECT de WM](the-wm-getobject-message.md)
+-   [Mensaje \_ GETOBJECT de WM](the-wm-getobject-message.md)
 -   [Anotación dinámica](dynamic-annotation-common.md)
--   [Interfaz IAccessibleEx](iaccessibleex.md)
--   [Accesibilidad de ActiveX control sin ventanas](windowless-activex-control-accessibility.md)
+-   [La interfaz IAccessibleEx](iaccessibleex.md)
+-   [Accesibilidad del control ActiveX sin ventanas](windowless-activex-control-accessibility.md)
 
  
 

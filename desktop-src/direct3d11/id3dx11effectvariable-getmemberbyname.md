@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 84aed91fd3bb2b735de08a002f924bab1bcc8f5f279a4a6047de2b7b73cd7844
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9851a2f74502a79b5cc85c494e468c4a346798f0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117734257"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569996"
 ---
 # <a name="id3dx11effectvariablegetmemberbyname-method"></a>Método ID3DX11EffectVariable::GetMemberByName
 
@@ -58,7 +58,7 @@ Tipo: **[ **ID3DX11EffectVariable**](id3dx11effectvariable.md)\***
 
 Puntero a [**id3DX11EffectVariable**](id3dx11effectvariable.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la variable de efecto es una estructura, use este método para buscar un miembro por nombre.
 

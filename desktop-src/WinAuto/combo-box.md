@@ -4,12 +4,12 @@ description: Un cuadro combinado es un cuadro de lista combinado con un control 
 ms.assetid: 3fb2c0b0-507f-4520-845b-b3fbfd9e7b60
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea3a8d26fa5b8cb264c06e7aa64c672e0a80e8ada7e90a152b3b941ea207cade
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7ce42bb3b0316b0fb2668fed23564b8f904fc793
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120071845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570056"
 ---
 # <a name="combo-box-msaa-ui-element-reference"></a>Cuadro combinado (Referencia del elemento de la interfaz de usuario de MSAA)
 
@@ -59,14 +59,14 @@ Los cuadros combinados admiten las [**siguientes propiedades IAccessible:**](/wi
 
      
 
--   [**get \_ accDefaultAction:**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accdefaultaction)en la tabla siguiente se muestra **la propiedad DefaultAction** para diferentes partes de un cuadro combinado. 
+-   [**get \_ accDefaultAction**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accdefaultaction): en la tabla siguiente se muestra **la propiedad DefaultAction** para diferentes partes de un cuadro combinado. 
 
     | Parte del cuadro combinado   | DefaultAction                                                  |
     |------------------|----------------------------------------------------------------|
-    | Ventana cuadro combinado | Ninguno                                                           |
-    | Edit (control)     | Ninguno                                                           |
+    | Ventana cuadro combinado | None                                                           |
+    | Edit (control)     | None                                                           |
     | Flecha desplegable  | "Abrir" o "Cerrar" en función del estado de la lista desplegable |
-    | Cuadro de lista         | Ninguno                                                           |
+    | Cuadro de lista         | None                                                           |
     | Elemento de lista        | "Doble clic"                                                 |
 
     
@@ -82,10 +82,10 @@ Los cuadros combinados admiten las [**siguientes propiedades IAccessible:**](/wi
     | Parte del cuadro combinado   | KeyboardShortcut               |
     |------------------|--------------------------------|
     | Ventana cuadro combinado | Clave de acceso de la etiqueta asociada |
-    | Edit (control)     | Ninguno                           |
+    | Edit (control)     | None                           |
     | Flecha desplegable  | "Alt+Flecha abajo"               |
-    | Cuadro de lista         | Ninguno                           |
-    | Elemento de lista        | Ninguno                           |
+    | Cuadro de lista         | None                           |
+    | Elemento de lista        | None                           |
 
     
 
@@ -93,7 +93,7 @@ Los cuadros combinados admiten las [**siguientes propiedades IAccessible:**](/wi
 
     La clave de acceso de un cuadro combinado es el carácter subrayado en el texto de un control de texto estático asociado que etiqueta el cuadro combinado. Por ejemplo, en un cuadro de diálogo Estándar Abrir que abre archivos, como en Microsoft WordPad, el cuadro combinado con la etiqueta "Files of type:" (Archivos de tipo:) tiene **keyboardShortcut** "Alt+t".
 
--   [**get \_ accName**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname): en la tabla siguiente se muestra **la propiedad Name** para las distintas partes de un cuadro combinado. 
+-   [**get \_ accName:**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname)en la tabla siguiente se muestra **la propiedad Name** para las distintas partes de un cuadro combinado. 
 
     | Parte del cuadro combinado   | Nombre                                                           |
     |------------------|----------------------------------------------------------------|
@@ -107,7 +107,7 @@ Los cuadros combinados admiten las [**siguientes propiedades IAccessible:**](/wi
 
      
 
-    La **propiedad Name** de un cuadro combinado, su control de edición secundario y su cuadro de lista secundario es el texto de un control de texto estático asociado que etiqueta el cuadro combinado. Por ejemplo, en un cuadro de diálogo Estándar Abrir que  abre archivos, como en WordPad, las propiedades Nombre de los dos cuadros combinados son "Buscar en:" y "Archivos de tipo:".
+    La **propiedad Name** de un cuadro combinado, su control de edición secundario y su cuadro de lista secundario es el texto de un control de texto estático asociado que etiqueta el cuadro combinado. Por ejemplo, en un cuadro de diálogo Estándar Abrir que  abre archivos, como en WordPad, las propiedades Nombre de los dos cuadros combinados son "Buscar en: " y "Archivos de tipo:".
 
 -   [**get \_ accParent:**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent)en la tabla siguiente se muestra el valor primario de las distintas partes de un cuadro combinado. 
 
@@ -154,13 +154,13 @@ Los cuadros combinados admiten las [**siguientes propiedades IAccessible:**](/wi
 
 -   [**get \_ accValue :**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accvalue)en la tabla siguiente se muestra la propiedad **Value** para diferentes partes de un cuadro combinado. 
 
-    | Elemento de cuadro combinado   | Valor                                |
+    | Elemento de cuadro combinado   | Value                                |
     |------------------|--------------------------------------|
     | Ventana cuadro combinado | Texto del elemento de lista seleccionado actualmente |
     | Edit (control)     | Texto del elemento de lista seleccionado actualmente |
-    | Flecha de lista desplegable  | Ninguno                                 |
-    | Cuadro de lista         | Ninguno                                 |
-    | Elemento de lista        | Ninguno                                 |
+    | Flecha de lista desplegable  | None                                 |
+    | Cuadro de lista         | None                                 |
+    | Elemento de lista        | None                                 |
 
     
 

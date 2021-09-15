@@ -4,12 +4,12 @@ description: WinINet permite a las aplicaciones navegar y manipular directorios 
 ms.assetid: 23763672-765f-4bbc-95c9-c28775e91f3d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70942fea5865fa96c9ee81ab996238e3f382471a701ac44969d1ff8797c8780d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8310c2b83b81fc18b84d39153ed3dc7afda0df5a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118113983"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570044"
 ---
 # <a name="ftp-sessions"></a>Sesiones ftp
 
@@ -29,7 +29,7 @@ La enumeración de directorios se realiza mediante [**las funciones FtpFindFirst
 
 Use la [**función FtpCreateDirectory**](/windows/desktop/api/Wininet/nf-wininet-ftpcreatedirectorya) para crear directorios. Esta función usa el identificador de sesión creado por [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) y crea el directorio especificado por la cadena que se pasa a la función. La cadena puede contener un nombre de directorio relativo al directorio actual o una ruta de acceso de directorio completa.
 
-Para cambiar el nombre de archivos o directorios, la aplicación puede llamar a [**FtpRenameFile**](/windows/desktop/api/Wininet/nf-wininet-ftprenamefilea). Esta función reemplaza el nombre original por el nuevo nombre pasado a la función. El nombre del archivo o directorio puede ser relativo al directorio actual o a un nombre completo.
+Para cambiar el nombre de archivos o directorios, la aplicación puede llamar a [**FtpRenameFile**](/windows/desktop/api/Wininet/nf-wininet-ftprenamefilea). Esta función reemplaza el nombre original por el nuevo nombre pasado a la función. El nombre del archivo o directorio puede ser relativo al directorio actual o un nombre completo.
 
 Para cargar o colocar archivos en un servidor FTP, la aplicación puede usar [**FtpPutFile**](/windows/desktop/api/Wininet/nf-wininet-ftpputfilea) o [**FtpOpenFile**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea) (junto con [**InternetWriteFile**](/windows/desktop/api/Wininet/nf-wininet-internetwritefile)). [**FtpPutFile se**](/windows/desktop/api/Wininet/nf-wininet-ftpputfilea) puede usar si el archivo ya existe localmente, mientras que [**FtpOpenFile**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea) e [**InternetWriteFile**](/windows/desktop/api/Wininet/nf-wininet-internetwritefile) se pueden usar si es necesario escribir datos en un archivo en el servidor FTP.
 
@@ -39,7 +39,7 @@ Elimine los archivos de un servidor FTP mediante la [**función FtpDeleteFile.**
 
 ## <a name="ftp-function-handles"></a>Identificadores de función FTP
 
-Para funcionar correctamente, las funciones FTP requieren ciertos tipos de [**identificadores HINTERNET.**](appendix-a-hinternet-handles.md) Estos identificadores deben crearse en un orden específico, empezando por el identificador raíz creado por [**InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena). [**InternetConnect puede**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) crear un identificador de sesión FTP.
+Para funcionar correctamente, las funciones FTP requieren ciertos tipos de [**identificadores HINTERNET.**](appendix-a-hinternet-handles.md) Estos identificadores deben crearse en un orden específico, empezando por el identificador raíz creado [**por InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena). [**InternetConnect puede**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) crear un identificador de sesión FTP.
 
 En el diagrama siguiente se muestran las funciones que dependen del identificador de sesión FTP devuelto [**por InternetConnect.**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) Los cuadros sombreados representan funciones que devuelven identificadores [**HINTERNET,**](appendix-a-hinternet-handles.md) mientras que los cuadros sin formato representan funciones que usan el identificador HINTERNET creado por la función de la que dependen.
 
@@ -53,7 +53,7 @@ Para obtener más información, vea [HINTERNET Handles](appendix-a-hinternet-han
 
 ## <a name="using-the-wininet-functions-for-ftp-sessions"></a>Uso de las funciones de WinINet para sesiones FTP
 
-Las siguientes funciones se usan durante las sesiones FTP. Estos servidores proxy de CERN no reconocen estas funciones. Las aplicaciones que deben funcionar a través de servidores proxy CERN deben usar [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) y acceder directamente a los recursos. Para obtener más información sobre el acceso directo a los recursos, consulte [Acceso a direcciones URL directamente.](handling-uniform-resource-locators.md)
+Las siguientes funciones se usan durante las sesiones FTP. Estos servidores proxy de CERN no reconocen estas funciones. Las aplicaciones que deben funcionar a través de servidores proxy CERN deben usar [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) y acceder directamente a los recursos. Para obtener más información sobre el acceso directo a los recursos, consulte [Acceso directo a direcciones URL.](handling-uniform-resource-locators.md)
 
 
 
@@ -77,9 +77,9 @@ Las siguientes funciones se usan durante las sesiones FTP. Estos servidores prox
 
 ### <a name="starting-an-ftp-session"></a>Inicio de una sesión ftp
 
-La aplicación establece una sesión FTP llamando a [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) en un identificador creado por [**InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena). [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) necesita el nombre del servidor, el número de puerto, el nombre de usuario, la contraseña y el tipo de servicio (que deben establecerse en \_ FTP del SERVICIO DE \_ INTERNET). Para la semántica de FTP pasiva, la aplicación también debe establecer la [marca INTERNET \_ FLAG \_ PASSIVE.](api-flags.md)
+La aplicación establece una sesión FTP mediante una llamada a [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) en un identificador creado [**por InternetOpen**](/windows/desktop/api/Wininet/nf-wininet-internetopena). [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) necesita el nombre del servidor, el número de puerto, el nombre de usuario, la contraseña y el tipo de servicio (que deben establecerse en \_ FTP del SERVICIO DE \_ INTERNET). Para la semántica de FTP pasiva, la aplicación también debe establecer la [marca INTERNET \_ FLAG \_ PASSIVE.](api-flags.md)
 
-Los valores PUERTO FTP PREDETERMINADO de INTERNET e INTERNET NÚMERO DE PUERTO NO VÁLIDO \_ se pueden usar para el número de \_ \_ \_ \_ \_ puerto. INTERNET \_ DEFAULT FTP PORT usa el puerto FTP \_ \_ predeterminado, pero el tipo de servicio todavía debe establecerse. INTERNET \_ INVALID PORT NUMBER usa el valor predeterminado para el tipo de servicio \_ \_ indicado.
+Los valores PUERTO FTP PREDETERMINADO de INTERNET e INTERNET NÚMERO DE PUERTO NO VÁLIDO se \_ pueden usar para el número de \_ \_ \_ \_ \_ puerto. INTERNET \_ DEFAULT FTP PORT usa el puerto FTP \_ \_ predeterminado, pero el tipo de servicio todavía debe establecerse. INTERNET \_ INVALID PORT NUMBER usa el valor predeterminado para el tipo de servicio \_ \_ indicado.
 
 Los valores del nombre de usuario y la contraseña se pueden establecer en **NULL.** Si ambos valores se establecen en **NULL,** [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) usa "anonymous" para el nombre de usuario y la dirección de correo electrónico del usuario para la contraseña. Si solo la contraseña se establece en **NULL,** el nombre de usuario pasado a [**InternetConnect**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) se usa para el nombre de usuario y se usa una cadena vacía para la contraseña. Si ninguno de los valores **es NULL,** se usan el nombre de usuario y la contraseña [**dados a InternetConnect.**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta)
 
@@ -89,7 +89,7 @@ La enumeración de un directorio en un servidor FTP requiere la creación de un 
 
 Para determinar si el archivo recuperado por [**FtpFindFirstFile**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea) o [**InternetFindNextFile**](/windows/desktop/api/Wininet/nf-wininet-internetfindnextfilea) es un directorio, compruebe el **miembro dwFileAttributes** de la estructura FIND DATA de [**WIN32 \_ \_**](/windows/desktop/api/minwinbase/ns-minwinbase-win32_find_dataa) para ver si es igual a FILE \_ ATTRIBUTE \_ DIRECTORY.
 
-Si la aplicación realiza cambios en el servidor FTP o si el servidor FTP cambia con frecuencia, las marcas [INTERNET FLAG NO CACHE \_ \_ \_ \_ WRITE](api-flags.md) y [INTERNET FLAG \_ \_ RELOAD](api-flags.md) deben establecerse en [**FtpFindFirstFile**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea). Estas marcas garantizan que la información del directorio que se recupera del servidor FTP es actual.
+Si la aplicación realiza cambios en el servidor FTP o si el servidor FTP cambia con frecuencia, las marcas [INTERNET FLAG NO CACHE \_ \_ \_ \_ WRITE](api-flags.md) y [INTERNET FLAG \_ \_ RELOAD](api-flags.md) deben establecerse en [**FtpFindFirstFile.**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea) Estas marcas garantizan que la información del directorio que se recupera del servidor FTP es actual.
 
 Una vez que la aplicación completa la enumeración de directorios, la aplicación debe realizar una llamada a [**InternetCloseHandle**](/windows/desktop/api/Wininet/nf-wininet-internetclosehandle) en el identificador creado por [**FtpFindFirstFile**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea). Hasta que se cierre ese identificador, la aplicación no puede volver a llamar a [**FtpFindFirstFile en**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea) el identificador de sesión creado [**por InternetConnect.**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) Si se realiza una llamada a [**FtpFindFirstFile**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea) en el mismo identificador de sesión antes de que se cierre la llamada anterior a la misma función, se produce un error en la función y devuelve [ERROR FTP TRANSFER IN \_ \_ \_ \_ PROGRESS](wininet-errors.md).
 
@@ -181,7 +181,7 @@ Las [**funciones FtpGetCurrentDirectory**](/windows/desktop/api/Wininet/nf-winin
 
 [**FtpGetCurrentDirectory devuelve**](/windows/desktop/api/Wininet/nf-wininet-ftpgetcurrentdirectorya) el directorio actual de la aplicación en el servidor FTP. Se incluye la ruta de acceso del directorio raíz en el servidor FTP.
 
-[**FtpSetCurrentDirectory cambia**](/windows/desktop/api/Wininet/nf-wininet-ftpsetcurrentdirectorya) el directorio de trabajo en el servidor. La información de directorio que se pasa a [**FtpSetCurrentDirectory**](/windows/desktop/api/Wininet/nf-wininet-ftpsetcurrentdirectorya) puede ser un nombre de ruta de acceso parcial o completo en relación con el directorio actual. Por ejemplo, si la aplicación se encuentra actualmente en el directorio "public/info" y la ruta de acceso es "ftp/example", [**FtpSetCurrentDirectory**](/windows/desktop/api/Wininet/nf-wininet-ftpsetcurrentdirectorya) cambia el directorio actual a "public/info/ftp/example".
+[**FtpSetCurrentDirectory cambia**](/windows/desktop/api/Wininet/nf-wininet-ftpsetcurrentdirectorya) el directorio de trabajo en el servidor. La información de directorio que se pasa a [**FtpSetCurrentDirectory**](/windows/desktop/api/Wininet/nf-wininet-ftpsetcurrentdirectorya) puede ser un nombre de ruta de acceso parcial o completo en relación con el directorio actual. Por ejemplo, si la aplicación está actualmente en el directorio "public/info" y la ruta de acceso es "ftp/example", [**FtpSetCurrentDirectory**](/windows/desktop/api/Wininet/nf-wininet-ftpsetcurrentdirectorya) cambia el directorio actual a "public/info/ftp/example".
 
 En el ejemplo siguiente se usa el identificador de sesión de FTP hConnection, devuelto por [**InternetConnect.**](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) El nuevo nombre de directorio se toma del cuadro de edición del cuadro de diálogo primario cuyo IDC se pasa en el *parámetro nDirNameId.* Antes de realizar el cambio de directorio, la función recupera el directorio actual y lo almacena en el mismo cuadro de edición. El código de configuración de la función DisplayFtpDir a la que se llama al final se muestra anteriormente.
 
@@ -347,7 +347,7 @@ BOOL WINAPI RemoveFtpDir( HWND hDlg, HINTERNET hConnection,
 Hay tres métodos para recuperar archivos de un servidor FTP:
 
 -   Use [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) e [**InternetReadFile.**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile)
--   Use [**FtpOpenFile**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea) e [**InternetReadFile.**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile)
+-   Use [**FtpOpenFile**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea) e [**InternetReadFile**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile).
 -   Use [**FtpGetFile**](/windows/desktop/api/Wininet/nf-wininet-ftpgetfilea).
 
 Para obtener más información sobre el uso [**de la función InternetReadFile,**](/windows/desktop/api/Wininet/nf-wininet-internetreadfile) vea [Leer archivos](common-functions.md).
@@ -358,7 +358,7 @@ Si la aplicación ha establecido un identificador de sesión FTP para el servido
 
 Si la aplicación no necesita un control estricto sobre la descarga, la aplicación puede usar [**FtpGetFile**](/windows/desktop/api/Wininet/nf-wininet-ftpgetfilea) con el identificador de sesión FTP, el nombre de archivo remoto y el nombre de archivo local para recuperar el archivo. [**FtpGetFile realiza**](/windows/desktop/api/Wininet/nf-wininet-ftpgetfilea) toda la contabilidad y la sobrecarga asociadas a la lectura de un archivo desde un servidor FTP y su almacenamiento local.
 
-En el ejemplo siguiente se recupera un archivo de un servidor FTP y se guarda localmente. El nombre del archivo en el servidor FTP se toma del cuadro de edición del cuadro de diálogo primario cuyo IDC se pasa en el parámetro *nFtpFileNameId* y el nombre local con el que se guarda el archivo se toma del cuadro de edición cuyo IDC se pasa en el parámetro *nLocalFileNameId.* InternetConnect creó el [](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) identificador *hConnection* después de establecer una sesión FTP.
+En el ejemplo siguiente se recupera un archivo de un servidor FTP y se guarda localmente. El nombre del archivo en el servidor FTP se toma del cuadro de edición del cuadro de diálogo primario cuyo IDC se pasa en el parámetro *nFtpFileNameId* y el nombre local con el que se guarda el archivo se toma del cuadro de edición cuyo IDC se pasa en el *parámetro nLocalFileNameId.* InternetConnect creó el [](/windows/desktop/api/Wininet/nf-wininet-internetconnecta) identificador *hConnection* después de establecer una sesión FTP.
 
 
 ```C++
@@ -560,7 +560,7 @@ BOOL WINAPI RenameFtpFile( HWND hDlg, HINTERNET hConnection,
 
 
 > [!Note]  
-> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones o servicios de servidor, use [Microsoft Windows HTTP Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para implementaciones de servidor o servicios, use [Microsoft Windows HTTP Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
  
 
