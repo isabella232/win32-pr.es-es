@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2193f5c82d7d370e1d050f01247e8a6dd851a5abb8a523d8bf0b002d856a5f2e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5945cbedca8e628829fa8283a576913a641f6378
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118084559"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580608"
 ---
 # <a name="apiretrievecolumnasguid-method-jet_sesid-jet_tableid-jet_columnid-retrievecolumngrbit"></a>Método Api.RetrieveColumnAsGuid (JET_SESID, JET_TABLEID, JET_COLUMNID, RetrieveColumnGrbit)
 
@@ -101,10 +101,10 @@ Los datos recuperados de la columna como guid. Null si la columna es NULL.
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
 [Miembros de api](./api-members.md)
 
-[Sobrecarga RetrieveColumnAsGuid](./api.retrievecolumnasguid-method.md)
+[Sobrecarga retrieveColumnAsGuid](./api.retrievecolumnasguid-method.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

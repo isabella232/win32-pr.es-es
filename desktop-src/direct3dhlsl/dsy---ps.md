@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 735b0d3ae75abe76e5075b3d22612ad0d56c7a21bab74f29010f47b54d161324
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c5f595d836ed8eb8525175ddb81e743cb7a04811
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119950545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573853"
 ---
 # <a name="dsy---ps"></a>dsy - ps
 
 Calcule la velocidad de cambio en la dirección Y del destino de representación.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -36,7 +36,7 @@ Donde:
 -   dst es un registro de destino.
 -   src es un registro de origen de entrada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 
@@ -50,7 +50,7 @@ Donde:
 
 La tasa de cambio calculada desde el registro de origen es una aproximación al contenido del mismo registro en píxeles adyacentes que ejecutan el sombreador de píxeles en el paso de bloqueo con el píxel actual.
 
-Las [instrucciones dsx](dsx---ps.md) And dsy calculan su resultado observando el contenido actual del registro de origen (por componente) para los distintos píxeles del área local que se ejecuta en el paso de bloqueo. La fórmula exacta usada para calcular el degradado varía en función del hardware, pero debe ser coherente con la forma en que el hardware realiza las mismas operaciones como parte del proceso de cálculo de nivel de detalle para el muestreo de textura.
+Las [instrucciones dsx](dsx---ps.md) And dsy calculan su resultado observando el contenido actual del registro de origen (por componente) para los distintos píxeles del área local que se ejecuta en el paso de bloqueo. La fórmula exacta utilizada para calcular el degradado varía en función del hardware, pero debe ser coherente con la forma en que el hardware realiza las mismas operaciones como parte del proceso de cálculo de nivel de detalle para el muestreo de textura.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -59,7 +59,7 @@ Las [instrucciones dsx](dsx---ps.md) And dsy calculan su resultado observando el
 [Instrucciones del sombreador de píxeles](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> <dt>
 
-[ldd- ps](texldd---ps.md)
+[texldd - ps](texldd---ps.md)
 </dt> </dl>
 
  

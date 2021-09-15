@@ -4,12 +4,12 @@ ms.assetid: e26910d3-b111-4a55-bc82-0db5e2fe1f34
 title: System.Devices.NotificationStore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3ddce014c10cf4851df9341892f8f63ce9ef0f9e8ab222ac0af0c49af8e4416
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5d0e2dd794619eca7a8ecc24f0d93898bb52a436
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119097534"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579733"
 ---
 # <a name="systemdevicesnotificationstore"></a>System.Devices.NotificationStore
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

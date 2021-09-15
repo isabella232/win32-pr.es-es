@@ -1,19 +1,19 @@
 ---
 title: UI_PKEY_FontProperties
-description: Identifica la propiedad \_ FontProperties de PKEY de la \_ interfaz de usuario.
+description: Identifica la propiedad \_ PKEY FontProperties de la interfaz de \_ usuario.
 ms.assetid: dc98ef5a-c591-46aa-a53d-0bb1e59de567
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bfdbd8740bc1b172b3e4b9b9d5d13fef7a920ea38b44cd33e1dbd3513250dac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 355b2df3b0a00c75c32e5aceadcc91231cfc8960
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119028603"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574357"
 ---
-# <a name="ui_pkey_fontproperties"></a>FontProperties de PKEY de interfaz \_ \_ de usuario
+# <a name="ui_pkey_fontproperties"></a>UI \_ PKEY \_ FontProperties
 
-Identifica la propiedad \_ FontProperties de PKEY de la \_ interfaz de usuario.
+Identifica la propiedad \_ PKEY FontProperties de la interfaz de \_ usuario.
 
 ```
 propertyDescription
@@ -25,9 +25,9 @@ propertyDescription
       type = IPropertyStore
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Ui \_ PKEY \_ FontProperties es un almacén de propiedades utilizado por una aplicación para consultar todas las propiedades de fuente.
+Ui \_ PKEY FontProperties es un almacén de propiedades utilizado por una \_ aplicación para consultar todas las propiedades de fuente.
 
 ## <a name="related-topics"></a>Temas relacionados
 

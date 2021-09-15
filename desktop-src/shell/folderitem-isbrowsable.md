@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 9c417b3a225ba7d9f39329fe274d99ee09c3a98353a9822d1047ea426610411c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d7c5f7a9cbde54647c299646bb6350c3be6aa2a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119093101"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579593"
 ---
 # <a name="folderitemisbrowsable-property"></a>Propiedad FolderItem.IsBrowsable
 
@@ -37,11 +37,11 @@ bIsBrowsable = FolderItem.IsBrowsable
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Valor **booleano** que recibe **true** si se puede examinar el elemento o **false** si no es así.
+Valor **booleano** que **recibe true** si el elemento se puede examinar o **false** si no es así.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa IsBrowsable** para determinar el estado que se puede Windows carpeta. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa IsBrowsable** para determinar el estado que se puede Windows carpeta. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -146,12 +146,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

@@ -1,15 +1,15 @@
 ---
-description: Busque vínculos a las secciones principal, recurso, sombreador, efecto y referencia de código de retorno en Gráficos de Direct3D 10.
+description: Busque vínculos a las secciones de referencia principal, recurso, sombreador, efecto y código de retorno en Gráficos de Direct3D 10.
 ms.assetid: fc96a980-83a0-406f-adfa-c82e3851a0a8
 title: Referencia de Direct3D (gráficos de Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f34801a5a12daf749d4310db9b30d8f90b7c4235f15b366e86049be9d8428cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 01a13a51a25f2ba55b54fe6f233721f301b5879a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119379745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581269"
 ---
 # <a name="direct3d-reference-direct3d-10-graphics"></a>Referencia de Direct3D (gráficos de Direct3D 10)
 

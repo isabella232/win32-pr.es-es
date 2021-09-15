@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: a5b4ba0504f5407a49c04f84dd2ea3e152ee4de7bd78948a69046f257437eb75
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a2e1ccfd074ff1f5287af22c5a8ebb3c6b3c661d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120006225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574261"
 ---
 # <a name="sms_message_types-enumeration"></a>Enumeración \_ SMS MESSAGE \_ TYPES
 
 El **tipo \_ de \_ enumeración SMS MESSAGE TYPES** describe el tipo de contenido de un mensaje de servicio de mensajes cortos (SMS).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -54,7 +54,7 @@ Mensaje binario.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El comando SMS SEND de [**WPD \_ usa esta \_ \_ enumeración.**](wpd-command-sms-send-command.md)
 
@@ -68,7 +68,7 @@ El comando SMS SEND de [**WPD \_ usa esta \_ \_ enumeración.**](wpd-command-sms
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

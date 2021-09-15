@@ -3,7 +3,7 @@ title: texCUBE (referencia hlsl)
 description: Muestrea una textura de cubo.
 ms.assetid: 77943eb9-86e8-4ae4-8975-8f925e084ce4
 keywords:
-- hlSL de texasCUBE
+- texCUBE HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e8648ab49db8b835bce5127b7e02c2d39783f15e3edf9b261d33712b00f10c6c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 524ed44028372eeabf176c30da8b3a31a8ee7988
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120068125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580621"
 ---
 # <a name="texcube-hlsl-reference"></a>texCUBE (referencia hlsl)
 
@@ -39,8 +39,8 @@ Muestrea una textura de cubo.
 
 | Elemento                                                   | Descripción                               |
 |--------------------------------------------------------|-------------------------------------------|
-| <span id="s"></span><span id="S"></span>*s*<br/> | \[en \] el estado sampler.<br/>      |
-| <span id="t"></span><span id="T"></span>*T*<br/> | \[en \] La coordenada de textura.<br/> |
+| <span id="s"></span><span id="S"></span>*s*<br/> | \[en \] el estado del muestreador.<br/>      |
+| <span id="t"></span><span id="T"></span>*T*<br/> | \[en \] la coordenada de textura.<br/> |
 
 
 
@@ -72,7 +72,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible               |
 |-----------------------------------------------------------|-------------------------|
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí (solo sombreador de píxeles) |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | sí (solo sombreador de píxeles) |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | sí (solo sombreador de píxeles) |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | sí (solo sombreador de píxeles) |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | sí (solo sombreador de píxeles) |

@@ -50,16 +50,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f2bd26a3dac291d78b101aa56f186d9b31f7a927b1eca3e29febc7773e3c0939
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d2c94dcf7d454c5f0ea11fcee0bd46655099dfd4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119042463"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580605"
 ---
 # <a name="columndefgrbit-enumeration"></a>ColumndefGrbit (enumeración)
 
-Opciones para la estructura JET_COLUMNDEF datos.
+Opciones para la JET_COLUMNDEF estructura.
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
@@ -81,7 +81,7 @@ Dim instance As ColumndefGrbit
 public enum ColumndefGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -94,7 +94,7 @@ public enum ColumndefGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>Ninguno</td>
+<td>None</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">

@@ -4,12 +4,12 @@ description: Declare la creación de particiones del teselador en una sección d
 ms.assetid: 6EA00C6B-A0DE-4CE4-8B52-1337CA92CA5E
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae40873db4042e568ae637634e75db6f4746985a316bf9c1e092e6b0925b51b2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9c6f6091301f95dd2364debec2bf54c0966c0e64
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120068505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573893"
 ---
 # <a name="dcl_tessellator_partitioning-sm5---asm"></a>Creación de \_ particiones de tessellator \_ dcl (sm5 - asm)
 
@@ -17,7 +17,7 @@ Declare la creación de particiones del teselador en una sección de declaració
 
 
 
-| dcl \_ tessellator \_ partitioning {partitioning \_ integer\| \_particionamiento pow2\|particionamiento \_ de fracciones \_ impares\| particionamiento \_ de \_ fracciones incluso} |
+| dcl \_ tessellator \_ partitioning {partitioning \_ integer\| particionamiento \_ pow2\|particionamiento \_ de fracciones \_ impares\| particionamiento \_ de \_ fracciones incluso} |
 |---------------------------------------------------------------------------------------------------------------------------------------------|
 
 
@@ -34,7 +34,7 @@ Declare la creación de particiones del teselador en una sección de declaració
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Desde el punto de vista del hardware, \_ pow2 se comporta como \_ un entero. Es el autor del sombreador HLSL o el código del compilador redondear TessFactors a potencias de 2.
 
@@ -58,12 +58,12 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 533f6934-dec8-455a-937c-d4e144be4335
 title: System.Photo.Brightness
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d28d49464b5d5d081869e514a92fe892a95c1f5a2608412513a2a18b46a51f62
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 131b7e2d51f402aa8da4d5e9b266fe1fc1b39b29
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119033353"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579677"
 ---
 # <a name="systemphotobrightness"></a>System.Photo.Brightness
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 
@@ -41,7 +41,7 @@ Consulte la especificación EXIF 2.2, anexo C, para obtener una comparación de 
 
 <dl> <dt>
 
-[Exchangeable Image File Format para cámaras digitales still: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format para cámaras de digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
 [propertyDescription](./propdesc-schema-propertydescription.md)

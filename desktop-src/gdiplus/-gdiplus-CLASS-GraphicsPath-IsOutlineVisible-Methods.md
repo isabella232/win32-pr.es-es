@@ -4,12 +4,12 @@ ms.assetid: 4a6b7b5d-a74d-43be-b35c-54c49d742f89
 title: Métodos GraphicsPath.IsOutlineVisible
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: cafc4189a07959e9be4cdc3dd36a89d58966a6bbbf185108a0f632de16049689
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bfc5bddb6ea4c8bd1c801820f7f2aed28d56c26b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119964455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581100"
 ---
 # <a name="graphicspathisoutlinevisible-methods"></a>Métodos GraphicsPath.IsOutlineVisible
 

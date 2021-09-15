@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 988ff17e3716f01308957b3f5f247759fb3f18f639f7b279a8f00d7f6f9e2189
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a386881c8416f4ea1881f3ccd68ee4291aa3fa84
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118116617"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579377"
 ---
 # <a name="iwmpcdromplaylist-property"></a>Propiedad IWMPCdrom::P laylist
 
 La **propiedad Lista** de reproducción obtiene una interfaz **IWMPPlaylist** que representa las pistas del CD actualmente en la unidad de CD o las entradas de título de nivel raíz de un DVD.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,7 +48,7 @@ Public ReadOnly Property Playlist As IWMPPlaylist
 
 Interfaz **WMPLib.IWMPPlaylist.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Normalmente, el contenido basado en DVD se organiza en títulos. Cada título contiene uno o varios capítulos. Cada DVD se ha escrito de forma diferente, por lo que la forma en que se usan los títulos y los capítulos es cosa del autor del contenido.
 
@@ -108,7 +108,7 @@ myText.Lines = trackList
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

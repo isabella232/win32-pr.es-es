@@ -1,19 +1,19 @@
 ---
-description: IDENTIFICADOR del producto del descriptor de dispositivo USB del dispositivo USB.
+description: Id. de producto del descriptor de dispositivo USB del dispositivo USB.
 ms.assetid: 74246827-8f32-4292-9ca1-ecbf7c08299e
-title: System. DeviceInterface. WinUsb. UsbProductId
+title: System.DeviceInterface.WinUsb.UsbProductId
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: c9608e56ba511c826383755b72ce4f46c8874a7e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105716015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574613"
 ---
-# <a name="systemdeviceinterfacewinusbusbproductid"></a>System. DeviceInterface. WinUsb. UsbProductId
+# <a name="systemdeviceinterfacewinusbusbproductid"></a>System.DeviceInterface.WinUsb.UsbProductId
 
-IDENTIFICADOR del producto del descriptor de dispositivo USB del dispositivo USB.
+Id. de producto del descriptor de dispositivo USB del dispositivo USB.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1
 
@@ -32,7 +32,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -47,7 +47,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -77,7 +77,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

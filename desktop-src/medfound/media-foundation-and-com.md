@@ -4,16 +4,16 @@ ms.assetid: d58ca46f-8f3a-4a12-b948-1ea7ab568788
 title: Media Foundation y COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb43fa29063da453a17275fca0b5c441e89f75aab8016a1abcf1702f5433fd71
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bdb7d05bac6a3f4deef2c004c6980ef1351c3823
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118974223"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579925"
 ---
 # <a name="media-foundation-and-com"></a>Media Foundation y COM
 
-Microsoft Media Foundation usa una combinación de construcciones COM, pero no es una API totalmente basada en COM. En este tema se describe la interacción entre COM y Media Foundation. También define algunos procedimientos recomendados para desarrollar Media Foundation componentes de complemento. Seguir estos procedimientos puede ayudarle a evitar algunos errores de programación comunes pero sutiles.
+Microsoft Media Foundation usa una combinación de construcciones COM, pero no es una API totalmente basada en COM. En este tema se describe la interacción entre COM y Media Foundation. También define algunos procedimientos recomendados para desarrollar Media Foundation de complementos. Seguir estos procedimientos puede ayudarle a evitar algunos errores de programación comunes pero sutiles.
 
 -   [Procedimientos recomendados para aplicaciones](#best-practices-for-applications)
 -   [Procedimientos recomendados para Media Foundation componentes](#best-practices-for-media-foundation-components)
@@ -24,7 +24,7 @@ Microsoft Media Foundation usa una combinación de construcciones COM, pero no e
 
 En Media Foundation, las colas de trabajo controlan el procesamiento asincrónico y las devoluciones [de llamada.](work-queues.md) Las colas de trabajo siempre tienen subprocesos de apartamento multiproceso (MTA), por lo que una aplicación tendrá una implementación más sencilla si también se ejecuta en un subproceso MTA. Por lo tanto, se recomienda llamar a [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex) con la **marca COINIT \_ MULTITHREADED.**
 
-Media Foundation serializa objetos de apartamento de un solo subproceso (STA) para los subprocesos de cola de trabajo. Tampoco garantiza que se mantengan los invariables de STA. Por lo tanto, una aplicación STA debe tener cuidado de no pasar objetos STA ni servidores proxy a Media Foundation API. Los objetos que son solo STA no se admiten en Media Foundation.
+Media Foundation serializa objetos de apartamento de un solo subproceso (STA) para los subprocesos de cola de trabajo. Tampoco garantiza que se mantengan los invariables de STA. Por lo tanto, una aplicación STA debe tener cuidado de no pasar objetos STA o servidores proxy a Media Foundation API. Los objetos que son solo STA no se admiten en Media Foundation.
 
 Si tiene un proxy STA a un objeto MTA o de subproceso libre, el objeto se puede serializar a un proxy MTA mediante una devolución de llamada de cola de trabajo. La [**función CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) puede devolver un puntero sin formato o un proxy STA, en función del modelo de objetos definido en el Registro para ese CLSID. Si se devuelve un proxy STA, no debe pasar el puntero a una MEDIA FOUNDATION API.
 
@@ -136,7 +136,7 @@ Para obtener más información sobre la tabla de interfaz global, vea [**IGlobal
 Si usa un Media Foundation en proceso, los objetos devueltos desde Media Foundation métodos y funciones son punteros directos al objeto. En el caso de Media Foundation proceso, estos objetos pueden ser servidores proxy MTA y se deben serializar en un subproceso STA si es necesario allí. De forma similar, los objetos obtenidos dentro de una devolución de llamada (por ejemplo, una topología del evento [MESessionTopologyStatus)](mesessiontopologystatus.md) son punteros directos cuando Media Foundation se usa en proceso, pero son servidores proxy MTA cuando Media Foundation se usa entre procesos.
 
 > [!Note]  
-> El escenario más común para usar Media Foundation entre procesos es con la [ruta de acceso](protected-media-path.md) multimedia protegida (PMP). Sin embargo, estos comentarios se aplican a cualquier situación en la que Media Foundation API se usan a través de RPC.
+> El escenario más común para usar Media Foundation entre procesos es con la [ruta de](protected-media-path.md) acceso multimedia protegida (PMP). Sin embargo, estos comentarios se aplican a cualquier situación en la que Media Foundation API se usan a través de RPC.
 
  
 
@@ -144,9 +144,9 @@ Todas las implementaciones de [**IMFAsyncCallback**](/windows/desktop/api/mfobje
 
 ## <a name="best-practices-for-media-foundation-components"></a>Procedimientos recomendados para Media Foundation componentes
 
-Hay dos categorías de objetos Media Foundation que deben preocuparse por COM. Algunos componentes, como transformaciones o controladores de flujo de bytes, son objetos COM completos creados por CLSID. Estos objetos deben seguir las reglas para los alojamientos COM, tanto en proceso como entre procesos Media Foundation. Otros Media Foundation componentes no son objetos COM completos, pero necesitan servidores proxy COM para la reproducción entre procesos. Los objetos de esta categoría incluyen orígenes multimedia y objeto de activación. Estos objetos pueden pasar por alto los problemas de apartamento si solo se usarán para los objetos en Media Foundation.
+Hay dos categorías de objetos Media Foundation que deben preocuparse por COM. Algunos componentes, como transformaciones o controladores de flujo de bytes, son objetos COM completos creados por CLSID. Estos objetos deben seguir las reglas para los alojamientos COM, tanto en proceso como entre procesos Media Foundation. Otros Media Foundation componentes no son objetos COM completos, pero sí necesitan servidores proxy COM para la reproducción entre procesos. Los objetos de esta categoría incluyen orígenes multimedia y objeto de activación. Estos objetos pueden pasar por alto los problemas de apartamento si solo se usarán para los objetos en Media Foundation.
 
-Aunque no todos los Media Foundation son objetos COM, todas las interfaces Media Foundation derivan de [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown). Por lo tanto, todos los Media Foundation deben implementar **IUnknown** según las especificaciones COM, incluidas las reglas para el recuento de referencias [**y QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)). Todos los objetos con recuento de referencias también deben asegurarse de [**que DllCanUnloadNow**](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow) no permitirá que el módulo se descargue mientras los objetos persisten.
+Aunque no todos los Media Foundation son objetos COM, todas las interfaces Media Foundation derivan de [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown). Por lo tanto, Media Foundation los objetos deben implementar **IUnknown** según las especificaciones COM, incluidas las reglas para el recuento de referencias y [**QueryInterface**](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)). Todos los objetos con recuento de referencias también deben asegurarse de [**que DllCanUnloadNow**](/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow) no permitirá que el módulo se descargue mientras los objetos persisten.
 
 Media Foundation componentes no pueden ser objetos STA. Muchos Media Foundation no necesitan ser objetos COM. Pero si lo están, no se pueden ejecutar en el STA. Todos Media Foundation componentes deben ser seguros para subprocesos. Algunos Media Foundation objetos deben ser de subproceso libre o neutros en el apartamento también. En la tabla siguiente se especifican los requisitos para las implementaciones de interfaz personalizada:
 
@@ -167,15 +167,15 @@ Media Foundation componentes no pueden ser objetos STA. Muchos Media Foundation 
 
  
 
-Puede haber requisitos adicionales en función de la implementación. Por ejemplo, si un receptor multimedia implementa otra interfaz que permite a la aplicación realizar llamadas de función directas al receptor, el receptor tendría que ser de subproceso libre o neutro, para que pudiera controlar las llamadas directas entre procesos. Cualquier objeto puede ser de subproceso libre; esta tabla especifica los requisitos mínimos.
+Puede haber requisitos adicionales en función de la implementación. Por ejemplo, si un receptor multimedia implementa otra interfaz que permite a la aplicación realizar llamadas de función directas al receptor, el receptor tendría que ser independiente o con subprocesos libres, de modo que pudiera controlar las llamadas directas entre procesos. Cualquier objeto puede ser de subproceso libre; esta tabla especifica los requisitos mínimos.
 
 La manera recomendada de implementar objetos sin subprocesos o neutros es agregando el serializador de subproceso libre. Para obtener más información, vea la documentación de MSDN [**sobre CoCreateFreeThreadedMarsthread**](/windows/win32/api/combaseapi/nf-combaseapi-cocreatefreethreadedmarshaler). De acuerdo con el requisito de no pasar objetos STA o servidores proxy a las API de Media Foundation, los objetos de subproceso libre no tienen que preocuparse de serializar punteros de entrada STA en componentes de subproceso libre.
 
-Los componentes que usan la cola de trabajo de función larga **(MFASYNC \_ CALLBACK \_ QUEUE LONG \_ \_ FUNCTION)** deben tener más cuidado. Los subprocesos de la cola de trabajo de función larga crean su propio STA. Los componentes que usan la cola de trabajo de función larga para las devoluciones de llamada deben evitar la creación de objetos COM en estos subprocesos y deben tener cuidado para serializar los servidores proxy al STA según sea necesario.
+Los componentes que usan la cola de trabajo de función larga **(MFASYNC \_ CALLBACK \_ QUEUE LONG \_ \_ FUNCTION)** deben tener más cuidado. Los subprocesos de la cola de trabajo de función larga crean su propio STA. Los componentes que usan la cola de trabajo de función larga para las devoluciones de llamada deben evitar la creación de objetos COM en estos subprocesos y deben tener cuidado de serializar los servidores proxy al STA según sea necesario.
 
 ## <a name="summary"></a>Resumen
 
-Las aplicaciones tendrán un tiempo más fácil si interactúan con Media Foundation desde un subproceso MTA, pero es posible con cierto cuidado usar Media Foundation desde un subproceso STA. Media Foundation no controla los componentes sta, y las aplicaciones deben tener cuidado de no pasar objetos STA a Media Foundation API. Algunos objetos tienen requisitos adicionales, especialmente los objetos que se ejecutan en una situación entre procesos. Seguir estas directrices le ayudará a evitar errores COM, interbloqueos y retrasos inesperados en el procesamiento de medios.
+Las aplicaciones tendrán un tiempo más fácil si interactúan con Media Foundation desde un subproceso MTA, pero es posible usar Media Foundation desde un subproceso STA. Media Foundation no controla los componentes sta, y las aplicaciones deben tener cuidado de no pasar objetos STA a Media Foundation API. Algunos objetos tienen requisitos adicionales, especialmente los objetos que se ejecutan en una situación entre procesos. Seguir estas directrices le ayudará a evitar errores COM, interbloqueos y retrasos inesperados en el procesamiento de medios.
 
 ## <a name="related-topics"></a>Temas relacionados
 

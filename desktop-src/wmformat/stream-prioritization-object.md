@@ -11,18 +11,18 @@ keywords:
 - streams,stream prioritization objects
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a0d8ce386dfa6d3eed64361d77326c515feadb2a6aa05eb697e402d120a55ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8cce4189f64e85cca4e0d649dbc00409cf9d7c06
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118699972"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574305"
 ---
 # <a name="stream-prioritization-object"></a>Objeto De priorización de secuencias
 
 Un objeto de priorización de secuencias se usa para especificar un orden de importancia para las secuencias de un perfil. Cuando la reproducción completa no es posible debido a limitaciones de velocidad de bits, las secuencias de prioridad más baja serán las primeras en descartarse.
 
-Los objetos de priorización de secuencias se pueden crear para los datos de priorización de secuencias existentes en un perfil o se pueden crear vacíos, listos para recibir nuevos datos. Los objetos de priorización de secuencias no pueden existir independientemente de un objeto de perfil. Para guardar el contenido de un objeto de priorización de secuencias, debe llamar a [**IWMProfile3::SetStreamPrioritization**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofile3-setstreamprioritization). Para crear un objeto de priorización de secuencias, use uno de los métodos siguientes.
+Los objetos de priorización de secuencias se pueden crear para los datos de priorización de flujo existentes en un perfil o se pueden crear vacíos, listos para recibir nuevos datos. Los objetos de priorización de secuencias no pueden existir independientemente de un objeto de perfil. Para guardar el contenido de un objeto de priorización de secuencias, debe llamar a [**IWMProfile3::SetStreamPrioritization**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofile3-setstreamprioritization). Para crear un objeto de priorización de secuencias, use uno de los métodos siguientes.
 
 
 
@@ -47,7 +47,7 @@ Ambos métodos de la tabla anterior establecen un puntero a una **interfaz IWMSt
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Solo puede existir una priorización de secuencias para un perfil determinado. Si crea una nueva priorización de secuencias para un perfil que ya contiene una priorización de secuencia, se eliminará la anterior.
 

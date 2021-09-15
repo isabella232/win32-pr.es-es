@@ -1,15 +1,15 @@
 ---
-description: 'MFPKEY_RESIZE_SRC_TOP propiedad : especifica el borde superior del rectángulo de origen, en píxeles.'
+description: 'MFPKEY_RESIZE_SRC_TOP propiedad: especifica el borde superior del rectángulo de origen, en píxeles.'
 ms.assetid: 12791b9f-4b00-4697-ae3c-8fc069568c82
 title: MFPKEY_RESIZE_SRC_TOP propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 61fecf9348dc3d0e55a0a88cc9cac3440ca98e24
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108092853"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579821"
 ---
 # <a name="mfpkey_resize_src_top-property"></a>Propiedad TOP de \_ SRC RESIZE \_ \_ de MFPKEY
 
@@ -31,15 +31,15 @@ VT \_ I4
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                             |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

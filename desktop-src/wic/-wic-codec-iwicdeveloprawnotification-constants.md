@@ -4,12 +4,12 @@ ms.assetid: 4e94b4f4-abd9-4395-87ec-a08e49a2cf88
 title: Constantes IWICDevelopRawNotificationCallback (Wincodec.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 885a99ea21ccafdb3961387013d0f6d9f466e48ffe542a3349af7e658b1b1786
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8c8bf5d7cb2f4ac0e6fddd1f2e9151c95143b0cc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119592465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574388"
 ---
 # <a name="iwicdeveloprawnotificationcallback-constants"></a>Constantes IWICDevelopRawNotificationCallback
 
@@ -42,13 +42,13 @@ Marcas usadas por [**IWICDevelopRawNotificationCallback**](/windows/desktop/api/
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows \[ aplicaciones de escritorio de Vista\]<br/>                   |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows \[ de escritorio de Vista\]<br/>                   |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Wincodec.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wincodec.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 93eecf10-308b-4bb4-92f9-fd32d6ecdb04
 title: Solucionador de origen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d90ac92cc9d30c5dfb46be60812fbe3156e0f26e396ed1bb9006752ae9db47bf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f6a844893b0348546d4fd174b0b24405812efcef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119034743"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574756"
 ---
 # <a name="source-resolver"></a>Solucionador de origen
 
@@ -26,7 +26,7 @@ Este tema contiene las siguientes secciones:
 
 -   [Usar el solucionador de origen](using-the-source-resolver.md)
 -   [Configuración de un origen multimedia](configuring-a-media-source.md)
--   [Controladores de esquema y Byte-Stream de esquema](scheme-handlers-and-byte-stream-handlers.md)
+-   [Controladores de esquema y Byte-Stream controladores de esquema](scheme-handlers-and-byte-stream-handlers.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

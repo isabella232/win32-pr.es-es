@@ -4,12 +4,12 @@ description: Esta sección contiene información sobre las funciones D3DCSX 11.
 ms.assetid: 426A132F-E398-473E-BD4E-3D1B4EC92E3F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0d1ff696aa81c1dd4b5cd845a1bc95ad06491ad28f76e3d2cfcc299af1710fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 83ff8dc3449c06a267ad238b357f23662145888c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118300744"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575276"
 ---
 # <a name="d3dcsx-11-functions"></a>Funciones D3DCSX 11
 

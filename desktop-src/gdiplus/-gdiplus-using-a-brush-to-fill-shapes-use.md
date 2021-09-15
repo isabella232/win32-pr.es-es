@@ -4,12 +4,12 @@ ms.assetid: 8ccf2c4a-6f99-465f-8adf-0f7fcd002f79
 title: Utilizar un pincel para rellenar formas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d1b700a8099ca5c5e4bf6506a6401f3cd3125d72de9fddf6e525e0afd37d6b7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b07e07ccf16b1bc728c190e5d1a7894899e35fa7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120114905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580468"
 ---
 # <a name="using-a-brush-to-fill-shapes"></a>Utilizar un pincel para rellenar formas
 

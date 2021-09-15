@@ -4,18 +4,18 @@ description: Comprenda el rol de Microsoft Infraestructura de gráficos de Direc
 ms.assetid: 24c0c81d-6b55-4116-868a-154addf0f04c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 600af9c5ca2d2ba8ce8a7b078c769e195c4a7898384d102a21be3aaaf2c936bd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 096e2be6f957d99bc6e5055f845c14448ecd647f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120068665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574041"
 ---
 # <a name="work-with-directx-device-resources"></a>Trabajar con recursos de dispositivo DirectX
 
 Comprenda el rol de Microsoft Infraestructura de gráficos de DirectX (DXGI) en el juego Windows Store DirectX. DXGI es un conjunto de API que se usan para configurar y administrar recursos de adaptador de gráficos y gráficos de bajo nivel. Sin él, no tendría ninguna manera de dibujar los gráficos del juego en una ventana.
 
-Piense en DXGI de esta manera: para acceder directamente a la GPU y administrar sus recursos, debe tener una manera de describirla en la aplicación. La información más importante que necesita sobre la GPU es el lugar donde dibujar píxeles para que pueda enviar esos píxeles a la pantalla. Normalmente, esto se denomina "búfer de reserva", una ubicación en la memoria de GPU en la que puede dibujar los píxeles y, a continuación, hacer que se "voltear" o "intercambiar" y enviar a la pantalla en una señal de actualización. DXGI le permite adquirir esa ubicación y los  medios para usar ese búfer (denominado cadena de intercambio porque es una cadena de búferes intercambiables, lo que permite varias estrategias de almacenamiento en búfer).
+Piense en DXGI de esta manera: para acceder directamente a la GPU y administrar sus recursos, debe tener una manera de describirla en la aplicación. La información más importante que necesita sobre la GPU es el lugar donde dibujar píxeles para que pueda enviar esos píxeles a la pantalla. Normalmente esto se denomina "búfer de reserva", una ubicación en la memoria de GPU donde puede dibujar los píxeles y, a continuación, hacer que se "voltear" o "intercambiar" y enviar a la pantalla en una señal de actualización. DXGI le permite adquirir esa ubicación y los  medios para usar ese búfer (denominado cadena de intercambio porque es una cadena de búferes intercambiables, lo que permite varias estrategias de almacenamiento en búfer).
 
 Para ello, necesita acceso para escribir en la cadena de intercambio y un identificador en la ventana que mostrará el búfer de reserva actual para la cadena de intercambio. También debe conectar los dos para asegurarse de que el sistema operativo actualizará la ventana con el contenido del búfer de reserva cuando solicite que lo haga.
 
@@ -152,7 +152,7 @@ LRESULT CALLBACK MainClass::StaticWindowProc(
 
 En este ejemplo simple solo se comprueban las condiciones de salida del programa: [**WM \_ CLOSE**](/windows/desktop/winmsg/wm-close), que se envía cuando se solicita que se cierre la ventana, y [**WM \_ DESTROY,**](/windows/desktop/winmsg/wm-destroy)que se envía después de que la ventana se quite realmente de la pantalla. Una aplicación completa de producción también debe controlar otros eventos de ventana: para obtener la lista completa de eventos de ventana, vea [Notificaciones de ventana.](/windows/desktop/winmsg/window-notifications)
 
-El propio bucle de programa principal debe confirmar Windows mensajes al permitir Windows la oportunidad de ejecutar el procedimiento de mensaje estático. Ayude a que el programa se ejecute de forma eficaz mediante la forzamiento del comportamiento: cada iteración debe elegir procesar nuevos mensajes Windows si están disponibles y, si no hay ningún mensaje en la cola, debe representar un nuevo marco. Este es un ejemplo muy sencillo:
+El propio bucle de programa principal debe confirmar Windows mensajes al permitir Windows la oportunidad de ejecutar el procedimiento de mensaje estático. Ayude a que el programa se ejecute de forma eficaz mediante la vocación del comportamiento: cada iteración debe elegir procesar nuevos mensajes de Windows si están disponibles y, si no hay ningún mensaje en la cola, debe representar un nuevo marco. Este es un ejemplo muy sencillo:
 
 
 ```C++
@@ -193,7 +193,7 @@ while (WM_QUIT != msg.message)
 
 El primer paso para usar Direct3D es adquirir una interfaz para el hardware de Direct3D (la GPU), representada como instancias de [**ID3D11Device**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11device2) e [**ID3D11DeviceContext.**](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) La primera es una representación virtual de los recursos de GPU y la segunda es una abstracción independiente del dispositivo de la canalización y el proceso de representación. Esta es una manera fácil de pensar en ello: **ID3D11Device** contiene los métodos gráficos a los que llama con poca frecuencia, normalmente antes de que se produzca cualquier representación, para adquirir y configurar el conjunto de recursos que necesita para empezar a dibujar píxeles. POR otro lado, **ID3D11DeviceContext** contiene los métodos a los que se llama a cada fotograma: cargar en búferes y vistas y otros recursos, cambiar el estado de fusión de salida y rasterizador, administrar sombreadores y dibujar los resultados de pasar esos recursos a través de los estados y sombreadores.
 
-Hay una parte muy importante de este proceso: establecer el nivel de característica. El nivel de característica indica a DirectX el nivel mínimo de hardware que admite la aplicación, con D3D FEATURE LEVEL 9 1 como el conjunto de características más bajo y \_ \_ \_ \_ D3D \_ FEATURE \_ LEVEL \_ \_ 11 1 como el máximo actual. Debe admitir 9 1 como mínimo si desea llegar a \_ la audiencia más amplia posible. Dedícate un tiempo a [](/previous-versions/windows/apps/hh994923(v=win.10)) leer los niveles de características de Direct3D y a evaluar por ti mismo los niveles mínimo y máximo de características que quieres que tu juego admita y para comprender las implicaciones de tu elección.
+Hay una parte muy importante de este proceso: establecer el nivel de característica. El nivel de característica indica a DirectX el nivel mínimo de hardware que admite la aplicación, con D3D FEATURE LEVEL 9 1 como el conjunto de características más bajo y \_ \_ \_ \_ D3D \_ FEATURE \_ LEVEL \_ 11 \_ 1 como el máximo actual. Debe admitir 9 1 como mínimo si desea llegar a \_ la audiencia más amplia posible. Dedícate un tiempo a [](/previous-versions/windows/apps/hh994923(v=win.10)) leer los niveles de características de Direct3D y a evaluar por ti mismo los niveles mínimo y máximo de características que quieres que tu juego admita y para comprender las implicaciones de tu elección.
 
 Obtenga referencias (punteros) al contexto de dispositivo y dispositivo de Direct3D y almacénelas como variables de nivel de clase en la instancia **DeviceResources** (como punteros inteligentes **ComPtr).** Use estas referencias siempre que necesite acceder al contexto de dispositivo o dispositivo de Direct3D.
 
@@ -259,7 +259,7 @@ En primer lugar, debe decir a DXGI qué valores usar para las propiedades de la 
 -   **SwapEffect:** esta opción se establece en DXGI \_ SWAP EFFECT FLIP \_ \_ \_ SEQUENTIAL.
 -   **Formato:** el formato DXGI \_ FORMAT \_ B8G8R8A8 UNORM especifica un color de 32 bits: 8 bits para cada uno de los tres canales de color RGB y 8 bits para el \_ canal alfa.
 -   **BufferCount:** esta opción se establece en 2 para un comportamiento tradicional de doble búfer para evitar la lágrima. Establezca el recuento de búferes en 3 si el contenido gráfico tarda más de un ciclo de actualización del monitor para representar un único fotograma (por ejemplo, a 60 Hz, el umbral es superior a 16 ms).
--   **SampleDesc:** este campo controla la multimuestreo. Establezca **Recuento en** 1 y **Calidad** en 0 para cadenas de intercambio de modelos de volteo. (Para usar multimuestreo con cadenas de intercambio de modelos de volteo, dibuje en un destino de representación multimuestreo independiente y, a continuación, resuelva ese destino en la cadena de intercambio justo antes de presentarlo. El código de ejemplo se proporciona [en Multisampling en Windows Store).](/previous-versions/windows/apps/dn458384(v=win.10))
+-   **SampleDesc:** este campo controla la multimuestreo. Establezca **Recuento en** 1 y **Calidad** en 0 para cadenas de intercambio de modelos de volteo. (Para usar el multimuestreo con cadenas de intercambio de modelos de volteo, dibuje en un destino de representación multimuestreo independiente y, a continuación, resuelva ese destino en la cadena de intercambio justo antes de presentarlo. El código de ejemplo se proporciona [en Multisampling en Windows Store).](/previous-versions/windows/apps/dn458384(v=win.10))
 
 Después de especificar una configuración para la cadena de intercambio, debe usar el mismo generador de DXGI que creó el dispositivo Direct3D (y el contexto del dispositivo) para crear la cadena de intercambio.
 
@@ -306,7 +306,7 @@ if (SUCCEEDED(hr))
 
 Si acaba de empezar, probablemente sea mejor usar la configuración que se muestra aquí. Ahora, si ya está familiarizado con las versiones anteriores de DirectX, podría preguntar: "¿Por qué no creamos el dispositivo y la cadena de intercambio al mismo tiempo, en lugar de volver a través de todas esas clases?". La respuesta es la eficacia: las cadenas de intercambio son recursos de dispositivo Direct3D y los recursos de dispositivo están asociados al dispositivo Direct3D concreto que los creó. Si crea un dispositivo con una nueva cadena de intercambio, tendrá que volver a crear todos los recursos del dispositivo mediante el nuevo dispositivo Direct3D. Por lo tanto, al crear la cadena de intercambio con la misma fábrica (como se muestra anteriormente), puede volver a crear la cadena de intercambio y seguir usando los recursos de dispositivo Direct3D que ya ha cargado.
 
-Ahora tiene una ventana del sistema operativo, una manera de acceder a la GPU y sus recursos y una cadena de intercambio para mostrar los resultados de la representación. Lo único que queda es conectar todo el proceso.
+Ahora tiene una ventana del sistema operativo, una manera de acceder a la GPU y sus recursos, y una cadena de intercambio para mostrar los resultados de la representación. Lo único que queda es conectar todo el proceso.
 
 ## <a name="create-a-render-target-for-drawing"></a>Creación de un destino de representación para dibujar
 

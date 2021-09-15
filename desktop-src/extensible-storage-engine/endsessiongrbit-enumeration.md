@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 25732e23ff7c20242a7688eaacc0a4836b946e6a363a6369c058ad2ada9c1bb8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c99b9ff6e048297c0297eaa7b7241b23972e1aa8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119454935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575181"
 ---
 # <a name="endsessiongrbit-enumeration"></a>EndSessionGrbit (enumeración)
 
@@ -57,7 +57,7 @@ Dim instance As EndSessionGrbit
 public enum EndSessionGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -77,7 +77,7 @@ public enum EndSessionGrbit
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

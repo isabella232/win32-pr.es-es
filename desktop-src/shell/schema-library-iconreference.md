@@ -10,17 +10,17 @@ api_location: ''
 topic_type:
 - kbArticle
 ms.openlocfilehash: db34a387200f3078da08747191242ae7414be410
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122884271"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579548"
 ---
 # <a name="iconreference-element-library-schema"></a>Elemento iconReference (esquema de biblioteca)
 
 El &lt; elemento iconReference &gt; especifica un icono personalizado para esta biblioteca. Este elemento es opcional y no tiene atributos ni elementos secundarios.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```
@@ -42,7 +42,7 @@ El &lt; elemento iconReference &gt; especifica un icono personalizado para esta 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La referencia de icono debe especificarse en un formulario adecuado para la [**función PathParseIconLocation.**](/windows/desktop/api/Shlwapi/nf-shlwapi-pathparseiconlocationa) Por ejemplo: `ModuleFileName,IconResourceIndex`.
 

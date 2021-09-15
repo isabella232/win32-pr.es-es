@@ -4,22 +4,22 @@ description: La clase Graphics proporciona varios métodos DrawImage, algunos de
 ms.assetid: cad64615-d8e6-4c03-a6c7-c98267a8f159
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d3684089ddab4ba963a79b80aafa67e94f94d988de5aa7d7d9f65ad31e48bcb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 18c70a7b4f7aa0374602326ab856a01bbadc0047
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118067555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580044"
 ---
 # <a name="cropping-and-scaling-gdi-images"></a>Recorte y escalado de GDI+ imágenes
 
-La [**clase Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) proporciona varios métodos **DrawImage,** algunos de los cuales tienen parámetros de rectángulo de origen y destino que puede usar para recortar y escalar imágenes.
+La [**clase Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) proporciona varios **métodos DrawImage,** algunos de los cuales tienen parámetros de rectángulo de origen y destino que puede usar para recortar y escalar imágenes.
 
-En el ejemplo siguiente se crea un [**objeto Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) a partir del archivo Apple.gif. El código dibuja toda la imagen de apple en su tamaño original. A continuación, el código llama al **método DrawImage** de un objeto [**Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) para dibujar una parte de la imagen de apple en un rectángulo de destino mayor que la imagen de apple original.
+En el ejemplo siguiente se construye un [**objeto Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) a partir del archivo Apple.gif. El código dibuja toda la imagen de apple en su tamaño original. A continuación, el código llama al **método DrawImage** de un [**objeto Graphics**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) para dibujar una parte de la imagen de apple en un rectángulo de destino mayor que la imagen de apple original.
 
-El **método DrawImage** determina qué parte de la manzana se va a dibujar observando el rectángulo de origen, especificado por los argumentos tercero, cuarto, quinto y sexto. En este caso, la manzana se recorta al 75 por ciento de su ancho y al 75 por ciento de su alto.
+El **método DrawImage** determina qué parte de la manzana se va a dibujar mirando el rectángulo de origen, especificado por los argumentos tercero, cuarto, quinto y sexto. En este caso, la manzana se recorta al 75 por ciento de su ancho y al 75 por ciento de su altura.
 
-El **método DrawImage** determina dónde dibujar la manzana recortada y el tamaño de la manzana recortada observando el rectángulo de destino, que se especifica mediante el segundo argumento. En este caso, el rectángulo de destino es un 30 por ciento más ancho y un 30 por ciento más alto que la imagen original.
+El **método DrawImage** determina dónde dibujar la manzana recortada y el tamaño de la manzana recortada al mirar el rectángulo de destino, que se especifica mediante el segundo argumento. En este caso, el rectángulo de destino es un 30 % más ancho y un 30 % más alto que la imagen original.
 
 
 ```
@@ -46,7 +46,7 @@ graphics.DrawImage(
 
 
 
-En la ilustración siguiente se muestra la manzana original y la manzana escalada y recortada.
+En la ilustración siguiente se muestra la manzana original y la manzana recortada y escalada.
 
 ![ilustración en la que se muestra una manzana y, a continuación, una parte ampliada de la manzana original](images/cropscale1.png)
 

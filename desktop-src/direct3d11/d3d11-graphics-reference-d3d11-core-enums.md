@@ -7,11 +7,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: f0daf03ca2114f67935e1eb89f34b31306e31fc0
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122623121"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575301"
 ---
 # <a name="direct3d-11-core-enumerations"></a>Enumeraciones básicas de Direct3D 11
 
@@ -49,7 +49,7 @@ Esta sección contiene información sobre las enumeraciones principales.
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_color_write_enable"><strong>D3D11_COLOR_WRITE_ENABLE</strong></a><br/></td>
-<td>Identifique qué componentes de cada píxel de un destino de representación se pueden escribir durante la combinación.<br/></td>
+<td>Identifique qué componentes de cada píxel de un destino de representación se pueden escribir durante la mezcla.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_comparison_func"><strong>D3D11_COMPARISON_FUNC</strong></a><br/></td>
@@ -57,7 +57,7 @@ Esta sección contiene información sobre las enumeraciones principales.
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11_3/ne-d3d11_3-d3d11_conservative_rasterization_mode"><strong>D3D11_CONSERVATIVE_RASTERIZATION_MODE</strong></a><br/></td>
-<td>Identifica si la rasterización conservadora está on o off.<br/></td>
+<td>Identifica si la rasterización conservadora está desactivada o no.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_conservative_rasterization_tier"><strong>D3D11_CONSERVATIVE_RASTERIZATION_TIER</strong></a><br/></td>
@@ -93,7 +93,7 @@ Esta enumeración es compatible con el entorno de ejecución de Direct3D 11.1, q
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_cull_mode"><strong>D3D11_CULL_MODE</strong></a><br/></td>
-<td>Indica que no se dibujan triángulos orientados a una dirección determinada.<br/></td>
+<td>Indica que los triángulos orientados a una dirección determinada no se dibujan.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_depth_write_mask"><strong>D3D11_DEPTH_WRITE_MASK</strong></a><br/></td>
@@ -129,11 +129,11 @@ Esta enumeración es compatible con el entorno de ejecución de Direct3D 11.1, q
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_format_support"><strong>D3D11_FORMAT_SUPPORT</strong></a><br/></td>
-<td>Qué recursos se admiten para un formato determinado y un dispositivo determinado (vea <a href="/windows/win32/api/D3D11/nf-d3d11-id3d11device-checkformatsupport"><strong>ID3D11Device::CheckFormatSupport</strong></a> e <a href="/windows/win32/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport"><strong>ID3D11Device::CheckFeatureSupport).</strong></a><br/></td>
+<td>Qué recursos se admiten para un determinado formato y dispositivo determinado (vea <a href="/windows/win32/api/D3D11/nf-d3d11-id3d11device-checkformatsupport"><strong>ID3D11Device::CheckFormatSupport</strong></a> e <a href="/windows/win32/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport"><strong>ID3D11Device::CheckFeatureSupport).</strong></a><br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_format_support2"><strong>D3D11_FORMAT_SUPPORT2</strong></a><br/></td>
-<td>Opciones de compatibilidad de recursos desordenados para un recurso de sombreador de proceso <a href="/windows/win32/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport"><strong>(vea ID3D11Device::CheckFeatureSupport</strong></a>). <br/></td>
+<td>Opciones de compatibilidad de recursos no ordenados para un recurso de sombreador de proceso <a href="/windows/win32/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport"><strong>(vea ID3D11Device::CheckFeatureSupport</strong></a>). <br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_input_classification"><strong>D3D11_INPUT_CLASSIFICATION</strong></a><br/></td>
@@ -145,15 +145,15 @@ Esta enumeración es compatible con el entorno de ejecución de Direct3D 11.1, q
 [!Note]<br />
 Esta enumeración es compatible con el entorno de ejecución de Direct3D 11.1, que está disponible en Windows 8 y sistemas operativos posteriores.
 </blockquote>
-<br/> Especifica las operaciones lógicas que se configuran para un destino de representación.<br/></td>
+<br/> Especifica las operaciones lógicas que se configurarán para un destino de representación.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/d3dcommon/ne-d3dcommon-d3d_primitive"><strong>D3D11_PRIMITIVE</strong></a><br/></td>
-<td>Indica cómo interpreta la canalización las primitivas de entrada de geometría o sombreador de casco. <br/></td>
+<td>Indica cómo la canalización interpreta las primitivas de entrada de geometría o sombreador de casco. <br/></td>
 </tr>
 <tr>
 <td><a href="/previous-versions/windows/desktop/legacy/ff476189(v=vs.85)"><strong>D3D11_PRIMITIVE_TOPOLOGY</strong></a><br/></td>
-<td>Cómo interpreta la canalización los datos de vértice enlazados a la fase de ensamblador de entrada. Estos valores de topología primitivos determinan cómo se representan los datos de vértices en la pantalla.<br/></td>
+<td>Cómo interpreta la canalización los datos de vértice enlazados a la fase de ensamblador de entrada. Estos valores de topología primitivos determinan cómo se representan los datos del vértice en la pantalla.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_query"><strong>D3D11_QUERY</strong></a><br/></td>
@@ -193,11 +193,11 @@ Esta enumeración es compatible con el entorno de ejecución de Direct3D 11.1, q
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_texturecube_face"><strong>D3D11_TEXTURECUBE_FACE</strong></a><br/></td>
-<td>Caras diferentes de una textura de cubo.<br/></td>
+<td>Las distintas caras de una textura de cubo.<br/></td>
 </tr>
 <tr>
 <td><a href="/windows/win32/api/D3D11/ne-d3d11-d3d11_tiled_resources_tier"><strong>D3D11_TILED_RESOURCES_TIER</strong></a><br/></td>
-<td>Indica el nivel de nivel en el que se admiten los recursos en mosaico.<br/></td>
+<td>Indica el nivel en el que se admiten los recursos en mosaico.<br/></td>
 </tr>
 </tbody>
 </table>

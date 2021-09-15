@@ -4,12 +4,12 @@ ms.assetid: 524283fb-d046-4f8c-a30f-4fe7ddb43174
 title: MF_MT_AUDIO_NUM_CHANNELS atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ede561fbfe178d4086d1d7f7232d831d5133d6b368c1205fa2e8c1280fbeba29
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 09020ef540b6a3b02eecc6a6d788c18d07358ce4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119955915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579889"
 ---
 # <a name="mf_mt_audio_num_channels-attribute"></a>Atributo MF \_ MT \_ AUDIO NUM \_ \_ CHANNELS
 
@@ -19,7 +19,7 @@ Número de canales de audio en un tipo de medio de audio.
 
 **UINT32**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo corresponde al miembro **nChannels** de la [estructura WAVEFORMATEX.](mf-mt-audio-prefer-waveformatex-attribute.md)
 
@@ -33,7 +33,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

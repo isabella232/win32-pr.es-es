@@ -4,18 +4,18 @@ description: Identifica el contexto de reconocimiento de una ventana.
 ms.assetid: BFD54A9F-642B-4A3A-BBB9-F3A80779251D
 ms.topic: article
 ms.date: 10/04/2018
-ms.openlocfilehash: 25e270f59af32b33fdb5ad3f511b693b3eebad71407d48b80a72aff5996edf14
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1663fad828a2fb29aa0d65ef58ae79616f64edcd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119727185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575001"
 ---
 # <a name="dpi_awareness_context-handle"></a>Identificador DE \_ CONTEXTO DE RECONOCIMIENTO DE \_ PPP
 
 Identifica el contexto de reconocimiento de una ventana.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 #define DPI_AWARENESS_CONTEXT_UNAWARE              ((DPI_AWARENESS_CONTEXT)-1)
@@ -27,25 +27,25 @@ Identifica el contexto de reconocimiento de una ventana.
 
 ## <a name="constants"></a>Constantes
 
-**CONTEXTO DE \_ RECONOCIMIENTO DE PPP NO \_ \_ CONSCIENTE**<dl> PPP no consciente. Esta ventana no escala para los cambios de PPP y siempre se supone que tiene un factor de escala del 100 % (96 PPP). El sistema lo escalará automáticamente en cualquier otra configuración de PPP.  
+**CONTEXTO DE \_ RECONOCIMIENTO DE PPP SIN \_ \_ RECONOCIMIENTO**<dl> PPP sin reconocimiento. Esta ventana no se escala para los cambios de PPP y siempre se supone que tiene un factor de escala del 100 % (96 PPP). El sistema lo escalará automáticamente en cualquier otra configuración de PPP.  
 </dl>
 
-**RECONOCIMIENTO DEL \_ SISTEMA DE CONTEXTO DE RECONOCIMIENTO DE \_ \_ \_ PPP**<dl> Compatible con PPP del sistema. Esta ventana no escala para los cambios de PPP. Consultará el valor de PPP una vez y usará ese valor durante la vigencia del proceso. Si cambia el valor de PPP, el proceso no se ajustará al nuevo valor de PPP. El sistema lo escalará o reducirá verticalmente automáticamente cuando cambie el valor de PPP desde el valor del sistema.  
+**RECONOCIMIENTO DEL \_ SISTEMA DE CONTEXTO DE RECONOCIMIENTO DE \_ \_ \_ PPP**<dl> Compatible con PPP del sistema. Esta ventana no se escala para los cambios de PPP. Consultará el valor de PPP una vez y usará ese valor durante la vigencia del proceso. Si cambia el valor de PPP, el proceso no se ajustará al nuevo valor de PPP. El sistema lo escalará o reducirá verticalmente automáticamente cuando cambie el valor de PPP desde el valor del sistema.  
 </dl>
 
 **CONTEXTO DE \_ RECONOCIMIENTO DE PPP POR MONITOR \_ \_ \_ \_ COMPATIBLE**<dl> Compatible con PPP por monitor. Esta ventana comprueba el valor de PPP cuando se crea y ajusta el factor de escala cada vez que cambia el valor de PPP. El sistema no escala automáticamente estos procesos.  
 </dl>
 
-**CONTEXTO DE \_ RECONOCIMIENTO DE PPP POR MONITOR COMPATIBLE \_ \_ \_ \_ \_ V2**<dl> También se conoce como **Per Monitor v2**. Un avance sobre el modo de reconocimiento de PPP por monitor original, que permite a las aplicaciones acceder a nuevos comportamientos de escalado relacionados con PPP por ventana de nivel superior.  
+**CONTEXTO DE \_ RECONOCIMIENTO DE PPP POR MONITOR COMPATIBLE CON \_ \_ \_ \_ \_ V2**<dl> También se conoce como **Por monitor v2.** Un avance sobre el modo de reconocimiento de PPP por monitor original, que permite a las aplicaciones acceder a nuevos comportamientos de escalado relacionados con PPP en cada ventana de nivel superior.  
 Per Monitor v2 estaba disponible en Creators Update de Windows 10 y no está disponible en versiones anteriores del sistema operativo.  
 Los comportamientos adicionales introducidos son los siguientes:
 
--   **Notificaciones de cambio de PPP de** ventana secundaria: en los contextos por monitor v2, se notifica a todo el árbol de ventana los cambios de PPP que se produzcan.
--   **Escalado del área que no es de** cliente: todas las ventanas tendrán automáticamente su área no cliente dibujada de forma confidencial con PPP. Las llamadas [**a EnableNonClientDpiScaling**](/windows/desktop/api/Winuser/nf-winuser-enablenonclientdpiscaling) no son necesarias.
--   **Escalado de menús Win32:** todos los menús NTUSER creados en contextos por monitor v2 se escalarán de forma por monitor.
--   **Escalado de diálogos:** los diálogos de Win32 creados en contextos por monitor v2 responderán automáticamente a los cambios de PPP.
+-   **Notificaciones de cambio de PPP de** la ventana secundaria: en contextos por monitor v2, se notifica a todo el árbol de ventana los cambios de PPP que se produzcan.
+-   **Escalado del área que no es** cliente: todas las ventanas tendrán automáticamente su área no cliente dibujada de forma confidencial con PPP. Las llamadas [**a EnableNonClientDpiScaling**](/windows/desktop/api/Winuser/nf-winuser-enablenonclientdpiscaling) no son necesarias.
+-   **Escalado de menús Win32:** todos los menús NTUSER creados en los contextos de Per Monitor v2 se escalarán de forma por monitor.
+-   **Escalado de diálogos:** los cuadros de diálogo win32 creados en contextos por monitor v2 responderán automáticamente a los cambios de PPP.
 -   **Escalado mejorado de controles comctl32:** varios controles comctl32 han mejorado el comportamiento de escalado de PPP en contextos por monitor v2.
--   **Comportamiento mejorado de los problemas:** los identificadores de UxTheme abiertos en el contexto de una ventana por monitor v2 funcionarán en términos de PPP asociados a esa ventana.
+-   **Comportamiento de la cuestión** mejorado: los identificadores de UxTheme abiertos en el contexto de una ventana por monitor v2 funcionarán en términos de ppp asociados a esa ventana.
 
   
 </dl>
@@ -54,7 +54,7 @@ Los comportamientos adicionales introducidos son los siguientes:
 
 PPP sin reconocimiento con una calidad mejorada del contenido basado en GDI. Este modo se comporta de forma similar a DPI_AWARENESS_CONTEXT_UNAWARE, pero también permite al sistema mejorar automáticamente la calidad de representación del texto y otras primitivas basadas en GDI cuando la ventana se muestra en un monitor de valores altos de PPP.
 
-Para obtener más información, [vea Improving the high-DPI experience in GDI-based Desktop apps](https://blogs.windows.com/buildingapps/2017/05/19/improving-high-dpi-experience-gdi-based-desktop-apps/#Uwv9gY1SvpbgQ4dK.97)(Mejora de la experiencia de valores altos de PPP en aplicaciones de escritorio basadas en GDI).
+Para obtener más información, consulte [Improving the high-PPP experience in GDI-based Desktop apps](https://blogs.windows.com/buildingapps/2017/05/19/improving-high-dpi-experience-gdi-based-desktop-apps/#Uwv9gY1SvpbgQ4dK.97)(Mejora de la experiencia de valores altos de PPP en aplicaciones de escritorio basadas en GDI).
 
 DPI_AWARENESS_CONTEXT_UNAWARE_GDISCALED se introdujo en la actualización de octubre de 2018 de Windows 10 (también conocida como versión 1809).
 
@@ -65,9 +65,9 @@ DPI_AWARENESS_CONTEXT_UNAWARE_GDISCALED se introdujo en la actualización de oct
 |----|-----------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1607 \[\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno <br/>  |
-| Header<br/>                   | <dl> <dt>windef.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>windef.h</dt> </dl> |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

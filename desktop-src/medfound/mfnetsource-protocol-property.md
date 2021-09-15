@@ -4,12 +4,12 @@ ms.assetid: 4de8b8ba-97d9-4269-a16c-1853dc02f674
 title: MFNETSOURCE_PROTOCOL propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ae15ce40e7c049552cbb0f4916f5f4ff70ef6e55746528ebe0083eee69b22a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b188eeb1f6669544291f4dca95db8a4a45a50d7b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118243327"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574873"
 ---
 # <a name="mfnetsource_protocol-property"></a>Propiedad MFNETSOURCE \_ PROTOCOL
 
@@ -31,7 +31,7 @@ VT \_ I4
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La constante **MFNETSOURCE \_ PROTOCOL define** el GUID de esta clave de propiedad. El identificador de propiedad (PID) es cero.
 
@@ -41,11 +41,11 @@ Esta propiedad es de solo lectura. Para recuperar esta propiedad, consulte el or
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

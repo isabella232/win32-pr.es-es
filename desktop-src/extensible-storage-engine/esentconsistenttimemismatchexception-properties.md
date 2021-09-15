@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101406
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: cef5ecbb24b75397ec6605ca3d02b4bc0308ea2abefd59e303bd6143b21da81c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c65d756dfaef85a1fcd6cfabd974fd32f3283fa8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120066375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575161"
 ---
 # <a name="esentconsistenttimemismatchexception-properties"></a>Propiedades de EsentConsistentTimeMismatchException
 
@@ -34,7 +34,7 @@ El [tipo EsentConsistentTimeMismatchException](./esentconsistenttimemismatchexce
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentConsistentTimeMismatchException](./esentconsistenttimemismatchexce
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

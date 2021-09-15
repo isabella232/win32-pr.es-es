@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a45b63fb60790e3bb657fdc49beff947a0835dbc683158ee7510722fd5a736d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1f0a6ffe3081955db79765d80278394eb89ab188
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120024975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573988"
 ---
-# <a name="d3dx_float2_to_r16g16_unorm-function"></a>Función \_ UNORM D3DX FLOAT2 \_ a \_ R16G16 \_
+# <a name="d3dx_float2_to_r16g16_unorm-function"></a>Función UNORM D3DX \_ FLOAT2 \_ a \_ R16G16 \_
 
 Empaqueta el XMFLOAT2 especificado de nuevo en un DXGI \_ FORMAT \_ R16G16 \_ UNORM.
 

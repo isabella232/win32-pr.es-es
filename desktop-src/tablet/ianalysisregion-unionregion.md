@@ -1,5 +1,5 @@
 ---
-description: Expande el área de esta región IAnalysisRegion al área creada por su unión con la región IAnalysisRegion especificada.
+description: Expande el área de esta región IAnalysisRegion al área creada por su unión con la IAnalysisRegion especificada.
 ms.assetid: cc3ec5c6-98ff-442e-a1e8-d1a57752ad56
 title: Método IAnalysisRegion::UnionRegion (IACom.h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 760296552dc13ac394d4554903d84f596faba14318db9af3145c79f156c736fb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 587986973c4ae4bebaeed3c031c746bc4f842c42
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118720012"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579481"
 ---
 # <a name="ianalysisregionunionregion-method"></a>IAnalysisRegion::UnionRegion (método)
 
@@ -50,7 +50,7 @@ HRESULT UnionRegion(
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si alguna de las áreas es infinita, la nueva área también es infinita.
 
@@ -58,16 +58,16 @@ Si alguna de las áreas es infinita, la nueva área también es infinita.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

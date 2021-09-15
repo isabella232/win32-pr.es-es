@@ -1,17 +1,17 @@
 ---
 description: D3DX proporciona las siguientes funciones de uso general.
 ms.assetid: 36db8e11-9cb0-4fa7-be40-4bf2eb8337ed
-title: Funciones de De uso general (gráficos de Direct3D 10)
+title: De uso general (gráficos de Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 0ce317cdfb688179819fe46107b237c86accc6f4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104539412"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581264"
 ---
-# <a name="general-purpose-functions-direct3d-10-graphics"></a>Funciones de De uso general (gráficos de Direct3D 10)
+# <a name="general-purpose-functions-direct3d-10-graphics"></a>De uso general (gráficos de Direct3D 10)
 
 D3DX proporciona las siguientes funciones de uso general.
 
@@ -62,10 +62,10 @@ D3DX proporciona las siguientes funciones de uso general.
 
 <dl> <dt>
 
-[Funciones de D3DX](d3d10-graphics-reference-d3dx10-functions.md)
+[Funciones D3DX](d3d10-graphics-reference-d3dx10-functions.md)
 </dt> <dt>
 
-[Funciones de De uso general](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[De uso general Functions](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

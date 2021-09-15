@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 632225dcad44324f88d8c126eb3f74d7779ff5ec698581514717dc1e0c54d3f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6fc64cbc65d30838db2105e0458d3553247f1ab1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118988635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575233"
 ---
 # <a name="d3dxcreaterendertosurface-function"></a>Función D3DXCreateRenderToSurface
 
@@ -126,7 +126,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

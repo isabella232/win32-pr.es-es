@@ -4,12 +4,12 @@ ms.assetid: 2eda6b4a-dc73-4999-9070-29cf78e13cde
 title: Tareas de eventos COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fe199076b1ee3b7442ec40848ef9c1189da8f452ee24f51c8e6a20d3bd20b5d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f95d016c8c79422a53969780cbb8d1ab85a4d12a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120029554"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581273"
 ---
 # <a name="com-events-tasks"></a>Tareas de eventos COM+
 

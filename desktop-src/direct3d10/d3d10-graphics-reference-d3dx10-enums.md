@@ -4,12 +4,12 @@ ms.assetid: 8836f350-9edd-4521-b7a3-3aa827394c57
 title: Enumeraciones D3DX (gráficos de Direct3D 10)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b306d3d0c4fad1e71186880f812bbd6de8f336169012acee328e6b36ee9dadf6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 59a34ae9c1b275376343ecab321ab9e7762c59fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119379615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581268"
 ---
 # <a name="d3dx-enumerations-direct3d-10-graphics"></a>Enumeraciones D3DX (gráficos de Direct3D 10)
 

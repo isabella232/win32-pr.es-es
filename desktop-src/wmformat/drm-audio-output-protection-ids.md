@@ -3,8 +3,8 @@ title: DRM_AUDIO_OUTPUT_PROTECTION_IDS estructura (Wmdrmsdk.h)
 description: La estructura DRM \_ AUDIO \_ OUTPUT PROTECTION \_ \_ IDS contiene una lista de identificadores de protección de salida de audio.
 ms.assetid: 21972b18-334b-4a4d-812d-21cbfaf7cc58
 keywords:
-- DRM_AUDIO_OUTPUT_PROTECTION_IDS structure windows Media Format
-- Estructura de windows Formato multimedia
+- DRM_AUDIO_OUTPUT_PROTECTION_IDS windows Media Format de estructura
+- estructura windows Formato multimedia
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e31589a229dcd5e32a0198cf7f3679846574bdb605e25a8df272b1793704b92
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5d3c7142f5f575413f72885aa60a0ccb826ecfab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119659015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574332"
 ---
-# <a name="drm_audio_output_protection_ids-structure"></a>Estructura DE \_ \_ IDENTIFICADORES DE \_ PROTECCIÓN DE SALIDA DE AUDIO \_ DRM
+# <a name="drm_audio_output_protection_ids-structure"></a>Estructura DE \_ \_ IDENTIFICADORES DE PROTECCIÓN DE SALIDA DE AUDIO \_ \_ DRM
 
 La **estructura DRM AUDIO OUTPUT PROTECTION \_ \_ \_ \_ IDS** contiene una lista de identificadores de protección de salida de audio.
 
@@ -38,7 +38,7 @@ typedef struct DRM_AUDIO_OUTPUT_PROTECTION_IDS {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -70,7 +70,7 @@ Ninguno.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

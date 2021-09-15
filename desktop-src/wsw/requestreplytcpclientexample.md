@@ -5,15 +5,15 @@ ms.assetid: 0d9b9581-3563-4fce-8790-af7ebb9e8175
 keywords:
 - RequestReplyTcpClientExample Native-Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 17d06e87007b15beb5a11052137a53b7f040894d017af323a480870427ab417a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bad7cbbe69ea6c59d00d262017c6f15d12ae2e7a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119026343"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574233"
 ---
 # <a name="requestreplytcpclientexample"></a>RequestReplyTcpClientExample
 

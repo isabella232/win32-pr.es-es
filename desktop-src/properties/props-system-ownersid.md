@@ -4,12 +4,12 @@ ms.assetid: 7b04d55a-6606-4e69-9c89-0575165328c7
 title: System.OwnerSID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 129f20dc5fcce8906ab58e8bb3d50410e33db2a868b96cfd7ab6d3a4e5bfb2e5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 007b558e451769aa29adc6e7ac792f267477f8e0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119716495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579692"
 ---
 # <a name="systemownersid"></a>System.OwnerSID
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

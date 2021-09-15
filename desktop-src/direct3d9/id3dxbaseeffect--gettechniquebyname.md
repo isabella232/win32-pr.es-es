@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 446c4625f6eee8c654991a9ed3685125e34d2de97553d328538deea0a7a4e116
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5827527bf5151b121958c3f5803ef8a7e74f8d60
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119121948"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580637"
 ---
 # <a name="id3dxbaseeffectgettechniquebyname-method"></a>Método ID3DXBaseEffect::GetTechniqueByName
 
@@ -53,7 +53,7 @@ Cadena que contiene el nombre de la técnica.
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Devuelve el identificador de la primera técnica que tiene el nombre especificado o **NULL** si no se encuentra el nombre. Vea [Identificadores (Direct3D 9).](handles.md)
+Devuelve el identificador de la primera técnica que tiene el nombre especificado o **NULL** si no se encontró el nombre. Vea [Identificadores (Direct3D 9).](handles.md)
 
 ## <a name="requirements"></a>Requisitos
 

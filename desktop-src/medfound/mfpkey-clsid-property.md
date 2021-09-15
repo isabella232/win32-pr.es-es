@@ -1,19 +1,19 @@
 ---
-description: Contiene el CLSID para una Media Foundation transformación (MFT).
+description: Contiene el CLSID de una Media Foundation transformación (MFT).
 ms.assetid: adb10fe8-760b-4aff-a582-254e11bb76af
 title: MFPKEY_CLSID propiedad (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7cb90d427de9c2df11e9bee538b2a7f1baf9ac1885624d6df54a41253abc27b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b1b1ab57ae17029b2b01823e84f607b5b21676b0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118242994"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580309"
 ---
 # <a name="mfpkey_clsid-property"></a>Propiedad CLSID de MFPKEY \_
 
-Contiene el CLSID para una Media Foundation transformación (MFT).
+Contiene el CLSID de una Media Foundation transformación (MFT).
 
 
 
@@ -31,7 +31,7 @@ VT \_ CLSID
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad es opcional y solo es informativo. Para obtener esta propiedad, consulte el MFT para la **interfaz IPropertyStore.**
 
@@ -39,15 +39,15 @@ Esta propiedad es opcional y solo es informativo. Para obtener esta propiedad, c
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

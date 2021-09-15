@@ -4,12 +4,12 @@ ms.assetid: 70f90c34-5f9b-4be5-85b9-6d2ccf9dde8c
 title: Elemento TitleInfo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04700aac0144aa06577adccc552c015af5be3702633150a36249637a3ed7985d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ae170700e8a82e145767336a2943d45bedec9eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118966734"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579409"
 ---
 # <a name="titleinfo-element"></a>Elemento TitleInfo
 

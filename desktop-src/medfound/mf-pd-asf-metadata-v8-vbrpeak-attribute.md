@@ -4,12 +4,12 @@ ms.assetid: a31f447d-b718-4f8d-b0d5-643497339557
 title: MF_PD_ASF_METADATA_V8_VBRPEAK atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bfe0784a9bd43ddb68ef2b8457205b389149a41011e46cb748cc7c6d4b7f4f8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 62d987815fea919bb46bbe5758e48d6eb22dad8f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117876239"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574905"
 ---
 # <a name="mf_pd_asf_metadata_v8_vbrpeak-attribute"></a>Atributo \_ \_ \_ \_ VBRPEAK DE MF PD ASF METADATA V8 \_
 
@@ -19,7 +19,7 @@ Especifica la velocidad de bits momentáneo más alta en un archivo de formato d
 
 **UINT32**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se aplica a los descriptores de presentación para el contenido de ASF.
 
@@ -38,11 +38,11 @@ El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desk
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: a6760e7e-7c99-4412-bde5-05958fad89a1
 title: MFPKEY_RESIZE_QUALITY propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e8aeb59935c8fc3462b713967ed2b14a0adfcf731fa1a71fec434b0e07d4309
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e79ae1cac78b4d836261905afdacaf14fc227fc4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118973414"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579832"
 ---
 # <a name="mfpkey_resize_quality-property"></a>Propiedad RESIZE QUALITY de MFPKEY \_ \_
 
@@ -27,7 +27,7 @@ VT \_ BOOL
 
 -   [Video Resizer DSP](videoresizer.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Utilice uno de los valores siguientes:
 
@@ -50,7 +50,7 @@ Utilice uno de los valores siguientes:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

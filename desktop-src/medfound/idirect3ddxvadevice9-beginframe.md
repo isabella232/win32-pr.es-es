@@ -1,7 +1,7 @@
 ---
 description: Comienza el procesamiento para crear una imagen descodificada.
 ms.assetid: 80471cc6-c66d-49d9-8593-780e41ac39b9
-title: 'IDirect3DDXVADevice9:: BeginFrame (método) (DXVA. h)'
+title: Método IDirect3DDXVADevice9::BeginFrame (Dxva.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,13 +14,13 @@ api_type:
 api_location:
 - dxva.h
 ms.openlocfilehash: 3090d7868316d08fa91f36dffcc938eb31e06a7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105715888"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581065"
 ---
-# <a name="idirect3ddxvadevice9beginframe-method"></a>IDirect3DDXVADevice9:: BeginFrame (método)
+# <a name="idirect3ddxvadevice9beginframe-method"></a>IDirect3DDXVADevice9::BeginFrame (método)
 
 Comienza el procesamiento para crear una imagen descodificada.
 
@@ -46,7 +46,7 @@ HRESULT BeginFrame(
 *pDstSurface* 
 </dt> <dd>
 
-Puntero a la interfaz **IDirect3DSurface9** de la superficie de destino sin comprimir.
+Puntero a la **interfaz IDirect3DSurface9 de** la superficie de destino sin comprimir.
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ Tamaño del búfer especificado por *pInputData*, en bytes. El valor debe ser 2.
 *pInputData* 
 </dt> <dd>
 
-Puntero a un búfer que contiene datos para el acelerador de vídeo. Este búfer debe contener el índice de marco basado en cero, especificado como un valor de **palabra** .
+Puntero a un búfer que contiene datos para el acelerador de vídeo. Este búfer debe contener el índice de marco de base cero, especificado como un **valor WORD.**
 
 </dd> <dt>
 
@@ -74,17 +74,17 @@ Tamaño del búfer especificado por *pOutputData*, en bytes. El valor debe ser c
 *pOutputData* 
 </dt> <dd>
 
-Puntero a un búfer en el que puede escribir el acelerador de vídeo. Establezca este parámetro en **null**.
+Puntero a un búfer en el que el acelerador de vídeo puede escribir. Establezca este parámetro en **NULL.**
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-Para cada llamada a **BeginFrame**, el descodificador debe hacer una llamada correspondiente a [**IDirect3DDXVADevice9:: EndFrame**](idirect3ddxvadevice9-endframe.md).
+Para cada llamada a **BeginFrame**, el descodificador debe realizar una llamada correspondiente a [**IDirect3DDXVADevice9::EndFrame**](idirect3ddxvadevice9-endframe.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -92,9 +92,9 @@ Para cada llamada a **BeginFrame**, el descodificador debe hacer una llamada cor
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                    |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                              |
-| Encabezado<br/>                   | <dl> <dt>DXVA. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                              |
+| Encabezado<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
 
 
 

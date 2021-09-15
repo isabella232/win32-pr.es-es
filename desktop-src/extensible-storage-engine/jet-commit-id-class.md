@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: JET_COMMIT_ID (clase)'
-title: Clase JET_COMMIT_ID (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: JET_COMMIT_ID clase'
+title: JET_COMMIT_ID (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_COMMIT_ID class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_commit_id(v=EXCHG.10)
@@ -25,23 +25,23 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 84a926abbbc9e323c7edcbdf5a85a67c192bb1b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103816411"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575069"
 ---
-# <a name="jet_commit_id-class"></a>JET_COMMIT_ID (clase)
+# <a name="jet_commit_id-class"></a>JET_COMMIT_ID clase
 
-Contexto de información rodeado de datos emitidos desde JET_PFNEMITLOGDATA.
+Contexto de información rodea los datos emitidos JET_PFNEMITLOGDATA.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.Windows8.JET_COMMIT_ID  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,10 +62,10 @@ public class JET_COMMIT_ID : IComparable<JET_COMMIT_ID>,
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_COMMIT_ID](./jet-commit-id-members.md)
+[JET_COMMIT_ID miembros](./jet-commit-id-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

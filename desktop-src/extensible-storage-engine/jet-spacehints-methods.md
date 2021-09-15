@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_SPACEHINTS métodos'
+description: 'Más información sobre: métodos JET_SPACEHINTS datos'
 title: JET_SPACEHINTS métodos
 TOCTitle: JET_SPACEHINTS methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_SPACEHINTS
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 55103959
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: a6459ac4e186ad9d000126243ad74e882a365ec7354f1a630d5ec062cfbaca6d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: afb16d37da4bc2a7aff33630fab1af250e80a0c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119729535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575056"
 ---
 # <a name="jet_spacehints-methods"></a>JET_SPACEHINTS métodos
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_SPACEHINTS](./jet-spacehints-class.md) tipo expone los miembros siguientes.
+El [JET_SPACEHINTS](./jet-spacehints-class.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 
@@ -78,7 +78,7 @@ El [JET_SPACEHINTS](./jet-spacehints-class.md) tipo expone los miembros siguient
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

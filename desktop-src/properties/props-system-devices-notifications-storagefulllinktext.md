@@ -4,12 +4,12 @@ ms.assetid: 08b03990-eb6a-47fc-baed-0649638a428c
 title: System.Devices.Notifications.StorageFullLinkText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8597f7c5637d3b08d4124cb84af012fc2c881c4d8d19c127c5b4e736e0a2ca1a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e13c77284eb36617f4616ca546f45055f5795ff0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119845435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574605"
 ---
 # <a name="systemdevicesnotificationsstoragefulllinktext"></a>System.Devices.Notifications.StorageFullLinkText
 
@@ -61,7 +61,7 @@ propertyDescription
             text = Browse device storage...
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

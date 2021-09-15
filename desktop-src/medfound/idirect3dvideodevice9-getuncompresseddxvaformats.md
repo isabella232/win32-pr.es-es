@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - dxva.h
-ms.openlocfilehash: 3d7f27060d0c9e43f1852c86697826986c0c095c14a19fbfafa53978e96cbe79
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 94784ac5fe164d571a8a02e4170990f8ce06a4a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117878802"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579984"
 ---
 # <a name="idirect3dvideodevice9getuncompresseddxvaformats-method"></a>IDirect3DVideoDevice9::GetUncompressedDXVAFormats (método)
 
@@ -68,7 +68,7 @@ Dirección de una matriz de **valores D3DFORMAT** o **NULL.** Si el valor no es 
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Llame a este método dos veces. En la primera llamada, establezca *pFormats* en **NULL.** El *parámetro pNumFormats* recibe el número de formatos. Asigne una **matriz D3DFORMAT** con el tamaño necesario y llame al método de nuevo. Esta vez, establezca *pFormats* en la dirección de la matriz. El método rellena la matriz con la lista de formatos de píxel.
 
@@ -78,11 +78,11 @@ El controlador debe devolver los formatos en orden decreciente de preferencia, c
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                    |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                              |
-| Header<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
 
 
 

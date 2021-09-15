@@ -4,12 +4,12 @@ ms.assetid: 783a6552-9b22-4af4-9252-b443e2624687
 title: Recuperar métodos de servicio admitidos
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce058fcab000a90459dcce5310645088b40a2432d1de8c9852c84770db058300
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b021aa868ffaa95df23a729e94d62eae8a0c632e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119839054"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574268"
 ---
 # <a name="retrieving-supported-service-methods"></a>Recuperar métodos de servicio admitidos
 
@@ -125,7 +125,7 @@ void ListSupportedMethods(IPortableDeviceService* pService)
 
 Una vez que el método **ListSupportedMethods** recupera el GUID para cada evento admitido por el servicio dado, invoca el método **DisplayMethod** para recuperar los atributos específicos del método. Estos atributos incluyen: el nombre descriptivo del script del método, las restricciones de acceso necesarias, cualquier formato asociado y la lista de parámetros.
 
-El **método DisplayMethod** invoca el método [**IPortableDeviceServiceCapabilities::GetMethodAttributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getmethodattributes) para recuperar una colección de atributos para el método especificado. A continuación, llama [**al método IPortableDeviceValues::GetStringValue**](iportabledevicevalues-getstringvalue.md) para recuperar el nombre del método. **DisplayMethod llama** a [**IPortableDeviceValues::GetUnsignedIntegerValue para**](iportabledevicevalues-getunsignedintegervalue.md) recuperar las restrctions de acceso. Después, llama a [**IPortableDeviceValues::GetGuidValue para**](iportabledevicevalues-getguidvalue.md) recuperar cualquier formato asociado. Y, por último, **DisplayMethod** llama a [**IPortableDeviceValues::GetIPortableDeviceKeyCollectionValue para**](iportabledevicevalues-getiportabledevicekeycollectionvalue.md) recuperar los datos del parámetro. Pasa los datos devueltos por estos métodos a las funciones auxiliares **DisplayMethodAccess,** **DisplayFormat** y **DisplayMethodParameters,** que representan la información del método especificado.
+El **método DisplayMethod** invoca el método [**IPortableDeviceServiceCapabilities::GetMethodAttributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getmethodattributes) para recuperar una colección de atributos para el método especificado. A continuación, llama [**al método IPortableDeviceValues::GetStringValue**](iportabledevicevalues-getstringvalue.md) para recuperar el nombre del método. **DisplayMethod llama** a [**IPortableDeviceValues::GetUnsignedIntegerValue para**](iportabledevicevalues-getunsignedintegervalue.md) recuperar las restrctions de acceso. Después, llama a [**IPortableDeviceValues::GetGuidValue para**](iportabledevicevalues-getguidvalue.md) recuperar cualquier formato asociado. Por último, **DisplayMethod** llama a [**IPortableDeviceValues::GetIPortableDeviceKeyCollectionValue para**](iportabledevicevalues-getiportabledevicekeycollectionvalue.md) recuperar los datos del parámetro. Pasa los datos devueltos por estos métodos a las funciones auxiliares **DisplayMethodAccess,** **DisplayFormat** y **DisplayMethodParameters,** que representan la información del método especificado.
 
 El código siguiente usa el **método DisplayMethod.**
 

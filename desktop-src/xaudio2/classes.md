@@ -1,19 +1,19 @@
 ---
-description: Esta sección contiene información sobre las clases proporcionadas por la API de Microsoft XAudio2.
+description: Esta sección contiene información sobre las clases proporcionadas por la API XAudio2 de Microsoft.
 ms.assetid: 4349f03a-54a0-2780-0138-a893e1568a26
 title: Clases (API de XAudio2)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be6c37b6b56df0bd7917f2861e0715b84075909ebdb40e3ce9dc8608cae0a7ca
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c8dc0093b05073cb6763bf7307fdf1ed78aa03d4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120054395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574197"
 ---
 # <a name="classes-xaudio2-apis"></a>Clases (API de XAudio2)
 
-Esta sección contiene información sobre las clases proporcionadas por la API de Microsoft XAudio2.
+Esta sección contiene información sobre las clases proporcionadas por la API XAudio2 de Microsoft.
 
 ## <a name="in-this-section"></a>En esta sección
 

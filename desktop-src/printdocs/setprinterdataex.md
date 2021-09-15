@@ -18,12 +18,12 @@ api_location:
 - Ext-MS-Win-printer-Winspool-l1-1-1.dll
 - Ext-MS-Win-Printer-WinSpool-l1-1-2.dll
 - Ext-MS-Win-Printer-WinSpool-L1-1-3.dll
-ms.openlocfilehash: 6d2904c853510efeb379c9d590852c8f082a4644315560c4dfa5a7f51daca6ad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9f384c9c9d6f0d956264b45ec8b52043ad20e897
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119460355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574661"
 ---
 # <a name="setprinterdataex-function"></a>Función SetPrinterDataEx
 
@@ -79,11 +79,11 @@ Los valores almacenados en la SPLDS_USER_KEY se publican en el servicio de direc
 
 Puede especificar otras claves para almacenar datos de configuración que no son DS. Use el carácter de barra diagonal inversa ( ) como delimitador para especificar una ruta de \\ acceso que tenga una o varias subclaves.
 
-Si *hPrinter es* un identificador de una impresora y *pKeyName* es **NULL** o una cadena vacía, **SetPrinterDataEx** **devuelve ERROR_INVALID_PARAMETER**.
+Si *hPrinter* es un identificador de una impresora y *pKeyName* es **NULL** o una cadena vacía, **SetPrinterDataEx** **devuelve ERROR_INVALID_PARAMETER**.
 
 Si *hPrinter es* un identificador de un servidor de impresión, se omite *pKeyName.*
 
-No **use** SPLDS_SPOOLER_KEY . Para cambiar las propiedades de la impresora del colador, use [**SetPrinter**](setprinter.md) con *Nivel* = 2.
+No use **SPLDS_SPOOLER_KEY**. Para cambiar las propiedades de la impresora del colador, use [**SetPrinter**](setprinter.md) con *Nivel* = 2.
 
 </dd> <dt>
 
@@ -92,7 +92,7 @@ No **use** SPLDS_SPOOLER_KEY . Para cambiar las propiedades de la impresora del 
 
 Puntero a una cadena terminada en NULL que identifica los datos que se establecerán.
 
-En el caso de las impresoras, esta cadena especifica el nombre de un valor en la *clave pKeyName.*
+En el caso de las impresoras, esta cadena especifica el nombre de un valor bajo la *clave pKeyName.*
 
 En el caso de los servidores de impresión, esta cadena es una de las cadenas predefinidas enumeradas en la sección Comentarios siguiente.
 
@@ -103,7 +103,7 @@ En el caso de los servidores de impresión, esta cadena es una de las cadenas pr
 
 Código que indica el tipo de datos a los que apunta el *parámetro pData.* Para obtener una lista de los códigos de tipo posibles, vea [Tipos de valor del Registro](/windows/desktop/SysInfo/registry-value-types).
 
-Si *pKeyName especifica* una de las claves de servicio de directorio predefinidas, *type* debe ser **REG_SZ**, **REG_MULTI_SZ**, **REG_DWORD** o **REG_BINARY**. Si **REG_BINARY** se usa , *cbData* debe ser igual a 1 y el servicio de directorio trata los datos como un valor booleano.
+Si *pKeyName especifica* una de las claves predefinidas del servicio de directorio, *type* debe ser **REG_SZ**, **REG_MULTI_SZ**, **REG_DWORD** o **REG_BINARY**. Si **REG_BINARY** se usa , *cbData* debe ser igual a 1 y el servicio de directorio trata los datos como un valor booleano.
 
 </dd> <dt>
 
@@ -226,7 +226,7 @@ En Windows 7 y versiones posteriores de Windows, los trabajos de impresión que 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

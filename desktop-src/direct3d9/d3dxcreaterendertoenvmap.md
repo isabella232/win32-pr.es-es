@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: f248f70daf589d562091f2bcc235539726b53c8f301d2f10193b13e8604fe740
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6829d53f53bd6a4783f5873eeed614e48bbe1088
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117732279"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575232"
 ---
 # <a name="d3dxcreaterendertoenvmap-function"></a>Función D3DXCreateRenderToEnvMap
 
@@ -69,7 +69,7 @@ Tamaño de la superficie de representación.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de niveles de mapa mip.
+Número de niveles de asignación mip.
 
 </dd> <dt>
 
@@ -82,7 +82,7 @@ Miembro del tipo [enumerado D3DFORMAT](d3dformat.md) que describe el formato de 
 
 </dd> <dt>
 
-*DepthStencil* \[ En\]
+*Galería de detalles* \[ En\]
 </dt> <dd>
 
 Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
@@ -126,11 +126,11 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[De uso general Functions](dx9-graphics-reference-d3dx-functions-general-purpose.md)
+[De uso general functions](dx9-graphics-reference-d3dx-functions-general-purpose.md)
 </dt> </dl>
 
  

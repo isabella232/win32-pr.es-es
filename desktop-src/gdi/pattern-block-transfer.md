@@ -4,12 +4,12 @@ ms.assetid: 601e1e79-a328-4e63-958a-ca26129e03f8
 title: Transferencia de bloques de patrones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ecb51cbe12da80ca643e2d520e8ebe25c4c9fe03d56a8a16e0c55caf5f1ce10
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 54424348c28b83d1d0d1075072e80b18049546ab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120092935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581117"
 ---
 # <a name="pattern-block-transfer"></a>Transferencia de bloques de patrones
 
@@ -17,13 +17,13 @@ El nombre de la [**función PatBlt**](/windows/desktop/api/Wingdi/nf-wingdi-patb
 
 
 
-| Rop       | Descripción                                                                         |
+| ROP       | Descripción                                                                         |
 |-----------|-------------------------------------------------------------------------------------|
 | PATCOPY   | Copia el patrón en el mapa de bits de destino.                                       |
 | PATINVERT | Combina el mapa de bits de destino con el patrón mediante el operador booleano XOR. |
 | DSTINVERT | Invierte el mapa de bits de destino.                                                     |
-| Oscuridad | Convierte todas las salidas en ceros binarios.                                                   |
-| Blancura | Convierte todos los resultados en binarios.                                                    |
+| OSCURIDAD | Convierte todas las salidas en ceros binarios.                                                   |
+| BLANCURA | Convierte todos los resultados en binarios.                                                    |
 
 
 

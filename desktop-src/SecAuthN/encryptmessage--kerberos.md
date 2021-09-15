@@ -5,11 +5,11 @@ title: Función EncryptMessage (Kerberos)
 ms.topic: reference
 ms.date: 07/25/2019
 ms.openlocfilehash: 89c6504fe8518e1c43d155ebce638dec1acfeb80
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122476221"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575400"
 ---
 # <a name="encryptmessage-kerberos-function"></a>Función EncryptMessage (Kerberos)
 
@@ -43,12 +43,12 @@ Identificador del contexto [*de seguridad que*](../secgloss/s-gly.md) se va a us
 *fQOP* \[ En\]
 </dt> <dd>
 
-Marcas específicas del paquete que indican la calidad de protección. Un [*paquete de seguridad*](../secgloss/s-gly.md) puede usar este parámetro para habilitar la selección de [*algoritmos criptográficos*](../secgloss/c-gly.md).
+Marcas específicas del paquete que indican la calidad de la protección. Un [*paquete de seguridad*](../secgloss/s-gly.md) puede usar este parámetro para habilitar la selección de [*algoritmos criptográficos*](../secgloss/c-gly.md).
 
 Este parámetro puede ser la marca siguiente.
 
 
-| Valor | Significado | 
+| Value | Significado | 
 |-------|---------|
 | <span id="SECQOP_WRAP_NO_ENCRYPT"></span><span id="secqop_wrap_no_encrypt"></span><dl><dt><strong>SECQOP_WRAP_NO_ENCRYPT</strong></dt></dl> | Generar un encabezado o finalizador, pero no cifrar el mensaje.<br /><blockquote>[!Note]<br />KERB_WRAP_NO_ENCRYPT tiene el mismo valor y el mismo significado.</blockquote><br /> | 
 
@@ -84,14 +84,14 @@ Si se produce un error en la función, devuelve uno de los siguientes códigos d
 | Código devuelto                                                                                                    | Descripción                                                                                                                                                                                                                                   |
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**BÚFER \_ E DE SEGUNDO DEMASIADO \_ \_ \_ PEQUEÑO**</dt> </dl>      | El búfer de salida es demasiado pequeño. Para obtener más información, vea la sección Comentarios.                                                                                                                                                                 |
-| <dl> <dt>**SEG \_ E CONTEXT EXPIRED (CONTEXTO E DE SEC E \_ \_ EXPIRADO)**</dt> </dl>        | La aplicación hace referencia a un contexto que ya se ha cerrado. Una aplicación correctamente escrita no debe recibir este error.                                                                                               |
+| <dl> <dt>**SEG \_ E \_ CONTEXT \_ EXPIRED**</dt> </dl>        | La aplicación hace referencia a un contexto que ya se ha cerrado. Una aplicación correctamente escrita no debe recibir este error.                                                                                               |
 | <dl> <dt>**SEC \_ E \_ CRYPTO \_ SYSTEM \_ INVALID**</dt> </dl> | No [*se admite*](../secgloss/c-gly.md) el cifrado elegido para el [*contexto*](../secgloss/s-gly.md) de seguridad.                                                                                                         |
 | <dl> <dt>**S \_ E \_ MEMORIA \_ INSUFICIENTE**</dt> </dl>    | No hay suficiente memoria disponible para completar la acción solicitada.                                                                                                                                                             |
 | <dl> <dt>**SEG \_ E \_ IDENTIFICADOR NO \_ VÁLIDO**</dt> </dl>         | Se especificó un identificador de contexto que no es válido en el *parámetro phContext.*                                                                                                                                                     |
-| <dl> <dt>**SEC \_ E TOKEN NO \_ \_ VÁLIDO**</dt> </dl>          | No se encontró ningún \_ búfer de tipo DE DATOS SECBUFFER.                                                                                                                                                                                          |
+| <dl> <dt>**SEC \_ E TOKEN NO \_ \_ VÁLIDO**</dt> </dl>          | No se encontró ningún búfer \_ de tipo DE DATOS SECBUFFER.                                                                                                                                                                                          |
 | <dl> <dt>**SEG \_ E \_ QOP \_ NO \_ COMPATIBLE**</dt> </dl>     | El contexto de [*seguridad*](../secgloss/i-gly.md) no admite la confidencialidad ni la [*integridad.*](../secgloss/s-gly.md) |
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función EncryptMessage (Kerberos)** cifra un mensaje basado en el mensaje y la clave [*de sesión*](../secgloss/s-gly.md) de un contexto de [*seguridad*](../secgloss/s-gly.md).
 
@@ -113,7 +113,7 @@ Para obtener un rendimiento óptimo, *las estructuras pMessage* se deben asignar
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|-------------------------------------------|
 | Cliente mínimo compatible | Windows Solo \[ aplicaciones de escritorio XP\]          |
 | Servidor mínimo compatible | Windows Solo aplicaciones de escritorio de Server 2003 \[\] |
@@ -125,7 +125,7 @@ Para obtener un rendimiento óptimo, *las estructuras pMessage* se deben asignar
 
 <dl> <dt>
 
-[Funciones SSPI](authentication-functions.md#sspi-functions)
+[Funciones de SSPI](authentication-functions.md#sspi-functions)
 </dt> <dt>
 
 [**AcceptSecurityContext (Kerberos)**](acceptsecuritycontext--kerberos.md)

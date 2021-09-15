@@ -1,5 +1,5 @@
 ---
-description: Define el tipo que contiene información sobre la imagen de fondo utilizada por la nota de diario, si existe.
+description: Define el tipo que contiene información sobre la imagen de fondo utilizada por la nota journal, si existe.
 ms.assetid: c43715d5-eab4-4ccc-b5be-086bacc4c9da
 title: Tipo complejo BackgroundImageType
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 1fcab0dec0758cc60896d2fd033b09eb1c4184db78020f7aec69409306bb76b1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 768459710a993dc284416c78209b37f9922249e4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119941355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579504"
 ---
 # <a name="backgroundimagetype-complex-type"></a>Tipo complejo BackgroundImageType
 
-Define el tipo que contiene información sobre la imagen de fondo utilizada por la nota de diario, si existe.
+Define el tipo que contiene información sobre la imagen de fondo utilizada por la nota journal, si existe.
 
 ``` syntax
 <xs:complexType name="BackgroundImageType" />

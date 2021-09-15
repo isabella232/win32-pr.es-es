@@ -4,12 +4,12 @@ ms.assetid: 84f4753d-5c77-4dbe-ba08-cab51b4f0569
 title: System.DeviceInterface.Hid.ProductId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1512226cfb1e11a813209f0f6af7677e8c165a8d34148a781fb7bc058f25fce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac455ef994fe3ff5d3b775f0a010a3fdc2cbfdae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119098046"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574628"
 ---
 # <a name="systemdeviceinterfacehidproductid"></a>System.DeviceInterface.Hid.ProductId
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 
