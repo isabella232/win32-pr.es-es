@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cece6f4034a687a68cbd596bfe26a23c2fe70112c9e432c6f06b9065c1436c9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f1dc0c93e449e9ef1b00af7fb073068078f0fcc5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119737094"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476264"
 ---
 # <a name="axwindowsmediaplayerclose-method"></a>Método AxWindowsMediaPlayer.close
 
@@ -52,7 +52,7 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método cierra el archivo multimedia digital actual, no Reproductor de Windows Media sí mismo.
 

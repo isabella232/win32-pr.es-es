@@ -1,5 +1,5 @@
 ---
-description: Esta clase es la clase de tipo de evento para el evento de creación de archivos. La sintaxis siguiente se simplifica a partir del código MOF.
+description: Esta clase es la clase de tipo de evento para el evento file create. La sintaxis siguiente se simplifica a partir del código MOF.
 ms.assetid: 83465072-3dae-4a39-8a36-1512025b79df
 title: FileIo_Create clase
 ms.topic: reference
@@ -19,16 +19,16 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 6e0c4085225fe523dcabca87a15bced8bd1f093f0b3da89fa0582b5675cdfbbc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2f8a42e9dee1c49817d578ab73a221c013f69aef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119829955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476922"
 ---
 # <a name="fileio_create-class"></a>Clase FileIo \_ Create
 
-Esta clase es la clase de tipo de evento para el evento de creación de archivos.
+Esta clase es la clase de tipo de evento para el evento file create.
 
 La sintaxis siguiente se simplifica a partir del código MOF.
 
@@ -48,7 +48,7 @@ class FileIo_Create : FileIo
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase FileIo \_ Create** tiene estos tipos de miembros:
 
@@ -104,7 +104,7 @@ Tipo de acceso: solo lectura
 Calificadores: WmiDataId(3), Pointer
 </dt> </dl>
 
-Identificador que se puede usar para correlacionar las operaciones con la misma instancia de objeto de archivo abierta entre los eventos de creación y cierre de archivos.
+Identificador que se puede usar para correlacionar las operaciones con la misma instancia de objeto de archivo abierta entre eventos de creación y cierre de archivos.
 
 </dd> <dt>
 
@@ -168,7 +168,7 @@ Tipo de acceso: solo lectura
 Calificadores: WmiDataId(2), Pointer
 </dt> </dl>
 
-Identificador de subproceso del subproceso que crea el archivo.
+Identificador de subproceso del subproceso que está creando el archivo.
 
 </dd> </dl>
 

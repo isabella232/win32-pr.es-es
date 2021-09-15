@@ -4,12 +4,12 @@ ms.assetid: 9d8f73d7-d6ea-44d4-be5c-a003f6eba508
 title: Constructores FontFamily.FontFamily
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 6d45135c6960e0b3b88d8faecf83e1ce62575e1e7d8073eaf7eec47436622a42
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b1b7bbee5fedffa117d51b3ea97bea9b0c0599ca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119888865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572924"
 ---
 # <a name="fontfamilyfontfamily-constructors"></a>Constructores FontFamily.FontFamily
 

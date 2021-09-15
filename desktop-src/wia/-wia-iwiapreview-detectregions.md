@@ -1,7 +1,7 @@
 ---
-description: 'Invoca el filtro de segmentación de controladores y pasa al filtro la imagen sin filtrar almacenada en memoria caché por el método IWiaPreview:: GetNewPreview.'
+description: Invoca el filtro de segmentación de controladores y pasa la imagen sin filtrar almacenada en caché por el método IWiaPreview::GetNewPreview al filtro.
 ms.assetid: 4ae817b5-7091-432e-b004-0e53ae14fdb2
-title: IWiaPreview::D método etectRegions (WIA. h)
+title: Método IWiaPreview::D etectRegions (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Wia.h
 ms.openlocfilehash: 40665d2aae6e1e2dffa4356540afb05d45050492
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104275462"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575633"
 ---
-# <a name="iwiapreviewdetectregions-method"></a>IWiaPreview::D método etectRegions
+# <a name="iwiapreviewdetectregions-method"></a>IWiaPreview::D etectRegions (método)
 
-Invoca el filtro de segmentación de controladores y pasa al filtro la imagen sin filtrar almacenada en memoria caché por el método [**IWiaPreview:: GetNewPreview**](-wia-iwiapreview-getnewpreview.md) .
+Invoca el filtro de segmentación de controladores y pasa la imagen sin filtrar almacenada en caché por el método [**IWiaPreview::GetNewPreview**](-wia-iwiapreview-getnewpreview.md) al filtro.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,12 +39,12 @@ HRESULT DetectRegions(
 
 <dl> <dt>
 
-*lFlags* \[ de\]
+*lFlags* \[ En\]
 </dt> <dd>
 
-Tipo: **Long**
+Tipo: **LONG**
 
-No se utiliza. Se establece en cero (0).
+No se usa. Establezca en cero (0).
 
 </dd> </dl>
 
@@ -58,9 +58,9 @@ Este método puede devolver uno de estos valores.
 
 | Código devuelto                                                                               | Descripción                                          |
 |-------------------------------------------------------------------------------------------|------------------------------------------------------|
-| <dl> <dt>**S \_ correcto**</dt> </dl>      | La operación se realizó correctamente.<br/>              |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | La operación se realizó correctamente.<br/>              |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl> | El controlador no admite la segmentación.<br/> |
-| <dl> <dt>**otherwise**</dt> </dl>  | Un código de error COM estándar.<br/>                |
+| <dl> <dt>**otherwise**</dt> </dl>  | Código de error COM estándar.<br/>                |
 
 
 
@@ -68,17 +68,17 @@ Este método puede devolver uno de estos valores.
 
 ## <a name="remarks"></a>Observaciones
 
-Una aplicación debe llamar a [**IWiaPreview:: GetNewPreview**](-wia-iwiapreview-getnewpreview.md) antes de llamar a esta función.
+Una aplicación debe llamar [**a IWiaPreview::GetNewPreview antes**](-wia-iwiapreview-getnewpreview.md) de llamar a esta función.
 
-Cuando el componente de vista previa de la adquisición de imágenes de Windows (WIA) 2,0 llama a **IWiaPreview::D etectregions**, invoca el filtro de segmentación de controladores y pasa la interfaz [**IWiaItem2**](-wia-iwiaitem2.md) que se pasó previamente a [**IWiaPreview:: GetNewPreview**](-wia-iwiapreview-getnewpreview.md). También pasa la imagen almacenada en caché internamente al filtro. El filtro segmentación utiliza la imagen almacenada en caché para crear las extensiones secundarias.
+Cuando el componente de versión preliminar de Windows Image Acquisition (WIA) 2.0 llama a **IWiaPreview::D etectRegions,** invoca el filtro de segmentación de controladores y pasa la interfaz [**IWiaItem2**](-wia-iwiaitem2.md) que se pasó anteriormente a [**IWiaPreview::GetNewPreview**](-wia-iwiapreview-getnewpreview.md). También pasa la imagen almacenada internamente en caché al filtro. El filtro de segmentación usa la imagen almacenada en caché para crear las extensiones secundarias.
 
-Si una aplicación cambia cualquier propiedad de la interfaz [**IWiaItem2**](-wia-iwiaitem2.md) después de llamar a [**IWiaPreview:: GetNewPreview**](-wia-iwiapreview-getnewpreview.md), se deben restaurar las propiedades originales antes de que la aplicación llame a **IWiaPreview::D etectregions**. Use [**GetPropertyStream**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiapropertystorage-getpropertystream) y [**SetPropertyStream**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiapropertystorage-setpropertystream) para restaurar las propiedades originales.
+Si una aplicación cambia alguna propiedad de la interfaz [**IWiaItem2**](-wia-iwiaitem2.md) después de llamar a [**IWiaPreview::GetNewPreview**](-wia-iwiapreview-getnewpreview.md), se deben restaurar las propiedades originales antes de que la aplicación llame a **IWiaPreview::D etectRegions**. Use [**GetPropertyStream**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiapropertystorage-getpropertystream) y [**SetPropertyStream para**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiapropertystorage-setpropertystream) restaurar las propiedades originales.
 
-**IWiaPreview::D etectregions** se usa para determinar las "subregiones" de la imagen almacenada en caché. Para cada subregión detectada, se crea un nuevo elemento secundario de WIA 2,0 en la interfaz [**IWiaItem2**](-wia-iwiaitem2.md) . Para cada elemento secundario, el filtro de segmentación debe establecer los valores de las siguientes propiedades de WIA 2,0: direcciones IP de WIA, las IP de WIA, XEXTENT y las IP de WIA \_ \_ \_ \_ \_ \_ \_ \_ YEXTENT. Un filtro más avanzado establece otras propiedades de WIA 2,0, como la desfragmentación de las direcciones \_ IP \_ de WIA \_ X y WIA, \_ \_ dessesgado \_ y, si el controlador admite la anulación del sesgo. Las \_ propiedades WIA IP \_ XPOS, WIA \_ IP \_ YPOS, WIA \_ IP \_ XEXTENT y WIA \_ IPS \_ YEXTENT representan el rectángulo delimitador del área que se va a examinar.
+**IWiaPreview::D etectRegions** se usa para determinar las "subregiones" de la imagen almacenada en caché. Para cada región secundaria detectada, se crea un nuevo elemento secundario de WIA 2.0 en la [**interfaz IWiaItem2.**](-wia-iwiaitem2.md) Para cada elemento secundario, el filtro de segmentación debe establecer los valores de las siguientes propiedades de WIA 2.0: WIA \_ IPS \_ XPOS, WIA \_ IPS \_ YPOS, WIA \_ IPS \_ XEXTENT y WIA \_ IPS \_ YEXTENT. Un filtro más avanzado establece otras propiedades de WIA 2.0, como WIA \_ IPS DESKEW X y \_ \_ WIA \_ IPS DESKJDBC Y, si el controlador admite la \_ \_ desessestreo. Las propiedades WIA \_ IPS \_ XPOS, WIA \_ IPS \_ YPOS, WIA \_ IPS \_ XEXTENT y WIA \_ IPS \_ YEXTENT representan el rectángulo delimitador del área que se va a examinar.
 
-Es posible que el controlador no admita la segmentación. Antes de llamar a **IWiaPreview::D etectregions**, una aplicación comprueba normalmente si el controlador admite la \_ propiedad de segmentación de IP de WIA \_ . Si la propiedad no está implementada, no se admite la segmentación y **IWiaPreview::D etectregions** produce un error y devuelve e \_ NOTIMPL.
+Es posible que el controlador no admita la segmentación. Antes de llamar a **IWiaPreview::D etectRegions,** una aplicación normalmente comprueba si el controlador admite la propiedad \_ SEGMENTATION de IPS de \_ WIA. Si no se implementa la propiedad , no se admite la segmentación y se produce un error **en IWiaPreview::D etectRegions** y devuelve E \_ NOTIMPL.
 
-La aplicación debe limpiar los elementos secundarios que se crean mediante una llamada a **IWiaPreview::D etectregions**. Por ejemplo, si una aplicación realiza una llamada adicional a **IWiaPreview::D etectregions** en el mismo elemento, debe limpiar los elementos secundarios anteriores.
+La aplicación debe limpiar los elementos secundarios creados mediante una llamada a **IWiaPreview::D etectRegions**. Por ejemplo, si una aplicación realiza una llamada adicional a **IWiaPreview::D etectRegions** en el mismo elemento, debe limpiar los elementos secundarios anteriores.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,10 +86,10 @@ La aplicación debe limpiar los elementos secundarios que se crean mediante una 
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                     |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                               |
-| Encabezado<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
+| Encabezado<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

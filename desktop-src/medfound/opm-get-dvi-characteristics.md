@@ -4,14 +4,14 @@ ms.assetid: b6c450c0-e97f-472d-ae09-fa1e062aeb9e
 title: OPM_GET_DVI_CHARACTERISTICS (Opmapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f507d9d9c1f1df0efe1b3c5b0696c178ed6fdfe5d285fde2eb5d1def62e8d007
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 55a6f996b0397db509a45af6e243359c581df333
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119887435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574833"
 ---
-# <a name="opm_get_dvi_characteristics"></a>OPM \_ GET \_ DVI \_ CHARACTERISTICS
+# <a name="opm_get_dvi_characteristics"></a>CARACTERÍSTICAS DE OPM \_ GET \_ \_ DVI
 
 Consulta si un conector de interfaz de vídeo digital (DVI) admite DVI versión 1.1 o posterior.
 
@@ -19,24 +19,24 @@ Consulta si un conector de interfaz de vídeo digital (DVI) admite DVI versión 
 
 | Requisito | Value |
 |--------------|-----------------------------------------------------------------------------|
-| GUID de solicitud | OPM \_ GET \_ DVI \_ CHARACTERISTICS                                              |
-| Datos de entrada   | Ninguno                                                                        |
+| GUID de solicitud | CARACTERÍSTICAS DE OPM \_ GET \_ \_ DVI                                              |
+| Datos de entrada   | None                                                                        |
 | Devolver datos  | Una [**estructura OPM \_ STANDARD \_ INFORMATION**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si esta consulta se realiza correctamente, el **miembro ulInformation** de la [**estructura OPM STANDARD \_ \_ INFORMATION**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) contiene uno de los valores siguientes.
+Si esta consulta se realiza correctamente, el **miembro ulInformation** de la estructura [**OPM \_ STANDARD \_ INFORMATION**](/windows/desktop/api/ksopmapi/ns-ksopmapi-opm_standard_information) contiene uno de los valores siguientes.
 
 
 
 | Value                                     | Descripción               |
 |-------------------------------------------|---------------------------|
 | OPM \_ DVI \_ CHARACTERISTIC \_ 1 \_ 0            | DVI versión 1.0.          |
-| CARACTERÍSTICA DE \_ OPM DVI \_ \_ 1 \_ 1 \_ O \_ SUPERIOR | DVI versión 1.1 o posterior. |
+| CARACTERÍSTICA \_ DE OPM DVI \_ \_ 1 \_ 1 \_ O \_ SUPERIOR | DVI versión 1.1 o posterior. |
 
 
 
@@ -52,11 +52,11 @@ Esta consulta solo se admite cuando el tipo de conector físico es OPM \_ CONNEC
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                |
-| Header<br/>                   | <dl> <dt>Opmapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Opmapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

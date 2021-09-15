@@ -4,12 +4,12 @@ ms.assetid: 6c38a634-53ba-4e76-83bf-1a3f36efb0bc
 title: Uso de las API de registro para los controles parentales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 571a24f8bdbf687f8c1975cfc29057035ac56747edc0459682512531194c55a4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 37d1cedb9ff02856be6ea1ae2069d8635b980681
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117869067"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574692"
 ---
 # <a name="using-logging-apis-for-parental-controls"></a>Uso de las API de registro para los controles parentales
 
@@ -88,7 +88,7 @@ void main()
 
 ### <a name="custom-logging"></a>Registro personalizado
 
-Para que una aplicación extienda los eventos registrados fuera del conjunto de eventos predefinidos o del tipo personalizado, deberá definir un proveedor para ello en el manifiesto de aplicación. A continuación, se puede importar el canal predeterminado de WPC y, a continuación, se pueden registrar eventos definidos por la aplicación.
+Para que una aplicación extienda los eventos registrados fuera del conjunto de eventos predefinidos o del tipo personalizado único, deberá definir un proveedor para ello en el manifiesto de aplicación. A continuación, se puede importar el canal predeterminado de WPC y, a continuación, se pueden registrar eventos definidos por la aplicación.
 
 ### <a name="logging-rights"></a>Derechos de registro
 

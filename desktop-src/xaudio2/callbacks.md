@@ -4,12 +4,12 @@ ms.assetid: 5565438b-dbd4-e645-dd7b-93a17758d768
 title: Devoluciones de llamada (API de XAudio2)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e1ef499023d3d8a99b0fde3c5e36d3aff62b11a27a88126a0d5d0583870dd25
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bbdb627b56ddb16b11947a0f4a87e301d54d14b1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119926785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574201"
 ---
 # <a name="callbacks-xaudio2-apis"></a>Devoluciones de llamada (API de XAudio2)
 

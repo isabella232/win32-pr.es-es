@@ -4,12 +4,12 @@ ms.assetid: e45d055f-d404-47e9-b3c8-ac743b290138
 title: MF_PD_ASF_METADATA_LEAKY_BUCKET_PAIRS atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9444292ad437551622e1f418a6f21198ecd8341f01e4e5bda0a2047f847cfd37
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7426d15a806a8c61c9a2ea1fdfb0565372c5f48f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118740753"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579873"
 ---
 # <a name="mf_pd_asf_metadata_leaky_bucket_pairs-attribute"></a>Atributo MF \_ PD \_ ASF \_ METADATA \_ LEAKY BUCKET \_ \_ PAIRS
 
@@ -19,7 +19,7 @@ Especifica una lista de velocidades de bits y las ventanas de búfer correspondi
 
 Byte array
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se aplica a los descriptores de presentación para el contenido de ASF.
 
@@ -46,7 +46,7 @@ typedef struct _WMLeakyBucketPair {
 Para cada velocidad de bits, el **miembro msBufferWindow** indica cuánto contenido se almacena en búfer antes de que comience la reproducción, en milisegundos. El tamaño del búfer en bytes es igual **a msBufferWinow** x **dwBitrate/** 8000.
 
 > [!Note]  
-> Este atributo corresponde al atributo **ASFLeakyBucketPairs** del SDK Windows Media Format.
+> Este atributo corresponde al atributo **ASFLeakyBucketPairs** en el SDK Windows Media Format.
 
  
 
@@ -54,11 +54,11 @@ Para cada velocidad de bits, el **miembro msBufferWindow** indica cuánto conten
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 

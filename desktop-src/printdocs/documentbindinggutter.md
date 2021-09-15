@@ -1,19 +1,19 @@
 ---
-description: Busque información sobre el parámetro DocumentBindingGutter. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
+description: Busque información sobre el parámetro DocumentBindingGutter. Este tema no es actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: 903ad358-a060-4c8f-b72e-5ec2eb898248
 title: DocumentBindingGutter
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 45839aa07d740d8498e477809b45aa823460b23f
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118470"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574665"
 ---
 # <a name="documentbindinggutter"></a>DocumentBindingGutter
 
-Este tema no es actual. Para obtener la información más reciente, vea [La especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Especifica el ancho del medianía de enlace.
 
@@ -24,7 +24,7 @@ Especifica el ancho del medianía de enlace.
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|----------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                      |
 | Prefijo de ámbito <br/> | Documento<br/>                          |
@@ -71,7 +71,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                      |
+| Propiedad                | xsi:type           | Value                      |
 |-------------------------|--------------------|----------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>      |
 | DefaultValue<br/> | integer<br/> | no definido<br/>       |

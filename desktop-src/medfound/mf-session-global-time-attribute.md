@@ -4,12 +4,12 @@ ms.assetid: 6810a22c-f091-423c-97dd-c04fdabdb9bb
 title: MF_SESSION_GLOBAL_TIME atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 309cc46a070fed571183f7f407e0fb00ad19d4d94136b49a78f0438b21470c62
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b930ed47c5f314b12aba0075cdc9120d2179325
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118059207"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572785"
 ---
 # <a name="mf_session_global_time-attribute"></a>Atributo MF \_ SESSION \_ GLOBAL \_ TIME
 
@@ -21,7 +21,7 @@ Especifica si las topologías tienen una hora de inicio y de detenerse global.
 
 Tratar como un valor booleano.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede establecer este atributo al crear la sesison multimedia mediante el parámetro *pConfiguration* de la función [**MFCreateMediaSession**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatemediasession) o [**MFCreatePMPMediaSession.**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatepmpmediasession)
 
@@ -41,11 +41,11 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

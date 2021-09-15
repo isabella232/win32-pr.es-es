@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - tiptsf.dll
-ms.openlocfilehash: aa1fa4636b0302e058bc0a308e5d87da11d9bec3d12d678b9eb6057521479689
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 04e935c668e858ae3d22936e8a63f9116ebd6ab2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119938595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579445"
 ---
 # <a name="itipautocompleteclientpreferredrects-method"></a>ITipAutocompleteClient::P referredRects (método)
 
@@ -45,7 +45,7 @@ HRESULT PreferredRects(
 *prcACList* \[ En\]
 </dt> <dd>
 
-Rectángulo, en coordenadas de pantalla, que indica la ubicación preferida del proveedor y el tamaño de la interfaz de usuario de la lista de autocompletar.
+Rectángulo, en coordenadas de pantalla, que indica la ubicación preferida del proveedor y el tamaño de la interfaz de usuario de lista de autocompletar.
 
 </dd> <dt>
 
@@ -59,14 +59,14 @@ Rectángulo, en coordenadas de pantalla, que indica la ubicación y el tamaño d
 *prcModified* \[ out\]
 </dt> <dd>
 
-Rectángulo basado en el estado actual de tip y la ubicación de lista de autocompletar preferida y el tamaño especificados por *prcACList*.
+Rectángulo basado en el estado actual de TIP y la ubicación y el tamaño de la lista de autocompletar preferidos especificados por *prcACList.*
 
 </dd> <dt>
 
 *pfShownAboveTip* \[ in, out\]
 </dt> <dd>
 
-**TRUE** si el rectángulo modificado se va a mostrar encima del área de destino del panel de entrada de texto; de lo contrario, **FALSE**. Este valor debe inicializarse en la orientación preferida del proveedor antes de llamar al método .
+**TRUE** si el rectángulo modificado se va a mostrar encima del área de destino del Panel de entrada de texto; de lo contrario, **FALSE**. Este valor debe inicializarse en la orientación preferida del proveedor antes de llamar al método .
 
 </dd> </dl>
 
@@ -86,9 +86,9 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este es el método al que llama el proveedor de autocompletar cuando está a punto de mostrar la interfaz de usuario autocompletar. El cliente modifica el rectángulo preferido del proveedor especificado por *prcACList mediante* *el argumento prcModified.*
+Este es el método al que llama el proveedor de autocompletar cuando está a punto de mostrar la interfaz de usuario autocompletar. El cliente modifica el rectángulo preferido del proveedor especificado por *prcACList a* través *del argumento prcModified.*
 
 Llame al [**método ITipAutocompleteClient::RequestShowUI**](itipautocompleteclient-requestshowui.md) para establecer el identificador de ventana de lista de autocompletar emergente antes de llamar a **PreferredRects**. Si no lo hace, se producirá un error **E \_ INVALIDARG** al llamar a **PreferredRects**.
 
@@ -100,7 +100,7 @@ Llame al [**método ITipAutocompleteClient::RequestShowUI**](itipautocompletecli
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                                       |
-| Header<br/>                   | <dl> <dt>TipAutoComplete.h (también requiere Peninputpanel \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>TipAutoComplete.h (también requiere Peninputpanel \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Tiptsf.dll</dt> </dl>                                           |
 
 

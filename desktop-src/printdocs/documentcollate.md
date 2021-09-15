@@ -4,24 +4,24 @@ ms.assetid: 752cccf7-1f95-4597-b0e2-a96fd22ffeef
 title: DocumentCollate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4accbba3bf309ef9eaec251c5877ee7965f984ed63670a50ebf5e870406acb92
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e4c3036cc64265ea8f88bfcc46aea0149f8af5ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118971594"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579753"
 ---
 # <a name="documentcollate"></a>DocumentCollate
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Describe las características de intercalación de la salida. Se intercalan todas las páginas de cada documento individual. DocumentCollate y JobCollateAlldocuments son mutuamente excluyentes. El comportamiento y la implementación de si se implementan ambas o solo una de estas palabras clave se deja al controlador.
+Describe las características de intercalación de la salida. Se intercalan todas las páginas de cada documento individual. DocumentCollate y JobCollateAlldocuments son mutuamente excluyentes. El comportamiento y la implementación de si se implementan ambas palabras clave o solo una de ellas se deja al controlador.
 
 A continuación se deberán seguir las reglas para la implementación de Collate.
 
-## <a name="element-definition-and-rules"></a>Definición y reglas de elementos
+## <a name="element-definition-and-rules"></a>Reglas y definición de elementos
 
-Primero debe seguir las reglas de JobCollateAllDocument y, a continuación, aplicar las reglas de DocumentCollate para que los escenarios funcionen. Tenga en cuenta que en un valor de conversión PrintTicket a Devmode, donde JobCollateAllDocuments no es compatible con el controlador, es el controlador el que elige el comportamiento adecuado que se debe tomar (JobCollateAllDocuments = ON u OFF). Además, la opción se puede cambiar en función de otras opciones de PrintTicket.
+Primero debe seguir las reglas de JobCollateAllDocument y, a continuación, aplicar reglas para DocumentCollate para que los escenarios funcionen. Tenga en cuenta que en un valor de conversión PrintTicket a Devmode, donde JobCollateAllDocuments no es compatible con el controlador, es el controlador el que elige el comportamiento adecuado que se debe tomar (JobCollateAllDocuments = ON u OFF). Además, la opción se puede cambiar en función de otras opciones de PrintTicket.
 
 ### <a name="jobcollatealldocuments"></a>JobCollateAllDocuments
 
@@ -80,16 +80,16 @@ En la tabla siguiente se describen las características de las variables definid
 
 | Nombre                               | Tipo de datos         | Unidad                  | Valores admitidos                                                                                                                                                                      | Resumen                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | caracteres<br/> | Nombre completo válido tal y como se define en [Espacios de nombres en XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                           |
+| \_OptionName\_<br/>          | string<br/> | caracteres<br/> | Nombre completo válido tal y como se define en [Espacios de nombres en XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Si no se especifica ningún espacio de nombres, se asume el espacio de nombres predeterminado.<br/> | Nombre de la opción.<br/>                                           |
 | \_IdentityOptionValue\_<br/> | string<br/> | N/D<br/>        | True, False.<br/>                                                                                                                                                               | Define una opción que, cuando se selecciona, deshabilitaría esta característica.<br/> |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>contenido lenguaje de marcado extensible (XML)
+## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
-Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
+Las palabras clave de esquema de impresión públicas se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) de esta palabra clave se define a continuación:
 
 ``` syntax
 <psf:Feature name="psk:DocumentCollate">
@@ -107,7 +107,7 @@ Las palabras clave del esquema de impresión público se definen en el espacio d
 
 <dl> <dt>
 
-[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

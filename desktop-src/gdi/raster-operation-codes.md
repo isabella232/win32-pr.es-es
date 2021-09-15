@@ -4,12 +4,12 @@ ms.assetid: 7f8272b8-85c4-4bda-99cb-4ec281e8197e
 title: Códigos de operación de trama
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 549eef1e33f9147fb22b6194010cf719812dc6c3acfe8916fb4c3f07eb309e70
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fed2a574cca18725e15fa5bf2b2687b46f635f4b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120092845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572936"
 ---
 # <a name="raster-operation-codes"></a>Códigos de operación de trama
 

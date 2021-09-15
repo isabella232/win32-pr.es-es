@@ -1,7 +1,7 @@
 ---
 description: 'Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3DX10.h): gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.'
 ms.assetid: da023816-5176-460d-ab6b-909b89cc46cd
-title: Método ID3DXMATRIXStack::RotateYawPtrixRollLocal (D3DX10.h)
+title: Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 840e51c420d3c5241edc410233b03dd948c408dda7e81a1aba6d104066cd6fe8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 726a6d7092b95f53d17625f68884b92d347de3a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118301698"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580665"
 ---
-# <a name="id3dxmatrixstackrotateyawpitchrolllocal-method-d3dx10h"></a>Método ID3DXMATRIXStack::RotateYawPtrixRollLocal (D3DX10.h)
+# <a name="id3dxmatrixstackrotateyawpitchrolllocal-method-d3dx10h"></a>Método ID3DXMATRIXStack::RotateYawPitchRollLocal (D3DX10.h)
 
 Gira (en relación con el espacio de coordenadas local del objeto) alrededor de un eje arbitrario.
 
@@ -56,7 +56,7 @@ La yaw alrededor del eje Y en radianes.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-El paso alrededor del eje X en radianes.
+El tono alrededor del eje X en radianes.
 
 </dd> <dt>
 
@@ -75,7 +75,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método agrega la rotación a la pila de matriz con la matriz de rotación calculada similar a la siguiente:
 
@@ -101,7 +101,7 @@ Dado que la rotación se multiplica a la izquierda en la pila de matriz, la rota
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

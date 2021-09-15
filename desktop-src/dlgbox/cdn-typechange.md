@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf55584aafd5c73ee3ec2b756b59054e8aabaaf4cf5974a09dd11d3b4f40b655
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3922dd71b70ace579fa4b5f2318776779afdfa4e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118504193"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566565"
 ---
 # <a name="cdn_typechange-notification-code"></a>\_CDN Código de notificación TYPECHANGE
 
@@ -53,7 +53,7 @@ Este parámetro no se utiliza.
 
 Puntero a una [**estructura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya)
 
-La [**estructura OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) contiene una estructura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) **cuyo** miembro de código indica el CDN **de notificación \_ TYPECHANGE.**
+La [**estructura OFNOTIFY contiene**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) una estructura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) **cuyo** miembro de código indica el CDN **de notificación \_ TYPECHANGE.**
 
 La [**estructura OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) también contiene un puntero a una estructura [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) cuyo **miembro nFilterIndex** indica el índice basado en uno del filtro de tipo de archivo recién seleccionado.
 
@@ -63,7 +63,7 @@ La [**estructura OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) 
 
 Este mensaje no tiene ningún valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El sistema envía esta notificación solo si el cuadro de diálogo se creó con el **valor OFN \_ EXPLORER.**
 
@@ -71,7 +71,7 @@ El sistema envía esta notificación solo si el cuadro de diálogo se creó con 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
@@ -79,7 +79,7 @@ El sistema envía esta notificación solo si el cuadro de diálogo se creó con 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

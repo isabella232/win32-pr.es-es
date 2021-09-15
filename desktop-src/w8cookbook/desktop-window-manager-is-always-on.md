@@ -4,12 +4,12 @@ description: Administrador de ventanas de escritorio está siempre on
 ms.assetid: 36E2DD1B-E480-47A9-850B-3057119641C0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b256b4270ab0bbeba588a4beff9bd1bd2bbe1c8166b40cd527f8b48a4f897df0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f855635615dee734b9a719d4e51d3ead663d144e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120057365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575653"
 ---
 # <a name="desktop-window-manager-is-always-on"></a>Administrador de ventanas de escritorio está siempre on
 
@@ -31,15 +31,15 @@ Con Windows 8, la composición de escritorio está habilitada para todos los tem
 
 **Compatibilidad con estereocopía 3D**
 
-La composición de escritorio de DWM admite la representación y presentación de contenido de aplicaciones 3D estereomáticas y de pantalla completa.
+La composición de escritorio dwm admite la representación y presentación del contenido de la aplicación 3D estereomática de pantalla completa y en ventanas.
 
 **Administración, separación y protección de la experiencia con Windows Store**
 
-La composición de escritorio de DWM permite separar y proteger las ventanas de aplicaciones de escritorio de las nuevas ventanas de aplicaciones de Windows Store mediante la administración y separación de las ventanas de la aplicación de escritorio de las ventanas de la aplicación Windows Store. Dado que la composición de escritorio es responsable de administrar todas las ventanas de la aplicación, deshabilitar la composición de escritorio puede dar lugar a un comportamiento inesperado. Además, la composición de escritorio es responsable de componer el nuevo menú Inicio, así como de animaciones de ventana adicionales que forman la personalidad principal del nuevo sistema operativo Windows sistema operativo.
+La composición de escritorio de DWM permite separar y proteger las ventanas de aplicaciones de escritorio de las nuevas ventanas de aplicaciones de Windows Store mediante la administración y separación de las ventanas de la aplicación de escritorio de las ventanas de Windows Store. Dado que la composición de escritorio es responsable de administrar todas las ventanas de la aplicación, deshabilitar la composición de escritorio puede dar lugar a un comportamiento inesperado. Además, la composición de escritorio es responsable de componer el nuevo menú Inicio, así como de animaciones de ventana adicionales que forman la personalidad principal del nuevo Windows operativo.
 
 ## <a name="controlling-desktop-composition"></a>Control de la composición del escritorio
 
-En Windows Vista y Windows 7, la composición de escritorio está deshabilitada en varios escenarios. En Windows 8, la composición de escritorio de DWM es un componente principal del sistema operativo y no se puede deshabilitar. Con algunas excepciones, la composición de escritorio está siempre on; se inicia antes del inicio de sesión del usuario y permanece activo durante la sesión. En esta sección se describe cómo Windows 8 los escenarios de Windows 7 en los que la composición de escritorio está deshabilitada.
+En Windows Vista y Windows 7, la composición de escritorio está deshabilitada en una serie de escenarios. En Windows 8, la composición de escritorio de DWM es un componente principal del sistema operativo y no se puede deshabilitar. Con algunas excepciones, la composición de escritorio está siempre en estado on; se inicia antes del inicio de sesión del usuario y permanece activo durante la sesión. En esta sección se describe cómo Windows 8 los escenarios de Windows 7 en los que la composición de escritorio está deshabilitada.
 
 **SKU de servidor y determinadas SKU de cliente**
 
@@ -87,13 +87,13 @@ En Windows 8:
 -   No admite controladores reflejados para escenarios de comunicación remota. aunque la mayoría de las aplicaciones existentes que usan controladores reflejados deben seguir funcionando, debido al cambio de infraestructura necesario para admitir controladores reflejados existentes en Windows 8 con DWM ON, es posible que algunas características o aplicaciones que usan controladores reflejados no funcionen.
 -   Admite api de duplicación de escritorio para desarrolladores de aplicaciones que usan controladores reflejados para escenarios de comunicación remota.
 -   No admite controladores de reflejo de accesibilidad existentes
--   Los controladores reflejados existentes deben actualizarse para asegurarse de que son compatibles con Windows 8
+-   Los controladores de reflejo existentes deben actualizarse para asegurarse de que son compatibles con Windows 8
 
 **Conexión a Escritorio remoto**
 
-En Windows 8, la composición de escritorio siempre está habilitada para una conexión a Escritorio remoto. Un equipo cliente que se conecta a un Windows 8 remoto siempre tendrá habilitada la composición de escritorio para la sesión de Escritorio remoto independientemente de la versión Windows cliente. La composición de escritorio se admite para varios monitores en el equipo cliente, así como para la sesión de la aplicación remota.
+En Windows 8, la composición de escritorio siempre está habilitada para una conexión a Escritorio remoto. Un equipo cliente que se conecta a un Windows 8 remoto siempre tendrá habilitada la composición de escritorio para la sesión de Escritorio remoto independientemente de Windows versión del cliente. La composición de escritorio se admite para varios monitores en el equipo cliente, así como para la sesión de la aplicación remota.
 
-Además, al conectarse a un Windows 8 remoto, esta configuración en el Conexión a Escritorio remoto cliente no tiene efecto:
+Además, al conectarse a un Windows 8 remoto, esta configuración en Conexión a Escritorio remoto cliente no tiene efecto:
 
 -   Profundidad de color
 -   Casilla "Habilitar composición"

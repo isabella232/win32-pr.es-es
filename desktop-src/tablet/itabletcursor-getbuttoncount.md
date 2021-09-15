@@ -14,12 +14,12 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 82a0825d64bc93601b933a98b3a7e0e3f321954d2fb2d7aa285d8d08a315545c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 08fdf24b2a0b69b7830a683786f18fc5df0805b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119336025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574472"
 ---
 # <a name="itabletcursorgetbuttoncount-method"></a>ITabletCursor::GetButtonCount (método)
 
@@ -74,7 +74,7 @@ Este método puede devolver uno de estos valores.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9343659ac249153805e3dfc4c97595957dfbe52bf7be5c498d81f357c66db8e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9235a4047617dd2e5ff9f14925908ae7a0dc1060
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119851545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566697"
 ---
 # <a name="id3dx11effectvectorvariable-interface"></a>Interfaz ID3DX11EffectVectorVariable
 
 Una interfaz vector-variable accede a un vector de cuatro componentes.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ID3DX11EffectVectorVariable** hereda de [**ID3DX11EffectVariable**](id3dx11effectvariable.md). **ID3DX11EffectVectorVariable** también tiene estos tipos de miembros:
 
@@ -58,7 +58,7 @@ La **interfaz ID3DX11EffectVectorVariable** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)

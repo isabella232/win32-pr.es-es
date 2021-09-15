@@ -4,12 +4,12 @@ ms.assetid: ce9c7b96-f2a3-4a64-8b5e-df46c479b619
 title: System.DeviceInterface.Proximity.SupportsNfc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c88c76dfca5ecfce98675404199635777e23aba03c34a0958c0898ded6dc4a97
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b49a09b7d8c1cd26b6edb3daeb644d283a97b257
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119599325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574620"
 ---
 # <a name="systemdeviceinterfaceproximitysupportsnfc"></a>System.DeviceInterface.Proximity.SupportsNfc
 
@@ -30,7 +30,7 @@ propertyDescription
       type = Boolean
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 703668427757df19675734e1503296a8a7144517801d0e8fdc0fadb25a16b0a0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f11a60e41b7f78be3440e16a7d2b3934f75e8ee3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119054893"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476228"
 ---
 # <a name="htmlview-element"></a>Elemento HTMLView
 
@@ -42,7 +42,7 @@ El **elemento HTMLView** especifica la dirección URL base de una página web HT
 <span id="BaseURL__required_"></span><span id="baseurl__required_"></span><span id="BASEURL__REQUIRED_"></span>**BaseURL** (obligatorio)
 </dt> <dd>
 
-Dirección URL base de la página web HTMLView que Reproductor de Windows Media muestra.
+Dirección URL base de la página web HTMLView que Reproductor de Windows Media página web.
 
 </dd> </dl>
 
@@ -61,7 +61,7 @@ Dirección URL base de la página web HTMLView que Reproductor de Windows Media 
 
 ## <a name="remarks"></a>Observaciones
 
-Puede usar este elemento para integrar la característica HTMLView con la tienda en línea. Si el dominio de la dirección URL especificada por la tienda en línea actual coincide con el de la página web HTMLView, el cambio a **Reproducción** ahora se produce sin intervención del usuario y se muestra el contenido HTMLView. En caso Reproductor de Windows Media, solicita al usuario permiso para mostrar el contenido HTMLView.
+Puede usar este elemento para integrar la característica HTMLView con su tienda en línea. Si el dominio de la dirección URL especificada por la tienda en línea actual coincide con el de la página web HTMLView, el cambio a **Reproducción** ahora se produce sin intervención del usuario y se muestra el contenido HTMLView. De lo contrario, Reproductor de Windows Media solicita al usuario permiso para mostrar el contenido de HTMLView.
 
 Por ejemplo, si la dirección URL de la página web HTMLView es y la dirección URL del atributo BaseURL se especifica como , la página web HTMLView se muestra sin preguntar https://www.proseware.com/html/HTMLView.htm al  https://www.proseware.com usuario.
 
@@ -69,7 +69,7 @@ Por ejemplo, si la dirección URL de la página web HTMLView es y la dirección 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 10 o posterior<br/> |
 
@@ -82,7 +82,7 @@ Por ejemplo, si la dirección URL de la página web HTMLView es y la dirección 
 [**Mostrar páginas web en Reproductor de Windows Media**](displaying-web-pages-in-windows-media-player.md)
 </dt> <dt>
 
-[**Documento ServiceInfo de ejemplo para una tienda en línea de tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
+[**Documento ServiceInfo de ejemplo para un almacén en línea de tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
 [**Documento ServiceInfo de ejemplo para una tienda en línea de tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)

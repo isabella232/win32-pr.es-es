@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 0e8e4c369eab647d51fbb690338ff9451a010bfac69af68ec1209ada10db4018
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0036ee0a49225568aac066735824fe55ce8f0fa6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118395043"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476933"
 ---
 # <a name="eventtraceevent-class"></a>Clase EventTraceEvent
 
@@ -34,7 +34,7 @@ class EventTraceEvent : MSNT_SystemTrace
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase EventTraceEvent** no define ningún miembro.
 
@@ -42,21 +42,21 @@ La **clase EventTraceEvent** no define ningún miembro.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [**SystemTrace de MSNT \_**](msnt-systemtrace.md)
 </dt> <dt>
 
-[**Encabezado de \_ EventTrace**](eventtrace-header.md)
+[**Encabezado \_ eventtrace**](eventtrace-header.md)
 </dt> </dl>
 
  

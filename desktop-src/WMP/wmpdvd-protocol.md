@@ -10,17 +10,17 @@ keywords:
 - ActiveX control,protocolos para el modelo de objetos
 - Reproductor de Windows Media Control de ActiveX móviles, protocolos para el modelo de objetos
 - Reproductor de Windows Media Móvil, protocolos para el modelo de objetos
-- protocolos, Reproductor de Windows Media modelo de objetos
-- protocols,WMPDVD
+- protocolos, Reproductor de Windows Media de objetos
+- protocolos, WMPDVD
 - Protocolo WMPDVD
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ca67f3cdee6f040aeb266e02493425ca76715ade2e3269f4377ba340af89cc9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bc4d3949c18a268ea6a2fffc196081ba466b5758
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119761295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579384"
 ---
 # <a name="wmpdvd-protocol"></a>Protocolo WMPDVD
 
@@ -33,13 +33,13 @@ wmpdvd://drive/title/chapter?contentdir=path
 
 
 
-El *segmento de* unidad es la letra de la unidad de DVD; no incluye los dos puntos que se usan normalmente con los especificadores de unidad. Este segmento siempre es necesario.
+El *segmento de* unidad es la letra de la unidad de DVD; no incluye los dos puntos que se usan normalmente con los especificadores de unidad. Este segmento siempre es obligatorio.
 
 El *segmento* de título es el número del título que se va a reproducir. No es necesario a menos que desee iniciar la reproducción en un título específico o en un capítulo específico de un título específico.
 
 El *segmento* de capítulo es el número del capítulo que se va a reproducir. No es necesario a menos que desee iniciar la reproducción en un capítulo específico de un título específico.
 
-El argumento contentdir es la ruta de acceso a un VIDEO \_ TS. Archivo IFO, que puede estar en el almacenamiento local o en un recurso compartido de red. Si incluye este segmento, se *omite* el segmento de unidad, aunque sigue siendo necesario. Si también incluye el segmento  *de*  título o los segmentos de título y capítulo, estos son relativos al contenido del DVD especificado en el segmento contentdir, no al segmento *de unidad.*
+El argumento contentdir es la ruta de acceso a un \_ TS de VÍDEO. Archivo IFO, que puede estar en almacenamiento local o en un recurso compartido de red. Si incluye este segmento, el segmento *de* unidad se omite aunque sigue siendo necesario. Si también incluye el segmento  *de*  título o los segmentos de título y capítulo, estos son relativos al contenido del DVD especificado en el segmento contentdir, no al segmento *de unidad.*
 
 En el ejemplo siguiente se usa el protocolo WMPDVD para reproducir el DVD desde el principio, como si se iniciara automáticamente.
 
@@ -68,7 +68,7 @@ player.url = "wmpdvd://F/2/4";
 
 
 
-En el ejemplo siguiente se usa el protocolo WMPDVD para reproducir contenido de DVD desde el almacenamiento local. La *cadena de* ruta de acceso termina con la carpeta que contiene VIDEO \_ TS. Archivo IFO; no incluye el nombre de archivo. En este ejemplo, el  valor del segmento de unidad no tiene ningún efecto, aunque es necesario, y la reproducción comienza en el capítulo 4 del título 2.
+En el ejemplo siguiente se usa el protocolo WMPDVD para reproducir contenido de DVD desde el almacenamiento local. La *cadena de* ruta de acceso termina con la carpeta que contiene video \_ ts. Archivo IFO; no incluye el nombre de archivo. En este ejemplo, el  valor del segmento de unidad no tiene ningún efecto, aunque es necesario, y la reproducción comienza en el capítulo 4 del título 2.
 
 
 ```C++

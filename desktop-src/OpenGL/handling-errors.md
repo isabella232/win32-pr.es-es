@@ -7,12 +7,12 @@ keywords:
 - GLU (utilidad OpenGL),códigos de error
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75ac3fd9010862dd9c567cb7688f7f96286cae06f7e3b0e4ffe73d3b41ca9b67
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ab319fd978cd5ea901133fc9961caf1c66f3185d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120035195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476675"
 ---
 # <a name="handling-errors-opengl"></a>Control de errores (OpenGL)
 

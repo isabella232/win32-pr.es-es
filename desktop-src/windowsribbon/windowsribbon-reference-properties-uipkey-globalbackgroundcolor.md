@@ -1,19 +1,19 @@
 ---
 title: UI_PKEY_GlobalBackgroundColor
-description: Identifica la propiedad \_ PKEY GlobalBackgroundColor de la interfaz de \_ usuario.
+description: Identifica la propiedad \_ GlobalBackgroundColor de PKEY de la \_ interfaz de usuario.
 ms.assetid: c449db6d-cdb8-4794-a804-86b718ea12aa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53d771ea882cda169e7c2c22a041321b7feedb3e3a9df8c192bbb47efdd228af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ccd955d7f3d989ab6ec684cbb6ff6336df433b32
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118706701"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574353"
 ---
 # <a name="ui_pkey_globalbackgroundcolor"></a>UI \_ PKEY \_ GlobalBackgroundColor
 
-Identifica la propiedad \_ PKEY GlobalBackgroundColor de la interfaz de \_ usuario.
+Identifica la propiedad \_ GlobalBackgroundColor de PKEY de la \_ interfaz de usuario.
 
 ```
 propertyDescription
@@ -25,7 +25,7 @@ propertyDescription
       type = VT_UI4
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La \_ interfaz de usuario PKEY GlobalBackgroundColor la usa una aplicación para consultar \_ el color de fondo global de una cinta personalizada.
 

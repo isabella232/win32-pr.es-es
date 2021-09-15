@@ -14,12 +14,12 @@ keywords:
 - entrada sin procesar del panel de juego
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed7c020af77c20e191f0c71a2e89f66d13dddb9e85c3753ff1789e02729e0495
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 637137481fd930214beb04d2c75a7a2921d8b5fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117884312"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567604"
 ---
 # <a name="using-raw-input"></a>Uso de entrada sin procesar
 
@@ -35,7 +35,7 @@ En esta sección se incluye código de ejemplo para los siguientes fines:
 
 ### <a name="example-1"></a>Ejemplo 1
 
-En este ejemplo, una aplicación especifica la entrada sin procesar de los controladores de juego (tanto de las almohadillas de juego como de los baterías) y de todos los dispositivos de la página de uso de telefonía, excepto los equipos de respuesta.
+En este ejemplo, una aplicación especifica la entrada sin procesar de los controladores de juego (tanto las almohadillas como los mandos) y todos los dispositivos fuera de la página de uso de telefonía, excepto los equipos de respuesta.
 
 ```cpp
 RAWINPUTDEVICE Rid[4];
@@ -68,7 +68,7 @@ if (RegisterRawInputDevices(Rid, 4, sizeof(Rid[0])) == FALSE)
 
 ### <a name="example-2"></a>Ejemplo 2
 
-En este ejemplo, una aplicación quiere una entrada sin [](keyboard-input-notifications.md) procesar del teclado y el mouse, pero quiere omitir los mensajes heredados de teclado y ventana [del mouse](mouse-input-notifications.md) (que proceden del mismo teclado y mouse).
+En este ejemplo, una aplicación quiere una entrada sin [](keyboard-input-notifications.md) procesar del teclado y el mouse, pero quiere omitir los mensajes heredados de teclado y ventana del [mouse](mouse-input-notifications.md) (que proceden del mismo teclado y mouse).
 
 ```cpp
 RAWINPUTDEVICE Rid[2];

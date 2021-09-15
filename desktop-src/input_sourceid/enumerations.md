@@ -4,12 +4,12 @@ ms.assetid: 0DED867D-75FF-4343-BBB7-D71E7FF7D217
 title: Enumeraciones de identificación de origen de entrada
 ms.topic: article
 ms.date: 02/05/2020
-ms.openlocfilehash: 40e31b81a3c2e5fe3c86074a7645443fef2a651d6c0e2268b37fd27caa01a176
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 84065a6e84bc812db47c429412489c6a765ebef7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118758120"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580032"
 ---
 # <a name="input-source-identification-enumerations"></a>Enumeraciones de identificación de origen de entrada
 

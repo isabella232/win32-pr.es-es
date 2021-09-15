@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbSyntax
-ms.openlocfilehash: 39bac7948e0a7ff31dfa9805a3398c916a0457632fa577a744009d8a08b7d0e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 28cc0abcfc36f482762913051ae79106f0184934
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119943425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579629"
 ---
 # <a name="cpl_select-message"></a>Mensaje SELECT de CPL \_
 
-Este mensaje no se admite.
+No se admite este mensaje.
 
  
 

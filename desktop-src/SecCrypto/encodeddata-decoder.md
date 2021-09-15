@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 7496aa3873fda9e4cd0adc86773a8c06ca60be25e3625c26f3b7a97508f48e0a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 334895ed683d0c582628b4b623a7343ca561be22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117766828"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476457"
 ---
 # <a name="encodeddatadecoder-method"></a>Método EncodedData.Decoder
 
@@ -39,7 +39,7 @@ EncodedData.Decoder()
 
 Este método no tiene parámetros.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si los datos codificados no tienen un objeto descodificador, **se devuelve NULL.**
 

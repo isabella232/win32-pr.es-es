@@ -4,12 +4,12 @@ ms.assetid: 76989eb3-cd95-4dfc-ba0f-7563860b531c
 title: Vértice de vértice (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76196ba0489ac58529bcb5c0500a269c8ee27b87040ec96f64ef228377dc8abd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 35cd880bda7ebffd36bd95bec5f8565e104eaa15
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120068985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580105"
 ---
 # <a name="vertex-fog-direct3d-9"></a>Vértice de vértice (Direct3D 9)
 
@@ -22,10 +22,10 @@ Si la aplicación no usa Direct3D para la transformación y la iluminación, la 
 
  
 
-## <a name="range-based-fog"></a>Range-Based DescRange-Based
+## <a name="range-based-fog"></a>Range-Based Descándalo
 
 > [!Note]  
-> Direct3D usa cálculos de cálculos de cálculo basados en intervalos solo cuando se usa el vértice con el motor de iluminación y transformación de Direct3D. Esto se debe a que el pixel se implementa en el controlador del dispositivo y actualmente no existe hardware para admitir el rango basado en píxeles. Si la aplicación realiza su propia transformación e iluminación, debe realizar sus propios cálculos de cálculo, basados en intervalos o de otro modo.
+> Direct3D usa cálculos de cálculos de cálculo basados en intervalos solo cuando se usa el vértice con el motor de iluminación y transformación de Direct3D. Esto se debe a que el pixel se implementa en el controlador del dispositivo y actualmente no existe hardware para admitir el rango basado en píxeles. Si la aplicación realiza su propia transformación e iluminación, debe realizar sus propios cálculos de cálculo, basados en intervalos o de otro tipo.
 
  
 
@@ -33,7 +33,7 @@ En ocasiones, el uso de los artefactos gráficos puede introducir artefactos gr�
 
 ![diagrama de dos puntos de vista y cómo afectan a los efectos de dos objetos](images/artifog.png)
 
-El sonido basado en intervalos es otra manera más precisa de determinar los efectos de las nubes. En intervalos basados en intervalos, Direct3D usa la distancia real desde el punto de vista hasta un vértice para sus cálculos de cálculos de cálculo. Direct3D aumenta el efecto de la flecha a medida que aumenta la distancia entre los dos puntos, en lugar de la profundidad del vértice dentro de la escena, lo que evita artefactos de rotación.
+El sonido basado en intervalos es otra manera más precisa de determinar los efectos de las nubes. En la curva basada en intervalos, Direct3D usa la distancia real desde el punto de vista hasta un vértice para sus cálculos de cálculos de cálculo de cálculo. Direct3D aumenta el efecto de la flecha a medida que aumenta la distancia entre los dos puntos, en lugar de la profundidad del vértice dentro de la escena, lo que evita artefactos de rotación.
 
 Si el dispositivo actual admite intervalos, establecerá el valor D3DPRASTERCAPS RANGE en el miembro \_ RasterCaps de [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9) al llamar al método [**IDirect3DDevice9::GetDeviceCaps.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getdevicecaps) Para habilitar el intervalo basado en intervalos, establezca el estado de representación D3DRS \_ RANGEFOGENABLE en **TRUE.**
 
@@ -44,7 +44,7 @@ Direct3D calcula la frecuencia basada en intervalos durante la transformación y
 Siga estos pasos para habilitar vértices en la aplicación.
 
 1.  Habilite la mezcla de mezcla estableciendo \_ D3DRSEVEENABLE en **TRUE.**
-2.  Establezca el color de color de color azul en el estado de representación \_ D3DRSCOLORCOLOR.
+2.  Establezca el color de color azul en el estado de representación \_ D3DRSCOLORCOLOR.
 3.  Elija la fórmula de fórmula deseada estableciendo el estado de representación D3DRSOGVERTEXMODE en un miembro del tipo \_ enumerado [**D3DFOGMODE.**](./d3dfogmode.md)
 4.  Establezca los parámetros de los estados de representación según sea necesario para la fórmula de matriz seleccionada.
 

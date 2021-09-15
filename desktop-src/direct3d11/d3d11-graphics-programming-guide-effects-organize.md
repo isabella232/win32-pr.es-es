@@ -4,12 +4,12 @@ description: Con Direct3D 11, el estado de efecto de determinadas fases de canal
 ms.assetid: e5057f94-69dd-4219-a5f4-569e48502475
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d36bf99887e96dc5854778edb24f0ceacbc0cdf5a7994532bc2ebd94137fe8b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b5a0523dd8abdabde29a5485b8d3b1e6d13b9429
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119126099"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575325"
 ---
 # <a name="organizing-state-in-an-effect-direct3d-11"></a>Organización del estado en un efecto (Direct3D 11)
 
@@ -27,7 +27,7 @@ Con Direct3D 11, el estado de efecto de determinadas fases de canalización se o
 
  
 
-Para las fases del sombreador, donde el número de cambios de estado debe estar más controlado por una aplicación, el estado se ha dividido en estado de búfer constante, estado del muestreador, estado de recurso del sombreador y estado de vista de acceso desordenado (para sombreadores de píxeles y de proceso). Esto permite que una aplicación diseñada cuidadosamente actualice solo el estado que está cambiando, lo que mejora el rendimiento al reducir la cantidad de datos que se deben pasar a la GPU.
+Para las fases del sombreador, donde una aplicación debe controlar más el número de cambios de estado, el estado se ha dividido en estado de búfer constante, estado del muestreador, estado de recurso del sombreador y estado de vista de acceso desordenado (para sombreadores de píxeles y de proceso). Esto permite que una aplicación diseñada cuidadosamente actualice solo el estado que está cambiando, lo que mejora el rendimiento al reducir la cantidad de datos que se deben pasar a la GPU.
 
 ¿Cómo se organiza el estado de la canalización en un efecto?
 
@@ -66,17 +66,17 @@ SamplerState MeshTextureSampler
 
 
 
-La sintaxis de las variables de efecto se detalla más detalladamente en [Sintaxis de variables de efecto (Direct3D 11).](d3d11-effect-variable-syntax.md) La sintaxis de los muestreadores de textura de efecto se detalla más detalladamente en [Sampler Type (DirectX HLSL) (Tipo de sampler [HLSL de DirectX]).](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-sampler)
+La sintaxis de las variables de efecto se detalla más detalladamente en [Sintaxis de variable de efecto (Direct3D 11).](d3d11-effect-variable-syntax.md) La sintaxis de los muestreadores de textura de efecto es más detallada en [Sampler Type (DirectX HLSL).](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-sampler)
 
 ## <a name="shaders"></a>Sombreadores
 
-Los sombreadores son pequeños programas ejecutables. Puede pensar que los sombreadores encapsulan el estado del sombreador, ya que el código HLSL implementa la funcionalidad del sombreador. Canalización de gráficos de hasta cinco tipos diferentes de sombreadores.
+Los sombreadores son programas ejecutables pequeños. Puede pensar que los sombreadores encapsulan el estado del sombreador, ya que el código HLSL implementa la funcionalidad del sombreador. La canalización de gráficos hasta cinco tipos diferentes de sombreadores.
 
 -   Sombreadores de vértices: operan en datos de vértices. Un vértice de produce un vértice.
 -   Sombreadores de casco: funcionan con datos de revisión. Fase de punto de control: una invocación produce un punto de control; Para cada fase de bifurcación y combinación: una revisión produce cierta cantidad de datos constantes de revisión.
--   Sombreadores de dominio: funcionan con datos primitivos. Una primitiva puede producir 0, 1 o muchas primitivas.
+-   Sombreadores de dominio: funcionan con datos primitivos. Una primitiva puede producir 0, 1 o muchos primitivos.
 -   Sombreadores de geometría: funcionan con datos primitivos. Una primitiva de puede producir 0, 1 o muchas primitivas.
--   Sombreadores de píxeles: funcionan con datos de píxeles. Un píxel de produce 1 píxel de salida (a menos que el píxel se culcule fuera de una representación).
+-   Sombreadores de píxeles: funcionan con datos de píxeles. Un píxel de produce 1 píxel de salida (a menos que el píxel se culte fuera de una representación).
 
 La canalización del sombreador de proceso usa un sombreador:
 
@@ -84,7 +84,7 @@ La canalización del sombreador de proceso usa un sombreador:
 
 Los sombreadores son funciones locales y siguen las reglas de función de estilo C. Cuando se compila un efecto, se compila cada sombreador y se almacena internamente un puntero a cada función de sombreador. Se devuelve una interfaz ID3D11Effect cuando la compilación se realiza correctamente. En este momento, el efecto compilado está en un formato intermedio.
 
-Para obtener más información sobre los sombreadores compilados, deberá usar la reflexión del sombreador. Esto es básicamente como pedir al tiempo de ejecución que descompile los sombreadores y devolverle información sobre el código del sombreador.
+Para obtener más información sobre los sombreadores compilados, deberá usar la reflexión del sombreador. Esto es esencialmente como pedir al tiempo de ejecución que descompile los sombreadores y devolverle información sobre el código del sombreador.
 
 
 ```
@@ -135,7 +135,7 @@ La sintaxis de los sombreadores de efectos se detalla más detalladamente en Sin
 
 ## <a name="groups-techniques-and-passes"></a>Grupos, técnicas y pases
 
-Un grupo es una colección de técnicas. Una técnica es una colección de pases de representación (debe haber al menos un paso). Cada paso de efecto (que es similar en el ámbito a un único paso de un bucle de representación) define el estado del sombreador y cualquier otro estado de canalización necesario para representar la geometría.
+Un grupo es una colección de técnicas. Una técnica es una colección de pases de representación (debe haber al menos un paso). Cada paso de efecto (que es similar en el ámbito a un solo paso de un bucle de representación) define el estado del sombreador y cualquier otro estado de canalización necesario para representar la geometría.
 
 Los grupos son opcionales. Hay un único grupo sin nombre que abarca todas las técnicas globales. Todos los demás grupos deben tener un nombre.
 
@@ -168,7 +168,7 @@ fxgroup g0
 
 
 
-La sintaxis de los sombreadores de efectos se detalla más detalladamente en Sintaxis de técnica [de efecto (Direct3D 11).](d3d11-effect-technique-syntax.md)
+La sintaxis de los sombreadores de efectos se detalla más detalladamente en Sintaxis de técnica de [efecto (Direct3D 11).](d3d11-effect-technique-syntax.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

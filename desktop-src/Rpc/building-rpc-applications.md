@@ -6,21 +6,21 @@ keywords:
 - Llamada a procedimiento remoto RPC, tareas, creación de aplicaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2b391e38e9cefb3e0526d04bfe581aec94cd976fc377f0ae986cbb8e45bf895
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c65b68523b383aefad17a4ec9b729030fb5e0b1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120023035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476602"
 ---
 # <a name="building-rpc-applications"></a>Creación de aplicaciones RPC
 
-El procedimiento para crear una aplicación de llamada a procedimiento remoto distribuido (RPC) varía ligeramente, en función de lo siguiente:
+El procedimiento para compilar una aplicación de llamada a procedimiento remoto distribuido (RPC) varía ligeramente, en función de:
 
 -   La plataforma de sistema operativo en la que se está desarrollando.
 -   Plataforma de destino.
--   La versión del midl y del compilador de C o C++ que se usa.
--   Las bibliotecas de API que se usan.
+-   La versión del compilador midl y C o C++ que se usa.
+-   Bibliotecas de API que se usan.
 
 En esta sección se describe el proceso de creación de aplicaciones cliente/servidor con la llamada a procedimiento remoto de Microsoft. Presenta la información en los temas siguientes:
 

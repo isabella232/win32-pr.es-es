@@ -1,5 +1,5 @@
 ---
-description: La función GetNetworkInfoFromBlob recupera información de red de un BLOB determinado.
+description: La función GetNetworkInfoFromBlob recupera información de red de un blob determinado.
 ms.assetid: 217c33f4-e548-4072-9edd-ded61e6cd743
 title: Función GetNetworkInfoFromBlob (Netmon.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 0b2eb0dbc151a7a243b4e2e56cb6830c9b27ac1e2e9f8faea8d5cb0ad647bd09
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f8b15dce010febdc952c2527a9f4ad31054fa3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117982319"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476756"
 ---
 # <a name="getnetworkinfofromblob-function"></a>Función GetNetworkInfoFromBlob
 
-La **función GetNetworkInfoFromBlob** recupera información de red de un BLOB determinado.
+La **función GetNetworkInfoFromBlob** recupera información de red de un blob determinado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,19 +56,19 @@ Puntero a la estructura [NETWORKINFO](networkinfo.md) asignada por el usuario qu
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la **función GetNetworkInfoFromBlob** se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
+Si la **función GetNetworkInfoFromBlob** es correcta, el valor devuelto es NMERR \_ SUCCESS.
 
 Si la función no se realiza correctamente, el valor devuelto es un valor NMERR que describe el error.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La información de red se almacena en la sección BLOB **NetworkInfo** de la categoría Propietario del NPP **de** BLOB.
+La información de red se almacena en la sección BLOB **NetworkInfo** de la categoría Propietario de NPP **de** BLOB.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: af88fd9b4be0c7ddd9fe5dfc204558c1a36cab418166f73c8de0ec0c06c0a8dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e5309061c6ab315a089a1e1d8b9488556cae9f31
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117766116"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476408"
 ---
 # <a name="envelopeddata-object"></a>Objeto EnvelopedData
 
@@ -26,7 +26,7 @@ ms.locfileid: "117766116"
 
 El **objeto EnvelopedData proporciona** propiedades y métodos para envolver datos para la privacidad mediante cifrado. Para envolver datos, se genera una clave criptográfica de sesión. A [*continuación,*](../secgloss/s-gly.md) esa clave de sesión [](../secgloss/p-gly.md) se cifra para cada destinatario previsto mediante la clave pública de ese destinatario previsto desde el certificado del destinatario. Los datos cifrados y el conjunto de claves de sesión cifradas se pueden enviar a todos los destinatarios previstos. El mensaje generado está en formato PKCS \# 7.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto EnvelopedData** tiene estos tipos de miembros:
 
@@ -42,7 +42,7 @@ El **objeto EnvelopedData** tiene estos métodos.
 | Método                                   | Descripción                                                                                                 |
 |:-----------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | [**Descifrar**](envelopeddata-decrypt.md) | Descifra el contenido en sobre.<br/>                                                                      |
-| [**Encrypt**](envelopeddata-encrypt.md) | Cifra el contenido, cifra una clave de sesión para cada destinatario y devuelve el BLOB cifrado.<br/> |
+| [**Cifrar**](envelopeddata-encrypt.md) | Cifra el contenido, cifra una clave de sesión para cada destinatario y devuelve el BLOB cifrado.<br/> |
 
 
 
@@ -54,17 +54,17 @@ El **objeto EnvelopedData** tiene estas propiedades.
 
 
 
-| Propiedad                                                  | Tipo de acceso           | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Propiedad.                                                  | Tipo de acceso           | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |:----------------------------------------------------------|:----------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Algoritmo**](envelopeddata-algorithm.md)<br/>   | Lectura/escritura<br/> | Algoritmo de cifrado y [*longitud de clave*](../secgloss/k-gly.md).<br/>                                                                                                                                                                                                                                                                                                                              |
-| [**Contenido**](envelopeddata-content.md)<br/>       | Lectura/escritura<br/> | El contenido de texto no cifrado de un mensaje que se va a envolvía. El establecimiento de esta propiedad debe realizarse antes [**de llamar al**](envelopeddata-encrypt.md) método Encrypt.<br/> Cuando se restablece el valor de esta propiedad, [](../secgloss/s-gly.md) directa o indirectamente, se restablece todo el estado del objeto y se pierde cualquier contenido cifrado del objeto.<br/> Esta es la propiedad predeterminada.<br/> |
+| [**Algoritmo**](envelopeddata-algorithm.md)<br/>   | Lectura y escritura<br/> | Algoritmo de cifrado y [*longitud de clave*](../secgloss/k-gly.md).<br/>                                                                                                                                                                                                                                                                                                                              |
+| [**Contenido**](envelopeddata-content.md)<br/>       | Lectura y escritura<br/> | El contenido de texto no cifrado de un mensaje que se va a envolvía. El establecimiento de esta propiedad debe realizarse antes [**de llamar al**](envelopeddata-encrypt.md) método Encrypt.<br/> Cuando se restablece el valor de esta propiedad, [](../secgloss/s-gly.md) directa o indirectamente, se restablece todo el estado del objeto y se pierde cualquier contenido cifrado del objeto.<br/> Esta es la propiedad predeterminada.<br/> |
 | [**Recipients**](envelopeddata-recipients.md)<br/> | Solo lectura<br/>  | Colección de [**objetos Certificate**](certificate.md) para recibir el mensaje sobres.<br/>                                                                                                                                                                                                                                                                                                                                              |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se **puede crear el objeto EnvelopedData** y es seguro para el scripting. El ProgID del **objeto EnvelopedData** es CAPICOM. EnvelopedData.1.
 
@@ -81,7 +81,7 @@ Se **puede crear el objeto EnvelopedData** y es seguro para el scripting. El Pro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

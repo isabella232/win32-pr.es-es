@@ -1,5 +1,5 @@
 ---
-description: Notifica al Panel de entrada que el usuario ha seleccionado algo en la lista autocompletar y que descarta todo el texto restante que aún no se ha insertado.
+description: Notifica al Panel de entrada que el usuario ha seleccionado algo en la lista autocompletar y descarta todo el texto restante que aún no se ha insertado.
 ms.assetid: 2e6fabe1-7984-4908-bf90-0603d0dad268
 title: Método ITipAutocompleteClient::UserSelection (TipAutoComplete.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - tiptsf.dll
-ms.openlocfilehash: 2dac765c3f1c3e709bb7066a1645c2d77783ea555bccd81f9d5809da802d7043
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1894db9da3b8e3a36e59eb45150b27facfe0291f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119843485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579440"
 ---
 # <a name="itipautocompleteclientuserselection-method"></a>ITipAutocompleteClient::UserSelection (método)
 
-Notifica al Panel de entrada que el usuario ha seleccionado algo en la lista autocompletar y que descarta todo el texto restante que aún no se ha insertado.
+Notifica al Panel de entrada que el usuario ha seleccionado algo en la lista autocompletar y descarta todo el texto restante que aún no se ha insertado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,7 +52,7 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se llama a este método desde el proveedor para notificar al cliente que el usuario ha realizado una selección.
 
@@ -60,11 +60,11 @@ Se llama a este método desde el proveedor para notificar al cliente que el usua
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                                       |
-| Header<br/>                   | <dl> <dt>TipAutoComplete.h (también requiere Peninputpanel \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>TipAutoComplete.h (también requiere Peninputpanel \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Tiptsf.dll</dt> </dl>                                           |
 
 

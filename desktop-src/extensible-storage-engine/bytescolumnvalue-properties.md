@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.byte
 ms:contentKeyID: 55100964
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: d7973f35a59af3cda2e8bb3bd400d2ef10e43e4f18fe9431f61ed50b62b343f0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bafae34a3fa6dac29cc504ebe9a34c0abd7b870a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117902111"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476037"
 ---
 # <a name="bytescolumnvalue-properties"></a>Propiedades BytesColumnValue
 
@@ -50,7 +50,7 @@ El [tipo BytesColumnValue](./bytescolumnvalue-class.md) expone los miembros sigu
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334126(v=exchg.10).md">Duración</a></td>
-<td>Obtiene la longitud de bytes de un valor de columna, que es cero si column es NULL; de lo contrario, coincide con la longitud real de la matriz de bytes. (Invalida <a href="dn334213(v=exchg.10).md">ColumnValue.Length</a>).</td>
+<td>Obtiene la longitud de bytes de un valor de columna, que es cero si column es null; de lo contrario, coincide con la longitud real de la matriz de bytes. (Invalida <a href="dn334213(v=exchg.10).md">ColumnValue.Length</a>).</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -75,7 +75,7 @@ El [tipo BytesColumnValue](./bytescolumnvalue-class.md) expone los miembros sigu
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334177(v=exchg.10).md">ValueAsObject</a></td>
-<td>Obtiene el último conjunto o valor recuperado de la columna. El valor se devuelve como un objeto genérico. (Invalida <a href="dn334214(v=exchg.10).md">ColumnValue.ValueAsObject</a>).</td>
+<td>Obtiene el último valor establecido o recuperado de la columna. El valor se devuelve como un objeto genérico. (Invalida <a href="dn334214(v=exchg.10).md">ColumnValue.ValueAsObject</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -83,7 +83,7 @@ El [tipo BytesColumnValue](./bytescolumnvalue-class.md) expone los miembros sigu
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

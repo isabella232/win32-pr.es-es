@@ -1,31 +1,31 @@
 ---
-description: Las siguientes extensiones de nombre de archivo se usan con Windows Installer.
+description: Las siguientes extensiones de nombre de archivo se usan con el Windows instalador.
 ms.assetid: 30a5c826-1eaf-4a9e-8c8b-c020a76a0582
 title: Windows Extensiones de nombre de archivo del instalador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0fb592b92650b45045f862c389206ad05e50ec2abd50c36c47bef191409312a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f7912196fca9d5732e96a46693719736de08613c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119808745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476875"
 ---
 # <a name="windows-installer-file-name-extensions"></a>Windows Extensiones de nombre de archivo del instalador
 
-Las siguientes extensiones de nombre de archivo se usan con Windows Installer.
+Las siguientes extensiones de nombre de archivo se usan con el Windows instalador.
 
 
 
 | Extensión | Descripción                                |
 |-----------|--------------------------------------------|
 | .msi      | Windows Base de datos del instalador.                |
-| .msm      | Windows Módulo de mezcla del instalador.            |
+| .msm      | Windows Módulo de combinación del instalador.            |
 | .msp      | Windows Revisión del instalador.                   |
 | .mst      | Windows Transformación del instalador.               |
-| .idt      | Tabla de base Windows del instalador exportado. |
+| .idt      | Tabla de base de Windows instalador exportada. |
 | .uu.      | Módulo de validación.                         |
-| .uu.      | Windows Archivo de creación de revisiones del instalador      |
+| .domain      | Windows Archivo de creación de revisiones del instalador      |
 
 
 
@@ -38,7 +38,7 @@ Las siguientes extensiones de nombre de archivo se usan con Windows Installer.
 [Paquete de instalación](installation-package.md)
 </dt> <dt>
 
-[Combinar módulos](merge-modules.md)
+[Módulos de combinación](merge-modules.md)
 </dt> <dt>
 
 [Paquetes de revisión](patch-packages.md)

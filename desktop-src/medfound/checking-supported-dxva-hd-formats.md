@@ -4,12 +4,12 @@ ms.assetid: 43ae9f70-34a1-48ca-be61-e974e2daebd7
 title: Comprobación de los formatos DXVA-HD admitidos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c92b28586148bb96a918c8a230a25ff1477af73e0604d3b62e11e644e8276b7b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d07d47043ed200d256e2bef8fa2c9ab6717f3b82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119035413"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574985"
 ---
 # <a name="checking-supported-dxva-hd-formats"></a>Comprobación de los formatos DXVA-HD admitidos
 
@@ -19,8 +19,8 @@ Para obtener una lista de los formatos de entrada que admite el dispositivo de a
 
 1.  Llame [**a IDXVAHD \_ Device::GetVideoProcessorDeviceCaps**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-getvideoprocessordevicecaps) para obtener las funcionalidades del dispositivo.
 2.  Compruebe el **miembro InputFormatCount** de la [**estructura DXVAHD \_ VPDEVCAPS.**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) Este miembro proporciona el número de formatos de entrada admitidos.
-3.  Asigne una matriz de **valores D3DFORMAT,** de tamaño **InputFormatCount**.
-4.  Pase esta matriz [**al método IDXVAHD \_ Device::GetVideoProcessorInputFormats.**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-getvideoprocessorinputformats) Los métodos rellenan la matriz con una lista de formatos de entrada.
+3.  Asigne una matriz de **valores D3DFORMAT,** de tamaño **InputFormatCount.**
+4.  Pase esta matriz al [**método IDXVAHD \_ Device::GetVideoProcessorInputFormats.**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-getvideoprocessorinputformats) Los métodos rellenan la matriz con una lista de formatos de entrada.
 
 El siguiente código muestra estos pasos:
 
@@ -76,8 +76,8 @@ done:
 Para obtener una lista de los formatos de salida que admite el dispositivo DXVA-HD, haga lo siguiente:
 
 1.  Llame [**a IDXVAHD \_ Device::GetVideoProcessorDeviceCaps**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-getvideoprocessordevicecaps) para obtener las funcionalidades del dispositivo.
-2.  Compruebe el **miembro OutputFormatCount** de la [**estructura DXVAHD \_ VPDEVCAPS.**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) Este miembro proporciona el número de formatos de entrada admitidos.
-3.  Asigne una matriz de **valores D3DFORMAT,** de tamaño **OutputFormatCount**.
+2.  Compruebe el **miembro OutputFormatCount** de la [**estructura \_ DXVAHD VPDEVCAPS.**](/windows/desktop/api/dxvahd/ns-dxvahd-dxvahd_vpdevcaps) Este miembro proporciona el número de formatos de entrada admitidos.
+3.  Asigne una matriz de **valores D3DFORMAT,** de tamaño **OutputFormatCount.**
 4.  Pase esta matriz al [**método IDXVAHD \_ Device::GetVideoProcessorOutputFormats.**](/windows/desktop/api/dxvahd/nf-dxvahd-idxvahd_device-getvideoprocessoroutputformats) Los métodos rellenan la matriz con una lista de formatos de salida.
 
 El siguiente código muestra estos pasos:

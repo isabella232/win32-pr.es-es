@@ -4,12 +4,12 @@ ms.assetid: dad7787f-417d-409c-bc7d-c7d5298bdfb0
 title: System.Photo.ApertureNumerator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 838b53294f69eaef2579b068381f02f66cac2f2741c4f417beadb7f517f1b4ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 401219846ab19f23bd2d632362de2eb069454122
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119716485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579680"
 ---
 # <a name="systemphotoaperturenumerator"></a>System.Photo.ApertureNumerator
 
@@ -30,7 +30,7 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

@@ -4,12 +4,12 @@ ms.assetid: b64a9554-a560-4212-8964-b68ebbadc046
 title: MF_SD_LANGUAGE atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cf8993256ae312975e37aefad7dad2d5262adff0738f879aa388fda30b87727
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad13ec4d7d17e715bd2583e499c686de26c7b9da
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117691730"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572812"
 ---
 # <a name="mf_sd_language-attribute"></a>Atributo MF \_ SD \_ LANGUAGE
 
@@ -19,7 +19,7 @@ Especifica el idioma de una secuencia.
 
 Cadena de caracteres anchos
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor de este atributo es una etiqueta de lenguaje compatible con RFC 1766. Este atributo se aplica a los descriptores de flujo.
 
@@ -35,11 +35,11 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

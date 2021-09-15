@@ -4,12 +4,12 @@ ms.assetid: vs|directx_sdk|~\vector.htm
 title: Vector (Frquery.h)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43a5e08fb3b4c36a426031e206ece84f81c0f174d42658d0c1718d207b1b890e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 845a2cc786f8eab6c9511088ebd77fe441b5f639
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118797038"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580124"
 ---
 # <a name="vector"></a>Vector
 
@@ -35,7 +35,7 @@ template Vector
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

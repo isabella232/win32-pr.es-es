@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 37bc9709effeb865651ca920a155094946b88753586174ecf6e1ab06eabd2fd0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9efedc6011cb63b6465fd2d3ced4a7807c09f4da
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119489415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573741"
 ---
 # <a name="ps_2_x"></a>ps \_ 2 \_ x
 
@@ -41,7 +41,7 @@ Número de registros temporales admitidos por el dispositivo. El intervalo es de
 
 ## <a name="number-of-instruction-slots"></a>Número de ranuras de instrucciones
 
-El número de ranuras de instrucción puede oscilar entre 96 y un máximo de 512, y se especifica mediante [**MaxPixelShaderInstructionSlots**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dpshadercaps2_0). **MaxPixelShaderInstructionsExecuted** define el número total de instrucciones que se pueden ejecutar. Esto puede ser mayor que el número de ranuras de instrucción debido a las llamadas de bucle y subrutina.
+El número de ranuras de instrucción puede oscilar entre 96 y un máximo de 512, y se especifica mediante [**MaxPixelShaderInstructionSlots**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dpshadercaps2_0). **MaxPixelShaderInstructionsExecuted** define el número total de instrucciones que se pueden ejecutar. Esto puede ser mayor que el número de ranuras de instrucción debido a llamadas en bucle y subrutinas.
 
 ## <a name="arbitrary-swizzle"></a>Swzzle arbitrario
 

@@ -3,8 +3,8 @@ title: WINBIO_EXTENDED_STORAGE_INFO estructura (Winbio \_ types.h)
 description: Contiene información sobre las funcionalidades y los requisitos de inscripción del adaptador de almacenamiento para una unidad biométrica.
 ms.assetid: 7A648610-E947-4967-A9AF-C8A9C0B81D92
 keywords:
-- WINBIO_EXTENDED_STORAGE_INFO estructura Windows API de marco biométrico
-- PWINBIO_EXTENDED_STORAGE_INFO puntero de estructura Windows API de marco biométrico
+- WINBIO_EXTENDED_STORAGE_INFO estructura Windows Api de marco biométrico
+- PWINBIO_EXTENDED_STORAGE_INFO puntero de estructura Windows BIOMETRIC Framework API
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e8a9f133baf77a77d3db33001e996accc9574f86ad708037900a5db7c0c5e8b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8ac2559717a2040cfb617e85e0a51495be1b5987
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118910386"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476534"
 ---
-# <a name="winbio_extended_storage_info-structure"></a>Estructura DE \_ INFORMACIÓN DE ALMACENAMIENTO EXTENDIDO DE \_ \_ WINBIO
+# <a name="winbio_extended_storage_info-structure"></a>Estructura DE \_ INFORMACIÓN DE ALMACENAMIENTO EXTENDIDO \_ \_ DE WINBIO
 
 Contiene información sobre las funcionalidades y los requisitos de inscripción del adaptador de almacenamiento para una unidad biométrica.
 
@@ -53,7 +53,7 @@ typedef struct _WINBIO_EXTENDED_STORAGE_INFO {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -67,7 +67,7 @@ Funcionalidades genéricas del componente de almacenamiento que está conectado 
 **Factor**
 </dt> <dd>
 
-Tipo de unidad biométrica para la que esta estructura contiene información sobre las funcionalidades y los requisitos de inscripción del adaptador de almacenamiento. Por ejemplo, si el valor del **miembro Factor** es **WINBIO TYPE \_ \_ FINGERPRINT**, la estructura INFO de ALMACENAMIENTO EXTENDIDO de **WINBIO \_ \_ \_** se aplica a un lector de huellas digitales y contiene la información pertinente en la estructura **Specifc.Fingerprint.**
+Tipo de unidad biométrica para la que esta estructura contiene información sobre las funcionalidades y los requisitos de inscripción del adaptador de almacenamiento. Por ejemplo, si el valor del miembro **Factor** es **WINBIO \_ TYPE \_ FINGERPRINT**, la estructura INFO de ALMACENAMIENTO EXTENDIDO de **WINBIO \_ \_ \_** se aplica a un lector de huellas digitales y contiene la información pertinente en la estructura **Specifc.Fingerprint.**
 
 </dd> <dt>
 
@@ -145,11 +145,11 @@ Funcionalidades de reconocimiento de voz del componente de almacenamiento que es
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                                                                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                                                                                     |
-| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluye Winbio.h para aplicaciones cliente o Adaptadores de \_ Winbio.h para adaptadores)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluya Winbio.h para aplicaciones cliente o Adaptadores \_ de Winbio.h para adaptadores)</dt> </dl> |
 
 
 
@@ -157,10 +157,10 @@ Funcionalidades de reconocimiento de voz del componente de almacenamiento que es
 
 <dl> <dt>
 
-[**Constantes DE \_ TIPO BIOMÉTRICO DE WINBIO \_**](winbio-biometric-type-constants.md)
+[**Constantes DE \_ TIPO BIOMETRIC DE WINBIO \_**](winbio-biometric-type-constants.md)
 </dt> <dt>
 
-[**Constantes DE FUNCIONALIDAD DE WINBIO \_**](winbio-capability-constants.md)
+[**Constantes DE CAPACIDAD DE WINBIO \_**](winbio-capability-constants.md)
 </dt> </dl>
 
  

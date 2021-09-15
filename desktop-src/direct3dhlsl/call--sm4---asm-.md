@@ -4,16 +4,16 @@ description: Llama a una subrutina marcada por donde aparece la etiqueta l\ en e
 ms.assetid: D6B7C52D-2CF7-44DB-81E3-2945477EF94A
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c55ce1c0005014928c006e29c9d7d08c3cadc3d11fee870ea1c9fa39df514fa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7dac86fa52140968443f01050cebc57718fea420
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118516658"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574012"
 ---
 # <a name="call-sm4---asm"></a>call (sm4 - asm)
 
-Llama a una subrutina marcada por donde aparece la etiqueta **l \#** en el programa.
+Llama a una subrutina marcada por donde aparece **la etiqueta l \#** en el programa.
 
 
 
@@ -34,7 +34,7 @@ Llama a una subrutina marcada por donde aparece la etiqueta **l \#** en el progr
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando se [encuentra un ret,](ret--sm4---asm-.md) devuelve la ejecución a la instrucción después de esta llamada.
 
@@ -61,8 +61,8 @@ En el ejemplo siguiente se muestra la instrucción de llamada.
 
 -   Las subrutinas pueden anidar 32 profundidades.
 -   La implementación administra la pila de direcciones de devolución de forma transparente.
--   Si ya hay 32 entradas en la  pila de direcciones de devolución y se emite una llamada, se omite la llamada.
--   No hay ninguna pila de parámetros automática. La aplicación puede usar una matriz de registro temporal indexable (x \# \[ \] ) para implementar manualmente una pila. Sin embargo, las direcciones de devolución de llamadas de subrutina no son visibles y son ortogonales para cualquier administración manual de pila realizada por la aplicación.
+-   Si ya hay 32 entradas en la  pila de direcciones de devolución y se emite una llamada, la llamada se omite.
+-   No hay ninguna pila de parámetros automática. La aplicación puede usar una matriz de registro temporal indexable (x \# \[ \] ) para implementar manualmente una pila. Sin embargo, las direcciones de devolución de llamadas de subrutina no son visibles y son ortogonales para cualquier administración manual de la pila realizada por la aplicación.
 -   No se permite la indexación del parámetro *l. \#*
 -   No se permite la recursividad.
 
@@ -86,12 +86,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -101,7 +101,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

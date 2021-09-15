@@ -1,17 +1,17 @@
 ---
-title: Up-Down control (referencia de elemento de la interfaz de usuario de MSAA)
+title: Up-Down control (Referencia de elementos de la interfaz de usuario de MSAA)
 description: Un control de flechas, también conocido como control de número, combina un par de botones que se muestran como flechas con un control de edición de compañeros. Al hacer clic en las flechas se incrementa o disminuye el valor del control de edición.
 ms.assetid: 45e56c0f-4ac6-4731-b9a6-be4613bf40ae
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52b9475d8bbca24d2bf536a4eb9a9decf078297e788a37aa4d8560029a67e50e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6fd2d28acc4c14a89ec73f5994ed0af47202145a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118114630"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476131"
 ---
-# <a name="up-down-control-msaa-ui-element-reference"></a>Up-Down control (referencia de elemento de la interfaz de usuario de MSAA)
+# <a name="up-down-control-msaa-ui-element-reference"></a>Up-Down control (Referencia de elementos de la interfaz de usuario de MSAA)
 
 > [!Note]  
 > En este tema se **describen los objetos de control de** nivel superior para fines de referencia de elementos de la interfaz de usuario de MSAA. Aquí no se describe cómo crear **objetos de control** de arriba a abajo en varios marcos de interfaz de usuario. Consulte la documentación de referencia de API para el marco de interfaz de usuario que está usando.

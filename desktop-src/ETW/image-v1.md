@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 7e5db8d6245ab332c6238a7053623580c16e93caa49e0ac2623cba61723dc1d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aafb2b7307e72e97ba1508aa80638af7565f2867
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119070135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476881"
 ---
 # <a name="image_v1-class"></a>Clase Image \_ V1
 
@@ -34,7 +34,7 @@ class Image_V1 : MSNT_SystemTrace
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase Image \_ V1** no define ningún miembro.
 
@@ -44,7 +44,7 @@ La **clase Image \_ V1** no define ningún miembro.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>          |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/> |
 
 

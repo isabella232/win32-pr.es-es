@@ -9,12 +9,12 @@ keywords:
 - referencia de DirectWrite
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55d09b20df0e82a967900da72c48289bc7a05b16bc003ad57e35ea3aecb57a74
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 184898a93d301c08b54bbf629652e5f967fe174a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120048545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476935"
 ---
 # <a name="api-reference"></a>Referencia de API
 

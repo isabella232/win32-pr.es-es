@@ -4,12 +4,12 @@ ms.assetid: 17937bf1-e0bd-4845-9484-d23190807642
 title: TAPI DLL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ff26274baf25047212a3f9f8e15c2211d90cbaa10db23674ae54dbb97bbfdf7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8482045ec16a999957121aff669e93b34b605069
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120012214"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476326"
 ---
 # <a name="tapi-dll"></a>TAPI DLL
 
@@ -25,7 +25,7 @@ Las aplicaciones de 16 bits existentes se vinculan a Tapi.dll. Tapi.dll es simpl
 
 Las aplicaciones TAPI 2.x de 32 bits existentes se vinculan a Tapi32.dll. Tapi32.dll es una capa de marshalling fino que transfiere las solicitudes de función al servidor TAPI (TAPISRV) y, cuando es necesario, carga e invoca archivos DLL del proveedor de servicios multimedia en el proceso de la aplicación.
 
-Las aplicaciones TAPI 3.x vinculan a Tapi3.dll.
+Las aplicaciones TAPI 3.x se vinculan a Tapi3.dll.
 
  
 

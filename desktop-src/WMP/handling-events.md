@@ -6,22 +6,22 @@ keywords:
 - Reproductor de Windows Media máscaras, escribir código
 - máscaras, escribir código
 - Reproductor de Windows Media máscaras,eventos
-- skins,events
+- máscaras, eventos
 - events,skins
 - events,writing code
 - escribir código para máscaras, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9991197fb9eeecff23966e979e47968e6c39b8a84b87bd7fdbdd2f7d92bdae56
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 83e6b807e272ac62bcfc5613341ceaa0c35e8cff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117748292"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476247"
 ---
 # <a name="handling-events"></a>Controlar eventos
 
-Además del código XML que escribe para inicializar atributos para la máscara, el código principal que escribe se JScript código para controlar los eventos. Los eventos son externos o internos; es decir, proceden del usuario o de Reproductor de Windows Media.
+Además del código XML que se escribe para inicializar atributos para la máscara, el código principal que se escribe JScript código para controlar eventos. Los eventos son externos o internos; es decir, proceden del usuario o de Reproductor de Windows Media.
 
 En las secciones siguientes se proporcionan detalles sobre el control de eventos:
 

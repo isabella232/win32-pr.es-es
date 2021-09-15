@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 74106bc38367e13cd70af94d0ad12016165aaae24693f19386e69ebe1d7a5cb2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 15a997470fddf5056b7191fcc3226ad210724041
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118987755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580649"
 ---
 # <a name="id3dxbaseeffectgetpassdesc-method"></a>Método ID3DXBaseEffect::GetPassDesc
 
@@ -55,7 +55,7 @@ Controlador de paso. Vea [Identificadores (Direct3D 9).](handles.md)
 
 Tipo: **[ **D3DXPASS \_ DESC**](d3dxpass-desc.md)\***
 
-Devuelve una descripción del paso especificado. Vea [**D3DXPASS \_ DESC**](d3dxpass-desc.md).
+Devuelve una descripción del paso especificado. Consulte [**D3DXPASS \_ DESC**](d3dxpass-desc.md).
 
 </dd> </dl>
 
@@ -63,12 +63,12 @@ Devuelve una descripción del paso especificado. Vea [**D3DXPASS \_ DESC**](d3dx
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> Si se crea un efecto con [D3DXFX \_ NOT \_ CLONEABLE](d3dxfx.md), este método devolverá punteros **NULL** (en [**D3DXPASS \_ DESC)**](d3dxpass-desc.md)a las funciones del sombreador.
+> Si se crea un efecto con [D3DXFX \_ NOT \_ CLONEABLE,](d3dxfx.md)este método devolverá punteros **NULL** (en [**D3DXPASS \_ DESC)**](d3dxpass-desc.md)a las funciones del sombreador.
 
  
 

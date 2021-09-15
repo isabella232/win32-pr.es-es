@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f45efa24f2fd1a948143a8bbb363d34ec86e9a2f4c59d320c2ae1a9f0541a340
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 532a71c576ca0b49dd645afe8b501f0e718a827b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120035765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476681"
 ---
 # <a name="glvertex4dv-function"></a>Función glVertex4dv
 

@@ -1,35 +1,35 @@
 ---
 description: Muestra cómo solicitar un certificado de archivo de claves.
 ms.assetid: a09f55c1-fb27-41e7-9a2f-617d2360c02f
-title: Solicitar un certificado de archivo de claves
+title: Solicitud de un certificado de archivo de claves
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: da1f69338ed4a41986700853ef5d46ee08612e8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103911269"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476368"
 ---
-# <a name="requesting-a-key-archival-certificate"></a>Solicitar un certificado de archivo de claves
+# <a name="requesting-a-key-archival-certificate"></a>Solicitud de un certificado de archivo de claves
 
-En el ejemplo siguiente se muestra cómo crear y enviar una [*solicitud de certificado*](../secgloss/c-gly.md) y recibir el certificado de archivo de clave resultante. Para que este ejemplo se realice correctamente, la [*entidad de certificación*](../secgloss/c-gly.md) (CA) que recibe la solicitud de certificado debe estar configurada para el archivo de claves.
+En el ejemplo siguiente se muestra cómo crear y enviar una [*solicitud de certificado*](../secgloss/c-gly.md) y recibir el certificado de archivo de clave resultante. Para que este ejemplo se haga correctamente, la entidad [*de certificación*](../secgloss/c-gly.md) (CA) que recibe la solicitud de certificado debe configurarse para el archivado de claves.
 
 En los pasos siguientes se describe cómo crear y enviar una solicitud de certificado.
 
 **Para crear y enviar una solicitud de certificado**
 
-1.  Recupere el certificado de Exchange de la entidad de certificación mediante el método [**ICertRequest2:: GetCACertificate**](/windows/desktop/api/Certcli/nf-certcli-icertrequest-getcacertificate) .
-2.  Especifica que el certificado de intercambio de CA recuperado es el certificado de archivo de claves mediante la propiedad [**ICEnroll4::P rivatekeyarchivecertificate**](/windows/desktop/api/Xenroll/nf-xenroll-icenroll4-get_privatekeyarchivecertificate) .
-3.  Cree una solicitud de certificado CMC mediante el método [**ICEnroll4:: createRequest**](/windows/desktop/api/Xenroll/nf-xenroll-icenroll4-createrequest) .
-4.  Envíe la solicitud de certificado a una entidad de certificación mediante el método [**ICertRequest2:: submit**](/windows/desktop/api/Certcli/nf-certcli-icertrequest-submit) . La entidad de certificación debe estar configurada para admitir el archivo de claves.
+1.  Recupere el certificado de intercambio de la entidad de certificación mediante [**el método ICertRequest2::GetCACertificate.**](/windows/desktop/api/Certcli/nf-certcli-icertrequest-getcacertificate)
+2.  Especifique que el certificado de intercambio de ca recuperado es el certificado de archivo de claves mediante la propiedad [**ICEnroll4::P rivateKeyArchiveCertificate.**](/windows/desktop/api/Xenroll/nf-xenroll-icenroll4-get_privatekeyarchivecertificate)
+3.  Cree una solicitud de certificado de CMC mediante [**el método ICEnroll4::createRequest.**](/windows/desktop/api/Xenroll/nf-xenroll-icenroll4-createrequest)
+4.  Envíe la solicitud de certificado a una entidad de certificación mediante [**el método ICertRequest2::Submit.**](/windows/desktop/api/Certcli/nf-certcli-icertrequest-submit) La entidad de certificación debe configurarse para admitir el archivo de claves.
 
-En los pasos siguientes se describe cómo recuperar el certificado emitido para el archivo de claves.
+En los pasos siguientes se describe cómo recuperar el certificado emitido con fines de archivo de claves.
 
-**Para recuperar el certificado emitido para el archivo de claves**
+**Para recuperar el certificado emitido con fines de archivo de claves**
 
-1.  Recupere la respuesta completa, incluido el certificado emitido, mediante el método [**ICertRequest2:: GetFullResponseProperty**](/windows/desktop/api/Certcli/nf-certcli-icertrequest2-getfullresponseproperty) .
-2.  Instale el certificado emitido mediante el método [**ICEnroll4:: acceptResponse**](/windows/desktop/api/Xenroll/nf-xenroll-icenroll4-acceptresponse) .
+1.  Recupere la respuesta completa, incluido el certificado emitido, mediante el método [**ICertRequest2::GetFullResponseProperty.**](/windows/desktop/api/Certcli/nf-certcli-icertrequest2-getfullresponseproperty)
+2.  Instale el certificado emitido mediante el [**método ICEnroll4::acceptResponse.**](/windows/desktop/api/Xenroll/nf-xenroll-icenroll4-acceptresponse)
 
 En el ejemplo siguiente se muestra cómo crear y enviar una solicitud de certificado y recibir el certificado de archivo de clave resultante.
 

@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2da0d2bceea7a3e44f02e6b732337cb3447d6ef1c9798f95b664bf4da96ec2dd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6e358debb2377f08574997acd96c11f83d32e66c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119983325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574024"
 ---
 # <a name="breakp---ps"></a>breakp: ps
 
-Salga condicionalmente del bucle actual en el [endloop más cercano: ps](endloop---ps.md) o [endrep - ps](endrep---ps.md). Use uno de los componentes del registro de predicado como condición para determinar si se debe realizar o no la instrucción.
+Interrumpir condicionalmente el bucle actual en el [endloop más cercano: ps](endloop---ps.md) o [endrep - ps](endrep---ps.md). Use uno de los componentes del registro de predicado como condición para determinar si se debe realizar o no la instrucción.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -37,7 +37,7 @@ Donde:
 -   p0 es el [registro de predicado.](dx9-graphics-reference-asm-ps-registers-predicate.md)
 -   {x \| y \| z \| w} es la réplica necesaria en p0.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

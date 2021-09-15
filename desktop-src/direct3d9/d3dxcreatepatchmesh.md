@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: aa4e1292f4b5c42515351d89dc7fc039f1f6f29201da72a78e07f447818e0f91
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 375052e240973f56af32825f74caccf6f9411d75
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118988645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575248"
 ---
 # <a name="d3dxcreatepatchmesh-function"></a>Función D3DXCreatePatchMesh
 
@@ -87,7 +87,7 @@ Sin usar. Reservado para su uso posterior.
 
 Tipo: **const [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
 
-Matriz [**de elementos D3DVERTEXELEMENT9,**](d3dvertexelement9.md) que describe el formato de vértice de la malla devuelta.
+Matriz de [**elementos D3DVERTEXELEMENT9,**](d3dvertexelement9.md) que describe el formato de vértice de la malla devuelta.
 
 </dd> <dt>
 
@@ -115,9 +115,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método toma una malla de revisión de entrada y la convierte en una malla teselada. Las mallas de revisión usan búferes de índice de 16 bits. Por lo tanto, los índices [**de LockIndexBuffer**](id3dxpatchmesh--lockindexbuffer.md) son de 16 bits.
+Este método toma una malla de revisión de entrada y la convierte en una malla teselada. Las mallas de revisión usan búferes de índice de 16 bits. Por lo tanto, los índices de [**LockIndexBuffer**](id3dxpatchmesh--lockindexbuffer.md) son de 16 bits.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -130,7 +130,7 @@ Este método toma una malla de revisión de entrada y la convierte en una malla 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

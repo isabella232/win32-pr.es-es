@@ -1,21 +1,21 @@
 ---
-description: Los proveedores de servicios implementan controles detallados de dispositivos de telefonía. Un proveedor de servicios de telefonía (TSP) proporciona controles de llamada y un proveedor de servicios multimedia, si existe, proporciona control sobre la secuencia multimedia.
+description: Los proveedores de servicios implementan controles detallados de dispositivos de telefonía. Un proveedor de servicios de telefonía (TSP) proporciona controles de llamada y un proveedor de servicios multimedia, si existe, proporciona control sobre el flujo multimedia.
 ms.assetid: eb63d55e-4a2b-4bc0-8001-99772f418d72
 title: Proveedores de servicios
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba0bc427b79daadc8dc89e49a29e18ebbd9797bed74da7f890dc851d6ee97b13
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 424c11d5b99af7440835e8822a5631e1b36f48cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119773125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474672"
 ---
 # <a name="service-providers"></a>Proveedores de servicios
 
-Los proveedores de servicios implementan controles detallados de dispositivos de telefonía. Un proveedor de servicios de telefonía (TSP) proporciona controles de llamada y un proveedor de servicios multimedia, si existe, proporciona control sobre la secuencia multimedia.
+Los proveedores de servicios implementan controles detallados de dispositivos de telefonía. Un proveedor de servicios de telefonía (TSP) proporciona controles de llamada y un proveedor de servicios multimedia, si existe, proporciona control sobre el flujo multimedia.
 
-Todos los proveedores de servicios de telefonía se ejecutan en el proceso TAPISRV. Los proveedores de servicios pueden crear subprocesos en el contexto TAPISRV según sea necesario para realizar su trabajo y estar seguros de que ninguno de los recursos que cree se destruirá con la salida de cualquier aplicación individual. El servidor TAPI traduce los comandos de aplicación según sea necesario en un conjunto coherente de comandos conocidos como interfaz del proveedor de servicios de telefonía (TSPI).
+Todos los proveedores de servicios de telefonía se ejecutan en el proceso TAPISRV. Los proveedores de servicios pueden crear subprocesos en el contexto TAPISRV según sea necesario para realizar su trabajo y estar seguros de que ninguno de los recursos que cree se destruirá con la salida de cualquier aplicación individual. El servidor TAPI traduce los comandos de aplicación según sea necesario en un conjunto coherente de comandos conocidos como interfaz de proveedor de servicios de telefonía (TSPI).
 
 Los proveedores de servicios multimedia se ejecutan en el espacio de proceso de la aplicación, lo que permite la respuesta rápida que a veces se requiere en los controles multimedia. El archivo DLL de TAPI proporciona una adhesión coherente a la interfaz del proveedor de servicios multimedia (MSPI).
 

@@ -1,5 +1,5 @@
 ---
-description: D3DXSHPRTSPLITMESHCLUSTERDATA (estructura)
+description: Estructura D3DXSHPRTSPLITMESHCLUSTERDATA
 ms.assetid: 6a53420c-06bc-4f52-ac2e-5adda5e34cb2
 title: Estructura D3DXSHPRTSPLITMESHCLUSTERDATA (D3dx9mesh.h)
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: c4405b383e0403326c3cb84f43c97f4c7da826872b62cb21c94b3edb9ef0e475
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e7b1bc23606dbf08f5a924860e12c9c09d719287
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118298294"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567153"
 ---
-# <a name="d3dxshprtsplitmeshclusterdata-structure"></a>D3DXSHPRTSPLITMESHCLUSTERDATA (estructura)
+# <a name="d3dxshprtsplitmeshclusterdata-structure"></a>Estructura D3DXSHPRTSPLITMESHCLUSTERDATA
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,7 +38,7 @@ typedef struct D3DXSHPRTSPLITMESHCLUSTERDATA {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -49,7 +49,7 @@ Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Vértice inicial en una matriz de vértices rematada.
+Vértice inicial en matriz de vértices rematada.
 
 </dd> <dt>
 

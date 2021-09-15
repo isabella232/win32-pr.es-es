@@ -1,17 +1,17 @@
 ---
-title: Group (Windows Ribbon Framework)
+title: Grupo (marco Windows cinta de opciones)
 description: El grupo organiza los comandos y controles relacionados dentro de una pestaña.
 ms.assetid: 5d098d3f-a4ee-4f76-8c81-832d0c49cb80
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: c153f8cd9d1fc0d2d2bdbaabab0b2e15e099e50d
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467422"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574381"
 ---
-# <a name="group-windows-ribbon-framework"></a>Group (Windows Ribbon Framework)
+# <a name="group-windows-ribbon-framework"></a>Grupo (marco Windows cinta de opciones)
 
 El grupo organiza los comandos y controles relacionados dentro de una [pestaña](windowsribbon-controls-tab.md).
 
@@ -21,7 +21,7 @@ El grupo organiza los comandos y controles relacionados dentro de una [pestaña]
 
 ## <a name="details"></a>Detalles
 
-En la siguiente captura de pantalla se muestra el control Grupo de la cinta de opciones.
+En la siguiente captura de pantalla se muestra el control Grupo de cinta de opciones.
 
 ![captura de pantalla con llamadas que muestran un grupo.](images/controls/group.png)
 
@@ -29,9 +29,9 @@ En la siguiente captura de pantalla se muestra el control Grupo de la cinta de o
 
 El marco de la cinta de opciones define una colección de [claves de propiedad](windowsribbon-reference-properties.md) para el control Grupo.
 
-Normalmente, una propiedad Group se actualiza en la interfaz de usuario de la cinta de opciones invalidando el comando asociado al control mediante una llamada al método [**IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) El método de devolución de llamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) controla el evento de invalidación y las actualizaciones de propiedad definidas.
+Normalmente, una propiedad Group se actualiza en la interfaz de usuario de la cinta de opciones invalidando el comando asociado al control mediante una llamada al método [**IUIFramework::InvalidateUICommand.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-invalidateuicommand) El evento de invalidación se controla y las actualizaciones de propiedades definidas por el método de devolución de llamada [**IUICommandHandler::UpdateProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty)
 
-El método de devolución de llamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) no se ejecuta y la aplicación consulta un valor de propiedad actualizado, hasta que el marco de trabajo requiera la propiedad . Por ejemplo, cuando se activa una pestaña y se muestra un control en la interfaz de usuario de la cinta de opciones, o cuando se muestra una información sobre herramientas.
+El método de devolución de llamada [**IUICommandHandler::UpdateProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty) no se ejecuta y la aplicación ha consultado un valor de propiedad actualizado, hasta que el marco requiere la propiedad . Por ejemplo, cuando se activa una pestaña y se revela un control en la interfaz de usuario de la cinta de opciones, o cuando se muestra una información sobre herramientas.
 
 > [!Note]  
 > En algunos casos, una propiedad se puede recuperar mediante el método [**IUIFramework::GetUICommandProperty**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-getuicommandproperty) y establecerse con el método [**IUIFramework::SetUICommandProperty.**](/windows/desktop/api/uiribbon/nf-uiribbon-iuiframework-setuicommandproperty)
@@ -45,7 +45,7 @@ En la tabla siguiente se enumeran las claves de propiedad asociadas al control G
 
 | Clave de propiedad | Notas | 
 |--------------|-------|
-| <a href="windowsribbon-reference-properties-uipkey-keytip.md">UI_PKEY_Keytip</a> | Solo se puede actualizar a través de la invalidación.<blockquote>[!Note]<br />El marco requiere que el valor de <a href="windowsribbon-reference-properties-uipkey-keytip.md">UI_PKEY_Keytip</a> para un control Group comience con la letra Z en mayúsculas. Si el valor proporcionado por la aplicación en el método de devolución de llamada <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty"><strong>IUICommandHandler::UpdateProperty</strong></a> no comienza con la letra Z, este valor se omite y el marco genera un valor en su lugar. El valor del marco es la letra Z seguida de un valor numérico a partir de 1 y que aumenta secuencialmente, según sea necesario, para los controles group subsiguientes (Z1, Z2, ..., Zx).</blockquote><br /> | 
+| <a href="windowsribbon-reference-properties-uipkey-keytip.md">UI_PKEY_Keytip</a> | Solo se puede actualizar a través de la invalidación.<blockquote>[!Note]<br />El marco requiere que el valor de <a href="windowsribbon-reference-properties-uipkey-keytip.md">UI_PKEY_Keytip</a> para un control Grupo comience con la letra en mayúscula Z. Si el valor proporcionado por la aplicación en el método de devolución de llamada <a href="/windows/desktop/api/uiribbon/nf-uiribbon-iuicommandhandler-updateproperty"><strong>IUICommandHandler::UpdateProperty</strong></a> no comienza con la letra Z, este valor se omite y el marco genera un valor en su lugar. El valor del marco es la letra Z seguida de un valor numérico que empieza en 1 y aumenta secuencialmente, según sea necesario, para los controles group subsiguientes (Z1, Z2, ..., Zx).</blockquote><br /> | 
 | <a href="windowsribbon-reference-properties-uipkey-label.md">UI_PKEY_Label</a> | Solo se puede actualizar a través de la invalidación. | 
 | <a href="windowsribbon-reference-properties-uipkey-largehighcontrastimage.md">UI_PKEY_LargeHighContrastImage</a> | Solo se puede actualizar a través de la invalidación. | 
 | <a href="windowsribbon-reference-properties-uipkey-largeimage.md">UI_PKEY_LargeImage</a> | Solo se puede actualizar a través de la invalidación. | 

@@ -1,5 +1,5 @@
 ---
-title: Saturate (referencia hlsl)
+title: Saturate (referencia de HLSL)
 description: Fija el resultado de una operación aritmética de punto flotante de precisión sencilla o doble a \ 0,0f... Intervalo de 1,0f\.
 ms.assetid: ce3e79c7-c3e6-4a2c-910a-2cd568aece50
 ms.topic: reference
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 25e771bd53dbb8a4b0d2eaf8162675cd556c071344b249562defe4a06e715f5a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 05b6048777ac7b6ecd2c4b59ff3c9e0287380949
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118790748"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573688"
 ---
-# <a name="saturate-hlsl-reference"></a>Saturate (referencia hlsl)
+# <a name="saturate-hlsl-reference"></a>Saturate (referencia de HLSL)
 
 Fija el resultado de una operación aritmética de punto flotante de precisión sencilla o doble a \[ 0,0f... Intervalo de 1,0f. \]
 
@@ -45,12 +45,12 @@ Este modificador se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | Sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 6d193e08bf40ac67ba46218e9ce3e11b510d7014239a09b1c1b0000be5ec9420
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4f0c82c301a48eb939d182062240c4dba6d3fc63
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118987745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580640"
 ---
 # <a name="id3dxbaseeffectgettechnique-method"></a>Método ID3DXBaseEffect::GetTechnique
 
@@ -53,7 +53,7 @@ Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Devuelve el identificador de la técnica especificada o **NULL** si el índice no era válido. Vea [Identificadores (Direct3D 9).](handles.md)
+Devuelve el identificador de la técnica especificada o **NULL** si el índice no es válido. Vea [Identificadores (Direct3D 9).](handles.md)
 
 ## <a name="requirements"></a>Requisitos
 

@@ -14,11 +14,11 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 33640f8e451f7124efda8c0e5377a3145d221668
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122631993"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574376"
 ---
 # <a name="controlgroup-element"></a>Elemento ControlGroup
 
@@ -48,7 +48,7 @@ Representa un grupo de controles en una [**plantilla de diseño SizeDefinition.*
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -57,7 +57,7 @@ Representa un grupo de controles en una [**plantilla de diseño SizeDefinition.*
 <td><strong>SequenceNumber</strong><br/></td>
 <td>xs:positiveInteger<br/></td>
 <td>No<br/></td>
-<td>Válido solo cuando <a href="windowsribbon-element-group.md"><strong>Group</strong></a> es el elemento primario.<br/> Cada <em>SequenceNumber</em> debe ser único dentro de un <a href="windowsribbon-element-group.md"><strong>elemento Group.</strong></a> Los valores de <em>SequenceNumber</em> deben aumentar para cada <strong>elemento Group,</strong> pero no es necesario que sean secuenciales. <br/> <br/>
+<td>Válido solo cuando <a href="windowsribbon-element-group.md"><strong>Group</strong></a> es el elemento primario.<br/> Cada <em>SequenceNumber</em> debe ser único dentro de un <a href="windowsribbon-element-group.md"><strong>elemento Group.</strong></a> Los valores de <em>SequenceNumber deben</em> aumentar para cada <strong>elemento Group,</strong> pero no es necesario que sean secuenciales. <br/> <br/>
 <dt><span></span><span></span><strong></strong> (xs:positiveInteger)<br/> </dt> <dd> Cualquier valor entero positivo entre 1000 y 59999, ambos incluidos.<br/> </dd> </dl></td>
 </tr>
 </tbody>
@@ -72,7 +72,7 @@ Representa un grupo de controles en una [**plantilla de diseño SizeDefinition.*
 | Elemento                                                                                 | Descripción                                        |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**Button**](windowsribbon-element-button.md)<br/>                               | Puede producirse una o varias veces<br/> <br/> |
-| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                           | Puede producirse una o varias veces<br/> <br/> |
+| [**Casilla**](windowsribbon-element-checkbox.md)<br/>                           | Puede producirse una o varias veces<br/> <br/> |
 | [**ComboBox**](windowsribbon-element-combobox.md)<br/>                           | Puede producirse una o varias veces<br/> <br/> |
 | [**ControlSizeDefinition**](windowsribbon-element-controlsizedefinition.md)<br/> | Puede producirse una o varias veces<br/> <br/> |
 | [**DropDownButton**](windowsribbon-element-dropdownbutton.md)<br/>               | Puede producirse una o varias veces<br/> <br/> |
@@ -100,13 +100,13 @@ Representa un grupo de controles en una [**plantilla de diseño SizeDefinition.*
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Opcional.
 
 Puede producirse una o varias veces para cada [**elemento Group**](windowsribbon-element-group.md) **o ControlGroup.**
 
-Si no se proporcionan números de secuencia, los elementos se representan en el orden especificado en el marcado de la cinta de opciones.
+Si no se proporciona ningún número de secuencia, los elementos se representan en el orden especificado en el marcado de la cinta de opciones.
 
 Si [**Group**](windowsribbon-element-group.md) o **ControlGroup** es el elemento primario, **ControlGroup** se restringe a los siguientes elementos secundarios posibles: [**Button**](windowsribbon-element-button.md), [**CheckBox**](windowsribbon-element-checkbox.md), [**ComboBox**](windowsribbon-element-combobox.md), [**DropDownButton**](windowsribbon-element-dropdownbutton.md), [**DropDownColorPicker,**](windowsribbon-element-dropdowncolorpicker.md) [**DropDownGallery**](windowsribbon-element-dropdowngallery.md), [**FontControl**](windowsribbon-element-fontcontrol.md), [**InRibbonGallery**](windowsribbon-element-inribbongallery.md), [**Spinner,**](windowsribbon-element-spinner.md) [**SplitButton,**](windowsribbon-element-splitbutton.md) [**SplitButtonGallery**](windowsribbon-element-splitbuttongallery.md)o [**ToggleButton**](windowsribbon-element-togglebutton.md)
 
@@ -211,7 +211,7 @@ En el ejemplo de código siguiente se muestra el marcado básico para una planti
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

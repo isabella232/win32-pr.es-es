@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: ebc607bf10be8b94fa5274e5539953344c99c263db13dec6f8982146f60f4551
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4b16eed97c891b4b4f5bd283496868d99f9e0fbc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118991795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567209"
 ---
 # <a name="swbemservicesassociatorsofasync-method"></a>Método SWbemServices.AssociatorsOfAsync
 
@@ -63,14 +63,14 @@ SWbemServices.AssociatorsOfAsync( _
 *objWbemSink* 
 </dt> <dd>
 
-Obligatorio. Receptor de objetos que recibe los objetos de forma asincrónica. Cree un [**objeto SWbemSink**](swbemsink.md) para recibir los objetos.
+Necesario. Receptor de objetos que recibe los objetos de forma asincrónica. Cree un [**objeto SWbemSink**](swbemsink.md) para recibir los objetos.
 
 </dd> <dt>
 
 *strObjectPath* 
 </dt> <dd>
 
-Obligatorio. Cadena que contiene la ruta de acceso del objeto de la clase o instancia de origen. Para obtener más información, [vea Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
+Necesario. Cadena que contiene la ruta de acceso del objeto de la clase o instancia de origen. Para obtener más información, [vea Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
 
 </dd> <dt>
 
@@ -229,7 +229,7 @@ No se encontró el elemento solicitado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta llamada se devuelve inmediatamente. Los objetos y el estado solicitados se devuelven al autor de la llamada a través de devoluciones de llamada entregadas al receptor especificado en *objWbemSink*. Para procesar cada objeto cuando vuelva, cree *un objeto objWbemSink*. [**Subrutina de eventos OnObjectReady.**](swbemsink-onobjectready.md) Una vez devueltos todos los objetos, puede realizar el procesamiento final en la implementación de *objWbemSink*. [**Evento OnCompleted.**](swbemsink-oncompleted.md)
 
@@ -245,7 +245,7 @@ Use el *parámetro objWbemAsyncContext en* los scripts para comprobar el origen 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemServices<br/>                                                         |
@@ -253,7 +253,7 @@ Use el *parámetro objWbemAsyncContext en* los scripts para comprobar el origen 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

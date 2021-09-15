@@ -3,17 +3,17 @@ title: Autorización de servicio
 description: Una aplicación puede implementar la autorización personalizada para los mensajes entrantes en un host de servicio.
 ms.assetid: 75bcf051-3983-48fc-8121-0984ac9cdcb9
 keywords:
-- Servicios web de autorización de servicio para Windows
+- Servicios web de autorización de servicios para Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b84b9947d088d5f594ac11f0ee83cc03925f8a3bbc9aeceae0bc7d5cb120477
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c296dc6b4900bd20df7d1e70631e758599a0028d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120109845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574217"
 ---
 # <a name="service-authorization"></a>Autorización de servicio
 
@@ -24,7 +24,7 @@ Un host de servicio recibe una devolución de llamada de seguridad [**WS \_ SERV
 
 La aplicación puede confiar en esta devolución de llamada para implementar la autorización personalizada para los mensajes entrantes en el host de servicio. Si se produce un error en la autorización, la función de devolución de llamada de seguridad devuelve un rr. H. de error y el host de servicio anula el canal.
 
-Vea el nombre de usuario sobre el ejemplo de [SSL, HttpCalculatorWithUserNameOverSslServiceExample](httpcalculatorwithusernameoversslserviceexample.md), para obtener una implementación de ejemplo.
+Consulte el ejemplo de nombre de usuario sobre [SSL, HttpCalculatorWithUserNameOverSslServiceExample](httpcalculatorwithusernameoversslserviceexample.md), para obtener una implementación de ejemplo.
 
  
 

@@ -4,16 +4,16 @@ ms.assetid: b46203dc-5666-413b-90fe-8432318f3037
 title: Valores devueltos en caso de error de función
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b277da114c8c86c53339590eeff3e831cbaf2a4277765bf53047b3d07991b026
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b94280d47d705833528c03c0d98a4a31232a0c6a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117740937"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476116"
 ---
 # <a name="return-values-on-function-failure"></a>Valores devueltos en caso de error de función
 
-La constante de **manifiesto SOCKET \_ ERROR se** proporciona para comprobar el error de la función. Aunque el uso de esta constante no es obligatorio, se recomienda. En el ejemplo siguiente se muestra el uso de la **constante SOCKET \_ ERROR.**
+La constante de **manifiesto SOCKET \_ ERROR** se proporciona para comprobar el error de la función. Aunque el uso de esta constante no es obligatorio, se recomienda. En el ejemplo siguiente se muestra el uso de la **constante SOCKET \_ ERROR.**
 
 Estilo típico de BSD (no funcionará en Windows)
 

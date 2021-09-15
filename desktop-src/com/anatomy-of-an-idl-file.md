@@ -5,11 +5,11 @@ ms.assetid: 9c276b8a-5342-4c09-91a7-c9a9f0f83c73
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: acbcfbf5c145a1fb389cc26543cf75d8cc75a107
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369788"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574160"
 ---
 # <a name="anatomy-of-an-idl-file"></a>Anatomía de un archivo IDL
 
@@ -17,7 +17,7 @@ Estos archivos IDL de ejemplo muestran las construcciones fundamentales de la de
 
 ## <a name="exampleidl"></a>Example.idl
 
-El archivo IDL de ejemplo siguiente define dos interfaces COM. A partir de este archivo IDL, Midl.exe código proxy/stub y serialización de código y archivos de encabezado. Una dissección línea a línea sigue el ejemplo.
+El siguiente archivo IDL de ejemplo define dos interfaces COM. A partir de este archivo IDL, Midl.exe código proxy/stub y serialización de código y archivos de encabezado. Una dissección línea a línea sigue el ejemplo.
 
 ``` syntax
 //
@@ -131,7 +131,7 @@ Dentro de la definición de la biblioteca de tipos, [**la directiva importlib**]
 
 Esta definición de biblioteca de tipos muestra tres maneras diferentes de incluir interfaces en la biblioteca de tipos. IFace3 se incluye simplemente haciendo referencia a él dentro de la instrucción de biblioteca.
 
-La [**instrucción coclass**](/windows/desktop/Midl/coclass) define una clase de componente completamente nueva, BkfstComponent, que incluye dos interfaces definidas previamente, IFace1 e IFace2. El atributo predeterminado designa IFace1 como la interfaz predeterminada.
+La [**instrucción coclass**](/windows/desktop/Midl/coclass) define una clase de componente completamente nueva, BkfstComponent, que incluye dos interfaces definidas previamente, IFace1 e IFace2. El atributo predeterminado designa IFace1 como interfaz predeterminada.
 
 IFace4 se describe en la instrucción library. El [**atributo propput**](/windows/desktop/Midl/propput) en MethodD indica que el método realiza una acción set en una propiedad del mismo nombre. El [**atributo propget**](/windows/desktop/Midl/propget) indica que el método recupera información de una propiedad del mismo nombre que el método . El [**atributo retval**](/windows/desktop/Midl/retval) de MethodD designa un parámetro de salida que contiene el valor devuelto de la función.
 

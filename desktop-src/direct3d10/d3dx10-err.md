@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: b2611bb343801bbe2bd6572f250a7f0eb6d9df7b9980445f1045ee89bee23203
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 520abae0409dd4214106363d7ffde0cfb5c81ff1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119753575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566748"
 ---
 # <a name="d3dx10_err-enumeration"></a>Enumeración ERR D3DX10 \_
 
 Los errores se representan mediante valores negativos y no se pueden combinar. A continuación se muestra una lista de valores que pueden devolver los métodos incluidos con la biblioteca de utilidades D3DX. Consulte las descripciones de métodos individuales para obtener listas de los valores que cada uno puede devolver. Estas listas no son necesariamente completas.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -110,7 +110,7 @@ No se puede eliminar el último elemento.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El código de instalación \_ FACDD se usa para generar códigos de error, como en las macros siguientes.
 

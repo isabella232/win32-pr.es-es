@@ -18,12 +18,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 8a77d135fa5140f5d8d51a26164cd96009f06bacee654d13bec8dbaa9dcd76a2
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 985986132abe432e1adefb51939b8ace1aa48c8c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120042005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476920"
 ---
 # <a name="fileio_info-class"></a>FileIo \_ Info (clase)
 
@@ -46,7 +46,7 @@ class FileIo_Info : FileIo
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase FileIo \_ Info** tiene estos tipos de miembros:
 
@@ -102,7 +102,7 @@ Tipo de acceso: solo lectura
 Calificadores: WmiDataId(3), Pointer
 </dt> </dl>
 
-Identificador que se puede usar para correlacionar las operaciones con la misma instancia de objeto de archivo abierta entre eventos de creación y cierre de archivos.
+Identificador que se puede usar para correlacionar las operaciones con la misma instancia de objeto de archivo abierta entre los eventos de creación y cierre de archivos.
 
 </dd> <dt>
 
@@ -154,9 +154,9 @@ Identificador de subproceso del subproceso que realiza la operación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los eventos de información de conjunto y de información de consulta indican que los atributos de archivo se han establecido o se han consultado. Cuando se emite un comando FSCTL, se registra un evento de control del sistema de archivos (FSControl).
+Los eventos de información de conjunto y de información de consulta indican que los atributos de archivo se han establecido o se han consultado. Se registra un evento de control del sistema de archivos (FSControl) cuando se emite un comando FSCTL.
 
 ## <a name="requirements"></a>Requisitos
 

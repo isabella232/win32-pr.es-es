@@ -4,12 +4,12 @@ ms.assetid: e3afe735-eca8-4fda-bd5b-cc0ab0b6a872
 title: Referencia de sintaxis de expresiones regulares
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33f09bbf81f86e3609f745358f0b18e35cf3f4712f3b1770fb3eb9c8becebc99
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 23c0de50ff37795032719d9bc90ee81891324ba9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118715535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574448"
 ---
 # <a name="regular-expression-syntax-reference"></a>Referencia de sintaxis de expresiones regulares
 
@@ -27,7 +27,7 @@ Los operadores siguientes son válidos para crear expresiones regulares para def
 
 
 
-| Operador      | Descripción                                                                           |
+| Operator      | Descripción                                                                           |
 |---------------|---------------------------------------------------------------------------------------|
 | \*<br/> | Operador unario postfijo que significa cero o más apariciones del operando.<br/> |
 | +<br/>  | Operador unario postfijo que significa una o varias apariciones del operando.<br/>  |
@@ -39,9 +39,9 @@ Los operadores siguientes son válidos para crear expresiones regulares para def
 
  
 
-La implementación de Microsoft de expresiones regulares para reconocedores de escritura a mano permite aplicaciones repetidas de operadores unarios postfijos. Por ejemplo, a \* \* = (a \* ) = a , \* \* b?? = (b?)? = b?. También permiten repeticiones no consecutivas, por ejemplo: ? \* \* = ((a \* )?) \* = (a ) = a \* \* \* . Esto es diferente de .NET Framework expresiones regulares, que solo permiten el ? operador que se va a repetir.
+La implementación de Microsoft de expresiones regulares para reconocedores de escritura a mano permite aplicaciones repetidas de operadores unarios postfijos. Por ejemplo, a \* \* = (a \* ) = a , \* \* b?? = (b?)? = b?. También permiten repeticiones no consecutivas, por ejemplo: ? \* \* = ((a \* )?) \* = (a ) = a \* \* \* . Esto es diferente de .NET Framework expresiones regulares, que solo permiten ? operador que se va a repetir.
 
-Otra diferencia de .NET Framework expresiones regulares es que las expresiones regulares de escritura a mano no admiten una expresión vacía designada con un par vacío de paréntesis, ().
+Otra diferencia de .NET Framework expresiones regulares es que la escritura a mano de expresiones regulares no admite una expresión vacía designada con un par vacío de paréntesis, ().
 
 > [!Note]  
 > Solo se admiten caracteres en la página de códigos 1252 para escribir expresiones regulares a mano.
@@ -67,7 +67,7 @@ No se admiten los siguientes operadores de expresión regular al crear expresion
 
 
 
-| Operador                                     | Descripción                                                         |
+| Operator                                     | Descripción                                                         |
 |----------------------------------------------|---------------------------------------------------------------------|
 | .<br/>                                 | Carácter de punto.<br/>                                        |
 | \[\]<br/>                              | Corchetes. Use paréntesis para agrupar elementos.<br/>     |

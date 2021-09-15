@@ -1,19 +1,19 @@
 ---
 title: Ventana Cambiar (Referencia del elemento de interfaz de usuario de MSAA)
-description: La ventana de conmutador se muestra cada vez que un usuario presiona ALT+TAB para cambiar a otra aplicación. La ventana de conmutador contiene un icono para cada aplicación que se está ejecutando actualmente.
+description: La ventana de conmutador se muestra cada vez que un usuario presiona ALT+TAB para cambiar a una aplicación diferente. La ventana de conmutador contiene un icono para cada aplicación que se está ejecutando actualmente.
 ms.assetid: 77b32eb1-7722-410b-b141-ac09fc7fdffb
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 5aa12b5fa3bfb9e6207ddaff4133b030e6c233c3
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443986"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567348"
 ---
 # <a name="switch-window-msaa-ui-element-reference"></a>Ventana Cambiar (Referencia del elemento de interfaz de usuario de MSAA)
 
-La ventana de conmutador se muestra cada vez que un usuario presiona ALT+TAB para cambiar a otra aplicación. La ventana de conmutador contiene un icono para cada aplicación que se está ejecutando actualmente.
+La ventana de conmutador se muestra cada vez que un usuario presiona ALT+TAB para cambiar a una aplicación diferente. La ventana de conmutador contiene un icono para cada aplicación que se está ejecutando actualmente.
 
 El nombre de clase de ventana para la ventana del conmutador es \# "32771".
 

@@ -1,19 +1,19 @@
 ---
-description: El mensaje \_ TAPI REPLY está obsoleto y no debe usarse.
+description: El mensaje \_ TAPI REPLY está obsoleto y no se debe usar.
 ms.assetid: d9b501aa-ab08-474a-a31f-69632f6a1ab5
 title: TAPI_REPLY
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b66ce0bf31fba0fb8aa86cd102f4231e0da1cc49f20f4dee9198649b9df35dc7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dc3333c2dc6475e747433c9702cacbbe042db343
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120126115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476309"
 ---
-# <a name="tapi_reply"></a>RESPUESTA \_ DE TAPI
+# <a name="tapi_reply"></a>TAPI \_ REPLY
 
-El mensaje \_ TAPI REPLY está obsoleto y no debe usarse.
+El mensaje \_ TAPI REPLY está obsoleto y no se debe usar.
 
  
 

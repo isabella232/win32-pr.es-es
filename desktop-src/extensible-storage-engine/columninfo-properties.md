@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Propiedades de ColumnInfo'
+description: 'Más información sobre: Propiedades columninfo'
 title: Propiedades de ColumnInfo
 TOCTitle: ColumnInfo properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.ColumnInfo
@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.colu
 ms:contentKeyID: 55100928
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 2598cc4e316a1b8a6e64d66c79b09722a914dc92f642dd6bb60d842ec7fc5ef4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c868aed7b5ad5dfe23fd6d67437f7b088c4cf99d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118084063"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580588"
 ---
 # <a name="columninfo-properties"></a>Propiedades de ColumnInfo
 

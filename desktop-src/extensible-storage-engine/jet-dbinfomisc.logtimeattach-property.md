@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fccc93caa1537f607673bf848b90ea6ac8045e7c0158f565cbcdec1c12275c79
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 16092189104500f152c69197b598c0ef4a03d7b1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120017196"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567669"
 ---
 # <a name="jet_dbinfomisclogtimeattach-property"></a>JET_DBINFOMISC.logtimeAttach, propiedad
 
@@ -40,7 +40,7 @@ Obtiene la hora a la que se ha adjuntado la base de datos.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -62,7 +62,7 @@ public JET_LOGTIME logtimeAttach { get; internal set; }
 
 Tipo: [Microsoft.Isam.Esent.Interop.JET_LOGTIME](./jet-logtime-structure2.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

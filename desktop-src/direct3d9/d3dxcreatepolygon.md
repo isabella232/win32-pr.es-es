@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: cf3694bb247fb95e654452c8db3887fcebc2832ac28ec0b2ac920b28f285e22d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 94a7e48f512d25ca53d1f3ff80889a013e2ecdcb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119045153"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575245"
 ---
 # <a name="d3dxcreatepolygon-function"></a>Función D3DXCreatePolygon
 
@@ -85,7 +85,7 @@ Dirección de un puntero a la forma de salida, una [**interfaz ID3DXMesh.**](id3
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Dirección de un puntero a una [**interfaz ID3DXBuffer.**](id3dxbuffer.md) Cuando el método vuelve, este parámetro se rellena con una matriz de tres DWORD por cara que especifican los tres vecinos de cada cara de la malla. Se puede especificar **NULL.**
+Dirección de un puntero a una [**interfaz ID3DXBuffer.**](id3dxbuffer.md) Cuando el método devuelve un resultado, este parámetro se rellena con una matriz de tres DWORD por cara que especifican los tres vecinos para cada cara de la malla. Se puede especificar **NULL.**
 
 </dd> </dl>
 
@@ -95,11 +95,11 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El polígono creado se centra en el origen.
 
-Esta función crea una malla con la opción de creación D3DXMESH MANAGED y el formato de vértice \_ flexible NORMAL (FVF) [D3DFVF \_ XYZ \| D3DFVF. \_ ](d3dfvf.md)
+Esta función crea una malla con la opción de creación D3DXMESH MANAGED y el formato flexible de vértice \_ flexible (FVF) [D3DFVF \_ XYZ \| D3DFVF \_ NORMAL.](d3dfvf.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -112,7 +112,7 @@ Esta función crea una malla con la opción de creación D3DXMESH MANAGED y el f
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

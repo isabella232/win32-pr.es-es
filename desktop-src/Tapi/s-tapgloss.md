@@ -5,12 +5,12 @@ ms.assetid: b4256a4a-c19e-4431-b62f-9e9fef4b5827
 title: S (API de telefonía)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce3a81b3684b550c63b0ce2b801d6c80106248991ea3a5827bebaf778668afde
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9f33f4d2c16110ad6c79a02401c6a63ad0fb8f4f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120034355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474684"
 ---
 # <a name="s-telephony-api"></a>S (API de telefonía)
 

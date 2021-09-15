@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 0ad5fad2699eac272c8abc173af47402130ecaafc918921cdef7717ccdab2095
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2cb1893541f80efb9bf85ea444b27bebba5dea29
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120069415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575265"
 ---
 # <a name="d3dtextureaddress-enumeration"></a>D3DTEXTUREADDRESS (enumeración)
 
 Define constantes que describen los modos de direccionamiento de textura admitidos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -54,35 +54,35 @@ Mosaico de la textura en cada unión de entero. Por ejemplo, para los valores en
 <span id="D3DTADDRESS_MIRROR"></span><span id="d3dtaddress_mirror"></span>**D3DTADDRESS \_ MIRROR**
 </dt> <dd>
 
-Es similar a D3DTADDRESS WRAP, salvo que la textura \_ se volteará en cada unión de entero. para los valores entre 0 y 1, por ejemplo, la textura se aborda normalmente; entre 1 y 2, la textura se voltear (reflejada); entre 2 y 3, la textura vuelve a ser normal; y así sucesivamente.
+Similar a D3DTADDRESS WRAP, salvo que la textura \_ se volteará en cada unión de entero. para usted valores entre 0 y 1, por ejemplo, la textura se dirige normalmente; entre 1 y 2, la textura se volteará (reflejada); entre 2 y 3, la textura es normal de nuevo; y así sucesivamente.
 
 </dd> <dt>
 
-<span id="D3DTADDRESS_CLAMP"></span><span id="d3dtaddress_clamp"></span>**D3DTADDRESS \_ CLAMP**
+<span id="D3DTADDRESS_CLAMP"></span><span id="d3dtaddress_clamp"></span>**FIJACIÓN \_ D3DTADDRESS**
 </dt> <dd>
 
-Las coordenadas de textura fuera del intervalo 0,0, 1,0 se establecen en el color de textura en \[ \] 0,0 o 1,0, respectivamente.
+Las coordenadas de textura fuera del intervalo \[ 0,0, 1,0 se establecen en el color de \] textura en 0,0 o 1,0, respectivamente.
 
 </dd> <dt>
 
-<span id="D3DTADDRESS_BORDER"></span><span id="d3dtaddress_border"></span>**BORDE \_ D3DTADDRESS**
+<span id="D3DTADDRESS_BORDER"></span><span id="d3dtaddress_border"></span>**BORDE D3DTADDRESS \_**
 </dt> <dd>
 
-Las coordenadas de textura fuera \[ del intervalo 0,0, 1,0 \] se establecen en el color del borde.
+Las coordenadas de textura fuera del \[ intervalo 0,0, 1,0 \] se establecen en el color del borde.
 
 </dd> <dt>
 
 <span id="D3DTADDRESS_MIRRORONCE"></span><span id="d3dtaddress_mirroronce"></span>**D3DTADDRESS \_ MIRRORONCE**
 </dt> <dd>
 
-Similar a D3DTADDRESS \_ MIRROR y D3DTADDRESS \_ CLAMP. Toma el valor absoluto de la coordenada de textura (por lo tanto, la creación de reflejo alrededor de 0) y, a continuación, fija al valor máximo. El uso más común es para las texturas de volumen, donde la compatibilidad con el modo de direccionamiento de textura D3DTADDRESS MIRRORONCE completo no es necesaria, pero los datos son simétricos alrededor de un \_ eje.
+Similar a D3DTADDRESS \_ MIRROR y D3DTADDRESS \_ CLAMP. Toma el valor absoluto de la coordenada de textura (por lo tanto, la creación de reflejo alrededor de 0) y, a continuación, se fija al valor máximo. El uso más común es para las texturas de volumen, donde no es necesario admitir el modo de direccionamiento de textura MIRRORONCE completo de D3DTADDRESS, pero los datos son simétricos alrededor de un \_ eje.
 
 </dd> <dt>
 
 <span id="D3DTADDRESS_FORCE_DWORD"></span><span id="d3dtaddress_force_dword"></span>**D3DTADDRESS \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilara con un tamaño distinto de 32 bits. Este valor no se utiliza.
+Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, algunos compiladores permitirían que esta enumeración se compilase a un tamaño distinto de 32 bits. Este valor no se utiliza.
 
 </dd> </dl>
 
@@ -96,7 +96,7 @@ Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, al
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

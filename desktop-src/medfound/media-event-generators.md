@@ -4,16 +4,16 @@ ms.assetid: 2e003ad4-9fcb-4834-a335-e4969ffd3a00
 title: Generadores de eventos multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b24bd37b347fb06f97448b43241a1da40123195b63b9191b97581be60d7378ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 125bf165740b0260f9131e0df8af420c8a669d97
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119724165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579928"
 ---
 # <a name="media-event-generators"></a>Generadores de eventos multimedia
 
-Media Foundation proporciona una manera coherente para que los objetos envíen eventos. Un objeto puede usar eventos para indicar la finalización de un método asincrónico o para notificar a la aplicación sobre un cambio en el estado del objeto.
+Media Foundation proporciona una manera coherente de que los objetos envíen eventos. Un objeto puede usar eventos para indicar la finalización de un método asincrónico o para notificar a la aplicación un cambio en el estado del objeto.
 
 Si un objeto envía eventos, expone la [**interfaz IMFMediaEventGenerator.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) Cada vez que el objeto envía un nuevo evento, el evento se coloca en una cola. La aplicación puede solicitar el siguiente evento de la cola llamando a uno de los métodos siguientes:
 
@@ -21,29 +21,29 @@ Si un objeto envía eventos, expone la [**interfaz IMFMediaEventGenerator.**](/w
 
 -   [**IMFMediaEventGenerator::BeginGetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-begingetevent)
 
-El [**método GetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-getevent) es sincrónico. Si un evento ya está en la cola, el método devuelve inmediatamente. Si no hay ningún evento en la cola, el método produce un error inmediatamente o se bloquea hasta que se pone en cola el siguiente evento, dependiendo de la marca que pase a **GetEvent**.
+El [**método GetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-getevent) es sincrónico. Si un evento ya está en la cola, el método devuelve inmediatamente. Si no hay ningún evento en la cola, el método produce un error inmediatamente o se bloquea hasta que se pone en cola el siguiente evento, en función de la marca que pase a **GetEvent**.
 
-El [**método BeginGetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-begingetevent) es asincrónico, por lo que nunca se bloquea. Este método toma un puntero a la [**interfaz IMFAsyncCallback,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) que la aplicación debe implementar. Cuando se invoca la devolución de llamada, la aplicación llama [**a IMFMediaEventGenerator::EndGetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-endgetevent) para obtener el evento de la cola. Para obtener más información sobre **IMFAsyncCallback,** vea [Métodos de devolución de llamada asincrónicos.](asynchronous-callback-methods.md)
+El [**método BeginGetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-begingetevent) es asincrónico, por lo que nunca se bloquea. Este método toma un puntero a la interfaz [**IMFAsyncCallback,**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) que la aplicación debe implementar. Cuando se invoca la devolución de llamada, la aplicación llama [**a IMFMediaEventGenerator::EndGetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-endgetevent) para obtener el evento de la cola. Para obtener más información sobre **LA DEVOLUCIÓN DE LLAMADA AASYNC,** vea [Métodos de devolución de llamada asincrónicos](asynchronous-callback-methods.md).
 
 Los eventos se representan mediante la [**interfaz IMFMediaEvent.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaevent) Esta interfaz tiene los métodos siguientes:
 
 -   [**GetType:**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-gettype)recupera el tipo de evento. El tipo de evento indica lo que ha ocurrido para desencadenar el evento.
 
--   [**GetStatus:**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getstatus)recupera un valor **HRESULT,** que indica si la operación que desencadenó el evento se ha realizado correctamente. Si se produce un error de forma asincrónica en una operación, **GetStatus** devuelve un código de error.
+-   [**GetStatus:**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getstatus)recupera un valor **HRESULT,** que indica si la operación que desencadenó el evento se ha realizado correctamente. Si se produce un error en una operación de forma asincrónica, **GetStatus** devuelve un código de error.
 
--   [**GetValue:**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue)recupera un **PROPVARIANT** que contiene datos de eventos. Los datos del evento dependen del tipo de evento. Algunos eventos no tienen ningún dato.
+-   [**GetValue:**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue)recupera un **ELEMENTO PROPVARIANT** que contiene datos de eventos. Los datos del evento dependen del tipo de evento. Algunos eventos no tienen datos.
 
--   [**GetExtendedType:**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getextendedtype)recupera un **GUID.** Este método se aplica al [evento MEExtendedType](meextendedtype.md)y proporciona una manera de definir eventos personalizados.
+-   [**GetExtendedType:**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getextendedtype)recupera un **GUID**. Este método se aplica al [evento MEExtendedType](meextendedtype.md)y proporciona una manera de definir eventos personalizados.
 
 La [**interfaz IMFMediaEvent**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaevent) también hereda la [**interfaz DEATTRIBUTEAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) Algunos eventos llevan información adicional como atributos.
 
-Para obtener una lista de tipos de eventos y sus datos y atributos asociados, [vea Media Foundation Eventos .](media-foundation-events.md)
+Para obtener una lista de tipos de eventos y sus datos y atributos asociados, [vea Media Foundation Events](media-foundation-events.md).
 
 ## <a name="implementing-imfmediaeventgenerator"></a>Implementación de IMFMediaEventGenerator
 
-Si va a escribir un componente de complemento para Media Foundation, como un origen multimedia personalizado o un receptor multimedia, es posible que tenga que implementar [**IMFMediaEventGenerator**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator). Para facilitar esto, Media Foundation proporciona un objeto auxiliar que implementa una cola de eventos. Cree la cola de eventos mediante una llamada [**a la función MFCreateEventQueue.**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateeventqueue) La cola de eventos expone la [**interfaz IMFMediaEventQueue.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventqueue) En la implementación del objeto de los métodos **IMFMediaEventGenerator,** llame al método correspondiente en la cola de eventos.
+Si va a escribir un componente de complemento para Media Foundation, como un origen multimedia personalizado o un receptor multimedia, es posible que tenga que implementar [**ELERMEDIAEventGenerator**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator). Para facilitar esto, Media Foundation proporciona un objeto auxiliar que implementa una cola de eventos. Cree la cola de eventos llamando a [**la función MFCreateEventQueue.**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateeventqueue) La cola de eventos expone la [**interfaz IMFMediaEventQueue.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventqueue) En la implementación del objeto de los métodos **IMFMediaEventGenerator,** llame al método correspondiente en la cola de eventos.
 
-El objeto de cola de eventos es seguro para subprocesos. No mantenga nunca el mismo objeto de sección crítico al llamar a [**GetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-getevent) y [**QueueEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-queueevent), porque **GetEvent** podría bloquear indefinidamente la espera de [**QueueEvent.**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-queueevent) Si mantiene la misma sección crítica para ambos métodos, se provocará un interbloqueo.
+El objeto de cola de eventos es seguro para subprocesos. No mantenga nunca el mismo objeto de sección crítica al llamar [**a GetEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-getevent) y [**QueueEvent**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventgenerator-queueevent), porque **GetEvent** podría bloquear indefinidamente la espera de [**QueueEvent.**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-queueevent) Si mantiene la misma sección crítica para ambos métodos, provocará un interbloqueo.
 
 Antes de liberar la cola de eventos, llame [**a IMFMediaEventQueue::Shutdown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaeventqueue-shutdown) para liberar los recursos que contiene el objeto.
 
@@ -57,7 +57,7 @@ Cuando el objeto necesite generar un evento, llame a uno de los métodos siguien
 
 Estos métodos ponen un nuevo evento en la cola y señalan a cualquier llamador que esté esperando el siguiente evento.
 
-En el código siguiente se muestra una clase que implementa [**IMFMediaEventGenerator**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) mediante este objeto auxiliar. Esta clase define un método **shutdown público** que cierra la cola de eventos y libera el puntero de la cola de eventos. Este comportamiento sería típico para orígenes multimedia y receptores de medios, que siempre tienen un **método Shutdown.**
+En el código siguiente se muestra una clase que implementa [**IMFMediaEventGenerator**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediaeventgenerator) mediante este objeto auxiliar. Esta clase define un método **shutdown** público que apaga la cola de eventos y libera el puntero de la cola de eventos. Este comportamiento sería típico para los orígenes de medios y los receptores de medios, que siempre tienen un **método Shutdown.**
 
 
 ```C++
@@ -213,7 +213,7 @@ private:
 
 <dl> <dt>
 
-[Media Foundation PLATFORM API](media-foundation-platform-apis.md)
+[Media Foundation API de plataforma de aplicaciones](media-foundation-platform-apis.md)
 </dt> </dl>
 
  

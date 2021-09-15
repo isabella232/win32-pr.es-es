@@ -1,9 +1,9 @@
 ---
 title: Interfaz IBackgroundCopyCallback (Deliveryoptimization.h)
-description: Implemente la interfaz IBackgroundCopyCallback para recibir la notificación de que un trabajo se ha completado, se ha modificado o está en error. Los clientes usan esta interfaz en lugar de sondear el estado del trabajo.
+description: Implemente la interfaz IBackgroundCopyCallback para recibir una notificación de que un trabajo se ha completado, se ha modificado o está en error. Los clientes usan esta interfaz en lugar de sondear el estado del trabajo.
 ms.assetid: CF85D852-1B4E-4BC2-B6A6-0035ED3C439C
 keywords:
-- Interfaz IBackgroundCopyCallback
+- IBackgroundCopyCallback (interfaz)
 - Interfaz IBackgroundCopyCallback, descrita
 topic_type:
 - apiref
@@ -16,18 +16,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 165a1edcdb6bd70de8fad379fcc89d5afc36776348fd7751277614229a23377e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4169acec87e4d1e8a31eecaa4f93b9404aafb714
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119953645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566757"
 ---
-# <a name="ibackgroundcopycallback-interface"></a>Interfaz IBackgroundCopyCallback
+# <a name="ibackgroundcopycallback-interface"></a>IBackgroundCopyCallback (interfaz)
 
-Implemente **la interfaz IBackgroundCopyCallback** para recibir la notificación de que un trabajo se ha completado, se ha modificado o está en error. Los clientes usan esta interfaz en lugar de sondear el estado del trabajo.
+Implemente **la interfaz IBackgroundCopyCallback** para recibir una notificación de que un trabajo se ha completado, se ha modificado o está en error. Los clientes usan esta interfaz en lugar de sondear el estado del trabajo.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IBackgroundCopyCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IBackgroundCopyCallback** también tiene estos tipos de miembros:
 
@@ -49,9 +49,9 @@ La **interfaz IBackgroundCopyCallback** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para recibir notificaciones, llame al método [**IBackgroundCopyJob::SetNotifyInterface**](ibackgroundcopyjob-setnotifyinterface.md) para especificar el puntero de interfaz a la implementación **de IBackgroundCopyCallback.** Para especificar qué notificaciones desea recibir, llame al método [**IBackgroundCopyJob::SetNotifyFlags.**](ibackgroundcopyjob-setnotifyflags.md)
+Para recibir notificaciones, llame al método [**IBackgroundCopyJob::SetNotifyInterface**](ibackgroundcopyjob-setnotifyinterface.md) para especificar el puntero de interfaz a la implementación **de IBackgroundCopyCallback.** Para especificar qué notificaciones desea recibir, llame al [**método IBackgroundCopyJob::SetNotifyFlags.**](ibackgroundcopyjob-setnotifyflags.md)
 
 DO llamará a las devoluciones de llamada siempre que el puntero de interfaz sea válido. La interfaz de notificación ya no es válida cuando finaliza la aplicación; DO no conserva la interfaz de notificación. Como resultado, el proceso de inicialización de la aplicación debe llamar al método [**SetNotifyInterface**](ibackgroundcopyjob-setnotifyinterface.md) en los trabajos existentes para los que desea recibir la notificación.
 
@@ -63,8 +63,8 @@ DO llamará a las devoluciones de llamada siempre que el puntero de interfaz sea
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | Archivo DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyCallback se define como 97EA99C7-0186-4AD4-8DF9-C5B4E0ED6B22<br/>          |

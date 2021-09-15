@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 34302215cf0e773d7713f56233d38462071f1dde725a85478688cfb9ca2a4f45
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 825112ec9a33ef176d5a69765837214249e33102
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118365898"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476735"
 ---
 # <a name="idelaydcgetcontrolstate-method"></a>IDelaydC::GetControlState (método)
 
@@ -72,7 +72,7 @@ Si el método no se realiza correctamente, el valor devuelto es uno de los sigui
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se puede llamar a este método cada vez que el NPP se conecta a la red mediante la [interfaz IDelaydC.](idelaydc.md) Puede usar este método para averiguar si se está ejecutando una captura, si la captura está en pausa o si la captura se ha detenido pero el NPP no está desconectado.
 
@@ -82,7 +82,7 @@ Los métodos usados para iniciar, pausar y detener la captura se enumeran en la 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
@@ -91,7 +91,7 @@ Los métodos usados para iniciar, pausar y detener la captura se enumeran en la 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

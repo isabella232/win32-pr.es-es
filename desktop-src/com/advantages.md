@@ -4,12 +4,12 @@ description: Ventajas
 ms.assetid: 7f8c0510-1876-40fd-acb8-289bb073ac36
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecd2d329ce289b0bdbbf29b1fc1b35096d76ebbdb32e30a9df4a8c15d6de0640
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f90f09b303ab83e68b711473a70ba1fc914a9738
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119048893"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574184"
 ---
 # <a name="advantages"></a>Ventajas
 

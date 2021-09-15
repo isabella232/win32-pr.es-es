@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d32c3da3e133a5509543ffaa4fbf80b4c565730f13d3b9e92753658c96efcfcd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ab58e9a007d736222d9525d7a064456a1a9a7f14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120069735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566669"
 ---
 # <a name="cd3dx12_subresource_footprint-structure"></a>Estructura CD3DX12 \_ SUBRESOURCE \_ FOOTPRINT
 
@@ -41,7 +41,7 @@ struct CD3DX12_SUBRESOURCE_FOOTPRINT  : public D3D12_SUBRESOURCE_FOOTPRINT{
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -52,10 +52,10 @@ Crea una nueva instancia sin inicializar de una SUPERFICIE \_ DE SUBRECURSO CD3D
 
 </dd> <dt>
 
-**EXPLICIT CD3DX12 \_ SUBRESOURCE \_ FOOTPRINT(const D3D12 \_ SUBRESOURCE \_ FOOTPRINT &o)**
+**SUPERFICIE DE SUBCURSO CD3DX12 \_ \_ explícita(const D3D12 \_ \_ SUBRESOURCE FOOTPRINT &o)**
 </dt> <dd>
 
-Crea una nueva instancia de UNA SUPERFICIE DE SUBCURSO CD3DX12, inicializada con el contenido de otra estructura DE SUPERFICIE \_ \_ DE [**\_ SUBCURSO \_ D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_footprint)
+Crea una nueva instancia de una SUPERFICIE DE SUBCURSO CD3DX12, inicializada con el contenido de otra estructura DE SUPERFICIE \_ \_ DE [**\_ SUBCURSO \_ D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_subresource_footprint)
 
 </dd> <dt>
 

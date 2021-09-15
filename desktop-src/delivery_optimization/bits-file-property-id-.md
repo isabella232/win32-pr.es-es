@@ -1,6 +1,6 @@
 ---
 title: BITS_FILE_PROPERTY_ID enumeración (Deliveryoptimization.h)
-description: La BITS_FILE_PROPERTY_ID especifica los valores que definen los valores de identificador correspondientes a las propiedades BackgroundCopyFile.
+description: La enumeración BITS_FILE_PROPERTY_ID especifica valores que definen valores de identificador correspondientes a las propiedades BackgroundCopyFile.
 ms.assetid: 47EFD160-7CA8-48E6-A18E-38D85F7C6E47
 keywords:
 - BITS_FILE_PROPERTY_ID enumeración
@@ -16,18 +16,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5eb8593e018a5c38c6788dfffefe827ed2e086774aedca1d051680b9cb6a433a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b6c6b8a4de359e8313e3127080f2cc17ae6478c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118810779"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567168"
 ---
 # <a name="bits_file_property_id-enumeration"></a>BITS_FILE_PROPERTY_ID enumeración
 
-La **BITS_FILE_PROPERTY_ID** especifica los valores que definen los valores de identificador correspondientes a **las propiedades BackgroundCopyFile.**
+La **enumeración BITS_FILE_PROPERTY_ID** especifica valores que definen los valores de identificador correspondientes a **las propiedades BackgroundCopyFile.**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -53,11 +53,11 @@ Conjunto completo de encabezados de respuesta HTTP del último paquete de respue
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10, versión 1709 \[ solo aplicaciones de escritorio\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 

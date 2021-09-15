@@ -1,34 +1,34 @@
 ---
-title: Uso de secuencias de audio y vídeo sin comprimir
-description: Uso de secuencias de audio y vídeo sin comprimir
+title: Uso de audio y vídeo sin comprimir Secuencias
+description: Uso de audio y vídeo sin comprimir Secuencias
 ms.assetid: 1a8fe604-bd99-4ba1-878f-8e1fd89483b3
 keywords:
-- flujos, configurar secuencias de audio y vídeo sin comprimir
-- códecs, configurar secuencias de audio y vídeo sin comprimir
+- secuencias, configuración de secuencias de audio y vídeo sin comprimir
+- códecs, configuración de secuencias de audio y vídeo sin comprimir
 - secuencias de vídeo, sin comprimir
-- secuencias de audio sin comprimir
+- secuencias de audio, sin comprimir
 - secuencias de audio y vídeo sin comprimir
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d00d81bd0a9f8c53751e404a0cfb0e55d57d4242
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105714333"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574304"
 ---
-# <a name="using-uncompressed-audio-and-video-streams"></a>Uso de secuencias de audio y vídeo sin comprimir
+# <a name="using-uncompressed-audio-and-video-streams"></a>Uso de audio y vídeo sin comprimir Secuencias
 
-En la mayoría de los casos, el medio sin comprimir tiene requisitos de almacenamiento y entrega muy elevados, pero en algunos escenarios de reproducción local, el nivel de calidad es lo suficientemente importante como para garantizar que no se use la compresión.
+En la mayoría de los casos, los medios sin comprimir tienen requisitos de almacenamiento y entrega prohibitivamente grandes, pero en algunos escenarios de reproducción local, el nivel de calidad es lo suficientemente importante como para garantizar que no se use la compresión.
 
-La configuración de una secuencia de medios sin comprimir debe reflejar la configuración de los medios de origen. Al configurar una secuencia sin comprimir, debe calcular la velocidad de bits del medio y establecer la secuencia de forma adecuada llamando a [**IWMStreamConfig:: SetBitrate**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstreamconfig-setbitrate). Dado que las secuencias sin comprimir no son viables para la transmisión por secuencias, siempre debe establecer en cero la ventana de búfer de los flujos de medios sin comprimir llamando a [**IWMStreamConfig:: SetBufferWindow**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstreamconfig-setbufferwindow).
+La configuración de un flujo multimedia sin comprimir debe reflejar la configuración del medio de origen. Al configurar una secuencia sin comprimir, debe calcular la velocidad de bits del medio y establecer la secuencia correctamente llamando a [**IWMStreamConfig::SetBitrate**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstreamconfig-setbitrate). Dado que las secuencias no comprimidas no son viables para el streaming, siempre debe establecer la ventana de búfer para los flujos multimedia sin comprimir en cero llamando a [**IWMStreamConfig::SetBufferWindow**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstreamconfig-setbufferwindow).
 
-Se admiten los siguientes formatos de píxel para las secuencias de vídeo sin comprimir:
+Se admiten los siguientes formatos de píxel para secuencias de vídeo sin comprimir:
 
 -   WMMEDIASUBTYPE \_ RGB555
 -   WMMEDIASUBTYPE \_ RGB24
 -   WMMEDIASUBTYPE \_ RGB32
--   WMMEDIASUBTYPE \_ i420
+-   WMMEDIASUBTYPE \_ I420
 -   WMMEDIASUBTYPE \_ IYUV
 -   WMMEDIASUBTYPE \_ YV12
 -   WMMEDIASUBTYPE \_ YUY2
@@ -39,21 +39,21 @@ Se admiten los siguientes formatos de píxel para las secuencias de vídeo sin c
 
 <dl> <dt>
 
-[**Configuración común para todos los flujos**](configuration-common-to-all-streams.md)
+[**Configuración común a todas las Secuencias**](configuration-common-to-all-streams.md)
 </dt> <dt>
 
-[**Configuración de secuencias de audio**](configuring-audio-streams.md)
+[**Configuración de audio Secuencias**](configuring-audio-streams.md)
 </dt> <dt>
 
-[**Configuración de secuencias**](configuring-streams.md)
+[**Configuración de Secuencias**](configuring-streams.md)
 </dt> <dt>
 
-[**Configuración de secuencias de vídeo**](configuring-video-streams.md)
+[**Configuración de video Secuencias**](configuring-video-streams.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -4,14 +4,14 @@ ms.assetid: 595cb5c0-da12-4fe9-944c-a61d8ed990b4
 title: Texturas de vértice en vs_3_0 (DirectX HLSL)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4cbd4aa1e1830d29656fea2bc7b028191bee158eede119c9a47ae2457d10e99
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1a4e8e7bbf7e1ae9764fe5b30647f318dfaeb3ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118519453"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580101"
 ---
-# <a name="vertex-textures-in-vs_3_0-directx-hlsl"></a>Texturas de vértice en vs \_ 3 \_ 0 (DirectX HLSL)
+# <a name="vertex-textures-in-vs_3_0-directx-hlsl"></a>Texturas de vértice en frente \_ a 3 \_ 0 (DirectX HLSL)
 
 El modelo del sombreador de vértices 3.0 admite la búsqueda de textura en el sombreador de vértices mediante la [instrucción texldl - vs](../direct3dhlsl/texldl---vs.md) texture load. El motor de vértices contiene cuatro fases del muestreador de textura, [denominadas D3DVERTEXTEXTURESAMPLER0](d3dvertextexturesampler.md), D3DVERTEXTEXTURESAMPLER1, D3DVERTEXTEXTURESAMPLER2 y D3DVERTEXTEXTURESAMPLER3. Son distintos del sampler del mapa de desplazamiento y de los muestreadores de textura en el motor de píxeles.
 
@@ -20,14 +20,14 @@ Para muestrear las texturas establecidas en esas cuatro fases, puede usar el mot
 Una aplicación puede consultar si se admite un formato como textura de vértice llamando a [**CheckDeviceFormat**](/windows/desktop/api) con [D3DUSAGE \_ QUERY \_ VERTEXTEXTURE](d3dusage-query.md).
 
 > [!Note]  
-> Se trata de una marca de consulta, por lo que no se acepta en ninguna función Createxxx. Una textura de vértice creada en el grupo predeterminado se puede establecer como una textura de píxeles y viceversa. Sin embargo, para usar el procesamiento de vértices de software, la textura de vértice debe crearse en el grupo de vértices (independientemente de si es un dispositivo en modo mixto o un dispositivo de procesamiento de vértices de software).
+> Se trata de una marca de consulta, por lo que no se acepta en ninguna función Createxxx. Una textura de vértice creada en el grupo predeterminado se puede establecer como una textura de píxel y viceversa. Sin embargo, para usar el procesamiento de vértices de software, la textura de vértice debe crearse en el grupo de vértices (independientemente de si es un dispositivo en modo mixto o un dispositivo de procesamiento de vértices de software).
 
  
 
 La funcionalidad es idéntica a las texturas de píxel, excepto lo siguiente:
 
--   No se admite el filtrado de texturas anisotropicas, por lo que D3DSAMP MAXANISOTROPY se omite y \_ D3DTEXF ANISOTROPIC no se puede establecer para la lupa ni para la minificación para estas \_ fases.
--   La tasa de información de cambio no está disponible, por lo que la aplicación tiene que calcular el nivel de detalle y proporcionar esa información como un parámetro para [texldl- frente](../direct3dhlsl/texldl---vs.md)a .
+-   No se admite el filtrado de texturas anisotróficas, por lo que D3DSAMP MAXANISOTROPY se omite y \_ D3DTEXF ANISOTROPIC no se puede establecer para la lupa ni para la minificación para estas \_ fases.
+-   La tasa de cambio de información no está disponible, por lo que la aplicación tiene que calcular el nivel de detalle y proporcionar esa información como un parámetro para [texldl- frente](../direct3dhlsl/texldl---vs.md)a .
 
 Entre las restricciones se incluyen:
 
@@ -44,9 +44,9 @@ Cada muestreador identifica de forma única una sola superficie de textura que s
 
 En el momento del dibujo, una textura no se puede establecer simultáneamente como un destino de representación y una textura en una fase.
 
-Dado que \_ vs 3 0 admite cuatro muestreadores, se pueden leer hasta cuatro superficies de textura en \_ un solo paso de sombreador. Un registro de sampler solo puede aparecer como un argumento en la instrucción de carga de textura: [texldl - frente a](../direct3dhlsl/texldl---vs.md).
+Dado que \_ vs 3 0 admite cuatro muestreadores, se pueden leer hasta cuatro superficies de textura en \_ un solo paso de sombreador. Un registro de sampler solo puede aparecer como argumento en la instrucción de carga de textura: [texldl - frente a](../direct3dhlsl/texldl---vs.md).
 
-En vs 3 0, si usa un sampler, se debe declarar al principio del programa de \_ \_ sombreador, mediante [dcl \_ samplerType (sm3 - vs asm)](../direct3dhlsl/dcl-samplertype---vs.md) (como en ps \_ 2 \_ 0).
+En vs 3 0, si usa un sampler, debe declararse al principio del programa de \_ \_ sombreador, mediante [dcl \_ samplerType (sm3 - vs asm)](../direct3dhlsl/dcl-samplertype---vs.md) (como en ps \_ 2 \_ 0).
 
 ## <a name="software-processing"></a>Procesamiento de software
 

@@ -7,12 +7,12 @@ MSHAttr:
 title: IwlanApplicability
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dac7d44d5bae50a899e3d32c4e421b4c8d2cd80e
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: 86419075e3ad39411efc5534a9dfb5b016a88317
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882074"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475865"
 ---
 # <a name="span-idwwan_profile_v4element_iwlanapplicabilityspaniwlanapplicability"></a><span id="WWAN_profile_v4.element_IwlanApplicability"></span>IwlanApplicability
 
@@ -24,7 +24,7 @@ Especifica que este perfil solo está activo cuando se conecta a una red IWLAN. 
 [&lt;ProfileConditionedOn&gt;](element-profileconditionedon.md)  
 **&lt;IwlanApplicability&gt;**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <IwlanApplicability>
@@ -49,7 +49,7 @@ Ninguno.
 
 | Elemento primario | Descripción | 
 |----------------|-------------|
-| <a href="element-profileconditionedon.md">ProfileConditionedOn</a> | <p>Especifica las condiciones que deben cumplirse para que un perfil sea aplicable.</p><p>Este elemento es nuevo para v4. Permite especificar varios perfiles que se aplican en condiciones diferentes y para que el perfil adecuado se utilice automáticamente cuando sea aplicable. Este elemento es opcional. Si no lo especifica, el perfil siempre es aplicable con respecto a las condiciones enumeradas.</p> | 
+| <a href="element-profileconditionedon.md">ProfileConditionedOn</a> | <p>Especifica las condiciones que se deben cumplir para que un perfil sea aplicable.</p><p>Este elemento es nuevo para v4. Permite especificar varios perfiles que se aplican en condiciones diferentes y para que el perfil adecuado se utilice automáticamente cuando sea aplicable. Este elemento es opcional. Si no lo especifica, el perfil siempre es aplicable con respecto a las condiciones enumeradas.</p> | 
 
 
  
@@ -57,7 +57,9 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

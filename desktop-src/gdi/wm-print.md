@@ -4,12 +4,12 @@ ms.assetid: e6be2ecd-603a-405f-8a48-68d971e1f6de
 title: WM_PRINT mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45a09d3cb7dbb3b4a4fca7a2af4272f1b4175aa26e911d1def909c97ba35f3d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5a012d26e4357a639a7eb8d7930937a06a991124
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119964855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475903"
 ---
 # <a name="wm_print-message"></a>Mensaje \_ DE WM PRINT
 
@@ -50,8 +50,8 @@ Opciones de dibujo. Este parámetro puede ser uno o varios de los valores siguie
 | Value                                                                                                                                                                  | Significado                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
 | <span id="PRF_CHECKVISIBLE"></span><span id="prf_checkvisible"></span><dl> <dt>**PRF \_ CHECKVISIBLE**</dt> </dl> | Dibuja la ventana solo si está visible.<br/>          |
-| <span id="PRF_CHILDREN"></span><span id="prf_children"></span><dl> <dt>**PRF \_ CHILDREN**</dt> </dl>             | Dibuja todas las ventanas secundarios visibles.<br/>              |
-| <span id="PRF_CLIENT"></span><span id="prf_client"></span><dl> <dt>**CLIENTE \_ DE PRF**</dt> </dl>                   | Dibuja el área de cliente de la ventana.<br/>             |
+| <span id="PRF_CHILDREN"></span><span id="prf_children"></span><dl> <dt>**PRF \_ CHILDREN**</dt> </dl>             | Dibuja todas las ventanas de los secundarios visibles.<br/>              |
+| <span id="PRF_CLIENT"></span><span id="prf_client"></span><dl> <dt>**CLIENTE DE \_ PRF**</dt> </dl>                   | Dibuja el área de cliente de la ventana.<br/>             |
 | <span id="PRF_ERASEBKGND"></span><span id="prf_erasebkgnd"></span><dl> <dt>**PRF \_ ERASEB PREPND**</dt> </dl>       | Borra el fondo antes de dibujar la ventana.<br/> |
 | <span id="PRF_NONCLIENT"></span><span id="prf_nonclient"></span><dl> <dt>**PRF \_ NONCLIENT**</dt> </dl>          | Dibuja el área no cliente de la ventana.<br/>          |
 | <span id="PRF_OWNED"></span><span id="prf_owned"></span><dl> <dt>**PROPIEDAD \_ DE PRF**</dt> </dl>                      | Dibuja todas las ventanas de propiedad.<br/>                         |
@@ -62,9 +62,9 @@ Opciones de dibujo. Este parámetro puede ser uno o varios de los valores siguie
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) procesa este mensaje en función de la opción de dibujo especificada: si se especifica PRF CHECKVISIBLE y la ventana no está visible, No haga nada, si se especifica PRF NONCLIENT, dibuje el área no cliente en el contexto de dispositivo especificado; si se especifica PRF ERASEB PREPND, envíe a la ventana un mensaje \_ WM \_ \_ [**\_ ERASEB NONCLIENTND;**](../winmsg/wm-erasebkgnd.md) si se especifica PRF CLIENT, envíe a la ventana un mensaje \_ [**\_ PRINTCLIENT**](wm-printclient.md) de WM; si se establece PRF \_ CHILDREN, **\_** \_ **\_** envíe a cada ventana secundaria visible un mensaje WM PRINT; si se establece PRF OWNED, envíe a cada ventana de propiedad visible un mensaje PRINT de WM.
+La [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) procesa este mensaje en función de la opción de dibujo especificada: si se especifica PRF CHECKVISIBLE y la ventana no está visible, No haga nada, si se especifica PRF NONCLIENT, dibuje el área no cliente en el contexto de dispositivo especificado; si se especifica \_ PRF ERASEB PREPND, envíe a la ventana un mensaje \_ \_ WM [**\_ ERASEB NONCLIENT;**](../winmsg/wm-erasebkgnd.md) si se especifica PRF CLIENT, envíe a la ventana un mensaje \_ [**\_ PRINTCLIENT**](wm-printclient.md) \_ **\_** \_ **\_** wm. Si se establece PRF CHILDREN, envíe a cada ventana secundaria visible un mensaje WM PRINT; si se establece PRF OWNED, envíe a cada ventana de propiedad visible un mensaje DE WM PRINT.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,7 +91,7 @@ La [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindo
 [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
 </dt> <dt>
 
-[**WM \_ ERASEBND**](../winmsg/wm-erasebkgnd.md)
+[**WM \_ ERASEBNDAND**](../winmsg/wm-erasebkgnd.md)
 </dt> <dt>
 
 [**WM \_ PRINTCLIENT**](wm-printclient.md)

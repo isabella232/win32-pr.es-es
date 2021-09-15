@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 9e6ca9e65b7c14f1df3af00acece8e2ba37c85d6a2193989ab232839f1863c32
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2dbc9d7a0c1cc6ededf5d59585c806b54d6cfa32
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119713475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574484"
 ---
 # <a name="icontextnode-interface"></a>Interfaz IContextNode
 
 Representa un nodo en un árbol de objetos que se crean como parte del análisis de entrada de lápiz.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IContextNode** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IContextNode también** tiene estos tipos de miembros:
 
@@ -40,7 +40,7 @@ La **interfaz IContextNode** tiene estos métodos.
 |:----------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AddContextLink**](icontextnode-addcontextlink.md)                                   | Agrega un nuevo [**IContextLink a**](icontextlink.md) la colección de vínculos de contexto del objeto **IContextNode.**<br/>                                                                                                          |
 | [**AddPropertyData**](icontextnode-addpropertydata.md)                                 | Agrega un fragmento de datos específicos de la aplicación.<br/>                                                                                                                                                                         |
-| [**Confirm**](icontextnode-confirm.md)                                                 | Modifica el tipo de confirmación, que controla lo que [**el objeto IInkAnalyzer**](iinkanalyzer.md) puede cambiar sobre **IContextNode**.<br/>                                                                         |
+| [**Confirmar**](icontextnode-confirm.md)                                                 | Modifica el tipo de confirmación, que controla lo que [**el objeto IInkAnalyzer**](iinkanalyzer.md) puede cambiar sobre **IContextNode**.<br/>                                                                         |
 | [**ContainsPropertyData**](icontextnode-containspropertydata.md)                       | Determina si el objeto **IContextNode** contiene datos almacenados bajo el identificador especificado.<br/>                                                                                                                |
 | [**CreatePartiallyPopulatedSubNode**](icontextnode-createpartiallypopulatedsubnode.md) | Crea un objeto **IContextNode secundario** que solo contiene información sobre el tipo, el identificador y la ubicación.<br/>                                                                                                          |
 | [**CreateSubNode**](icontextnode-createsubnode.md)                                     | Crea un nuevo objeto **IContextNode** secundario.<br/>                                                                                                                                                                       |
@@ -76,9 +76,9 @@ La **interfaz IContextNode** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los tipos de nodos se describen en las constantes [Tipos de nodo de](context-node-types.md) contexto.
+Los tipos de nodos se describen en las [constantes Tipos de nodo de](context-node-types.md) contexto.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -196,16 +196,16 @@ HRESULT CMyClass::ExploreContextNode(
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

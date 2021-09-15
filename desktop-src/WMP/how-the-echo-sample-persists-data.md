@@ -10,12 +10,12 @@ keywords:
 - Ejemplo de complemento DSP de eco, páginas de propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f725ef92134a634f805ce9ad713c9cf73825de44a26ace3f53b97bfd0efba63
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: df781754fd52639272850158187cb1258c081583
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118837198"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476234"
 ---
 # <a name="how-the-echo-sample-persists-data"></a>Cómo conserva los datos el ejemplo de eco
 

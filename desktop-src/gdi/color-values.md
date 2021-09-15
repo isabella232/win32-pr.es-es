@@ -4,12 +4,12 @@ ms.assetid: 6e44935c-2b3b-4062-8273-f1f3e70300d2
 title: Valores de color
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b1518060e1ad4af7ada1c244ecdcac742f27a36133080f31199714dd8059d5e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 67e46cd7ee87871c660702bed120958e7096745d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118761935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580053"
 ---
 # <a name="color-values"></a>Valores de color
 
@@ -20,7 +20,7 @@ El color se define como una combinación de tres colores principales rojo, verde
 
  
 
-El sistema y las aplicaciones usan parámetros y variables que tienen el [tipo COLORREF](colorref.md) para pasar y almacenar valores de color. Por ejemplo, la función [**EnumObjects**](/windows/desktop/api/Wingdi/nf-wingdi-enumobjects) identifica el color de cada lápiz estableciendo el **miembro lopnColor** de una estructura [**LOGPEN**](/windows/win32/api/wingdi/ns-wingdi-logpen) en un valor de color. Las aplicaciones pueden extraer los valores individuales de los componentes rojo, verde y azul de un valor de color mediante las macros [**GetRValue,**](/windows/desktop/api/Wingdi/nf-wingdi-getrvalue) [**GetGValue**](/windows/desktop/api/Wingdi/nf-wingdi-getgvalue)y [**GetBValue,**](/windows/desktop/api/Wingdi/nf-wingdi-getbvalue) respectivamente. Las aplicaciones pueden crear un valor de color a partir de valores de componentes individuales mediante la [**macro RGB.**](/windows/desktop/api/Wingdi/nf-wingdi-rgb) Al crear o examinar una paleta lógica, una aplicación usa la estructura [**RGBQUAD**](/windows/win32/api/wingdi/ns-wingdi-rgbquad) para definir valores de color y examinar valores de componentes individuales.
+El sistema y las aplicaciones usan parámetros y variables que tienen el [tipo COLORREF](colorref.md) para pasar y almacenar valores de color. Por ejemplo, la función [**EnumObjects**](/windows/desktop/api/Wingdi/nf-wingdi-enumobjects) identifica el color de cada lápiz estableciendo el miembro **lopnColor** de una estructura [**LOGPEN**](/windows/win32/api/wingdi/ns-wingdi-logpen) en un valor de color. Las aplicaciones pueden extraer los valores individuales de los componentes rojo, verde y azul de un valor de color mediante las macros [**GetRValue**](/windows/desktop/api/Wingdi/nf-wingdi-getrvalue), [**GetGValue**](/windows/desktop/api/Wingdi/nf-wingdi-getgvalue)y [**GetBValue,**](/windows/desktop/api/Wingdi/nf-wingdi-getbvalue) respectivamente. Las aplicaciones pueden crear un valor de color a partir de valores de componente individuales mediante la [**macro RGB.**](/windows/desktop/api/Wingdi/nf-wingdi-rgb) Al crear o examinar una paleta lógica, una aplicación usa la estructura [**RGBQUAD**](/windows/win32/api/wingdi/ns-wingdi-rgbquad) para definir valores de color y examinar valores de componentes individuales.
 
  
 

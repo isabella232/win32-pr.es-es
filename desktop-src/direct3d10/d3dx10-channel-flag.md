@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Tex.h
-ms.openlocfilehash: 4b29cbb958b2aa8af02000fc62d4d3a848c2efba585bd927674c9ceca9d65d9e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f21958ab964a70116a551c0cb8dadbce6db88f7d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119634965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566745"
 ---
 # <a name="d3dx10_channel_flag-enumeration"></a>D3DX10 \_ CHANNEL \_ FLAG (enumeración)
 
 Estas marcas las usan las funciones que operan en uno o varios canales de una textura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -64,17 +64,17 @@ Indica que se debe usar el canal verde.
 
 </dd> <dt>
 
-<span id="D3DX10_CHANNEL_ALPHA"></span><span id="d3dx10_channel_alpha"></span>**D3DX10 \_ CHANNEL \_ ALPHA**
+<span id="D3DX10_CHANNEL_ALPHA"></span><span id="d3dx10_channel_alpha"></span>**CANAL ALFA D3DX10 \_ \_**
 </dt> <dd>
 
 Indica que se debe usar el canal alfa.
 
 </dd> <dt>
 
-<span id="D3DX10_CHANNEL_LUMINANCE"></span><span id="d3dx10_channel_luminance"></span>**D3DX10 \_ CHANNEL \_ LUMINANCE**
+<span id="D3DX10_CHANNEL_LUMINANCE"></span><span id="d3dx10_channel_luminance"></span>**LUMINANCE DEL CANAL D3DX10 \_ \_**
 </dt> <dd>
 
-Indica que se deben usar las luminosidads de los canales rojo, verde y azul.
+Indica que se deben usar las luminosidades de los canales rojo, verde y azul.
 
 </dd> </dl>
 

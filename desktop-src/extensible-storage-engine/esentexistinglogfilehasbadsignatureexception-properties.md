@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101652
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 8b4443cb42688cb276f7dffde2c30308b83e29410b351648f843ae645d84137d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 975d588bd8caa47e2fcaffcb60ebca5aaa9b0c13
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120020925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575129"
 ---
 # <a name="esentexistinglogfilehasbadsignatureexception-properties"></a>Propiedades de EsentExistingLogFileHasBadSignatureException
 
@@ -34,7 +34,7 @@ El [tipo EsentExistingLogFileHasBadSignatureException](./esentexistinglogfilehas
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentExistingLogFileHasBadSignatureException](./esentexistinglogfilehas
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

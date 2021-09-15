@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f494d24e1a92fedb000847569841fb364338bb430c85bfd5e0bc8ab7aba4fb7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dbf788370c26da1ba773d797de544b1a64750d90
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120069675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581249"
 ---
 # <a name="id3dx11effectshadervariablegetinputsignatureelementdesc-method"></a>Método ID3DX11EffectShaderVariable::GetInputSignatureElementDesc
 
@@ -78,7 +78,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graphics-reference-returnvalues.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un efecto contiene uno o varios sombreadores; cada sombreador tiene una firma de entrada y salida; cada firma contiene uno o varios elementos (o parámetros). El índice de sombreador identifica el sombreador y el índice del elemento identifica el elemento (o parámetro) en la firma del sombreador.
 

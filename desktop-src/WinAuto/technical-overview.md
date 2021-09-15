@@ -4,12 +4,12 @@ description: Microsoft Active Accessibility mejora el modo en que las ayuda de a
 ms.assetid: d71ef40e-4c58-4ee6-8909-04ff4f8d20d3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4e2bfd984dce863a2bdcdbd41d7b3d72b521861177bc4086a93eb578eb71c5a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 69f3931c6a69e9b8caed849942424039178a7884
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118325170"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567341"
 ---
 # <a name="technical-overview"></a>Introducción técnica
 

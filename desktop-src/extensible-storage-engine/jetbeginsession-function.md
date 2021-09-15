@@ -21,11 +21,11 @@ api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 3e6263916211e5d21e0032ba6de8d98e46fedfa9
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122989078"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580513"
 ---
 # <a name="jetbeginsession-function"></a>Función JetBeginSession
 
@@ -65,7 +65,7 @@ Este parámetro está reservado.
 
 ### <a name="return-value"></a>Valor devuelto
 
-Esta función permite la devolución de cualquier [JET_ERR](./jet-err.md)que se definen en esta API. Para obtener más información sobre los errores de Jet, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
+Esta función permite la devolución de [cualquier JET_ERR](./jet-err.md)que se definan en esta API. Para obtener más información sobre los errores de Jet, vea [Extensible Storage Engine Errors](./extensible-storage-engine-errors.md) and Error Handling [Parameters](./error-handling-parameters.md).
 
 
 | <p>Código devuelto</p> | <p>Descripción</p> | 
@@ -73,10 +73,10 @@ Esta función permite la devolución de cualquier [JET_ERR](./jet-err.md)que se 
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
 | <p>JET_errClientRequestToStopJetService</p> | <p>No es posible completar la operación porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
 | <p>JET_errInstanceUnavailable</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión ha encontrado un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p>Este error solo lo devolverán Windows XP y versiones posteriores.</p> | 
-| <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros proporcionados contenía un valor inesperado o contenía un valor que no tenía sentido cuando se combinaba con el valor de otro parámetro.</p> | 
+| <p>JET_errInvalidParameter</p> | <p>Uno de los parámetros proporcionados contenía un valor inesperado o un valor que no tenía sentido cuando se combinaba con el valor de otro parámetro.</p> | 
 | <p>JET_errNotInitialized</p> | <p>No es posible completar la operación porque la instancia asociada a la sesión aún no se ha inicializado.</p> | 
 | <p>JET_errOutOfMemory</p> | <p>Error en la operación porque no se pudo asignar memoria.</p> | 
-| <p>JET_errOutOfSessions</p> | <p>El número de sesiones que el motor permitirá que el cliente inicie es limitado. Este valor se puede cambiar mediante <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> con la JET_paramMaxSessions constante. El número predeterminado de sesiones es 16. Consulte <a href="gg294139(v=exchg.10).md">Parámetros del sistema</a> para obtener más información sobre JET_paramMaxSessions.</p> | 
+| <p>JET_errOutOfSessions</p> | <p>El número de sesiones que el motor permitirá que el cliente inicie es limitado. Este valor se puede cambiar mediante <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> con la JET_paramMaxSessions constante. El número predeterminado de sesiones es 16. Consulte <a href="gg294139(v=exchg.10).md">Parámetros del sistema</a> para obtener más información JET_paramMaxSessions.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>No es posible completar la operación porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
 | <p>JET_errTermInProgress</p> | <p>No es posible completar la operación porque se está cerrando la instancia asociada a la sesión.</p> | 
 
@@ -101,7 +101,7 @@ El identificador de sesión debe cerrarse [con JetEndSession](./jetendsession-fu
 | <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
 | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetBeginSessionW</strong> (Unicode) y <strong>JetBeginSessionA</strong> (ANSI).</p> | 
 
 

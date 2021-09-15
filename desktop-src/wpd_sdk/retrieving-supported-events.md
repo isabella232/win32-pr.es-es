@@ -5,11 +5,11 @@ title: Recuperación de eventos de servicio admitidos
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: dfdc1df4c8255a4dc2a1297ae99216437ac3b4c9
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574276"
 ---
 # <a name="retrieving-supported-service-events"></a>Recuperación de eventos de servicio admitidos
 
@@ -38,7 +38,7 @@ Cuatro métodos del módulo ServiceCapabilities.cpp admiten la recuperación de 
 
 El **método ListSupportedEvents** invoca el método [**IPortableDeviceService::Capabilities**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservice-capabilities) para recuperar una [**interfaz IPortableDeviceServiceCapabilities.**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicecapabilities) Con esta interfaz, recupera los eventos admitidos llamando al método [**IPortableDeviceServiceCapabilities::GetSupportedEvents.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getsupportedevents) El **método GetSupportedEvents** recupera los GUID de cada evento admitido por el servicio y copia esos GUID en un objeto [**IPortableDevicePropVariantCollection.**](iportabledevicepropvariantcollection.md)
 
-El código siguiente muestra cómo recuperar eventos de servicio admitidos.
+En el código siguiente se muestra cómo recuperar eventos de servicio admitidos.
 
 
 ```C++
@@ -184,7 +184,7 @@ void DisplayEvent(
 
 
 
-La función auxiliar **DisplayEventOptions** recibe un [**objeto IPortableDeviceValues**](iportabledevicevalues.md) que contiene los datos de opción del evento. A continuación, llama [**al método IPortableDeviceValues::GetBoolValue**](iportabledevicevalues-getboolvalue.md) para recuperar los datos de opciones. Con estos datos, representa una cadena que indica si se admiten las opciones de difusión y reproducción automática.
+La **función auxiliar DisplayEventOptions** recibe un [**objeto IPortableDeviceValues**](iportabledevicevalues.md) que contiene los datos de opción del evento. A continuación, llama [**al método IPortableDeviceValues::GetBoolValue**](iportabledevicevalues-getboolvalue.md) para recuperar los datos de opciones. Con estos datos, representa una cadena que indica si se admiten las opciones de difusión y reproducción automática.
 
 
 ```C++

@@ -1,7 +1,7 @@
 ---
-description: Agrega un objeto de certificado a una colección de destinatarios.
+description: Agrega un objeto Certificate a una colección Recipients.
 ms.assetid: 2a1b9e0f-ccbf-4042-871b-397de6b6fc35
-title: Recipients. Add (método)
+title: Método Recipients.Add
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,17 +14,17 @@ api_type:
 api_location:
 - Capicom.dll
 ms.openlocfilehash: 255d17485e3423d50cd86b092c2120605f0f1106
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105670654"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476388"
 ---
-# <a name="recipientsadd-method"></a>Recipients. Add (método)
+# <a name="recipientsadd-method"></a>Método Recipients.Add
 
-\[El método **Add** está disponible para su uso en los sistemas operativos especificados en la sección de requisitos. En su lugar, use la [**clase CmsRecipientCollection**](/dotnet/api/system.security.cryptography.pkcs.cmsrecipientcollection?view=dotnet-plat-ext-3.1&preserve-view=true) en el espacio de nombres [**System. Security. Cryptography. Pkcs**](/dotnet/api/system.security.cryptography.pkcs?view=dotnet-plat-ext-3.1&preserve-view=true) .\]
+\[El **método Add** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. En su lugar, use [**la clase CmsRecipientCollection**](/dotnet/api/system.security.cryptography.pkcs.cmsrecipientcollection?view=dotnet-plat-ext-3.1&preserve-view=true) en el espacio de nombres [**System.Security.Cryptography.Pkcs.**](/dotnet/api/system.security.cryptography.pkcs?view=dotnet-plat-ext-3.1&preserve-view=true)\]
 
-El método **Add** agrega un objeto de [**certificado**](certificate.md) a una colección de [**destinatarios**](recipients.md) .
+El **método Add** agrega un objeto [**Certificate**](certificate.md) a una [**colección Recipients.**](recipients.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -41,10 +41,10 @@ Recipients.Add( _
 
 <dl> <dt>
 
-*Certificado* \[ de de\]
+*Certificado* \[ En\]
 </dt> <dd>
 
-Expresión que se resuelve en el objeto de [**certificado**](certificate.md) que se va a agregar a la colección.
+Expresión que se resuelve en el [**objeto Certificate**](certificate.md) que se va a agregar a la colección.
 
 </dd> </dl>
 
@@ -58,7 +58,7 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuible<br/> | CAPICOM 2,0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
+| Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
@@ -67,7 +67,7 @@ Este método no devuelve ningún valor.
 
 <dl> <dt>
 
-[**Objetos de criptografía**](cryptography-objects.md)
+[**Objetos criptografía**](cryptography-objects.md)
 </dt> <dt>
 
 [**Recipients**](recipients.md)

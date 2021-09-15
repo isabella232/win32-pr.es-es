@@ -4,12 +4,12 @@ ms.assetid: c662a6d6-5e0b-4c28-841d-5774d4103d4b
 title: MFNETSOURCE_PLAYERUSERAGENT propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4b431780345c8b297bf154813a9713b5b158ecc99cc4384294ee983b8066ddf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f9f4d06eaea566e22e1239ed04594f2f592c7cd6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118243427"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580317"
 ---
 # <a name="mfnetsource_playeruseragent-property"></a>Propiedad MFNETSOURCE \_ PLAYERUSERAGENT
 
@@ -31,7 +31,7 @@ VT \_ LPWSTR
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La constante **MFNETSOURCE \_ PLAYERUSERAGENT** define el GUID de esta clave de propiedad. El identificador de propiedad (PID) es cero.
 
@@ -41,15 +41,15 @@ Las aplicaciones pueden usar esta propiedad para configurar el origen de red. Pa
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

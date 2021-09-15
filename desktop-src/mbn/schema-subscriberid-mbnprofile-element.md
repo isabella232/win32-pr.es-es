@@ -11,12 +11,12 @@ api_name:
 - SubscriberID
 api_type:
 - Schema
-ms.openlocfilehash: 42290b0a80e85b2fdd1c794aced78571e939010b0e260bf1bdeba15f221cc103
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ca098383aadd51e1e05d6b02bdd02a563eb0a09c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118065889"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475863"
 ---
 # <a name="subscriberid-mbnprofile-element"></a>Elemento SubscriberID (MBNProfile)
 
@@ -40,7 +40,7 @@ El **elemento SubscriberID** se define mediante el [**elemento MBNProfile.**](sc
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |

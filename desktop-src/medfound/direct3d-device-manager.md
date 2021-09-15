@@ -4,16 +4,16 @@ ms.assetid: d82fd82d-510e-4004-b18b-8f2372e29701
 title: Direct3D Administrador de dispositivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a2031e336fafd7b98fb02d23fea84c36d27d0f4d3093f0d20991fb8777d6434
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5aeff41b790df9537854ab715724d95cee646168
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118064199"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574933"
 ---
 # <a name="direct3d-device-manager"></a>Direct3D Administrador de dispositivos
 
-El administrador de dispositivos de Microsoft Direct3D permite que dos o más objetos compartan el mismo dispositivo Microsoft Direct3D 9. Un objeto actúa como propietario del dispositivo Direct3D 9. Para compartir el dispositivo, el propietario del dispositivo crea el administrador de dispositivos Direct3D. Otros objetos pueden obtener un puntero al administrador de dispositivos del propietario del dispositivo y, a continuación, usar el administrador de dispositivos para obtener un puntero al dispositivo Direct3D. Cualquier objeto que use el dispositivo contiene un bloqueo exclusivo, lo que impide que otros objetos utilicen el dispositivo al mismo tiempo.
+El administrador de dispositivos De Microsoft Direct3D permite que dos o más objetos compartan el mismo dispositivo Microsoft Direct3D 9. Un objeto actúa como propietario del dispositivo Direct3D 9. Para compartir el dispositivo, el propietario del dispositivo crea el administrador de dispositivos Direct3D. Otros objetos pueden obtener un puntero al administrador de dispositivos del propietario del dispositivo y, a continuación, usar el administrador de dispositivos para obtener un puntero al dispositivo Direct3D. Cualquier objeto que use el dispositivo contiene un bloqueo exclusivo, lo que impide que otros objetos utilicen el dispositivo al mismo tiempo.
 
 > [!Note]  
 > Direct3D Administrador de dispositivos solo admite dispositivos Direct3D 9. No admite dispositivos DXGI.

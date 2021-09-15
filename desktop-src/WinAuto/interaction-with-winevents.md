@@ -4,12 +4,12 @@ description: El tiempo de ejecución de la anotación dinámica no enviará WinE
 ms.assetid: 657a540b-8838-4d2e-ade6-c4fa1ad08e21
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df1789a152ab37161e1f217639e4ad40d597b0689529da3a5f65bf669b986e14
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c2aedd09a22371f91a92eca891c77f6c424583b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120098465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567428"
 ---
 # <a name="interaction-with-winevents"></a>Interacción con WinEvents
 

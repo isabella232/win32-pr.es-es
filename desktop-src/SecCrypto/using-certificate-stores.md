@@ -4,12 +4,12 @@ ms.assetid: 018fc41a-19fd-4e4c-bfed-e0215afb5150
 title: Uso de almacenes de certificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f687286d40e64e590079d872a0134742d552b66a9926a1febeb5c42ae2ad7566
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 682068ba8f2f88d0fedabeef7ccee676f092e52e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117971620"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127477669"
 ---
 # <a name="using-certificate-stores"></a>Uso de almacenes de certificados
 
@@ -33,7 +33,7 @@ En la tabla siguiente se enumeran los almacenes de certificados estándar que no
 
  
 
-Los almacenes CAPICOM CURRENT USER adicionales se pueden crear, abrir y conservar si se da \_ un nombre de almacén diferente como una \_ cadena. Si no existe un almacén con ese nombre, se crea y se abre un almacén vacío. Si existe un almacén, se abre y todos los certificados que se encuentran actualmente en el almacén están disponibles.
+Los almacenes CAPICOM CURRENT USER adicionales se pueden crear, abrir y conservar si se da un nombre de almacén diferente \_ \_ como una cadena. Si no existe un almacén con ese nombre, se crea y se abre un almacén vacío. Si existe un almacén, se abre y todos los certificados que se encuentran actualmente en el almacén están disponibles.
 
 En las secciones siguientes se muestran ejemplos de tareas de almacén de certificados:
 

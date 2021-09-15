@@ -4,16 +4,16 @@ ms.assetid: ffe663ce-3e9a-4dfc-8904-6f055332c119
 title: Ejemplo de lista de reproducción
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e5cad2ef96c76512947a5b74e7eac54e3ad5787218e625f30fea5b8e5164177
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f83d05762385d0de43a5d7f2bcd73cda2c6e2d51
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118239132"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580241"
 ---
 # <a name="playlist-sample"></a>Ejemplo de lista de reproducción
 
-Muestra cómo usar Microsoft Media Foundation reproducir una secuencia de archivos de audio en una lista de reproducción. En el ejemplo se usa [sequencer Source para](sequencer-source.md) crear y administrar la lista de reproducción.
+Muestra cómo usar Microsoft Media Foundation reproducir una secuencia de archivos de audio en una lista de reproducción. En el ejemplo se usa [el origen del secuenciador](sequencer-source.md) para crear y administrar la lista de reproducción.
 
 > [!Note]  
 > Este ejemplo ya no se incluye en el SDK.
@@ -30,12 +30,12 @@ En este ejemplo se muestran las siguientes Media Foundation interfaces:
 
 ## <a name="usage"></a>Uso
 
-El ejemplo de lista de reproducción compila una Windows aplicación.
+El ejemplo de lista de reproducción compila Windows aplicación.
 
--   Para crear una nueva lista de reproducción, seleccione Agregar a lista **de reproducción** en el **menú** Archivo. En el **cuadro de diálogo Abrir** archivo, seleccione uno o varios archivos de audio. Los archivos se agregan a la lista de reproducción.
--   Para reproducir la secuencia, haga clic **en Reproducir**.
+-   Para crear una nueva lista de reproducción, seleccione **Agregar a lista de reproducción** en el **menú** Archivo. En el **cuadro de diálogo Abrir** archivo, seleccione uno o varios archivos de audio. Los archivos se agregan a la lista de reproducción.
+-   Para reproducir la secuencia, haga clic en **Reproducir**.
 -   Para pausar el segmento actual, haga clic **en Pausar**.
--   Para detener el segmento actual, haga clic **en Detener**.
+-   Para detener el segmento actual, haga clic en **Detener**.
 -   Para ir directamente a un archivo, haga doble clic en el elemento de la lista de reproducción.
 -   Para eliminar un archivo de la lista de reproducción, seleccione el elemento de la lista de reproducción. A **continuación, seleccione Quitar de la lista de** reproducción en el **menú** Archivo.
 
@@ -69,7 +69,7 @@ Este ejemplo está disponible en las siguientes ubicaciones.
 
 <dl> <dt>
 
-[Ejemplo de reproducción básica](/previous-versions//bb970475(v=vs.85))
+[Ejemplo de BasicPlayback](/previous-versions//bb970475(v=vs.85))
 </dt> <dt>
 
 [Muestras de SDK de Media Foundation](media-foundation-sdk-samples.md)

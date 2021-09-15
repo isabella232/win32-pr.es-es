@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101490
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5db82707f4eabc03d98bdc671b2f1c0619166779fa1edbf3a4b76007525823d6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 06ccdffc19bc4bd92a2787816508b36eca15594d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120066105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476016"
 ---
 # <a name="esentdatabaseincompleteupgradeexception-methods"></a>Métodos de EsentDatabaseIncompleteUpgradeException 
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentDatabaseIncompleteUpgradeException](./esentdatabaseincompleteupgradeexception-class.md) expone los siguientes miembros.
+El [tipo EsentDatabaseIncompleteUpgradeException](./esentdatabaseincompleteupgradeexception-class.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 

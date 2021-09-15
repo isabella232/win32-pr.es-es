@@ -4,12 +4,12 @@ description: En este ejemplo se muestra un cliente de canalización con nombre q
 ms.assetid: 38FC4A47-349B-406D-A6AA-8072AA24E3AA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab118a900b177d94a5b192f3f3e57e23c3950d66013f88f36f73aa8d8289d64c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c671048f0ad528f6b5edd5157dcb8f7fe9a6134
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118192871"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574236"
 ---
 # <a name="requestreplynamedpipesclientexample"></a>RequestReplyNamedPipesClientExample
 

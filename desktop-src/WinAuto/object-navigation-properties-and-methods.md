@@ -4,12 +4,12 @@ description: Los clientes navegan de un objeto a otro mediante métodos como IAc
 ms.assetid: c6bcd044-bf70-4eec-92ae-66f9bd836c33
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80631c78e42d9a480992bb40f14d12c0fca8b7c0085ec259daa5550c834d200a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e7645d5179015280fd40f6618722191e588c74a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133758"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567401"
 ---
 # <a name="object-navigation-properties-and-methods"></a>Propiedades y métodos de navegación de objetos
 

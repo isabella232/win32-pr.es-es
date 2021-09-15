@@ -21,16 +21,16 @@ keywords:
 - inserción, Windows basados en aplicaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f3c2b4d84194376bd16842f0a9567c83fce2aa616ed4bfef4f20f7255068e8f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d2190f0d0076fe3253c39f583ae7d2c197f8cb11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117748282"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476240"
 ---
 # <a name="hosting-the-windows-media-player-control-in-a-windows-application"></a>Hospedar el control Reproductor de Windows Media en una Windows aplicación
 
-Para usar el control Reproductor de Windows Media ActiveX (incluida la interfaz de usuario) en un programa basado en Windows, debe proporcionar un contenedor ActiveX control. ATL proporciona la **clase CAxWindow para** proporcionar ActiveX de ventana de host.
+Para usar el control Reproductor de Windows Media ActiveX (incluida la interfaz de usuario) en un programa basado en Windows, debe proporcionar un contenedor ActiveX control. ATL proporciona la **clase CAxWindow para** proporcionar ActiveX de ventana host.
 
 Para hospedar el control Reproductor de Windows Media mediante la **clase CAxWindow,** siga estos pasos:
 
@@ -45,7 +45,7 @@ Para hospedar el control Reproductor de Windows Media mediante la **clase CAxWin
 
     
 
-2.  Declare las variables miembro, como se muestra a continuación:
+2.  Declare variables miembro, como se muestra a continuación:
     ```C++
     CAxWindow  m_wndView;  // ActiveX host window class.
     CComPtr<IWMPPlayer>  m_spWMPPlayer;  // Smart pointer to IWMPPlayer interface.
@@ -108,7 +108,7 @@ Al escribir su propio código, asegúrese de comprobar si hay errores en cada **
 
 Para obtener un ejemplo completo que muestra cómo hospedar el control Reproductor de Windows Media ActiveX mediante la **clase CAxWindow,** vea el ejemplo WMPHost.
 
-## <a name="hosting-the-windows-media-player-10-mobile-control-in-windows-ce"></a>Hospedar el control Reproductor de Windows Media 10 Mobile en Windows CE
+## <a name="hosting-the-windows-media-player-10-mobile-control-in-windows-ce"></a>Hospedaje del control Reproductor de Windows Media 10 Mobile en Windows CE
 
 Microsoft eMbedded Visual C++ 4.0 y el SDK de Pocket PC 2003 o el SDK de Smartphone 2003 deben instalarse al desarrollar aplicaciones basadas en Windows CE que hospedan un control Reproductor de Windows Media 10 Mobile. Además, a diferencia de ATL para Windows, ATL para Windows CE no admite el modelo de subprocesos de apartamento. Por lo tanto, debe buscar todas las instancias de subprocesos de contenedor en el proyecto ATL y cambiarlas para que usen el subprocesamiento libre.
 
@@ -116,7 +116,7 @@ Microsoft eMbedded Visual C++ 4.0 y el SDK de Pocket PC 2003 o el SDK de Smartph
 
 <dl> <dt>
 
-[**Ejemplos**](samples.md)
+[**Muestras**](samples.md)
 </dt> <dt>
 
 [**Usar el control Reproductor de Windows Media en un programa de C++**](using-the-windows-media-player-control-in-a-c---program.md)

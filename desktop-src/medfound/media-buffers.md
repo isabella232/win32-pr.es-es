@@ -4,12 +4,12 @@ ms.assetid: 3ee073ea-7bac-4971-9167-93a4e541ab77
 title: Búferes multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ef02570ab994f0a15a9b53f2df8a0ac0b96a91a3bf3f260c1bcc5f866ade87e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c87316ea64e24173dfa73f2cc2ff280a1281d50f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119827515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579937"
 ---
 # <a name="media-buffers"></a>Búferes multimedia
 

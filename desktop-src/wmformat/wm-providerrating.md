@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3916b41d2480e2e39134ebeff649f94086ce1d88681229daed7a56ab805060a1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: de839a8b23b79f93c81169851ab4338248111f32
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119930374"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574300"
 ---
 # <a name="wmproviderrating"></a>WM/ProviderRating
 
@@ -29,9 +29,9 @@ g \_ wszWMProviderRating
 
 ## <a name="data-type"></a>Tipo de datos
 
-**CADENA DE TIPO WMT \_ \_**
+**CADENA DE \_ TIPO \_ WMT**
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

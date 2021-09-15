@@ -4,12 +4,12 @@ ms.assetid: 834dee04-66fa-42eb-adff-c08a74c6cea8
 title: Enumeración y control de visualización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d5af1449100c667b6e1a964887c26e3301d6e14c748c3a822e3abdc7fe36da8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e8cdfd5e3b1c6ebb5ff0d4ebdfa1ab44b45c2c25
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119965985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580496"
 ---
 # <a name="enumeration-and-display-control"></a>Enumeración y control de visualización
 
@@ -89,7 +89,7 @@ void DetachDisplay()
 
 
 
-Para cada dispositivo para mostrar, la aplicación puede guardar información en el Registro que describe los parámetros de configuración del dispositivo, así como los parámetros de ubicación. La aplicación también puede determinar qué pantallas forman parte del escritorio y cuáles no a través de la marca DISPLAY DEVICE ATTACHED TO DESKTOP en la estructura \_ \_ DISPLAY \_ \_ [**\_ DEVICE.**](/windows/desktop/api/Wingdi/ns-wingdi-display_devicea) Una vez almacenada toda la información de configuración en el Registro, la aplicación puede volver a llamar a [**ChangeDisplaySettingsEx**](/windows/desktop/api/Winuser/nf-winuser-changedisplaysettingsexa) para cambiar dinámicamente la configuración, sin necesidad de reiniciarla.
+Para cada dispositivo para mostrar, la aplicación puede guardar información en el Registro que describe los parámetros de configuración del dispositivo, así como los parámetros de ubicación. La aplicación también puede determinar qué pantallas forman parte del escritorio y cuáles no, a través de la marca DISPLAY DEVICE ATTACHED TO DESKTOP en la estructura \_ \_ DISPLAY \_ \_ [**\_ DEVICE.**](/windows/desktop/api/Wingdi/ns-wingdi-display_devicea) Una vez almacenada toda la información de configuración en el Registro, la aplicación puede volver a llamar a [**ChangeDisplaySettingsEx**](/windows/desktop/api/Winuser/nf-winuser-changedisplaysettingsexa) para cambiar dinámicamente la configuración, sin necesidad de reiniciarla.
 
  
 

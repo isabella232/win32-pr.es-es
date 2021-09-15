@@ -8,11 +8,11 @@ title: AdminRoamControl
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 69734c2019ffe5cbea8d1e39f33df290daebb827
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122982148"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475871"
 ---
 # <a name="span-idwwan_profile_v4element_adminroamcontrolspanmbnprofileextadminroamcontrol-v4"></a><span id="WWAN_profile_v4.element_AdminRoamControl"></span>MBNProfileExt \/ AdminRoamControl (v4)
 

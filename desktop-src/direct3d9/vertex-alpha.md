@@ -1,19 +1,19 @@
 ---
-description: Los datos alfa se pueden proporcionar en los datos del vértice. Para habilitar alfa de vértice, establezca D3DRS \_ DIFUSMATERIALSOURCE en D3DMCS COLOR1 para que el tiempo de ejecución de Direct3D tome el valor difuso del color difuso en lugar del \_ material.
+description: Los datos alfa se pueden proporcionar en los datos de vértice. Para habilitar el alfa de vértices, establezca D3DRS \_ DIFFUSEMATERIALSOURCE en D3DMCS COLOR1 para que el tiempo de ejecución de Direct3D tome el valor difuso del color difuso en lugar del \_ material.
 ms.assetid: 2b0d842d-ee7d-4633-846d-96697153adc7
 title: Vértice alfa (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2443b14d62698e342b7cbb9c4b79d30d3e11e32be76a3f584823ddf74b16685
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e5f661c013e324a0bf209b4faca41d1974a41e81
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119984545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580120"
 ---
 # <a name="vertex-alpha-direct3d-9"></a>Vértice alfa (Direct3D 9)
 
-Los datos alfa se pueden proporcionar en los datos del vértice. Para habilitar alfa de vértice, establezca D3DRS \_ DIFUSMATERIALSOURCE en D3DMCS COLOR1 para que el tiempo de ejecución de Direct3D tome el valor difuso del color difuso en lugar del \_ material.
+Los datos alfa se pueden proporcionar en los datos de vértice. Para habilitar el alfa de vértices, establezca D3DRS \_ DIFFUSEMATERIALSOURCE en D3DMCS COLOR1 para que el tiempo de ejecución de Direct3D tome el valor difuso del color difuso en lugar del \_ material.
 
 
 ```
@@ -96,7 +96,7 @@ da como resultado una esfera transparente mediante vértice alfa.
 
 <dl> <dt>
 
-[Combinación alfa](alpha-blending.md)
+[Alpha Blending](alpha-blending.md)
 </dt> </dl>
 
  

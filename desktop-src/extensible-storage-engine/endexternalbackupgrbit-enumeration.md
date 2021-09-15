@@ -30,16 +30,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4e18f6ef200481c6f2b22fe229a9e5b0ebc5cbf9d9936b33ad373d93ef19b40c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0bb3fb2f3e959d41c042589f3a280e6466fe4970
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119669935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575184"
 ---
 # <a name="endexternalbackupgrbit-enumeration"></a>EndExternalBackupGrbit (enumeración)
 
-Opciones de [JetEndExternalBackupInstance(JET_INSTANCE).](./api.jetendexternalbackupinstance-method.md)
+Opciones para [JetEndExternalBackupInstance(JET_INSTANCE).](./api.jetendexternalbackupinstance-method.md)
 
 Esta enumeración tiene un atributo [FlagsAttribute](/dotnet/api/system.flagsattribute), que permite una combinación bit a bit de sus valores de miembro.
 
@@ -61,7 +61,7 @@ Dim instance As EndExternalBackupGrbit
 public enum EndExternalBackupGrbit
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <table>
 <thead>
@@ -74,13 +74,13 @@ public enum EndExternalBackupGrbit
 <tbody>
 <tr class="odd">
 <td></td>
-<td>Ninguno</td>
+<td>None</td>
 <td>Opciones predeterminadas.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>Normal</td>
-<td>La aplicación cliente finalizó completamente la copia de seguridad y está finalizando con normalidad.</td>
+<td>La aplicación cliente finalizó la copia de seguridad por completo y finaliza con normalidad.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -91,7 +91,7 @@ public enum EndExternalBackupGrbit
 </table>
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

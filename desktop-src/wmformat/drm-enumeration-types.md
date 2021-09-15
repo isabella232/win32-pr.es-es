@@ -1,6 +1,6 @@
 ---
-title: Tipos de enumeración de cliente DRM multimedia de Microsoft Windows
-description: Obtenga información sobre las enumeraciones que son compatibles con las API extendidas de cliente drm Windows Media de Microsoft.
+title: Tipos de enumeración de cliente DRM de Microsoft Windows Media
+description: Obtenga información sobre las enumeraciones que son compatibles con las API extendidas de cliente DRM Windows Media de Microsoft.
 ms.assetid: 940f66e1-1dc1-414f-bba9-b91f4f0dfc45
 keywords:
 - Windows SDK de formato multimedia, tipos de enumeración
@@ -10,16 +10,16 @@ keywords:
 - API extendidas de cliente, tipos de enumeración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aad1ca2cd0df9e2b2888e2d25d16ccadde6e8f418ea4d289509aaba7b09c22e7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 574136f8016161f4d2c208865a72ad2a86d98f68
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119547705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574325"
 ---
-# <a name="microsoft-windows-media-drm-client-enumeration-types"></a>Tipos de enumeración de cliente DRM multimedia de Microsoft Windows
+# <a name="microsoft-windows-media-drm-client-enumeration-types"></a>Tipos de enumeración de cliente DRM de Microsoft Windows Media
 
-En la tabla siguiente se describen las enumeraciones que son compatibles con las API extendidas Windows de Cliente DRM multimedia de Microsoft.
+En la tabla siguiente se describen las enumeraciones que son compatibles con las API extendidas del cliente DRM de Microsoft Windows Media.
 
 
 

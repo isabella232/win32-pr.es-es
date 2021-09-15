@@ -7,23 +7,23 @@ keywords:
 - Reproductor de Windows Media modelo de objetos, dispositivos portátiles
 - modelo de objetos, dispositivos portátiles
 - Reproductor de Windows Media ActiveX control, dispositivos portátiles
-- ActiveX control, dispositivos portátiles
+- ActiveX, dispositivos portátiles
 - Reproductor de Windows Media Control de ActiveX móviles, dispositivos portátiles
 - Reproductor de Windows Media Dispositivos móviles y portátiles
 - dispositivos portátiles, recuperar atributos
 - atributos, dispositivos portátiles
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d5e6ac2794782c728de16f23f88e26d1f458258959e1c3e9e7e490cdf7bf6971
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f486b94fe6a9a5c78f238d78a7f79dec9df3376
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118995535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476190"
 ---
 # <a name="retrieving-device-attributes"></a>Recuperación de atributos de dispositivo
 
-Reproductor de Windows Media almacena información sobre los dispositivos que se han conectado al reproductor. Algunos atributos están disponibles llamando a métodos individuales de **IWMPSyncDevice,** algunos se pueden recuperar mediante **IWMPSyncDevice::getItemInfo** y algunos se pueden recuperar mediante cualquiera de las técnicas.
+Reproductor de Windows Media almacena información sobre los dispositivos que se han conectado al reproductor. Algunos atributos están disponibles mediante una llamada a métodos individuales de **IWMPSyncDevice,** algunos se pueden recuperar mediante **IWMPSyncDevice::getItemInfo** y otros se pueden recuperar mediante cualquiera de las técnicas.
 
 El código de ejemplo siguiente rellena un control de cuadro de lista con los atributos disponibles para el dispositivo especificado. La primera parte de la función recupera las propiedades disponibles mediante métodos específicos. La segunda parte de la función recupera los valores de atributo mediante **IWMPSyncDevice::getItemInfo**. El parámetro de *función, lIndex*, es el índice del dispositivo en la matriz de dispositivos personalizada a la que apunta m \_ ppWMPDevices.
 

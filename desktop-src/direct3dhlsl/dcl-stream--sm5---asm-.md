@@ -4,12 +4,12 @@ description: Declare un flujo de salida del sombreador de geometría.
 ms.assetid: 0A8B8AB5-B7B0-46BB-91E8-B2E8E3D64B74
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f53b8226cc9a4d8d2bd980cd26371f9e7b46a5168ec61ff39e425f73a4d7193c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f46903c3257c280788e91c25700743a23c146fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118793046"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573897"
 ---
 # <a name="dcl_stream-sm5---asm"></a>flujo dcl \_ (sm5 - asm)
 
@@ -34,21 +34,21 @@ Declare un flujo de salida del sombreador de geometría.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una secuencia determinada solo se puede declarar una vez.
 
-Si no se declara ninguna secuencia, se supone que las declaraciones de topología de salida y salida son para la secuencia 0.
+Si no se declara ninguna secuencia, se supone que las declaraciones de topología de salida y salida son para el flujo 0.
 
-La primera **secuencia dcl \_** no puede aparecer después de las instrucciones **dcl output \_ o** **\_ dcl outputTopology.**
+La primera **secuencia dcl \_** no puede aparecer después de ninguna **instrucción dcl \_ outputTopology** o **\_ dcl outputTopology.**
 
-Cualquier **instrucción dcl \_ output o** **dcl \_ outputToplogy** después de cualquier **instrucción dcl \_ stream** m define las \# salidas de la secuencia m \# .
+Las **instrucciones dcl \_ output o** **dcl \_ outputToplogy** después de cualquier instrucción **dcl \_ stream** m definen las \# salidas para el flujo m \# .
 
 Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        | X        |       |         |
 
@@ -64,12 +64,12 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 

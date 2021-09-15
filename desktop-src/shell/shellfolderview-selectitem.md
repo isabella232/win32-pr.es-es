@@ -14,11 +14,11 @@ api_location:
 - Shell32.dll
 ms.assetid: 91c39d4c-56c3-4c2b-93e8-9f782ca0aa93
 ms.openlocfilehash: ab0f65094f638c56df6a10434f9a404072278c55
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842556"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579524"
 ---
 # <a name="shellfolderviewselectitem-method"></a>Método ShellFolderView.SelectItem
 
@@ -98,7 +98,7 @@ Coloque el elemento en modo de edición.
 
 </dt> <dd>
 
-Anule la selección de todos los elementos, menos el elemento especificado.
+Anule la selección de todos los elementos menos el especificado.
 
 </dd> <dt>
 
@@ -134,7 +134,7 @@ Solo se puede llamar a [**FocusedItem**](shellfolderview-focuseditem.md) en el s
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso adecuado de este método en JScript insertado en HTML.
+En el ejemplo siguiente se muestra el uso adecuado de este método JScript insertado en HTML.
 
 
 ```JScript
@@ -195,10 +195,10 @@ En el ejemplo siguiente se muestra el uso adecuado de este método en JScript in
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo aplicaciones de escritorio de Windows \[ XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

@@ -4,7 +4,7 @@ description: Obtener un paso por índice.
 ms.assetid: 3c9452f5-c94a-4951-bdd2-e8891b7ceb34
 keywords:
 - Método GetPassByIndex Direct3D 11
-- Método GetPassByIndex Direct3D 11 , interfaz ID3DX11EffectTechnique
+- Método GetPassByIndex Direct3D 11, interfaz ID3DX11EffectTechnique
 - Interfaz ID3DX11EffectTechnique Direct3D 11 , método GetPassByIndex
 topic_type:
 - apiref
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: efd22cd5e7745b8e5a11018b930f6b544036780b118e9c745b67e730b693cdd3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b6af222298cc3d00ad87e5037f9de20139e4fc40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119565795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476070"
 ---
 # <a name="id3dx11effecttechniquegetpassbyindex-method"></a>Método ID3DX11EffectTechnique::GetPassByIndex
 
@@ -56,14 +56,14 @@ Un índice basado en cero.
 
 Tipo: **[ **ID3DX11EffectPass**](id3dx11effectpass.md)\***
 
-Puntero a [**id3DX11EffectPass.**](id3dx11effectpass.md)
+Puntero a [**id3DX11EffectPass**](id3dx11effectpass.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una técnica contiene uno o varios pases; obtener un paso mediante un nombre o un índice.
+Una técnica contiene uno o varios pases; obtener un pase mediante un nombre o un índice.
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -74,7 +74,7 @@ Una técnica contiene uno o varios pases; obtener un paso mediante un nombre o u
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 

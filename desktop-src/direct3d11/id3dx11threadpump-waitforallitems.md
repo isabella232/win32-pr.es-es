@@ -1,6 +1,6 @@
 ---
 title: Método ID3DX11ThreadPump WaitForAllItems (D3DX11core.h)
-description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Espera a que finalicen todos los elementos de trabajo del bombeo de subprocesos.
+description: Nota La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store. Espera a que finalicen todos los elementos de trabajo de la bomba de subprocesos.
 ms.assetid: 6dfdaee8-e563-4c37-a2c1-4b115e29c434
 keywords:
 - Método WaitForAllItems Direct3D 11
@@ -17,21 +17,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b3dcb5be664e81a479c0459808456fc1417bec78043ae0376f125c62c65a208
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 40abbab67d6743be2190d5e81c733f63b52b32f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119729106"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580661"
 ---
 # <a name="id3dx11threadpumpwaitforallitems-method"></a>Método ID3DX11ThreadPump::WaitForAllItems
 
 > [!Note]  
-> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.
+> La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no se admite para las aplicaciones de Windows Store.
 
  
 
-Espera a que finalicen todos los elementos de trabajo del bombeo de subprocesos.
+Espera a que finalicen todos los elementos de trabajo de la bomba de subprocesos.
 
 ## <a name="syntax"></a>Sintaxis
 

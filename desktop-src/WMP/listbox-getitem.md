@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 05c4043462aa1013df46039bb2d4524ba3b17b4d937a9b8145d46cf181ff246f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2c6bd930fabfe29e50bf8eb8265beb6d1abea7f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118996465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476218"
 ---
 # <a name="listboxgetitem"></a>LISTBOX.getItem
 

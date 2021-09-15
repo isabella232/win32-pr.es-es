@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: bd887204abc31583e596e94c25b64addcfe8109e6432845d25d939fd8e79e2d7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ff397ae747ecd09dd1292e5c15eb4291692d9651
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119875145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476471"
 ---
 # <a name="eku-object"></a>Objeto EKU
 
@@ -26,7 +26,7 @@ ms.locfileid: "119875145"
 
 El **objeto EKU** representa una única propiedad de uso de clave extendida (EKU) de un certificado.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto EKU** tiene estos tipos de miembros:
 
@@ -38,16 +38,16 @@ El **objeto EKU** tiene estas propiedades.
 
 
 
-| Propiedad                            | Tipo de acceso           | Descripción                                                                                                                                                                                                   |
+| Propiedad.                            | Tipo de acceso           | Descripción                                                                                                                                                                                                   |
 |:------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Nombre**](eku-name.md)<br/> | Lectura/escritura<br/> | Establece o recupera un valor de enumeración que especifica el nombre CAPICOM del EKU. Esta es la propiedad predeterminada.<br/>                                                                                   |
-| [**Oid**](eku-oid.md)<br/>   | Lectura/escritura<br/> | Establece o recupera una cadena que contiene un valor de cadena de identificador de objeto [*EKU*](../secgloss/o-gly.md) (OID), tal como se define en Wincrypt.h.<br/> |
+| [**Nombre**](eku-name.md)<br/> | Lectura y escritura<br/> | Establece o recupera un valor de enumeración que especifica el nombre CAPICOM del EKU. Esta es la propiedad predeterminada.<br/>                                                                                   |
+| [**OID**](eku-oid.md)<br/>   | Lectura y escritura<br/> | Establece o recupera una cadena que contiene un valor de cadena de identificador de objeto [*EKU*](../secgloss/o-gly.md) (OID), tal como se define en Wincrypt.h.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La colección y la propiedad siguientes usan el objeto **EKU:**
 

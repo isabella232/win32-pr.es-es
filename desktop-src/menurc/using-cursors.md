@@ -18,12 +18,12 @@ keywords:
 - cursors,confining
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23ac8c90ec2e988dc0051ed441c96fce61fdbbd9f095a370569fdecc69ce4d65
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a6cf681fd17f3e79e4559e9936be232ae09f8453
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118472621"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579772"
 ---
 # <a name="using-cursors"></a>Uso de cursores
 
@@ -55,7 +55,7 @@ hCurs2 = LoadCursor(hinst, MAKEINTRESOURCE(240));
 
 
 
-Debe implementar cursores personalizados como recursos. En lugar de crear los cursores en tiempo de ejecución, use la función [**LoadCursor**](/windows/desktop/api/Winuser/nf-winuser-loadcursora), [**LoadCursorFromFile**](/windows/desktop/api/Winuser/nf-winuser-loadcursorfromfilea)o [**LoadImage**](/windows/desktop/api/Winuser/nf-winuser-loadimagea) para evitar la dependencia del dispositivo, simplificar la localización y permitir que las aplicaciones compartan diseños de cursor.
+Debe implementar cursores personalizados como recursos. En lugar de crear los cursores en tiempo de ejecución, use las funciones [**LoadCursor**](/windows/desktop/api/Winuser/nf-winuser-loadcursora), [**LoadCursorFromFile**](/windows/desktop/api/Winuser/nf-winuser-loadcursorfromfilea)o [**LoadImage**](/windows/desktop/api/Winuser/nf-winuser-loadimagea) para evitar la dependencia del dispositivo, simplificar la localización y permitir que las aplicaciones compartan diseños de cursor.
 
 En el ejemplo siguiente se usa [**la función CreateCursor**](/windows/desktop/api/Winuser/nf-winuser-createcursor) para crear un cursor personalizado en tiempo de ejecución. El ejemplo se incluye aquí para ilustrar cómo el sistema interpreta las máscaras de cursor.
 
@@ -219,7 +219,7 @@ return RegisterClass(&wc);
 
 Cuando se registra la clase de ventana, el cursor identificado por 230 en el archivo de definición de recursos de la aplicación es el cursor predeterminado para todas las ventanas basadas en la clase .
 
-La aplicación puede cambiar el diseño del cursor mediante la función [**SetCursor**](/windows/desktop/api/Winuser/nf-winuser-setcursor) y especificando un identificador de cursor diferente. Sin embargo, cuando el cursor se mueve, el sistema vuelve a dibujar el cursor de clase en la nueva ubicación. Para evitar que se vuelva a dibujar el cursor de clase, debe procesar el [**mensaje \_ SETCURSOR de WM.**](wm-setcursor.md) Cada vez que el cursor se mueve y no se captura la entrada del mouse, el sistema envía este mensaje a la ventana en la que se mueve el cursor.
+La aplicación puede cambiar el diseño del cursor mediante la función [**SetCursor**](/windows/desktop/api/Winuser/nf-winuser-setcursor) y especificando un identificador de cursor diferente. Sin embargo, cuando se mueve el cursor, el sistema vuelve a dibujar el cursor de clase en la nueva ubicación. Para evitar que se vuelva a dibujar el cursor de clase, debe procesar el [**mensaje \_ SETCURSOR de WM.**](wm-setcursor.md) Cada vez que el cursor se mueve y no se captura la entrada del mouse, el sistema envía este mensaje a la ventana en la que se mueve el cursor.
 
 Puede especificar cursores diferentes para condiciones diferentes al procesar [**WM \_ SETCURSOR**](wm-setcursor.md). Por ejemplo, en el ejemplo siguiente se muestra cómo mostrar el cursor cada vez que el cursor se mueve sobre el icono de una aplicación minimizada.
 

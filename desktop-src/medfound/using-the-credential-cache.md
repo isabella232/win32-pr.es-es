@@ -4,12 +4,12 @@ ms.assetid: b58d0a6e-ecae-48a1-a3af-d4246caa272b
 title: Uso de la caché de credenciales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 603078c0dce4c3cd335a3efed57c9d698a372bca6d77e6b76631843be6307eb3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d512d0bab8f45f50a587e3c8eda2a73c4832685f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119034583"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579792"
 ---
 # <a name="using-the-credential-cache"></a>Uso de la caché de credenciales
 

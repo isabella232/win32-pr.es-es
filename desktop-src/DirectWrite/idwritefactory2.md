@@ -15,18 +15,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 370292387f2c42e3f749e24a063e05bb24280ec5c8e8941a430f996fe7f349da
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bb7d5ba0f8d480981ab6ebea6dcdbd955b7b967e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119902805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476937"
 ---
 # <a name="idwritefactory2-interface"></a>Interfaz IDWriteFactory2
 
 Interfaz de generador raíz para [todos](direct-write-portal.md) DirectWrite objetos.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IDWriteFactory1** hereda de [**IDWriteFactory1**](/windows/win32/api/dwrite_1/nn-dwrite_1-idwritefactory1). **IDWriteFactory2** también tiene estos tipos de miembros:
 

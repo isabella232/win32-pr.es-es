@@ -1,5 +1,5 @@
 ---
-description: Representa un bloque de datos codificados asn.1.
+description: Representa un bloque de datos codificados de ASN.1.
 ms.assetid: af7acc5f-da0a-4235-8496-05db94664ea5
 title: Objeto EncodedData
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: ba17056aaf2b038abb519c1eff230f6cccb396edea1ee9c1f96077d572e63fe5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d05fce31ad4ef08bf9f573c0158a683bdbeba739
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119874865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476452"
 ---
 # <a name="encodeddata-object"></a>Objeto EncodedData
 
@@ -31,10 +31,10 @@ El **objeto EncodedData** representa un bloque de datos codificados asn.1.
 Varias propiedades del objeto CAPICOM devuelven el objeto **EncodedData.** Cuando se devuelve, este objeto se usa para realizar las siguientes tareas:
 
 -   Obtenga una representación de cadena de los datos codificados.
--   Obtenga el objeto descodificador, si existe, asociado a los datos codificados.
+-   Obtenga el objeto descodificador, si existe, que está asociado a los datos codificados.
 -   Determine el tipo de datos codificados.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto EncodedData** tiene estos tipos de miembros:
 
@@ -62,7 +62,7 @@ El **objeto EncodedData** tiene estas propiedades.
 
 
 
-| Propiedad                                      | Tipo de acceso          | Descripción                                                          |
+| Propiedad.                                      | Tipo de acceso          | Descripción                                                          |
 |:----------------------------------------------|:---------------------|:---------------------------------------------------------------------|
 | [**Value**](encodeddata-value.md)<br/> | Solo lectura<br/> | Recupera los datos codificados. Esta es la propiedad predeterminada.<br/> |
 
@@ -70,7 +70,7 @@ El **objeto EncodedData** tiene estas propiedades.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El único tipo admitido de datos codificados [**es CertificatePolicies.**](certificatepolicies.md)
 

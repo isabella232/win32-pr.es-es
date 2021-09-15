@@ -4,12 +4,12 @@ ms.assetid: 58083bc8-59cc-4503-8fae-36fcd864921a
 title: MF_SESSION_APPROX_EVENT_OCCURRENCE_TIME atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce6cbaa7d12cebe14b015c4d568b36b081930ef4b302797dba76fc728e92cf01
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a31b1970c2c9d86384c12c50777a8cee55e3ffd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118740032"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572792"
 ---
 # <a name="mf_session_approx_event_occurrence_time-attribute"></a>Atributo MF \_ SESSION APPROX EVENT OCCURRENCE \_ \_ \_ \_ TIME
 
@@ -19,11 +19,11 @@ Hora aproximada a la que la sesión multimedia ha producido un evento.
 
 **UINT64**
 
-Tratar como **un valor LONGLONG.**
+Tratar como un **valor LONGLONG.**
 
 ## <a name="remarks"></a>Observaciones
 
-Algunos eventos de la sesión multimedia tienen este atributo. El valor proporciona el tiempo aproximado de presentación en el que se ha producido el evento.
+Algunos eventos de la sesión multimedia tienen este atributo. El valor proporciona el tiempo aproximado de presentación cuando se presentó el evento.
 
 Este atributo es un valor con firma, aunque se almacena como **UINT64**.
 
@@ -37,11 +37,11 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

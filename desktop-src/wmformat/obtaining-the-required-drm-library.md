@@ -15,12 +15,12 @@ keywords:
 - depuración de DRM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20e459423b4a7b9a5bebf03727210951544797519c81886ae9fa792fa8b73be1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9f5c124c1e7edf0bba736b9dd392e852aac97e96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119707435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574321"
 ---
 # <a name="obtaining-the-required-drm-library"></a>Obtención de la biblioteca DRM requerida
 
@@ -34,7 +34,7 @@ La biblioteca que recibe tiene un nivel de seguridad DRM que depende del tipo de
 
 | Nivel de seguridad | Reproductores y dispositivos portátiles                                                                                                                                                                                                                                                                                                   | Ejemplo                                                                                                                                                                                          |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 150            | Dispositivos que no admiten Windows DRM multimedia. La protección DRM se quita cuando el contenido se transfiere a un dispositivo de este tipo.                                                                                                                                                                                                         | Dispositivos que admiten Windows contenido basado en multimedia pero no contenido protegido                                                                                                                       |
+| 150            | Dispositivos que no admiten Windows DRM multimedia. La protección DRM se quita cuando el contenido se transfiere a un dispositivo de este tipo.                                                                                                                                                                                                         | Dispositivos que admiten Windows contenido basado en medios, pero no contenido protegido                                                                                                                       |
 | 1,000          | Aplicaciones de reproductor basadas en el SDK de Windows Media Format 9.5 o versiones anteriores que no cumplen los requisitos adicionales para el nivel 2000.Devices basados en Windows Media Portable Device DRM v1.<br/> Dispositivos basados Windows CE 4.2 y versiones posteriores.<br/>                                                                       | Reproductor de Windows Media 6.4, Reproductor de Windows Media 7Portable media devices that support Windows Media Portable Device DRM v1 (Dispositivo multimedia portátil v1).<br/>                                                             |
 | 2\.000          | Aplicaciones de reproductor basadas en el SDK de la serie Media Format 9 de Windows o posterior, y que siguen un conjunto más estricto de directrices de protección de contenido que las aplicaciones de nivel 1000.Devices basadas en Windows Media DRM 10 para dispositivos portátiles.<br/> Dispositivos basados Windows DRM multimedia 10 para dispositivos de red.<br/> | Reproductor de Windows Media serie 9 y versiones posterioresPortable media devices that support Windows Media DRM 10 for Portable Devices<br/> Dispositivos portátiles de Media Center basados en Windows Mobile<br/> |
 

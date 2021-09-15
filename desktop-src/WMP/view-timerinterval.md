@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f43b2b7bbd87663a35c43db733d3e11ff0dca5bc3ddfd00e57022b4df7122c3b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 790c95fbb2cded134222271d04c4c37dae412b8d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120001315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575621"
 ---
 # <a name="viewtimerinterval"></a>VIEW.timerInterval
 
@@ -29,7 +29,7 @@ El **atributo timerInterval** especifica o recupera el intervalo, en milisegundo
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un número de lectura y **escritura** (**long**) con un valor predeterminado de 1000.
+Este atributo es un número de **lectura** y escritura **(long)** con un valor predeterminado de 1000.
 
 
 
@@ -44,7 +44,7 @@ Este atributo es un número de lectura y **escritura** (**long**) con un valor p
 
 Cualquier valor inferior a 50 (incluidos los números negativos, pero sin incluir cero) genera un error y se mantiene el valor anterior.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esto no se activa automáticamente si no se implementa ningún controlador de eventos **ontimer.** Por lo tanto, no hay ninguna degradación del rendimiento aunque el valor predeterminado sea distinto de cero.
 
@@ -54,11 +54,11 @@ Esto no se activa automáticamente si no se implementa ningún controlador de ev
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
+| Version<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

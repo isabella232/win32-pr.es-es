@@ -4,12 +4,12 @@ ms.assetid: abfe0b70-1890-4b42-a0b3-83a14462510e
 title: System.Link.FeedItemLocalId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f90bcdebeb7e4b168c05abb16c01a11f5988c8b5ff8af9c7cf1ca9f1f173db5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e473497291fe80883b2cb718a9f4059c7181382
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118231353"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579709"
 ---
 # <a name="systemlinkfeeditemlocalid"></a>System.Link.FeedItemLocalId
 
@@ -28,7 +28,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

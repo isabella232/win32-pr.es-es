@@ -1,18 +1,18 @@
 ---
 title: ODJ_SID
-description: Definición de ODJ_SID IDL
+description: ODJ_SID definición de IDL
 ms.assetid: 1d06f725-6cd4-42cf-b171-c78a095690cb
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
 ms.openlocfilehash: dd51f2e8a54eaf5be566e5a25f013ca1d87b9341
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "104078559"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566941"
 ---
-# <a name="odj_sid-structure"></a>Estructura de ODJ_SID
+# <a name="odj_sid-structure"></a>ODJ_SID estructura
 
 Contiene un identificador de seguridad (SID).
 
@@ -28,26 +28,26 @@ typedef struct _ODJ_SID
 }   ODJ_SID, *PODJ_SID;
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 ### <a name="revision"></a>Revisión
 
-Debe establecerse en la revisión del SID.
+Debe establecerse en la revisión de SID.
 
 ### <a name="subauthoritycount"></a>SubAuthorityCount
 
-Debe establecerse en el número de elementos de la subautoridad.
+Debe establecerse en el número de elementos de SubAuthority.
 
 ### <a name="identifierauthority"></a>IdentifierAuthority
 
-Debe establecerse en el identificador de la entidad de SID.
+Debe establecerse en el identificador de entidad de SID.
 
 ### <a name="subauthority"></a>Subautoridad
 
-Debe contener una matriz de subentidades de SID.
+Debe contener una matriz de subatenciones de SID.
 
 ## <a name="see-also"></a>Vea también
 
-[**Definiciones IDL de unión a dominio sin conexión**](odj-idl.md)
+[**Definiciones de IDL de unión a un dominio sin conexión**](odj-idl.md)
 
-[**ODJ \_ \_ entidad de identificación \_ SID**](odj-sid_identifier_authority.md)
+[**ODJ \_ SID \_ IDENTIFIER \_ AUTHORITY**](odj-sid_identifier_authority.md)

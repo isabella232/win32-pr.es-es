@@ -4,12 +4,12 @@ description: Calcula una división de precisión doble por componente.
 ms.assetid: 0A67FC35-7F2F-4258-83CE-1CA398E57952
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4730849b8ccc9070f538a58709bcd99fb9bfa552973c365fb3225806caf7aca0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81fc039b222b28a5fb1217d23c78470aff1739f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118986665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573884"
 ---
 # <a name="ddiv-sm5---asm"></a>ddiv (sm5 - asm)
 
@@ -17,7 +17,7 @@ Calcula una división de precisión doble por componente.
 
 
 
-| ddiv \[ \_ sat \] dest \[ .mask \] , \[ - \] src0 \[ \_ abs \] \[ .swdivle \] \[ - \] src1 \[ \_ abs \] \[ .swdivle\] |
+| ddiv \[ \_ sat \] dest \[ .mask \] , \[ - \] src0 \[ \_ abs \] \[ .swzzle \] \[ - \] src1 \[ \_ abs \] \[ .swzzle\] |
 |--------------------------------------------------------------------------------------------|
 
 
@@ -36,7 +36,7 @@ Calcula una división de precisión doble por componente.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El compilador HLSL emitirá la instrucción DDIV cada vez que se utilice el operador de división con doubles. La precisión de esta instrucción será de 0,5 ULP.
 
@@ -44,9 +44,9 @@ Los sombreadores que usan esta instrucción se marcarán con una marca de sombre
 
 -   El sistema admite DirectX 11.1.
 -   El sistema incluye un controlador WDDM 1.2.
--   El controlador informa de la compatibilidad con esta instrucción a través de **D3D11 \_ FEATURE \_ DATA \_ D3D11 \_ OPTIONS. ExtendedDoublesShaderInstructions** establecido en **TRUE.**
+-   El controlador notifica la compatibilidad con esta instrucción a través de **D3D11 \_ FEATURE \_ DATA \_ D3D11 \_ OPTIONS. ExtendedDoublesShaderInstructions** establecido en **TRUE.**
 
-En la tabla siguiente se muestran los resultados obtenidos al ejecutar la instrucción con varias clases de números, suponiendo que no se produzcan desbordamientos ni subdesbordes.
+En la tabla siguiente se muestran los resultados obtenidos al ejecutar la instrucción con varias clases de números, suponiendo que no se produzca ningún desbordamiento o subdesbordmiento.
 
 En esta tabla, F significa número finito-real.
 
@@ -70,7 +70,7 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -86,12 +86,12 @@ Esta instrucción se admite en los siguientes modelos de sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | No        |
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | No        |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | no        |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | no        |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 

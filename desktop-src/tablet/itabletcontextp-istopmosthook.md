@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Wisptis.exe
 - Wisptis.exe.dll
-ms.openlocfilehash: 1c7b7e1fa087dad42e7bdc3b803bd7158b8859d1d428714f6eb2c4321687a603
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f62de678085bda723bb13a721d75c349d395787a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118449808"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579465"
 ---
 # <a name="itabletcontextpistopmosthook-method"></a>ITabletContextP::IsTopMostHook (método)
 
@@ -57,7 +57,7 @@ Este método puede devolver uno de estos valores.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
@@ -65,7 +65,7 @@ Este método puede devolver uno de estos valores.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

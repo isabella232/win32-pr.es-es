@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: be293636044e744ec02e3bdcddbc96b61373a35c9bddc04a03d282fcebe268d6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 512bc457a84ad1d1b170ac9d31cb04e36d8a05d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118485514"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580060"
 ---
 # <a name="session-implicit-conversion-session-to-jet_sesid"></a>Conversión implícita de sesión (sesión a JET_SESID)
 
@@ -71,7 +71,7 @@ public static implicit operator JET_SESID (
 Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
 El JET_SESID de la sesión.  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

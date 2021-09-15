@@ -4,18 +4,18 @@ ms.assetid: ff43e81c-ff39-466d-870a-54b75c2938a4
 title: Selección de un terminal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b77ee3bb889f5372ae024b29867b6c9d418c5924b4e626be70aa5d49ad72c9c9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ac3d195e021f5937c733f3d7a0efce0cfee5eba9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119991845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474679"
 ---
 # <a name="select-a-terminal"></a>Selección de un terminal
 
 En el ejemplo de código siguiente se muestra cómo seleccionar terminales en secuencias asociadas a una llamada.
 
-Antes de usar este ejemplo de código, debe realizar las operaciones de [Inicializar TAPI](initialize-tapi.md) y [Seleccionar una dirección](select-an-address.md).
+Antes de usar este ejemplo de código, debe realizar las operaciones en [Inicializar TAPI](initialize-tapi.md) y [Seleccionar una dirección](select-an-address.md).
 
 Además, este ejemplo requiere que la aplicación ya tenga un puntero a la interfaz [**ITBasicCallControl**](/windows/desktop/api/tapi3if/nn-tapi3if-itbasiccallcontrol) de una llamada entrante o saliente. Vea [Realizar una llamada o](make-a-call.md) recibir una llamada [para](receive-a-call.md) obtener ejemplos de código sobre cómo obtener este puntero.
 

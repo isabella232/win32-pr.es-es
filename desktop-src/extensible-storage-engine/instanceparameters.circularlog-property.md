@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: InstanceParameters. CircularLog (propiedad)'
-title: Propiedad InstanceParameters. CircularLog
+description: 'Más información sobre: Propiedad InstanceParameters.CircularLog'
+title: Propiedad InstanceParameters.CircularLog
 TOCTitle: 'CircularLog property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.CircularLog
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.circularlog(v=EXCHG.10)
@@ -27,18 +27,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 9f9a77aa0d0f60b49269dc939787b165a3f2f948
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105717250"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566440"
 ---
-# <a name="instanceparameterscircularlog-property"></a>Propiedad InstanceParameters. CircularLog
+# <a name="instanceparameterscircularlog-property"></a>Propiedad InstanceParameters.CircularLog
 
-Obtiene o establece un valor que indica si el registro circular está activado. Cuando el registro circular está desactivado, todos los archivos de registro de transacciones que se generan se conservan en el disco hasta que ya no son necesarios porque se ha realizado una copia de seguridad completa de la base de datos. Cuando el registro circular está activado, solo se conservan en el disco los archivos de registro de transacciones que son más jóvenes que el punto de control actual. La ventaja de este modo es que las copias de seguridad no son necesarias para retirar los archivos de registro de transacciones antiguos.
+Obtiene o establece un valor que indica si el registro circular está habilitado. Cuando el registro circular está desactivado, todos los archivos de registro de transacciones que se generan se conservan en el disco hasta que ya no se necesitan porque se ha realizado una copia de seguridad completa de la base de datos. Cuando el registro circular está en, solo los archivos de registro de transacciones que son más pequeños que el punto de control actual se conservan en el disco. La ventaja de este modo es que las copias de seguridad no son necesarias para retirar los archivos de registro de transacciones antiguos.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,7 +62,7 @@ public bool CircularLog { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Vea también
 
@@ -70,6 +70,6 @@ Tipo: [System. Boolean](/dotnet/api/system.boolean)
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros instanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

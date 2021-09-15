@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101173
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: fac2b67704a0bb4fc207e353d6eb7af89d81cd148c21edb1b716f9dd75ad6fd5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 61ce7893fff179778e6e73950132c0d28ca2873e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119042033"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567084"
 ---
 # <a name="esentcannotlogduringrecoveryredoexception-methods"></a>Métodos de EsentCannotLogDuringRecoveryRedoException 
 
@@ -78,7 +78,7 @@ El [tipo EsentCannotLogDuringRecoveryRedoException](./esentcannotlogduringrecove
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

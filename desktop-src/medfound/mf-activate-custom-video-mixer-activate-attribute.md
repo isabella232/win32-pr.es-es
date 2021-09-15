@@ -4,12 +4,12 @@ ms.assetid: 60484f87-7588-4b52-93aa-ef8fad66d971
 title: MF_ACTIVATE_CUSTOM_VIDEO_MIXER_ACTIVATE atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1966efe66efaba56c0206a9f6fac59aba30a1aea9d47100c4ce19a30af96a863
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9d6268f3630b013235f3d365e0b8ab0578c9dd3e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117877302"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580425"
 ---
 # <a name="mf_activate_custom_video_mixer_activate-attribute"></a>Atributo ACTIVATE \_ CUSTOM VIDEO MIXER ACTIVATE \_ \_ \_ \_ de MF ACTIVATE
 
@@ -19,7 +19,7 @@ Especifica un objeto de activación que crea un mezclador de vídeo personalizad
 
 **IUnknown\***
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si va a crear la EVR a través de un objeto de activación, puede usar este atributo para establecer un mezclador de vídeo personalizado en la EVR. Use este atributo como se muestra a continuación:
 
@@ -34,11 +34,11 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

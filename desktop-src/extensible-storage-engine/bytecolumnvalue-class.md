@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 78ddaa281a65ed01030bcc97312f4fcf64c001a3f0ad976f771c64b46ddab4b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a79f3f382ee58465bb70d71b00e0ac79c67b1bc3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119042513"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567104"
 ---
 # <a name="bytecolumnvalue-class"></a>ByteColumnValue (clase)
 
-Valor [de la](/dotnet/api/system.byte) columna Byte.
+Valor [de columna](/dotnet/api/system.byte) Byte.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
@@ -45,7 +45,7 @@ Valor [de la](/dotnet/api/system.byte) columna Byte.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -63,7 +63,7 @@ public class ByteColumnValue : ColumnValueOfStruct<byte>
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

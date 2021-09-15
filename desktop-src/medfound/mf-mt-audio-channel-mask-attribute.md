@@ -4,12 +4,12 @@ ms.assetid: fa5f6baa-0a21-4162-8870-38e71763aba0
 title: MF_MT_AUDIO_CHANNEL_MASK atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 544f287ad9cc8addc60245143e079f0ccdd3c1fead043198be93eed59babc98c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5293f5387a2c293b97ee32db54fcfb3f3ff304d2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119955935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579893"
 ---
 # <a name="mf_mt_audio_channel_mask-attribute"></a>Atributo MF \_ MT \_ AUDIO CHANNEL \_ \_ MASK
 
@@ -23,63 +23,63 @@ El valor de este atributo es un **OR** bit a bit de las marcas siguientes, que s
 
 <dl> <dt>
 
-<span id="SPEAKER_FRONT_LEFT"></span><span id="speaker_front_left"></span>**ALTAVOZ \_ FRONT \_ LEFT** (0x1)
+<span id="SPEAKER_FRONT_LEFT"></span><span id="speaker_front_left"></span>**SPEAKER \_ FRONT \_ LEFT** (0x1)
 </dt> <dt>
 
-<span id="SPEAKER_FRONT_RIGHT"></span><span id="speaker_front_right"></span>**ALTAVOZ \_ FRONT \_ RIGHT** (0x2)
+<span id="SPEAKER_FRONT_RIGHT"></span><span id="speaker_front_right"></span>**SPEAKER \_ FRONT \_ RIGHT** (0x2)
 </dt> <dt>
 
-<span id="SPEAKER_FRONT_CENTER"></span><span id="speaker_front_center"></span>**ALTAVOZ \_ FRONT \_ CENTER** (0x4)
+<span id="SPEAKER_FRONT_CENTER"></span><span id="speaker_front_center"></span>**SPEAKER \_ FRONT \_ CENTER** (0x4)
 </dt> <dt>
 
-<span id="SPEAKER_LOW_FREQUENCY"></span><span id="speaker_low_frequency"></span>**ALTAVOZ \_ BAJA \_ FRECUENCIA** (0x8)
+<span id="SPEAKER_LOW_FREQUENCY"></span><span id="speaker_low_frequency"></span>**SPEAKER \_ BAJA \_ FRECUENCIA** (0x8)
 </dt> <dt>
 
-<span id="SPEAKER_BACK_LEFT"></span><span id="speaker_back_left"></span>**ALTAVOZ \_ ATRÁS \_ A LA** IZQUIERDA (0x10)
+<span id="SPEAKER_BACK_LEFT"></span><span id="speaker_back_left"></span>**SPEAKER \_ ATRÁS \_ A LA** IZQUIERDA (0x10)
 </dt> <dt>
 
-<span id="SPEAKER_BACK_RIGHT"></span><span id="speaker_back_right"></span>**ALTAVOZ \_ BACK \_ RIGHT** (0x20)
+<span id="SPEAKER_BACK_RIGHT"></span><span id="speaker_back_right"></span>**SPEAKER \_ BACK \_ RIGHT** (0x20)
 </dt> <dt>
 
-<span id="SPEAKER_FRONT_LEFT_OF_CENTER"></span><span id="speaker_front_left_of_center"></span>**ALTAVOZ \_ PARTE \_ DELANTERA IZQUIERDA DEL \_ \_ CENTRO** (0x40)
+<span id="SPEAKER_FRONT_LEFT_OF_CENTER"></span><span id="speaker_front_left_of_center"></span>**SPEAKER \_ FRONT \_ LEFT \_ OF \_ CENTER** (0X40)
 </dt> <dt>
 
-<span id="SPEAKER_FRONT_RIGHT_OF_CENTER"></span><span id="speaker_front_right_of_center"></span>**ALTAVOZ \_ PARTE \_ DERECHA \_ DEL \_ CENTRO** (0x80)
+<span id="SPEAKER_FRONT_RIGHT_OF_CENTER"></span><span id="speaker_front_right_of_center"></span>**SPEAKER \_ PARTE \_ FRONTAL DERECHA DEL \_ \_ CENTRO** (0x80)
 </dt> <dt>
 
-<span id="SPEAKER_BACK_CENTER"></span><span id="speaker_back_center"></span>**ALTAVOZ \_ BACK \_ CENTER** (0x100)
+<span id="SPEAKER_BACK_CENTER"></span><span id="speaker_back_center"></span>**SPEAKER \_ BACK \_ CENTER** (0x100)
 </dt> <dt>
 
-<span id="SPEAKER_SIDE_LEFT"></span><span id="speaker_side_left"></span>**ALTAVOZ \_ LATERAL \_ IZQUIERDO** (0x200)
+<span id="SPEAKER_SIDE_LEFT"></span><span id="speaker_side_left"></span>**SPEAKER \_ LATERAL \_ IZQUIERDO** (0x200)
 </dt> <dt>
 
-<span id="SPEAKER_SIDE_RIGHT"></span><span id="speaker_side_right"></span>**ALTAVOZ \_ LATERAL \_ DERECHO** (0x400)
+<span id="SPEAKER_SIDE_RIGHT"></span><span id="speaker_side_right"></span>**SPEAKER \_ LATERAL \_ DERECHO** (0x400)
 </dt> <dt>
 
-<span id="SPEAKER_TOP_CENTER"></span><span id="speaker_top_center"></span>**ALTAVOZ \_ CENTRO \_ SUPERIOR** (0x800)
+<span id="SPEAKER_TOP_CENTER"></span><span id="speaker_top_center"></span>**SPEAKER \_ CENTRO \_ SUPERIOR** (0x800)
 </dt> <dt>
 
-<span id="SPEAKER_TOP_FRONT_LEFT"></span><span id="speaker_top_front_left"></span>**ALTAVOZ \_ PARTE \_ SUPERIOR \_ IZQUIERDA** (0x1000)
+<span id="SPEAKER_TOP_FRONT_LEFT"></span><span id="speaker_top_front_left"></span>**SPEAKER \_ PARTE \_ SUPERIOR \_ IZQUIERDA** (0x1000)
 </dt> <dt>
 
-<span id="SPEAKER_TOP_FRONT_CENTER"></span><span id="speaker_top_front_center"></span>**ALTAVOZ \_ TOP \_ FRONT \_ CENTER** (0x2000)
+<span id="SPEAKER_TOP_FRONT_CENTER"></span><span id="speaker_top_front_center"></span>**SPEAKER \_ FRONT \_ \_ CENTER SUPERIOR** (0x2000)
 </dt> <dt>
 
-<span id="SPEAKER_TOP_FRONT_RIGHT"></span><span id="speaker_top_front_right"></span>**ALTAVOZ \_ PARTE \_ SUPERIOR \_ DERECHA** (0x4000)
+<span id="SPEAKER_TOP_FRONT_RIGHT"></span><span id="speaker_top_front_right"></span>**SPEAKER \_ PARTE \_ SUPERIOR DERECHA \_** (0x4000)
 </dt> <dt>
 
-<span id="SPEAKER_TOP_BACK_LEFT"></span><span id="speaker_top_back_left"></span>**ALTAVOZ \_ PARTE \_ SUPERIOR \_ IZQUIERDA** (0x8000)
+<span id="SPEAKER_TOP_BACK_LEFT"></span><span id="speaker_top_back_left"></span>**SPEAKER \_ PARTE \_ SUPERIOR \_ IZQUIERDA** (0x8000)
 </dt> <dt>
 
-<span id="SPEAKER_TOP_BACK_CENTER"></span><span id="speaker_top_back_center"></span>**ALTAVOZ \_ CENTRO \_ SUPERIOR \_ ATRÁS** (0x10000)
+<span id="SPEAKER_TOP_BACK_CENTER"></span><span id="speaker_top_back_center"></span>**SPEAKER \_ CENTRO \_ SUPERIOR \_ ATRÁS** (0x10000)
 </dt> <dt>
 
-<span id="SPEAKER_TOP_BACK_RIGHT"></span><span id="speaker_top_back_right"></span>**ALTAVOZ \_ PARTE \_ SUPERIOR \_ DERECHA** (0x20000)
+<span id="SPEAKER_TOP_BACK_RIGHT"></span><span id="speaker_top_back_right"></span>**SPEAKER \_ PARTE \_ SUPERIOR \_ DERECHA** (0x20000)
 </dt> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este atributo se corresponde con el **miembro dwChannelMask** de la [**estructura DESATEXTENSIBLE.**](/windows/win32/api/mmreg/ns-mmreg-waveformatextensible)
+Este atributo corresponde al miembro **dwChannelMask** de la [**estructura WAVEFORMATEXTENSIBLE.**](/windows/win32/api/mmreg/ns-mmreg-waveformatextensible)
 
 La constante GUID para este atributo se exporta desde mfuuid.lib.
 
@@ -90,8 +90,8 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
-| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| para aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -111,7 +111,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[Atributos de tipo de medio](media-type-attributes.md)
+[Atributos de tipo multimedia](media-type-attributes.md)
 </dt> </dl>
 
  

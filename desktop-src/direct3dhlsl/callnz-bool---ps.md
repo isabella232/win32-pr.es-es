@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 793feb1934b86b46f26050a67b5f26d94b9f277e31735c4d1912805374bab903
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0516e62ce07c60866715591bc59123f38dc5c272
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118516635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574008"
 ---
 # <a name="callnz-bool---ps"></a>callnz bool - ps
 
 Llame a si no es cero. Realiza una llamada condicional a la instrucción marcada por el índice de etiqueta.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -33,11 +33,11 @@ Llame a si no es cero. Realiza una llamada condicional a la instrucción marcada
 
 Donde:
 
--   l \# es una [etiqueta: ps](label---ps.md) que marca el principio de la subrutina a la que se va a llamar.
+-   l \# es una [etiqueta: ps](label---ps.md) marca el principio de la subrutina a la que se va a llamar.
 -   \[!\] es un modificador negate opcional.
 -   b \# identifica un registro [booleano constante.](dx9-graphics-reference-asm-ps-registers-constant-boolean.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

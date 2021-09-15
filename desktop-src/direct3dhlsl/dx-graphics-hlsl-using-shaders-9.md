@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a1ef04c14682aa6e763222fd0c8db0e2eedf33abf747da97a16b2b1621e1c42a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6455b47d24c1c83683ce8b85c48990bb32e221ae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119749"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573765"
 ---
 # <a name="using-shaders-in-direct3d-9"></a>Usar sombreadores en Direct3D 9
 
@@ -33,13 +33,13 @@ La situación en Direct3D 9 es similar. Una aplicación pasa un sombreador HLSL 
 
 Además del desarrollo del compilador HLSL, Direct3D 9 también introdujo los modelos de sombreador de nivel de ensamblado para exponer la funcionalidad de la última generación de hardware gráfico. Los desarrolladores de aplicaciones pueden trabajar en ensamblado para estos nuevos modelos (frente a \_ 2 \_ 0, frente a \_ 3 \_ 0, ps \_ 2 \_ 0, ps \_ 3 0), \_ pero esperamos que la mayoría de los desarrolladores pasen a HLSL para el desarrollo de sombreadores.
 
-Por supuesto, la capacidad de escribir un programa HLSL para expresar un algoritmo de sombreado determinado no le permite ejecutarse automáticamente en ningún hardware determinado. Una aplicación llama a D3DX para compilar un sombreador en código de ensamblado binario [**con D3DXCompileShader.**](/windows/desktop/direct3d9/d3dxcompileshader) Una de las limitaciones de este punto de entrada es un parámetro que define cuál de los modelos de nivel de ensamblado (o destinos de compilación) debe usar el compilador HLSL para expresar el código final del sombreador. Si una aplicación está realizando la compilación del sombreador HLSL en tiempo de ejecución (en lugar del tiempo de compilación o sin conexión), la aplicación podría examinar las funcionalidades del dispositivo Direct3D y seleccionar el destino de compilación para que coincida. Si el algoritmo expresado en el sombreador HLSL es demasiado complejo para ejecutarse en el destino de compilación seleccionado, se producirá un error en la compilación. Esto significa que, aunque HLSL es una gran ventaja para el desarrollo de sombreadores, no libera a los desarrolladores de las realidades de envío de juegos a un público objetivo con dispositivos gráficos de funcionalidades variables. Como desarrollador de juegos, todavía tiene que administrar un enfoque por niveles para los objetos visuales. Esto significa escribir mejores sombreadores para tarjetas gráficas más capaces y escribir versiones más básicas para tarjetas anteriores. Sin embargo, con HLSL bien escrito, esta carga se puede reducir significativamente.
+Por supuesto, la capacidad de escribir un programa HLSL para expresar un algoritmo de sombreado determinado no le permite ejecutarse automáticamente en ningún hardware determinado. Una aplicación llama a D3DX para compilar un sombreador en código de ensamblado binario [**con D3DXCompileShader**](/windows/desktop/direct3d9/d3dxcompileshader). Una de las limitaciones de este punto de entrada es un parámetro que define cuál de los modelos de nivel de ensamblado (o destinos de compilación) debe usar el compilador HLSL para expresar el código final del sombreador. Si una aplicación está realizando la compilación del sombreador HLSL en tiempo de ejecución (en lugar del tiempo de compilación o sin conexión), la aplicación podría examinar las funcionalidades del dispositivo Direct3D y seleccionar el destino de compilación para que coincida. Si el algoritmo expresado en el sombreador HLSL es demasiado complejo para ejecutarse en el destino de compilación seleccionado, se producirá un error en la compilación. Esto significa que, aunque HLSL es una gran ventaja para el desarrollo de sombreadores, no libera a los desarrolladores de las realidades de envío de juegos a un público objetivo con dispositivos gráficos de funcionalidades variables. Como desarrollador de juegos, todavía tiene que administrar un enfoque por niveles para los objetos visuales. Esto significa escribir mejores sombreadores para tarjetas gráficas más capaces y escribir versiones más básicas para tarjetas anteriores. Sin embargo, con HLSL bien escrito, esta carga se puede reducir significativamente.
 
-En lugar de compilar sombreadores HLSL mediante D3DX en el equipo del cliente en el momento de la carga de la aplicación o en el primer uso, muchos desarrolladores eligen compilar su sombreador de HLSL en código de ensamblado binario antes de que se envíe. Esto mantiene su código fuente HLSL lejos de los ojos abiertos y también garantiza que todos los sombreadores que su aplicación ejecutará alguna vez han pasado por su proceso interno de control de calidad. Una utilidad práctica para compilar sombreadores sin conexión es [fxc](/windows/desktop/direct3dtools/fxc). Esta herramienta tiene una serie de opciones que puede usar para compilar código para el destino de compilación especificado. Estudiar la salida desensamblada puede ser muy educativo durante el desarrollo si desea optimizar los sombreadores o simplemente conocer las funcionalidades de la máquina virtual de sombreador en un nivel más detallado. Estas opciones se resumen a continuación:
+En lugar de compilar sombreadores HLSL mediante D3DX en la máquina del cliente en el momento de la carga de la aplicación o en el primer uso, muchos desarrolladores eligen compilar su sombreador de HLSL a código de ensamblado binario antes de que se envíe. Esto mantiene su código fuente HLSL lejos de los ojos abiertos y también garantiza que todos los sombreadores que su aplicación ejecutará alguna vez han pasado por su proceso interno de control de calidad. Una utilidad práctica para compilar sombreadores sin conexión es [fxc](/windows/desktop/direct3dtools/fxc). Esta herramienta tiene una serie de opciones que puede usar para compilar código para el destino de compilación especificado. Estudiar la salida desensamblada puede ser muy educativo durante el desarrollo si desea optimizar los sombreadores o simplemente conocer las funcionalidades de la máquina virtual de sombreador en un nivel más detallado. Estas opciones se resumen a continuación:
 
 ## <a name="initializing-shader-constants"></a>Inicialización de constantes de sombreador
 
-Las constantes del sombreador están contenidas en la tabla constante. Se puede acceder a él con la [**interfaz ID3DXConstantTable.**](/windows/desktop/direct3d9/id3dxconstanttable) Las variables de sombreador global se pueden inicializar en el código del sombreador. Estos se inicializan en tiempo de ejecución mediante una llamada [**a SetDefaults**](/windows/desktop/direct3d9/id3dxconstanttable--setdefaults).
+Las constantes del sombreador están contenidas en la tabla constante. Se puede acceder a él con la [**interfaz ID3DXConstantTable.**](/windows/desktop/direct3d9/id3dxconstanttable) Las variables de sombreador global se pueden inicializar en el código del sombreador. Se inicializan en tiempo de ejecución mediante una llamada [**a SetDefaults**](/windows/desktop/direct3d9/id3dxconstanttable--setdefaults).
 
 ## <a name="binding-a-shader-parameter-to-a-particular-register"></a>Enlazar un parámetro de sombreador a un registro determinado
 
@@ -85,7 +85,7 @@ Un sombreador se representa estableciendo el sombreador actual en el dispositivo
 
 ## <a name="debugging-shaders"></a>Depurar sombreadores
 
-La extensión DirectX para Microsoft Visual Studio .NET proporciona un depurador HLSL totalmente integrado dentro Visual Studio entorno de desarrollo integrado (IDE) de .NET. Para prepararse para la depuración del sombreador, debe instalar las herramientas adecuadas en el equipo (consulte Depuración de [sombreadores en Visual Studio (Direct3D 9)](dx-graphics-hlsl-debug-visual-studio.md)).
+La extensión DirectX para Microsoft Visual Studio .NET proporciona un depurador HLSL totalmente integrado dentro del entorno Visual Studio de desarrollo integrado (IDE) de .NET. Para prepararse para la depuración del sombreador, debe instalar las herramientas adecuadas en el equipo (consulte Depuración de [sombreadores en Visual Studio (Direct3D 9)](dx-graphics-hlsl-debug-visual-studio.md)).
 
 ## <a name="related-topics"></a>Temas relacionados
 

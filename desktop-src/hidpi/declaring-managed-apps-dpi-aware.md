@@ -1,21 +1,21 @@
 ---
 title: Desarrollo de una aplicación WPF con reconocimiento de PPP por monitor
-description: Nota Esta página trata el desarrollo de WPF heredado para Windows 8.1. Si va a desarrollar aplicaciones WPF para Windows 10, consulte la documentación más reciente sobre GitHub. .
+description: Nota Esta página trata el desarrollo heredado de WPF para Windows 8.1. Si está desarrollando aplicaciones wpf para Windows 10, consulte la documentación más reciente sobre GitHub. .
 ms.assetid: 04a36dc7-684f-4846-aeba-970117070b4c
 keywords:
 - Windows Interfaz de usuario aplicaciones con reconocimiento de PPP
 - Windows Interfaz de usuario, valores altos de PPP
 - Aplicaciones con reconocimiento de PPP
 - valores altos de PPP
-- escribir aplicaciones Win32 con reconocimiento de PPP
+- escritura de aplicaciones Win32 con reconocimiento de PPP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1527412e3259efca7d81285c6ba7ed42dbaebf43d37307342de02f1d2ce9d339
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8a32bfaf76271e61d0dc3791d5aaae9609be6d8c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118249703"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127575004"
 ---
 # <a name="developing-a-per-monitor-dpi-aware-wpf-application"></a>Desarrollo de una aplicación WPF con reconocimiento de PPP por monitor
 
@@ -26,62 +26,62 @@ ms.locfileid: "118249703"
 -   [**GetDpiForMonitor**](/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-getdpiformonitor)
 
 > [!Note]  
-> **En esta página se trata el desarrollo de WPF heredado para Windows 8.1.** Si va a desarrollar aplicaciones WPF para Windows 10, consulte la documentación <a href="https://github.com/microsoft/WPF-Samples/blob/master/PerMonitorDPI/readme.md">más reciente sobre GitHub.</a>
+> **En esta página se trata el desarrollo de WPF heredado para Windows 8.1.** Si está desarrollando aplicaciones wpf para Windows 10, consulte la <a href="https://github.com/microsoft/WPF-Samples/blob/master/PerMonitorDPI/readme.md">documentación más reciente sobre GitHub.</a>
 
  
 
-Windows 8.1 proporciona a los desarrolladores una nueva funcionalidad para crear aplicaciones de escritorio que son con reconocimiento de PPP por monitor. Para aprovechar esta funcionalidad, una aplicación compatible con PPP por monitor debe hacer lo siguiente:
+Windows 8.1 ofrece a los desarrolladores una nueva funcionalidad para crear aplicaciones de escritorio que tienen en cuenta ppp por monitor. Para aprovechar esta funcionalidad, una aplicación compatible con PPP por monitor debe hacer lo siguiente:
 
 -   Cambiar las dimensiones de la ventana para mantener un tamaño físico que parezca coherente en cualquier pantalla
 -   Volver a diseño y volver a representar gráficos para el nuevo tamaño de ventana
 -   Seleccione las fuentes que se escalan correctamente para el nivel de PPP.
--   Selección y carga de recursos de mapa de bits adaptados para el nivel de PPP
+-   Selección y carga de recursos de mapa de bits adaptados al nivel de PPP
 
 Para facilitar la creación de una aplicación compatible con PPP por monitor, Windows 8.1 proporciona las siguientes API de Microsoft Win32:
 
 -   [**SetProcessDpiAwareness**](/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-setprocessdpiawareness) (o entrada de manifiesto de PPP) establece el proceso en un nivel de reconocimiento de PPP especificado, que luego determina cómo Windows escala la interfaz de usuario. Esto reemplaza [**a SetProcessDPIAware.**](/windows/desktop/api/winuser/nf-winuser-setprocessdpiaware)
 -   [**GetProcessDpiAwareness devuelve**](/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-getprocessdpiawareness) el nivel de reconocimiento de PPP. Esto reemplaza a [**IsProcessDPIAware.**](/windows/desktop/api/winuser/nf-winuser-isprocessdpiaware)
 -   [**GetDpiForMonitor devuelve**](/windows/desktop/api/ShellScalingAPI/nf-shellscalingapi-getdpiformonitor) el valor de PPP de un monitor.
--   La notificación de la ventana [**WM \_ PPPCHANGED**](wm-dpichanged.md) se envía a las aplicaciones que tienen en cuenta ppp por monitor cuando cambia la posición de una ventana, de modo que la mayor parte de su área forma una intersección con un monitor con un PPP diferente del PPP antes de que cambie la posición o cuando el usuario mueva el control deslizante de pantalla. Para crear una aplicación que cambie el tamaño y se vuelva a representar cuando un usuario la mueva a otra pantalla, use esta notificación.
+-   La notificación de ventana [**\_ WM PPPCHANGED**](wm-dpichanged.md) se envía a las aplicaciones con reconocimiento de PPP por monitor cuando cambia la posición de una ventana, de modo que la mayor parte de su área forma una intersección con un monitor con un VALOR DE PPP diferente del valor de PPP antes de que cambie la posición o cuando el usuario mueva el control deslizante de pantalla. Para crear una aplicación que cambie de tamaño y se vuelva a representar cuando un usuario la mueve a otra pantalla, use esta notificación.
 
 Para obtener más información sobre los distintos niveles de reconocimiento de PPP admitidos para las aplicaciones de escritorio en Windows 8.1 vea el tema [Writing DPI-Aware Desktop and Win32 Applications](https://msdn.microsoft.com/library/windows/desktop/mt843498(v=vs.85).aspx(d=robot)).
 
 ## <a name="dpi-scaling-and-wpf"></a>Escalado de PPP y WPF
 
-Windows Presentation Foundation (WPF) son de forma predeterminada compatible con PPP del sistema. Para obtener definiciones de los distintos niveles de reconocimiento de PPP, vea el tema [Writing DPI-Aware Desktop and Win32 Applications](https://msdn.microsoft.com/library/windows/desktop/mt843498(v=vs.85).aspx(d=robot)). El sistema de gráficos wpf usa unidades independientes del dispositivo para habilitar la resolución y la independencia del dispositivo. WPF escala cada píxel independiente del dispositivo automáticamente en función de los PPP actuales del sistema. Esto permite que las aplicaciones DE WPF se escalen automáticamente cuando el valor de PPP del monitor en el que se encuentra la ventana es el mismo PPP del sistema. Sin embargo, dado que las aplicaciones WPF tienen en cuenta los valores de ppp del sistema, el sistema operativo escalará la aplicación cuando la aplicación se mueva a un monitor con un PPP diferente o cuando se utilice el control deslizante del panel de control para cambiar el valor de PPP. El escalado en el sistema operativo puede dar lugar a que las aplicaciones wpf aparezcan desenfoque, especialmente cuando el escalado no es integral. Para evitar el escalado de aplicaciones WPF, deben actualizarse para que sean con reconocimiento de PPP por monitor.
+Windows Presentation Foundation aplicaciones (WPF) son de forma predeterminada compatible con PPP del sistema. Para obtener definiciones de los distintos niveles de reconocimiento de PPP, consulte el [tema Writing DPI-Aware Desktop and Win32 Applications](https://msdn.microsoft.com/library/windows/desktop/mt843498(v=vs.85).aspx(d=robot)). El sistema de gráficos wpf usa unidades independientes del dispositivo para habilitar la resolución y la independencia del dispositivo. WPF escala automáticamente cada píxel independiente del dispositivo en función de los PPP actuales del sistema. Esto permite que las aplicaciones WPF se escalen automáticamente cuando el VALOR DE PPP del monitor en el que está la ventana es el mismo PPP del sistema. Sin embargo, dado que las aplicaciones WPF tienen en cuenta los valores de ppp del sistema, el sistema operativo escalará la aplicación cuando la aplicación se mueva a un monitor con un PPP diferente o cuando se utilice el control deslizante en el panel de control para cambiar el valor de PPP. El escalado en el sistema operativo puede dar lugar a que las aplicaciones WPF parezcan desenfoque, especialmente cuando el escalado no es integral. Para evitar el escalado de aplicaciones WPF, deben actualizarse para que sean con reconocimiento de PPP por monitor.
 
 ## <a name="per-monitor-aware-wpf-sample-walkthrough"></a>Tutorial de ejemplo de WPF por monitor
 
-El [ejemplo de WPF compatible con monitor](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PerMonitorDPIAware) es una aplicación WPF de ejemplo actualizada para que tenga en cuenta ppp por monitor. El ejemplo consta de dos proyectos:
+El [ejemplo de WPF compatible con cada](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PerMonitorDPIAware) monitor es una aplicación WPF de ejemplo actualizada para que tenga en cuenta ppp por monitor. El ejemplo consta de dos proyectos:
 
--   NativeHelpers.vcxproj: se trata de un proyecto del asistente nativo que implementa la funcionalidad básica para convertir una aplicación WPF en compatible con PPP según el monitor mediante las API win32 anteriores. El proyecto contiene dos clases:
+-   NativeHelpers.vcxproj: se trata de un proyecto auxiliar nativo que implementa la funcionalidad principal para que una aplicación WPF sea compatible con PPP según el monitor mediante las api de Win32 anteriores. El proyecto contiene dos clases:
     -   PerMonDPIHelpers: una clase que proporciona funciones auxiliares para operaciones relacionadas con PPP, como recuperar el PPP actual del monitor activo, establecer un proceso para que tenga en cuenta ppp por monitor, etc.
-    -   PerMonitorDPIWindow: una clase base derivada de **System.Windows. Ventana** que implementa la funcionalidad para que una ventana de aplicación wpf sea compatible con ppp por monitor. Ajusta el tamaño de la ventana, el tamaño de representación de gráficos y el tamaño de fuente en función de los valores de PPP del monitor en lugar de los ppp del sistema.
--   WPFApplication.csproj: aplicación WPF de ejemplo que consume PerMonitorDPIWindow (PerMonitorDPIWindow) y muestra cómo cambia el tamaño de la ventana de la aplicación y la representación cuando la ventana se mueve a un monitor con un PPP diferente o cuando se usa el control deslizante del panel de control Mostrar para cambiar el ppp.
+    -   PerMonitorDPIWindow: una clase base derivada de **System.Windows. Ventana** que implementa la funcionalidad para que una ventana de aplicación WPF sea compatible con ppp por monitor. Ajusta el tamaño de la ventana, el tamaño de representación de gráficos y el tamaño de fuente en función de los VALORES DE PPP del monitor en lugar de los PPP del sistema.
+-   WPFApplication.csproj: aplicación WPF de ejemplo que consume PerMonitorDPIWindow (PerMonitorDPIWindow) y muestra cómo cambia el tamaño de la ventana de la aplicación y la representación cuando la ventana se mueve a un monitor con un PPP diferente o cuando se usa el control deslizante en el panel de control Mostrar para cambiar el ppp.
 
 Para ejecutar el ejemplo, siga estos pasos:
 
 1.  Descargar y descomprimir el [ejemplo de WPF por monitor](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PerMonitorDPIAware)
 2.  Inicie Microsoft Visual Studio y seleccione File > Open > Project/Solution (Abrir **> Project/Solución).**
-3.  Vaya al directorio que contiene el ejemplo descomprimido. Vaya al directorio denominado para el ejemplo y haga doble clic en el archivo Visual Studio solution (.sln)
-4.  Presione F7 o use **Compilar > compilar solución** para compilar el ejemplo.
+3.  Vaya al directorio que contiene el ejemplo descomprimido. Vaya al directorio denominado para el ejemplo y haga doble clic en el archivo Visual Studio Solution (.sln).
+4.  Presione F7 o use **Build > Build Solution** para compilar el ejemplo.
 5.  Presione Ctrl+F5 o use **Depurar > Iniciar sin depurar** para ejecutar el ejemplo.
 
-Para ver el impacto del cambio de PPP en una aplicación WPF que se actualiza para que sea compatible con PPP por monitor mediante la clase base del ejemplo, mueva la ventana de la aplicación hacia y desde las pantallas que tienen diferentes DPI. A medida que la ventana se mueve entre monitores, el tamaño de la ventana y la escala de la interfaz de usuario se actualizan en función del valor de PPP de la pantalla mediante el sistema gráfico escalable de WPF, en lugar de escalarlo el sistema operativo. La interfaz de usuario de la aplicación se representa de forma nativa y no aparece desenfoque. Si no tiene dos pantallas con valores de PPP diferentes, cambie el valor de PPP cambiando el control deslizante en el panel de control Mostrar. Al cambiar el control deslizante y hacer clic **en Aplicar,** se cambiará el tamaño de la ventana de la aplicación y se actualizará automáticamente la escala de la interfaz de usuario.
+Para ver el impacto de cambiar PPP en una aplicación WPF que se actualiza para que tenga en cuenta ppp por monitor mediante la clase base del ejemplo, mueva la ventana de la aplicación hacia y desde las pantallas que tienen diferentes DPI. A medida que la ventana se mueve entre monitores, el tamaño de la ventana y la escala de la interfaz de usuario se actualizan en función de los PPP de la pantalla mediante el sistema de gráficos escalable de WPF, en lugar de escalarse por el sistema operativo. La interfaz de usuario de la aplicación se representa de forma nativa y no parece desenfoque. Si no tiene dos pantallas con valores de PPP diferentes, cambie el control deslizante en el panel de control Mostrar. Al cambiar el control deslizante y hacer clic **en Aplicar,** se cambiará el tamaño de la ventana de la aplicación y se actualizará automáticamente la escala de la interfaz de usuario.
 
-## <a name="updating-an-existing-wpf-application-to-be-per-monitor-dpi-aware-using-helper-project-in-the-wpf-sample"></a>Actualización de una aplicación WPF existente para que sea compatible con ppp por monitor mediante un proyecto auxiliar en el ejemplo de WPF
+## <a name="updating-an-existing-wpf-application-to-be-per-monitor-dpi-aware-using-helper-project-in-the-wpf-sample"></a>Actualización de una aplicación WPF existente para que tenga en cuenta ppp por monitor mediante un proyecto auxiliar en el ejemplo de WPF
 
-Si tiene una aplicación WPF existente y desea aprovechar el proyecto del asistente de PPP del ejemplo para que sea compatible con PPP, siga estos pasos.
+Si tiene una aplicación WPF existente y desea aprovechar el proyecto del asistente de PPP del ejemplo para que tenga en cuenta los valores de PPP, siga estos pasos.
 
 1.  Descargar y descomprimir el ejemplo de WPF por monitor
-2.  Inicie Visual Studio y seleccione File > Open > Project/Solution (Abrir **> Project/Solución).**
-3.  Vaya al directorio que contiene una aplicación WPF existente y haga doble clic en el archivo Visual Studio Solution (.sln)
-4.  Haga clic con el botón **derecho en > agregar > existente Project** captura de pantalla que muestra la selección del menú ![ Agregar: proyecto existente](images/scrvs-image1.png)
+2.  Inicie Visual Studio seleccione **File > Open > Project/Solution (Abrir > Project/Solución).**
+3.  Vaya al directorio que contiene una aplicación WPF existente y haga doble clic en el archivo Visual Studio Solution (.sln).
+4.  Haga clic con el botón **derecho en > Agregar > existente Project** una captura de pantalla que ilustra la selección del menú ![ Agregar: proyecto existente](images/scrvs-image1.png)
 5.  En el cuadro de diálogo de selección de archivos, vaya al directorio que contiene el ejemplo descomprimido. Abra el directorio denominado para el ejemplo, vaya a la carpeta "NativeHelpers", seleccione el archivo de proyecto de Visual C++ "NativeHelpers.vcxproj" y haga clic en **Aceptar.**
-6.  Haga clic con el botón derecho en el proyecto NativeHelpers y seleccione **Compilar.** Esto generará una NativeHelpers.dll que se agregará como referencia a la aplicación WPF en el paso siguiente, una captura de pantalla que ilustra la selección del ![ menú de compilación.](images/scrvs-image2.png)
-7.  Agregue una referencia a NativeHelpers.dll desde la aplicación WPF. Expanda el proyecto de aplicación WPF, haga clic con el botón derecho **en Referencias** y haga clic en **Agregar referencia...**
+6.  Haga clic con el botón derecho en el proyecto NativeHelpers y seleccione **Compilar**. Esto generará una NativeHelpers.dll que se agregará como referencia a la aplicación WPF en el paso siguiente, una captura de pantalla que ilustra la ![ selección del menú de compilación.](images/scrvs-image2.png)
+7.  Agregue una referencia a NativeHelpers.dll desde la aplicación WPF. Expanda el proyecto de aplicación wpf, haga clic con el botón derecho **en Referencias y** haga clic en Agregar **referencia...**
 8.  En el cuadro de diálogo resultante, expanda la **sección** Solución. En **Proyectos,** seleccione NativeHelpers y haga clic **en Aceptar** en una captura de pantalla que ilustra el cuadro de diálogo del administrador de ![ recursos.](images/scrvs-image3.png)
-9.  Expanda el proyecto de aplicación WPF, expanda **Propiedades** y **abra AssemblyInfo.cs**. Realice las siguientes adiciones a AssemblyInfo.cs
+9.  Expanda el proyecto de aplicación WPF, expanda **Propiedades** y **abra AssemblyInfo.cs**. Realice las siguientes adiciones a AssemblyInfo.cs.
     -   Agregue una referencia al sistema. Windows. Medios en la sección de referencia (mediante System.Windows. Media;)
     -   Agregue el atributo DisableDpiAwareness ( `[assembly: DisableDpiAwareness]` )
 
@@ -92,23 +92,23 @@ Si tiene una aplicación WPF existente y desea aprovechar el proyecto del asiste
         -   Heredar la clase de ventana principal de la clase PerMonitorDPIWindow
 
         ![una captura de pantalla que ilustra la referencia de c++](images/scrvs-image5.png)
-    -   Actualice el archivo .xaml de la ventana principal de WPF para heredar de la clase base PerMonitorDPIWindow.
+    -   Actualización del archivo .xaml de la ventana principal de WPF para heredar de la clase base PerMonitorDPIWindow
         -   Agregue una referencia a NativeHelpers en la sección de referencia agregando la línea `xmlns:src="clr-namespace:NativeHelpers;assembly=NativeHelpers"`
         -   Heredar la clase de ventana principal de la clase PerMonitorDPIWindow
 
         ![una captura de pantalla que ilustra la adición de la referencia .xaml](images/scrvs-image6.png)
-11. Presione F7 o use **Compilar > compilar solución** para compilar el ejemplo.
+11. Presione F7 o use **Build > Build Solution** para compilar el ejemplo.
 12. Presione Ctrl+F5 o use **Depurar > Iniciar sin depurar** para ejecutar el ejemplo.
 
-La aplicación de [ejemplo WPF](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PerMonitorDPIAware) compatible con monitor muestra cómo se puede actualizar una aplicación WPF para que sea compatible con PPP por monitor respondiendo a la notificación de ventana WM [**\_ PPPCHANGED.**](wm-dpichanged.md) En respuesta a la notificación de ventana, el ejemplo actualiza la transformación de escala usada por WPF en función del valor de PPP actual del monitor en el que se encuentra la ventana. El *wParam de* la notificación de ventana contiene el nuevo PPP en *el wParam*. *LParam contiene* un rectángulo que tiene el tamaño y la posición de la nueva ventana sugerida, escalado para el nuevo PPP.
+La aplicación de ejemplo [DE WPF](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PerMonitorDPIAware) compatible con cada monitor muestra cómo se puede actualizar una aplicación WPF para que tenga en cuenta ppp por monitor respondiendo a la notificación de ventana [**\_ PPPCHANGED de WM.**](wm-dpichanged.md) En respuesta a la notificación de ventana, el ejemplo actualiza la transformación de escala usada por WPF en función del ppp actual del monitor en el que está la ventana. El *wParam de* la notificación de ventana contiene el nuevo PPP en *wParam.* *LParam contiene* un rectángulo que tiene el tamaño y la posición de la nueva ventana sugerida, escalado para el nuevo PPP.
 
 Nota:
 
 > [!Note]  
 > Puesto que este ejemplo sobrescribe el tamaño de la ventana y la transformación de escala del nodo raíz de la ventana wpf, el desarrollador de la aplicación puede necesitar más trabajo si:
 >
-> -   El tamaño de la ventana afecta a otras partes de la aplicación, como esta ventana de WPF que se hospeda dentro de otra aplicación.
-> -   La aplicación WPF que extiende esta clase está estableciendo alguna otra transformación en el objeto visual raíz. el ejemplo puede sobrescribir alguna otra transformación que esté aplicando la propia aplicación WPF.
+> -   El tamaño de la ventana afecta a otras partes de la aplicación, como esta ventana de WPF, que se hospeda dentro de otra aplicación.
+> -   La aplicación WPF que extiende esta clase está estableciendo alguna otra transformación en el objeto visual raíz. el ejemplo puede sobrescribir alguna otra transformación que está aplicando la propia aplicación WPF.
 
  
 
@@ -121,9 +121,9 @@ Para que una aplicación WPF existente tenga en cuenta ppp por monitor, la bibli
     -   El sistema operativo no escala la aplicación cuando el PPP del sistema no coincide con el ppp actual del monitor en el que se encuentra la ventana de la aplicación.
     -   El [**mensaje \_ WM PPPCHANGED**](wm-dpichanged.md) se envía cada vez que cambia el valor de PPP de la ventana.
 
--   **Ajusta la dimensión de la ventana, vuelve** a diseño y vuelve a representar el contenido de gráficos y selecciona fuentes en función de los valores de PPP iniciales del monitor en el que se encuentra la ventana: Una vez que la aplicación se marca como compatible con PPP según el monitor, WPF seguirá escalando el tamaño de la ventana, los gráficos y el tamaño de fuente en función del ppp del sistema. Puesto que, en el inicio de la aplicación, no se garantiza que el VALOR DE PPP del sistema sea el mismo que el valor de PPP del monitor en el que se inicia la ventana, la biblioteca ajusta estos valores una vez cargada la ventana. La clase base **PerMonitorDPIWindow las** actualiza en el **controlador OnLoaded().**
+-   **Ajusta la dimensión de la ventana, vuelve** a diseño y vuelve a representar el contenido de gráficos y selecciona fuentes en función de los PPP iniciales del monitor en el que se encuentra la ventana: Una vez que la aplicación se marca como compatible con PPP según el monitor, WPF escalará el tamaño de la ventana, los gráficos y el tamaño de fuente en función del ppp del sistema. Puesto que, en el inicio de la aplicación, no se garantiza que el VALOR DE PPP del sistema sea el mismo que el valor de PPP del monitor en el que se inicia la ventana, la biblioteca ajusta estos valores una vez cargada la ventana. La clase base **PerMonitorDPIWindow las** actualiza en el **controlador OnLoaded().**
 
-    El tamaño de la ventana se actualiza cambiando las **propiedades Ancho** **y** Alto de la ventana. El diseño y el tamaño se actualizan aplicando una transformación de escala adecuada al nodo raíz de la ventana de WPF.
+    El tamaño de la ventana se actualiza cambiando las **propiedades Ancho** **y** Alto de la ventana. El diseño y el tamaño se actualizan aplicando una transformación de escala adecuada al nodo raíz de la ventana wpf.
 
     ```C++
     void PerMonitorDPIWindow::OnLoaded(Object^ , RoutedEventArgs^ ) 
@@ -235,7 +235,7 @@ Para que una aplicación WPF existente tenga en cuenta ppp por monitor, la bibli
 
 Para actualizar el contenido gráfico, la aplicación WPF de ejemplo aplica una transformación de escala al nodo raíz de la aplicación WPF. Aunque esto funciona bien para el contenido representado de forma nativa por WPF (rectángulo, texto, etc.), esto implica que WPF escala los recursos de mapa de bits como imágenes.
 
-Para evitar mapas de bits desenfocados causados por el escalado, el desarrollador de aplicaciones wpf puede escribir un control de imagen de PPP personalizado que seleccione un recurso diferente en función del ppp actual del monitor en el que se encuentra la ventana. El control de imagen puede basarse en el evento **DPIChanged()** desencadenado para la ventana de WPF que consume desde **PerMonitorDPIWindow**, cuando cambia el valor de PPP.
+Para evitar mapas de bits desenfocados causados por el escalado, el desarrollador de aplicaciones wpf puede escribir un control de imagen de PPP personalizado que seleccione un recurso diferente en función del PPP actual del monitor en el que se encuentra la ventana. El control de imagen puede basarse en el evento **DPIChanged()** desencadenado para la ventana de WPF que consume desde **PerMonitorDPIWindow**, cuando cambia el valor de PPP.
 
 > [!Note]  
 > El control de imagen también debe seleccionar el control correcto durante el inicio de la aplicación en el controlador de eventos de ventana de WPF **Loaded().**

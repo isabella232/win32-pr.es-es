@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55103062
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: a142dcac2eaf50ae8ce642ec95e558cfc02d3d57a11b37a9f9adc8d0536d0c55
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 45b79d8c7a9ab37d586ff10cc6fe50a78df7ae45
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118257818"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572985"
 ---
 # <a name="esenttoomanyattacheddatabasesexception-methods"></a>Métodos de EsentTooManyAttachedDatabasesException 
 

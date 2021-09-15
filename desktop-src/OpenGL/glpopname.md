@@ -1,6 +1,6 @@
 ---
 title: Función glPopName (Gl.h)
-description: Las funciones glPushName y glPopName insertan y devuelven la pila de nombres. | Función glPopName (Gl.h)
+description: Las funciones glPushName y glPopName insertan y abren la pila de nombres. | Función glPopName (Gl.h)
 ms.assetid: ee741188-b275-4839-a89d-4d988c547d07
 keywords:
 - Función glPopName OpenGL
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe30aa09d401fc8ef35a3671e02a898776af26111ae0f8e31cd1f6ad3bff70b3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 830c4937b30cca64de3063b42ad16dd3adc87c89
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119290175"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476704"
 ---
-# <a name="glpopname-function"></a>Función glPopName
+# <a name="glpopname-function"></a>función glPopName
 
 Las [**funciones glPushName**](glpushname.md) y **glPopName** insertan y abren la pila de nombres.
 
@@ -50,18 +50,18 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 | Nombre                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**GL \_ STACK \_ UNDERFLOW**</dt> </dl>   | Se llamó a la función mientras la pila de matriz actual solo contenía una sola matriz.<br/>                                     |
+| <dl> <dt>**FLUJO \_ INFERIOR DE LA PILA DE \_ GL**</dt> </dl>   | Se llamó a la función mientras que la pila de matriz actual contenía solo una matriz.<br/>                                     |
 | <dl> <dt>**OPERACIÓN \_ NO VÁLIDA DE \_ GL**</dt> </dl> | Se llamó a la función entre una llamada a [**glBegin**](glbegin.md) y la llamada correspondiente [**a glEnd**](glend.md).<br/> |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La [**función glPushName**](glpushname.md) hace que el nombre se inserta en la pila de nombres, que inicialmente está vacía. La **función glPopName** devuelve un nombre de la parte superior de la pila. La pila de nombres se usa durante el modo de selección para permitir que los conjuntos de comandos de representación se identifiquen de forma única. Consta de un conjunto ordenado de enteros sin signo.
+La [**función glPushName**](glpushname.md) hace que el nombre se inserta en la pila de nombres, que inicialmente está vacía. La **función glPopName** abre un nombre en la parte superior de la pila. La pila de nombres se usa durante el modo de selección para permitir que los conjuntos de comandos de representación se identifiquen de forma única. Consta de un conjunto ordenado de enteros sin signo.
 
-La pila de nombres siempre está vacía, mientras que el modo de representación no es GL \_ SELECT. Se [**omiten las llamadas a glPushName**](glpushname.md) **o glPopName** mientras el modo de representación no es GL \_ SELECT.
+La pila de nombres siempre está vacía, mientras que el modo de representación no es GL \_ SELECT. Se [**omiten las llamadas a glPushName**](glpushname.md) o **glPopName** mientras el modo de representación no es GL \_ SELECT.
 
-Las siguientes funciones recuperan información relacionada [**con glPushName**](glpushname.md) y **glPopName**:
+Las funciones siguientes recuperan información relacionada [**con glPushName**](glpushname.md) y **glPopName**:
 
 [**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ NAME STACK \_ \_ DEPTH
 
@@ -71,7 +71,7 @@ Las siguientes funciones recuperan información relacionada [**con glPushName**]
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |

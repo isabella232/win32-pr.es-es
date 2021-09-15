@@ -4,16 +4,16 @@ ms.assetid: c3f05482-138c-4d95-9b76-a9715227961f
 title: player.h
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 817e5f1fb4f2aef18076557e5b94360e886eb78eda2862ab9b6540374a0c15ae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 38c9d1c564edefb1683705d9ef8c4f009b061a7c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118239310"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580240"
 ---
 # <a name="playerh"></a>player.h
 
-Este tema contiene código para el tutorial [How to Play Media Files with Media Foundation](how-to-play-unprotected-media-files.md).
+Este tema contiene código para el tutorial [Cómo reproducir archivos multimedia con Media Foundation](how-to-play-unprotected-media-files.md).
 
 
 ```C++

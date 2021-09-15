@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2140c6357b92816977ad8a562e76c3a3f7f53abd578a88ad07eb1b2eed5f5be2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 32b55686e510735dc456e6116e55d01897712ee7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118267160"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476004"
 ---
 # <a name="esentinternalerrorexception-constructor"></a>Constructor EsentInternalErrorException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentInternalErrorException()
 public EsentInternalErrorException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

@@ -3,7 +3,7 @@ title: D3DX_R16G16_UINT_to_UINT2 función
 description: Desempaqueta los datos del sombreador UINT DXGI \_ FORMAT \_ R16G16 \_ en XMUINT2.
 ms.assetid: bb24fdc4-db47-4cf3-af05-4b39c3af3701
 keywords:
-- D3DX_R16G16_UINT_to_UINT2 función HLSL
+- D3DX_R16G16_UINT_to_UINT2 function HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 15e2d31194364c865d8f6ae77a838e8f64f2c153b4185a8f3d26e32737835dba
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2586ff8876ee10368d49b816b38f5c9c8caf7c7b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119726915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573977"
 ---
 # <a name="d3dx_r16g16_uint_to_uint2-function"></a>Función D3DX \_ R16G16 \_ UINT \_ a \_ UINT2
 

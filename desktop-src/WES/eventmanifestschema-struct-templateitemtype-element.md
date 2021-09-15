@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 343b815657c13b0bdf0fdc01d3a8a9149d84e55daf79f8777db03c2e0524c586
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a0cdb4682751ee236a8660a4cbc64e32290997d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119958235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476290"
 ---
 # <a name="struct-templateitemtype-element"></a>Elemento struct (TemplateItemType)
 

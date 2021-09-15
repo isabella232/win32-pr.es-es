@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0cd653ada5aea96a13bbebc109593c73686cbbb334f29543036e7ee15bbbf427
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 780b16b3f2b9c26984710f6eb7105fd6bda1316e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118981825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567677"
 ---
 # <a name="esentrunninginmultiinstancemodeexception-constructor"></a>Constructor EsentRunningInMultiInstanceModeException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentRunningInMultiInstanceModeException()
 public EsentRunningInMultiInstanceModeException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

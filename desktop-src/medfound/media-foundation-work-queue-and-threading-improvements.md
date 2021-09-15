@@ -4,18 +4,18 @@ ms.assetid: 9E2A1D94-BF82-488E-8297-D524683ABE17
 title: Mejoras de cola de trabajo y subprocesos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e91c8b082587c387aee6a8b07ca8f5fa8d5aea81e8f9a37f8decc0816d7a8708
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 07b307cb00316696e075e9e9cc2a138e98e149be
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118062282"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573409"
 ---
 # <a name="work-queue-and-threading-improvements"></a>Mejoras de cola de trabajo y subprocesos
 
 En este tema se describen las mejoras Windows 8 para colas de trabajo y subprocesos en la plataforma Microsoft Media Foundation trabajo.
 
--   [comportamiento Windows 7](#windows-7-behavior)
+-   [Windows comportamiento 7](#windows-7-behavior)
     -   [Colas de trabajo](#work-queues)
     -   [Compatibilidad con MMCSS](#mmcss-support)
     -   [IMFRealTimeClient](#imfrealtimeclientex)
@@ -36,7 +36,7 @@ En esta sección se resume el comportamiento de las Media Foundation de trabajo 
 
 ### <a name="work-queues"></a>Colas de trabajo
 
-La Media Foundation de trabajo crea varias colas de trabajo estándar. Solo dos se documentan como para uso general de la aplicación:
+La plataforma Media Foundation crea varias colas de trabajo estándar. Solo dos se documentan como para uso general de la aplicación:
 
 -   **MFASYNC \_ CALLBACK \_ QUEUE \_ STANDARD**
 -   **FUNCIÓN LONG DE \_ COLA DE \_ DEVOLUCIÓN DE LLAMADA \_ \_ MFASYNC**
@@ -46,23 +46,23 @@ Una aplicación o componente puede asignar nuevas colas de trabajo llamando a [*
 -   **MF \_ STANDARD \_ WORKQUEUE crea** una cola de trabajo sin un bucle de mensajes.
 -   **MF \_ WINDOW \_ WORKQUEUE crea** una cola de trabajo con un bucle de mensajes.
 
-Para poner en cola un elemento de trabajo, llame [**a MFPutWorkItem**](/windows/desktop/api/mfapi/nf-mfapi-mfputworkitem) o [**MFPutWorkItemEx**](/windows/desktop/api/mfapi/nf-mfapi-mfputworkitemex). La plataforma ejecuta el elemento de trabajo invocando la implementación proporcionada por el autor de la llamada de [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback). En Windows 7 y versiones anteriores, la plataforma crea un subproceso por cola de trabajo.
+Para poner en cola un elemento de trabajo, llame [**a MFPutWorkItem**](/windows/desktop/api/mfapi/nf-mfapi-mfputworkitem) [**o MFPutWorkItemEx**](/windows/desktop/api/mfapi/nf-mfapi-mfputworkitemex). La plataforma ejecuta el elemento de trabajo invocando la implementación proporcionada por el autor de la llamada de [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback). En Windows 7 y versiones anteriores, la plataforma crea un subproceso por cola de trabajo.
 
 ### <a name="mmcss-support"></a>Compatibilidad con MMCSS
 
-El [servicio Programador](../procthread/multimedia-class-scheduler-service.md) de clases multimedia (MMCSS) administra las prioridades de subprocesos para que las aplicaciones multimedia obtengan segmentos regulares de tiempo de CPU, sin denegar los recursos de CPU a las aplicaciones de prioridad inferior. MMCSS define un conjunto de tareas *que* tienen perfiles de uso de CPU diferentes. Cuando un subproceso se une a una tarea de MMCSS, MMCSS establece la prioridad del subproceso en función de varios factores:
+El [servicio Programador de](../procthread/multimedia-class-scheduler-service.md) clases multimedia (MMCSS) administra las prioridades de subprocesos para que las aplicaciones multimedia obtengan segmentos regulares de tiempo de CPU, sin denegar los recursos de CPU a las aplicaciones de prioridad inferior. MMCSS define un conjunto de tareas *que* tienen perfiles de uso de CPU diferentes. Cuando un subproceso se une a una tarea de MMCSS, MMCSS establece la prioridad del subproceso en función de varios factores:
 
 -   Prioridad base de la tarea, que se establece en el Registro.
 -   Prioridad relativa del subproceso, que se establece en tiempo de ejecución mediante una llamada a [**AvSetMmThreadPriority**](/windows/win32/api/avrt/nf-avrt-avsetmmthreadpriority).
 -   Varias características en tiempo de ejecución, como si la aplicación está en primer plano y cuánto tiempo de CPU consumen los subprocesos de cada clase MMCSS.
 
-Una aplicación puede registrar una cola de trabajo con MMCSS llamando a [**MFBeginRegisterWorkQueueWithMMCSS.**](/windows/desktop/api/mfapi/nf-mfapi-mfbeginregisterworkqueuewithmmcss) Esta función toma un identificador de cola de trabajo, una clase MMCSS (nombre de tarea) y el identificador de tarea MMCSS. Internamente, llama a [**AvSetMmThreadCharacteristics con**](/windows/win32/api/avrt/nf-avrt-avsetmmthreadcharacteristicsa) el nombre de tarea y el identificador de tarea. Después de registrar una cola de trabajo con MMCSS, puede obtener el identificador de clase y tarea llamando a [**MFGetWorkQueueMMCSSClass**](/windows/desktop/api/mfapi/nf-mfapi-mfgetworkqueuemmcssclass) y [**MFGetWorkQueueMMCSSTaskId.**](/windows/desktop/api/mfapi/nf-mfapi-mfgetworkqueuemmcsstaskid)
+Una aplicación puede registrar una cola de trabajo con MMCSS llamando a [**MFBeginRegisterWorkQueueWithMMCSS**](/windows/desktop/api/mfapi/nf-mfapi-mfbeginregisterworkqueuewithmmcss). Esta función toma un identificador de cola de trabajo, una clase MMCSS (nombre de tarea) y el identificador de tarea mmcss. Internamente, llama a [**AvSetMmThreadCharacteristics con**](/windows/win32/api/avrt/nf-avrt-avsetmmthreadcharacteristicsa) el nombre de tarea y el identificador de tarea. Después de registrar una cola de trabajo con MMCSS, puede obtener el identificador de clase y tarea llamando a [**MFGetWorkQueueMMCSSClass**](/windows/desktop/api/mfapi/nf-mfapi-mfgetworkqueuemmcssclass) y [**MFGetWorkQueueMMCSSTaskId.**](/windows/desktop/api/mfapi/nf-mfapi-mfgetworkqueuemmcsstaskid)
 
-La [sesión multimedia](media-session.md) proporciona acceso de nivel más alto a estas API, a través de la interfaz [**IMFWorkQueueServices.**](/windows/desktop/api/mfidl/nn-mfidl-imfworkqueueservices) Esta interfaz proporciona dos métodos principales:
+La [sesión multimedia](media-session.md) proporciona acceso de nivel algo más alto a estas API, a través de la interfaz [**IMFWorkQueueServices.**](/windows/desktop/api/mfidl/nn-mfidl-imfworkqueueservices) Esta interfaz proporciona dos métodos principales:
 
 | Método                                                                                                            | Descripción                                                                                                                                                                                                                                                                                   |
 |-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**BeginRegisterPlatformWorkQueueWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginregisterplatformworkqueuewithmmcss)   | Registra una cola de trabajo con una tarea de MMCSS. Este método es básicamente un contenedor fino alrededor de [**MFBeginRegisterWorkQueueWithMMCSS,**](/windows/desktop/api/mfapi/nf-mfapi-mfbeginregisterworkqueuewithmmcss)pero puede pasar el valor **MFASYNC \_ CALLBACK \_ QUEUE \_ ALL** para registrar todas las colas de trabajo de la plataforma a la vez. |
+| [**BeginRegisterPlatformWorkQueueWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginregisterplatformworkqueuewithmmcss)   | Registra una cola de trabajo con una tarea mmcss. Este método es básicamente un contenedor fino alrededor de [**MFBeginRegisterWorkQueueWithMMCSS,**](/windows/desktop/api/mfapi/nf-mfapi-mfbeginregisterworkqueuewithmmcss)pero puede pasar el valor **MFASYNC \_ CALLBACK \_ QUEUE \_ ALL** para registrar todas las colas de trabajo de la plataforma a la vez. |
 | [**BeginRegisterTopologyWorkQueuesWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginregistertopologyworkqueueswithmmcss) | Registra una rama de la topología con una cola de trabajo.                                                                                                                                                                                                                                         |
 
 
@@ -72,8 +72,8 @@ La [sesión multimedia](media-session.md) proporciona acceso de nivel más alto 
 Para registrar una rama de topología, haga lo siguiente.
 
 1.  Establezca el [atributo MF \_ TOPONODE \_ WORKQUEUE \_ ID](mf-toponode-workqueue-id-attribute.md) en el nodo de origen de la rama. Use cualquier valor definido por la aplicación.
-2.  Opcionalmente, establezca **MF \_ TOPONODE \_ WORKQUEUE \_ MMCSS \_ CLASS** para unir la cola de trabajo a una tarea de MMCSS.
-3.  Llame [**a BeginRegisterTopologyWorkQueuesWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginregistertopologyworkqueueswithmmcss) en la topología resuelta.
+2.  Opcionalmente, establezca **MF \_ TOPONODE \_ WORKQUEUE \_ MMCSS \_ CLASS** para unir la cola de trabajo a una tarea MMCSS.
+3.  Llame [**a BeginRegisterTopologyWorkQueuesWithMMCSS en**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-beginregistertopologyworkqueueswithmmcss) la topología resuelta.
 
 La sesión multimedia asigna una nueva cola de trabajo para cada valor único de [MF \_ TOPONODE \_ WORKQUEUE \_ ID](mf-toponode-workqueue-id-attribute.md). Para cada rama de topología, las operaciones de canalización asincrónicas se realizan en la cola de trabajo que se asigna a la rama.
 
@@ -98,9 +98,9 @@ En Windows 8, Media Foundation admite un nuevo tipo de cola de trabajo denominad
 
 Cuando se [**usa IMFRealTimeClientEx,**](/windows/desktop/api/mfidl/nn-mfidl-imfrealtimeclientex)las aplicaciones deben evitar poner en marcha subprocesos y, en su lugar, usar las colas de trabajo. Para ello, las aplicaciones deben [**implementar SetWorkQueueEx**](/windows/desktop/api/mfidl/nf-mfidl-imfrealtimeclientex-setworkqueueex) y no usar [**RegisterThreads**](/windows/desktop/api/mfidl/nf-mfidl-imfrealtimeclientex-registerthreadsex) y [**UnregisterThreads.**](/windows/desktop/api/mfidl/nf-mfidl-imfrealtimeclientex-unregisterthreads)
 
-Cuando se inicializa Media Foundation plataforma, crea una cola multiproceso con el identificador **MFASYNC \_ CALLBACK \_ QUEUE \_ MULTITHREADED**.
+Cuando se Media Foundation la plataforma, crea una cola multiproceso con el identificador **MFASYNC \_ CALLBACK \_ QUEUE \_ MULTITHREADED**.
 
-Una cola multiproceso no serializa los elementos de trabajo. Cada vez que un subproceso del grupo de subprocesos está disponible, se envía el siguiente elemento de trabajo de la cola. El autor de la llamada debe asegurarse de que el trabajo se serializa correctamente. Para facilitar esto, Media Foundation una cola *de trabajo serie*. Una cola serie encapsula otra cola de trabajo, pero garantiza la ejecución completamente serializada. El siguiente elemento de la cola no se envía hasta que se completa el elemento anterior.
+Una cola multiproceso no serializa elementos de trabajo. Cada vez que un subproceso del grupo de subprocesos está disponible, se envía el siguiente elemento de trabajo de la cola. El autor de la llamada debe asegurarse de que el trabajo se serializa correctamente. Para facilitar esto, Media Foundation una cola *de trabajo serie*. Una cola serie encapsula otra cola de trabajo, pero garantiza la ejecución completamente serializada. El siguiente elemento de la cola no se envía hasta que se completa el elemento anterior.
 
 El código siguiente crea una cola de serializador a través de la cola multiproceso de la plataforma.
 
@@ -114,17 +114,17 @@ hr = MFAllocateSerialWorkQueue(MFASYNC_CALLBACK_QUEUE_MULTITHREADED, &workQueueI
 
 Más de una cola serie puede encapsular la misma cola multiproceso. A continuación, las colas serie comparten el mismo grupo de subprocesos y la ejecución serializada se aplica dentro de cada cola.
 
-Las colas de trabajo estándar que existían antes de Windows 8 ahora se implementan como colas de trabajo serie que encapsulan la cola multiproceso de la plataforma. Este cambio conserva la compatibilidad con versiones anteriores.
+Las colas de trabajo estándar que existían antes de Windows 8 ahora se implementan como colas de trabajo en serie que encapsulan la cola multiproceso de la plataforma. Este cambio conserva la compatibilidad con versiones anteriores.
 
 ### <a name="shared-task-work-queues"></a>Colas de trabajo de tareas compartidas
 
-Para trabajar correctamente con el programador del kernel, debe haber una cola de trabajo multiproceso para cada tarea de MMCSS que use. La Media Foundation asigna estos datos según sea necesario, hasta uno por tarea de MMCSS, por proceso. Para obtener la cola de trabajo compartida para una tarea de MMCSS determinada, llame a [**MFLockSharedWorkQueue**](/windows/desktop/api/mfapi/nf-mfapi-mflocksharedworkqueue) y especifique el nombre de la tarea. La función busca el nombre de la tarea en una tabla. Si aún no existe una cola de trabajo para esta tarea, la función asigna una nueva cola de trabajo de MT y la une inmediatamente a la tarea MMCSS. Si ya existe una cola de trabajo para esa tarea, la función devuelve el identificador de la cola de trabajo existente.
+Para trabajar correctamente con el programador del kernel, debe haber una cola de trabajo multiproceso para cada tarea de MMCSS que use. La Media Foundation asigna estos datos según sea necesario, hasta uno por tarea de MMCSS, por proceso. Para obtener la cola de trabajo compartida para una tarea MMCSS determinada, llame a [**MFLockSharedWorkQueue**](/windows/desktop/api/mfapi/nf-mfapi-mflocksharedworkqueue) y especifique el nombre de la tarea. La función busca el nombre de tarea en una tabla. Si aún no existe una cola de trabajo para esta tarea, la función asigna una nueva cola de trabajo de MT y la une inmediatamente a la tarea MMCSS. Si ya existe una cola de trabajo para esa tarea, la función devuelve el identificador de la cola de trabajo existente.
 
 ### <a name="wait-queue"></a>Cola de espera
 
-La *cola de espera* es una cola de trabajo de plataforma especial que espera a que se señalen los eventos. Si un componente necesita esperar a que se señale un evento, puede usar la cola de espera en lugar de crear un subproceso de trabajo para esperar en el evento.
+La *cola de espera* es una cola de trabajo de plataforma especial que espera a que se señalen los eventos. Si un componente necesita esperar a que se señale un evento, puede usar la cola de espera en lugar de crear un subproceso de trabajo para esperar al evento.
 
-Para usar la cola de espera, llame [**a MFPutWaitingWorkItem**](/windows/desktop/api/mfapi/nf-mfapi-mfputwaitingworkitem). Los parámetros incluyen el identificador de evento y [**un puntero DE TIPO IMFAsyncResult.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasyncresult) Cuando se señala el evento, la cola de espera invoca la devolución de llamada. Hay una única cola de espera de plataforma; las aplicaciones no pueden crear sus propias colas de espera.
+Para usar la cola de espera, llame [**a MFPutWaitingWorkItem**](/windows/desktop/api/mfapi/nf-mfapi-mfputwaitingworkitem). Los parámetros incluyen el identificador de evento y un [**puntero DE TIPO IMFAsyncResult.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasyncresult) Cuando se señala el evento, la cola de espera invoca la devolución de llamada. Hay una única cola de espera de plataforma; las aplicaciones no pueden crear sus propias colas de espera.
 
 ### <a name="enhancements-to-mmcss-support"></a>Mejoras en la compatibilidad con MMCSS
 

@@ -9,12 +9,12 @@ keywords:
 - Función táctil
 ms.topic: article
 ms.date: 02/06/2020
-ms.openlocfilehash: e2ed92fc950d601cde863e96bc33577963d4df018140bbfcd13fed009d7003b7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d0b094c27f72d551d9bb7823521a5391a45120bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119611735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581089"
 ---
 # <a name="touch-injection-functions"></a>Funciones de inserción táctil
 

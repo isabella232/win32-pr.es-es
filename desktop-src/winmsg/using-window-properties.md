@@ -4,12 +4,12 @@ ms.assetid: cdf196ec-300c-4c7b-8a4f-68088c4a2507
 title: Usar propiedades de ventana
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b59fcb4cb0346554ee2df5c1b2fc92df7675cd61d11799b891156b13f26fb213
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 736682eb34191a061aa9753ef9d5e8c7e366fbe3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119028273"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574345"
 ---
 # <a name="using-window-properties"></a>Usar propiedades de ventana
 
@@ -22,7 +22,7 @@ En esta sección se explica cómo realizar las siguientes tareas asociadas a las
 
 ## <a name="adding-a-window-property"></a>Agregar una propiedad de ventana
 
-En el ejemplo siguiente se carga un icono y, a continuación, un cursor y se asigna memoria para un búfer. A continuación, en el ejemplo se usa la función [**SetProp**](/windows/win32/api/winuser/nf-winuser-setpropa) para asignar el icono, el cursor y los identificadores de memoria resultantes como propiedades de ventana para la ventana identificada por la variable hwndSubclass definida por la aplicación. Las propiedades se identifican mediante las cadenas PROP \_ ICON, PROP \_ CURSOR y PROP \_ BUFFER.
+En el ejemplo siguiente se carga un icono y, a continuación, un cursor y se asigna memoria para un búfer. A continuación, en el ejemplo se usa la función [**SetProp**](/windows/win32/api/winuser/nf-winuser-setpropa) para asignar los identificadores de icono, cursor y memoria resultantes como propiedades de ventana para la ventana identificada por la variable hwndSubclass definida por la aplicación. Las propiedades se identifican mediante las cadenas PROP \_ ICON, PROP \_ CURSOR y PROP \_ BUFFER.
 
 
 ```
@@ -112,7 +112,7 @@ TextOut(hdc, 10, 10, tchBuffer, *nSize);
 
 ## <a name="listing-window-properties-for-a-given-window"></a>Enumerar propiedades de ventana para una ventana determinada
 
-En el ejemplo siguiente, la función [**EnumPropsEx**](/windows/win32/api/winuser/nf-winuser-enumpropsexa) enumera los identificadores de cadena de las propiedades de ventana de la ventana identificadas por la variable hwndSubclass definida por la aplicación. Esta función se basa en la función de devolución de llamada winPropProc definida por la aplicación para mostrar las cadenas en el área cliente de la ventana.
+En el ejemplo siguiente, la función [**EnumPropsEx**](/windows/win32/api/winuser/nf-winuser-enumpropsexa) enumera los identificadores de cadena de las propiedades de ventana de la ventana identificadas por la variable hwndSubclass definida por la aplicación. Esta función se basa en la función de devolución de llamada WinPropProc definida por la aplicación para mostrar las cadenas en el área cliente de la ventana.
 
 
 ```

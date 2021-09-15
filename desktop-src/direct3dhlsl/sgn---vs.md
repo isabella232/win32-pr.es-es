@@ -1,5 +1,5 @@
 ---
-title: sgn - vs
+title: sgn- vs
 description: Calcula el signo de la entrada.
 ms.assetid: b03530d1-c621-483e-bd94-31abafeb2e6e
 ms.topic: reference
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1a4994c807ff1df99016aad734edf71e5e1ce6efe59fd53a4fb9bb3ee91a4b25
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8573ff7e33a127d7c30af1fe512fbd3da298d0eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119671685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573677"
 ---
-# <a name="sgn---vs"></a>sgn - vs
+# <a name="sgn---vs"></a>sgn- vs
 
 Calcula el signo de la entrada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -31,14 +31,14 @@ Calcula el signo de la entrada.
 
  
 
-where
+, donde
 
 -   dst es el registro de destino.
 -   src0 es un registro de origen.
 -   src1 es un registro temporal que contiene resultados intermedios. Después de la ejecución, el contenido no está definido.
 -   src2 es un registro temporal que contiene resultados intermedios. Después de la ejecución, el contenido no está definido.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

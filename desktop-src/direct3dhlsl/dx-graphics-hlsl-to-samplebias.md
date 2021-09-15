@@ -10,11 +10,11 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.openlocfilehash: a279a92db9d38c8f0a8e80edbd87ec667d580d05
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122624531"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573797"
 ---
 # <a name="samplebias-directx-hlsl-texture-object"></a>SampleBias (objeto de textura HLSL de DirectX)
 

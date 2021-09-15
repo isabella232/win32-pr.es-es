@@ -4,12 +4,12 @@ ms.assetid: d3fd52ac-5b98-4015-ae0a-4ec2e5cea083
 title: MFPKEY_INTERLACEDCODINGENABLED propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a8688fdeb28ce55c483e46b75c011867916c88ea440fa34c13504327051362a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 243b5e041464cb0852b910858df0cbc2c34bca2d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117689978"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580301"
 ---
 # <a name="mfpkey_interlacedcodingenabled-property"></a>Propiedad \_ MFPKEY INTERLACEDCODINGENABLED
 
@@ -25,7 +25,7 @@ VT \_ BOOL
 
 ## <a name="default-value"></a>Valor predeterminado
 
-FALSE
+false
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,7 +35,7 @@ FALSE
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: bd86df70eed27fb192e65b23ea567beb1f4b42001dd3df5e5381045387dc1490
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4b873d40ed04270defe04fd59f0ce00a0f84040a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119874665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476434"
 ---
 # <a name="encrypteddatacontent-property"></a>EncryptedData.Content, propiedad
 
@@ -26,7 +26,7 @@ ms.locfileid: "119874665"
 
 La **propiedad Content** establece o recupera el contenido que se va a cifrar o descifrar. Esta es la propiedad predeterminada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB

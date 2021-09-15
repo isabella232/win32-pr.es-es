@@ -1,6 +1,6 @@
 ---
 title: MCIWNDM_GET_DEST mensaje (Vfw.h)
-description: El mensaje GET DEST de MCIWNDM recupera las coordenadas del rectángulo de destino que se usa para acercar o ampliar las imágenes de un archivo AVI durante \_ \_ la reproducción. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetDest.
+description: El mensaje GET DEST de MCIWNDM recupera las coordenadas del rectángulo de destino que se usa para acercar o ajustar las imágenes de un archivo AVI durante \_ \_ la reproducción. Puede enviar este mensaje explícitamente o mediante la macro MCIWndGetDest.
 ms.assetid: d4d8a3eb-aad4-4435-a23b-7a9c55fc194d
 keywords:
 - MCIWNDM_GET_DEST mensaje Windows Multimedia
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: ab5f16b434caef56e6c6aa97bfd767770dc05ee1
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124370634"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476800"
 ---
 # <a name="mciwndm_get_dest-message"></a>Mensaje GET \_ DEST de MCIWNDM \_
 
-El **mensaje GET \_ \_ DEST de MCIWNDM** recupera las coordenadas del rectángulo de destino que se usa para acercar o ampliar las imágenes de un archivo AVI durante la reproducción. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetDest.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetdest)
+El **mensaje GET \_ \_ DEST de MCIWNDM** recupera las coordenadas del rectángulo de destino usado para acercar o ajustar las imágenes de un archivo AVI durante la reproducción. Puede enviar este mensaje explícitamente o mediante la macro [**MCIWndGetDest.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetdest)
 
 
 ```C++
@@ -47,7 +47,7 @@ Puntero a una [**estructura RECT**](/previous-versions//dd162897(v=vs.85)) para 
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve cero si se realiza correctamente o un error en caso contrario.
+Devuelve cero si se realiza correctamente o se produce un error en caso contrario.
 
 ## <a name="requirements"></a>Requisitos
 

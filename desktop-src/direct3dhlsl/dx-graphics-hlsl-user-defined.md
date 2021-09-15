@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ee73cd5afcda15bcc821d7fea5b648924829d483a33b9c67c140eed0b100e861
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2107e3eb2b2dc2362776a1a9ecd50830519c6627
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119789315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573772"
 ---
 # <a name="user-defined-type"></a>Tipo definido por el usuario
 
@@ -47,7 +47,7 @@ Use la sintaxis siguiente para declarar un tipo definido por el usuario.
 
 Además de los tipos de datos intrínsecos integrados, HLSL admite tipos personalizados o definidos por el usuario que siguen esta sintaxis:
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los tipos definidos por el usuario no distinguen mayúsculas de minúsculas. Para mayor comodidad, los siguientes tipos se definen automáticamente en el ámbito super global.
 
@@ -70,9 +70,9 @@ typedef matrix <double, #, #> double#x#;
 
 
 
-El signo de perd ( \# ) representa un dígito entero entre 1 y 4.
+El signo de pera ( \# ) representa un dígito entero entre 1 y 4.
 
-Para la compatibilidad con efectos de DirectX 8, los siguientes tipos se definen automáticamente en el ámbito super global:
+Para la compatibilidad con los efectos de DirectX 8, los siguientes tipos se definen automáticamente en el ámbito super global:
 
 
 ```
@@ -92,7 +92,7 @@ typedef vertexshader VERTEXSHADER;
 
 <dl> <dt>
 
-[Tipos de datos (DirectX HLSL)](dx-graphics-hlsl-data-types.md)
+[Tipos de datos (HLSL de DirectX)](dx-graphics-hlsl-data-types.md)
 </dt> </dl>
 
  

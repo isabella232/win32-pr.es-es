@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 8187b90ee9cc423051b8b57d942fa026cca6f8c3d3bbfabd7721ed204484cb71
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64509977a85bc33cb13dac4e6ba2817502c06cc9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118234917"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127579745"
 ---
-# <a name="driver_info_3-structure"></a>Estructura \_ DRIVER INFO \_ 3
+# <a name="driver_info_3-structure"></a>Driver \_ INFO \_ 3 (estructura)
 
 La **estructura DRIVER INFO \_ \_ 3** contiene información del controlador de impresora.
 
@@ -46,7 +46,7 @@ typedef struct _DRIVER_INFO_3 {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -81,7 +81,7 @@ Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una
 **pDataFile**
 </dt> <dd>
 
-Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para el archivo que contiene datos de controlador (por ejemplo, "C: \\ DRIVERS \\ Qms810.ppd").
+Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una ruta de acceso completa y un nombre de archivo para el archivo que contiene los datos del controlador (por ejemplo, "C: \\ DRIVERS \\ Qms810.ppd").
 
 </dd> <dt>
 
@@ -102,14 +102,14 @@ Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una
 **pDependentFiles**
 </dt> <dd>
 
-Puntero a un búfer MultiSZ que contiene una secuencia de cadenas terminadas en NULL. Cada cadena terminada en NULL del búfer contiene el nombre de un archivo del que depende el controlador. La secuencia de cadenas finaliza con una cadena vacía de longitud cero. Si **pDependentFiles** no es **NULL** y no contiene ningún nombre de archivo, apuntará a un búfer que contiene dos cadenas vacías.
+Puntero a un búfer MultiSZ que contiene una secuencia de cadenas terminadas en NULL. Cada cadena terminada en NULL en el búfer contiene el nombre de un archivo del que depende el controlador. La secuencia de cadenas finaliza con una cadena vacía de longitud cero. Si **pDependentFiles** no es **NULL** y no contiene ningún nombre de archivo, apuntará a un búfer que contiene dos cadenas vacías.
 
 </dd> <dt>
 
 **pMonitorName**
 </dt> <dd>
 
-Puntero a una cadena terminada en NULL que especifica un monitor de lenguaje (por ejemplo, "monitor PJL"). Este miembro puede ser **NULL** y debe especificarse solo para impresoras que puedan comunicarse bidireccionalmente.
+Puntero a una cadena terminada en NULL que especifica un monitor de lenguaje (por ejemplo, "monitor de PJL"). Este miembro puede ser **NULL** y debe especificarse solo para impresoras que puedan comunicarse bidireccionalmente.
 
 </dd> <dt>
 
@@ -124,7 +124,7 @@ Puntero a una cadena terminada en NULL que especifica el tipo de datos predeterm
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -140,7 +140,7 @@ Puntero a una cadena terminada en NULL que especifica el tipo de datos predeterm
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del colador de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de LA API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**AddPrinterDriver**](addprinterdriver.md)

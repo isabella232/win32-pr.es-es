@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101046
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 7fcdc573432858a85a7fef7ccadd448fd7ddbb0cfd63a22cce60ad8add233f94
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5d5e2f47bfff1a5c036896d86ca2fc0ae19402b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119623355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127581197"
 ---
 # <a name="esentafterinitializationexception-methods"></a>Métodos de EsentAfterInitializationException 
 

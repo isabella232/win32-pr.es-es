@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 521c63f99c35e68f18d9a6c0a81118f647ff131effb0f6528e2ef3882c43e234
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6ae524205c900c63438a50094dcd551a4903632b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119939524"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574708"
 ---
 # <a name="float3-structure"></a>float3 (estructura)
 
@@ -32,23 +32,23 @@ Este tipo solo está disponible en C++. Su equivalente de .NET [es System.Numeri
 | Nombre | Descripción |
 |-|-|
 | `float3()` | Crea un elemento float3 sin inicializar. |
-| `float3(float x, float y, float z)` | Crea un objeto float3 con los valores especificados. |
-| `float3(float2 value, float z)` | Crea un float3 con x e y copiados de float2 más el valor z especificado. |
-| `explicit float3(float value)` | Crea un float3 con todos los componentes establecidos en el valor especificado. |
-| `float3(Microsoft::Graphics::Canvas::Numerics::Vector3 const& value)` | Convierte un **objeto Microsoft.Graphics.Canvas.Numerics.Vector3** en float3. |
+| `float3(float x, float y, float z)` | Crea un elemento float3 con los valores especificados. |
+| `float3(float2 value, float z)` | Crea un elemento float3 con x e y copiados de float2 más el valor z especificado. |
+| `explicit float3(float value)` | Crea un elemento float3 con todos los componentes establecidos en el valor especificado. |
+| `float3(Microsoft::Graphics::Canvas::Numerics::Vector3 const& value)` | Convierte **Microsoft.Graphics.Canvas.Numerics.Vector3** en float3. |
 
-## <a name="functions"></a>Funciones
+## <a name="functions"></a>Functions
 
 | Nombre | Descripción |
 |-|-|
 | `float length(float3 const& value)` | Calcula la longitud, o distancia euclidana, del vector. |
 | `float length_squared(float3 const& value)` | Calcula la longitud, o distancia euclidana, del vector al cuadrado. |
-| `float distance(float3 const& value1, float3 const& value2)` | Calcula la distancia euclideña entre dos vectores. |
+| `float distance(float3 const& value1, float3 const& value2)` | Calcula la distancia euclidana entre dos vectores. |
 | `float distance_squared(float3 const& value1, float3 const& value2)` | Calcula la distancia euclidana entre dos vectores al cuadrado. |
-| `float dot(float3 const& vector1, float3 const& vector2)` | Calcula el producto de punto de dos vectores. |
+| `float dot(float3 const& vector1, float3 const& vector2)` | Calcula el producto de puntos de dos vectores. |
 | `float3 normalize(float3 const& value)` | Crea un vector de unidad a partir del vector especificado. |
 | `float3 cross(float3 const& vector1, float3 const& vector2)` | Calcula el producto vectorial de dos vectores. |
-| `float3 reflect(float3 const& vector, float3 const& normal)` | Determina el vector de reflexión del vector especificado y normal. |
+| `float3 reflect(float3 const& vector, float3 const& normal)` | Determina el vector de reflejo del vector especificado y normal. |
 | `float3 min(float3 const& value1, float3 const& value2)` | Devuelve un vector que contiene el valor más bajo de cada par de componentes correspondiente. |
 | `float3 max(float3 const& value1, float3 const& value2)` | Devuelve un vector que contiene el valor más alto de cada par de componentes correspondiente. |
 | `float3 clamp(float3 const& value1, float3 const& min, float3 const& max)` | Restringe un valor para que esté dentro de un intervalo especificado. |
@@ -74,15 +74,15 @@ Este tipo solo está disponible en C++. Su equivalente de .NET [es System.Numeri
 | `float3 operator+ (float3 const& value1, float3 const& value2)` | Agrega dos vectores. |
 | `float3 operator- (float3 const& value1, float3 const& value2)` | Resta un vector de un vector. |
 | `float3 operator* (float3 const& value1, float3 const& value2)` | Multiplica los componentes de dos vectores entre sí. |
-| `float3 operator* (float3 const& value1, float value2)` | Multiplica un vector por un escalar. |
-| `float3 operator* (float value1, float3 const& value2)` | Multiplica un vector por un escalar. |
+| `float3 operator* (float3 const& value1, float value2)` | Multiplica un vector por un valor escalar. |
+| `float3 operator* (float value1, float3 const& value2)` | Multiplica un vector por un valor escalar. |
 | `float3 operator/ (float3 const& value1, float3 const& value2)` | Divide los componentes de un vector entre los componentes de otro vector. |
 | `float3 operator/ (float3 const& value1, float value2)` | Divide un vector por un valor escalar. |
 | `float3 operator- (float3 const& value)` | Devuelve un vector que apunta en la dirección opuesta. |
 | `float3& operator+= (float3& value1, float3 const& value2)` | In-place agrega dos vectores. |
 | `float3& operator-= (float3& value1, float3 const& value2)` | In-place resta un vector de un vector. |
 | `float3& operator*= (float3& value1, float3 const& value2)` | In-place multiplica los componentes de dos vectores entre sí. |
-| `float3& operator*= (float3& value1, float value2)` | In-place multiplica un vector por un escalar. |
+| `float3& operator*= (float3& value1, float value2)` | In-place multiplica un vector por un valor escalar. |
 | `float3& operator/= (float3& value1, float3 const& value2)` | In-place divide los componentes de un vector entre los componentes de otro vector. |
 | `float3& operator/= (float3& value1, float value2)` | In-place divide un vector por un valor escalar. |
 | `bool operator== (float3 const& value1, float3 const& value2)` | Determina si dos instancias de float3 son iguales. |
@@ -102,8 +102,8 @@ Este tipo solo está disponible en C++. Su equivalente de .NET [es System.Numeri
 | Requisito | Value |
 |-|-|
 | Espacio de nombres | Windows::Foundation::Numerics |
-| Header | <dl> <dt>Windowsnumerics.h</dt> </dl> |
+| Encabezado | <dl> <dt>Windowsnumerics.h</dt> </dl> |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
-[API de windowsnumerics.h](windowsnumerics-h-apis-portal.md)
+[API windowsnumerics.h](windowsnumerics-h-apis-portal.md)

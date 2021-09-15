@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - dxva.h
-ms.openlocfilehash: 6a355c27177a546a2e91e769f72d9f4b9e216b005f711d42b5b7af39b4b78361
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3ea05af8f27399af38419e177d7bd40b029cd63b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119269245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572856"
 ---
 # <a name="idirect3dvideodevice9getdxvaguids-method"></a>IDirect3DVideoDevice9::GetDXVAGuids (método)
 
@@ -43,7 +43,7 @@ HRESULT GetDXVAGuids(
 *pNumGuids* 
 </dt> <dd>
 
-En la entrada, especifica el número de elementos de la *matriz pGuids.* Si *pGuids* es **NULL,** el valor `*pNumGuids` de debe ser cero.
+En la entrada, especifica el número de elementos de la *matriz pGuids.* Si *pGuids* **es NULL,** el valor de `*pNumGuids` debe ser cero.
 
 En la salida, *si pGuids* es **NULL,** *pNumGuids* recibe el número de perfiles DXVA en modo restringido. De lo *contrario, pNumGuids* recibe el número real de GUID que se copian en la *matriz pGuids.*
 
@@ -72,11 +72,11 @@ Llame a este método dos veces. En la primera llamada, establezca *pGuids* en **
 |-------------------------------------|-----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                    |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                              |
-| Header<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Dxva.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

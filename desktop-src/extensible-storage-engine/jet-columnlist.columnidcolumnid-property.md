@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bf0ed061c5d652f5b51a3e76b2c6eab442821a562bc502798734ea9ba26a953a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cb7a5cfc72d2950af543531b7bfb106c679d5bd1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118075740"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127580069"
 ---
 # <a name="jet_columnlistcolumnidcolumnid-property"></a>JET_COLUMNLIST.columnidcolumnid, propiedad
 
@@ -40,7 +40,7 @@ Obtiene el columnid de la columna de la tabla temporal que almacena el identific
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

@@ -4,7 +4,7 @@ description: Describe directrices y convenciones para implementar IExpandCollaps
 ms.assetid: 0ffc26c3-8696-44f9-b463-902a69e06d21
 keywords:
 - Automatización de la interfaz de usuario, implementación del patrón de control ExpandCollapse
-- Automatización de la interfaz de usuario,patrón de control ExpandCollapse
+- Automatización de la interfaz de usuario,Patrón de control ExpandCollapse
 - Automatización de la interfaz de usuario,IExpandCollapseProvider
 - IExpandCollapseProvider
 - implementación de Automatización de la interfaz de usuario de control ExpandCollapse
@@ -15,18 +15,18 @@ keywords:
 - interfaces,IExpandCollapseProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b7fa1461110a7fcdee83b8b3c20c15653e7bd5740187b89337620f5410b2bf7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 45bd28ddcc201dcff0a4811a1eb8e04670f93091
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119998045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567252"
 ---
 # <a name="expandcollapse-control-pattern"></a>Patrón de control ExpandCollapse
 
 Describe directrices y convenciones para implementar [**IExpandCollapseProvider,**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iexpandcollapseprovider)incluida información sobre propiedades, métodos y eventos. El patrón de control **ExpandCollapse** se usa para admitir controles que se expanden visualmente para mostrar más contenido y contraer para ocultar el contenido.
 
-Para obtener ejemplos de controles que implementan este patrón de control, vea [Tipos de control y Sus patrones de control admitidos.](uiauto-controlpatternmapping.md)
+Para obtener ejemplos de controles que implementan este patrón de control, vea [Tipos de control y sus patrones de control admitidos.](uiauto-controlpatternmapping.md)
 
 En este tema se incluyen las siguientes secciones.
 
@@ -44,13 +44,13 @@ Al implementar el patrón de control **ExpandCollapse,** tenga en cuenta las sig
 
      
 
--   Cuando [**IExpandCollapseProvider::ExpandCollapseState**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate) de un control se establece en **ExpandCollapseState \_ LeafNode**, cualquier funcionalidad **de ExpandCollapse** está inactiva actualmente para el control y la única información que se puede obtener con este patrón de control **es ExpandCollapseState.** Si posteriormente se agregan objetos secundarios, **la funcionalidad ExpandCollapseState** cambia y **expandCollapse** se activa.
--   [**ExpandCollapseState**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate) solo hace referencia a la visibilidad de objetos secundarios inmediatos; no hace referencia a la visibilidad de todos los objetos descendientes.
+-   Cuando [**el valor de IExpandCollapseProvider::ExpandCollapseState**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate) de un control se establece en **ExpandCollapseState \_ LeafNode,** cualquier funcionalidad de **ExpandCollapse** está inactiva actualmente para el control y la única información que se puede obtener con este patrón de control **es ExpandCollapseState**. Si posteriormente se agregan objetos secundarios, **la funcionalidad ExpandCollapseState** cambia y se activa la funcionalidad **ExpandCollapse.**
+-   [**ExpandCollapseState**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate) solo hace referencia a la visibilidad de los objetos secundarios inmediatos; no hace referencia a la visibilidad de todos los objetos descendientes.
 -   [**La funcionalidad IExpandCollapseProvider::Expand**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand) y [**Collapse**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-collapse) es específica del control. A continuación se muestran ejemplos de este comportamiento.
-    -   El Office Personal Menu puede ser un elemento de menú de tres estados ("Expandido", "Contraído" y "PartiallyExpanded") donde el control especifica el estado que se debe adoptar cuando se llama a [**Expandir**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand) o Contraer. [](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-collapse)
-    -   La llamada a [**Expandir**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand) en un elemento de árbol puede mostrar todos los descendientes o solo los elementos secundarios inmediatos.
-    -   Si al llamar a [**Expand**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand) o [**Collapse**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-collapse) en un control se mantiene el estado de sus descendientes, se debe enviar un evento de cambio de visibilidad, no un evento de cambio de estado. Si el control primario no mantiene el estado de sus descendientes cuando se contrae, el control puede destruir todos los descendientes que ya no están visibles y generar un evento destructor. o puede cambiar [**ExpandCollapseState**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate) para cada descendiente y generar un evento de cambio de visibilidad.
--   Para garantizar la navegación, es conveniente que un objeto esté en el árbol de Microsoft Automatización de la interfaz de usuario (con el estado de visibilidad adecuado) independientemente de sus elementos primarios [**ExpandCollapseState**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate). Si los descendientes se generan a petición, solo pueden aparecer en el árbol de Automatización de la interfaz de usuario después de mostrarse por primera vez o solo mientras estén visibles.
+    -   El Office Personal Menu puede ser un elemento de menú de tres estados ("Expanded", "Collapsed" y "PartiallyExpanded") donde el control especifica el estado que se debe adoptar cuando se llama a [**Expandir**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand) o Contraer. [](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-collapse)
+    -   Llamar [**a Expandir**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand) en un elemento de árbol puede mostrar todos los descendientes o solo los elementos secundarios inmediatos.
+    -   Si al llamar a [**Expandir**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-expand) o [**Contraer**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-collapse) en un control se mantiene el estado de sus descendientes, se debe enviar un evento de cambio de visibilidad, no un evento de cambio de estado. Si el control primario no mantiene el estado de sus descendientes cuando se contrae, el control puede destruir todos los descendientes que ya no están visibles y generar un evento destruido. o puede cambiar [**ExpandCollapseState**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate) para cada descendiente y generar un evento de cambio de visibilidad.
+-   Para garantizar la navegación, es conveniente que un objeto esté en el árbol Automatización de la interfaz de usuario de Microsoft (con el estado de visibilidad adecuado) independientemente de sus elementos primarios [**ExpandCollapseState.**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iexpandcollapseprovider-get_expandcollapsestate) Si los descendientes se generan a petición, solo pueden aparecer en el árbol de Automatización de la interfaz de usuario después de mostrarse por primera vez o solo mientras estén visibles.
 
 ## <a name="required-members-for-iexpandcollapseprovider"></a>Miembros necesarios para **IExpandCollapseProvider**
 

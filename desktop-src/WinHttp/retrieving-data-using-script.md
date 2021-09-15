@@ -1,5 +1,5 @@
 ---
-description: En este tema se incluye un ejemplo de cómo escribir un script que obtiene datos a través de Los servicios HTTP de Microsoft Windows (WinHTTP) de forma sincrónica o asincrónica.
+description: En este tema se incluye un ejemplo de cómo escribir un script que obtiene datos a través de Servicios HTTP de Microsoft Windows (WinHTTP) de forma sincrónica o asincrónica.
 ms.assetid: 84b847f8-4d9e-4fea-9e87-df4c65b54a02
 title: Recuperación de datos mediante script
 ms.topic: article
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9e018aa680808feddc021c7c03937d085b0d0f787c3213720cbb5e94a46a85c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 734516cf75f92cc43ab4cb15f22bd97aa803ec33
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133068"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476130"
 ---
 # <a name="retrieving-data-using-script"></a>Recuperación de datos mediante script
 
-En este tema se incluye un ejemplo de cómo escribir un script que obtiene datos a través de Los servicios HTTP de Microsoft Windows (WinHTTP) de forma sincrónica o asincrónica. Los conceptos que se muestran en este ejemplo proporcionan la base para escribir aplicaciones de cliente o de servidor de nivel intermedio que requieren acceso a los datos mediante el protocolo HTTP.
+En este tema se incluye un ejemplo de cómo escribir un script que obtiene datos a través de Servicios HTTP de Microsoft Windows (WinHTTP) de forma sincrónica o asincrónica. Los conceptos que se muestran en este ejemplo proporcionan la base para escribir aplicaciones de cliente o de servidor de nivel intermedio que requieren acceso a los datos mediante el protocolo HTTP.
 
 -   [Requisitos previos y requisitos](#prerequisites-and-requirements)
 -   [Recuperar datos de forma sincrónica](#retrieving-data-synchronously)
@@ -104,7 +104,7 @@ La siguiente línea del script llama al [**método**](iwinhttprequest-open.md) O
 
 
 
-Tres parámetros especifican qué [*verbo HTTP usar,*](glossary.md) el nombre del recurso y si se va a usar WinHTTP de forma sincrónica o asincrónica. En este ejemplo, el método usa el *verbo HTTP*"GET" para obtener datos de https://www.microsoft.com . Si se **especifica FALSE** para el último parámetro, se determina que la transacción se produce sincrónicamente. El [**método Open**](iwinhttprequest-open.md) no establece una conexión con el recurso, ya que el nombre podría implicar. En su lugar, inicializa las estructuras de datos internas que mantienen información sobre la sesión, la conexión y la solicitud.
+Tres parámetros especifican qué [*verbo HTTP usar,*](glossary.md) el nombre del recurso y si se debe usar WinHTTP de forma sincrónica o asincrónica. En este ejemplo, el método usa el *verbo HTTP*"GET" para obtener datos de https://www.microsoft.com . Si se **especifica FALSE** para el último parámetro, se determina que la transacción se produce sincrónicamente. El [**método Open**](iwinhttprequest-open.md) no establece una conexión con el recurso, ya que el nombre podría implicar. En su lugar, inicializa las estructuras de datos internas que mantienen información sobre la sesión, la conexión y la solicitud.
 
 El [**método Send**](iwinhttprequest-send.md) ensambla los encabezados de solicitud y envía la solicitud. Cuando se llama en modo sincrónico, [**el método Send**](iwinhttprequest-send.md) también espera una respuesta antes de permitir que la aplicación continúe.
 

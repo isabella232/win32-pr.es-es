@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: a849967e798db0ae0364e843221bfe2bf0f3305f773a784b6330a21bb84e5427
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6c7a029bd73069795b83b0b2a330835782192683
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119942935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572860"
 ---
 # <a name="d3dauthenticatedchannel_configure_output-structure"></a>D3DAUTHENTICATEDCHANNEL \_ CONFIGURE \_ OUTPUT structure
 
@@ -39,14 +39,14 @@ typedef struct _D3DAUTHENTICATEDCHANNEL_CONFIGURE_OUTPUT {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **Omac**
 </dt> <dd>
 
-Estructura [**\_ OMAC D3D**](d3d-omac.md) que contiene un código de autenticación de mensajes (MAC) de los datos. El controlador usa mac CBC (OMAC) basado en AES basado en una clave para calcular este valor para el bloque de datos que aparece después de este miembro de estructura.
+Estructura [**\_ OMAC D3D**](d3d-omac.md) que contiene un código de autenticación de mensajes (MAC) de los datos. El controlador usa mac CBC de una clave (OMAC) basado en AES para calcular este valor para el bloque de datos que aparece después de este miembro de estructura.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Código de resultado del comando.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para los **miembros ConfigureType,** **hChannel** y **SequenceNumber,** el controlador usa los mismos valores que la aplicación proporcionó en la estructura [**D3DAUTHENTICATEDCHANNEL \_ CONFIGURE \_ INPUT.**](d3dauthenticatedchannel-configure-input.md) La aplicación debe comprobar que estos valores coinciden.
 
@@ -88,13 +88,13 @@ Para los **miembros ConfigureType,** **hChannel** y **SequenceNumber,** el contr
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
-| Header<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

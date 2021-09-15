@@ -14,11 +14,11 @@ api_location:
 - Wfext.h
 ms.assetid: 456b053e-e83d-43af-9691-57e1d4fd3f8f
 ms.openlocfilehash: b7549b521c241429f1c5c7edb7f83eadf25f5d37
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842426"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127574501"
 ---
 # <a name="fm_undelete_proc-function-pointer"></a>Puntero \_ de función FM UNDELETE \_ PROC
 
@@ -82,7 +82,7 @@ Devuelve uno de los valores siguientes.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
 | Encabezado<br/>                   | <dl> <dt>Wfext.h</dt> </dl> |
 

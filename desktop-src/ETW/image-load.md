@@ -24,12 +24,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 44b957fbc1f8ffad78ec73d03a81fa45a8733a53e0e1d78fb31e48b9129a9e93
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 647879b972c7cff2c086f656f76fa8decedb49a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118394655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476894"
 ---
 # <a name="image_load-class"></a>Image \_ Load (clase)
 
@@ -58,7 +58,7 @@ class Image_Load : Image
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase Image \_ Load** tiene estos tipos de miembros:
 
@@ -264,7 +264,7 @@ Hora y fecha en que se cargó o descargó la imagen.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los eventos DCStart y DCEnd enumeran todas las imágenes cargadas al principio y al final del seguimiento, respectivamente.
 
@@ -272,14 +272,14 @@ Los eventos DCStart y DCEnd enumeran todas las imágenes cargadas al principio y
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
