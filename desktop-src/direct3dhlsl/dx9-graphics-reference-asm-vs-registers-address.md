@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 977816f68bacc8cfa6498540877b0c6cc34739ea038159b76e672be172b5d027
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e58f42848034d12063611e14b82cb2f2d132cb43
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117908158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359336"
 ---
 # <a name="address-register"></a>Registro de direcciones
 

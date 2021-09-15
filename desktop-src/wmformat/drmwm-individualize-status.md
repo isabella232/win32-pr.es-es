@@ -3,7 +3,7 @@ title: WM_INDIVIDUALIZE_STATUS estructura (Wmdrmsdk.h)
 description: La estructura WM \_ INDIVIDUALIZE \_ STATUS contiene información sobre un proceso de individualización pendiente.
 ms.assetid: af7e8758-489b-461f-b241-d7e40c8d61da
 keywords:
-- WM_INDIVIDUALIZE_STATUS structure windows Media Format
+- WM_INDIVIDUALIZE_STATUS estructura windows Formato multimedia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c139631fe737e07d011e43920ab63c7394f03c3319abb2f7936153ae06c596ac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9ef7617fe6dcddf3397ab1a123132e843f0b1461
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119708305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360592"
 ---
 # <a name="wm_individualize_status-structure-wmdrmsdkh"></a>WM_INDIVIDUALIZE_STATUS estructura (Wmdrmsdk.h)
 
@@ -42,11 +42,11 @@ typedef struct _WMIndividualizeStatus {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
-**h**
+**Hr**
 </dt> <dd>
 
 **Código de retorno HRESULT.**
@@ -91,11 +91,11 @@ Número de bytes descargados.
 **dwHTTPReadTotal**
 </dt> <dd>
 
-Número total de bytes que se descargarán. Puede usar este valor y **dwHTTPReadProgress** para mostrar una interfaz de usuario que indique cuánto se ha completado la descarga y cuánto queda por hacer.
+Número total de bytes que se descargarán. Puede usar este valor y **dwHTTPReadProgress** para mostrar una interfaz de usuario que indique cuánto de la descarga se ha completado y cuánto queda por hacer.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta estructura se recibe cuando se llama al [**método IWMDRMIndividualizationStatus::GetStatus.**](iwmdrmindividualizationstatus-getstatus.md) Contiene el estado del proceso de individualización pendiente en el momento de la llamada.
 
@@ -109,7 +109,7 @@ Esta estructura se recibe cuando se llama al [**método IWMDRMIndividualizationS
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

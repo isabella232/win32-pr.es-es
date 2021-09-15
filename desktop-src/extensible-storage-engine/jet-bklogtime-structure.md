@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 0b54ba5bb6b4f5ed3f08b5d4cc950f77d199c525
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988248"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360123"
 ---
 # <a name="jet_bklogtime-structure"></a>JET_BKLOGTIME estructura
 
@@ -31,7 +31,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 La **JET_BKLOGTIME** contiene los elementos de fecha y hora de un evento. Es una extensión de [JET_LOGTIME](./jet-logtime-structure.md).
 
-**Windows Vista: JET_BKLOGTIME** se introdujo en Windows Vista.
+**Windows Vista: JET_BKLOGTIME** se presenta en Windows Vista.
 
 ```cpp
     typedef struct {
@@ -58,31 +58,31 @@ La **JET_BKLOGTIME** contiene los elementos de fecha y hora de un evento. Es una
     } JET_BKLOGTIME;
 ```
 
-### <a name="members"></a>Miembros
+### <a name="members"></a>Members
 
 **bSeconds**
 
-Hora del evento en segundos. Puede ser de 0 (cero) a 60. Se usa 0 (cero) cuando la **JET_BKLOGTIME** estructura es "null".
+Hora del evento en segundos. Puede ser de 0 (cero) a 60. 0 (cero) se usa cuando la **JET_BKLOGTIME** es "null".
 
 **bMinutes**
 
-Hora del evento en minutos. Puede ser de 0 (cero) a 60. Se usa 0 (cero) cuando la **JET_BKLOGTIME** estructura es "null".
+Hora del evento en minutos. Puede ser de 0 (cero) a 60. 0 (cero) se usa cuando la **JET_BKLOGTIME** es "null".
 
 **bHours**
 
-Hora del evento en horas. Puede ser de 0 (cero) a 24. Se usa 0 (cero) cuando la **JET_BKLOGTIME** estructura es "null".
+Hora del evento en horas. Puede ser de 0 (cero) a 24. 0 (cero) se usa cuando la **JET_BKLOGTIME** es "null".
 
 **Cumpleaños**
 
-Día del mes del evento. Puede ser de 0 (cero) a 31. Se usa 0 (cero) cuando la **JET_BKLOGTIME** estructura es "null".
+Día del mes del evento. Puede ser de 0 (cero) a 31. 0 (cero) se usa cuando la **JET_BKLOGTIME** es "null".
 
 **bMonth**
 
-Mes del año del evento. Puede ser de 0 (cero) a 12. Se usa 0 (cero) cuando la **JET_BKLOGTIME** estructura es "null".
+Mes del año del evento. Puede ser de 0 (cero) a 12. 0 (cero) se usa cuando la **JET_BKLOGTIME** es "null".
 
 **bYear**
 
-Año (desplazamiento por 1900) del evento. Para lograr el año real, agregue 1900 a este valor. Se usa 0 (cero) cuando la **JET_BKLOGTIME** estructura es "null".
+Año (desplazamiento por 1900) del evento. Para lograr el año real, agregue 1900 a este valor. 0 (cero) se usa cuando la **JET_BKLOGTIME** es "null".
 
 **bFiller1**
 

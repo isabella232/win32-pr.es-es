@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 25f8b04aa8c581d8d7e40ab1d52162d305c97d0d8ce3f7d626cb3d29e7262666
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 65f3f9836b52693e3f74bac5cfd94553e02d7bf9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119050093"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359414"
 ---
 # <a name="swbemdatetime-object"></a>Objeto SWbemDateTime
 
@@ -30,7 +30,7 @@ Un **objeto SWbemDateTime** se puede inicializar desde y dar formato a los valor
 
 **SWbemDateTime** es el único objeto de scripting Windows Management Instrumentation (WMI) que se marca como seguro para la inicialización y los scripts que se ejecutan en páginas HTML en Internet Explorer.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto SWbemDateTime** tiene estos tipos de miembros:
 
@@ -62,32 +62,32 @@ El **objeto SWbemDateTime** tiene estas propiedades.
 
 | Propiedad                                                                        | Tipo de acceso           | Descripción                                                                                                                     |
 |:--------------------------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------------------------------------------|
-| [**Día**](swbemdatetime-day.md)<br/>                                     | Lectura/escritura<br/> | Componente de día de un valor [datetime de](datetime.md) CIM.<br/>                                                           |
-| [**DaySpecified**](swbemdatetime-dayspecified.md)<br/>                   | Lectura/escritura<br/> | Indica si el día se especifica o se deja como un carácter comodín.<br/>                                                        |
-| [**Hours**](swbemdatetime-hours.md)<br/>                                 | Lectura/escritura<br/> | Las horas del componente de día de un valor [datetime de](datetime.md) CIM.<br/>                                              |
-| [**HoursSpecified**](swbemdatetime-hoursspecified.md)<br/>               | Lectura/escritura<br/> | Indica si la hora se especifica o se deja como un carácter comodín.<br/>                                                       |
-| [**IsInterval**](swbemdatetime-isinterval.md)<br/>                       | Lectura/escritura<br/> | Indica que al menos un componente de la [fecha y](datetime.md) hora CIM representa un intervalo en lugar de una fecha.<br/> |
-| [**Microsegundos**](swbemdatetime-microseconds.md)<br/>                   | Lectura/escritura<br/> | Componente de microsegundos de un valor [de fecha y](datetime.md) hora CIM.<br/>                                                  |
-| [**MicrosegundosEspecificado**](swbemdatetime-microsecondsspecified.md)<br/> | Lectura/escritura<br/> | Indica si el componente de microsegundos se especifica o se deja como un carácter comodín.<br/>                                     |
-| [**Minutos**](swbemdatetime-minutes.md)<br/>                             | Lectura/escritura<br/> | Componente minutes de un valor [de fecha y](datetime.md) hora CIM.<br/>                                                       |
-| [**MinutesSpecified**](swbemdatetime-minutesspecified.md)<br/>           | Lectura/escritura<br/> | Indica si el componente minutes se especifica o se deja como un carácter comodín.<br/>                                          |
-| [**Mes**](swbemdatetime-month.md)<br/>                                 | Lectura/escritura<br/> | Componente de mes de un valor [datetime de](datetime.md) CIM.<br/>                                                         |
-| [**MonthSpecified**](swbemdatetime-monthspecified.md)<br/>               | Lectura/escritura<br/> | Indica si el mes se especifica o se deja como un carácter comodín.<br/>                                                      |
-| [**Segundos**](swbemdatetime-seconds.md)<br/>                             | Lectura/escritura<br/> | Componente de segundos de un valor [de fecha y](datetime.md) hora CIM.<br/>                                                       |
-| [**SecondsSpecified**](swbemdatetime-secondsspecified.md)<br/>           | Lectura/escritura<br/> | Indica si el componente de segundos se especifica o se deja como un carácter comodín.<br/>                                          |
-| [**Utc**](swbemdatetime-utc.md)<br/>                                     | Lectura/escritura<br/> | Componente UTC de un valor [de fecha y](datetime.md) hora CIM.<br/>                                                           |
-| [**UTCEspecificado**](swbemdatetime-utcspecified.md)<br/>                   | Lectura/escritura<br/> | Indica si el componente UTC se especifica o se deja como un carácter comodín.<br/>                                              |
-| [**Valor**](swbemdatetime-value.md)<br/>                                 | Lectura/escritura<br/> | Valor de [fecha y](datetime.md) hora CIM completo.<br/>                                                                         |
-| [**año**](swbemdatetime-year.md)<br/>                                   | Lectura/escritura<br/> | Componente year de un valor [datetime de](datetime.md) CIM.<br/>                                                          |
-| [**YearSpecified**](swbemdatetime-yearspecified.md)<br/>                 | Lectura/escritura<br/> | Indica si se especifica o no el año o se deja como un carácter comodín.<br/>                                                |
+| [**Día**](swbemdatetime-day.md)<br/>                                     | Lectura y escritura<br/> | Componente de día de un valor [datetime de](datetime.md) CIM.<br/>                                                           |
+| [**DaySpecified**](swbemdatetime-dayspecified.md)<br/>                   | Lectura y escritura<br/> | Indica si el día se especifica o se deja como un carácter comodín.<br/>                                                        |
+| [**Hours**](swbemdatetime-hours.md)<br/>                                 | Lectura y escritura<br/> | Las horas del componente de día de un valor [datetime de](datetime.md) CIM.<br/>                                              |
+| [**HoursSpecified**](swbemdatetime-hoursspecified.md)<br/>               | Lectura y escritura<br/> | Indica si la hora se especifica o se deja como un carácter comodín.<br/>                                                       |
+| [**IsInterval**](swbemdatetime-isinterval.md)<br/>                       | Lectura y escritura<br/> | Indica que al menos un componente de la [fecha y](datetime.md) hora CIM representa un intervalo en lugar de una fecha.<br/> |
+| [**Microsegundos**](swbemdatetime-microseconds.md)<br/>                   | Lectura y escritura<br/> | Componente de microsegundos de un valor [de fecha y](datetime.md) hora CIM.<br/>                                                  |
+| [**MicrosegundosEspecificado**](swbemdatetime-microsecondsspecified.md)<br/> | Lectura y escritura<br/> | Indica si el componente de microsegundos se especifica o se deja como un carácter comodín.<br/>                                     |
+| [**Minutos**](swbemdatetime-minutes.md)<br/>                             | Lectura y escritura<br/> | Componente minutes de un valor [de fecha y](datetime.md) hora CIM.<br/>                                                       |
+| [**MinutesSpecified**](swbemdatetime-minutesspecified.md)<br/>           | Lectura y escritura<br/> | Indica si el componente minutes se especifica o se deja como un carácter comodín.<br/>                                          |
+| [**Mes**](swbemdatetime-month.md)<br/>                                 | Lectura y escritura<br/> | Componente de mes de un valor [datetime de](datetime.md) CIM.<br/>                                                         |
+| [**MonthSpecified**](swbemdatetime-monthspecified.md)<br/>               | Lectura y escritura<br/> | Indica si el mes se especifica o se deja como un carácter comodín.<br/>                                                      |
+| [**Segundos**](swbemdatetime-seconds.md)<br/>                             | Lectura y escritura<br/> | Componente de segundos de un valor [de fecha y](datetime.md) hora CIM.<br/>                                                       |
+| [**SecondsSpecified**](swbemdatetime-secondsspecified.md)<br/>           | Lectura y escritura<br/> | Indica si el componente de segundos se especifica o se deja como un carácter comodín.<br/>                                          |
+| [**UTC**](swbemdatetime-utc.md)<br/>                                     | Lectura y escritura<br/> | Componente UTC de un valor [de fecha y](datetime.md) hora CIM.<br/>                                                           |
+| [**UTCEspecificado**](swbemdatetime-utcspecified.md)<br/>                   | Lectura y escritura<br/> | Indica si el componente UTC se especifica o se deja como un carácter comodín.<br/>                                              |
+| [**Value**](swbemdatetime-value.md)<br/>                                 | Lectura y escritura<br/> | Valor de [fecha y](datetime.md) hora CIM completo.<br/>                                                                         |
+| [**Año**](swbemdatetime-year.md)<br/>                                   | Lectura y escritura<br/> | Componente year de un valor [datetime de](datetime.md) CIM.<br/>                                                          |
+| [**YearSpecified**](swbemdatetime-yearspecified.md)<br/>                 | Lectura y escritura<br/> | Indica si se especifica o no el año o se deja como un carácter comodín.<br/>                                                |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-WMI registra las marcas de tiempo en formato de coordenada de hora universal (UTC). UTC no es el formato que usan la mayoría de los desarrolladores y administradores de TI. Por lo tanto, un problema común es determinar cómo traducir utc a algo más legible. Para obtener más información sobre cómo trabajar con UTC, vea Tareas de [WMI:](wmi-tasks--dates-and-times.md) Fechas y horas y Trabajar con fechas y [horas mediante WMI.](/previous-versions/tn-archive/ee198928(v=technet.10)) También puede leer las entradas de blog [It s About Time (Oh, and About Dates, Too)](/previous-versions/technet-magazine/cc160973(v=msdn.10)) y How Can I Subtract a [Specified Number of Days from a UTC Value?](https://blogs.technet.com/b/heyscriptingguy/archive/2006/07/21/how-can-i-subtract-a-specified-number-of-days-from-a-utc-value.aspx) (¿Cómo puedo restar un número especificado de días de un valor UTC?) para obtener información adicional.
+WMI registra las marcas de tiempo en formato de coordenada de hora universal (UTC). UTC no es el formato que usan la mayoría de los desarrolladores y administradores de TI. Por lo tanto, un problema común es determinar cómo traducir utc a algo más legible. Para obtener más información sobre cómo trabajar con UTC, vea Tareas de [WMI:](wmi-tasks--dates-and-times.md) Fechas y horas y Trabajar con fechas y [horas mediante WMI.](/previous-versions/tn-archive/ee198928(v=technet.10)) También puede leer las entradas de blog [It's About Time (Oh, and About Dates, Too)](/previous-versions/technet-magazine/cc160973(v=msdn.10)) y [How Can I Subtract a Specified Number of Days from a UTC Value?](https://blogs.technet.com/b/heyscriptingguy/archive/2006/07/21/how-can-i-subtract-a-specified-number-of-days-from-a-utc-value.aspx) (¿Cómo puedo restar un número especificado de días de un valor UTC?) para obtener información adicional.
 
 Cualquier campo numérico puede tener un valor comodín si la [**propiedad IsInterval**](swbemdatetime-isinterval.md) está establecida en **FALSE.** Los campos con valores comodín contienen asteriscos en todo el campo.
 
@@ -97,7 +97,7 @@ Por ejemplo, si [**SWbemDateTime.DaySpecified**](swbemdatetime-dayspecified.md) 
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código de script siguiente se muestra cómo usar un objeto **SWbemDateTime** para analizar un valor de propiedad datetime leído desde el repositorio WMI, la propiedad **InstallDate** en [**Win32 \_ OperatingSystem**](/windows/desktop/CIMWin32Prov/win32-operatingsystem).
+En el siguiente ejemplo de código de script se muestra cómo usar un objeto **SWbemDateTime** para analizar un valor de propiedad datetime leído desde el repositorio WMI, la propiedad **InstallDate** en [**Win32 \_ OperatingSystem**](/windows/desktop/CIMWin32Prov/win32-operatingsystem).
 
 
 ```VB
@@ -185,7 +185,7 @@ NewObject.Delete_
 
 
 
-En el ejemplo de código de script siguiente se muestra cómo usar un objeto **SWbemDateTime** para modificar un valor de intervalo en una propiedad que se lee desde el repositorio WMI.
+En el siguiente ejemplo de código de script se muestra cómo usar un objeto **SWbemDateTime** para modificar un valor de intervalo en una propiedad que se lee desde el repositorio WMI.
 
 
 ```VB
@@ -217,7 +217,7 @@ NewObject.Delete_
 
 
 
-En el ejemplo de código de script siguiente se muestra cómo usar un **objeto SWbemDate** para leer un **valor FILETIME.**
+En el siguiente ejemplo de código de script se muestra cómo usar **un objeto SWbemDate** para leer un **valor FILETIME.**
 
 
 ```VB
@@ -261,7 +261,7 @@ $dateTime.Value = $os.InstallDate
 
 
 
-El siguiente código de PowerShell convierte el código en un formato listo para ser consumido por un proveedor CIM.
+El siguiente código de PowerShell convierte el código en un formato listo para que lo consuma un proveedor CIM.
 
 
 ```PowerShell
@@ -277,11 +277,11 @@ El siguiente código de PowerShell convierte el código en un formato listo para
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemDateTime<br/>                                                         |
@@ -296,7 +296,7 @@ El siguiente código de PowerShell convierte el código en un formato listo para
 [WbemCimtypeEnum](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemcimtypeenum)
 </dt> <dt>
 
-[Datetime](datetime.md)
+[DATETIME](datetime.md)
 </dt> <dt>
 
 [Objetos de API de scripting](scripting-api-objects.md)

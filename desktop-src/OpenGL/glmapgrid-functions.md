@@ -3,30 +3,30 @@ title: Funciones glMapGrid
 description: Estas funciones definen una malla unidimensional o bidimensional.
 ms.assetid: 87532b49-a506-44a7-be2f-b74c289f1a19
 keywords:
-- Funciones OpenGL,glMapGrid
+- Funciones openGL,glMapGrid
 - Referencia de OpenGL, funciones glMapGrid
 - referencia de las funciones OpenGL,glMapGrid
 - OpenGL, funciones de mapa
 - Referencia de OpenGL, funciones de mapa
 - referencia de OpenGL, funciones de mapa
-- Funciones glMapGrid
+- Funciones de glMapGrid
 - Funciones de map
 - Funciones de malla unidimensional
 - Funciones de malla bidimensional
-- Funciones de malla unidimensional OpenGL
+- OpenGL, funciones de malla unidimensional
 - Referencia de OpenGL, funciones de malla unidimensional
-- referencia de las funciones de malla unidimensional OpenGL
-- Funciones de malla bidimensional OpenGL
+- Referencia de las funciones de malla unidimensional OpenGL
+- OpenGL, funciones de malla bidimensional
 - Referencia de OpenGL, funciones de malla bidimensional
-- referencia de las funciones de malla bidimensional OpenGL
+- Referencia de las funciones de malla bidimensional OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43bc03268cd65c607cf9fe09c157fc7a5302d7e6be1b615ff49b8554892b9acb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6198210a5aaedd8f67e3a180b5a2acbed98a2d40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118938468"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272052"
 ---
 # <a name="glmapgrid-functions"></a>Funciones glMapGrid
 

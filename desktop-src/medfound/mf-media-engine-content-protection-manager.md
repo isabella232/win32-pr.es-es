@@ -1,25 +1,25 @@
 ---
-description: Habilita el motor de multimedia para reproducir contenido protegido.
+description: Permite que el motor multimedia reprodgue contenido protegido.
 ms.assetid: F6F17EC7-6553-4127-B691-C20C945DD4D8
 title: MF_MEDIA_ENGINE_CONTENT_PROTECTION_MANAGER atributo (Mfmediaengine.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe80e619f3b256f6aa587f32d9ee5b6f43cd2978a5dfb043c62536ff5315bacb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: afb99d1df36c9b9adbf1c099d619df60e1144b87
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118244694"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360459"
 ---
 # <a name="mf_media_engine_content_protection_manager-attribute"></a>Atributo CONTENT \_ \_ PROTECTION \_ MANAGER de \_ \_ MF MEDIA ENGINE
 
-Habilita el motor de multimedia para reproducir contenido protegido.
+Permite que el motor multimedia reprodgue contenido protegido.
 
 ## <a name="data-type"></a>Tipo de datos
 
 **IUnknown\***
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor de este atributo es un puntero a la [**interfaz IMFContentProtectionManager.**](/windows/desktop/api/mfidl/nn-mfidl-imfcontentprotectionmanager) El autor de la llamada debe implementar la interfaz .
 
@@ -29,11 +29,11 @@ Este atributo puede ser uno de los atributos pasados [**a IMFMediaEngineClassFac
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                          |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                |
-| Header<br/>                   | <dl> <dt>Mfmediaengine.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfmediaengine.h</dt> </dl> |
 
 
 

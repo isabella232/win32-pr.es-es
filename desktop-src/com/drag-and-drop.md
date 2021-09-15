@@ -4,12 +4,12 @@ description: Arrastrar y colocar hace referencia a las transferencias de datos e
 ms.assetid: bba0ddf8-fcf9-4827-bf85-7ac597d33b4b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b388fc6c051fa73c72720d1f349cd50a4fa6902b8f880fbf5ccfb4cf263a4227
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5dc4b425637432024d097acb8afdc5e169467c6a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119993165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359382"
 ---
 # <a name="drag-and-drop"></a>Arrastrar y colocar
 

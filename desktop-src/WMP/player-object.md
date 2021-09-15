@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0ee314862aad1237036d5a7fa6a5627f42a6185d1ab6914f1e11ec19a831b755
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0bdf6443557477c15497a36d4976b13d0cfea2fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119616705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359274"
 ---
 # <a name="player-object"></a>Objeto Player
 
@@ -54,7 +54,7 @@ El objeto Player admite las siguientes propiedades. Las propiedades marcadas con
 | [uiMode](player-uimode.md)\*                       | Especifica o recupera un valor que indica qué controles se muestran en la interfaz de usuario cuando Reproductor de Windows Media está insertado en una página web. |
 | [URL](player-url.md)                                | Especifica o recupera el nombre del clip que se reproducirá.                                                                                         |
 | [versionInfo](player-versioninfo.md)                | Recupera un valor String que especifica la versión del Reproductor de Windows Media.                                                                 |
-| [windowlessVideo](player-windowlessvideo.md)\*     | Especifica o recupera un valor que indica si el control Reproductor de Windows Media representa el vídeo en modo sin ventanas.                         |
+| [windowlessVideo](player-windowlessvideo.md)\*     | Especifica o recupera un valor que indica si el control Reproductor de Windows Media representa vídeo en modo sin ventanas.                         |
 
 
 
@@ -68,7 +68,7 @@ El objeto Player admite los métodos siguientes.
 
 | Método                                | Descripción                                               |
 |---------------------------------------|-----------------------------------------------------------|
-| [close](player-close.md)             | Versiones Reproductor de Windows Media recursos.                  |
+| [close](player-close.md)             | Libera Reproductor de Windows Media recursos.                  |
 | [launchURL](player-launchurl.md)     | Envía una dirección URL al explorador predeterminado del usuario que se va a representar. |
 | [newMedia](player-newmedia.md)       | Crea un nuevo [objeto](media-object.md) Multimedia.           |
 | [newPlaylist](player-newplaylist.md) | Crea un nuevo objeto [Playlist.](playlist-object.md)     |
@@ -87,7 +87,7 @@ El objeto Player admite los siguientes eventos. Los eventos marcados con un aste
 | [AudioLanguageChange](player-player-audiolanguagechange.md)                                     | Se produce cuando cambia el idioma de audio actual.                                  |
 | [de respuesta](player-player-buffering.md)                                                         | Se produce cuando el control Reproductor de Windows Media inicia o finaliza el almacenamiento en búfer.           |
 | [CdromMediaChange](player-player-cdrommediachange.md)                                           | Se produce cuando se inserta o expulsa un CD o DVD desde una unidad de CD o DVD.      |
-| [Hacer clic](player-player-click.md) \*                                                              | Se produce cuando el usuario hace clic en un botón del mouse.                                      |
+| [Haga clic en](player-player-click.md) \*                                                              | Se produce cuando el usuario hace clic en un botón del mouse.                                      |
 | [CurrentItemChange](player-player-currentitemchange.md)                                         | Se produce cuando *controla*. **currentItem** cambia.                                  |
 | [CurrentMediaItemAvailable](player-player-currentmediaitemavailable.md)                         | Se produce cuando un elemento de metadatos gráfico del elemento multimedia actual está disponible. |
 | [CurrentPlaylistChange](player-player-currentplaylistchange.md)                                 | Se produce cuando algo cambia dentro de la lista de reproducción actual.                       |
@@ -97,14 +97,14 @@ El objeto Player admite los siguientes eventos. Los eventos marcados con un aste
 | [DoubleClick](player-player-doubleclick.md)\*                                                  | Se produce cuando el usuario hace doble clic en un botón del mouse.                               |
 | **DurationUnitChange**                                                                           | Reservado para uso futuro.                                                         |
 | **EndOfStream**                                                                                  | Reservado para uso futuro.                                                         |
-| [Error](player-player-error.md)                                                                 | Se produce cuando el Reproductor de Windows Media control tiene una condición de error.             |
+| [Error](player-player-error.md)                                                                 | Se produce cuando el control Reproductor de Windows Media tiene una condición de error.             |
 | [KeyDown](player-player-keydown.md)\*                                                          | Se produce cuando se presiona una tecla.                                                    |
 | [KeyPress](player-player-keypress.md)\*                                                        | Se produce cuando se presiona una tecla y, a continuación, se libera.                                  |
 | [KeyUp](player-player-keyup.md)\*                                                              | Se produce cuando se suelta una tecla.                                                   |
 | [MarkerHit](player-player-markerhit.md)                                                         | Se produce cuando se alcanza un marcador.                                                 |
 | [MediaChange](player-player-mediachange.md)                                                     | Se produce cuando cambia un elemento multimedia.                                                |
-| [MediaCollectionAttributeString agregado](player-player-mediacollectionattributestringadded.md)     | Se produce cuando se agrega un valor de atributo a la biblioteca.                          |
-| [MediaCollectionAttributeStringChanged](player-player-mediacollectionattributestringchanged.md) | Se produce cuando se cambia un valor de atributo en la biblioteca.                        |
+| [MediaCollectionAttributeString Agregado](player-player-mediacollectionattributestringadded.md)     | Se produce cuando se agrega un valor de atributo a la biblioteca.                          |
+| [MediaCollectionAttributeStringChanged](player-player-mediacollectionattributestringchanged.md) | Se produce cuando se cambia un valor de atributo de la biblioteca.                        |
 | [MediaCollectionAttributeStringRemoved](player-player-mediacollectionattributestringremoved.md) | Se produce cuando se quita un valor de atributo de la biblioteca.                      |
 | [MediaCollectionChange](player-player-mediacollectionchange.md)                                 | Se produce cuando cambia la colección de medios.                                        |
 | [MediaCollectionMediaAdded](player-player-mediacollectionmediaadded.md)                         | Se produce cuando se agrega un elemento multimedia a la biblioteca local.                          |
@@ -115,25 +115,25 @@ El objeto Player admite los siguientes eventos. Los eventos marcados con un aste
 | [MouseMove](player-player-mousemove.md)\*                                                      | Se produce cuando se mueve el puntero del mouse.                                          |
 | [MouseUp](player-player-mouseup.md)\*                                                          | Se produce cuando se libera un botón del mouse.                                          |
 | **NewStream**                                                                                    | Reservado para uso futuro.                                                         |
-| [OpenPlaylistSwitch](player-player-openplaylistswitch.md)                                       | Se produce cuando comienza a reproducirse un título de un DVD.                                     |
+| [OpenPlaylistSwitch](player-player-openplaylistswitch.md)                                       | Se produce cuando un título de un DVD comienza a reproducirse.                                     |
 | [OpenStateChange](player-player-openstatechange.md)                                             | Se produce cuando el control Reproductor de Windows Media cambia de estado.                      |
 | [PlaylistChange](player-player-playlistchange.md)                                               | Se produce cuando cambia una lista de reproducción.                                                  |
 | [PlaylistCollectionChange](player-player-playlistcollectionchange.md)                           | Se produce cuando algo cambia en la colección de listas de reproducción.                        |
-| [Se ha agregado PlaylistCollectionPlaylist](player-player-playlistcollectionplaylistadded.md)             | Se produce cuando se agrega una lista de reproducción a la colección de listas de reproducción.                      |
+| [Lista de reproducciónPlaylist agregada](player-player-playlistcollectionplaylistadded.md)             | Se produce cuando se agrega una lista de reproducción a la colección de listas de reproducción.                      |
 | [PlaylistCollectionPlaylistRemoved](player-player-playlistcollectionplaylistremoved.md)         | Se produce cuando se quita una lista de reproducción de la colección de listas de reproducción.                  |
 | **PlaylistCollectionPlaylistSetAsDeleted**                                                       | Reservado para uso futuro.                                                         |
 | [PlayStateChange](player-player-playstatechange.md)                                             | Se produce cuando cambia el estado de reproducción Reproductor de Windows Media control.          |
 | [PositionChange](player-player-positionchange.md)                                               | Se produce cuando se ha cambiado la posición actual del elemento multimedia.             |
-| [ScriptCommand](player-player-scriptcommand.md)                                                 | Se produce cuando se recibe un comando sincronizado o una dirección URL.                           |
-| [StatusChange](player-player-statuschange.md)                                                   | Se produce cuando cambia **el valor de** la propiedad status.                               |
+| [ScriptCommand](player-player-scriptcommand.md)                                                 | Se produce cuando se recibe un comando o una dirección URL sincronizados.                           |
+| [StatusChange](player-player-statuschange.md)                                                   | Se produce cuando la **propiedad status** cambia de valor.                               |
 | [StringCollectionChange](player-player-stringcollectionchange.md)                               | Se produce cuando cambia una colección de cadenas.                                         |
-| **Advertencia**                                                                                      | Reservado para uso futuro.                                                         |
+| **Warning (ADVERTENCIA)**                                                                                      | Reservado para uso futuro.                                                         |
 
 
 
  
 
-\* No es accesible para las máscaras. Para obtener información sobre cómo controlar eventos de mouse y teclado en máscaras, vea [Controladores de eventos ambiente](ambient-event-handlers.md).
+\* No es accesible para las máscaras. Para obtener información sobre cómo controlar eventos de mouse y teclado en máscaras, vea [Controladores de eventos ambientales](ambient-event-handlers.md).
 
 Cuando se inserta en una página web, se puede acceder al objeto **Player** mediante el valor de identificador especificado en la etiqueta OBJECT. Dentro de un archivo de definición de máscara, se accede a él mediante el atributo global **player.** Con fines ilustrativos, **el reproductor** se usará como identificador de objeto en las secciones de sintaxis de referencia.
 

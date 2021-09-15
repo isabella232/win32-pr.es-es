@@ -15,12 +15,12 @@ keywords:
 - visualizaciones personalizadas, variable timeStamp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e6ce4d675fa37a519952f1b31d3c52cd93005a82eef977b7bd7d77623f1e508
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6f2d9a23818d57305b3b205ea2e17b6dda2884e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118116942"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359877"
 ---
 # <a name="using-timed-levels"></a>Uso de niveles con tiempo
 
@@ -61,9 +61,9 @@ int snapshot = pLevels->waveform[0][0];
 
 El valor de snapshot es para el canal izquierdo y contiene el primer valor de la instantánea cuantificada de los valores de energía. Cuando se toma una instantánea, consta de 1024 pequeñas medidas incrementales de la potencia de audio. El valor más bajo de la matriz se genera mediante la primera medida incremental de la potencia de audio. Tenga en cuenta que los valores de la potencia se miden de -128 a +127, pero los valores de la matriz oscilan entre 0 y 255. Si tiene una onda monofónica, solo la primera dimensión tendrá valores válidos.
 
-Si la señal no es estéreo, la segunda matriz contendrá una copia de la señal mono. Es decir, la forma de onda 0 n y la forma de onda 1 n contendrán los mismos datos, donde n es el \[ \] \[  \] \[ índice de una \] \[  \] celda determinada. 
+Si la señal no es estéreo, la segunda matriz contendrá una copia de la señal mono. Es decir, la forma de onda 0 n y la forma de onda 1 n contendrán los mismos datos, donde n es el \[ \] \[  \] \[ índice en una \] \[  \] celda determinada. 
 
-## <a name="state"></a>Estado
+## <a name="state"></a>State
 
 La variable de estado refleja el estado de reproducción de audio Reproductor de Windows Media. Los valores de enumeración PlayerState son
 

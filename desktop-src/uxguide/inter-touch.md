@@ -4,12 +4,12 @@ description: Todas las aplicaciones Windows microsoft deben tener una experienci
 ms.assetid: a87d0726-1c57-4cf8-9e35-4e73a09ff1a3
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 68f73b7da9cf33dc20a3c0534044558e514284f024f11609ef9af4760ec79a8c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a44a95ad963d3563418ed0492e55606824011f31
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119029758"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360244"
 ---
 # <a name="touch"></a>Tocar
 
@@ -18,7 +18,7 @@ ms.locfileid: "119029758"
 
 Todas las aplicaciones Windows microsoft deben tener una experiencia táctil excelente. Y crear esta experiencia es más fácil de lo que cree.
 
-El toque hace referencia al uso de uno o varios dedos para proporcionar entrada a través de una pantalla de dispositivo e interactuar con Windows y aplicaciones. Una aplicación con optimización táctil tiene una interfaz de usuario y un modelo de interacción diseñados para dar cabida a las áreas de contacto más grandes y menos precisas del contacto, los distintos factores de forma de los dispositivos táctiles y las numerosas posturas y controles que los usuarios pueden adoptar al usar un dispositivo táctil.
+Táctil hace referencia al uso de uno o varios dedos para proporcionar entrada a través de una pantalla de dispositivo e interactuar con Windows y aplicaciones. Una aplicación con optimización táctil tiene una interfaz de usuario y un modelo de interacción diseñados para dar cabida a las áreas de contacto más grandes y menos precisas del contacto, los distintos factores de forma de los dispositivos táctiles y las numerosas posturas y controles que los usuarios pueden adoptar al usar un dispositivo táctil.
 
 ![Interacción del usuario con tabletas mediante el uso táctil](images/inter_touch_image1.jpeg)
 
@@ -40,7 +40,7 @@ Con el toque, puede manipular objetos y la interfaz de usuario directamente, lo 
 
 Debe asegurarse de que los usuarios pueden realizar tareas críticas e importantes de forma eficaz mediante la entrada táctil. Sin embargo, es posible que una funcionalidad específica de la aplicación, como la manipulación de texto o píxeles, no sea adecuada para la función táctil y se pueda reservar para el dispositivo de entrada más adecuado.
 
-Si no tiene mucha experiencia en el desarrollo de aplicaciones táctiles, es mejor aprender haciendo esto. Obtenga un equipo táctil, coloque el mouse y el teclado a un lado y use solo los dedos para interactuar con la aplicación. Si tiene una tableta, experimente con mantenerla en distintas posiciones, como en el regón, en una mesa o en los brazos mientras está de pie. Pruebe a usarlo en orientación vertical y horizontal.
+Si no tiene mucha experiencia en el desarrollo de aplicaciones táctiles, es mejor aprender haciendo esto. Obtenga un equipo táctil, coloque el mouse y el teclado a un lado y use solo los dedos para interactuar con la aplicación. Si tiene una tableta, experimente con mantenerla en diferentes posiciones, como en el regón, en una mesa o en los brazos mientras está de pie. Pruebe a usarlo en orientación vertical y horizontal.
 
 Las aplicaciones optimizadas para tocar que funcionan mejor con la interacción táctil suelen ser:
 
@@ -50,7 +50,7 @@ Las aplicaciones optimizadas para tocar que funcionan mejor con la interacción 
 -   **Directa e interesante.** La función táctil te hace sentir que estás manipulando directamente objetos en la pantalla.
 -   **Menos preciso.** Los usuarios no pueden tener como destino objetos con la precisión táctil, en comparación con un mouse o un lápiz.
 
-La interacción táctil proporciona una sensación natural y real de interacción. La manipulación directa y la animación completan esta impresión, al proporcionar a los objetos un movimiento y comentarios realistas y dinámicos. Por ejemplo, considere un juego de cartas. No solo es cómodo y fácil arrastrar tarjetas con un dedo, sino que la experiencia adopta una sensación atractiva en el mundo real cuando se puede arrastrar, arrastrar y girar las cartas como lo haría con una baraja física. Y cuando intenta mover una tarjeta que no se puede mover, es una mejor experiencia que la tarjeta se resalte, pero no impida el movimiento, y vuelva a ponerse en marcha cuando se libera, para indicar claramente que la acción se ha reconocido, pero no se puede realizar.
+La interacción táctil proporciona una sensación natural del mundo real a la interacción. La manipulación directa y la animación completan esta impresión, al proporcionar a los objetos un movimiento y comentarios realistas y dinámicos. Por ejemplo, considere un juego de cartas. No solo es cómodo y fácil arrastrar tarjetas con un dedo, sino que la experiencia adopta una sensación atractiva en el mundo real cuando se puede arrastrar, arrastrar y girar las cartas como lo haría con una baraja física. Y cuando intenta mover una tarjeta que no se puede mover, es una mejor experiencia que la tarjeta se resalte, pero no impida el movimiento, y vuelva a ponerse en marcha cuando se libera, para indicar claramente que la acción se ha reconocido, pero no se puede realizar.
 
 Afortunadamente, si la aplicación ya está bien diseñada, es fácil proporcionar una experiencia táctil excelente. Para ello, un programa bien diseñado:
 
@@ -83,7 +83,7 @@ A continuación, describiremos el Windows táctil, pero antes de empezar, esta e
 
 -   **Manipulación**
 
-    Una manipulación es la reacción inmediata en tiempo real o la respuesta que un objeto o interfaz de usuario tiene a un gesto. Por ejemplo, los gestos de deslizar y deslizar rápidamente normalmente hacen que un elemento o interfaz de usuario se mueva de alguna manera.
+    Una manipulación es la reacción inmediata en tiempo real o la respuesta que un objeto o interfaz de usuario tiene a un gesto. Por ejemplo, los gestos de deslizar y deslizar el dedo suelen hacer que un elemento o interfaz de usuario se mueva de alguna manera.
 
     El resultado final de una manipulación, cómo se manifiesta mediante el objeto en la pantalla y en la interfaz de usuario, es la interacción.
 
@@ -93,14 +93,14 @@ A continuación, describiremos el Windows táctil, pero antes de empezar, esta e
 
 ### <a name="the-windows-touch-language"></a>El Windows táctil
 
-Windows proporciona un conjunto conciso de interacciones táctiles que se usan en todo el sistema. Aplicar este lenguaje táctil de forma coherente hace que la aplicación se familiarice con lo que los usuarios ya conocen. Esto aumenta la confianza del usuario al facilitar el aprendizaje y el uso de la aplicación. Para más información sobre la implementación del lenguaje táctil, consulte Gestos, manipulaciones e interacciones.
+Windows proporciona un conjunto conciso de interacciones táctiles que se usan en todo el sistema. La aplicación de este lenguaje táctil hace que la aplicación se familiarice con lo que los usuarios ya conocen. Esto aumenta la confianza del usuario al facilitar el aprendizaje y el uso de la aplicación. Para más información sobre la implementación del lenguaje táctil, consulte Gestos, manipulaciones e interacciones.
 
 **Mantenga presionado el botón para aprender.**
 
 El gesto de mantener presionado muestra información detallada o objetos visuales de enseñanza (por ejemplo, una información sobre herramientas o un menú contextual) sin confirmar una acción o un comando. El movimiento panorámico sigue siendo posible si se inicia un gesto deslizante mientras se muestra el objeto visual.
 
 > [!IMPORTANT]
-> Puede usar mantener presionada la tecla y mantener presionada para la selección en los casos en los que está habilitado el movimiento panorámico horizontal y vertical.
+> Puede usar mantener presionado para la selección en casos en los que esté habilitado el movimiento panorámico horizontal y vertical.
 
  
 
@@ -112,7 +112,7 @@ Estado de salida: el último dedo hacia arriba finaliza el gesto.
 
 Efecto: muestra más información.
 
-![pulse \- la tecla táctil para \- \-learn.png](images/inter-touch-image2.png)
+![presione \- touch \- para \-learn.png](images/inter-touch-image2.png)
 
 Gesto de mantener presionado.
 
@@ -124,13 +124,13 @@ Desafortunadamente, las tecnologías táctiles no admiten el desplazamiento del 
 
 ![Captura de pantalla que muestra un ejemplo de la interacción del mouse junto a un ejemplo de la acción de clic.](images/inter-touch-image13.png)
 
-En este ejemplo, los usuarios pueden ver la fecha de hoy si mantienen el mouse o hace clic en ellos.
+En este ejemplo, los usuarios pueden ver la fecha de hoy al mantener el puntero o hacer clic en él.
 
 **Pulse para la acción principal.**
 
-Al pulsar en un elemento se invoca su acción principal, por ejemplo, iniciar una aplicación o ejecutar un comando.
+Pulsar en un elemento invoca su acción principal, por ejemplo, iniciar una aplicación o ejecutar un comando.
 
-Estado de entrada: un dedo en contacto con la pantalla o el panel táctil y se eleva antes del umbral de tiempo para una interacción de mantener presionada y mantener presionada.
+Estado de entrada: un dedo en contacto con la pantalla o el panel táctil y se eleva antes del umbral de tiempo para una interacción de mantener presionado.
 
 Movimiento: sin movimiento.
 
@@ -142,9 +142,9 @@ Efecto: inicie una aplicación o ejecute un comando.
 
 Gesto de pulsar.
 
-**Deslizar para desplazarse**
+**Deslizar hacia la panorámica**
 
-La diapositiva se usa principalmente para las interacciones de movimiento panorámico, pero también se puede usar para mover (donde el movimiento panorámico está restringido a una dirección), dibujar o escribir. La diapositiva también se puede usar para dirigirse a elementos pequeños y empaquetados densamente limpiando (deslizando el dedo sobre objetos relacionados, como botones de radio).
+La diapositiva se usa principalmente para las interacciones de desplazamiento panorámico, pero también se puede usar para mover (donde el movimiento panorámico está restringido a una dirección), dibujar o escribir. La diapositiva también se puede usar para dirigirse a elementos pequeños y empaquetados densamente limpiando (deslizando el dedo sobre objetos relacionados, como botones de radio).
 
 Estado de entrada: uno o dos dedos en contacto con la pantalla.
 
@@ -152,7 +152,7 @@ Movimiento: arrastre, con los dedos adicionales restantes en la misma posición 
 
 Estado de salida: el último dedo hacia arriba finaliza el gesto.
 
-Efecto: mueva el objeto subyacente directamente e inmediatamente a medida que se mueven los dedos. Asegúrese de mantener el punto de contacto debajo del dedo a lo largo del gesto.
+Efecto: mueva el objeto subyacente directamente e inmediatamente a medida que se mueven los dedos. Asegúrese de mantener el punto de contacto bajo el dedo a lo largo del gesto.
 
 ![touch \-slide.png](images/inter-touch-image4.png)
 
@@ -160,7 +160,7 @@ Gesto de panorámica.
 
 **Deslizar el dedo para seleccionar, comando y mover**
 
-Al deslizar el dedo a una distancia corta, hasta la dirección de desplazamiento panorámico (donde el movimiento panorámico está restringido a una dirección), se seleccionan los objetos de una lista o cuadrícula. Muestra la barra de la aplicación con los comandos pertinentes cuando se seleccionan objetos.
+Deslizando el dedo a una distancia corta, hasta la dirección de desplazamiento panorámico (donde el movimiento panorámico está restringido a una dirección), selecciona los objetos de una lista o cuadrícula. Muestra la barra de la aplicación con los comandos pertinentes cuando se seleccionan objetos.
 
 Estado de entrada: uno o varios dedos tocan la pantalla.
 
@@ -168,11 +168,11 @@ Movimiento: arrastre una distancia corta y una elevación antes de que se produz
 
 Estado de salida: el último dedo hacia arriba finaliza el gesto.
 
-Efecto: se selecciona o mueve el objeto subyacente o se muestra la barra de la aplicación. Asegúrese de mantener el punto de contacto debajo del dedo a lo largo del gesto.
+Efecto: se selecciona o se mueve el objeto subyacente, o se muestra la barra de la aplicación. Asegúrese de mantener el punto de contacto bajo el dedo a lo largo del gesto.
 
 ![d: \\ sdkenlistment \\ m \- ux design m \- \\ \- ux design images touch \- \\ \\ \-swipe.png](images/inter-touch-image5.png)
 
-Gesto de deslizar rápidamente.
+Gesto de deslizar el dedo.
 
 **Reducir y ampliar para hacer zoom**
 
@@ -180,7 +180,7 @@ Los gestos de reducir y ajustar se usan para tres tipos de interacciones: zoom �
 
 El zoom óptico ajusta el nivel de ampliación de todo el área de contenido para obtener una vista más detallada del contenido. Por el contrario, el cambio de tamaño es una técnica para ajustar el tamaño relativo de uno o varios objetos dentro de un área de contenido sin cambiar la vista al área de contenido.
 
-El zoom semántico es una técnica táctil optimizada para presentar y navegar por datos estructurados o contenido dentro de una sola vista (como la estructura de carpetas de un equipo, una biblioteca de documentos o un álbum de fotos) sin necesidad de controles de desplazamiento panorámico, desplazamiento o vista de árbol. El zoom semántico proporciona dos vistas diferentes del mismo contenido, ya que permite ver más detalles a medida que acerca y menos detalles al alejar.
+El zoom semántico es una técnica optimizada para tocar para presentar y navegar por datos estructurados o contenido dentro de una sola vista (como la estructura de carpetas de un equipo, una biblioteca de documentos o un álbum de fotos) sin necesidad de controles de desplazamiento panorámico, desplazamiento o vista de árbol. El zoom semántico proporciona dos vistas diferentes del mismo contenido, ya que permite ver más detalles a medida que se acerca y menos detalle a medida que se aleja.
 
 Estado de entrada: dos dedos en contacto con la pantalla al mismo tiempo.
 
@@ -190,13 +190,13 @@ Estado de salida: cualquier dedo hacia arriba finaliza el gesto.
 
 Efecto: acercar o alejar el objeto subyacente directamente e inmediatamente a medida que los dedos se separan o se aproximan en el eje. Asegúrese de mantener los puntos de contacto debajo del dedo a lo largo del gesto.
 
-![aterrizaje \-areazoom.png](images/inter-touch-image6.png)
+![landing \-areazoom.png](images/inter-touch-image6.png)
 
 Gesto de zoom.
 
 **Turno para girar**
 
-Girar con dos o más dedos hace que un objeto rote. Gira el dispositivo propiamente dicho para girar toda la pantalla.
+La rotación con dos o más dedos hace que un objeto rote. Gira el dispositivo propiamente dicho para girar toda la pantalla.
 
 Estado de entrada: dos dedos en contacto con la pantalla al mismo tiempo.
 
@@ -212,11 +212,11 @@ Gesto de rotación.
 
 La rotación solo tiene sentido para determinados tipos de objetos, por lo que no se asigna a una interacción de Windows sistema.
 
-La rotación suele realizarse de forma diferente por diferentes personas. Algunas personas prefieren girar un dedo alrededor de un dedo pivote, mientras que otras prefieren girar ambos dedos en un movimiento circular. La mayoría de las personas usan una combinación de los dos, con un dedo que se mueve más que el otro. Aunque la rotación suave a cualquier ángulo es la mejor interacción, en muchos contextos, como la visualización de fotos, es mejor establecer la rotación de 90 grados más cercana una vez que el usuario lo permita. En la edición de fotos, puede usar una pequeña rotación para enderezar la foto.
+La rotación suele realizarse de manera diferente por diferentes personas. Algunas personas prefieren girar un dedo alrededor de un dedo pivote, mientras que otras prefieren girar ambos dedos en un movimiento circular. La mayoría de las personas usan una combinación de los dos, con un dedo que se mueve más que el otro. Aunque la rotación fluida a cualquier ángulo es la mejor interacción, en muchos contextos, como la visualización de fotos, es mejor establecerse en la rotación de 90 grados más cercana una vez que el usuario se vaya. En la edición de fotos, puede usar una pequeña rotación para enderezar la foto.
 
 **Deslizar el dedo desde el borde para los comandos de la aplicación**
 
-Al deslizar el dedo a una distancia corta desde el borde inferior o superior de la pantalla, se revelan los comandos de la aplicación en una barra de la aplicación.
+Al deslizar el dedo a corta distancia desde el borde inferior o superior de la pantalla, se revelan los comandos de la aplicación en una barra de la aplicación.
 
 Estado de entrada: uno o varios dedos tocan el bisel.
 
@@ -228,11 +228,11 @@ Efecto: se muestra la barra de la aplicación.
 
 ![deslizar \- el \- dedo hacia abajo \-edge.png](images/inter-touch-image8.png)
 
-![deslizar \- el \- dedo \-edge.png](images/inter-touch-image9.png)
+![panel \- de deslizar el \- \- dedoedge.png](images/inter-touch-image9.png)
 
 Gesto de deslizar el dedo desde el borde.
 
-Desarrolladores: para obtener más información, [**consulte enumeración DIRECTMANIPULATION \_ CONFIGURATION.**](/previous-versions/windows/desktop/api/directmanipulation/ne-directmanipulation-directmanipulation_configuration)
+Desarrolladores: para obtener más información, vea [**enumeración DIRECTMANIPULATION \_ CONFIGURATION.**](/previous-versions/windows/desktop/api/directmanipulation/ne-directmanipulation-directmanipulation_configuration)
 
 ### <a name="control-usage"></a>Control del uso
 
@@ -242,7 +242,7 @@ Aquí se proporcionan algunas directrices para optimizar los controles para el u
 -   **Elija controles personalizados diseñados para admitir la función táctil.** Es posible que necesite controles personalizados para admitir las experiencias especiales del programa. Elija controles personalizados que:
     -   Puede tener un tamaño lo suficientemente grande como para facilitar la selección de destino y la manipulación.
     -   Cuando se manipula, mueva y reaccione de la manera en que los objetos del mundo real se mueven y reaccionan, por ejemplo, al tener impulso y fricción.
-    -   Son una forma de permitir que los usuarios corrijan fácilmente los errores.
+    -   Son la razón por la que permiten a los usuarios corregir errores fácilmente.
     -   Son la impermeabilidad al hacer clic y arrastrar. Los objetos que se coloquen cerca de su destino deben colocarse en el lugar correcto.
     -   Tener comentarios visuales claros cuando el dedo está sobre el control.
 -   **Use controles restringidos.** Los controles restringidos, como las listas y los controles deslizantes, cuando se diseñan para una orientación táctil sencilla, pueden ser mejores que los controles sin restricciones, como los cuadros de texto, porque reducen la necesidad de entrada de texto.
@@ -262,7 +262,7 @@ Tenga en cuenta que el tamaño mínimo se basa realmente en el área física, no
 
 
 
-| Fuente             | Milímetros | Píxeles relativos | ARCHIVOS DLL  |
+| Fuente             | Milímetros | Píxeles relativos | D DLL  |
 |------------------|-------------|-----------------|-------|
 | 9 puntos Segoe UI | 6x6         | 23x23           | 13x13 |
 | 8 puntos deMenteoma   | 6x6         | 23x23           | 15x14 |
@@ -271,7 +271,7 @@ Tenga en cuenta que el tamaño mínimo se basa realmente en el área física, no
 
  
 
-Además, la investigación muestra que un tamaño mínimo de 10 x 10 mm (unos 40 x 40 píxeles) permite una mejor velocidad y precisión, y también se siente más cómodo para los usuarios. Cuando sea práctico, use este tamaño mayor para los botones de comando usados para los comandos más importantes o usados con frecuencia.
+Además, la investigación muestra que un tamaño mínimo de 10 x 10 mm (unos 40 x 40 píxeles) permite una mejor velocidad y precisión, y también se siente más cómodo para los usuarios. Cuando sea práctico, use este tamaño mayor para los botones de comando que se usan para los comandos más importantes o usados con frecuencia.
 
 El objetivo no es tener controles enormes, solo los que se usan fácilmente con el toque.
 
@@ -292,7 +292,7 @@ No hay un tamaño perfecto para los destinos táctiles. Los distintos tamaños f
 | Guía de tamaño                                                                                 | Descripción                                                                                                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ![Tamaño mínimo recomendado de 7x7](images/inter_touch_image10.jpeg)<br/>      | **7x7 mm: tamaño mínimo recomendado**<br/> 7 x 7 mm es un buen tamaño mínimo si tocar el destino incorrecto se puede corregir en uno o dos gestos o en un plazo de cinco segundos. El relleno entre destinos es tan importante como el tamaño de destino.<br/>                               |
-| ![Tamaño recomendado de 9x9 para la precisión](images/inter_touch_image11.jpeg)<br/> | **Cuando la precisión es importante**<br/> Cerrar, eliminar y otras acciones con consecuencias graves no puede permitirse pulsaciones accidentales. Use destinos de 9 x 9 mm si tocar el destino incorrecto requiere más de dos gestos, cinco segundos o un cambio de contexto importante para corregirlo.<br/>     |
+| ![Tamaño recomendado de 9x9 para mayor precisión](images/inter_touch_image11.jpeg)<br/> | **Cuando la precisión es importante**<br/> Cerrar, eliminar y otras acciones con consecuencias graves no puede permitirse pulsaciones accidentales. Use destinos de 9 x 9 mm si tocar el destino incorrecto requiere más de dos gestos, cinco segundos o un cambio de contexto importante para corregirlo.<br/>     |
 | ![Tamaño mínimo de 5x5](images/inter_touch_image12.jpeg)<br/>                  | **Cuando simplemente no cabe**<br/> Si se encuentra con cosas que caben, es correcto usar destinos de 5 x 5 mm, siempre y cuando se pueda corregir el destino incorrecto con un gesto. El uso de 2 mm de relleno entre destinos es muy importante en este caso.<br/> |
 
 
@@ -307,7 +307,7 @@ No hay un tamaño perfecto para los destinos táctiles. Los distintos tamaños f
 
     Los tamaños de control recomendados son fáciles de tocar.
 
--   **En el caso de los botones de comando usados para los comandos más importantes o usados con frecuencia, use un tamaño mínimo de 40 x 40 píxeles (23 x 22 D DLL) siempre que sea práctico.** Si lo hace, ofrece una mejor velocidad y precisión, y también se siente más cómodo para los usuarios.
+-   **En el caso de los botones de comando usados para los comandos más importantes o usados con frecuencia, use un tamaño mínimo de 40 x 40 píxeles (23 x 22 D DLL) siempre que sea práctico.** Si lo hace, se mejora la velocidad y la precisión, y también se siente más cómodo para los usuarios.
 
     ![Captura de pantalla que muestra varios tamaños de un botón "Enviar" de correo electrónico, con los tamaños más pequeños a mayores de izquierda a derecha.](images/inter-touch-image18.png)
 
@@ -359,11 +359,11 @@ En este ejemplo, la interfaz de usuario de entrada se acerca al 150 por ciento.
 
 El espaciado entre controles es un factor significativo para que los controles se puedan tocar fácilmente. La orientación es más rápida pero menos precisa cuando se usa un dedo como dispositivo que apunta, lo que da lugar a que los usuarios toque más a menudo fuera de su destino previsto. Cuando los controles interactivos se colocan muy cerca, pero no se tocan realmente, los usuarios pueden hacer clic en el espacio inactivo entre los controles. Dado que hacer clic en el espacio inactivo no tiene ningún resultado o comentarios visuales, los usuarios a menudo no están seguros de lo que salió mal.
 
-**Ajuste dinámicamente el espaciado en función del dispositivo de entrada utilizado.** Esto es especialmente útil con la interfaz de usuario transitoria, como los menús y los controles emergentes.
+**Ajuste dinámicamente el espaciado en función del dispositivo de entrada utilizado.** Esto es especialmente útil con la interfaz de usuario transitoria, como menús y controles desplegables.
 
 **Proporcione un mínimo de 5 píxeles (3 D DLL) de espacio entre las regiones de destino de los controles interactivos.** Si los controles pequeños están demasiado espaciados, el usuario debe pulsar con precisión para evitar pulsar el objeto incorrecto.
 
-**Haga que los controles de los grupos sean más fáciles de diferenciar mediante el uso de más que el espaciado vertical recomendado entre los controles.** Por ejemplo, los botones de radio de 19 píxeles de alto son más cortos que el tamaño mínimo recomendado de 23 píxeles. Cuando tenga espacio vertical disponible, puede lograr aproximadamente el mismo efecto que el tamaño recomendado agregando 4 píxeles de espaciado adicionales a los 7 píxeles estándar.
+**Facilitar la diferenciación de los controles dentro de grupos mediante el uso de más que el espaciado vertical recomendado entre controles.** Por ejemplo, los botones de radio de 19 píxeles de alto son más cortos que el tamaño mínimo recomendado de 23 píxeles. Cuando tenga espacio vertical disponible, puede lograr aproximadamente el mismo efecto que el tamaño recomendado agregando 4 píxeles adicionales de espaciado a los 7 píxeles estándar.
 
 Correcto:
 
@@ -375,60 +375,60 @@ Mejor:
 
 En el mejor ejemplo, el espaciado adicional entre los botones de radio facilita su diferenciación.
 
-Puede haber situaciones en las que el espaciado adicional sería deseable al usar la función táctil, pero no cuando se usa el mouse o el teclado. En tales casos, solo se usa un diseño más amplio cuando se inicia una acción mediante la función táctil.
+Puede haber situaciones en las que sería deseable un espaciado adicional al usar la función táctil, pero no cuando se usa el mouse o el teclado. En tales casos, use solo un diseño más amplio cuando se inicie una acción mediante la función táctil.
 
-**Elija un diseño que coloca los controles cerca de donde es más probable que se van a usar.** Mantenga las interacciones de tareas dentro de un área pequeña siempre que sea posible y localice los controles cerca de donde es más probable que se van a usar. Evite los movimientos de mano de larga distancia, especialmente para tareas comunes y para arrastres.
+**Elija un diseño que coloca los controles cerca de donde probablemente se van a usar.** Mantenga las interacciones de tareas dentro de un área pequeña siempre que sea posible y busque controles cerca de donde probablemente se van a usar. Evite los movimientos de mano de larga distancia, especialmente para tareas comunes y para arrastres.
 
-Tenga en cuenta que la ubicación del puntero actual es la más cercana a un destino, lo que hace que sea trivial adquirirlo. Por lo tanto, los menús contextuales aprovechan al máximo la ley de Fitts, al igual que las mini barras de herramientas que Microsoft Office.
+Tenga en cuenta que la ubicación del puntero actual es la más cercana a un destino, lo que hace que sea trivial adquirirlo. Por lo tanto, los menús contextuales aprovechan al máximo la ley de Fitts, al igual que las mini-barras de herramientas que Microsoft Office.
 
 ![Captura de pantalla que muestra un ejemplo de un menú contextual y una mini barra de herramientas Microsoft Office en paralelo.](images/inter-touch-image27.png)
 
-**Evite colocar controles pequeños cerca del borde de la aplicación o la pantalla.** Los objetivos pequeños cerca de los bordes pueden ser difíciles de tocar (los biseles de pantalla pueden interferir con los gestos del borde). Para asegurarse de que los controles son fáciles de dirigir cuando se maximiza una ventana, puede hacerlos al menos de 23 x 23 píxeles (13 x 13 D DLL) o colocarlos fuera del borde de la ventana.
+**Evite colocar controles pequeños cerca del borde de la aplicación o la pantalla.** Los objetivos pequeños cerca de los bordes pueden ser difíciles de tocar (los biseles de pantalla pueden interferir con los gestos del borde). Para asegurarse de que los controles son fáciles de dirigir cuando se maximiza una ventana, puede hacerlos al menos 23 x 23 píxeles (13 x 13 D DLL) o colocarlos fuera del borde de la ventana.
 
-**Use el espaciado recomendado.** El espaciado recomendado es táctil. Sin embargo, si la aplicación puede beneficiarse de un tamaño y espaciado mayores, tenga en cuenta que el tamaño y el espaciado recomendados son mínimos cuando corresponda.
+**Use el espaciado recomendado.** El espaciado recomendado es táctil. Sin embargo, si la aplicación puede beneficiarse de un mayor tamaño y espaciado, tenga en cuenta que el tamaño y el espaciado recomendados son mínimos cuando corresponda.
 
 **Proporcione al menos 5 píxeles (3 D DLL) de espacio entre controles interactivos.** Si lo hace, se evita la confusión cuando los usuarios pulsan fuera de su destino previsto.
 
-Considere la posibilidad de agregar más que el espaciado vertical recomendado dentro de grupos de controles, como vínculos de comandos, casillas y botones de radio, así como entre los grupos. Al hacerlo, son más fáciles de diferenciar.
+Considere la posibilidad de agregar más que el espaciado vertical recomendado dentro de grupos de controles, como vínculos de comandos, casillas y botones de radio, así como entre los grupos. Si lo hace, será más fácil diferenciarlos.
 
 **Considere la posibilidad de agregar más que el espaciado vertical recomendado dinámicamente cuando se inicia una acción mediante la función táctil.** Si lo hace, los objetos son más fáciles de diferenciar, pero sin tener que dejar más espacio al usar un teclado o un mouse. Aumente el espaciado en un tercio de su tamaño normal o al menos 8 píxeles.
 
 ![imagen](images/inter-touch-image28.png)
 
-En este ejemplo, Windows 7 listas de saltos de la barra de tareas son más cómodas cuando se muestran mediante la función táctil.
+En este ejemplo, Windows 7 listas de saltos de la barra de tareas son más cómodas cuando se muestran con la función táctil.
 
 ### <a name="interaction"></a>Interacción
 
-El uso de los controles correctos le permite solo una parte del camino a una aplicación táctil optimizada, también debe tener en cuenta el modelo de interacción general que admiten esos controles. Estas son algunas directrices para ayudarle con esto.
+El uso de los controles correctos le permite obtener solo una parte del camino a una aplicación táctil optimizada, también debe tener en cuenta el modelo de interacción general que admiten esos controles. Estas son algunas directrices para ayudarle con esto.
 
--   **Haga que el puntero sea redundante.** La mayoría de las tecnologías táctiles no admiten el desplazamiento del mouse, por lo que los usuarios con estas pantallas táctiles no pueden realizar ninguna tarea que requiera mantener el puntero.
+-   **Haga que el puntero sea redundante.** La mayoría de las tecnologías táctiles no admiten el mantener el puntero, por lo que los usuarios con estas pantallas táctiles no pueden realizar ninguna tarea que requiera mantener el puntero.
 -   **Para las aplicaciones que necesitan entrada de texto, integre completamente la característica de teclado táctil** mediante:
     -   Proporcionar los valores predeterminados adecuados para la entrada del usuario.
-    -   Proporcionar sugerencias de autocompletar cuando sea necesario.
+    -   Proporcionar sugerencias de autocompletar cuando corresponda.
 
     > [!Note]  
-    > Desarrolladores: para obtener más información sobre la integración del teclado táctil, [**vea ITextInputPanel**](/windows/desktop/api/peninputpanel/nn-peninputpanel-itextinputpanel).
+    > Desarrolladores: para obtener más información sobre la integración del teclado táctil, vea [**ITextInputPanel**](/windows/desktop/api/peninputpanel/nn-peninputpanel-itextinputpanel).
 
      
 
--   **Permitir a los usuarios acercar la interfaz de usuario de contenido si el programa tiene tareas que requieren editar texto.** Considere la posibilidad de acercar automáticamente al 150 % cuando se usa la función táctil.
--   **Proporcione movimiento panorámico y zoom suave y con capacidad de respuesta siempre que sea adecuado.** Vuelva a dibujar rápidamente después de un desplazamiento panorámico o zoom para mantener la capacidad de respuesta. Es necesario hacerlo para que la manipulación directa sea realmente directa.
--   **Durante un movimiento panorámico o zoom, asegúrese de que los puntos de contacto permanecen debajo del dedo a lo largo del gesto.** De lo contrario, el desplazamiento panorámico o el zoom es difícil de controlar.
--   **Dado que los gestos se memorizan, asígneles significados coherentes entre aplicaciones.** No dé significados diferentes a los gestos con semántica fija. En su lugar, use un gesto específico de la aplicación adecuado.
+-   **Permitir a los usuarios acercar la interfaz de usuario de contenido si el programa tiene tareas que requieren editar texto.** Considere la posibilidad de acercarse automáticamente al 150 % cuando se usa la función táctil.
+-   **Proporcione un movimiento panorámico y zoom suave y con capacidad de respuesta siempre que sea adecuado.** Vuelva a dibujar rápidamente después de un desplazamiento panorámico o zoom para mantener la capacidad de respuesta. Esto es necesario para que la manipulación directa sea realmente directa.
+-   **Durante una panorámica o zoom, asegúrese de que los puntos de contacto permanecen debajo del dedo a lo largo del gesto.** De lo contrario, el desplazamiento panorámico o el zoom es difícil de controlar.
+-   **Dado que los gestos se memorizan, asígneles significados coherentes entre aplicaciones.** No dé significados diferentes a los gestos con semántica fija. En su lugar, use un gesto adecuado específico de la aplicación.
 
 ### <a name="forgiveness"></a>Perdón
 
-La manipulación directa hace que el toque sea natural, expresivo, eficaz y atractivo. Sin embargo, cuando hay manipulación directa, puede haber una manipulación accidental y, por lo tanto, la necesidad de una repulsa.
+La manipulación directa hace que el toque sea natural, expresivo, eficaz y atractivo. Sin embargo, cuando hay manipulación directa, puede haber una manipulación accidental y, por lo tanto, la necesidad de una manipulación.
 
-La excepción es la capacidad de invertir o corregir fácilmente una acción no deseada. Puede realizar una experiencia táctil al proporcionar deshacer, proporcionar buenos comentarios visuales, tener una separación física clara entre los comandos usados con frecuencia y los comandos destructivos, y permitir que los usuarios corrijan los errores fácilmente. La asociación con la inserte impide que se realicen acciones no deseadas en primer lugar, lo que se puede hacer mediante controles restringidos y confirmaciones de acciones o comandos de riesgo que tienen consecuencias no deseadas.
+El desasosición es la capacidad de invertir o corregir fácilmente una acción no deseado. Para realizar una experiencia táctil, se permite la acción de deshacer, proporcionar buenos comentarios visuales, tener una separación física clara entre los comandos usados con frecuencia y los comandos destructivos, y permitir que los usuarios corrijan los errores fácilmente. La asociación con la tolerancia impide que las acciones no deseadas se realicen en primer lugar, lo que se puede hacer mediante controles restringidos y confirmaciones para acciones o comandos de riesgo que tienen consecuencias no deseadas.
 
 -   **Proporcione un comando Deshacer.** Es mejor proporcionar una manera sencilla de deshacer todos los comandos, pero la aplicación puede tener algunos comandos cuyo efecto no se puede deshacer.
--   **Siempre que sea práctico, proporcione buenos comentarios sobre el dedo hacia abajo, pero no tome medidas hasta que se den los dedos.** Esto permite a los usuarios corregir los errores antes de que los cometen.
--   **Siempre que sea práctico, permita a los usuarios corregir errores fácilmente.** Si una acción tiene efecto sobre el dedo hacia arriba, permita que los usuarios corrijan los errores deslizándose mientras el dedo sigue estando abajo.
--   **Siempre que sea práctico, indique que no se puede realizar una manipulación directa al resistir el movimiento.** Permita que se haga el movimiento, pero haga que el objeto vuelva a establecerse cuando se libera para indicar claramente que la acción se ha reconocido, pero no se puede realizar.
--   **Tener una separación física clara entre los comandos usados con frecuencia y los comandos destructivos.** De lo contrario, los usuarios podrían tocar comandos destructivos accidentalmente. Un comando se considera destructivo si su efecto está generalizado y no se puede deshacer fácilmente o el efecto no se aprecia inmediatamente.
--   **Confirme los comandos de acciones o comandos de riesgo que tienen consecuencias imp previstas.** Use un cuadro de diálogo de confirmación para este propósito.
--   **Considere la posibilidad de confirmar cualquier otra acción que los usuarios tienden a realizar accidentalmente al usar la función táctil y que no se puedan pasar desapercibidas o que sean difíciles de deshacer.** Normalmente, se denominan confirmaciones rutinarias y no se recomiendan en función de la suposición de que los usuarios no suelen emitir dichos comandos por accidente con un mouse o un teclado. Para evitar confirmaciones innecesarias, presente estas confirmaciones solo si el comando se inició mediante la función táctil.
+-   **Siempre que sea práctico, proporcione buenos comentarios sobre el dedo hacia abajo, pero no tome medidas hasta que suba el dedo.** Esto permite a los usuarios corregir errores antes de hacerlo.
+-   **Siempre que sea práctico, permita a los usuarios corregir errores fácilmente.** Si una acción tiene efecto sobre el dedo hacia arriba, permita que los usuarios corrijan los errores deslizando el dedo mientras el dedo todavía está abajo.
+-   **Siempre que sea práctico, indique que no se puede realizar una manipulación directa mediante la resistencia al movimiento.** Permita que se produjera el movimiento, pero haga que el objeto vuelva a establecerse en su lugar cuando se libera para indicar claramente que la acción se ha reconocido, pero no se puede realizar.
+-   **Tener una separación física clara entre los comandos usados con frecuencia y los comandos destructivos.** De lo contrario, los usuarios podrían tocar comandos destructivos accidentalmente. Un comando se considera destructivo si su efecto está generalizado y no se puede deshacer fácilmente o el efecto no se nota inmediatamente.
+-   **Confirme los comandos de acciones de riesgo o comandos que tienen consecuencias impositivas.** Use un cuadro de diálogo de confirmación para este propósito.
+-   **Considere la posibilidad de confirmar cualquier otra acción que los usuarios tienden a realizar accidentalmente al usar la función táctil y que se desaperciban o son difíciles de deshacer.** Normalmente, se denominan confirmaciones rutinarias y no se recomiendan en función de la suposición de que los usuarios no suelen emitir dichos comandos por accidente con un mouse o un teclado. Para evitar confirmaciones innecesarias, presente estas confirmaciones solo si el comando se inició mediante touch.
 
     Las confirmaciones rutinarias son aceptables para las interacciones que los usuarios suelen realizar accidentalmente mediante la función táctil.
 

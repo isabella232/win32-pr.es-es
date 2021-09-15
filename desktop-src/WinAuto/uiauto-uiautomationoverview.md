@@ -6,40 +6,40 @@ keywords:
 - Automatización de la interfaz de usuario,about
 - Automatización de la interfaz de usuario,accesibilidad
 - Automatización de la interfaz de usuario,components
-- Automatización de la interfaz de usuario,PROVIDER API
+- Automatización de la interfaz de usuario,API de proveedor
 - Automatización de la interfaz de usuario,API de cliente
 - Automatización de la interfaz de usuario,archivos de encabezado
 - Automatización de la interfaz de usuario,model
 - components
 - accesibilidad
-- API de proveedor
+- API del proveedor
 - API de cliente
 - archivos de encabezado
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 3664866280d570f9fa5f07acc6245ca2b4c1bff7
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470062"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359232"
 ---
 # <a name="ui-automation-overview"></a>Información general sobre UI Automation
 
 Microsoft Automatización de la interfaz de usuario es un marco de accesibilidad para Windows. Proporciona acceso mediante programación a la mayoría de los elementos de la interfaz de usuario en el escritorio. Permite que los productos de tecnología de asistencia, como los lectores de pantalla, proporcionen información sobre la interfaz de usuario a los usuarios finales y manipulen la interfaz de usuario por medios distintos de la entrada estándar. Automatización de la interfaz de usuario también permite que los scripts de prueba automatizados interactúen con la interfaz de usuario.
 
-Automatización de la interfaz de usuario primero estaba disponible en Windows XP como parte de Microsoft .NET Framework. Aunque en ese momento también se publicó una API de C++ no administrada, la utilidad de las funciones de cliente estaba limitada debido a problemas de interoperabilidad. Para Windows 7, la API se ha reescrito en Component Object Model (COM).
+Automatización de la interfaz de usuario disponible primero en Windows XP como parte de microsoft .NET Framework. Aunque en ese momento también se publicó una API de C++ no administrada, la utilidad de las funciones de cliente era limitada debido a problemas de interoperabilidad. Para Windows 7, la API se ha reescrito en Component Object Model (COM).
 
 > [!Note]  
 > Aunque las funciones de biblioteca introducidas en la versión anterior de Automatización de la interfaz de usuario todavía están documentadas, no deben usarse en nuevas aplicaciones.
 
  
 
-Automatización de la interfaz de usuario aplicaciones cliente se pueden escribir con la garantía de que funcionarán en varios marcos de control Windows Microsoft. El Automatización de la interfaz de usuario enmascara las diferencias en los marcos que subyacen a varias partes de la interfaz de usuario. Por ejemplo, la propiedad **Content** de un botón Windows Presentation Foundation (WPF), la propiedad **Caption** de un botón de Microsoft Win32 y la propiedad **ALT** de una imagen HTML se asignan a una sola propiedad, **Name**, en la vista Automatización de la interfaz de usuario.
+Automatización de la interfaz de usuario las aplicaciones cliente se pueden escribir con la garantía de que funcionarán en varios marcos de control Windows Microsoft. El Automatización de la interfaz de usuario principal enmascara las diferencias en los marcos que subyacen a varias partes de la interfaz de usuario. Por ejemplo, la propiedad **Content** de un botón Windows Presentation Foundation (WPF), la propiedad **Caption** de un botón de Microsoft Win32 y la propiedad **ALT** de una imagen HTML se asignan a una sola propiedad, **Name**, en la vista Automatización de la interfaz de usuario.
 
 Automatización de la interfaz de usuario proporciona funcionalidad completa en Windows XP, Windows Server 2003 y sistemas operativos posteriores.
 
-Automatización de la interfaz de usuario son componentes que implementan compatibilidad con Automatización de la interfaz de usuario en controles y ofrecen compatibilidad con aplicaciones cliente de Microsoft Active Accessibility, a través de un servicio de puente integrado.
+Automatización de la interfaz de usuario son componentes que implementan compatibilidad Automatización de la interfaz de usuario en los controles y ofrecen cierta compatibilidad con las aplicaciones cliente de Microsoft Active Accessibility, a través de un servicio de puente integrado.
 
 > [!Note]  
 > Automatización de la interfaz de usuario no habilita la comunicación entre los procesos iniciados por distintos usuarios mediante el **comando Ejecutar** como.
@@ -62,9 +62,9 @@ Automatización de la interfaz de usuario tiene cuatro componentes principales, 
 
 | Componente | Descripción | 
 |-----------|-------------|
-| API de proveedor | Un conjunto de interfaces COM que implementan los Automatización de la interfaz de usuario de trabajo. Automatización de la interfaz de usuario son objetos que proporcionan información sobre los elementos de la interfaz de usuario y responden a la entrada mediante programación. | 
-| API de cliente | Conjunto de interfaces COM que permiten a las aplicaciones cliente obtener información sobre la interfaz de usuario y enviar entradas a los controles.<blockquote>[!Note]<br />Las funciones descritas en <a href="uiauto-entry-cpfunctions.md">Funciones de patrón de control en desuso</a> y Funciones de <a href="uiauto-entry-uianodefunctions.md">nodo</a> en desuso están en desuso. En su lugar, las aplicaciones cliente deben usar las Automatización de la interfaz de usuario COM descritas <a href="uiauto-entry-uiautoclientinterfaces.md">en Automatización de la interfaz de usuario Interfaces de elementos para clientes</a>.</blockquote><br /> | 
-| UIAutomationCore.dll | La biblioteca en tiempo de ejecución, a veces denominada Automatización de la interfaz de usuario principal, que controla la comunicación entre proveedores y clientes. | 
+| API del proveedor | Conjunto de interfaces COM que implementan los proveedores de Automatización de la interfaz de usuario. Automatización de la interfaz de usuario son objetos que proporcionan información sobre los elementos de la interfaz de usuario y responden a la entrada mediante programación. | 
+| API de cliente | Conjunto de interfaces COM que permiten a las aplicaciones cliente obtener información sobre la interfaz de usuario y enviar entradas a los controles.<blockquote>[!Note]<br />Las funciones descritas en <a href="uiauto-entry-cpfunctions.md">Funciones de patrón de control en desuso</a> y Funciones de <a href="uiauto-entry-uianodefunctions.md">nodo</a> en desuso están en desuso. En su lugar, las aplicaciones cliente deben usar las Automatización de la interfaz de usuario COM descritas <a href="uiauto-entry-uiautoclientinterfaces.md">en Automatización de la interfaz de usuario interfaces de elementos para clientes</a>.</blockquote><br /> | 
+| UIAutomationCore.dll | La biblioteca en tiempo de ejecución, a veces denominada Automatización de la interfaz de usuario core, que controla la comunicación entre proveedores y clientes. | 
 | Oleacc.dll | La biblioteca en tiempo de ejecución para Microsoft Active Accessibility y los objetos proxy. La biblioteca también proporciona objetos proxy usados por Microsoft Microsoft Active Accessibility para Automatización de la interfaz de usuario proxy para admitir controles Win32. | 
 
 
@@ -72,11 +72,11 @@ Automatización de la interfaz de usuario tiene cuatro componentes principales, 
 
  
 
-Hay dos maneras de usar Automatización de la interfaz de usuario: crear compatibilidad con controles personalizados mediante la API del proveedor y crear aplicaciones cliente que usan el núcleo de Automatización de la interfaz de usuario para comunicarse con elementos de interfaz de usuario y recuperar información sobre ellos. En función de su enfoque, debe hacer referencia a diferentes partes de la documentación. Si necesita crear compatibilidad con controles personalizados, vea Automatización de la interfaz de usuario Guía del [programador del proveedor de aplicaciones.](uiauto-providerportal.md) Si necesita comunicarse con o recuperar información sobre los elementos de la interfaz de usuario, vea Automatización de la interfaz de usuario Guía del programador [de cliente.](uiauto-clientportal.md)
+Hay dos maneras de usar Automatización de la interfaz de usuario: crear compatibilidad con controles personalizados mediante la API del proveedor y crear aplicaciones cliente que usan el núcleo de Automatización de la interfaz de usuario para comunicarse con los elementos de la interfaz de usuario y recuperar información sobre ellos. En función de su enfoque, debe hacer referencia a diferentes partes de la documentación. Si necesita crear compatibilidad con controles personalizados, consulte la [Automatización de la interfaz de usuario del programador del proveedor.](uiauto-providerportal.md) Si necesita comunicarse con o recuperar información sobre los elementos de la interfaz de usuario, vea Automatización de la interfaz de usuario guía del [programador de cliente.](uiauto-clientportal.md)
 
 ## <a name="ui-automation-header-files"></a>Automatización de la interfaz de usuario de encabezado
 
-La API Automatización de la interfaz de usuario se define en varios archivos de encabezado de C/C++ diferentes que se incluyen con el Kit de desarrollo de software (SDK) de Windows. Los Automatización de la interfaz de usuario de encabezado se describen en la tabla siguiente:
+La AUTOMATIZACIÓN DE LA INTERFAZ DE USUARIO API se define en varios archivos de encabezado de C/C++ diferentes que se incluyen con el Kit de desarrollo de software (SDK) de Windows. Los Automatización de la interfaz de usuario de encabezado se describen en la tabla siguiente:
 
 
 
@@ -91,18 +91,18 @@ La API Automatización de la interfaz de usuario se define en varios archivos de
 
  
 
-Si está desarrollando una aplicación que usa la API Automatización de la interfaz de usuario, debe incluir UIAutomation.h en el proyecto. Si la aplicación admite Microsoft Active Accessibility, incluya el archivo de encabezado Oleacc.h. Automatización de la interfaz de usuario aplicaciones que usan GUID también requieren el archivo de encabezado Initguid.h. Si es necesario, se debe incluir Initguid.h antes de UIAutomation.h.
+Si está desarrollando una aplicación que usa la API Automatización de la interfaz de usuario, debe incluir UIAutomation.h en el proyecto. Si la aplicación admite Microsoft Active Accessibility, incluya el archivo de encabezado Oleacc.h. Automatización de la interfaz de usuario aplicaciones que usan GUID también requieren el archivo de encabezado Initguid.h. Si es necesario, Initguid.h debe incluirse antes que UIAutomation.h.
 
 ## <a name="ui-automation-model"></a>Modelo de la automatización de la interfaz de usuario
 
-Automatización de la interfaz de usuario expone todos los elementos de la interfaz de usuario a las aplicaciones cliente como un objeto representado por la [**interfaz IUIAutomationElement.**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) Los elementos se encuentran en una estructura de árbol, con el escritorio como el elemento raíz. Los clientes pueden filtrar la vista sin formato del árbol como una vista de control o una vista de contenido. Estas vistas estándar de la estructura se pueden ver fácilmente mediante la [aplicación Inspect](inspect-objects.md) que se incluye con Windows SDK. Las aplicaciones también pueden crear vistas personalizadas.
+Automatización de la interfaz de usuario expone todos los elementos de la interfaz de usuario a las aplicaciones cliente como un objeto representado por la [**interfaz IUIAutomationElement.**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationelement) Los elementos se encuentran en una estructura de árbol, con el escritorio como el elemento raíz. Los clientes pueden filtrar la vista sin formato del árbol como una vista de control o una vista de contenido. Estas vistas estándar de la estructura se pueden ver fácilmente mediante [la aplicación Inspect](inspect-objects.md) que se incluye con Windows SDK. Las aplicaciones también pueden crear vistas personalizadas.
 
-Un Automatización de la interfaz de usuario expone las propiedades del control o elemento de interfaz de usuario que representa. Una de estas propiedades es el tipo de control , que define la apariencia básica y la funcionalidad del control o elemento de interfaz de usuario como una única entidad reconocible, por ejemplo, un botón o una casilla. Para obtener más información sobre los tipos de control, [vea Automatización de la interfaz de usuario información general sobre los tipos de control](uiauto-controltypesoverview.md).
+Un Automatización de la interfaz de usuario expone las propiedades del control o elemento de interfaz de usuario que representa. Una de estas propiedades es el tipo de control , que define la apariencia básica y la funcionalidad del control o elemento de interfaz de usuario como una única entidad reconocible, por ejemplo, un botón o una casilla. Para obtener más información sobre los tipos de control, [vea Automatización de la interfaz de usuario información general sobre los tipos de control .](uiauto-controltypesoverview.md)
 
 Además, un elemento Automatización de la interfaz de usuario expone uno o varios patrones de control. Un patrón de control proporciona un conjunto de propiedades que son específicas de un tipo de control determinado. Un patrón de control también expone métodos que permiten a las aplicaciones cliente obtener más información sobre el elemento y proporcionar entradas al elemento. Para más información sobre los patrones de control, vea [UI Automation Control Patterns Overview](uiauto-controlpatternsoverview.md).
 
 > [!Note]  
-> No hay ninguna correspondencia uno a uno entre los tipos de control y los patrones de control. Un patrón de control puede ser compatible con varios tipos de control y un control puede admitir varios patrones de control, cada uno de los cuales expone diferentes aspectos de su comportamiento. Por ejemplo, un cuadro combinado tiene al menos dos patrones de control: uno que representa su capacidad para expandir y contraer, y otro que representa el mecanismo de selección. Sin embargo, un control solo puede mostrar un tipo de control único.
+> No hay ninguna correspondencia uno a uno entre los tipos de control y los patrones de control. Un patrón de control puede ser compatible con varios tipos de control y un control puede admitir varios patrones de control, cada uno de los cuales expone diferentes aspectos de su comportamiento. Por ejemplo, un cuadro combinado tiene al menos dos patrones de control: uno que representa su capacidad para expandir y contraer, y otro que representa el mecanismo de selección. Sin embargo, un control solo puede mostrar un tipo de control.
 
  
 

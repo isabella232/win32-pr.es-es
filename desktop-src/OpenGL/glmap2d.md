@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c86699f3d1a897476b33d15aec857228c6293d9bd66e260528cdaf468d664252
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e072635c411c7a3e28977316c388a9b1597fcd1f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118359056"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272079"
 ---
 # <a name="glmap2d-function"></a>Función glMap2d
 
@@ -56,10 +56,10 @@ Tipo de valores generados por el evaluador. Se aceptan las siguientes constantes
 
 
 
-| Valor                                                                                                                                                                                          | Significado                                                                                                                                                                                                                                                                                                                               |
+| Value                                                                                                                                                                                          | Significado                                                                                                                                                                                                                                                                                                                               |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="GL_MAP2_VERTEX_3"></span><span id="gl_map2_vertex_3"></span><dl> <dt>**GL \_ MAP2 \_ VERTEX \_ 3**</dt> </dl>                       | Cada punto de control es tres valores de punto flotante que *representan x, y y* *z.* Los [**comandos glVertex3**](glvertex-functions.md) internos se generan cuando se evalúa el mapa.<br/>                                                                                                                                         |
-| <span id="GL_MAP2_VERTEX_4"></span><span id="gl_map2_vertex_4"></span><dl> <dt>**GL \_ MAP2 \_ VERTEX \_ 4**</dt> </dl>                       | Cada punto de control es cuatro valores de punto flotante que *representan x, y, z* y *w*. Los [**comandos glVertex4**](glvertex-functions.md) internos se generan cuando se evalúa el mapa.<br/>                                                                                                                                       |
+| <span id="GL_MAP2_VERTEX_4"></span><span id="gl_map2_vertex_4"></span><dl> <dt>**GL \_ MAP2 \_ VERTEX \_ 4**</dt> </dl>                       | Cada punto de control es cuatro valores de punto flotante que *representan x, y, z y* *w*. Los [**comandos glVertex4**](glvertex-functions.md) internos se generan cuando se evalúa el mapa.<br/>                                                                                                                                       |
 | <span id="GL_MAP2_INDEX"></span><span id="gl_map2_index"></span><dl> <dt>**GL \_ MAP2 \_ INDEX**</dt> </dl>                                 | Cada punto de control es un valor de punto flotante único que representa un índice de color. Los [**comandos glIndex**](glindex-functions.md) internos se generan cuando se evalúa el mapa. Sin embargo, el índice actual no se actualiza con el valor de estos **comandos glIndex.**<br/>                                                    |
 | <span id="GL_MAP2_COLOR_4"></span><span id="gl_map2_color_4"></span><dl> <dt>**GL \_ MAP2 \_ COLOR \_ 4**</dt> </dl>                          | Cada punto de control es cuatro valores de punto flotante que representan rojo, verde, azul y alfa. Los [**comandos glColor4**](glcolor-functions.md) internos se generan cuando se evalúa el mapa. Sin embargo, el color actual no se actualiza con el valor de estos **comandos glColor4.**<br/>                                       |
 | <span id="GL_MAP2_NORMAL"></span><span id="gl_map2_normal"></span><dl> <dt>**GL \_ MAP2 \_ NORMAL**</dt> </dl>                              | Cada punto de control es tres valores de punto flotante que representan los *componentes x, y* *y z* de un vector normal. Los [**comandos glNormal**](glnormal-functions.md) internos se generan cuando se evalúa el mapa. Sin embargo, la normal actual no se actualiza con el valor de estos **comandos glNormal.**<br/>              |
@@ -157,11 +157,11 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los evaluadores proporcionan una manera de usar la asignación polinómica o polinómica racionalizada para generar vértices, normales, coordenadas de textura y colores. Los valores generados por un evaluador se envían a otras fases del procesamiento openGL como si se hubieran presentado mediante los comandos [**glVertex**](glvertex-functions.md), [**glNormal,**](glnormal-functions.md) [**glTexCoord**](gltexcoord-functions.md)y [**glColor,**](glcolor-functions.md) salvo que los valores generados no actualizan la normal actual, las coordenadas de textura o el color.
 
-Todas las spline polinómicas o polinómicas racionalizas de cualquier grado (hasta el grado máximo admitido por la implementación de OpenGL) se pueden describir mediante evaluadores. Entre ellas se incluyen casi todas las superficies usadas en gráficos de equipo, incluidas las superficies B-spline, las superficies DE SPLINEBS, las superficies Bézier, entre otras.
+Todas las curvas spline polinómicas o polinómicas racionalizas de cualquier grado (hasta el grado máximo admitido por la implementación de OpenGL) se pueden describir mediante evaluadores. Entre ellas se incluyen casi todas las superficies usadas en gráficos de equipo, incluidas las superficies B-spline, las superficies DE SPLINEBS, las superficies Bézier, entre otras.
 
 Los evaluadores definen superficies basadas en polinomios bivariados de Bernstein. Defina **p** (*u*^,*v*^) como
 
@@ -175,7 +175,7 @@ donde **R** *ij* es un punto de control, () es *el polinómico i* th DeMoson de 
 
 y () es el polinómico *j* th DeMosth de degree *m* (*vorder*  =  *m* + 1)
 
-![Ecuación que muestra el polinómico de Grado m.](images/map07.png)
+![Ecuación que muestra el polinómico De grados m.](images/map07.png)
 
 Recuerde que
 
@@ -191,11 +191,11 @@ y
 
 El *parámetro* de destino es una constante simbólica que indica qué tipo de puntos de control se proporcionan en los puntos y qué salida se genera cuando se evalúa el mapa.
 
-Los *parámetros ustride*, *uorder,* *vstride,* *vorder* y *points* definen el direccionamiento de matriz para acceder a los puntos de control. El *parámetro points* es la ubicación del primer punto de control, que ocupa una, dos, tres o cuatro ubicaciones de memoria contiguas, en función del mapa que se esté definindo. Hay puntos *de control uorder* x *vorder* en la matriz. El *parámetro ustride* indica cuántas ubicaciones float o double se omiten para avanzar el puntero de memoria interno del punto de control **R** *ij* al punto de control **R** <sub>(\ i+1\ )j</sub>. El *parámetro vstride* indica cuántas ubicaciones float o double se omiten para avanzar el puntero de memoria interno desde el punto de control **R** *ij* hasta el punto de control **R**<sub>i(j\ +1\).</sub>
+Los *parámetros ustride*, *uorder,* *vstride,* *vorder* y *points* definen el direccionamiento de matriz para acceder a los puntos de control. El *parámetro points* es la ubicación del primer punto de control, que ocupa una, dos, tres o cuatro ubicaciones de memoria contiguas, en función del mapa que se defina. Hay puntos *de control uorder* x *vorder* en la matriz. El *parámetro ustride* indica cuántas ubicaciones float o double se omiten para avanzar el puntero de memoria interno del punto de control **R** *ij* al punto de control **R** <sub>(\ i+1\ )j</sub>. El *parámetro vstride* indica cuántas ubicaciones float o double se omiten para avanzar el puntero de memoria interno desde el punto de control **R** *ij* hasta el punto de control **R**<sub>i(j\ +1\).</sub>
 
 Como sucede con todos los comandos de OpenGL que aceptan punteros  a datos, es como si **glMap2** copiara el contenido de los puntos antes de devolverlo. Los cambios en el contenido de *los puntos* no tienen ningún efecto después de llamar **a glMap2.**
 
-Las funciones siguientes recuperan información relacionada **con glMap2**:
+Las siguientes funciones recuperan información relacionada con **glMap2**:
 
 [**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAX \_ EVAL \_ ORDER
 
@@ -223,7 +223,7 @@ Las funciones siguientes recuperan información relacionada **con glMap2**:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |

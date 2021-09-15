@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3809208abddc317cff7ba9799860a4ee9ccae96e987e94eecab9ad5c3aba226f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 83c7919a352819eafa6d8cd5c3c72d77255824fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119507165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359040"
 ---
 # <a name="userplaycountweekend-attribute"></a>Atributo UserPlaycountWeekend
 
-El **atributo UserPlaycountWeekend es** el número de veces que el elemento se ha reproducido un sábado o un domingo.
+El **atributo UserPlaycountWeekend** es el número de veces que el elemento se ha reproducido un sábado o un domingo.
 
 ## <a name="applies-to"></a>Se aplica a
 
@@ -30,7 +30,7 @@ El **atributo UserPlaycountWeekend es** el número de veces que el elemento se h
 -   [Listas](playlist-attributes-ref.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la biblioteca.
 
@@ -40,7 +40,7 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 

@@ -6,16 +6,16 @@ keywords:
 - Windows SDK de formato multimedia, EC_WMT_INDEX_EVENT
 - DirectShow,EC_WMT_INDEX_EVENT
 - EC_WMT_INDEX_EVENT
-- Formato de sistemas avanzados (ASF), EC_WMT_INDEX_EVENT
+- Formato de sistemas avanzados (ASF),EC_WMT_INDEX_EVENT
 - ASF (formato de sistemas avanzados),EC_WMT_INDEX_EVENT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fd6efe81f6ea924b234dced2d38a11eda240b5de1b9edbe1e4f66c541e7a1b65
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f34bca14ed02ac78fcfc77d1b9b716f75115a24f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120110485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360590"
 ---
 # <a name="ec_wmt_index_event-windows-media-format-11-sdk"></a>EC_WMT_INDEX_EVENT (Windows SDK de Formato multimedia 11)
 

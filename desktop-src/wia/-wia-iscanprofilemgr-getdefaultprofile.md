@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: a496a2e606e389f8b2e1dfd7808d56e4360108a27ef66fbc0937ef1040514e44
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e058094fc29510d6e073abc0b05374403a2b5cd9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119549774"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359992"
 ---
 # <a name="iscanprofilemgrgetdefaultprofile-method"></a>IScanProfileMgr::GetDefaultProfile (método)
 
@@ -64,7 +64,7 @@ Tipo: **HRESULT**
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El perfil predeterminado tiene un `<Default>` elemento .
 
@@ -72,12 +72,12 @@ El perfil predeterminado tiene un `<Default>` elemento .
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
-| Header<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
-| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 

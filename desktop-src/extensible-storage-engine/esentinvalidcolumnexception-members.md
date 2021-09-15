@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101885
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: a87ec1ad9c8c966675b460a880247e6d08bbbfa24638fcfa914023ef3f7a4c03
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 12ee64f2de0c4f69750cb8b72d0791633cd1d2d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118982445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360494"
 ---
 # <a name="esentinvalidcolumnexception-members"></a>Miembros de EsentInvalidColumnException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Excepción que se produce cuando se produce un error en la conversión de una columna.
+Excepción que se produce cuando se produce un error en una conversión de columna.
 
 El [tipo EsentInvalidColumnException](./esentinvalidcolumnexception-class.md) expone los miembros siguientes.
 
@@ -63,7 +63,7 @@ Superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -84,7 +84,7 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn319488(v=exchg.10).md">Mensaje</a></td>
-<td>Obtiene un mensaje de texto que describe la excepción. (Invalida <a href="/dotnet/api/system.exception.message#System_Exception_Message">Exception.Message).</a></td>
+<td>Obtiene un mensaje de texto que describe la excepción. (Invalida <a href="/dotnet/api/system.exception.message#System_Exception_Message">Exception.Message</a>).</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -164,7 +164,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

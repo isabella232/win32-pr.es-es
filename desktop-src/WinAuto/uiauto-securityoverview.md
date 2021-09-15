@@ -19,16 +19,16 @@ keywords:
 - security,requestedExecutionLevel tag
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f88ba97be98795be3725efaf76cf01297d7a00a2bb0112b0211581b3e0e4035f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 12f2f5cf006c0adaf9b170a4ed11abd9afd52012
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118563968"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359242"
 ---
 # <a name="security-considerations-for-assistive-technologies"></a>Consideraciones de seguridad para las tecnologías de asistencia
 
-Las tecnologías de asistencia son aplicaciones que se ejecutan en el escritorio de Windows y ayudan a los usuarios de accesibilidad a interactuar con el sistema operativo y otras aplicaciones que se ejecutan en el equipo, incluidas las aplicaciones de la nueva interfaz de usuario Windows. Las aplicaciones de tecnología de asistencia funcionan recuperando información del sistema operativo y otras aplicaciones y, a continuación, presentando la información de una manera accesible para el usuario. Una aplicación de tecnología de asistencia también puede "controlar" mediante programación el sistema operativo y otras aplicaciones en función de la entrada del usuario.
+Las tecnologías de asistencia son aplicaciones que se ejecutan en el escritorio de Windows y ayudan a los usuarios de accesibilidad a interactuar con el sistema operativo y otras aplicaciones que se ejecutan en el equipo, incluidas las aplicaciones de la nueva interfaz de usuario de Windows. Las aplicaciones de tecnología de asistencia funcionan mediante la recuperación de información del sistema operativo y otras aplicaciones y, a continuación, la presentación de la información de una manera accesible para el usuario. Una aplicación de tecnología de asistencia también puede "controlar" mediante programación el sistema operativo y otras aplicaciones en función de la entrada del usuario.
 
 La naturaleza de las aplicaciones de tecnología de asistencia requiere que crucen los límites del proceso y que tengan acceso a los procesos que se ejecutan en un nivel de integridad (IL) más alto que ellos mismos. (Una aplicación de tecnología de asistencia se ejecuta en il medio). Por ejemplo, cuando el usuario intenta realizar una tarea que requiere privilegios administrativos, Windows un cuadro de diálogo en el que se solicita al usuario su consentimiento para continuar. Este cuadro de diálogo se ejecuta en un IL superior para protegerlo de la comunicación entre procesos, de modo que el software malintencionado no pueda simular la entrada del usuario. De forma similar, la pantalla de inicio de sesión de escritorio se ejecuta en un IL superior para evitar que otros procesos accedan a ella.
 
@@ -98,7 +98,7 @@ El valor del atributo **level** de este código es solo un ejemplo.
 
 **UIAccess** es "false" de forma predeterminada. Si se omite el atributo o si no hay ningún manifiesto, la aplicación no puede obtener acceso a la interfaz de usuario protegida.
 
-Para obtener más información sobre la seguridad de Windows, sobre la firma de aplicaciones y la creación de manifiestos, vea [The Windows Vista and Windows Server 2008 Developer Story: Windows Vista Application Development Requirements for User Account Control (UAC)](/previous-versions/aa905330(v=msdn.10)) (Historia del desarrollador de Windows Vista y Windows Server 2008: requisitos de desarrollo de aplicaciones de Windows Vista para el control de cuentas de usuario (UAC) en MSDN.
+Para obtener más información sobre la seguridad de Windows, sobre la firma de aplicaciones y la creación de manifiestos, vea [The Windows Vista and Windows Server 2008 Developer Story: Windows Vista Application Development Requirements for User Account Control (UAC)](/previous-versions/aa905330(v=msdn.10)) en MSDN.
 
 ## <a name="related-topics"></a>Temas relacionados
 

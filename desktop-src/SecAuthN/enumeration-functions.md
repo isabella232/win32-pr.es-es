@@ -4,18 +4,18 @@ ms.assetid: 9f7c0e5b-1358-43f8-84e4-26e84a2275ba
 title: Funciones de enumeración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 08f119256c4976e393795b45caf2fab9e7cec5353fed54718ef0be8db994ef2b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2670424be1540aad3e46e32c5b0606eb02e04bdc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119008243"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271452"
 ---
 # <a name="enumeration-functions"></a>Funciones de enumeración
 
 Si el proveedor de red necesita admitir la exploración de sus recursos de red, debe implementar las siguientes funciones. MPR llama a estas funciones para enumerar los recursos.
 
-No es necesario un proveedor de red para implementar ninguna de las funciones de enumeración. Sin embargo, si un proveedor de red implementa [**NPOpenEnum,**](/windows/desktop/api/Npapi/nf-npapi-npopenenum) [**NPEnumResource**](/windows/desktop/api/Npapi/nf-npapi-npenumresource)o [**NPCloseEnum,**](/windows/desktop/api/Npapi/nf-npapi-npcloseenum)también debe implementar las otras dos funciones de enumeración.
+No se requiere un proveedor de red para implementar ninguna de las funciones de enumeración. Sin embargo, si un proveedor de red implementa [**NPOpenEnum**](/windows/desktop/api/Npapi/nf-npapi-npopenenum), [**NPEnumResource**](/windows/desktop/api/Npapi/nf-npapi-npenumresource)o [**NPCloseEnum**](/windows/desktop/api/Npapi/nf-npapi-npcloseenum), también debe implementar las otras dos funciones de enumeración.
 
 
 

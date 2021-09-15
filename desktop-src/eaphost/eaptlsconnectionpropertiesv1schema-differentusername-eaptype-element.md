@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2980a55e76d238578822cfc8db54a9b6c324e21d4a8f0481ab9bc91e050fb008
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 505e23c74d4c1c8c74a50906809d0acc9ce06c42
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118984095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360139"
 ---
 # <a name="differentusername-eaptype-element"></a>Elemento DifferentUsername (EapType)
 
@@ -33,7 +33,7 @@ El **elemento DifferentUsername (EapType)** determina qué nombre de usuario va 
 
 El elemento [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md) define el elemento **DifferentUsername.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el **elemento DifferentUserName** es TRUE, EAP-TLS debe usar un nombre de usuario distinto del nombre que aparece en el certificado. Si el **elemento DifferentUserName** es FALSE, EAP-TLS usa el nombre de usuario que aparece en el certificado.
 
@@ -43,14 +43,14 @@ El **elemento DifferentUserName** es opcional.
 
 
 
-| Rol | Versión mínima del sistema operativo admitida |
+| Role | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Remoto<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

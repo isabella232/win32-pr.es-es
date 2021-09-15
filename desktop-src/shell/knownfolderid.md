@@ -1,20 +1,20 @@
 ---
-Description: Las constantes KNOWNFOLDERID representan GUID que identifican las carpetas estándar registradas en el sistema como carpetas conocidas.
+Description: Las constantes KNOWNFOLDERID representan GUID que identifican carpetas estándar registradas con el sistema como carpetas conocidas.
 ms.assetid: f2c08ade-3083-44e4-82b0-dde45f0e3094
 title: KNOWNFOLDERID (Knownfolders.h)
 ms.topic: reference
 ms.custom: snippet-project
 ms.date: 07/27/2020
 ms.openlocfilehash: 3d27f8831e4a68b6fb5bb95d7f4a6c34fe361db5
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122626381"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360369"
 ---
 # <a name="knownfolderid"></a>KNOWNFOLDERID
 
-Las **constantes KNOWNFOLDERID** representan GUID que identifican las carpetas estándar registradas con el sistema como [Carpetas conocidas.](known-folders.md) Estas carpetas se instalan con Windows Vista y sistemas operativos posteriores, y un equipo solo tendrá instaladas las carpetas adecuadas para él. Para obtener descripciones de estas carpetas, vea [**CSIDL**](csidl.md).
+Las **constantes KNOWNFOLDERID** representan GUID que identifican carpetas estándar registradas con el sistema como [Carpetas conocidas.](known-folders.md) Estas carpetas se instalan con Windows Vista y sistemas operativos posteriores, y un equipo solo tendrá instaladas las carpetas adecuadas para él. Para obtener descripciones de estas carpetas, [**vea CSIDL**](csidl.md).
 
 ## <a name="example"></a>Ejemplo
 
@@ -393,7 +393,7 @@ Ejemplo de [Windows ejemplos clásicos](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="even">
 <td>Display Name (Nombre para mostrar)</td>
-<td>APLICACIONES</td>
+<td>Aplicaciones</td>
 </tr>
 <tr class="odd">
 <td>Tipo de carpeta</td>
@@ -865,7 +865,7 @@ Ejemplo de [Windows ejemplos clásicos](https://github.com/microsoft/Windows-cla
 </tr>
 <tr class="even">
 <td>Nombre para mostrar heredado</td>
-<td>No es aplicable. Este <strong>KNOWNFOLDERID hace</strong> referencia al administrador Windows sincronización de Vista. No es la carpeta a la que hace referencia la <a href="/windows/desktop/api/Syncmgr/nn-syncmgr-isyncmgrconflictfolder"><strong>ISyncMgrConflictFolder anterior.</strong></a></td>
+<td>No aplicable. Este <strong>KNOWNFOLDERID hace</strong> referencia al administrador Windows sincronización de Vista. No es la carpeta a la que hace referencia la <a href="/windows/desktop/api/Syncmgr/nn-syncmgr-isyncmgrconflictfolder"><strong>ISyncMgrConflictFolder anterior.</strong></a></td>
 </tr>
 <tr class="odd">
 <td>Ruta de acceso predeterminada heredada</td>
@@ -1900,7 +1900,7 @@ Este FOLDERID está en desuso en Windows 10, versión 1803 y versiones posterior
 </tr>
 <tr class="even">
 <td>Nombre para mostrar heredado</td>
-<td>Net Estadidad</td>
+<td>Net Establa</td>
 </tr>
 <tr class="odd">
 <td>Ruta de acceso predeterminada heredada</td>
@@ -1968,7 +1968,7 @@ Este FOLDERID está en desuso en Windows 10, versión 1803 y versiones posterior
 </tr>
 <tr class="even">
 <td>Valor predeterminado Path</td>
-<td>%USERPROFILE%\Objetos 3D</td>
+<td>%USERPROFILE%\3D Objects</td>
 </tr>
 <tr class="odd">
 <td>Equivalente de CSIDL</td>
@@ -2242,7 +2242,7 @@ Este FOLDERID está en desuso en Windows 10, versión 1803 y versiones posterior
 </tr>
 <tr class="even">
 <td>Nombre para mostrar heredado</td>
-<td>Print (Imprimir)Print (Imprimir)</td>
+<td>Print Resalte</td>
 </tr>
 <tr class="odd">
 <td>Ruta de acceso predeterminada heredada</td>
@@ -2284,7 +2284,7 @@ Este FOLDERID está en desuso en Windows 10, versión 1803 y versiones posterior
 </tr>
 <tr class="odd">
 <td>Ruta de acceso predeterminada heredada</td>
-<td>%USERPROFILE% (%SystemDrive%\Documents and Configuración \% USERNAME%)</td>
+<td>%USERPROFILE% (%SystemDrive%\Documents y Configuración \% USERNAME%)</td>
 </tr>
 </tbody>
 </table>
@@ -2924,7 +2924,7 @@ Este FOLDERID está en desuso en Windows 10, versión 1803 y versiones posterior
 </tr>
 <tr class="even">
 <td>Valor predeterminado Path</td>
-<td>%ALLUSERSPROFILE%\Microsoft\Windows\Resaperdos</td>
+<td>%ALLUSERSPROFILE%\Microsoft\Windows\Nociones</td>
 </tr>
 <tr class="odd">
 <td>Equivalente de CSIDL</td>
@@ -3097,7 +3097,7 @@ Este FOLDERID está en desuso en Windows 10, versión 1803 y versiones posterior
 </tr>
 <tr class="even">
 <td ><span id="FOLDERID_RecordedTV"></span><span id="folderid_recordedtv"></span><span id="FOLDERID_RECORDEDTV"></span><dl> <dt><strong>FOLDERID_RecordedTV</strong></dt> </dl></td>
-<td ><p>No se utiliza. Este valor no está definido a partir de Windows 7.</p></td>
+<td ><p>No se usa. Este valor no está definido a partir de Windows 7.</p></td>
 </tr>
 <tr class="odd">
 <td ><span id="FOLDERID_RecordedTVLibrary"></span><span id="folderid_recordedtvlibrary"></span><span id="FOLDERID_RECORDEDTVLIBRARY"></span><dl> <dt><strong>FOLDERID_RecordedTVLibrary</strong></dt> </dl></td>
@@ -3232,7 +3232,7 @@ Este FOLDERID está en desuso en Windows 10, versión 1803 y versiones posterior
 </tr>
 <tr class="even">
 <td>Valor predeterminado Path</td>
-<td>%LOCALAPPDATA%\Microsoft\Windows\Nociones</td>
+<td>%LOCALAPPDATA%\Microsoft\Windows\Secuestos</td>
 </tr>
 <tr class="odd">
 <td>Equivalente de CSIDL</td>
@@ -4490,7 +4490,7 @@ Este FOLDERID está en desuso en Windows 10, versión 1803 y versiones posterior
 </tr>
 <tr class="even">
 <td>Valor predeterminado Path</td>
-<td>%APPDATA%\Microsoft\Internet Explorer\inicio rápido\Usuario anclado</td>
+<td>%APPDATA%\Microsoft\Internet Explorer\inicio rápido\User Pinned</td>
 </tr>
 <tr class="odd">
 <td>Equivalente de CSIDL</td>
@@ -4634,7 +4634,7 @@ Este FOLDERID está en desuso en Windows 10, versión 1803 y versiones posterior
 </tr>
 <tr class="even">
 <td>Display Name (Nombre para mostrar)</td>
-<td>El nombre completo del usuario (por ejemplo, Juan Bagel) escribió cuando se creó la cuenta de usuario.</td>
+<td>El nombre completo del usuario (por ejemplo, Juan Bagel) especificado cuando se creó la cuenta de usuario.</td>
 </tr>
 <tr class="odd">
 <td>Tipo de carpeta</td>
@@ -4818,9 +4818,9 @@ Este FOLDERID está en desuso en Windows 10, versión 1803 y versiones posterior
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La interpretación de determinados valores **KNOWNFOLDERID** depende de si la carpeta forma parte de una aplicación de 32 o 64 bits y de si esa aplicación se ejecuta en un sistema operativo de 32 o 64 bits. Si la aplicación necesita distinguir entre, por **ejemplo,** Archivos de programa y Archivos de programa **(x86),** debe usar el **VALOR DE KNOWNFOLDERID** adecuado para la situación.
+La interpretación de determinados valores **KNOWNFOLDERID** depende de si la carpeta forma parte de una aplicación de 32 o 64 bits y de si esa aplicación se ejecuta en un sistema operativo de 32 o 64 bits. Si la aplicación necesita distinguir entre, por **ejemplo,** Archivos de programa y Archivos de programa **(x86),** debe usar el **valor de KNOWNFOLDERID** adecuado para la situación.
 
 En las tablas siguientes se resume **el uso de KNOWNFOLDERID** en esos casos.
 
@@ -4852,7 +4852,7 @@ En las tablas siguientes se resume **el uso de KNOWNFOLDERID** en esos casos.
 | 64 bits | 64 bits | FOLDERID \_ ProgramFilesCommonX64 | %ProgramFiles% \\ Archivos comunes | None |
 | 64 bits | 32 bits | FOLDERID \_ ProgramFilesCommon | %ProgramFiles(x86)% \\ Archivos comunes | ARCHIVOS DE PROGRAMA CSIDL \_ \_ \_ COMUNES |
 | 64 bits | 32 bits | FOLDERID \_ ProgramFilesCommonX86 | %ProgramFiles(x86)% \\ Archivos comunes | ARCHIVOS DE PROGRAMA CSIDL \_ \_ \_ COMMONX86 |
-| 64 bits | 32 bits | FOLDERID \_ ProgramFilesCommonX64 | %ProgramFiles% \\ Common Files | None |
+| 64 bits | 32 bits | FOLDERID \_ ProgramFilesCommonX64 | %ProgramFiles% \\ Archivos comunes | None |
 
 
 **Sistema \_ FOLDERID**
@@ -4867,7 +4867,7 @@ En las tablas siguientes se resume **el uso de KNOWNFOLDERID** en esos casos.
 | 64 bits | 32 bits | FOLDERID \_ SystemX86 | %windir% \\ syswow64 | CSIDL \_ SYSTEMX86 |
 
 
-Hemos usado cadenas de entorno para proporcionar rutas de acceso genéricas a lo largo de este tema. En las tablas siguientes se proporcionan ejemplos de las rutas de acceso que representan esas cadenas de entorno. En algunos casos, es posible que estas rutas de acceso no coincidan con las de un equipo determinado debido a las opciones realizadas durante la instalación o al redireccionamiento de carpetas posterior. Tenga en cuenta que algunas rutas de acceso han cambiado Windows Vista.
+Hemos usado cadenas de entorno para proporcionar rutas de acceso genéricas a lo largo de este tema. En las tablas siguientes se proporcionan ejemplos de las rutas de acceso que representan las cadenas de entorno. En algunos casos, es posible que estas rutas de acceso no coincidan con las de un equipo determinado debido a las opciones realizadas durante la instalación o el redireccionamiento de carpetas posteriores. Tenga en cuenta que algunas rutas de acceso han cambiado Windows Vista.
 
 
 **Windows Vista y versiones posteriores**
@@ -4890,8 +4890,8 @@ Hemos usado cadenas de entorno para proporcionar rutas de acceso genéricas a lo
 
 | Cadena de entorno | Ruta de acceso de ejemplo |
 |--------------------|--------------|
-| %ALLUSERSPROFILE% | C: \\ Documentos y Configuración Todos los \\ usuarios |
-| %APPDATA% | C: Documentos \\ y datos de Configuración nombre de usuario \\ *de* \\ la aplicación |
+| %ALLUSERSPROFILE% | C: \\ Documentos y Configuración todos los \\ usuarios |
+| %APPDATA% | C: \\ Documentos y datos Configuración nombre de usuario \\ *datos* \\ de aplicación |
 | %ProgramFiles% | C: Archivos \\ de programa |
 | %SystemDrive% | C. |
 | %USERPROFILE% | C: \\ Documentos y nombre Configuración \\ *usuario* |
@@ -4907,7 +4907,7 @@ Hemos usado cadenas de entorno para proporcionar rutas de acceso genéricas a lo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

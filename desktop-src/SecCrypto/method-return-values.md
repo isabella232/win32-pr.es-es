@@ -4,12 +4,12 @@ ms.assetid: f6478e72-0fe9-4c3b-b08a-f71c9c943910
 title: Valores devueltos del método
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 073df1d306fb991d7e1347ff90a21d578bf42583c642a694de3160b405963a28
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f3871cf00bd48c7fbe1432ec86b503fba7795592
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120100765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270884"
 ---
 # <a name="method-return-values"></a>Valores devueltos del método
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 0681498a0d075fa22bada520e22c0ae626a4764d1a917f7090b796f05d66b122
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25952c29b6db6db045fe839951d76994cc907b91
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118891906"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270719"
 ---
 # <a name="getversion-method-of-the-win32_encryptablevolume-class"></a>Método GetVersion de la clase EncryptableVolume de Win32 \_
 
@@ -48,7 +48,7 @@ Entero sin signo que indica la versión de metadatos del volumen.
 
 
 
-| Valor                                                                                                                                                                                                                       | Significado                                                                                                                                                                                                                                   |
+| Value                                                                                                                                                                                                                       | Significado                                                                                                                                                                                                                                   |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span><dl> <dt>**Desconocido**</dt> <dt>0</dt> </dl> | Se desconoce el sistema operativo.<br/>                                                                                                                                                                                               |
 | <span id="Vista"></span><span id="vista"></span><span id="VISTA"></span><dl> <dt>**Vista**</dt> <dt>1</dt> </dl>         | Windows Formato vista, lo que significa que el volumen se protegió con BitLocker en un equipo que ejecuta Windows Vista.<br/>                                                                                                                |
@@ -80,7 +80,7 @@ Si el volumen ya está desbloqueado y no se producen otros errores, este método
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
@@ -88,7 +88,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 Enterprise, Windows 7 aplicaciones de \[ escritorio Ultimate\]<br/>                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                 |

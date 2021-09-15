@@ -4,12 +4,12 @@ description: Obtenga información sobre las propiedades de conexión MS-CHAPv2 E
 ms.assetid: d6a057e0-56f6-4a31-9391-fde631ac2898
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28ec894f8e95aa08e68aae418ed2b194c02a90cd008b9ac8d810d3c497e76f9e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e353c4685e131c2e7301db35de26d927b5882c06
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118984265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359002"
 ---
 # <a name="eap-ms-chapv2-connection-properties"></a>Propiedades de conexión MS-CHAPv2 EAP
 

@@ -3,8 +3,8 @@ title: RTM_IPX_ROUTE estructura (Rtm.h)
 description: La estructura \_ RTM IPX \_ ROUTE contiene información que describe una ruta para la familia de protocolos IPX.
 ms.assetid: ffa0637c-2197-4ebd-a5ef-e174dd0ccb15
 keywords:
-- RTM_IPX_ROUTE ras de estructura
-- PRTM_IPX_ROUTE puntero ras de estructura
+- RTM_IPX_ROUTE estructura RAS
+- PRTM_IPX_ROUTE puntero raso de estructura
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e3d14de623fe8d0b3a85118b39d764baa00d2ca5930cfe711be21a91057b6db
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d32333dd6a6b53ee4600dda388a318bdf9404b6d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120101835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271951"
 ---
-# <a name="rtm_ipx_route-structure"></a>Estructura \_ RTM IPX \_ ROUTE
+# <a name="rtm_ipx_route-structure"></a>RtM \_ IPX \_ ROUTE (estructura)
 
 \[Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
@@ -45,7 +45,7 @@ typedef struct _RTM_IPX_ROUTE {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -70,14 +70,14 @@ Especifica la interfaz a través de la que se obtuvo la ruta.
 
 </dd> <dt>
 
-**RR \_ ProtocolSpecificData**
+**Protocolo \_ RRSpecificData**
 </dt> <dd>
 
 Especifica una estructura [**DE DATOS ESPECÍFICA DEL \_ \_ PROTOCOLO**](protocol-specific-data.md) que contiene memoria reservada para los datos específicos de los protocolos de enrutamiento.
 
 </dd> <dt>
 
-**Red \_ RR**
+**RR \_ Network**
 </dt> <dd>
 
 Especifica una estructura [**DE RED IPX \_**](ipx-network.md) que contiene una dirección de red IP.
@@ -87,7 +87,7 @@ Especifica una estructura [**DE RED IPX \_**](ipx-network.md) que contiene una d
 **RR \_ NextHopAddress**
 </dt> <dd>
 
-Especifica una estructura [**IPX \_ NEXT HOP \_ \_ ADDRESS**](ipx-next-hop-address.md) que contiene la dirección del enrutador del próximo salto.
+Especifica una estructura [**IPX \_ NEXT HOP \_ \_ ADDRESS**](ipx-next-hop-address.md) que contiene la dirección del enrutador de próximo salto.
 
 </dd> <dt>
 
@@ -98,9 +98,9 @@ Especifica una estructura [**DE DATOS \_ \_ ESPECÍFICOS de IPX**](ipx-specific-
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los miembros de la estructura **\_ RTM IPX \_ ROUTE** están alineados **con DWORD.**
+Todos los miembros de la **estructura \_ RTM IPX \_ ROUTE** están alineados **con DWORD.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,24 +111,24 @@ Los miembros de la estructura **\_ RTM IPX \_ ROUTE** están alineados **con DWO
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                        |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                   |
-| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Rtm.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Referencia de la versión 1 de Routing Table Manager](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
-[Estructuras de Routing Table Manager versión \_ 1 \_](routing-table-manager-version-1-structures.md)
+[Estructuras de la versión 1 del Administrador \_ de tablas de \_ enrutamiento](routing-table-manager-version-1-structures.md)
 </dt> <dt>
 
-[**IPX \_ NETWORK**](ipx-network.md)
+[**RED \_ IPX**](ipx-network.md)
 </dt> <dt>
 
-[**DIRECCIÓN DEL \_ PRÓXIMO \_ SALTO DE \_ IPX**](ipx-next-hop-address.md)
+[**DIRECCIÓN DE PRÓXIMO SALTO DE IPX \_ \_ \_**](ipx-next-hop-address.md)
 </dt> <dt>
 
 [**DATOS \_ ESPECÍFICOS DE IPX \_**](ipx-specific-data.md)

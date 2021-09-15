@@ -4,12 +4,12 @@ description: Colección de unidades biométricas reservadas para uso exclusivo p
 ms.assetid: f0ccbafd-e7a8-4389-bd05-0b062dfc4dc0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 306f4e0d4e28cfb29dda694e835348721113a5c23ec51054169537282ae2c365
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bf829290b0e412247b5e629a46e8c0efdafb4880
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119480445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271348"
 ---
 # <a name="private-sensor-pool"></a>Grupo de sensores privado
 
@@ -30,7 +30,7 @@ Los grupos de sensores privados deben usarse si la aplicación cliente:
 -   Se ejecuta desde una Escritorio remoto cliente.
 
 > [!Note]  
-> Las aplicaciones solo pueden crear grupos de sensores privados para biometría de huellas digitales. Si una aplicación intenta crear una para cualquier otra cosa (por ejemplo, Face), se producirá un error en la solicitud.
+> Las aplicaciones pueden crear grupos de sensores privados solo para biometría de huellas digitales. Si una aplicación intenta crear una para cualquier otra cosa (por ejemplo, Face), se producirá un error en la solicitud.
 
  
 

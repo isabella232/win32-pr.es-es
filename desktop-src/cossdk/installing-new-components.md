@@ -4,12 +4,12 @@ ms.assetid: 3cb0c24d-cd52-42ac-8b07-d8774698b90c
 title: Instalación de nuevos componentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af51bf28ce93e2d68dd1a07609c48c506911310781e8c5a0573017d43e022353
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 434bdb59c0a0e9c786bb3460a0cb1cbb6a1f50dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118813595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359034"
 ---
 # <a name="installing-new-components"></a>Instalación de nuevos componentes
 

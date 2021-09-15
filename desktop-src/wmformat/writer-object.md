@@ -10,12 +10,12 @@ keywords:
 - objetos writer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f76ad82cb56317cef9b70b0412fb79662ef89eacace8668b08a06f4cc5bf420
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 42d4783a8330ac1f0f16bc2ca2de4e843cbacc06
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119392325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359552"
 ---
 # <a name="writer-object"></a>Objeto de Writer
 
@@ -32,7 +32,7 @@ El objeto de escritor admite las interfaces siguientes.
 | Interfaz                                          | Descripción                                                                                                                                                                                               |
 |----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IWMDRMWriter**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmwriter)               | Proporciona métodos para generar [*claves DRM.*](wmformat-glossary.md)                                                                                                |
-| [**IWMDRMWriter2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmwriter2)             | Configura el objeto de escritor para escribir un archivo que contiene una secuencia pre cifrada que se ajusta al protocolo DRM 10 de multimedia para dispositivos de red de Windows.                                                    |
+| [**IWMDRMWriter2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmwriter2)             | Configura el objeto de escritor para escribir un archivo que contiene una secuencia pre cifrada que se ajusta al protocolo drm 10 de multimedia para dispositivos de red de Windows.                                                    |
 | [**IWMHeaderInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo)             | Administra la especificación y recuperación de información de encabezado, como [*metadatos, marcadores,*](wmformat-glossary.md)y así sucesivamente.                                                           |
 | [**IWMHeaderInfo2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo2)           | Administra la enumeración a través de la información de códec disponible. Hereda todos los métodos de **IWMHeaderInfo**.                                                                                            |
 | [**IWMHeaderInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo3)           | Administra la enumeración a través de la información de códec disponible. Hereda todos los métodos de **IWMHeaderInfo** **e IWMHeaderInfo2.**                                                                     |

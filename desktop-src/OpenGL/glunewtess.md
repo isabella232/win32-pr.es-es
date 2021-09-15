@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bc0d11b18425431eadca22f3c541eecf0f3c194b8c6ce897932c33d1674b179
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e0573ead0cf9b81568c4bf2101e317bef7faf148
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119519585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271975"
 ---
 # <a name="glunewtess-function"></a>función gluNewTess
 
@@ -38,7 +38,7 @@ GLUtesselator* WINAPI gluNewTess(void);
 
 Esta función no tiene parámetros.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función gluNewTess** crea y devuelve un puntero a un nuevo objeto de teselación. Haga referencia a este objeto al llamar a funciones de teselación. Un valor devuelto de cero significa que no hay suficiente memoria para asignar al objeto.
 
@@ -46,7 +46,7 @@ La **función gluNewTess** crea y devuelve un puntero a un nuevo objeto de tesel
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
@@ -56,7 +56,7 @@ La **función gluNewTess** crea y devuelve un puntero a un nuevo objeto de tesel
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

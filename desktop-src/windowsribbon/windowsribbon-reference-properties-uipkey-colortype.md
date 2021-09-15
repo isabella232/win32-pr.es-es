@@ -4,12 +4,12 @@ description: Identifica la propiedad \_ PKEY \_ ColorType de la interfaz de usua
 ms.assetid: 7eaa9d8b-0c21-487c-9093-79ddffcae131
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4e676db37c0ac6c868c3bbbe20145b171fd63a88d1a704717be58cb5d71b6a8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f9240d8c816adcf2674efcc2e7428d22b765f542
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118031772"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359949"
 ---
 # <a name="ui_pkey_colortype"></a>UI \_ PKEY \_ ColorType
 
@@ -25,7 +25,7 @@ propertyDescription
       type = UI_SWATCHCOLORTYPE
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación usa ui PKEY ColorType para consultar la configuración \_ de color del control \_ [**DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md)
 

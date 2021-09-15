@@ -4,12 +4,12 @@ ms.assetid: 98ae97e2-25c1-455c-8283-45bb07fb8251
 title: 'Cómo: Recopilar información del trabajo de impresión del usuario'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f51ccbd221a707fad8059b99f84cc011473450430e7b56578b5e8368cd5bd1c9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c4ddbc874ddbb36aa9b82e8eafeadb46883f528
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119947835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359713"
 ---
 # <a name="how-to-collect-print-job-information-from-the-user"></a>Cómo: Recopilar información del trabajo de impresión del usuario
 
@@ -19,9 +19,9 @@ En este tema se describe cómo recopilar información del trabajo de impresión 
 
 Recopile información del trabajo de impresión del usuario mediante una llamada [**a la función PrintDlg.**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) Esta función muestra el **cuadro de** diálogo Imprimir común al usuario y devuelve la información del trabajo de impresión en una estructura de [**datos PRINTDLG.**](/windows/win32/api/commdlg/ns-commdlg-printdlga)
 
-El **cuadro de** diálogo Imprimir común se muestra cuando el usuario inicia un trabajo de impresión. El **cuadro de** diálogo Imprimir común es un cuadro de diálogo modal, lo que significa que el usuario no puede interactuar con la ventana principal hasta que se cierre el cuadro de diálogo común.
+El **cuadro** de diálogo Imprimir común se muestra cuando el usuario inicia un trabajo de impresión. El **cuadro de** diálogo Imprimir común es un cuadro de diálogo modal, lo que significa que el usuario no puede interactuar con la ventana principal hasta que se cierre el cuadro de diálogo común.
 
-## <a name="collecting-print-job-information"></a>Recopilación de información del trabajo de impresión
+## <a name="collecting-print-job-information"></a>Recopilar información del trabajo de impresión
 
 1.  Inicialice [**el elemento de estructura PRINTDLG.**](/windows/win32/api/commdlg/ns-commdlg-printdlga)
 
@@ -44,7 +44,7 @@ El **cuadro de** diálogo Imprimir común se muestra cuando el usuario inicia un
 
 2.  Mostrar el **cuadro de** diálogo Imprimir común.
 
-    Llame [**a PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) con la estructura  [**PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) inicializada para mostrar el cuadro de diálogo Imprimir común y recopilar los datos del usuario, como se muestra en el ejemplo de código siguiente.
+    Llame [**a PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) con la estructura  [**PRINTDLG**](/windows/win32/api/commdlg/ns-commdlg-printdlga) inicializada para mostrar el cuadro de diálogo Imprimir común y recopilar los datos de usuario, como se muestra en el ejemplo de código siguiente.
 
     ```C++
     // Display the printer dialog and retrieve the printer DC

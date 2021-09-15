@@ -4,12 +4,12 @@ ms.assetid: 400a2b6e-6bbe-4ba4-abde-a2f625007517
 title: Características de CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 434c72075c04b0c280c85831ca78d930c0fcc047de19609d11764bcf63ddad56
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: df40606a255adc90bd36540571979c1c34579611
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118908452"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271223"
 ---
 # <a name="cng-features"></a>Características de CNG
 
@@ -39,21 +39,21 @@ CNG está disponible primero en Windows Vista y se coloca para reemplazar los us
 -   Seguridad de subprocesos en toda la pila.
 -   API criptográfica en modo kernel.
 
-Además, CNG incluye compatibilidad con todos los algoritmos de Suite B, incluida la [*criptografía de curva elíptica*](/windows/desktop/SecGloss/e-gly) (ECC). Las aplicaciones CryptoAPI existentes seguirán funcionando a medida que CNG esté disponible.
+Además, CNG incluye compatibilidad con todos los algoritmos de Suite B necesarios, incluida la criptografía de [*curva elíptica*](/windows/desktop/SecGloss/e-gly) (ECC). Las aplicaciones CryptoAPI existentes seguirán funcionando a medida que CNG esté disponible.
 
 ## <a name="certification-and-compliance"></a>Certificación y cumplimiento
 
-CNG se valida con el estándar federal de procesamiento de información (FIPS) 140-2 y forma parte del objetivo de evaluación para la certificación Windows common criteria. CNG se diseñó para poder usarse como componente en un sistema validado de nivel 2 de FIPS.
+CNG se valida con el estándar federal de procesamiento de información (FIPS) 140-2 y forma parte del objetivo de evaluación para la certificación Windows Common Criteria. CNG se diseñó para poder usarse como componente en un sistema validado de nivel 2 de FIPS.
 
 CNG cumple los requisitos de Common Criteria mediante el almacenamiento y el uso de claves de larga duración en un proceso seguro.
 
 ## <a name="suite-b-support"></a>Compatibilidad con Suite B
 
-Una característica importante de CNG es su compatibilidad con los algoritmos Suite B estándar. En febrero de 2005, la Agencia de Seguridad Nacional (NSA) de la Estados Unidos anunció un conjunto coordinado de cifrado simétrico, acuerdo de secreto asimétrico (también conocido como intercambio de claves), firma digital y funciones hash para el uso futuro del gobierno de EE. UU. *denominado Suite B*. La NSA ha anunciado que las implementaciones de Suite B certificadas pueden y se usarán para la protección de la información designada como secreto superior, secreto e información privada que, en el pasado, se describía como confidencial pero sin clasificar. Por este problema, Suite B soporte técnico es muy importante para los proveedores de software de aplicaciones y los integradores de sistemas, así como para Microsoft.
+Una característica importante de CNG es su compatibilidad con los algoritmos Suite B datos. En febrero de 2005, la Agencia de Seguridad Nacional (NSA) de la Estados Unidos anunció un conjunto coordinado de cifrado simétrico, acuerdo secreto asimétrico (también conocido como intercambio de claves), firma digital y funciones hash para el uso futuro del gobierno de EE. UU. *denominado Suite B*. La NSA ha anunciado que las implementaciones de Suite B certificadas pueden y se usarán para la protección de la información designada como secreto superior, secreto e información privada que, en el pasado, se describía como confidencial pero sin clasificar. Por este problema, Suite B soporte técnico es muy importante para los proveedores de software de aplicaciones y los integradores de sistemas, así como para Microsoft.
 
 Todos Suite B algoritmos se conocen públicamente. Se han desarrollado fuera del ámbito de la confidencialidad gubernamental asociada históricamente al desarrollo de algoritmos criptográficos. En este mismo período de tiempo, algunos países y regiones europeos también han propuesto los mismos Suite B para proteger su información.
 
-Suite B criptografía recomienda el uso de la curva elíptica Diffie-Hellman (ECDH) en muchos protocolos existentes, como Internet Key Exchange [](/windows/desktop/SecGloss/t-gly) (IKE, que se usa principalmente en IPsec), seguridad de la capa de transporte (TLS) y MIME seguro (S/MIME).
+Suite B criptografía recomienda el uso de la curva elíptica Diffie-Hellman (ECDH) en muchos protocolos existentes, como Internet Key [](/windows/desktop/SecGloss/t-gly) Exchange (IKE, que se usa principalmente en IPsec), seguridad de la capa de transporte (TLS) y MIME seguro (S/MIME).
 
 CNG incluye compatibilidad con Suite B que se extiende a todos los algoritmos necesarios: AES (todos los tamaños de clave), la familia SHA-2 (SHA-256, SHA-384 y SHA-512) de algoritmos hash, ECDH y DSA de curva elíptica (ECDSA) sobre las curvas prime estándar de NIST P-256, P-384 y P-521. Las curvas binarias, las curvas Koblitz, las curvas prime personalizadas y las curvas elípticas Menezes-Qu-Vanstone (ECMQV) no son compatibles con los proveedores de algoritmos de Microsoft incluidos con Windows Vista.
 
@@ -63,7 +63,7 @@ CNG proporciona compatibilidad con el conjunto actual de algoritmos en [*CryptoA
 
 ## <a name="kernel-mode-support"></a>Compatibilidad con el modo kernel
 
-CNG admite criptografía en modo kernel. Las mismas API se usan en modo kernel y usuario para admitir completamente las características de criptografía. Tanto SSL/TLS como IPsec funcionan en modo kernel, además de los procesos de arranque que usarán CNG. No se puede llamar a todas las funciones CNG desde el modo kernel. El tema de referencia de las funciones a las que no se puede llamar desde el modo kernel mostrará explícitamente que no se puede llamar a la función desde el modo kernel. De lo contrario, se puede llamar a todas las funciones CNG desde el modo kernel si el autor de la llamada se ejecuta en **\_ EL** [*IRQL DE NIVEL PASIVO.*](/windows/desktop/SecGloss/i-gly) Además, algunas funciones CNG del modo kernel pueden ser a las que se puede llamar en **DISPATCH \_ LEVEL IRQL,** en función de las funcionalidades del proveedor.
+CNG admite criptografía en modo kernel. Las mismas API se usan en modo kernel y usuario para admitir completamente las características de criptografía. Tanto SSL/TLS como IPsec funcionan en modo kernel, además de los procesos de arranque que usarán CNG. No se puede llamar a todas las funciones CNG desde el modo kernel. El tema de referencia de las funciones a las que no se puede llamar desde el modo kernel mostrará explícitamente que no se puede llamar a la función desde el modo kernel. De lo contrario, se puede llamar a todas las funciones CNG desde el modo kernel si el autor de la llamada se ejecuta en **\_ EL** [*IRQL DE NIVEL PASIVO.*](/windows/desktop/SecGloss/i-gly) Además, algunas funciones de CNG en modo kernel pueden llamarse en **DISPATCH \_ LEVEL IRQL,** en función de las funcionalidades del proveedor.
 
 La interfaz del proveedor de compatibilidad con la seguridad del kernel de Microsoft (Ksecdd.sys) es un módulo criptográfico basado en software de uso general que reside en el nivel de modo kernel de Windows. Ksecdd.sys ejecuta como controlador de exportación en modo kernel y proporciona servicios criptográficos a través de sus interfaces documentadas a los componentes del kernel. El único algoritmo de proveedor de Microsoft integrado que no es compatible con Ksecdd.sys es DSA.
 
@@ -105,7 +105,7 @@ CNG admite cinco modos de operaciones que se pueden usar con cifrados de bloques
 | ECB (Electronic Codebook)   | **BCRYPT \_ CHAIN \_ MODE \_ ECB** | Cifrados de bloques simétricos | SP800-38A |
 | CBC (encadenamiento de bloques de cifrado) | **BCRYPT \_ CHAIN \_ MODE \_ CBC** | Cifrados de bloques simétricos | SP800-38A |
 | CFB (comentarios de cifrado)       | **BCRYPT \_ CHAIN \_ MODE \_ CFB** | Cifrados de bloques simétricos | SP800-38A |
-| CCM (contador con CBC)      | **CCM EN MODO \_ DE \_ CADENA \_ BCRYPT** | AES                     | SP800-38C |
+| CCM (contador con CBC)      | **CCM DEL MODO \_ DE \_ CADENA DE \_ BCRYPT** | AES                     | SP800-38C |
 | GCM (modo Galois/Counter)   | **BCRYPT \_ CHAIN \_ MODE \_ GCM** | AES                     | SP800-38D |
 
 

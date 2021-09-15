@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 95b5134a2c7f7411ffcf2860f8829225a7271089c824b4e4c8731de78ffa4a61
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a4279bef86d761ed0eb7d90ad3b8dee46e0f17f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118440807"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360624"
 ---
 # <a name="iwiadevmgr2selectdevicedlgid-method"></a>IWiaDevMgr2::SelectDeviceDlgID (método)
 
@@ -118,7 +118,7 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método crea y muestra el cuadro de diálogo **Seleccionar** dispositivo para que el usuario pueda seleccionar un dispositivo WIA 2.0 para la adquisición de imágenes. Si un dispositivo se selecciona correctamente, el método **IWiaDevMgr2::SelectDeviceDlgID** pasa su cadena de identificador a la aplicación a través de su *parámetro pbstrDeviceID.*
 
@@ -133,12 +133,12 @@ La aplicación puede restringir los dispositivos que se muestran al usuario a ti
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

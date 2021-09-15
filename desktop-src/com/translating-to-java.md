@@ -4,12 +4,12 @@ description: Traducción a Java
 ms.assetid: b36bb34d-706e-455b-a4b5-d811654fc7fc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a7fc0637518aa1d6c7be1ec457054293a8a82537a688eeaf9475a407fbeca348
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 133d07aa61a8cbb23dd2fc4f998ce7664457fd28
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119129607"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360154"
 ---
 # <a name="translating-to-java"></a>Traducción a Java
 

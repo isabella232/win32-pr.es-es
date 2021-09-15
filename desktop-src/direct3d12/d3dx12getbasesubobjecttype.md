@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33bd49b47e9fe603c0ebbdca015f3997eb06558a7039ddc866fb4d4667b8802b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b39f1c61be682d55512772bef1258aecdb009a5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118989805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359816"
 ---
 # <a name="d3dx12getbasesubobjecttype-function"></a>Función D3DX12GetBaseSubobjectType
 
@@ -70,7 +70,7 @@ Si *SubobjectType corresponde* a un tipo de datos de subobjeto derivado de otro 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

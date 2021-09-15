@@ -4,12 +4,12 @@ description: Identifica la propiedad \_ BooleanValue de PKEY \_ de la interfaz d
 ms.assetid: afe79b8d-8a83-49aa-bcc9-8a1e6ebe1569
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3938f65dacd091da3e1eb90bc2a464f1b523c6c791581d72c095c7676e4b7e16
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aec749bb8b6ec47606bbe5b2629d1c42c8d07091
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119392925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359957"
 ---
 # <a name="ui_pkey_booleanvalue"></a>UI \_ PKEY \_ BooleanValue
 
@@ -27,9 +27,9 @@ propertyDescription
       formatAs = VARIANT_TRUE=-1, VARIANT_FALSE=0
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una aplicación usa ui PKEY BooleanValue para consultar el estado de alternancia de una casilla , botón de alternancia y el control de botón de \_ \_ [**splitButtonGallery**](windowsribbon-element-splitbuttongallery.md). [](windowsribbon-controls-checkbox.md) [](windowsribbon-controls-togglebutton.md)
+La interfaz de usuario PKEY BooleanValue la usa una aplicación para consultar el estado de alternancia de una casilla , un botón de alternancia y el control de botón de \_ \_ [**splitButtonGallery**](windowsribbon-element-splitbuttongallery.md). [](windowsribbon-controls-checkbox.md) [](windowsribbon-controls-togglebutton.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

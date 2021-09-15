@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: df9eb6e1e748088abaa4780aedfded4e26977018d70dd79f518159185594a90b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ada60a64bb4e7d8b4604b18982630dabd7e44256
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120057825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359656"
 ---
 # <a name="iinkanalyzergetnodesfromtextrange-method"></a>IInkAnalyzer::GetNodesFromTextRange (método)
 
@@ -74,7 +74,7 @@ Objetos [**IContextNode**](icontextnode.md) a los que se va a limitar la búsque
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El intervalo de texto especificado debe ser relativo a la parte *pNodesToSearch* de la cadena reconocida de [**IInkAnalyzer,**](iinkanalyzer.md)en lugar de a la cadena reconocida de la **IInkAnalyzer completa.**
 
@@ -95,7 +95,7 @@ Por ejemplo, si la cadena reconocida es "I am late" y se llama a este método co
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

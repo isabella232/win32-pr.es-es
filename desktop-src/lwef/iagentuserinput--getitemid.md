@@ -4,12 +4,12 @@ description: IAgentUserInput GetItemID
 ms.assetid: 3afd4d9d-51bb-4086-bf7b-7c9a2ddcd807
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fde65fc10a4cb467bd69f200e3244f1a2a73c0424d64f6a4babbd2cefd18e0be
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 716ae1386d87fa6051111801c5603837519eeb4c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119609265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359751"
 ---
 # <a name="iagentuserinputgetitemid"></a>IAgentUserInput::GetItemID
 

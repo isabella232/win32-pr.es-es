@@ -4,12 +4,12 @@ ms.assetid: 69e91003-d0e9-4295-be02-3a8a9487796c
 title: System.DeviceInterface.WinUsb.UsbVendorId
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: acd2d7b1e287e28d3abeda0cba01e8e4a535f333a601cd8fe6df21469815368d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 56f79c5ff9fbd4409cd207dd3ed08861af478fd7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119097986"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360405"
 ---
 # <a name="systemdeviceinterfacewinusbusbvendorid"></a>System.DeviceInterface.WinUsb.UsbVendorId
 
@@ -30,7 +30,7 @@ propertyDescription
       type = UInt16
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

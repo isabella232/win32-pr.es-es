@@ -1,15 +1,15 @@
 ---
-description: Se debe asignar un icono personalizado a un tipo de archivo para proporcionar una indicación visual al usuario de ese tipo de archivo o a la aplicación a la que está asociado el tipo de archivo.
+description: Se debe asignar un icono personalizado a un tipo de archivo para proporcionar una indicación visual al usuario de ese tipo de archivo o a la aplicación a la que está asociado ese tipo de archivo.
 ms.assetid: 84F293C2-BAB1-4BF8-9F89-122B6DAB29C3
 title: Asignación de un icono personalizado a un tipo de archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d156322bfe0899ed48c6c27f2660b911d9e5c77791c550b6141144d95384b6d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf625eb6177471702096f462846b8035772177ab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119093009"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360375"
 ---
 # <a name="how-to-assign-a-custom-icon-to-a-file-type"></a>Asignación de un icono personalizado a un tipo de archivo
 
@@ -19,7 +19,7 @@ Cuando no se asigna ningún icono predeterminado personalizado a un tipo de arch
 
 Aunque todos los archivos que se muestran en esta captura de pantalla son archivos de texto simples, solo MyDocs4.myp muestra Windows icono predeterminado. Esto se debe a que la .txt es un tipo de archivo registrado que tiene un icono predeterminado personalizado.
 
-En la captura de pantalla siguiente se muestra un icono personalizado que se ha asignado al tipo de archivo .myp.
+En la siguiente captura de pantalla se muestra un icono personalizado que se ha asignado al tipo de archivo .myp.
 
 ![captura de pantalla del icono personalizado para archivos .myp](images/context4.png)
 
@@ -45,7 +45,7 @@ Asigne a la subclave **DefaultIcon** un valor predeterminado de tipo **REG \_ SZ
 
 Llame a [**la función SHChangeNotify**](/windows/desktop/api/shlobj_core/nf-shlobj_core-shchangenotify) para notificar al Shell que actualice su caché de iconos.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En el ejemplo siguiente se muestra una vista detallada de las entradas del Registro necesarias para una asignación de icono de tipo de archivo. La extensión de nombre de archivo está asociada a una aplicación, pero la asignación de icono es a la propia extensión de nombre de archivo para que la aplicación asociada no dicta el icono predeterminado.
 

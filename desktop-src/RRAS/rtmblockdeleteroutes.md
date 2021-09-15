@@ -1,9 +1,9 @@
 ---
 title: Función RtmBlockDeleteRoutes (Rtm.h)
-description: La función RtmBlockDeleteRoutes elimina todas las rutas del subconjunto de rutas especificado en la tabla.
+description: La función RtmBlockDeleteRoutes elimina todas las rutas del subconjunto especificado de rutas de la tabla.
 ms.assetid: d191883d-da3d-4a91-92e6-4979db96f4a4
 keywords:
-- Función RTMBlockDeleteRoutes RAS
+- Función RAS de RtmBlockDeleteRoutes
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f830603bba4bcdf07bd7bc8c631ac17028301a795fc14ebbce6483ef72f81361
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a71090371fe8a84698b84b84391e5a782fdc636f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120073885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271935"
 ---
 # <a name="rtmblockdeleteroutes-function"></a>Función RtmBlockDeleteRoutes
 
-\[Esta API ha sido reemplazada por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
+\[Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
-La **función RtmBlockDeleteRoutes** elimina todas las rutas del subconjunto de rutas especificado en la tabla.
+La **función RtmBlockDeleteRoutes** elimina todas las rutas del subconjunto especificado de rutas de la tabla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -73,19 +73,19 @@ Si se produce un error en la función, el valor devuelto es uno de los siguiente
 
 
 
-| Valor                                                                                                       | Descripción                                                                                                |
+| Value                                                                                                       | Descripción                                                                                                |
 |-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**ERROR \_ SIN \_ RUTAS**</dt> </dl>            | No hay ninguna ruta que tenga los criterios especificados.<br/>                                           |
 | <dl> <dt>**IDENTIFICADOR \_ DE ERROR NO \_ VÁLIDO**</dt> </dl>       | El *parámetro ClientHandle* no es válido.<br/>                                                      |
 | <dl> <dt>**ERROR \_ PARÁMETRO NO \_ VÁLIDO**</dt> </dl>    | Uno o varios de los parámetros de entrada no son válidos, por ejemplo, las marcas de enumeración no son válidas.<br/> |
-| <dl> <dt>**ERROR \_ NO HAY RECURSOS DEL \_ \_ SISTEMA**</dt> </dl> | No hay recursos suficientes para llevar a cabo la operación.<br/>                                    |
+| <dl> <dt>**ERROR \_ SIN RECURSOS DEL \_ \_ SISTEMA**</dt> </dl> | No hay recursos suficientes para llevar a cabo la operación.<br/>                                    |
 | <dl> <dt>**ERROR \_ NO HAY SUFICIENTE \_ \_ MEMORIA**</dt> </dl>   | No hay memoria suficiente para llevar a cabo la operación.<br/>                                        |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La función genera los mensajes de notificación adecuados a todos los clientes registrados, incluido el autor de la llamada.
 
@@ -93,22 +93,22 @@ La función genera los mensajes de notificación adecuados a todos los clientes 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Rtm.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Referencia de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 de Routing Table Manager](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
 [Funciones de Routing Table Manager versión 1](routing-table-manager-version-1-functions.md)

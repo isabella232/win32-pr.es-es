@@ -4,18 +4,18 @@ ms.assetid: d932a251-f238-4582-a1c4-cf4855f26fb3
 title: System.SimpleRating Photo Metadata Policy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38c65c9e49d7e905a4cefe890b6c5aab257250baa41171470666ba38b3fb5c96
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 63b91e41a0684c8e395992683e0a1d4fe43306a0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118709969"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359986"
 ---
 # <a name="systemsimplerating-photo-metadata-policy"></a>System.SimpleRating Photo Metadata Policy
 
 Directiva de metadatos de fotos para [la propiedad System.SimpleRating.](../properties/props-system-simplerating.md)
 
-### <a name="pkey"></a>Pkey
+### <a name="pkey"></a>PKEY
 
 PKEY \_ SimpleRating
 
@@ -41,11 +41,11 @@ Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta de acceso                     | Formato de disco |
+| Pedido | Path                     | Formato de disco |
 |-------|--------------------------|-------------|
 | 1     | /app1/ifd/{ushort=18246} | ushort      |
 | 2     | /xmp/xmp:Rating          | unicode     |
@@ -58,7 +58,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Ruta de acceso                     | Formato de disco |
+| Pedido | Path                     | Formato de disco |
 |-------|--------------------------|-------------|
 | 1     | /app1/ifd/{ushort=18246} | ushort      |
 | 2     | /xmp/xmp:Rating          | unicode     |
@@ -71,7 +71,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Ruta de acceso                     |
+| Pedido | Path                     |
 |-------|--------------------------|
 | 1     | /app1/ifd/{ushort=18246} |
 | 2     | /xmp/xmp:rating          |
@@ -82,11 +82,11 @@ Los valores de esquemas diferentes se concilian.
 
 ### <a name="tiff-policies"></a>Directivas TIFF
 
-### <a name="read-paths"></a>Leer rutas de acceso
+### <a name="read-paths"></a>Rutas de acceso de lectura
 
 
 
-| Pedido | Ruta de acceso                | Formato de disco |
+| Pedido | Path                | Formato de disco |
 |-------|---------------------|-------------|
 | 1     | /ifd/{ushort=18246} | ushort      |
 | 2     | /ifd/xmp/xmp:Rating | unicode     |
@@ -99,7 +99,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Ruta de acceso                | Formato de disco |
+| Pedido | Path                | Formato de disco |
 |-------|---------------------|-------------|
 | 1     | /ifd/{ushort=18246} | ushort      |
 | 2     | /ifd/xmp/xmp:Rating | unicode     |
@@ -112,7 +112,7 @@ Los valores de esquemas diferentes se concilian.
 
 
 
-| Pedido | Ruta de acceso                |
+| Pedido | Path                |
 |-------|---------------------|
 | 1     | /ifd/{ushort=18246} |
 | 2     | /ifd/xmp/xmp:rating |
@@ -121,7 +121,7 @@ Los valores de esquemas diferentes se concilian.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ## <a name="related-topics"></a>Temas relacionados
 

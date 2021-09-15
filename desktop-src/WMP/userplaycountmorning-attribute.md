@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e68fb15fca4425611be8a923dc37928789d1619f3923506a7a459fbc9c4b1c54
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8178b3f05fb61601a46932461c235088f0b14daa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119762125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359042"
 ---
 # <a name="userplaycountmorning-attribute"></a>Atributo UserPlaycountMorning
 
@@ -30,7 +30,7 @@ El **atributo UserPlaycountMorning** es el número de veces que el elemento se h
 -   [Listas](playlist-attributes-ref.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la biblioteca.
 

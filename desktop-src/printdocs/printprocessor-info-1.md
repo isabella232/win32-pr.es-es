@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 0aa94a2df1c44b53ec9fb8211f7eaed8c955f9f2c1cd824cd4634c754f8c337e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5ac35f85e904e9a80d9f244a1421b54fd0994a43
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119824745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359703"
 ---
 # <a name="printprocessor_info_1-structure"></a>PRINTPROCESSOR \_ INFO \_ 1 (estructura)
 
@@ -37,7 +37,7 @@ typedef struct _PRINTPROCESSOR_INFO_1 {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -68,7 +68,7 @@ Puntero a una cadena terminada en NULL que especifica el nombre de un procesador
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de LA API del colador de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de API de Spooler de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**EnumPrintProcessors**](enumprintprocessors.md)

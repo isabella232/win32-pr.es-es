@@ -2,7 +2,7 @@
 description: El consumidor estándar que implementa la clase ActiveScriptEventConsumer permite que un equipo ejecute un script y tome medidas cuando se produzcan eventos importantes para asegurarse de que un equipo pueda detectar y resolver problemas automáticamente.
 ms.assetid: 0d2ac139-3e2b-4089-ae9c-289d376e27a2
 ms.tgt_platform: multiple
-title: Ejecución de un script basado en un evento
+title: Ejecutar un script basado en un evento
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -10,14 +10,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b5950ae8a4e7260932fd4df559a73f3abea2bfaf7722444db0b92470649dd312
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4dbb1e55c7828a79d6541182eff5ce20147a82c9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118816743"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359218"
 ---
-# <a name="running-a-script-based-on-an-event"></a>Ejecución de un script basado en un evento
+# <a name="running-a-script-based-on-an-event"></a>Ejecutar un script basado en un evento
 
 El consumidor estándar que implementa la clase [**ActiveScriptEventConsumer**](activescripteventconsumer.md) permite que un equipo ejecute un script y tome medidas cuando se produzcan eventos importantes para asegurarse de que un equipo pueda detectar y resolver problemas automáticamente.
 

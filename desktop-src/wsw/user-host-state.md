@@ -5,15 +5,15 @@ ms.assetid: e18c6c0c-3205-4f88-9a9b-2515a7cfc462
 keywords:
 - Servicios web de estado de host de usuario para Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 04530b74ef1ab0125b31e56751cdd6cec8109711f603c909f3afeb66970f081a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 56f43942f7743d28534e0286a45203dc01e0e7b6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118192435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360178"
 ---
 # <a name="service-host-user-state"></a>Estado de usuario del host de servicio
 

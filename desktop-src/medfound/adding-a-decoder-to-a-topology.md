@@ -5,27 +5,27 @@ title: Agregar un descodificador a una topología
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 506963ee65490365b60788808a4da87c21355247
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705562"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360080"
 ---
 # <a name="adding-a-decoder-to-a-topology"></a>Agregar un descodificador a una topología
 
 En este tema se describe cómo agregar un descodificador de audio o vídeo a una topología.
 
-Para la mayoría de las aplicaciones de reproducción, puede omitir los descodificadores de la topología parcial que envía a la sesión multimedia. La sesión multimedia utiliza el cargador de topología para completar la topología y el cargador de topología inserta los descodificadores necesarios. Sin embargo, si desea seleccionar un descodificador determinado, puede Agregar manualmente un descodificador a la topología.
+Para la mayoría de las aplicaciones de reproducción, puede omitir los descodificadores de la topología parcial que envía a la sesión multimedia. La sesión multimedia usa el cargador de topologías para completar la topología y el cargador de topologías inserta los descodificadores necesarios. Sin embargo, si desea seleccionar un descodificador determinado, puede agregar manualmente un descodificador a la topología.
 
 Estos son los pasos generales para agregar un descodificador a una topología.
 
 1.  Busque el CLSID del descodificador.
 2.  Agregue un nodo para el descodificador en la topología.
-3.  Para un descodificador de vídeo, habilite la aceleración de vídeo de DirectX. Este paso no es necesario para los descodificadores de audio.
+3.  Para un descodificador de vídeo, habilite La aceleración de vídeo de DirectX. Este paso no es necesario para los descodificadores de audio.
 
 ## <a name="find-the-decoder-clsid"></a>Buscar el CLSID del descodificador
 
-Si desea utilizar un descodificador determinado, es posible que ya conozca el CLSID del descodificador. Si es así, puede omitir este paso. De lo contrario, use la función [**MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) para buscar el CLSID en el registro. Esta función toma varios criterios de búsqueda como entrada. Para buscar un descodificador, debe especificar solo el formato de entrada (tipo principal y subtipo). Puede obtenerlos desde el descriptor de flujo, como se muestra en el código siguiente.
+Si desea usar un descodificador determinado, es posible que ya conozca el CLSID del descodificador. Si es así, puede omitir este paso. De lo contrario, use [**la función MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) para buscar el CLSID en el Registro. Esta función toma varios criterios de búsqueda como entrada. Para buscar un descodificador, debe especificar solo el formato de entrada (tipo principal y subtipo). Puede obtener estos datos en el descriptor de secuencia, como se muestra en el código siguiente.
 
 
 ```C++
@@ -164,15 +164,15 @@ HRESULT FindDecoderForStream(
 
 
 
-Para obtener más información acerca de los descriptores de flujo, consulte [descriptores de presentación](presentation-descriptors.md).
+Para obtener más información sobre los descriptores de flujo, vea [Descriptores de presentación](presentation-descriptors.md).
 
-La función [**MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) devuelve un puntero a una matriz de CLSID. El orden de la matriz devuelta es arbitrario. En este ejemplo, la función utiliza el primer CLSID de la matriz. Puede obtener más información sobre un descodificador, incluido el nombre descriptivo del descodificador, mediante una llamada a [**MFTGetInfo**](/windows/desktop/api/mfapi/nf-mfapi-mftgetinfo). Además, tenga en cuenta que **MFTEnum** se puede ejecutar correctamente, pero devuelve una matriz vacía, por lo que es importante comprobar el tamaño de la matriz, que se devuelve en el último parámetro.
+La [**función MFTEnum**](/windows/desktop/api/mfapi/nf-mfapi-mftenum) devuelve un puntero a una matriz de CLID. El orden de la matriz devuelta es arbitrario. En este ejemplo, la función usa el primer CLSID de la matriz. Puede obtener más información sobre un descodificador, incluido el nombre descriptivo del descodificador, llamando a [**MFTGetInfo**](/windows/desktop/api/mfapi/nf-mfapi-mftgetinfo). Además, tenga en cuenta que **MFTEnum** puede realizarse correctamente, pero devolver una matriz vacía, por lo que es importante comprobar el tamaño de la matriz, que se devuelve en el último parámetro.
 
 ## <a name="add-the-decoder-node-to-the-topology"></a>Agregar el nodo descodificador a la topología
 
-Una vez que tenga el CLSID para el descodificador, cree un nuevo nodo de transformación mediante una llamada a [**MFCreateTopology**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetopology). Especifique el CLSID estableciendo el atributo [**MF \_ TOPONODE \_ Transform \_ objectId**](mf-toponode-transform-objectid-attribute.md) en el nodo. Para obtener un ejemplo de cómo crear un nodo de transformación, vea [crear nodos de transformación](creating-transform-nodes.md). A continuación, conecte el nodo de origen al nodo descodificador y el nodo descodificador al nodo de salida, llamando a [**IMFTopologyNode:: ConnectOutput**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-connectoutput).
+Una vez que tenga el CLSID para el descodificador, cree un nuevo nodo de transformación mediante una llamada a [**MFCreateTopology**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatetopology). Especifique el CLSID estableciendo el atributo [**MF \_ TOPONODE \_ TRANSFORM \_ OBJECTID**](mf-toponode-transform-objectid-attribute.md) en el nodo. Para obtener un ejemplo de cómo crear un nodo de transformación, vea [Crear nodos de transformación.](creating-transform-nodes.md) A continuación, conecte el nodo de origen al nodo descodificador y el nodo descodificador al nodo de salida mediante una llamada a [**IMFTopologyNode::ConnectOutput**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-connectoutput).
 
-En el ejemplo siguiente se muestra cómo crear los nodos y conectarlos. El ejemplo es muy similar a la función de ejemplo denominada `AddBranchToPartialTopology` que se muestra en el tema [crear topologías de reproducción](creating-playback-topologies.md). La única diferencia es que en este ejemplo se agrega el nodo adicional para el descodificador.
+En el ejemplo siguiente se muestra cómo crear los nodos y conectarlos. El ejemplo es muy similar a la función de ejemplo denominada que `AddBranchToPartialTopology` se muestra en el tema Creación de [topologías de reproducción.](creating-playback-topologies.md) La única diferencia es que en este ejemplo se agrega el nodo adicional para el descodificador.
 
 
 ```C++
@@ -282,13 +282,13 @@ HRESULT AddBranchToPartialTopologyWithDecoder(
 
 
 
-## <a name="enable-video-acceleration"></a>Habilitar aceleración de vídeo
+## <a name="enable-video-acceleration"></a>Habilitación de la aceleración de vídeo
 
-El siguiente paso para agregar un descodificador de audio o vídeo a una topología solo se aplica a los descodificadores de vídeo. Para obtener el mejor rendimiento para la reproducción de vídeo, debe habilitar la aceleración de vídeo de DirectX (DXVA) si el descodificador de vídeo lo admite. Normalmente, el cargador de topología realiza este paso, pero si agrega el descodificador a la topología manualmente, debe realizar este paso usted mismo.
+El siguiente paso para agregar un descodificador de audio o vídeo a una topología solo se aplica a los descodificadores de vídeo. Para obtener el mejor rendimiento para la reproducción de vídeo, debe habilitar la aceleración de vídeo de DirectX (DXVA) si el descodificador de vídeo lo admite. Normalmente, el cargador de topologías realiza este paso, pero si agrega manualmente el descodificador a la topología, debe realizar este paso usted mismo.
 
-Como condición previa para este paso, todos los nodos de salida de la topología deben estar enlazados a los receptores de medios. Para obtener más información, consulte [enlazar nodos de salida a receptores multimedia](binding-output-nodes-to-media-sinks.md).
+Como condición previa para este paso, todos los nodos de salida de la topología deben enlazarse a receptores multimedia. Para obtener más información, vea [Enlazar nodos de salida a receptores multimedia.](binding-output-nodes-to-media-sinks.md)
 
-En primer lugar, busque el objeto en la topología que hospeda el administrador de dispositivos de Direct3D. Para ello, obtenga el puntero de objeto de cada nodo y consulte el objeto para el servicio [**IDirect3DDeviceManager9**](/windows/desktop/api/dxva2api/nn-dxva2api-idirect3ddevicemanager9) . Normalmente, el representador de vídeo mejorado (EVR) sirve a este rol. En el código siguiente se muestra una función que encuentra el administrador de dispositivos:
+En primer lugar, busque el objeto en la topología que hospeda el administrador de dispositivos Direct3D. Para ello, obtenga el puntero de objeto de cada nodo y consulte el objeto para el [**servicio IDirect3DDeviceManager9.**](/windows/desktop/api/dxva2api/nn-dxva2api-idirect3ddevicemanager9) Normalmente, el representador de vídeo mejorado (EVR) desempeña este rol. El código siguiente muestra una función que encuentra el administrador de dispositivos:
 
 
 ```C++
@@ -369,7 +369,7 @@ HRESULT FindDeviceManager(
 
 
 
-A continuación, busque el nodo de transformación que se encuentra directamente en el flujo ascendente del nodo que contiene el administrador de dispositivos de Direct3D. Obtiene el puntero [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) desde este nodo de transformación. El puntero **IMFTransform** representa una transformación de Media Foundation (MFT). En función de cómo se haya creado el nodo, puede que tenga que crear la MFT llamando a **CoCreateInstance** o activar la MFT desde un objeto de activación. En el código siguiente se tratan todos los casos:
+A continuación, busque el nodo de transformación que está directamente en sentido ascendente desde el nodo que contiene el administrador de dispositivos Direct3D. Obtenga el [**puntero DETRANSFORMTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) de este nodo de transformación. El **puntero DETRANSFORM Representa** una Media Foundation transformación (MFT). Dependiendo de cómo se haya creado el nodo, es posible que deba crear el MFT mediante una llamada a **CoCreateInstance** o activar el MFT desde un objeto de activación. El código siguiente controla todos los distintos casos:
 
 
 ```C++
@@ -496,7 +496,7 @@ HRESULT GetTransformFromNode(
 
 
 
-Si MFT tiene el atributo [**MF \_ SA \_ \_ compatible**](mf-sa-d3d-aware-attribute.md) con el valor **true**, significa que el MFT es compatible con la aceleración de vídeo de DirectX. La función siguiente comprueba este atributo:
+Si MFT tiene el atributo [**MF \_ SA \_ D3D \_ AWARE**](mf-sa-d3d-aware-attribute.md) con el valor **TRUE**, significa que MFT admite la aceleración de vídeo de DirectX. La función siguiente comprueba este atributo:
 
 
 ```C++
@@ -520,7 +520,7 @@ BOOL IsTransformD3DAware(IMFTransform *pMFT)
 
 
 
-Para habilitar la aceleración de vídeo en este MFT, llame a [**IMFTransform::P rocessmessage**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage) con el mensaje de administrador de D3D del conjunto de mensajes de MFT \_ \_ \_ \_ . Establezca también el atributo [**MF \_ TOPONODE \_ D3DAWARE**](mf-toponode-d3daware-attribute.md) en **true** en el nodo de transformación. Este atributo informa a la canalización de que se ha habilitado la aceleración de vídeo. En el código siguiente se realizan estos pasos:
+Para habilitar la aceleración de vídeo en este MFT, llame a [**IMFTransform::P rocessMessage**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processmessage) con el mensaje MFT \_ MESSAGE SET \_ \_ D3D \_ MANAGER. Establezca también el [**atributo MF \_ TOPONODE \_ D3DAWARE**](mf-toponode-d3daware-attribute.md) en **TRUE** en el nodo de transformación. Este atributo informa a la canalización de que se ha habilitado la aceleración de vídeo. El código siguiente realiza estos pasos:
 
 
 ```C++
@@ -582,13 +582,13 @@ HRESULT EnableVideoAcceleration(IMFTopology *pTopology, BOOL bEnable)
 
 
 
-Para obtener más información acerca de DXVA en Media Foundation, consulte [aceleración de vídeo de DirectX 2,0](directx-video-acceleration-2-0.md).
+Para obtener más información sobre DXVA en Media Foundation, vea [DirectX Video Acceleration 2.0](directx-video-acceleration-2-0.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Creación de topologías avanzadas](advanced-topology-building.md)
+[Creación de topología avanzada](advanced-topology-building.md)
 </dt> </dl>
 
  

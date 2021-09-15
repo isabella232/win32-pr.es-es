@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 88cc39227ffc5b1700a1348541e18215bc10c8b87a6bff942611f098059a70e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b88ef38236961286875a1885dad9dde936887d13
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119950045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359717"
 ---
 # <a name="deleteprinterdriverex-function"></a>Función DeletePrinterDriverEx
 
@@ -55,7 +55,7 @@ Puntero a una cadena terminada en NULL que especifica el nombre del servidor del
 *pEnvironment* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en NULL que especifica el entorno del que se va a eliminar el controlador (por ejemplo, Windows NT x86, Windows IA64 o Windows x64). Si este parámetro es **NULL,** el nombre del controlador se elimina del entorno actual de la aplicación que realiza la llamada y del equipo cliente (no de la aplicación de destino ni del servidor de impresión).
+Puntero a una cadena terminada en NULL que especifica el entorno del que se va a eliminar el controlador (por ejemplo, Windows NT x86, Windows IA64 o Windows x64). Si este parámetro es **NULL**, el nombre del controlador se elimina del entorno actual de la aplicación que realiza la llamada y del equipo cliente (no de la aplicación de destino ni del servidor de impresión).
 
 </dd> <dt>
 
@@ -77,20 +77,20 @@ Opciones para eliminar archivos y versiones del controlador. Este parámetro pue
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="DPD_DELETE_SPECIFIC_VERSION"></span><span id="dpd_delete_specific_version"></span><dl> <dt>**ELIMINACIÓN \_ DE DPD \_ VERSIÓN \_ ESPECÍFICA**</dt> </dl> | Elimina la versión especificada en *dwVersionFlag*. Esto no garantiza que el controlador se quite de la lista de controladores admitidos para el servidor.<br/>                  |
 | <span id="DPD_DELETE_UNUSED_FILES"></span><span id="dpd_delete_unused_files"></span><dl> <dt>**ELIMINACIÓN \_ DE ARCHIVOS SIN \_ USAR DE \_ DPD**</dt> </dl>             | Quita los archivos de controlador no usados.<br/>                                                                                                                                           |
-| <span id="DPD_DELETE_ALL_FILES"></span><span id="dpd_delete_all_files"></span><dl> <dt>**ELIMINACIÓN \_ DE DPD \_ DE TODOS LOS \_ ARCHIVOS**</dt> </dl>                      | Elimina el controlador solo si se pueden quitar todos sus archivos asociados. Se produce un error en la operación de eliminación si algún otro controlador instalado está utilizando alguno de los archivos del controlador.<br/> |
+| <span id="DPD_DELETE_ALL_FILES"></span><span id="dpd_delete_all_files"></span><dl> <dt>**ELIMINACIÓN \_ DE TODOS LOS \_ ARCHIVOS DE \_ DPD**</dt> </dl>                      | Elimina el controlador solo si se pueden quitar todos sus archivos asociados. Se produce un error en la operación de eliminación si algún otro controlador instalado usa cualquiera de los archivos del controlador.<br/> |
 
 
 
  
 
-Si no se especifica DPD DELETE SPECIFIC VERSION, la función elimina todas las versiones del controlador si ninguna de ellas \_ \_ está en \_ uso. Si no se especifica \_ DPD DELETE \_ UNUSED \_ FILES ni DPD \_ DELETE ALL \_ \_ FILES, la función no elimina los archivos de controlador.
+Si no se especifica DPD DELETE SPECIFIC VERSION, la función elimina todas las versiones del controlador si \_ \_ ninguna está en \_ uso. Si no se especifica \_ DPD DELETE \_ UNUSED \_ FILES ni DPD DELETE ALL FILES, la función no \_ elimina los archivos de \_ \_ controlador.
 
 </dd> <dt>
 
 *dwVersionFlag* \[ En\]
 </dt> <dd>
 
-Versión del controlador que se va a eliminar. Este parámetro puede ser 0, 1, 2 o 3. Este parámetro solo se usa si *dwDeleteFlag* incluye la marca DPD \_ DELETE SPECIFIC \_ \_ VERSION.
+Versión del controlador que se va a eliminar. Este parámetro puede ser 0, 1, 2 o 3. Este parámetro solo se usa si *dwDeleteFlag incluye* la marca DELETE SPECIFIC VERSION de DPD. \_ \_ \_
 
 </dd> </dl>
 
@@ -100,14 +100,14 @@ Si la función se realiza correctamente, el valor devuelto es un valor distinto 
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
-Antes de que la función elimine los archivos del controlador, llama a la función **DrvDriverEvent** del controlador, lo que permite al controlador quitar los archivos privados que no se usan. Para obtener más información **sobre DrvDriverEvent,** consulte Microsoft Windows Driver Development Kit (DDK).
+Antes de que la función elimine los archivos de controlador, llama a la función **DrvDriverEvent** del controlador, lo que permite al controlador quitar los archivos privados que no se usan. Para obtener más información **sobre DrvDriverEvent,** vea Microsoft Windows Driver Development Kit (DDK).
 
 Si los archivos de controlador están cargados actualmente, la función los mueve a un directorio temporal y los marca para su eliminación en el reinicio.
 

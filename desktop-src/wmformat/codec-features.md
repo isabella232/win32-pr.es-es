@@ -8,12 +8,12 @@ keywords:
 - codecs,features
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7546573077134d23f2115ce09088bcbb1027d6125a86b87faadb615e27730c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 02e3623bcb6f338fe11bef3089705801dc3ea047
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117849166"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360236"
 ---
 # <a name="codec-features"></a>Características del códec
 

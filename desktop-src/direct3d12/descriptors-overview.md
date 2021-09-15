@@ -5,12 +5,12 @@ ms.assetid: 64721226-5533-4816-865E-9429032FCC86
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95cb5834c513b99e737ba8a106ea5303a978751573ffd2ca1a97fb59e385b5ad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 17d83b2fbfd5c5df2738c61aea4f1d1115d6c874
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117733852"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359802"
 ---
 # <a name="descriptors-overview"></a>Información general sobre los descriptores
 

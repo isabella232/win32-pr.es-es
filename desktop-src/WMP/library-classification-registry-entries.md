@@ -15,18 +15,18 @@ keywords:
 - library,registry
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51cb263732dc8071d603c5acd62db25fc8ee887c35b28d109d961a63aba80d6e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e48ea1aacdd1e4c553a7e83bfdd711ff331c0878
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118575135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360561"
 ---
 # <a name="library-classification-registry-entries"></a>Entradas del Registro de clasificación de bibliotecas
 
 Cuando Reproductor de Windows Media encuentra un archivo multimedia que tiene una extensión de nombre de archivo personalizada, no sabe si el archivo debe clasificarse como audio, vídeo u otro tipo. De forma predeterminada, Reproductor de Windows Media estos archivos en la parte Otros medios de la biblioteca.
 
-Si los archivos multimedia digitales tienen un formato personalizado, puede proporcionar a Reproductor de Windows Media información sobre dónde deben aparecer los archivos en la biblioteca del reproductor colocando dos entradas en el Registro en el equipo del usuario.
+Si los archivos multimedia digitales tienen un formato personalizado, puede proporcionar a Reproductor de Windows Media información sobre dónde deben aparecer los archivos en la biblioteca del Reproductor colocando dos entradas en el Registro en el equipo del usuario.
 
 Una entrada va en la subclave siguiente.
 
@@ -44,7 +44,7 @@ La entrada del Registro tiene el formato siguiente.
 
  
 
-La otra entrada del Registro va en la siguiente subclave que cree.
+La otra entrada del Registro va en la subclave siguiente que se crea.
 
 **HKEY \_ CLASSES \_ \\ ROOT** *customExtension*
 
@@ -66,7 +66,7 @@ Ambas entradas del Registro deben tener el mismo valor. Los valores posibles se 
 
 
 
-| Valor | Descripción                                                                      |
+| Value | Descripción                                                                      |
 |-------|----------------------------------------------------------------------------------|
 | audio | Los archivos que tienen la extensión personalizada aparecen en la parte de música de la biblioteca. |
 | video | Los archivos que tienen la extensión personalizada aparecen en la parte de vídeo de la biblioteca. |
@@ -90,7 +90,7 @@ HKEY_CLASSES_ROOT\.xyz
 
 
 
-Tenga en cuenta que cualquier código que intente escribir en el Registro en el equipo del usuario puede escribir en el subárbol HKEY LOCAL MACHINE solo si el usuario actual tiene \_ \_ privilegios administrativos.
+Tenga en cuenta que cualquier código que intente escribir en el Registro en el equipo del usuario solo puede escribir en el subárbol HKEY LOCAL MACHINE si el usuario actual tiene \_ \_ privilegios administrativos.
 
 Las siguientes versiones de Reproductor de Windows Media admiten las entradas del Registro de clasificación de bibliotecas.
 

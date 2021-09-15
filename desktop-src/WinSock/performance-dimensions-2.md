@@ -4,12 +4,12 @@ ms.assetid: 0d65a693-d879-4841-b93a-ad677eb34144
 title: Dimensiones de rendimiento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 023de3074a6a531a0cab60b1e8389dd09b9b73901f1d6550ca524e9f90e8170b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0271a6a405004ac30f9b047a61f9fef7cc83f3e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119641745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360537"
 ---
 # <a name="performance-dimensions"></a>Dimensiones de rendimiento
 

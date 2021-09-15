@@ -4,7 +4,7 @@ description: Enumera los posibles orígenes de información de directiva para la
 ms.assetid: 3DC3BB0B-1FD7-473C-8E0B-B7E0A4A44E9E
 keywords:
 - WINBIO_POLICY_SOURCE enumeración Windows Biometric Framework API
-- PWINBIO_POLICY_SOURCE puntero de enumeración Windows BIOMETRIC Framework API
+- PWINBIO_POLICY_SOURCE puntero de enumeración Windows Biometric Framework API
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 962d4bc3e8cffb778df56d78a9ddaf0641f57f8f96c8f7b024745a4b879f2f81
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 866d1d82d939f143c4385caa5d94c68ffe3758f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118909944"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271316"
 ---
 # <a name="winbio_policy_source-enumeration"></a>Enumeración \_ WINBIO POLICY \_ SOURCE
 
@@ -51,17 +51,17 @@ Se desconoce el origen de la directiva.
 
 </dd> <dt>
 
-<span id="WINBIO_POLICY_DEFAULT"></span><span id="winbio_policy_default"></span>**DIRECTIVA PREDETERMINADA DE WINBIO \_ \_**
+<span id="WINBIO_POLICY_DEFAULT"></span><span id="winbio_policy_default"></span>**DIRECTIVA PREDETERMINADA \_ DE \_ WINBIO**
 </dt> <dd>
 
 La directiva es la directiva predeterminada que proporciona Windows Biometric Framework.
 
 </dd> <dt>
 
-<span id="WINBIO_POLICY_LOCAL"></span><span id="winbio_policy_local"></span>**DIRECTIVA LOCAL DE WINBIO \_ \_**
+<span id="WINBIO_POLICY_LOCAL"></span><span id="winbio_policy_local"></span>**DIRECTIVA DE WINBIO \_ \_ LOCAL**
 </dt> <dd>
 
-Directiva que el usuario individual estableció para su cuenta mediante el uso de **Configuración** aplicación. Esta directiva invalida la directiva predeterminada.
+La directiva que el usuario individual estableció para su cuenta mediante el uso de **Configuración** aplicación. Esta directiva invalida la directiva predeterminada.
 
 </dd> <dt>
 
@@ -80,11 +80,11 @@ Una directiva de grupo que el administrador de TI estableció para la empresa. L
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                                                                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                                                                                     |
-| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluya Winbio.h para aplicaciones cliente o Adaptadores \_ de Winbio.h para adaptadores)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluya Winbio.h para aplicaciones cliente o Adaptadores \_ de Winbio.h para adaptadores)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

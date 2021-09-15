@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 4fd83c0991c0740b1341c490e08b19d143eb110f2714bfbbe82aa3a962106bc0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d03ec255b10dd607889768795b00f5b2aff4dc11
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118043685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360642"
 ---
-# <a name="iinkanalyzergetanalysismodes-method"></a>IInkAnalyzer::GetAnalysisModes (método)
+# <a name="iinkanalyzergetanalysismodes-method"></a>Método IInkAnalyzer::GetAnalysisModes
 
 Recupera marcas que controlan cómo [**IInkAnalyzer**](iinkanalyzer.md) realiza el análisis de entrada de lápiz.
 
@@ -56,14 +56,14 @@ Para obtener una descripción de los valores [devueltos, vea Clases e interfaces
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/>                                                 |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

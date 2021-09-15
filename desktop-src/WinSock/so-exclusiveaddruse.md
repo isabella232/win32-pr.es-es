@@ -4,18 +4,18 @@ ms.assetid: ce0d8188-54be-46e8-8753-d0680f690b84
 title: SO_EXCLUSIVEADDRUSE de socket (Winsock2.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de9d7b00cc2fcd01fc9d440ce2ef889a9e1be937d5d83af90cfa71bf6f83d14c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 90d4747150f918a7e9c4ce37ec209e7261d1a00c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117927347"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359110"
 ---
 # <a name="so_exclusiveaddruse-socket-option"></a>Opción \_ de socket SO EXCLUSIVEADDRUSE
 
 La opción de socket SO EXCLUSIVEADDRUSE impide que otros sockets se enlazan forzadamente a \_ la misma dirección y puerto.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 La opción SO EXCLUSIVEADDRUSE impide que otros sockets se enlazan forzadamente a la misma dirección y puerto, una práctica habilitada por la opción de \_ socket SO \_ REUSEADDR. Dicha reutilización se puede ejecutar mediante aplicaciones malintencionadas para interrumpir la aplicación. La opción SO \_ EXCLUSIVEADDRUSE es muy útil para los servicios del sistema que requieren alta disponibilidad.
 
@@ -140,16 +140,16 @@ int __cdecl wmain(int argc, wchar_t ** argv)
 
 
 
-Para tener cualquier efecto, se debe establecer la opción SO EXCLUSIVADDRUSE antes de llamar a la función de enlace (esto también se aplica a la opción \_ SO [](/windows/desktop/api/winsock/nf-winsock-bind) \_ REUSEADDR). En la tabla 1 se enumeran los efectos de establecer la opción SO \_ EXCLUSIVEADDRUSE. El carácter comodín indica el enlace a la dirección comodín, como 0.0.0.0 para IPv4 y :: para IPv6. Específico indica el enlace a una interfaz específica, como enlazar una dirección IP asignada a un adaptador. Specific2 indica el enlace a una dirección específica que no sea la dirección enlazada a en el caso específico.
+Para tener cualquier efecto, la opción SO EXCLUSIVADDRUSE debe establecerse antes de llamar a la función de enlace (esto también se aplica a la opción \_ SO [](/windows/desktop/api/winsock/nf-winsock-bind) \_ REUSEADDR). En la tabla 1 se enumeran los efectos de establecer la opción SO \_ EXCLUSIVEADDRUSE. El carácter comodín indica el enlace a la dirección comodín, como 0.0.0.0 para IPv4 y :: para IPv6. Específico indica el enlace a una interfaz específica, como enlazar una dirección IP asignada a un adaptador. Specific2 indica el enlace a una dirección específica que no sea la dirección enlazada a en el caso específico.
 
 > [!Note]  
-> El caso Specific2 solo es aplicable cuando el primer enlace se realiza con una dirección específica; Para el caso en el que el primer socket está enlazado al carácter comodín, la entrada de Específico abarca todos los casos de direcciones específicos.
+> El caso Specific2 solo es aplicable cuando el primer enlace se realiza con una dirección específica; para el caso en el que el primer socket está enlazado al carácter comodín, la entrada de Específico abarca todos los casos de direcciones específicos.
 
  
 
-Por ejemplo, considere un equipo con dos interfaces IP: 10.0.0.1 y 10.99.99.99. Si el primer enlace es a 10.0.0.1 y al puerto 5150 con la opción SO EXCLUSIVEADDRUSE establecida, el segundo enlace a \_ 10.99.99.99 y al puerto 5150 con cualquiera o ningún conjunto de opciones se realiza correctamente. Sin embargo, si el primer socket está enlazado a la dirección comodín (0.0.0.0) y al puerto 5150 con SO EXCLUSIVEADDRUSE establecido, cualquier enlace posterior al mismo puerto (independientemente de la dirección IP) producirá un error con \_ WSAEADDRINUSE (10048) o WSAEACCESS (10013), en función de las opciones establecidas en el segundo socket de enlace.
+Por ejemplo, considere un equipo con dos interfaces IP: 10.0.0.1 y 10.99.99.99. Si el primer enlace es a 10.0.0.1 y al puerto 5150 con la opción SO EXCLUSIVEADDRUSE establecida, el segundo enlace a \_ 10.99.99.99 y el puerto 5150 con cualquiera o ningún conjunto de opciones se realiza correctamente. Sin embargo, si el primer socket está enlazado a la dirección comodín (0.0.0.0) y al puerto 5150 con SO EXCLUSIVEADDRUSE establecido, cualquier enlace posterior al mismo puerto ,independientemente de la dirección IP, producirá un error con \_ WSAEADDRINUSE (10048) o WSAEACCESS (10013), dependiendo de las opciones establecidas en el segundo socket de enlace.
 
-### <a name="bind-behavior-with-various-options-set"></a>Enlazar el comportamiento con varias opciones establecidas
+### <a name="bind-behavior-with-various-options-set"></a>Comportamiento de enlace con varias opciones establecidas
 
 
 
@@ -195,11 +195,11 @@ Error (10048)
 
 N/D
 
-Success
+Correcto
 
 N/D
 
-Success
+Correcto
 
 ${ROWSPAN3}$*Sin opciones*${REMOVE}$  
 
@@ -227,11 +227,11 @@ Error (10048)
 
 N/D
 
-Success
+Correcto
 
 N/D
 
-Success
+Correcto
 
 ${ROWSPAN3}$*SO \_ REUSEADDR*${REMOVE}$  
 
@@ -243,7 +243,7 @@ Error (10013)
 
 Correcto\*
 
-Success
+Correcto
 
 *Específico*
 
@@ -251,7 +251,7 @@ Error (10013)
 
 Error (10013)
 
-Success
+Correcto
 
 Correcto\*
 
@@ -259,30 +259,30 @@ Correcto\*
 
 N/D
 
-Success
+Correcto
 
 N/D
 
-Success
+Correcto
 
-\* El comportamiento no está definido en cuanto a qué socket recibirá paquetes.
+\* El comportamiento no está definido en qué socket recibirá paquetes.
 
 
 
  
 
-En el caso de que el primer enlace no establece ninguna opción o SO REUSEADDR, y el segundo enlace realiza so \_ REUSEADDR, el segundo socket ha superado el puerto y el comportamiento con respecto a qué socket recibirá paquetes no está \_ predeterminado. SO \_ EXCLUSIVEADDRUSE se introdujo para abordar esta situación.
+En el caso de que el primer enlace no establece ninguna opción o SO REUSEADDR y el segundo enlace realiza so \_ REUSEADDR, el segundo socket ha superado el puerto y el comportamiento con respecto al socket que recibirá paquetes no \_ está predeterminado. SO \_ EXCLUSIVEADDRUSE se introdujo para abordar esta situación.
 
-Un socket con so EXCLUSIVEADDRUSE establecido no siempre se puede \_ reutilizar inmediatamente después del cierre del socket. Por ejemplo, si un socket de escucha con el conjunto de marcas exclusivo acepta una conexión después de la cual se cierra el socket de escucha, otro socket no se puede enlazar al mismo puerto que el primer socket de escucha con la marca exclusiva hasta que la conexión aceptada ya no esté activa.
+Un socket con so \_ EXCLUSIVEADDRUSE establecido no siempre se puede reutilizar inmediatamente después del cierre del socket. Por ejemplo, si un socket de escucha con la marca exclusiva establecida acepta una conexión después de la cual se cierra el socket de escucha, otro socket no se puede enlazar al mismo puerto que el primer socket de escucha con la marca exclusiva hasta que la conexión aceptada ya no esté activa.
 
-Esta situación puede ser bastante complicada; aunque se haya cerrado el socket, es posible que el transporte subyacente no finalice su conexión. Incluso después de cerrar el socket, el sistema debe enviar todos los datos almacenados en búfer, transmitir una desconexión correcta al mismo nivel y esperar una desconexión correcta del mismo nivel. Por lo tanto, es posible que el transporte subyacente nunca libere la conexión, como cuando el mismo nivel anuncia una ventana de tamaño cero u otros ataques de este tipo. En el ejemplo anterior, el socket de escucha se cerró después de que se aceptara una conexión de cliente. Ahora, incluso si la conexión de cliente está cerrada, es posible que el puerto no se vuelva a usar si la conexión de cliente permanece en un estado activo debido a datos no reconocidos, etc.
+Esta situación puede ser bastante complicada; aunque se haya cerrado el socket, es posible que el transporte subyacente no finalice su conexión. Incluso después de cerrar el socket, el sistema debe enviar todos los datos almacenados en búfer, transmitir una desconexión correcta al mismo nivel y esperar una desconexión correcta del mismo nivel. Por lo tanto, es posible que el transporte subyacente nunca libere la conexión, como cuando el mismo nivel anuncia una ventana de tamaño cero u otros ataques de este tipo. En el ejemplo anterior, el socket de escucha se cerró después de que se aceptara una conexión de cliente. Ahora, incluso si la conexión de cliente está cerrada, es posible que el puerto no se vuelva a usar si la conexión de cliente permanece en estado activo debido a datos no reconocidos, etc.
 
-Para evitar esta situación, las aplicaciones [](/windows/desktop/api/winsock/nf-winsock-shutdown) deben garantizar un apagado correcto: llamar al apagado con la marca SD SEND y, a continuación, esperar en un bucle recv hasta que \_ se devuelvan cero bytes. [](/windows/desktop/api/winsock/nf-winsock-recv) Al hacerlo, se evita el problema asociado con la reutilización de puertos, se garantizan todos los datos recibidos por el mismo nivel y se garantiza al mismo nivel que todos sus datos se han recibido correctamente.
+Para evitar esta situación, las aplicaciones [](/windows/desktop/api/winsock/nf-winsock-shutdown) deben garantizar un cierre correcto: llamar al apagado con la marca SD SEND y, a continuación, esperar en un bucle \_ [**recv**](/windows/desktop/api/winsock/nf-winsock-recv) hasta que se devuelvan cero bytes. Esto evita el problema asociado con la reutilización del puerto, garantiza que el mismo nivel haya recibido todos los datos y garantiza al mismo nivel que todos sus datos se han recibido correctamente.
 
-La opción SO LINGER se puede establecer en un socket para evitar que el puerto entre en uno de los estados de espera activos; sin embargo, no se recomienda hacerlo porque puede provocar efectos no deseados, ya que puede hacer que se restablezca la \_ conexión. Por ejemplo, si los datos se han recibido pero aún no han sido reconocidos por el mismo nivel y el equipo local cierra el socket con SO LINGER establecido, la conexión se restablece y el mismo nivel descarta los datos no \_ reconocidos. Además, es difícil elegir un momento adecuado para quedarse. Un valor demasiado pequeño da como resultado muchas conexiones anuladas, mientras que un tiempo de espera grande puede hacer que el sistema sea vulnerable a ataques por denegación de servicio al establecer muchas conexiones y, por tanto, detener numerosos subprocesos de aplicación.
+La opción SO LINGER se puede establecer en un socket para evitar que el puerto entre en uno de los estados de espera activos; sin embargo, no se recomienda hacerlo porque puede provocar efectos no deseados, ya que puede provocar el restablecimiento de la \_ conexión. Por ejemplo, si los datos se han recibido pero aún no han sido reconocidos por el mismo nivel y el equipo local cierra el socket con SO LINGER establecido, la conexión se restablece y el mismo nivel descarta los datos no \_ reconocidos. Además, es difícil elegir un momento adecuado para quedarse. Un valor demasiado pequeño da como resultado muchas conexiones anuladas, mientras que un tiempo de espera grande puede dejar al sistema vulnerable a ataques por denegación de servicio al establecer muchas conexiones y, por tanto, detener numerosos subprocesos de aplicación.
 
 > [!Note]  
-> Un socket que usa la opción SO EXCLUSIVEADDRUSE debe apagarse correctamente \_ antes de cerrarlo. Si no lo hace, puede producirse un ataque por denegación de servicio si es necesario reiniciar el servicio asociado.
+> Un socket que usa la opción SO EXCLUSIVEADDRUSE debe cerrarse correctamente \_ antes de cerrarlo. Si no lo hace, puede producirse un ataque de denegación de servicio si es necesario reiniciar el servicio asociado.
 
  
 

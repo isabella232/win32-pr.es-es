@@ -4,12 +4,12 @@ description: Esta sección contiene información de referencia sobre la bibliote
 ms.assetid: 59904848-C179-4DBA-9A52-F1D9E0404EC7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9ffab5d205e2cbe664adbea29cdef253d3c5c7cb632788f88cae205dc387a1c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 05eb4b29d89c88da1302b2ae0a2b3e7df5ae25bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119729415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270260"
 ---
 # <a name="d3dcsx-11-reference"></a>Referencia de D3DCSX 11
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 58eacc277eac2d55aca0e6068698d11110768cfbe3ab6b564b97a0607715a7ec
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f921ca795e761522828de14ede61894defe44f6e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120095155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359328"
 ---
 # <a name="rwstructuredbuffer"></a>RWStructuredBuffer
 
@@ -31,8 +31,8 @@ Búfer de lectura/escritura que puede tomar un tipo T que es una estructura.
 | [**DecrementCounter**](sm5-object-rwstructuredbuffer-decrementcounter.md) | Disminuye el contador oculto del objeto. |
 | [**GetDimensions**](sm5-object-rwstructuredbuffer-getdimensions.md)       | Obtiene las dimensiones de recursos.           |
 | [**IncrementCounter**](sm5-object-rwstructuredbuffer-incrementcounter.md) | Incrementa el contador oculto del objeto. |
-| [**Cargar**](rwstructuredbuffer-load.md)                                    | Lee los datos del búfer.                      |
-| [**Operador\[\]**](sm5-object-rwstructuredbuffer-operatorindex.md)        | Devuelve una variable de recurso.            |
+| [**Carga**](rwstructuredbuffer-load.md)                                    | Lee los datos del búfer.                      |
+| [**Operator\[\]**](sm5-object-rwstructuredbuffer-operatorindex.md)        | Devuelve una variable de recurso.            |
 
 
 
@@ -54,7 +54,7 @@ Este objeto se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Compatible |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Modelo de sombreador [5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores Shader [Model 4](dx-graphics-hlsl-sm4.md) (disponible a través de la API de Direct3D 11 mediante el nivel de característica 10.0 o 10.1 [**(D3D \_ FEATURE \_ LEVEL**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_feature_level) \_ 10 X) en dispositivos que admiten sombreadores \_ de proceso. Para obtener más información sobre la compatibilidad del sombreador de proceso en hardware de nivel inferior, vea [Sombreadores de proceso en hardware de nivel inferior).](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-compute-shaders)<br/> | Sí       |
+| Modelo de sombreador [5](d3d11-graphics-reference-sm5.md) y modelos de sombreador posteriores Shader [Model 4](dx-graphics-hlsl-sm4.md) (disponible a través de la API de Direct3D 11 mediante el nivel de característica 10.0 o 10.1 [**(D3D \_ FEATURE \_ LEVEL**](/windows/desktop/api/d3dcommon/ne-d3dcommon-d3d_feature_level) \_ 10 X) en dispositivos que admiten sombreadores \_ de proceso. Para obtener más información sobre la compatibilidad del sombreador de proceso en hardware de nivel inferior, vea [Sombreadores de proceso en hardware de nivel inferior).](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-compute-shaders)<br/> | sí       |
 
 
 
@@ -64,7 +64,7 @@ Este objeto es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
@@ -72,7 +72,7 @@ Este objeto es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

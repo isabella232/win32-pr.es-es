@@ -10,12 +10,12 @@ keywords:
 - exclusión mutua, objetos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32d7e780ac18dcad7ef04f9bb50d3a7389851156866980b21fbe0c231bcb057d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8522b66f82bd88479b8c7b1d0d0b45bd038fdab3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119929935"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360212"
 ---
 # <a name="mutual-exclusion-object"></a>Objeto de exclusión mutua
 

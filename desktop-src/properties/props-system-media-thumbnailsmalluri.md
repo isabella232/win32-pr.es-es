@@ -4,12 +4,12 @@ ms.assetid: 063ab14e-1cb1-4938-99b2-ebc4d53adaae
 title: System.Media.ThumbnailSmallUri
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95209ecde3ef83f9551d6a0b09764cd2b6cfb2aa3acd5fcf10bd42d2f1905855
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dfd621ff87596f4f0333d22625e5c10d78aad428
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119457265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360044"
 ---
 # <a name="systemmediathumbnailsmalluri"></a>System.Media.ThumbnailSmallUri
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

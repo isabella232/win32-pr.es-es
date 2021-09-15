@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e261459785fa4e0ccdce7337df788de007c6f335799bbe4778e80f551f5e519e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b90ee4f81c2afdfc222dd7d5d824f88bda122b73
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119995535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359210"
 ---
 # <a name="wmi-architecture"></a>Arquitectura de WMI
 
@@ -25,11 +25,11 @@ Para obtener datos de WMI, escriba un script de cliente o una aplicación que ac
 
 ## <a name="objects-consumers-and-infrastructure-of-wmi"></a>Objetos, consumidores e infraestructura de WMI
 
-En el diagrama siguiente se muestra la relación entre la infraestructura WMI y los proveedores wmi y los objetos administrados, y también se muestra la relación entre la infraestructura WMI y los consumidores wmi.
+En el diagrama siguiente se muestra la relación entre la infraestructura wmi y los proveedores wmi y los objetos administrados, y también se muestra la relación entre la infraestructura WMI y los consumidores de WMI.
 
 ![relación entre la infraestructura wmi, los proveedores wmi y los objetos administrados](images/wmi-architecture.png)
 
-## <a name="wmi-components"></a>Componentes wmi
+## <a name="wmi-components"></a>Componentes WMI
 
 En la lista siguiente se describen los componentes clave de WMI:
 
@@ -37,23 +37,23 @@ En la lista siguiente se describen los componentes clave de WMI:
 
     Un proveedor WMI es un objeto COM que supervisa uno o varios [*objetos administrados*](gloss-m.md) para WMI. Un objeto administrado es un componente empresarial lógico o físico, como una unidad de disco duro, un adaptador de red, un sistema de base de datos, un sistema operativo, un proceso o un servicio.
 
-    De forma similar a un controlador, un proveedor proporciona WMI con datos de un objeto administrado y controla los mensajes de WMI al objeto administrado. Los proveedores WMI constan de un archivo DLL y un archivo [*Managed Object Format (MOF)*](gloss-m.md) que define las clases para las que el proveedor devuelve datos y realiza operaciones. Los proveedores, como las aplicaciones wmi de C++, usan la [API COM para WMI.](com-api-for-wmi.md) Para obtener más información, vea [Proporcionar datos a WMI.](providing-data-to-wmi.md)
+    De forma similar a un controlador, un proveedor proporciona a WMI datos de un objeto administrado y controla los mensajes de WMI al objeto administrado. Los proveedores WMI constan de un archivo DLL y un archivo [*Managed Object Format (MOF)*](gloss-m.md) que define las clases para las que el proveedor devuelve datos y realiza operaciones. Los proveedores, como las aplicaciones wmi de C++, usan la [API COM para WMI.](com-api-for-wmi.md) Para obtener más información, vea [Proporcionar datos a WMI.](providing-data-to-wmi.md)
 
-    Un ejemplo de un proveedor es el proveedor del [Registro preinstalado](/previous-versions/windows/desktop/regprov/system-registry-provider), que tiene acceso a los datos del registro del sistema. El proveedor del Registro tiene una [*clase WMI,*](gloss-w.md) [**StdRegProv,**](/previous-versions/windows/desktop/regprov/stdregprov)con muchos métodos pero sin propiedades. Otros proveedores preinstalados, como el proveedor [Win32,](/windows/desktop/CIMWin32Prov/win32-provider)suelen tener clases con muchas propiedades, pero pocos métodos, como [**Win32 \_ Process**](/windows/desktop/CIMWin32Prov/win32-process) o [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk). El archivo DLL del proveedor del Registro, Stdprov.dll, contiene el código que devuelve dinámicamente los datos cuando lo solicitan las aplicaciones o scripts de cliente.
+    Un ejemplo de un proveedor es el proveedor del [Registro preinstalado,](/previous-versions/windows/desktop/regprov/system-registry-provider)que tiene acceso a los datos del registro del sistema. El proveedor del Registro tiene una [*clase WMI,*](gloss-w.md) [**StdRegProv,**](/previous-versions/windows/desktop/regprov/stdregprov)con muchos métodos pero sin propiedades. Otros proveedores preinstalados, como el proveedor [Win32](/windows/desktop/CIMWin32Prov/win32-provider), suelen tener clases con muchas propiedades, pero pocos métodos, como [**Win32 \_ Process**](/windows/desktop/CIMWin32Prov/win32-process) o [**Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk). El archivo DLL del proveedor del Registro, Stdprov.dll, contiene el código que devuelve dinámicamente los datos cuando lo solicitan las aplicaciones o scripts de cliente.
 
-    Los archivos MOF y DLL de WMI se encuentran en %WINDIR% \\ System32 \\ Wbem, [](winmgmt.md) [****](mofcomp.md)junto con wmi [Command-Line Tools](wmi-command-line-tools.md), comoWinmgmt.exeyMofcomp.exe. Las clases de proveedor, como [**\_ Win32 LogicalDisk,**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)se definen en archivos MOF y, a continuación, se compilan en el repositorio WMI al iniciar el sistema.
+    Los archivos MOF y DLL de WMI se encuentran en %WINDIR% \\ System32 \\ Wbem, [](winmgmt.md) [****](mofcomp.md)junto con wmi [Command-Line Tools](wmi-command-line-tools.md), comoWinmgmt.exeyMofcomp.exe. Las clases de proveedor, [**como Win32 \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/win32-logicaldisk), se definen en archivos MOF y, a continuación, se compilan en el repositorio WMI al iniciar el sistema.
 
 -   [Infraestructura wmi](wmi-infrastructure.md)
 
-    La infraestructura WMI es un componente Windows sistema operativo de Microsoft conocido como servicio WMI(winmgmt). La infraestructura wmi tiene dos componentes: el núcleo de WMI y el [*repositorio wmi*](gloss-w.md).
+    La infraestructura WMI es un componente Windows sistema operativo de Microsoft conocido como servicio WMI (winmgmt). La infraestructura WMI tiene dos componentes: WMI Core y [*el repositorio WMI*](gloss-w.md).
 
-    El repositorio WMI está organizado por espacios [*de nombres WMI.*](gloss-n.md) El servicio WMI crea algunos espacios de nombres, como root default, root cimv2 y root subscription al iniciar el sistema, y preinstala un conjunto predeterminado de definiciones de clase, incluidas las clases Win32 , las clases del sistema WMI y \\ \\ \\ otras. [](/windows/desktop/CIMWin32Prov/win32-provider) [](wmi-system-classes.md) Los restantes espacios de nombres que se encuentran en el sistema los crean proveedores para otras partes del sistema operativo o productos. Para obtener más información y una lista de los proveedores WMI que se encuentran en la mayoría de las versiones del sistema operativo, vea [Proveedores WMI](wmi-providers.md).
+    El repositorio WMI está organizado por espacios de [*nombres WMI.*](gloss-n.md) El servicio WMI crea algunos espacios de nombres como root default, root cimv2 y root subscription al iniciar el sistema y preinstala un conjunto predeterminado de definiciones de clase, incluidas las clases Win32 , las clases del sistema WMI y \\ \\ \\ otras. [](/windows/desktop/CIMWin32Prov/win32-provider) [](wmi-system-classes.md) Los proveedores crean los espacios de nombres restantes que se encuentran en el sistema para otras partes del sistema operativo o productos. Para obtener más información y una lista de proveedores WMI que se encuentran en la mayoría de las versiones del sistema operativo, vea [Proveedores WMI.](wmi-providers.md)
 
     El servicio WMI actúa como intermediario entre los proveedores, las aplicaciones de administración y el repositorio WMI. Solo los datos estáticos sobre objetos se almacenan en el repositorio, como las clases definidas por los proveedores. WMI obtiene la mayoría de los datos dinámicamente del proveedor cuando un cliente lo solicita. También puede configurar suscripciones para recibir notificaciones de eventos de un proveedor. Para obtener más información, vea [Monitoring Events](monitoring-events.md).
 
 -   Consumidores WMI
 
-    Un consumidor WMI es una aplicación de administración o un script que interactúa con la infraestructura WMI. Una aplicación de administración puede consultar, enumerar datos, ejecutar métodos de proveedor o suscribirse a eventos llamando a la [API COM](com-api-for-wmi.md) para WMI o a scripting API [para WMI.](scripting-api-for-wmi.md) Los únicos datos o acciones disponibles para un objeto administrado, como una unidad de disco o un servicio, son los que proporciona un proveedor.
+    Un consumidor WMI es una aplicación de administración o un script que interactúa con la infraestructura wmi. Una aplicación de administración puede consultar, enumerar datos, ejecutar métodos de proveedor o suscribirse a eventos mediante una llamada a la [API COM](com-api-for-wmi.md) para WMI o a scripting API [para WMI.](scripting-api-for-wmi.md) Los únicos datos o acciones disponibles para un objeto administrado, como una unidad de disco o un servicio, son los que proporciona un proveedor.
 
 ## <a name="related-topics"></a>Temas relacionados
 

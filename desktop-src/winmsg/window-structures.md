@@ -4,12 +4,12 @@ ms.assetid: 8254174d-d19f-4177-91b0-dc87aa1e40e0
 title: Estructuras de ventana
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 511014a51e7dfd0fc569c0a583c7fa6e79954da4fc234afe5ffc6ec20f23ede1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9845b70afaec92d116dd709ddee4f533b69900aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118200586"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360607"
 ---
 # <a name="window-structures"></a>Estructuras de ventana
 

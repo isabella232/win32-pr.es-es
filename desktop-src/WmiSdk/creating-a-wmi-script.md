@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a56eca450757086b3d334d8f64fa41c4cf297f903963498afe958bee802705eb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1ef13a5f9269dbc24566e95ce37101d10afa6c90
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119464195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359099"
 ---
 # <a name="creating-a-wmi-script"></a>Crear un script WMI
 
@@ -29,7 +29,7 @@ Puede ver o manipular cualquier información que esté disponible a través de W
 
 ## <a name="wmi-scripting-languages"></a>Lenguajes de scripting WMI
 
-Los dos lenguajes principales admitidos por WMI son PowerShell y VBScript (mediante el host Windows script o WSH).
+Los dos lenguajes principales admitidos por WMI son PowerShell y VBScript (a través del host Windows script o WSH).
 
 -   **PowerShell se** diseñó con una estrecha integración con WMI en mente. Por lo tanto, gran parte de los elementos subyacentes de WMI están integrados en los cmdlets wmi: [Get-WmiObject](/powershell/module/microsoft.powershell.management/get-wmiobject?view=powershell-5.1), [Set-WmiInstance](/powershell/module/microsoft.powershell.management/set-wmiinstance?view=powershell-5.1), [Invoke-WmiMethod](/powershell/module/microsoft.powershell.management/invoke-wmimethod?view=powershell-5.1)y [Remove-WmiObject](/powershell/module/microsoft.powershell.management/remove-wmiobject?view=powershell-5.1). En la tabla siguiente se describen los procesos generales que se usan para acceder a la información de WMI. Tenga en cuenta que, aunque la mayoría de estos ejemplos usan Get-WMIObject, muchos de los cmdlets WMI de PowerShell tienen los mismos parámetros, como *-Class* o *-Credentials*. Por lo tanto, muchos de estos procesos también funcionan para otros objetos. Para obtener una explicación más detallada de PowerShell y WMI, vea Using [the Get-WMiObject Cmdlet](/previous-versions/windows/it-pro/windows-powershell-1.0/ee176860(v=technet.10)) and Windows PowerShell - the WMI [Connection](/previous-versions/technet-magazine/cc162365(v=msdn.10)).
 
@@ -37,7 +37,7 @@ Los dos lenguajes principales admitidos por WMI son PowerShell y VBScript (media
 
     VBScript tiene básicamente dos maneras independientes de acceder a WMI. La primera es usar un [**objeto SWbemLocator**](swbemlocator.md) para conectarse a WMI. Como alternativa, puede usar [**GetObject**](/windows/desktop/api/Provider/nf-provider-provider-getobject(cinstance_long_cframeworkquery_)) y un moniker. Un moniker es una cadena que puede describir varios elementos: las credenciales, la configuración de suplantación, el equipo al que desea conectarse, el espacio de nombres [*WMI*](gloss-n.md) (es decir, la ubicación general donde WMI almacena grupos de objetos) y el objeto WMI que desea recuperar. Muchos de los ejemplos siguientes describen ambas técnicas. Para obtener más información, vea [Construir una cadena de Moniker](constructing-a-moniker-string.md) y Describir la ubicación de un objeto [WMI](describing-the-location-of-a-wmi-object.md).
 
-    Independientemente de la técnica que use para conectarse a WMI, es probable que recupere uno o varios objetos de scripting API. El más común es [**SWbemObject,**](swbemobject.md)que WMI usa para describir un objeto WMI. Como alternativa, puede usar un objeto [**SWbemServices**](swbemservices.md) para describir el propio servicio WMI o un objeto [**SWbemObjectPath**](swbemobjectpath.md) para describir la ubicación de un objeto WMI. Para obtener más información, vea [Scripting with SWbemObject](scripting-with-swbemobject.md) and [Scripting Helper Objects](scripting-helper-objects.md).
+    Independientemente de la técnica que use para conectarse a WMI, es probable que recupere uno o varios objetos de Scripting API. El más común es [**SWbemObject,**](swbemobject.md)que WMI usa para describir un objeto WMI. Como alternativa, puede usar un objeto [**SWbemServices**](swbemservices.md) para describir el propio servicio WMI o un objeto [**SWbemObjectPath**](swbemobjectpath.md) para describir la ubicación de un objeto WMI. Para obtener más información, vea [Scripting with SWbemObject](scripting-with-swbemobject.md) and [Scripting Helper Objects](scripting-helper-objects.md).
 
 ## <a name="using-wmi-and-a-scripting-language-how-do-i"></a>Uso de WMI y un lenguaje de scripting, ¿Cómo...
 
@@ -115,7 +115,7 @@ Get-WMIObject -Class Win32_WmiSetting
 <span id="...create_a_WMI_query_"></span><span id="...create_a_wmi_query_"></span><span id="...CREATE_A_WMI_QUERY_"></span>... ¿Crear una consulta WMI?
 </dt> <dd>
 
-Para VBScript y scripting API para WMI, use el [**SWbemServices.Exemétodo cQuery.**](swbemservices-execquery.md)
+Para VBScript y scripting API para WMI, use el [**método SWbemServices.ExecQuery.**](swbemservices-execquery.md)
 
 Para PowerShell, use el *parámetro -Query.* También puede filtrar mediante el *parámetro -Filter.*
 
@@ -149,7 +149,7 @@ get-wmiObject -Class Win32_LogicalDisk -Filter &quot;DeviceID = &#39;C:&#39;&quo
 <span id="...enumerate_through_a_list_of_WMI_objects_"></span><span id="...enumerate_through_a_list_of_wmi_objects_"></span><span id="...ENUMERATE_THROUGH_A_LIST_OF_WMI_OBJECTS_"></span>... enumerar a través de una lista de objetos WMI?
 </dt> <dd>
 
-Para VBScript y scripting API para WMI, use el objeto de contenedor [**SWbemObjectSet,**](swbemobjectset.md) que se trata en script como una colección que se puede enumerar. Puede recuperar un **objeto SWbemObjectSet** de una llamada desde [**SWbemServices.InstancesOf**](swbemservices-instancesof.md) [**oSWbemServices.ExecQuery**](swbemservices-execquery.md).
+Para VBScript y scripting API para WMI, use el objeto contenedor [**SWbemObjectSet,**](swbemobjectset.md) que se trata en script como una colección que se puede enumerar. Puede recuperar un **SWbemObjectSet** de una llamada desde [**SWbemServices.InstancesOf**](swbemservices-instancesof.md) o [**SWbemServices.ExecQuery**](swbemservices-execquery.md).
 
 PowerShell puede recuperar y controlar enumeraciones como lo haría con cualquier otro objeto. no hay nada particularmente único para WMI.
 
@@ -214,10 +214,10 @@ Get-WmiObject -Namespace root -Class __Namespace
 
 </dd> <dt>
 
-<span id="...retrieve_all_child_instances_of_a_class_"></span><span id="...RETRIEVE_ALL_CHILD_INSTANCES_OF_A_CLASS_"></span>... ¿Recuperar todas las instancias secundarias de una clase?
+<span id="...retrieve_all_child_instances_of_a_class_"></span><span id="...RETRIEVE_ALL_CHILD_INSTANCES_OF_A_CLASS_"></span>... recuperar todas las instancias secundarias de una clase?
 </dt> <dd>
 
-Para los lenguajes que usan directamente scripting API para WMI y PowerShell, WMI admite la recuperación de las clases secundarias de una clase base. Por lo tanto, para recuperar las instancias secundarias, solo debe buscar la clase primaria. En el ejemplo siguiente se busca [**CIM \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/cim-logicaldisk), que es una clase WMI preinstalada que representa los discos lógicos en un Windows basado en máquinas virtuales. Por lo tanto, la búsqueda de esta clase primaria también devuelve instancias de [**\_ LogicalDisk de Win32,**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)que es lo que Windows para describir las unidades de disco duro. Para obtener más información, [vea Modelo de información común](common-information-model.md). WMI proporciona un esquema completo de estas clases preinstaladas que le permiten tener acceso a los objetos administrados y controlarlo. Para obtener más información, [vea Clases Win32](/windows/desktop/CIMWin32Prov/win32-provider) y [clases WMI](wmi-classes.md).
+Para los lenguajes que usan directamente scripting API para WMI y PowerShell, WMI admite la recuperación de las clases secundarias de una clase base. Por lo tanto, para recuperar las instancias secundarias, solo debe buscar la clase primaria. En el ejemplo siguiente se busca [**CIM \_ LogicalDisk**](/windows/desktop/CIMWin32Prov/cim-logicaldisk), que es una clase WMI preinstalada que representa discos lógicos en un sistema Windows basado en dispositivos virtuales. Por lo tanto, la búsqueda de esta clase primaria también devuelve instancias de [**\_ LogicalDisk de Win32,**](/windows/desktop/CIMWin32Prov/win32-logicaldisk)que es lo que Windows para describir las unidades de disco duro. Para obtener más información, [vea Modelo de información común](common-information-model.md). WMI proporciona un esquema completo de estas clases preinstaladas que le permiten tener acceso a los objetos administrados y controlarlo. Para obtener más información, [vea Clases Win32](/windows/desktop/CIMWin32Prov/win32-provider) y [clases WMI](wmi-classes.md).
 
 
 ```VB
@@ -409,7 +409,7 @@ Get-WmiObject -Namespace &quot;root\cimv2&quot; -Class Win32_logicalDisk -Comput
 
 </dd> <dt>
 
-<span id="...set_the_Authentication_and_Impersonation_levels_"></span><span id="...set_the_authentication_and_impersonation_levels_"></span><span id="...SET_THE_AUTHENTICATION_AND_IMPERSONATION_LEVELS_"></span>... establecer los niveles de autenticación y suplantación?
+<span id="...set_the_Authentication_and_Impersonation_levels_"></span><span id="...set_the_authentication_and_impersonation_levels_"></span><span id="...SET_THE_AUTHENTICATION_AND_IMPERSONATION_LEVELS_"></span>... ¿Establecer los niveles de autenticación y suplantación?
 </dt> <dd>
 
 Para VBScript y scripting API para WMI, use la propiedad [**SWbemServices.Security \_**](swbemlocator-security-.md) en el objeto de servidor devuelto o establezca los valores pertinentes en el moniker.
@@ -450,7 +450,7 @@ Get-WmiObject -Namespace &quot;root\cimv2&quot; -Class Win32_Process -Impersonat
 
 Para Scripting API para WMI, el proveedor puede proporcionar un [**objeto SWbemLastError**](swbemlasterror.md) para proporcionar más información sobre un error.
 
-En VBScript en particular, también se admite el control de errores mediante el objeto **Err** nativo. También puede acceder al [**objeto SWbemLastError,**](swbemlasterror.md)como se ha descrito anteriormente. Para obtener más información, [vea Recuperar un código de error.](retrieving-an-error-code.md)
+En VBScript en particular, también se admite el control de errores mediante el objeto **Err** nativo. También puede acceder al [**objeto SWbemLastError,**](swbemlasterror.md)como se describió anteriormente. Para obtener más información, [vea Recuperar un código de error.](retrieving-an-error-code.md)
 
 Para PowerShell, puede usar las técnicas estándar de control de errores de PowerShell. Para obtener más información, [vea Introducción al control de errores en PowerShell.](/archive/blogs/kebab/an-introduction-to-error-handling-in-powershell)
 

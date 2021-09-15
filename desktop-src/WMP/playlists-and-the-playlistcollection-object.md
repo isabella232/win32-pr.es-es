@@ -16,12 +16,12 @@ keywords:
 - Objeto PlaylistCollection
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82e57b11f29c259b3e4174f53fe4ef75d688475d8a42df595f89a0e72fe6f06b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 98744c2c5b97129db2824c42567802a374f90b6c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119862035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359454"
 ---
 # <a name="playlists-and-the-playlistcollection-object"></a>Listas de reproducción y el objeto PlaylistCollection
 
@@ -54,7 +54,7 @@ Playlist = PlaylistArray.Item(0);
 
 Puede usar *PlaylistCollection*. **Método newPlaylist** para crear una nueva lista de reproducción vacía. El método devuelve una referencia al nuevo objeto **Playlist.** A continuación, puede llamar a la lista *de reproducción*. **Método appendItem** para agregar elementos multimedia a la lista de reproducción.
 
-También puede crear una nueva lista de reproducción basada en un metarchivo de lista de reproducción. En primer lugar, pase el nombre de la lista de reproducción y la ruta de acceso al metarchivo al *reproductor*. **Método newPlaylist.** Ese método devuelve una referencia al nuevo objeto **Playlist.** A continuación, pase el **nuevo objeto Playlist** a *PlaylistCollection*. **Método importPlaylist** para agregarlo a la biblioteca.
+También puede crear una nueva lista de reproducción basada en un metarchivo de lista de reproducción. En primer lugar, pase el nombre de la lista de reproducción y la ruta de acceso al metarchivo al *reproductor*. **Método newPlaylist.** Ese método devuelve una referencia al nuevo objeto **Playlist.** A continuación, pase el nuevo **objeto Playlist** a *PlaylistCollection*. **Método importPlaylist** para agregarlo a la biblioteca.
 
 Observe la diferencia entre *PlaylistCollection*. **Método newPlaylist** y *Player*. **Método newPlaylist.** El **método PlaylistCollection** crea una nueva lista de reproducción vacía y la agrega a la biblioteca. El **método Player** crea un nuevo objeto **Playlist** rellenado, pero no lo agrega a la biblioteca.
 

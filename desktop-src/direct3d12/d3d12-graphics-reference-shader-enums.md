@@ -7,12 +7,12 @@ keywords:
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d29ece2945ec9aa388c8c77449c9bbaad499646836010aa893bca82f288b2c69
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bb30886e9f2fd08fb212d883428854d0394b8068
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118098317"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359825"
 ---
 # <a name="shader-enumerations-direct3d-12-graphics"></a>Enumeraciones de sombreador (gráficos de Direct3D 12)
 

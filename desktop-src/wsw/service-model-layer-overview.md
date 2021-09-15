@@ -3,24 +3,24 @@ title: Información general sobre la capa de modelo de servicio
 description: La API del modelo de servicio WWSAPI modela la comunicación entre un cliente y un servicio como llamadas de método, en lugar de como mensajes de datos.
 ms.assetid: a1ed1e3c-94ae-4383-9251-83caf2e3ebf3
 keywords:
-- Servicios web de introducción a la capa de modelo de servicio para Windows
+- Service Model Layer Overview Web Services for Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b182678568c7825cbf0b18bbbfd132dd5287d3f05b9ae6a372e6e5c70cd06d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c74861f0e2ed13b35e308d1314aec2a33dc28c31
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118962970"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360572"
 ---
 # <a name="service-model-layer-overview"></a>Información general sobre la capa de modelo de servicio
 
-La API del modelo de servicio WWSAPI modela la comunicación entre un cliente y un servicio como llamadas de método, en lugar de como mensajes de datos. A diferencia del nivel de canal [](message.md) [,](channel-layer-overview.md)que admite intercambios de mensajes más tradicionales entre el cliente y el servicio, el modelo de servicio administra automáticamente la comunicación mediante un proxy de servicio en el cliente y un host de servicio en el servicio. Esto significa que el cliente llama a funciones generadas y el servidor implementa devoluciones de llamada.
+La API del modelo de servicio WWSAPI modela la comunicación entre un cliente y un servicio como llamadas de método, en lugar de como mensajes de datos. A diferencia de la capa de [](message.md) canal [,](channel-layer-overview.md)que admite intercambios de mensajes más tradicionales entre el cliente y el servicio, el modelo de servicio administra automáticamente la comunicación mediante un proxy de servicio en el cliente y un host de servicio en el servicio. Esto significa que el cliente llama a las funciones generadas y el servidor implementa devoluciones de llamada.
 
 
-Por ejemplo, considere un servicio de calculadora que realiza suma y resta en dos números. La suma y resta son operaciones representadas de forma natural como llamadas a métodos.
+Por ejemplo, considere un servicio de calculadora que realiza sumas y restas en dos números. La suma y la resta son operaciones representadas de forma natural como llamadas a métodos.
 
 ![Diagrama que muestra cómo un servicio de calculadora se comunica con un cliente mediante llamadas de método para sumar y restar.](images/servicemodelintro.png)
 
@@ -28,11 +28,11 @@ El modelo de servicio representa la comunicación entre el cliente y el servicio
 
 ## <a name="specifying-a-service"></a>Especificar un servicio
 
-Un servicio debe especificarse en términos de sus patrones de intercambio de mensajes, así como de su representación de datos de red. En el caso de los servicios, esta especificación normalmente se proporciona como documentos de esquema WSDL y XML.
+Un servicio debe especificarse en términos de sus patrones de intercambio de mensajes, así como de su representación de datos de red. Para los servicios, esta especificación se proporciona normalmente como documentos de esquema WSDL y XML.
 
 El documento WSDL es un documento XML que contiene el enlace de canal y los patrones de intercambio de mensajes del servicio, mientras que el documento de esquema XML es un documento XML que define la representación de datos de los mensajes individuales.
 
-Para el servicio de calculadora y sus operaciones de suma y resta, el documento WSDL podría ser parecido al ejemplo siguiente:
+Para el servicio de calculadora y sus operaciones de suma y resta, el documento WSDL podría tener un aspecto parecido al del ejemplo siguiente:
 
 ``` syntax
 <wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
@@ -55,7 +55,7 @@ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
 </wsdl:definitions>
 ```
 
-Del mismo modo, su esquema XML se puede definir de la siguiente manera:
+Del mismo modo, su esquema XML se puede definir de la manera siguiente:
 
 ``` syntax
 <xs:schema xmlns:tns="http://Example.org" elementFormDefault="qualified" 
@@ -81,7 +81,7 @@ targetNamespace="http://Example.org" xmlns:xs="http://www.w3.org/2001/XMLSchema"
 
 ## <a name="converting-metadata-to-code"></a>Convertir metadatos en código
 
-El modelo de servicio proporciona la [WsUtil.exe](web-service-compiler-tool.md) como herramienta para procesar estos documentos de metadatos, convirtiendo un archivo WSDL en un encabezado de C y archivos de código fuente.
+El modelo de [](web-service-compiler-tool.md) servicio proporcionaWsUtil.exeherramienta para procesar estos documentos de metadatos, convirtiendo un archivo WSDL en un encabezado C y archivos de origen.
 
 ![Diagrama que muestra WsUtil.exe convierte un archivo WSDL en un encabezado de C y archivos de código fuente.](images/doctotool.png)
 
@@ -124,7 +124,7 @@ La interacción de los componentes individuales del modelo de servicio WWSAPI en
 
 -   El cliente crea un [proxy de servicio](service-proxy.md) y lo abre.
 -   El cliente llama a la función Add del servicio y pasa el proxy de servicio.
--   El mensaje se serializa según los metadatos de serialización en los archivos de encabezado y de origen generados por la herramienta de metadatos ([WsUtil.exe](web-service-compiler-tool.md)).
+-   El mensaje se serializa según los metadatos de serialización en los archivos de encabezado y origen generados por la herramienta de[ metadatos ](web-service-compiler-tool.md)(WsUtil.exe).
 -   El mensaje se escribe en el canal y se transmite a través de la red al servicio.
 -   En el lado servidor, el servicio se hospeda dentro de un host de servicio y tiene un punto de conexión que escucha el contrato ICalculator.
 -   Con los metadatos del modelo de servicio en el código auxiliar, el servicio deserializa el mensaje del cliente y lo envía al código auxiliar.
@@ -135,9 +135,9 @@ La interacción de los componentes individuales del modelo de servicio WWSAPI en
 Componentes
 
 -   [Host de servicio:](service-host.md)hospeda un servicio.
--   [Proxy de](service-proxy.md)servicio: define cómo se comunica un cliente con un servicio.
+-   [Proxy de servicio:](service-proxy.md)define cómo se comunica un cliente con un servicio.
 -   [Contexto:](context.md)bolsa de propiedades para hacer que la información específica del estado esté disponible para una operación de servicio.
--   [Contract](contract.md): la definición de interfaz de un servicio. Por ejemplo, ICalculator representa un contrato para el servicio de calculadora en nuestro código de ejemplo.
+-   [Contract:](contract.md)definición de interfaz de un servicio. Por ejemplo, ICalculator representa un contrato para el servicio de calculadora en nuestro código de ejemplo.
 -   [WsUtil.exe: ](web-service-compiler-tool.md)la herramienta de metadatos del modelo de servicio para generar servidores proxy y códigos auxiliares.
 
  

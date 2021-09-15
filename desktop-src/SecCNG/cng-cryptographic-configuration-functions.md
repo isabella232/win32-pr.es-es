@@ -4,12 +4,12 @@ ms.assetid: 45936528-ee29-4bc5-a609-4ca53cd08da7
 title: Funciones de configuración criptográfica de CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79ebe5701678069b5c42fea329791454b2ada54d5e6ea3ba206ff7b3e0db1cfa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 30811e94aabeddb88e7c10251e1206768f891d17
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118908813"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271247"
 ---
 # <a name="cng-cryptographic-configuration-functions"></a>Funciones de configuración criptográfica de CNG
 

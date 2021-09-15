@@ -4,12 +4,12 @@ ms.assetid: cb2c6b6d-6ac5-47e2-96c2-4a68e86af00f
 title: De uso general (gráficos de Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fbd3acbb3248708efb2d9aff4e2baf198f73d5426b186b5531b3d23907e3b33
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 228af2d89a0c26d8aacfb0127b7e7fe299d12965
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119122502"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359350"
 ---
 # <a name="general-purpose-functions-direct3d-9-graphics"></a>De uso general (gráficos de Direct3D 9)
 

@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: ed4b0abd35f9f53fb2111f40903e4b2b81a75c9d402a53fbb2fdb1cdc9a75750
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b097e63792b32bc1688ce93c8ce32ffaedeae6ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119847845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270183"
 ---
 # <a name="id3dxfilesavedataadddataobject-method"></a>Método ID3DXFileSaveData::AddDataObject
 
-Agrega un objeto de datos como elemento secundario del nodo de datos de archivo [**ID3DXFileSaveData.**](id3dxfilesavedata.md)
+Agrega un objeto de datos como elemento secundario del nodo de datos [**de archivo ID3DXFileSaveData.**](id3dxfilesavedata.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -59,7 +59,7 @@ GUID que representa la plantilla del objeto de datos.
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Puntero al nombre del objeto de datos que se agregará. Especifique **NULL** si el objeto no tiene un nombre.
+Puntero al nombre del objeto de datos que se agrega. Especifique **NULL** si el objeto no tiene un nombre.
 
 </dd> <dt>
 
@@ -103,7 +103,7 @@ Dirección de un puntero a una [**interfaz ID3DXFileSaveData,**](id3dxfilesaveda
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DXFERR \_ BADOBJECT, D3DXFERR \_ BADVALUE, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DXFERR \_ BADOBJECT, D3DXFERR \_ BADVALUE, E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -116,7 +116,7 @@ Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se prod
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

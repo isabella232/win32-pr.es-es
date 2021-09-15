@@ -4,16 +4,16 @@ description: IAgentUserInput GetCount
 ms.assetid: 9c127387-b680-405a-9a62-ee08cc70813a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f52c296dd152fd1e31a87e21d80f8b25d52ae880b300487cdcba746e81dfa0f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3ac4b597f7367eff10154bde256698ef371c3619
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118749522"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359143"
 ---
 # <a name="iagentuserinputgetcount"></a>IAgentUserInput::GetCount
 
-\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 ``` syntax
 HRESULT GetCount(

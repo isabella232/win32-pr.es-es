@@ -15,12 +15,12 @@ keywords:
 - licencias, adquisición de licencias no silenciosas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e92c9350e429a1fe4b6218878d2211b355c1569b39284161f9f3abceac1afc6d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: adb8d7c4865e74fd5ce383cff8317de905828afe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117846440"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360208"
 ---
 # <a name="non-silent-license-acquisition"></a>Adquisición de licencias no silenciosas
 
@@ -29,9 +29,9 @@ La adquisición de licencias no silenciosas permite al proveedor de licencias in
 Para realizar la adquisición de licencias no silenciosas, siga estos pasos:
 
 1.  Llame al [**método IWMDRMLicenseManagement::AcquireLicense.**](iwmdrmlicensemanagement-acquirelicense.md) Pase el encabezado DRM del archivo protegido como *parámetro bstrHeaderData.* Especifique los derechos que desea que conceda la licencia en el *parámetro bstrActions.* Por último, establezca el *parámetro dwFlags* en WMDRM \_ ACQUIRE LICENSE \_ \_ NONSILENT.
-2.  Captura de eventos para **la interfaz IWMDRMLicenseManagement.** Cuando reciba el **evento MEWMDRMLicenseAcquisitionCompleted,** obtenga su valor asociado mediante una llamada a **IMFMediaEvent::GetValue**. El valor debe ser de tipo VT \_ UNKNOWN, un puntero a una **interfaz IUnknown.**
+2.  Captura de eventos para **la interfaz IWMDRMLicenseManagement.** Cuando reciba el **evento MEWMDRMLicenseAcquisitionCompleted,** obtenga su valor asociado llamando a **IMFMediaEvent::GetValue**. El valor debe ser de tipo VT \_ UNKNOWN, un puntero a una **interfaz IUnknown.**
 3.  Llame al **método QueryInterface** de la **interfaz IUnknown** recuperada en el paso 2 para obtener la [**interfaz IWMDRMNonSilentLicenseAquisition.**](iwmdrmnonsilentlicenseaquisition.md)
-4.  Llame [**a IWMDRMNonSilentLicenseAquisition::GetChallenge**](iwmdrmnonsilentlicenseaquisition-getchallenge.md) para recuperar el desafío de licencia. Llame también [**a IWMDRMNonSilentLicenseAquisition::GetURL**](iwmdrmnonsilentlicenseaquisition-geturl.md) si aún no tiene la dirección URL del servidor de licencias.
+4.  Llame [**a IWMDRMNonSilentLicenseAquisition::GetChallenge para**](iwmdrmnonsilentlicenseaquisition-getchallenge.md) recuperar el desafío de licencia. Llame también [**a IWMDRMNonSilentLicenseAquisition::GetURL**](iwmdrmnonsilentlicenseaquisition-geturl.md) si aún no tiene la dirección URL del servidor de licencias.
 5.  Envíe el desafío a la página web especificada por la dirección URL.
 
 ## <a name="related-topics"></a>Temas relacionados

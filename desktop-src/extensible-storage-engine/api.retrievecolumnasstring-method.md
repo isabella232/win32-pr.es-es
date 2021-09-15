@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: b648cd8b5649ca2dd5b3bd36d31ea4b69fd6ecb41ae400d5626104e65e368705
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c6750e2611a663701a82e830f5b9e7f46ed9691
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118983031"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359774"
 ---
 # <a name="apiretrievecolumnasstring-method"></a>Método Api.RetrieveColumnAsString
 
@@ -58,7 +58,7 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -4,12 +4,12 @@ ms.assetid: e73c37e3-7879-4754-b39c-91be64fc8d73
 title: Enumeraciones de ensamblado en paralelo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01a7aee5c64209176ce0690c0a9e7954ad51160a0723c1ec5d1e7e4cee5dba1d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 52f393ab9d8657ecaa52cad555dad5a831699687
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119142218"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271596"
 ---
 # <a name="side-by-side-assembly-enumerations"></a>Enumeraciones de ensamblado en paralelo
 

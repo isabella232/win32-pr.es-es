@@ -58,12 +58,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc4140444d1b5c3ae99c90c2447e165a4143b042dcc7567104e4b5f0063b645b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8bd7b829cd4c5ba550fd88242ffb8c34572648d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118984245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360148"
 ---
 # <a name="eap-related-error-and-information-constants"></a>Errores relacionados con EAP e constantes de información
 
@@ -123,7 +123,7 @@ Define el límite de los informes de información; cualquier registro de eventos
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_CERT_STORE_INACCESSIBLE"></span><span id="eap_e_cert_store_inaccessible"></span>**\_INACCESIBLE \_ EL ALMACÉN DE \_ \_ CERTIFICADOS EAP E**
+<span id="EAP_E_CERT_STORE_INACCESSIBLE"></span><span id="eap_e_cert_store_inaccessible"></span>**NO SE \_ PUEDE ACCEDER AL ALMACÉN DE CERTIFICADOS EAP \_ \_ \_ E**
 </dt> <dd> <dl> <dt>
 
 0x80420011
@@ -136,7 +136,7 @@ Ni el autenticador ni el mismo nivel pueden acceder al almacén de certificados.
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_EAPHOST_METHOD_NOT_INSTALLED"></span><span id="eap_e_eaphost_method_not_installed"></span>**MÉTODO \_ EAP E \_ EAPHOST NO \_ \_ \_ INSTALADO**
+<span id="EAP_E_EAPHOST_METHOD_NOT_INSTALLED"></span><span id="eap_e_eaphost_method_not_installed"></span>**EL \_ MÉTODO EAP E \_ EAPHOST NO ESTÁ \_ \_ \_ INSTALADO**
 </dt> <dd> <dl> <dt>
 
 0x80420011
@@ -170,7 +170,7 @@ El host del método de terceros no responde y se reinició automáticamente.
 
 
 
-EAPHost no puede comunicarse con el cliente de cumplimiento de [cuarentena](/windows/desktop/NAP/nap-client-architecture) de EAP (QEC) en [un](/windows/desktop/NAP/network-access-protection-start-page) cliente habilitado para Protección de acceso a redes (NAP).
+EAPHost no puede comunicarse con el cliente de cumplimiento de [cuarentena](/windows/desktop/NAP/nap-client-architecture) de EAP (QEC) en [un](/windows/desktop/NAP/network-access-protection-start-page) cliente habilitado para protección de acceso a redes (NAP).
 
 
 </dt> </dl> </dd> <dt>
@@ -188,7 +188,7 @@ EAPHost devuelve este error si el autenticador produce un error en la autenticac
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_AUTHENTICATION_FAILED"></span><span id="eap_e_authentication_failed"></span>**ERROR DE \_ \_ AUTENTICACIÓN EAP E \_**
+<span id="EAP_E_AUTHENTICATION_FAILED"></span><span id="eap_e_authentication_failed"></span>**ERROR \_ DE \_ AUTENTICACIÓN EAP E \_**
 </dt> <dd> <dl> <dt>
 
 0x80420015 
@@ -201,7 +201,7 @@ EAPHost devuelve este error en caso de error de autenticación.
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_I_EAPHOST_EAP_NEGOTIATION_FAILED"></span><span id="eap_i_eaphost_eap_negotiation_failed"></span>**ERROR EN \_ LA NEGOCIACIÓN DE EAP I \_ EAPHOST \_ \_ \_**
+<span id="EAP_I_EAPHOST_EAP_NEGOTIATION_FAILED"></span><span id="eap_i_eaphost_eap_negotiation_failed"></span>**ERROR EN \_ LA NEGOCIACIÓN DE EAP I \_ EAPHOST \_ EAP \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x40420016
@@ -214,7 +214,7 @@ EAPHost registra este evento de información cuando el cliente y el servidor no 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_EAPHOST_METHOD_INVALID_PACKET"></span><span id="eap_e_eaphost_method_invalid_packet"></span>**PAQUETE \_ NO VÁLIDO DEL MÉTODO EAP E \_ \_ \_ \_ EAPHOST**
+<span id="EAP_E_EAPHOST_METHOD_INVALID_PACKET"></span><span id="eap_e_eaphost_method_invalid_packet"></span>**PAQUETE \_ NO VÁLIDO DEL MÉTODO EAP E \_ EAPHOST \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x80420017
@@ -227,7 +227,7 @@ Un método EAP recibió un paquete EAP que no se puede procesar. Otro nombre par
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_EAPHOST_REMOTE_INVALID_PACKET"></span><span id="eap_e_eaphost_remote_invalid_packet"></span>**PAQUETE NO \_ VÁLIDO REMOTO EAP E \_ EAPHOST \_ \_ \_**
+<span id="EAP_E_EAPHOST_REMOTE_INVALID_PACKET"></span><span id="eap_e_eaphost_remote_invalid_packet"></span>**PAQUETE \_ NO VÁLIDO REMOTO EAP E \_ EAPHOST \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x80420018
@@ -313,7 +313,7 @@ Define el límite de los informes de errores; cualquier error relacionado con el
 
 
 
-Define el límite de los informes de información; cualquier registro de eventos informativos relacionados con EAP se producirá entre **EAP \_ I USER \_ \_ FIRST** y **EAP I USER \_ \_ \_ LAST**.
+Define el límite de los informes de información; cualquier registro de eventos informativos relacionado con EAP se producirá entre **EAP \_ I USER \_ \_ FIRST** y **EAP I USER \_ \_ \_ LAST**.
 
 
 </dt> </dl> </dd> <dt>
@@ -326,12 +326,12 @@ Define el límite de los informes de información; cualquier registro de eventos
 
 
 
-Define el límite de los informes de información; cualquier registro de eventos informativos relacionados con EAP se producirá entre **EAP \_ I USER \_ \_ FIRST** y **EAP I USER \_ \_ \_ LAST**.
+Define el límite de los informes de información; cualquier registro de eventos informativos relacionado con EAP se producirá entre **EAP \_ I USER \_ \_ FIRST** y **EAP I USER \_ \_ \_ LAST**.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_CERT_NOT_FOUND"></span><span id="eap_e_user_cert_not_found"></span>**NO SE \_ ENCONTRÓ EL CERTIFICADO DE USUARIO EAP \_ \_ \_ \_ E**
+<span id="EAP_E_USER_CERT_NOT_FOUND"></span><span id="eap_e_user_cert_not_found"></span>**NO \_ SE ENCONTRÓ EL CERTIFICADO DE USUARIO EAP \_ \_ \_ \_ E**
 </dt> <dd> <dl> <dt>
 
 0x80420100
@@ -357,7 +357,7 @@ El certificado de usuario que es usuario para la autenticación no tiene estable
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_CERT_EXPIRED"></span><span id="eap_e_user_cert_expired"></span>**CERTIFICADO \_ DE USUARIO EAP E \_ \_ \_ EXPIRADO**
+<span id="EAP_E_USER_CERT_EXPIRED"></span><span id="eap_e_user_cert_expired"></span>**EL CERTIFICADO \_ DE USUARIO EAP E \_ \_ \_ EXPIRÓ**
 </dt> <dd> <dl> <dt>
 
 0x80420102
@@ -417,7 +417,7 @@ El autenticador rechazó la certificación de usuario.
 
 
 
-Se recibió un error de EAP después de un intercambio de identidades, lo que indica la probabilidad de que se produzca un problema con la cuenta del usuario de autenticación.
+Se recibió un error de EAP después de un intercambio de identidades, lo que indica la probabilidad de que se produzca un problema con la cuenta del usuario autenticado.
 
 
 </dt> </dl> </dd> <dt>
@@ -435,7 +435,7 @@ El autenticador rechazó las credenciales de usuario para la autenticación.
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_NAME_PASSWORD_REJECTED"></span><span id="eap_e_user_name_password_rejected"></span>**CONTRASEÑA DE \_ NOMBRE DE USUARIO EAP E \_ \_ \_ \_ RECHAZADA**
+<span id="EAP_E_USER_NAME_PASSWORD_REJECTED"></span><span id="eap_e_user_name_password_rejected"></span>**CONTRASEÑA \_ DE NOMBRE DE USUARIO EAP E \_ \_ \_ \_ RECHAZADA**
 </dt> <dd> <dl> <dt>
 
 0x80420112
@@ -682,7 +682,7 @@ Error de autenticación porque el certificado del equipo servidor no tiene espec
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Hay nombres alternativos para determinados errores:
 
@@ -697,11 +697,11 @@ Hay nombres alternativos para determinados errores:
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                      |
-| Header<br/>                   | <dl> <dt>Eaphosterror.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Eaphosterror.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

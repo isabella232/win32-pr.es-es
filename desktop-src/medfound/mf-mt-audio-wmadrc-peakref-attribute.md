@@ -1,19 +1,19 @@
 ---
-description: Nivel de volumen máximo de referencia de un archivo de Windows Media Audio.
+description: Haga referencia al nivel de volumen máximo de Windows archivo de audio multimedia.
 ms.assetid: bb762f9c-cf08-4d32-991e-490eb7b1f579
-title: MF_MT_AUDIO_WMADRC_PEAKREF atributo (mfapi. h)
+title: MF_MT_AUDIO_WMADRC_PEAKREF atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 0074046c79f532a4b63472f8ec22b588b2c4020a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104544347"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360701"
 ---
-# <a name="mf_mt_audio_wmadrc_peakref-attribute"></a>\_ \_ Atributo PEAKREF de audio MF MT \_ WMADRC \_
+# <a name="mf_mt_audio_wmadrc_peakref-attribute"></a>Atributo MF \_ MT \_ AUDIO \_ WMADRC \_ PEAKREF
 
-Nivel de volumen máximo de referencia de un archivo de Windows Media Audio.
+Haga referencia al nivel de volumen máximo de Windows archivo de audio multimedia.
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -21,11 +21,11 @@ Nivel de volumen máximo de referencia de un archivo de Windows Media Audio.
 
 ## <a name="remarks"></a>Observaciones
 
-Este atributo se aplica a los tipos de medios de audio para códecs de Windows Media Audio. Especifica el nivel de volumen máximo original del contenido. El descodificador puede utilizar este valor para realizar un control de intervalo dinámico.
+Este atributo se aplica a los tipos de medios de audio Windows códecs de audio multimedia. Especifica el nivel de volumen máximo original del contenido. El descodificador puede usar este valor para realizar el control de intervalo dinámico.
 
-El método [**IMFASFContentInfo::P arseheader**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-parseheader) agrega este atributo al tipo de medio si el encabezado ASF contiene el atributo [**WM/WMADRCPeakReference**](../wmformat/wm-wmadrcpeakreference.md) . Este atributo se documenta en la documentación del SDK de Windows Media Format.
+El [**método IMFASFContentInfo::P arseHeader**](/windows/desktop/api/wmcontainer/nf-wmcontainer-imfasfcontentinfo-parseheader) agrega este atributo al tipo de medio si el encabezado ASF contiene el [**atributo WM/WMADRCPeakReference.**](../wmformat/wm-wmadrcpeakreference.md) Este atributo se documenta en la documentación del SDK Windows Media Format.
 
-La constante GUID para este atributo se exporta desde mfuuid. lib.
+La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,29 +33,29 @@ La constante GUID para este atributo se exporta desde mfuuid. lib.
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Vista \|\]<br/>                              |
-| Servidor mínimo compatible<br/> | \[Aplicaciones para UWP de aplicaciones de escritorio de Windows Server 2008 \|\]<br/>                        |
-| Encabezado<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
+| Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**ATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**ATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)
 </dt> <dt>
 
-[Atributos de tipo de medio](media-type-attributes.md)
+[Atributos de tipo multimedia](media-type-attributes.md)
 </dt> </dl>
 
  

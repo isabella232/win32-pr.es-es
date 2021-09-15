@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e648dd59ab7c650aad38379dbc7320446c262b4a4970caa1fcca612c4e21b443
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fcc5f8ef5dc76428ca892d079b60692e6949a5ca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120123255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359518"
 ---
 # <a name="playlistcolumns"></a>PLAYLIST.columns
 
@@ -61,7 +61,7 @@ FRIENDLY NAME es el valor que se muestra en el encabezado de columna del element
 | PlaylistAttribute | Reservado para uso futuro.                                                                                                |
 | Rating            | Reservado para uso futuro.                                                                                                |
 | SourceURL         | Ruta de acceso o dirección URL al contenido. Se usa solo con elementos multimedia de la biblioteca.                                            |
-| Estado            | El estado de copia de una pista de CD que se va a copiar. Solo se usa con elementos multimedia de CD.                                           |
+| Status            | El estado de copia de una pista de CD que se va a copiar. Solo se usa con elementos multimedia de CD.                                           |
 | Estilo             | Reservado para uso futuro.                                                                                                |
 | TABLA DE CONTENIDO               | Si procede, el identificador de tabla de contenido de CD correspondiente. No se usa con listas de reproducción creadas por el usuario.                 |
 
@@ -69,7 +69,7 @@ FRIENDLY NAME es el valor que se muestra en el encabezado de columna del element
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si una de las columnas no existe en la biblioteca, se deja en blanco.
 

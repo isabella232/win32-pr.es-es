@@ -3,7 +3,7 @@ title: Elemento Spinner
 description: Representa un control Spinner.
 ms.assetid: 6a174ec9-0fde-4171-a363-0e330ac31a8b
 keywords:
-- Cinta de opciones del Windows spinner
+- Spinner element Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -14,11 +14,11 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: df3ea9c7ff4710837b859003b617c92ed288e261
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122631663"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359969"
 ---
 # <a name="spinner-element"></a>Elemento Spinner
 
@@ -81,7 +81,7 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Opcional.
 
@@ -89,9 +89,9 @@ Puede producirse una o varias veces para cada [**elemento ControlGroup**](window
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el marcado básico para [spinner](windowsribbon-controls-spinner.md).
+En el ejemplo siguiente se muestra el marcado básico para [spinner.](windowsribbon-controls-spinner.md)
 
-En esta sección de código se muestran las declaraciones De comando de **spinner,** con un elemento [**Group**](windowsribbon-element-group.md) que funciona como contenedor primario para el **elemento Spinner.**
+En esta sección de código se muestran las declaraciones de comando de **spinner,** con un elemento [**Group**](windowsribbon-element-group.md) que funciona como contenedor primario para el **elemento Spinner.**
 
 
 ```XML

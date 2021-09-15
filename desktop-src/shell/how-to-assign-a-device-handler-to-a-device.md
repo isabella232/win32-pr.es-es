@@ -3,12 +3,12 @@ description: Muestra el proceso para agregar un controlador de dispositivos a un
 title: Asignación de un controlador de dispositivos a un dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8de091a7206e8fe2d9ea2781e2c5b3475cb71446bae2effa9e017795ced8b9bf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 16db6a39406e3d8ba7cd8b497e12883685b80d93
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119092979"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360373"
 ---
 # <a name="how-to-assign-a-device-handler-to-a-device"></a>Asignación de un controlador de dispositivos a un dispositivo
 
@@ -33,7 +33,7 @@ HKEY_LOCAL_MACHINE
                         DeviceHandlers = MyDeviceHandler
 ```
 
-Los controladores de dispositivos también se pueden asignar mediante la configuración del grupo [de dispositivos](how-to-specify-an-icon--label--or-device-handler-for-a-device-using-a-device-group.md) [o la clase de](how-to-specify-an-icon--label--or-device-handler-for-a-device-using-a-device-class.md) dispositivo.
+Los controladores de dispositivos también se pueden asignar mediante la configuración del grupo [de dispositivos](how-to-specify-an-icon--label--or-device-handler-for-a-device-using-a-device-group.md) o [la clase de](how-to-specify-an-icon--label--or-device-handler-for-a-device-using-a-device-class.md) dispositivo.
 
  
 

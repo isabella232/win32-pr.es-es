@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 72f356108ff016c404468a9b152b4adac247cd72ee089a9e82ea3206c4c2ffea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9a1b83020f4400f4f1095c84e281fe498f2b67da
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118335807"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359480"
 ---
 # <a name="playlistsetcolumnresizemode"></a>PLAYLIST.setColumnResizeMode
 
@@ -49,7 +49,7 @@ El **método setColumnResizeMode** especifica el tamaño de las columnas indizad
 | Value          | Descripción                                                                                                    |
 |----------------|----------------------------------------------------------------------------------------------------------------|
 | AutosizeHeader | El tamaño de la columna cambia para dar cabida a todos los datos de la columna y del encabezado.                                  |
-| AutosizeData   | El tamaño de la columna cambia para alojar solo todos los datos de la columna.                                                 |
+| AutosizeData   | El tamaño de la columna se ajusta solo a todos los datos de la columna.                                                 |
 | Fijo          | La columna tiene un tamaño fijo.                                                                                    |
 | Se extiende      | Cambia el tamaño de la columna para usar el espacio restante en el elemento **PLAYLIST** después de cambiar el tamaño de todas las demás columnas. |
 

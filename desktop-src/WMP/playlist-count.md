@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a699557cec48ec57172614c0ef7916f3a42520491f2a65bd8eb39b807af4feb2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ed1b42dcb58cb644fe551d1421cde2c3f88d32f2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119862335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359511"
 ---
 # <a name="playlistcount"></a>Playlist.count
 
 La **propiedad count** recupera el número de elementos multimedia de la lista de reproducción.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 *player*. *currentPlaylist*. **count**
 
@@ -37,7 +37,7 @@ Esta propiedad es un número de solo **lectura** (**long**).
 
 Vea la [propiedad attributeCount](playlist-attributecount.md) para obtener código de ejemplo que usa esta propiedad.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 

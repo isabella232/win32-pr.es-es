@@ -4,12 +4,12 @@ description: Las siguientes funciones se usan en Windows redes
 ms.assetid: 95e30f8f-a326-424d-bd80-5fc9b3078dad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b6028720b5987261398789ad00ecb2c84c283ab82332984e9dd5c7a53cf9dec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f3d962d82cc613416838fcdc75734d26c17f9d40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118330899"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360555"
 ---
 # <a name="windows-networking-functions"></a>Windows Funciones de red
 
@@ -43,7 +43,7 @@ Las siguientes funciones se usan en Windows redes:
 
 ## <a name="obsolete-functions"></a>Funciones obsoletas
 
-La siguiente función solo se proporciona por compatibilidad con versiones de 16 bits de Windows:
+La función siguiente solo se proporciona por compatibilidad con versiones de 16 bits de Windows:
 
 <dl>
 

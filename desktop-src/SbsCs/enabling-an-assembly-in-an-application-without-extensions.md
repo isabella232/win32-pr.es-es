@@ -4,22 +4,22 @@ ms.assetid: d043ec1b-ac31-45fb-9232-eec42aef4ac3
 title: Habilitar un ensamblado en una aplicación sin extensiones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a6666d7b50775438f0d4a3edd13658e5c18127a21c37ec95e46a873682e6f8d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a1bbcfe510f5a3cdbce323f01cb9342ce236c7f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119142258"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271604"
 ---
 # <a name="enabling-an-assembly-in-an-application-without-extensions"></a>Habilitar un ensamblado en una aplicación sin extensiones
 
-Si la aplicación no hospeda un archivo DLL, una extensión, un complemento o un panel de control, puede usar el método descrito en esta sección para habilitar un ensamblado para la aplicación. Para obtener más información sobre cómo agregar un ensamblado a aplicaciones con extensiones, vea [Enabling an Assembly in an Application Hosting a DLL, Extension, or Panel de control](enabling-an-assembly-in-an-application-hosting-a-dll-extension-or-control-panel.md).
+Si la aplicación no hospeda un archivo DLL, una extensión, un complemento o un panel de control, puede usar el método descrito en esta sección para habilitar un ensamblado para la aplicación. Para obtener más información sobre cómo agregar un ensamblado a aplicaciones con extensiones, vea Habilitar un ensamblado en una aplicación que hospeda un [archivo DLL,](enabling-an-assembly-in-an-application-hosting-a-dll-extension-or-control-panel.md)una extensión o Panel de control .
 
-**Para habilitar un ensamblado en una aplicación sin componentes hospedados**
+**Para habilitar un ensamblado en una aplicación sin ningún componente hospedado**
 
-1.  Cree un manifiesto que describa la dependencia de la aplicación o extensión en el ensamblado.
+1.  Cree un manifiesto que describa la dependencia de la aplicación o la extensión en el ensamblado.
 
-    Por ejemplo, el manifiesto de "YourApplication" se puede crear copiando el siguiente manifiesto de ejemplo y sustituyendo los valores correctos por **assemblyIdentity**, **processorArchitecture** y **description**. Establezca el valor de **processorArchitecture** en x86 si se está creando en una plataforma de 32 bits y en ia64 si se está creando en una plataforma de 64 bits. El **elemento description** contiene una descripción de opción de la aplicación. Para obtener más información sobre el formato de manifiesto, vea [manifiestos de aplicación.](application-manifests.md)
+    Por ejemplo, el manifiesto de "YourApplication" se puede crear copiando el siguiente manifiesto de ejemplo y sustituyendo los valores correctos por **assemblyIdentity**, **processorArchitecture** y **description**. Establezca el valor de **processorArchitecture** en x86 si se está creando en una plataforma de 32 bits y en ia64 si se está creando en una plataforma de 64 bits. El **elemento description** contiene una descripción de opción de la aplicación. Para obtener más información sobre el formato de manifiesto, vea [Manifiestos de aplicación.](application-manifests.md)
 
     ``` syntax
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>

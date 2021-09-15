@@ -3,7 +3,7 @@ title: SplitButton.MenuGroups, propiedad
 description: Representa un contenedor para un conjunto de elementos de menú desplegable en un control Split Button estándar.
 ms.assetid: 6328ad49-037b-4cd5-90f6-b91646e260ee
 keywords:
-- Propiedad SplitButton.MenuGroups Windows cinta de opciones
+- SplitButton.MenuGroups, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bdc92ba966cab09d2f417fdedbc046d7ec400ea93bdb2d0434194ff1d1824d7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5b8af4639040d6b6302b4d2b5761d750074389a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119933185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359966"
 ---
 # <a name="splitbuttonmenugroups-property"></a>SplitButton.MenuGroups, propiedad
 
@@ -55,7 +55,7 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Opcional.
 

@@ -1,15 +1,15 @@
 ---
 description: 'Evento InkOverlay.MouseDown: se produce cuando el puntero del mouse está sobre el objeto InkCollector o InkOverlay y se presiona un botón del mouse.'
 ms.assetid: 95c3b1ae-0e77-4ca2-ab73-a0e97ab115b5
-title: Evento InkOverlay.MouseDown (Ms mouseut.h)
+title: Evento InkOverlay.MouseDown (Msplaceut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0b0d605dd36f4cae410de2514542aa15818d4604e4484352c68dac54b40b1d4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3ff1e4bff715a6585ee607de766c809579f527aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118219271"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360271"
 ---
 # <a name="inkoverlaymousedown-event"></a>Evento InkOverlay.MouseDown
 
@@ -73,7 +73,7 @@ Coordenada Y, en píxeles, de un clic del mouse.
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para mejorar el rendimiento de la entrada de lápiz en tiempo real, oculte o muestre el cursor del mouse en los controladores de eventos [**MouseDown**](inkcollector-mousedown.md) y [**MouseUp.**](inkcollector-mouseup.md)
 
@@ -93,11 +93,11 @@ Este método de evento se define en las interfaces de solo envío \_ \_ (dispint
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9af62a21da645a265e5264ffae47ad8cb0907ec6fb0106cfb9e7cee97b7f42e3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fee33d9b31f99a00181427c9a715df792d95fe55
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119666305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360087"
 ---
 # <a name="wm_ncrbuttondblclk-message"></a>Mensaje \_ WM NCRBUTTONDBLCLK
 
@@ -56,7 +56,7 @@ Estructura [**POINTS**](/previous-versions//dd162808(v=vs.85)) que contiene las 
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una ventana no necesita tener el estilo **\_ DBLCLKS** de CS para recibir **mensajes WM \_ NCRBUTTONDBLCLK.**
 
@@ -131,7 +131,7 @@ Si es adecuado hacerlo, el sistema envía el [**mensaje \_ SYSCOMMAND**](/window
 [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**Puntos**](/previous-versions//dd162808(v=vs.85))
+[**PUNTOS**](/previous-versions//dd162808(v=vs.85))
 </dt> </dl>
 
  

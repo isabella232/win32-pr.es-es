@@ -10,12 +10,12 @@ keywords:
 - lectores asincrónicos, recuperación de ejemplos multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 896fa4a023dc0cbcce3db6e0b0fc5101347f12fd65a4294a608823e511a55e77
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fb0419619ea99bd3734db67f8e658b1f3ff058a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118699126"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360198"
 ---
 # <a name="to-retrieve-media-samples-with-the-asynchronous-reader"></a>Para recuperar ejemplos de medios con el lector asincrónico
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: 9563fc306bd8d50ce4f0c13164640ecee8e99d441b1b923df35cce8615097c8d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9b951d3ce9eab52687730831f7052942fcbec93
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119667795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270783"
 ---
 # <a name="getkeyprotectorplatformvalidationprofile-method-of-the-win32_encryptablevolume-class"></a>Método GetKeyProtectorPlatformValidationProfile de la clase EncryptableVolume de Win32 \_
 
@@ -62,7 +62,7 @@ Matriz de enteros que especifica cómo el hardware de seguridad Módulo de plata
 
 | Value                                                                         | Significado                                                                            |
 |-------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| <dl> <dt>0</dt> </dl>  | Raíz principal de confianza de medida (CRTM), BIOS y extensiones de plataforma<br/> |
+| <dl> <dt>0</dt> </dl>  | Raíz principal de confianza de las extensiones de medida (CRTM), BIOS y plataforma<br/> |
 | <dl> <dt>1</dt> </dl>  | Configuración y datos de plataforma y placa base<br/>                         |
 | <dl> <dt>2</dt> </dl>  | Código ROM de opción<br/>                                                         |
 | <dl> <dt>3</dt> </dl>  | Configuración y datos de ROM de opción<br/>                                       |
@@ -111,7 +111,7 @@ Este método devuelve uno de los códigos siguientes u otro código de error si 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
@@ -121,14 +121,14 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista Ultimate \[\]<br/>                       |
+| Cliente mínimo compatible<br/> | Windows Vista Enterprise, Windows solo aplicaciones de escritorio de Vista \[ Ultimate\]<br/>                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                    |
 | Espacio de nombres<br/>                | Root \\ CIMV2 \\ Security \\ MicrosoftVolumeEncryption<br/>                                             |
 | MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

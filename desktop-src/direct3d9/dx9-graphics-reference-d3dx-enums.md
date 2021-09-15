@@ -4,12 +4,12 @@ ms.assetid: dff4c800-0db9-47b7-8e5c-61debbdf865a
 title: Enumeraciones D3DX (gráficos de Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c65b449cbd8a352f35aa07d8ba67f280a97ed90b89c3b8b2fb0b13786f0bac7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f59599062d2bbfccf7a66fa08c686a435fdff18e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118988185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359353"
 ---
 # <a name="d3dx-enumerations-direct3d-9-graphics"></a>Enumeraciones D3DX (gráficos de Direct3D 9)
 
@@ -33,13 +33,13 @@ Esta sección contiene información sobre los siguientes tipos enumerados y marc
 -   [**D3DXPATCHMESH**](./d3dxpatchmesh.md)
 -   [**D3DXPATCHMESHTYPE**](./d3dxpatchmeshtype.md)
 -   [**D3DXPLAYBACK \_ TYPE**](./d3dxplayback-type.md)
--   [**TIPO D3DXPRIORITY \_**](./d3dxpriority-type.md)
+-   [**D3DXPRIORITY \_ TYPE**](./d3dxpriority-type.md)
 -   [**D3DXREGISTER \_ SET**](./d3dxregister-set.md)
 -   [**D3DXSHCOMPRESSQUALITYTYPE**](./d3dxshcompressqualitytype.md)
 -   [**D3DXSHGPUSIMOPT**](./d3dxshgpusimopt.md)
 -   [**D3DXTANGENT**](./d3dxtangent.md)
 -   [**D3DXTRANSITION \_ TYPE**](./d3dxtransition-type.md)
--   [**D3DVATVATLAS**](./d3dxuvatlas.md)
+-   [**D3D RESTAURANTVATLAS**](./d3dxuvatlas.md)
 -   [**D3DXWELDEPSILONSFLAGS**](./d3dxweldepsilonsflags.md)
 -   [**MAX \_ FVF \_ DECL \_ SIZE**](./max-fvf-decl-size.md)
 

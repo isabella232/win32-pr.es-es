@@ -4,12 +4,12 @@ ms.assetid: 0468cece-6449-4772-82c9-e3f410c34e46
 title: Valores devueltos de criptografía
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99dc7a08219c6387a6cd33641b91e2170577a3cb66e99470b73970f20268165a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8e45b726785adae8a88ab98753cb3f46aa622660
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119875975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271060"
 ---
 # <a name="cryptography-return-values"></a>Valores devueltos de criptografía
 

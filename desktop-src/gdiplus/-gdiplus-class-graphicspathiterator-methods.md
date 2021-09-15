@@ -4,16 +4,16 @@ ms.assetid: dd0a4908-642b-4af1-80f5-0af606aee990
 title: Métodos GraphicsPathIterator
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5631220bd9eefb782074db1b52fade237c0126677c30c0788250e45a80e8a23b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 353abf03a34c9f79278fbf65682cf774adeda7ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120062015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359068"
 ---
 # <a name="graphicspathiterator-methods"></a>Métodos GraphicsPathIterator
 
-En este tema se enumeran los métodos [**de la clase GraphicsPathIterator.**](/windows/desktop/api/gdipluspath/nl-gdipluspath-graphicspathiterator) Para obtener una lista de clases completa, **vea Clase GraphicsPathIterator**.
+En este tema se enumeran los métodos de [**la clase GraphicsPathIterator.**](/windows/desktop/api/gdipluspath/nl-gdipluspath-graphicspathiterator) Para obtener una lista de clases completa, **vea GraphicsPathIterator (Clase).**
 
 -   [**CopyData**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-graphicspathiterator-copydata)
 -   [**Enumerar**](/windows/desktop/api/Gdipluspath/nf-gdipluspath-graphicspathiterator-enumerate)

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8543b4df8fa5eda779fd76d04159c70d16692cf45f30a853de694477d253a8f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e11f24438d0ea5ff2c235bc92b43a9e984cd7e22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117931829"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359048"
 ---
 # <a name="userplaycount-attribute"></a>Atributo UserPlayCount
 
@@ -30,7 +30,7 @@ El **atributo UserPlayCount** es el número de veces que se ha reproducido el el
 -   [Listas](playlist-attributes-ref.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la biblioteca.
 
@@ -42,7 +42,7 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 

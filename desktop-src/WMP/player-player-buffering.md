@@ -1,11 +1,11 @@
 ---
 title: Evento Player.Buffering
-description: El evento de almacenamiento en búfer se produce cuando el control Reproductor de Windows Media o finaliza el almacenamiento en búfer o la descarga. | Evento Player.Buffering
+description: El evento de almacenamiento en búfer tiene lugar cuando el control Reproductor de Windows Media inicia o finaliza el almacenamiento en búfer o la descarga. | Evento Player.Buffering
 ms.assetid: a0a09bf7-19bc-4838-a403-924e8d83b48d
 keywords:
 - Almacenamiento en búfer de eventos Reproductor de Windows Media
 - Almacenamiento en búfer de eventos Reproductor de Windows Media , clase Player
-- Evento player class Reproductor de Windows Media , Buffering
+- Player class Reproductor de Windows Media , Buffering event
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0ac382315d37fcd36a5470ae3f7f07bf4454687b660a2311498b5b0866e32b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3a73ac77f9b8e81162a6cc0f9220562caba26eae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117747526"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359271"
 ---
 # <a name="playerbuffering-event"></a>Evento Player.Buffering
 
-El **evento de almacenamiento** en búfer se produce cuando el control Reproductor de Windows Media o finaliza el almacenamiento en búfer o la descarga.
+El **evento de almacenamiento** en búfer tiene lugar cuando el control Reproductor de Windows Media inicia o finaliza el almacenamiento en búfer o la descarga.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,11 +64,11 @@ Player.Buffering(
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Use este evento para determinar cuándo se inicia o se detiene el almacenamiento en búfer o la descarga. Puede usar el mismo bloque de eventos para ambos casos y probar *Network*. **bufferingProgress** y *Network*. **downloadProgress para** determinar si Reproductor de Windows Media almacena en búfer o descarga contenido.
+Use este evento para determinar cuándo se inicia o se detiene el almacenamiento en búfer o la descarga. Puede usar el mismo bloque de eventos para ambos casos y probar *red*. **bufferingProgress** y *Network*. **downloadProgress para** determinar si Reproductor de Windows Media almacena en búfer o descarga contenido.
 
-El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media y se puede tener acceso a un método de un archivo JScript importado mediante el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la inclusión en mayúsculas.
+El valor de los parámetros de evento se especifica mediante Reproductor de Windows Media y se puede acceder a un método o pasarlo a un método en un archivo JScript importado mediante el nombre de parámetro especificado. Este nombre de parámetro debe escribirse exactamente como se muestra, incluida la mayúscula.
 
 ## <a name="requirements"></a>Requisitos
 

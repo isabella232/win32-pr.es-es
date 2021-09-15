@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Scrdenrl.dll
-ms.openlocfilehash: 6de5d1108ab09c9658af307d6a67c5a94a5dc35514720a221540de263f516c9a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b62b0a7e871a29ff0a8edd28eb8cd5e18e97c1a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119960294"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270967"
 ---
 # <a name="iscrdenrgetcaname-method"></a>Método ISCrdEnr::getCAName
 
@@ -57,7 +57,7 @@ SCrdEnr.getCAName( _
 *dwFlags* \[ En\]
 </dt> <dd>
 
-Valor que determina si el nombre hace referencia al nombre de la entidad de certificación o al nombre del equipo de la entidad de certificación. Si este valor es SCARD ENROLL CA MACHINE NAME (definido como 0x01), el nombre hace referencia al nombre del equipo de la entidad de certificación; de lo contrario, el nombre hace referencia al nombre de \_ \_ la entidad de \_ \_ certificación.
+Valor que determina si el nombre hace referencia al nombre de la entidad de certificación o al nombre del equipo de la entidad de certificación. Si este valor es SCARD ENROLL CA MACHINE NAME (definido como 0x01), el nombre hace referencia al nombre del equipo de la entidad de certificación; de lo contrario, el nombre hace referencia al nombre \_ \_ de la \_ \_ ca.
 
 </dd> <dt>
 
@@ -81,15 +81,15 @@ Puntero a una cadena que devuelve el nombre de la entidad de certificación.
 
 Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método , devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
+Si se produce un error en el método, devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
 ### <a name="vb"></a>VB
 
-Cadena que representa el nombre de la CA.
+Cadena que representa el nombre de la entidad de certificación.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El nombre de ca predeterminado es el nombre de la lista disponible de CA.
+El nombre de entidad de certificación predeterminado es el nombre de la lista de CA disponibles.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -104,7 +104,7 @@ El nombre de ca predeterminado es el nombre de la lista disponible de CA.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

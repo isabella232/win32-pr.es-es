@@ -4,8 +4,8 @@ description: El método removeItem quita el elemento especificado de la lista de
 ms.assetid: 294ba4fb-967b-4a03-b0c5-6e9c15db3bff
 keywords:
 - Método removeItem Reproductor de Windows Media
-- Método removeItem Reproductor de Windows Media , clase Playlist
-- Clase playlist Reproductor de Windows Media método , removeItem
+- método removeItem Reproductor de Windows Media , clase Playlist
+- Clase playlist Reproductor de Windows Media , método removeItem
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8a55fb45fa7ea8d172d76321d7c907fbedfd3f868448f1ad63e220ff8e69f9a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2de03333e2373744f9e9197be8ed8582997c557d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118336596"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359488"
 ---
 # <a name="playlistremoveitem-method"></a>Método Playlist.removeItem
 
@@ -53,17 +53,17 @@ Playlist.removeItem(
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si el elemento quitado es la pista que se está reproduciendo actualmente *(Player*.**currentMedia**), la reproducción se detiene y el siguiente elemento de la lista de reproducción se convierte en el actual. Si no hay ningún elemento siguiente, se usa el elemento anterior o si no hay ningún otro elemento, *player*. **currentMedia** se establece en **NULL.**
+Si el elemento quitado es la pista que se está reproduciendo actualmente (*Player*.**currentMedia**), la reproducción se detiene y el siguiente elemento de la lista de reproducción se convierte en el actual. Si no hay ningún elemento siguiente, se usa el elemento anterior o si no hay ningún otro elemento, *player*. **currentMedia** se establece en **NULL.**
 
-Para usar este método, se requiere acceso completo a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
+Para usar este método, se requiere acceso completo a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |

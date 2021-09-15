@@ -9,16 +9,16 @@ keywords:
 - ASF (formato de sistemas avanzados), habilitación del streaming de caché rápida
 - Formato de sistemas avanzados (ASF), streaming de caché rápida
 - ASF (formato de sistemas avanzados), streaming de caché rápida
-- secuencias, habilitación del streaming de caché rápida
+- streams,enabling Fast Cache streaming
 - Streaming de caché rápida, habilitación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b0f02a571d5fac456d4dbc743e5fb936f98342a0ed8e8739d653b659ab7c6f3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c3f8423a6f71b86ea91a05ed74b931eaa28a64be
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119447625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360588"
 ---
 # <a name="enabling-fast-cache-streaming-from-the-client"></a>Habilitación del streaming de caché rápida desde el cliente
 

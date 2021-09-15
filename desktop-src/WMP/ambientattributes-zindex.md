@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c0ebccb050d80371b5865316dd341c8e371d3bfd399d14545b312cf8d265bac
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 52480cc387c0a9e5e45c4b8e8fd2dae4199dbd16
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120124045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270431"
 ---
 # <a name="ambientattributeszindex"></a>AmbientAttributes.zIndex
 
@@ -31,7 +31,7 @@ El **atributo zIndex** especifica o recupera el orden en el que se representa el
 
 Este atributo es un número de lectura y **escritura** (**long**) con un valor predeterminado de cero. El intervalo es el de un entero largo con signo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El mapa de bits de fondo **de una vista** o **subvista** tiene un índice z fijo de cero. Si desea que un control esté detrás del fondo, **zIndex** debe establecerse en un número negativo.
 
@@ -51,7 +51,7 @@ Los elementos **BROWSER** y **PLAYLIST** no admiten el atributo **zIndex.** No f
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

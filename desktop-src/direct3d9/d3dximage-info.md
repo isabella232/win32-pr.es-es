@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9tex.h
-ms.openlocfilehash: ede879b288569b503257abeb189d93316ed2bd96dd4db99f6e22f32bbb4f98b1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: be70cc88645e0aac6734907c6a97f2d4bb104c99
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119607825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359202"
 ---
 # <a name="d3dximage_info-structure"></a>D3DXIMAGE \_ INFO (estructura)
 
@@ -41,7 +41,7 @@ typedef struct D3DXIMAGE_INFO {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -132,7 +132,7 @@ Representa el formato del archivo de imagen.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

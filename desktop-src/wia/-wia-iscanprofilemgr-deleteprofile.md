@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: 52a4f2fc11e2a2cac1c3b3c547ee1b7a967a5441fc44cd2bb213bdbf681df8f6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f45dfa3ef96fee194348192c2898a44df5f34be4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117670258"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359993"
 ---
 # <a name="iscanprofilemgrdeleteprofile-method"></a>IScanProfileMgr::D eleteProfile (método)
 
@@ -54,7 +54,7 @@ Tipo: **HRESULT**
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **IScanProfileMgr::D eleteProfile** elimina el perfil del disco y destruye el objeto de perfil en memoria.
 
@@ -64,12 +64,12 @@ Use el [**método IScanProfileMgr::Refresh**](-wia-iscanprofilemgr-refresh.md) c
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
-| Header<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
-| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 

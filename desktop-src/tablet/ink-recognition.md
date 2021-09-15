@@ -4,12 +4,12 @@ ms.assetid: 70d25839-6ddd-40db-8891-92da074d17b0
 title: Reconocimiento de entrada de lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26c3f1431aca97f41b4de9aef64108f3e619ef7b6f9239f46fdde9f7bf4ff3da
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ca4ec6f897c797d86df96c5d9c2cfd5d80f16c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118718304"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360294"
 ---
 # <a name="ink-recognition"></a>Reconocimiento de entrada de lápiz
 

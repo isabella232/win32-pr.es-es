@@ -5,12 +5,12 @@ ms.assetid: 0D537FD1-AD5C-43CB-989F-4B5B7C0A1208
 title: A (aplicaciones aisladas y ensamblados en paralelo)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ac40ba2393bb2d043957e04b8d34ca93fede605bbcd11ad601667e97f79f057
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c41a925d83cf602f5d23c7d043102927748da14a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119142728"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271831"
 ---
 # <a name="a-isolated-applications-and-side-by-side-assemblies"></a>A (aplicaciones aisladas y ensamblados en paralelo)
 
@@ -21,28 +21,28 @@ A B C [D](d-sbscs-gly.md) E F [G](g-sbscs-gly.md) H [I](i-sbscs-gly.md) J K L [M
 <span id="_win32_activation_context_gly"></span><span id="_WIN32_ACTIVATION_CONTEXT_GLY"></span>**contexto de activación**
 </dt> <dd>
 
-Estructura de datos en memoria. Cada sección de esta estructura contiene metadatos para las funciones de API en paralelo. Por ejemplo, una sección puede tener datos de redirección de DLL, que usa el cargador de DLL, y otra puede tener datos de servidor COM. Estos datos se pueden usar para redirigir la carga de un archivo DLL a una versión específica, la creación de un objeto COM o la creación de una ventana a una versión que sea más compatible con la aplicación.
+Estructura de datos en memoria. Cada sección de esta estructura contiene metadatos para las funciones de API en paralelo. Por ejemplo, una sección puede tener datos de redireccionamiento de DLL, que usa el cargador de DLL, y otra puede tener datos de servidor COM. Estos datos se pueden usar para redirigir la carga de un archivo DLL a una versión específica, la creación de un objeto COM o la creación de una ventana a una versión más compatible con la aplicación.
 
 </dd> <dt>
 
 <span id="_win32_application_configuration_gly"></span><span id="_WIN32_APPLICATION_CONFIGURATION_GLY"></span>**configuración de la aplicación**
 </dt> <dd>
 
-Nombres y versiones de ensamblados en paralelo necesarios para ejecutar una aplicación. Cuando se implementa una aplicación con un manifiesto, se definen explícitamente las dependencias de versiones específicas de ensamblados en paralelo compartidos. De forma predeterminada, la versión del ensamblado especificado en el manifiesto es la versión que se usa tras la activación. Configuración global de la aplicación especifica la configuración de todas las aplicaciones en el sistema. La configuración por aplicación puede invalidar la configuración global de la aplicación por aplicación.
+Nombres y versiones de ensamblados en paralelo necesarios para ejecutar una aplicación. Cuando se implementa una aplicación con un manifiesto, se definen explícitamente las dependencias de versiones específicas de ensamblados compartidos en paralelo. De forma predeterminada, la versión del ensamblado especificado en el manifiesto es la versión que se usa tras la activación. La configuración global de la aplicación especifica la configuración de todas las aplicaciones del sistema. La configuración por aplicación puede invalidar la configuración global de la aplicación por aplicación.
 
 </dd> <dt>
 
 <span id="_win32_application_configuration_manifest_gly"></span><span id="_WIN32_APPLICATION_CONFIGURATION_MANIFEST_GLY"></span>**manifiesto de configuración de la aplicación**
 </dt> <dd>
 
-Archivo que especifica los ensamblados en paralelo que usará una aplicación totalmente o parcialmente aislada. Los archivos de manifiesto de configuración de la aplicación se instalan en la misma carpeta que el archivo ejecutable de la aplicación.
+Archivo que especifica los ensamblados en paralelo que va a usar una aplicación completamente o parcialmente aislada. Los archivos de manifiesto de configuración de la aplicación se instalan en la misma carpeta que el archivo ejecutable de la aplicación.
 
 </dd> <dt>
 
 <span id="_win32_application_manifest_gly"></span><span id="_WIN32_APPLICATION_MANIFEST_GLY"></span>**manifiesto de aplicación**
 </dt> <dd>
 
-Archivo que describe una aplicación aislada. Especifica la información necesaria para ejecutar la aplicación, incluidas las dependencias de ensamblados privados, versiones específicas de ensamblados compartidos y metadatos para ensamblados privados. El nombre de un archivo de manifiesto de aplicación es el nombre del ejecutable de aplicación seguido del archivo .manifest de extensión. Por ejemplo, por MySampleApp.exe, el archivo de manifiesto sería MySampleApp.exe.manifest.
+Archivo que describe una aplicación aislada. Especifica la información necesaria para ejecutar la aplicación, incluidas las dependencias de ensamblados privados, versiones específicas de ensamblados compartidos y metadatos para ensamblados privados. El nombre de un archivo de manifiesto de aplicación es el nombre del ejecutable de la aplicación seguido de la extensión .manifest. Por ejemplo, para MySampleApp.exe, el archivo de manifiesto se MySampleApp.exe.manifest.
 
 </dd> <dt>
 

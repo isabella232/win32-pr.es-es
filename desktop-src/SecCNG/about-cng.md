@@ -4,18 +4,18 @@ ms.assetid: d10533d8-e919-4d2a-a173-16a8f723551d
 title: Acerca de CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb13c50b98c80f9ca45a72d0b0967fc8b95d209dd88e206e1a9abc498d408032
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8883b5ad50a0e3e680d718afd0f448a5cd87dd18
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118909026"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271268"
 ---
 # <a name="about-cng"></a>Acerca de CNG
 
 Cryptography API: Next Generation (CNG) es el reemplazo a largo plazo de [*CryptoAPI.*](/windows/desktop/SecGloss/c-gly) CNG está diseñado para ser extensible en muchos niveles e independiente de la criptografía en el comportamiento.
 
-## <a name="features"></a>Funciones
+## <a name="features"></a>Características
 
 Para obtener información sobre las características de CNG, vea [Características de CNG.](cng-features.md)
 

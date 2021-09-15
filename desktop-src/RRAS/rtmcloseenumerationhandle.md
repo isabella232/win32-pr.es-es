@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0313cc594b0629509ffcee65ea333caa9dbc373de323dc656a6028bc26e14317
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a5adb47d40cb1300305c7ff6f9bb6f1c3c716f0f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120081055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271932"
 ---
 # <a name="rtmcloseenumerationhandle-function"></a>Función RtmCloseEnumerationHandle
 
@@ -45,7 +45,7 @@ DWORD RtmCloseEnumerationHandle(
 *EnumerationHandle* \[ En\]
 </dt> <dd>
 
-Controlar la enumeración para finalizar. Obtenga este identificador mediante una [**llamada a RtmCreateEnumerationHandle**](rtmcreateenumerationhandle.md).
+Controlar la enumeración que se finalizará. Obtenga este identificador mediante una llamada [**a RtmCreateEnumerationHandle**](rtmcreateenumerationhandle.md).
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Si se produce un error en la función, el valor devuelto es uno de los siguiente
 
 
 
-| Valor                                                                                                       | Descripción                                                             |
+| Value                                                                                                       | Descripción                                                             |
 |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | <dl> <dt>**IDENTIFICADOR \_ DE ERROR NO \_ VÁLIDO**</dt> </dl>       | Parámetro no válido.<br/>                                  |
 | <dl> <dt>**ERROR \_ SIN RECURSOS DEL \_ \_ SISTEMA**</dt> </dl> | No hay recursos suficientes para llevar a cabo la operación.<br/> |
@@ -70,18 +70,18 @@ Si se produce un error en la función, el valor devuelto es uno de los siguiente
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Rtm.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

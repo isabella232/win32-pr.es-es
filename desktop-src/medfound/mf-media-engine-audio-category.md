@@ -4,12 +4,12 @@ ms.assetid: 0F2DB9A7-64ED-4952-BCB3-F2B15BA37D2A
 title: MF_MEDIA_ENGINE_AUDIO_CATEGORY atributo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2939c5ac839544acb8dd65c2ecae1769c7dd79bb78b19fe40c1f8ae27865ca03
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d22cd3795886b78afae03ba4b592d4657857f76b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119104791"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360460"
 ---
 # <a name="mf_media_engine_audio_category-attribute"></a>Atributo \_ MF MEDIA ENGINE AUDIO \_ \_ \_ CATEGORY
 
@@ -19,7 +19,7 @@ Especifica la categoría de la secuencia de audio.
 
 **[**CATEGORÍA SECUENCIA \_ DE \_ AUDIO**](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category)**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor de este atributo es un miembro de la [**enumeración AUDIO \_ STREAM \_ CATEGORY.**](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category)
 
@@ -29,11 +29,11 @@ Este atributo se usa con el [**método IMFMediaEngineClassFactory::CreateInstanc
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 aplicaciones de escritorio \| aplicaciones para UWP\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

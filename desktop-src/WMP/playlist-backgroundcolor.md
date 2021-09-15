@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27a2594e8a20ee7f9321254975487750baa27effbf5d01208078e602d03bb8ef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 57ed142eaaf7239df054093421db9ad7dddc28ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119862365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359529"
 ---
 # <a name="playlistbackgroundcolor"></a>PLAYLIST.backgroundColor
 
@@ -29,7 +29,7 @@ El **atributo backgroundColor** especifica o recupera el color de fondo.
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer microsoft. Tiene un valor predeterminado igual al color Windows ventana del sistema.
+Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer Microsoft. Tiene un valor predeterminado igual al color Windows ventana del sistema.
 
 ## <a name="requirements"></a>Requisitos
 

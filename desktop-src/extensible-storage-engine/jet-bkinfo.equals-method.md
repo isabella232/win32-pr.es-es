@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: dc0eecf41683cf3e977e826742410823608f49067eb737544d201ff1b16c50dc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4c478a1926d81001347e201869db87a4fbc2304c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120116325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360126"
 ---
 # <a name="jet_bkinfoequals-method"></a>JET_BKINFO. Método Equals
 
@@ -53,7 +53,7 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

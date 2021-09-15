@@ -1,5 +1,5 @@
 ---
-description: El método GetObject obtiene una instancia de microsoft existente. Windows. Objeto ActCtx.
+description: El método GetObject obtiene una instancia de un microsoft existente. Windows. Objeto ActCtx.
 ms.assetid: 547525f3-afef-463b-823a-df8ccd954f36
 title: Método ActCtx.GetObject
 ms.topic: reference
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Sxsoa.dll
 ms.openlocfilehash: b6c47c00f50cdeaa97fd0fafcd8aefa3c4863bc1
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122886610"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271572"
 ---
 # <a name="actctxgetobject-method"></a>Método ActCtx.GetObject
 
-El **método GetObject** obtiene una instancia de un [**archivo Microsoft.Windows. Objeto ActCtx.**](microsoft-windows-actctx-object.md)
+El **método GetObject** obtiene una instancia de un archivo [**Microsoft.Windows. Objeto ActCtx.**](microsoft-windows-actctx-object.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ ActCtx.GetObject(
 *bstrName* 
 </dt> <dd>
 
-Cadena requerida que indica el objeto . El nombre debe estar en el Registro en **HKEY \_ LOCAL \_ MACHINE** \\ **Microsoft** \\ **Visual Studio** \\ **6.0** \\ **&lt; package &gt;** \\ **Automation**.
+Cadena obligatoria que indica el objeto . El nombre debe estar en el Registro en **HKEY \_ LOCAL \_ MACHINE** \\ **Microsoft** \\ **Visual Studio** \\ **6.0** \\ **&lt; &gt; package** \\ **Automation**.
 
 </dd> </dl>
 
@@ -54,7 +54,7 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                 |
@@ -63,7 +63,7 @@ Este método no devuelve ningún valor.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

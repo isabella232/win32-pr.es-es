@@ -3,7 +3,7 @@ title: Evento WebViewFolderContents.SelectionChanged (Shldisp.h)
 description: 'Evento WebViewFolderContents.SelectionChanged: se produce cuando el estado de selección de cualquier elemento o elemento de la vista ha cambiado.'
 ms.assetid: 46dfceec-aa81-4950-81e5-526a6e621271
 keywords:
-- Características de entorno de eventos Windows SelectionChanged
+- SelectionChanged event Legacy Windows Environment Features
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cccabe52d7370d22fa086e9e8664163771062e8828c8ab2a6d016df30f13350
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ea6176cb2a1703d48cd2ddec8069c65d7efc978f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119607835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359141"
 ---
 # <a name="webviewfoldercontentsselectionchanged-event"></a>Evento WebViewFolderContents.SelectionChanged
 
-Se produce cuando cambia el estado de selección de cualquier elemento o elemento de la vista.
+Se produce cuando el estado de selección de cualquier elemento o elemento de la vista ha cambiado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -82,12 +82,12 @@ En el ejemplo siguiente se muestra el uso adecuado de este evento para JScript i
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

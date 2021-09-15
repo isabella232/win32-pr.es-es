@@ -6,11 +6,11 @@ title: Errores del 1061 al 1070
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: c7da7fb7eeacf9200e96890581766bfe31d9f19c
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122886856"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270303"
 ---
 # <a name="errors-1061-through-1070"></a>Errores del 1061 al 1070
 
@@ -48,7 +48,7 @@ Error semántico del módulo de asignación de tipos, específico de SNMPv1 ni S
 
 <dl> <dt>
 
-<span id="_1070__Fatal_____fileName__line____MIB_Module__moduleName___from_which_symbol__symbolName__is_imported__is_not_present_in_input_"></span><span id="_1070__fatal_____filename__line____mib_module__modulename___from_which_symbol__symbolname__is_imported__is_not_present_in_input_"></span><span id="_1070__FATAL_____FILENAME__LINE____MIB_MODULE__MODULENAME___FROM_WHICH_SYMBOL__SYMBOLNAME__IS_IMPORTED__IS_NOT_PRESENT_IN_INPUT_"></span>**<1070, error irresal>: " &lt; fileName &gt;<line \#>: MIB Module ModuleName , desde el que se importa &lt; &gt; &lt; symbolName, &gt; no está presente en la entrada"**
+<span id="_1070__Fatal_____fileName__line____MIB_Module__moduleName___from_which_symbol__symbolName__is_imported__is_not_present_in_input_"></span><span id="_1070__fatal_____filename__line____mib_module__modulename___from_which_symbol__symbolname__is_imported__is_not_present_in_input_"></span><span id="_1070__FATAL_____FILENAME__LINE____MIB_MODULE__MODULENAME___FROM_WHICH_SYMBOL__SYMBOLNAME__IS_IMPORTED__IS_NOT_PRESENT_IN_INPUT_"></span>**<1070, error irresal>: " &lt; fileName &gt;<line \#>: MIB Module moduleName , desde el que se importa &lt; &gt; &lt; symbolName, &gt; no está presente en la entrada"**
 </dt> <dd>
 
 Error semántico del módulo en la referencia cruzada, específico de SNMPv1 ni SNMPv2C. Si uno de los módulos de la sección IMPORTS del módulo principal o un módulo de subsidiarias no existe y se hace referencia realmente a uno o varios símbolos de este módulo, se produce este error irresal.

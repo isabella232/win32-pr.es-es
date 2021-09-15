@@ -4,12 +4,12 @@ ms.assetid: 2465dd92-6ab4-4a1f-abd4-1d2abca6f9ce
 title: System.Video.EncodingBitrate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5552438d0288024b6c4f755e15cbf11cd957290edf098663c73d41055b4c58de
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bc1c6a67252c178b305093e1ed752b302307e848
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118464308"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360389"
 ---
 # <a name="systemvideoencodingbitrate"></a>System.Video.EncodingBitrate
 
@@ -46,7 +46,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

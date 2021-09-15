@@ -4,12 +4,12 @@ ms.assetid: fe19e337-3109-42d6-a704-70662ac7c684
 title: Habilitación Windows 7 compatibilidad con Intel AVX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f30469d0218f5da2c9f6df2b4f5637edffe09153ebad721f48b47401ecb1f3d3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1509bac62634c85aa733b2c1de0c152169ac6cda
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118329819"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360169"
 ---
 # <a name="enable-windows-7-support-for-intel-avx"></a>Habilitación Windows 7 compatibilidad con Intel AVX
 
@@ -32,7 +32,7 @@ ms.locfileid: "118329819"
 
 Intel<sup>?</sup> Advanced Vector Extensions (AVX)<sup>?</sup> es una extensión de vector de punto flotante SIMD de 256 bits de la arquitectura Intel. Incluye extensiones para conjuntos de instrucciones y registros.
 
-Microsoft ha desarrollado algunas mejoras de API, como las funciones XState, que permiten a las aplicaciones acceder a la información y el estado de las características extendidas del procesador, incluido AVX, y manipularlos.
+Microsoft ha desarrollado algunas mejoras de API, como las funciones XState, que permiten a las aplicaciones acceder y manipular la información y el estado de las características de procesador extendido, incluido AVX.
 
 ## <a name="usage-scenarios"></a>Escenarios de uso
 
@@ -79,7 +79,7 @@ Hay tres niveles generales de posible impacto.
 ## <a name="links-to-other-resources"></a>Vínculos a otros recursos
 
 -   Para obtener información sobre las funciones XState en el SDK Windows, vea [Funciones de depuración](../debug/debugging-functions.md).
--   Para obtener información general sobre las instrucciones y funcionalidades de Intel AVX, consulte [Intel AVX: Nuevas](https://software.intel.com/articles/intel-avx-new-frontiers-in-performance-improvements-and-energy-efficiency/)fronteras en mejoras de rendimiento y eficiencia energética.
+-   Para obtener información general sobre las instrucciones y funcionalidades de Intel AVX, consulte [Intel AVX: Nuevas fronteras](https://software.intel.com/articles/intel-avx-new-frontiers-in-performance-improvements-and-energy-efficiency/)en mejoras de rendimiento y eficiencia energética.
 
  
 

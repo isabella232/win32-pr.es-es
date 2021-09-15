@@ -16,12 +16,12 @@ api_location:
 - Ext-MS-Win-Printer-WinSpool-l1-1-2.dll
 - WinSpool.Drv
 - Ext-MS-Win-Printer-WinSpool-L1-1-3.dll
-ms.openlocfilehash: a560c584568dac251ae529255958c9a26fb159631f17d1534949aba38674ccd0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 327d2f7cffe2f90a5719de38cef4cd3fde17e086
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119823995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359694"
 ---
 # <a name="reportjobprocessingprogress-function"></a>Función ReportJobProcessingProgress
 
@@ -75,11 +75,11 @@ Especifica qué parte del procesamiento está actualmente en curso. Este valor h
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la operación se realiza correctamente, el valor devuelto es S OK; de \_ lo contrario, **HRESULT** contendrá un código de error.
+Si la operación se realiza correctamente, el valor devuelto es S OK; de \_ lo **contrario, HRESULT** contendrá un código de error.
 
 Para obtener más información sobre los códigos de error COM, vea [Control de errores.](../com/error-handling-in-com.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
@@ -87,7 +87,7 @@ Para obtener más información sobre los códigos de error COM, vea [Control de 
  
 
 > [!Note]  
-> **ReportJobProcessingProgress** solo mostrará el progreso del trabajo de impresión XPS si el trabajo de impresión está en la fase de representación o de cola. **ReportJobProcessingProgress** producirá un error si se llama cuando el trabajo de impresión XPS no está en la fase de cola o representación.
+> **ReportJobProcessingProgress** solo informa del progreso del trabajo de impresión XPS si el trabajo de impresión se encuentra en la fase de creación de trabajos en cola o representación. **ReportJobProcessingProgress** producirá un error si se llama cuando el trabajo de impresión XPS no está en la fase de cola o representación.
 
  
 
@@ -95,11 +95,11 @@ Para obtener más información sobre los códigos de error COM, vea [Control de 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                      |
-| Header<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl>                   |
 | Archivo DLL<br/>                      | <dl> <dt>Spoolss.dll</dt> </dl>                    |
 

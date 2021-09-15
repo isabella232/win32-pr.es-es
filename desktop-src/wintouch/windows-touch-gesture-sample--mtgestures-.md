@@ -1,6 +1,6 @@
 ---
 title: Windows Ejemplo de gesto táctil (MTGestures)
-description: En esta sección se describe el ejemplo Windows Touch Gesture.
+description: En esta sección se describe el Windows touch gesture.
 ms.assetid: 04166c9c-5de7-409e-9d5e-dd210a3a3f11
 keywords:
 - Windows Touch, ejemplos de código
@@ -12,16 +12,16 @@ keywords:
 - gestos, ejemplos de código
 ms.topic: article
 ms.date: 02/18/2020
-ms.openlocfilehash: 656b269eae779cd999680e165ba071d983d18526c2e9b873c5a916d61ccdb9f1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0e01d97e844af37caeb5c33f3cb780601da4629d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120110594"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359582"
 ---
 # <a name="windows-touch-gesture-sample-mtgestures"></a>Windows Ejemplo de gesto táctil (MTGestures)
 
-En esta sección se describe el ejemplo Windows Touch Gesture.
+En esta sección se describe el Windows touch gesture.
 
 El ejemplo Windows touch gesture muestra cómo usar mensajes de gesto para traducir, girar y escalar un cuadro representado por el Interfaz de dispositivo gráfico (GDI) controlando el mensaje [**WM_GESTURE.**](wm-gesture.md) En la siguiente captura de pantalla se muestra el aspecto del ejemplo cuando se ejecuta.
 

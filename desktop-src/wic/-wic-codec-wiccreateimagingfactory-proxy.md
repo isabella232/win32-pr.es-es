@@ -1,7 +1,7 @@
 ---
-description: Función de proxy para crear el IWICImagingFactory.
+description: Función de proxy para crear IWICImagingFactory.
 ms.assetid: e4f575b0-878f-461e-92e7-9494e505ea6f
-title: WICCreateImagingFactory_Proxy función)
+title: WICCreateImagingFactory_Proxy función
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,15 +15,15 @@ api_location:
 - Windowscodecs.dll
 - Windowscodecs.lib
 ms.openlocfilehash: 6717764d0c25d64f99ab5d864bd0e77a63b88330
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105706484"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359619"
 ---
-# <a name="wiccreateimagingfactory_proxy-function"></a>\_Función de proxy WICCreateImagingFactory
+# <a name="wiccreateimagingfactory_proxy-function"></a>Función de proxy WICCreateImagingFactory \_
 
-Función de proxy para crear el [**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory).
+Función de proxy para crear [**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,14 +38,14 @@ HRESULT WICCreateImagingFactory_Proxy(
 
 <dl> <dt>
 
-*SDKVersion* \[ de\]
+*SDKVersion* \[ En\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 </dd> <dt>
 
-*ppIImagingFactory* \[ enuncia\]
+*ppIImagingFactory* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory)\*\***
@@ -56,11 +56,11 @@ Tipo: **[ **IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwic
 
 Tipo: **HRESULT**
 
-Si esta función se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-Esta función es una aplicación auxiliar para crear un generador WIC para la vinculación de DLL explícita, que era necesaria para Windows XP. En el uso normal, se usaría [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) en su lugar (consulte generadores de clases de la [API de WIC](./-wic-api.md#class-factories)), ya que siempre se incluye en todas las versiones más recientes de Windows.
+Esta función es un asistente para crear un generador de WIC para la vinculación explícita de DLL, que era necesaria para Windows XP. En el uso normal, usaría [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) en su lugar (consulte generadores de clases de LA API de [WIC),](./-wic-api.md#class-factories)ya que siempre se incluye en todas las versiones más recientes de Windows.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,9 +68,9 @@ Esta función es una aplicación auxiliar para crear un generador WIC para la vi
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP con SP2, \[ solo aplicaciones de escritorio de Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                                                                                             |
-| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>WindowsCodecs. lib</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows XP con SP2, solo Windows \[ aplicaciones de escritorio de Vista\]<br/>                                                                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                                                                             |
+| Archivo DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>windowscodecs.lib</dt> </dl> |
 
 
 

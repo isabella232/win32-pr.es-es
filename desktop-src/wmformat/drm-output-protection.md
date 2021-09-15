@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 82454d8b4982e6546b003ae3977c7a98869d46ba393ea49f0b97773f95572777
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3a10428d86503e952dc82a7d45bddc11f5dd1286
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119881135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359927"
 ---
 # <a name="drm_output_protection-structure"></a>Estructura DE \_ PROTECCIÓN DE SALIDA DE \_ DRM
 
@@ -38,7 +38,7 @@ typedef struct DRM_OUTPUT_PROTECTION {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -56,7 +56,7 @@ Datos de configuración de la tecnología.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **DRM \_ PROTECCIÓN \_ DE SALIDA \_ DE AUDIO** y DRM VIDEO OUTPUT **\_ \_ \_ PROTECTION** se definen como **DRM OUTPUT PROTECTION \_ \_ en** **instrucciones typedef.**
 

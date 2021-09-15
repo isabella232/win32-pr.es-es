@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 73f1d9df153aea39880728619787e334430eeccf494b6757a59509ec2df2a6b0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2266537e0df9fc0ba5527784c254b27313d636d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119862215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359469"
 ---
 # <a name="playlistcollection-object"></a>Objeto PlaylistCollection
 

@@ -4,12 +4,12 @@ ms.assetid: d6698040-8fdd-40e6-a61a-402647d48dbc
 title: Funciones de malla (gráficos de Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 675f695dd16c1c0230c5b335f3cf11de28b62eced77af3611d88a7877d24b11f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b74a35933fd9c6302b8c59ef1cd8ea62b4fac231
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119856865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359347"
 ---
 # <a name="mesh-functions-direct3d-9-graphics"></a>Funciones de malla (gráficos de Direct3D 9)
 

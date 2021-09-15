@@ -3,7 +3,7 @@ title: PLAYLIST.playlist
 description: El atributo de lista de reproducción especifica o recupera el objeto Playlist al que el elemento PLAYLIST proporciona una interfaz.
 ms.assetid: 4cfbf9d1-8381-4f59-8e6f-9b07f5642c39
 keywords:
-- LISTA DE REPRODUCCIÓN.lista Reproductor de Windows Media
+- Lista de reproducción.lista Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d7a62fd76fd3a458640c417c2de50af510ffbb96780ed4f91cb2355564df8d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8bb9fde4af32356da79e7c8941b76f51e0714b4f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118995655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359490"
 ---
 # <a name="playlistplaylist"></a>PLAYLIST.playlist
 
@@ -31,7 +31,7 @@ El **atributo de** lista de reproducción especifica o recupera el objeto **Play
 
 Este atributo es un objeto de lista de reproducción **de** lectura y escritura sin ningún valor predeterminado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la lista de reproducción especificada no es válida o no se especifica ningún valor, el elemento **PLAYLIST** muestra el elemento multimedia que se está reproduciendo actualmente.
 

@@ -4,12 +4,12 @@ description: Windows Deployment Services usa las enumeraciones siguientes.
 ms.assetid: 6d7028ed-0fab-4671-9bbf-9150e2a6fcf7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba8601da29b62a142bf6a3208dc5c9be88fb5f368024769a0535c996ef543ba8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c59ba3fe3146dd68775734d060f0e8c43c133e1e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119999545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359123"
 ---
 # <a name="windows-deployment-services-enumerations"></a>Windows Enumeraciones de Deployment Services
 

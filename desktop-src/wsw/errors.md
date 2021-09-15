@@ -5,21 +5,21 @@ ms.assetid: 2e5b853f-589c-4f89-9d7e-cd02263a2247
 keywords:
 - Errores de servicios web para Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a08a6371dcc5265239c6a25ce0c01075cff3ae12533862ed8a1cbbbe7aba705
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e70f10d673bf8f37664d792d8cf969f0329dc363
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119026533"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360186"
 ---
 # <a name="errors"></a>Errors
 
 En esta sección se describen los errores que pueden producirse Windows funciones de servicios web como resultado de un error al ejecutar el comando.
 
--   [Parámetros out](#out-parameters)
+-   [Parámetros de salida](#out-parameters)
 -   [Códigos de error](#error-codes)
 -   [Errores enriquecidos](#rich-errors)
 -   [Errores y errores](#faults-and-errors)
@@ -36,7 +36,7 @@ Hay algunas instancias en las que se modifican los parámetros out si se produce
 
 ## <a name="error-codes"></a>Códigos de error
 
-Todos los códigos de retorno de error son HRESULT. Esta API define un conjunto de HRESULT en el intervalo FACILITY WEBSERVICES, pero también devuelve errores definidos en otra parte de la \_ API Windows.
+Todos los códigos de retorno de error son HRESULT. Esta API define un conjunto de HRESULT en el intervalo FACILITY WEBSERVICES, pero también devuelve errores definidos en otra parte de Windows \_ API.
 
 Consulte la documentación de API específicas para obtener información sobre qué códigos de error se devuelven. La lista no pretende ser exhaustiva para cada API, sino una lista de códigos de error para los que hay escenarios comunes para el control explícito. Un autor de la llamada siempre debe asumir que otros códigos de error son posibles desde cualquier API.
 
@@ -61,7 +61,7 @@ Consulte [Errores para obtener](faults.md) información sobre cómo se relaciona
 
 Al crear un objeto de error, se especifica el LANGID de la traducción de idioma deseada para la información de error. Esto se usa al agregar información de error al objeto de error.
 
-Este valor de lenguaje se puede recuperar o establecer mediante [**WS \_ ERROR PROPERTY \_ \_ LANGID**](/windows/desktop/api/WebServices/ne-webservices-ws_error_property_id).
+Este valor de lenguaje se puede recuperar o establecer mediante [**WS \_ ERROR PROPERTY \_ \_ LANGID.**](/windows/desktop/api/WebServices/ne-webservices-ws_error_property_id)
 
 ## <a name="canonical-error-codes"></a>Códigos de error canónicos
 
@@ -94,7 +94,7 @@ Los siguientes códigos de error forman parte del seguimiento:
 -   **E \_ OUTOFMEMORY**
 -   **DIRECCIÓN DE WS \_ E \_ EN \_ \_ USO**
 -   **WS \_ E \_ ADDRESS \_ NOT \_ AVAILABLE**
--   **ACCESO DENEGADO AL PUNTO DE CONEXIÓN DE WS \_ E \_ \_ \_**
+-   **ACCESO AL PUNTO DE CONEXIÓN DE WS \_ E \_ \_ \_ DENEGADO**
 -   **NO SE ADMITE LA ACCIÓN DE PUNTO DE CONEXIÓN DE WS \_ \_ \_ \_ \_ E**
 -   **PUNTO DE CONEXIÓN DE WS \_ E \_ \_ DESCONECTADO**
 -   **ERROR DE PUNTO DE CONEXIÓN DE WS \_ E \_ \_**
@@ -117,7 +117,7 @@ Los siguientes códigos de error forman parte del seguimiento:
 -   **ACCESO DE PROXY DE WS \_ E \_ \_ \_ DENEGADO**
 -   **ERROR DE PROXY DE WS \_ E \_ \_**
 -   **EL PROXY \_ WS E \_ REQUIERE \_ \_ \_ AUTENTICACIÓN BÁSICA**
--   **EL PROXY \_ WS E \_ REQUIERE \_ \_ \_ AUTENTICACIÓN IMPLÍCITA**
+-   **EL PROXY DE WS \_ E \_ REQUIERE \_ \_ \_ AUTENTICACIÓN IMPLÍCITA**
 -   **EL PROXY \_ WS E \_ REQUIERE LA \_ \_ \_ AUTENTICACIÓN NEGOTIATE**
 -   **EL PROXY DE WS \_ E \_ REQUIERE \_ \_ \_ AUTENTICACIÓN NTLM**
 -   **CUOTA DE WS \_ E \_ \_ SUPERADA**

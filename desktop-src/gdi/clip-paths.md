@@ -4,12 +4,12 @@ ms.assetid: 35c4052b-3f11-40bc-9cc9-6f999326a656
 title: Recortar rutas de acceso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c91e77e3867951d09f464393fde6b416b9319f9ab914bcc393448d2b01a1eb24
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0dc4a93b0047110a6adb2f68d413e89cb1e97fbd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119038153"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359164"
 ---
 # <a name="clip-paths"></a>Recortar rutas de acceso
 

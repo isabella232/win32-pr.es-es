@@ -11,12 +11,12 @@ keywords:
 - lectores sincrónicos, abrir archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52d1c6897c05bb0d843e5818f078df5235a5afac4a485d6a719ab86b8e4f8267
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e222c046a685885fa9e17baa52d0161176551ff3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119807655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360199"
 ---
 # <a name="to-create-a-synchronous-reader-and-open-a-file"></a>Para crear un lector sincrónico y abrir un archivo
 

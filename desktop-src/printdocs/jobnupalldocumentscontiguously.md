@@ -4,12 +4,12 @@ ms.assetid: e73e1736-9be5-4831-8277-23a62658b7b5
 title: JobNUpAllDocumentsContiguously
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fef26a28d970d135419a89015761fa33369a2147edd05712ad7671e881aef2c6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9106259c80a7efb89cc4481780bfb55af4f07e23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119353605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360678"
 ---
 # <a name="jobnupalldocumentscontiguously"></a>JobNUpAllDocumentsContiguously
 
@@ -23,7 +23,7 @@ En el diagrama siguiente se muestra un ejemplo con el documento 1 que contiene 3
 
 -   [Información de elemento](#element-information)
 -   [Contenido estructural](#structural-content)
--   [contenido lenguaje de marcado extensible (XML)](#extensible-markup-language-xml-content)
+-   [lenguaje de marcado extensible (XML) Content](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Información de elemento
 
@@ -81,7 +81,7 @@ En la tabla siguiente se describen las características de las variables definid
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>contenido lenguaje de marcado extensible (XML)
+## <a name="extensible-markup-language-xml-content"></a>lenguaje de marcado extensible (XML) Content
 
 Las palabras clave del esquema de impresión público se definen en el espacio de https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords nombres . El contenido lenguaje de marcado extensible público (XML) para esta palabra clave se define a continuación:
 

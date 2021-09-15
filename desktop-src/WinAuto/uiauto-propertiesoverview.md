@@ -3,7 +3,7 @@ title: Información general acerca de las propiedades de UI Automation
 description: Los proveedores Automatización de la interfaz de usuario Microsoft exponen propiedades en Automatización de la interfaz de usuario elementos. Las propiedades permiten a las aplicaciones cliente recuperar información sobre los controles.
 ms.assetid: 35f017cb-f50a-4680-9f01-5079aa59da73
 keywords:
-- Automatización de la interfaz de usuario,información general sobre propiedades
+- Automatización de la interfaz de usuario,información general sobre las propiedades
 - Automatización de la interfaz de usuario, propiedades frente a eventos
 - Automatización de la interfaz de usuario, eventos frente a propiedades
 - properties,about
@@ -15,18 +15,18 @@ keywords:
 - propiedades dinámicas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58267fae50fe71c320b334c35b8da7831657e00bdd1b222db596addd40f3afef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a0f4e5e1b29ae516059a531b17d50d0631282f82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117745035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359248"
 ---
 # <a name="ui-automation-properties-overview"></a>Información general acerca de las propiedades de UI Automation
 
 Los proveedores Automatización de la interfaz de usuario Microsoft exponen propiedades en Automatización de la interfaz de usuario elementos. Las propiedades permiten a las aplicaciones cliente recuperar información sobre los controles.
 
-Automatización de la interfaz de usuario expone dos tipos diferentes de propiedades: propiedades de *elemento de automatización* y el patrón de control se *apropiado.* Las propiedades del elemento de automatización constan de un conjunto común de propiedades, como Name, AcceleratorKey y ClassName, que se exponen por todos los elementos Automatización de la interfaz de usuario, independientemente del tipo de control. La mayoría de las propiedades de elementos de automatización son valores estáticos.
+Automatización de la interfaz de usuario expone dos tipos diferentes de propiedades: propiedades de elemento *de automatización* y el patrón de control *se apropiado.* Las propiedades del elemento de automatización constan de un conjunto común de propiedades, como Name, AcceleratorKey y ClassName, que se exponen por todos los elementos Automatización de la interfaz de usuario, independientemente del tipo de control. La mayoría de las propiedades de elementos de automatización son valores estáticos.
 
 Las propiedades del patrón de control son las que expone un control que admite un patrón de control determinado. Cada patrón de control tiene un conjunto correspondiente de propiedades de patrón de control que el control debe exponer. Por ejemplo, un control que admite el patrón de control [Grid](uiauto-implementinggrid.md) expone las propiedades ColumnCount y RowCount. La mayoría de las propiedades del patrón de control son valores dinámicos.
 
@@ -55,7 +55,7 @@ Los proveedores genera eventos cuando cambia algo en la interfaz de usuario. Por
 
 No todos los cambios de propiedades generan eventos; esto depende totalmente de la implementación del proveedor de Automatización de la interfaz de usuario del elemento. Por ejemplo, los proveedores de proxy estándar para los cuadros de lista no genera un evento de cambio de propiedad cuando cambia la propiedad Selection. En este caso, la aplicación debe escuchar el evento que se genera cuando cambia la selección ([**UIA \_ SelectionItem \_ ElementSelectedEventId**](uiauto-event-ids.md)).
 
-Los clientes escuchan eventos suscribiéndose a ellos, como se describe en Suscripción a [Automatización de la interfaz de usuario Eventos](uiauto-eventsforclients.md). En concreto, para los eventos modificados por propiedades, los clientes deben implementar [**IUIAutomationPropertyChangedEventHandler**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationpropertychangedeventhandler) y pasar la interfaz a [**IUIAutomation::AddPropertyChangedEventHandler**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-addpropertychangedeventhandler) o [**IUIAutomation::AddPropertyChangedEventHandlerNativeArray**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-addpropertychangedeventhandlernativearray).
+Los clientes escuchan eventos suscribiéndose a ellos, como se describe en Suscripción a [Automatización de la interfaz de usuario eventos](uiauto-eventsforclients.md). En concreto, para los eventos modificados por propiedades, los clientes deben implementar [**IUIAutomationPropertyChangedEventHandler**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationpropertychangedeventhandler) y pasar la interfaz a [**IUIAutomation::AddPropertyChangedEventHandler**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-addpropertychangedeventhandler) o [**IUIAutomation::AddPropertyChangedEventHandlerNativeArray**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-addpropertychangedeventhandlernativearray).
 
 ## <a name="related-topics"></a>Temas relacionados
 

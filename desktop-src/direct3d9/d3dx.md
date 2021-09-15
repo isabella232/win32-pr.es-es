@@ -4,12 +4,12 @@ ms.assetid: d7b8c6ba-5c4f-494c-a24f-3b81a176725f
 title: D3DX (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 556d1f7dfe7f8d841220af4f5dbe650bd74e4c8dff86812650545a07129af644
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 397a2164349b761cd7ff2ccca5e2158abc22bd64
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119986915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270239"
 ---
 # <a name="d3dx-direct3d-9"></a>D3DX (Direct3D 9)
 

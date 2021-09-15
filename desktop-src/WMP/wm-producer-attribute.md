@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5f51c0e995e69d63cd21338704a8ad4a3a602d7e805dd39139373c9bd9b68c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 237b03231ac9882884aee1441877dce0de746d4b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119053803"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359868"
 ---
 # <a name="wmproducer-attribute"></a>Atributo WM/Producer
 
@@ -28,13 +28,13 @@ El **atributo WM/Producer** es el nombre del productor del contenido.
 -   [Atributos de archivo multimedia Windows uso frecuente](commonly-used-windows-media-file-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se almacena tanto en la biblioteca como en el archivo multimedia digital.
 
 **ProducedBy es** un alias para este atributo.
 
-La Windows SDK de formato multimedia para este atributo es g \_ wszWMProducer.
+La Windows DEL SDK de formato multimedia para este atributo es g \_ wszWMProducer.
 
 Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
@@ -42,13 +42,13 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: JET_OPENTEMPORARYTABLE clase'
-title: JET_OPENTEMPORARYTABLE clase (Microsoft.Isam.Esent.Interop.Vista)
+title: JET_OPENTEMPORARYTABLE (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: JET_OPENTEMPORARYTABLE class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Vista.JET_OPENTEMPORARYTABLE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_opentemporarytable(v=EXCHG.10)
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 421b15cb3a09716702bf05aa556565f929c7ca7740b8612caee736b25912e23f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b0fbd84c0fdd1d88f7bde3cfa95323ad6a730dcd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118979667"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358976"
 ---
 # <a name="jet_opentemporarytable-class"></a>JET_OPENTEMPORARYTABLE clase
 
@@ -43,7 +43,7 @@ Colección de parámetros para el método JetOpenTemporaryTable.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -60,7 +60,7 @@ public class JET_OPENTEMPORARYTABLE
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

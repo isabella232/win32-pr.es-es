@@ -5,12 +5,12 @@ ms.assetid: 5faf294f-acd5-4b39-92f4-1d6b2abe3040
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e1c69dc3bae9a6a63f83a36725fca641c63222c73bbcc52d7fed5608475538fe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bb346ef89a5937b03fe6b577b003a3865f36c91b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118530547"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359803"
 ---
 # <a name="descriptor-tables"></a>Tablas de descriptores
 

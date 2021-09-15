@@ -5,47 +5,47 @@ ms.assetid: 16bdd6bf-9eab-40a8-a2d3-8942d2f5f37a
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ee42360689a74b3cd11628e6114e80532000b95f
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122476647"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359001"
 ---
 # <a name="eap-peer-method-registry-values"></a>Valores del Registro del método del mismo nivel de EAP
 
 Se requieren valores específicos del Registro para los métodos del mismo nivel de EAP.
 
-## <a name="eap-peer-method-dll-paths"></a>Rutas de acceso DLL del método del mismo nivel eap
+## <a name="eap-peer-method-dll-paths"></a>Rutas de acceso DLL del método del mismo nivel de EAP
 
-La ruta de acceso siguiente especifica la ubicación del Registro para los archivos DLL normales del método del mismo nivel eap.
+La ruta de acceso siguiente especifica la ubicación del Registro para los archivos DLL normales del método del mismo nivel de EAP.
 
-**Métodos eaphost de HKLM \\ System \\ CCS \\ Services \\ \\ \\ *&lt; AuthorId &gt;* \\ * &lt; EapTypeId&gt;***
+**Métodos eaphost de \\ HKLM System \\ CCS \\ Services \\ \\ \\ *&lt; AuthorId &gt;* \\ * &lt; EapTypeId&gt;***
 
-Por ejemplo, una ruta de acceso de registro de instalación del método EAP dada un **AuthorId** de "311" (que indica que "Microsoft" es el autor) y un **EapTypeId** de "40", aparece como se indica a continuación.
+Por ejemplo, una ruta de acceso de registro de instalación del método EAP dada un **AuthorId** de "311" (que indica que "Microsoft" es el autor) y un **EapTypeId** de "40", aparece como sigue.
 
 **HkLM \\ System \\ CCS Services \\ \\ Eaphost Methods \\ \\ 311 \\ 40**
 
 La ruta de acceso siguiente especifica la ubicación del Registro para los archivos DLL extendidos del método EAP.
 
 > [!Note]  
-> Los archivos DLL de método EAP extendidos se admiten Windows Vista con Service Pack 1 (SP1) o posterior.
+> Los archivos DLL extendidos del método EAP se admiten Windows Vista con Service Pack 1 (SP1) o posterior.
 
  
 
 **HKLM \\ System \\ CCS \\ Services \\ Eaphost \\ Methods \\ *&lt; AuthorId &gt;* \\ 254 \\ *&lt; VendorId &gt;* \\ * &lt; EapTypeId&gt;***
 
-Por ejemplo, una ruta de acceso de registro de instalación del método EAP dada un **AuthorId** de "311" (que indica que "Microsoft" es el autor), un **VendorId** de "311" y **un EapTypeId** de "40", aparece como se indica a continuación.
+Por ejemplo, una ruta de acceso de registro de instalación del método EAP dada un **AuthorId** de "311" (que indica que "Microsoft" es el autor), un **VendorId** de "311" y **un EapTypeId** de "40", aparece como sigue.
 
 **HkLM \\ System \\ CCS Services \\ \\ Eaphost Methods \\ \\ 311 \\ 254 \\ 311 \\ 40**
 
 > [!Note]  
-> Para obtener más información sobre la asignación de tipos de método EAP, vea la sección 6.2 de [RFC 3748.](https://go.microsoft.com/fwlink/p/?linkid=84016)
+> Para obtener más información sobre la asignación de tipos de método EAP, vea la sección 6.2 de [RFC 3748](https://go.microsoft.com/fwlink/p/?linkid=84016).
 
  
 
 ## <a name="registry-values"></a>Valores del Registro
 
-Se requieren los siguientes valores del Registro de métodos del mismo nivel de EAPHost.
+Se requieren los siguientes valores del Registro del método del mismo nivel EAPHost.
 
 -   [PeerDllPath](#peerdllpath)
 -   [PeerFriendlyName](#peerfriendlyname)
@@ -122,7 +122,7 @@ Los siguientes valores del Registro del método del mismo nivel de AP son opcion
 | Valor constante | PeerInteractiveUIPath                                                                                                                                                                                                      |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo           | REG \_ EXPAND \_ SZ                                                                                                                                                                                                            |
-| Descripción    | Ruta de acceso al archivo DLL que contiene la implementación de la interfaz de usuario interactiva utilizada para obtener información de usuario durante la ejecución del método EAP. Por ejemplo, %SystemRoot% \\ system32 \\ &lt; nombre del archivo \_ DLL \_ &gt;.dll. |
+| Descripción    | Ruta de acceso al archivo DLL que contiene la implementación de la interfaz de usuario interactiva que se usa para obtener información de usuario durante la ejecución del método EAP. Por ejemplo, %SystemRoot% \\ system32 \\ &lt; nombre del archivo \_ DLL \_ &gt;.dll. |
 
 
 
@@ -135,7 +135,7 @@ Los siguientes valores del Registro del método del mismo nivel de AP son opcion
 | Valor constante | PeerInvokePasswordDialog                                                                                                                                                                                                                         |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo           | REG \_ DWORD                                                                                                                                                                                                                                       |
-| Descripción    | 1- para obtener las credenciales mediante el cuadro de diálogo dominio y contraseña de EAPHost genéricos. 0 : para usar un cuadro de diálogo personalizado. Si se usa el cuadro de diálogo genérico, el [**método EapPeerSetCredentials**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeersetcredentials) establece las credenciales. |
+| Descripción    | 1- para obtener las credenciales mediante el cuadro de diálogo genérico contraseña y dominio de EAPHost. 0 : para usar un cuadro de diálogo personalizado. Si se usa el cuadro de diálogo genérico, el [**método EapPeerSetCredentials**](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeersetcredentials) establece las credenciales. |
 
 
 
@@ -149,7 +149,7 @@ Los siguientes valores del Registro del método del mismo nivel de AP son opcion
 | Valor constante | PeerInvokeUsernameDialog | 
 |----------------|--------------------------|
 | Tipo | REG_DWORD | 
-| Descripción | <ul><li>1 : para obtener las credenciales mediante el cuadro de diálogo nombre de usuario genérico de EAPHost.</li><li>0- para usar un cuadro de diálogo personalizado.</li></ul>Si se usa el cuadro de diálogo genérico, el [<strong>método EapPeerSetCredentials</strong>](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeersetcredentials) establece las credenciales. | 
+| Descripción | <ul><li>1 - para obtener las credenciales mediante el cuadro de diálogo de nombre de usuario genérico EAPHost.</li><li>0- para usar un cuadro de diálogo personalizado.</li></ul>Si se usa el cuadro de diálogo genérico, el [<strong>método EapPeerSetCredentials</strong>](/previous-versions/windows/desktop/api/eapmethodpeerapis/nf-eapmethodpeerapis-eappeersetcredentials) establece las credenciales. | 
 
 
 

@@ -14,14 +14,14 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: cbbea545f0f3c75281c5abb7e68795750521251392529d037bf18682e84dc436
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3db3b8410ca82a97a41fdf45ee3f866cb8d2e4b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118697083"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359550"
 ---
-# <a name="iportabledevicevaluesgetiportabledevicevaluescollectionvalue-method"></a>IPortableDeviceValues::GetIPortableDeviceValuesCollectionValue (Método)
+# <a name="iportabledevicevaluesgetiportabledevicevaluescollectionvalue-method"></a>IPortableDeviceValues::GetIPortableDeviceValuesCollectionValue (método)
 
 El **método GetIPortableDeviceValuesCollectionValue** recupera un valor **IPortableDeviceValuesCollection** (tipo VT \_ UNKNOWN) especificado por una clave.
 
@@ -73,7 +73,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo de cómo usar este método, vea [Recuperación de las funcionalidades de representación compatibles con un dispositivo](retrieving-the-rendering-capabilities-supported-by-a-device.md).
+Para obtener un ejemplo de cómo usar este método, vea [Recuperar las funcionalidades de representación compatibles con un dispositivo](retrieving-the-rendering-capabilities-supported-by-a-device.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,11 +86,11 @@ Para obtener un ejemplo de cómo usar este método, vea [Recuperación de las fu
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
+[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [Recuperar las funcionalidades de representación admitidas por un dispositivo](retrieving-the-rendering-capabilities-supported-by-a-device.md)

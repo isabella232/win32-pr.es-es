@@ -4,12 +4,12 @@ ms.assetid: D5F5FE96-11D2-4fc5-A68B-6E594C09BE20
 title: Acerca de las bibliotecas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14e63aef55513fb36f9a3cbfa71c1b7a79040fd7848468bd1216779cd034132d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e577e7b5df0a1e072a07a096434af84ff8e2c26
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118049328"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360366"
 ---
 # <a name="about-libraries"></a>Acerca de las bibliotecas
 
@@ -53,7 +53,7 @@ Puede usar bibliotecas en el programa para proporcionar una interfaz de usuario 
 
 -   **Las bibliotecas admiten el acceso a la biblioteca y al sistema de archivos**
 
-    Con shell [**Library API,**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllibrary)los programas pueden proporcionar compatibilidad con bibliotecas para el usuario, a la vez que reducen la complejidad de su código de administración de archivos y carpetas. Si el programa ya usa la API del sistema de archivos, puede conservar tanto código existente como desee y seguir brindando compatibilidad con la biblioteca al usuario mediante la obtención de la información necesaria del sistema de archivos de la API de biblioteca de **Shell.**
+    Con la [**API de biblioteca de Shell,**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishelllibrary)los programas pueden proporcionar compatibilidad con bibliotecas para el usuario, a la vez que se reduce la complejidad de su código de administración de archivos y carpetas. Si el programa ya usa la API del sistema de archivos, puede conservar tanto código existente como desee y seguir brindando compatibilidad con la biblioteca al usuario mediante la obtención de la información necesaria del sistema de archivos de la API de biblioteca de **Shell.**
 
 -   **Notificación de cambio más sencilla**
 
@@ -79,7 +79,7 @@ Una biblioteca no permite que un usuario agregue carpetas que no proporcionan la
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
 | Unidades de disco duro NTFS y FAT32 fijas y externas.                                                                     | Unidades extraíbles, como unidades flash USB o tarjetas de memoria Digital segura (SD).               |
 | Recursos compartidos de archivos indexados por Windows Search, como servidores de departamento, Windows 7 o Windows equipos de inicio de Vista. | Medios extraíbles, como cd-ROM o dvd.                                                 |
-| Recursos compartidos de archivos que están disponibles sin conexión, como una carpeta **Mis documentos** redirigida o una Client-Side cache.        | Recursos compartidos de red que no están disponibles sin conexión ni indexados de forma remota, como las unidades NAS.   |
+| Recursos compartidos de archivos que están disponibles sin conexión, como una carpeta **Mis documentos** redirigida o una Client-Side Cache.        | Recursos compartidos de red que no están disponibles sin conexión ni indexados de forma remota, como las unidades NAS.   |
 |                                                                                                                    | Otros orígenes de datos, como Microsoft SharePoint, Microsoft Exchange y Microsoft OneDrive. |
 
 

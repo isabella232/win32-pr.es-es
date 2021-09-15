@@ -1,19 +1,19 @@
 ---
-description: Tipo opaco y portátil que admite el uso de la sintaxis del inicializador de C/C++ para cargar valores uint8 t en una instancia \_ de tipo XMVECTOR.
+description: Tipo opaco y portátil para admitir el uso de la sintaxis del inicializador de C/C++ para cargar valores uint8 t en una instancia \_ de tipo XMVECTOR.
 ms.assetid: ab73ac2c-f178-1bb9-910d-9eef5fc6f5df
 title: Tipo de datos XMVECTORU8 (DirectXMath.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff3c335df3e74bc58776883b15d724c65d558bad30fc37e0e28547102260301a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4428cdd78206bfa17c295a9578653bb0a66f0c6b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118276201"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359088"
 ---
 # <a name="xmvectoru8-data-type"></a>Tipo de datos XMVECTORU8
 
-Tipo opaco y portátil que admite el uso de la sintaxis del inicializador de C/C++ para cargar valores uint8 t en una instancia \_ de [**tipo XMVECTOR.**](xmvector-data-type.md)
+Tipo opaco y portátil para admitir el uso de la sintaxis del inicializador de C/C++ para cargar valores uint8 t en una instancia \_ de [**tipo XMVECTOR.**](xmvector-data-type.md)
 
 
 ```C++
@@ -22,11 +22,11 @@ typedef XMVECTORU8 vectoru8;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener una lista de funcionalidades adicionales, como constructores y operadores, disponibles mediante XMVECTORU8 al programar en C++, vea [Extensiones XMVECTORU8](ovw-xmvectoru8-extensions.md).
 
-Las estructuras [**XMVECTORF32,**](xmvectorf32-data-type.md) [**XMVECTORU32,**](xmvectoru32-data-type.md) [**XMVECVEC32**](xmvectori32-data-type.md)y **XMVECTORU8** se proporcionan como un mecanismo para crear [**XMVECTOR**](xmvector-data-type.md) a partir de diferentes tipos de datos constantes (punto flotante, entero sin signo, entero y byte) mediante inicializadores.
+Las estructuras [**XMVECTORF32,**](xmvectorf32-data-type.md) [**XMVECTORU32,**](xmvectoru32-data-type.md) [**XMVECVEC32**](xmvectori32-data-type.md)y **XMVECTORU8** se proporcionan como mecanismo para crear [**XMVECTOR**](xmvector-data-type.md) a partir de diferentes tipos de datos constantes (punto flotante, entero sin signo, entero y byte) mediante inicializadores.
 
 Esto es necesario para admitir [**XMVECTOR,**](xmvector-data-type.md)ya que no admite inicializadores por motivos de portabilidad y optimización.
 
@@ -46,7 +46,7 @@ data = floatingVector;
 
 ### <a name="platform-requirements"></a>Requisitos de la plataforma
 
-Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK Windows para Windows 8. Compatible con aplicaciones de escritorio Win32, Windows store y Windows Phone 8 aplicaciones.
+Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK de Windows para Windows 8. Compatible con aplicaciones de escritorio Win32, Windows store y Windows Phone 8 aplicaciones.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,7 +58,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK Windows p
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

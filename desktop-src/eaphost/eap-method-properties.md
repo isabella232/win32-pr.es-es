@@ -1,6 +1,6 @@
 ---
 title: Propiedades del método EAP (Eaptypes.h)
-description: Lo usan los suplicadores y autenticadores para determinar los métodos EAP que se usarán con un suplicante o autenticador determinado. Las propiedades del método también especifican la configuración de un método.
+description: Lo usan los suplicadores y autenticadores para determinar los métodos eap que se usarán con un suplicante o autenticador determinado. Las propiedades del método también especifican la configuración de un método.
 ms.assetid: 10407b85-5d2c-4c75-9b65-a0d65d4cc7ab
 topic_type:
 - apiref
@@ -40,20 +40,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c88c31d77b666e377cbd1911cde8b5df63d8f5c2fc750cd03a701b03af5b60ab
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 844f897456ee21dfa93dfaa5b16b4f218ba5efb0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120094405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360149"
 ---
 # <a name="eap-method-properties"></a>Propiedades del método EAP
 
-Lo usan los suplicadores y autenticadores para determinar los métodos EAP que se usarán con un suplicante o autenticador determinado. Las propiedades del método también especifican la configuración de un método.
+Lo usan los suplicadores y autenticadores para determinar los métodos eap que se usarán con un suplicante o autenticador determinado. Las propiedades del método también especifican la configuración de un método.
 
-Por ejemplo, el suplicante [802.1X](/previous-versions/windows/embedded/ms890287(v=msdn.10)) puede requerir que los métodos tengan ciertas propiedades para su uso con el suplicante [802.1X.](/previous-versions/windows/embedded/ms890287(v=msdn.10)) El material de clave, por ejemplo, es un requisito.
+Por ejemplo, el suplicante [802.1X](/previous-versions/windows/embedded/ms890287(v=msdn.10)) puede requerir que los métodos tengan determinadas propiedades para su uso con el suplicante [802.1X.](/previous-versions/windows/embedded/ms890287(v=msdn.10)) El material de clave, por ejemplo, es un requisito.
 
-Se enumeran las propiedades admitidas por los métodos EAP. Las propiedades se almacenan como valores de clave del Registro. Para obtener más información, vea la sección Clave del Registro DLL del método del mismo nivel de EAP del tema Configuración del [Registro para métodos EAP.](registry-keys-for-eap-methods.md)
+Se enumeran las propiedades admitidas por los métodos EAP. Las propiedades se almacenan como valores de clave del Registro. Para obtener más información, vea la sección Clave del Registro DLL del método del mismo nivel de EAP del tema [Configuración del Registro para métodos EAP.](registry-keys-for-eap-methods.md)
 
 <dl> <dt>
 
@@ -68,7 +68,7 @@ Se enumeran las propiedades admitidas por los métodos EAP. Las propiedades se a
 El método permite que el conjunto de cifrado se negocie para el cifrado de datos. Windows Server 2008 admite los siguientes [](/windows/desktop/SecAuthN/tls-cipher-suites)conjuntos de cifrado 3DES:
 
 -   TLS \_ RSA \_ WITH \_ 3DES \_ EDE \_ CBC SHA \_ (TLS & SSL 3)
--   TLS \_ DHE \_ DSS \_ CON \_ 3DES \_ EDE \_ CBC SHA \_ (TLS & SSL 3)
+-   TLS \_ DHE \_ DSS \_ WITH \_ 3DES \_ EDE \_ CBC SHA \_ (TLS & SSL 3)
 -   SSL \_ CK \_ DES \_ 192 \_ EDE3 \_ CBC \_ WITH \_ MD5 (SSL 2 si está habilitado)
 
 Para obtener más información sobre el protocolo de seguridad TLS 1.0, vea [RFC 2246](https://go.microsoft.com/fwlink/p/?linkid=84035).
@@ -97,7 +97,7 @@ El método proporciona un intercambio, en el que el autenticador autentica el el
 
 
 
-El método proporciona autenticación de origen de datos y protección contra la modificación no autorizada de información para paquetes EAP, incluidas las solicitudes y respuestas de EAP. Al realizar esta notificación, una especificación de método debe especificar los paquetes EAP protegidos y los campos protegidos dentro de los paquetes EAP.
+El método proporciona autenticación de origen de datos y protección contra la modificación no autorizada de la información de paquetes EAP, incluidas las solicitudes y respuestas de EAP. Al realizar esta notificación, una especificación de método debe especificar los paquetes EAP protegidos y los campos protegidos dentro de los paquetes EAP.
 
 
 </dt> </dl> </dd> <dt>
@@ -123,7 +123,7 @@ El método puede protegerse contra la reproducción de un método EAP o sus mens
 
 
 
-El método puede cifrar mensajes EAP. Se cifran las solicitudes de EAP, las respuestas de EAP, las indicaciones de resultados de éxito y las indicaciones de resultados de error. Un método que realiza esta notificación debe admitir la protección de identidad.
+El método puede cifrar mensajes EAP. Se cifran las solicitudes de EAP, las respuestas de EAP, las indicaciones de resultados correctos y las indicaciones de resultados de error. Un método que realiza esta notificación debe admitir la protección de identidad.
 
 
 </dt> </dl> </dd> <dt>
@@ -214,7 +214,7 @@ La longitud mínima de clave admitida por el método EAP es de 1024 bits.
 
 
 
-El método no permite un ataque sin conexión que tenga un factor de trabajo basado en el número de contraseñas del diccionario de un atacante. Cuando se usa la autenticación de contraseñas, las contraseñas se seleccionan normalmente de un conjunto pequeño (en comparación con un conjunto de claves de N bits), lo que genera una preocupación por los ataques de diccionario. Se puede decir que un método proporciona protección contra ataques de diccionario si, cuando usa una contraseña como secreto, el método no permite un ataque sin conexión que tenga un factor de trabajo basado en el número de contraseñas del diccionario de un atacante.
+El método no permite un ataque sin conexión que tenga un factor de trabajo basado en el número de contraseñas en el diccionario de un atacante. Cuando se usa la autenticación de contraseñas, las contraseñas se seleccionan normalmente de un conjunto pequeño (en comparación con un conjunto de claves de N bits), lo que genera una preocupación por los ataques de diccionario. Se puede decir que un método proporciona protección contra ataques de diccionario si, cuando usa una contraseña como secreto, el método no permite un ataque sin conexión que tenga un factor de trabajo basado en el número de contraseñas en el diccionario de un atacante.
 
 
 </dt> </dl> </dd> <dt>
@@ -240,7 +240,7 @@ El método tiene la capacidad, en el caso de que se haya establecido previamente
 
 
 
-El método muestra al servidor EAP que una sola entidad ha actuado como el par EAP para todos los métodos ejecutados dentro de un método de túnel. El enlace también puede implicar que el servidor EAP demuestra al mismo nivel que una sola entidad ha actuado como servidor EAP para todos los métodos ejecutados dentro de un método de túnel. Si se ejecuta correctamente, el enlace sirve para mitigar las vulnerabilidades de tipo "Man in the middle".
+El método muestra al servidor EAP que una sola entidad ha actuado como el mismo nivel de EAP para todos los métodos ejecutados dentro de un método de túnel. El enlace también puede implicar que el servidor EAP demuestra al mismo nivel que una sola entidad ha actuado como servidor EAP para todos los métodos ejecutados dentro de un método de túnel. Si se ejecuta correctamente, el enlace sirve para mitigar las vulnerabilidades de tipo "Man in the middle".
 
 
 </dt> </dl> </dd> <dt>
@@ -279,7 +279,7 @@ El método puede admitir la fragmentación y el reensamblado si los paquetes EAP
 
 
 
-El método puede comunicar propiedades de canal protegidas por integridad, como identificadores de punto de conexión, que se pueden comparar con valores que se comunican mediante mecanismos fuera de banda, como [autenticación,](https://go.microsoft.com/fwlink/p/?linkid=84063) autorización y contabilidad (AAA) o el protocolo de nivel inferior.
+El método puede comunicar propiedades de canal protegidas por integridad, como identificadores de punto de conexión, que se pueden comparar con los valores que se comunican mediante mecanismos fuera de banda, como [autenticación,](https://go.microsoft.com/fwlink/p/?linkid=84063) autorización y contabilidad (AAA) o el protocolo de nivel inferior.
 
 
 </dt> </dl> </dd> <dt>
@@ -305,7 +305,7 @@ El método admite protección de acceso a redes (NAP).
 
 
 
-El método se puede usar en un equipo independiente.
+El método se puede usar en una máquina independiente.
 
 
 </dt> </dl> </dd> <dt>
@@ -383,7 +383,7 @@ Windows 7 o posterior: el método se puede usar para autenticar una máquina en 
 
 
 
-Windows 7 o posterior: el método se puede usar para autenticar a un usuario en una red con las credenciales de los usuarios.
+Windows 7 o posterior: el método se puede usar para autenticar a un usuario en una red mediante las credenciales de los usuarios.
 
 
 </dt> </dl> </dd> <dt>
@@ -444,11 +444,11 @@ Reservado. No se usa.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>Eaptypes.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Eaptypes.h</dt> </dl> |
 
 
 

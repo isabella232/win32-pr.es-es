@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 07b897d22c1aa8e666c5de40aecb8ef63d17384957e82eee8dc7d569f0e71f57
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f1c24de6af571eec948a92f666a76df6b65187c6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120003195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359513"
 ---
 # <a name="playlistcopy"></a>PLAYLIST.copy
 
@@ -36,9 +36,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método copia solo los elementos activados en la lista de reproducción y funciona de la misma manera que en el panel Copiar desde **CD** en el modo completo de Reproductor de Windows Media. Para que este método funcione, un CD debe estar en la unidad de CD. Establezca el **atributo checkboxesVisible** en true para permitir que los usuarios seleccionen elementos individuales en un CD antes de copiar.
+Este método copia solo los elementos activados en la lista de reproducción y funciona de la misma manera que en el panel Copiar desde **CD** en el modo completo de Reproductor de Windows Media. Para que este método funcione, un CD debe estar en la unidad de CD. Establezca el **atributo checkboxesVisible** en true para permitir a los usuarios seleccionar elementos individuales en un CD antes de copiarlos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Este método copia solo los elementos activados en la lista de reproducción y f
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
 [**PLAYLIST.abortCopy**](playlist-abortcopy.md)

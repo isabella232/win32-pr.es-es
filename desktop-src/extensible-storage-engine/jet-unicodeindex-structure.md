@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: cb2779c75d525e45e9140d8f70665a09fe202b21
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988118"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360476"
 ---
 # <a name="jet_unicodeindex-structure"></a>JET_UNICODEINDEX estructura
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_unicodeindex-structure"></a>JET_UNICODEINDEX estructura
 
-La **JET_UNICODEINDEX** personaliza cómo se normalizan los datos Unicode cuando se crea un índice sobre una columna Unicode.
+La **JET_UNICODEINDEX** de datos personaliza cómo se normalizan los datos Unicode cuando se crea un índice sobre una columna Unicode.
 
 ```cpp
 typedef struct tagJET_UNICODEINDEX {
@@ -38,7 +38,7 @@ typedef struct tagJET_UNICODEINDEX {
 } JET_UNICODEINDEX;
 ```
 
-### <a name="members"></a>Miembros
+### <a name="members"></a>Members
 
 **lcid**
 

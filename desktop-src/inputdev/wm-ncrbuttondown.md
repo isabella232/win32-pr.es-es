@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bb30c650ec3f83cf120c7f9ef6589af6961c2da16b770fba55586916b357117
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e6f416cc0f42ead127d7e72c0f46a291b4c30197
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119888595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359753"
 ---
-# <a name="wm_ncrbuttondown-message"></a>Mensaje \_ WM NCRBUTTONDOWN
+# <a name="wm_ncrbuttondown-message"></a>Mensaje \_ NCRBUTTONDOWN de WM
 
 Se publica cuando el usuario presiona el botón derecho del mouse mientras el cursor está dentro del área no cliente de una ventana. Este mensaje se publica en la ventana que contiene el cursor. Si una ventana ha capturado el mouse, este mensaje no se publica.
 
@@ -41,7 +41,7 @@ Una ventana recibe este mensaje a través de su [**función WindowProc.**](/prev
 *wParam* 
 </dt> <dd>
 
-Valor de la prueba de acceso devuelto por la función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) como resultado del procesamiento del [**mensaje WM \_ NCHITTEST.**](wm-nchittest.md) Para obtener una lista de valores de prueba de acceso, vea **WM \_ NCHITTEST**.
+Valor de prueba de acceso devuelto por la [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) como resultado del procesamiento del [**mensaje WM \_ NCHITTEST.**](wm-nchittest.md) Para obtener una lista de valores de prueba de acceso, vea **WM \_ NCHITTEST**.
 
 </dd> <dt>
 
@@ -56,7 +56,7 @@ Estructura [**POINTS**](/previous-versions//dd162808(v=vs.85)) que contiene las 
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 También puede usar las macros [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) y [**GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para extraer los valores de las coordenadas x e y- de *lParam*.
 
@@ -69,11 +69,11 @@ yPos = GET_Y_LPARAM(lParam);
 
 
 > [!IMPORTANT]
-> No use las macros [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) para extraer las coordenadas x e y de la posición del cursor porque estas macros devuelven resultados incorrectos en sistemas con varios monitores. Los sistemas con varios monitores pueden tener coordenadas x e y negativas, y **LOWORD** y **HIWORD** tratan las coordenadas como cantidades sin signo.
+> No use las macros [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) para extraer las coordenadas x e y- de la posición del cursor porque estas macros devuelven resultados incorrectos en sistemas con varios monitores. Los sistemas con varios monitores pueden tener coordenadas x e y negativas, y **LOWORD** e **HIWORD** tratan las coordenadas como cantidades sin signo.
 
  
 
-Si es adecuado hacerlo, el sistema envía el mensaje [**\_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand) de WM a la ventana.
+Si es adecuado hacerlo, el sistema envía el [**mensaje \_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand) de WM a la ventana.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,7 +87,7 @@ Si es adecuado hacerlo, el sistema envía el mensaje [**\_ SYSCOMMAND**](/window
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -127,7 +127,7 @@ Si es adecuado hacerlo, el sistema envía el mensaje [**\_ SYSCOMMAND**](/window
 [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**Puntos**](/previous-versions//dd162808(v=vs.85))
+[**PUNTOS**](/previous-versions//dd162808(v=vs.85))
 </dt> </dl>
 
  

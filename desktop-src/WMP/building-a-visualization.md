@@ -21,20 +21,20 @@ keywords:
 - valores preestablecidos en visualizaciones, valor preestablecido de onda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9d21cbbb67c30711919d9d0cbf559dcb83e48493687d9bca3574ce066186620
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: faed09c473af9a8e784b9a2e9f6891283a99a41a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119573375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270423"
 ---
 # <a name="building-a-visualization"></a>Creación de una visualización
 
-Puede crear una visualización personalizada mediante Visual Studio junto con el asistente para Reproductor de Windows Media complemento. Para obtener información sobre cómo configurar el asistente y crear un complemento, vea [Building a Plug-in](building-a-plug-in.md).
+Puede crear una visualización personalizada mediante Visual Studio junto con el asistente para Reproductor de Windows Media complementos. Para obtener información sobre cómo configurar el asistente y crear un complemento, vea [Building a Plug-in](building-a-plug-in.md).
 
-Al ejecutar el asistente, se le dará una opción de varios tipos diferentes de complementos. Elija Visualización.
+Al ejecutar el asistente, se le dará la opción de varios tipos diferentes de complementos. Elija Visualización.
 
-Después de completar el asistente y crear el complemento, inicie una canción en Reproductor de Windows Media haga clic en las visualizaciones. Los valores preestablecidos que se crean automáticamente se denominan *projectname* Bars y *projectname* Wave, donde *projectname* es el nombre del proyecto.
+Después de completar el asistente y compilar el complemento, inicie una canción en Reproductor de Windows Media haga clic en las visualizaciones. Los valores preestablecidos que se crean automáticamente se denominan *projectname* Bars y *projectname* Wave, donde *projectname* es el nombre del proyecto.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -5,15 +5,15 @@ ms.assetid: 788940a0-b1d9-45d7-a4b5-6f0926026c7d
 keywords:
 - Servicios web de operación de servicio para Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5acde0c2151dea483a3e82f45c7031fa201614076f7a5ea624926fbe08e7588b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 59e7883c0988189db3d977a78615c024dc92df36
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119026273"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360571"
 ---
 # <a name="service-operation"></a>Operación de servicio
 
@@ -75,7 +75,7 @@ Consulte también la [sección compatibilidad con WSDL](wsdl-support.md).
 
 Las enumeraciones siguientes se usan con operaciones de servicio:
 
--   [**WS \_ PARAMETER \_ TYPE**](/windows/desktop/api/WebServices/ne-webservices-ws_parameter_type)
+-   [**TIPO DE \_ PARÁMETRO \_ WS**](/windows/desktop/api/WebServices/ne-webservices-ws_parameter_type)
 -   [**MOTIVO DE \_ CANCELACIÓN \_ DEL SERVICIO WS \_**](/windows/desktop/api/WebServices/ne-webservices-ws_service_cancel_reason)
 -   [**WS \_ SERVICE \_ OPERATION \_ MESSAGE \_ OPTION**](/windows/win32/api/webservices/ne-webservices-ws_charset)
 

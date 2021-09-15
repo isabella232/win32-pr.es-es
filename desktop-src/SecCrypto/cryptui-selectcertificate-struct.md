@@ -14,12 +14,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 1f8cc80f740e26ac2d067705c9aac9aee387b91e28cb057366587375c874ae0b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3db7e59006e964b7335a4a246fb63d7ca7b80577
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117768239"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271044"
 ---
 # <a name="cryptui_selectcertificate_struct-structure"></a>Estructura CRYPTUI \_ SELECTCERTIFICATE \_
 
@@ -51,7 +51,7 @@ typedef struct _CRYPTUI_SELECTCERTIFICATE_STRUCT {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -72,7 +72,7 @@ Identificador de la ventana primaria del cuadro de diálogo. Si este valor es **
 **dwFlags**
 </dt> <dd>
 
-Especifica opciones adicionales para la [**función CryptUIDlgSelectCertificate.**](cryptuidlgselectcertificate.md) Puede ser cero o un OR bit a **bit** de los valores siguientes.
+Especifica opciones adicionales para la [**función CryptUIDlgSelectCertificate.**](cryptuidlgselectcertificate.md) Puede ser cero o un **OR** bit a bit de los valores siguientes.
 
 
 
@@ -107,10 +107,10 @@ Marcas que se pueden combinar para excluir columnas de la pantalla.
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
 | <span id="CRYPTUI_SELECT_ISSUEDTO_COLUMN"></span><span id="cryptui_select_issuedto_column"></span><dl> <dt>**CRYPTUI \_ SELECT \_ ISSUEDTO \_ COLUMN**</dt> <dt>1 (0x1)</dt> </dl>             | No muestre información **de ISSUEDTO.**<br/>    |
 | <span id="CRYPTUI_SELECT_ISSUEDBY_COLUMN"></span><span id="cryptui_select_issuedby_column"></span><dl> <dt>**CRYPTUI \_ SELECT \_ ISSUEDBY \_ COLUMN**</dt> <dt>2 (0x2)</dt> </dl>             | No muestre información **de ISSUEDBY.**<br/>    |
-| <span id="CRYPTUI_SELECT_INTENDEDUSE_COLUMN"></span><span id="cryptui_select_intendeduse_column"></span><dl> <dt>**CRYPTUI \_ SELECT \_ INTENDEDUSE \_ COLUMN**</dt> <dt>4 (0X4)</dt> </dl>    | No muestre información **de IntendedUse.**<br/> |
-| <span id="CRYPTUI_SELECT_FRIENDLYNAME_COLUMN"></span><span id="cryptui_select_friendlyname_column"></span><dl> <dt>**CRYPTUI \_ SELECT \_ FRIENDLYNAME \_ COLUMN**</dt> <dt>8 (0x8)</dt> </dl> | No muestre información de nombre.<br/>            |
+| <span id="CRYPTUI_SELECT_INTENDEDUSE_COLUMN"></span><span id="cryptui_select_intendeduse_column"></span><dl> <dt>**CRYPTUI \_ SELECT \_ INTENDEDUSE \_ COLUMN**</dt> <dt>4 (0X4)</dt> </dl>    | No muestre la **información de IntendedUse.**<br/> |
+| <span id="CRYPTUI_SELECT_FRIENDLYNAME_COLUMN"></span><span id="cryptui_select_friendlyname_column"></span><dl> <dt>**CRYPTUI \_ SELECCIONAR \_ FRIENDLYNAME \_ COLUMN**</dt> <dt>8 (0x8)</dt> </dl> | No muestre información de nombre.<br/>            |
 | <span id="CRYPTUI_SELECT_LOCATION_COLUMN"></span><span id="cryptui_select_location_column"></span><dl> <dt>**CRYPTUI \_ SELECT \_ LOCATION \_ COLUMN**</dt> <dt>16 (0X10)</dt> </dl>           | No muestre información de ubicación.<br/>        |
-| <span id="CRYPTUI_SELECT_EXPIRATION_COLUMN"></span><span id="cryptui_select_expiration_column"></span><dl> <dt>**CRYPTUI \_ SELECT \_ EXPIRATION \_ COLUMN**</dt> <dt>32 (0X20)</dt> </dl>     | No muestre información de expiración.<br/>      |
+| <span id="CRYPTUI_SELECT_EXPIRATION_COLUMN"></span><span id="cryptui_select_expiration_column"></span><dl> <dt>**CRYPTUI \_ SELECCIONAR \_ LA COLUMNA DE \_ EXPIRACIÓN**</dt> <dt>32 (0x20)</dt> </dl>     | No muestre la información de expiración.<br/>      |
 
 
 
@@ -121,7 +121,7 @@ Marcas que se pueden combinar para excluir columnas de la pantalla.
 **szDisplayString**
 </dt> <dd>
 
-Texto que se muestra en el cuadro de diálogo para indicar al usuario. Si el valor de este miembro es **NULL,** se usa la cadena predeterminada "Select a certificate you want to use" (Seleccionar un certificado que desea usar).
+Texto que se muestra en el cuadro de diálogo para indicar al usuario. Si el valor de este miembro es **NULL,** se usa la cadena predeterminada "Select a certificate you want to use".
 
 </dd> <dt>
 
@@ -135,7 +135,7 @@ Puntero a una función [**de devolución de llamada PFNCFILTERPROC**](/windows/d
 **pDisplayCallback**
 </dt> <dd>
 
-Puntero a una función [**de devolución de llamada PFNCCERTDISPLAYPROC**](pfnccertdisplayproc.md) que muestra los certificados que el usuario selecciona para ver.
+Puntero a una función de devolución de [**llamada PFNCCERTDISPLAYPROC**](pfnccertdisplayproc.md) que muestra los certificados que el usuario selecciona para ver.
 
 </dd> <dt>
 
@@ -170,7 +170,7 @@ Número de almacenes de certificados de la **matriz rghStores.**
 **rghStores**
 </dt> <dd>
 
-Puntero a una matriz de almacenes de certificados para buscar al crear una cadena de certificados y comprobar la confianza de los certificados que se muestran en el cuadro de diálogo.
+Puntero a una matriz de almacenes de certificados para buscar al crear una cadena de certificados y comprobar la confianza de los certificados mostrados en el cuadro de diálogo.
 
 </dd> <dt>
 
@@ -203,7 +203,7 @@ Este miembro no se usa si el **miembro dwFlags** de esta estructura no contiene 
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                                     |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                            |
 | Nombres Unicode y ANSI<br/>   | **CRYPTUI \_ SELECTCERTIFICATE \_ STRUCTW** (Unicode) y **CRYPTUI \_ SELECTCERTIFICATE \_ STRUCTA** (ANSI)<br/> |
 

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 7390b31aa2cc2c81d3d56656efb3c9ff3b6c1de81bf3e5d4de471fd1f7058553
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fad44c13f7b856270fe6475f9e099f6e1714e064
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118525336"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359784"
 ---
 # <a name="d3dxmatrix-structure-d3dx9mathh"></a>Estructura D3DXMATRIX (D3dx9math.h)
 
@@ -35,7 +35,7 @@ typedef struct D3DXMATRIX {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -50,7 +50,7 @@ Componente (i, j) de la matriz, donde i es el número de fila y j es el número 
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los programadores de C no pueden usar la estructura D3DXMATRIX, deben usar la estructura [**D3DMATRIX.**](d3dmatrix.md) Los programadores de C++ pueden aprovechar los constructores sobrecargados y los operadores de asignación, unario y binario (incluida la igualdad).
 
@@ -58,7 +58,7 @@ En D3DX, el \_ elemento 34 de una matriz de proyección no puede ser un número 
 
 ### <a name="d3dxmatrix-extensions"></a>Extensiones D3DXMATRIX
 
-**D3DXMATRIX tiene** las siguientes extensiones de C++.
+**D3DXMATRIX** tiene las siguientes extensiones de C++.
 
 
 ```

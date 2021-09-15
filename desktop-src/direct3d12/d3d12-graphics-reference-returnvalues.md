@@ -5,12 +5,12 @@ ms.assetid: 5F6CC962-7DB7-489F-82A4-9388313014D3
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba58a72fa3cbb22b69cf4a31fb3ac88ce2b6b47cac3f0e334db4ec86dfd8e0f9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3cd04c0c7702f00f1338ce884adc745522390c8d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118098337"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359826"
 ---
 # <a name="direct3d-12-return-codes"></a>Códigos de retorno de Direct3D 12
 

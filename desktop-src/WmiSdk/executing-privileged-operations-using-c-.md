@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Ejecución de operaciones con privilegios mediante C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e83667cd4a4cd81439392f1f58d77fb56109f79c2dd6d826c9390d62008553b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8fbc0468fef7531586020f55032bff94c977c4ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119050893"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359854"
 ---
 # <a name="executing-privileged-operations-using-c"></a>Ejecución de operaciones con privilegios mediante C++
 

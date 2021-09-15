@@ -1,19 +1,19 @@
 ---
-description: Cuando es true, indica que la entrada de lápiz se puede volver a analizar. Este elemento es false si el usuario ha establecido explícitamente el tipo de la entrada de lápiz mediante las características Convertir escritura a mano en texto o Cambiar forma a del diario.
+description: Cuando es true, indica que la entrada de lápiz se puede volver a analizar. Este elemento es false si el usuario ha establecido explícitamente el tipo de entrada de lápiz mediante las características Convertir escritura a mano en texto o Cambiar forma a del diario.
 ms.assetid: d1b9bd7f-e420-4290-a542-f1216b6ef203
 title: Elemento CanReClassify
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ffe64efef37f30c0bdcaebc2b20fb7637fb60da5acb1d771ede3b6bee6e23cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f243b4237e0dd9195a2a254a06cd86dceb31b63
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118967749"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360023"
 ---
 # <a name="canreclassify-element"></a>Elemento CanReClassify
 
-Cuando **es true**, indica que la entrada de lápiz se puede volver a analizar. Este elemento es **false** si el usuario ha establecido explícitamente el tipo de la entrada de lápiz mediante las características Convertir escritura a mano en texto o Cambiar forma a del diario.
+Cuando **es true**, indica que la entrada de lápiz se puede volver a analizar. Este elemento es **false** si el usuario ha establecido explícitamente el tipo de entrada de lápiz mediante las características Convertir escritura a mano en texto o Cambiar forma a del diario.
 
 ## <a name="definition"></a>Definición
 

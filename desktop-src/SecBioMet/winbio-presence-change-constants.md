@@ -17,14 +17,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 08cce9cc74bafdba6cf8d1aa11abccdaf7315370223ff6edf47eaba167af84f0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c2c864c82ddca6faec134716778dc2e795675371
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118909730"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271308"
 ---
-# <a name="winbio_presence_change-constants"></a>Constantes \_ DE CAMBIO DE PRESENCIA DE WINBIO \_
+# <a name="winbio_presence_change-constants"></a>Constantes DE \_ CAMBIO DE PRESENCIA DE WINBIO \_
 
 Describe los tipos de cambios que pueden producirse cuando el Windows Biometric Framework supervisa la presencia de individuos.
 
@@ -49,7 +49,7 @@ Describe los tipos de cambios que pueden producirse cuando el Windows Biometric 
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                                                                                              |
 | Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                                                                                                     |
-| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluye Winbio.h para aplicaciones cliente o Adaptadores de \_ Winbio.h para adaptadores)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluye Winbio.h para aplicaciones cliente o Adaptadores de \_ Winbio.h para adaptadores)</dt> </dl> |
 
 
 

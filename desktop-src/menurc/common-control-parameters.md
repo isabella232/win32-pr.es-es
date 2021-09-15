@@ -1,19 +1,19 @@
 ---
 title: Parámetros de control comunes
-description: A continuación se describe la sintaxis general para una instrucción de definición de recursos de control.
+description: A continuación se describe la sintaxis general de una instrucción de definición de recursos de control.
 ms.assetid: e7a49a9f-93b5-4221-8006-3d1864b7a6a1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abbdbf707e1ee72f62c7c08cb7065f4d1a4b8f2f4c000d52f3a28c9806a21a0f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 261c71163276ed39841d6f6d7e125d4eb5420072
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117870566"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359721"
 ---
 # <a name="common-control-parameters"></a>Parámetros de control comunes
 
-A continuación se describe la sintaxis general para una instrucción de definición de recursos de control. A continuación se indica el significado de cada parámetro. En ocasiones, una instrucción usará un parámetro de forma diferente o puede omitir un parámetro. La variación específica de la instrucción se describe en la documentación de la instrucción.
+A continuación se describe la sintaxis general de una instrucción de definición de recursos de control. A continuación se indica el significado de cada parámetro. En ocasiones, una instrucción usará un parámetro de forma diferente o puede omitir un parámetro. La variación específica de la instrucción se describe en la documentación de la instrucción.
 
 ``` syntax
 control [[text,]] id, x, y, width, height[[, style[[, extended-style]]]][, helpId]
@@ -45,14 +45,14 @@ Identificador de control. Este valor debe ser un entero de 16 bits sin signo en 
 <span id="x"></span><span id="X"></span>*X*
 </dt> <dd>
 
-Coordenada X del lado izquierdo del control con respecto al lado izquierdo del cuadro de diálogo. Este valor debe ser un entero de 16 bits sin signo en el intervalo comprendido entre 0 y 65 535. La coordenada está en unidades de diálogo y es relativa al origen del cuadro de diálogo, la ventana o el control que contiene el control especificado.
+Coordenada X del lado izquierdo del control con respecto al lado izquierdo del cuadro de diálogo. Este valor debe ser un entero de 16 bits sin signo en el intervalo comprendido entre 0 y 65 535. La coordenada está en unidades de diálogo y es relativa al origen del cuadro de diálogo, ventana o control que contiene el control especificado.
 
 </dd> <dt>
 
 <span id="y"></span><span id="Y"></span>*y*
 </dt> <dd>
 
-Coordenada Y del lado superior del control con respecto a la parte superior del cuadro de diálogo. Este valor debe ser un entero de 16 bits sin signo en el intervalo comprendido entre 0 y 65 535. La coordenada está en unidades de diálogo relativas al origen del cuadro de diálogo, la ventana o el control que contiene el control especificado.
+Coordenada Y del lado superior del control con respecto a la parte superior del cuadro de diálogo. Este valor debe ser un entero de 16 bits sin signo en el intervalo comprendido entre 0 y 65 535. La coordenada está en unidades de diálogo relativas al origen del cuadro de diálogo, ventana o control que contiene el control especificado.
 
 </dd> <dt>
 
@@ -73,7 +73,7 @@ Alto del control. Este valor debe ser un entero de 16 bits sin signo en el inter
 <span id="style"></span><span id="STYLE"></span>*Estilo*
 </dt> <dd>
 
-Estilos de control. Use el operador OR bit a bit ( \| ) para combinar estilos. Para obtener más información, vea [Estilos de ventana.](../winmsg/window-styles.md)
+Estilos de control. Use el operador OR bit a bit ( \| ) para combinar estilos. Para obtener más información, vea [Estilos de ventana](../winmsg/window-styles.md).
 
 </dd> <dt>
 
@@ -87,20 +87,20 @@ Estilos de ventana extendidos. Debe especificar *style para* especificar el esti
 <span id="helpId"></span><span id="helpid"></span><span id="HELPID"></span>*helpId*
 </dt> <dd>
 
-Expresión numérica que indica el identificador utilizado para identificar el control durante el [**procesamiento de WM \_ HELP.**](../shell/wm-help.md)
+Expresión numérica que indica el identificador usado para identificar el control durante el [**procesamiento de WM \_ HELP.**](../shell/wm-help.md)
 
 </dd> <dt>
 
 <span id="controlData"></span><span id="controldata"></span><span id="CONTROLDATA"></span>*controlData*
 </dt> <dd>
 
-Datos específicos del control para el control. Cuando se crea un diálogo y se crea un control en ese diálogo que tiene datos específicos del control, se pasa un puntero a los datos en el procedimiento de ventana del control a través del *lParam* del mensaje [**WM \_ CREATE**](../winmsg/wm-create.md) para ese control.
+Datos específicos del control para el control. Cuando se crea un diálogo y se crea un control en ese diálogo que tiene datos específicos del control, se pasa un puntero a los datos en el procedimiento de ventana del control a través del *lParam* del [**mensaje WM \_ CREATE**](../winmsg/wm-create.md) para ese control.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las unidades de diálogo horizontales son 1/4 de la unidad de ancho base del diálogo. Las unidades verticales son 1/8 de la unidad de alto base del cuadro de diálogo. Las unidades base del cuadro de diálogo actuales se calculan a partir del alto y ancho de la fuente del sistema actual. La [**función GetDialogBaseUnits**](/windows/win32/api/winuser/nf-winuser-getdialogbaseunits) devuelve las unidades base del diálogo en píxeles. Las coordenadas son relativas al origen del cuadro de diálogo.
+Las unidades de diálogo horizontales son 1/4 de la unidad de ancho base del diálogo. Las unidades verticales son 1/8 de la unidad de alto base del cuadro de diálogo. Las unidades base del cuadro de diálogo actuales se calculan a partir del alto y ancho de la fuente actual del sistema. La [**función GetDialogBaseUnits**](/windows/win32/api/winuser/nf-winuser-getdialogbaseunits) devuelve las unidades base del cuadro de diálogo en píxeles. Las coordenadas son relativas al origen del cuadro de diálogo.
 
  
 

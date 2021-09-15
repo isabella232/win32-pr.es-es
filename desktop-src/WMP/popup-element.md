@@ -10,12 +10,12 @@ keywords:
 - elements,POPUP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7d251d90d655ab992d576e3e3191f8fb0eb26c18887a11406a156c224a0339a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 07fd7ac202843c32014181741b4456d665afc8f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118834254"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359453"
 ---
 # <a name="popup-element"></a>Elemento POPUP
 

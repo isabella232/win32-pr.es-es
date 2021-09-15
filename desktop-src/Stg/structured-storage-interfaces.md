@@ -6,12 +6,12 @@ keywords:
 - Interfaces Storage estructuradas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 345c7b10ae4f73a80b3a263b9a9487c2172382b176404871b363aff336441a09
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0010a0d4dec4908111c8a5bb939f795f0a2b2eb3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119661725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270644"
 ---
 # <a name="structured-storage-interfaces"></a>Interfaces Storage estructuradas
 
@@ -25,7 +25,7 @@ Una tercera categoría consta de una sola interfaz, [**ILockBytes**](/windows/de
 
 ## <a name="compound-file-implementation-limits"></a>Límites de implementación de archivos compuestos
 
-La implementación COM de structured Storage arquitectura se denomina *archivos compuestos*. Storage, como se implementa en archivos compuestos, incluyen una implementación de las interfaces [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) [**e IPropertySetStorage.**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage)
+La implementación COM de structured Storage arquitectura se denomina *archivos compuestos*. Storage, como se implementa en archivos compuestos, incluyen una implementación de las interfaces [**IPropertyStorage**](/windows/desktop/api/Propidl/nn-propidl-ipropertystorage) e [**IPropertySetStorage.**](/windows/desktop/api/Propidl/nn-propidl-ipropertysetstorage)
 
 Los punteros a la implementación de archivos compuestos de estas interfaces se adquieren mediante una llamada a la función [**StgCreateStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgcreatestorageex) para crear un nuevo objeto de archivo compuesto o [**StgOpenStorageEx**](/windows/desktop/api/coml2api/nf-coml2api-stgopenstorageex) para abrir un archivo compuesto creado previamente.
 

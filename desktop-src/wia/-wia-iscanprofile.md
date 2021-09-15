@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Scanprofiles.idl
-ms.openlocfilehash: 1de80ac23ffa3e2687e2e6d0449f7a273067d5899204c479f9b62e8571190d61
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e02352eef16a9b899e4c635f11c5d10b3ab5113
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119450835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360626"
 ---
 # <a name="iscanprofile-interface"></a>Interfaz IScanProfile
 
 La **interfaz IScanProfile** representa un único perfil de examen y permite a las aplicaciones establecer y obtener las propiedades del perfil.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IScanProfile** hereda de la [**interfaz IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) **IScanProfile** también tiene estos tipos de miembros:
 
@@ -56,7 +56,7 @@ La **interfaz IScanProfile** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cualquier [**dispositivo IWiaItem2**](-wia-iwiaitem2.md) puede tener un perfil de examen. Sin embargo, **los elementos IWiaItem2** de los tipos WIA CATEGORY FINISHED FILE y \_ \_ \_ WIA CATEGORY ROOT no pueden \_ tener \_ perfiles.
 
@@ -74,11 +74,11 @@ El `<Properties>` elemento contiene elementos `<Property>` secundarios. Úselos 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
-| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 

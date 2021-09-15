@@ -3,7 +3,7 @@ title: Duration
 description: El atributo Duration contiene la duración de reproducción del archivo, en unidades de 100 nanosegundos.
 ms.assetid: 1d72f826-4087-45f5-a5b9-f31c4e98e9b1
 keywords:
-- Formato multimedia de las ventanas de duración
+- Formato multimedia de windows de duración
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22fc6b32d34249fbbe94e629b9fea6ae40d9627d100d3c337efd74d5a2d2773f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 12ea9763bf505394f231ebe7d50943f4336e244c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119085867"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360593"
 ---
 # <a name="duration"></a>Duration
 
@@ -29,9 +29,9 @@ g \_ wszWMDuration
 
 ## <a name="data-type"></a>Tipo de datos
 
-**QWORD \_ DE TIPO \_ WMT**
+**TIPO WMT \_ \_ QWORD**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de un atributo codificado.
 
