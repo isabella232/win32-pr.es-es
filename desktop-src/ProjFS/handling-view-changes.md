@@ -4,12 +4,12 @@ description: Describe cómo actualizar la vista de cliente del almacén de respa
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 10/09/2018
 ms.topic: article
-ms.openlocfilehash: 99ace7849b8967748f26210d9d6b770e424c349359aa39e828c8ad9af36a65af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d5a709752f92b7449d2ccc38f67c4417edf8d62
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117792652"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473642"
 ---
 # <a name="handling-view-changes"></a>Control de cambios en la vista
 
@@ -19,7 +19,7 @@ A medida que se abren los archivos y directorios de la raíz de virtualización,
 
 ## <a name="item-versioning"></a>Control de versiones de elementos
 
-Para admitir el mantenimiento de varias vistas, ProjFS proporciona **[la PRJ_PLACEHOLDER_VERSION_INFO](/windows/desktop/api/projectedfslib/ns-projectedfslib-prj_placeholder_version_info)** struct.  Un proveedor usa esta estructura independiente en las llamadas a **[PrjMarkDirectoryAsPlaceholder](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjmarkdirectoryasplaceholder)** y se inserta en los **[structs PRJ_PLACEHOLDER_INFO](/windows/desktop/api/projectedfslib/ns-projectedfslib-prj_placeholder_info)** y **[PRJ_CALLBACK_DATA](/windows/desktop/api/projectedfslib/ns-projectedfslib-prj_callback_data)** structs.  El **PRJ_PLACEHOLDER_VERSION_INFO**. El campo ContentID es donde el proveedor almacena hasta 128 bytes de información de versión para un archivo o directorio.  A continuación, el proveedor puede asociar internamente este valor a algún valor que identifique una vista determinada.
+Para admitir el mantenimiento de varias vistas, ProjFS proporciona **[la PRJ_PLACEHOLDER_VERSION_INFO](/windows/desktop/api/projectedfslib/ns-projectedfslib-prj_placeholder_version_info)** struct.  Un proveedor usa esta estructura independiente en las llamadas a **[PrjMarkDirectoryAsPlaceholder](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjmarkdirectoryasplaceholder)** y se inserta en los structs **[PRJ_PLACEHOLDER_INFO](/windows/desktop/api/projectedfslib/ns-projectedfslib-prj_placeholder_info)** y **[PRJ_CALLBACK_DATA](/windows/desktop/api/projectedfslib/ns-projectedfslib-prj_callback_data)** structs.  El **PRJ_PLACEHOLDER_VERSION_INFO**. El campo ContentID es donde el proveedor almacena hasta 128 bytes de información de versión para un archivo o directorio.  A continuación, el proveedor puede asociar internamente este valor a algún valor que identifique una vista determinada.
 
 Por ejemplo, un proveedor que virtualiza un repositorio de control de código fuente podría optar por usar un hash del contenido de un archivo para actuar como ContentID, y podría usar marcas de tiempo para identificar vistas del repositorio en varios momentos en el tiempo.  Las marcas de tiempo pueden ser las veces que se realizaron las confirmaciones en el repositorio.
 
@@ -30,7 +30,7 @@ Con el ejemplo de un repositorio indizado por marca de tiempo, un flujo típico 
 1. Cuando el cliente lee de un marcador de posición, se invoca la devolución PRJ_GET_FILE_DATA_CB **[de](/windows/desktop/api/projectedfslib/nc-projectedfslib-prj_get_file_data_cb)** llamada del proveedor.  El miembro VersionInfo del parámetro _callbackData_ contiene el ContentID que el proveedor especificó en **PrjWritePlaceholderInfo** cuando creó el marcador de posición de archivo.  El proveedor usa ese ContentID para recuperar el contenido correcto del archivo de su almacén de respaldo.
 1. El cliente solicita un cambio de vista especificando una nueva marca de tiempo.  Para cada marcador de posición que el proveedor creó en la vista anterior, si existe una versión diferente de ese archivo en la nueva vista, el proveedor puede reemplazar el marcador de posición en el disco por uno actualizado cuyo ContentID está asociado a la nueva marca de tiempo llamando a **[PrjUpdateFileIfNeeded](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjupdatefileifneeded)**.  Como alternativa, el proveedor puede eliminar el marcador de posición llamando a **[PrjDeleteFile](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjdeletefile)** para que la nueva vista del archivo se proyecte en enumeraciones.  Si el archivo no existe en la nueva vista, el proveedor debe eliminarlo llamando a **PrjDeleteFile**.
 
-Tenga en cuenta que el proveedor debe asegurarse de que, cuando el cliente enumera un directorio, el proveedor proporcione el contenido correspondiente a la vista del cliente.  Por ejemplo, el proveedor podría usar el miembro VersionInfo del parámetro _callbackData_ de las devoluciones de llamada **[PRJ_START_DIRECTORY_ENUMERATION_CB](/windows/desktop/api/projectedfslib/nc-projectedfslib-prj_start_directory_enumeration_cb)** y **[PRJ_GET_DIRECTORY_ENUMERATION_CB](/windows/desktop/api/projectedfslib/nc-projectedfslib-prj_get_directory_enumeration_cb)** para recuperar el contenido del directorio sobre la marcha.  Como alternativa, podría crear una estructura de directorios para esa vista en su almacén de respaldo como parte del establecimiento de la vista y, a continuación, simplemente enumerar esa estructura.
+Tenga en cuenta que el proveedor debe asegurarse de que, cuando el cliente enumera un directorio, el proveedor proporcione el contenido correspondiente a la vista del cliente.  Por ejemplo, el proveedor podría usar el miembro VersionInfo **[](/windows/desktop/api/projectedfslib/nc-projectedfslib-prj_start_directory_enumeration_cb)** del parámetro _callbackData_ de las devoluciones de llamada PRJ_START_DIRECTORY_ENUMERATION_CB y **[PRJ_GET_DIRECTORY_ENUMERATION_CB](/windows/desktop/api/projectedfslib/nc-projectedfslib-prj_get_directory_enumeration_cb)** para recuperar el contenido del directorio sobre la marcha.  Como alternativa, podría crear una estructura de directorios para esa vista en su almacén de respaldo como parte del establecimiento de la vista y, a continuación, simplemente enumerar esa estructura.
 
 > Cada vez que se invoca una devolución de llamada de proveedor para un marcador de posición o un archivo parcial, la información de versión que el proveedor especificó al crear el elemento se proporciona en el miembro VersionInfo del parámetro _callbackData_ de la devolución de llamada.
 

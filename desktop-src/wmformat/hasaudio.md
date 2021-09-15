@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d3d638c88505233d479445b05267927f72ae077f9c46c99f9e3713fd2980afdc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0930ffea67ee100528cf9d592a25f98aa6c92a55
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118198413"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360221"
 ---
 # <a name="hasaudio"></a>HasAudio
 
@@ -29,9 +29,9 @@ g \_ wszWMHasAudio
 
 ## <a name="data-type"></a>Tipo de datos
 
-**WMT \_ TYPE \_ BOOL**
+**TIPO WMT \_ \_ BOOL**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de un atributo codificado.
 

@@ -4,12 +4,12 @@ ms.assetid: 7b21ec52-bc29-447e-9c46-34b9115574e0
 title: Resolución de un nombre de mismo nivel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7aefcae37c8853982fff8f4e925641ab9c650b8946766983fa437f9df18e01d5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8e7f3aa59d3dc3be89f35ce9d6eca58bed1ce137
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117794448"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473664"
 ---
 # <a name="resolving-a-peer-name"></a>Resolución de un nombre de mismo nivel
 

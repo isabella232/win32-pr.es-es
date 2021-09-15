@@ -20,12 +20,12 @@ keywords:
 - DRM (administración de derechos digitales), copia de seguridad y restauración de licencias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 378a41d975e8f19d38c637d585759d0038f5b86550769ae49d6a6490844f223e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d10d8e76c191225288a1021e08e4c77e7e14f3c6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119028143"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466726"
 ---
 # <a name="backing-up-and-restoring-licenses"></a>Copia de seguridad y restauración de licencias
 
@@ -34,7 +34,7 @@ Los procesos de copia de seguridad y restauración son asincrónicos. Se desenca
 Para hacer una copia de seguridad de licencias:
 
 1.  Use la [**función WMCreateBackupRestorer para**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreatebackuprestorer) crear el objeto de restaurador de copia de seguridad.
-2.  Llame al [**método IWMBackupRestoreProps::SetProp**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmbackuprestoreprops-setprop) para establecer la ruta de acceso de copia de seguridad (la ubicación donde escribirá los archivos, como A: \\ o D: \\ Licencias).
+2.  Llame al [**método IWMBackupRestoreProps::SetProp**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmbackuprestoreprops-setprop) para establecer la ruta de acceso de copia de seguridad (la ubicación donde escribirá los archivos, como A: o \\ D: \\ Licencias).
 3.  Llame al [**método IWMLicenseBackup::BackupLicenses**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmlicensebackup-backuplicenses) para hacer una copia de seguridad de las licencias en la ruta de acceso especificada.
 
 Los eventos siguientes se envían al [**método IWMStatusCallback::OnStatus:**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus)

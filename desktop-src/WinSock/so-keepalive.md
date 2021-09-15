@@ -4,12 +4,12 @@ ms.assetid: d6da7761-7a09-4c91-9737-550590a773b3
 title: SO_KEEPALIVE de socket (Ws2def.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d3590b8813f584aad16896a5b990baa2e3ad5607b76a13bd987d87961ee5f6f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9d829f957e23c48a325444de7d992397fba26d48
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120097475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359111"
 ---
 # <a name="so_keepalive-socket-option"></a>So \_ KEEPALIVE socket option
 
@@ -70,7 +70,7 @@ Nivel en el que se define la opción. Use **SOL \_ SOCKET para** esta operación
 *optname* \[ En\]
 </dt> <dd>
 
-Opción de socket para la que se va a establecer el valor. Use **SO \_ KEEPALIVE** para esta operación.
+Opción de socket para la que se va a establecer el valor. Use **SO \_ KEEPALIVE para** esta operación.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Si se produce un error en la operación, se devuelve un valor de SOCKET ERROR y 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La [**función getsockopt**](/windows/desktop/api/winsock/nf-winsock-getsockopt) llamada con la opción de socket **SO \_ KEEPALIVE** permite a una aplicación recuperar el estado actual de la opción keepalive, aunque esta característica no se usa normalmente. Si una aplicación necesita habilitar paquetes keepalive en un socket, simplemente llama a la [**función setsockopt**](/windows/desktop/api/winsock/nf-winsock-setsockopt) para habilitar la opción.
 
@@ -120,7 +120,7 @@ La [**función setsockopt**](/windows/desktop/api/winsock/nf-winsock-setsockopt)
 
 Cuando esta opción de socket está habilitada, la pila TCP envía paquetes keep-alive cuando no se han recibido paquetes de confirmación o datos para la conexión dentro de un intervalo. Para obtener más información sobre la opción keep-alive, vea la sección 4.2.3.6 sobre los requisitos de los hosts de *Internet:* capas de comunicación especificadas en RFC 1122 disponible en el sitio web de [IETF](https://www.ietf.org/rfc/rfc1122.txt). (Este recurso solo puede estar disponible en inglés).
 
-La opción de socket **\_ SO KEEPALIVE** solo es válida para los protocolos que admiten la noción de keep-alive (protocolos orientados a la conexión). Para TCP, el tiempo de espera de conexión continua predeterminado es de 2 horas y el intervalo de conexión continua es de 1 segundo. El número predeterminado de sondeos keep-alive varía en función de la versión de Windows.
+La opción de socket **\_ SO KEEPALIVE** solo es válida para los protocolos que admiten la noción de mantener activo (protocolos orientados a la conexión). Para TCP, el tiempo de espera de conexión continua predeterminado es de 2 horas y el intervalo de conexión continua es de 1 segundo. El número predeterminado de sondeos keep-alive varía en función de la versión de Windows.
 
 El código de control [**\_ SIO KEEPALIVE \_ VALS**](/previous-versions/windows/desktop/legacy/dd877220(v=vs.85)) se puede usar para habilitar o deshabilitar la conexión continua, y ajustar el tiempo de espera y el intervalo para una sola conexión. Si keep-alive está habilitado con **SO \_ KEEPALIVE,** la configuración de TCP predeterminada se usa para el tiempo de espera y el intervalo de conexión continua, a menos que estos valores se hayan cambiado **mediante SIO \_ KEEPALIVE \_ VALS**.
 
@@ -132,7 +132,7 @@ En Windows Server 2003, Windows XP y Windows 2000, la configuración predetermin
 
 En Windows Vista y versiones posteriores, la opción de socket **SO \_ KEEPALIVE** solo se puede establecer mediante la función [**setsockopt**](/windows/desktop/api/winsock/nf-winsock-setsockopt) cuando el socket está en un estado conocido, no en un estado de transición. Para TCP, se debe establecer la opción de socket **SO \_ KEEPALIVE** antes de que se llame a la función connect [**(connect,**](/windows/desktop/api/Winsock2/nf-winsock2-connect) [**ConnectEx,**](/windows/desktop/api/Mswsock/nc-mswsock-lpfn_connectex) [**WSAConnect,**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnect) [**WSAConnectByList**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnectbylist)o [**WSAConnectByName)**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnectbynamea)o después de que la solicitud de conexión se haya completado realmente. Si se llamó a la función connect de forma asincrónica, esto requiere esperar a la finalización de la conexión antes de intentar establecer la opción de socket **SO \_ KEEPALIVE.** Si una aplicación intenta establecer la opción de socket **SO \_ KEEPALIVE** cuando una solicitud de conexión todavía está en proceso, la función **setsockopt** producirá un error y devolverá [WSAEINVAL](windows-sockets-error-codes-2.md).
 
-En Windows Server 2003, Windows XP y Windows 2000, la opción de socket **SO \_ KEEPALIVE** se puede establecer mediante la función [**setsockopt**](/windows/desktop/api/winsock/nf-winsock-setsockopt) cuando el socket es un estado de transición (una solicitud de conexión todavía está en curso), así como un estado conocido.
+En Windows Server 2003, Windows XP y Windows 2000, la opción de socket **SO \_ KEEPALIVE** se puede establecer mediante la función [**setsockopt**](/windows/desktop/api/winsock/nf-winsock-setsockopt) cuando el socket es un estado transitorio (una solicitud de conexión todavía está en curso), así como un estado conocido.
 
 Tenga en cuenta que el archivo de encabezado *Ws2def.h* se incluye automáticamente en *Winsock2.h* y nunca se debe usar directamente.
 

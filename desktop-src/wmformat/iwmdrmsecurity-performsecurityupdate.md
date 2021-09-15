@@ -1,11 +1,11 @@
 ---
-title: Método PerformSecurityUpdate de IWMDRMSecurity (Wmdrmsdk.h)
-description: El método PerformSecurityUpdate inicia una actualización de seguridad en el subsistema DRM en el equipo local.
+title: Método IWMDRMSecurity PerformSecurityUpdate (Wmdrmsdk.h)
+description: El método PerformSecurityUpdate inicia una actualización de seguridad para el subsistema DRM en el equipo local.
 ms.assetid: e450a1e3-6024-4c00-9978-fbc88fde2101
 keywords:
-- Formato multimedia de Windows del método PerformSecurityUpdate
-- Método PerformSecurityUpdate windows Media Format , interfaz IWMDRMSecurity
-- IWMDRMSecurity interface windows Media Format , PerformSecurityUpdate (método)
+- Formato multimedia de windows del método PerformSecurityUpdate
+- Método PerformSecurityUpdate windows Media Format , IWMDRMSecurity (interfaz)
+- IWMDRMSecurity interface windows Media Format , PerformSecurityUpdate method
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8521497c1e2bca1bb2ae11349a4829c22c8b092a4cd0034008b314a7b69adb6b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a34a1e92edd279655737a2e8f3b7ce4e77e27fd5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119707905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360218"
 ---
-# <a name="iwmdrmsecurityperformsecurityupdate-method"></a>Método IWMDRMSecurity::P erformSecurityUpdate
+# <a name="iwmdrmsecurityperformsecurityupdate-method"></a>IWMDRMSecurity::P erformSecurityUpdate (método)
 
-El **método PerformSecurityUpdate** inicia una actualización de seguridad en el subsistema DRM en el equipo local.
+El **método PerformSecurityUpdate** inicia una actualización de seguridad para el subsistema DRM en el equipo local.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,7 +54,7 @@ Opción de actualización expresada como una de las marcas siguientes.
 | Marca                                          | Descripción                                                                                     |
 |-----------------------------------------------|-------------------------------------------------------------------------------------------------|
 | WMDRM \_ SECURITY \_ PERFORM \_ INDIV               | Hace que el componente DRM se individualiza solo si la versión del cliente no está actualizada. |
-| SEGURIDAD WMDRM \_ REALIZA LA ACTUALIZACIÓN DE \_ \_ \_ REVOCACIÓN | Hace que las listas de revocación del equipo cliente se actualicen.                               |
+| SEGURIDAD DE WMDRM \_ REALIZA LA ACTUALIZACIÓN DE \_ \_ \_ REVOCACIÓN | Hace que las listas de revocación del equipo cliente se actualicen.                               |
 | WMDRM \_ SECURITY \_ PERFORM \_ FORCE \_ INDIV        | Hace que el componente DRM se individualiza incluso si la versión del cliente está actualizada.  |
 
 
@@ -84,16 +84,16 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método se ejecuta de forma asincrónica. Devuelve inmediatamente después de llamarse y, a continuación, genera eventos en función de la marca establecida en el *parámetro dwFlags.*
+Este método se ejecuta de forma asincrónica. Devuelve inmediatamente después de llamar a y, a continuación, genera eventos en función de la marca establecida en el *parámetro dwFlags.*
 
-Para la individualización (marca establecida en WMDRM SECURITY PERFORM INDIV o WMDRM SECURITY PERFORM FORCE INDIV), se genera una serie de eventos \_ \_ \_ \_ \_ \_ \_ **MEWMDRMIndividualizationProgress** seguidos de un evento **MEWMDRMIndividualizationCompleted** cuando se completa el procesamiento. El valor de cada uno de los eventos **MEWMDRMIndividualizationProgress obtenidos** mediante una llamada a **IMFMediaEvent::GetValue** es un **puntero IUnknown.** Puede llamar al **método QueryInterface** de la interfaz **IUnknown** recuperada para obtener una instancia de la [**interfaz IWMDRMIndividualizationStatus.**](iwmdrmindividualizationstatus.md)
+Para la individualización (marca establecida en WMDRM SECURITY PERFORM INDIV o WMDRM SECURITY PERFORM FORCE INDIV), se genera una serie de eventos \_ \_ \_ \_ \_ \_ \_ **MEWMDRMIndividualizationProgress** seguidos de un evento **MEWMDRMIndividualizationCompleted** cuando se completa el procesamiento. El valor de cada uno de los eventos **MEWMDRMIndividualizationProgress obtenidos** mediante una llamada a **IMFMediaEvent::GetValue** es un **puntero IUnknown.** Puede llamar al **método QueryInterface** de la interfaz **IUnknown** recuperada para obtener una instancia de la interfaz [**IWMDRMIndividualizationStatus.**](iwmdrmindividualizationstatus.md)
 
 Para actualizar las listas de revocación (marca establecida en WMDRM SECURITY PERFORM REVOCATION REFRESH), se genera un evento \_ \_ \_ \_ **MEWMDRMREvocationDownloadCompleted** cuando se completa el procesamiento.
 
 > [!Note]  
-> Cuando **PerformSecurityUpdate** completa la individualización, los únicos objetos existentes que reflejarán el nuevo estado individualizado son los que heredan de **IWMDRMSecurity**. No se actualizarán todos los demás objetos existentes. Debe liberar y volver a crear cualquier otro objeto para que reflejen el nuevo estado individualizado.
+> Cuando **PerformSecurityUpdate** completa la individualización, los únicos objetos existentes que reflejarán el nuevo estado individualizado son los que heredan de **IWMDRMSecurity**. No se actualizarán todos los demás objetos existentes. Debe liberar y volver a crear cualquier otro objeto para que refleje el nuevo estado individualizado.
 
  
 
@@ -110,7 +110,7 @@ Para obtener más información sobre el uso de los métodos asincrónicos de Win
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -120,7 +120,7 @@ Para obtener más información sobre el uso de los métodos asincrónicos de Win
 [**Ejemplo de individualización de DRM**](drm-individualization-example.md)
 </dt> <dt>
 
-[**Interfaz IWMDRMSecurity**](iwmdrmsecurity.md)
+[**IWMDRMSecurity (interfaz)**](iwmdrmsecurity.md)
 </dt> <dt>
 
 [**Realización de la individualización de DRM**](performing-drm-individualization.md)

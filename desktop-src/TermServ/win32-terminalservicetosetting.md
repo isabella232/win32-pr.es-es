@@ -23,16 +23,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 658f6a91d256806af7740e5e389523e2257e9b02b96e6cfff4b26b109a487cf9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4d37a255b0a894ab257166f17c765f009d33b075
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118603906"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270479"
 ---
 # <a name="win32_terminalservicetosetting-class"></a>Clase \_ TerminalServiceToSetting de Win32
 
-La clase WMI **\_ TerminalServiceToSetting de Win32** representa la asociación entre una instancia de la clase [**\_ TerminalService win32**](win32-terminalservice.md) y el valor de una propiedad [**\_ TerminalServiceSetting de Win32**](win32-terminalservicesetting.md) determinada. Las opciones de configuración incluyen el modo de servidor host de sesión de Escritorio remoto (host de sesión de Escritorio remoto), licencias, Active Desktop, funcionalidad de permisos, eliminación de carpetas temporales y carpetas temporales por sesión.
+La clase WMI **\_ TerminalServiceToSetting de Win32** representa la asociación entre una instancia de la clase [**\_ TerminalService de Win32**](win32-terminalservice.md) y el valor de una propiedad [**\_ TerminalServiceSetting de Win32**](win32-terminalservicesetting.md) determinada. Las opciones de configuración incluyen Escritorio remoto modo de servidor host de sesión (host de sesión de Escritorio remoto), licencias, Active Desktop, funcionalidad de permisos, eliminación de carpetas temporales y carpetas temporales por sesión.
 
 La sintaxis siguiente se simplifica a partir del código MOF e incluye todas las propiedades definidas.
 
@@ -52,7 +52,7 @@ class Win32_TerminalServiceToSetting : CIM_ElementSetting
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ TerminalServiceToSetting de Win32** tiene estos tipos de miembros:
 
@@ -174,7 +174,7 @@ Tipo de acceso: solo lectura
 Calificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Entre los estados no operativo se incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de reflejo de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "Correcto" ni está en uno de los otros estados.
+Estado actual del objeto. Se pueden definir varios estados operativos y no operativos. Los estados operativos incluyen: "Ok", "Degraded" y "Pred Fail" (un elemento, como una unidad de disco duro habilitada para SMART, puede funcionar correctamente pero predecir un error en un futuro próximo). Los estados no operativo incluyen: "Error", "Starting", "Stopping" y "Service". El último, "Servicio", podría aplicarse durante la resilvering de un disco, la recarga de una lista de permisos de usuario u otro trabajo administrativo. No todo este trabajo está en línea, pero el elemento administrado no es "correcto" ni está en uno de los demás estados.
 
 Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
@@ -238,25 +238,25 @@ Esta propiedad se hereda de [**CIM \_ ManagedSystemElement.**](cim-managedsystem
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Microsoft Windows Software Development Kit (SDK). Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Espacio de nombres<br/>                | \\TerminalServices de CIMv2 \\ raíz<br/>                                                |
+| Espacio de nombres<br/>                | Root \\ CIMv2 \\ TerminalServices<br/>                                                |
 | MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

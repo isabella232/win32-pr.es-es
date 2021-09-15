@@ -3,9 +3,9 @@ title: Método Restore de la clase SystemRestore
 description: Inicia una restauración del sistema.
 ms.assetid: ca4aa97b-fa59-407d-b127-951d46932c33
 keywords:
-- Método restore Restaurar sistema
+- Método de restauración Restaurar sistema
 - Método Restore Restaurar sistema , clase SystemRestore
-- SystemRestore class Restaurar sistema , Restore (método)
+- Clase SystemRestore Restaurar sistema método , Restore
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20a296c50493c5735651179febf1a55254557019aa91f8677071f4e769a35202
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f8b7747b710801718d9b169c8999c51dd30cefde
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117675897"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468030"
 ---
 # <a name="restore-method-of-the-systemrestore-class"></a>Método Restore de la clase SystemRestore
 
@@ -79,9 +79,9 @@ next
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                       |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                         |
 | Espacio de nombres<br/>                | Raíz \\ \\ predeterminada<br/>                                                        |
 | MOF<br/>                      | <dl> <dt>Sr.mof</dt> </dl> |

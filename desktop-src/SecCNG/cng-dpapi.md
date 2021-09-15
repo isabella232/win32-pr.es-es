@@ -4,12 +4,12 @@ ms.assetid: 048DEA72-39E1-4129-A554-F7D08442C2D9
 title: CNG DPAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0273522580c806caa5fe7848ff32a2017cfb37c4499dee21f5a3787ecae57b63
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ebd0771b9838b2dbcfbedb3d025a7f650429bba5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118908634"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271228"
 ---
 # <a name="cng-dpapi"></a>CNG DPAPI
 
@@ -17,7 +17,7 @@ Microsoft presentó la interfaz de programación de aplicaciones de protección 
 
 Sin embargo, la informática en la nube a menudo requiere que el contenido cifrado en un equipo se descifre en otro. Por lo tanto, a Windows 8, Microsoft extendió la idea de usar una API relativamente sencilla para abarcar escenarios en la nube. Esta nueva API, denominada DPAPI-NG, permite compartir de forma segura secretos (claves, contraseñas, material de clave) y mensajes protegiéndolos en un conjunto de entidades de seguridad que se pueden usar para desprotegerlos en distintos equipos después de la autenticación y autorización adecuadas. Actualmente se admiten las entidades de seguridad siguientes:
 
--   Un grupo en un Active Directory de datos.
+-   Un grupo de un Active Directory bosque.
 -   Credenciales web.
 
 Para obtener más información, vea los temas siguientes:

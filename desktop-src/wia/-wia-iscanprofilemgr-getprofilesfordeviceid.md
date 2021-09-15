@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: 8ca150d02aff2f84becf8b36aca87e2da24b2b83c9ccd85c0cf5a1c5ced0d664
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 10a7d891a114fc36de3f91341febf1616a06ed22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118209061"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466537"
 ---
 # <a name="iscanprofilemgrgetprofilesfordeviceid-method"></a>IScanProfileMgr::GetProfilesforDeviceID (método)
 
@@ -55,7 +55,7 @@ Identificador del dispositivo.
 
 Tipo: **ULONG \***
 
-Cuando se pasa, un puntero al número máximo de perfiles que se devolverán. Cuando se devuelve, el puntero a la cantidad de perfiles devueltos.
+Cuando se pasa, un puntero al número máximo de perfiles que se devolverán. Cuando se devuelve, puntero al número de perfiles devueltos.
 
 </dd> <dt>
 
@@ -74,7 +74,7 @@ Tipo: **HRESULT**
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el número total de perfiles asociados al dispositivo es menor que el valor pasado a *pulNumProfiles,* *pulNumProfiles* devuelve ese total. De lo contrario, devuelve el mismo valor que se le pasó.
 
@@ -82,16 +82,16 @@ Si el número total de perfiles asociados al dispositivo es menor que el valor p
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
-| Header<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
-| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

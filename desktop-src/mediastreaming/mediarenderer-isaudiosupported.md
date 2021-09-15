@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: dc3995464a71412bbd098d68a2cb4e19d65a570f35973f528b5bd2efbad5b478
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e948e3c7b3a1c00c7a3fb5fe6a758849f060545a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119720955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359732"
 ---
 # <a name="mediarendererisaudiosupported-property"></a>Propiedad MediaRenderer.IsAudioSupported
 

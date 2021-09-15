@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 2c7d814efbbc77816836d437161390b1e2af60e8bbf4932322dcbd606920be5c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7fc6c41a675bfe560c060e271e4f9f48f88cd58c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118938738"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473699"
 ---
 # <a name="filteraddobject-function"></a>Función FilterAddObject
 
-La **función FilterAddObject** agrega un único objeto a un [*filtro de visualización.*](d.md)
+La **función FilterAddObject** agrega un único objeto a un [*filtro para mostrar.*](d.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ DWORD WINAPI FilterAddObject(
 *hFilter* \[ En\]
 </dt> <dd>
 
-Controle el filtro de visualización.
+Controle el filtro de presentación.
 
 </dd> <dt>
 
@@ -65,17 +65,17 @@ Si la función no se realiza correctamente, el valor devuelto es un código de e
 | Código devuelto                                                                                              | Descripción                                                                  |
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | <dl> <dt>**NMERR \_ INVALID \_ PARAMETER**</dt> </dl> | El *parámetro hFilter* tiene un valor no válido.<br/>                     |
-| <dl> <dt>**MEMORIA DE NMERR \_ \_ FUERA DE LA \_ MEMORIA**</dt> </dl>    | Monitor de red no tiene suficiente memoria para crear el objeto.<br/> |
+| <dl> <dt>**MEMORIA DE NMERR \_ \_ FUERA DE \_ MEMORIA**</dt> </dl>    | Monitor de red no tiene suficiente memoria para crear el objeto.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 [*Los*](e.md) expertos [*y analizadores pueden*](p.md) llamar a **la función FilterAddObject.**
 
-Se **llama a la función FilterAddObject** cada vez que se agrega un objeto de filtro al filtro de presentación. El filtro de presentación es una pila de postfijo de objetos que pueden ser un operador, un valor o una propiedad.
+Se **llama a la función FilterAddObject** cada vez que se agrega un objeto de filtro al filtro para mostrar. El filtro de presentación es una pila de postfijo de objetos que pueden ser un operador, un valor o una propiedad.
 
 ## <a name="requirements"></a>Requisitos
 

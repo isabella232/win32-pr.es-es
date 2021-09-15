@@ -4,12 +4,12 @@ ms.assetid: 20b70981-2437-4f7d-b1b7-ec0e68b8377e
 title: System.Photo.BrightnessDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5a054035072b3a90547551bf47952c077bb25900431c165183e260fdf800392
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 984408d272f1ff7a48a11d4863d2331226263831
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118970174"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468435"
 ---
 # <a name="systemphotobrightnessdenominator"></a>System.Photo.BrightnessDenominator
 
@@ -30,7 +30,7 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

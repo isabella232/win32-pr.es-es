@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1057ba92c641ef68a2179be1af84eaa7350b0c3dcbf338f3bb9d53530d1fed64
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c41ff96907bcd8e8bb7b2e9657f92bf24a1ff495
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118963794"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466656"
 ---
 # <a name="wmaudiosourceurl"></a>WM/AudioSourceURL
 

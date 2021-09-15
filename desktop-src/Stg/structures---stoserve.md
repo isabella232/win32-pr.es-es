@@ -4,12 +4,12 @@ description: COPaper empaqueta el color, el ancho y las coordenadas del lápiz e
 ms.assetid: 25e68c39-5306-4ad6-85dd-a8a5e256abf0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f81b46f2f0a992f27ed405361734fe53db98cf9272697b88866451ef1d7d4b4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a9868f38d7915185b8d3511bd1bf6faa9c7a1e1b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119796895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270583"
 ---
 # <a name="structures---stoserve"></a>Estructuras: StoServe
 
@@ -37,7 +37,7 @@ Estas son las declaraciones para la **estructura INKDATA** de PAPER.H.
   } INKDATA;
 ```
 
-M paInkData, miembro de la clase de implementación  \_ [**IPaper,**](ipaper-methods.md) apunta a la matriz dinámica de estos paquetes INKDATA. La matriz se crea dentro **del método IPaper::InitPaper** con una asignación inicial. Para más información, consulte el **método InitPaper** y el método de utilidad NextSlot privado de la implementación de CImpIPaper en PAPER.H. Los [**métodos InkStart,**](inkstart-method.md) [**InkDraw**](inkdraw-method.md)y [**InkStop**](cguipaper-methods.md) usan NextSlot para obtener ranuras nuevas en la matriz. NextSlot expande dinámicamente la matriz a medida que surge la necesidad.
+M paInkData, miembro de la clase de implementación  \_ [**IPaper,**](ipaper-methods.md) apunta a la matriz dinámica de estos paquetes INKDATA. La matriz se crea dentro **del método IPaper::InitPaper** con una asignación inicial. Para más información, consulte el **método InitPaper** y el método de utilidad NextSlot privado de la implementación de CImpIPaper en PAPER.H. Los [**métodos InkStart,**](inkstart-method.md) [**InkDraw**](inkdraw-method.md)y [**InkStop**](cguipaper-methods.md) usan NextSlot para obtener nuevas ranuras en la matriz. NextSlot expande dinámicamente la matriz a medida que surge la necesidad.
 
 El cliente llama al [**método IPaper::Erase**](ipaper-methods.md) para borrar el dibujo actual. Este método no reallocate la matriz; simplemente marca todos los datos de entrada de lápiz actuales como INKTYPE NONE y restablece el índice de fin de datos de la matriz \_ a cero.
 
@@ -66,11 +66,11 @@ A continuación se muestra **la declaración PAPER \_ PROPERTIES** de PAPER.H.
 
 La **estructura PAPER \_ PROPERTIES** está diseñada para que se puedan agregar nuevos formatos de datos de entrada de lápiz en cualquier momento a medida que evoluciona el componente DllPaper. La [**interfaz IPaper**](ipaper-methods.md) es lo suficientemente general como para que una versión posterior del componente DllPaper pueda almacenar un formato de datos de entrada de lápiz diferente al implementar la misma **interfaz IPaper.** Dado que los métodos de **IPaper** no dependen de un formato de datos de entrada de lápiz específico, una nueva versión del componente DllPaper que admita un formato de datos de entrada de lápiz diferente puede usar esta misma interfaz.
 
-Las propiedades de papel almacenadas en un archivo compuesto registran el tamaño actual de la matriz de datos de entrada de lápiz. A continuación, se puede asignar el tamaño de matriz adecuado para alojar los datos de entrada de lápiz leídos del archivo.
+Las propiedades de papel almacenadas en un archivo compuesto registran el tamaño actual de la matriz de datos ink. Después, se puede asignar el tamaño adecuado de la matriz para alojar los datos de entrada de lápiz leídos del archivo.
 
-La **estructura PAPER PROPERTIES \_ también** almacena el tamaño del rectángulo de dibujo de la superficie de papel y el color de la ventana de fondo.
+La **estructura PROPIEDADES DE \_ PAPEL** también almacena el tamaño del rectángulo de dibujo de la superficie de papel y el color de la ventana de fondo.
 
-Aunque no se usa en **los ejemplos de StoServe** / **StoClien,** también se pueden almacenar un título de dibujo y un nombre de autor.
+Aunque no se usa en los **ejemplos de StoServe** / **StoClien,** también se pueden almacenar un título de dibujo y un nombre de autor.
 
 La fecha de creación y las fechas de última modificación no se incluyen en estas propiedades de papel, ya que la interfaz [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) usada para acceder a archivos compuestos administra esta información.
 

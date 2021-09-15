@@ -4,12 +4,12 @@ ms.assetid: 1772cb6a-3650-4b12-ac80-c8f8d941d206
 title: System.GPS.Satellites
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8041c189b6d962cb89cc7476920e26e1fecf3c8d6a45e9d3018f809c413456b5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2cad34e1f303a38662213197a37378aa6be2bb04
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117866165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468488"
 ---
 # <a name="systemgpssatellites"></a>System.GPS.Satellites
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

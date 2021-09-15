@@ -4,12 +4,12 @@ description: Información general sobre el ciclo de vida de una instancia de vir
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 09/17/2018
 ms.topic: article
-ms.openlocfilehash: bbaaf5eca5481f3959e3e5afeb36a8cf6b264c939e8eb2cc9d84ba501d3c8530
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 567eff1f7b8acf330dba7c652e2e12b724072b9b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117792389"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473634"
 ---
 # <a name="virtualization-instance-lifecycle"></a>Ciclo de vida de la instancia de virtualización
 

@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 4882388b50c34c5a390f9d242503d33b6c11af81238c9a78c4287e1880435506
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8d325c96ea1a292d8ac3afc76bfea619fe5a143
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118107853"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465590"
 ---
 # <a name="swbemservicessubclassesofasync-method"></a>Método SWbemServices.SubclassesOfAsync
 
@@ -53,14 +53,14 @@ SWbemServices.SubclassesOfAsync( _
 *ObjWbemSink* 
 </dt> <dd>
 
-Obligatorio. Receptor de objetos que recibe las subclases de forma asincrónica. Cree un [**objeto SWbemSink**](swbemsink.md) para recibir los objetos .
+Necesario. Receptor de objetos que recibe las subclases de forma asincrónica. Cree un [**objeto SWbemSink**](swbemsink.md) para recibir los objetos.
 
 </dd> <dt>
 
 *strSuperclass* \[ Opcional\]
 </dt> <dd>
 
-Especifica un nombre de clase primaria. En el enumerador solo se devuelven las clases que son subclases de esta clase. Si este parámetro está en blanco y *si iFlags* es **wbemQueryFlagShallow**, solo se devuelven las clases de nivel superior (es decir, las clases que no tienen ninguna clase primaria). Si este parámetro está en blanco y *si iFlags* es **wbemQueryFlagDeep,** se devuelven todas las clases del espacio de nombres .
+Especifica un nombre de clase primaria. Solo se devuelven en el enumerador las clases que son subclases de esta clase. Si este parámetro está en blanco y *si iFlags* es **wbemQueryFlagShallow**, solo se devuelven las clases de nivel superior (es decir, las clases que no tienen ninguna clase primaria). Si este parámetro está en blanco y *iFlags* es **wbemQueryFlagDeep,** se devuelven todas las clases del espacio de nombres .
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Determina la profundidad de la enumeración de llamadas. El valor predeterminado
 
 </dt> <dd>
 
-Obliga a la enumeración a incluir solo subclases inmediatas de la clase primaria especificada.
+Fuerza a la enumeración a incluir solo subclases inmediatas de la clase primaria especificada.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ Valor predeterminado para este parámetro. Este valor fuerza la enumeración rec
 
 </dt> <dd>
 
-Hace que las llamadas asincrónicas envíen actualizaciones de estado al controlador de eventos [**OnProgress**](swbemsink-onprogress.md) para el receptor del objeto.
+Hace que las llamadas asincrónicas envíen actualizaciones de estado al controlador de eventos [**OnProgress**](swbemsink-onprogress.md) para el receptor de objetos.
 
 </dd> <dt>
 
@@ -122,7 +122,7 @@ Impide que las llamadas asincrónicas envíen actualizaciones de estado al contr
 
 </dt> <dd>
 
-Hace que WMI devuelva datos de modificación de clase con la definición de clase base. Para obtener más información, vea [Localización de información de clase WMI](localizing-wmi-class-information.md).
+Hace que WMI devuelva datos de modificación de clase con la definición de clase base. Para obtener más información, vea [Localizing WMI Class Information](localizing-wmi-class-information.md).
 
 </dd> </dl> </dd> <dt>
 
@@ -142,7 +142,7 @@ Objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) que vuelve al receptor de
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método no devuelve ningún valor. Si se realiza correctamente, el receptor recibe un [**evento OnObjectReady**](swbemsink-onobjectready.md) por instancia. Después de la última instancia, el receptor del objeto recibe un [**evento OnCompleted.**](swbemsink-oncompleted.md)
+Este método no devuelve ningún valor. Si se realiza correctamente, el receptor recibe un [**evento OnObjectReady**](swbemsink-onobjectready.md) por instancia. Después de la última instancia, el receptor del objeto recibe [**un evento OnCompleted.**](swbemsink-oncompleted.md)
 
 ## <a name="error-codes"></a>Códigos de error
 
@@ -169,7 +169,7 @@ Error no especificado.
 
 </dd> <dt>
 
-**wbemErrInvalidClass** : 2147749904 (0x80041010)
+**wbemErrInvalidClass:** 2147749904 (0x80041010)
 </dt> <dd>
 
 La clase especificada no existe.
@@ -190,21 +190,21 @@ No hay suficiente memoria para completar la operación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta llamada se devuelve inmediatamente. Los objetos y el estado solicitados se devuelven al autor de la llamada a través de devoluciones de llamada entregadas al receptor especificado en *objWbemSink*. Para procesar cada objeto cuando llega, cree *un objWbemSink*. [**Subrutina de eventos OnObjectReady.**](swbemsink-onobjectready.md) Una vez devueltos todos los objetos, puede realizar el procesamiento final en la implementación de *objWbemSink*. [**Evento OnCompleted.**](swbemsink-oncompleted.md)
+Esta llamada se devuelve inmediatamente. Los objetos y el estado solicitados se devuelven al autor de la llamada a través de devoluciones de llamada entregadas al receptor especificado en *objWbemSink*. Para procesar cada objeto cuando llegue, cree *un objeto objWbemSink*. [**Subrutina de eventos OnObjectReady.**](swbemsink-onobjectready.md) Una vez devueltos todos los objetos, puede realizar el procesamiento final en la implementación de *objWbemSink*. [**Evento OnCompleted.**](swbemsink-oncompleted.md)
 
-Una devolución de llamada asincrónica permite que un usuario no autenticado proporcione datos al receptor. Esto supone riesgos de seguridad para los scripts y las aplicaciones. Para eliminar los riesgos, vea [Establecer la seguridad en una llamada asincrónica.](setting-security-on-an-asynchronous-call.md)
+Una devolución de llamada asincrónica permite a un usuario no autenticado proporcionar datos al receptor. Esto supone riesgos de seguridad para los scripts y las aplicaciones. Para eliminar los riesgos, vea [Establecer la seguridad en una llamada asincrónica.](setting-security-on-an-asynchronous-call.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemServices<br/>                                                         |
@@ -212,7 +212,7 @@ Una devolución de llamada asincrónica permite que un usuario no autenticado pr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

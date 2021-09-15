@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 9e0bcfe22c4a083d93faf27591d56bc6a43f3bd7d61afc386957cb5ec5807c15
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 10dcfa5ccf572b2a8dd5672f973b924a2a840b96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118966764"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467963"
 ---
 # <a name="stationerytype-complex-type"></a>Tipo complejo StationeryType
 
@@ -33,7 +33,7 @@ Define el tipo que contiene la papelería utilizada por la nota de diario.
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio xp Tablet PC \[ Edition\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                     |
 
 

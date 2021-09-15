@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: eb12c2273bb22af2df9f76c6606cad69223fa04292e0d556a65d4898bc968c75
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd4357485dce3f3d236f31797d8b2df7028f3d65
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119093129"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468237"
 ---
 # <a name="folderitemislink-property"></a>Propiedad FolderItem.IsLink
 
@@ -41,7 +41,7 @@ Valor **booleano** que recibe **true** si el elemento es un acceso directo o **f
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa IsLink** para determinar si un objeto determinado es un vínculo. En este caso, el objeto es un acceso directo para Internet Explorer, por lo que debe devolver **true**. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa IsLink** para determinar si un objeto determinado es un vínculo. En este caso, el objeto es un acceso directo a Internet Explorer, por lo que debe devolver **true**. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -146,12 +146,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

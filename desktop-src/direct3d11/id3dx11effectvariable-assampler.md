@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a6c71e8e2cdc89860c8edf82a0c008c03f4a154ab23cee882ed1e9eaaad2939
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a1213320950377f6981348a158c3d8c8ef4d4fd0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119894605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465561"
 ---
 # <a name="id3dx11effectvariableassampler-method"></a>Método ID3DX11EffectVariable::AsSampler
 
@@ -47,7 +47,7 @@ Tipo: **[ **ID3DX11EffectSamplerVariable**](id3dx11effectsamplervariable.md)\***
 
 Puntero a una variable sampler. Vea [**ID3DX11EffectSamplerVariable.**](id3dx11effectsamplervariable.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 AsSampler devuelve una versión de la variable de efecto que se ha especializado en una variable sampler. De forma similar a una conversión, esta especialización devolverá un objeto no válido si la variable de efecto no contiene datos de sampler.
 
@@ -69,7 +69,7 @@ Las aplicaciones pueden probar la validez del objeto devuelto llamando a [**IsVa
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

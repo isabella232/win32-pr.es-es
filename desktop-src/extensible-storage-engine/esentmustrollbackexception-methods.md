@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102278
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 4de4ee86576ff56b512d8e733aef199a4a805788d52732e5aeb3df6bbacf67c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 33ddb2201ff3d4c9b46478be15fc3f0558b4dbfc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119115405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465941"
 ---
 # <a name="esentmustrollbackexception-methods"></a>Métodos de EsentMustRollbackException 
 

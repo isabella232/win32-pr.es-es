@@ -13,12 +13,12 @@ keywords:
 - tipos de datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39ea76358f3a547b4364d01f56e850d0cbb523fc35dfbaa2870448f70c6ad5ae
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b12ade30398f8fbeb43336707f66a0709dfab83d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120098125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465982"
 ---
 # <a name="best-practices-for-using-safe-arrays"></a>Procedimientos recomendados para usar Caja fuerte matrices
 
@@ -28,7 +28,7 @@ Muchos métodos de interfaz de microsoft Automatización de la interfaz de usuar
 
 Todas las matrices seguras que se usan con Automatización de la interfaz de usuario api de cliente son matrices unidimensionales de base cero. Para crear una matriz segura para un método de cliente de Automatización de la interfaz de usuario, use la función [**SafeArrayCreateVector**](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-safearraycreatevector) y, para leer y escribir en una matriz segura, use las funciones [**SafeArrayGetElement**](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-safearraygetelement) y [**SafeArrayPutElement.**](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-safearrayputelement) Cuando termine de usar una matriz segura, debe destruirla siempre mediante la función [**SafeArrayDestroy,**](/windows/desktop/api/oleauto/nf-oleauto-safearraydestroy) tanto si creó la matriz segura como si la recibió de un método Automatización de la interfaz de usuario cliente.
 
-Varios Automatización de la interfaz de usuario, incluidos los métodos de recuperación de propiedades, [**como GetCurrentPropertyValue,**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcurrentpropertyvalue)recuperan [**VARIANT**](/windows/win32/api/oaidl/ns-oaidl-variant)s que pueden contener [**estructuras POINT**](/previous-versions//dd162805(v=vs.85)) [**o UiaRect.**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiarect) Un **point** se empaqueta en **una variant** como una matriz segura de dobles (VT R8) con el miembro x en el índice 0 y el miembro y en el índice \_ 1.   De forma similar,  un **UiaRect** se empaqueta en **una variant** como una matriz segura de dobles con los miembros izquierdos **,** **superior,** ancho y alto en los índices del 0 al 3, respectivamente. Para una matriz de **estructuras UiaRect,** la matriz segura contiene una matriz secuencial de cuatro dobles para cada **UiaRect**. Los **miembros** izquierdos ,   **superior,** ancho y alto del primer **UiaRect** ocupan el índice 0 a 3, los miembros del segundo rectángulo ocupan el índice 4 a 7, etc.
+Varios Automatización de la interfaz de usuario, incluidos los métodos de recuperación de propiedades, [**como GetCurrentPropertyValue,**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-getcurrentpropertyvalue)recuperan [**VARIANT**](/windows/win32/api/oaidl/ns-oaidl-variant)s que pueden contener [**estructuras POINT**](/previous-versions//dd162805(v=vs.85)) [**o UiaRect.**](/windows/desktop/api/UIAutomationCore/ns-uiautomationcore-uiarect) Un **POINT** se empaqueta en **una variant** como una matriz segura de dobles (VT R8) con el miembro x en el índice 0 y el miembro y en el índice \_ 1.   De forma similar,  un **UiaRect** se empaqueta en **una variant** como una matriz segura de dobles con los miembros izquierdos **,** **superior,** ancho y alto en los índices del 0 al 3, respectivamente. Para una matriz de **estructuras UiaRect,** la matriz segura contiene una matriz secuencial de cuatro dobles para cada **UiaRect**. Los **miembros** izquierdos ,   **superior,** ancho y alto del primer **UiaRect** ocupan el índice 0 a 3, los miembros del segundo rectángulo ocupan el índice 4 a 7, etc.
 
 La [**interfaz IUIAutomation**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomation) incluye los métodos siguientes para convertir [**entre SAFEARRAY**](/windows/win32/api/oaidl/ns-oaidl-safearray) y otros tipos de datos.
 

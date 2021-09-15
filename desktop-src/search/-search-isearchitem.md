@@ -12,18 +12,18 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: de3769f869838cd3a6660229a452ea7fbd96f943ac7421523c523662da205dac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c6c0fd5b534c13f8fae2e6759645ac812fc3986c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117863963"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360654"
 ---
 # <a name="isearchitem-interface"></a>Interfaz ISearchItem
 
 Proporciona métodos que definen la interacción entre una interfaz de usuario (UI) y los objetos de espacio de nombres Search creados por el indexador.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ISearchItem** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **ISearchItem** también tiene estos tipos de miembros:
 
@@ -44,7 +44,7 @@ La **interfaz ISearchItem** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 [**ISearchItem::GetParentFolder**](-search-isearchitem-getparentfolder.md) solo se admite en Windows XP y Windows Server 2003 y ya no se debe usar.
 

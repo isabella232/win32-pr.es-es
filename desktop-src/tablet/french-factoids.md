@@ -5,11 +5,11 @@ title: Factoids en francés
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a5eef204a20049902f52601d2ce007ba2c2090af
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122622911"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468007"
 ---
 # <a name="french-factoids"></a>Factoids en francés
 
@@ -34,7 +34,7 @@ En la tabla siguiente se enumeran los formatos disponibles para cada factoid usa
 <tr class="odd">
 <td><strong>Moneda</strong></td>
 <td>Moneda en dólares, dólares, dólares y yenes escritos en francés.<br/></td>
-<td>1.234  <br/> 1.234,50  <br/> 123  <br/> 0,25  <br/> 1 234,50  <br/>   1.234<br/>   1.234,50<br/>   123<br/>   0,25<br/>   1 234,50<br/> 123.456.789,00 EUR<br/> 1,234 $<br/> 1,234,50 $<br/> 123 $<br/> 0,25 $<br/> 123 456 789,00 EUR<br/> 1 234 $<br/> 1 234,50 $<br/> 123.456.789,00 EUR<br/> 1,234 USD<br/> 1,234,50 $<br/> 123 USD<br/> 0,25 USD<br/> 123 456 789,00<br/> 1 234 USD<br/> 1 234 50 USD<br/> 12 K <br/>   12 K<br/> 12 cts<br/> 1 ct<br/>
+<td>1.234  <br/> 1.234,50  <br/> 123  <br/> 0,25  <br/> 1 234,50  <br/>   1.234<br/>   1.234,50<br/>   123<br/>   0,25<br/>   1 234,50<br/> 123.456.789,00 EUR<br/> 1,234 $<br/> 1,234,50 $<br/> 123 $<br/> 0,25 $<br/> 123 456 789,00 EUR<br/> 1 234 $<br/> 1 234,50 $<br/> 123.456.789,00 EUR<br/> 1,234 USD<br/> 1,234,50 USD<br/> 123 USD<br/> 0,25 USD<br/> 123 456 789,00<br/> 1 234 USD<br/> 1 234 50 USD<br/> 12 K <br/>   12 K<br/> 12 cts<br/> 1 ct<br/>
 <blockquote>
 [!Note]<br />
 Los ejemplos anteriores que usan $ también funcionarán con y .
@@ -48,7 +48,7 @@ Los ejemplos anteriores que usan $ también funcionarán con y .
 </tr>
 <tr class="odd">
 <td><strong>Number</strong></td>
-<td>Todos los números, incluidos los sufijos comunes, como mm y kg, y los símbolos matemáticos. Los formatos factoid DATE, TIME, TELEPHONE y CURRENCY también se incluyen en este factoid.<br/></td>
+<td>Todos los números, incluidos sufijos comunes, como mm y kg, y símbolos matemáticos. Los formatos factoid DATE, TIME, TELEPHONE y CURRENCY también se incluyen en este factoid.<br/></td>
 <td>123<br/> -123.456<br/> 25 Km<br/> 300 kilos<br/> 10 Ko<br/> 1 mes<br/> 21<br/> 25 %<br/> (1+3)/5<br/> 1+1=2<br/></td>
 </tr>
 <tr class="even">
@@ -78,7 +78,7 @@ En el Estados Unidos no hay espacio entre el número y el símbolo %; sin embarg
 </tr>
 <tr class="even">
 <td><strong>Time</strong></td>
-<td>Hora tal como está escrita en francés.<br/></td>
+<td>Hora escrita en francés.<br/></td>
 <td>15h20<br/> 16H30<br/> 2h39<br/> 10:30<br/> 12:05:25<br/> 16 h<br/> 17 H<br/> 19h01<br/> 19:30 h<br/> 22:05 H<br/></td>
 </tr>
 <tr class="odd">

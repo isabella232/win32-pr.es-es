@@ -4,16 +4,16 @@ description: Anotación de mapa de valores
 ms.assetid: f7c9304a-0eed-4a73-ab06-56723f3cfa5d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32f378742ce01458d930ee510baf4c6317f2e182cdd41642c4d22928d9777fe4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8d21b04374344475689989c2570af6975dc97c13
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119052248"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467916"
 ---
 # <a name="value-map-annotation"></a>Anotación de mapa de valores
 
-Con la anotación de mapa de valores, puede usar una cadena de asignación para indicar cómo el índice de imagen de un elemento en una vista de lista o vista de árbol corresponde a su rol o estado. Por ejemplo, una cadena de asignación puede indicar que el índice de imagen 0 de una vista de lista se asigna a un rol de , mientras que el índice de imagen 1 se asigna a un rol de botón de radio.
+Con la anotación de mapa de valores, puede usar una cadena de asignación para indicar cómo el índice de imagen de un elemento en una vista de lista o vista de árbol corresponde a su rol o estado. Por ejemplo, una cadena de asignación puede indicar que el índice de imagen 0 de una vista de lista se asigna a un rol de casilla, mientras que el índice de imagen 1 se asigna a un rol de botón de radio.
 
 También puede usar la anotación de mapa de valores para especificar cadenas que se asignan a los valores numéricos en un control deslizante.
 
@@ -43,14 +43,14 @@ Dado que el conocimiento específico del control es necesario para admitir la as
 
 ## <a name="list-view-and-tree-view"></a>Vista de lista y vista de árbol
 
-**PROPID \_ ACC \_ ROLEMAP,** **PROPID \_ ACC \_ STATEMAP** y **PROPID ACC \_ \_ DESCRIPTONMAP** proporcionan asignaciones de índices de imagen de estado a valores de rol y estado. Estas asignaciones permiten asignar esos índices de imagen a los roles adecuados (normalmente [**ROLE \_ SYSTEM \_ RADIOBUTTON**](object-roles.md) o [**ROLE SYSTEM \_ \_ CHECKBUTTON)**](object-roles.md)y bits de estado adicionales (normalmente [**STATE SYSTEM \_ \_ CHECKED**](object-state-constants.md)).
+**PROPID \_ ROLEMAP \_ de ACC,** **PROPID \_ ACC \_ STATEMAP** y **PROPID \_ ACC \_ DESCRIPTONMAP** proporcionan asignaciones de índices de imagen de estado a valores de rol y estado. Estas asignaciones permiten asignar esos índices de imagen a los roles adecuados (normalmente [**ROLE \_ SYSTEM \_ RADIOBUTTON**](object-roles.md) o [**ROLE SYSTEM \_ \_ CHECKBUTTON)**](object-roles.md)y bits de estado adicionales (normalmente [**STATE SYSTEM \_ \_ CHECKED**](object-state-constants.md)).
 
 Para obtener más información sobre la anotación de mapa de valores, vea los temas siguientes:
 
 -   [Usar anotación de mapa de valores](using-value-map-annotation.md)
 -   [Ejemplo de anotación de mapa de valores](value-map-annotation-sample.md)
 
-## <a name="annotation-map-format"></a>Formato de mapa de anotaciones
+## <a name="annotation-map-format"></a>Formato del mapa de anotaciones
 
 En la tabla siguiente se describen los campos que se incluyen en un mapa de anotaciones.
 
@@ -59,8 +59,8 @@ En la tabla siguiente se describen los campos que se incluyen en un mapa de anot
 | Campo               | Descripción                                                                                                                                                                                                                                                                   |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 'A'                 | Indica que se usa un esquema de codificación determinado. Es posible que se admiten prefijos adicionales para esquemas de codificación futuros.                                                                                                                                                          |
-| Carácter delimitador | Normalmente, dos puntos (:) se usa, pero puede ser otro carácter excepto **NULL** o un espacio vacío. Dado que este carácter se usará como delimitador para los campos restantes, no se puede usar como parte de un valor en el mapa.                                               |
-| 0, 1 o 2          | Valor que indica qué clave se está utilizando. Para los roles Vista de árbol y Vista de lista y mapas de estado, esta clave puede ser 0 (índice de imagen), 1 (índice de imagen de estado) o 2 (índice de imagen superpuesta). Para los controles deslizantes y otros controles que no ofrecen una opción de claves, este valor debe ser 0. |
+| Carácter delimitador | Normalmente, dos puntos (:) se usa, pero puede ser otro carácter excepto **NULL** o un espacio vacío. Dado que este carácter se usará como delimitador para los campos restantes, puede que no se utilice como parte de un valor en el mapa.                                               |
+| 0, 1 o 2          | Valor que indica qué clave se está utilizando. Para los roles Vista de árbol y Vista de lista y Mapas de estado, esta clave puede ser 0 (índice de imagen), 1 (índice de imagen de estado) o 2 (índice de imagen superpuesta). Para los controles deslizantes y otros controles que no ofrecen una opción de claves, este valor debe ser 0. |
 | Carácter delimitador | :                                                                                                                                                                                                                                                                             |
 | Pares clave-valor     | Cada par consta de una cadena de clave y un carácter delimitador. La cadena de clave es un número y puede estar en formato decimal o hexadecimal (con un prefijo "0x" inicial).                                                                                                            |
 | Cadena de valor        | En el caso de las asignaciones de valores, se trata de una cadena. En el caso de las asignaciones de roles y estados, se trata de un número (decimal o hexadecimal).                                                                                                                                                                         |

@@ -1,25 +1,25 @@
 ---
-description: Los componentes bien escritos no perturban el entorno de la aplicación de hospedaje ni pierden contextos de activación.
+description: Los componentes bien escritos no tienen en cuenta el entorno de la aplicación de hospedaje ni pierden contextos de activación.
 ms.assetid: cc3e21fd-5fd3-40b6-9218-cb5f47be3567
 title: Aislar componentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 411d5e90114b7509dff2e5e48a4770841774df52fce804895155d2bd4d43e514
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e201375f50324209380a4ecef5fa762ae70e56d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119885195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271495"
 ---
 # <a name="isolating-components"></a>Aislar componentes
 
-Los componentes bien escritos no perturban el entorno de la aplicación de hospedaje ni pierden contextos de activación. Los componentes bien escritos realizan su propia administración de contexto en lugar de depender del entorno de la aplicación de hospedaje.
+Los componentes bien escritos no tienen en cuenta el entorno de la aplicación de hospedaje ni pierden contextos de activación. Los componentes bien escritos realizan su propia administración de contexto en lugar de depender del entorno de la aplicación de hospedaje.
 
-El autor del componente hospedado está en la mejor posición para saber exactamente qué otros ensamblados requiere el componente. Confiar en la aplicación host para proporcionar el entorno correcto para el componente hospedado es un origen probable de errores. En su lugar, cree un manifiesto para el componente hospedado que especifique todas sus dependencias y, a continuación, compile con ISOLATION \_ AWARE \_ ENABLED. Esto garantiza que las llamadas externas realizadas por el componente estén aisladas y usen las versiones correctas. Dado que el contexto de activación que utiliza ISOLATION AWARE ENABLED es por DLL, es seguro usarlo en varios archivos DLL, cada uno con su propio manifiesto que llama \_ \_ a dependencias.
+El autor del componente hospedado está en la mejor posición para saber exactamente qué otros ensamblados requiere el componente. Confiar en la aplicación host para proporcionar el entorno correcto para el componente hospedado es un origen probable de errores. En su lugar, cree un manifiesto para el componente hospedado que especifique todas sus dependencias y, a continuación, compile con ISOLATION \_ AWARE \_ ENABLED. Esto garantiza que las llamadas externas realizadas por el componente estén aisladas y usen las versiones correctas. Dado que el contexto de activación que UTILIZA ISOLATION AWARE ENABLED es por DLL, es seguro usarlo en varios archivos DLL, cada uno con su propio manifiesto que llama a las \_ \_ dependencias.
 
 Si no es posible compilar con ISOLATION AWARE ENABLED, use una solución como la presentada en \_ \_ Using [Callbacks From Hosted Components](using-callbacks-from-hosted-components.md).
 
-Debe activar su propio contexto de activación en todos los puntos de entrada a los que puede llamar la aplicación de hospedaje para asegurarse de que el componente hospedado se ejecuta completamente con el contexto de activación correcto. Puede usar un objeto auxiliar de C++ para facilitar el cambio de todos los puntos de entrada. Por ejemplo, podría usar una clase de C++, como la siguiente:
+Debe activar su propio contexto de activación en todos los puntos de entrada a los que puede llamar la aplicación host para asegurarse de que el componente hospedado se ejecuta completamente con el contexto de activación correcto. Puede usar un objeto auxiliar de C++ para facilitar el cambio de todos los puntos de entrada. Por ejemplo, podría usar una clase de C++ como la siguiente:
 
 
 ```C++

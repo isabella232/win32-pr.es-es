@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Shdocvw.dll
-ms.openlocfilehash: 27d2e304cf3a67f522bbeec4835f5faa98b24d1509363873bb51387391f94b1b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cb2f4639d97a99cd063f372e303fd48b7a1d6e4d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117676717"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468080"
 ---
 # <a name="shellddeinit-function"></a>Función ShellDDEInit
 
@@ -52,11 +52,11 @@ Tipo: **BOOL**
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El proceso que llama a esta función actúa como shell y se usa para ver el contenido de las carpetas abiertas con el verbo "open" de [**ShellExecute.**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea)
+El proceso que llama a esta función actúa como Shell y se usa para ver el contenido de las carpetas abiertas con el verbo [**"open" de ShellExecute.**](/windows/desktop/api/Shellapi/nf-shellapi-shellexecutea)
 
-Esta función no tiene un archivo de encabezado o biblioteca asociado, por lo que debe llamarse mediante un valor ordinal. Llame [**a LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) con el nombre dll (Shdocvw.dll) para obtener un identificador de módulo. A [**continuación, llame a GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) con ese identificador de módulo y el número ordinal 118 de la función para obtener la dirección de la función.
+Esta función no tiene un archivo de encabezado o biblioteca asociado, por lo que debe llamarse mediante un valor ordinal. Llame [**a LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) con el nombre dll (Shdocvw.dll) para obtener un identificador de módulo. A [**continuación,**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) llame a GetProcAddress con ese identificador de módulo y el número ordinal 118 de la función para obtener la dirección de la función.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ Esta función no tiene un archivo de encabezado o biblioteca asociado, por lo qu
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional aplicaciones \[ de escritorio\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional \[ aplicaciones de escritorio\]<br/>                                        |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
 | Archivo DLL<br/>                      | <dl> <dt>Shdocvw.dll (versión 6.0 o posterior)</dt> </dl> |
 

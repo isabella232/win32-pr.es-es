@@ -1,7 +1,7 @@
 ---
-description: Especifica si un usuario puede crear un perfil de todos los usuarios.
+description: Especifica si un usuario puede crear un perfil de usuario único.
 ms.assetid: b9bdfe85-b9d5-4dcc-a7f8-05cce9702ec3
-title: Elemento allowEveryoneToCreateAllUserProfiles (Indicadores_globales)
+title: elemento allowEveryoneToCreateAllUserProfiles (globalFlags)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,19 +13,19 @@ api_type:
 - Schema
 api_location: ''
 ms.openlocfilehash: 63bc4c76ccecd8c7f774dc0e73621ef3f9b19877
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104541046"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473715"
 ---
-# <a name="alloweveryonetocreatealluserprofiles-globalflags-element"></a>Elemento allowEveryoneToCreateAllUserProfiles (Indicadores_globales)
+# <a name="alloweveryonetocreatealluserprofiles-globalflags-element"></a>elemento allowEveryoneToCreateAllUserProfiles (globalFlags)
 
-El elemento **allowEveryoneToCreateAllUserProfiles** (indicadores_globales) especifica si un usuario puede crear un perfil de todos los usuarios. Cualquier usuario del equipo puede usar un perfil de todos los usuarios para conectarse a la red inalámbrica asociada al perfil.
+El **elemento allowEveryoneToCreateAllUserProfiles** (globalFlags) especifica si un usuario puede crear un perfil de usuario completo. Cualquier usuario de la máquina puede usar un perfil de todos los usuarios para conectarse a la red inalámbrica asociada al perfil.
 
-Si **allowEveryoneToCreateAllUserProfiles** es true, el usuario puede crear un perfil de todos los usuarios. Si **allowEveryoneToCreateAllUserProfiles** es false, no todos los usuarios pueden crear un perfil de todos los usuarios y existe una DACL asociada al \_ \_ objeto de seguridad agregar nuevo todos los perfiles de usuario de la WLAN \_ \_ \_ \_ que especifica los usuarios o grupos de usuarios con permiso para crear perfiles de todos los usuarios. La DACL predeterminada especifica que solo los usuarios que han iniciado sesión como miembro del grupo administradores pueden crear un perfil de todos los usuarios. La configuración de seguridad predeterminada se puede cambiar mediante una llamada a [**WlanSetSecuritySettings**](/windows/desktop/api/wlanapi/nf-wlanapi-wlansetsecuritysettings). Para obtener la configuración de seguridad actual, llame a [**WlanGetSecuritySettings**](/windows/desktop/api/wlanapi/nf-wlanapi-wlangetsecuritysettings).
+Si **allowEveryoneToCreateAllUserProfiles** es TRUE, cualquier usuario puede crear un perfil de todos los usuarios. Si **allowEveryoneToCreateAllUserProfiles** es FALSE, no todos los usuarios pueden crear un perfil de usuario completo y hay una DACL asociada con el objeto de seguridad agregar todos los perfiles de usuario nuevos que especifique los usuarios o grupos de usuarios con permiso para crear perfiles de todos los \_ \_ \_ \_ \_ \_ usuarios. La DACL predeterminada especifica que solo los usuarios que han iniciado sesión como miembros del grupo Administradores pueden crear un perfil de todos los usuarios. La configuración de seguridad predeterminada se puede cambiar mediante una llamada [**a WlanSetSecuritySettings**](/windows/desktop/api/wlanapi/nf-wlanapi-wlansetsecuritysettings). Para obtener la configuración de seguridad actual, llame [**a WlanGetSecuritySettings**](/windows/desktop/api/wlanapi/nf-wlanapi-wlangetsecuritysettings).
 
-Este elemento es obligatorio. Cuando el servicio de configuración automática crea un perfil, este elemento tendrá el valor predeterminado TRUE.
+Este elemento es obligatorio. Cuando el servicio AutoConfig crea un perfil, este elemento tendrá el valor predeterminado TRUE.
 
 ``` syntax
 <xs:element name="allowEveryoneToCreateAllUserProfiles"
@@ -33,7 +33,7 @@ Este elemento es obligatorio. Cuando el servicio de configuración automática c
  />
 ```
 
-El elemento **allowEveryoneToCreateAllUserProfiles** se define mediante el elemento [**indicadores_globales**](wlan-policyschema-globalflags-wlanpolicy-element.md) .
+El elemento [**globalFlags**](wlan-policyschema-globalflags-wlanpolicy-element.md) define el elemento **allowEveryoneToCreateAllUserProfiles.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,8 +41,8 @@ El elemento **allowEveryoneToCreateAllUserProfiles** se define mediante el eleme
 
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
@@ -53,13 +53,13 @@ El elemento **allowEveryoneToCreateAllUserProfiles** se define mediante el eleme
 **Contexto de definición del elemento en el esquema**
 </dt> <dt>
 
-[**Indicadores**](wlan-policyschema-globalflags-wlanpolicy-element.md)
+[**globalFlags**](wlan-policyschema-globalflags-wlanpolicy-element.md)
 </dt> <dt>
 
 **Posible elemento primario inmediato en la instancia de esquema**
 </dt> <dt>
 
-[**Indicadores_globales (WLANPolicy)**](wlan-policyschema-globalflags-wlanpolicy-element.md)
+[**globalFlags (WLANPolicy)**](wlan-policyschema-globalflags-wlanpolicy-element.md)
 </dt> </dl>
 
  

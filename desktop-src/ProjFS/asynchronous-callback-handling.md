@@ -4,12 +4,12 @@ description: Describe cómo el proveedor puede realizar devoluciones de llamada 
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 10/12/2018
 ms.topic: article
-ms.openlocfilehash: f2262e803d1ee3d071538dc6e520517c6fd7b800c4d7fdc4a7404748b9f9f0dc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8ec23f5ea6e8ec55be2eaa2811d9dee8b1870edc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120127955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473647"
 ---
 # <a name="asynchronous-callback-handling"></a>Control asincrónico de devolución de llamada
 
@@ -19,13 +19,13 @@ Cuando un cliente interactúa con los archivos y directorios debajo de la raíz 
 >
 > Si el proveedor no especifica el parámetro _options_ en **PrjStartVirtualizing** o si especifica 0 para el miembro PoolThreadCount del parámetro _options,_ ProjFS usará el doble del valor de ConcurrentThreadCount para el valor de PoolThreadCount.
 
-Los servicios de proveedor devuelven devoluciones de llamada de forma asincrónica HRESULT_FROM_WIN32(ERROR_IO_PENDING) de sus devoluciones de llamada y, posteriormente, las completan **[mediante PrjCompleteCommand](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjcompletecommand)**.  Un proveedor que procesa las devoluciones de llamada de forma asincrónica también debe admitir la cancelación de devolución de llamada mediante la implementación de PRJ_CANCEL_COMMAND_CB **[de](/windows/desktop/api/projectedfslib/nc-projectedfslib-prj_cancel_command_cb)** llamada.
+Los servicios de proveedor devuelven devoluciones de llamada de forma asincrónica HRESULT_FROM_WIN32(ERROR_IO_PENDING) de sus devoluciones de llamada y, posteriormente, las completan **[mediante PrjCompleteCommand](/windows/desktop/api/projectedfslib/nf-projectedfslib-prjcompletecommand)**.  Un proveedor que procesa las devoluciones de llamada de forma asincrónica también debe admitir la cancelación de devolución de llamada implementando la **[devolución PRJ_CANCEL_COMMAND_CB](/windows/desktop/api/projectedfslib/nc-projectedfslib-prj_cancel_command_cb)** de llamada.
 
 Cuando ProjFS llama a la devolución de llamada de un proveedor, identifica la invocación específica de la devolución de llamada mediante el miembro CommandId del parámetro _callbackData_ de la devolución de llamada.  Si el proveedor decide procesar esa devolución de llamada de forma asincrónica, debe almacenar el valor del miembro CommandId y devolver HRESULT_FROM_WIN32(ERROR_IO_PENDING) de la devolución de llamada.  Una vez que el proveedor ha terminado de procesar la devolución de llamada, llama a **PrjCompleteCommand** y pasa el identificador almacenado en el _parámetro commandId._  Esto indica a ProjFS qué invocación de devolución de llamada se ha completado.
 
 Un proveedor que implementa la devolución **PRJ_CANCEL_COMMAND_CB** de llamada debe realizar un seguimiento de las devoluciones de llamada que aún no ha completado.  Si el proveedor recibe esta devolución de llamada, indica que se canceló la E/S que hizo que se invocara una de esas devoluciones de llamada, ya sea explícitamente o porque el subproceso que se emitió al finalizar. El proveedor debe cancelar el procesamiento de la invocación de devolución de llamada identificada por CommandId lo antes posible.
 
-> Aunque ProjFS invocará **PRJ_CANCEL_COMMAND_CB** para un CommandId determinado solo después de invocar la devolución de llamada que se va a cancelar, la cancelación y la invocación original se pueden ejecutar simultáneamente en un proveedor multiproceso.  El proveedor debe ser capaz de controlar correctamente esta situación.
+> Aunque ProjFS invocará **PRJ_CANCEL_COMMAND_CB** para un CommandId determinado solo después de invocar la devolución de llamada que se va a cancelar, la cancelación y la invocación original pueden ejecutarse simultáneamente en un proveedor multiproceso.  El proveedor debe ser capaz de controlar correctamente esta situación.
 
 El ejemplo siguiente es una versión del ejemplo que se proporciona para el tema [Enumerating Files and Directories (Enumerando](enumerating-files-and-directories.md) archivos y directorios), modificado para ilustrar el control asincrónico de devolución de llamada.
 

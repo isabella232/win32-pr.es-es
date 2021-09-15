@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Definir una clase del Registro con calificadores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f42e3c383a5d71d66c88f388aa1745f8a8324568a7fd85ac0f48e5e2cff30e5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f45fdff611814eadbf57eabedf7444d098666918
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117925231"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270367"
 ---
 # <a name="defining-a-registry-class-with-qualifiers"></a>Definir una clase del Registro con calificadores
 

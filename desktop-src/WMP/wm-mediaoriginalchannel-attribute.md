@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c66f8808ea22e8c8efa5d43e2cd68b9dd0ea2a46a941046b9681089ba665790
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fd3a8f6fb860f5256d21bb0b9842855b55f1a748
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119053873"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466391"
 ---
 # <a name="wmmediaoriginalchannel-attribute"></a>Atributo WM/MediaOriginalChannel
 
@@ -27,7 +27,7 @@ El **atributo WM/MediaOriginalChannel** especifica el canal en el que se difundi
 
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La Windows SDK de formato multimedia para este atributo es g \_ wszWMMediaOriginalChannel.
 
@@ -37,13 +37,13 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 10 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ description: Especificar puntos de conexión conocidos y dinámicos en llamada a
 ms.assetid: fc39b527-11e6-45a7-b3b5-8bcf469633d8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ff73f13f752e42917353a217f5a2fcfa8d1fcfa9dc60edf585c42d72b0d306e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 373fb2818dd14670f5a939aa524c81fcdb05e20b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120017615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473514"
 ---
 # <a name="specifying-endpoints"></a>Especificar puntos de conexión
 
@@ -22,7 +22,7 @@ Un punto de conexión es una dirección específica de la red de un proceso de s
 
 Cuando el servidor usa un punto de conexión conocido, puede incluir los datos del punto de conexión como parte de su entrada de base de datos de servicio de nombre. Si lo hace, el identificador de enlace del cliente contiene una dirección de servidor completa que incluye el punto de conexión conocido cuando el cliente importa el identificador de enlace de la entrada del servidor.
 
-El programa de servidor también puede especificar puntos de conexión conocidos al mismo tiempo que especifica secuencias de protocolo. Invoque [**la función RpcServerUseProtseqEp**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserveruseprotseqep) o [**RpcServerUseProtseqEpEx.**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserveruseprotseqepex) La diferencia entre ambos es que la última función tiene un parámetro adicional que el servidor puede usar para controlar la asignación dinámica de puertos.
+El programa de servidor también puede especificar puntos de conexión conocidos al mismo tiempo que especifica secuencias de protocolo. Invoque [**la función RpcServerUseProtseqEp**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserveruseprotseqep) o [**RpcServerUseProtseqEpEx.**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcserveruseprotseqepex) La diferencia entre ambas es que la última función tiene un parámetro adicional que el servidor puede usar para controlar la asignación dinámica de puertos.
 
 Si el programa de servidor especifica su información de punto de conexión de esta manera, también debe llamar a la [**función RpcEpRegister**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcepregister) para registrar el punto de conexión en la asignación del punto de conexión. Aunque el punto de conexión siempre es el mismo, el cliente puede usar la asignación de punto de conexión para buscar el servidor.
 

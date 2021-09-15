@@ -11,23 +11,23 @@ keywords:
 - ASF (formato de sistemas avanzados), reproducción de archivos desde orígenes de red
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8473a2feb4edd567c15d640dfd20e65c2893fe12de6c25a957cc5f730fde0baf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f1e4e41ddf94498ddeddf90e64439c1b11b7ba8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119027383"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467070"
 ---
 # <a name="playing-files-from-a-network-source"></a>Reproducir archivos desde un origen de red
 
-Leer desde una red no es fundamentalmente diferente de leer un archivo local. La aplicación pasa la dirección URL al método [**IWMReader::Open**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreader-open) del objeto lector y el objeto reader controla los detalles de los protocolos de red. El objeto lector usa la administración de búfer inteligente para proporcionar la reproducción más fluida posible. Si la aplicación necesita más control sobre la configuración de red del objeto lector, están disponibles a través de las interfaces [**IWMReaderNetworkConfig**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreadernetworkconfig) e [**IWMReaderNetworkConfig2.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreadernetworkconfig2)
+Leer desde una red no es fundamentalmente diferente de leer un archivo local. La aplicación pasa la dirección URL al método [**IWMReader::Open**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreader-open) del objeto lector y el objeto reader controla los detalles de los protocolos de red. El objeto lector usa la administración de búfer inteligente para proporcionar la reproducción más fluida posible. Si la aplicación necesita más control sobre la configuración de red del objeto de lector, están disponibles a través de las interfaces [**IWMReaderNetworkConfig**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreadernetworkconfig) e [**IWMReaderNetworkConfig2.**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmreadernetworkconfig2)
 
 El contenido de un origen de red se divide en una de las dos categorías siguientes:
 
 -   Streaming. Los datos se transmiten justo a tiempo para reproducirse en la máquina local. Los servidores que Servicios de Windows Media pueden proporcionar datos de streaming. Si se transmite contenido de velocidad de bits múltiple (MBR), el cliente puede solicitar una velocidad de bits diferente al servidor a medida que avanza el streaming.
 -   Descargó. Todos los datos se transmiten lo más rápido posible para que se puedan guardar como un archivo en el equipo local. Los servidores web proporcionan datos descargados. No hay ninguna comunicación del cliente con el servidor después de que comience la descarga.
 
-Cuando el objeto de lector descarga un archivo de un servidor web, usa una técnica denominada streaming progresiva, que permite a un reproductor empezar a representar el contenido antes de que se complete la descarga. Los datos se almacena en búfer para proporcionar un flujo ininterrumpido de datos al reproductor. Información como la velocidad de transferencia y la duración del contenido se usa para determinar cuánto tiempo se almacenarán en búfer los datos antes de entregarlo al jugador.
+Cuando el objeto de lector descarga un archivo de un servidor web, usa una técnica denominada streaming progresiva, que permite a un reproductor empezar a representar el contenido antes de que se complete la descarga. Los datos se almacena en búfer para proporcionar un flujo ininterrumpido de datos al reproductor. Información como la velocidad de transferencia y la duración del contenido se usa para determinar cuánto tiempo se almacenarán en búfer los datos antes de dád guardarlos al jugador.
 
 Para abrir un archivo o secuencia a través de una red, llame al método **IWMReader::Open** del objeto lector con la dirección URL adecuada. **Open** es una llamada asincrónica, por lo que se devuelve inmediatamente. Cuando el origen está listo para leerse, el objeto reader envía una notificación WMT OPENED al método de devolución de llamada \_ [**IWMStatusCallback::OnStatus**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) de la aplicación. En este momento, la aplicación puede consultar al lector el modo de entrega llamando a [**IWMReaderAdvanced2::GetPlayMode**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreaderadvanced2-getplaymode). Para el contenido de red, este método devolverá WMT PLAY MODE DOWNLOAD, que indica el contenido descargado, o \_ \_ \_ WMT \_ PLAY MODE \_ STREAMING, que indica el \_ contenido transmitido.
 

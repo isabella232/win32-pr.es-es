@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 708e6cb6e7ed01bcefbc5165ce02b414b3d454cec18906f7ca041c77af01136c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4c3e4b6c2e2d378d0f78cee1824b1e4ce17a433a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117915062"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466100"
 ---
 # <a name="wm_destroyclipboard-message"></a>Mensaje \_ WM DESTROYCLIPBOARD
 
@@ -60,7 +60,7 @@ Si una aplicación procesa este mensaje, debe devolver cero.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |

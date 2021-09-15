@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f37975e7ca88f829286872b5352ff3e59d84fd4d123d457defb01b6d14003dad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 087e42aa3d490ec605b4478d5691b256271268f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118358943"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272020"
 ---
 # <a name="glmapgrid2f-function"></a>Función glMapGrid2f
 
@@ -76,7 +76,7 @@ Número de particiones en el intervalo de intervalo de cuadrícula \[ v1, v2 \] 
 *v1* 
 </dt> <dd>
 
-Valor utilizado como asignación para el valor de dominio de cuadrícula de enteros j = 0.
+Valor que se usa como asignación para el valor de dominio de cuadrícula de enteros j = 0.
 
 </dd> <dt>
 
@@ -104,7 +104,7 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las **funciones glMapGrid** y [glEvalMesh](glevalmesh-functions.md) se usan conjuntamente para generar y evaluar eficazmente una serie de valores de dominio de mapa espaciados uniformemente. La función glEvalMesh atraviesa el dominio entero de una cuadrícula unidimensional, cuyo intervalo es el dominio de los mapas de evaluación especificados por [**glMap1**](glmap1.md) y [**glMap2.**](glmap2.md)
 
@@ -127,7 +127,7 @@ Las siguientes funciones recuperan información relacionada con [**glMapGrid**](
 <dl>
 
 [**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAP1 \_ GRID \_ DOMAIN  
-[**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAP2 \_ GRID \_ DOMAIN  
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) con el argumento GL \_ MAP2 \_ GRID \_ DOMAIN  
 [**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAP1 \_ GRID \_ SEGMENTS  
 [**glGet con**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) el argumento GL \_ MAP2 \_ GRID \_ SEGMENTS  
 </dl>
@@ -136,7 +136,7 @@ Las siguientes funciones recuperan información relacionada con [**glMapGrid**](
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |

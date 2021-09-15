@@ -3,7 +3,7 @@ title: Función RtmRegisterClient (Rtm.h)
 description: La función RtmRegisterClient registra un cliente como controlador del protocolo especificado. Establece un mecanismo de notificación de cambio de ruta para el cliente y establece opciones de protocolo.
 ms.assetid: 70426601-695d-47ed-b71a-1df3fb8ddf10
 keywords:
-- Ras de función RtmRegisterClient
+- Función RAS de RtmRegisterClient
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db58fc9457195c2149fd8d34a8a65a6d5085135275e1c878633f64cb742b02cc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 564f47e68fd6cdce3d5437fe184bac1ed74d8322
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120081045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271860"
 ---
 # <a name="rtmregisterclient-function"></a>Función RtmRegisterClient
 
-\[Esta API ha sido reemplazada por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
+\[Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
 La **función RtmRegisterClient** registra un cliente como controlador del protocolo especificado. Establece un mecanismo de notificación de cambio de ruta para el cliente y establece opciones de protocolo.
 
@@ -62,7 +62,7 @@ Especifica el identificador del protocolo de enrutamiento, el mismo que se usa a
 *ChangeEvent* \[ En\]
 </dt> <dd>
 
-Especifica que ha cambiado la mejor ruta a una red de la tabla. El administrador de tabla de enrutamiento señala este evento después de un cambio en la mejor ruta a cualquier red de la tabla. Consulte [**RtmDequeueRouteChangeMessage para**](rtmdequeueroutechangemessage.md) obtener más información sobre la notificación de cambio de ruta.
+Especifica que ha cambiado la mejor ruta a una red de la tabla. El administrador de tablas de enrutamiento señala este evento después de un cambio en la mejor ruta a cualquier red de la tabla. Consulte [**RtmDequeueRouteChangeMessage para**](rtmdequeueroutechangemessage.md) obtener más información sobre la notificación de cambio de ruta.
 
 Este parámetro es opcional. Si el autor de la llamada especifica **NULL para** este parámetro, el administrador de tablas de enrutamiento no notifica al cliente los cambios en el mejor estado de ruta.
 
@@ -97,7 +97,7 @@ Un **identificador NULL** indica que el administrador de tablas de enrutamiento 
 |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | <dl> <dt>**EL CLIENTE \_ DE ERROR \_ YA \_ EXISTE**</dt> </dl> | Otro cliente ya se ha registrado para controlar el protocolo especificado.<br/>              |
 | <dl> <dt>**ERROR \_ PARÁMETRO NO \_ VÁLIDO**</dt> </dl>      | No se admite la familia de protocolos especificada o el *parámetro Flags* no es válido.<br/> |
-| <dl> <dt>**ERROR \_ NO HAY RECURSOS DEL \_ \_ SISTEMA**</dt> </dl>   | Recursos insuficientes para llevar a cabo la operación.<br/>                                   |
+| <dl> <dt>**ERROR \_ SIN RECURSOS DEL \_ \_ SISTEMA**</dt> </dl>   | Recursos insuficientes para llevar a cabo la operación.<br/>                                   |
 | <dl> <dt>**ERROR \_ NO HAY SUFICIENTE \_ \_ MEMORIA**</dt> </dl>     | Memoria insuficiente para asignar estructuras de datos para el cliente.<br/>                      |
 
 
@@ -113,17 +113,17 @@ Un **identificador NULL** indica que el administrador de tablas de enrutamiento 
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                               |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Rtm.h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Rtm.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Rtm.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Referencia de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 de Routing Table Manager](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
 [Funciones de Routing Table Manager versión 1](routing-table-manager-version-1-functions.md)

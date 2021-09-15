@@ -4,12 +4,12 @@ description: El atributo \ string\ y la llamada a procedimiento remoto (RPC).
 ms.assetid: 794e03f2-b1e9-42dc-8536-9ced5c0e3dad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e58b0750169a89f34840333f1ea55ee2ee096b24f3b87e425035f04ca759849
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e413c0b3b8f5a379dc3448f07aed4a5a7a6aba07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120127705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473494"
 ---
 # <a name="string-attribute-rpc"></a>atributo string (RPC)
 

@@ -1,19 +1,19 @@
 ---
-description: Se produce cuando el puntero del mouse se encuentra sobre el control InkPicture y se presiona un botón del mouse.
+description: Se produce cuando el puntero del mouse está sobre el control InkPicture y se presiona un botón del mouse.
 ms.assetid: ff776b2b-7dd8-4d3d-b0f6-714b186d447e
-title: Evento InkPicture. MouseDown (Msinkaut. h)
+title: Evento InkPicture.MouseDown (Ms mouseut.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 40e4459f5c304b3350f9cbad6aba69418bd24844
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104277786"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466548"
 ---
-# <a name="inkpicturemousedown-event"></a>Evento InkPicture. MouseDown
+# <a name="inkpicturemousedown-event"></a>Evento InkPicture.MouseDown
 
-Se produce cuando el puntero del mouse se encuentra sobre el control [InkPicture](inkpicture-control-reference.md) y se presiona un botón del mouse.
+Se produce cuando el puntero del mouse está sobre el control [InkPicture](inkpicture-control-reference.md) y se presiona un botón del mouse.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -34,38 +34,38 @@ void MouseDown(
 
 <dl> <dt>
 
-*Botón* \[ de de\]
+*Botón* \[ En\]
 </dt> <dd>
 
 Botón que se presionó.
 
 </dd> <dt>
 
-*Desplazamiento* \[ de\]
+*Mayús* \[ En\]
 </dt> <dd>
 
-Estado de la tecla Mayús.
+Estado de la tecla MAYÚS.
 
 </dd> <dt>
 
-*PX* \[ de\]
+*pX* \[ En\]
 </dt> <dd>
 
-La coordenada x, en píxeles, del objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) .
+Coordenada x, en píxeles, del [**objeto IInkCursor.**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
 
 </dd> <dt>
 
-*py* \[ de\]
+*pY* \[ En\]
 </dt> <dd>
 
-La coordenada y, en píxeles, del objeto [**IInkCursor**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) .
+Coordenada y, en píxeles, del [**objeto IInkCursor.**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
 
 </dd> <dt>
 
 *Cancelar* \[ in, out\]
 </dt> <dd>
 
-**Variante \_ TRUE** para cancelar este evento para el control primario; de lo contrario, **Variant \_ false**.
+**VARIANT \_ TRUE** para cancelar este evento para el control primario; en caso contrario, **VARIANT \_ FALSE**.
 
 </dd> </dl>
 
@@ -76,16 +76,16 @@ Este evento no devuelve un valor.
 ## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> Los parámetros pX y pY se encuentran en píxeles, y no las unidades HIMETRIC asociadas con el sistema de coordenadas de espacio de tinta. Esto se debe a que este evento reemplaza el evento de mouse relacionado de una aplicación que no es compatible con el lápiz y ese tipo de aplicación solo hace referencia a píxeles.
+> Los parámetros pX y pY están en píxeles, y no las unidades HIMETRIC asociadas al sistema de coordenadas del espacio de entrada de lápiz. Esto se debe a que este evento reemplaza el evento de mouse relacionado de una aplicación que no es consciente del lápiz y ese tipo de aplicación solo hace referencia a píxeles.
 
  
 
 > [!Caution]  
-> Algunos controles dependen de una relación específica entre los eventos **MouseDown**, [**MouseMove**](inkpicture-mousemove.md)y [**MouseUp**](inkpicture-mouseup.md) . La cancelación de algunos de estos eventos puede tener resultados imprevistos.
+> Algunos controles se basan en una relación específica entre **los eventos MouseDown**, [**MouseMove**](inkpicture-mousemove.md)y [**MouseUp.**](inkpicture-mouseup.md) La cancelación de algunos de estos eventos puede tener resultados imprevistos.
 
  
 
-Este método de evento se define en la interfaz **\_ IInkPictureEvents** . La interfaz **\_ IInkPictureEvents** implementa la interfaz [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de DISPID \_ IPEMouseDown.
+Este método de evento se define en la **\_ interfaz IInkPictureEvents.** La **\_ interfaz IInkPictureEvents** implementa la [**interfaz IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de \_ DISPID IPEMouseDown.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -93,9 +93,9 @@ Este método de evento se define en la interfaz **\_ IInkPictureEvents** . La in
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Encabezado<br/>                   | <dl> <dt>Msinkaut. h (también requiere Msinkaut \_ i. c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 321f5075bdfde3a5a3d707089867356b3f702230dd81d2a1c29b513a8cf8e1ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af401eaa98ac4255b15961477b1ba2316e29edf0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118800378"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465960"
 ---
 # <a name="id3dxtexturegutterhelpergettexelmap-method"></a>Método ID3DXTextureGutterHelper::GetTexelMap
 
@@ -55,7 +55,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor. D3DERR \_ INVALIDCALL
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para los elementos de textura de clase 2 y [**4,**](id3dxtexturegutterhelper.md)las coordenadas de textura devueltas (u, v) corresponden al punto más cercano del triángulo más cercano.
 

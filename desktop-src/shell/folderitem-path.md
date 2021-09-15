@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 9e1761d0f3d846e44746bbb213233bd846ddd56de3b5ef16cd99b2dce5b4fabf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a9562fc94cc0d4253ce80f6bd494c818689c71a4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119093119"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468232"
 ---
 # <a name="folderitempath-property"></a>Propiedad FolderItem.Path
 
@@ -41,7 +41,7 @@ Variable de tipo [**BSTR**](/previous-versions/windows/desktop/automat/bstr) que
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa Path** para recuperar la ruta de acceso de la Windows carpeta. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa Path** para recuperar la ruta de acceso de Windows carpeta. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -146,12 +146,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

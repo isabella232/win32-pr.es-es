@@ -1,19 +1,19 @@
 ---
-description: Plural de categoría de dispositivo.
+description: Plural de la categoría de dispositivo.
 ms.assetid: a695adab-99f7-4660-a5a3-2b3ec619a0f8
 title: System.Devices.CategoryGroup
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5cb917ef8300bd9a2a10b2bd25db9bf796b163456205ff1ece5d9571ea67a35
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7e22dc53cb52b957fa439d2d55215aa65e07d44f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119938335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360401"
 ---
 # <a name="systemdevicescategorygroup"></a>System.Devices.CategoryGroup
 
-Plural de categoría de dispositivo.
+Plural de la categoría de dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8
 
@@ -47,7 +47,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

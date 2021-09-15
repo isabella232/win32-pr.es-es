@@ -4,7 +4,7 @@ description: Atributos de lista de reproducción
 ms.assetid: 2f2224ad-a1de-4f88-9166-8c00137a3695
 keywords:
 - Reproductor de Windows Media,listas de reproducción
-- Reproductor de Windows Media de objetos, listas de reproducción
+- Reproductor de Windows Media modelo de objetos, listas de reproducción
 - modelo de objetos, listas de reproducción
 - Reproductor de Windows Media Móvil, listas de reproducción
 - Reproductor de Windows Media ActiveX control,listas de reproducción
@@ -16,12 +16,12 @@ keywords:
 - attributes,playlists
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d00416f641fac89c707405c03dc70af0497b34d4cf646aa44fad5124f97f09a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 669d3203fdb703099a7089e2165f31fd5bb326bb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118995715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359530"
 ---
 # <a name="playlist-attributes"></a>Atributos de lista de reproducción
 

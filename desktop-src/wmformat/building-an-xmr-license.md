@@ -15,7 +15,7 @@ keywords:
 - administración de derechos digitales (DRM), licencias XMR
 - DRM (administración de derechos digitales), licencias XMR
 - digital rights management (DRM), Extensible Media Rights (XMR)
-- DRM (administración de derechos digitales), Derechos multimedia extensibles (XMR)
+- DRM (administración de derechos digitales),Derechos multimedia extensibles (XMR)
 - API extendidas de cliente DRM, importar
 - API extendidas de cliente, importar
 - API extendidas de cliente DRM, licencias XMR
@@ -29,18 +29,18 @@ keywords:
 - XMR (Derechos multimedia extensibles)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a73406d36c6ec7903ee7966f162811336aaecccaac5093e6d467e02c1a56ec71
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cc275419116362c08cabe4dc70aa227687705fdb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119881414"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467100"
 ---
 # <a name="building-an-xmr-license"></a>Creación de una licencia XMR
 
 Para generar una licencia para Windows DRM de multimedia para procesar, debe usar el esquema binario extensible de derechos multimedia (XMR). XMR es un esquema para transmitir restricciones y derechos de uso multimedia y debe tener licencia por separado.
 
-El material importante de una licencia se cifra mediante la clave pública en la colección de certificados DRM de Windows Media, por lo que solo es visible para el subsistema de API extendida de cliente DRM de Windows Media. .
+El material importante de una licencia se cifra mediante la clave pública de la colección de certificados DRM de Windows Media, por lo que solo es visible para el subsistema de API extendida del cliente drm de Windows Media. .
 
 Es su responsabilidad asegurarse de que la estructura de licencias y la configuración de la directiva son válidas y coherentes con la intención del emisor de licencias, y que cumplen las reglas de cumplimiento.
 

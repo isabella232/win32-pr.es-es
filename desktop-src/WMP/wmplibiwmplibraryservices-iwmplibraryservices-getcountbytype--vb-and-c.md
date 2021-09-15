@@ -1,11 +1,11 @@
 ---
-title: IWMPLibraryServices getCountByType, método
-description: El método getCountByType devuelve el número de bibliotecas disponibles de un tipo especificado.
+title: Método IWMPLibraryServices getCountByType
+description: El método getCountByType devuelve el recuento de bibliotecas disponibles de un tipo especificado.
 ms.assetid: 75f22e21-fbaf-45dc-b64f-1f687a3cf241
 keywords:
-- método getCountByType de Windows Media Player
-- método getCountByType Windows Media Player, interfaz IWMPLibraryServices
-- Interfaz IWMPLibraryServices Windows Media Player, método getCountByType
+- Método getCountByType Reproductor de Windows Media
+- Método getCountByType Reproductor de Windows Media , interfaz IWMPLibraryServices
+- Interfaz IWMPLibraryServices Reproductor de Windows Media método , getCountByType
 topic_type:
 - apiref
 api_name:
@@ -17,15 +17,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: efbd874c06c2557102011c63ee1abb895d092656
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105671595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473306"
 ---
-# <a name="iwmplibraryservicesgetcountbytype-method"></a>IWMPLibraryServices:: getCountByType (método)
+# <a name="iwmplibraryservicesgetcountbytype-method"></a>IWMPLibraryServices::getCountByType (método)
 
-El método **getCountByType** devuelve el número de bibliotecas disponibles de un tipo especificado.
+El **método getCountByType** devuelve el recuento de bibliotecas disponibles de un tipo especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,16 +53,16 @@ Implements IWMPLibraryServices.getCountByType
 
 <dl> <dt>
 
-*wmplt* \[ de\]
+*wmplt* \[ En\]
 </dt> <dd>
 
-Un valor de la enumeración **WMPLib. WMPLibraryType** que especifica el tipo de biblioteca que se va a contar.
+Valor de la **enumeración WMPLib.WMPLibraryType** que especifica el tipo de biblioteca que se debe contar.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-**System. Int32** que es el número de bibliotecas.
+**System.Int32 que** es el recuento de bibliotecas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ Un valor de la enumeración **WMPLib. WMPLibraryType** que especifica el tipo de
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 11.<br/>                                                                                    |
+| Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

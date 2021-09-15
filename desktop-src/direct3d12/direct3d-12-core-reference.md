@@ -5,12 +5,12 @@ ms.assetid: 588202FB-A187-4727-BF53-31BEA6CFB9E9
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 11/27/2018
-ms.openlocfilehash: 27acf8afa68c292fd3cc4bedfbf3a606c2a61b11e089d99303b2021ad2fad040
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 841ec37a5b3c7f125f169c340a942f99b3bfee73
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118529919"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466357"
 ---
 # <a name="core-reference-direct3d-12"></a>Referencia principal (Direct3D 12)
 
@@ -24,7 +24,7 @@ En esta sección se tratan las API de Direct3D 12 declaradas en d3d12.h, incluid
 | [Funciones principales](direct3d-12-functions.md) | Las siguientes funciones se declaran en d3d12.h. |
 | [Estructuras principales](direct3d-12-structures.md) | Las estructuras siguientes se declaran en d3d12.h. |
 | [Enumeraciones básicas](direct3d-12-enumerations.md) | Las enumeraciones siguientes se declaran en d3d12.h. |
-| [Constantes principales](constants.md) | Las siguientes constantes se declaran en d3d12.h, para su uso mediante un título D3D12. |
+| [Constantes principales](constants.md) | Las siguientes constantes se declaran en d3d12.h, para que las use un título D3D12. |
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 5a3ac2f2234c986c9a86073e25e1277fa1af4f10f2809e013bc65849120b90c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 34ba471c50ceb9475121139c3ecb997cf1d26f2b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119005443"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270980"
 ---
 # <a name="ichaincontext-interface"></a>Interfaz IChainContext
 
@@ -30,7 +30,7 @@ La **interfaz IChainContext** proporciona acceso al contexto de un objeto de cad
 
 Use esta interfaz cuando necesite usar [](chain.md) un objeto de cadena CAPICOM en otra derivación de CryptoAPI.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IChainContext** tiene estos tipos de miembros:
 
@@ -59,7 +59,7 @@ La **interfaz IChainContext** tiene estas propiedades.
 
 | Propiedad                                                      | Tipo de acceso           | Descripción                                                               |
 |:--------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------|
-| [**ChainContext**](ichaincontext-chaincontext.md)<br/> | Lectura/escritura<br/> | Establece o recupera el CONTEXTO DE CADENA DE PCCERT \_ \_ de un certificado.<br/> |
+| [**ChainContext**](ichaincontext-chaincontext.md)<br/> | Lectura y escritura<br/> | Establece o recupera el CONTEXTO DE CADENA DE PCCERT \_ \_ de un certificado.<br/> |
 
 
 

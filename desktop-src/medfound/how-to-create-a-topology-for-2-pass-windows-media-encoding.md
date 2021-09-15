@@ -1,19 +1,19 @@
 ---
-description: Ciertos codificador Windows es multimedia y Media Foundation admiten los modos de codificación de dos Media Foundation en la capa de canalización.
+description: Los modos de codificación de dos pases son compatibles con Windows codificadores multimedia y Media Foundation en la capa de canalización.
 ms.assetid: 3fd5baff-142f-453e-bb97-b355ee6678fc
 title: Cómo crear una topología para la codificación Two-Pass Windows multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 525a98faa424371f2d80739e5c68f199cfc7ed6443c25ab3d15b575afdd003e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7c813b9a3c31fafaa3efbea83180c997bc46079d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119724885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468755"
 ---
 # <a name="how-to-create-a-topology-for-two-pass-windows-media-encoding"></a>Cómo crear una topología para la codificación Two-Pass Windows multimedia
 
-Ciertos codificador Windows es multimedia y Media Foundation admiten los modos de codificación de dos Media Foundation en la capa de canalización. La aplicación debe configurar y configurar la topología de codificación similar a la de la codificación de paso único, pero en el modo de codificación de dos pases, la aplicación debe ejecutar la sesión de codificación dos veces. En el primer paso, el codificador recopila información sobre el contenido de la secuencia. En el segundo paso, mediante la información recopilada en el primer paso, se genera el archivo de salida final. Al procesar dos veces los ejemplos de la secuencia, la codificación de dos pasos optimiza el proceso de codificación y genera archivos codificados de mayor calidad. Los modos de codificación de dos pases no se pueden usar en secuencias en vivo.
+Los modos de codificación de dos pases son compatibles con Windows codificadores multimedia y Media Foundation en la capa de canalización. La aplicación debe configurar y configurar la topología de codificación similar a la de la codificación de paso único, pero en el modo de codificación de dos pases, la aplicación debe ejecutar la sesión de codificación dos veces. En el primer paso, el codificador recopila información sobre el contenido de la secuencia. En el segundo paso, mediante la información recopilada en el primer paso, se genera el archivo de salida final. Al procesar dos veces los ejemplos de la secuencia, la codificación de dos pasos optimiza el proceso de codificación y genera archivos codificados de mayor calidad. Los modos de codificación de dos pases no se pueden usar en secuencias en vivo.
 
 Media Foundation admite los siguientes modos de codificación de dos pasos:
 
@@ -44,8 +44,8 @@ En el procedimiento siguiente se resumen los pasos para codificar Windows conten
 
     | Tipo de codificación                                                                                        | Nombre de propiedad                                                                                                                                                                                                                                                                                                                                                     |
     |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | [Codificación de velocidad de bits variable sin restricciones](unconstrained-variable-bit-rate--vbr--encoding.md)       | [**MFPKEY \_ PASSESUSED**](mfpkey-passesusedproperty.md)<br/> [**MFPKEY \_ VBRENABLED**](mfpkey-vbrenabledproperty.md)<br/> [**MFPKEY \_ BAVG**](mfpkey-bavgproperty.md)<br/> [**MFPKEY \_ FPSG**](mfpkey-ravgproperty.md)<br/>                                                                                                               |
-    | [Codificación de velocidad de bits variable limitada máxima](peak-constrained-variable-bit-rate--vbr--encoding.md) | [**MFPKEY \_ PASSESUSED**](mfpkey-passesusedproperty.md)<br/> [**MFPKEY \_ VBRENABLED**](mfpkey-vbrenabledproperty.md)<br/> [**MFPKEY \_ BAVG**](mfpkey-bavgproperty.md)<br/> [**MFPKEY \_ FPSG**](mfpkey-ravgproperty.md)<br/> [**MFPKEY \_ BMAX**](mfpkey-bmaxproperty.md)<br/> [**MFPKEY \_ RMAX**](mfpkey-rmaxproperty.md)<br/> |
+    | [Codificación de velocidad de bits variable sin restricciones](unconstrained-variable-bit-rate--vbr--encoding.md)       | [**MFPKEY \_ PASSESUSED**](mfpkey-passesusedproperty.md)<br/> [**MFPKEY \_ VBRENABLED**](mfpkey-vbrenabledproperty.md)<br/> [**MFPKEY \_ BAVG**](mfpkey-bavgproperty.md)<br/> [**MFPKEY \_ ESTOG**](mfpkey-ravgproperty.md)<br/>                                                                                                               |
+    | [Codificación de velocidad de bits variable limitada máxima](peak-constrained-variable-bit-rate--vbr--encoding.md) | [**MFPKEY \_ PASSESUSED**](mfpkey-passesusedproperty.md)<br/> [**MFPKEY \_ VBRENABLED**](mfpkey-vbrenabledproperty.md)<br/> [**MFPKEY \_ BAVG**](mfpkey-bavgproperty.md)<br/> [**MFPKEY \_ ESTOG**](mfpkey-ravgproperty.md)<br/> [**MFPKEY \_ BMAX**](mfpkey-bmaxproperty.md)<br/> [**MFPKEY \_ RMAX**](mfpkey-rmaxproperty.md)<br/> |
 
     
 

@@ -5,13 +5,13 @@ title: Elemento Content [Lector de diario]
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: d544aebac1292a81c9a4acd05cb25da80977027e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122478111"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359660"
 ---
-# <a name="content-element-journal-reader"></a>Lector del diario \[ de elementos content\]
+# <a name="content-element-journal-reader"></a>Lector de diario de \[ elementos content\]
 
 Contiene el contenido de una página De diario.
 
@@ -44,9 +44,9 @@ Contiene el contenido de una página De diario.
 
 
 
-| Atributo | Tipo | Requerido | Descripción | PossibleValues | 
+| Atributo | Tipo | Obligatorio | Descripción | PossibleValues | 
 |-----------|------|----------|-------------|----------------|
-| <strong>Tipo</strong> | <a href="contenttype-complex-type.md"><strong>ContentType complexType</strong></a> | Requerido | Si el tipo es "Inert", no se puede modificar el contenido.<br /> | <ul><li>Normal</li><li>Inerte</li></ul> | 
+| <strong>Tipo</strong> | <a href="contenttype-complex-type.md"><strong>ContentType complexType</strong></a> | Obligatorio | Si el tipo es "Inert", no se puede modificar el contenido.<br /> | <ul><li>Normal</li><li>Inerte</li></ul> | 
 
 
 

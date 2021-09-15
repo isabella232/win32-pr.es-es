@@ -7,40 +7,40 @@ keywords:
 - Windows SDK de formato multimedia, lectores sincrónicos
 - Formato de sistemas avanzados (ASF), lectores sincrónicos
 - ASF (formato de sistemas avanzados), lectores sincrónicos
-- Formato de sistemas avanzados (ASF), leer archivos
-- ASF (formato de sistemas avanzados), leer archivos
+- Formato de sistemas avanzados (ASF), lectura de archivos
+- ASF (formato de sistemas avanzados), lectura de archivos
 - lectores sincrónicos, interfaz IWMReaderCallback
 - IWMReaderCallback,lectores sincrónicos
-- lectores sincrónicos, leer archivos
+- lectores sincrónicos, lectura de archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c30ed2f9af78c9643f269adb24f740f2fe9227bc2e5b8a36d5c9d29606564176
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 893a1bd324cdc91968e423f2084bfdba5ef57c8e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118197477"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466665"
 ---
 # <a name="reading-files-with-the-synchronous-reader"></a>Lectura de archivos con el lector sincrónico
 
-Puede usar el lector sincrónico para leer un archivo ASF mediante llamadas sincrónicas en lugar de los métodos asincrónicos en el objeto reader. El uso de llamadas sincrónicas reduce el número de subprocesos necesarios para leer un archivo. El lector asincrónico usa varios subprocesos para procesar secuencias. En el caso de los archivos con varias secuencias, el número de subprocesos usados puede ser muy grande. El lector sincrónico usa solo un subproceso.
+Puede usar el lector sincrónico para leer un archivo ASF mediante llamadas sincrónicas en lugar de los métodos asincrónicos en el objeto reader. El uso de llamadas sincrónicas reduce el número de subprocesos necesarios para leer un archivo. El lector asincrónico usa varios subprocesos para procesar secuencias. En el caso de los archivos con varias secuencias, el número de subprocesos usados puede ser muy grande. El lector sincrónico solo usa un subproceso.
 
 El lector sincrónico se diseñó para satisfacer las necesidades de las aplicaciones de creación de contenido y edición de archivos. Puede usar el lector sincrónico para otras aplicaciones, pero su funcionalidad es limitada.
 
-El lector sincrónico puede abrir archivos locales o archivos en una red mediante el nombre de la ruta de acceso UNC (por ejemplo, \\ \\ "someshare \\ somedirectory \\ somefile.wmv"). No puede transmitir archivos al lector sincrónico ni abrir archivos desde una ubicación de Internet. El lector sincrónico también proporciona compatibilidad para usar la interfaz COM **de IStream** como origen.
+El lector sincrónico puede abrir archivos locales o archivos en una red mediante el nombre de ruta de acceso UNC (por ejemplo, \\ \\ "someshare \\ somedirectory \\ somefile.wmv"). No se pueden transmitir archivos al lector sincrónico ni abrir archivos desde una ubicación de Internet. El lector sincrónico también proporciona compatibilidad para usar la interfaz COM **IStream** como origen.
 
-El lector sincrónico proporciona más flexibilidad para recuperar muestras de un archivo ASF que el lector asincrónico. El lector sincrónico puede entregar ejemplos por número de secuencia, así como por salida. Los ejemplos entregados por número de secuencia se pueden comprimir o descomprimir. El lector sincrónico también puede cambiar entre la entrega comprimida y sin comprimir durante la reproducción; esta característica se conoce como "edición rápida". Esta característica permite a una aplicación de edición leer Windows contenido basado en multimedia y pasarlo directamente al escritor hasta que se alcance un fotograma deseado. En ese momento, la aplicación puede decir al lector que empiece a entregar contenido sin comprimir, que la aplicación puede modificar y pasar al escritor para su recompresión. Cuando la aplicación ha terminado de modificar los fotogramas especificados, puede decir al lector que vuelva a entregar fotogramas comprimidos.
+El lector sincrónico proporciona más flexibilidad para recuperar ejemplos de un archivo ASF que el lector asincrónico. El lector sincrónico puede entregar ejemplos por número de secuencia, así como por salida. Los ejemplos entregados por número de secuencia se pueden comprimir o descomprimir. El lector sincrónico también puede cambiar entre la entrega comprimida y la sin comprimir durante la reproducción. esta característica se conoce como "edición rápida". Esta característica permite a una aplicación de edición leer Windows contenido basado en multimedia y pasarlo directamente al escritor hasta que se alcance un marco deseado. En ese momento, la aplicación puede decir al lector que empiece a entregar contenido sin comprimir, que la aplicación puede modificar y pasar al escritor para su recompresión. Cuando la aplicación haya terminado de modificar los fotogramas especificados, puede decir al lector que empiece a entregar fotogramas comprimidos de nuevo.
 
-La funcionalidad más básica del objeto de lector sincrónico se puede dividir en los pasos siguientes. En estos pasos, "la aplicación" hace referencia al programa que escribe con el SDK Windows Media Format.
+La funcionalidad más básica del objeto de lector sincrónico se puede dividir en los pasos siguientes. En estos pasos , "la aplicación" hace referencia al programa que escribe mediante el SDK Windows Media Format.
 
 1.  La aplicación pasa al lector sincrónico el nombre de un archivo que se leerá. Cuando el lector sincrónico abre el archivo, asigna un número de salida a cada secuencia. Si el archivo usa la exclusión mutua, el lector asigna una única salida para todas las secuencias mutuamente excluyentes.
 2.  La aplicación obtiene información sobre la configuración de las distintas salidas del lector. La información recopilada permitirá que la aplicación represente correctamente ejemplos multimedia.
-3.  La aplicación comienza a solicitar ejemplos, de uno en uno, desde el lector sincrónico. El lector sincrónico entrega cada ejemplo en un objeto de búfer para el que entrega la [**interfaz INSSBuffer.**](/previous-versions/windows/desktop/api/wmsbuffer/nn-wmsbuffer-inssbuffer)
-4.  La aplicación es responsable de representar los datos una vez entregados por el lector. El SDK Windows media format no proporciona ninguna rutina de representación. Normalmente, las aplicaciones usarán otros SDK para representar datos, como el SDK de Microsoft Direct X, o las funciones multimedia del SDK de plataforma de Windows Microsoft.
+3.  La aplicación comienza a solicitar ejemplos, de uno en uno, desde el lector sincrónico. El lector sincrónico entrega cada muestra en un objeto de búfer para el que entrega la [**interfaz INSSBuffer.**](/previous-versions/windows/desktop/api/wmsbuffer/nn-wmsbuffer-inssbuffer)
+4.  La aplicación es responsable de representar los datos una vez entregados por el lector. El SDK Windows Media Format no proporciona ninguna rutina de representación. Normalmente, las aplicaciones usarán otros SDK para representar datos, como el SDK de Microsoft Direct X o las funciones multimedia de Microsoft Windows Platform SDK.
 
-Estos pasos se muestran en la aplicación de ejemplo WMSyncReader. Para obtener más información, vea [Aplicaciones de ejemplo.](sample-applications.md)
+Estos pasos se ilustran en la aplicación de ejemplo WMSyncReader. Para obtener más información, vea [Aplicaciones de ejemplo.](sample-applications.md)
 
-El lector sincrónico también admite una funcionalidad más avanzada. El lector sincrónico le permite hacer lo siguiente:
+El lector sincrónico también admite funcionalidades más avanzadas. El lector sincrónico permite hacer lo siguiente:
 
 -   Especifique un intervalo de muestras para recuperar por hora o por número de fotograma.
 -   Controlar la selección de secuencias para secuencias mutuamente excluyentes.
@@ -63,7 +63,7 @@ En las secciones siguientes se describe el uso del objeto de lector sincrónico 
 
 **Código de ejemplo**
 
-El código de ejemplo siguiente muestra cómo leer ejemplos de un archivo ASF mediante el lector sincrónico. Especifica por número de fotograma un intervalo de muestras que se van a entregar.
+En el código de ejemplo siguiente se muestra cómo leer ejemplos de un archivo ASF mediante el lector sincrónico. Especifica por número de fotograma un intervalo de muestras que se van a entregar.
 
 
 ```C++

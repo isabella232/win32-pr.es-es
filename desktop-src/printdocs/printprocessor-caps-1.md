@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: d057914ef9a77c7a545817b205f919afa66fdd3bc154363f7e33a9a5ba43c446
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 131b5ecf874554c3642808570a53ee8b20ad0e68
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119824795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359706"
 ---
 # <a name="printprocessor_caps_1-structure"></a>PRINTPROCESSOR \_ CAPS \_ 1 (estructura)
 
@@ -38,7 +38,7 @@ typedef struct _PRINTPROCESSOR_CAPS_1 {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -70,7 +70,7 @@ Número máximo de copias que la impresora puede controlar.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La función [**GetPrintProcessorCapabilities**](/windows-hardware/drivers/ddi/content/winsplp/nf-winsplp-getprintprocessorcapabilities) proporciona valores para todos los miembros de la estructura, que se documenta en Windows Driver Kit (WDK).
 

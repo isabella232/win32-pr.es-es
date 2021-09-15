@@ -3,7 +3,7 @@ title: PLAYLIST.setCheckedState2
 description: El método setCheckedState2 establece el estado comprobado del elemento con el índice especificado en el elemento PLAYLIST.
 ms.assetid: 241221a3-810b-422d-8f73-25c5b5c82c70
 keywords:
-- LISTA DE REPRODUCCIÓN.setCheckedState2 Reproductor de Windows Media
+- PLAYLIST.setCheckedState2 Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b6b95cb332c5f5a9d86e6f49484b27c1ab5802f28b18195f610395a1c732e369
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 37cc9c821ae783e79d327e93b0c2f297fb75eab1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118336224"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359482"
 ---
 # <a name="playlistsetcheckedstate2"></a>PLAYLIST.setCheckedState2
 
@@ -50,15 +50,15 @@ El **método setCheckedState2** establece el estado comprobado del elemento con 
 
 Este método devuelve un **valor booleano**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método puede trabajar con listas de reproducción anidadas y reemplaza el **método setCheckedState,** que no puede. Puede establecer todos los elementos en el estado solicitado especificando 1 en el parámetro *item.*
+Este método puede trabajar con listas de reproducción anidadas y reemplaza el **método setCheckedState,** que no puede. Puede establecer todos los elementos en el estado solicitado especificando 1 en el *parámetro item.*
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 

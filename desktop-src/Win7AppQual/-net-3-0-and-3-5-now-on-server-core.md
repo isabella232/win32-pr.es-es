@@ -4,12 +4,12 @@ ms.assetid: 61d6ee20-1304-4a89-b721-4d10a66e47fc
 title: .NET 3.0 y 3.5 ahora en Server Core
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1e81d91e413bc4864f43d3f47f82a9eda42acf9e1ebbc98896eb573554628e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 71d851df14f5108ad883d838f6ecc57b1ebd6d48
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119999125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466383"
 ---
 # <a name="net-30-and-35-now-on-server-core"></a>.NET 3.0 y 3.5 ahora en Server Core
 
@@ -46,7 +46,7 @@ Probar aplicaciones que incorporan código WCF, WF y LINQ en Server Core.
 
 -   [Server Core](/previous-versions/windows/desktop/legacy/ms723891(v=vs.85))
 -   *Consulte también* las secciones "Server Core" de las guías paso a paso de *Windows Server 2008 R2* cuando estén disponibles.
--   *Consulte también* la sección "Server Core" del *SDK Windows Server 2008 R2* cuando esté disponible.
+-   *Consulte también* la sección "Server Core" del *SDK de Windows Server 2008 R2* cuando esté disponible.
 
 > [!Note]  
 > Es posible que estos recursos no estén disponibles en algunos idiomas y países o regiones.

@@ -1,11 +1,11 @@
 ---
 title: Método INapServerManagement SetFailureCategoryMappings (NapServerManagement.h)
-description: Se usa para establecer las asignaciones de categorías de error de SHV.
+description: Se usa para establecer las asignaciones de categoría de error de SHV.
 ms.assetid: be482f82-c79c-405c-b619-9bcb9b4dc349
 keywords:
 - Método NAP de SetFailureCategoryMappings
 - Método NAP de SetFailureCategoryMappings, interfaz INapServerManagement
-- Interfaz INapServerManagement NAP, método SetFailureCategoryMappings
+- INapServerManagement interface NAP , SetFailureCategoryMappings method
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c22bc51edf887d26bf34f59932248c62bfca86199771a2b971a10e9c1b323eac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a220d6603ef5bbb49377ac0e212d5d98afa4bdd0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118939619"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473770"
 ---
 # <a name="inapservermanagementsetfailurecategorymappings-method"></a>Método INapServerManagement::SetFailureCategoryMappings
 
@@ -30,7 +30,7 @@ ms.locfileid: "118939619"
 
  
 
-El **método INapServerManagement::SetFailureCategoryMappings** se usa para establecer las asignaciones de categoría de error de SHV.
+El **método INapServerManagement::SetFailureCategoryMappings** se usa para establecer las asignaciones de categorías de error de SHV.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,7 +58,7 @@ HRESULT SetFailureCategoryMappings(
 *asignación* \[ En\]
 </dt> <dd>
 
-Estructura [**FailureCategoryMapping**](/windows/win32/api/naptypes/ns-naptypes-failurecategorymapping) que contiene los datos de asignación de categorías de error.
+Estructura [**FailureCategoryMapping que**](/windows/win32/api/naptypes/ns-naptypes-failurecategorymapping) contiene los datos de asignación de categoría de error.
 
 </dd> </dl>
 
@@ -86,8 +86,8 @@ También se pueden devolver otros códigos de error específicos de COM.
 |-------------------------------------|----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                               |
-| Header<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapServerManagement.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapServerManagement.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qsvrmgmt.dll</dt> </dl>            |
 
 

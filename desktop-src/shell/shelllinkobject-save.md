@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: f4d0d03b10aca45fadb5a0072eb94114103ab37d0c478c8a90241b5ab97ec36a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0283b839069464a1a059bd11ef52b522f7ec7072
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117857174"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466783"
 ---
 # <a name="shelllinkobjectsave-method"></a>Método ShellLinkObject.Save
 
@@ -170,12 +170,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 

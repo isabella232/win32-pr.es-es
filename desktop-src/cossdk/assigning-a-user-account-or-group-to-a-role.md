@@ -4,16 +4,16 @@ ms.assetid: 1cf7dc38-185a-4cc4-8f4c-44b6af4c5f4a
 title: Asignar una cuenta de usuario o un grupo a un rol
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa0d2883f9aedb5f3a0edf5dc33de54a03767e53a48f2dd8b9b6ea86c3a6211f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d53b37c9f0265e02c7abdf74eeaf81bd0b12e3d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119047673"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465578"
 ---
 # <a name="assigning-a-user-account-or-group-to-a-role"></a>Asignar una cuenta de usuario o un grupo a un rol
 
-Puede usar la herramienta administrativa Servicios de componentes para rellenar un rol con cuentas de usuario o grupos. La manera preferida de asignar una cuenta de usuario a un rol es asignar la cuenta de usuario a un grupo y, a continuación, asignar el grupo al rol. El uso de grupos para rellenar roles facilita la administración de un gran número de usuarios. En la ayuda en línea de la herramienta administrativa Administración de equipos, vea el tema "Usuarios y grupos locales" para obtener más información sobre cómo crear grupos o asignar una cuenta de usuario a un grupo.
+Puede usar la herramienta administrativa Servicios de componentes para rellenar un rol con cuentas de usuario o grupos. La manera preferida de asignar una cuenta de usuario a un rol es asignar la cuenta de usuario a un grupo y, a continuación, asignar el grupo al rol. El uso de grupos para rellenar roles facilita la administración de un gran número de usuarios. En la ayuda en línea de la herramienta administrativa Administración de equipos, vea el tema "Usuarios y grupos locales" para obtener más información sobre la creación de grupos o la asignación de una cuenta de usuario a un grupo.
 
 > [!Note]  
 > Para permitir que los usuarios de red no autenticados ejecuten una aplicación COM+, los roles de aplicación deben incluir el usuario anónimo. A partir Windows Server 2003, de forma predeterminada, el usuario anónimo no se incluye en el grupo Todos.
@@ -35,13 +35,13 @@ Después de asignar la cuenta de usuario al grupo de Windows adecuado, siga esto
 
 3.  Haga clic con el botón derecho **en la** carpeta Usuarios del rol, seleccione **Nuevo** y, a continuación, haga clic en **Usuario.**
 
-4.  En la **ventana Seleccionar usuarios o** grupos, en el panel inferior, escriba el nombre completo del usuario o grupo que desea agregar. Si no conoce el nombre,  haga clic en el botón Avanzadas y, a continuación, haga clic en Buscar **ahora** para ver una lista de usuarios y grupos en el dominio seleccionado. Seleccione un usuario o grupo en la **lista Nombre (RDN)** y haga clic **en Aceptar.**
+4.  En la **ventana Seleccionar usuarios o** grupos, en el panel inferior, escriba el nombre completo del usuario o grupo que desea agregar. Si no conoce el nombre,  haga clic  en el botón Avanzadas y, a continuación, haga clic en Buscar ahora para ver una lista de usuarios y grupos en el dominio seleccionado. Seleccione un usuario o grupo en la **lista Nombre (RDN)** y haga clic **en Aceptar.**
 
 5.  Para agregar más cuentas de usuario o grupos, repita el paso 4.
 
-6.  Cuando haya terminado de agregar cuentas de usuario y grupos al rol, haga clic **en Aceptar.**
+6.  Cuando haya terminado de agregar cuentas de usuario y grupos al rol, haga clic en **Aceptar.**
 
-Para cada cuenta de usuario o grupo que haya asignado al rol, aparece un icono en la **carpeta** Usuarios. La nueva pertenencia a roles se aplica la próxima vez que se inicia la aplicación.
+Para cada cuenta de usuario o grupo que haya asignado al rol, aparecerá un icono en la **carpeta** Usuarios. La nueva pertenencia a roles se aplica la próxima vez que se inicia la aplicación.
 
  
 

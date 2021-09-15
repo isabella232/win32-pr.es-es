@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Wintrust.dll
-ms.openlocfilehash: 3c6c7957e969d04eaf65014e023a5f64e0826b6285fb878d9afefbd7cda25721
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 99135ac22509b288726732ca4a16248b304f294b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118895837"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473434"
 ---
 # <a name="wthelpercertfindissuercertificate-function"></a>Función WTHelperCertFindIssuerCertificate
 
@@ -94,13 +94,13 @@ Este parámetro puede ser una combinación bit a bit de cero o más de los sigui
 
 
 
-| Valor                                                                                                                                                                                                                                                                 | Significado                                                                                         |
+| Value                                                                                                                                                                                                                                                                 | Significado                                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | <span id="CERT_CONFIDENCE_SIG"></span><span id="cert_confidence_sig"></span><dl> <dt>**CERT \_ Confidence \_ SIG**</dt> <dt> 0x10000000</dt> </dl>                     | La firma del certificado es válida.<br/>                                           |
 | <span id="CERT_CONFIDENCE_TIME"></span><span id="cert_confidence_time"></span><dl> <dt>**CERT \_ Tiempo \_ de confianza**</dt> <dt> 0x01000000</dt> </dl>                  | La hora del emisor del certificado es válida.<br/>                                         |
 | <span id="_CERT_CONFIDENCE_TIMENEST"></span><span id="_cert_confidence_timenest"></span><dl> <dt> **CERT \_ CONFIDENCE \_ TIMENEST**</dt> <dt>0x00100000</dt> </dl>    | La hora del certificado es válida.<br/>                                                |
-| <span id="_CERT_CONFIDENCE_AUTHIDEXT"></span><span id="_cert_confidence_authidext"></span><dl> <dt> **CERTIFICADO \_ DE CONFIANZA \_ AUTHIDEXT**</dt> <dt>0x00010000</dt> </dl> | La extensión de identificador de autoridad es válida.<br/>                                                 |
-| <span id="_CERT_CONFIDENCE_HYGIENE"></span><span id="_cert_confidence_hygiene"></span><dl> <dt> **PROTECCIÓN \_ DE LA CONFIANZA \_ DE**</dt> <dt>0X00001000</dt> </dl>       | Como mínimo, la firma de la extensión de certificado y de identificador de entidad es válida.<br/> |
+| <span id="_CERT_CONFIDENCE_AUTHIDEXT"></span><span id="_cert_confidence_authidext"></span><dl> <dt> **CERT \_ CONFIDENCE \_ AUTHIDEXT**</dt> <dt>0x00010000</dt> </dl> | La extensión de identificador de autoridad es válida.<br/>                                                 |
+| <span id="_CERT_CONFIDENCE_HYGIENE"></span><span id="_cert_confidence_hygiene"></span><dl> <dt> **Protección \_ de la confianza \_ de**</dt> <dt>0x00001000</dt> </dl>       | Como mínimo, la firma de la extensión de certificado y de identificador de entidad es válida.<br/> |
 | <span id="_CERT_CONFIDENCE_HIGHEST"></span><span id="_cert_confidence_highest"></span><dl> <dt> **CERT \_ CONFIDENCE \_ HIGHEST**</dt> <dt>0x11111000</dt> </dl>       | Combinación de todos los demás valores de confianza.<br/>                                 |
 
 
@@ -120,7 +120,7 @@ Puntero a una variable **DWORD** que contiene el valor de error de este certific
 
 Certificado de emisor que coincide con el certificado de sujeto especificado por el *parámetro pChildContext.*
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para encontrar correctamente un certificado de emisor que coincida, se deben cumplir los siguientes requisitos:
 
@@ -133,7 +133,7 @@ Para encontrar correctamente un certificado de emisor que coincida, se deben cum
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |

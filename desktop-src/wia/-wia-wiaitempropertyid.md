@@ -1,5 +1,5 @@
 ---
-description: La mayoría de las Windows de propiedad de adquisición de imágenes (WIA) se agrupan en un tipo de datos enumerado, WiaItemPropertyId para los autores de scripting.
+description: La mayoría de Windows de propiedad de adquisición de imágenes (WIA) se agrupan en un tipo de datos enumerado, WiaItemPropertyId para los autores de scripting.
 ms.assetid: d0fd6bd1-c646-4ed8-a6b2-43b424af8288
 title: WiaItemPropertyId
 ms.topic: article
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: dedd11a35d52d19a4fcff4299dce688e8163ecd19d2bf9e4b49e19cb1997b293
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ced5d213d68fa3c4386ecf6f05783bd303bad05
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118207512"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466533"
 ---
 # <a name="wiaitempropertyid"></a>WiaItemPropertyId
 
-La mayoría de las Windows de propiedad de adquisición de imágenes (WIA) se agrupan en un tipo de datos enumerado, WiaItemPropertyId para los autores de scripting.
+La mayoría de Windows de propiedad de adquisición de imágenes (WIA) se agrupan en un tipo de datos enumerado, WiaItemPropertyId para los autores de scripting.
 
 En la tabla siguiente se presenta la asignación entre las convenciones de nomenclatura usadas en scripting y C++. Por ejemplo, en el script, el prefijo "CameraDevice" se asigna al prefijo "WIA \_ DPC" para la constante de C++ correspondiente. En un ejemplo más específico, la propiedad "CameraDeviceFlashMode" es equivalente a la constante "WIA \_ DPC FLASH MODE" de \_ \_ C++. Vea los temas constantes de propiedad correspondientes para obtener descripciones de cada propiedad. 
 

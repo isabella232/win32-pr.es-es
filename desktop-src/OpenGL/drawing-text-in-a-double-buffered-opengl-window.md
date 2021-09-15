@@ -6,12 +6,12 @@ keywords:
 - OpenGL en Windows,text
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84202f59ca1a232bae37603b2ff657cb5c61ae0a1d3961b960b624d061ab20cf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8b0bf4cc99a1806d734ccde5cfae98f4d367da13
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118618551"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473696"
 ---
 # <a name="drawing-text-in-a-double-buffered-opengl-window"></a>Dibujar texto en una ventana Double-Buffered OpenGL
 

@@ -1,31 +1,31 @@
 ---
-description: Muestra el uso de las funciones de red hospedada inalámbrica.
+description: Muestra el uso de funciones de red hospedada inalámbricas.
 ms.assetid: 3da903c2-bdfa-4c1f-92e7-962551f0e08e
 title: Ejemplo de red hospedada inalámbrica
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: eefc91dad883242876d7b0ddf1ec66fb92b18a79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105677415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473725"
 ---
 # <a name="wireless-hosted-network-sample"></a>Ejemplo de red hospedada inalámbrica
 
-En el kit de desarrollo de software (SDK) de Microsoft Windows se incluye un ejemplo de red hospedada inalámbrica que muestra el uso de las funciones de red hospedada inalámbrica. La versión más reciente del Windows SDK está disponible en el [centro de descarga](https://www.microsoft.com/downloads/details.aspx?FamilyID=f26b1aa4-741a-433a-9be5-fa919850bdbf).
+Un ejemplo de red hospedada inalámbrica que muestra el uso de funciones de red hospedada inalámbricas se incluye con el Kit de desarrollo de software (SDK) de Microsoft Windows. La versión más reciente del SDK Windows está disponible en el [Centro de descarga](https://www.microsoft.com/downloads/details.aspx?FamilyID=f26b1aa4-741a-433a-9be5-fa919850bdbf)de .
 
 De forma predeterminada, el código fuente de ejemplo de red hospedada inalámbrica se instala en el directorio siguiente:
 
-**C: \\ archivos de programa \\ Microsoft SDK \\ Windows \\ v 7.0 \\ Samples \\ NetDs \\ WLAN**
+**C: \\ Archivos de programa Sdk de Microsoft Windows \\ \\ \\ v7.0 \\ Samples \\ NetDs \\ Wlan**
 
-El ejemplo de red hospedada inalámbrica se encuentra en la siguiente carpeta:
+El ejemplo de red hospedada inalámbrica se encuentra en la carpeta siguiente:
 
 **WirelessHostedNetwork**
 
-El ejemplo de red hospedada inalámbrica se puede compilar en el Windows SDK para Windows 7. El ejemplo de red hospedada inalámbrica se puede ejecutar en Windows 7 y en Windows Server 2008 R2 con el servicio de LAN inalámbrica instalado.
+El ejemplo de red hospedada inalámbrica se puede compilar en el SDK Windows para Windows 7. El ejemplo de red hospedada inalámbrica se puede ejecutar en Windows 7 y en Windows Server 2008 R2 con el servicio LAN inalámbrico instalado.
 
-En Windows 7 y en Windows Server 2008 R2 con el servicio de LAN inalámbrica instalado, el sistema operativo instala un dispositivo virtual si hay un adaptador inalámbrico compatible con redes hospedadas en la máquina. Este dispositivo virtual normalmente se muestra en la "carpeta conexiones de red" como "conexión de red inalámbrica 2" con el nombre de dispositivo "adaptador de minipuerto de Microsoft Virtual WiFi" si el equipo tiene un único adaptador de red inalámbrica. Este dispositivo virtual se utiliza exclusivamente para realizar conexiones de punto de acceso de software (SoftAP). La duración de este dispositivo virtual está ligada al adaptador inalámbrico físico. Si el adaptador inalámbrico físico está deshabilitado, este dispositivo virtual también se quitará.
+En Windows 7 y en Windows Server 2008 R2 con el servicio laN inalámbrica instalado, el sistema operativo instala un dispositivo virtual si hay un adaptador inalámbrico compatible con la red hospedada en la máquina. Este dispositivo virtual normalmente se muestra en la "Carpeta de conexiones de red" como "Conexión de red inalámbrica 2" con un nombre de dispositivo de "Adaptador de minipuerto De Wi-Fi virtual de Microsoft" si el equipo tiene un único adaptador de red inalámbrica. Este dispositivo virtual se usa exclusivamente para realizar conexiones de punto de acceso de software (SoftAP). La duración de este dispositivo virtual está vinculada al adaptador inalámbrico físico. Si el adaptador inalámbrico físico está deshabilitado, este dispositivo virtual también se quitará.
 
 Las funciones de red hospedada inalámbrica se usan para iniciar y detener la red hospedada inalámbrica, configurar o cambiar la configuración o consultar información.
 
@@ -36,7 +36,7 @@ Las funciones de red hospedada inalámbrica se usan para iniciar y detener la re
 [Acerca de la red hospedada inalámbrica](about-the-wireless-hosted-network.md)
 </dt> <dt>
 
-[Uso de redes hospedadas y conexión compartida a Internet](using-hosted-network-and-internet-connection-sharing.md)
+[Uso del uso compartido de redes hospedadas e Internet](using-hosted-network-and-internet-connection-sharing.md)
 </dt> <dt>
 
 [**WlanHostedNetworkForceStart**](/windows/desktop/api/Wlanapi/nf-wlanapi-wlanhostednetworkforcestart)

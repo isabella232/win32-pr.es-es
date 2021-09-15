@@ -5,19 +5,19 @@ ms.assetid: 252418fc-dad4-43f4-a5e2-38055da3779c
 keywords:
 - Descripción de seguridad Servicios web para Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66a2395e2c1e894968f47fa41e98599ec333f6d2724cf6ffe6cbc5219396bca6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c06e8553441b7eb813106213dbfa089810aad74c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119083169"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467025"
 ---
 # <a name="security-description"></a>Descripción de seguridad
 
-Una desadición de seguridad se representa mediante una estructura de descripción de seguridad de [**WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_security_description) y se proporciona una instancia de una descripción de seguridad cuando se llama a la función [**WsCreateChannel**](/windows/desktop/api/WebServices/nf-webservices-wscreatechannel) para crear un canal seguro o la función [**WsCreateListener**](/windows/desktop/api/WebServices/nf-webservices-wscreatelistener) para crear un agente de escucha.
+Una desvocación de seguridad se representa mediante una estructura DE DESCRIPCIÓN DE SEGURIDAD de [**WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_security_description) y se proporciona una instancia de una descripción de seguridad cuando se llama a la función [**WsCreateChannel**](/windows/desktop/api/WebServices/nf-webservices-wscreatechannel) para crear un canal seguro o la función [**WsCreateListener**](/windows/desktop/api/WebServices/nf-webservices-wscreatelistener) para crear un agente de escucha.
 
 
 ## <a name="structure-of-a-security-description"></a>Estructura de una descripción de seguridad

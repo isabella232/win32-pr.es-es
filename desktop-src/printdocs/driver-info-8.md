@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 753b05b9d59bb98742d5c49102b604cc0a499a4dcdc6c624489d261400279297
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3cc174fdc8617a8ff59afc5a12740eaba715114f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118234844"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360679"
 ---
 # <a name="driver_info_8-structure"></a>Estructura \_ DRIVER INFO \_ 8
 
@@ -61,7 +61,7 @@ typedef struct _DRIVER_INFO_8 {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -117,7 +117,7 @@ Puntero a una cadena terminada en NULL que especifica un nombre de archivo o una
 **pDependentFiles**
 </dt> <dd>
 
-Puntero a un búfer MultiSZ que contiene una secuencia de cadenas terminadas en NULL. Cada cadena terminada en NULL del búfer contiene el nombre de un archivo del que depende el controlador. La secuencia de cadenas finaliza con una cadena vacía de longitud cero. Si **pDependentFiles** no es **NULL** y no contiene ningún nombre de archivo, apuntará a un búfer que contiene dos cadenas vacías.
+Puntero a un búfer MultiSZ que contiene una secuencia de cadenas terminadas en NULL. Cada cadena terminada en NULL del búfer contiene el nombre de un archivo del que depende el controlador. Una cadena vacía de longitud cero finaliza la secuencia de cadenas. Si **pDependentFiles** no es **NULL** y no contiene ningún nombre de archivo, apuntará a un búfer que contiene dos cadenas vacías.
 
 </dd> <dt>
 
@@ -152,7 +152,7 @@ Fecha del paquete de controladores, como se codifica en los archivos de controla
 **dwlDriverVersion**
 </dt> <dd>
 
-Número de versión del controlador. Esto procede de la estructura de versión del controlador.
+Número de versión del controlador. Esto procede de la estructura de versiones del controlador.
 
 </dd> <dt>
 
@@ -219,19 +219,19 @@ Marcas de atributos para los controladores de impresora. Debe ser 0 si driver IN
 
 
 
-| Nombre y valor de marca                                                         | Significado                                                                                                                                                                                                                                                                                                                                             | So mínimo                                             |
+| Nombre y valor de la marca                                                         | Significado                                                                                                                                                                                                                                                                                                                                             | So mínimo                                             |
 |-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
 | CONTROLADOR DE \_ IMPRESORA QUE TIENE EN CUENTA EL \_ \_ PAQUETE<br/> 0x00000001<br/>        | El controlador de impresora forma parte de un paquete de controladores.                                                                                                                                                                                                                                                                                                     | Windows Vista                                          |
-| XPS \_ DEL \_ CONTROLADOR DE IMPRESORA<br/> 0x00000002<br/>                   | El controlador de impresora admite el formato XPS de Microsoft descrito en [XML Paper Specification: Información](/previous-versions/windows/hardware/design/dn641615(v=vs.85))general y también en Comportamiento del producto, sección [<27>](/openspecs/windows_protocols/ms-rprn/e81cbc09-ab05-4a32-ae4a-8ec57b436c43).                        | Windows 8<br/> Windows Server 2012<br/>    |
-| ESPACIO AISLADO \_ DEL CONTROLADOR DE IMPRESORA \_ \_ HABILITADO<br/> 0x00000004<br/>      | El controlador de impresora es compatible con el [aislamiento del controlador de impresora](/openspecs/windows_protocols/ms-rprn/831cd729-be7c-451e-b729-bd8d84ce4d24). Para obtener más información, vea [Comportamiento del producto, sección <28>](/openspecs/windows_protocols/ms-rprn/e81cbc09-ab05-4a32-ae4a-8ec57b436c43). | Windows 7<br/> Windows Server 2008 R2<br/> |
+| XPS \_ DEL \_ CONTROLADOR DE IMPRESORA<br/> 0x00000002<br/>                   | El controlador de impresora admite el formato XPS de Microsoft descrito en la sección [XML Paper Specification: Información](/previous-versions/windows/hardware/design/dn641615(v=vs.85))general y también en Comportamiento del producto, <[27>](/openspecs/windows_protocols/ms-rprn/e81cbc09-ab05-4a32-ae4a-8ec57b436c43).                        | Windows 8<br/> Windows Server 2012<br/>    |
+| ESPACIO AISLADO \_ DEL CONTROLADOR DE IMPRESORA \_ \_ HABILITADO<br/> 0x00000004<br/>      | El controlador de impresora es compatible con el [aislamiento del controlador de impresora](/openspecs/windows_protocols/ms-rprn/831cd729-be7c-451e-b729-bd8d84ce4d24). Para obtener más información, vea [Comportamiento del producto, sección <28>](/openspecs/windows_protocols/ms-rprn/e81cbc09-ab05-4a32-ae4a-8ec57b436c43). | Windows 7<br/> Windows Server 2008 R2<br/> |
 | PRINTER \_ DRIVER \_ CLASS<br/> 0x00000008<br/>                 | El controlador de impresora es un [controlador de impresora de clase](/openspecs/windows_protocols/ms-rprn/831cd729-be7c-451e-b729-bd8d84ce4d24).                                                                                                                                                                                       | Windows 8<br/> Windows Server 2012<br/>    |
-| CONTROLADOR \_ DE IMPRESORA \_ DERIVADO<br/> 0x00000010<br/>               | El controlador de impresora es [un controlador de impresora derivado.](/openspecs/windows_protocols/ms-rprn/831cd729-be7c-451e-b729-bd8d84ce4d24)                                                                                                                                                                                   | Windows 8<br/> Windows Server 2012<br/>    |
+| CONTROLADOR \_ DE IMPRESORA \_ DERIVADO<br/> 0x00000010<br/>               | El controlador de impresora es [un controlador de impresora derivado](/openspecs/windows_protocols/ms-rprn/831cd729-be7c-451e-b729-bd8d84ce4d24).                                                                                                                                                                                   | Windows 8<br/> Windows Server 2012<br/>    |
 | CONTROLADOR \_ DE IMPRESORA NO \_ \_ COMPARTIBLE<br/> 0x00000020<br/>        | Las impresoras que usan este controlador de impresora no se pueden compartir.                                                                                                                                                                                                                                                                                                | Windows 8<br/> Windows Server 2012<br/>    |
 | FAX DE \_ CATEGORÍA DEL CONTROLADOR DE \_ \_ IMPRESORA<br/> 0x00000040<br/>         | El controlador de impresora está pensado para su uso con [impresoras de fax.](/openspecs/windows_protocols/ms-rprn/831cd729-be7c-451e-b729-bd8d84ce4d24)                                                                                                                                                                                    | Windows 8<br/> Windows Server 2012<br/>    |
 | ARCHIVO DE \_ CATEGORÍA DEL CONTROLADOR DE \_ \_ IMPRESORA<br/> 0x00000080<br/>        | El controlador de impresora está pensado para su uso con [impresoras de archivos](/openspecs/windows_protocols/ms-rprn/831cd729-be7c-451e-b729-bd8d84ce4d24).                                                                                                                                                                                  | Windows 8<br/> Windows Server 2012<br/>    |
 | CATEGORÍA \_ DEL CONTROLADOR DE IMPRESORA \_ \_ VIRTUAL<br/> 0x00000100<br/>     | El controlador de impresora está pensado para su uso con [impresoras virtuales.](/openspecs/windows_protocols/ms-rprn/831cd729-be7c-451e-b729-bd8d84ce4d24)                                                                                                                                                                            | Windows 8<br/> Windows Server 2012<br/>    |
-| SERVICIO DE \_ CATEGORÍA DE CONTROLADOR DE \_ \_ IMPRESORA<br/> 0x00000200<br/>     | El controlador de impresora está pensado para su uso con [impresoras de servicio](/openspecs/windows_protocols/ms-rprn/831cd729-be7c-451e-b729-bd8d84ce4d24).                                                                                                                                                                            | Windows 8<br/> Windows Server 2012<br/>    |
-| SE REQUIERE \_ EL \_ RESTABLECIMIENTO \_ DE SOFTWARE DEL CONTROLADOR \_ DE IMPRESORA<br/> 0x00000400<br/> | Las impresoras que usan este controlador de impresora deben seguir las instrucciones descritas en la definición de la clase de dispositivo USB. Para obtener más información, vea [Comportamiento del producto, sección <36>](/openspecs/windows_protocols/ms-rprn/e81cbc09-ab05-4a32-ae4a-8ec57b436c43)                                                                      | Windows 8<br/> Windows Server 2012<br/>    |
+| SERVICIO DE \_ CATEGORÍA DEL CONTROLADOR DE \_ \_ IMPRESORA<br/> 0x00000200<br/>     | El controlador de impresora está pensado para su uso con [impresoras de servicio](/openspecs/windows_protocols/ms-rprn/831cd729-be7c-451e-b729-bd8d84ce4d24).                                                                                                                                                                            | Windows 8<br/> Windows Server 2012<br/>    |
+| SE REQUIERE \_ EL \_ RESTABLECIMIENTO \_ DE SOFTWARE DEL CONTROLADOR \_ DE IMPRESORA<br/> 0x00000400<br/> | Las impresoras que usan este controlador de impresora deben seguir las instrucciones descritas en definición de clase de dispositivo USB. Para obtener más información, vea [Comportamiento del producto, sección <36>](/openspecs/windows_protocols/ms-rprn/e81cbc09-ab05-4a32-ae4a-8ec57b436c43)                                                                      | Windows 8<br/> Windows Server 2012<br/>    |
 
 
 
@@ -242,25 +242,25 @@ Marcas de atributos para los controladores de impresora. Debe ser 0 si driver IN
 **pszzCoreDriverDependencies**
 </dt> <dd>
 
-Puntero a una cadena múltiple terminada en NULL que especifica todos los controladores de impresora principales de los que depende el controlador. Debe ser **NULL si** driver INFO **\_ \_ 8** se pasa a [**AddPrinterDriver**](addprinterdriver.md) o [**AddPrinterDriverEx.**](addprinterdriverex.md)
+Puntero a una cadena múltiple terminada en NULL que especifica todos los controladores de impresora principales de los que depende el controlador. Debe ser **NULL si** se pasa DRIVER INFO **\_ \_ 8** a [**AddPrinterDriver**](addprinterdriver.md) o [**AddPrinterDriverEx.**](addprinterdriverex.md)
 
 </dd> <dt>
 
 **ftMinInboxDriverVerDate**
 </dt> <dd>
 
-La fecha más temprana permitida de todos los controladores incluidos con Windows y de los que depende este controlador.
+La fecha más temprana permitida de los controladores que se suministran con Windows y de los que depende este controlador.
 
 </dd> <dt>
 
 **dwlMinInboxDriverVerVersion**
 </dt> <dd>
 
-La versión más antigua permitida de todos los controladores incluidos con Windows y de los que depende este controlador.
+La versión más antigua permitida de los controladores que se incluyen con Windows y de los que depende este controlador.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las cadenas de estos miembros están contenidas en el archivo .inf que se usa para agregar el controlador.
 
@@ -268,23 +268,23 @@ Las cadenas de estos miembros están contenidas en el archivo .inf que se usa pa
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                                      |
-| Header<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **\_ DRIVER \_ INFO \_ 8W** (Unicode) e **\_ DRIVER INFO \_ \_ 8A** (ANSI)<br/>                             |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Impresión](printdocs-printing.md)
 </dt> <dt>
 
-[Estructuras de API del colador de impresión](printing-and-print-spooler-structures.md)
+[Estructuras de LA API del colador de impresión](printing-and-print-spooler-structures.md)
 </dt> <dt>
 
 [**AddPrinterDriver**](addprinterdriver.md)

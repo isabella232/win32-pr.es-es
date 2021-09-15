@@ -14,11 +14,11 @@ api_type:
 api_location:
 - Win32_tpm.dll
 ms.openlocfilehash: 7d88ec523e983e60cacab57b41307381b05e8de6
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122481871"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270740"
 ---
 # <a name="getphysicalpresencerequest-method-of-the-win32_tpm-class"></a>Método GetPhysicalPresenceRequest de la clase Tpm de \_ Win32
 
@@ -49,7 +49,7 @@ Valor que especifica la operación de presencia física de TPM pendiente.
 
 
 
-| Valor | Significado | 
+| Value | Significado | 
 |-------|---------|
 | <dl><dt>0</dt></dl> | Sin solicitud.<br /> | 
 | <dl><dt>1</dt></dl> | Habilite el TPM.<br /> Esta operación se invierte mediante la operación 2. <br /> Para obtener más información, vea estos métodos relacionados que no implican la presencia física:<ul><li><a href="enable-win32-tpm.md"><strong>Habilitar</strong></a></li><li><a href="isenabled-win32-tpm.md"><strong>IsEnabled</strong></a></li></ul><br /> | 
@@ -100,15 +100,15 @@ En la tabla siguiente se enumeran los códigos de retorno comunes.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Windows SDK. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                      |

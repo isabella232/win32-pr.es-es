@@ -11,12 +11,12 @@ keywords:
 - archivos de definición de máscara, sección Trackbars
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ac92278a2c565e3f98e039ca06192ef3f64eb6edddae9bd3b1795330ce5fc1e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5ed10e576e38c3fdc694fd6bef67c513b2983f05
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119507225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465830"
 ---
 # <a name="trackbars-section"></a>Sección Barras de seguimiento
 

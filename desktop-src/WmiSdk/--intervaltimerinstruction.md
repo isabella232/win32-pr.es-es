@@ -1,5 +1,5 @@
 ---
-description: Genera eventos a intervalos, de forma similar a un mensaje WM \_ TIMER en Windows programación.
+description: Genera eventos a intervalos, de forma similar a un mensaje \_ WM TIMER en Windows programación.
 ms.assetid: 0895a743-a0dd-4833-a2bf-0196369e18b9
 ms.tgt_platform: multiple
 title: __IntervalTimerInstruction clase
@@ -17,16 +17,16 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 17f0c55edceb3c5fb009f49ae97e3765ec3e0255a82f8c75e133344379c24d90
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 20dd1c9fb2d009de4d8d957b4d5980cc6d6ff45e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119640765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466117"
 ---
 # <a name="__intervaltimerinstruction-class"></a>\_\_IntervalTimerInstruction (clase)
 
-La **\_ \_ clase del sistema IntervalTimerInstruction** genera eventos a intervalos, de forma similar a un mensaje WM \_ TIMER Windows programación. Un consumidor de eventos se registra para recibir eventos de temporizador de intervalo mediante la creación de una consulta de eventos que hace referencia a esta clase. Debido al comportamiento del sistema operativo, no hay ninguna garantía de que los eventos se entreguen exactamente en el intervalo solicitado.
+La **\_ \_ clase del sistema IntervalTimerInstruction** genera eventos a intervalos, de forma similar a un mensaje WM \_ TIMER en Windows programación. Un consumidor de eventos se registra para recibir eventos de temporizador de intervalo mediante la creación de una consulta de eventos que hace referencia a esta clase. Debido al comportamiento del sistema operativo, no hay ninguna garantía de que los eventos se entreguen exactamente en el intervalo solicitado.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades se enumeran en orden alfabético, no en orden MOF.
 
@@ -41,7 +41,7 @@ class __IntervalTimerInstruction : __TimerInstruction
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **\_ \_ clase IntervalTimerInstruction** tiene estos tipos de miembros:
 
@@ -82,14 +82,14 @@ Si **es TRUE,** este evento se omitirá si el intervalo ya se ha pasado. El valo
 
 <dt>
 
-FALSE
+false
 </dt> <dd>
 
 Cuando WMI o el consumidor vuelvan a estar disponibles, se generará y recibirá un evento de notificación.
 
 </dd> <dt>
 
-TRUE
+true
 </dt> <dd>
 
 El evento de temporizador no se produce si WMI no está disponible para generarlo en el intervalo de tiempo adecuado o el consumidor que solicita recibir el evento no está disponible.
@@ -114,7 +114,7 @@ Identificador único para este **\_ \_ objeto IntervalTimerInstruction.** Esta p
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **\_ \_ clase IntervalTimerInstruction** se deriva de [**\_ \_ TimerInstruction**](--timerinstruction.md).
 

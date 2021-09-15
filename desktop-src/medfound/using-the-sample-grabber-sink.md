@@ -4,12 +4,12 @@ ms.assetid: AC5970A2-6F12-448D-A444-40020C5C2607
 title: Uso del receptor de sample grabber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 410d3a21faf132ee087660665dee0ae4118a2d16154e2080042f34eacbe4355b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 043f64d8fdc3ac3084d2c59be8917acbbd32dde5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117871281"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468584"
 ---
 # <a name="using-the-sample-grabber-sink"></a>Uso del receptor de sample grabber
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d4b16a2fefdf5cd357a319bc3a074332dfe1a0adc65e8318ab9932bf0a238553
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 94f631ebce3b349ea29492376cf31e0a85c4b093
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118577048"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473335"
 ---
 # <a name="eventscreenheight"></a>event.screenHeight
 
@@ -31,7 +31,7 @@ event.screenHeight
 
 Este atributo es un número de solo **lectura** (**long**).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esto es útil para determinar la cantidad de espacio que hay en el monitor. Si hay dos monitores, calcula el espacio para ambos monitores.
 
@@ -39,13 +39,13 @@ Esto es útil para determinar la cantidad de espacio que hay en el monitor. Si h
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

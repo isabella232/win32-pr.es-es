@@ -12,12 +12,12 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 852f6f04147489336622a5c13e447bcb4fbfd7e20f580edcb5da8bdfadaa5e7a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 00a54f5c79bcbaf4ef61b130db556fc27f264101
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119991955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465581"
 ---
 # <a name="applicationcluster-collection"></a>Colección ApplicationCluster
 
@@ -29,7 +29,7 @@ Designa un enrutador en el clúster de aplicaciones con la propiedad IsRouter en
 
 Esta colección admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**y Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **colección ApplicationCluster** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
@@ -58,7 +58,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 | Entrada | Value |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descripción    | Nombre del servidor. Se quitan los espacios adicionales al principio y al final de la cadena. Esta propiedad se devuelve cuando se llama al método de propiedad [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) o [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
-| Access         | WriteOnce                                                                                                                                                                                                                                                            |
+| Acceso         | WriteOnce                                                                                                                                                                                                                                                            |
 | Tipo           | String                                                                                                                                                                                                                                                               |
 | Predeterminado        | "Nuevo equipo"                                                                                                                                                                                                                                                       |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                         |
@@ -67,7 +67,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

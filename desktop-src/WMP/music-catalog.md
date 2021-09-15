@@ -13,20 +13,20 @@ keywords:
 - compilador de catálogo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2474204686a498c81ec12b87daeba99f21397492dc5178a70580d4a37750d9cd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 479a74393ee4d853f591cb6d75eef8be741c9228
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120123305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359280"
 ---
 # <a name="music-catalog"></a>Música Catálogo
 
-Una tienda en línea de tipo 1 crea su catálogo de música como un conjunto de archivos de valores separados por tabulaciones (TSV). A continuación, la [](catalog-compiler-for-type-1-online-stores.md) tienda en línea usa el compilador de catálogos de Microsoft para compilar los archivos de TSV en un catálogo comprimido que se puede descargar Reproductor de Windows Media. Reproductor de Windows Media puede descargar archivos de catálogo completos o archivos de actualización de catálogo. Las actualizaciones del catálogo contienen solo la información del catálogo que ha cambiado desde la última actualización del catálogo. Es el complemento de asociado de contenido el que determina si se debe descargar un catálogo completo o una actualización. En cualquier caso, Reproductor de Windows Media aplica los cambios al catálogo actual tras la notificación desde el complemento.
+Una tienda en línea de tipo 1 crea su catálogo de música como un conjunto de archivos de valores separados por tabulaciones (TSV). A continuación, la [](catalog-compiler-for-type-1-online-stores.md) tienda en línea usa el compilador de catálogos de Microsoft para compilar los archivos TSV en un catálogo comprimido que puede descargar Reproductor de Windows Media. Reproductor de Windows Media puede descargar archivos de catálogo completos o archivos de actualización de catálogo. Las actualizaciones de catálogo contienen solo la información del catálogo que ha cambiado desde la última actualización del catálogo. Es el complemento de asociado de contenido el que determina si se debe descargar un catálogo completo o una actualización. En cualquier caso, Reproductor de Windows Media aplica los cambios al catálogo actual tras la notificación desde el complemento.
 
 Si la tienda en línea tiene preparado un nuevo catálogo, el complemento puede notificar al reproductor llamando a [IWMPContentPartnerCallback::Notify](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartnercallback-notify) y pasando wmpcnNewCatalogAvailable como valor para el parámetro de tipo. 
 
-Cuando Reproductor de Windows Media está listo para descargar un catálogo o una actualización, el reproductor llama a [IWMPContentPartner::GetCatalogURL](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-getcatalogurl). Este método proporciona al complemento información sobre el catálogo actual, como la versión del catálogo y el identificador de configuración regional. El complemento responde al proporcionar el localizador uniforme de recursos (URL) del catálogo completo o la actualización correctos, así como un número de versión actualizado y la fecha de expiración. Reproductor de Windows Media solicitudes periódicas de actualizaciones del catálogo en función de la información proporcionada por el complemento en **GetCatalogURL**.
+Cuando Reproductor de Windows Media está listo para descargar un catálogo o actualización, el reproductor llama a [IWMPContentPartner::GetCatalogURL](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-getcatalogurl). Este método proporciona al complemento información sobre el catálogo actual, como la versión del catálogo y el identificador de configuración regional. El complemento responde al proporcionar el localizador uniforme de recursos (URL) del catálogo completo o la actualización correctos, así como un número de versión actualizado y la fecha de expiración. Reproductor de Windows Media solicitudes periódicas de actualizaciones del catálogo en función de la información proporcionada por el complemento en **GetCatalogURL**.
 
 ## <a name="related-topics"></a>Temas relacionados
 

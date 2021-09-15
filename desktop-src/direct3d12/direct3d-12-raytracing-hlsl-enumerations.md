@@ -1,20 +1,20 @@
 ---
 title: Enumeraciones de HLSL de Direct3D 12 Raytracing
-description: Las siguientes enumeraciones HLSL admiten la canalización de rayos de Direct3D 12.
+description: Las enumeraciones HLSL siguientes admiten la canalización de rayos de Direct3D 12.
 ms.assetid: ''
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ee7e962ad95d6e68a71e21d26f4153d1d50b7f771d2336be8e9d3af3dd18449
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b91f59fbef9d6e5f763128dbb5d3235e2e45f531
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118989725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466350"
 ---
 # <a name="direct3d-12-raytracing-hlsl-enumerations"></a>Enumeraciones de HLSL de Direct3D 12 Raytracing
 
-Las siguientes enumeraciones HLSL admiten la canalización de rayos de Direct3D 12.
+Las enumeraciones HLSL siguientes admiten la canalización de rayos de Direct3D 12.
 
 ## <a name="in-this-section"></a>En esta sección
 

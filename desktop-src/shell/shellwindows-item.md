@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: fdc64659037cbdb471d7c2142ed6c096684966cd920d4e1f6ecee046d28cce8b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ccdb73deb1d97d9c6e1ad8c335db3c58d796a299
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119660592"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468038"
 ---
 # <a name="shellwindowsitem-method"></a>Método ShellWindows.Item
 
@@ -39,7 +39,7 @@ retVal = ShellWindows.Item(
 
 <dl> <dt>
 
-*iIndex* \[ in, opcional\]
+*iIndex* \[ en, opcional\]
 </dt> <dd>
 
 Tipo: **Variant**
@@ -56,7 +56,7 @@ Referencia de objeto al [**objeto InternetExplorer**](/previous-versions/windows
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se [**usa Item**](folderitemverbs-item.md) para recuperar el [**objeto InternetExplorer**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) que representa el primer elemento de ventana de Shell. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se [**usa Item**](folderitemverbs-item.md) para recuperar el [**objeto InternetExplorer**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752084(v=vs.85)) que representa el primer elemento de ventana de Shell. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -149,9 +149,9 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |

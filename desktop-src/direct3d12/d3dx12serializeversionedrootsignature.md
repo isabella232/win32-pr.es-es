@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f69e3bf66bcbad61e3d9bf676038f27511f756d7a3a473be2c513553862eb90
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 70a9d0424f7f7a7f89edde18273c5d1fa22fae28
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119851159"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359813"
 ---
 # <a name="d3dx12serializeversionedrootsignature-function"></a>Función D3DX12SerializeVersionedRootSignature
 
@@ -86,9 +86,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Devuelve **S \_ OK si** se realiza correctamente; de lo contrario, devuelve uno de los códigos de retorno de [Direct3D 12](d3d12-graphics-reference-returnvalues.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta función se publicó para coincidir con la Windows 10 de aniversario (14393). Para admitir versiones Windows 10 anteriores a esta, el uso de esta función requiere que se configure d3d12.lib para retrasar *la carga.*
+Esta función se publicó para coincidir con la actualización Windows 10 aniversario (14393). Para admitir versiones Windows 10 anteriores a esta, el uso de esta función requiere que se configure d3d12.lib para la *carga retrasada.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,7 +102,7 @@ Esta función se publicó para coincidir con la Windows 10 de aniversario (14393
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

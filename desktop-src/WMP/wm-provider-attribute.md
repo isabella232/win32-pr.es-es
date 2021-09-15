@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc7fa8312d095151145cfe33a139def23e20082aec2cd1d5f1c3344b9b565dfb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1d7c2c1c796edf28a567f72708c60c7976f718bb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119735375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466387"
 ---
 # <a name="wmprovider-attribute"></a>Atributo WM/Provider
 
@@ -32,7 +32,7 @@ El **atributo WM/Provider** es el nombre del proveedor de los valores de atribut
 -   [Elementos de radio](radio-item-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se almacena tanto en la biblioteca (o caché) como en el archivo multimedia digital.
 
@@ -52,7 +52,7 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

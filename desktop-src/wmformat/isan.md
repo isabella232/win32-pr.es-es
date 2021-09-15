@@ -1,5 +1,5 @@
 ---
-title: Isan
+title: ISAN
 description: El atributo ISAN contiene el número de norma internacional (ISAN) que identifica el contenido.
 ms.assetid: 2937d422-f062-4373-845e-dd200512ed0b
 keywords:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec2af088938219ed48f2b281c627c0b64cc8e13fdea630b54a51a6f23db1b448
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 88dc4a850edc43178deb043143ee8f9b37140507
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119808825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466699"
 ---
-# <a name="isan"></a>Isan
+# <a name="isan"></a>ISAN
 
 El **atributo ISAN** contiene el número de norma internacional (ISAN) que identifica el contenido.
 
@@ -31,7 +31,7 @@ g \_ wszISAN
 
 **CADENA DE \_ TIPO \_ WMT**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ISAN es un estándar internacional para identificar los trabajos del intérprete. Para obtener información sobre ISAN, visite el sitio [web del estándar](https://www.isan.org/).
 
@@ -61,7 +61,7 @@ La cadena siguiente muestra el formato de un ISAN con información de versión.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

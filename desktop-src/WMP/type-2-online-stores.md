@@ -9,12 +9,12 @@ keywords:
 - Reproductor de Windows Media, escriba 2 tiendas en línea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a45151ed78d4c91c115e35812f7da201574bbf07427346a736095a4a44ba3eac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a4212db224b54de44dd115317bea8e961fe3351a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118117391"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465810"
 ---
 # <a name="type-2-online-stores"></a>Tiendas en línea de tipo 2
 
@@ -23,7 +23,7 @@ ms.locfileid: "118117391"
 
  
 
-Reproductor de Windows Media 11 admite tiendas en línea de tipo 1 y tipo 2. Los almacenes de tipo 1 están más integrados en la interfaz de usuario del reproductor que los almacenes de tipo 2. Reproductor de Windows Media 10 admite almacenes de tipo 2, pero no almacenes de tipo 1. Esta documentación, que solo se aplica a almacenes de tipo 2, se divide en las secciones siguientes.
+Reproductor de Windows Media 11 admite tiendas en línea de tipo 1 y tipo 2. Los almacenes de tipo 1 están más integrados en la interfaz de usuario del reproductor que los almacenes de tipo 2. Reproductor de Windows Media 10 admite almacenes de tipo 2, pero no de tipo 1. Esta documentación, que solo se aplica a almacenes de tipo 2, se divide en las secciones siguientes.
 
 
 

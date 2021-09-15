@@ -4,12 +4,12 @@ ms.assetid: 5a4040a4-66ed-44ea-a07f-6410f88d1446
 title: Esquema de archivo de manifiesto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ec4c3e82d196485da5fe4803ba70a4cb1081c38585625399e01e5f02244bd02c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9feb29c5a0f018408b8ed7f1872fb97c85e19b15
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119977355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271492"
 ---
 # <a name="manifest-file-schema"></a>Esquema de archivo de manifiesto
 

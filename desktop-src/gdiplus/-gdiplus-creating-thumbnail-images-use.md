@@ -4,12 +4,12 @@ ms.assetid: 96f95d00-6f96-4b8a-b84b-010203433d74
 title: Creación de imágenes en miniatura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5d44fec3220bef7a6691d3852d16f90e9cf43635c99f69bba16f3b569ebabc9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 30ac737a49bad85ecc25eeeef1266a02cdeb408f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117696316"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473140"
 ---
 # <a name="creating-thumbnail-images"></a>Creación de imágenes en miniatura
 

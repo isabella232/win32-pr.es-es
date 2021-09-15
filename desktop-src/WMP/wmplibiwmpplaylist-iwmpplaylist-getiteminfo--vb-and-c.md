@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54e3ad24f12333dbc9db5baf977300d1755a9cecc60739504da05478d5acc48e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ced433b13f5af2d1df8c12dba023b7fbb55c5f7d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117745757"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467009"
 ---
 # <a name="iwmpplaylistgetiteminfo-method"></a>IWMPPlaylist::getItemInfo (método)
 
@@ -64,7 +64,7 @@ Implements IWMPPlaylist.getItemInfo
 
 **System.String que** es el valor del atributo de lista de reproducción.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Antes de usar este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
@@ -82,7 +82,7 @@ Vea la [propiedad attributeCount](wmplibiwmpplaylist-iwmpplaylist-attributecount
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

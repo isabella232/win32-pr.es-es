@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8a1e9ed35325390f3315cd269d89284fd3426a9f1cbad4c1c025be06dd33204f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1c7e1c0d626c74f5427f91a5b9eb796e3b79d5a9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119676265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270223"
 ---
 # <a name="d3dxcreatemesh-function"></a>Función D3DXCreateMesh
 
@@ -50,7 +50,7 @@ HRESULT D3DXCreateMesh(
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número de caras para la malla. El intervalo válido para este número es mayor que 0 y uno menor que el DWORD máximo (normalmente 65534), porque el último índice está reservado.
+Número de caras de la malla. El intervalo válido para este número es mayor que 0 y uno menor que el DWORD máximo (normalmente 65534), porque el último índice está reservado.
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ Número de caras para la malla. El intervalo válido para este número es mayor 
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número de vértices de la malla. Este parámetro debe ser mayor que 0.
+Número de vértices para la malla. Este parámetro debe ser mayor que 0.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Combinación de una o varias marcas de la [**enumeración D3DXMESH,**](./d3dxmes
 
 Tipo: **const [**LPD3DVERTEXELEMENT9**](d3dvertexelement9.md) \***
 
-Matriz [**de elementos D3DVERTEXELEMENT9,**](d3dvertexelement9.md) que describe el formato de vértice de la malla devuelta. Este parámetro debe asignarse directamente a un formato de vértice flexible (FVF).
+Matriz de [**elementos D3DVERTEXELEMENT9,**](d3dvertexelement9.md) que describe el formato de vértice de la malla devuelta. Este parámetro debe asignarse directamente a un formato de vértice flexible (FVF).
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

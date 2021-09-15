@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: c1e78c17cccf416d186c4669e3576c5a0c9bf2365cb048a73b42d583b187156f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 517d480d1c831627cadb289c41f99d24b1025ef2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119034273"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468526"
 ---
 # <a name="enumprinterdataex-function"></a>Función EnumPrinterDataEx
 
 La **función EnumPrinterDataEx** enumera todos los nombres de valor y los datos de una impresora y clave especificadas.
 
-Los datos de impresora se almacenan en el Registro. Al enumerar los datos de la impresora, no llame a funciones del Registro que puedan cambiar los datos.
+Los datos de impresora se almacenan en el registro. Al enumerar los datos de la impresora, no llame a funciones del Registro que puedan cambiar los datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -58,7 +58,7 @@ Identificador de la impresora para la que la función recupera los datos de conf
 *pKeyName* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en NULL que especifica la clave que contiene los valores que se deben enumerar. Use el carácter de barra diagonal inversa ( ) como delimitador para especificar una ruta de \\ acceso con una o varias subclaves. **EnumPrinterDataEx** enumera todos los valores de la clave, pero no enumera los valores de las subclaves de la clave especificada. Use la [**función EnumPrinterKey**](enumprinterkey.md) para enumerar subclaves.
+Puntero a una cadena terminada en NULL que especifica la clave que contiene los valores que se deben enumerar. Use el carácter de barra diagonal inversa ( ) como delimitador para especificar una ruta de \\ acceso con una o varias subclaves. **EnumPrinterDataEx** enumera todos los valores de la clave, pero no enumera los valores de las subclaves de la clave especificada. Use la [**función EnumPrinterKey**](enumprinterkey.md) para enumerar las subclaves.
 
 Si *pKeyName* es **NULL o** una cadena vacía, **EnumPrinterDataEx** devuelve ERROR \_ INVALID \_ PARAMETER.
 
@@ -67,14 +67,14 @@ Si *pKeyName* es **NULL o** una cadena vacía, **EnumPrinterDataEx** devuelve ER
 *pEnumValues* \[ out\]
 </dt> <dd>
 
-Puntero a un búfer que recibe una matriz de [**estructuras PRINTER \_ ENUM \_ VALUES.**](printer-enum-values.md) Cada estructura contiene el nombre del valor, el tipo, los datos y los tamaños de un valor bajo la clave.
+Puntero a un búfer que recibe una matriz de estructuras [**PRINTER \_ ENUM \_ VALUES.**](printer-enum-values.md) Cada estructura contiene el nombre del valor, el tipo, los datos y los tamaños de un valor bajo la clave.
 
 </dd> <dt>
 
 *cbEnumValues* \[ En\]
 </dt> <dd>
 
-Tamaño, en bytes, del búfer al que apunta *byteEnumValues.* Si establece *cbEnumValues* en cero, el *parámetro lcEnumValues* devuelve el tamaño de búfer necesario.
+Tamaño, en bytes, del búfer al que apunta *byteEnumValues.* Si establece *cbEnumValues en* cero, el parámetro *pwEnumValues* devuelve el tamaño de búfer necesario.
 
 </dd> <dt>
 
@@ -98,14 +98,14 @@ Si la función se realiza correctamente, el valor devuelto es ERROR \_ SUCCESS.
 
 Si se produce un error en la función, el valor devuelto es un código de error del sistema.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
 
  
 
-**EnumPrinterDataEx** recupera los datos de configuración de impresora establecidos por las [**funciones SetPrinterDataEx**](setprinterdataex.md) [**y SetPrinterData.**](setprinterdata.md)
+**EnumPrinterDataEx** recupera los datos de configuración de impresora establecidos por las funciones [**SetPrinterDataEx**](setprinterdataex.md) [**y SetPrinterData.**](setprinterdata.md)
 
 ## <a name="requirements"></a>Requisitos
 

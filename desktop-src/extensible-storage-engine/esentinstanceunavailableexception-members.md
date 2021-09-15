@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Miembros de EsentInstanceUnavailableException'
+description: Más información sobre los miembros de EsentInstanceUnavailableException
 title: Miembros de EsentInstanceUnavailableException
 TOCTitle: EsentInstanceUnavailableException members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.EsentInstanceUnavailableException
@@ -7,21 +7,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101831
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: b0278e90d273a166e707edc0d8545b9bcab7ac47b8ae98b18405805becb152cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8d7e92edfffcffa48c71054e285c2bca9d1b3f14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119116077"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473182"
 ---
 # <a name="esentinstanceunavailableexception-members"></a>Miembros de EsentInstanceUnavailableException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para JET_err. Excepciones InstanceUnavailable.
+Clase base para JET_err. InstanceUnavailable exceptions.
 
-El [tipo EsentInstanceUnavailableException](./esentinstanceunavailableexception-class.md) expone los miembros siguientes.
+El [tipo EsentInstanceUnavailableException](./esentinstanceunavailableexception-class.md) expone los siguientes miembros.
 
 ## <a name="constructors"></a>Constructores
 
@@ -58,7 +58,7 @@ Superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -164,7 +164,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

@@ -1,5 +1,5 @@
 ---
-description: Recupera el identificador de la barra de aplicaciones de autohide asociada a un borde de la pantalla. Si el sistema tiene varios monitores, se usa el monitor que contiene la barra de tareas principal.
+description: Recupera el identificador de la barra de aplicaciones autohide asociada a un borde de la pantalla. Si el sistema tiene varios monitores, se usa el monitor que contiene la barra de tareas principal.
 title: ABM_GETAUTOHIDEBAR mensaje (Shellapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,19 +13,19 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5ce38caf8cc1ad39e682aa8650e08e4860a3406e33669008d6ceee65e0416149
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 979825a9dbc28a89e3579419542877faacbace45
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118051157"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468312"
 ---
 # <a name="abm_getautohidebar-message"></a>Mensaje \_ GETAUTOHIDEBAR de ABM
 
-Recupera el identificador de la barra de aplicaciones de autohide asociada a un borde de la pantalla. Si el sistema tiene varios monitores, se usa el monitor que contiene la barra de tareas principal.
+Recupera el identificador de la barra de aplicaciones autohide asociada a un borde de la pantalla. Si el sistema tiene varios monitores, se usa el monitor que contiene la barra de tareas principal.
 
 > [!Note]  
-> Para consultar una barra de aplicaciones de autohide en un monitor específico, use [**ABM \_ GETAUTOHIDEBAREX**](abm-getautohidebarex.md).
+> Para consultar una barra de aplicaciones autohide en un monitor específico, use [**ABM \_ GETAUTOHIDEBAREX**](abm-getautohidebarex.md).
 
  
 
@@ -43,13 +43,13 @@ hwndAutoHide = (HWND) SHAppBarMessage(ABM_GETAUTOHIDEBAR, pabd);
 *pabd* 
 </dt> <dd>
 
-Puntero a una [**estructura APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) que especifica el borde de la pantalla. Debe especificar los **miembros cbSize** **y uEdge** al enviar este mensaje; se omiten todos los demás miembros.
+Puntero a una [**estructura APPBARDATA**](/windows/desktop/api/Shellapi/ns-shellapi-appbardata) que especifica el borde de la pantalla. Debe especificar los miembros **cbSize** y **uEdge** al enviar este mensaje; se omiten todos los demás miembros.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Devuelve el identificador a la barra de aplicaciones autohide. El valor devuelto es **NULL** si se produce un error o si no hay ninguna barra de aplicaciones autohide asociada al borde especificado.
+Devuelve el identificador a la barra de aplicaciones autohide. El valor devuelto es **NULL si** se produce un error o si no hay ninguna barra de aplicaciones autohide asociada al borde especificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Devuelve el identificador a la barra de aplicaciones autohide. El valor devuelto
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                  |
 | Encabezado<br/>                   | <dl> <dt>Shellapi.h</dt> </dl> |
 

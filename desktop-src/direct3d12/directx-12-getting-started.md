@@ -5,12 +5,12 @@ ms.assetid: DED7A434-FCD4-4F41-8B2C-E5AE6E48430F
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a9755eb9ca8ce7a591adc88586045000a5acf2f513a57339401200ab349e9a6d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1353c8c66fd401e364b9db302463f164f757c9ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119124203"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466338"
 ---
 # <a name="understanding-direct3d-12"></a>Descripción de Direct3D 12
 
@@ -21,7 +21,7 @@ Use los temas de esta sección para configurar y obtener información sobre el e
 Para programar con Direct3D 12, necesita estos componentes:
 
 -   Una plataforma de hardware con una GPU compatible con Direct3D 12
--   [Mostrar controladores](/previous-versions//ff569172(v=vs.85)) que admiten el Windows modelo de controlador de pantalla (WDDM) 2.0
+-   [Mostrar controladores](/previous-versions//ff569172(v=vs.85)) que admiten Windows Modelo de controlador de visualización (WDDM) 2.0
 
 ## <a name="in-this-section"></a>En esta sección
 

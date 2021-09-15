@@ -4,19 +4,19 @@ ms.assetid: 7a8a38d8-6549-4686-a298-f3b427b380e3
 title: Mejora del rendimiento con la agrupación de objetos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68ce6a86e76f7a97395973cc9cab4c4e9e81177f4312a389c2b01ec2d88eb7a8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 398b9140080d3a439293b5152b4da7251978e800
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118547852"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465776"
 ---
 # <a name="improving-performance-with-object-pooling"></a>Mejora del rendimiento con la agrupación de objetos
 
 La agrupación de objetos puede ser muy eficaz en determinadas circunstancias, lo que produce aumentos sustanciales en el rendimiento. La idea general para volver a usar objetos para aprovecharlo es agrupar todos los recursos posibles, factorización de la inicialización del trabajo real realizado y, a continuación, adaptar administrativamente las características del grupo al hardware real en el momento de la implementación. Es decir, debe continuar según los pasos siguientes:
 
 1.  Escriba el objeto para factorización de la inicialización costosa y la adquisición de recursos que se realiza para cualquier cliente como requisito previo para realizar el trabajo real en nombre del cliente. Escriba constructores de objetos pesados para agrupar tantos recursos como sea posible para que estén retenidos por el objeto y estén disponibles inmediatamente cuando los clientes obtengan un objeto del grupo.
-2.  Configure administrativamente el grupo para lograr el mejor equilibrio en los recursos de hardware disponibles, normalmente negociando la memoria dedicada a mantener un grupo de un tamaño determinado a cambio de un acceso de cliente más rápido y el uso de objetos. En un momento determinado, la agrupación logrará una disminución de las devoluciones y puede obtener un rendimiento lo suficientemente bueno como para limitar el posible uso de recursos por un componente determinado.
+2.  Configure administrativamente el grupo para lograr el mejor equilibrio en los recursos de hardware disponibles, normalmente negociando la memoria dedicada a mantener un grupo de un tamaño determinado a cambio de un acceso de cliente más rápido y el uso de objetos. En un momento dado, la agrupación logrará una disminución de las devoluciones y puede obtener un rendimiento lo suficientemente bueno como para limitar el posible uso de recursos por un componente determinado.
 
 ## <a name="doing-actual-work-or-acquiring-resources"></a>Realizar trabajo real o adquirir recursos
 
@@ -24,7 +24,7 @@ Si tiene un componente que los clientes usarán brevemente y en sucesión rápid
 
 Puede escribir el componente para que en el constructor del objeto realice la mayor parte del trabajo lento que sea uniforme para todos los clientes como sea posible: adquirir una o varias conexiones, ejecutar scripts, capturar datos de inicialización de archivos o a través de una red, etc. Esto tiene el efecto de la agrupación de todos estos recursos. Está agrupando la combinación de recursos y el estado genérico necesario para realizar algún trabajo.
 
-En esta circunstancia, cuando los clientes obtienen un objeto del grupo, tienen esos recursos disponibles inmediatamente. Normalmente, usarán el objeto para realizar una pequeña unidad de trabajo, insertar o extraer datos y, a continuación, el objeto llamará a [**IObjectContext::SetComplete**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setcomplete) o [**IObjectContext::SetAbort**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setabort) y devolverá. Con patrones de uso rápido como este, la agrupación ofrece excelentes ventajas de rendimiento. Puede aprovechar completamente la simplicidad del modelo de programación de transacciones automáticas sin estado pero lograr el rendimiento a la par de los componentes con estado tradicionales.
+En esta circunstancia, cuando los clientes obtienen un objeto del grupo, tienen esos recursos disponibles inmediatamente. Normalmente, usarán el objeto para realizar una pequeña unidad de trabajo, insertar o extraer datos y, a continuación, el objeto llamará a [**IObjectContext::SetComplete**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setcomplete) o [**IObjectContext::SetAbort**](/windows/desktop/api/ComSvcs/nf-comsvcs-iobjectcontext-setabort) y devolverá. Con patrones de uso rápido como este, la agrupación produce excelentes ventajas de rendimiento. Puede aprovechar completamente la simplicidad del modelo de programación de transacciones automáticas sin estado pero lograr el rendimiento a la par de los componentes con estado tradicionales.
 
 Sin embargo, si los clientes usan un objeto durante mucho tiempo cada vez que lo llaman, la agrupación tendrá menos sentido. La ventaja de velocidad que obtiene es marginal, ya que el tiempo de uso aumenta en relación con el tiempo de inicialización. Se obtienen devoluciones decreciendo que pueden no justificar el costo de la memoria necesaria para contener un grupo de objetos activos.
 

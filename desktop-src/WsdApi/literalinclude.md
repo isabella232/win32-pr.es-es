@@ -5,11 +5,11 @@ title: literalInclude, elemento
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: bcfbd72300607dd2c6f3f21e4be3666083b559cb
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122625321"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473282"
 ---
 # <a name="literalinclude-element"></a>literalInclude, elemento
 
@@ -76,7 +76,7 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En los ejemplos siguientes se muestra el código generado a partir de diferentes **elementos literalesInclude.**
 

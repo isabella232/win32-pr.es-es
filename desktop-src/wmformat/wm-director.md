@@ -3,7 +3,7 @@ title: WM/Director
 description: El atributo WM/Director contiene el nombre del director.
 ms.assetid: 1bbb640a-9d8c-4e03-b4ce-706aabe772d5
 keywords:
-- Formato multimedia de Windows WM/Director
+- Formato multimedia de windows WM/Director
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b27779fd22a1d77aa425142604f3ce31bec1b10a8a354c1d0967365d2515f87d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a86768cbbec47357ce56a8c2c1308023a34077c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119027093"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466206"
 ---
 # <a name="wmdirector"></a>WM/Director
 
@@ -29,11 +29,11 @@ g \_ wszWMDirector
 
 ## <a name="data-type"></a>Tipo de datos
 
-**CADENA DE \_ TIPO \_ WMT**
+**CADENA DE TIPO WMT \_ \_**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Normalmente, los archivos de vídeo tienen directores, y es más probable que los archivos de audio usen [**WM/Producer.**](wm-producer.md)
+Normalmente, los archivos de vídeo tienen directores, es más probable que los archivos de audio usen [**WM/Producer**](wm-producer.md).
 
 ## <a name="see-also"></a>Vea también
 

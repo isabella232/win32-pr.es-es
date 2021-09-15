@@ -10,17 +10,17 @@ api_location: ''
 topic_type:
 - kbArticle
 ms.openlocfilehash: ba9d0163a00ab525fb0a52267c1226b6a48230a4
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880871"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468119"
 ---
 # <a name="foldertype-element-library-schema"></a>Elemento folderType (esquema de biblioteca)
 
 El &lt; elemento folderType &gt; especifica un GUID para el tipo de carpeta. Este elemento es necesario si existe el &lt; elemento &gt; templateInfo; de lo contrario, es opcional. Este elemento no tiene atributos ni elementos secundarios.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```
@@ -48,7 +48,7 @@ El &lt; elemento folderType &gt; especifica un GUID para el tipo de carpeta. Est
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Establecer un tipo de carpeta determina las columnas y los detalles que aparecen en Windows Explorer de forma predeterminada. Los identificadores de tipo de carpeta [**(FOLDERTYPEID)**](foldertypeid.md)son GUID definidos en Shlguid.h. En la tabla siguiente se enumeran los GUID de los tipos de carpeta comunes.
 

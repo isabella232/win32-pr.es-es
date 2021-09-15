@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: b8fb4ce8-d284-4558-82a4-488d4d833bcb
-ms.openlocfilehash: 9e2f514494ae8040c7bdb97f556555bd7f32794e4259300da240956ff6fcfe98
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 16f75f562149b50237a6b41bf2023d1f694741e3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119094150"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360650"
 ---
 # <a name="fmevent_user_refresh-message"></a>Mensaje FMEVENT \_ USER \_ REFRESH
 
@@ -50,7 +50,7 @@ Un archivo DLL de extensión debe devolver cero si procesa este mensaje.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 79c46e8f-f7e6-42ff-b3e8-d69c822acf74
 title: elemento notificationInterface
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1751e177c0675cd7c6b57a892a284ab181d32692855b462c078ad253d0b2ecb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: da4ec9a2215fe0072b5c78c7d47f45206827da8d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119856505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473263"
 ---
 # <a name="notificationinterface-element"></a>elemento notificationInterface
 

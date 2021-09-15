@@ -12,12 +12,12 @@ keywords:
 - plantillas de conformidad de dispositivos, combinaciones recomendadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f59606df5328fc7ca791196868fb9143e6d13bdc7a069b39947bed0c8404249
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 98da6ddfba65800c5ca1b672e404843995781d07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119027333"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466661"
 ---
 # <a name="recommended-device-conformance-template-combinations"></a>Combinaciones recomendadas de plantillas de conformidad de dispositivos
 
@@ -25,7 +25,7 @@ En la tabla siguiente se enumeran las combinaciones recomendadas de plantillas d
 
 
 
-| Windows Códec Media Video 9 | Windows Códec Media Audio 9 | Windows Códec media audio 9 voz | Windows Códec de Professional Media Audio 9 |
+| Windows Códec de Vídeo multimedia 9 | Windows Códec Media Audio 9 | Windows Códec de voz De audio multimedia 9 | Windows Códec de Professional Audio multimedia 9 |
 |-----------------------------|-----------------------------|-----------------------------------|------------------------------------------|
 | SP@LL                       | L2                          | S2                                | \-                                       |
 | SP@ML                       | L2                          | S2                                | \-                                       |

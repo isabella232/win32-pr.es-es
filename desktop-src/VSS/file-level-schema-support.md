@@ -4,12 +4,12 @@ ms.assetid: a3ac69b4-894a-4536-8fab-f45ad7e5118a
 title: Compatibilidad con esquemas de nivel de archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 550885a540e62fc145541bae979fad34cb9488f62f9f26ea17e647068c1fad46
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 460d256a3eaa016933e697687d05e26838c14ae2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120006375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473370"
 ---
 # <a name="file-level-schema-support"></a>Compatibilidad con esquemas de nivel de archivo
 

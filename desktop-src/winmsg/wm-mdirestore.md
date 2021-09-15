@@ -1,19 +1,19 @@
 ---
-description: Una aplicación envía el mensaje WM MDIRESTORE a una ventana de cliente de interfaz de múltiples documentos (MDI) para restaurar una ventana secundaria MDI de tamaño maximizado \_ o minimizado.
+description: Una aplicación envía el mensaje WM MDIRESTORE a una ventana cliente de interfaz de múltiples documentos (MDI) para restaurar una ventana secundaria MDI a partir de un tamaño maximizado \_ o minimizado.
 ms.assetid: bb99fda1-9eb5-4307-9326-9a417a046c22
 title: WM_MDIRESTORE mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8bc9a8b4a414a1f987ad51b01f94c50b336adb8a32a298a83a1a3b9de8b0bd5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cc2cf36a0b428e1e9003682a5e766f613fd7ba81
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120110705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466728"
 ---
 # <a name="wm_mdirestore-message"></a>Mensaje \_ DE WM MDIRESTORE
 
-Una aplicación envía el **mensaje WM \_ MDIRESTORE** a una ventana de cliente de interfaz de múltiples documentos (MDI) para restaurar una ventana secundaria MDI de tamaño maximizado o minimizado.
+Una aplicación envía el **mensaje WM \_ MDIRESTORE** a una ventana cliente de interfaz de múltiples documentos (MDI) para restaurar una ventana secundaria MDI a partir de un tamaño maximizado o minimizado.
 
 
 ```C++
@@ -29,7 +29,7 @@ Una aplicación envía el **mensaje WM \_ MDIRESTORE** a una ventana de cliente 
 *wParam* 
 </dt> <dd>
 
-Identificador de la ventana secundaria MDI que se va a restaurar.
+Identificador de la ventana secundaria de MDI que se va a restaurar.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ El valor devuelto siempre es cero.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,36 +1,36 @@
 ---
-title: Leer archivos protegidos
-description: Leer archivos protegidos
+title: Lectura de archivos protegidos
+description: Lectura de archivos protegidos
 ms.assetid: 24f839f1-ce57-4d06-b1a5-a6bea7b5b7bb
 keywords:
 - Windows SDK de formato multimedia, lectura de archivos protegidos
 - Windows SDK de formato multimedia, archivos protegidos
 - Formato de sistemas avanzados (ASF), lectura de archivos protegidos
-- ASF (formato de sistemas avanzados), leer archivos protegidos
+- ASF (formato de sistemas avanzados), lectura de archivos protegidos
 - Formato de sistemas avanzados (ASF), archivos protegidos
 - ASF (formato de sistemas avanzados), archivos protegidos
 - Formato de sistemas avanzados (ASF),WMStubDRM.lib
 - ASF (formato de sistemas avanzados),WMStubDRM.lib
 - WMStubDRM.lib, leer archivos protegidos
 - WMStubDRM.lib,archivos protegidos
-- administración de derechos digitales (DRM),WMStubDRM.lib
+- digital rights management (DRM),WMStubDRM.lib
 - DRM (administración de derechos digitales),WMStubDRM.lib
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50c700629fd66fdf0aa8bb1ff837b968232cf9301c39b951dd0a74678c9f1312
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e4b2110708a28daae1e86ba3dac2ea1f18ad16fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117846106"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466663"
 ---
-# <a name="reading-protected-files"></a>Leer archivos protegidos
+# <a name="reading-protected-files"></a>Lectura de archivos protegidos
 
-Leer un archivo protegido con DRM o una secuencia de red básicamente implica intentar abrir el archivo (o conectarse a la secuencia) y, a continuación, controlar los eventos que se puedan enviar desde los componentes de DRM.
+La lectura de un archivo protegido con DRM o una secuencia de red implica básicamente intentar abrir el archivo (o conectarse a la secuencia) y, a continuación, controlar los eventos que se puedan enviar desde los componentes de DRM.
 
-Si un reproductor no está habilitado para DRM (no vincula a una biblioteca wmstubdrm.lib válida), se produce un error en la llamada [**IWMReader::Open**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreader-open) cuando intenta abrir un archivo protegido y devuelve CONTENIDO PROTEGIDO de NS E o algún \_ \_ error \_ relacionado.
+Si un reproductor no está habilitado para DRM (no se vincula a una biblioteca wmstubdrm.lib válida), se produce un error en la llamada [**AWMReader::Open**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreader-open) cuando intenta abrir un archivo protegido y devuelve CONTENIDO PROTEGIDO de NS E o algún \_ \_ error \_ relacionado.
 
-Cuando una aplicación habilitada para DRM intenta abrir un archivo protegido con DRM, el componente DRM busca automáticamente una licencia válida en el sistema local. Si se encuentra uno, el componente DRM descifra automáticamente el archivo de una manera completamente transparente para la aplicación. La acción que puede realizar una aplicación en el archivo descifrado depende de los derechos especificados en la licencia. Para obtener una descripción completa de los posibles derechos, consulte la Windows del SDK de Media Rights Manager.
+Cuando una aplicación habilitada para DRM intenta abrir un archivo protegido con DRM, el componente DRM busca automáticamente en el sistema local una licencia válida. Si se encuentra uno, el componente DRM descifra automáticamente el archivo de una manera completamente transparente para la aplicación. La acción que una aplicación puede realizar en el archivo descifrado depende de los derechos especificados en la licencia. Para obtener una descripción completa de los posibles derechos, consulte la documentación Windows SDK de Media Rights Manager.
 
 Si la aplicación no tiene una licencia válida para un archivo, el reproductor recibe una notificación de estado del componente DRM. A continuación, la aplicación player puede iniciar el [*proceso de adquisición de*](wmformat-glossary.md) licencias. Una vez recibida una licencia válida, se puede acceder al archivo. En las secciones siguientes se describen las tareas básicas que una aplicación debe realizar al implementar el proceso de adquisición de licencias:
 

@@ -4,12 +4,12 @@ ms.assetid: 5145d952-19d9-4bf8-9046-0b5d28f5e641
 title: MF_PD_ASF_DATA_START_OFFSET atributo (Wmcontainer.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b848d83d32be7abc8c30cd41bf51959c25e4e784c1f5beab645a6ee5b0db381
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 125ae1263467afe7e0aa9017e8049b13796538fd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118741095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468683"
 ---
 # <a name="mf_pd_asf_data_start_offset-attribute"></a>Atributo MF \_ PD \_ ASF \_ DATA START \_ \_ OFFSET
 
@@ -33,7 +33,7 @@ El [**método IMFASFContentInfo::GeneratePresentationDescriptor**](/windows/desk
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcontainer.h</dt> </dl> |
 
 
 

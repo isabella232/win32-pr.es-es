@@ -3,7 +3,7 @@ title: Elemento ABSTRACT
 description: El elemento ABSTRACT contiene texto que describe el elemento ASX, BANNER o ENTRY asociado.
 ms.assetid: 7866fee8-1778-433a-be2f-9df0baa1c13e
 keywords:
-- Resumen del elemento ABSTRACT Reproductor de Windows Media
+- Abstract Element Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 153759dbe4bef47693cba13549b58215e4992686eab81cdcb4dadb33aa30279f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4e90b6f52b697242be23303ab3597dac549a6177
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119903055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473346"
 ---
 # <a name="abstract-element"></a>Elemento ABSTRACT
 
@@ -42,7 +42,7 @@ Este elemento no tiene atributos.
 | Hierarchy | Elementos                       |
 |-----------|--------------------------------|
 | Parent    | **ASX**, **ENTRY**, **BANNER** |
-| Elemento secundario     | Ninguno                           |
+| Elemento secundario     | None                           |
 
 
 

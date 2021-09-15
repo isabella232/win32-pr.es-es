@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2c3ad74dcc21eec386f70f00ed0fa1a6e205c5d702dcfa63949d35f4fdd6adf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c53ac92aac82c19dd9e58d389dee340a5951457b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118995825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473327"
 ---
 # <a name="playerapplicationplayerdocked"></a>PlayerApplication.playerDocked
 
 La **propiedad playerDocked** recupera un valor que indica si Reproductor de Windows Media está en un estado acoplado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 *playerApplication*. **playerDocked**
 
@@ -33,11 +33,11 @@ La **propiedad playerDocked** recupera un valor que indica si Reproductor de Win
 
 Esta propiedad es un booleano de solo **lectura.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta propiedad solo se usa cuando se usa la comunicación remota Reproductor de Windows Media control .
+Esta propiedad solo se usa al usar la comunicación remota Reproductor de Windows Media control .
 
-**Reproductor de Windows Media 10 Mobile:** Esta propiedad siempre devuelve **false**.
+**Reproductor de Windows Media 10 Mobile:** Esta propiedad siempre devuelve **false.**
 
 ## <a name="requirements"></a>Requisitos
 

@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: 01686f9b93e4dd952ce42b43d58aed9684457fb9dedeb524cea8859e0f44ba4f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6ad2d7d03059d8f96fe726d50ea18c2a70db64f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119797115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270660"
 ---
-# <a name="isowned-method-of-the-win32_tpm-class"></a>Método IsOwned de la clase Tpm \_ win32
+# <a name="isowned-method-of-the-win32_tpm-class"></a>Método IsOwned de la clase Tpm de \_ Win32
 
-El **método IsOwned** de la [**clase \_ Tpm win32**](win32-tpm.md) indica si el dispositivo tiene un propietario. El método [**TakeOwnership**](takeownership-win32-tpm.md) cambia este valor.
+El **método IsOwned** de la [**clase \_ Tpm de Win32**](win32-tpm.md) indica si el dispositivo tiene un propietario. El método [**TakeOwnership**](takeownership-win32-tpm.md) cambia este valor.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -66,9 +66,9 @@ A continuación se enumeran los códigos de retorno comunes.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,7 +84,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

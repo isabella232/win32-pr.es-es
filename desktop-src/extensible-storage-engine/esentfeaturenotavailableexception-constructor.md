@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 62bbb38c622f00ab348e0cb0d9427734047aa984a90775bec9d427ca3e141b6d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0805b86804ea5cb7a3905211f7fd16515071938b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118269231"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473191"
 ---
 # <a name="esentfeaturenotavailableexception-constructor"></a>Constructor EsentFeatureNotAvailableException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentFeatureNotAvailableException()
 public EsentFeatureNotAvailableException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

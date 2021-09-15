@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: b618821880a713e3e76e3ae9c78454bb15469a578ab4d40def1a66d2d763c71a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 852f022e1c24fa24c158ee4eb68dca44e6f010a5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117860215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468245"
 ---
 # <a name="folderitemisfilesystem-property"></a>Propiedad FolderItem.IsFileSystem
 
@@ -41,7 +41,7 @@ Valor **booleano** que recibe **true** si el elemento forma parte del sistema de
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa IsFileSystem** para determinar si Windows carpeta forma parte del sistema de archivos. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa IsFileSystem** para determinar si la carpeta Windows forma parte del sistema de archivos. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -146,12 +146,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

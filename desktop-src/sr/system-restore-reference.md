@@ -6,12 +6,12 @@ keywords:
 - Restaurar sistema, referencia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86c4be779dcf9cd3ae1637ffd4e88cbf95f38eda89bace420577f6abdee98c57
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 26daf7070a0c921153c4e0ffdbedbfcf32419281
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120111244"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468023"
 ---
 # <a name="system-restore-reference"></a>Restaurar sistema referencia
 
@@ -19,7 +19,7 @@ Los siguientes elementos se usan con Restaurar sistema:
 
 -   [Restaurar sistema Functions](system-restore-functions.md)
 -   [Restaurar sistema estructuras](system-restore-structures.md)
--   [Restaurar sistema WMI](system-restore-wmi-classes.md)
+-   [Restaurar sistema clases WMI](system-restore-wmi-classes.md)
 -   [Extensiones de nombre de archivo supervisadas](monitored-file-extensions.md)
 
  

@@ -1,10 +1,10 @@
 ---
-title: Propiedad attributeCount de IWMPMedia
+title: Propiedad AttributeCount de IWMPMedia
 description: La propiedad attributeCount obtiene el número de atributos que se pueden consultar o establecer para el elemento multimedia.
 ms.assetid: 527298ff-365d-41b0-90dd-e236d6adf6fa
 keywords:
 - attributeCount, propiedad Reproductor de Windows Media
-- propiedad attributeCount Reproductor de Windows Media , interfaz IWMPMedia
+- Propiedad attributeCount Reproductor de Windows Media , interfaz IWMPMedia
 - Interfaz IWMPMedia Reproductor de Windows Media , propiedad attributeCount
 topic_type:
 - apiref
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 73c3139d076fd7d1cd1bad784e325c67da25b3e7dedf530a9634a2878fe3011a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec5a56d06a54590afd315f04a90aa582f3a364db
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117746074"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473305"
 ---
-# <a name="iwmpmediaattributecount-property"></a>IWMPMedia::attributeCount, propiedad
+# <a name="iwmpmediaattributecount-property"></a>Propiedad IWMPMedia::attributeCount
 
 La **propiedad attributeCount** obtiene el número de atributos que se pueden consultar o establecer para el elemento multimedia.
 
@@ -49,17 +49,17 @@ Public ReadOnly Property attributeCount As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System.Int32** que es el recuento.
+**System.Int32 que** es el recuento.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
+Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
-Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea referencia [de atributos](attribute-reference.md).
+Para obtener información sobre los atributos admitidos por Reproductor de Windows Media, vea la [Referencia de atributos](attribute-reference.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa attributeCount** para determinar el número de atributos disponibles en el elemento multimedia actual. El código usa ese valor para mostrar una lista de nombres y valores de atributo en un cuadro de texto. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
+En el ejemplo siguiente se **usa attributeCount** para determinar el número de atributos disponibles en el elemento multimedia actual. El código usa ese valor para mostrar una lista de nombres de atributo y valores en un cuadro de texto. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp

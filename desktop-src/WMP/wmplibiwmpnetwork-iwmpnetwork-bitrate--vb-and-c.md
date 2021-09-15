@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b4346a20c5c5b5a5ca68b2a90293afd9d657e472d335b9ee8bf2ad647ff0914
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f64039eb960a928f5268643e18d1a01b9034d5d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120098745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270399"
 ---
 # <a name="iwmpnetworkbitrate-property"></a>IWMPNetwork::bitRate, propiedad
 
 La **propiedad bitRate** obtiene la velocidad de bits actual que se recibe.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -46,15 +46,15 @@ Public ReadOnly Property bitRate As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System.Int32 que** es la velocidad de bits.
+**System.Int32** que es la velocidad de bits.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor de esta propiedad es una combinación de las velocidades de bits de las secuencias de vídeo y audio.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa bitRate** para mostrar la velocidad de bits del medio actual. La información se muestra en una etiqueta en respuesta al **evento PlayStateChange.** El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
+En el ejemplo siguiente se **usa bitRate para** mostrar la velocidad de bits del medio actual. La información se muestra en una etiqueta en respuesta al **evento PlayStateChange.** El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -118,7 +118,7 @@ End Sub
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

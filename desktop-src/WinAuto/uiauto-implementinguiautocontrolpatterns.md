@@ -9,12 +9,12 @@ keywords:
 - patrones de control, implementar Automatización de la interfaz de usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 37901313c9dfb2bf0b66ea78c1993ddd07c776a5cf2313be430548761c555708
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6bfb75b6b275fee9230eb25d9a0b02e1da26ad4d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118114826"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465995"
 ---
 # <a name="implementing-ui-automation-control-patterns"></a>Implementación de Automatización de la interfaz de usuario de control de datos
 

@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec8a446164bb7ae51d36d1a89219f6c3b84eff74b9af3a40c2121b3bd205a581
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac3f7a883f50b06c8d142cb83bedf0bfa2920191
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119741745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359006"
 ---
 # <a name="helpmsgstring-message"></a>Mensaje HELPMSGSTRING
 
@@ -56,7 +56,7 @@ Puntero a la estructura de inicialización del cuadro de diálogo común. Esta e
 
 Este mensaje no tiene ningún valor devuelto.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Debe especificar la **constante HELPMSGSTRING** en una llamada a la función [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) para obtener el identificador del mensaje enviado por el cuadro de diálogo.
 
@@ -82,7 +82,7 @@ Al crear el cuadro de diálogo, use el **miembro hwndOwner** de la estructura de
 **Referencia**
 </dt> <dt>
 
-[**\_CDN Ayuda**](cdn-help.md)
+[**\_CDN AYUDA**](cdn-help.md)
 </dt> <dt>
 
 [**CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1)
@@ -91,7 +91,7 @@ Al crear el cuadro de diálogo, use el **miembro hwndOwner** de la estructura de
 [**CHOOSEFONT**](/windows/win32/api/commdlg/ns-commdlg-choosefonta)
 </dt> <dt>
 
-[**Findreplace**](/windows/win32/api/commdlg/ns-commdlg-findreplacea)
+[**FINDREPLACE**](/windows/win32/api/commdlg/ns-commdlg-findreplacea)
 </dt> <dt>
 
 [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)

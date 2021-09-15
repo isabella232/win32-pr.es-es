@@ -4,12 +4,12 @@ ms.assetid: 68cb1df1-f7fa-447a-8ea5-80dc1e802760
 title: Interfaz IKeyFrameControl (H323priv.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dac4890409fa67f3f5176502aa4bd156a7d78e8986b648e2824355acd78cdc6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6c326c6a492777d7c41ae450a1c502c343aeb8cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119975866"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270495"
 ---
 # <a name="ikeyframecontrol-interface"></a>Interfaz IKeyFrameControl
 
@@ -17,7 +17,7 @@ ms.locfileid: "119975866"
 
 La **interfaz IKeyFrameControl** se implementa mediante el [MSP de H.323](h323-msp.md) y solo está disponible en objetos de secuencia H.323. Esta interfaz expone métodos que permiten la creación y manipulación de terminales que pueden comunicarse entre clientes H323 y SDP. Tiene dos métodos que permiten a la aplicación solicitar al punto de conexión remoto que actualice la imagen de vídeo con un fotograma clave.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IKeyFrameControl** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IKeyFrameControl también** tiene estos tipos de miembros:
 
@@ -45,13 +45,13 @@ La **interfaz IKeyFrameControl** tiene estos métodos.
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
-| Header<br/>       | <dl> <dt>H323priv.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>H323priv.h</dt> </dl> |
 | Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | Archivo DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl>  |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

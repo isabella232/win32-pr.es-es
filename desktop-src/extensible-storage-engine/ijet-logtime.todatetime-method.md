@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cc14ca741f2dcb3014ef6cb7996a623141b9e5dd94f1624bfd1ece5305208eb4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 78226731ef945025aef0609cfeb905fe9b42101d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118980675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465635"
 ---
 # <a name="ijet_logtimetodatetime-method"></a>IJET_LOGTIME. Método ToDateTime
 

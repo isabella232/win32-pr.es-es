@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 167fc0aa050765700805b4339e68142fa5d1eb7fc99e010c7393095dd9aa5c0e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9bf7fe91c57b9c69934f093cdd504b5e6d35efb8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119084845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466482"
 ---
-# <a name="iwmdrmlicensegetlicenseproperty-method"></a>IWMDRMLicense::GetLicenseProperty (método)
+# <a name="iwmdrmlicensegetlicenseproperty-method"></a>IWMDRMLicense::GetLicenseProperty (Método)
 
 El **método GetLicenseProperty** recupera una propiedad de la licencia actual.
 
@@ -54,7 +54,7 @@ Nombre de la propiedad que se recuperará. Establezca en una de las constantes d
 | Constante                   | Descripción                                                                                                          |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------|
 | g \_ wszWMDRMNet \_ Revocation | Use para obtener la lista Windows revocación de DRM multimedia para dispositivos de red para la licencia actual.                        |
-| g \_ wszWMDRM \_ SAPLEVEL      | Use para obtener el nivel de secure audio path (SAP) necesario para reproducir contenido cubierto por la licencia actual.                |
+| g \_ wszWMDRM \_ SAPLEVEL      | Use para obtener el nivel de Secure Audio Path (SAP) necesario para reproducir contenido cubierto por la licencia actual.                |
 | g \_ wszWMDRM \_ SAPRequired   | Use para determinar si la licencia actual requiere que SAP se use para reproducir el contenido.                               |
 | g \_ wszWMDRM \_ SOURCEID      | Use para obtener el identificador de origen de la licencia actual.                                                            |
 | g \_ wszWMDRM \_ PRIORITY      | Use para obtener la prioridad de la licencia actual. Las licencias de prioridad más alta se aplican antes que las licencias de prioridad inferior. |
@@ -102,14 +102,14 @@ Ninguno.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [**GetLicense**](iwmdrmlicense-getlicense.md)
 </dt> <dt>
 
-[**IWMDRMLicense (Interfaz)**](iwmdrmlicense.md)
+[**Interfaz IWMDRMLicense**](iwmdrmlicense.md)
 </dt> </dl>
 
  

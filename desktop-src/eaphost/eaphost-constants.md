@@ -23,20 +23,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab336b147557722f1bec72bfe662b12599a64ee1622b31bdad6a92a05af6d92e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 84704e59ed43466c47435f4804cb4dedc9c3a92d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119483015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466605"
 ---
 # <a name="eaphost-constants"></a>Constantes de EAPHost
 
-Constantes utilizadas por los métodos EAPHost.
+Constantes usadas por los métodos EAPHost.
 
 <dl> <dt>
 
-<span id="EAP_INTERACTIVE_UI_DATA_VERSION"></span><span id="eap_interactive_ui_data_version"></span>**VERSIÓN DE \_ DATOS DE LA INTERFAZ DE USUARIO INTERACTIVA \_ \_ \_ DE EAP**
+<span id="EAP_INTERACTIVE_UI_DATA_VERSION"></span><span id="eap_interactive_ui_data_version"></span>**VERSIÓN DE \_ DATOS DE LA INTERFAZ DE USUARIO INTERACTIVA \_ \_ DE \_ EAP**
 </dt> <dd> <dl> <dt>
 
 0
@@ -49,7 +49,7 @@ La versión de los datos de la interfaz de usuario interactiva de EAP.
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_CREDENTIAL_VERSION"></span><span id="eap_credential_version"></span>**VERSIÓN DE CREDENCIALES DE EAP \_ \_**
+<span id="EAP_CREDENTIAL_VERSION"></span><span id="eap_credential_version"></span>**VERSIÓN \_ DE CREDENCIALES DE \_ EAP**
 </dt> <dd> <dl> <dt>
 
 1
@@ -57,7 +57,7 @@ La versión de los datos de la interfaz de usuario interactiva de EAP.
 
 
 
-Versión de las credenciales de EAP proporcionadas por el usuario.
+La versión de las credenciales de EAP proporcionadas por el usuario.
 
 
 </dt> </dl> </dd> <dt>
@@ -140,7 +140,7 @@ Representa el valor de propiedad predeterminado para las entradas de campo de en
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_UI_INPUT_FIELD_PROPS_NON_DISPLAYABLE"></span><span id="eap_ui_input_field_props_non_displayable"></span>**PROPIEDADES DE CAMPO DE ENTRADA DE LA INTERFAZ DE USUARIO DE EAP \_ \_ NO SE PUEDEN \_ \_ \_ \_ MOSTRAR**
+<span id="EAP_UI_INPUT_FIELD_PROPS_NON_DISPLAYABLE"></span><span id="eap_ui_input_field_props_non_displayable"></span>**EL CAMPO DE ENTRADA DE LA INTERFAZ DE USUARIO DE EAP \_ \_ NO SE PUEDE \_ \_ \_ \_ MOSTRAR**
 </dt> <dd> <dl> <dt>
 
 0X00000001 
@@ -148,7 +148,7 @@ Representa el valor de propiedad predeterminado para las entradas de campo de en
 
 
 
-Windows Vista con SP1 o posterior: especifica que las entradas de campo de entrada no se mostrarán en la interfaz de usuario (por ejemplo, una contraseña o un número de PIN).
+Windows Vista con SP1 o posterior: especifica que las entradas de campo de entrada no se mostrarán en la interfaz de usuario (por ejemplo, una contraseña o un número pin).
 
 
 </dt> </dl> </dd> <dt>
@@ -179,7 +179,7 @@ Windows Vista con SP1 o posterior: indica que el método EAP no almacenará en c
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_UI_INPUT_FIELD_PROPS_READ_ONLY"></span><span id="eap_ui_input_field_props_read_only"></span>**PROPIEDADES DE CAMPO DE ENTRADA DE LA INTERFAZ DE USUARIO DE EAP \_ \_ DE SOLO \_ \_ \_ \_ LECTURA**
+<span id="EAP_UI_INPUT_FIELD_PROPS_READ_ONLY"></span><span id="eap_ui_input_field_props_read_only"></span>**EL CAMPO DE ENTRADA DE LA INTERFAZ DE USUARIO DE EAP \_ \_ ADMITE SOLO \_ \_ \_ \_ LECTURA**
 </dt> <dd> <dl> <dt>
 
 0x00000004
@@ -196,10 +196,10 @@ Windows Vista con SP1 o posterior: indica que el campo de entrada es de solo lec
 
 
 
-| Role | Versión mínima del sistema operativo admitida |
+| Role | Versión mínima admitida del sistema operativo |
 |------|------------------------------|
-| Cliente<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/> |
-| Server<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/> |
+| Remoto<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/> |
+| Servidor<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/> |
 
 
 

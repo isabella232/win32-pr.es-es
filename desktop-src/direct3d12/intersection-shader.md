@@ -12,18 +12,18 @@ api_name:
 - RAY_FLAG
 api_type:
 - NA
-ms.openlocfilehash: d7f9f81fdedae0fc6f6aa0448e6771c331af9c0d8924ab0f091d281565e4cfa3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f20d9ceb90b716ca5e5c04fb796a8b20f535825d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119850885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465557"
 ---
 # <a name="intersection-shader"></a>Sombreador de intersección
 
 Sombreador que se usa para implementar primitivas de intersección personalizadas para los rayos que intersecan con un volumen de límite asociado (rectángulo de selección). 
 
-El sombreador de intersección no tiene acceso a la carga del rayo, pero define los atributos de intersección para cada impacto a través de una llamada a [**ReportHit**](reporthit-function.md).  El control de **ReportHit** puede detener el sombreador de intersección al principio, si se establece la marca de rayo **RAY FLAG ACCEPT FIRST \_ \_ \_ \_ HIT_\AND \_ \END \_ SEARCH,** o bien se llama a [**AcceptHitAndEndSearch**](accepthitandendsearch-function.md) desde cualquier sombreador de llamadas.  De lo contrario, devuelve true si se aceptó el hit o false si se rechazó.  Esto significa que cualquier sombreador de acceso, si está presente, debe ejecutarse antes de que el control vuelva condicionalmente al sombreador de intersección.
+El sombreador de intersección no tiene acceso a la carga del rayo, pero define los atributos de intersección para cada impacto a través de una llamada a [**ReportHit**](reporthit-function.md).  El control de **ReportHit** puede detener el sombreador de intersección al principio, si se establece la marca de rayo **RAY FLAG ACCEPT FIRST \_ \_ \_ \_ HIT_\AND \_ \END \_ SEARCH,** o si se llama a [**AcceptHitAndEndSearch**](accepthitandendsearch-function.md) desde cualquier sombreador de llamadas.  De lo contrario, devuelve true si se aceptó el hit o false si se rechazó.  Esto significa que cualquier sombreador de acceso, si está presente, debe ejecutarse antes de que el control vuelva condicionalmente al sombreador de intersección.
 
 ## <a name="shader-type-attribute"></a>Atributo Tipo de sombreador
 

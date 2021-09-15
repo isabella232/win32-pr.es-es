@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - wifidisplay.dll
-ms.openlocfilehash: ce31b6e4bf6336baede3767d3457f44d92dde0e39f6418bcc3c2529b644fe24c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 423360d7127f331fd1aa2de7f7370daebcc2b417
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119800395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473741"
 ---
 # <a name="wfddisplaysinksetpersistedgroupidlist-function"></a>Función WFDDisplaySinkSetPersistedGroupIDList
 
@@ -58,7 +58,7 @@ Puntero a una matriz de identificadores de grupo *cGroupIDList.*
 
 Si la función se realiza correctamente, el valor devuelto es ERROR \_ SUCCESS.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Siempre se espera que se llame a este método con toda la lista y no con un subconjunto. Es correcto llamar a este método con 0 perfiles cuando el almacén de perfiles está vacío.
 
@@ -68,13 +68,13 @@ Se producirá un error al volver a invocar para un identificador de grupo que no
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows 10<br/>                                                                      |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2016<br/>                                                             |
-| Header<br/>                   | <dl> <dt>Wfdsink.h</dt> </dl>       |
+| Encabezado<br/>                   | <dl> <dt>Wfdsink.h</dt> </dl>       |
 | Biblioteca<br/>                  | <dl> <dt>Wifidisplay.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wifidisplay.dll</dt> </dl> |
 

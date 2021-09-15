@@ -1,5 +1,5 @@
 ---
-description: Se produce cuando hay un evento del sistema disponible.
+description: Se produce cuando hay disponible un evento del sistema.
 ms.assetid: 3d9e98f0-b11e-4a65-a544-9e1998a80d5f
 title: ITabletEventSink::SystemEvent (método)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 6d2e636b5e0b70d13ae33850518e744fbc9425bd65c20002a89b6d38e56dbc50
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 71b5882fd9e19df43581e00cce55c2af5faa432b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118041751"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467976"
 ---
 # <a name="itableteventsinksystemevent-method"></a>ITabletEventSink::SystemEvent (método)
 
-Se produce cuando hay un evento del sistema disponible.
+Se produce cuando hay disponible un evento del sistema.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -86,30 +86,30 @@ Este método puede devolver uno de estos valores.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La lista siguiente contiene los valores válidos para el parámetro de evento.
 
--   \_SE Grifo
+-   \_SE GRIFO
 -   \_SE DBL \_ TAP
 -   \_SE PULSAR \_ CON EL BOTÓN DERECHO
--   \_SE Arrastre
--   \_SE ARRASTRAR \_ A LA DERECHA
+-   \_SE ARRASTRE
+-   \_SE ARRASTRAR A \_ LA DERECHA
 -   \_SE MANTENER \_ PRESIONADA LA TECLA ENTRAR
 -   \_SE HOLD \_ LEAVE
--   \_SE MANTENER EL \_ PUNTERO SOBRE ENTRAR
--   \_SE MANTENER EL \_ MOUSE SOBRE SALIR
+-   \_SE MANTENGA EL \_ MOUSE SOBRE ENTRAR.
+-   \_SE MANTENER EL \_ MOUSE SOBRE LA LICENCIA
 -   \_SE MIDDLE \_ CLICK
--   \_SE Clave
+-   \_SE CLAVE
 -   \_SE TECLA \_ MODIFICADORA
--   \_SE MODO \_ GESTO
--   \_SE Cursor
+-   \_SE MODO DE \_ GESTO
+-   \_SE CURSOR
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |
@@ -117,7 +117,7 @@ La lista siguiente contiene los valores válidos para el parámetro de evento.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

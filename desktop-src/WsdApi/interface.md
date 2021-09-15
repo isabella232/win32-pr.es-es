@@ -4,12 +4,12 @@ ms.assetid: 3db34c89-a97d-47a2-97dd-4bb80da09e82
 title: elemento interface
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea298ece6431bac854483df7b01d8e31afb4d6dfcb34eb6e347f11ee8ade97c6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8a64b349a32751ab60e86669ea766c62686d9cc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118311574"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473287"
 ---
 # <a name="interface-element"></a>elemento interface
 
@@ -43,7 +43,7 @@ No hay elementos secundarios.
 
 
 
-| Etiqueta | Valor |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | Sí           |

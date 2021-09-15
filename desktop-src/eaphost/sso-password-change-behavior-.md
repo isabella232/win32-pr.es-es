@@ -4,12 +4,12 @@ description: Proporciona un enfoque paso a paso para resolver el comportamiento 
 ms.assetid: c52ffeb8-ecee-4398-a7df-388b523c737c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d438dd41466809805f159fde4a2db698d11b1f7899e48e1f96ccce2c811111cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 005fe5191b3bdccf2bb1643be50817a3b0405336
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119042803"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473223"
 ---
 # <a name="sso-password-change-behavior"></a>Comportamiento de cambio de contraseña de SSO
 
@@ -32,7 +32,7 @@ En la lista siguiente se representa un enfoque paso a paso para resolver el comp
      
 
 -   Después de recopilar la información de contexto de la interfaz de usuario, el proceso de interfaz de usuario representa una interfaz de usuario para recopilar información de cambio de contraseña del usuario. Esta información se rellena en el parámetro *NewCreds* de la estructura [**EAP \_ CRED \_ EXPIRY \_ REQ.**](/windows/desktop/api/eaptypes/ns-eaptypes-eap_cred_expiry_req)
--   El proceso de interfaz de usuario pasa la estructura [**\_ DE \_ RESP**](eap-cred-resp.md) de EAP CRED a EAPHost a través de [**EapHostPeerQueryUIBlobFromInteractiveUIInputFields**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerqueryuiblobfrominteractiveuiinputfields).
+-   El proceso de interfaz de usuario pasa la estructura [**\_ \_ RESP**](eap-cred-resp.md) de EAP CRED a EAPHost a través de [**EapHostPeerQueryUIBlobFromInteractiveUIInputFields**](/previous-versions/windows/desktop/api/eaphostpeerconfigapis/nf-eaphostpeerconfigapis-eaphostpeerqueryuiblobfrominteractiveuiinputfields).
 -   El proceso de interfaz de usuario pasa este BLOB de usuario al suplicante y el suplicante continúa con las funciones en tiempo de ejecución de EAPHost como de costumbre.
 
 ## <a name="related-topics"></a>Temas relacionados

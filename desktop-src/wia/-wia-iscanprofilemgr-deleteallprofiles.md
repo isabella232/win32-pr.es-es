@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Scanprofilemgr.h
-ms.openlocfilehash: f7476f014b0dbcdb16af2a0db46c92a8c2db112528ec4bb8f2903e0c7f9c7a72
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f21e9f562d008846b4ecf6ad46e86c2c371eb9f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119450825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359995"
 ---
 # <a name="iscanprofilemgrdeleteallprofiles-method"></a>IScanProfileMgr::D eleteAllProfiles (método)
 
@@ -62,8 +62,8 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
-| Header<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
-| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 

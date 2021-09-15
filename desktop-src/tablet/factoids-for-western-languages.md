@@ -4,12 +4,12 @@ ms.assetid: d4728506-7484-4c4c-a5ae-e98d699f7e76
 title: Factoids for Western Languages
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e417c9662252213d761760a1486f9808a2d18bc3236073fe8c8d7746c396beb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: de98cfce0203a2a3a94509d6586c1596390ca16b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119936545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360012"
 ---
 # <a name="factoids-for-western-languages"></a>Factoids for Western Languages
 
@@ -25,7 +25,7 @@ Los idiomas occidental se definen como inglés (Reino Unido), inglés (Estados U
 | Factoid              | Definición                                                                                                                                                                                                                                                                                                                                                                                                           | Ejemplos                                                                                                                                                                                                                                                            |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Nombre de archivo**         | Establece el sesgo de una ruta de acceso de nombre de archivo. El nombre no puede incluir los caracteres<br/> / " < > \|<br/> Los caracteres \* y ? se incluyen en este factoid para habilitar la búsqueda. Además, se admiten caracteres extendidos en idiomas europeos.<br/>                                                                                                                                                    | c:<br/> \\\\nombre de directorio \\ nombrearchivo<br/> \\\\directory1 \\ directory2 \\ filename<br/> \\\\directoryname \\ \* .\*<br/> ¿Nombre.?<br/> myfile.doc<br/>                                                                                |
-| **SystemDictionary** | Habilita solo el diccionario del sistema. Esto resulta útil si una aplicación consulta si una palabra está en el diccionario del sistema. Establezca factoid en **SystemDictionary y** llame al [**método IsStringSupported.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-isstringsupported)<br/>                                                                                                                                                 | El modelo de lenguaje predeterminado incluye la gramática del idioma, así como el diccionario del sistema. Este factoid sesgo el reconocimiento solo hacia las palabras que aparecen en el diccionario del sistema. Cada lenguaje tiene su propio diccionario del sistema.<br/>                   |
+| **SystemDictionary** | Habilita solo el diccionario del sistema. Esto resulta útil si una aplicación consulta si una palabra está en el diccionario del sistema. Establezca factoid en **SystemDictionary y** llame al [**método IsStringSupported.**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-isstringsupported)<br/>                                                                                                                                                 | El modelo de lenguaje predeterminado incluye gramática para el idioma, así como el diccionario del sistema. Este factoid sesgo el reconocimiento solo hacia las palabras que aparecen en el diccionario del sistema. Cada lenguaje tiene su propio diccionario del sistema.<br/>                   |
 | **WordList**         | Habilita solo la lista de palabras. Si el elemento factoid está establecido en **WordList** pero no se asigna ninguna lista de palabras a [**InkRecognizerContext**](inkrecognizercontext-class.md) [(RecognizerContext](/previous-versions/ms552546(v=vs.100)) en código administrado), se usa el diccionario de usuarios. Para obtener más información sobre listas de palabras y diccionarios, vea [Using Application Dictionaries](using-application-dictionaries.md).<br/> | Esta factoid sesgo el reconocedor para devolver solo las palabras de la lista de palabras. Por ejemplo, para permitir que el usuario escriba un color en un formulario, puede usar este factoid y una lista de palabras que contenga "Verde", "Rojo", "Azul", "Blanco" y otros colores.<br/> |
 
 
@@ -39,7 +39,7 @@ Las siguientes combinaciones de factoids solo se admiten en idiomas del oeste. N
 | Combinación de factoid     | Definición                                                                   |
 |-------------------------|------------------------------------------------------------------------------|
 | **WebWordList**         | El **elemento factoid** web o la lista de palabras.<br/>                             |
-| **EmailWordList**       | El **factoid** email o la lista de palabras.<br/>                           |
+| **EmailWordList**       | El **factoid** de correo electrónico o la lista de palabras.<br/>                           |
 | **FilenameWebWordList** | El **factoid** nombre de archivo, **el factoid web** o la lista de palabras.<br/> |
 
 

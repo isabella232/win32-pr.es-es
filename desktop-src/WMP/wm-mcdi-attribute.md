@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 738ce8d5af7351b30fd986323db01d4dd335fa7307d2da88e48f4b2456eba1f1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aec51c306f94e25acb94155c4d87f1f1a8b95866
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119053861"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466398"
 ---
 # <a name="wmmcdi-attribute"></a>Atributo WM/MCDI
 
@@ -29,13 +29,13 @@ El **atributo WM/MCDI** es el identificador de CD de música del CD del que se c
 -   [Pistas de CD](cd-track-attributes.md)
 -   [Atributos de archivo multimedia Windows uso frecuente](commonly-used-windows-media-file-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se almacena tanto en la biblioteca (o caché) como en el archivo multimedia digital.
 
 **TOC** es un alias para este atributo.
 
-La Windows DEL SDK de formato multimedia para este atributo es g \_ wszWMMCDI.
+La Windows SDK de formato multimedia para este atributo es g \_ wszWMMCDI.
 
 Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
@@ -43,13 +43,13 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

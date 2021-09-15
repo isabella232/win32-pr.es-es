@@ -1,15 +1,15 @@
 ---
 description: Especifica qué dispositivos de audio usa el DSP de captura de voz para capturar y representar audio.
 ms.assetid: 42b6b82b-ac64-4a07-956c-473dd57a128d
-title: MFPKEY_WMAAECMA_DEVICE_INDEXES (Propiedad, Wmcodecdsp.h)
+title: MFPKEY_WMAAECMA_DEVICE_INDEXES propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c4e9fd9eae8d53f1fa19bd8b55d94d292b9cd6cbf214b7a71a6473f1af647f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4b377e4335e78e81c8e7d3c5a9a0c1d00b8f9bae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117873007"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468619"
 ---
 # <a name="mfpkey_wmaaecma_device_indexes-property"></a>Propiedad MFPKEY \_ WMAAECMA \_ DEVICE \_ INDEXES
 
@@ -31,7 +31,7 @@ VT \_ I4
 
 -   [DSP de captura de voz](voicecapturedmo.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Establezca esta propiedad si usa el DSP en modo de origen. El DSP omite esta propiedad en modo de filtro.
 
@@ -64,11 +64,11 @@ varDeviceIndexes.lVal = (unsigned long)(iSpeakerIndex << 16) +
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                          |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
