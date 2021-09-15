@@ -1,21 +1,21 @@
 ---
-description: El &lt; elemento searchConnectorDescription &gt; es el elemento contenedor de nivel superior de una definición de conector de búsqueda.
+description: El &lt; elemento searchConnectorDescription es el elemento contenedor de &gt; nivel superior de una definición de conector de búsqueda.
 ms.assetid: 383CAA20-56CA-4bdc-AC79-E57A1D59785C
 title: elemento searchConnectorDescription (esquema de biblioteca)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: eddf7c2795f5c87009bc17b5fa3899d339ceed3c
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122885971"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248025"
 ---
 # <a name="searchconnectordescription-element-library-schema"></a>elemento searchConnectorDescription (esquema de biblioteca)
 
-El &lt; elemento searchConnectorDescription &gt; es el elemento contenedor de nivel superior de una definición de conector de búsqueda. El elemento searchConnectorDescription es una extensión del tipo de elemento &lt; &gt; &lt; searchConnectorDescriptionType asociado a los conectores de búsqueda federada de Windows; sin embargo, no puede incluir conectores de búsqueda para Windows Federated Search o controladores de protocolo en una &gt; biblioteca.
+El &lt; elemento searchConnectorDescription es el elemento contenedor de &gt; nivel superior de una definición de conector de búsqueda. El elemento searchConnectorDescription es una extensión del tipo de elemento &lt; &gt; &lt; searchConnectorDescriptionType asociado a los conectores de búsqueda federada de Windows; sin embargo, no puede incluir conectores de búsqueda para la búsqueda federada de Windows o controladores de protocolo en &gt; una biblioteca.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <!-- searchConnectorDescription -->
@@ -138,7 +138,7 @@ Consulte la documentación del esquema en [Windows Search.](/previous-versions/b
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El elemento searchConnectorDescription de una biblioteca usa la misma definición de esquema que &lt; &gt; &lt; searchConnectorDescription &gt; para Windows búsqueda federada. Aunque usan los mismos esquemas, los conectores de búsqueda para Windows búsqueda federada no se pueden incluir en una biblioteca.
 

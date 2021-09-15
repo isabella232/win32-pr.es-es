@@ -4,18 +4,18 @@ ms.assetid: ff36b2c3-8763-4640-a049-b5880fd26929
 title: Directiva de metadatos de fotos System.Photo.PhotometricInterpretation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5479c747e2a1cc60a1867a7dc5906e5c4710abf9da33b5328980e0188403ecd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 35b371ce9257d526f941f3fdb33949e8788a7112
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118204689"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247538"
 ---
 # <a name="systemphotophotometricinterpretation-photo-metadata-policy"></a>Directiva de metadatos de fotos System.Photo.PhotometricInterpretation
 
 Directiva de metadatos de fotos para [la propiedad System.Photo.PhotometricInterpretation.](../properties/props-system-photo-photometricinterpretation.md)
 
-### <a name="pkey"></a>Pkey
+### <a name="pkey"></a>PKEY
 
 PKEY \_ Photo \_ PhotometricInterpretation
 
@@ -37,7 +37,7 @@ UShort
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
-Se concilian los valores de esquemas diferentes.
+Los valores de esquemas diferentes se concilian.
 
 ### <a name="jpeg-policy"></a>Directiva JPEG
 
@@ -45,7 +45,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido | Ruta de acceso                                | Formato de disco |
+| Pedido | Path                                | Formato de disco |
 |-------|-------------------------------------|-------------|
 | 1     | /app1/ifd/{ushort=262}              | ushort      |
 | 2     | /xmp/tiff:PhotometricInterpretation | unicode     |
@@ -58,7 +58,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido | Ruta de acceso                                | Formato de disco |
+| Pedido | Path                                | Formato de disco |
 |-------|-------------------------------------|-------------|
 | 1     | /app1/ifd/{ushort=262}              | ushort      |
 | 2     | /xmp/tiff:PhotometricInterpretation | unicode     |
@@ -71,7 +71,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido | Ruta de acceso                                |
+| Pedido | Path                                |
 |-------|-------------------------------------|
 | 1     | /app1/ifd/{ushort=262}              |
 | 2     | /xmp/tiff:photometricinterpretation |
@@ -86,7 +86,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido | Ruta de acceso                                    | Formato de disco |
+| Pedido | Path                                    | Formato de disco |
 |-------|-----------------------------------------|-------------|
 | 1     | /ifd/{ushort=262}                       | ushort      |
 | 2     | /ifd/xmp/tiff:PhotometricInterpretation | unicode     |
@@ -99,7 +99,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido | Ruta de acceso                                    | Formato de disco |
+| Pedido | Path                                    | Formato de disco |
 |-------|-----------------------------------------|-------------|
 | 1     | /ifd/{ushort=262}                       | ushort      |
 | 2     | /ifd/xmp/tiff:PhotometricInterpretation | unicode     |
@@ -112,7 +112,7 @@ Se concilian los valores de esquemas diferentes.
 
 
 
-| Pedido | Ruta de acceso                                    |
+| Pedido | Path                                    |
 |-------|-----------------------------------------|
 | 1     | /ifd/{ushort=262}                       |
 | 2     | /ifd/xmp/tiff:photometricinterpretation |
@@ -121,7 +121,7 @@ Se concilian los valores de esquemas diferentes.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ## <a name="related-topics"></a>Temas relacionados
 

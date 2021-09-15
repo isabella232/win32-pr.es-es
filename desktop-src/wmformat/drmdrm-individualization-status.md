@@ -3,7 +3,7 @@ title: DRM_INDIVIDUALIZATION_STATUS enumeración (Wmdrmsdk.h)
 description: El tipo de enumeración DRM \_ INDIVIDUALIZATION \_ STATUS define los estados válidos para la individualización de DRM. | DRM_INDIVIDUALIZATION_STATUS enumeración (Wmdrmsdk.h)
 ms.assetid: 4e6712e2-3297-4636-9b0c-07269bd63d52
 keywords:
-- DRM_INDIVIDUALIZATION_STATUS de enumeración windows Media Format
+- DRM_INDIVIDUALIZATION_STATUS enumeración windows Media Format
 - enumeración windows Media Format
 topic_type:
 - apiref
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47e339fda95ccf7408ad2f218179cfb591da217b16fbbce9c9870eabd7437eaf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b395d3ad4271ccef9964f0d39c74a1e0ba158257
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117848231"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247334"
 ---
 # <a name="drm_individualization_status-enumeration-wmdrmsdkh"></a>DRM_INDIVIDUALIZATION_STATUS enumeración (Wmdrmsdk.h)
 
 El **tipo de enumeración DRM \_ INDIVIDUALIZATION \_ STATUS** define los estados válidos para la individualización de DRM.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -96,7 +96,7 @@ Indica que se está instalando la actualización de seguridad.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La estructura WM [**\_ INDIVIDUALIZE \_ STATUS**](drmwm-individualize-status.md) utiliza esta enumeración.
 
@@ -110,7 +110,7 @@ La estructura WM [**\_ INDIVIDUALIZE \_ STATUS**](drmwm-individualize-status.md)
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

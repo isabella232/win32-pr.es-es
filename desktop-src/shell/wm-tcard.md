@@ -13,14 +13,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 85435c5674ad6a2ac4e05edaa5d450dc61de9eac6dae05d3b19662aec91a61f9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5eb6a3b5a4b840549b75e152f0420bfa055138c4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117856990"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247929"
 ---
-# <a name="wm_tcard-message"></a>Mensaje \_ de TCARD de WM
+# <a name="wm_tcard-message"></a>Mensaje \_ de TCARD wm
 
 Se envía a una aplicación que ha iniciado una tarjeta de entrenamiento con Windows Ayuda. El mensaje informa a la aplicación cuando el usuario hace clic en un botón que se puede crear. Una aplicación inicia una tarjeta de entrenamiento especificando el comando \_ HELP TCARD en una llamada a la [**función WinHelp.**](/windows/desktop/api/Winuser/nf-winuser-winhelpa)
 
@@ -75,7 +75,7 @@ El usuario cerró la tarjeta de entrenamiento.
 
 </dt> <dd>
 
-El usuario hizo clic en un elemento Windows **botón Ayuda.**
+El usuario hizo clic en un archivo Windows **botón Ayuda.**
 
 </dd> <dt>
 
@@ -103,12 +103,12 @@ El usuario hizo clic en un botón **Aceptar que se puede** crear.
 
 <span id="IDNO"></span><span id="idno"></span>
 
-<span id="IDNO"></span><span id="idno"></span>**Idno**
+<span id="IDNO"></span><span id="idno"></span>**IDNO**
 
 
 </dt> <dd>
 
-El usuario hizo clic en un botón No que **se puede** crear.
+El usuario hizo clic en un botón **No que se puede** crear.
 
 </dd> <dt>
 
@@ -125,7 +125,7 @@ El usuario hizo clic en un botón **Reintentar** que se puede crear.
 
 <span id="HELP_TCARD_DATA"></span><span id="help_tcard_data"></span>
 
-<span id="HELP_TCARD_DATA"></span><span id="help_tcard_data"></span>**DATOS \_ DE LA TARJETA DE \_ AYUDA**
+<span id="HELP_TCARD_DATA"></span><span id="help_tcard_data"></span>**DATOS \_ DE TCARD \_ DE AYUDA**
 
 
 </dt> <dd>
@@ -136,7 +136,7 @@ El usuario hizo clic en un botón que se puede crear. El *parámetro dwActionDat
 
 <span id="HELP_TCARD_OTHER_CALLER"></span><span id="help_tcard_other_caller"></span>
 
-<span id="HELP_TCARD_OTHER_CALLER"></span><span id="help_tcard_other_caller"></span>**AYUDA \_ PARA TARJETAR \_ A OTRO AUTOR DE LA \_ LLAMADA**
+<span id="HELP_TCARD_OTHER_CALLER"></span><span id="help_tcard_other_caller"></span>**AYUDA PARA \_ TARJETAR A \_ OTRO AUTOR DE \_ LA LLAMADA**
 
 
 </dt> <dd>
@@ -159,7 +159,7 @@ El usuario hizo clic en un botón Sí que **se puede** crear.
 *dwActionData* 
 </dt> <dd>
 
-Si *idAction* especifica HELP TCARD DATA, el autor de la Ayuda especifica este \_ \_ parámetro.  De lo contrario, este parámetro es cero.
+Si *idAction* especifica HELP \_ TCARD DATA, este parámetro es un valor \_ **long** especificado por el autor de la Ayuda. De lo contrario, este parámetro es cero.
 
 </dd> </dl>
 
@@ -171,9 +171,9 @@ Se omite el valor devuelto; use cero.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                          |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
 | Encabezado<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 

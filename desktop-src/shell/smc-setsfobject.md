@@ -13,14 +13,14 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 4ac46fd69d4d91870dcd288190baac275b37a5f093b87646c17d19e479bd710e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 44aeb41ab7dcd271f8c84bff4eb8b5525ac66e70
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118968014"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247923"
 ---
-# <a name="smc_setsfobject-message"></a>Mensaje SMC \_ SETSFOBJECT
+# <a name="smc_setsfobject-message"></a>Mensaje \_ SMC SETSFOBJECT
 
 Le notifica que guarde el objeto pasado.
 
@@ -48,7 +48,7 @@ El IID asociado al objeto .
 *Pv* 
 </dt> <dd>
 
-Puntero a la interfaz del objeto especificado por *iid*.
+Puntero a la interfaz en el objeto especificado por *iid*.
 
 </dd> </dl>
 
@@ -56,7 +56,7 @@ Puntero a la interfaz del objeto especificado por *iid*.
 
 Devuelve S \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El método [**IShellMenuCallback::CallbackSM**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellmenucallback-callbacksm) recibe esta notificación.
 
@@ -71,7 +71,7 @@ La **notificación \_ SETSFOBJECT** de SMC se usa con IID \_ Stream. El objeto s
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                              |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                    |
 | Encabezado<br/>                   | <dl> <dt>Shobjidl.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Shobjidl.idl</dt> </dl> |
 
 
 

@@ -14,26 +14,26 @@ keywords:
 - DRM (administración de derechos digitales), API extendidas de cliente
 - administración de derechos digitales (DRM), API extendidas
 - DRM (administración de derechos digitales), API extendidas
-- administración de derechos digitales (DRM), API
-- DRM (administración de derechos digitales), API
+- administración de derechos digitales (DRM),API
+- DRM (administración de derechos digitales),API
 - administración de derechos digitales (DRM), adquisición de licencias
 - DRM (administración de derechos digitales), adquisición de licencias
-- administración de derechos digitales (DRM), licencias
+- administración de derechos digitales (DRM),licencias
 - DRM (administración de derechos digitales), licencias
 - API extendidas de cliente DRM, adquisición de licencias
 - API extendidas de cliente, adquisición de licencias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e604db93561ac4e9b5e382436a4ec729e33890608d1dcb7c93cbe8372aa8898
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c024789823ca0cd1b38959d78535ce71e2514897
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120089795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247413"
 ---
 # <a name="acquiring-licenses"></a>Adquisición de licencias
 
-Un escenario común para adquirir licencias es cuando un usuario tiene un archivo Windows Media protegido e intenta acceder al contenido por primera vez. Dado que las API extendidas del cliente DRM de Windows Media son independientes de las rutinas de control de archivos de ASF, el escenario básico de adquisición de licencias, aunque se admite, requiere más llamadas API que usar el SDK de formato multimedia de Windows y el SDK de Media Foundation.
+Un escenario común para adquirir licencias es cuando un usuario tiene un archivo Windows Media protegido e intenta acceder al contenido por primera vez. Dado que las API extendidas del cliente drm de Windows Media son independientes de las rutinas de control de archivos de ASF, el escenario básico de adquisición de licencias, aunque se admite, requiere más llamadas API que usar el SDK de formato multimedia de Windows y el SDK de Media Foundation.
 
 En esta sección se describe cómo usar las API extendidas de Windows Media DRM Client para adquirir licencias almacenadas en el almacén de licencias local en un equipo cliente. Contiene los temas siguientes.
 
@@ -43,8 +43,8 @@ En esta sección se describe cómo usar las API extendidas de Windows Media DRM 
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | [Adquisición silenciosa de licencias](silent-license-acquisition.md)         | Describe cómo adquirir licencias sin intervención del usuario.                                                                               |
 | [Adquisición de licencias no silenciosas](non-silent-license-acquisition.md) | Describe cómo adquirir licencias cuando se requiere la intervención del usuario (por ejemplo, pagar por el contenido).                                     |
-| [Entrega previa de licencias](license-pre-delivery.md)                     | Describe cómo extraer licencias de un servidor de licencias a un equipo cliente.                                                                 |
-| [Crear licencias localmente](creating-licenses-locally.md)           | Describe cómo crear sus propias licencias sin descargarlas desde un servidor de licencias y cómo almacenarlas en el almacén de licencias local. |
+| [Entrega previa de la licencia](license-pre-delivery.md)                     | Describe cómo extraer licencias de un servidor de licencias a un equipo cliente.                                                                 |
+| [Creación de licencias localmente](creating-licenses-locally.md)           | Describe cómo crear sus propias licencias sin descargarlas desde un servidor de licencias y cómo almacenarlas en el almacén de licencias local. |
 
 
 

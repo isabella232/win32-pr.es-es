@@ -4,19 +4,19 @@ ms.assetid: b6c3ad92-3ab1-4311-b318-13939e1a1a5a
 title: Ejemplo web de blog de Ink
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8796a05861d278015205b5ba0d3775e2e47af6a57ce1fee426c5c0c5011dacd3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c24f132d355a95c9cb8debebe074df3f976e3b5c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119032363"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247790"
 ---
 # <a name="ink-blog-web-sample"></a>Ejemplo web de blog de Ink
 
-La aplicación de ejemplo Ink Blog muestra cómo crear una clase [UserControl](/dotnet/api/system.windows.forms.usercontrol?view=netcore-3.1) administrada que tenga funcionalidad de entrada manuscrita y host que controle en Microsoft Internet Explorer. En el ejemplo también se muestra una técnica para enviar datos de entrada de lápiz a través de una red mediante HTTP y para conservar la entrada de lápiz en un servidor.
+La aplicación de ejemplo Ink Blog muestra cómo crear una clase [UserControl](/dotnet/api/system.windows.forms.usercontrol?view=netcore-3.1) administrada que tiene funcionalidad de entrada manuscrita y hospeda ese control en Microsoft Internet Explorer. En el ejemplo también se muestra una técnica para enviar datos de entrada de lápiz a través de una red mediante HTTP y para conservar la entrada de lápiz en un servidor.
 
 > [!Note]  
-> Debe tener Microsoft Internet Information Services (IIS) con ASP.NET instalado para ejecutar este ejemplo. Asegúrese de que el equipo cumple los requisitos necesarios para ASP.NET que las aplicaciones se ejecuten en el equipo.
+> Debe tener Microsoft Internet Information Services (IIS) con ASP.NET instalado para ejecutar este ejemplo. Asegúrese de que el equipo cumple los requisitos necesarios para que ASP.NET aplicaciones se ejecuten en el equipo.
 
  
 
@@ -191,21 +191,21 @@ El proyecto InkBlogWeb es un proyecto de implementación del programa de instala
 
 Hay dos archivos .aspx que implementan el ejemplo de registro: Default.aspx y AddBlog.aspx. Default.aspx es la página predeterminada de la aplicación InkBlogWeb. El archivo de código subyacente de esta página es Default.aspx.cs. Esta página proporciona un vínculo a la página que contiene el nuevo formulario de entrada de blog y muestra las entradas de blog existentes. Este proceso se describe más adelante, después del siguiente examen de la nueva página del formulario de entrada de blog, AddBlog.aspx.
 
-AddBlog.aspx y su archivo de código subyacente, AddBlog.aspx.cs, contienen el código de la interfaz de usuario y la lógica para crear nuevas entradas de blog. AddBlox.aspx hace referencia a dos instancias de la clase de control InkArea creada en el proyecto InkBlogControls mediante el elemento HTML OBJECT, como se muestra en el ejemplo siguiente. Una instancia tiene un `id` atributo inkBlogTitle y la otra tiene un atributo id de inkBlogBody.
+AddBlog.aspx y su archivo de código subyacente, AddBlog.aspx.cs, contienen el código de la interfaz de usuario y lógica para crear nuevas entradas de blog. AddBlox.aspx hace referencia a dos instancias de la clase de control InkArea creada en el proyecto InkBlogControls mediante el elemento HTML OBJECT, como se muestra en el ejemplo siguiente. Una instancia tiene un `id` atributo inkBlogTitle y la otra tiene un atributo id de inkBlogBody.
 
 `<OBJECT id="inkBlogTitle" classid="InkBlogControls.dll#InkBlog.InkArea" width="400" height="48" VIEWASTEXT>``</OBJECT>``<br/>``<OBJECT id="inkBlogBody" classid="InkBlogControls.dll#InkBlog.InkArea" width="400" height="296" VIEWASTEXT>``</OBJECT>`
 
-El InkBlogControls.dll ensamblado debe estar presente en el mismo directorio que la página .aspx que hace referencia a él. El proyecto de implementación del programa de instalación web garantiza que este es el caso, como lo demuestra la presencia del elemento "Salida principal de InkBlogControls" en el cuadro de diálogo Implementación Project.
+El InkBlogControls.dll ensamblado debe estar presente en el mismo directorio que la página .aspx que hace referencia a él. El proyecto de implementación del programa de instalación web garantiza que este es el caso, como lo demuestra la presencia del elemento "Salida principal de InkBlogControls" en el panel Implementación Project.
 
-El control de título tiene solo 48 píxeles de alto para facilitar la entrada de una sola línea de entrada de lápiz para el título. El control de cuerpo tiene 296 píxeles de alto para hacer espacio para entradas de blog más grandes de varias líneas o quizás dibujos.
+El control de título tiene solo 48 píxeles de alto para facilitar la entrada de una sola línea de entrada de lápiz para el título. El control corporal tiene 296 píxeles de alto para hacer espacio para entradas de blog más grandes de varias líneas o quizás dibujos.
 
 Los controles InkArea están conectados a una función de script del lado cliente, AddBlog, mediante un controlador de eventos onclick de un elemento HTML BUTTON estándar.
 
 `<button id="BUTTON1" type="button" onclick="AddBlog()">Add Blog</button>`
 
-También hay un formulario HTML en la página que contiene tres elementos INPUT ocultos: BlogTitleText, BlogBodyText y BlogBodyInkData. Este formulario se usa para volver a publicar los datos de entrada de blog en el servidor. AddBlog.aspx es el controlador posterior definido para el formulario.
+También hay un formulario HTML en la página que contiene tres elementos INPUT ocultos: BlogTitleText, BlogBodyText y BlogBodyInkData. Este formulario se usa para volver a publicar los datos de entrada de blog en el servidor. AddBlog.aspx es el controlador de post-back definido para el formulario.
 
-La función AddBlog escrita en Microsoft JScript extrae los datos del blog de los controles InkArea y publica los <entity type="reg"/> resultados en el servidor.
+La función AddBlog escrita en Microsoft JScript extrae los datos del blog de los controles InkArea y publica <entity type="reg"/> los resultados en el servidor.
 
 
 ```C++
@@ -274,11 +274,11 @@ Si compila e implementa el ejemplo mediante el proyecto de implementación de in
 
 ### <a name="recognition"></a>Reconocimiento
 
-Los reconocedores de escritura a mano deben instalarse para reconocer la entrada de lápiz en el título del blog. Si accede a la aplicación InkBlog desde un equipo con un sistema operativo distinto de Windows XP Tablet PC Edition pero con el SDK de Tablet PC 1.7 instalado, puede escribir en la entrada de lápiz en los controles InkArea, pero los motores de reconocimiento no estarán presentes y no aparecerá ningún título para las entradas de blog. Sin embargo, el contenido de entrada de lápiz en el cuerpo todavía aparece.
+Los reconocedores de escritura a mano deben instalarse para reconocer la entrada de lápiz en el título del blog. Si accede a la aplicación InkBlog desde un equipo con un sistema operativo distinto de Windows XP Tablet PC Edition pero con el SDK de Tablet PC 1.7 instalado, puede escribir en lápiz en los controles InkArea, pero los motores de reconocimiento no estarán presentes y no aparecerá ningún título para las entradas de blog. Sin embargo, el contenido de entrada de lápiz en el cuerpo todavía aparece.
 
 ### <a name="machine-configuration"></a>Configuración de la máquina
 
-Si ha instalado ASP.NET y el .NET Framework en un equipo y, a continuación, desinstala y reinstala IIS, las asignaciones de script se interrumpirán y ASP.NET no funcionará. Si esto sucede, puede reparar el script de ASP.NET con la herramienta ASP.NET registro de IIS (Aspnet \_regiis.exe -i).
+Si ha instalado ASP.NET y el .NET Framework en un equipo y, a continuación, desinstala y reinstala IIS, las asignaciones de scripts se interrumpirán y ASP.NET no funcionará. Si esto sucede, puede reparar el script de ASP.NET con la herramienta ASP.NET registro de IIS (Aspnet \_regiis.exe -i).
 
 ## <a name="related-topics"></a>Temas relacionados
 

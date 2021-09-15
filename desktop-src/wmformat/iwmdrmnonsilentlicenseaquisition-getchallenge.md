@@ -1,10 +1,10 @@
 ---
-title: Método IWMDRMNonSilentLicenseAquisition GetChallenge (Wmdrmsdk.h)
+title: Método GetChallenge de IWMDRMNonSilentLicenseAquisition (Wmdrmsdk.h)
 description: El método GetChallenge recupera el desafío de licencia que se debe publicar en el servidor de licencias.
 ms.assetid: f2ff8484-8fe2-4c74-82c1-9bc14f8197e0
 keywords:
 - Método GetChallenge windows Media Format
-- Método GetChallenge windows Media Format , interfaz IWMDRMNonSilentLicenseAquisition
+- Método GetChallenge windows Media Format , IWMDRMNonSilentLicenseAquisition (interfaz)
 - IWMDRMNonSilentLicenseAquisition interface windows Media Format , Método GetChallenge
 topic_type:
 - apiref
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf495652033bdb5201f2b4e5bd9dc1d6a222cc3ebdf4ec6438fe391ed06fac85
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fa0dc63c63e5d7a62c06cbe791d9a5e5e8d09c5d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119027523"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247275"
 ---
 # <a name="iwmdrmnonsilentlicenseaquisitiongetchallenge-method"></a>IWMDRMNonSilentLicenseAquisition::GetChallenge (método)
 
@@ -83,7 +83,7 @@ Ninguno.
 
 <dl> <dt>
 
-[**Interfaz IWMDRMNonSilentLicenseAquisition**](iwmdrmnonsilentlicenseaquisition.md)
+[**IWMDRMNonSilentLicenseAquisition (Interfaz)**](iwmdrmnonsilentlicenseaquisition.md)
 </dt> </dl>
 
  

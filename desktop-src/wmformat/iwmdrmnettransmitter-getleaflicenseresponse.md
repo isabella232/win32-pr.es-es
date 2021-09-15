@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aff470341c3227782d0d34cbdd2ca2a4a51a4cb1b6214b81ea2ea9a384b29ee2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1bf2374966abfae4353a72755313c1cbbdfb7287
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119084835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247304"
 ---
 # <a name="iwmdrmnettransmittergetleaflicenseresponse-method"></a>Método IWMDRMNetTransmitter::GetLeafLicenseResponse
 
@@ -110,7 +110,7 @@ Ninguno.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

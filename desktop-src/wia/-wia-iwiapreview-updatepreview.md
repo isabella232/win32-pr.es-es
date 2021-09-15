@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: b5f48462d926d96acebf4a74f0a843d82f9cd97190585b954565d5da649ff9f8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4a5d469179f341f3bad5d2b9b5ed25a5715be694
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119549695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247634"
 ---
 # <a name="iwiapreviewupdatepreview-method"></a>IWiaPreview::UpdatePreview (método)
 
@@ -75,7 +75,7 @@ Tipo: **HRESULT**
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método pasa la imagen almacenada en caché sin filtrar a través del filtro de procesamiento de imágenes, que luego escribe los datos filtrados en el flujo proporcionado por la aplicación. El componente de versión preliminar de WIA 2.0 recupera esta secuencia mediante una llamada al método [**GetNextStream**](-wia-iwiatransfercallback-getnextstream.md) del filtro de procesamiento de imágenes, que luego llama a la implementación **GetNextStream** de la devolución de llamada de la aplicación. Antes de llamar a **IWiaPreview::UpdatePreview**, una aplicación debe llamar primero a [**IWiaPreview::GetNewPreview**](-wia-iwiapreview-getnewpreview.md) para adquirir la imagen del analizador; De lo contrario, el método devuelve un error.
 
@@ -116,12 +116,12 @@ UpdateRegion(
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

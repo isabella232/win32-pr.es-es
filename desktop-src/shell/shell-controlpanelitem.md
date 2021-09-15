@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 54979bbd-b36b-4b5b-a8a0-5f63e9526fa5
-ms.openlocfilehash: d78cb161f8d89de53d491d113f141d63c28ae58ab359cc0198ff4aaa54e6062f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 04d2493f5d0ec5b86d19689cb8e7c2a02a82e536
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119709805"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247983"
 ---
 # <a name="shellcontrolpanelitem-method"></a>Método Shell.ControlPanelItem
 
@@ -63,7 +63,7 @@ Shell.ControlPanelItem( _
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-El Panel de control de archivo de la aplicación. Todas Panel de control aplicaciones tienen la .cpl extensión.
+El Panel de control nombre de archivo de la aplicación. Todas Panel de control aplicaciones tienen la .cpl extensión.
 
 </dd> </dl>
 
@@ -135,12 +135,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

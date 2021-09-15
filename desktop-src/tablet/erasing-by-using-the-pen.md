@@ -4,36 +4,36 @@ ms.assetid: c05c7dbf-c3e0-42a7-a97e-bb9d9764209d
 title: Borrado mediante el lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f96d7d281f4e94a4a53f7e99e83c38192ceb7d31fbf9ee643653a20b4836a7cd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2c9e71828e826f2d57dd21e57934e12c8de0be03
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119936575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247844"
 ---
 # <a name="erasing-by-using-the-pen"></a>Borrado mediante el lápiz
 
 Si decide implementar el borrado en la aplicación que no sea mediante el objeto [**InkOverlay,**](inkoverlay-class.md) puede hacerlo mediante uno de los dos métodos siguientes.
 
-## <a name="using-the-tip-of-the-pen"></a>Uso de la sugerencia del lápiz
+## <a name="using-the-tip-of-the-pen"></a>Usar la sugerencia del lápiz
 
-La sugerencia del lápiz de tableta se usa generalmente para escribir a mano y dibujar. sin embargo, la sugerencia también se puede usar para borrar la entrada de lápiz. Para ello, la aplicación debe tener un modo de borrado que los usuarios puedan emplear. En este modo, use las pruebas de acceso para determinar qué entrada de lápiz se mueve el cursor. Puede establecer el modo de borrado para eliminar solo la entrada de lápiz que pasa el cursor o trazos enteros que intersecan con la ruta de acceso del cursor, en función de las consideraciones de diseño o funcionales.
+La sugerencia del lápiz de tableta se usa generalmente para escribir a mano y dibujar. sin embargo, la sugerencia también se puede usar para borrar la entrada de lápiz. Para ello, la aplicación debe tener un modo de borrado que los usuarios puedan emplear. En este modo, use las pruebas de posición para determinar qué entrada manuscrita se mueve el cursor. Puede establecer el modo de borrado para eliminar solo la entrada de lápiz que pasa el cursor o los trazos enteros que intersecan con la ruta de acceso del cursor, en función de las consideraciones de diseño o funcionales.
 
 Para obtener un ejemplo de cómo usar un modo de borrado para borrar la entrada de lápiz, vea El ejemplo [de borrado de lápiz](ink-erasing-sample.md).
 
 ## <a name="using-the-top-of-the-pen"></a>Uso de la parte superior del lápiz
 
-Para implementar el borrado con la parte superior del lápiz de tableta, la aplicación debe buscar un cambio en el cursor. Para buscar el cursor invertido, escuche el evento [**CursorInRange**](inkoverlay-cursorinrange.md) para determinar cuándo se encuentra el cursor en el contexto de la aplicación. Cuando el cursor esté dentro del intervalo, busque la [**propiedad Invertido**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcursor-get_inverted) en el [**objeto Cursor.**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) Si la **propiedad Inverted** es **true**, realice pruebas de acceso para determinar qué entrada de lápiz está moviendo el cursor. Borre la entrada de lápiz o los trazos que intersecan con la ruta de acceso del cursor, en función de las consideraciones de diseño o funcionales.
+Para implementar el borrado con la parte superior del lápiz de tableta, la aplicación debe buscar un cambio en el cursor. Para buscar el cursor invertido, escuche el evento [**CursorInRange**](inkoverlay-cursorinrange.md) para determinar cuándo se encuentra el cursor en el contexto de la aplicación. Cuando el cursor esté dentro del intervalo, busque la [**propiedad Inverted**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkcursor-get_inverted) en el [**objeto Cursor.**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor) Si la **propiedad Inverted** es **true,** realice pruebas de impacto para determinar qué entrada manuscrita se mueve el cursor. Borre la entrada de lápiz o los trazos que intersecan con la ruta de acceso del cursor, en función de las consideraciones de diseño o funcionales.
 
 Para obtener un ejemplo de cómo usar la parte superior del lápiz para borrar la entrada de lápiz, vea El ejemplo [de borrado de lápiz](ink-erasing-sample.md).
 
 ### <a name="determining-if-erasing-with-the-top-of-the-pen-is-enabled"></a>Determinar si el borrado con la parte superior del lápiz está habilitado
 
-Los usuarios pueden usar la parte superior del lápiz para borrar la entrada de lápiz en aplicaciones diseñadas para Tablet PC, si su hardware concreto lo permite. Se accede a esta funcionalidad mediante una casilla del cuadro de grupo Botones de lápiz de la pestaña Opciones del lápiz del cuadro de diálogo Tableta y lápiz Configuración panel de control. Para detectar si el usuario ha habilitado el borrado de la parte superior del lápiz, compruebe la siguiente subclave del Registro:
+Los usuarios pueden usar la parte superior del lápiz para borrar la entrada de lápiz en aplicaciones diseñadas para Tablet PC, si su hardware determinado lo permite. Se puede acceder a esta funcionalidad mediante una casilla del cuadro de grupo Botones de lápiz de la pestaña Opciones del lápiz del cuadro de diálogo Del panel de control tablet Configuración Pen. Para detectar si el usuario ha habilitado el borrado en la parte superior del lápiz, compruebe la siguiente subclave del Registro:
 
 `HKEY_CURRENT_USER\SOFTWARE\Microsoft\WISP\PEN\SysEventParameters`
 
-La `EraseEnable` entrada de esta subclave es de tipo REG **\_ DWORD.** El valor de esta entrada es 1 para habilitado o 0 para deshabilitado. Otros valores se reservan para un uso futuro.
+La `EraseEnable` entrada de esta subclave es de tipo REG **\_ DWORD**. El valor de esta entrada es 1 para habilitado o 0 para deshabilitado. Otros valores se reservan para un uso futuro.
 
 Si la aplicación permite usar la parte superior del lápiz para borrar, debe comprobar y almacenar en caché el valor de la entrada EraseEnable cuando:
 
@@ -42,7 +42,7 @@ Si la aplicación permite usar la parte superior del lápiz para borrar, debe co
 
 Use este valor almacenado en caché para modificar el comportamiento de la aplicación correctamente.
 
-En el siguiente ejemplo de C \# se define un método que comprueba el valor de la entrada de la `GetEraseEnabled` `EraseEnable` `SysEventParameters` subclave. El método devuelve TRUE si el valor de la entrada es 1; devuelve FALSE si el valor de la entrada es 0 o produce una excepción InvalidOperationException si el valor de la entrada es distinto de `GetEraseEnabled` 1 o  0.  [](/dotnet/api/system.invalidoperationexception) El `GetEraseEnabled` método devuelve el valor esperado de TRUE **si** la subclave o la entrada no están presentes.
+En el siguiente ejemplo de C \# se define un método que comprueba el valor de la entrada de la `GetEraseEnabled` `EraseEnable` `SysEventParameters` subclave. El método devuelve TRUE si el valor de la entrada es 1; devuelve FALSE si el valor de la entrada es 0; o inicia una excepción InvalidOperationException si el valor de la entrada es distinto de `GetEraseEnabled` 1 o  0.  [](/dotnet/api/system.invalidoperationexception) El `GetEraseEnabled` método devuelve el valor esperado de **TRUE** si la subclave o la entrada no están presentes.
 
 
 ```C++

@@ -4,12 +4,12 @@ description: Un mensaje de error alerta a los usuarios de un problema que ya se 
 ms.assetid: b02110e9-985d-4448-9c95-eb958b0059b1
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 0ceffd3d1fecccd8342cb1e634735653bdba9722
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 50e9d945baf736329d38334a94ede6158621167c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122469022"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247671"
 ---
 # <a name="error-messages-design-basics"></a>Mensajes de error (aspectos básicos de diseño)
 
@@ -22,7 +22,7 @@ Un mensaje de error alerta a los usuarios de un problema que ya se ha producido.
 
 Mensaje de error modal típico.
 
-Los mensajes de error efectivos informan a los usuarios de que se ha producido un problema, explican por qué se produjo y proporcionan una solución para que los usuarios puedan corregir el problema. Los usuarios deben realizar una acción o cambiar su comportamiento como resultado de un mensaje de error.
+Los mensajes de error efectivos informan a los usuarios de que se ha producido un problema, explican por qué se ha producido y proporcionan una solución para que los usuarios puedan corregir el problema. Los usuarios deben realizar una acción o cambiar su comportamiento como resultado de un mensaje de error.
 
 Los mensajes de error bien escritos y útiles son fundamentales para una experiencia de usuario de calidad. Los mensajes de error mal escritos provocan una baja satisfacción del producto y son una causa principal de costos de soporte técnico evitables. Los mensajes de error innecesarios interrumpirán el flujo de los usuarios.
 
@@ -32,13 +32,13 @@ Los mensajes de error bien escritos y útiles son fundamentales para una experie
 
 Para decidirte, intenta responder a estas preguntas:
 
-- **¿La interfaz de usuario (UI) presenta un problema que ya se ha producido?** Si no es así, el mensaje no es un error. Si se alerta al usuario de una condición que podría causar un problema en el futuro, use un mensaje de advertencia.
+- **¿La interfaz de usuario (UI) presenta un problema que ya se ha producido?** Si no es así, el mensaje no es un error. Si el usuario es alertado de una condición que podría causar un problema en el futuro, use un mensaje de advertencia.
 - **¿Se puede evitar el problema sin causar confusión?** Si es así, evite el problema en su lugar. Por ejemplo, use controles que estén restringidos a valores válidos en lugar de usar controles sin restricciones que puedan requerir mensajes de error. Además, deshabilitar los controles al hacer clic produciría un error, siempre y cuando sea obvio por qué el control está deshabilitado.
 - **¿Se puede corregir el problema automáticamente?** Si es así, controle el problema y suprima el mensaje de error.
-- **¿Es probable que los usuarios realicen una acción o cambien su comportamiento como resultado del mensaje?** Si no es así, la condición no justifica la interrupción del usuario, por lo que es mejor suprimir el error.
+- **¿Es probable que los usuarios realicen una acción o cambien su comportamiento como resultado del mensaje?** Si no es así, la condición no justifica interrumpir al usuario, por lo que es mejor suprimir el error.
 - **¿Es relevante el problema cuando los usuarios usan activamente otros programas?** Si es así, considere la posibilidad de mostrar el problema mediante un icono [de área de notificación](winenv-notification.md).
 - **¿El problema no está relacionado con la actividad del usuario actual, no requiere una acción inmediata del usuario y los usuarios pueden ignorarlo libremente?** Si es así, use una notificación [de error de acción en](mess-notif.md) su lugar.
-- **¿El problema está relacionado con el estado de una tarea en segundo plano dentro de una ventana principal?** Si es así, considere la posibilidad de mostrar el problema mediante una [barra de estado](ctrl-status-bars.md).
+- **¿El problema se relaciona con el estado de una tarea en segundo plano dentro de una ventana principal?** Si es así, considere la posibilidad de mostrar el problema mediante una [barra de estado](ctrl-status-bars.md).
 - **¿Son los principales profesionales de IT de los usuarios de destino?** Si es así, considere la posibilidad de usar un mecanismo de comentarios alternativo, como entradas de [archivo](glossary.md) de registro o alertas por correo electrónico. Los profesionales de TI prefieren encarecidamente los archivos de registro para obtener información no crítica.
 
 ## <a name="design-concepts"></a>Conceptos de diseño
@@ -55,13 +55,13 @@ Parte del problema es que hay muchas maneras de hacerlo mal. Tenga en cuenta est
 
 ![captura de pantalla del mensaje de error: error en la aplicación ](images/mess-error-image2.png)
 
-Este ejemplo de Windows XP podría ser el peor mensaje de error de la historia. Indica que no se pudo iniciar un programa porque Windows está en proceso de apagado. No hay nada que el usuario pueda hacer al respecto o incluso desea hacer al respecto (el usuario eligió apagar Windows, después de todo). Y al mostrar este mensaje de error, Windows evita que se apague.
+Este ejemplo de Windows XP podría ser el peor mensaje de error de la historia. Indica que no se pudo iniciar un programa porque Windows está en proceso de apagado. No hay nada que el usuario pueda hacer al respecto o incluso desea hacer al respecto (el usuario eligió apagar Windows, después de todo). Y al mostrar este mensaje de error, Windows se impide que se apague.
 
 **El problema:** El propio mensaje de error es el problema. Además de descartar el mensaje de error, no hay nada que hacer para los usuarios.
 
 **Causa principal:** Notificar todos los casos de error, independientemente de los objetivos o puntos de vista de los usuarios.
 
-**Alternativa recomendada:** No informe de errores que no le importan a los usuarios.
+**Alternativa recomendada:** No informe de los errores que a los usuarios no les importan.
 
 **Mensajes de error "Correcto"**
 
@@ -69,13 +69,13 @@ Este ejemplo de Windows XP podría ser el peor mensaje de error de la historia. 
 
 ![captura de pantalla del mensaje de error: error de eliminación ](images/mess-error-image3.png)
 
-Este mensaje de error fue el resultado de que el usuario decidió no reiniciar Windows inmediatamente después de la eliminación del programa. La eliminación del programa se ha realizado correctamente desde el punto de vista del usuario.
+Este mensaje de error fue el resultado de que el usuario decidiese no reiniciar Windows inmediatamente después de la eliminación del programa. La eliminación del programa se ha realizado correctamente desde el punto de vista del usuario.
 
 **El problema:** No hay ningún error desde el punto de vista del usuario. Además de descartar el mensaje de error, no hay nada que hacer para los usuarios.
 
 **Causa principal:** La tarea se completó correctamente desde el punto de vista del usuario, pero no se pudo realizar desde el punto de vista del programa de desinstalación.
 
-**Alternativa recomendada:** No informe de errores en condiciones que los usuarios consideren aceptables.
+**Alternativa recomendada:** No informe de errores para condiciones que los usuarios consideren aceptables.
 
 **Mensajes de error completamente inservibles**
 
@@ -83,7 +83,7 @@ Este mensaje de error fue el resultado de que el usuario decidió no reiniciar W
 
 ![captura de pantalla del mensaje de error: error desconocido ](images/mess-error-image4.png)
 
-Los usuarios aprenden que se produjo un error, pero no tienen idea de cuál fue el error ni qué hacer al respecto. Y no, no está bien.
+Los usuarios saben que se produjo un error, pero no tienen idea de cuál fue el error ni qué hacer al respecto. Y no, no está bien.
 
 **El problema:** El mensaje de error no da un problema específico y no hay nada que los usuarios puedan hacer al respecto.
 
@@ -95,7 +95,7 @@ Los usuarios aprenden que se produjo un error, pero no tienen idea de cuál fue 
 
 **Incorrecto:**
 
-![captura de pantalla del mensaje de error: la copia de seguridad no se ha completado ](images/mess-error-image5.png)
+![captura de pantalla del mensaje de error: copia de seguridad no completada ](images/mess-error-image5.png)
 
 En este ejemplo, la instrucción del problema es clara, pero la explicación complementaria es totalmente desconcertante.
 
@@ -125,7 +125,7 @@ En este ejemplo, el mensaje de error intenta explicar cada paso de solución de 
 
 ![captura de pantalla del mensaje: no se encuentra el objeto ](images/mess-error-image7.png)
 
-La incapacidad del programa para encontrar un objeto no parece catastrófica. Y suponiendo que es catastrófico, ¿por qué está bien la respuesta?
+La incapacidad del programa para encontrar un objeto no parece catastrófica. Y suponiendo que sea catastrófico, ¿por qué está bien la respuesta?
 
 **El problema:** El tono del programa es innecesariamente duro o drástico.
 
@@ -139,7 +139,7 @@ La incapacidad del programa para encontrar un objeto no parece catastrófica. Y 
 
 ![captura de pantalla del mensaje: carácter no ilegal ](images/mess-error-image8.png)
 
-¿Por qué hacer que los usuarios se sientan como un criminal?
+¿Por qué hacer que los usuarios se sientan como un delincuente?
 
 **El problema:** El mensaje de error se indica de forma que se acuse al usuario de realizar un error.
 
@@ -147,13 +147,13 @@ La incapacidad del programa para encontrar un objeto no parece catastrófica. Y 
 
 **Alternativa recomendada:** Céntrate en el problema, no en la acción del usuario que condujo al problema, usando la voz pasiva según sea necesario.
 
-**Mensajes de error de advertencia**
+**Mensajes de error de nocciones**
 
 **Incorrecto:**
 
 ![captura de pantalla del mensaje: error en el informe de errores ](images/mess-error-image9.png)
 
-En este ejemplo, la declaración del problema es bastante irónica y no se proporciona ninguna solución.
+En este ejemplo, la instrucción del problema es bastante irónica y no se proporciona ninguna solución.
 
 **El problema:** Instrucciones de mensaje de error que son infieles o no sesg.
 
@@ -171,9 +171,9 @@ En este ejemplo, el mensaje de error indica que hay un error en el programa. Est
 
 **El problema:** Los mensajes diseñados para ayudar a los desarrolladores del programa a encontrar errores se quedan en la versión de lanzamiento del programa. Estos mensajes de error no tienen ningún significado ni valor para los usuarios.
 
-**Causa principal:** Los programadores usan la interfaz de usuario normal para hacer mensajes a sí mismos.
+**Causa principal:** Programadores que usan la interfaz de usuario normal para enviar mensajes a sí mismos.
 
-**Alternativa recomendada:** Los desarrolladores deben compilar condicionalmente todos estos mensajes para que se quiten automáticamente de la versión de lanzamiento de un producto. No pierda tiempo intentando hacer que los usuarios puedan comprender errores como este, ya que su única audiencia son los programadores.
+**Alternativa recomendada:** Los desarrolladores deben compilar condicionalmente todos estos mensajes para que se quiten automáticamente de la versión de lanzamiento de un producto. No pierda tiempo intentando realizar errores como este comprensibles para los usuarios porque su única audiencia son los programadores.
 
 **Mensajes de error mal presentados**
 
@@ -185,9 +185,9 @@ Este ejemplo tiene muchos errores comunes de presentación.
 
 **El problema:** Obtener todos los detalles incorrectos en la presentación del mensaje de error.
 
-**Causa principal:** No conocer ni aplicar las directrices del mensaje de error. No se usan escritores y editores para crear y revisar los mensajes de error.
+**Causa principal:** No conocer y aplicar las directrices del mensaje de error. No se usan escritores y editores para crear y revisar los mensajes de error.
 
-La naturaleza del control de errores es tal que muchos de estos errores son muy fáciles de realizar. Resulta molesto darse cuenta de que la mayoría de los mensajes de error podrían ser candidatos para el Salón de los Ofitorios.
+La naturaleza del control de errores es tal que muchos de estos errores son muy fáciles de cometer. Es alarmante darse cuenta de que la mayoría de los mensajes de error podrían ser candidatos para el Salón de la Insaminación.
 
 **Características de los mensajes de error buenos**
 
@@ -201,22 +201,22 @@ Además, los mensajes de error buenos se presentan de una manera que es:
 
 - **Relevante.** El mensaje presenta un problema que preocupa a los usuarios.
 - **Procesable.** Los usuarios deben realizar una acción o cambiar su comportamiento como resultado del mensaje.
-- **Centrado en el usuario.** El mensaje describe el problema en términos de acciones u objetivos del usuario de destino, no en términos de con qué no está satisfecho el código.
+- **Centrado en el usuario.** El mensaje describe el problema en términos de acciones u objetivos del usuario de destino, no en cuanto a lo que el código no está satisfecho.
 - **Breve.** El mensaje es lo más corto posible, pero no más corto.
 - **Claro.** El mensaje usa lenguaje sin formato para que los usuarios de destino puedan comprender fácilmente el problema y la solución.
 - **Específico.** El mensaje describe el problema mediante un lenguaje específico, que da nombres, ubicaciones y valores específicos de los objetos implicados.
 - **Cortés.** No se debe culpar a los usuarios ni hacer que se sientan cómodos.
-- **Raro.** Se muestra con poca frecuencia. Los mensajes de error que se muestran con frecuencia son un signo de diseño no bueno.
+- **Poco frecuente.** Se muestra con poca frecuencia. Los mensajes de error que se muestran con frecuencia son un signo de diseño no bueno.
 
-Al diseñar la experiencia de control de errores para que tenga estas características, puede mantener los mensajes de error del programa fuera del Salón de mensajes de error de Alcándalo.
+Al diseñar la experiencia de control de errores para que tenga estas características, puede mantener los mensajes de error del programa fuera de la Sala de mensajes de error de La Manipulación.
 
 **Evitar mensajes de error innecesarios**
 
 A menudo, el mejor mensaje de error no es ningún mensaje de error. Muchos errores se pueden evitar mediante un mejor diseño y, a menudo, hay mejores alternativas a los mensajes de error. Normalmente es mejor evitar un error que notificar uno.
 
-Los mensajes de error más obvios que se deben evitar son aquellos que no son utilizables. Si es probable que los usuarios descarten el mensaje sin hacer ni cambiar nada, omita el mensaje de error.
+Los mensajes de error más obvios que se deben evitar son aquellos que no son de acción. Si es probable que los usuarios descarten el mensaje sin hacer ni cambiar nada, omita el mensaje de error.
 
-Algunos mensajes de error se pueden eliminar porque no son problemas desde el punto de vista del usuario. Por ejemplo, supongamos que el usuario intentó eliminar un archivo que ya está en proceso de eliminación. Aunque este podría ser un caso inesperado desde el punto de vista del código, los usuarios no consideran esto un error porque se logra el resultado deseado.
+Algunos mensajes de error se pueden eliminar porque no son problemas desde el punto de vista del usuario. Por ejemplo, suponga que el usuario intentó eliminar un archivo que ya está en proceso de eliminación. Aunque esto podría ser un caso inesperado desde el punto de vista del código, los usuarios no consideran esto un error porque se logra el resultado deseado.
 
 **Incorrecto:**
 
@@ -232,44 +232,44 @@ En otro ejemplo, suponga que el usuario cancela explícitamente una tarea. Para 
 
 Este mensaje de error también debe eliminarse porque la acción se ha realizado correctamente desde el punto de vista del usuario.
 
-A veces, los mensajes de error se pueden eliminar al centrarse en los objetivos de los usuarios en lugar de en la tecnología. Al hacerlo, replantee lo que realmente es un error. ¿El problema es con los objetivos del usuario o con la capacidad del programa para satisfacerlos? Si la acción del usuario tiene sentido en el mundo real, también debería tener sentido en el software.
+A veces, los mensajes de error se pueden eliminar centrándose en los objetivos de los usuarios en lugar de en la tecnología. Al hacerlo, replantee lo que es realmente un error. ¿Es el problema con los objetivos del usuario o con la capacidad del programa para satisfacerlos? Si la acción del usuario tiene sentido en el mundo real, también debería tener sentido en el software.
 
 Por ejemplo, supongamos que dentro de un programa de comercio electrónico un usuario intenta encontrar un producto mediante la búsqueda, pero la consulta de búsqueda literal no tiene coincidencias y el producto deseado está agotado. Técnicamente, se trata de un error, pero en lugar de proporcionar un mensaje de error, el programa podría:
 
-- Continúe buscando productos que coincidan más con la consulta.
+- Continúe buscando productos que coincidan más estrechamente con la consulta.
 - Si la búsqueda tiene errores obvios, se recomienda automáticamente una consulta corregida.
-- Controle automáticamente problemas comunes, como errores ortográficos, ortografías alternativas y casos de pluralización y verbos no coincidentes.
+- Controle automáticamente problemas comunes como errores ortográficos, ortografías alternativas y casos de pluralización y verbos no coincidentes.
 - Indique cuándo estará en existencias el producto.
 
 Siempre que la solicitud del usuario sea razonable, un programa de comercio electrónico bien diseñado debe devolver resultados razonables, no errores.
 
-Otra excelente manera de evitar los mensajes de error es evitar problemas en primer lugar. Puede evitar errores mediante:
+Otra excelente manera de evitar mensajes de error es evitar problemas en primer lugar. Puede evitar errores mediante:
 
-- **Uso de controles restringidos.** Use controles restringidos a valores válidos. Controles como listas, controles deslizantes, casillas, botones de radio y selectores de fecha y hora están restringidos a valores válidos, mientras que los cuadros de texto a menudo no son y pueden requerir mensajes de error. Sin embargo, puede restringir los cuadros de texto para que acepten solo determinados caracteres y acepten un número máximo de caracteres.
-- **Uso de interacciones restringidas.** Para las operaciones de arrastre, permita que los usuarios coloquen solo en destinos válidos.
-- **Usar controles deshabilitados y elementos de menú.** Deshabilite controles y elementos de menú cuando los usuarios puedan deducir fácilmente por qué está deshabilitado el control o el elemento de menú.
+- **Usar controles restringidos.** Use controles que estén restringidos a valores válidos. Los controles como listas, controles deslizantes, casillas, botones de radio y selectores de fecha y hora están restringidos a valores válidos, mientras que los cuadros de texto a menudo no son y pueden requerir mensajes de error. Sin embargo, puede restringir los cuadros de texto para que acepten solo determinados caracteres y acepten un número máximo de caracteres.
+- **Uso de interacciones restringidas.** Para las operaciones de arrastre, permita a los usuarios colocar solo en destinos válidos.
+- **Usar controles deshabilitados y elementos de menú.** Deshabilite los controles y los elementos de menú cuando los usuarios puedan deducir fácilmente por qué se deshabilita el control o el elemento de menú.
 - **Proporcionar buenos valores predeterminados.** Es menos probable que los usuarios realicen errores de entrada si pueden aceptar los valores predeterminados. Incluso si los usuarios deciden cambiar el valor, el valor predeterminado permite a los usuarios conocer el formato de entrada esperado.
-- **Hacer que las cosas funcionen.** Es menos probable que los usuarios cometen errores si las tareas son innecesarias o se realizan automáticamente para ellos. O bien, si los usuarios cometen pequeños errores, pero su intención es clara, el problema se soluciona automáticamente. Por ejemplo, puede corregir automáticamente problemas de formato menores.
+- **Hacer que las cosas funcionen.** Es menos probable que los usuarios cometen errores si las tareas no son necesarias o se realizan automáticamente para ellos. O bien, si los usuarios cometen pequeños errores pero su intención es clara, el problema se soluciona automáticamente. Por ejemplo, puede corregir automáticamente problemas de formato menores.
 
 **Proporcionar los mensajes de error necesarios**
 
-A veces es necesario proporcionar un mensaje de error. Los usuarios cometen errores, las redes y los dispositivos dejan de funcionar, los objetos no se pueden encontrar ni modificar, las tareas no se pueden completar y los programas tienen errores. Idealmente, estos problemas se producirían con menos frecuencia, por ejemplo, podemos diseñar nuestro software para evitar muchos tipos de errores de usuario, pero no es realista evitar todos estos problemas. Y cuando se produce uno de estos problemas, un mensaje de error útil pone a los usuarios de nuevo en pie rápidamente.
+A veces realmente es necesario proporcionar un mensaje de error. Los usuarios cometen errores, las redes y los dispositivos dejan de funcionar, los objetos no se pueden encontrar ni modificar, las tareas no se pueden completar y los programas tienen errores. Idealmente, estos problemas se producirían con menos frecuencia, por ejemplo, podemos diseñar nuestro software para evitar muchos tipos de errores de usuario, pero no es realista evitar todos estos problemas. Y cuando se produce uno de estos problemas, un mensaje de error útil pone a los usuarios de nuevo en pie rápidamente.
 
-Una idea común es que los mensajes de error son la peor experiencia del usuario y se deben evitar a toda costa, pero es más preciso decir que la confusión del usuario es la peor experiencia y debe evitarse a toda costa. A veces, ese costo es un mensaje de error útil.
+Una opinión común es que los mensajes de error son la peor experiencia del usuario y se deben evitar a toda costa, pero es más preciso decir que la confusión del usuario es la peor experiencia y se debe evitar a toda costa. A veces, ese costo es un mensaje de error útil.
 
-Considere la posibilidad de usar controles deshabilitados. La mayoría de las veces, es obvio por qué un control está deshabilitado, por lo que deshabilitar el control es una excelente manera de evitar un mensaje de error. Sin embargo, ¿qué ocurre si el motivo por el que un control está deshabilitado no es obvio? El usuario no puede continuar y no hay comentarios para determinar el problema. Ahora el usuario está atascado y tiene que deducir el problema u obtener soporte técnico. En tales casos, es mucho mejor dejar el control habilitado y proporcionar un mensaje de error útil en su lugar.
+Considere la posibilidad de usar controles deshabilitados. La mayoría de las veces, es obvio por qué un control está deshabilitado, por lo que deshabilitar el control es una excelente manera de evitar un mensaje de error. Sin embargo, ¿qué ocurre si la razón por la que un control está deshabilitado no es obvia? El usuario no puede continuar y no hay comentarios para determinar el problema. Ahora el usuario está bloqueado y tiene que deducir el problema u obtener soporte técnico. En tales casos, es mucho mejor dejar el control habilitado y proporcionar un mensaje de error útil en su lugar.
 
 **Incorrecto:**
 
 ![captura de pantalla del mensaje: ¿dónde guardar la copia de seguridad? ](images/mess-error-image14.png)
 
-¿Por qué el botón Siguiente está deshabilitado aquí? Es mejor dejarla habilitada y evitar la confusión del usuario al dar un mensaje de error útil.
+¿Por qué el botón Siguiente está deshabilitado aquí? Mejor dejarla habilitada y evitar la confusión del usuario al dar un mensaje de error útil.
 
-Si no está seguro de si debe proporcionar un mensaje de error, empiece por crear el mensaje de error que podría proporcionar. Si es probable que los usuarios realicen una acción o cambien su comportamiento como resultado, proporcione el mensaje de error. Por el contrario, si es probable que los usuarios descarten el mensaje sin hacer nada ni cambiar nada, omita el mensaje de error.
+Si no está seguro de si debe proporcionar un mensaje de error, empiece por crear el mensaje de error que podría proporcionar. Si es probable que los usuarios realicen una acción o cambien su comportamiento como resultado, proporcione el mensaje de error. Por el contrario, si es probable que los usuarios descarten el mensaje sin hacer ni cambiar nada, omita el mensaje de error.
 
 **Diseño para un buen control de errores**
 
-Aunque crear texto de mensaje de error bueno puede ser un desafío, a veces es imposible sin una buena compatibilidad con el control de errores del programa. Considere este mensaje de error:
+Aunque crear un buen texto de mensaje de error puede ser complicado, a veces es imposible sin una buena compatibilidad con el control de errores del programa. Considere este mensaje de error:
 
 **Incorrecto:**
 
@@ -283,14 +283,14 @@ Para crear mensajes de error específicos, útiles y centrados en el usuario, el
 
 - Cada problema debe tener asignado un código de error único.
 - Si un problema tiene varias causas, el programa debe determinar la causa específica siempre que sea posible.
-- Si el problema tiene parámetros, se deben mantener.
-- Los problemas de bajo nivel deben controlarse en un nivel lo suficientemente alto para que el mensaje de error se pueda presentar desde el punto de vista del usuario.
+- Si el problema tiene parámetros, se deben mantener los parámetros.
+- Los problemas de bajo nivel se deben controlar en un nivel lo suficientemente alto para que el mensaje de error se pueda presentar desde el punto de vista del usuario.
 
 Los mensajes de error buenos no son solo un problema de interfaz de usuario, son un problema de diseño de software. Una buena experiencia de mensaje de error no es algo que se pueda encontrar más adelante.
 
 **Solución de problemas (y cómo evitarlo)**
 
-La solución de problemas se produce cuando se notifica un problema con varias causas diferentes con un único mensaje de error.
+Solución de problemas de resultados cuando se notifica un problema con varias causas diferentes con un único mensaje de error.
 
 **Incorrecto:**
 
@@ -302,7 +302,7 @@ La solución de problemas se produce cuando se notifica un problema con varias c
 
 Solución de problemas de resultados cuando se notifican varios problemas con un único mensaje de error.
 
-En el ejemplo siguiente, no se pudo mover un elemento porque ya se movió o eliminó, o se denegó el acceso. Si el programa puede determinar fácilmente la causa, ¿por qué poner la carga en el usuario para determinar la causa específica?
+En el ejemplo siguiente, no se pudo mover un elemento porque ya se ha movido o eliminado, o se denegó el acceso. Si el programa puede determinar fácilmente la causa, ¿por qué poner la carga en el usuario para determinar la causa específica?
 
 **Incorrecto:**
 
@@ -316,13 +316,13 @@ El programa puede determinar si se denegó el acceso, por lo que este problema d
 
 ![captura de pantalla del mensaje que indica una causa ](images/mess-error-image19.png)
 
-Con una causa específica, no se requiere ninguna solución de problemas.
+Con una causa específica, no se requiere solución de problemas.
 
 Use mensajes con varias causas solo cuando no se pueda determinar la causa específica. En este ejemplo, sería difícil para el programa determinar si el elemento se movió o eliminó, por lo que aquí se podría usar un único mensaje de error con varias causas. Sin embargo, es poco probable que los usuarios se preocupen si, por ejemplo, no pudieron mover un archivo eliminado. Para estas causas, el mensaje de error ni siquiera es necesario.
 
 **Control de errores desconocidos**
 
-En algunos casos, no sabrá realmente el problema, la causa o la solución. Si sería imprudente suprimir el error, es mejor estar al tanto de la falta de información que presentar problemas, causas o soluciones que podrían no ser correctos.
+En algunos casos, realmente no conocerá el problema, la causa ni la solución. Si sería imprudente suprimir el error, es mejor estar al tanto de la falta de información que presentar problemas, causas o soluciones que podrían no ser correctas.
 
 Por ejemplo, si el programa tiene una excepción no controlada, el siguiente mensaje de error es adecuado:
 
@@ -332,23 +332,23 @@ Si no puede suprimir un error desconocido, es mejor estar al tanto de la falta d
 
 Por otro lado, proporcione información específica y útil si es probable que sea útil la mayor parte del tiempo.
 
-![Captura de pantalla que muestra Office Communicator mensaje "servidor no disponible". ](images/mess-error-image21.png)
+![Captura de pantalla que muestra Office Communicator mensaje "Servidor no disponible". ](images/mess-error-image21.png)
 
 Este mensaje de error es adecuado para un error desconocido si la conectividad de red suele ser el problema.
 
 **Determinar el tipo de mensaje adecuado**
 
-Algunos problemas se pueden presentar como un error, una advertencia o información, en función del énfasis y la expresión. Por ejemplo, suponga que una página web no puede cargar un control de ActiveX sin signo en función de la configuración Windows Internet Explorer actual:
+Algunos problemas se pueden presentar como un error, una advertencia o información, dependiendo del énfasis y la expresión. Por ejemplo, suponga que una página web no puede cargar un control ActiveX sin signo en función de la configuración Windows Internet Explorer actual:
 
 - **Error.** "Esta página no puede cargar un control ActiveX sin signo". (Se describe como un problema existente).
-- **Advertencia.** "Es posible que esta página no se comporte según lo esperado porque Windows Internet Explorer no está configurado para cargar controles ActiveX sin signo". o "Permitir que esta página instale un control de ActiveX sin signo? Si lo hace desde orígenes que no son de confianza, puede dañar el equipo". (Ambos con frases como condiciones que pueden causar problemas futuros).
-- **Información.** "Ha configurado Windows Internet Explorer para bloquear los controles de ActiveX sin signo". (Con frases como una instrucción de hechos).
+- **Advertencia.** "Es posible que esta página no se comporte según lo previsto porque Windows Internet Explorer no está configurado para cargar controles de ActiveX sin signo". o "¿Permitir que esta página instale un control de ActiveX sin signo? Si lo hace desde orígenes que no son de confianza, puede dañar el equipo". (Ambos con frases como condiciones que pueden causar problemas futuros).
+- **Información.** "Ha configurado Windows Internet Explorer para bloquear controles de ActiveX sin signo". (Con frases como una declaración de hechos).
 
-**Para determinar el tipo de mensaje adecuado, céntrate en el aspecto más importante del problema sobre el que los usuarios necesitan conocer o actuar.** Normalmente, si un problema impide que el usuario se ejecute, debe presentarlo como un error; si el usuario puede continuar, presentarlo como una advertencia. Crear la [instrucción principal u](text-ui.md) otro texto correspondiente en función de ese foco y, a continuación, elija un icono (estándar o de otro tipo) que coincida con el texto.[](vis-std-icons.md) El texto de la instrucción principal y los iconos siempre deben coincidir.
+**Para determinar el tipo de mensaje adecuado, céntrate en el aspecto más importante del problema que los usuarios necesitan conocer o actuar.** Normalmente, si un problema impide que el usuario se ejecute, debe presentarlo como un error. si el usuario puede continuar, presentá como una advertencia. Crear la [instrucción principal u](text-ui.md) otro texto correspondiente en función de ese foco y, a continuación, elija un icono (estándar o de otro tipo) que coincida con el texto.[](vis-std-icons.md) El texto de instrucción principal y los iconos siempre deben coincidir.
 
 **Presentación de mensajes de error**
 
-La mayoría de los mensajes de error Windows los programas se presentan mediante cuadros de diálogo modales (como la mayoría de los ejemplos de este artículo), pero hay otras opciones:
+La mayoría de los mensajes de Windows se presentan mediante cuadros de diálogo modales (como la mayoría de los ejemplos de este artículo), pero hay otras opciones:
 
 - In situ
 - Globos
@@ -405,14 +405,20 @@ Para obtener más instrucciones y ejemplos sobre la comunicación en exceso, [ve
 Los mensajes de error tienen varios patrones de uso:
 
 
-| | | <strong>Problemas del sistema</strong><br /> El sistema operativo, el dispositivo de hardware, la red o el programa han dado error o no están en el estado necesario para realizar una tarea. <br /> | El usuario puede resolver muchos problemas del sistema: <br /><ul><li>Los problemas del dispositivo se pueden resolver al activar el dispositivo, volver a conectar el dispositivo e insertar medios.</li><li>Los problemas de red se pueden resolver comprobando la conexión de red física y ejecutando <strong>Diagnóstico y reparación de red.</strong></li><li>Los problemas del programa se pueden resolver cambiando las opciones del programa o reiniciando el programa.</li></ul><img src="images/mess-error-image25.png" alt="Screen shot of message: Can't find a camera " /><br /> En este ejemplo, el programa no encuentra una cámara para realizar una tarea de usuario.<br /><img src="images/mess-error-image26.png" alt="Screen shot of message Network discovery off " /><br /> En este ejemplo, debe estar activada una característica necesaria para realizar una tarea.<br /> | | <strong>Problemas de archivos</strong><br /> No se encontró un archivo o carpeta necesario para una tarea iniciada por el usuario, ya está en uso o no tiene el formato esperado. <br /> | <img src="images/mess-error-image27.png" alt="Screen shot of message: Can't delete file " /><br /> En este ejemplo, no se puede eliminar el archivo o la carpeta porque no se encontró.<br /><img src="images/mess-error-image28.png" alt="Screen shot of message: Can't play this file " /><br /> En este ejemplo, el programa no admite el formato de archivo especificado.<br /> | | <strong>Problemas de seguridad</strong><br /> El usuario no tiene permiso para acceder a un recurso o privilegios suficientes para realizar una tarea iniciada por el usuario. <br /> | <img src="images/mess-error-image29.png" alt="Screen shot of message: You don't have permission " /><br /> En este ejemplo, el usuario no tiene permiso para acceder a un recurso.<br /><img src="images/mess-error-image30.png" alt="Screen shot of message: You don't have privilege " /><br /> En este ejemplo, el usuario no tiene el privilegio de realizar una tarea.<br /> | | <strong>Problemas de tareas</strong><br /> Hay un problema específico al realizar una tarea iniciada por el usuario (que no sea un sistema, un archivo no encontrado, un formato de archivo o un problema de seguridad). <br /> | <img src="images/mess-error-image31.png" alt="Screen shot of message: Data can't be pasted " /><br /> En este ejemplo, los datos del Portapapeles no se pueden pegar en Paint.<br /><img src="images/mess-error-image32.png" alt="Screen shot of message: Upgrade can't be installed " /><br /> En este ejemplo, el usuario no puede instalar una actualización de software.<br /> | | <strong>Problemas de entrada del usuario</strong><br /> El usuario escribió un valor incorrecto o incoherente con otra entrada del usuario. <br /> | <img src="images/mess-error-image33.png" alt="Screen shot of message: Incorrect time value " /><br /> En este ejemplo, el usuario escribió un valor de hora incorrecto.<br /><img src="images/mess-error-image34.png" alt="Screen shot of message: Incorrect input format " /><br /> En este ejemplo, la entrada del usuario no tiene el formato correcto.<br /> | 
+| Etiqueta | Value |
+|--------|-------|
+| <strong>Problemas del sistema</strong><br /> El sistema operativo, el dispositivo de hardware, la red o el programa han dado error o no están en el estado necesario para realizar una tarea. <br /> | El usuario puede resolver muchos problemas del sistema: <br /><ul><li>Los problemas del dispositivo se pueden resolver al activar el dispositivo, volver a conectar el dispositivo e insertar medios.</li><li>Los problemas de red se pueden resolver comprobando la conexión de red física y ejecutando <strong>Diagnóstico y reparación de red.</strong></li><li>Los problemas del programa se pueden resolver cambiando las opciones del programa o reiniciando el programa.</li></ul><img src="images/mess-error-image25.png" alt="Screen shot of message: Can't find a camera " /><br /> En este ejemplo, el programa no encuentra una cámara para realizar una tarea de usuario.<br /><img src="images/mess-error-image26.png" alt="Screen shot of message Network discovery off " /><br /> En este ejemplo, debe estar activada una característica necesaria para realizar una tarea.<br /> | 
+| <strong>Problemas de archivos</strong><br /> No se encontró un archivo o carpeta necesario para una tarea iniciada por el usuario, ya está en uso o no tiene el formato esperado. <br /> | <img src="images/mess-error-image27.png" alt="Screen shot of message: Can't delete file " /><br /> En este ejemplo, no se puede eliminar el archivo o la carpeta porque no se encontró.<br /><img src="images/mess-error-image28.png" alt="Screen shot of message: Can't play this file " /><br /> En este ejemplo, el programa no admite el formato de archivo especificado.<br /> | 
+| <strong>Problemas de seguridad</strong><br /> El usuario no tiene permiso para acceder a un recurso o privilegios suficientes para realizar una tarea iniciada por el usuario. <br /> | <img src="images/mess-error-image29.png" alt="Screen shot of message: You don't have permission " /><br /> En este ejemplo, el usuario no tiene permiso para acceder a un recurso.<br /><img src="images/mess-error-image30.png" alt="Screen shot of message: You don't have privilege " /><br /> En este ejemplo, el usuario no tiene el privilegio de realizar una tarea.<br /> | 
+| <strong>Problemas de tareas</strong><br /> Hay un problema específico al realizar una tarea iniciada por el usuario (que no sea un sistema, un archivo no encontrado, un formato de archivo o un problema de seguridad). <br /> | <img src="images/mess-error-image31.png" alt="Screen shot of message: Data can't be pasted " /><br /> En este ejemplo, los datos del Portapapeles no se pueden pegar en Paint.<br /><img src="images/mess-error-image32.png" alt="Screen shot of message: Upgrade can't be installed " /><br /> En este ejemplo, el usuario no puede instalar una actualización de software.<br /> | 
+| <strong>Problemas de entrada del usuario</strong><br /> El usuario escribió un valor incorrecto o incoherente con otra entrada del usuario. <br /> | <img src="images/mess-error-image33.png" alt="Screen shot of message: Incorrect time value " /><br /> En este ejemplo, el usuario escribió un valor de hora incorrecto.<br /><img src="images/mess-error-image34.png" alt="Screen shot of message: Incorrect input format " /><br /> En este ejemplo, la entrada del usuario no tiene el formato correcto.<br /> | 
 
 
 ## <a name="guidelines"></a>Directrices
 
 ### <a name="presentation"></a>Presentación
 
-- **Use cuadros de diálogo de tareas siempre que sea** necesario para lograr un diseño y una apariencia coherentes. Los cuadros de diálogo de Windows vista o versiones posteriores, por lo que no son adecuados para versiones anteriores de Windows. Si debe usar un cuadro de mensaje, separe la instrucción principal de la instrucción complementaria con dos saltos de línea.
+- **Use cuadros de diálogo de tareas siempre que sea** necesario para lograr un diseño y una apariencia coherentes. Los diálogos de tareas Windows vista o posterior, por lo que no son adecuados para versiones anteriores de Windows. Si debe usar un cuadro de mensaje, separe la instrucción principal de la instrucción complementaria con dos saltos de línea.
 
 ### <a name="user-input-errors"></a>Errores de entrada del usuario
 
@@ -455,7 +461,7 @@ En este ejemplo, se usa un error local para un error encontrado al hacer clic en
 
 - **Los cuadros de diálogo de mensaje de error modal no tienen iconos de barra de título.** Los iconos de la barra de título se usan como una distinción visual entre las ventanas principales y las secundarias.
 - **Use un icono de error.** Excepciones:
-  - Si el error es un problema de entrada del usuario que se muestra mediante un cuadro de diálogo modal o un globo, no use un icono. Esto es contrario al tono alentador de Windows. Sin embargo, los mensajes de error en su lugar deben usar un pequeño icono de error (16 x 16 píxeles) para identificarlos claramente como mensajes de error.
+  - Si el error es un problema de entrada del usuario que se muestra mediante un cuadro de diálogo modal o un globo, no use un icono. Hacerlo es contrario al tono alentador de Windows. Sin embargo, los mensajes de error en el lugar deben usar un pequeño icono de error (16 x 16 píxeles) para identificarlos claramente como mensajes de error.
 
      ![captura de pantalla del formato postal incorrecto del mensaje](images/mess-error-image38.png)
 
@@ -467,9 +473,9 @@ En este ejemplo, se usa un error local para un error encontrado al hacer clic en
 
      En este ejemplo, un mensaje de error local necesita un pequeño icono de error para identificarlo claramente como un mensaje de error.
 
-- Si el problema es para una característica que tiene un icono (y no un problema de entrada del usuario), puede usar el icono de característica con una superposición de errores. Si lo hace, use también el nombre de la característica como asunto del error.
+- Si el problema es para una característica que tiene un icono (y no un problema de entrada de usuario), puede usar el icono de característica con una superposición de errores. Si lo hace, use también el nombre de la característica como asunto del error.
 
-    ![el reproductor multimedia de mensajes de captura de pantalla no puede reproducir el archivo ](images/mess-error-image41.png)
+    ![El reproductor multimedia de mensajes de captura de pantalla no puede reproducir el archivo ](images/mess-error-image41.png)
 
     En este ejemplo, el icono de característica tiene una superposición de errores y la característica es el sujeto del error.
 
@@ -489,35 +495,35 @@ Para obtener más instrucciones y ejemplos, vea [Iconos estándar.](vis-std-icon
 
 ![captura de pantalla del mensaje: activesync no puede iniciar sesión ](images/mess-error-image43.png)
 
-En este ejemplo, el botón de divulgación progresiva ayuda a los usuarios a explorar en profundidad si lo desean, o simplificar la interfaz de usuario si no lo hacen.
+En este ejemplo, el botón de divulgación progresiva ayuda a los usuarios a explorar en profundidad si lo desean o simplificar la interfaz de usuario si no lo hacen.
 
 - **No use Mostrar u ocultar detalles a menos que realmente haya más detalles.** No solo vuelva a establecer la información existente en un formato más detallado.
-- **No use Mostrar u ocultar detalles para mostrar la información de ayuda.** En su lugar, use vínculos de Ayuda.
+- **No use Mostrar u ocultar detalles para mostrar información de ayuda.** En su lugar, use vínculos de Ayuda.
 
 Para obtener instrucciones de etiquetado, vea [Controles de divulgación progresiva.](ctrl-progressive-disclosure-controls.md)
 
 **No volver a mostrar este mensaje**
 
-- **Si un mensaje de error necesita esta opción, replantee el error y su frecuencia.** Si tiene todas las características de un error bueno (relevante, manejable e infrecuente), no debería tener sentido que los usuarios lo suprimiesen.
+- **Si un mensaje de error necesita esta opción, replantee el error y su frecuencia.** Si tiene todas las características de un error bueno (relevante, que puede actuar y poco frecuente), no debe tener sentido que los usuarios lo suprima.
 
 Para obtener más instrucciones, vea [Cuadros de diálogo](win-dialog-box.md).
 
 ### <a name="default-values"></a>Valores predeterminados
 
-- **Seleccione la respuesta más segura, menos destructiva o más segura para que sea la predeterminada.** Si la seguridad no es un factor, seleccione el comando más probable o conveniente.
+- **Seleccione la respuesta más segura, menos destructiva o más segura para que sea la predeterminada.** Si la seguridad no es un factor, seleccione el comando más probable o práctico.
 
 ### <a name="help"></a>Ayuda
 
 - **Diseñe mensajes de error para evitar la necesidad de ayuda.** Normalmente, los usuarios no deben tener que leer texto externo para comprender y resolver el problema, a menos que la solución requiera varios pasos.
 - **Asegúrese de que el contenido de la Ayuda es pertinente y útil.** No debe ser una nueva declaración detallada del mensaje de error, sino que debe contener información útil que esté fuera del ámbito del mensaje de error, como formas de evitar el problema en el futuro. No proporcione un vínculo de Ayuda solo porque puede.
-- **Use vínculos de Ayuda específicos, concisos y pertinentes para acceder al contenido de la Ayuda.** No use botones de comando ni divulgación progresiva para este propósito.
-- **Para los mensajes de error que no se pueden hacer específicos y útiles, considere la posibilidad de proporcionar vínculos al contenido de la Ayuda en línea.** Al hacerlo, puede proporcionar a los usuarios información adicional que puede actualizar una vez publicado el programa.
+- **Use vínculos de Ayuda específicos, concisos y pertinentes para acceder al contenido de ayuda.** No use botones de comando ni divulgación progresiva para este propósito.
+- **Para los mensajes de error que no puede hacer específicos y que puedan ser útiles, considere la posibilidad de proporcionar vínculos al contenido de ayuda en línea.** Al hacerlo, puede proporcionar a los usuarios información adicional que puede actualizar una vez publicado el programa.
 
-Para obtener más instrucciones, vea [Ayuda de](winenv-help.md).
+Para obtener más instrucciones, vea [Ayuda](winenv-help.md).
 
 ### <a name="error-codes"></a>Códigos de error
 
-- **En el caso de los mensajes de error que no puede hacer específicos y que puedan actuar o que se beneficien de la Ayuda, considere también la posibilidad de proporcionar códigos de error.** Los usuarios suelen usar estos códigos de error para buscar información adicional en Internet.
+- **En el caso de los mensajes de error que no se pueden hacer específicos y que se pueden usar o que se benefician de la Ayuda, considere también la posibilidad de proporcionar códigos de error.** A menudo, los usuarios usan estos códigos de error para buscar información adicional en Internet.
 - **Proporcione siempre una descripción de texto del problema y la solución.** No dependa solo del código de error para este propósito.
 
 **Incorrecto:**
@@ -526,7 +532,7 @@ Para obtener más instrucciones, vea [Ayuda de](winenv-help.md).
 
 En este ejemplo, se usa un código de error como sustituto de un texto de solución.
 
-- **Asigne un código de error único para cada causa diferente.** Al hacerlo, se evita la solución de problemas.
+- **Asigne un código de error único para cada causa diferente.** Esto evita la solución de problemas.
 - **Elija códigos de error que se puedan buscar fácilmente en Internet.** Si usa códigos de 32 bits, use una representación hexadecimal con un carácter "0x" inicial y caracteres en mayúsculas.
 
 **Correcto:**
@@ -549,15 +555,15 @@ En este ejemplo, se usa un código de error para complementar un mensaje de erro
 
 ### <a name="sound"></a>Sonido
 
-- **No acompaña los mensajes de error con un efecto de sonido o un sonido.** Hacerlo es jarring e innecesario.
-  - **Excepción:** Reproducir el efecto de sonido Crítico detener si el problema es crítico para el funcionamiento del equipo y el usuario debe tomar medidas inmediatas para evitar consecuencias graves.
+- **No acompaña los mensajes de error con un efecto de sonido o un pitido.** Hacerlo es jarring e innecesario.
+  - **Excepción:** Reproducir el efecto de sonido Detenerse crítico si el problema es crítico para el funcionamiento del equipo y el usuario debe tomar medidas inmediatas para evitar consecuencias graves.
 
 ## <a name="text"></a>Texto
 
 **General**
 
-- **Quite el texto redundante.** Puede buscarlo en títulos, instrucciones principales, instrucciones complementarias, vínculos de comandos y botones de confirmación. Por lo general, deje texto completo en instrucciones y controles interactivos y quite cualquier redundancia de los demás lugares.
-- **Use explicaciones centradas en el usuario.** Describa el problema en términos de acciones u objetivos del usuario, no en términos de con qué no está satisfecho el software. Use el lenguaje que los usuarios de destino entiendan y usen. Evite la jerga técnica.
+- **Quite el texto redundante.** Busque en títulos, instrucciones principales, instrucciones complementarias, vínculos de comandos y botones de confirmación. Por lo general, deje texto completo en instrucciones y controles interactivos y quite cualquier redundancia de los demás lugares.
+- **Use explicaciones centradas en el usuario.** Describa el problema en términos de acciones u objetivos del usuario, no en términos de lo que el software no está satisfecho. Use el lenguaje que los usuarios de destino entiendan y usen. Evite la jerga técnica.
 
 **Incorrecto:**
 
@@ -574,7 +580,7 @@ En estos ejemplos, la versión correcta habla el idioma del usuario, mientras qu
   - No se pudo (no se puede usar en su lugar)
   - No válido, no válido, incorrecto (use incorrecto en su lugar)
   - Abort, kill, terminate (use stop en su lugar)
-  - Catastrófico, grave (use grave en su lugar)
+  - Grave y grave (use en su lugar grave)
 
 Estos términos son innecesarios y contrarios al tono alentador de Windows. Cuando [se usa correctamente,](vis-std-icons.md)el icono de error comunica lo suficiente que hay un problema.
 
@@ -588,17 +594,17 @@ Estos términos son innecesarios y contrarios al tono alentador de Windows. Cuan
 
 En el ejemplo incorrecto, los términos "catastrófico" y "error" no son necesarios.
 
-- No use expresiones que culpan al usuario o implican un error del usuario. Evite usar usted y su en las expresiones. Aunque generalmente se prefiere la voz activa, use la voz pasiva cuando el usuario sea el sujeto y podría sentirse responsable del error si se usó la voz activa.
+- No use expresiones que achacan al usuario o que impliquen un error de usuario. Evite usar usted y su en la expresión. Aunque generalmente se prefiere la voz activa, use la voz pasiva cuando el usuario sea el sujeto y se sienta achacado al error si se usó la voz activa.
 
 **Incorrecto:**
 
-![captura de pantalla del mensaje que escribió en un inicio de sesión incorrecto ](images/mess-error-image50.png)
+![captura de pantalla del mensaje que escribió al iniciar sesión incorrectamente ](images/mess-error-image50.png)
 
 **Correcto:**
 
 ![captura de pantalla del mensaje: contraseña incorrecta ](images/mess-error-image51.png)
 
-El ejemplo incorrecto culpa al usuario mediante la voz activa.
+El ejemplo incorrecto achaca al usuario el uso de la voz activa.
 
 - **Ser específico.** Evite palabras imprecisas, como errores de sintaxis y operaciones no válidas. Proporcione nombres, ubicaciones y valores específicos de los objetos implicados.
 
@@ -616,14 +622,14 @@ El dispositivo no está disponible.
 
 Estos problemas serían mucho más fáciles de resolver con nombres, ubicaciones y valores específicos.
 
-- **No dé posibles problemas, causas o soluciones improbables en un intento de ser específicos.** No proporcione un problema, una causa o una solución, a menos que sea probable que sea correcto. Por ejemplo, es mejor decir que se produjo un error desconocido que algo que es probable que sea inexacto.
-- **Evite la palabra "please",** excepto en situaciones en las que se pide al usuario que haga algo inconveniente (por ejemplo, esperar) o el software sea el responsable de la situación.
+- **No dé posibles problemas, causas o soluciones poco probables en un intento de ser específicos.** No proporcione un problema, una causa o una solución, a menos que sea probable que sea correcto. Por ejemplo, es mejor decir que se ha producido un error desconocido que algo que es probable que sea inexacto.
+- **Evite la palabra "please",** excepto en situaciones en las que se pida al usuario que haga algo inconveniente (por ejemplo, en espera) o el software sea el responsable de la situación.
 
 **Correcto:**
 
 Espere mientras Windows copia los archivos en el equipo.
 
-- **Use la palabra "sorry"** solo en los mensajes de error que resulte en problemas graves para el usuario (por ejemplo, pérdida de datos o incapacidad de usar el equipo). No se preocupe si el problema se produjo durante el funcionamiento normal del programa (por ejemplo, si el usuario necesita esperar a que se encuentra una conexión de red).
+- **Use la palabra "lo sentimos"** solo en mensajes de error que den lugar a problemas graves para el usuario (por ejemplo, pérdida de datos o incapacidad de usar el equipo). No se preocupe si el problema se produjo durante el funcionamiento normal del programa (por ejemplo, si el usuario necesita esperar a que se encuentra una conexión de red).
 
 **Correcto:**
 
@@ -642,18 +648,18 @@ Lo sentimos, pero Fabrikam Backup detectó un problema irrecuperable y se cerró
 En el ejemplo incorrecto, se usan nombres completos de productos y símbolos de marca comercial.
 
 - **Use comillas dobles alrededor de los nombres de objeto.** Esto facilita el análisis del texto y evita instrucciones potencialmente embarazosas.
-  - **Excepción:** No es necesario que las rutas de acceso de archivo, las direcciones URL y los nombres de dominio completos entre comillas dobles.
+  - **Excepción:** No es necesario que las rutas de acceso de archivo, las direcciones URL y los nombres de dominio completos se entre comillas dobles.
 
 **Correcto:**
 
-![captura de pantalla del mensaje: "Mi casa" no está disponible ](images/mess-error-image54.png)
+![captura de pantalla del mensaje: "mi casa" no está disponible ](images/mess-error-image54.png)
 
 En este ejemplo, el mensaje de error sería confuso si el nombre del objeto no estuviera entre comillas.
 
 - **Evite iniciar oraciones con nombres de objeto.** Esto suele ser difícil de analizar.
 - **No use signos de exclamación ni palabras con todas las letras mayúsculas.** Los signos de exclamación y las letras mayúsculas hacen que se sienta como si fuera a mirar al usuario.
 
-Para obtener más instrucciones y ejemplos, vea [Estilo y tono](text-style-tone.md).
+Para obtener más instrucciones y ejemplos, vea [Estilo y tono.](text-style-tone.md)
 
 **Títulos**
 
@@ -668,12 +674,12 @@ Para obtener más instrucciones y ejemplos, vea [Estilo y tono](text-style-tone.
 
 En este ejemplo, el título se usa incorrectamente para explicar el problema.
 
-- Use mayúsculas de estilo de título, sin terminar los signos de puntuación.
+- Use mayúsculas y mayúsculas de estilo de título, sin finalizar la puntuación.
 
 **Instrucciones principales**
 
 - **Use la instrucción principal para describir el problema en un lenguaje claro, sin formato y específico.**
-- **Sea conciso y use solo una sola oración completa.** Pare la instrucción principal hasta la información esencial. Puede dejar implícito el asunto si es el programa o el usuario. Incluya el motivo del problema si puede hacerlo de forma concisa. Si tiene que explicar algo más, use una instrucción complementaria.
+- **Sea conciso y use solo una sola frase completa.** Ordene la instrucción principal hasta la información esencial. Puede dejar implícito el asunto si es el programa o el usuario. Incluya el motivo del problema si puede hacerlo de forma concisa. Si tiene que explicar algo más, use una instrucción complementaria.
 
 **Incorrecto:**
 
@@ -681,7 +687,7 @@ En este ejemplo, el título se usa incorrectamente para explicar el problema.
 
 En este ejemplo, todo el mensaje de error se coloca en la instrucción principal, lo que hace que sea difícil de leer.
 
-- **Sea específico si hay objetos implicados, así como sus nombres.**
+- **Sea específico si hay objetos implicados, así mismo, dé sus nombres.**
 - **Evite colocar rutas de acceso de archivo completas y direcciones URL en la instrucción principal.** En su lugar, use un nombre corto (como el nombre de archivo) y coloque el nombre completo (como la ruta de acceso del archivo) en la instrucción complementaria. Sin embargo, puede colocar una única ruta de acceso completa o una dirección URL en la instrucción principal si el mensaje de error no necesita una instrucción complementaria.
 
 ![captura de pantalla del mensaje: no se puede eliminar el archivo fabrikam ](images/mess-error-image57.png)
@@ -700,19 +706,19 @@ En este ejemplo, el usuario cambia el nombre de un archivo desde Windows Explore
 
 **Plantillas de instrucciones principales**
 
-Aunque no hay reglas estrictas para las expresiones, pruebe a usar las siguientes plantillas de instrucciones principales siempre que sea posible:
+Aunque no hay reglas estrictas para la expresión, pruebe a usar las siguientes plantillas de instrucciones principales siempre que sea posible:
 
 - [nombre de sujeto opcional] no puede [realizar acción]
 - [nombre de sujeto opcional] no puede [realizar acción] porque [motivo]
-- [nombre de sujeto opcional] no puede [realizar acción] a "[nombre de objeto]"
+- [nombre de sujeto opcional] no puede [realizar la acción] a "[nombre de objeto]"
 - [nombre de sujeto opcional] no puede [realizar la acción] a "[nombre de objeto]" porque [motivo]
 - No hay suficiente [recurso] para [realizar la acción]
 - [Nombre del sujeto] no tiene un [nombre de objeto] necesario para [propósito]
 - [Dispositivo o configuración] está desactivado para que [resultados no deseados]
-- [Dispositivo o configuración] no está [disponible \| \| activado \| habilitado]
+- [Dispositivo o configuración] no está [disponible \| activado \| \| activado]
 - "[nombre de objeto]" no está disponible actualmente
 - El nombre de usuario o la contraseña son incorrectos
-- No tiene permiso para acceder a "[nombre de objeto]"
+- No tiene permiso para acceder a "[nombre de objeto]".
 - No tiene privilegios para [realizar la acción].
 - [nombre del programa] ha experimentado un problema grave y debe cerrarse inmediatamente.
 
@@ -754,7 +760,7 @@ Haga clic en Aceptar para reiniciar Windows.
 
 En el ejemplo incorrecto, es más probable que los usuarios haga clic en Aceptar por accidente.
 
-- **No se recomienda ponerse en contacto con un administrador a menos que sea una de las soluciones más probables para el problema.** Reserve estas soluciones para problemas que realmente solo pueda resolver un administrador.
+- **No se recomienda ponerse en contacto con un administrador a menos que sea una de las soluciones más probables para el problema.** Reserve estas soluciones para los problemas que realmente solo puede resolver un administrador.
 
 **Incorrecto:**
 
@@ -777,7 +783,7 @@ En este ejemplo, el mensaje de error recomienda ponerse en contacto incorrectame
 - Si el mensaje de error proporciona botones de comando o vínculos de comandos que resuelven el problema, siga sus respectivas instrucciones en [Cuadros de diálogo](win-dialog-box.md).
 - Si el programa debe finalizar como resultado del error, proporcione un botón Salir del programa. Para evitar confusiones, no use Cerrar para este propósito.
 - De lo contrario, proporcione un botón Cerrar. No use Aceptar para los mensajes de error, ya que esta redacción implica que los problemas son correctos.
-  - **Excepción:** Use Aceptar si el mecanismo de informes de errores tiene etiquetas fijas (como con messagebox API).
+  - **Excepción:** Use Aceptar si el mecanismo de informes de errores tiene etiquetas fijas (como con messageBox API).
 
 ## <a name="documentation"></a>Documentación
 

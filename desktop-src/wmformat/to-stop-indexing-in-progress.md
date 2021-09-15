@@ -9,20 +9,20 @@ keywords:
 - índices, detener la indexación en curso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d441e42bc3c7033e776d353cf64fc5938183a4f8d720f086b4fb5fd9828be02
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9ea40cbf020182250e0fb982af5b5f84327d5d9a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118432628"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247239"
 ---
 # <a name="to-stop-indexing-in-progress"></a>Para detener la indexación en curso
 
-Después de comenzar la indexación con una llamada a [**IWMIndexer::StartIndexing**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer-startindexing), el indexador normalmente continuará hasta que se indexe el archivo. Puede detener las operaciones de indexación llamando al [**método IWMIndexer::Cancel.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer-cancel) Después de cancelar la indexación, puede llamar de nuevo a **StartIndexing,** pero el indexador se iniciará desde el principio del archivo en lugar de reanudarse desde el punto de cancelación.
+Después de comenzar la indexación con una llamada a [**IWMIndexer::StartIndexing**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer-startindexing), el indexador continuará normalmente hasta que se indexe el archivo. Puede detener las operaciones de indexación llamando al [**método IWMIndexer::Cancel.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer-cancel) Después de cancelar la indexación, puede volver a llamar a **StartIndexing,** pero el indexador se iniciará desde el principio del archivo en lugar de reanudarse desde el punto de cancelación.
 
-Dado **que StartIndexing** es una llamada asincrónica, normalmente deberá llamar a **Cancel** desde algún otro subproceso o controlador de eventos de la aplicación. Normalmente, **se** llamará a Cancel desde un procedimiento de evento asociado a un control de botón de Windows aplicación.
+Dado **que StartIndexing** es una llamada asincrónica, normalmente deberá llamar a **Cancel** desde algún otro subproceso o controlador de eventos de la aplicación. Normalmente, **se** llamará a Cancel desde un procedimiento de evento asociado a un control de botón de una Windows aplicación.
 
-Cuando se cancela la indexación, el indexador pasará un mensaje de estado WMT CLOSED, igual que si el archivo se \_ hubiera indexado correctamente.
+Cuando se cancela la indexación, el indexador pasará un mensaje de estado de WMT CLOSED, igual que si el archivo se \_ hubiera indexado correctamente.
 
 ## <a name="related-topics"></a>Temas relacionados
 

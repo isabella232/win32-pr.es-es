@@ -1,19 +1,19 @@
 ---
-description: Se envía cuando el sistema pregunta a una ventana qué gestos del sistema desea recibir.
+description: Se envía cuando el sistema pregunta a una ventana qué gestos del sistema le gustaría recibir.
 ms.assetid: 5b747b3c-3b77-4913-932f-182114d1f674
 title: WM_TABLET_QUERYSYSTEMGESTURESTATUS mensaje (Tpcshrd.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7cbde7fb6147771cadcac8dba4d6fc104432d6c6793a9e72238d99b4b64b5065
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 395196f963cae9b8d18697276e546f1eba05b245
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118041707"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247707"
 ---
 # <a name="wm_tablet_querysystemgesturestatus-message"></a>Mensaje \_ WM TABLET \_ QUERYSYSTEMGESTURESTATUS
 
-Se envía cuando el sistema pregunta a una ventana qué gestos del sistema desea recibir.
+Se envía cuando el sistema pregunta a una ventana qué gestos del sistema le gustaría recibir.
 
 
 ```C++
@@ -37,20 +37,20 @@ No se usa.
 *lParam* 
 </dt> <dd>
 
-Valor de punto que representa las coordenadas de pantalla.
+Valor de punto que representa las coordenadas de la pantalla.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al controlar este mensaje, puede deshabilitar dinámicamente los gestos para las regiones de una ventana.
 
 > [!Note]  
-> *LParam* se puede convertir en coordenadas x e y mediante las `GET_X_LPARAM` macros y `GET_Y_LPARAM` .
+> *LParam se* puede convertir en coordenadas x e y mediante las `GET_X_LPARAM` macros y `GET_Y_LPARAM` .
 
  
 
-De forma predeterminada, la ventana recibirá todos los eventos de gesto del sistema. Puede elegir qué eventos desea que reciba la ventana y qué eventos desea deshabilitar respondiendo al mensaje **WM \_ TABLET \_ QUERYSYSTEMGESTURESTATUS** en **WndProc**. El **mensaje \_ \_ QUERYSYSTEMGESTURESTATUS** de WM TABLET se define en tpcshrd.h. Los valores para habilitar y deshabilitar los gestos del sistema de tabletas del sistema también se definen en tpcshrd.h como se muestra a continuación:
+De forma predeterminada, la ventana recibirá todos los eventos de gesto del sistema. Puede elegir qué eventos desea que reciba la ventana y qué eventos desea deshabilitar respondiendo al mensaje **WM \_ TABLET \_ QUERYSYSTEMGESTURESTATUS** en **WndProc**. El **mensaje WM TABLET \_ \_ QUERYSYSTEMGESTURESTATUS** se define en tpcshrd.h. Los valores para habilitar y deshabilitar los gestos del sistema de tabletas del sistema también se definen en tpcshrd.h como se muestra a continuación:
 
 ``` syntax
 #define TABLET_DISABLE_PRESSANDHOLD        0x00000001
@@ -69,15 +69,15 @@ De forma predeterminada, la ventana recibirá todos los eventos de gesto del sis
 
 > [!Note]
 >
-> Deshabilitar la pulsación y mantener presionado mejorará la capacidad de respuesta de los clics del mouse, ya que esta funcionalidad crea un tiempo de espera para distinguir entre las dos operaciones.
+> La deshabilitación de la presión y la retención mejorará la capacidad de respuesta de los clics del mouse, ya que esta funcionalidad crea un tiempo de espera para distinguir entre las dos operaciones.
 
  
 
-Tenga cuidado al controlar el **mensaje WM \_ TABLET \_ QUERYSYSTEMGESTURESTATUS.** **WM \_ TABLET \_ QUERYSYSTEMGESTURESTATUS** se pasa mediante la [**función SendMessageTimeout.**](/windows/win32/api/winuser/nf-winuser-sendmessagetimeouta) Si llama a métodos en una interfaz COM, ese objeto debe estar dentro del mismo proceso. Si no es así, COM produce una excepción.
+Tenga cuidado al controlar el **mensaje WM \_ TABLET \_ QUERYSYSTEMGESTURESTATUS.** **WM \_ TABLET \_ QUERYSYSTEMGESTURESTATUS se** pasa mediante la función [**SendMessageTimeout.**](/windows/win32/api/winuser/nf-winuser-sendmessagetimeouta) Si llama a métodos en una interfaz COM, ese objeto debe estar dentro del mismo proceso. Si no es así, COM produce una excepción.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo deshabilitar los gestos para una región mediante WM \_ TABLET \_ QUERYSYSTEMGESTURESTATUS.
+En el ejemplo siguiente se muestra cómo deshabilitar los gestos de una región mediante WM \_ TABLET \_ QUERYSYSTEMGESTURESTATUS.
 
 
 ```C++
@@ -101,7 +101,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam){
 
 
 
-En el ejemplo siguiente se muestra cómo deshabilitar varias características de gestos para toda una ventana.
+En el ejemplo siguiente se muestra cómo deshabilitar varias características de gestos para una ventana completa.
 
 
 ```C++
@@ -125,11 +125,11 @@ void SetTabletpenserviceProperties(HWND hWnd){
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                 |
-| Header<br/>                   | <dl> <dt>Tpcshrd.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Tpcshrd.h</dt> </dl> |
 
 
 

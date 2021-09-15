@@ -4,12 +4,12 @@ description: Explica qué hacer para desarrollar aplicaciones que se ejecutan en
 ms.assetid: 9c46f894-e5cd-46a1-81c8-f63b09504735
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7afbb999faf934ae621f80a824eca0289ff3df705ed11d7cfd161935c944947f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 299d4c61b0e2b931c3833934c843bf964fc3fa7c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119549485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247508"
 ---
 # <a name="developing-applications-for-previous-versions-of-windows"></a>Desarrollar aplicaciones para versiones anteriores de Windows
 
@@ -21,7 +21,7 @@ Es necesario descargar e instalar los paquetes que se describen en las secciones
 
 ### <a name="microsoft-windows-sdk"></a>SDK de Windows Microsoft
 
-El SDK de Windows para Windows 7 es necesario para crear aplicaciones que usan api compatibles con la actualización de plataforma para Windows Vista y la actualización de plataforma para Windows Server 2008.
+El SDK de Windows para Windows 7 es necesario para crear aplicaciones que usan API compatibles con la actualización de plataforma para Windows Vista y la actualización de plataforma para Windows Server 2008.
 
 Para obtener acceso a recursos e información adicionales, como descargas, publicaciones del foro y el blog del equipo del SDK de Windows, consulte el Centro para desarrolladores del SDK de [Windows](https://msdn.microsoft.com/bb980924.aspx) ( https://msdn.microsoft.com/bb980924.aspx) .
 
@@ -29,7 +29,7 @@ Para obtener acceso a recursos e información adicionales, como descargas, publi
 
 El .NET Framework 3.5 Service Pack 1 es necesario para crear aplicaciones que usan las API compatibles con la actualización de plataforma para Windows Vista y la actualización de plataforma para Windows Server 2008.
 
-Para obtener información y recursos adicionales, [consulte el Centro .NET Framework desarrolladores](https://msdn.microsoft.com/netframework/default.aspx) ( https://msdn.microsoft.com/netframework/default.aspx) .
+Para obtener más recursos e información, consulte el [Centro .NET Framework desarrolladores](https://msdn.microsoft.com/netframework/default.aspx) ( https://msdn.microsoft.com/netframework/default.aspx) .
 
 ### <a name="directx-sdk-required-when-using-direct3d"></a>Sdk de DirectX necesario al usar Direct3D
 
@@ -47,7 +47,7 @@ Para obtener más información sobre cómo obtener actualizaciones de Windows Up
 
 ### <a name="set-the-build-target-to-windows-7"></a>Establecer el destino de compilación en Windows 7
 
-Todas las aplicaciones que usan bibliotecas en La actualización de plataforma para Windows Vista deben crearse en la Windows de destino 7.
+Todas las aplicaciones que usan bibliotecas de Platform Update para Windows Vista deben crearse en la Windows de destino 7.
 
 Establecer WINVER en el valor de la plataforma de destino Windows 7 le permite desarrollar aplicaciones que usan api compatibles con la actualización de plataforma para Windows Vista o la actualización de plataforma para Windows Server 2008 en una máquina de desarrollo que ejecuta Windows Vista.
 
@@ -73,7 +73,7 @@ En el ejemplo siguiente se muestra cómo establecer WINVER mediante la opción d
 Si compila la aplicación con los encabezados y bibliotecas proporcionados por el SDK de Windows para Windows 7, las API admitidas se ejecutarán en cualquier versión de Windows que tenga instalada la actualización de plataforma para Windows Vista o la actualización de plataforma para Windows Server 2008.
 
 > [!Note]  
-> El comportamiento, el rendimiento o los requisitos de algunas API compatibles con la actualización de plataforma para Windows Vista o la actualización de plataforma para Windows Server 2008 pueden variar en las distintas versiones de Windows. Para obtener más información sobre una API específica compatible con las actualizaciones, consulte Acerca de la actualización de plataforma [para Windows Vista](platform-update-for-windows-vista-overview.md).
+> El comportamiento, el rendimiento o los requisitos de algunas API que se admiten con la actualización de plataforma para Windows Vista o la actualización de plataforma para Windows Server 2008 pueden variar en distintas versiones de Windows. Para obtener más información sobre una API específica compatible con las actualizaciones, consulte Acerca de la actualización de plataforma [para Windows Vista](platform-update-for-windows-vista-overview.md).
 
  
 
@@ -81,17 +81,17 @@ Si compila la aplicación con los encabezados y bibliotecas proporcionados por e
 
 La aplicación no necesita instalar componentes redistribuibles, como archivos DLL u otros archivos en tiempo de ejecución.
 
-### <a name="requires-updated-end-user-computer"></a>Requiere actualizar End-User equipo
+### <a name="requires-updated-end-user-computer"></a>Requiere actualización de End-User equipo
 
 Dado que la actualización de plataforma para Windows Vista y la actualización de plataforma para Windows Server 2008 se hospedan en Windows Update, es muy probable que los usuarios finales con actualizaciones automáticas habilitadas ya tengan estas actualizaciones, así como los Service Pack necesarios.
 
-Si el equipo del usuario final no tiene instalada la actualización de plataforma para Windows Vista o la actualización de plataforma para Windows Server 2008 y la aplicación requiere API compatibles con estas actualizaciones, es posible que la aplicación no pueda ejecutarse en el equipo del usuario final o que se encuentren errores durante la ejecución.
+Si el equipo del usuario final no tiene instalada la actualización de plataforma para Windows Vista o la actualización de plataforma para Windows Server 2008 y la aplicación requiere API compatibles con estas actualizaciones, es posible que la aplicación no se pueda ejecutar en el equipo del usuario final o que se encuentren errores durante la ejecución.
 
 Para evitar los problemas que podrían deberse a que el equipo del usuario no está actualizado, quiere comprobar que el equipo del usuario tiene la actualización de plataforma para Windows Vista o la actualización de plataforma para Windows Server 2008 durante la instalación de la aplicación. Puede usar la API [Windows Update Agent para](/windows/desktop/Wua_Sdk/portal-client) comprobar si hay actualizaciones instaladas en el equipo del usuario final. También puede usar la API Windows Update Agent para descargar e instalar las actualizaciones necesarias durante la instalación de la aplicación si el usuario final aún no ha instalado las actualizaciones.
 
 Para obtener un ejemplo de un instalador que muestra cómo usar la API del agente de actualización de [Windows](/windows/desktop/Wua_Sdk/portal-client), vea Implementación de [Direct3D 11](../direct3darticles/direct3d11-deployment.md) para desarrolladores de juegos en el [SDK de DirectX](/previous-versions/windows/apps/hh452744(v=win.10)) ( https://msdn.microsoft.com/directx/aa937788.aspx) .
 
-Aunque el ejemplo del instalador D3D11InstallHelper que se describe en Implementación de [Direct3D 11](../direct3darticles/direct3d11-deployment.md)para desarrolladores de juegos, se escribió para aplicaciones que usan Direct3D 11, proporciona un buen ejemplo de cómo interactuar con la API del agente de actualización de [Windows](/windows/desktop/Wua_Sdk/portal-client) para iniciar y realizar un seguimiento de la descarga e instalación de actualizaciones hospedadas por Windows Update. La compilación de este ejemplo puede requerir el SDK Windows para Windows 7. Para obtener información adicional sobre el ejemplo D3D11InstallHelper, incluidos los problemas conocidos, consulte el [SDK de DirectX](/previous-versions/windows/apps/hh452744(v=win.10)) (Notas de la versión de agosto de https://msdn.microsoft.com/directx/aa937788.aspx) 2009.Platform Update for Windows Vista).
+Aunque el ejemplo del instalador D3D11InstallHelper que se describe en Implementación de [Direct3D 11](../direct3darticles/direct3d11-deployment.md)para desarrolladores de juegos, se escribió para aplicaciones que usan Direct3D 11, proporciona un buen ejemplo de cómo interactuar con la API del agente de actualización de [Windows](/windows/desktop/Wua_Sdk/portal-client) para iniciar y realizar un seguimiento de la descarga e instalación de actualizaciones hospedadas por Windows Update. La compilación de este ejemplo puede requerir el SDK Windows para Windows 7. Para obtener información adicional sobre el ejemplo D3D11InstallHelper, incluidos los problemas conocidos, consulte el SDK de [DirectX](/previous-versions/windows/apps/hh452744(v=win.10)) (Notas de la versión de agosto de https://msdn.microsoft.com/directx/aa937788.aspx) 2009.Platform Update for Windows Vista).
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -106,7 +106,7 @@ Aunque el ejemplo del instalador D3D11InstallHelper que se describe en Implement
 [Acerca de la actualización de plataforma para Windows Vista](platform-update-for-windows-vista-overview.md)
 </dt> <dt>
 
-[Knowledge Base sobre la actualización de plataforma para Windows Vista (KB 971644)](https://support.microsoft.com/kb/971644)
+[Knowledge Base artículo sobre la actualización de plataforma para Windows Vista (KB 971644)](https://support.microsoft.com/kb/971644)
 </dt> </dl>
 
  

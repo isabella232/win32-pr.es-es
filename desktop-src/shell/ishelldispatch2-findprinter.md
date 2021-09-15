@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: e0838618b5a3a21bfe634b5f27220faeef6ecf93ed50d56c0b120eaaba1a4596
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 64a3975039255de76b3e59432b0848cc2cb1795b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119395195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248067"
 ---
 # <a name="ishelldispatch2findprinter-method"></a>Método IShellDispatch2.FindPrinter
 
@@ -53,7 +53,7 @@ IShellDispatch2.FindPrinter( _
 
 <dl> <dt>
 
-*sName* \[ in, opcional\]
+*sName* \[ en, opcional\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
@@ -62,7 +62,7 @@ Cadena **que** contiene el nombre de la impresora.
 
 </dd> <dt>
 
-*sLocation* \[ in, opcional\]
+*sLocation* \[ en, opcional\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
@@ -71,7 +71,7 @@ Cadena **que** contiene la ubicación de la impresora.
 
 </dd> <dt>
 
-*sModel* \[ in, opcional\]
+*sModel* \[ en, opcional\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
@@ -82,7 +82,7 @@ Cadena **que** contiene el modelo de impresora.
 
 ## <a name="remarks"></a>Observaciones
 
-Este método se implementa y se accede a través del [**método Shell.FindPrinter.**](./shell-findprinter.md)
+Este método se implementa y se accede a este método a través [**del método Shell.FindPrinter.**](./shell-findprinter.md)
 
 Si asigna cadenas a uno o varios de los parámetros opcionales, se muestran  como valores predeterminados en el control de edición asociado cuando se muestra el cuadro de diálogo Buscar impresora. El usuario puede aceptar o invalidar estos valores. Si no se asigna ningún valor a un parámetro, el cuadro de edición asociado está vacío y el usuario debe escribir un valor.
 
@@ -90,7 +90,7 @@ Este método no está disponible actualmente en Microsoft Visual Basic.
 
 ## <a name="examples"></a>Ejemplos
 
-En los ejemplos siguientes se muestra el uso **de FindPrinter para** mostrar el **cuadro de diálogo** Buscar impresora de una aplicación determinada. El uso se muestra para JScript, VBScript y Visual Basic.
+En los ejemplos siguientes se muestra el uso **de FindPrinter para** mostrar el cuadro de **diálogo** Buscar impresora de una aplicación determinada. El uso se muestra para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -133,10 +133,10 @@ Vbscript:
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 

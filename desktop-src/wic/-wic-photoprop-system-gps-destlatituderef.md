@@ -4,18 +4,18 @@ ms.assetid: 8a13642a-0d29-4193-9784-f716bc428c72
 title: Directiva de metadatos de fotos System.GPS.DestLatitudeRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7abdd7cb7332a15040f329469ec774214840b8eb1a4a8d67ba42662ce3c2c3c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 838e4688f0c3342091e5995885689a44fab38739
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118032889"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247551"
 ---
 # <a name="systemgpsdestlatituderef-photo-metadata-policy"></a>Directiva de metadatos de fotos System.GPS.DestLatitudeRef
 
 Directiva de metadatos de fotos [para la propiedad System.GPS.DestLatitudeRef.](../properties/props-system-gps-destlatituderef.md)
 
-### <a name="pkey"></a>Pkey
+### <a name="pkey"></a>PKEY
 
 PKEY \_ GPS \_ DestLatitudeRef
 
@@ -45,7 +45,7 @@ Si el archivo está en formato JPEG, el controlador leerá, escribirá y quitar�
 
 
 
-| Pedido | Ruta de acceso                          | Formato de disco | Obligatorio |
+| Pedido | Path                          | Formato de disco | Obligatorio |
 |-------|-------------------------------|-------------|----------|
 | 1     | /xmp/exif:GPSDestLatitudeRef  | Unicode     | Sí      |
 | 2     | /app1/ifd/gps/ \\ {ushort=19 \\ } | ASCII       | No       |
@@ -60,7 +60,7 @@ Si el archivo está en formato TIFF, el controlador leerá, escribirá y quitar�
 
 
 
-| Pedido | Ruta de acceso                             | Formato de disco | Obligatorio |
+| Pedido | Path                             | Formato de disco | Obligatorio |
 |-------|----------------------------------|-------------|----------|
 | 1     | /ifd/xmp/exif:GPSDestLatitudeRef | Unicode     | Sí      |
 | 2     | /ifd/gps/ \\ {ushort=19 \\ }         | ASCII       | No       |

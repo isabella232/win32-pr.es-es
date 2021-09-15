@@ -4,12 +4,12 @@ description: Nuevas características y mejoras en Windows 8.1 y Windows Server 2
 ms.assetid: 24473B59-330A-41B1-BCC0-0DDDF06D9D1D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a517fc1f2b5f0bdc7885c481e51e33db50f3ea8828145bba049855693017eadc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0f2d019bcf82b6e21e6541e8749ed3fdab237289
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119815065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247647"
 ---
 # <a name="new-features-and-enhancement-in-windows-81-and-windows-server-2012-r2"></a>Nuevas características y mejoras en Windows 8.1 y Windows Server 2012 R2
 

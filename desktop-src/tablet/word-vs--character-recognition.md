@@ -4,12 +4,12 @@ ms.assetid: 4dacceab-032e-4b9b-858f-67961fd587b5
 title: Reconocimiento de palabras frente a caracteres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e704943afb2b411441752056aace0889e87483fc4992d59c39ea6a135ef76b73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f521b8abf1064ef87c5c79c3293e725c44190ce3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118966604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247706"
 ---
 # <a name="word-vs-character-recognition"></a>Reconocimiento de palabras frente a caracteres
 

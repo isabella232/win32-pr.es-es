@@ -55,16 +55,16 @@ keywords:
 - WMStub.lib
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76dc0f4a8c0b23ba33409039ae7f1d46ada1b3299790ef82fb98b8714f616117
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: adca7e39c89220c2c8c4cac6af354eefb77257aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119547455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247329"
 ---
 # <a name="features-added-in-the-windows-media-format-9-series-sdk"></a>Características agregadas en el SDK Windows Media Format 9 Series
 
-El SDK Windows de la serie Media Format 9 introdujo muchas mejoras y características. En esta sección se proporciona información general sobre esas características para beneficio de los usuarios que migran desde una versión anterior del SDK.
+El SDK Windows De la serie Media Format 9 introdujo muchas mejoras y características. En esta sección se proporciona información general sobre esas características para beneficio de los usuarios que migran desde una versión anterior del SDK.
 
 ## <a name="synchronous-reading"></a>Lectura sincrónica
 
@@ -76,11 +76,11 @@ Puede indexar archivos ASF en función de fotogramas de vídeo. Tanto el lector 
 
 ## <a name="indexing-and-seeking-with-smpte-time-code"></a>Indexación y búsqueda con código de tiempo de SMPTE
 
-El SDK Windows media format le permite almacenar códigos de tiempo SMPTE en archivos ASF. Los archivos se pueden indexar mediante código de tiempo SMPTE y tanto el lector asincrónico como el lector sincrónico pueden buscar entradas de índice de código de tiempo SMPTE.
+El SDK Windows Media Format le permite almacenar códigos de tiempo de SMPTE en archivos ASF. Los archivos se pueden indexar mediante código de tiempo SMPTE y tanto el lector asincrónico como el lector sincrónico pueden buscar entradas de índice de código de tiempo SMPTE.
 
 ## <a name="directshow-filters"></a>DirectShow Filtros
 
-El SDK Windows Media Format incluye dos filtros de Microsoft DirectShow® que permiten a las DirectShow basadas en aplicaciones leer y escribir archivos ASF. DirectShow permite a las aplicaciones capturar datos de dispositivos de audio y vídeo y descomprimir datos de diversos formatos antes de volver a codificar como contenido basado en Windows multimedia.
+El SDK Windows Media Format incluye dos filtros de Microsoft DirectShow® que permiten a las aplicaciones basadas en DirectShow leer y escribir archivos ASF. DirectShow permite a las aplicaciones capturar datos de dispositivos de audio y vídeo y descomprimir datos de una variedad de formatos antes de volver a codificar como contenido basado Windows multimedia.
 
 ## <a name="enhanced-profiles"></a>Perfiles mejorados
 
@@ -100,7 +100,7 @@ DirectX Video Acceleration (DXVA) es una tecnología que permite la reproducció
 
 ## <a name="multichannel-audio"></a>Audio multicanal
 
-Puede codificar y reproducir audio multicanal. El códec Windows media audio Professional 9 admite formatos con 6 canales y 8 canales, así como estéreo de alta definición.
+Puede codificar y reproducir audio multicanal. El códec Windows Media Audio Professional 9 admite formatos con 6 canales y 8 canales, así como estéreo de alta definición.
 
 ## <a name="watermarking"></a>Marca de agua
 
@@ -112,11 +112,11 @@ Puede admitir varios lenguajes en archivos ASF, tanto en secuencias como en meta
 
 ## <a name="device-conformance-templates"></a>Plantillas de conformidad de dispositivos
 
-Para ayudar a dirigir el contenido a dispositivos cliente específicos, los códecs Windows media ahora admiten plantillas de conformidad de dispositivos. Cada plantilla contiene un intervalo definido de configuraciones y características de códec que se deben usar para medios destinados a una categoría determinada de plataformas. Los perfiles del sistema ya no se admiten con las versiones más recientes de los códecs Windows media. Todos los perfiles deben personalizarse para satisfacer sus necesidades. Puede usar plantillas de conformidad de dispositivos para ayudarle a diseñar los perfiles.
+Para ayudar a dirigir el contenido a dispositivos cliente específicos, los códecs Windows Media ahora admiten plantillas de conformidad de dispositivos. Cada plantilla contiene un intervalo definido de configuraciones y características de códec que se deben usar para medios destinados a una categoría determinada de plataformas. Los perfiles del sistema ya no se admiten con las versiones más recientes de los códecs Windows media. Todos los perfiles deben personalizarse para satisfacer sus necesidades. Puede usar plantillas de conformidad de dispositivos para ayudarle a diseñar los perfiles.
 
 ## <a name="expanded-codec-enumeration"></a>Enumeración de códec expandida
 
-El objeto del administrador de perfiles puede consultar Windows códecs de audio y vídeo multimedia para ver los formatos admitidos. Puede establecer parámetros para los formatos recuperados. Por ejemplo, puede recuperar todos los formatos de velocidad de bits variable basados en calidad admitidos por el códec Windows Media Audio 9.
+El objeto del administrador de perfiles puede consultar los códecs Windows audio multimedia y vídeo para ver los formatos admitidos. Puede establecer parámetros para los formatos recuperados. Por ejemplo, puede recuperar todos los formatos de velocidad de bits variable basados en calidad admitidos por el códec Windows Media Audio 9.
 
 ## <a name="improved-mutual-exclusion"></a>Exclusión mutua mejorada
 
@@ -150,7 +150,7 @@ Las secuencias de vídeo que se componen de varios tipos de contenido se pueden 
 
 ## <a name="interlaced-video-streams"></a>Vídeo entrelazado Secuencias
 
-Las versiones anteriores del SDK Windows Media Format han [](wmformat-glossary.md) proporcionado la capacidad de codificar contenido entrelazado en una secuencia de vídeo de examen progresiva. A partir del SDK Windows Media Format 9, puede codificar vídeo entrelazado y conservar su formato entrelazado. Esto puede dar lugar a una reproducción mejorada, especialmente en dispositivos entrelazados, como los conjuntos de televisión.
+Las versiones anteriores del SDK Windows Media Format han [](wmformat-glossary.md) proporcionado la capacidad de codificar contenido entrelazado en una secuencia de vídeo de examen progresiva. A partir Windows SDK de la serie Media Format 9, puede codificar vídeo entrelazado conservando su formato entrelazado. Esto puede dar lugar a una reproducción mejorada, especialmente en dispositivos entrelazados, como los conjuntos de televisión.
 
 ## <a name="two-pass-encoding"></a>Two-Pass codificación
 
@@ -158,7 +158,7 @@ Los nuevos códecs Windows media habilitan la codificación de dos pases. El con
 
 ## <a name="new-speech-codec"></a>Nuevo códec de voz
 
-Este SDK incluye el nuevo códec Windows Media Audio 9 Voice, que está optimizado para codificar la voz humana mientras se usa una velocidad de bits baja. Este códec también proporciona un rendimiento superior para el contenido mixto de música y voz.
+Este SDK incluye el nuevo códec de voz Windows Media Audio 9, que está optimizado para codificar la voz humana mientras se usa una velocidad de bits baja. Este códec también proporciona un rendimiento superior para el contenido mixto de música y voz.
 
 ## <a name="accessible-video-frame-duration"></a>Duración del fotograma de vídeo accesible
 
@@ -166,11 +166,11 @@ Puede hacer que el objeto de escritor de este SDK proporcione al lector la durac
 
 ## <a name="streaming-html"></a>Streaming HTML
 
-Con la versión anterior de este SDK, podía usar un comando de script para indicar a la aplicación que abra una página web. A partir del SDK Windows Media Format 9, puede almacenar los componentes de las páginas web en los archivos ASF para asegurarse de que no haya ningún retraso en las presentaciones.
+Con la versión anterior de este SDK, podía usar un comando de script para indicar a la aplicación que abra una página web. A partir del SDK de Windows Media Format 9 Series, puede almacenar los componentes de las páginas web en los archivos ASF para asegurarse de que no haya ningún retraso en las presentaciones.
 
 ## <a name="wmstublib-no-longer-required-for-build-environment"></a>WMStub.lib ya no es necesario para el entorno de compilación
 
-La configuración del entorno de compilación para el SDK Windows Media Format ha cambiado a partir del SDK de la serie Windows Media Format 9. Ya no es necesario incluir WMStub.lib para las aplicaciones que usan este SDK. Sin embargo, las aplicaciones habilitadas para DRM todavía deben obtener y firmar un contrato de licencia independiente y obtener una biblioteca estática única de Microsoft. Póngase en wmla@microsoft.com contacto con para obtener más información sobre la biblioteca DRM y el contrato de licencia. Para obtener más información sobre cómo compilar proyectos con este SDK, vea [Archivos de biblioteca y compilador Configuración](library-files-and-compiler-settings.md).
+La configuración del entorno de compilación para Windows SDK de formato multimedia cambió a partir del SDK de la serie Windows Media Format 9. Ya no es necesario incluir WMStub.lib para las aplicaciones que usan este SDK. Sin embargo, las aplicaciones habilitadas para DRM todavía deben obtener y firmar un contrato de licencia independiente y obtener una biblioteca estática única de Microsoft. Póngase en wmla@microsoft.com contacto con para obtener más información sobre la biblioteca DRM y el contrato de licencia. Para obtener más información sobre cómo compilar proyectos con este SDK, vea [Archivos de biblioteca y compilador Configuración](library-files-and-compiler-settings.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

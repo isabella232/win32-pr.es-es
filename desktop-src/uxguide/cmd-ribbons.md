@@ -6,11 +6,11 @@ ms.custom: contperf-fy21q1
 ms.topic: article
 ms.date: 10/20/2020
 ms.openlocfilehash: cf74a58ae2fd9dda735c419f4ffa42b38d06c18c
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122884446"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127247682"
 ---
 # <a name="ribbons"></a>Barras de herramientas
 
@@ -37,7 +37,7 @@ Las pestañas de la cinta de opciones se componen de grupos, que son un conjunto
 - Información sobre herramientas mejorada, que explica de forma concisa sus comandos asociados y proporciona las teclas de método abreviado. También pueden incluir gráficos y referencias a la Ayuda. La información sobre herramientas mejorada reduce la necesidad de ayuda relacionada con comandos.
 - Selectores de cuadros de diálogo, que son botones en la parte inferior de algunos grupos que abren cuadros de diálogo que contienen características relacionadas con el grupo.
 
-Las cintas de opciones se introdujeron originalmente con Microsoft Office 2007. Para obtener información sobre Office necesita usar cintas de opciones y los muchos problemas que se resuelven al usar una cinta de opciones, vea [The Story of the Ribbon](/archive/blogs/jensenh/the-story-of-the-ribbon).
+Las cintas de opciones se introdujeron originalmente con Microsoft Office 2007. Para obtener información sobre Office necesita usar cintas de opciones y los numerosos problemas que se resuelven al usar una cinta de opciones, vea [The Story of the Ribbon](/archive/blogs/jensenh/the-story-of-the-ribbon).
 
 > [!Note]  
 > Las directrices relacionadas con [los menús,](cmd-menus.md)las [barras de herramientas,](cmd-toolbars.md)los [botones de](ctrl-command-buttons.md)comando y [los iconos](vis-icons.md) se presentan en artículos independientes.
@@ -187,54 +187,54 @@ Aunque es posible que las cintas de opciones no sean adecuadas para todos los pr
 
 ### <a name="ribbons-always-have-an-application-button-and-quick-access-toolbar"></a>Las cintas de opciones siempre tienen un botón Aplicación y una barra de herramientas de acceso rápido
 
-El botón Aplicación y la barra de herramientas de acceso rápido proporcionan comandos que son útiles en cualquier contexto, lo que reduce la necesidad de cambiar las pestañas. Aunque estos tres componentes son lógicamente independientes, una cinta siempre debe tener un botón Aplicación y una barra de herramientas de acceso rápido. Dado que los comandos pueden ir en la cinta de opciones o en el botón Aplicación, es posible que se pregunte dónde colocar los comandos. La elección no es arbitraria.
+El botón Aplicación y la barra de herramientas de acceso rápido proporcionan comandos que son útiles en cualquier contexto, lo que reduce la necesidad de cambiar las pestañas. Aunque estos tres componentes son lógicamente independientes, una cinta de opciones siempre debe tener un botón Aplicación y una barra de herramientas de acceso rápido. Dado que los comandos pueden ir en la cinta de opciones o en el botón Aplicación, es posible que se pregunte dónde colocar los comandos. La elección no es arbitraria.
 
-El botón Aplicación se usa para presentar un menú de comandos que implican hacer algo en o con un archivo, como comandos que tradicionalmente van en el menú Archivo para crear, abrir y guardar archivos, imprimir y enviar y publicar documentos.
+El botón Aplicación se usa para presentar un menú de comandos que implican hacer algo con o con un archivo, como comandos que tradicionalmente van en el menú Archivo para crear, abrir y guardar archivos, imprimir y enviar y publicar documentos.
 
-Por el contrario, la propia cinta de opciones es para los comandos que afectan al contenido de la ventana. Algunos ejemplos son los comandos que se usan para leer, modificar o usar el contenido, o para cambiar la vista.
+Por el contrario, la propia cinta de opciones es para los comandos que afectan al contenido de la ventana. Algunos ejemplos son los comandos que se usan para leer, modificar o usar el contenido o cambiar la vista.
 
-Si usa una cinta de opciones, también debe usar un botón Aplicación incluso si el programa no implica documentos o archivos. En tales casos, use el menú Aplicación para presentar comandos para imprimir, opciones de programa y salir del programa. Aunque podría decirse que el botón Aplicación no es necesario para estos programas, su uso proporciona coherencia entre programas. Los usuarios no tienen que buscar comandos de guardado y deshacer ni opciones de programa porque siempre están en el mismo lugar.
+Si usa una cinta de opciones, también debe usar un botón Aplicación aunque el programa no implique documentos o archivos. En tales casos, use el menú Aplicación para presentar comandos para imprimir, opciones de programa y salir del programa. Aunque podría decirse que el botón Aplicación no es necesario para estos programas, su uso proporciona coherencia entre programas. Los usuarios no tienen que buscar comandos de guardado y deshacer ni opciones de programa porque siempre están en el mismo lugar.
 
-La barra de herramientas de acceso rápido es necesaria incluso si la cinta de opciones solo usa una pestaña. Una vez más, aunque es posible que estos programas no necesiten una barra de herramientas de acceso rápido (porque todos los comandos ya están presentes en la pestaña única), tener una barra de herramientas de acceso rápido personalizable proporciona coherencia entre programas. Por ejemplo, si los usuarios tienen el hábito de hacer clic en el comando Imprimir, deberían poder hacerlo en cualquier programa que use una cinta de opciones.
+La barra de herramientas de acceso rápido es necesaria incluso si la cinta de opciones solo usa una pestaña. De nuevo, aunque es posible que estos programas no necesiten una barra de herramientas de acceso rápido (porque todos los comandos ya están presentes en la pestaña única), tener una barra de herramientas de acceso rápido personalizable proporciona coherencia entre programas. Por ejemplo, si los usuarios tienen el hábito de hacer clic en el comando Imprimir, deben poder hacerlo en cualquier programa que use una cinta de opciones.
 
 ### <a name="organization-and-discoverability"></a>Organización y detectabilidad
 
-Al proporcionar pestañas y grupos, las cintas de opciones permiten organizar los comandos para ayudar a la detectabilidad. El desafío es que si la organización se realiza mal, puede dañar enormemente la detectabilidad en su lugar. Debe haber una asignación clara, obvia y única entre los comandos y las pestañas y grupos etiquetados de forma descriptiva donde residen.
+Al proporcionar pestañas y grupos, las cintas de opciones permiten organizar los comandos para ayudar a la detectabilidad. El desafío es que, si la organización se hace mal, puede dañar enormemente la detectabilidad en su lugar. Debe haber una asignación clara, obvia y única entre los comandos y las pestañas y grupos etiquetados de forma descriptiva donde residen.
 
-Los usuarios formarán un modelo mental de la cinta de opciones después de usarlo durante un tiempo. Si ese modelo mental no tiene sentido para los usuarios, es ineficaz o es incorrecto, provocará confusión y frustración. **El objetivo más importante al diseñar una cinta de opciones es facilitar la búsqueda rápida y segura de comandos. Si no lo consigue, se producirá un error en el diseño de la cinta de opciones.** Lograr este objetivo requiere un diseño, pruebas de usuario e iteración cuidadosas. No suponga que será fácil.
+Los usuarios formarán un modelo mental de la cinta de opciones después de usarlo durante un tiempo. Si ese modelo mental no tiene sentido para los usuarios, es ineficaz o es incorrecto, provocará confusión y frustración. **El objetivo más importante al diseñar una cinta de opciones es facilitar la búsqueda de comandos de forma rápida y segura. Si no lo consigue, se producirá un error en el diseño de la cinta de opciones.** Lograr este objetivo requiere un diseño cuidadoso, pruebas de usuario e iteración. No suponga que será fácil.
 
 Estos son algunos problemas comunes que se deben evitar:
 
-- **Evite los nombres de pestañas y grupos genéricos.** Un buen nombre de pestaña o grupo debe describir con precisión su contenido específico, preferiblemente mediante el lenguaje basado en tareas y objetivos. Evite nombres genéricos de pestañas y grupos, así como nombres basados en tecnología. Por ejemplo, casi cualquier comando de un documento que cree y cree un programa podría pertenecer a pestañas etiquetadas como Editar, Formato, Herramientas, Opciones, Avanzadas y Mucho más. Confíe en etiquetas específicas y descriptivas, no en la memorización.
-- **Evite nombres de grupos y pestañas muy específicos.** Aunque queremos que los nombres de pestañas y grupos sean específicos, no deben ser tan específicos que los usuarios se sorprendan por su contenido. A menudo, los usuarios buscan cosas mediante el proceso de eliminación, por lo que evitan que se desenlazen las pestañas o los grupos porque el nombre es engañoso.
-- **Evite varias rutas de acceso al mismo comando, especialmente si la ruta de acceso es inesperada o el comando requiere muchos clics para invocar.** Puede parecer una comodidad encontrar un comando a través de varias rutas de acceso. Pero tenga en cuenta que cuando los usuarios encuentran lo que buscan, dejan de buscar. Es demasiado fácil para los usuarios suponer que la primera ruta de acceso que encuentran es la única ruta de acceso que es un problema grave si esa ruta es ineficaz o inesperada. Además, tener comandos duplicados dificulta que los usuarios encuentren otros comandos que están buscando.
+- **Evite los nombres de pestaña y grupo genéricos.** Una buena pestaña o nombre de grupo debe describir con precisión su contenido específico, preferiblemente mediante el lenguaje basado en tareas y objetivos. Evite nombres de pestañas y grupos genéricos, así como nombres basados en tecnología. Por ejemplo, casi cualquier comando de un programa de creación y creación de documentos podría pertenecer a pestañas etiquetadas como Editar, Formato, Herramientas, Opciones, Avanzado y Más. Se basan en etiquetas específicas y descriptivas, no en la memoria.
+- **Evite nombres de pestañas y grupos muy específicos.** Aunque queremos que los nombres de pestañas y grupos sean específicos, no deben ser tan específicos que los usuarios se preocupen por su contenido. A menudo, los usuarios buscan cosas mediante el proceso de eliminación, por lo que evitan que se desenlazen las pestañas o grupos porque el nombre es confuso.
+- **Evite varias rutas de acceso al mismo comando, especialmente si la ruta de acceso es inesperada o el comando requiere muchos clics para invocar.** Puede parecer conveniente encontrar un comando a través de varias rutas de acceso. Pero tenga en cuenta que cuando los usuarios encuentran lo que buscan, dejan de buscar. Es demasiado fácil para los usuarios suponer que la primera ruta de acceso que encuentran es la única ruta de acceso que es un problema grave si esa ruta es ineficaz o inesperada. Además, tener comandos duplicados dificulta a los usuarios la búsqueda de otros comandos que están buscando.
 
-![captura de pantalla del comando ruta de acceso indirecta a los bordes ](images/cmd-ribbons-image12.png)
+![captura de pantalla del comando ruta de acceso indirecta a bordes ](images/cmd-ribbons-image12.png)
 
 En este ejemplo, puede cambiar los bordes de párrafo mediante el comando Bordes de página, aunque haya una ruta de acceso más directa en la pestaña Inicio. Si los usuarios que buscan bordes de párrafo se desenredaban en esta ruta de acceso inesperada, es posible que supongan fácilmente que es la única ruta de acceso.
 
-- **Evite la colocación arbitraria de comandos.** Supongamos que cree que tiene una buena pestaña y un diseño de grupo, pero descubra que no caben varios comandos. Lo más probable es que el diseño de pestañas y grupos no sea tan bueno como cree que es y debe seguir refinandolo. No solucione este problema colocando esos comandos a los que no pertenecen. Si lo hace, es probable que los usuarios tengan que inspeccionar todas las pestañas para encontrarlos y, a continuación, olviden rápidamente dónde están.
+- **Evite la colocación arbitraria de comandos.** Supongamos que cree que tiene un buen diseño de pestañas y grupos, pero descubre que varios comandos simplemente no encajan. Lo más probable es que el diseño de pestañas y grupos no sea tan bueno como cree que es y debe seguir refinando el diseño. No solucione este problema colocando esos comandos a los que no pertenecen. Si lo hace, es probable que los usuarios tengan que inspeccionar todas las pestañas para encontrarlos y, a continuación, olviden rápidamente dónde están.
 - **Evite la selección de ubicación basada en marketing.** Supongamos que tiene una nueva versión del programa y que el equipo de marketing realmente quiere promocionar sus nuevas características. Puede ser tentador colocarlos en la pestaña Inicio, pero hacerlo es un error costoso si daña la detectabilidad general. Tenga en cuenta las versiones futuras del producto y la frustración que provocará una organización que cambia constantemente.
 
 ### <a name="tabs"></a>Pestañas
 
-El mejor primer paso es revisar las [pestañas estándar de la cinta de opciones](#standard-ribbon-tabs). Si los comandos del programa se asignan de forma natural a las pestañas estándar, base la organización de pestañas en estos estándares. Por otro lado, si los comandos del programa no se asignan de forma natural, no intente forzarlo. Determine una estructura más natural y asegúrese de realizar muchas pruebas de usuario para asegurarse de que lo ha hecho bien.
+El mejor primer paso es revisar las pestañas [estándar de la cinta de opciones](#standard-ribbon-tabs). Si los comandos del programa se asignan de forma natural a las pestañas estándar, base la organización de pestañas en estos estándares. Por otro lado, si los comandos del programa no se asignan de forma natural, no intente forzarlo. Determine una estructura más natural y asegúrese de realizar muchas pruebas de usuario para asegurarse de que lo ha hecho bien.
 
 En el caso de las pestañas no estándar, tenga en cuenta estos problemas:
 
-- **Cada nombre de pestaña debe describir su contenido.** Elija nombres significativos que sean específicos, pero no demasiado específicos. Los usuarios nunca deben despreorse por su contenido.
+- **Cada nombre de pestaña debe describir su contenido.** Elija nombres significativos que sean específicos, pero no demasiado específicos. Los usuarios nunca deben desapreorse por su contenido.
 - **Cada nombre de pestaña debe reflejar su propósito.** Tenga en cuenta el objetivo o la tarea asociados a los comandos.
 - **Cada nombre de pestaña debe ser claramente distinto de todos los demás nombres de pestaña.**
 
-La pestaña Inicio es una excepción a estas consideraciones. Aunque no tiene que tener una pestaña Inicio, la mayoría de los programas deben hacerlo. La pestaña Inicio es la primera pestaña y contiene los comandos que se usan con más frecuencia. Si ha usado con frecuencia comandos que no caben en las otras pestañas, la pestaña Inicio es el lugar adecuado para ellos.
+La pestaña Inicio es una excepción a estas consideraciones. Aunque no tiene que tener una pestaña Inicio, la mayoría de los programas deben hacerlo. La pestaña Inicio es la primera pestaña y contiene los comandos usados con más frecuencia. Si ha usado con frecuencia comandos que no caben en las otras pestañas, la pestaña Inicio es el lugar adecuado para ellos.
 
-Si no puede determinar un nombre de pestaña descriptivo y descriptivo, es probable que se deba a que la pestaña no está bien diseñada. Si la organización de la cinta de opciones no funciona, replantee el diseño de pestañas.
+Si no puede determinar un nombre de pestaña descriptivo y significativo, es probable que se deba a que la pestaña no está bien diseñada. Si la organización de la cinta de opciones no funciona, replantee el diseño de pestañas.
 
 ### <a name="groups"></a>Grupos
 
 La división de comandos en grupos estructura los comandos en conjuntos relacionados. La etiqueta de grupo explica el propósito común de sus comandos.
 
-Hay una variedad de factores que se deben tener en cuenta al determinar los grupos y su presentación:
+Hay una variedad de factores que se deben tener en cuenta a la hora de determinar los grupos y su presentación:
 
 - **Agrupación estándar.** Aunque hay diferencias significativas en los comandos entre programas, hay [grupos](#standard-ribbon-groups) estándar que son comunes en muchos programas. Hacer que estos comandos aparezcan con los mismos nombres y ubicaciones similares mejora considerablemente la detectabilidad.
 
@@ -242,19 +242,19 @@ Hay una variedad de factores que se deben tener en cuenta al determinar los grup
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | ![captura de pantalla de zoom separada del grupo de edición ](images/cmd-ribbons-image13.png)<br/>El grupo de comandos de edición incluye todos los comandos de edición, pero no incluye el comando Zoom.         | ![captura de pantalla del zoom incluido en el grupo de edición ](images/cmd-ribbons-image14.png)<br/>El comando Zoom no es un comando de edición, pero está en el grupo de edición. |
 
-- **Granularidad.** Alguna estructura es buena, pero demasiada estructura hace que los comandos sea más difíciles de encontrar. Si los nombres de grupo son genéricos, es posible que no tenga suficiente granularidad. Si hay grupos con solo uno o dos comandos cada uno, es probable que tenga demasiado (aunque es aceptable tener una galería en la cinta de opciones sin ningún otro comando dentro de un grupo).
+- **Granularidad.** Alguna estructura es buena, pero demasiada estructura hace que los comandos sea más difíciles de encontrar. Si los nombres de grupo son genéricos, es posible que no tenga suficiente granularidad. Si hay grupos con solo uno o dos comandos cada uno, probablemente tenga demasiado (aunque es aceptable tener una galería en la cinta de opciones sin ningún otro comando dentro de un grupo).
 
 | Correcto                                                                                                 | Incorrecto                                                                                                  |
 |-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| ![captura de pantalla de zoom separada del grupo de edición ](images/cmd-ribbons-image13.png)<br/> El grupo de comandos de edición incluye todos los comandos de edición.| ![captura de pantalla del grupo de edición dividido en dos grupos ](images/cmd-ribbons-image15.png)<br/>El grupo de comandos de edición se ha dividido en secciones demasiado granulares. Evite grupos con solo uno o dos comandos.|
+| ![captura de pantalla de zoom separada del grupo de edición ](images/cmd-ribbons-image13.png)<br/> El grupo de comandos de edición incluye todos los comandos de edición| ![captura de pantalla del grupo de edición dividido en dos grupos ](images/cmd-ribbons-image15.png)<br/>El grupo de comandos de edición se ha dividido en secciones demasiado granulares. Evite grupos con solo uno o dos comandos.|
 
-- **Nombres.** Los nombres de grupo buenos explican el propósito de sus comandos. Si los nombres de grupo no lo tienen, replantee el nombre o la agrupación. Si no puede determinar un nombre descriptivo descriptivo, probablemente se deba a que el grupo no está bien diseñado.
+- **Nombres.** Los nombres de grupo buenos explican el propósito de sus comandos. Si los nombres de grupo no lo tienen, replantee el nombre o la agrupación. Si no puede determinar un nombre descriptivo significativo, probablemente se deba a que el grupo no está bien diseñado.
 
 | Correcto                                                                                                 | Incorrecto                                                                                                  |
 |-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | ![captura de pantalla de comandos divididos en cuatro grupos ](images/cmd-ribbons-image17.png) <br/> Use nombres de grupo que sean lo suficientemente específicos como para describir los comandos contenidos en el grupo. | ![captura de pantalla del grupo de formato con varios comandos ](images/cmd-ribbons-image16.png) <br/> Este nombre de grupo es demasiado impreciso para ser útil. Un enfoque mejor sería reorganizar estos comandos en grupos más específicos. |
 
-- **Orden.** Las personas leen en un orden de izquierda a derecha (en las culturas occidental), por lo que podría pensar que los grupos del extremo izquierdo son los más perceptibles. Sin embargo, el nombre de la pestaña resaltada y el contenido de la ventana tienden a actuar como puntos [focales,](vis-layout.md)por lo que los grupos del centro de la pestaña suelen recibir más atención que el grupo más a la izquierda. Coloque los grupos más usados en las ubicaciones más destacadas y asegúrese de que haya un flujo lógico para los grupos en la pestaña.
+- **Orden.** Las personas leen en un orden de izquierda a derecha (en las culturas occidental), por lo que podría pensar que los grupos del extremo izquierdo son los más perceptibles. Sin embargo, el nombre de la pestaña resaltada y el contenido de la ventana tienden a actuar como puntos [focales,](vis-layout.md)por lo que los grupos del centro de la pestaña suelen recibir más atención que el grupo situado más a la izquierda. Coloque los grupos más usados en las ubicaciones más destacadas y asegúrese de que haya un flujo lógico para los grupos en la pestaña.
 
 ![captura de pantalla del grupo del Portapapeles en el extremo izquierdo ](images/cmd-ribbons-image18.png)
 
@@ -284,7 +284,7 @@ En este ejemplo, la lista desplegable Fuente muestra cada nombre de fuente media
 
 ![captura de pantalla de la galería de miniaturas de marca de agua ](images/cmd-ribbons-image23.png)
 
-En este ejemplo, se usan miniaturas realistas para mostrar las diferentes marcas de agua.
+En este ejemplo, se usan miniaturas realistas para mostrar las distintas marcas de agua.
 
 - **Iconos dinámicos y gráficos.** Iconos y gráficos que se modifican para reflejar el estado actual. Estos iconos son especialmente útiles para las galerías, así como para los botones de división que cambian su efecto predeterminado para que sea el mismo que la última acción.
 
@@ -296,7 +296,7 @@ En este ejemplo, Microsoft Word la galería estilos para reflejar los estilos ac
 
 En este ejemplo, Word cambia los comandos Color de resaltado de texto y Color de fuente para indicar su efecto actual.
 
-- **Vistas previas dinámicas.** Cuando los usuarios mantienen el puntero sobre una opción de formato, la vista previa activa muestra el aspecto de los resultados con ese formato. Las versiones preliminares dinámicas ayudan a los usuarios a realizar selecciones de forma más eficaz y segura en función del contexto real del usuario.
+- **Vistas previas en vivo.** Cuando los usuarios mantienen el puntero sobre una opción de formato, la vista previa activa muestra el aspecto de los resultados con ese formato. Las versiones preliminares dinámicas ayudan a los usuarios a realizar selecciones de forma más eficaz y segura en función del contexto real del usuario.
 
 ![captura de pantalla del selector de color de comando de color de página ](images/cmd-ribbons-image26.png)
 
@@ -308,7 +308,7 @@ Las versiones preliminares dinámicas son una característica eficaz que puede m
 
 El escalado de una barra de herramientas es sencillo: si una ventana es demasiado estrecha para mostrar una barra de herramientas, la barra de herramientas muestra lo que cabe y hace que todo lo demás sea accesible a través de un botón de desbordamiento. Un objetivo de los comandos enriquecidos es aprovechar al máximo el espacio disponible, por lo que el escalado de una cinta de opciones requiere más trabajo de diseño. No hay ningún tamaño de cinta predeterminado, por lo que no debe diseñar una cinta de opciones con un ancho determinado en mente. Tiene que diseñar diseños con una amplia gama de anchos y tener en cuenta que cualquiera de ellos podría ser el que verán la mayoría de los usuarios. El escalado es una parte fundamental del diseño de la cinta de opciones, no el último paso. Al diseñar una pestaña, especifique los distintos diseños para cada grupo (hasta tres), así como las combinaciones que se pueden usar juntas. La cinta de opciones mostrará la combinación válida más grande que se ajuste al tamaño actual de la ventana.
 
-![Captura de pantalla de comandos de formato en el menú de desbordamiento Escala de barras de ](images/cmd-ribbons-image27.png) herramientas mediante un botón de desbordamiento.
+![Captura de pantalla de los comandos de formato en el menú de desbordamiento Escala de barras de ](images/cmd-ribbons-image27.png) herramientas mediante un botón de desbordamiento.
 
 ![captura de pantalla de cintas con varios anchos ](images/cmd-ribbons-image28.png) No hay ningún tamaño de cinta predeterminado. El tamaño más pequeño es un solo icono de grupo emergente.
 
@@ -326,7 +326,7 @@ El escalado de una barra de herramientas es sencillo: si una ventana es demasiad
 
 Por lo general, tener menos pestañas es mejor, así que quite las pestañas que no ayudan a lograr estos objetivos.
 
-- **Siempre que sea práctico, use pestañas estándar.** El uso de pestañas estándar mejora considerablemente la detectabilidad, especialmente en todos los programas. Consulte las [pestañas estándar de la cinta de opciones](#standard-ribbon-tabs) más adelante en este artículo.
+- **Siempre que sea práctico, use pestañas estándar.** El uso de pestañas estándar mejora considerablemente la detectabilidad, especialmente entre programas. Consulte las [pestañas estándar de la cinta de opciones](#standard-ribbon-tabs) más adelante en este artículo.
 - **Etiquete la primera pestaña Inicio, si procede.** La pestaña Inicio debe contener los comandos usados con más frecuencia. Si ha usado con frecuencia comandos que no caben en las otras pestañas, la pestaña Inicio es el lugar adecuado para ellos.
 - Agregue una nueva pestaña si:
   - **Sus comandos están fuertemente relacionados con tareas específicas y se pueden describir con precisión mediante la etiqueta de tabulación.** Agregar la pestaña debería ayudar a que sus comandos se encuentren fácilmente, no más difíciles.
@@ -342,34 +342,34 @@ Por lo general, tener menos pestañas es mejor, así que quite las pestañas que
 - **Use una pestaña contextual para mostrar una colección de comandos que solo son pertinentes cuando los usuarios seleccionan un tipo de objeto determinado.** Si solo hay algunos comandos que se usan con frecuencia, puede ser más cómodo y estable usar una pestaña normal y simplemente deshabilitar los comandos cuando no se aplican.
 - ![captura de pantalla de los comandos cortar y copiar atenuados ](images/cmd-ribbons-image29.png)<br>Es mejor deshabilitar comandos comunes como Cortar y Copiar que usar una pestaña contextual.
 - **Incluya solo los comandos específicos de un tipo de objeto determinado.** No coloque comandos solo en una pestaña contextual si es posible que los usuarios los necesiten sin seleccionar primero un objeto.
-- **Incluya los comandos que se usan con frecuencia al trabajar con un tipo de objeto determinado.** Coloque los comandos contextuales generales usados con frecuencia en los menús contextuales y las mini-barras de herramientas para evitar el cambio de tabulación durante las tareas que se realizan normalmente. Como alternativa, considere la posibilidad de colocar comandos generales de forma redundante en una pestaña contextual si esto evita el cambio frecuente de tabulación. Pero no haga esto en exceso: no intente incluir todos los comandos que un usuario pueda necesitar mientras trabaja con el objeto .
-- ![captura de pantalla del comando de bordes en la pestaña de diseño ](images/cmd-ribbons-image30.png)<br/>En este ejemplo, el comando Bordes se incluye en la pestaña Diseño para evitar el cambio frecuente de tabulación durante las tareas que se realizan normalmente.\
-- **Elija un color de pestaña contextual diferente de las pestañas contextuales que se muestran actualmente.** El mismo conjunto de pestañas puede aparecer más adelante con un color diferente para lograrlo, pero intente usar asignaciones de colores coherentes entre invocaciones siempre que sea posible.
-- **La selección de una pestaña contextual ayuda automáticamente** a la detectabilidad, mejora la percepción de estabilidad y reduce la necesidad de cambiar de pestaña. Seleccione automáticamente una pestaña contextual cuando:
+- **Incluya los comandos que se usan con frecuencia al trabajar con un tipo de objeto determinado.** Coloque los comandos contextuales generales usados con frecuencia en los menús contextuales y las mini-barras de herramientas para evitar el cambio de tabulación durante las tareas que se realizan normalmente. Como alternativa, considere la posibilidad de colocar comandos generales de forma redundante en una pestaña contextual si esto evita el cambio frecuente de tabulación. Pero no lo haga en exceso: no intente incluir todos los comandos que un usuario pueda necesitar mientras trabaja con el objeto .
+- ![captura de pantalla del comando bordes en la pestaña diseño ](images/cmd-ribbons-image30.png)<br/>En este ejemplo, el comando Bordes se incluye en la pestaña Diseño para evitar el cambio de pestaña frecuente durante las tareas que se realizan habitualmente.\
+- **Elija un color de pestaña contextual que sea diferente de las pestañas contextuales que se muestran actualmente.** El mismo conjunto de pestañas puede aparecer más adelante con un color diferente para lograrlo, pero intente usar asignaciones de colores coherentes en las invocaciones siempre que sea posible.
+- **La selección de una pestaña contextual ayuda** automáticamente a la detectabilidad, mejora la percepción de estabilidad y reduce la necesidad de cambiar de pestaña. Seleccione automáticamente una pestaña contextual cuando:
   - **El usuario inserta un objeto .** En este caso, seleccione la primera pestaña contextual del conjunto.
   - **El usuario hace doble clic en un objeto.** En este caso, seleccione la primera pestaña contextual del conjunto.
   - **El usuario seleccionó una pestaña contextual, hizo clic en el objeto y, a continuación, hizo clic inmediatamente en un objeto del mismo tipo.** En este caso, vuelva a la pestaña contextual seleccionada anteriormente.
-- **Al quitar una pestaña contextual que sea la pestaña activa, haga que** la pestaña Inicio o la primera pestaña la pestaña activa. Al hacerlo, aparece el más estable.
+- **Al quitar una pestaña contextual que sea la pestaña activa, haga que** la pestaña Inicio o la primera pestaña sea la pestaña activa. Al hacerlo, aparece el más estable.
 
 ### <a name="modal-tabs"></a>Pestañas modales
 
 - **Use una pestaña modal para mostrar una colección de comandos que se aplican con un modo temporal determinado y no se aplica ninguna de las pestañas principales.** Si se aplican algunas de las pestañas principales, use una pestaña contextual en su lugar y deshabilite los comandos que no se aplican. Dado que las pestañas modales son muy limitantes, solo se deben usar cuando no hay una alternativa mejor.
 - ![captura de pantalla de la pestaña vista previa de impresión ](images/cmd-ribbons-image31.png)<br/>Vista previa de impresión es una pestaña modal de uso frecuente.
-- **Para cerrar una pestaña modal, coloque el comando &lt; Modo de cierre como el último comando de la &gt; pestaña.** Use el icono Cerrar para facilitar la búsqueda del comando. Dé al modo en el comando para evitar confusiones sobre lo que se está cierrando.
-- ![captura de pantalla del botón cerrar vista previa de impresión ](images/cmd-ribbons-image32.png)<br/>En este ejemplo, el etiquetado explícito del comando Close con el modo elimina cualquier duda sobre lo que se está cierrando.
+- **Para cerrar una pestaña modal, coloque el comando Modo &lt; de cierre como el último comando de la &gt; pestaña.** Use el icono Cerrar para facilitar la búsqueda del comando. Dé el modo en el comando para evitar confusiones sobre lo que se está cierrando.
+- ![captura de pantalla del botón cerrar vista previa de impresión ](images/cmd-ribbons-image32.png)<br/>En este ejemplo, al etiquetar explícitamente el comando Cerrar con el modo se quita cualquier duda sobre lo que se está cierrando.
 - **Para cerrar una pestaña modal, vuelva a definir también el botón Cerrar de la barra de título de la ventana para cerrar el modo en lugar del programa.** Las pruebas de usuario han demostrado que muchos usuarios esperan este comportamiento.
 
 ### <a name="standard-ribbon-tabs"></a>Pestañas estándar de la cinta de opciones
 
-Siempre que sea práctico, asigne los comandos del programa a estas pestañas estándar, dadas en su orden estándar de apariencia.
+Siempre que sea práctico, asigne los comandos del programa a estas pestañas estándar, dadas en su orden de apariencia estándar.
 
 #### <a name="regular-tabs"></a>Pestañas normales
 
 - **Casa.** Contiene los comandos usados con más frecuencia. Si se usa, siempre es la primera pestaña.
 - **Insertar.** Contiene comandos para insertar contenido y objetos en un documento. Si se usa, siempre es la segunda pestaña.
-- **Diseño de página.** Contiene comandos que afectan al diseño de la página, incluidos temas, configuración de página, fondos de página, sangría, espaciado y posicionamiento. (Tenga en cuenta que los grupos de sangría y espaciado pueden estar en la pestaña Inicio en su lugar, si hay suficiente espacio allí). Si se usa, siempre es la tercera pestaña.
+- **Diseño de página.** Contiene comandos que afectan al diseño de la página, incluidos temas, configuración de página, fondos de página, sangría, espaciado y posicionamiento. (Tenga en cuenta que los grupos de sangría y espaciado pueden estar en su lugar en la pestaña Inicio, si hay suficiente espacio). Si se usa, siempre es la tercera pestaña.
 - **Revisión.** Contiene comandos para agregar comentarios, realizar un seguimiento de los cambios y comparar versiones.
-- **Vista.** Contiene comandos que afectan a la vista de documento, incluidos el modo de vista, las opciones mostrar u ocultar, el zoom, la administración de ventanas y las macros, los comandos que tradicionalmente se encuentran en la Windows menú. Si se usa, es la última pestaña normal, a menos que se muestre la pestaña Desarrollador.
+- **Vista.** Contiene comandos que afectan a la vista de documento, incluidos el modo de vista, las opciones mostrar u ocultar, el zoom, la administración de ventanas y las macros que tradicionalmente se encuentran en la categoría Windows menú. Si se usa, es la última pestaña normal a menos que se muestre la pestaña Desarrollador.
 - **Desarrollador.** Contiene comandos que solo usan los desarrolladores. Si se usa, se oculta de forma predeterminada y la última pestaña normal cuando se muestra.
 
 La mayoría de los programas no necesitan las pestañas Revisar y Desarrollador.
@@ -384,14 +384,14 @@ Si tiene comandos contextuales relacionados con el formato, el diseño y el dise
 
 ### <a name="standard-groups"></a>Grupos estándar
 
-- **Siempre que sea práctico, use grupos estándar.** El hecho de que aparezcan comandos comunes con los mismos nombres y ubicaciones similares mejora considerablemente la detectabilidad. Consulte los [grupos de la cinta de opciones](#standard-ribbon-groups) estándar más adelante en este artículo.
+- **Siempre que sea práctico, use grupos estándar.** El hecho de que aparezcan comandos comunes con los mismos nombres y ubicaciones similares mejora considerablemente la detectabilidad. Consulte los [grupos estándar de la cinta de opciones](#standard-ribbon-groups) más adelante en este artículo.
 - **Agregue un nuevo grupo si:**
-  - **Sus comandos están fuertemente relacionados y se pueden describir con precisión mediante la etiqueta de grupo.** Agregar el grupo debería ayudar a que sus comandos se encuentren fácilmente, no más difíciles.
+  - **Sus comandos están fuertemente relacionados y se pueden describir con precisión mediante la etiqueta de grupo.** Agregar el grupo debe ayudar a que sus comandos se encuentren fácilmente, no más difíciles.
   - **Sus comandos tienen una relación más débil con los comandos de otros grupos.** Aunque todos los comandos de una pestaña deben estar estrechamente relacionados, algunas relaciones de comandos son más seguras que otras.
-  - **El grupo tiene suficientes comandos para justificar que hay un lugar adicional para buscar.** Apunte a entre 3 y 5 comandos para la mayoría de los grupos. Evite tener grupos con solo 1-2 comandos, aunque es aceptable tener una galería en la cinta de opciones sin ningún otro comando dentro de un grupo. Tener muchos grupos con un solo comando sugiere demasiada estructura o falta decoherencia de comandos.
-- **No se organice en exceso** agregando grupos donde no sean necesarios.
+  - **El grupo tiene suficientes comandos para justificar tener un lugar adicional para buscar.** Apunte a entre 3 y 5 comandos para la mayoría de los grupos. Evite tener grupos con solo 1-2 comandos, aunque es aceptable tener una galería en la cinta de opciones sin ningún otro comando dentro de un grupo. Tener muchos grupos con un solo comando sugiere demasiada estructura o falta de coherencia de comandos.
+- **No organice en exceso** agregando grupos donde no sean necesarios.
 - **Considere la posibilidad de dividir un grupo** si:
-  - ![captura de pantalla del grupo de comandos desorganizado ](images/cmd-ribbons-image35.png)<br/>El grupo tiene muchos comandos de diferentes tamaños y necesita organización.
+  - ![captura de pantalla del grupo de comandos desorganizados ](images/cmd-ribbons-image35.png)<br/>El grupo tiene muchos comandos de diferentes tamaños y necesita organización.
   - ![captura de pantalla de dos nombres de grupo de párrafos largos ](images/cmd-ribbons-image33.png)<br>El grupo tiene comandos que se benefician enormemente de tener etiquetas adicionales.
 - **Coloque los grupos más usados en las ubicaciones más destacadas y asegúrese de que hay un orden lógico para los grupos en la pestaña.**
 - **Optimice el diseño del grupo para que los usuarios encuentren comandos de forma rápida y segura.** Todas las demás consideraciones son secundarias.
@@ -437,7 +437,7 @@ Siempre que sea práctico, asigne los comandos del programa a estos grupos está
 - ![captura de pantalla del comando de números de línea en la cinta de opciones ](images/cmd-ribbons-image36.png)<br/>**Aproveche las ventajas de la detectabilidad y escalabilidad de las cintas de opciones mediante la exposición de todos los comandos usados habitualmente.** Cuando sea necesario, mueva los comandos usados con frecuencia de los cuadros de diálogo a la cinta de opciones, especialmente los que se sabe que son difíciles de encontrar. Lo ideal es que los usuarios puedan realizar tareas comunes sin usar ningún cuadro de diálogo.
 
 - **No use la escalabilidad de las cintas de opciones para justificar la adición de complejidad innecesaria.** Continúe con el ejercicio de restricción no agregue comandos a una cinta de opciones solo porque puede. Mantenga la experiencia general del comando simple. Las siguientes son formas de simplificar la presentación:
-  - ![captura de pantalla de la barra de herramientas pequeña y el menú contextual ](images/cmd-ribbons-image37.png)</br>**Use menús contextuales y mini barras de herramientas para comandos contextuales en contexto.**
+  - ![captura de pantalla de la mini barra de herramientas y el menú contextual ](images/cmd-ribbons-image37.png)</br>**Use menús contextuales y mini barras de herramientas para comandos contextuales en contexto.**
   - **Mueva (o mantenga) los comandos usados con menos frecuencia en los cuadros de diálogo.** Use los selectores de cuadro de diálogo para acceder a estos comandos. Todavía puede usar cuadros de diálogo con cintas de opciones. Simplemente intente reducir la necesidad de usarlos durante las tareas comunes.
   - **Elimine las características redundantes que rara vez se usan.**
 
@@ -456,19 +456,19 @@ Siempre que sea práctico, asigne los comandos del programa a estos grupos está
 #### <a name="interaction"></a>Interacción
 
 - **Deshabilite los comandos que no se aplican al contexto actual o que generarían directamente un error.** Si es útil, use la [información sobre herramientas mejorada](glossary.md) para explicar por qué el comando está deshabilitado. No oculte estos comandos porque esto puede hacer que el diseño de la cinta cambie, lo que hace que la presentación de la cinta sea inestable.
-- **No actualice las etiquetas de comando dinámicamente.** De nuevo, esto podría hacer que el diseño de tabulación cambiara, lo que provocaría una apariencia inestable. En su lugar, diseñe comandos para que funcionen con etiquetas constantes.
+- **No actualice las etiquetas de comando dinámicamente.** De nuevo, esto podría hacer que el diseño de la pestaña cambiara, lo que provocaría una apariencia inestable. En su lugar, diseñe comandos para que funcionen con etiquetas constantes.
 
     | Correcto                                                                                       | Incorrecto                                                                 |
     |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
     | ![captura de pantalla de insertar nota y eliminar nota ](images/cmd-ribbons-image38.png)<br/> Deshabilitar comandos cuando no están disponibles | ![captura de pantalla de la nota de inserción, sin nota de eliminación ](images/cmd-ribbons-image39.png)<br/>No oculte comandos, incluso cuando no estén disponibles |
 
-- **Prefiere controles directos.** Un comando es directo si se invoca con un solo clic (es decir, sin navegar por los menús). Sin embargo, a excepción de las galerías de la cinta de opciones, los controles directos no admiten live preview, por lo que la necesidad de la versión preliminar en directo también es un factor.
+- **Prefiere controles directos.** Un comando es directo si se invoca con un solo clic (es decir, sin navegar por los menús). Sin embargo, a excepción de las galerías de la cinta de opciones, los controles directos no admiten live preview, por lo que la necesidad de live preview también es un factor.
 - **Use la versión** preliminar en vivo para indicar el efecto de las opciones cuando un comando se encuentra entre un conjunto relacionado de opciones de formato, y La vista previa dinámica es importante y práctica, especialmente si es probable que los usuarios elijan la opción incorrecta de lo contrario.
   - Si el comando se usa con frecuencia, use una galería en la cinta de opciones para la directness.
   - Si el comando se usa con poca frecuencia, use una galería desplegable.
 - **Exponer comandos directos** mediante los siguientes controles en el orden de preferencia siguiente
   - **Botones de comando, casillas, botones de radio y galerías locales.** Siempre son directas.
-  - **Botones de división.** Directo para el comando más común, pero indirecto para las variaciones de comandos.
+  - **Botones de división.** Directo para el comando más común, pero indirecto para las variaciones del comando.
   - **Botones de menú.** Son indirectos, pero presentan muchos comandos que son fáciles de encontrar.
   - **Cuadros de texto (con controles de giro).** Por lo general, la entrada de texto requiere más esfuerzo que los demás tipos de control.
 - ![captura de pantalla de la cinta de opciones con solo botones de menú ](images/cmd-ribbons-image42.png)</br>Si la cinta de opciones consta principalmente de botones de menú cuando se muestra a tamaño completo, también puede usar una barra de menús.
@@ -478,7 +478,7 @@ Siempre que sea práctico, asigne los comandos del programa a estos grupos está
 
 **Use una [galería si:](glossary.md)**
 
-- **Hay un conjunto de opciones bien definido y relacionado entre las que suelen elegir los usuarios.** Puede haber un número ilimitado de variaciones, pero las selecciones probables deben estar bien contenidas. Si las opciones no están fuertemente relacionadas, considere la posibilidad de usar galerías independientes.
+- **Hay un conjunto de opciones bien definido y relacionado entre las que suelen elegir los usuarios.** Puede haber un número ilimitado de variaciones, pero las selecciones probables deben estar bien contenidas. Si las opciones no están muy relacionadas, considere la posibilidad de usar galerías independientes.
 - **Las opciones se expresan mejor visualmente, como las características de formato.** El uso de miniaturas facilita la exploración, la información y la toma de decisiones. Aunque las opciones se pueden etiquetar, la selección se realiza visualmente y no es necesario que las etiquetas de texto comprendan las opciones.
 - **Las opciones muestran el resultado que se logra inmediatamente con un solo clic.** No debe haber ningún cuadro de diálogo de seguimiento para aclarar aún más la intención del usuario ni un conjunto de pasos para lograr el resultado indicado. Si es posible que los usuarios quieran ajustar la opción, deje que lo hagan después.
 
@@ -499,39 +499,39 @@ Siempre que sea práctico, asigne los comandos del programa a estos grupos está
 Para galerías en la cinta de opciones:
 
 - **Mostrar un mínimo de tres opciones; más si hay espacio.** Si no hay espacio suficiente para mostrar al menos tres opciones en el tamaño típico de la ventana, use una galería desplegable en su lugar.
-- **Expanda las galerías de la cinta de opciones para aprovechar el espacio disponible.** Use el espacio adicional para mostrar más elementos y facilitar su elección con un solo clic.
+- **Expanda las galerías en la cinta de opciones para aprovechar el espacio disponible.** Use el espacio adicional para mostrar más elementos y facilitar su elección con un solo clic.
 
 Para galerías desplegables:
 
 - **Muestre la galería desde un cuadro combinado, una lista desplegable, un botón de división o un botón de menú.**
-- **Si el usuario hace clic en la ventana principal para descartar la galería desplegable, simplemente descarte la galería sin seleccionar o modificar el contenido de la ventana principal.**
-- **Si una galería tiene muchas opciones y algunas opciones rara vez se usan, simplifique la galería predeterminada al centrarse en las opciones más usadas.** Para los comandos restantes, proporcione un comando adecuado en la parte inferior de la lista desplegable de la galería.
-  - Si el comando muestra una lista de más variaciones, así mismo den el nombre "Más `singular feature name` opciones...".
+- **Si el usuario hace clic en la ventana principal para descartar la galería desplegable, simplemente descarte la galería sin seleccionar ni modificar el contenido de la ventana principal.**
+- **Si una galería tiene muchas opciones y algunas opciones rara vez se usan, simplifique la galería predeterminada centrándose en las opciones más usadas.** Para los comandos restantes, proporcione un comando adecuado en la parte inferior de la lista desplegable de la galería.
+  - Si el comando muestra una lista de más variaciones, así móntese el nombre "Más `singular feature name` opciones...".
   - Si el comando presenta un cuadro de diálogo que permite a los usuarios crear sus propias opciones personalizadas, den el nombre `feature name` "Personalizado...".
-- **Organice las opciones en grupos, si lo hace, hace que la exploración sea más eficaz.**
-- ![captura de pantalla de la galería de símbolos y filtros ](images/cmd-ribbons-image44.png)<br/>**Si una galería tiene muchos elementos, considere la posibilidad de agregar un filtro para ayudar a los usuarios a encontrar opciones de forma más eficaz.** Para evitar confusiones, muestre inicialmente la galería sin filtrar. Sin embargo, la mayoría de las galerías no deben requerir un filtro porque no deben tener tantas opciones y el uso de grupos debería ser suficiente.
+- **Organice las opciones en grupos, si lo hace, la exploración es más eficaz.**
+- ![captura de pantalla de la galería de símbolos y los filtros ](images/cmd-ribbons-image44.png)<br/>**Si una galería tiene muchos elementos, considere la posibilidad de agregar un filtro para ayudar a los usuarios a encontrar opciones de forma más eficaz.** Para evitar confusiones, muestre inicialmente la galería sin filtrar. Sin embargo, la mayoría de las galerías no deben requerir un filtro porque no deben tener tantas opciones y el uso de grupos debe ser suficiente.
 
 ### <a name="command-previews"></a>Vistas previas de comandos
 
-- **Use vistas previas para mostrar el efecto de un comando sin que los usuarios tengan que realizarlo primero.** Mediante el uso de vistas previas útiles, puede mejorar la eficacia y la facilidad de aprendizaje del programa y reducir la necesidad de prueba y error. Para ver los distintos tipos de vistas previas de comandos, consulte [Versiones preliminares](#previews) en la sección Conceptos de diseño de este artículo.
-- **En el caso de las versiones preliminares dinámicas, asegúrese de que se pueda aplicar la versión preliminar y de que se restaure el estado actual en un plazo de 500 milisegundos.** Para ello, es necesario poder aplicar los cambios de formato rápidamente y de forma que se pueda interrumpir. Los usuarios deben poder evaluar rápidamente distintas opciones para que las versiones preliminares en directo tengan todas sus ventajas.
-- **Evite el uso de texto en las vistas previas.** De lo contrario, las imágenes de vista previa tendrán que localizarse.
+- **Use las versiones preliminares para mostrar el efecto de un comando sin que los usuarios tengan que realizarlo primero.** Mediante el uso de vistas previas útiles, puede mejorar la eficacia y la facilidad de aprendizaje del programa y reducir la necesidad de prueba y error. Para ver los distintos tipos de vistas previas de comandos, consulte [Versiones preliminares](#previews) en la sección Conceptos de diseño de este artículo.
+- **En el caso de las versiones preliminares en directo, asegúrese de que se puede aplicar la versión preliminar y de que se restauró el estado actual en un plazo de 500 milisegundos.** Esto requiere la capacidad de aplicar cambios de formato rápidamente y de una manera que sea interrumpible. Los usuarios deben poder evaluar rápidamente las distintas opciones para que las versiones preliminares en directo tengan todas sus ventajas.
+- **Evite el uso de texto en las versiones preliminares.** De lo contrario, las imágenes de vista previa tendrán que localizarse.
 
 ### <a name="icons"></a>Iconos
 
 - ![captura de pantalla de la lista desplegable y las casillas ](images/cmd-ribbons-image45.png)<br/>**Proporcione iconos para todos los controles de la cinta, excepto las listas desplegables, las casillas y los botones de radio.** La mayoría de los comandos requerirán iconos de 32 x 32 y 16 x 16 píxeles (solo la barra de herramientas de acceso rápido usa iconos de 16 x 16 píxeles). Las galerías suelen usar iconos de 16 x 16, 48 x 48 o 64 x 48 píxeles.
 - **Proporcione iconos únicos.** No use el mismo icono para distintos comandos.
 - **Asegúrese de que los iconos de la cinta de opciones estén claramente visibles en el color de fondo de la cinta.** Evalúe siempre los iconos de la cinta de opciones en contexto y en modo de contraste alto.
-- **Elija diseños de icono que comuniquen claramente su efecto,** especialmente para los comandos usados con más frecuencia. Las cintas de opciones bien diseñadas tienen iconos autoexplicativos para ayudar a los usuarios a encontrar y comprender los comandos de forma eficaz.
-- **Elija iconos que sean reconocibles** y distintivos, especialmente para los comandos usados con más frecuencia. Asegúrese de que los iconos tienen formas y colores distintivos. Esto ayuda a los usuarios a encontrar los comandos rápidamente, aunque no recuerden el símbolo de icono.
+- **Elija diseños de iconos que comuniquen claramente su efecto,** especialmente para los comandos que se usan con más frecuencia. Las cintas de opciones bien diseñadas tienen iconos autoexplicativos para ayudar a los usuarios a encontrar y comprender los comandos de forma eficaz.
+- **Elija iconos que sean reconocibles y distintivos,** especialmente para los comandos usados con más frecuencia. Asegúrese de que los iconos tienen formas y colores distintivos. Esto ayuda a los usuarios a encontrar los comandos rápidamente, aunque no recuerden el símbolo del icono.
 
     | Correcto                                                                                                 | Incorrecto                                                                               |
     |--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-    | ![captura de pantalla del cuentagotas azul y el lápiz amarillo ](images/cmd-ribbons-image46.png)<br/>Use la forma y el color para crear iconos que sean fáciles de distinguir. | ![captura de pantalla del dropper de ojos azul y el lápiz azul ](images/cmd-ribbons-image47.png)<br/> Los iconos que tienen el mismo color son difíciles de distinguir|
+    | ![captura de pantalla de un cuentagotas azul y un lápiz amarillo ](images/cmd-ribbons-image46.png)<br/>Use la forma y el color para crear iconos que sean fáciles de distinguir. | ![captura de pantalla de un lápiz azul y un cuentagotas azules ](images/cmd-ribbons-image47.png)<br/> Los iconos que tienen el mismo color son difíciles de distinguir|
 
 - ![captura de pantalla del comando comments en el contenedor emergente ](images/cmd-ribbons-image48.png)<br/>**Considere la posibilidad de crear iconos de grupo emergentes colocando el icono de 16 x 16 píxeles del comando más destacado del grupo dentro de un contenedor visual de 32 x 32 píxeles.** No tiene que crear iconos diferentes para los grupos emergentes.
 - ![captura de pantalla de los botones de comandos de formato de texto ](images/cmd-ribbons-image25.png)<br/>**Si es útil, cambie el icono para reflejar el estado actual.** Esto es especialmente útil para los botones de división cuyo efecto predeterminado puede cambiar.
-- **Asegúrese de que los iconos de la cinta de opciones se ajustan a las directrices de los iconos de estilo aerórmico.** Sin embargo, los iconos de la cinta de opciones se muestran directamente en lugar de mostrarse en perspectiva.
+- **Asegúrese de que los iconos de la cinta de opciones se ajustan a las directrices de icono de estilo Avión.** Sin embargo, los iconos de la cinta de opciones se muestran directamente en lugar de mostrarse en perspectiva.
 
 | Correcto                                                                                                 | Incorrecto                                                                               |
     |--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
@@ -539,7 +539,7 @@ Para galerías desplegables:
  
 ### <a name="enhanced-tooltips"></a>Información sobre herramientas mejorada
 
-- **Todos los comandos de la cinta de opciones deben tener información** sobre herramientas mejorada para proporcionar el nombre del comando, la tecla de método abreviado, la descripción y la información complementaria opcional. Evite la información sobre herramientas que simplemente restatique la etiqueta.
+- **Todos los comandos de la cinta de opciones deben tener información** sobre herramientas mejorada para proporcionar el nombre del comando, la tecla de método abreviado, la descripción y la información complementaria opcional. Evite la información sobre herramientas que simplemente vuelva a restablecer la etiqueta.
 
     **Incorrecto:**
 
@@ -547,7 +547,7 @@ Para galerías desplegables:
 
     En este ejemplo, la información sobre herramientas simplemente restablece la etiqueta del comando.
 
-- **Cuando sea práctico, describa completamente el comando mediante una descripción concisa.** Vincular a la Ayuda solo si realmente es necesaria una explicación adicional.
+- **Cuando sea práctico, describa completamente el comando mediante una descripción concisa.** Vincular a ayuda solo si realmente es necesaria una explicación adicional.
 
     **Incorrecto:**
 
@@ -561,28 +561,28 @@ Para galerías desplegables:
 
     En este ejemplo, la imagen de información sobre herramientas muestra el efecto del comando.
 
-Para obtener instrucciones de etiquetado, consulte [Etiquetas de información sobre herramientas mejoradas.](#enhanced-tooltips)
+Para obtener instrucciones de etiquetado, vea [Etiquetas de información sobre herramientas mejoradas.](#enhanced-tooltips)
 
 ### <a name="access-keys-and-keytips"></a>Claves de acceso e información sobre claves
 
 La información sobre claves es el mecanismo que se usa para mostrar las claves de acceso para los comandos que se muestran directamente en una cinta de opciones.
 
-Las teclas de acceso para los comandos de menú desplegable se indican con un carácter subrayado. Se diferencian de las teclas de acceso del menú de las maneras siguientes:
+Las teclas de acceso para los comandos de menú desplegable se indican con un carácter subrayado. Se diferencian de las teclas de acceso de menú de las maneras siguientes:
 
-- Se pueden usar dos claves de acceso de caracteres. Por ejemplo, FP se puede usar para tener acceso al comando Formatear resamen.
+- Se pueden usar dos claves de acceso de caracteres. Por ejemplo, FP se puede usar para tener acceso al comando Formatear escritor.
 - Las asignaciones de clave de acceso se muestran mediante sugerencias en lugar de subrayados, por lo que el ancho de caracteres y los descendientes no son un factor para realizar asignaciones.
 
 - **Asigne claves de acceso a todas las pestañas y comandos de la cinta de opciones.** La única excepción posible es para los comandos procedentes de complementos heredados.
 - **Para el botón Aplicación y la barra de herramientas de acceso rápido:**
   - Asigne F al botón Aplicación. Esta asignación se usa debido a la similitud del botón Aplicación con el menú Archivo tradicional.
-  - ![captura de pantalla de la información sobre teclas de comando en una cinta de opciones ](images/cmd-ribbons-image54.png)<br/>Para la barra de herramientas de acceso rápido y las listas de archivos usadas recientemente, asigne claves de acceso numéricamente.
-- ![captura de pantalla que muestra la información sobre teclas para las pestañas ](images/cmd-ribbons-image55.png)<br/>**Para pestañas:**
+  - ![captura de pantalla de la información sobre teclas de comandos en una cinta de opciones ](images/cmd-ribbons-image54.png)<br/>Para la barra de herramientas de acceso rápido y las listas de archivos usadas recientemente, asigne claves de acceso numéricamente.
+- ![captura de pantalla que muestra información sobre teclas para pestañas ](images/cmd-ribbons-image55.png)<br/>**Para pestañas:**
   - Asigne H a Inicio.
   - A partir de las pestañas que se usan con más frecuencia, asigne la primera letra de la etiqueta.
   - Para las pestañas que no se pueden asignar a la primera letra, elija una consonante distintiva o una voz en la etiqueta.
-  - En el caso de los programas que solían admitir barras de menús, esfuérctese por mantener la compatibilidad de las claves de acceso en la mejor medida de lo posible. Evite asignar significados diferentes a las claves de acceso desde categorías de menú heredadas. Por ejemplo, si la versión heredada de la barra de menús de un programa tenía un menú Editar, esfuérctese por usar una clave de acceso E en la pestaña equivalente. Si no hay ninguna pestaña equivalente, no asigne una clave de acceso E a ninguna pestaña para evitar confusiones.
-- ![captura de pantalla que muestra la información sobre claves de una cinta de opciones ](images/cmd-ribbons-image56.png)<br/>**Para comandos, menús y submenús de la cinta de opciones:**
-  - Asigne combinaciones de teclas de acceso únicas dentro de una pestaña. Puede reutilizar las combinaciones de teclas de acceso en diferentes pestañas.
+  - En el caso de los programas que solían admitir barras de menús, esfuérctese por mantener la compatibilidad de la clave de acceso en la medida de lo posible. Evite asignar significados diferentes a las claves de acceso desde categorías de menú heredadas. Por ejemplo, si la versión heredada de la barra de menús de un programa tenía un menú Editar, esfuérctese por usar una clave de acceso E en la pestaña equivalente. Si no hay ninguna pestaña equivalente, no asigne una clave de acceso E a ninguna pestaña para evitar confusiones.
+- ![captura de pantalla que muestra información sobre claves para una cinta de opciones ](images/cmd-ribbons-image56.png)<br/>**Para comandos, menús y submenús de la cinta de opciones:**
+  - Asigne combinaciones de claves de acceso únicas dentro de una pestaña. Puede reutilizar las combinaciones de claves de acceso en pestañas diferentes.
   - Siempre que sea posible, asigne las claves de acceso estándar para los comandos usados habitualmente. Consulte la [tabla de claves de acceso estándar](inter-keyboard.md).
   - Para otros comandos:
     - Para los comandos usados con más frecuencia, elija letras al principio de la primera o segunda palabra de la etiqueta, preferiblemente la primera letra.
@@ -671,19 +671,19 @@ Para obtener instrucciones de teclas de método abreviado, vea [Teclado.](inter-
 ### <a name="contextual-tab-and-tab-set-labels"></a>Etiquetas contextuales de tabulación y conjunto de pestañas
 
 - **Finalice las etiquetas del conjunto de pestañas contextuales con "Herramientas".** Esto ayuda a identificar el propósito de las pestañas contextuales.
-- Use mayúsculas de estilo de título.
+- Use el uso de mayúsculas y mayúsculas de estilo de título.
 - No uses puntuación final.
 
 ### <a name="group-labels"></a>Etiquetas de grupo
 
-- **Etiquete todos** los grupos a menos que el grupo tenga un único comando y las etiquetas de grupo y comando sean las mismas.
+- **Etiquete todos** los grupos a menos que el grupo tenga un único comando y las etiquetas de grupo y comando serían las mismas.
 
 - **Use los grupos de la cinta de opciones estándarCuando sea práctico.**
-- **Prefiere etiquetas concisas y de una sola palabra.** Aunque las etiquetas de varias palabras son aceptables, necesitan más espacio y son más difíciles de localizar.
+- **Prefiere etiquetas concisas de una sola palabra.** Aunque las etiquetas de varias palabras son aceptables, necesitan más espacio y son más difíciles de encontrar.
 - **Elija nombres de grupo significativos que describan clara y precisamente su contenido.** Los nombres deben ser específicos, no genéricos.
 - **Elija nombres de grupo que reflejen su propósito.** Tenga en cuenta los objetivos o tareas asociados a los comandos del grupo.
-- **Evite el uso de "-ing"** (nombres que terminan en "-ing"). Sin embargo, puede usar los términos si el uso del verbo del que se deriva el eund sería confuso. Por ejemplo, use "Edición" y "Prueba" en lugar de "Editar" y "Prueba".
-- **No use nombres de grupo que sean iguales que los nombres de tabulación.** El uso del nombre de la pestaña en el que se encuentra el grupo no proporciona información y el uso del nombre de otra pestaña resulta confuso.
+- **Evite el uso de adobaciones** (nombres que terminan en "-ing"). Sin embargo, puede usar los acertones si usar el verbo del que se deriva el desconcertante. Por ejemplo, use "Edición" y "Prueba" en lugar de "Editar" y "Prueba".
+- **No use nombres de grupo que sean iguales que los nombres de tabulación.** El uso del nombre de pestaña en el que se encuentra el grupo no proporciona ninguna información y el uso del nombre de una pestaña diferente resulta confuso.
 - **Prefiere nombres singulares.** Sin embargo, puede usar un nombre pural si el nombre singular es difícil. 
 - **Use mayúsculas de estilo de frase.**
 - **No uses puntuación final.**
@@ -693,23 +693,23 @@ Para obtener instrucciones de teclas de método abreviado, vea [Teclado.](inter-
 - **Etiquete todos los comandos.** Tener etiquetas de texto explícitas ayuda a los usuarios a encontrar y comprender los comandos. **Excepción:** Un comando se puede desmarcar si su icono es muy conocido y el espacio es premium. Lo más probable es que los comandos sin etiquetar se encontrarán en la pestaña Inicio. En este caso, asigne su propiedad Name a una etiqueta de texto adecuada. Esto permite que los productos de tecnología de asistencia, como los lectores de pantalla, proporcionen a los usuarios información alternativa sobre el gráfico.
 - **Para los botones de comando, use una etiqueta concisa y autoexplicativa.** Use una sola palabra si es posible; cuatro palabras como máximo.
 - **En el caso de las listas desplegables, si la lista siempre tiene un valor, use el valor actual como etiqueta.**
-- ![captura de pantalla del símbolo del sistema de la libreta de direcciones de búsqueda ](images/cmd-ribbons-image67.png)<br/>Si una [lista desplegable editable](/windows/desktop/uxguide/ctrl-drop) no tiene un valor, use un símbolo del [sistema](glossary.md).
-- **Las listas desplegables que no se explican por sí solas o que se usan con poca frecuencia necesitan una etiqueta explícita.** Coloque dos puntos al final de la etiqueta.
-- ![captura de pantalla de automáticamente después de: segundos<br.>Para cuadros de \[ \] ](images/cmd-ribbons-image69.png) **texto, use una etiqueta explícita.** Coloque dos puntos al final de la etiqueta.
+- ![captura de pantalla del símbolo del sistema de la libreta de direcciones de búsqueda ](images/cmd-ribbons-image67.png)<br/>Si una [lista desplegable modificable](/windows/desktop/uxguide/ctrl-drop) no tiene un valor, use un [símbolo del sistema](glossary.md).
+- **Las listas desplegables que no se explican por sí solas o que se usan con poca frecuencia necesitan una etiqueta explícita.** Coloque un signo de dos puntos al final de la etiqueta.
+- ![captura de pantalla de automáticamente después de: segundos<br.>Para los cuadros de \[ \] ](images/cmd-ribbons-image69.png) **texto, use una etiqueta explícita.** Coloque un signo de dos puntos al final de la etiqueta.
 - **Use mayúsculas de estilo de frase.** Esto es más adecuado para el tono Windows [.](text-style-tone.md)
 - **Inicie la etiqueta con un verbo imperativo.** a menos que sea igual que el nombre de la pestaña o grupo o un verbo común como Mostrar, Crear, Insertar o Formato.
 - **No uses puntuación final.**
-- **Para ahorrar espacio, no coloque puntos suspensivos en las etiquetas de comandos de la cinta.** Sin embargo, los comandos usan puntos suspensivos en el botón Aplicación y en los menús desplegables.
+- **Para ahorrar espacio, no coloque puntos suspensivos en las etiquetas de los comandos de la cinta.** Sin embargo, los comandos usan puntos suspensivos en el botón Aplicación y en los menús desplegables.
 
 ### <a name="enhanced-tooltip-labels"></a>Etiquetas de información sobre herramientas mejoradas
 
 - **Use el título para dar el nombre del comando y su tecla de método abreviado, si procede.**
 - **Para el título, no use la puntuación final.**
-- **Inicie la descripción con un verbo.** Use la descripción para ayudar a los usuarios a determinar si una característica específica es la que buscan. La descripción debe estar frases para completar la frase "Esta es la característica adecuada para usar si lo desea...".
+- **Inicie la descripción con un verbo.** Use la descripción para ayudar a los usuarios a determinar si una característica específica es la que buscan. La descripción debe estar fraseada para completar la frase "Esta es la característica adecuada para usar si quiere...".
 - **Mantenga la descripción corta.** Ir directamente al punto. El texto largo desaconseja la lectura.
--   ![captura de pantalla del botón de división de pegar y dos información sobre herramientas ](images/cmd-ribbons-image70.png)<br/>**Para los botones de división, use otra información sobre herramientas para explicar el menú del botón de división.**
-- **Use una descripción complementaria opcional para explicar cómo usar el control .** Este texto puede incluir información sobre el estado del control (incluido por qué está deshabilitado) si el propio control no indica el estado. Mantenga este texto corto y use un tema de Ayuda para obtener explicaciones más detalladas.
-- ![captura de pantalla de información sobre herramientas con gráfico y texto Para la descripción y la descripción complementaria, use oraciones ](images/cmd-ribbons-image71.png)**completas con signos de puntuación finales.**
+-   ![captura de pantalla del botón de división de pegar y dos información sobre herramientas ](images/cmd-ribbons-image70.png)<br/>**En el caso de los botones de división, use otra información sobre herramientas para explicar el menú del botón de división.**
+- **Use una descripción complementaria opcional para explicar cómo usar el control .** Este texto puede incluir información sobre el estado del control (incluido el motivo por el que está deshabilitado) si el propio control no indica el estado. Mantenga este texto corto y use un tema de Ayuda para obtener explicaciones más detalladas.
+- ![captura de pantalla de información sobre herramientas con gráfico y texto. Para la descripción y la descripción complementaria, use oraciones completas con ](images/cmd-ribbons-image71.png)**signos de puntuación finales.**
 - Use mayúsculas de estilo de frase.
 
 ### <a name="application-button-labels"></a>Etiquetas de botón de aplicación
@@ -724,17 +724,17 @@ Para obtener instrucciones de teclas de método abreviado, vea [Teclado.](inter-
 Al hacer referencia a las cintas de opciones:
 
 - Consulte la cinta de opciones y sus componentes como cinta de opciones, pestañas, grupos y controles. Estos términos no están en mayúsculas.
-- Consulte el botón de redondeo como el botón Aplicación y el menú que contiene como menú Aplicación.
+- Haga referencia al botón round (redondear) como botón Application (Aplicación) y al menú que contiene como menú Application (Aplicación).
 - Consulte la barra de herramientas como barra de herramientas de acceso rápido.
 - Consulte las pestañas por sus etiquetas y la pestaña de palabras. Use el texto exacto de la etiqueta, incluida su mayúscula.
-- Consulte los comandos por sus etiquetas. Consulte los comandos sin etiquetar por sus nombres de información sobre herramientas. Use el texto exacto de la etiqueta, incluida su mayúscula, pero no incluya los puntos suspensivos. No incluya el botón de palabra ni el comando.
-- Para describir la interacción del usuario, use clic para pestañas y controles. Use Entrar para listas desplegables editables. No use choose, select ni pick.
+- Consulte los comandos por sus etiquetas. Consulte los comandos sin etiquetar por sus nombres de información sobre herramientas. Use el texto exacto de la etiqueta, incluido su uso de mayúsculas, pero no incluya los puntos suspensivos. No incluya el botón de palabra ni el comando.
+- Para describir la interacción del usuario, use click para pestañas y controles. Use Entrar para listas desplegables editables. No use choose, select ni pick.
 - Consulte elementos no disponibles como no disponibles, no como atenuados, deshabilitados o atenuados. En la documentación de programación, use deshabilitado.
 - Cuando sea posible, formatee las etiquetas con texto en negrita. De lo contrario, coloque las etiquetas entre comillas solo si es necesario para evitar confusiones.
 
 Ejemplos:
 
-- En la **pestaña Inicio** , haga clic en **Pegar especial.**
+- En la **pestaña Inicio,** haga clic **en Pegar especial.**
 - En la **pestaña Inicio** , en el **cuadro Fuente** , escriba "Segoe UI".
-- En la **pestaña Revisar,** haga clic **en Mostrar marcado** y, a continuación, en **Revisores.**
+- En la pestaña **Revisar** , haga clic **en Mostrar marcado** y, a continuación, haga clic en **Revisores.**
 - En la **pestaña Formato,** en **Herramientas de imagen**, haga clic en Comprimir **imágenes.**
