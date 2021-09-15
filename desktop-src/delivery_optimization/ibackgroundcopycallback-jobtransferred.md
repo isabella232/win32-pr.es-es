@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 69cf1a739e15bc7341769bdc01549ad439a1c93877f653f0689e686eb8bac1f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c5c358978da1731152ca6f7de8c3f7a92a1da86
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119047103"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566760"
 ---
 # <a name="ibackgroundcopycallbackjobtransferred-method"></a>IBackgroundCopyCallback::JobTransferred (Método)
 
-Optimización de distribución (DO) llama a la implementación del método **JobTransferred** cuando todos los archivos del trabajo se han transferido correctamente.
+Optimización de distribución (DO) llama a la implementación del **método JobTransferred** cuando todos los archivos del trabajo se han transferido correctamente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,7 +54,7 @@ Contiene información relacionada con el trabajo, como la hora en que se complet
 
 Este método debe devolver S_OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Normalmente, la implementación debe llamar al [**método IBackgroundCopyJob::Complete**](ibackgroundcopyjob-complete.md) para confirmar que DO ha transferido correctamente los archivos. Los archivos de descarga y el archivo de respuesta no están disponibles en el cliente hasta que se llama al **método** Complete.
 
@@ -64,12 +64,12 @@ Si no llama al método [**Complete**](ibackgroundcopyjob-complete.md) o al méto
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10, versión 1709 \[ solo aplicaciones de escritorio\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | Archivo DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyCallback se define como 97EA99C7-0186-4AD4-8DF9-C5B4E0ED6B22<br/>          |

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a94fee2a0bd80f391b514895aa5b5348cbef6d8a53e31200b49a403a6712e2d5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9dce979e48ed118dc257c147b27615f7bbc89231
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118296888"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568420"
 ---
 # <a name="id3dxanimationcontrollersettrackanimationset-method"></a>Método ID3DXAnimationController::SetTrackAnimationSet
 
@@ -55,7 +55,7 @@ Identificador de la pista a la que se aplica el conjunto de animaciones.
 
 Tipo: **[ **LPD3DXANIMATIONSET**](id3dxanimationset.md)**
 
-Puntero a la [**animación ID3DXAnimationSet**](id3dxanimationset.md) establecida para agregarse a la pista.
+Puntero al conjunto [**de animación ID3DXAnimationSet**](id3dxanimationset.md) que se va a agregar a la pista.
 
 </dd> </dl>
 
@@ -63,9 +63,9 @@ Puntero a la [**animación ID3DXAnimationSet**](id3dxanimationset.md) establecid
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método establece el conjunto de animación en la pista especificada para la combinación. El conjunto de animación para cada pista se combina según el peso y la velocidad de la pista cuando se llama a [**AdvanceTime.**](id3dxanimationcontroller--advancetime.md)
 

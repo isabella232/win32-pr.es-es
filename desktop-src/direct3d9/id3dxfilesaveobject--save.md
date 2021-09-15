@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: a49c4776f9ce590d287869436b329ddf9a378e73f04f0127246fc890944ffee3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c97c2ccf6c509aec1d217e3179c927fe2bb5a797
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119563965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566613"
 ---
 # <a name="id3dxfilesaveobjectsave-method"></a>Método ID3DXFileSaveObject::Save
 
@@ -44,9 +44,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser el siguiente: D3DXFERR \_ BADOBJECT.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una vez que este método se realiza correctamente, ya no se puede llamar a [**ID3DXFileSaveObject::AddDataObject**](id3dxfilesaveobject--adddataobject.md), [**ID3DXFileSaveData::AddDataObject::AddDataReference**](id3dxfilesavedata--adddataobject.md) hasta que se cree un nuevo objeto [**ID3DXFile.**](id3dxfile.md) [](id3dxfilesavedata--adddatareference.md)
+Una vez que este método se realiza correctamente, ya no se puede llamar a [**ID3DXFileSaveObject::AddDataObject**](id3dxfilesaveobject--adddataobject.md), [**ID3DXFileSaveData::AddDataObject**](id3dxfilesavedata--adddataobject.md) e [**ID3DXFileSaveData::AddDataReference**](id3dxfilesavedata--adddatareference.md) hasta que se cree un nuevo objeto [**ID3DXFile.**](id3dxfile.md)
 
 ## <a name="requirements"></a>Requisitos
 

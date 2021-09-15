@@ -1,15 +1,15 @@
 ---
 title: System-Level y Object-Level eventos
-description: Microsoft Active Accessibility usa tres clases de nivel de sistema WinEvents, nivel de objeto y consola.
+description: Microsoft Active Accessibility usa tres clases de nivel de sistema, nivel de objeto y consola de WinEvents.
 ms.assetid: 3333fe6c-38cd-4e7e-be4b-94c9f824e7e7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ab93b5780ceb960b7ad15ce220dcc8a7a0801aae8f7fec9cb8211417906b82e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b0d14a0469527a7654dd3e323adb47d650866ca9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133638"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567345"
 ---
 # <a name="system-level-and-object-level-events"></a>System-Level y Object-Level eventos
 
@@ -21,7 +21,7 @@ Microsoft Active Accessibility usa tres clases de WinEvents: nivel *de* sistema,
 
 El sistema operativo y las aplicaciones de servidor generan las clases de eventos de nivel de sistema y de objeto. El sistema operativo genera eventos de nivel de sistema y de nivel de objeto para los escenarios siguientes:
 
--   Notificaciones de todo el sistema sobre los cambios de foco
+-   Notificaciones en todo el sistema sobre los cambios de foco
 -   Cambios de activación
 -   Eventos relacionados con objetos proporcionados por el sistema, como controles comunes
 
@@ -29,7 +29,7 @@ Las aplicaciones de servidor generan eventos de nivel de sistema para objetos pe
 
 Las aplicaciones de servidor suelen generar eventos de nivel de objeto para los cambios en los objetos accesibles que contienen, como la creación, destrucción y selección de objetos.
 
-Aunque el sistema genera eventos de nivel de objeto para objetos [**de**](window.md) ventana, los servidores también deben enviar eventos de nivel de objeto para cada objeto accesible contenido en una ventana. Por ejemplo, si una aplicación de servidor registra una clase de ventana definida por la aplicación para crear un control personalizado, el sistema genera eventos de nivel de objeto para la ventana que contiene el control personalizado; el servidor genera eventos de nivel de objeto para el objeto accesible que proporciona información sobre el control.
+Aunque el sistema genera eventos [](window.md) de nivel de objeto para objetos de ventana, los servidores también deben enviar eventos de nivel de objeto para cada objeto accesible contenido en una ventana. Por ejemplo, si una aplicación de servidor registra una clase de ventana definida por la aplicación para crear un control personalizado, el sistema genera eventos de nivel de objeto para la ventana que contiene el control personalizado; el servidor genera eventos de nivel de objeto para el objeto accesible que proporciona información sobre el control .
 
 Los servidores solo generan eventos de nivel de objeto para los controles personalizados para los que implementan la [**interfaz IAccessible.**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) Para obtener más información, vea [Custom Interfaz de usuario Elements](custom-user-interface-elements.md).
 

@@ -4,12 +4,12 @@ description: En esta sección se proporciona información sobre el uso de la ano
 ms.assetid: d8de90af-f5ed-42ef-bd74-e383360e8128
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c9438184cf68d4a0f819afcd7e5497e627a0982e0f9fd9784c8a3460ab5121a2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1fe1b8fba9849b25a29c50ea1f55507e61eb69f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119052543"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567377"
 ---
 # <a name="server-annotation"></a>Anotación del servidor
 
@@ -21,7 +21,7 @@ Defina una clase que implemente [**IAccPropServer,**](/windows/desktop/api/oleac
 
 ## <a name="when-to-use-this-technique"></a>Cuándo usar esta técnica
 
-Use esta técnica cuando desee invalidar las propiedades [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) de un objeto . Esta técnica es mucho más sencilla que las **técnicas IAccessible** anteriores. Para obtener más información, [vea Alternativas a la anotación dinámica.](alternatives-to-dynamic-annotation.md)
+Use esta técnica cuando desee invalidar las propiedades [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) de un objeto . Esta técnica es mucho más sencilla que las **técnicas IAccessible** anteriores. Para obtener más información, vea [Alternativas a la anotación dinámica](alternatives-to-dynamic-annotation.md).
 
 No se puede usar la anotación de servidor para modificar la estructura de objetos expuestos. Para cambiar la estructura de un objeto, debe implementar un puntero de [**interfaz IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) completo.
 

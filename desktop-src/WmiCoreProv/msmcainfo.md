@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: cef9878ea8e9dd6c11c6b18a62d332e17f24810548360e0edb9c117e02a710c4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 31fc35b1d680d900af929ea8a828bcb23d222f66
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119051193"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568104"
 ---
 # <a name="msmcainfo-class"></a>Clase MSMCAInfo
 
@@ -34,7 +34,7 @@ class MSMCAInfo
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase MSMCAInfo** no define ningún miembro.
 
@@ -42,7 +42,7 @@ La **clase MSMCAInfo** no define ningún miembro.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                         |
@@ -52,7 +52,7 @@ La **clase MSMCAInfo** no define ningún miembro.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 4602970ffd67492c8f98317488686b454a2698b7e94048da2894982c7ce78bae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5db5c5da16a65b53b6e266886ee6ab8472dc3246
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118987775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566624"
 ---
 # <a name="id3dxbaseeffectgetpass-method"></a>Método ID3DXBaseEffect::GetPass
 

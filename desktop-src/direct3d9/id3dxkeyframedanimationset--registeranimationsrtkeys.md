@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 07ec4db0bb02eb0a177375fc37af67264f1368b2ab952c0b170580112e4dbf40
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3098c8e779834daf273d5e85469e3f45b01cb039
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118987375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566612"
 ---
 # <a name="id3dxkeyframedanimationsetregisteranimationsrtkeys-method"></a>Método ID3DXKeyframedAnimationSet::RegisterAnimationSRTKeys
 

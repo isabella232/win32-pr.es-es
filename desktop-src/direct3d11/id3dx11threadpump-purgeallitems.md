@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a0291df395994bfb4ae955670caf11dfd8abb179127d3e75351198139c31cb73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ea889f8dd919235adbd9c31fbfb9b269f89ed888
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119045803"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566696"
 ---
-# <a name="id3dx11threadpumppurgeallitems-method"></a>Id3DX11ThreadPump::P procesoAllItems
+# <a name="id3dx11threadpumppurgeallitems-method"></a>Método ID3DX11ThreadPump::P procesoAllItems
 
 > [!Note]  
 > La biblioteca de utilidades D3DX (D3DX 9, D3DX 10 y D3DX 11) está en desuso para Windows 8 y no es compatible con las aplicaciones de Windows Store.

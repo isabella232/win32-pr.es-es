@@ -1,6 +1,6 @@
 ---
 title: BITS_JOB_PROPERTY_VALUE estructura (Deliveryoptimization.h)
-description: La BITS_JOB_PROPERTY_VALUE de datos proporciona el valor de propiedad del trabajo do basándose en el valor de la enumeración BITS_JOB_PROPERTY_ID datos.
+description: La BITS_JOB_PROPERTY_VALUE de datos proporciona el valor de propiedad del trabajo do en función del valor de la enumeración BITS_JOB_PROPERTY_ID datos.
 ms.assetid: C24D9EA1-2E72-4403-939A-7B01D7133FE7
 keywords:
 - BITS_JOB_PROPERTY_VALUE estructura
@@ -16,12 +16,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7f7366f993f23a16aa6c0d4486c33f45cd501962add9ab524a008aba51cd8ec9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c48c1fe550db51b6b838379d44df21c95fa95e41
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119755735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567161"
 ---
 # <a name="bits_job_property_value-structure"></a>BITS_JOB_PROPERTY_VALUE estructura
 
@@ -42,14 +42,14 @@ typedef struct {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **Dword**
 </dt> <dd>
 
-Este valor se devuelve cuando se usa el identificador de propiedad de **enumeración BITS_JOB_PROPERTY_ID_COST_FLAGS** y se aplica como directiva [de transferencia](https://www.bing.com/search?q=transfer+policy) en el trabajo do.
+Este valor se devuelve cuando se usa el identificador de propiedad de enumeración BITS_JOB_PROPERTY_ID_COST_FLAGS **y** se aplica como directiva [de transferencia](https://www.bing.com/search?q=transfer+policy) en el trabajo do.
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ Este valor se devuelve cuando se  usa el identificador de propiedad de enumeraci
 
 </dd> <dt>
 
-**Habilitación**
+**Habilitar**
 </dt> <dd>
 
 No compatible.
@@ -89,11 +89,11 @@ No compatible.
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                     |
-| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

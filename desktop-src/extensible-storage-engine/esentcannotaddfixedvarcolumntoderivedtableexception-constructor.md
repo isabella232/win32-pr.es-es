@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 27e81f1e3415947129257c8cf4f952bfe033f00d04f2b24963207ef446ffe38b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d89acf1af0550bc181d6154e303a63115e68406b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120021235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567709"
 ---
 # <a name="esentcannotaddfixedvarcolumntoderivedtableexception-constructor"></a>Constructor EsentCannotAddFixedVarColumnToDerivedTableException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentCannotAddFixedVarColumnToDerivedTableException()
 public EsentCannotAddFixedVarColumnToDerivedTableException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -1,5 +1,5 @@
 ---
-description: Obtiene los nombres de muestreador a los que se hace referencia en un sombreador.
+description: Obtiene los nombres del muestreador a los que se hace referencia en un sombreador.
 ms.assetid: fe769917-daac-43b8-bf63-fb337915ff53
 title: Función D3DXGetShaderSamplers (D3DX9Shader.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: da4c7381b0fe058e18dd2edfd86ef49f434cd1b57bff18303fce0ba939c5d299
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2135ba36f238188c6e7817001ba89bb47e3b9998
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119045003"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568421"
 ---
 # <a name="d3dxgetshadersamplers-function"></a>Función D3DXGetShaderSamplers
 
-Obtiene los nombres de muestreador a los que se hace referencia en un sombreador.
+Obtiene los nombres del muestreador a los que se hace referencia en un sombreador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Puntero a la secuencia DWORD de la función de sombreador.
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)\***
 
-Puntero a una matriz de LPCSTR. La función rellenará esta matriz con punteros a los nombres de sampler incluidos en *pFunction*. El tamaño máximo de la matriz es el número máximo de registros de muestreador (16 para vs \_ 3 \_ 0 y ps \_ 3 \_ 0).
+Puntero a una matriz de LPCSTRs. La función rellenará esta matriz con punteros a los nombres de muestreador incluidos en *pFunction*. El tamaño máximo de la matriz es el número máximo de registros de muestreador (16 para vs \_ 3 \_ 0 y ps \_ 3 \_ 0).
 
 Para buscar el número de muestreadores usados, compruebe *pCount* después de llamar a **D3DXGetShaderSamplers** con pSamplers = **NULL.**
 
@@ -88,7 +88,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

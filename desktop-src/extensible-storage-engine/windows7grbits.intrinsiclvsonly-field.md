@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cd4787d5868aaf9383f2d54b7c6e9a3f3423a4bafe5a6fa231fb0363eebb9061
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f6899f3f56f6a66080b3fa5bdb672c7107dea52e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119603465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567657"
 ---
 # <a name="windows7grbitsintrinsiclvsonly-field"></a>Campo Windows7Grbits.IntrinsicLVsOnly
 
@@ -53,7 +53,7 @@ value = Windows7Grbits.IntrinsicLVsOnly
 public const TempTableGrbit IntrinsicLVsOnly
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

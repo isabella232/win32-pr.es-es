@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102869
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: b1bdd165be5ef22d04dc2fb12db2b48d8b4035de328e4e2c39e70ff8c3549d38
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8fb28dc48d03bd52df84251e6c92d9f58e47c66d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119835295"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568301"
 ---
 # <a name="esentslvinvalidpathexception-methods"></a>Métodos de EsentSLVInvalidPathException 
 
@@ -78,7 +78,7 @@ El [tipo EsentSLVInvalidPathException](./esentslvinvalidpathexception-class.md) 
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

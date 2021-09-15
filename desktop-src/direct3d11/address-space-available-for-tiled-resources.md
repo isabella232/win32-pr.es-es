@@ -4,12 +4,12 @@ description: En esta sección se especifica el espacio de direcciones virtuales 
 ms.assetid: A3D08564-3C7A-4578-BC38-EE202045580A
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5753fdb9d700689c6ebfffdae4368399c0e4bb36d328c9ff1a8cfc284005214
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c774c697cf5d3bf575d01ce5751dc413c1d14b0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117734287"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568457"
 ---
 # <a name="address-space-available-for-tiled-resources"></a>Espacio de direcciones disponible para recursos en mosaico
 

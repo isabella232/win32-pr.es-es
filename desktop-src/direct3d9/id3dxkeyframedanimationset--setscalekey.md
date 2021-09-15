@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d5d33ab0c8e6bd01335d5843121917f89e3cf60bd81a5d54a85d298ec990e4a4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 12ac4d46a2719e452d44d2da67f178e6146b799b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119748215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566600"
 ---
 # <a name="id3dxkeyframedanimationsetsetscalekey-method"></a>Método ID3DXKeyframedAnimationSet::SetScaleKey
 

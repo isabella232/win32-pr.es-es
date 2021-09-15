@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0f5a3709224e2c231ea35b53d2af823d19ec083974a0fbb4acd7a124d35153f5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 37fbb7fc4c1e05e06bb8ef24aed7d9fc0faef085
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118982635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568333"
 ---
 # <a name="columnstreamposition-property"></a>Propiedad ColumnStream.Position
 
@@ -40,7 +40,7 @@ Obtiene o establece la posición actual en la secuencia.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -64,12 +64,12 @@ public override long Position { get; set; }
 
 Tipo: [System.Int64](/dotnet/api/system.int64)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
 [ColumnStream (clase)](./columnstream-class.md)
 
-[Miembros ColumnStream](./columnstream-members.md)
+[Miembros columnStream](./columnstream-members.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 22b36e1836570a10647f5b737a68afa1e65a4dce80fe9d49061a3eee8a799651
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 645e6ae1e1cb84991b352c250b137cd3ae2491f0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117729457"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568409"
 ---
 # <a name="id3dxskininfoupdateskinnedmesh-method"></a>Método ID3DXSkinInfo::UpdateSkinnedMesh
 
@@ -43,16 +43,16 @@ HRESULT UpdateSkinnedMesh(
 
 <dl> <dt>
 
-*pTransformTransforms* \[ En\]
+*pTransforms* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Matriz de transformación de los tejidos.
+Matriz de transformación de transformaciones de transformaciones.
 
 </dd> <dt>
 
-*pTransformInvTransposeTransforms* \[ En\]
+*pIonalInvTransposeTransforms* \[ En\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
@@ -83,11 +83,11 @@ Puntero al búfer que contiene los vértices de destino.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando se usa para la máscara de vértices con dos elementos de posición, este método desasoje el segundo elemento de posición con el inverso del pórtico en lugar del propio aspo.
+Cuando se usa para la máscara de vértices con dos elementos de posición, este método desasocia el segundo elemento de posición con el inverso del pórtico en lugar del propio pórtico.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,7 +100,7 @@ Cuando se usa para la máscara de vértices con dos elementos de posición, este
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

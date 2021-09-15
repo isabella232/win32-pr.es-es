@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 727a99c5254375910a059b005bf2d89c5d429891b031acf913f6174bcff20858
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d694f09f117682c19d9e7bdf3244a7d1593cfdf3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119470635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566413"
 ---
 # <a name="windows8parammindataforxpress-field"></a>Campo Windows8Param.MinDataForXpress
 

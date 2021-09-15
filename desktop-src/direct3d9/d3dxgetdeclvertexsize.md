@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1c120e0089c350133372526f1b030eb1a94ede5a511ba44fb21b5ae320aa7090
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c962064faa61dc7045b0111c5efbf1d1bea9fd40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119986865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567904"
 ---
 # <a name="d3dxgetdeclvertexsize-function"></a>Función D3DXGetDeclVertexSize
 
@@ -76,7 +76,7 @@ Tamaño de declaración de vértice, en bytes.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

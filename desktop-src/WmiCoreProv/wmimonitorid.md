@@ -24,12 +24,12 @@ api_type:
 api_location:
 - WmiProv.dll
 ms.custom: project-verbatim
-ms.openlocfilehash: 552e66a4e3a0c6f120bcc95123e3a2674fc579457de16c9ef8cd1e80161f175e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 485b42a86ca67d15ec00be13992c17b31ed51608
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119051153"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566840"
 ---
 # <a name="wmimonitorid-class"></a>Clase WmiMonitorID
 
@@ -53,7 +53,7 @@ class WmiMonitorID : MSMonitorClass
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase WmiMonitorID** tiene estos tipos de miembros:
 
@@ -198,9 +198,9 @@ Año de fabricación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para obtener una explicación sobre cómo traducir las matrices que almacenan los identificadores de número de serie, consulte el artículo de blog información del Monitor de informes [Administrador de configuración](/archive/blogs/kmongwa/reporting-monitor-information-with-configuration-manager) serie.
+Para obtener una explicación sobre cómo traducir las matrices que almacenan identificadores de número de serie, consulte el artículo de blog información del Monitor de informes [Administrador de configuración](/archive/blogs/kmongwa/reporting-monitor-information-with-configuration-manager) serie.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -241,7 +241,7 @@ Next
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |

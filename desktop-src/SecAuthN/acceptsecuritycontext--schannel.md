@@ -5,11 +5,11 @@ title: Función AcceptSecurityContext (Schannel) (Sspi.h)
 ms.topic: reference
 ms.date: 07/25/2019
 ms.openlocfilehash: 7346d90d2b88138a46921001c40763a267070752
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122628691"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567549"
 ---
 # <a name="acceptsecuritycontext-schannel-function"></a>Función AcceptSecurityContext (Schannel)
 
@@ -38,10 +38,10 @@ SECURITY_STATUS SEC_Entry AcceptSecurityContext(
 
 <dl> <dt>
 
-*phCredential* \[ en, opcional\]
+*phCredential* \[ in, opcional\]
 </dt> <dd>
 
-Identificador de las credenciales del servidor. El servidor llama a la función [**AcquireCredentialsHandle (Schannel)**](acquirecredentialshandle--schannel.md) con la marca SECPKG CRED INBOUND o SECPKG CRED BOTH establecida para \_ \_ recuperar este \_ \_ identificador.
+Identificador de las credenciales del servidor. El servidor llama a [**la función AcquireCredentialsHandle (Schannel)**](acquirecredentialshandle--schannel.md) con la marca SECPKG CRED INBOUND o \_ SECPKG CRED BOTH establecida para \_ recuperar este \_ \_ identificador.
 
 </dd> <dt>
 
@@ -70,20 +70,20 @@ Marcas de bits que especifican los atributos requeridos por el servidor para est
 
 | Value                                                                                                                                                                                         | Significado                                                                                                                                                                                                 |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="ASC_REQ_ALLOCATE_MEMORY"></span><span id="asc_req_allocate_memory"></span><dl> <dt>**ASIGNACIÓN DE MEMORIA DE ASC \_ REQ \_ \_**</dt> </dl> | Digest y Schannel le asignarán búferes de salida. Cuando haya terminado de usar los búferes de salida, desálelos llamando a la [**función FreeContextBuffer.**](/windows/win32/api/sspi/nf-sspi-freecontextbuffer)<br/> |
+| <span id="ASC_REQ_ALLOCATE_MEMORY"></span><span id="asc_req_allocate_memory"></span><dl> <dt>**ASIGNACIÓN DE MEMORIA DE ASC \_ REQ \_ \_**</dt> </dl> | Digest y Schannel le asignarán búferes de salida. Cuando haya terminado de usar los búferes de salida, puede liberarlos llamando a la [**función FreeContextBuffer.**](/windows/win32/api/sspi/nf-sspi-freecontextbuffer)<br/> |
 | <span id="ASC_REQ_CONFIDENTIALITY"></span><span id="asc_req_confidentiality"></span><dl> <dt>**CONFIDENCIALIDAD DE ASC \_ REQ \_**</dt> </dl>  | Cifrar y descifrar mensajes.<br/> El SSP de resumen solo admite esta marca para SASL.<br/>                                                                                                    |
 | <span id="ASC_REQ_CONNECTION"></span><span id="asc_req_connection"></span><dl> <dt>**CONEXIÓN DE ASC \_ \_ REQ**</dt> </dl>                 | El [*contexto de seguridad*](../secgloss/s-gly.md) no controlará los mensajes de formato.<br/>                                                                                                                                    |
 | <span id="ASC_REQ_EXTENDED_ERROR"></span><span id="asc_req_extended_error"></span><dl> <dt>**ERROR EXTENDIDO DE ASC \_ REQ \_ \_**</dt> </dl>    | Cuando se producen errores, se notificará a la parte remota.<br/>                                                                                                                                        |
 | <span id="ASC_REQ_MUTUAL_AUTH"></span><span id="asc_req_mutual_auth"></span><dl> <dt>**AUTENTICACIÓN MUTUA DE ASC \_ REQ \_ \_**</dt> </dl>             | El cliente debe proporcionar un certificado que se usará para la autenticación de cliente.<br/>                                                                                                         |
 | <span id="ASC_REQ_REPLAY_DETECT"></span><span id="asc_req_replay_detect"></span><dl> <dt>**ASC \_ REQ \_ REPLAY \_ DETECT**</dt> </dl>       | Detectar paquetes reproducido.<br/>                                                                                                                                                                     |
 | <span id="ASC_REQ_SEQUENCE_DETECT"></span><span id="asc_req_sequence_detect"></span><dl> <dt>**ASC \_ REQ \_ SEQUENCE \_ DETECT**</dt> </dl> | Detectar mensajes recibidos fuera de la secuencia.<br/>                                                                                                                                                    |
-| <span id="ASC_REQ_STREAM"></span><span id="asc_req_stream"></span><dl> <dt>**FLUJO DE ASC \_ REQ \_**</dt> </dl>                             | Admite una conexión orientada a secuencias.<br/> Schannel solo admite esta marca.<br/>                                                                                                    |
+| <span id="ASC_REQ_STREAM"></span><span id="asc_req_stream"></span><dl> <dt>**SECUENCIA DE ASC \_ REQ \_**</dt> </dl>                             | Admite una conexión orientada a secuencias.<br/> Schannel solo admite esta marca.<br/>                                                                                                    |
 
 
 
  
 
-Para ver las posibles marcas de atributo y sus significados, vea [Requisitos de contexto.](context-requirements.md) Las marcas usadas para este parámetro tienen el prefijo ASC \_ REQ, por ejemplo, ASC \_ REQ \_ DELEGATE.
+Para ver las posibles marcas de atributo y sus significados, vea [Requisitos de contexto.](context-requirements.md) Las marcas usadas para este parámetro tienen como prefijo ASC \_ REQ, por ejemplo, ASC \_ REQ \_ DELEGATE.
 
 Es posible que el cliente no sea compatible con los atributos solicitados. Para obtener más información, vea *el parámetro pfContextAttr.*
 
@@ -108,7 +108,7 @@ Puntero a una [estructura CtxtHandle.](sspi-handles.md) En la primera llamada a 
 
 Puntero a una estructura [**SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) que contiene el descriptor del búfer de salida. Este búfer se envía al cliente para su entrada en llamadas adicionales a [**InitializeSecurityContext (Schannel).**](initializesecuritycontext--schannel.md) Se puede generar un búfer de salida incluso si la función devuelve SEC \_ E \_ OK. Cualquier búfer generado debe devolverse a la aplicación cliente.
 
-En la salida, este búfer recibe un token para el contexto [*de seguridad*](../secgloss/s-gly.md). El token debe enviarse al cliente. La función también puede devolver un búfer de tipo SECBUFFER \_ EXTRA. Además, el autor de la llamada debe pasar un búfer de tipo **SECBUFFER \_ ALERT**. En la salida, si se genera una alerta, este búfer contiene información sobre esa alerta y se produce un error en la función.
+En la salida, este búfer recibe un token para el contexto [*de seguridad*](../secgloss/s-gly.md). El token debe enviarse al cliente. La función también puede devolver un búfer de tipo SECBUFFER \_ EXTRA. Además, el autor de la llamada debe pasar un búfer de tipo **SECBUFFER \_ ALERT.** En la salida, si se genera una alerta, este búfer contiene información sobre esa alerta y se produce un error en la función.
 
 </dd> <dt>
 
@@ -126,7 +126,7 @@ No compruebe los atributos relacionados con la seguridad hasta que la llamada de
 
 Puntero a una [**estructura TimeStamp**](timestamp.md) que recibe la hora de expiración del contexto. Se recomienda que el [*paquete de seguridad*](../secgloss/s-gly.md) devuelva siempre este valor en la hora local.
 
-Esto es opcional cuando se usa SSP de Schannel. Cuando la entidad remota ha proporcionado un certificado que se usará para la autenticación, este parámetro recibe la hora de expiración de ese certificado. Si no se ha proporcionado ningún certificado, se devuelve un valor de tiempo máximo.
+Esto es opcional cuando se usa SSP de Schannel. Cuando la parte remota ha proporcionado un certificado que se usará para la autenticación, este parámetro recibe la hora de expiración de ese certificado. Si no se ha proporcionado ningún certificado, se devuelve un valor de tiempo máximo.
 
 > [!Note]  
 > Hasta la última llamada del proceso de autenticación, la hora de expiración del contexto puede ser incorrecta porque se proporciona más información durante las fases posteriores de la negociación. Por lo tanto, *ptsTimeStamp* debe ser **NULL hasta** la última llamada a la función.
@@ -147,7 +147,7 @@ Esta función devuelve uno de los valores siguientes.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función AcceptSecurityContext (Schannel)** es el homólogo del servidor de [**la función InitializeSecurityContext (Schannel).**](initializesecuritycontext--schannel.md)
 
@@ -184,7 +184,7 @@ Una vez [*establecido el contexto*](../secgloss/s-gly.md) de seguridad, la aplic
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

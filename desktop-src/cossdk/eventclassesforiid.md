@@ -13,42 +13,42 @@ api_type:
 - COM
 api_location: ''
 ms.openlocfilehash: 635ff6e87d68bfdcb4e82a24673c4ced00a7f81d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104153025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568489"
 ---
 # <a name="eventclassesforiid-collection"></a>Colección EventClassesForIID
 
 Recupera información relacionada con las clases de eventos.
 
-La conexión entre el publicador y el suscriptor se administra mediante un objeto [**EventClass**](/windows/desktop/api/eventsys/nn-eventsys-ieventclass) , que es un componente com+ que contiene las interfaces y los métodos utilizados por un publicador para activar los eventos.
+La conexión entre el publicador y los suscriptores se administra mediante un objeto [**EventClass,**](/windows/desktop/api/eventsys/nn-eventsys-ieventclass) que es un componente COM+ que contiene las interfaces y los métodos usados por un publicador para activa eventos.
 
-Esta colección admite los métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) y [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Esta colección admite los [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) [**y Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La colección **EventClassesForIID** hereda de la interfaz [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
+La **colección EventClassesForIID** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
 ## <a name="related-collections"></a>Colecciones relacionadas
 
-Puede navegar desde esta colección hasta cualquiera de las siguientes colecciones:
+Puede navegar desde esta colección a cualquiera de las siguientes colecciones:
 
 -   [**ErrorInfo**](errorinfo.md)
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
-Puede navegar a esta colección desde las colecciones siguientes:
+Puede navegar a esta colección desde las siguientes colecciones:
 
--   [**Raíces**](root.md)
+-   [**Raíz**](root.md)
 
 ## <a name="properties"></a>Propiedades
 
-El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades en la colección:
+El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección admite las siguientes propiedades:
 
 -   [Aplicación](#application)
--   [Bits](#bitness)
+-   [Bitness](#bitness)
 -   [CLSID](#clsid)
 -   [Descripción](#description)
 -   [IsPrivateComponent](#isprivatecomponent)
@@ -60,8 +60,8 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|----------------------------------------------------------|
-| Descripción    | GUID de la aplicación que contiene la clase de eventos. |
-| Access         | ReadOnly                                                 |
+| Descripción    | GUID de la aplicación que contiene la clase de eventos . |
+| Acceso         | ReadOnly                                                 |
 | Tipo           | String                                                   |
 | Predeterminado        | N/D                                                      |
 | Sistema mínimo | Windows XP                                               |
@@ -76,9 +76,9 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Representa el tipo de bits binario de la clase de evento. En los sistemas que usan Windows de 64 bits, esta propiedad distingue entre los componentes de 64 bits y los componentes de 32 bits. |
-| Access         | ReadOnly                                                                                                                                                                |
-| Tipo           | Valores posibles largos: COMAdmin32BitComponent (0x1) COMAdmin64BitComponent (0X2)                                                                                           |
+| Descripción    | Representa el tipo de bits binario de la clase de eventos. En sistemas que usan componentes de 64 Windows, esta propiedad distingue entre componentes de 64 bits y componentes de 32 bits. |
+| Acceso         | ReadOnly                                                                                                                                                                |
+| Tipo           | Long Possible values:COMAdmin32BitComponent (0x1)COMAdmin64BitComponent (0x2)                                                                                           |
 | Valor predeterminado        | N/D                                                                                                                                                                     |
 | Sistema mínimo | Windows XP                                                                                                                                                              |
 
@@ -92,8 +92,8 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | GUID para la clase de evento. Esta propiedad se devuelve cuando se llama al método de propiedad de [**clave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) en un objeto de esta colección. |
-| Access         | ReadOnly                                                                                                                                                      |
+| Descripción    | GUID de la clase de eventos. Esta propiedad se devuelve cuando se llama [**al método**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) de propiedad Key en un objeto de esta colección. |
+| Acceso         | ReadOnly                                                                                                                                                      |
 | Tipo           | String                                                                                                                                                        |
 | Predeterminado        | N/D                                                                                                                                                           |
 | Sistema mínimo | Windows XP                                                                                                                                                    |
@@ -108,8 +108,8 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|----------------------------|
-| Descripción    | Describe la clase de eventos. |
-| Access         | ReadOnly                   |
+| Descripción    | Describe la clase de eventos . |
+| Acceso         | ReadOnly                   |
 | Tipo           | String                     |
 | Predeterminado        | ""                         |
 | Sistema mínimo | Windows XP                 |
@@ -124,8 +124,8 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|---------------------------------------------------------|
-| Descripción    | Indica si el componente de clase de eventos es privado. |
-| Access         | ReadOnly                                                |
+| Descripción    | Indica si el componente de la clase de eventos es privado. |
+| Acceso         | ReadOnly                                                |
 | Tipo           | Bool                                                    |
 | Valor predeterminado        | False                                                   |
 | Sistema mínimo | Windows XP                                              |
@@ -140,8 +140,8 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Nombre descriptivo que se usa para identificar la clase de eventos. Esta propiedad se devuelve cuando se llama al método de la propiedad [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) en un objeto de esta colección. |
-| Access         | ReadOnly                                                                                                                                                                            |
+| Descripción    | Nombre descriptivo que se usa para identificar la clase de eventos. Esta propiedad se devuelve cuando se llama [**al método**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) de propiedad Name en un objeto de esta colección. |
+| Acceso         | ReadOnly                                                                                                                                                                            |
 | Tipo           | String                                                                                                                                                                              |
 | Predeterminado        | ""                                                                                                                                                                                  |
 | Sistema mínimo | Windows XP                                                                                                                                                                          |
@@ -150,7 +150,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

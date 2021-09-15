@@ -7,21 +7,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 39514671
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 3de7151be3e11ee4c898b3a58a5c2ab67b76b7561cc1cb10cf75dd78248f55db
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a0d3b7fe80ea170381fbd8374725834bb72817ab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119890985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566425"
 ---
 # <a name="jet_indexid-members"></a>JET_INDEXID miembros
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Contiene un identificador de índice. Un identificador de índice es una sugerencia que se usa para acelerar la selección del índice actual mediante JetSetCurrentIndex. Resulta muy útil cuando hay un número muy grande de índices en una tabla. El identificador de índice se puede recuperar mediante JetGetIndexInfo o JetGetTableIndexInfo.
+Contiene un identificador de índice. Un identificador de índice es una sugerencia que se usa para acelerar la selección del índice actual mediante JetSetCurrentIndex. Es muy útil cuando hay un número muy grande de índices en una tabla. El identificador de índice se puede recuperar mediante JetGetIndexInfo o JetGetTableIndexInfo.
 
-El [JET_INDEXID](./jet-indexid-structure2.md) muestra los miembros siguientes.
+El [JET_INDEXID](./jet-indexid-structure2.md) expone los miembros siguientes.
 
 ## <a name="methods"></a>Métodos
 

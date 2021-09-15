@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4f699a1988c53fc52b4ce413e4c0a655b7d943ddabc0c8e5fcb25ad627e32667
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5bdfb8fb02a2b06dc797317d35cc14e75bd6f221
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118987345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566597"
 ---
 # <a name="id3dxkeyframedanimationsetsettranslationkey-method"></a>Método ID3DXKeyframedAnimationSet::SetTranslationKey
 
@@ -65,7 +65,7 @@ Fotograma clave.
 
 Tipo: **[ **LPD3DXKEY \_ VECTOR3**](d3dxkey-vector3.md)**
 
-Puntero a los datos de traducción. Vea [**D3DXKEY \_ VECTOR3.**](d3dxkey-vector3.md)
+Puntero a los datos de traducción. Vea [**D3DXKEY \_ VECTOR3**](d3dxkey-vector3.md).
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Puntero a los datos de traducción. Vea [**D3DXKEY \_ VECTOR3.**](d3dxkey-vector
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 

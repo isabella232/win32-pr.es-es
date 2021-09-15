@@ -5,11 +5,11 @@ title: Función AcceptSecurityContext (Negotiate) (Sspi.h)
 ms.topic: reference
 ms.date: 07/25/2019
 ms.openlocfilehash: 13aa91545e5301e10a1f9d36e93e2d4995c15253
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122628697"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567553"
 ---
 # <a name="acceptsecuritycontext-negotiate-function"></a>Función AcceptSecurityContext (Negotiate)
 
@@ -48,11 +48,11 @@ Identificador de las credenciales del servidor. El servidor llama a [**la funci�
 *phContext* \[ in, out, optional\]
 </dt> <dd>
 
-Puntero a una [estructura CtxtHandle.](sspi-handles.md) En la primera llamada a **AcceptSecurityContext (Negotiate),** este puntero es **NULL.** En las llamadas posteriores, *phContext* es el identificador del contexto parcialmente formado que la primera llamada devolvió en el parámetro *phNewContext.*
+Puntero a una [estructura CtxtHandle.](sspi-handles.md) En la primera llamada a **AcceptSecurityContext (Negotiate),** este puntero es **NULL.** En las llamadas posteriores, *phContext* es el identificador del contexto con formato parcial que la primera llamada devolvió en el parámetro *phNewContext.*
 
 </dd> <dt>
 
-*pInput* \[ en, opcional\]
+*pInput* \[ in, opcional\]
 </dt> <dd>
 
 Puntero a una estructura [**SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) generada por una llamada de cliente a [**InitializeSecurityContext (Negotiate)**](initializesecuritycontext--negotiate.md) que contiene el descriptor del búfer de entrada.
@@ -82,9 +82,9 @@ Marcas de bits que especifican los atributos requeridos por el servidor para est
 
  
 
-Para ver las posibles marcas de atributo y sus significados, vea [Requisitos de contexto.](context-requirements.md) Las marcas usadas para este parámetro tienen el prefijo ASC \_ REQ, por ejemplo, ASC \_ REQ \_ DELEGATE.
+Para ver las posibles marcas de atributo y sus significados, vea [Requisitos de contexto.](context-requirements.md) Las marcas usadas para este parámetro tienen como prefijo ASC \_ REQ, por ejemplo, ASC \_ REQ \_ DELEGATE.
 
-Es posible que el cliente no sea compatible con los atributos solicitados. Para obtener más información, vea el *parámetro pfContextAttr.*
+Es posible que el cliente no sea compatible con los atributos solicitados. Para obtener más información, vea *el parámetro pfContextAttr.*
 
 </dd> <dt>
 
@@ -142,7 +142,7 @@ Esta función devuelve uno de los valores siguientes.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función AcceptSecurityContext (Negotiate)** es el homólogo del servidor de [**la función InitializeSecurityContext (Negotiate).**](initializesecuritycontext--negotiate.md)
 
@@ -179,7 +179,7 @@ Una vez [*establecido el contexto*](../secgloss/s-gly.md) de seguridad, la aplic
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

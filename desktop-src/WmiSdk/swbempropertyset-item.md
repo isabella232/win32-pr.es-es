@@ -1,5 +1,5 @@
 ---
-description: El método Item del objeto SWbemPropertySet obtiene un objeto SWbemProperty con nombre de la colección. Este es el método predeterminado para este objeto.
+description: El método Item del objeto SWbemPropertySet obtiene una propiedad denominada SWbemProperty de la colección. Este es el método predeterminado para este objeto .
 ms.assetid: 72025676-01dd-4fd7-b000-de6b09ecc6dc
 ms.tgt_platform: multiple
 title: Método SWbemPropertySet.Item (Wbemdisp.h)
@@ -16,16 +16,16 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: afd0aede44effb14005f111429e365e6831df0d2cae8d1d0685539620c696723
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b4d4dcbbbcb8b5225af038bf71e67c3a14260942
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119897965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567225"
 ---
 # <a name="swbempropertysetitem-method"></a>Método SWbemPropertySet.Item
 
-El **método Item** del objeto [**SWbemPropertySet**](swbempropertyset.md) obtiene un objeto [**SWbemProperty con**](swbemproperty.md) nombre de la colección. Este es el método predeterminado para este objeto.
+El **método Item** del objeto [**SWbemPropertySet**](swbempropertyset.md) obtiene una propiedad denominada [**SWbemProperty**](swbemproperty.md) de la colección. Este es el método predeterminado para este objeto .
 
 Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
@@ -48,11 +48,11 @@ objProperty = .Item( _
 *strName* \[ En\]
 </dt> <dd>
 
-Obligatorio. Nombre de la propiedad que se recuperará.
+Necesario. Nombre de la propiedad que se recuperará.
 
 </dd> <dt>
 
-*iFlags* \[ en, opcional\]
+*iFlags* \[ in, opcional\]
 </dt> <dd>
 
 Reservado. Este valor debe ser cero si se especifica.
@@ -83,7 +83,7 @@ Se especificó un parámetro no válido.
 
 </dd> <dt>
 
-**wbemErrOutOfMemory:** 2147749896
+**wbemErrOutOfMemory** : 2147749896
 </dt> <dd>
 
 No hay suficiente memoria para que se ejecute este método.
@@ -98,7 +98,7 @@ No hay suficiente memoria para que se ejecute este método.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemPropertySet<br/>                                                      |

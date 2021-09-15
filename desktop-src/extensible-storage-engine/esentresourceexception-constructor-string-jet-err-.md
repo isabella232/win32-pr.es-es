@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0c178ef476f88e4515c361967d0c367b8eb177bdfdbe5608456eda9461146393
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 458b12a80fdc0e6d7883d966f2e50aa8c1f6d69b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119619745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568309"
 ---
 # <a name="esentresourceexception-constructor-string-jet_err"></a>EsentResourceException constructor (String, JET_err)
 
@@ -71,7 +71,7 @@ protected EsentResourceException(
     
     Código de error de la excepción.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -5,11 +5,11 @@ title: Mensaje GetResponse (metadatos Exchange)
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 6b22782ae8b00530f6c857d867694be43b32e495
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122883068"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567192"
 ---
 # <a name="getresponse-metadata-exchange-message"></a>Mensaje GetResponse (metadatos Exchange)
 

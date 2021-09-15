@@ -5,12 +5,12 @@ ms.assetid: 1eebbdd2-655b-4bd3-938c-6bc687ffe7bb
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: 1fde1bb1d2794be4fd1bf799282a0257b78ae213453566208ff64bcf7a312654
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3c46e7208e6c142b9f58a7704be9bd3461c845b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117796883"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566889"
 ---
 # <a name="op_policy_element_list-structure"></a>OP_POLICY_ELEMENT_LIST estructura
 
@@ -28,7 +28,7 @@ typedef struct _OP_POLICY_ELEMENT_LIST
 } OP_POLICY_ELEMENT_LIST, *POP_POLICY_ELEMENT_LIST;
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 ### <a name="psource"></a>pSource
 

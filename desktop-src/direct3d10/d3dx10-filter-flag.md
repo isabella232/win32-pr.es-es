@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Tex.h
-ms.openlocfilehash: 400347efde28133055b97016d877b1bd4148624387ddd7086f4ff185ab87cca9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f12842cd07c55c33509ecfbb56fc804a6fc3b7c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119989535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566737"
 ---
 # <a name="d3dx10_filter_flag-enumeration"></a>Enumeración D3DX10 \_ FILTER \_ FLAG
 
 Marcas de filtrado de textura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -90,7 +90,7 @@ Cada píxel se calcula calculando el promedio de un cuadro de 2 x 2(x2) de píxe
 <span id="D3DX10_FILTER_MIRROR_U"></span><span id="d3dx10_filter_mirror_u"></span>**REFLEJO DEL FILTRO D3DX10 \_ \_ \_ U**
 </dt> <dd>
 
-Los píxeles del borde de la textura en el eje u deben reflejarse, no ajustarse.
+Los píxeles del borde de la textura en el eje U deben reflejarse, no ajustarse.
 
 </dd> <dt>
 
@@ -125,7 +125,7 @@ La imagen resultante debe estar entrelazada mediante un algoritmo de dither orde
 <span id="D3DX10_FILTER_DITHER_DIFFUSION"></span><span id="d3dx10_filter_dither_diffusion"></span>**D3DX10 \_ FILTER \_ DITHER \_ ESTADÍA**
 </dt> <dd>
 
-Realice un difuso en la imagen al cambiar de un formato a otro.
+Realice un dithering difuso en la imagen al cambiar de un formato a otro.
 
 </dd> <dt>
 
@@ -152,7 +152,7 @@ Igual que especificar D3DX \_ FILTER \_ SRGB \_ IN \| D3DX \_ FILTER \_ SRGB \_ 
 
 ## <a name="remarks"></a>Observaciones
 
-D3DX10 realiza automáticamente la corrección gamma (para convertir los datos de color del espacio RGB al espacio RGB estándar) al cargar los datos de textura. Esto se hace automáticamente por ejemplo cuando se cargan datos RGB desde un archivo .png en una textura sRGB. Use las marcas de filtro SRGB para indicar si no es necesario convertir los datos en espacio sRGB.
+D3DX10 realiza automáticamente la corrección gamma (para convertir los datos de color del espacio RGB al espacio RGB estándar) al cargar los datos de textura. Esto se hace automáticamente, por ejemplo, cuando se cargan datos RGB desde un archivo .png en una textura sRGB. Use las marcas de filtro SRGB para indicar si no es necesario convertir los datos en espacio sRGB.
 
 ## <a name="requirements"></a>Requisitos
 

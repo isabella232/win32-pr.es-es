@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102630
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: a2fe49f466d2133a6bb0c4067159611a76b3b659530b1e80e6b0c074f6b838db
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9e87fd2b03c8b8bfef0f3b7d72e817038c8e7153
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118260690"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566493"
 ---
 # <a name="esentresourceexception-methods"></a>Métodos de EsentResourceException 
 
@@ -78,7 +78,7 @@ El [tipo EsentResourceException](./esentresourceexception-class.md) expone los m
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

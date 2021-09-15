@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fd067bd5b49b17e0489946d1d3651a364804fcbd7e0e472a6c4bec9cdbfe1e92
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a19d0f5b35a73d78143c471fdd9f70ff20b8c9eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119850265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568284"
 ---
 # <a name="jet_bklogtimehasvalue-property"></a>JET_BKLOGTIME. Propiedad HasValue
 
@@ -39,7 +39,7 @@ Obtiene un valor que indica si el JET_BKLOGTIME tiene un valor NULL.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -64,7 +64,7 @@ Tipo: [System.Boolean](/dotnet/api/system.boolean)
 
 [INullableJetStruct.HasValue](./inullablejetstruct.hasvalue-property.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -5,12 +5,12 @@ ms.assetid: 5802e00c-b943-45d8-8298-5c2b4b996b85
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: ab6f6582b23d6e65866ba1380b696fab6d8313578fab47ad5dda999b09a1caa7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2083648636bd58c64314ba22852839f89ed4461d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119911604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566929"
 ---
 # <a name="odj_win7blob-structure"></a>ODJ_WIN7BLOB estructura
 
@@ -30,7 +30,7 @@ typedef struct _ODJ_WIN7BLOB
 } ODJ_WIN7BLOB;
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 ### <a name="lpdomain"></a>lpDomain
 
@@ -50,7 +50,7 @@ Contiene información sobre el dominio que se va a unir.
 
 ### <a name="dcinfo"></a>DcInfo
 
-Contiene información de nomenclatura y direccionamiento sobre el controlador de dominio que se usó para crear la cuenta de Active Directory.
+Contiene información de nomenclatura y direccionamiento sobre el controlador de dominio que se usó para crear la cuenta de equipo Active Directory.
 
 ### <a name="options"></a>Opciones
 
@@ -60,7 +60,7 @@ Debe establecerse en cero.
 
 [**Definiciones de IDL de unión a un dominio sin conexión**](odj-idl.md)
 
-[**INFORMACIÓN DE DOMINIO \_ DNS DE \_ DIRECTIVA \_ DE \_ ODJ**](odj-odj_policy_dns_domain_info.md)
+[**INFORMACIÓN DE DOMINIO \_ \_ DNS DE DIRECTIVA \_ DE \_ ODJ**](odj-odj_policy_dns_domain_info.md)
 
 [**DOMAIN_CONTROLLER_INFOW**](/windows/win32/api/dsgetdc/ns-dsgetdc-domain_controller_infow)
 

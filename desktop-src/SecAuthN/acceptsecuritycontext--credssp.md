@@ -4,12 +4,12 @@ ms.assetid: a53f733e-b646-4431-b021-a2c446308849
 title: Función AcceptSecurityContext (CredSSP)
 ms.topic: article
 ms.date: 07/25/2019
-ms.openlocfilehash: df4c87274c3a19d9e4a028cde813801688ce1927d1a0b89dbe3a7e8633ce8b57
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 681e03ea15729cc8726d63551e8b7b0a2b39ecac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119141698"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568245"
 ---
 # <a name="acceptsecuritycontext-credssp-function"></a>Función AcceptSecurityContext (CredSSP)
 
@@ -104,29 +104,29 @@ Esta función devuelve uno de los valores siguientes.
 | SEC_E_INVALID_HANDLE <br/> 0x80100003L              | Error en la función. El identificador pasado a la función no es válido.                                                                                                        |
 | SEC_E_INVALID_TOKEN <br/> 0x80090308L               | Error en la función. El token pasado a la función no es válido.                                                                                                         |
 | SEC_E_LOGON_DENIED <br/> 0x8009030CL                | Error de inicio de sesión.                                                                                                                                                           |
-| SEC_E_NO_AUTHENTICATING_AUTHORITY <br/> 0x80090311L | Error en la función. No se pudo ponerse en contacto con ninguna autoridad para la autenticación. Esto podría deberse a las condiciones siguientes:<br/><ul><li>El nombre de dominio de la entidad de autenticación es incorrecto.</li><li>El dominio no está disponible.</li><li>Error en la relación de confianza. |
+| SEC_E_NO_AUTHENTICATING_AUTHORITY <br/> 0x80090311L | Error en la función. No se pudo ponerse en contacto con ninguna autoridad para la autenticación. Esto podría deberse a las siguientes condiciones:<br/><ul><li>El nombre de dominio de la entidad de autenticación es incorrecto.</li><li>El dominio no está disponible.</li><li>Error en la relación de confianza. |
 | SEC_E_NO_CREDENTIALS <br/>0x8009030EL               | Error en la función. El identificador de credenciales especificado en el *parámetro phCredential* no es válido.                            |
 | SEC_E_OK <br/> 0x00000000L                          | La función se ha realizado correctamente. Se aceptó el contexto de seguridad recibido del cliente. Si la función generó un token de salida, el token debe enviarse al proceso de cliente. |
 | SEC_E_UNSUPPORTED_FUNCTION <br/> 0x80090302L        | Error en la función. El *parámetro fContextReq* especificó una marca de atributo de contexto (ASC_REQ_DELEGATE o ASC_REQ_PROMPT_FOR_CREDS) que no era válida.                       |
 | SEC_I_COMPLETE_AND_CONTINUE <br/> 0x00090314L       | La función se ha realizado correctamente. El servidor debe llamar [**a CompleteAuthToken**](/windows/win32/api/sspi/nf-sspi-completeauthtoken) y pasar el token de salida al cliente. A continuación, el servidor debe esperar un token de devolución del cliente antes de realizar otra llamada a [**AcceptSecurityContext (CredSSP).**](acceptsecuritycontext--credssp.md) |
-| SEC_I_COMPLETE_NEEDED <br/> 0x00090313L             | La función se ha realizado correctamente. El servidor debe terminar de compilar el mensaje desde el cliente antes de llamar [ **a CompleteAuthToken.**](/windows/win32/api/sspi/nf-sspi-completeauthtoken)                             |
+| SEC_I_COMPLETE_NEEDED <br/> 0x00090313L             | La función se ha realizado correctamente. El servidor debe terminar de compilar el mensaje del cliente antes de llamar a [ **CompleteAuthToken.**](/windows/win32/api/sspi/nf-sspi-completeauthtoken)                             |
 | SEC_I_CONTINUE_NEEDED <br/> 0x00090312L             | La función se ha realizado correctamente. El servidor debe enviar el token de salida al cliente y esperar un token devuelto. El token devuelto debe pasarse en *pInput para* otra llamada a [**AcceptSecurityContext (CredSSP).**](acceptsecuritycontext--credssp.md)
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **función AcceptSecurityContext (CredSSP)** es el homólogo del servidor de [**la función InitializeSecurityContext (CredSSP).**](initializesecuritycontext--credssp.md)
+La **función AcceptSecurityContext (CredSSP)** es el homólogo del servidor de la [**función InitializeSecurityContext (CredSSP).**](initializesecuritycontext--credssp.md)
 
-Cuando el servidor recibe una solicitud de un cliente, usa el parámetro *fContextReq* para especificar lo que requiere de la sesión. De este modo, un servidor puede requerir que los clientes puedan usar una sesión confidencial o [*comprobada*](../secgloss/i-gly.md)por integridad. puede rechazar clientes que no puedan satisfacer esa demanda. Como alternativa, un servidor no puede requerir nada; Todo lo que el cliente requiera o pueda proporcionar se devuelve en el *parámetro pfContextAttr.*
+Cuando el servidor recibe una solicitud de un cliente, usa el parámetro *fContextReq* para especificar lo que requiere de la sesión. De este modo, un servidor puede requerir que los clientes puedan usar una sesión confidencial o [*comprobada*](../secgloss/i-gly.md)por integridad. puede rechazar clientes que no pueden satisfacer esa demanda. Como alternativa, un servidor no puede requerir nada; todo lo que el cliente requiere o puede proporcionar se devuelve en el *parámetro pfContextAttr.*
 
-Los *parámetros fContextReq* y *pfContextAttr* son máscaras de bits que representan varios atributos de contexto. Para obtener una descripción de los distintos atributos, vea [Requisitos de contexto.](context-requirements.md)
+Los *parámetros fContextReq* *y pfContextAttr* son máscaras de bits que representan varios atributos de contexto. Para obtener una descripción de los distintos atributos, vea [Requisitos de contexto.](context-requirements.md)
 
 > [!Note]  
-> Aunque el *parámetro pfContextAttr es* válido en cualquier devolución correcta, debe examinar las marcas relativas a los aspectos de seguridad del contexto solo en la devolución correcta final. Los resultados intermedios pueden establecer, por ejemplo, la marca \_ ISC RET \_ ALLOCATED \_ MEMORY.
+> Aunque el *parámetro pfContextAttr es* válido en cualquier devolución correcta, debe examinar las marcas que pertenecen a los aspectos de seguridad del contexto solo en la devolución correcta final. Los resultados intermedios pueden establecer, por ejemplo, la marca \_ ISC RET \_ ALLOCATED \_ MEMORY.
 
-El autor de la llamada es responsable de determinar si los atributos de contexto final son suficientes. Por ejemplo, si se solicitó confidencialidad (cifrado) pero no se pudo establecer, algunas aplicaciones pueden optar por apagar la conexión inmediatamente. Si no se puede establecer el contexto de seguridad, el servidor debe liberar el contexto creado parcialmente llamando a la [**función DeleteSecurityContext.**](/windows/win32/api/sspi/nf-sspi-deletesecuritycontext) Para obtener información sobre cuándo llamar a **la función DeleteSecurityContext,** vea **DeleteSecurityContext**.
+El autor de la llamada es responsable de determinar si los atributos de contexto finales son suficientes. Por ejemplo, si se solicitó la confidencialidad (cifrado) pero no se pudo establecer, algunas aplicaciones pueden optar por apagar la conexión inmediatamente. Si no se puede establecer el contexto de seguridad, el servidor debe liberar el contexto creado parcialmente llamando a la [**función DeleteSecurityContext.**](/windows/win32/api/sspi/nf-sspi-deletesecuritycontext) Para obtener información sobre cuándo llamar a **la función DeleteSecurityContext,** **vea DeleteSecurityContext**.
 
-Una vez establecido el contexto de seguridad, la aplicación de servidor puede usar la función [**QuerySecurityContextToken**](/windows/win32/api/sspi/nf-sspi-querysecuritycontexttoken) para recuperar un identificador de la cuenta de usuario a la que se ha asignado el certificado de cliente. Además, el servidor puede usar la [**función ImpersonateSecurityContext**](/windows/win32/api/sspi/nf-sspi-impersonatesecuritycontext) para suplantar al usuario.
+Una vez establecido el contexto de seguridad, la aplicación de servidor puede usar la función [**QuerySecurityContextToken**](/windows/win32/api/sspi/nf-sspi-querysecuritycontexttoken) para recuperar un identificador de la cuenta de usuario a la que se asignó el certificado de cliente. Además, el servidor puede usar la [**función ImpersonateSecurityContext**](/windows/win32/api/sspi/nf-sspi-impersonatesecuritycontext) para suplantar al usuario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -134,11 +134,11 @@ Una vez establecido el contexto de seguridad, la aplicación de servidor puede u
 |--------------------------|-------------------------------------------|
 | Cliente mínimo compatible | Windows aplicaciones de escritorio de Vista \[\]       |
 | Servidor mínimo compatible | Windows Solo aplicaciones de escritorio de Server 2008 \[\] |
-| Header                   | Sspi.h (incluir Security.h)               |
+| Encabezado                   | Sspi.h (incluir Security.h)               |
 | Biblioteca                  | Secur32.lib                               |
 | Archivo DLL                      | Secur32.dll                               |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Funciones de SSPI](authentication-functions.md#sspi-functions)
 - [**DeleteSecurityContext**](/windows/win32/api/sspi/nf-sspi-deletesecuritycontext)

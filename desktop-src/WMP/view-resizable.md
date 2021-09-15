@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 622c732ce6a1218fa16bbe70c1ef18d53ba4211abfde9d39fc794ec862348033
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ed4d61973e34891d336ea5729ea40478c6c32808
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118332913"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567473"
 ---
 # <a name="viewresizable"></a>VIEW.resizable
 
@@ -42,7 +42,7 @@ Este atributo es un valor **booleano** de solo lectura con un valor predetermina
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si no hay ninguna **barra de título** y, por lo tanto, no hay ninguna ventana o borde, debe usar el método **size** para cambiar el tamaño del **elemento VIEW.**
 
@@ -50,9 +50,9 @@ Si no hay ninguna **barra de título** y, por lo tanto, no hay ninguna ventana o
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
+| Version<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 

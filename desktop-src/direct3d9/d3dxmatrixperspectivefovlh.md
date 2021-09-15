@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: cc530d4e0d977bac7df89f040d63552a4f0ca852c4e04ba0724f408daef10829
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eec478fec30567fbf301054ddfa60f1689bfee8e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119122895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567853"
 ---
 # <a name="d3dxmatrixperspectivefovlh-function-d3dx9mathh"></a>Función D3DXMatrixPerspectiveFovLH (D3dx9math.h)
 
@@ -95,7 +95,7 @@ Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
 Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es una matriz de proyección de perspectiva a la izquierda.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la función **D3DXMatrixPerspectiveFovLH** se puede usar como parámetro para otra función.
 
@@ -128,7 +128,7 @@ xScale = yScale / aspect ratio
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

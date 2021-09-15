@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: Propiedades boolColumnValue'
+description: 'Más información sobre: Propiedades de BoolColumnValue'
 title: Propiedades boolColumnValue
 TOCTitle: BoolColumnValue properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.BoolColumnValue
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.bool
 ms:contentKeyID: 55100954
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: d338418b8855b8ba45e38b42f192cb7b1352f345f48e301eb78b1d0dc75534a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ead8c2bb33f0ec366a4fc1dd930501b3a4ec388f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117902276"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566549"
 ---
 # <a name="boolcolumnvalue-properties"></a>Propiedades boolColumnValue
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo BoolColumnValue](./boolcolumnvalue-class.md) expone los miembros siguientes.
+El [tipo BoolColumnValue](./boolcolumnvalue-class.md) expone los siguientes miembros.
 
 ## <a name="properties"></a>Propiedades
 
@@ -50,7 +50,7 @@ El [tipo BoolColumnValue](./boolcolumnvalue-class.md) expone los miembros siguie
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334225(v=exchg.10).md">Duración</a></td>
-<td>Obtiene la longitud de bytes de un valor de columna, que es cero si column es NULL; de lo contrario, coincide con el tamaño de esta columna de tamaño fijo. (Se hereda de <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T). &gt; </a></td>
+<td>Obtiene la longitud de bytes de un valor de columna, que es cero si la columna es null; de lo contrario, coincide con el tamaño de esta columna de tamaño fijo. (Se hereda de <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T). &gt; </a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -75,7 +75,7 @@ El [tipo BoolColumnValue](./boolcolumnvalue-class.md) expone los miembros siguie
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334157(v=exchg.10).md">ValueAsObject</a></td>
-<td>Obtiene el último conjunto o valor recuperado de la columna. El valor se devuelve como un objeto genérico. (Invalida <a href="dn334226(v=exchg.10).md">ColumnValueOfStruct &lt; T &gt; . ValueAsObject</a>).</td>
+<td>Obtiene el último valor establecido o recuperado de la columna. El valor se devuelve como un objeto genérico. (Invalida <a href="dn334226(v=exchg.10).md">ColumnValueOfStruct &lt; T &gt; . ValueAsObject</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -83,10 +83,10 @@ El [tipo BoolColumnValue](./boolcolumnvalue-class.md) expone los miembros siguie
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Clase BoolColumnValue](./boolcolumnvalue-class.md)
+[BoolColumnValue (clase)](./boolcolumnvalue-class.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

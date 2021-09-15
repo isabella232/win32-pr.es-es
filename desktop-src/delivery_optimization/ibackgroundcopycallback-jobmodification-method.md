@@ -1,6 +1,6 @@
 ---
-title: Método IBackgroundCopyCallback JobModification (Deliveryoptimization. h)
-description: La optimización de entrega (DO) llama a la implementación del método JobModification cuando se ha modificado el trabajo.
+title: Método JobModification de IBackgroundCopyCallback (Deliveryoptimization.h)
+description: Optimización de distribución (DO) llama a la implementación del método JobModification cuando se ha modificado el trabajo.
 ms.assetid: 4AC2575F-57FB-45E6-B29C-12DF615237F3
 keywords:
 - Método JobModification
@@ -18,15 +18,15 @@ ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: ceeb390fc8592c1e8e1d03efdb432056bd131a6e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714576"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566769"
 ---
-# <a name="ibackgroundcopycallbackjobmodification-method"></a>IBackgroundCopyCallback:: JobModification (método)
+# <a name="ibackgroundcopycallbackjobmodification-method"></a>IBackgroundCopyCallback::JobModification (método)
 
-La optimización de entrega (DO) llama a la implementación del método [**JobModification**](https://www.bing.com/search?q=**JobModification**) cuando se ha modificado el trabajo. El servicio genera este evento cuando se transfieren bytes, se han agregado archivos al trabajo, se han modificado las propiedades o el estado del trabajo ha cambiado.
+Optimización de distribución (DO) llama a la implementación del método [**JobModification**](https://www.bing.com/search?q=**JobModification**) cuando se ha modificado el trabajo. El servicio genera este evento cuando se transfieren bytes, se han agregado archivos al trabajo, se han modificado las propiedades o se ha cambiado el estado del trabajo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,14 +44,14 @@ HRESULT JobModification(
 
 <dl> <dt>
 
-*pJob* \[ de\]
+*pJob* \[ En\]
 </dt> <dd>
 
-Contiene los métodos para tener acceso a la información de la propiedad, el progreso y el estado del trabajo. No libere *pJob*; Libera la interfaz cuando el método [**JobModification**](https://www.bing.com/search?q=**JobModification**) devuelve.
+Contiene los métodos para acceder a la información de propiedad, progreso y estado del trabajo. No liberar *pJob*; DO libera la interfaz cuando devuelve [**el método JobModification.**](https://www.bing.com/search?q=**JobModification**)
 
 </dd> <dt>
 
-*dwReserved* \[ de\]
+*dwReserved* \[ En\]
 </dt> <dd>
 
 Reservado para uso futuro.
@@ -68,11 +68,11 @@ Este método debe devolver S_OK.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1709 \[\]<br/>                                           |
-| Servidor mínimo compatible<br/> | Windows Server, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>                                       |
-| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| IDL<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
+| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | Archivo DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyCallback se define como 97EA99C7-0186-4AD4-8DF9-C5B4E0ED6B22<br/>          |
 

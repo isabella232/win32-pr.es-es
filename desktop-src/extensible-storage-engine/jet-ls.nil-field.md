@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: JET_LS. Campo Nil'
-title: JET_LS. Campo Nil
+description: 'Más información sobre: JET_LS. Campo nulo'
+title: JET_LS. Campo nulo
 TOCTitle: Nil field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.JET_LS.Nil
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_ls.nil(v=EXCHG.10)
@@ -25,18 +25,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 77891d1b50bd7fcd8bcc3b1bddc47ed91f86a539
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105716530"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566980"
 ---
-# <a name="jet_lsnil-field"></a>JET_LS. Campo Nil
+# <a name="jet_lsnil-field"></a>JET_LS. Campo nulo
 
-Identificador nulo.
+Identificador null.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -57,8 +57,8 @@ public static readonly JET_LS Nil
 
 #### <a name="reference"></a>Referencia
 
-[Estructura de JET_LS](./jet-ls-structure.md)
+[JET_LS estructura](./jet-ls-structure.md)
 
-[Miembros de JET_LS](./jet-ls-members.md)
+[JET_LS miembros](./jet-ls-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,5 +1,5 @@
 ---
-title: Enumeración DeliveryOptimizationFileProperty (Deliveryoptimization. h)
+title: Enumeración DeliveryOptimizationFileProperty (Deliveryoptimization.h)
 description: La enumeración DeliveryOptimizationFileProperty especifica el identificador de una propiedad opcional para el archivo DO.
 keywords:
 - Enumeración DeliveryOptimizationFileProperty
@@ -15,11 +15,11 @@ ms.topic: reference
 ms.date: 01/18/2019
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 238ad815149f7d40dd1902b991608e0a3005eb35
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105714579"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566781"
 ---
 # <a name="deliveryoptimizationfileproperty-enumeration"></a>Enumeración DeliveryOptimizationFileProperty
 
@@ -46,48 +46,48 @@ typedef enum _DeliveryOptimizationFileProperty {
 DOFilePropertyId_DecryptionInfo
 </dt> <dd>
 
-El identificador de propiedad DOFilePropertyId_DecryptionInfo establece la información de descifrado en forma de cadena JSON. DOFilePropertyId_DecryptionInfo es una propiedad de solo escritura de tipo VT_BSTR.
+El DOFilePropertyId_DecryptionInfo de propiedad establece la información de descifrado en forma de cadena JSON. DOFilePropertyId_DecryptionInfo es una propiedad de solo escritura de tipo VT_BSTR.
 
 </dd> <dt>
 
 DOFilePropertyId_IntegrityCheckInfo
 </dt> <dd>
 
-El identificador de la propiedad DOFilePropertyId_IntegrityCheckInfo establece la ubicación del archivo hash de la pieza (PHF), que se usa para realizar comprobaciones de integridad en tiempo de ejecución en el contenido descargado. DOFilePropertyId_IntegrityCheckInfo es una propiedad de solo escritura de tipo VT_BSTR.
+El DOFilePropertyId_IntegrityCheckInfo de propiedad establece la ubicación del archivo hash por fragmentos (PHF), que usa DO para realizar comprobaciones de integridad en tiempo de ejecución en el contenido descargado. DOFilePropertyId_IntegrityCheckInfo es una propiedad de solo escritura de tipo VT_BSTR.
 
 </dd> <dt>
 
 DOFilePropertyId_IntegrityCheckMandatory
 </dt> <dd>
 
-El identificador de la propiedad DOFilePropertyId_IntegrityCheckMandatory establece una marca booleana que indica si el uso de PHF es obligatorio. Si es TRUE, la descarga se anulará cuando se haya producido un error en la comprobación de integridad. DOFilePropertyId_IntegrityCheckMandatory es una propiedad de lectura y escritura de tipo VT_BOOL.
+El DOFilePropertyId_IntegrityCheckMandatory de propiedad establece una marca booleana que indica si el uso de phf es obligatorio. Si es TRUE, la descarga se anulará una vez que se haya fallado la comprobación de integridad. DOFilePropertyId_IntegrityCheckMandatory es una propiedad de lectura y escritura de tipo VT_BOOL.
 
 </dd> <dt>
 
 DOFilePropertyId_DownloadSinkFilePath
 </dt> <dd>
 
-El identificador de la propiedad DOFilePropertyId_DownloadSinkFilePath establece una ubicación completa del sistema de archivos donde debe almacenar las piezas descargadas. DOFilePropertyId_DownloadSinkFilePath es de tipo VT_BSTR.
+El DOFilePropertyId_DownloadSinkFilePath de propiedad establece una ubicación completa del sistema de archivos donde DO debe almacenar las piezas descargadas. DOFilePropertyId_DownloadSinkFilePath es de tipo VT_BSTR.
 
 </dd> <dt>
 
 DOFilePropertyId_DownloadSinkMemoryStream
 </dt> <dd>
 
-El identificador de la propiedad DOFilePropertyId_DownloadSinkMemoryStream está en desuso. No debe usarse.
+El DOFilePropertyId_DownloadSinkMemoryStream de propiedad está en desuso. No debe usarse.
 
 </dd> <dt>
 
 DOFilePropertyId_TotalSizeBytes
 </dt> <dd>
 
-El identificador de la propiedad DOFilePropertyId_TotalSizeBytes especifica el tamaño total de la descarga. DOFilePropertyId_TotalSizeBytes es de tipo VT_UI8.
+El DOFilePropertyId_TotalSizeBytes de propiedad especifica el tamaño total de la descarga. DOFilePropertyId_TotalSizeBytes es de tipo VT_UI8.
 </dd> </dl>
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Value |
 |-------------------------------|----------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 10, versión 1803 \[\]<br/>      |
-| Servidor mínimo compatible<br/> | Windows Server, versión 1709 \[ solo para aplicaciones de escritorio\]<br/>  |
-| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>               |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]<br/>      |
+| Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>  |
+| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>               |

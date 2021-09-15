@@ -51,12 +51,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 761677a7110e5291171b39618d4315052ea1f86fd95361ce4f51f174b130a012
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a111bf418e6cf599f99c9dfa34ca0f5025a1d779
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119386545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568149"
 ---
 # <a name="api-flags"></a>Marcas de API
 
@@ -202,9 +202,9 @@ Indica que la función debe usar la copia del recurso que se encuentra actualmen
 
 
 
-Fuerza una recarga si no hay ninguna hora de expiración y ninguna hora LastModified devuelta desde el servidor al determinar si se debe volver a cargar el elemento de la red. [**FtpFindFirstFile, FtpGetFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea) [](/windows/desktop/api/Wininet/nf-wininet-ftpgetfilea) [**FtpOpenFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea) [**FtpPutFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpputfilea) [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta)e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla)pueden usar esta marca.
+Fuerza una recarga si no hay ninguna hora de expiración y ninguna hora LastModified devuelta desde el servidor al determinar si se debe volver a cargar el elemento de la red. [**FtpFindFirstFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea) [**FtpGetFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpgetfilea) [**FtpOpenFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea) [**FtpPutFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpputfilea) [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta)e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla)pueden usar esta marca.
 
-**Windows XP y Windows Server 2003 R2 y versiones anteriores:** También los usan [**GopherFindFirstFile**](/windows/desktop/api/Wininet/nf-wininet-gopherfindfirstfilea) y [**GopherOpenFile.**](/windows/desktop/api/Wininet/nf-wininet-gopheropenfilea)
+**Windows XP y Windows Server 2003 R2 y versiones anteriores:** También lo usan [**GopherFindFirstFile**](/windows/desktop/api/Wininet/nf-wininet-gopherfindfirstfilea) y [**GopherOpenFile.**](/windows/desktop/api/Wininet/nf-wininet-gopheropenfilea)
 
 
 </dt> </dl> </dd> <dt>
@@ -217,7 +217,7 @@ Fuerza una recarga si no hay ninguna hora de expiración y ninguna hora LastModi
 
 
 
-Deshabilita la comprobación de los certificados basados en SSL/PCT que se devuelven desde el servidor con el nombre de host especificado en la solicitud. WinINet usa una comprobación sencilla de los certificados mediante la comparación de nombres de host y reglas de caracteres comodín simples. [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) pueden usar esta marca (para solicitudes HTTP).
+Deshabilita la comprobación de los certificados basados en SSL/PCT que se devuelven desde el servidor con el nombre de host especificado en la solicitud. WinINet usa una comprobación sencilla de los certificados mediante la comparación de nombres de host y reglas de caracteres comodín simples. HttpOpenRequest e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) [](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) pueden usar esta marca (para solicitudes HTTP).
 
 
 </dt> </dl> </dd> <dt>
@@ -230,7 +230,7 @@ Deshabilita la comprobación de los certificados basados en SSL/PCT que se devue
 
 
 
-Deshabilita la comprobación de los certificados basados en SSL/PCT para las fechas de validez adecuadas. [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) pueden usar esta marca (para solicitudes HTTP).
+Deshabilita la comprobación de los certificados basados en SSL/PCT para las fechas de validez adecuadas. HttpOpenRequest e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) [](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) pueden usar esta marca (para solicitudes HTTP).
 
 
 </dt> </dl> </dd> <dt>
@@ -243,7 +243,7 @@ Deshabilita la comprobación de los certificados basados en SSL/PCT para las fec
 
 
 
-Deshabilita la detección de este tipo especial de redireccionamiento. Cuando se usa esta marca, WinINet permite de forma transparente redirecciones de HTTPS a direcciones URL HTTP. [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) pueden usar esta marca (para solicitudes HTTP).
+Deshabilita la detección de este tipo especial de redirección. Cuando se usa esta marca, WinINet permite de forma transparente redirecciones de HTTPS a direcciones URL HTTP. HttpOpenRequest e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) [](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) pueden usar esta marca (para solicitudes HTTP).
 
 
 </dt> </dl> </dd> <dt>
@@ -256,7 +256,7 @@ Deshabilita la detección de este tipo especial de redireccionamiento. Cuando se
 
 
 
-Deshabilita la detección de este tipo especial de redireccionamiento. Cuando se usa esta marca, WinINet permite de forma transparente redirecciones de direcciones URL HTTP a HTTPS. [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) pueden usar esta marca (para solicitudes HTTP).
+Deshabilita la detección de este tipo especial de redirección. Cuando se usa esta marca, WinINet permite de forma transparente redirecciones de direcciones URL HTTP a HTTPS. HttpOpenRequest e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) [](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) pueden usar esta marca (para solicitudes HTTP).
 
 
 </dt> </dl> </dd> <dt>
@@ -269,7 +269,7 @@ Deshabilita la detección de este tipo especial de redireccionamiento. Cuando se
 
 
 
-Usa semántica de conexión continua, si está disponible, para la conexión. [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) usan esta marca (para solicitudes HTTP). Esta marca es necesaria para Microsoft Network (MSN), NTLM y otros tipos de autenticación.
+Usa la semántica keep-alive, si está disponible, para la conexión. [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) usan esta marca (para solicitudes HTTP). Esta marca es necesaria para Microsoft Network (MSN), NTLM y otros tipos de autenticación.
 
 
 </dt> </dl> </dd> <dt>
@@ -295,9 +295,9 @@ Ya no se admite.
 
 
 
-Idéntico al valor preferido, **INTERNET \_ FLAG NEED \_ \_ FILE**. Hace que se cree un archivo temporal si no se puede almacenar en caché. [**FtpFindFirstFile, FtpGetFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea) [](/windows/desktop/api/Wininet/nf-wininet-ftpgetfilea) [**FtpOpenFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea) [**FtpPutFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpputfilea) [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta)e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla)pueden usar esta marca.
+Idéntico al valor preferido, **INTERNET \_ FLAG NEED \_ \_ FILE**. Hace que se cree un archivo temporal si el archivo no se puede almacenar en caché. [**FtpFindFirstFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea) [**FtpGetFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpgetfilea) [**FtpOpenFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea) [**FtpPutFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpputfilea) [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta)e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla)pueden usar esta marca.
 
-**Windows XP y Windows Server 2003 R2 y versiones anteriores:** También los usan [**GopherFindFirstFile**](/windows/desktop/api/Wininet/nf-wininet-gopherfindfirstfilea) y [**GopherOpenFile.**](/windows/desktop/api/Wininet/nf-wininet-gopheropenfilea)
+**Windows XP y Windows Server 2003 R2 y versiones anteriores:** También lo usan [**GopherFindFirstFile**](/windows/desktop/api/Wininet/nf-wininet-gopherfindfirstfilea) y [**GopherOpenFile.**](/windows/desktop/api/Wininet/nf-wininet-gopheropenfilea)
 
 
 </dt> </dl> </dd> <dt>
@@ -310,14 +310,14 @@ Idéntico al valor preferido, **INTERNET \_ FLAG NEED \_ \_ FILE**. Hace que se 
 
 
 
-Hace que se cree un archivo temporal si no se puede almacenar en caché. [**FtpFindFirstFile, FtpGetFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea) [](/windows/desktop/api/Wininet/nf-wininet-ftpgetfilea) [**FtpOpenFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea) [**FtpPutFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpputfilea) [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta)e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla)pueden usar esta marca.
+Hace que se cree un archivo temporal si el archivo no se puede almacenar en caché. [**FtpFindFirstFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpfindfirstfilea) [**FtpGetFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpgetfilea) [**FtpOpenFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpopenfilea) [**FtpPutFile,**](/windows/desktop/api/Wininet/nf-wininet-ftpputfilea) [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta)e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla)pueden usar esta marca.
 
-**Windows XP y Windows Server 2003 R2 y versiones anteriores:** También los usan [**GopherFindFirstFile**](/windows/desktop/api/Wininet/nf-wininet-gopherfindfirstfilea) y [**GopherOpenFile.**](/windows/desktop/api/Wininet/nf-wininet-gopheropenfilea)
+**Windows XP y Windows Server 2003 R2 y versiones anteriores:** También lo usan [**GopherFindFirstFile**](/windows/desktop/api/Wininet/nf-wininet-gopherfindfirstfilea) y [**GopherOpenFile.**](/windows/desktop/api/Wininet/nf-wininet-gopheropenfilea)
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="INTERNET_FLAG_NO_AUTH"></span><span id="internet_flag_no_auth"></span>**MARCA DE INTERNET \_ \_ SIN \_ AUTENTICACIÓN**
+<span id="INTERNET_FLAG_NO_AUTH"></span><span id="internet_flag_no_auth"></span>**INTERNET \_ FLAG \_ NO \_ AUTH**
 </dt> <dd> <dl> <dt>
 
 0x00040000
@@ -325,7 +325,7 @@ Hace que se cree un archivo temporal si no se puede almacenar en caché. [**FtpF
 
 
 
-No intenta la autenticación automáticamente. [**HttpOpenRequest**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) pueden usar esta marca (para solicitudes HTTP).
+No intenta la autenticación automáticamente. HttpOpenRequest e [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-httpopenrequesta) [](/windows/desktop/api/Wininet/nf-wininet-internetopenurla) pueden usar esta marca (para solicitudes HTTP).
 
 
 </dt> </dl> </dd> <dt>
@@ -598,10 +598,10 @@ Obliga a la API a usar el valor de contexto, incluso si se establece en cero.
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones o servicios de servidor, use [Microsoft Windows HTTP Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para implementaciones de servidor o servicios, use [Microsoft Windows HTTP Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
  
 
@@ -609,7 +609,7 @@ Obliga a la API a usar el valor de contexto, incluso si se establece en cero.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

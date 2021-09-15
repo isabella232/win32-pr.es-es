@@ -1,20 +1,20 @@
 ---
 title: Estructura de atributos de intersección
-description: Estructura declarada en HLSL para representar atributos de acceso para la intersección de triángulos de función fija o el rectángulo delimitador alineado con ejes para la intersección primitiva de procedimientos.
+description: Estructura declarada en HLSL para representar atributos de acceso para la intersección del triángulo de función fija o el rectángulo de selección alineado con ejes para la intersección primitiva de procedimientos.
 ms.assetid: ''
 ms.localizationpriority: low
 ms.topic: language-reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fea10edb8402f07431d488ff9d28d1de539259e51bc1893d20e76e8f4cc3cdab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b2f1dd8fee7371f81dd538b6ea6622f22e3bfd3d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118528123"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567996"
 ---
 # <a name="intersection-attributes-structure"></a>Estructura de atributos de intersección 
 
-Estructura declarada en HLSL para representar atributos de acceso para la intersección de triángulos de función fija o el rectángulo delimitador alineado con ejes para la intersección primitiva de procedimientos.
+Estructura declarada en HLSL para representar atributos de acceso para la intersección del triángulo de función fija o el rectángulo de selección alineado con ejes para la intersección primitiva de procedimientos.
 
 ## <a name="fixed-function-triangle-intersection"></a>Intersección de triángulo de función fija
 

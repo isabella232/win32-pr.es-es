@@ -4,12 +4,12 @@ description: Este tema contiene código de ejemplo que muestra cómo usar la int
 ms.assetid: 41ca783d-56d1-4ad5-8f07-c265ff2e07bd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16fe6539a24f271f5c1e8042b1be9933a77f1118b27730d510026de1852d7938
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2ed5c6c1bec961d4f0df83687cd19eecba6ed179
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118324453"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567257"
 ---
 # <a name="how-to-walk-the-ui-automation-tree"></a>How to Walk the Automatización de la interfaz de usuario Tree
 

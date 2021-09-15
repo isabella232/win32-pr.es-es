@@ -4,12 +4,12 @@ ms.assetid: d2ee6886-995f-453d-8121-f849b2d910ec
 title: elemento de archivo
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: afd3fbd3f52bb2fba10f77f0589016267703811808d5eb51b90cf2a59f1425bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41970da9cc6e389f4e45c5e55901ce8eb2e7797f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117920769"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567196"
 ---
 # <a name="file-element"></a>elemento de archivo
 
@@ -40,7 +40,7 @@ Indica al generador de código que genere un archivo y especifica el nombre del 
 
 | Elemento                                                                                                 | Descripción                                                                                                                                                                                                           |
 |---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Cdata**<br/>                                                                                    | Las secciones text y CDATA se copian en el archivo sin modificaciones. El código fuente que no es una función de los datos de entrada del contrato se puede agregar a los archivos de salida mediante las secciones text y CDATA.<br/> <br/> |
+| **CDATA**<br/>                                                                                    | Las secciones text y CDATA se copian en el archivo sin modificaciones. El código fuente que no es una función de los datos de entrada del contrato se puede agregar a los archivos de salida mediante las secciones text y CDATA.<br/> <br/> |
 | [**enumerationValueDeclarations**](enumerationvaluedeclarations.md)<br/>                         | Genera declaraciones de C para los valores de todos los tipos enumerados.<br/> <br/>                                                                                                                                   |
 | [**eventSourceBuilderDeclarations**](eventsourcebuilderdeclarations.md)<br/>                     | Genera declaraciones para las funciones que crean clases de origen de eventos.<br/> <br/>                                                                                                                         |
 | [**eventSourceBuilderImplementations**](eventsourcebuilderimplementations.md)<br/>               | Genera funciones que crean clases de origen de eventos.<br/> <br/>                                                                                                                                          |
@@ -132,7 +132,7 @@ Indica al generador de código que genere un archivo y especifica el nombre del 
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El nombre del archivo viene determinado por el valor del atributo name o del elemento secundario. El contenido del archivo viene determinado por los demás elementos secundarios, text y CDATA del **elemento de** archivo. El texto y CDATA se copian en el archivo sin modificar. Los elementos secundarios se reemplazan por código generado. El texto, CDATA y los elementos secundarios pueden aparecer en cualquier orden y se pueden repetir indefinidamente.
 
@@ -140,7 +140,7 @@ El nombre del archivo viene determinado por el valor del atributo name o del ele
 
 
 
-| Etiqueta | Valor |
+| Etiqueta | Value |
 |-------------------------------------|---------------|
 | Sistema mínimo compatible<br/> | Windows Vista |
 | Puede estar vacío                        | No            |

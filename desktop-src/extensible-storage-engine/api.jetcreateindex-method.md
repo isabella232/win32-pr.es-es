@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: df24e16252ec3aa837b9232859bf56726ee54b09448a57572281fab97a28c5c6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a9b3549461324f396408bb7d370531907248e8c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119670555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567729"
 ---
 # <a name="apijetcreateindex-method"></a>Método Api.JetCreateIndex
 
@@ -87,7 +87,7 @@ public static void JetCreateIndex(
   - tableid  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    Tabla en la que se creará el índice.
+    Tabla en la que se crea el índice.
 
 <!-- end list -->
 
@@ -124,11 +124,11 @@ public static void JetCreateIndex(
     
     Densidad inicial del árbol B+.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

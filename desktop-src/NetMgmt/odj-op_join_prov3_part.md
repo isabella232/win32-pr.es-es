@@ -1,20 +1,20 @@
 ---
 title: OP_JOINPROV3_PART
-description: Definición de OP_JOINPROV3_PART IDL
+description: OP_JOINPROV3_PART definición de IDL
 ms.assetid: 1d8bbfcf-c08e-4bc8-b569-0496703f2d67
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
 ms.openlocfilehash: 81c8f53f55a8d5a284f969cbde539b0c34406903
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "104421566"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566905"
 ---
-# <a name="op_joinprov3_part-structure"></a>Estructura de OP_JOINPROV3_PART
+# <a name="op_joinprov3_part-structure"></a>OP_JOINPROV3_PART estructura
 
-Contiene información adicional que se usa para configurar un cliente unido a un dominio.
+Contiene información adicional utilizada para configurar un cliente unido a un dominio.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -26,16 +26,16 @@ typedef struct _OP_JOINPROV3_PART
 } OP_JOINPROV3_PART, *POP_JOINPROV3_PART;
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-### <a name="rid"></a>Libra
+### <a name="rid"></a>Librar
 
-Debe establecerse en el identificador relativo del SID de la cuenta de la máquina.
+Debe establecerse en el identificador relativo del SID de la cuenta de equipo.
 
 ### <a name="lpsid"></a>lpSid
 
-Debe establecerse en el SID de la cuenta de la máquina en forma de cadena.
+Debe establecerse en el SID de la cuenta de equipo en forma de cadena.
 
 ## <a name="see-also"></a>Vea también
 
-[**Definiciones IDL de unión a dominio sin conexión**](odj-idl.md)
+[**Definiciones de IDL de unión a un dominio sin conexión**](odj-idl.md)

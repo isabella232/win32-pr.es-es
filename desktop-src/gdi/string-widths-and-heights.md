@@ -4,12 +4,12 @@ ms.assetid: 0c1d9142-258a-447f-8950-8d684645383b
 title: Anchos y alturas de cadena
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d5a9ee485cbc163cc7cbb9dbd296f15db0e9e622f4be6ad8dcb251b583099f8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f57846d0588c518f445523361ae186e4b966bf93
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119778831"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566409"
 ---
 # <a name="string-widths-and-heights"></a>Anchos y alturas de cadena
 

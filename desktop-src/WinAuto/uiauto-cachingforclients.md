@@ -1,31 +1,31 @@
 ---
 title: Almacenar en Automatización de la interfaz de usuario propiedades y patrones de control
-description: Cuando se usa Microsoft Automatización de la interfaz de usuario, los clientes a menudo necesitan recuperar varias propiedades para varios elementos de automatización.
+description: Al usar Microsoft Automatización de la interfaz de usuario, los clientes a menudo necesitan recuperar varias propiedades para varios elementos de automatización.
 ms.assetid: 948b3bb9-75a9-4197-9680-e6fe7bb86feb
 keywords:
 - caching,Automatización de la interfaz de usuario propiedades
 - caching,properties
-- almacenamiento en caché, Automatización de la interfaz de usuario patrones de control
+- caching,Automatización de la interfaz de usuario de control
 - almacenamiento en caché, patrones de control
 - Automatización de la interfaz de usuario, propiedades de almacenamiento en caché
 - Automatización de la interfaz de usuario,property caching
 - clients,caching Automatización de la interfaz de usuario properties
 - clients,caching Automatización de la interfaz de usuario de control
 - Automatización de la interfaz de usuario, patrones de control de almacenamiento en caché
-- Automatización de la interfaz de usuario,control pattern caching
+- Automatización de la interfaz de usuario, almacenamiento en caché de patrones de control
 - patrones de control, almacenamiento en caché
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae14fb607dd66ab1a4ea99cd9836f2f74e5c863afef8465843d3ea174186ef29
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 69f75a7dc9491565fdfdc0ecc73808c2fb6a9d82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118324979"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567328"
 ---
 # <a name="caching-ui-automation-properties-and-control-patterns"></a>Almacenar en Automatización de la interfaz de usuario propiedades y patrones de control
 
-Cuando se usa Microsoft Automatización de la interfaz de usuario, los clientes a menudo necesitan recuperar varias propiedades para varios elementos de automatización. Un cliente podría recuperar propiedades individuales de un elemento a la vez mediante los métodos de recuperación de propiedades [**como IUIAutomationElement::CurrentName**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentname) o [**CurrentAccessKey**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentaccesskey). Sin embargo, este método es lento e ineficaz porque requiere una llamada entre procesos para cada propiedad que se va a recuperar. Para mejorar el rendimiento, los clientes pueden usar las funcionalidades de almacenamiento en caché (también denominada captura masiva) de Automatización de la interfaz de usuario. El almacenamiento en caché permite a un cliente recuperar todas las propiedades deseadas para todos los elementos deseados con una sola llamada al método. A continuación, el cliente puede recuperar las propiedades individuales de la memoria caché según sea necesario y puede obtener una nueva instantánea de la memoria caché periódicamente, generalmente en respuesta a eventos que significan cambios en la interfaz de usuario.
+Al usar Microsoft Automatización de la interfaz de usuario, los clientes a menudo necesitan recuperar varias propiedades para varios elementos de automatización. Un cliente podría recuperar propiedades individuales de un elemento a la vez mediante los métodos de recuperación de propiedades [**como IUIAutomationElement::CurrentName**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentname) o [**CurrentAccessKey**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentaccesskey). Sin embargo, este método es lento e ineficaz porque requiere una llamada entre procesos para cada propiedad que se va a recuperar. Para mejorar el rendimiento, los clientes pueden usar las funcionalidades de almacenamiento en caché (también denominada captura masiva) de Automatización de la interfaz de usuario. El almacenamiento en caché permite a un cliente recuperar todas las propiedades deseadas para todos los elementos deseados con una sola llamada a método. A continuación, el cliente puede recuperar las propiedades individuales de la memoria caché según sea necesario y puede obtener una nueva instantánea de la memoria caché periódicamente, generalmente en respuesta a eventos que significan cambios en la interfaz de usuario.
 
 La aplicación puede solicitar el almacenamiento en caché cuando recupera un elemento Automatización de la interfaz de usuario mediante un método, como [**IUIAutomation::ElementFromPointBuildCache,**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-elementfrompointbuildcache) [**IUIAutomationTreeWalker::GetFirstChildElementBuildCache**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtreewalker-getfirstchildelementbuildcache)o [**IUIAutomationElement::FindFirstBuildCache**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-findfirstbuildcache).
 
@@ -50,7 +50,7 @@ Para crear una solicitud de caché, empiece por usar el método [**IUIAutomation
 
 ### <a name="specifying-property-and-control-patterns-to-cache"></a>Especificar la propiedad y los patrones de control que se almacenarán en caché
 
-Puede especificar propiedades para almacenar en caché llamando a [**IUIAutomationCacheRequest::AddProperty**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-addproperty). Puede especificar patrones de control para almacenar en caché mediante una [**llamada a IUIAutomationCacheRequest::AddPattern**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-addpattern). Cuando se almacena en caché un patrón de control, sus propiedades no se almacenan automáticamente en caché; debe especificar las propiedades que desea almacenar en caché mediante **AddProperty**.
+Puede especificar propiedades para almacenar en caché llamando a [**IUIAutomationCacheRequest::AddProperty**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-addproperty). Puede especificar patrones de control para almacenar en caché mediante una [**llamada a IUIAutomationCacheRequest::AddPattern**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-addpattern). Cuando un patrón de control se almacena en caché, sus propiedades no se almacenan automáticamente en caché; debe especificar las propiedades que desea almacenar en caché mediante **AddProperty**.
 
 Puede recuperar una propiedad de patrón de control (por ejemplo, la propiedad Value del patrón de control [Value),](uiauto-implementingvalue.md) sin tener que recuperar todo el patrón de control en la memoria caché. Solo debe recuperar el patrón de control si necesita usar un método de patrón de control.
 
@@ -58,7 +58,7 @@ Puede recuperar una propiedad de patrón de control (por ejemplo, la propiedad V
 
 Puede especificar los elementos cuyas propiedades y patrones de control desea almacenar en caché estableciendo la propiedad [**IUIAutomationCacheRequest::TreeScope**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-get_treescope) antes de usar la solicitud. El ámbito es relativo a los elementos recuperados por el método al que se pasa la solicitud de caché. Por ejemplo, si establece solo [**TreeScope \_ Children**](/windows/desktop/api/UIAutomationClient/ne-uiautomationclient-treescope)y, a continuación, recupera un elemento Automatización de la interfaz de usuario, las propiedades y los patrones de control de los elementos secundarios de ese elemento se almacenan en caché, pero las propiedades y los patrones de control del propio elemento no se almacenan en caché. Para asegurarse de que el almacenamiento en caché se realiza para el propio elemento recuperado, debe incluir el elemento **\_ TreeScope** en la **propiedad IUIAutomationCacheRequest::TreeScope.** No es posible establecer el ámbito en **TreeScope \_ Parent** o **TreeScope \_ Ancestors**. Sin embargo, es posible almacenar en caché un elemento primario cuando se almacena un elemento secundario en caché; consulte la sección Recuperación de elementos primarios y secundarios almacenados en caché de este tema.
 
-La extensión del almacenamiento en caché también se ve afectada por la [**propiedad IUIAutomationCacheRequest::TreeFilter.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-get_treefilter) De forma predeterminada, el almacenamiento en caché solo se realiza para los elementos que aparecen en la vista de control del Automatización de la interfaz de usuario control. Sin embargo, puede cambiar esta propiedad para aplicar el almacenamiento en caché a todos los elementos o solo a los que aparecen en la vista de contenido.
+La extensión del almacenamiento en caché también se ve afectada por la [**propiedad IUIAutomationCacheRequest::TreeFilter.**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationcacherequest-get_treefilter) De forma predeterminada, el almacenamiento en caché solo se realiza para los elementos que aparecen en la vista de control Automatización de la interfaz de usuario árbol. Sin embargo, puede cambiar esta propiedad para aplicar el almacenamiento en caché a todos los elementos o solo a los que aparecen en la vista de contenido.
 
 ### <a name="strength-of-element-references"></a>Intensidad de las referencias de elementos
 

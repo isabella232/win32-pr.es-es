@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6a50efd9f214632ca6123f434f47fa4390b133bffc9a32bd94b12056a77188c9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d740bf3d315e79b57ca49eec59a5d5bd5088c621
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119670055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567100"
 ---
 # <a name="bytecolumnvalue-constructor"></a>Constructor ByteColumnValue
 
@@ -50,7 +50,7 @@ Dim instance As New ByteColumnValue()
 public ByteColumnValue()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

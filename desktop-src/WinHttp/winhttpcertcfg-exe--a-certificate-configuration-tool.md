@@ -5,17 +5,17 @@ title: WinHttpCertCfg.exe, una herramienta de configuración de certificados
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 21b8fbfadd6cf0282f63b26c8dd40d5ef96b5f54
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122466432"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568161"
 ---
 # <a name="winhttpcertcfgexe-a-certificate-configuration-tool"></a>WinHttpCertCfg.exe, una herramienta de configuración de certificados
 
 La herramienta de configuración de certificados de servicios [HTTP de Microsoft Windows (WinHTTP),](about-winhttp.md) "WinHttpCertCfg.exe", [](glossary.md) permite a los administradores instalar y configurar certificados de cliente en cualquier almacén de certificados al que pueda acceder la cuenta del Administrador de aplicaciones web de Internet Server (IWAM). La herramienta también elimina la necesidad de hacer algo especial en cuentas como la cuenta de IWAM para obtener acceso a los certificados al usar Active Server Pages (ASP).
 
-El Microsoft Management Console (MMC) permite a los administradores importar certificados de cliente a un equipo local. Sin embargo, la importación de un certificado no concede automáticamente acceso a la clave privada para otras cuentas. Esta clave privada es necesaria para la autenticación de certificados de cliente. La herramienta de configuración de certificados de Microsoft Windows HTTP Services (WinHTTP) proporciona la capacidad de conceder acceso a cuentas adicionales, como la cuenta de IWAM, cuando sea necesario.
+El Microsoft Management Console (MMC) permite a los administradores importar certificados de cliente en un equipo local. Sin embargo, la importación de un certificado no concede automáticamente acceso a la clave privada para otras cuentas. Esta clave privada es necesaria para la autenticación de certificados de cliente. La herramienta de configuración de certificados Windows HTTP Services (WinHTTP) de Microsoft proporciona la capacidad de conceder acceso a cuentas adicionales, como la cuenta de IWAM, cuando sea necesario.
 
 -   [Uso de la herramienta de configuración de certificados](#using-the-certificate-configuration-tool)
 -   [Ejemplos](#examples)
@@ -39,14 +39,14 @@ En la tabla siguiente se enumeran los parámetros de la herramienta de configura
 
 | Parámetro | Descripción | 
 |-----------|-------------|
-| -? | Muestra los datos de sintaxis. | 
+| -? | Muestra datos de sintaxis. | 
 | -i | Especifica que el certificado se va a importar desde un archivo de Exchange personal (PFX). Este parámetro debe ir seguido del nombre del archivo. Cuando se especifica este parámetro, también se deben especificar "-a" y "-c". | 
 | -g | Especifica que se concede acceso a una clave privada. Cuando se especifica este parámetro, también se deben especificar "-a", "-c" y "-s". | 
 | -r | Especifica que se quita el acceso para una clave privada. Cuando se especifica este parámetro, también se deben especificar "-a", "-c" y "-s". | 
 | -l | Especifica que se enumeran las cuentas con acceso a una clave privada. Cuando se especifica este parámetro, también se deben especificar "-c" y "-s". | 
-| -a | Especifica la cuenta de usuario en la máquina que se está configurando. Podría ser una máquina local o una cuenta de dominio, como "IWAM_TESTMACHINE", "TESTUSER" o "TESTDOMAIN\DOMAINUSER". | 
-| -c | Especifica la ubicación y el nombre del almacén <a href="glossary.md"><em>de certificados.</em></a> Use "LOCAL_MACHINE" o "CURRENT_USER" para designar qué rama del Registro se va a usar para la ubicación. El <em>almacén de</em> certificados puede ser cualquier instalado en la máquina. Los ejemplos de nombres típicos son "MY", "Root" y "TrustedPeople". La ubicación y el nombre del almacén <em>de certificados</em> se separan con una barra diagonal hacia atrás, por ejemplo, "LOCAL_MACHINE\Root".<blockquote>[!Note]<br />Aunque la rama "CURRENT_USER" del registro se puede especificar con este parámetro, la extensión del acceso a las claves <a href="glossary.md"><em></em></a> privadas está pensada principalmente para los certificados instalados en un almacén de certificados de equipo local al que pueden tener acceso varios usuarios.</blockquote><br /> | 
-| -S | Especifica una cadena de búsqueda que no tiene en cuenta las mayúsculas y minúsculas para buscar el primer certificado enumerado con un nombre de sujeto que contiene esta subcadena. | 
+| -a | Especifica la cuenta de usuario en la máquina que se va a configurar. Podría ser una máquina local o una cuenta de dominio, como "IWAM_TESTMACHINE", "TESTUSER" o "TESTDOMAIN\DOMAINUSER". | 
+| -c | Especifica la ubicación y el nombre del almacén <a href="glossary.md"><em>de certificados.</em></a> Use "LOCAL_MACHINE" o "CURRENT_USER" para designar qué rama del Registro se va a usar para la ubicación. El <em>almacén de</em> certificados puede ser cualquier instalado en el equipo. Los ejemplos de nombres típicos son "MY", "Root" y "TrustedPeople". La ubicación y el nombre del almacén <em>de certificados</em> se separan con una barra diagonal hacia atrás, por ejemplo, "LOCAL_MACHINE\Root".<blockquote>[!Note]<br />Aunque la rama "CURRENT_USER" del registro se puede especificar con este parámetro, la extensión del acceso a las <a href="glossary.md"><em></em></a> claves privadas está pensada principalmente para los certificados instalados en un almacén de certificados de equipo local al que pueden acceder varios usuarios.</blockquote><br /> | 
+| -S | Especifica una cadena de búsqueda sin mayúsculas y minúsculas para buscar el primer certificado enumerado con un nombre de sujeto que contenga esta subcadena. | 
 | -p | Especifica una contraseña que se usa para importar el certificado y la clave privada. Esto solo se usa con la opción de importación. | 
 
 
@@ -63,11 +63,11 @@ En la tabla siguiente se enumeran los parámetros de la herramienta de configura
 
 En los ejemplos siguientes se muestran algunas de las formas en que se puede usar la herramienta de configuración.
 
-1.  Este comando enumera las cuentas que tienen acceso a la clave privada [](glossary.md) para el certificado "MyCertificate" en el almacén de certificados "Raíz" de la rama LOCAL \_ MACHINE del registro.
+1.  Este comando enumera las cuentas que tienen acceso a la clave privada [](glossary.md) para el certificado "MyCertificate" en el almacén de certificados "Root" de la rama LOCAL \_ MACHINE del registro.
 
-    **winhttpcertcfg -l -c RAÍZ DE MÁQUINA LOCAL \_ \\ -s MyCertificate**
+    **winhttpcertcfg -l -c LOCAL \_ MACHINE \\ Root -s MyCertificate**
 
-2.  Este comando concede acceso a la clave privada del certificado [](glossary.md) "MyCertificate" en el almacén de certificados "My" para la cuenta TESTUSER.
+2.  Este comando concede acceso a la clave privada del certificado [](glossary.md) "MyCertificate" en el almacén de certificados "My" de la cuenta TESTUSER.
 
     **winhttpcertcfg -g -c LOCAL \_ MACHINE \\ My -s MyCertificate -a TESTUSER**
 

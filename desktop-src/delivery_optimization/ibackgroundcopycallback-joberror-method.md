@@ -17,12 +17,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 307ab18a0f956e5a2f4f14e9782f90b8ec6bff723da04aa9866566d95c53dca7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0122f5777303506be5fd81d0966b00f828bf2073
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118543137"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566772"
 ---
 # <a name="ibackgroundcopycallbackjoberror-method"></a>IBackgroundCopyCallback::JobError (método)
 
@@ -60,9 +60,9 @@ Contiene información de error, como el archivo que se está procesando en el mo
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método debe devolver **S_OK**; De lo contrario, do continúa con la llamada a este **método hasta S_OK** se devuelve. Por motivos de rendimiento, debe limitar el número de veces que devuelve un valor distinto de **S_OK** varias veces. Como alternativa a devolver un código de error, considere la posibilidad de devolver **siempre S_OK** y controlar el error internamente. El intervalo en el que se llama a este método es arbitrario.
+Este método debe devolver **S_OK**; De lo contrario, do continúa con la llamada a este **método hasta S_OK** se devuelve. Por motivos de rendimiento, debe limitar el número de veces que devuelve un valor distinto de **S_OK** varias veces. Como alternativa a la devolución de un código de error, considere la posibilidad de devolver **siempre S_OK** y controlar el error internamente. El intervalo en el que se llama a este método es arbitrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Después de determinar la causa del error, realice una de las siguientes opciones:
 
@@ -78,19 +78,19 @@ DO devuelve BG_ERROR_CONTEXT_REMOTE_FILE si el trabajo ha producido un error HTT
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | Archivo DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyCallback se define como 97EA99C7-0186-4AD4-8DF9-C5B4E0ED6B22<br/>          |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

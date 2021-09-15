@@ -4,12 +4,12 @@ ms.assetid: 9e499161-d5fb-4a64-ac36-f82031a3a7c9
 title: Función QueryContextAttributes (Negotiate, Sspi.h)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: 8fcc78181a74d048db389455ed5ab145f22ae004cc256e584b634c07b82a0423
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e46d49a8e1219c35073df96193612b2e3497b87d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118920113"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568225"
 ---
 # <a name="querycontextattributes-negotiate-function"></a>Función QueryContextAttributes (Negotiate)
 
@@ -57,7 +57,7 @@ Especifica el atributo del contexto que se va a devolver. Este parámetro puede 
 | <span id="SECPKG_ATTR_KEY_INFO"></span><span id="secpkg_attr_key_info"></span><dl> <dt>**SECPKG \_ ATTR \_ KEY \_ INFO**</dt> <dt>5</dt> </dl>                                                    | El *parámetro pBuffer* contiene un puntero a una [**estructura SecPkgContext \_ KeyInfo.**](/windows/win32/api/sspi/ns-sspi-secpkgcontext_keyinfoa)<br/> Consulta información sobre las claves usadas en un contexto [*de seguridad*](../secgloss/s-gly.md).<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | <span id="SECPKG_ATTR_LAST_CLIENT_TOKEN_STATUS"></span><span id="secpkg_attr_last_client_token_status"></span><dl> <dt>**SECPKG \_ ATTR \_ LAST CLIENT TOKEN \_ \_ \_ STATUS**</dt> <dt>30</dt> </dl> | El *parámetro pBuffer* contiene un puntero a una estructura [**SecPkgContext \_ LastClientTokenStatus**](/windows/win32/api/sspi/ns-sspi-secpkgcontext_lastclienttokenstatus) que especifica si el token de la llamada más reciente a la función [**InitializeSecurityContext**](initializesecuritycontext--general.md) es el último token del cliente.<br/> **Windows Server 2008, Windows Vista, Windows Server 2003 y Windows XP:** Este valor no se admite.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | <span id="SECPKG_ATTR_LIFESPAN"></span><span id="secpkg_attr_lifespan"></span><dl> <dt>**SECPKG \_ ATTR \_ LIFESPAN**</dt> <dt>2</dt> </dl>                                                     | El *parámetro pBuffer* contiene un puntero a una [**estructura De vida de \_ SecPkgContext.**](/windows/win32/api/sspi/ns-sspi-secpkgcontext_lifespan)<br/> Consulta el intervalo de vida del contexto.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| <span id="SECPKG_ATTR_LOCAL_CRED"></span><span id="secpkg_attr_local_cred"></span><dl> <dt>**SECPKG \_ ATTR \_ LOCAL \_ CRED**</dt> </dl>                                                                                                     | El *parámetro pBuffer* contiene un puntero a una **estructura SecPkgContext \_ LocalCredentialInfo.** (obsoleto)<br/> Reemplazado por SECPKG \_ ATTR \_ LOCAL CERT \_ \_ CONTEXT.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| <span id="SECPKG_ATTR_LOCAL_CRED"></span><span id="secpkg_attr_local_cred"></span><dl> <dt>**SECPKG \_ ATTR \_ LOCAL \_ CRED**</dt> </dl>                                                                                                     | El *parámetro pBuffer* contiene un puntero a una estructura **SecPkgContext \_ LocalCredentialInfo.** (obsoleto)<br/> Reemplazado por SECPKG \_ ATTR \_ LOCAL CERT \_ \_ CONTEXT.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | <span id="SECPKG_ATTR_NAMES"></span><span id="secpkg_attr_names"></span><dl> <dt>**SECPKG \_ NOMBRES \_ DE ATTR**</dt> <dt>1</dt> </dl>                                                              | El *parámetro pBuffer* contiene un puntero a una [**estructura SecPkgContext \_ Names.**](/windows/win32/api/sspi/ns-sspi-secpkgcontext_namesa)<br/> Consulta el nombre asociado al contexto.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | <span id="SECPKG_ATTR_NATIVE_NAMES"></span><span id="secpkg_attr_native_names"></span><dl> <dt>**SECPKG \_ NOMBRES \_ NATIVOS \_ DE ATTR**</dt> <dt>13</dt> </dl>                                       | El *parámetro pBuffer* contiene un puntero a una [**estructura SecPkgContext \_ NativeNames.**](https://docs.microsoft.com/windows/win32/api/sspi/ns-sspi-_secpkgcontext_nativenamesa)<br/> Devuelve el nombre principal (CNAME) del vale de salida.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | <span id="SECPKG_ATTR_NEGOTIATION_INFO"></span><span id="secpkg_attr_negotiation_info"></span><dl> <dt>**SECPKG \_ INFORMACIÓN DE \_ NEGOCIACIÓN \_ DE ATTR**</dt> <dt>12</dt> </dl>                           | El *parámetro pBuffer* contiene un puntero a una [**estructura \_ NegotiationInfo de SecPkgContext.**](/windows/win32/api/sspi/ns-sspi-secpkgcontext_negotiationinfoa)<br/> Devuelve información sobre el [*paquete de seguridad que*](../secgloss/s-gly.md) se va a usar con el proceso de negociación y el estado actual de la negociación para el uso de ese paquete.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -101,21 +101,21 @@ Una vez leído el valor SECPKG ATTR REMOTE CERT CONTEXT o \_ \_ \_ \_ SECPKG \_ 
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                   |
-| Header<br/>                   | <dl> <dt>Sspi.h (incluir Security.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sspi.h (incluir Security.h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Secur32.lib</dt> </dl>                 |
 | Archivo DLL<br/>                      | <dl> <dt>Secur32.dll</dt> </dl>                 |
 | Nombres Unicode y ANSI<br/>   | **QueryContextAttributesW** (Unicode) y **QueryContextAttributesA** (ANSI)<br/>                |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [Funciones de SSPI](authentication-functions.md#sspi-functions)
 </dt> <dt>
 
-[**CONTEXTO \_ DE CERTIFICADO**](/windows/win32/api/wincrypt/ns-wincrypt-cert_context)
+[**CONTEXTO \_ DE CERT**](/windows/win32/api/wincrypt/ns-wincrypt-cert_context)
 </dt> <dt>
 
 [**FreeContextBuffer**](/windows/win32/api/sspi/nf-sspi-freecontextbuffer)
@@ -139,7 +139,7 @@ Una vez leído el valor SECPKG ATTR REMOTE CERT CONTEXT o \_ \_ \_ \_ SECPKG \_ 
 [**Duración de \_ SecPkgContext**](/windows/win32/api/sspi/ns-sspi-secpkgcontext_lifespan)
 </dt> <dt>
 
-[**Nombres de \_ SecPkgContext**](/windows/win32/api/sspi/ns-sspi-secpkgcontext_namesa)
+[**Nombres \_ secPkgContext**](/windows/win32/api/sspi/ns-sspi-secpkgcontext_namesa)
 </dt> <dt>
 
 [**Tamaños de \_ SecPkgContext**](/windows/win32/api/sspi/ns-sspi-secpkgcontext_sizes)

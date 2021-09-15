@@ -14,11 +14,11 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 2d98e80ba691422b0a197b732dbc5fc762a25562
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122631863"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568381"
 ---
 # <a name="warning-pragma-directive"></a>warning pragma (directiva)
 
@@ -96,7 +96,7 @@ Directiva Pragma que modifica el comportamiento de los mensajes de advertencia d
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Puede especificar cualquier número de cambios de comportamiento de advertencia distintos dentro de la misma pragma de advertencia separando los cambios con punto y coma.
 
@@ -126,7 +126,7 @@ El ejemplo anterior es funcionalmente equivalente al siguiente:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

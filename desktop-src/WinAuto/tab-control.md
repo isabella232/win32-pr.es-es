@@ -4,12 +4,12 @@ description: Un control de pestaña define varias páginas para la misma área d
 ms.assetid: 664dd109-3c4a-4106-9b92-e10ec5a33463
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 78fe3216194da590b0c0802343afc41b1f7765c13d194e533163f9af2c22b287
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8cc8381a668701446e06df81694941ece9f5f259
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119505665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567340"
 ---
 # <a name="tab-control-msaa-ui-element-reference"></a>Control Tab (Referencia de elementos de la interfaz de usuario de MSAA)
 

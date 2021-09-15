@@ -4,16 +4,16 @@ ms.assetid: 87a6d3bb-3827-4a84-ba2d-c7bd2dd73eb2
 title: Ejemplo de programación de multidifusión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd212efb2a6e3e6876b15ee76865656603a3a60d42287cd816007ddaca16adff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cde6b8ab9ac0dd6b4fc16ae36bec4a4e939466b0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119858235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568128"
 ---
 # <a name="multicast-programming-sample"></a>Ejemplo de programación de multidifusión
 
-El código de ejemplo siguiente muestra cómo incluir la funcionalidad de multidifusión en una aplicación Windows Sockets mediante las opciones de socket.
+En el código de ejemplo siguiente se muestra cómo incluir la funcionalidad de multidifusión en una aplicación Windows Sockets mediante las opciones de socket.
 
 
 ```C++

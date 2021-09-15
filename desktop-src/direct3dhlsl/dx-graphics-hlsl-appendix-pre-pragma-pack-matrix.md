@@ -14,11 +14,11 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 87658a9ffcf2d8715e2caa581c7127301784980c
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122625761"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568384"
 ---
 # <a name="pack_matrix-pragma-directive"></a>directiva \_ pragma de matriz de paquetes
 
@@ -91,7 +91,7 @@ En el ejemplo siguiente se establece la alineación de empaquetado de matriz en 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

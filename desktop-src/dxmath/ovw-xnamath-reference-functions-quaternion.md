@@ -4,12 +4,12 @@ ms.assetid: 2d397c98-d0cd-08e0-6104-cca31bb6bd11
 title: Funciones de cuaternión de la biblioteca DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 333721cee48083156a8fc4ba31c6a716d837e431ed6d3a6dbb88958672a1c1dd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7b085e336b19c9258a113b0442f339118f802146
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120117545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567145"
 ---
 # <a name="directxmath-library-quaternion-functions"></a>Funciones de cuaternión de la biblioteca DirectXMath
 
@@ -43,7 +43,7 @@ Enumera las funciones de cuaternión proporcionadas por DirectXMath.
 | [**XMQuaternionRotationAxis**](/windows/win32/api/directxmath/nf-directxmath-xmquaternionrotationaxis)<br/>                                     | Calcula un cuaternión de rotación sobre un eje.<br/>                                                        |
 | [**XMQuaternionRotationMatrix**](/windows/win32/api/directxmath/nf-directxmath-xmquaternionrotationmatrix)<br/>                                 | Calcula un cuaternión de rotación a partir de una matriz de rotación.<br/>                                               |
 | [**XMQuaternionRotationNormal**](/windows/win32/api/directxmath/nf-directxmath-xmquaternionrotationnormal)<br/>                                 | Calcula el cuaternión de rotación sobre un vector normal.<br/>                                              |
-| [**XMQuaternionRotationRollPitchYaw**](/windows/win32/api/directxmath/nf-directxmath-xmquaternionrotationrollpitchyaw)<br/>                     | Calcula un cuaternión de rotación basado en el paso, la guia y el lanzamiento (ángulos de Euler).<br/>                     |
+| [**XMQuaternionRotationRollPitchYaw**](/windows/win32/api/directxmath/nf-directxmath-xmquaternionrotationrollpitchyaw)<br/>                     | Calcula un cuaternión de rotación basado en el paso, la yaw y el lanzamiento (ángulos de Euler).<br/>                     |
 | [**XMQuaternionRotationRollPitchYawFromVector**](/windows/win32/api/directxmath/nf-directxmath-xmquaternionrotationrollpitchyawfromvector)<br/> | Calcula un cuaternión de rotación basado en un vector que contiene los ángulos de Euler (inclinación, yaw y roll).<br/> |
 | [**XMQuaternionSlerp**](/windows/win32/api/directxmath/nf-directxmath-xmquaternionslerp)<br/>                                                   | Interpola entre dos cuaterniones de unidad, mediante la interpolación lineal esférica.<br/>                     |
 | [**XMQuaternionSlerpV**](/windows/win32/api/directxmath/nf-directxmath-xmquaternionslerpv)<br/>                                                 | Interpola entre dos cuaterniones de unidad, mediante la interpolación lineal esférica.<br/>                     |

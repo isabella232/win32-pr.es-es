@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e201c26ce1076b942d614e90f55a1ddacf88b24fa41154d448ca471c3d4fed23
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2d5d137829b605b577559ddd8e3bce03dd5a8234
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118765011"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568256"
 ---
 # <a name="jet_objectlist-class"></a>JET_OBJECTLIST clase
 
@@ -43,7 +43,7 @@ Información sobre una tabla temporal que contiene información sobre todas las 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

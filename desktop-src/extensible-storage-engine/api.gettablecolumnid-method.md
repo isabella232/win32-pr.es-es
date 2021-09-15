@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fd63b7ef62da90935d8df5c8367795fc20ea1a26cc876272ab04303f86da4638
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec91b014401709b6312b3363d8dae9e7da3d200e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117903478"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566560"
 ---
 # <a name="apigettablecolumnid-method"></a>Método Api.GetTableColumnid
 

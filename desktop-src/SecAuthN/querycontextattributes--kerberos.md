@@ -4,12 +4,12 @@ ms.assetid: 8e80a9ed-0631-4932-aacc-ba3badcbd0a5
 title: Función QueryContextAttributes (Kerberos, Sspi.h)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: 5a6504b214ad5d2655616efeb3a5edd5db25c44275c7d03d3b640e1e17634c9f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c6007cb725a14ffa84190c03687de89e6bca1c96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118920170"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568229"
 ---
 # <a name="querycontextattributes-kerberos-function"></a>Función QueryContextAttributes (Kerberos)
 
@@ -101,21 +101,21 @@ Una vez leído el valor SECPKG ATTR REMOTE CERT CONTEXT o \_ \_ \_ \_ SECPKG \_ 
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                   |
-| Header<br/>                   | <dl> <dt>Sspi.h (incluir Security.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Sspi.h (incluir Security.h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Secur32.lib</dt> </dl>                 |
 | Archivo DLL<br/>                      | <dl> <dt>Secur32.dll</dt> </dl>                 |
 | Nombres Unicode y ANSI<br/>   | **QueryContextAttributesW** (Unicode) y **QueryContextAttributesA** (ANSI)<br/>                |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Funciones de SSPI](authentication-functions.md#sspi-functions)
+[Funciones SSPI](authentication-functions.md#sspi-functions)
 </dt> <dt>
 
-[**CONTEXTO \_ DE CERT**](/windows/win32/api/wincrypt/ns-wincrypt-cert_context)
+[**CONTEXTO \_ DE CERTIFICADO**](/windows/win32/api/wincrypt/ns-wincrypt-cert_context)
 </dt> <dt>
 
 [**FreeContextBuffer**](/windows/win32/api/sspi/nf-sspi-freecontextbuffer)
@@ -139,7 +139,7 @@ Una vez leído el valor SECPKG ATTR REMOTE CERT CONTEXT o \_ \_ \_ \_ SECPKG \_ 
 [**Duración de \_ SecPkgContext**](/windows/win32/api/sspi/ns-sspi-secpkgcontext_lifespan)
 </dt> <dt>
 
-[**Nombres \_ secPkgContext**](/windows/win32/api/sspi/ns-sspi-secpkgcontext_namesa)
+[**Nombres de \_ SecPkgContext**](/windows/win32/api/sspi/ns-sspi-secpkgcontext_namesa)
 </dt> <dt>
 
 [**Tamaños de \_ SecPkgContext**](/windows/win32/api/sspi/ns-sspi-secpkgcontext_sizes)

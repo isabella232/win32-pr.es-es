@@ -4,12 +4,12 @@ description: En esta sección se describen los objetos device y device-context d
 ms.assetid: 61d1ea92-e657-4931-8475-74a3123c72f7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e77cfd255c43cc902f2583fe22575bef2567609f43b6f893984e99dec713532
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8dda010b3801952e90514fac6307556f8f6fbaff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119851125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566680"
 ---
 # <a name="devices-direct3d-11-graphics"></a>Dispositivos (gráficos de Direct3D 11)
 
@@ -26,7 +26,7 @@ Los objetos creados a partir de un dispositivo no se pueden usar directamente co
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Introducción a un dispositivo en Direct3D 11](overviews-direct3d-11-devices-intro.md)<br/>                                                                 | El modelo de objetos de Direct3D 11 separa la funcionalidad de creación y representación de recursos en un dispositivo y uno o varios contextos. esta separación está diseñada para facilitar el multithreading.<br/>                                                  |
 | [Capas de software](overviews-direct3d-11-devices-layers.md)<br/>                                                                                        | El entorno de ejecución de Direct3D 11 se construye con capas, empezando por la funcionalidad básica en el núcleo y creando funcionalidades opcionales y de ayuda para el desarrollador en capas externas. En esta sección se describe la funcionalidad de cada capa.<br/> |
-| [Limitaciones al crear dispositivos WARP y de referencia](overviews-direct3d-11-devices-limitations.md)<br/>                                                   | Existen algunas limitaciones para crear dispositivos WARP y Reference en Direct3D 10.1 y Direct3D 11.0. En este tema se de abordan esas limitaciones.<br/>                                                                                              |
+| [Limitaciones al crear dispositivos DE REFERENCIA y WARP](overviews-direct3d-11-devices-limitations.md)<br/>                                                   | Existen algunas limitaciones para crear dispositivos WARP y Reference en Direct3D 10.1 y Direct3D 11.0. En este tema se de abordan esas limitaciones.<br/>                                                                                              |
 | [Direct3D 11 en hardware de nivel inferior](overviews-direct3d-11-devices-downlevel.md)<br/>                                                                   | En esta sección se describe cómo Direct3D 11 está diseñado para admitir hardware nuevo y existente, de DirectX 9 a DirectX 11.<br/>                                                                                                             |
 | [Uso de datos de características de Direct3D 11 para complementar los niveles de características de Direct3D](using-direct3d-optional-features-to-supplement-direct3d-feature-levels.md)<br/> | Descubra cómo comprobar la compatibilidad del dispositivo con características opcionales, incluidas las características que se agregaron en versiones recientes de Windows.<br/>                                                                                                           |
 

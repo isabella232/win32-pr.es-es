@@ -4,12 +4,12 @@ description: Un elemento de menú representa un elemento determinado en una barr
 ms.assetid: 330782d6-4293-4e65-ab49-a616d133d273
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1b90162f386314ac495ed138ccf4d180d2f53b8b1e6126287c79a1d75d40be2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0cb6621a14927cc4dc9af9f3384157e60ce6570d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119644505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567413"
 ---
 # <a name="menu-item-msaa-ui-element-reference"></a>Elemento de menú (Referencia del elemento de interfaz de usuario de MSAA)
 
@@ -64,7 +64,7 @@ Un elemento de menú admite las siguientes [**propiedades IAccessible:**](/windo
 
 ## <a name="notes"></a>Notas
 
--   Cuando se usa en un elemento de menú, [**accDoDefaultAction**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accdodefaultaction) devuelve S OK, pero no puede realizar la acción si el carácter usado en la clave de acceso es ?, !, @, o cualquier otro carácter que requiera la tecla MAYÚS u otra tecla \_ modificadora. Esto también sucede en teclados internacionales con un carácter de tecla de acceso que requiere que se presione la tecla ALT GR.
+-   Cuando se usa en un elemento de menú, [**accDoDefaultAction**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accdodefaultaction) devuelve S OK pero no puede realizar la acción si el carácter usado en la clave de acceso es ?, !, @, o cualquier otro carácter que requiera la tecla MAYÚS u otra tecla \_ modificadora. Esto también sucede en teclados internacionales con un carácter de tecla de acceso que requiere que se presione la tecla ALT GR.
 -   El [**método accSelect**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accselect) con [**SELFACTIVE \_ TAKEFOCUS**](selflag.md) no hace que un elemento de menú abra o cierre un menú emergente. Los clientes usan [**el método accDoDefaultAction**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accdodefaultaction) para abrir o cerrar un menú emergente.
 -   Un elemento de barra de menús que no muestra  un menú emergente devuelve "Aplicación" para la propiedad Nombre en lugar del nombre del elemento de menú.
 

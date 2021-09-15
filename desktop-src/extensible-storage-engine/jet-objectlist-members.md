@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 55103765
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 1b91f29bdfe3688cd0ce732237d73cb6c2bd21987a61b37fa64c23649309583a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 00151423255a6b937a74fe4cd6cc6fcec0b484b8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118766001"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568253"
 ---
 # <a name="jet_objectlist-members"></a>JET_OBJECTLIST miembros
 
@@ -94,7 +94,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335218(v=exchg.10).md">tableid</a></td>
-<td>Obtiene el tableid de la tabla temporal. Debe cerrarse cuando la tabla ya no sea necesaria.</td>
+<td>Obtiene tableid de la tabla temporal. Debe cerrarse cuando la tabla ya no sea necesaria.</td>
 </tr>
 </tbody>
 </table>
@@ -141,7 +141,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335216(v=exchg.10).md">ToString</a></td>
-<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el objeto <a href="dn335206(v=exchg.10).md">JET_OBJECTLIST</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
+<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el objeto <a href="dn335206(v=exchg.10).md">JET_OBJECTLIST</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>

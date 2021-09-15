@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8bd0dd2872ac22b2ab8c7d7e5b98857d223e38abd286e0d9554ecbea1f621855
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e690dbb2a4b82698440b3be3c483bb46b2eca8e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118983435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567132"
 ---
 # <a name="apijetgetcolumninfo-method-jet_sesid-jet_dbid-string-string-jet_columnbase"></a>Método Api.JetGetColumnInfo (JET_SESID, JET_DBID, String, String, JET_COLUMNBASE)
 
@@ -94,16 +94,16 @@ public static void JetGetColumnInfo(
 
 <!-- end list -->
 
-  - columnbase  
+  - base de columna  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNBASE](./jet-columnbase-class.md)  
     
-    Se rellena con información sobre las columnas de la tabla.
+    Rellenado con información sobre las columnas de la tabla.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

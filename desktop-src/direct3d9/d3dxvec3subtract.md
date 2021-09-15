@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: bdc944b05595a2a55c4960d7ab27deea083a5b92b80b8815b3613a074e78b9bb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 17f41f2fd133db1064e2ba2778eacc139bab01ca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120096085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566644"
 ---
 # <a name="d3dxvec3subtract-function"></a>Función D3DXVec3Subtract
 
@@ -75,7 +75,7 @@ Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
 Puntero a una [**estructura D3DXVECTOR3**](d3dxvector3.md) que es la diferencia de dos vectores.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXVec3Subtract** se puede usar como parámetro para otra función.
 

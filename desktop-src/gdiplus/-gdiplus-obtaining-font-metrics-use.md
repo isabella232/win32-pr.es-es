@@ -1,32 +1,32 @@
 ---
-description: 'La clase FontFamily proporciona los métodos siguientes que recuperan varias métricas para una combinación determinada de familia y estilo:'
+description: 'La clase FontFamily proporciona los métodos siguientes que recuperan varias métricas para una combinación de familia o estilo determinada:'
 ms.assetid: 3be485d0-9e0d-43e0-813e-668102ebc010
-title: Obtener métricas de fuente
+title: Obtención de métricas de fuente
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 800fcee7dd1729a6fd5e59bb5dd636af89670776
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104082103"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567629"
 ---
-# <a name="obtaining-font-metrics"></a>Obtener métricas de fuente
+# <a name="obtaining-font-metrics"></a>Obtención de métricas de fuente
 
-La clase [**FontFamily**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) proporciona los métodos siguientes que recuperan varias métricas para una combinación determinada de familia y estilo:
+La [**clase FontFamily proporciona**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) los métodos siguientes que recuperan varias métricas para una combinación de familia y estilo determinada:
 
--   [**FontFamily:: GetEmHeight**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-getemheight)(FontStyle)
--   [**FontFamily:: GetCellAscent**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-getcellascent)(FontStyle)
--   [**FontFamily:: GetCellDescent**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-getcelldescent)(FontStyle)
--   [**FontFamily:: GetLineSpacing**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-getlinespacing)(FontStyle)
+-   [**FontFamily::GetEmHeight**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-getemheight)(FontStyle)
+-   [**FontFamily::GetCellAscent**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-getcellascent)(FontStyle)
+-   [**FontFamily::GetCellDescent**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-getcelldescent)(FontStyle)
+-   [**FontFamily::GetLineSpacing**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-fontfamily-getlinespacing)(FontStyle)
 
-Los números devueltos por estos métodos están en unidades de diseño de fuente, por lo que son independientes del tamaño y las unidades de un objeto de [**fuente**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-font) determinado.
+Los números devueltos por estos métodos están en unidades de diseño de fuentes, por lo que son independientes del tamaño y las unidades de un objeto [**Font**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-font) determinado.
 
-En la ilustración siguiente se muestra el ascenso, el descenso y el interlineado.
+En la ilustración siguiente se muestra el acentamiento, el descenso y el espaciado de línea.
 
-![diagrama de dos caracteres en líneas adyacentes, mostrando el ascenso de celda, el descenso de celda y el espaciado de líneas](images/fontstext7a.png)
+![diagrama de dos caracteres en líneas adyacentes, que muestra el acentamiento de celdas, el descenso de celdas y el espaciado de línea](images/fontstext7a.png)
 
-En el ejemplo siguiente se muestran las métricas para el estilo normal de la familia de fuentes Arial. El código también crea un objeto de [**fuente**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-font) (basado en la familia Arial) con un tamaño de 16 píxeles y muestra las métricas (en píxeles) de ese objeto de **fuente** concreto.
+En el ejemplo siguiente se muestran las métricas del estilo normal de la familia de fuentes de Arial. El código también crea un objeto [**Font**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-font) (basado en la familia Arial) con un tamaño de 16 píxeles y muestra las métricas (en píxeles) de ese objeto **Font** determinado.
 
 
 ```
@@ -128,15 +128,15 @@ graphics.DrawString(infoString, -1, &font, pointF, &solidBrush);
 
 En la ilustración siguiente se muestra la salida del código anterior.
 
-![captura de pantalla de una ventana con texto que indica el tamaño y el alto de la fuente, y el ascenso, el descenso y el espaciado de líneas](images/fontstext8.png)
+![captura de pantalla de una ventana con texto que indica el tamaño y el alto de la fuente, así como el aumento, el descenso y el espaciado de línea](images/fontstext8.png)
 
-Tenga en cuenta las dos primeras líneas de la salida de la ilustración anterior. El objeto [**Font**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-font) devuelve un tamaño de 16 y el objeto [**FontFamily**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) devuelve un alto em de 2.048. Estos dos números (16 y 2.048) son la clave para la conversión entre las unidades de diseño de fuente y las unidades (en este caso píxeles) del objeto de **fuente** .
+Observe las dos primeras líneas de salida de la ilustración anterior. El [**objeto Font**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-font) devuelve un tamaño de 16 y el objeto [**FontFamily**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-fontfamily) devuelve una altura em de 2048. Estos dos números (16 y 2048) son la clave para convertir entre las unidades de diseño de fuente y las unidades (en este caso, píxeles) del objeto **Font.**
 
-Por ejemplo, puede convertir el ascenso de las unidades de diseño a píxeles de la siguiente manera:
+Por ejemplo, puede convertir la subida de unidades de diseño a píxeles como se muestra a continuación:
 
-![ecuación que multiplica las unidades de diseño 1854 por 16 píxeles divididos entre las 2048 unidades de diseño, igual a 14,484375 píxeles](images/fontstext9.png)
+![ecuación que multiplica 1854 unidades de diseño por 16 píxeles divididas por unidades de diseño de 2048, igual a 14,484375 píxeles](images/fontstext9.png)
 
-El código anterior coloca el texto verticalmente estableciendo el miembro de datos *y* de un objeto [**PointF**](/windows/desktop/api/gdiplustypes/nl-gdiplustypes-pointf) . La coordenada y aumenta en `font.GetHeight(0.0f)` cada línea de texto nueva. El método [**Font:: getHeight**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-font-getheight(inreal)) de un objeto [**Font**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-font) devuelve el interlineado (en píxeles) de ese objeto **Font** determinado. En este ejemplo, el número devuelto por **Font:: getHeight** es 18,398438. Tenga en cuenta que esto es lo mismo que el número obtenido convirtiendo la métrica de espaciado de línea en píxeles.
+El código anterior coloca el texto verticalmente estableciendo el miembro de datos *y* de un [**objeto PointF.**](/windows/desktop/api/gdiplustypes/nl-gdiplustypes-pointf) La coordenada y aumenta en para `font.GetHeight(0.0f)` cada nueva línea de texto. El [**método Font::GetHeight**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-font-getheight(inreal)) de un [**objeto Font**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-font) devuelve el espaciado de línea (en píxeles) para ese objeto **Font** determinado. En este ejemplo, el número devuelto por **Font::GetHeight** es 18.398438. Tenga en cuenta que esto es igual que el número obtenido al convertir la métrica de espaciado de línea en píxeles.
 
  
 

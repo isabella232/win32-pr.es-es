@@ -14,16 +14,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: 39672bff2e3a7194f7d674b2184d5de8c9c3c601e4a7777ef31ace80f5f9f327
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0f328565c80350a05cbfb23f178ea3580586f326
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119047123"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566784"
 ---
 # <a name="do_download_range-structure"></a>DO_DOWNLOAD_RANGE estructura
 
-La **DO_DOWNLOAD_RANGE** estructura identifica un único intervalo de bytes que se van a descargar de un archivo. La **DO_DOWNLOAD_RANGE** se incluye dentro **de DO_DOWNLOAD_RANGES_INFO** estructura para proporcionar una matriz de intervalos para descargar.
+La **DO_DOWNLOAD_RANGE** estructura identifica un único intervalo de bytes para descargar de un archivo. La **DO_DOWNLOAD_RANGE** se incluye dentro **de DO_DOWNLOAD_RANGES_INFO** estructura para proporcionar una matriz de intervalos para descargar.
 
 ## <a name="syntax"></a>Sintaxis
 ```cpp
@@ -34,7 +34,7 @@ typedef struct _DO_DOWNLOAD_RANGE
 } DO_DOWNLOAD_RANGE;
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `Offset`
 

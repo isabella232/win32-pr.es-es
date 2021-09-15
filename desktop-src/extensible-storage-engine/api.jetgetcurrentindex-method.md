@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 920c65f623d71656331a72ea0ab42d507c3498f585d93e903fa677866d92a1e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bacc6973b1a105e128533a1116abdeb4c6cfafa4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119042613"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567128"
 ---
 # <a name="apijetgetcurrentindex-method"></a>Método Api.JetGetCurrentIndex
 
@@ -93,7 +93,7 @@ public static void JetGetCurrentIndex(
     
     Longitud máxima del nombre del índice. Los nombres de índice no tienen más [de nameMost](./systemparameters.namemost-field.md) caracteres.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

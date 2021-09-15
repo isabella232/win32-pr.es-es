@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fe1b051819042728836f48edcdc46b01e800d34710f2d454480413a0aa19ac3a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0e80bb8877335e26cb233a09b2fa3ec3a6f12615
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119039443"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566437"
 ---
 # <a name="instanceparameterscleanupmismatchedlogfiles-property"></a>Propiedad InstanceParameters.CleanupMismatchedLogFiles
 
@@ -40,7 +40,7 @@ Obtiene o establece un valor que indica si Se produce un error en JetInit cuando
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

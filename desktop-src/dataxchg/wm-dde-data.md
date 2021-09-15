@@ -1,6 +1,6 @@
 ---
 title: WM_DDE_DATA mensaje (Dde.h)
-description: Una aplicación de servidor datos dinámicos Exchange (DDE) envía un mensaje WM DDE DATA a una aplicación cliente de DDE para pasar un elemento de datos al cliente o para notificar al cliente la disponibilidad de un elemento de \_ \_ datos.
+description: Una aplicación de servidor datos dinámicos Exchange (DDE) envía un mensaje WM DDE DATA a una aplicación cliente DDE para pasar un elemento de datos al cliente o para notificar al cliente la disponibilidad de un elemento de \_ \_ datos.
 ms.assetid: ed6a65d3-b2a3-45f2-9600-291ce2ec8c0a
 keywords:
 - WM_DDE_DATA mensaje De datos Exchange
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0200737a9b25a123954498941ad117e5465f58f5313daa8caf90674751355ed6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9f045ff07e01023e6535eb00dcb78400e4c9519a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117736282"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568460"
 ---
-# <a name="wm_dde_data-message"></a>Mensaje \_ WM DDE \_ DATA
+# <a name="wm_dde_data-message"></a>Mensaje \_ DE DATOS de DDE de WM \_
 
-Una aplicación de servidor datos dinámicos Exchange (DDE) envía un mensaje **WM \_ DDE \_ DATA** a una aplicación cliente DDE para pasar un elemento de datos al cliente o para notificar al cliente la disponibilidad de un elemento de datos.
+Una aplicación de servidor datos dinámicos Exchange (DDE) envía un mensaje **WM \_ DDE \_ DATA** a una aplicación cliente de DDE para pasar un elemento de datos al cliente o para notificar al cliente la disponibilidad de un elemento de datos.
 
 Para publicar este mensaje, llame a la [**función PostMessage**](/windows/desktop/api/winuser/nf-winuser-postmessagea) con los parámetros siguientes.
 
@@ -48,13 +48,13 @@ Identificador de la ventana del servidor que publica el mensaje.
 *lParam* 
 </dt> <dd>
 
-La palabra de orden bajo es un identificador de un objeto de memoria global que contiene una estructura [**DDEDATA**](/windows/desktop/api/Dde/ns-dde-ddedata) con los datos y la información adicional. El identificador debe establecerse en **NULL** si el servidor notifica al cliente que el valor del elemento de datos ha cambiado durante un vínculo de datos en caliente. El cliente que envía un mensaje [**DE \_ DDE \_ ADVISE de WM**](wm-dde-advise.md) con el conjunto de bits **fDeferUpd** establece un vínculo en caliente.
+La palabra de orden bajo es un identificador de un objeto de memoria global que contiene una estructura [**DDEDATA**](/windows/desktop/api/Dde/ns-dde-ddedata) con los datos y la información adicional. El identificador debe establecerse en **NULL** si el servidor notifica al cliente que el valor del elemento de datos ha cambiado durante un vínculo de datos en caliente. El cliente que envía un mensaje [**WM \_ DDE \_ ADVISE**](wm-dde-advise.md) con el conjunto de bits **fDeferUpd** establece un vínculo en caliente.
 
 La palabra de orden superior contiene un atom que identifica el elemento de datos para el que se envían los datos o la notificación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ### <a name="posting"></a>Publicar
 
@@ -72,7 +72,7 @@ La aplicación de servidor no debe establecer los miembros **fAckReq** y **fRele
 
 Si **fAckReq** es **TRUE,** la aplicación cliente debe publicar el mensaje [**wm \_ DDE \_ ACK**](wm-dde-ack.md) para responder de forma positiva o negativa. Al publicar **WM \_ DDE \_ ACK,** el cliente puede reutilizar el atom o puede eliminarlo y crear uno nuevo.
 
-El cliente debe crear o reutilizar el parámetro [**wm \_ DDE \_ ACK**](wm-dde-ack.md) *lParam* llamando a la función [**PackDDElParam**](/windows/desktop/api/Dde/nf-dde-packddelparam) o a la [**función ReuseDDElParam.**](/windows/desktop/api/Dde/nf-dde-reuseddelparam)
+El cliente debe crear o reutilizar el parámetro *LParam* [**de \_ \_ DDE ACK**](wm-dde-ack.md) de WM llamando a la función [**PackDDElParam**](/windows/desktop/api/Dde/nf-dde-packddelparam) o a la [**función ReuseDDElParam.**](/windows/desktop/api/Dde/nf-dde-reuseddelparam)
 
 Si **fAckReq** es **FALSE,** la aplicación cliente debe eliminar el atom.
 
@@ -95,7 +95,7 @@ Después de procesar un **mensaje WM \_ DDE \_ DATA** en el que el objeto de mem
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

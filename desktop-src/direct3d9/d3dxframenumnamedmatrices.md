@@ -1,5 +1,5 @@
 ---
-description: Cuenta el número de fotogramas de un subárbol que tienen nombres que no son NULL.
+description: Cuenta el número de fotogramas de un subárbol que tienen nombres no NULL.
 ms.assetid: bc1cb985-acd1-4ba0-bb3c-3e86fea559da
 title: Función D3DXFrameNumNamedMatrices (D3dx9anim.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: db048c7c1cad932afb7841d70f9113fa685c63fc4592bad636f9011064f50cdf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c2d535a41d15987df7816cfc23f1bb213b6adc8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119986905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567928"
 ---
 # <a name="d3dxframenumnamedmatrices-function"></a>Función D3DXFrameNumNamedMatrices
 
-Cuenta el número de fotogramas de un subárbol que tienen nombres que no son NULL.
+Cuenta el número de fotogramas de un subárbol que tienen nombres no NULL.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -66,7 +66,7 @@ Devuelve el recuento de fotogramas.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

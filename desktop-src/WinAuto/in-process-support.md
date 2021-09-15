@@ -4,12 +4,12 @@ description: La implementación actual de anotación dinámica está completamen
 ms.assetid: 3d32c444-47fb-49fe-be18-0330fea77926
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d82deaa2edd9a5df9fd36bed745d1c07a5542e12837cd3fc97c3ac0bdeab098
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b4cf9ed1c17d84ddc824ce5ac6d412f1ee12b8e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119614745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567432"
 ---
 # <a name="in-process-support"></a>In-Process compatibilidad
 

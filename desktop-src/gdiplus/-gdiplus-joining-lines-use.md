@@ -4,16 +4,16 @@ ms.assetid: 4ec3e76a-2531-4869-a5b0-c595198e8345
 title: Unir líneas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2aa93eac405bd77f6d87b2a8b86edc8a4043a57de3e4c4d5f31fb45acecc955
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4b2ab0bc53239b9a0d9327a26e25eed1c93c685b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118066979"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566368"
 ---
 # <a name="joining-lines"></a>Unir líneas
 
-Una combinación de línea es el área común formada por dos líneas cuyos extremos se encuentran o se superponen. Windows GDI+ proporciona cuatro estilos de combinación de línea: bisel, bisel, redondeo y recortado. El estilo de combinación de línea es una propiedad de la [**clase Pen.**](/windows/desktop/api/gdipluspen/nl-gdipluspen-pen) Cuando se especifica un estilo de combinación de línea para un lápiz y, a continuación, se usa ese lápiz para dibujar un trazado, el estilo de combinación especificado se aplica a todas las líneas conectadas en la ruta de acceso.
+Una combinación de línea es el área común formada por dos líneas cuyos extremos se encuentran o se superponen. Windows GDI+ proporciona cuatro estilos de combinación de líneas: mitra, bisel, redondeo y recortado. El estilo de combinación de línea es una propiedad de la [**clase Pen.**](/windows/desktop/api/gdipluspen/nl-gdipluspen-pen) Cuando se especifica un estilo de combinación de línea para un lápiz y, a continuación, se usa ese lápiz para dibujar un trazado, el estilo de combinación especificado se aplica a todas las líneas conectadas en la ruta de acceso.
 
 Puede especificar el estilo de combinación de línea mediante el [**método Pen::SetLineJoin**](/windows/desktop/api/Gdipluspen/nf-gdipluspen-pen-setlinejoin) de la [**clase Pen.**](/windows/desktop/api/gdipluspen/nl-gdipluspen-pen) En el ejemplo siguiente se muestra una combinación de línea biselada entre una línea horizontal y una línea vertical:
 

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a8b44b3ed67b6293d4b4add329eef532fdc44cb12cea9e84b1ddf43fb72cc05
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4ca6270503ff786b3f4a319e3f068ba76acada7d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118531426"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568017"
 ---
 # <a name="id3dx11effectvariableasrendertargetview-method"></a>Método ID3DX11EffectVariable::AsRenderTargetView
 
@@ -47,11 +47,11 @@ Tipo: **[ **ID3DX11EffectRenderTargetViewVariable**](id3dx11effectrendertargetvi
 
 Puntero a una variable render-target-view. Vea [**ID3DX11EffectRenderTargetViewVariable.**](id3dx11effectrendertargetviewvariable.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método devuelve una versión de la variable de efecto que se ha especializado en una variable render-target-view. De forma similar a una conversión, esta especialización devolverá un objeto no válido si la variable de efecto no contiene datos de vista de destino de representación.
 
-Las aplicaciones pueden probar la validez del objeto devuelto llamando a [**IsValid**](id3dx11effectvariable-isvalid.md).
+Las aplicaciones pueden probar la validez del objeto devuelto llamando a [**IsValid.**](id3dx11effectvariable-isvalid.md)
 
 > [!Note]  
 > El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
@@ -69,7 +69,7 @@ Las aplicaciones pueden probar la validez del objeto devuelto llamando a [**IsVa
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

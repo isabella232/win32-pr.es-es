@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Tex.h
-ms.openlocfilehash: 4ded3988c49a6242df72e452db120cbaf1f1cf9ee88a5509d6694ca8f612f1aa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 530b4b35b91cfd194455e15fbf3fa284460dfdbd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117914431"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566713"
 ---
 # <a name="d3dx10_save_texture_flag-enumeration"></a>Enumeración SAVE \_ \_ TEXTURE \_ FLAG de D3DX10
 
 Opciones de guardado de textura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++

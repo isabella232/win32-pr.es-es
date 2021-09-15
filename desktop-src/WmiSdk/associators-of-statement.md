@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: ASSOCIATORS OF (Instrucción)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9af4b3d6455e81f87882bdd185ac7a8ef245f2d57c5d8f2c863f58d9c30c7b34
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ec595584efb5c32342e5bbdaa8bae309b21b29d2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120071585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568080"
 ---
 # <a name="associators-of-statement"></a>ASSOCIATORS OF (Instrucción)
 
-La instrucción ASSOCIATORS OF recupera todas las instancias asociadas a una instancia de origen determinada. Las instancias que se recuperan se conocen como los puntos de conexión. Cada extremo se devuelve tantas veces como haya asociaciones entre él y el objeto de origen. Por ejemplo, suponga que hay instancias A, B, X e Y. Existen dos instancias de asociación, una que vincula A y X y otra que vincula B e Y. La consulta siguiente devuelve el único punto de conexión X:
+La instrucción ASSOCIATORS OF recupera todas las instancias asociadas a una instancia de origen determinada. Las instancias que se recuperan se conocen como los puntos de conexión. Cada punto de conexión se devuelve tantas veces como haya asociaciones entre él y el objeto de origen. Por ejemplo, suponga que hay instancias A, B, X e Y. Existen dos instancias de asociación, una que vincula A y X y otra que vincula B e Y. La consulta siguiente devuelve el único punto de conexión X:
 
 
 ```sql
@@ -81,7 +81,7 @@ ASSOCIATORS OF {ObjectPath} WHERE
 
 Tenga en cuenta que las subclauses opcionales no están separadas por comas.
 
-La **palabra clave AssocClass** indica que los puntos de conexión devueltos deben asociarse al origen a través de la clase especificada o una de sus clases derivadas. Por ejemplo, la consulta de la lista siguiente devuelve solo los puntos de conexión asociados al origen a través de la clase de asociación [**\_ SystemDevices de Win32**](/windows/desktop/CIMWin32Prov/win32-systemdevices) o cualquiera de sus clases derivadas:
+La **palabra clave AssocClass** indica que los puntos de conexión devueltos deben asociarse al origen a través de la clase especificada o de una de sus clases derivadas. Por ejemplo, la consulta de la lista siguiente devuelve solo los puntos de conexión asociados al origen a través de la clase de asociación [**\_ SystemDevices de Win32**](/windows/desktop/CIMWin32Prov/win32-systemdevices) o cualquiera de sus clases derivadas:
 
 <dl> <dt>
 
@@ -106,7 +106,7 @@ Win32_ComputerSystem.Name="mycomputer"
 
 </dd> </dl>
 
-La **palabra clave ClassDefsOnly** indica que la cláusula devuelve un conjunto de resultados de objetos de definición de clase en lugar de instancias reales de las clases. Estos objetos son las definiciones de clases a las que pertenecen las instancias de punto de conexión. Por ejemplo, la consulta de la lista siguiente devuelve definiciones para las clases [**Win32 \_ Directory**](/windows/desktop/CIMWin32Prov/win32-directory) y [**Win32 \_ ComputerSystem:**](/windows/desktop/CIMWin32Prov/win32-computersystem)
+La **palabra clave ClassDefsOnly** indica que la cláusula devuelve un conjunto de resultados de objetos de definición de clase en lugar de instancias reales de las clases. Estos objetos son las definiciones de clases a las que pertenecen las instancias de punto de conexión. Por ejemplo, la consulta de la lista siguiente devuelve definiciones para las clases [**Directorio Win32 \_**](/windows/desktop/CIMWin32Prov/win32-directory) y [**Equipo Win32Sistema: \_**](/windows/desktop/CIMWin32Prov/win32-computersystem)
 
 <dl> <dt>
 
@@ -138,7 +138,7 @@ Win32_DiskPartition
 
 Las **palabras clave ClassDefsOnly** **y ResultClass** son mutuamente excluyentes. Si se usan juntos, se produce un error de consulta no válido.
 
-La **palabra clave RequiredAssocQualifier** indica que los puntos de conexión devueltos deben asociarse al objeto de origen a través de una clase de asociación que incluya el calificador especificado. Este tipo de filtrado se usa para eliminar amplios intervalos de puntos de conexión a menos que los extremos estén asociados al destino a través de un conjunto determinado de clases de asociación etiquetadas. Por ejemplo, la consulta de la lista siguiente devuelve instancias de punto de conexión si la clase de asociación incluye un calificador denominado **Association**.
+La **palabra clave RequiredAssocQualifier** indica que los puntos de conexión devueltos deben asociarse al objeto de origen a través de una clase de asociación que incluya el calificador especificado. Este tipo de filtrado se usa para eliminar amplios intervalos de puntos de conexión a menos que los puntos de conexión estén asociados al destino a través de un conjunto determinado de clases de asociación etiquetadas. Por ejemplo, la consulta de la lista siguiente devuelve instancias de punto de conexión si la clase de asociación incluye un calificador llamado **Association**.
 
 <dl> <dt>
 
@@ -169,7 +169,7 @@ Win32_DiskPartition.DeviceID="Disk #0, Partition #0"
 
 </dd> </dl>
 
-La **palabra clave RequiredQualifier** indica que los puntos de conexión devueltos asociados al objeto de origen deben incluir el calificador especificado. La **palabra clave RequiredQualifier** se puede usar para incluir tipos concretos de instancias en el conjunto de resultados. Por ejemplo, la consulta de la lista siguiente devuelve instancias de punto de conexión que incluyen un calificador denominado [**Configuración regional.**](swbemobjectpath-locale.md)
+La **palabra clave RequiredQualifier** indica que los puntos de conexión devueltos asociados al objeto de origen deben incluir el calificador especificado. La **palabra clave RequiredQualifier** se puede usar para incluir determinados tipos de instancias en el conjunto de resultados. Por ejemplo, la consulta de la lista siguiente devuelve instancias de punto de conexión que incluyen un calificador denominado [**Configuración regional.**](swbemobjectpath-locale.md)
 
 <dl> <dt>
 
@@ -199,7 +199,7 @@ Win32_DiskPartition.DeviceID="Disk #0, Partition #0"
 
 </dd> </dl>
 
-La **palabra clave ResultClass** indica que los puntos de conexión devueltos asociados al objeto de origen deben pertenecer a la clase especificada o derivarse de él. Por ejemplo, la consulta de la lista siguiente devuelve instancias de punto de conexión que se derivan de la [**clase de \_ directorio CIM:**](/windows/desktop/CIMWin32Prov/cim-directory)
+La **palabra clave ResultClass** indica que los puntos de conexión devueltos asociados al objeto de origen deben pertenecer o derivarse de la clase especificada. Por ejemplo, la consulta de la lista siguiente devuelve instancias de punto de conexión que se derivan de la [**clase \_ de directorio CIM:**](/windows/desktop/CIMWin32Prov/cim-directory)
 
 <dl> <dt>
 
@@ -278,7 +278,7 @@ Win32_Directory.Name="C:\\"
 </dd> </dl>
 
 > [!Note]  
-> Las consultas complejas no pueden usar "And" o "Or" para separar palabras clave para las instrucciones ASSOCIATORS OF y [REFERENCES OF.](references-of-statement.md) Además, el signo igual es el único operador válido que se puede usar en estas consultas. Por ejemplo, la consulta siguiente es válida:
+> Las consultas complejas no pueden usar "And" u "Or" para separar palabras clave para las instrucciones ASSOCIATORS OF y [REFERENCES OF.](references-of-statement.md) Además, el signo igual es el único operador válido que se puede usar en estas consultas. Por ejemplo, la consulta siguiente es válida:
 
  
 
@@ -290,7 +290,7 @@ ASSOCIATORS OF {win32_LogicalDisk="C:"} WHERE resultClass = Win32_Directory requ
 
 
 > [!Note]  
-> Los ejemplos siguientes no son válidos. El primer ejemplo no usa el signo igual y el segundo ejemplo intenta usar erróneamente la **palabra clave AND.**
+> Los ejemplos siguientes no son válidos. El primer ejemplo no usa el signo igual y el segundo ejemplo intenta erróneamente usar la **palabra clave AND.**
 
  
 

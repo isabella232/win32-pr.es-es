@@ -4,12 +4,12 @@ description: En este tema se muestra cómo un proveedor Automatización de la in
 ms.assetid: 504d0ed8-32c1-43ed-9f71-328a013ab350
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 649f9419c5e3003c0185f435cba4d38f4a25c3d7adc1bdc7cf9c53cd06b32a6e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 54e75fa12dba891bc4eded5fd9763f7825eb7f88
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119759235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567276"
 ---
 # <a name="support-control-patterns-in-a-ui-automation-provider"></a>Patrones de control compatibles en un proveedor de UI Automation
 
@@ -17,8 +17,8 @@ En este tema se muestra cómo un proveedor Automatización de la interfaz de usu
 
 Un proveedor implementa un patrón de control siguiendo estos pasos principales:
 
-1.  Implemente la interfaz de proveedor que admite el patrón de control. Por ejemplo, para admitir el patrón de control [Selection,](uiauto-implementingselection.md) un proveedor para un control de lista personalizado implementaría la [**interfaz ISelectionProvider.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider)
-2.  Devuelve un objeto que contiene la interfaz del proveedor de patrones de control Automatización de la interfaz de usuario llama al método [**IRawElementProviderSimple::GetPatternProvider del**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpatternprovider) proveedor.
+1.  Implemente la interfaz del proveedor que admite el patrón de control. Por ejemplo, para admitir el patrón de control [Selection,](uiauto-implementingselection.md) un proveedor para un control de lista personalizado implementaría la [**interfaz ISelectionProvider.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider)
+2.  Devuelve un objeto que contiene la interfaz del proveedor de patrones de control cuando Automatización de la interfaz de usuario llama al método [**IRawElementProviderSimple::GetPatternProvider del**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpatternprovider) proveedor.
 
 En el ejemplo siguiente se muestra la implementación de la interfaz [**ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider) para un control personalizado de lista de selección única. La implementación incluye métodos de recuperación de propiedades para las propiedades IsSelectionRequired y CanSelectMultiple, y un método para recuperar el proveedor para el elemento de lista seleccionado.
 
@@ -73,7 +73,7 @@ IFACEMETHODIMP ListProvider::GetSelection(SAFEARRAY** pRetVal)
 
 
 
-En el ejemplo siguiente se muestra una implementación de [**IRawElementProviderSimple::GetPatternProvider**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpatternprovider) que devuelve un objeto que implementa [**ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider). La mayoría de los controles de lista también admitirían otros patrones, pero este ejemplo devuelve una referencia nula para todos los demás identificadores de patrón de control.
+En el ejemplo siguiente se muestra una implementación de [**IRawElementProviderSimple::GetPatternProvider que**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpatternprovider) devuelve un objeto que implementa [**ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider). La mayoría de los controles de lista también admitirían otros patrones, pero este ejemplo devuelve una referencia nula para todos los demás identificadores de patrón de control.
 
 
 ```C++

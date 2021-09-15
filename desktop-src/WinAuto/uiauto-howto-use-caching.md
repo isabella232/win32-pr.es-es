@@ -4,12 +4,12 @@ description: Este tema contiene código de ejemplo que muestra cómo usar las fu
 ms.assetid: d72fa637-35ca-4c28-922d-263f469cb1c8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a020f200384f88e1e4f06f9418676e8fc567851424ed03b1c36e2e6299f98e45
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8758621a8499202b820a6ffc3459fade57c2a485
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133258"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567260"
 ---
 # <a name="how-to-use-caching"></a>Uso del Almacenamiento en caché
 
@@ -69,7 +69,7 @@ cleanup:
 
 ## <a name="retrieving-properties-and-control-patterns-from-the-cache"></a>Recuperar propiedades y patrones de control de la memoria caché
 
-En el código siguiente se muestra cómo recuperar propiedades y patrones de control de la memoria caché. Recupera el patrón de control SelectionItem y la propiedad Name para un elemento de lista.
+El código siguiente muestra cómo recuperar propiedades y patrones de control de la memoria caché. Recupera el patrón de control SelectionItem y la propiedad Name de un elemento de lista.
 
 
 ```C++

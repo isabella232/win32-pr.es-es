@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4c5ce94dcadac8952792e31b51ad84fc2326668500c625728a0af5fd985f1d31
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 171b148b112cf2064d0d9a3f89451ab0fc8c2d75
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118526042"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567949"
 ---
 # <a name="d3dxfloat16to32array-function-d3dx9mathh"></a>Función D3DXFloat16To32Array (D3dx9math.h)
 
@@ -86,7 +86,7 @@ Puntero a una matriz de flotantes de 32 bits.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
 title: Enumeración DownloadMode (Deliveryoptimization.h)
-description: Define los distintos modos de descarga Optimización de distribución usa.
+description: Define los distintos modos de descarga Optimización de distribución utiliza.
 ms.assetid: 7E9407C6-A22F-459E-B316-5E7809F0067A
 keywords:
 - Omite Optimización de distribución y usa BITS en su lugar. Por ejemplo, selecciona este modo para que los clientes puedan usar BranchCache. enumeración
@@ -15,18 +15,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9ea753ef47dc2e6655d7e707466d7b0448bee7bec1f090b1baf4de04799283d1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0cde44a3d211040e2cc1dd62afd54f8284f5493e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118543729"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566773"
 ---
 # <a name="downloadmode-enumeration"></a>Enumeración DownloadMode
 
-Define los distintos modos de descarga Optimización de distribución usa.
+Define los distintos modos de descarga Optimización de distribución utiliza.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -90,8 +90,8 @@ Omite Optimización de distribución y usa BITS en su lugar. Por ejemplo, selecc
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------|----------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>      |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>  |
-| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>               |
+| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>               |

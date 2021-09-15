@@ -12,12 +12,12 @@ api_name:
 - RAY_FLAG
 api_type:
 - NA
-ms.openlocfilehash: 127c12c6d87ca76ddac5b5c5e013414c96651e56ee762156e7435811ff275a05
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aad2f8b94f6ea53d500d285cac3555f5ff8b95f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119124390"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568437"
 ---
 # <a name="any-hit-shader"></a>Sombreador de cualquier acierto
 

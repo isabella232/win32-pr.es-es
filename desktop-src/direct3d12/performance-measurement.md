@@ -1,20 +1,20 @@
 ---
 title: Contadores, consultas y medición del rendimiento
-description: En las secciones siguientes se describen las características para su uso en pruebas de rendimiento y mejora, como consultas, contadores, control de tiempo y predicado.
+description: En las secciones siguientes se describen las características para su uso en las pruebas de rendimiento y la mejora, como consultas, contadores, control de tiempo y predicado.
 ms.assetid: C7AEF1A0-36FB-4026-9CCF-ED0206961A58
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4940f6c32ac8754a8a8d41fd7c849d6023775e833988611988d3a6979bd3cace
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf316978f3dd0928692f378dd8d72b8453ad0aae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119631995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567985"
 ---
 # <a name="counters-queries-and-performance-measurement"></a>Contadores, consultas y medición del rendimiento
 
-En las secciones siguientes se describen las características para su uso en pruebas de rendimiento y mejora, como consultas, contadores, control de tiempo y predicado.
+En las secciones siguientes se describen las características para su uso en las pruebas de rendimiento y la mejora, como consultas, contadores, control de tiempo y predicado.
 
 ## <a name="in-this-section"></a>En esta sección
 

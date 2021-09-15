@@ -14,11 +14,11 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 901b64099547060305bab6db43cbe75b3fdb8d9c
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122886271"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568364"
 ---
 # <a name="asfloat"></a>asfloat
 
@@ -56,7 +56,7 @@ Entrada interpretada como un número de punto flotante.
 | Nombre  | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md)                                                         | Size                           |
 |-------|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------------------------|
 | *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vector** o **matriz** | [**float**](/windows/desktop/WinProg/windows-data-types), [**int**](/windows/desktop/WinProg/windows-data-types), [**uint**](/windows/desktop/WinProg/windows-data-types) | cualquiera                            |
-| *Ret* | igual que la entrada *x*                                                                                              | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                                                                                | mismas dimensiones que la entrada *x* |
+| *Ret* | igual que la entrada *x*                                                                                              | [**Flotador**](/windows/desktop/WinProg/windows-data-types)                                                                                | las mismas dimensiones que la entrada *x* |
 
 
 
@@ -77,7 +77,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                        | Compatible |
 |---------------------------------------------------------------------|-----------|
-| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md) y modelos de sombreador posteriores | sí       |
+| [Modelos de sombreador 4](dx-graphics-hlsl-sm4.md) y superiores | sí       |
 | [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md)           | no        |
 | [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md)           | no        |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)           | no        |
@@ -86,11 +86,11 @@ Esta función se admite en los siguientes modelos de sombreador.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los compiladores anteriores permitían incorrectamente , pero tenga en cuenta que no se admiten `asfloat(bool)` entradas bool.
+Los compiladores anteriores permitían incorrectamente , pero tenga en cuenta que no se admiten entradas `asfloat(bool)` bool.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

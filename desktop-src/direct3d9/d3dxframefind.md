@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 4f62cacabbf020d1fe9ff9e83c47acc6c58e52c4ab6be031586bda365745f595
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 82b8c56c93f19c99441b93707fac2a0c150e0c38
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120027665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567929"
 ---
 # <a name="d3dxframefind-function"></a>Función D3DXFrameFind
 
@@ -76,7 +76,7 @@ Devuelve el marco secundario si se encuentra o **NULL** en caso contrario. Vea [
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 913cf8372cb08860db639a9ba10bed872648526e7c8850e2e101912fb9f1354e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ab5f8d755ad4af3127a0c238defc9f1c422061bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118510922"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568353"
 ---
 # <a name="rwtexture2dloadint-function"></a>Función RWTexture2D::Load(int)
 
@@ -52,15 +52,15 @@ Ubicación de la textura.
 
 Escriba:
 
-El tipo de valor devuelto coincide con el tipo de la declaración del [**objeto RWTexture2D.**](sm5-object-rwtexture2d.md)
+El tipo de valor devuelto coincide con el tipo de la declaración para el [**objeto RWTexture2D.**](sm5-object-rwtexture2d.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

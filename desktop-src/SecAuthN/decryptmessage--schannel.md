@@ -5,11 +5,11 @@ title: Función DecryptMessage (Schannel)
 ms.topic: reference
 ms.date: 07/25/2019
 ms.openlocfilehash: 75b2292e6058806e6e4cecbac9cb446207099fae
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122480851"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567545"
 ---
 # <a name="decryptmessage-schannel-function"></a>Función DecryptMessage (Schannel)
 
@@ -61,7 +61,7 @@ Cuando se usa SSP de Schannel, este parámetro no se usa y debe establecerse en 
 Este parámetro puede ser la marca siguiente.
 
 
-| Valor | Significado | 
+| Value | Significado | 
 |-------|---------|
 | <span id="SECQOP_WRAP_NO_ENCRYPT"></span><span id="secqop_wrap_no_encrypt"></span><dl><dt><strong>SECQOP_WRAP_NO_ENCRYPT</strong></dt></dl> | El mensaje no estaba cifrado, pero se produjo un encabezado o finalizador.<br /><blockquote>[!Note]<br />KERB_WRAP_NO_ENCRYPT tiene el mismo valor y el mismo significado.</blockquote><br /> | 
 
@@ -82,7 +82,7 @@ Si la función no puede descifrar el mensaje, devuelve uno de los siguientes có
 | **SEC \_ I \_ RENEGOTIATE**         | La parte remota requiere una nueva secuencia de protocolo de enlace o la aplicación acaba de iniciar un cierre. Vuelva al bucle de negociación y llame a [**AcceptSecurityContext (Schannel)**](acceptsecuritycontext--schannel.md) o [**InitializeSecurityContext (Schannel),**](initializesecuritycontext--schannel.md)pase SECBUFFER_EXTRA devuelto desde DecryptMessage(). No se admite la renegociación para el modo de kernel de Schannel. El autor de la llamada debe omitir este valor devuelto o apagar la conexión. Si se omite el valor, el cliente o el servidor podrían apagar la conexión como resultado. |
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 A veces, una aplicación leerá datos de la entidad remota, intentará descifrarlo mediante **DecryptMessage (Schannel)** y detectará que **DecryptMessage (Schannel)** se ha hecho correctamente, pero los búferes de salida están vacíos. Este es un comportamiento normal y las aplicaciones deben ser capaces de tratar con él.
 
@@ -96,7 +96,7 @@ La **función DecryptMessage (Schannel)** devuelve SEC I RENEGOTIATE cuando el r
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|-------------------------------------------|
 | Cliente mínimo compatible | Windows Solo \[ aplicaciones de escritorio XP\]          |
 | Servidor mínimo compatible | Windows Solo aplicaciones de escritorio de Server 2003 \[\] |
@@ -106,7 +106,7 @@ La **función DecryptMessage (Schannel)** devuelve SEC I RENEGOTIATE cuando el r
 
 ## <a name="see-also"></a>Consulte también
 
-- [Funciones SSPI](authentication-functions.md#sspi-functions)
+- [Funciones de SSPI](authentication-functions.md#sspi-functions)
 - [**EncryptMessage (Schannel)**](encryptmessage--schannel.md)
 - [**SecBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer)
 - [**SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc)

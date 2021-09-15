@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d71baf2c5b82dd59bd06ffdc02b11a747111a6c88fb2c9e123c9e6e6b10d5059
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5dc8e2a33a3482afff5f492a3886ea1aa13256e4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119839508"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567073"
 ---
 # <a name="esentdtcmissingcallbackonrecoveryexception-class"></a>Clase EsentDTCMissingCallbackOnRecoveryException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones DTCMissingCallbackOnRecovery.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -68,7 +68,7 @@ public sealed class EsentDTCMissingCallbackOnRecoveryException : EsentObsoleteEx
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

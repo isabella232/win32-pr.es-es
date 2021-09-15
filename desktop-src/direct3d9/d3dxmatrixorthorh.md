@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXMatrixOrthoRH (D3dx9math.h): crea una matriz de proyección ortográfica derecha.'
+description: 'Función D3DXMatrixOrthoRH (D3dx9math.h): crea una matriz de proyección ortográfica con la mano derecha.'
 ms.assetid: 6b9b50d5-0307-4fc7-a28d-8f42d2a21bf0
 title: Función D3DXMatrixOrthoRH (D3dx9math.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 060a195dfee7457f671177a756e67d1c3953a16aa7d59394f96eb05e43cfc93c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d34a8379851d80ae8734c7f32cc0dc5977af2088
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119044853"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567857"
 ---
 # <a name="d3dxmatrixorthorh-function-d3dx9mathh"></a>Función D3DXMatrixOrthoRH (D3dx9math.h)
 
@@ -76,7 +76,7 @@ Alto del volumen de vista.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor Z mínimo del volumen de vista.
+Valor z mínimo del volumen de vista.
 
 </dd> <dt>
 
@@ -95,13 +95,13 @@ Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
 Puntero al [**D3DXMATRIX resultante.**](../direct3d10/d3d10-d3dxmatrix.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Todos los parámetros de la **función D3DXMatrixOrthoRH** son distancias en el espacio de la cámara. Los parámetros describen las dimensiones del volumen de vista.
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXMatrixOrthoRH** se puede usar como parámetro para otra función.
 
-Esta función usa la siguiente fórmula para calcular la matriz devuelta.
+Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 
 ```
@@ -124,7 +124,7 @@ Esta función usa la siguiente fórmula para calcular la matriz devuelta.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

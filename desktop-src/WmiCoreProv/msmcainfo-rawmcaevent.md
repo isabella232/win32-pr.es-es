@@ -1,7 +1,7 @@
 ---
-description: Contiene un evento de arquitectura de comprobación de equipo (MCA). Esta clase solo está disponible en sistemas Windows de 64 bits.
+description: Contiene un evento de arquitectura de comprobación de máquina (MCA). Esta clase solo está disponible en sistemas de 64 Windows bits.
 ms.assetid: d1806b91-43a3-4329-8fe5-de1e4755740f
-title: MSMCAInfo_RawMCAEvent (clase)
+title: MSMCAInfo_RawMCAEvent clase
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,17 +18,17 @@ api_type:
 api_location:
 - Wmiprov.dll
 ms.openlocfilehash: e15af79c67265823e0025849e4c2ef27f690265c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104002653"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568105"
 ---
-# <a name="msmcainfo_rawmcaevent-class"></a>MSMCAInfo \_ RawMCAEvent (clase)
+# <a name="msmcainfo_rawmcaevent-class"></a>Clase RawMCAEvent de MSMCAInfo \_
 
-La clase **MSMCAInfo \_ RawMCAEvent** contiene un evento de arquitectura de comprobación de equipo (MCA). Esta clase solo está disponible en sistemas Windows de 64 bits.
+La **clase \_ RawMCAEvent de MSMCAInfo** contiene un evento machine check architecture (MCA). Esta clase solo está disponible en sistemas de 64 Windows bits.
 
-La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,15 +42,15 @@ class MSMCAInfo_RawMCAEvent : WMIEvent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-La clase **MSMCAInfo \_ RawMCAEvent** tiene estos tipos de miembros:
+La **clase \_ RawMCAEvent de MSMCAInfo** tiene estos tipos de miembros:
 
 -   [Propiedades](#properties)
 
 ### <a name="properties"></a>Propiedades
 
-La clase **MSMCAInfo \_ RawMCAEvent** tiene estas propiedades.
+La **clase \_ RawMCAEvent de MSMCAInfo** tiene estas propiedades.
 
 <dl> <dt>
 
@@ -63,14 +63,14 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-TRUE si esta instancia de la clase está activa; en caso contrario, **false**.
+TRUE, si esta instancia de la clase está activa; de lo contrario, **FALSE**.
 
 </dd> <dt>
 
 **Recuento**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **UInt32**
+Tipo de datos: **uint32**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
@@ -89,29 +89,29 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **clave**](/windows/desktop/WmiSdk/standard-qualifiers)
+Calificadores: [ **Clave**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Cadena que identifica de forma única esta instancia de la clase **MSMCAInfo \_ RawMCAEvent** .
+Cadena que identifica de forma única esta instancia de la **clase \_ RawMCAEvent de MSMCAInfo.**
 
 </dd> <dt>
 
 **Registros**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: matriz de **\_ entrada MSMCAInfo**
+Tipo de datos: **Matriz de entrada MSMCAInfo \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de registros de error de MCA. La propiedad **Count** especifica el número de registros de error de MCA en la matriz.
+Matriz de registros de errores de MCA. La propiedad Count especifica el número de registros de error de MCA en la **matriz.**
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Observaciones
 
-La clase **MSMCAInfo \_ RawMCAEvent** se deriva de [**WMIEvent**](wmievent.md).
+La **clase \_ RawMCAEvent de MSMCAInfo** se deriva de [**WMIEvent**](wmievent.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -121,13 +121,13 @@ La clase **MSMCAInfo \_ RawMCAEvent** se deriva de [**WMIEvent**](wmievent.md).
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP<br/>                                                                  |
 | Servidor mínimo compatible<br/> | Windows Server 2003<br/>                                                         |
-| Espacio de nombres<br/>                | \\WMI raíz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>Wmicore. mof</dt> </dl> |
+| Espacio de nombres<br/>                | Wmi \\ raíz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>Wmicore.mof</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wmiprov.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

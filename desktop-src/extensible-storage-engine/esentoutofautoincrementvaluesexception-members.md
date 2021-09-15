@@ -7,21 +7,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102443
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 09fce2c68421df45819ca24a61128f7dc58d332bdddd2b791b5c23558665e525
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e2d3ca777a1732d5d67213d5c0dcaf2c5878c759
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119947765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567040"
 ---
 # <a name="esentoutofautoincrementvaluesexception-members"></a>Miembros de EsentOutOfAutoincrementValuesException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para JET_err. Excepciones OutOfAutoincrementValues.
+Clase base para JET_err. OutOfAutoincrementValues exceptions.
 
-El [tipo EsentOutOfAutoincrementValuesException](./esentoutofautoincrementvaluesexception-class.md) expone los siguientes miembros.
+El [tipo EsentOutOfAutoincrementValuesException](./esentoutofautoincrementvaluesexception-class.md) expone los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -58,7 +58,7 @@ Superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -164,7 +164,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

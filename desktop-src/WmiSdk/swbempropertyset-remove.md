@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 7a79c99243cbbb18e761295980b98e56a6db926e3885de6ed2d0b53aafe084db
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5b6903ae05c801d5903754ef8df0bb02cad51204
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119897915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567224"
 ---
 # <a name="swbempropertysetremove-method"></a>Método SWbemPropertySet.Remove
 
@@ -48,7 +48,7 @@ SWbemPropertySet.Remove( _
 *strName* \[ En\]
 </dt> <dd>
 
-Obligatorio. Nombre del elemento que se quitará.
+Necesario. Nombre del elemento que se quitará.
 
 </dd> <dt>
 
@@ -118,9 +118,9 @@ El usuario eliminó un valor predeterminado de invalidación para la clase actua
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Las propiedades no se pueden quitar de instancias de clase ni clases derivadas con propiedades heredadas. Estos intentos de eliminación genera un error y la propiedad no se quita; la propiedad se restablece a su valor predeterminado.
+Las propiedades no se pueden quitar de instancias de clase ni clases derivadas con propiedades heredadas. Estos intentos de eliminación producirán un error y la propiedad no se quitará. la propiedad se restablece a su valor predeterminado.
 
 No se puede iterar una colección al quitar elementos porque cuando se quita un elemento de una colección, el puntero de colección se mueve al elemento siguiente. Para obtener más información, vea [Accessing a Collection](accessing-a-collection.md).
 
@@ -136,7 +136,7 @@ Para obtener un ejemplo de código que use este método, vea el [**tema SWbemPro
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemPropertySet<br/>                                                      |
@@ -144,7 +144,7 @@ Para obtener un ejemplo de código que use este método, vea el [**tema SWbemPro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

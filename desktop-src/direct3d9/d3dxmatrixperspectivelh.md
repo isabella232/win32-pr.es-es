@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a8b379265be4bac399d746a2421d9aeb34a1559c5b18ab4f439e57d586af6d62
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d898a7d40cd1c9f7b46100c19d86573806ccb1b5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119122875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567848"
 ---
 # <a name="d3dxmatrixperspectivelh-function-d3dx9mathh"></a>Función D3DXMatrixPerspectiveLH (D3dx9math.h)
 
@@ -95,7 +95,7 @@ Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
 Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es una matriz de proyección de perspectiva a la izquierda.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Todos los parámetros de la **función D3DXMatrixPerspectiveLH** son distancias en el espacio de la cámara. Los parámetros describen las dimensiones del volumen de vista.
 
@@ -124,7 +124,7 @@ Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

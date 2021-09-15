@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 60a0e8589dc45b3173107be9719816a8ee112071b2d4cb23d090542da1f836b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0f23a4cd375eb959c0e5cf3860818040a561ece3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119112394"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568281"
 ---
 # <a name="jet_columndefdeepclone-method"></a>JET_COLUMNDEF. Método DeepClone
 

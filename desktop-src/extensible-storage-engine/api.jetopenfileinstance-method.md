@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1dc526cb9d70b86faa54c476cb1d2fa85a93ec032b2fcc5a3d1755779108a8cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3b58b3a426fd2eb7e33cce1f5f539418bcc993ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118084964"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567721"
 ---
 # <a name="apijetopenfileinstance-method"></a>Método Api.JetOpenFileInstance
 
-Abre una base de datos adjunta, un archivo de revisión de base de datos o un archivo de registro de transacciones de una instancia activa con el fin de realizar una copia de seguridad aproximada de streaming. Posteriormente, los datos de estos archivos se pueden leer a través del identificador devuelto mediante JetReadFileInstance. El identificador devuelto debe cerrarse mediante JetCloseFileInstance. Debe haber iniciado previamente una copia de seguridad externa de la instancia mediante JetBeginExternalBackupInstance.
+Abre una base de datos adjunta, un archivo de revisión de base de datos o un archivo de registro de transacciones de una instancia activa con el fin de realizar una copia de seguridad aproximada de streaming. Los datos de estos archivos se pueden leer posteriormente a través del identificador devuelto mediante JetReadFileInstance. El identificador devuelto debe cerrarse mediante JetCloseFileInstance. Debe haber iniciado previamente una copia de seguridad externa de la instancia mediante JetBeginExternalBackupInstance.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -103,11 +103,11 @@ public static void JetOpenFileInstance(
     
     Devuelve los 32 bits más significativos del tamaño del archivo.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

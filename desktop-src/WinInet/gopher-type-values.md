@@ -1,5 +1,5 @@
 ---
-title: Valores de tipo Gopher (Wininet.h)
+title: Valores de tipo gopher (Wininet.h)
 description: La lista siguiente contiene los posibles valores de tipo Gopher.
 ms.assetid: e77a0328-d811-4c01-831a-0ead888a4988
 topic_type:
@@ -35,14 +35,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36dd8a6b673ccdde6ff283d5b0ae58eb38540aeed12cc3ff095a2df2fe8a0b52
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 67402dd88211ae46c081c0b9e85e7a12b5379bb8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118113888"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568141"
 ---
-# <a name="gopher-type-values"></a>Valores de tipo Gopher
+# <a name="gopher-type-values"></a>Valores de tipo gopher
 
 \[Estos vales de tipo Gopher solo están disponibles para su uso en los sistemas operativos especificados en la sección Requisitos.\]
 
@@ -50,7 +50,7 @@ La lista siguiente contiene los posibles valores de tipo Gopher.
 
 <dl> <dt>
 
-<span id="GOPHER_TYPE_ASK"></span><span id="gopher_type_ask"></span>**PREGUNTA DE TIPO \_ \_ GOPHER**
+<span id="GOPHER_TYPE_ASK"></span><span id="gopher_type_ask"></span>**PREGUNTA DE \_ TIPO \_ GOPHER**
 </dt> <dd> <dl> <dt>
 
 0x40000000
@@ -63,7 +63,7 @@ Elemento Ask+.
 
 </dt> </dl> </dd> <dt>
 
-<span id="GOPHER_TYPE_BINARY"></span><span id="gopher_type_binary"></span>**GOPHER \_ TYPE \_ BINARY**
+<span id="GOPHER_TYPE_BINARY"></span><span id="gopher_type_binary"></span>**BINARIO DE \_ TIPO \_ GOPHER**
 </dt> <dd> <dl> <dt>
 
 0x00000200
@@ -110,12 +110,12 @@ Archivo de calendario.
 
 
 
-Servidor de libretas telefónicas de CSO.
+Servidor de libreta telefónica de CSO.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="GOPHER_TYPE_DIRECTORY"></span><span id="gopher_type_directory"></span>**DIRECTORIO DE \_ TIPO GOPHER \_**
+<span id="GOPHER_TYPE_DIRECTORY"></span><span id="gopher_type_directory"></span>**DIRECTORIO DE TIPO GOPHER \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x00000002
@@ -123,7 +123,7 @@ Servidor de libretas telefónicas de CSO.
 
 
 
-Directorio de elementos adicionales de Gopher.
+Directorio de elementos gopher adicionales.
 
 
 </dt> </dl> </dd> <dt>
@@ -141,7 +141,7 @@ Archivo de archivo MS-DOS.
 
 </dt> </dl> </dd> <dt>
 
-<span id="GOPHER_TYPE_ERROR"></span><span id="gopher_type_error"></span>**ERROR DE \_ TIPO GOPHER \_**
+<span id="GOPHER_TYPE_ERROR"></span><span id="gopher_type_error"></span>**ERROR DE TIPO GOPHER \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x00000008
@@ -219,7 +219,7 @@ Servidor de índice.
 
 </dt> </dl> </dd> <dt>
 
-<span id="GOPHER_TYPE_INLINE"></span><span id="gopher_type_inline"></span>**TIPO GOPHER \_ \_ EN LÍNEA**
+<span id="GOPHER_TYPE_INLINE"></span><span id="gopher_type_inline"></span>**GOPHER \_ TYPE \_ INLINE**
 </dt> <dd> <dl> <dt>
 
 0x00100000
@@ -279,7 +279,7 @@ Archivo PDF.
 
 
 
-Indicador de un servidor duplicado. La información contenida en es un duplicado del servidor principal. El servidor principal se define como la última entrada de directorio que no tenía un tipo REDUNDANTE DE TIPO \_ \_ GOPHER.
+Indicador de un servidor duplicado. La información contenida en es un duplicado del servidor principal. El servidor principal se define como la última entrada de directorio que no tenía un tipo GOPHER \_ TYPE \_ REDUNDANT.
 
 
 </dt> </dl> </dd> <dt>
@@ -297,7 +297,7 @@ Archivo de sonido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="GOPHER_TYPE_TELNET"></span><span id="gopher_type_telnet"></span>**GOPHER \_ TYPE \_ TELNET**
+<span id="GOPHER_TYPE_TELNET"></span><span id="gopher_type_telnet"></span>**TIPO TELNET DE GOPHER \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x00000100
@@ -310,7 +310,7 @@ Servidor Telnet.
 
 </dt> </dl> </dd> <dt>
 
-<span id="GOPHER_TYPE_TEXT_FILE"></span><span id="gopher_type_text_file"></span>**ARCHIVO DE TEXTO DE TIPO GOPHER \_ \_ \_**
+<span id="GOPHER_TYPE_TEXT_FILE"></span><span id="gopher_type_text_file"></span>**ARCHIVO DE \_ TEXTO DE \_ TIPO GOPHER \_**
 </dt> <dd> <dl> <dt>
 
 0x00000001
@@ -323,7 +323,7 @@ Archivo de texto ASCII.
 
 </dt> </dl> </dd> <dt>
 
-<span id="GOPHER_TYPE_TN3270"></span><span id="gopher_type_tn3270"></span>**TIPO GOPHER \_ \_ TN3270**
+<span id="GOPHER_TYPE_TN3270"></span><span id="gopher_type_tn3270"></span>**GOPHER \_ TYPE \_ TN3270**
 </dt> <dd> <dl> <dt>
 
 0x00000800
@@ -336,7 +336,7 @@ Servidor TN3270.
 
 </dt> </dl> </dd> <dt>
 
-<span id="GOPHER_TYPE_UNIX_UUENCODED"></span><span id="gopher_type_unix_uuencoded"></span>**TIPO GOPHER \_ \_ UNIX \_ UUENCODED**
+<span id="GOPHER_TYPE_UNIX_UUENCODED"></span><span id="gopher_type_unix_uuencoded"></span>**TIPO \_ GOPHER \_ UNIX \_ UUENCODED**
 </dt> <dd> <dl> <dt>
 
 0x00000040
@@ -349,7 +349,7 @@ Archivo UUENCODED.
 
 </dt> </dl> </dd> <dt>
 
-<span id="GOPHER_TYPE_UNKNOWN"></span><span id="gopher_type_unknown"></span>**TIPO GOPHER \_ \_ DESCONOCIDO**
+<span id="GOPHER_TYPE_UNKNOWN"></span><span id="gopher_type_unknown"></span>**TIPO DESCONOCIDO DE GOPHER \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x20000000
@@ -362,10 +362,10 @@ El tipo de elemento es desconocido.
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones o servicios de servidor, use [Microsoft Windows HTTP Services (WinHTTP).](/windows/desktop/WinHttp/winhttp-start-page)
+> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones de servidor o los servicios, use [Microsoft Windows SERVICIOS HTTP (WinHTTP).](/windows/desktop/WinHttp/winhttp-start-page)
 
  
 
@@ -373,13 +373,13 @@ El tipo de elemento es desconocido.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003 R2<br/>                                                    |
-| Header<br/>                   | <dl> <dt>Wininet.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wininet.h</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: 'if_comp: vs'
-description: 'Iniciar un if bool - vs... else- vs... endif: vs block, con una condición basada en valores que se podrían calcular en un sombreador. Esta instrucción se usa para omitir un bloque de código, en función de una condición.'
+title: if_comp - vs
+description: 'Iniciar un if bool - vs... else - vs... endif: frente a block, con una condición basada en valores que se podrían calcular en un sombreador. Esta instrucción se usa para omitir un bloque de código, en función de una condición.'
 ms.assetid: a3fe93c6-be26-4216-a601-3be52a74be06
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 11c7abceb9b484c4cd104e136c47edeb55b93b5273f953cb6d98052e247513d4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dadbe9620367efc75f821a711de89eb3498d247f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119743585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567793"
 ---
 # <a name="if_comp---vs"></a>if \_ comp - vs
 
-Inicie un [if bool: frente a](if-bool---vs.md)... [else - vs](else---vs.md)... [endif: vs](endif---vs.md) block, con una condición basada en valores que se podrían calcular en un sombreador. Esta instrucción se usa para omitir un bloque de código, en función de una condición.
+Iniciar un [if bool - vs](if-bool---vs.md)... [else : frente a](else---vs.md)... [endif: frente](endif---vs.md) a block, con una condición basada en valores que se podrían calcular en un sombreador. Esta instrucción se usa para omitir un bloque de código, en función de una condición.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -35,7 +35,7 @@ Donde:
 
 -   \_comp es una comparación entre los dos registros de origen. Puede tener uno de los valores siguientes: 
 
-    | Syntax | De comparación            |
+    | Sintaxis | De comparación            |
     |--------|-----------------------|
     | \_Gt   | Mayor que          |
     | \_Lt   | Menor que             |
@@ -48,10 +48,10 @@ Donde:
 
      
 
--   src0 es un registro de origen. Para seleccionar un componente, es necesario replicar sw swzzle.
--   src1 es un registro de origen. Para seleccionar un componente, es necesario replicar sw swzzle.
+-   src0 es un registro de origen. Se requiere la replicación de swzzle para seleccionar un componente.
+-   src1 es un registro de origen. Se requiere la replicación de swzzle para seleccionar un componente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 
@@ -77,10 +77,10 @@ Tenga cuidado al usar los modos de comparación iguales y no iguales en números
 
 Entre las restricciones se incluyen:
 
--   si \_ comp... [else - vs](else---vs.md)... [endif: frente a](endif---vs.md) los bloques (junto con el predicado if blocks) se pueden anidar hasta 24 capas de profundidad.
+-   si \_ comp... [else : frente a](else---vs.md)... [endif: frente a](endif---vs.md) los bloques (junto con los bloques de predicado if) se pueden anidar hasta 24 capas de profundidad.
 -   Los registros src0 y src1 requieren un swzzle de replicación.
 -   si \_ los bloques comp deben terminar con [una instrucción else - vs](else---vs.md) o [endif - vs.](endif---vs.md)
--   si \_ comp... [else - vs](else---vs.md)... [endif: frente a](endif---vs.md) los bloques no se puede bloquear un bloque de bucle. El bloque \_ if comp debe estar completamente dentro o fuera del bucle : [vs](loop---vs.md) block.
+-   si \_ comp... [else : frente a](else---vs.md)... [endif: frente a](endif---vs.md) los bloques no se puede bloquear un bloque de bucle. Si el \_ bloque comp debe estar completamente dentro o fuera del bucle : [vs](loop---vs.md) block.
 
 ## <a name="example"></a>Ejemplo
 

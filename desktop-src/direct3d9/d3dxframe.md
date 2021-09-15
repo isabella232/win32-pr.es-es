@@ -1,5 +1,5 @@
 ---
-description: Encapsula un marco de transformación en una jerarquía de marco de transformación.
+description: Encapsula un marco de transformación en una jerarquía de fotogramas de transformación.
 ms.assetid: 838d75c2-41b2-4703-961b-893c34104c55
 title: Estructura D3DXFRAME (D3dx9anim.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9anim.h
-ms.openlocfilehash: 33a851f3580045f5483541be155d3e8e85fddb22b530cb3f889253809f0b13aa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 152e620f6bf845f1f2528a321e39d8d746e8b893
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119123241"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567941"
 ---
 # <a name="d3dxframe-structure"></a>Estructura D3DXFRAME
 
-Encapsula un marco de transformación en una jerarquía de marco de transformación.
+Encapsula un marco de transformación en una jerarquía de fotogramas de transformación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ typedef struct D3DXFRAME {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -79,7 +79,7 @@ Puntero al contenedor de malla.
 **pFrameSibling**
 </dt> <dd>
 
-Tipo: *:D3DXFRAME **\***
+Tipo: *,D3DXFRAME **\***
 
 </dd> <dd>
 
@@ -90,7 +90,7 @@ Puntero a un marco relacionado.
 **pFrameFirstChild**
 </dt> <dd>
 
-Tipo: *:D3DXFRAME **\***
+Tipo: *,D3DXFRAME **\***
 
 </dd> <dd>
 
@@ -98,7 +98,7 @@ Puntero a un marco secundario.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una aplicación puede derivar de esta estructura para agregar otros datos.
 
@@ -112,7 +112,7 @@ Una aplicación puede derivar de esta estructura para agregar otros datos.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

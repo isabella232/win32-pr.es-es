@@ -5,12 +5,12 @@ ms.assetid: ff623d04-ad3f-4846-b9de-aaa280713018
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: 02762a80be9bd60b7f9c8648c9bfb848f3d76184f249567c9e9522189692e0e3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f07d8c200103fa21afc080c60157645fe6730766
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119064355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566944"
 ---
 # <a name="odj_provision_data-structure"></a>ODJ_PROVISION_DATA estructura
 
@@ -27,7 +27,7 @@ typedef struct _ODJ_PROVISION_DATA
 } ODJ_PROVISION_DATA;
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 ### <a name="ulversion"></a>ulVersion
 
@@ -41,7 +41,7 @@ Debe establecerse en el número de elementos de la matriz pBlobs.
 
 Apunta a una matriz de ODJ_BLOB estructura.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [**Definiciones de IDL de unión a un dominio sin conexión**](odj-idl.md)
 

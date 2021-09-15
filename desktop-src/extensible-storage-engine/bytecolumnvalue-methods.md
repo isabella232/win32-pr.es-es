@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.byte
 ms:contentKeyID: 55100960
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: b37020bd520630b23d5a7700428fad0927f7d44e0fe76557e87222208f2457bb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 96cc684620eb338bfff20b2aa15ed0f630722740
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119976975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566541"
 ---
 # <a name="bytecolumnvalue-methods"></a>Métodos ByteColumnValue
 
@@ -35,7 +35,7 @@ El [tipo ByteColumnValue](./bytecolumnvalue-class.md) expone los miembros siguie
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
 <td><a href="dn334178(v=exchg.10).md">CheckDataCount</a></td>
-<td>Asegúrese de que los datos recuperados son exactamente el tamaño necesario para la estructura. Se produce una excepción si hay una discrepancia. (Se hereda de <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T). &gt; </a></td>
+<td>Asegúrese de que los datos recuperados son exactamente el tamaño necesario para la estructura. Se produce una excepción si hay un error de coincidencia. (Se hereda de <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T). &gt; </a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>

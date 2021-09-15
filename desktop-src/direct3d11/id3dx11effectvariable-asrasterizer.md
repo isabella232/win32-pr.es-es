@@ -1,10 +1,10 @@
 ---
-title: Método AsRasterizer ID3DX11EffectVariable (D3dx11effect.h)
-description: Obtiene una variable de rasterizador.
+title: Método ASRasterizer ID3DX11EffectVariable (D3dx11effect.h)
+description: Obtiene una variable rasterizadora.
 ms.assetid: 6a55d067-f527-4a1b-a4d4-a6d1719aebe7
 keywords:
 - Método AsRasterizer Direct3D 11
-- Método AsRasterizer Direct3D 11, interfaz ID3DX11EffectVariable
+- Método AsRasterizer Direct3D 11 , interfaz ID3DX11EffectVariable
 - Interfaz ID3DX11EffectVariable Direct3D 11 , método AsRasterizer
 topic_type:
 - apiref
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dfaf83debc6c7e73a89f78b0c8c3899cce2fb83fb6a5884fa5a5ed9ed5b35912
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2cbe4edc1b1195a9d449b37897f0875b1f35aae3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119858105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568016"
 ---
 # <a name="id3dx11effectvariableasrasterizer-method"></a>Método ID3DX11EffectVariable::AsRasterizer
 
-Obtiene una variable de rasterizador.
+Obtiene una variable rasterizadora.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,14 +47,14 @@ Tipo: **[ **ID3DX11EffectRasterizerVariable**](id3dx11effectrasterizervariable.m
 
 Puntero a una variable rasterizadora. Vea [**ID3DX11EffectRasterizerVariable.**](id3dx11effectrasterizervariable.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 AsRasterizer devuelve una versión de la variable de efecto que se ha especializado en una variable rasterizadora. De forma similar a una conversión, esta especialización devolverá un objeto no válido si la variable de efecto no contiene datos de rasterizador.
 
-Las aplicaciones pueden probar la validez del objeto devuelto llamando a [**IsValid.**](id3dx11effectvariable-isvalid.md)
+Las aplicaciones pueden probar la validez del objeto devuelto llamando a [**IsValid**](id3dx11effectvariable-isvalid.md).
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -65,11 +65,11 @@ Las aplicaciones pueden probar la validez del objeto devuelto llamando a [**IsVa
 | Requisito | Value |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | Encabezado<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca de efectos 11 está disponible en línea como origen compartido).</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>N/A (una biblioteca effects 11 está disponible en línea como origen compartido).</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

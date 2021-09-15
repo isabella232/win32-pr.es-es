@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ad9aba5c9f18b88577a456764a71cc27637d24856cdafa95d811344034d514f5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0a1a36bb0c6c68f5132757719bbc7e37fbc71501
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118511911"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567784"
 ---
 # <a name="if-pred---vs"></a>if pred - vs
 
 Inicio de un elemento if pred - vs... [else - vs](else---vs.md)... [endif- vs](endif---vs.md) block, con la condición tomada del contenido del registro de predicado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -37,7 +37,7 @@ Donde:
 -   pred es el registro de predicado, p0. Vea [Predicate Register](dx9-graphics-reference-asm-vs-registers-predicate.md).
 -   replicateSwiquele es un único componente que se copia (o replica) en los cuatro componentes (se desliza). Los componentes válidos son: x, y, z, w o r, g, b, a.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

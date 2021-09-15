@@ -4,12 +4,12 @@ description: Funciones de servidor
 ms.assetid: 3cfa42c4-3d8b-44a1-9b8e-19248da12334
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b2eb449e81371a1c0c9e230610de97b8abdefb41429c5753059540e45f921d7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 10a747c073e84049fe578d19561b25d0b754dbb9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118828073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567376"
 ---
 # <a name="server-functions-windows-accessibility-features"></a>Funciones del servidor (Windows de accesibilidad)
 

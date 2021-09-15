@@ -13,18 +13,18 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: f19e981d9feecab6d9fb83fbd6502cd145b57d22ec4a8f4be585f6ea63083607
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3eeea966a539d02acaeba24e06bcbfa8af58b7b6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119732985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568101"
 ---
 # <a name="msmonitorclass-class"></a>Clase MSMonitorClass
 
-**MSMonitorClass es** una clase base WMI abstracta. Las clases que describen los monitores de visualización de vídeo heredan de **este objeto MSMonitorClass.**
+**MSMonitorClass es** una clase base WMI abstracta. Las clases que describen los monitores de visualización de vídeo heredan de **esta clase MSMonitorClass.**
 
-Las clases de monitor de visualización de vídeo que heredan **de MSMonitorClass** incluyen:
+Las clases de supervisión de pantalla de vídeo que heredan **de MSMonitorClass** incluyen:
 
 -   [**WmiMonitorAnalogVideoInputParams**](wmimonitoranalogvideoinputparams.md)
 -   [**WmiMonitorBasicDisplayParams**](wmimonitorbasicdisplayparams.md)
@@ -48,7 +48,7 @@ class MSMonitorClass
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase MSMonitorClass** no define ningún miembro.
 

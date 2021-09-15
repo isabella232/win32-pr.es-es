@@ -15,15 +15,15 @@ api_location:
 - d3dx9.lib
 - d3dx9.dll
 ms.openlocfilehash: 404147cfbab0b4fedb7c7356dc1c31d3e203eb5f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118293"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567844"
 ---
 # <a name="d3dxmatrixperspectiveoffcenterlh-function-d3dx9mathh"></a>Función D3DXMatrixPerspectiveOffCenterLH (D3dx9math.h)
 
-Crea una matriz de proyección de perspectiva personalizada y con la mano izquierda.
+Crea una matriz de proyección de perspectiva personalizada y a la izquierda.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,7 +60,7 @@ Puntero a la [**estructura D3DXMATRIX**](d3dxmatrix.md) que es el resultado de l
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor X mínimo del volumen de vista.
+Valor x mínimo del volumen de vista.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Valor Y máximo del volumen de vista.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor Z mínimo del volumen de vista.
+Valor z mínimo del volumen de vista.
 
 </dd> <dt>
 
@@ -113,15 +113,15 @@ Valor z máximo del volumen de vista.
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es una matriz de proyección de perspectiva a la izquierda personalizada.
+Puntero a una [**estructura D3DXMATRIX que**](d3dxmatrix.md) es una matriz de proyección de perspectiva personalizada y con la mano izquierda.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Todos los parámetros de la **función D3DXMatrixPerspectiveOffCenterLH** son distancias en el espacio de la cámara. Los parámetros describen las dimensiones del volumen de vista.
 
-El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXMatrixPerspectiveOffCenterLH** se puede usar como parámetro para otra función.
+El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la función **D3DXMatrixPerspectiveOffCenterLH** se puede usar como parámetro para otra función.
 
-Esta función usa la siguiente fórmula para calcular la matriz devuelta.
+Esta función usa la fórmula siguiente para calcular la matriz devuelta.
 
 
 ```

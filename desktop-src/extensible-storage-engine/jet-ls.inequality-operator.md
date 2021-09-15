@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d299034b167059fb5dda11dd64a3d193b18dc80749ea4ed1bd26853ab152ef6a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: da167f0deda8254d279e7d81c7219b6e9920673f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118979841"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566973"
 ---
 # <a name="jet_lsinequality-operator"></a>JET_LS. Operador de desigualdad
 
@@ -81,7 +81,7 @@ public static bool operator !=(
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias no son iguales.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

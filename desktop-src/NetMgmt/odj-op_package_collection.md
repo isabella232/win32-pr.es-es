@@ -5,12 +5,12 @@ ms.assetid: a7abf011-0335-4869-b4d9-144b2f392241
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: 26a664bc05cc076ac6e4fb945c5381fd5d7075ec6653c807230cc97a7db135f8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f8eb61397045a382fe5933025a4eeda2f563e838
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117983426"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566901"
 ---
 # <a name="op_package_part_collection-structure"></a>OP_PACKAGE_PART_COLLECTION estructura
 
@@ -27,7 +27,7 @@ typedef struct _OP_PACKAGE_PART_COLLECTION
 } OP_PACKAGE_PART_COLLECTION, *POP_PACKAGE_PART_COLLECTION;
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 ### <a name="cparts"></a>cParts
 

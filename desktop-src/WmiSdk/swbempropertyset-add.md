@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 52ee45eeb711254c18e8d81cd76fe598b0589fdb9d0e29b507e560fc3dccd167
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1ad5b40d31d162b287bdb1a387cd0602e0be1ce6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119897956"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567229"
 ---
 # <a name="swbempropertysetadd-method"></a>Método SWbemPropertySet.Add
 
@@ -55,14 +55,14 @@ objProperty = .Add( _
 *strName* \[ En\]
 </dt> <dd>
 
-Obligatorio. Nombre de la nueva propiedad.
+Necesario. Nombre de la nueva propiedad.
 
 </dd> <dt>
 
 *iCIMType* \[ En\]
 </dt> <dd>
 
-Obligatorio. Entero que representa el **calificador CIMType** de la nueva propiedad. Vea [**WbemCimTypeEnum para**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemcimtypeenum) obtener la lista con los calificadores **CIMType** y sus valores.
+Necesario. Entero que representa el **calificador CIMType** de la nueva propiedad. Vea [**WbemCimTypeEnum para**](/windows/desktop/api/Wbemdisp/ne-wbemdisp-wbemcimtypeenum) obtener la lista con los calificadores **CIMType** y sus valores.
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Para obtener un ejemplo de código que usa este método, vea el [**tema SWbemPro
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemPropertySet<br/>                                                      |
@@ -138,7 +138,7 @@ Para obtener un ejemplo de código que usa este método, vea el [**tema SWbemPro
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

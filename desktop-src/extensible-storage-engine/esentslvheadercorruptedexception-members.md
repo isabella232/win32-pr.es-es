@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102780
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: dddb11ccca75cb076a75efbbf02b708bf8669e6664290a2a002571bff04c358c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fa3b2fc28d4405e486580e55faef9fc3c38090da
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119362275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566457"
 ---
 # <a name="esentslvheadercorruptedexception-members"></a>Miembros de EsentSLVHeaderCorruptedException
 

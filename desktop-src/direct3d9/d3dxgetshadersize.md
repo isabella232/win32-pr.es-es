@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7354431fa8f9e8a177b8ccc63ef434a3f0a88add8e9e4736e3fd5fffb0cea811
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3017c5a5371e99bcf9e1d69827de0227d929f33a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119564825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567864"
 ---
 # <a name="d3dxgetshadersize-function"></a>Función D3DXGetShaderSize
 
@@ -66,7 +66,7 @@ Devuelve el tamaño del código de bytes del sombreador, en bytes.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

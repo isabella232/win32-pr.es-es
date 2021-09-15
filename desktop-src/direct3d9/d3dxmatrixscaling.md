@@ -15,11 +15,11 @@ api_location:
 - d3dx9.lib
 - d3dx9.dll
 ms.openlocfilehash: 97ccd4cc6207bb211259833d163793c3499b51a1
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567840"
 ---
 # <a name="d3dxmatrixscaling-function-d3dx9mathh"></a>Función D3DXMatrixScaling (D3dx9math.h)
 
@@ -85,7 +85,7 @@ Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
 Puntero a la transformación de escalado [**D3DXMATRIX**](d3dxmatrix.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De este modo, la **función D3DXMatrixScaling** se puede usar como parámetro para otra función.
 

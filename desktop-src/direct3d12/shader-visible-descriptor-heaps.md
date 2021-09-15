@@ -5,12 +5,12 @@ ms.assetid: 37691fd1-212d-4786-ac9c-861c1a6a4918
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96fbbb37f3337912780e5882918c0fcbc146c41f8dc60ddf3ba5d2a35c82c1bc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e650d324f0826e00d8ffff08348597112f6d5cc4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119045402"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567981"
 ---
 # <a name="shader-visible-descriptor-heaps"></a>Montones de descriptores visibles por el sombreador
 

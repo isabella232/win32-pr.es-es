@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d057890f0a63925c11ee92dcadc514a9446aed1fb61175f5b49ee261944852ec
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a65c3c600f95c76253bbba1a5ac40e94909518da
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120122714"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567497"
 ---
 # <a name="viewmaximize"></a>VIEW.maximize
 
@@ -57,11 +57,11 @@ Este método no devuelve ningún valor.
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
+| Version<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

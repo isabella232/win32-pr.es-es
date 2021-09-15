@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Tex.h
-ms.openlocfilehash: 94e505760d63d17ce8ab8c092323d521035ba8b74710a41243285f50f3f98188
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c4b6962561007fbc3e64b471c045e98b2f8328b4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118100747"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566725"
 ---
 # <a name="d3dx10_normalmap_flag-enumeration"></a>Enumeración D3DX10 \_ NORMALMAP \_ FLAG
 
 Estas marcas se usan para controlar cómo [**D3DX10ComputeNormalMap**](d3dx10computenormalmap.md) genera asignaciones normales. Cualquier número de estas marcas puede ser OR juntos en cualquier combinación.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++

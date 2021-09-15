@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 704002e17d963897111949f559c4798c433c3d939946a735362876fa2e22f7ff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e455250ae99075af449793d634fd6b3c2fafc4b0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118531416"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568012"
 ---
 # <a name="id3dx11effectvariableasscalar-method"></a>Método ID3DX11EffectVariable::AsScalar
 
@@ -47,7 +47,7 @@ Tipo: **[ **ID3DX11EffectScalarVariable**](id3dx11effectscalarvariable.md)\***
 
 Puntero a una variable escalar. Vea [**ID3DX11EffectScalarVariable.**](id3dx11effectscalarvariable.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 AsScalar devuelve una versión de la variable de efecto que se ha especializado en una variable escalar. De forma similar a una conversión, esta especialización devolverá un objeto no válido si la variable de efecto no contiene datos escalares.
 
@@ -69,7 +69,7 @@ Las aplicaciones pueden probar la validez del objeto devuelto llamando a [**IsVa
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
