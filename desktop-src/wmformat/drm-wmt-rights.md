@@ -3,7 +3,7 @@ title: WMT_RIGHTS enumeración (Wmdrmsdk.h)
 description: Define los derechos que se pueden especificar en una licencia DRM.
 ms.assetid: 9c034ca0-83e9-4a4c-8e98-96e2a95fd97c
 keywords:
-- WMT_RIGHTS de enumeración windows Media Format
+- WMT_RIGHTS enumeración windows Media Format
 - enumeración windows Media Format
 topic_type:
 - apiref
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a48c9ce3a276f060ac90dd15100ca8612e35116e124588e27f4ee36c1a0b8a4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 644cff9c94876fab11bc9fbe181ac0375d9444fb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119930745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466713"
 ---
-# <a name="wmt_rights-enumeration"></a>Enumeración \_ WMT RIGHTS
+# <a name="wmt_rights-enumeration"></a>Enumeración DE DERECHOS DE WMT \_
 
-El **tipo \_ de enumeración WMT RIGHTS** define los derechos que se pueden especificar en una licencia DRM.
+El **tipo de \_ enumeración WMT RIGHTS** define los derechos que se pueden especificar en una licencia DRM.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -57,7 +57,7 @@ Especifica el derecho a reproducir contenido sin restricciones.
 
 </dd> <dt>
 
-<span id="WMT_RIGHT_COPY_TO_NON_SDMI_DEVICE"></span><span id="wmt_right_copy_to_non_sdmi_device"></span>**COPIA DERECHA DE WMT \_ EN UN DISPOSITIVO QUE NO ES \_ \_ \_ \_ \_ SDMI**
+<span id="WMT_RIGHT_COPY_TO_NON_SDMI_DEVICE"></span><span id="wmt_right_copy_to_non_sdmi_device"></span>**COPIA CON \_ EL BOTÓN \_ DERECHO WMT EN UN \_ DISPOSITIVO QUE NO ES \_ \_ \_ SDMI**
 </dt> <dd>
 
 Especifica el derecho a copiar contenido en un dispositivo no compatible con secure digital Música Initiative (SDMI).
@@ -67,14 +67,14 @@ Especifica el derecho a copiar contenido en un dispositivo no compatible con sec
 <span id="WMT_RIGHT_COPY_TO_CD"></span><span id="wmt_right_copy_to_cd"></span>**COPIA DERECHA DE WMT \_ \_ EN \_ \_ CD**
 </dt> <dd>
 
-Especifica el derecho para copiar contenido en un CD.
+Especifica el derecho a copiar contenido en un CD.
 
 </dd> <dt>
 
 <span id="WMT_RIGHT_COPY_TO_SDMI_DEVICE"></span><span id="wmt_right_copy_to_sdmi_device"></span>**COPIA DERECHA DE WMT \_ \_ EN EL DISPOSITIVO \_ \_ \_ SDMI**
 </dt> <dd>
 
-Especifica el derecho para copiar contenido en un dispositivo compatible con sdmi.
+Especifica el derecho a copiar contenido en un dispositivo compatible con sdmi.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Especifica el derecho a reproducir contenido solo una vez.
 
 </dd> <dt>
 
-<span id="WMT_RIGHT_SAVE_STREAM_PROTECTED"></span><span id="wmt_right_save_stream_protected"></span>**WMT \_ RIGHT \_ SAVE \_ STREAM \_ PROTECTED**
+<span id="WMT_RIGHT_SAVE_STREAM_PROTECTED"></span><span id="wmt_right_save_stream_protected"></span>**GUARDAR \_ SECUENCIA PROTEGIDA CON \_ EL BOTÓN DERECHO \_ DE \_ WMT**
 </dt> <dd>
 
 Especifica el derecho para guardar contenido de un servidor.
@@ -95,18 +95,18 @@ Especifica el derecho para guardar contenido de un servidor.
 <span id="WMT_RIGHT_COPY"></span><span id="wmt_right_copy"></span>**COPIA DERECHA DE WMT \_ \_**
 </dt> <dd>
 
-Especifica el derecho para copiar contenido. Windows Drm multimedia 10 regula los dispositivos en los que se puede copiar el contenido mediante los niveles de protección de salida (OPL).
+Especifica el derecho para copiar contenido. Windows Drm multimedia 10 regula los dispositivos en los que se puede copiar el contenido mediante los niveles de protección de salida (OLO).
 
 </dd> <dt>
 
-<span id="WMT_RIGHT_COLLABORATIVE_PLAY"></span><span id="wmt_right_collaborative_play"></span>**JUEGO \_ COLABORATIVO DERECHO DE WMT \_ \_**
+<span id="WMT_RIGHT_COLLABORATIVE_PLAY"></span><span id="wmt_right_collaborative_play"></span>**WMT \_ RIGHT \_ COLLABORATIVE \_ PLAY**
 </dt> <dd>
 
 Especifica el derecho a reproducir contenido como parte de un escenario en línea en el que varios participantes pueden aportar canciones de su colección a una lista de reproducción compartida.
 
 </dd> <dt>
 
-<span id="WMT_RIGHT_SDMI_TRIGGER"></span><span id="wmt_right_sdmi_trigger"></span>**DESENCADENADOR DE \_ SDMI DERECHO \_ \_ WMT**
+<span id="WMT_RIGHT_SDMI_TRIGGER"></span><span id="wmt_right_sdmi_trigger"></span>**DESENCADENADOR DE \_ \_ SDMI DERECHO DE WMT \_**
 </dt> <dd>
 
 Reservado para uso futuro. No debe usarse.
@@ -120,11 +120,11 @@ Reservado para uso futuro. No debe usarse.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Estos valores son marcas de bits, por lo que se puede establecer una o varias mediante su combinación con el operador **OR** bit a bit.
 
-Cuando se usa Windows Media DRM 10, **WMT \_ RIGHT COPY TO NON \_ \_ \_ \_ SDMI \_ DEVICE**, **WMT RIGHT COPY TO \_ \_ \_ \_ SDMI \_ DEVICE** y **WMT RIGHT COPY TO \_ \_ \_ \_ CD** se reemplazan por **WMT RIGHT \_ \_ COPY**. Las limitaciones de los dispositivos en los que se puede copiar el contenido se especifican mediante el uso de niveles de protección de salida (OPL).
+Cuando se usa Windows Media DRM 10, **WMT \_ RIGHT COPY TO NON \_ \_ \_ \_ SDMI \_ DEVICE**, **WMT RIGHT COPY TO \_ \_ \_ \_ SDMI \_ DEVICE** y **WMT RIGHT COPY TO \_ \_ \_ \_ CD** se reemplazan por **WMT RIGHT \_ \_ COPY**. Las limitaciones de los dispositivos en los que se puede copiar el contenido se especifican mediante los niveles de protección de salida (OCL).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -136,7 +136,7 @@ Cuando se usa Windows Media DRM 10, **WMT \_ RIGHT COPY TO NON \_ \_ \_ \_ SDMI 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

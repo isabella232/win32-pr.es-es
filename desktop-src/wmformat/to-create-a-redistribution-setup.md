@@ -16,12 +16,12 @@ keywords:
 - WMFDist.exe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bb26b63a2379a72e2d97df876d91d8c57a6da9249c4e40525e81edacaf86542
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 70f0c2f241d8c1ad164bc14608103f423a7aba78
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119027303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360200"
 ---
 # <a name="to-create-a-redistribution-setup"></a>Para crear una configuración de redistribución
 

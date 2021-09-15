@@ -5,15 +5,15 @@ ms.assetid: 48b20c9b-38e7-472c-9606-b454850e14c1
 keywords:
 - HttpClientWithKerberosOverSslExample Native-Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d5ff1aade781ae83b03ffb69ab8f544c79904cb58371f5f6fdcd7683691c919
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d07c56af901c6842167753e788d005ee897e9041
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118963354"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466435"
 ---
 # <a name="httpclientwithkerberosoversslexample"></a>HttpClientWithKerberosOverSslExample
 

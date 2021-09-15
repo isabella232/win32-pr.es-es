@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Agregar una propiedad WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 97bc05c03556d81920852580300e0b5b02ddb6b68403aa3efd939cf7ec55bb55
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bba8944da155ca250edfed0c6e9160f555ba9551
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118109517"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568988"
 ---
 # <a name="adding-a-wmi-property"></a>Agregar una propiedad WMI
 
@@ -24,11 +24,11 @@ Una propiedad debe tener un tipo de datos. El tipo de datos del  identificador d
 
 La propiedad también puede ser una matriz. Por ejemplo, la propiedad identificador de seguridad **(SID)** de [**Win32 \_ Trustee**](/previous-versions/windows/desktop/secrcw32prov/win32-trustee) es una matriz de bytes (**uint8**) que contiene el SID. Las propiedades pueden contener objetos incrustados que son referencias a una o varias instancias de otra clase WMI. Las propiedades de lista de control de acceso discrecional **(DACL)** y lista de control de acceso del sistema **(SACL)** de [**Win32 \_ SecurityDescriptor,**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)por ejemplo, son matrices de objetos ACE de [**Win32 \_**](/previous-versions/windows/desktop/secrcw32prov/win32-ace) que describen los grupos y cuentas que tienen acceso. La **propiedad Group** de **\_ SecurityDescriptor de Win32** contiene una referencia a una única instancia de **Win32 \_ Trustee.** Para obtener más información, [vea Incrustar objetos en una clase](embedded-objects.md).
 
-Una propiedad puede tener varios [*calificadores*](gloss-q.md). Estos calificadores pueden [*ser Modelo de información común (CIM)*](gloss-c.md) o calificadores WMI o pueden ser específicos de [determinados](wmi-qualifiers.md) tipos de clases, por ejemplo, los calificadores de clase [Counter](qualifiers-specific-to-wmi-performance-classes.md) de rendimiento. Los calificadores especifican algún aspecto de la propiedad, como si es de solo lectura o si no se puede cambiar sin un privilegio específico. Una aplicación que intenta escribir en la propiedad [**\_ SECURITYDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)**DACL** de Win32, por ejemplo, requiere los privilegios **SeSecurityPrivilege** y **SeRestorePrivilege.** Para obtener más información, vea [Agregar un calificador](adding-a-qualifier.md).
+Una propiedad puede tener varios [*calificadores*](gloss-q.md). Estos calificadores pueden ser [*Modelo de información común (CIM)*](gloss-c.md) o calificadores WMI o pueden ser específicos de [determinados](wmi-qualifiers.md) tipos de clases, por ejemplo, los calificadores de clase [Counter](qualifiers-specific-to-wmi-performance-classes.md) de rendimiento. Los calificadores especifican algún aspecto de la propiedad, como si es de solo lectura o si no se puede cambiar sin un privilegio específico. Una aplicación que intenta escribir en la propiedad [**\_ SECURITYDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)**DACL** de Win32, por ejemplo, requiere los privilegios **SeSecurityPrivilege** y **SeRestorePrivilege.** Para obtener más información, vea [Agregar un calificador](adding-a-qualifier.md).
 
 Por último, una propiedad debe tener un nombre. Puede nombrar cualquier propiedad dentro de los límites de la práctica de programación estándar. Sin embargo, hay dos excepciones principales. En primer lugar, no puede usar ninguna palabra clave MOF, como "class", como nombre de propiedad. En segundo lugar, no puede usar ninguna palabra clave WQL, como "group", como nombre de propiedad. Para obtener más información sobre las palabras clave MOF y WQL, vea Tipos de datos [MOF](mof-data-types.md) y [WQL (SQL para WMI).](wql-sql-for-wmi.md)
 
-Tanto para C++ como Managed Object Format (MOF), se declaran las propiedades de una clase al mismo tiempo que se declara la clase.
+Para el código de C++ y Managed Object Format (MOF), se declaran las propiedades de una clase al mismo tiempo que se declara la clase.
 
 **Para definir una propiedad**
 

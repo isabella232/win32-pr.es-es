@@ -3,9 +3,9 @@ title: Propiedad currentMarker de IWMPControls
 description: La propiedad currentMarker obtiene o establece el número de marcador actual.
 ms.assetid: faf8c32a-66de-47ce-aa3d-6699d9f9bdda
 keywords:
-- propiedades de currentMarker Media Player de Windows
-- propiedad currentMarker de Windows Media Player, interfaz IWMPControls
-- Interfaz IWMPControls Windows Media Player, propiedad currentMarker
+- propiedad currentMarker Reproductor de Windows Media
+- propiedad currentMarker Reproductor de Windows Media interfaz , IWMPControls
+- Interfaz IWMPControls Reproductor de Windows Media , propiedad currentMarker
 topic_type:
 - apiref
 api_name:
@@ -17,15 +17,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: bfbcea42594b15b8da08248d38b5d8f72a1de29d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105690890"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473308"
 ---
-# <a name="iwmpcontrolscurrentmarker-property"></a>IWMPControls:: currentMarker (propiedad)
+# <a name="iwmpcontrolscurrentmarker-property"></a>Propiedad IWMPControls::currentMarker
 
-La propiedad **currentMarker** obtiene o establece el número de marcador actual.
+La **propiedad currentMarker** obtiene o establece el número de marcador actual.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,19 +46,19 @@ Public Property currentMarker As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System. Int32** que es el número del marcador.
+**System.Int32 que** es el número de marcador.
 
 ## <a name="remarks"></a>Observaciones
 
-La configuración de **currentMarker** hace que la reproducción se inicie desde el marcador especificado. Antes de intentar establecer **currentMarker**, determine si un archivo tiene marcadores y cuántos tiene con **IWMPMedia. markerCount**. Si un archivo no tiene marcadores, si se establece **currentMarker** en cualquier cosa pero cero, se produce un error. Establecer **currentMarker** en un número mayor que **markerCount** también produce un error.
+Al **establecer currentMarker,** la reproducción se inicia desde el marcador especificado. Antes de intentar establecer **currentMarker,** determine si un archivo tiene marcadores y cuántos tiene mediante **IWMPMedia.markerCount**. Si un archivo no tiene marcadores, si **se establece currentMarker** en cualquier cosa, menos cero, se producirá un error. Si **se establece currentMarker** en un número mayor que **markerCount,** también se producirá un error.
 
-La propiedad **currentMarker** siempre devuelve el marcador actual o el último, lo que significa que la posición del archivo real puede estar en el marcador actual o antes del marcador siguiente. Los marcadores se numeran a partir de 1, por lo que si un archivo tiene marcadores, puede establecer **currentMarker** en cero para cambiar la posición del archivo a cero.
+La **propiedad currentMarker** siempre devuelve el marcador actual o el último marcador, lo que significa que la posición real del archivo puede estar en el marcador actual o antes del marcador siguiente. Los marcadores se numeran a partir de 1, por lo que si un archivo tiene marcadores, puede establecer **currentMarker** en cero para cambiar la posición del archivo a cero.
 
-Hasta que se establezca el elemento multimedia actual (mediante **AxWindowsMediaPlayer. URL** o **AxWindowsMediaPlayer. CurrentMedia**), **currentMarker** devuelve cero.
+Hasta que se establece el elemento multimedia actual (mediante **AxWindowsMediaPlayer.URL** o **AxWindowsMediaPlayer.currentMedia),** **currentMarker** devuelve cero.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **currentMarker** para iniciar la reproducción de vídeo desde el marcador que corresponde a la propiedad SelectedIndex de un cuadro de lista que se ha rellenado con identificadores de marcador. El objeto **AxWMPLib. AxWindowsMediaPlayer** se representa mediante la variable denominada Player.
+En el ejemplo siguiente se **usa currentMarker** para iniciar la reproducción de vídeo desde el marcador que corresponde a la propiedad SelectedIndex de un cuadro de lista que se ha rellenado con identificadores de marcador. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -107,7 +107,7 @@ End Sub
 
 | Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versión<br/>   | Windows Media Player 9 series o posterior<br/>                                                                      |
+| Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
 | Ensamblado<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -117,16 +117,16 @@ End Sub
 
 <dl> <dt>
 
-[**AxWindowsMediaPlayer. currentMedia (VB y C#)**](axwmplib-axwindowsmediaplayer-currentmedia--vb-and-c.md)
+[**AxWindowsMediaPlayer.currentMedia (VB y C#)**](axwmplib-axwindowsmediaplayer-currentmedia--vb-and-c.md)
 </dt> <dt>
 
-[**AxWindowsMediaPlayer. URL (VB y C#)**](axwmplib-axwindowsmediaplayer-url--vb-and-c.md)
+[**AxWindowsMediaPlayer.URL (VB y C#)**](axwmplib-axwindowsmediaplayer-url--vb-and-c.md)
 </dt> <dt>
 
 [**Interfaz IWMPControls (VB y C#)**](iwmpcontrols--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMedia. markerCount (VB y C#)**](wmplibiwmpmedia-iwmpmedia-markercount--vb-and-c.md)
+[**IWMPMedia.markerCount (VB y C#)**](wmplibiwmpmedia-iwmpmedia-markercount--vb-and-c.md)
 </dt> </dl>
 
  

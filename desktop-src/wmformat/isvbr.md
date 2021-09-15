@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f5f1eb7ad35de25f89d47ac873bf592e3e473eb03c519b781051848bcf5239b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f83fbaebda6e4da3ae80379053bfa6d4a167c6d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119808715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466700"
 ---
 # <a name="isvbr"></a>IsVBR
 
@@ -29,20 +29,20 @@ g \_ wszWMIsVBR
 
 ## <a name="data-type"></a>Tipo de datos
 
-**TIPO WMT \_ \_ BOOL**
+**WMT \_ TYPE \_ BOOL**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Al acceder a **la interfaz IWMHeaderInfo3** del objeto de escritor, puede agregar o cambiar este valor. En otros objetos (editor de metadatos, lector y lector sincrónico), este valor es de solo lectura.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
 [**Lista de atributos**](attribute-list.md)
 </dt> <dt>
 
-[**Atributos de la estación de multidifusión**](multicast-station-attributes.md)
+[**Atributos de estación de multidifusión**](multicast-station-attributes.md)
 </dt> </dl>
 
  

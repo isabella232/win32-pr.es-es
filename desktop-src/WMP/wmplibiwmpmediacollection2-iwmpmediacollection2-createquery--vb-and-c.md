@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1644748008e2b222fef0101a96892d480ad4723b9892b94e0e69c387b54e53d7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 318b27a20ba801e1fbed58ff79c5bed7841f8c29
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120000095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359259"
 ---
 # <a name="iwmpmediacollection2createquery-method"></a>IWMPMediaCollection2::createQuery (método)
 
@@ -53,13 +53,13 @@ Este método no tiene parámetros.
 
 Interfaz **WMPLib.IWMPQuery** que representa una nueva consulta vacía.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La creación de una nueva consulta es el primer paso para crear una consulta compuesta.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente `createQuery` se usa para obtener una interfaz **IWMPQuery** que se inicializa en null. Dado que esta consulta no tiene ninguna condición agregada, cuando se usa como argumento en el método **getStringCollectionByQuery,** el método devolverá una colección de cadenas que contiene todos los elementos multimedia del tipo de medio especificado. A continuación, la colección de cadenas se muestra en un cuadro de lista.
+En el ejemplo siguiente `createQuery` se usa para obtener una interfaz **IWMPQuery** que se inicializa en null. Dado que esta consulta no tiene condiciones agregadas, cuando se usa como argumento en el método **getStringCollectionByQuery,** el método devolverá una colección de cadenas que contiene todos los elementos multimedia del tipo de medio especificado. A continuación, la colección de cadenas se muestra en un cuadro de lista.
 
 
 ```CSharp

@@ -3,7 +3,7 @@ title: XTYP_ADVREQ transacción (Ddeml.h)
 description: La transacción XTYP AD FTPQ informa al servidor de que hay una transacción de aviso pendiente en el par de nombre de tema y nombre de elemento especificado y que los datos correspondientes al nombre del tema y al par de nombres de elemento han \_ cambiado.
 ms.assetid: 9bd43e61-cbd6-4d53-bab3-90e85819b16b
 keywords:
-- XTYP_ADVREQ datos de transacción Exchange
+- XTYP_ADVREQ transacciones De datos Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18e751f17fb8634b0a105a36af5036f07d0212532349c267e5526d5d41f09367
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2884e838268342ab10c556c6ae3cfc8349ed5d2c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118544890"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465770"
 ---
 # <a name="xtyp_advreq-transaction"></a>Transacción \_ de XTYP AD ESTAQ
 
@@ -83,7 +83,7 @@ No se usa.
 *dwData1* 
 </dt> <dd>
 
-El recuento, en la palabra de orden bajo, de las transacciones **\_ adjetivo XTYP** que permanecen para procesarse en el mismo tema, elemento y nombre de formato establecidos en el contexto de la llamada actual a la función [**DdePostAdvise.**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) El recuento es cero si la transacción **\_ adverso de XTYP** actual es la última. Un servidor puede usar este recuento para determinar si se va a crear un identificador de datos **\_ APPOWNED** de HDATA para los datos de asesoramiento.
+El recuento, en la palabra de orden bajo, de las transacciones **\_ adjetivo XTYP** que permanecen para procesarse en el mismo tema, elemento y nombre de formato establecidos en el contexto de la llamada actual a la función [**DdePostAdvise.**](/windows/desktop/api/Ddeml/nf-ddeml-ddepostadvise) El recuento es cero si la transacción **\_ adverso XTYP** actual es la última. Un servidor puede usar este recuento para determinar si se va a crear un identificador de datos **\_ APPOWNED** de HDATA para los datos de asesoramiento.
 
 La palabra de orden bajo se establece en **CADV \_ LATEACK** si la DDEML emitió la transacción **\_ ADBIZQ de XTYP** debido a un mensaje DDE ACK de llegada tardía de un cliente que el servidor ha \_ sobrepasado.
 
@@ -102,7 +102,7 @@ No se usa.
 
 El servidor debe llamar primero a la función [**DdeCreateDataHandle**](/windows/desktop/api/Ddeml/nf-ddeml-ddecreatedatahandle) para crear un identificador de datos que identifique los datos modificados y, a continuación, devolver el identificador. El servidor debe devolver **NULL** si no puede completar la transacción.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un servidor no puede bloquear este tipo de transacción; Se omite el código de retorno **\_ CBR BLOCK.**
 
@@ -110,7 +110,7 @@ Un servidor no puede bloquear este tipo de transacción; Se omite el código de 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                   |
@@ -118,7 +118,7 @@ Un servidor no puede bloquear este tipo de transacción; Se omite el código de 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

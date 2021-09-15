@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 1ee3bf2e-f9c9-47d9-a0f2-efedd69770c5
-ms.openlocfilehash: c8da62afba7e8cc2f594f15c34e2f2bcf6af1ae8e03f857324d18e79b0967d4b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 485eda530adc4955abb27899d67ac0900eb0a910
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117857687"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468067"
 ---
 # <a name="shellfolderviewselecteditems-method"></a>Método ShellFolderView.SelectedItems
 
@@ -43,13 +43,13 @@ Tipo: **[ **FolderItems**](folderitems.md)\*\***
 
 Referencia de objeto al [**objeto FolderItems.**](folderitems.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Solo se puede llamar a **SelectedItems** en el sistema local. No funcionará cuando se ejecute en una página web a través de HTTP o UNC.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra el uso correcto de este método en JScript insertado en HTML.
+En el ejemplo siguiente se muestra el uso adecuado de este método en JScript incrustado en HTML.
 
 
 ```JScript
@@ -101,12 +101,12 @@ En el ejemplo siguiente se muestra el uso correcto de este método en JScript in
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

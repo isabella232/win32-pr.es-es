@@ -4,16 +4,16 @@ description: Los clientes recuperan información sobre un objeto que está espac
 ms.assetid: a1ebb50e-76cf-472d-bb0f-3f5bf5ed30d5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d762352c41f2adc764ac40c052632922a25ca995b9f2ec2f5008c668d0332bfd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9b9e49772a267e49d723a04005dcbc8a369510b3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119052512"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567368"
 ---
 # <a name="spatial-and-logical-navigation"></a>Navegación espacial y lógica
 
-Los clientes recuperan información sobre un objeto que está espacial o lógicamente cerca de otro objeto dentro del mismo contenedor llamando a [**IAccessible::accNavigate**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accnavigate) y especificando una de las constantes [de navegación](navigation-constants.md).
+Los clientes recuperan información sobre un objeto que está espacial o lógicamente cerca de otro objeto dentro del mismo contenedor llamando a [**IAccessible::accNavigate**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accnavigate) y especificando una de las constantes de [navegación](navigation-constants.md).
 
 Con *la navegación espacial,* los clientes navegan a un objeto en función de su ubicación en la pantalla. Los clientes navegan hacia arriba, hacia abajo, a la izquierda o a la derecha desde el objeto actual para obtener información sobre otro objeto dentro del mismo contenedor.
 
@@ -24,7 +24,7 @@ Con *los clientes de* navegación lógica, navegue hasta el objeto que precede o
 
 Independientemente de la dirección, la navegación visita cada elemento secundario visible que pertenece al objeto primario. Los elementos secundarios invisibles se pueden omitir con la navegación lógica. Además, cada elemento secundario se visita una sola vez y la navegación no se recorre en bucle. Es decir, se produce un error en el método si un cliente intenta navegar antes del primer objeto o después del último objeto.
 
-La navegación espacial y lógica están relacionadas. Por ejemplo, en una barra de herramientas horizontal, la llamada al método con [**NAVDIR \_ RIGHT**](navigation-constants.md) debe generar los mismos resultados que llamar al método [**con NAVDIR \_ NEXT**](navigation-constants.md).
+La navegación espacial y lógica están relacionadas. Por ejemplo, en una barra de herramientas horizontal, la llamada al método con [**NAVDIR \_ RIGHT**](navigation-constants.md) debe producir los mismos resultados que llamar al método [**con NAVDIR \_ NEXT**](navigation-constants.md).
 
 El objeto inicial de la navegación es el propio objeto o uno de los elementos secundarios del **objeto,** excepto cuando se especifica [**NAVDIR \_ FIRSTCHILD**](navigation-constants.md) o [**NAVDIR \_ LASTCHILD;**](navigation-constants.md) en este caso, la navegación debe comenzar desde el propio objeto.
 
@@ -40,7 +40,7 @@ El gráfico siguiente es un ejemplo de un objeto flotante que no se recorta a su
 
 En la navegación lógica, los desarrolladores que diseñan los objetos establecen las relaciones entre ellos. La navegación lógica es más subjetiva que la navegación espacial. Además, el orden en la navegación lógica no es el mismo que el que se usa con los iD secundarios.
 
-En el caso de los objetos que tienen ubicaciones de pantalla, los desarrolladores de servidores deben establecer el orden de navegación de la manera que la mayoría de los usuarios considerarían lógico. En países o regiones de habla inglesa, por ejemplo, esto significa una ordenación de izquierda a derecha, de arriba a abajo.
+En el caso de los objetos que tienen ubicaciones de pantalla, los desarrolladores de servidores deben establecer el orden de navegación de la manera en que la mayoría de los usuarios considerarían lógico. En países o regiones de habla inglesa, por ejemplo, esto significa una ordenación de izquierda a derecha, de arriba a abajo.
 
 El orden de navegación lógico debe ser el orden de navegación del teclado paralelo. Por ejemplo, un cuadro de diálogo contiene los botones de inserción **Aceptar** y **Cancelar** y algunos controles de edición. Un cliente que llama a [**IAccessible::accNavigate**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accnavigate) para navegar al objeto siguiente o anterior de ese cuadro de diálogo se mueve en el mismo orden que un usuario que presiona TAB o MAYÚS+TAB para mover el foco entre los elementos.
 

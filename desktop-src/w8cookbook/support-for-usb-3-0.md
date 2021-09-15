@@ -4,12 +4,12 @@ description: Compatibilidad con USB 3.0
 ms.assetid: AACE4B57-A03F-40C7-AFDD-514D29F24521
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ca18cd9f38b17dfaa029738497cf93a43fd85477c9d3c5b30e83f506d5596e3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c2f6fa342efa5e7b4fd95287a2061482fa0cbb9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117671624"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466265"
 ---
 # <a name="support-for-usb-30"></a>Compatibilidad con USB 3.0
 
@@ -21,9 +21,9 @@ ms.locfileid: "117671624"
 
 ## <a name="description"></a>Descripción
 
-En Windows 8 y Windows Server 2012, se ha agregado compatibilidad con USB 3.0. Para ello, agregamos una nueva pila de software para encender el controlador de host USB 3.0, denominado controlador de host eXtensible (XHC). Se ha mantenido la paridad de la interfaz, el nivel de IRQL, el contexto del autor de la llamada, el estado de error, la frecuencia de reintento, entre otros. No debería haber ninguna diferencia al interactuar con un dispositivo conectado a través de USB 2.0 frente a USB 3.0.
+En Windows 8 y Windows Server 2012, hemos agregado compatibilidad con USB 3.0. Para ello, agregamos una nueva pila de software para encender el controlador de host USB 3.0, denominado controlador de host eXtensible (XHC). Hemos mantenido la paridad de la interfaz, el nivel de IRQL, el contexto del autor de la llamada, el estado de error, la frecuencia de reintento, entre otros. No debería haber ninguna diferencia al interactuar con un dispositivo conectado a través de USB 2.0 frente a USB 3.0.
 
-Sin embargo, si va a escribir un controlador para un nuevo dispositivo USB 3.0, opte definitivamente por las nuevas funcionalidades de USB 3.0.
+Sin embargo, si va a escribir un controlador para un nuevo dispositivo USB 3.0, opte definitivamente por nuevas funcionalidades USB 3.0.
 
 ## <a name="manifestation"></a>Manifestación
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: db168b710d0454c30ccd3dc19252b455ae22178cb70bba84972b8f904a411109
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e9d5589b0f02bfcb85f9c0f0dc4dc5de69e2fb23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119857115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270215"
 ---
 # <a name="d3dxcreatemeshfvf-function"></a>Función D3DXCreateMeshFVF
 
@@ -50,7 +50,7 @@ HRESULT D3DXCreateMeshFVF(
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número de caras para la malla. El intervalo válido para este número es mayor que 0 y uno menor que el valor DWORD máximo, normalmente de 2 al 1, porque el último índice está reservado.
+Número de caras de la malla. El intervalo válido para este número es mayor que 0 y uno menor que el valor máximo de DWORD, normalmente de 2 al 1, porque el último índice está reservado.
 
 </dd> <dt>
 
@@ -59,7 +59,7 @@ Número de caras para la malla. El intervalo válido para este número es mayor 
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número de vértices de la malla. Este parámetro debe ser mayor que 0.
+Número de vértices para la malla. Este parámetro debe ser mayor que 0.
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ Número de vértices de la malla. Este parámetro debe ser mayor que 0.
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinación de una o varias marcas de la [**enumeración D3DXMESH,**](./d3dxmesh.md) especificando las opciones de creación para la malla.
+Combinación de una o varias marcas de la [**enumeración D3DXMESH,**](./d3dxmesh.md) especificando opciones de creación para la malla.
 
 </dd> <dt>
 
@@ -116,7 +116,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

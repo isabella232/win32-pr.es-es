@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55100999
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 48f3702d9650c63f0e48fc71e7516bdd62236f95fd59504bd80f9054d3b5025a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 820c40f5f2987061601495a0f75fec8896c0c880
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117716339"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127358986"
 ---
 # <a name="esentaccessdeniedexception-methods"></a>Métodos de EsentAccessDeniedException 
 

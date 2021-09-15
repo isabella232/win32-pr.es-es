@@ -5,17 +5,17 @@ title: Función InitializeSecurityContext (Digest) (Sspi.h)
 ms.topic: reference
 ms.date: 07/25/2019
 ms.openlocfilehash: f09baebb4419da9b90dd6b0585788c5c7993c09d
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467322"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567528"
 ---
 # <a name="initializesecuritycontext-digest-function"></a>Función InitializeSecurityContext (Digest)
 
 La **función InitializeSecurityContext (Digest)** inicia el contexto de seguridad de salida del lado cliente [*desde*](../secgloss/s-gly.md) un identificador de credenciales. La función se usa para crear un contexto [*de seguridad entre*](../secgloss/s-gly.md) la aplicación cliente y un par remoto. **InitializeSecurityContext (Digest)** devuelve un token que el cliente debe pasar al elemento remoto del mismo nivel, que el mismo nivel envía a su vez a la implementación de seguridad local a través de la llamada [**AcceptSecurityContext (Digest).**](acceptsecuritycontext--digest.md) Todos los autores de la llamada deben considerar opaco el token generado.
 
-Normalmente, se **llama a la función InitializeSecurityContext (Digest)** en un bucle hasta que se establece un contexto [*de*](../secgloss/s-gly.md) seguridad suficiente.
+Normalmente, se **llama a la función InitializeSecurityContext (Digest)** en un bucle hasta que se establece un contexto de [*seguridad*](../secgloss/s-gly.md) suficiente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,7 +43,7 @@ SECURITY_STATUS SEC_Entry InitializeSecurityContext(
 
 <dl> <dt>
 
-*phCredential* \[ en, opcional\]
+*phCredential* \[ in, opcional\]
 </dt> <dd>
 
 Identificador de las credenciales [**devueltas por AcquireCredentialsHandle (Digest).**](acquirecredentialshandle--digest.md) Este identificador se usa para compilar el contexto [*de seguridad*](../secgloss/s-gly.md). La **función InitializeSecurityContext (Digest)** requiere al menos credenciales OUTBOUND.
@@ -53,7 +53,7 @@ Identificador de las credenciales [**devueltas por AcquireCredentialsHandle (Dig
 *phContext* \[ in, opcional\]
 </dt> <dd>
 
-Puntero a una [estructura CtxtHandle.](sspi-handles.md) En la primera llamada a **InitializeSecurityContext (Digest),** este puntero es **NULL.** En la segunda llamada, este parámetro es un puntero al identificador al contexto parcialmente formado devuelto en el *parámetro phNewContext* por la primera llamada.
+Puntero a una [estructura CtxtHandle.](sspi-handles.md) En la primera llamada a **InitializeSecurityContext (Digest),** este puntero es **NULL.** En la segunda llamada, este parámetro es un puntero al identificador al contexto con formato parcial devuelto en el *parámetro phNewContext* por la primera llamada.
 
 Este parámetro es opcional y se puede establecer en **NULL.**
 
@@ -74,14 +74,14 @@ Marcas de bits que indican solicitudes para el contexto. No todos los paquetes p
 
 
 
-| Valor | Significado | 
+| Value | Significado | 
 |-------|---------|
-| <span id="ISC_REQ_ALLOCATE_MEMORY"></span><span id="isc_req_allocate_memory"></span><dl><dt><strong>ISC_REQ_ALLOCATE_MEMORY</strong></dt></dl> | El [*paquete de seguridad*](../secgloss/s-gly.md) le asigna búferes de salida. Cuando haya terminado de usar los búferes de salida, desálelos llamando a la [<strong>función FreeContextBuffer.</strong>](/windows/win32/api/sspi/nf-sspi-freecontextbuffer)<br /> | 
+| <span id="ISC_REQ_ALLOCATE_MEMORY"></span><span id="isc_req_allocate_memory"></span><dl><dt><strong>ISC_REQ_ALLOCATE_MEMORY</strong></dt></dl> | El [*paquete de seguridad*](../secgloss/s-gly.md) le asigna búferes de salida. Cuando haya terminado de usar los búferes de salida, puede liberarlos llamando a la [<strong>función FreeContextBuffer.</strong>](/windows/win32/api/sspi/nf-sspi-freecontextbuffer)<br /> | 
 | <span id="ISC_REQ_CONFIDENTIALITY"></span><span id="isc_req_confidentiality"></span><dl><dt><strong>ISC_REQ_CONFIDENTIALITY</strong></dt></dl> | Cifre los mensajes mediante la [<strong>función EncryptMessage.</strong>](encryptmessage--general.md)<br /> | 
-| <span id="ISC_REQ_EXTENDED_ERROR"></span><span id="isc_req_extended_error"></span><dl><dt><strong>ISC_REQ_EXTENDED_ERROR</strong></dt></dl> | Cuando se produzcan errores, se notificará a la parte remota.<br /> | 
+| <span id="ISC_REQ_EXTENDED_ERROR"></span><span id="isc_req_extended_error"></span><dl><dt><strong>ISC_REQ_EXTENDED_ERROR</strong></dt></dl> | Cuando se producen errores, se notificará a la parte remota.<br /> | 
 | <span id="ISC_REQ_HTTP"></span><span id="isc_req_http"></span><dl><dt><strong>ISC_REQ_HTTP</strong></dt></dl> | Use Digest para HTTP. Omita esta marca para usar Digest como un mecanismo SASL.<br /> | 
 | <span id="ISC_REQ_INTEGRITY"></span><span id="isc_req_integrity"></span><dl><dt><strong>ISC_REQ_INTEGRITY</strong></dt></dl> | Firmar mensajes y comprobar firmas mediante las [<strong>funciones EncryptMessage</strong>](encryptmessage--general.md) y [<strong>MakeSignature.</strong>](makesignature.md)<br /> | 
-| <span id="ISC_REQ_MUTUAL_AUTH"></span><span id="isc_req_mutual_auth"></span><dl><dt><strong>ISC_REQ_MUTUAL_AUTH</strong></dt></dl> | Se cumple la directiva de autenticación mutua del servicio.<br /><blockquote>[!Caution]<br />Esto no significa necesariamente que se realice la autenticación mutua, solo que se cumple la directiva de autenticación del servicio. Para asegurarse de que se realiza la autenticación mutua, llame a [<strong>la función QueryContextAttributes (Digest).</strong>](querycontextattributes--digest.md)</blockquote><br /> | 
+| <span id="ISC_REQ_MUTUAL_AUTH"></span><span id="isc_req_mutual_auth"></span><dl><dt><strong>ISC_REQ_MUTUAL_AUTH</strong></dt></dl> | Se cumple la directiva de autenticación mutua del servicio.<br /><blockquote>[!Caution]<br />Esto no significa necesariamente que se realice la autenticación mutua, solo que se cumple la directiva de autenticación del servicio. Para asegurarse de que se realiza la autenticación mutua, llame a la [<strong>función QueryContextAttributes (Digest).</strong>](querycontextattributes--digest.md)</blockquote><br /> | 
 | <span id="ISC_REQ_REPLAY_DETECT"></span><span id="isc_req_replay_detect"></span><dl><dt><strong>ISC_REQ_REPLAY_DETECT</strong></dt></dl> | Detecte los mensajes reproducido que se han codificado mediante las [<strong>funciones EncryptMessage</strong>](encryptmessage--general.md) [<strong>o MakeSignature.</strong>](makesignature.md)<br /> | 
 | <span id="ISC_REQ_SEQUENCE_DETECT"></span><span id="isc_req_sequence_detect"></span><dl><dt><strong>ISC_REQ_SEQUENCE_DETECT</strong></dt></dl> | Detectar mensajes recibidos fuera de la secuencia.<br /> | 
 | <span id="ISC_REQ_STREAM"></span><span id="isc_req_stream"></span><dl><dt><strong>ISC_REQ_STREAM</strong></dt></dl> | Admite una conexión orientada a secuencias.<br /> | 
@@ -137,7 +137,7 @@ Puntero a una [estructura CtxtHandle.](sspi-handles.md) En la primera llamada a 
 *pOutput* \[ in, out, optional\]
 </dt> <dd>
 
-Puntero a una [**estructura SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) que contiene punteros a la [**estructura SecBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer) que recibe los datos de salida. Si se ha especificado un búfer como SEC \_ READWRITE en la entrada, estará allí en la salida. El sistema asignará un búfer para el token de seguridad si se solicita (a través de ISC REQ ALLOCATE MEMORY) y rellenará la dirección en el descriptor del búfer para \_ \_ el token de \_ seguridad.
+Puntero a una [**estructura SecBufferDesc**](/windows/win32/api/sspi/ns-sspi-secbufferdesc) que contiene punteros a la [**estructura SecBuffer**](/windows/win32/api/sspi/ns-sspi-secbuffer) que recibe los datos de salida. Si se ha especificado un búfer como SEC \_ READWRITE en la entrada, estará ahí en la salida. El sistema asignará un búfer para el token de seguridad si se solicita (a través de ISC REQ ALLOCATE MEMORY) y rellenará la dirección en el descriptor del búfer para \_ \_ el token de \_ seguridad.
 
 Este parámetro recibe la respuesta de desafío que se debe enviar al servidor.
 
@@ -196,7 +196,7 @@ Si se produce un error en la función, la función devuelve uno de los siguiente
 | <dl> <dt>**ERROR \_ INTERNO DE SEC E \_ \_**</dt> </dl>               | Error que no se ha asignado a un código de error SSPI.<br/>                                                                                                                                                                                                                                |
 | <dl> <dt>**SEG \_ E \_ IDENTIFICADOR NO \_ VÁLIDO**</dt> </dl>               | El identificador pasado a la función no es válido.<br/>                                                                                                                                                                                                                                          |
 | <dl> <dt>**SEC \_ E TOKEN NO \_ \_ VÁLIDO**</dt> </dl>                | El error se debe a un token de entrada con formato incorrecto, como un token dañado en tránsito, un token de tamaño incorrecto o un token pasado a la delegación restringida [*incorrecta.*](../secgloss/s-gly.md) Pasar un token al paquete incorrecto puede ocurrir si el cliente y el servidor no negociaron la delegación [*restringida adecuada.*](../secgloss/s-gly.md)<br/> |
-| <dl> <dt>**SE \_ DENEGÓ \_ EL INICIO DE SESIÓN POR SEGUNDO \_ E**</dt> </dl>                 | Error de inicio de sesión.<br/>                                                                                                                                                                                                                                                                        |
+| <dl> <dt>**SE \_ DENEGÓ EL \_ INICIO DE SESIÓN \_ E.**</dt> </dl>                 | Error de inicio de sesión.<br/>                                                                                                                                                                                                                                                                        |
 | <dl> <dt>**SEC \_ E \_ NO \_ AUTHENTICATING \_ AUTHORITY**</dt> </dl> | No se pudo ponerse en contacto con ninguna autoridad para la autenticación. El nombre de dominio de la entidad de autenticación podría ser incorrecto, el dominio podría ser inaccesible o podría haber habido un error en la relación de confianza.<br/>                                                                                  |
 | <dl> <dt>**SEC \_ E \_ NO \_ CREDENTIALS**</dt> </dl>               | No hay credenciales disponibles en la [*delegación restringida.*](../secgloss/s-gly.md)<br/>                                                                                                                                                  |
 | <dl> <dt>**SEG \_ E \_ DESTINO \_ DESCONOCIDO**</dt> </dl>               | No se ha reconocido el destino.<br/>                                                                                                                                                                                                                                                           |
@@ -207,7 +207,7 @@ Si se produce un error en la función, la función devuelve uno de los siguiente
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El autor de la llamada es responsable de determinar si los atributos de contexto final son suficientes. Si, por ejemplo, se solicitó confidencialidad, pero no se pudo establecer, algunas aplicaciones pueden optar por apagar la conexión inmediatamente.
 
@@ -234,11 +234,11 @@ Si la función devuelve una de las respuestas de error, no se acepta la respuest
 
 Si la función devuelve SEC I CONTINUE NEEDED, SEC I COMPLETE NEEDED o SEC I COMPLETE AND CONTINUE, se repiten los pasos \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ 2 y 3.
 
-Para inicializar [*un*](../secgloss/s-gly.md)contexto de seguridad, puede ser necesaria más de una llamada a esta función, en función del mecanismo de autenticación subyacente, así como de las opciones especificadas en el *parámetro fContextReq.*
+Para inicializar [*un*](../secgloss/s-gly.md)contexto de seguridad, es posible que se requiera más de una llamada a esta función, en función del mecanismo de autenticación subyacente, así como de las opciones especificadas en el *parámetro fContextReq.*
 
-Los *parámetros fContextReq* y *pfContextAttributes* son máscaras de bits que representan varios atributos de contexto. Para obtener una descripción de los distintos atributos, vea [Requisitos de contexto.](context-requirements.md) El *parámetro pfContextAttributes* es válido en cualquier devolución correcta, pero solo en la devolución correcta final debe examinar las marcas que pertenecen a los aspectos de seguridad del contexto. Los resultados intermedios pueden establecer, por ejemplo, la marca \_ ISC RET \_ \_ ALLOCATED MEMORY.
+Los *parámetros fContextReq* y *pfContextAttributes* son máscaras de bits que representan varios atributos de contexto. Para obtener una descripción de los distintos atributos, vea [Requisitos de contexto.](context-requirements.md) El *parámetro pfContextAttributes* es válido en cualquier devolución correcta, pero solo en la devolución correcta final debe examinar las marcas que pertenecen a los aspectos de seguridad del contexto. Los resultados intermedios pueden establecer, por ejemplo, la marca \_ ISC RET \_ ALLOCATED \_ MEMORY.
 
-Si se establece la marca ISC \_ REQ USE SUPPLIED CREDS, el paquete de seguridad debe buscar un tipo de búfer \_ \_ \_ SECBUFFER PKG PARAMS [](../secgloss/s-gly.md) en el búfer de entrada \_ \_ *pInput.* No se trata de una solución genérica, pero permite un emparejamiento seguro de [*paquetes*](../secgloss/s-gly.md) de seguridad y aplicaciones cuando corresponda.
+Si se establece la marca ISC \_ REQ USE SUPPLIED CREDS, el paquete de seguridad debe buscar un tipo de búfer \_ \_ \_ SECBUFFER PKG PARAMS [](../secgloss/s-gly.md) en el búfer de entrada \_ \_ *pInput.* No se trata de una solución genérica, pero permite un emparejamiento seguro de [*paquete*](../secgloss/s-gly.md) de seguridad y aplicación cuando corresponda.
 
 Si se especificó ISC REQ ALLOCATE MEMORY, el autor de la llamada debe liberar la memoria mediante \_ una llamada a la función \_ \_ [**FreeContextBuffer.**](/windows/win32/api/sspi/nf-sspi-freecontextbuffer)
 
@@ -246,7 +246,7 @@ Por ejemplo, el token de entrada podría ser el desafío de un administrador de 
 
 La acción que realiza el cliente depende del código de retorno de esta función. Si el código de retorno es SEC E OK, no habrá ninguna segunda llamada \_ \_ a **InitializeSecurityContext (Digest)** y no se espera ninguna respuesta del servidor. Si el código devuelto es SEC I CONTINUE NEEDED, el cliente espera un token en respuesta del servidor y lo pasa en una segunda llamada \_ \_ a \_ **InitializeSecurityContext (Digest).** El código de retorno SEC I COMPLETE NEEDED indica que el cliente debe terminar de compilar el mensaje \_ y llamar a la función \_ \_ [**CompleteAuthToken.**](/windows/win32/api/sspi/nf-sspi-completeauthtoken) El código SEC \_ I COMPLETE AND CONTINUE incorpora ambas \_ \_ \_ acciones.
 
-Si **InitializeSecurityContext (Digest)** devuelve un resultado correcto en la primera (o solo) llamada, el autor de la llamada finalmente debe llamar a la función [**DeleteSecurityContext**](/windows/win32/api/sspi/nf-sspi-deletesecuritycontext) en el identificador devuelto, incluso si se produce un error en la llamada en una etapa posterior del intercambio de autenticación.
+Si **InitializeSecurityContext (Digest)** devuelve un resultado correcto en la primera (o única) llamada, el autor de la llamada finalmente debe llamar a la función [**DeleteSecurityContext**](/windows/win32/api/sspi/nf-sspi-deletesecuritycontext) en el identificador devuelto, incluso si se produce un error en la llamada en una etapa posterior del intercambio de autenticación.
 
 El cliente puede llamar de **nuevo a InitializeSecurityContext (Digest)** después de que se haya completado correctamente. Esto indica al paquete [*de seguridad que*](../secgloss/s-gly.md) se quiere una reauauticación.
 
@@ -256,7 +256,7 @@ Los llamadores en modo kernel tienen las siguientes diferencias: el nombre de de
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                   |

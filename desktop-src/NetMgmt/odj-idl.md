@@ -5,12 +5,12 @@ ms.assetid: d495e2f0-5174-4d05-9297-4b4b0f200f08
 ms.topic: article
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: f5b58287b778aa46de1bce9e99556c8c144f22d00b3699622cc8244cb092d02d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: dec651c721cbe6bbf74123692137a01e528a82e5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119911625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568565"
 ---
 # <a name="offline-domain-join-idl-definitions"></a>Definiciones de IDL de unión a un dominio sin conexión
 
@@ -26,7 +26,7 @@ Las estructuras de datos de unión a un dominio sin conexión (ODJ) no se define
 
 <a href="/windows/win32/api/lmjoin/nf-lmjoin-netrequestprovisioningpackageinstall">NetRequestProvisioningPackageInstall</a>
 
-En algunas situaciones, por ejemplo, la interoperabilidad con plataformas no Windows, puede ser necesario realizar la serialización y deserialización manuales. Este tema contiene definiciones para todas las estructuras de datos de ODJ en una sola unidad de compilación de IDL y se incluye para la recopilación. También se define una definición de archivo de configuración de aplicación (ACF) correspondiente. Este contenido no se proporciona como parte de ningún SDK. Por lo tanto, el contenido siguiente debe copiarse en el código y compilarse con un compilador IDL. El compilador de IDL producirá las funciones de código auxiliar de serialización o deserialización necesarias, que luego se vinculan a la aplicación. Consulte <a href="/windows/win32/rpc/type-serialization">Serialización de tipos</a> para obtener más detalles sobre cómo serializar y deserialización de tipos.
+En algunas situaciones, por ejemplo, la interoperabilidad con plataformas que no Windows, puede que sea necesario realizar la serialización manual y la deserialización. Este tema contiene definiciones de todas las estructuras de datos de ODJ en una sola unidad de compilación de IDL y se incluye para la recopilación. También se define una definición de archivo de configuración de aplicación (ACF) correspondiente. Este contenido no se proporciona como parte de ningún SDK. Por lo tanto, el contenido siguiente debe copiarse en el código y compilarse con un compilador IDL. El compilador de IDL producirá las funciones de código auxiliar de serialización o deserialización necesarias, que luego se vinculan a la aplicación. Consulte <a href="/windows/win32/rpc/type-serialization">Serialización de tipos</a> para obtener más detalles sobre cómo serializar y deserialización de tipos.
 
 Consulte las secciones de la estructura individual para obtener documentación detallada de los miembros.
 
@@ -228,7 +228,7 @@ interface ODJ
 }
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <a href="/windows/win32/midl/midl-start-page">Lenguaje de definición de interfaz de Microsoft</a>
 

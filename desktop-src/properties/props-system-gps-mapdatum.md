@@ -4,12 +4,12 @@ ms.assetid: 1579ee42-57ca-44b9-84f4-c9ea4eea6788
 title: System.GPS.MapDatum
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ddd2099db4800868ff1d7a2a50f88be36b7cdeabff3da1cd8d00eb6a37b36f0a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 095ff64ea4f13b0fe0e908a01d0a4ebea8c17cd3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117866219"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468490"
 ---
 # <a name="systemgpsmapdatum"></a>System.GPS.MapDatum
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a1d0d9c884dbbfb8e4ae718985be90d22002bd0f2a4cf25f45d02ded12718d2a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 47f28ea3a3fb6d1556e699fed3820e228faf6604
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118300145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569356"
 ---
 # <a name="d3dxcolorsubtract-function"></a>Función D3DXColorSubtract
 
@@ -75,7 +75,7 @@ Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
 Esta función devuelve un puntero a una [**estructura D3DXCOLOR**](d3dxcolor.md) que es la diferencia entre dos valores de color.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la **función D3DXColorSubtract** se puede usar como parámetro para otra función.
 
@@ -90,7 +90,7 @@ El valor devuelto para esta función es el mismo valor devuelto en el parámetro
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

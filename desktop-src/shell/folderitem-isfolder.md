@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: d104d33e843d46cc63a0a960afa3d36b56ddbd28b5a563f8973ee957d82da87e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9bf0bd4eb9b7964620fe705d6e8f4d10644ca234
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118223989"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468238"
 ---
 # <a name="folderitemisfolder-property"></a>Propiedad FolderItem.IsFolder
 
@@ -41,7 +41,7 @@ Valor **booleano** que recibe **true** si el elemento es una carpeta o **false**
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa IsFolder** para determinar si el Windows es una carpeta. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa IsFolder** para determinar si Windows directorio es una carpeta. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -151,7 +151,7 @@ End Sub
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

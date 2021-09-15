@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1baf645aecd7ae92c56039e6fc604c88d9af3c75db473c82553315e01b4dfc7c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1cd6d9e540fcb5337b6e2a4cefa93ff2bad9bcdf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119032603"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468216"
 ---
 # <a name="folderitemverbparent-property"></a>Propiedad FolderItemVerb.Parent
 

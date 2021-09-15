@@ -1,19 +1,19 @@
 ---
-description: La forma fácil de usar de System.Photo.Orientation. No está pensado para analizarse mediante programación.
+description: La forma fácil de usar de System.Photo.Orientation. No diseñado para analizarse mediante programación.
 ms.assetid: 9c9631b2-4c0e-44ee-9df7-5eefcc2c6b95
 title: System.Photo.OrientationText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fcda4cfd43e69c0abfca81ca31de14a24cc0b36edc57d225a451d092cea6770a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ecdcb8e9ab8a2c4577fec8392a22081fc439f17
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117682491"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468379"
 ---
 # <a name="systemphotoorientationtext"></a>System.Photo.OrientationText
 
-La forma fácil de usar [de System.Photo.Orientation](./props-system-photo-orientation.md). No está pensado para analizarse mediante programación.
+La forma fácil de usar [de System.Photo.Orientation](./props-system-photo-orientation.md). No diseñado para analizarse mediante programación.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

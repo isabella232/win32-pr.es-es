@@ -4,12 +4,12 @@ ms.assetid: 1a93a505-0c63-4cbf-9ad3-8c99f40315a1
 title: System.Journal.EntryType
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84fb701b84ca472d39c0b27197ac10a352dd36d6005333d73a1da230832e5692
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f4c4a094cae730b122478209adddff4e68482cfc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120058795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359674"
 ---
 # <a name="systemjournalentrytype"></a>System.Journal.EntryType
 
@@ -28,7 +28,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

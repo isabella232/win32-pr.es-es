@@ -4,12 +4,12 @@ ms.assetid: 82de0e60-9341-4266-bcff-cdb8a7f244a5
 title: WinHTTP frente a WinINet
 ms.topic: article
 ms.date: 02/22/2019
-ms.openlocfilehash: ac12ba99babb04d636390879600ea198f2103d72577390a7e79a450ca259f071
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f011aa57a866deaa82e5dc1737bfa68a6edebc4c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118114033"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465618"
 ---
 # <a name="winhttp-vs-wininet"></a>WinHTTP frente a WinINet
 

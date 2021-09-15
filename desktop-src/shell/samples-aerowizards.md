@@ -1,5 +1,5 @@
 ---
-description: Muestra cómo migrar el software del asistente 97 al asistente de Aero.
+description: Muestra cómo migrar el software del Asistente 97 al Asistente de Aero.
 title: Ejemplo de asistentes de Aero
 ms.topic: article
 ms.date: 05/31/2018
@@ -10,22 +10,22 @@ api_location: ''
 topic_type:
 - kbArticle
 ms.openlocfilehash: 62c50ac6a8f053039e819e8aacfcbb2c8ef4d47d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104985830"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468123"
 ---
 # <a name="aero-wizards-sample"></a>Ejemplo de asistentes de Aero
 
-Muestra cómo migrar el software del asistente 97 al asistente de Aero.
+Muestra cómo migrar el software del Asistente 97 al Asistente de Aero.
 
 En este tema se incluyen las siguientes secciones.
 
 -   [Requisitos](#requirements)
 -   [Descargar el ejemplo](#downloading-the-sample)
 -   [Compilar el ejemplo](#building-the-sample)
--   [Ejecutar el ejemplo](#running-the-sample)
+-   [Ejecución del ejemplo](#running-the-sample)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -40,21 +40,21 @@ En este tema se incluyen las siguientes secciones.
 
  
 
-Para conocer los requisitos adicionales, consulte el archivo Léame incluido con el ejemplo.
+Para obtener requisitos adicionales, consulte el archivo Léame incluido con el ejemplo.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-| Ubicación      | URL de ruta de acceso                                                                  |
+| Location      | Dirección URL de ruta de acceso                                                                  |
 |---------------|---------------------------------------------------------------------------|
 | GitHub | [Ejemplo de asistentes de Aero](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/aerowizards/migratingtoaerowizardssdksample) |
 
 ## <a name="building-the-sample"></a>Generar el ejemplo
 
-Para obtener instrucciones sobre cómo generar el ejemplo, vea el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, consulte el archivo Léame incluido con el ejemplo.
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-Para obtener instrucciones sobre cómo generar el ejemplo, vea el archivo Léame incluido con el ejemplo.
+Para obtener instrucciones sobre cómo compilar el ejemplo, consulte el archivo Léame incluido con el ejemplo.
 
  
 

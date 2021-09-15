@@ -8,17 +8,17 @@ keywords:
 - ASF (formato de sistemas avanzados), transiciones de imagen de vídeo
 - transiciones de imágenes de vídeo
 - Windows Códec de imagen v2 de Vídeo multimedia 9
-- códecs, Windows códec de imagen v2 de Vídeo multimedia 9
+- códecs, códec Windows códec de imagen v2 de Vídeo multimedia 9
 - secuencias de vídeo, Windows códec de imagen v2 de Vídeo multimedia 9
 - secuencias de vídeo, transiciones de imagen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b0a915f34ac9a2dcc00f8bcec739d48051361c1744e8e455166d56238529d9c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: cbfd02628a78196a73750c2c0ff6b9e9c3d6729c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119771245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466659"
 ---
 # <a name="video-image-transitions"></a>Transiciones de imágenes de vídeo
 
@@ -34,16 +34,16 @@ Las transiciones se enumeran en la tabla siguiente por sus identificadores globa
 | [**CÍRCULO DE TRANSICIÓN \_ DE WMT VIDEOIMAGE \_ \_**](wmt-videoimage-transition-circle.md)                 | La nueva imagen se muestra en un círculo.                                                                                                           |
 | [**TRANSICIÓN CRUZADA \_ DE WMT VIDEOIMAGE \_ TRANSITION \_ \_**](wmt-videoimage-transition-cross-fade.md)        | Sin transición especial, los coeficientes de mezcla de las dos imágenes determinan la atenuación cruzada (disolver).                                         |
 | [**DIAGONAL DE TRANSICIÓN \_ DE WMT VIDEOIMAGE \_ \_**](wmt-videoimage-transition-diagonal.md)             | La nueva imagen se muestra a lo largo de una línea diagonal que se origina en una esquina del marco.                                                          |
-| [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ DIAMOND**](wmt-videoimage-transition-diamond.md)               | La nueva imagen se muestra en un rombo.                                                                                                          |
+| [**DIAMANTE WMT \_ VIDEOIMAGE \_ TRANSITION \_**](wmt-videoimage-transition-diamond.md)               | La nueva imagen se muestra en un rombo.                                                                                                          |
 | [**TRANSICIÓN DE \_ WMT VIDEOIMAGE \_ A \_ \_ \_ COLOR**](wmt-videoimage-transition-fade-to-color.md) | Se desvía de la imagen a un marco de color sólido.                                                                                          |
 | [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ FILLED \_ V**](wmt-videoimage-transition-filled-v.md)            | La nueva imagen se muestra en un triángulo que se origina en un lado del marco.                                                                  |
 | [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ FLIP**](wmt-videoimage-transition-flip.md)                     | La imagen antigua se gira en un eje Y a través del centro del marco. La nueva imagen se muestra como la parte posterior de la imagen anterior.                    |
 | [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ INSET**](wmt-videoimage-transition-inset.md)                   | La nueva imagen se muestra mediante un rectángulo que se origina en una esquina del marco.                                                               |
 | [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ IRIS**](wmt-videoimage-transition-iris.md)                     | La nueva imagen se muestra a lo largo de un eje X y un eje Y.                                                                                          |
-| [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ PAGE \_ ROLL**](wmt-videoimage-transition-page-roll.md)          | La imagen antigua se transforma en un efecto de volteo de página, lo que revela la nueva imagen debajo.                                                      |
+| [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ PAGE \_ ROLL**](wmt-videoimage-transition-page-roll.md)          | La imagen antigua se transforma en un efecto de volteo de página, que revela la nueva imagen debajo.                                                      |
 | [**RECTÁNGULO DE TRANSICIÓN \_ DE VIDEOIMAGE \_ DE WMT \_**](wmt-videoimage-transition-rectangle.md)           | Un rectángulo dentro del marco muestra una nueva imagen.                                                                                       |
 | [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ REVEAL**](wmt-videoimage-transition-reveal.md)                 | La nueva imagen se muestra a lo largo de una línea recta que se origina en un lado del marco.                                                          |
-| [**DIAPOSITIVA DE TRANSICIÓN \_ WMT VIDEOIMAGE \_ \_**](wmt-videoimage-transition-slide.md)                   | La imagen antigua se desliza fuera del marco, lo que revela la nueva imagen debajo.                                                                       |
+| [**DIAPOSITIVA DE TRANSICIÓN \_ WMT VIDEOIMAGE \_ \_**](wmt-videoimage-transition-slide.md)                   | La imagen antigua se desliza fuera del marco y muestra la nueva imagen debajo.                                                                       |
 | [**DIVISIÓN DE TRANSICIÓN \_ DE WMT VIDEOIMAGE \_ \_**](wmt-videoimage-transition-split.md)                   | La nueva imagen se revela mediante una división horizontal o vertical en la imagen anterior. La división aparece a lo largo de una línea recta a partir del marco. |
 | [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ STAR**](wmt-videoimage-transition-star.md)                     | Una estrella de cinco puntas dentro del marco revela una nueva imagen.                                                                               |
 | [**WMT \_ VIDEOIMAGE \_ TRANSITION \_ WHEEL**](wmt-videoimage-transition-wheel.md)                   | La nueva imagen se revela mediante cuatro radios de rotación con un punto de pivote común.                                                                     |

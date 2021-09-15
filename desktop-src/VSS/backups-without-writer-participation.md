@@ -4,12 +4,12 @@ ms.assetid: 2058e894-bde5-4690-a7aa-849d2e9cdc71
 title: Copias de seguridad sin participación del escritor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6bd1d402b53c48fd82085110e4d58600c92fbdd72defc47dee326c8fa1d4f66
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4b9a782fbcb9afe532f2f123151dc7998307157b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119248285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473400"
 ---
 # <a name="backups-without-writer-participation"></a>Copias de seguridad sin participación del escritor
 
@@ -29,7 +29,7 @@ Hay varias situaciones que requerirán que una aplicación de copia de seguridad
 
 -   **Sistema sin escritores compatibles con VSS**
 
-    Esta situación puede ser relativamente poco frecuente porque la mayoría de los sistemas de los que se puede hacer una copia de seguridad mediante una aplicación de copia de seguridad de VSS tendrán una versión habilitada para VSS de Windows, que debe contener escritores.
+    Esta situación puede ser relativamente poco frecuente porque la mayoría de los sistemas de los que una aplicación de copia de seguridad de VSS puede realizar copias de seguridad tendrán una versión habilitada para VSS de Windows, que debe contener escritores.
 
     Sin embargo, hay ciertas circunstancias en las que podría surgir este problema, por ejemplo, si va a hacer una copia de seguridad de un sistema sin compatibilidad con VSS, pero el sistema usa un dispositivo en red habilitado para VSS para su almacenamiento.
 

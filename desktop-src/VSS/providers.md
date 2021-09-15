@@ -4,18 +4,18 @@ ms.assetid: 4e6b46b0-df9e-4458-b0ac-e237d7656337
 title: Proveedores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58c9e098981c6246392fef75f717b1d7676df1aa134e4faef3e436ee8b3eb537
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6bb336dbb51fcbd715ea236ecdc0c62d81daf29d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118591332"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473355"
 ---
 # <a name="providers"></a>Proveedores
 
 [*Los proveedores*](vssgloss-p.md) administran volúmenes en ejecución y crean las instantáneas de ellos a petición.
 
-En respuesta a una solicitud de un solicitante, un proveedor genera eventos COM para señalar las aplicaciones de una instantánea próxima y, a continuación, crea y mantiene esa copia hasta que ya no es necesaria.
+En respuesta a una solicitud de un solicitante, un proveedor genera eventos COM para señalar las aplicaciones de una instantánea próxima y, a continuación, crea y mantiene esa copia hasta que ya no se necesita.
 
 Mientras existe una instantánea, el proveedor crea un entorno en el que hay efectivamente dos copias independientes de cualquier volumen que se ha copiado en la sombra: uno el disco en ejecución que se usa y actualiza de forma normal, el otro una copia fija y estable para la copia de seguridad.
 
@@ -37,7 +37,7 @@ En función de cómo se haga esto, un proveedor puede ser uno de estos tres tipo
 
 ## <a name="system-provider"></a>Proveedor del sistema
 
-Un proveedor de instantáneas, [*el proveedor del*](vssgloss-s.md)sistema , se proporciona como parte predeterminada de una Windows sistema operativo. Actualmente, el proveedor del sistema es una instancia determinada de un proveedor de software. Sin embargo, esto puede cambiar en el futuro.
+Un proveedor de instantáneas, [*el proveedor del*](vssgloss-s.md)sistema , se proporciona como parte predeterminada de una Windows de sistema operativo. Actualmente, el proveedor del sistema es una instancia determinada de un proveedor de software. Sin embargo, esto puede cambiar en el futuro.
 
 Para mantener una vista "a un momento dado" de un volumen contenido en la instantánea, el proveedor del sistema usa una técnica de copia en escritura. Las copias de los sectores en disco que se han modificado (denominados "diferencias") desde el principio de la creación de instantáneas se almacenan en un área de almacenamiento de instantáneas.
 
@@ -55,7 +55,7 @@ Sin embargo, VSS no aplica restricciones a la técnica que usan los proveedores 
 
 Además, VSS proporciona compatibilidad con gran parte de la funcionalidad de los proveedores de instantáneas de software, como definir el momento dado, la sincronización y el vaciado de datos, proporcionar una interfaz común para las aplicaciones de copia de seguridad y la administración de la instantánea.
 
-Por definición, un proveedor de software será aplicable a una gama más amplia de plataformas de almacenamiento que un proveedor de hardware y debería poder trabajar con discos básicos o volúmenes lógicos igualmente bien. Esta generalidad sacra el rendimiento que puede estar disponible mediante la implementación de instantáneas en hardware y no hace uso de ninguna captura de volumen específica del proveedor o características de creación de reflejo de archivos.
+Por definición, un proveedor de software será aplicable a una gama más amplia de plataformas de almacenamiento que un proveedor de hardware y debería poder trabajar con discos básicos o volúmenes lógicos igualmente bien. Esta generalidad sacrificará el rendimiento que puede estar disponible mediante la implementación de instantáneas en hardware y no hace uso de ninguna captura de volumen específica del proveedor o características de creación de reflejo de archivos.
 
 ## <a name="hardware-providers"></a>Proveedores de hardware
 
@@ -63,7 +63,7 @@ Los proveedores de instantáneas de hardware interceptan las solicitudes de E/S 
 
 Estos proveedores se implementan como un componente DLL en modo de usuario que se comunica con el hardware que expondrá los datos de instantáneas: por lo tanto, es posible que los proveedores de instantáneas de hardware necesiten llamar o crear otros componentes en modo kernel.
 
-Los proveedores de hardware exponen a instantáneas de VSS de discos o unidades lógicas (LUN) completos. Los solicitantes siguen trabajando con instantáneas de volúmenes. VSS controla internamente toda la asignación de volumen a disco. Las instantáneas creadas por proveedores de hardware de volúmenes que residen en discos dinámicos tienen un requisito específico: no se pueden importar en el mismo sistema. Deben crearse transportables e importarse en un segundo sistema.
+Los proveedores de hardware exponen a instantáneas de VSS de discos completos o unidades lógicas (LUN). Los solicitantes siguen trabajando con instantáneas de volúmenes. VSS controla internamente toda la asignación de volumen a disco. Las instantáneas creadas por proveedores de hardware de volúmenes que residen en discos dinámicos tienen un requisito específico: no se pueden importar en el mismo sistema. Deben crearse transportables e importarse en un segundo sistema.
 
 Aunque un proveedor de instantáneas de hardware usa la funcionalidad de VSS que define el momento dado, permite la sincronización de datos, administra la instantánea y proporciona una interfaz común con las aplicaciones de copia de seguridad, VSS no especifica el mecanismo subyacente por el que el proveedor de hardware genera y mantiene instantáneas.
 

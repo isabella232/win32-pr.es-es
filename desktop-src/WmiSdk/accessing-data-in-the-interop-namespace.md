@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Acceso a datos en el espacio de nombres Interop
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 855d3c302ca4af5381e1f0794abd643d19615dec2009740d1276698aba785d8b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8a217a7a44651b1a6c94476b53193eedac7f0d43
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118109649"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465782"
 ---
 # <a name="accessing-data-in-the-interop-namespace"></a>Acceso a datos en el espacio de nombres Interop
 
@@ -57,7 +57,7 @@ $pplan = Get-WmiObject -query "Select * from Win32_PowerPlan" -Namespace root\ci
 
 ## <a name="enumerating-the-power-plans-on-a-computer"></a>Enumeración de los planes de energía en un equipo
 
-El siguiente comando Windows PowerShell enumera los planes de perfil de energía disponibles:
+El siguiente Windows PowerShell enumera los planes de perfil de energía disponibles:
 
 
 ```PowerShell

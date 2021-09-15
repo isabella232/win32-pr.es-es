@@ -4,12 +4,12 @@ ms.assetid: 3754BBDB-3CBE-4C79-897D-15359B90AC82
 title: Seguridad (Windows de propiedades)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a3fe03196ebba9360d27f84304f7b61b536e4b82049ccf1439dbe09c4af80b9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 51f9aa9a536bb42fb3d08d6a3efb0ef092af29aa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119033163"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468343"
 ---
 # <a name="security-windows-property-system"></a>Seguridad (Windows de propiedades)
 

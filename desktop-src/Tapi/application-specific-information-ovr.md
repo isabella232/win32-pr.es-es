@@ -4,12 +4,12 @@ ms.assetid: e72e4164-3578-4e18-aea0-09d47d385b57
 title: Información específica de la aplicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9066335e372523c927c4c00d6ebf055ba33b520a7a082f535b25865e2df326d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3bf4a10413f914eb0bb2da763022f1946811ce12
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117949134"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473424"
 ---
 # <a name="application-specific-information"></a>Información específica de la aplicación
 

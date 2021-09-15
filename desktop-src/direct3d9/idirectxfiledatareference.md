@@ -14,18 +14,18 @@ api_type:
 api_location:
 - d3dxof.lib
 - d3dxof.dll
-ms.openlocfilehash: 4507bed7a5f3f461c80b8eed1e5c07c15cfd34b7aab7a02c3e803a43a88ae132
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d04d2367f914c2e8d64a3c9c64fb55df1e51e47c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120095635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466055"
 ---
 # <a name="idirectxfiledatareference-interface"></a>IDirectXFileDataReference (interfaz)
 
 Las aplicaciones usan los métodos de la interfaz IDirectXFileDataReference para admitir objetos de referencia de datos. Un objeto de referencia de datos hace referencia a un objeto de datos definido anteriormente en el archivo. Esto le permite usar el mismo objeto varias veces sin repetirlo en el archivo. En desuso.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IDirectXFileDataReference** hereda de [**IDirectXFileObject.**](idirectxfileobject.md) **IDirectXFileDataReference** también tiene estos tipos de miembros:
 
@@ -45,7 +45,7 @@ La **interfaz IDirectXFileDataReference** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Después de determinar que un objeto es un objeto de referencia de datos, use el método [**IDirectXFileDataReference::Resolve**](idirectxfiledatareference--resolve.md) para recuperar el objeto al que se hace referencia definido anteriormente en el archivo. Para obtener información sobre cómo identificar un objeto de referencia de datos, vea la [**interfaz IDirectXFileData.**](idirectxfiledata.md)
 

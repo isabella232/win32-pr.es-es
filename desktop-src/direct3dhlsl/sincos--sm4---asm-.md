@@ -4,12 +4,12 @@ description: Sin(theta) por componente y cos(theta) para theta en radianes.
 ms.assetid: 81FDEC8F-2C1C-4C60-A6DA-699C798F8316
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18e0b8ba0f6a8ed5076b8918d23d42653fe661e334101257d19d3ad23ab27a60
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8c03118ff9a1fc2d958eaa6eb1a550a6dbf672a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119788595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466941"
 ---
 # <a name="sincos-sm4---asm"></a>sincos (sm4 - asm)
 
@@ -36,7 +36,7 @@ Sin(theta) por componente y cos(theta) para theta en radianes.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el resultado no es necesario, puede especificar *destSIN* y *destCOS* como NULL en lugar de especificar un registro.
 
@@ -79,12 +79,12 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
+| [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 
@@ -94,7 +94,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 <dl> <dt>
 
-[Ensamblado del modelo 4 del sombreador (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
+[Ensamblado del modelo de sombreador 4 (HLSL de DirectX)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
  

@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 6e3ae592-a0cb-4d9d-b186-241a757da5ea
-ms.openlocfilehash: 026b5b458736a0805d48dc59715a1705ecdb8557037232332767946dd05d333d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 953bf54ff64cf41724ce0dfabd064f9c7b980cc6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119223355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468149"
 ---
 # <a name="ishellfoldersearchablecallbackrunbegin-method"></a>IShellFolderSearchableCallback::RunBegin (método)
 
@@ -54,7 +54,7 @@ Tipo: **HRESULT**
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En respuesta a esta devolución de llamada, la aplicación puede habilitar el **botón Cancelar,** por ejemplo.
 
@@ -62,7 +62,7 @@ En respuesta a esta devolución de llamada, la aplicación puede habilitar el **
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |

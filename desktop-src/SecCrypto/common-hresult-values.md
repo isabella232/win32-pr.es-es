@@ -4,12 +4,12 @@ ms.assetid: ce52efc3-92c7-40e4-ac49-0c54049e169f
 title: Valores HRESULT comunes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80b23b43a23629fdd74770a3269c40dba6746b549bd9300c271c8ee5406ed9e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1a64d042d9531d026cda548b2a699ed60c0bebd3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117769434"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271124"
 ---
 # <a name="common-hresult-values"></a>Valores HRESULT comunes
 

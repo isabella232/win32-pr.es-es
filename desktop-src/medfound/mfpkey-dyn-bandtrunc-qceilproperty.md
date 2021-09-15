@@ -4,12 +4,12 @@ ms.assetid: 2f0f43a9-2424-4b73-a9aa-a06474676fb4
 title: MFPKEY_DYN_BANDTRUNC_QCEIL propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da4beecc98edcfd2eb7ecfdcbf1ab9f9af21f278538f32e26991f0dd57a85299
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ff3e4f873c06af53290a784b5045e09eb24f7ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117873532"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360443"
 ---
 # <a name="mfpkey_dyn_bandtrunc_qceil-property"></a>Propiedad MFPKEY \_ DYN \_ BANDTRUNC \_ QCEIL
 
@@ -27,14 +27,14 @@ Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/n
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Cliente<br/> | Windows Vista o Windows 7<br/>                                                   |
-| Header<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Remoto<br/> | Windows Vista o Windows 7<br/>                                                   |
+| Encabezado<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

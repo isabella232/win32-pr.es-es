@@ -4,7 +4,7 @@ description: Describe las funcionalidades de una unidad biométrica.
 ms.assetid: b20adf18-2948-481f-9d12-8da17aa152f7
 keywords:
 - WINBIO_UNIT_SCHEMA estructura Windows API de Marco biométrico
-- PWINBIO_UNIT_SCHEMA puntero de estructura Windows API de Marco biométrico
+- PWINBIO_UNIT_SCHEMA puntero de estructura Windows BIOMETRIC Framework API
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ae91ae5353aa0e9c02414e90a8364d86bdc56c0cdcc4f4586656f28f92f100ef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c217be1e0c6bde740c815f5a990509a6a87ef0f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118909174"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271276"
 ---
 # <a name="winbio_unit_schema-structure"></a>Estructura DE \_ ESQUEMA DE UNIDAD \_ WINBIO
 
@@ -47,7 +47,7 @@ typedef struct _WINBIO_UNIT_SCHEMA {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -101,15 +101,15 @@ Subtipo de sensor definido para el tipo biométrico especificado por el **miembr
 Máscara de bits de las funcionalidades del sensor biométrico. Puede ser un OR bit a bit **de** los valores siguientes:
 
 -   SENSOR DE \_ FUNCIONALIDAD WINBIO \_
--   COINCIDENCIA DE \_ FUNCIONALIDAD DE \_ WINBIO
+-   COINCIDENCIA \_ DE FUNCIONALIDAD \_ DE WINBIO
 -   BASE DE DATOS \_ DE FUNCIONALIDAD DE \_ WINBIO
 -   PROCESAMIENTO DE \_ FUNCIONALIDAD DE \_ WINBIO
--   CIFRADO DE \_ FUNCIONALIDAD WINBIO \_
+-   CIFRADO DE \_ FUNCIONALIDAD \_ WINBIO
 -   NAVEGACIÓN POR \_ LA FUNCIONALIDAD \_ WINBIO
 -   INDICADOR DE \_ FUNCIONALIDAD DE \_ WINBIO
 -   SENSOR VIRTUAL \_ DE FUNCIONALIDAD \_ WINBIO \_
     > [!Note]  
-    > La **constante \_ WINBIO CAPABILITY \_ VIRTUAL SENSOR \_ solo** se aplica Windows 10 y versiones posteriores.
+    > La **constante \_ WINBIO CAPABILITY \_ VIRTUAL \_ SENSOR** solo se aplica Windows 10 y versiones posteriores.
 
      
 
@@ -165,11 +165,11 @@ Estructura [**DE VERSIÓN \_ DE WINBIO**](winbio-version.md) que contiene los n�
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
-| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

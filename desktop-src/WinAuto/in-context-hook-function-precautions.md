@@ -4,12 +4,12 @@ description: Por motivos de rendimiento, los desarrolladores de cliente registra
 ms.assetid: 14b48920-a291-4519-b005-e559263a0e83
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1333cf7718ff954217170e89dce2af70cc081fcca18929282f6db4a188125b9f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8c0e319037cb1295725548b3361bf076b4b1f760
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118565593"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567436"
 ---
 # <a name="in-context-hook-function-precautions"></a>In-Context de la función hook
 

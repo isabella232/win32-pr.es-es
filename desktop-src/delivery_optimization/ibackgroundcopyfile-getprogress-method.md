@@ -17,12 +17,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a7c5fe4a9fcfac86403fd7f4c330d437156e57179b3bf692f53bf3777399b9bf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f0828105822700f9d34cd180c8877634bc3a6013
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119610505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466097"
 ---
 # <a name="ibackgroundcopyfilegetprogress-method"></a>IBackgroundCopyFile::GetProgress (método)
 
@@ -46,13 +46,13 @@ HRESULT GetProgress(
 *pProgress* \[ out\]
 </dt> <dd>
 
-Estructura cuyos miembros indican el progreso de la transferencia de archivos. Para obtener más información sobre el tipo de información de progreso disponible, consulte [**la estructura BG_FILE_PROGRESS**](bg-file-progress.md) datos.
+Estructura cuyos miembros indican el progreso de la transferencia de archivos. Para más información sobre el tipo de información de progreso disponible, consulte la [**estructura BG_FILE_PROGRESS**](bg-file-progress.md) datos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve **S_OK** correcto o uno de los valores **HRESULT COM** estándar en caso de error.
+Este método devuelve **S_OK** correcto o uno de los valores **HRESULT com estándar** en caso de error.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ Este método devuelve **S_OK** correcto o uno de los valores **HRESULT COM** est
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | Archivo DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyFile se define como 01B7BD23-FB88-4A77-8490-5891D3E4653A<br/>              |

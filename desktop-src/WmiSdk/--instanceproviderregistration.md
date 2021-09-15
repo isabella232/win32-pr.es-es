@@ -23,12 +23,12 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: 773bb54ec4d132e629f21513ffa617cbe3435d35941e7c98c55810d267f614c6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 45923c0c3ea3bfc28e67634e3b447e46b62765f3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118821164"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466118"
 ---
 # <a name="__instanceproviderregistration-class"></a>\_\_Clase InstanceProviderRegistration
 
@@ -53,7 +53,7 @@ class __InstanceProviderRegistration : __ObjectProviderRegistration
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **\_ \_ clase InstanceProviderRegistration** tiene estos tipos de miembros:
 
@@ -195,14 +195,14 @@ Si **es True**, el proveedor admite la eliminación de datos.
 
 <dt>
 
-Verdadero
+True
 </dt> <dd>
 
 El proveedor admite la eliminación de clases o instancias mediante la implementación de [**IWbemServices::D eleteClassAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-deleteclassasync) (proveedores de clases) o [**IWbemServices::D eleteInstanceAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-deleteinstanceasync) (proveedores de instancias).
 
 </dd> <dt>
 
-Falso
+False
 </dt> <dd>
 
 El proveedor no admite la eliminación de datos y devuelve **WBEM \_ E PROVIDER NOT \_ \_ \_ CAPABLE** de [**DeleteClassAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-deleteclassasync) o [**DeleteInstanceAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-deleteinstanceasync)
@@ -231,7 +231,7 @@ Si **es True**, el proveedor admite la enumeración de datos.
 
 </dt> <dd>
 
-El proveedor admite la enumeración de datos mediante la implementación de uno de los proveedores de clases [**IWbemServices::CreateClassEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createclassenumasync) (proveedores de clases) o [**IWbemServices::CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) (proveedores de instancias).
+El proveedor admite la enumeración de datos mediante la implementación de uno de [**IWbemServices::CreateClassEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createclassenumasync) (proveedores de clases) o [**IWbemServices::CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) (proveedores de instancias).
 
 </dd> <dt>
 
@@ -257,21 +257,21 @@ Tipo de datos: **booleano**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Si **es True**, la clase o el proveedor de instancias admite la recuperación de datos.
+Si **es True**, el proveedor de clase o instancia admite la recuperación de datos.
 
 <dt>
 
-Verdadero
+True
 </dt> <dd>
 
 El proveedor admite la recuperación de datos mediante [**la implementación de IWbemServices::GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync).
 
 </dd> <dt>
 
-Falso
+False
 </dt> <dd>
 
-El proveedor no admite la recuperación de datos y devuelve **WBEM \_ E PROVIDER \_ NOT \_ \_ CAPABLE** de [**GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync).
+El proveedor no admite la recuperación de datos y devuelve **WBEM \_ E PROVIDER \_ NOT \_ \_ CAPABLE** desde [**GetObjectAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync).
 
 </dd> </dl>
 
@@ -286,7 +286,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: lectura y escritura
 </dt> </dl>
 
-Si **es True**, la clase o el proveedor de instancias admite la modificación de datos.
+Si **es True**, el proveedor de clase o instancia admite la modificación de datos.
 
 <dt>
 
@@ -308,7 +308,7 @@ El proveedor admite la modificación de clases o instancias mediante la implemen
 
 </dt> <dd>
 
-El proveedor no admite la modificación de datos y devuelve **WBEM \_ E PROVIDER \_ NOT \_ \_ CAPABLE** de [**PutClassAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putclassasync) o [**PutInstanceAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putinstanceasync).
+El proveedor no admite la modificación de datos y devuelve **WBEM \_ E PROVIDER \_ NOT \_ \_ CAPABLE** de [**PutClassAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putclassasync) [**o PutInstanceAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putinstanceasync)
 
 </dd> </dl>
 
@@ -327,7 +327,7 @@ No se usa.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **\_ \_ clase InstanceProviderRegistration** se deriva de [**\_ \_ ObjectProviderRegistration**](--objectproviderregistration.md), que se deriva de [**\_ \_ ProviderRegistration.**](--providerregistration.md) Solo los administradores pueden registrar un proveedor de instancias mediante la creación de una instancia de [**\_ \_ Win32Provider**](--win32provider.md) e **\_ \_ InstanceProviderRegistration**. Solo los administradores pueden eliminar un proveedor.
 
@@ -335,7 +335,7 @@ La **\_ \_ clase InstanceProviderRegistration** se deriva de [**\_ \_ ObjectProv
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |

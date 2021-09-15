@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fe6961f5fd8c05f291af3634c07de6befada0efa54586796ca881bffe893bf5c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2a921e17f8ddee4aaabfe50e75f42ce44812863d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117726445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568388"
 ---
 # <a name="def-pragma-directive"></a>def pragma (directiva)
 
@@ -50,11 +50,11 @@ Directiva Pragma que asigna manualmente un registro de sombreador de punto flota
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La pragma def permite a un desarrollador rellenar previamente un registro de sombreador de punto flotante con el valor especificado. Esta pragma se usa con poca frecuencia.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

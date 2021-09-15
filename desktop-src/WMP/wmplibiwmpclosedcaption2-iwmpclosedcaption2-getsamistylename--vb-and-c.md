@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd599370afb9029a481fbae33264796232e4f129c1a5da0d2658452b785a870c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 34ceb3f598ae603d478af5cad9c78333952530a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120031355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473315"
 ---
 # <a name="iwmpclosedcaption2getsamistylename-method"></a>IWMPClosedCaption2::getSAMIStyleName (método)
 
@@ -64,7 +64,7 @@ Implements IWMPClosedCaption2.getSAMIStyleName
 
 **System.String que** es el nombre del estilo especificado en el archivo SAMI.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los estilos de un archivo SAMI se indexa en el orden que se muestra en el archivo, empezando por cero.
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 193026cee7e8b483afd0159da87cd356bd479987f776c5e82f7ea3543df77c0a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5bd9f47b6c38b5ec72bcd25ecb5981859a87038b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119748065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359017"
 ---
 # <a name="id3dxmatrixstackscalelocal-method-d3dx9mathh"></a>Método ID3DXMATRIXStack::ScaleLocal (D3dx9math.h)
 
@@ -75,7 +75,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método multiplica a la izquierda la matriz actual con la matriz de escala calculada. La transformación trata sobre el origen local del objeto .
 

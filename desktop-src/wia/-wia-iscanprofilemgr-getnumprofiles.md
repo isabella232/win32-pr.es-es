@@ -1,7 +1,7 @@
 ---
 description: Obtiene el número de perfiles de examen creados para el usuario en el sistema en el que se ejecuta la aplicación.
 ms.assetid: 0667a885-d61f-4c44-b988-a42242c2678e
-title: 'IScanProfileMgr:: GetNumProfiles (método) (Scanprofilemgr. h)'
+title: Método IScanProfileMgr::GetNumProfiles (Scanprofilemgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,13 +14,13 @@ api_type:
 api_location:
 - Scanprofilemgr.h
 ms.openlocfilehash: a8c3167bd428054054a32d7823ce57e562501533
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105706319"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466540"
 ---
-# <a name="iscanprofilemgrgetnumprofiles-method"></a>IScanProfileMgr:: GetNumProfiles (método)
+# <a name="iscanprofilemgrgetnumprofiles-method"></a>IScanProfileMgr::GetNumProfiles (método)
 
 Obtiene el número de perfiles de examen creados para el usuario en el sistema en el que se ejecuta la aplicación.
 
@@ -39,10 +39,10 @@ HRESULT GetNumProfiles(
 
 <dl> <dt>
 
-*pulNumProfiles* \[ enuncia\]
+*pulNumProfiles* \[ out\]
 </dt> <dd>
 
-Tipo: **ULong \** _
+Tipo: **ULONG \***
 
 Puntero al número de perfiles creados para el usuario.
 
@@ -50,9 +50,9 @@ Puntero al número de perfiles creados para el usuario.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,10 +60,10 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
+| Encabezado<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
@@ -74,7 +74,7 @@ Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo cont
 [**IScanProfileMgr**](-wia-iscanprofilemgr.md)
 </dt> <dt>
 
-[Esquema de análisis de perfil](-wia-scan-profile-schema.md)
+[Esquema de perfil de examen](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

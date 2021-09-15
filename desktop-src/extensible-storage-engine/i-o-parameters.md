@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 62cc1183f14e3de113ff5f34eaf6367bc2ff0f9a
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122981988"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568296"
 ---
 # <a name="io-parameters"></a>Parámetros de E/S
 
@@ -82,7 +82,7 @@ Cuando este parámetro se establece en true, cualquier carpeta que falte en una 
 
 Cuando este parámetro es **True,** el motor de base de datos usará la caché de archivos Windows como caché de lectura para todos sus distintos archivos. También la usará como caché de escritura para la base de datos temporal o para las bases de datos que se abren con la recuperación deshabilitada. El motor de base de datos debe deshabilitar el almacenamiento en caché de escritura para bases de datos normales, archivos de registro de transacciones y archivos de punto de comprobación para proteger la integridad transaccional de las bases de datos.
 
-Es importante tener en cuenta que el uso de la caché de archivos Windows agregará una segunda capa de almacenamiento en caché para los archivos de base de datos. La caché de base de datos seguirá utilizando su propia memoria para almacenar en caché los archivos de base de datos. La intención de este modo es permitir que la aplicación configure el motor de base de datos con una pequeña memoria caché dedicada y que Windows pueda ahorrar memoria para mejorar aún más el almacenamiento en caché de los datos de la base de datos.
+Es importante tener en cuenta que el uso de la caché de archivos Windows agregará una segunda capa de almacenamiento en caché para los archivos de base de datos. La caché de base de datos seguirá utilizando su propia memoria para almacenar en caché los archivos de base de datos. La intención de este modo es permitir que la aplicación configure el motor de base de datos con una pequeña caché dedicada y permitir que Windows resalte la memoria de reserva para mejorar aún más el almacenamiento en caché de los datos de la base de datos.
 
 
 | Etiqueta | Value |
@@ -106,7 +106,7 @@ Es importante tener en cuenta que el uso de la caché de archivos Windows agrega
 
 Este parámetro controla cómo ese controla las operaciones de E/S. Los valores se pueden establecer en 0 (JET_IOPriorityNormal) para el funcionamiento normal o 1 (JET_IOPriorityLow) para la operación de prioridad baja. Cuando la prioridad se establece en JET_IOPriorityLow, ESE usa la nueva funcionalidad de prioridad de E/S de subproceso disponible en Windows Vista para reducir la prioridad de E/S en el subproceso para que las operaciones de E/S posteriores se emita con la nueva prioridad baja.
 
-**Windows Vista:**  JET_paramIOPriority se presenta en Windows Vista.
+**Windows Vista:**  JET_paramIOPriority se introdujo en Windows Vista.
 
 
 | Etiqueta | Value |
@@ -128,7 +128,7 @@ Este parámetro controla cómo ese controla las operaciones de E/S. Los valores 
 *JET_paramOutstandingIOMax*  
 30 
 
-Este parámetro controla cuántas E/S de archivos de base de datos se pueden poner en cola en el sistema operativo host a la vez.
+Este parámetro controla cuántas E/S de archivo de base de datos se pueden poner en cola en el sistema operativo host a la vez.
 
 Un valor mayor para este parámetro puede ayudar significativamente al rendimiento de una aplicación de base de datos grande.
 
@@ -154,7 +154,7 @@ Un valor mayor para este parámetro puede ayudar significativamente al rendimien
 *JET_paramMaxCoalesceReadSize*  
 164  
 
-Número máximo de bytes que se pueden agrupar para una operación de lectura agrupada.
+Número máximo de bytes que se pueden agrupar para una operación de lectura coalesced.
 
 
 | Etiqueta | Value |
@@ -176,7 +176,7 @@ Número máximo de bytes que se pueden agrupar para una operación de lectura ag
 *JET_paramMaxCoalesceWriteSize*  
 165  
 
-Número máximo de bytes que se pueden agrupar para una operación de escritura conjunta.
+Número máximo de bytes que se pueden agrupar para una operación de escritura agrupada.
 
 
 | Etiqueta | Value |
@@ -198,7 +198,7 @@ Número máximo de bytes que se pueden agrupar para una operación de escritura 
 *JET_paramMaxCoalesceReadGapSize*  
 166  
 
-Número máximo de bytes que se pueden abate para una operación de E/S de escritura conjunta.
+Número máximo de bytes que se pueden acodar para una operación de E/S de escritura coalesced.
 
 
 | Etiqueta | Value |
@@ -220,7 +220,7 @@ Número máximo de bytes que se pueden abate para una operación de E/S de escri
 *JET_paramMaxCoalesceWriteGapSize*  
 167  
 
-Número máximo de bytes que se pueden gafe para una operación de E/S de lectura conjunta.
+Número máximo de bytes que se pueden acodir para una operación de E/S de lectura desenlazado.
 
 
 | Etiqueta | Value |

@@ -4,12 +4,12 @@ description: IAgentNotifySink Move
 ms.assetid: d1809fdb-df4b-4884-b9e8-2877a814dc9a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a16f32df3058a5b5c8e0a4e02a98f9a97afdbff56f349a63fceb5d70a9001391
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 52563ff3838348b7bf8e6a2bcdfdf20a51c79723
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119105189"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359152"
 ---
 # <a name="iagentnotifysinkmove"></a>IAgentNotifySink::Move
 
@@ -47,7 +47,7 @@ Coordenada x de la nueva posición en píxeles, con respecto al origen de la pan
 <span id="y"></span><span id="Y"></span>*y*
 </dt> <dd>
 
-Coordenada y de la nueva posición en píxeles, con respecto al origen de la pantalla (parte superior izquierda). La ubicación de un carácter se basa en la esquina superior izquierda de su marco de animación.
+Coordenada y de la nueva posición en píxeles, en relación con el origen de la pantalla (esquina superior izquierda). La ubicación de un carácter se basa en la esquina superior izquierda de su marco de animación.
 
 </dd> <dt>
 
@@ -58,13 +58,13 @@ La causa del movimiento de caracteres. El parámetro puede ser uno de los siguie
 
 
 
-| Valor                                                          | Descripción                                                                          |
+| Value                                                          | Descripción                                                                          |
 |----------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| **const unsigned short** **NeverMoved = 0;**<br/>        | El carácter no se ha movido.                                                        |
+| **const unsigned short** **NeverMoved = 0;**<br/>        | No se ha movido el carácter.                                                        |
 | **const unsigned short** **UserMoved = 1;**<br/>         | El usuario arrastró el carácter.                                                          |
 | **const unsigned short** **ProgramMoved = 2;**<br/>      | La aplicación movió el carácter.                                                |
 | **const unsigned short** **OtherProgramMoved = 3;**<br/> | Otra aplicación movió el carácter.                                             |
-| **const unsigned short** **SystemMoved = 4**<br/>        | El servidor movió el carácter para mantenerlo en pantalla después de un cambio de resolución de pantalla. |
+| **const unsigned short** **SystemMoved = 4**<br/>        | El servidor movió el carácter para mantenerlo en pantalla después de un cambio en la resolución de pantalla. |
 
 
 

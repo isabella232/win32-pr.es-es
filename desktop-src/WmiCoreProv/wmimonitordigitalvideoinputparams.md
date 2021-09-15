@@ -1,5 +1,5 @@
 ---
-description: Representa los parámetros de entrada del vídeo digital.
+description: Representa los parámetros de entrada para el vídeo digital.
 ms.assetid: aa459612-db79-477b-891f-28c9d0b1b497
 title: Clase WmiMonitorDigitalVideoInputParams
 ms.topic: reference
@@ -16,16 +16,16 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: fa86add32d77a5b2838fc78eaf097c11b8a15db3f0fde9186f93046691ebc3f2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a08e38a38bb5f5e8d539fabdf69c429c42f4b1f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117926571"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568089"
 ---
 # <a name="wmimonitordigitalvideoinputparams-class"></a>Clase WmiMonitorDigitalVideoInputParams
 
-**WmiMonitorDigitalVideoInputParams representa** los parámetros de entrada del vídeo digital. Los datos de esta clase corresponden a los datos del estándar E-EDID (Definición de entrada de vídeo de Video Electronics Standard Association (VESA) Enhanced Extended Display Identification Data (E-EDID). Una instancia de esta clase solo está disponible cuando el valor de la **propiedad VideoInputType** de la [**clase WmiMonitorBasicDisplayParams**](wmimonitorbasicdisplayparams.md) es "Digital".
+**WmiMonitorDigitalVideoInputParams representa** parámetros de entrada para vídeo digital. Los datos de esta clase corresponden a los datos del estándar de definición de entrada de vídeo de video electronics standard association (VESA) Enhanced Extended Display Identification Data (E-EDID). Una instancia de esta clase solo está disponible cuando el valor de la propiedad **VideoInputType** de la [**clase WmiMonitorBasicDisplayParams**](wmimonitorbasicdisplayparams.md) es "Digital".
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -38,7 +38,7 @@ class WmiMonitorDigitalVideoInputParams : MSMonitorClass
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase WmiMonitorDigitalVideoInputParams** tiene estos tipos de miembros:
 
@@ -88,7 +88,7 @@ Tipo de datos: **booleano**
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-VESA DFP 1.x o compatible. Si se establece, la interfaz es compatible con la señal compatible con el CRGB de señalización diferencial minimizada (TMDS) de transición de VESA Digital Flat Panel (DFP) 1.x, 1 píxel/reloj, hasta 8 bits/bit más significativo (MSB) alineado, DE activo alto.
+VESA DFP 1.x o compatible. Si se establece, la interfaz es compatible con la señal compatible con la CRGB de señalización diferencial minimizada (TMDS) de transición 1.x de VESA Digital Flat Panel (DFP), 1 píxel/reloj, hasta 8 bits/color más significativo (MSB) alineado, DE activo alto.
 
 </dd> </dl>
 
@@ -106,7 +106,7 @@ VESA DFP 1.x o compatible. Si se establece, la interfaz es compatible con la se�
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

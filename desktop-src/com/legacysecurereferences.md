@@ -3,15 +3,15 @@ title: LegacySecureReferences
 description: Determina si las invocaciones AddRef/Release están protegidas para las aplicaciones que no llaman a CoInitializeSecurity.
 ms.assetid: 955b599b-1858-475a-95c4-a55038a28e69
 keywords:
-- Valor del Registro COM de LegacySecureReferences
+- Valor del Registro LegacySecureReferences COM
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 2776bf3661013f1e622bbc2e1c553f2551c62808
-ms.sourcegitcommit: 9eebab0ead09cecdbc24f5f84d56c8b6a7c22736
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124369652"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359836"
 ---
 # <a name="legacysecurereferences"></a>LegacySecureReferences
 
@@ -26,7 +26,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole
 
 ## <a name="remarks"></a>Observaciones
 
-Se trata de **un valor \_ SZ reg.** Un valor de "Y" o "y" indica que **AddRef** **y Release están** protegidos. Si este valor del Registro no está presente o se establece en un valor distinto de "Y" o "y", **AddRef** y **Release** no están protegidos. La habilitación de referencias seguras ralentiza las llamadas remotas.
+Se trata de **un valor \_ REG SZ.** Un valor de "Y" o "y" indica que **AddRef** y **Release están** protegidos. Si este valor del Registro no está presente o está establecido en un valor distinto de "Y" o **"y", AddRef** y **Release** no están protegidos. La habilitación de referencias seguras ralentiza las llamadas remotas.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -35,7 +35,7 @@ Se trata de **un valor \_ SZ reg.** Un valor de "Y" o "y" indica que **AddRef** 
 [Registro de servidores COM](registering-com-servers.md)
 </dt> <dt>
 
-[Establecer la seguridad en todo el proceso](setting-processwide-security.md)
+[Establecer la seguridad de todo el proceso](setting-processwide-security.md)
 </dt> </dl>
 
  

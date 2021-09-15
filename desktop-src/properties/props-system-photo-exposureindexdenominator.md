@@ -4,12 +4,12 @@ ms.assetid: a9df1ca1-2cd9-4176-8a02-a044f4953ba2
 title: System.Photo.ExposureIndexDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2f2ab7d343f87761339a0eed0b51691d375ebc48e43d6fd67c473daee1723f4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a6bd013becc408d017e84c97201c3fb3724ebe8e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119596225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468403"
 ---
 # <a name="systemphotoexposureindexdenominator"></a>System.Photo.ExposureIndexDenominator
 
@@ -30,7 +30,7 @@ propertyDescription
       type = UInt32
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

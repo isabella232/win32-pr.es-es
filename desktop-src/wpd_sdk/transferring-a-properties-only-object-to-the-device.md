@@ -1,36 +1,36 @@
 ---
-description: Transferir un objeto Properties-Only al dispositivo
+description: Transferir un Properties-Only al dispositivo
 ms.assetid: 6305cff9-c0ce-4ef5-a129-bc329b9c563f
-title: Transferir un objeto Properties-Only al dispositivo
+title: Transferir un Properties-Only al dispositivo
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: e20f9bcfecd46ea3047310ea5b946a366b35b9c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103816291"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466651"
 ---
-# <a name="transferring-a-properties-only-object-to-the-device"></a>Transferir un objeto Properties-Only al dispositivo
+# <a name="transferring-a-properties-only-object-to-the-device"></a>Transferir un Properties-Only al dispositivo
 
 Aunque en el ejemplo del tema anterior se mostró la creación de contenido en un dispositivo que consta de propiedades y datos, este tema se centra en la creación de un objeto de solo propiedades.
 
-Las transferencias de solo propiedades se realizan mediante las interfaces descritas en la tabla siguiente.
+Las transferencias de solo propiedad se logran mediante las interfaces descritas en la tabla siguiente.
 
 
 
 | Interfaz                                                          | Descripción                                            |
 |--------------------------------------------------------------------|--------------------------------------------------------|
-| [**Interfaz IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) | Proporciona acceso a los métodos específicos del contenido.       |
-| [**Interfaz IPortableDeviceValues**](iportabledevicevalues.md)   | Se utiliza para recuperar las propiedades que describen el contenido. |
+| [**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent) | Proporciona acceso a los métodos específicos del contenido.       |
+| [**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)   | Se usa para recuperar las propiedades que describen el contenido. |
 
 
 
  
 
-La `TransferContactToDevice` función del módulo ContentTransfer. cpp de la aplicación de ejemplo muestra cómo una aplicación podría transferir información de contacto de un equipo a un dispositivo conectado. En este ejemplo concreto, el nombre de contacto transferido es una "John Kane" codificada de forma rígida y el número de teléfono del contacto transferido siempre es "425-555-0123".
+La `TransferContactToDevice` función del módulo ContentTransfer.cpp de la aplicación de ejemplo muestra cómo una aplicación podría transferir información de contacto desde un equipo a un dispositivo conectado. En este ejemplo en particular, el nombre de contacto transferido es un "John Transfer" codificado de forma fuerte y el número de teléfono de contacto transferido siempre es "425-555-0123".
 
-La primera tarea que se realiza mediante la `TransferContactToDevice` función es solicitar al usuario que escriba un identificador de objeto para el objeto primario en el dispositivo (con el que se transferirá el contenido).
+La primera tarea que realiza la función es pedir al usuario que escriba un identificador de objeto para el objeto primario en el dispositivo (bajo el que se transferirá `TransferContactToDevice` el contenido).
 
 
 ```C++
@@ -50,7 +50,7 @@ if (FAILED(hr))
 
 
 
-El siguiente paso es la recuperación de las propiedades de contacto, que se usarán cuando el ejemplo escriba el nuevo contacto en el dispositivo. La función auxiliar realiza la recuperación de propiedades de contacto `GetRequiredPropertiesForPropertiesOnlyContact` .
+El siguiente paso es la recuperación de las propiedades de contacto, que se usarán cuando el ejemplo escriba el nuevo contacto en el dispositivo. La función auxiliar realiza la recuperación de las propiedades `GetRequiredPropertiesForPropertiesOnlyContact` de contacto.
 
 
 ```C++
@@ -69,14 +69,14 @@ if (SUCCEEDED(hr))
 
 
 
-Esta función escribe los datos siguientes en un objeto **IPortableDeviceValues** .
+Esta función escribe los datos siguientes en un **objeto IPortableDeviceValues.**
 
--   Identificador de objeto del elemento primario del contacto en el dispositivo. (Este es el destino en el que el dispositivo almacenará el objeto).
--   El tipo de objeto (un contacto).
--   El nombre de contacto (una cadena codificada de "John Kane").
--   El número de teléfono de contacto (una cadena codificada de forma rígida de "425-555-0123").
+-   Identificador de objeto del elemento primario del contacto en el dispositivo. (Este es el destino donde el dispositivo almacenará el objeto).
+-   Tipo de objeto (un contacto).
+-   El nombre del contacto (una cadena codificada de forma codificada de forma codificada como "John John")
+-   El número de teléfono de contacto (una cadena codificada de forma hard de "425-555-0123").
 
-En el último paso se crea el objeto de solo propiedades en el dispositivo (con las propiedades establecidas por la `GetRequiredPropertiesForPropertiesOnlyContact` función auxiliar). Esto se logra mediante una llamada al método **IPortableDeviceContent:: CreateObjectWithPropertiesOnly** .
+El paso final crea el objeto de solo propiedades en el dispositivo (mediante las propiedades establecidas por la `GetRequiredPropertiesForPropertiesOnlyContact` función auxiliar). Para ello, se llama al **método IPortableDeviceContent::CreateObjectWithPropertiesOnly.**
 
 
 ```C++
@@ -107,13 +107,13 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[**Interfaz IPortableDevice**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
+[**IPortableDevice (Interfaz)**](/windows/desktop/api/PortableDeviceApi/nn-portabledeviceapi-iportabledevice)
 </dt> <dt>
 
-[**Interfaz IPortableDeviceContent**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)
+[**IPortableDeviceContent (interfaz)**](/windows/desktop/api/portabledeviceapi/nn-portabledeviceapi-iportabledevicecontent)
 </dt> <dt>
 
-[**Interfaz IPortableDeviceValues**](iportabledevicevalues.md)
+[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**Guía de programación**](programming-guide.md)

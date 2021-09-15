@@ -1,5 +1,5 @@
 ---
-description: Establece la influencia mínima de los influjos. Se omiten los valores de influencia inferiores a este.
+description: Establece la influencia mínima de los mínimos. Se omiten los valores de influencia menores que este.
 ms.assetid: 9af19c9e-bb6e-4f93-973f-5c38f88eea3d
 title: Método ID3DXSkinInfo::SetMinIonalInfluence (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: abe9f1d7f9c54b9c3086160b974e2bc7dc659eb6dae3ff647f059627ff3ef145
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 03e3aeeed31a58231644784ba5070bc9422f7820
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119747485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568412"
 ---
 # <a name="id3dxskininfosetminboneinfluence-method"></a>Método ID3DXSkinInfo::SetMinIonalInfluence
 
-Establece la influencia mínima de los influjos. Se omiten los valores de influencia inferiores a este.
+Establece la influencia mínima de los mínimos. Se omiten los valores de influencia menores que este.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ HRESULT SetMinBoneInfluence(
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor de influencia mínimo. Se omiten los valores de influencia inferiores a este.
+Valor de influencia mínimo. Se omiten los valores de influencia menores que este.
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

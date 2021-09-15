@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed3efe5eb228d378778a817dcdbb8e7e56ee3d5d497fe00c0aa7b2adc645d27b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ab33d4c3d235a7bba67219378063cb9811601e68
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118995665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466157"
 ---
 # <a name="playlistleftstatus"></a>PLAYLIST.leftStatus
 
@@ -31,9 +31,9 @@ El **atributo leftStatus** especifica o recupera el texto de estado que se muest
 
 Este atributo es una cadena de lectura **y escritura.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este atributo puede combinar cualquier texto con palabras clave específicas que mostrarán la información deseada, como la duración total de la lista de reproducción. Las palabras clave están entre símbolos de porcentaje (%) para que sean distintas del texto normal.
+Este atributo puede combinar cualquier texto con palabras clave específicas que mostrarán la información deseada, como la duración total de la lista de reproducción. Las palabras clave están rodeados de símbolos de porcentaje (%) para mantenerlos distintos del texto normal.
 
 Se pueden usar las siguientes palabras clave.
 
@@ -44,7 +44,7 @@ Se pueden usar las siguientes palabras clave.
 | count                 | Número de elementos de la lista de reproducción.                                                                                                                                                                             |
 | tamaño                  | Tamaño total de la lista de reproducción.                                                                                                                                                                                  |
 | duration              | Duración total de la lista de reproducción.                                                                                                                                                                              |
-| *Xxx*                 | Hace un **elemento getItemInfo en** la lista de reproducción, *donde XXX* es el elemento que se va a recibir.                                                                                                                                 |
+| *XXX*                 | Hace un **elemento getItemInfo en** la lista de reproducción, *donde XXX* es el elemento que se va a recibir.                                                                                                                                 |
 | SelectedSize          | Tamaño total de las entradas seleccionadas en la lista de reproducción.                                                                                                                                                          |
 | SelectedCount         | Número total de entradas seleccionadas en la lista de reproducción.                                                                                                                                                            |
 | SelectedDuration      | Duración total de las entradas seleccionadas en la lista de reproducción.                                                                                                                                                      |

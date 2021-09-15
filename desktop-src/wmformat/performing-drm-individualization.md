@@ -24,12 +24,12 @@ keywords:
 - API extendidas de cliente, individualización
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72c46d2cd6fccd2c6c1a8898a2d0215b6bc62a3655b12412192d1809021747ad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d8f7f04add4ed626985651d5220e69ea713e4d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119027393"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467073"
 ---
 # <a name="performing-drm-individualization"></a>Realización de la individualización de DRM
 

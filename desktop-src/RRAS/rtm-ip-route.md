@@ -1,10 +1,10 @@
 ---
 title: RTM_IP_ROUTE estructura (Rtm.h)
-description: La estructura RTM \_ IP ROUTE contiene información que describe una ruta propiedad de la familia de \_ protocolos IP.
+description: La estructura \_ RTM IP \_ ROUTE contiene información que describe una ruta propiedad de la familia de protocolos IP.
 ms.assetid: e752a4ae-a6bf-4cd3-9638-7615ff3901b7
 keywords:
 - RTM_IP_ROUTE ras de estructura
-- PRTM_IP_ROUTE puntero ras de estructura
+- PRTM_IP_ROUTE puntero de estructura RAS
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fd854864dcc61397fa52df7af9419a38ac829a81382be6b6190e4cb3db41d7c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1978503a3ec37e0c39716569030d5ea6599e19d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120026735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271959"
 ---
 # <a name="rtm_ip_route-structure"></a>Estructura RTM \_ IP \_ ROUTE
 
 \[Esta API se ha reemplazado por la API [de Routing Table Manager versión 2](about-routing-table-manager-version-2.md) y no estará disponible más allá de Windows Server 2003. Las aplicaciones deben usar la API de Routing Table Manager versión 2.\]
 
-La **estructura RTM \_ IP \_ ROUTE** contiene información que describe una ruta propiedad de la familia de protocolos IP.
+La **estructura \_ RTM IP \_ ROUTE** contiene información que describe una ruta propiedad de la familia de protocolos IP.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ typedef struct _RTM_IP_ROUTE {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -70,14 +70,14 @@ Especifica la interfaz a través de la que se obtuvo la ruta.
 
 </dd> <dt>
 
-**RR \_ ProtocolSpecificData**
+**Protocolo \_ RRSpecificData**
 </dt> <dd>
 
-Especifica una estructura [**DE DATOS ESPECÍFICA DEL \_ \_ PROTOCOLO**](protocol-specific-data.md) que contiene memoria reservada para los datos específicos del protocolo de enrutamiento.
+Especifica una estructura [**DE \_ DATOS \_ ESPECÍFICOS DEL PROTOCOLO**](protocol-specific-data.md) que contiene memoria reservada para datos específicos del protocolo de enrutamiento.
 
 </dd> <dt>
 
-**Red \_ RR**
+**RR \_ Network**
 </dt> <dd>
 
 Especifica una estructura [**DE \_ RED IP**](ip-network.md) que contiene una dirección de red IP.
@@ -87,7 +87,7 @@ Especifica una estructura [**DE \_ RED IP**](ip-network.md) que contiene una dir
 **RR \_ NextHopAddress**
 </dt> <dd>
 
-Especifica una estructura [**IP \_ NEXT HOP \_ \_ ADDRESS**](ip-next-hop-address.md) que contiene la dirección del enrutador del próximo salto.
+Especifica una estructura [**IP \_ NEXT HOP \_ \_ ADDRESS**](ip-next-hop-address.md) que contiene la dirección del enrutador de próximo salto.
 
 </dd> <dt>
 
@@ -98,9 +98,9 @@ Especifica una estructura [**DE \_ DATOS \_ ESPECÍFICOS DE**](ip-specific-data.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los miembros de la estructura **\_ RTM IP \_ ROUTE** están alineados **con DWORD.**
+Todos los miembros de la **estructura \_ RTM IP \_ ROUTE** están alineados **con DWORD.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,15 +111,15 @@ Los miembros de la estructura **\_ RTM IP \_ ROUTE** están alineados **con DWOR
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                        |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                             |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                   |
-| Header<br/>                   | <dl> <dt>Rtm.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Rtm.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Referencia de la versión 1 de Routing Table Manager](routing-table-manager-version-1-reference.md)
+[Referencia de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-reference.md)
 </dt> <dt>
 
 [Estructuras de la versión 1 del Administrador de tablas de enrutamiento](routing-table-manager-version-1-structures.md)

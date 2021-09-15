@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 89377e1428259453ebcf789fbb04c619b7cd403ec649e0a2f0b48202ab428157
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 77902cbbeb5779acdf235a645fc48c865fb683bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119470865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465875"
 ---
 # <a name="windows7idxinfo-class"></a>Clase Windows7IdxInfo
 
-Niveles de información de columna que se han agregado a la versión Windows 7 de ESENT.
+Niveles de información de columna que se han agregado a la Windows 7 de ESENT.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
@@ -43,7 +43,7 @@ Niveles de información de columna que se han agregado a la versión Windows 7 d
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

@@ -4,12 +4,12 @@ description: Describe el esquema EAPHost y el esquema heredado para crear XML de
 ms.assetid: d4572866-7e2b-4e7c-afe1-66394b549bc4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4eb9f09a0f1380ad0373ec1171b0b0ea9101af87335d25287969d9a5f7f2da9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5dbe40f447618a9ca0da89875521349101c1191f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118984235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360144"
 ---
 # <a name="eaphost-and-legacy-schema"></a>EAPHost y esquema heredado
 

@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 70675ddbeb37ba3f32b23f02a801c9236d4d6695e551245be99033755c04c5a0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d0db5a0eb9a6cdc5c31e833259c776cf2c63a85
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119112194"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466311"
 ---
 # <a name="jet_dbinfomisclogtimebadchecksum-property"></a>JET_DBINFOMISC.logtimeBadChecksum, propiedad
 
@@ -40,7 +40,7 @@ Obtiene la última vez que se encontró un error de suma de comprobación no cor
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

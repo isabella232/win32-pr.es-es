@@ -4,18 +4,18 @@ ms.assetid: fdd31eac-1dd6-45f0-90fb-d5a74c85db2e
 title: Uso de la exclusión mutua para asf Secuencias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40c7fd104659064952803c16f572ee1e55dee0508144474e89ee7c0f362315c9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 411b5aa0638ab1c56298b93d01e8de99920abc6c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119034573"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468594"
 ---
 # <a name="using-mutual-exclusion-for-asf-streams"></a>Uso de la exclusión mutua para asf Secuencias
 
 El contenido de ASF puede contener varias secuencias que se excluyen mutuamente. Estas secuencias no se pueden leer simultáneamente, pero solo se lee una de ellas a la vez. Por ejemplo, el archivo puede contener un conjunto de secuencias que incluyen el mismo contenido codificado a una velocidad de bits diferente. El flujo que se usa viene determinado por el ancho de banda disponible para la aplicación que transmite el contenido. El objeto de exclusión mutua de ASF, que forma parte del objeto de encabezado, almacena información sobre el grupo de secuencias mutuamente excluyentes.
 
-En Media Foundation, el *objeto de exclusión* mutua que expone la interfaz [**RECORDSETASFMutualExclusion**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfmutualexclusion) existe para cada objeto de exclusión mutua de ASF. El objeto de perfil contiene una referencia a todos los objetos de exclusión mutua.
+En Media Foundation, el *objeto de exclusión* mutua que expone la interfaz [**IMFASFMutualExclusion**](/windows/desktop/api/wmcontainer/nn-wmcontainer-imfasfmutualexclusion) existe para cada objeto de exclusión mutua de ASF. El objeto de perfil contiene una referencia a todos los objetos de exclusión mutua.
 
 El objeto de exclusión mutua almacena información sobre el grupo de flujos mutuamente excluyentes como registros. Un objeto de exclusión mutua puede tener varios registros que se pueden usar para crear escenarios complejos. Cada registro contiene una o varias secuencias que no pueden coexistir con secuencias de otro registro, mantenidas por el objeto de exclusión mutua, en función del tipo de exclusión mutua, como la velocidad de bits.
 
@@ -37,7 +37,7 @@ En este ejemplo, a las nueve secuencias se les asignan los siguientes números d
 Este escenario se puede implementar mediante los cuatro objetos de exclusión mutua siguientes:
 
 -   El primer objeto de exclusión mutua incluye flujos 1, 2 y 3, mutuamente excluyentes por velocidad de bits. Cada secuencia tiene su propio registro.
--   El segundo objeto de exclusión mutua incluye los flujos 4, 5 y 6, mutuamente excluyentes por velocidad de bits. Cada secuencia tiene su propio registro.
+-   El segundo objeto de exclusión mutua incluye secuencias 4, 5 y 6, mutuamente excluyentes por velocidad de bits. Cada secuencia tiene su propio registro.
 -   El tercer objeto de exclusión mutua incluye 7, 8 y 9, mutuamente excluyente por velocidad de bits. Cada secuencia tiene su propio registro.
 -   El cuarto objeto de exclusión mutua contiene tres registros, el primero incluidos los flujos 1, 2 y 3; el segundo incluye las secuencias 4, 5 y 6; y el tercero, incluidos los flujos 7, 8 y 9. Estos registros se excluyen mutuamente por idioma.
 

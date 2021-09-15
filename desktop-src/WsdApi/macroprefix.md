@@ -1,19 +1,19 @@
 ---
-description: Define el prefijo que se va a usar en el código generado para los nombres de macros en el espacio de nombres .
+description: Define el prefijo que se usará en el código generado para los nombres de macros en el espacio de nombres .
 ms.assetid: ead82070-5546-4036-bff2-8da2714d4264
 title: macroPrefix, elemento
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 970232b86aa226f16fa06cf2d3c9de40c156702c802c6f6254e45157e1df58ca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7c9590092d78ea4700715a868bb7e50f15833011
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119130717"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473278"
 ---
 # <a name="macroprefix-element"></a>macroPrefix, elemento
 
-Define el prefijo que se va a usar en el código generado para los nombres de macros en el espacio de nombres .
+Define el prefijo que se usará en el código generado para los nombres de macros en el espacio de nombres .
 
 ## <a name="usage"></a>Uso
 
@@ -39,7 +39,7 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este elemento invalida el prefijo URI predeterminado utilizado para las macros generadas. Por ejemplo, si el prefijo de macro es "AV" y el nombre es "Tuner", la macro generada para el nombre completo \_ será "AV \_ Tuner".
 

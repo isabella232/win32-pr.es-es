@@ -5,16 +5,16 @@ ms.assetid: 065266a6-6db5-4113-bd2b-22ac6063236d
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
-ms.openlocfilehash: 81fdc237b731489f7ac501a4e053e62d744b0fdef77c5b630cd478dede5aeda5
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6220b3815ad6ff360af7255a91fc34d71125f38c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119911495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566904"
 ---
 # <a name="op_package-structure"></a>OP_PACKAGE estructura
 
-Contiene una estructura que contiene una estructura OP_PACKAGE_COLLECTION.
+Contiene una estructura que contiene un OP_PACKAGE_COLLECTION.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,7 +29,7 @@ typedef struct _OP_PACKAGE
 } OP_PACKAGE, *POP_PACKAGE;
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 ### <a name="encryptiontype"></a>EncryptionType
 

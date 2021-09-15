@@ -10,12 +10,12 @@ keywords:
 - thumb,trackbar type
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 480452916bb6410d4aaf0bee67d16130817de492f28fc12bf31e30d25e1f06d3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9abe00225131bb00c57c0ff9b085546c47e5896d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119762685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465833"
 ---
 # <a name="trackbar-type"></a>Tipo de barra de seguimiento
 

@@ -13,12 +13,12 @@ keywords:
 - configuración del registro de dependencias de la aplicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa210debc4045326eb3bbae1e4fc137db5fb5a5dec6b89e493aedd54f110f82f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fb4b1692c6a4e1a8274472bbe9d718721c1ab4f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119861555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567509"
 ---
 # <a name="registering-application-dependency-windows-media-player-sdk"></a>Registro de dependencias de aplicación (Reproductor de Windows Media SDK)
 
@@ -34,7 +34,7 @@ Los siguientes valores del Registro se usan para registrar la dependencia en Rep
 -   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ MediaPlayer Setup REF \\ \\ *\_ TYPE* \\ Descriptor, "*APP*", "*REF \_ DESCRIPTOR*"
 -   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ MediaPlayer Setup REF \\ \\ *\_ TYPE* \\ Version, "*APP*", "*WMP \_ VERSION*"
 
-Los siguientes valores del Registro se usan para registrar la dependencia en el entorno de ejecución Windows SDK de formato multimedia:
+Los siguientes valores del Registro se usan para registrar la dependencia en el entorno de ejecución del SDK Windows Media Format:
 
 -   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ WindowsMedia Setup REF \\ \\ *\_ TYPE* \\ App, "*APP*", "*APP \_ STRING*"
 -   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ WindowsMedia Setup REF \\ \\ *\_ TYPE* \\ Descriptor, "*APP*", "*REF \_ DESCRIPTOR*"
@@ -69,7 +69,7 @@ Versión del SDK Windows Media Format requerido por la aplicación.
 Los tres valores del Registro de ejemplo siguientes muestran cómo configurar los valores de la aplicación:
 
 -   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ MediaPlayer Setup \\ \\ DependentRefCounts \\ App, "Southvideo", "Southplayer Video Player"
--   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ MediaPlayer Setup \\ \\ DependentRefCounts \\ Descriptor, "Southvideo", "Southplayer Video Player uses the Windows Media Format SDK to play video files".
+-   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ MediaPlayer Setup \\ \\ DependentRefCounts \\ Descriptor, "Southvideo", "Southvideo Player uses the Windows Media Format SDK to play video files".
 -   HKEY \_ CLASSES ROOT Software Microsoft \_ \\ \\ \\ MediaPlayer Setup \\ \\ DependentRefCounts \\ Version, "Southvideo", "9.0.0.2600"
 
 ## <a name="related-topics"></a>Temas relacionados

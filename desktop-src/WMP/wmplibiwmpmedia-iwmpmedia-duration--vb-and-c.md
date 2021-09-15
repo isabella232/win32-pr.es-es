@@ -4,7 +4,7 @@ description: La propiedad duration obtiene la duración en segundos del elemento
 ms.assetid: f8a0bf3e-eeaf-46f5-90c8-d3b11ce4eb39
 keywords:
 - duración de la propiedad Reproductor de Windows Media
-- propiedad duration Reproductor de Windows Media , interfaz IWMPMedia
+- propiedad duration Reproductor de Windows Media interfaz , IWMPMedia
 - Interfaz IWMPMedia Reproductor de Windows Media propiedad , duration
 topic_type:
 - apiref
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38703c37e73ba6312970b8e5b929441c3c5c9ccd1f034ab244dc97c36c2d2162
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f796cab042713082ce2066659f62736855e62787
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119506025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473304"
 ---
 # <a name="iwmpmediaduration-property"></a>IWMPMedia::d uration
 
@@ -51,7 +51,7 @@ Public ReadOnly Property duration As System.Double
 
 **System.Double que** es la duración en segundos.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si esta propiedad se usa con un elemento multimedia distinto del especificado en AxWindowsMediaPlayer.currentMedia, es posible que no contenga un valor válido.
 
@@ -117,7 +117,7 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

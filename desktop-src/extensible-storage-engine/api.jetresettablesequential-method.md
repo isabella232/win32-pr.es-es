@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: aaa918dba29802e89c8ca2a50e53e7a02e75b62a2bccf034c59c0cb25302ee64
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b45ca118894015df7cda56201733cdaad9b88d69
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117902938"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466040"
 ---
 # <a name="apijetresettablesequential-method"></a>Método Api.JetResetTableSequential
 
@@ -83,7 +83,7 @@ public static void JetResetTableSequential(
     
     Reservado para uso futuro.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

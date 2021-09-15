@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 294f3f6a01d88f92f606e5120edbfa8d5086f2e0173375fd78f5525c17c4f1f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c26acd38124a976b53ea950f54e929e717d56555
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118531512"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568033"
 ---
 # <a name="id3dx11effectvariableasmatrix-method"></a>Método ID3DX11EffectVariable::AsMatrix
 
@@ -47,7 +47,7 @@ Tipo: **[ **ID3DX11EffectMatrixVariable**](id3dx11effectmatrixvariable.md)\***
 
 Puntero a una variable de matriz. Vea [**ID3DX11EffectMatrixVariable.**](id3dx11effectmatrixvariable.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 AsMatrix devuelve una versión de la variable de efecto que se ha especializado en una variable de matriz. De forma similar a una conversión, esta especialización devolverá un objeto no válido si la variable de efecto no contiene datos de matriz.
 
@@ -69,7 +69,7 @@ Las aplicaciones pueden probar la validez del objeto devuelto llamando a [**IsVa
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

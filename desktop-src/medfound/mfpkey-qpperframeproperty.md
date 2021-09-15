@@ -4,12 +4,12 @@ ms.assetid: 927c2fd3-9790-4e23-98f5-f3ac0c0d77dc
 title: MFPKEY_QPPERFRAME propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00c9bf24c3d4d6851fee63cc6352bdc6a1f550a380f42c58795e6fe6f27a5a0e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bccaabcc5c123f16f00d43ac81b77e21c155b5c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119663235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468636"
 ---
 # <a name="mfpkey_qpperframe-property"></a>Propiedad QPPERFRAME de MFPKEY \_
 
@@ -17,7 +17,7 @@ Especifica QP. Los valores posibles son de 1,0 a 31,0.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
+Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -27,18 +27,18 @@ Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/
 
 2.0
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-A medida que aumenta el valor de esta propiedad, la proporción de compresión aumenta y la calidad disminuye.
+A medida que aumenta el valor de esta propiedad, aumenta la relación de compresión y disminuye la calidad.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------|-----------------------------------------------------------------------------------------|
-| Cliente<br/> | Windows Vista o Windows 7<br/>                                                   |
-| Header<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Remoto<br/> | Windows Vista o Windows 7<br/>                                                   |
+| Encabezado<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

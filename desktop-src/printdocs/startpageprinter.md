@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Spoolss.dll
-ms.openlocfilehash: 974c2f5dcc4c821602d29a4eed7ced5ad1caa48f0e5ded664a705940d88305b4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f8d1c5cc296fae1b166b891fc881a6abcdb6b2af
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118470137"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467197"
 ---
 # <a name="startpageprinter-function"></a>Función StartPagePrinter
 
@@ -52,7 +52,7 @@ Si la función se realiza correctamente, el valor devuelto es un valor distinto 
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.
@@ -61,14 +61,14 @@ Si la función no se realiza correctamente, el valor devuelto es cero.
 
 La secuencia de un trabajo de impresión es la siguiente:
 
-1.  Para iniciar un trabajo de impresión, llame [**a StartDocPrinter**](startdocprinter.md).
+1.  Para comenzar un trabajo de impresión, llame [**a StartDocPrinter**](startdocprinter.md).
 2.  Para comenzar cada página, llame a **StartPagePrinter**.
 3.  Para escribir datos en una página, llame a [**WritePrinter**](writeprinter.md).
 4.  Para finalizar cada página, llame a [**EndPagePrinter**](endpageprinter.md).
 5.  Repita 2, 3 y 4 para tantas páginas como sea necesario.
-6.  Para finalizar el trabajo de impresión, llame a [**EndDocPrinter**](enddocprinter.md).
+6.  Para finalizar el trabajo de impresión, llame [**a EndDocPrinter**](enddocprinter.md).
 
-Cuando una página de un archivo en cola supera aproximadamente 350 MB, puede no imprimirse y no enviar un mensaje de error. Por ejemplo, esto puede ocurrir al imprimir archivos EMF grandes. El límite de tamaño de página depende de muchos factores, como la cantidad de memoria virtual disponible, la cantidad de memoria asignada mediante la llamada a procesos y la cantidad de fragmentación en el montón de procesos.
+Cuando una página de un archivo en cola supera aproximadamente 350 MB, puede no imprimirse y no enviar un mensaje de error. Por ejemplo, esto puede ocurrir al imprimir archivos EMF grandes. El límite de tamaño de página depende de muchos factores, como la cantidad de memoria virtual disponible, la cantidad de memoria asignada mediante la llamada a los procesos y la cantidad de fragmentación en el montón del proceso.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -78,7 +78,7 @@ Para obtener un programa de ejemplo que use esta función, [vea Cómo: Imprimir 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |

@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 990291f8b618032d3e5b7e33a7644735cf1673482b2190936f2e496dbf68bd64
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3fdbb80b2033d542da4894172d58451ed5da224f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117933443"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568545"
 ---
 # <a name="textscrolling"></a>TEXT.scrolling
 
-El **atributo scrolling** especifica o recupera un valor que indica si el texto se desplaza.
+El **atributo de** desplazamiento especifica o recupera un valor que indica si el texto se desplaza.
 
 ``` syntax
         elementID.scrolling
@@ -29,11 +29,11 @@ El **atributo scrolling** especifica o recupera un valor que indica si el texto 
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un booleano de lectura **y escritura.**
+Este atributo es un valor booleano de lectura **y escritura.**
 
 
 
-| Valor | Descripción                     |
+| Value | Descripción                     |
 |-------|---------------------------------|
 | true  | El desplazamiento está habilitado.           |
 | false | Predeterminada. El desplazamiento está deshabilitado. |
@@ -42,7 +42,7 @@ Este atributo es un booleano de lectura **y escritura.**
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La característica de desplazamiento proporciona un búfer de dos espacios entre el final del texto y el principio de la línea repetida.
 
@@ -60,7 +60,7 @@ Vea el [atributo value](text-value.md) para obtener un ejemplo que ilustra cómo
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

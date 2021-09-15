@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ae1fd63ef4832ce216298f5d050ecc99697904b174dd20c55f4b85442594a28d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2008726577bac37e129a887af2d8b1747323c81c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119738785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359775"
 ---
 # <a name="apiretrievecolumnasstring-method-jet_sesid-jet_tableid-jet_columnid-encoding-retrievecolumngrbit"></a>Método Api.RetrieveColumnAsString (JET_SESID, JET_TABLEID, JET_COLUMNID, Encoding, RetrieveColumnGrbit)
 
@@ -107,14 +107,14 @@ public static string RetrieveColumnAsString(
 Tipo: [System.String](/dotnet/api/system.string)  
 Los datos recuperados de la columna como una cadena. Null si la columna es NULL.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 
-[Sobrecarga de RetrieveColumnAsString](./api.retrievecolumnasstring-method.md)
+[Sobrecarga retrieveColumnAsString](./api.retrievecolumnasstring-method.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

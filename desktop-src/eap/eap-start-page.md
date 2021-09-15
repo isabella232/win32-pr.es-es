@@ -9,12 +9,12 @@ keywords:
 - EAP, consulte Protocolo de autenticación extensible.
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cd54a380323fdf5a04add7f28fe18378be8ed375e936c70d2045f2e139ff852
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c79b9585363d74eb50190d0fd6355830a7087aa4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120094435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569272"
 ---
 # <a name="extensible-authentication-protocol"></a>Protocolo de autenticación extensible
 
@@ -24,17 +24,17 @@ El Protocolo de autenticación extensible (EAP) es un estándar compatible con v
 
 ## <a name="where-applicable"></a>Donde sea aplicable
 
-EAP mejora los protocolos de autenticación anteriores, como el Protocolo de autenticación de contraseñas (PAP) y el Protocolo de autenticación de desafío de protocolo de enlace (CHAP).
+EAP mejora los protocolos de autenticación anteriores, como el Protocolo de autenticación de contraseña (PAP) y el Protocolo de autenticación de desafío de protocolo de enlace (CHAP).
 
-Para el nuevo desarrollo de métodos EAP, vea [Host de protocolo de autenticación extensible](../eaphost/portal.md).
+Para el nuevo desarrollo de métodos EAP, consulte [Host de protocolo de autenticación extensible](../eaphost/portal.md).
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-La API de EAP está diseñada para su uso por los programadores de C/C++. Los programadores deben estar familiarizados con los conceptos de red.
+La API de EAP está diseñada para que la usen los programadores de C/C++. Los programadores deben estar familiarizados con los conceptos de red.
 
 ## <a name="run-time-requirements"></a>Requisitos de tiempo de ejecución
 
-EAP se admite en equipos cliente y servidor que se ejecutan Windows 2000 y versiones posteriores. EAP también se admite en equipos que se ejecutan en Windows 2000 Server y versiones posteriores si ejecutan el Servicio de autenticación de Internet (IAS). Para más información sobre los sistemas operativos compatibles, consulte la sección Requisitos de la documentación.
+EAP se admite en equipos cliente y servidor que se ejecutan en Windows 2000 y versiones posteriores. EAP también se admite en equipos que se ejecutan en Windows Server 2000 y versiones posteriores si ejecutan el Servicio de autenticación de Internet (IAS). Para obtener más información sobre los sistemas operativos compatibles, consulte la sección Requisitos de la documentación.
 
 ## <a name="related-topics"></a>Temas relacionados
 

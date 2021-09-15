@@ -20,16 +20,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 50a42d3ca0b1e81dc7f5205482c99a019b4143e5d3f1e6cb8f7cb61c65886f4c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 43657ec60e521795ba4d474306de9380618cd21f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118271909"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359193"
 ---
 # <a name="apiretrievecolumn-method-jet_sesid-jet_tableid-jet_columnid-retrievecolumngrbit-jet_retinfo"></a>Método Api.RetrieveColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, RetrieveColumnGrbit, JET_RETINFO)
 
-Recupera un valor de columna única del registro actual. El registro es ese registro asociado a la entrada de índice en la posición actual del cursor. Como alternativa, esta función puede recuperar una columna de un registro que se crea en el búfer de copia de cursor. Esta función también puede recuperar datos de columna de una entrada de índice que hace referencia al registro actual. Además de recuperar el valor de columna real, JetRetrieveColumn también se puede usar para recuperar el tamaño de una columna, antes de recuperar los propios datos de columna para que los búferes de aplicación puedan tener el tamaño adecuado.
+Recupera un valor de columna única del registro actual. El registro es ese registro asociado a la entrada de índice en la posición actual del cursor. Como alternativa, esta función puede recuperar una columna de un registro que se crea en el búfer de copia de cursor. Esta función también puede recuperar datos de columna de una entrada de índice que hace referencia al registro actual. Además de recuperar el valor de columna real, JetRetrieveColumn también se puede usar para recuperar el tamaño de una columna, antes de recuperar los propios datos de columna para que los búferes de la aplicación se puedan dimensionar correctamente.
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -100,7 +100,7 @@ public static byte[] RetrieveColumn(
   - retinfo  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_RETINFO](./jet-retinfo-class.md)  
     
-    Si pretinfo se da como NULL, la función se comporta como si se hubieran dado una itagSequence de 1 y un valor ibLongValue de 0 (cero). Esto hace que la recuperación de columnas recupere el primer valor de una columna de varios valores y recupere datos largos en el desplazamiento 0 (cero).
+    Si pretinfo se da como NULL, la función se comporta como si se hubieran dado una itagSequence de 1 y un ibLongValue de 0 (cero). Esto hace que la recuperación de columnas recupere el primer valor de una columna con varios valores y recupere datos largos en el desplazamiento 0 (cero).
 
 #### <a name="return-value"></a>Valor devuelto
 
@@ -111,7 +111,7 @@ Datos recuperados de la columna. Null si la columna es NULL.
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

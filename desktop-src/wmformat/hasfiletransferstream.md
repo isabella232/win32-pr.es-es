@@ -1,6 +1,6 @@
 ---
 title: HasFileTransferStream
-description: El atributo HasFileTransferStream es un atributo de nivel de archivo que especifica si el archivo contiene flujos de transferencia de archivos.
+description: El atributo HasFileTransferStream es un atributo de nivel de archivo que especifica si el archivo contiene secuencias de transferencia de archivos.
 ms.assetid: 5a671fb7-cd79-4ea8-8aed-63402dc008d3
 keywords:
 - Formato multimedia de Windows HasFileTransferStream
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b239a02968b7dc3a2c8f9c06588e8e6a5545fb3d252c719d65322c4d0e259619
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 77d21e814306178ed19b3aa2b19320419a5e8b1f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118028677"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360220"
 ---
 # <a name="hasfiletransferstream"></a>HasFileTransferStream
 
-El **atributo HasFileTransferStream** es un atributo de nivel de archivo que especifica si el archivo contiene flujos de transferencia de archivos.
+El **atributo HasFileTransferStream** es un atributo de nivel de archivo que especifica si el archivo contiene secuencias de transferencia de archivos.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,9 +29,9 @@ g \_ wszWMHasFileTransferStream
 
 ## <a name="data-type"></a>Tipo de datos
 
-**TIPO WMT \_ \_ BOOL**
+**WMT \_ TYPE \_ BOOL**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de un atributo codificado.
 

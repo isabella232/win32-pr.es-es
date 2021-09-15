@@ -12,22 +12,22 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: d76208c74df5f939a7ff06ec3ac4b4da0f91f5c52db6ac2625e8cb6dce94a9ee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c342ebb19f4e051d7650e905506a5bb32a9de890
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118460838"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468298"
 ---
 # <a name="cfolderitems-class"></a>CFolderItems (clase)
 
-**CFolderItems** es una colección de [**FolderItems.**](folderitems.md) Implementa las interfaces siguientes: [**IPersistFolder**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ipersistfolder), [**IObjectWithSite**](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite), [**FolderItems3**](folderitems3-object.md), [**IObjectSafety,**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768224(v=vs.85)) [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch).
+**CFolderItems** es una colección de [**FolderItems.**](folderitems.md) Implementa las interfaces siguientes: [**IPersistFolder**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ipersistfolder), [**IObjectWithSite**](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite), [**FolderItems3,**](folderitems3-object.md) [**IObjectSafety,**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768224(v=vs.85)) [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **clase CFolderItems** solo enumera los elementos de una carpeta específica.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 9231ad4a3c15aac893cc51105e764d7bb6bbd4866dae6e11164b9418db557c9a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3b33c2219dc9da43474f28b4b807727bdd1d90a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117842886"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360193"
 ---
 # <a name="music-properties"></a>Música Propiedades
 

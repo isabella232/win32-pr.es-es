@@ -4,12 +4,12 @@ ms.assetid: df363017-97c5-45b0-b8a5-44ac73b7a0e7
 title: Codificación de vídeo con compresión temporal (Microsoft Media Foundation)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 10d663b0101353d9ce72dab45f0b85e594afcacf4aa8b8a99a6d61d2db0ae07d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6ee107d8bf6b1ef6b1700abff105b0bdb79f72f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119721355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467205"
 ---
 # <a name="video-encoding-with-temporal-compression-microsoft-media-foundation"></a>Codificación de vídeo con compresión temporal (Microsoft Media Foundation)
 

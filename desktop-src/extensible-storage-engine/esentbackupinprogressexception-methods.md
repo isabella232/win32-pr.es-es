@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101036
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 846e3ccd683180f276f79d5156a1939b23273edf1ef32f446eb53020b07c32fa
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3dcde8797e8ef300d6f4193bfc12a9a263f5e428
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120066615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359188"
 ---
 # <a name="esentbackupinprogressexception-methods"></a>Métodos de EsentBackupInProgressException 
 
@@ -78,7 +78,7 @@ El [tipo EsentBackupInProgressException](./esentbackupinprogressexception-class.
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

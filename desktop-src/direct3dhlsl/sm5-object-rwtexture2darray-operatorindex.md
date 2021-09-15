@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 8650b4aed51915591438501fb2c929b846e5be1d4de1219017ec1eb45980d552
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: faf49c48fbf5042ce2765005cd8daea4d1227255
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118985925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473224"
 ---
 # <a name="rwtexture2darrayoperator--function"></a>RWTexture2DArray::Operator (Función)
 
@@ -51,7 +51,7 @@ Tipo: **R**
 
 Variable de recurso.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 

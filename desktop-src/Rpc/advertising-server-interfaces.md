@@ -4,12 +4,12 @@ description: El lado servidor de una aplicación que usa identificadores automá
 ms.assetid: d15fd8da-3afd-4031-95d1-b76a0ad9a20d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f1f81ec4b494c9ce2abd18031e3bf0ed3dd25d55908238ebc7bba96bce57e88f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 45955ac7228018d8ddebbc7c156031648091b6f3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120073605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271836"
 ---
 # <a name="advertising-server-interfaces"></a>Interfaces de servidor de publicidad
 
@@ -67,9 +67,9 @@ La [**función RpcNsBindingUnexport**](/windows/desktop/api/Rpcnsi/nf-rpcnsi-rpc
 
 Para obtener más información sobre el contenido y el formato de la base de datos del servicio de nombres, vea [The RPC Name Service Database](the-rpc-name-service-database.md).
 
-Las aplicaciones pueden utilizar el Active Directory si los programas de cliente y servidor se ejecutan en Windows 2000. Los equipos que ejecutan los programas cliente y servidor deben ser miembros de un Windows 2000.
+Las aplicaciones pueden usar el Active Directory si los programas de cliente y servidor se ejecutan en Windows 2000. Los equipos que ejecutan los programas cliente y servidor deben ser miembros de un Windows 2000.
 
-Para anunciar su presencia mediante el servicio Active Directory, el programa de servidor debe ejecutarse en el contexto de seguridad de un administrador de dominio. Si se ejecuta en el contexto de los usuarios del dominio, un administrador de dominio debe modificar la lista de control de acceso (ACL) en el contenedor de servicios RPC. Para obtener más información, consulte la documentación Active Directory.
+Para anunciar su presencia mediante el Active Directory, el programa de servidor debe ejecutarse en el contexto de seguridad de un administrador de dominio. Si se ejecuta en el contexto de los usuarios del dominio, un administrador de dominio debe modificar la lista de control de acceso (ACL) en el contenedor de servicios RPC. Para más información, consulte la documentación Active Directory datos.
 
  
 

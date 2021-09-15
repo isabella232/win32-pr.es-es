@@ -9,12 +9,12 @@ keywords:
 - IWMStatusCallback
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8eb1f2ae8ef64204435d7837b75258b77ec12f516103caeb936e82f979049ab4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 56e96b8d7fd75fd8a1d97a56c8b09304c51d0238
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119027123"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466472"
 ---
 # <a name="using-the-onstatus-callback"></a>Uso de la devolución de llamada OnStatus
 

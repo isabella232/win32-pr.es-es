@@ -4,12 +4,12 @@ ms.assetid: ea7d4ed1-2a96-4372-9936-abdd6473b57e
 title: MF_MT_AUDIO_WMADRC_AVGREF atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a822046d368025bcfd068f7c1afd32f75d22b5d1ceab69d3e4b517595baa9b8e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8cdde0bfb4c2993580d73981e9e121d1f7f18612
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119035293"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360703"
 ---
 # <a name="mf_mt_audio_wmadrc_avgref-attribute"></a>Atributo \_ \_ AVGREF MF MT AUDIO \_ WMADRC \_
 
@@ -19,7 +19,7 @@ Haga referencia al nivel de volumen medio de Windows archivo de audio multimedia
 
 **UINT32**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se aplica a los tipos de medios de audio Windows códecs de audio multimedia. Especifica el nivel de volumen medio original del contenido. El descodificador puede usar este valor para realizar el control de intervalo dinámico.
 
@@ -35,11 +35,11 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

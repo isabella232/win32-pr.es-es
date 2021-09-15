@@ -4,12 +4,12 @@ description: Mientras una función de enlace procesa un evento, se pueden desenc
 ms.assetid: 2382e7a4-82df-423a-8479-66e28baf8105
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 089ac7212823bc64d6c59cdae3d333e96760dfbc25c899cea80071bb39799c17
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 74e2b0dc6f8951bf48ce3fecabd3a81bd345388d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120030755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568536"
 ---
 # <a name="guarding-against-reentrancy-in-hook-functions"></a>Protección contra la reenencia en funciones de enlace
 
@@ -19,11 +19,11 @@ Por ejemplo, considere un caso en el que una función de enlace de un programa d
 
 Dado que se interrumpe el procesamiento de eventos, se pueden recibir eventos adicionales cada vez que la función de enlace llama a una función que hace que se comprueba la cola de mensajes del subproceso propietario. Esto sucede cuando se llama a cualquiera de los siguientes elementos dentro de la función de enlace:
 
--   Función Windows [**SendMessage,**](/windows/desktop/api/winuser/nf-winuser-sendmessage) [**GetMessage,**](/windows/desktop/api/winuser/nf-winuser-getmessage) [**PeekMessage,**](/windows/desktop/api/winuser/nf-winuser-peekmessagea) [**DialogBox**](/windows/desktop/api/winuser/nf-winuser-dialogboxa)o [**MessageBox**](/windows/desktop/api/winuser/nf-winuser-messagebox)
--   Las Microsoft Active Accessibility funciones [**AccessibleObjectFromEvent**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent), [**AccessibleObjectFromWindow**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromwindow), [**AccessibleObjectFromPoint**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfrompoint)
+-   La Windows [**función SendMessage,**](/windows/desktop/api/winuser/nf-winuser-sendmessage) [**GetMessage,**](/windows/desktop/api/winuser/nf-winuser-getmessage) [**PeekMessage,**](/windows/desktop/api/winuser/nf-winuser-peekmessagea) [**DialogBox**](/windows/desktop/api/winuser/nf-winuser-dialogboxa) [**o MessageBox**](/windows/desktop/api/winuser/nf-winuser-messagebox)
+-   El Microsoft Active Accessibility funciones [**AccessibleObjectFromEvent**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent), [**AccessibleObjectFromWindow**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromwindow), [**AccessibleObjectFromPoint**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfrompoint)
 -   Una [**interfaz IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) u otra propiedad o método del Modelo de objetos componentes (COM) que cruza los límites del proceso
 
-Dado que las funciones de enlace llaman a las propiedades y métodos [**AccessibleObjectFromEvent**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent) [**e IAccessible,**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) no es posible evitar la reenerción. La única solución es que los desarrolladores cliente agreguen código en la función de enlace que detecte la reentreencia y tomen las medidas adecuadas si se vuelve a escribir la función de enlace.
+Dado que las funciones de enlace llaman a las propiedades y métodos [**AccessibleObjectFromEvent**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent) [**e IAccessible,**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) no es posible evitar la reenlazancia. La única solución es que los desarrolladores cliente agreguen código en la función de enlace que detecte la reentreencia y tomen las medidas adecuadas si se vuelve a escribir la función de enlace.
 
  
 

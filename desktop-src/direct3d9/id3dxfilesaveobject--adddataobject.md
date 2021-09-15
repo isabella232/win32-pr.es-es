@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 8a1bdea820b90ae68c819ae2755f2abecd892cfd362116f6da37cb643a254048
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d1586035a0d8a81c2210009bad903aac5197bcf7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118802420"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567825"
 ---
 # <a name="id3dxfilesaveobjectadddataobject-method"></a>Método ID3DXFileSaveObject::AddDataObject
 
@@ -103,11 +103,11 @@ Dirección de un puntero a una [**interfaz ID3DXFileSaveData,**](id3dxfilesaveda
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes: D3DXFERR \_ BADOBJECT, DXFILEERR \_ BADVALUE, E \_ OUTOFMEMORY.
+Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DXFERR \_ BADOBJECT, DXFILEERR \_ BADVALUE, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si un objeto de referencia de datos hace referencia al objeto de datos, el parámetro szName o pId debe ser distinto de **NULL.**
+Si un objeto de referencia de datos hará referencia al objeto de datos, el parámetro szName o pId debe ser distinto de **NULL.**
 
 Guarde los datos creados en el disco mediante el [**método ID3DXFileSaveObject::Save.**](id3dxfilesaveobject--save.md)
 

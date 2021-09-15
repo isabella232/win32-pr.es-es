@@ -4,12 +4,12 @@ description: Control de teclado en controles
 ms.assetid: 33affb3f-5d52-4ada-9751-0775b31a375e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c9315345640464decf8e24f79ef96a88d6e074ea482e486e0ed9062f94c5131
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6f32610732ddbf88c6a587d5bc0fd7de1188152d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119048073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359837"
 ---
 # <a name="keyboard-handling-in-controls"></a>Control de teclado en controles
 

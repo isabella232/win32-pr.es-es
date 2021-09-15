@@ -1,11 +1,11 @@
 ---
 title: Método IDeviceController CachedDevices
-description: Recupera una colección de punteros de interfaz IBasicDevice que representa la vista en caché de todos los dispositivos DLNA detectables. | Método IDeviceController CachedDevices
+description: Recupera una colección de punteros de interfaz IBasicDevice que representa la vista en caché de todos los dispositivos DLNA reconocibles. | Método IDeviceController CachedDevices
 ms.assetid: 94C2A7FF-5AF8-4F13-BBA5-54ED78C3BBF6
 keywords:
 - Método CachedDevices de Media Streaming API
 - Método CachedDevices de Media Streaming API, interfaz IDeviceController
-- IDeviceController interface Media Streaming API , Método CachedDevices
+- IDeviceController interface Media Streaming API , CachedDevices method
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9c624597fb88a45cc9ff91770f164e7c6e6e83ff5eb1b6369ded9d0fc1bbc225
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 69be1faea277fa8999ae5ddf3658aaa61a1116b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119952645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468576"
 ---
 # <a name="idevicecontrollercacheddevices-method"></a>IDeviceController::CachedDevices (método)
 
-Recupera una colección de punteros de [**interfaz IBasicDevice**](ibasicdevice.md) que representa la vista en caché de todos los dispositivos DLNA detectables.
+Recupera una colección de punteros de [**interfaz IBasicDevice**](ibasicdevice.md) que representa la vista en caché de todos los dispositivos DLNA reconocibles.
 
 ## <a name="syntax"></a>Sintaxis
 

@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 60199e18-b8da-48a6-b316-e7f07ff44b78
-ms.openlocfilehash: d1cecab0450b1ce16ad2a4301801ea14aea284ac8fe7d5c1e63b5d8a211f22c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e78c14e2aa7f918ff27b21bdab0ce71bed08a84a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118720779"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468170"
 ---
 # <a name="ishelldispatch4toggledesktop-method"></a>Método IShellDispatch4.ToggleDesktop
 
@@ -55,13 +55,13 @@ Este método no devuelve ningún valor.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método tiene el mismo efecto que el botón **Mostrar** escritorio de la barra de tareas. Oculta todas las ventanas abiertas para mostrar el escritorio o oculta el escritorio mostrando todas las ventanas abiertas. El **método ToggleDesktop** no muestra una interfaz de usuario, simplemente invoca la acción de alternancia.
 
 ## <a name="examples"></a>Ejemplos
 
-En los ejemplos siguientes se muestra el uso adecuado de **ToggleDesktop** para JScript, VBScript y Visual Basic.
+En los ejemplos siguientes se muestra el uso correcto **de ToggleDesktop** para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -115,12 +115,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                                   |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |
 
 

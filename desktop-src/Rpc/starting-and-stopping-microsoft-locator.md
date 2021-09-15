@@ -1,19 +1,19 @@
 ---
 title: Inicio y detención del localizador de Microsoft
-description: Las bibliotecas rpc en tiempo de ejecución inician automáticamente Microsoft Locator cuando es necesario. Puede detener e iniciar manualmente el localizador si, por ejemplo, necesita borrar la base de datos durante la depuración de una aplicación distribuida.
+description: Las bibliotecas rpc en tiempo de ejecución inician automáticamente Microsoft Locator cuando es necesario. Puede detener e iniciar manualmente el localizador si, por ejemplo, necesita borrar la base de datos al depurar una aplicación distribuida.
 ms.assetid: 06b50a9f-b640-45b2-86e2-2bcea6c16c5c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e281419bc2a869d43863f946c1fcb172da2f86c04186ba775766233d4caa65c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 433ffdb11e86b06ee53d9b01f7f7755758538f22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120017555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473505"
 ---
 # <a name="starting-and-stopping-microsoft-locator"></a>Inicio y detención del localizador de Microsoft
 
-Las bibliotecas rpc en tiempo de ejecución inician automáticamente Microsoft Locator cuando es necesario. Puede detener e iniciar manualmente el localizador si, por ejemplo, necesita borrar la base de datos durante la depuración de una aplicación distribuida.
+Las bibliotecas rpc en tiempo de ejecución inician automáticamente Microsoft Locator cuando es necesario. Puede detener e iniciar manualmente el localizador si, por ejemplo, necesita borrar la base de datos al depurar una aplicación distribuida.
 
 **Para detener e iniciar Microsoft Locator**
 

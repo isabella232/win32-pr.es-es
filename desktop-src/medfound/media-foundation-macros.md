@@ -4,12 +4,12 @@ ms.assetid: c460b1cd-13d7-4b65-a755-23b2ea87864d
 title: Media Foundation Macros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 53a0ebbc8da6f9f65b9c8167097f4150457a6e6cbcbefe0db45032eb55d57000
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6bed83710f41957edc1b945fecd5d68b5550b4ed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119724085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468735"
 ---
 # <a name="media-foundation-macros"></a>Media Foundation Macros
 

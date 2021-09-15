@@ -5,12 +5,12 @@ ms.assetid: ''
 ms.date: 05/31/2018
 ms.localizationpriority: low
 ms.topic: language-reference
-ms.openlocfilehash: 3ea1869d31f558b1d45ddb0c9c5bb5cf97a15456de9350c68524c023348062ef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7733fca48ca5b7540988261f17a7a90f9d1f01c3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117913399"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568433"
 ---
 # <a name="call-parameter-structure"></a>Llamar a la estructura de parámetros
 

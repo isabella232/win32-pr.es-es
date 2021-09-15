@@ -16,18 +16,18 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: 9da5da0cbbde9f7319482e5f8574f62ac311535d277e08f3f7884134b1fa3475
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 906587ca9ee153eb93542c3e749e8164e6a5ee7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120097415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568108"
 ---
 # <a name="msmcainfo_rawcorrectedplatformevent-class"></a>Clase RawCorrectedPlatformEvent de MSMCAInfo \_
 
-La **clase \_ RawCorrectedPlatformEvent de MSMCAInfo** contiene un evento de plataforma corregido (CPE). Esta clase solo está disponible en sistemas de 64 Windows bits.
+La **clase \_ RawCorrectedPlatformEvent de MSMCAInfo** contiene un evento De plataforma corregido (CPE). Esta clase solo está disponible en sistemas de 64 Windows bits.
 
-La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en orden MOF.
+La sintaxis siguiente se simplifica a partir Managed Object Format (MOF) e incluye todas sus propiedades heredadas. Las propiedades y los métodos están en orden alfabético, no en el orden MOF.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,7 +40,7 @@ class MSMCAInfo_RawCorrectedPlatformEvent : WMIEvent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **clase \_ RawCorrectedPlatformEvent de MSMCAInfo** tiene estos tipos de miembros:
 
@@ -81,19 +81,19 @@ Número de registros de error.
 **Registros**
 </dt> <dd> <dl> <dt>
 
-Tipo de datos: **Matriz de entrada MSMCAInfo \_**
+Tipo de datos: **matriz de entrada MSMCAInfo \_**
 </dt> <dt>
 
 Tipo de acceso: solo lectura
 </dt> </dl>
 
-Matriz de registros de errores de MCA. La propiedad Count especifica el número de registros de error de MCA en la **matriz.**
+Matriz de registros de errores de MCA. La propiedad Count especifica el número de registros de error de MCA en **la matriz.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **clase MSMCAInfo \_ RawCorrectedPlatformEvent** se deriva de [**WMIEvent**](wmievent.md).
+La **clase \_ RawCorrectedPlatformEvent de MSMCAInfo** se deriva de [**WMIEvent**](wmievent.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -109,7 +109,7 @@ La **clase MSMCAInfo \_ RawCorrectedPlatformEvent** se deriva de [**WMIEvent**](
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

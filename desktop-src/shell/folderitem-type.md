@@ -1,7 +1,7 @@
 ---
 description: Contiene una representación de cadena del tipo del elemento.
 ms.assetid: e851d632-9562-4194-a24c-12e757227b5b
-title: Propiedad carpeta. Type (Shldisp. h)
+title: Propiedad FolderItem.Type (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,13 +14,13 @@ api_type:
 api_location:
 - Shell32.dll
 ms.openlocfilehash: 12c3ffe3b32a6d2b2f3021312905839bc5cc1744
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104080307"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468230"
 ---
-# <a name="folderitemtype-property"></a>Carpeta. Type (propiedad)
+# <a name="folderitemtype-property"></a>Propiedad FolderItem.Type
 
 Contiene una representación de cadena del tipo del elemento.
 
@@ -41,9 +41,9 @@ Variable de tipo [**BSTR**](/previous-versions/windows/desktop/automat/bstr) que
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se usa **Type** para recuperar el tipo del elemento. Se muestra el uso correcto de JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa Type** para recuperar el tipo del elemento. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
 
-JScript.net
+JScript:
 
 
 ```JScript
@@ -74,7 +74,7 @@ JScript.net
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -149,11 +149,11 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, solo para aplicaciones de escritorio de Windows XP \[\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
-| Encabezado<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| IDL<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4,71 o posterior)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 
 

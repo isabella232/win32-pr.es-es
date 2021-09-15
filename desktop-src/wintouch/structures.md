@@ -6,12 +6,12 @@ keywords:
 - Windows Touch,structures
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce7d2178673fbf2d75b181875de14f0ad0087e80a6d424a497abcd39375235fc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 62595e9600474b3b3f1aca71dece1d81514daa91
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120007375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466220"
 ---
 # <a name="structures-windows-touch-input"></a>Estructuras (Windows entrada táctil)
 

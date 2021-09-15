@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bb7ed638007bbffd67e61c07d26a591149318d64171467053dec2f7593f347e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eefd313f0edcc122708f141cd65418beaade03a9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117670643"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360242"
 ---
 # <a name="stowed_exception_information_v2-structure"></a>Estructura STOWED \_ EXCEPTION \_ INFORMATION \_ V2
 
@@ -55,14 +55,14 @@ typedef struct _STOWED_EXCEPTION_INFORMATION_V2 {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **Header**
 </dt> <dd>
 
-Tipo: **[ **ENCABEZADO DE INFORMACIÓN \_ DE EXCEPCIÓN \_ CON \_ STOWED**](stowed-exception-information-header.md)**
+Tipo: **[ **ENCABEZADO DE INFORMACIÓN \_ DE \_ EXCEPCIÓN CON \_ STOWED**](stowed-exception-information-header.md)**
 
 </dd> <dd>
 
@@ -92,7 +92,7 @@ Valor de 2 bits que identifica la forma de la excepción.
 
 
 
-| Valor                                                                                                                                                                                                                                                                  | Significado                                                                   |
+| Value                                                                                                                                                                                                                                                                  | Significado                                                                   |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | <span id="STOWED_EXCEPTION_FORM_BINARY"></span><span id="stowed_exception_form_binary"></span><dl> <dt>**STOWED \_ FORMULARIO \_ DE \_ EXCEPCIÓN BINARY**</dt> <dt>0x01</dt> </dl> | Este valor indica que la forma de la excepción es binaria.<br/> |
 | <span id="STOWED_EXCEPTION_FORM_TEXT"></span><span id="stowed_exception_form_text"></span><dl> <dt>**STOWED \_ TEXTO \_ DEL FORMULARIO \_ DE**</dt> <dt>EXCEPCIÓN 0x02</dt> </dl>       | Este valor indica que la forma de la excepción es texto.<br/>   |
@@ -110,7 +110,7 @@ Tipo: **[ **DWORD**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Valor de 30 bits que identifica el subproceso que produjo la excepción. El valor se desplaza a la derecha en 2 bits cuando se almacena. Para volver a convertirlo en un identificador de subproceso válido, cambie el valor a la izquierda por 2. Por ejemplo:
+Valor de 30 bits que identifica el subproceso que produjo la excepción. El valor se desplaza a la derecha en 2 bits cuando se almacena. Para volver a convertirlo en un identificador de subproceso válido, cambie el valor a la izquierda en 2. Por ejemplo:
 
 ``` syntax
 DWORD ActualThreadId = (StowedException.ThreadId << 2);
@@ -143,7 +143,7 @@ Tipo: **[ **ULONG**](/windows/desktop/WinProg/windows-data-types)**
 
 </dd> <dd>
 
-Tamaño, en bytes, de cada palabra del seguimiento de pila al que apunta el miembro **StackTrace.** Este valor se establece en 4 para plataformas de 32 bits y 8 para plataformas de 64 bits.
+Tamaño, en bytes, de cada palabra del seguimiento de la pila al que apunta el miembro **StackTrace.** Este valor se establece en 4 para plataformas de 32 bits y 8 para plataformas de 64 bits.
 
 </dd> <dt>
 
@@ -213,7 +213,7 @@ Estas son algunas definiciones de tipo comunes:
 | <span id="STOWED_EXCEPTION_NESTED_TYPE_WIN32"></span><span id="stowed_exception_nested_type_win32"></span><dl> <dt>**STOWED \_ EXCEPTION \_ NESTED \_ TYPE \_ WIN32**</dt> <dt>STOWED EXCEPTION NESTED \_ \_ \_ TYPE('W32E')</dt> </dl>    | Este valor especifica que el miembro **NestedException** apunta a un [**objeto EXCEPTION \_ RECORD.**](/windows/desktop/api/winnt/ns-winnt-exception_record)<br/>                                                                                                                                                                                                                                                              |
 | <span id="STOWED_EXCEPTION_NESTED_TYPE_STOWED"></span><span id="stowed_exception_nested_type_stowed"></span><dl> <dt>**STOWED \_ EXCEPTION \_ NESTED \_ TYPE \_ STOWED**</dt> <dt>STOWED EXCEPTION NESTED \_ \_ \_ TYPE('STOW')</dt> </dl> | Este valor especifica que el miembro **NestedException** apunta a otro objeto de excepción con stowed. El otro objeto de excepción con stowed puede ser un objeto **STOWED \_ EXCEPTION INFORMATION \_ \_ V2** o una versión diferente con un miembro **Header** válido, es decir, un miembro **Header** que contiene un encabezado [**STOWED EXCEPTION INFORMATION \_ HEADER \_ \_ válido.**](stowed-exception-information-header.md)<br/> |
 | <span id="STOWED_EXCEPTION_NESTED_TYPE_CLR"></span><span id="stowed_exception_nested_type_clr"></span><dl> <dt>**STOWED \_ EXCEPTION \_ NESTED \_ TYPE \_ CLR**</dt> <dt>STOWED EXCEPTION NESTED \_ \_ \_ TYPE('CLR1')</dt> </dl>          | Este valor especifica que el miembro **NestedException** apunta a un objeto de excepción 'CLR1'.<br/>                                                                                                                                                                                                                                                                                                 |
-| <span id="STOWED_EXCEPTION_NESTED_TYPE_LEO"></span><span id="stowed_exception_nested_type_leo"></span><dl> <dt>**STOWED \_ TIPO \_ ANIDADO DE \_ \_ EXCEPCIÓN:**</dt> <dt> \_ EXCEPCIÓN \_ DE EXCEPCIÓN STOWED NESTED \_ TYPE('ASÍNS1')</dt> </dl>          | Este valor especifica que el miembro **NestedException** apunta a un objeto de excepción de lenguaje.<br/>                                                                                                                                                                                                                                                                                               |
+| <span id="STOWED_EXCEPTION_NESTED_TYPE_LEO"></span><span id="stowed_exception_nested_type_leo"></span><dl> <dt>**STOWED \_ TIPO \_ ANIDADO \_ DE \_ EXCEPCIÓN:**</dt> <dt> \_ EXCEPCIÓN \_ STOWED EXCEPTION NESTED \_ TYPE('ASÍNS1')</dt> </dl>          | Este valor especifica que el miembro **NestedException** apunta a un objeto de excepción de lenguaje.<br/>                                                                                                                                                                                                                                                                                               |
 
 
 
@@ -232,7 +232,7 @@ Puntero a un tipo de excepción anidada. El tipo de objeto se indica mediante el
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **STOWED \_ EXCEPTION \_ INFORMATION \_ V2** y [**STOWED EXCEPTION INFORMATION \_ \_ \_ HEADER**](stowed-exception-information-header.md) no están definidos actualmente en un encabezado que esté disponible públicamente, por lo que debe definirlos en el código fuente antes de usarlos.
 
@@ -246,11 +246,11 @@ La **estructura STOWED \_ EXCEPTION INFORMATION \_ \_ V1** es idéntica a esta e
 |-------------------------------------|---------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                    |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                         |
-| Header<br/>                   | <dl> <dt>None</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Ninguna</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

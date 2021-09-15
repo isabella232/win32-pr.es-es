@@ -14,12 +14,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: 32bdc7ca9a84bfe87ff453d34c4ecff57a8dabf5f67b21cc0d54ba079efd1578
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a78c94cd9d8854453517976300e12a031f65b8cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118543775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568053"
 ---
 # <a name="do_download_enum_category-structure"></a>DO_DOWNLOAD_ENUM_CATEGORY estructura
 
@@ -34,7 +34,7 @@ typedef struct _DO_DOWNLOAD_ENUM_CATEGORY
 } DO_DOWNLOAD_ENUM_CATEGORY;
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 `Property`
 

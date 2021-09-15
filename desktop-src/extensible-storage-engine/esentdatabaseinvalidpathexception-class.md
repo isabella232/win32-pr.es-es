@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 81356d78def94e3ed3ac313a64b7f513aafe1c84162c0cdd7b3af08f73db2be8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dd275a599aa8b2cb8fb6f072ef1a413706d2c175
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119116195"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465950"
 ---
 # <a name="esentdatabaseinvalidpathexception-class"></a>Clase EsentDatabaseInvalidPathException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones databaseInvalidPath.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

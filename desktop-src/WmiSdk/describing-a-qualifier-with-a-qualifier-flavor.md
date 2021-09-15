@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Describir un calificador con un calificador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5a55cc3cf31a7ac554ed927b9c6a3dd9aec3384c1f81c4d06347895b6249228
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 525cfc2c590ec8916e2e9538b3e8224e97b3b5dd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117925133"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467278"
 ---
 # <a name="describing-a-qualifier-with-a-qualifier-flavor"></a>Describir un calificador con un calificador
 
-Un [*calificador es*](gloss-q.md) una marca que describe más información sobre un calificador. Por ejemplo, el tipo de calificador restringido indica que WMI no debe propagar el calificador asociado a ninguna clase o instancia derivada. Puede establecer los formatos mediante código MOF o mediante programación. Aunque puede describir una variedad de efectos con tipos, el propósito principal de las marcas de tipo es definir cómo WMI propaga los calificadores a través de la herencia.
+Un [*calificador es*](gloss-q.md) una marca que describe más información sobre un calificador. Por ejemplo, el tipo de calificador restringido indica que WMI no debe propagar el calificador asociado a ninguna clase o instancia derivada. Puede establecer los flavors mediante código MOF o mediante programación. Aunque puede describir una variedad de efectos con tipos, el propósito principal de las marcas de tipo es definir cómo WMI propaga los calificadores a través de la herencia.
 
 WMI define varios tipos de calificador que puede asociar a cualquier calificador, independientemente del origen del calificador. Sin embargo, algunos tipos no son adecuados para todos los tipos de calificador. El **tipo ToSubClass,** por ejemplo, solo es adecuado para calificadores definidos para una clase. No se puede **asociar ToSubClass** a un calificador usado para describir una instancia.
 

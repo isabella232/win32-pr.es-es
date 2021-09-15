@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aad690278b45563395c926adb4d0329bff8a01c7e8ace2f25ff3fefdb9c39cee
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 56d988fefc436b65652d2b0765320ca289417c9c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118568700"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467011"
 ---
 # <a name="iwmpplaylistcount-property"></a>IWMPPlaylist::count, propiedad
 
@@ -51,7 +51,7 @@ Public ReadOnly Property count As System.Int32
 
 **System.Int32 que** es el número de elementos multimedia de la lista de reproducción.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
@@ -61,7 +61,7 @@ Vea la [propiedad attributeCount](wmplibiwmpplaylist-iwmpplaylist-attributecount
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

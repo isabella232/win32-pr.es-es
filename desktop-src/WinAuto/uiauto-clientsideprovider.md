@@ -1,5 +1,5 @@
 ---
-title: Implementar un proveedor de Client-Side (proxy) Automatización de la interfaz de usuario cliente
+title: Implementar un proveedor de Client-Side (proxy) Automatización de la interfaz de usuario servidor
 description: En este tema se describe cómo escribir un proveedor de proxy para un control no compatible y agregarlo a la lista de servidores proxy usados por las aplicaciones cliente.
 ms.assetid: c66f4a7b-0a12-4c65-a3e9-1c826d54ac6b
 keywords:
@@ -15,14 +15,14 @@ keywords:
 - implementar proveedores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c8724f0761b5d7e5d361742734901990136a7a98c1b2f541b4fadb69c31a92d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1e2bdb4a94ba6e693792508de5c573317299b0d3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119861305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567301"
 ---
-# <a name="implementing-a-client-side-proxy-ui-automation-provider"></a>Implementar un proveedor de Client-Side (proxy) Automatización de la interfaz de usuario cliente
+# <a name="implementing-a-client-side-proxy-ui-automation-provider"></a>Implementar un proveedor de Client-Side (proxy) Automatización de la interfaz de usuario servidor
 
 Microsoft Automatización de la interfaz de usuario proporciona un conjunto de servidores proxy para la mayoría de los controles estándar, como los que se usan en aplicaciones de Microsoft Win32, Windows Forms y Windows Presentation Foundation (WPF). Sin embargo, muchos controles personalizados y controles de terceros no implementan proveedores Automatización de la interfaz de usuario nativos. Para que puedan acceder Automatización de la interfaz de usuario aplicaciones cliente, estos controles deben estar equipados con proveedores del lado cliente, también conocidos como proveedores *de proxy* o *servidores proxy.*
 
@@ -50,7 +50,7 @@ Cuando llama a [**IUIAutomationProxyFactory::CreateProvider**](/windows/desktop/
 
 ## <a name="proxy-factory-mapping"></a>Asignación de factoría de proxy
 
-De forma predeterminada, Automatización de la interfaz de usuario busca en la tabla de generador de proxy en el orden siguiente.
+De forma predeterminada, Automatización de la interfaz de usuario busca a través de la tabla de generador de proxy en el orden siguiente.
 
 
 
@@ -59,7 +59,7 @@ De forma predeterminada, Automatización de la interfaz de usuario busca en la t
 | 1     | Microsoft: proxy sin control | Para ventanas con el nombre de clase exacto o el nombre de clase base "ComboBoxEx32".         |
 | 2     | Microsoft: proxy sin control | Para ventanas con el nombre de clase exacto o el nombre de clase base "WorkerW".              |
 | 3     | Microsoft: proxy sin control | Para ventanas con el nombre de clase exacto o el nombre de clase base "SHELLDLL \_ DefView".    |
-| 4     | Microsoft: Proxy de contenedor   | Para ventanas con el nombre de clase exacto o el nombre de clase base " \# 32770".              |
+| 4     | Microsoft: Proxy de contenedor   | Para las ventanas con el nombre de clase exacto o el nombre de clase base " \# 32770".              |
 | 5     | Microsoft: Proxy de contenedor   | Para ventanas con un nombre de clase o un nombre de clase base que contenga "AfxControlBar".     |
 | 6     | Microsoft: TreeView Proxy    | Para ventanas con un nombre de clase o un nombre de clase base que contenga "SysTreeView32".     |
 | 7     | Microsoft: ListView Proxy    | Para ventanas con un nombre de clase o un nombre de clase base que contenga "SysListView32" (1). |
@@ -93,7 +93,7 @@ La tabla de servidores proxy se representa mediante una interfaz [**IUIAutomatio
 [Cómo crear un proveedor de Client-Side (proxy Automatización de la interfaz de usuario)](uiauto-howto-create-clientside-provider.md)
 </dt> <dt>
 
-[Automatización de la interfaz de usuario del programador del proveedor de aplicaciones](uiauto-providerportal.md)
+[Automatización de la interfaz de usuario del programador del proveedor de servicios](uiauto-providerportal.md)
 </dt> </dl>
 
  

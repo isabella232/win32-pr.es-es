@@ -3,7 +3,7 @@ title: WM_CTLCOLORDLG mensaje (Winuser.h)
 description: Se envía a un cuadro de diálogo antes de que el sistema dibuje el cuadro de diálogo. Al responder a este mensaje, el cuadro de diálogo puede establecer sus colores de texto y fondo mediante el identificador de contexto del dispositivo de presentación especificado.
 ms.assetid: 5b90ab3f-b751-486f-a0fa-33f791c31a26
 keywords:
-- WM_CTLCOLORDLG cuadros de diálogo de mensaje
+- WM_CTLCOLORDLG cuadros de diálogo del mensaje
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5b7ab11bbb2cfd402888f930d5bcf2afa08b7ba83f74252fb3e443fd9e9309a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 833d3894a85342b0f26323ceed0f4fb3356c48ae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118503418"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360505"
 ---
 # <a name="wm_ctlcolordlg-message"></a>Mensaje \_ WM CTLCOLORDLG
 
@@ -54,11 +54,11 @@ Identificador del cuadro de diálogo.
 
 Si una aplicación procesa este mensaje, debe devolver un identificador a un pincel. El sistema usa el pincel para pintar el fondo del cuadro de diálogo.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 De forma predeterminada, [**la función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) selecciona los colores predeterminados del sistema para el cuadro de diálogo.
 
-El sistema no destruye automáticamente el pincel devuelto. Es responsabilidad de la aplicación destruir el pincel cuando ya no se necesita.
+El sistema no destruye automáticamente el pincel devuelto. Es responsabilidad de la aplicación destruir el pincel cuando ya no se necesite.
 
 El **mensaje \_ WM CTLCOLORDLG** nunca se envía entre subprocesos. Solo se envía dentro de un subproceso.
 
@@ -70,7 +70,7 @@ Si un procedimiento de cuadro de diálogo controla este mensaje, debe convertir 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |

@@ -4,12 +4,12 @@ description: Reglas para varias canalizaciones en una sola llamada en llamada a 
 ms.assetid: 1d0b2aed-27cc-4e74-9307-ada86bda4596
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1fd2de7a44f63d5c943f1d6526ee328bbae3e63c99bac118ec843ad266d1f7b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0d804c132d7fc859906f065e4c9dc39dd3159519
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118925982"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473564"
 ---
 # <a name="rules-for-multiple-pipes"></a>Reglas para varias canalizaciones
 

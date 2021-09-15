@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 13598199ccee156ab45481ac0a3f65dde160337e8ad1e20aade134405993987f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a5baa2af39a6f12b75f847d226fb15a48c35994c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119053783"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359863"
 ---
 # <a name="wmvideoframerate-attribute"></a>Atributo WM/VideoFrameRate
 
@@ -27,7 +27,7 @@ El **atributo WM/VideoFrameRate** es un valor decimal que especifica la velocida
 
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La Windows SDK de formato multimedia para este atributo es g \_ wszWMVideoFrameRate.
 
@@ -37,13 +37,13 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 11<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

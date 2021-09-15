@@ -4,7 +4,7 @@ description: La propiedad currentItem obtiene o establece el elemento multimedia
 ms.assetid: 0a331b1f-95bd-48ea-b951-1ca35cc96865
 keywords:
 - propiedad currentItem Reproductor de Windows Media
-- Propiedad currentItem Reproductor de Windows Media interfaz , IWMPControls
+- Propiedad currentItem Reproductor de Windows Media , interfaz IWMPControls
 - Interfaz IWMPControls Reproductor de Windows Media , propiedad currentItem
 topic_type:
 - apiref
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d8193dc349524495e021dc048ac4be3673d38ec7da30aa1bb72d94960a0989f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aae04eb333e2fd347fa6f88b33ec2482a4dd8fd7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119053665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473309"
 ---
 # <a name="iwmpcontrolscurrentitem-property"></a>Propiedad IWMPControls::currentItem
 
 La **propiedad currentItem** obtiene o establece el elemento multimedia actual en una lista de reproducción.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,7 +48,7 @@ Public Property currentItem As IWMPMedia
 
 Interfaz **WMPLib.IWMPMedia** que representa el elemento multimedia.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad solo funciona con elementos de la lista de reproducción actual. No se admite el establecimiento de **currentItem** en la interfaz de un elemento multimedia guardado.
 
@@ -101,7 +101,7 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

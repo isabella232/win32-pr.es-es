@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: a20612eec88e2370914a93d851b0ce9047823b415951a8f5558cafb6dfaf1eb1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b047245e3f89a618cde83e5c18a323f9364f3ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119985145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466056"
 ---
-# <a name="idirectxfiledatareferenceresolve-method"></a>IDirectXFileDataReference::Resolve (Método)
+# <a name="idirectxfiledatareferenceresolve-method"></a>IDirectXFileDataReference::Resolve (método)
 
 Resuelve las referencias de datos. En desuso.
 
@@ -53,7 +53,7 @@ Dirección de un puntero a una [**interfaz IDirectXFileData,**](idirectxfiledata
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores: DXFILEERR \_ BADVALUE, DXFILEERR \_ NOTFOUND.
+Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes valores: DXFILEERR \_ BADVALUE, DXFILEERR \_ NOTFOUND.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -4,14 +4,14 @@ ms.assetid: 0dd6f202-cdbc-4a28-8907-5530a0a2141b
 title: MFPKEY_ASFMediaSource_IterativeSeekIfNoIndex propiedad (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb56a9b063d2bf30a0f6e48f25becb61d585751439f103ca26aa06d1d3c69727
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 10cdc22f0b4f5490c7691cc40166cf929a16ba64
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117874109"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468657"
 ---
-# <a name="mfpkey_asfmediasource_iterativeseekifnoindex-property"></a>Propiedad \_ ASFMediaSource \_ IterativeSeekIfNoIndex de MFPKEY
+# <a name="mfpkey_asfmediasource_iterativeseekifnoindex-property"></a>Propiedad MFPKEY \_ ASFMediaSource \_ IterativeSeekIfNoIndex
 
 Configura el origen de medios de ASF para usar la búsqueda iterativa si el archivo de origen no tiene ningún índice.
 
@@ -31,7 +31,7 @@ VT \_ BOOL
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use esta propiedad para configurar el origen de medios de ASF. Para establecer la propiedad , pase un **puntero IPropertyStore** al *solucionador de origen*. Para obtener más información, vea [Configuring a Media Source](configuring-a-media-source.md).
 
@@ -48,11 +48,11 @@ Estas propiedades establecen el número máximo de iteraciones y la tolerancia, 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/>                                  |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio aplicaciones para \| UWP\]<br/>                                  |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                     |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 

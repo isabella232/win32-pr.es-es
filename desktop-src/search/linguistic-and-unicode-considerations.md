@@ -4,12 +4,12 @@ ms.assetid: a210bffc-fe71-4909-bc5c-d440890265c9
 title: Consideraciones lingüísticas y Unicode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16d160d90c93d009af55bf8acb79a08a1963ea446018b8a920d27a8f3fe3ac60
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6fa189f0772b65b0746e31bd90b89a4c62a4c42f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118462397"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468319"
 ---
 # <a name="linguistic-and-unicode-considerations"></a>Consideraciones lingüísticas y Unicode
 
@@ -18,7 +18,7 @@ Esta sección contiene una lista de consideraciones lingüísticas y Unicode que
 Esta sección contiene los siguientes temas:
 
 -   [Normalización de formularios surface](surface-form-normalization.md)
--   [Consideraciones lingüísticas y Unicode diversas](miscellaneous-linguistic-and-unicode-considerations.md)
+-   [Varias consideraciones lingüísticas y Unicode](miscellaneous-linguistic-and-unicode-considerations.md)
 
 ## <a name="additional-resources"></a>Recursos adicionales
 

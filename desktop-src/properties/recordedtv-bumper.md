@@ -4,12 +4,12 @@ ms.assetid: 30be0468-1b4e-4650-a5d2-aa467d800ef7
 title: RecordedTV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3620ab995fc1b89f5054bc53c668b5d4dc59d8dafdad357e71ea217991f13fb9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81d766886007820ec4b19c53a99e3fd31d0d6339
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118969783"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468344"
 ---
 # <a name="recordedtv"></a>RecordedTV
 

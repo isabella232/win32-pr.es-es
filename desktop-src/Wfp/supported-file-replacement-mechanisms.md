@@ -1,19 +1,19 @@
 ---
-description: La sustitución de recursos protegidos se admite a través de los siguientes mecanismos.
+description: La sustitución de recursos protegidos se admite mediante los mecanismos siguientes.
 ms.assetid: a757e6cf-59df-4894-a0dc-40174b0aa147
 title: Mecanismos de reemplazo de recursos admitidos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa8f839e65ddd07bbde6bb4e089c3235ee6930dec910c07c1c318e666b034afb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f2aaaa1d9cc8d24d8cd172be71ee40790bf8161a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119999255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359856"
 ---
 # <a name="supported-resource-replacement-mechanisms"></a>Mecanismos de reemplazo de recursos admitidos
 
-La sustitución de recursos protegidos se admite a través de los siguientes mecanismos.
+La sustitución de recursos protegidos se admite mediante los mecanismos siguientes.
 
 El permiso de acceso completo para modificar recursos protegidos con WRP en Windows Vista y Windows Server 2008 está restringido a TrustedInstaller con el servicio instalador de módulos de Windows mediante los mecanismos siguientes:
 
@@ -32,7 +32,7 @@ En el caso de instaladores conocidos que intentan reemplazar recursos protegidos
 
 Para obtener información sobre cómo usar Windows Installer con WRP, consulte Uso de Windows Installer y [Windows Resource Protection](/windows/desktop/Msi/windows-resource-protection-on-windows-vista) en el SDK Windows [Installer.](/windows/desktop/Msi/windows-installer-portal)
 
-**Windows Server 2003 y Windows XP:** El reemplazo de archivos del sistema protegidos por WFP solo se admite a través de los mecanismos siguientes:
+**Windows Server 2003 y Windows XP:** La sustitución de archivos del sistema protegidos por WFP solo se admite mediante los mecanismos siguientes:
 
 -   Windows Instalación de Service Pack mediante Update.exe
 -   Revisiones instaladas mediante Hotfix.exe

@@ -1,6 +1,6 @@
 ---
 title: Elemento Type (EapMethodType)
-description: Obtenga información sobre el elemento Type (EapMethodType), que hace referencia al tipo de método EAP. Consulte los requisitos y vea los recursos disponibles adicionales.
+description: Obtenga información sobre el elemento Type (EapMethodType), que hace referencia al tipo de método EAP. Consulte los requisitos y vea los recursos adicionales disponibles.
 ms.assetid: 7911e97c-9436-4d60-8497-bee45cdb8db4
 keywords:
 - Elemento de tipo EAPHost
@@ -14,18 +14,18 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 471cb15afc00593d90bec2c0525d8e7aeddc79db13779b7b93ce99d23ccab020
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6d45defd098f560d4deb8698e0fd569492668e0b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118498419"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568789"
 ---
 # <a name="type-eapmethodtype-element"></a>Elemento Type (EapMethodType)
 
 El **elemento Type (EapMethodType)** hace referencia al tipo de método EAP.
 
-El tipo es un número único emitido por internet Assigned Numbers Authority (IANA).
+El tipo es un número único emitido por la Autoridad de números asignados por Internet (IANA).
 
 ``` syntax
 <xs:element name="Type"
@@ -33,15 +33,15 @@ El tipo es un número único emitido por internet Assigned Numbers Authority (IA
  />
 ```
 
-El tipo complejo [**EapMethodType**](eapcommonschema-eapmethodtype-complextype.md) define el elemento Type. 
+El **tipo** complejo [**EapMethodType**](eapcommonschema-eapmethodtype-complextype.md) define el elemento Type.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Rol | Versión mínima admitida del sistema operativo |
+| Role | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Remoto<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 

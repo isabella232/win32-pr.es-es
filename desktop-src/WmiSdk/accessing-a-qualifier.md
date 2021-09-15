@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Acceso a un calificador WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45601de8e7b3f8ef7054742812c24f9a81dcedf5417f7b7ba501f2471adedc58
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c88a5826255046bc0898dae43b9aa25ec5c7648
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118820623"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465788"
 ---
 # <a name="accessing-a-wmi-qualifier"></a>Acceso a un calificador WMI
 
@@ -43,7 +43,7 @@ Puede recuperar los calificadores de un objeto WMI en PowerShell recuperando pri
 
 Puede recuperar los calificadores en una instancia de WMI en C# recuperando primero el objeto y, a continuación, examinando los calificadores como una colección.
 
-**Para recuperar un calificador mediante C# (Microsoft.System. Administración)**
+**Para recuperar un calificador mediante C# (Microsoft.System.Management)**
 
 1.  Recupere la clase cuyos calificadores desea ver mediante la creación de un objeto CimInstance, utilizando el nombre de clase y el espacio de nombres especificados.
 
@@ -92,10 +92,10 @@ Puede recuperar los calificadores en una instancia de WMI en C# recuperando prim
 
     Para obtener más información, [vea Recuperar una instancia de WMI.](retrieving-an-instance.md)
 
-Puede recuperar los calificadores de un objeto WMI en C# recuperando primero el objeto y, a continuación, examinando los calificadores como una colección.
+Puede recuperar los calificadores de un objeto WMI en C# recuperando primero el objeto y examinando los calificadores como una colección.
 
 > [!Note]  
-> **System.Management era el** espacio de nombres .NET original que se usaba para acceder a WMI; sin embargo, las API de este espacio de nombres suelen ser más lentas y no escalan tan bien con respecto a sus homólogos **de Microsoft.Management.Infrastructure** más modernos.
+> **System.Management era el** espacio de nombres .NET original que se usaba para acceder a WMI; Sin embargo, las API de este espacio de nombres suelen ser más lentas y no escalan tan bien con respecto a sus homólogos **de Microsoft.Management.Infrastructure** más modernos.
 
  
 
@@ -153,7 +153,7 @@ En el procedimiento siguiente se describe cómo recuperar un calificador mediant
 
     
 
-En el ejemplo de código siguiente se describe cómo acceder a todos los calificadores de un [**objeto Process \_ de Win32.**](/windows/desktop/CIMWin32Prov/win32-process)
+En el ejemplo de código siguiente se describe cómo tener acceso a todos los calificadores de un [**objeto Proceso \_ de Win32.**](/windows/desktop/CIMWin32Prov/win32-process)
 
 
 ```VB

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Wiaguid.lib
 - Wiaguid.dll
-ms.openlocfilehash: 9cc727845489740fae54dcc96bf5bc903bceb0205688c1c60bee3df980f66845
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1285b5391014919d7108f207917b0c44c03fa360
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118965754"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466535"
 ---
 # <a name="iwiaapperrorhandlerreportstatus-method"></a>IWiaAppErrorHandler::ReportStatus (método)
 
@@ -97,7 +97,7 @@ Devuelve *hrStatus si* no es posible la recuperación del error. De lo contrario
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El *parámetro lPercentComplete* permite que una ventana del controlador de errores muestre el progreso. Por ejemplo, un controlador podría proporcionar una estimación del tiempo que tarda el "warming up". El *parámetro lPercentComplete* pasado a **IWiaAppErrorHandler::ReportStatus** es el mismo valor que **lPercentComplete** que el controlador establece en la estructura [**WiaTransferParams.**](-wia-wiatransferparams.md)
 
@@ -115,8 +115,8 @@ Si *hrStatus* es SEVERITY ERROR, el controlador de errores debe mostrar un cuadr
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                   |
-| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
-| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
+| Encabezado<br/>                   | <dl> <dt>Wia.h</dt> </dl>       |
+| IDL<br/>                      | <dl> <dt>Wia.idl</dt> </dl>     |
 | Biblioteca<br/>                  | <dl> <dt>Wiaguid.lib</dt> </dl> |
 
 

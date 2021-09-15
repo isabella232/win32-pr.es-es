@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 04ca76f5c96a34c6cd552eefc6ff383e6ca31634b03f33637674fa7b347b22d2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8ac29dec4032d83197a57746789afc770d84ec30
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118983525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567749"
 ---
 # <a name="apijetclosefileinstance-method"></a>Método Api.JetCloseFileInstance
 
@@ -71,13 +71,13 @@ public static void JetCloseFileInstance(
   - handle  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_HANDLE](./jet-handle-structure.md)  
     
-    Identificador que se debe cerrar.
+    Identificador que se cerrará.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

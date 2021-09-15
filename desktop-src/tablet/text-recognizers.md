@@ -4,12 +4,12 @@ ms.assetid: 9fbdde0e-5312-48ec-9273-ded6703b99a9
 title: Reconocedores de texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f2a579681fbd06c6b5dd27e5388f2c797e6be50433e11490fb5fe204d1c65d6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8372af61d45bb1cc8bcd8377202149073c3decc4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119842825"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467951"
 ---
 # <a name="text-recognizers"></a>Reconocedores de texto
 
@@ -17,11 +17,11 @@ Los reconocedores de texto dividen una muestra de lápiz en segmentos y traducen
 
 Un reconocedor de texto devuelve una cadena Unicode para cada segmento de reconocimiento de entrada de lápiz. La cadena que acompaña es el nivel de confianza que el reconocedor asigna al resultado y una asignación del resultado a la entrada de lápiz original. Esta asignación muestra qué segmento de la entrada de lápiz original corresponde a la cadena de código Unicode. La cadena que representa la salida del reconocedor de texto siempre se representa en el orden lineal, en lugar del orden espacial o cronológico en el que se han especificado los segmentos.
 
-En la tabla siguiente se enumeran los idiomas admitidos por los reconocedores de escritura a mano de Microsoft y Windows versiones en las que se introdujeron por primera vez estos idiomas. Tenga en cuenta que es posible que algunos reconocedores de idioma no estén disponibles en determinadas versiones de Windows y que deban descargarse por separado. Los reconocedores de terceros también pueden estar disponibles para idiomas adicionales, pero no necesariamente aprobados por Microsoft.
+En la tabla siguiente se enumeran los idiomas admitidos por los reconocedores de escritura a mano de Microsoft y las versiones Windows en las que se introdujeron por primera vez estos idiomas. Tenga en cuenta que es posible que algunos reconocedores de idioma no estén disponibles en determinadas versiones de Windows y que deban descargarse por separado. Los reconocedores de terceros también pueden estar disponibles para idiomas adicionales, pero no necesariamente aprobados por Microsoft.
 
 
 
-| Lenguaje                                   | Windows XP Tablet PC Edition | Windows XP Tablet PC Edition 2005 | Windows Vista | Windows 7 |
+| Idioma                                   | Windows XP Tablet PC Edition | Windows XP Tablet PC Edition 2005 | Windows Vista | Windows 7 |
 |--------------------------------------------|------------------------------|-----------------------------------|---------------|-----------|
 | Chino (simplificado y tradicional)       | X                            |                                   |               |           |
 | Inglés (EE. UU., Reino Unido, Canadá y Australia)    | X                            |                                   |               |           |

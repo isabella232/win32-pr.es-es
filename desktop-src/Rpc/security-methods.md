@@ -4,12 +4,12 @@ description: Rpc de Microsoft admite dos métodos diferentes para agregar seguri
 ms.assetid: 10dd8e71-668a-46bf-ab5d-e4b1e0e56a46
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ac09f29c4912228207e5c09d4551f408a76788d3d3ecf999aae2fcc1c63ded6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 367c4d052301ac1100d84cf18dc63e1540ed34b0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120018043"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473552"
 ---
 # <a name="security-methods"></a>Métodos de seguridad
 

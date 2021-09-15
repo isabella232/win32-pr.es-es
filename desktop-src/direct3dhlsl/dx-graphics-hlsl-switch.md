@@ -1,5 +1,5 @@
 ---
-title: switch (Instrucción) (Urlmon.h)
+title: switch (Instrucción, Urlmon.h)
 description: Transfiera el control a un bloque de instrucciones diferente dentro del cuerpo del conmutador en función del valor de un selector.
 ms.assetid: d1932ee1-d789-4536-b77d-162aacdbb115
 keywords:
@@ -15,11 +15,11 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 8527853bf88b073f3505f4b4170ff6165f7f9aa7
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477491"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567813"
 ---
 # <a name="switch-statement"></a>switch (Instrucción)
 
@@ -72,7 +72,7 @@ Una o varias [instrucciones](dx-graphics-hlsl-statement-blocks.md).
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 ```

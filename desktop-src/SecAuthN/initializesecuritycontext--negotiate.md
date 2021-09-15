@@ -5,11 +5,11 @@ title: Función InitializeSecurityContext (Negotiate) (Sspi.h)
 ms.topic: reference
 ms.date: 07/25/2019
 ms.openlocfilehash: 3a43578b6f7f312657ae6b4f2aa7b6be463ded7e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470530"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567521"
 ---
 # <a name="initializesecuritycontext-negotiate-function"></a>Función InitializeSecurityContext (Negotiate)
 
@@ -74,11 +74,11 @@ Marcas de bits que indican solicitudes para el contexto. No todos los paquetes p
 
 
 
-| Valor | Significado | 
+| Value | Significado | 
 |-------|---------|
 | <span id="ISC_REQ_ALLOCATE_MEMORY"></span><span id="isc_req_allocate_memory"></span><dl><dt><strong>ISC_REQ_ALLOCATE_MEMORY</strong></dt></dl> | El [*paquete de seguridad*](../secgloss/s-gly.md) le asigna búferes de salida. Cuando haya terminado de usar los búferes de salida, puede liberarlos llamando a la [<strong>función FreeContextBuffer.</strong>](/windows/win32/api/sspi/nf-sspi-freecontextbuffer)<br /> | 
 | <span id="ISC_REQ_CONFIDENTIALITY"></span><span id="isc_req_confidentiality"></span><dl><dt><strong>ISC_REQ_CONFIDENTIALITY</strong></dt></dl> | Cifre los mensajes mediante la [<strong>función EncryptMessage.</strong>](encryptmessage--general.md)<br /> | 
-| <span id="ISC_REQ_CONNECTION"></span><span id="isc_req_connection"></span><dl><dt><strong>ISC_REQ_CONNECTION</strong></dt></dl> | El [*contexto de seguridad*](../secgloss/s-gly.md) no controlará los mensajes de formato. Este valor es el predeterminado.<br /> | 
+| <span id="ISC_REQ_CONNECTION"></span><span id="isc_req_connection"></span><dl><dt><strong>ISC_REQ_CONNECTION</strong></dt></dl> | El [*contexto de seguridad*](../secgloss/s-gly.md) no controlará los mensajes de formato. Este es el valor predeterminado.<br /> | 
 | <span id="ISC_REQ_DELEGATE"></span><span id="isc_req_delegate"></span><dl><dt><strong>ISC_REQ_DELEGATE</strong></dt></dl> | El servidor puede usar el contexto para autenticarse en otros servidores como el cliente. La ISC_REQ_MUTUAL_AUTH debe establecerse para que esta marca funcione. Válido para Kerberos. Ignore esta marca para [*la delegación restringida.*](../secgloss/c-gly.md)<br /> | 
 | <span id="ISC_REQ_EXTENDED_ERROR"></span><span id="isc_req_extended_error"></span><dl><dt><strong>ISC_REQ_EXTENDED_ERROR</strong></dt></dl> | Cuando se produzcan errores, se notificará a la parte remota.<br /> | 
 | <span id="ISC_REQ_INTEGRITY"></span><span id="isc_req_integrity"></span><dl><dt><strong>ISC_REQ_INTEGRITY</strong></dt></dl> | Firme mensajes y compruebe las firmas mediante las [<strong>funciones EncryptMessage</strong>](encryptmessage--general.md) y [<strong>MakeSignature.</strong>](makesignature.md)<br /> | 
@@ -148,7 +148,7 @@ Puntero a una variable para recibir un conjunto de marcas de bits que indican lo
 
 Las marcas usadas para este parámetro tienen el prefijo ISC \_ RET, como ISC \_ RET \_ DELEGATE. Para obtener una lista de valores válidos, vea *el parámetro fContextReq.*
 
-No compruebe los atributos relacionados con la seguridad hasta que la llamada a la función final se devuelva correctamente. Las marcas de atributo que no están relacionadas con la seguridad, como la marca ASC RET ALLOCATED MEMORY, se pueden comprobar \_ \_ antes de la \_ devolución final.
+No compruebe los atributos relacionados con la seguridad hasta que la llamada de función final se devuelva correctamente. Las marcas de atributo que no están relacionadas con la seguridad, como la marca ASC RET ALLOCATED MEMORY, se pueden comprobar \_ \_ antes de la \_ devolución final.
 
 > [!Note]  
 > Los atributos de contexto concretos pueden cambiar durante la negociación con un par remoto.
@@ -191,7 +191,7 @@ Si se produce un error en la función, la función devuelve uno de los siguiente
 | <dl> <dt>**ERROR \_ INTERNO DE SEC E \_ \_**</dt> </dl>               | Error que no se ha asignado a un código de error SSPI.<br/>                                                                                                                                                                                                                                |
 | <dl> <dt>**SEG \_ E \_ IDENTIFICADOR NO \_ VÁLIDO**</dt> </dl>               | El identificador pasado a la función no es válido.<br/>                                                                                                                                                                                                                                          |
 | <dl> <dt>**SEC \_ E TOKEN NO \_ \_ VÁLIDO**</dt> </dl>                | El error se debe a un token de entrada con formato incorrecto, como un token dañado en tránsito, un token de tamaño incorrecto o un token pasado a la delegación restringida [*incorrecta.*](../secgloss/s-gly.md) Pasar un token al paquete incorrecto puede ocurrir si el cliente y el servidor no negociaron la delegación [*restringida adecuada.*](../secgloss/s-gly.md)<br/> |
-| <dl> <dt>**SE \_ DENEGÓ \_ EL INICIO DE SESIÓN POR SEGUNDO \_ E**</dt> </dl>                 | Error de inicio de sesión.<br/>                                                                                                                                                                                                                                                                        |
+| <dl> <dt>**SE \_ DENEGÓ EL \_ INICIO DE SESIÓN \_ E.**</dt> </dl>                 | Error de inicio de sesión.<br/>                                                                                                                                                                                                                                                                        |
 | <dl> <dt>**SEC \_ E \_ NO \_ AUTHENTICATING \_ AUTHORITY**</dt> </dl> | No se pudo ponerse en contacto con ninguna autoridad para la autenticación. El nombre de dominio de la entidad de autenticación podría ser incorrecto, el dominio podría ser inaccesible o podría haber habido un error en la relación de confianza.<br/>                                                                                  |
 | <dl> <dt>**SEC \_ E \_ NO \_ CREDENTIALS**</dt> </dl>               | No hay credenciales disponibles en la [*delegación restringida.*](../secgloss/s-gly.md)<br/>                                                                                                                                                  |
 | <dl> <dt>**SEG \_ E \_ DESTINO \_ DESCONOCIDO**</dt> </dl>               | No se ha reconocido el destino.<br/>                                                                                                                                                                                                                                                           |
@@ -202,7 +202,7 @@ Si se produce un error en la función, la función devuelve uno de los siguiente
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El autor de la llamada es responsable de determinar si los atributos de contexto final son suficientes. Si, por ejemplo, se solicitó confidencialidad, pero no se pudo establecer, algunas aplicaciones pueden optar por apagar la conexión inmediatamente.
 
@@ -239,7 +239,7 @@ Si se especificó ISC REQ ALLOCATE MEMORY, el autor de la llamada debe liberar l
 
 Por ejemplo, el token de entrada podría ser el desafío de un administrador de LAN. En este caso, el token de salida sería la respuesta cifrada con NTLM al desafío.
 
-La acción que realiza el cliente depende del código de retorno de esta función. Si el código de retorno es SEC E OK, no habrá ninguna segunda llamada \_ \_ a **InitializeSecurityContext (Negotiate)** y no se espera ninguna respuesta del servidor. Si el código de retorno es SEC I CONTINUE NEEDED, el cliente espera un token en respuesta del servidor y lo pasa en una segunda llamada \_ \_ a \_ **InitializeSecurityContext (Negotiate).** El código de retorno SEC I COMPLETE NEEDED indica que el cliente debe terminar de compilar el mensaje \_ y llamar a la función \_ \_ [**CompleteAuthToken.**](/windows/win32/api/sspi/nf-sspi-completeauthtoken) El código SEC \_ I COMPLETE AND CONTINUE incorpora ambas \_ \_ \_ acciones.
+La acción que realiza el cliente depende del código de retorno de esta función. Si el código de retorno es SEC E OK, no habrá ninguna segunda llamada \_ \_ a **InitializeSecurityContext (Negotiate)** y no se espera ninguna respuesta del servidor. Si el código devuelto es SEC I CONTINUE NEEDED, el cliente espera un token en respuesta del servidor y lo pasa en una segunda llamada \_ \_ a \_ **InitializeSecurityContext (Negotiate).** El código de retorno SEC I COMPLETE NEEDED indica que el cliente debe terminar de compilar el mensaje \_ y llamar a la función \_ \_ [**CompleteAuthToken.**](/windows/win32/api/sspi/nf-sspi-completeauthtoken) El código SEC \_ I COMPLETE AND CONTINUE incorpora ambas \_ \_ \_ acciones.
 
 Si **InitializeSecurityContext (Negotiate)** devuelve un resultado correcto en la primera (o solo) llamada, el autor de la llamada finalmente debe llamar a la función [**DeleteSecurityContext**](/windows/win32/api/sspi/nf-sspi-deletesecuritycontext) en el identificador devuelto, incluso si se produce un error en la llamada en un último momento del intercambio de autenticación.
 
@@ -251,7 +251,7 @@ Los llamadores en modo kernel tienen las siguientes diferencias: el nombre de de
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                   |

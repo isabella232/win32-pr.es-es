@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 4c3a5cd33a6a5584ea9373df22df51a09e3e763d284a0f979f0b24e3651dc3d6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b8a940fd08e1ab19b18969a763448b65fffd9d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119100533"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568636"
 ---
 # <a name="isvaliddevmode-function"></a>Función IsValidDevmode
 
@@ -45,7 +45,7 @@ BOOL IsValidDevmode(
 *pDevmode* \[ En\]
 </dt> <dd>
 
-Puntero al [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) que se validará.
+Puntero al [**DEVMODE que se**](/windows/win32/api/wingdi/ns-wingdi-devmodea) validará.
 
 </dd> <dt>
 
@@ -58,34 +58,34 @@ Tamaño en bytes del búfer de bytes de entrada.
 
 ## <a name="return-value"></a>Valor devuelto
 
-**TRUE**, si [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) es estructuralmente válido. Si se encuentran errores menores, la función los corregirá y devolverá **TRUE**.
+**TRUE**, si [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) es estructuralmente válido. Si se encuentran errores menores, la función los corregirá y devolverá **TRUE.**
 
-**FALSE**, si [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) tiene uno o varios problemas estructurales importantes. Por ejemplo, su **miembro dmSize** está mal alineado o especifica un búfer demasiado pequeño. Además, **FALSE si** **pDevmode** es **NULL.**
+**FALSE**, si [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) tiene uno o varios problemas estructurales significativos. Por ejemplo, su **miembro dmSize** está mal alineado o especifica un búfer demasiado pequeño. Además, **FALSE si** **pDevmode** es **NULL.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No se comprueba ningún campo de controlador de impresora privado [**de DEVMODE,**](/windows/win32/api/wingdi/ns-wingdi-devmodea) solo los campos públicos.
 
-Los llamadores deben usar **dmSize** + **dmDriverExtra** para **DevmodeSize** solo si pueden garantizar que el tamaño del búfer de entrada sea al menos ese grande. Dado que [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) no suele ser datos de confianza, los valores que se encuentran en el búfer de entrada en los desplazamientos **dmSize** y **dmDriverExtra** tampoco son de confianza.
+Los llamadores deben usar **dmSize** + **dmDriverExtra** para **DevmodeSize** solo si pueden garantizar que el tamaño del búfer de entrada sea al menos tan grande. Dado que [**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea) suele ser datos que no son de confianza, los valores que se encuentran en el búfer de entrada en los desplazamientos **dmSize** y **dmDriverExtra** tampoco son de confianza.
 
-Esta función es ejecutable en Least-Privileged de cuenta de usuario (LUA).
+Esta función es ejecutable en Least-Privileged contexto de la cuenta de usuario (LUA).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Winspool.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Winspool.h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Winspool.lib</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Winspool.drv</dt> </dl> |
 | Nombres Unicode y ANSI<br/>   | **IsValidDevmodeW** (Unicode) e **IsValidDevmodeA** (ANSI)<br/>                 |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -95,7 +95,7 @@ Esta función es ejecutable en Least-Privileged de cuenta de usuario (LUA).
 [Funciones de la API del administrador de trabajos de impresión](printing-and-print-spooler-functions.md)
 </dt> <dt>
 
-[**Devmode**](/windows/win32/api/wingdi/ns-wingdi-devmodea)
+[**DEVMODE**](/windows/win32/api/wingdi/ns-wingdi-devmodea)
 </dt> </dl>
 
  

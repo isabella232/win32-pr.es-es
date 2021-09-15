@@ -4,12 +4,12 @@ ms.assetid: 14d4ea1f-776b-40e4-b55d-1cb8a71c6a99
 title: System.Video.IsSpherical
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79a8e21a43a7f1f0e495c4b031fd86ac419b238f9a03563cfcf2cdbf8db439ae
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c8dc50f85c64d5e4c7c1f9b54953b4b79536841d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120058275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468362"
 ---
 # <a name="systemvideoisspherical"></a>System.Video.IsSpherical
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

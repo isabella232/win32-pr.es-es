@@ -1,5 +1,5 @@
 ---
-description: En esta sección se describen los objetos Windows C++ implementados por shell.
+description: En esta sección se describen los objetos Windows C++ implementados por el shell.
 title: Objetos de shell para C++
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: b938c8ab17a88657417b2e9ff24e9f05b5146e50e4257af1c9dafa69642ecc5d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ba595c7e993cb1366dff6fea2fec231018d21d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118719812"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468124"
 ---
 # <a name="shell-objects-for-c"></a>Objetos de shell para C++
 
-En esta sección se describen los objetos Windows C++ implementados por shell.
+En esta sección se describen los objetos Windows C++ implementados por el shell.
 
 ## <a name="in-this-section"></a>En esta sección
 

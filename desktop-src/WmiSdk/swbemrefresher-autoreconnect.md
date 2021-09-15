@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: b1ad11c4362276d5714e54ef3196b246a40de1e26bf8f311f41fb5b5834bab0b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4faa02a4a77409bb8b1813ee433c326d1c45d1bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118312817"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567213"
 ---
 # <a name="swbemrefresherautoreconnect-property"></a>Propiedad SWbemRefresher.AutoReconnect
 
@@ -42,7 +42,7 @@ SWbemRefresher.AutoReconnect As Boolean
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La modificación de esta propiedad solo afecta a los objetos del actualizador que están respaldos por un proveedor de alto rendimiento. Si el proveedor no es un proveedor de alto rendimiento, establecer la propiedad **AutoReconnect** en **TRUE** no tiene ningún efecto porque el objeto [**SWbemRefresher**](swbemrefresher.md) nunca se vuelve a conectar.
 
@@ -50,11 +50,11 @@ La modificación de esta propiedad solo afecta a los objetos del actualizador qu
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemRefresher<br/>                                                        |

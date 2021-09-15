@@ -4,12 +4,12 @@ description: Comparación de enteros vectoriales por componente menor que.
 ms.assetid: 5F06E568-6234-4778-8169-D8352FAB5297
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5b8d70e2c71ad0e503e7119abc2b28e76819053d843b0091d15bfd2045d5351d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e2c2e5e47272412bb483e4782e9a6c35e971293c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119119459"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567780"
 ---
 # <a name="ilt-sm4---asm"></a>ilt (sm4 - asm)
 
@@ -36,7 +36,7 @@ Comparación de enteros vectoriales por componente menor que.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Realiza la comparación de enteros *(src0*  <  *src1*) para cada componente y escribe el resultado *en dest.*
 
@@ -60,12 +60,12 @@ Esta instrucción se aplica a las siguientes fases del sombreador:
 
 | Modelo de sombreador                                              | Compatible |
 |-----------------------------------------------------------|-----------|
-| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | Sí       |
-| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | Sí       |
-| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | Sí       |
-| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | No        |
-| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | No        |
-| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | No        |
+| [Shader Model 5](d3d11-graphics-reference-sm5.md)        | sí       |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | sí       |
+| [Shader Model 4](dx-graphics-hlsl-sm4.md)                | sí       |
+| [Shader Model 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | no        |
+| [Shader Model 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | no        |
+| [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) | no        |
 
 
 

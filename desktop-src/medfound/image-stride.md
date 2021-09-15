@@ -4,32 +4,32 @@ ms.assetid: 13cd1106-48b3-4522-ac09-8efbaab5c31d
 title: Image Stride
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 360afb6fdeca4c543957326b041654d75ff17b66db8918e42d781d414e8b7586
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 813c0f3d99297758761bdfb5973fc2b16e3339f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119958159"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360466"
 ---
 # <a name="image-stride"></a>Image Stride
 
 Cuando una imagen de vídeo se almacena en memoria, el búfer de memoria puede contener bytes de relleno adicionales después de cada fila de píxeles. Los bytes de relleno afectan a cómo se almacena la imagen en memoria, pero no afectan a cómo se muestra la imagen.
 
-El *paso es el* número de bytes de una fila de píxeles en memoria a la siguiente fila de píxeles en memoria. Stride también se denomina *pitch*. Si hay bytes de relleno, el paso es más ancho que el ancho de la imagen, como se muestra en la ilustración siguiente.
+El *paso es* el número de bytes de una fila de píxeles en memoria a la siguiente fila de píxeles en memoria. Stride también se denomina *pitch*. Si hay bytes de relleno, el paso es más ancho que el ancho de la imagen, como se muestra en la ilustración siguiente.
 
 ![diagrama que muestra una imagen más relleno.](images/c85c6a40-f0a8-48a3-b465-39ceada66339.gif)
 
-Dos búferes que contienen fotogramas de vídeo con dimensiones iguales pueden tener dos avances diferentes. Si procesa una imagen de vídeo, debe tener en cuenta el paso.
+Dos búferes que contienen fotogramas de vídeo con iguales dimensiones pueden tener dos pasos diferentes. Si procesa una imagen de vídeo, debe tener en cuenta el paso.
 
-Además, hay dos maneras de organizar una imagen en memoria. En una *imagen de arriba a* abajo, la fila superior de píxeles de la imagen aparece en primer lugar en la memoria. En una *imagen de abajo* hacia arriba, la última fila de píxeles aparece primero en la memoria. En la ilustración siguiente se muestra la diferencia entre una imagen de arriba abajo y una imagen de abajo hacia arriba.
+Además, hay dos maneras de organizar una imagen en memoria. En una *imagen de arriba abajo,* la fila superior de píxeles de la imagen aparece primero en memoria. En una *imagen de abajo* hacia arriba, la última fila de píxeles aparece primero en la memoria. En la ilustración siguiente se muestra la diferencia entre una imagen de arriba abajo y una imagen de abajo hacia arriba.
 
-![diagrama que muestra imágenes de arriba abajo y de abajo hacia arriba.](images/f03bd9ff-0cf3-4a56-88c5-5b8c44637272.gif)
+![diagrama en el que se muestran imágenes de arriba abajo y de abajo hacia arriba.](images/f03bd9ff-0cf3-4a56-88c5-5b8c44637272.gif)
 
-Una imagen de abajo hacia arriba tiene un paso negativo, ya que se define stride como el número de bytes que se necesitan para bajar una fila de píxeles, en relación con la imagen mostrada. Las imágenes YUV siempre deben estar de arriba abajo y cualquier imagen que esté contenida en una superficie de Direct3D debe estar de arriba abajo. Las imágenes RGB de la memoria del sistema suelen estar de abajo hacia arriba.
+Una imagen de abajo hacia arriba tiene un paso negativo, ya que stride se define como el número de bytes que se deben mover hacia abajo una fila de píxeles, en relación con la imagen mostrada. Las imágenes YUV siempre deben estar de arriba abajo y cualquier imagen contenida en una superficie de Direct3D debe estar de arriba abajo. Las imágenes RGB de la memoria del sistema suelen ser de abajo hacia arriba.
 
-En concreto, las transformaciones de vídeo necesitan controlar los búferes con avances no coincidentes, ya que es posible que el búfer de entrada no coincida con el búfer de salida. Por ejemplo, suponga que desea convertir una imagen de origen y escribir el resultado en una imagen de destino. Suponga que ambas imágenes tienen el mismo ancho y alto, pero es posible que no tengan el mismo formato de píxel o el mismo paso de imagen.
+En concreto, las transformaciones de vídeo necesitan controlar búferes con avances no coincidentes, ya que es posible que el búfer de entrada no coincida con el búfer de salida. Por ejemplo, suponga que quiere convertir una imagen de origen y escribir el resultado en una imagen de destino. Suponga que ambas imágenes tienen el mismo ancho y alto, pero es posible que no tengan el mismo formato de píxel o el mismo paso de imagen.
 
-En el código de ejemplo siguiente se muestra un enfoque generalizado para escribir este tipo de función. No se trata de un ejemplo completo de trabajo, ya que abstrae muchos de los detalles específicos.
+En el código de ejemplo siguiente se muestra un enfoque generalizado para escribir este tipo de función. Este no es un ejemplo completo de trabajo, ya que abstrae muchos de los detalles específicos.
 
 
 ```C++
@@ -61,16 +61,16 @@ void ProcessVideoImage(
 
 Esta función toma seis parámetros:
 
--   Puntero al inicio de la línea de examen 0 en la imagen de destino.
+-   Puntero al inicio de la línea 0 del examen en la imagen de destino.
 -   Paso de la imagen de destino.
--   Puntero al inicio de la línea de examen 0 en la imagen de origen.
--   El paso de la imagen de origen.
+-   Puntero al inicio de la línea 0 del examen en la imagen de origen.
+-   Paso de la imagen de origen.
 -   Ancho de la imagen en píxeles.
 -   Alto de la imagen en píxeles.
 
-La idea general es procesar una fila a la vez, iterando por cada píxel de la fila. Supongamos que SOURCE PIXEL TYPE y DEST PIXEL TYPE son estructuras que representan el diseño de píxeles para las imágenes de origen \_ \_ y \_ \_ destino, respectivamente. (Por ejemplo, RGB de 32 bits usa la [**estructura RGBQUAD.**](/windows/win32/api/wingdi/ns-wingdi-rgbquad) No todos los formatos de píxeles tienen una estructura predefinida). Convertir el puntero de matriz al tipo de estructura le permite acceder a los componentes RGB o YUV de cada píxel. Al principio de cada fila, la función almacena un puntero a la fila. Al final de la fila, incrementa el puntero por el ancho del intervalo de la imagen, lo que hace avanzar el puntero a la fila siguiente.
+La idea general es procesar una fila a la vez, iterando por cada píxel de la fila. Suponga que SOURCE PIXEL TYPE y DEST PIXEL TYPE son estructuras que representan el diseño de píxeles para las imágenes de origen \_ \_ y \_ \_ destino, respectivamente. (Por ejemplo, RGB de 32 bits usa la [**estructura RGBQUAD.**](/windows/win32/api/wingdi/ns-wingdi-rgbquad) No todos los formatos de píxeles tienen una estructura predefinida). Convertir el puntero de matriz en el tipo de estructura le permite tener acceso a los componentes RGB o YUV de cada píxel. Al principio de cada fila, la función almacena un puntero a la fila. Al final de la fila, incrementa el puntero por el ancho del intervalo de imagen, lo que hace avanzar el puntero a la fila siguiente.
 
-En este ejemplo se llama a una función hipotética denominada TransformPixelValue para cada píxel. Podría ser cualquier función que calcule un píxel de destino a partir de un píxel de origen. Por supuesto, los detalles exactos dependerán de la tarea concreta. Por ejemplo, si tiene un formato YUV planar, debe tener acceso a los planos de zona independientemente del plano luma; con vídeo entrelazado, es posible que tenga que procesar los campos por separado. y así sucesivamente.
+En este ejemplo se llama a una función hipotética denominada TransformPixelValue para cada píxel. Podría ser cualquier función que calcule un píxel de destino a partir de un píxel de origen. Por supuesto, los detalles exactos dependerán de la tarea concreta. Por ejemplo, si tiene un formato YUV plano, debe tener acceso a los planos de la escala independientemente del plano luma; con vídeo entrelazado, es posible que tenga que procesar los campos por separado; etc.
 
 Para proporcionar un ejemplo más concreto, el código siguiente convierte una imagen RGB de 32 bits en una imagen de AYUV. Se accede a los píxeles RGB mediante una estructura [**RGBQUAD**](/windows/win32/api/wingdi/ns-wingdi-rgbquad) y se accede a los píxeles AYUV mediante una estructura de estructura [**\_ DXVA2 AYUVSample8.**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_ayuvsample8)
 
@@ -109,7 +109,7 @@ void RGB32_To_AYUV(
 
 
 
-En el ejemplo siguiente se convierte una imagen RGB de 32 bits en una imagen YV12. En este ejemplo se muestra cómo controlar un formato YUV planar. (YV12 es un formato planar 4:2:0). En este ejemplo, la función mantiene tres punteros independientes para los tres planos de la imagen de destino. Sin embargo, el enfoque básico es el mismo que el ejemplo anterior.
+En el ejemplo siguiente se convierte una imagen RGB de 32 bits en una imagen YV12. En este ejemplo se muestra cómo controlar un formato YUV plano. (YV12 es un formato plano 4:2:0). En este ejemplo, la función mantiene tres punteros independientes para los tres planos de la imagen de destino. Sin embargo, el enfoque básico es el mismo que el ejemplo anterior.
 
 
 ```C++

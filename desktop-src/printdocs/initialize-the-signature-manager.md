@@ -4,12 +4,12 @@ ms.assetid: 4c4c6e8f-4ee0-4089-a283-1082baee5054
 title: Inicializar el Administrador de firmas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc9a9f960c639e20c6c7d4debbfd2276553d3ba90b7af083d39a97f887ee81ad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d2796838a9cd041859f0eb47bf4aeafb2a8d5356
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119948775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568644"
 ---
 # <a name="initialize-the-signature-manager"></a>Inicializar el Administrador de firmas
 
@@ -17,7 +17,7 @@ En este tema se describe cómo inicializar el administrador de firmas para usarl
 
 Antes de usar los siguientes ejemplos de código en el programa, lea la declinación de responsabilidades en [Common Digital Signature Programming Tasks](basic-digital-signature-programming-tasks.md).
 
-Para usar las Windows 7 características de Crypto API, defina el símbolo **\_ CRYPT OID \_ INFO HAS EXTRA \_ \_ \_ FIELDS** como se muestra a continuación:
+Para usar las Windows 7 características de Crypto API, defina el símbolo **CRYPT OID INFO HAS EXTRA FIELDS (CRYPT \_ OID \_ INFO HAS \_ EXTRA \_ \_ FIELDS)** como se muestra a continuación:
 
 
 ```C++

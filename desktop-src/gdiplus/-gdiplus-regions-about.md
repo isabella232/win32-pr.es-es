@@ -4,22 +4,22 @@ ms.assetid: eb78d7a0-6293-487f-88c5-88ba455b965f
 title: Regiones (GDI+)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd15a7a25b341556b312c540f6fa4caf870da75aa4973be1d7c1e8102511e6ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 82d6a7f0a5a6d3df4b11a491111dbedf9e155c3d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117885038"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466303"
 ---
 # <a name="regions-gdi"></a>Regiones (GDI+)
 
-Una región es una parte de la superficie de presentación. Las regiones pueden ser simples (un rectángulo único) o complejas (una combinación de polígonos y curvas cerradas). En la ilustración siguiente se muestran dos regiones: una construida a partir de un rectángulo y la otra construida a partir de un trazado.
+Una región es una parte de la superficie de presentación. Las regiones pueden ser simples (un solo rectángulo) o complejas (una combinación de polígonos y curvas cerradas). En la ilustración siguiente se muestran dos regiones: una construida a partir de un rectángulo y la otra construida a partir de un trazado.
 
-![ilustración que muestra una región rectangular transparente superpuesta a una forma curva opaca](images/aboutgdip02-art27.png)
+![ilustración en la que se muestra una región rectangular transparente superpuesta a una forma curva opaca](images/aboutgdip02-art27.png)
 
-Las regiones se usan a menudo para el recorte y las pruebas de impacto. El recorte implica restringir el dibujo a una determinada región de la pantalla, normalmente la parte de la pantalla que debe actualizarse. Las pruebas de acceso implican comprobar si el cursor está en una determinada región de la pantalla cuando se presiona un botón del mouse.
+Las regiones se usan a menudo para el recorte y las pruebas de impacto. El recorte implica restringir el dibujo a una determinada región de la pantalla, normalmente la parte de la pantalla que debe actualizarse. Las pruebas de impacto implican comprobar si el cursor está en una determinada región de la pantalla cuando se presiona un botón del mouse.
 
-Puede construir una región a partir de un rectángulo o de un trazado. También puede crear regiones complejas combinando las regiones existentes. La [**clase Region**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-region) proporciona los métodos siguientes para combinar regiones: [Intersect](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-intersect(inconstregion)), [Union](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-union(inconstregion)), [Xor,](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-xor(inconstrect_)) [Exclude](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-exclude(inconstregion))y [**Region::Complement.**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-complement(inconstgraphicspath))
+Puede construir una región a partir de un rectángulo o de un trazado. También puede crear regiones complejas mediante la combinación de regiones existentes. La [**clase Region**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-region) proporciona los métodos siguientes para combinar regiones: [Intersect](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-intersect(inconstregion)), [Union](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-union(inconstregion)), [Xor,](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-xor(inconstrect_)) [Exclude](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-exclude(inconstregion))y [**Region::Complement**](/windows/win32/api/gdiplusheaders/nf-gdiplusheaders-region-complement(inconstgraphicspath)).
 
 La intersección de dos regiones es el conjunto de todos los puntos que pertenecen a ambas regiones. La unión es el conjunto de todos los puntos que pertenecen a una u otra región o a ambas regiones. El complemento de una región es el conjunto de todos los puntos que no están en la región. En la ilustración siguiente se muestra la intersección y la unión de las dos regiones de la ilustración anterior.
 

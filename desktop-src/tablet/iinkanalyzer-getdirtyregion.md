@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: d1d621991b4af3d22322529af7541395fddccc7a2c180a13419296eac61d7322
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 56f980189e22f50bb832be904933ef0b26d9b54f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119773595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360300"
 ---
 # <a name="iinkanalyzergetdirtyregion-method"></a>IInkAnalyzer::GetDirtyRegion (método)
 
@@ -50,7 +50,7 @@ HRESULT GetDirtyRegion(
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Caution]  
 > Para evitar una pérdida de memoria, llame a [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) en *ppDirtyRegion* cuando ya no necesite usar el objeto .
@@ -60,8 +60,8 @@ Para obtener una descripción de los valores [devueltos, vea Clases e interfaces
 Este método identifica las áreas que se deben analizar o volver a analizar. Todos los métodos [**IInkAnalyzer**](iinkanalyzer.md) que agregan, actualizan o quitan datos de trazo actualizan la región desusada. Para marcar manualmente un área para el reanálisis:
 
 1.  Obtenga la región desa prueba **mediante el método IInkAnalyzer::GetDirtyRegion**.
-2.  Use [**el método IAnalysisRegion::UnionRegion o**](ianalysisregion-unionregion.md) el método [**IAnalysisRegion::UnionRectangle**](ianalysisregion-unionrectangle.md) para agregar el área a la región del paso 1.
-3.  Use [**el método IInkAnalyzer::SetDirtyRegion para**](iinkanalyzer-setdirtyregion.md) actualizar la región desa prueba.
+2.  Use [**el método IAnalysisRegion::UnionRegion o**](ianalysisregion-unionregion.md) el método [**IAnalysisRegion::UnionRectangle para**](ianalysisregion-unionrectangle.md) agregar el área a la región del paso 1.
+3.  Use [**el método IInkAnalyzer::SetDirtyRegion para**](iinkanalyzer-setdirtyregion.md) actualizar la región desdumbre.
 
 [**IInkAnalyzer**](iinkanalyzer.md) analiza la entrada de lápiz dentro de su región desusado durante una llamada al método [**IInkAnalyzer::Analyze**](iinkanalyzer-analyze.md) o al método [**IInkAnalyzer::BackgroundAnalyze**](iinkanalyzer-backgroundanalyze.md). Sin embargo, **IInkAnalyzer** puede expandir la operación de análisis para incluir regiones vecinos.
 
@@ -77,12 +77,12 @@ Use [**CoTaskMemFree para**](/windows/desktop/api/combaseapi/nf-combaseapi-cotas
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ description: Este tema contiene código de ejemplo que muestra cómo un proveedo
 ms.assetid: 6932de16-5548-4aa3-9f29-5daa57bb202b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae1e1284e2969d726006b4f8a8b0b6b3e63a7e421a14fb688dae5cbf8b8aa53b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4133a53df3c59e6d5c93b1c9cd8e6aa942b4bd56
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119859465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567277"
 ---
 # <a name="how-to-return-properties-from-a-ui-automation-provider"></a>Cómo devolver propiedades de un proveedor Automatización de la interfaz de usuario datos
 

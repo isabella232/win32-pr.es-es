@@ -3,7 +3,7 @@ title: Propiedad sourceProtocol de IWMPNetwork
 description: La propiedad sourceProtocol obtiene el protocolo de origen utilizado para recibir datos.
 ms.assetid: db1d7651-3f25-4ac9-a3e1-dc3a8ddf8c40
 keywords:
-- Propiedad sourceProtocol Reproductor de Windows Media
+- SourceProtocol, propiedad Reproductor de Windows Media
 - Propiedad sourceProtocol Reproductor de Windows Media , interfaz IWMPNetwork
 - Interfaz IWMPNetwork Reproductor de Windows Media , propiedad sourceProtocol
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 737bc0a5a4417735c795fc1058a7b821ee52489cf838be9eb934546f0fabacc9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a5017e1a053c124a1f7f50668c6f392eb541d57f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119760855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467013"
 ---
-# <a name="iwmpnetworksourceprotocol-property"></a>Propiedad IWMPNetwork::sourceProtocol
+# <a name="iwmpnetworksourceprotocol-property"></a>IWMPNetwork::sourceProtocol, propiedad
 
 La **propiedad sourceProtocol** obtiene el protocolo de origen utilizado para recibir datos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,7 +48,7 @@ Public ReadOnly Property sourceProtocol As System.String
 
 **System.String que** es el nombre del protocolo de origen.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad obtiene una cadena de longitud cero ("") al reproducir un CD o DVD.
 
@@ -98,7 +98,7 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -106,7 +106,7 @@ End Sub
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

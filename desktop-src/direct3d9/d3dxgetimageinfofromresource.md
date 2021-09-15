@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 7d383a458b99478eee8435aa46441cdd77cc5c953bbf489c657e448078c9931b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ea324ef94ab765bad25f7d07eef07972ab94cff6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119123231"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567888"
 ---
 # <a name="d3dxgetimageinfofromresource-function"></a>Función D3DXGetImageInfoFromResource
 
@@ -75,7 +75,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser el siguiente: D3DERR \_ INVALIDCALL
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La configuración del compilador también determina la versión de la función. Si se define Unicode, la llamada de función se resuelve en D3DXGetImageInfoFromResourceW. De lo contrario, la llamada de función se resuelve en D3DXGetImageInfoFromResourceA porque se usan cadenas ANSI.
 
@@ -90,7 +90,7 @@ La configuración del compilador también determina la versión de la función. 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

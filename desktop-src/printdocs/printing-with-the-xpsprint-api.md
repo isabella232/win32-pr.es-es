@@ -4,18 +4,18 @@ ms.assetid: 3d7ab169-412c-434f-a865-4da4af370eaf
 title: 'Cómo: Imprimir con XPS Print API'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c4261ab9e30f3413ca61c99590056f386d92f89e0ba5de9d1627f91a9a21062
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b4be5f083fb31eccaf2dc4b555435bd15a7fb45
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119824815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359707"
 ---
 # <a name="how-to-print-with-the-xps-print-api"></a>Cómo: Imprimir con XPS Print API
 
 En este tema se describe cómo usar [XPS Print API](xpsprint-api.md) para imprimir desde una Windows aplicación.
 
-XPS [Print API permite](xpsprint-api.md) que las aplicaciones Windows nativas impriman documentos XPS. Una aplicación puede crear un documento XPS mediante [la API de documento XPS](/previous-versions/windows/desktop/dd316976(v=vs.85)). En [el tema de ayuda Tareas comunes de programación](/previous-versions/windows/desktop/dd316968(v=vs.85)) de documentos XPS se describe cómo hacerlo. Una vez creado un documento XPS, la aplicación puede usar xpS Print API para imprimirlo.
+XpS [Print API permite](xpsprint-api.md) que las aplicaciones Windows nativas impriman documentos XPS. Una aplicación puede crear un documento XPS mediante [la API de documento XPS](/previous-versions/windows/desktop/dd316976(v=vs.85)). En [el tema de ayuda Tareas comunes de programación](/previous-versions/windows/desktop/dd316968(v=vs.85)) de documentos XPS se describe cómo hacerlo. Una vez creado un documento XPS, la aplicación puede usar xpS Print API para imprimirlo.
 
 El uso [de XPS Print API](xpsprint-api.md) para imprimir un documento desde una aplicación implica los pasos siguientes.
 
@@ -28,7 +28,7 @@ El uso [de XPS Print API](xpsprint-api.md) para imprimir un documento desde una 
 -   [Esperar al evento de finalización](#wait-for-the-completion-event)
 -   [Liberación de recursos](#release-resources)
 
-XpS [Print API requiere](xpsprint-api.md) que se imprima un documento XPS. En el ejemplo siguiente, el documento XPS se crea a medida que se envía a la impresora mediante xpS Print API. También es posible crear un documento XPS sin enviarlo a una impresora mediante la API de documentos [XPS](/previous-versions/windows/desktop/dd316976(v=vs.85)) y mantenerlo como XPS OM o guardando xpS OM como un documento XPS. Para más información sobre el uso de XPS OM, consulte XPS Document API.
+XpS [Print API requiere](xpsprint-api.md) que se imprima un documento XPS. En el ejemplo siguiente, el documento XPS se crea a medida que se envía a la impresora mediante xpS Print API. También es posible crear un documento XPS sin enviarlo a una impresora mediante la API de documentos [XPS](/previous-versions/windows/desktop/dd316976(v=vs.85)) y mantenerlo como XPS OM o guardando xpS OM como un documento XPS. Para más información sobre el uso de XPS OM, consulte LA API de documentos XPS.
 
 ### <a name="initialize-com-interface"></a>Inicialización de la interfaz COM
 
@@ -173,7 +173,7 @@ Para cada documento de este trabajo de impresión, inicie un nuevo documento y a
 
 ### <a name="start-a-new-document"></a>Iniciar un nuevo documento
 
-Inicie un nuevo documento en el escritor de paquetes mediante una llamada [**a IXpsOMPackageWriter::StartNewDocument**](/windows/win32/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-startnewdocument). Si un documento está abierto cuando se llama a este método, se cierra y se abre un nuevo documento.
+Inicie un nuevo documento en el escritor de paquetes mediante una [**llamada a IXpsOMPackageWriter::StartNewDocument**](/windows/win32/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompackagewriter-startnewdocument). Si un documento está abierto cuando se llama a este método, se cierra y se abre un nuevo documento.
 
 
 ```C++

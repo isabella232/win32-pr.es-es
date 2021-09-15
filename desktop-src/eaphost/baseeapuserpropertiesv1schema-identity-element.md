@@ -3,7 +3,7 @@ title: Elemento Identity
 description: Obtenga información sobre el elemento EAPHost Identity. Este elemento captura la identidad utilizada para la autenticación.
 ms.assetid: 464979f0-6a2b-43e7-a207-2fbd1e2e5f51
 keywords:
-- Elemento de identidad EAPHost
+- Elemento identity EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ad88e84583be2b392ce8a4dfdaec7495f1c063fa13d4327004bfbecbc1f925ae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 485d576155d5ac63df2776016f3aafabf8c18c25
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118275472"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568824"
 ---
 # <a name="identity-element"></a>Elemento Identity
 
@@ -31,7 +31,7 @@ El **elemento Identity** captura la identidad utilizada para la autenticación.
  />
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **elemento Identity** es abstracto; cada método debe definir y usar un elemento derivado en los documentos de instancia.
 
@@ -39,14 +39,14 @@ El **elemento Identity** es abstracto; cada método debe definir y usar un eleme
 
 
 
-| Rol | Versión mínima del sistema operativo admitida |
+| Role | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
-| Server<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
+| Remoto<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

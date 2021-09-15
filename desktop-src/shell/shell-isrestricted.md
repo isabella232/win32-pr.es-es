@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 40e6c23f14b3c09a6cfe4885cc7b7bf877e3e4bfbf538645cf96b99ea451776f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e428c914cf95d282fd721071009efc70fcb3a4d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118968554"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468106"
 ---
 # <a name="shellisrestricted-method"></a>Método Shell.IsRestricted
 
@@ -83,7 +83,7 @@ Tipo: **\* Entero**
 
 Valor de la restricción. Si no se encuentra la restricción especificada, el valor devuelto es 0.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 **IsRestricted** busca primero un nombre de subclave que coincida *con sGroup* bajo la siguiente clave.
 
@@ -102,7 +102,7 @@ Este método no está disponible actualmente en Microsoft Visual Basic.
 
 ## <a name="examples"></a>Ejemplos
 
-En los ejemplos siguientes se muestra el uso de **IsRestricted para** recuperar el valor de datos de la restricción **undockwithoutlogon** de la subclave **System.** El uso se muestra para JScript y VBScript.
+En los ejemplos siguientes se muestra el uso de **IsRestricted** para recuperar el valor de datos de la restricción **undockwithoutlogon** de la subclave **System.** El uso se muestra para JScript y VBScript.
 
 JScript:
 
@@ -149,10 +149,10 @@ Vbscript:
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 

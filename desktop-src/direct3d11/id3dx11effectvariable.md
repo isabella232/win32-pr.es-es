@@ -3,7 +3,7 @@ title: Interfaz ID3DX11EffectVariable (D3dx11effect.h)
 description: La interfaz ID3DX11EffectVariable es la clase base para todas las variables de efecto. La duración de un objeto ID3DX11EffectVariable es igual a la duración de su objeto ID3DX11Effect primario.
 ms.assetid: 07f1b7d7-c266-49ae-b79a-7a645521df89
 keywords:
-- Interfaz ID3DX11EffectVariable Direct3D 11
+- Interfaz ID3DX11EffectVariable direct3D 11
 - Interfaz ID3DX11EffectVariable Direct3D 11 , descrita
 topic_type:
 - apiref
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d3340ba231785edb9446c8578d886fca4a28ecbb09e69230d7f8661a5650afa4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b1df38a12c54776072bb922ffc4cd5bcd0d79776
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119045813"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566717"
 ---
 # <a name="id3dx11effectvariable-interface"></a>Interfaz ID3DX11EffectVariable
 
@@ -48,14 +48,14 @@ La **interfaz ID3DX11EffectVariable** tiene estos métodos.
 | [**AsMatrix**](id3dx11effectvariable-asmatrix.md)                               | Obtiene una variable de matriz.<br/>                      |
 | [**AsRasterizer**](id3dx11effectvariable-asrasterizer.md)                       | Obtiene una variable rasterizadora.<br/>                  |
 | [**AsRenderTargetView**](id3dx11effectvariable-asrendertargetview.md)           | Obtiene una variable render-target-view.<br/>          |
-| [**AsSampler**](id3dx11effectvariable-assampler.md)                             | Obtenga una variable sampler.<br/>                     |
+| [**AsSampler**](id3dx11effectvariable-assampler.md)                             | Obtenga una variable de sampler.<br/>                     |
 | [**AsScalar**](id3dx11effectvariable-asscalar.md)                               | Obtiene una variable escalar.<br/>                      |
 | [**AsShader**](id3dx11effectvariable-asshader.md)                               | Obtiene una variable de sombreador.<br/>                      |
 | [**AsShaderResource**](id3dx11effectvariable-asshaderresource.md)               | Obtiene una variable de recurso de sombreador.<br/>             |
 | [**AsString**](id3dx11effectvariable-asstring.md)                               | Obtiene una variable de cadena.<br/>                      |
 | [**AsUnorderedAccessView**](id3dx11effectvariable-asunorderedaccessview.md)     | Obtiene una variable unordered-access-view.<br/>      |
 | [**AsVector**](id3dx11effectvariable-asvector.md)                               | Obtiene una variable de vector.<br/>                      |
-| [**GetAnnotationByIndex**](id3dx11effectvariable-getannotationbyindex.md)       | Obtiene una anotación por índice.<br/>                 |
+| [**GetAnnotationByIndex**](id3dx11effectvariable-getannotationbyindex.md)       | Obtener una anotación por índice.<br/>                 |
 | [**GetAnnotationByName**](id3dx11effectvariable-getannotationbyname.md)         | Obtiene una anotación por nombre.<br/>                  |
 | [**GetDesc**](id3dx11effectvariable-getdesc.md)                                 | Obtenga una descripción.<br/>                          |
 | [**GetElement**](id3dx11effectvariable-getelement.md)                           | Obtiene un elemento de matriz.<br/>                       |
@@ -72,7 +72,7 @@ La **interfaz ID3DX11EffectVariable** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)

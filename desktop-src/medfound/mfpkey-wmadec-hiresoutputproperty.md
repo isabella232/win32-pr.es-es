@@ -4,12 +4,12 @@ ms.assetid: a96bd78f-982c-43fa-b2d3-8caba4aa84b6
 title: MFPKEY_WMADEC_HIRESOUTPUT propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe5226babc8fd40875ec11cfa0b03345ba0b9c1a914b45b5ad79284f79d92130
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fd59bc6b8b0e74be1daaea4a61ca82c810a0ca79
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117872543"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468617"
 ---
 # <a name="mfpkey_wmadec_hiresoutput-property"></a>Propiedad MFPKEY \_ WMADEC \_ HIRESOUTPUT
 
@@ -27,7 +27,7 @@ g \_ wszWMACHiResOutput
 
 **VARIANT \_ FALSE**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Establezca esta propiedad en VARIANT TRUE para descodificar contenido de audio multicanal o de 24 bits, o audio con una velocidad de muestreo superior \_ a 48 000 Hz. Si el contenido está codificado en alta resolución, pero esta propiedad es VARIANT \_ FALSE, se aplican los comportamientos siguientes:
 
@@ -48,7 +48,7 @@ Muchos reproductores (incluidos Reproductor de Windows Media serie 9 y versiones
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

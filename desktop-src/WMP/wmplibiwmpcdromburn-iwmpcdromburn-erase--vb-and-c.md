@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 356b7bcdd332198c40760860e69741e76e0e993b6b47b3c5a5ff207d3d55bc42
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f4e168142a6ee77081871bb7dbefa79de8031d71
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118116338"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569029"
 ---
 # <a name="iwmpcdromburnerase-method"></a>IWMPCdromAsync::erase (Método)
 
@@ -53,7 +53,7 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método no funcionará si el disco de la unidad no se puede volver a escribir. Use [IWMPCdromAvailable.isAvailable](wmplibiwmpcdromburn-iwmpcdromburn-isavailable--vb-and-c.md) para determinar si se puede borrar un CD.
 
@@ -61,7 +61,7 @@ Este método no funcionará si el disco de la unidad no se puede volver a escrib
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

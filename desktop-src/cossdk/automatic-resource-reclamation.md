@@ -4,12 +4,12 @@ ms.assetid: c889dd3f-82d1-4bc3-ac2c-6f468d5b2c7f
 title: Recuperación automática de recursos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eec280c0b0ae222cf0c63e136b7643bbd05c1fffa5589ccc4b736dd247a43b1c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3f76721df1a3858c9ad97d2f696115fff2eb6d3d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119730675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465577"
 ---
 # <a name="automatic-resource-reclamation"></a>Recuperación automática de recursos
 

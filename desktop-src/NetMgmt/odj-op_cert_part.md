@@ -1,20 +1,20 @@
 ---
 title: OP_CERT_PART
-description: Definición de OP_CERT_PART IDL
+description: OP_CERT_PART definición de IDL
 ms.assetid: 30492801-f26e-447f-bcbf-d1108e7ae524
 ms.topic: reference
 ms.date: 10/12/2020
 ms.reviewer: jsimmons
 ms.openlocfilehash: feb4f05171204442085f7d69691aa010d13e6042
-ms.sourcegitcommit: 1e64562147b11f90de802c2431173582d066fae6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "105720191"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566925"
 ---
-# <a name="op_cert_part-structure"></a>Estructura de OP_CERT_PART
+# <a name="op_cert_part-structure"></a>OP_CERT_PART estructura
 
-Contiene los almacenes de certificados y PFX serializados.
+Contiene pfx serializado y almacenes de certificados.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -29,7 +29,7 @@ typedef struct _OP_CERT_PART
 } OP_CERT_PART, *POP_CERT_PART;
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 ### <a name="cpfxstores"></a>cPfxStores
 
@@ -37,7 +37,7 @@ Contiene el número de elementos de pPfxStores.
 
 ### <a name="ppfxstores"></a>pPfxStores
 
-Contiene una matriz de estructuras OP_CERT_PFX_STORE.
+Contiene una matriz de OP_CERT_PFX_STORE estructura.
 
 ### <a name="csststores"></a>cSstStores
 
@@ -45,19 +45,19 @@ Contiene el número de elementos de pSstStores.
 
 ### <a name="psststores"></a>pSstStores
 
-Contiene una matriz de estructuras OP_CERT_SST_STORE.
+Contiene una matriz de OP_CERT_SST_STORE estructura.
 
 ### <a name="extension"></a>Extensión
 
-Reservado para uso futuro y debe contener ceros.
+Reservado para uso futuro y debe contener todos los ceros.
 
 ## <a name="see-also"></a>Vea también
 
-[**Definiciones IDL de unión a dominio sin conexión**](odj-idl.md)
+[**Definiciones de IDL de unión a un dominio sin conexión**](odj-idl.md)
 
-[**\_ \_ almacén pfx del certificado de OP \_**](odj-op_cert_pfx_store.md)
+[**OP \_ CERT \_ PFX \_ STORE**](odj-op_cert_pfx_store.md)
 
-[**\_ \_ almacén SST del certificado de OP \_**](odj-op_cert_sst_store.md)
+[**OP \_ CERT \_ SST \_ STORE**](odj-op_cert_sst_store.md)
 
-[**BLOB de operaciones \_**](odj-op_blob.md)
+[**BLOB DE \_ OPERACIÓN**](odj-op_blob.md)
 

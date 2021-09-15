@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cbbdea76b79bf650009a7e667c4a5136697079569f6d43f9a93f11febba00369
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 97392c9dd89502dc713f4fa7dd2c79de90360930
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119472865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473156"
 ---
 # <a name="jet_tablecreatergcolumncreate-property"></a>JET_TABLECREATE.rgcolumncreate, propiedad
 
@@ -40,7 +40,7 @@ Obtiene o establece una matriz de información de creación de columnas, de tipo
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

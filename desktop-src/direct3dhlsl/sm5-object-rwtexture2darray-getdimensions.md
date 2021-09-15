@@ -1,9 +1,9 @@
 ---
-title: 'RWTexture2DArray:: Getdimensions ((función)'
-description: 'Devuelve las dimensiones del recurso. | RWTexture2DArray:: Getdimensions ((función)'
+title: RWTexture2DArray::GetDimensions (Función)
+description: Devuelve las dimensiones del recurso. | RWTexture2DArray::GetDimensions (Función)
 ms.assetid: 473b3f41-854d-4881-a80b-2d2dd7e5d479
 keywords:
-- Getdimensions (de función HLSL
+- Función GetDimensions HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,13 +14,13 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 6d95148cb6dc51c739ee4546bd64ce22666d5fd7
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104279924"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473225"
 ---
-# <a name="rwtexture2darraygetdimensions-function"></a>RWTexture2DArray:: Getdimensions ((función)
+# <a name="rwtexture2darraygetdimensions-function"></a>RWTexture2DArray::GetDimensions (Función)
 
 Devuelve las dimensiones del recurso.
 
@@ -38,28 +38,28 @@ void GetDimensions(
 
 <dl> <dt>
 
-*Ancho* \[ de enuncia\]
+*Ancho* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El ancho del recurso, en textura.
+Ancho del recurso, en texturas.
 
 </dd> <dt>
 
-*Alto* \[ de enuncia\]
+*Alto* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-El alto del recurso, en textura.
+Alto del recurso, en texturas.
 
 </dd> <dt>
 
-*Elementos* \[ de enuncia\]
+*Elementos* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Número de elementos de la matriz.
 
@@ -86,11 +86,11 @@ void GetDimensions(out float Width,
 
 
 
-Esta función se admite para los siguientes tipos de sombreadores:
+Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Dominio | Geometría | Píxel | Compute |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

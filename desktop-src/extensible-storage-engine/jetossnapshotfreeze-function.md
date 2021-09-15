@@ -21,11 +21,11 @@ api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: d133f0bc66da7c4f249676dc46ecbf92f2677aa6
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988478"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568737"
 ---
 # <a name="jetossnapshotfreeze-function"></a>Función JetOSSnapshotFreeze
 
@@ -94,7 +94,7 @@ El estado en el que las bases de datos y los archivos de registro estarán duran
 
 Dado que no hay ninguna operación de escritura durante el período de inmovilización, es posible que las llamadas API normales al motor se detendrán durante ese intervalo. La aplicación cliente debe ser capaz de controlar las llamadas API que pueden tardar más tiempo en normalizarse si se produce una inmovilización.
 
-Debido a los posibles efectos descritos anteriormente, hay un tiempo de espera interno después del cual la sesión de instantáneas detendrá la fase de inmovilización incluso si no se llamó a las API que realizaron la descongelización o anulación. El valor del tiempo de espera se puede cambiar mediante el [JET_paramOSSnapshotTimeout](./backup-and-restore-parameters.md) parámetro del sistema. Tenga en cuenta que el intervalo de inmovilización típico está en el intervalo de 10 segundos con el tiempo de espera predeterminado en torno a 60 segundos.
+Debido a los posibles efectos descritos anteriormente, hay un tiempo de espera interno después del cual la sesión de instantáneas detendrá la fase de inmovilización incluso si no se llamó a las API que realizaron la descongelización o anulación. El valor del tiempo de espera se puede cambiar mediante el [JET_paramOSSnapshotTimeout](./backup-and-restore-parameters.md) del sistema. Tenga en cuenta que el intervalo de inmovilización típico está en el intervalo de 10 segundos con el tiempo de espera predeterminado en torno a 60 segundos.
 
 #### <a name="requirements"></a>Requisitos
 
@@ -105,7 +105,7 @@ Debido a los posibles efectos descritos anteriormente, hay un tiempo de espera i
 | <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
 | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 | <p><strong>Unicode</strong></p> | <p>Se implementa como <strong>JetOSSnapshotFreezeW</strong> (Unicode) y <strong>JetOSSnapshotFreezeA</strong> (ANSI).</p> | 
 
 

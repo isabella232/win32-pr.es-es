@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b25db813542f8c384df7fafbd3b77d712d1d88e52a2b6b511a15d9c3ad210848
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6e477ec3a6d4afbc6fd5ea8e751da907937b3719
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117700899"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569233"
 ---
 # <a name="windows7parammaxcoalescereadsize-field"></a>Campo Windows7Param.MaxCoalesceReadSize
 
@@ -53,7 +53,7 @@ value = Windows7Param.MaxCoalesceReadSize
 public const JET_param MaxCoalesceReadSize
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -4,16 +4,16 @@ description: Ejemplo de anotación de mapa de valores
 ms.assetid: f95233ee-c825-482e-880b-63212014b505
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12165224d7ae85a8e7fca6c000a9debe3c9c68624de7bf0630eda8fc3d916118
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e9ad1008e2e3ce039ead09c43b37d9ef0500da3f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120098055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467917"
 ---
 # <a name="value-map-annotation-sample"></a>Ejemplo de anotación de mapa de valores
 
-Corte, pegue y modifique el siguiente ejemplo de código para su propio uso. Siga las instrucciones de los comentarios marcados con / \* TODO \* /.
+Cortar, pegar y modificar el ejemplo de código siguiente para su propio uso. Siga las instrucciones de los comentarios marcados con / \* TODO \* /.
 
 
 ```C++

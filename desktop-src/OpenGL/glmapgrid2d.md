@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d4a6b01e45878b3eb2db6fe11b5fba4bf64c185b6e430e5af17007cd5a91953
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6992a904528cf961f27335e7241c50fbd14f058b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118938458"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127272031"
 ---
 # <a name="glmapgrid2d-function"></a>Función glMapGrid2d
 
@@ -55,7 +55,7 @@ Número de particiones en el intervalo de intervalo de cuadrícula \[ u1, u2 \] 
 *u1* 
 </dt> <dd>
 
-Valor utilizado como asignación para el valor de dominio de cuadrícula de enteros i = 0.
+Valor que se usa como asignación para el valor de dominio de cuadrícula de enteros i = 0.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Número de particiones en el intervalo de intervalo de cuadrícula \[ v1, v2 \] 
 *v1* 
 </dt> <dd>
 
-Valor que se usa como asignación para el valor de dominio de cuadrícula de enteros j = 0.
+Valor utilizado como asignación para el valor de dominio de cuadrícula de enteros j = 0.
 
 </dd> <dt>
 
@@ -104,11 +104,11 @@ La función [**glGetError**](glgeterror.md) puede recuperar los siguientes códi
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las **funciones glMapGrid** y [glEvalMesh](glevalmesh-functions.md) se usan conjuntamente para generar y evaluar eficazmente una serie de valores de dominio de mapa espaciados uniformemente. La función glEvalMesh atraviesa el dominio entero de una cuadrícula unidimensional, cuyo intervalo es el dominio de los mapas de evaluación especificados por [**glMap1**](glmap1.md) y [**glMap2.**](glmap2.md)
 
-Las [**funciones glMapGrid1**](glmapgrid1d.md) y **glMapGrid2** especifican las asignaciones de cuadrícula lineal entre las coordenadas de cuadrícula de enteros i (o i y j), a las coordenadas del mapa de evaluación de punto flotante u (o usted y v). Consulte [**glMap1**](glmap1.md) y [**glMap2 para**](glmap2.md) obtener más información sobre cómo se evalúan las coordenadas v y usted.
+Las [**funciones glMapGrid1**](glmapgrid1d.md) y **glMapGrid2** especifican las asignaciones de cuadrícula lineal entre las coordenadas de cuadrícula entera i (o i y j), a las coordenadas del mapa de evaluación de punto flotante u (o usted y v). Consulte [**glMap1**](glmap1.md) y [**glMap2 para**](glmap2.md) obtener más información sobre cómo se evalúan las coordenadas v y usted.
 
 La [**función glMapGrid1**](glmapgrid1d.md) especifica una asignación lineal única, de modo que la  coordenada de cuadrícula de enteros 0 se asigna exactamente a u1 y la coordenada de cuadrícula de enteros se asigna exactamente a *u2.* Todas las demás coordenadas de cuadrícula de *enteros i* están asignadas de forma que:
 
@@ -146,7 +146,7 @@ Las siguientes funciones recuperan información relacionada con [**glMapGrid**](
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

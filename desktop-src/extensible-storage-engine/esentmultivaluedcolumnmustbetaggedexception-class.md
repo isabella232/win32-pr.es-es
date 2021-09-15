@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ac13c4539511b9b63f8e16beb7ed510f3cc438b985e9ecdd84dd15e4466e9e03
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 300b3b74aaf8277dd014256685b4ad375abe2ccc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119115401"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359291"
 ---
 # <a name="esentmultivaluedcolumnmustbetaggedexception-class"></a>Clase EsentMultiValuedColumnMustBeTaggedException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones MultiValuedColumnMustBeTagged.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -68,7 +68,7 @@ public sealed class EsentMultiValuedColumnMustBeTaggedException : EsentUsageExce
 
 Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo son seguros para subprocesos. No se garantiza que los miembros de instancia sean seguros para subprocesos.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

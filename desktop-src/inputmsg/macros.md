@@ -1,15 +1,15 @@
 ---
 title: Macros
-description: Los temas de esta sección proporcionan las especificaciones de referencia para las macros Mensajes de entrada de puntero y Notificaciones para recuperar información de parámetros de mensaje de entrada de puntero.
+description: Los temas de esta sección proporcionan las especificaciones de referencia para las macros Mensajes de entrada de puntero y Notificaciones para recuperar información de los parámetros de mensaje de entrada de puntero.
 ms.assetid: 2324DCD0-DAE1-4AC2-AB36-23D114803138
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: a2114224d3bb13ccd1dcd26d9b451eeffca8c3d482d7ab2fedc363044d19b086
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 07b099a9d0595278e7eb53960da42714763a7f90
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119036113"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569136"
 ---
 # <a name="macros"></a>Macros
 

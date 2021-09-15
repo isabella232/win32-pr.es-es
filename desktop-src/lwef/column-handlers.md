@@ -9,12 +9,12 @@ keywords:
 - GetItemData
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90876aecdb2626326513723f0cd2c5a6e8f66bfd938b3f56cf10bd3624dd8687
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 940796e75f29ba0fcfa025d9a56267e14bdff38f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119349474"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567581"
 ---
 # <a name="creating-column-handlers"></a>Crear controladores de columnas
 
@@ -45,7 +45,7 @@ Con Windows 2000, la carpeta también puede admitir varias columnas que, de form
 
 Al crear un controlador de columnas, puede crear columnas personalizadas y agregarlas a esa lista. Por ejemplo, una colección de archivos que contienen música podría usar un controlador de columnas para mostrar columnas que muestran el intérprete y la pieza que contiene cada archivo.
 
-Un controlador de columnas es un objeto global al que se llama cada vez Windows explorador muestra la vista Detalles. Sin embargo, los controladores de columnas se usan normalmente para mostrar columnas personalizadas solo para los miembros de un tipo de [archivo determinado.](/windows/desktop/shell/fa-file-types) Antes de mostrar la vista Detalles, Windows explorador consulta a todos los controladores de columnas registrados sus características de columna. Si el usuario ha seleccionado una de las columnas del controlador, Windows Explorer consulta al controlador los datos asociados. Cuando un controlador de columnas recibe una solicitud de datos, la proporciona si el archivo es miembro de su tipo admitido. De lo contrario, omite la solicitud devolviendo S \_ FALSE.
+Un controlador de columnas es un objeto global al que se llama cada vez Windows explorador muestra la vista Detalles. Sin embargo, los controladores de columnas se usan normalmente para mostrar columnas personalizadas solo para los miembros de un tipo de [archivo determinado.](/windows/desktop/shell/fa-file-types) Antes de mostrar la vista Detalles, Windows explorador consulta a todos los controladores de columnas registrados sus características de columna. Si el usuario ha seleccionado una de las columnas del controlador, el Windows consulta al controlador los datos asociados. Cuando un controlador de columnas recibe una solicitud de datos, la proporciona si el archivo es miembro de su tipo admitido. De lo contrario, omite la solicitud devolviendo S \_ FALSE.
 
 ## <a name="registering-column-handlers"></a>Registrar controladores de columnas
 
@@ -70,7 +70,7 @@ HKEY_CLASSES_ROOT
 
 ## <a name="implementing-column-handlers"></a>Implementar controladores de columnas
 
-Al igual que todos los controladores de extensiones de Shell, los controladores de columnas son objetos del Modelo de objetos componentes (COM) en proceso implementados como archivos DLL. Exportan la [**interfaz IColumnProvider**](/windows/desktop/api/shlobj/nn-shlobj-icolumnprovider) además de [IUnknown.](/windows/win32/api/unknwn/nn-unknwn-iunknown)
+Al igual que todos los controladores de extensión de Shell, los controladores de columnas son objetos del Modelo de objetos componentes (COM) en proceso implementados como archivos DLL. Exportan la [**interfaz IColumnProvider**](/windows/desktop/api/shlobj/nn-shlobj-icolumnprovider) además de [IUnknown.](/windows/win32/api/unknwn/nn-unknwn-iunknown)
 
 Windows Explorer llama a los tres métodos exportados por [**IColumnProvider**](/windows/desktop/api/shlobj/nn-shlobj-icolumnprovider) para solicitar la información que necesita para mostrar la columna. El procedimiento utilizado por Windows Explorer es:
 
@@ -84,7 +84,7 @@ Windows El explorador llama [**a IColumnProvider::Initialize**](/windows/desktop
 
 ### <a name="the-getcolumninfo-method"></a>Método GetColumnInfo
 
-Windows A continuación, el [**Explorador llama a IColumnProvider::GetColumnInfo**](/windows/desktop/api/shlobj/nf-shlobj-icolumnprovider-getcolumninfo) para solicitar el identificador y las características de la columna. Pasa un índice para la columna en el *parámetro dwIndex.* Este índice es un valor arbitrario que se usa para enumerar columnas. Windows El Explorador también pasa un puntero a una [**estructura SHCOLUMNINFO.**](/windows/desktop/api/shlobj/ns-shlobj-shcolumninfo) Esta estructura se usa para devolver el identificador y las características de la columna. **IColumnProvider::GetColumnInfo debe** asignar los valores adecuados a los miembros de la estructura y devolver.
+Windows A continuación, el Explorador llama a [**IColumnProvider::GetColumnInfo**](/windows/desktop/api/shlobj/nf-shlobj-icolumnprovider-getcolumninfo) para solicitar el identificador y las características de la columna. Pasa un índice para la columna en el *parámetro dwIndex.* Este índice es un valor arbitrario que se usa para enumerar columnas. Windows El Explorador también pasa un puntero a una [**estructura SHCOLUMNINFO.**](/windows/desktop/api/shlobj/ns-shlobj-shcolumninfo) Esta estructura se usa para devolver el identificador y las características de la columna. **IColumnProvider::GetColumnInfo debe** asignar los valores adecuados a los miembros de la estructura y devolver.
 
 Las columnas se identifican por su identificador de conjunto de propiedades OLE (FMTID) y un identificador de propiedad asociado (PID). El primer miembro de la estructura [**SHCOLUMNINFO,**](/windows/desktop/api/shlobj/ns-shlobj-shcolumninfo) **scid**, es un puntero a una estructura [**SHCOLUMNID**](/windows/desktop/shell/objects) que se usa para identificar la columna. Su **miembro fmtid** contiene el FMTID de la columna y su **miembro pid** contiene el PID de la columna. Por ejemplo, un par FMTID/PID estándar que se usa normalmente para identificar columnas es el PID de autor del conjunto de propiedades Información de resumen.
 

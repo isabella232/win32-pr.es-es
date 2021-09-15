@@ -4,12 +4,12 @@ ms.assetid: 58d78143-c733-45dc-ae5f-fe13136010db
 title: Evento InkStrokes.StrokesRemoved (Msmutut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 69a5c4f7d53f88c50efd77e537cfa311f08ab168abdb4a05392286fb6c0b6b4d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 86448f9676e07a11effe683ecd883874791ff3b9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119934865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467990"
 ---
 # <a name="inkstrokesstrokesremoved-event"></a>Evento InkStrokes.StrokesRemoved
 
@@ -35,7 +35,7 @@ void StrokesRemoved(
 
 Matriz de enteros de identificadores para cada [**objeto IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) eliminado cuando se produce este evento.
 
-Para obtener más información sobre la estructura VARIANT, vea [Usar la biblioteca COM](using-the-com-library.md).
+Para obtener más información sobre la estructura VARIANT, vea [Using the COM Library](using-the-com-library.md).
 
 </dd> </dl>
 
@@ -43,7 +43,7 @@ Para obtener más información sobre la estructura VARIANT, vea [Usar la bibliot
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método de evento se define en la \_ interfaz IInkEvents. La \_ interfaz IInkEvents implementa la [**interfaz IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de DISPID \_ SEStrokesRemoved.
 
@@ -55,7 +55,7 @@ Este método de evento se define en la \_ interfaz IInkEvents. La \_ interfaz II
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 

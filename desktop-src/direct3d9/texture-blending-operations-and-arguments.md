@@ -4,12 +4,12 @@ ms.assetid: 3b7faefd-30be-4f74-b0f7-621d65130286
 title: Operaciones y argumentos de mezcla de textura (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d242092de5919267d30a9b8ff4e7bd2324f0bc3120649d3bb1a423b3462be77
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ae65386e01bfff7d4bfc2ebc0cafd242e25c4265
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118797777"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568405"
 ---
 # <a name="texture-blending-operations-and-arguments-direct3d-9"></a>Operaciones y argumentos de mezcla de textura (Direct3D 9)
 

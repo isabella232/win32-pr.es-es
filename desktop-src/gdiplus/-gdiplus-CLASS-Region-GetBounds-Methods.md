@@ -4,12 +4,12 @@ ms.assetid: 20e6f834-1f36-4de0-b574-b89ebce917de
 title: Métodos Region.GetBounds
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 89dd3f82c6f336409d0bcbd9346decc52f463dd539d3dab2a43c129871df5cae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f5dfd8473162df3f56cb55ea20d1ee3acd5de6e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118249987"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465861"
 ---
 # <a name="regiongetbounds-methods"></a>Métodos Region.GetBounds
 

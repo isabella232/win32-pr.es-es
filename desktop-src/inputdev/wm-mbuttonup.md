@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0be2e8f65a21161b82a6b3743b500ef90e4d857970ab72c5cf821583adcceffd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ce7eb6b84c227934b5351a27ff8884fa78946ad0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119451545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468804"
 ---
 # <a name="wm_mbuttonup-message"></a>Mensaje \_ MBUTTONUP de WM
 
@@ -64,11 +64,11 @@ Indica si varias claves virtuales están sin servicio. Este parámetro puede ser
 *lParam* 
 </dt> <dd>
 
-La palabra de orden bajo especifica la coordenada x del cursor. La coordenada es relativa a la esquina superior izquierda del área de cliente.
+La palabra de orden bajo especifica la coordenada x del cursor. La coordenada es relativa a la esquina superior izquierda del área cliente.
 
-La palabra de orden superior especifica la coordenada y del cursor. La coordenada es relativa a la esquina superior izquierda del área de cliente.
+La palabra de orden superior especifica la coordenada y del cursor. La coordenada es relativa a la esquina superior izquierda del área cliente.
 
-Tenga en cuenta que cuando hay un menú contextual (mostrado), las coordenadas son relativas a la pantalla, no al área de cliente. Dado [**que TrackPopupMenu**](/windows/desktop/api/winuser/nf-winuser-trackpopupmenu) es una llamada asincrónica y la notificación **\_ MBUTTONUP** de WM no tiene una marca especial que indique la derivación de coordenadas, una aplicación no puede saber si las coordenadas x,y contenidas en *lParam* son relativas a la pantalla o al área cliente.
+Tenga en cuenta que cuando hay un menú contextual (se muestra), las coordenadas son relativas a la pantalla, no al área de cliente. Dado [**que TrackPopupMenu**](/windows/desktop/api/winuser/nf-winuser-trackpopupmenu) es una llamada asincrónica y la notificación **\_ MBUTTONUP** de WM no tiene una marca especial que indique la derivación de coordenadas, una aplicación no puede saber si las coordenadas x,y contenidas en *lParam* son relativas a la pantalla o al área cliente.
 
 </dd> </dl>
 
@@ -91,7 +91,7 @@ yPos = GET_Y_LPARAM(lParam);
 Como se indicó anteriormente, la coordenada x está en el orden bajo **corto** del valor devuelto; la coordenada y está en el  orden corto de orden superior **(ambos** representan valores con signo porque pueden tomar valores negativos en sistemas con varios monitores). Si el valor devuelto se asigna a una variable, puede usar la macro [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints) para obtener una estructura [**POINTS**](/previous-versions//dd162808(v=vs.85)) del valor devuelto. También puede usar la macro [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) o [**GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para extraer la coordenada x o y.
 
 > [!IMPORTANT]
-> No use las macros [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) para extraer las coordenadas x e y de la posición del cursor porque estas macros devuelven resultados incorrectos en sistemas con varios monitores. Los sistemas con varios monitores pueden tener coordenadas x e y negativas, y **LOWORD** y **HIWORD** tratan las coordenadas como cantidades sin signo.
+> No use las macros [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) para extraer las coordenadas x e y- de la posición del cursor porque estas macros devuelven resultados incorrectos en sistemas con varios monitores. Los sistemas con varios monitores pueden tener coordenadas x e y negativas, y **LOWORD** y **HIWORD** tratan las coordenadas como cantidades sin signo.
 
  
 
@@ -144,7 +144,7 @@ Como se indicó anteriormente, la coordenada x está en el orden bajo **corto** 
 [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**Puntos**](/previous-versions//dd162808(v=vs.85))
+[**PUNTOS**](/previous-versions//dd162808(v=vs.85))
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Expone métodos que permiten que una carpeta de Shell admita vistas diferentes en su contenido (diferentes diseños jerárquicos de sus datos).
+description: Expone métodos que permiten que una carpeta de Shell admita vistas diferentes en su contenido (diseños jerárquicos diferentes de sus datos).
 title: IShellFolderViewType (interfaz)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,18 +13,18 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 9b597f6b-ef27-4fa1-ad00-e131dbd979e7
-ms.openlocfilehash: 30722e32a555b386e166e5525e0d4361dbe9d9bc6a58051e4727c661ebe49073
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f3ccb4073d59e0ebe9b840bd6f8f592f463e1e46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119714125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468134"
 ---
 # <a name="ishellfolderviewtype-interface"></a>IShellFolderViewType (interfaz)
 
-Expone métodos que permiten que una carpeta de Shell admita vistas diferentes en su contenido (diferentes diseños jerárquicos de sus datos).
+Expone métodos que permiten que una carpeta de Shell admita vistas diferentes en su contenido (diseños jerárquicos diferentes de sus datos).
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IShellFolderViewType** hereda de la [**interfaz IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IShellFolderViewType** también tiene estos tipos de miembros:
 
@@ -47,7 +47,7 @@ La **interfaz IShellFolderViewType** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este enumerador devuelve PIDL que son carpetas ocultas especiales en el nivel superior de la carpeta Shell, que de lo contrario no se enumeran. La vista predeterminada es la que la carpeta shell muestra con normalidad.
 
@@ -95,7 +95,7 @@ DECLARE_INTERFACE_IID_(IShellFolderViewType, IUnknown, "49422C1E-1C03-11d2-8DAB-
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |

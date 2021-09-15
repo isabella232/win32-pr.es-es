@@ -10,16 +10,16 @@ keywords:
 - API extendidas de cliente, constantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f18ea308afd33be67fa19d30ee60b629bf12192b6cc53fc26cc6569d52f8dd6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 79e246665761d8d85afef03641d1f9f0c20b1f69
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118964154"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466495"
 ---
 # <a name="windows-media-format-sdk-constants"></a>Windows Constantes del SDK de formato multimedia
 
-En esta sección se describen las constantes utilizadas por los objetos de las API extendidas de Windows DRM multimedia. Incluye los temas enumerados en la tabla siguiente.
+En esta sección se describen las constantes utilizadas por los objetos de Windows API extendidas de cliente DRM multimedia. Incluye los temas enumerados en la tabla siguiente.
 
 
 

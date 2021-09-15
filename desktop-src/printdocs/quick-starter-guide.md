@@ -4,18 +4,18 @@ ms.assetid: 2c1d912e-464e-48d2-ba4f-c0b9a811b25e
 title: Guía de inicio rápido
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2730048a001f33563ad6beb95ea2e3c17974e8f29f11425a077f86bbf97c51f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6060de551d3fb663e148cf80f661c4d517a51b93
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119824065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359698"
 ---
 # <a name="quick-starter-guide"></a>Guía de inicio rápido
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Esta página está diseñada para ofrecer un inicio rápido para implementar PrintTicket e PrintCapabilities para el controlador de aplicación o dispositivo. Aunque le recomendamos que lea la especificación del esquema de impresión en su totalidad, esta página le ayudará a empezar a trabajar con las áreas clave a las que debe prestar atención.
+Esta página está diseñada para ofrecer un inicio rápido para implementar PrintTicket e PrintCapabilities para el controlador de aplicación o dispositivo. Aunque le recomendamos que lea la especificación del esquema de impresión en su totalidad, esta página le ayudará a empezar a trabajar en áreas clave a las que debe prestar atención.
 
 1) Lea las [tecnologías de Schema-Related impresión](print-schema-related-technologies.md) para obtener información general sobre las tecnologías PrintTicket y Capacidades de impresión.
 
@@ -37,7 +37,7 @@ Esta página está diseñada para ofrecer un inicio rápido para implementar Pri
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

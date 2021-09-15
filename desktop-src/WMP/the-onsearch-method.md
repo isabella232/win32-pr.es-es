@@ -3,25 +3,25 @@ title: El método OnSearch
 description: El método OnSearch
 ms.assetid: 709bb428-1a5e-4b8d-8622-5fcc816f0a1a
 keywords:
-- Reproductor de Windows Media complementos,método OnSearch
+- Reproductor de Windows Media complementos, método OnSearch
 - complementos, método OnSearch
-- complementos de interfaz de usuario,método OnSearch
+- complementos de interfaz de usuario, método OnSearch
 - Complementos de interfaz de usuario, método OnSearch
 - Método OnSearch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49ab5cb4b26d291a940ed329e2422240e6fc36e5ba980431af169d58f1398fdd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: de5c33af434028e6ee72c757c8d71def0d4109fd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118118005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568209"
 ---
 # <a name="the-onsearch-method"></a>El método OnSearch
 
 Cuando se hace clic en el botón  Buscar, Reproductor de Windows Media llama al método OnSearch. Este método recupera el objeto **Media** actual y lo pasa al método LaunchPage.
 
-Para implementar este método se usa el código siguiente:
+El código siguiente se usa para implementar este método:
 
 
 ```C++

@@ -4,12 +4,12 @@ ms.assetid: b2f70989-f0a8-4a11-baeb-18f026afaeab
 title: Conexión y desconexión de nodos de topología
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6113f4648d0aafbe41dc13090dc83807f746f0acc945f76eca0acf1b4898913f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 08057eba74314ae6b87da418b743a089506a3b26
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118064631"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359744"
 ---
 # <a name="connecting-and-disconnecting-topology-nodes"></a>Conexión y desconexión de nodos de topología
 

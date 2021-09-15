@@ -6,11 +6,11 @@ ms.localizationpriority: low
 ms.topic: article
 ms.date: 09/19/2019
 ms.openlocfilehash: b7991584cb72c147c65166622099b9d113d5f22f
-ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121812922"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466356"
 ---
 # <a name="core-enumerations"></a>Enumeraciones básicas
 
@@ -22,7 +22,7 @@ Las enumeraciones siguientes se declaran en d3d12.h.
 |-|
 | [**D3D_ROOT_SIGNATURE_VERSION**](/windows/win32/api/d3d12/ne-d3d12-d3d_root_signature_version). Especifica la versión del diseño de firma raíz. |
 | [**D3D_SHADER_MODEL**](/windows/win32/api/d3d12/ne-d3d12-d3d_shader_model). Especifica un modelo de sombreador. |
-| [**D3D12_AUTO_BREADCRUMB_OP**](/windows/win32/api/d3d12/ne-d3d12-d3d12_auto_breadcrumb_op). Define constantes que especifican operaciones de GPU de representación o proceso. |
+| [**D3D12_AUTO_BREADCRUMB_OP**](/windows/win32/api/d3d12/ne-d3d12-d3d12_auto_breadcrumb_op). Define constantes que especifican operaciones de gpu de representación o proceso. |
 | [**D3D12_BACKGROUND_PROCESSING_MODE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_background_processing_mode). Define constantes que especifican un nivel de optimización dinámica que se va a aplicar al trabajo de GPU que se envía posteriormente. |
 | [**D3D12_BLEND**](/windows/win32/api/d3d12/ne-d3d12-d3d12_blend). Especifica los factores de mezcla, que modularán los valores para el sombreador de píxeles y el destino de representación. |
 | [**D3D12_BLEND_OP**](/windows/win32/api/d3d12/ne-d3d12-d3d12_blend_op). Especifica operaciones de combinación RGB o alfa. |
@@ -34,22 +34,22 @@ Las enumeraciones siguientes se declaran en d3d12.h.
 | [**D3D12_COMMAND_LIST_TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_command_list_type). Especifica el tipo de una lista de comandos. |
 | [**D3D12_COMMAND_QUEUE_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_command_queue_flags). Especifica las marcas que se usarán al crear una cola de comandos. |
 | [**D3D12_COMMAND_QUEUE_PRIORITY**](/windows/win32/api/d3d12/ne-d3d12-d3d12_command_queue_priority). Define los niveles de prioridad para una cola de comandos. |
-| [**D3D12_COMPARISON_FUNC**](/windows/win32/api/d3d12/ne-d3d12-d3d12_comparison_func). Especifica las opciones de comparación. |
+| [**D3D12_COMPARISON_FUNC**](/windows/win32/api/d3d12/ne-d3d12-d3d12_comparison_func). Especifica opciones de comparación. |
 | [**D3D12_CONSERVATIVE_RASTERIZATION_MODE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_conservative_rasterization_mode). Identifica si la rasterización conservadora está desactivada o no. |
 | [**D3D12_CONSERVATIVE_RASTERIZATION_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_conservative_rasterization_tier). Identifica el nivel de rasterización conservadora. |
 | [**D3D12_CPU_PAGE_PROPERTY**](/windows/win32/api/d3d12/ne-d3d12-d3d12_cpu_page_property). Especifica las propiedades de la página de CPU para el montón. |
 | [**D3D12_CROSS_NODE_SHARING_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_cross_node_sharing_tier). Especifica el nivel de uso compartido entre nodos de un adaptador, como Nivel 1 emulado, Nivel 1 o Nivel 2.  |
 | [**D3D12_CULL_MODE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_cull_mode). Especifica que los triángulos orientados a una dirección determinada no se dibujan. |
-| [**D3D12_DEBUG_DEVICE_PARAMETER_TYPE**](/windows/win32/api/d3d12sdklayers/ne-d3d12sdklayers-d3d12_debug_device_parameter_type). Especifica el tipo de datos de la memoria a la que apunta el parámetro *pData* [**de ID3D12DebugDevice1::SetDebugParameter**](/windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12debugdevice1-setdebugparameter) e [**ID3D12DebugDevice1::GetDebugParameter**](/windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12debugdevice1-setdebugparameter). |
+| [**D3D12_DEBUG_DEVICE_PARAMETER_TYPE**](/windows/win32/api/d3d12sdklayers/ne-d3d12sdklayers-d3d12_debug_device_parameter_type). Especifica el tipo de datos de la memoria a la que apunta el parámetro *pData* de [**ID3D12DebugDevice1::SetDebugParameter**](/windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12debugdevice1-setdebugparameter) e [**ID3D12DebugDevice1::GetDebugParameter**](/windows/win32/api/d3d12sdklayers/nf-d3d12sdklayers-id3d12debugdevice1-setdebugparameter). |
 | [**D3D12_DEPTH_WRITE_MASK**](/windows/win32/api/d3d12/ne-d3d12-d3d12_depth_write_mask). Identifica la parte de un búfer de galería de símbolos de profundidad para escribir datos de profundidad. |
 | [**D3D12_DESCRIPTOR_HEAP_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_descriptor_heap_flags). Especifica las opciones de un montón. |
 | [**D3D12_DESCRIPTOR_HEAP_TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_descriptor_heap_type). Especifica un tipo de montón de descriptores.  |
 | [**D3D12_DESCRIPTOR_RANGE_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_descriptor_range_flags). Especifica la inestabilidad de ambos descriptores y los datos a los que hacen referencia en una descripción de firma raíz 1.1, que puede habilitar algunas optimizaciones de controladores. |
 | [**D3D12_DESCRIPTOR_RANGE_TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_descriptor_range_type). Especifica un intervalo para que, por ejemplo, si parte de una tabla de descriptores tiene 100 vistas de recursos de sombreador (SRV), ese intervalo se puede declarar en una entrada en lugar de 100.  |
-| [**D3D12_DRED_ALLOCATION_TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_dred_allocation_type). Define constantes que especifican operaciones de GPU de representación o proceso. |
+| [**D3D12_DRED_ALLOCATION_TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_dred_allocation_type). Define constantes que especifican operaciones de gpu de representación o proceso. |
 | [**D3D12_DRED_ENABLEMENT**](/windows/win32/api/d3d12/ne-d3d12-d3d12_dred_enablement). Define constantes (usadas por la interfaz [ID3D12DeviceRemovedExtendedDataSettings)](/windows/win32/api/d3d12/nn-d3d12-id3d12deviceremovedextendeddatasettings)que especifican cómo se habilitan las características individuales de datos extendidos (DRED) quitados del dispositivo. |
 | [**D3D12_DRED_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_dred_flags). Define las constantes usadas en la [estructura D3D12_DEVICE_REMOVED_EXTENDED_DATA para](/windows/win32/api/d3d12/ns-d3d12-d3d12_device_removed_extended_data) especificar marcas de control para el tiempo de ejecución de Direct3D. |
-| [**D3D12_DRED_VERSION**](/windows/win32/api/d3d12/ne-d3d12-d3d12_dred_version). Define constantes que especifican una versión de Datos extendidos quitados del dispositivo (DRED), tal como [se usa en la D3D12_VERSIONED_DEVICE_REMOVED_EXTENDED_DATA estructura](/windows/win32/api/d3d12/ns-d3d12-d3d12_versioned_device_removed_extended_data). |
+| [**D3D12_DRED_VERSION**](/windows/win32/api/d3d12/ne-d3d12-d3d12_dred_version). Define constantes que especifican una versión de Datos extendidos quitados del dispositivo (DRED), tal como se [usa en la D3D12_VERSIONED_DEVICE_REMOVED_EXTENDED_DATA estructura](/windows/win32/api/d3d12/ns-d3d12-d3d12_versioned_device_removed_extended_data). |
 | [**D3D12_DSV_DIMENSION**](/windows/win32/api/d3d12/ne-d3d12-d3d12_dsv_dimension). Especifica cómo acceder a un recurso usado en una vista de galería de símbolos de profundidad. |
 | [**D3D12_DSV_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_dsv_flags). Especifica las opciones de vista de galería de símbolos de profundidad. |
 | [**D3D12_FEATURE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_feature). Opciones de características de Direct3D 12 compatibles con el controlador de gráficos actual.  |
@@ -88,13 +88,13 @@ Las enumeraciones siguientes se declaran en d3d12.h.
 | [**D3D12_QUERY_HEAP_TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_query_heap_type). Especifica el tipo de montón de consultas que se va a crear. |
 | [**D3D12_QUERY_TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_query_type). Especifica el tipo de consulta. |
 | [**D3D12_RAY_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_ray_flags). Marcas que se pasan a [**la función TraceRay**](./traceray-function.md) para invalidar el comportamiento de transparencia, selección y salida anticipada. |
-| [**D3D12_RAYTRACING_ACCELERATION_STRUCTURE_BUILD_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_raytracing_acceleration_structure_build_flags). Especifica marcas para la compilación de una estructura de aceleración de rayos. Use un valor de esta enumeración con la [**estructura D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_INPUTS**](/windows/win32/api/d3d12/ns-d3d12-d3d12_build_raytracing_acceleration_structure_inputs) que proporciona la entrada para la operación de compilación de la estructura de aceleración. |
+| [**D3D12_RAYTRACING_ACCELERATION_STRUCTURE_BUILD_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_raytracing_acceleration_structure_build_flags). Especifica marcas para la compilación de una estructura de aceleración de rayos. Use un valor de esta enumeración con la [**D3D12_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_INPUTS**](/windows/win32/api/d3d12/ns-d3d12-d3d12_build_raytracing_acceleration_structure_inputs) estructura que proporciona la entrada a la operación de compilación de la estructura de aceleración. |
 | [**D3D12_RAYTRACING_ACCELERATION_STRUCTURE_COPY_MODE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_raytracing_acceleration_structure_copy_mode). Especifica el tipo de operación de copia realizada al llamar [**a CopyRaytracingAccelerationStructure.**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist4-copyraytracingaccelerationstructure) |
 | [**D3D12_RAYTRACING_ACCELERATION_STRUCTURE_POSTBUILD_INFO_TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_raytracing_acceleration_structure_postbuild_info_type). Especifica el tipo de información de la estructura de aceleración posterior a la compilación que se puede recuperar con llamadas a [**EmitRaytracingAccelerationStructurePostbuildInfo**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist4-emitraytracingaccelerationstructurepostbuildinfo) y [**BuildRaytracingAccelerationStructure**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist4-buildraytracingaccelerationstructure). |
 | [**D3D12_RAYTRACING_ACCELERATION_STRUCTURE_TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_raytracing_acceleration_structure_type). Especifica el tipo de una estructura de aceleración de rayos. |
 | [**D3D12_RAYTRACING_GEOMETRY_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_raytracing_geometry_flags). Especifica marcas para la geometría de trazado en una [**D3D12_RAYTRACING_GEOMETRY_DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_raytracing_geometry_desc) estructura. |
 | [**D3D12_RAYTRACING_GEOMETRY_TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_raytracing_geometry_type). Especifica el tipo de geometría que se usa para el trazado. Use un valor de esta enumeración para especificar el tipo geometry en un [**D3D12_RAYTRACING_GEOMETRY_DESC**](/windows/win32/api/d3d12/ns-d3d12-d3d12_raytracing_geometry_desc). |
-| [**D3D12_RAYTRACING_INSTANCE_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_raytracing_instance_flags). Marcas para una instancia de estructura de aceleración de rayos. Estas marcas se pueden usar para invalidar los [**D3D12_RAYTRACING_GEOMETRY_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_raytracing_geometry_flags) para instancias individuales. |
+| [**D3D12_RAYTRACING_INSTANCE_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_raytracing_instance_flags). Marcas para una instancia de estructura de aceleración de rayos. Estas marcas se pueden usar para invalidar [**D3D12_RAYTRACING_GEOMETRY_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_raytracing_geometry_flags) para instancias individuales. |
 | [**D3D12_RAYTRACING_PIPELINE_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_raytracing_pipeline_flags). Define constantes que especifican marcas de configuración para una canalización de seguimiento. |
 | [**D3D12_RAYTRACING_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_raytracing_tier). Especifica el nivel de compatibilidad con el seguimiento de rayos en el dispositivo gráfico. |
 | [**D3D12_RENDER_PASS_BEGINNING_ACCESS_TYPE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_render_pass_beginning_access_type). Especifica el tipo de acceso que se da a una aplicación a los recursos especificados en la transición a un paso de representación. |
@@ -133,11 +133,11 @@ Las enumeraciones siguientes se declaran en d3d12.h.
 | [**D3D12_TILE_COPY_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tile_copy_flags). Especifica cómo copiar un icono.  |
 | [**D3D12_TILE_MAPPING_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tile_mapping_flags). Especifica cómo realizar una operación de asignación de mosaicos.  |
 | [**D3D12_TILE_RANGE_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tile_range_flags). Especifica un intervalo de asignaciones de mosaicos.  |
-| [**D3D12_TILED_RESOURCES_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tiled_resources_tier). Identifica el nivel en el que se admiten los recursos en mosaico.  |
+| [**D3D12_TILED_RESOURCES_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_tiled_resources_tier). Identifica el nivel de nivel en el que se admiten los recursos en mosaico.  |
 | [**D3D12_UAV_DIMENSION**](/windows/win32/api/d3d12/ne-d3d12-d3d12_uav_dimension). Identifica las opciones de vista de acceso no ordenado. |
 | [**D3D12_VIEW_INSTANCING_FLAGS**](/windows/win32/api/d3d12/ne-d3d12-d3d12_view_instancing_flags). Especifica las opciones para la creación de instancias de vistas. |
-| [**D3D12_VIEW_INSTANCING_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_view_instancing_tier). Indica el nivel en el que se admite la creación de instancias de vista. |
-| [**D3D12_WAVE_MMA_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_wave_mma_tier). Define constantes que especifican un nivel de compatibilidad para las operaciones WaveMMA (wave_matrix). |
+| [**D3D12_VIEW_INSTANCING_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_view_instancing_tier). Indica el nivel de nivel en el que se admite la creación de instancias de vista. |
+| [**D3D12_WAVE_MMA_TIER**](/windows/win32/api/d3d12/ne-d3d12-d3d12_wave_mma_tier). Define constantes que especifican un nivel de compatibilidad para las operaciones de WaveMMA (wave_matrix). |
 | [**D3D12_WRITEBUFFERIMMEDIATE_MODE**](/windows/win32/api/d3d12/ne-d3d12-d3d12_writebufferimmediate_mode). Especifica el modo utilizado por una **operación WriteBufferImmediate.** |
 
 ## <a name="related-topics"></a>Temas relacionados

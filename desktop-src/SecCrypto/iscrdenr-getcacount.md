@@ -1,7 +1,7 @@
 ---
-description: Devuelve el número de entidades de certificación (CA) que están dispuestos a emitir un certificado basado en la plantilla de certificado especificada.
+description: Devuelve el número de entidades de certificación (CA) que están dispuestos a emitir un certificado en función de la plantilla de certificado especificada.
 ms.assetid: 377121a8-3895-4308-a803-4a62580c6de0
-title: 'ISCrdEnr:: getCACount (método)'
+title: Método ISCrdEnr::getCACount
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,15 +15,15 @@ api_type:
 api_location:
 - Scrdenrl.dll
 ms.openlocfilehash: eb33f6c7345862dedf6c909054d811ff4da470ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669659"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270975"
 ---
-# <a name="iscrdenrgetcacount-method"></a>ISCrdEnr:: getCACount (método)
+# <a name="iscrdenrgetcacount-method"></a>Método ISCrdEnr::getCACount
 
-El método **getCACount** devuelve el número de [*entidades de certificación*](../secgloss/c-gly.md) (CA) que están dispuestos a emitir un certificado basado en la plantilla de certificado especificada.
+El **método getCACount** devuelve el número de entidades de certificación [*(CA)*](../secgloss/c-gly.md) que están dispuestos a emitir un certificado en función de la plantilla de certificado especificada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -52,17 +52,17 @@ SCrdEnr.getCACount( _
 
 <dl> <dt>
 
-*bstrCertTemplateName* \[ de\]
+*bstrCertTemplateName* \[ En\]
 </dt> <dd>
 
 Cadena que representa el nombre de la plantilla de certificado.
 
 </dd> <dt>
 
-*pdwCACount* \[ enuncia\]
+*pdwCACount* \[ out\]
 </dt> <dd>
 
-Un puntero a un **valor Long** que devuelve el número de entidades de certificación disponibles que emitirá un certificado para la plantilla de certificado especificada en *bstrCertTemplateName*.
+Puntero a un **valor LONG** que devuelve el número de CA disponibles que emitirán un certificado para la plantilla de certificado especificada en *bstrCertTemplateName*.
 
 </dd> </dl>
 
@@ -70,13 +70,13 @@ Un puntero a un **valor Long** que devuelve el número de entidades de certifica
 
 ### <a name="c"></a>C++
 
-Si el método se ejecuta correctamente, el método devuelve S \_ correcto.
+Si el método se realiza correctamente, el método devuelve S \_ OK.
 
-Si se produce un error en el método, devuelve un valor **HRESULT** que indica el error. Para obtener una lista de los códigos de error comunes, vea [Valores HRESULT comunes](common-hresult-values.md).
+Si se produce un error en el método , devuelve un **valor HRESULT** que indica el error. Para obtener una lista de códigos de error comunes, vea [Common HRESULT Values](common-hresult-values.md).
 
 ### <a name="vb"></a>VB
 
-Un valor **Long** que representa el número de entidades de certificación disponibles que emitirá un certificado para la plantilla de certificado especificada en *bstrCertTemplateName*.
+Valor **Long** que representa el número de CA disponibles que emitirán un certificado para la plantilla de certificado especificada en *bstrCertTemplateName*.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,13 +85,13 @@ Un valor **Long** que representa el número de entidades de certificación dispo
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | No se admite ninguno<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2003 \[\]<br/>                                    |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Archivo DLL<br/>                      | <dl> <dt>Scrdenrl.dll</dt> </dl> |
-| IID<br/>                      | IID \_ ISCrdEnr se define como 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
+| IID<br/>                      | IID ISCrdEnr se define como \_ 753988a1-1357-436d-9cf5-f089bdd67d64<br/>             |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

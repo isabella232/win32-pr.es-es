@@ -6,14 +6,14 @@ keywords:
 - RPC_NS_HANDLE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e7612671b03f507bc2e722520fa775e0e999d0f1456ebfcefa971bba27b65dbd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3e72ee694e08be1b30a75dc1f5b986619043d592
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118926289"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473584"
 ---
-# <a name="rpc_ns_handle"></a>IDENTIFICADOR \_ DE NS \_ RPC
+# <a name="rpc_ns_handle"></a>IDENTIFICADOR \_ DE RPC NS \_
 
 El tipo de **datos RPC \_ NS \_ HANDLE** define un identificador de servicio de nombre.
 
@@ -24,23 +24,23 @@ typedef void* RPC_NS_HANDLE;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Un identificador de servicio de nombre es una variable opaca que contiene información que la biblioteca en tiempo de ejecución rpc usa para devolver los siguientes datos RPC de la base de datos name-service:
+Un identificador de servicio de nombres es una variable opaca que contiene información que la biblioteca en tiempo de ejecución de RPC usa para devolver los siguientes datos RPC de la base de datos name-service:
 
 -   Identificadores de enlace de servidor
--   UUID de los recursos ofrecidos por los miembros del perfil de servidor
+-   UUID de los recursos que ofrecen los miembros del perfil de servidor
 -   Miembros del grupo
 
-El ámbito de un identificador de servicio de nombre es de una rutina "Begin" a través de la rutina "Done" correspondiente.
+El ámbito de un identificador de servicio de nombres es de una rutina "Begin" a través de la rutina "Done" correspondiente.
 
-Las aplicaciones son responsables del control de simultaneidad de los identificadores de servicio de nombre entre subprocesos.
+Las aplicaciones son responsables del control de simultaneidad de los identificadores de servicio de nombres entre subprocesos.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                          |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                |
@@ -48,7 +48,7 @@ Las aplicaciones son responsables del control de simultaneidad de los identifica
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,20 +1,20 @@
 ---
-description: El Protocolo ligero de acceso a directorios (LDAP) requiere que se escapen algunos caracteres con una barra diagonal inversa (carácter) cuando se usan en una ruta de acceso de \) LDAP Active Directory Service Interfaces (ADSI).
+description: El Protocolo ligero de acceso a directorios (LDAP) requiere que se escapen algunos caracteres con una barra diagonal inversa (carácter) cuando se usan en una ruta de \) acceso ldap Active Directory Service Interfaces (ADSI).
 ms.assetid: bc04359c-4eda-4574-a9c2-f005a1d92dea
 ms.tgt_platform: multiple
 title: Descripción de la ruta de acceso adsi
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 7e0ba1dafac273ab3564549a5caca44180161643
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111387114"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467271"
 ---
 # <a name="describing-the-adsi-path"></a>Descripción de la ruta de acceso adsi
 
-El Protocolo ligero de acceso a directorios (LDAP) requiere que se escapen algunos caracteres con un carácter de barra diagonal inversa ( ) cuando se usan en una ruta de acceso de \\ LDAP Active Directory Service Interfaces (ADSI).
+El Protocolo ligero de acceso a directorios (LDAP) requiere que se escapen algunos caracteres con un carácter de barra diagonal inversa ( ) cuando se usan en una ruta de acceso ldap \\ Active Directory Service Interfaces (ADSI).
 
 ,=+<>\# ; \\ "
 

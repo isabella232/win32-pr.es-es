@@ -1,5 +1,5 @@
 ---
-description: Recupera las propiedades Id de los objetos IInkStrokeDisp de la palabra, línea, párrafo o dibujo correspondientes determinados por el análisis de entrada de lápiz.
+description: Recupera las propiedades Id de los objetos IInkStrokeDisp de la palabra, línea, párrafo o dibujo correspondientes determinados por el análisis de lápiz.
 ms.assetid: f05ffa3b-2a47-46fe-bb8f-e682aa094b69
 title: Función CallDivideResultsStrokeIds
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - InkDiv.dll
 - InkDiv.dll.dll
-ms.openlocfilehash: 64b3e4180a34c45890408f8ba92cc79465fffa7f1028152e27f8d5c0aa40e3e1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ee690c9564df3b8c75eca6eec8eeb88b7531f4ef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120009135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360025"
 ---
 # <a name="calldivideresultsstrokeids-function"></a>Función CallDivideResultsStrokeIds
 
-Recupera las propiedades [**Id**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokedisp-get_id) de los objetos [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) de la palabra, línea, párrafo o dibujo correspondientes determinados por el análisis de entrada de lápiz.
+Recupera las propiedades [**Id**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokedisp-get_id) de los objetos [**IInkStrokeDisp**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp) de la palabra, línea, párrafo o dibujo correspondientes determinados por el análisis de lápiz.
 
 Esta función no está pensada para que la utilice el código de la aplicación.
 
@@ -49,7 +49,7 @@ HRESULT WINAPI CallDivideResultsStrokeIds(
 *hDivider* \[ En\]
 </dt> <dd>
 
-Identificador del [objeto Divider.](the-divider-object.md)
+Identificador del objeto [Divider.](the-divider-object.md)
 
 </dd> <dt>
 
@@ -63,21 +63,21 @@ Matriz de los IDs de trazo de la entrada de lápiz de la palabra.
 *aLineStrokeIds \[ \]* \[out\]
 </dt> <dd>
 
-Matriz de los IDs de trazo de la entrada manuscrita en la línea.
+Matriz de los IDs de trazo de la entrada de lápiz en la línea.
 
 </dd> <dt>
 
 *aParagraphStrokeIds \[ \]* \[out\]
 </dt> <dd>
 
-Matriz de los IDs de trazo de la entrada manuscrita en el párrafo.
+Matriz de los IDs de trazo de la entrada de lápiz en el párrafo.
 
 </dd> <dt>
 
 *aDrawingStrokeIds \[ \]* \[out\]
 </dt> <dd>
 
-Matriz de los IDs de trazo de la entrada manuscrita en el dibujo.
+Matriz de los IDs de trazo de la entrada de lápiz en el dibujo.
 
 </dd> </dl>
 

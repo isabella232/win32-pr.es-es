@@ -1,5 +1,5 @@
 ---
-description: Indica la acción del usuario necesaria para realizar la operación de Módulo de plataforma segura (TPM). Use el método SetPhysicalPresenceRequest para solicitar una operación.
+description: Indica la acción del usuario necesaria para realizar la operación de Módulo de plataforma segura (TPM) física. Use el método SetPhysicalPresenceRequest para solicitar una operación.
 ms.assetid: abbd9702-c3a7-468a-bc83-2b7739d0b7bf
 title: Método GetPhysicalPresenceTransition de la Win32_Tpm clase
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: 939f29d923182d3e2b0b9237c49c2a5fc6ff8652d2361f867a7e95af48415654
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4e6a3ab2295cc26cd439465b569f594dd1e0580a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119906345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270727"
 ---
-# <a name="getphysicalpresencetransition-method-of-the-win32_tpm-class"></a>Método GetPhysicalPresenceTransition de la clase Tpm \_ win32
+# <a name="getphysicalpresencetransition-method-of-the-win32_tpm-class"></a>Método GetPhysicalPresenceTransition de la clase Tpm de \_ Win32
 
-El **método GetPhysicalPresenceTransition** de la clase [**\_ Tpm de Win32**](win32-tpm.md) indica la acción del usuario necesaria para realizar la operación de presencia física de Módulo de plataforma segura (TPM). Use el [**método SetPhysicalPresenceRequest**](setphysicalpresencerequest-win32-tpm.md) para solicitar una operación. La acción de usuario necesaria se establece para el equipo en el momento de fabricación. Normalmente se necesita un reinicio del equipo.
+El **método GetPhysicalPresenceTransition** de la clase [**\_ Tpm de Win32**](win32-tpm.md) indica la acción del usuario necesaria para realizar la operación de presencia física Módulo de plataforma segura (TPM). Use el [**método SetPhysicalPresenceRequest**](setphysicalpresencerequest-win32-tpm.md) para solicitar una operación. La acción de usuario necesaria se establece para el equipo en el momento de la fabricación. Normalmente se necesita reiniciar el equipo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,7 +53,7 @@ Valor entero que especifica la transición necesaria para realizar una operació
 | <dl> <dt>0</dt> </dl> | No se necesita ninguna acción del usuario para realizar una operación de presencia física de TPM.<br/>                                                                                                                                                                              |
 | <dl> <dt>1</dt> </dl> | Para realizar una operación de presencia física de TPM, el usuario debe apagar el equipo y volver a encenderlo con el botón de encendido. El usuario debe estar físicamente presente en el equipo para aceptar o rechazar el cambio cuando lo solicite el BIOS.<br/> |
 | <dl> <dt>2</dt> </dl> | Para realizar una operación de presencia física de TPM, el usuario debe reiniciar el equipo mediante un reinicio automático. El usuario debe estar físicamente presente en el equipo para aceptar o rechazar el cambio cuando lo solicite el BIOS.<br/>                              |
-| <dl> <dt>3</dt> </dl> | Se desconoce la acción del usuario necesaria.<br/>                                                                                                                                                                                                                |
+| <dl> <dt>3</dt> </dl> | Se desconoce la acción de usuario necesaria.<br/>                                                                                                                                                                                                                |
 
 
 
@@ -80,7 +80,7 @@ En la tabla siguiente se enumeran algunos de los códigos de retorno comunes.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
@@ -98,7 +98,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

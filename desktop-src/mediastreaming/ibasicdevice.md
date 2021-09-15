@@ -14,18 +14,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 25a60a3f722faac473b6f779de2d609cbdfc4ecb257d671136a8ef80535fdf34
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1567605fb160fc69ac933bb94a0b0282e35616d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120060365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468577"
 ---
 # <a name="ibasicdevice-interface"></a>Interfaz IBasicDevice
 
 Encapsula los métodos y eventos necesarios para modelar un dispositivo DLNA.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IBasicDevice** hereda de [**IInspectable.**](/windows/desktop/api/inspectable/nn-inspectable-iinspectable) **IBasicDevice** también tiene estos tipos de miembros:
 

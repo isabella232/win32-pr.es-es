@@ -5,15 +5,15 @@ ms.assetid: 33096cda-9dbe-44d2-8d08-410bc33ae81c
 keywords:
 - Servicios web de compatibilidad con esquemas para Windows
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c0f55c5ea3828c72456989f7053e2ff008e524e41552b281b88839653229863
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9dcf9d192c999333ee8b4e341e7722cd6bd59ff5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118962904"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467035"
 ---
 # <a name="schema-support"></a>Compatibilidad con esquemas
 
@@ -21,13 +21,13 @@ WsUtil.exe admite el esquema XSD especificado en [Esquema XML](https://www.w3.or
 
 ## <a name="xsd-schema-support-level"></a>Nivel de compatibilidad con esquemas XSD
 
-WsUtil.exe no admite toda la extensión del esquema XSD. El nivel de compatibilidad actual se define en Nivel [de compatibilidad de esquema](schema-support-level.md).
+WsUtil.exe no admite la extensión completa del esquema XSD. El nivel de compatibilidad actual se define en nivel [de compatibilidad de esquema](schema-support-level.md).
 
 Generación de identificadores
 
 Es posible que el nombre de elemento o el nombre de tipo del esquema no sean identificadores de C válidos y que los nombres se normalizan para los nombres de C válidos generados. Los caracteres de identificador de C no válidos se convierten en el nombre hexadecimal y un carácter de subrayado '' podría tener como prefijo el nombre \_ si es necesario. Los tipos anónimos se denominan después del nombre del elemento que lo incluye, pero tienen como prefijo el carácter de subrayado " " para evitar la colisión \_ de nombres. Los nombres de tipo global se conservan tal y como están después de normalizar los caracteres no válidos. Los tipos anónimos anidados tienen como prefijo el nombre del tipo primario.
 
-Para cada definición de elemento global, wsutil.exe genera una descripción del elemento [**WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description) en la estructura de descripción global. Para cada definición de tipo global, wsutil.exe una descripción de tipo en la estructura de descripción global a la que hace referencia la aplicación.
+Para cada definición de elemento global, wsutil.exe genera una [**descripción de elemento WS \_ en \_**](/windows/desktop/api/WebServices/ns-webservices-ws_element_description) la estructura de descripción global. Para cada definición de tipo global, wsutil.exe genera una descripción de tipo en la estructura de descripción global a la que hace referencia la aplicación.
 
 Para cada campo de la estructura, wsutil.exe genera una descripción de [**campo WS \_ \_**](/windows/desktop/api/WebServices/ns-webservices-ws_field_description) incrustada como parte de la estructura del gabinete.
 
@@ -230,7 +230,7 @@ struct // SimpleArrayWrapper
 ...
 ```
 
-wsutil.exe genera las siguientes definiciones para el prototipo correspondiente anterior, observa que en la descripción del campo, se rellenan los campos del nombre del contenedor y del espacio de nombres del contenedor.
+wsutil.exe genera las siguientes definiciones para el prototipo correspondiente anterior, observa que, en la descripción del campo, se rellenan los campos del nombre del contenedor y del espacio de nombres del contenedor.
 
 ``` syntax
 ... // global element part of the LocalDefinitions structure:
@@ -521,7 +521,7 @@ targetNamespace="http://Example.org" xmlns:s="http://www.w3.org/2001/XMLSchema">
 
 El fragmento xsd anterior indica que DerivedLinkList deriva de LinkList.
 
-Wsutil.exe genera rutinas auxiliares para C y C++ para facilitar a la aplicación la configuración de la información de tipo de tipo base y los tipos derivados. En el código siguiente, la macro WS CPLUSPLUS se usa para diferenciar la \_ \_ definición del lenguaje C y C++:
+Wsutil.exe genera rutinas auxiliares para C y C++ para facilitar a la aplicación la configuración de la información de tipo de tipo base y los tipos derivados. En el código siguiente, se \_ usa la \_ macro WS CPLUSPLUS para diferenciar la definición del lenguaje C y C++:
 
 ``` syntax
 #if defined(_WS_CPLUSPLUS)
@@ -568,7 +568,7 @@ struct _DerivedLinkList* WINAPI LinkList_As_DerivedLinkList(LinkList*);
 
 En el asistente de estilo C, antes de la serialización, la aplicación llama a la rutina generada wsutil LinkList Init para inicializar la estructura y establecer la descripción del tipo en \_ Descripción del tipo LinkList. Después de la deserialización, la aplicación puede llamar a LinkList \_ como \_ DerivedLinkList para obtener el tipo derivado.
 
-Para recuperar información de tipos en tiempo de ejecución, wsutil genera el primer campo de tipo base con el tipo DESCRIPTION [**de WS \_ STRUCT \_**](/windows/desktop/api/WebServices/ns-webservices-ws_struct_description) y la asignación de campos ASIGNACIÓN DE CAMPOS DE ATRIBUTO DE WS TYPE para describir la \* información [**\_ \_ \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_field_mapping) xsi:type. La aplicación puede establecer o comprobar directamente el campo para determinar el tipo real de estructuras. Por ejemplo, el código siguiente establece el tipo de la estructura para que sea DrivedLinkList:
+Para recuperar información de tipos en tiempo de ejecución, wsutil genera el primer campo de tipo base con el tipo DESCRIPTION [**de WS \_ STRUCT \_**](/windows/desktop/api/WebServices/ns-webservices-ws_struct_description) y la asignación de campos DE ASIGNACIÓN DE CAMPOS DE ATRIBUTO DE WS TYPE para describir la \* información [**\_ \_ \_ \_**](/windows/desktop/api/WebServices/ne-webservices-ws_field_mapping) xsi:type. La aplicación puede establecer o comprobar directamente el campo para determinar el tipo real de estructuras. Por ejemplo, el código siguiente establece el tipo de la estructura para que sea DrivedLinkList:
 
 ``` syntax
 _DerivedLinkList derivedLinkList;
@@ -619,7 +619,7 @@ WsCountOf(test_xsdLocalDefinitions.globalTypes.LinkListdescs.LinkListFields),
 
 ## <a name="nillable"></a>nillable
 
-El atributo nillable es compatible con cadenas, estructuras y matrices de bytes. El atributo NILLABLE de WS \_ FIELD \_ se agregará a los campos con el atributo nillable. El puntero se establecerá en **NULL si** un elemento es nillable. Un campo que se puede nillable en una estructura se trata como un puntero. Una estructura de parámetros con el atributo nillable se pasará por referencia.
+El atributo nillable es compatible con cadenas, estructuras y matrices de bytes. El atributo NILLABLE de WS \_ FIELD \_ se agregará a los campos con el atributo nillable. El puntero se establecerá en **NULL** si un elemento es nillable. Un campo que se puede nillable en una estructura se trata como un puntero. Una estructura de parámetros con el atributo nillable se pasará por referencia.
 
 ## <a name="pointers"></a>punteros
 
@@ -668,7 +668,7 @@ HRESULT CALLBACK SimpleMethod (
 
 ## <a name="security"></a>Seguridad
 
-Consulte la sección de seguridad de [la herramienta Wsutil Compiler,](wsutil-compiler-tool.md) así como la [serialización.](serialization.md)
+Consulte la sección de seguridad en [Wsutil Compiler tool (Herramienta del compilador de Wsutil)](wsutil-compiler-tool.md) y [Serialization (Serialización).](serialization.md)
 
  
 

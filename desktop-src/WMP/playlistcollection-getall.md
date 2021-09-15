@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d662c86385bb948684cab0abba161fc70b2f502442cc4d9c093bdd148a2320b1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eb3c947b774093f83d6ef627a3ddc9f08381d971
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118334963"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466144"
 ---
 # <a name="playlistcollectiongetall-method"></a>Método PlaylistCollection.getAll
 
@@ -44,7 +44,7 @@ Este método no tiene parámetros.
 
 Este método devuelve un objeto **PlaylistArray.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
@@ -52,14 +52,14 @@ Para usar este método, se requiere acceso de lectura a la biblioteca. Para obte
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

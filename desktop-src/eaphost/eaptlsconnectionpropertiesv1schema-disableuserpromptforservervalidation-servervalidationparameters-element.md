@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 37f412f9c6200e7d2a54d624d0a77b4df5316ea7edd0ab75b69f92c753abbcff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 368b2593b3c55ef571e3f1892634318e54447643
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118273723"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568773"
 ---
 # <a name="disableuserpromptforservervalidation-servervalidationparameters-element-tls"></a>Elemento DisableUserPromptForServerValidation (ServerValidationParameters) (TLS)
 
@@ -41,14 +41,14 @@ El tipo complejo [**ServerValidationParameters**](eaptlsconnectionpropertiesv1sc
 
 
 
-| Rol | Versión mínima admitida del sistema operativo |
+| Role | Versión mínima admitida del sistema operativo |
 |------|------------------------------|
-| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
-| Server<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
+| Remoto<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

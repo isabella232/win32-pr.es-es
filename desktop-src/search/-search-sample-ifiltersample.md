@@ -4,16 +4,16 @@ ms.assetid: 4c0df747-627d-4937-a117-d43137d5d081
 title: IFilterSample
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f015166d0366152d07a5fb8d182edcb5422112c66f016219970fef9b889df3ab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 10f66bf32c4abe25038aa6b2a3b6d879ba65cf7a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117863738"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360384"
 ---
 # <a name="ifiltersample"></a>IFilterSample
 
-El ejemplo de código IFilterSample muestra cómo crear una clase base IFilter para implementar la [**interfaz IFilter.**](/windows/win32/api/filter/nn-filter-ifilter)
+El ejemplo de código IFilterSample muestra cómo crear una clase base de IFilter para implementar la [**interfaz IFilter.**](/windows/win32/api/filter/nn-filter-ifilter)
 
 En este tema se incluyen las siguientes secciones.
 
@@ -54,7 +54,7 @@ Este ejemplo está disponible en la siguiente ubicación.
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
 1. Vaya al directorio que contiene el nuevo ejecutable, mediante la ventana símbolo del sistema o Windows Explorador.
-2. En el símbolo del sistema, escriba o, en Windows Explorer, haga doble clic `FilterBase.exe` en el icono para FilterBase.exe.
+2. En el símbolo del sistema, escriba o, en Windows Explorer, haga doble clic en el `FilterBase.exe` icono de FilterBase.exe.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -1,19 +1,19 @@
 ---
-title: Uso de url y subrecuper de servidor
-description: Uso de url y subrecuper de servidor
+title: Uso de url y suversión de servidor
+description: Uso de url y suversión de servidor
 ms.assetid: d0d15b1c-5631-486e-8490-b85ec51bd355
 keywords:
 - Windows Listas de reproducción de metarchivo multimedia, sustecciones de direcciones URL
-- playlists,URL rollovers
+- playlists,url rollovers
 - listas de reproducción de metarchivo, sustecciones de direcciones URL
-- Windows Listas de reproducción de metarchivos multimedia, sustecciones de servidor
+- Windows Listas de reproducción de metarchivo multimedia, sustecciones de servidor
 - listas de reproducción, sudores de servidor
 - listas de reproducción de metarchivo, sustecciones de servidor
-- Windows Listas de reproducción de metarchivos multimedia, sustecciones de protocolo
+- Windows Listas de reproducción de metarchivo multimedia, sustecciones de protocolo
 - listas de reproducción, sudores de protocolo
 - listas de reproducción de metarchivo, sustecciones de protocolo
-- Reproductor de Windows Media,subrecuperaciones de direcciones URL
-- Reproductor de Windows Media, sudores de servidor
+- Reproductor de Windows Media,subaciones de dirección URL
+- Reproductor de Windows Media,subrecuperaciones de servidor
 - Reproductor de Windows Media,subrecuperaciones de protocolo
 - Subaciones de direcciones URL
 - subaciones de servidor
@@ -25,18 +25,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 3988ff019fba838e86ea1d0e7b0f6124c367bb8b505a0f2d2e2f639b94d93e52
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eae38e81f8ae23199628e543f65f2766491f1a2a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119465684"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359873"
 ---
-# <a name="using-url-and-server-rollover"></a>Uso de url y subrecuper de servidor
+# <a name="using-url-and-server-rollover"></a>Uso de url y suversión de servidor
 
-Puede usar listas de reproducción de metarchivo para proporcionar un medio de revertir automáticamente a orígenes de contenido alternativos cuando no se puede acceder a una secuencia ni reproducirla. Puede usar este método de suversión para especificar orígenes del mismo contenido en servidores diferentes o en distintos tipos de servidores. Por ejemplo, puede especificar una primera alternativa en otro servidor Windows Media. Si no se puede reproducir ese contenido, el cliente puede pasar a una segunda alternativa en un servidor web. Reproductor de Windows Media automáticamente intenta pasar a distintos protocolos según su configuración de propiedades Windows Media antes de probar las direcciones URL de suversión en la lista de reproducción.
+Puede usar listas de reproducción de metarchivo para proporcionar un medio de revertir automáticamente a orígenes de contenido alternativos cuando no se puede acceder a una secuencia ni reproducirla. Puede usar este método de suversión para especificar orígenes del mismo contenido en servidores diferentes o en distintos tipos de servidores. Por ejemplo, puede especificar una primera alternativa en un servidor Windows Media. Si ese contenido no se puede reproducir, el cliente puede revertir a una segunda alternativa en un servidor web. Reproductor de Windows Media automáticamente intenta revertir a distintos protocolos según la configuración de la propiedad Windows Media antes de probar las direcciones URL de suversión en la lista de reproducción.
 
-Establezca la suvolución de servidor y protocolo **colocando** varios elementos REF en sucesión dentro de un **elemento ENTRY.** Cada **elemento REF** especifica una ubicación o protocolo alternativos para un archivo multimedia o secuencia.
+Establezca la suvolución de servidor y protocolo **colocando** varios elementos REF en sucesión dentro de un **elemento ENTRY.** Cada **elemento REF** especifica una ubicación o protocolo alternativos para un archivo multimedia o una secuencia.
 
 Código de ejemplo
 

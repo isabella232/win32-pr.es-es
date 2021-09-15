@@ -1,11 +1,11 @@
 ---
-title: Método getSAMILangID de IWMPClosedCaption2
+title: Método IWMPClosedCaption2 getSAMILangID
 description: El método getSAMILangID devuelve el identificador de configuración regional (LCID) de un idioma admitido por el archivo SAMI actual.
 ms.assetid: 41aca317-6182-47c3-8bd9-ba42b92b10f4
 keywords:
 - Método getSAMILangID Reproductor de Windows Media
 - Método getSAMILangID Reproductor de Windows Media , interfaz IWMPClosedCaption2
-- Interfaz IWMPClosedCaption2 Reproductor de Windows Media , método getSAMILangID
+- Interfaz IWMPClosedCaption2 Reproductor de Windows Media método , getSAMILangID
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a0fc62222f98d6c056bb8ce9ffd328582a6764202bb8446617471d3f7cb4a5ae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bb9aaebecf8e86c056fa9c91141042facc6bcc18
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119506435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473319"
 ---
 # <a name="iwmpclosedcaption2getsamilangid-method"></a>IWMPClosedCaption2::getSAMILangID (método)
 
@@ -62,9 +62,9 @@ Implements IWMPClosedCaption2.getSAMILangID
 
 ## <a name="return-value"></a>Valor devuelto
 
-**System.Int32** que es el LCID del lenguaje con el índice especificado.
+**System.Int32** que es el LCID del idioma con el índice especificado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los idiomas de un archivo SAMI se indexa en el orden que se muestra en el archivo, empezando por cero.
 
@@ -74,7 +74,7 @@ Este método devuelve 0 a menos que un archivo multimedia digital esté abierto 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

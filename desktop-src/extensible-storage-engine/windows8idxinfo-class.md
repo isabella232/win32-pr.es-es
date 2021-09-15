@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: clase Windows8IdxInfo'
-title: Clase Windows8IdxInfo (Microsoft. ISAM. esent. Interop. Windows8)
+description: 'Más información sobre: Clase Windows8IdxInfo'
+title: Clase Windows8IdxInfo (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: Windows8IdxInfo class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.Windows8IdxInfo
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8idxinfo(v=EXCHG.10)
@@ -25,23 +25,23 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 9c258cf0eae196d727f141b52434d1d3fc87d922
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705851"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465869"
 ---
 # <a name="windows8idxinfo-class"></a>Clase Windows8IdxInfo
 
-Niveles de información de columna que se han agregado a la versión de Windows 8 de ESENT.
+Niveles de información de columna que se han agregado a la Windows 8 de ESENT.
 
 ## <a name="inheritance-hierarchy"></a>Jerarquía de herencia
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. esent. Interop. Windows8. Windows8IdxInfo  
+  Microsoft.Isam.Esent.Interop.Windows8.Windows8IdxInfo  
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -64,4 +64,4 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

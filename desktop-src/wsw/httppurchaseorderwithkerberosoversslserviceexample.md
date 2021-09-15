@@ -5,19 +5,19 @@ ms.assetid: 9fbf5577-6a54-4ce1-ad44-80b9ee91c0d3
 keywords:
 - HttpPurchaseOrderWithKerberosOverSslServiceExample Native-Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f6e24fcd69bb57e9ecb3ffe207d5be9a42c8d8b45ea09e969b0bf3658e3eed5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 35ef59a8a6b40afc6ddd6dcdeb95b5a6fad1718a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118963164"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466636"
 ---
 # <a name="httppurchaseorderwithkerberosoversslserviceexample"></a>HttpPurchaseOrderWithKerberosOverSslServiceExample
 
-En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio PurchaseOrder a través de HTTP, con kerberos sobre la seguridad en modo mixto de SSL. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación de cliente se proporciona mediante un vale de APREQ de Kerberos en un WS-Security en el mensaje.
+En este ejemplo se muestra cómo usar el host de servicio para hospedar un servicio PurchaseOrder a través de HTTP, con kerberos sobre la seguridad en modo mixto de SSL. En esta configuración, la conexión de transporte está protegida (firmada, cifrada) por SSL, que también proporciona autenticación de servidor. La autenticación de cliente se proporciona mediante un vale de APREQ de Kerberos en un WS-Security encabezado del mensaje.
 
 -   [PurchaseOrderServiceKerberosOverSsl.cpp](#purchaseorderservicekerberosoversslcpp)
 -   [PurchaseOrder.wsdl](#purchaseorderwsdl)

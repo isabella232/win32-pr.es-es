@@ -4,12 +4,12 @@ description: En esta sección se describen los tipos enumerados que Automatizaci
 ms.assetid: 99ceb405-f8ad-4e85-8789-dc35fd0ec735
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9c2e2fccd37b1fb5120b6ea2c8cd76cff24c16c92fd542060469852870a3a50
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ef815f9a0b45c7b25b411368582de7c944aff7d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133458"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567293"
 ---
 # <a name="ui-automation-enumerations"></a>Automatización de la interfaz de usuario enumeraciones
 
@@ -38,7 +38,7 @@ En esta sección se describen los tipos enumerados que Automatización de la int
 | [**FillType**](/windows/desktop/api/UIAutomationCore/ne-uiautomationcore-filltype)<br/>                                 | Contiene valores para el atributo FillType.<br/>                                                                                                                                                                                                               |
 | [**HorizontalTextAlignmentEnum**](/previous-versions/windows/desktop/legacy/ee671233(v=vs.85))<br/>   | Contiene valores para el atributo de texto HorizontalTextAlignment.<br/>                                                                                                                                                                                           |
 | [**LiveSetting**](/windows/desktop/api/uiautomationcore/ne-uiautomationcore-livesetting)<br/>                           | Contiene valores posibles para la propiedad LiveSetting. Esta propiedad se implementa mediante elementos de proveedor que forman parte de una región en directo.<br/>                                                                                                                  |
-| [**NavigateDirection**](/windows/desktop/api/UIAutomationCore/ne-uiautomationcore-navigatedirection)<br/>                          | Contiene valores usados para especificar la dirección de navegación dentro del árbol de Automatización de la interfaz de usuario Microsoft.<br/>                                                                                                                                                      |
+| [**NavigateDirection**](/windows/desktop/api/UIAutomationCore/ne-uiautomationcore-navigatedirection)<br/>                          | Contiene valores que se usan para especificar la dirección de navegación dentro del árbol de Automatización de la interfaz de usuario Microsoft.<br/>                                                                                                                                                      |
 | [**NormalizeState**](/windows/desktop/api/UIAutomationCoreApi/ne-uiautomationcoreapi-normalizestate)<br/>                     | Contiene valores que especifican el comportamiento de [**UiaGetUpdatedCache.**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiagetupdatedcache)<br/>                                                                                                                                             |
 | [**NotificationKind**](/windows/win32/api/uiautomationcore/ne-uiautomationcore-notificationkind)<br/>                     | Define valores que indican el tipo de un evento de notificación y una sugerencia al agente de escucha sobre el procesamiento del evento.<br/>                                                                                                                              |
 | [**NotificationProcessing**](/windows/win32/api/uiautomationcore/ne-uiautomationcore-notificationprocessing)<br/>         | Define valores que indican cómo se debe procesar una notificación.<br/>                                                                                                                                                                                      |

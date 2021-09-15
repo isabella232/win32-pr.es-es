@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 91e85edfab964581164bd233fb5c9450086546eecbcc37b5df05986c58d68931
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72e9b597d51026e1fea66746272e245f29bd8d7c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119730005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566969"
 ---
 # <a name="jet_recsizeequals-method-object"></a>JET_RECSIZE. Método Equals (Object)
 
@@ -67,7 +67,7 @@ public override bool Equals(
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si las dos instancias son iguales.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

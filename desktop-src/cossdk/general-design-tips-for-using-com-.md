@@ -4,12 +4,12 @@ ms.assetid: 463f4154-92f6-46c3-95ff-8513963dcadd
 title: Diseño general Sugerencias para usar COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f54ade55331c0b3e2c5ea4b45465ca0bcdc007036b2e919441ccb2ebfbe95ef1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b5765259f170b1a98f1abb2d097dfdaec2e09d47
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118307000"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568477"
 ---
 # <a name="general-design-tips-for-using-com"></a>Diseño general Sugerencias para usar COM+
 

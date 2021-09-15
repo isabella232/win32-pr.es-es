@@ -4,12 +4,12 @@ ms.assetid: 015637ed-7a3e-49eb-96ef-8fe82d2902f5
 title: Gethostbyname (Función) en la API
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a63bf7884cd170721de9b7d5009ed53c7bcb60bb36869986862f5e81e03215b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc3881897a0c971c48ca9a02e6205ec1cae0476f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119132308"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566849"
 ---
 # <a name="gethostbyname-function-in-the-api"></a>Gethostbyname (Función) en la API
 

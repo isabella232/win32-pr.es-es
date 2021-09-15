@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fbf7baaed340dbe61e7c10e4d64d17d93b23cdd1b4b01af0818c310ff0a7f363
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 68ea6a2b461799006edd0d82f69a20bc52d2c721
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118983028"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568768"
 ---
 # <a name="apiretrievecolumnasbyte-method-jet_sesid-jet_tableid-jet_columnid-retrievecolumngrbit"></a>Método Api.RetrieveColumnAsByte (JET_SESID, JET_TABLEID, JET_COLUMNID, RetrieveColumnGrbit)
 
@@ -101,10 +101,10 @@ Los datos recuperados de la columna como un byte. Null si la columna es NULL.
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 
-[Sobrecarga de RetrieveColumnAsByte](./api.retrievecolumnasbyte-method.md)
+[Sobrecarga RetrieveColumnAsByte](./api.retrievecolumnasbyte-method.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

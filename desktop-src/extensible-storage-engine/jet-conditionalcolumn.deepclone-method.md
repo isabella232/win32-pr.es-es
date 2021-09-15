@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3ddb7d089858e23dd69a3fd9c58f64e75def9a3d00b74adf0cdea313524b7ee6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1739e6bac82aed0b4e318d1f1359444b73e61090
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119112364"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473159"
 ---
 # <a name="jet_conditionalcolumndeepclone-method"></a>JET_CONDITIONALCOLUMN. Método DeepClone
 
@@ -63,7 +63,7 @@ Copia en profundidad del objeto.
 
 [IDeepCloneable \<T\> . DeepClone()](./ideepcloneable-t-.deepclone-method.md)  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

@@ -14,12 +14,12 @@ keywords:
 - lectores asincrónicos, leer archivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bea24a8f09cff8fe3e4a1f1cfb383f5569e968200bbbe6f25f2c8f225b3c18f5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0807c0701dd596f943010ad613b08ef9fe2c415c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119084512"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466667"
 ---
 # <a name="reading-files-with-the-asynchronous-reader"></a>Leer archivos con el lector asincrónico
 
@@ -31,10 +31,10 @@ La funcionalidad más básica del objeto de lector se puede dividir en los pasos
 2.  La aplicación pasa al lector el nombre de un archivo que se leerá. Cuando el lector abre el archivo, asigna un número de salida a cada secuencia. Si el archivo usa la exclusión mutua, el lector asigna una única salida para todas las secuencias mutuamente excluyentes.
 3.  La aplicación obtiene información sobre la configuración de las distintas salidas del lector. La información recopilada permitirá que la aplicación represente correctamente ejemplos multimedia.
 4.  La aplicación indica al lector que comience a leer datos del archivo. El lector comienza a entregar muestras sin comprimir a la devolución de llamada **OnSample** de una en una en búferes encapsulados en objetos de búfer. Los ejemplos entregados por el lector están en orden de presentación. El lector seguirá entregando ejemplos hasta que la aplicación lo detenga o hasta que se alcance el final del archivo.
-5.  La aplicación es responsable de representar los datos una vez entregados por el lector. El SDK Windows Media Format no proporciona ninguna rutina de representación. Normalmente, las aplicaciones usarán otros SDK para representar datos, como el SDK de Microsoft DirectX® o las funciones multimedia del SDK de microsoft Windows Platform.
+5.  La aplicación es responsable de representar los datos una vez entregados por el lector. El SDK Windows media format no proporciona ninguna rutina de representación. Normalmente, las aplicaciones usarán otros SDK para representar datos, como el SDK de Microsoft DirectX® o las funciones multimedia del SDK de plataforma de Windows Microsoft.
 6.  Una vez completada la lectura, la aplicación indica al lector que cierre el archivo.
 
-Estos pasos se ilustran en la aplicación de ejemplo AudioPlayer, entre otros. Para obtener más información, vea [Aplicaciones de ejemplo.](sample-applications.md)
+Estos pasos se muestran en la aplicación de ejemplo AudioPlayer, entre otros. Para obtener más información, vea [Aplicaciones de ejemplo.](sample-applications.md)
 
 El lector también admite una funcionalidad más avanzada. El lector le permite hacer lo siguiente:
 

@@ -5,15 +5,15 @@ ms.assetid: 82f27502-0f18-4b30-9da1-9191e34366c6
 keywords:
 - HttpCalculatorWithUsernameOverSslClientExample Native-Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: caac29f9cca33d439d65ec6745f3dd108db11355839d644a64f914279a3f9bdd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f344278b5ef72748f5cea375c931dbded47b5970
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120054695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466188"
 ---
 # <a name="httpcalculatorwithusernameoversslclientexample"></a>HttpCalculatorWithUsernameOverSslClientExample
 

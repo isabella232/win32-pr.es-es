@@ -4,12 +4,12 @@ ms.assetid: fbeef429-e5e0-4fa4-9402-72e421ef4cbc
 title: System.PropGroup.Contact
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ffe5fe6d5d334007a7aa37dabe4200cb4238e5ef5210cf4c4ca86fda82ec0ff
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bdfca8ad6a0c9409367fb8b9f74252dd15855c34
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119095817"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468374"
 ---
 # <a name="systempropgroupcontact"></a>System.PropGroup.Contact
 
@@ -30,7 +30,7 @@ propertyDescription
       type = Null
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

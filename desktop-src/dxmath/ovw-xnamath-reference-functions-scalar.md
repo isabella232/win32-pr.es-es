@@ -4,12 +4,12 @@ ms.assetid: 833273ac-4bbc-029e-df3b-cb860d364cba
 title: Funciones escalares de la biblioteca DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50cead11a6cae9dd555ceedd5d62eca29ce5c4f59fc344ea3972ec404c9135e3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 85431e4ed91fc19c5e0e6011ce757dd5ef760dee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119118185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567136"
 ---
 # <a name="directxmath-library-scalar-functions"></a>Funciones escalares de la biblioteca DirectXMath
 

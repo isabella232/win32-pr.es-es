@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101811
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 6aed5f6a71a8b9f3c6a51cd8d1d65dd292a2e42cd0d10c3de4e7fa1f754b5826
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a882cf36cd50e381351c83ff12a5cb003f9bb811
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120065155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473189"
 ---
 # <a name="esentindextuplesvarsegmacnotallowedexception-methods"></a>Métodos de EsentIndexTuplesVarSegMacNotAllowedException 
 

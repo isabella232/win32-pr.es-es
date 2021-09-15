@@ -1,17 +1,17 @@
 ---
 description: Esta sección contiene una lista alfabética de las enumeraciones que usa print Spooler API.
 ms.assetid: 0a0f7fa8-99bf-482e-a26c-9fc208b4c687
-title: Enumeraciones de LA API del colador de impresión
+title: Enumeraciones de API de Spooler de impresión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c57c5666da361636947ce279dc9d2e96a3a56c0b3f018297b795acd693adf09
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b771eecbd3af671198f3a434cad26370b3fd25f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120092055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468535"
 ---
-# <a name="print-spooler-api-enumerations"></a>Enumeraciones de LA API del colador de impresión
+# <a name="print-spooler-api-enumerations"></a>Enumeraciones de API de Spooler de impresión
 
 Esta sección contiene una lista alfabética de las enumeraciones que usa print Spooler API.
 

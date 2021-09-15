@@ -1,5 +1,5 @@
 ---
-title: defi- ps
+title: defi - ps
 description: Define un valor constante entero, que se debe cargar cada vez que un sombreador se establece en un dispositivo.
 ms.assetid: c51982a1-45b4-48db-a49a-93165d61efd3
 ms.topic: reference
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 2d22301b3a6fced39741733cbc1371ed18bf95fcf00da0636e662fc8d977db18
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3552d5cfe322dd384e1c6bd219e35af19b469a56
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118792665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466957"
 ---
-# <a name="defi---ps"></a>defi- ps
+# <a name="defi---ps"></a>defi - ps
 
 Define un valor constante entero, que se debe cargar cada vez que un sombreador se establece en un dispositivo.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -34,7 +34,7 @@ Define un valor constante entero, que se debe cargar cada vez que un sombreador 
 -   dst es el registro de destino.
 -   integerValue es un valor entero constante.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

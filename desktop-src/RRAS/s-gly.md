@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: ea67a164-6fce-4c22-aa48-677c453abc06
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ab701500f565e7f062bb48b70312f6446ad2fd961a7136b526b4bac1d402f58
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 645048deba092a948ef6d1cd0472b6044430e0a8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120081035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271852"
 ---
 # <a name="s-rras"></a>S (RRAS)
 
@@ -21,7 +21,7 @@ ms.locfileid: "120081035"
 <span id="_rras_static_route_gly"></span><span id="_RRAS_STATIC_ROUTE_GLY"></span>**static route**
 </dt> <dd>
 
-Una ruta estática es una ruta que se agrega manualmente a la tabla de enrutamiento. Compare con la [*ruta autostática*](a-gly.md).
+Una ruta estática es una ruta que se agrega manualmente a la tabla de enrutamiento. Compare con [*la ruta autostática*](a-gly.md).
 
 </dd> </dl>
 

@@ -4,12 +4,12 @@ ms.assetid: 2f70a640-7093-49c2-9f2c-99af870ecaf7
 title: System.GPS.LatitudeNumerator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e638f5196111a44d5f64de81bb60af3b32f8b99545c8a6045998929ed3c92f89
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d974082109cab4d2e9ec18e9eefc410b6a116359
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120010415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468500"
 ---
 # <a name="systemgpslatitudenumerator"></a>System.GPS.LatitudeNumerator
 
@@ -30,7 +30,7 @@ propertyDescription
       type = Multivalue UInt32
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

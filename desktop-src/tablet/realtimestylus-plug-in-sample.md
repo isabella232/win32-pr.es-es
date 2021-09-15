@@ -4,12 +4,12 @@ ms.assetid: 0ba753d1-d81a-4f7a-942c-2967c46febec
 title: Ejemplo de complemento RealTimeStylus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a05fd9c70c11130011352d8c16d30abee672e4cd56c000c21b7fbfd2704babe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0f593bf9e4fe0fb3d8ab12674047d6c05f28617a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118966884"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466773"
 ---
 # <a name="realtimestylus-plug-in-sample"></a>Ejemplo de complemento RealTimeStylus
 
@@ -30,7 +30,7 @@ Para obtener información general sobre los espacios de nombres [Microsoft.Stylu
 
 ## <a name="packet-filter-plug-in"></a>Complemento de filtro de paquetes
 
-El complemento de filtro de paquetes es un complemento sincrónico que muestra la modificación de paquetes. En concreto, define un rectángulo en el formulario. Los paquetes que se extraen fuera de la región se representan dentro de la región. La clase de complemento, `PacketFilterPlugin` , se registra para la notificación de eventos de entrada , y `StylusDown` `StylusUp` `Packets` lápiz. La clase implementa los métodos [StylusDown,](/previous-versions/ms824761(v=msdn.10)) [StylusUp](/previous-versions/ms824764(v=msdn.10))y [Packets](/previous-versions/ms824756(v=msdn.10)) definidos en [**la clase IStylusSyncPlugin.**](/windows/win32/api/rtscom/nn-rtscom-istylussyncplugin)
+El complemento de filtro de paquetes es un complemento sincrónico que muestra la modificación de paquetes. En concreto, define un rectángulo en el formulario. Los paquetes que se extraen fuera de la región se representan dentro de la región. La clase de complemento, `PacketFilterPlugin` , se registra para la notificación de eventos de entrada , y `StylusDown` `StylusUp` `Packets` lápiz. La clase implementa los métodos [StylusDown](/previous-versions/ms824761(v=msdn.10)), [StylusUp](/previous-versions/ms824764(v=msdn.10))y [Packets](/previous-versions/ms824756(v=msdn.10)) definidos en [**la clase IStylusSyncPlugin.**](/windows/win32/api/rtscom/nn-rtscom-istylussyncplugin)
 
 El constructor público de `PacketFilterPlugin` requiere una [estructura Rectangle.](/dotnet/api/system.drawing.rectangle?view=netcore-3.1) Este rectángulo define el área rectangular, en coordenadas de espacio de entrada de lápiz (.01mm = 1 unidad HIMETRIC), en el que se incluirán los paquetes. El rectángulo se mantiene en un campo privado, `rectangle` .
 
@@ -149,7 +149,7 @@ El proyecto RealTimeStylusPluginApp muestra los complementos descritos anteriorm
 
 -   Formulario que contiene un control [GroupBox](/dotnet/api/system.windows.forms.groupbox?view=netcore-3.1) que se usa para definir el área de entrada de entrada de lápiz.
 -   Un [control CheckedListBox](/dotnet/api/system.windows.forms.checkedlistbox?view=netcore-3.1) para enumerar y seleccionar los complementos disponibles.
--   Un par de [objetos Button para](/dotnet/api/system.windows.forms.button?view=netcore-3.1) habilitar la reordenación de los complementos.
+-   Par de [objetos Button para](/dotnet/api/system.windows.forms.button?view=netcore-3.1) habilitar la reordenación de los complementos.
 
 El proyecto define una estructura, , para facilitar la administración de los complementos `PlugInListItem` usados en el proyecto. La `PlugInListItem` estructura contiene el complemento y una descripción.
 

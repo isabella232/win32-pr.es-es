@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f9aaa485026b9aac3cf3714ba50b336e0075588e2662dd522178cec11f227f90
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 61c72ca8adcff50e40be9fa73eb70d41a185af06
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120118335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568913"
 ---
 # <a name="nop---ps"></a>nop - ps
 
 No se realiza ninguna operación.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -31,7 +31,7 @@ No se realiza ninguna operación.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

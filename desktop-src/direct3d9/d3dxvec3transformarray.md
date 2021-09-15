@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3cd17da7f3eb8e9c21ab2890ab112194c7f393b89c6761f2b14741e557318efe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 440869f42769d5c20e26083acf3fad1203e20a22
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119122542"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566640"
 ---
 # <a name="d3dxvec3transformarray-function-d3dx9mathh"></a>Función D3DXVec3TransformArray (D3dx9math.h)
 
@@ -105,7 +105,7 @@ Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
 Puntero a una [**matriz transformada D3DXVECTOR4.**](d3dxvector4.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función transforma la matriz *pV* (x, y, z, 1) por el *pM de matriz.*
 

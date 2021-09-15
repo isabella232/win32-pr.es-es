@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f02a5edc80d00d098a592626ad4d9f0e1030f9f6eee119bf615375680d11842
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b54723612c7e0948e09baddf22ad4f4703ca5c38
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118909323"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271287"
 ---
 # <a name="winbio_setting_source-constants"></a>CONSTANTES DE \_ ORIGEN DE CONFIGURACIÓN DE WINBIO \_
 
@@ -32,8 +32,8 @@ La función [**WinBioGetEnabledSetting**](/windows/desktop/api/Winbio/nf-winbio-
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------|
 | <span id="WINBIO_SETTING_SOURCE_INVALID"></span><span id="winbio_setting_source_invalid"></span><dl> <dt>**EL ORIGEN DE CONFIGURACIÓN DE WINBIO \_ \_ NO ES \_ VÁLIDO**</dt> </dl> | La configuración no es válida.<br/>                              |
 | <span id="WINBIO_SETTING_SOURCE_DEFAULT"></span><span id="winbio_setting_source_default"></span><dl> <dt>**CONFIGURACIÓN PREDETERMINADA \_ DEL \_ ORIGEN DE \_ WINBIO**</dt> </dl> | La configuración se originó en la directiva integrada.<br/>           |
-| <span id="WINBIO_SETTING_SOURCE_POLICY"></span><span id="winbio_setting_source_policy"></span><dl> <dt>**DIRECTIVA DE \_ ORIGEN DE CONFIGURACIÓN DE \_ \_ WINBIO**</dt> </dl>    | La configuración se originó en el registro del equipo local.<br/> |
-| <span id="WINBIO_SETTING_SOURCE_LOCAL"></span><span id="winbio_setting_source_local"></span><dl> <dt>**CONFIGURACIÓN LOCAL \_ DEL \_ ORIGEN DE \_ WINBIO**</dt> </dl>       | La configuración se creó directiva de grupo<br/>                |
+| <span id="WINBIO_SETTING_SOURCE_POLICY"></span><span id="winbio_setting_source_policy"></span><dl> <dt>**CONFIGURACIÓN DE \_ LA DIRECTIVA DE ORIGEN DE \_ \_ WINBIO**</dt> </dl>    | La configuración se originó en el registro de equipo local.<br/> |
+| <span id="WINBIO_SETTING_SOURCE_LOCAL"></span><span id="winbio_setting_source_local"></span><dl> <dt>**CONFIGURACIÓN LOCAL \_ DE \_ ORIGEN DE \_ WINBIO**</dt> </dl>       | La configuración la creó directiva de grupo<br/>                |
 
 
 
@@ -43,13 +43,13 @@ La función [**WinBioGetEnabledSetting**](/windows/desktop/api/Winbio/nf-winbio-
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>                                                                    |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
-| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

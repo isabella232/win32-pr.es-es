@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf9cf397f4f1bc2ea10291b46d21c32b0b32a61609e9f3a33272170f4debdde3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f3e27951f3b9b348583821ddc62bd3dddd5de58
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119759665"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466131"
 ---
 # <a name="change-info-identifiers"></a>Cambiar identificadores de información
 
@@ -46,7 +46,7 @@ Cadena que describe el significado del cambio desde el punto de vista de la apli
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                     |
 | Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                            |
-| Header<br/>                   | <dl> <dt>UIAutomationClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>UIAutomationClient.h</dt> </dl> |
 
 
 

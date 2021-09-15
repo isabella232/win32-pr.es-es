@@ -12,12 +12,12 @@ api_name:
 - ObjectRayDirection
 api_type:
 - NA
-ms.openlocfilehash: 780acd5edcf4b40167048b1d2a52c54b6e581b0e5ce23ee18eead46efdcb1d8a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1cc291a33f91bf7fc0565596bdd075a86e193246
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119279915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465555"
 ---
 # <a name="objectraydirection"></a>ObjectRayDirection
 
@@ -32,9 +32,9 @@ float3 ObjectRayDirection();
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Se puede llamar a esta función desde los siguientes tipos de sombreador:
+Se puede llamar a esta función desde los siguientes tipos de sombreador de raytracción:
 
 * [**Sombreador de cualquier acierto**](any-hit-shader.md)
 * [**Sombreador del acierto más cercano**](closest-hit-shader.md)
@@ -44,7 +44,7 @@ Se puede llamar a esta función desde los siguientes tipos de sombreador:
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

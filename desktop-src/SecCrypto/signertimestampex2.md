@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Mssign32.dll
-ms.openlocfilehash: c5a9bfc81c3196657f611c9263e0d957ca867a64479b34900dce7078237e195f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 07dc9162c9cb8832e93e2518c7208d235d878875
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118898274"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270839"
 ---
 # <a name="signertimestampex2-function"></a>Función SignerTimeStampEx2
 
@@ -57,7 +57,7 @@ Valor que especifica el tipo de marca de tiempo que se generará. Este parámetr
 
 
 
-| Valor                                                                                                                                                                                                          | Significado                                                |
+| Value                                                                                                                                                                                                          | Significado                                                |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
 | <span id="SIGNER_TIMESTAMP_AUTHENTICODE"></span><span id="signer_timestamp_authenticode"></span><dl> <dt>**SIGNER \_ TIMESTAMP \_ AUTHENTICODE**</dt> </dl> | Especifica una marca de tiempo Authenticode.<br/>       |
 | <span id="SIGNER_TIMESTAMP_RFC3161"></span><span id="signer_timestamp_rfc3161"></span><dl> <dt>**MARCA DE \_ TIEMPO DEL \_ FIRMANTE RFC3161**</dt> </dl>                | Especifica una marca de tiempo compatible con RFC 3161.<br/> |
@@ -85,7 +85,7 @@ Dirección de una cadena Unicode terminada en NULL que contiene la dirección UR
 *dwAlgId* \[ En\]
 </dt> <dd>
 
-Especifica un algoritmo hash que se usará para realizar marcas de tiempo compatibles con RFC 3161. Este parámetro se omite para las marcas de tiempo Authenticode.
+Especifica un algoritmo hash que se usará para realizar marcas de tiempo compatibles con RFC 3161. Este parámetro se omite para las marcas de tiempo authenticode.
 
 </dd> <dt>
 
@@ -124,9 +124,9 @@ Si se produce un error en la función, devuelve un **valor HRESULT** que indica 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                              |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>                                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                 |
 | Archivo DLL<br/>                      | <dl> <dt>Mssign32.dll</dt> </dl> |
 

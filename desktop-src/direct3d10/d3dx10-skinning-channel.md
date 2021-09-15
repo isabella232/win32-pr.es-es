@@ -1,5 +1,5 @@
 ---
-description: El miembro del vértice que se decl para realizar el desnasado de software. Se usa con la API ID3DX10SkinInfo::D oSoftwareSkinning.
+description: Miembro de la decl del vértice en el que se debe realizar el desnasado de software. Se usa con la API ID3DX10SkinInfo::D oSoftwareSkinning.
 ms.assetid: 67c817cd-ce78-4e8b-bdc3-7c4d6670dee1
 title: D3DX10_SKINNING_CHANNEL estructura (D3DX10.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10.h
-ms.openlocfilehash: b8e976ba1aecdeb792ba45fc4f60f25e7feb5a7dde3f7fc845a22962e441bf2b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 79f5807dc2539d770d3caa41bddf7aa4960ce682
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119753535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566716"
 ---
-# <a name="d3dx10_skinning_channel-structure"></a>Estructura del CANAL \_ DE SKINNING de D3DX10 \_
+# <a name="d3dx10_skinning_channel-structure"></a>Estructura DEL CANAL \_ DE SKINNING de D3DX10 \_
 
-El miembro del vértice que se decl para realizar el desnasado de software. Se usa con la API [**ID3DX10SkinInfo::D oSoftwareSkinning.**](id3dx10skininfo-dosoftwareskinning.md)
+Miembro de la decl del vértice en el que se debe realizar el desnasado de software. Se usa con la API [**ID3DX10SkinInfo::D oSoftwareSkinning.**](id3dx10skininfo-dosoftwareskinning.md)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,7 +37,7 @@ typedef struct D3DX10_SKINNING_CHANNEL {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -70,7 +70,7 @@ Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Determina qué matriz de matrices se va a usar en la API [**ID3DX10SkinInfo::D oSoftwareSkinning.**](id3dx10skininfo-dosoftwareskinning.md) Si esto es así, *se usará pInverseTransposeDivers;* de lo contrario, *se usará pDivers.*
+Determina qué matriz de matrices se va a usar en la API [**ID3DX10SkinInfo::D oSoftwareSkinning.**](id3dx10skininfo-dosoftwareskinning.md) Si esto es así, *se usará pInverseTransposeDivencias;* de lo contrario, se usará *pBoneMatrices.*
 
 </dd> </dl>
 

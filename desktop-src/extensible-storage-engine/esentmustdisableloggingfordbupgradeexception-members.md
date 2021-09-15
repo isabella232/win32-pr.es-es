@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102332
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 870e91ee05c76f5a3d5528a97a00dc0d60b405f4cb76d377ac5d0160207d16c9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 925386905f742ac7a9fdc69d37e6d1c7308c1b85
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119363815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359176"
 ---
 # <a name="esentmustdisableloggingfordbupgradeexception-members"></a>Miembros de EsentMustDisableLoggingForDbUpgradeException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Clase base para JET_err. Excepciones MustDisableLoggingForDbUpgrade.
+Clase base para JET_err. MustDisableLoggingForDbUpgrade excepciones.
 
 El [tipo EsentMustDisableLoggingForDbUpgradeException](./esentmustdisableloggingfordbupgradeexception-class.md) expone los miembros siguientes.
 
@@ -164,7 +164,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

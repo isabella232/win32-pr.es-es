@@ -1,7 +1,7 @@
 ---
 description: Define métodos que controlan los eventos de la interfaz ITablet.
 ms.assetid: 9acf32fa-b33f-4b9a-be73-804b7d5434e8
-title: Interfaz ITabletEventSink
+title: ITabletEventSink (interfaz)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: a1a773f7b4e08a718c419de2d51c0ff3bd9bba551267188b12889b9ec99d4ded
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fc42bfe8a6e69504c35d7926c4c5a8b688404897
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118716465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467975"
 ---
-# <a name="itableteventsink-interface"></a>Interfaz ITabletEventSink
+# <a name="itableteventsink-interface"></a>ITabletEventSink (interfaz)
 
 Define métodos que controlan los [**eventos de la interfaz ITablet.**](itablet.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz ITabletEventSink** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ITabletEventSink** también tiene estos tipos de miembros:
 
@@ -41,20 +41,20 @@ La **interfaz ITabletEventSink** tiene estos métodos.
 |:--------------------------------------------------------------|:-------------------------------------------------------------------------------------------------|
 | [**ContextCreate**](itableteventsink-contextcreate.md)       | Se produce cuando se crea un nuevo contexto de tableta.<br/>                                          |
 | [**ContextDestroy**](itableteventsink-contextdestroy.md)     | Se produce cuando se destruye un contexto de tableta.<br/>                                      |
-| [**CursorDown**](itableteventsink-cursordown.md)             | Se produce cuando la punta del lápiz óptico se pone en contacto con la superficie de la tableta de digitalización.<br/>                    |
-| [**CursorInRange**](itableteventsink-cursorinrange.md)       | Se produce cuando un lápiz óptico entra dentro del intervalo de detección del digitalizador.<br/>                 |
+| [**CursorDown**](itableteventsink-cursordown.md)             | Se produce cuando la punta del lápiz se pone en contacto con la superficie de digitalización de la tableta.<br/>                    |
+| [**CursorInRange**](itableteventsink-cursorinrange.md)       | Se produce cuando un lápiz óptico se encuentra dentro del intervalo de detección del digitalizador.<br/>                 |
 | [**CursorMove**](itableteventsink-cursormove.md)             | Se produce cuando el cursor se mueve sobre el digitalizador de tabletas.<br/>                               |
 | [**CursorNew**](itableteventsink-cursornew.md)               | Se produce cuando se agrega un nuevo lápiz óptico al sistema.<br/>                                      |
 | [**CursorOutOfRange**](itableteventsink-cursoroutofrange.md) | Se produce cuando el lápiz óptico sale del intervalo de detección físico (proximidad) de la tableta.<br/> |
 | [**CursorUp**](itableteventsink-cursorup.md)                 | Se produce cuando el usuario ha elevado el lápiz óptico de la superficie del digitalizador de tabletas.<br/>         |
 | [**Paquetes**](itableteventsink-packets.md)                   | Se produce cuando el lápiz óptico se mueve en el digitalizador.<br/>                                    |
-| [**SystemEvent**](itableteventsink-systemevent.md)           | Se produce cuando hay un evento del sistema disponible.<br/>                                              |
+| [**SystemEvent**](itableteventsink-systemevent.md)           | Se produce cuando hay disponible un evento del sistema.<br/>                                              |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los desarrolladores no deben usar esta interfaz.
 
@@ -136,7 +136,7 @@ interface ITabletEventSink: IUnknown
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                              |

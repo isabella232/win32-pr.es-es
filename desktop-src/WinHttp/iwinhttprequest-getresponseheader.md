@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 1566ea05f78f9e90a97db3a14c61f7c59cfc61ecdb1eb390823d99a32d4983ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6e51b0973c7b078c7de592565db19bf6e029c5a7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119643885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360546"
 ---
 # <a name="iwinhttprequestgetresponseheader-method"></a>IWinHttpRequest::GetResponseHeader (método)
 
@@ -59,7 +59,7 @@ Recibe la información de encabezado resultante.
 
 El valor devuelto es **S \_ OK si se** ejecuta correctamente o un valor de error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método devuelve el valor del encabezado de respuesta denominado en *Header*. Tenga en cuenta que los clientes de automatización, como el script, obtienen los datos de encabezado como el valor devuelto de la llamada de función, no a través de un parámetro de función. Invoque este método solo después [**de llamar**](iwinhttprequest-send.md) al método Send.
 
@@ -70,7 +70,7 @@ Este método devuelve el valor del encabezado de respuesta denominado en *Header
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y obtener el encabezado de fecha de la respuesta. Este ejemplo debe ejecutarse desde un símbolo del sistema.
+En el ejemplo siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y obtener el encabezado date de la respuesta. Este ejemplo debe ejecutarse desde un símbolo del sistema.
 
 
 ```C++
@@ -194,18 +194,18 @@ WScript.Echo( WinHttpReq.GetResponseHeader("Date"));
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>            |
 | Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
 | Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
-| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | Archivo DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -14,11 +14,11 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: 55e2801ae8726fe10933b45e592e6f633f6455ea
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122622101"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466240"
 ---
 # <a name="tabgroup-element"></a>Elemento TabGroup
 
@@ -71,7 +71,7 @@ Representa un conjunto contextual de [controles Tab.](windowsribbon-controls-tab
 
 | Elemento                                             | Descripción                                     |
 |-----------------------------------------------------|-------------------------------------------------|
-| [**Tabulación**](windowsribbon-element-tab.md)<br/> | Debe producirse al menos una vez<br/> <br/> |
+| [**Pestaña**](windowsribbon-element-tab.md)<br/> | Debe producirse al menos una vez<br/> <br/> |
 
 
 
@@ -85,7 +85,7 @@ Representa un conjunto contextual de [controles Tab.](windowsribbon-controls-tab
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Necesario.
 

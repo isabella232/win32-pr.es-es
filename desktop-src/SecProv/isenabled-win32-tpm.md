@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: 1d61c96d9c80ae77f9869261905fb93461530b452deaf7a4709b394623a3dfab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d808bb68e53b1a24ff668d1b7a9680b5d57b5e9a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119667505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270684"
 ---
-# <a name="isenabled-method-of-the-win32_tpm-class"></a>Método IsEnabled de la clase Tpm de \_ Win32
+# <a name="isenabled-method-of-the-win32_tpm-class"></a>Método IsEnabled de la clase Tpm \_ win32
 
 El **método IsEnabled** de la [**clase \_ Tpm de Win32**](win32-tpm.md) indica si el dispositivo está habilitado. Los métodos [**Enable**](enable-win32-tpm.md) y [**Disable**](disable-win32-tpm.md) pueden cambiar este valor.
 
@@ -66,9 +66,9 @@ A continuación se enumeran los códigos de retorno comunes.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Según la especificación Trusted Computing Group (TCG) v1.2, solo están disponibles los siguientes comandos cuando el dispositivo está en estado desactivado.
+Según la especificación Trusted Computing Group (TCG) v1.2, solo están disponibles los siguientes comandos cuando el dispositivo está desactivado.
 
 -   TPM \_ ContinueSelfTest
 -   TPM \_ DSAP
@@ -79,7 +79,7 @@ Según la especificación Trusted Computing Group (TCG) v1.2, solo están dispon
 -   TPM \_ OIAP
 -   TPM \_ OSAP
 -   TPM \_ OwnerSetDisable
--   Restablecimiento \_ de PCR de TPM \_
+-   Restablecimiento \_ de PCR de \_ TPM
 -   TPM \_ PhysicalDisable
 -   Tpm \_ físicoEnable
 -   TPM \_ PhysicalSetDeactivated
@@ -90,17 +90,17 @@ Según la especificación Trusted Computing Group (TCG) v1.2, solo están dispon
 -   TPM \_ SHA1Complete
 -   TPM \_ SHA1Start
 -   TPM \_ SHA1Update
--   Inicio de TPM \_
+-   Inicio de \_ TPM
 -   TPM \_ TakeOwnership
--   Controlador de \_ terminación de TPM \_
+-   Controlador de \_ terminación \_ de TPM
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
+Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de administración (WMI). Los archivos MOF no se instalan como parte de Windows SDK. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                      |
@@ -110,7 +110,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

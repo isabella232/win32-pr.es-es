@@ -4,12 +4,12 @@ description: Documentación de referencia para elementos de marcado complementar
 ms.assetid: 9f80d65b-4912-4b93-9374-25913f0def08
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2107e0872fe9471b264011440e767a20c8b46ebb321cda1cc2bc1ea2be53592
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8c5688dac144f555a4db53af7ccda44960fe1eb6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119028723"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466754"
 ---
 # <a name="others"></a>Otros
 
@@ -19,7 +19,7 @@ Documentación de referencia para elementos de marcado complementarios en el mar
 
 | Tema                                                                              | Contenido                                                                                                                                                                                                       |
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Aplicación**](windowsribbon-element-application.md)                           | Representa el elemento de nivel superior de la especificación de marcado del marco de la cinta de opciones.<br/>                                                                                                                      |
+| [**Application**](windowsribbon-element-application.md)                           | Representa el elemento de nivel superior de la especificación de marcado del marco de la cinta de opciones.<br/>                                                                                                                      |
 | [**Application.Commands**](windowsribbon-element-application-commands.md)         | Representa un contenedor para todos los comandos definidos por la aplicación.<br/>                                                                                                                    |
 | [**Application.Views**](windowsribbon-element-application-views.md)               | Representa un contenedor para cada vista del marco de la cinta de opciones, específicamente la [**cinta de opciones**](windowsribbon-element-ribbon.md) y [**contextPopup**](windowsribbon-element-contextpopup.md).<br/>          |
 | [**ColumnBreak**](windowsribbon-element-columnbreak.md)                           | Representa un separador vertical (visible u oculto) en plantillas [**de diseño SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizadas.<br/>                                                      |

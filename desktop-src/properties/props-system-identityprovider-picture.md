@@ -4,12 +4,12 @@ ms.assetid: 68da1d13-9067-47c8-96a0-22c55984088a
 title: System.IdentityProvider.Picture
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7450a09fcdf508a7cf4b5579b1082803715c5e293a9559292ee31c3e46b6c47c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ce9e38a35909324940bd92c3ac20815da4359aeb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119844725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468478"
 ---
 # <a name="systemidentityproviderpicture"></a>System.IdentityProvider.Picture
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

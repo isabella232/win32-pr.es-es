@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 877f7b00953bff6cbac585fc549e9fa44d1ba98e89720b2d1a8317c2538ed64f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 23f00b5162ddb42efd9fae759bab1ea47efc04dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118275698"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568845"
 ---
 # <a name="eap-element-user-property"></a>Elemento Eap (propiedad de usuario)
 
@@ -31,7 +31,7 @@ El **elemento Eap** captura el tipo de método seleccionado y la configuración 
  />
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El método puede definir los elementos constituyentes dentro del **elemento Eap.** El método también realiza la validación del esquema en los elementos de **Eap**.
 
@@ -39,14 +39,14 @@ El método puede definir los elementos constituyentes dentro del **elemento Eap.
 
 
 
-| Rol | Versión mínima admitida del sistema operativo |
+| Role | Versión mínima admitida del sistema operativo |
 |------|------------------------------|
-| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
-| Server<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
+| Remoto<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

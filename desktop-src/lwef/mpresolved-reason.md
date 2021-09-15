@@ -15,18 +15,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a365ef55d9fe2d76e619f3c772cc1df2e6c5e1c8c33721f24dc844d064b33398
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ab31fc8b734852ccdf15278f535d916228b43976
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118975985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569073"
 ---
 # <a name="mpresolved_reason-enumeration"></a>Enumeración MPRESOLVED \_ REASON
 
 Posibles motivos para resolver un error de corrección.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -46,7 +46,7 @@ typedef enum tagMPRESOLVED_REASON {
 <span id="MPRESOLVED_REASON_UNKNOWN"></span><span id="mpresolved_reason_unknown"></span>**MOTIVO MPRESOLVED \_ \_ DESCONOCIDO**
 </dt> <dd>
 
-En estado de error.
+En un estado de error.
 
 </dd> <dt>
 
@@ -72,7 +72,7 @@ Ha pasado suficiente tiempo. El valor predeterminado es una semana.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                            |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

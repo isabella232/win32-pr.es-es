@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: d5ebd98ebc887d26bcee4799ffa3412df803fd0dfa099ac41bc69e1c25d83f06
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bca80554e25378af1c078a36a02222390b771874
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119592705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466879"
 ---
 # <a name="sfvm_columnclick-message"></a>Mensaje \_ COLUMNCLICK de SFVM
 
@@ -46,7 +46,7 @@ SFVM_COLUMNCLICK
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En respuesta a esta notificación, debe devolver S \_ OK para reorganizar la lista usted mismo. Para que el objeto de vista de carpetas del sistema reordene la lista, devuelva S \_ FALSE.
 

@@ -15,18 +15,18 @@ keywords:
 - interfaces,ITableItemProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: babb64114bb761b0b6e93a7cc9c0036cb01bb8946eb813bcd0fc3e821d44a183
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bae3e6d5379ec9a662e31ec6181476b112631381
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120098275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465999"
 ---
 # <a name="tableitem-control-pattern"></a>Patrón de control TableItem
 
 Describe las directrices y convenciones para implementar [**ITableItemProvider,**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableitemprovider)incluida la información sobre los métodos. El patrón de control **TableItem** se usa para admitir controles secundarios de contenedores que implementan [**ITableProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableprovider).
 
-La implementación simultánea necesaria de [**IGridItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igriditemprovider)proporciona acceso a la funcionalidad de celda individual. Este patrón de control es análogo a **IGridItemProvider** con la distinción de que cualquier control que implemente [**ITableItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableitemprovider) debe exponer mediante programación la relación entre la celda individual y su información de fila y columna. Para obtener ejemplos de controles que implementan este patrón de control, vea [Tipos de control y Sus patrones de control admitidos.](uiauto-controlpatternmapping.md)
+La implementación simultánea necesaria de [**IGridItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-igriditemprovider)proporciona acceso a la funcionalidad de celda individual. Este patrón de control es análogo a **IGridItemProvider** con la distinción de que cualquier control que implemente [**ITableItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-itableitemprovider) debe exponer mediante programación la relación entre la celda individual y su información de fila y columna. Para obtener ejemplos de controles que implementan este patrón de control, vea [Tipos de control y sus patrones de control admitidos.](uiauto-controlpatternmapping.md)
 
 En este tema se incluyen las siguientes secciones.
 
@@ -38,7 +38,7 @@ En este tema se incluyen las siguientes secciones.
 
 Al implementar el patrón de control **TableItem,** tenga en cuenta las siguientes directrices y convenciones:
 
--   Para obtener la funcionalidad de elemento de cuadrícula relacionada, [vea GridItem Control Pattern](uiauto-implementinggriditem.md).
+-   Para obtener información sobre la funcionalidad de elementos de cuadrícula relacionadas, [vea GridItem Control Pattern](uiauto-implementinggriditem.md).
 
 ## <a name="required-members-for-itableitemprovider"></a>Miembros necesarios para **ITableItemProvider**
 
@@ -48,8 +48,8 @@ Los métodos siguientes son necesarios para implementar la [**interfaz ITableIte
 
 | Miembros requeridos                                                               | Tipo de miembro | Notas |
 |--------------------------------------------------------------------------------|-------------|-------|
-| [**GetColumnHeaderItems**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itableitemprovider-getcolumnheaderitems) | Método      | Ninguno  |
-| [**GetRowHeaderItems**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itableitemprovider-getrowheaderitems)       | Método      | Ninguno  |
+| [**GetColumnHeaderItems**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itableitemprovider-getcolumnheaderitems) | Método      | None  |
+| [**GetRowHeaderItems**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itableitemprovider-getrowheaderitems)       | Método      | None  |
 
 
 

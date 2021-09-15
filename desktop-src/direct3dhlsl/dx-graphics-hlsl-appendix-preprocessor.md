@@ -1,6 +1,6 @@
 ---
 title: Directivas de preprocesador (HLSL)
-description: Las directivas de preprocesador, como \ define e \ ifdef, se usan normalmente para que los programas de origen sean fáciles de cambiar y fáciles de compilar en diferentes entornos de ejecución.
+description: Las directivas de preprocesador, como \ define y \ ifdef, se usan normalmente para que los programas de origen sean fáciles de cambiar y fáciles de compilar en diferentes entornos de ejecución.
 ms.assetid: b5164c0e-62ab-4da5-9c22-efb5e6319bd6
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,27 +9,27 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a2f26a12cf551e71d390e7e8fd0d4ad44f812ac72595135d777f10b00cbb2fb6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8efdd996ddeb58c09d1c8250f174c21bb939f082
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118792137"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568373"
 ---
 # <a name="preprocessor-directives-hlsl"></a>Directivas de preprocesador (HLSL)
 
-Las directivas de preprocesador, como [ \# define](dx-graphics-hlsl-appendix-pre-define.md) e [ \# ifdef,](dx-graphics-hlsl-appendix-pre-ifdef.md)se usan normalmente para que los programas de origen sean fáciles de cambiar y fáciles de compilar en diferentes entornos de ejecución. Las directivas del archivo de código fuente indican al preprocesador que realice acciones específicas. Por ejemplo, el preprocesador puede reemplazar tokens en el texto, insertar el contenido de otros archivos en el archivo de código fuente o suprimir la compilación de parte del archivo quitando secciones de texto. Las líneas de preprocesador se reconocen y se ejecutan antes de la expansión de macro. Por consiguiente, si una macro se expande en algo que se parezca a un comando de preprocesador, el preprocesador no reconocerá ese comando.
+Las directivas de preprocesador, como [ \# define](dx-graphics-hlsl-appendix-pre-define.md) y [ \# ifdef,](dx-graphics-hlsl-appendix-pre-ifdef.md)se usan normalmente para que los programas de origen sean fáciles de cambiar y fáciles de compilar en diferentes entornos de ejecución. Las directivas del archivo de código fuente indican al preprocesador que realice acciones específicas. Por ejemplo, el preprocesador puede reemplazar tokens en el texto, insertar el contenido de otros archivos en el archivo de código fuente o suprimir la compilación de parte del archivo quitando secciones de texto. Las líneas de preprocesador se reconocen y se ejecutan antes de la expansión de macro. Por consiguiente, si una macro se expande en algo que se parezca a un comando de preprocesador, el preprocesador no reconocerá ese comando.
 
 Las instrucciones de preprocesador utilizan el mismo juego de caracteres que las instrucciones del archivo de código fuente, con la excepción de que no se admiten secuencias de escape. El juego de caracteres utilizado en las instrucciones de preprocesador es el mismo que el juego de caracteres de la ejecución. El preprocesador también reconoce valores de caracteres negativos.
 
 El preprocesador HLSL reconoce las siguientes directivas:
 
 -   [\#Definir](dx-graphics-hlsl-appendix-pre-define.md)
--   [\#elif](dx-graphics-hlsl-appendix-pre-if.md)
+-   [\#Elif](dx-graphics-hlsl-appendix-pre-if.md)
 -   [\#else](dx-graphics-hlsl-appendix-pre-if.md)
 -   [\#endif](dx-graphics-hlsl-appendix-pre-if.md)
 -   [\#Error](dx-graphics-hlsl-appendix-pre-error.md)
--   [\#if](dx-graphics-hlsl-appendix-pre-if.md)
+-   [\#Si](dx-graphics-hlsl-appendix-pre-if.md)
 -   [\#ifdef](dx-graphics-hlsl-appendix-pre-ifdef.md)
 -   [\#ifndef](dx-graphics-hlsl-appendix-pre-ifdef.md)
 -   [\#incluír](dx-graphics-hlsl-appendix-pre-include.md)
@@ -37,7 +37,7 @@ El preprocesador HLSL reconoce las siguientes directivas:
 -   [\#Pragma](dx-graphics-hlsl-appendix-pre-pragma.md)
 -   [\#undef](dx-graphics-hlsl-appendix-pre-undef.md)
 
-El signo de número ( ) debe ser el primer carácter de espacio no blanco en la línea que contiene la directiva; los caracteres de espacio en blanco pueden aparecer entre el signo de número y la primera letra de \# la directiva. Algunas directivas incluyen argumentos o valores. Cualquier texto que sigue a una directiva (excepto un argumento o valor que forma parte de la directiva) debe ir precedido del delimitador de comentario de una sola línea (//) o delimitado por delimitadores de comentarios (/ \* \* /). Las líneas que contienen directivas de preprocesador se pueden continuar inmediatamente antes del marcador de fin de línea con una barra diagonal inversa ( \\ ).
+El signo de número ( ) debe ser el primer carácter de espacio no blanco en la línea que contiene la directiva; los caracteres de espacio en blanco pueden aparecer entre el signo de número y la primera letra de \# la directiva. Algunas directivas incluyen argumentos o valores. Cualquier texto que siga a una directiva (excepto un argumento o valor que forma parte de la directiva) debe ir precedido por el delimitador de comentario de una sola línea (//) o incluirse entre delimitadores de comentario (/ \* \* /). Las líneas que contienen directivas de preprocesador pueden continuar precediendo inmediatamente al marcador de fin de línea con una barra diagonal inversa ( \\ ).
 
 Las directivas de preprocesador pueden aparecer en cualquier lugar de un archivo de código fuente, pero solo se aplican al resto del archivo de código fuente.
 
@@ -45,7 +45,7 @@ Las directivas de preprocesador pueden aparecer en cualquier lugar de un archivo
 
 <dl> <dt>
 
-[Apéndice (DirectX HLSL)](dx-graphics-hlsl-appendix.md)
+[Apéndice (HLSL de DirectX)](dx-graphics-hlsl-appendix.md)
 </dt> </dl>
 
  

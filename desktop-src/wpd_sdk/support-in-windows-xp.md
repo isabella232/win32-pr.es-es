@@ -4,12 +4,12 @@ ms.assetid: c1338d92-fc6b-4b9d-abe8-a71cce55fc29
 title: Compatibilidad con Windows XP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bcf71aec8f8b633157a722e777886b7cf1fec0540cba159e5bbf783bc6a0cf8b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0d7c83e19a58090ecba8df3ff6532115f2f8700f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119083409"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466652"
 ---
 # <a name="support-in-windows-xp"></a>Compatibilidad con Windows XP
 

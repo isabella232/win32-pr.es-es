@@ -1,9 +1,9 @@
 ---
-title: VendorType (EapMethodType), elemento
-description: Obtenga información sobre el elemento VendorType (EapMethodType). Este elemento es el tipo definido por el proveedor para el método.
+title: Elemento VendorType (EapMethodType)
+description: Obtenga información sobre el elemento VendorType (EapMethodType). Este elemento es el tipo definido por el proveedor para el método .
 ms.assetid: baa43e60-05e2-43f9-bb38-896725be76b4
 keywords:
-- Elemento VendorType de VendorType
+- Elemento VendorType EAPHost
 topic_type:
 - apiref
 api_name:
@@ -15,17 +15,17 @@ ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 29030672cea0deff59f7f3026dcac98d6ff1c178
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104488271"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568788"
 ---
-# <a name="vendortype-eapmethodtype-element"></a>VendorType (EapMethodType), elemento
+# <a name="vendortype-eapmethodtype-element"></a>Elemento VendorType (EapMethodType)
 
-El elemento **VendorType (EapMethodType)** es el tipo definido por el proveedor para el método.
+El **elemento VendorType (EapMethodType)** es el tipo definido por el proveedor para el método .
 
-El elemento **VendorType** es opcional. Si se utiliza, **VendorType** es un número único emitido por Internet Assigned Numbers Authority (IANA).
+El **elemento VendorType** es opcional. Si se usa, **VendorType es** un número único emitido por internet Assigned Numbers Authority (IANA).
 
 ``` syntax
 <xs:element name="VendorType"
@@ -33,7 +33,7 @@ El elemento **VendorType** es opcional. Si se utiliza, **VendorType** es un núm
  />
 ```
 
-El elemento **VendorType** se define mediante el tipo complejo [**EapMethodType**](eapcommonschema-eapmethodtype-complextype.md) .
+El tipo complejo [**EapMethodType**](eapcommonschema-eapmethodtype-complextype.md) define el elemento **VendorType.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,8 +41,8 @@ El elemento **VendorType** se define mediante el tipo complejo [**EapMethodType*
 
 | Role | Versión mínima admitida del sistema operativo |
 |------|------------------------------|
-| Remoto<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>       |
-| Servidor<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/> |
+| Remoto<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 

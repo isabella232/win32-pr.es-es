@@ -3,12 +3,12 @@ description: Describe cómo usar la Herramienta de búsqueda de errores de Micro
 title: Herramienta de búsqueda de errores de Microsoft
 ms.topic: article
 ms.date: 12/4/2019
-ms.openlocfilehash: 534b2af92b8dc0e906bd033e8ce1f0fbd08ead0cda21406d1818a318356db613
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e39b5623458fc176f5ecc81eae71212ba279945c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118405895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568569"
 ---
 # <a name="the-microsoft-error-lookup-tool"></a>Herramienta de búsqueda de errores de Microsoft
 

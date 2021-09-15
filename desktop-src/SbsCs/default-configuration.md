@@ -4,12 +4,12 @@ ms.assetid: febae617-4c17-4fc0-9c2d-0f5be5fdd5a8
 title: Configuración predeterminada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c8471b4272bd1b32a3a4b82659b209efc82d2c75fb6a365d2332cf262949f1f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 310de7a85bbf14c2cf2033730d7bc3479c87cbf8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119885535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271636"
 ---
 # <a name="default-configuration"></a>Configuración predeterminada
 

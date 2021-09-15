@@ -4,12 +4,12 @@ ms.assetid: 2e3008b6-e427-468a-9381-f1d4866111c7
 title: System.Contact.AssistantTelephone
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22f5569604caced9eb277d642341d8a3819c2a5ebe1d03effd96e9a0fa394ab5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f08074906e97819126d4dc449d2f81576c8960c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118730317"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360434"
 ---
 # <a name="systemcontactassistanttelephone"></a>System.Contact.AssistantTelephone
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

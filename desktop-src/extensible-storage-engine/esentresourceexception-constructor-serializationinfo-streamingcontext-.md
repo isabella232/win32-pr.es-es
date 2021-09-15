@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 67714d720cf559d66b2f253e2b13c630877d4421462cb4c1e5de59e574687c61
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4f7b52e211d155b92a9917670682af735eedf9fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120018490"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568312"
 ---
 # <a name="esentresourceexception-constructor-serializationinfo-streamingcontext"></a>EsentResourceException constructor (SerializationInfo, StreamingContext)
 
@@ -70,7 +70,7 @@ protected EsentResourceException(
     
     Contexto de la deserialización.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

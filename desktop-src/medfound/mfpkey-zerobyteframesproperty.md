@@ -4,12 +4,12 @@ ms.assetid: ef4aa5a0-3788-493e-b541-c3a24509d939
 title: MFPKEY_ZEROBYTEFRAMES propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 373d0e7d40b27edff8ae47c9081ef6acb55252858a677c6516877fe88bee392c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ffcf29d099b3a3fb27a307e970af7af1a5c3d58b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119953255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468604"
 ---
 # <a name="mfpkey_zerobyteframes-property"></a>Propiedad ZEROBYTEFRAMES de MFPKEY \_
 
@@ -23,9 +23,9 @@ g \_ wszWMVCZeroByteFrames
 
 VT \_ I4
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este valor no se resta del número total de[fotogramas pasados (MFPKEY \_ TOTALFRAMES)](mfpkey-totalframesproperty.md)al calcular el número de fotogramas[codificados (MFPKEY \_ CODEDFRAMES).](mfpkey-codedframesproperty.md)
+Este valor no se resta del número total de[ \_ fotogramas pasados (TOTALFRAMES de MFPKEY)](mfpkey-totalframesproperty.md)al calcular el número de fotogramas[codificados (MFPKEY \_ CODEDFRAMES](mfpkey-codedframesproperty.md)).
 
 Puede impedir que el códec otee fotogramas duplicados estableciendo [MFPKEY \_ PRODUCEDUMMYFRAMES](mfpkey-producedummyframesproperty.md) en VARIANT \_ TRUE.
 
@@ -37,9 +37,9 @@ Puede obtener este valor una vez que haya terminado de pasar ejemplos.
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
 title: UI_PKEY_StandardColorsTooltips
-description: Identifica la propiedad \_ PKEY \_ StandardColorsTooltips de la interfaz de usuario.
+description: Identifica la propiedad \_ Ui PKEY \_ StandardColorsTooltips.
 ms.assetid: 78786f72-69d3-44f6-bef4-51d0f4497dfb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c91cb8d68c10fa770bd5365721f7196c1946bad13b9185717b5b6fb5d67d53b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c32a1eedbff092ad7b37a3fbe26748b7fe9d017
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118437810"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467116"
 ---
 # <a name="ui_pkey_standardcolorstooltips"></a>UI \_ PKEY \_ StandardColorsTooltips
 
-Identifica la propiedad \_ PKEY \_ StandardColorsTooltips de la interfaz de usuario.
+Identifica la propiedad \_ Ui PKEY \_ StandardColorsTooltips.
 
 ```
 propertyDescription
@@ -25,13 +25,13 @@ propertyDescription
       type = VT_VECTOR | VT_LPWSTR
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La interfaz de usuario PKEY StandardColorsTooltips la usa una aplicación para consultar la información sobre herramientas de la muestra de color de \_ \_ un elemento [**DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md)
+La interfaz de usuario PKEY StandardColorsTooltips se usa en una aplicación para consultar la información sobre herramientas de la muestra de color de \_ \_ un elemento [**DropDownColorPicker.**](windowsribbon-element-dropdowncolorpicker.md)
 
 El valor de propiedad es una matriz de valores de cadena.
 
-Cada valor de cadena corresponde a la información sobre herramientas de una muestra de color en [**DropDownColorPicker,**](windowsribbon-element-dropdowncolorpicker.md) independientemente del valor especificado para el **atributo ColorTemplate.**
+Cada valor de cadena corresponde a la información sobre herramientas de una muestra de color en [**DropDownColorPicker**](windowsribbon-element-dropdowncolorpicker.md) independientemente del valor especificado para el **atributo ColorTemplate.**
 
 ## <a name="related-topics"></a>Temas relacionados
 

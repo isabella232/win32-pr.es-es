@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 9170340a-0f11-4ec9-877d-fb7fef9888b2
-ms.openlocfilehash: 325fef2c56ec4f2fa31508c0f9b0f34f63097161e3ef7d4ecb835fe62c8c4fb3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 26c3112faa748aa443526fbe9cb493af67502cd7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118220408"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468158"
 ---
 # <a name="ishelldispatch5-object"></a>Objeto IShellDispatch5
 
@@ -29,7 +29,7 @@ Extiende el [**objeto IShellDispatch4.**](ishelldispatch4.md) Además de las pro
 
  
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto IShellDispatch5** tiene estos tipos de miembros:
 
@@ -57,13 +57,13 @@ El **objeto IShellDispatch5** tiene estos métodos.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

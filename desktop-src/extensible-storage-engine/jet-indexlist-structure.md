@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: e21353fb780ed7346c1ff82cbc5057469da25a4b
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122987488"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566997"
 ---
 # <a name="jet_indexlist-structure"></a>Estructura de JET_INDEXLIST
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_indexlist-structure"></a>Estructura de JET_INDEXLIST
 
-La **JET_INDEXLIST** estructura contiene la información necesaria para recorrer una tabla temporal creada por las funciones [JetGetIndexInfo](./jetgetindexinfo-function.md) o [JetGetTableIndexInfo.](./jetgettableindexinfo-function.md) Cada fila de la tabla temporal describe una columna de un índice.
+La **JET_INDEXLIST** contiene la información necesaria para recorrer una tabla temporal creada por las funciones [JetGetIndexInfo](./jetgetindexinfo-function.md) o [JetGetTableIndexInfo.](./jetgettableindexinfo-function.md) Cada fila de la tabla temporal describe una columna de un índice.
 
 ```cpp
     typedef struct {
@@ -55,7 +55,7 @@ La **JET_INDEXLIST** estructura contiene la información necesaria para recorrer
     } JET_INDEXLIST;
 ```
 
-### <a name="members"></a>Miembros
+### <a name="members"></a>Members
 
 **cbStruct**
 
@@ -73,11 +73,11 @@ Número de registros de la tabla temporal que se creó.
 
 Identificador de columna del nombre del índice.
 
-Esta columna es un [JET_coltypText](./jet-coltyp.md).
+Esta columna es una [JET_coltypText](./jet-coltyp.md).
 
 **columnidgrbitIndex**
 
-Identificador de columna de *los grbits usados* en el índice. Consulte [JET_INDEXCREATE](./jet-indexcreate-structure.md) para obtener una lista de bits válidos.
+Identificador de columna de *los bits grbits usados* en el índice. Consulte [JET_INDEXCREATE](./jet-indexcreate-structure.md) para obtener una lista de bits válidos.
 
 Esta columna es una [JET_coltypLong](./jet-coltyp.md).
 
@@ -95,7 +95,7 @@ Esta columna es una [JET_coltypLong](./jet-coltyp.md).
 
 **columnidcPage**
 
-Identificador de columna del número de páginas que usa el índice. Esta columna es un [JET_coltypLong](./jet-coltyp.md).
+Identificador de columna del número de páginas que usa el índice. Esta columna es una [JET_coltypLong](./jet-coltyp.md).
 
 **columnidcColumn**
 
@@ -134,7 +134,7 @@ Esta columna es una [JET_coltypShort](./jet-coltyp.md).
 
 **columnidLangid**
 
-Identificador de columna del identificador de idioma (LCID) con el que se creó el índice. Para obtener más información, [vea JET_INDEXCREATE](./jet-indexcreate-structure.md).
+Identificador de columna del identificador de idioma (LCID) en el que se creó el índice. Para obtener más información, [vea JET_INDEXCREATE](./jet-indexcreate-structure.md).
 
 Esta columna es una [JET_coltypShort](./jet-coltyp.md).
 
@@ -170,7 +170,7 @@ Las siguientes opciones son válidas para este miembro.
 
 Identificador de columna del nombre de la columna.
 
-Esta columna es un [JET_coltypText](./jet-coltyp.md).
+Esta columna es una [JET_coltypText](./jet-coltyp.md).
 
 **columnidLCMapFlags**
 
@@ -182,7 +182,7 @@ Esta columna es una [JET_coltypLong](./jet-coltyp.md).
 
 Cada fila de la tabla temporal corresponde a una columna de un índice determinado.
 
-Por ejemplo, el índice "+A \\ 0+B \\ 0+C \\ 0+D \\ 0+E 0" es superior a cinco columnas y ocupará cinco filas en la \\ tabla temporal. Cada una de estas cinco filas tendrá un valor de 5 en la columna identificada por la columna columnid. Pero cada fila tendrá un valor diferente para la columna columnid, que va de 0 a 4.
+Por ejemplo, el índice "+A \\ 0+B \\ 0+C \\ 0+D \\ 0+E 0" es superior a cinco columnas y ocupará cinco filas en la \\ tabla temporal. Cada una de estas cinco filas tendrá un valor de 5 en la columna identificada por columnid columnid. Pero cada fila tendrá un valor diferente para la columna columnid, que va de 0 a 4.
 
 El número de claves de un índice determinado corresponde al número de valores únicos para los que un autor de la llamada puede buscar y obtener una coincidencia exacta. El número de entradas es el número de filas con las que coincide un índice. Si un índice tiene una restricción de unidad, el número de claves es igual al número de entradas. Por ejemplo, si una tabla contiene la siguiente información y se crea un índice sobre la columna denominada "key", hay tres claves (100, 200 y 500), pero hay cuatro entradas ("this", "is", "an" y "example").
 

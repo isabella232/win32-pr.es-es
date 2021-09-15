@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 5e2342bda1059e2bcb00893afb182e415840a4e650392fc3e1d3df4756cb2d03
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4a5010e4ac6b4fca42689f7c80db50c55ab2cb4a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119941575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468089"
 ---
 # <a name="shellundominimizeall-method"></a>Método Shell.UndoMinimizeALL
 
-Restaura todas las ventanas de escritorio al mismo estado que tenían antes del último [**comando MinimizeAll.**](shell-minimizeall.md) Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra  de tareas y seleccionar Deshacer Minimizar todo **Windows** en sistemas anteriores o un segundo clic en el icono Mostrar escritorio en el área inicio rápido de la barra de tareas en Windows 2000 o Windows XP.
+Restaura todas las ventanas de escritorio al mismo estado que tenían antes del último [**comando MinimizeAll.**](shell-minimizeall.md) Este método tiene el mismo efecto que hacer clic con el botón derecho en la barra de  tareas y seleccionar Deshacer minimizar todos **los Windows** en sistemas anteriores o un segundo clic en el icono Mostrar escritorio en el área inicio rápido de la barra de tareas en Windows 2000 o Windows XP.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ Este método no tiene parámetros.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **muestra UndoMinimizeALL** en uso. Se muestra el uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **muestra UndoMinimizeALL** en uso. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -105,10 +105,10 @@ End Sub
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de \[ escritorio XP\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

@@ -1,11 +1,11 @@
 ---
-title: IWMPMediaCollection2 getStringCollectionByQuery (método)
-description: El método getStringCollectionByQuery devuelve una interfaz IWMPStringCollection que proporciona acceso al conjunto de todos los valores de cadena para un atributo especificado que coincide con las condiciones de consulta.
+title: Método IWMPMediaCollection2 getStringCollectionByQuery
+description: El método getStringCollectionByQuery devuelve una interfaz IWMPStringCollection que proporciona acceso al conjunto de todos los valores de cadena de un atributo especificado que coinciden con las condiciones de consulta.
 ms.assetid: 2d3b29af-0b6c-4405-8334-9a47a30ff6de
 keywords:
 - Método getStringCollectionByQuery Reproductor de Windows Media
 - Método getStringCollectionByQuery Reproductor de Windows Media , interfaz IWMPMediaCollection2
-- Interfaz IWMPMediaCollection2 Reproductor de Windows Media método , getStringCollectionByQuery
+- Interfaz IWMPMediaCollection2 Reproductor de Windows Media , método getStringCollectionByQuery
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 054dd5b76cb6dcf3e6cb29ba624cd1f5c0f281d69c4b2b5e5125f5de9b4e7b04
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 322781bc9ddec3e6f8d74d7229f16ce38e519f05
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117745973"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466009"
 ---
 # <a name="iwmpmediacollection2getstringcollectionbyquery-method"></a>IWMPMediaCollection2::getStringCollectionByQuery (método)
 
-El `getStringCollectionByQuery` método devuelve una interfaz **IWMPStringCollection** que proporciona acceso al conjunto de todos los valores de cadena para un atributo especificado que coincide con las condiciones de consulta.
+El `getStringCollectionByQuery` método devuelve una interfaz **IWMPStringCollection** que proporciona acceso al conjunto de todos los valores de cadena para un atributo especificado que coinciden con las condiciones de consulta.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -100,11 +100,11 @@ Valor **System.Boolean** que indica si el conjunto de valores de cadena debe ord
 
 Interfaz **WMPLib.IWMPStringCollection** para el conjunto recuperado de valores de cadena.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las consultas compuestas **que usan IWMPQuery** no distinguen mayúsculas de minúsculas.
 
-Cuando la consulta compuesta especificada por el *parámetro pQuery* contiene una condición creada en el **atributo MediaType,** esa condición se omite. Siempre se usa el valor del *parámetro bstrMediaType.* Por ejemplo, si la consulta compuesta contiene la condición "MediaType Equals audio" y el valor del parámetro *bstrMediaType* es "video", la lista de reproducción resultante solo contendrá elementos de vídeo.
+Cuando la consulta compuesta especificada por el parámetro *pQuery* contiene una condición creada en el **atributo MediaType,** esa condición se omite. Siempre se usa el valor del *parámetro bstrMediaType.* Por ejemplo, si la consulta compuesta contiene la condición "MediaType Equals audio" y el valor del parámetro *bstrMediaType* es "video", la lista de reproducción resultante solo contendrá elementos de vídeo.
 
 ## <a name="requirements"></a>Requisitos
 

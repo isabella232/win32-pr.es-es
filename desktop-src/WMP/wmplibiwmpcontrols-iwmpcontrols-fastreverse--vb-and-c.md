@@ -1,11 +1,11 @@
 ---
 title: Método fastReverse de IWMPControls
-description: El método fastReverse inicia la reproducción rápida del elemento multimedia en la dirección inversa.
+description: El método fastReverse inicia el juego rápido del elemento multimedia en la dirección inversa.
 ms.assetid: 5c872e8d-2ffc-425f-a4dd-938ddd1426e0
 keywords:
 - Método fastReverse Reproductor de Windows Media
-- Método fastReverse Reproductor de Windows Media , interfaz IWMPControls
-- Interfaz IWMPControls Reproductor de Windows Media , método fastReverse
+- Método fastReverse Reproductor de Windows Media interfaz , IWMPControls
+- Interfaz IWMPControls Reproductor de Windows Media método , fastReverse
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 88bbc1442ca223765b498560d078879c9a7033011117b7f663d4d40ff26bdd93
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7061481aea13b0ed83c3a3d0eb47ca24b940358b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119761085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270407"
 ---
 # <a name="iwmpcontrolsfastreverse-method"></a>IWMPControls::fastReverse (método)
 
-El **método fastReverse** inicia la reproducción rápida del elemento multimedia en la dirección inversa.
+El **método fastReverse** inicia el juego rápido del elemento multimedia en la dirección inversa.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -53,15 +53,15 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **método fastReverse** examina el clip en orden inverso a una velocidad cinco veces mayor que la velocidad normal, mostrando solo los fotogramas clave si es un archivo de vídeo. Llamar **a fastReverse** equivale a especificar -5,0 para la velocidad estableciendo la **propiedad IWMPSettings.rate.** Si posteriormente se cambia la velocidad, o si se llama a **IWMPControls.play** o **IWMPControls.stop,** Reproductor de Windows Media dejará de invertirse rápidamente.
+El **método fastReverse** examina el clip en orden inverso cinco veces la velocidad normal, mostrando solo los fotogramas clave si es un archivo de vídeo. Llamar **a fastReverse** equivale a especificar -5,0 para la velocidad estableciendo la **propiedad IWMPSettings.rate.** Si posteriormente se cambia la velocidad, o si se llama a **IWMPControls.play** o **IWMPControls.stop,** Reproductor de Windows Media dejará de invertirse rápidamente.
 
-Si el elemento forma parte de una lista de reproducción, **fastReverse** se detiene al principio de la pista actual. Por ejemplo, si la pista 3 está en **fastReverse**, cuando se alcanza el principio de la pista 3, Reproductor de Windows Media no irá a la pista 2. El recuento de reproducción no se incrementa al llamar **a fastReverse**.
+Si el elemento forma parte de una lista de reproducción, **fastReverse** se detiene al principio de la pista actual. Por ejemplo, si la pista 3 está en **fastReverse**, cuando se alcanza el principio de la pista 3, Reproductor de Windows Media irá a la pista 2. El recuento de reproducción no se incrementa al llamar **a fastReverse.**
 
-Si llama a **IWMPControls.fastForward** mientras se ejecuta **fastReverse,** **fastReverse** se detendrán y **comenzará IWMPControls.fastForward.**
+Si llama a **IWMPControls.fastForward** mientras se ejecuta **fastReverse,** se detendrán **fastReverse** y se iniciará **IWMPControls.fastForward.**
 
-Este método no funciona para difusión en vivo y determinados tipos de medios digitales. Para determinar si puede usar la inversa rápida en un clip, pase el valor **System.String** "FastReverse" a la propiedad **IWMPControls.isAvailable** (el método **IWMPControls.get \_ isAvailable** en C#).
+Este método no funciona para difusión en vivo y determinados tipos de medios digitales. Para determinar si puede usar la inversa rápida en un clip, pase el valor **de System.String** "FastReverse" a la propiedad **IWMPControls.isAvailable** (el método **IWMPControls.get \_ isAvailable** en C#).
 
 ## <a name="examples"></a>Ejemplos
 
@@ -118,7 +118,7 @@ End Sub
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

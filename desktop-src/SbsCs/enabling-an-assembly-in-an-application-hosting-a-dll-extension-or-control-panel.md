@@ -1,15 +1,15 @@
 ---
-description: Si la aplicación hospeda un archivo DLL de terceros, una extensión, un complemento o un panel de control, es posible que desee habilitar un ensamblado en la aplicación&8212; sin habilitar también este ensamblado para los componentes \# hospedados.
+description: Si la aplicación hospeda un archivo DLL, una extensión, un complemento o un panel de control de terceros, es posible que desee habilitar un ensamblado en la aplicación&8212; sin habilitar también este ensamblado para los componentes \# hospedados.
 ms.assetid: 832957ca-82fc-4600-b469-512621dde921
 title: Habilitar un ensamblado en una aplicación que hospeda un archivo DLL, una extensión o una Panel de control
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23ac528c10d7ca0de903c6b132e0349c16061d63f121c390483458b4ef422d66
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4b04dd19b18c2cdce4783be47333b9afe53dd1ae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119885545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271615"
 ---
 # <a name="enabling-an-assembly-in-an-application-hosting-a-dll-extension-or-control-panel"></a>Habilitar un ensamblado en una aplicación que hospeda un archivo DLL, una extensión o una Panel de control
 
@@ -60,7 +60,7 @@ El método siguiente se puede usar para agregar un manifiesto a una aplicación 
     MANIFEST_RESOURCE_ID RT_MANIFEST "YourApp.manifest"
     ```
 
-3.  Compile la aplicación con la marca -DISOLATION AWARE ENABLED o inserte esta instrucción antes de incluir \_ \_ la instrucción \# "Windows.h". En el caso de una aplicación con varios módulos, se requiere la marca -DISOLATION \_ AWARE ENABLED en todos los \_ módulos.
+3.  Compile la aplicación con la marca -DISOLATION AWARE ENABLED o inserte esta instrucción antes de incluir la \_ \_ instrucción \# "Windows.h". En el caso de una aplicación con varios módulos, se requiere la marca -DISOLATION \_ AWARE ENABLED en todos los \_ módulos.
 
     ``` syntax
     #define ISOLATION_AWARE_ENABLED 1

@@ -5,7 +5,7 @@ ms.assetid: e8b7c104-09f7-4bfb-9980-a5603550b723
 keywords:
 - Método AsUnorderedAccessView Direct3D 11
 - Método AsUnorderedAccessView Direct3D 11 , interfaz ID3DX11EffectVariable
-- Interfaz ID3DX11EffectVariable Direct3D 11 , método AsUnorderedAccessView
+- Interfaz ID3DX11EffectVariable Direct3D 11 , Método AsUnorderedAccessView
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d4cf3a1f146af7ca6faf3ff3e704285ac19f01a117809429842b45df9b7dcfd4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c8b9ce7dbbc99ef16ef3290ec1ba3135a8d2cb05
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118531213"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568004"
 ---
 # <a name="id3dx11effectvariableasunorderedaccessview-method"></a>Método ID3DX11EffectVariable::AsUnorderedAccessView
 
@@ -47,7 +47,7 @@ Tipo: **[ **ID3DX11EffectUnorderedAccessViewVariable**](id3dx11effectunorderedac
 
 Puntero a una variable unordered-access-view. Vea [**ID3DX11EffectUnorderedAccessViewVariable**](id3dx11effectunorderedaccessviewvariable.md).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
@@ -65,7 +65,7 @@ Puntero a una variable unordered-access-view. Vea [**ID3DX11EffectUnorderedAcces
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

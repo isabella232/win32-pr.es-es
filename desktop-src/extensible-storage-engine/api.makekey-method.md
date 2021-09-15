@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 9fc9795329041aa6ec47ff5ebc2116eb8ff5c799869ef6cbf447e68a184cceae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c03542797848bc4c974df1069a1c7c3d208f2a47
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119977435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465954"
 ---
 # <a name="apimakekey-method"></a>Método Api.MakeKey
 
@@ -113,7 +113,7 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

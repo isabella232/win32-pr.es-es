@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - IACom.h
-ms.openlocfilehash: 96e932b8e47f323198e1b0cc87da0df7839a593a76850c00c2c2e4d095854851
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b2471e77fec02900804de831fc1197c071b9f566
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119091455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467155"
 ---
 # <a name="recognizercapabilities-enumeration"></a>Enumeración RecognizerCapabilities
 
 Especifica los atributos de un [**IInkAnalysisRecognizer.**](iinkanalysisrecognizer.md)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -172,7 +172,7 @@ Admite escritura a mano personalizada, donde el reconocedor mejora el reconocimi
 <span id="RC_PrefersArbitraryAngle"></span><span id="rc_prefersarbitraryangle"></span><span id="RC_PREFERSARBITRARYANGLE"></span>**RC \_ PrefersArbitraryAngle**
 </dt> <dd>
 
-[**IInkAnalyzer**](iinkanalyzer.md) no necesita girar la escritura a mano a una orientación horizontal antes de enviar la entrada de lápiz a [**IInkAnalysisRecognizer.**](iinkanalysisrecognizer.md)
+[**IInkAnalyzer no**](iinkanalyzer.md) necesita girar la escritura a mano a una orientación horizontal antes de enviar la entrada de lápiz a [**IInkAnalysisRecognizer.**](iinkanalysisrecognizer.md)
 
 </dd> <dt>
 
@@ -190,7 +190,7 @@ Reconoce solo una palabra o carácter por operación de reconocimiento. [**IInkA
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta enumeración permite una combinación bit a bit de sus valores de miembro. Use esta enumeración para buscar un reconocedor de lápiz instalado que admita los atributos que necesita.
 
@@ -198,11 +198,11 @@ Esta enumeración permite una combinación bit a bit de sus valores de miembro. 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 
 
 

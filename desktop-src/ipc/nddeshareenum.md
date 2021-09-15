@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: e6b101a7ba45e28175a8d6ee0730e704a6f519142f94e4fc2273d1d76dcfe1cc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8bfa4884b88e72cb9a3b64bebf58af53cdc1047e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120014745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127359159"
 ---
 # <a name="nddeshareenum-function"></a>Función NDdeShareEnum
 
@@ -111,7 +111,7 @@ Si se produce un error en la función, el valor devuelto es un código de error,
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

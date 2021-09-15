@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fc23b941f232007a781ca160538f28d864f818639df47a180de472f54cd89a8a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 28aa02dd73f1706bb12ae30825f50241be7bb0d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118247827"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468819"
 ---
 # <a name="wm_keyup-message"></a>Mensaje \_ DE WM KEYUP
 
@@ -52,7 +52,7 @@ El recuento de repeticiones, el código de examen, la marca de clave extendida, 
 
 | Bits  | Significado                                                                                                                                                                                                          |
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0-15  | Recuento de repeticiones para el mensaje actual. El valor es el número de veces que se autorepeta la pulsación de tecla como resultado de que el usuario mantiene presionada la tecla. El recuento de repeticiones siempre es 1 para un **mensaje \_ WM KEYUP.** |
+| 0-15  | Recuento de repeticiones para el mensaje actual. El valor es el número de veces que se autorpeda la pulsación de tecla como resultado de que el usuario mantiene presionada la tecla. El recuento de repeticiones siempre es 1 para un **mensaje \_ WM KEYUP.** |
 | 16-23 | Código de examen. El valor depende del OEM.                                                                                                                                                                     |
 | 24    | Indica si la tecla es una tecla extendida, como las teclas ALT y CTRL de la derecha que aparecen en un teclado mejorado de 101 o 102 teclas. El valor es 1 si es una clave extendida; de lo contrario, es 0.         |
 | 25-28 | Reservado; no se usan.                                                                                                                                                                                            |
@@ -69,7 +69,7 @@ Para obtener más información, vea [Marcas de mensajes de pulsación de teclas]
 
 Una aplicación debe devolver cero si procesa este mensaje.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) envía un mensaje [**\_ SYSCOMMAND**](/windows/desktop/menurc/wm-syscommand) de WM a la ventana de nivel superior si se ha liberado la tecla F10 o la tecla ALT. El *parámetro wParam* del mensaje se establece en SC \_ KEYMENU.
 
@@ -81,7 +81,7 @@ Las aplicaciones deben *pasar wParam* [**a TranslateMessage**](/windows/desktop/
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
@@ -89,7 +89,7 @@ Las aplicaciones deben *pasar wParam* [**a TranslateMessage**](/windows/desktop/
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

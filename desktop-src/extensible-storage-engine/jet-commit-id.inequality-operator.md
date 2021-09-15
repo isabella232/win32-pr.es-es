@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c2891e6d7fa826edccbdf85e2c5b9d284a2a4f9699db179622c4c45459bec112
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b64be3b2c6438490d3e44076b1e553a7abb37d8f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119834035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567009"
 ---
 # <a name="jet_commit_idinequality-operator"></a>JET_COMMIT_ID.Inequality (Operador)
 
@@ -81,7 +81,7 @@ public static bool operator !=(
 Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 True si lhs comes no es igual a rhs.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

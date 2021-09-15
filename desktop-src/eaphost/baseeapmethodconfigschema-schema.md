@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: d128cd0dda52a17f7eefd0e4f110601aba5e13cd64c06e80e2a8c71e6c02c508
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 13d10aa4dff84f06d6afb9934770fd38efbe64d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118498717"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568861"
 ---
 # <a name="baseeapmethodconfig-schema"></a>esquema baseeapmethodconfig
 

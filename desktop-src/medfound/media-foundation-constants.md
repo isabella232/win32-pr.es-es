@@ -4,12 +4,12 @@ ms.assetid: 35355439-564f-400e-b287-7c333af72b99
 title: Media Foundation constantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81e40a606e65c55173f7b1efd39461c7703756301e4b994f5cc8108c5260a025
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 18366515160e22474a195167c27b55c4e4eb2beb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117877947"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468745"
 ---
 # <a name="media-foundation-constants"></a>Media Foundation constantes
 

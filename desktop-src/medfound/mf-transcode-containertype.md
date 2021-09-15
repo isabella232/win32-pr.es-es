@@ -4,12 +4,12 @@ ms.assetid: 97fd968a-6843-4695-aece-02f9acd618fd
 title: MF_TRANSCODE_CONTAINERTYPE atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c56b0332c43f10fa61b34f47191e3946a4813b3670249a8d858317067c38d52
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f86b8d5890a771200feda265c3878b6eb7030b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119604695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360452"
 ---
 # <a name="mf_transcode_containertype-attribute"></a>Atributo \_ \_ CONTAINERTYPE DE TRANSCODE MF
 
@@ -23,7 +23,7 @@ Los valores posibles para los tipos de contenedor proporcionados por Media Found
 
 
 
-| Valor                                                                                                                                                                                                                                                                 | Significado                                                                            |
+| Value                                                                                                                                                                                                                                                                 | Significado                                                                            |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | <span id="MFTranscodeContainerType_ASF"></span><span id="mftranscodecontainertype_asf"></span><span id="MFTRANSCODECONTAINERTYPE_ASF"></span><dl> <dt>**MFTranscodeContainerType \_ ASF**</dt> </dl>             | Contenedor de archivos ASF.<br/>                                                     |
 | <span id="MFTranscodeContainerType_MPEG4"></span><span id="mftranscodecontainertype_mpeg4"></span><span id="MFTRANSCODECONTAINERTYPE_MPEG4"></span><dl> <dt>**MFTranscodeContainerType \_ MPEG4**</dt> </dl>     | Contenedor de archivos MP4.<br/>                                                     |
@@ -33,8 +33,8 @@ Los valores posibles para los tipos de contenedor proporcionados por Media Found
 | <span id="MFTranscodeContainerType_ADTS"></span><span id="mftranscodecontainertype_adts"></span><span id="MFTRANSCODECONTAINERTYPE_ADTS"></span><dl> <dt>**MFTranscodeContainerType \_ ADTS**</dt> </dl>         | Contenedor de archivos ADTS. <br/>                                                   |
 | <span id="MFTranscodeContainerType_MPEG2"></span><span id="mftranscodecontainertype_mpeg2"></span><span id="MFTRANSCODECONTAINERTYPE_MPEG2"></span><dl> <dt>**MFTranscodeContainerType \_ MPEG2**</dt> </dl>     | Contenedor de archivos MPEG2. <br/>                                                  |
 | <span id="MFTranscodeContainerType_FMPEG4"></span><span id="mftranscodecontainertype_fmpeg4"></span><span id="MFTRANSCODECONTAINERTYPE_FMPEG4"></span><dl> <dt>**MFTranscodeContainerType \_ FMPEG4**</dt> </dl> | Contenedor de archivos FMPEG4. <br/>                                                 |
-| <span id="MFTranscodeContainerType_WAVE"></span><span id="mftranscodecontainertype_wave"></span><span id="MFTRANSCODECONTAINERTYPE_WAVE"></span><dl> <dt>**MFTranscodeContainerType \_ WAVE**</dt> </dl>         | Contenedor de archivos WAVE.<br/> Se admite en Windows 8.1 y versiones posteriores.<br/> |
-| <span id="MFTranscodeContainerType_AVI"></span><span id="mftranscodecontainertype_avi"></span><span id="MFTRANSCODECONTAINERTYPE_AVI"></span><dl> <dt>**MFTranscodeContainerType \_ AVI**</dt> </dl>             | Contenedor de archivos AVI.<br/> Se admite en Windows 8.1 y versiones posteriores.<br/>  |
+| <span id="MFTranscodeContainerType_WAVE"></span><span id="mftranscodecontainertype_wave"></span><span id="MFTRANSCODECONTAINERTYPE_WAVE"></span><dl> <dt>**MFTranscodeContainerType \_ WAVE**</dt> </dl>         | Contenedor de archivos WAVE.<br/> Se admite Windows 8.1 y versiones posteriores.<br/> |
+| <span id="MFTranscodeContainerType_AVI"></span><span id="mftranscodecontainertype_avi"></span><span id="MFTRANSCODECONTAINERTYPE_AVI"></span><dl> <dt>**MFTranscodeContainerType \_ AVI**</dt> </dl>             | Contenedor de archivos AVI.<br/> Se admite Windows 8.1 y versiones posteriores.<br/>  |
 | <span id="MFTranscodeContainerType_AMR"></span><span id="mftranscodecontainertype_amr"></span><span id="MFTRANSCODECONTAINERTYPE_AMR"></span><dl> <dt>**MFTranscodeContainerType \_ AMR**</dt> </dl>             | Contenedor de archivos AMR. <br/>                                                    |
 
 
@@ -47,7 +47,7 @@ Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetGUID**](/windows/d
 
 Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se usa con la característica Transcodificación rápida y el objeto de escritor del receptor.
 
@@ -68,15 +68,15 @@ Este atributo se puede usar para configurar el tipo de contenedor de archivos pa
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

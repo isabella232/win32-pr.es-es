@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: ba3c7959-2acd-4a38-b996-cfe7dac20241
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d823b1f5dd630d3c1aefa66886b3479cbddc00446b2ea68bc560ffad47102e9c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 89ceb4c5d1b6aae6de71e813f09e45dc3765479e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118925962"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473561"
 ---
 # <a name="s-rpc"></a>S (RPC)
 
@@ -28,11 +28,11 @@ Capacidad de utilizar completamente la potencia de procesamiento adicional en un
 <span id="_rpcl_spp_glos"></span><span id="_RPCL_SPP_GLOS"></span>**Protocolo de paquetes secuenciados (SPP)**
 </dt> <dd>
 
-Protocolo de comunicación orientado a [*la conexión de*](c-glos.md) Banyan Ques para enrutar paquetes de información a través de redes de área local.
+Protocolo de comunicación orientado a [*la conexión de*](c-glos.md) Banyan Procedentes para enrutar paquetes de información a través de redes de área local.
 
 </dd> <dt>
 
-<span id="_rpc_spx_glos"></span><span id="_RPC_SPX_GLOS"></span>**Paquetes secuenciados Exchange (SPX)**
+<span id="_rpc_spx_glos"></span><span id="_RPC_SPX_GLOS"></span>**Sequenced Packet Exchange (SPX)**
 </dt> <dd>
 
 Protocolo de comunicación orientado [*a conexiones de*](c-glos.md) NetWare para enrutar paquetes de información a través de redes de área local y redes de área extensa.
@@ -42,7 +42,7 @@ Protocolo de comunicación orientado [*a conexiones de*](c-glos.md) NetWare para
 <span id="_rpc_serialization_glos"></span><span id="_RPC_SERIALIZATION_GLOS"></span>**Serialización**
 </dt> <dd>
 
-Proceso de serializar datos a (codificación) y desmarque datos de búferes (decoding) que controla. Esto contrasta con el uso tradicional de RPC, donde los códigos auxiliares y el tiempo de ejecución de RPC controlan los búferes de serialización. También se denomina pickling. Vea también [*serialización de procedimientos,*](p-glos.md) [*serialización de tipos.*](t-glos.md)
+Proceso de serializar datos en (codificación) y desmarque datos de búferes (decoding) que controla. Esto contrasta con el uso tradicional de RPC, donde los códigos auxiliares y el tiempo de ejecución de RPC controlan los búferes de serialización. También se denomina selección. Vea también [*serialización de procedimientos*](p-glos.md), [*serialización de tipos*](t-glos.md).
 
 </dd> <dt>
 
@@ -70,14 +70,14 @@ Procedimiento remoto que forma parte del lado cliente de una aplicación distrib
 <span id="_rpc_static_identity_tracking_glos"></span><span id="_RPC_STATIC_IDENTITY_TRACKING_GLOS"></span>**seguimiento de identidades estáticas**
 </dt> <dd>
 
-El seguimiento de identidad estático especifica que el tiempo de ejecución de RPC usa las credenciales de seguridad en el identificador de enlace del cliente para todas las llamadas RPC. Consulte también seguimiento [*de identidades dinámicas.*](d-glos.md)
+El seguimiento de identidades estático especifica que el tiempo de ejecución de RPC usa las credenciales de seguridad en el identificador de enlace del cliente para todas las llamadas RPC. Consulte también seguimiento [*de identidades dinámicas.*](d-glos.md)
 
 </dd> <dt>
 
 <span id="_rpc_string_binding_glos"></span><span id="_RPC_STRING_BINDING_GLOS"></span>**enlace de cadena**
 </dt> <dd>
 
-Cadena de caracteres que consta de las opciones de [](e-glos.md)objeto [*UUID,*](u-glos.md)secuencia de [*protocolo,*](p-glos.md)dirección [](b-glos.md) de [*red,*](n-glos.md)punto de conexión y punto de conexión, que se pueden usar para crear un identificador de enlace al servidor especificado.
+Cadena de caracteres que consta [](b-glos.md) del [*UUID*](u-glos.md)del objeto , la secuencia de protocolo, la dirección de red, el punto de conexión y las opciones de punto de conexión, que se pueden usar para crear un identificador de enlace al servidor especificado. [](p-glos.md) [](n-glos.md) [](e-glos.md)
 
 </dd> <dt>
 

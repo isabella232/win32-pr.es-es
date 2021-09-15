@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1bc0c348b7c9b383f5e2caa0b893460b79cb622bac40c3bc57049fca1f4e9ab5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 60a700f27652bd1c522a585a989300ea8817df98
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118273408"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466833"
 ---
 # <a name="eaptlsuserpropertiesv1-schema-elements"></a>Elementos de esquema eaptlsuserpropertiesv1
 

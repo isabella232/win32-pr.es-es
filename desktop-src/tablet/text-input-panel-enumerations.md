@@ -4,12 +4,12 @@ ms.assetid: 4c4442b2-b2da-4b0e-9bfd-b1ad9613a095
 title: Enumeraciones del panel de entrada de texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94f0e29b1ba92d88de537c277e80e4ef1f431add89a2d0f5c41e75dbe5bb137e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2fcc6acf24ddb61ba75d6b97fb37a46d99b34c1c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119819925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467954"
 ---
 # <a name="text-input-panel-enumerations"></a>Enumeraciones del panel de entrada de texto
 

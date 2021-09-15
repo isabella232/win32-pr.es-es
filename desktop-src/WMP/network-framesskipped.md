@@ -14,20 +14,20 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1031585feae5fa2c7fdd9f5fb64bf958e77b8029d502f3e99476024276a652cb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6f33b778fffce071c47cb455f09e468243abab6a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119901675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473333"
 ---
 # <a name="networkframesskipped"></a>Network.framesSkipped
 
 La **propiedad framesSkipped** recupera el número total de fotogramas omitido durante la reproducción.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
-*player*. *network*. **framesSkipped**
+*player*. *red*. **framesSkipped**
 
 ## <a name="possible-values"></a>Valores posibles
 
@@ -35,7 +35,7 @@ Esta propiedad es un número de solo **lectura** (**long**).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo JScript siguiente se usa *Network*. **framesSkipped para** mostrar el número total de fotogramas omitido durante la reproducción cuando el usuario hace clic en un botón. La información se muestra en una DIV HTML creada con id. = "FS". El **objeto Player** se creó con id. = "Player".
+En el ejemplo JScript siguiente se usa *Network*. **framesSkipped** para mostrar el número total de fotogramas omitido durante la reproducción cuando el usuario hace clic en un botón. La información se muestra en un DIV HTML creado con id. = "FS". El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript

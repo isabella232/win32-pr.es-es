@@ -4,21 +4,21 @@ description: Puede extender Microsoft Windows Desktop Search (WDS) con complemen
 ms.assetid: 71dd515d-a73e-4e0a-b0da-c8a6209d09fe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 497d4bffdb9564e0737bee3cd0b63fa8026633a2cc81aad37cb989423e460487
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 79f846cf2101eefc17b1e92fbd7992529a06fb43
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118480899"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468795"
 ---
 # <a name="developing-ifilter-add-ins"></a>Desarrollo de complementos de IFilter
 
 > [!NOTE]
 > Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use [Windows Search en](../search/-search-3x-wds-overview.md) su lugar.
 
-Puede extender Microsoft Windows Desktop Search (WDS) con complementos de filtro, componentes que implementan la interfaz [**IFilter,**](/windows/desktop/api/filter/nn-filter-ifilter)para incluir nuevos tipos de archivo. Los filtros son responsables de acceder y analizar los datos de los archivos y de devolver pares de propiedades y valores, así como fragmentos de texto para la indexación. Durante el proceso de indexación, WDS llama al filtro adecuado con la dirección URL de cada archivo o elemento. El filtro extrae primero los metadatos que corresponden a las propiedades marcadas como recuperables en el esquema WDS, como el título, el tamaño del archivo y la fecha de última modificación. A continuación, divide el contenido del elemento en fragmentos de texto. WDS agrega las propiedades y el texto devueltos por el filtro al catálogo. WDS puede indexar cualquier tipo de archivo para el que tenga un filtro registrado.
+Puede extender Microsoft Windows Desktop Search (WDS) con complementos de filtro, componentes que implementan la interfaz [**IFilter,**](/windows/desktop/api/filter/nn-filter-ifilter)para incluir nuevos tipos de archivo. Los filtros son responsables de acceder y analizar los datos de los archivos y de devolver pares de propiedades y valores, así como fragmentos de texto para la indexación. Durante el proceso de indexación, WDS llama al filtro adecuado con la dirección URL de cada archivo o elemento. El filtro extrae primero los metadatos que corresponden a las propiedades marcadas como recuperables en el esquema WDS, como el título, el tamaño del archivo y la fecha de la última modificación. A continuación, divide el contenido del elemento en fragmentos de texto. WDS agrega las propiedades y el texto devueltos por el filtro al catálogo. WDS puede indexar cualquier tipo de archivo para el que tenga un filtro registrado.
 
-En algunas circunstancias, no es necesario escribir un filtro nuevo. WDS 2.x contiene filtros para más de 200 tipos de elementos (incluidos elementos de texto no cifrado como HTML, XML y archivos de código fuente) y usa la misma tecnología [**IFilter**](/windows/desktop/api/filter/nn-filter-ifilter)que SharePoint Services. Si ya tiene filtros instalados para los tipos de archivo, WDS puede usar esos filtros existentes para indexar estos datos. Además, WDS incluye un filtro general para los tipos de archivo basados en texto no cifrado. Si tiene un tipo de archivo que se puede procesar mediante un filtro de SharePoint Services existente o el filtro de texto no cifrado, puede agregar la extensión de nombre de archivo y filtrar guid al Registro para que WDS pueda localizarlo y usarlo (consulte [Para](#to-register-a-filter-add-in) registrar un complemento de filtro para obtener más información).
+En algunas circunstancias, no es necesario escribir un filtro nuevo. WDS 2.x contiene filtros para más de 200 tipos de elementos (incluidos los elementos de texto no cifrado como HTML, XML y archivos de código fuente) y usa la misma tecnología [**IFilter**](/windows/desktop/api/filter/nn-filter-ifilter)que SharePoint Services. Si ya tiene filtros instalados para los tipos de archivo, WDS puede usar esos filtros existentes para indexar estos datos. Además, WDS incluye un filtro general para los tipos de archivo basados en texto no cifrado. Si tiene un tipo de archivo que se puede procesar mediante un filtro de SharePoint Services existente o el filtro de texto no cifrado, puede agregar la extensión de nombre de archivo y filtrar el GUID al Registro para que WDS pueda localizarlo y usarlo (consulte [Para](#to-register-a-filter-add-in) registrar un complemento de filtro para obtener más información).
 
 Sin embargo, si tiene un formato de archivo o datos no sin formato y de propiedad, escribir una implementación de filtro personalizado es la única manera de asegurarse de que WDS puede indexar el formato de archivo en el catálogo. Solo puede tener un complemento de filtro para un tipo de archivo, por lo que es posible invalidar un filtro existente o hacer que otro filtro invalide el de un tipo de archivo específico.
 
@@ -67,7 +67,7 @@ Se trata de una interfaz necesaria para una implementación de filtro. Para más
 
 ### <a name="ipersiststream"></a>Ipersiststream
 
-Esta interfaz carga un archivo desde una secuencia para un procesamiento más seguro que la interfaz [IPersistFile](/windows/win32/api/objidl/nn-objidl-ipersistfile) porque el contexto en el que se ejecuta un filtro [IPersistStream](/windows/win32/api/objidl/nn-objidl-ipersiststream) no necesita los derechos para abrir ningún archivo en el disco o a través de la red. De los dos métodos para acceder a un único archivo, este es el método preferido para la compatibilidad de reenvío con Windows.
+Esta interfaz carga un archivo desde una secuencia para un procesamiento más seguro que la interfaz [IPersistFile](/windows/win32/api/objidl/nn-objidl-ipersistfile) porque el contexto en el que se ejecuta un filtro [IPersistStream](/windows/win32/api/objidl/nn-objidl-ipersiststream) no necesita los derechos para abrir ningún archivo en el disco o a través de la red. De los dos métodos para acceder a un único archivo, este es el método preferido para la compatibilidad con versiones adicionales Windows.
 
 
 
@@ -76,7 +76,7 @@ Esta interfaz carga un archivo desde una secuencia para un procesamiento más se
 | IsDirty()    | Comprueba si se ha realizado un cambio. Este método devuelve E \_ NOTIMPL en filtros.                                                                      |
 | InitNew()    | Crea un nuevo almacenamiento. Este método devuelve E \_ NOTIMPL en filtros.                                                                                  |
 | Load()       | Inicializa un objeto desde la secuencia donde se guardó previamente.                                                                               |
-| Save()       | Guarda un objeto en la secuencia especificada e indica si el objeto debe restablecer su marca de desajuste. Este método devuelve E \_ NOTIMPL en filtros. |
+| Save()       | Guarda un objeto en la secuencia especificada e indica si el objeto debe restablecer su marca desajuste. Este método devuelve E \_ NOTIMPL en filtros. |
 | GetSizeMax() | Devuelve el tamaño en bytes de la secuencia necesaria para guardar el objeto. Este método devuelve E \_ NOTIMPL en filtros.                                      |
 
 
@@ -104,7 +104,7 @@ Esta interfaz carga un archivo por ruta de acceso absoluta y no se admite en Win
 
 ### <a name="ipersiststorage"></a>IPersistStorage
 
-Esta interfaz admite el modelo de almacenamiento estructurado, en el que cada objeto contenido tiene su propio almacenamiento que está anidado dentro del almacenamiento del contenedor. Al [igual que la interfaz IPersistFile](/windows/win32/api/objidl/nn-objidl-ipersistfile), esta interfaz se carga por ruta de acceso absoluta y no se admite Windows Vista.
+Esta interfaz admite el modelo de almacenamiento estructurado, en el que cada objeto contenido tiene su propio almacenamiento que está anidado dentro del almacenamiento del contenedor. Al [igual que la interfaz IPersistFile](/windows/win32/api/objidl/nn-objidl-ipersistfile), esta interfaz se carga por ruta de acceso absoluta y no se admite en Windows Vista.
 
 
 
@@ -144,7 +144,7 @@ Los filtros deben generar como mínimo las siguientes propiedades, que son las c
 | F29F85E0-4FF9-1068-AB91-08002B27B3D9 | 2             | PrimaryTitle   | Título que se muestra para este elemento.                                                                                                              |
 | F29F85E0-4FF9-1068-AB91-08002B27B3D9 | 4             | PrimaryAuthors | Persona más asociada a este elemento.                                                                                                          |
 | D5CDD505-2E9C-101B-9397-08002B2CF9AE | PrimaryDate   | PrimaryDate    | Fecha más importante para el elemento, como la fecha recibida para el correo electrónico o modificada para los archivos.                                                               |
-| D5CDD505-2E9C-101B-9397-08002B2CF9AE | PerceivedType | PerceivedType  | Tipo de archivo que se está analizando. Debe coincidir con uno de los Windows búsqueda de escritorio que se enumeran en WdS [Perceived Type](-search-2x-wds-perceivedtype.md). |
+| D5CDD505-2E9C-101B-9397-08002B2CF9AE | PerceivedType | PerceivedType  | Tipo de archivo que se está analizando. Debe coincidir con uno de los tipos Windows búsqueda de escritorio que aparecen en WdS [Perceived Type](-search-2x-wds-perceivedtype.md). |
 
 
 

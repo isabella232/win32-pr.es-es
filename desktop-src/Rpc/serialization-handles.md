@@ -4,12 +4,12 @@ description: Una aplicación usa los procedimientos de serialización o las ruti
 ms.assetid: 39859846-5b94-447a-a71b-a08b8eb2c4c1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12995144e44fa6b4b91f021d544b53c03d732df22d46489ccc2cefe8d34c0fa1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5585fc3f34b6cc826c1f8157bd59a144070ea081
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118925488"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473541"
 ---
 # <a name="serialization-handles"></a>Identificadores de serialización
 

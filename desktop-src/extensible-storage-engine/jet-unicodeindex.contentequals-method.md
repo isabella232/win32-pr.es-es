@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cdba8d4c1d524f00f5aa399d2fceac9ddbe57b3c7837243be08e001fec2672e0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9ce2ad8c91b772b3d7da98469db2946cd1c6d2b4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118979035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360474"
 ---
 # <a name="jet_unicodeindexcontentequals-method"></a>JET_UNICODEINDEX. Método ContentEquals
 
@@ -61,7 +61,7 @@ public bool ContentEquals(
 
 #### <a name="parameters"></a>Parámetros
 
-  - Otros  
+  - otro  
     Tipo: [Microsoft.Isam.Esent.Interop.JET_UNICODEINDEX](./jet-unicodeindex-class.md)  
     
     Instancia de que se va a comparar con esta instancia.

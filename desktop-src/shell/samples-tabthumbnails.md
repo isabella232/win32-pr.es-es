@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: abfabc93947f5eb583c4178fa47b20468eb7eaf9a8f651c76baf0c1e1256311e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 323604d104be3432a5fc251901c4308bfc989f90
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118219781"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360356"
 ---
 # <a name="tabthumbnails-sample"></a>Ejemplo de TabThumbnails
 
@@ -34,7 +34,7 @@ En este tema se incluyen las siguientes secciones.
 | Producto                                | Versión mínima del producto |
 |----------------------------------------|-------------------------|
 | Windows                                | Windows 7               |
-| Kit de desarrollo de software de Windows (SDK) | 7,0                     |
+| Kit de desarrollo de software de Windows (SDK) | 7.0                     |
 
 
 
@@ -42,7 +42,7 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="downloading-the-sample"></a>Descargar el ejemplo
 
-| Ubicación      | Dirección URL de ruta de acceso                                                                                             |
+| Location      | Dirección URL de ruta de acceso                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
 | GitHub  | [Ejemplo de TabThumbnails](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appshellintegration/TabThumbnails) |
 
@@ -61,7 +61,7 @@ Para compilar el ejemplo mediante Microsoft Visual Studio (opción preferida):
 
 ## <a name="running-the-sample"></a>Ejecutar el ejemplo
 
-1.  Vaya al directorio que contiene el nuevo ejecutable, mediante el símbolo del sistema o Windows Explorador.
+1.  Vaya al directorio que contiene el nuevo ejecutable mediante el símbolo del sistema o Windows Explorador.
 2.  En la línea de comandos, escriba `TabThumbnails.exe` . Como alternativa, en Windows Explorer haga doble clic en el icono de TabThumbnails.exe.
 
  

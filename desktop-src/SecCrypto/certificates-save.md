@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: c3d724a6859a1fbc7765822227290facfb2c2f021fce2f5815f32c5e91fe6453
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 36ab04b394bddcd829d9f15e7562b72125388d33
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120126765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271172"
 ---
 # <a name="certificatessave-method"></a>Método Certificates.Save
 
@@ -87,7 +87,7 @@ Valor de la enumeración [**CAPICOM \_ EXPORT \_ FLAG**](capicom-export-flag.md)
 | Valor                                                                                                                                                                                                                                                                                          | Significado                                               |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
 | <span id="CAPICOM_EXPORT_DEFAULT"></span><span id="capicom_export_default"></span><dl> <dt>**CAPICOM \_ EXPORT \_ DEFAULT**</dt> </dl>                                                                                                      | No se omiten los errores de exportación de clave privada.<br/> |
-| <span id="CAPICOM_EXPORT_IGNORE_PRIVATE_KEY_NOT_EXPORTABLE_ERROR"></span><span id="capicom_export_ignore_private_key_not_exportable_error"></span><dl> <dt>**ERROR NO \_ EXPORTABLE DE \_ LA CLAVE PRIVADA OMITIBLE \_ DE LA \_ \_ \_ EXPORTACIÓN DE \_ CAPICOM**</dt> </dl> | Se omiten los errores de exportación de clave privada.<br/>     |
+| <span id="CAPICOM_EXPORT_IGNORE_PRIVATE_KEY_NOT_EXPORTABLE_ERROR"></span><span id="capicom_export_ignore_private_key_not_exportable_error"></span><dl> <dt>**ERROR NO EXPORTABLE DE LA CLAVE PRIVADA OMITIBLE \_ \_ DE LA \_ \_ \_ \_ EXPORTACIÓN DE \_ CAPICOM**</dt> </dl> | Se omiten los errores de exportación de clave privada.<br/>     |
 
 
 
@@ -99,7 +99,7 @@ Valor de la enumeración [**CAPICOM \_ EXPORT \_ FLAG**](capicom-export-flag.md)
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método genera CAPICOM \_ E NOT ALLOWED cuando se crea un script desde una aplicación basada en \_ \_ web.
 
@@ -118,7 +118,7 @@ Los [**objetos Certificate**](certificate.md) se pueden recuperar mediante el m�
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

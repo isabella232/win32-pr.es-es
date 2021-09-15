@@ -4,12 +4,12 @@ description: El administrador de tablas de enrutamiento es el repositorio centra
 ms.assetid: 7b01704e-c1fb-40e3-89cf-1206fdf9fd75
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 850726cd2203eca85be33aea3bd33f1ed903ba2d197d102ff7de294c5e852626
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 98094eb34c8575e0c24854813fc7458c98749568
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117787473"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271964"
 ---
 # <a name="routing-table-manager"></a>Administrador de tablas de enrutamiento
 

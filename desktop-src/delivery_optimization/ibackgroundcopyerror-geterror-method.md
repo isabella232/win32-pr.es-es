@@ -17,12 +17,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d147bc877f9694617ec94651f53f4cf438c00de8d752710c3659f24ba4ffe21c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e14803c225ade6085658582e18b9ba2d52fc90c7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118810338"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566753"
 ---
 # <a name="ibackgroundcopyerrorgeterror-method"></a>IBackgroundCopyError::GetError (método)
 
@@ -66,19 +66,19 @@ Este método devuelve **S_OK** correcto o uno de los valores HRESULT COM estánd
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | Archivo DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyError se define como 19C613A0-FCB8-4F28-81AE-897C3D078F81<br/>             |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,5 +1,5 @@
 ---
-title: 'if_comp: ps'
+title: 'if_comp : ps'
 description: 'Iniciar un if bool - ps... else: ps... endif: bloque ps, con una condición basada en valores que se podrían calcular en un sombreador. Esta instrucción se usa para omitir un bloque de código, en función de una condición.'
 ms.assetid: a641e347-df28-4a3f-a461-0b6aee758e59
 ms.topic: reference
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5d0a2271dbd67902a039ddadf585611ed98fdb115f468c3962baa8cb46f48508
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: db30983c83bc7d66e06befd07f4eb1dcdc9b21ea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119788975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568925"
 ---
 # <a name="if_comp---ps"></a>if \_ comp : ps
 
 Iniciar un [if bool - ps](if-bool---ps.md)... [else - ps](else---ps.md)... [endif: bloque ps,](endif---ps.md) con una condición basada en valores que se podrían calcular en un sombreador. Esta instrucción se usa para omitir un bloque de código, en función de una condición.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -35,7 +35,7 @@ Donde:
 
 -   \_comp es una comparación entre los dos registros de origen. Puede tener uno de los valores siguientes: 
 
-    | Syntax | De comparación            |
+    | Sintaxis | De comparación            |
     |--------|-----------------------|
     | \_Gt   | Mayor que          |
     | \_Lt   | Menor que             |
@@ -51,7 +51,7 @@ Donde:
 -   src0 es un registro de origen. Para seleccionar un componente, es necesario replicar sw swzzle.
 -   src1 es un registro de origen. Para seleccionar un componente, es necesario replicar sw swzzle.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

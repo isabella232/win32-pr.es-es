@@ -4,12 +4,12 @@ ms.assetid: 59976b01-9032-4226-a160-e9b2d4b8b23b
 title: Creación de un Control de entrada matemática
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ee8cca2a799bd44e79ef2f32691614bb3f22c933b40aa23dc4aa0cd6cfb6fb3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a5084f29943395bc6781fe20598f86bdc08c6c61
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118967724"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360329"
 ---
 # <a name="creating-a-math-input-control"></a>Creación de un Control de entrada matemática
 
@@ -84,7 +84,7 @@ Una vez que se muestre el control, tendrá un aspecto parecido al de la ilustrac
 
 ![captura de pantalla que muestra el control de entrada matemática](images/mic.png)
 
-Tenga en cuenta que he habilitado el conjunto extendido de botones para que **rehacer** y **deshacer** estén disponibles.
+Tenga en cuenta que he habilitado el conjunto extendido de botones para que **Rehacer** y **Deshacer** estén disponibles.
 
  
 

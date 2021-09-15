@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 43124fc13044b1802b78d036700af9077ed8893bb9cc4ea0f2ad9df9a117e405
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bce3a6fd2f27656684d77288cf5d3a1cdf6c36f1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118571144"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466155"
 ---
 # <a name="playlistmoveselecteddown"></a>PLAYLIST.moveSelectedDown
 
@@ -40,17 +40,17 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Elemento PLAYLIST**](playlist-element.md)
+[**ELEMENTO PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
 [**PLAYLIST.moveSelectedUp**](playlist-moveselectedup.md)

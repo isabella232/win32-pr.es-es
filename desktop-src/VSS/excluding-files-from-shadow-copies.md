@@ -4,18 +4,18 @@ ms.assetid: 4fe1ae94-7b2f-421a-9009-3a7e88822458
 title: Exclusión de archivos de instantáneas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c39acf8c92d44bcf8786a880b6ae5eb6a88786809f5af1609dee1b342cd2fb65
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 52546c8ddc6da62433dc610f2bf4fc2c46c5e53f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118122126"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473375"
 ---
 # <a name="excluding-files-from-shadow-copies"></a>Exclusión de archivos de instantáneas
 
 En Windows Vista y Windows Server 2008 y versiones posteriores, el desarrollador de una aplicación o un escritor de VSS puede optar por excluir determinados archivos de instantáneas.
 
-El impacto en el rendimiento y el uso del área de almacenamiento de instantáneas (también denominado "área de diferencia") de un archivo en una instantánea están directamente relacionados con la cantidad de cambios en el contenido del archivo después de crear la instantánea. Además, excluir archivos de instantáneas puede ralentizar la creación de instantáneas.
+El impacto en el rendimiento y el uso del área de almacenamiento de instantáneas (también denominado "área de diferencia") de un archivo en una instantánea están directamente relacionados con la cantidad de cambios en el contenido del archivo después de crear la instantánea. Además, la exclusión de archivos de instantáneas puede ralentizar la creación de instantáneas.
 
 Por estos motivos, un archivo debe excluirse de las instantáneas solo si es grande, experimenta un cambio significativo entre una instantánea y la siguiente, y no es necesario realizar una copia de seguridad.
 

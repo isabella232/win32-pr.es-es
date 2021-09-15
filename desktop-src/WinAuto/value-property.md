@@ -4,12 +4,12 @@ description: La propiedad Value proporciona una representación textual de la in
 ms.assetid: 89b99645-31f5-458a-ae61-a72bf1338195
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fcebf689016add11008b5d8249ce4eaa8adf4a99a406afea8d1267f01f94201f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1a6cd3ad86b9ce3a4fcc917fc4f49792adf432bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133278"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467915"
 ---
 # <a name="value-property"></a>Propiedad Value
 

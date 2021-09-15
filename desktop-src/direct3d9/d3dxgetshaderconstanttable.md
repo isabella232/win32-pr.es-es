@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a1375dfcf1bc75d6f2dee6f9923360b1b90fef01df5489f9f710175e7e1c2652
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b397901578a1e6ce6fecc01ed25c99d4681d1c40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119045013"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567881"
 ---
 # <a name="d3dxgetshaderconstanttable-function"></a>Función D3DXGetShaderConstantTable
 
@@ -65,7 +65,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 [**D3DXCompileShader**](d3dxcompileshader.md) genera una tabla constante e incrustada en el cuerpo del sombreador. Si necesita más espacio de direcciones virtuales, consulte [**D3DXGetShaderConstantTableEx.**](d3dxgetshaderconstanttableex.md)
 
@@ -80,7 +80,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se p
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

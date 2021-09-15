@@ -1,15 +1,15 @@
 ---
 description: Se produce cuando se agregan uno o varios trazos a la colección InkStrokes.
 ms.assetid: d32dcaef-3beb-4ee1-84d6-5944278936f6
-title: Evento InkStrokes.StrokesAdded (Msgulaut.h)
+title: Evento InkStrokes.StrokesAdded (Msxiaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23d2491f643e67c09ac34079412bb9676655713bbfd7ec836d8df7f92799a12a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a53bf1f511b5809cfb9a6ca0a2f683f0e85540af
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118041885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467992"
 ---
 # <a name="inkstrokesstrokesadded-event"></a>Evento InkStrokes.StrokesAdded
 
@@ -43,7 +43,7 @@ Para obtener más información sobre la estructura VARIANT, vea [Usar la bibliot
 
 Este evento no devuelve un valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método de evento se define en la \_ interfaz IInkEvents. La \_ interfaz IInkEvents implementa la [**interfaz IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) con un identificador de DISPID \_ SEStrokesAdded.
 
@@ -51,11 +51,11 @@ Este método de evento se define en la \_ interfaz IInkEvents. La \_ interfaz II
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                           |
-| Header<br/>                   | <dl> <dt>Msgniut.h (también requiere Ms ashut \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msgniut.h (también requiere Msgniut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
@@ -64,10 +64,10 @@ Este método de evento se define en la \_ interfaz IInkEvents. La \_ interfaz II
 
 <dl> <dt>
 
-[InkStrokes Collection](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85))
+[Colección InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85))
 </dt> <dt>
 
-[**Agregar colección \[ InkStrokes de método\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokes-add)
+[**Agregar colección \[ InkStrokes del método\]**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkstrokes-add)
 </dt> <dt>
 
 [**InkDisp (clase)**](inkdisp-class.md)

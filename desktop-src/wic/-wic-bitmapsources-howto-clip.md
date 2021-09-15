@@ -1,23 +1,23 @@
 ---
-description: En este tema se muestra cómo obtener una parte rectangular de un elemento IWICBitmapSource mediante un componente IWICBitmapClipper.
+description: En este tema se muestra cómo obtener una parte rectangular de un IWICBitmapSource mediante un componente IWICBitmapClipper.
 ms.assetid: c9834827-8e1d-436d-be82-c1a2a2f7ca5c
 title: Cómo recortar un origen de mapa de bits
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 43919e03d5d866d37ad4af203e741d2b10e60889
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104565650"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360618"
 ---
 # <a name="how-to-clip-a-bitmap-source"></a>Cómo recortar un origen de mapa de bits
 
-En este tema se muestra cómo obtener una parte rectangular de un elemento [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) mediante un componente [**IWICBitmapClipper**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapclipper) .
+En este tema se muestra cómo obtener una parte rectangular de [**un IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) mediante un [**componente IWICBitmapClipper.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapclipper)
 
 Para recortar un origen de mapa de bits
 
-1.  Cree un objeto [**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) para crear objetos de Windows Imaging Component (WIC).
+1.  Cree un [**objeto IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) para crear objetos Windows Imaging Component (WIC).
 
     ```C++
     // Create WIC factory
@@ -31,7 +31,7 @@ Para recortar un origen de mapa de bits
 
     
 
-2.  Use el método [**CreateDecoderFromFilename**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) para crear un [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) a partir de un archivo de imagen.
+2.  Use el [**método CreateDecoderFromFilename**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createdecoderfromfilename) para crear un [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) a partir de un archivo de imagen.
 
     ```C++
     HRESULT hr = S_OK;
@@ -50,7 +50,7 @@ Para recortar un origen de mapa de bits
 
     
 
-3.  Obtiene el primer [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) de la imagen.
+3.  Obtiene el [**primer IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) de la imagen.
 
     ```C++
     // Retrieve the first bitmap frame.
@@ -62,9 +62,9 @@ Para recortar un origen de mapa de bits
 
     
 
-    El formato de archivo JPEG solo admite un único fotograma. Dado que el archivo de este ejemplo es un archivo JPEG, se usa el primer fotograma ( `0` ). Para obtener información sobre los formatos de imagen que tienen varios fotogramas, consulte [recuperación de los marcos de una imagen](-wic-bitmapsources-howto-retrieveimageframes.md) para tener acceso a cada fotograma de la imagen.
+    El formato de archivo JPEG solo admite un único marco. Dado que el archivo de este ejemplo es un archivo JPEG, se usa el primer fotograma ( `0` ). Para ver los formatos de imagen que tienen varios fotogramas, consulte Cómo recuperar los fotogramas [de una imagen](-wic-bitmapsources-howto-retrieveimageframes.md) para acceder a cada fotograma de la imagen.
 
-4.  Cree el [**IWICBitmapClipper**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapclipper) que se va a usar para el recorte de la imagen.
+4.  Cree el [**IWICBitmapClipper**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapclipper) que se usará para el recorte de imágenes.
 
     ```C++
     IWICBitmapClipper *pIClipper = NULL;
@@ -77,7 +77,7 @@ Para recortar un origen de mapa de bits
 
     
 
-5.  Inicializa el objeto Clipper con los datos de la imagen dentro del rectángulo especificado del marco de mapa de bits.
+5.  Inicialice el objeto clipper con los datos de imagen dentro del rectángulo especificado del marco de mapa de bits.
 
     ```C++
     // Create the clipping rectangle.
@@ -94,9 +94,9 @@ Para recortar un origen de mapa de bits
 
 6.  Dibuje o procese la imagen recortada.
 
-    En la ilustración siguiente se muestra el recorte de imágenes. La imagen original de la izquierda es 200 x 130 píxeles. La imagen de la derecha es la imagen original recortada en un rectángulo definido como `{20,20,100,100}` .
+    En la ilustración siguiente se muestra el recorte de imágenes. La imagen original de la izquierda es de 200 x 130 píxeles. La imagen de la derecha es la imagen original recortada a un rectángulo definido como `{20,20,100,100}` .
 
-    ![Ilustración del recorte de imágenes](graphics/cliparegion_axisalignedclip.png)
+    ![ilustración del recorte de imágenes](graphics/cliparegion_axisalignedclip.png)
 
 ## <a name="see-also"></a>Consulte también
 

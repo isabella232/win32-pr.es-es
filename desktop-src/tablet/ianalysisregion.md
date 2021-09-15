@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: d8dc5b0af5746328ead68be3896148b7a4ddf79d6844a6d4ae976b2f29592d6b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c9c5e7653790e193c03b1cf4e0c489ea39c3eec3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118045069"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466275"
 ---
 # <a name="ianalysisregion-interface"></a>Interfaz IAnalysisRegion
 
 Expone métodos y propiedades para una región que representa un área de un documento.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IAnalysisRegion** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IAnalysisRegion** también tiene estos tipos de miembros:
 
@@ -38,32 +38,32 @@ La **interfaz IAnalysisRegion** tiene estos métodos.
 
 | Método                                                           | Descripción                                                                                                                                    |
 |:-----------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Clon**](ianalysisregion-clone.md)                           | Crea una copia de **IAnalysisRegion.**<br/>                                                                                          |
+| [**Clonar**](ianalysisregion-clone.md)                           | Crea una copia de **IAnalysisRegion.**<br/>                                                                                          |
 | [**ExcludeRectangle**](ianalysisregion-excluderectangle.md)     | Restringe el área de **IAnalysisRegion** a la parte de su área que no forma una intersección con el rectángulo especificado.<br/>           |
 | [**ExcludeRegion**](ianalysisregion-excluderegion.md)           | Restringe el área de **IAnalysisRegion** a la parte de su área que no forma una intersección con el **objeto IAnalysisRegion especificado.**<br/> |
 | [**GetBounds**](ianalysisregion-getbounds.md)                   | Recupera el rectángulo delimitador de **IAnalysisRegion.**<br/>                                                                        |
 | [**GetRegionScans**](ianalysisregion-getregionscans.md)         | Recupera una matriz de rectángulos que define el área de **IAnalysisRegion**.<br/>                                                  |
-| [**IntersectRectangle**](ianalysisregion-intersectrectangle.md) | Restringe el área de esta **IAnalysisRegion** al área creada por su intersección con el rectángulo especificado.<br/>                |
-| [**IntersectRegion**](ianalysisregion-intersectregion.md)       | Restringe el área de **IAnalysisRegion** al área creada por su intersección con la **región IAnalysisRegion especificada.**<br/>       |
+| [**IntersectRectangle**](ianalysisregion-intersectrectangle.md) | Restringe el área de esta **región IAnalysisRegion** al área creada por su intersección con el rectángulo especificado.<br/>                |
+| [**IntersectRegion**](ianalysisregion-intersectregion.md)       | Restringe el área de **IAnalysisRegion** al área creada por su intersección con el **objeto IAnalysisRegion especificado.**<br/>       |
 | [**IntersectsWith**](ianalysisregion-intersectswith.md)         | Determina si el área de **IAnalysisRegion** forma una intersección con el rectángulo especificado.<br/>                                     |
 | [**IsEmpty**](ianalysisregion-isempty.md)                       | Recupera un valor que indica si **IAnalysisRegion** representa una región vacía.<br/>                                            |
 | [**IsInfinite**](ianalysisregion-isinfinite.md)                 | Recupera un valor que indica si **IAnalysisRegion** representa una región infinita.<br/>                                         |
 | [**MakeEmpty**](ianalysisregion-makeempty.md)                   | Reduce **IAnalysisRegion para** representar un área vacía.<br/>                                                                         |
 | [**MakeInfinite**](ianalysisregion-makeinfinite.md)             | Expande **IAnalysisRegion para** representar un área infinita.<br/>                                                                      |
-| [**UnionRectangle**](ianalysisregion-unionrectangle.md)         | Expande el área de **esta IAnalysisRegion** al área creada por su unión con el rectángulo especificado.<br/>                         |
-| [**UnionRegion**](ianalysisregion-unionregion.md)               | Expande el área de **esta IAnalysisRegion** al área creada por su unión con la **región IAnalysisRegion especificada.**<br/>               |
+| [**UnionRectangle**](ianalysisregion-unionrectangle.md)         | Expande el área de **esta región IAnalysisRegion** al área creada por su unión con el rectángulo especificado.<br/>                         |
+| [**UnionRegion**](ianalysisregion-unionregion.md)               | Expande el área de esta **región IAnalysisRegion** al área creada por su unión con el **objeto IAnalysisRegion especificado.**<br/>               |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta interfaz representa un área que se construye a partir de regiones rectangulares. [**IInkAnalyzer**](iinkanalyzer.md) devuelve o interpreta las coordenadas de un área dentro del espacio de coordenadas en el que recibe datos de trazo.
 
 Para obtener los límites actuales de **IAnalysisRegion,** use el método [**IAnalysisRegion::GetBounds**](ianalysisregion-getbounds.md) o el método [**IAnalysisRegion::GetRegionScans**](ianalysisregion-getregionscans.md).
 
-Para modificar el área de una **IAnalysisRegion** existente, use los métodos siguientes.
+Para modificar el área de una **región IAnalysisRegion** existente, use los métodos siguientes.
 
 -   [**IAnalysisRegion::ExcludeRectangle**](ianalysisregion-excluderectangle.md)
 -   [**IAnalysisRegion::ExcludeRegion (Método)**](ianalysisregion-excluderegion.md)
@@ -74,17 +74,17 @@ Para modificar el área de una **IAnalysisRegion** existente, use los métodos s
 -   [**IAnalysisRegion::UnionRectangle (Método)**](ianalysisregion-unionrectangle.md)
 -   [**IAnalysisRegion::UnionRegion (Método)**](ianalysisregion-unionregion.md)
 
-Esta interfaz es equivalente al sistema. Windows. Clase Ink.AnalysisCore.AnalysisRegionBase del .NET Framework.
+Esta interfaz es equivalente al sistema. Windows. Clase Ink.AnalysisCore.AnalysisRegionBase en el .NET Framework.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

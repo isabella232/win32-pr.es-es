@@ -3,21 +3,21 @@ title: Uso de la entrada del mouse
 description: En esta sección se tratan las tareas asociadas a la entrada del mouse.
 ms.assetid: b96d0046-a507-4733-bcf3-fcf757beec7f
 keywords:
-- entrada de usuario, entrada del mouse
+- entrada del usuario, entrada del mouse
 - capturar la entrada del usuario, la entrada del mouse
 - entrada del mouse
 - cursores, entrada del mouse
 - cursor del mouse
-- Procesamiento de mensajes con doble clic
+- procesamiento de mensajes con doble clic
 - rueda del mouse
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc38105da1fbbe3bee1be9ca280f1f5573dbb41ba4b7b6aa2013d9c600b8ad00
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 50b34f180aad6aec6120bf4e3ffa997eba13e760
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119829975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468836"
 ---
 # <a name="using-mouse-input"></a>Uso de la entrada del mouse
 
@@ -25,20 +25,20 @@ En esta sección se tratan las tareas asociadas a la entrada del mouse.
 
 -   [Seguimiento del cursor del mouse](#tracking-the-mouse-cursor)
 -   [Dibujar líneas con el mouse](#drawing-lines-with-the-mouse)
--   [Procesamiento de un mensaje de doble clic](#processing-a-double-click-message)
+-   [Procesar un mensaje de doble clic](#processing-a-double-click-message)
 -   [Selección de una línea de texto](#selecting-a-line-of-text)
 -   [Usar una rueda del mouse en un documento con objetos incrustados](#using-a-mouse-wheel-in-a-document-with-embedded-objects)
 -   [Recuperar el número de líneas de desplazamiento de la rueda del mouse](#retrieving-the-number-of-mouse-wheel-scroll-lines)
 
 ## <a name="tracking-the-mouse-cursor"></a>Seguimiento del cursor del mouse
 
-A menudo, las aplicaciones realizan tareas que implican el seguimiento de la posición del cursor del mouse. Por ejemplo, la mayoría de las aplicaciones de dibujo realiza un seguimiento de la posición del cursor del mouse durante las operaciones de dibujo, lo que permite al usuario dibujar en el área cliente de una ventana arrastrando el mouse. Las aplicaciones de procesamiento de palabras también realiza un seguimiento del cursor, lo que permite al usuario seleccionar una palabra o un bloque de texto haciendo clic y arrastrando el mouse.
+Las aplicaciones a menudo realizan tareas que implican el seguimiento de la posición del cursor del mouse. La mayoría de las aplicaciones de dibujo, por ejemplo, realiza un seguimiento de la posición del cursor del mouse durante las operaciones de dibujo, lo que permite al usuario dibujar en el área cliente de una ventana arrastrando el mouse. Las aplicaciones de procesamiento de palabras también realiza un seguimiento del cursor, lo que permite al usuario seleccionar una palabra o un bloque de texto haciendo clic y arrastrando el mouse.
 
-Normalmente, el seguimiento del cursor implica el procesamiento de los mensajes [**WM \_ LBUTTONDOWN,**](wm-lbuttondown.md) [**WM \_ MOUSEMOVE**](wm-mousemove.md)y [**WM \_ LBUTTONUP.**](wm-lbuttonup.md) Una ventana determina cuándo empezar a realizar el seguimiento del cursor comprobando la posición del cursor proporcionada en el parámetro *lParam* del **mensaje WM \_ LBUTTONDOWN.** Por ejemplo, una aplicación de procesamiento de palabras comenzaría a realizar el seguimiento del cursor solo si el mensaje **\_ WM LBUTTONDOWN** se produjo mientras el cursor estaba en una línea de texto, pero no si estaba más allá del final del documento.
+El seguimiento del cursor suele implicar el procesamiento de los mensajes [**\_ WM LBUTTONDOWN,**](wm-lbuttondown.md) [**WM \_ MOUSEMOVE**](wm-mousemove.md)y [**WM \_ LBUTTONUP.**](wm-lbuttonup.md) Una ventana determina cuándo empezar a realizar el seguimiento del cursor comprobando la posición del cursor proporcionada en el parámetro *lParam* del **mensaje WM \_ LBUTTONDOWN.** Por ejemplo, una aplicación de procesamiento de palabras comenzaría a realizar el seguimiento del cursor solo si el mensaje **\_ WM LBUTTONDOWN** se produjese mientras el cursor estaba en una línea de texto, pero no si estaba más allá del final del documento.
 
-Una ventana realiza un seguimiento de la posición del cursor procesando la secuencia de [**mensajes \_ WM MOUSEMOVE**](wm-mousemove.md) publicados en la ventana a medida que se mueve el mouse. El procesamiento **del mensaje \_ MOUSEMOVE** de WM normalmente implica una operación repetitiva de dibujo o dibujo en el área cliente. Por ejemplo, una aplicación de dibujo podría volver a dibujar una línea repetidamente a medida que se mueve el mouse. Una ventana usa el [**mensaje \_ WM LBUTTONUP**](wm-lbuttonup.md) como señal para detener el seguimiento del cursor.
+Una ventana realiza un seguimiento de la posición del cursor procesando la secuencia de mensajes [**\_ WM MOUSEMOVE**](wm-mousemove.md) publicados en la ventana a medida que se mueve el mouse. El procesamiento **del mensaje \_ WM MOUSEMOVE** normalmente implica una operación repetitiva de dibujo o dibujo en el área cliente. Por ejemplo, una aplicación de dibujo podría volver a dibujar una línea varias veces a medida que se mueve el mouse. Una ventana usa el [**mensaje \_ WM LBUTTONUP**](wm-lbuttonup.md) como señal para detener el seguimiento del cursor.
 
-Además, una aplicación puede llamar a la [**función TrackMouseEvent**](/windows/win32/api/winuser/nf-winuser-trackmouseevent) para que el sistema envíe otros mensajes que sean útiles para realizar el seguimiento del cursor. El sistema envía el [**mensaje \_ WM MOUSEHOVER**](wm-mousehover.md) cuando el cursor mantiene el puntero sobre el área de cliente durante un período de tiempo determinado. Envía el mensaje [**WM \_ MOUSELEAVE**](wm-mouseleave.md) cuando el cursor sale del área de cliente. Los [**mensajes \_ WM NCMOUSEHOVER**](wm-ncmousehover.md) y [**WM \_ NCMOUSELEAVE**](wm-ncmouseleave.md) son los mensajes correspondientes para las áreas no cliente.
+Además, una aplicación puede llamar a la [**función TrackMouseEvent**](/windows/win32/api/winuser/nf-winuser-trackmouseevent) para que el sistema envíe otros mensajes que sean útiles para realizar el seguimiento del cursor. El sistema publica el [**mensaje \_ WM MOUSEHOVER**](wm-mousehover.md) cuando el cursor mantiene el puntero sobre el área de cliente durante un período de tiempo determinado. Envía el mensaje [**WM \_ MOUSELEAVE**](wm-mouseleave.md) cuando el cursor sale del área de cliente. Los [**mensajes \_ WM NCMOUSEHOVER**](wm-ncmousehover.md) y [**WM \_ NCMOUSELEAVE**](wm-ncmouseleave.md) son los mensajes correspondientes para las áreas no cliente.
 
 ## <a name="drawing-lines-with-the-mouse"></a>Dibujar líneas con el mouse
 
@@ -46,9 +46,9 @@ En el ejemplo de esta sección se muestra cómo realizar un seguimiento del curs
 
 Cuando el procedimiento de ventana recibe un mensaje [**\_ WM LBUTTONDOWN,**](wm-lbuttondown.md) captura el mouse y guarda las coordenadas del cursor, usando las coordenadas como punto inicial de la línea. También usa la [**función ClipCursor**](/windows/desktop/api/winuser/nf-winuser-clipcursor) para limitar el cursor al área de cliente durante la operación de dibujo de línea.
 
-Durante el primer [**mensaje \_ MOUSEMOVE**](wm-mousemove.md) de WM, el procedimiento de ventana dibuja una línea desde el punto inicial hasta la posición actual del cursor. Durante los **mensajes \_ WM MOUSEMOVE** posteriores, el procedimiento de ventana borra la línea anterior dibujando sobre ella con un color de lápiz invertido. A continuación, dibuja una nueva línea desde el punto inicial hasta la nueva posición del cursor.
+Durante el primer [**mensaje \_ WM MOUSEMOVE,**](wm-mousemove.md) el procedimiento de ventana dibuja una línea desde el punto inicial hasta la posición actual del cursor. Durante los **mensajes \_ WM MOUSEMOVE** posteriores, el procedimiento de ventana borra la línea anterior dibujando sobre ella un color de lápiz invertido. A continuación, dibuja una nueva línea desde el punto inicial hasta la nueva posición del cursor.
 
-El [**mensaje \_ LBUTTONUP**](wm-lbuttonup.md) de WM indica el final de la operación de dibujo. El procedimiento de ventana libera la captura del mouse y libera el mouse del área de cliente.
+El [**mensaje \_ WM LBUTTONUP**](wm-lbuttonup.md) indica el final de la operación de dibujo. El procedimiento de ventana libera la captura del mouse y libera el mouse del área de cliente.
 
 
 ```
@@ -169,7 +169,7 @@ LRESULT APIENTRY MainWndProc(HWND hwndMain, UINT uMsg, WPARAM wParam, LPARAM lPa
 
 
 
-## <a name="processing-a-double-click-message"></a>Procesamiento de un mensaje de doble clic
+## <a name="processing-a-double-click-message"></a>Procesar un mensaje de doble clic
 
 Para recibir mensajes de doble clic, una ventana debe pertenecer a una clase de ventana que tenga el estilo de clase [**\_ DBLCLKS de CS.**](/windows/desktop/winmsg/about-window-classes) Este estilo se establece al registrar la clase de ventana, como se muestra en el ejemplo siguiente.
 
@@ -196,11 +196,11 @@ BOOL InitApplication(HINSTANCE hInstance)
 
 
 
-Un mensaje de doble clic siempre va precedido de un mensaje de botón hacia abajo. Por esta razón, las aplicaciones suelen usar un mensaje de doble clic para extender una tarea que comenzó durante un mensaje de botón.
+Un mensaje de doble clic siempre va precedido de un mensaje de botón hacia abajo. Por este motivo, las aplicaciones suelen usar un mensaje de doble clic para extender una tarea que comenzó durante un mensaje de botón.
 
 ## <a name="selecting-a-line-of-text"></a>Selección de una línea de texto
 
-El ejemplo de esta sección se toma de una aplicación de procesamiento de palabras simple. Incluye código que permite al usuario establecer la posición del elemento de subrayado haciendo clic en cualquier lugar de una línea de texto y seleccionando (resalte) una línea de texto haciendo doble clic en cualquier lugar de la línea.
+El ejemplo de esta sección se toma de una aplicación de procesamiento de palabras simple. Incluye código que permite al usuario establecer la posición del cursor de subrayado haciendo clic en cualquier lugar de una línea de texto y seleccionar (resaltar) una línea de texto haciendo doble clic en cualquier parte de la línea.
 
 
 ```
@@ -441,7 +441,7 @@ LRESULT APIENTRY MainWndProc(HWND hwndMain, UINT uMsg, WPARAM wParam, LPARAM lPa
 
 ## <a name="using-a-mouse-wheel-in-a-document-with-embedded-objects"></a>Usar una rueda del mouse en un documento con objetos incrustados
 
-En este ejemplo se presupone un Microsoft Word con varios objetos incrustados:
+En este ejemplo se da por Microsoft Word documento con varios objetos incrustados:
 
 -   Una hoja Microsoft Excel de cálculo
 -   Control de cuadro de lista incrustado que se desplaza en respuesta a la rueda
@@ -454,14 +454,14 @@ El [mensaje \_ MSH MOUSEWHEEL](about-mouse-input.md) siempre se envía a la vent
 | El foco está en                | El control es el siguiente:                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Documento de Word              | Word desplaza la ventana del documento.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Hoja de cálculo Excel incrustada | Word publica el mensaje en Excel. Debe decidir si la aplicación incrustada debe responder al mensaje o no.                                                                                                                                                                                                                                                                                                                                                            |
-| Control incrustado           | La aplicación debe enviar el mensaje a un control incrustado que tenga el foco y comprobar el código de retorno para ver si el control lo controló. Si el control no lo controló, la aplicación debe desplazarse por la ventana del documento. Por ejemplo, si el usuario hizo clic en un cuadro de lista y luego rodó la rueda, ese control se desplazaría en respuesta a una rotación de rueda. Si el usuario hizo clic en un cuadro de texto y luego giraba la rueda, todo el documento se desplazaría. |
+| Hoja de cálculo Excel incrustada | Word envía el mensaje a Excel. Debe decidir si la aplicación incrustada debe responder al mensaje o no.                                                                                                                                                                                                                                                                                                                                                            |
+| Control incrustado           | Es la aplicación la que envía el mensaje a un control incrustado que tiene el foco y comprueba el código de retorno para ver si el control lo controló. Si el control no lo controló, la aplicación debe desplazarse por la ventana del documento. Por ejemplo, si el usuario hizo clic en un cuadro de lista y luego revierte la rueda, ese control se desplazaría en respuesta a una rotación de la rueda. Si el usuario hizo clic en un cuadro de texto y luego giraba la rueda, todo el documento se desplazaría. |
 
 
 
  
 
-En este ejemplo se muestra cómo una aplicación puede controlar los mensajes de las dos ruedas.
+En el ejemplo siguiente se muestra cómo una aplicación puede controlar los mensajes de las dos ruedas.
 
 
 ```

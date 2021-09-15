@@ -1,33 +1,33 @@
 ---
-description: Además de tener acceso a través de la interfaz IVssBackupComponents mediante el objeto de dispositivo de la copia, un solicitante puede hacer que una instantánea esté disponible para otros procesos como un dispositivo montado de solo lectura.
+description: Además de tener acceso a través de la interfaz IVssBackupComponents mediante el objeto de dispositivo de su copia, un solicitante puede hacer que una instantánea esté disponible para otros procesos como un dispositivo de solo lectura montado.
 ms.assetid: 0898c2dc-992a-411b-81df-4f5e129f6a80
-title: Exposición y exposición de volúmenes de copia sombra
+title: Exponer y exponer volúmenes sombreados
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d684aa9b696facaf1caa3aa3102c6b1d7fc37409
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105697740"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473374"
 ---
-# <a name="exposing-and-surfacing-shadow-copied-volumes"></a>Exposición y exposición de volúmenes de copia sombra
+# <a name="exposing-and-surfacing-shadow-copied-volumes"></a>Exponer y exponer volúmenes sombreados
 
-Además de tener acceso a través de la interfaz [**IVssBackupComponents**](/windows/desktop/api/VsBackup/nl-vsbackup-ivssbackupcomponents) mediante el [*objeto de dispositivo*](vssgloss-d.md)de la copia, un solicitante puede hacer que una instantánea esté disponible para otros procesos como un dispositivo montado de solo lectura.
+Además de tener acceso a través de la interfaz [**IVssBackupComponents**](/windows/desktop/api/VsBackup/nl-vsbackup-ivssbackupcomponents) mediante el objeto de dispositivo de su [*copia,*](vssgloss-d.md)un solicitante puede hacer que una instantánea esté disponible para otros procesos como un dispositivo de solo lectura montado.
 
-Este proceso se conoce como [*exponer una instantánea*](vssgloss-e.md)y se realiza mediante el método [**IVssBackupComponents:: ExposeSnapshot**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-exposesnapshot) .
+Este proceso se conoce como [*exposición de*](vssgloss-e.md)una instantánea y se realiza mediante el método [**IVssBackupComponents::ExposeSnapshot.**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-exposesnapshot)
 
 Una instantánea se puede exponer como un volumen local (se le asigna una letra de unidad o se asocia a una carpeta montada) o como un recurso compartido de archivos.
 
-Para ilustrar, considere la posibilidad de usar una instantánea de un volumen en el sistema exposedSys montado en F: \\ en cuya raíz sean los directorios dirOne y dirTwo, y el archivo FileOne.
+Para ilustrar, considere una instantánea realizada con un volumen en el sistema expuestoSys montados en F: en cuya raíz se encuentran los directorios dirOne y dirTwo, y el \\ archivo FileOne.
 
 ## <a name="exposing-a-shadow-copy-locally"></a>Exponer una instantánea localmente
 
-Cuando se monta como un volumen local, la raíz de la instantánea siempre es visible en el punto de montaje (letra de unidad o carpeta montada) y todos los archivos de copia sombra están visibles.
+Cuando se monta como un volumen local, la raíz de la instantánea siempre es visible en el punto de montaje (letra de unidad o carpeta montada) y todos los archivos que se copian en la sombra son visibles.
 
-Si la instantánea se expuso localmente a través de la carpeta montada C: \\ ShadowOfF, encontraría todos los archivos presentes en el disco montados en F: \\ en el momento de la instantánea disponible en C: \\ ShadowOfF. El examen de C: \\ ShadowOfF revelaría dos directorios, dirOne y dirTwo, y un archivo, fileOne, en C: \\ ShadowOfF.
+Si la instantánea se expone localmente a través de la carpeta montada C: ShadowOfF, encontraría todos los archivos presentes en el disco montados en F: en el momento de la instantánea disponible en \\ \\ C: \\ ShadowOfF. Examinar C: ShadowOfF revelaría dos \\ directorios, dirOne y dirTwo, y un archivo, fileOne, en C: \\ ShadowOfF.
 
-Una llamada a exponer localmente la instantánea podría ser:
+Una llamada a para exponer localmente la instantánea podría ser:
 
 ``` syntax
   IVssBackupComponents *pReq;
@@ -44,17 +44,17 @@ Una llamada a exponer localmente la instantánea podría ser:
        );
 ```
 
-Si la instantánea se ha expuesto correctamente localmente, *wszExposed* debe contener la cadena de caracteres anchos "C: \\ ShadowOfF".
+Si la instantánea se expuso correctamente localmente, *wszExposed* debe contener la cadena de caracteres anchos "C: \\ ShadowOfF".
 
-La instantánea se puede no exponer más adelante llamando a [**IVssBackupComponentsEx2:: UnexposeSnapshot**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-unexposesnapshot).
+La instantánea se puede desajustar más adelante llamando a [**IVssBackupComponentsEx2::UnexposeSnapshot**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponentsex2-unexposesnapshot).
 
-Solo las instantáneas persistentes, es decir, las instantáneas creadas con la \_ reversión de NAS de VSS CTX \_ o la reversión de la \_ aplicación de VSS \_ CTX \_ \_ , se pueden exponer localmente.
+Solo las instantáneas persistentes(es decir, las instantáneas creadas con VSS \_ CTX NAS ROLLBACK o \_ \_ VSS \_ CTX APP ROLLBACK) se pueden exponer \_ \_ localmente.
 
 ## <a name="exposing-a-shadow-copy-as-a-remote-share"></a>Exponer una instantánea como un recurso compartido remoto
 
-Como alternativa, puede elegir hacer que la instantánea del disco esté montada en F: \\ disponible como un recurso compartido de archivos remoto y exponer solo los datos en dirTwo como el recurso compartido de archivos dirTwoOfF.
+Como alternativa, puede optar por hacer que la instantánea del disco montado en F: esté disponible como un recurso compartido de archivos remoto y exponer solo los datos en dirTwo como el recurso compartido de archivos \\ dirTwoOfF.
 
-En este caso, los sistemas pueden obtener acceso a la instantánea de archivos en F: dirTwo asignando \\ \\ \\ exposedSys \\ dirTwoOfF como unidad de red.
+En este caso, los sistemas podrían acceder a la instantánea de archivos en F: dirTwo mediante la asignación \\ \\ \\ de exposedSys \\ dirTwoOfF como una unidad de red.
 
 Una llamada para implementar la exposición remota de la instantánea como un recurso compartido podría ser la siguiente:
 
@@ -73,19 +73,19 @@ Una llamada para implementar la exposición remota de la instantánea como un re
        );
 ```
 
-Si la instantánea se expone correctamente de forma remota, *wszExposed* debe contener la cadena de caracteres anchos "dirTwoOfF".
+Si la instantánea se expuso correctamente de forma remota, *wszExposed* debe contener la cadena de caracteres anchos "dirTwoOfF".
 
-Cualquier sistema que asigne actualmente el recurso compartido de red de dirTwoOfF podría desconectarse de ella, de la misma forma que podría desconectarse de cualquier recurso compartido normal.
+Cualquier sistema que actualmente asigna el recurso compartido de red de dirTwoOfF podría desconectarse de él, igual que podría desconectarse de cualquier recurso compartido normal.
 
-## <a name="surfacing-a-shadow-copy"></a>Exponer una instantánea
+## <a name="surfacing-a-shadow-copy"></a>Mostrar una instantánea
 
-Una instantánea [*superficial*](vssgloss-s.md) es aquella en la que el espacio de nombres del administrador de montaje de un sistema conoce la instantánea.
+Una [*instantánea de superficie es*](vssgloss-s.md) en la que la instantánea es conocida por el espacio de nombres de Mount Manager de un sistema.
 
-Esto significa que puede buscar dichas instantáneas tal y como ubicaría cualquier otro volumen disponible pero que no esté montado, mediante **FindFirstVolume** y **FindNextVolume**, por ejemplo.
+Esto significa que puede buscar estas instantáneas igual que cualquier otro volumen disponible, pero aún no montado, mediante **FindFirstVolume** y **FindNextVolume,** por ejemplo.
 
-Claramente, las instantáneas expuestas también son instantáneas superficiales. Sin embargo, la inversa no es necesariamente verdadera.
+Claramente, entonces, las instantáneas expuestas también son instantáneas expuestas. Sin embargo, lo contrario no es necesariamente cierto.
 
-Si se desmontó una instantánea expuesta localmente, o un sistema decidió desconectar una instantánea expuesta de forma remota, esa instantánea ya no se expondría. Sin embargo, siempre y cuando la instantánea persista, los volúmenes se verán en la superficie. Esto significa que podrían montarse como cualquier otro volumen de solo lectura.
+Si se desmonta una instantánea expuesta localmente o un sistema decide desconectar una instantánea expuesta de forma remota, esa instantánea ya no se expone. Sin embargo, siempre que la instantánea persista, se mostrarán los volúmenes. Esto significa que se pueden montar como cualquier otro volumen de solo lectura.
 
  
 

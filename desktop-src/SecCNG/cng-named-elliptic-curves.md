@@ -4,12 +4,12 @@ ms.assetid: 0607E8C3-6372-47E1-B16F-EF156D5EBA7D
 title: Curvas elípticas con nombre de CNG (Bcrypt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 691f1211b56abc41d622d20857653723be37681014a9bf72b91c1384c8f4b8cf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 35092d463e6f83917d231a87659e690ffeb59fe3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118908256"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127271207"
 ---
 # <a name="cng-named-elliptic-curves"></a>Curvas elípticas con nombre CNG
 
@@ -23,7 +23,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 | Estándar          | [Curva 25519](https://cr.yp.to/ecdh/curve25519-20060209.pdf) |
 | Tamaño de la clave (bits)   | 255                                                         |
 | Compatible con TLS       |                                                             |
-| Identificador de objeto | Ninguno                                                        |
+| Identificador de objeto | None                                                        |
 
 
 
@@ -118,7 +118,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nombre              | brainpoolP256r1                                                                                                   |
-| Estándar          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Estándar          | [Generación de curvas y curvas estándar de ECC Brainpool](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamaño de la clave (bits)   | 256                                                                                                               |
 | Compatible con TLS       | Sí                                                                                                               |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.7                                                                                              |
@@ -132,7 +132,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nombre              | brainpoolP256t1                                                                                                   |
-| Estándar          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Estándar          | [Generación de curvas y curvas estándar de ECC Brainpool](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamaño de la clave (bits)   | 256                                                                                                               |
 | Compatible con TLS       | No                                                                                                                |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.8                                                                                              |
@@ -146,7 +146,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nombre              | brainpoolP320r1                                                                                                   |
-| Estándar          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Estándar          | [Generación de curvas y curvas estándar de ECC Brainpool](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamaño de la clave (bits)   | 320                                                                                                               |
 | Compatible con TLS       | No                                                                                                                |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.9                                                                                              |
@@ -160,7 +160,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nombre              | brainpoolP320t1                                                                                                   |
-| Estándar          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Estándar          | [Generación de curvas y curvas estándar de ECC Brainpool](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamaño de la clave (bits)   | 320                                                                                                               |
 | Compatible con TLS       | No                                                                                                                |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.10                                                                                             |
@@ -174,7 +174,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nombre              | brainpoolP384r1                                                                                                   |
-| Estándar          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Estándar          | [Generación de curvas y curvas estándar de ECC Brainpool](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamaño de la clave (bits)   | 384                                                                                                               |
 | Compatible con TLS       | Sí                                                                                                               |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.11                                                                                             |
@@ -188,7 +188,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nombre              | brainpoolP384t1                                                                                                   |
-| Estándar          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Estándar          | [Generación de curvas y curvas estándar de ECC Brainpool](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamaño de la clave (bits)   | 384                                                                                                               |
 | Compatible con TLS       | No                                                                                                                |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.12                                                                                             |
@@ -202,7 +202,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nombre              | brainpoolP512r1                                                                                                   |
-| Estándar          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Estándar          | [Generación de curvas y curvas estándar de ECC Brainpool](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamaño de la clave (bits)   | 512                                                                                                               |
 | Compatible con TLS       | Sí                                                                                                               |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.13                                                                                             |
@@ -216,7 +216,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 | Requisito | Value |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nombre              | brainpoolP512t1                                                                                                   |
-| Estándar          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Estándar          | [Generación de curvas y curvas estándar de ECC Brainpool](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamaño de la clave (bits)   | 512                                                                                                               |
 | Compatible con TLS       | No                                                                                                                |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.14                                                                                             |
@@ -230,7 +230,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 | Requisito | Value |
 |-------------------|----------------------------------------------------------------|
 | Nombre              | ec192wapi                                                      |
-| Estándar          | Estándar nacional chino para LAN inalámbricas (GB 15629.11-2003) |
+| Estándar          | Estándar nacional chino para redes LAN inalámbricas (GB 15629.11-2003) |
 | Tamaño de la clave (bits)   | 192                                                            |
 | Compatible con TLS       | No                                                             |
 | Identificador de objeto | 1.2.156.11235.1.1.2.1                                          |
@@ -253,7 +253,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_NISTP224_"></span><span id="bcrypt_ecc_curve_nistp224_"></span>**BCRYPT \_ ECC \_ CURVE \_ NISTP224**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_NISTP224_"></span><span id="bcrypt_ecc_curve_nistp224_"></span>**BCRYPT \_ CURVA ECC \_ \_ NISTP224**</dt> <dd> <dl> <dt> 
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -281,7 +281,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_NISTP384_"></span><span id="bcrypt_ecc_curve_nistp384_"></span>**BCRYPT \_ ECC \_ CURVE \_ NISTP384**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_NISTP384_"></span><span id="bcrypt_ecc_curve_nistp384_"></span>**BCRYPT \_ CURVA ECC \_ \_ NISTP384**</dt> <dd> <dl> <dt> 
 
 | Requisito | Value |
 |-------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -317,7 +317,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 | Estándar          | [Especificación de la selección de curva y los parámetros de curva admitidos en MSR ECCLib](https://research.microsoft.com/pubs/219966/curvegen.pdf) |
 | Tamaño de la clave (bits)   | 256                                                                                                                                     |
 | Compatible con TLS       | No                                                                                                                                      |
-| Identificador de objeto | Ninguno                                                                                                                                    |
+| Identificador de objeto | None                                                                                                                                    |
 
 
 
@@ -331,7 +331,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 | Estándar          | [Especificación de la selección de curva y los parámetros de curva admitidos en MSR ECCLib](https://research.microsoft.com/pubs/219966/curvegen.pdf) |
 | Tamaño de la clave (bits)   | 384                                                                                                                                     |
 | Compatible con TLS       | No                                                                                                                                      |
-| Identificador de objeto | Ninguno                                                                                                                                    |
+| Identificador de objeto | None                                                                                                                                    |
 
 
 
@@ -345,13 +345,13 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 | Estándar          | [Especificación de la selección de curva y los parámetros de curva admitidos en MSR ECCLib](https://research.microsoft.com/pubs/219966/curvegen.pdf) |
 | Tamaño de la clave (bits)   | 512                                                                                                                                     |
 | Compatible con TLS       | No                                                                                                                                      |
-| Identificador de objeto | Ninguno                                                                                                                                    |
+| Identificador de objeto | None                                                                                                                                    |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_SECP160K1_"></span><span id="bcrypt_ecc_curve_secp160k1_"></span>**BCRYPT \_ CURVA ECC \_ \_ SECP160K1**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_SECP160K1_"></span><span id="bcrypt_ecc_curve_secp160k1_"></span>**BCRYPT \_ ECC \_ CURVE \_ SECP160K1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------|
@@ -365,7 +365,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_SECP160R1_"></span><span id="bcrypt_ecc_curve_secp160r1_"></span>**BCRYPT \_ CURVA ECC \_ \_ SECP160R1**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_SECP160R1_"></span><span id="bcrypt_ecc_curve_secp160r1_"></span>**BCRYPT \_ ECC \_ CURVE \_ SECP160R1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------|
@@ -379,7 +379,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_SECP160R1_"></span><span id="bcrypt_ecc_curve_secp160r1_"></span>**BCRYPT \_ CURVA ECC \_ \_ SECP160R1**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_SECP160R1_"></span><span id="bcrypt_ecc_curve_secp160r1_"></span>**BCRYPT \_ ECC \_ CURVE \_ SECP160R1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------|
@@ -407,7 +407,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_SECP192R1_"></span><span id="bcrypt_ecc_curve_secp192r1_"></span>**BCRYPT \_ CURVA ECC \_ \_ SECP192R1**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_SECP192R1_"></span><span id="bcrypt_ecc_curve_secp192r1_"></span>**BCRYPT \_ ECC \_ CURVE \_ SECP192R1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Value |
 |-------------------|---------------------------------------------------------------------------------|
@@ -510,7 +510,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 | Requisito | Value |
 |-------------------|--------------|
 | Nombre              | wtls12       |
-| Estándar          | Wtls         |
+| Estándar          | WTLS         |
 | Tamaño de la clave (bits)   | 224          |
 | Compatible con TLS       | No           |
 | Identificador de objeto | 1.3.132.0.33 |
@@ -524,7 +524,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 | Requisito | Value |
 |-------------------|--------------|
 | Nombre              | wtls7        |
-| Estándar          | Wtls         |
+| Estándar          | WTLS         |
 | Tamaño de la clave (bits)   | 160          |
 | Compatible con TLS       | No           |
 | Identificador de objeto | 1.3.132.0.30 |
@@ -538,7 +538,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 | Requisito | Value |
 |-------------------|---------------|
 | Nombre              | wtls9         |
-| Estándar          | Wtls          |
+| Estándar          | WTLS          |
 | Tamaño de la clave (bits)   | 160           |
 | Compatible con TLS       | No            |
 | Identificador de objeto | 2.23.43.1.4.9 |
@@ -561,7 +561,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P192V2_"></span><span id="bcrypt_ecc_curve_x962p192v2_"></span>**BCRYPT \_ CURVA ECC \_ \_ X962P192V2**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P192V2_"></span><span id="bcrypt_ecc_curve_x962p192v2_"></span>**BCRYPT \_ ECC \_ CURVE \_ X962P192V2**</dt> <dd> <dl> <dt> 
 
 | Requisito | Value |
 |-------------------|---------------------|
@@ -589,7 +589,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P239V1_"></span><span id="bcrypt_ecc_curve_x962p239v1_"></span>**BCRYPT \_ CURVA ECC \_ \_ X962P239V1**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P239V1_"></span><span id="bcrypt_ecc_curve_x962p239v1_"></span>**BCRYPT \_ ECC \_ CURVE \_ X962P239V1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Value |
 |-------------------|---------------------|
@@ -617,7 +617,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P239V3_"></span><span id="bcrypt_ecc_curve_x962p239v3_"></span>**BCRYPT \_ CURVA ECC \_ \_ X962P239V3**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P239V3_"></span><span id="bcrypt_ecc_curve_x962p239v3_"></span>**BCRYPT \_ ECC \_ CURVE \_ X962P239V3**</dt> <dd> <dl> <dt> 
 
 | Requisito | Value |
 |-------------------|---------------------|
@@ -650,7 +650,7 @@ A partir Windows 10, CNG proporciona compatibilidad con las siguientes curvas el
 
 ## <a name="remarks"></a>Observaciones
 
-Para usar una curva con nombre, llame a [**BCryptOpenAlgorithmProvider**](/windows/win32/api/Bcrypt/nf-bcrypt-bcryptopenalgorithmprovider) mediante **BCRYPT \_ ECDSA \_ ALGORITHM** o **BCRYPT \_ ECDH \_ ALGORITHM** como identificador del algoritmo. A continuación, llame a [**BCryptSetProperty**](/windows/win32/api/Bcrypt/nf-bcrypt-bcryptsetproperty) y establezca la propiedad **\_ BCRYPT ECC \_ CURVE \_ NAME** en una de las curvas anteriores o en cualquier curva con nombre registrada en el equipo, como se muestra en el `certutil -displayEccCurve` comando .
+Para usar una curva con nombre, llame a [**BCryptOpenAlgorithmProvider**](/windows/win32/api/Bcrypt/nf-bcrypt-bcryptopenalgorithmprovider) mediante **BCRYPT \_ ECDSA \_ ALGORITHM** o **BCRYPT \_ ECDH \_ ALGORITHM** como identificador del algoritmo. A continuación, llame a [**BCryptSetProperty**](/windows/win32/api/Bcrypt/nf-bcrypt-bcryptsetproperty) y establezca la propiedad **\_ BCRYPT ECC \_ CURVE \_ NAME** en una de las curvas anteriores o en cualquiera de las curvas con nombre registradas en el equipo como se muestra en el `certutil -displayEccCurve` comando.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -660,11 +660,11 @@ Para usar una curva con nombre, llame a [**BCryptOpenAlgorithmProvider**](/windo
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Windows Server 2016 solo aplicaciones de escritorio\]<br/>                                |
-| Header<br/>                   | <dl> <dt>Bcrypt.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Bcrypt.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

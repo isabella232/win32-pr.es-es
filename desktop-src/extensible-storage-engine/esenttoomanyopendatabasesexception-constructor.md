@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: constructor EsentTooManyOpenDatabasesException'
-title: Constructor de EsentTooManyOpenDatabasesException
+description: 'Más información sobre: Constructor EsentTooManyOpenDatabasesException'
+title: Constructor EsentTooManyOpenDatabasesException
 TOCTitle: 'EsentTooManyOpenDatabasesException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentTooManyOpenDatabasesException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esenttoomanyopendatabasesexception.esenttoomanyopendatabasesexception(v=EXCHG.10)
@@ -25,18 +25,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 8483be19af95f131fdc3900b93acbcb9eb875328
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105707051"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466814"
 ---
-# <a name="esenttoomanyopendatabasesexception-constructor"></a>Constructor de EsentTooManyOpenDatabasesException
+# <a name="esenttoomanyopendatabasesexception-constructor"></a>Constructor EsentTooManyOpenDatabasesException
 
 Inicializa una nueva instancia de la clase EsentTooManyOpenDatabasesException.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,4 +60,4 @@ public EsentTooManyOpenDatabasesException()
 
 [Miembros de EsentTooManyOpenDatabasesException](./esenttoomanyopendatabasesexception-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

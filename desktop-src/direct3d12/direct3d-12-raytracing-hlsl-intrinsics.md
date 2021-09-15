@@ -5,12 +5,12 @@ ms.assetid: ''
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ce12f90233dee05bb4959498d3cb366aa88f1140182384bc26f5b017ee2bf64
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 06687866354611f44f295ff4fe2cf171068e83c3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117733788"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466348"
 ---
 # <a name="raytracing-hlsl-intrinsics"></a>Rayos intrínsecos HLSL
 

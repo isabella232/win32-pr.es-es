@@ -4,12 +4,12 @@ description: Esta sección contiene información sobre las enumeraciones D3DCSX 
 ms.assetid: 7DDF9561-2773-4EA9-A451-EE60C4F9FF9D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df19e4a9c6dfb661174442abee87cffae5d68d235d3e492792c22209cedf9383
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 13e7c9ebeebf3145d518202da343ba14d66b34f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119633465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270271"
 ---
 # <a name="d3dcsx-11-enumerations"></a>Enumeraciones D3DCSX 11
 

@@ -4,16 +4,16 @@ ms.assetid: E32C1BA6-B520-4809-A9E9-48813C7EBAA4
 title: Cómo especificar un icono, una etiqueta o un controlador de dispositivos para un dispositivo mediante una clase de dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26ef06228d9b533f2793384c0053017f06aca72d05bd64c5333aa2aadca48dcf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 46f81ee6fa469a6bec13abbc1d8a088f5fb334ea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120111775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468191"
 ---
 # <a name="how-to-specify-an-icon-label-or-device-handler-for-a-device-using-a-device-class"></a>Cómo especificar un icono, una etiqueta o un controlador de dispositivos para un dispositivo mediante una clase de dispositivo
 
-Las clases de dispositivo permiten especificar las propiedades Icons, Label y DeviceHandlers para cualquier dispositivo de esa clase. Esto es similar al uso de grupos de dispositivos, pero las clases de dispositivo y sus pertenencias están determinadas por el hardware en lugar de crearse o asignarse. Cada nombre de clave de clase, que es Plug and Play GUID de interfaz de dispositivo, se encuentra en la **clave DeviceClasses.** En la clave de clase individual, asigne los valores de Icons, Label y DeviceHandlers.
+Las clases de dispositivo permiten especificar las propiedades Icons, Label y DeviceHandlers para cualquier dispositivo de esa clase. Esto es similar al uso de grupos de dispositivos, pero las clases de dispositivo y sus pertenencias están determinadas por el hardware en lugar de crearse o asignarse. Cada nombre de clave de clase, que es Plug and Play GUID de interfaz de dispositivo, se encuentra en la **clave DeviceClasses.** En la clave de clase individual, asigne los valores para Iconos, Etiqueta y DeviceHandlers.
 
 ## <a name="instructions"></a>Instructions
 

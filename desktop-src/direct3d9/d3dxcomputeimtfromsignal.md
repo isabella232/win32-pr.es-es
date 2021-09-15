@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9d645e12f7159963f9b9bc5abeb960aee0bac2282537c482465be3ea08690181
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 979304a350c226a9406e62896bb84492d8046e74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118299417"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569328"
 ---
 # <a name="d3dxcomputeimtfromsignal-function"></a>Función D3DXComputeIMTFromSignal
 
@@ -63,7 +63,7 @@ Puntero a una malla de entrada (vea [**ID3DXMesh)**](id3dxmesh.md)que contiene l
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Índice de coordenadas de textura de base cero que identifica qué conjunto de coordenadas de textura usar.
+Índice de coordenadas de textura de base cero que identifica el conjunto de coordenadas de textura que se va a usar.
 
 </dd> <dt>
 
@@ -90,7 +90,7 @@ Distancia máxima entre vértices; El algoritmo continúa subdividiendo hasta qu
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Opciones de ajuste de textura. Se trata de una combinación de una o varias [**marcas D3DXIMT**](./d3dximt-flags.md).
+Opciones de ajuste de textura. Se trata de una combinación de una o varias [**marcas D3DXIMT.**](./d3dximt-flags.md)
 
 </dd> <dt>
 
@@ -115,7 +115,7 @@ Puntero a un valor definido por el usuario que se pasa a la función de devoluci
 *pStatusCallback* 
 </dt> <dd>
 
-Tipo: **[LPD3DRVALLASCB](lpd3dxuvatlascb.md)**
+Tipo: **[LPD3DVATVATLASCB](lpd3dxuvatlascb.md)**
 
 Puntero a una función de devolución de llamada para supervisar el progreso del cálculo de IMT.
 
@@ -135,7 +135,7 @@ Puntero a una variable definida por el usuario que se pasa a la función de devo
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Puntero al búfer (vea [**ID3DXBuffer**](id3dxbuffer.md)) que contiene la matriz IMT devuelta. Esta matriz se puede proporcionar como entrada a las funciones [D3DX UVAtlas para](dx9-graphics-reference-d3dx-functions-uvatlas.md) priorizar la asignación de espacio de textura en la parametrización de textura.
+Puntero al búfer (vea [**ID3DXBuffer)**](id3dxbuffer.md)que contiene la matriz IMT devuelta. Esta matriz se puede proporcionar como entrada a las funciones [UVAtlas](dx9-graphics-reference-d3dx-functions-uvatlas.md) de D3DX para priorizar la asignación de espacio de textura en la parametrización de textura.
 
 </dd> </dl>
 
@@ -145,7 +145,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK; de lo contrario, el valor es D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función requiere que la malla de entrada contenga una asignación de textura de señal a malla (es decir, coordenadas de textura). Permite al usuario definir una señal arbitrariamente sobre la superficie de la malla.
 
@@ -160,7 +160,7 @@ Esta función requiere que la malla de entrada contenga una asignación de textu
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

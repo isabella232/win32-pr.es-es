@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 87ac53e0fba57ed1e7cfb4e92d1da726e7030466954bf29f2bfb9ff14156eef6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6a91c3ea1cb49c4c501ab847cb63fe8a39d66665
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120027025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127566648"
 ---
 # <a name="d3dxshscale-function-d3dx9mathh"></a>Función D3DXSHScale (D3dx9math.h)
 
@@ -57,7 +57,7 @@ Puntero a coeficientes de salida armónicos esféricos (SH). La evaluación gene
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos incluidos. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
+Orden de la evaluación de SH. Debe estar en el intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, ambos inclusive. La evaluación genera coeficientes order-to-order. El grado de la evaluación es Order - 1.
 
 </dd> <dt>
 
@@ -85,12 +85,12 @@ Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
 Puntero a coeficientes de salida sh.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cada coeficiente de la función base Ylm se almacena en la ubicación de memoria lmiento + m + l, donde:
 
 -   l es el grado de la función base.
--   m es el índice de función base para el valor l especificado y va de -l a l, ambos inclusive.
+-   m es el índice de función base para el valor l especificado y va de -l a l, ambos incluidos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -110,7 +110,7 @@ Cada coeficiente de la función base Ylm se almacena en la ubicación de memoria
 [Funciones matemáticas](dx9-graphics-reference-d3dx-functions-math.md)
 </dt> <dt>
 
-[Transferencia de radiancia precalcalada (Direct3D 9)](precomputed-radiance-transfer.md)
+[Transferencia de radiancia precalutada (Direct3D 9)](precomputed-radiance-transfer.md)
 </dt> </dl>
 
  

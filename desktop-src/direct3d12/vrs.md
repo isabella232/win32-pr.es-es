@@ -4,12 +4,12 @@ description: El sombreado de velocidad variable o el sombreado de píxeles gener
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 04/08/2019
-ms.openlocfilehash: b26d2d67a6e4a5f7b599a9fc65f324b301346fde3170262e80235a25f8cfb88b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f207cddee978915788291fc0ffe55160e6a93c6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119045330"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567968"
 ---
 # <a name="variable-rate-shading-vrs"></a>Sombreado de velocidad variable (VRS)
 
@@ -34,14 +34,14 @@ Una API de sombreado general permite a la aplicación especificar el número de 
 
 Esta es una tabla que describe qué nivel de MSAA se admite con qué tamaño de píxel general. Algunos no se admiten en ninguna plataforma; mientras que otras se habilitan condicionalmente en función de una funcionalidad *(AdditionalShadingRatesSupported),* indicada por "Cap".
 
-![En la tabla se muestra el tamaño de píxel general para los niveles de M S A.](images/CoarsePixelSizeSupport.PNG "Tamaños de píxeles gruesos")
+![En la tabla se muestra el tamaño de píxel general para los niveles de M S A.](images/CoarsePixelSizeSupport.PNG "Tamaños de píxeles general")
 
 Para los niveles de características que se deban analizar en la sección siguiente, no hay ninguna combinación general de tamaño de píxel y recuento de muestras, donde el hardware necesita realizar un seguimiento de más de 16 muestras por invocación del sombreador de píxeles. Esas combinaciones están sombreadas por medio tono en la tabla anterior.
 
 ## <a name="feature-tiers"></a>Niveles de características
 Hay dos niveles para la implementación de VRS y dos funcionalidades que puede consultar. Cada nivel se describe con más detalle después de la tabla.
 
-![En la tabla se muestran las características disponibles en los niveles 1 y 2.](images/Tiers.PNG "Niveles de VRS")
+![En la tabla se muestran las características disponibles en los niveles 1 y 2.](images/Tiers.PNG "Niveles vrs")
 
 ### <a name="tier-1"></a>Nivel 1
 - La velocidad de sombreado solo se puede especificar por dibujo; no es más granular que eso.
@@ -74,7 +74,7 @@ Este es el mecanismo más sencillo para establecer la velocidad de sombreado. Es
 
 La aplicación puede especificar un tamaño de píxel general mediante el método [ **ID3D12GraphicsCommandList5::RSSetShadingRate**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist5-rssetshadingrate). Esa API toma un único argumento de enumeración. La API proporciona un control general del nivel de calidad para representar la capacidad de establecer la velocidad de sombreado &mdash; por dibujo.
 
-Los valores para este estado se expresan a través de la [**enumeración D3D12_SHADING_RATE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shading_rate) datos.
+Los valores de este estado se expresan a través de la [**enumeración D3D12_SHADING_RATE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shading_rate) datos.
 
 #### <a name="coarse-pixel-size-support"></a>Compatibilidad con el tamaño de píxel general
 Las tasas de sombreado 1x1, 1x2, 2x2 y 2x2 se admiten en todos los niveles.
@@ -312,15 +312,15 @@ Para valores de cuatro bits.
 |         1010 |-0,375f   |-6 / 16|    |
 |         1011 |-0,3125f  |-5 / 16     |
 |         1100 |-0,25f    |-4 / 16     |
-|         1101 |-0,1875f  |-3 / 16     |
+|         1101 |-0.1875f  |-3 / 16     |
 |         1110 |-0,125f   |-2 / 16     |
 |         1111 |-0,0625f  |-1 /16      |
 |         0000 |0,0f      |0 / 16      |
 |         0001 |-0,0625f  |1 / 16      |
 |         0010 |-0,125f   |2 / 16      |
-|         0011 |-0,1875f  |3 / 16      |
+|         0011 |-0.1875f  |3 / 16      |
 |         0100 |-0,25f    |4 / 16      |
-|         0101 |-0,3125f  |5 / 16      |
+|         0101 |-0.3125f  |5 / 16      |
 |         0110 |-0,375f   |6 / 16      |
 |         0111 |-0,4375f  |7 / 16      |
 
@@ -352,7 +352,7 @@ Para valores de cinco bits.
 |        00101 |0.3125    |5 / 16      |
 |        00110 |0.375     |6 / 16      |
 |        00111 |0.4375    |7 / 16      |
-|        01000 |0,5       |8 / 16      |
+|        01000 |0.5       |8 / 16      |
 |        01001 |0.5625    |9 / 16      |
 |        01010 |0.625     |10 / 16     |
 |        01011 |0.6875    |11 / 16     |
@@ -405,7 +405,7 @@ Para valores de seis bits.
 |       000101 |0.3125    |5 / 16      |
 |       000110 |0.375     |6 / 16      |
 |       000111 |0.4375    |7 / 16      |
-|       001000 |0,5       |8 / 16      |
+|       001000 |0.5       |8 / 16      |
 |       001001 |0.5625    |9 / 16      |
 |       001010 |0.625     |10 / 16     |
 |       001011 |0.6875    |11 / 16     |
@@ -430,71 +430,71 @@ Para valores de seis bits.
 |       011110 |1.875     |30 / 16     |
 |       011111 |1.9375    |31 / 16     |
 
-De la misma manera que con los píxeles finos, la cuadrícula de ubicaciones evaluables se centra en el centro de píxeles general cuando se usa sombreado `EvaluateAttributeSnapped` de píxeles general.
+De la misma manera que con píxeles finos, la cuadrícula de ubicaciones evaluables se centra en el centro de píxeles general cuando se usa el sombreado de `EvaluateAttributeSnapped` píxeles general.
 
 ## <a name="setsamplepositions"></a>SetSamplePositions
 Cuando se usa la API [**ID3D12GraphicsCommandList1::SetSamplePositions**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist1-setsamplepositions) con sombreado general, la API establece las posiciones de ejemplo para píxeles finos.
 
 ## <a name="sv_coverage"></a>SV_Coverage
-Si se declara como una entrada o salida de sombreador en el nivel 1, se deshabilita el `SV_Coverage` sombreado de píxeles general.
+Si se declara como entrada o salida de sombreador en el nivel 1, el sombreado de píxeles general `SV_Coverage` está deshabilitado.
 
 Puede usar la semántica con sombreado de píxeles general en el nivel 2 y refleja qué muestras de un destino `SV_Coverage` MSAA se escriben.
 
-Cuando se usa el sombreado de píxeles general, lo que permite que varios píxeles de origen conste un icono, la máscara de cobertura representa todas las muestras que &mdash; &mdash; proceden de ese icono.
+Cuando se usa el sombreado de píxeles general, lo que permite que varios píxeles de origen conste de un icono, la máscara de cobertura representa todas las muestras que &mdash; &mdash; proceden de ese icono.
 
-Dada la compatibilidad del sombreado de píxeles general con MSAA, el número de bits de cobertura necesarios para especificarse puede variar. Por ejemplo, con un recurso MSAA 4x que usa [**D3D12_SHADING_RATE_2x2**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shading_rate), cada píxel grueso escribe en cuatro píxeles finos y cada píxel fino tiene cuatro ejemplos. Esto significa que cada píxel general escribe en un total de 4 * 4 = 16 muestras.
+Dada la compatibilidad del sombreado de píxeles general con MSAA, el número de bits de cobertura necesarios para especificarse puede variar. Por ejemplo, con un recurso MSAA 4x que usa [**D3D12_SHADING_RATE_2x2**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shading_rate), cada píxel general escribe en cuatro píxeles finos y cada píxel fino tiene cuatro ejemplos. Esto significa que cada píxel general escribe en un total de 4 * 4 = 16 muestras.
 
 ### <a name="number-of-coverage-bits-needed"></a>Número de bits de cobertura necesarios
 En la tabla siguiente se indica cuántos bits de cobertura se necesitan para cada combinación de tamaño de píxel general y nivel de MSAA.
 
-![En la tabla se muestra el tamaño de píxeles general, el número de píxeles finos y los niveles de M S A A.](images/NumberOfCoverageBits.PNG "Bits de cobertura")
+![En la tabla se muestra el tamaño de píxel general, el número de píxeles finos y los niveles de MS A A.](images/NumberOfCoverageBits.PNG "Bits de cobertura")
 
-Como se indica en la tabla, no es posible usar píxeles gruesos para escribir en más de 16 muestras a la vez mediante la característica de sombreado de velocidad variable expuesta a través de Direct3D 12. Esta restricción se debe a las restricciones de Direct3D 12 con respecto a qué niveles de MSAA se permiten con qué tamaño de píxel general (consulte la tabla de la sección Con sombreado de velocidad [variable (VRS)](#with-variable-rate-shading-vrs) de este tema).
+Como se indica en la tabla, no es posible usar píxeles gruesos para escribir en más de 16 muestras a la vez mediante la característica de sombreado de velocidad variable expuesta a través de Direct3D 12. Esta restricción se debe a las restricciones de Direct3D 12 con respecto a qué niveles de MSAA se permiten con qué tamaño de píxel general (vea la tabla en la sección Con sombreado de velocidad [variable (VRS)](#with-variable-rate-shading-vrs) de este tema).
 
 ### <a name="ordering-and-format-of-bits-in-the-coverage-mask"></a>Ordenación y formato de bits en la máscara de cobertura
-Los bits de la máscara de cobertura se adhieren a un orden bien definido. La máscara consta de coberturas de píxeles de izquierda a derecha y, a continuación, de arriba abajo (columna principal). Los bits de cobertura son los bits de orden bajo de la semántica de cobertura y se empaquetan de forma densa.
+Los bits de la máscara de cobertura se ajustan a un orden bien definido. La máscara consta de coberturas de píxeles de izquierda a derecha y, a continuación, de arriba abajo (columna principal). Los bits de cobertura son los bits de orden inferior de la semántica de cobertura y se empaquetan de forma densa.
 
 En la tabla siguiente se muestra el formato de máscara de cobertura para las combinaciones admitidas de tamaño de píxel general y nivel de MSAA.
 
-![En la tabla se muestra el tamaño de píxel general, el diagrama de píxeles general y los bits de cobertura A de 1 x M S A.](images/Coverage1x.PNG "Cobertura a 1x")
+![En la tabla se muestra un tamaño de píxel general, un diagrama de píxeles general y bits de cobertura de 1 x M S A A.](images/Coverage1x.PNG "Cobertura a 1x")
 
-En la tabla siguiente se representan 2 píxeles MSAA, donde cada píxel tiene dos muestras de índices 0 y 1.
+En la tabla siguiente se representan 2 x MSAA píxeles, donde cada píxel tiene dos muestras de índices 0 y 1.
 
 El posicionamiento de las etiquetas de las muestras en los píxeles tiene fines ilustrativos y no necesariamente transmiten las ubicaciones espaciales {X, Y} de las muestras en ese píxel; especialmente dado que las posiciones de ejemplo se pueden cambiar mediante programación. El índice basado en 0 hace referencia a los ejemplos.
 
-![En la tabla se muestra el tamaño de píxel general, el diagrama de píxeles general y los bits de cobertura A de 2 x M S A.](images/Coverage2x.PNG "Cobertura a 2x")
+![En la tabla se muestra el tamaño de píxel general, el diagrama de píxeles general y los bits de cobertura de 2 x M S A A.](images/Coverage2x.PNG "Cobertura a 2x")
 
 En la tabla siguiente se muestran 4 píxeles MSAA, donde cada píxel tiene cuatro muestras de índices 0, 1, 2 y 3.
 
-![En la tabla se muestra el tamaño de píxel general, el diagrama de píxeles general y los bits de cobertura A de 4 M S A.](images/Coverage4x.PNG "Cobertura a 4x")
+![En la tabla se muestra el tamaño de píxel general, el diagrama de píxeles general y los bits de cobertura de 4 x M S A A.](images/Coverage4x.PNG "Cobertura a 4x")
 
 ## <a name="discard"></a>Discard (Descartar)
-Cuando se usa la semántica HLSL con sombreado de `discard` píxeles gruesos, se descartan los píxeles más anchos.
+Cuando se usa la semántica HLSL con sombreado de `discard` píxeles general, se descartan los píxeles más anchos.
 
 ## <a name="target-independent-rasterization-tir"></a>Rasterización independiente del destino (TIR)
-TIR no se admite cuando se usa el sombreado de píxeles general.
+No se admite TIR cuando se usa el sombreado de píxeles general.
 
 ## <a name="raster-order-views-rovs"></a>Vistas de orden de trama (ROV)
-Los interbloqueos ROV se especifican como que funcionan con granularidad de píxeles fina. Si el sombreado se realiza por ejemplo, los interbloqueos funcionan con granularidad de la muestra.
+Los interbloqueos ROV se especifican como que funcionan con granularidad de píxeles fina. Si el sombreado se realiza por muestra, los interbloqueos funcionan con granularidad de la muestra.
 
 ## <a name="conservative-rasterization"></a>Rasterización conservadora
-Puede usar la rasterización conservadora con sombreado de velocidad variable. Cuando se usa la rasterización conservadora con sombreado de píxeles general, los píxeles finos dentro de los píxeles más anchos se rasterizan de forma conservadora al tener cobertura completa.
+Puede usar la rasterización conservadora con sombreado de velocidad variable. Cuando se usa la rasterización conservadora con sombreado de píxeles general, los píxeles finos dentro de los píxeles más anchos se rasterizan conservadoramente al tener cobertura completa.
 
 ### <a name="coverage"></a>Cobertura
-Cuando se usa la rasterización conservadora, la semántica de cobertura contiene máscaras completa para píxeles finos cubiertos y 0 para píxeles finos que no están cubiertos.
+Cuando se usa la rasterización conservadora, la semántica de cobertura contiene máscaras completa para píxeles finos que se cubren y 0 para píxeles finos que no están cubiertos.
 
 ## <a name="bundles"></a>Agrupaciones
 Puede llamar a las API de sombreado de velocidad variable en una agrupación.
 
 ## <a name="render-passes"></a>Fases de representación
-Puede llamar a las API de sombreado de velocidad variable en un [paso de representación.](/windows/desktop/direct3d12/direct3d-12-render-passes)
+Puede llamar a las API de sombreado de velocidad variable en un [paso de representación](/windows/desktop/direct3d12/direct3d-12-render-passes).
 
 ## <a name="calling-the-vrs-apis"></a>Llamada a las API de VRS
-En esta sección siguiente se describe la manera en que el sombreado de velocidad variable es accesible para la aplicación a través de Direct3D 12.
+En la sección siguiente se describe la manera en que el sombreado de velocidad variable es accesible para la aplicación a través de Direct3D 12.
 
-### <a name="capability-querying"></a>Consultas de funcionalidad
+### <a name="capability-querying"></a>Consulta de funcionalidad
 
-Para consultar la funcionalidad de sombreado de velocidad variable del adaptador, llame a [**ID3D12Device::CheckFeatureSupport**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport) con [**D3D12_FEATURE::D 3D12_FEATURE_D3D12_OPTIONS6**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_feature)y proporcione una estructura [ **D3D12_FEATURE_DATA_D3D12_OPTIONS6**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options6) para que la función se rellene por usted. La **estructura D3D12_FEATURE_DATA_D3D12_OPTIONS6** contiene varios miembros, incluido uno del tipo enumerado [**D3D12_VARIABLE_SHADING_RATE_TIER**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_variable_shading_rate_tier) (D3D12_FEATURE_DATA_D3D12_OPTIONS6::VariableShadingRateTier) y otro que indica si se admite el procesamiento en segundo plano (D3D12_FEATURE_DATA_D3D12_OPTIONS6::BackgroundProcessingSupported).
+Para consultar la funcionalidad de sombreado de velocidad variable del adaptador, llame a [**ID3D12Device::CheckFeatureSupport**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport) [**con D3D12_FEATURE::D 3D12_FEATURE_D3D12_OPTIONS6**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_feature)y proporcione una estructura [ **D3D12_FEATURE_DATA_D3D12_OPTIONS6**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options6) para que la función lo rellene. La **estructura D3D12_FEATURE_DATA_D3D12_OPTIONS6** contiene varios miembros, incluido uno del tipo enumerado [**D3D12_VARIABLE_SHADING_RATE_TIER**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_variable_shading_rate_tier) (D3D12_FEATURE_DATA_D3D12_OPTIONS6::VariableShadingRateTier) y otro que indica si se admite el procesamiento en segundo plano (D3D12_FEATURE_DATA_D3D12_OPTIONS6::BackgroundProcessingSupported).
 
 Para consultar la funcionalidad de nivel 1, por ejemplo, puede hacerlo.
 
@@ -531,22 +531,22 @@ La plataforma también proporciona estas macros, definidas en `d3d12.h` .
 Se pueden usar para diseccionar y comprender `SV_ShaderRate` .
 
 > [!NOTE]
-> Esta interpretación de datos está orientada a describir la imagen de espacio en pantalla, que pueden manipular los sombreadores. Esto se describe más adelante en las secciones anteriores. Pero no hay ninguna razón para no tener una definición coherente de los tamaños de píxeles gruesos que se usarán en todas partes, incluso al establecer la velocidad de sombreado de nivel de comando.
+> Esta interpretación de datos está orientada a describir la imagen de espacio en pantalla, que pueden manipular los sombreadores. Esto se describe más adelante en las secciones anteriores. Pero no hay ninguna razón para no tener una definición coherente de los tamaños de píxeles general que se usarán en todas partes, incluso al establecer la velocidad de sombreado en el nivel de comando.
 
-### <a name="setting-command-level-shading-rate-and-combiners"></a>Establecimiento de la velocidad de sombreado y los combinadores de nivel de comando
+### <a name="setting-command-level-shading-rate-and-combiners"></a>Establecimiento de la velocidad de sombreado en el nivel de comando y los combinadores
 La velocidad de sombreado y, opcionalmente, los combinadores se especifican mediante el método [**ID3D12GraphicsCommandList5::RSSetShadingRate.**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist5-rssetshadingrate) Se pasa un [**D3D12_SHADING_RATE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shading_rate) para la velocidad de sombreado base y una matriz opcional de [D3D12_SHADING_RATE_COMBINER](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shading_rate_combiner) valores.
 
 ### <a name="preparing-the-screen-space-image"></a>Preparación de la imagen de espacio en pantalla
 El estado de recurso de solo lectura que designa una imagen de velocidad de sombreado utilizable se define [como D3D12_RESOURCE_STATES::D 3D12_RESOURCE_STATE_SHADING_RATE_SOURCE](/windows/desktop/api/d3d12/ne-d3d12-d3d12_resource_states).
 
-### <a name="setting-the-screen-space-image"></a>Configuración de la imagen de espacio de pantalla
-Especifique la imagen de espacio en pantalla mediante el método [**ID3D12GraphicsCommandList5::RSSetShadingRateImage.**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist5-rssetshadingrateimage)
+### <a name="setting-the-screen-space-image"></a>Configuración de la imagen de espacio en pantalla
+La imagen de espacio en pantalla se especifica mediante el método [**ID3D12GraphicsCommandList5::RSSetShadingRateImage.**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist5-rssetshadingrateimage)
 
 ```cpp
 m_commandList->RSSetShadingRateImage(screenSpaceImage);
 ```
 
 ### <a name="querying-the-tile-size"></a>Consulta del tamaño del icono
-Puede consultar el tamaño del icono desde el [**D3D12_FEATURE_DATA_D3D12_OPTIONS6::ShadingRateImageTileSize.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options6) Consulte [Las consultas de funcionalidad anteriores.](#capability-querying)
+Puede consultar el tamaño del icono desde [**el miembro D3D12_FEATURE_DATA_D3D12_OPTIONS6::ShadingRateImageTileSize.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_feature_data_d3d12_options6) Consulte [La funcionalidad de consulta anterior.](#capability-querying)
 
 Se recupera una dimensión, ya que las dimensiones horizontal y vertical son siempre las mismas. Si la funcionalidad del sistema es D3D12_SHADING_RATE_TIER_NOT_SUPPORTED [**,**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_variable_shading_rate_tier)el tamaño del icono devuelto es 0.

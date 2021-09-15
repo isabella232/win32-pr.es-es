@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d5c6cf0c677d5a3bf279c3d2754e8abce8fbb985df2ca1f21338897ce03f1d42
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fee4ad7d7accf71bd4c3439f954ee36badd2ea20
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118983505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127567745"
 ---
 # <a name="apijetclosetable-method"></a>Método Api.JetCloseTable
 
@@ -72,7 +72,7 @@ public static void JetCloseTable(
     
     Tabla que se cerrará.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a16101eac6f303dbba03819c8d9f460c06c2613c748ef8ce4c74ae3fe30bb0f9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1f843a218e39daf616fa6c59ca27f73a5511f17b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120024615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568380"
 ---
 # <a name="pragma-directive"></a>\#pragma (directiva)
 
@@ -45,7 +45,7 @@ Directiva de preprocesador que proporciona características específicas del equ
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el compilador encuentra una pragma que no reconoce, emite una advertencia, pero la compilación continúa.
 
