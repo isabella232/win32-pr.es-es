@@ -1,19 +1,19 @@
 ---
-description: Valor DE WORD que indica el puerto.
+description: Valor de WORD que indica el puerto.
 ms.assetid: 535d644d-4045-4ff1-9c12-a3d5f665453d
 title: INTERNET_PORT (Winhttp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48ca41ee7291f7dc9c1f3d42805145ca3c049a925ffd365aef2864856aec33d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7fb0f5e18e8dba25db231185e34b53c033682367
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133148"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258684"
 ---
 # <a name="internet_port"></a>PUERTO DE \_ INTERNET
 
-Valor DE WORD que indica el puerto. WinHTTP define previamente los siguientes puertos de Internet.
+Valor de WORD que indica el puerto. WinHTTP define previamente los siguientes puertos de Internet.
 
 <dl> <dt>
 
@@ -30,7 +30,7 @@ Puerto de Internet predeterminado para el protocolo especificado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="INTERNET_DEFAULT_HTTP_PORT"></span><span id="internet_default_http_port"></span>**PUERTO \_ HTTP PREDETERMINADO DE \_ INTERNET \_**
+<span id="INTERNET_DEFAULT_HTTP_PORT"></span><span id="internet_default_http_port"></span>**PUERTO \_ HTTP PREDETERMINADO \_ DE INTERNET \_**
 </dt> <dd> <dl> <dt>
 
 80
@@ -43,7 +43,7 @@ Puerto HTTP de Internet predeterminado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="INTERNET_DEFAULT_HTTPS_PORT"></span><span id="internet_default_https_port"></span>**PUERTO \_ \_ HTTPS PREDETERMINADO DE \_ INTERNET**
+<span id="INTERNET_DEFAULT_HTTPS_PORT"></span><span id="internet_default_https_port"></span>**PUERTO \_ HTTPS PREDETERMINADO DE \_ \_ INTERNET**
 </dt> <dd> <dl> <dt>
 
 443
@@ -51,7 +51,7 @@ Puerto HTTP de Internet predeterminado.
 
 
 
-El puerto HTTPS de Internet predeterminado.
+Puerto HTTPS de Internet predeterminado.
 
 
 </dt> </dl> </dd> </dl>
@@ -62,9 +62,9 @@ El puerto HTTPS de Internet predeterminado.
 
 | Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>      |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>      |
 | Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>   |
-| Header<br/>                   | <dl> <dt>Winhttp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winhttp.h</dt> </dl> |
 
 
 

@@ -1,17 +1,17 @@
 ---
 description: Indica la fecha y hora en que se creó un documento. Esta información se almacena en el documento, no se obtiene del sistema de archivos.
 ms.assetid: 00d8faa6-6b9c-4981-aeb1-17f8f14b1926
-title: System.Document. DateCreated
+title: System.Document.DateCreated
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1aae38ac3c5f77a42240e4b0e2ada41751182a5da2fab8e0a8914de639936a25
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1b50ae3ef5f6a5c27454e6b408a03e63a4c6228e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118466765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248216"
 ---
-# <a name="systemdocumentdatecreated"></a>System.Document. DateCreated
+# <a name="systemdocumentdatecreated"></a>System.Document.DateCreated
 
 Indica la fecha y hora en que se creó un documento. Esta información se almacena en el documento, no se obtiene del sistema de archivos.
 
@@ -46,7 +46,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

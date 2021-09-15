@@ -11,16 +11,16 @@ keywords:
 - referencia para visualizaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01779655a930df18f628d31579ec30d18ecbd7dbbae46aecee2de00fe976c996
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 50b8c5ef4ed9b2c51106052c9fdd00ab5d87b78d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119736515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258911"
 ---
 # <a name="custom-visualization-programming-reference"></a>Referencia de programación de visualizaciones personalizadas
 
-La referencia de visualización personalizada documenta los siguientes elementos.
+La Referencia de visualización personalizada documenta los siguientes elementos.
 
 
 

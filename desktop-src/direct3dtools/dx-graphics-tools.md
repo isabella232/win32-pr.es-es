@@ -4,12 +4,12 @@ description: En esta sección se enumeran las herramientas y utilidades proporci
 ms.assetid: 89fb8587-f475-45f7-8faf-fe195a2b4b66
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 676faf225ee03371f6c7659d605cd467b921be43bc08d4e4a2b015674a0b0b64
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 55823a4810819b91095816d757fa0c3a655369bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119853354"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270100"
 ---
 # <a name="tools-for-directx-graphics"></a>Herramientas para gráficos DirectX
 

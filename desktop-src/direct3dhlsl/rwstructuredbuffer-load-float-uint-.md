@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 24aee1d7abfcec66fe9e005fdc65010be52b89fdb820374276f12091ddfe2903
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 74a153d4b56ec16b80dec180287005666747d259
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118986255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270164"
 ---
 # <a name="rwstructuredbufferloadintuint-function"></a>Función RWStructuredBuffer::Load(int,uint)
 
@@ -64,13 +64,13 @@ Escriba:
 
 El tipo de valor devuelto coincide con el tipo de la declaración del [**objeto RWStructuredBuffer.**](sm5-object-rwstructuredbuffer.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta función es compatible con los siguientes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domain | Geometría | Píxel | Proceso |
+| Vértice | Casco | Domain | Geometría | Píxel | Compute |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -78,7 +78,7 @@ Esta función es compatible con los siguientes tipos de sombreadores:
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6a26040bb8f47d85be99f0d8df602bdd69835cfa648ac6d5898f786e4518acdb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 80ec93055535640b84c33dde2b61ee59cd5bfdcf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118117779"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258727"
 ---
 # <a name="themeopenviewrelative"></a>THEME.openViewRelative
 
@@ -57,7 +57,7 @@ Número  (**long**) que especifica la posición inicial del borde superior de **
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La posición especificada para **VIEW** se usa la primera vez que se llama a este método, después de lo cual el usuario puede arrastrar la **vista** a otra ubicación. Se guarda la nueva posición y, en las llamadas posteriores, se usa la posición más reciente.
 
@@ -82,13 +82,13 @@ La posición especificada para **VIEW** se usa la primera vez que se llama a est
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

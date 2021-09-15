@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4a4b9ef9fbedce13b9c68940fc45204a35c1113e9551034fa57ed6948f4fa5e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 73c5b44f1f0b69aaed6066635ad4e82690bc3c37
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118983655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270076"
 ---
 # <a name="apijetbackupinstance-method"></a>Método Api.JetBackupInstance
 
@@ -77,7 +77,7 @@ public static void JetBackupInstance(
   - destination  
     Tipo: [System.String](/dotnet/api/system.string)  
     
-    Directorio donde se va a almacenar la copia de seguridad. Si la ruta de acceso de copia de seguridad es NULL para usar la función, truncará los registros, si es posible.
+    Directorio donde se va a almacenar la copia de seguridad. Si la ruta de acceso de copia de seguridad es NULL para usar la función truncará los registros, si es posible.
 
 <!-- end list -->
 
@@ -93,11 +93,11 @@ public static void JetBackupInstance(
     
     Devolución de llamada de notificación de estado opcional.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

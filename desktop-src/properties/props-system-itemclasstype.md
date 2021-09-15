@@ -4,12 +4,12 @@ ms.assetid: 081c7b33-582f-457c-9918-f7d5bb8879ab
 title: System.ItemClassType
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0e3fcb1d0b44859ecdee8a12c7076da235fc0c78882c316f9f1b60b410b80ac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 27731841943bcf1d619a9d4f0da87558670f60d4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117865848"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248138"
 ---
 # <a name="systemitemclasstype"></a>System.ItemClassType
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

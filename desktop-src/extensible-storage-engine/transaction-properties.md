@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.tran
 ms:contentKeyID: 55104169
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: cfcc2de9539831bc7c1662c5a95f2ade86d8eed3ba9385666102a7aea209e5c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 04a90f27c1376829ab4dce3ce9c7f33bd48f6e37
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118070786"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269564"
 ---
 # <a name="transaction-properties"></a>Propiedades de transacción
 

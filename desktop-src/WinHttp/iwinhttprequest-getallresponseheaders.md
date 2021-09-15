@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: d853cfd80038081865eeefbbc456f470485b69a2dae02384e91e8b4d78d90810
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 74c113216cf41e2f9816176dd28ba5e84208c635
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133108"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258652"
 ---
 # <a name="iwinhttprequestgetallresponseheaders-method"></a>IWinHttpRequest::GetAllResponseHeaders (método)
 
@@ -49,11 +49,11 @@ Recibe la información de encabezado resultante.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es **S \_ OK si se** ejecuta correctamente o un valor de error en caso contrario.
+El valor devuelto es **S \_ OK on** success o un valor de error de lo contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método devuelve todos los encabezados incluidos en la respuesta del servidor más reciente. Los encabezados individuales se delimitan mediante una combinación de retorno de carro y avance de línea (ASCII 13 y 10). La última entrada va seguida de dos delimitadores (13, 10, 13, 10). Invoque este método solo después [**de llamar**](iwinhttprequest-send.md) al método Send.
+Este método devuelve todos los encabezados incluidos en la respuesta del servidor más reciente. Los encabezados individuales se delimitan mediante una combinación de retorno de carro y avance de línea (ASCII 13 y 10). La última entrada va seguida de dos delimitadores (13, 10, 13 y 10). Invoque este método solo después [**de llamar**](iwinhttprequest-send.md) al método Send.
 
 > [!Note]  
 > Para Windows XP y Windows 2000, consulte la sección [Requisitos](winhttp-start-page.md) en tiempo de ejecución de la página de inicio de WinHTTP.
@@ -62,7 +62,7 @@ Este método devuelve todos los encabezados incluidos en la respuesta del servid
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y obtener todos los encabezados de la respuesta. Este ejemplo se debe ejecutar desde un símbolo del sistema.
+En el ejemplo siguiente se muestra cómo abrir una conexión HTTP, enviar una solicitud HTTP y obtener todos los encabezados de la respuesta. Este ejemplo debe ejecutarse desde un símbolo del sistema.
 
 
 ```C++
@@ -182,13 +182,13 @@ WScript.Echo( WinHttpReq.GetAllResponseHeaders());
 | Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>            |
 | Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
 | Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
-| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | Archivo DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

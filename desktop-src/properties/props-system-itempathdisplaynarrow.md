@@ -4,12 +4,12 @@ ms.assetid: 5dd44e13-bc5c-4e32-b5eb-2c7c40e10dfb
 title: System.ItemPathDisplayNarrow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28385a889ea74b94ea990321dbb46173b078ff20222c22fe3599619faf9cb938
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b84455a8b69ebf42cb91c191d1c275b70eeeb5ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118231478"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248121"
 ---
 # <a name="systemitempathdisplaynarrow"></a>System.ItemPathDisplayNarrow
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

@@ -1,11 +1,11 @@
 ---
-title: Método getItemInfo de IWMPMedia
+title: Método IWMPMedia getItemInfo
 description: El método getItemInfo devuelve el valor del atributo especificado para el elemento multimedia.
 ms.assetid: b95fa61d-a600-4f31-a930-d80516204034
 keywords:
 - Método getItemInfo Reproductor de Windows Media
 - Método getItemInfo Reproductor de Windows Media , interfaz IWMPMedia
-- Interfaz IWMPMedia Reproductor de Windows Media , método getItemInfo
+- Interfaz IWMPMedia Reproductor de Windows Media método , getItemInfo
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce8fa8b55074781dd835e116b0403391fe9343af30d5236610219dca8aba810b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 523e57e68d13df55395cd4deca6e09904723bbaf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118331995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258719"
 ---
 # <a name="iwmpmediagetiteminfo-method"></a>IWMPMedia::getItemInfo (método)
 
@@ -64,23 +64,23 @@ Implements IWMPMedia.getItemInfo
 
 **System.String que** es el valor del atributo especificado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método devuelve los metadatos de un elemento multimedia individual o un elemento multimedia que forma parte de una lista de reproducción.
 
-La **propiedad attributeCount** obtiene el número de nombres de atributo disponibles para un elemento multimedia determinado. Los números de índice se pueden usar con el **método getAttributeName** para determinar el nombre de cada atributo disponible. Los nombres de atributo individuales se pueden pasar **a getItemInfo.**
+La **propiedad attributeCount** obtiene el número de nombres de atributo disponibles para un elemento multimedia determinado. A continuación, los números de índice se pueden usar **con el método getAttributeName** para determinar el nombre de cada atributo disponible. Los nombres de atributo individuales se pueden pasar **a getItemInfo.**
 
 Para recuperar atributos con varios valores y atributos con valores complejos, use el **método getItemInfoByType.**
 
-Si el elemento multimedia provenía de una biblioteca recuperada mediante una llamada a [IWMPLibrary.mediaCollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), el conjunto de atributos disponibles será diferente de los que se pueden consultar desde la biblioteca local recuperada mediante una llamada a [AxWindowsMediaPlayer.mediaCollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md). Por ejemplo, los atributos disponibles de la biblioteca local recuperados mediante **IWMPLibrary** serán un subconjunto de los atributos disponibles de la biblioteca local recuperados mediante **IWMPCore**. El conjunto de atributos disponibles en otros orígenes (bibliotecas remotas, dispositivos portátiles o CD) se define mediante los demás orígenes.
+Si el elemento multimedia provenía de una biblioteca recuperada mediante una llamada a [IWMPLibrary.mediaCollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), el conjunto de atributos disponibles será diferente de los que se pueden consultar desde la biblioteca local recuperada mediante una llamada a [AxWindowsMediaPlayer.mediaCollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md). Por ejemplo, los atributos disponibles de la biblioteca local recuperados mediante **IWMPLibrary** serán un subconjunto de los atributos disponibles en la biblioteca local recuperada mediante **IWMPCore**. Los demás orígenes definen el conjunto de atributos disponibles en otros orígenes (bibliotecas remotas, dispositivos portátiles o CD).
 
-Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
+Antes de llamar a este método, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

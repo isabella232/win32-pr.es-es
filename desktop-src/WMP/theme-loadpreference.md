@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 252f08c1971b1e8434e3761d87992a7245257c37bcc039650ebf5b7a0a47a884
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d92135113495ac32ca81f602ea5836332159164c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119134578"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258751"
 ---
 # <a name="themeloadpreference"></a>THEME.loadPreference
 
@@ -35,7 +35,7 @@ El **método loadPreference** carga una preferencia del Registro.
 <span id="theKey"></span><span id="thekey"></span><span id="THEKEY"></span>*theKey*
 </dt> <dd>
 
-Cadena **que** especifica la clave del valor de preferencia que se cargará.
+Cadena **que** especifica la clave del valor de preferencia que se debe cargar.
 
 </dd> </dl>
 
@@ -43,7 +43,7 @@ Cadena **que** especifica la clave del valor de preferencia que se cargará.
 
 Este método devuelve una **cadena**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Una preferencia es un par clave-valor que se puede almacenar en el Registro para conservar información sobre el estado de la Reproductor de Windows Media entre ejecuciones. Esta característica se puede usar, por ejemplo, para guardar la configuración de personalización de modo que no tenga que volver a especificarse cada vez que Reproductor de Windows Media se inicia.
 
@@ -59,7 +59,7 @@ Las preferencias no están cifradas y, por tanto, no son un método seguro para 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

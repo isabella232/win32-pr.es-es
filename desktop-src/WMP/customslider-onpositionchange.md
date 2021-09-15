@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4a3833987ebdbbf2700d9426da31b8efc80f64787e93be1a8418d83065724d0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee3d5547d66ca6dc1b770242301bd95ed010a8d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117749982"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258791"
 ---
 # <a name="customslideronpositionchange"></a>CUSTOMSLIDER.onPositionChange
 
@@ -27,7 +27,7 @@ El **controlador de eventos onPositionChange** controla un evento que se produce
 onPositionChange
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la posición del control deslizante personalizado cambia como resultado de la modificación del atributo **value** en el script, este evento no se desencadena. Para dar cabida a esta posibilidad, implemente el **controlador de eventos value \_ onchange** en su lugar.
 
@@ -41,7 +41,7 @@ Si la posición del control deslizante personalizado cambia como resultado de la
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3d9types.h
-ms.openlocfilehash: a31801236720d0a01eefe7f41ac6bd260c1364bb81c437cf6a85088c1c022b9c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4932e34979b0913f27874e57cfa881f18fb16364
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118527605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258511"
 ---
 # <a name="d3dcolor_xrgb-macro"></a>Macro D3DCOLOR \_ XRGB
 
@@ -44,21 +44,21 @@ D3DCOLOR D3DCOLOR_XRGB(
 *r* 
 </dt> <dd>
 
-Componente rojo del color. Este valor debe estar en el intervalo de 0 a 255.
+Componente rojo del color. Este valor debe estar entre 0 y 255.
 
 </dd> <dt>
 
 *g* 
 </dt> <dd>
 
-Componente verde del color. Este valor debe estar en el intervalo de 0 a 255.
+Componente verde del color. Este valor debe estar entre 0 y 255.
 
 </dd> <dt>
 
 *b* 
 </dt> <dd>
 
-Componente azul del color. Este valor debe estar en el intervalo de 0 a 255.
+Componente azul del color. Este valor debe estar entre 0 y 255.
 
 </dd> </dl>
 
@@ -76,7 +76,7 @@ Devuelve el [**valor D3DCOLOR**](d3dcolor.md) que corresponde a los valores RGB 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

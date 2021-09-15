@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f04d9886fffb1f6fad85ac5119348655484b23ee3d5f690c0ad805271e7f0eeb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e836dc7ec6efececf81789efe43d8b19d0df1783
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119651575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258852"
 ---
 # <a name="customslidercursor"></a>CUSTOMSLIDER.cursor
 
@@ -33,11 +33,11 @@ Este atributo es una cadena de lectura y **escritura.**
 
 
 
-| Valor            | Descripción                                                                                 |
+| Value            | Descripción                                                                                 |
 |------------------|---------------------------------------------------------------------------------------------|
 | sistema           | Cursor dependiente de la plataforma (normalmente una flecha).                                               |
 | Mano             | Predeterminada. El cursor es una mano.                                                                  |
-| ayuda             | Flecha con signo de interrogación que indica que la Ayuda está disponible.                                      |
+| help             | Flecha con signo de interrogación que indica que la Ayuda está disponible.                                      |
 | sizeall          | Flecha de cuatro puntas que apunta al norte, sur, este y oeste.                                   |
 | sizenesw         | Flecha de doble punta que apunta hacia el nordeste y el suroeste.                                      |
 | sizens           | Flecha de doble punta que apunta hacia el norte y el sur.                                              |
@@ -54,13 +54,13 @@ Este atributo es una cadena de lectura y **escritura.**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: Constructor EsentContainerNotEmptyException'
-title: Constructor EsentContainerNotEmptyException
+title: Constructor esentContainerNotEmptyException
 TOCTitle: 'EsentContainerNotEmptyException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentContainerNotEmptyException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcontainernotemptyexception.esentcontainernotemptyexception(v=EXCHG.10)
@@ -24,14 +24,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1d78124d3d2c55378e6c8f055e8ce362fdd94291c8a0206ce8326cdba9f808be
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d02d337cfba268eabd7de89178ec4a780470e4e0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120020962"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270028"
 ---
-# <a name="esentcontainernotemptyexception-constructor"></a>Constructor EsentContainerNotEmptyException
+# <a name="esentcontainernotemptyexception-constructor"></a>Constructor esentContainerNotEmptyException
 
 Inicializa una nueva instancia de la clase EsentContainerNotEmptyException.
 
@@ -52,7 +52,7 @@ Dim instance As New EsentContainerNotEmptyException()
 public EsentContainerNotEmptyException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

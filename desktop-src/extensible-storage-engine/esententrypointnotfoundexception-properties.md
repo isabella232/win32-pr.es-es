@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101643
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 001d099899cfe248cc8d8856cd900aba4d8cf505906f7d47e49ca6953c20a6ef
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a0d257be65c9f31806c051bffcd92ad2772eff9d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119724835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270004"
 ---
 # <a name="esententrypointnotfoundexception-properties"></a>Propiedades de EsentEntryPointNotFoundException
 
@@ -34,7 +34,7 @@ El [tipo EsentEntryPointNotFoundException](./esententrypointnotfoundexception-cl
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentEntryPointNotFoundException](./esententrypointnotfoundexception-cl
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

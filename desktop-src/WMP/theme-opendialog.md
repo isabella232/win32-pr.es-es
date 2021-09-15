@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3d57218105aa081ddebcb98fadbdb40b4bbd42511de9df94e204320ce78cf03c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 79b9478b6b970b1d8d18b6f40975479e4755fa6d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119134558"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258743"
 ---
 # <a name="themeopendialog"></a>THEME.openDialog
 
@@ -50,7 +50,7 @@ Cadena **que** se puede usar para obtener información adicional. Debe establece
 
 Este método devuelve una **cadena que** contiene la dirección URL del archivo seleccionado o "" (cadena vacía) si el usuario hace clic en Cancelar.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método se puede usar para archivos en las unidades de disco duro locales o en unidades de red.
 
@@ -78,7 +78,7 @@ Este método se puede usar para archivos en las unidades de disco duro locales o
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 

@@ -4,12 +4,12 @@ ms.assetid: e531a66d-5c50-4065-a12a-783fd4d1d310
 title: IPv6-Aware de api auxiliar de proxy
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bdf7c36b0f0d29f84a0dfc0eb7c21cb577ef1b9ef75cb69cec34a7f7858e7a2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 79b1ff5a0c287327593e65e29a0b03cfb59269f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119052083"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258676"
 ---
 # <a name="ipv6-aware-proxy-helper-api-definitions"></a>IPv6-Aware de api auxiliar de proxy
 

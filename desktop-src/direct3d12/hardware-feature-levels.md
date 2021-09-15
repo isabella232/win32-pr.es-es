@@ -1,6 +1,6 @@
 ---
 title: Niveles de características de hardware
-description: Describe la funcionalidad de los niveles de características de hardware de 11 \_ 0 a \_ 12 1.
+description: Describe la funcionalidad de los niveles de características de hardware de 11 0 a \_ \_ 12 1.
 ms.assetid: B8304E29-A532-464E-8FAF-075228D8FB73
 keywords:
 - Nivel de característica DX
@@ -10,16 +10,16 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf069baca3d9ff56c0d3d98e79bb553df7e8acf1fadf7b5888c5b5d211f7a874
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d464f6cc52539e31fee5e234af2c045dfff7e413
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119124153"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258519"
 ---
 # <a name="hardware-feature-levels"></a>Niveles de características de hardware
 
-Describe la funcionalidad de los niveles de características de hardware de 11 \_ 0 a \_ 12 1.
+Describe la funcionalidad de los niveles de características de hardware de 11 0 a \_ \_ 12 1.
 
 -   [Sistemas de numeración](#numbering-systems)
 -   [Compatibilidad con el nivel de características](#feature-level-support)
@@ -75,19 +75,19 @@ Los encabezados de la fila superior son niveles de características de Direct3D.
 | [DirectCompute/Sombreador de proceso](/windows/desktop/direct3d11/direct3d-11-advanced-stages-compute-shader)                                  | Sí                       | Sí                       | Sí                      | Sí                      |
 | [Sombreadores de casco y dominio](/windows/desktop/direct3d11/direct3d-11-advanced-stages-tessellation)                                           | Sí                       | Sí                       | Sí                      | Sí                      |
 | [Matrices de recursos de textura](/windows/desktop/direct3d11/overviews-direct3d-11-resources-textures-intro)                                     | Sí                       | Sí                       | Sí                      | Sí                      |
-| [Matrices de recursos de Asignación de cubos](/windows/desktop/direct3d11/overviews-direct3d-11-resources-textures-intro)                                     | Sí                       | Sí                       | Sí                      | Sí                      |
+| [Matrices de recursos de asignación de cubos](/windows/desktop/direct3d11/overviews-direct3d-11-resources-textures-intro)                                     | Sí                       | Sí                       | Sí                      | Sí                      |
 | [Compresión de BC1 a BC7](/windows/desktop/direct3d10/d3d10-graphics-programming-guide-resources-block-compression)                        | Sí                       | Sí                       | Sí                      | Sí                      |
 | [Alfa a cobertura](/windows/desktop/direct3d11/d3d10-graphics-programming-guide-blend-state)         | Sí                       | Sí                       | Sí                      | Sí                      |
 | [Operaciones lógicas (fusión de salida)](/windows/desktop/api/d3d11/ns-d3d11-d3d11_feature_data_d3d11_options)                                          | Sí                       | Sí                       | Sí                      | Opcional                 |
 | Rasterización independiente del destino                                                                                         | Sí                       | Sí                       | Sí                      | No                       |
-| [Varios destinos de representación (MRT) con ForcedSampleCount 1](/windows/desktop/api/d3d11/ns-d3d11-d3d11_feature_data_d3d11_options)                      | Sí                       | Sí                       | Sí                      | Opcional                 |
+| [Destino de representación múltiple (MRT) con ForcedSampleCount 1](/windows/desktop/api/d3d11/ns-d3d11-d3d11_feature_data_d3d11_options)                      | Sí                       | Sí                       | Sí                      | Opcional                 |
 | [Número máximo de muestras forzadas para la representación solo de UAV](/windows/desktop/api/d3d11/ns-d3d11-d3d11_feature_data_d3d11_options)                            | 16                        | 16                        | 16                       | 8                        |
 | Dimensión de textura máxima                                                                                                    | 16384                     | 16384                     | 16384                    | 16384                    |
-| Max Cubemap Dimension                                                                                                    | 16384                     | 16384                     | 16384                    | 16384                    |
+| Dimensión de asignación de cubo máxima                                                                                                    | 16384                     | 16384                     | 16384                    | 16384                    |
 | Extensión máxima del volumen                                                                                                        | 2048                      | 2048                      | 2048                     | 2048                     |
 | Repetición máxima de textura                                                                                                       | 16384                     | 16384                     | 16384                    | 16384                    |
 | Anisotropía máxima                                                                                                           | 16                        | 16                        | 16                       | 16                       |
-| Número máximo de primitivas                                                                                                      | 2^32 – 1                  | 2^32 – 1                  | 2^32 – 1                 | 2^32 – 1                 |
+| Recuento primitivo máximo                                                                                                      | 2^32 – 1                  | 2^32 – 1                  | 2^32 – 1                 | 2^32 – 1                 |
 | Índice máximo de vértices                                                                                                         | 2^32 – 1                  | 2^32 – 1                  | 2^32 – 1                 | 2^32 – 1                 |
 | Número máximo de ranuras de entrada                                                                                                          | 32                        | 32                        | 32                       | 32                       |
 | Destinos de representación simultáneos                                                                                              | 8                         | 8                         | 8                        | 8                        |

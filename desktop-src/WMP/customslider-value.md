@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3a256274fe2170ad50c164f7bf6768f82e3266db7a4ea5e2c6c8e28edd083c2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 89be4edd43fc79c8a8938a3861c982068760bcf3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118579713"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258775"
 ---
 # <a name="customslidervalue"></a>CUSTOMSLIDER.value
 
@@ -29,11 +29,11 @@ El **atributo** value especifica o recupera la posición actual del control desl
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es un número de lectura **y** escritura **(float)** con un valor predeterminado igual al **atributo min.**
+Este atributo es un número de lectura y **escritura** (**float**) con un valor predeterminado igual al **atributo min.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El **valor** debe ser mayor o igual que **min** y menor o igual que **max.** Si el valor queda fuera del intervalo, se emite una advertencia y el valor no cambia.
+El **valor** debe ser mayor o igual que **min** y menor o igual que **max.** Si el valor está fuera del intervalo, se emite una advertencia y el valor no cambia.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -43,7 +43,7 @@ Vea el [atributo positionImage](customslider-positionimage.md) para obtener un e
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 

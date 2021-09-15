@@ -1,17 +1,17 @@
 ---
-description: System.Document. Plantilla
+description: System.Document.Template
 ms.assetid: 68a68689-e65c-4080-849f-e8a9ef457931
-title: System.Document. Plantilla
+title: System.Document.Template
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: cc7ec2a9da7db25b67f009f673cabaebd638583f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108100983"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248192"
 ---
-# <a name="systemdocumenttemplate"></a>System.Document. Plantilla
+# <a name="systemdocumenttemplate"></a>System.Document.Template
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -29,7 +29,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

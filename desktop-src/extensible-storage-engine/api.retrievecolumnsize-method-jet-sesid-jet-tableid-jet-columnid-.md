@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e2c8f0fe8b4034ad8687c2dd82b4de76e53810048aa05c5d517fbbfdc7fc1f40
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6f75ce51e942cfde7fddc4f9ec0154feae985e02
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119976995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270044"
 ---
 # <a name="apiretrievecolumnsize-method-jet_sesid-jet_tableid-jet_columnid"></a>Método Api.RetrieveColumnSize (JET_SESID, JET_TABLEID, JET_COLUMNID)
 
@@ -87,14 +87,14 @@ public static Nullable<int> RetrieveColumnSize(
 Tipo: [System.Nullable](/dotnet/api/system.nullable-1)\<[Int32](/dotnet/api/system.int32)\>  
 Tamaño de la columna. 0 si la columna es NULL.  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 
-[Sobrecarga de RetrieveColumnSize](./api.retrievecolumnsize-method.md)
+[Sobrecarga retrieveColumnSize](./api.retrievecolumnsize-method.md)
 
 [Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

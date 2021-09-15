@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3881cab3f5e818a4d6c244b9b2e951711202f38cdb86ee9ce5856747defeacc6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e56159f18f4011b934f8ab2c611f703450268f13
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118340914"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258783"
 ---
 # <a name="customslidertooltip"></a>CUSTOMSLIDER.toolTip
 
@@ -31,7 +31,7 @@ El **atributo toolTip** especifica o recupera el texto de información sobre her
 
 Este atributo es una cadena de **lectura** y escritura con una longitud máxima de 1024 caracteres. No tiene valor predeterminado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando este atributo se establece en "" (cadena vacía), no se muestra información sobre herramientas.
 
@@ -43,13 +43,13 @@ Vea el [atributo positionImage](customslider-positionimage.md) para obtener un e
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

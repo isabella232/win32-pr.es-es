@@ -1,21 +1,21 @@
 ---
 title: Compilación sin conexión
-description: La herramienta de compilador de efectos (fxc.exe) está diseñada para la compilación sin conexión de sombreadores HLSL.
+description: La herramienta del compilador de efectos (fxc.exe) está diseñada para la compilación sin conexión de sombreadores HLSL.
 ms.assetid: 56806335-a0c7-4247-b40d-ba93486a88ac
 keywords:
 - fxc, compilación sin conexión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88a15d3a71dbfb79541a75bd38cb28140d832b45e75a88a52b2d0c8988865f12
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8e7c2bf96a24cb586a5d229a395cbf6dc0cb9ee1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119406335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270108"
 ---
 # <a name="offline-compiling"></a>Compilación sin conexión
 
-La herramienta de compilador de efectos (fxc.exe) está diseñada para la compilación sin conexión de sombreadores HLSL.
+La herramienta del compilador de efectos (fxc.exe) está diseñada para la compilación sin conexión de sombreadores HLSL.
 
 ## <a name="compiling-with-the-current-compiler"></a>Compilación con el compilador actual
 
@@ -37,11 +37,11 @@ fxc /Od /Zi /T ps_5_1 /Fo PixelShader1.fxc PixelShader1.hlsl
 
 Las opciones de depuración incluyen opciones adicionales para deshabilitar las optimizaciones del compilador (Od) y habilitar la información de depuración (Zi), como números de línea y símbolos.
 
-Para obtener una lista completa de las opciones de línea de comandos, vea la [página Sintaxis.](dx-graphics-tools-fxc-syntax.md)
+Para obtener una lista completa de las opciones de la línea de comandos, consulte la [página Sintaxis.](dx-graphics-tools-fxc-syntax.md)
 
 ## <a name="compiling-with-the-legacy-compiler"></a>Compilación con el compilador heredado
 
-A partir de Direct3D 10, ya no se admiten algunos modelos de sombreador. Estos incluyen modelos de sombreador de píxeles: ps \_ \_ 1 1, ps \_ \_ 2, ps \_ 1 3 y ps \_ \_ 1 \_ 4 que admiten recursos muy limitados y dependen del hardware. El compilador se ha rediseñado con el modelo de sombreador 2 (o superior) que permite mayores eficiencias con la compilación. Por supuesto, esto requerirá que se ejecute en hardware que admita los modelos de sombreador 2 y superiores.
+A partir de Direct3D 10, ya no se admiten algunos modelos de sombreador. Estos incluyen modelos de sombreador de píxeles: ps \_ \_ 1 1, ps \_ 1 \_ 2, ps \_ 1 3 y ps \_ \_ 1 \_ 4, que admiten recursos muy limitados y dependen del hardware. El compilador se ha rediseñado con el modelo de sombreador 2 (o superior), lo que permite una mayor eficacia con la compilación. Por supuesto, esto requerirá que se ejecute en hardware que admita los modelos de sombreador 2 y superiores.
 
 Tenga en cuenta también que debe consultar las notas de la versión del SDK asociadas a la versión del compilador de FXC para conocer el comportamiento afectado por el modificador /Gec.
 
@@ -83,8 +83,8 @@ while (1)
 }
 ```
 
-Para obtener información adicional sobre cómo generar un proceso, consulte la página de referencia [**de CreateProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa).
+Para obtener información adicional sobre cómo generar un proceso, consulte la página de referencia [**de CreateProcess.**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa)
 
 ## <a name="related-topics"></a>Temas relacionados
 
-* [Herramienta Del compilador de efectos](fxc.md)
+* [Herramienta Effect-Compiler](fxc.md)

@@ -1,19 +1,19 @@
 ---
-description: Por lo general, no es necesaria la sincronización cuando se tiene un apartamento de un solo subproceso (STA) porque el apartamento proporciona la sincronización automáticamente.
+description: Por lo general, la sincronización no es necesaria cuando se tiene un apartamento de un solo subproceso (STA) porque el apartamento proporciona la sincronización automáticamente.
 ms.assetid: a05de040-0115-44aa-80e2-55eff2ec894d
 title: Conceptos de sincronización de COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4153c02a5fcd9a0990459e360d239396e7de30cff22316da70f73002e73d6e0c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7eaca81050e67c76e3de6ad4845543b9230d2a24
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119129007"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258559"
 ---
 # <a name="com-synchronization-concepts"></a>Conceptos de sincronización de COM+
 
-Por lo general, no es necesaria la sincronización cuando se tiene un apartamento de un solo subproceso (STA) porque el apartamento proporciona la sincronización automáticamente. La sincronización es importante cuando tiene un apartamento multiproceso (MTA) y un objeto de subproceso libre. En el pasado, los objetos de subproceso libre tenían que controlar el bloqueo. Puede eliminar la necesidad de usar el bloqueo estableciendo el atributo de sincronización para un componente.
+Por lo general, la sincronización no es necesaria cuando se tiene un apartamento de un solo subproceso (STA) porque el apartamento proporciona la sincronización automáticamente. La sincronización es importante cuando tiene un apartamento multiproceso (MTA) y un objeto de subproceso libre. En el pasado, los objetos de subproceso libre tenían que controlar el bloqueo. Puede eliminar la necesidad de usar el bloqueo estableciendo el atributo de sincronización para un componente.
 
 La sincronización tiene las siguientes propiedades:
 
@@ -35,7 +35,7 @@ COM+ proporciona la siguiente configuración de sincronización:
 -   Disabled
 -   No compatible
 -   Compatible
--   Requerido
+-   Obligatorio
 -   Se requiere nueva
 
 > [!Note]  

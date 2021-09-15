@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2b2e50aecc0efc13db4fe8f2a78cffe4ed95833d55ca9b1de70af31191aec1d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4b80a702f119ba72220e5ac3ac86b524ce8c11c6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119861794"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258695"
 ---
 # <a name="iwmpmediaimagesourceheight-property"></a>Propiedad IWMPMedia::imageSourceHeight
 
@@ -51,7 +51,7 @@ Public ReadOnly Property imageSourceHeight As System.Int32
 
 **System.Int32** que es el alto del elemento multimedia.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si el elemento multimedia no es el actual, esta propiedad devuelve cero.
 
@@ -131,7 +131,7 @@ End Sub
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

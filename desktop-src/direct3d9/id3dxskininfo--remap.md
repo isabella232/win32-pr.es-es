@@ -1,5 +1,5 @@
 ---
-description: Actualiza la información de influencia de las columnas para que coincidan con los vértices después de que se vuelvan a ordenar. Se debe llamar a este método si el búfer de vértices de destino se ha reordenado externamente.
+description: Actualiza la información de influencia de los aires para que coincidan con los vértices después de reordenarlos. Se debe llamar a este método si el búfer de vértices de destino se ha reordenado externamente.
 ms.assetid: bff5229f-e547-4ab3-84c6-58b15a7825e9
 title: Método ID3DXSkinInfo::Remap (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 941a71539184b7d49e35627c932da77b4494486c35506b1b4e5f69ad52c40829
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 657cf0977592a8e19e68b8aeb950c62d404e7cdb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119727785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270167"
 ---
 # <a name="id3dxskininforemap-method"></a>Método ID3DXSkinInfo::Remap
 
-Actualiza la información de influencia de las columnas para que coincidan con los vértices después de que se vuelvan a ordenar. Se debe llamar a este método si el búfer de vértices de destino se ha reordenado externamente.
+Actualiza la información de influencia de los aires para que coincidan con los vértices después de reordenarlos. Se debe llamar a este método si el búfer de vértices de destino se ha reordenado externamente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,9 +63,9 @@ Matriz de DWORDS cuya longitud especifica NumVertices.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cada elemento de pVertexRemap especifica el índice de vértices anterior para esa posición. Por ejemplo, si un vértice estaba en la posición 3 pero se ha reasignado a la posición 5, el quinto elemento de pVertexRemap debe contener 3. Se puede usar la matriz de reasignación de vértices devuelta por [**ID3DXMesh::Optimize.**](id3dxmesh--optimize.md)
 
@@ -80,7 +80,7 @@ Cada elemento de pVertexRemap especifica el índice de vértices anterior para e
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

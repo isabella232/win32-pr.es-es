@@ -3,7 +3,7 @@ title: Registro de esquemas personalizados Configuración
 description: Registro de esquemas personalizados Configuración
 ms.assetid: ded2b492-7755-4ba5-87cf-720a79ec79de
 keywords:
-- Reproductor de Windows Media, configuración del Registro de esquemas personalizados
+- Reproductor de Windows Media,configuración del Registro de esquema personalizado
 - Reproductor de Windows Media,schemes
 - Reproductor de Windows Media,registry
 - registry,custom scheme settings
@@ -13,12 +13,12 @@ keywords:
 - configuración del Registro de esquemas personalizados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: af1f20b69570a18d256049bb0e785099e43b091d080e4f9f65e62655c3103d68
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6a02649d9536140fff0ff0d3188a5b25feb49688
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117750398"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258924"
 ---
 # <a name="custom-scheme-registry-settings"></a>Registro de esquemas personalizados Configuración
 
@@ -38,7 +38,7 @@ Para usuarios individuales, las claves de esquema son subclaves de la siguiente 
 
 **HKEY \_ CURRENT \_ USER \\ Software \\ Microsoft \\ MediaPlayer \\ Player \\ Schemes\\**
 
-Por ejemplo, la clave del esquema wmhtml:// para el usuario actual es:
+Por ejemplo, la clave del esquema de wmhtml:// para el usuario actual es:
 
 **HKEY \_ CURRENT USER Software Microsoft \_ \\ \\ \\ MediaPlayer Player \\ \\ Schemes \\ wmhtml**
 
@@ -50,14 +50,14 @@ Cada subclave de esquema puede contener uno de los siguientes valores posibles *
 
 | Value | Descripción                                |
 |-------|--------------------------------------------|
-| 6     | Representación mediante el SDK Windows Media Format. |
+| 6     | Represente mediante el SDK Windows Media Format. |
 | 7     | Representar mediante Microsoft DirectShow.         |
 
 
 
  
 
-Cambiar el *valor en* tiempo de ejecución de un esquema que Windows EL SDK de formato multimedia no tendrá ningún efecto. El Reproductor siempre usará el SDK Windows Media Format como tiempo de ejecución para los esquemas que admite Windows SDK de formato multimedia. Este valor del Registro está diseñado para permitir la configuración en tiempo de ejecución para esquemas personalizados.
+Cambiar el *valor en* tiempo de ejecución de un esquema que Windows SDK de formato multimedia no tendrá ningún efecto. El reproductor siempre usará el SDK Windows Media Format como tiempo de ejecución para los esquemas que admite Windows SDK de formato multimedia. Este valor del Registro está diseñado para permitir la configuración en tiempo de ejecución para esquemas personalizados.
 
 ## <a name="related-topics"></a>Temas relacionados
 

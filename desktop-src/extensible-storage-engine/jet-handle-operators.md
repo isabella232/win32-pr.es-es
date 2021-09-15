@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Hh557794(v=EXCHG.10)
 ms:contentKeyID: 39512315
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 62a1bfce3f2c2f0606d34c9f3d4263967ecc3738134bc08c02e73efa25657b8b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4d7abae5aca585debf7f17595bbba294340fe6ce
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118254282"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127269780"
 ---
 # <a name="jet_handle-operators"></a>JET_HANDLE operadores
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_HANDLE](./jet-handle-structure.md) expone los miembros siguientes.
+El [JET_HANDLE](./jet-handle-structure.md) muestra los miembros siguientes.
 
 ## <a name="operators"></a>Operadores
 

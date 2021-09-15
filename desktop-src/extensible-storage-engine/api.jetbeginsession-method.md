@@ -1,5 +1,5 @@
 ---
-description: Más información sobre el método Api.JetBeginSession
+description: 'Más información sobre: Método Api.JetBeginSession'
 title: Método Api.JetBeginSession
 TOCTitle: 'JetBeginSession method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetBeginSession(Microsoft.Isam.Esent.Interop.JET_INSTANCE,Microsoft.Isam.Esent.Interop.JET_SESID@,System.String,System.String)
@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7c305731c44fe779ca64edb502c64eac92e5b61e381748fe6b6bccf38fc51cca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39174c27043f62de4c1a78685876e79de513b804
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118983635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127270068"
 ---
 # <a name="apijetbeginsession-method"></a>Método Api.JetBeginSession
 
@@ -93,11 +93,11 @@ public static void JetBeginSession(
     
     No se usa el parámetro .
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

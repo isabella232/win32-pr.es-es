@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f324fd70aa996c593ce9a89365341919e10e9407c20326f8f9a8f9300c0dd7f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 95fa28e010dc969a041fbe8e2e16a58f4729df4a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118579733"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258804"
 ---
 # <a name="customslidermin"></a>CUSTOMSLIDER.min
 
@@ -31,7 +31,7 @@ El **atributo min** especifica o recupera el valor mínimo del intervalo definid
 
 Este atributo es un  número de lectura/escritura (**float**) con un valor predeterminado de cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor de **min** debe ser menor que **max.**
 
@@ -43,7 +43,7 @@ Vea el [atributo positionImage](customslider-positionimage.md) para obtener un e
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 

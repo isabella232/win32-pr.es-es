@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3e614e241093a5b81a8b636410f0581aac277fc45925b55d741e4d3c9277d29
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 567c2e6b43679204f0e2d0f249c1b16dff4071a9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118579904"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127258948"
 ---
 # <a name="currentbitrate-attribute"></a>Atributo CurrentBitrate
 
@@ -28,7 +28,7 @@ El **atributo CurrentBitrate** es la velocidad de bits actual del elemento, en b
 -   [Elementos de audio](audio-item-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
@@ -38,7 +38,7 @@ La Windows SDK de formato multimedia para este atributo es g \_ wszWMCurrentBitr
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|-----------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 solo<br/> |
 

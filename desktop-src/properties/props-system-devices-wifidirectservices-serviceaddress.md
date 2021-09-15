@@ -4,12 +4,12 @@ ms.assetid: 6b29c244-685f-4eb7-9c80-d6b4fc591efc
 title: System.Devices.WiFiDirectServices.ServiceAddress
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bbd7ded4af427b4ac15b62ffeca1856ca31984121f14600b5fc08d24da04304
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 375c4bfceca7e7563a2b0bc37f3885f0335e5ba0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118727883"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127248235"
 ---
 # <a name="systemdeviceswifidirectservicesserviceaddress"></a>System.Devices.WiFiDirectServices.ServiceAddress
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 
