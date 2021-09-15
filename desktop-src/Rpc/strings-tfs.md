@@ -4,12 +4,12 @@ description: Tres tipos de cadenas y llamada a procedimiento remoto (RPC).
 ms.assetid: 186cabeb-ea3f-4213-ba71-53afe91e6e14
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b15467ed5a1425443cbc5a53cf35aba71725c5db68c542c292af38eb0d238cfd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 207e20b1c343ded17b5d62db2321bee380463f20
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118924841"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473496"
 ---
 # <a name="strings-rpc"></a>Cadenas (RPC)
 
@@ -19,7 +19,7 @@ Hay tres tipos de cadenas que indican las siguientes subcadenas finales en el ca
 
 | Tipo                  | Substring |
 |-----------------------|-----------|
-| Cadena de caracteres      | Cstring   |
+| Cadena de caracteres      | CSTRING   |
 | Cadena de caracteres anchos | WSTRING   |
 | Estructura con capacidad de cadena | SSTRING   |
 

@@ -11,12 +11,12 @@ api_name:
 - MBNProfile
 api_type:
 - Schema
-ms.openlocfilehash: 049ec22c170afda3a46620e2e94e2a16ae2708b4d6a69fcd0262baa69352a0a3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7016d492a70192a7d6accdcb3aaa57a9c564960e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119943365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568669"
 ---
 # <a name="mbnprofile-element"></a>Elemento MBNProfile
 
@@ -124,7 +124,7 @@ Solo puede haber un elemento de este tipo por documento.
 |----------------------------------------------------------------------------------|----------------------------------------------------------------|-----------------------------------------------------------|
 | [**AutoConnectOnInternet**](schema-autoconnectoninternet-mbnprofile-element.md) | boolean                                                        | Si el dispositivo se conectará automáticamente.<br/> |
 | [**ConnectionMode**](schema-connectionmode-mbnprofile-element.md)               |                                                                | Configuración de conexión automática del dispositivo.<br/>           |
-| [**Context**](schema-context-mbnprofile-element.md)                             | [**contextType**](schema-contexttype-complextype.md)          | Parámetros de configuración de conexión de datos.<br/>              |
+| [**Contexto**](schema-context-mbnprofile-element.md)                             | [**contextType**](schema-contexttype-complextype.md)          | Parámetros de configuración de conexión de datos.<br/>              |
 | [**DataRoamingPartners**](schema-dataroamingpartners-mbnprofile-element.md)     |                                                                | Proveedores de red preferidos para itinerancia.<br/>       |
 | [**Descripción**](schema-description-mbnprofile-element.md)                     | [**nameType**](schema-nametype-simpletype.md)                 | Descripción del perfil.<br/>                    |
 | [**HomeProviderName**](schema-homeprovidername-mbnprofile-element.md)           | [**providerNameType**](schema-providernametype-simpletype.md) | Nombre del proveedor principal.<br/>                     |

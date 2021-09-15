@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 43e886e6296848b17aafa88e39797f9655acd374fca6953b9efdbfbc7e1428bd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1c3e49762c0d2be1f416181f5c07fb06b088d161
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117902381"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569633"
 ---
 # <a name="apimovebeforefirst-method"></a>Método Api.MoveBeforeFirst
 
@@ -72,11 +72,11 @@ public static void MoveBeforeFirst(
     
     Tabla que se colocará.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 
-[Clase de API](./api-class.md)
+[Api (clase)](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

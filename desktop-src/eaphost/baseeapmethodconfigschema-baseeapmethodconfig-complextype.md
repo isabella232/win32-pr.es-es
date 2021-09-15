@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8decb1746391c1337440eb475a8a8face3f8b7466b73015db48e3991841a3c43
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ac7d628b554696fffd254a45b9b1021d68e2a55e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118086780"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568884"
 ---
 # <a name="baseeapmethodconfig-complex-type"></a>Tipo complejo BaseEapMethodConfig
 
@@ -38,7 +38,7 @@ El **tipo complejo BaseEapMethodConfig** es un elemento de marcador de posición
 </xs:complexType>
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El método EAP realiza la validación del esquema en el contenido del **elemento BaseEapMethodConfig.**
 
@@ -46,9 +46,9 @@ El método EAP realiza la validación del esquema en el contenido del **elemento
 
 
 
-| Rol | Versión mínima del sistema operativo admitida |
+| Role | Versión mínima del sistema operativo admitida |
 |------|------------------------------|
-| Cliente<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
+| Remoto<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 

@@ -1,5 +1,5 @@
 ---
-description: El método IsSrkAuthCompatible de la clase Tpm de Win32 indica si la autorización de clave raíz de Storage (SRK) es compatible con el valor esperado \_ por Windows Vista.
+description: El método IsSrkAuthCompatible de la clase Tpm de Win32 indica si la autorización de clave raíz de Storage (SRK) es compatible con el valor \_ esperado por Windows Vista.
 ms.assetid: ce6d05b8-673a-40ab-a1d7-3fedfd099306
 title: Método IsSrkAuthCompatible de la Win32_Tpm clase
 ms.topic: reference
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Win32_tpm.dll
-ms.openlocfilehash: 435829389749d7f7e81552aa88dd00aa211fd74ae079c93c97b5baff3c7a3c4d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f5250f8d3f9ad38f9d4c46350e06e0fe32f756dc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118891865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473429"
 ---
-# <a name="issrkauthcompatible-method-of-the-win32_tpm-class"></a>Método IsSrkAuthCompatible de la clase Tpm \_ win32
+# <a name="issrkauthcompatible-method-of-the-win32_tpm-class"></a>Método IsSrkAuthCompatible de la clase Tpm de \_ Win32
 
 El **método IsSrkAuthCompatible** de la clase Tpm de [**Win32 \_**](win32-tpm.md) indica si la autorización de clave raíz de Storage (SRK) es compatible con el valor esperado por Windows Vista.
 
@@ -66,15 +66,15 @@ A continuación se enumeran los códigos de retorno comunes.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Managed Object Format (MOF) contienen las definiciones de las Windows instrumental de administración de recursos (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
+Managed Object Format (MOF) contienen las definiciones de las clases Windows Management Instrumentation (WMI). Los archivos MOF no se instalan como parte del SDK Windows. Se instalan en el servidor cuando se agrega el rol asociado mediante el Administrador del servidor. Para obtener más información sobre los archivos MOF, [vea Managed Object Format (MOF).](../wmisdk/managed-object-format--mof-.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                      |
@@ -84,7 +84,7 @@ Managed Object Format (MOF) contienen las definiciones de las Windows instrument
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

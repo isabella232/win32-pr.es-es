@@ -4,12 +4,12 @@ ms.assetid: ae1de432-d1cc-45a5-b25f-b669cd30af3b
 title: Fórmulas de asignación de protuberancias (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 86035a28966c841f7d593cb46c7c7d969f7b2addaacb6cf43e25ceebdca83ff2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 436aee9689d78b8b706bb98d908f2e3fbc05ca6a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118805869"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569945"
 ---
 # <a name="bump-mapping-formulas-direct3d-9"></a>Fórmulas de asignación de protuberancias (Direct3D 9)
 
@@ -23,7 +23,7 @@ Además de los valores delta you y v, el sistema puede calcular un valor de lumi
 
 ![fórmula para la luminosidad de salida, calculada a partir del factor de escala y el desplazamiento](images/l-transform.png)
 
-En esta fórmula, L' es la luminosidad de salida que se está calculando. La variable L es el valor de luminosidad tomado de un píxel de mapa de protuberancia, que se multiplica por el factor de escala, S y el desplazamiento por el valor de la variable O. Los estados de la fase de textura D3DTSS \_ BUMPENVLSCALE y D3DTSS BUMPENVLOFFSET controlan los valores de las variables S y O de \_ la fórmula. Esta fórmula solo se aplica cuando la operación de combinación de texturas para la fase que contiene el mapa de protuberancias se establece en D3DTOP \_ BUMPENVMAPLUMINANCE. Cuando se usa D3DTOP BUMPENVMAP, el sistema usa un \_ valor de 1,0 para L'.
+En esta fórmula, L' es la luminosidad de salida que se está calculando. La variable L es el valor de luminosidad tomado de un píxel de mapa de protuberancia, que se multiplica por el factor de escala, S y el desplazamiento por el valor de la variable O. Los estados de fase de textura D3DTSS \_ BUMPENVLSCALE y D3DTSS BUMPENVLOFFSET controlan los valores de las variables S y O de \_ la fórmula. Esta fórmula solo se aplica cuando la operación de combinación de texturas para la fase que contiene el mapa de protuberancias se establece en D3DTOP \_ BUMPENVMAPLUMINANCE. Cuando se usa D3DTOP BUMPENVMAP, el sistema usa un \_ valor de 1,0 para L'.
 
 Después de calcular los valores delta de salida D<sub>U</sub>' y D<sub>V</sub>', el sistema los agrega a las coordenadas de textura en la siguiente fase de textura y modular el color elegido por la luminosidad para generar el color aplicado al polígono.
 

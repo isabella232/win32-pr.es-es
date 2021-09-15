@@ -4,12 +4,12 @@ ms.assetid: 44942954-3EA6-4C33-8CF1-E8BF72A914CB
 title: Funciones (pila de entrada del dispositivo de puntero)
 ms.topic: article
 ms.date: 02/05/2020
-ms.openlocfilehash: 5101847d78f396edcb317986ab3d95d578dabdfe12197531787115f49c9a69a4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cfba2a0011747402af81d1f1379076282b65ca74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119611745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569177"
 ---
 # <a name="pointer-device-input-stack-functions"></a>Funciones de pila de entrada de dispositivo de puntero
 

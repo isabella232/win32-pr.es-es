@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b113c806342d786d258713128bc2cadcbb000235c2639f49e5b57ce3fa3bd2e3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 261ff572cbaf519cc0099f3ab68d1a0becca706f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118986535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568928"
 ---
 # <a name="if-bool---vs"></a>if bool - vs
 
 Inicia una excepción if... [else](else---vs.md)... [endif- vs](endif---vs.md) block.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -33,7 +33,7 @@ Inicia una excepción if... [else](else---vs.md)... [endif- vs](endif---vs.md) b
 
 donde bool es un número de registro bool. Vea [Registro booleano constante.](dx9-graphics-reference-asm-vs-registers-constant-boolean.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

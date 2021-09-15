@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 82147dc0600165799726ae5121d94d8d6151a7c4f6280f3818db0a68a1c115de
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 25985154385348c4eb93850d3736ccfd9db1ba8f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117889587"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569241"
 ---
 # <a name="windows7grbitsexplicitprepare-field"></a>Campo Windows7Grbits.ExplicitPrepare
 
@@ -53,7 +53,7 @@ value = Windows7Grbits.ExplicitPrepare
 public const SnapshotPrepareGrbit ExplicitPrepare
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

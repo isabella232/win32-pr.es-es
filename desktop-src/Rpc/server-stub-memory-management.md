@@ -6,12 +6,12 @@ keywords:
 - Administración de memoria de código auxiliar del servidor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c772678e28a51c4d5162472bc7b0ef73e19888feefbd0e1890cb13f65650425
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d6e052df6da999e5371ac498a1d39852b4be2b5e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118925192"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473521"
 ---
 # <a name="server-stub-memory-management"></a>Administración de memoria de código auxiliar del servidor
 
@@ -21,11 +21,11 @@ Los códigos auxiliares generados por MIDL actúan como la interfaz entre un pro
 
 El formato de datos serializados de 32 bits usado por MSRPC es una versión compatible de la sintaxis de transferencia de representación de datos de red ( HIPAA). Para obtener más información sobre este formato, consulte [el sitio web de Open Group](https://www.opengroup.org/). En el caso de las plataformas de 64 bits, se puede usar una extensión de Microsoft de 64 bits para la sintaxis de transferencia de QL denominada UNIX64 para mejorar el rendimiento.
 
-## <a name="unmarshaling-inbound-data"></a>Desmarque los datos entrantes
+## <a name="unmarshaling-inbound-data"></a>Desmarque datos de entrada
 
 En MSRPC, el código auxiliar del cliente [**\[ \]**](../midl/in.md) serializa todos los datos de parámetros etiquetados como en un búfer continuo para la transmisión al código auxiliar del servidor. Del mismo modo, el código auxiliar del servidor serializa todos los datos marcados con el atributo [**\[ out \]**](../midl/out-idl.md) en un búfer continuo para volver al código auxiliar del cliente. Aunque la capa de protocolo de red debajo de RPC puede fragmentar y crear paquetes en el búfer para la transmisión, la fragmentación es transparente para los códigos auxiliares de RPC.
 
-La asignación de memoria para crear el marco de llamada del servidor puede ser una operación costosa. El código auxiliar del servidor intentará minimizar el uso innecesario de memoria cuando sea posible, y se supone que la rutina de servidor no liberará ni volverá a asociar los datos marcados con los atributos [**\[ de \]**](../midl/in.md) entrada o **\[ entrada. \]** El código auxiliar del servidor intenta reutilizar los datos en el búfer siempre que sea posible para evitar la duplicación innecesaria. La regla general es que si el formato de datos serializados es el mismo que el formato de memoria, RPC usará punteros a los datos serializados en lugar de asignar memoria adicional para datos con el mismo formato.
+La asignación de memoria para crear el marco de llamada del servidor puede ser una operación costosa. El código auxiliar del servidor intentará minimizar el uso innecesario de memoria cuando sea posible, y se supone que la rutina de servidor no liberará ni volverá a asociar los datos marcados con los atributos [**\[ de \]**](../midl/in.md) entrada o **\[ entrada. \]** El código auxiliar del servidor intenta reutilizar los datos en el búfer siempre que sea posible para evitar la duplicación innecesaria. La regla general es que si el formato de datos serializados es el mismo que el formato de memoria, RPC usará punteros a los datos serializados en lugar de asignar memoria adicional para los datos con el mismo formato.
 
 Por ejemplo, la siguiente llamada RPC se define con una estructura cuyo formato serializado es idéntico al formato en memoria.
 
@@ -49,7 +49,7 @@ Tenga en cuenta que la memoria se asigna para *plOutStructure*, ya que no se pas
 
 ## <a name="memory-allocation-for-inbound-data"></a>Asignación de memoria para datos entrantes
 
-Pueden surgir casos en los que el código auxiliar del servidor asigna memoria para los datos de parámetros marcados con [**\[ los atributos de \]**](../midl/in.md) entrada o **\[ entrada. \]** Esto ocurre cuando el formato de datos serializados difiere del formato de memoria, o cuando las estructuras que componen los datos serializados son suficientemente complejas y el código auxiliar del servidor RPC debe leerlo de forma atómica. A continuación se muestran varios casos comunes en los que se debe asignar memoria para los datos recibidos por el código auxiliar del servidor.
+Pueden surgir casos en los que el código auxiliar del servidor asigna memoria para los datos de parámetros marcados con [**\[ los atributos de \]**](../midl/in.md) entrada o **\[ entrada. \]** Esto ocurre cuando el formato de datos serializados difiere del formato de memoria, o cuando las estructuras que componen los datos serializados son suficientemente complejas y el código auxiliar del servidor RPC debe leerlo de forma atómica. A continuación se enumeran varios casos comunes en los que se debe asignar memoria para los datos recibidos por el código auxiliar del servidor.
 
 -   Los datos son una matriz variable o una matriz variable compatible. Se trata de matrices (o punteros a matrices) que tienen establecido el atributo [**\[ \_ length is() \]**](../midl/length-is.md) o first [**\[ \_ is(). \]**](../midl/first-is.md) En MULTIDIMENSIONAL, solo se serializa y transmite el primer elemento de estas matrices. Por ejemplo, en el fragmento de código siguiente, los datos pasados en el parámetro *pv* tendrán memoria asignada.
 
@@ -100,7 +100,7 @@ Pueden surgir casos en los que el código auxiliar del servidor asigna memoria p
 -   Los datos tienen un [**\[ atributo allocate(all \_ nodes) \]**](../midl/allocate.md) aplicado a un puntero.
 -   Los datos tienen un [**\[ atributo de recuento \_ de \]**](../midl/byte-count.md) bytes aplicado a un puntero.
 
-## <a name="64-bit-data-and-ndr64-transfer-syntax"></a>Sintaxis de transferencia de datos de 64 bits y TRANSFER64
+## <a name="64-bit-data-and-ndr64-transfer-syntax"></a>Sintaxis de transferencia de datos de 64 bits y QL64
 
 Como se mencionó anteriormente, los datos de 64 bits se pueden obtener mediante una sintaxis de transferencia de 64 bits específica denominada QL64. Esta sintaxis de transferencia se desarrolló para solucionar el problema específico que surge cuando los punteros se serializan en QL de 32 bits y se transmiten a un código auxiliar de servidor en una plataforma de 64 bits. En este caso, un puntero de datos de 32 bits serializado no coincide con uno de 64 bits y la asignación de memoria se producirá invariablemente. Para crear un comportamiento más coherente en plataformas de 64 bits, Microsoft desarrolló una nueva sintaxis de transferencia denominada COHERENCIA64.
 
@@ -121,7 +121,7 @@ Esta estructura, cuando se serializa, la reutilizará el código auxiliar del se
 
 A diferencia de MULTIDIMENSIONAL de 32 bits, los tipos de datos simples, como **enum16** e **\_ \_ int3264,** no hacen que una estructura o matriz sea compleja en MULTIDIMENSIONAL64. Del mismo modo, los valores de panel finales no hacen que una estructura sea compleja. Los punteros de interfaz se tratan como punteros únicos en el nivel superior; como resultado, las estructuras y matrices que contienen punteros de interfaz no se consideran complejas y no requerirán una asignación de memoria específica para su uso.
 
-## <a name="initializing-outbound-data"></a>Inicialización de datos salientes
+## <a name="initializing-outbound-data"></a>Inicialización de datos de salida
 
 Una vez que se han desmarcronado todos los datos de entrada, el código auxiliar del servidor debe inicializar los punteros de solo salida marcados con el [**\[ atributo out. \]**](../midl/out-idl.md)
 
@@ -220,7 +220,7 @@ En el ejemplo anterior, el formato de memoria para **LINKEDLIST** será idéntic
 
 Dado que la firma de función contiene un parámetro de salida, *pOut*, el código auxiliar del servidor asigna memoria para contener los datos devueltos. La memoria asignada se establece inicialmente en ceros, con **pNext** establecido en **NULL.** La aplicación puede asignar la memoria para una nueva lista vinculada y apuntar *pOut* -> **pNext** a ella. *pIn* y la lista vinculada que contiene se pueden usar como un área cero, pero la aplicación no debe cambiar ninguno de los punteros pNext.
 
-La aplicación puede cambiar libremente el contenido de la lista vinculada a la que apunta *pInOut*, pero no debe cambiar ninguno de los punteros **pNext,** y mucho menos el propio vínculo de nivel superior. Si la aplicación decide acortar la lista vinculada, no puede saber si un puntero **pNext** determinado vincula a un búfer interno rpc o a un búfer asignado específicamente con el usuario **\_ \_ allocate() de MIDL.** Para evitar este problema, agregue una declaración de tipo específica para los punteros de lista vinculada que fuerza la asignación de usuarios, como se muestra en el código siguiente.
+La aplicación puede cambiar libremente el contenido de la lista vinculada a la que apunta *pInOut*, pero no debe cambiar ninguno de los punteros **pNext,** y mucho menos el propio vínculo de nivel superior. Si la aplicación decide acortar la lista vinculada, no puede saber si un puntero **pNext** determinado vincula a un búfer interno RPC o a un búfer asignado específicamente con **midl \_ user \_ allocate().** Para evitar este problema, agregue una declaración de tipo específica para los punteros de lista vinculada que fuerza la asignación de usuarios, como se muestra en el código siguiente.
 
 ``` syntax
 typedef [force_allocate] PLINKEDLIST;

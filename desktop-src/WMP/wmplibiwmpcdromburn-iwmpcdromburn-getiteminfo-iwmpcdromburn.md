@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c2cf1a91ad60826e19051a59617157110fbcd8d75eff325f94f9b3f84d759aa4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9030bd230b2e17bab6ad54dc762a78d2cb343d03
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118116233"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569017"
 ---
 # <a name="iwmpcdromburngetiteminfo-method"></a>IWMPCdromAsync::getItemInfo (método)
 
@@ -60,7 +60,7 @@ Implements IWMPCdromBurn.getItemInfo
 
 
 
-| Valor         | Descripción                                                                                  |
+| Value         | Descripción                                                                                  |
 |---------------|----------------------------------------------------------------------------------------------|
 | AvailableTime | Recupera el tiempo disponible en el CD, en segundos.                                          |
 | En blanco         | Recupera un **objeto System.Boolean** (representado como una cadena) que indica si el CD está en blanco. |
@@ -81,7 +81,7 @@ Implements IWMPCdromBurn.getItemInfo
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media 11<br/>                                                                                     |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c5ffca8060c496526c3b5cc9f9229310489bdd5bbfef9467c3e2bb91992ded4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1af45ae7338ee9084e5345a480006a861a7cc4c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119134618"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569760"
 ---
 # <a name="textdisabledforegroundcolor"></a>TEXT.disabledForegroundColor
 
@@ -31,7 +31,7 @@ El **atributo disabledForegroundColor** especifica o recupera el color de texto 
 
 Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer microsoft.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si **no se especifica disabledForegroundColor,** se usa **foregroundColor.**
 

@@ -22,11 +22,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1472fe400c189b6e5a1e894e1097395e8521e757
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122478541"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569713"
 ---
 # <a name="spinner-control-type"></a>Tipo de control spinner
 
@@ -46,7 +46,7 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="typical-tree-structure"></a>Estructura de árbol típica
 
-En la tabla siguiente se muestra un control típico y una vista de contenido del árbol de Automatización de la interfaz de usuario que pertenecen a los controles de número cuando admiten los patrones de control **RangeValue** y **Selection,** y se describe lo que se puede incluir en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario, [vea información general Automatización de la interfaz de usuario árbol de datos.](uiauto-treeoverview.md)
+En la tabla siguiente se muestra un control típico y una vista de contenido del árbol Automatización de la interfaz de usuario que pertenecen a los controles de número cuando admiten los patrones de control **RangeValue** y **Selection,** y se describe lo que se puede incluir en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario, vea [información general Automatización de la interfaz de usuario árbol de datos.](uiauto-treeoverview.md)
 
 **Patrón de control RangeValue**
 
@@ -84,14 +84,14 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario prop
 
 
 
-| Propiedad de automatización de interfaz de usuario                                                                                              | Valor       | Notas                                                                                                                                                                                                                                                                                                                      |
+| Propiedad de automatización de interfaz de usuario                                                                                              | Value       | Notas                                                                                                                                                                                                                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------------|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas.  | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel en la vista sin formato del Automatización de la interfaz de usuario árbol.                                                                                                                                                                                                               |
+| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas.  | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel de la vista sin formato Automatización de la interfaz de usuario árbol.                                                                                                                                                                                                               |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vea las notas.  | El rectángulo exterior que contiene el control completo.                                                                                                                                                                                                                                                                   |
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vea las notas.  | El punto en el que se puede hacer clic del control de número enfoca la parte de edición del control.                                                                                                                                                                                                                                      |
 | [**ControlTypePropertyId de UIA \_**](uiauto-automation-element-propids.md)                   | **Spinner** | Este valor es el mismo para todos los marcos de trabajo.                                                                                                                                                                                                                                                                                 |
-| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE        | El control de número siempre debe ser contenido.                                                                                                                                                                                                                                                                                |
-| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE        | El control de número siempre debe ser un control .                                                                                                                                                                                                                                                                              |
+| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true        | El control de número siempre debe ser contenido.                                                                                                                                                                                                                                                                                |
+| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true        | El control de número siempre debe ser un control .                                                                                                                                                                                                                                                                              |
 | [**\_IsKeyboardFocusablePropertyId de UIA**](uiauto-automation-element-propids.md)   | Vea las notas.  | Si el control puede recibir el foco del teclado, debe admitir esta propiedad. Un control de número rara vez toma el foco, pero cuando lo hace, el foco debe permanecer en el propio control de número, no en los botones secundarios. El usuario debe poder realizar todas las acciones de desplazamiento mediante las teclas FLECHA ARRIBA y FLECHA ABAJO. |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | Vea las notas.  | Los controles de número tienen una etiqueta de texto estático.                                                                                                                                                                                                                                                                                 |
 | [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas.  | Cadena localizada correspondiente al tipo de control **Spinner.** El valor predeterminado es "spinner" para en-US o inglés (Estados Unidos).                                                                                                                                                                                       |
@@ -111,7 +111,7 @@ En la tabla siguiente se enumeran los Automatización de la interfaz de usuario 
 |--------------------------------------------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IRangeValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irangevalueprovider)                | Depende       | Los controles de número que abarcan un intervalo numérico pueden admitir el patrón de control [RangeValue.](uiauto-implementingrangevalue.md)               |
 | [**ISelectionProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iselectionprovider)                  | Depende       | Los controles de número que tienen una lista de elementos que se deben seleccionar deben admitir el [patrón de](uiauto-implementingselection.md) control Selección. |
-| [**CanSelectMultiple**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-get_canselectmultiple) | FALSE         | Los controles de número siempre son contenedores de selección única.                                                                                  |
+| [**CanSelectMultiple**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-get_canselectmultiple) | false         | Los controles de número siempre son contenedores de selección única.                                                                                  |
 | [**IValueProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-ivalueprovider)                          | Depende       | Los controles de número que abarcan un conjunto decrete de opciones o números pueden admitir el [patrón de](uiauto-implementingvalue.md) control Valor.    |
 
 
@@ -133,7 +133,7 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario even
 | [**UIA \_ Evento de cambio de propiedad RangeValueValuePropertyId.**](uiauto-control-pattern-propids.md)        | Si el control admite el patrón de control [RangeValue,](uiauto-implementingrangevalue.md) debe admitir este evento.   |
 | [**UIA \_ Evento \_ de cambio de propiedad InvalidatedEventId**](uiauto-event-ids.md) de selección.               | Si el control admite el patrón de control [Selection,](uiauto-implementingselection.md) debe admitir este evento.     |
 | [**UIA \_ StructureChangedEventId**](uiauto-event-ids.md)                                                  |                                                                                                                            |
-| [**UIA \_ Evento de cambio de propiedad ValueValuePropertyId.**](uiauto-control-pattern-propids.md)                  | Si el control admite el [patrón de](uiauto-implementingvalue.md) control Valor, debe admitir este evento.             |
+| [**UIA \_ Evento de cambio de propiedad ValueValuePropertyId.**](uiauto-control-pattern-propids.md)                  | Si el control admite el patrón de control [Valor,](uiauto-implementingvalue.md) debe admitir este evento.             |
 
 
 

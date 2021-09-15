@@ -3,17 +3,17 @@ title: Cuadro de diálogo Color
 description: Muestra un cuadro de diálogo modal que permite al usuario elegir un valor de color específico.
 ms.assetid: 248586b5-5068-4021-8407-56eb79243789
 keywords:
-- entrada de usuario,Biblioteca de cuadros de diálogo común
+- entrada de usuario, Biblioteca común de cuadros de diálogo
 - capturar la entrada del usuario, Biblioteca de cuadros de diálogo común
 - Biblioteca común de cuadros de diálogo
 - cuadros de diálogo comunes
 - Cuadro de diálogo Color
 - partial Color (cuadro de diálogo)
-- full Color (cuadro de diálogo)
-- personalizar color , cuadro de diálogo
+- cuadro de diálogo Color completo
+- personalizar color (cuadro de diálogo)
 - Modelo de color RGB
 - Modelo de color HSL
-- luminosidad de saturación de matiz (HSL)
+- luminosidad de saturación de hue (HSL)
 - HSL (luminosidad de saturación de matiz)
 - RGB (azul verde rojo)
 - azul verde rojo (RGB)
@@ -22,28 +22,28 @@ keywords:
 - cuadros de diálogo, Color
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2bdfb1543de80ac105d4a6012a0c95ff46cd8da1fef204ed573d14d05a6dfe9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4bb90150f49ea7bed4edac53af40ba89e0459946
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119726417"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569296"
 ---
 # <a name="color-dialog-box"></a>Cuadro de diálogo Color
 
 Muestra un cuadro de diálogo modal que permite al usuario elegir un valor de color específico. El usuario puede elegir un color de un conjunto de paletas de colores básicas o personalizadas. Como alternativa, el usuario puede generar un valor de color modificando los valores de color RGB o matiz, saturación, luminosidad (HSL) de la interfaz de usuario del cuadro de diálogo. El **cuadro** de diálogo Color devuelve el valor RGB del color seleccionado por el usuario.
 
-Para crear y mostrar un **cuadro de diálogo Color,** inicialice una [**estructura CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) y pase la estructura a la [**función ChooseColor.**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) Al establecer valores de parámetros diferentes para **la estructura CHOOSECOLOR,** puede afectar a cómo aparece el cuadro de diálogo Color. Por ejemplo, puede mostrar una versión completa o parcial de la interfaz de usuario del cuadro de diálogo. En la ilustración siguiente se muestra la versión completa de la interfaz de usuario del **cuadro de** diálogo Color .
+Para crear y mostrar un **cuadro de diálogo Color,** inicialice una [**estructura CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) y pase la estructura a la [**función ChooseColor.**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) Al establecer distintos valores de parámetro para **la estructura CHOOSECOLOR,** puede afectar a cómo aparece el cuadro de diálogo Color. Por ejemplo, puede mostrar una versión completa o parcial de la interfaz de usuario del cuadro de diálogo. En la ilustración siguiente se muestra la versión completa de la interfaz de usuario del **cuadro de diálogo** Color.
 
 ![cuadro de diálogo de colores](images/colordialogboxxp.png)
 
-Si el usuario hace clic en el **botón Aceptar,** [**ChooseColor**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) devuelve **TRUE.** El **miembro rgbResult** de la [**estructura CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) contiene el valor de color RGB del color seleccionado por el usuario. El valor de color RGB especifica las intensidades de los colores rojo, verde y azul individuales que consten el color seleccionado. Los valores individuales oscilan entre 0 y 255. Use las macros [**GetRValue,**](/windows/desktop/api/wingdi/nf-wingdi-getrvalue) [**GetGValue**](/windows/desktop/api/wingdi/nf-wingdi-getgvalue)y [**GetBValue**](/windows/desktop/api/wingdi/nf-wingdi-getbvalue) para extraer colores individuales de un valor de color RGB.
+Si el usuario hace clic en el **botón Aceptar,** [**ChooseColor**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) devuelve **TRUE.** El **miembro rgbResult** de la [**estructura CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) contiene el valor de color RGB del color seleccionado por el usuario. El valor de color RGB especifica las intensidades de los colores rojo, verde y azul individuales que son los que lo concidan. Los valores individuales oscilan entre 0 y 255. Use las macros [**GetRValue**](/windows/desktop/api/wingdi/nf-wingdi-getrvalue), [**GetGValue**](/windows/desktop/api/wingdi/nf-wingdi-getgvalue)y [**GetBValue**](/windows/desktop/api/wingdi/nf-wingdi-getbvalue) para extraer colores individuales de un valor de color RGB.
 
 Si el usuario cancela el cuadro de diálogo **Color** o se produce un error, [**ChooseColor**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) devuelve **FALSE** y el **miembro rgbResult** no está definido. Para determinar la causa del error, llame a la [**función CommDlgExtendedError**](/windows/desktop/api/Commdlg/nf-commdlg-commdlgextendederror) para recuperar el valor de error extendido.
 
-En esta sección se tratan los temas siguientes
+En esta sección se tratan los siguientes temas.
 
--   [Cuadros de diálogo De color completo y parcial](#full-and-partial-color-dialog-boxes)
+-   [Cuadros de diálogo de color completo y parcial](#full-and-partial-color-dialog-boxes)
 -   [Personalizar el cuadro de diálogo Color](#customizing-the-color-dialog-box)
     -   [Para proporcionar una plantilla personalizada para el cuadro de diálogo Color](#to-provide-a-custom-template-for-the-color-dialog-box)
     -   [Para habilitar un procedimiento de enlace para el cuadro de diálogo Color](#to-enable-a-hook-procedure-for-the-color-dialog-box)
@@ -52,21 +52,21 @@ En esta sección se tratan los temas siguientes
     -   [Modelo de color HSL](#hsl-color-model)
     -   [Convertir valores HSL en valores RGB](#converting-hsl-values-to-rgb-values)
 
-## <a name="full-and-partial-color-dialog-boxes"></a>Cuadros de diálogo De color completo y parcial
+## <a name="full-and-partial-color-dialog-boxes"></a>Cuadros de diálogo de color completo y parcial
 
 El cuadro de diálogo Color tiene una versión completa y una versión parcial de la interfaz de usuario. La versión completa incluye los controles básicos y tiene controles adicionales que permiten al usuario crear colores personalizados. La versión parcial tiene controles que muestran las paletas de colores básicas y personalizadas desde las que el usuario puede seleccionar un valor de color.
 
-La versión parcial del cuadro de diálogo Color incluye un **botón Definir colores personalizados.** El usuario puede hacer clic en este botón para mostrar la versión completa. Puede dirigir el cuadro de diálogo Color para mostrar siempre la versión completa estableciendo la marca **CC \_ FULLOPEN** en el miembro **Flags** de la [**estructura CHOOSECOLOR.**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) Para evitar que el usuario cree colores personalizados, puede establecer la marca **\_ CC PREVENTFULLOPEN** para deshabilitar el **botón Definir colores personalizados.**
+La versión parcial del cuadro de diálogo Color incluye un **botón Definir colores personalizados.** El usuario puede hacer clic en este botón para mostrar la versión completa. Puede dirigir el cuadro de diálogo Color para mostrar siempre la versión completa estableciendo la marca **CC \_ FULLOPEN** en el miembro **Flags** de la [**estructura CHOOSECOLOR.**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) Para evitar que el usuario cree colores personalizados, puede establecer la marca **\_ CC PREVENTFULLOPEN para** deshabilitar el botón Definir **colores** personalizados.
 
 Los colores básicos representan una selección de los colores disponibles en el dispositivo especificado. El controlador de pantalla determina el número real de colores mostrados. Por ejemplo, un controlador VGA muestra 48 colores y un controlador de pantalla monocromática muestra solo 16.
 
-Los colores personalizados son los que se especifican o que crea el usuario. Al crear un cuadro de diálogo Color, debe usar el miembro **lpCustColors** de la estructura [**CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) para especificar los valores iniciales de los 16 colores personalizados. Si la versión completa del cuadro de diálogo Color está abierta, el usuario puede crear un color personalizado mediante uno de los métodos siguientes:
+Los colores personalizados son los que se especifican o que el usuario crea. Al crear un cuadro de diálogo Color, debe usar el miembro **lpCustColors** de la estructura [**CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) para especificar los valores iniciales de los 16 colores personalizados. Si la versión completa del cuadro de diálogo Color está abierta, el usuario puede crear un color personalizado mediante uno de los métodos siguientes:
 
--   Mover el cursor en el control de espectro de color y el control deslizante de luminosidad
--   Escribir valores RGB en **los controles de** edición Rojo, Verde y **Azul** 
--   Escribir valores HSL en los controles de edición **Hue,** **Sat** **y Lum**
+-   Mover el cursor en el control de espectro de colores y el control de diapositiva de luminosidad
+-   Escritura de valores RGB en **los controles de** edición Rojo, Verde **y** Azul 
+-   Escribir valores HSL en los controles de edición **Hue,** **Sat** y **Lum**
 
-Para agregar un nuevo color personalizado a la presentación de colores personalizados, el usuario puede hacer clic **en el botón Agregar** a colores personalizados. Esto también hace que el cuadro de diálogo copie el valor RGB del nuevo color en el elemento correspondiente de la matriz a la que apunta el **miembro lpCustColors.** Para conservar nuevos colores personalizados entre llamadas [**a ChooseColor,**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85))debe asignar memoria estática para la matriz. Para obtener más información sobre los modelos de color RGB y HSL, vea Modelos de color [usados por el cuadro de diálogo Color](#color-models-used-by-the-color-dialog-box).
+Para agregar un nuevo color personalizado a la presentación de colores personalizados, el usuario puede hacer clic en **el botón Agregar** a colores personalizados. Esto también hace que el cuadro de diálogo copie el valor RGB del nuevo color en el elemento correspondiente de la matriz a la que apunta el **miembro lpCustColors.** Para conservar nuevos colores personalizados entre llamadas [**a ChooseColor,**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85))debe asignar memoria estática para la matriz. Para obtener más información sobre los modelos de color RGB y HSL, vea Modelos de color [usados por el cuadro de diálogo Color](#color-models-used-by-the-color-dialog-box).
 
 ## <a name="customizing-the-color-dialog-box"></a>Personalizar el cuadro de diálogo Color
 
@@ -76,13 +76,13 @@ Para personalizar un cuadro de diálogo Color, puede usar cualquiera de los mét
 -   Proporcionar una plantilla personalizada
 -   Proporcionar un procedimiento de enlace
 
-Puede modificar la apariencia y el comportamiento del cuadro de diálogo Color estableciendo marcas en el **miembro Flags** de la [**estructura CHOOSECOLOR.**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) Por ejemplo, puede establecer la marca **CC \_ SOLIDCOLOR** para dirigir el cuadro de diálogo para mostrar solo los colores sólidos. Para hacer que el cuadro de diálogo seleccione inicialmente un color distinto del negro, establezca la marca **CC \_ RGBINIT** y especifique un color en el **miembro rgbResult.**
+Puede modificar la apariencia y el comportamiento del cuadro de diálogo Color estableciendo marcas en el **miembro Flags** de la [**estructura CHOOSECOLOR.**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) Por ejemplo, puede establecer la marca **CC \_ SOLIDCOLOR** para dirigir el cuadro de diálogo para mostrar solo colores sólidos. Para que el cuadro de diálogo seleccione inicialmente un color distinto del negro, establezca la marca **CC \_ RGBINIT** y especifique un color en el **miembro rgbResult.**
 
-Puede proporcionar una plantilla personalizada para el cuadro de diálogo Color, por ejemplo, si desea incluir controles adicionales que son únicos para la aplicación. La [**función ChooseColor**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) usa la plantilla personalizada en lugar de la plantilla predeterminada.
+Puede proporcionar una plantilla personalizada para el cuadro de diálogo Color, por ejemplo, si desea incluir controles adicionales que sean únicos para la aplicación. La [**función ChooseColor**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) usa la plantilla personalizada en lugar de la plantilla predeterminada.
 
 ### <a name="to-provide-a-custom-template-for-the-color-dialog-box"></a>Para proporcionar una plantilla personalizada para el cuadro de diálogo Color
 
-1.  Cree la plantilla personalizada modificando la plantilla predeterminada especificada en el archivo Color.dlg. Los identificadores de control utilizados en la plantilla de cuadro de diálogo Color predeterminada se definen en el archivo Color.dlg.
+1.  Cree la plantilla personalizada modificando la plantilla predeterminada especificada en el archivo Color.dlg. Los identificadores de control usados en la plantilla de diálogo Color predeterminada se definen en el archivo Color.dlg.
 2.  Use la [**estructura CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) para habilitar la plantilla de la siguiente manera:
     -   Si la plantilla personalizada es un recurso de una aplicación o biblioteca de vínculos dinámicos, establezca la marca **CC \_ ENABLETEMPLATE** en el **miembro Flags.** Use los **miembros hInstance** y **lpTemplateName** de la estructura para identificar el módulo y el nombre del recurso.
 
@@ -97,9 +97,9 @@ Puede proporcionar un procedimiento [**de enlace CCHookProc**](/windows/win32/ap
 1.  Establezca la **marca CC \_ ENABLEHOOK** en el **miembro Flags** de la [**estructura CHOOSECOLOR.**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1)
 2.  Especifique la dirección del procedimiento de enlace en el **miembro lpfnHook.**
 
-Después de procesar [**su mensaje WM \_ INITDIALOG,**](wm-initdialog.md) el procedimiento del cuadro de diálogo envía un mensaje **WM \_ INITDIALOG** al procedimiento de enlace. El *parámetro lParam* de este mensaje es un puntero a la [**estructura CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) utilizada para inicializar el cuadro de diálogo.
+Después de procesar [**su mensaje \_ WM INITDIALOG,**](wm-initdialog.md) el procedimiento del cuadro de diálogo envía un mensaje **WM \_ INITDIALOG** al procedimiento de enlace. El *parámetro lParam* de este mensaje es un puntero a la [**estructura CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) utilizada para inicializar el cuadro de diálogo.
 
-El cuadro de diálogo envía el [**mensaje registrado COLOROKSTRING**](colorokstring.md) al procedimiento de enlace cuando el usuario hace clic en el **botón** Aceptar. El procedimiento de enlace puede rechazar el color seleccionado y forzar que el cuadro de diálogo permanezca abierto devolviendo cero cuando recibe este mensaje. El procedimiento de enlace puede forzar al cuadro de diálogo a seleccionar un color determinado mediante el envío del [**mensaje registrado SETRGBSTRING**](setrgbstring.md) al cuadro de diálogo. Para usar estos mensajes registrados, debe pasar las constantes **COLOROKSTRING** y **SETRGBSTRING** a la [**función RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) para obtener un identificador de mensaje. A continuación, puede usar el identificador para detectar y procesar los mensajes enviados desde el cuadro de diálogo o para enviar mensajes al cuadro de diálogo.
+El cuadro de diálogo envía el [**mensaje registrado COLOROKSTRING**](colorokstring.md) al procedimiento de enlace cuando el usuario hace clic en el **botón** Aceptar. El procedimiento de enlace puede rechazar el color seleccionado y forzar que el cuadro de diálogo permanezca abierto devolviendo cero cuando recibe este mensaje. El procedimiento de enlace puede forzar al cuadro de diálogo a seleccionar un color determinado mediante el envío del mensaje registrado [**SETRGBSTRING**](setrgbstring.md) al cuadro de diálogo. Para usar estos mensajes registrados, debe pasar las constantes **COLOROKSTRING** y **SETRGBSTRING** a la [**función RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) para obtener un identificador de mensaje. A continuación, puede usar el identificador para detectar y procesar los mensajes enviados desde el cuadro de diálogo, o para enviar mensajes al cuadro de diálogo.
 
 ## <a name="color-models-used-by-the-color-dialog-box"></a>Modelos de color usados por el cuadro de diálogo Color
 
@@ -138,13 +138,13 @@ El sistema almacena los colores internos como valores RGB de 32 bits que tienen 
 
 El byte de orden bajo contiene un valor para la intensidad relativa de rojo; el segundo byte contiene un valor para verde; y el tercer byte contiene un valor para azul. El byte de orden superior debe ser cero.
 
-Puede usar la [**macro RGB para**](/windows/desktop/api/wingdi/nf-wingdi-rgb) obtener un valor RGB basado en las intensidades especificadas para los componentes rojo, verde y azul. Use las macros [**GetRValue**](/windows/desktop/api/wingdi/nf-wingdi-getrvalue), [**GetBValue**](/windows/desktop/api/wingdi/nf-wingdi-getbvalue)y [**GetGValue**](/windows/desktop/api/wingdi/nf-wingdi-getgvalue) para extraer colores individuales de un valor de color RGB.
+Puede usar la [**macro RGB**](/windows/desktop/api/wingdi/nf-wingdi-rgb) para obtener un valor RGB basado en las intensidades especificadas para los componentes rojo, verde y azul. Use las macros [**GetRValue,**](/windows/desktop/api/wingdi/nf-wingdi-getrvalue) [**GetBValue**](/windows/desktop/api/wingdi/nf-wingdi-getbvalue)y [**GetGValue**](/windows/desktop/api/wingdi/nf-wingdi-getgvalue) para extraer colores individuales de un valor de color RGB.
 
 ### <a name="hsl-color-model"></a>Modelo de color HSL
 
-El cuadro de diálogo Color proporciona controles para especificar valores HSL. En la ilustración siguiente se muestra el control de espectro de colores y el control de diapositiva de luminosidad que aparecen en el cuadro de diálogo Color. En la ilustración también se muestran los intervalos de valores que el usuario puede especificar con estos controles.
+El cuadro de diálogo Color proporciona controles para especificar valores HSL. En la ilustración siguiente se muestra el control de espectro de color y el control de diapositiva de luminosidad que aparecen en el cuadro de diálogo Color. En la ilustración también se muestran los intervalos de valores que el usuario puede especificar con estos controles.
 
-![escala de espectro de colores y luminosidad](images/colordialogranges.png)
+![espectro de colores y escala de luminosidad](images/colordialogranges.png)
 
 En el cuadro de diálogo Color, los valores de saturación y luminosidad deben estar en el intervalo de 0 a 240 y el valor de matiz debe estar en el intervalo de 0 a 239.
 

@@ -4,8 +4,8 @@ description: El método getSAMILangName devuelve el nombre de un idioma admitido
 ms.assetid: 52aaf1cc-89ef-4c4c-af43-3f88dc4a9539
 keywords:
 - Método getSAMILangName Reproductor de Windows Media
-- Método getSAMILangName Reproductor de Windows Media interfaz , IWMPClosedCaption2
-- Interfaz IWMPClosedCaption2 Reproductor de Windows Media método , getSAMILangName
+- Método getSAMILangName Reproductor de Windows Media , interfaz IWMPClosedCaption2
+- Interfaz IWMPClosedCaption2 Reproductor de Windows Media , método getSAMILangName
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 99941c7c8c62480ea13572b22083a2d64bda9924cdf3d26200dbc9ac6ba9bdf1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e50df643fdd6b665de1275873fb8de9d5d094a42
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117930308"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473316"
 ---
 # <a name="iwmpclosedcaption2getsamilangname-method"></a>IWMPClosedCaption2::getSAMILangName (método)
 
@@ -64,7 +64,7 @@ Implements IWMPClosedCaption2.getSAMILangName
 
 **System.String que** es el nombre del idioma especificado en el archivo SAMI.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los idiomas de un archivo SAMI se indexa en el orden que se muestra en el archivo, empezando por cero.
 

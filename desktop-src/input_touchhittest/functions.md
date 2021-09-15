@@ -9,12 +9,12 @@ keywords:
 - Función táctil
 ms.topic: article
 ms.date: 02/07/2020
-ms.openlocfilehash: 83ab93fbff031423b6478926e499077ac78b1aec686d596ca069fda6d1b2298b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 03fcb4fb3fbe4f56e288703316f4b6e3ff02bba4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118248362"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569169"
 ---
 # <a name="touch-hit-testing-functions"></a>Funciones de prueba de impacto táctil
 

@@ -1,5 +1,5 @@
 ---
-description: Identifica el nombre del proveedor principal para la SIM o el dispositivo especificados.
+description: Identifica el nombre del proveedor de inicio para la SIM o el dispositivo especificados.
 ms.assetid: 05d65091-5a1d-427a-8f51-1e1b9d189571
 title: Elemento HomeProviderName (MBNProfile)
 ms.topic: reference
@@ -11,12 +11,12 @@ api_name:
 - HomeProviderName
 api_type:
 - Schema
-ms.openlocfilehash: 1868be18dc7acf9d5146f987658feb006714fbcc3db35883007afd01c308609e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3d0af51e4873915838f2d55f683d07e9098aad3f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119035833"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568680"
 ---
 # <a name="homeprovidername-mbnprofile-element"></a>Elemento HomeProviderName (MBNProfile)
 
@@ -36,7 +36,7 @@ El elemento [**MBNProfile**](schema-mbnprofile-element.md) define el elemento **
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |

@@ -4,12 +4,12 @@ description: Algunos servidores proxy y requieren autenticación antes de conced
 ms.assetid: f3752031-30d3-4e35-8eae-1d4971b66bc2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1797f34eb4f25f8d5e345b6790489acd5fad7e2bc21e6457642a1b4ffa022f9b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e82d8cd93f1010c71560d856793ad06d8bc5d9d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118113834"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473299"
 ---
 # <a name="handling-authentication"></a>Control de la autenticación
 
@@ -17,7 +17,7 @@ Algunos servidores proxy y requieren autenticación antes de conceder acceso a l
 
 ## <a name="about-http-authentication"></a>Acerca de la autenticación HTTP
 
-Si se requiere autenticación, la aplicación cliente recibe un código de estado 401, si el servidor requiere autenticación, o 407, si el proxy requiere autenticación. Con el código de estado, el proxy o servidor envía uno o varios encabezados de respuesta de autenticación: Proxy-Authenticate (para la autenticación de proxy) o WWW-Authenticate (para la autenticación del servidor).
+Si se requiere autenticación, la aplicación cliente recibe un código de estado 401, si el servidor requiere autenticación, o 407, si el proxy requiere autenticación. Con el código de estado, el servidor o proxy envía uno o varios encabezados de respuesta de autenticación: Proxy-Authenticate (para la autenticación de proxy) o WWW-Authenticate (para la autenticación del servidor).
 
 Cada encabezado de respuesta de autenticación contiene un esquema de autenticación disponible y un dominio kerberos. Si se admiten varios esquemas de autenticación, el servidor devuelve varios encabezados de respuesta de autenticación. El valor de dominio kerberos distingue mayúsculas de minúsculas y define un espacio de protección en el proxy o servidor. Por ejemplo, el encabezado "WWW-Authenticate: Basic Realm="example"" sería un ejemplo de un encabezado devuelto cuando se requiere la autenticación del servidor.
 
@@ -26,7 +26,7 @@ La aplicación cliente que envió la solicitud puede autenticarse mediante la in
 Hay dos tipos generales de esquemas de autenticación:
 
 -   Esquema de autenticación básico, donde el nombre de usuario y la contraseña se envían en texto no cifrado al servidor.
--   Esquemas de desafío-respuesta, que permiten un formato de desafío-respuesta.
+-   Esquemas de desafío-respuesta, que permiten un formato desafío-respuesta.
 
 El esquema de autenticación básico se basa en el modelo en el que un cliente debe autenticarse con un nombre de usuario y una contraseña para cada dominio. El servidor proporciona servicios a la solicitud si se reenvia con un encabezado de autorización que incluye un nombre de usuario y una contraseña válidos.
 
@@ -43,7 +43,7 @@ En la tabla siguiente se enumeran los esquemas de autenticación, el tipo de aut
 | NT LAN Manager (NTLM)                     | desafío-respuesta | Winsspi.dll          | Un esquema de desafío-respuesta que basa el desafío en el nombre de usuario.                                                                                                                                                                                                                                                                             |
 | Microsoft Network (MSN)                   | desafío-respuesta | Msnsspc.dll          | The Microsoft Network esquema de autenticación de .                                                                                                                                                                                                                                                                                                     |
 | Autenticación con contraseña distribuida (DPA) | desafío-respuesta | Msapsspc.dll         | Similar a la autenticación MSN y también se usa en Microsoft Network.                                                                                                                                                                                                                                                                           |
-| Autenticación remota de frase de contraseña (RPA)    | Compuserve         | Rpawinet.dll, da.dll | Esquema de autenticación de CompuServe. Para obtener más información, vea Especificaciones [del mecanismo de RPA.](https://www.compuserve.com/)                                                                                                                                                                                                    |
+| Autenticación remota de frase de contraseña (RPA)    | Compuserve         | Rpawinet.dll, da.dll | Esquema de autenticación de CompuServe. Para obtener más información, vea Especificaciones del [mecanismo de RPA](https://www.compuserve.com/).                                                                                                                                                                                                    |
 
 
 
@@ -77,7 +77,7 @@ Para los esquemas de autenticación distintos de Básico, se debe agregar una cl
 
     Este archivo DLL no usa una cadena de dominio kerberos HTTP estándar. Los datos que parecen ser un dominio kerberos son datos específicos del esquema.
 
--   MARCAS \_ DE AUTENTICACIÓN \_ DEL COMPLEMENTO KEEP ALIVE NOT REQUIRED \_ \_ \_ \_ (value=0x10)
+-   MARCAS \_ DE AUTENTICACIÓN \_ DE COMPLEMENTO KEEP ALIVE NOT REQUIRED \_ \_ \_ \_ (value=0x10)
 
     Este archivo DLL no requiere una conexión persistente para su secuencia de desafío-respuesta.
 
@@ -105,7 +105,7 @@ Si no se establece ningún nombre de usuario y contraseña de proxy, WinINet int
 
 ## <a name="handling-http-authentication"></a>Control de la autenticación HTTP
 
-La autenticación HTTP se puede controlar con [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) o una función personalizada que usa [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) o agrega sus propios encabezados de autenticación. [**InternetErrorDlg puede examinar**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) los encabezados asociados a un identificador [**HINTERNET**](appendix-a-hinternet-handles.md) para buscar errores ocultos, como códigos de estado de un servidor o proxy. [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) se puede usar para establecer el nombre de usuario y la contraseña para el proxy y el servidor. Para la autenticación de MSN y DPA, se debe usar [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) para establecer el nombre de usuario y la contraseña.
+La autenticación HTTP se puede controlar con [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) o una función personalizada que usa [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) o agrega sus propios encabezados de autenticación. [**InternetErrorDlg puede examinar**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) los encabezados asociados a un identificador [**HINTERNET**](appendix-a-hinternet-handles.md) para buscar errores ocultos, como códigos de estado de un servidor o proxy. [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) se puede usar para establecer el nombre de usuario y la contraseña para el proxy y el servidor. Para la autenticación de MSN y DPA, [**internetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) debe usarse para establecer el nombre de usuario y la contraseña.
 
 Para cualquier función personalizada que agrega sus propios encabezados WWW-Authenticate o Proxy-Authenticate, la marca [ \_ INTERNET FLAG NO \_ \_ AUTH](api-flags.md) debe establecerse para deshabilitar la autenticación.
 
@@ -159,7 +159,7 @@ if (dwError == ERROR_INTERNET_FORCE_RETRY)
 
 
 
-En el ejemplo, dwErrorCode se usa para almacenar los errores asociados a la llamada a [**HttpSendRequest**](/windows/desktop/api/Wininet/nf-wininet-httpsendrequesta). [**HttpSendRequest**](/windows/desktop/api/Wininet/nf-wininet-httpsendrequesta) se completa correctamente, incluso si el servidor o proxy requiere autenticación. Cuando la marca FLAGS ERROR UI FILTER FOR ERRORS se pasa a \_ \_ \_ \_ \_ [**InternetErrorDlg,**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg)la función comprueba los encabezados en busca de errores ocultos. Estos errores ocultos incluirían cualquier solicitud de autenticación. [**InternetErrorDlg muestra**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) el cuadro de diálogo adecuado para solicitar al usuario los datos necesarios. Las marcas FLAGS ERROR UI FLAGS GENERATE DATA y FLAGS ERROR UI FLAGS CHANGE OPTIONS también deben pasarse a \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ [**InternetErrorDlg,**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) [](appendix-a-hinternet-handles.md) de modo que la función construya la estructura de datos adecuada para el error y almacena los resultados del cuadro de diálogo en el identificador HINTERNET.
+En el ejemplo, dwErrorCode se usa para almacenar los errores asociados a la llamada a [**HttpSendRequest**](/windows/desktop/api/Wininet/nf-wininet-httpsendrequesta). [**HttpSendRequest**](/windows/desktop/api/Wininet/nf-wininet-httpsendrequesta) se completa correctamente, incluso si el servidor o proxy requiere autenticación. Cuando la marca FLAGS ERROR UI FILTER FOR ERRORS se pasa a \_ \_ \_ \_ \_ [**InternetErrorDlg,**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg)la función comprueba si hay errores ocultos en los encabezados. Estos errores ocultos incluirían cualquier solicitud de autenticación. [**InternetErrorDlg muestra**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) el cuadro de diálogo adecuado para solicitar al usuario los datos necesarios. Las marcas de interfaz de usuario FLAGS ERROR GENERATE DATA y FLAGS ERROR UI FLAGS CHANGE OPTIONS también se deben pasar a \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg), [](appendix-a-hinternet-handles.md) de modo que la función construya la estructura de datos adecuada para el error y almacena los resultados del cuadro de diálogo en el identificador HINTERNET.
 
 En el código de ejemplo siguiente se muestra cómo se puede controlar la autenticación [**mediante InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona).
 
@@ -242,7 +242,7 @@ switch (dwStatus)
 
 
 > [!Note]  
-> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para implementaciones de servidor o servicios, use [Microsoft Windows SERVICIOS HTTP (WinHTTP).](/windows/desktop/WinHttp/winhttp-start-page)
+> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para implementaciones de servidor o servicios, use [Microsoft Windows HTTP Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
  
 

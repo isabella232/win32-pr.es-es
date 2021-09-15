@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101521
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: f002b7c169a7ca422661984d8ec66fb7120a7bdf461cf0cac8caaae89de244d9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e82a254a9c1630bce8ccba21d4945fc727159b5a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119116231"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569621"
 ---
 # <a name="esentdatabaseinvalidpagesexception-methods"></a>Métodos de EsentDatabaseInvalidPagesException 
 

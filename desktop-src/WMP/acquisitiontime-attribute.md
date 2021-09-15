@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac78dd663addd35657b2aa1b76096b00a26cf3c91770ec0da16fa0f0b9861a03
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 82de862b1bea58c27a245c2fdfe415fb137bf4f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120004382"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473339"
 ---
 # <a name="acquisitiontime-attribute"></a>Atributo AcquisitionTime
 
@@ -32,7 +32,7 @@ El **atributo AcquisitionTime** es la fecha y hora en que se agregó el elemento
 -   [Elementos de radio](radio-item-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la biblioteca.
 

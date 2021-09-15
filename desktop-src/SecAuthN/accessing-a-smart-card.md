@@ -4,12 +4,12 @@ ms.assetid: 27f8f25f-1883-4070-94a4-0d3c51032378
 title: Acceso a una tarjeta inteligente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ae7a7954d9a48191884c8ed0fd7ee65ad3bb007aae18b00efc6581e5f2e6221
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b155d467c9de28b1e02dea01511ea1e71d574eb1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120101475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473485"
 ---
 # <a name="accessing-a-smart-card"></a>Acceso a una tarjeta inteligente
 

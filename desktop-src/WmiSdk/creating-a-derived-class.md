@@ -1,30 +1,30 @@
 ---
-description: La creación de una clase derivada en WMI es muy similar a la creación de una clase base. Al igual que con una clase base, primero debe definir la clase derivada y, a continuación, registrar la clase derivada con WMI.
+description: Crear una clase derivada en WMI es muy similar a crear una clase base. Al igual que con una clase base, primero debe definir la clase derivada y, a continuación, registrar la clase derivada con WMI.
 ms.assetid: 8dd483b8-8bc2-4a5c-b981-6c2ffaccdb95
 ms.tgt_platform: multiple
 title: Crear una clase derivada de WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cddc2b381346b2765e836bb3606cc06845280c41a7505b872098f383ac0409c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5b65079d206cb7a0a490622018f6d2e2df98867d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119374875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569369"
 ---
 # <a name="creating-a-wmi-derived-class"></a>Crear una clase derivada de WMI
 
-La creación de una clase derivada en WMI es muy similar a la creación de una clase base. Al igual que con una clase base, primero debe definir la clase derivada y, a continuación, registrar la clase derivada con WMI. La principal diferencia es que primero debe buscar la clase primaria de la que desea derivar. Para obtener más información, vea [Escribir un proveedor de clases y](writing-a-class-provider.md) Escribir un proveedor de [instancias](writing-an-instance-provider.md).
+Crear una clase derivada en WMI es muy similar a crear una clase base. Al igual que con una clase base, primero debe definir la clase derivada y, a continuación, registrar la clase derivada con WMI. La diferencia principal es que primero debe buscar la clase primaria de la que desea derivar. Para obtener más información, vea [Escribir un proveedor de clases y](writing-a-class-provider.md) Escribir un proveedor de [instancias.](writing-an-instance-provider.md)
 
-La manera recomendada de crear clases para un proveedor es en Managed Object Format (MOF). Varias clases derivadas relacionadas entre sí deben agruparse en un archivo MOF, junto con las clases base de las que derivan propiedades o métodos. Si coloca cada clase en un archivo MOF independiente, cada archivo debe compilarse para que el proveedor pueda funcionar correctamente.
+La manera recomendada de crear clases para un proveedor está en Managed Object Format (MOF). Varias clases derivadas relacionadas entre sí deben agruparse en un archivo MOF, junto con las clases base de las que derivan propiedades o métodos. Si coloca cada clase en un archivo MOF independiente, cada archivo debe compilarse antes de que el proveedor pueda funcionar correctamente.
 
 Después de crear la clase, debe eliminar todas las instancias de la clase para poder realizar cualquiera de las actividades siguientes en la clase derivada:
 
 -   Cambie la clase primaria de la clase derivada.
 -   Agregar o quitar propiedades.
--   Cambie los tipos de propiedad.
--   Agregue o quite [**calificadores**](key-qualifier.md) key **o indexed.**
--   Agregue o quite [**calificadores Singleton,**](standard-wmi-qualifiers.md) **Dynamic** [**o Abstract.**](standard-qualifiers.md)
+-   Cambiar los tipos de propiedad.
+-   Agregue o quite [**calificadores**](key-qualifier.md) de clave **o indizados.**
+-   Agregue o quite [**calificadores singleton,**](standard-wmi-qualifiers.md) **dinámicos** [**o abstractos.**](standard-qualifiers.md)
 
 > [!Note]  
 > Para agregar, quitar o modificar una propiedad o calificador, llame a [**IWbemServices::P utClass**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-putclass) o [**SWbemObject.Put \_**](swbemobject-put-.md) y establezca el parámetro flag en "force mode". El [**calificador Abstract**](standard-qualifiers.md) solo se puede usar si la clase primaria es abstracta.
@@ -37,29 +37,29 @@ Al declarar la clase derivada, observe las siguientes reglas y restricciones:
 
     La declaración de la clase primaria puede aparecer en el mismo archivo MOF que la clase derivada o en un archivo diferente. Si se desconoce la clase primaria, el compilador genera un error en tiempo de ejecución.
 
--   Una clase derivada solo puede tener una sola clase primaria.
+-   Una clase derivada solo puede tener una clase primaria única.
 
     WMI no admite la herencia múltiple. Sin embargo, una clase primaria puede tener muchas clases derivadas.
 
 -   Puede definir índices para las clases derivadas, pero WMI no usa estos índices.
 
-    Por lo tanto, la especificación de un índice en una clase derivada no mejora el rendimiento de las consultas para instancias de la clase derivada. Puede mejorar el rendimiento de una consulta en una clase derivada especificando propiedades indizadas para la clase primaria de la clase derivada.
+    Por lo tanto, la especificación de un índice en una clase derivada no mejora el rendimiento de las consultas para las instancias de la clase derivada. Puede mejorar el rendimiento de una consulta en una clase derivada especificando propiedades indizadas para la clase primaria de la clase derivada.
 
 -   Las definiciones de clases derivadas pueden ser más complejas y pueden incluir características como alias, calificadores y tipos de calificador.
 
     Para obtener más información, vea [Crear un alias y](creating-an-alias.md) Agregar un [calificador](adding-a-qualifier.md).
 
 -   Si desea cambiar un calificador, cambiar el valor predeterminado de una propiedad de clase base o escribir de forma más fuerte una referencia o una propiedad de objeto incrustado de una clase base, debe declarar de nuevo toda la clase base.
--   El número máximo de propiedades que puede definir en una clase WMI es 1024.
+-   El número máximo de propiedades que se pueden definir en una clase WMI es 1024.
 
 > [!Note]  
-> Las clases no se pueden cambiar durante la ejecución de proveedores. Debe detener la actividad, cambiar la clase y, a continuación, reiniciar el servicio Windows Management. Actualmente no es posible detectar un cambio de clase.
+> Las clases no se pueden cambiar durante la ejecución de proveedores. Debe detener la actividad, cambiar la clase y reiniciar el servicio Windows Management. Actualmente no es posible detectar un cambio de clase.
 
  
 
 Al igual que con la clase base, el uso más común de esta técnica lo harán las aplicaciones cliente. Sin embargo, un proveedor también puede crear una clase derivada. Para obtener más información, vea [Crear una clase base y](creating-a-base-class.md) Escribir un proveedor de [clases](writing-a-class-provider.md).
 
-El ejemplo de código de este tema requiere que la \# siguiente instrucción include se compile correctamente.
+El ejemplo de código de este tema requiere que la siguiente \# instrucción include se compile correctamente.
 
 
 ```C++
@@ -102,7 +102,7 @@ En el procedimiento siguiente se describe cómo crear una clase derivada mediant
 
     
 
-3.  Establezca un nombre para la clase estableciendo la propiedad del sistema **\_ \_ CLASS** con una llamada al [**método IWbemClassObject::P ut.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-put)
+3.  Establezca un nombre para la clase estableciendo la **\_ \_ propiedad del** sistema CLASS con una llamada al método [**IWbemClassObject::P ut.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemclassobject-put)
 
     En el ejemplo de código siguiente se muestra cómo asignar un nombre a la clase derivada.
 
@@ -143,7 +143,7 @@ En el procedimiento siguiente se describe cómo crear una clase derivada mediant
 
     
 
-En el ejemplo de código siguiente se combinan los ejemplos de código que se describen en el procedimiento anterior para describir cómo crear una clase derivada mediante la API wmi.
+En el ejemplo de código siguiente se combinan los ejemplos de código que se describen en el procedimiento anterior para describir cómo crear una clase derivada mediante la API WMI.
 
 
 ```C++
@@ -217,9 +217,9 @@ En el procedimiento siguiente se describe cómo definir una clase derivada media
     };
     ```
 
-2.  Cuando haya terminado, compile el código MOF con el compilador de MOF.
+2.  Cuando haya terminado, compile el código MOF con el compilador MOF.
 
-    Para obtener más información, [vea Compilar archivos MOF](compiling-mof-files.md).
+    Para obtener más información, [vea Compilar archivos MOF.](compiling-mof-files.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

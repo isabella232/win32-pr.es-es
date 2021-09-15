@@ -4,12 +4,12 @@ ms.assetid: E84E0EBA-5C34-41AA-84DB-7A65EBDCAD15
 title: Tipo de datos HALF (DirectXPackedVector.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a59b7288324ae5935a23e67a35f402ab6041da55073915d812b39096cab30733
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9651b84675be68bd433fdeaaae588cb01dc745ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118985045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569644"
 ---
 # <a name="half-data-type"></a>HALF Data Type
 
@@ -22,7 +22,7 @@ typedef uint16_t HALF;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El tipo de datos HALF es equivalente al formato binary16 IEEE 754.
 
@@ -48,7 +48,7 @@ Microsoft Visual Studio 2010 o Microsoft Visual Studio 2012 con el SDK Windows p
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

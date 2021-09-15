@@ -18,12 +18,12 @@ keywords:
 - distribución de visualizaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c82ebbd6070356f6ec2689aa4d6f97f1a0d9e11eef99477463e4f01ca7ba2a15
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bff60a730b5cfb877212ce878e165330c9d601c6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120122925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569412"
 ---
 # <a name="submitting-your-visualization"></a>Envío de la visualización
 

@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: d7ca03c8c340c9c0b81ec46d0809f50a19e4d2f2
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122981968"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473162"
 ---
 # <a name="jet_conditionalcolumn-structure"></a>JET_CONDITIONALCOLUMN estructura
 
@@ -39,7 +39,7 @@ La **JET_CONDITIONALCOLUMN** estructura define cómo se realiza la indexación c
     } JET_CONDITIONALCOLUMN;
 ```
 
-### <a name="members"></a>Miembros
+### <a name="members"></a>Members
 
 **cbStruct**
 

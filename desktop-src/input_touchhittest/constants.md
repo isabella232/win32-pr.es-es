@@ -9,12 +9,12 @@ keywords:
 - Función táctil
 ms.topic: article
 ms.date: 02/07/2020
-ms.openlocfilehash: 56e436169b48fac79ac81f0f7ffc2c88a8d031567309019070cd7ce2cdca460a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6e997a6d4673af24d78e9ffabf4bb2fc26e3132c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118758045"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569173"
 ---
 # <a name="touch-hit-testing-constants"></a>Constantes touch hit testing
 

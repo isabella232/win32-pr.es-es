@@ -50,12 +50,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01c6a8fecf7d1c7b3f95c1d4ce8040b9ba25e7d72ee4a41c8cbbcd24cd0da4bf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6933617b0488e059c029dd783af238a3ddbb3ecb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117743813"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473294"
 ---
 # <a name="http-status-codes-winineth"></a>Códigos de estado HTTP (Wininet.h)
 
@@ -76,7 +76,7 @@ La solicitud se puede continuar.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_SWITCH_PROTOCOLS"></span><span id="http_status_switch_protocols"></span>**PROTOCOLOS \_ DE CONMUTADOR DE ESTADO \_ \_ HTTP**
+<span id="HTTP_STATUS_SWITCH_PROTOCOLS"></span><span id="http_status_switch_protocols"></span>**PROTOCOLOS \_ DE MODIFICADOR DE ESTADO \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 101
@@ -110,7 +110,7 @@ La solicitud se completó correctamente.
 
 
 
-La solicitud se ha realizado y ha dado lugar a la creación de un nuevo recurso.
+La solicitud se ha cumplido y ha dado lugar a la creación de un nuevo recurso.
 
 
 </dt> </dl> </dd> <dt>
@@ -149,12 +149,12 @@ La metanálisis devuelta en el encabezado de entidad no es el conjunto definitiv
 
 
 
-El servidor ha cumplido la solicitud, pero no hay información nueva que devolver.
+El servidor ha satisfecho la solicitud, pero no hay información nueva que devolver.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_RESET_CONTENT"></span><span id="http_status_reset_content"></span>**CONTENIDO DE \_ \_ RESTABLECIMIENTO DE ESTADO \_ HTTP**
+<span id="HTTP_STATUS_RESET_CONTENT"></span><span id="http_status_reset_content"></span>**CONTENIDO \_ DE \_ RESTABLECIMIENTO DE ESTADO \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 205
@@ -175,7 +175,7 @@ La solicitud se ha completado y el programa cliente debe restablecer la vista de
 
 
 
-El servidor ha cumplido la solicitud GET parcial del recurso.
+El servidor ha cumplido la solicitud GET parcial para el recurso.
 
 
 </dt> </dl> </dd> <dt>
@@ -201,7 +201,7 @@ El servidor no pudo decidir qué devolver.
 
 
 
-El recurso solicitado se ha asignado a un nuevo URI permanente (identificador uniforme de recursos) y las referencias futuras a este recurso deben realizarse mediante uno de los URI devueltos.
+El recurso solicitado se ha asignado a un nuevo URI permanente (identificador uniforme de recursos) y cualquier referencia futura a este recurso debe realizarse mediante uno de los URI devueltos.
 
 
 </dt> </dl> </dd> <dt>
@@ -219,7 +219,7 @@ El recurso solicitado reside temporalmente en un URI diferente (identificador un
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_REDIRECT_METHOD"></span><span id="http_status_redirect_method"></span>**MÉTODO DE \_ REDIRECCIÓN \_ DE ESTADO \_ HTTP**
+<span id="HTTP_STATUS_REDIRECT_METHOD"></span><span id="http_status_redirect_method"></span>**MÉTODO DE \_ REDIRECCIÓN DE \_ ESTADO \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 303
@@ -253,12 +253,12 @@ El recurso solicitado no se ha modificado.
 
 
 
-Se debe acceder al recurso solicitado a través del proxy que proporciona el campo de ubicación.
+Se debe tener acceso al recurso solicitado a través del proxy que proporciona el campo de ubicación.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_REDIRECT_KEEP_VERB"></span><span id="http_status_redirect_keep_verb"></span>**VERBO KEEP KEEP DE REDIRECCIÓN DE ESTADO \_ \_ \_ \_ HTTP**
+<span id="HTTP_STATUS_REDIRECT_KEEP_VERB"></span><span id="http_status_redirect_keep_verb"></span>**HTTP \_ STATUS \_ REDIRECT \_ KEEP \_ VERB**
 </dt> <dd> <dl> <dt>
 
 307
@@ -266,12 +266,12 @@ Se debe acceder al recurso solicitado a través del proxy que proporciona el cam
 
 
 
-La solicitud redirigida mantiene el mismo verbo HTTP. Comportamiento http/1.1.
+La solicitud redirigida mantiene el mismo verbo HTTP. Comportamiento de HTTP/1.1.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_BAD_REQUEST"></span><span id="http_status_bad_request"></span>**SOLICITUD \_ DE ESTADO HTTP NO \_ \_ DISPONIBLE**
+<span id="HTTP_STATUS_BAD_REQUEST"></span><span id="http_status_bad_request"></span>**SOLICITUD DE ESTADO HTTP \_ \_ NO \_ DISPONIBLE**
 </dt> <dd> <dl> <dt>
 
 400
@@ -362,7 +362,7 @@ No se encontraron respuestas aceptables para el cliente.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_PROXY_AUTH_REQ"></span><span id="http_status_proxy_auth_req"></span>**SOLICITUD DE \_ \_ AUTENTICACIÓN DE PROXY \_ DE ESTADO \_ HTTP**
+<span id="HTTP_STATUS_PROXY_AUTH_REQ"></span><span id="http_status_proxy_auth_req"></span>**SOLICITUD DE \_ \_ AUTENTICACIÓN DEL PROXY DE ESTADO HTTP \_ \_**
 </dt> <dd> <dl> <dt>
 
 407
@@ -396,7 +396,7 @@ El servidor agotó el tiempo de espera para la solicitud.
 
 
 
-No se pudo completar la solicitud debido a un conflicto con el estado actual del recurso. El usuario debe volver a enviar con más información.
+No se pudo completar la solicitud debido a un conflicto con el estado actual del recurso. El usuario debe volver a enviar más información.
 
 
 </dt> </dl> </dd> <dt>
@@ -414,7 +414,7 @@ El recurso solicitado ya no está disponible en el servidor y no se conoce ningu
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_LENGTH_REQUIRED"></span><span id="http_status_length_required"></span>**LONGITUD \_ DE ESTADO HTTP \_ \_ REQUERIDA**
+<span id="HTTP_STATUS_LENGTH_REQUIRED"></span><span id="http_status_length_required"></span>**LONGITUD \_ DE ESTADO HTTP \_ \_ NECESARIA**
 </dt> <dd> <dl> <dt>
 
 411
@@ -427,7 +427,7 @@ El servidor rechaza aceptar la solicitud sin una longitud de contenido definida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_PRECOND_FAILED"></span><span id="http_status_precond_failed"></span>**ERROR \_ EN \_ EL PRECOND DE ESTADO \_ HTTP**
+<span id="HTTP_STATUS_PRECOND_FAILED"></span><span id="http_status_precond_failed"></span>**ERROR \_ DE ESTADO HTTP \_ PRECOND \_**
 </dt> <dd> <dl> <dt>
 
 412
@@ -435,7 +435,7 @@ El servidor rechaza aceptar la solicitud sin una longitud de contenido definida.
 
 
 
-La condición previa dada en uno o varios de los campos de encabezado de solicitud se evaluó como false cuando se probó en el servidor.
+La condición previa especificada en uno o varios de los campos de encabezado de solicitud se evaluó como false cuando se probó en el servidor.
 
 
 </dt> </dl> </dd> <dt>
@@ -448,7 +448,7 @@ La condición previa dada en uno o varios de los campos de encabezado de solicit
 
 
 
-El servidor no está dispuesto a procesar una solicitud porque la entidad de solicitud es mayor de lo que el servidor está dispuesto o puede procesar.
+El servidor no está dispuesto a procesar una solicitud porque la entidad de solicitud es mayor que la que el servidor está dispuesto o puede procesar.
 
 
 </dt> </dl> </dd> <dt>
@@ -466,7 +466,7 @@ El servidor no está dispuesto a dar servicio a la solicitud porque el URI de so
 
 </dt> </dl> </dd> <dt>
 
-<span id="HTTP_STATUS_UNSUPPORTED_MEDIA"></span><span id="http_status_unsupported_media"></span>**MEDIOS DE ESTADO HTTP \_ \_ NO \_ ADMITIDOS**
+<span id="HTTP_STATUS_UNSUPPORTED_MEDIA"></span><span id="http_status_unsupported_media"></span>**MEDIOS \_ NO COMPATIBLES CON EL ESTADO \_ \_ HTTP**
 </dt> <dd> <dl> <dt>
 
 415
@@ -570,10 +570,10 @@ El servidor no admite o rechaza admitir la versión del protocolo HTTP que se us
 
 </dt> </dl> </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
-> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones o servicios de servidor, use [Microsoft Windows HTTP Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones o servicios de servidor, use [Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
  
 

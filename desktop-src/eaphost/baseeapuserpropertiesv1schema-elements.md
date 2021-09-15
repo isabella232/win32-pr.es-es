@@ -1,5 +1,5 @@
 ---
-title: elementos de esquema baseeapuserpropertiesv1
+title: baseeapuserpropertiesv1 Schema Elements
 description: Obtenga información sobre los elementos de esquema baseeapuserpropertiesv1. Estos elementos son Eap, EapType, Identity y Type (BaseEapParameters).
 ms.assetid: 469a3015-a082-44cd-9c88-70a5e0b2606c
 ms.topic: article
@@ -9,14 +9,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 83462788cc6d058da51ee8359c67a90ead261b629caaf58cf05ea1650a0e8035
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 35d338b71dba293d96a56fe54c2397bc21f1b550
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119117614"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568841"
 ---
-# <a name="baseeapuserpropertiesv1-schema-elements"></a>elementos de esquema baseeapuserpropertiesv1
+# <a name="baseeapuserpropertiesv1-schema-elements"></a>baseeapuserpropertiesv1 Schema Elements
 
 El [esquema baseeapuserpropertiesv1](baseeapuserpropertiesv1schema-schema.md) se conste de los siguientes elementos de esquema.
 

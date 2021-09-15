@@ -4,12 +4,12 @@ description: SNMP admite el uso de IPv6 a partir de Windows Vista.
 ms.assetid: 38d71c0a-8de1-45a7-958c-aa44411451bc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0201be821476622c071ba5b92f0c4c6efcb138f7b09e1fc1716e0e51ae6dd87
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 913f71cdf0b23800340f2c43f7b7fa22f45883a2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119009283"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473486"
 ---
 # <a name="new-in-snmp"></a>Novedades de SNMP
 

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 9de03b198603f06b4c1c1401714bd2fd5edfe28784890c4b9ab00a025dbaab7a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5817d5ed243363c82038dc3df2d8f1e337079076
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120015242"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569513"
 ---
 # <a name="wm_pointerhwheel-message"></a>WM_POINTERHWHEEL mensaje
 
@@ -77,7 +77,7 @@ Si la aplicación procesa este mensaje, debe devolver cero.
 
 Si la aplicación no procesa este mensaje, debe llamar a [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para recuperar las unidades de desplazamiento de rueda, use **el archivo inputData** de la [**POINTER_INFO**](/previous-versions/windows/desktop/api) estructura devuelta mediante una llamada a la [**función GetPointerInfo.**](/previous-versions/windows/desktop/api) Este campo contiene un valor con firma y se expresa en un múltiplo de **WHEEL_DELTA**. Un valor positivo indica una rotación hacia delante y un valor negativo indica una rotación hacia atrás.
 
@@ -91,11 +91,11 @@ Tenga en cuenta que las entradas de rueda se pueden entregar incluso si el curso
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                               |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

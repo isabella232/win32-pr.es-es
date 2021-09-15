@@ -1,32 +1,32 @@
 ---
-description: En el ejemplo de código que aparece más adelante en este tema se muestra cómo enviar datos de control de impresora directamente a las impresoras que usan controladores de impresora basados en GDI.
+description: El ejemplo de código que aparece más adelante en este tema muestra cómo enviar datos de control de impresora directamente a impresoras que usan controladores de impresora basados en GDI.
 ms.assetid: 321f2333-d88e-4042-b9b1-0d918b3209d4
-title: 'Cómo: enviar datos directamente a una impresora GDI'
+title: 'Cómo: Enviar datos directamente a una impresora GDI'
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 1968b435068a62ce7a7d379a66c1500d04d8936a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105720614"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568608"
 ---
-# <a name="how-to-send-data-directly-to-a-gdi-printer"></a>Cómo: enviar datos directamente a una impresora GDI
+# <a name="how-to-send-data-directly-to-a-gdi-printer"></a>Cómo: Enviar datos directamente a una impresora GDI
 
-En el ejemplo de código que aparece más adelante en este tema se muestra cómo enviar datos de control de impresora directamente a las impresoras que usan controladores de impresora basados en GDI.
+El ejemplo de código que aparece más adelante en este tema muestra cómo enviar datos de control de impresora directamente a impresoras que usan controladores de impresora basados en GDI.
 
 En los pasos siguientes se describe cómo enviar datos directamente a una impresora. Estos pasos también se ilustran en el ejemplo de código siguiente.
 
-1.  Llame a [**OpenPrinter**](openprinter.md) para obtener un identificador de la impresora.
-2.  Inicialice una estructura [**DOCINFO**](/windows/desktop/api/wingdi/ns-wingdi-docinfoa) con los datos de la impresora.
-3.  Llame a [**StartDocPrinter**](startdocprinter.md) para indicar que la aplicación va a enviar datos de documento a la impresora.
-4.  Llame a [**StartPagePrinter**](startpageprinter.md) para indicar que la aplicación va a enviar una nueva página a la impresora.
-5.  Llame a [**WritePrinter**](writeprinter.md) para enviar los datos.
-6.  Llame a [**EndPagePrinter**](endpageprinter.md) para indicar que se han enviado todos los datos de la página actual.
-7.  Llame a [**EndDocPrinter**](enddocprinter.md) para indicar que se han enviado todos los datos de este documento.
-8.  Llame a [**ClosePrinter**](closeprinter.md) para liberar los recursos.
+1.  Llame [**a OpenPrinter**](openprinter.md) para obtener un identificador para la impresora.
+2.  Inicialice [**una estructura DOCINFO**](/windows/desktop/api/wingdi/ns-wingdi-docinfoa) con los datos de la impresora.
+3.  Llame [**a StartDocPrinter**](startdocprinter.md) para indicar que la aplicación enviará datos del documento a la impresora.
+4.  Llame [**a StartPagePrinter**](startpageprinter.md) para indicar que la aplicación enviará una nueva página a la impresora.
+5.  Llame [**a WritePrinter**](writeprinter.md) para enviar los datos.
+6.  Llame [**a EndPagePrinter**](endpageprinter.md) para indicar que se han enviado todos los datos de la página actual.
+7.  Llame [**a EndDocPrinter**](enddocprinter.md) para indicar que se han enviado todos los datos de este documento.
+8.  Llame [**a ClosePrinter**](closeprinter.md) para liberar los recursos.
 
-Enviar datos de control de impresora directamente a las impresoras que usan controladores de impresora basados en GDI.
+Enviar datos de control de impresora directamente a impresoras que usan controladores de impresora basados en GDI.
 
 
 ```C++

@@ -6,12 +6,12 @@ keywords:
 - Protocolo de autenticación extensible, referencia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e3fcb1f0d97b640b96db9e08234f4a27506bd4c651b2a51585d50c253378720
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d0ca739d52ca93cbb22205902f76091e7b1903ba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118499150"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569268"
 ---
 # <a name="extensible-authentication-protocol-reference"></a>Referencia del protocolo de autenticación extensible
 

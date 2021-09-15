@@ -1,5 +1,5 @@
 ---
-description: Contiene una lista de los servidores en proceso registrados con el sistema. Contiene un objeto para cada componente registrado como servidor en proceso.
+description: Contiene una lista de los servidores en proceso registrados en el sistema. Contiene un objeto para cada componente registrado como servidor en proceso.
 ms.assetid: 10434de7-c5e3-4fb0-8472-2a581607fcc0
 title: Colección InprocServers
 ms.topic: reference
@@ -12,20 +12,20 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: b751f007082454832fe31172e35b834b66c36d13dbaf6a6687ba0036879b60c7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 737627c99ac92a96883750bfc43dc3e2a9364d87
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119047463"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568981"
 ---
 # <a name="inprocservers-collection"></a>Colección InprocServers
 
-Contiene una lista de los servidores en proceso registrados con el sistema. Contiene un objeto para cada componente registrado como servidor en proceso.
+Contiene una lista de los servidores en proceso registrados en el sistema. Contiene un objeto para cada componente registrado como servidor en proceso.
 
 Esta colección admite el [**método Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) del [**objeto COMAdminCatalogCollection,**](comadmincatalogcollection.md) pero no [**el método Add.**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) Para instalar o importar componentes en una aplicación, use métodos en el [**objeto COMAdminCatalog.**](comadmincatalog.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **colección InprocServers** hereda de la [**interfaz IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) pero no tiene miembros adicionales.
 
@@ -42,9 +42,9 @@ Puede navegar a esta colección desde las siguientes colecciones:
 
 ## <a name="properties"></a>Propiedades
 
-El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las siguientes propiedades dentro de la colección:
+El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) de la colección admite las siguientes propiedades:
 
--   [Clsid](#clsid)
+-   [CLSID](#clsid)
 -   [InprocServer32](#inprocserver32)
 -   [ProgID](#progid)
 
@@ -54,7 +54,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | GUID para el componente. Esta propiedad se devuelve cuando se llama al método de propiedad [**Key**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) en un objeto de esta colección. |
+| Descripción    | GUID para el componente. Esta propiedad se devuelve cuando se llama [**al método**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) de propiedad Key en un objeto de esta colección. |
 | Acceso         | ReadOnly                                                                                                                                                  |
 | Tipo           | String                                                                                                                                                    |
 | Predeterminado        | N/D                                                                                                                                                       |
@@ -86,7 +86,7 @@ El objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) admite las sigui
 
 | Entrada | Value |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descripción    | Nombre que identifica el componente. Esta propiedad se devuelve cuando se [**llama al método**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) de propiedad Name en un objeto de esta colección. |
+| Descripción    | Nombre que identifica el componente. Esta propiedad se devuelve cuando se llama [**al método**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) de propiedad Name en un objeto de esta colección. |
 | Acceso         | ReadOnly                                                                                                                                                            |
 | Tipo           | String                                                                                                                                                              |
 | Predeterminado        | N/D                                                                                                                                                                 |

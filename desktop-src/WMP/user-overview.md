@@ -16,12 +16,12 @@ keywords:
 - valores preestablecidos en visualizaciones, información general del usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d78cb01fe5ee87857ea546fc8c225f9ca16217c642ebbee06025cb037d94fec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8f0b8b389f07dc1a39c852f881a9c7d287176b73
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119134497"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569060"
 ---
 # <a name="user-overview"></a>Información general del usuario
 
@@ -37,20 +37,20 @@ Reproductor de Windows Media incluye varias visualizaciones, como las siguientes
 
 -   Ambiente
 -   Plenoptic
--   clavar
+-   Clavar
 
 ## <a name="standard-presets"></a>Valores preestablecidos estándar
 
 Además, cada visualización incluye valores preestablecidos específicos que modifican cómo se muestra la visualización. Por ejemplo, la visualización De pico incluye dos valores preestablecidos:
 
--   clavar
+-   Clavar
 -   Ameba
 
 Ambos efectos forman parte de la misma visualización, pero tienen valores preestablecidos diferentes. Un valor preestablecido es un conjunto de valores para los atributos de una visualización determinada.
 
 ## <a name="skin-attributes"></a>Atributos de máscara
 
-Si crea máscaras para Reproductor de Windows Media, puede mostrar las visualizaciones estándar en las máscaras mediante el **elemento Effects.** Para obtener más información sobre el uso de visualizaciones en máscaras, [consulte Reproductor de Windows Media Máscaras](windows-media-player-skins.md).
+Si crea máscaras para Reproductor de Windows Media, puede mostrar las visualizaciones estándar en las máscaras mediante el **elemento Effects.** Para obtener más información sobre el uso de visualizaciones en máscaras, [consulte Reproductor de Windows Media Máscaras .](windows-media-player-skins.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

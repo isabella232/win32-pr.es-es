@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c408185cfac58e27cd5911296285273885cc76a31240ac03532ae87b75718c1f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 73ef87805fa69529e1790c3ac2fed539cac57b0c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118506570"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569884"
 ---
 # <a name="texturecubearraygathercmpsfloatfloatuint-function"></a>Función TextureCubeArray::GatherCmp(S,float,float,uint)
 
@@ -84,7 +84,7 @@ Tipo: **TemplateType**
 
 Valor de cuatro componentes cuyo tipo es el mismo que el tipo de plantilla.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las muestras de textura se pueden usar para la interpolación bilineal.
 

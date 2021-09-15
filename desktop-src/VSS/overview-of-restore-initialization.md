@@ -4,12 +4,12 @@ ms.assetid: 0a087125-c9d4-460a-8153-3e2e26633ac2
 title: Información general sobre la inicialización de restauración
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c531e4b47c49e5bd5538ea30583a31273bb6645a445ef1b1ea851bac539411c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6eb62e5282a74e38cd53d36c8ba004f4b8069746
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117751694"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473365"
 ---
 # <a name="overview-of-restore-initialization"></a>Información general sobre la inicialización de restauración
 
@@ -48,7 +48,7 @@ Al igual que con la operación de copia de seguridad, un solicitante deberá con
 
 Por lo tanto, algunas aplicaciones de copia de seguridad pueden resultar útiles haber almacenado en el medio de copia de seguridad su propia lista (en su propio formato optimizado) de los archivos y su escritor, componente, procedimiento de restauración e información de ubicación asociados. Esta lista se puede usar para minimizar la cantidad de análisis y comparación de los documentos de metadatos del escritor y los documentos de componente de copia de seguridad necesarios para admitir una restauración.
 
-## <a name="writer-actions-during-restore-initialization"></a>Acciones de escritura durante la inicialización de la restauración
+## <a name="writer-actions-during-restore-initialization"></a>Acciones de escritor durante la inicialización de la restauración
 
 Igual que se hace durante una operación de restauración, en respuesta al evento Identify, VSS llama al método de controlador virtual de cada escritor [**CVssWriter::OnIdentify**](/windows/desktop/api/VsWriter/nf-vswriter-cvsswriter-onidentify).
 

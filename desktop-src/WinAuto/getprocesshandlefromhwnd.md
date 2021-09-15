@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4096f77b4295e9567f17f747a5aee1edae1b592cb49c89547102cb6d017b7814
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bee00f36f236396816e7bb54cadbe6914f3437e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119860355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568541"
 ---
 # <a name="getprocesshandlefromhwnd-function"></a>Función GetProcessHandleFromHwnd
 
@@ -57,11 +57,11 @@ Si se realiza correctamente, devuelve el identificador del proceso que posee la 
 
 Si no se realiza correctamente, devuelve **NULL.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 En versiones anteriores del sistema operativo, un proceso podía abrir otro proceso (para acceder a su memoria, por ejemplo) mediante [**OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess). Esta función se realiza correctamente si el autor de la llamada tiene los privilegios adecuados; normalmente, el llamador y el proceso de destino deben ser el mismo usuario.
 
-En Windows Vista, sin embargo, [**OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) produce un error en el escenario en el que el autor de la llamada tiene UIAccess y el proceso de destino se eleva. En este caso, el propietario del proceso de destino está en el grupo Administradores, pero el proceso de llamada se ejecuta con el token restringido, por lo que no tiene pertenencia a este grupo y se le deniega el acceso al proceso con privilegios elevados. Sin embargo, si el autor de la llamada tiene UIAccess, puede usar un enlace de windows para insertar código en el proceso de destino y, desde dentro del proceso de destino, devolver un identificador al autor de la llamada.
+En Windows Vista, sin embargo, Se produce un error [**en OpenProcess**](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocess) en el escenario en el que el autor de la llamada tiene UIAccess y el proceso de destino se eleva. En este caso, el propietario del proceso de destino está en el grupo Administradores, pero el proceso de llamada se ejecuta con el token restringido, por lo que no tiene pertenencia a este grupo y se le deniega el acceso al proceso con privilegios elevados. Sin embargo, si el autor de la llamada tiene UIAccess, puede usar un enlace de Windows para insertar código en el proceso de destino y, desde dentro del proceso de destino, enviar un identificador al autor de la llamada.
 
 **GetProcessHandleFromHwnd es** una función útil que usa esta técnica para obtener el identificador del proceso que posee el HWND especificado. Tenga en cuenta que solo se realiza correctamente en los casos en los que el llamador y el proceso de destino se ejecutan como el mismo usuario. El identificador devuelto tiene los siguientes privilegios: PROCESS \_ DUP \_ HANDLE PROCESS VM OPERATION PROCESS VM READ PROCESS VM \| WRITE \_ \_ \| \_ \_ \| \_ \_ \| SYNCHRONIZE. Si se requieren otros privilegios, puede que sea necesario implementar la técnica de enlace explícitamente en lugar de usar esta función.
 

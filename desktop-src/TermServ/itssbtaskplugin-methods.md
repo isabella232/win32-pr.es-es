@@ -5,12 +5,12 @@ ms.assetid: 835BAB19-D91F-4F30-9EAB-4301C2E5F485
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47d3cc1ec36a9e68cfee566d4720a386f5599c1f345fc18df9a83828773ee565
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ae134da8b1ea6063c0fc262ed636a640b160314e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119989755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473420"
 ---
 # <a name="itssbtaskplugin-methods"></a>Métodos de ITsSbTaskPlugin
 

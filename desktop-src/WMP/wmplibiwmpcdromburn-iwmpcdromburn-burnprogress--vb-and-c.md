@@ -1,10 +1,10 @@
 ---
-title: Propiedad IWMPCdromRomRom burnProgress
+title: Propiedad IWMPCdromRom BurnProgress
 description: La propiedad burnProgress obtiene el progreso de la grabación de CD como porcentaje completado.
 ms.assetid: 831cc55d-bd26-4328-a715-1a1fa48d7a40
 keywords:
-- propiedad burnProgress Reproductor de Windows Media
-- La propiedad burnProgress Reproductor de Windows Media , interfaz IWMPCdromRomRom
+- propiedades burnProgress Reproductor de Windows Media
+- Propiedad burnProgress Reproductor de Windows Media , interfaz IWMPCdromRomRom
 - Interfaz IWMPCdromRom Reproductor de Windows Media , propiedad burnProgress
 topic_type:
 - apiref
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90b8e468bc57bb40d990c0b2aeaffc23e184ef2ffa04ab85c9f60cf0d6bced57
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 835c8c1091941437c226427ddb3ef53e8c577b5d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118332073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569037"
 ---
-# <a name="iwmpcdromburnburnprogress-property"></a>Propiedad IWMPCdromRom::burnProgress
+# <a name="iwmpcdromburnburnprogress-property"></a>Propiedad IWMPCdromRomRom::burnProgress
 
 La **propiedad burnProgress** obtiene el progreso de la grabación de CD como porcentaje completado.
 
@@ -49,9 +49,9 @@ Public ReadOnly Property burnProgress As System.Int32
 
 ## <a name="property-value"></a>Valor de propiedad
 
-**System.Int32 que** es el valor de progreso. Los valores de progreso van de 0 a 100.
+**System.Int32 que** es el valor de progreso. Los valores de progreso oscilan entre 0 y 100.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor de progreso representa el porcentaje completado de todo el proceso de grabación, incluidas las operaciones de almacenamiento provisional.
 
@@ -59,7 +59,7 @@ El valor de progreso representa el porcentaje completado de todo el proceso de g
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media 11<br/>                                                                                     |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -67,7 +67,7 @@ El valor de progreso representa el porcentaje completado de todo el proceso de g
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

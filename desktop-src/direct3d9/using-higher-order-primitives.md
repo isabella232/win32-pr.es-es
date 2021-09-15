@@ -4,12 +4,12 @@ ms.assetid: 7aa4f3ab-cfce-4f8f-a538-384f038fd324
 title: Usar Higher-Order primitivos (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a7d7a7b7f619c033665f8cb9894db5d60d5d6ecf9116de4ada230accc476c07
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e8d1447635c38e5e5df3d16ebca5ee3ee142020
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118797303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473236"
 ---
 # <a name="using-higher-order-primitives-direct3d-9"></a>Usar Higher-Order primitivos (Direct3D 9)
 
@@ -47,7 +47,7 @@ Puede usar los métodos siguientes para dibujar revisiones.
 -   [**IDirect3DDevice9::D rawRectPatch**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawrectpatch). Para comprender mejor cómo se hace referencia a los datos de revisión en el búfer de vértices, vea [**D3DRECTPATCH \_ INFO**](d3drectpatch-info.md).
 -   [**IDirect3DDevice9::D rawTriPatch**](/windows/desktop/api). Para comprender mejor cómo se hace referencia a los datos de revisión en el búfer de vértices, vea [**D3DTRIPATCH \_ INFO**](d3dtripatch-info.md).
 
-[**IDirect3DDevice9::D rawRectPatch**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawrectpatch) dibuja una revisión rectangular de orden alto especificada por el parámetro pRectPatchInfo mediante las secuencias establecidas actualmente. El parámetro Handle se usa para asociar la revisión a un identificador, de modo que la próxima vez que se dibuje la revisión, no es necesario volver a especificar pRectPatchInfo. Esto permite precompute y almacenar en caché los coeficientes de diferencias de avance u otra información, lo que a su vez permite llamadas posteriores a **IDirect3DDevice9::D rawRectPatch** con el mismo identificador para ejecutarse de forma eficaz.
+[**IDirect3DDevice9::D rawRectPatch**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawrectpatch) dibuja una revisión rectangular de orden alto especificada por el parámetro pRectPatchInfo mediante las secuencias establecidas actualmente. El parámetro Handle se usa para asociar la revisión a un identificador, de modo que la próxima vez que se dibuje la revisión, no es necesario volver a especificar pRectPatchInfo. Esto permite precalcribir y almacenar en caché coeficientes de diferencias de avance u otra información, lo que a su vez permite llamadas posteriores a **IDirect3DDevice9::D rawRectPatch** con el mismo identificador para ejecutarse de forma eficaz.
 
 Está pensado para que, para las revisiones estáticas, una aplicación establezca el sombreador de vértices y las secuencias adecuadas, proporcione información de revisión en el parámetro pRectPatchInfo y especifique un identificador para que Direct3D pueda capturar y almacenar en caché información. A continuación, la aplicación puede llamar a [**IDirect3DDevice9::D rawRectPatch**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawrectpatch) posteriormente con pRectPatchInfo establecido en **NULL** para dibujar eficazmente la revisión. Al dibujar una revisión almacenada en caché, se omiten las secuencias establecidas actualmente. Sin embargo, es posible invalidar los pNumSegs almacenados en caché especificando nuevos valores para pNumSegs. Además, es necesario establecer el mismo sombreador de vértices al representar una revisión almacenada en caché que se estableció cuando se capturó.
 

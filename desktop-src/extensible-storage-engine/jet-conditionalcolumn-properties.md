@@ -1,5 +1,5 @@
 ---
-description: 'Más información sobre: propiedades JET_CONDITIONALCOLUMN datos'
+description: 'Más información sobre: JET_CONDITIONALCOLUMN propiedades'
 title: JET_CONDITIONALCOLUMN propiedades
 TOCTitle: JET_CONDITIONALCOLUMN properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_CONDITIONALCOLUMN
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 55103533
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 961b3237993fa6ed488d36a5fd0782abb750db6f935279060943d9c1ff35a8e7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e4bef5f10b6855a127948f27f322bd086f776f6c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117705106"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473164"
 ---
 # <a name="jet_conditionalcolumn-properties"></a>JET_CONDITIONALCOLUMN propiedades
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [JET_CONDITIONALCOLUMN](./jet-conditionalcolumn-class.md) muestra los miembros siguientes.
+El [JET_CONDITIONALCOLUMN](./jet-conditionalcolumn-class.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 

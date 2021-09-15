@@ -1,15 +1,15 @@
 ---
-description: Busque información sobre el elemento ScoredProperty. Este tema no está al día. Para obtener la información más reciente, vea Especificación de esquema de impresión.
+description: Busque información sobre el elemento ScoredProperty. Este tema no está al día. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: 0552d301-5105-490f-962b-135c8c2e936b
 title: ScoredProperty
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 57ad42d49e65fffebad0aec7730ab8ce85f41876
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882229"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568612"
 ---
 # <a name="scoredproperty"></a>ScoredProperty
 

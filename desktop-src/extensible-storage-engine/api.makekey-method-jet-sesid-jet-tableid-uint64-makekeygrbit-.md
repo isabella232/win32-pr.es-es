@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3d2a9af4709e46c158d5bc74f4eb76da4bdde816732078332d46855aef139f6d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0cb4b26015e67e6801fe0e19ee0b0ca8d41ac4e3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119840455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569260"
 ---
 # <a name="apimakekey-method-jet_sesid-jet_tableid-uint64-makekeygrbit"></a>Método Api.MakeKey (JET_SESID, JET_TABLEID, UInt64, MakeKeyGrbit)
 

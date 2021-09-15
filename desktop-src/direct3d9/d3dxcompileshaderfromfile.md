@@ -1,5 +1,5 @@
 ---
-description: 'Función D3DXCompileShaderFromFile: compile un archivo de sombreador.'
+description: 'Función D3DXCompileShaderFromFile: compila un archivo de sombreador.'
 ms.assetid: 2ad6042f-3601-4f4a-9624-6319a3372355
 title: Función D3DXCompileShaderFromFile (D3DX9Shader.h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 65c9ac4d958f68aee8a958828c7cb54b5bec408afac1dfed8206ce6aa05dc4ca
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a4392a3c36b31deb4071c215ad9b41e7f40c21ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119750455"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569352"
 ---
 # <a name="d3dxcompileshaderfromfile-function"></a>Función D3DXCompileShaderFromFile
 
@@ -67,7 +67,7 @@ Puntero a una cadena que especifica el nombre de archivo.
 
 Tipo: **const [**D3DXMACRO**](d3dxmacro.md) \***
 
-Matriz **opcional terminada** en NULL de estructuras [**D3DXMACRO.**](d3dxmacro.md) Este valor puede ser **NULL.**
+Matriz **terminada en NULL** opcional de estructuras [**D3DXMACRO.**](d3dxmacro.md) Este valor puede ser **NULL.**
 
 </dd> <dt>
 

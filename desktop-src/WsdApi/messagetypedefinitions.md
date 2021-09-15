@@ -4,12 +4,12 @@ ms.assetid: 0b322acb-3326-42a2-a852-07251585b314
 title: elemento messageTypeDefinitions
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a94fabdd2ceb2d32052a692f6daa1abba0a52f16d5d1b7dd0a4cef07d33de09
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 54f1b6563254a93122960b4a990fe0bd18ab1453
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119757085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473272"
 ---
 # <a name="messagetypedefinitions-element"></a>elemento messageTypeDefinitions
 
@@ -33,7 +33,7 @@ No hay atributos.
 
 | Elemento                                   | Descripción                                                                       |
 |-------------------------------------------|-----------------------------------------------------------------------------------|
-| [**operation**](operation.md)<br/> | Especifica una operación para la que se va a generar código.<br/> <br/>  |
+| [**Operación**](operation.md)<br/> | Especifica una operación para la que se va a generar código.<br/> <br/>  |
 | [**portType**](porttype.md)<br/>   | Especifica el tipo de puerto para el que se va a generar el código.<br/> <br/> |
 
 
@@ -53,11 +53,11 @@ No hay atributos.
 
 | Elemento                         | Descripción                                                    |
 |---------------------------------|----------------------------------------------------------------|
-| [**Archivo**](file.md)<br/> | Genera un archivo del generador de código.<br/> <br/> |
+| [**Archivo**](file.md)<br/> | Genera un archivo desde el generador de código.<br/> <br/> |
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este elemento se usa generalmente en los archivos de código fuente de C para proporcionar las tablas de esquema declaradas por [**messageTypeDeclarations**](messagetypedeclarations.md).
 

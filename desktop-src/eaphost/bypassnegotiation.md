@@ -4,12 +4,12 @@ description: La clave del Registro BypassNegotiation determina si se produce la 
 ms.assetid: 51e21e9c-d6cb-454b-9584-3f48d76a649a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 00ba914b9c1ec1d5e3caef6b86ddbda49d021268e456c877ff4f67db86efd2cf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a9fdf883249fc5af7a37be83bb153a670295ba1d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119978255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568817"
 ---
 # <a name="bypassnegotiation"></a>BypassNegotiation
 
@@ -22,7 +22,7 @@ HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Rasman\PPP\EAP\25
    BypassNegotiation = value
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de **un valor \_ REG DWORD.**
 

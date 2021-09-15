@@ -4,12 +4,12 @@ description: Las siguientes funciones se usan con Windows DEPLOYMENT Services PX
 ms.assetid: b6089ff9-4d74-4f5d-957f-4a741c09f4b9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a16cc99f01dc88fce91beafe51a65f8e8ddccfdf08c4361fb194a7e60451a5aa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3852ecfd3e51d6375ca8d566f78d019e733808ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118330610"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569405"
 ---
 # <a name="windows-deployment-services-server-functions"></a>Windows Funciones del servidor de Servicios de implementación
 
@@ -60,7 +60,7 @@ Lo siguiente está disponible a partir de Windows 8 y Windows Server 2012.
 | [**PxeDhcpv6Initialize**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxedhcpv6initialize)                     | Inicializa un paquete de respuesta como un paquete de respuesta DHCPv6.                                       |
 | [**PxeDhcpv6IsValid**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxedhcpv6isvalid)                           | Valida que un paquete es un paquete DHCPv6 válido.                                             |
 | [**PxeGetServerInfoEx**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxegetserverinfoex)                       | Devuelve información sobre el servidor PXE.                                                     |
-| [**PxeDhcpv6ParseRelayForw**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxedhcpv6parserelayforw)             | Permite a un proveedor analizar mensajes RELAY-FORW y sus mensajes OPTION \_ RELAY \_ MSG anidados. |
+| [**PxeDhcpv6ParseRelayForw**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxedhcpv6parserelayforw)             | Permite a un proveedor analizar los mensajes RELAY-FORW y sus mensajes OPTION \_ RELAY \_ MSG anidados. |
 | [**PxeDhcpv6CreateRelayRepl**](/windows/desktop/api/WdsPxe/nf-wdspxe-pxedhcpv6createrelayrepl)           | Genera un mensaje RELAY-REPL.                                                               |
 
 

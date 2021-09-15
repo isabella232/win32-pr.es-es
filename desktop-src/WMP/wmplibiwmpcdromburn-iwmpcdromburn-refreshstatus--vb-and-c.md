@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cd3ecbd249f9731993c541dcee33f81142e042185ca4bba0325af942fd42394
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 55205e684d055d20c8e8f218ba58716de8472916
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117930645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569009"
 ---
 # <a name="iwmpcdromburnrefreshstatus-method"></a>IWMPCdromAsync::refreshStatus (método)
 
@@ -53,9 +53,9 @@ Este método no tiene parámetros.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Debe llamar a este método después de crear o cambiar una lista de reproducción de grabación antes de leer la información de estado o grabar el CD. Puede probar si se requiere una actualización obteniendo el valor **de burnState** y comprobando wmpbsRefreshStatusPending.
+Debe llamar a este método después de crear o cambiar una lista de reproducción de grabación antes de leer la información de estado o de grabar el CD. Puede probar si se requiere una actualización obteniendo el valor **de burnState** y comprobando wmpbsRefreshStatusPending.
 
 La actualización del estado es una operación sincrónica. Esto significa que puede transcurrir un largo período de tiempo antes de que este método vuelva si la lista de reproducción de grabación actual es grande y contiene muchos cambios.
 
@@ -63,7 +63,7 @@ La actualización del estado es una operación sincrónica. Esto significa que p
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media 11.<br/>                                                                                    |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |
@@ -75,7 +75,7 @@ La actualización del estado es una operación sincrónica. Esto significa que p
 
 <dl> <dt>
 
-[**Interfaz IWMPCdromRomRom (VB y C#)**](iwmpcdromburn--vb-and-c.md)
+[**Interfaz IWMPCdromRom (VB y C#)**](iwmpcdromburn--vb-and-c.md)
 </dt> <dt>
 
 [**IWMPCdromIntegración.burnState (VB y C#)**](wmplibiwmpcdromburn-iwmpcdromburn-burnstate--vb-and-c.md)

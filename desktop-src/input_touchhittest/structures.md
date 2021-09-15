@@ -1,6 +1,6 @@
 ---
 title: Estructuras (prueba de impacto táctil)
-description: En los temas de esta sección se proporcionan las especificaciones de referencia para las estructuras de Prueba de impacto táctil.
+description: En los temas de esta sección se proporcionan las especificaciones de referencia de las estructuras de Touch Hit Testing.
 ms.assetid: 75528CC6-0637-4CAB-9187-AEC4291C119D
 keywords:
 - interacción con el usuario
@@ -9,16 +9,16 @@ keywords:
 - Función táctil
 ms.topic: article
 ms.date: 02/07/2020
-ms.openlocfilehash: 7d8975ba5b674bb297483801ab0288ff8535472ef6962cb46e0457f44e68be88
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f5c912616e44d0fa836b5c2188592e2d959c62ad
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118757874"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569164"
 ---
-# <a name="touch-hit-testing-structures"></a>Estructuras de pruebas de impacto táctiles
+# <a name="touch-hit-testing-structures"></a>Estructuras de Prueba de impacto táctil
 
-En los temas de esta sección se proporcionan las especificaciones de referencia para las [estructuras de Prueba de impacto](touch-hit-testing-portal.md) táctil.
+En los temas de esta sección se proporcionan las especificaciones de referencia de las [estructuras de Touch Hit Testing.](touch-hit-testing-portal.md)
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -29,4 +29,4 @@ En los temas de esta sección se proporcionan las especificaciones de referencia
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Referencia de pruebas de impacto táctiles](touchhittest-reference.md)
+[Referencia de touch hit testing](touchhittest-reference.md)

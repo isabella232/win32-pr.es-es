@@ -4,12 +4,12 @@ ms.assetid: 3a107cd6-ef46-42ea-9238-434d0254a7bb
 title: Quitar un componente de una aplicación COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 759cd12ad268bd251454e6032ad83e775b230877b435a8f0b4b495594f5c5f1b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 57680fef16db0ae2d93ddc432cc1c412b9044573
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119637065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568977"
 ---
 # <a name="removing-a-component-from-a-com-application"></a>Quitar un componente de una aplicación COM+
 
@@ -24,13 +24,13 @@ Puede usar la herramienta administrativa Servicios de componentes para quitar co
 
 1.  En el árbol de consola de la herramienta administrativa Servicios de componentes, seleccione la aplicación que contiene el componente que desea quitar.
 
-2.  Abra la carpeta **Componentes de la** aplicación.
+2.  Abra la carpeta **Components de la** aplicación.
 
 3.  Seleccione el componente que desea quitar.
 
-4.  En el **menú Acción** , haga clic **en Eliminar.** También puede seleccionar el componente, hacer clic con el botón derecho y hacer clic en **Eliminar.**
+4.  En el **menú Acción,** haga clic **en Eliminar.** También puede seleccionar el componente, hacer clic con el botón derecho y hacer clic en **Eliminar**.
 
-5.  Haga **clic en Sí** cuando se le pida que confirme la acción.
+5.  Haga **clic en** Sí cuando se le pida que confirme la acción.
 
 ## <a name="related-topics"></a>Temas relacionados
 

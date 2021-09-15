@@ -1,15 +1,15 @@
 ---
-description: Windows carga y ejecuta el archivo DLL estándar de Microsoft GINA (MSGina.dll). Para cargar una GINA diferente, debe modificar un valor de clave del Registro.
+description: Windows carga y ejecuta el archivo DLL estándar de Microsoft GINA (MSGina.dll). Para cargar un GINA diferente, debe modificar un valor de clave del Registro.
 ms.assetid: 408511af-4430-4dd7-a2a1-c32b375821c4
 title: Carga y ejecución de un archivo DLL de GINA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 10a4e8d68a1e1846a28e1db9402d730834768a132a7c502021fd101f20926f54
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f6242ac0124d85d280d951cbc0bfbdbe748fde0b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119140958"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473479"
 ---
 # <a name="loading-and-running-a-gina-dll"></a>Carga y ejecución de un archivo DLL de GINA
 

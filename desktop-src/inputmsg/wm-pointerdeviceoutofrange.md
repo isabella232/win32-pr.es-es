@@ -1,9 +1,9 @@
 ---
-title: Mensaje WM_POINTERDEVICEOUTOFRANGE
-description: Se envía a una ventana cuando un dispositivo de puntero ha devuelto el intervalo de un digitalizador de entrada. Este mensaje contiene información relacionada con el dispositivo y su proximidad.
+title: WM_POINTERDEVICEOUTOFRANGE mensaje
+description: Se envía a una ventana cuando un dispositivo de puntero ha salido del intervalo de un digitalizador de entrada. Este mensaje contiene información sobre el dispositivo y su proximidad.
 ms.assetid: 6BC667C1-6D9A-4E69-BAC6-761A1859F09E
 keywords:
-- Mensajes y notificaciones de entrada de mensajes de WM_POINTERDEVICEOUTOFRANGE
+- WM_POINTERDEVICEOUTOFRANGE mensajes de entrada y notificaciones
 topic_type:
 - apiref
 api_name:
@@ -15,18 +15,18 @@ api_type:
 ms.topic: article
 ms.date: 02/03/2020
 ms.openlocfilehash: c222d9a35cae89838d7b6e1d99dcecd11f85b54d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104150148"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569517"
 ---
-# <a name="wm_pointerdeviceoutofrange-message"></a>Mensaje WM_POINTERDEVICEOUTOFRANGE
+# <a name="wm_pointerdeviceoutofrange-message"></a>WM_POINTERDEVICEOUTOFRANGE mensaje
 
-Se envía a una ventana cuando un dispositivo de puntero ha devuelto el intervalo de un digitalizador de entrada. Este mensaje contiene información relacionada con el dispositivo y su proximidad.
+Se envía a una ventana cuando un dispositivo de puntero ha salido del intervalo de un digitalizador de entrada. Este mensaje contiene información sobre el dispositivo y su proximidad.
 
-> \[! Aún\]  
-> Las aplicaciones de escritorio deben tener en cuenta los ppp. Si la aplicación no tiene en cuenta los PPP, las coordenadas de pantalla contenidas en los mensajes de puntero y las estructuras relacionadas podrían aparecer inexactas debido a la virtualización de PPP. La virtualización de PPP proporciona compatibilidad con el escalado automático a las aplicaciones que no reconocen los PPP y está activo de forma predeterminada (los usuarios pueden desactivarla). Para obtener más información, vea [Writing High-DPI Win32 Applications](/previous-versions//dd464660(v=vs.85)).
+> \[! Importante\]  
+> Las aplicaciones de escritorio deben tener en cuenta los valores de PPP. Si la aplicación no tiene reconocimiento de PPP, las coordenadas de pantalla contenidas en los mensajes de puntero y las estructuras relacionadas pueden parecer inexactas debido a la virtualización de PPP. La virtualización de PPP proporciona compatibilidad con el escalado automático a aplicaciones que no tienen reconocimiento de PPP y que están activas de forma predeterminada (los usuarios pueden desactivarla). Para obtener más información, consulte [Escritura de aplicaciones Win32 con valores altos de PPP.](/previous-versions//dd464660(v=vs.85))
 
  
 
@@ -67,13 +67,13 @@ Si la aplicación no procesa este mensaje, debe llamar a [**DefWindowProc**](/wi
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                               |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                     |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

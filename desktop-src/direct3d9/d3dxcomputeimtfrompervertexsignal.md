@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 41d635bf436e139e4c44db75b1057cebc3a50cfee114a35bfc75a9de84abc404
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7b12ea3f15f1a185125da46f575d37ad97dd5622
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118299462"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569336"
 ---
 # <a name="d3dxcomputeimtfrompervertexsignal-function"></a>Función D3DXComputeIMTFromPerVertexSignal
 
@@ -136,7 +136,7 @@ Si la función se realiza correctamente, el valor devuelto es D3D \_ OK; de lo c
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

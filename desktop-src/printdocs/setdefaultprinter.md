@@ -1,5 +1,5 @@
 ---
-description: La función SetDefaultPrinter establece el nombre de impresora de la impresora predeterminada para el usuario actual en el equipo local.
+description: La función SetDefaultPrinter establece el nombre de la impresora predeterminada para el usuario actual en el equipo local.
 ms.assetid: 55eec548-577f-422b-80e3-8b23aa4d2159
 title: Función SetDefaultPrinter (Winspool.h)
 ms.topic: reference
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - Winspool.drv
-ms.openlocfilehash: 570e0d57c4a04cd4845883e825acfbbef0282186cc7289751737798ed52b9592
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 346d356aea3d806284823541aa219699e51c2187
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120112125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568604"
 ---
 # <a name="setdefaultprinter-function"></a>Función SetDefaultPrinter
 
-La **función SetDefaultPrinter** establece el nombre de impresora de la impresora predeterminada para el usuario actual en el equipo local.
+La **función SetDefaultPrinter** establece el nombre de la impresora predeterminada para el usuario actual en el equipo local.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -44,7 +44,7 @@ BOOL SetDefaultPrinter(
 *pszPrinter* \[ En\]
 </dt> <dd>
 
-Puntero a una cadena terminada en NULL que contiene el nombre de impresora predeterminado. Para una conexión de impresora remota, el formato de nombre es **\\\\** _server_ *_\\_* _printername_. Para una impresora local, el formato de nombre es *printername*.
+Puntero a una cadena terminada en NULL que contiene el nombre de impresora predeterminado. Para una conexión de impresora remota, el formato de nombre es **\\\\** _server_ *_\\_* _printername_. Para una impresora local, el formato de nombre es *printername.*
 
 Si este parámetro es **NULL** o una cadena vacía, es decir, "", **SetDefaultPrinter** seleccionará una impresora predeterminada de una de las impresoras instaladas. Si ya existe una impresora predeterminada, llamar a **SetDefaultPrinter** con **un valor NULL** o una cadena vacía en este parámetro podría cambiar la impresora predeterminada.
 
@@ -56,9 +56,9 @@ Si la función se realiza correctamente, el valor devuelto es un valor distinto 
 
 Si la función no se realiza correctamente, el valor devuelto es cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Al usar este método, debe especificar una impresora, un controlador y un puerto válidos. Si no son válidas, las API no producirán errores, pero el resultado no está definido. Esto podría hacer que otros programas vuelvan a establecer la impresora en la impresora válida anterior. Puede usar [**EnumPrinters para**](enumprinters.md) recuperar el nombre de impresora, el nombre del controlador y el nombre del puerto de todas las impresoras disponibles.
+Al usar este método, debe especificar una impresora, un controlador y un puerto válidos. Si no son válidas, las API no producirán errores, pero el resultado no está definido. Esto podría hacer que otros programas vuelvan a establecer la impresora en la impresora válida anterior. Puede usar [**EnumPrinters para**](enumprinters.md) recuperar el nombre de impresora, el nombre del controlador y el nombre de puerto de todas las impresoras disponibles.
 
 > [!Note]  
 > Se trata de una función de bloqueo o sincrónica y es posible que no se devuelva inmediatamente. La rapidez con la que se devuelve esta función depende de factores en tiempo de ejecución, como el estado de la red, la configuración del servidor de impresión y los factores de implementación del controlador de impresora que son difíciles de predecir al escribir una aplicación. Llamar a esta función desde un subproceso que administra la interacción con la interfaz de usuario podría hacer que la aplicación parezca no responder.

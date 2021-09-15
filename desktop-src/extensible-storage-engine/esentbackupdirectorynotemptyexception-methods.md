@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101080
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 9ae60db7781e3efbae3b0067dcbeedf95eb7b8bfe40ba58f5830667ea30bf41e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 88f81a3dc341eebfcc7ad25649737948d0026908
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117716124"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569869"
 ---
 # <a name="esentbackupdirectorynotemptyexception-methods"></a>Métodos de EsentBackupDirectoryNotEmptyException 
 

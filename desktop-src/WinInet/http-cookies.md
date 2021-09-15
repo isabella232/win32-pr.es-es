@@ -4,12 +4,12 @@ description: Las cookies HTTP proporcionan al servidor un mecanismo para almacen
 ms.assetid: c3574592-572f-4fde-adfa-aed3e862f13f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0ba5b2d3917ea8f140e334f5f78b1bd730908d25506d9023667403410833c80
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1a6855f0b105dc73760541bf9eb7a6da80dfb38e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118113719"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473296"
 ---
 # <a name="http-cookies"></a>HTTP Cookies
 
@@ -29,7 +29,7 @@ Set-Cookie: <name>=<value>[; <name>=<value>]...
 [; path=<some_path>][; secure][; httponly]
 ```
 
-Una o varias secuencias de cadena (separadas por punto y coma) que siguen el valor del nombre del patrón deben incluirse en el encabezado Set-Cookie =  respuesta. El servidor puede usar estas secuencias de cadenas para almacenar datos en el sistema del cliente.
+Una o varias secuencias de cadenas (separadas por punto y coma) que siguen el valor del nombre del patrón deben incluirse en el =  Set-Cookie de respuesta. El servidor puede usar estas secuencias de cadenas para almacenar datos en el sistema del cliente.
 
 La fecha de expiración se establece con el formato expires=*date*, donde *date* es la fecha de expiración en Greenwich Mean Time (GMT). Si no se establece la fecha de expiración, la cookie expira una vez que finaliza la sesión de Internet. De lo contrario, la cookie se conserva en la memoria caché hasta la fecha de expiración. La fecha debe usar el formato siguiente:
 
@@ -37,62 +37,62 @@ La fecha de expiración se establece con el formato expires=*date*, donde *date*
 
 <dl> <dt>
 
-<span id="DAY"></span><span id="day"></span>*Día*
+<span id="DAY"></span><span id="day"></span>*DÍA*
 </dt> <dd>
 
 El día de la semana (Dom, Mon, Mar, Mié, Jue, Viernes, Sábado).
 
 </dd> <dt>
 
-<span id="DD"></span><span id="dd"></span>*Dd*
+<span id="DD"></span><span id="dd"></span>*DD*
 </dt> <dd>
 
 El día del mes (por ejemplo, 01 para el primer día del mes).
 
 </dd> <dt>
 
-<span id="MMM"></span><span id="mmm"></span>*Mmm*
+<span id="MMM"></span><span id="mmm"></span>*MMM*
 </dt> <dd>
 
-Abreviatura de tres letras del mes (enero, febrero, marzo, abril, mayo, junio, julio, agosto, sep, octubre, noviembre, dec).
+Abreviatura de tres letras del mes (enero, febrero, marzo, abril, mayo, jun, julio, agosto, sep, oct, noviembre, dec).
 
 </dd> <dt>
 
-<span id="YYYY"></span><span id="yyyy"></span>*Aaaa*
+<span id="YYYY"></span><span id="yyyy"></span>*AAAA*
 </dt> <dd>
 
 Año.
 
 </dd> <dt>
 
-<span id="HH"></span><span id="hh"></span>*Hh*
+<span id="HH"></span><span id="hh"></span>*HH*
 </dt> <dd>
 
 El valor de hora en hora de las fuerzas (22 sería 10:00 p. m., por ejemplo).
 
 </dd> <dt>
 
-<span id="MM"></span><span id="mm"></span>*Mm*
+<span id="MM"></span><span id="mm"></span>*MM*
 </dt> <dd>
 
 Valor del minuto.
 
 </dd> <dt>
 
-<span id="SS"></span><span id="ss"></span>*Ss*
+<span id="SS"></span><span id="ss"></span>*SS*
 </dt> <dd>
 
 Segundo valor.
 
 </dd> </dl>
 
-La especificación del nombre de dominio, con el patrón domain= nombre de dominio , es opcional para las cookies persistentes y se usa para indicar el final del dominio para el que la cookie es válida.*\_* Se rechazan las cookies de sesión que especifican un dominio. Si el nombre de dominio especificado que finaliza coincide con la solicitud, la cookie intenta coincidir con la ruta de acceso para determinar si se debe enviar la cookie. Por ejemplo, si el nombre de dominio final es .microsoft.com, se comprobarán las solicitudes a home.microsoft.com y support.microsoft.com para ver si el patrón especificado coincide con la solicitud. El nombre de dominio debe tener al menos dos o tres períodos para evitar que se establezcan cookies para los finales de nombres de dominio ampliamente usados, como .com, .edu y co.jp. Los nombres de dominio permitidos serían similares a .microsoft.com, .someschool.edu y .someserver.co.jp. Solo los hosts del dominio especificado pueden establecer una cookie para un dominio.
+La especificación del nombre de dominio, con el patrón domain= nombre de dominio , es opcional para las cookies persistentes y se usa para indicar el final del dominio para el que la cookie es válida.*\_* Se rechazan las cookies de sesión que especifican un dominio. Si el nombre de dominio especificado que finaliza coincide con la solicitud, la cookie intenta coincidir con la ruta de acceso para determinar si se debe enviar la cookie. Por ejemplo, si el nombre de dominio final es .microsoft.com, las solicitudes a home.microsoft.com y support.microsoft.com se comprobarán para ver si el patrón especificado coincide con la solicitud. El nombre de dominio debe tener al menos dos o tres períodos para evitar que se establezcan cookies para los finales de nombres de dominio ampliamente usados, como .com, .edu y co.jp. Los nombres de dominio permitidos serían similares a .microsoft.com, .someschool.edu y .someserver.co.jp. Solo los hosts del dominio especificado pueden establecer una cookie para un dominio.
 
 Establecer la ruta de acceso, mediante la ruta de acceso del patrón = alguna ruta de acceso , es opcional y se puede usar para especificar un subconjunto de las direcciones URL para las que la cookie es válida.*\_* Si se especifica una ruta de acceso, la cookie se considera válida para las solicitudes que coincidan con esa ruta de acceso. Por ejemplo, si la ruta de acceso especificada es /example, las solicitudes con las rutas de acceso /examplecode y /example/code.htm coincidirían. Si no se especifica ninguna ruta de acceso, se supone que es la ruta de acceso del recurso asociado al Set-Cookie encabezado.
 
 La cookie también se puede marcar como segura, lo que especifica que la cookie solo se puede enviar a servidores HTTPS.
 
-Por último, una cookie se puede marcar como HttpOnly (los atributos no distinguen mayúsculas de minúsculas), para indicar que la cookie no es de script y no debe mostrarse a la aplicación cliente, por motivos de seguridad. En Windows Internet, esto significa que la cookie no se puede recuperar a través de la **función InternetGetCookie.**
+Por último, una cookie se puede marcar como HttpOnly (los atributos no distinguen mayúsculas de minúsculas), para indicar que la cookie no es de script y no debe mostrarse a la aplicación cliente, por motivos de seguridad. Dentro Windows Internet, esto significa que la cookie no se puede recuperar a través de la **función InternetGetCookie.**
 
 ### <a name="cookie-header"></a>Encabezado de cookie
 
@@ -106,7 +106,7 @@ Una o varias secuencias de cadena, con el valor de *nombre de* formato , contien
 
 ## <a name="generating-cookies"></a>Generación de cookies
 
-Hay tres métodos para generar cookies para Microsoft Internet Explorer: usar Microsoft JScript, usar las funciones WinINet y usar un script CGI. Todos los métodos deben establecer la información que se incluye en el Set-Cookie encabezado.
+Hay tres métodos para generar cookies para Microsoft Internet Explorer: usar Microsoft JScript, usar las funciones winINet y usar un script CGI. Todos los métodos deben establecer la información que se incluye en el Set-Cookie encabezado.
 
 ### <a name="generating-a-cookie-using-the-dhtml-object-model"></a>Generar una cookie mediante el modelo de objetos DHTML
 
@@ -137,7 +137,7 @@ print "Set-Cookie:Test=test_value;
 ```
 
 > [!Note]  
-> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones o servicios de servidor, use [Microsoft Windows HTTP Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> WinINet no admite implementaciones de servidor. Además, no se debe usar desde un servicio. Para las implementaciones o servicios de servidor, use [Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
  
 

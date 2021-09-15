@@ -1,5 +1,5 @@
 ---
-description: Establezca el valor de un parámetro o anotación arbitrarios, incluidos los tipos simples, structs, matrices, cadenas, sombreadores y texturas.
+description: Establezca el valor de un parámetro o anotación arbitrarios, incluidos tipos simples, estructuras, matrices, cadenas, sombreadores y texturas.
 ms.assetid: ab71f1a1-3e10-4883-99b4-607e0b5751c2
 title: Método ID3DXBaseEffect::SetValue (D3DX9Shader.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 2bb619c9d0ef469b36f96d1e35ee70719ede8f6eee494cc950f6fabadbf86304
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3281306240cefc0312ff9a2af7e056dab74a085b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119748975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569313"
 ---
 # <a name="id3dxbaseeffectsetvalue-method"></a>Método ID3DXBaseEffect::SetValue
 
-Establezca el valor de un parámetro o anotación arbitrarios, incluidos los tipos simples, structs, matrices, cadenas, sombreadores y texturas.
+Establezca el valor de un parámetro o anotación arbitrarios, incluidos tipos simples, estructuras, matrices, cadenas, sombreadores y texturas.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -65,7 +65,7 @@ Puntero a un búfer que contiene datos.
 
 Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-\[en \] Número de bytes del búfer. Pase D3DX DEFAULT si sabe que el búfer es lo suficientemente grande como para contener todo el parámetro y desea omitir \_ la validación de tamaño.
+\[en \] Número de bytes del búfer. Pase D3DX DEFAULT si sabe que el búfer es lo suficientemente grande como para contener el parámetro completo y desea omitir \_ la validación de tamaño.
 
 </dd> </dl>
 
@@ -73,9 +73,9 @@ Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser D3DERR \_ INVALIDCALL.
+Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método , el valor devuelto puede ser D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método se puede usar en lugar de casi todas las llamadas API del conjunto de efectos.
 

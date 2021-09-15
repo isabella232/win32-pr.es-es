@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: afd446f4f7288c6f31e438d0370e25aedcd7d03a8935cdc572d77fb37a9cc2e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1e1a2a3c983c49f47ecb8115a6934f3e9716cefd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118497035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473198"
 ---
 # <a name="esentdistributedtransactionnotyetpreparedtocommitexception-constructor"></a>Constructor EsentDistributedTransactionNotYetPreparedToCommitException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentDistributedTransactionNotYetPreparedToCommitException()
 public EsentDistributedTransactionNotYetPreparedToCommitException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

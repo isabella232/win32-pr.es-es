@@ -1,5 +1,5 @@
 ---
-description: El compilador MOF acepta un valor de punto flotante especificado para una propiedad nonfloating-point. El valor se redondea hacia arriba o hacia abajo y se almacena como un número de punto de no nación. Esta situación puede provocar algunos resultados inesperados.
+description: El compilador MOF acepta un valor de punto flotante especificado para una propiedad nonfloating-point. El valor se redondea hacia arriba o hacia abajo y se almacena como un número de punto de no anfloating. Esta situación puede provocar algunos resultados inesperados.
 ms.assetid: 5cf7d8e1-c29d-4b9f-8557-e656c5e83370
 ms.tgt_platform: multiple
 title: Compilación de código MOF con Floating-Point valores
@@ -10,18 +10,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 5b5f7102ccf09c4908d6cbb74beba69f39921ad0efd93370aa1dfc6954e3e544
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 734639e1038b8e9739fead694740dbf5ab5f9cc7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117925744"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569385"
 ---
 # <a name="compiling-mof-code-with-floating-point-values"></a>Compilación de código MOF con Floating-Point valores
 
-El compilador MOF acepta un valor de punto flotante especificado para una propiedad nonfloating-point. El valor se redondea hacia arriba o hacia abajo y se almacena como un número de punto de no nación. Esta situación puede provocar algunos resultados inesperados.
+El compilador MOF acepta un valor de punto flotante especificado para una propiedad nonfloating-point. El valor se redondea hacia arriba o hacia abajo y se almacena como un número de punto de no anfloating. Esta situación puede provocar algunos resultados inesperados.
 
-En el ejemplo de código MOF siguiente se define una clase denominada **abc** en un espacio de nombres denominado "Test". Este código MOF se compila sin errores, pero no se puede consultar el valor de punto flotante definido para la propiedad **exampleUint16** en la instancia que crea este código.
+En el siguiente ejemplo de código MOF se define una clase denominada **abc** en un espacio de nombres denominado "Test". Este código MOF se compila sin errores, pero no se puede consultar el valor de punto flotante definido para la propiedad **exampleUint16** en la instancia que crea este código.
 
 ``` syntax
 #pragma namespace ("\\\\.\\Root")
@@ -47,7 +47,7 @@ Instance of abc
 };
 ```
 
-Si emite la consulta siguiente, obtiene un código de error que indica una consulta no válida.
+Si emite la consulta siguiente, se obtiene un código de error que indica una consulta no válida.
 
 
 ```sql
@@ -69,7 +69,7 @@ SELECT * FROM abc WHERE exampleUint16 = 1000
 
 <dl> <dt>
 
-[Compilación de archivos MOF](compiling-mof-files.md)
+[Compilar archivos MOF](compiling-mof-files.md)
 </dt> <dt>
 
 [**mofcomp**](mofcomp.md)

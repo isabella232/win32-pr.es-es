@@ -4,12 +4,12 @@ ms.assetid: 32d8a5bd-eeb4-4db6-8129-b5cd3508a7e5
 title: Copia de seguridad y restauración de una FRS-Replicated sysvol
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d841f64bab62114824847f91876ba8bbffbb0166db942c0f3cb9d010b72f106
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ea83ccbc156182a4a3b84c758cb22153f4f7110f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120124605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473409"
 ---
 # <a name="backing-up-and-restoring-an-frs-replicated-sysvol-folder"></a>Copia de seguridad y restauración de una FRS-Replicated sysvol
 
@@ -18,7 +18,7 @@ La carpeta Volumen del sistema (SYSVOL) proporciona una ubicación estándar par
 FRS puede copiar el contenido de SYSVOL en otros controladores de dominio del dominio. FRS supervisa la carpeta SYSVOL y, si se produce un cambio en cualquier archivo almacenado en la carpeta SYSVOL, FRS replica automáticamente el archivo cambiado en las carpetas SYSVOL de los otros controladores de dominio del dominio.
 
 > [!Note]  
-> Solo la directiva de grupo se replica mediante la replicación del contenido de la carpeta SYSVOL. El directiva de grupo contenedor se replica mediante Active Directory replicación. Para directiva de grupo funcione correctamente, tanto la plantilla de directiva de grupo como el directiva de grupo contenedor deben estar disponibles en un controlador de dominio.
+> Solo la directiva de grupo se replica mediante la replicación del contenido de la carpeta SYSVOL. El directiva de grupo contenedor se replica a través de Active Directory replicación. Para directiva de grupo funcione correctamente, tanto la plantilla de directiva de grupo como el contenedor directiva de grupo deben estar disponibles en un controlador de dominio.
 
  
 
@@ -28,9 +28,9 @@ En este tema se tratan los temas siguientes:
 -   [Copia de seguridad de una DFSR-Replicated sysvol](#backing-up-a-dfsr-replicated-sysvol-folder)
 -   [Copia de seguridad de FRS-Replicated carpeta SYSVOL en un Windows Server 2008 o Windows Server 2003](#backing-up-an-frs-replicated-sysvol-folder-on-a-windows-server-2008-or-windows-server-2003-domain)
 -   [Documento de metadatos del escritor de FRS de ejemplo](#sample-frs-writer-metadata-document)
--   [Establecer claves del Registro para una restauración de una FRS-Replicated sysvol](#setting-registry-keys-for-a-restore-of-an-frs-replicated-sysvol-folder)
--   [Realizar una restauración no autenticativa de un FRS-Replicated sysvol](#performing-a-nonauthoritative-restore-of-an-frs-replicated-sysvol-folder)
--   [Realizar una restauración autoritativa de FRS-Replicated carpeta SYSVOL](#performing-an-authoritative-restore-of-an-frs-replicated-sysvol-folder)
+-   [Establecer claves del Registro para una restauración de FRS-Replicated carpeta SYSVOL](#setting-registry-keys-for-a-restore-of-an-frs-replicated-sysvol-folder)
+-   [Realizar una restauración no autenticativa de un FRS-Replicated carpeta SYSVOL](#performing-a-nonauthoritative-restore-of-an-frs-replicated-sysvol-folder)
+-   [Realizar una restauración autoritativa de una FRS-Replicated sysvol](#performing-an-authoritative-restore-of-an-frs-replicated-sysvol-folder)
 
 ## <a name="determining-whether-a-domain-controllers-sysvol-folder-is-replicated-by-dfsr-or-frs"></a>Determinar si DFSR o FRS replica la carpeta SYSVOL de un controlador de dominio
 
@@ -39,16 +39,16 @@ En la tabla siguiente se resume cómo determinar si [DFSR](/windows-server/stora
 | Si el controlador de dominio se está ejecutando                                                                                                                  | SYSVOL se replica mediante |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
 | Windows Server 2008 + nivel funcional de dominio de Windows Server 2008 + [SYSVOL migration](https://blogs.technet.com/filecab/archive/2008/02/08/sysvol-migration-series-part-1-introduction-to-the-sysvol-migration-process.aspx) completed | DFSR                    |
-| Windows Server 2008 + nivel funcional de dominio por debajo Windows Server 2008                                                                              | Frs                     |
-| Windows Server 2003                                                                                                                                  | Frs                     |
+| Windows Server 2008 + nivel funcional de dominio por debajo Windows Server 2008                                                                              | FRS                     |
+| Windows Server 2003                                                                                                                                  | FRS                     |
 
 
 
  
 
-Si el nivel [](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10)) funcional del dominio es Windows Server 2008 y el dominio se ha sometido a la migración [de SYSVOL,](https://blogs.technet.com/filecab/archive/2008/02/08/sysvol-migration-series-part-1-introduction-to-the-sysvol-migration-process.aspx) [DFSR](/windows-server/storage/dfs-replication/migrate-sysvol-to-dfsr) se usará para replicar la carpeta SYSVOL. Si el primer controlador de dominio del dominio se promovió directamente [](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10))en el nivel funcional de Windows Server 2008, DFSR se usa automáticamente para la replicación SYSVOL. En tales casos, no es necesario migrar la replicación SYSVOL de FRS a DFSR. Si el dominio se actualizó al nivel funcional de Windows Server 2008, FRS se usa para la replicación sysvol hasta que se completa el proceso de migración de FRS a DFSR. [](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10)) [](https://blogs.technet.com/filecab/archive/2008/02/08/sysvol-migration-series-part-1-introduction-to-the-sysvol-migration-process.aspx)
+Si el nivel [](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10)) funcional del dominio es Windows Server 2008 y el dominio se ha sometido a la migración [de SYSVOL,](https://blogs.technet.com/filecab/archive/2008/02/08/sysvol-migration-series-part-1-introduction-to-the-sysvol-migration-process.aspx) [DFSR](/windows-server/storage/dfs-replication/migrate-sysvol-to-dfsr) se usará para replicar la carpeta SYSVOL. Si el primer controlador de dominio del dominio se promovió [](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10))directamente en el nivel funcional de Windows Server 2008, DFSR se usa automáticamente para la replicación sysvol. En tales casos, no es necesario migrar la replicación SYSVOL de FRS a DFSR. Si el dominio se actualizó al nivel funcional de Windows Server 2008, [](https://blogs.technet.com/filecab/archive/2008/02/08/sysvol-migration-series-part-1-introduction-to-the-sysvol-migration-process.aspx) FRS se usa para la replicación sysvol hasta que se completa el proceso de migración de FRS a DFSR. [](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754918(v=ws.10))
 
-Para determinar si DFSR o FRS se usa en un controlador de dominio que ejecuta Windows Server 2008, compruebe el valor de la subclave del Registro **HKEY \_ LOCAL \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **DFSR** \\ **Parameters** \\ **SysVols** \\ **Migrating Sysvols** \\ **LocalState** . Si esta subclave del Registro existe y su valor se establece en 3 (ELIMINATED), [se usa DFSR.](/windows-server/storage/dfs-replication/migrate-sysvol-to-dfsr) Si la subclave no existe o si tiene un valor diferente, se usa FRS.
+Para determinar si DFSR o FRS se usa en un controlador de dominio que ejecuta Windows Server 2008, compruebe el valor de la subclave del Registro LocalState de **HKEY \_ LOCAL \_ MACHINE** \\ **System** \\ **CurrentControlSet** \\ **Services** \\ **Parameters** \\  \\ **SysVols** \\ **Migrating Sysvols** \\ **LocalState** . Si esta subclave del Registro existe y su valor se establece en 3 (ELIMINATED), [se usa DFSR.](/windows-server/storage/dfs-replication/migrate-sysvol-to-dfsr) Si la subclave no existe o si tiene un valor diferente, se usa FRS.
 
 ## <a name="backing-up-a-dfsr-replicated-sysvol-folder"></a>Copia de seguridad de una DFSR-Replicated sysvol
 
@@ -68,10 +68,10 @@ En la siguiente sección documento de metadatos del escritor de FRS de ejemplo s
 
 La única excepción a esta regla se produce cuando el controlador de dominio está en el estado REDIRIGIDO de [la migración SYSVOL](https://blogs.technet.com/filecab/archive/2008/02/08/sysvol-migration-series-part-1-introduction-to-the-sysvol-migration-process.aspx). En este estado, los escritores correspondientes a FRS y al servicio [DFSR](/windows-server/storage/dfs-replication/migrate-sysvol-to-dfsr) informan de sus respectivas copias de la carpeta SYSVOL. Sin embargo, la copia del servicio [DFSR](/windows-server/storage/dfs-replication/migrate-sysvol-to-dfsr) de la carpeta SYSVOL (normalmente una carpeta denominada SYSVOL DFSR) es la que comparte el controlador de dominio; esta ruta de acceso es la a la que hace referencia la clave del Registro \_ **SysVol.**
 
-VSS Writer de FRS requiere un método de restauración personalizado. Esto significa que se deben realizar determinados pasos personalizados al restaurar los archivos replicados por FRS. Para obtener más información, vea Realizar una restauración no autenticativa de una FRS-Replicated sysvol.
+VSS Writer de FRS requiere un método de restauración personalizado. Esto significa que se deben realizar determinados pasos personalizados al restaurar los archivos replicados por FRS. Para obtener más información, vea Realizar una restauración no autenticativa de una FRS-Replicated SYSVOL.
 
 > [!Note]  
-> Las copias de seguridad de estado del sistema para los controladores de dominio de Windows no incluyen la base de datos FRS que mantiene información de estado para el servicio FRS relativa a los archivos dentro de la carpeta SYSVOL y otros conjuntos de contenido. La base de datos FRS, los registros [](/previous-versions/windows/it-pro/windows-server-2003/cc758169(v=ws.10)) de depuración, los archivos de área de ensayo y los archivos de la carpeta de datos existentes previamente se excluyen de una copia de seguridad del estado del sistema. La especificación frs writer de ejemplo siguiente contiene la lista de exclusión de la sección "Archivos excluidos".
+> Las copias de seguridad de estado del sistema para Windows controladores de dominio no incluyen la base de datos FRS que mantiene información de estado para el servicio FRS relativa a los archivos dentro de la carpeta SYSVOL y otros conjuntos de contenido. La base de datos FRS, los registros [](/previous-versions/windows/it-pro/windows-server-2003/cc758169(v=ws.10)) de depuración, los archivos de área de ensayo y los archivos de la carpeta de datos existentes previamente se excluyen de una copia de seguridad del estado del sistema. La especificación frs writer de ejemplo siguiente contiene la lista de exclusión de la sección "Archivos excluidos".
 
  
 
@@ -155,7 +155,7 @@ En el procedimiento siguiente se describe cómo determinar qué GUID corresponde
 4.  Debajo de esta subclave, busque el mismo GUID que se anotó en el paso 2. Debajo de la subclave GUID, cree una entrada para la **clave BurFlags.**
 5.  Reinicie el servicio FRS.
 
-## <a name="performing-a-nonauthoritative-restore-of-an-frs-replicated-sysvol-folder"></a>Realizar una restauración no autenticativa de un FRS-Replicated sysvol
+## <a name="performing-a-nonauthoritative-restore-of-an-frs-replicated-sysvol-folder"></a>Realizar una restauración no autenticativa de un FRS-Replicated carpeta SYSVOL
 
 La restauración no autenticativa es la manera más común de reinicializar la replicación SYSVOL en controladores de dominio individuales. Los controladores de dominio que se restauran de forma no autenticativa deben tener conexiones entrantes desde otros controladores de dominio en funcionamiento, que participan en la replicación de Active Directory y FRS. En un entorno de implementación grande que consta de muchos controladores de dominio, los controladores de dominio restantes se pueden recuperar mediante una restauración en modo no autenticativo en las condiciones siguientes:
 
@@ -170,14 +170,14 @@ En el procedimiento siguiente se describe cómo realizar una restauración no au
 2.  Restaure los datos de copia de seguridad en la carpeta SYSVOL.
 3.  Configure la **clave del Registro BurFlags** estableciendo el valor de la siguiente clave del Registro en el valor DWORD D2.
 
-    **HKEY \_ Sistema \_ DE MÁQUINA LOCAL** \\  \\ **CurrentControlSet** \\ **Services** \\ **NtFrs** \\ **Parameters** \\ **Backup/Restore** \\ **Process at Startup** \\ **BurFlags**
+    **HKEY \_ Sistema DE \_ MÁQUINA LOCAL** \\  \\ **CurrentControlSet** \\ **Services** \\ **NtFrs** \\ **Parameters** \\ **Backup/Restore Process** at \\ **Startup** \\ **BurFlags**
 
 4.  Reinicie el servicio FRS.
 
 Cuando se reinicia el servicio FRS, se producen las siguientes acciones:
 
 -   El valor de la clave del Registro **BurFlags** se restablece en cero.
--   Los archivos de las carpetas FRS reinicializadas se mueven a una carpeta ya existente.
+-   Los archivos de las carpetas FRS reinicializadas se mueven a una carpeta existente.
 -   El evento 13565 se registra en el registro de eventos de FRS para indicar que se ha iniciado una restauración no autenticativa.
     > [!Note]  
     > Los códigos de evento FRS se documentan en "Códigos de error del registro de eventos de FRS" en la página ayuda y soporte Knowledge Base en <https://go.microsoft.com/fwlink/p/?linkid=117779>
@@ -190,11 +190,11 @@ Cuando se reinicia el servicio FRS, se producen las siguientes acciones:
 -   Una vez completado el proceso, se registra un evento 13516 para indicar que FRS está operativo. Si el evento no se registra, hay un problema con la configuración de FRS.
 
 > [!Note]  
-> La colocación de archivos en la [carpeta existente](/previous-versions/windows/it-pro/windows-server-2003/cc758169(v=ws.10)) previamente en miembros reinicializados es una medida de seguridad en FRS diseñada para evitar la pérdida accidental de datos. Los archivos destinados a la réplica que solo existen en la carpeta local preexistente y que se replicaron después de la replicación inicial se pueden copiar en la carpeta adecuada. Cuando se ha producido la replicación saliente, los archivos de la carpeta existente se pueden eliminar para liberar espacio adicional en la unidad.
+> La colocación de archivos en la [carpeta existente](/previous-versions/windows/it-pro/windows-server-2003/cc758169(v=ws.10)) previamente en miembros reinicializados es una medida de seguridad en FRS diseñada para evitar la pérdida accidental de datos. Los archivos destinados a la réplica que solo existen en la carpeta local preexistente y que se replicaron después de la replicación inicial se pueden copiar en la carpeta adecuada. Cuando se ha producido la replicación saliente, los archivos de la carpeta existente previamente se pueden eliminar para liberar espacio adicional en la unidad.
 
  
 
-## <a name="performing-an-authoritative-restore-of-an-frs-replicated-sysvol-folder"></a>Realizar una restauración autoritativa de una FRS-Replicated sysvol
+## <a name="performing-an-authoritative-restore-of-an-frs-replicated-sysvol-folder"></a>Realizar una restauración autoritativa de FRS-Replicated carpeta SYSVOL
 
 Las restauraciones autoritativa se usan como último recurso en caso de situaciones críticas, como la divergente de datos en el conjunto de contenido causado por colisiones de directorios. Por ejemplo, es posible que se necesite una restauración autoritativa para restaurar un conjunto de réplicas de FRS en el que la replicación se ha detenido por completo y se requiere una recompilación desde cero.
 

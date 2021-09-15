@@ -1,7 +1,7 @@
 ---
-description: La función IsWindowRedirectedForPrint determina si la ventana especificada se redirige actualmente para imprimirla.
+description: La función IsWindowRedirectedForPrint determina si la ventana especificada se redirige actualmente para la impresión.
 ms.assetid: 49FD0D63-0F7F-48C6-81B6-25715294E7B7
-title: IsWindowRedirectedForPrint función)
+title: Función IsWindowRedirectedForPrint
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - user32.dll
 ms.openlocfilehash: b6648e5638ec6f05a2677ce279b0c3d7b160b49b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105720728"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568633"
 ---
-# <a name="iswindowredirectedforprint-function"></a>IsWindowRedirectedForPrint función)
+# <a name="iswindowredirectedforprint-function"></a>Función IsWindowRedirectedForPrint
 
-La función **IsWindowRedirectedForPrint** determina si la ventana especificada se redirige actualmente para imprimirla.
+La **función IsWindowRedirectedForPrint** determina si la ventana especificada se redirige actualmente para la impresión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -39,7 +39,7 @@ BOOL WINAPI IsWindowRedirectedForPrint(
 
 <dl> <dt>
 
-*hWnd* \[ de\]
+*hWnd* \[ En\]
 </dt> <dd>
 
 Controlador de la ventana.
@@ -48,13 +48,13 @@ Controlador de la ventana.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si la ventana se redirige actualmente para imprimirla, la función devuelve un valor distinto de cero; de lo contrario, devuelve cero.
+Si la ventana se redirige actualmente para la impresión, la función devuelve un valor distinto de cero; de lo contrario, devuelve cero.
 
 ## <a name="remarks"></a>Observaciones
 
-Una ventana se redirige para imprimir cuando procesa una llamada a [**PrintWindow**](/windows/desktop/api/Winuser/nf-winuser-printwindow). En una llamada a **PrintWindow**, una ventana representa su contenido en un contexto de dispositivo fuera de la pantalla.
+Se redirige una ventana para imprimir cuando procesa una llamada a [**PrintWindow.**](/windows/desktop/api/Winuser/nf-winuser-printwindow) En una llamada a **PrintWindow**, una ventana representa su contenido en un contexto de dispositivo fuera de la pantalla.
 
-Esta función no tiene asociado ningún archivo de encabezado o biblioteca de importación. debe llamarlo mediante las funciones [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Esta función no tiene asociada la biblioteca de importación ni el archivo de encabezado; Debe llamarlo mediante las [**funciones LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress.**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ Esta función no tiene asociado ningún archivo de encabezado o biblioteca de im
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                        |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                  |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                        |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                  |
 | Archivo DLL<br/>                      | <dl> <dt>User32.dll</dt> </dl> |
 
 
@@ -81,10 +81,10 @@ Esta función no tiene asociado ningún archivo de encabezado o biblioteca de im
 [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya)
 </dt> <dt>
 
-[**impresión de WM \_**](/windows/desktop/gdi/wm-print)
+[**WM \_ PRINT**](/windows/desktop/gdi/wm-print)
 </dt> <dt>
 
-[**PRINTCLIENT de WM \_**](/windows/desktop/gdi/wm-printclient)
+[**WM \_ PRINTCLIENT**](/windows/desktop/gdi/wm-printclient)
 </dt> </dl>
 
  

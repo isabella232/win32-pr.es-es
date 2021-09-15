@@ -4,12 +4,12 @@ ms.assetid: 6377d937-5739-45f5-9195-5d18be4069ce
 title: Control de eventos y errores en VSS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 431974532a8b24fd83fbeec62d3c593842b7fd1cede0b22c58f33f891b6b1359
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e7f6f1220d9d150fd0d03f7ffeff4dbdd1f6256f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118122127"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473380"
 ---
 # <a name="event-and-error-handling-under-vss"></a>Control de eventos y errores en VSS
 

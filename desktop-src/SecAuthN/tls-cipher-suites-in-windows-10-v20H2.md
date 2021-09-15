@@ -1,16 +1,16 @@
 ---
-description: Obtenga información sobre los conjuntos de cifrado TLS Windows 10 v1903, v1909 y v2004. Los conjuntos de cifrado solo se pueden negociar para las versiones TLS que los admiten.
-title: Conjuntos de cifrado TLS Windows 10 v1903, v1909 y v2004
+description: Obtenga información sobre los conjuntos de cifrado TLS Windows 10 v20H2 y v21H1. Los conjuntos de cifrado solo se pueden negociar para las versiones TLS que los admiten.
+title: Conjuntos de cifrado TLS Windows 10 v20H2 y v21H1
 ms.topic: article
-ms.date: 10/09/2018
-ms.openlocfilehash: 5c5cd0ff5b61d301ded666f1c236e83539698fe1
+ms.date: 09/01/2021
+ms.openlocfilehash: 232c128b93d3060cdc5b8c87b8a1451ef2d1543a
 ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/13/2021
-ms.locfileid: "127568561"
+ms.locfileid: "127568553"
 ---
-# <a name="tls-cipher-suites-in-windows-10-v1903-v1909-and-v2004"></a>Conjuntos de cifrado TLS Windows 10 v1903, v1909 y v2004
+# <a name="tls-cipher-suites-in-windows-10-v20h2-and-v21h1"></a>Conjuntos de cifrado TLS Windows 10 v20H2 y v21H1
 
 Los conjuntos de cifrado solo se pueden negociar para las versiones TLS que los admiten. Siempre se prefiere la versión de TLS más alta admitida en el protocolo de enlace TLS.
 
@@ -26,7 +26,7 @@ La disponibilidad de los conjuntos de cifrado debe controlarse de una de estas d
 
 El cumplimiento de FIPS se ha vuelto más complejo con la adición de curvas elípticas, lo que hace que la columna habilitada para el modo FIPS en versiones anteriores de esta tabla sea confusa. Por ejemplo, un conjunto de cifrado como TLS \_ ECDHE \_ RSA \_ WITH \_ AES \_ 128 \_ CBC \_ SHA256 solo es compatible con FIPS cuando se usan curvas elípticas NIST. Para averiguar qué combinaciones de curvas elípticas y conjuntos de cifrado se habilitarán en el modo FIPS, vea la sección 3.3.1 de Directrices para la selección, configuración y uso de implementaciones [de TLS.]( https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-52r2.pdf)
 
-Por Windows 10, versión 1903, 1909 y 2004, los siguientes conjuntos de cifrado están habilitados y en este orden de prioridad de forma predeterminada mediante el proveedor de Microsoft Schannel:
+Por Windows 10 versión v20H2 y v21H1, los siguientes conjuntos de cifrado están habilitados y en este orden de prioridad de forma predeterminada mediante el proveedor de Microsoft Schannel:
 
 
 
@@ -111,7 +111,7 @@ Los siguientes conjuntos de cifrado PSK están habilitados y en este orden de pr
 
 Para agregar conjuntos de cifrado, implemente una directiva de grupo o use los cmdlets TLS:
 
--   Para usar la directiva de grupo, configure el orden del conjunto de cifrado SSL en Configuración del equipo > Plantillas administrativas > > configuración de SSL Configuración con la lista de prioridad de todos los conjuntos de cifrado que quiera habilitar.
+-   Para usar la directiva de grupo, configure el orden del conjunto de cifrado SSL en Configuración del equipo > Plantillas administrativas > Red > Configuración de SSL Configuración con la lista de prioridad de todos los conjuntos de cifrado que quiera habilitar.
 -   Para usar PowerShell, consulte [Cmdlets tls.](/powershell/module/tls/?view=win10-ps)
 
 > [!Note]  

@@ -4,12 +4,12 @@ description: Una vez completada la llamada asincrónica, el servidor envía una 
 ms.assetid: 458bc476-963e-4812-b4c2-9074ff0a8284
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdcaf4db4a27a49a8025596668893518c6b6c577a0d81d91189a44ec81df4de6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 06f861c3f2a1befdb85435f5275176c82e23bb06
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118925584"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473544"
 ---
 # <a name="sending-the-asynchronous-reply"></a>Envío de la respuesta asincrónica
 

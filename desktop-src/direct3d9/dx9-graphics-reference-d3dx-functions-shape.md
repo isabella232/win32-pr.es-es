@@ -4,12 +4,12 @@ ms.assetid: 3bebc321-3053-4056-a0a7-5cd5031f7302
 title: Funciones de dibujo de formas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b965016d749de0c2fe2403462804eaebadc1a421f38b0e08752404f231953bb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7dbf0ebb4d5047748b7cbc5313251f9fdd73152f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120118875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569937"
 ---
 # <a name="shape-drawing-functions"></a>Funciones de dibujo de formas
 

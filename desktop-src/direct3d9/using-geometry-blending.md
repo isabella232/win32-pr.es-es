@@ -4,12 +4,12 @@ ms.assetid: 6bcabcf9-d14e-446a-8dd2-e741211cc704
 title: Uso de geometry blending (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad043c4382eba2f2f9a802c5dd19efc19aacd2317494c5f34818228bcb6d4015
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fc12c4d7d83ce4c01c76bd338a07f8e0aac7c003
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120025785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473237"
 ---
 # <a name="using-geometry-blending-direct3d-9"></a>Uso de geometry blending (Direct3D 9)
 
@@ -36,7 +36,7 @@ Observe que el formato de vértice anterior solo contiene un valor de peso de me
 
 > [!Note]
 >
-> La definición de los pesos de la máscara es fácil. El uso de una función lineal de la distancia entre las uniones es un buen inicio, pero una función sigmoid más suave se ve mejor. La elección de una función de distribución del peso de la máscara puede dar lugar a creaciones nítidas en las uniones, si lo desea, mediante una gran variación en el peso de la máscara a corta distancia.
+> La definición de los pesos de la máscara es fácil. El uso de una función lineal de la distancia entre las uniones es un buen inicio, pero una función sigmoid más suave se ve mejor. La elección de una función de distribución del peso de la máscara puede dar lugar a creaciones nítidas en las uniones, si se desea, mediante una gran variación en el peso de la máscara a corta distancia.
 
  
 
@@ -69,7 +69,7 @@ Establecer una matriz de mezcla simplemente hace que el sistema almacena en cach
 
 ## <a name="enabling-geometry-blending"></a>Habilitación de la combinación de geometría
 
-La combinación de geometría está deshabilitada de forma predeterminada. Para habilitar la mezcla de geometría, llame al método [**IDirect3DDevice9::SetRenderState**](/windows/desktop/api) para establecer el estado de representación de D3DRS VERTEXBLEND en un valor del tipo enumerado \_ [**D3DVERTEXBLENDFLAGS.**](./d3dvertexblendflags.md) En el ejemplo de código siguiente se muestra el aspecto que podría tener esta llamada al establecer el estado de representación de una mezcla entre dos matrices de mundo.
+La combinación de geometría está deshabilitada de forma predeterminada. Para habilitar la combinación de geometría, llame al método [**IDirect3DDevice9::SetRenderState**](/windows/desktop/api) para establecer el estado de representación de D3DRS VERTEXBLEND en un valor del tipo enumerado \_ [**D3DVERTEXBLENDFLAGS.**](./d3dvertexblendflags.md) En el ejemplo de código siguiente se muestra el aspecto que podría tener esta llamada al establecer el estado de representación de una mezcla entre dos matrices de mundo.
 
 
 ```

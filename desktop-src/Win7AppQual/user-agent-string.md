@@ -4,12 +4,12 @@ ms.assetid: bcf0a534-c123-40c4-91b4-645c4912f31a
 title: Cadena del agente de usuario
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42a4d918845fe317ef64569cde7ef79c7bb1461bcd0205a5ef74daf55b2c0186
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5d227eead5c02f50b689779bd0a8f0ba4b031d06
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118328705"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569733"
 ---
 # <a name="user-agent-string"></a>Cadena del agente de usuario
 
@@ -23,7 +23,7 @@ Normalmente, la cadena del agente de usuario se analiza específicamente para la
 
 <dl> <dt>
 
-[Corregir problemas de compatibilidad en aplicaciones web mediante Vista de compatibilidad](remediating-web-applications-and-add-ons.md)
+[Corrección de problemas de compatibilidad en aplicaciones web mediante Vista de compatibilidad](remediating-web-applications-and-add-ons.md)
 </dt> </dl>
 
  

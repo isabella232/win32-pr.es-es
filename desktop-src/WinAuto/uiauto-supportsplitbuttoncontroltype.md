@@ -22,11 +22,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 30e420d369ee09dfd2d92b5e5d79cf94c7013566
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470102"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569712"
 ---
 # <a name="splitbutton-control-type"></a>Tipo de control SplitButton
 
@@ -34,7 +34,7 @@ En este tema se proporciona información sobre microsoft Automatización de la i
 
 El control de botón de división permite realizar una acción en un control y expandir el control para ver una lista de otras acciones posibles que se pueden realizar.
 
-En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, propiedades, patrones de control y eventos necesarios para el tipo de control **SplitButton.** Los Automatización de la interfaz de usuario se aplican a todos los controles de botón de división en los que el marco o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
+En las secciones siguientes se definen los Automatización de la interfaz de usuario estructura de árbol, propiedades, patrones de control y eventos necesarios para el tipo de control **SplitButton.** Los Automatización de la interfaz de usuario se aplican a todos los controles de botón de división en los que la plataforma o plataforma de interfaz de usuario Automatización de la interfaz de usuario compatibilidad con los tipos de control y los patrones de control.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -47,7 +47,7 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="typical-tree-structure"></a>Estructura de árbol típica
 
-En la tabla siguiente se muestra un control típico y una vista de contenido del árbol de Automatización de la interfaz de usuario que pertenece a los controles de botón de división y se describe lo que puede incluirse en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario, [vea información general Automatización de la interfaz de usuario árbol de datos.](uiauto-treeoverview.md)
+En la tabla siguiente se muestra un control típico y una vista de contenido del árbol Automatización de la interfaz de usuario que pertenece a los controles de botón de división y se describe lo que se puede incluir en cada vista. Para obtener más información sobre el Automatización de la interfaz de usuario, vea [información general Automatización de la interfaz de usuario árbol de datos.](uiauto-treeoverview.md)
 
 
 
@@ -67,19 +67,19 @@ En la tabla siguiente se enumeran Automatización de la interfaz de usuario prop
 
 
 
-| Propiedad de automatización de interfaz de usuario                                                                                              | Valor           | Notas                                                                                                                                                                                                |
+| Propiedad de automatización de interfaz de usuario                                                                                              | Value           | Notas                                                                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas.      | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel en la vista sin formato del Automatización de la interfaz de usuario árbol.                                                                                         |
+| [**AutomationIdPropertyId de UIA \_**](uiauto-automation-element-propids.md)                 | Vea las notas.      | El valor de esta propiedad debe ser único entre todos los elementos del mismo nivel de la vista sin formato Automatización de la interfaz de usuario árbol.                                                                                         |
 | [**UIA \_ BoundingRectanglePropertyId**](uiauto-automation-element-propids.md)       | Vea las notas.      | El rectángulo exterior que contiene el control completo.                                                                                                                                             |
 | [**UIA \_ ClickablePointPropertyId**](uiauto-automation-element-propids.md)             | Vea las notas.      | Se admite si hay un rectángulo delimitador. Si no se puede hacer clic en todos los puntos del rectángulo delimitador y el elemento realiza pruebas de acceso especializadas, invalide y proporcione un punto en el que se puede hacer clic. |
 | [**ControlTypePropertyId de UIA \_**](uiauto-automation-element-propids.md)                   | **SplitButton** | Este valor es el mismo para todos los marcos de trabajo de la interfaz de usuario.                                                                                                                                                        |
 | [**UIA \_ HelpTextPropertyId**](uiauto-automation-element-propids.md)                         | Vea las notas.      | El texto de ayuda puede indicar el resultado de la activación del botón de división, que normalmente es el mismo tipo de información que se presenta mediante un elemento de información sobre herramientas.                                                   |
-| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE            | El control de botón de división contiene información para el usuario final.                                                                                                                                      |
-| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | TRUE            | El control de botón de división es visible para el usuario final.                                                                                                                                                 |
+| [**IsContentElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true            | El control de botón de división contiene información para el usuario final.                                                                                                                                      |
+| [**IsControlElementPropertyId de UIA \_**](uiauto-automation-element-propids.md)         | true            | El control de botón de división es visible para el usuario final.                                                                                                                                                 |
 | [**\_IsKeyboardFocusablePropertyId de UIA**](uiauto-automation-element-propids.md)   | Vea las notas.      | Si el control puede recibir el foco del teclado, debe admitir esta propiedad.                                                                                                                            |
 | [**UIA \_ LabeledByPropertyId**](uiauto-automation-element-propids.md)                       | NULL            | Los controles de botón de expansión no tienen una etiqueta de texto estático.                                                                                                                                               |
 | [**UIA \_ LocalizedControlTypePropertyId**](uiauto-automation-element-propids.md) | Vea las notas.      | Cadena localizada correspondiente al tipo de control **SplitButton.** El valor predeterminado es "botón de división" para en-US o inglés (Estados Unidos).                                                        |
-| [**Nombre de \_ UIAPropertyId**](uiauto-automation-element-propids.md)                                 | Vea las notas.      | Texto que se usa para etiquetar el botón de división. Cada vez que se usa una imagen para etiquetar un botón de división, se debe proporcionar texto alternativo para la propiedad Nombre del botón de división.                              |
+| [**Nombre de \_ UIAPropertyId**](uiauto-automation-element-propids.md)                                 | Vea las notas.      | Texto que se usa para etiquetar el botón de división. Siempre que se usa una imagen para etiquetar un botón de división, se debe proporcionar texto alternativo para la propiedad Nombre del botón de división.                              |
 
 
 
@@ -93,8 +93,8 @@ En la tabla siguiente se enumeran los Automatización de la interfaz de usuario 
 
 | Patrón de control                                                   | Soporte técnico  | Notas                                                                                                                                                                                                                          |
 |-------------------------------------------------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IExpandCollapseProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iexpandcollapseprovider) | Requerido | Dado que los botones de división siempre tienen la capacidad de expandir una lista de opciones, deben admitir el patrón de control [ExpandCollapse.](uiauto-implementingexpandcollapse.md)                                                      |
-| [**IInvokeProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iinvokeprovider)                 | Requerido | Dado que los botones de división siempre tienen una acción predeterminada asociada al método [**IInvokeProvider::Invoke,**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iinvokeprovider-invoke) deben admitir el patrón de control [Invoke.](uiauto-implementinginvoke.md) |
+| [**IExpandCollapseProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iexpandcollapseprovider) | Obligatorio | Dado que los botones de división siempre tienen la capacidad de expandir una lista de opciones, deben admitir el patrón de control [ExpandCollapse.](uiauto-implementingexpandcollapse.md)                                                      |
+| [**IInvokeProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iinvokeprovider)                 | Obligatorio | Dado que los botones de división siempre tienen una acción predeterminada asociada al método [**IInvokeProvider::Invoke,**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iinvokeprovider-invoke) deben admitir el patrón de control [Invoke.](uiauto-implementinginvoke.md) |
 
 
 

@@ -7,21 +7,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 55103431
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: c1d7a67deea257b073c6bd5135f2bb9da99f5ecc93497338557dccf485ccec6a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ecb132cd3fa3a313889c0a9a92fe6761da3b1cf0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118767888"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473166"
 ---
 # <a name="jet_conditionalcolumn-members"></a>JET_CONDITIONALCOLUMN miembros
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-Define cómo se realiza la indexación condicional para un índice determinado. Un índice condicional contiene una entrada de índice solo para las filas que coinciden con la condición especificada. Sin embargo, la columna condicional no forma parte de la clave del índice, solo controla la presencia de la entrada de índice.
+Define cómo se realiza la indexación condicional para un índice determinado. Un índice condicional contiene una entrada de índice solo para las filas que coinciden con la condición especificada. Sin embargo, la columna condicional no forma parte de la clave del índice, solo controla la presencia de la entrada del índice.
 
-El [JET_CONDITIONALCOLUMN](./jet-conditionalcolumn-class.md) expone los miembros siguientes.
+El [JET_CONDITIONALCOLUMN](./jet-conditionalcolumn-class.md) muestra los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -129,7 +129,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

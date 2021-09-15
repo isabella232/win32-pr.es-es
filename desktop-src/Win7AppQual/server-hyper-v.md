@@ -4,12 +4,12 @@ ms.assetid: 6a31cca3-f47c-4663-b2e8-aad6b4a6f28f
 title: Hyper-V de servidor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f2cab162355e298cbc21c1c43d8b1a0d16b8c23f958e06c7fb28a8ecb6e3309
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8b3149f1c5faa98c9c61be884a193b0e3a1ecceb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118328715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569748"
 ---
 # <a name="server-hyper-v"></a>Hyper-V de servidor
 
@@ -41,7 +41,7 @@ La virtualización de servidores permite que varios sistemas operativos se ejecu
 
 -   **Migración en vivo:** Es posible que tenga que cambiar la forma en que ha diseñado los sistemas de almacenamiento para aprovechar completamente esta tecnología. Aunque es posible que estos cambios no sean necesarios, puede optar por implementarlos para aprovechar al máximo las ventajas. Es posible que necesite una aplicación de administración para organizar Migración en vivo.
 -   **Compatibilidad con procesadores lógicos:** Esta característica no afectará a los clientes ni a los ISV al migrar de Windows Server 2008 a Windows Server 2008 R2.
--   **Storage agregar en caliente:** Esta característica no afectará a los clientes ni a los ISV al migrar de Windows Server 2008 a Windows Server 2008 R2. Las aplicaciones de administración que configuran los valores de una máquina virtual pueden requerir actualización para administrar esta nueva característica.
+-   **Storage agregar en caliente:** Esta característica no afectará a los clientes ni a los ISV al migrar de Windows Server 2008 a Windows Server 2008 R2. Las aplicaciones de administración que configuran las opciones de una máquina virtual pueden requerir actualización para administrar esta nueva característica.
 -   **Nueva compatibilidad con hardware:** Estas características solo se aplican al nuevo hardware que se introduce en el mercado. Dado que no tendrá compatibilidad de compilación para estas características, es probable que un servidor físico que se migra de Windows Server 2008 a Windows Server 2008 R2 se verá afectado. Si estas características están disponibles en el servidor que se está migrando, no se prevé ningún cambio directo.
 -   **Virtualización de Terminal Services:** Esta característica no afectará a los clientes ni a los ISV al migrar de Windows Server 2008 a Windows Server 2008 R2. Las aplicaciones que aprovechan Terminal Services (TS) pueden verse afectadas. Esta característica se integra directamente con TS y, por tanto, las aplicaciones que configuran TS pueden requerir actualización para administrar esta nueva característica.
 
@@ -56,7 +56,7 @@ La virtualización de servidores permite que varios sistemas operativos se ejecu
 
 ## <a name="links-to-other-resources"></a>Vínculos a otros recursos
 
-[Interfaces de administración wmi para Hyper-V v1](/previous-versions/windows/desktop/virtual/windows-virtualization-portal). Aunque la mayor parte de este contenido se aplicará a la versión v2 de Hyper-V, una versión actualizada con información específica de v2 debe estar disponible más cerca del lanzamiento de Windows 7.
+[Interfaces de administración wmi para Hyper-V v1](/previous-versions/windows/desktop/virtual/windows-virtualization-portal). Aunque la mayor parte de este contenido se aplicará a la versión v2 de Hyper-V, una versión actualizada con información específica de v2 debe estar disponible más cerca del inicio Windows 7.
 
  
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f78bce1253d809dfa9b19a900e44173eb1cedd475f5b77b1d3881ff8b7b36afe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 83eeb04973dcbd4ec19d16ba317a4f49493a6fc8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118070573"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569244"
 ---
 # <a name="uint64columnvalue-constructor"></a>Constructor UInt64ColumnValue
 
@@ -50,7 +50,7 @@ Dim instance As New UInt64ColumnValue()
 public UInt64ColumnValue()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

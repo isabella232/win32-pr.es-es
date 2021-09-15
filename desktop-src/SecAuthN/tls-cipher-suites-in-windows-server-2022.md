@@ -3,12 +3,12 @@ description: Obtenga información sobre los conjuntos de cifrado TLS Windows Ser
 title: Conjuntos de cifrado TLS Windows Server 2022.
 ms.topic: article
 ms.date: 02/16/2021
-ms.openlocfilehash: 10f49c18838b8e727f590505dd7af86203f882106ce351c559b6d687f8dd824a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d69cf4d97b356bf772b3a6d59a8bc4146f596ce8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117785975"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568549"
 ---
 # <a name="tls-cipher-suites-in-windows-server-2022"></a>Conjuntos de cifrado TLS en Windows Server 2022
 
@@ -17,7 +17,7 @@ Los conjuntos de cifrado solo se pueden negociar para las versiones TLS que los 
 La disponibilidad de los conjuntos de cifrado debe controlarse de una de estas dos maneras:
 
 -   El orden de prioridad predeterminado se invalida cuando se configura una lista de prioridad. No se usarán los conjuntos de cifrado que no están en la lista de prioridades.
--   Permitido cuando la aplicación pasa SCH USE STRONG CRYPTO: el proveedor de Microsoft Schannel filtrará los conjuntos de cifrado débiles conocidos cuando la aplicación use la marca \_ \_ SCH USE STRONG \_ \_ \_ \_ CRYPTO. Los conjuntos de cifrado RC4, DES, export y NULL se filtran.
+-   Permitido cuando la aplicación pasa SCH USE STRONG CRYPTO: el proveedor de Microsoft Schannel filtrará los conjuntos de cifrado débiles conocidos cuando la aplicación use la marca \_ \_ SCH USE STRONG \_ \_ \_ \_ CRYPTO. Rc4, DES, exportar y conjuntos de cifrado null se filtran.
 
 > [!IMPORTANT]
 > Se producirá un error en los servicios web HTTP/2 con conjuntos de cifrado no compatibles con HTTP/2. Para asegurarse de que los servicios web funcionan con clientes y exploradores HTTP/2, consulte Implementación de la ordenación de conjuntos de [cifrado personalizados.](https://support.microsoft.com/help/4032720/how-to-deploy-custom-cipher-suite-ordering-in-windows-server-2016)
@@ -40,7 +40,7 @@ Para Windows Server 2022, los siguientes conjuntos de cifrado están habilitados
 | TLS \_ ECDHE \_ RSA CON \_ \_ AES \_ 128 \_ GCM \_ SHA256<br/>                                             | Sí<br/>                      | TLS 1.2<br/>                            |
 | TLS \_ DHE \_ RSA CON \_ \_ AES \_ 256 \_ GCM \_ SHA384<br/>                                               | No<br/>                       | TLS 1.2<br/>                            |
 | TLS \_ DHE \_ RSA CON \_ \_ AES \_ 128 \_ GCM \_ SHA256<br/>                                               | Sí<br/>                      | TLS 1.2<br/>                            |
-| TLS \_ ECDHE \_ ECDSA \_ WITH \_ AES \_ 256 \_ CBC \_ SHA384<br/>                                           | Sí<br/>                      | TLS 1.2<br/>                            |
+| TLS \_ ECDHE \_ ECDSA \_ CON \_ AES \_ 256 \_ CBC \_ SHA384<br/>                                           | Sí<br/>                      | TLS 1.2<br/>                            |
 | TLS \_ ECDHE \_ ECDSA \_ CON \_ AES \_ 128 \_ CBC \_ SHA256<br/>                                           | Sí<br/>                      | TLS 1.2<br/>                            |
 | TLS \_ ECDHE \_ RSA CON \_ \_ AES \_ 256 \_ CBC \_ SHA384<br/>                                             | Sí<br/>                      | TLS 1.2<br/>                            |
 | TLS \_ ECDHE \_ RSA CON \_ \_ AES \_ 128 \_ CBC \_ SHA256<br/>                                             | Sí<br/>                      | TLS 1.2<br/>                            |
@@ -114,7 +114,7 @@ Los siguientes conjuntos de cifrado PSK están habilitados y en este orden de pr
 
 Para agregar conjuntos de cifrado, implemente una directiva de grupo o use los cmdlets TLS:
 
--   Para usar la directiva de grupo, configure el orden del conjunto de cifrado SSL en Configuración del equipo > Plantillas administrativas > Red > Configuración de SSL Configuración con la lista de prioridad de todos los conjuntos de cifrado que quiera habilitar.
+-   Para usar la directiva de grupo, configure el orden del conjunto de cifrado SSL en Configuración del equipo > Plantillas administrativas > > configuración de SSL Configuración con la lista de prioridad de todos los conjuntos de cifrado que quiera habilitar.
 -   Para usar PowerShell, consulte [Cmdlets tls.](/powershell/module/tls/?view=win10-ps)
 
 > [!Note]  

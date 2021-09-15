@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 419af1c613c979d30f479fc0739cd82f01b538f9ff4d3caa63839af8a40b0caf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6f4c3ef8ed75c5bd29250cd2f9ce4d666b6d961d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119036063"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569084"
 ---
 # <a name="wm_ncpointerdown-message"></a>WM_NCPOINTERDOWN mensaje
 
@@ -50,7 +50,7 @@ Contiene el identificador de puntero y la información adicional. Use las macros
 
 [**GET_POINTERID_WPARAM**](/previous-versions/windows/desktop/api)(wParam): identificador de puntero.
 
-[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))(wParam): valor de prueba de impacto devuelto al procesar [**el WM_NCHITTEST**](../inputdev/wm-nchittest.md) mensaje.
+[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))(wParam): valor de la prueba de éxito devuelto al procesar [**el WM_NCHITTEST**](../inputdev/wm-nchittest.md) mensaje.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Contiene la ubicación de punto del puntero.
 
 Use las macros siguientes para recuperar las coordenadas de pantalla física del punto.
 
--   [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam)(lParam): coordenada x (punto horizontal).
+-   [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam)(lParam): la coordenada x (punto horizontal).
 -   [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam)(lParam): la coordenada y (punto vertical).
 
 </dd> </dl>
@@ -77,7 +77,7 @@ Si una aplicación procesa este mensaje, debe devolver cero.
 
 Si la aplicación no procesa este mensaje, debe llamar a [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si la aplicación no procesa este mensaje, [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca) puede realizar una o varias acciones del sistema en función del resultado de la prueba de acceso incluida en el mensaje. Normalmente, las aplicaciones no deben tener que controlar este mensaje.
 
@@ -89,7 +89,7 @@ Si la aplicación no procesa este mensaje, [**DefWindowProc**](/windows/win32/ap
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                               |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

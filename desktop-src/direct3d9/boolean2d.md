@@ -4,12 +4,12 @@ ms.assetid: 6d932e41-a98a-4b44-9ef2-ce981d5ccfd2
 title: Boolean2d
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44e6c36ab74d0f8d62241f8db6d5e3511a27fcc5cfc1aa69440b5cbe51458abe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3139febbe52e1bcf6121fbffe4469a8e7114f595
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118989425"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569952"
 ---
 # <a name="boolean2d"></a>Boolean2d
 

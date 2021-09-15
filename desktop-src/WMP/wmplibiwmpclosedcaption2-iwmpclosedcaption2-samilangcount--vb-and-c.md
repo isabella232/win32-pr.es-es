@@ -1,10 +1,10 @@
 ---
-title: Propiedad SAMILangCount de IWMPClosedCaption2
+title: IWMPClosedCaption2 SAMILangCount, propiedad
 description: La propiedad SAMILangCount obtiene el número de idiomas admitidos por el archivo SAMI actual.
 ms.assetid: e3c7203d-66cb-49e2-9204-795c0f27248f
 keywords:
-- Propiedad SAMILangCount Reproductor de Windows Media
-- Propiedad SAMILangCount Reproductor de Windows Media , interfaz IWMPClosedCaption2
+- SAMILangCount, propiedad Reproductor de Windows Media
+- Propiedad SAMILangCount Reproductor de Windows Media interfaz , IWMPClosedCaption2
 - Interfaz IWMPClosedCaption2 Reproductor de Windows Media , propiedad SAMILangCount
 topic_type:
 - apiref
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 23b85ce04bd672f0219b8dd96f91172241689a80042a37a7680e2f8e26b65c85
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ea01357de508dea319389cd14ab85ebafe0329e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119900005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473313"
 ---
 # <a name="iwmpclosedcaption2samilangcount-property"></a>IWMPClosedCaption2::SAMILangCount, propiedad
 
 La **propiedad SAMILangCount** obtiene el número de idiomas admitidos por el archivo SAMI actual.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,7 +48,7 @@ Public ReadOnly Property SAMILangCount As System.Int32
 
 **System.Int32 que** es el número de idiomas admitidos.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad devuelve 0 a menos que un archivo multimedia digital esté abierto (AxWindowsMediaPlayer.openState es igual a 13).
 
@@ -56,7 +56,7 @@ Esta propiedad devuelve 0 a menos que un archivo multimedia digital esté abiert
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

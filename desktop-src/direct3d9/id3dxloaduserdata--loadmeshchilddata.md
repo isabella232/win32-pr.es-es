@@ -1,5 +1,5 @@
 ---
-description: Carga de datos secundarios de malla desde un archivo .x.
+description: Cargar datos secundarios de malla desde un archivo .x.
 ms.assetid: 5ed338f9-48a6-44e6-95da-1bed9ecd6ebf
 title: Método ID3DXLoadUserData::LoadMeshChildData (D3dx9anim.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: cd4aaa857ac89594b1114612c59f959f0d91b050f6f9c0f0c9290798acf829f8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9960f47ac21dad2521f6272c9176e3d895bbd109
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119120829"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568952"
 ---
 # <a name="id3dxloaduserdataloadmeshchilddata-method"></a>Método ID3DXLoadUserData::LoadMeshChildData
 
-Carga de datos secundarios de malla desde un archivo .x.
+Cargar datos secundarios de malla desde un archivo .x.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,7 +63,7 @@ Puntero a una estructura de datos de archivo .x. Esto se define en Dxfile.h.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Los valores devueltos de este método los implementa un programador de aplicaciones. En general, si no se produce ningún error, programe el método para devolver D3D \_ OK. De lo contrario, programe el método para devolver un mensaje de error adecuado de D3DERR o D3DXERR, ya que esto hará que [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) también presente un error y devuelva el error.
+Los valores devueltos de este método los implementa un programador de aplicaciones. En general, si no se produce ningún error, programe el método para devolver D3D \_ OK. De lo contrario, programe el método para devolver un mensaje de error adecuado de D3DERR o D3DXERR, ya que esto hará que [**D3DXLoadMeshHierarchyFromX**](d3dxloadmeshhierarchyfromx.md) también devuelva el error.
 
 ## <a name="requirements"></a>Requisitos
 

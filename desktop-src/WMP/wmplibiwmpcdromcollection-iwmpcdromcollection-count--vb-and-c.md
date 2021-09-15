@@ -1,11 +1,11 @@
 ---
-title: IWMPCdromCollection count, propiedad
+title: Propiedad count de IWMPCdromCollection
 description: La propiedad count obtiene el número de unidades de CD y DVD disponibles en el sistema.
 ms.assetid: 1359ab7e-fbe3-461c-801b-7c986f6e5687
 keywords:
-- recuento de propiedades Reproductor de Windows Media
+- count property Reproductor de Windows Media
 - count property Reproductor de Windows Media , IWMPCdromCollection (interfaz)
-- Interfaz IWMPCdromCollection Reproductor de Windows Media propiedad , count
+- Interfaz IWMPCdromCollection Reproductor de Windows Media , propiedad count
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8e042e2a1d84d9e654cd4b50c5e5d726cc0306d64261e3e7d750bb6db73c77a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a2da4d4d443c730d19c791a486fed4be0241b8c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117930635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569001"
 ---
-# <a name="iwmpcdromcollectioncount-property"></a>IWMPCdromCollection::count, propiedad
+# <a name="iwmpcdromcollectioncount-property"></a>Propiedad IWMPCdromCollection::count
 
 La **propiedad count** obtiene el número de unidades de CD y DVD disponibles en el sistema.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,9 +48,9 @@ Public ReadOnly Property count As System.Int32
 
 **System.Int32 que** es el recuento de unidades disponibles.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
+Para recuperar el valor de esta propiedad, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 Las unidades de DVD se cuentan exactamente igual que las unidades de CD. Sin embargo, el control Reproductor de Windows Media ActiveX solo admite la funcionalidad de DVD Windows XP o posterior. Normalmente, las unidades de DVD pueden reproducir medios de CD, pero las unidades de CD no pueden reproducir medios de DVD.
 
@@ -85,7 +85,7 @@ System.Windows.Forms.MessageBox.Show(&quot;Number of available CD and DVD drives
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

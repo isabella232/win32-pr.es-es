@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 40c1decbf3c209a381356c58c901c4cab992fadd28eb9566e55e46b1cf87e3d7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 215874f4dc1b3438ae3d69b22758ced09a050f0f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119829515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569481"
 ---
 # <a name="wm_pointerupdate-message"></a>WM_POINTERUPDATE mensaje
 
@@ -84,7 +84,7 @@ Contiene la ubicación de punto del puntero.
 Use las macros siguientes para recuperar las coordenadas de pantalla física del punto.
 
 -   [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam)(lParam): la coordenada x (punto horizontal).
--   [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam)(lParam): coordenada y (punto vertical).
+-   [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam)(lParam): la coordenada y (punto vertical).
 
 </dd> </dl>
 
@@ -94,15 +94,15 @@ Si una aplicación procesa este mensaje, debe devolver cero.
 
 Si la aplicación no procesa este mensaje, debe llamar a [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cada puntero tiene un identificador de puntero único durante su vigencia. La duración de un puntero comienza cuando se detecta por primera vez.
 
-Se [**WM_POINTERENTER**](wm-pointerenter.md) mensaje de confirmación si se detecta un puntero que mantiene el puntero. Si [**se detecta un puntero**](wm-pointerdown.md) que no mantiene el **puntero, se WM_POINTERDOWN** un mensaje de WM_POINTERENTER seguido de un mensaje de confirmación.
+Se [**WM_POINTERENTER**](wm-pointerenter.md) mensaje de confirmación si se detecta un puntero que mantiene el puntero. Si [**se detecta un**](wm-pointerdown.md) puntero que no mantiene el puntero, **WM_POINTERDOWN** un mensaje de WM_POINTERENTER seguido de un mensaje de confirmación.
 
 Durante su vigencia, un puntero puede generar una serie de mensajes **WM_POINTERUPDATE** mientras mantiene el puntero o está en contacto.
 
-La duración de un puntero finaliza cuando ya no se detecta. Esto genera un [**mensaje WM_POINTERLEAVE**](wm-pointerleave.md) mensaje.
+La duración de un puntero finaliza cuando ya no se detecta. Esto genera un [**mensaje WM_POINTERLEAVE**](wm-pointerleave.md) error.
 
 Cuando se anula un puntero, [**POINTER_FLAG_CANCELED**](pointer-flags-contants.md) se establece.
 
@@ -120,7 +120,7 @@ yPos = GET_Y_LPARAM(lParam);
 
 La [**macro MAKEPOINTS**](/windows/win32/api/wingdi/nf-wingdi-makepoints) también se puede usar para convertir el parámetro lParam en una [**estructura POINTS.**](/previous-versions//dd162808(v=vs.85))
 
-La [**función GetKeyState**](/windows/win32/api/winuser/nf-winuser-getkeystate) se puede usar para determinar los estados de tecla modificadora de teclado asociados a este mensaje. Por ejemplo, para detectar que se ha presionado la tecla ALT, compruebe si **GetKeyState** (VK_MENU) &lt; 0.
+La [**función GetKeyState**](/windows/win32/api/winuser/nf-winuser-getkeystate) se puede usar para determinar los estados de tecla modificadora de teclado asociados a este mensaje. Por ejemplo, para detectar que se presionó la tecla ALT, compruebe si **GetKeyState** (VK_MENU) &lt; 0.
 
 Si la aplicación no procesa este mensaje, [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca) puede generar uno o varios mensajes [**WM_GESTURE**](../wintouch/wm-gesture.md) si la secuencia de entrada de este y, posiblemente, otros punteros se reconocen como un gesto. Si no se reconoce un gesto, **DefWindowProc** puede generar la entrada del mouse.
 
@@ -128,11 +128,11 @@ Si una aplicación consume selectivamente alguna entrada de puntero y pasa el re
 
 Use la [**función GetPointerInfo**](/previous-versions/windows/desktop/api) para recuperar más información relacionada con este mensaje.
 
-Si la aplicación no procesa estos mensajes tan rápido como se generan, es posible que algunos movimientos se acomenten. El historial de entradas que se han convertido en este mensaje se puede recuperar mediante la función [**GetPointerInfoHistory.**](/previous-versions/windows/desktop/api)
+Si la aplicación no procesa estos mensajes tan rápido como se generan, es posible que algunos movimientos se conjunten. El historial de entradas que se han convertido en este mensaje se puede recuperar mediante la función [**GetPointerInfoHistory.**](/previous-versions/windows/desktop/api)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se muestra cómo usar [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam), [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam), [**IS_POINTER_FIRSTBUTTON_WPARAM**](/previous-versions/windows/desktop/api)y [**IS_POINTER_SECONDBUTTON_WPARAM**](/previous-versions/windows/desktop/api) para recuperar información pertinente de los parámetros wParam y lParam **del WM_POINTERUPDATE** mensaje.
+En el ejemplo de código siguiente se muestra cómo usar [**GET_X_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_x_lparam), [**GET_Y_LPARAM**](/windows/win32/api/windowsx/nf-windowsx-get_y_lparam), [**IS_POINTER_FIRSTBUTTON_WPARAM**](/previous-versions/windows/desktop/api)y [**IS_POINTER_SECONDBUTTON_WPARAM**](/previous-versions/windows/desktop/api) para recuperar información pertinente de los parámetros wParam y lParam del **mensaje WM_POINTERUPDATE.**
 
 
 ```
@@ -151,7 +151,7 @@ else if (IS_POINTER_SECONDARYBUTTON_WPARAM(wParam))
 
 
 
-En el ejemplo de código siguiente se muestra [**cómo GET_POINTERID_WPARAM**](/previous-versions/windows/desktop/api) para recuperar el identificador de puntero del parámetro wParam **del WM_POINTERUPDATE** mensaje.
+En el ejemplo de [](/previous-versions/windows/desktop/api) código siguiente se muestra cómo GET_POINTERID_WPARAM para recuperar el identificador de puntero del parámetro wParam **del WM_POINTERUPDATE** mensaje.
 
 
 ```
@@ -243,11 +243,11 @@ default:
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                               |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

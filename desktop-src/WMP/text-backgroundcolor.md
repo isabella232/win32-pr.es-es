@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 65361f581a265b2fa65c8f64e3a05f165691d2c03276bd3412ecd86588f8ff73
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bff833fad0b5ad60b49479c57dc51cbe82f48dbd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119901055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569773"
 ---
 # <a name="textbackgroundcolor"></a>TEXT.backgroundColor
 
@@ -31,7 +31,7 @@ El **atributo backgroundColor** especifica o recupera el color de fondo para el 
 
 Este atributo es una cadena de lectura y **escritura** que contiene cualquier valor de color Internet Explorer microsoft o el valor "none". Tiene un valor predeterminado de "none", lo que significa que el fondo es transparente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El color de fondo se establece para el alto y el ancho del control. Si no se establecen el alto y el ancho, el color de fondo se establece en el alto y ancho del texto.
 

@@ -5,7 +5,7 @@ ms.assetid: 4a550eb1-a37e-43fd-9e08-801c4fd64e68
 keywords:
 - Método getByDriveSpecifier Reproductor de Windows Media
 - Método getByDriveSpecifier Reproductor de Windows Media , interfaz IWMPCdromCollection
-- Interfaz IWMPCdromCollection Reproductor de Windows Media método , getByDriveSpecifier
+- Interfaz IWMPCdromCollection Reproductor de Windows Media , método getByDriveSpecifier
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9937694234fe7e46fe9b98d83357da19abf18f8d14e83794587f6f2050b0019b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fe771fc893d4bf43b82dc825a2d33724926e8151
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118116223"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568997"
 ---
 # <a name="iwmpcdromcollectiongetbydrivespecifier-method"></a>IWMPCdromCollection::getByDriveSpecifier (método)
 
@@ -64,15 +64,15 @@ Implements IWMPCdromCollection.getByDriveSpecifier
 
 Interfaz **WMPLib.IWMPCdrom.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las letras de unidad deben proporcionarse con el *formato X*:, donde *X* representa la letra de unidad.
 
-Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
+Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa getByDriveSpecifier** para obtener la interfaz **IWMPCdrom** que corresponde a una letra de unidad proporcionada por el usuario en un cuadro de texto. A **continuación, se llama al método IWMPCdrom.dispose** para expulsar la unidad especificada. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
+En el ejemplo siguiente se **usa getByDriveSpecifier** para obtener la interfaz **IWMPCdrom** que corresponde a una letra de unidad proporcionada por el usuario en un cuadro de texto. A **continuación, se llama al método IWMPCdrom.eject** para expulsar la unidad especificada. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -113,7 +113,7 @@ drive.eject()
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

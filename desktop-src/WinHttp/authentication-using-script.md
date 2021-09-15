@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 81e2dec50ccf765239bbbd1d6a71c8f8fb2be0e4f70f2db5717b0072f0b62d6e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d33b8042cd1fd15d46e15dfb3624e0d3b4a885b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119052103"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568525"
 ---
 # <a name="authentication-using-script"></a>Autenticación mediante script
 
@@ -134,7 +134,7 @@ Cuando se proporcionan credenciales, el servidor devuelve un código de estado 2
 
 ## <a name="checking-the-status-codes"></a>Comprobación de los códigos de estado
 
-El ejemplo anterior es informativo, pero requiere que el usuario proporcione explícitamente las credenciales. Una aplicación que proporciona credenciales cuando es necesario y no proporciona credenciales cuando no es necesario es más útil. Para implementar una característica que lo haga, debe modificar el ejemplo para examinar el código de estado devuelto con la respuesta.
+El ejemplo anterior es informativo, pero requiere que el usuario proporcione explícitamente las credenciales. Una aplicación que proporciona credenciales cuando es necesario y no proporciona credenciales cuando no es necesaria es más útil. Para implementar una característica que lo haga, debe modificar el ejemplo para examinar el código de estado devuelto con la respuesta.
 
 Para obtener una lista completa de los posibles códigos de estado, junto con las descripciones, vea [**Códigos de estado HTTP**](http-status-codes.md). En este ejemplo, sin embargo, solo debe encontrar uno de los tres códigos. Un código de estado 200 indica que un recurso está disponible y se envía con la respuesta. Un código de estado 401 indica que el servidor requiere autenticación. Un código de estado 407 indica que el proxy requiere autenticación.
 
@@ -212,7 +212,7 @@ function getText2() {
 
 
 
-De nuevo, guarde y ejecute el archivo. El segundo método sigue recuperando el documento, pero solo proporciona las credenciales cuando sea necesario. La función "getText2" ejecuta los métodos [**Open**](iwinhttprequest-open.md) y [**Send**](iwinhttprequest-send.md) como si no fuera necesaria la autenticación. El estado se recupera con la [**propiedad Status**](iwinhttprequest-status.md) y una instrucción switch responde al código de estado resultante. Si el estado es 401 (el servidor requiere autenticación) o 407 (el proxy requiere autenticación), el [**método Open**](iwinhttprequest-open.md) se ejecuta de nuevo. Esto va seguido del [**método SetCredentials,**](iwinhttprequest-setcredentials.md) que establece el nombre de usuario y la contraseña. A continuación, el código vuelve al [**método Send.**](iwinhttprequest-send.md) Si, después de tres intentos, el recurso no se puede recuperar correctamente, la función detiene la ejecución.
+De nuevo, guarde y ejecute el archivo. El segundo método sigue recuperando el documento, pero solo proporciona credenciales cuando sea necesario. La función "getText2" ejecuta los métodos [**Open**](iwinhttprequest-open.md) y [**Send**](iwinhttprequest-send.md) como si no fuera necesaria la autenticación. El estado se recupera con la [**propiedad Status**](iwinhttprequest-status.md) y una instrucción switch responde al código de estado resultante. Si el estado es 401 (el servidor requiere autenticación) o 407 (el proxy requiere autenticación), el [**método Open**](iwinhttprequest-open.md) se ejecuta de nuevo. Esto va seguido del [**método SetCredentials,**](iwinhttprequest-setcredentials.md) que establece el nombre de usuario y la contraseña. A continuación, el código vuelve al [**método Send.**](iwinhttprequest-send.md) Si, después de tres intentos, el recurso no se puede recuperar correctamente, la función detiene la ejecución.
 
 ## <a name="related-topics"></a>Temas relacionados
 

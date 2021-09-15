@@ -4,8 +4,8 @@ description: La propiedad durationString obtiene una cadena que indica la duraci
 ms.assetid: de33c737-d73e-41f0-9c1b-944279194738
 keywords:
 - propiedad durationString Reproductor de Windows Media
-- Propiedad durationString Reproductor de Windows Media , interfaz IWMPMedia
-- Interfaz IWMPMedia Reproductor de Windows Media , propiedad durationString
+- propiedad durationString Reproductor de Windows Media , interfaz IWMPMedia
+- Interfaz IWMPMedia Reproductor de Windows Media propiedad , durationString
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2aa0ec19ff6cfa48056f399108cc0d943073cac67af80474c4e7640d39887b8a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c9e6bc732388036aa9e79aeedd988de94fa263bf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120031185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473302"
 ---
 # <a name="iwmpmediadurationstring-property"></a>Propiedad IWMPMedia::d urationString
 
@@ -51,11 +51,11 @@ Public ReadOnly Property durationString As System.String
 
 **System.String que** es la duración.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si esta propiedad se usa con un elemento multimedia distinto del especificado en AxWindowsMediaPlayer.currentMedia, es posible que no contenga un valor válido. Si el elemento multimedia tiene menos de una hora de duración, se omite la parte de horas del valor devuelto.
 
-Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
+Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
 
 ## <a name="examples"></a>Ejemplos
 

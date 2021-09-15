@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: Constructor EsentColumnLongException'
-title: Constructor esentColumnLongException
+title: Constructor EsentColumnLongException
 TOCTitle: 'EsentColumnLongException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentColumnLongException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentcolumnlongexception.esentcolumnlongexception(v=EXCHG.10)
@@ -24,14 +24,14 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ece3a4231fa9d5d1e0834e74e8e6d34da20656997551a6a848ae93d19b0aa16a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: be5d05b3fe4b6b025bc2a995745b3c2f1b07c2e3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118782390"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569852"
 ---
-# <a name="esentcolumnlongexception-constructor"></a>Constructor esentColumnLongException
+# <a name="esentcolumnlongexception-constructor"></a>Constructor EsentColumnLongException
 
 Inicializa una nueva instancia de la clase EsentColumnLongException.
 
@@ -52,7 +52,7 @@ Dim instance As New EsentColumnLongException()
 public EsentColumnLongException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

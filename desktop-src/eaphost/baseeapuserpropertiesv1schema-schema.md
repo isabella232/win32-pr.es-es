@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 04e0d1abe2a634c582771d04506b24d52e11d237a86ad3b65d8d6eddaba4950c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a8261109117735e00711766c4f187c2dd9256c7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120067345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568821"
 ---
 # <a name="baseeapuserpropertiesv1-schema"></a>esquema baseeapuserpropertiesv1
 

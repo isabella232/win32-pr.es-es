@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1d799cd008fa63aae3ba262a9c89c031e9fce9a2591e8636e120b36ab2b37e5c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: db9755c952e346f5c08c0bd74caa9bf8b90fe252
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117701771"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473148"
 ---
 # <a name="transactionisintransaction-property"></a>Transaction.IsInTransaction, propiedad
 
@@ -39,7 +39,7 @@ Obtiene un valor que indica si este objeto está actualmente en una transacción
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

@@ -1,15 +1,15 @@
 ---
 title: Atributos de EAP
-description: Es una estructura EAP ATTRIBUTE que contiene un tipo predeterminado de \_ datos relacionados con una sesión de autenticación.
+description: Es una estructura \_ EAP ATTRIBUTE que contiene un tipo predeterminado de datos relacionados con una sesión de autenticación.
 ms.assetid: 3c54cca2-cd3b-4149-bb0e-036d490cdd3b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77898ccde0bbaf9660a7e4c3948cce9ec17d9e4f7773b0900333e7152520c013
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5348ee300c0e4d07d6aaf110ba9074b1ac32c02a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119117755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568900"
 ---
 # <a name="eap-attributes"></a>Atributos de EAP
 
@@ -38,11 +38,11 @@ Los siguientes tipos de atributo los consumen los suplicadores de servidor PPP.
 
 ## <a name="attributes-exported-by-methods"></a>Atributos exportados por métodos
 
-Los siguientes tipos de atributo se pueden exportar mediante métodos EAP.
+Los métodos EAP podrían exportar los siguientes tipos de atributo.
 
 -   **eatClearTextPassword**
 -   **eatQuarantineSoH**
--   **idMethodId**
+-   **eatMethodId**
 
 Los métodos de seguridad de nivel de transporte [(TLS) de EAP (EAP-TLS)](/previous-versions/windows/embedded/ms885336(v=msdn.10)) exportan el siguiente tipo de atributo.
 

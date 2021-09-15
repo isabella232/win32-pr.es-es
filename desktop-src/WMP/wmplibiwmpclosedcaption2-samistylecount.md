@@ -1,5 +1,5 @@
 ---
-title: Propiedad SAMIStyleCount de IWMPClosedCaption2
+title: IWMPClosedCaption2, propiedad SAMIStyleCount
 description: La propiedad SAMIStyleCount obtiene el número de estilos admitidos por el archivo SAMI actual.
 ms.assetid: e2a0d194-6fa2-48c9-9fc7-0b60029d2e5d
 keywords:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f73ab4e252386f790f74741053012239d0219b1e296e392146894f906e1556f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ff361b4c6d34f63e86e3d8458bff4d3308cae29f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118115922"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473310"
 ---
 # <a name="iwmpclosedcaption2samistylecount-property"></a>Propiedad IWMPClosedCaption2::SAMIStyleCount
 
 La **propiedad SAMIStyleCount** obtiene el número de estilos admitidos por el archivo SAMI actual.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,7 +48,7 @@ Public ReadOnly Property SAMIStyleCount As System.Int32
 
 **System.Int32** que es el número de estilos.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad devuelve 0 a menos que un archivo multimedia digital esté abierto (AxWindowsMediaPlayer.openState es igual a 13).
 
@@ -56,7 +56,7 @@ Esta propiedad devuelve 0 a menos que un archivo multimedia digital esté abiert
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

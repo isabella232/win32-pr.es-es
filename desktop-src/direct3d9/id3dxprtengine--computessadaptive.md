@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: a602566c4d0e5b3cb5c68b2f983b6c56a9d9f596ee673db97a72e6054837759b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 198a597020a0bfcbc789cc741e42048bd89eb95f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119847385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569904"
 ---
 # <a name="id3dxprtenginecomputessadaptive-method"></a>Método ID3DXPRTEngine::ComputeSSAdaptive
 
@@ -68,7 +68,7 @@ Umbral en el vector PRT que se usará para subdividir las caras y los vértices 
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Longitud mínima del borde facial que se generará en el muestreo adaptable. Si el método determina que el valor es demasiado pequeño, se especifica un valor dependiente del modelo.
+Longitud mínima del borde de la cara que se generará en el muestreo adaptable. Si el método determina que el valor es demasiado pequeño, se especifica un valor dependiente del modelo.
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para modelar la dispersión de subsuperficie, llame a este método para cada rebotón de luz después de llamar a un método [**ID3DXPRTEngine::ComputeDirectLightingSHAdaptive.**](id3dxprtengine--computedirectlightingshadaptive.md)
 

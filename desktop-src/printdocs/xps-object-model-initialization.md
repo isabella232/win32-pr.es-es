@@ -4,12 +4,12 @@ ms.assetid: 920d940f-5ae2-4376-8c7b-0cef04f21df7
 title: Inicialización de una instancia de XPS OM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16edb992efee7c9cba1d5bc454ca5bcb44bd3267a2e91d4ca714120182df0657
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cac44a69d171c1d38633512b0e275dcdeaea8738
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119946997"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568592"
 ---
 # <a name="initialize-an-xps-om"></a>Inicialización de una instancia de XPS OM
 
@@ -83,7 +83,7 @@ Puede hacer que el programa sea más eficaz si obtiene un puntero a una interfaz
 **Para obtener más información**
 </dt> <dt>
 
-[Packaging](/previous-versions/windows/desktop/opc/packaging)
+[Embalaje](/previous-versions/windows/desktop/opc/packaging)
 </dt> <dt>
 
 [Referencia de LA API del documento XPS](xps-programming-reference.md)

@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 93144125c21da2d29a0d71f56d8d865da4a07dda6adff2f25ce3528fca72b475
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad1177b2e92e47ca40c745e6cd5f1ea2cf259215
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118756533"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569480"
 ---
 # <a name="wm_pointerwheel-message"></a>WM_POINTERWHEEL mensaje
 
@@ -77,9 +77,9 @@ Si la aplicación procesa este mensaje, debe devolver cero.
 
 Si la aplicación no procesa este mensaje, debe llamar a [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para recuperar las unidades de desplazamiento de rueda, use **el archivo inputData** de la [**POINTER_INFO**](/previous-versions/windows/desktop/api) estructura devuelta mediante una llamada a la [**función GetPointerInfo.**](/previous-versions/windows/desktop/api) Este campo contiene un valor con firma y se expresa en un múltiplo de **WHEEL_DELTA**. Un valor positivo indica una rotación hacia delante y un valor negativo indica una rotación hacia atrás.
+Para recuperar las unidades de desplazamiento de rueda, use **inputData** filed de la [**POINTER_INFO**](/previous-versions/windows/desktop/api) estructura devuelta mediante una llamada [**a la función GetPointerInfo.**](/previous-versions/windows/desktop/api) Este campo contiene un valor con firma y se expresa en un múltiplo de **WHEEL_DELTA**. Un valor positivo indica una rotación hacia delante y un valor negativo indica una rotación hacia atrás.
 
 Tenga en cuenta que las entradas de rueda se pueden entregar incluso si el cursor del mouse se encuentra fuera de la ventana de la aplicación. Los mensajes de rueda se entregan de forma muy similar a las entradas del teclado. La ventana de foco de la cola de mensajes de advertencia recibe los mensajes de rueda.
 
@@ -87,11 +87,11 @@ Tenga en cuenta que las entradas de rueda se pueden entregar incluso si el curso
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                               |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

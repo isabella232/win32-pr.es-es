@@ -6,11 +6,11 @@ title: Escribir un proveedor de asociación para interoperabilidad
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 57ef4e73c35c942e56b2636b7fced4c7e468e120
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122887434"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569676"
 ---
 # <a name="writing-an-association-provider-for-interop"></a>Escribir un proveedor de asociación para interoperabilidad
 
@@ -49,7 +49,7 @@ Windows Instrumental de administración (WMI) carga el proveedor de asociación 
     ```
 
     > [!Note]  
-    > Para Windows clientes, la **propiedad RegisteredOrganization** debe establecerse en 1 y la **propiedad OtherRegisteredOrganization** establecida en "Microsoft".
+    > Para Windows, la **propiedad RegisteredOrganization** debe establecerse en 1 y la **propiedad OtherRegisteredOrganization** establecida en "Microsoft".
 
      
 
@@ -87,7 +87,7 @@ Windows Instrumental de administración (WMI) carga el proveedor de asociación 
 
     2.  Escriba un proveedor que devuelva instancias de la clase derivada creada. Para obtener más información, vea [Escribir un proveedor de instancias.](writing-an-instance-provider.md) Al acceder a instancias entre espacios de nombres, es posible que tenga que acceder a los niveles de seguridad del cliente. Para obtener más información, [vea Suplantar un cliente.](impersonating-a-client.md)
 
-        El proveedor de asociación debe implementar los [**métodos IWbemServices.CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) [**e IWbemServices.GetObjectAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) La implementación del [**IWbemServices.Exemétodo cQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) es opcional. Dado que se puede acceder a este proveedor desde la interoperabilidad raíz y los espacios de nombres \\ \\ &lt; implementados raíz, no debe haber una dependencia explícita en un espacio de nombres &gt; dentro del proveedor.
+        El proveedor de asociación debe implementar los [**métodos IWbemServices.CreateInstanceEnumAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-createinstanceenumasync) [**e IWbemServices.GetObjectAsync.**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-getobjectasync) La implementación del [**método IWbemServices.ExecQueryAsync**](/windows/desktop/api/WbemCli/nf-wbemcli-iwbemservices-execqueryasync) es opcional. Dado que se puede acceder a este proveedor desde la interoperabilidad raíz y los espacios de nombres \\ \\ &lt; implementados raíz, no debe haber una dependencia explícita en un espacio de nombres &gt; dentro del proveedor.
 
 3.  Registre el proveedor de asociación en la \\ interoperabilidad raíz y en los espacios \\ &lt; de nombres &gt; implementados raíz. Para obtener más información, vea [Registrar un proveedor de instancias.](registering-an-instance-provider.md)
 
@@ -134,7 +134,7 @@ Windows Instrumental de administración (WMI) carga el proveedor de asociación 
 4.  Coloque el esquema del elemento [**\_ CIMConformsToProfile**](/previous-versions/windows/desktop/iscsitarg/cim-elementconformstoprofile) en el espacio de nombres implementado. Para Windows clientes, este es el archivo interop.mof que se encuentra en la carpeta %systemroot% \\ system32 \\ wbem.
 5.  Implemente [**la interfaz IWbemProviderInit**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) para el proveedor.
 
-    WMI usa [**IWbemProviderInit para**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) cargar e inicializar un proveedor. El [**IWbemProviderInit.Initialize**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize) debe implementarse de forma que se pueda llamar a él para dos espacios de nombres diferentes. Para obtener más información, vea [Inicializar un proveedor.](initializing-a-provider.md)
+    WMI usa [**IWbemProviderInit para**](/windows/desktop/api/Wbemprov/nn-wbemprov-iwbemproviderinit) cargar e inicializar un proveedor. El [**método IWbemProviderInit.Initialize**](/windows/desktop/api/Wbemprov/nf-wbemprov-iwbemproviderinit-initialize) debe implementarse de forma que se pueda llamar a él para dos espacios de nombres diferentes. Para obtener más información, vea [Inicializar un proveedor.](initializing-a-provider.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

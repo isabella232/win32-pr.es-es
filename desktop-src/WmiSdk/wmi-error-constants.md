@@ -5,28 +5,28 @@ ms.tgt_platform: multiple
 title: Constantes de error wmi (WbemCli.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 679fd0cb9714e2ee202b12195b10e72778564d7549ed4731d905603a11e073db
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e95db7220bdc9669716dbe19f5bf2f4e139dfe5c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119794315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569693"
 ---
 # <a name="wmi-error-constants"></a>Constantes de error wmi
 
-Si se produce un error, WMI devuelve un código de error como **un valor HRESULT.** Estos códigos pueden ser devueltos por scripts, aplicaciones de C++ o [**Wmic**](wmic.md).
+Si se produce un error, WMI devuelve un código de error como **un valor HRESULT.** Estos códigos pueden devolverse mediante scripts, aplicaciones de C++ o [**Wmic**](wmic.md).
 
 > [!Note]
 >
-> La siguiente documentación está dirigida a desarrolladores y administradores de TI. Si es un usuario final que ha experimentado un mensaje de error relativo a WMI, debe ir a [Soporte técnico de Microsoft](https://support.microsoft.com/) y buscar el código de error que ve en el mensaje de error. Para obtener más información sobre cómo solucionar problemas con scripts WMI y el servicio WMI, vea [WMI isn't Working!](/previous-versions/tn-archive/ff406382(v=msdn.10)).
+> La siguiente documentación está dirigida a desarrolladores y administradores de TI. Si es un usuario final que ha experimentado un mensaje de error sobre WMI, debe ir a [Soporte técnico de Microsoft](https://support.microsoft.com/) y buscar el código de error que ve en el mensaje de error. Para obtener más información sobre cómo solucionar problemas con scripts WMI y el servicio WMI, vea [WMI isn't Working!](/previous-versions/tn-archive/ff406382(v=msdn.10)).
 >
-> Si WMI devuelve mensajes de error, tenga en cuenta que es posible que no indiquen problemas en el servicio WMI o en proveedores WMI. Los errores pueden originarse en otras partes del sistema operativo y surgir como errores a través de WMI. En cualquier caso, no elimine el repositorio WMI como primera acción porque la eliminación del repositorio puede causar daños en el sistema o en las aplicaciones instaladas.
+> Si WMI devuelve mensajes de error, tenga en cuenta que es posible que no indiquen problemas en el servicio WMI o en los proveedores WMI. Los errores pueden originarse en otras partes del sistema operativo y surgir como errores a través de WMI. En cualquier caso, no elimine el repositorio WMI como primera acción porque la eliminación del repositorio puede causar daños en el sistema o en las aplicaciones instaladas.
 >
-> Para obtener más información sobre el origen del problema, puede descargar y ejecutar la herramienta Utilidad de diagnóstico de WMI [línea](https://www.microsoft.com/downloads/en/details.aspx?familyid=d7ba3cd6-18d1-4d05-b11e-4c64192ae97d&displaylang=en) de comandos de diagnóstico. Esta herramienta genera un informe que normalmente puede aislar el origen del problema y proporcionar instrucciones sobre cómo corregirlo. El informe también ayuda a los servicios de soporte técnico de Microsoft a ayudarle. Puede descargar la Utilidad de diagnóstico de WMI [aquí.](https://www.microsoft.com/downloads/details.aspx?FamilyID=d7ba3cd6-18d1-4d05-b11e-4c64192ae97d)
+> Para obtener más información sobre el origen del problema, puede descargar y ejecutar la Utilidad de diagnóstico de WMI [línea](https://www.microsoft.com/downloads/en/details.aspx?familyid=d7ba3cd6-18d1-4d05-b11e-4c64192ae97d&displaylang=en) de comandos de diagnóstico. Esta herramienta genera un informe que normalmente puede aislar el origen del problema y proporcionar instrucciones sobre cómo corregirlo. El informe también ayuda a los servicios de soporte técnico de Microsoft a ayudarle. Puede descargar la Utilidad de diagnóstico de WMI [aquí.](https://www.microsoft.com/downloads/details.aspx?FamilyID=d7ba3cd6-18d1-4d05-b11e-4c64192ae97d)
 
  
 
-Algunos métodos de las clases WMI pueden devolver códigos de error de red y sistema (por ejemplo, 64). Puede comprobar la definición de estos tipos de códigos de error mediante el comando **net helpmsg** en la ventana del símbolo del sistema. Por ejemplo, el comando **net helpmsg 64** devuelve el mensaje: El nombre de red especificado ya no está disponible.
+Algunos métodos de las clases WMI pueden devolver códigos de error del sistema y de red (por ejemplo, 64). Puede comprobar la definición de estos tipos de códigos de error mediante el comando **net helpmsg** en la ventana del símbolo del sistema. Por ejemplo, el comando **net helpmsg 64** devuelve el mensaje: El nombre de red especificado ya no está disponible.
 
 En la lista siguiente se enumeran algunos intervalos comunes de errores.
 
@@ -39,7 +39,7 @@ Errores que se originan en el propio WMI.
 
 Error en una operación WMI específica debido a
 
--   Se produce un error en la solicitud, por ejemplo, si se produce un error en una consulta WQL o la cuenta no tiene los permisos correctos.
+-   Se produce un error en la solicitud, por ejemplo, se produce un error en una consulta WQL o la cuenta no tiene los permisos correctos.
 -   Un problema de infraestructura WMI, como un registro CIM o DCOM incorrecto.
 
 </dd> <dt>
@@ -47,25 +47,25 @@ Error en una operación WMI específica debido a
 <span id="0x8007xxxx"></span><span id="0X8007XXXX"></span>0x8007xxxx
 </dt> <dd>
 
-Errores originados en el sistema operativo principal. WMI puede devolver este tipo de error debido a un error externo, por ejemplo, un error de seguridad de DCOM.
+Errores que se origina en el sistema operativo principal. WMI puede devolver este tipo de error debido a un error externo, por ejemplo, error de seguridad de DCOM.
 
 </dd> <dt>
 
 <span id="0x80040xxx"></span><span id="0X80040XXX"></span>0x80040xxx
 </dt> <dd>
 
-Errores originados en DCOM. Por ejemplo, la configuración de DCOM para las operaciones en un equipo remoto puede ser incorrecta.
+Errores que se origina en DCOM. Por ejemplo, la configuración de DCOM para las operaciones en un equipo remoto puede ser incorrecta.
 
 </dd> <dt>
 
 <span id="0x8005xxxx"></span><span id="0X8005XXXX"></span>0x8005xxxx
 </dt> <dd>
 
-Error que se origina en ADSI (Active Directory Service Interfaces) o LDAP (Protocolo ligero de acceso a directorios), por ejemplo, un error de acceso Active Directory al usar los proveedores de Active Directory WMI.
+Error que se origina en ADSI (interfaces de servicio Active Directory) o LDAP (protocolo ligero de acceso a directorios), por ejemplo, un error de acceso Active Directory al usar los proveedores de Active Directory WMI.
 
 </dd> </dl>
 
-Algunos métodos de las clases WMI pueden devolver códigos de error de red y sistema (por ejemplo, 64). Puede comprobar la definición de estos tipos de códigos de error mediante el comando **net helpmsg** en la ventana del símbolo del sistema. Por ejemplo, el comando **net helpmsg 64** devuelve el mensaje: El nombre de red especificado ya no está disponible. En C++, puede llamar a [**FormatMessage**](/windows/desktop/api/winbase/nf-winbase-formatmessage) y especificar **C: \\ Windows \\ System32 \\ wbem \\wmiutils.dll** como módulo de mensaje.
+Algunos métodos de las clases WMI pueden devolver códigos de error del sistema y de red (por ejemplo, 64). Puede comprobar la definición de estos tipos de códigos de error mediante el comando **net helpmsg** en la ventana del símbolo del sistema. Por ejemplo, el comando **net helpmsg 64** devuelve el mensaje: El nombre de red especificado ya no está disponible. En C++, puede llamar a [**FormatMessage**](/windows/desktop/api/winbase/nf-winbase-formatmessage) y especificar **C: \\ Windows \\ System32 \\ wbem \\wmiutils.dll** como módulo de mensaje.
 
 <dl> <dt>
 
@@ -82,7 +82,7 @@ Error de llamada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_NOT_FOUND"></span><span id="wbem_e_not_found"></span>**WBEM \_ E \_ NO \_ ENCONTRADO**
+<span id="WBEM_E_NOT_FOUND"></span><span id="wbem_e_not_found"></span>**WBEM \_ E \_ NOT \_ FOUND**
 </dt> <dd> <dl> <dt>
 
 2147749890 (0x80041002)
@@ -90,7 +90,7 @@ Error de llamada.
 
 
 
-No se encuentra el objeto.
+No se encuentra el objeto .
 
 
 </dt> </dl> </dd> <dt>
@@ -212,7 +212,7 @@ Se dañó uno o más paquetes de red durante una sesión remota.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_NOT_SUPPORTED"></span><span id="wbem_e_not_supported"></span>**WBEM \_ E \_ NO \_ COMPATIBLE**
+<span id="WBEM_E_NOT_SUPPORTED"></span><span id="wbem_e_not_supported"></span>**WBEM \_ E NO SE \_ \_ ADMITE**
 </dt> <dd> <dl> <dt>
 
 2147749900 (0x8004100C)
@@ -225,7 +225,7 @@ No se admite la característica u operación.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WBEM_E_INVALID_SUPERCLASS"></span><span id="wbem_e_invalid_superclass"></span>**WBEM \_ E \_ INVALID \_ SUPERCLASS**
+<span id="WBEM_E_INVALID_SUPERCLASS"></span><span id="wbem_e_invalid_superclass"></span>**WBEM \_ E \_ SUPERCLASS NO \_ VÁLIDA**
 </dt> <dd> <dl> <dt>
 
 2147749901 (0x8004100D)
@@ -302,7 +302,7 @@ El proveedor al que se hace referencia en el esquema tiene un registro incorrect
 
 Este error puede deberse a muchas condiciones, incluidas las siguientes:
 
--   Falta un [ \# comando de espacio de nombres pragma](pragma-namespace.md) en el Managed Object Format (MOF) utilizado para registrar el proveedor. El proveedor puede estar registrado en el espacio de nombres WMI incorrecto.
+-   Falta un [ \# comando de espacio de nombres pragma](pragma-namespace.md) en Managed Object Format archivo (MOF) usado para registrar el proveedor. El proveedor puede estar registrado en el espacio de nombres WMI incorrecto.
 -   Error al recuperar el registro COM.
 -   El modelo de hospedaje no es válido. Para obtener más información, vea [Provider Hosting and Security](provider-hosting-and-security.md).
 -   Una clase especificada en el registro no es válida.
@@ -834,7 +834,7 @@ El valor devuelto para un método tiene un [**calificador de**](standard-wmi-qua
 
 
 
-La ruta de acceso del objeto especificada no era válida.
+La ruta de acceso de objeto especificada no era válida.
 
 
 </dt> </dl> </dd> <dt>
@@ -1458,7 +1458,7 @@ El identificador de objeto no está actualizado.
 
 
 
-Error de conexión a la base de datos SQL.
+Error de conexión a la SQL de datos.
 
 
 </dt> </dl> </dd> <dt>
@@ -2017,7 +2017,7 @@ Especificadores de modificación duplicados.
 
 
 
-[ \# Pragma debe](pragma-namespace.md) ir seguido de una palabra clave válida.
+[ \# pragma debe](pragma-namespace.md) ir seguido de una palabra clave válida.
 
 
 </dt> </dl> </dd> <dt>
@@ -2394,7 +2394,7 @@ El calificador se usa fuera de su ámbito.
 
 
 
-Error al crear un archivo temporal. El archivo temporal es una fase intermedia de la compilación MOF.
+Error al crear el archivo temporal. El archivo temporal es una fase intermedia de la compilación MOF.
 
 
 </dt> </dl> </dd> <dt>
@@ -2433,12 +2433,12 @@ La sintaxis de los comandos de preprocesador [ \# pragma deleteinstance](pragma-
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
-| Header<br/>                   | <dl> <dt>WbemCli.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>WbemCli.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WbemCli.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>WbemCli.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

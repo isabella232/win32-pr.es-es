@@ -19,11 +19,11 @@ api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 7767a1c7e9dc9182fe521d2d903b52d3b88dadb3
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122983358"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569252"
 ---
 # <a name="jetossnapshotabort-function"></a>JetOSSnapshotAbort (Función)
 
@@ -72,7 +72,7 @@ Si se produce un error en esta función, la sesión de instantánea no se anular
 
 #### <a name="remarks"></a>Observaciones
 
-Se debe llamar a esta función en lugar de [JetOSSnapshotThaw](./jetossnapshotthaw-function.md) para informar al motor de que la instantánea se anuló por motivos que no están relacionados con el motor. Esta información se puede usar más adelante para ayudar a emitir mensajes de registro de eventos sobre la sesión de instantáneas o para ayudar a determinar otras acciones adecuadas.
+Se debe llamar a esta función en lugar de [JetOSSnapshotThaw](./jetossnapshotthaw-function.md) para informar al motor de que la instantánea se anuló por motivos que no están relacionados con el motor. Esta información se puede usar más adelante para ayudar a emitir mensajes del registro de eventos sobre la sesión de instantáneas o para ayudar a determinar otras acciones adecuadas.
 
 #### <a name="requirements"></a>Requisitos
 
@@ -83,7 +83,7 @@ Se debe llamar a esta función en lugar de [JetOSSnapshotThaw](./jetossnapshotth
 | <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008 o Windows Server 2003.</p> | 
 | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

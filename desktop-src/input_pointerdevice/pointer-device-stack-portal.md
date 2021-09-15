@@ -4,12 +4,12 @@ ms.assetid: A2CBA73A-A647-4CF6-9886-06AD0AC6394B
 title: Pila de entrada del dispositivo de puntero
 ms.topic: article
 ms.date: 02/05/2020
-ms.openlocfilehash: 6e9745cd4277bc7bc357e567bd92575581ed7b50738aa09f09c1fd1054555925
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e6c4b19cfc75cbac72151ec26a4da276c2a0565
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117884484"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569176"
 ---
 # <a name="pointer-device-input-stack"></a>Pila de entrada del dispositivo de puntero
 

@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: f8b44787dd1039bd3ffd3fa9afef76a527e2143cfe52bdcfa7676c15efa51342
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bd181b5eafbe1cf6de56c95886deb04e5bd6d2b0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119666124"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569113"
 ---
 # <a name="pen-mask"></a>Máscara de lápiz
 
@@ -63,7 +63,7 @@ Predeterminada. Ninguno de los campos opcionales es válido.
 
 
 
-**la** rotación de [**la POINTER_PEN_INFO**](/previous-versions/windows/desktop/api) estructura es válida.
+**la** rotación de la [**POINTER_PEN_INFO**](/previous-versions/windows/desktop/api) estructura es válida.
 
 
 </dt> </dl> </dd> <dt>
@@ -76,7 +76,7 @@ Predeterminada. Ninguno de los campos opcionales es válido.
 
 
 
-**la estructura de** [**POINTER_PEN_INFO**](/previous-versions/windows/desktop/api) es válida.
+**la estructura** [**de**](/previous-versions/windows/desktop/api) POINTER_PEN_INFO es válida.
 
 
 </dt> </dl> </dd> <dt>
@@ -102,7 +102,7 @@ Predeterminada. Ninguno de los campos opcionales es válido.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                 |
-| Header<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 

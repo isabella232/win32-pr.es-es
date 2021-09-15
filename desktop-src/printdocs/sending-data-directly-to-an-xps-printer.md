@@ -4,12 +4,12 @@ ms.assetid: 7e98e08a-d572-451d-befb-18fc86f0e505
 title: 'Cómo: Enviar datos directamente a una impresora XPS'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65fba87578f9257290123b737f2d1d8c3e48f57e6a628110a20a232ddb290ea0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d78a8c36d6862860862059f9bbcc8db25e171b19
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118470157"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568609"
 ---
 # <a name="how-to-send-data-directly-to-an-xps-printer"></a>Cómo: Enviar datos directamente a una impresora XPS
 
@@ -19,12 +19,12 @@ En los pasos siguientes se describe cómo enviar datos directamente a una impres
 
 1.  Llame [**a OpenPrinter**](openprinter.md) para obtener un identificador para la impresora.
 2.  Inicialice [**una estructura DOCINFO**](/windows/desktop/api/wingdi/ns-wingdi-docinfoa) con los datos de la impresora.
-3.  Llame [**a StartDocPrinter**](startdocprinter.md) para indicar que la aplicación enviará datos del documento a la impresora.
+3.  Llame [**a StartDocPrinter**](startdocprinter.md) para indicar que la aplicación enviará datos de documento a la impresora.
 4.  Llame [**a WritePrinter**](writeprinter.md) para enviar los datos.
 5.  Llame [**a EndDocPrinter**](enddocprinter.md) para indicar que se han enviado todos los datos de este documento.
 6.  Llame [**a ClosePrinter**](closeprinter.md) para liberar los recursos.
 
-Envíe datos de control de impresora directamente a las impresoras que usan controladores de impresora XPSDrv.
+Enviar datos de control de impresora directamente a impresoras que usan controladores de impresora XPSDrv.
 
 
 ```C++

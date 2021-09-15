@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 37b1e33ccb92b2d46effa9f0575f0331fa064e79d172715b8746355d5e99d2b6
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5d2324b4e1e06650f2eed7b63337f2bd48520498
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119622275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473459"
 ---
 # <a name="keyusage-object"></a>Objeto KeyUsage
 
@@ -26,7 +26,7 @@ ms.locfileid: "119622275"
 
 El **objeto KeyUsage** proporciona acceso de solo lectura a las propiedades de uso de claves de un certificado.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto KeyUsage** tiene estos tipos de miembros:
 
@@ -38,7 +38,7 @@ El **objeto KeyUsage** tiene estas propiedades.
 
 
 
-| Propiedad                                                                           | Tipo de acceso          | Descripción                                                                                                                                 |
+| Propiedad.                                                                           | Tipo de acceso          | Descripción                                                                                                                                 |
 |:-----------------------------------------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IsCritical**](keyusage-iscritical.md)<br/>                               | Solo lectura<br/> | Recupera un valor booleano que indica si la **extensión KeyUsage** está marcada como crítica.<br/>                                  |
 | [**IsCRLSignEnabled**](keyusage-iscrlsignenabled.md)<br/>                   | Solo lectura<br/> | Recupera un valor booleano que indica si el bit CRLSign está establecido.<br/>                                                         |
@@ -56,7 +56,7 @@ El **objeto KeyUsage** tiene estas propiedades.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No se puede crear el objeto **KeyUsage.**
 

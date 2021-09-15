@@ -1,5 +1,5 @@
 ---
-title: Atributo Subject
+title: Atributo subject
 description: El atributo Subject es el asunto del elemento de foto.
 ms.assetid: 6f6c3da3-77f0-4328-aa91-5c1368e48bd2
 keywords:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4db646909f103d0158796bd6739da7477392cc50377f007c6a058e8d8d1cea06
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2ec4cc3d19d533473d2113d829dbd60d72a7d92f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118831955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569416"
 ---
-# <a name="subject-attribute"></a>Atributo Subject
+# <a name="subject-attribute"></a>Atributo subject
 
 El **atributo Subject** es el asunto del elemento de foto.
 
@@ -27,7 +27,7 @@ El **atributo Subject** es el asunto del elemento de foto.
 
 -   [Elementos de fotos](photo-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
@@ -35,13 +35,13 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------|
 | Versión<br/> | Reproductor de Windows Media 11<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

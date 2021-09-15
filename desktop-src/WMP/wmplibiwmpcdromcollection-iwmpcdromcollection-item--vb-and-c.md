@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80ab1ced32918e615230b3267d15dfbe5b2ba28377f6bbf265b735ea666153a4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: bf0c4a0c79a17b1e6956ba640daec74f0cbb2825
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119900115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568996"
 ---
 # <a name="iwmpcdromcollectionitem-method"></a>IWMPCdromCollection::Item (Método)
 
@@ -64,13 +64,13 @@ Implements IWMPCdromCollection.Item
 
 Interfaz **WMPLib.IWMPCdrom.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa Item** para mostrar el especificador de unidad y el nombre de la lista de reproducción de cada CD disponible en el equipo en un cuadro de lista. Si la unidad realmente contiene contenido de DVD, Windows XP o posterior. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
+En el ejemplo siguiente se **usa Item** para mostrar el especificador de unidad y el nombre de la lista de reproducción de cada CD disponible en el equipo en un cuadro de lista. Si la unidad contiene realmente contenido de DVD, Windows XP o posterior. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -116,7 +116,7 @@ Next i
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

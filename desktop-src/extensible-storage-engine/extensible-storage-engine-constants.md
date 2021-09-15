@@ -1,6 +1,6 @@
 ---
 description: 'Más información sobre: Constantes extensibles Storage engine'
-title: Constantes extensibles Storage motor de datos
+title: Constantes extensibles Storage engine
 TOCTitle: Extensible Storage Engine Constants
 ms:assetid: 9a361b83-491d-442d-971d-6696f88ad42e
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269351(v=EXCHG.10)
@@ -15,19 +15,19 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 563efe09c011830ef17001c13a6f3d4564b26567940245aee3fcb272f562aa69
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ab478b7972206f462cd0bd0031f74865d850dbee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118980815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473168"
 ---
-# <a name="extensible-storage-engine-constants"></a>Constantes extensibles Storage motor de datos
+# <a name="extensible-storage-engine-constants"></a>Constantes extensibles Storage engine
 
 
 _**Se aplica a:** Windows | Windows Servidor_
 
-## <a name="extensible-storage-engine-constants"></a>Constantes extensibles Storage motor de datos
+## <a name="extensible-storage-engine-constants"></a>Constantes extensibles Storage engine
 
 La sección Extensible Storage Engine Constants contiene las secciones siguientes:
 
@@ -45,7 +45,7 @@ La sección Extensible Storage Engine Constants contiene las secciones siguiente
 
   - [Constantes de registro de eventos](./event-logging-constants.md)
 
-  - [Parámetros extensibles Storage del sistema del motor de datos](./extensible-storage-engine-system-parameters.md)
+  - [Parámetros del sistema Storage motor de motor extensible](./extensible-storage-engine-system-parameters.md)
 
   - [Constantes de identificador no válidas](./invalid-handle-constants.md)
 

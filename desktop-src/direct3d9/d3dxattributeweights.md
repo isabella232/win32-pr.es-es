@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9mesh.h
-ms.openlocfilehash: fa40476bdd1f65dddf0f78b57cfca2b20ac7bd8186eaf78546ddda9b3fa8771a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a833d2a58db0f434f836126926e461cd2ee3ea0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118096600"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568968"
 ---
 # <a name="d3dxattributeweights-structure"></a>D3DXATTRIBUTEWEIGHTS (estructura)
 
-Especifica los atributos de peso de malla.
+Especifica los atributos de peso de la malla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,7 +42,7 @@ typedef struct D3DXATTRIBUTEWEIGHTS {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -101,7 +101,7 @@ Valor de iluminación especular.
 
 </dd> <dt>
 
-**Texcoord**
+**Texascoord**
 </dt> <dd>
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
@@ -134,11 +134,11 @@ Binormal.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-En esta estructura se describe cómo una operación de simplificación considerará los datos de vértices al calcular los costos relativos entre los bordes con contraer. Por ejemplo, si el campo Normal es 0,0, la operación de simplificación omitirá el componente normal del vértice al calcular el error para el contrae. Sin embargo, si el campo Normal es 1.0, la operación de simplificación usará el componente normal del vértice. Si el campo Normal es 2.0, duplicó la cantidad de errores; si el campo Normal es 4.0, a continuación, el número de errores, y así sucesivamente.
+En esta estructura se describe cómo una operación de simplificación considerará los datos de vértices al calcular los costos relativos entre los bordes que se contrae. Por ejemplo, si el campo Normal es 0,0, la operación de simplificación omitirá el componente normal del vértice al calcular el error para el contraer. Sin embargo, si el campo Normal es 1.0, la operación de simplificación usará el componente normal del vértice. Si el campo Normal es 2.0, duplica la cantidad de errores; si el campo Normal es 4.0, a continuación, se multiplica el número de errores, y así sucesivamente.
 
-El tipo LPD3DXATTRIBUTEWEIGHTS se define como un puntero a la **estructura D3DXATTRIBUTEWEIGHTS.**
+El tipo LPD3DXATTRIBUTEWEIGHTS se define como un puntero a la estructura **D3DXATTRIBUTEWEIGHTS.**
 
 
 ```

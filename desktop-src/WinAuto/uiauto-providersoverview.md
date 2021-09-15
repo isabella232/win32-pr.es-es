@@ -5,7 +5,7 @@ ms.assetid: 8928c889-0e0a-439f-87e8-a9d121fcf73f
 keywords:
 - Automatización de la interfaz de usuario,introducción a los proveedores
 - Automatización de la interfaz de usuario, tipos de proveedor
-- Automatización de la interfaz de usuario, conceptos de proveedor
+- Automatización de la interfaz de usuario,conceptos del proveedor
 - providers,about
 - providers,types
 - providers,concepts
@@ -17,12 +17,12 @@ keywords:
 - providers,hosts
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03480fd77ec75a7747d0cc425d38b6160a3b001df275e9f0e50cbf397b1e15a8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 21f70a806fe33b16eed2555c123cc50f1f2b28da
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118826851"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569725"
 ---
 # <a name="ui-automation-providers-overview"></a>Información general sobre proveedores de UI Automation
 
@@ -30,7 +30,7 @@ Un proveedor Automatización de la interfaz de usuario microsoft es un objeto de
 
 Microsoft incluye un proveedor para cada uno de los controles estándar que se proporcionan con Microsoft Win32, Windows Forms y Windows Presentation Foundation (WPF). Esto significa que los controles estándar se exponen automáticamente a Automatización de la interfaz de usuario cliente; no es necesario implementar ninguna interfaz de accesibilidad para los controles estándar.
 
-Si la aplicación incluye controles personalizados, debe implementar proveedores de Automatización de la interfaz de usuario para esos controles para que puedan ser accesibles para las aplicaciones cliente de accesibilidad. También debe implementar proveedores para los controles de terceros que no incluyan un proveedor. Implemente un proveedor implementando interfaces de Automatización de la interfaz de usuario de proveedor e interfaces de patrón de control.
+Si la aplicación incluye controles personalizados, debe implementar proveedores de Automatización de la interfaz de usuario para esos controles para que puedan ser accesibles para las aplicaciones cliente de accesibilidad. También debe implementar proveedores para los controles de terceros que no incluyan un proveedor. Para implementar un proveedor, implemente Automatización de la interfaz de usuario interfaces de proveedor e interfaces de patrón de control.
 
 En este tema se proporciona información general sobre cómo los desarrolladores de controles implementan Automatización de la interfaz de usuario proveedores. Incluye las secciones siguientes.
 
@@ -48,7 +48,7 @@ Automatización de la interfaz de usuario se divide en dos categorías: proveedo
 
 Un proveedor del lado servidor es un objeto, como un control personalizado, que contiene su propia implementación nativa de las interfaces de proveedor de Automatización de la interfaz de usuario correspondientes. Un proveedor del lado servidor se comunica con las aplicaciones cliente a través del límite del proceso mediante la exposición de su implementación de las interfaces de proveedor al núcleo Automatización de la interfaz de usuario, que los servicios solicitan a los clientes. Para obtener más información sobre los proveedores del lado servidor, vea [Implementing a Server-Side Automatización de la interfaz de usuario Provider](uiauto-serversideprovider.md).
 
-Un proveedor del lado cliente, o proxy, es un objeto que implementa interfaces de proveedor de Automatización de la interfaz de usuario en nombre de un control no incluye una implementación completa del proveedor propia. Sin un proxy, este control es en gran medida opaco para Automatización de la interfaz de usuario, que solo puede proporcionar información básica disponible desde el identificador de ventana **(HWND),** como la ubicación del control. Normalmente, los proveedores de proxy se comunican con la aplicación a través del límite del proceso mediante el envío y la recepción Windows mensajes. Para obtener más información, vea [Implementing a Client-Side (Proxy) Automatización de la interfaz de usuario Provider](uiauto-clientsideprovider.md).
+Un proveedor del lado cliente, o proxy, es un objeto que implementa interfaces de proveedor de Automatización de la interfaz de usuario en nombre de un control no incluye una implementación de proveedor completa propia. Sin un proxy, este control es en gran medida opaco para Automatización de la interfaz de usuario, que solo puede proporcionar información básica disponible desde el identificador de ventana **(HWND),** como la ubicación del control. Normalmente, los proveedores de proxy se comunican con la aplicación a través del límite del proceso mediante el envío y la recepción Windows mensajes. Para obtener más información, vea [Implementing a Client-Side (Proxy) Automatización de la interfaz de usuario Provider](uiauto-clientsideprovider.md).
 
 ## <a name="ui-automation-provider-concepts"></a>Conceptos del proveedor de la automatización de la interfaz de usuario
 
@@ -80,7 +80,7 @@ Para obtener más información sobre la vista de cliente del árbol, [vea inform
 
 ### <a name="frameworks"></a>Marcos de trabajo
 
-Un marco de trabajo es un componente que administra controles secundarios, pruebas de aciertos y representación en un área de la pantalla. Por ejemplo, una ventana de Win32, a menudo denominada **HWND,** puede actuar como un marco que contiene varios elementos Automatización de la interfaz de usuario, como una barra de menús, una barra de estado y botones.
+Un marco de trabajo es un componente que administra controles secundarios, pruebas de aciertos y representación en un área de la pantalla. Por ejemplo, una ventana de Win32, a menudo denominada **HWND**, puede actuar como un marco que contiene varios elementos Automatización de la interfaz de usuario, como una barra de menús, una barra de estado y botones.
 
 Los controles de contenedor de Win32, como los cuadros de lista y los controles de vista de árbol, se consideran marcos porque contienen su propio código para representar elementos secundarios y realizar pruebas de acceso en ellos. Por el contrario, un cuadro de lista de WPF no es un marco de trabajo, ya que la ventana de contenido controla la representación y las pruebas de acceso.
 

@@ -11,11 +11,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ac85478bd42737f0a240b356bb6b3b73e838a8ee
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122884527"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569469"
 ---
 # <a name="customizing-a-folders-web-view"></a>Personalizar la vista web de una carpeta
 
@@ -31,7 +31,7 @@ Una vista web es una manera eficaz y flexible de usar Windows Explorer para most
 
 ## <a name="introduction"></a>Introducción
 
-Windows ofrece a los usuarios dos formas principales de ver y navegar por el espacio de nombres de Shell. El más conocido, el estilo clásico, es similar al conocido administrador de Windows archivos. En el panel derecho se muestra el contenido de la carpeta seleccionada actualmente en uno de los cinco formatos: Icono grande, Icono pequeño, Lista, Detalles y Miniatura. La principal diferencia con respecto Windows administrador de archivos es el panel izquierdo, que es muy similar a la barra explorador de Windows Internet Explorer. Se puede cambiar de tamaño o quitarse, y puede mostrar varios paneles además del conocido árbol del sistema de archivos, como un panel de búsqueda.
+Windows ofrece a los usuarios dos formas principales de ver y navegar por el espacio de nombres de Shell. El más conocido de ellos, el estilo clásico, es similar al conocido administrador de Windows archivos. En el panel derecho se muestra el contenido de la carpeta seleccionada actualmente en uno de los cinco formatos: Icono grande, Icono pequeño, Lista, Detalles y Miniatura. La principal diferencia con Windows administrador de archivos es el panel izquierdo, que es muy similar a la barra explorador de Windows Internet Explorer. Se puede cambiar de tamaño o quitarse, y puede mostrar varios paneles además del conocido árbol del sistema de archivos, como un panel de búsqueda.
 
 > [!Note]  
 > La información de este documento no se aplica a Windows XP, las técnicas analizadas solo se aplican a versiones anteriores de Windows.
@@ -52,7 +52,7 @@ En la ilustración siguiente se muestra una vista web de la carpeta Impresoras (
 
 Al igual que las páginas web convencionales, las vistas web se controlan mediante una plantilla basada en HTML. La creación de una plantilla de vista web es casi idéntica a la creación de una página web y proporciona el mismo grado de flexibilidad en el contenido y el diseño de la información. Las plantillas de vista web pueden usar HTML dinámico (DHTML) y scripting para responder a eventos, como un usuario que hace clic en un elemento. También pueden hospedar objetos que les permiten obtener y mostrar información de la carpeta o su contenido.
 
-El usuario puede elegir una vista web iniciando  Windows Explorer, haciendo clic en Opciones de carpeta en el menú Ver y seleccionando esta opción: Habilitar contenido web en **carpetas**.  Sin embargo, el usuario también puede iniciar Internet Explorer apuntar el explorador  al sistema de archivos haciendo clic en el menú Ver, apuntando a barra del explorador y haciendo clic en **Carpetas.** En una vista web, no hay prácticamente ninguna diferencia entre Internet Explorer y Windows Explorer.
+El usuario puede elegir una vista web iniciando  Windows Explorer, haciendo clic en Opciones de carpeta en el menú Ver y seleccionando esta opción: Habilitar contenido web en **carpetas**.  Sin embargo, el usuario también puede iniciar Internet Explorer apuntar el explorador  al sistema de archivos haciendo clic en el menú Ver, apuntando a barra del explorador y haciendo clic en **Carpetas.** En una vista web, prácticamente no hay ninguna diferencia entre Internet Explorer y Windows Explorer.
 
 En el lado izquierdo del panel derecho, la vista Web impresoras muestra un banner con el nombre y el icono de la carpeta, seguido de un bloque de información sobre la carpeta. La lista de archivos habitual ocupa el lado derecho de la página.
 
@@ -275,7 +275,7 @@ El banner normal de Generic.htt se define mediante:
 
 
 
-La primera parte de la sección banner muestra el título con una regla horizontal debajo. Las etiquetas de tabla se usan para controlar su posición. El atributo nowrap se establece para <TD> etiqueta para evitar el ajuste de palabras. El sistema reemplazará %THISDIRNAME% por el nombre de la carpeta actual. A continuación, se carga un objeto **WebViewFolderIcon,** con un identificador de "Icon" para simplificar, para extraer y mostrar el icono de la carpeta.
+La primera parte de la sección banner muestra el título con una regla horizontal debajo. Las etiquetas de tabla se usan para controlar su posición. El atributo nowrap se establece para <TD> etiqueta para evitar el ajuste de palabras. El sistema reemplazará %THISDIRNAME% por el nombre de la carpeta actual. A continuación, se carga un objeto **WebViewFolderIcon,** con un identificador de "Icono" para simplificar, para extraer y mostrar el icono de la carpeta.
 
 La sección minibanner es similar al banner normal. El formato del título se coloca ligeramente más alto y no tiene una regla. Dado que no hay ningún icono, no se carga el objeto **WebViewFolderIcon.**
 
@@ -310,7 +310,7 @@ La parte de la vista web debajo del banner se usa para presentar información de
 
 La mayor parte del trabajo de recopilación de la información se controla mediante un [script](#retrieving-and-displaying-folder-information) de información de carpetas que se describe más adelante en el capítulo. Muestra la información asignando el texto a [TextBlock.innerHTML.](https://msdn.microsoft.com/library/ms533897(VS.85).aspx)
 
-Puede personalizar fácilmente la presentación de la información modificando estos elementos o incluyendo otros adicionales. Se puede usar cualquier cosa que se pueda colocar en una página web. Por ejemplo, para mostrar un vínculo al sitio web, puede agregar un elemento delimitador después del bloque de texto en Generic.htt.
+Puede personalizar fácilmente la presentación de información modificando estos elementos o incluyendo otros adicionales. Se puede usar todo lo que se puede colocar en una página web. Por ejemplo, para mostrar un vínculo a su sitio web, puede agregar un elemento delimitador después del bloque de texto en Generic.htt.
 
 
 ```
@@ -329,7 +329,7 @@ Puede personalizar fácilmente la presentación de la información modificando e
 
 ### <a name="the-filelist-region"></a>La región FileList
 
-Por último, Generic.htt carga un [**objeto WebViewFolderContents**](webviewfoldercontents.md) para la región FileList. Dado que su identificador se establece en "FileList", se hará referencia a él como el objeto FileList a partir de ahora.
+Por último, Generic.htt carga un [**objeto WebViewFolderContents**](webviewfoldercontents.md) para la región FileList. Dado que su identificador se establece en "FileList", a partir de ahora se hará referencia a él como el objeto FileList.
 
 
 ```
@@ -340,17 +340,17 @@ Por último, Generic.htt carga un [**objeto WebViewFolderContents**](webviewfold
 
 
 
-El objeto FileList se encuentra en la mayoría de las vistas web y tiene varios fines. FileList muestra la lista de elementos contenidos en la carpeta seleccionada con las mismas opciones y apariencia que la lista de archivos en el estilo clásico. Cuando se selecciona un elemento, FileList notifica a la vista web mediante la activación de [un evento SelectionChanged.](#retrieving-and-displaying-folder-information) FileList también expone métodos y propiedades que se pueden usar para recuperar información sobre elementos individuales y controlar la posición y el tamaño de su área de presentación.
+El objeto FileList se encuentra en la mayoría de las vistas web y tiene varios propósitos. FileList muestra la lista de elementos contenidos en la carpeta seleccionada con las mismas opciones y apariencia que la lista de archivos en el estilo clásico. Cuando se selecciona un elemento, FileList notifica a la vista web mediante la activación de [un evento SelectionChanged.](#retrieving-and-displaying-folder-information) FileList también expone métodos y propiedades que se pueden usar para recuperar información sobre elementos individuales y controlar la posición y el tamaño de su área de presentación.
 
 Aunque el objeto FileList es muy útil, solo devuelve información estándar del sistema de archivos, como el tamaño de archivo o los atributos. Para recuperar otros tipos de información de una carpeta de Shell, tendrá que cargar y controlar objetos adicionales. Cualquier objeto que se pueda hospedar en una página web se puede usar con una vista web.
 
 ### <a name="the-template-head"></a>El jefe de plantilla
 
-El responsable de la plantilla de vista web contiene los scripts y las funciones que hacen la mayor parte del trabajo real. Hay dos tareas esenciales que deben controlarse. Uno es el diseño de la pantalla de la vista web, que debe ajustarse para adaptarse a diferentes regiones de visualización. La otra es recuperar y mostrar información de la carpeta cuando se selecciona un elemento. Al igual que con las hojas de estilos, es mejor incluir todos los scripts y funciones en la plantilla en lugar de hacer referencia a ellos como archivos independientes.
+El responsable de la plantilla de vista web contiene los scripts y las funciones que hacen la mayor parte del trabajo real. Hay dos tareas esenciales que deben controlarse. Uno es el diseño de la presentación de la vista web, que debe ajustarse para adaptarse a diferentes regiones de visualización. La otra es recuperar y mostrar información de la carpeta cuando se selecciona un elemento. Al igual que con las hojas de estilos, es mejor incluir todos los scripts y funciones en la plantilla en lugar de hacer referencia a ellos como archivos independientes.
 
-### <a name="controlling-the-web-view-layout"></a>Controlar el diseño de la vista web
+### <a name="controlling-the-web-view-layout"></a>Controlar el diseño de vista web
 
-El área disponible para una vista web depende del tamaño de la ventana vista web y de la cantidad de ella que toma la barra Windows Explorador. Esta área cambiará cada vez que se cambie el tamaño de la ventana Windows la barra del Explorador. Por lo tanto, el diseño debe coincidir con el área disponible cuando se carga una vista web y cambiar correctamente cuando se cambia de tamaño. Gran parte del diseño se especifica en la hoja de estilos. La región Información, por ejemplo, se define para ocupar el 30 % más a la izquierda de la vista web.
+El área disponible para una vista web depende del tamaño de la ventana vista web y de la cantidad de ella que toma la barra Windows explorador. Esta área cambiará cada vez que se cambie el tamaño de Windows la barra del Explorador. Por lo tanto, el diseño debe coincidir con el área disponible cuando se carga una vista web y cambiar correctamente cuando se cambia de tamaño. Gran parte del diseño se especifica en la hoja de estilos. La región info, por ejemplo, se define para ocupar el 30 % más a la izquierda de la vista web.
 
 
 ```
@@ -361,9 +361,9 @@ El área disponible para una vista web depende del tamaño de la ventana vista w
 
 
 
-A medida que se cambia el tamaño de una vista web, el ancho de la región Información cambiará para mantener ese porcentaje. [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) administra los problemas de diseño que no se pueden controlar mediante una hoja de estilos.
+A medida que se cambia el tamaño de una vista web, el ancho de la región De información cambiará para mantener ese porcentaje. [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) administra los problemas de diseño que no se pueden controlar mediante una hoja de estilos.
 
-### <a name="loading-and-initializing-the-web-view"></a>Carga e inicialización de la vista web
+### <a name="loading-and-initializing-the-web-view"></a>Cargar e inicializar la vista web
 
 Cuando se carga una vista web, el diseño debe ajustarse para ajustarse al área de presentación disponible. Dado que aún no se ha seleccionado ningún elemento, las vistas web normalmente muestran información predeterminada que se aplica a toda la carpeta. Para controlar la inicialización, la etiqueta BODY para Generic.htt detecta el evento &lt; &gt; [onload](/previous-versions//ms531409(v=vs.85)) y llama a la **función Init.**
 
@@ -389,7 +389,7 @@ function Init() {
 
 
 
-**Init** enlaza [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) al evento [window.onresize](https://msdn.microsoft.com/library/ms536959(VS.85).aspx) para que se llame cada vez que cambie el área de presentación de la vista web. A continuación, ejecuta FixSize para establecer el diseño inicial y asigna L \_ Intro Text a la región \_ Info. L \_ Intro Text es un bloque de texto \_ introductorio que se define en la sección de hoja de estilos.
+**Init** enlaza [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) al evento [window.onresize](https://msdn.microsoft.com/library/ms536959(VS.85).aspx) para que se llame cuando cambie el área de presentación de la vista web. A continuación, ejecuta FixSize para establecer el diseño inicial y asigna L \_ Intro Text a la región \_ Info. L \_ Intro Text es un bloque de texto \_ introductorio que se define en la sección de hoja de estilos.
 
 
 ```
@@ -404,7 +404,7 @@ var L_Intro_Text    = "This folder contains a variety of interesting stuff.<br>
 
 La [función FixSize](#adjusting-the-layout-by-using-the-fixsize-function) se usa para especificar varios aspectos del diseño que la hoja de estilos no puede controlar.
 
-Hay dos banners posibles que se pueden usar, dependiendo del alto de la vista web.
+Hay dos banners posibles que se pueden usar, en función del alto de la vista web.
 
 
 ```
@@ -428,9 +428,9 @@ else {
 
 
 
-Generic.htt usa un alto de 200 píxeles como línea divisora entre normal y minibanners. Establece el estilo del banner seleccionado en visible y el otro en oculto. También establece varias propiedades de diseño para las regiones Info y FileList para que se ajusten correctamente al banner seleccionado.
+Generic.htt usa una altura de 200 píxeles como línea divisora entre normales y minibanners. Establece el estilo del banner seleccionado en visible y el otro en oculto. También establece varias propiedades de diseño para las regiones Info y FileList para que quepa correctamente con el banner seleccionado.
 
-Si una vista web se vuelve demasiado estrecha, [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) usa el ancho completo del área de presentación para la presentación de FileList.
+Si una vista web se vuelve demasiado estrecha, [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) usa el ancho completo del área de presentación para la pantalla FileList.
 
 
 ```
@@ -451,9 +451,9 @@ else {
 
 
 
-Generic.htt usa 400 píxeles como línea divisora entre pantallas estrechas y anchas. Si la vista web es demasiado estrecha, [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) oculta la región Info y modifica la propiedad [PixelLeft](https://msdn.microsoft.com/library/ms534336(VS.85).aspx) de FileList para que rellene toda la región debajo del banner.
+Generic.htt usa 400 píxeles como línea divisora entre las pantallas estrechas y anchas. Si la vista web es demasiado estrecha, [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) oculta la región Info y modifica la propiedad [PixelLeft](https://msdn.microsoft.com/library/ms534336(VS.85).aspx) de FileList para que rellene toda la región debajo del banner.
 
-Las últimas líneas de [FixSize](#adjusting-the-layout-by-using-the-fixsize-function) ajustan varias propiedades de diseño en función de los resultados del código anterior. El ancho de la región FileList se ajusta para que rellene exactamente la parte de la vista web no ocupada por la región de información. El alto de la región de información tiene el tamaño que cabe entre el banner y la parte inferior de la vista web.
+Las últimas líneas de [FixSize ajustan](#adjusting-the-layout-by-using-the-fixsize-function) varias propiedades de diseño en función de los resultados del código anterior. El ancho de la región FileList se ajusta para que rellene exactamente la parte de la vista web no ocupada por la región de información. El alto de la región de información tiene el tamaño que cabe entre el banner y la parte inferior de la vista web.
 
 
 ```
@@ -468,7 +468,7 @@ document.all.Info.style.pixelHeight = document.body.clientHeight
 
 
 
-### <a name="retrieving-and-displaying-folder-information"></a>Recuperar y mostrar información de carpetas
+### <a name="retrieving-and-displaying-folder-information"></a>Recuperar y mostrar información de carpeta
 
 Cuando un usuario selecciona un elemento, el objeto FileList activará un [evento SelectionChanged.](#retrieving-and-displaying-folder-information) Este evento se controla mediante un JScript script. Para simplificar, el script que se encuentra en Generic.htt supone que solo se puede seleccionar un elemento a la vez.
 
@@ -511,11 +511,11 @@ Cuando un usuario selecciona un elemento, el objeto FileList activará un [event
 
 El script usa dos propiedades FileList, [**FileList.FocusedItem**](/windows/desktop/shell/shellfolderview-focuseditem)y [**FileList.Folder**](/windows/desktop/shell/shellfolderview-folder) para obtener información sobre el elemento. **FileList.FocusedItem** identifica el elemento seleccionado, con el nombre del elemento especificado **por FileList.FocusedItem.Name**. **FileList.Folder es** realmente un puntero a un [**objeto Folder.**](../shell/folder.md) El método [**GetDetailsOf**](/windows/desktop/shell/folder-getdetailsof) del objeto Folder se usa para recuperar la información restante sobre el elemento.
 
-Toda la información se concatena en una sola cadena de texto, separada por <BR> etiquetas para mejorar la legibilidad. A continuación, el texto se muestra asignándose a [TextBlock.innerHTML.](https://msdn.microsoft.com/library/ms533897(VS.85).aspx)
+Toda la información se concatena en una sola cadena de texto, separada por <BR> etiquetas para mejorar la legibilidad. A continuación, se muestra el texto asignándose a [TextBlock.innerHTML.](https://msdn.microsoft.com/library/ms533897(VS.85).aspx)
 
 ## <a name="summary"></a>Resumen
 
-En este capítulo se describen algunas de las técnicas que puede usar para personalizar la forma en que Windows Explorer muestra información sobre las carpetas de Shell. La creación Desktop.ini archivo permite realizar una personalización sencilla, como mostrar un icono personalizado en lugar del icono de carpeta estándar. Cuando una carpeta aparece en una vista web, su diseño y presentación se controlan mediante una plantilla basada en HTML que determina qué información se muestra y cómo. Puede ejercer un alto grado de control sobre la vista web de una carpeta mediante el uso de html estándar, DHTML y técnicas de scripting para crear una plantilla personalizada.
+En este capítulo se describen algunas de las técnicas que puede usar para personalizar la forma en que el Explorador de Windows muestra información sobre las carpetas de Shell. La creación Desktop.ini archivo le permite realizar una personalización sencilla, como mostrar un icono personalizado en lugar del icono de carpeta estándar. Cuando una carpeta aparece en una vista web, su diseño y presentación se controlan mediante una plantilla basada en HTML que determina qué información se muestra y cómo. Puede ejercer un alto grado de control sobre la vista web de una carpeta mediante el uso de técnicas estándar de HTML, DHTML y scripting para crear una plantilla personalizada.
 
  
 

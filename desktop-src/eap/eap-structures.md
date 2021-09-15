@@ -4,12 +4,12 @@ description: Los proveedores deben usar los siguientes tipos de estructura para 
 ms.assetid: f2f1cf75-18d4-4764-a747-24662f166eb7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25ef9f3ba8faa8b1b7f0584d4526199d6e1d1591cd2ba892cd4a4257ee6ab57c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6816322e2b18e14a7aa8290240913c13bbf7894f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119978435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569269"
 ---
 # <a name="eap-structures"></a>Estructuras de EAP
 

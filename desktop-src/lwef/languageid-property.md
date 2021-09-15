@@ -4,16 +4,16 @@ description: Propiedad LanguageID
 ms.assetid: f57b0fa1-b3b8-49c8-b441-2a40e564d6ea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13af9f7a508732444be83fd56cce2fad6c7d7a5c148e196e2c466db102d2e6e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a7a10e6b16f9e35b223bada728871d253685538
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118748703"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568725"
 ---
 # <a name="languageid-property"></a>Propiedad LanguageID
 
-\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
@@ -205,9 +205,9 @@ Húngaro
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Si no establece el valor de **LanguageID** para el carácter, su identificador de idioma será el identificador de idioma del sistema actual si está instalado el archivo DLL de idioma del Agente correspondiente; de lo contrario, el idioma del carácter será inglés (EE. UU.).
+Si no establece el valor de **LanguageID** para el carácter, su identificador de idioma será el identificador de idioma actual del sistema si está instalado el archivo DLL de idioma del Agente correspondiente; de lo contrario, el idioma del carácter será Inglés (EE. UU.).
 
 Esta propiedad también determina el idioma del texto del globo de palabras, los comandos del menú emergente del carácter y el motor de reconocimiento de voz. También determina el idioma predeterminado para la salida de TTS.
 

@@ -4,12 +4,12 @@ description: 'Windows GDI+ define las estructuras siguientes:'
 ms.assetid: fc18b5a3-b9c8-4726-b331-dfc2b8b9ff3d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cb6dee67b74da53ba991ed0660b153a67957cf5f66006127a92d8cc73050c76
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ee02d20b049bd35054a17abbf0f5204946000e0e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118977365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473132"
 ---
 # <a name="gdi-structures"></a>GDI+ estructuras
 

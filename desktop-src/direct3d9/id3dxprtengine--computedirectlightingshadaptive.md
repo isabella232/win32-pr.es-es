@@ -1,5 +1,5 @@
 ---
-description: Calcula la contribución de iluminación directa a los objetos 3D donde el sonido de origen se representa mediante una aproximación armónica esférica (SH), mediante muestreo adaptable.
+description: Calcula la contribución de iluminación directa a objetos 3D donde el sonido de origen se representa mediante una aproximación armónica esférica (SH), mediante muestreo adaptable.
 ms.assetid: 792d8460-d608-4384-ac1c-556435074580
 title: Método ID3DXPRTEngine::ComputeDirectLightingSHAdaptive (D3DX9Mesh.h)
 ms.topic: reference
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 991337b31b10c39cccb622c2838bd53bcb25ad534ae8f896b6ec8f4842072de3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8abbcfd955fa909166b53f6e050b9aff5837508d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118801285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569908"
 ---
 # <a name="id3dxprtenginecomputedirectlightingshadaptive-method"></a>Método ID3DXPRTEngine::ComputeDirectLightingSHAdaptive
 
-Calcula la contribución de iluminación directa a los objetos 3D donde el sonido de origen se representa mediante una aproximación armónica esférica (SH), mediante muestreo adaptable. Este método genera nuevos vértices y caras en la malla para aproximarse con más precisión a la señal de transferencia de radiancia precalcalada (PRT).
+Calcula la contribución de iluminación directa a objetos 3D donde el sonido de origen se representa mediante una aproximación armónica esférica (SH), mediante muestreo adaptable. Este método genera nuevos vértices y caras en la malla para aproximarse con más precisión a la señal de transferencia de radiancia precalcalada (PRT).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -67,7 +67,7 @@ Umbral en el vector PRT que se usará para subdividir las caras y los vértices 
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Longitud mínima del borde facial que se generará en el muestreo adaptable. Si el método determina que el valor es demasiado pequeño, se especifica un valor dependiente del modelo. Si es cero, se especifica un valor predeterminado de 4.
+Longitud mínima del borde de la cara que se generará en el muestreo adaptable. Si el método determina que el valor es demasiado pequeño, se especifica un valor dependiente del modelo. Si es cero, se especifica un valor predeterminado de 4.
 
 </dd> <dt>
 
@@ -106,7 +106,7 @@ Si el método se realiza correctamente, el valor devuelto es D3D \_ OK. Si se pr
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

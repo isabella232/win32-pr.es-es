@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ff5149e3ca9c7ba71695acfe994728df52119e966e858d484904ac24ff4ecbde
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 517be3d72fa0711d2c814b960ea14f15c2b04fd6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118498707"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568881"
 ---
 # <a name="baseeapmethodconfig-schema-complex-types"></a>Tipos complejos de esquema baseeapmethodconfig
 

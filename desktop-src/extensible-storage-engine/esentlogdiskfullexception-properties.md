@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102099
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5ce61b3e1339a608fd54d96381d98299f31731b6a08270361501fa8106d4a709
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ad1ebb50988658ea67d4378d5c544218eeddf15
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119836765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569616"
 ---
 # <a name="esentlogdiskfullexception-properties"></a>Propiedades de EsentLogDiskFullException
 
@@ -34,7 +34,7 @@ El [tipo EsentLogDiskFullException](./esentlogdiskfullexception-class.md) expone
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentLogDiskFullException](./esentlogdiskfullexception-class.md) expone
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

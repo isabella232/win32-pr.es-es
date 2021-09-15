@@ -4,12 +4,12 @@ ms.assetid: 00391a49-8c81-4518-88a2-741ad5ee4ac3
 title: Rol del solicitante en la copia de seguridad de almacenes complejos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b22a1e49486aa8c22e780454724580c62cae27b0214178ddc42765151e990f9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a84dfa1b0b1837bacc2488b6bd9e3ffdd51b92c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117937811"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473350"
 ---
 # <a name="requester-role-in-backing-up-complex-stores"></a>Rol del solicitante en la copia de seguridad de almacenes complejos
 
@@ -163,7 +163,7 @@ Si es compatible con el sistema de escritura, el solicitante puede restaurar los
 
 ### <a name="directed-targets"></a>Destinos dirigidos
 
-En escenarios de restauración complicados, es posible que un escritor quiera asignar intervalos de un archivo de copia de seguridad a intervalos diferentes del mismo archivo o de otro. Esto se puede hacer mediante el mecanismo de destino dirigido. El solicitante puede determinar después de la fase [**IVssBackupComponents::P reRestore**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prerestore) que este mecanismo se usa para un componente llamando a [**IVssComponent::GetRestoreTarget**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getrestoretarget) y comprobando si se devuelve **VSS \_ RT \_ DIRECTED.** El solicitante puede obtener todas estas restauraciones redirigidas llamando a [**IVssComponent::GetDirectedTargetCount**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdirectedtargetcount) e [**IVssComponent::GetDirectedTarget**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdirectedtarget). **IVssComponent::GetDirectedTarget** devolverá una ruta de acceso completa a un archivo de origen en la copia de seguridad y una ruta de acceso completa a un archivo de destino en el que se restaurará. También devuelve una lista de intervalos para cada uno de estos archivos. A continuación, el solicitante es responsable de restaurar los intervalos especificados en el archivo de origen a los intervalos asignados en el archivo de destino. El formato de la cadena de intervalos es el mismo que en [**IVssComponent::GetPartialFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpartialfile).
+En escenarios de restauración complicados, es posible que un escritor quiera asignar intervalos de un archivo de copia de seguridad a intervalos diferentes del mismo archivo o de otro. Esto se puede hacer mediante el mecanismo de destino dirigido. El solicitante puede determinar después de la fase [**IVssBackupComponents::P reRestore**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-prerestore) que este mecanismo se usa para un componente llamando a [**IVssComponent::GetRestoreTarget**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getrestoretarget) y comprobando si se devuelve **VSS \_ RT \_ DIRECTED**. El solicitante puede obtener todas estas restauraciones redirigidas llamando a [**IVssComponent::GetDirectedTargetCount**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdirectedtargetcount) e [**IVssComponent::GetDirectedTarget**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getdirectedtarget). **IVssComponent::GetDirectedTarget** devolverá una ruta de acceso completa a un archivo de origen en la copia de seguridad y una ruta de acceso completa a un archivo de destino en el que se restaurará. También devuelve una lista de intervalos para cada uno de estos archivos. A continuación, el solicitante es responsable de restaurar los intervalos especificados en el archivo de origen a los intervalos asignados en el archivo de destino. El formato de la cadena de intervalos es el mismo que en [**IVssComponent::GetPartialFile**](/windows/desktop/api/VsWriter/nf-vswriter-ivsscomponent-getpartialfile).
 
 -   [Rol escritor en copias de seguridad incrementales y diferenciales de VSS](writer-role-in-vss-incremental-and-differential-backups.md)
 -   [Rol solicitante en copias de seguridad incrementales y diferenciales de VSS](requestor-role-in-vss-incremental-and-differential-backups.md)

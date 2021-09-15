@@ -1,7 +1,7 @@
 ---
-description: Obtiene el número de búferes de vértices en la malla.
+description: Obtiene el número de búferes de vértices de la malla.
 ms.assetid: 22e6cf53-9347-4570-86a1-09d06bfdf592
-title: 'ID3DX10Mesh:: GetVertexBufferCount (método) (D3DX10. h)'
+title: Método ID3DX10Mesh::GetVertexBufferCount (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,15 +15,15 @@ api_location:
 - D3DX10.lib
 - D3DX10.dll
 ms.openlocfilehash: 01d769cf2b198a66a695750fc8b084a94df10a7e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104280421"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473250"
 ---
-# <a name="id3dx10meshgetvertexbuffercount-method"></a>ID3DX10Mesh:: GetVertexBufferCount (método)
+# <a name="id3dx10meshgetvertexbuffercount-method"></a>Método ID3DX10Mesh::GetVertexBufferCount
 
-Obtiene el número de búferes de vértices en la malla.
+Obtiene el número de búferes de vértices de la malla.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -40,9 +40,9 @@ Este método no tiene parámetros.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-El número de búferes de vértices en la malla.
+Número de búferes de vértices de la malla.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ El número de búferes de vértices en la malla.
 
 | Requisito | Value |
 |--------------------|---------------------------------------------------------------------------------------|
-| Encabezado<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| Encabezado<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ El número de búferes de vértices en la malla.
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces de D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

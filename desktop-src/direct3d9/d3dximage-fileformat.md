@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9tex.h
-ms.openlocfilehash: 715b9f0f6d8c56153d51c9c19b70ba253e508619229f52201a28f23c1902d26e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3b1195e7503ff32e92cdbafde941b811dcf86427
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119123171"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569668"
 ---
 # <a name="d3dximage_fileformat-enumeration"></a>D3DXIMAGE \_ FILEFORMAT (enumeración)
 
 Describe los formatos de archivo de imagen admitidos. Vea Comentarios para obtener descripciones de estos formatos.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -118,7 +118,7 @@ Fuerza esta enumeración a compilar hasta 32 bits de tamaño. Sin este valor, al
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las funciones que comienzan por D3DXLoadxxx admiten todos los formatos enumerados. Las funciones que comienzan por D3DXSavexxx admiten todos los formatos enumerados, excepto los formatos Truevision (.tga) y portablemap (.ppm).
 
@@ -130,9 +130,9 @@ En la tabla siguiente se enumeran los formatos de entrada y salida disponibles.
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | .bmp           | Windows de mapa de bits. Contiene un encabezado que describe la resolución del dispositivo en el que se creó el rectángulo de píxeles, las dimensiones del rectángulo, el tamaño de la matriz de bits, una paleta lógica y una matriz de bits que define la relación entre los píxeles de la imagen de mapa de bits y las entradas de la paleta lógica. |
 | .dds           | Formato de archivo de DirectDraw Surface. Almacena texturas, texturas de volumen y mapas de entornos cúbicas, con o sin niveles de mapa mipmap y con o sin compresión de píxeles. Vea [DDS.](../direct3ddds/dx-graphics-dds.md)                                                                                                                                       |
-| .dib           | Windows Dib. Contiene una matriz de bits combinada con estructuras que especifican el ancho y alto de la imagen de mapa de bits, el formato de color del dispositivo donde se creó la imagen y la resolución del dispositivo usado para crear esa imagen.                                                                                                              |
+| .dib           | Windows DIB. Contiene una matriz de bits combinada con estructuras que especifican el ancho y alto de la imagen de mapa de bits, el formato de color del dispositivo donde se creó la imagen y la resolución del dispositivo usado para crear esa imagen.                                                                                                              |
 | .hdr           | Formato HDR. Codifica cada píxel como un color RGBE de 32 bits, con 8 bits de mantisa para rojo, verde y azul, y un exponente compartido de 8 bits. Cada canal se comprime por separado con codificación de longitud de ejecución (RLE).                                                                                                                                       |
-| .jpg           | Estándar JPEG. Especifica la compresión variable de los archivos de documento de color RGB de 24 bits y de escala Tagged Image File Format gris (TIFF) de 8 bits.                                                                                                                                                                                                       |
+| .jpg           | Estándar JPEG. Especifica la compresión variable de los archivos de documento de imagen DE COLOR RGB de 24 bits Tagged Image File Format escala de grises (TIFF) de 8 bits.                                                                                                                                                                                                       |
 | .pfm           | Formato de mapa flotante portátil. Formato de imagen de punto flotante sin formato, sin compresión. El encabezado de archivo especifica el ancho de la imagen, el alto, el monocromo o el color, y el orden de las palabras de la máquina. Los datos de píxel se almacenan como valores de punto flotante de 32 bits, con 3 valores por píxel para color y un valor por píxel para monocromo.                                |
 | .png           | Formato PNG. Formato de mapa de bits no propietario que usa la compresión sin pérdida.                                                                                                                                                                                                                                                                            |
 | .ppm           | Formato portable deMap. Formato de archivo binario o ASCII para imágenes de color que incluye el alto y ancho de la imagen y el valor máximo del componente de color.                                                                                                                                                                                                 |
@@ -154,7 +154,7 @@ Vea [Tipos de mapas de bits](../gdiplus/-gdiplus-types-of-bitmaps-about.md) para
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

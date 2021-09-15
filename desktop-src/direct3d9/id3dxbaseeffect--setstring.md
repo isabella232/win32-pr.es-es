@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: cc0575ca8364d04b87b9b006b8fe0c3c14de52297443b032c8e3c8e69031b50d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1a7c4f86c6b7fa78c869eb1d5bd49634ec4b496d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119893675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569316"
 ---
 # <a name="id3dxbaseeffectsetstring-method"></a>Método ID3DXBaseEffect::SetString
 

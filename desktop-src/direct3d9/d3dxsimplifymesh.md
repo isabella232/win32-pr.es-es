@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 3cc0bfe18afef7b91dbdf887500b485a446b154cb5775cbf950a7e712a332a9f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0258047631a41e31d108ba45531988e4cb6a35ae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119749785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569317"
 ---
 # <a name="d3dxsimplifymesh-function"></a>Función D3DXSimplifyMesh
 
@@ -87,7 +87,7 @@ Puntero a una matriz de ponderaciones de vértices. Si este parámetro se establ
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número de vértices o caras, en función de la marca establecida en el parámetro *Options,* por el que se va a simplificar la malla de origen.
+Número de vértices o caras, según la marca establecida en el parámetro *Options,* por el que simplificar la malla de origen.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Número de vértices o caras, en función de la marca establecida en el parámet
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Especifica opciones de simplificación para la malla. Se puede establecer una de las [**marcas de D3DXMESHSIMP.**](./d3dxmeshsimp.md)
+Especifica opciones de simplificación para la malla. Se puede establecer una de [**las marcas de D3DXMESHSIMP.**](./d3dxmeshsimp.md)
 
 </dd> <dt>
 
@@ -115,9 +115,9 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta función genera una malla que tiene vértices o caras *MinValue.*
+Esta función genera una malla que tiene vértices *MinValue* o caras.
 
 Si el proceso de simplificación no puede reducir la malla a *MinValue,* la llamada se realiza correctamente porque *MinValue* es un mínimo deseado, no un mínimo absoluto.
 
@@ -137,7 +137,7 @@ AttributeWeights.Tex[8]   =  {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
 
 
 
-Esta estructura predeterminada es la que la mayoría de las aplicaciones deben usar porque solo tiene en cuenta el ajuste geométrico y normal. Solo en casos especiales se deben modificar los demás campos de miembro.
+Esta estructura predeterminada es lo que la mayoría de las aplicaciones deben usar porque solo tiene en cuenta el ajuste geométrico y normal. Solo en casos especiales será necesario modificar los demás campos de miembro.
 
 ## <a name="requirements"></a>Requisitos
 

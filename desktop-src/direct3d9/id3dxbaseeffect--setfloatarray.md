@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 0d098bfd706e7fbdd063f049ff8dff1735e385e437d1ee82cd75232744d3dabd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9927f3cd79d7950a94e62881089fb06c67395bac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119848605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569917"
 ---
 # <a name="id3dxbaseeffectsetfloatarray-method"></a>Método ID3DXBaseEffect::SetFloatArray
 

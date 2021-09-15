@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7182f73c5fd049f243bdcef389b14e7dcbfe80ed78414fe026145b1b2a7eebab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f643bfa0619d78331623747c8691945448fbbf68
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119621915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473212"
 ---
 # <a name="esentcolumnnotfoundexception-constructor"></a>Constructor EsentColumnNotFoundException
 

@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101580
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: bf524e16551e4e7939cf44d4dabac1af8be13641827df9d5eab6781e80f37fa8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 20362f869a77db35ae14039fd433d9a86d474ba3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118082173"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473192"
 ---
 # <a name="esententrypointnotfoundexception-methods"></a>Métodos de EsentEntryPointNotFoundException 
 

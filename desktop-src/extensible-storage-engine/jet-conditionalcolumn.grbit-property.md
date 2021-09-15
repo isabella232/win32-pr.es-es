@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 36eb423590826dae54ceeef76c7cb813b8058c55f753d48e40ac69f65fba1b5c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 57d65a2593b9ba805b56cee56e6fa8bf6fa48cf0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119112254"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473160"
 ---
 # <a name="jet_conditionalcolumngrbit-property"></a>JET_CONDITIONALCOLUMN.grbit, propiedad
 
@@ -40,7 +40,7 @@ Obtiene o establece las opciones para el índice condicional.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -64,7 +64,7 @@ public ConditionalColumnGrbit grbit { get; set; }
 
 Tipo: [Microsoft.Isam.Esent.Interop.ConditionalColumnGrbit](./conditionalcolumngrbit-enumeration.md)  
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

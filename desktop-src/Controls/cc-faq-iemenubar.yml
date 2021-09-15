@@ -6,11 +6,11 @@ metadata:
   ms.topic: article
   ms.date: 05/31/2018
   ms.openlocfilehash: 8bc836c0c8060a1ad23926220cdcfa6f7b6e651f
-  ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
+  ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
   ms.translationtype: MT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 08/13/2021
-  ms.locfileid: "121858821"
+  ms.lasthandoff: 09/13/2021
+  ms.locfileid: "127569793"
 title: Cómo crear una barra de menús Explorer-Style Internet
 summary: >
   A primera vista, la barra de menús de Microsoft Internet Explorer 5 y versiones posteriores es similar a un menú estándar. Sin embargo, tiene un aspecto bastante diferente al empezar a usarlo.
@@ -47,105 +47,84 @@ sections:
 - name: Omitido
   questions:
   - question: >
-      Making a Toolbar into a Menu Bar
-    answer: >
-      To make a toolbar into a menu bar:
-
-
-      -   Create a flat toolbar by including [**TBSTYLE\_FLAT**](toolbar-control-and-button-styles.md) with the other window style flags. The **TBSTYLE\_FLAT** style also enables hot-tracking. With this style, the menu bar looks much like a standard menu until the user activates a button. Then, the button appears to stand out from the toolbar and depress when it is clicked, just like a standard button. Because hot-tracking is enabled, all that is needed to activate a button is for the cursor to hover over it. If the cursor moves to another button, it will be activated and the old button deactivated.
-
-      -   Create list-style buttons by including [**TBSTYLE\_LIST**](toolbar-control-and-button-styles.md) with the other window style flags. This style creates a thinner button that looks more like a standard top-level menu item.
-
-      -   Make the buttons text-only by setting the **iBitmap** member of the button's [**TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) structure to I\_IMAGENONE and the **iString** member to the button text.
-
-      -   Give each button the [**BTNS\_DROPDOWN**](toolbar-control-and-button-styles.md) style. When the button is clicked, the toolbar control sends your application a [TBN\_DROPDOWN](tbn-dropdown.md) notification to prompt it to display the button's menu.
-
-      -   Incorporate the menu bar into a rebar band. Enable both grippers and chevrons, as discussed in [How to Create an Internet Explorer-Style Toolbar](cc-faq-ietoolbar.yml).
-
-      -   Implement a [TBN\_DROPDOWN](tbn-dropdown.md) handler to display the button's *drop-down menu* when it is clicked. The drop-down menu is a type of pop-up menu. It is created by using the [**TrackPopupMenu**](/windows/desktop/api/winuser/nf-winuser-trackpopupmenu) function, with its upper-left corner aligned with the lower-left corner of the button.
-
-      -   Implement keyboard navigation, so that the menu bar is fully accessible without a mouse.
-
-      -   Implement menu hot-tracking. With standard menus, once a top level menu item's menu has been displayed, moving the cursor over another top-level item automatically displays its menu and collapses the menu of the previous item. The toolbar control will hot-track the cursor and change the button image, but it does automatically display the new menu. Your application must do so explicitly.
-
-
-      Most of these items are straightforward to implement and are discussed elsewhere. See [How to Create an Internet Explorer-Style Toolbar](cc-faq-ietoolbar.yml), [About Toolbar Controls](toolbar-controls-overview.md), or [About Rebar Controls](rebar-controls.md) for a general discussion of how to use toolbars and rebar controls. See [Menus](/windows/desktop/menurc/menus) for a discussion of how to handle pop-up menus. The final two items, keyboard navigation and menu hot-tracking, are discussed in the remainder of this topic.
+      Convertir una barra de herramientas en una barra de menús
+    answer: "Para convertir una barra de herramientas en una barra de menús:\n\n-   Cree una barra de herramientas plana incluyendo [**TBSTYLE \\_ FLAT**](toolbar-control-and-button-styles.md) con las otras marcas de estilo de ventana. El **estilo TBSTYLE \\_ FLAT** también permite el seguimiento en caliente. Con este estilo, la barra de menús se parece mucho a un menú estándar hasta que el usuario activa un botón. A continuación, parece que el botón destaca de la barra de herramientas y se desprime cuando se hace clic en él, al igual que un botón estándar. Dado que el seguimiento activo está habilitado, todo lo que se necesita para activar un botón es que el cursor mantenga el puntero sobre él. Si el cursor se mueve a otro botón, se activará y se desactivará el botón anterior.\n-   Cree botones de estilo de lista mediante [**la inclusión de TBSTYLE \\_ LIST**](toolbar-control-and-button-styles.md) con las otras marcas de estilo de ventana. Este estilo crea un botón más pequeño que se parece más a un elemento de menú de nivel superior estándar.\n-   Haga que los botones solo usen texto estableciendo el miembro **iBitmap** de la estructura [**TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) del botón en I IMAGENONE y el miembro iString en el \\_ texto del botón. \n-   Dé a cada botón el [**estilo \\_ DESPLEGABLE BTNS.**](toolbar-control-and-button-styles.md) Cuando se hace clic en el botón, el control de barra de herramientas envía a la aplicación una notificación [DESPLEGABLE DE TBN \\_ ](tbn-dropdown.md) para solicitar que muestre el menú del botón.\n-   Incorpore la barra de menús a una banda de barra de rebar. Habilite los controles y los botones de contenido adicional, como se describe en Creación de una barra de [herramientas Explorer-Style Internet.](cc-faq-ietoolbar.yml)\n-   Implemente un controlador DE LISTA DESPLEGABLE [ \\_ DE TBN](tbn-dropdown.md) para mostrar el menú desplegable del botón *cuando* se haga clic en él. El menú desplegable es un tipo de menú emergente. Se crea mediante la función [**TrackPopupMenu,**](/windows/desktop/api/winuser/nf-winuser-trackpopupmenu) con su esquina superior izquierda alineada con la esquina inferior izquierda del botón.\n-   Implemente la navegación con el teclado para que la barra de menús sea totalmente accesible sin un mouse.\n-   Implemente el seguimiento rápido del menú. Con los menús estándar, una vez que se ha mostrado el menú de un elemento de menú de nivel superior, al mover el cursor sobre otro elemento de nivel superior se muestra automáticamente su menú y se contrae el menú del elemento anterior. El control de barra de herramientas realizará un seguimiento rápido del cursor y cambiará la imagen del botón, pero muestra automáticamente el nuevo menú. La aplicación debe hacerlo explícitamente.\n\nLa mayoría de estos elementos son fáciles de implementar y se analizan en otro lugar. Vea [How to Create an Internet Explorer-Style Toolbar](cc-faq-ietoolbar.yml), About Toolbar [Controls](toolbar-controls-overview.md)o [About Rebar Controls](rebar-controls.md) para obtener una explicación general sobre cómo usar barras de herramientas y controles rebar. Consulte [Menús](/windows/desktop/menurc/menus) para obtener una explicación de cómo controlar los menús emergentes. Los dos últimos elementos, la navegación mediante el teclado y el seguimiento de menús, se analizan en el resto de este tema.\n"
   - question: >
-      Handling Navigation with Menu Hot-Tracking Disabled
+      Control de la navegación con menús Hot-Tracking deshabilitado
     answer: >
-      Users can choose to navigate the menu bar with the mouse, the keyboard, or a mixture of both. To implement menu bar navigation, your application must handle toolbar notifications and monitor the mouse and keyboard. This task can be broken into two distinct parts: with and without menu hot-tracking. This section discusses how to handle navigation when no menus are displayed and menu hot-tracking is not enabled.
+      Los usuarios pueden elegir navegar por la barra de menús con el mouse, el teclado o una combinación de ambos. Para implementar la navegación de la barra de menús, la aplicación debe controlar las notificaciones de la barra de herramientas y supervisar el mouse y el teclado. Esta tarea se puede dividir en dos partes distintas: con y sin seguimiento de menús. En esta sección se describe cómo controlar la navegación cuando no se muestra ningún menú y el seguimiento de menús no está habilitado.
   - question: >
-      Mouse Navigation
+      Navegación del mouse
     answer: >
-      If menu hot-tracking is disabled, you can treat a menu bar as a normal toolbar. If the user is navigating with a mouse, all your application needs to do is handle the [TBN\_DROPDOWN](tbn-dropdown.md) notification. When this notification is received, display the appropriate drop-down menu, and enable menu hot-tracking. From then on, you are in the menu hot-tracking regime discussed in [Handling Navigation with Menu Hot-Tracking Enabled](#handling-navigation-with-menu-hot-tracking-enabled).
+      Si el seguimiento de menús está deshabilitado, puede tratar una barra de menús como una barra de herramientas normal. Si el usuario navega con un mouse, lo único que debe hacer la aplicación es controlar la [notificación \_ DESPLEGABLE de TBN.](tbn-dropdown.md) Cuando se reciba esta notificación, muestre el menú desplegable adecuado y habilite el seguimiento rápido del menú. A partir de ese momento, se encuentra en el menú seguimiento rápido que se describe en Control de la navegación con Hot-Tracking [habilitado.](#handling-navigation-with-menu-hot-tracking-enabled)
 
 
-      As discussed in [Mixed Navigation](#mixed-navigation), you also need to handle the [TBN\_HOTITEMCHANGE](tbn-hotitemchange.md) notification to keep track of the active button. This notification is irrelevant if the user is only navigating with the mouse, but it is necessary when mouse and keyboard navigation are mixed.
+      Como se describe en [Navegación](#mixed-navigation)mixta, también debe controlar la notificación [ \_ HOTITEMCHANGE](tbn-hotitemchange.md) de TBN para realizar un seguimiento del botón activo. Esta notificación es irrelevante si el usuario solo navega con el mouse, pero es necesario cuando la navegación del mouse y el teclado se mezclan.
   - question: >
-      Keyboard Navigation
+      Navegación mediante teclado
     answer: >
-      As noted in the previous section, the user can do a number of navigation operations with the keyboard when menu hot-tracking is disabled. Toolbar controls support keyboard navigation only if they have focus. They also do not handle all the key presses that are needed for menu bars. The simplest solution to handling keyboard navigation is to process the relevant key press events explicitly.
+      Como se indicó en la sección anterior, el usuario puede realizar varias operaciones de navegación con el teclado cuando el seguimiento de menús está deshabilitado. Los controles de la barra de herramientas solo admiten la navegación mediante el teclado si tienen el foco. Tampoco controlan todas las pulsaciones de tecla necesarias para las barras de menú. La solución más sencilla para controlar la navegación mediante el teclado es procesar explícitamente los eventos de pulsación de teclas pertinentes.
 
 
-      If menu hot-tracking is disabled, your application must handle these key press events in the following way:
+      Si el seguimiento rápido del menú está deshabilitado, la aplicación debe controlar estos eventos de pulsación de tecla de la siguiente manera:
 
 
-      -   The F10 key. Activate the first button with [**TB\_SETHOTITEM**](tb-sethotitem.md).
+      -   Tecla F10. Active el primer botón con [**TB \_ SETHOTITEM**](tb-sethotitem.md).
 
-      -   The LEFT ARROW and RIGHT ARROW keys. Activate the adjacent button with [**TB\_SETHOTITEM**](tb-sethotitem.md). If the user attempts to navigate off either end of the menu bar, activate the first button at the opposite end.
+      -   Teclas DE FLECHA IZQUIERDA y FLECHA DERECHA. Active el botón adyacente con [**TB \_ SETHOTITEM**](tb-sethotitem.md). Si el usuario intenta navegar fuera de cualquier extremo de la barra de menús, active el primer botón en el extremo opuesto.
 
-      -   The ESCAPE key. Deactivate the active button with [**TB\_SETHOTITEM**](tb-sethotitem.md). The menu bar should be returned to the state it had prior to activating the first button.
+      -   Tecla ESCAPE. Desactive el botón activo con [**TB \_ SETHOTITEM**](tb-sethotitem.md). La barra de menús debe devolverse al estado que tenía antes de activar el primer botón.
 
-      -   An ALT-*Key* accelerator key. Use the [**TB\_MAPACCELERATOR**](tb-mapaccelerator.md) message to determine which button the *Key* character corresponds to. Display the button's drop-down menu and enable menu hot-tracking.
+      -   Tecla alt:*tecla de* aceleración. Use el [**mensaje \_ MAPACCELERATOR de TB**](tb-mapaccelerator.md) para determinar a qué botón corresponde el carácter clave.  Muestre el menú desplegable del botón y habilite el seguimiento de menús en caliente.
 
-      -   The DOWN ARROW key. If a button is active but no menu has been displayed, display the button's menu and enable menu hot-tracking.
+      -   Tecla FLECHA ABAJO. Si un botón está activo pero no se ha mostrado ningún menú, muestre el menú del botón y habilite el seguimiento activo del menú.
 
-      -   The ENTER key. Deactivate the active button with [**TB\_SETHOTITEM**](tb-sethotitem.md). The menu bar should be returned to the state it had prior to activating the first button.
+      -   Tecla ENTRAR. Desactive el botón activo con [**TB \_ SETHOTITEM**](tb-sethotitem.md). La barra de menús debe devolverse al estado que tenía antes de activar el primer botón.
   - question: >
-      Mixed Navigation
+      Navegación mixta
     answer: >
-      The keyboard navigation handlers outlined in the preceding section basically do two tasks: keep track of the active button and display the appropriate menu when a button is selected. These handlers are sufficient as long as the user navigates only with the keyboard. However, users often mix keyboard and mouse navigation. For example, they might activate the first button with the F10 key, use the mouse to activate a different button, and then open its menu with the DOWN ARROW key. If you are only monitoring key presses to keep track of the active key, you will display the wrong menu. You must also handle the [TBN\_HOTITEMCHANGE](tbn-hotitemchange.md) notification to accurately keep track of the active button.
+      Los controladores de navegación del teclado descritos en la sección anterior básicamente hacen dos tareas: realizar un seguimiento del botón activo y mostrar el menú adecuado cuando se selecciona un botón. Estos controladores son suficientes siempre que el usuario navegue solo con el teclado. Sin embargo, los usuarios suelen mezclar la navegación con el teclado y el mouse. Por ejemplo, podrían activar el primer botón con la tecla F10, usar el mouse para activar otro botón y, a continuación, abrir su menú con la tecla FLECHA ABAJO. Si solo está supervisando las pulsaciones de tecla para realizar un seguimiento de la tecla activa, mostrará el menú incorrecto. También debe controlar la notificación [ \_ HOTITEMCHANGE de TBN](tbn-hotitemchange.md) para realizar un seguimiento preciso del botón activo.
   - question: >
-      Handling Navigation with Menu Hot-Tracking Enabled
+      Control de la navegación con menús Hot-Tracking habilitado
     answer: >
-      When menu hot-tracking is enabled, your application must change the way it responds to user navigation. To replicate the behavior of standard menus, you must implement the following features explicitly.
+      Cuando el seguimiento de menús está habilitado, la aplicación debe cambiar la forma en que responde a la navegación del usuario. Para replicar el comportamiento de los menús estándar, debe implementar explícitamente las siguientes características.
 
 
-      With mouse navigation:
+      Con la navegación del mouse:
 
 
-      -   If the user moves the cursor over another button, that menu immediately appears and the previous menu disappears.
+      -   Si el usuario mueve el cursor sobre otro botón, ese menú aparece inmediatamente y el menú anterior desaparece.
 
-      -   Menu hot-tracking stays active until the user selects a command or clicks a point that is not part of the menu region. Either action deactivates menu hot-tracking until another button is clicked.
+      -   El seguimiento activo del menú permanece activo hasta que el usuario selecciona un comando o hace clic en un punto que no forma parte de la región del menú. Cualquiera de las acciones desactiva el seguimiento rápido del menú hasta que se hace clic en otro botón.
 
-      -   If the cursor moves off the menu, the current drop-down menu remains until the cursor moves back onto, or the user clicks a point outside, the area covered by the menu. If the cursor returns to a different button than the one currently being displayed, the old menu is collapsed and the new menu is displayed.
-
-
-      With keyboard navigation:
+      -   Si el cursor se mueve fuera del menú, el menú desplegable actual permanece hasta que el cursor vuelve a moverse hacia o el usuario hace clic en un punto fuera del área cubierta por el menú. Si el cursor vuelve a un botón diferente al que se muestra actualmente, el menú antiguo se contrae y se muestra el nuevo menú.
 
 
-      -   The RIGHT ARROW key moves the focus to the right. If the item has a submenu, display the submenu. If the item does not have a submenu, collapse the menu and any submenus, activate the next button with [**TB\_SETHOTITEM**](tb-sethotitem.md), and display the menu for the adjacent button. If the last button is active when this message is received, display the menu for the first button.
-
-      -   The LEFT ARROW key moves the focus to the left. If the item is a submenu, collapse it and shift focus to its parent menu. If the item is not a submenu, collapse the menu, activate the next button with [**TB\_SETHOTITEM**](tb-sethotitem.md), and display the menu for that button.
+      Con la navegación mediante el teclado:
 
 
-      -   The ESCAPE key backs the display up one step.
-          -   If a submenu is displayed, it is collapsed and focus shifts to the parent menu.
-          -   If a button's menu is displayed, it is collapsed and menu hot-tracking is disabled. The item's button remains active.
-          -   If no menus are displayed but a button is active, the button is deactivated and menu hot-tracking is disabled.
-      -   The UP ARROW and DOWN ARROW keys are used only to navigate within a particular menu.
+      -   La tecla FLECHA DERECHA mueve el foco a la derecha. Si el elemento tiene un submenú, muestre el submenú. Si el elemento no tiene un submenú, contraiga el menú y los submenús, active el botón siguiente con [**TB \_ SETHOTITEM**](tb-sethotitem.md)y muestre el menú del botón adyacente. Si el último botón está activo cuando se recibe este mensaje, muestre el menú del primer botón.
 
-      -   The ENTER key launches the command associated with a menu item. If the menu item has a submenu, the ENTER key displays it.
+      -   La tecla DE FLECHA IZQUIERDA mueve el foco a la izquierda. Si el elemento es un submenú, contraigalo y cambie el foco a su menú primario. Si el elemento no es un submenú, contraiga el menú, active el botón siguiente con [**TB \_ SETHOTITEM**](tb-sethotitem.md)y muestre el menú de ese botón.
 
 
-      As with the menu hot-tracking disabled case, your application must be able to handle mouse, keyboard, and mixed navigation. However, the fact that a menu is displayed means that messaging will have to be handled somewhat differently.
+      -   La tecla ESCAPE hace una copia de seguridad de la pantalla en un paso.
+          -   Si se muestra un submenú, se contrae y el foco cambia al menú primario.
+          -   Si se muestra el menú de un botón, se contrae y se deshabilita el seguimiento rápido del menú. El botón del elemento permanece activo.
+          -   Si no se muestra ningún menú pero hay un botón activo, el botón se desactiva y se deshabilita el seguimiento activo del menú.
+      -   Las teclas FLECHA ARRIBA y FLECHA ABAJO solo se usan para navegar dentro de un menú determinado.
+
+      -   La tecla ENTRAR inicia el comando asociado a un elemento de menú. Si el elemento de menú tiene un submenú, la tecla ENTRAR lo muestra.
+
+
+      Al igual que con el caso de seguimiento en caliente deshabilitado del menú, la aplicación debe ser capaz de controlar la navegación mixta, el teclado y el mouse. Sin embargo, el hecho de que se muestre un menú significa que la mensajería tendrá que administrarse de forma ligeramente diferente.
   - question: >
-      Message Processing for Menu Hot-Tracking
+      Procesamiento de mensajes para el menú Hot-Tracking
     answer: >
-      Menu hot-tracking requires that a menu be displayed at all times, apart from the brief interval required to switch to a new menu. However, the drop-down menu that is displayed by [**TrackPopupMenu**](/windows/desktop/api/winuser/nf-winuser-trackpopupmenu) is modal. Your application will continue to receive some messages directly, including [**WM\_COMMAND**](/windows/desktop/menurc/wm-command), [TBN\_HOTITEMCHANGE](tbn-hotitemchange.md), and normal menu-related messages such as [**WM\_MENUSELECT**](/windows/desktop/menurc/wm-menuselect). However, it will not receive low-level keyboard or mouse messages directly. To handle messages such as [**WM\_MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove), you must set a message hook to intercept messages that are directed to the menu.
+      El seguimiento rápido de menús requiere que se muestre un menú en todo momento, además del breve intervalo necesario para cambiar a un nuevo menú. Sin embargo, el menú desplegable que muestra [**TrackPopupMenu**](/windows/desktop/api/winuser/nf-winuser-trackpopupmenu) es modal. La aplicación seguirá recibiendo algunos mensajes directamente, como [**WM \_ COMMAND**](/windows/desktop/menurc/wm-command), [TBN \_ HOTITEMCHANGE](tbn-hotitemchange.md)y mensajes normales relacionados con el menú, como [**WM \_ MENUSELECT**](/windows/desktop/menurc/wm-menuselect). Sin embargo, no recibirá directamente mensajes de teclado o mouse de bajo nivel. Para controlar mensajes como [**WM \_ MOUSEMOVE,**](/windows/desktop/inputdev/wm-mousemove)debe establecer un enlace de mensajes para interceptar los mensajes que se dirigen al menú.
 
 
-      When a drop-down menu is displayed, set the message hook by calling the [**SetWindowsHookEx**](/windows/desktop/api/winuser/nf-winuser-setwindowshookexa) function with the *idHook* parameter set to WH\_MSGFILTER. All messages intended for the menu will be passed to your [hook procedure](/previous-versions/windows/desktop/legacy/ms644987(v=vs.85)). For example, the following code fragment sets a message hook that will trap messages that are going to a drop-down menu. `MsgHook` is the name of the hook procedure, and `hhookMsg` is the handle to the procedure.
+      Cuando se muestre un menú desplegable, establezca el enlace de mensajes llamando a la función [**SetWindowsHookEx**](/windows/desktop/api/winuser/nf-winuser-setwindowshookexa) con el parámetro *idHook* establecido en WH \_ MSGFILTER. Todos los mensajes destinados al menú se pasarán al procedimiento [de enlace](/previous-versions/windows/desktop/legacy/ms644987(v=vs.85)). Por ejemplo, el siguiente fragmento de código establece un enlace de mensaje que capturará los mensajes que van a un menú desplegable. `MsgHook` es el nombre del procedimiento de enlace y `hhookMsg` es el identificador del procedimiento.
 
 
       ```
@@ -155,16 +134,16 @@ sections:
       ```
 
 
-      Menu messages are identified by setting the hook procedure's *nCode* parameter to MSGF\_MENU. The *lParam* parameter will point to a [**MSG**](/windows/win32/api/winuser/ns-winuser-msg) structure with the message. The details of which messages need to be handled, and how, are discussed in the remainder of this topic.
+      Los mensajes de menú se identifican estableciendo el parámetro *nCode* del procedimiento de enlace en MSGF \_ MENU. El *parámetro lParam* apuntará a una [**estructura MSG**](/windows/win32/api/winuser/ns-winuser-msg) con el mensaje . Los detalles de los mensajes que se deben controlar y cómo se deban tratar en el resto de este tema.
 
 
-      Your application must pass all messages on to the next message hook by calling the [**CallNextHookEx**](/windows/desktop/api/winuser/nf-winuser-callnexthookex) function. You must also send mouse messages directly to the toolbar control, making sure to convert any point coordinates to the toolbar client coordinate space. Sending the messages directly ensures that the toolbar control receives the appropriate mouse messages. For instance, the toolbar needs to receive [**WM\_MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) messages in order to hot-track its buttons.
+      La aplicación debe pasar todos los mensajes al siguiente enlace de mensajes mediante una llamada a la [**función CallNextHookEx.**](/windows/desktop/api/winuser/nf-winuser-callnexthookex) También debe enviar mensajes del mouse directamente al control de barra de herramientas y asegurarse de convertir las coordenadas de punto en el espacio de coordenadas del cliente de la barra de herramientas. El envío directo de los mensajes garantiza que el control de barra de herramientas recibe los mensajes del mouse adecuados. Por ejemplo, la barra de herramientas debe recibir [**mensajes \_ WM MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) para realizar un seguimiento rápido de sus botones.
 
 
-      When a new button is activated, your application must collapse the old drop-down menu with a [**WM\_CANCELMODE**](/windows/desktop/winmsg/wm-cancelmode) message, and display a new menu. It must also collapse the drop-down menu when focus is taken from the menu bar with keyboard navigation or by clicking outside the menu area. Whenever you collapse a menu, you should free its message hook by using the [**UnhookWindowsHookEx**](/windows/desktop/api/winuser/nf-winuser-unhookwindowshookex) function. If you need to display another drop-down menu, create a new message hook. When a command is launched, the menu will be collapsed automatically but you must explicitly free the message hook.
+      Cuando se activa un botón nuevo, la aplicación debe contraer el menú desplegable anterior con un mensaje [**\_ CANCELMODE**](/windows/desktop/winmsg/wm-cancelmode) de WM y mostrar un nuevo menú. También debe contraer el menú desplegable cuando se toma el foco desde la barra de menús con navegación con el teclado o haciendo clic fuera del área de menú. Cada vez que contrae un menú, debe liberar su enlace de mensajes mediante la función [**UnhookWindowsHookEx.**](/windows/desktop/api/winuser/nf-winuser-unhookwindowshookex) Si necesita mostrar otro menú desplegable, cree un nuevo enlace de mensajes. Cuando se inicia un comando, el menú se contrae automáticamente, pero debe liberar explícitamente el enlace de mensajes.
 
 
-      The following code example frees the message hook that was set in the previous example.
+      En el ejemplo de código siguiente se libera el enlace de mensaje que se estableció en el ejemplo anterior.
 
 
 
@@ -174,21 +153,21 @@ sections:
 
       ```
   - question: >
-      Mouse Navigation
+      Navegación del mouse
     answer: >
-      When a normal toolbar control hot-tracks buttons, it highlights the active button and sends the application a [TBN\_HOTITEMCHANGE](tbn-hotitemchange.md) notification each time a new button is activated. Your application is responsible for displaying the appropriate drop-down menu. It must:
+      Cuando una barra de herramientas normal controla los botones de seguimiento activo, resalta el botón activo y envía a la aplicación una notificación [ \_ HOTITEMCHANGE TBN](tbn-hotitemchange.md) cada vez que se activa un botón nuevo. La aplicación es responsable de mostrar el menú desplegable adecuado. Así, debe:
 
 
-      -   Handle the [TBN\_HOTITEMCHANGE](tbn-hotitemchange.md) notification to keep track of the active button. When the active button changes, collapse the old menu and create a new one.
+      -   Controle [la notificación \_ HOTITEMCHANGE de TBN](tbn-hotitemchange.md) para realizar un seguimiento del botón activo. Cuando cambie el botón activo, contraiga el menú antiguo y cree uno nuevo.
 
-      -   Handle the [TBN\_DROPDOWN](tbn-dropdown.md) notification that is sent when a button is clicked. It should then collapse the menu and disable menu hot-tracking. The button remains active.
+      -   Controle [la notificación DESPLEGABLE \_ de TBN](tbn-dropdown.md) que se envía cuando se hace clic en un botón. A continuación, debe contraer el menú y deshabilitar el seguimiento rápido del menú. El botón permanece activo.
 
-      -   Handle the [**WM\_LBUTTONDOWN**](/windows/desktop/inputdev/wm-lbuttondown), [**WM\_RBUTTONDOWN**](/windows/desktop/inputdev/wm-rbuttondown), and [**WM\_MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) messages in your message hook procedure, to keep track of the mouse position. If the mouse is clicked outside the menu area, collapse the current drop-down menu, deactivate menu hot-tracking, and return the menu bar to its preactivation state.
+      -   Controle [**los mensajes WM \_ LBUTTONDOWN,**](/windows/desktop/inputdev/wm-lbuttondown) [**WM \_ RBUTTONDOWN**](/windows/desktop/inputdev/wm-rbuttondown)y [**WM \_ MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) en el procedimiento de enlace de mensajes para realizar un seguimiento de la posición del mouse. Si se hace clic con el mouse fuera del área de menú, contraiga el menú desplegable actual, desactive el seguimiento de acceso rápido del menú y devuelva la barra de menús a su estado de desactivación previa.
 
-      -   When a menu command is launched, disable menu hot-tracking. The menu will be collapsed automatically but you must explicitly free the message hook.
+      -   Cuando se inicia un comando de menú, deshabilite el seguimiento de menús en caliente. El menú se contraerá automáticamente, pero debe liberar explícitamente el enlace de mensajes.
 
 
-      You must also handle menu-related messaging, such as the [**WM\_INITMENUPOPUP**](/windows/desktop/menurc/wm-initmenupopup) message that is sent when a menu item needs to display a submenu. For a discussion of how to handle such messages, see [Menus](/windows/desktop/menurc/menus).
+      También debe controlar la mensajería relacionada con el menú, como el mensaje [**\_ WM INITMENUPOPUP**](/windows/desktop/menurc/wm-initmenupopup) que se envía cuando un elemento de menú necesita mostrar un submenú. Para obtener una explicación sobre cómo controlar estos mensajes, vea [Menús](/windows/desktop/menurc/menus).
   - question: >
-      Keyboard Navigation
-    answer: "Your application must process keyboard messages in the message hook procedure and act on those that affect menu hot-tracking. The following key presses must be handled:\n\n-   The ESCAPE key. The ESCAPE key backs the display up one level. If a submenu is being displayed, it must be collapsed. If a button's primary menu is displayed, collapse it and disable menu hot-tracking. The button remains active.\n-   The RIGHT ARROW key. If the item has a submenu, display it. If the item does not have a submenu, collapse the menu and any submenus, activate the next button with [**TB\\_SETHOTITEM**](tb-sethotitem.md), and display its menu. If the last button was active when this notification was received, display the menu for the first button.\n-   The LEFT ARROW key. If the item is in a submenu, collapse it and shift focus to its parent menu. If the item is not a submenu, collapse the menu, activate the adjacent button with [**TB\\_SETHOTITEM**](tb-sethotitem.md), and display its menu. If the first button was active when this notification was received, display the menu for the last button.\n-   The UP ARROW and DOWN ARROW keys. These keys are used to navigate within a menu but do not directly affect menu hot-tracking.\n-   An ALT-*Key* accelerator key. Use the [**TB\\_MAPACCELERATOR**](tb-mapaccelerator.md) message to determine which button the *Key* character corresponds to. If it corresponds to a different button than the currently active one, collapse the current drop-down menu, activate the new button with [**TB\\_SETHOTITEM**](tb-sethotitem.md), and display the menu for the adjacent button. If the *Key character* corresponds to the currently displayed button, collapse the drop-down menu and disable menu hot-tracking. The button should remain active.          \n"
+      Navegación mediante teclado
+    answer: "La aplicación debe procesar los mensajes de teclado en el procedimiento de enlace de mensajes y actuar sobre los que afectan al seguimiento rápido de menús. Se deben controlar las siguientes pulsaciones de tecla:\n\n-   Tecla ESCAPE. La tecla ESCAPE hace que la pantalla se muestre un nivel. Si se muestra un submenú, debe contraerse. Si se muestra el menú principal de un botón, conséptelo y deshabilite el seguimiento rápido del menú. El botón permanece activo.\n-   Tecla FLECHA DERECHA. Si el elemento tiene un submenú, se muestra. Si el elemento no tiene un submenú, contraiga el menú y los submenús, active el botón siguiente con [**TB \\_ SETHOTITEM**](tb-sethotitem.md)y muestre su menú. Si el último botón estaba activo cuando se recibió esta notificación, muestre el menú del primer botón.\n-   Tecla FLECHA IZQUIERDA. Si el elemento está en un submenú, contraigalo y cambie el foco a su menú primario. Si el elemento no es un submenú, contraiga el menú, active el botón adyacente con [**TB \\_ SETHOTITEM**](tb-sethotitem.md)y muestre su menú. Si el primer botón estaba activo cuando se recibió esta notificación, muestre el menú del último botón.\n-   Teclas DE FLECHA ARRIBA y FLECHA ABAJO. Estas claves se usan para navegar dentro de un menú, pero no afectan directamente al seguimiento rápido del menú.\n-   Tecla alt:*tecla de* aceleración. Use el [**mensaje \\_ MAPACCELERATOR de TB**](tb-mapaccelerator.md) para determinar a qué botón corresponde el carácter clave.  Si corresponde a un botón diferente al activo actualmente, contraiga el menú desplegable actual, active el nuevo botón con [**TB \\_ SETHOTITEM**](tb-sethotitem.md)y muestre el menú del botón adyacente. Si el *carácter Clave corresponde* al botón que se muestra actualmente, contraiga el menú desplegable y deshabilite el seguimiento rápido del menú. El botón debe permanecer activo.          \n"

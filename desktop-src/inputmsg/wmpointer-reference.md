@@ -4,12 +4,12 @@ description: Los temas de esta sección proporcionan las especificaciones de ref
 ms.assetid: B3FAE463-3B1D-412C-9698-8366D6A63806
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: f1de34d28ab2d25ea0875a1c1eac2a5c7d558ff415889fda254403d69909a820
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 165121acceb974bbfcf46e81a0d11135022df8f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119231395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569476"
 ---
 # <a name="pointer-input-message-reference"></a>Referencia de mensajes de entrada de puntero
 

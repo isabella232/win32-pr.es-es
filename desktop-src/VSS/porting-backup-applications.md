@@ -4,12 +4,12 @@ ms.assetid: ef40fdf6-b039-4664-bafb-b88c9286c010
 title: Porte de aplicaciones de copia de seguridad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a7b3a4dc6ae2f6f510320cab3402cb1399b3c5adaeec369f17df3f2eed482ac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b85f052996e2c82b11f545bb604b0ed50a886420
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117937882"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473360"
 ---
 # <a name="porting-backup-applications"></a>Porte de aplicaciones de copia de seguridad
 
@@ -21,7 +21,7 @@ Varias interfaces de VSS han cambiado desde Windows XP. Como mínimo, las Window
 
 ## <a name="porting-windows-server-2003-sp1-backup-applications-to-windows-vista"></a>Porting Windows Server 2003 SP1 Backup Applications to Windows Vista
 
-Los archivos binarios Windows Server 2003 con SP1 son compatibles con Windows Vista y Windows Server 2008. Sin embargo, la mayoría Windows Server 2003 con aplicaciones de copia de seguridad de SP1 deben actualizarse para tener en cuenta las nuevas características, que se describen en las secciones siguientes.
+Los archivos binarios de Windows Server 2003 con SP1 son compatibles con Windows Vista y Windows Server 2008. Sin embargo, la mayoría Windows Server 2003 con aplicaciones de copia de seguridad de SP1 deben actualizarse para tener en cuenta las nuevas características, que se describen en las secciones siguientes.
 
 ## <a name="compiling-backup-applications-for-windows-vista"></a>Compilar aplicaciones de copia de seguridad para Windows Vista
 

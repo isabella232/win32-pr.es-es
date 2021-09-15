@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 5bf811501d189abef127e2b191e159518654650bf569cd2abdad42d7471eb1d7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f6c23b810b7ec5a7f60ae7e52ddbb5b535ab0503
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118756803"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569484"
 ---
 # <a name="wm_pointerup-message"></a>Mensaje WM_POINTERUP
 
-Se publica cuando un puntero que hizo contacto sobre el área de cliente de una ventana interrumpe el contacto. Este mensaje de entrada tiene como destino la ventana sobre la que el puntero realiza contacto y el puntero se captura implícitamente en la ventana para que la ventana siga recibiendo mensajes de entrada, incluida la notificación WM_POINTERUP del puntero **hasta** que se interrumpe el contacto.
+Se publica cuando un puntero que hizo contacto sobre el área de cliente de una ventana interrumpe el contacto. Este mensaje de entrada tiene como destino la ventana en la que el puntero realiza el contacto y el puntero se captura implícitamente en la ventana para que la ventana siga recibiendo mensajes de entrada, incluida la notificación **WM_POINTERUP** del puntero hasta que se interrumpe el contacto.
 
 Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
@@ -50,7 +50,7 @@ Contiene información sobre el puntero. Use las macros siguientes para recuperar
 
 -   [**GET_POINTERID_WPARAM**](/previous-versions/windows/desktop/api)(wParam): identificador del puntero.
 -   [**IS_POINTER_NEW_WPARAM**](/previous-versions/windows/desktop/api)(wParam): marca que indica si este mensaje representa la primera entrada generada por un nuevo puntero.
--   [**IS_POINTER_INRANGE_WPARAM**](/previous-versions/windows/desktop/api)(wParam): marca que indica si un puntero generó este mensaje durante su vigencia. Esta marca no se establece en los mensajes que indican que el puntero tiene un intervalo de detección izquierdo.
+-   [**IS_POINTER_INRANGE_WPARAM**](/previous-versions/windows/desktop/api)(wParam): marca que indica si este mensaje lo generó un puntero durante su vigencia. Esta marca no se establece en los mensajes que indican que el puntero tiene un intervalo de detección izquierdo.
 -   [**IS_POINTER_INCONTACT_WPARAM**](/previous-versions/windows/desktop/api)(wParam): marca que indica si este mensaje lo generó un puntero que está en contacto con la superficie de la ventana. Esta marca no se establece en los mensajes que indican un puntero que mantiene el puntero.
 -   [**IS_POINTER_PRIMARY_WPARAM**](/previous-versions/windows/desktop/api)(wParam): indica que este puntero se ha designado como principal.
 -   [**IS_POINTER_FIRSTBUTTON_WPARAM**](/previous-versions/windows/desktop/api)(wParam): marca que indica si hay una acción principal.
@@ -60,7 +60,7 @@ Contiene información sobre el puntero. Use las macros siguientes para recuperar
 -   [**IS_POINTER_SECONDBUTTON_WPARAM**](/previous-versions/windows/desktop/api)(wParam): marca que indica si hay una acción secundaria.
     -   Esto es análogo a un botón derecho del mouse hacia abajo.
     -   Un puntero de lápiz tendrá este conjunto cuando esté en contacto con la superficie del digitalizador con el botón de lápiz presionado.
--   [**IS_POINTER_THIRDBUTTON_WPARAM**](/previous-versions/windows/desktop/api)(wParam): una marca que indica si hay una o varias acciones terciarias basadas en el tipo de puntero; Las aplicaciones que desean responder a acciones terciarias deben recuperar información específica del tipo de puntero para determinar qué botones terciarios se presionan. Por ejemplo, una aplicación puede determinar los estados de los botones de un lápiz llamando a [**GetPointerPenInfo**](/previous-versions/windows/desktop/api) y examinando las marcas que especifican los estados de los botones.
+-   [**IS_POINTER_THIRDBUTTON_WPARAM**](/previous-versions/windows/desktop/api)(wParam): marca que indica si hay una o varias acciones terciarias basadas en el tipo de puntero; Las aplicaciones que desean responder a acciones terciarias deben recuperar información específica del tipo de puntero para determinar qué botones terciarios se presionan. Por ejemplo, una aplicación puede determinar los estados de botones de un lápiz llamando a [**GetPointerPenInfo**](/previous-versions/windows/desktop/api) y examinando las marcas que especifican los estados de los botones.
 -   [**IS_POINTER_FOURTHBUTTON_WPARAM**](/previous-versions/windows/desktop/api)(wParam): marca que indica si el puntero especificado realizó la cuarta acción. Las aplicaciones que deseen responder a cuartas acciones deben recuperar información específica del tipo de puntero para determinar si se presiona el primer botón extendido del mouse (XButton1).
 -   [**IS_POINTER_FIFTHBUTTON_WPARAM**](/previous-versions/windows/desktop/api)(wParam): [**marca**](pointer-flags-contants.md) que indica si el puntero especificado realizó la quinta acción. Las aplicaciones que deseen responder a la quinta acción deben recuperar información específica del tipo de puntero para determinar si se presiona el segundo botón extendido del mouse (XButton2).
 
@@ -96,7 +96,7 @@ Si una aplicación procesa este mensaje, debe devolver cero.
 
 Si la aplicación no procesa este mensaje, debe llamar a [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > \[! Importante\]  
 > Cuando una ventana pierde la captura de [](wm-pointercapturechanged.md) un puntero y recibe la notificación WM_POINTERCAPTURECHANGED, normalmente no recibirá ninguna notificación adicional. Por esta razón, es importante que no realice ninguna [](wm-pointerdown.md)suposición basada en notificaciones de WM_POINTERDOWN WM_POINTERUP o WM_POINTERENTER /  [](wm-pointerenter.md) / [**WM_POINTERLEAVE**](wm-pointerleave.md) emparejadas uniformemente.
@@ -105,7 +105,7 @@ Si la aplicación no procesa este mensaje, debe llamar a [**DefWindowProc**](/wi
 
 Cada puntero tiene un identificador de puntero único durante su duración. La duración de un puntero comienza cuando se detecta por primera vez.
 
-Se [**WM_POINTERENTER**](wm-pointerenter.md) mensaje de confirmación si se detecta un puntero que mantiene el puntero. Si [**se detecta WM_POINTERDOWN**](wm-pointerdown.md) puntero que no mantiene el puntero, se **genera** un mensaje de WM_POINTERENTER seguido de un mensaje de confirmación.
+Se [**genera WM_POINTERENTER**](wm-pointerenter.md) mensaje si se detecta un puntero que mantiene el puntero. Si [**se detecta WM_POINTERDOWN**](wm-pointerdown.md) puntero que no mantiene el puntero, se **genera** un mensaje de WM_POINTERENTER seguido de un mensaje de confirmación.
 
 Durante su vigencia, un puntero puede generar una serie de mensajes [**WM_POINTERUPDATE**](wm-pointerupdate.md) mientras mantiene el puntero o está en contacto.
 
@@ -243,11 +243,11 @@ default:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                               |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

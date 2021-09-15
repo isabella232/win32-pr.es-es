@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9ccdd4466273cdc3b49399abf30915a975418433183d821482a8fa92920d52d4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 07cff2f0cd0ca06de059d9b39e36d715b5555eaa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118819693"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569381"
 ---
 # <a name="connecting-to-wmi-remotely-with-vbscript"></a>Conexión a WMI de forma remota con VBScript
 
@@ -73,7 +73,7 @@ Una vez que haya realizado la conexión, puede seguir accediendo a los datos wmi
 
 Para obtener un ejemplo de VBScript mayor, vea la sección Ejemplos de la página de referencia [**SWbemLocator.ConnectServer.**](swbemlocator-connectserver.md)
 
-En el ejemplo de código de VBScript siguiente se conecta a un grupo de equipos remotos en el mismo dominio mediante la creación de una matriz de nombres de equipo remoto y, a continuación, se muestran los nombres de los dispositivos Plug and Play (instancias de [**Win32 \_ PnPEntity)**](/windows/desktop/CIMWin32Prov/win32-pnpentity)en cada equipo. Para ejecutar el script siguiente, debe ser administrador en los equipos remotos. Tenga en cuenta que " " necesario antes de que el nombre del equipo remoto se agrega mediante el script después de la \\ \\ configuración de nivel de suplantación. Para obtener más información sobre las rutas de acceso WMI, vea [Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
+En el ejemplo de código de VBScript siguiente se conecta a un grupo de equipos remotos del mismo dominio mediante la creación de una matriz de nombres de equipo remoto y, a continuación, se muestran los nombres de los dispositivos Plug and Play (instancias de [**Win32 \_ PnPEntity)**](/windows/desktop/CIMWin32Prov/win32-pnpentity)en cada equipo. Para ejecutar el script siguiente, debe ser administrador en los equipos remotos. Tenga en cuenta que " " necesario antes de que el nombre del equipo remoto se agrega mediante el script después de la \\ \\ configuración de nivel de suplantación. Para obtener más información sobre las rutas de acceso WMI, vea [Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
 
 
 ```VB

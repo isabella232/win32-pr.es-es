@@ -11,12 +11,12 @@ api_name:
 - ICONFilePath
 api_type:
 - Schema
-ms.openlocfilehash: ea662a7519a8705818ef502f5b797f437b0f89bee649d0bde18ce6f71b099d74
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6b1e98f76fe2f83ce214076223b5a1439bd0ea45
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119035823"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568672"
 ---
 # <a name="iconfilepath-mbnprofile-element"></a>Elemento ICONFilePath (MBNProfile)
 
@@ -44,9 +44,9 @@ El **elemento ICONFilePath** se define mediante el [**elemento MBNProfile.**](sc
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio \| para UWP\]<br/> |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio aplicaciones para \| UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |
 
 

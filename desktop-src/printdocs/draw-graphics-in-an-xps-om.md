@@ -1,19 +1,19 @@
 ---
-description: En esta página se describe cómo dibujar gráficos en una OM XPS.
+description: En esta página se describe cómo dibujar gráficos en un OM XPS.
 ms.assetid: 2384b522-208a-48db-ae0d-f82fa0214d09
 title: Dibujar gráficos en un OM XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ee2f9eacb19ba39263cff3898451479d8bed28e1d83ac6fe251fb9b4da62f49
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fabbf8cfb821c80dfff43e2e7844331c8920f726
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119719315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568652"
 ---
 # <a name="draw-graphics-in-an-xps-om"></a>Dibujar gráficos en un OM XPS
 
-En esta página se describe cómo dibujar gráficos en una OM XPS.
+En esta página se describe cómo dibujar gráficos en un OM XPS.
 
 Para dibujar gráficos basados en vectores en una página, cree una instancia de una interfaz [**IXpsOMPath,**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompath) rellenarla con el contenido deseado y agregarla a la lista de objetos visuales de la página o lienzo. Una **interfaz IXpsOMPath** contiene tales propiedades de una forma basada en vectores como el contorno, el color de relleno, el estilo de línea y el color de línea. La forma de la ruta de acceso se especifica mediante una interfaz [**IXpsOMGeometry,**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgeometry) que contiene una colección de interfaces [**IXpsOMGeometryFigure**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgeometryfigure) y, opcionalmente, una interfaz [**IXpsOMMatrixTransform.**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsommatrixtransform) Puede usar cualquier interfaz que herede de la interfaz [**IXpsOMBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsombrush) para rellenar el perímetro de la ruta de acceso y el interior de la forma que describe la ruta de acceso.
 
@@ -23,7 +23,7 @@ Antes de usar los siguientes ejemplos de código en el programa, lea la declinac
 
 En el ejemplo de código siguiente se crea una ruta de acceso simple que describe un rectángulo que se rellena con un solo color.
 
-### <a name="create-the-stroke-and-the-fill-brushes"></a>Creación del trazo y los pinceles de relleno
+### <a name="create-the-stroke-and-the-fill-brushes"></a>Crear el trazo y los pinceles de relleno
 
 La primera sección del ejemplo de código crea [**el objeto IXpsOMSolidColorBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomsolidcolorbrush) que se usará para rellenar el objeto path.
 
@@ -70,7 +70,7 @@ La primera sección del ejemplo de código crea [**el objeto IXpsOMSolidColorBru
 
 ### <a name="define-the-shape"></a>Definición de la forma
 
-La segunda sección del ejemplo de código crea la [**interfaz IXpsOMGeometry.**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgeometry) A continuación, crea la [**interfaz IXpsOMGeogure**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgeometryfigure) que especifica la forma de la ilustración y agrega la figura a la **interfaz IXpsOMGeometry.** En el ejemplo se crea un rectángulo especificado por *rect*. Los segmentos deben definirse solo para tres de los cuatro lados del rectángulo. El perímetro de la forma, el rectángulo en este caso, comienza desde el punto inicial y se extiende según lo definido por los segmentos de la figura de geometría. Establecer la **propiedad IsClosed** en **TRUE** indica que el rectángulo se cierra agregando un segmento adicional que conecta el final del último segmento al punto inicial.
+La segunda sección del ejemplo de código crea la [**interfaz IXpsOMGeometry.**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgeometry) A continuación, crea la interfaz [**IXpsOMGeometryFigure**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgeometryfigure) que especifica la forma de la ilustración y agrega la figura a la **interfaz IXpsOMGeometry.** En el ejemplo se crea un rectángulo especificado por *rect*. Los segmentos deben definirse solo para tres de los cuatro lados del rectángulo. El perímetro de la forma, el rectángulo en este caso, comienza desde el punto inicial y se extiende según lo definido por los segmentos de la figura de geometría. Establecer la **propiedad IsClosed** en **TRUE** indica que el rectángulo se cierra agregando un segmento adicional que conecta el final del último segmento al punto inicial.
 
 
 ```C++
@@ -146,7 +146,7 @@ La segunda sección del ejemplo de código crea la [**interfaz IXpsOMGeometry.**
 
 ### <a name="create-the-path-and-add-it-to-the-visual-collection"></a>Crear la ruta de acceso y agregarla a la colección de objetos visuales
 
-La sección final de este ejemplo de código crea y configura el objeto path y, a continuación, lo agrega a la lista de objetos visuales de la página.
+La sección final de este ejemplo de código crea y configura el objeto de ruta de acceso y, a continuación, lo agrega a la lista de objetos visuales de la página.
 
 
 ```C++
@@ -194,20 +194,20 @@ La sección final de este ejemplo de código crea y configura el objeto path y, 
 
 
 
-## <a name="best-practices"></a>Procedimientos recomendados
+## <a name="best-practices"></a>Prácticas recomendadas
 
-Agregue una descripción textual de la forma especificada por la [**interfaz IXpsOMPath.**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompath) Para beneficiarse de los usuarios con discapacidad visual, use los métodos [**SetAccessibilityShortDescription**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setaccessibilityshortdescription) y [**SetAccessibilityLongDescription**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setaccessibilitylongdescription) para proporcionar contenido textual para las características de compatibilidad de accesibilidad, como los lectores de pantalla.
+Agregue una descripción textual de la forma especificada por la [**interfaz IXpsOMPath.**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompath) Para beneficiarse de los usuarios con discapacidades visuales, use los métodos [**SetAccessibilityShortDescription**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setaccessibilityshortdescription) y [**SetAccessibilityLongDescription**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setaccessibilitylongdescription) para proporcionar contenido textual para las características de compatibilidad de accesibilidad, como los lectores de pantalla.
 
 ## <a name="additional-information"></a>Información adicional
 
-En el ejemplo de código de esta página se usa una [**interfaz IXpsOMSolidColorBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomsolidcolorbrush) como pincel de relleno y pincel de trazo para la ruta de acceso. Además de la **interfaz IXpsOMSolidColorBrush,** puede usar una [**interfaz IXpsOMGradientBrush,**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgradientbrush) [**IXpsOMImageBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomimagebrush)o [**IXpsOMVisualBrush.**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomvisualbrush)
+En el ejemplo de código de esta página se usa una [**interfaz IXpsOMSolidColorBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomsolidcolorbrush) como pincel de relleno y pincel de trazo para la ruta de acceso. Además de la **interfaz IXpsOMSolidColorBrush,** puede usar una interfaz [**IXpsOMGradientBrush,**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomgradientbrush) [**IXpsOMImageBrush**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomimagebrush)o [**IXpsOMVisualBrush.**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsomvisualbrush)
 
-El trazo es la línea que se puede dibujar alrededor del perímetro de la figura. El [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf) admite muchos estilos de línea de trazo diferentes. Para especificar el estilo de línea de trazo, establezca las propiedades del trazo con los métodos siguientes de la [**interfaz IXpsOMPath:**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompath)
+El trazo es la línea que se puede dibujar alrededor del perímetro de la ilustración. El [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf) admite muchos estilos de línea de trazo diferentes. Para especificar el estilo de línea de trazo, establezca las propiedades del trazo con los métodos siguientes de la [**interfaz IXpsOMPath:**](/windows/desktop/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompath)
 
--   [**SetStrokeBrushLocal**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setstrokebrushlocal) o [**SetStrokeBrushLookup para**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setstrokebrushlookup) establecer el pincel de trazo
+-   [**SetStrokeBrushLocal**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setstrokebrushlocal) o [**SetStrokeBrushLookup**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setstrokebrushlookup) para establecer el pincel de trazo
 -   [**GetStrokeDashes para**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-getstrokedashes) obtener la colección de guiones de trazo que describe los trazos
--   [**SetStrokeDashCap**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setstrokedashcap) en y [**SetStrokeDashOffset**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setstrokedashoffset) para describir la apariencia de un trazo discontinuo
--   [**SetStrokeEndLineCap**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setstrokeendlinecap) y [**SetStrokeStartLineCap para**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setstrokestartlinecap) definir el estilo de terminación de línea
+-   [**SetStrokeDashCap**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setstrokedashcap) en [**y SetStrokeDashOffset**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setstrokedashoffset) para describir la apariencia de un trazo discontinuo
+-   [**SetStrokeEndLineCap**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setstrokeendlinecap) [**y SetStrokeStartLineCap**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setstrokestartlinecap) para definir el estilo de terminación de línea
 -   [**SetStrokeLineJoin**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setstrokelinejoin) y [**SetStrokeMiterLimit**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setstrokemiterlimit) para describir cómo se unen los segmentos
 -   [**SetStrokeThickness para**](/windows/desktop/api/xpsobjectmodel/nf-xpsobjectmodel-ixpsompath-setstrokethickness) establecer el grosor del trazo
 
@@ -218,16 +218,16 @@ El trazo es la línea que se puede dibujar alrededor del perímetro de la figura
 **Pasos siguientes**
 </dt> <dt>
 
-[Navegación por XPS OM](navigate-the-xps-om.md)
+[Navegar por xps om](navigate-the-xps-om.md)
 </dt> <dt>
 
-[Escribir texto en una om xps](write-text-to-an-xps-om.md)
+[Escribir texto en un OM XPS](write-text-to-an-xps-om.md)
 </dt> <dt>
 
-[Colocar imágenes en un OM xps](place-images-in-an-xps-om.md)
+[Colocar imágenes en una om xps](place-images-in-an-xps-om.md)
 </dt> <dt>
 
-[Escribir una OM xps en un documento XPS](write-an-xps-om-to-an-xps-document.md)
+[Escribir una om xps en un documento XPS](write-an-xps-om-to-an-xps-document.md)
 </dt> <dt>
 
 [Imprimir una OM XPS](print-an-xps-om.md)
@@ -266,10 +266,10 @@ El trazo es la línea que se puede dibujar alrededor del perímetro de la figura
 **Para obtener más información**
 </dt> <dt>
 
-[Inicialización de una om xps](xps-object-model-initialization.md)
+[Inicialización de una instancia de XPS OM](xps-object-model-initialization.md)
 </dt> <dt>
 
-[Referencia de document API de XPS](xps-programming-reference.md)
+[Referencia de LA API del documento XPS](xps-programming-reference.md)
 </dt> <dt>
 
 [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

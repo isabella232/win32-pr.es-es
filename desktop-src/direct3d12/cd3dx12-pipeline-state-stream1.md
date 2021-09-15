@@ -1,6 +1,6 @@
 ---
 title: CD3DX12_PIPELINE_STATE_STREAM1 estructura (D3dx12.h)
-description: Estructura auxiliar para crear y trabajar con estados de canalización de proceso y gráficos a través de una interfaz combinada. Vea [D3D12_GRAPHICS_PIPELINE_STATE_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc) y [D3D12_COMPUTE_PIPELINE_STATE_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_compute_pipeline_state_desc).
+description: Estructura auxiliar para crear y trabajar con estados de canalización de gráficos y proceso a través de una interfaz combinada. Vea [D3D12_GRAPHICS_PIPELINE_STATE_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc) y [D3D12_COMPUTE_PIPELINE_STATE_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_compute_pipeline_state_desc).
 ms.assetid: 4D3E4D99-E820-4220-92F3-4924791E780F
 keywords:
 - CD3DX12_PIPELINE_STATE_STREAM1 estructura
@@ -16,15 +16,15 @@ ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 219b198ae5c2da6d6e74db933d4c26771aa63975
-ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121812536"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569973"
 ---
 # <a name="cd3dx12_pipeline_state_stream1-structure"></a>CD3DX12_PIPELINE_STATE_STREAM1 estructura
 
-Estructura auxiliar para crear y trabajar con estados de canalización de proceso y gráficos a través de una interfaz combinada. Vea [D3D12_GRAPHICS_PIPELINE_STATE_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc) y [D3D12_COMPUTE_PIPELINE_STATE_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_compute_pipeline_state_desc).
+Estructura auxiliar para crear y trabajar con estados de canalización de gráficos y proceso a través de una interfaz combinada. Vea [D3D12_GRAPHICS_PIPELINE_STATE_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_graphics_pipeline_state_desc) y [D3D12_COMPUTE_PIPELINE_STATE_DESC](/windows/win32/api/d3d12/ns-d3d12-d3d12_compute_pipeline_state_desc).
 
 CD3DX12_PIPELINE_STATE_STREAM1 admite el Windows 10 Fall Creators Update con nuevas características, como la creación de instancias de vistas.
 
@@ -66,14 +66,14 @@ struct CD3DX12_PIPELINE_STATE_STREAM1 {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
 **CD3DX12_PIPELINE_STATE_STREAM1()**
 </dt> <dd>
 
-Crea una nueva instancia, sin inicializar, de un CD3DX12_PIPELINE_STATE_STREAM1.
+Crea una nueva instancia sin inicializar de un CD3DX12_PIPELINE_STATE_STREAM1.
 
 </dd> <dt>
 
@@ -94,14 +94,14 @@ Crea una nueva instancia de una CD3DX12_PIPELINE_STATE_STREAM1, inicializada con
 **GraphicsDescV0()**
 </dt> <dd>
 
-devuelve el contenido del objeto CD3DX12_PIPELINE_STATE_STREAM1 como una estructura D3D12_GRAPHICS_PIPELINE_STATE_DESC estructura por valor. Tenga en D3D12_GRAPHICS_PIPELINE_STATE_DESC no incluye el **miembro CS,** por lo que este valor se pierde en la conversión.
+devuelve el contenido del objeto CD3DX12_PIPELINE_STATE_STREAM1 como estructura D3D12_GRAPHICS_PIPELINE_STATE_DESC estructura por valor. Tenga en D3D12_GRAPHICS_PIPELINE_STATE_DESC no incluye el **miembro CS,** por lo que este valor se pierde en la conversión.
 
 </dd> <dt>
 
 **ComputeDescV0()**
 </dt> <dd>
 
-devuelve el contenido del objeto CD3DX12_PIPELINE_STATE_STREAM1 como una estructura D3D12_COMPUTE_PIPELINE_STATE_DESC estructura por valor. Tenga en cuenta que D3D12_COMPUTE_PIPELINE_STATE_DESC no incluye los miembros **InputLayout**, **IBStripCutValue**, **PrimitiveTopologyType**, **VS**, **GS**, **StreamOutput**, **HS**, **DS**, **PS**, **BlendState**, **DepthStencilState**, **DSVFormat**, **RasterizerState**, **NumRootSignature**, **RTVFormats,** **SampleDesc** o **SampleMask,** por lo que estos valores se pierden en la conversión.
+devuelve el contenido del objeto CD3DX12_PIPELINE_STATE_STREAM1 como estructura D3D12_COMPUTE_PIPELINE_STATE_DESC estructura por valor. Tenga en cuenta que D3D12_COMPUTE_PIPELINE_STATE_DESC no incluye los miembros **InputLayout**, **IBStripCutValue**, **PrimitiveTopologyType**, **VS**, **GS**, **StreamOutput**, **HS**, **DS**, **PS**, **BlendState**, **DepthStencilState**, **DSVFormat**, **RasterizerState**, **NumRootSignature**, **RTVFormats,** **SampleDesc** o **SampleMask,** por lo que estos valores se pierden en la conversión.
 
 </dd> <dt>
 
@@ -112,7 +112,7 @@ Describe las marcas de estado de canalización, que controlan características c
 
 </dd> <dt>
 
-**Máscara de nodos**
+**NodeMask**
 </dt> <dd>
 
 Describe la máscara de nodo de estado de canalización, que se usa para identificar los nodos (adaptadores físicos del dispositivo) a los que se aplica el PSO en escenarios de varios adaptadores. cada bit de la máscara corresponde a un único nodo. Para escenarios de adaptador único, establezca este valor en 0.
@@ -129,14 +129,14 @@ Describe la firma raíz.
 **InputLayout**
 </dt> <dd>
 
-Describe el formato de búfer de entrada para la fase de ensamblador de entrada.
+Describe el formato de búfer de entrada para la fase de ensamblador de entrada
 
 </dd> <dt>
 
 **IBStripCutValue**
 </dt> <dd>
 
-Describe el valor de índice especial del búfer de entrada que indica un corte (discontinuidad) al usar la topología de franja de triángulo.
+Describe el valor de índice especial del búfer de entrada que indica un corte (discontinuidad) al usar la topología de franja de triángulos.
 
 </dd> <dt>
 
@@ -147,7 +147,7 @@ Describe la topología primitiva y su orden.
 
 </dd> <dt>
 
-**Vs**
+**VS**
 </dt> <dd>
 
 Describe el sombreador de vértices.
@@ -168,7 +168,7 @@ Describe el búfer de salida de streaming.
 
 </dd> <dt>
 
-**Hs**
+**HS**
 </dt> <dd>
 
 Describe el sombreador de casco.
@@ -182,7 +182,7 @@ Describe el sombreador de dominio.
 
 </dd> <dt>
 
-**Ps**
+**PS**
 </dt> <dd>
 
 Describe el sombreador de píxeles.
@@ -234,14 +234,14 @@ Describe los formatos de destino de representación.
 **SampleDesc**
 </dt> <dd>
 
-Describe el recuento de muestras y la calidad.
+Describe el recuento y la calidad de las muestras.
 
 </dd> <dt>
 
-**Máscara de ejemplo**
+**SampleMask**
 </dt> <dd>
 
-Describe la máscara de ejemplo utilizada con el estado de mezcla.
+Describe la máscara de ejemplo usada con el estado de mezcla.
 
 </dd> <dt>
 
@@ -252,9 +252,9 @@ Describe un PSO almacenado en caché.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-[CD3DX12_PIPELINE_STATE_STREAM](cd3dx12-pipeline-state-stream.md) admite el Windows 10 Fall Creators Update, pero no admite los tipos de subobjetos agregados en Windows 10 Fall Creators Update, como para la creación de instancias de vistas. Para admitir los nuevos tipos de subobjeto, use **CD3DX12_PIPELINE_STATE_STREAM1** en su lugar.
+[CD3DX12_PIPELINE_STATE_STREAM](cd3dx12-pipeline-state-stream.md) admite el Windows 10 Fall Creators Update, pero no admite los tipos de subobjetos agregados en Windows 10 Fall Creators Update, como para la creación de instancias de vistas. Para admitir los nuevos tipos de subobjetos, use **CD3DX12_PIPELINE_STATE_STREAM1** en su lugar.
 
 Las variables miembro accesibles de esta estructura son definiciones de tipo de la plantilla [**CD3DX12_PIPELINE_STATE_STREAM_SUBOBJECT,**](/windows/win32/direct3d12/cd3dx12-pipeline-state-stream-subobject) que combina los datos de marcador de tipo y subobjeto de subobjeto en un único objeto adecuado para una descripción de secuencia.
 

@@ -3,12 +3,12 @@ description: Recuperación de un error Invalid-Device (sonido espacial)
 title: Recuperación de un error Invalid-Device (sonido espacial)
 ms.topic: article
 ms.date: 10/29/2020
-ms.openlocfilehash: 124d4a804c2f99c051fee50d1c8d819d794b87a5943c216951e0c72870de8c18
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1ec4f040aff10f2d118b20c489e74d792c907113
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118406223"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568573"
 ---
 # <a name="recovering-from-an-invalid-device-error-spatial-sound"></a>Recuperación de un error Invalid-Device (sonido espacial)
 
@@ -48,7 +48,7 @@ Tenga en cuenta que para ambas estrategias enumeradas anteriormente, se pueden a
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
-[Recuperación de una Invalid-Device error](recovering-from-an-invalid-device-error.md) 
+[Recuperación de un error de Invalid-Device](recovering-from-an-invalid-device-error.md) 
  [Administración de flujos](stream-management.md)
 </dt> </dl>
 

@@ -4,12 +4,12 @@ ms.assetid: 5F093A11-C553-4779-B07D-374DA0FBC383
 title: Clases de representador de ink
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: f804a031f5afebecf322ce97e45373d983a1eb9d8bc450bebf83839fcecdc89b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9c0b1410b7e5a3ed7680ad5f663ebd6ede800cf6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120092385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569197"
 ---
 # <a name="ink-renderer-classes"></a>Clases de representador de ink
 

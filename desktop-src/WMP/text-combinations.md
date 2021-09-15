@@ -9,12 +9,12 @@ keywords:
 - marques en máscaras, combinaciones de texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d0d937d0ae2f90fe37ea8f4af1208443bbb127d622a83ecb5f556ddff596824
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f5668a9e18555b871c82bae7ed1826766ec9429e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117933424"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569769"
 ---
 # <a name="text-combinations"></a>Combinaciones de texto
 
@@ -30,7 +30,7 @@ Title+Author, Title, Author
 
 
 
-En el ejemplo anterior, se mostrará Title+Author si el título y el autor se han definido para el elemento multimedia. Si ambos no están definidos, el título se evalúa y se muestra si se define. Si el título no está definido, se muestra el autor si se define. Si no se define ninguno, no se muestra nada.
+En el ejemplo anterior, se mostrará Title+Author si el título y el autor se han definido para el elemento multimedia. Si no se definen ambos, el título se evalúa y se muestra si se define. Si el título no está definido, se muestra el autor si se define. Si no se define ninguno, no se muestra nada.
 
 Al usar el signo más para la concatenación, asegúrese de que no tiene espacios en ninguno de los lados del signo más.
 

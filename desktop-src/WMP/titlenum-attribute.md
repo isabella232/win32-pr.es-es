@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17efa4c39d13add0ae7a24d7a9a23de1f09b257bb713ee7a812d60035901d323
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8510a7c8aad37f54e7da0bd0de48b192ae987430
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119762715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569069"
 ---
 # <a name="titlenum-attribute"></a>titleNum (Atributo)
 
@@ -27,7 +27,7 @@ El **atributo titleNum** es el número de título del DVD.
 
 -   [DVDs](dvd-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
@@ -35,7 +35,7 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 

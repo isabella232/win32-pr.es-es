@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: efad3d679336af25fc816fd26e87582bff727e482ac3ca65e90b2634ae298bc5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7b52ad7adde69273c825c29ca495b6ad584ec1d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119739435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568857"
 ---
 # <a name="baseeapmethodusercredentials-schema-complex-types"></a>baseeapmethodusercredentials Tipos complejos de esquema
 
@@ -29,7 +29,7 @@ El [esquema baseeapmethodusercredentials](baseeapmethodusercredentialsschema-sch
 [EAPHost y esquema heredado](eaphost-schemas.md)
 </dt> <dt>
 
-[baseeapmethodusercredentials Schema](baseeapmethodusercredentialsschema-schema.md)
+[esquema baseeapmethodusercredentials](baseeapmethodusercredentialsschema-schema.md)
 </dt> </dl>
 
  

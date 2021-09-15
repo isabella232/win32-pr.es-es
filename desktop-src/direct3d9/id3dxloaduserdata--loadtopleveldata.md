@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ba0ed668657fb0195da7a54bad14d996c06c8fba8f81306491e7be4ce0d97b01
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f52d6853b12b666ab64602711a42c3698d6d8032
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119629495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127568949"
 ---
 # <a name="id3dxloaduserdataloadtopleveldata-method"></a>Método ID3DXLoadUserData::LoadTopLevelData
 

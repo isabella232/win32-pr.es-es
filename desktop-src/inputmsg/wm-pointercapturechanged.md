@@ -1,9 +1,9 @@
 ---
-title: Mensaje WM_POINTERCAPTURECHANGED
-description: Se envía a una ventana que está perdiendo la captura de un puntero de entrada.
+title: WM_POINTERCAPTURECHANGED mensaje
+description: Se envía a una ventana que pierde la captura de un puntero de entrada.
 ms.assetid: 6eec37da-227c-4be1-bf0b-98704caa1322
 keywords:
-- Mensajes y notificaciones de entrada de mensajes de WM_POINTERCAPTURECHANGED
+- WM_POINTERCAPTURECHANGED mensajes de entrada y notificaciones
 topic_type:
 - apiref
 api_name:
@@ -15,17 +15,17 @@ api_type:
 ms.topic: article
 ms.date: 02/03/2020
 ms.openlocfilehash: 768dc81be57bb61a23acab7ebea450dba577d60a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105720233"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569524"
 ---
-# <a name="wm_pointercapturechanged-message"></a>Mensaje WM_POINTERCAPTURECHANGED
+# <a name="wm_pointercapturechanged-message"></a>WM_POINTERCAPTURECHANGED mensaje
 
-Se envía a una ventana que está perdiendo la captura de un puntero de entrada.
+Se envía a una ventana que pierde la captura de un puntero de entrada.
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -41,14 +41,14 @@ Una ventana recibe este mensaje a través de su función [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-Contiene información sobre el puntero de entrada que se está perdida. Use [**GET_POINTERID_WPARAM**](/previous-versions/windows/desktop/api) para obtener el identificador de puntero.
+Contiene información sobre el puntero de entrada que se pierde. Use [**GET_POINTERID_WPARAM**](/previous-versions/windows/desktop/api) para obtener el identificador de puntero.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Contiene un identificador de la ventana que está capturando el puntero de entrada. Este valor puede ser NULL si la ventana ya no captura el puntero.
+Contiene un identificador para la ventana que captura el puntero de entrada. Este valor puede ser NULL si la ventana ya no captura el puntero.
 
 Si este mensaje se genera a partir del procesamiento interno, el valor puede ser el identificador de la ventana que recibe el mensaje.
 
@@ -62,15 +62,15 @@ Si la aplicación no procesa este mensaje, debe llamar a [**DefWindowProc**](/wi
 
 ## <a name="remarks"></a>Observaciones
 
-Una ventana debe usar esta notificación para detener el procesamiento de mensajes posteriores e iniciar cualquier limpieza necesaria para que el puntero se pierda. El procesamiento de gestos asociados al puntero también debe finalizar (por ejemplo, llamando a [**StopInteractionContext**](/windows/win32/api/interactioncontext/nf-interactioncontext-stopinteractioncontext)) y los contactos restantes se vuelven a asociar a la ventana.
+Una ventana debe usar esta notificación para detener el procesamiento de mensajes posteriores e iniciar cualquier limpieza necesaria para que se pierda el puntero. El procesamiento de los gestos asociados al puntero también debe finalizar (por ejemplo, llamando a [**StopInteractionContext)**](/windows/win32/api/interactioncontext/nf-interactioncontext-stopinteractioncontext)y los contactos restantes se deben volver a asociar a la ventana.
 
-Normalmente, si una ventana recibe la notificación **WM_POINTERCAPTURECHANGED** , no se reciben notificaciones posteriores relacionadas con el puntero de entrada. Por este motivo, no dependa de las notificaciones emparejadas como [**WM_POINTERENTER**](wm-pointerenter.md) y [**WM_POINTERLEAVE**](wm-pointerleave.md).
+Normalmente, si una ventana recibe la **notificación WM_POINTERCAPTURECHANGED,** no se reciben notificaciones posteriores relacionadas con el puntero de entrada. Por este problema, no dependa de las notificaciones emparejadas, como [**WM_POINTERENTER**](wm-pointerenter.md) y [**WM_POINTERLEAVE**](wm-pointerleave.md).
 
-**WM_POINTERCAPTURECHANGED** no incluye datos de [**POINTER_INFO**](/previous-versions/windows/desktop/api) . Aparte de la marca [**POINTER_FLAG_CAPTURECHANGED**](pointer-flags-contants.md) que se va a establecer, los datos devueltos por [**GetPointerInfo**](/previous-versions/windows/desktop/api) (o cualquier variante) son idénticos a los que se devolvieron antes de la notificación.
+**WM_POINTERCAPTURECHANGED** no [**incluye**](/previous-versions/windows/desktop/api) POINTER_INFO datos. Aparte de la [**POINTER_FLAG_CAPTURECHANGED**](pointer-flags-contants.md) que se establece, los datos devueltos por [**GetPointerInfo**](/previous-versions/windows/desktop/api) (o cualquier variante) son idénticos a los devueltos antes de la notificación.
 
-Si la aplicación no procesa esta notificación, [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca) puede generar uno o más mensajes [**WM_GESTURE**](../wintouch/wm-gesture.md) o, si no se reconoce un gesto, **DefWindowProc** puede generar la entrada del mouse.
+Si la aplicación no procesa esta notificación, [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca) puede generar uno o varios mensajes WM_GESTURE o, si no se reconoce un gesto, **DefWindowProc** puede generar entradas del mouse. [](../wintouch/wm-gesture.md)
 
-Si una aplicación usa selectivamente alguna entrada de puntero y pasa el resto a [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca), el comportamiento resultante es indefinido.
+Si una aplicación consume selectivamente alguna entrada de puntero y pasa el resto a [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca), el comportamiento resultante es indefinido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,13 +78,13 @@ Si una aplicación usa selectivamente alguna entrada de puntero y pasa el resto 
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                               |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                     |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

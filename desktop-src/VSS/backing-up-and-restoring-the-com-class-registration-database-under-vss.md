@@ -4,12 +4,12 @@ ms.assetid: 5a282158-63b0-4c15-9bfc-0d61f5fe8716
 title: Copia de seguridad y restauración de la base de datos de registro de clases COM+ en VSS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b248408d3c1a712fa37c55fd851bc7cc72662ac4da91422e6b1086d4b022107
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ae21489330693f0ce0d23b8639507121b9b00302
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120124585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473406"
 ---
 # <a name="backing-up-and-restoring-the-com-class-registration-database-under-vss"></a>Copia de seguridad y restauración de la base de datos de registro de clases COM+ en VSS
 

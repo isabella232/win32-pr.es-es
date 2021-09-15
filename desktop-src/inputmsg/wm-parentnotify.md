@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/03/2020
-ms.openlocfilehash: 5de0845f906e72a42fa8d9a290c6cd8ac16cc0e96cae21ac25b3e9d7810309e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2e19edf25933a035514f9c42b0da6014eccfdb0d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119829575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569080"
 ---
 # <a name="wm_parentnotify-message"></a>WM_PARENTNOTIFY mensaje
 
@@ -28,7 +28,7 @@ Se envía a una ventana cuando se produce una acción significativa en una venta
 Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 > \[! Importante\]  
-> Las aplicaciones de escritorio deben tener en cuenta los valores de PPP. Si la aplicación no es compatible con PPP, las coordenadas de pantalla contenidas en los mensajes de puntero y las estructuras relacionadas pueden parecer inexactas debido a la virtualización de PPP. La virtualización de PPP proporciona compatibilidad con el escalado automático a aplicaciones que no son compatibles con PPP y que están activas de forma predeterminada (los usuarios pueden desactivarla). Para obtener más información, consulte [Escritura de aplicaciones Win32 con valores altos de PPP.](/previous-versions//dd464660(v=vs.85))
+> Las aplicaciones de escritorio deben tener en cuenta los valores de PPP. Si la aplicación no tiene reconocimiento de PPP, las coordenadas de pantalla contenidas en los mensajes de puntero y las estructuras relacionadas pueden parecer inexactas debido a la virtualización de PPP. La virtualización de PPP proporciona compatibilidad con el escalado automático a aplicaciones que no tienen reconocimiento de PPP y que están activas de forma predeterminada (los usuarios pueden desactivarla). Para obtener más información, consulte [Escritura de aplicaciones Win32 con valores altos de PPP.](/previous-versions//dd464660(v=vs.85))
 
  
 
@@ -54,10 +54,10 @@ La palabra de orden bajo *de wParam* especifica el evento para el que se notific
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="WM_CREATE"></span><span id="wm_create"></span><dl> <dt>**WM_CREATE**</dt> <dt>0x0001</dt> </dl>                | Se está creando la ventana secundaria.<br/> HIWORD(*wParam*) es el identificador de la ventana secundaria.<br/> *lParam es* un identificador de la ventana secundaria.<br/>                                                                                                                                                                                                                          |
 | <span id="WM_DESTROY"></span><span id="wm_destroy"></span><dl> <dt>**WM_DESTROY**</dt> <dt>0x0002</dt> </dl>             | La ventana secundaria se está destruyendo.<br/> HIWORD(*wParam*) es el identificador de la ventana secundaria.<br/> *lParam es* un identificador de la ventana secundaria.<br/>                                                                                                                                                                                                                        |
-| <span id="WM_LBUTTONDOWN"></span><span id="wm_lbuttondown"></span><dl> <dt>**WM_LBUTTONDOWN**</dt> <dt>0x0201</dt> </dl> | El usuario ha colocado el cursor sobre la ventana secundaria y ha hecho clic en el botón izquierdo del mouse.<br/> HIWORD(*wParam*) no está definido.<br/> *lParam es* la coordenada x del cursor es la palabra de orden bajo y la coordenada y del cursor es la palabra de orden superior.<br/>                                                                                                       |
-| <span id="WM_MBUTTONDOWN"></span><span id="wm_mbuttondown"></span><dl> <dt>**WM_MBUTTONDOWN**</dt> <dt>0x0207</dt> </dl> | El usuario ha colocado el cursor sobre la ventana secundaria y ha hecho clic en el botón central del mouse.<br/> HIWORD(*wParam*) no está definido.<br/> *lParam es* la coordenada x del cursor es la palabra de orden bajo y la coordenada y del cursor es la palabra de orden superior.<br/>                                                                                                     |
-| <span id="WM_RBUTTONDOWN"></span><span id="wm_rbuttondown"></span><dl> <dt>**WM_RBUTTONDOWN**</dt> <dt>0x0204</dt> </dl> | El usuario ha colocado el cursor sobre la ventana secundaria y ha hecho clic en el botón derecho del mouse.<br/> HIWORD(*wParam*) no está definido.<br/> *lParam es* la coordenada x del cursor es la palabra de orden bajo y la coordenada y del cursor es la palabra de orden superior.<br/>                                                                                                      |
-| <span id="WM_XBUTTONDOWN"></span><span id="wm_xbuttondown"></span><dl> <dt>**WM_XBUTTONDOWN**</dt> <dt>0x020B</dt> </dl> | El usuario ha colocado el cursor sobre la ventana secundaria y ha hecho clic en el primer o segundo botón X.<br/> HIWORD(*wParam*) indica qué botón se presionó. Este parámetro puede ser uno de los siguientes valores: XBUTTON1 o XBUTTON2.<br/> *lParam es* la coordenada x del cursor es la palabra de orden bajo y la coordenada y del cursor es la palabra de orden superior.<br/> |
+| <span id="WM_LBUTTONDOWN"></span><span id="wm_lbuttondown"></span><dl> <dt>**WM_LBUTTONDOWN**</dt> <dt>0x0201</dt> </dl> | El usuario ha colocado el cursor sobre la ventana secundaria y ha hecho clic en el botón izquierdo del mouse.<br/> HIWORD(*wParam*) no está definido.<br/> *lParam* es la coordenada x del cursor es la palabra de orden bajo y la coordenada y del cursor es la palabra de orden superior.<br/>                                                                                                       |
+| <span id="WM_MBUTTONDOWN"></span><span id="wm_mbuttondown"></span><dl> <dt>**WM_MBUTTONDOWN**</dt> <dt>0x0207</dt> </dl> | El usuario ha colocado el cursor sobre la ventana secundaria y ha hecho clic en el botón central del mouse.<br/> HIWORD(*wParam*) no está definido.<br/> *lParam* es la coordenada x del cursor es la palabra de orden bajo y la coordenada y del cursor es la palabra de orden superior.<br/>                                                                                                     |
+| <span id="WM_RBUTTONDOWN"></span><span id="wm_rbuttondown"></span><dl> <dt>**WM_RBUTTONDOWN**</dt> <dt>0x0204</dt> </dl> | El usuario ha colocado el cursor sobre la ventana secundaria y ha hecho clic en el botón derecho del mouse.<br/> HIWORD(*wParam*) no está definido.<br/> *lParam* es la coordenada x del cursor es la palabra de orden bajo y la coordenada y del cursor es la palabra de orden superior.<br/>                                                                                                      |
+| <span id="WM_XBUTTONDOWN"></span><span id="wm_xbuttondown"></span><dl> <dt>**WM_XBUTTONDOWN**</dt> <dt>0x020B</dt> </dl> | El usuario ha colocado el cursor sobre la ventana secundaria y ha hecho clic en el primer o segundo botón X.<br/> HIWORD(*wParam*) indica qué botón se presionó. Este parámetro puede ser uno de los siguientes valores: XBUTTON1 o XBUTTON2.<br/> *lParam* es la coordenada x del cursor es la palabra de orden bajo y la coordenada y del cursor es la palabra de orden superior.<br/> |
 | <span id="WM_POINTERDOWN"></span><span id="wm_pointerdown"></span><dl> <dt>**WM_POINTERDOWN**</dt> <dt>0x0246</dt> </dl> | Un puntero ha hecho contacto con la ventana secundaria.<br/> HIWORD(*wParam*) contiene el identificador del puntero que generó el [**WM_POINTERDOWN**](wm-pointerdown.md) evento.<br/>                                                                                                                                                                                            |
 
 
@@ -72,7 +72,7 @@ La palabra de orden bajo *de wParam* especifica el evento para el que se notific
 Contiene la ubicación de punto del puntero.
 
 > [!Note]  
-> Dado que el puntero puede hacer contacto con el dispositivo a través de un área no trivial, esta ubicación de punto puede ser una simplificación de un área de puntero más compleja. Siempre que sea posible, una aplicación debe usar la información completa del área de puntero en lugar de la ubicación de punto.
+> Dado que el puntero puede hacer contacto con el dispositivo a través de un área no trivial, esta ubicación de punto puede ser una simplificación de un área de puntero más compleja. Siempre que sea posible, una aplicación debe usar la información completa del área de puntero en lugar de la ubicación del punto.
 
  
 
@@ -89,13 +89,13 @@ Si la aplicación procesa este mensaje, devuelve cero.
 
 Si la aplicación no procesa este mensaje, llama [**a DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este mensaje también se envía a todas las ventanas antecesoras de la ventana secundaria, incluida la ventana de nivel superior.
+Este mensaje también se envía a todas las ventanas antecesores de la ventana secundaria, incluida la ventana de nivel superior.
 
-Todas las ventanas secundarias, excepto las que tienen el **WS_EX_NOPARENTNOTIFY** de ventana extendida, envían este mensaje a sus ventanas primarias. De forma predeterminada, las ventanas secundarias de un cuadro de diálogo tienen el estilo **WS_EX_NOPARENTNOTIFY, a menos** que se llame a la función [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) para crear la ventana secundaria sin este estilo.
+Todas las ventanas secundarias, excepto las que tienen el **WS_EX_NOPARENTNOTIFY** de ventana extendida, envían este mensaje a sus ventanas primarias. De forma predeterminada, las ventanas secundarias de un cuadro de diálogo tienen el WS_EX_NOPARENTNOTIFY, **a** menos que se llame a la función [**CreateWindowEx**](/windows/win32/api/winuser/nf-winuser-createwindowexa) para crear la ventana secundaria sin este estilo.
 
-Esta notificación proporciona a las ventanas antecesoras de la ventana secundaria una oportunidad para examinar la información del puntero y, si es necesario, capturar el puntero mediante las funciones de captura de puntero.
+Esta notificación proporciona a las ventanas antecesores de la ventana secundaria una oportunidad para examinar la información del puntero y, si es necesario, capturar el puntero mediante las funciones de captura de puntero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -105,7 +105,7 @@ Esta notificación proporciona a las ventanas antecesoras de la ventana secundar
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                               |
 | Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                     |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: e8d2503c-a38f-44f6-a653-ae9c7bf903bd
 title: 'Programa de C de ejemplo: uso de CryptAcquireContext'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5fb042d0b63666db8bcf44045a6e05b3be36742a458a0fe41e9f61a2ef6171f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 074d1967d8a32001e620b089280c034887b90cd4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119140818"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127473466"
 ---
 # <a name="example-c-program-using-cryptacquirecontext"></a>Programa de C de ejemplo: uso de CryptAcquireContext
 
@@ -19,7 +19,7 @@ En este ejemplo se muestran las siguientes tareas y funciones cryptoAPI:
 
 -   Use la [**función CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta) para adquirir un identificador para el CSP predeterminado y el contenedor de claves predeterminado. Si no existe ningún contenedor de claves predeterminado, use **la función CryptAcquireContext** para crear el contenedor de claves predeterminado.
 -   Use la [**función CryptGetProvParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgetprovparam) para recuperar información sobre un CSP y un contenedor de claves.
--   Aumente el [*recuento de referencias*](../secgloss/r-gly.md) en el proveedor mediante la función [**CryptContextAddRef.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcontextaddref)
+-   Aumente el [*número de referencias*](../secgloss/r-gly.md) en el proveedor mediante la función [**CryptContextAddRef.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcontextaddref)
 -   Libere un CSP mediante la [**función CryptReleaseContext.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext)
 -   Cree un contenedor de claves con nombre mediante la [**función CryptAcquireContext.**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta)
 -   Adquiera un identificador para un CSP mediante el contenedor de claves recién creado.

@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4361cf50a97cd3d7bf2abc6995182e9ca24bad6b824505408aca98bd4b3ead42
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bc7ea426c857893b98b25792ecc8e6c3d5803546
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119045733"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569977"
 ---
 # <a name="cd3dx12_pipeline_state_stream_vs-structure"></a>Estructura DE VS \_ DE LA SECUENCIA DE ESTADO DE CANALIZACIÓN \_ \_ \_ DE CD3DX12
 
@@ -40,7 +40,7 @@ struct CD3DX12_PIPELINE_STATE_STREAM_VS {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -68,11 +68,11 @@ Operador de asignación de copia.
 **operador D3D12 \_ SHADER \_ BYTECODE() const**
 </dt> <dd>
 
-Conversión implícita en una [**estructura \_ \_ BYTECODE del SOMBREADOR D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)
+Conversión implícita a una [**estructura \_ \_ BYTECODE de SOMBREADOR D3D12.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_shader_bytecode)
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 CD3DX12 PIPELINE STATE STREAM VS es una especialización typedef de la plantilla \_ \_ \_ \_ [**CD3DX12 \_ PIPELINE STATE STREAM \_ \_ \_ SUBOBJECT**](cd3dx12-pipeline-state-stream-subobject.md) y se define de la siguiente manera:
 

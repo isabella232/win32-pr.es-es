@@ -4,7 +4,7 @@ description: La propiedad burnFormat obtiene un valor que indica el tipo de CD q
 ms.assetid: f60fcbd2-5d34-46f3-a2e2-29dac2ecf689
 keywords:
 - propiedad burnFormat Reproductor de Windows Media
-- Interfaz de propiedad burnFormat Reproductor de Windows Media , IWMPCdromRomRom
+- Propiedad burnFormat Reproductor de Windows Media interfaz , IWMPCdromRomRom
 - Interfaz IWMPCdromRom Reproductor de Windows Media , propiedad burnFormat
 topic_type:
 - apiref
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 93d5dc4ff27b3650ee37f16a7e90eb535ebe373401363f8c93bd16d09061b7a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 17e379727376b1ce272a95cd77c688fa611b291a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120000552"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569041"
 ---
-# <a name="iwmpcdromburnburnformat-property"></a>Propiedad IWMPCdromRomRom::burnFormat
+# <a name="iwmpcdromburnburnformat-property"></a>IWMPCdromRomRom::burnFormat, propiedad
 
 La **propiedad burnFormat** obtiene un valor que indica el tipo de CD que se va a grabar.
 

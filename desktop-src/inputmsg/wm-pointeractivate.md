@@ -1,9 +1,9 @@
 ---
-title: Mensaje WM_POINTERACTIVATE
-description: Se envía a una ventana inactiva cuando un puntero primario genera un WM_POINTERDOWN sobre la ventana.
+title: WM_POINTERACTIVATE mensaje
+description: Se envía a una ventana inactiva cuando un puntero principal genera un WM_POINTERDOWN sobre la ventana.
 ms.assetid: 4eec37da-227c-4be1-bf0b-99704caa1322
 keywords:
-- Mensajes y notificaciones de entrada de mensajes de WM_POINTERACTIVATE
+- WM_POINTERACTIVATE mensajes de entrada y notificaciones
 topic_type:
 - apiref
 api_name:
@@ -15,17 +15,17 @@ api_type:
 ms.topic: article
 ms.date: 02/03/2020
 ms.openlocfilehash: b9bda11b5cb7a27f7744df6e20890a125a66bd88
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105720220"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569525"
 ---
-# <a name="wm_pointeractivate-message"></a>Mensaje WM_POINTERACTIVATE
+# <a name="wm_pointeractivate-message"></a>WM_POINTERACTIVATE mensaje
 
-Se envía a una ventana inactiva cuando un puntero primario genera un [**WM_POINTERDOWN**](wm-pointerdown.md) sobre la ventana. Siempre que el mensaje permanezca no controlado, recorre la cadena de la ventana primaria hasta que llega a la ventana de nivel superior. Las aplicaciones pueden responder a este mensaje para especificar si desean que se activen.
+Se envía a una ventana inactiva cuando un puntero principal genera un [**WM_POINTERDOWN**](wm-pointerdown.md) sobre la ventana. Siempre que el mensaje no se controle, se desplaza hacia arriba por la cadena de ventanas primarias hasta que llega a la ventana de nivel superior. Las aplicaciones pueden responder a este mensaje para especificar si desean activarse.
 
-Una ventana recibe este mensaje a través de su función [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Una ventana recibe este mensaje a través de su [**función WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 
 ```C++
@@ -41,11 +41,11 @@ Una ventana recibe este mensaje a través de su función [**WindowProc**](/previ
 *wParam* 
 </dt> <dd>
 
-Contiene el identificador de puntero e información adicional. Use las siguientes macros para recuperar esta información.
+Contiene el identificador de puntero y la información adicional. Use las macros siguientes para recuperar esta información.
 
 [**GET_POINTERID_WPARAM**](/previous-versions/windows/desktop/api)(wParam): identificador de puntero
 
-[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))(wParam): el valor de la prueba de posicionamiento devolvió el procesamiento del mensaje de [**WM_NCHITTEST**](../inputdev/wm-nchittest.md) .
+[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))(wParam): valor de prueba de éxito devuelto al procesar el [**WM_NCHITTEST**](../inputdev/wm-nchittest.md) mensaje.
 
 </dd> <dt>
 
@@ -64,12 +64,12 @@ Si la aplicación no procesa este mensaje, debe llamar a [**DefWindowProc**](/wi
 
 ## <a name="remarks"></a>Observaciones
 
-Una aplicación puede controlar este mensaje y devolver uno de los valores siguientes para determinar la forma en que el sistema procesa la activación y la entrada de activación:
+Una aplicación puede controlar este mensaje y devolver uno de los siguientes valores para determinar cómo procesa el sistema la activación y la entrada de activación:
 
 -   PA_ACTIVATE
 -   PA_NOACTIVATE
 
-Es importante tener en cuenta que, cuando el usuario interactúa con el sistema con varios punteros simultáneos, la oportunidad de activación que el mensaje de **WM_POINTERACTIVATE** representa está disponible para las aplicaciones solo para el primero de esos punteros. Por lo tanto, las aplicaciones deben tener en cuenta que pueden seguir recibiendo entradas de punteros mientras están inactivas.
+Es importante tener en cuenta que, cuando el usuario interactúa con el sistema con varios punteros simultáneos, la oportunidad de activación que representa el mensaje WM_POINTERACTIVATE solo está **disponible para** las aplicaciones para el primero de esos punteros. Por lo tanto, las aplicaciones deben ser conscientes de que todavía pueden recibir entradas de punteros mientras están inactivas.
 
 Si la aplicación no controla este mensaje, [**DefWindowProc**](/windows/win32/api/winuser/nf-winuser-defwindowproca) pasa el mensaje a la ventana primaria.
 
@@ -79,13 +79,13 @@ Si la aplicación no controla este mensaje, [**DefWindowProc**](/windows/win32/a
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows 8 \[\]<br/>                                                               |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2012 \[\]<br/>                                                     |
-| Encabezado<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo compatible<br/> | \[Windows 8 solo aplicaciones de escritorio\]<br/>                                                               |
+| Servidor mínimo compatible<br/> | \[Windows Server 2012 solo aplicaciones de escritorio\]<br/>                                                     |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

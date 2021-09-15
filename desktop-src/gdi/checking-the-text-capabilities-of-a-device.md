@@ -4,12 +4,12 @@ ms.assetid: d68de203-2d5f-4a28-bb57-1dda9fcb078a
 title: Comprobación de las funcionalidades de texto de un dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48c7121e7b5e2a416d06d79dba33c9a7c2eb7f6fb26d766a30b383f024e87e64
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1fd1a4ddc0c678c775c6c068216e60ead234d757
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119354855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569553"
 ---
 # <a name="checking-the-text-capabilities-of-a-device"></a>Comprobación de las funcionalidades de texto de un dispositivo
 

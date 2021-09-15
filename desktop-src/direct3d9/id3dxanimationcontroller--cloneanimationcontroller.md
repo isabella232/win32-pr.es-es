@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 5afb99126967163318c82bac6b8cac655fec65e8a28e4cdb349c7f2b1c679435
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 49c4a1c000df469c72a5e5538237e7110ded126f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118522786"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127569929"
 ---
 # <a name="id3dxanimationcontrollercloneanimationcontroller-method"></a>Método ID3DXAnimationController::CloneAnimationController
 
