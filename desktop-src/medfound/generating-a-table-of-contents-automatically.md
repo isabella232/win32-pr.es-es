@@ -4,12 +4,12 @@ ms.assetid: 3acb9c12-0158-4b89-87c4-4abd35ae8c2f
 title: Generar automáticamente una tabla de contenido
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1fd6ec833302ff24e79582a5bf3ee500d715a69e9e74910bdf9b72a2f5a64f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 22adc4d48ad7f4b1d89a446eb28c25d6011804a7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119958315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468759"
 ---
 # <a name="generating-a-table-of-contents-automatically"></a>Generar automáticamente una tabla de contenido
 
@@ -21,7 +21,7 @@ El procedimiento siguiente proporciona los pasos con más detalle.
 
 1.  Llame [**a CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) para crear un objeto Filter Graph (**CLSID \_ FilterGraph**) y obtener una [**interfaz IGraphBuilder.**](/windows/win32/api/strmif/nn-strmif-igraphbuilder)
 2.  Llame a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) para crear un objeto DMO wrapper filter **(CLSID \_ DMOWrapperFilter)** y obtener una [**interfaz IDMOWrapperFilter.**](/previous-versions/windows/desktop/api/dmodshow/nn-dmodshow-idmowrapperfilter)
-3.  Pase **CLSID \_ CTocGeneratorDmo** al [**método Init**](/previous-versions/windows/desktop/api/dmodshow/nf-dmodshow-idmowrapperfilter-init) del filtro DMO contenedor. Esto crea un generador de TOC DMO lo encapsula en el filtro DMO contenedor.
+3.  Pase **CLSID \_ CTocGeneratorDmo** al [**método Init**](/previous-versions/windows/desktop/api/dmodshow/nf-dmodshow-idmowrapperfilter-init) del filtro DMO contenedor. Esto crea un generador de TOC DMO y lo encapsula en el filtro DMO contenedor.
 4.  Llame al [**método AddFilter**](/windows/win32/api/strmif/nf-strmif-ifiltergraph-addfilter) de la [**interfaz IGraphBuilder**](/windows/win32/api/strmif/nn-strmif-igraphbuilder) para agregar el generador de TOC encapsulado DMO al gráfico de filtros.
     > [!Note]  
     > [**IGraphBuilder**](/windows/win32/api/strmif/nn-strmif-igraphbuilder) hereda de [**IFilterGraph.**](/windows/win32/api/strmif/nn-strmif-ifiltergraph)

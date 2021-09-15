@@ -4,12 +4,12 @@ ms.assetid: f8cf70ff-8324-4308-8adf-a145aa351ca9
 title: Proveedores de metadatos personalizados para archivos multimedia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1951fd90265299cb53369d521193740b7d4d05e0f1650583965eb670ab375cc1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a2ded77492d03f7b802f6b2f9c25e1009ef97f50
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119777605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572880"
 ---
 # <a name="custom-metadata-providers-for-media-files"></a>Proveedores de metadatos personalizados para archivos multimedia
 
@@ -33,24 +33,24 @@ Opcionalmente, también puede exponer la siguiente interfaz:
 
 Si el sistema de propiedades de Shell necesita obtener metadatos para un archivo, llama a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) para crear el controlador de propiedades y, a continuación, llama a los métodos de lectura y escritura adecuados en la [**interfaz IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
-La Media Foundation utiliza un mecanismo ligeramente diferente, porque la canalización obtiene el controlador de propiedades directamente del origen multimedia. En lugar de llamar a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) para crear el controlador de propiedades, la canalización llama a [**IMFGetService::GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) en el origen de medios, como se describe en el tema Proveedores de metadatos [de Shell](shell-metadata-providers.md).
+La Media Foundation utiliza un mecanismo ligeramente diferente, ya que la canalización obtiene el controlador de propiedades directamente del origen multimedia. En lugar de llamar a [**CoCreateInstance**](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) para crear el controlador de propiedades, la canalización llama a [**IMFGetService::GetService**](/windows/desktop/api/mfidl/nf-mfidl-imfgetservice-getservice) en el origen multimedia, como se describe en el tema Proveedores de metadatos [de shell](shell-metadata-providers.md).
 
 Para crear un controlador de propiedades personalizado, haga lo siguiente:
 
--   Implemente [**la interfaz IMFGetService**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice) para exponer [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore) El GUID del servicio es **MF \_ PROPERTY HANDLER \_ \_ SERVICE.**
--   Si el origen de medios se va a usar de forma remota, también debe exponer la interfaz [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) a través del método **QueryInterface** del origen multimedia, además de [**IMFGetService**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice).
--   Para que el controlador de propiedades esté disponible para el sistema de propiedades de Shell, registre el archivo DLL para el controlador de propiedades como se describe en Registrar y distribuir [controladores de propiedades](../properties/prophand-reg-dist.md).
+-   Implemente [**la interfaz IMFGetService**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice) para exponer [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore) El GUID del servicio es **MF \_ PROPERTY HANDLER \_ \_ SERVICE**.
+-   Si el origen de medios se va a usar de forma remota, también debe exponer la interfaz [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) a través del método **QueryInterface** del origen multimedia, además de [**LAGETService**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice).
+-   Para que el controlador de propiedades esté disponible para el sistema de propiedades de Shell, registre el archivo DLL para el controlador de propiedades como se describe en Registrar y [distribuir controladores de propiedades](../properties/prophand-reg-dist.md).
 -   El origen de medios se registra por separado, como se describe en [Controladores de esquemas y Byte-Stream controladores](scheme-handlers-and-byte-stream-handlers.md).
 
 ### <a name="implementation-tips"></a>Implementación Sugerencias
 
-Para obtener una lista de claves de propiedad de metadatos, vea [Propiedades de metadatos para archivos multimedia.](metadata-properties-for-media-files.md)
+Para obtener una lista de las claves de propiedad de metadatos, vea [Propiedades de metadatos para archivos multimedia.](metadata-properties-for-media-files.md)
 
-Los controladores de propiedades deben ser rápidos; deben proporcionar acceso eficaz de lectura y escritura a los metadatos. (Tenga en cuenta que shell puede recuperar metadatos de cientos de archivos). Por lo tanto, no llame a [**MFStartup**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup) desde el controlador de propiedades. La **función MFStartup** introduce la latencia de inicio, ya que crea varios subprocesos de cola de trabajo y asigna memoria global.
+Los controladores de propiedades deben ser rápidos; deben proporcionar acceso eficaz de lectura y escritura a los metadatos. (Tenga en cuenta que el Shell puede recuperar metadatos de cientos de archivos). Por lo tanto, no llame a [**MFStartup**](/windows/desktop/api/mfapi/nf-mfapi-mfstartup) desde el controlador de propiedades. La **función MFStartup** introduce la latencia de inicio, ya que crea varios subprocesos de cola de trabajo y asigna memoria global.
 
-En una implementación típica, el controlador de propiedades y el origen multimedia compartirán parte del mismo código de análisis. Sin embargo, un origen multimedia usa llamadas [**ASINCRÓNICASByteStream**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream) asincrónicas para E/S, mientras que el controlador de propiedades usa la [**interfaz IStream.**](/windows/win32/api/objidl/nn-objidl-istream) Media Foundation proporciona un objeto auxiliar que encapsula un flujo basado en **IStream** y lo expone como un **flujo DE TIPO IMFByteStream.** Para crear el contenedor, llame a [**MFCreateMFByteStreamOnStream**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatemfbytestreamonstream).
+En una implementación típica, el controlador de propiedades y el origen multimedia compartirán parte del mismo código de análisis. Sin embargo, un origen multimedia usa llamadas [**ASINCRÓNICAByteStream**](/windows/desktop/api/mfobjects/nn-mfobjects-imfbytestream) asincrónicas para E/S, mientras que el controlador de propiedades usa la [**interfaz IStream.**](/windows/win32/api/objidl/nn-objidl-istream) Media Foundation proporciona un objeto auxiliar que encapsula un flujo basado en **IStream** y lo expone como **una secuencia DE TIPO INBYTEStream.** Para crear el contenedor, llame a [**MFCreateMFByteStreamOnStream.**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatemfbytestreamonstream)
 
-Al actualizar los metadatos, se recomienda escribir los datos directamente en la secuencia original. Esta recomendación difiere del comportamiento *de copia* en escritura de la mayoría de los controladores de propiedades, en los que se modifica una copia de los datos. Los archivos multimedia pueden ser muy grandes, por lo que la copia en escritura suele ser demasiado lenta para una implementación eficaz. Para deshabilitar la copia en escritura, establezca la configuración del Registro **ManualSafeSave,** como se describe en Registrar y distribuir [controladores de propiedades](../properties/prophand-reg-dist.md).
+Al actualizar los metadatos, se recomienda escribir los datos directamente en la secuencia original. Esta recomendación difiere del comportamiento *de copia en escritura* de la mayoría de los controladores de propiedades, en los que se modifica una copia de los datos. Los archivos multimedia pueden ser muy grandes, por lo que la copia en escritura suele ser demasiado lenta para una implementación eficaz. Para deshabilitar la copia en escritura, establezca la configuración del Registro **ManualSafeSave,** como se describe en Registrar y distribuir [controladores de propiedades](../properties/prophand-reg-dist.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

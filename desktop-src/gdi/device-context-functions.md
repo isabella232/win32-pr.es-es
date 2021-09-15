@@ -4,12 +4,12 @@ ms.assetid: 9ff68d16-0f27-4cc8-932a-b2063cfed135
 title: Funciones de contexto de dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c33eda03ce65a5873c4420f6675128243e30493dc75fa3055c8718f6826f4a94
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 625b81b999526d84af4b58f2dddbc280643bcd35
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119966055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475960"
 ---
 # <a name="device-context-functions"></a>Funciones de contexto de dispositivo
 
@@ -21,7 +21,7 @@ Las siguientes funciones se usan con contextos de dispositivo.
 |------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | [**CancelDC**](/windows/desktop/api/Wingdi/nf-wingdi-canceldc)                               | Cancela cualquier operación pendiente en el contexto de dispositivo especificado.                                                                            |
 | [**ChangeDisplaySettings**](/windows/desktop/api/Winuser/nf-winuser-changedisplaysettingsa)     | Cambia la configuración del dispositivo de presentación predeterminado al modo gráfico especificado.                                                        |
-| [**ChangeDisplaySettingsEx**](/windows/desktop/api/Winuser/nf-winuser-changedisplaysettingsexa) | Cambia la configuración del dispositivo de presentación especificado al modo gráfico especificado.                                                      |
+| [**ChangeDisplaySettingsEx**](/windows/desktop/api/Winuser/nf-winuser-changedisplaysettingsexa) | Cambia la configuración del dispositivo de visualización especificado al modo gráfico especificado.                                                      |
 | [**CreateCompatibleDC**](/windows/desktop/api/Wingdi/nf-wingdi-createcompatibledc)           | Crea un contexto de dispositivo de memoria compatible con el dispositivo especificado.                                                                     |
 | [**CreateDC**](/windows/desktop/api/Wingdi/nf-wingdi-createdca)                               | Crea un contexto de dispositivo para un dispositivo con el nombre especificado.                                                                           |
 | [**CreateIC**](/windows/desktop/api/Wingdi/nf-wingdi-createica)                               | Crea un contexto de información para el dispositivo especificado.                                                                                  |
@@ -50,7 +50,7 @@ Las siguientes funciones se usan con contextos de dispositivo.
 | [**RestoreDC**](/windows/desktop/api/Wingdi/nf-wingdi-restoredc)                             | Restaura un contexto de dispositivo al estado especificado.                                                                                         |
 | [**SaveDC**](/windows/desktop/api/Wingdi/nf-wingdi-savedc)                                   | Guarda el estado actual del contexto de dispositivo especificado copiando los datos que describen los objetos seleccionados y los modos gráficos en una pila de contexto. |
 | [**SelectObject**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject)                       | Selecciona un objeto en el contexto de dispositivo especificado.                                                                                      |
-| [**SetDCBrushColor**](/windows/desktop/api/Wingdi/nf-wingdi-setdcbrushcolor)                 | Establece el color del pincel del contexto del dispositivo actual en el valor de color especificado.                                                                 |
+| [**SetDCBrushColor**](/windows/desktop/api/Wingdi/nf-wingdi-setdcbrushcolor)                 | Establece el color actual del pincel de contexto del dispositivo en el valor de color especificado.                                                                 |
 | [**SetDCPenColor**](/windows/desktop/api/Wingdi/nf-wingdi-setdcpencolor)                     | Establece el color del lápiz de contexto del dispositivo actual en el valor de color especificado.                                                                   |
 | [**SetLayout**](/windows/desktop/api/Wingdi/nf-wingdi-setlayout)                             | Establece el diseño de un contexto de dispositivo.                                                                                                     |
 | [**WindowFromDC**](/windows/desktop/api/Winuser/nf-winuser-windowfromdc)                       | Devuelve un identificador a la ventana asociada a un contexto de dispositivo.                                                                          |

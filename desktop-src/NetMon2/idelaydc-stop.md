@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: b5fb6442481574de6732aef1359cf9586b9cdcc1815d9f0b206a1f8a597f1967
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 38be5b6ba4c3f6edcd716f4d0235150e96dd692a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118366005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476724"
 ---
 # <a name="idelaydcstop-method"></a>IDelaydC::Stop (Método)
 
@@ -65,7 +65,7 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando **se llama a IDelaydC::Stop,** Monitor de red la captura de datos y cierra el archivo de [*captura*](c.md). (El nombre del archivo de captura se devolvió [cuando se llamó a IDelaydC::Start).](idelaydc-start.md) Ahora puede ver el contenido del archivo de captura.
 
@@ -75,7 +75,7 @@ Cuando detenga e inicie la captura, asegúrese de llamar al método [IDelaydC::C
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
@@ -84,7 +84,7 @@ Cuando detenga e inicie la captura, asegúrese de llamar al método [IDelaydC::C
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -100,7 +100,7 @@ Cuando detenga e inicie la captura, asegúrese de llamar al método [IDelaydC::C
 [IDelaydC::Start](idelaydc-start.md)
 </dt> <dt>
 
-[Estadísticas](statistics.md)
+[ESTADÍSTICAS](statistics.md)
 </dt> </dl>
 
  

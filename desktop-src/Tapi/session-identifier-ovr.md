@@ -4,12 +4,12 @@ ms.assetid: 711a9bc6-ffc6-499b-8653-ba230028c146
 title: Identificador de sesión
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 527706159328b3919e47c39bc5fb160615ed2c202d33c1ce39c711b6921235a5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e135beb439d1c5fb2fdd46d4986cd35dc5ae49b0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117760787"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474667"
 ---
 # <a name="session-identifier"></a>Identificador de sesión
 

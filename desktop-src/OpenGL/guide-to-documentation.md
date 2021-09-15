@@ -3,17 +3,17 @@ title: Guía de documentación
 description: La documentación establecida para OpenGL en Windows incluye cinco elementos.
 ms.assetid: 1672e9a3-10f0-4ae4-a6a3-b482a3bdda10
 keywords:
-- OpenGL en Windows,documentation
+- OpenGL en Windows,documentación
 - Manual de referencia de OpenGL
 - Guía de programación de OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bfd95840984de45f3d2a7191301e12d77376215fe34a9e8715e19fa58fcf5d4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fc27d11b8d829efebf0914dbb1d67c872cf0196d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120035205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476673"
 ---
 # <a name="guide-to-documentation"></a>Guía de documentación
 
@@ -44,7 +44,7 @@ La documentación establecida para OpenGL en Windows incluye cinco elementos.
 
 -   El quinto elemento de documentación es la guía de porte. Se describe cómo mover código OpenGL existente de otros entornos a Windows.
 
-Los dos primeros elementos son los libros oficiales de OpenGL; no se incluyen en el SDK de Microsoft Windows.
+Los dos primeros elementos son los libros oficiales de OpenGL; no se incluyen en microsoft Windows SDK.
 
  
 

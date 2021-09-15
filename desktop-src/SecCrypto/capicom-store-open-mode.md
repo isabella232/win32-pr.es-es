@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: ebd46b751f4a098361618f3b6e992e4333425f501bf6afdedfca047e921ad7ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 61fe8be0bdf75db5204066563ca07f8225678f7d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117772062"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476518"
 ---
 # <a name="capicom_store_open_mode-enumeration"></a>CAPICOM \_ STORE OPEN MODE \_ \_ (enumeración)
 
 El tipo de enumeración CAPICOM STORE OPEN MODE se usa con el método \_ \_ \_ [**Store.Open**](store-open.md) para indicar cómo se va a abrir un almacén de certificados.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 
 
@@ -38,7 +38,7 @@ El tipo de enumeración CAPICOM STORE OPEN MODE se usa con el método \_ \_ \_ [
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando se usa la enumeración CAPICOM STORE OPEN MODE, solo se puede usar una de las \_ \_ opciones \_ siguientes.
 
@@ -53,11 +53,11 @@ Cuando se usa la enumeración CAPICOM STORE OPEN MODE, solo se puede usar una de
 | Requisito | Value |
 |----------------------------|--------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                |
-| Header<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
+| Encabezado<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

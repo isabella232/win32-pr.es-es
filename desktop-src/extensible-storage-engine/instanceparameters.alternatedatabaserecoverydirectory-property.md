@@ -1,6 +1,6 @@
 ---
-description: 'Más información sobre: InstanceParameters. AlternateDatabaseRecoveryDirectory (propiedad)'
-title: Propiedad InstanceParameters. AlternateDatabaseRecoveryDirectory
+description: 'Más información sobre: Propiedad InstanceParameters.AlternateDatabaseRecoveryDirectory'
+title: Propiedad InstanceParameters.AlternateDatabaseRecoveryDirectory
 TOCTitle: 'AlternateDatabaseRecoveryDirectory property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.AlternateDatabaseRecoveryDirectory
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.alternatedatabaserecoverydirectory(v=EXCHG.10)
@@ -27,18 +27,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 70e08c65027806990ab511ef8561b41551f0ac2c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105705819"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475993"
 ---
-# <a name="instanceparametersalternatedatabaserecoverydirectory-property"></a>Propiedad InstanceParameters. AlternateDatabaseRecoveryDirectory
+# <a name="instanceparametersalternatedatabaserecoverydirectory-property"></a>Propiedad InstanceParameters.AlternateDatabaseRecoveryDirectory
 
-Obtiene o establece la ruta de acceso del sistema de archivos relativa o absoluta de la carpeta en la que la recuperación tras bloqueo o una operación de restauración pueden encontrar las bases de datos a las que se hace referencia en el registro de transacciones de la carpeta especificada.
+Obtiene o establece la ruta de acceso del sistema de archivos relativa o absoluta de la carpeta donde la recuperación de bloqueos o una operación de restauración pueden encontrar las bases de datos a las que se hace referencia en el registro de transacciones en la carpeta especificada.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,7 +62,7 @@ public string AlternateDatabaseRecoveryDirectory { get; set; }
 
 #### <a name="property-value"></a>Valor de propiedad
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 
 ## <a name="remarks"></a>Observaciones
 
@@ -74,6 +74,6 @@ Este parámetro se omite en Windows XP.
 
 [Clase InstanceParameters](./instanceparameters-class.md)
 
-[Miembros de InstanceParameters](./instanceparameters-members.md)
+[Miembros InstanceParameters](./instanceparameters-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

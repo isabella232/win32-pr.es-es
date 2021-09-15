@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 6ebc99e61bf038c8db2ea537a1f8a5933ad512d21ec05cf51f6f8b7af5ede2b5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9b18b5833b7616493c24f0128caa7c910b685e37
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118441303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573180"
 ---
 # <a name="iwiadevmgr2registereventcallbackprogram-method"></a>IWiaDevMgr2::RegisterEventCallbackProgram (método)
 
@@ -144,7 +144,7 @@ Use el [**método EnumRegisterEventInfo para**](-wia-iwiaitem2-enumregisterevent
 
 Use solo el **método IWiaDevMgr2::RegisterEventCallbackProgram** para la compatibilidad con versiones anteriores con aplicaciones no escritas para la arquitectura WIA 2.0. Use las interfaces del Modelo de objetos componentes (COM) proporcionadas por la arquitectura de WIA 2.0 para las nuevas aplicaciones. En concreto, llame a [**IWiaDevMgr2::RegisterEventCallbackInterface**](-wia-iwiadevmgr2-registereventcallbackinterface.md) o [**IWiaDevMgr2::RegisterEventCallbackCLSID**](-wia-iwiadevmgr2-registereventcallbackclsid.md) para registrar una nueva aplicación para eventos de dispositivo.
 
-Normalmente, un programa de instalación o un script llama a este método. El programa o script de instalación registra la aplicación para recibir eventos de dispositivo WIA 2.0. Cuando se produce el evento, el sistema en tiempo de ejecución de WIA 2.0 inicia la aplicación.
+Normalmente, un programa de instalación o un script llaman a este método. El programa o script de instalación registra la aplicación para recibir eventos de dispositivo WIA 2.0. Cuando se produce el evento, el sistema en tiempo de ejecución de WIA 2.0 inicia la aplicación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -154,7 +154,7 @@ Normalmente, un programa de instalación o un script llama a este método. El pr
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                   |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                             |
-| Header<br/>                   | <dl> <dt>Wia.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wia.h</dt> </dl> |
 
 
 

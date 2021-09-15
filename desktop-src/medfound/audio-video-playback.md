@@ -4,12 +4,12 @@ ms.assetid: 6efadfe6-013a-4942-9df5-bed557d9af8b
 title: Reproducción de audio y vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bab6b11e837a04bcf52dfc9ea3c4fc779f7a11e476c7c7b151af4c9442227df6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6781c531bc7e5c595125d5353a381cc44c08fd5a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118065225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475845"
 ---
 # <a name="audiovideo-playback"></a>Reproducción de audio y vídeo
 

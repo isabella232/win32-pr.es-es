@@ -4,12 +4,12 @@ ms.assetid: 37E878DC-962F-4E30-8D11-99975BB9EBA4
 title: Identificación del origen de entrada
 ms.topic: article
 ms.date: 02/05/2020
-ms.openlocfilehash: 8208a79dc7c4c7e089c1d951d46b0d3aade483c8a09ba5719e62753d78b62a73
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 395cfbe31a3bb66cf75facf62ac558cec2228e89
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118482986"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572921"
 ---
 # <a name="input-source-identification"></a>Identificación del origen de entrada
 
@@ -27,7 +27,7 @@ La colección de temas que se proporciona aquí describe cómo la aplicación pu
 
 ## <a name="developer-audience"></a>Audiencia de desarrolladores
 
-Las API de identificación de origen de entrada están diseñadas para desarrolladores que están creando marcos de interfaz de usuario que proporcionan una experiencia de usuario coherente optimizada para la entrada en todas las aplicaciones de escritorio.
+Las API de identificación de origen de entrada están diseñadas para desarrolladores que están creando marcos de interfaz de usuario que proporcionan una experiencia de usuario coherente optimizada para la función táctil en todas las aplicaciones de escritorio.
 
 ## <a name="related-topics"></a>Temas relacionados
 

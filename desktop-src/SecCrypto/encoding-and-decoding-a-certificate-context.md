@@ -4,12 +4,12 @@ ms.assetid: 149d1097-5f50-40ba-84f1-b815f54ba33d
 title: Codificación y codificación de un contexto de certificado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82f640e12034ebf4ec84e0e71013197f043453b62e1102018dcfe9ea887d6ada
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b4168d15ad8db5d4711a18f2042106e7d6d46010
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119874898"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476448"
 ---
 # <a name="encoding-and-decoding-a-certificate-context"></a>Codificación y codificación de un contexto de certificado
 

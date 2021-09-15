@@ -4,18 +4,18 @@ description: En este ejemplo de C++ se muestra cómo crear una tarea que está p
 ms.assetid: 7c70b743-aff2-4ef5-b65b-ef0b5fdacade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 530ba3226668b8e743fe4ce1701e4b178f27fa5bee03b9518c23c2378ea0b5e2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7583384a44224b3642f717d00c8792bcbc163e62
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119001883"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474646"
 ---
 # <a name="weekly-trigger-example-c"></a>Ejemplo de desencadenador semanal (C++)
 
 En este ejemplo de C++ se muestra cómo crear una tarea que está programada para ejecutar Bloc de notas semanalmente. La tarea contiene un desencadenador semanal que especifica un límite de inicio, un intervalo de semanas y un día de la semana en el que se iniciará la tarea. La tarea también contiene una acción que especifica la tarea que se ejecutará Bloc de notas.
 
-En el procedimiento siguiente se describe cómo programar una tarea para iniciar un ejecutable semanalmente.
+En el procedimiento siguiente se describe cómo programar una tarea para iniciar un archivo ejecutable semanalmente.
 
 **Para programar Bloc de notas iniciar semanalmente**
 
@@ -34,7 +34,7 @@ En el procedimiento siguiente se describe cómo programar una tarea para iniciar
 
 5.  Cree un desencadenador semanal mediante la [**propiedad Triggers de ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_triggers) para acceder a la [**interfaz ITriggerCollection**](/windows/desktop/api/taskschd/nn-taskschd-itriggercollection) de la tarea.
 
-    Use el [**método ITriggerCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) para especificar que desea crear un desencadenador semanal. Puede establecer el límite de inicio, el intervalo de semanas y el día de la semana del desencadenador [**IWeeklyTrigger**](/windows/desktop/api/taskschd/nn-taskschd-iweeklytrigger) para que las acciones de la tarea se programen para ejecutarse a una hora especificada en un determinado día de la semana.
+    Use el [**método ITriggerCollection::Create**](/windows/desktop/api/taskschd/nf-taskschd-itriggercollection-create) para especificar que desea crear un desencadenador semanal. Puede establecer el límite de inicio, el intervalo de semanas y el día de la semana para el desencadenador [**IWeeklyTrigger**](/windows/desktop/api/taskschd/nn-taskschd-iweeklytrigger) para que las acciones de la tarea se programen para ejecutarse a la hora especificada en un determinado día de la semana.
 
 6.  Cree una acción para que la tarea se ejecute mediante la propiedad Actions de [**ITaskDefinition**](/windows/desktop/api/taskschd/nf-taskschd-itaskdefinition-get_actions) para tener acceso a la [**interfaz IActionCollection**](/windows/desktop/api/taskschd/nn-taskschd-iactioncollection) de la tarea.
 

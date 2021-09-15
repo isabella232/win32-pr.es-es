@@ -4,12 +4,12 @@ ms.assetid: 3a2796c8-1a39-49eb-98e1-c9e06c61f397
 title: Invocación de los métodos de servicio
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0553e1490a6f8d0903756767397c30c2e1137a16a80609ed3a22da69188f799e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 15b9540cf7378e13d56af2611d6216897c6750f6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117843112"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570137"
 ---
 # <a name="invoking-service-methods"></a>Invocación de los métodos de servicio
 
@@ -21,7 +21,7 @@ La aplicación WpdServicesApiSample incluye código que muestra cómo una aplica
 |------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)               | Se usa para recuperar la **interfaz IPortableDeviceServiceMethods** para invocar métodos en un servicio determinado.                                                                  |
 | [**IPortableDeviceServiceMethods**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemethods) | Se usa para invocar un método de servicio.                                                                                                                                        |
-| [**IPortableDeviceValues**](iportabledevicevalues.md)                 | Se usa para contener los parámetros del método saliente y los resultados del método entrante. Puede ser **NULL si** el método no requiere parámetros ni devuelve ningún resultado. |
+| [**IPortableDeviceValues**](iportabledevicevalues.md)                 | Se usa para contener los parámetros del método saliente y los resultados del método entrante. Puede ser **NULL si** el método no requiere ningún parámetro o devuelve resultados. |
 
 
 
@@ -29,7 +29,7 @@ La aplicación WpdServicesApiSample incluye código que muestra cómo una aplica
 
 Cuando el usuario elige la opción "9" en la línea de comandos, la aplicación invoca el método **InvokeMethods** que se encuentra en el módulo ServiceMethods.cpp. Tenga en cuenta que antes de invocar los métodos, la aplicación de ejemplo abre un servicio Contactos en un dispositivo conectado.
 
-Los métodos de servicio encapsulan la funcionalidad que cada servicio define e implementa. Son únicos para cada tipo de servicio y se representan mediante un GUID. Por ejemplo, el servicio Contacts define un método **BeginSync** al que llaman las aplicaciones para preparar el dispositivo para sincronizar objetos Contact y un método **EndSync** para notificar al dispositivo que se ha completado la sincronización. Las aplicaciones ejecutan un método llamando [**a IPortableDeviceServiceMethods::Invoke**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicemethods-invoke).
+Los métodos de servicio encapsulan la funcionalidad que cada servicio define e implementa. Son únicos para cada tipo de servicio y se representan mediante un GUID. Por ejemplo, el servicio Contacts define un método **BeginSync** al que llaman las aplicaciones para preparar el dispositivo para sincronizar objetos Contact y un método **EndSync** para notificar al dispositivo que se ha completado la sincronización. Las aplicaciones ejecutan un método mediante una [**llamada a IPortableDeviceServiceMethods::Invoke**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicemethods-invoke).
 
 Los métodos de servicio no deben confundirse con los comandos de WPD. Los comandos WPD forman parte de la interfaz de controlador de dispositivos (DDI) WPD estándar y son el mecanismo para la comunicación entre una aplicación WPD y el controlador. Los comandos están predefinidos, agrupados por categorías, por ejemplo, **WPD \_ CATEGORY \_ COMMON** y se representan mediante una **estructura PROPERTYKEY.** Una aplicación envía comandos al controlador de dispositivo mediante una llamada [**a IPortableDeviceService::SendCommand**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevice-sendcommand). Para obtener más información, vea el tema Comandos.
 

@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d8970ad1e75f37e8270a013d3830216ae128e41c03d4ad5245ac6ffc7615691
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e582d8f94b2dbcbb2052a8cf3a59d8ba514367cc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118532357"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476065"
 ---
 # <a name="id3dx11effecttechnique-interface"></a>Interfaz ID3DX11EffectTechnique
 
@@ -51,7 +51,7 @@ La **interfaz ID3DX11EffectTechnique** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un efecto contiene una o varias técnicas; cada técnica contiene uno o varios pases; cada paso contiene asignaciones de estado.
 
@@ -77,7 +77,7 @@ Para obtener una interfaz de técnica de efecto, llame a un método como [**ID3D
 
 <dl> <dt>
 
-[Interfaces de Efectos 11](d3d11-graphics-reference-effects11-interfaces.md)
+[Efectos 11 interfaces](d3d11-graphics-reference-effects11-interfaces.md)
 </dt> <dt>
 
 [D3DX Interfaces](d3d11-graphics-reference-d3dx11-interfaces.md)

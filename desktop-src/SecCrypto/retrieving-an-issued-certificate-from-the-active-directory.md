@@ -1,19 +1,19 @@
 ---
 description: Una entidad de certificación (CA) empresarial publica los certificados emitidos en el Active Directory; una entidad de certificación independiente también puede publicar certificados emitidos en el Active Directory.
 ms.assetid: 6449e116-1671-4120-a012-278ab9ae9925
-title: Recuperar un certificado emitido desde Active Directory
+title: Recuperación de un certificado emitido desde Active Directory
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 7ab580400de564715508bd2345250f5c69dee443
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105667532"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476356"
 ---
-# <a name="retrieving-an-issued-certificate-from-active-directory"></a>Recuperar un certificado emitido desde Active Directory
+# <a name="retrieving-an-issued-certificate-from-active-directory"></a>Recuperación de un certificado emitido desde Active Directory
 
-Una [*entidad de certificación*](../secgloss/c-gly.md) (CA) empresarial publica los [*certificados*](../secgloss/c-gly.md) emitidos en el Active Directory; una entidad de certificación independiente también puede publicar certificados emitidos en el Active Directory. En el ejemplo siguiente se muestra cómo adquirir un [*contexto de certificado*](../secgloss/c-gly.md) para un certificado almacenado en Active Directory. Después de adquirir el contexto de certificado, puede recuperar el contenido del certificado o realizar operaciones de certificado mediante las funciones de CryptoAPI.
+Una entidad [*de certificación*](../secgloss/c-gly.md) (CA) empresarial publica los certificados [*emitidos*](../secgloss/c-gly.md) en el Active Directory; una entidad de certificación independiente también puede publicar certificados emitidos en el Active Directory. En el ejemplo siguiente se muestra cómo adquirir un contexto [*de certificado*](../secgloss/c-gly.md) para un certificado almacenado en Active Directory. Una vez adquirido el contexto del certificado, puede recuperar el contenido del certificado o realizar operaciones de certificado mediante las funciones CryptoAPI.
 
 En el ejemplo siguiente se muestra cómo recuperar un certificado de Active Directory.
 

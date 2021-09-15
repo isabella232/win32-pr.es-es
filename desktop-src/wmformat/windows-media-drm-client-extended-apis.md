@@ -18,18 +18,18 @@ keywords:
 - API extendidas de cliente, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d48153b3956bd76e8000db909f0e7ec791611fa66d3b50988bd15a8c679ebbcc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 01c33ef3649f2cda63713ebd22a0116fdd025144
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117844898"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570173"
 ---
 # <a name="windows-media-drm-client-extended-apis"></a>Windows API extendidas de cliente DRM multimedia
 
-\[La Windows DRM de multimedia está en desuso y no debe usarse. Use [Microsoft PlayReady](/windows/uwp/audio-video-camera/playready-client-sdk) en su lugar.\]
+\[La Windows DRM multimedia está en desuso y no debe usarse. Use [Microsoft PlayReady](/windows/uwp/audio-video-camera/playready-client-sdk) en su lugar.\]
 
-En esta documentación se describen las interfaces de programación de aplicaciones extendidas (API) de Microsoft Windows Media Digital Rights Management (DRM). Las API extendidas de Windows Media DRM Client incluyen objetos que se pueden usar para administrar operaciones Windows Media Digital Rights Management (DRM) en un equipo cliente.
+En esta documentación se describen las interfaces de programación de aplicaciones extendidas (API) de Microsoft Windows Media Digital Rights Management (DRM). Las API extendidas de Windows Media DRM Client incluyen objetos que se pueden usar para administrar Windows Media Digital Rights Management (DRM) en un equipo cliente.
 
 El enfoque principal de estas API es la administración de licencias para contenido multimedia digital protegido. Además, las API se pueden usar para actualizar los componentes de DRM en el equipo cliente y para crear aplicaciones que transmitan contenido mediante Windows DRM multimedia para dispositivos de red.
 
@@ -41,9 +41,9 @@ En este documento se incluyen las secciones siguientes.
 
 | Sección                                                                                                  | Descripción                                                                                                                                                                            |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Acerca de las API extendidas de Windows DRM multimedia](about-the-windows-media-drm-client-extended-apis.md) | Proporciona información general e información general con la que debe estar familiarizado antes de desarrollar aplicaciones que usan las API.                                                        |
+| [Acerca de las API extendidas Windows de cliente DRM multimedia](about-the-windows-media-drm-client-extended-apis.md) | Proporciona información general e información general con la que debe estar familiarizado antes de desarrollar aplicaciones que usan las API.                                                        |
 | [Guía de programación](drm-programming-guide.md)                                                           | Proporciona instrucciones detalladas para realizar varias operaciones DRM del lado cliente.                                                                                                      |
-| [Referencia de programación](drm-programming-reference.md)                                                   | Proporciona información de referencia sobre las interfaces, métodos, funciones, estructuras, tipos de enumeración y constantes que se incluyen en las API extendidas del cliente DRM de Windows Media. |
+| [Referencia de programación](drm-programming-reference.md)                                                   | Proporciona información de referencia sobre las interfaces, los métodos, las funciones, las estructuras, los tipos de enumeración y las constantes que se incluyen en las API extendidas del cliente DRM de Windows Media. |
 
 
 

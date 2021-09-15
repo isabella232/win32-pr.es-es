@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 974dcd71c9f12cb15a3f57a5014f7c2340e9a1e830617b2339694e4b1d3142d7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 15c5b76f8916abc2929b773ae8302fb86fcf2c53
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119117165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476020"
 ---
 # <a name="esentbadslvsignatureexception-constructor"></a>Constructor EsentBadSLVSignatureException
 
@@ -50,7 +50,7 @@ Dim instance As New EsentBadSLVSignatureException()
 public EsentBadSLVSignatureException()
 ```
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

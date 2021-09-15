@@ -4,22 +4,22 @@ description: Sección de vídeo de ejemplo
 ms.assetid: 04ccfb64-886f-4bb7-9505-f0b74092270a
 keywords:
 - Reproductor de Windows Media Máscaras móviles, vídeo
-- máscaras, vídeo
+- skins,video
 - referencia de máscaras,vídeo
 - vídeo en máscaras, sección Vídeo
 - archivos de definición de máscara, sección Vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7929ae3f4179d56e64eaaada25ea0dd0102d275a1c0bf03aa23f5b8ff1f25140
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c46f7412ccb12f01f207fe823781f2d30da0e9c0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120002525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476171"
 ---
 # <a name="sample-video-section"></a>Sección de vídeo de ejemplo
 
-En las líneas siguientes se muestra una sección de vídeo típica de un archivo de definición de máscara:
+Las líneas siguientes muestran una sección de vídeo típica de un archivo de definición de máscara:
 
 
 ```C++

@@ -4,16 +4,16 @@ ms.assetid: d78e3120-fc4d-4acf-ba49-b22222e95dec
 title: Enumeraciones com+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 214579d18c7a5b01f922899726667708f47fae677cef1ad708d57f63471f138b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 29c3d84af8c95f1b54d9c114bd2b07b76f99a797
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119047563"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476107"
 ---
 # <a name="com-enumerations"></a>Enumeraciones com+
 
-Estas son las enumeraciones de COM+:
+A continuación se muestra la enumeración COM+:
 
 -   [**COMAdminTxIsolationLevelOptions**](/windows/desktop/api/ComAdmin/ne-comadmin-comadmintxisolationleveloptions)
 -   [**COMPLUS \_ APPTYPE**](/windows/win32/api/comsvcs/ne-comsvcs-complus_apptype)

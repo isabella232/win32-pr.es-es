@@ -1,19 +1,19 @@
 ---
-description: Una vez que comprenda el modo resultado de la búsqueda, el modo examinar y los patrones de diseño, puede registrar una lista de propiedades personalizadas para el tipo de archivo. Para registrar una lista de propiedades personalizadas y un patrón de diseño para el tipo de archivo, siga estos pasos.
+description: Una vez que comprenda el modo resultado de la búsqueda, el modo Examinar y los patrones de diseño, puede registrar una lista de propiedades personalizadas para el tipo de archivo. Para registrar una lista de propiedades personalizadas y un patrón de diseño para el tipo de archivo, siga estos pasos.
 ms.assetid: 29B863B3-E5FD-4E0A-B76B-4AFE5A6A76E3
 title: Cómo registrar propiedades personalizadas y diseño para el tipo de archivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a9388965a781d4104ae13de689b72208a8b69e213a758c9b34552c03bb938453
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: da55d0a90d4dd0f3ca109a3ca9f628a3c0912520
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119714905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570441"
 ---
 # <a name="how-to-register-custom-properties-and-layout-for-your-file-type"></a>Cómo registrar propiedades personalizadas y diseño para el tipo de archivo
 
-Una vez que comprenda el modo resultado de la búsqueda, el modo examinar y los patrones de diseño, puede registrar una lista de propiedades personalizadas para el tipo de archivo.
+Una vez que comprenda el modo resultado de la búsqueda, el modo Examinar y los patrones de diseño, puede registrar una lista de propiedades personalizadas para el tipo de archivo.
 
 Para registrar una lista de propiedades personalizadas y un patrón de diseño para el tipo de archivo, siga estos pasos.
 
@@ -28,14 +28,14 @@ Elija entre los cuatro patrones de diseño: Alfa, Beta, Gamma o Delta.
 Tenga en cuenta las siguientes reglas de formato, que se aplican igualmente a los cuatro patrones de diseño:
 
 -   La propiedad 1 siempre se muestra en un tamaño de fuente mayor. El tamaño de fuente grande normalmente se usa para el nombre del elemento, pero también se puede usar para el delimitador u otra propiedad de elemento.
--   La propiedad 4 está pensada para extractos de los patrones de diseño Alfa, Beta y Gamma. A esta propiedad se le asigna más espacio en esos patrones y se muestra en un color de fuente gris, en lugar de negro como las otras propiedades, para ayudar a destacar.
+-   La propiedad 4 está pensada para extractos de los patrones de diseño Alfa, Beta y Gamma. Esta propiedad se asigna más espacio en esos patrones y se muestra en un color de fuente gris, en lugar del negro como las otras propiedades, para ayudar a destacar.
 -   Las medidas de píxel siguientes están en píxeles relativos y el tamaño incluye el icono o miniatura a la izquierda de las propiedades y el espacio entre el icono o miniatura y el rectángulo de selección.
 -   La mayoría de las propiedades tienen un tamaño de presentación mínimo. Por lo tanto, no aparecerán si no hay suficiente espacio para ellos en un tamaño de vista determinado. El tamaño mínimo suele ser de 100 píxeles de ancho.
 -   Cada patrón de diseño define el número de filas y el número de propiedades de cada fila.
 
 ### <a name="step-3"></a>Paso 3:
 
-Decida qué propiedades desea mostrar en el diseño y qué propiedad quiere mostrar en cada ubicación. Al decidir qué propiedad se va a mostrar en cada posición del diseño, tenga en cuenta la longitud típica de la propiedad, su importancia para el usuario y si se debe descartar cuando el tamaño de la ventana es demasiado pequeño para contener todas las propiedades.
+Decida qué propiedades desea mostrar en el diseño y qué propiedad desea mostrar en cada ubicación. Al decidir qué propiedad se va a mostrar en cada posición del diseño, tenga en cuenta la longitud típica de la propiedad, su importancia para el usuario y si se debe descartar cuando el tamaño de la ventana sea demasiado pequeño para contener todas las propiedades.
 
 ### <a name="step-4"></a>Paso 4:
 
@@ -55,11 +55,11 @@ HKEY_CLASSES_ROOT\*
 Observe las siguientes directrices de formato para registrar propiedades:
 
 -   Cada registro comienza por `prop:`
--   Cada propiedad requiere el nombre de propiedad completo.
+-   Cada propiedad requiere el nombre completo de la propiedad.
 -   Las propiedades están separadas por un punto y coma sin espacio.
 -   Las propiedades se muestran en el orden definido por el patrón de diseño seleccionado.
 -   `~` indica que no se debe mostrar la etiqueta de propiedad.
--   `~System.LayoutPattern.PlaceHolder` debe usarse si desea dejar en blanco una propiedad especificada en el patrón de diseño.
+-   `~System.LayoutPattern.PlaceHolder` debe usarse si desea dejar en blanco una propiedad que se especifica en el patrón de diseño.
 
 La siguiente clave del Registro de ejemplo ilustra estas directrices de formato.
 

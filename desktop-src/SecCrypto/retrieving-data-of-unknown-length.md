@@ -4,12 +4,12 @@ ms.assetid: ef99edef-39b2-4d78-9c01-13720215d47f
 title: Recuperar datos de longitud desconocida
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d9a71a30e935dd20bee6cce8f6dbc00a3b61478a90f4ea2139d7daaddc6894da
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bd30620018f3c4871bd27299c3dd21ae42936c51
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117975019"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476354"
 ---
 # <a name="retrieving-data-of-unknown-length"></a>Recuperar datos de longitud desconocida
 

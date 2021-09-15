@@ -1,23 +1,23 @@
 ---
 description: El ejemplo ink Blog muestra varias técnicas útiles que se pueden usar en aplicaciones web habilitadas para lápiz.
 ms.assetid: 4a5a453d-e3c1-40e6-b0eb-99009f0024dd
-title: Ink-Enabled Web Applications
+title: Ink-Enabled web
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf8097bd55c34abbcb4469d74642e9dbc9a5f29e3b0b7110a76543fd40f5b1ae
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5b14e368c1d2e97e35afa6d72a0fe082f304c5fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118043496"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570401"
 ---
-# <a name="ink-enabled-web-applications"></a>Ink-Enabled Web Applications
+# <a name="ink-enabled-web-applications"></a>Ink-Enabled web
 
 El [ejemplo ink Blog](ink-blog-web-sample.md) muestra varias técnicas útiles que se pueden usar en aplicaciones web habilitadas para lápiz. Estas incluyen: probar si la máquina cliente puede admitir controles habilitados para entrada de lápiz, enviar datos de entrada de lápiz a un servidor y mostrar datos de entrada de lápiz en una página web.
 
 ## <a name="testing-ink-enablement"></a>Prueba de la habilitación de entrada de lápiz
 
-Puede ser útil probar si la máquina cliente puede mostrar controles habilitados para entrada de lápiz. Esto le permite tener la páginawebmostrar un control si el cliente es un tablet PC o otro diferente si no lo es. Una manera de probar esto es intentar crear un objeto como [InkOverlay](/previous-versions/ms833057(v=msdn.10)), que solo se puede crear en una máquina que tenga instalado el kit de desarrollo de software (SDK) de Windows Vista, Windows XP Tablet PC Edition o Windows XP Tablet PC Edition Software Development Kit (SDK). Si crea el objeto dentro de un bloque try/catch y detecta las excepciones que se inician (a menudo se produce una [excepción FileNotFoundException](/previous-versions/windows/) para indicar que no se encuentra el ensamblado con este control), puede detectar si el equipo cliente puede admitir controles habilitados para lápiz. En el ejemplo, este código se puede encontrar en el constructor de la `InkArea` clase .
+Puede ser útil probar si la máquina cliente puede mostrar controles habilitados para entrada de lápiz. Esto le permite tener la páginawebmostrar un control si el cliente es un tablet PC o otro diferente si no lo es. Una manera de probar esto es intentar crear un objeto como [InkOverlay](/previous-versions/ms833057(v=msdn.10)), que solo se puede crear en una máquina que tenga instalado el sistema operativo Windows Vista, Windows XP Tablet PC Edition o el Kit de desarrollo de software (SDK) de Windows XP Tablet PC Edition. Si crea el objeto dentro de un bloque try/catch y detecta las excepciones que se inician (a menudo se produce una [excepción FileNotFoundException](/previous-versions/windows/) para indicar que no se encuentra el ensamblado con este control), puede detectar si el equipo cliente puede admitir controles habilitados para lápiz. En el ejemplo, este código se puede encontrar en el constructor de la `InkArea` clase .
 
 ## <a name="submitting-ink-data"></a>Envío de datos de entrada de lápiz
 

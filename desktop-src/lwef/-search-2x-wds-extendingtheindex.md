@@ -1,17 +1,17 @@
 ---
-title: Extender el índice (características de entorno de Windows heredado)
-description: Aprenda a ampliar el índice en Windows Desktop Search 2.x. Para Windows versiones posteriores a Windows XP y Windows Server 2003, use Windows Search en su lugar.
+title: Extender el índice (características heredadas Windows entorno)
+description: Obtenga información sobre cómo ampliar el índice en Windows Desktop Search 2.x. Para Windows versiones posteriores a Windows XP y Windows Server 2003, use Windows Search en su lugar.
 ms.assetid: vs|search|~\search\wds2x\extending_index_ovr.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d73bbf1ab143bcac581a59467e7a3813511e7b20204434ee5ae7dd7d8893b636
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 63408cfe1efeb8da4d6a4540cc57b99ea56ae935
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118480927"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468797"
 ---
-# <a name="extending-the-index-legacy-windows-environment-features"></a>Extender el índice (características de entorno de Windows heredado)
+# <a name="extending-the-index-legacy-windows-environment-features"></a>Extender el índice (características heredadas Windows entorno)
 
 > [!NOTE]
 > Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use [Windows Search en](../search/-search-3x-wds-overview.md) su lugar.

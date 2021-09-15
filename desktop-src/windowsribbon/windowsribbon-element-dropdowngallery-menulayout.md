@@ -1,9 +1,9 @@
 ---
 title: DropDownGallery.MenuLayout, propiedad
-description: Representa un contenedor para los diseños de menú desplegable DropDownGallery.
+description: Representa un contenedor para los diseños de menú desplegable de DropDownGallery.
 ms.assetid: 7251e889-377d-4d7f-b049-bd81a202774d
 keywords:
-- DropDownGallery.MenuLayout, propiedad Windows Cinta de opciones
+- DropDownGallery.MenuLayout, propiedad Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b3fa4c0e2cca92aa2f95f73e0c817314bb71a8260db21a89cb40ec78fff7765
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d1b6ad3f07f369dfef90b1e6c52c34793e60520
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119810685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570305"
 ---
 # <a name="dropdowngallerymenulayout-property"></a>DropDownGallery.MenuLayout, propiedad
 
-Representa un contenedor para los diseños de menú desplegable [**DropDownGallery.**](windowsribbon-element-dropdowngallery.md)
+Representa un contenedor para los diseños de menú desplegable de [**DropDownGallery.**](windowsribbon-element-dropdowngallery.md)
 
 ## <a name="usage"></a>Uso
 
@@ -56,14 +56,14 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Opcional.
 
 Puede producirse como máximo una vez para cada [**elemento DropDownGallery.**](windowsribbon-element-dropdowngallery.md)
 
 > [!Note]  
-> Se permite un máximo de un elemento secundario [**(VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) [**o FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)).
+> Se permite un máximo de un elemento secundario ([**VerticalMenuLayout**](windowsribbon-element-verticalmenulayout.md) o [**FlowMenuLayout**](windowsribbon-element-flowmenulayout.md)).
 
  
 
@@ -106,7 +106,7 @@ En esta sección de código se muestra la declaración de control **DropDownGall
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |

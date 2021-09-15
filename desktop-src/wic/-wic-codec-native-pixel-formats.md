@@ -1,21 +1,21 @@
 ---
 description: En este tema se presentan los formatos de píxeles proporcionados por Windows Imaging Component (WIC).
 ms.assetid: 348b6d15-e339-4dce-99f3-4d639ee9bf7d
-title: Información general sobre los formatos de píxeles nativos
+title: Información general sobre los formatos de píxel nativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 379e67d422ccbd05ef178e67eb25c973e6b5943ef85d22873097f245f8914a23
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4df37481399ac8193effc5d8f93aa49050460ee6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118206344"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570337"
 ---
-# <a name="native-pixel-formats-overview"></a>Información general sobre los formatos de píxeles nativos
+# <a name="native-pixel-formats-overview"></a>Información general sobre los formatos de píxel nativo
 
 En este tema se presentan los formatos de píxeles proporcionados por Windows Imaging Component (WIC).
 
-Un formato de píxel describe el diseño de memoria de cada píxel de un mapa de bits. Este diseño de memoria describe cómo se codifican los datos de imagen de un mapa de bits especificando el formato numérico y la organización del canal de color. WIC admite varios formatos numéricos para varios esquemas de organización de canal de color, lo que proporciona una amplia gama de formatos de píxel.
+Un formato de píxel describe el diseño de memoria de cada píxel de un mapa de bits. Este diseño de memoria describe cómo se codifican los datos de imagen de un mapa de bits especificando el formato numérico y la organización del canal de color. WIC admite varios formatos numéricos para varios esquemas de organización de canal de color, lo que proporciona una amplia gama de formatos de píxeles.
 
 -   [Profundidad de bits](#bit-depth)
 -   [Codificación numérica](#numerical-encoding)
@@ -24,18 +24,18 @@ Un formato de píxel describe el diseño de memoria de cada píxel de un mapa de
     -   [Modelo de color COLOR](#cmyk-color-model)
     -   [Modelo de color de n canales](#n-channel-color-model)
     -   [Modelos de color indexados y de escala de grises](#indexed-and-grayscale-color-models)
-    -   [Modelo de color Y'CbCr](#ycbcr-color-model)
--   [Formato de píxel wic](#wic-pixel-format)
+    -   [Modelo de color de Y'CbCr](#ycbcr-color-model)
+-   [Formato de píxeles de WIC](#wic-pixel-format)
     -   [Formatos de píxeles no definidos](#undefined-pixel-formats)
-    -   [Formatos de píxel indexados](#indexed-pixel-formats)
+    -   [Formatos de píxeles indexados](#indexed-pixel-formats)
     -   [Formatos de píxeles de bits empaquetados](#packed-bit-pixel-formats)
     -   [Formatos de píxeles de escala de grises](#grayscale-pixel-formats)
     -   [Formatos de píxel RGB/BGR](#rgbbgr-pixel-formats)
     -   [Formatos de píxeles de XEL](#cmyk-pixel-formats)
     -   [Formatos de píxeles de n canales](#n-channel-pixel-formats)
     -   [Formatos de píxeles de solo alfa](#alpha-only-pixel-formats)
-    -   [Formatos de píxeles Y'CbCr](#ycbcr-pixel-formats)
--   [Espacio de color](#color-space)
+    -   [Formatos de píxeles de Y'CbCr](#ycbcr-pixel-formats)
+-   [Espacio de colores](#color-space)
 -   [Formatos de imagen nativa](#native-image-formats)
     -   [Códec nativo BMP](#bmp-native-codec)
     -   [Códec nativo GIF](#gif-native-codec)
@@ -44,76 +44,76 @@ Un formato de píxel describe el diseño de memoria de cada píxel de un mapa de
     -   [Códec nativo PNG](#png-native-codec)
     -   [Códec nativo TIFF](#tiff-native-codec)
     -   [Códec nativo JPEG-XR](#jpeg-xr-native-codec)
--   [Códec nativo de DDS](#dds-native-codec)
+-   [Códec nativo DDS](#dds-native-codec)
 -   [Extensibilidad del formato de píxel](#pixel-format-extensibility)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="bit-depth"></a>Profundidad de bits
 
-La *profundidad de bits* es el número de bits usados para codificar cada canal de color. En la actualidad, la mayoría de las imágenes digitales usan una profundidad de bits de 8, lo que significa que cada canal de color de un píxel se representa mediante 8 bits, lo que proporciona 2⁸ (256) valores únicos por canal. Una imagen que tiene una profundidad de 8 bits y tres canales de color (como rojo, verde y azul) usa 24 bits por píxel (bpp), lo que proporciona 2⁴ (16 777 216) colores diferentes por píxel.
+La *profundidad de bits* es el número de bits usados para codificar cada canal de color. En la actualidad, la mayoría de las imágenes digitales usan una profundidad de bits de 8, lo que significa que cada canal de color de un píxel se representa mediante 8 bits, lo que proporciona 2⁸ (256) valores únicos por canal. Una imagen que tiene una profundidad de bits de 8 y tres canales de color (como rojo, verde y azul) usa 24 bits por píxel (bpp), que proporciona 2gran⁴ (16 777 216) colores diferentes por píxel.
 
 Para una mejor resolución de color, se puede usar una profundidad de bits de 16 o 32. Esto proporciona a cada canal de color valores únicos de 2⁶ (65 536) o 2 unidades de color, a un costo de más memoria por píxel.
 
-En algunos formatos, la profundidad de bits no es un múltiplo de 8. Estos formatos se *denominan formatos empaquetados,* porque los canales de color de un píxel no están alineados con los límites de bytes. Por ejemplo, si las profundidades de bits de 5, se pueden almacenar tres canales de color en 16 bits (incluido un bit de relleno, para que los píxeles se alineen en bytes). Los formatos empaquetados son útiles cuando la memoria o la potencia de procesamiento están limitadas.
+En algunos formatos, la profundidad de bits no es un múltiplo de 8. Estos formatos se *denominan formatos empaquetados,* porque los canales de color de un píxel no están alineados con los límites de bytes. Por ejemplo, si las profundidades de bits de 5, se pueden almacenar tres canales de color en 16 bits (incluido un bit de relleno, para alinear los bytes en píxeles). Los formatos empaquetados son útiles cuando la memoria o la capacidad de procesamiento están limitadas.
 
 ## <a name="numerical-encoding"></a>Codificación numérica
 
-En la mayoría de las imágenes digitales actuales, se usan bytes sin signo y enteros cortos sin signo para describir el intervalo numérico de cada canal de color. El valor mínimo (0) representa la intensidad cero en un único canal de color y el negro se logra cuando todos los canales de color son cero. Del mismo modo, el valor máximo representa la intensidad completa y el blanco se logra cuando todos los canales de color tienen una intensidad completa. A una profundidad de bits de 8, un UINT proporciona 256 valores únicos por canal de color (0 - 255). Un UINT de 16 bits proporciona 65 536 valores únicos por canal de color (de 0 a 65 535).
+En la mayoría de las imágenes digitales actuales, los bytes sin signo y los enteros cortos sin signo se usan para describir el intervalo numérico de cada canal de color. El valor mínimo (0) representa la intensidad cero en un único canal de color y el negro cuando todos los canales de color son cero. Del mismo modo, el valor máximo representa la intensidad completa y el blanco se logra cuando todos los canales de color están a plena intensidad. A una profundidad de bits de 8, un UINT proporciona 256 valores únicos por canal de color (0 - 255). Un UINT de 16 bits proporciona 65 536 valores únicos por canal de color (0 - 65 535).
 
 Además, WIC admite formatos de punto fijo y de punto flotante. Estos formatos admiten intervalos dinámicos más grandes, ya que todo el intervalo numérico de cada canal de color es mayor que el intervalo visible. Como resultado, los colores se pueden ajustar por encima o por debajo del intervalo visible, durante los pasos intermedios del procesamiento de imágenes, sin pérdida de información de imagen.
 
 ### <a name="fixed-point-numerical-encoding"></a>Fixed-Point codificación numérica
 
-Los valores de punto fijo de 16 bits se interpretan como s2.13: bit de signo, dos bits enteros y 13 bits fraccionales. Con esta interpretación, un intervalo numérico de entre -4,0 y +3,999... se puede representar, con el valor de 1,0 representado por el valor entero con signo 8192 (0x2000).
+Los valores de punto fijo de 16 bits se interpretan como s2.13: bit de signo, dos bits enteros y 13 bits fraccionales. Con esta interpretación, un intervalo numérico de -4,0 a +3,999... se puede representar, con el valor de 1,0 representado por el valor entero con signo 8192 (0x2000).
 
-Los valores de punto fijo de 32 bits se interpretan como s7.24: bit de signo, siete bits enteros y 24 fracciones de bits. Con esta interpretación, un intervalo numérico de entre -128,0 y +127,999... se puede representar, con el valor de 1,0 representado por el valor entero con signo 16777216 (0x01000000).
+Los valores de punto fijo de 32 bits se interpretan como s7.24: bit de signo, siete bits enteros y 24 bits fraccionales. Con esta interpretación, un intervalo numérico de entre -128,0 y +127,999... se puede representar, con el valor de 1,0 representado por el valor entero con signo 16777216 (0x01000000).
 
 ## <a name="color-channels"></a>Canales de color
 
-Los canales de color de un formato de píxel definen el diseño de memoria de cada color dentro de los datos de imagen de un mapa de bits. Hay una variedad de estructuras de canal de color diferentes comunes en las imágenes digitales de hoy en día, y WIC proporciona compatibilidad con muchas de ellas.
+Los canales de color de un formato de píxel definen el diseño de memoria de cada color dentro de los datos de imagen de un mapa de bits. Hay una variedad de estructuras de canal de color diferentes comunes en las imágenes digitales actuales, y WIC proporciona compatibilidad con muchas de ellas.
 
 ### <a name="rgbbgr-color-model"></a>Modelo de color RGB/BGR
 
-Los formatos RGB y BGR describen los colores de un modelo de color aditiva. El método más común para describir una imagen es con tres canales de color independientes que representan los colores rojo (R), verde (G) y azul (B). WIC proporciona compatibilidad con estos tres canales en el orden rojo-verde-azul (RGB) o azul-verde-rojo (BGR). Este es el orden en el que cada canal de color aparece dentro de la secuencia de bits secuencial. Por ejemplo, en el formato \_ GUID WICPixelFormat32bppRGB, cada píxel tiene 32 bits de ancho. El canal rojo es el primer byte (menos significativo) en memoria, seguido de verde y, a continuación, azul. Por el contrario, en el formato \_ WICPixelFormat32bppBGR guid, los canales de color están en el orden opuesto. WIC admite varios formatos RGB/BGR, incluidos formatos de bits empaquetados especiales, como GUID \_ WICPixelFormat16bppBGR555.
+Los formatos RGB y BGR describen los colores de un modelo de color aditivo. El método más común para describir una imagen es con tres canales de color independientes que representan los colores rojo (R), verde (G) y azul (B). WIC proporciona compatibilidad con estos tres canales en el orden rojo-verde-azul (RGB) o azul-verde-rojo (BGR). Este es el orden en el que cada canal de color aparece dentro de la secuencia de bits secuencial. Por ejemplo, en el formato \_ GUID WICPixelFormat32bppRGB, cada píxel tiene 32 bits de ancho. El canal rojo es el primer byte (menos significativo) en memoria, seguido de verde y, a continuación, azul. Por el contrario, en el formato \_ GUID WICPixelFormat32bppBGR, los canales de color están en el orden opuesto. WIC admite varios formatos RGB/BGR, incluidos formatos de bits empaquetados especiales, como GUID \_ WICPixelFormat16bppBGR555.
 
 > [!Note]  
-> Los canales de color de los formatos de bits empaquetados de BGR especiales no están en múltiplo de 8, como los canales de color en formatos de píxel típicos. Esto significa que los valores del canal no están alineados en bytes. Se debe tener cuidado al leer los canales de color de bits empaquetados.
+> Los canales de color de los formatos de bits empaquetados de BGR especiales no están en múltiplo de 8, como los canales de color en formatos de píxeles típicos. Esto significa que los valores del canal no están alineados en bytes. Debe tener cuidado al leer los canales de color de bits empaquetados.
 
  
 
 Además de los formatos RGB y BGR, WIC también proporciona formatos de píxel RGB y BGR que admiten un canal alfa (A). El canal alfa proporciona datos de opacidad para el píxel. En el caso de los formatos con un canal alfa agregado, el canal alfa suele aparecer en último lugar en el orden del canal de color. Por ejemplo, en el formato de píxel GUID WICPixelFormat32bppBGRA, el orden de bytes es azul, verde y rojo, seguido del \_ canal alfa.
 
-WIC también admite formatos de píxel RGB alfa multiplicados previamente (P). En un formato de píxel RGBA típico, los valores de color rojo, verde y azul son los valores de color reales de la imagen. Para crear una imagen compuesta en el formato RGBA estándar, el valor alfa de la imagen en primer plano debe multiplicarse por cada uno de los canales rojo, verde y azul antes de agregarlo al color de la imagen de fondo. En un formato de píxel rgb alfa multiplicado previamente, cada canal de color ya se ha multiplicado por el valor alfa. Esto proporciona un método más eficaz de composición de imágenes con datos de canal alfa. Para recuperar los valores de color verdaderos de cada canal en un formato de píxel PRGBA/PBGRA, la multiplicación del canal alfa se debe invertir dividiendo los valores de color por el valor alfa.
+WIC también admite formatos de píxel RGB alfa multiplicados previamente (P). En un formato de píxel RGBA típico, los valores de color rojo, verde y azul son los valores de color reales de la imagen. Para crear una imagen compuesta en el formato RGBA estándar, el valor alfa de la imagen de primer plano debe multiplicarse por cada uno de los canales rojo, verde y azul antes de agregarlo al color de la imagen de fondo. En un formato de píxel RGB alfa multiplicado previamente, cada canal de color ya se ha multiplicado por el valor alfa. Esto proporciona un método más eficaz de composición de imágenes con datos de canal alfa. Para recuperar los valores de color verdaderos de cada canal en un formato de píxeles PRGBA/PBGRA, la multiplicación del canal alfa se debe invertir dividiendo los valores de color por el valor alfa.
 
 ### <a name="cmyk-color-model"></a>Modelo de color COLOR
 
-OFFSET es un modelo de color resta que se usa en la impresión. Los colores generados por un modelo IONE se generan mediante la luz que no se trata, sino que se refleja. CIAN es un modelo de cuatro canales de cian (C), al rojo (M), al amarillo (Y) y al negro (K). Cuando los cuatro canales de color están en el valor máximo, el resultado es negro. Al igual que los modelos de color RGB/BGR, el orden de bytes dentro de la secuencia de bits secuencial está determinado por el nombre del formato de píxel. Por ejemplo, en el formato de píxel GUID \_ WICPixelFormat32bpp JPEG, cada píxel está compuesto por 32 bits. El primer byte contiene el valor de cian, seguido a su vez por el color púrpura, amarillo y negro. WIC proporciona formatos de píxel para XEL a 32 y 64 bits por píxel (bpp).
+OFFSET es un modelo de color resta que se usa en la impresión. Los colores generados por un modelo LIGHT se generan mediante la luz que no se ve, pero que se refleja. GNI es un modelo de cuatro canales de aguaz (C), después (M), amarillo (Y) y negro (K). Cuando los cuatro canales de color están en el valor máximo, el resultado es negro. Al igual que los modelos de color RGB/BGR, el orden de bytes dentro de la secuencia de bits secuencial se da por el nombre del formato de píxel. Por ejemplo, en el formato de píxel GUID \_ WICPixelFormat32bppPIX, cada píxel está compuesto por 32 bits. El primer byte contiene el valor de cian, seguido, a su vez, del color negro, amarillo y negro. WIC proporciona formatos de píxel para XEL a 32 y 64 bits por píxel (bpp).
 
-Además del modelo de color CIC estándar, WIC también proporciona CIC con alfa. Esto permite que las imágenes COMBINE tengan datos de combinación alfa similares al modelo de color RGB/BGR. El canal alfa se encuentra inmediatamente después del negro en la secuencia de bits secuencial de un mapa de bits.
+Además del modelo de color CONCEPTUAL estándar, WIC también proporciona JUN con alfa. Esto permite que las imágenes COMBINE tengan datos de combinación alfa similares al modelo de color RGB/BGR. El canal alfa se encuentra inmediatamente después del negro en la secuencia de bits secuencial de un mapa de bits.
 
 ### <a name="n-channel-color-model"></a>Modelo de color de n canales
 
-Para mayor flexibilidad, WIC también proporciona formatos de píxeles que no tienen un orden de canal predefinido. WIC proporciona formatos de píxeles que admiten entre tres y ocho canales de datos de imagen continuos a profundidades de bits de 8 y 16. A diferencia de los formatos de píxel RGB/BGR y PRECISE, los formatos de n canales no especifican el orden del canal, sino el número de canales de color disponibles. Por ejemplo, en el formato de píxel GUID WICPixelFormat32bpp4Channels, cada píxel se forma con 32 bits y cada uno de los 4 canales ocupa un \_ solo byte.
+Para mayor flexibilidad, WIC también proporciona formatos de píxeles que no tienen un orden de canal predefinido. WIC proporciona formatos de píxeles que admiten de tres a ocho canales de datos de imagen continuos a profundidades de bits de 8 y 16. A diferencia de los formatos de píxel RGB/BGR y PRECISE, los formatos de n canales no especifican el orden del canal, sino el número de canales de color disponibles. Por ejemplo, en el formato de píxel GUID WICPixelFormat32bpp4Channels, cada píxel está hecho de 32 bits y cada uno de los 4 canales ocupa un \_ solo byte.
 
-WIC también proporciona formatos de píxel para n canales con alfa. Esto permite que las imágenes de n canales tengan datos de combinación alfa similares a los modelos de color RGB/BGR y RGB. El canal alfa se encuentra inmediatamente después del último canal de color en la secuencia de bits secuencial de un mapa de bits.
+WIC también proporciona formatos de píxel para n canales con alfa. Esto permite que las imágenes de n canales tengan datos de combinación alfa similares a los modelos de color RGB/BGR y GR. El canal alfa se encuentra inmediatamente después del último canal de color en la secuencia de bits secuencial de un mapa de bits.
 
 ### <a name="indexed-and-grayscale-color-models"></a>Modelos de color indexados y de escala de grises
 
 *Los formatos* indexados usan una tabla de colores, denominada *paleta*. La paleta se almacena externamente en los datos de píxeles o, de lo contrario, se define implícitamente. El valor de cada píxel de la imagen es un índice de la paleta. Con un formato indexado, el número de bits por píxel está directamente relacionado con el número de entradas de la paleta. Esto reduce significativamente la cantidad de datos necesarios para representar la imagen, pero también restringe el número de colores disponibles para la imagen. WIC admite formatos indexados con 1, 2, 4 u 8 bpp.
 
-En el caso de los formatos monocromáticos (escala de grises), WIC admite 1, 2, 4, 8, 16 y 32 bits por píxel. Para las profundidades de bits de 1, 8, 16 y 32, los datos de color se almacenan en un único canal. Para profundidades de bits de 2 o 4, los píxeles son índices en una paleta de escala de grises.
+Para los formatos monocromáticos (escala de grises), WIC admite 1, 2, 4, 8, 16 y 32 bits por píxel. Para las profundidades de bits de 1, 8, 16 y 32, los datos de color se almacenan en un único canal. Para profundidades de bits de 2 o 4, los píxeles son índices en una paleta de escala de grises.
 
-### <a name="ycbcr-color-model"></a>Modelo de color de Y'CbCr
+### <a name="ycbcr-color-model"></a>Modelo de color Y'CbCr
 
-WIC agrega compatibilidad con el modelo de color JPEG JFIF Y'CbCr. Y'CbCr separa los colores en un componente de luma (Y' ) y dos componentes de color (Cb y Cr). Muchos archivos JPEG almacenan de forma nativa datos de imagen mediante el modelo de color Y'CbCr.
+WIC agrega compatibilidad con el modelo de color JPEG JFIF Y'CbCr. Y'CbCr separa los colores en un componente de luma (Y)) y dos componentes de croma (Cb y Cr). Muchos archivos JPEG almacenan datos de imagen de forma nativa mediante el modelo de color Y'CbCr.
 
-El sistema visual humano es menos sensible a los cambios en el lenguaje que al luma, y los formatos Y'CbCr pueden aprovechar esta sensibilidad reducida al reducir la cantidad de datos de la cocina que se almacenan en relación con el luma. Para ello, almacenan el brillo y el luma en planos independientes y escalan cada plano de componente a una resolución diferente. Esta práctica se conoce como submuestreo de toros.
+El sistema visual humano es menos sensible a los cambios en el brillo que al luma, y los formatos Y'CbCr pueden aprovechar esta sensibilidad reducida al reducir la cantidad de datos de color que se almacenan en relación con luma. Para ello, almacenan el brillo y el luma en planos independientes y escalan cada plano de componente a una resolución diferente. Esta práctica se conoce como submuestreo de toros.
 
-Dado que los datos de color y luma se almacenan por separado y pueden ser resoluciones diferentes, WIC define formatos de píxeles de luma y de píxeles de forma independiente. WIC admite datos de 8 bits por canal.
+Dado que los datos de color y luma se almacenan por separado y pueden ser resoluciones diferentes, WIC define formatos de píxeles de luma y de píxeles de píxeles de color. WIC admite datos de 8 bits por canal.
 
-## <a name="wic-pixel-format"></a>Formato de píxeles de WIC
+## <a name="wic-pixel-format"></a>Formato de píxel wic
 
-Los formatos de píxel de WIC se definen mediante GUID para evitar conflictos con los IHV. WIC proporciona un nombre descriptivo para hacer referencia al GUID de un formato de píxel nativo. La convención de nomenclatura para los formatos de píxeles de WIC es la siguiente:
+Los formatos de píxel de WIC se definen mediante GUID para evitar conflictos con los IHV. WIC proporciona un nombre descriptivo para hacer referencia al GUID de un formato de píxel nativo. La convención de nomenclatura para los formatos de píxel wic es la siguiente:
 
 **\[Guid \_ WICPixelFormat \] \[ Bits per Pixel Channel Order \] \[ Storage \] \[ Type\]**
 
@@ -122,20 +122,20 @@ Los formatos de píxel de WIC se definen mediante GUID para evitar conflictos co
 | **GUID \_ WICPixelFormat** | Identificación descriptiva para todos los formatos de píxel de WIC. El nombre descriptivo de todos los píxeles de WIC comienza con esta cadena.                                                                                                                                                                                       |
 | **Bits por píxel**       | Número de bits por píxel (bpp) usados para el formato de píxel.                                                                                                                                                                                                                                                |
 | **Orden del canal**        | Modelo de canal de color y orden de cada canal para el formato.                                                                                                                                                                                                                                            |
-| **Tipo de almacenamiento**         | Codificación numérica utilizada para el formato de píxel. La codificación predeterminada es un entero sin signo. Si nada sigue la información del modelo de color, se implica un entero sin signo (UINT). FixedPoint y Float se usan para identificar formatos de píxel que usan codificación de punto fijo y punto flotante respectivamente. |
+| **Tipo de almacenamiento**         | Codificación numérica usada para el formato de píxel. La codificación predeterminada es un entero sin signo. Si nada sigue la información del modelo de color, se implica un entero sin signo (UINT). FixedPoint y Float se usan para identificar formatos de píxel que usan codificación de punto fijo y punto flotante respectivamente. |
 
 
 
  
 
 > [!Note]  
-> En el caso de los formatos de n canales, El orden del canal no \[ especifica el orden de \] color, sino el número de canales disponibles. Por ejemplo, EL GUID \_ WICPixelFormat24bpp3Channels proporciona 3 canales de color donde "3Channels" es la entrada Channel Order, pero indica solo el número de canales y no el \[ \] orden.
+> En el caso de los formatos de n \[ canales, Channel Order \] no especifica el orden de color, sino el número de canales disponibles. Por ejemplo, EL GUID \_ WICPixelFormat24bpp3Channels proporciona 3 canales de color donde "3Channels" es la entrada Channel Order, pero indica solo el número de canales y no el \[ \] orden.
 
  
 
 Por ejemplo, el nombre descriptivo GUID WICPixelFormat24bppRGB significa que el formato de píxel usa 24 bits por píxel y el \_ modelo de color RGB. Dado que el nombre no identifica explícitamente un tipo de almacenamiento, se implica un entero sin signo.
 
-WIC admite varios formatos de píxel. Las tablas siguientes agrupan formatos de píxeles similares por estructura de color y proporcionan información adicional, como la profundidad de bits, los bits por píxel y la codificación numérica. Cada tabla contiene la siguiente información:
+WIC admite varios formatos de píxel. Las tablas siguientes agrupan formatos de píxeles similares por estructura de color a la vez que proporcionan información adicional, como la profundidad de bits, los bits por píxel y la codificación numérica. Cada tabla contiene la siguiente información:
 
 -   **Nombre descriptivo**. Nombre descriptivo del formato de píxel.
 -   **Recuento de canales.** Número de canales de color.
@@ -155,7 +155,7 @@ En la lista siguiente se muestran los formatos de píxel genéricos que se usan 
 -   GUID \_ WICPixelFormatUndefined
 -   GUID \_ WICPixelFormatDontCare
 
-### <a name="indexed-pixel-formats"></a>Formatos de píxeles indexados
+### <a name="indexed-pixel-formats"></a>Formatos de píxel indexados
 
 En la tabla siguiente se enumeran los formatos de píxel indexados proporcionados por WIC. En estos formatos, el valor de cada píxel es un índice en una paleta de colores.
 
@@ -189,13 +189,13 @@ En la tabla siguiente se enumeran los formatos de bits empaquetados proporcionad
 | GUID \_ WICPixelFormat32bppR10G10B10A2      | 4             | 10(R)/10(G)/10(B)/2(A) | 32             | UINT         |
 | GUID \_ WICPixelFormat32bppR10G10B10A2HDR10 | 4             | 10(R)/10(G)/10(B)/2(A) | 32             | UINT         |
 
-Para los formatos \_ WICPixelFormat32bppBGR101010 y GUID \_ WICPixelFormat32bppRGBA1010102, el canal rojo se almacena en los bits menos significativos. Para los formatos \_ GUID WICPixelFormat32bppR10G10B10A2 y GUID \_ WICPixelFormat32bppR10G10B10A2HDR10, el canal rojo se [](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)define en los bits más significativos, el mismo diseño que DXGI_FORMAT_R10G10B10A2_UNORM .
+Para los formatos \_ GUID WICPixelFormat32bppBGR101010 y GUID \_ WICPixelFormat32bppRGBA1010102, el canal rojo se almacena en los bits menos significativos. Para los formatos \_ GUID WICPixelFormat32bppR10G10B10A2 y GUID \_ WICPixelFormat32bppR10G10B10A2HDR10, el canal rojo se [](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)define en los bits más significativos, el mismo diseño que DXGI_FORMAT_R10G10B10A2_UNORM .
 
-El formato \_ WICPixelFormat32bppR10G10B10A2HDR10 es el formato de píxel de 10 bits para HDR10 (espacio de colores BT.2020 y SMPTE ST.2084 EOTF).
+El formato \_ GUID WICPixelFormat32bppR10G10B10A2HDR10 es el formato de píxeles de 10 bits para HDR10 (espacio de colores BT.2020 y SMPTE ST.2084 EOTF).
 
 ### <a name="grayscale-pixel-formats"></a>Formatos de píxeles de escala de grises
 
-En la tabla siguiente se enumeran los formatos de escala de grises proporcionados por WIC. En estos formatos, los datos de color representan tonos de gris.
+En la tabla siguiente se enumeran los formatos de escala de grises proporcionados por WIC. En estos formatos, los datos de color representan tonalidades de gris.
 
 
 
@@ -346,7 +346,7 @@ En la tabla siguiente se enumeran los formatos de solo alfa proporcionados por W
 
 ### <a name="ycbcr-pixel-formats"></a>Formatos de píxeles de Y'CbCr
 
-En la tabla siguiente se enumeran los formatos Y'CbCr proporcionados por WIC. Estos formatos separan los datos de color primario en luma (Y), diferencia de azul azul (Cb) y diferencia de choma rojo (Cr). Tenga en cuenta que estos formatos están diseñados para almacenar datos de píxeles jpeg JFIF Y'CbCr.
+En la tabla siguiente se enumeran los formatos Y'CbCr proporcionados por WIC. Estos formatos separan los datos de color primario en luma (Y), diferencia de azul azul (Cb) y diferencia de choma rojo (Cr). Tenga en cuenta que estos formatos están diseñados para almacenar datos de píxeles JFIF Y'CbCr JPEG.
 
 
 
@@ -377,7 +377,7 @@ Al descodificar una imagen, si los datos se almacenan de forma nativa en un form
 
 Al codificar una imagen, use [**IWICBitmapFrameEncode::SetPixelFormat**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setpixelformat) para solicitar que el codificador use un formato de píxel específico. El codificador devolverá el formato de píxeles admitido más cercano, que puede ser diferente de lo que se solicitó.
 
-En las tablas siguientes se muestran los formatos de píxel admitidos por cada uno Windows códecs WIC proporcionados.
+En las tablas siguientes se muestran los formatos de píxeles admitidos por cada uno Windows códecs WIC proporcionados.
 
 ### <a name="bmp-native-codec"></a>Códec nativo BMP
 
@@ -572,11 +572,11 @@ En las tablas siguientes se muestran los formatos de píxel admitidos por cada u
 
  
 
-## <a name="dds-native-codec"></a>Códec nativo de DDS
+## <a name="dds-native-codec"></a>Códec nativo DDS
 
 
 
-| Descodificar formatos de píxel          | Formatos de píxeles de codificador          |
+| Formatos de píxeles de descodificador          | Formatos de píxeles del codificador          |
 |--------------------------------|--------------------------------|
 | GUID \_ WICPixelFormat32bppBGRA  | GUID \_ WICPixelFormat32bppBGRA  |
 | GUID \_ WICPixelFormat32bppPBGRA | GUID \_ WICPixelFormat32bppPBGRA |
@@ -586,7 +586,7 @@ En las tablas siguientes se muestran los formatos de píxel admitidos por cada u
  
 
 > [!Note]  
-> El códec Windows DDS proporcionado admite archivos DDS codificados con los siguientes valores DXGI \_ FORMAT:
+> El códec Windows DDS proporcionado admite archivos DDS codificados con los siguientes valores \_ DE FORMATO DXGI:
 
  
 
@@ -594,11 +594,11 @@ En las tablas siguientes se muestran los formatos de píxel admitidos por cada u
 -   DXGI \_ FORMAT \_ BC2 \_ UNORM
 -   DXGI \_ FORMAT \_ BC3 \_ UNORM
 
-Se descodifican y codifican como GUID \_ WICPixelFormat32bppBGRA o GUID \_ WICPixelFormat32bppPBGRA. Para obtener más información, vea Información [general sobre el formato DDS.](dds-format-overview.md)
+Se descodifican y codifican como \_ GUID WICPixelFormat32bppBGRA o GUID \_ WICPixelFormat32bppPBGRA. Para obtener más información, vea Información [general sobre el formato DDS.](dds-format-overview.md)
 
 ## <a name="pixel-format-extensibility"></a>Extensibilidad del formato de píxel
 
-Los formatos de imagen personalizados pueden usar formatos de píxeles que WIC no proporciona de forma nativa, como YCbCr (YUV) y YCCK (Y/Cb/Cr/K). WIC proporciona un modelo de extensibilidad que permite que los formatos de píxeles integrados y de complemento funcionen dentro de la misma canalización de creación de imágenes. Para integrar estos formatos de píxel con la canalización de creación de imágenes de WIC, debe crear convertidores de formato de píxeles para convertir formatos de píxeles de complemento en uno o varios de los formatos de píxel nativos. La interfaz principal para compilar convertidores de formato es [**IWICFormatConverter.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter)
+Los formatos de imagen personalizados pueden usar formatos de píxeles que WIC no proporciona de forma nativa, como YCbCr (YUV) y YCCK (Y/Cb/Cr/K). WIC proporciona un modelo de extensibilidad que permite que los formatos de píxeles integrados y de complemento funcionen dentro de la misma canalización de creación de imágenes. Para integrar estos formatos de píxel con la canalización de creación de imágenes de WIC, debe crear convertidores de formato de píxel para convertir formatos de píxeles de complemento en uno o varios de los formatos de píxel nativos. La interfaz principal para compilar convertidores de formato es [**IWICFormatConverter.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter)
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -607,7 +607,7 @@ Los formatos de imagen personalizados pueden usar formatos de píxeles que WIC n
 **Conceptual**
 </dt> <dt>
 
-[Windows Información general sobre los componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
+[Windows Información general sobre componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
 [GUID y CLID de WIC](-wic-guids-clsids.md)
@@ -616,7 +616,7 @@ Los formatos de imagen personalizados pueden usar formatos de píxeles que WIC n
 **Otros recursos**
 </dt> <dt>
 
-[Cómo escribir un códec de WIC-Enabled](-wic-howtowriteacodec.md)
+[Cómo escribir un códec WIC-Enabled datos](-wic-howtowriteacodec.md)
 </dt> <dt>
 
 [HD Photo Specification 1.0](https://www.microsoft.com/whdc/xps/wmphoto.mspx)

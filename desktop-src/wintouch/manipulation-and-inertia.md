@@ -9,12 +9,12 @@ keywords:
 - inercia, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03d47661630fd0cc3f14125d1590816145d48a0f3485cedde68c76b52064eb4a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0a55def8acb5f3dcf517ae90f4f220511e0650a1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118199493"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570296"
 ---
 # <a name="manipulations-and-inertia"></a>Manipulaciones e inercia
 

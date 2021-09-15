@@ -14,18 +14,18 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: e7420e21a9f2c6ac92712326fa4a51159c6303d3972756e7a47c0797f22a1d83
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1a7400bb9a16e6ece5f5f26fe95a0398a7d45e19
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476716"
 ---
 # <a name="iesp-interface"></a>Interfaz IESP
 
 La **interfaz IESP** proporciona los métodos que conectan el NPP a la red, capturan el tráfico de red a un archivo de captura, recuperan estadísticas y desconectan el NPP de la red. Esta interfaz se usa principalmente cuando necesita recopilar [*estadísticas*](c.md) de conversación de red en un formato de archivo ESP propietario.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IESP** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IESP** también tiene estos tipos de miembros:
 
@@ -39,15 +39,15 @@ La **interfaz IESP** tiene estos métodos.
 
 | Método                                          | Descripción                                                                                                                        |
 |:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
-| [**Configurar**](iesp-configure.md)             | Envía información de configuración para una captura<br/>                                                                         |
-| [**Conectar**](iesp-connect.md)                 | Conecta el NPP a la red.<br/>                                                                                        |
+| [**Configuración**](iesp-configure.md)             | Envía información de configuración para una captura<br/>                                                                         |
+| [**Conexión**](iesp-connect.md)                 | Conecta el NPP a la red.<br/>                                                                                        |
 | [**Desconectar**](iesp-disconnect.md)           | Desconecta el NPP de la red.<br/>                                                                                   |
 | [**GetControlState**](iesp-getcontrolstate.md) | Recupera el estado de la [*captura*](c.md), que indica si la captura se está ejecutando o en pausa.<br/> |
 | [**Pausar**](iesp-pause.md)                     | Detiene temporalmente la captura actual.<br/>                                                                                  |
 | [**QueryStations**](iesp-querystations.md)     | Recupera una lista de todos los equipos que usan Monitor de red para capturar datos en una subred.<br/>                           |
 | [**QueryStatus**](iesp-querystatus.md)         | Recupera el estado del NPP.<br/>                                                                                        |
 | [**Reanudar**](iesp-resume.md)                   | Reanuda una captura en pausa.<br/>                                                                                               |
-| [**Inicio**](iesp-start.md)                     | Inicia la captura y crea el archivo de captura.<br/>                                                                        |
+| [**Empezar**](iesp-start.md)                     | Inicia la captura y crea el archivo de captura.<br/>                                                                        |
 | [**Stop**](iesp-stop.md)                       | Detiene la captura actual.<br/>                                                                                              |
 
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 57137e91418cc0804fb694c90f4439a0c9acfd105e3d9e5a936675c5e078665f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e040f78d5c0ccfa3e50729f16b75a0691771980e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117766710"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476453"
 ---
 # <a name="encodeddatavalue-property"></a>Propiedad EncodedData.Value
 

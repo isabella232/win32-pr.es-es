@@ -4,12 +4,12 @@ ms.assetid: ce6661b0-7ed2-452f-a54c-6705d14f3298
 title: Control de inscripción de certificados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f19499dad8c3d8b4d9720b285a4377c2f7b6b1903ca27f9e1cba17224fe1c857
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e417a9db7984cbb58b7c2e3b51d828b6d61a97b6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120127134"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476493"
 ---
 # <a name="certificate-enrollment-control"></a>Control de inscripción de certificados
 
@@ -17,7 +17,7 @@ El control de inscripción de certificados lo puede usar una aplicación que deb
 
 ![control de inscripción de certificados](images/xen-arch.png)
 
-La información necesaria sobre el usuario, el sujeto del certificado, la recopila el Interfaz de usuario. Esta información se proporciona como entrada BSTR para el control de inscripción de certificados. El Control de inscripción de certificados genera la clave de firma, la clave de intercambio de claves o ambos pares de claves adecuados. A continuación, el control genera y firma una solicitud de certificado PKCS \# 10 mediante la [*clave privada generada.*](../secgloss/p-gly.md) [](../secgloss/c-gly.md) A continuación, el control de inscripción de certificados vincula el par de claves a un certificado ficticio temporal que se almacena en el almacén de solicitudes hasta que el certificado emitido se devuelve de una entidad de certificación. Por último, la aplicación envía la solicitud de certificado PKCS \# 10 a una entidad de certificación.
+La información necesaria sobre el usuario, el sujeto del certificado, la recopila el Interfaz de usuario. Esta información se proporciona como una entrada BSTR para el control de inscripción de certificados. El Control de inscripción de certificados genera la clave de firma, la clave de intercambio de claves o ambos pares de claves adecuados. A continuación, el control genera y firma una solicitud de certificado PKCS \# 10 mediante la [*clave privada generada.*](../secgloss/p-gly.md) [](../secgloss/c-gly.md) A continuación, el control de inscripción de certificados vincula el par de claves a un certificado ficticio temporal que se almacena en el almacén de solicitudes hasta que el certificado emitido se devuelve de una entidad de certificación. Por último, la aplicación envía la solicitud de certificado PKCS \# 10 a una entidad de certificación.
 
 Si la ca aprueba la solicitud de certificado, la ca crea un certificado que contiene la clave pública. La CA también firma y devuelve el certificado.
 
@@ -25,7 +25,7 @@ Cuando se devuelve el certificado solicitado desde la ca, la aplicación devuelv
 
 Un administrador usa el control de inscripción de tarjetas inteligentes para inscribirse en nombre de los usuarios de tarjetas inteligentes. El proceso de inscripción da como resultado la emisión de un certificado que se almacena en la tarjeta inteligente de un usuario.
 
-El control de inscripción de tarjeta inteligente se encuentra en Scrdenrl.dll y consta de un objeto, **SCrdEnr**. No se incluyen otros objetos en Scrdenrl.dll. Este objeto de inscripción de tarjeta inteligente se puede usar con un lenguaje de script, como Visual Basic Scripting Edition (VBScript).
+El control de inscripción de tarjetas inteligentes se encuentra en Scrdenrl.dll y consta de un objeto, **SCrdEnr.** No se incluyen otros objetos en Scrdenrl.dll. Este objeto de inscripción de tarjeta inteligente se puede usar con un lenguaje de script, como Visual Basic Scripting Edition (VBScript).
 
 Se [*debe instalar un lector*](../secgloss/r-gly.md) de tarjetas inteligentes en el equipo que ejecuta el control de inscripción de tarjetas inteligentes.
 

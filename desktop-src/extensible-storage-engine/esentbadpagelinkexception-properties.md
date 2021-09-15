@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101142
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: e056f039b10586203f3ae698a4bc337bdec7c2e57a4f5926cf1a30ce28a66a12
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5a4910645d67a777d9b77104f6b348c1e8f89f86
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119622745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476025"
 ---
 # <a name="esentbadpagelinkexception-properties"></a>Propiedades de EsentBadPageLinkException
 
@@ -34,7 +34,7 @@ El [tipo EsentBadPageLinkException](./esentbadpagelinkexception-class.md) expone
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">

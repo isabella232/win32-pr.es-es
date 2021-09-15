@@ -1,6 +1,6 @@
 ---
 title: Función D3DX12ParsePipelineStream (D3dx12.h)
-description: Analiza una descripción de flujo de estado de canalización, llamando a una devolución de llamada definida por el usuario para cada instancia de subobjeto analizada.
+description: Analiza la descripción de una secuencia de estado de canalización, llamando a una devolución de llamada definida por el usuario para cada instancia de subobjeto analizada.
 ms.assetid: BE4E8CC4-1E1F-4FE8-B109-05FAF93EB620
 keywords:
 - Función D3DX12ParsePipelineStream
@@ -15,16 +15,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cbdd472d118a5ec9d49c5f105ee6b8e8ef2e3ea540f6f1954bad17273e9e030f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b6778c29793f01ff7f1e5fd6424fb6795a29e64c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119608565"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570881"
 ---
 # <a name="d3dx12parsepipelinestream-function"></a>Función D3DX12ParsePipelineStream
 
-Analiza una descripción de flujo de estado de canalización, llamando a una devolución de llamada definida por el usuario para cada instancia de subobjeto analizada.
+Analiza la descripción de una secuencia de estado de canalización, llamando a una devolución de llamada definida por el usuario para cada instancia de subobjeto analizada.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -56,7 +56,7 @@ Descripción de la secuencia de estado de canalización que se analizará.
 
 Tipo: **[ **ID3DX12PipelineParserCallbacks**](id3dx12pipelineparsercallbacks.md)\***
 
-Estructura que especifica las devoluciones de llamada a las que se debe llamar para cada tipo de subobjeto y las devoluciones de llamada adicionales que se llamarán en caso de error de análisis.
+Estructura que especifica las devoluciones de llamada a las que se llamará para cada tipo de subobjeto y las devoluciones de llamada adicionales que se llamarán en caso de error de análisis.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Estructura que especifica las devoluciones de llamada a las que se debe llamar p
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Este método devuelve un error HRESULT correcto (S **\_ OK** o **E \_ INVALIDARG** si se encuentra un tipo de subobjeto desconocido, si la descripción de la secuencia está vacía, null o contiene subobjetos duplicados (incluidos los subobjetos derivados) o si *pCallbacks* es NULL. En cada caso en que se devuelve E \_ INVALIDARG, se llama primero a una devolución de llamada correspondiente.
+Este método devuelve un error HRESULT correcto (S **\_ OK** o **E \_ INVALIDARG** si se encuentra un tipo de subobjeto desconocido, si la descripción de la secuencia está vacía, es null o contiene subobjetos duplicados (incluidos los subobjetos derivados) o si *pCallbacks* es NULL. En cada caso en que se devuelve E INVALIDARG, primero se llama \_ a una devolución de llamada correspondiente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -78,7 +78,7 @@ Este método devuelve un error HRESULT correcto (S **\_ OK** o **E \_ INVALIDARG
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

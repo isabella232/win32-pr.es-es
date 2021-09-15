@@ -4,12 +4,12 @@ ms.assetid: 509e7945-b656-4c4c-b5eb-45fbe80377c7
 title: Escribir módulos de salida personalizados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d3a690d2ac8ae1d25607ca064e865b48f46fbc96afdb60b0ebcd54d3b1b15f5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81798996059e878ef11dbcdf290298094d0849cb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117970682"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476349"
 ---
 # <a name="writing-custom-exit-modules"></a>Escribir módulos de salida personalizados
 

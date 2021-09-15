@@ -6,12 +6,12 @@ keywords:
 - WS_LISTENER
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 31fa7435ecea9770c2441a1c8c3d65c2d2346707c1c4e16da2f985e203d4ea3a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 803bde20292a55d1c3f2b7ca216ba3631e9116a7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119083039"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571145"
 ---
 # <a name="ws_listener"></a>AGENTE DE ESCUCHA DE WS \_
 
@@ -24,7 +24,7 @@ typedef struct _WS_LISTENER WS_LISTENER;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este objeto es seguro para subprocesos. Para obtener más información, vea [Seguridad para subprocesos.](thread-safety.md)
 
@@ -36,7 +36,7 @@ Este objeto es seguro para subprocesos. Para obtener más información, vea [Seg
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>WebServices.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>WebServices.h</dt> </dl> |
 
 
 

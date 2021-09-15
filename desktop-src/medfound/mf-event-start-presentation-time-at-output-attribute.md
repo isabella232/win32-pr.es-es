@@ -4,12 +4,12 @@ ms.assetid: 02a8c542-b519-495e-9fb2-8db2f5384db7
 title: MF_EVENT_START_PRESENTATION_TIME_AT_OUTPUT atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bd5949a73244eec26fb0390805c11f630291a470b2016b5a3575311261b72a4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5a588bc6604deed6c6865cd8283390d28e3ffd49
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119723185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468722"
 ---
 # <a name="mf_event_start_presentation_time_at_output-attribute"></a>Atributo MF \_ EVENT START PRESENTATION TIME AT \_ \_ \_ \_ \_ OUTPUT
 
@@ -21,7 +21,7 @@ Hora de presentación en la que los receptores multimedia representarán el prim
 
 Tratar como **un valor LONGLONG.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si algún objeto de canalización de los datos almacenados en búfer de la topología anterior, este valor será ligeramente menor que el valor del atributo [**MF EVENT PRESENTATION TIME \_ \_ \_ \_ OFFSET,**](mf-event-presentation-time-offset-attribute.md) porque los receptores deben representar los datos almacenados en búfer.
 
@@ -37,7 +37,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 

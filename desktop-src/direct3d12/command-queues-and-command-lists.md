@@ -5,12 +5,12 @@ ms.assetid: BE2F46EA-D4A9-47F7-A2D1-6A486DD4DC1A
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 11/15/2018
-ms.openlocfilehash: e423e704d09271f401a0346d4b732a799207537c9af9253c0b201cbafe54093f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aa852fc82280b14b0270a7c4a4c40cfe441803b7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118807806"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570916"
 ---
 # <a name="work-submission-in-direct3d-12"></a>Envío de trabajo en Direct3D 12
 

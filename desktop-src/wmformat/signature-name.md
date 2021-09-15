@@ -1,6 +1,6 @@
 ---
 title: Signature_Name
-description: El atributo \_ Signature Name contiene el nombre en el certificado utilizado para firmar el archivo. Este atributo solo es válido si el atributo Is \_ Trusted está establecido en True.
+description: El atributo \_ Signature Name contiene el nombre en el certificado utilizado para firmar el archivo. Este atributo solo es válido si el atributo Es \_ de confianza está establecido en True.
 ms.assetid: 3f3ab10c-731b-4075-8f73-3c2e62e010b9
 keywords:
 - Signature_Name windows Media Format
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bff0516353468733ef5c834d51dddc7bbc85e322d98b82929e092913bc375a7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af378671a570dd9ffc58021081b3925d3dca21af
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117845856"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570204"
 ---
 # <a name="signature_name"></a>Nombre de \_ la firma
 
-El **atributo \_ Signature Name** contiene el nombre en el certificado utilizado para firmar el archivo. Este atributo solo es válido si el [**atributo Is \_ Trusted**](is-trusted.md) está establecido en True.
+El **atributo \_ Signature Name** contiene el nombre en el certificado utilizado para firmar el archivo. Este atributo solo es válido si [**el atributo Es \_ de**](is-trusted.md) confianza está establecido en True.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -31,7 +31,7 @@ g \_ wszWMSignature \_ Name
 
 **CADENA DE TIPO WMT \_ \_**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de un atributo codificado.
 

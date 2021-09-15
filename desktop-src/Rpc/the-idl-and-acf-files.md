@@ -6,12 +6,12 @@ keywords:
 - Llamada a procedimiento remoto RPC, descrito, archivos IDL y ACF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 788756c6762575d2366950f1b6412a76c03d14518acb1707dfdaf109ba2b5fc6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b9f7f739e50fd4e04ae35a11adcbbc936cd3cb36
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120017105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476579"
 ---
 # <a name="the-idl-and-acf-files"></a>Los archivos IDL y ACF
 

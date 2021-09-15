@@ -1,19 +1,19 @@
 ---
-description: En el ejemplo siguiente se muestra cómo se puede utilizar el control de inscripción de certificados con el objeto ICertRequest para crear y enviar una solicitud de certificado.
+description: En el ejemplo siguiente se muestra cómo se puede usar el control de inscripción de certificados con el objeto ICertRequest para crear y enviar una solicitud de certificado.
 ms.assetid: 2816e1f8-c4be-4905-b070-6e67255811d4
 title: Ejemplo de solicitud en C++
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 43dbcaea567ed6d6427ab17cf1b99c0a41807651
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104423956"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476372"
 ---
 # <a name="request-sample-in-c"></a>Ejemplo de solicitud en C++
 
-En el ejemplo siguiente se muestra cómo se puede utilizar el control de inscripción de certificados con el objeto [**ICertRequest**](/windows/desktop/api/Certcli/nn-certcli-icertrequest) para crear y enviar una solicitud de certificado.
+En el ejemplo siguiente se muestra cómo se puede usar el control de inscripción de certificados con el [**objeto ICertRequest**](/windows/desktop/api/Certcli/nn-certcli-icertrequest) para crear y enviar una solicitud de certificado.
 
 
 ```C++

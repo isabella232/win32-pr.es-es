@@ -4,12 +4,12 @@ ms.assetid: c3e38cd3-3749-4384-80ff-0551acfe1eec
 title: Conceptos básicos de autenticación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30d28aa1da3555561740dfd119603a42268ebf86056842788f7dbb1c473fe60e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 723cf42913906435c8dbc3c41950da8db8ece0ec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119141318"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476563"
 ---
 # <a name="basic-authentication-concepts"></a>Conceptos básicos de autenticación
 

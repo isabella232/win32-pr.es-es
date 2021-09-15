@@ -5,12 +5,12 @@ ms.assetid: FAEF1412-053C-4B5F-80FA-85396C2586B4
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a84f935ba49df4910aa729c39ae6ac0ce08f3810bf3b0cd75752bbe4c00e9ef1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d18399b85499787f74dab725d562b6a299878b35
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119858025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570900"
 ---
 # <a name="d2d-using-d3d11on12"></a>D2D con D3D11on12
 
@@ -245,7 +245,7 @@ Ahora tenemos un [**id3D12Device**](/windows/desktop/api/d3d12/nn-d3d12-id3d12de
 |-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | [**ID2D1RenderTarget::CreateSolidColorBrush**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-createsolidcolorbrush(constd2d1_color_f__id2d1solidcolorbrush))    | [**ColorF**](/windows/desktop/api/d2d1helper/nl-d2d1helper-colorf)                                              |
 | [**IDWriteFactory::CreateTextFormat**](/windows/desktop/api/dwrite/nf-dwrite-idwritefactory-createtextformat)                 | [**PESO DE \_ FUENTE DWRITE \_**](/windows/desktop/api/dwrite/ne-dwrite-dwrite_font_weight)                 |
-| [**IDWriteTextFormat::SetTextAlignment**](/windows/desktop/api/dwrite/nf-dwrite-idwritetextformat-settextalignment)           | [**ALINEACIÓN DE \_ TEXTO \_ DWRITE**](/windows/desktop/api/dwrite/ne-dwrite-dwrite_text_alignment)           |
+| [**IDWriteTextFormat::SetTextAlignment**](/windows/desktop/api/dwrite/nf-dwrite-idwritetextformat-settextalignment)           | [**ALINEACIÓN DE \_ TEXTO DWRITE \_**](/windows/desktop/api/dwrite/ne-dwrite-dwrite_text_alignment)           |
 | [**IDWriteTextFormat::SetParagraphAlignment**](/windows/desktop/api/dwrite/nf-dwrite-idwritetextformat-setparagraphalignment) | [**ALINEACIÓN DE PÁRRAFOS DE DWRITE \_ \_**](/windows/desktop/api/dwrite/ne-dwrite-dwrite_paragraph_alignment) |
 
 
@@ -290,7 +290,7 @@ void D3D1211on12::OnRender()
 
 La única novedad de nuestro bucle de representación es la llamada **RenderUI,** que usará D2D para representar la interfaz de usuario. Observe que primero ejecutamos todas nuestras listas de comandos D3D12 para representar la escena 3D y, a continuación, representamos la interfaz de usuario encima de eso. Antes de profundizar en **RenderUI,** debemos ver un cambio en **PopulateCommandLists**. En otros ejemplos, normalmente colocamos una barrera de recursos en la lista de comandos antes de cerrarla para pasar el búfer de reserva del estado de destino de representación al estado actual. Sin embargo, en este ejemplo se quita esa barrera de recursos, ya que todavía es necesario representar en los búferes de reserva con D2D. Tenga en cuenta que cuando creamos los recursos encapsulados del búfer de reserva que especificamos el estado de destino de representación como el estado "IN" y el estado actual como el estado "OUT".
 
-**RenderUI** es bastante sencillo en términos de uso de D2D. Establecemos el destino de representación y representamos el texto. Sin embargo, antes de usar los recursos encapsulados en un dispositivo 11On12, como nuestros destinos de representación de búfer de reserva, debemos llamar a la API [**AcquireWrappedResources**](/windows/desktop/api/d3d11on12/nf-d3d11on12-id3d11on12device-acquirewrappedresources) en el dispositivo 11On12. Después de la representación, llamamos a la API [**ReleaseWrappedResources**](/windows/desktop/api/d3d11on12/nf-d3d11on12-id3d11on12device-releasewrappedresources) en el dispositivo 11On12. Al llamar **a ReleaseWrappedResources,** se incurre en una barrera de recursos en segundo plano que realizará la transición del recurso especificado al estado "OUT" especificado en el momento de la creación. En nuestro caso, este es el estado actual. Por último, para enviar todos nuestros comandos realizados en el dispositivo 11On12 al [**id. compartido ID3D12CommandQueue,**](/windows/desktop/api/d3d12/nn-d3d12-id3d12commandqueue)debemos llamar a [**Flush**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-flush) en [**id3D11DeviceContext**](/windows/desktop/api/d3d11/nn-d3d11-id3d11devicecontext).
+**RenderUI** es bastante sencillo en términos de uso de D2D. Establecemos el destino de representación y representamos el texto. Sin embargo, antes de usar los recursos encapsulados en un dispositivo 11On12, como nuestros destinos de representación de búfer de reserva, debemos llamar a la API [**AcquireWrappedResources**](/windows/desktop/api/d3d11on12/nf-d3d11on12-id3d11on12device-acquirewrappedresources) en el dispositivo 11On12. Después de la representación, llamamos a la API [**ReleaseWrappedResources**](/windows/desktop/api/d3d11on12/nf-d3d11on12-id3d11on12device-releasewrappedresources) en el dispositivo 11On12. Al llamar **a ReleaseWrappedResources,** se incurre en una barrera de recursos en segundo plano que realizará la transición del recurso especificado al estado "OUT" especificado en el momento de la creación. En nuestro caso, este es el estado actual. Por último, para enviar todos los comandos realizados en el dispositivo 11On12 al [**id. compartido ID3D12CommandQueue,**](/windows/desktop/api/d3d12/nn-d3d12-id3d12commandqueue)debemos llamar a [**Flush**](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-flush) en [**ID3D11DeviceContext**](/windows/desktop/api/d3d11/nn-d3d11-id3d11devicecontext).
 
 ``` syntax
 // Render text over D3D12 using D2D via the 11On12 device.

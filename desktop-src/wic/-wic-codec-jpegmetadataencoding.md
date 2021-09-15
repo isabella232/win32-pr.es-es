@@ -4,16 +4,16 @@ ms.assetid: a7cfaa6d-e17d-458a-ae63-72963615bef8
 title: Cómo volver a codificar una imagen JPEG con metadatos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 13851af04c6af742dbc68acc31fd674c3602ebeb16bec6903a3570f8cb1e0400
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c023defb760faeab2bc6ea92232fcc916ef15126
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119088167"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570344"
 ---
 # <a name="how-to-re-encode-a-jpeg-image-with-metadata"></a>Cómo volver a codificar una imagen JPEG con metadatos
 
-En el ejemplo siguiente se muestra cómo volver a codificar una imagen y sus metadatos en un nuevo archivo con el mismo formato. Además, en este ejemplo se agregan metadatos para mostrar una expresión de un solo elemento usada por un escritor de consultas.
+En el ejemplo siguiente se muestra cómo volver a codificar una imagen y sus metadatos en un nuevo archivo con el mismo formato. Además, en este ejemplo se agregan metadatos para mostrar una expresión de un solo elemento utilizada por un escritor de consultas.
 
 En este tema se incluyen las siguientes secciones.
 
@@ -24,16 +24,16 @@ En este tema se incluyen las siguientes secciones.
 -   [Parte 4: Copiar los metadatos](#part-4-copy-the-metadata)
 -   [Parte 5: Agregar metadatos adicionales](#part-5-add-additional-metadata)
 -   [Parte 6: Finalizar la imagen codificada](#part-6-finalize-the-encoded-image)
--   [Código de ejemplo de volver a codificar JPEG](#jpeg-re-encode-example-code)
+-   [Código de ejemplo para volver a codificar JPEG](#jpeg-re-encode-example-code)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Para comprender este tema, debe estar familiarizado con el sistema de metadatos de Windows Imaging Component (WIC), tal como se describe en información general sobre los metadatos [de WIC.](-wic-about-metadata.md) También debe estar familiarizado con los componentes del códec WIC, tal como se describe en la introducción al componente Windows creación de [imágenes.](-wic-about-windows-imaging-codec.md)
+Para entender este tema, debe estar familiarizado con el sistema de metadatos de Windows Imaging Component (WIC), tal y como se describe en Información general sobre metadatos [de WIC.](-wic-about-metadata.md) También debe estar familiarizado con los componentes del códec WIC, tal y como se describe en Windows información general del componente de creación [de imágenes.](-wic-about-windows-imaging-codec.md)
 
 ## <a name="part-1-decode-an-image"></a>Parte 1: Descodificación de una imagen
 
-Para poder copiar datos de imagen o metadatos en un nuevo archivo de imagen, primero debe crear un descodificador para la imagen existente que desea volver a codificar. El código siguiente muestra cómo crear un descodificador WIC para el archivo de imagen test.jpg.
+Para poder copiar metadatos o datos de imagen en un nuevo archivo de imagen, primero debe crear un descodificador para la imagen existente que desea volver a codificar. El código siguiente muestra cómo crear un descodificador WIC para el archivo de imagen test.jpg.
 
 
 ```C++
@@ -62,11 +62,11 @@ Para poder copiar datos de imagen o metadatos en un nuevo archivo de imagen, pri
 
 
 
-La llamada a **CreateDecoderFromFilename** usó el valor WICDecodeMetadataCacheOnDemand de la enumeración [**WICDecodeOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicdecodeoptions) como cuarto parámetro. Esto indica al descodificador que almacena en caché los metadatos cuando se necesitan, ya sea mediante la obtención de un lector de consultas o mediante el lector de metadatos subyacente. El uso de esta opción le permite conservar la secuencia en los metadatos, que es necesaria para realizar la codificación rápida de metadatos y permite la codificación y la codificación sin pérdida de imágenes JPEG. Como alternativa, podría usar el otro valor **de WICDecodeOptions,** WICDecodeMetadataCacheOnLoad, que almacena en caché los metadatos de la imagen incrustada en cuanto se carga la imagen.
+La llamada a **CreateDecoderFromFilename** usó el valor WICDecodeMetadataCacheOnDemand de la enumeración [**WICDecodeOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicdecodeoptions) como cuarto parámetro. Esto indica al descodificador que almacena en caché los metadatos cuando los metadatos son necesarios, ya sea mediante la obtención de un lector de consultas o mediante el lector de metadatos subyacente. El uso de esta opción le permite conservar la secuencia en los metadatos, que es necesaria para realizar la codificación rápida de metadatos y permite la codificación y la codificación sin pérdida de imágenes JPEG. Como alternativa, puede usar el otro valor **de WICDecodeOptions,** WICDecodeMetadataCacheOnLoad, que almacena en caché los metadatos de la imagen incrustada en cuanto se carga la imagen.
 
 ## <a name="part-2-create-and-initialize-the-image-encoder"></a>Parte 2: Crear e inicializar el codificador de imágenes
 
-El código siguiente muestra la creación del codificador que usará para codificar la imagen que descodificó anteriormente.
+El código siguiente muestra la creación del codificador que usará para codificar la imagen que ha descodificado previamente.
 
 
 ```C++
@@ -107,14 +107,14 @@ El código siguiente muestra la creación del codificador que usará para codifi
 
 
 
-Se crea e inicializa una secuencia de archivos WIC piFileStream para escribir en el archivo de imagen "test2.jpg". Después, piFileStream se usa para inicializar el codificador, informando al codificador de dónde escribir los bits de imagen una vez completada la codificación.
+Se crea un flujo de archivos WIC piFileStream e inicializa para escribir en el archivo de imagen "test2.jpg". Después, piFileStream se usa para inicializar el codificador e informar al codificador dónde escribir los bits de imagen cuando se completa la codificación.
 
 ## <a name="part-3-copy-decoded-frame-information"></a>Parte 3: Copiar información de marco descodificado
 
-El código siguiente copia cada fotograma de una imagen en un nuevo fotograma del codificador. Esta copia incluye el tamaño, la resolución y el formato de píxel; todos los cuales son necesarios para crear un marco válido.
+El código siguiente copia cada fotograma de una imagen en un nuevo marco del codificador. Esta copia incluye el tamaño, la resolución y el formato de píxel; todos los cuales son necesarios para crear un marco válido.
 
 > [!Note]  
-> Las imágenes JPEG solo tendrán un fotograma y el bucle siguiente no es técnicamente necesario, pero se incluye para mostrar el uso de varios fotogramas para los formatos que lo admiten.
+> Las imágenes JPEG solo tendrán un fotograma y el bucle siguiente no es técnicamente necesario, pero se incluye para demostrar el uso de varios fotogramas para los formatos que lo admiten.
 
  
 
@@ -219,7 +219,7 @@ El código siguiente realiza una comprobación rápida para determinar si los fo
 
 Para conservar los metadatos al volver a codificar una imagen en el mismo formato de imagen, hay métodos disponibles para copiar todos los metadatos en una sola operación. Cada una de estas operaciones sigue un patrón similar; cada establece los metadatos del marco descodificado directamente en el nuevo marco que se va a codificar. Tenga en cuenta que esto se hace para cada fotograma de imagen individual.
 
-El método preferido para copiar metadatos es inicializar el escritor de bloques del marco nuevo con el lector de bloques del marco descodificado. El código siguiente muestra este método.
+El método preferido para copiar metadatos es inicializar el escritor de bloques del marco nuevo con el lector de bloques del marco descodificado. En el código siguiente se muestra este método.
 
 
 ```C++
@@ -243,13 +243,13 @@ El método preferido para copiar metadatos es inicializar el escritor de bloques
 
 
 
-En este ejemplo, simplemente obtiene el lector de bloques y el escritor de bloques del marco de origen y del marco de destino, respectivamente. A continuación, el escritor de bloques se inicializa desde el lector de bloques. Esto inicializa el escritor de bloques con los metadatos rellenados previamente del lector de bloques. Para obtener más información sobre métodos adicionales para copiar metadatos, vea la sección Escribir metadatos en Información general sobre la lectura y escritura de [metadatos de imagen.](-wic-codec-readingwritingmetadata.md)
+En este ejemplo, solo tiene que obtener el lector de bloques y el escritor de bloques del marco de origen y el marco de destino, respectivamente. A continuación, el escritor de bloques se inicializa desde el lector de bloques. Esto inicializa el escritor de bloques con los metadatos rellenados previamente del lector de bloques. Para obtener más métodos para copiar metadatos, consulte la sección Escribir metadatos en Información general sobre la lectura y escritura de [metadatos de imagen.](-wic-codec-readingwritingmetadata.md)
 
-De nuevo, esta operación solo funciona cuando las imágenes de origen y destino tienen el mismo formato. Esto se debe a que diferentes formatos de imagen almacenan los bloques de metadatos en ubicaciones diferentes. Por ejemplo, jpeg y Tagged Image File Format (TIFF) admiten bloques de metadatos de Extensible Metadata Platform (XMP). En las imágenes JPEG, el bloque XMP se encuentra en el bloque de metadatos raíz, como se muestra en información general sobre los [metadatos de WIC.](-wic-about-metadata.md) Sin embargo, en una imagen TIFF, el bloque XMP se incrusta en el bloque IFD raíz.
+De nuevo, esta operación solo funciona cuando las imágenes de origen y destino tienen el mismo formato. Esto se debe a que diferentes formatos de imagen almacenan los bloques de metadatos en ubicaciones diferentes. Por ejemplo, JPEG y Tagged Image File Format (TIFF) admiten bloques de metadatos de Extensible Metadata Platform (XMP). En imágenes JPEG, el bloque XMP se encuentra en el bloque de metadatos raíz, como se muestra en información general sobre metadatos [de WIC.](-wic-about-metadata.md) Sin embargo, en una imagen TIFF, el bloque XMP se incrusta en el bloque IFD raíz.
 
 ## <a name="part-5-add-additional-metadata"></a>Parte 5: Agregar metadatos adicionales
 
-En el ejemplo siguiente se muestra cómo agregar metadatos a la imagen de destino. Para ello, llame al método **SetMetadataByName** del escritor de consultas mediante una expresión de consulta y los datos almacenados [en propVARIANT.](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
+En el ejemplo siguiente se muestra cómo agregar metadatos a la imagen de destino. Para ello, se llama al método **SetMetadataByName** del escritor de consultas mediante una expresión de consulta y los datos almacenados [en propVARIANT.](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)
 
 
 ```C++
@@ -273,7 +273,7 @@ Para obtener más información sobre la expresión de consulta, vea Información
 
 ## <a name="part-6-finalize-the-encoded-image"></a>Parte 6: Finalizar la imagen codificada
 
-Los pasos finales para copiar la imagen son escribir los datos de píxeles del fotograma, confirmar el fotograma en el codificador y confirmar el codificador. Al confirmar el codificador, se escribe la secuencia de imagen en el archivo.
+Los pasos finales para copiar la imagen son escribir los datos de píxel del fotograma, confirmar el fotograma en el codificador y confirmar el codificador. Al confirmar el codificador, se escribe la secuencia de imagen en el archivo.
 
 
 ```C++
@@ -342,13 +342,13 @@ Los pasos finales para copiar la imagen son escribir los datos de píxeles del f
 
 
 
-El método **WriteSource del** marco se usa para escribir los datos de píxeles de la imagen. Tenga en cuenta que esto se realiza una vez escritos los metadatos. Esto es necesario para asegurarse de que los metadatos tienen suficiente espacio dentro del archivo de imagen. Una vez escritos los datos de píxeles, el marco se escribe en la secuencia mediante el **método Commit del** fotograma. Una vez procesados todos los fotogramas, el codificador (y, por tanto, la imagen) se completa con el método **Commit del** codificador.
+El método **WriteSource del** marco se usa para escribir los datos de píxeles de la imagen. Tenga en cuenta que esto se realiza una vez escritos los metadatos. Esto es necesario para asegurarse de que los metadatos tienen suficiente espacio dentro del archivo de imagen. Una vez escritos los datos de píxeles, el marco se escribe en la secuencia mediante el **método Commit del** fotograma. Una vez procesados todos los fotogramas, el codificador (y, por tanto, la imagen) se completa con el **método Commit del** codificador.
 
 Una vez que confirme el marco, debe liberar los objetos COM creados en el bucle .
 
-## <a name="jpeg-re-encode-example-code"></a>Código de ejemplo de volver a codificar JPEG
+## <a name="jpeg-re-encode-example-code"></a>Código de ejemplo para volver a codificar JPEG
 
-A continuación se muestra el código de las partes 1 a 6 en un bloque convienient.
+A continuación se muestra el código de las partes 1 a 6 de un bloque convienient.
 
 
 ```C++

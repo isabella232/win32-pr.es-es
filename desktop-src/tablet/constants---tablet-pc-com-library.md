@@ -4,12 +4,12 @@ ms.assetid: 6d2ea0ee-d5a2-4b8c-977c-f815c465fdac
 title: Constantes de PC de tableta principal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 307537518aad1785fcf49e695faa0ab8b9b373011794ef64def7de261ca08b15
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0f1d63f37fc107b1fdc500ad37c0689eff1e5f0f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118045956"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570432"
 ---
 # <a name="core-tablet-pc-constants"></a>Constantes de PC de tableta principal
 

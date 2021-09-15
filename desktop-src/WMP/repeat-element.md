@@ -1,6 +1,6 @@
 ---
 title: ELEMENTO REPEAT
-description: El elemento REPEAT define el número de veces que Reproductor de Windows Media repite uno o varios elementos ENTRY o ENTRYREF.
+description: El elemento REPEAT define el número de veces Reproductor de Windows Media repite uno o varios elementos ENTRY o ENTRYREF.
 ms.assetid: 1a825f2b-29a7-4180-93df-51b3b5dd14e5
 keywords:
 - Elemento REPEAT Reproductor de Windows Media
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 330eda0757acb29b48ed10636d8f479b6ebb1395d088020876c717a78f41ae6a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aff7d5eaa9594882b029f0b02f4888d93fff01d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120002545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476200"
 ---
 # <a name="repeat-element"></a>ELEMENTO REPEAT
 
@@ -43,16 +43,16 @@ Entero que representa el número de Reproductor de Windows Media repite los elem
 
 | Hierarchy       | Elementos                |
 |-----------------|-------------------------|
-| Elementos primarios | **Asx**                 |
+| Elementos primarios | **ASX**                 |
 | Elementos secundarios  | **ENTRY**, **ENTRYREF** |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este elemento define el número de veces Reproductor de Windows Media repite o recorre en bucle los clips definidos por los elementos **ENTRY** y **ENTRYREF** dentro del ámbito de este elemento. Solo el primer **elemento REPEAT** de un metarchivo es válido; Se **omiten los** elementos REPEAT posteriores.
+Este elemento define el número de veces que Reproductor de Windows Media, o recorre en bucle, los clips definidos por los elementos **ENTRY** y **ENTRYREF** dentro del ámbito de este elemento. Solo es válido **el primer elemento REPEAT** de un metarchivo; Se **omiten los elementos REPEAT** posteriores.
 
 Si no se define ningún atributo **COUNT,** el contenido de los elementos **ENTRY** y **ENTRYREF** asociados repite un número infinito de veces. Un valor de cero hace Reproductor de Windows Media omitir el **elemento REPEAT** y reproducir el contenido una vez.
 

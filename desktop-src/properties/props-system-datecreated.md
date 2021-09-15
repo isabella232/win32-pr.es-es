@@ -4,12 +4,12 @@ ms.assetid: a40d4a8f-d0b0-49fc-9e07-48669a1bf469
 title: System.DateCreated
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f1784022cd493e6d4afdb0529e122965eb08d7bea96f97f749b6f497e8851ef
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 72fe6b707ec276f22bf9139913d86482943da3bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118055071"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570489"
 ---
 # <a name="systemdatecreated"></a>System.DateCreated
 
@@ -46,7 +46,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

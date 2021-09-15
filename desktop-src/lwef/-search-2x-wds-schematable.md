@@ -4,12 +4,12 @@ description: El esquema documenta los valores y las propiedades que usa el índi
 ms.assetid: dfd8862c-8f84-441e-a4b4-4af3c76c48f9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f2d5c80690914073af1c67e2bd00376974547d30c4dc487c0656d4452d3fe828
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1a122959b007ba4d4434e65b53fc2e330857cafe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118753154"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475883"
 ---
 # <a name="schema"></a>Schema
 
@@ -87,18 +87,18 @@ El esquema documenta los valores y las propiedades que usa el índice para almac
 | BusinessAddressPostalCode    | Información de dirección de negocio                                                                                                   | D5CDD505-2E9C-101B-9397-08002B2CF9AE/BusinessAddressPostalCode    |
 | BusinessAddressPostOfficeBox | Información de dirección de negocio                                                                                                   | D5CDD505-2E9C-101B-9397-08002B2CF9AE/BusinessAddressPostOfficeBox |
 | BusinessAddressState         | Información de dirección de negocio                                                                                                   | D5CDD505-2E9C-101B-9397-08002B2CF9AE/BusinessAddressState         |
-| BusinessAddressAddressAddress        | Información de dirección de negocio                                                                                                   | D5CDD505-2E9C-101B-9397-08002B2CF9AE/BusinessAddressAddressAddress        |
+| BusinessAddressAddress        | Información de dirección de negocio                                                                                                   | D5CDD505-2E9C-101B-9397-08002B2CF9AE/BusinessAddressAddressAddress        |
 | BusinessAddressCountry       | Información de dirección de negocio                                                                                                   | D5CDD505-2E9C-101B-9397-08002B2CF9AE/BusinessAddressCountry       |
-| CallbackTelephone            | Llamada a la información de teléfono                                                                                                | D5CDD505-2E9C-101B-9397-08002B2CF9AE/CallbackTelephone            |
+| CallbackTelephone            | Llamar a la información de teléfono                                                                                                | D5CDD505-2E9C-101B-9397-08002B2CF9AE/CallbackTelephone            |
 | CarTelephone                 | Información de teléfono                                                                                                          | D5CDD505-2E9C-101B-9397-08002B2CF9AE/CarTelephone                 |
 | Children                     | Nombres de los hijos para el contacto                                                                                            | D5CDD505-2E9C-101B-9397-08002B2CF9AE/Children                     |
 | CompanyMainTelephone         | Información de teléfono                                                                                                          | D5CDD505-2E9C-101B-9397-08002B2CF9AE/CompanyMainTelephone         |
 | EmailAddress                 | Nombre del correo electrónico de contacto                                                                                                      | D5CDD505-2E9C-101B-9397-08002B2CF9AE/EmailAddress                 |
 | EmailName                    | Nombre para mostrar de la dirección de correo electrónico                                                                                          | D5CDD505-2E9C-101B-9397-08002B2CF9AE/EmailName                    |
-| Nombre                    | Nombre del contacto                                                                                                    | D5CDD505-2E9C-101B-9397-08002B2CF9AE/FirstName                    |
+| FirstName                    | Nombre del contacto                                                                                                    | D5CDD505-2E9C-101B-9397-08002B2CF9AE/FirstName                    |
 | FullName                     | Nombre completo del contacto                                                                                                     | D5CDD505-2E9C-101B-9397-08002B2CF9AE/FullName                     |
-| Sexo                       | Varón/mujer/otro                                                                                                       | D5CDD505-2E9C-101B-9397-08002B2CF9AE/Gender                       |
-| Hobby                        | Información de contacto                                                                                                            | D5CDD505-2E9C-101B-9397-08002B2CF9AE/Qt                        |
+| Sexo                       | Hombre,mujer/otro                                                                                                       | D5CDD505-2E9C-101B-9397-08002B2CF9AE/Gender                       |
+| Hobby                        | Información de contacto                                                                                                            | D5CDD505-2E9C-101B-9397-08002B2CF9AE/Escribió                        |
 | HomeAddressCity              | Información de la dirección principal                                                                                                       | D5CDD505-2E9C-101B-9397-08002B2CF9AE/HomeAddressCity              |
 | HomeAddressCountry           | Información de la dirección principal                                                                                                       | D5CDD505-2E9C-101B-9397-08002B2CF9AE/HomeAddressCountry           |
 | HomeAddressPostalCode        | Información de la dirección principal                                                                                                       | D5CDD505-2E9C-101B-9397-08002B2CF9AE/HomeAddressPostalCode        |
@@ -115,10 +115,10 @@ El esquema documenta los valores y las propiedades que usa el índice para almac
 | Office                       | Información de contacto                                                                                                            | D5CDD505-2E9C-101B-9397-08002B2CF9AE/Office                       |
 | OfficeTelephone              | Información de teléfono                                                                                                          | D5CDD505-2E9C-101B-9397-08002B2CF9AE/OfficeTelephone              |
 | PagerTelephone               | Información de teléfono                                                                                                          | D5CDD505-2E9C-101B-9397-08002B2CF9AE/PagerTelephone               |
-| Apellidos                     | Información de contacto                                                                                                            | D5CDD505-2E9C-101B-9397-08002B2CF9AE/LastName                     |
+| LastName                     | Información de contacto                                                                                                            | D5CDD505-2E9C-101B-9397-08002B2CF9AE/LastName                     |
 | PersonalTitle                | Título de la carrera (Dr., Mr., Mrs., Ms.)                                                                                  | D5CDD505-2E9C-101B-9397-08002B2CF9AE/PersonalTitle                |
 | PrimaryTelephone             | Información de teléfono                                                                                                          | D5CDD505-2E9C-101B-9397-08002B2CF9AE/PrimaryTelephone             |
-| Profession                   | Información de contacto                                                                                                            | D5CDD505-2E9C-101B-9397-08002B2CF9AE/Secuescencia                   |
+| Profession                   | Información de contacto                                                                                                            | D5CDD505-2E9C-101B-9397-08002B2CF9AE/Lora                   |
 | Cónyuge                       | Información de contacto                                                                                                            | D5CDD505-2E9C-101B-9397-08002B2CF9AE/Secuescencia                       |
 | Sufijo                       | Información de contacto                                                                                                            | D5CDD505-2E9C-101B-9397-08002B2CF9AE/Suffix                       |
 | TelexNumber                  | Información de Telex                                                                                                              | D5CDD505-2E9C-101B-9397-08002B2CF9AE/TelexNumber                  |
@@ -152,14 +152,14 @@ El esquema documenta los valores y las propiedades que usa el índice para almac
 | Estructura                       | Nombre de la estructura                                                                                                          | 8dee0300-16c2-101b-b121-08002b2ecda9/struct                       |
 | Interfaz                    | Nombre de interfaz                                                                                                          | 8dee0300-16c2-101b-b121-08002b2ecda9/interface                    |
 | Delegado                     | Nombre del delegado                                                                                                           | 8dee0300-16c2-101b-b121-08002b2ecda9/delegate                     |
-| Propiedad                     | Nombre de propiedad                                                                                                           | 8dee0300-16c2-101b-b121-08002b2ecda9/property                     |
+| Propiedad.                     | Nombre de propiedad                                                                                                           | 8dee0300-16c2-101b-b121-08002b2ecda9/property                     |
 | Enumeración                         | Nombre de enumeración                                                                                                               | 8dee0300-16c2-101b-b121-08002b2ecda9/enum                         |
 | Const                        | Nombre de const                                                                                                              | 8dee0300-16c2-101b-b121-08002b2ecda9/const                        |
 | Evento                        | Nombre del evento                                                                                                              | 8dee0300-16c2-101b-b121-08002b2ecda9/event                        |
 | Campo                        | Nombre del campo                                                                                                              | 8dee0300-16c2-101b-b121-08002b2ecda9/field                        |
 | Definir                       | Definición del nombre                                                                                                             | 8dee0300-16c2-101b-b121-08002b2ecda9/def                          |
 | Componente                    | Nombre de componente                                                                                                          | 8dee0300-16c2-101b-b121-08002b2ecda9/component                    |
-| Proyecto                      | Nombre de proyecto                                                                                                            | 8dee0300-16c2-101b-b121-08002b2ecda9/project                      |
+| Project                      | Nombre de proyecto                                                                                                            | 8dee0300-16c2-101b-b121-08002b2ecda9/project                      |
 | Solución                     | Nombre de la solución                                                                                                           | 8dee0300-16c2-101b-b121-08002b2ecda9/solution                     |
 
 

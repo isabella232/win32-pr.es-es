@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 620f3b479f8d725028838282f1c3595fa5f4b6bb9061c90387e027bfaf6e1092
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f045ceefaf33c8d8edba0cb69e062ad589cfd833
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119829985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468830"
 ---
 # <a name="wm_gethotkey-message"></a>Mensaje \_ GETHOTKEY de WM
 
@@ -52,7 +52,7 @@ No se usa; debe ser cero.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El valor devuelto es el código de clave virtual y los modificadores de la tecla de acceso activa, o **NULL** si no hay ninguna tecla de acceso activa asociada a la ventana. El código de clave virtual está en el byte bajo del valor devuelto y los modificadores están en el byte alto. Los modificadores pueden ser una combinación de las marcas siguientes de CommCtrl.h.
+El valor devuelto es el código de clave virtual y los modificadores de la clave activa, o **NULL** si no hay ninguna tecla de acceso activa asociada a la ventana. El código de clave virtual está en el byte bajo del valor devuelto y los modificadores están en el byte alto. Los modificadores pueden ser una combinación de las marcas siguientes de CommCtrl.h.
 
 
 
@@ -67,7 +67,7 @@ El valor devuelto es el código de clave virtual y los modificadores de la tecla
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Estas teclas de acceso rápido no están relacionadas con las teclas de acceso rápido establecidas por [**la función RegisterHotKey.**](/windows/win32/api/winuser/nf-winuser-registerhotkey)
 

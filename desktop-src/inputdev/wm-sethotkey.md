@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b6c9d4bdb4a59181fe3a413cca6861bc3663367cca9e7b34e0647de88978b0b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f7ed27a91ddf9506cd12b988db4bd141a988c13e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118482522"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572893"
 ---
 # <a name="wm_sethotkey-message"></a>Mensaje \_ SETHOTKEY de WM
 
@@ -47,7 +47,7 @@ Si *se establece wParam* en **NULL,** se quita la tecla de acceso activa asociad
 
 
 
-| Valor                                                                                                                                                                                                                         | Significado                 |
+| Value                                                                                                                                                                                                                         | Significado                 |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
 | <span id="HOTKEYF_ALT"></span><span id="hotkeyf_alt"></span><dl> <dt>**HOTKEYF \_ Alt**</dt> <dt>0x04</dt> </dl>             | tecla ALT<br/>      |
 | <span id="HOTKEYF_CONTROL"></span><span id="hotkeyf_control"></span><dl> <dt>**HOTKEYF \_ Control**</dt> <dt>0x02</dt> </dl> | Tecla CTRL<br/>     |
@@ -78,13 +78,13 @@ El valor devuelto es uno de los siguientes.
 | <dl> <dt>-1</dt> </dl> | La función no es correcta; la tecla de acceso no es válida.<br/>                        |
 | <dl> <dt>0</dt> </dl>  | La función no es correcta; la ventana no es válida.<br/>                         |
 | <dl> <dt>1</dt> </dl>  | La función se realiza correctamente y ninguna otra ventana tiene la misma clave activa.<br/>        |
-| <dl> <dt>2</dt> </dl>  | La función se realiza correctamente, pero otra ventana ya tiene la misma tecla de acceso.<br/> |
+| <dl> <dt>2</dt> </dl>  | La función se realiza correctamente, pero otra ventana ya tiene la misma clave activa.<br/> |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No se puede asociar una tecla de acceso activa a una ventana secundaria.
 
@@ -100,7 +100,7 @@ Estas teclas de acceso rápido no están relacionadas con las teclas de acceso r
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |

@@ -5,9 +5,9 @@ ms.assetid: 3f88d46a-59d3-4200-bf99-a3dddae1b0ac
 keywords:
 - Windows Listas de reproducción multimedia (WPL)
 - WPL (Windows listas de reproducción multimedia)
-- Windows Media,Windows Listas de reproducción multimedia (WPL)
+- Windows Media,Windows listas de reproducción multimedia (WPL)
 - playlists,Windows Media Playlists (WPL)
-- Referencia de las listas Windows multimedia
+- referencia de las listas Windows multimedia
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -15,12 +15,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7a38b5bd6413cb25caed5356f123e1e06f415769ceca260d0faa74a4d4b06f00
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aad06ba85da09835349bdee5fc604e18379a1eff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119862155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571104"
 ---
 # <a name="windows-media-playlist-elements-reference"></a>Windows Referencia de elementos de lista de reproducción multimedia
 

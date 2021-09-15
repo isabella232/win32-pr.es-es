@@ -1,32 +1,32 @@
 ---
-title: Recuperando información de estado
-description: Recuperando información de estado
+title: Recuperar información de estado
+description: Recuperar información de estado
 ms.assetid: 61561520-705a-4d06-a72c-c1cc6315f54e
 keywords:
-- Windows Media Player tiendas en línea, administrador de descargas
-- tiendas en línea, administrador de descargas
-- tipo 2 tiendas en línea, administrador de descargas
-- Windows Media Player tiendas en línea, recuperar el estado
-- tiendas en línea, recuperar estado
-- tipo 2 tiendas en línea, recuperando estado
-- Windows Media Player, administrador de descargas
-- Administrador de descargas de Windows Media Player
-- Administrador de descargas
-- recuperando estado
+- Reproductor de Windows Media en línea,Download Manager
+- online stores,Download Manager
+- tipo 2 tiendas en línea, Administrador de descarga
+- Reproductor de Windows Media en línea, recuperar el estado
+- tiendas en línea, recuperar el estado
+- tiendas en línea de tipo 2, recuperando el estado
+- Reproductor de Windows Media,Download Manager
+- Reproductor de Windows Media Administrador de descarga
+- Administrador de descarga
+- recuperación del estado
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 155d1c9d949306ae5cda3ffff6a7a55fd3bae23c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103778258"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476189"
 ---
-# <a name="retrieving-status-information"></a>Recuperando información de estado
+# <a name="retrieving-status-information"></a>Recuperar información de estado
 
-La información de estado se actualiza mediante el temporizador creado en la función **init** . Todo el estado se actualiza con el mismo temporizador. El nombre de la función para el evento del temporizador es **Altimer**.
+La información de estado se actualiza mediante el temporizador creado en la **función Init.** Todo el estado se actualiza con el mismo temporizador. El nombre de la función para el evento de temporizador es **OnTimer.**
 
-**Altimer** determina la información que se va a mostrar en función de la selección del usuario, que se almacena en la variable global denominada g \_ oCurrentDLItem. La función comprueba primero si los valores de tamaño o progreso son válidos y crea una cadena para cada caso.
+**OnTimer** determina la información que se va a mostrar en función de la selección del usuario, que se almacena en la variable global denominada g \_ oCurrentDLItem. La función comprueba primero si los valores de tamaño o progreso son válidos y crea una cadena para cada caso.
 
 
 ```C++
@@ -37,9 +37,9 @@ var Progress = g_oCurrentDLItem.progress <=0 ? "Waiting..." : g_oCurrentDLItem.p
 
 
 
-Si un valor es válido, la cadena representa el recuento de bytes. Si el valor no es válido, como-1, la cadena proporciona un mensaje para informar al usuario de que la información aún no está disponible.
+Si un valor es válido, la cadena representa el recuento de bytes. Si el valor no es válido, como -1, la cadena proporciona un mensaje para informar al usuario de que la información aún no está disponible.
 
-Después, un bloque **Switch** determina si la descarga del elemento seleccionado se ha completado o cancelado. Si alguna de las mayúsculas y minúsculas es true, el valor de las variables size o Progress se actualiza en consecuencia.
+A continuación, **un** bloque modificador determina si la descarga del elemento seleccionado se ha completado o cancelado. Si alguno de los casos es true, el valor de las variables Size o Progress se actualiza en consecuencia.
 
 
 ```C++
@@ -69,12 +69,12 @@ Por último, la información de estado se muestra en el elemento DIV denominado 
 
 <dl> <dt>
 
-[**Uso del administrador de descargas**](using-the-download-manager.md)
+[**Uso del Administrador de descargas**](using-the-download-manager.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

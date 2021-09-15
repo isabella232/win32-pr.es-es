@@ -1,5 +1,5 @@
 ---
-description: 'Más información acerca de: JET_ERRINFOBASIC métodos'
+description: 'Más información sobre: JET_ERRINFOBASIC métodos'
 title: JET_ERRINFOBASIC métodos (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_ERRINFOBASIC methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.Windows8.JET_ERRINFOBASIC
@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.wind
 ms:contentKeyID: 55104418
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: a5c5b6d3a795a4f0662f098605d5402cd1993f74bbd1375587093ccbb3b696a9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 888377ce9ae7cb08f5ab9459e0336f0d89c585c2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120017265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570748"
 ---
 # <a name="jet_errinfobasic-methods"></a>JET_ERRINFOBASIC métodos
 
@@ -78,7 +78,7 @@ El [JET_ERRINFOBASIC](./jet-errinfobasic-class.md) expone los miembros siguiente
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

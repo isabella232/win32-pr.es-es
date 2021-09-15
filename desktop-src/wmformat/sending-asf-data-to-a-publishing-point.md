@@ -12,16 +12,16 @@ keywords:
 - puntos de publicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71f70c1a49ea7ff6272d0eef9f1a51ff79ec216ed9af445c3078d59dd19841dd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7a0f38f4d24a458681c4b0dc4ee6d1a73563bdd2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118197544"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570208"
 ---
 # <a name="sending-asf-data-to-a-publishing-point"></a>Envío de datos de ASF a un punto de publicación
 
-Puede usar el SDK Windows Media Format para insertar datos de ASF en un punto de publicación en un servidor Windows Media. A continuación, el servidor difunde los datos desde ese punto de publicación. Este escenario es útil si va a capturar o volver a codificar contenido en un equipo y desea distribuir el contenido desde otro equipo (o varios equipos). También es útil si necesita mover contenido de un equipo dentro de un firewall a un servidor multimedia de Windows fuera del firewall, ya que la distribución de inserción usa el protocolo HTTP.
+Puede usar el SDK Windows Media Format para insertar datos de ASF en un punto de publicación en un Windows Media. A continuación, el servidor difunde los datos desde ese punto de publicación. Este escenario es útil si va a capturar o volver a codificar contenido en un equipo y desea distribuir el contenido desde otro equipo (o varios equipos). También es útil si necesita mover contenido de un equipo dentro de un firewall a un servidor multimedia de Windows fuera del firewall, ya que la distribución de inserción usa el protocolo HTTP.
 
 > [!Note]  
 > Un *punto de publicación* actúa básicamente como un redirector. El cliente especifica el punto de publicación en la dirección URL (por ejemplo, mms://MyServer/MyPublishingPoint) y el servidor lo traduce en una solicitud de contenido.
@@ -47,7 +47,7 @@ Estos pasos se muestran en la aplicación de ejemplo WMVNetWrite.
 
  
 
-## <a name="authentication"></a>Autenticación
+## <a name="authentication"></a>Authentication
 
 El objeto receptor de inserción controla automáticamente la autenticación en el servidor. Sin embargo, es posible que la aplicación tenga que proporcionar credenciales. Esto se realiza a través de la interfaz de devolución de llamada **IWMCredentialCallback,** como se muestra a continuación:
 

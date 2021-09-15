@@ -4,18 +4,18 @@ description: El encabezado siguiente representa uno de los estilos de encabezado
 ms.assetid: 2078d2d9-1757-4449-9cc1-a21804654722
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b27ee00425f3611234b0cd001f254b1499a0d4873d05846c65a2828c3eeffe57
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0afcc9ad880278fdbcb8efc45fdabdc22ad06224
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118924544"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476580"
 ---
 # <a name="the-header"></a>Encabezado
 
 El encabezado siguiente representa uno de los estilos de encabezado que puede generar la versión actual de MIDL. Para mayor comodidad, aquí se proporciona la lista completa de campos de encabezado.
 
-([**encabezado –Oif)**](/windows/desktop/Midl/-oi)
+([**Encabezado –Oif)**](/windows/desktop/Midl/-oi)
 
 ``` syntax
 handle_type<1> 
@@ -41,7 +41,7 @@ NotifyIndex<2>
 [ FloatDoubleMask<2> ]
 ```
 
-La versión \_ de<1> proporciona el tamaño de la sección de extensión, en bytes. De este modo, el motor EXPLORE actual puede ir paso a paso por la sección de extensión correctamente incluso si la sección procede de una versión posterior del compilador con más campos de los que entiende el motor actual.
+La versión \_ de extensión<1> proporciona el tamaño de la sección de extensión, en bytes. Si lo hace, el motor ICIALMENTE actual puede ir paso a paso por la sección de extensión correctamente, incluso si la sección procede de una versión posterior del compilador con más campos de los que entiende el motor actual.
 
 INTERPRETER \_ OPT \_ FLAGS2 se define de la siguiente manera:
 
@@ -57,15 +57,15 @@ typedef struct
   } INTERPRETER_OPT_FLAGS2, *PINTERPRETER_OPT_FLAGS2;
 ```
 
-El **miembro HasNewCorrDesc** indica si se usan nuevos descriptores de correlación en las cadenas de formato generadas por el compilador. El nuevo descriptor de correlación está relacionado con la funcionalidad de denegación de ataque. Los **miembros ClientCorrCheck y** **ServerCorrCheck** se establecen cuando la rutina necesita la comprobación de correlación en el lado indicado.
+El **miembro HasNewCorrDesc** indica si se usan nuevos descriptores de correlación en las cadenas de formato generadas por el compilador. El nuevo descriptor de correlación está relacionado con la funcionalidad de denegación de ataque. Los **miembros ClientCorrCheck** y **ServerCorrCheck** se establecen cuando la rutina necesita la comprobación de correlación en el lado indicado.
 
-Las **marcas HasNotify** y **HasNotify2** indican que la rutina usa la característica de notificación definida por los atributos de marca **\[ notify \]** y **\[ notify, \_ \]** respectivamente.
+Las **marcas HasNotify** y **HasNotify2** indican que la rutina usa la característica de notificación según lo definido por los atributos de marca **\[ notify \]** y **\[ notify, \_ \]** respectivamente.
 
-El **miembro ClientCorrCheck es** una sugerencia de tamaño de caché en el lado cliente y **ServerCorrCheck** es una sugerencia en el lado servidor. Cuando el tamaño sale como cero, se debe usar un tamaño predeterminado.
+El **miembro ClientCorrCheck es** una sugerencia de tamaño de caché en el lado cliente y **ServerCorrCheck** es una sugerencia en el lado servidor. Cuando el tamaño aparece como cero, se debe usar un tamaño predeterminado.
 
 El **elemento NotifyIndex** es un índice de una rutina de notificación, si se usa uno.
 
-El **elemento FloatDoubleMask** aborda el problema de un argumento de punto flotante para los archivos de 64 Windows. Este campo solo se genera para códigos auxiliares de 64 bits. La máscara es necesaria para las rutinas de ensamblado que descargan o cargan registros desde o hacia la pila virtual para controlar los argumentos de punto flotante y los registros correctamente. La máscara consta de 2 bits por argumento o, en su lugar, por registro de punto flotante. La codificación es la siguiente: los bits menos significativos corresponden al primer registro FP, los 2 bits siguientes corresponden al segundo registro, y así sucesivamente.
+El **elemento FloatDoubleMask** soluciona el problema de un argumento de punto flotante para las operaciones de 64 Windows. Este campo solo se genera para código auxiliar de 64 bits. La máscara es necesaria para que las rutinas de ensamblado que descargan o cargan registros desde o hacia la pila virtual controle correctamente los argumentos de punto flotante y los registros. La máscara consta de 2 bits por argumento o más bien por registro de punto flotante. La codificación es la siguiente: los bits menos significativos corresponden al primer registro FP, los 2 bits siguientes corresponden al segundo registro, y así sucesivamente.
 
 > [!Note]  
 > Para las rutinas de objeto, el primer argumento termina en el segundo registro debido a que este puntero es el primero. Para cada registro, el significado de los bits es como se muestra en la tabla siguiente.
@@ -85,11 +85,11 @@ El **elemento FloatDoubleMask** aborda el problema de un argumento de punto flot
 
 00 y 11 son valores no válidos para los bits.
 
-Actualmente hay ocho registros FP en un procesador intel architecture de 64 bits, por lo que la máscara solo puede tener establecidos 16b bits más bajos. El tamaño de máscara se ha establecido en un total de 16 bits en función de que la máscara del compilador de C permanece sin cambios.
+Actualmente hay ocho registros fp en un procesador intel architecture de 64 bits, por lo que la máscara solo puede tener establecidos 16b bits más bajos. El tamaño de máscara se ha establecido en un total de 16 bits en función de que la máscara del compilador de C permanece sin cambios.
 
 ## <a name="header-streamlining-for-performance"></a>Secuenciación de encabezados para el rendimiento
 
-Para simplificar el código y mejorar el rendimiento, el compilador intenta generar un encabezado de tamaño fijo siempre que sea posible. En concreto, se usa el siguiente encabezado para DCOM asincrónico:
+Para simplificar el código y mejorar el rendimiento, el compilador intenta generar un encabezado de tamaño fijo siempre que sea posible. En concreto, se usa el siguiente encabezado para Async DCOM:
 
 ``` syntax
 typedef struct _NDR_DCOM_OI2_PROC_HEADER

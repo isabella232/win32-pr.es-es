@@ -4,12 +4,12 @@ ms.assetid: 7a4eb5d7-b37d-4090-aea4-7274daa1e15c
 title: Novedades de la impresión en Windows Vista
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da41943d56f4cc49a6264c741519ef3a991925f3e3cfc61c154570499ce7b5a0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3b8648d57f48623e6db0f6311bb07ae24ac15d96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119600275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570537"
 ---
 # <a name="whats-new-for-printing-in-windows-vista"></a>Novedades de la impresión en Windows Vista
 
@@ -90,8 +90,8 @@ Las siguientes funciones, enumeraciones y estructuras se usan para imprimir y ad
 
 | Estructura                                                         | Descripción                                                                            | Encabezado     |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------|------------|
-| [**CONTROLADOR \_ DE IMPRESORA \_ PRINCIPAL**](core-printer-driver.md)              | Representa un controlador de impresora del que dependen otros controladores de impresora.              | Winspool.h |
-| [**INFORMACIÓN \_ DEL \_ CONTROLADOR 8**](driver-info-8.md)                          | Representa un controlador de impresora.                                                           | Winspool.h |
+| [**CONTROLADOR DE \_ IMPRESORA \_ PRINCIPAL**](core-printer-driver.md)              | Representa un controlador de impresora del que dependen otros controladores de impresora.              | Winspool.h |
+| [**INFORMACIÓN \_ DEL CONTROLADOR \_ 8**](driver-info-8.md)                          | Representa un controlador de impresora.                                                           | Winspool.h |
 | [**FORM \_ INFO \_ 2**](form-info-2.md)                              | Representa información sobre un formulario de impresión localizable.                                 | Winspool.h |
 | [**INFORMACIÓN \_ DEL \_ TRABAJO 4**](job-info-4.md)                                | Representa un conjunto completo de valores asociados a un trabajo y admite archivos de cola de 64 bits. | Winspool.h |
 | [**INFORMACIÓN DE \_ CONEXIÓN \_ DE IMPRESORA \_ 1**](printer-connection-info-1.md) | Representa información sobre una conexión a una impresora.                                | Winspool.h |
@@ -108,9 +108,9 @@ Las siguientes funciones, enumeraciones e interfaces se usan para implementar un
 
 | Función                                                                             | Descripción                                                                                                                                                                                       | Encabezado     | Biblioteca      |
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
-| [**CreatePrintAsyncNotifyChannel**](/windows/desktop/api/prnasnot/nf-prnasnot-createprintasyncnotifychannel)               | Crea un canal de comunicación entre el componente de impresión hospedado en cola, como un controlador de impresión o un monitor de puerto, y una aplicación que necesita recibir notificaciones del componente. | Pnmsnot.h | Winspool.lib |
-| [**RegisterForPrintAsyncNotifications**](/windows/desktop/api/prnasnot/nf-prnasnot-registerforprintasyncnotifications)     | Registra una aplicación para recibir notificaciones de componentes hospedados en cola, como controladores de impresora, procesadores de impresión y monitores de puerto.                                                    | Pnmsnot.h | Winspool.lib |
-| [**UnRegisterForPrintAsyncNotifications**](/windows/desktop/api/prnasnot/nf-prnasnot-unregisterforprintasyncnotifications) | Permite que una aplicación que se ha registrado reciba notificaciones de componentes de impresión hospedados en cola para finalizar su suscripción a las notificaciones.                                         | Pnmsnot.h | Winspool.lib |
+| [**CreatePrintAsyncNotifyChannel**](/windows/desktop/api/prnasnot/nf-prnasnot-createprintasyncnotifychannel)               | Crea un canal de comunicación entre el componente de impresión hospedado en cola, como un controlador de impresión o un monitor de puerto, y una aplicación que necesita recibir notificaciones del componente. | Prnasnot.h | Winspool.lib |
+| [**RegisterForPrintAsyncNotifications**](/windows/desktop/api/prnasnot/nf-prnasnot-registerforprintasyncnotifications)     | Registra una aplicación para recibir notificaciones de componentes hospedados en cola, como controladores de impresora, procesadores de impresión y monitores de puerto.                                                    | Prnasnot.h | Winspool.lib |
+| [**UnRegisterForPrintAsyncNotifications**](/windows/desktop/api/prnasnot/nf-prnasnot-unregisterforprintasyncnotifications) | Permite que una aplicación que se ha registrado reciba notificaciones de componentes de impresión hospedados en cola para finalizar su suscripción a las notificaciones.                                         | Prnasnot.h | Winspool.lib |
 
 
 
@@ -120,9 +120,9 @@ Las siguientes funciones, enumeraciones e interfaces se usan para implementar un
 
 | Enumeración                                                                    | Descripción                                                                                                                                                                                                          | Encabezado     |
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
-| [**PrintAsyncNotifyConversationStyle**](/windows/desktop/api/prnasnot/ne-prnasnot-printasyncnotifyconversationstyle) | Especifica si la comunicación entre las aplicaciones y los componentes hospedados por Print Spooler, como los controladores de impresora, los procesadores de impresión y los monitores de puerto, es bidireccional o unidireccional.                          | Pnmsnot.h |
-| [**PrintAsyncNotifyError**](/windows/desktop/api/prnasnot/ne-prnasnot-printasyncnotifyerror)                         | Especifica un error en una transacción de notificación asincrónica.                                                                                                                                                      | Pnmsnot.h |
-| [**PrintAsyncNotifyUserFilter**](/windows/desktop/api/prnasnot/ne-prnasnot-printasyncnotifyuserfilter)               | Especifica si las notificaciones solo irán a las aplicaciones de escucha asociadas al mismo usuario que el remitente hospedado en Print Spooler o si irán a un conjunto más amplio de aplicaciones de escucha. | Pnmsnot.h |
+| [**PrintAsyncNotifyConversationStyle**](/windows/desktop/api/prnasnot/ne-prnasnot-printasyncnotifyconversationstyle) | Especifica si la comunicación entre las aplicaciones y los componentes hospedados en print Spooler, como los controladores de impresora, los procesadores de impresión y los monitores de puerto, es bidireccional o unidireccional.                          | Prnasnot.h |
+| [**PrintAsyncNotifyError**](/windows/desktop/api/prnasnot/ne-prnasnot-printasyncnotifyerror)                         | Especifica un error en una transacción de notificación asincrónica.                                                                                                                                                      | Prnasnot.h |
+| [**PrintAsyncNotifyUserFilter**](/windows/desktop/api/prnasnot/ne-prnasnot-printasyncnotifyuserfilter)               | Especifica si las notificaciones solo irán a las aplicaciones de escucha asociadas al mismo usuario que el remitente hospedado en Print Spooler o si irán a un conjunto más amplio de aplicaciones de escucha. | Prnasnot.h |
 
 
 
@@ -132,18 +132,18 @@ Las siguientes funciones, enumeraciones e interfaces se usan para implementar un
 
 | Interfaz y método                                                                                                      | Descripción                                                                                                                                                   | Encabezado     | Biblioteca      |
 |---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
-| [**IPrintAsyncNotifyCallback::ChannelClosed**](/windows/desktop/api/prnasnot/nf-prnasnot-iprintasyncnotifycallback-channelclosed)    | Lo usa un miembro de un canal de comunicación para informar al otro miembro de que el canal se está cierrando.                                                    | Pnmsnot.h | Winspool.lib |
-| [**IPrintAsyncNotifyCallback::OnEventNotify**](/windows/desktop/api/prnasnot/nf-prnasnot-iprintasyncnotifycallback-oneventnotify)    | Llamado por el colador de impresión para alertar a un agente de escucha de que hay una notificación disponible en un canal especificado.                                                      | Pnmsnot.h | Winspool.lib |
-| [**IPrintAsyncNotifyChannel::CloseChannel**](/windows/desktop/api/prnasnot/nf-prnasnot-iprintasyncnotifychannel-closechannel)         | Cierra un canal de comunicación.                                                                                                                               | Pnmsnot.h | Winspool.lib |
-| [**IPrintAsyncNotifyChannel::SendNotification**](/windows/desktop/api/prnasnot/nf-prnasnot-iprintasyncnotifychannel-sendnotification) | Envía una notificación desde un componente hospedado en Print Spooler a una o varias aplicaciones de escucha o envía una respuesta de una aplicación a un componente. | Pnmsnot.h | Winspool.lib |
-| [**IPrintAsyncNotifyDataObject::AcquireData**](/windows/desktop/api/prnasnot/nf-prnasnot-iprintasyncnotifydataobject-acquiredata)  | Señala las aplicaciones de escucha a los datos de notificación, así como el tamaño y el tipo de los datos.                                                                   | Pnmsnot.h | Winspool.lib |
-| [**IPrintAsyncNotifyDataObject::ReleaseData**](/windows/desktop/api/prnasnot/nf-prnasnot-iprintasyncnotifydataobject-releasedata)  | Libera la memoria utilizada por los datos encapsulados en [**IPrintAsyncNotifyDataObject**](/windows/desktop/api/prnasnot/nn-prnasnot-iprintasyncnotifydataobject).                                  | Pnmsnot.h | Winspool.lib |
+| [**IPrintAsyncNotifyCallback::ChannelClosed**](/windows/desktop/api/prnasnot/nf-prnasnot-iprintasyncnotifycallback-channelclosed)    | Lo usa un miembro de un canal de comunicación para informar al otro miembro de que el canal se está cierrando.                                                    | Prnasnot.h | Winspool.lib |
+| [**IPrintAsyncNotifyCallback::OnEventNotify**](/windows/desktop/api/prnasnot/nf-prnasnot-iprintasyncnotifycallback-oneventnotify)    | Llamado por el colador de impresión para alertar a un agente de escucha de que hay una notificación disponible en un canal especificado.                                                      | Prnasnot.h | Winspool.lib |
+| [**IPrintAsyncNotifyChannel::CloseChannel**](/windows/desktop/api/prnasnot/nf-prnasnot-iprintasyncnotifychannel-closechannel)         | Cierra un canal de comunicación.                                                                                                                               | Prnasnot.h | Winspool.lib |
+| [**IPrintAsyncNotifyChannel::SendNotification**](/windows/desktop/api/prnasnot/nf-prnasnot-iprintasyncnotifychannel-sendnotification) | Envía una notificación desde un componente hospedado en Print Spooler a una o varias aplicaciones de escucha o envía una respuesta de una aplicación a un componente. | Prnasnot.h | Winspool.lib |
+| [**IPrintAsyncNotifyDataObject::AcquireData**](/windows/desktop/api/prnasnot/nf-prnasnot-iprintasyncnotifydataobject-acquiredata)  | Señala las aplicaciones de escucha a los datos de notificación, así como el tamaño y el tipo de los datos.                                                                   | Prnasnot.h | Winspool.lib |
+| [**IPrintAsyncNotifyDataObject::ReleaseData**](/windows/desktop/api/prnasnot/nf-prnasnot-iprintasyncnotifydataobject-releasedata)  | Libera la memoria utilizada por los datos encapsulados en [**IPrintAsyncNotifyDataObject**](/windows/desktop/api/prnasnot/nn-prnasnot-iprintasyncnotifydataobject).                                  | Prnasnot.h | Winspool.lib |
 
 
 
  
 
-La enumeración y las estructuras siguientes se usan para invocar el Convertidor de documentos XPS de Microsoft (MXDC) que escribe documentos XML Paper Specification (XPS) en un dispositivo o archivo.
+La enumeración y las estructuras siguientes se usan para invocar el Convertidor de documentos xps de Microsoft (MXDC), que escribe documentos XML Paper Specification (XPS) en un dispositivo o archivo.
 
 
 
@@ -163,10 +163,10 @@ La enumeración y las estructuras siguientes se usan para invocar el Convertidor
 | [**MxdcGetFileNameData**](mxdcgetfilenamedata.md)                 | Representa la ruta de acceso completa y el nombre de un archivo de salida MXDC.                                                                                     | Mxdc.h |
 | [**MxdcPrintTicketEscape**](mxdcprintticketescape.md)             | Representa una combinación de [**MxdcEscapeHeader**](mxdcescapeheader.md) y [**MxdcPrintTicketPassthrough.**](mxdcprintticketpassthrough.md) | Mxdc.h |
 | [**MxdcPrintTicketPassthrough**](mxdcprintticketpassthrough.md)   | Representa un vale de impresión que se asociará a un documento XPS.                                                                        | Mxdc.h |
-| [**MxdcS0PageData**](mxdcs0pagedata.md)                           | Representa una página con formato XPS que se va a pasar al archivo de salida MXDC sin ningún procesamiento.                                                  | Mxdc.h |
+| [**MxdcS0PageData**](mxdcs0pagedata.md)                           | Representa una página con formato XPS que se pasará al archivo de salida MXDC sin ningún procesamiento.                                                  | Mxdc.h |
 | [**MxdcS0PagePassthroughEscape**](mxdcs0pagepassthroughescape.md) | Representa una combinación de [**MxdcEscapeHeader**](mxdcescapeheader.md) y [**MxdcS0PageData.**](mxdcs0pagedata.md)                         | Mxdc.h |
-| [**MxdcS0PageResourceEscape**](mxdcs0pageresourceescape.md)       | Representa una combinación de [**MxdcEscapeHeader**](mxdcescapeheader.md) y [**MxdcS0PageResource**](mxdcs0pageresourceescape.md).           | Mxdc.h |
-| [**MxdcS0PageResource**](mxdcs0pageresourceescape.md)             | Representa un recurso, como una fuente o imagen, que el MXDC incluye en una página XPS.                                                   | Mxdc.h |
+| [**MxdcS0PageResourceEscape**](mxdcs0pageresourceescape.md)       | Representa una combinación de [**MxdcEscapeHeader**](mxdcescapeheader.md) y [**MxdcS0PageResource.**](mxdcs0pageresourceescape.md)           | Mxdc.h |
+| [**MxdcS0PageResource**](mxdcs0pageresourceescape.md)             | Representa un recurso, como una fuente o una imagen, que el MXDC incluye en una página XPS.                                                   | Mxdc.h |
 
 
 

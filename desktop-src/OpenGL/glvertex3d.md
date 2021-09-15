@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cebaa986b87d94839be846ef24edfbaa59e9ee08a4301caaffb5150dcd6af088
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 608ab02bf2cd41b7f2ffcc8fa3fe8cb2dea0ca89
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120036075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476696"
 ---
 # <a name="glvertex3d-function"></a>Función glVertex3d
 
@@ -45,14 +45,14 @@ void WINAPI glVertex3d(
 *x* 
 </dt> <dd>
 
-Especifica la coordenada X de un vértice.
+Especifica la coordenada x de un vértice.
 
 </dd> <dt>
 
 *y* 
 </dt> <dd>
 
-Especifica la coordenada Y de un vértice.
+Especifica la coordenada y de un vértice.
 
 </dd> <dt>
 
@@ -67,9 +67,9 @@ Especifica la coordenada z de un vértice.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Los comandos de función glVertex se usan en pares [**glBegin**](glbegin.md)glEnd para especificar vértices de punto, línea / [](glend.md) y polígono. Las coordenadas de color, normal y textura actuales están asociadas al vértice cuando se llama a glVertex. Cuando solo *se especifican x* e *y,* *z* tiene como valor predeterminado 0,0 y *w* el valor predeterminado es 1,0. Cuando *se* especifican x , *y* y *z,* *w* tiene como valor predeterminado 1.0. La invocación de glVertex fuera de **un par glBegin** / **glEnd** produce un comportamiento indefinido.
+Los comandos de función glVertex se usan en pares [**glBegin**](glbegin.md)glEnd para especificar vértices de punto, línea / [](glend.md) y polígono. Las coordenadas de color, normal y textura actuales se asocian al vértice cuando se llama a glVertex. Cuando solo *se especifican x* e *y,* *z* tiene como valor predeterminado 0,0 y *w* el valor predeterminado es 1,0. Cuando *se* especifican x , *y* y *z,* *w* tiene como valor predeterminado 1.0. La invocación de glVertex fuera de un par **glBegin** / **glEnd** produce un comportamiento indefinido.
 
 ## <a name="requirements"></a>Requisitos
 

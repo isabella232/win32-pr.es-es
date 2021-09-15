@@ -4,12 +4,12 @@ ms.assetid: 9ad3199a-bca1-4990-80da-80744e349047
 title: Cifrado de un mensaje en CAPICOM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a3ef531fa75fc4d99a423ffbb6c0edd591caf6b1939f12fea439e7f9fbc80dc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8039586736c09673644cacc90759e8d5f25b6e1a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117766197"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476427"
 ---
 # <a name="encrypting-a-message-in-capicom"></a>Cifrado de un mensaje en CAPICOM
 

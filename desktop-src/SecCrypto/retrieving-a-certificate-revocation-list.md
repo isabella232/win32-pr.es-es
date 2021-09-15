@@ -1,19 +1,19 @@
 ---
 description: Muestra cómo recuperar una lista de revocación de certificados.
 ms.assetid: b8fbffae-d968-453d-81f0-af9d60be5fa9
-title: Recuperación de una lista de revocación de certificados
+title: Recuperar una lista de revocación de certificados
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 9e9c7933ac5762c9367d7bdff150da011f789835
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105669649"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476358"
 ---
-# <a name="retrieving-a-certificate-revocation-list"></a>Recuperación de una lista de revocación de certificados
+# <a name="retrieving-a-certificate-revocation-list"></a>Recuperar una lista de revocación de certificados
 
-Una [*entidad de certificación*](../secgloss/c-gly.md) (CA) es responsable de publicar su [*lista de revocación de certificados*](../secgloss/c-gly.md) (CRL). La CRL actual se puede recuperar mediante el método [**ICertAdmin2:: GetCRL**](/windows/desktop/api/Certadm/nf-certadm-icertadmin-getcrl) . En los casos en los que se ha renovado el certificado de una entidad de certificación, es posible que deba recuperar las CRL de los certificados de CA anteriores. Para obtener información acerca de la renovación de CA, consulte [renovación de entidades de certificación](certification-authority-renewal.md). Además, una CA puede publicar diferencias CRL. Para recuperar CRL para certificados de CA renovados o diferencias CRL, use los métodos [**ICertAdmin2:: GetCAProperty**](/windows/desktop/api/Certadm/nf-certadm-icertadmin2-getcaproperty) o [**ICertRequest2:: GetCAProperty**](/windows/desktop/api/Certcli/nf-certcli-icertrequest2-getcaproperty) .
+Una [*entidad de certificación*](../secgloss/c-gly.md) (CA) es responsable de publicar su lista de [*revocación*](../secgloss/c-gly.md) de certificados (CRL). La CRL actual se puede recuperar mediante el [**método ICertAdmin2::GetCRL.**](/windows/desktop/api/Certadm/nf-certadm-icertadmin-getcrl) En los casos en los que se ha renovado el certificado de una entidad de certificación, es posible que tenga que recuperar las CRL de los certificados de entidad de certificación anteriores. Para obtener información sobre la renovación de la entidad de certificación, vea [Renovación de la entidad de certificación.](certification-authority-renewal.md) Además, una entidad de certificación podría publicar CRL diferenciales. Para recuperar las CRL para certificados de entidad de certificación renovados o CRL diferenciales, use los métodos [**ICertAdmin2::GetCAProperty**](/windows/desktop/api/Certadm/nf-certadm-icertadmin2-getcaproperty) o [**ICertRequest2::GetCAProperty.**](/windows/desktop/api/Certcli/nf-certcli-icertrequest2-getcaproperty)
 
 En el ejemplo siguiente se muestra cómo recuperar la CRL actual.
 
@@ -85,7 +85,7 @@ error:
 
 
 
-En el ejemplo siguiente se muestra la recuperación de CRL base y Delta, incluidas las de los certificados de CA que se han renovado. En el ejemplo se usa [**ICertAdmin2:: GetCAProperty**](/windows/desktop/api/Certadm/nf-certadm-icertadmin2-getcaproperty), aunque [**ICertRequest2:: GetCAProperty**](/windows/desktop/api/Certcli/nf-certcli-icertrequest2-getcaproperty) proporciona una funcionalidad similar.
+En el ejemplo siguiente se muestra la recuperación de CRL base y delta, incluidas las de los certificados de entidad de certificación que se han renovado. En el ejemplo [**se usa ICertAdmin2::GetCAProperty**](/windows/desktop/api/Certadm/nf-certadm-icertadmin2-getcaproperty), aunque [**ICertRequest2::GetCAProperty**](/windows/desktop/api/Certcli/nf-certcli-icertrequest2-getcaproperty) proporciona una funcionalidad similar.
 
 
 ```C++

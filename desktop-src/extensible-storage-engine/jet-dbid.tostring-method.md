@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 8051840b178d70e204c7a6f88cc575b7e1ab7b18301ba7900073d001dcb15d70
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 97fb6b251ca369adcdd55e6b5ead4d36624b6d6e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118486375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475977"
 ---
 # <a name="jet_dbidtostring-method-overload-list"></a>JET_DBID. Lista de sobrecargas del método ToString
 
@@ -53,7 +53,7 @@ Incluir miembros heredados
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

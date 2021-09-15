@@ -4,17 +4,17 @@ ms.assetid: bbb78d70-bd3e-4d5a-ba59-2e17d2d1cf30
 title: Encoder-Specific del Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83d5d91d917be3940bcece4bed7c224e0f281dbb1cade5d0dc2c25872f89af93
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 49e6fbfafa1f8d3b340d7e3864fddacb8cd7e282
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118711234"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570313"
 ---
 # <a name="encoder-specific-registry-entries"></a>Encoder-Specific del Registro
 
 
-Además de las entradas enumeradas anteriormente para el codificador, también debe registrar el codificador en la categoría de codificadores de Windows Imaging Component (WIC) para que el motor de detección pueda encontrarlo. Para ello, realice las siguientes entradas del Registro. El primer GUID de las siguientes entradas es el identificador de categoría (CATID) para WICBitmapEncoders.
+Además de las entradas enumeradas anteriormente para el codificador, también debe registrar el codificador en la categoría de codificadores Windows Imaging Component (WIC) para que el motor de detección pueda encontrarlo. Para ello, realice las siguientes entradas del Registro. El primer GUID de las siguientes entradas es el identificador de categoría (CATID) para WICBitmapEncoders.
 
 ```
 HKEY_CLASSES_ROOT

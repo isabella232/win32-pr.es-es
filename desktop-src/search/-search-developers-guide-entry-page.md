@@ -1,21 +1,21 @@
 ---
 description: Terceros pueden crear aplicaciones que consultan los datos mediante programación en el índice y pueden ampliar Windows Search para indexar datos de almacenes de datos y formatos de archivo personalizados.
 ms.assetid: 70046df0-ce48-472d-b24b-8231ea3a43c0
-title: Windows Guía del desarrollador de búsqueda
+title: Windows Search Developer's Guide
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84773f23f5e82ce5cbb15c163b0ff2421f9b7c92b18129c9875729be37518b02
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 61593f47e081059966936a99a7d2baea114df92a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117864194"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573268"
 ---
-# <a name="windows-search-developers-guide"></a>Windows Guía del desarrollador de búsqueda
+# <a name="windows-search-developers-guide"></a>Windows Search Developer's Guide
 
 Terceros pueden crear aplicaciones que consultan los datos mediante programación en el índice y pueden ampliar Windows Search para indexar datos de almacenes de datos y formatos de archivo personalizados. Para crear Windows Search, los desarrolladores de terceros deben implementar primero un almacén de datos de Shell para lograr una experiencia de usuario razonable. Para obtener más información, vea [Implementing the Basic Folder Object Interfaces](/previous-versions/windows/desktop/legacy/cc144093(v=vs.85)).
 
-También debe descargar el [SDK de Windows para](https://msdn.microsoft.com/windowsvista/bb980924.aspx) las bibliotecas Windows Search. Los [Windows SDK de Search contienen](https://www.microsoft.com/downloads/details.aspx?FamilyID=645300AE-5E7A-4CE7-95F0-49793F8F76E8) ejemplos de código útiles y un ensamblado de interoperabilidad para desarrollar con código administrado. Para obtener más información sobre el uso de los ejemplos de código, [vea Windows Buscar ejemplos de código](-search-3x-wds-sampleentry.md).
+También debe descargar el SDK [Windows para](https://msdn.microsoft.com/windowsvista/bb980924.aspx) las bibliotecas Windows Search. Los [Windows SDK de Search contienen](https://www.microsoft.com/downloads/details.aspx?FamilyID=645300AE-5E7A-4CE7-95F0-49793F8F76E8) ejemplos de código útiles y un ensamblado de interoperabilidad para desarrollar con código administrado. Para obtener más información sobre el uso de los ejemplos de código, [vea Windows Buscar ejemplos de código](-search-3x-wds-sampleentry.md).
 
 Esta sección se organiza de la siguiente manera:
 
@@ -26,7 +26,7 @@ Esta sección se organiza de la siguiente manera:
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
-- Para ver los paneles de mensajes de preguntas y discusión admitidos por la comunidad sobre las tecnologías de búsqueda, vea Foro de [MSDN: desarrollo de Windows de búsqueda de escritorio.](https://social.msdn.microsoft.com/Forums/windowsdesktopsearchdevelopment/threads)
+- Para ver los paneles de mensajes de preguntas y discusión admitidos por la comunidad sobre las tecnologías de búsqueda, vea [Foro de MSDN: Windows desarrollo de búsqueda de escritorio.](https://social.msdn.microsoft.com/Forums/windowsdesktopsearchdevelopment/threads)
 - Para descargar los ejemplos de código de búsqueda:
   - [Windows Ejemplos de búsqueda](-search-samples-ovw.md)
 - Para descargar el SDK Windows:

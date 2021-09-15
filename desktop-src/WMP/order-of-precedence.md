@@ -15,16 +15,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 12b55f34dd18fa6122d3f1588111aaffe374f2d87c06ef9100cbac057efd4bd3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9161d1e43f61ae1b1a7231c640e33c4c6ec6527f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119467998"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476213"
 ---
 # <a name="order-of-precedence"></a>Orden de precedencia
 
-No todos los atributos de elemento de metarchivo se crean iguales. Algunos atributos de elemento de metarchivo invalidan otros atributos de elemento. Los atributos de elemento se pueden reemplazar por atributos de elemento similares en función de la posición y el orden. Los atributos de una lista de reproducción de metarchivo invalidan los contenidos en un archivo Windows media. Un atributo que invalida otro tiene mayor prioridad.
+No todos los atributos de elemento de metarchivo se crean iguales. Algunos atributos de elemento de metarchivo invalidan otros atributos de elemento. Los atributos de elemento se pueden reemplazar por atributos de elemento similares en función de la posición y el orden. Los atributos de una lista de reproducción de metarchivo reemplazan a los contenidos en un archivo Windows media. Un atributo que invalida otro tiene mayor prioridad.
 
 En la tabla siguiente se muestra la jerarquía, la prioridad más alta a la más baja. El elemento de prioridad más alta nunca se invalida.
 
@@ -42,7 +42,7 @@ En la tabla siguiente se muestra la jerarquía, la prioridad más alta a la más
 
  
 
--   "Contenido DRM firmado": objeto de firma digital.
+-   "Contenido drm firmado": objeto de firma digital.
 
     Los atributos del contenido drm firmado reemplazarán a todos los demás. Por ejemplo, no se invalidará la información de copyright del "contenido DRM firmado". Siempre se transmitirá y presentará.
 

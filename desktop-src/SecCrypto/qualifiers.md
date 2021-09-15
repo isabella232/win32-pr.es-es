@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 0f68dbeefefbe675199522dfbc5b1dab81b8a2840fa8b7d5189c72b811fcba7f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e873019d6fbfb21de8be430d7960f697b39eeca7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118900961"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476393"
 ---
 # <a name="qualifiers-object"></a>Objeto Qualifiers
 
@@ -34,7 +34,7 @@ El **objeto Qualifiers** se usa para realizar las tareas siguientes:
 -   Recupere el número de propiedades extendidas de la colección.
 -   Recorrer en iteración la colección.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto Qualifiers** tiene estos tipos de miembros:
 
@@ -46,17 +46,17 @@ El **objeto Qualifiers** tiene estas propiedades.
 
 
 
-| Propiedad                                           | Tipo de acceso          | Descripción                                                                                                                                                                                                                     |
+| Propiedad.                                           | Tipo de acceso          | Descripción                                                                                                                                                                                                                     |
 |:---------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**\_NewEnum**](qualifiers-newenum.md)<br/> | Solo lectura<br/> | Recupera una [**interfaz IEnumVARIANT en**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) un objeto que se puede usar para enumerar la colección. Esta propiedad está oculta en Visual Basic Scripting Edition (VBScript).<br/> |
-| [**Contar**](qualifiers-count.md)<br/>       | Solo lectura<br/> | Recupera el número de calificadores de la colección.<br/>                                                                                                                                                                |
-| [**Elemento**](qualifiers-item.md)<br/>         | Solo lectura<br/> | Recupera un objeto [**Qualifier**](qualifier.md) que representa el calificador indexado de la colección. Esta es la propiedad predeterminada.<br/>                                                                             |
+| [**Count**](qualifiers-count.md)<br/>       | Solo lectura<br/> | Recupera el número de calificadores de la colección.<br/>                                                                                                                                                                |
+| [**Artículo**](qualifiers-item.md)<br/>         | Solo lectura<br/> | Recupera un objeto [**Qualifier**](qualifier.md) que representa el calificador indexado de la colección. Esta es la propiedad predeterminada.<br/>                                                                             |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No se puede crear el objeto **Qualifiers.**
 
@@ -66,10 +66,10 @@ La propiedad de objeto CAPICOM [**PolicyInformation.Qualifiers**](policyinformat
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
-| Header<br/>          | <dl> <dt>Iads.h</dt> </dl>      |
+| Encabezado<br/>          | <dl> <dt>Iads.h</dt> </dl>      |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

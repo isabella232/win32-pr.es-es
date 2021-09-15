@@ -4,12 +4,12 @@ ms.assetid: 97b25435-aec2-4fdb-a4c6-89ec2e26f51d
 title: Tipos de codificación de certificados y mensajes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 185be8d3cc781786c93ac809c042c86d3601a45d86eaa39452f0bcbf44203a1f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a3193b321d27892f8df9535ef81b8a988bf558e5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117771981"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476507"
 ---
 # <a name="certificate-and-message-encoding-types"></a>Tipos de codificación de certificados y mensajes
 

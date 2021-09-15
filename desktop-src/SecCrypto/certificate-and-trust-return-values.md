@@ -4,12 +4,12 @@ ms.assetid: f7d1bdcb-8e4f-493f-ad3c-9d4b9d21436b
 title: Valores devueltos de certificados y confianza
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf575df785160682c132f38ccc280bb8b9377b15b64ed3efda163c68c1ef52e0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5e17f170c7c3aa1ac0839323b9a52767a101dd3c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120127245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476508"
 ---
 # <a name="certificate-and-trust-return-values"></a>Valores devueltos de certificados y confianza
 

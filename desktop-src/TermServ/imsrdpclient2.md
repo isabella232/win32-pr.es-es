@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa5dfc7f4940ee9023c505b8a643b9a8c708701422a0a89c16f8ebe6bae8577e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d58367abeccb324fd20603b879e54673439c6049
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120033585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474623"
 ---
 # <a name="imsrdpclient2-interface"></a>Interfaz IMsRdpClient2
 
 Proporciona los métodos y propiedades necesarios para configurar y usar el control de cliente. Deriva de la [**interfaz IMsRdpClient.**](imsrdpclient-interface.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IMsRdpClient2** hereda de [**IMsRdpClient.**](imsrdpclient-interface.md) **IMsRdpClient2** también tiene estos tipos de miembros:
 
@@ -39,16 +39,16 @@ La **interfaz IMsRdpClient2** tiene estas propiedades.
 
 
 
-| Propiedad                                                                    | Tipo de acceso           | Descripción                                                                                                                                                       |
+| Propiedad.                                                                    | Tipo de acceso           | Descripción                                                                                                                                                       |
 |:----------------------------------------------------------------------------|:----------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AdvancedSettings3**](imsrdpclient2-advancedsettings3.md)<br/>     | Solo lectura<br/>  | Puntero a la [**interfaz IMsRdpClientAdvancedSettings2,**](imsrdpclientadvancedsettings2.md) que se usa para establecer la configuración avanzada para el control de cliente.<br/> |
-| [**ConnectedStatusText**](imsrdpclient2-connectedstatustext.md)<br/> | Lectura/escritura<br/> | Texto que se muestra en el área de cliente del control mientras el control está en estado conectado.<br/>                                                  |
+| [**ConnectedStatusText**](imsrdpclient2-connectedstatustext.md)<br/> | Lectura y escritura<br/> | Texto que se muestra en el área de cliente del control mientras el control está en estado conectado.<br/>                                                  |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las interfaces siguientes han ampliado la interfaz **IMsRdpClient2,** donde cada nueva interfaz hereda todos los métodos y propiedades de las interfaces anteriores:
 

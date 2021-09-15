@@ -1,6 +1,6 @@
 ---
 title: Elemento WakeToRun (settingsType)
-description: Especifica que Programador de tareas reactivará el equipo cuando llegue el momento de ejecutar la tarea.
+description: Especifica que Programador de tareas reactivará el equipo cuando sea el momento de ejecutar la tarea.
 ms.assetid: 5fb53016-5778-463d-bb32-3c1da2de6fc2
 keywords:
 - WakeToRun, elemento Programador de tareas
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 12d16f9f06685a427a8f3e7c4f2356dff0bc6415e50379ba752a4bc3a3fec8e5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 23eeaa06073fa9259c1a48137cf3676baa402d39
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119872065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474660"
 ---
 # <a name="waketorun-settingstype-element"></a>Elemento WakeToRun (settingsType)
 
-Especifica que Programador de tareas reactivará el equipo cuando llegue el momento de ejecutar la tarea.
+Especifica que Programador de tareas reactivará el equipo cuando sea el momento de ejecutar la tarea.
 
 ``` syntax
 <xs:element name="WakeToRun"
@@ -42,13 +42,13 @@ El **elemento WakeToRun** se define mediante el [**tipo complejo settingsType.**
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando el Programador de tareas reactiva el equipo para ejecutar una tarea, la pantalla puede permanecer desactivada aunque el equipo ya no esté en modo de suspensión o hibernación. La pantalla se activará cuando Windows Vista detecte que un usuario ha vuelto a usar el equipo.
 
-Para el desarrollo de C++, [**vea WakeToRun Property of ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_waketorun).
+Para el desarrollo de C++, [**vea WakeToRun Property of ITaskSettings ( Propiedad WakeToRun de ITaskSettings).**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_waketorun)
 
-Para el desarrollo de scripts, [**vea TaskSettings.WakeToRun**](tasksettings-waketorun.md).
+Para el desarrollo de scripts, [**vea TaskSettings.WakeToRun.**](tasksettings-waketorun.md)
 
 ## <a name="requirements"></a>Requisitos
 

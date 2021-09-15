@@ -3,7 +3,7 @@ title: Propiedad Ribbon.QuickAccessToolbar
 description: Representa un contenedor para la barra de herramientas de acceso rápido (QAT).
 ms.assetid: 8a873a48-4f8b-439d-acad-7da2081fbf40
 keywords:
-- Ribbon.QuickAccessToolbar, propiedad Windows cinta de opciones
+- Cinta de opciones de la propiedad Ribbon.QuickAccessToolbar Windows cinta de opciones
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83e1fa4cb5de43be2b7316d4ed1786c2a1325fa4468538e2ffea41d5d8c9ef0c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad0e09b220bd60b60ccbb8ee05c2da9c4317ba78
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118202322"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573137"
 ---
 # <a name="ribbonquickaccesstoolbar-property"></a>Propiedad Ribbon.QuickAccessToolbar
 
@@ -55,9 +55,9 @@ No hay atributos.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Obligatorio.
+Necesario.
 
 Puede producirse una o varias veces para cada cinta [**de opciones.**](windowsribbon-element-ribbon.md)
 
@@ -85,9 +85,9 @@ En el ejemplo siguiente se muestra el marcado básico para el **elemento Ribbon.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>              |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/> |
 
 

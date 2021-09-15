@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: e5db6e95b938747bbfdd567ebd29e396ad69c26d4e66262f96433d34dce9408c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2ec9fb58957c2e0fd64bc1c5878892fe6542af8d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117981931"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476739"
 ---
 # <a name="getprotocolinfo-function"></a>Función GetProtocolInfo
 
@@ -52,15 +52,15 @@ Si la función se realiza correctamente, el valor devuelto es un puntero al valo
 
 Si la función no se realiza correctamente, el valor devuelto es **NULL.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-[*Los*](e.md) expertos [*y analizadores pueden*](p.md) llamar a **la función GetProtocolInfo.**
+[*Los*](e.md) expertos [*y analizadores*](p.md) pueden llamar a **la función GetProtocolInfo.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

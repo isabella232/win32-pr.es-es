@@ -3,7 +3,7 @@ title: Tipo complejo TaskListType
 description: Define una lista de tareas que se usan para identificar los componentes de una aplicación.
 ms.assetid: 41a46967-7c5b-4555-9f65-bd9582c0c492
 keywords:
-- TaskListType, tipo complejo EventLog
+- Tipo complejo TaskListType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d59457aaeeefeec4b490b4c399a2faafb4f62c22e67a600f741ccc16b3abcaad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad427743242ada8901e904fc4e03620ccc72f405
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117750911"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476280"
 ---
 # <a name="tasklisttype-complex-type"></a>Tipo complejo TaskListType
 

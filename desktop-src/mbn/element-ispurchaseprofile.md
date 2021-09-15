@@ -7,12 +7,12 @@ MSHAttr:
 title: IsPurchaseProfile
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 899a1d42dc48ea63b5f3723ff35eca67d0a14fd6
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.openlocfilehash: ba087f024a37da6999baf905629befa0452c9950
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880743"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475866"
 ---
 # <a name="span-idwwan_profile_v2element_ispurchaseprofilespanispurchaseprofile"></a><span id="WWAN_profile_v2.element_IsPurchaseProfile"></span>IsPurchaseProfile
 
@@ -22,7 +22,7 @@ El **elemento IsPurchaseProfile** contiene un **valor booleano** que es **true**
 
 **&lt;IsPurchaseProfile&gt;**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <IsPurchaseProfile>
@@ -49,7 +49,9 @@ Este elemento más externo (documento) no puede estar contenido en ningún otro 
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v2</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v2</p> | 
 
 
  

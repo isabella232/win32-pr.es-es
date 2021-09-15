@@ -3,26 +3,26 @@ title: Windows Ejemplo de Scratchpad táctil en C (MTScratchpadWMTouchCS)
 description: En Windows ejemplo de Touch Scratchpad en C# se muestra cómo usar Windows Touch para dibujar seguimientos de los puntos táctiles en una ventana.
 ms.assetid: 652124be-01a8-4df4-b590-e5c2ca3f012c
 keywords:
-- Windows Touch, ejemplos de código
+- Windows Touch,ejemplos de código
 - Windows Touch, código de ejemplo
-- Windows Touch,Scratchpad samples
+- Windows Ejemplos de Touch y Scratchpad
 - Ejemplos de Scratchpad
 ms.topic: article
 ms.date: 10/28/2019
-ms.openlocfilehash: 112f8446af4b845bfd36e4262a11da807535c93baaf6257a10a9a8d2b03374e9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 2d91c08c55f0d5b29a170a3a01c6ee882fad765f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120089855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570273"
 ---
-# <a name="windows-touch-scratchpad-sample-c"></a>Windows Ejemplo de Touch Scratchpad (C#)
+# <a name="windows-touch-scratchpad-sample-c"></a>Windows Ejemplo de Scratchpad táctil (C#)
 
-En [Windows ejemplo de Touch Scratchpad](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/CS) en C# se muestra cómo usar Windows Touch para dibujar seguimientos de los puntos táctiles en una ventana. El seguimiento del dedo principal, el que se ha puesto primero en el digitalizador, se dibuja en negro. Los dedos secundarios se dibujan en otros seis colores: rojo, verde, azul, cian, rojo, rojo y amarillo. En la imagen siguiente se muestra cómo podría verse la aplicación cuando se ejecuta.
+En [Windows ejemplo de Touch Scratchpad](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/CS) en C# se muestra cómo usar los mensajes Windows Touch para dibujar seguimientos de los puntos táctiles en una ventana. El seguimiento del dedo principal, el que se ha puesto primero en el digitalizador, se dibuja en negro. Los dedos secundarios se dibujan en otros seis colores: rojo, verde, azul, aguaz, rojo y amarillo. En la imagen siguiente se muestra el aspecto de la aplicación cuando se ejecuta.
 
-![captura de pantalla que muestra el ejemplo de scratchpad táctil de Windows en c sharp, con ondulados de color negro, verde, azul y rojo en la pantalla](images/mtscratchpadwmtouchcs.png)
+![captura de pantalla que muestra el ejemplo de scratchpad táctil de windows en c sharp, con ondulados de color negro, verde, azul y rojo en la pantalla](images/mtscratchpadwmtouchcs.png)
 
-Para este ejemplo, se crea un formulario táctil para [**controlar**](wm-touchdown.md) WM_TOUCH mensajes. Este formulario se hereda para habilitar Windows Touch en la aplicación scratchpad. Cuando el **WM_TOUCH** los mensajes llegan al formulario, se interpretan en puntos y se agregan a la colección de trazos. La colección de trazos se representa en el objeto Graphics. El código siguiente muestra cómo se registra  el formulario táctil para controlar WM_TOUCH mensajes y cómo controla **WM_TOUCH** mensajes.
+Para este ejemplo, se crea un formulario táctil para [**controlar**](wm-touchdown.md) WM_TOUCH mensajes. Este formulario se hereda para habilitar Windows Touch en la aplicación scratchpad. Cuando el **WM_TOUCH** los mensajes llegan al formulario, se interpretan en puntos y se agregan a la colección de trazos. La colección de trazos se representa en el objeto Graphics. En el código siguiente se muestra cómo  se registra el formulario táctil para controlar WM_TOUCH mensajes y cómo **controla WM_TOUCH** mensajes.
 
 ```CSharp
         private void OnLoadHandler(Object sender, EventArgs e)
@@ -71,7 +71,7 @@ Para este ejemplo, se crea un formulario táctil para [**controlar**](wm-touchdo
         }
 ```
 
-El código siguiente muestra cómo se interpreta el Windows touch y los datos se agregan a las colecciones de trazos.
+El código siguiente muestra cómo se interpreta Windows mensaje táctil y los datos se agregan a las colecciones de trazos.
 
 ```CSharp
         private bool DecodeTouch(ref Message m)
@@ -180,5 +180,5 @@ El código siguiente muestra cómo se muestran los objetos de trazo individuales
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Windows Touch Scratchpad sample (C++),](windows-touch-scratchpad-sample--mtscratchpadwmtouch-.md) [Multi-touch Scratchpad Application (WM_TOUCH/C#)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/CS), [Multi-touch Scratchpad Application (WM_TOUCH/C++)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/cpp), [Windows Touch Samples](windows-touch-samples.md)
+[Windows Touch Scratchpad Sample (C++),](windows-touch-scratchpad-sample--mtscratchpadwmtouch-.md) [Multi-touch Scratchpad Application (WM_TOUCH/C#)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/CS), [Multi-touch Scratchpad Application (WM_TOUCH/C++)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/cpp), [Windows Touch Samples](windows-touch-samples.md)
 

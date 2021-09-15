@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 9b796129e06cf538ec825fab785df6e2cf03626d5b7dde888329bedb2270ebbc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7404a4bed3ac3b1d4002bb03c45d7732500b77e4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117879789"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570633"
 ---
 # <a name="d3dauthenticatedconfigure_sharedresource"></a>D3DAUTHENTICATEDCONFIGURE \_ SHAREDRESOURCE
 
@@ -26,7 +26,7 @@ Habilita un proceso para abrir un recurso compartido o deshabilita que un proces
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------|-------------------------------------------------------------------------------------------------------------|
 | GUID del comando | **D3DAUTHENTICATEDCONFIGURE \_ SHAREDRESOURCE**                                                               |
 | Datos de entrada   | [**D3DAUTHENTICATEDCHANNEL \_ CONFIGURESHAREDRESOURCE**](d3dauthenticatedchannel-configuresharedresource.md) |
@@ -35,7 +35,7 @@ Habilita un proceso para abrir un recurso compartido o deshabilita que un proces
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los siguientes tipos de canal admiten esta consulta:
 
@@ -46,11 +46,11 @@ Los siguientes tipos de canal admiten esta consulta:
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
-| Header<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 

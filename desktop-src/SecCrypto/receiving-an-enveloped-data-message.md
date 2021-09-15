@@ -1,25 +1,25 @@
 ---
-description: Para descifrar un mensaje con doble cifrado, el destinatario coincide con un certificado del almacén My que tiene una clave privada disponible con un certificado en el mensaje con doble cifrado.
+description: Para descifrar un mensaje con sobres, el destinatario coincide con un certificado del almacén Mi que tiene una clave privada disponible con un certificado en el mensaje sobres.
 ms.assetid: 536f9977-102c-4df9-9d07-97b4b434b845
-title: Recibir un mensaje de datos con doble cifrado
+title: Recepción de un mensaje de datos con sobres
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 9d32276193e8fd03904aed1ad626cd3ed241c654
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103912821"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476392"
 ---
-# <a name="receiving-an-enveloped-data-message"></a>Recibir un mensaje de datos con doble cifrado
+# <a name="receiving-an-enveloped-data-message"></a>Recepción de un mensaje de datos con sobres
 
-\[CAPICOM es un componente de solo bits de 32 que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use la .NET Framework para implementar características de seguridad. Para obtener más información, vea [alternativas al uso de CAPICOM](alternatives-to-using-capicom.md).\]
+\[CAPICOM es un componente de solo 32 bits que está disponible para su uso en los siguientes sistemas operativos: Windows Server 2008, Windows Vista y Windows XP. En su lugar, use el .NET Framework para implementar características de seguridad. Para obtener más información, [vea Alternativas al uso de CAPICOM.](alternatives-to-using-capicom.md)\]
 
-Para descifrar un mensaje con doble cifrado, el destinatario coincide con un [*certificado*](../secgloss/c-gly.md) del almacén My que tiene una clave privada disponible con un certificado en el mensaje con doble cifrado. Si se encuentra una coincidencia, se descifra la clave cifrada asociada a ese certificado y la clave descifrada se usa para descifrar el mensaje con doble cifrado. Un destinatario del mensaje que no tenga un certificado coincidente con una clave privada disponible no podrá descifrar el mensaje.
+Para descifrar un mensaje con sobres, el destinatario coincide con un certificado del almacén Mi que tiene una clave privada disponible con un certificado en el mensaje sobres. [](../secgloss/c-gly.md) Si se encuentra una coincidencia, se descifra la clave cifrada asociada a ese certificado y esa clave descifrada se usa para descifrar el mensaje envoltorio. Un destinatario del mensaje que no tenga un certificado correspondiente con una clave privada disponible no puede descifrar el mensaje.
 
-En el ejemplo siguiente, se pasa un nombre de archivo a la subrutina, se abre ese archivo y se lee un mensaje con doble cifrado. A continuación, se descifra el mensaje con doble cifrado. Los pasos para hacer coincidir un certificado de usuario con un certificado en el mensaje con doble cifrado, descifrar la clave de cifrado y, por último, descifrar el mensaje se realizan en segundo plano. Se produce un error si no se encuentra una coincidencia de certificado o si se produce un error en el descifrado.
+En el ejemplo siguiente, se pasa un nombre de archivo a la subrutina, ese archivo se abre y se lee un mensaje sobre. A continuación, se descifra el mensaje con sobres. Los pasos para hacer coincidir un certificado de usuario con un certificado en el mensaje sobre, descifrar la clave de cifrado y, por último, descifrar el mensaje se realizan en segundo plano. Se produce un error si no se encuentra una coincidencia de certificado o si se produce un error en el descifrado.
 
-En cualquier error de CAPICOM, se devuelve un valor decimal negativo de **Err. Number** . Para obtener más información, consulte el [**\_ \_ código de error de CAPICOM**](capicom-error-code.md). Para obtener información acerca de los valores decimales positivos de **Err. Number**, consulte Winerror. h.
+En cualquier error CAPICOM, se devuelve un valor decimal negativo **de Err.Number.** Para obtener más información, vea [**CAPICOM \_ ERROR \_ CODE**](capicom-error-code.md). Para obtener información sobre los valores decimales positivos **de Err.Number,** vea Winerror.h.
 
 
 ```VB

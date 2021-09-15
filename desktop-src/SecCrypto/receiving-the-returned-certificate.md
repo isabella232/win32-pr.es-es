@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: cb2efe504e2d09b3fae2b6d6293772bf67a3f038a5f9c43330707f541e2ba8f9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 73853250c581e460360f5490defc0c94e76e5be3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118900971"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476389"
 ---
 # <a name="receiving-the-returned-certificate"></a>Recepción del certificado devuelto
 
-Cuando la entidad de certificación (CA) ha comprobado la información de identidad del solicitante y se ha asegurado de que el solicitante es el propietario de la clave privada y de que los datos sobre ese solicitante son precisos, la entidad de certificación crea un certificado X.509, lo firma y lo empaqueta con cualquier otro certificado necesario (por ejemplo, el propio certificado de la entidad de certificación) en un mensaje.  y envía el mensaje al solicitante. El mensaje puede ser un mensaje PKCS 7 o una respuesta de CMC (las plantillas V2 tienen como resultado \# una respuesta de CMC).
+Cuando la entidad de certificación (CA) ha comprobado la información de identidad del solicitante y se ha asegurado de que el solicitante es el propietario de la clave privada y que los datos sobre ese solicitante son precisos, la entidad de certificación crea un certificado X.509, lo firma y lo empaqueta con cualquier otro certificado necesario (por ejemplo, el propio certificado de la entidad de certificación) en un mensaje.  y envía el mensaje al solicitante. El mensaje puede ser un mensaje PKCS 7 o una respuesta de CMC (las plantillas V2 tienen como resultado \# una respuesta de CMC).
 
 La aplicación receptora pasa el mensaje al Control de inscripción de certificados. A continuación, el Control de inscripción de certificados abre el mensaje y extrae los certificados. Se le pide al usuario un cuadro de diálogo que le pregunte si aceptará certificados autofirmados en el almacén "Raíz". Si el usuario acepta el certificado raíz, el resto de los certificados (excepto el certificado del solicitante) se colocan en el almacén "CA". El certificado del solicitante se coloca en el almacén de certificados especificado por el solicitante en la [**propiedad MyStoreName.**](/windows/win32/api/xenroll/nf-xenroll-icenroll-get_mystorename)
 

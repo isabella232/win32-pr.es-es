@@ -1,6 +1,6 @@
 ---
-title: Enumeración D3D12_DOWNLEVEL_PRESENT_FLAGS
-description: Marcas pasadas a ID3D12CommandQueueDownlevel::P método reenviado.
+title: D3D12_DOWNLEVEL_PRESENT_FLAGS enumeración
+description: Marcas que se pasan al método ID3D12CommandQueueDownlevel::P resent.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 08/29/2019
@@ -11,15 +11,15 @@ api_name:
 api_type:
 - HeaderDef
 ms.openlocfilehash: 1ce1536945748bae09fc7a0981c14c076fc6394e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105721438"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570889"
 ---
-# <a name="d3d12_downlevel_present_flags-enumeration"></a>D3D12 \_ \_ enumeración de marcas de presencia de nivel inferior \_
+# <a name="d3d12_downlevel_present_flags-enumeration"></a>Enumeración D3D12 \_ DOWNLEVEL \_ PRESENT \_ FLAGS
 
-Marcas pasadas a [**ID3D12CommandQueueDownlevel::P función reenviar**](id3d12commandqueuedownlevel-present.md) para modificar el comportamiento.
+Marcas que se pasan a [**la función ID3D12CommandQueueDownlevel::P resent**](id3d12commandqueuedownlevel-present.md) para modificar el comportamiento.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -33,23 +33,23 @@ enum D3D12_DOWNLEVEL_PRESENT_FLAGS
 
 ## <a name="constants"></a>Constantes
 
-**Marca de D3D12 de \_ nivel inferior \_ presente \_ \_ ninguno**
+**D3D12 \_ DOWNLEVEL \_ PRESENT \_ FLAG \_ NONE**
 
 No hay opciones seleccionadas.
 
-**D3D12 \_ \_ \_ marca de presentación \_ de nivel inferior \_ de espera para \_ VBLANK**
+**D3D12 \_ DOWNLEVEL \_ PRESENT \_ FLAG \_ WAIT \_ FOR \_ VBLANK**
 
-La operación **present** no se realizará hasta que se haya producido una sincronización de errores desde la última vez que **presente** el Ed.
+La **operación** Present no se hará hasta que se haya producido una VSync desde la última vez que **hizo** la presentación.
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Value |
 |--------|------------------|
-| Encabezado | d3d12downlevel. h |
+| Encabezado | d3d12downlevel.h |
 | Archivo DLL    | D3D12.dll (solo Windows 7) |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 * [ID3D12CommandQueueDownlevel](id3d12commandqueuedownlevel.md)
 * [Enumeraciones de Direct3D 12 en Windows 7](direct3d-12on7-enumerations.md)
-* [Referencia de Direct3D 12 en Windows 7 (d3d12downlevel. h)](direct3d-12on7-reference.md)
+* [Direct3D 12 en Windows 7 (d3d12downlevel.h)](direct3d-12on7-reference.md)
 * [Direct3D 12 en Windows 7](https://devblogs.microsoft.com/directx/porting-directx-12-games-to-windows-7/)

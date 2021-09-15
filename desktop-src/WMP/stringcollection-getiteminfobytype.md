@@ -5,7 +5,7 @@ ms.assetid: 32a25c69-9399-4857-84c1-143c529be58f
 keywords:
 - Método getItemInfoByType Reproductor de Windows Media
 - Método getItemInfoByType Reproductor de Windows Media , clase StringCollection
-- Clase StringCollection Reproductor de Windows Media , método getItemInfoByType
+- Clase StringCollection Reproductor de Windows Media método , getItemInfoByType
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b9d270ab746618f81f7c2e4135f7a6057f207d2cc89961ebe7c8f47d9fd1abd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d4b3aa8c5bc367095765f24f19f107dd7cb986ec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120123035"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570084"
 ---
 # <a name="stringcollectiongetiteminfobytype-method"></a>Método StringCollection.getItemInfoByType
 
@@ -93,7 +93,7 @@ Este método devuelve un **objeto Number**, **String**, **MetadataPicture** u **
 
 Para los atributos cuyo valor subyacente es **booleano,** este método devuelve la cadena "true" o "false".
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método admite atributos con varios valores y atributos con valores complejos. El **método getItemInfo** no admite atributos con varios valores o complejos.
 

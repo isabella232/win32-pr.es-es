@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Cardmod.h
-ms.openlocfilehash: 8038179c7337edaff0138fc46c34191f99821250808c4ace16dc76cdfafd3b19
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9879fa73f6bb45b56f433d7bca7765ab5fc0daef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119878965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476511"
 ---
 # <a name="card_directory_access_condition-enumeration"></a>Enumeración CARD \_ DIRECTORY \_ ACCESS \_ CONDITION
 
-La **enumeración CARD \_ DIRECTORY ACCESS \_ \_ CONDITION** especifica los permisos de control de acceso para un directorio en una [*tarjeta inteligente.*](../secgloss/s-gly.md)
+La **\_ enumeración CARD DIRECTORY \_ ACCESS \_ CONDITION** especifica los permisos de control de acceso para un directorio en una [*tarjeta inteligente.*](../secgloss/s-gly.md)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -70,7 +70,7 @@ Los administradores pueden leer, escribir y eliminar el directorio.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP, Windows xp \[ solo aplicaciones de escritorio\]<br/>                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 Windows Server 2003 \[\]<br/>            |
-| Header<br/>                   | <dl> <dt>Cardmod.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Cardmod.h</dt> </dl> |
 
 
 

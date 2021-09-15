@@ -4,12 +4,12 @@ ms.assetid: d28fe531-af4b-4b5e-ab67-47ef70f8fa5b
 title: Claves DSS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5497a2a02ac5614c056f819a3999ee3cca6c5da78229f92e57002ae6a9e401ea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2f6ab8adcc4d551c4196e99ce48f5afdd380dc3a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119875315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476481"
 ---
 # <a name="dss-keys"></a>Claves DSS
 

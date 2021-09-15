@@ -4,12 +4,12 @@ description: El archivo ACF permite personalizar la interfaz RPC de las aplicaci
 ms.assetid: 7d3fef5c-b645-4e10-b08d-b339025718b4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d234b30c25870dd7a21cb790cc4839236ab69093291285b64c870cf7c05cb11f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a9e803201004cd73a4be507aaba2affd20f1ea3d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120080845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476594"
 ---
 # <a name="the-acf-file"></a>El archivo ACF
 

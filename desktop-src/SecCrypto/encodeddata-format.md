@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 1b3d4316a2de24410a14d496b71e46746ea580109f8d6ede10c4c1a0f57fc22f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 435d0fdcd6e2bbd8c446c38f97012d820dbe5c7b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119874875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476454"
 ---
 # <a name="encodeddataformat-method"></a>Método EncodedData.Format
 
@@ -52,7 +52,7 @@ Valor booleano que indica si la cadena devuelta contiene varias líneas. Si **es
 
 Cadena legible que representa los datos codificados. Si CAPICOM no entiende los datos codificados, se devuelve una representación hexadecimal de los datos.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El formato de la cadena devuelta puede cambiar entre diferentes versiones de CAPICOM. No se base en ningún formato concreto de la aplicación.
 

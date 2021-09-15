@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 00b83cbbb167775a8de360c880f381b41f250abf0eab01c883bc7580be4d956f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3435ed832484042bfeb9229e4b46fa34441cb395
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120037545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476719"
 ---
 # <a name="iespquerystatus-method"></a>IESP::QueryStatus (método)
 
@@ -51,7 +51,7 @@ Puntero a una estructura [NETWORKSTATUS](networkstatus.md) devuelta que indica e
 
 Si el método es correcto, el valor devuelto es NMERR \_ SUCCESS.
 
-Si el método no se realiza correctamente, el valor devuelto es el código de error siguiente:
+Si el método no es correcto, el valor devuelto es el código de error siguiente:
 
 
 
@@ -63,7 +63,7 @@ Si el método no se realiza correctamente, el valor devuelto es el código de er
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se puede llamar a este método en cualquier momento después de llamar a [CreateNPPInterface.](createnppinterface.md) Puede llamar a este método para ver si el NPP está conectado a la red, para averiguar el estado de la captura actual y para ver si hay algún desencadenador pendiente.
 

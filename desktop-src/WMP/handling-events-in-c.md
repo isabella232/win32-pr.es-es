@@ -1,14 +1,14 @@
 ---
-title: Controlar eventos en C++
-description: Controlar eventos en C++
+title: Control de eventos en C++
+description: Control de eventos en C++
 ms.assetid: 5d9eb1c7-7022-4442-b67a-6a96fe5ce97f
 keywords:
 - Reproductor de Windows Media,C++
-- Reproductor de Windows Media de objetos, C++
-- object model,C++
+- Reproductor de Windows Media modelo de objetos,C++
+- modelo de objetos,C++
 - Reproductor de Windows Media Mobile,C++
 - Reproductor de Windows Media ActiveX control, C++
-- Reproductor de Windows Media Control de ActiveX móvil,C++
+- Reproductor de Windows Media Control ActiveX móvil,C++
 - ActiveX control, C++
 - Inserción de programas de C++
 - inserción, programas de C++
@@ -18,19 +18,19 @@ keywords:
 - events,C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf5d50be4622cee9ee455710f8b9d2e4cafc63d6560e08faf5c3deaddcdaccc2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 16cbef547ab2604244c5c204707a08eb87a6b70a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117748410"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476250"
 ---
-# <a name="handling-events-in-c"></a>Controlar eventos en C++
+# <a name="handling-events-in-c"></a>Control de eventos en C++
 
 Puede recibir eventos de Reproductor de Windows Media de dos maneras.
 
 -   A **través de IDispatch** mediante la **\_ interfaz WMPOCXEvents.** Esta es la interfaz que se va a usar en la mayoría de los escenarios de inserción.
--   A través **de la interfaz IWMPEvents.** Esta interfaz está disponible cuando el código está conectado al reproductor en modo completo, como al conectarse remotamente al control Reproductor de Windows Media o en un complemento de interfaz de usuario.
+-   A través **de la interfaz IWMPEvents.** Esta interfaz está disponible cuando el código está conectado al reproductor en modo completo, por ejemplo, al conectar el control Reproductor de Windows Media remoto o en un complemento de interfaz de usuario.
 
 En cada escenario, se empieza a escuchar eventos mediante puntos de conexión COM.
 
@@ -60,7 +60,7 @@ hr = m_spWMPPlayer->QueryInterface(&spConnectionContainer);
 
 
 
-A continuación, solicite el punto de conexión para la interfaz de eventos que desea usar. En primer lugar, el código de ejemplo siguiente intenta usar **IWMPEvents**. Si esa interfaz no está disponible, usa **\_ WMPOCXEvents**.
+A continuación, solicite el punto de conexión para la interfaz de eventos que desea usar. El código de ejemplo siguiente intenta primero usar **IWMPEvents**. Si esa interfaz no está disponible, usa **\_ WMPOCXEvents**.
 
 
 ```C++
@@ -108,7 +108,7 @@ if (m_spConnectionPoint)
 
 
 
-La implementación de los controladores de eventos **para IWMPEvents** y **\_ WMPOCXEvents** difiere. Para **IWMPEvents**, debe implementar una función para controlar todos los eventos definidos por la interfaz, incluso si no piensa usar el evento .
+La implementación de los controladores de eventos **para IWMPEvents** y **\_ WMPOCXEvents** difiere. Para **IWMPEvents**, debe implementar una función para controlar todos los eventos definidos por la interfaz, incluso si no tiene previsto usar el evento .
 
 
 ```C++
@@ -122,7 +122,7 @@ void STDMETHODCALLTYPE AudioLanguageChange( long LangID ){ return; }
 
 
 
-Para implementar **\_ controladores WMPOCXEvents,** debe usar **IDispatch::Invoke**, que es una implementación de controlador de eventos única para todos los eventos que se suceden en la interfaz **IDispatch.** Esto significa que puede elegir controlar solo determinados eventos y omitir otros. En el código de ejemplo siguiente se muestra un **\_ controlador WMPOCXEvents,** mediante **Invoke**, que controla solo los eventos **OpenStateChange** y **PlayStateChange:**
+Para implementar **\_ controladores WMPOCXEvents,** debe usar **IDispatch::Invoke**, que es una implementación de controlador de eventos única para todos los eventos que se suceden en la **interfaz IDispatch.** Esto significa que puede elegir controlar solo determinados eventos y omitir otros. El código de ejemplo siguiente muestra un **\_ controlador WMPOCXEvents,** mediante **Invoke**, que controla solo los eventos **OpenStateChange** y **PlayStateChange:**
 
 
 ```C++
@@ -164,21 +164,21 @@ HRESULT CMyClass::Invoke(
 
 
 
-En el código de ejemplo anterior, cada caso simplemente llama al controlador **IWMPEvents** para el evento correspondiente. Si el código solo controla **\_ WMPOCXEvents,** simplemente puede llamar a una función personalizada o controlar el evento en línea después de la instrucción **case.**
+En el código de ejemplo anterior, cada caso simplemente llama al controlador **IWMPEvents** para el evento correspondiente. Si el código solo controla **\_ WMPOCXEvents,** simplemente puede llamar a una función personalizada o controlar el evento en línea después de la **instrucción case.**
 
-## <a name="receiving-events-from-windows-media-player-10-mobile"></a>Recepción de eventos desde Reproductor de Windows Media 10 Mobile
+## <a name="receiving-events-from-windows-media-player-10-mobile"></a>Recepción de eventos de Reproductor de Windows Media 10 Mobile
 
-El Reproductor de Windows Media 10 Mobile solo admite la recepción de determinados eventos a través de **\_ WMPOCXEvents** e **IWMPEvents**. Para obtener más información, consulte la documentación de **IWMPEvents**.
+El Reproductor de Windows Media 10 Mobile solo admite la recepción de determinados eventos a través de **\_ WMPOCXEvents** **e IWMPEvents**. Para obtener más información, consulte la documentación de **IWMPEvents**.
 
 ## <a name="samples"></a>Ejemplos
 
-El Reproductor de Windows Media instalación instala un ejemplo que muestra el control de eventos. Consulte el ejemplo WMPHost para obtener más información.
+El Reproductor de Windows Media de instalación instala un ejemplo que muestra el control de eventos. Consulte el ejemplo WMPHost para obtener más información.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Ejemplos**](samples.md)
+[**Muestras**](samples.md)
 </dt> <dt>
 
 [**Usar el control Reproductor de Windows Media en un programa de C++**](using-the-windows-media-player-control-in-a-c---program.md)

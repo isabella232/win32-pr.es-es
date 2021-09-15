@@ -4,12 +4,12 @@ ms.assetid: fb2c487a-d395-45eb-9010-936a61a414d0
 title: Windows Solución de problemas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd80becbcb54036872a36e04aef5e6c5a466fd8edc383217f41a5dc1b1758973
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ff332afe1b586b05866d78b49013a264e815f3eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119795885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571025"
 ---
 # <a name="windows-troubleshooting"></a>Windows Solución de problemas
 
@@ -28,7 +28,7 @@ ms.locfileid: "119795885"
 
 ## <a name="description"></a>Descripción
 
-Una nueva Windows centro de acciones 7 (anteriormente conocido como Centro de soluciones), Windows Solución de problemas, ofrece una experiencia sistemática de solución de problemas para el usuario. El Centro de acciones es uno de los cinco iconos anclados en el systray. Windows La solución de problemas le permite examinar o buscar paquetes de solución de problemas incluidos y para los paquetes de solución de problemas almacenados en un servidor de Microsoft en Internet: una mejor experiencia cuando se conecta (BWC). Puede seleccionar y ejecutar un paquete de solución de problemas para intentar resolver su problema. Si no puede identificar una solución al problema, tiene la opción de buscar ayuda, contenido de la comunidad y artículos de soporte técnico u otros paquetes de solución de problemas para el contenido relacionado pertinente. En caso de que no proporcione una respuesta al problema, puede restaurar el equipo a una hora anterior a cuando se produjo el problema u obtener ayuda a través de asistencia remota. La intención es permitirle encontrar una solución al problema de forma fácil y rápida.
+Una nueva Windows centro de acciones 7 (anteriormente conocido como Centro de soluciones), Windows Solución de problemas, ofrece una experiencia sistemática de solución de problemas para el usuario. El Centro de acciones es uno de los cinco iconos anclados en el systray. Windows La solución de problemas le permite examinar o buscar paquetes de solución de problemas incluidos y para los paquetes de solución de problemas almacenados en un servidor de Microsoft en Internet: una experiencia mejor cuando se conecta (BWC). Puede seleccionar y ejecutar un paquete de solución de problemas para intentar resolver su problema. Si no puede identificar una solución al problema, tiene la opción de buscar ayuda, contenido de la comunidad y artículos de soporte técnico u otros paquetes de solución de problemas para el contenido relacionado pertinente. En caso de que no proporcione una respuesta al problema, puede restaurar el equipo a una hora anterior a cuando se produjo el problema u obtener ayuda a través de asistencia remota. La intención es permitirle encontrar una solución al problema de forma fácil y rápida.
 
 ## <a name="usage"></a>Uso
 

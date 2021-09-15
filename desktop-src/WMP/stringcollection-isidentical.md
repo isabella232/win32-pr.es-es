@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aded9879ded384feaa5bd12bd167c1eab0e1a0f764a3cf4370b84ca4b2422ff7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ec4035e748921afd77865fa29c9a8507abe55128
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120123025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570081"
 ---
 # <a name="stringcollectionisidentical-method"></a>Método StringCollection.isIdentical
 
@@ -53,7 +53,7 @@ bRetVal = StringCollection.isIdentical(
 
 Este método devuelve un **valor booleano**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 

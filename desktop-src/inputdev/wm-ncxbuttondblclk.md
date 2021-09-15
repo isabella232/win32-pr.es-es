@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46b5b0deb3efb84af2bdd862377411d86328ee7ef72242a6e27759b819cdab2e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1455f6d6c2fa40f34bbfbe00e0c7a30daa52f375
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118482645"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572916"
 ---
 # <a name="wm_ncxbuttondblclk-message"></a>Mensaje \_ WM NCXBUTTONDBLCLK
 
@@ -69,7 +69,7 @@ Puntero a una [**estructura POINTS**](/previous-versions//dd162808(v=vs.85)) que
 
 Si una aplicación procesa este mensaje, debe devolver **TRUE**. Para obtener más información sobre cómo procesar el valor devuelto, vea la sección Comentarios.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use el código siguiente para obtener la información en el *parámetro wParam.*
 
@@ -96,7 +96,7 @@ yPos = GET_Y_LPARAM(lParam);
 
  
 
-De forma predeterminada, la [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) prueba el punto especificado para obtener la posición del cursor y realiza la acción adecuada. Si procede, envía el mensaje [**\_ SYSCOMMAND de WM**](/windows/desktop/menurc/wm-syscommand) a la ventana.
+De forma predeterminada, la función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) prueba el punto especificado para obtener la posición del cursor y realiza la acción adecuada. Si procede, envía el mensaje [**\_ SYSCOMMAND de WM**](/windows/desktop/menurc/wm-syscommand) a la ventana.
 
 Una ventana no necesita tener el estilo **\_ DBLCLKS** de CS para recibir mensajes **WM \_ NCXBUTTONDBLCLK.** El sistema genera un mensaje **\_ WM NCXBUTTONDBLCLK** cuando el usuario presiona, suelta y vuelve a presionar un botón X dentro del límite de tiempo de doble clic del sistema. Al hacer doble clic en uno de estos botones, se generan cuatro mensajes: [**WM \_ NCXBUTTONDOWN,**](wm-ncxbuttondown.md) [**WM \_ NCXBUTTONUP,**](wm-ncxbuttonup.md) **WM \_ NCXBUTTONDBLCLK** y **WM \_ NCXBUTTONUP** de nuevo.
 
@@ -106,7 +106,7 @@ A diferencia de los mensajes [**\_ WM NCLBUTTONDBLCLK,**](wm-nclbuttondblclk.md)
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -154,7 +154,7 @@ A diferencia de los mensajes [**\_ WM NCLBUTTONDBLCLK,**](wm-nclbuttondblclk.md)
 [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**Puntos**](/previous-versions//dd162808(v=vs.85))
+[**PUNTOS**](/previous-versions//dd162808(v=vs.85))
 </dt> </dl>
 
  

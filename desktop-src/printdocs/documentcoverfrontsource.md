@@ -1,15 +1,15 @@
 ---
-description: Obtenga información sobre el parámetro DocumentCoverFrontSource. Este tema no es actual. Para obtener la información más reciente, vea La especificación del esquema de impresión.
+description: Obtenga información sobre el parámetro DocumentCoverFrontSource. Este tema no está al día. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: ec41d0c8-ea77-44ac-a02b-6a48237b324f
 title: DocumentCoverFrontSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a2c62b2b5af5caad99d3fe99f6e1c56093e78cd1fd24d4847ac8206ff3a6be9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: afeb6ecb089eb271e0b8fff136e73a20194f0c8f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119949855"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570581"
 ---
 # <a name="documentcoverfrontsource"></a>DocumentCoverFrontSource
 
@@ -84,7 +84,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

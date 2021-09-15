@@ -4,22 +4,22 @@ ms.assetid: 8667305e-ca76-49cb-878e-07814431e6db
 title: Varias aplicaciones de supervisión en sistemas diferentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4c597261063f49b6e6856576e3528698291348afb2b8478d854a824b92d2cc4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec5d470861136ac9362d986b8647c86abee7021b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119037723"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475922"
 ---
 # <a name="multiple-monitor-applications-on-different-systems"></a>Varias aplicaciones de supervisión en sistemas diferentes
 
 Para que la aplicación monitoraware múltiple funcione en sistemas con y sin compatibilidad con varios monitores, vincule la aplicación con Multimon.h. También debe definir COMPILE \_ MULTIMON \_ STUBS en exactamente un archivo C. Si el sistema no admite varios monitores, devuelve los valores predeterminados de [**GetSystemMetrics**](/windows/win32/api/winuser/nf-winuser-getsystemmetrics) y las funciones de supervisión múltiples actúan como si solo hubiera una pantalla. En varios sistemas de supervisión, la aplicación funcionará con normalidad.
 
-Dado que las coordenadas negativas pueden ocurrir fácilmente en un sistema multimonitor, debe recuperar las coordenadas empaquetadas en lParam mediante las macros **GET \_ X \_ LPARAM** y **GET Y \_ \_ LPARAM.**
+Dado que las coordenadas negativas pueden ocurrir fácilmente en un sistema multimonitor, debe recuperar las coordenadas que se empaquetan en lParam mediante las macros **GET \_ X \_ LPARAM** y **GET Y \_ \_ LPARAM.**
 
 No use coordenadas negativas o coordenadas mayores que SM \_ CXSCREEN y SM \_ CYSCREEN para ocultar una ventana. Windows que usan estos límites para ocultar pueden aparecer en otro monitor. Del mismo modo, no use estos límites para mantener visible una ventana, ya que esto puede hacer que una ventana se ajuste al monitor principal. Es mejor volver a examinar las aplicaciones existentes para estos problemas. Sin embargo, puede minimizar los problemas en las aplicaciones existentes ejecutando la aplicación en el monitor principal o manteniendo el monitor principal en la esquina superior izquierda de la pantalla virtual.
 
-Tenga en cuenta que SM \_ CXMAXTRACK y SM CYMAXTRACK están definidos para el \_ escritorio, no solo para un monitor. Windows estos límites es posible que deba volver a definirse.
+Tenga en cuenta que SM \_ CXMAXTRACK y SM CYMAXTRACK están definidos para el \_ escritorio, no solo para un monitor. Windows puede que sea necesario volver a definir el uso de estos límites.
 
 Es posible que una ventana primaria o relacionada no esté en el mismo monitor que una ventana secundaria. Para buscar el monitor de una ventana, las aplicaciones deben usar la [**función MonitorFromWindow.**](/windows/desktop/api/Winuser/nf-winuser-monitorfromwindow)
 

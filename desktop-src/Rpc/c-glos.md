@@ -5,16 +5,16 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: da1ee843-c33e-42a1-bcaf-6cdb4834e70b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 014aa77aac01be89656859f5d2b05ee352e08ab5b086fef768fc0e187880532f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f15eb37af87fd36dd31f3e9e106904b4ce734c15
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118932289"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476601"
 ---
 # <a name="c-rpc"></a>C (RPC)
 
-[A](a-glos.md) [B](b-glos.md) C [D](d-glos.md) [E](e-glos.md) [F](f-glos.md) G H [I](i-glos.md) J K [L](l-glos.md) [M N](m-glos.md) [](n-glos.md) [O](o-glos.md) [P](p-glos.md) [Q](q.md) [R](r-glos.md) [S](s-glos.md) [T](t-glos.md) [U](u-glos.md) [V](v-glos.md) [W](w-glos.md) X Y Z
+[A](a-glos.md) [B](b-glos.md) C [D](d-glos.md) [E](e-glos.md) [F](f-glos.md) G H [I](i-glos.md) J K L [M](l-glos.md) [N](m-glos.md) [](n-glos.md) [O](o-glos.md) [P P](p-glos.md) [Q](q.md) [R](r-glos.md) [S](s-glos.md) [T](t-glos.md) [U](u-glos.md) [V](v-glos.md) [W](w-glos.md) X Y Z
 
 <dl> <dt>
 
@@ -28,7 +28,7 @@ Proveedor de servicios de nombres para el entorno de computación distribuida de
 <span id="_rpc_client_stub_glos"></span><span id="_RPC_CLIENT_STUB_GLOS"></span>**código auxiliar de cliente**
 </dt> <dd>
 
-Código fuente del lenguaje C generado por MIDL. Contiene todas las funciones necesarias para que la aplicación cliente realice llamadas a procedimientos remotos mediante el modelo de una llamada de función tradicional en una aplicación independiente. El código auxiliar del cliente es responsable de serializar los parámetros de entrada y desmarque los parámetros de salida. Consulte también código [*auxiliar de*](s-glos.md)servidor , código auxiliar [*de proxy.*](p-glos.md)
+Código fuente del lenguaje C generado por MIDL. Contiene todas las funciones necesarias para que la aplicación cliente realice llamadas a procedimientos remotos mediante el modelo de una llamada de función tradicional en una aplicación independiente. El código auxiliar de cliente es responsable de serializar los parámetros de entrada y desmarque de los parámetros de salida. Consulte también código [*auxiliar de*](s-glos.md)servidor , código auxiliar [*de proxy.*](p-glos.md)
 
 </dd> <dt>
 
@@ -49,11 +49,11 @@ Protocolo de comunicaciones o transporte que proporciona un circuito virtual a t
 <span id="_rpc_connectionless_glos"></span><span id="_RPC_CONNECTIONLESS_GLOS"></span>**sin conexión**
 </dt> <dd>
 
-Consulte [*datagrama*](d-glos.md).
+Vea [*datagrama*](d-glos.md).
 
 </dd> <dt>
 
-<span id="_rpc_context_rundown_glos"></span><span id="_RPC_CONTEXT_RUNDOWN_GLOS"></span>**desmontaje de contexto**
+<span id="_rpc_context_rundown_glos"></span><span id="_RPC_CONTEXT_RUNDOWN_GLOS"></span>**resumen de contexto**
 </dt> <dd>
 
 Notificación del servidor que es el resultado de una terminación inesperada del enlace entre las aplicaciones cliente y servidor.

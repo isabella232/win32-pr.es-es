@@ -4,12 +4,12 @@ ms.assetid: 10c33787-72d3-4e5d-b4dd-633b3fd29903
 title: Firmas digitales
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76dfbf31de87edb2f62531266ee62378cadefa437ebd79913ac66bfc718d612d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 299d84d1a1c71b6b6d709dbe67b4fa2c81f4b54e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119875391"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476488"
 ---
 # <a name="digital-signatures"></a>Firmas digitales
 

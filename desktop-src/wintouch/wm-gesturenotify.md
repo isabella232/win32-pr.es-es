@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d474f356310a0d7949cecf36e7af9cb586a76029171dfe27c1679970e481ed1b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e900e4b607760df16938080a49f97a3ab0cf2ed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118435241"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570269"
 ---
-# <a name="wm_gesturenotify-message"></a>WM \_ GESTURENOTIFY message
+# <a name="wm_gesturenotify-message"></a>GESTO \_ DE WMNotificar mensaje
 
 Le ofrece la oportunidad de establecer la configuración de gestos.
 
@@ -47,7 +47,7 @@ Puntero a [**una estructura GESTURENOTIFYSTRUCT**](/windows/win32/api/winuser/ns
 
 Se debe devolver un valor de [DefWindowProc](/windows/win32/api/winuser/nf-winuser-defwindowproca).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando se recibe el mensaje **\_ WM GESTURENOTIFY,** la aplicación puede usar [**SetGestureConfig**](/windows/desktop/api/winuser/nf-winuser-setgestureconfig) para especificar los gestos que se recibirán. Este mensaje siempre se debe burbujas con la [función DefWindowProc.](/windows/win32/api/winuser/nf-winuser-defwindowproca)
 
@@ -83,15 +83,15 @@ En el ejemplo siguiente se muestra cómo habilitar todos los gestos. Para obtene
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                               |
+| Cliente mínimo compatible<br/> | Windows 7 \[ aplicaciones de escritorio\]<br/>                                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                  |
-| Header<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

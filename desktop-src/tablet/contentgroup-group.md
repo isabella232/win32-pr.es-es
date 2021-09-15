@@ -1,17 +1,17 @@
 ---
 description: Define un grupo que contiene un conjunto de contenido agrupado en una nota de diario.
 ms.assetid: e2561be1-03ce-41f7-9ad4-197d75411c48
-title: Grupo de contenido
+title: Grupo ContentGroup
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0085cc52a8fc29d3a51f4d1e1c8f42128b63db9e166a7a1c436dc15bff70a36
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 02e4291da1912c43674871c06fb803e1936f7178
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120009015"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570429"
 ---
-# <a name="contentgroup-group"></a>Grupo de contenido
+# <a name="contentgroup-group"></a>Grupo ContentGroup
 
 Define un grupo que contiene un conjunto de contenido agrupado en una nota de diario.
 
@@ -46,18 +46,18 @@ Define un grupo que contiene un conjunto de contenido agrupado en una nota de di
 
 [**Imagen**](docimage-element.md)
 
-[**Bandera**](flag-element.md)
+[**Marca**](flag-element.md)
 
 ## <a name="attributes"></a>Atributos
 
 
 
-| Atributo  | Tipo                      | Requerido | Descripción                                                                                        | PossibleValues                       |
+| Atributo  | Tipo                      | Obligatorio | Descripción                                                                                        | PossibleValues                       |
 |------------|---------------------------|----------|----------------------------------------------------------------------------------------------------|--------------------------------------|
-| **Left**   | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto situado más a la izquierda en el cuadro de límite del elemento.<br/> | Cualquier número entero.<br/>              |
-| **Top** (Principales)    | **xs:integer**            | Requerido | Distancia desde el origen hasta el punto superior del cuadro de límite del elemento.<br/>  | Cualquier número entero.<br/>              |
-| **Width**  | **xs:nonNegativeInteger** | Requerido | Ancho del cuadro de límite para el elemento.<br/>                                          | Cualquier entero no negativo.<br/> |
-| **Height** | **xs:nonNegativeInteger** | Requerido | Alto del cuadro de límite para el elemento.<br/>                                         | Cualquier entero no negativo.<br/> |
+| **Left**   | **xs:integer**            | Obligatorio | Distancia desde el origen hasta el punto más a la izquierda en el cuadro de límite del elemento.<br/> | Cualquier número entero.<br/>              |
+| **Top** (Principales)    | **xs:integer**            | Obligatorio | Distancia desde el origen hasta el punto superior del cuadro de límite del elemento.<br/>  | Cualquier número entero.<br/>              |
+| **Width**  | **xs:nonNegativeInteger** | Obligatorio | Ancho del cuadro de límite del elemento.<br/>                                          | Cualquier entero no negativo.<br/> |
+| **Height** | **xs:nonNegativeInteger** | Obligatorio | Alto del cuadro de límite del elemento.<br/>                                         | Cualquier entero no negativo.<br/> |
 
 
 

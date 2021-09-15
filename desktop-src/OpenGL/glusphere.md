@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 590c4b7335fe0596c5b5b0f3dc709998fafc21f7be78f493a05f6520ed9fd368
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 899ff4833c705aae34fdb7830c264fee91414116
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119488735"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476698"
 ---
 # <a name="glusphere-function"></a>función gluSphere
 
@@ -75,19 +75,19 @@ Número de subdivisiones a lo largo del eje Z (similar a las líneas de latitud)
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La **función gluSphere** dibuja una esfera del radio dado centrada alrededor del origen. La esfera se subdivide alrededor del eje Z en segmentos y a lo largo del eje Z en pilas (similares a las líneas de longitud y latitud).
+La **función gluSphere** dibuja una esfera del radio dado centrada alrededor del origen. La esfera se subdivide alrededor del eje z en segmentos y a lo largo del eje Z en pilas (similares a las líneas de longitud y latitud).
 
 Si la orientación se establece en GLU \_ OUTSIDE (con **gluQuadricOrientation),** cualquier punto de normal generado lejos del centro de la esfera. De lo contrario, apuntan hacia el centro de la esfera.
 
-Si texturing está activado (con **gluQuadricTexture):** las coordenadas de textura se generan para que *t* oscila entre 0,0 a *z* = -*radius* a 1,0 en el radio *z*(t aumenta linealmente a lo largo de las líneas de línea); y s oscila entre 0,0 en el eje  =   Y positivo, a 0,25 en el eje X positivo, a 0,5 en el eje Y negativo, a 0,75 en el eje X negativo y a 1,0 en el eje Y positivo. 
+Si texturing está activado (con **gluQuadricTexture):** las coordenadas de textura se generan para que *t* oscila entre 0,0 en *z* =*-* radius a 1,0 en el radio *z*(t aumenta linealmente a lo largo de las líneas de línea); y s oscila entre 0,0 en el eje  =   Y positivo, a 0,25 en el eje X positivo, a 0,5 en el eje Y negativo, a 0,75 en el eje X negativo y a 1,0 en el eje Y positivo. 
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |

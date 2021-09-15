@@ -5,12 +5,12 @@ ms.assetid: 99DDA586-ACFD-4326-B25E-EF8875901690
 ms.localizationpriority: low
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 152b5826bf39884dd8de2bb9c7eac51dba6c1b116b443b84a6b8b4acbc58d2af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7ab4fdf9e0ca40370fd76633785a377153b32b8c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119124193"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570873"
 ---
 # <a name="11on12-functions"></a>Funciones de 11on12
 

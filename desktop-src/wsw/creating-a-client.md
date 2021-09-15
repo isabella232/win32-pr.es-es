@@ -1,19 +1,19 @@
 ---
 title: Creación de un cliente
-description: La creación de un cliente para servicios web se simplifica en gran medida en WWSAPI mediante service model API y WsUtil.exe herramienta.
+description: La creación de un cliente para servicios web se simplifica en gran medida en WWSAPI mediante service model API y la herramienta WsUtil.exe servicio.
 ms.assetid: 09f489e8-958d-4bc5-a232-aa59bd75333a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50ca04ef5fbbeef76cd32a0b6523391deb19957479cd5f332715972f3b5bfbc8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 606a68f574a9ad79d15f3ddd48247f93a5414250
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119026563"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570117"
 ---
 # <a name="creating-a-client"></a>Creación de un cliente
 
-La creación de un cliente para servicios web se simplifica en gran medida en WWSAPI mediante [service model](service-model-layer-overview.md) API y [WsUtil.exe](wsutil-compiler-tool.md) herramienta. El modelo de servicio proporciona una API que permite al cliente enviar y recibir [mensajes](message.md) a través de un [canal como](channel.md) llamadas al método C. La herramienta WsUtil genera encabezados y asistentes para implementar el cliente. Estos encabezados incluyen los tipos y prototipos de función para las funciones de C que representan los servicios ofrecidos por el servicio web de destino. Los asistentes se usan para crear el proxy de servicio, que contiene la información de enlace y [la](endpoint-address.md) dirección del punto de conexión para el servicio.
+La creación de un cliente para servicios web se simplifica enormemente en WWSAPI mediante [service model](service-model-layer-overview.md) API [ yWsUtil.exe](wsutil-compiler-tool.md) herramienta. El modelo de servicio proporciona una API que permite al cliente enviar y recibir [mensajes](message.md) a través de un [canal como](channel.md) llamadas al método C. La herramienta WsUtil genera encabezados y asistentes para implementar el cliente. Estos encabezados incluyen los tipos y prototipos de función para las funciones de C que representan los servicios ofrecidos por el servicio web de destino. Los asistentes se usan para crear el proxy de servicio, que contiene la información de enlace y [la](endpoint-address.md) dirección del punto de conexión para el servicio.
 
 ## <a name="using-wsutil-to-generate-headers-and-helpers"></a>Usar WsUtil para generar encabezados y asistentes
 
@@ -39,7 +39,7 @@ HRESULT BasicHttpBinding_ICalculator_CreateServiceProxy(
 
 
 
-Incorpore este asistente en el código y pase un identificador proxy de servicio de [WS \_ \_ ](ws-service-proxy.md) para recibir el identificador al proxy de servicio creado. En el escenario más sencillo, en el que solo se pasan un identificador de proxy de servicio y un objeto de error a la función, la llamada tiene un aspecto similar al siguiente.
+Incorpore este asistente en el código y pase un identificador de [ \_ \_ proxy](ws-service-proxy.md) de servicio de WS para recibir el identificador al proxy de servicio creado. En el escenario más sencillo, en el que solo se pasan un identificador de proxy de servicio y un objeto de error a la función, la llamada tiene un aspecto similar al siguiente.
 
 
 ```C++

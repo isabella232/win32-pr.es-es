@@ -4,23 +4,23 @@ description: Recuperación de la interfaz de grabación de CD
 ms.assetid: d52f7b27-a327-4656-8dc2-0b075264d295
 keywords:
 - Reproductor de Windows Media,cds
-- Reproductor de Windows Media de objetos, cds
+- Reproductor de Windows Media modelo de objetos, cds
 - modelo de objetos, grabación de CD
-- Reproductor de Windows Media ActiveX, cds
-- ActiveX control, grabación de CD
+- Reproductor de Windows Media ActiveX control, grabación de CD
+- ActiveX control, cds
 - Reproductor de Windows Media Control de ActiveX móvil, grabación de CD
-- Reproductor de Windows Media Móvil, grabación de CD
-- Cds,recuperación de la interfaz IWMPCdromCollection
-- cds de grabación, recuperación de la interfaz IWMPCdromCollection
-- IWMPCdromCollection (interfaz)
+- Reproductor de Windows Media Móvil, cds
+- Grabación de CD, recuperación de la interfaz IWMPCdromCollection
+- cds, recuperar la interfaz IWMPCdromCollection
+- Interfaz IWMPCdromCollection
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 84013d5df4244fc30c9cb52e3447d15f60e559befe1223f0964934dd8ca1e1cf
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b63763f9dd99bbaf88ae099edb53ba072cd1a25e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120123205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476188"
 ---
 # <a name="retrieving-the-cd-burning-interface"></a>Recuperación de la interfaz de grabación de CD
 

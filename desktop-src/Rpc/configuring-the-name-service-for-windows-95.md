@@ -4,12 +4,12 @@ description: Windows 95 no usa Microsoft Locator.
 ms.assetid: 0903681c-9cbf-4c5c-8637-be7f6501cd14
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d50f1dc3d54c3b1890b2f0b4cfc1f7285044fd895bbfb692cba1db909a2bd26
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0910a2cdc2d7a0543e07591ff37523169c311a3e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118931522"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476600"
 ---
 # <a name="configuring-the-name-service-for-windows-95"></a>Configuración del servicio de nombres para Windows 95
 

@@ -1,11 +1,11 @@
 ---
-title: Método IMediaRendererFactory CreateMediaRendererAsync
-description: Crea de forma asincrónica una nueva instancia de un objeto que implementa la interfaz IMediaRenderer mediante el nombre de dispositivo único (UDN) especificado.
+title: Método CreateMediaRendererAsync de IMediaRendererFactory
+description: Crea de forma asincrónica una nueva instancia de un objeto que implementa la interfaz IMediaRenderer con el nombre de dispositivo único (UDN) especificado.
 ms.assetid: FD1242F8-4C2E-4027-B1DE-5FD69557684C
 keywords:
 - Método CreateMediaRendererAsync de Media Streaming API
 - Método CreateMediaRendererAsync de Media Streaming API, interfaz IMediaRendererFactory
-- Interfaz IMediaRendererFactory Media Streaming API, método CreateMediaRendererAsync
+- IMediaRendererFactory interface Media Streaming API , método CreateMediaRendererAsync
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3e459324d96f031ab3433f0d8bfe8ba5de562d76c95f51affd7b72d130655fab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b152e5889ad83440a48e178be0b89a97d2a9f664
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118735494"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570621"
 ---
 # <a name="imediarendererfactorycreatemediarendererasync-method"></a>IMediaRendererFactory::CreateMediaRendererAsync (método)
 
-Crea de forma asincrónica una nueva instancia de un objeto que implementa la [**interfaz IMediaRenderer**](imediarenderer.md) mediante el nombre de dispositivo único (UDN) especificado.
+Crea de forma asincrónica una nueva instancia de un objeto que implementa la interfaz [**IMediaRenderer**](imediarenderer.md) con el nombre de dispositivo único (UDN) especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -45,7 +45,7 @@ HRESULT CreateMediaRendererAsync(
 *deviceIdentifier* \[ En\]
 </dt> <dd>
 
-HSTRING que contiene un UDN que identifica el dispositivo DMR DLNA para el que se creará una instancia de [**IMediaRenderer.**](imediarenderer.md)
+HSTRING que contiene un UDN que identifica el dispositivo DMR de DLNA para el que se creará una instancia de [**IMediaRenderer.**](imediarenderer.md)
 
 </dd> <dt>
 

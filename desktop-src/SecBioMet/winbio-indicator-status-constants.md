@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fd05d279bd11eafda89eed436c94d6141e97ad0eb9d2fc426d5c89000f36414
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7693fbd2b9b37067738774d172f4bb482edb06e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118910018"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476527"
 ---
-# <a name="winbio_indicator_status-constants"></a>Constantes DE \_ ESTADO DE INDICADOR DE WINBIO \_
+# <a name="winbio_indicator_status-constants"></a>Constantes DE \_ ESTADO DEL INDICADOR DE WINBIO \_
 
-Los valores siguientes se pueden usar para establecer una luz indicadora. De forma predeterminada, los sensores no tendrán una luz encendido, pero las aplicaciones pueden usar estos valores para habilitar o deshabilitar las luces indicadoras. El **valor DE ESTADO DEL SENSOR \_ \_ WINBIO** proporciona más detalles sobre el estado de una luz indicadora que está encendido. Para obtener más información, vea las siguientes funciones:
+Los valores siguientes se pueden usar para establecer una luz indicadora. De forma predeterminada, los sensores no tendrán una luz, pero las aplicaciones pueden usar estos valores para habilitar o deshabilitar las luces indicadoras. El **valor DE ESTADO DEL SENSOR \_ \_ DE WINBIO** proporciona más detalles sobre el estado de una luz indicadora que está encendido. Para obtener más información, vea las siguientes funciones:
 
 -   [**SensorAdapterSetIndicatorStatus**](/windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_set_indicator_status_fn)
 -   [**SensorAdapterGetIndicatorStatus**](/windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_get_indicator_status_fn)
@@ -32,8 +32,8 @@ Los valores siguientes se pueden usar para establecer una luz indicadora. De for
 
 | Constante                                                                                                                                                                            | Descripción                                   |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------|
-| <span id="WINBIO_INDICATOR_ON"></span><span id="winbio_indicator_on"></span><dl> <dt>**INDICADOR WINBIO \_ \_ ON**</dt> </dl>    | La luz indicadora del sensor está encendido.<br/>  |
-| <span id="WINBIO_INDICATOR_OFF"></span><span id="winbio_indicator_off"></span><dl> <dt>**INDICADOR WINBIO \_ \_ DESACTIVADO**</dt> </dl> | La luz indicadora del sensor está apagada.<br/> |
+| <span id="WINBIO_INDICATOR_ON"></span><span id="winbio_indicator_on"></span><dl> <dt>**INDICADOR WINBIO \_ \_ ON**</dt> </dl>    | La luz del indicador del sensor está encendido.<br/>  |
+| <span id="WINBIO_INDICATOR_OFF"></span><span id="winbio_indicator_off"></span><dl> <dt>**INDICADOR WINBIO \_ \_ DESACTIVADO**</dt> </dl> | La luz del indicador del sensor está apagada.<br/> |
 
 
 
@@ -41,15 +41,15 @@ Los valores siguientes se pueden usar para establecer una luz indicadora. De for
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 \[ aplicaciones de escritorio\]<br/>                                                                    |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
-| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

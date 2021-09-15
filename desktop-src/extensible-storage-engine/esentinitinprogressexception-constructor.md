@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0f30fdf1d7b5d51b7e1c2c29f52631f6fa5fab956822895ec414fde7ccf83a1e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad24bef60fe1cc29114d9899698feaa7a7d41af3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119972707"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476006"
 ---
 # <a name="esentinitinprogressexception-constructor"></a>Constructor EsentInitInProgressException
 

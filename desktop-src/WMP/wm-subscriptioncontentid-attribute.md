@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c976ca7bcd9eed8e29e7be3d818a3f8fd5fe5d5904dfa5e058faa55ce06d301
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9f10448686e299c20fc1cd44f716b805910e8f5d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120000895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571076"
 ---
 # <a name="wmsubscriptioncontentid-attribute"></a>Atributo WM/SubscriptionContentID
 
@@ -29,7 +29,7 @@ El **atributo WM/SubscriptionContentID** es el identificador de contenido de la 
 -   [Atributos de archivo multimedia Windows uso frecuente](commonly-used-windows-media-file-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se almacena tanto en la biblioteca como en el archivo multimedia digital.
 
@@ -49,7 +49,7 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

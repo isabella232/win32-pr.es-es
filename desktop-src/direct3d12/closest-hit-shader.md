@@ -1,5 +1,5 @@
 ---
-description: Sombreador que se invoca cuando está habilitado y se ha determinado el acierto más cercano o ha finalizado la búsqueda de interseccións de Ray.
+description: Sombreador que se invoca cuando está habilitado y se ha determinado el impacto más cercano o se ha finalizado la búsqueda de intersección de rayos.
 ms.assetid: ''
 title: Sombreador del acierto más cercano
 ms.localizationpriority: low
@@ -13,17 +13,17 @@ api_name:
 api_type:
 - NA
 ms.openlocfilehash: 347ad66dce0a81b929d5dc3c82051bf84226e723
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105714881"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570913"
 ---
 # <a name="closest-hit-shader"></a>Sombreador del acierto más cercano
 
-Sombreador que se invoca cuando está habilitado y se ha determinado el acierto más cercano o ha finalizado la búsqueda de interseccións de Ray. Este sombreador es donde normalmente se producirá el sombreado de superficie y la generación de rayo adicional.  Los sombreadores de posicionamiento más cercanos deben declarar un parámetro de carga, seguido de un parámetro de atributos.  Cada debe ser un tipo de estructura definido por el usuario que coincida con los tipos que se usan para [**TraceRay**](traceray-function.md) y [**ReportHit**](reporthit-function.md) , respectivamente, o la [**estructura de atributos de intersección**](intersection-attributes.md) cuando se usa la intersección de triángulo de función fija.
+Sombreador que se invoca cuando está habilitado y se ha determinado el impacto más cercano o se ha finalizado la búsqueda de intersección de rayos. Este sombreador es donde normalmente se producirá el sombreado de superficie y la generación de rayos adicionales.  Los sombreadores de impacto más cercanos deben declarar un parámetro de carga, seguido de un parámetro attributes.  Cada debe ser un tipo de estructura definido por el usuario que coincida [](intersection-attributes.md) con los tipos usados para [**TraceRay**](traceray-function.md) y [**ReportHit**](reporthit-function.md) respectivamente, o la estructura de atributos de intersección cuando se usa la intersección de triángulos de función fija.
 
-## <a name="shader-type-attribute"></a>Atributo de tipo de sombreador
+## <a name="shader-type-attribute"></a>Atributo Tipo de sombreador
 
 
 ```

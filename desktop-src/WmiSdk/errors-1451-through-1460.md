@@ -6,11 +6,11 @@ title: Errores de 1451 a 1460
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 67350b588ea33e62824522cd60e74ea58246d835
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122886814"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476112"
 ---
 # <a name="errors-1451-through-1460"></a>Errores de 1451 a 1460
 

@@ -4,18 +4,18 @@ ms.assetid: 4c514197-0df0-49c6-b39e-8a2a7cefa93d
 title: aliasInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 087323df682a2f74164c530f18a9c4da8405930304186288a3d84635bb06ab55
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 052409864617bdaba7acbf9ae561752c83d18395
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118970974"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570513"
 ---
 # <a name="aliasinfo"></a>aliasInfo
 
 Especifica un alias de ordenación o una lista de alias de ordenación especificando un elemento que contiene una propiedad de ordenación o una lista de propiedades de ordenación. Solo debe haber un [elemento aliasInfo]() para cada [elemento propertyDescription.](./propdesc-schema-propertydescription.md) Para las propiedades que establecen canGroupBy=true, a menos que se especifique una propiedad de ordenación secundaria ( =prop:example), el usuario puede experimentar un comportamiento inesperado al cambiar el criterio de ordenación en una vista agrupada por la aliasInfo/@additionalSortByAliases propiedad . En concreto, el orden de los grupos cambiará, pero el orden de los elementos dentro de los grupos no.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```
@@ -36,7 +36,7 @@ Especifica un alias de ordenación o una lista de alias de ordenación especific
 
 | Elemento primario                                                   | Elementos secundarios |
 |------------------------------------------------------------------|----------------|
-| [propertyDescription](./propdesc-schema-propertydescription.md) | Ninguno           |
+| [propertyDescription](./propdesc-schema-propertydescription.md) | None           |
 
 
 

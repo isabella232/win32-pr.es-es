@@ -13,12 +13,12 @@ keywords:
 - referencia del modelo de objetos, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 037618bc29a07c8f8ae4ce8b6b07b322f07032f470aaae84c8ee34f445b92739
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a6128ff3f69968ddf4f8a35955907a18876ef090
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119900585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476156"
 ---
 # <a name="windows-media-player-object-model-reference"></a>Reproductor de Windows Media Referencia del modelo de objetos
 
@@ -26,9 +26,9 @@ Las Reproductor de Windows Media referencia del modelo de objetos contienen info
 
 La referencia del modelo de objetos para scripting se presenta en un estilo diseñado para su uso con lenguajes de script como Microsoft JScript, y documenta el modelo de objetos en términos de objetos con sus propiedades, métodos y eventos asociados.
 
-La Referencia del modelo de objetos para C++ proporciona documentación para las interfaces COM que los programadores de C++ pueden usar para comunicarse con el control Reproductor de Windows Media ActiveX o el control Reproductor de Windows Media Mobile ActiveX. La mayoría de estas interfaces se implementan mediante Reproductor de Windows Media y la llama la aplicación de C++. Sin embargo, la aplicación de C++ implementa algunas de las interfaces (por ejemplo, **IWMPEvents** e **IWMPRemoteMediaServices)** y las llama el control Reproductor de Windows Media.
+La Referencia del modelo de objetos para C++ proporciona documentación para las interfaces COM que los programadores de C++ pueden usar para comunicarse con el control Reproductor de Windows Media ActiveX o el control Reproductor de Windows Media Mobile ActiveX. La mayoría de estas interfaces se implementan mediante el control Reproductor de Windows Media y la llama la aplicación de C++. Sin embargo, algunas de las interfaces (por ejemplo, **IWMPEvents** e **IWMPRemoteMediaServices)** se implementan mediante la aplicación de C++ y las llama el control Reproductor de Windows Media.
 
-La Referencia del modelo de objetos para Visual Basic .NET y C# proporciona documentación sobre las propiedades, los métodos y los eventos del objeto **AxWindowsMediaPlayer** y para las interfaces del control Reproductor de Windows Media ActiveX que están disponibles a través de la interoperabilidad COM en una solución codificada en Visual Studio .NET 2002 o posterior.
+La Referencia del modelo de objetos para Visual Basic .NET y C# proporciona documentación sobre las propiedades, métodos y eventos del objeto **AxWindowsMediaPlayer** y para las interfaces del control Reproductor de Windows Media ActiveX que están disponibles a través de la interoperabilidad COM en una solución codificada en Visual Studio .NET 2002 o posterior.
 
 La Reproductor de Windows Media referencia del modelo de objetos contiene las secciones siguientes.
 

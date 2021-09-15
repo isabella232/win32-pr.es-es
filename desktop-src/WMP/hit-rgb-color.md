@@ -1,6 +1,6 @@
 ---
-title: Color RGB de la pulsación
-description: Color RGB de la pulsación
+title: Hit RGB Color
+description: Hit RGB Color
 ms.assetid: b71a0a66-11aa-4a21-b78a-3bd90f80a428
 keywords:
 - Reproductor de Windows Media Máscaras móviles, colores de botón
@@ -10,29 +10,29 @@ keywords:
 - referencia de color para máscaras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b3c33e4b7eb2af9c1305a6644559e162c581c27b6b11e5b709376663082042d3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c7c69863c4197702383f729c8d7e8d30d3cb52bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119390875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476243"
 ---
-# <a name="hit-rgb-color"></a>Color RGB de la pulsación
+# <a name="hit-rgb-color"></a>Hit RGB Color
 
 Si usa botones de región (PushHit, ToggleHit y 2PushHit), debe definir el color que Reproductor de Windows Media usará para determinar el área de pulsación del botón. Este valor debe especificarse mediante tres enteros positivos separados por comas. Estos enteros representan la cantidad de rojo, verde y azul para un color de mapa de bits y van de 0 a 255.
 
 > [!Note]  
-> Los tipos de botones están en desuso en las máscaras Reproductor de Windows Media 10 Mobile o posterior.
+> Los tipos de botones están en desuso en máscaras para Reproductor de Windows Media 10 Mobile o posterior.
 
  
 
-Puede usar cualquier color para los valores, pero asegúrese de que cada botón de región que defina tenga un color único en el archivo de imagen Región y que el valor de color que defina aquí como un número coincida con el color real usado en la imagen región.
+Puede usar cualquier color para los valores, pero asegúrese de que cada botón de región que defina tenga un color único en el archivo de imagen Región y que el valor de color que defina aquí como un número coincida con el color real usado en la imagen Región.
 
 En la tabla siguiente se muestran algunos colores típicos que puede usar.
 
 
 
-| Valor       | Descripción |
+| Value       | Descripción |
 |-------------|-------------|
 | 0,0,0       | Negro       |
 | 255,255,255 | Blanco       |

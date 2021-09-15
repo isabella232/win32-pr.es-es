@@ -4,12 +4,12 @@ description: El encabezado ACF contiene atributos específicos de la plataforma 
 ms.assetid: c09ec0f2-2302-450a-b74b-c9008beca325
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11bdfeced843337143fd441d816e3b575be2e7ebc7d93000094f8dcd3737a00d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64e958044f043db8828f0fdda192918c632c321b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118924615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476584"
 ---
 # <a name="the-acf-header"></a>El encabezado ACF
 

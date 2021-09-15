@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 72ce5119a10adc6a902d5a675d3ec116a3db1852a88e47ed852284cf44edf2f4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 144b60f1c8e9b500d49b53dfe290565c23023220
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118440734"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573169"
 ---
 # <a name="itemchildren-property"></a>Propiedad Item.Children
 
@@ -43,7 +43,7 @@ Variable que recibe los objetos .
 
 Use esta propiedad para navegar por el árbol jerárquico de [**objetos Item**](-wia-item.md) que representan un dispositivo, las carpetas y los archivos que residen en el dispositivo.
 
-La **propiedad Children** es una colección de objetos [**Item**](-wia-item.md) solo del nivel directamente debajo de este objeto **Item** en el árbol. Para navegar por los niveles lejos del árbol, use esta propiedad de forma recursiva.
+La **propiedad Children** es una colección de objetos [**Item**](-wia-item.md) solo del nivel directamente debajo de este objeto **Item** del árbol. Para navegar por los niveles lejos del árbol, use esta propiedad de forma recursiva.
 
 Si el elemento no puede o no tiene ningún elemento secundario, esta propiedad devuelve una colección vacía.
 
@@ -88,7 +88,7 @@ Next
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones de \[ escritorio XP\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 

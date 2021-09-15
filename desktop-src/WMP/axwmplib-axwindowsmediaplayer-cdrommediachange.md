@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 55dac05b3ca8a8675bfae431d3f2e8ffbb38db8701a2501fa80d282cd3c976ec
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 35385541f6bc91b6935f148fd8ae28df6a415f3d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119055022"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476268"
 ---
 # <a name="cdrommediachange-event-of-the-axwindowsmediaplayer-object"></a>Evento CdromMediaChange del objeto AxWindowsMediaPlayer
 
@@ -45,7 +45,7 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 
 
-| Propiedad | Descripción                                                        |
+| Propiedad. | Descripción                                                        |
 |----------|--------------------------------------------------------------------|
 | CdromNum | System.Int32 Especifica el índice de la unidad de CD o DVD.<br/> |
 
@@ -53,7 +53,7 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El índice de la unidad de CD corresponde al índice de una interfaz IWMPCdrom accesible a través de la interfaz IWMPCdromCollection.
 
@@ -61,7 +61,7 @@ El índice de la unidad de CD corresponde al índice de una interfaz IWMPCdrom a
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                          |
 | Espacio de nombres<br/> | **AxWMPLib**<br/>                                                                                                    |

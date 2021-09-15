@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4b2ee4722825f0404d590d593a2c7f72c815f8cfd2ad4991b0a604c188bfbfb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2acde97e19b02ad08b3833f1c1c4eb3e0dd4b147
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119829875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572909"
 ---
 # <a name="wm_rbuttondblclk-message"></a>Mensaje \_ de WM RBUTTONDBLCLK
 
@@ -64,9 +64,9 @@ Indica si varias claves virtuales están sin servicio. Este parámetro puede ser
 *lParam* 
 </dt> <dd>
 
-La palabra de orden bajo especifica la coordenada X del cursor. La coordenada es relativa a la esquina superior izquierda del área de cliente.
+La palabra de orden bajo especifica la coordenada x del cursor. La coordenada es relativa a la esquina superior izquierda del área cliente.
 
-La palabra de orden superior especifica la coordenada y del cursor. La coordenada es relativa a la esquina superior izquierda del área de cliente.
+La palabra de orden superior especifica la coordenada y del cursor. La coordenada es relativa a la esquina superior izquierda del área cliente.
 
 </dd> </dl>
 
@@ -74,9 +74,9 @@ La palabra de orden superior especifica la coordenada y del cursor. La coordenad
 
 Si una aplicación procesa este mensaje, debe devolver cero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Solo las ventanas que tienen el estilo **\_ DBLCLKS** de CS pueden recibir mensajes **WM \_ RBUTTONDBLCLK,** que el sistema genera cada vez que el usuario presiona, suelta y presiona de nuevo el botón derecho del mouse dentro del límite de tiempo de doble clic del sistema. Al hacer doble clic en el botón derecho del mouse, se generan cuatro mensajes: [**WM \_ RBUTTONDOWN,**](wm-rbuttondown.md) [**WM \_ RBUTTONUP,**](wm-rbuttonup.md) **WM \_ RBUTTONDBLCLK y** WM **\_ RBUTTONUP** de nuevo.
+Solo las ventanas que tienen el estilo **\_ DBLCLKS** de CS pueden recibir mensajes **WM \_ RBUTTONDBLCLK,** que el sistema genera cada vez que el usuario presiona, suelta y presiona de nuevo el botón derecho del mouse dentro del límite de tiempo de doble clic del sistema. Al hacer doble clic con el botón derecho del mouse, se generan cuatro mensajes: [**WM \_ RBUTTONDOWN,**](wm-rbuttondown.md) [**WM \_ RBUTTONUP,**](wm-rbuttonup.md) **WM \_ RBUTTONDBLCLK** y **WM \_ RBUTTONUP** de nuevo.
 
 Use el código siguiente para obtener la posición horizontal y vertical:
 
@@ -88,10 +88,10 @@ yPos = GET_Y_LPARAM(lParam);
 
 
 
-Como se indicó anteriormente, la coordenada x está en el orden bajo **corto** del valor devuelto; la coordenada y está en orden  alto **corto** (ambos representan valores firmados porque pueden tomar valores negativos en sistemas con varios monitores). Si el valor devuelto se asigna a una variable, puede usar la macro [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints) para obtener una estructura [**POINTS**](/previous-versions//dd162808(v=vs.85)) a partir del valor devuelto. También puede usar la macro [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) o [**GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para extraer la coordenada x o y.
+Como se indicó anteriormente, la coordenada x está en el orden bajo **corto** del valor devuelto; la coordenada y está en el  orden corto de orden superior **(ambos** representan valores con signo porque pueden tomar valores negativos en sistemas con varios monitores). Si el valor devuelto se asigna a una variable, puede usar la macro [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints) para obtener una estructura [**POINTS**](/previous-versions//dd162808(v=vs.85)) del valor devuelto. También puede usar la macro [**GET \_ X \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_x_lparam) o [**GET Y \_ \_ LPARAM**](/windows/desktop/api/windowsx/nf-windowsx-get_y_lparam) para extraer la coordenada x o y.
 
 > [!IMPORTANT]
-> No use las macros [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) para extraer las coordenadas x e y- de la posición del cursor porque estas macros devuelven resultados incorrectos en sistemas con varios monitores. Los sistemas con varios monitores pueden tener coordenadas x e y negativas, y **LOWORD** e **HIWORD** tratan las coordenadas como cantidades sin signo.
+> No use las macros [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) o [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) para extraer las coordenadas x e y- de la posición del cursor porque estas macros devuelven resultados incorrectos en sistemas con varios monitores. Los sistemas con varios monitores pueden tener coordenadas x e y negativas, y **LOWORD** y **HIWORD** tratan las coordenadas como cantidades sin signo.
 
  
 
@@ -107,7 +107,7 @@ Como se indicó anteriormente, la coordenada x está en el orden bajo **corto** 
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -150,7 +150,7 @@ Como se indicó anteriormente, la coordenada x está en el orden bajo **corto** 
 [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**Puntos**](/previous-versions//dd162808(v=vs.85))
+[**PUNTOS**](/previous-versions//dd162808(v=vs.85))
 </dt> </dl>
 
  

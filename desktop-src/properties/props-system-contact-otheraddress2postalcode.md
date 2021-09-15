@@ -4,12 +4,12 @@ ms.assetid: f67ae425-61cb-4a44-8832-c2388b2076fd
 title: System.Contact.OtherAddress2PostalCode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a2786fb4e88ffe84ce6d3f44ea37eecb47c62489e9cd0e91dc766c5e10960f7
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c0b7532e3e6fea4a98a6b2a3597dd42a34fd712a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120091605"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573341"
 ---
 # <a name="systemcontactotheraddress2postalcode"></a>System.Contact.OtherAddress2PostalCode
 
@@ -28,7 +28,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

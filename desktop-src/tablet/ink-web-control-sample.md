@@ -5,11 +5,11 @@ title: Ejemplo de control web ink
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: dfe2035028ab622f896489b304ca850db4e25462
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122882050"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570393"
 ---
 # <a name="ink-web-control-sample"></a>Ejemplo de control web ink
 
@@ -63,7 +63,7 @@ Observe el formato del valor del atributo classid para la &lt; etiqueta de &gt; 
 
 Un control de usuario real probablemente incluiría métodos adicionales que se usan para conservar o enviar los datos recopilados en la aplicación.
 
-## <a name="the-autoclaims_webcontrol-project"></a>El control WebControl autoclaims \_ Project
+## <a name="the-autoclaims_webcontrol-project"></a>El control \_ WebClaims autoclaims Project
 
 El proyecto AutoClaims WebControl es un Project de implementación que crea una instalación que agrega una raíz \_ virtual, AutoClaims WebControl, en el servidor web cuando \_ se instala. El control y el archivo HTML se colocan en esta raíz virtual.
 

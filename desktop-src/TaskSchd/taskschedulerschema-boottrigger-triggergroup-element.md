@@ -14,12 +14,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1a9067c5e343db0e3bce0972dc89bfc9fd8857d34a3ff9bd9fd65909c019c2e9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: eb6ccf590893e19340662fd4c47e4aa68047b29d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119309575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476300"
 ---
 # <a name="boottrigger-triggergroup-element"></a>Elemento BootTrigger (triggerGroup)
 
@@ -68,7 +68,7 @@ El **elemento BootTrigger** se define mediante el [**tipo complejo bootTriggerTy
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para el desarrollo de scripts, el objeto [**BootTrigger**](boottrigger.md) define un desencadenador de arranque.
 
@@ -82,14 +82,14 @@ Para obtener un ejemplo completo del XML para una tarea que especifica un desenc
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>       |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

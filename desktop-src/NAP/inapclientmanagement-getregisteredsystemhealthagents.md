@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57d9c2792282245ad4903d77700f5413bef0d2f769a65753aed60f50ba759707
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a4852e2d4c1ffa08b1a7ea7b3d8395c1b116cca6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117800115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476761"
 ---
 # <a name="inapclientmanagementgetregisteredsystemhealthagents-method"></a>Método INapClientManagement::GetRegisteredSystemHealthAgents
 
@@ -87,8 +87,8 @@ El método devuelve un código de estado HRESULT que incluye, entre otros, uno d
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                               |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                         |
-| Header<br/>                   | <dl> <dt>NapManagement.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapManagement.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>NapManagement.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>NapManagement.idl</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>        |
 
 

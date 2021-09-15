@@ -4,24 +4,24 @@ description: Ejemplo de archivo SAMI
 ms.assetid: 52b566f1-0d87-4bf2-87b3-3821e69a5699
 keywords:
 - Reproductor de Windows Media,Synchronized Accessible Media Interchange (SAMI)
-- Reproductor de Windows Media modelo de objetos, Intercambio multimedia accesible sincronizado (SAMI)
+- Reproductor de Windows Media de objetos, Intercambio de medios accesibles sincronizado (SAMI)
 - object model,Synchronized Accessible Media Interchange (SAMI)
 - Reproductor de Windows Media Intercambio multimedia accesible móvil y sincronizado (SAMI)
-- control Reproductor de Windows Media ActiveX, Intercambio de medios accesibles sincronizado (SAMI)
+- control Reproductor de Windows Media ActiveX, Intercambio multimedia accesible sincronizado (SAMI)
 - Reproductor de Windows Media Control de ActiveX móviles, intercambio multimedia accesible sincronizado (SAMI)
 - ActiveX control, Intercambio de medios accesibles sincronizado (SAMI)
 - Intercambio multimedia accesible sincronizado (SAMI), archivos
 - SAMI (intercambio multimedia accesible sincronizado), archivos
 - Intercambio multimedia accesible sincronizado (SAMI), código de ejemplo
-- SAMI (intercambio de medios accesible sincronizado), código de ejemplo
+- SAMI (Synchronized Accessible Media Interchange), código de ejemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d4e2ab5189f99118afae3fb2dae7374323cc8c16605bb458a04bd31810ed91a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f9634de52f71b4ca1db151bdf9104c3891c8ce5d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118569811"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476174"
 ---
 # <a name="sami-file-example"></a>Ejemplo de archivo SAMI
 

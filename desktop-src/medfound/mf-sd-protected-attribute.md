@@ -4,12 +4,12 @@ ms.assetid: 1c1a201c-4b55-4b86-a08f-d06c1a7db29d
 title: MF_SD_PROTECTED atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22ae6cf92b3ada6309de7e92a722db38c88ce94a8af88aa6cc0176f738ff194b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3c97320d15353b8e23a43fa4efac2e5883a7366f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118474062"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572809"
 ---
 # <a name="mf_sd_protected-attribute"></a>Atributo MF \_ SD \_ PROTECTED
 
@@ -21,7 +21,7 @@ Indica si una secuencia contiene contenido protegido.
 
 Tratar como un valor booleano.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se aplica a los descriptores de flujo. Si el valor del atributo es **TRUE,** la secuencia contiene contenido protegido. Si el valor es **FALSE** o el atributo no está establecido, la secuencia contiene contenido sin formato.
 
@@ -52,15 +52,15 @@ BOOL StreamHasProtectedContent(IMFStreamDescriptor *pSD)
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Aplicaciones de escritorio de Vista \[ \| para aplicaciones para UWP\]<br/>                              |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio de Server 2008 \[ \| aplicaciones para UWP\]<br/>                        |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

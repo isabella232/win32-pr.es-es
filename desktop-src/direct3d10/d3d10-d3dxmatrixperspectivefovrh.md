@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 8d07e70df213c31d8006bd51d4b8af2f617d69fb44c3b4b8bd0c3931dad312ce
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 38d48789bab9b968b6bcf657459c408abdba774b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119990315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573073"
 ---
 # <a name="d3dxmatrixperspectivefovrh-function-d3dx10mathh"></a>Función D3DXMatrixPerspectiveFovRH (D3DX10Math.h)
 
@@ -95,7 +95,7 @@ Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
 Puntero a una estructura D3DXMATRIX que es una matriz de proyección de perspectiva a la derecha.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De este modo, la función D3DXMatrixPerspectiveFovRH se puede usar como parámetro para otra función.
 
@@ -126,7 +126,7 @@ xScale = yScale / aspect ratio
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

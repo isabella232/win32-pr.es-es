@@ -1,17 +1,17 @@
 ---
-title: Cómo usar el API de acceso a dispositivos
+title: Uso de la API de acceso a dispositivos
 description: Este tema contiene tareas y consideraciones de diseño para usar el API de acceso a dispositivos.
 ms.assetid: 8D951EB5-4AFB-4051-8F1F-30F847F1A757
 ms.topic: article
 ms.date: 02/11/2020
-ms.openlocfilehash: bd1ddf9d2716cd01ab2db8acb08d2793a6831ffa6f20aa2c75378f72932d992b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 29c4812c559b691a896fb5bb9da39064bf3c8614
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119635305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570929"
 ---
-# <a name="how-to-use-the-device-access-api"></a>Cómo usar el API de acceso a dispositivos
+# <a name="how-to-use-the-device-access-api"></a>Uso de la API de acceso a dispositivos
 
 Este tema contiene tareas y consideraciones de diseño para usar el API de acceso a dispositivos.
 
@@ -27,6 +27,6 @@ Este tema contiene tareas y consideraciones de diseño para usar el API de acces
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
-- El [ejemplo de acceso de controlador](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Custom%20driver%20access%20sample) personalizado muestra cómo usar las API de acceso a dispositivos para acceder a un controlador personalizado desde una aplicación de Windows Store.
-- [Las aplicaciones de dispositivos UWP](/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices) para dispositivos internos proporcionan recursos para aprender más sobre cómo diseñar y desarrollar aplicaciones de dispositivos Windows Store para dispositivos especializados.
+- El [ejemplo de acceso de controlador](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/411c271e537727d737a53fa2cbe99eaecac00cc0/Official%20Windows%20Platform%20Sample/Custom%20driver%20access%20sample) personalizado muestra cómo usar las API de acceso a dispositivos para acceder a un controlador personalizado desde una Windows store.
+- [Las aplicaciones de dispositivos UWP](/windows-hardware/drivers/devapps/uwp-device-apps-for-specialized-devices) para dispositivos internos proporcionan recursos para obtener más información sobre cómo diseñar y desarrollar aplicaciones de dispositivos Windows Store para dispositivos especializados.
 - El [Centro de desarrollo de hardware](/windows-hardware/drivers/) proporciona recursos generales para las Windows desarrollo de aplicaciones de dispositivos de store que son comunes a todos los tipos de dispositivos.

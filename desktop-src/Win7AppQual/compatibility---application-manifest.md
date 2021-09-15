@@ -4,12 +4,12 @@ ms.assetid: f022374d-ea3f-477f-9b59-3188b775ed64
 title: Manifiesto de aplicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9ea81440458bb5ac106fd891cc370ebb2b2fcc1db2a70022bf746bd81dd1acd
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 80c52b8eb2af87c271151be3d7989f50b2903084
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119680215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571036"
 ---
 # <a name="application-manifest"></a>Manifiesto de aplicación
 
@@ -37,13 +37,13 @@ ms.locfileid: "119680215"
 
 ## <a name="description"></a>Descripción
 
-Windows 7 presenta una nueva sección en el manifiesto de aplicación denominada "Compatibilidad". Esta sección ayuda Windows a determinar las versiones de Windows a las que se diseñó una aplicación de destino y permite a Windows proporcionar el comportamiento esperado por la aplicación en función de la versión de Windows de destino de la aplicación.
+Windows 7 presenta una nueva sección en el manifiesto de aplicación denominada "Compatibilidad". Esta sección ayuda Windows determinar las versiones de Windows a las que se diseñó una aplicación de destino y permite a Windows proporcionar el comportamiento que espera la aplicación en función de la versión de Windows de destino de la aplicación.
 
-La sección Compatibilidad permite a Windows proporcionar un nuevo comportamiento al nuevo software creado por el desarrollador al tiempo que se mantiene la compatibilidad con el software existente. Esta sección también ayuda a Windows ofrecer una mayor compatibilidad en versiones futuras de Windows también. Por ejemplo, una aplicación que declara compatibilidad solo para Windows 7 en la sección Compatibilidad seguirá recibiendo un comportamiento de Windows 7 en la versión futura de Windows.
+La sección Compatibilidad permite a Windows proporcionar un nuevo comportamiento al nuevo software creado por el desarrollador al tiempo que se mantiene la compatibilidad con el software existente. Esta sección también ayuda a Windows ofrecer mayor compatibilidad en versiones futuras de Windows también. Por ejemplo, una aplicación que declara compatibilidad solo para Windows 7 en la sección Compatibilidad seguirá recibiendo un comportamiento de Windows 7 en la versión futura de Windows.
 
 ## <a name="manifestation-of-change"></a>Demostración del cambio
 
-Las aplicaciones que no tienen una sección Compatibilidad en su manifiesto recibirán un comportamiento Windows Vista de forma predeterminada en Windows 7 y versiones Windows posteriores. Tenga en cuenta Windows XP y Windows Vista omiten esta sección de manifiesto y no tiene ningún impacto en ellos.
+Las aplicaciones sin una sección Compatibilidad en su manifiesto recibirán un comportamiento Windows Vista de forma predeterminada en Windows 7 y versiones Windows posteriores. Tenga en cuenta Windows XP Windows Vista omiten esta sección de manifiesto y no tiene ningún impacto en ellos.
 
 Los siguientes componentes Windows proporcionan un comportamiento divergente en función de la sección Compatibilidad de Windows 7:
 
@@ -51,13 +51,13 @@ Los siguientes componentes Windows proporcionan un comportamiento divergente en 
 
 -   **Windows 7:** Para mejorar la escalabilidad y reducir los recuentos de subprocesos, RPC cambió al grupo de subprocesos nt (grupo predeterminado). Para Windows Vista, RPC usó un grupo de subprocesos privado.
     -   En el caso de los archivos binarios compilados para Win7, se usa el grupo predeterminado
-    -   Si se llama a I RpcMgmtEnableDedicatedThreadPool antes de llamar a cualquier API rpc, se usa el grupo de subprocesos privado \_ (comportamiento de Vista)
+    -   Si se llama a I RpcMgmtEnableDedicatedThreadPool antes de llamar a cualquier API de RPC, se usa el grupo de subprocesos privado \_ (comportamiento de Vista)
     -   Si se llama a I RpcMgmtEnableDedicatedThreadPool después de una llamada RPC, se usa el grupo \_ predeterminado, I \_ RpcMgmtEnableDedicatedThreadPool devuelve el error 1764 y no se admite la operación solicitada.
 -   **Windows Vista (valor predeterminado):** Para los archivos binarios compilados para Windows Vista y versiones inferiores, se usa el grupo privado.
 
 **Bloqueo de DirectDraw**
 
--   **Windows 7:** Las aplicaciones manifestadas para Windows 7 no pueden llamar a lock API en DDRAW para bloquear el búfer de vídeo principal del escritorio. Si lo hace, se producirá un error y se devolverá el puntero **NULL** para la principal. Este comportamiento se aplica incluso si Administrador de ventanas de escritorio Composition no está activado. Windows 7 aplicaciones compatibles no deben bloquear el búfer de vídeo principal que se va a representar.
+-   **Windows 7:** Las aplicaciones manifestadas para Windows 7 no pueden llamar a Lock API en DDRAW para bloquear el búfer de vídeo principal del escritorio. Si lo hace, se producirá un error y se devolverá el puntero **NULL** para la principal. Este comportamiento se aplica incluso si Administrador de ventanas de escritorio Composition no está activado. Windows 7 aplicaciones compatibles no deben bloquear el búfer de vídeo principal que se va a representar.
 -   **Windows Vista (valor predeterminado):** Las aplicaciones podrán adquirir un bloqueo en el búfer de vídeo principal, ya que las aplicaciones heredadas dependen de este comportamiento. La ejecución de la aplicación desactiva Administrador de ventanas de escritorio.
 
 **Transferencia de bloques de bits de DirectDraw (Blt) a principal sin ventana de recorte**
@@ -68,7 +68,7 @@ Los siguientes componentes Windows proporcionan un comportamiento divergente en 
 **GetOverlappedResult API**
 
 -   **Windows 7:** Resuelve una condición de carrera en la que una aplicación multiproceso mediante GetOverlappedResult puede devolver sin restablecer el evento en la estructura superpuesta, lo que hace que la siguiente llamada a esta función vuelva prematuramente.
--   **Windows Vista (valor predeterminado):** Proporciona el comportamiento con la condición de carrera de la que las aplicaciones pueden tener una dependencia. Las aplicaciones que desean evitar esta carrera antes del comportamiento de Windows 7 deben esperar en el evento superpuesto y, cuando se le señale, llamar a GetOverlappedResult con bWait == **FALSE**.
+-   **Windows Vista (valor predeterminado):** Proporciona el comportamiento con la condición de carrera de la que las aplicaciones pueden tener una dependencia. Las aplicaciones que quieran evitar esta carrera antes del comportamiento de Windows 7 deben esperar en el evento superpuesto y, cuando se le señale, llamar a GetOverlappedResult con bWait == **FALSE**.
 
 **Asistente para la compatibilidad de programas (PCA)**
 

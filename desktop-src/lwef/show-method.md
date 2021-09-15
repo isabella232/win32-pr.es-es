@@ -4,12 +4,12 @@ description: Show (método)
 ms.assetid: 58adbb55-f4cb-4356-abc4-b85fa3af744d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ede9dd8474b21911fccb0c217b070dbfb84160125d2fd56092685ccaf82905b2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a05a1adaa46c85f34e02128960330c68d9a86db1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118475357"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468783"
 ---
 # <a name="show-method"></a>Show (método)
 
@@ -41,7 +41,7 @@ Hace que el carácter especificado sea visible y reproduce su animación **Showi
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si declara una referencia de objeto y la establece en este método, devuelve un [**objeto Request.**](/windows/desktop/lwef/the-request-object) Además, si no se ha cargado la [](status-property.md) animación **Showing** asociada y no se ha  especificado el parámetro **Fast** como **True**, el servidor establece la propiedad Status del objeto Request en "failed" con un número de error adecuado. Por lo tanto, si usa el protocolo HTTP para tener acceso  a los datos de animación de caracteres, use el método [**Get**](get-method.md) para cargar la animación de estado Mostrando antes de llamar al **método Show.**
 

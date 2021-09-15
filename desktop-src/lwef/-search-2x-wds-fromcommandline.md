@@ -5,11 +5,11 @@ ms.assetid: fd62f7c9-08a9-4e05-b0bc-e2215cfff59e
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: fac0125d9c4733654df7b2f6e08f49d10f5fee07
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467612"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468796"
 ---
 # <a name="calling-wds-from-the-command-line"></a>Llamada a WDS desde la línea de comandos
 
@@ -22,14 +22,14 @@ La ruta de instalación de WDS se especifica en la configuración del Registro I
 
 ## <a name="command-line-syntax"></a>Sintaxis de la línea de comandos
 
-La sintaxis siguiente se aplica a la Windows línea de comandos de Desktop Search 2.x.
+La sintaxis siguiente se aplica a Windows interfaz de línea de comandos de Desktop Search 2.x.
 
 
 
 
 | Opciones | Parámetro | Significado | 
 |---------|-----------|---------|
-| /startup | Inicializa Windows Desktop Search | 
+| /startup | Inicializa la Windows de escritorio | 
 | /indexnow | Desactiva la desactivación de la indexación y vuelve a examinar todas las ubicaciones de índice. | 
 | /showstatus | Muestra la ventana de estado de indexación | 
 | /launchsearchwindow o /url | Abre una ventana wds con una consulta vacía | 

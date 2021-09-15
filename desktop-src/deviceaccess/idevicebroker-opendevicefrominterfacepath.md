@@ -16,12 +16,12 @@ ms.topic: article
 ms.date: 02/11/2020
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4d9bd4e03b489a899e182c86207e11ae9ec0fb66cc6c917584d83dcc0aa97918
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5363600455ee1ba5c1c86cb12690afd242f68118
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119635335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570937"
 ---
 # <a name="idevicebrokeropendevicefrominterfacepath-method"></a>IDeviceBroker::OpenDeviceFromInterfacePath (método)
 

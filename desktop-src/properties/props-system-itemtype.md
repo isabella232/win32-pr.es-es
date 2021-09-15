@@ -5,11 +5,11 @@ title: System.ItemType
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 784a72c46e92ac5956532994df4f36758d42f440
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122880716"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570452"
 ---
 # <a name="systemitemtype"></a>System.ItemType
 
@@ -31,21 +31,21 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 
 El valor de System.ItemType está pensado para analizarse mediante programación y puede ser:
 
--   Extensión de archivo que apunta a un valor ProgID (HKEY \_ CLASSES \_ ROOT \\ &lt; ProgID) que mantiene &gt; el nombre para mostrar del tipo.
--   Valor ProgID (HKEY \_ CLASSES \_ RROOT \\ &lt; &gt; ProgID), que contiene el nombre para mostrar del tipo.
+-   Extensión de archivo que apunta a un valor ProgID (HKEY \_ CLASSES \_ ROOT \\ &lt; ProgID) &gt; que mantiene el nombre para mostrar del tipo.
+-   Valor progID (HKEY \_ CLASSES \_ RROOT \\ &lt; &gt; ProgID), que contiene el nombre para mostrar del tipo.
 
 El elemento FriendlyTypeName de un ProgID debe ser una versión localizada del nombre de la aplicación ( ,-42), mientras que el valor predeterminado de la clave ProgID es un nombre no localizado @winword.dll (Word.Document.12).
 
-Si no hay ningún tipo canónico, el valor es VT \_ EMPTY. Si el elemento es un archivo ([System.FileName](./props-system-filename.md) no es VT EMPTY), el valor es el mismo \_ que [System.FileExtension](./props-system-fileextension.md). Use [System.ItemTypeText](./props-system-itemtypetext.md) cuando desee mostrar el tipo a los usuarios finales en una vista.
+Si no hay ningún tipo canónico, el valor es VT \_ EMPTY. Si el elemento es un archivo ([System.FileName](./props-system-filename.md) no es VT EMPTY), el valor es el mismo \_ que [System.FileExtension.](./props-system-fileextension.md) Use [System.ItemTypeText](./props-system-itemtypetext.md) cuando desee mostrar el tipo a los usuarios finales en una vista.
 
 > [!Note]  
-> Si el elemento es un archivo, pasar el valor [System.ItemType]() a [**PSFormatForDisplay**](/windows/win32/api/propsys/nf-propsys-psformatfordisplay) da como resultado el mismo valor que [System.ItemTypeText.](./props-system-itemtypetext.md)
+> Si el elemento es un archivo, pasar el valor [System.ItemType]() a [**PSFormatForDisplay**](/windows/win32/api/propsys/nf-propsys-psformatfordisplay) da como resultado el mismo valor que [System.ItemTypeText](./props-system-itemtypetext.md).
 
  
 
@@ -53,11 +53,11 @@ Valores de ejemplo:
 
 
 
-| Ruta de acceso                                   | ItemType         |
+| Path                                   | ItemType         |
 |----------------------------------------|------------------|
 | c: \\ barra de mydir \\ \\hello.txt              | .txt             |
 | \\\\servidor \\ compartido \\ mydir \\goodnews.doc | .doc             |
-| \\\\carpeta de \\ recurso compartido \\ de servidor              | Directorio        |
+| \\\\carpeta de \\ recurso compartido de \\ servidor              | Directorio        |
 | c: \\ MyDir \\ MyFolder                    | Directorio        |
 | \[desktop\]                            | Carpeta           |
 | /Mailbox Account/Inbox/'Re: Hello!'    | MAPI/IPM. Mensaje |

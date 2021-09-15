@@ -5,15 +5,15 @@ ms.assetid: 279663c0-8797-4f87-aaec-8cb8d4046a05
 keywords:
 - DerivedTypeExample Native-Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4dbb9bc95a54dfc6315279c3ed9221122d35091d4b06c0bf815c67cb9377bf1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 049f008b65be7404c9fdfe57ae98084c8b69167b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118026228"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573097"
 ---
 # <a name="derivedtypeexample"></a>DerivedTypeExample
 

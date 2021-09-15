@@ -6,16 +6,16 @@ keywords:
 - Reproductor de Windows Media complementos, propiedades de ejemplo de eco
 - complementos, propiedades de ejemplo de eco
 - complementos de procesamiento de señales digitales, propiedades de ejemplo de eco
-- Complementos de DSP, propiedades de ejemplo de eco
+- Complementos DE DSP, propiedades de ejemplo de eco
 - Ejemplo de complemento DSP de eco, propiedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7cdefea3fce39b70d20d2f100d36cc4aeb8770bd15cd5cd0bf0978cd08f2259f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8ad37b71ddc6a097dd43e1ac41147c571f81a67a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118339139"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476238"
 ---
 # <a name="how-properties-work"></a>Cómo funcionan las propiedades
 
@@ -27,7 +27,7 @@ En las tres secciones siguientes se muestra cómo modificar los métodos de prop
 
 -   [Variables para almacenar propiedades](variables-to-store-properties.md)
 -   [Modificar la propiedad Scale](modifying-the-scale-property.md)
--   [Adición de la propiedad Mezcla mezclada](adding-the-wet-mix-property.md)
+-   [Agregar la propiedad Mezcla mezclada](adding-the-wet-mix-property.md)
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -4,12 +4,12 @@ description: Obtenga información sobre el acceso a los servicios de voz con la 
 ms.assetid: 99cf630d-3bd1-403a-833a-9173a84fe3c0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cbc481a72ee4693d4980104e10c76fdade1b9deee9171ce2e82643e21ce53c12
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1f87bf5cf88141344d5328592c9e823c7365c5d5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119963485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475882"
 ---
 # <a name="accessing-speech-services-microsoft-agent-server-interface"></a>Acceso a servicios de voz (interfaz del servidor de Microsoft Agent)
 

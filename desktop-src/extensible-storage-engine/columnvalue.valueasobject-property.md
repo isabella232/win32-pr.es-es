@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8c7b5117f75fb195fe065493d942cee6c244f56eed1fe6170bdd53fd243143d5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1cc7d96f9b8584e81da5cfa66073b19989b0a476
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118083658"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570816"
 ---
 # <a name="columnvaluevalueasobject-property"></a>Propiedad ColumnValue.ValueAsObject
 
@@ -39,7 +39,7 @@ Obtiene el último valor establecido o recuperado de la columna. El valor se dev
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration
@@ -60,7 +60,7 @@ public abstract Object ValueAsObject { get; }
 
 Tipo: [System.Object](/dotnet/api/system.object)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

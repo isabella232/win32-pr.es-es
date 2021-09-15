@@ -4,12 +4,12 @@ ms.assetid: 7e14a02e-4cbf-45aa-a6f5-2c53b2437127
 title: MFT_CONNECTED_STREAM_ATTRIBUTE atributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2289b8f1e8d5d751f7aa69564b8bbd26d865b43efedb474529147385b1851bb0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a3b182cbed78f5f9851b621de72bf691bf698b70
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119722571"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468599"
 ---
 # <a name="mft_connected_stream_attribute-attribute"></a>Atributo MFT \_ CONNECTED \_ STREAM \_ ATTRIBUTE
 
@@ -25,7 +25,7 @@ Para obtener este atributo, llame [**a IMFAttributes::GetUnknown**](/windows/des
 
 Para establecer este atributo, llame [**a IMFAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Normalmente, las aplicaciones no usan este atributo.
 
@@ -41,7 +41,7 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Aplicaciones de escritorio para \[ UWP de Server 2008 R2 \|\]<br/>                           |
-| Header<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 

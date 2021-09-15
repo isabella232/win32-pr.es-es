@@ -4,12 +4,12 @@ ms.assetid: 6321ce99-f5d1-4d72-a062-99cffb543731
 title: Requests
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 812c2688d512e36dbb4a4b10740d4da6de651eb64780681eee74859dfbb0e86a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c7870e09d930fb06d50f0cc8acfff1270db1c92f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118900580"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476366"
 ---
 # <a name="requests"></a>Requests
 

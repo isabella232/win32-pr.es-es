@@ -59,12 +59,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a28b034fd5a6a66f6984a279bc317b629972dedee2962d2466975fc69476a445
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6fd6ee2ac155aa3fc4873ee1a5eb890774b50978
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120009976"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474625"
 ---
 # <a name="imsrdpclient2connectedstatustext-property"></a>Propiedad IMsRdpClient2::ConnectedStatusText
 
@@ -72,7 +72,7 @@ Contiene el texto que se muestra en el área de cliente del control mientras el 
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -95,11 +95,11 @@ La **propiedad ConnectedStatusText** contiene el texto que se muestra en el áre
 
 Devuelve **S \_ OK si** se realiza correctamente.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Texto que se va a mostrar en el área de cliente del control mientras el control está en estado conectado. Este es el texto visible, por ejemplo, cuando el usuario cambia el control al modo de pantalla completa en un explorador web, un escenario que deja una parte del control hospedado en el explorador.
 
-El **método \_ get ConnectedStatusText** asigna la memoria necesaria para el búfer al que apunta el *parámetro pConnectedStatusText.* La llamada a aplicaciones de C/C++ debe liberar la memoria con una llamada a la [**función SysFreeString.**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) Esto no es necesario para los clientes Visual Basic y de scripting.
+El **método \_ get ConnectedStatusText** asigna la memoria necesaria para el búfer al que apunta el *parámetro pConnectedStatusText.* La llamada a aplicaciones de C/C++ debe liberar la memoria con una llamada a la [**función SysFreeString.**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) Esto no es necesario para Visual Basic y clientes de scripting.
 
 Esta propiedad no se puede establecer cuando el control está conectado. Puede comprobar si el control está conectado llamando al [**método IMsTscAx::get \_ Connected.**](imstscax-connected.md)
 

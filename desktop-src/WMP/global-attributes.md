@@ -3,19 +3,19 @@ title: Atributos globales (Reproductor de Windows Media SDK)
 description: Atributos globales
 ms.assetid: 2ed09506-990e-4da2-89d6-6ff77dc43eb2
 keywords:
-- Reproductor de Windows Media máscaras,atributos globales
+- Reproductor de Windows Media máscaras, atributos globales
 - máscaras, atributos globales
 - referencia de máscaras, atributos globales
 - atributos globales
 - attributes,global
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 69c2d52b6489a28eff20e3a7e5c7180fc9e2db9309c0fe42880bfc779a23f563
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 19c3f7a605b5c277b3207cefbbeaaa641f81f026
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119648085"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476255"
 ---
 # <a name="global-attributes"></a>Atributos globales
 
@@ -33,7 +33,7 @@ El **atributo** global player es una referencia al [objeto Player](player-object
 
 
 
-El **atributo** global de tema es una referencia al [elemento THEME.](theme-element.md) Esta es la manera adecuada de acceder a **los atributos THEME,** en lugar de especificar un identificador dentro del **elemento THEME.** En el ejemplo siguiente se **usa el** tema para abrir una nueva vista.
+El **atributo** global del tema es una referencia al [elemento THEME.](theme-element.md) Esta es la manera adecuada de acceder a **los atributos THEME,** en lugar de especificar un identificador dentro del **elemento THEME.** En el ejemplo siguiente se **usa el** tema para abrir una nueva vista.
 
 
 ```C++

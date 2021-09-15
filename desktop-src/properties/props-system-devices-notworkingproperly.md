@@ -4,12 +4,12 @@ ms.assetid: 9a87ed78-902c-4c6b-a1e6-88fce53ce42f
 title: System.Devices.NotWorkingProperly
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7f6633f7ba6306540f1edc23f49322e97d5fd8cce70b8e928b5b7ea3354e914a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 531e79c5c9d69f2dd37f254bfce47e09503542fa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119097514"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573317"
 ---
 # <a name="systemdevicesnotworkingproperly"></a>System.Devices.NotWorkingProperly
 
@@ -61,7 +61,7 @@ propertyDescription
             defineToken = ISNOTWORKINGPROPERLY_NOTWORKINGPROPERLY
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

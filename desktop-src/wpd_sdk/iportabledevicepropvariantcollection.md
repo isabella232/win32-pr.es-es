@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: f5f6a59dfd741eb524c4b6015c5384123b6a2d491b5bdc030053bbc88ad6800a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 14ba07894c74567487704bb1f63e7242542af313
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119026893"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573109"
 ---
 # <a name="iportabledevicepropvariantcollection-interface"></a>IPortableDevicePropVariantCollection (interfaz)
 
@@ -27,7 +27,7 @@ La **interfaz IPortableDevicePropVariantCollection** contiene una colección de 
 
 Esta interfaz se puede recuperar de un método o, si se requiere un nuevo objeto, llamar a **CoCreate** con **CLSID \_ PortableDevicePropVariantCollection**.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IPortableDevicePropVariantCollection** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IPortableDevicePropVariantCollection** también tiene estos tipos de miembros:
 
@@ -64,7 +64,7 @@ La **interfaz IPortableDevicePropVariantCollection** tiene estos métodos.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

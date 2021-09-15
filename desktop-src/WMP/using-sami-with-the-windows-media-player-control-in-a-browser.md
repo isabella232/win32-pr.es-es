@@ -1,31 +1,31 @@
 ---
-title: Uso de SAMI con Reproductor de Windows Media Control en un explorador
-description: Uso de SAMI con Reproductor de Windows Media Control en un explorador
+title: Uso de SAMI con Reproductor de Windows Media control en un explorador
+description: Uso de SAMI con Reproductor de Windows Media control en un explorador
 ms.assetid: 41906e57-adaa-4df7-86ba-19b8a757e216
 keywords:
 - Reproductor de Windows Media,Synchronized Accessible Media Interchange (SAMI)
-- Reproductor de Windows Media modelo de objetos, Intercambio multimedia accesible sincronizado (SAMI)
-- modelo de objetos, intercambio multimedia accesible sincronizado (SAMI)
+- Reproductor de Windows Media de objetos, Intercambio de medios accesibles sincronizado (SAMI)
+- object model,Synchronized Accessible Media Interchange (SAMI)
 - Reproductor de Windows Media Intercambio multimedia accesible móvil y sincronizado (SAMI)
-- Reproductor de Windows Media ActiveX control, Intercambio multimedia accesible sincronizado (SAMI)
-- Reproductor de Windows Media Control ActiveX móvil, intercambio multimedia accesible sincronizado (SAMI)
-- ActiveX control,Intercambio multimedia accesible sincronizado (SAMI)
-- Intercambio multimedia accesible sincronizado (SAMI),files
+- control Reproductor de Windows Media ActiveX, Intercambio multimedia accesible sincronizado (SAMI)
+- Reproductor de Windows Media Control de ActiveX móviles, intercambio multimedia accesible sincronizado (SAMI)
+- ActiveX control, Intercambio de medios accesibles sincronizado (SAMI)
+- Intercambio multimedia accesible sincronizado (SAMI), archivos
 - SAMI (intercambio multimedia accesible sincronizado), archivos
 - Intercambio multimedia accesible sincronizado (SAMI), código de ejemplo
-- SAMI (intercambio de medios accesible sincronizado),código de ejemplo
+- SAMI (Synchronized Accessible Media Interchange), código de ejemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d277f2849e6036d85bc8c03940a7dbd59df8b81083ca88240ebd68be768fde9d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b651c3af117942d56ffc5334323913d26cdf6f99
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119134348"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476169"
 ---
-# <a name="using-sami-with-the-windows-media-player-control-in-a-browser"></a>Uso de SAMI con Reproductor de Windows Media Control en un explorador
+# <a name="using-sami-with-the-windows-media-player-control-in-a-browser"></a>Uso de SAMI con Reproductor de Windows Media control en un explorador
 
-En lugar de crear un archivo SAMI para cada estilo de fuente o lenguaje, puede declarar clases de estilo diferentes en un archivo mediante el scripting básico y el modelo de objetos Reproductor de Windows Media control. Puede crear controles personalizados que permitan al usuario elegir entre las distintas opciones de estilo y lenguaje. Además, tiene un control completo sobre el diseño de la interfaz player y la personalización de cada función.
+En lugar de crear un archivo SAMI para cada estilo de fuente o lenguaje, puede declarar clases de estilo diferentes en un archivo mediante el scripting básico y el modelo de objetos de control Reproductor de Windows Media código. Puede crear controles personalizados que permitan al usuario elegir entre las distintas opciones de estilo e idioma. Además, tiene un control completo sobre el diseño de la interfaz player y la personalización de cada función.
 
 Para obtener información detallada sobre cómo insertar el control Reproductor de Windows Media en una página web, vea Ejemplo simple de [scripting en una página web](simple-example-of-scripting-in-a-web-page.md).
 

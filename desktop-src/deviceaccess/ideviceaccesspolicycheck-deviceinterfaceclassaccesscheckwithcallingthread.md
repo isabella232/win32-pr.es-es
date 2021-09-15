@@ -4,7 +4,7 @@ description: Esta API determinará si el token del contexto actual tiene acceso 
 ms.assetid: D7BFE1F3-4876-4BAB-A32D-46DB533140BB
 keywords:
 - DeviceInterfaceClassAccessCheckWithCallingThread method Device Access Broker API
-- DeviceInterfaceClassAccessCheckWithCallingThread method Device Access Broker API , IDeviceAccessPolicyCheck interface
+- DeviceInterfaceClassAccessCheckWithCallingThread método Device Access Broker API , interfaz IDeviceAccessPolicyCheck
 - IDeviceAccessPolicyCheck interface Device Access Broker API , Método DeviceInterfaceClassAccessCheckWithCallingThread
 topic_type:
 - apiref
@@ -16,12 +16,12 @@ ms.topic: article
 ms.date: 02/11/2020
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f279972c3b716f111fa37fc2dd01ef9184b2f804f07106f6b971358daf290c44
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 44eb44a83175cf8f735abfeb8cfec4de83f46bd2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119635355"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570941"
 ---
 # <a name="ideviceaccesspolicycheckdeviceinterfaceclassaccesscheckwithcallingthread-method"></a>IDeviceAccessPolicyCheck::D eviceInterfaceClassAccessCheckWithCallingThread (método)
 

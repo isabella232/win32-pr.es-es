@@ -1,11 +1,11 @@
 ---
-title: StringCollection. Item (método)
-description: El método Item recupera la cadena en el índice especificado.
+title: Método StringCollection.item
+description: El método item recupera la cadena en el índice especificado.
 ms.assetid: 5f6afff2-3ecc-4b28-8c67-f859f5440d4f
 keywords:
-- método de elemento Media Player de Windows
-- método de elemento Windows Media Player, StringCollection (clase)
-- Clase StringCollection Windows Media Player, método Item
+- método item Reproductor de Windows Media
+- método item Reproductor de Windows Media , clase StringCollection
+- Clase StringCollection Reproductor de Windows Media método , item
 topic_type:
 - apiref
 api_name:
@@ -17,15 +17,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: c4244ad194ff3426dab81baddc0b7188214e0360
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105718625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570080"
 ---
-# <a name="stringcollectionitem-method"></a>StringCollection. Item (método)
+# <a name="stringcollectionitem-method"></a>Método StringCollection.item
 
-El método **Item** recupera la cadena en el índice especificado.
+El **método** item recupera la cadena en el índice especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -42,10 +42,10 @@ strRetVal = StringCollection.item(
 
 <dl> <dt>
 
-*Índice* \[ de de\]
+*index* \[ En\]
 </dt> <dd>
 
-**Número** (**largo**) que contiene el índice.
+**Number** (**long**) que contiene el índice.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Este método devuelve una **cadena**.
 
 ## <a name="remarks"></a>Observaciones
 
-El objeto **StringCollection** se utiliza para recuperar el conjunto de valores disponibles para un atributo. Por ejemplo, *MediaCollection*. el método **getAttributeStringCollection** se puede utilizar para recuperar un objeto **StringCollection** que representa todos los valores del atributo Genre en el tipo de medios de audio. La propiedad **Item** se puede usar para recorrer en iteración todos los valores posibles del atributo Genre.
+El **objeto StringCollection** se usa para recuperar el conjunto de valores disponibles para un atributo. Por ejemplo, *MediaCollection*. **El método getAttributeStringCollection** se puede usar para recuperar un **objeto StringCollection** que representa todos los valores del atributo Genre dentro del tipo de medio Audio. A **continuación,** la propiedad item se puede usar para recorrer en iteración todos los valores posibles para el atributo Genre.
 
-Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [acceso a la biblioteca](library-access.md).
+Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,7 +65,7 @@ Para usar este método, se requiere acceso de lectura a la biblioteca. Para obte
 
 | Requisito | Value |
 |--------------------|------------------------------------------------------------------------------------|
-| Versión<br/> | Windows Media Player versión 7,0 o posterior.<br/>                              |
+| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior.<br/>                              |
 | Archivo DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -77,10 +77,10 @@ Para usar este método, se requiere acceso de lectura a la biblioteca. Para obte
 [**MediaCollection.getAttributeStringCollection**](mediacollection-getattributestringcollection.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configuración.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configuración.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> <dt>
 
 [**StringCollection (objeto)**](stringcollection-object.md)

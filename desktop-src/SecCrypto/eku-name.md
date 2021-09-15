@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: ca1564b943874ec086dd5e4459e69543cbdc90ebde2a11a2084c3054e3727dea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e0e28a8816d7e4c4f44e3cd1ec0dc479372d66d1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117767233"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476473"
 ---
 # <a name="iekuname-property"></a>IEKU::Name, propiedad
 
@@ -31,7 +31,7 @@ La **propiedad Name** establece o recupera un valor de enumeración que especifi
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -49,7 +49,7 @@ Valor de la [**enumeración CAPICOM \_ EKU**](capicom-eku.md) que especifica el 
 | Valor                                                                                                                                                                                                                           | Significado                                                                                                                                                     |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="CAPICOM_EKU_OTHER"></span><span id="capicom_eku_other"></span><dl> <dt>**CAPICOM \_ EKU \_ OTHER**</dt> </dl>                                                      | El certificado tiene usos definidos en la directiva local. Se usa si el EKU necesario no está predefinido y la aplicación debe establecer el valor de OID.<br/> |
-| <span id="CAPICOM_EKU_SERVER_AUTH"></span><span id="capicom_eku_server_auth"></span><dl> <dt>**AUTENTICACIÓN DEL \_ SERVIDOR CAPICOM \_ \_ EKU**</dt> </dl>                                   | El certificado se puede usar para autenticar un servidor.<br/>                                                                                                |
+| <span id="CAPICOM_EKU_SERVER_AUTH"></span><span id="capicom_eku_server_auth"></span><dl> <dt>**CAPICOM \_ EKU \_ SERVER \_ AUTH**</dt> </dl>                                   | El certificado se puede usar para autenticar un servidor.<br/>                                                                                                |
 | <span id="CAPICOM_EKU_CLIENT_AUTH"></span><span id="capicom_eku_client_auth"></span><dl> <dt>**AUTENTICACIÓN DE \_ CLIENTE CAPICOM \_ \_ EKU**</dt> </dl>                                   | El certificado se puede usar para autenticar un cliente.<br/>                                                                                                |
 | <span id="CAPICOM_EKU_CODE_SIGNING"></span><span id="capicom_eku_code_signing"></span><dl> <dt>**FIRMA DE CÓDIGO \_ CAPICOM EKU \_ \_**</dt> </dl>                                | El certificado se puede usar para crear una firma digital.<br/>                                                                                           |
 | <span id="CAPICOM_EKU_EMAIL_PROTECTION"></span><span id="capicom_eku_email_protection"></span><dl> <dt>**CAPICOM \_ EKU \_ EMAIL \_ PROTECTION**</dt> </dl>                    | El certificado se puede usar para la protección por correo electrónico.<br/>                                                                                                    |
@@ -60,9 +60,9 @@ Valor de la [**enumeración CAPICOM \_ EKU**](capicom-eku.md) que especifica el 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando se restablece el valor de esta propiedad, [](../secgloss/s-gly.md) directa o indirectamente, se restablece todo el estado del objeto.
+Cuando se restablece el valor de esta propiedad, directa o indirectamente, se restablece [*todo*](../secgloss/s-gly.md) el estado del objeto.
 
 ## <a name="requirements"></a>Requisitos
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: a4829d1c7f54042864dc4f54f26a17fcf4b0f84daab9352961d775d97adb45cc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7adf311e863c08873aa8300f9e940d4a5b49417f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119026783"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570133"
 ---
 # <a name="iportabledevicevaluessetboolvalue-method"></a>IPortableDeviceValues::SetBoolValue (método)
 
@@ -69,7 +69,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si un valor existente tiene la misma clave especificada por el parámetro *key,* sobrescribe el valor existente sin ninguna advertencia. La memoria de clave existente se libera correctamente.
 

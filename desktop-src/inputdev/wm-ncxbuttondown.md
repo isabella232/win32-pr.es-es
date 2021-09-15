@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17097748b064fe125bac20240f14684dfe01b560485c926e36e868da223e7d7f
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fd615b1e30e013f23097cdc7a8ca7c22c338684a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119666265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572913"
 ---
 # <a name="wm_ncxbuttondown-message"></a>Mensaje \_ NCXBUTTONDOWN de WM
 
@@ -41,7 +41,7 @@ Una ventana recibe este mensaje a través de su [**función WindowProc.**](/prev
 *wParam* 
 </dt> <dd>
 
-La palabra de orden bajo especifica el valor de prueba de acceso devuelto por la función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) al procesar el [**mensaje WM \_ NCHITTEST.**](wm-nchittest.md) Para obtener una lista de valores de prueba de acceso, vea **WM \_ NCHITTEST**. La palabra de orden superior indica qué botón se presionó. Puede ser uno de los siguientes valores.
+La palabra de orden bajo especifica el valor de la prueba de acceso devuelto por la función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) al procesar el [**mensaje WM \_ NCHITTEST.**](wm-nchittest.md) Para obtener una lista de valores de prueba de acceso, vea **WM \_ NCHITTEST**. La palabra de orden superior indica qué botón se presionó. Puede ser uno de los siguientes valores.
 
 
 
@@ -67,7 +67,7 @@ Puntero a una [**estructura POINTS**](/previous-versions//dd162808(v=vs.85)) que
 
 Si una aplicación procesa este mensaje, debe devolver **TRUE**. Para obtener más información sobre cómo procesar el valor devuelto, vea la sección Comentarios.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use el código siguiente para obtener la información del *parámetro wParam.*
 
@@ -96,13 +96,13 @@ yPos = GET_Y_LPARAM(lParam);
 
 De forma predeterminada, [**la función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) prueba el punto especificado para obtener la posición del cursor y realiza la acción adecuada. Si procede, envía el mensaje [**\_ SYSCOMMAND de WM**](/windows/desktop/menurc/wm-syscommand) a la ventana.
 
-A diferencia de los mensajes [**\_ WM NCLBUTTONDOWN,**](wm-nclbuttondown.md) [**WM \_ NCMBUTTONDOWN**](wm-ncmbuttondown.md)y [**WM \_ NCRBUTTONDOWN,**](wm-ncrbuttondown.md) una aplicación debe devolver **TRUE** de este mensaje si la procesa. Esto permitirá que el software que simula este mensaje en sistemas de Windows anteriores a Windows 2000 determine si el procedimiento de ventana procesó el mensaje o llamó a [**DefWindowProc para**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) procesarlo.
+A diferencia de los mensajes [**\_ WM NCLBUTTONDOWN,**](wm-nclbuttondown.md) [**WM \_ NCMBUTTONDOWN**](wm-ncmbuttondown.md)y [**WM \_ NCRBUTTONDOWN,**](wm-ncrbuttondown.md) una aplicación debe devolver **TRUE** de este mensaje si la procesa. Esto permitirá que el software que simula este mensaje en sistemas de Windows anteriores Windows 2000 determine si el procedimiento de ventana procesó el mensaje o llamó a [**DefWindowProc para**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) procesarlo.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -110,7 +110,7 @@ A diferencia de los mensajes [**\_ WM NCLBUTTONDOWN,**](wm-nclbuttondown.md) [**
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -150,7 +150,7 @@ A diferencia de los mensajes [**\_ WM NCLBUTTONDOWN,**](wm-nclbuttondown.md) [**
 [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**Puntos**](/previous-versions//dd162808(v=vs.85))
+[**PUNTOS**](/previous-versions//dd162808(v=vs.85))
 </dt> </dl>
 
  

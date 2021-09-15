@@ -1,53 +1,53 @@
 ---
 title: Reglas para usar punteros
-description: Trasladar el código para compilar para Windows de 32 y 64 bits es sencillo. Solo necesita seguir unas cuantas reglas simples sobre cómo convertir punteros y usar los nuevos tipos de datos en el código. Las reglas para la manipulación de puntero son las siguientes.
+description: La porción del código para compilar para microsoft de 32 y 64 Windows es sencilla. Solo necesita seguir algunas reglas sencillas sobre la conversión de punteros y usar los nuevos tipos de datos en el código. Las reglas para la manipulación de punteros son las siguientes.
 ms.assetid: 4c38bee2-fa1c-493f-a12d-e673df4d4895
 keywords:
-- reglas para usar los punteros programación de Windows de 64 bits
-- manipulación de puntero de 64 programación de Windows de bits
-- convertir punteros en programación de Windows de 64 bits
+- reglas para usar punteros de 64 bits Windows programación
+- Manipulación de punteros de 64 bits Windows programación
+- conversión de punteros de 64 bits Windows programación
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 318ff5beed6dc90bd49b6b293131e17db6f92f6b
-ms.sourcegitcommit: ae73f4dd3cf5a3c6a1ea7d191ca32a5b01f6686b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "103995699"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476127"
 ---
 # <a name="rules-for-using-pointers"></a>Reglas para usar punteros
 
-Trasladar el código para compilar para Windows de 32 y 64 bits es sencillo. Solo necesita seguir unas cuantas reglas simples sobre cómo convertir punteros y usar los nuevos tipos de datos en el código. Las reglas para la manipulación de puntero son las siguientes.
+La porción del código para compilar para microsoft de 32 y 64 Windows es sencilla. Solo necesita seguir algunas reglas sencillas sobre la conversión de punteros y usar los nuevos tipos de datos en el código. Las reglas para la manipulación de punteros son las siguientes.
 
-1.  No convierta punteros a **int**, **Long**, **ULong** o **DWORD**.
+1.  No convertir punteros a **int**, **long,** **ULONG** o **DWORD.**
 
-    Si debe convertir un puntero para probar algunos bits, establecer o borrar bits o manipular de otro modo su contenido, use el tipo **uint \_ ptr** o **int \_ ptr** . Estos tipos son tipos enteros que se escalan al tamaño de un puntero para Windows de 32 y 64 bits (por ejemplo, **ULong** para windows de 32 bits y \_ Int64 para Windows de 64 bits). Por ejemplo, suponga que está migrando el código siguiente:
+    Si debe convertir un puntero para probar algunos bits, establecer o borrar bits, o manipular su contenido, use el tipo **\_ UINT PTR** **o INT \_ PTR.** Estos tipos son tipos enteros que se escalan al tamaño de un puntero para Windows de 32 y 64 bits (por ejemplo, **ULONG** para Windows de 32 bits e int64 para Windows \_ de 64 bits). Por ejemplo, suponga que está porteando el código siguiente:
 
     `ImageBase = (PVOID)((ULONG)ImageBase | 1);`
 
-    Como parte del proceso de portabilidad, cambiaría el código como se indica a continuación:
+    Como parte del proceso de porte, cambiaría el código de la manera siguiente:
 
     `ImageBase = (PVOID)((ULONG_PTR)ImageBase | 1);`
 
-    Use **uint \_ ptr** e **int \_ ptr** cuando sea apropiado (y, si no está seguro de si son necesarios, no hay ningún daño en su uso en caso de que se produzcan). No convierta los punteros a los tipos **ULong**, **Long**, **int**, **uint** o **DWORD**.
+    Use **UINT \_ PTR** e **INT \_ PTR** cuando corresponda (y si no está seguro de si son necesarios, no hay ningún daño al usarlos por si fuera necesario). No convierte los punteros a los tipos **ULONG,** **LONG,** **INT,** **UINT** o **DWORD.**
 
-    Tenga en cuenta que el **identificador** se define como un valor **\* nulo**, por lo que conversión un valor de **identificador** a un valor **ULong** para probar, establecer o borrar los bits de orden inferior 2 es un error en Windows de 64 bits.
+    Tenga en cuenta que **HANDLE** se define como **un valor void \* *_,*** por lo que convertir un valor _ HANDLE en un valor **ULONG** para probar, establecer o borrar los 2 bits de orden inferior es un error en los bits de 64 Windows.
 
-2.  Utilice la función **PtrToLong** o **PtrToUlong** para truncar los punteros.
+2.  Use las **funciones PtrToLong** **o PtrToUlong** para truncar punteros.
 
-    Si debe truncar un puntero a un valor de 32 bits, utilice la función **PtrToLong** o **PtrToUlong** (definida en Basetsd. h). Estas funciones deshabilitan la advertencia de truncamiento de puntero mientras dure la llamada.
+    Si debe truncar un puntero a un valor de 32 bits, use la función **PtrToLong** o **PtrToUlong** (definida en Basetsd.h). Estas funciones deshabilitan la advertencia de truncamiento del puntero mientras dure la llamada.
 
-    Use estas funciones con cuidado. Después de convertir una variable de puntero mediante una de estas funciones, no la use nunca como un puntero de nuevo. Estas funciones truncan los 32 bits superiores de una dirección, que normalmente son necesarios para tener acceso a la memoria a la que se hace referencia originalmente mediante un puntero. El uso de estas funciones sin mucha consideración dará como resultado código frágil.
+    Use estas funciones con cuidado. Después de convertir una variable de puntero mediante una de estas funciones, no vuelva a usarla como puntero. Estas funciones truncan los 32 bits superiores de una dirección, que normalmente son necesarios para acceder a la memoria a la que hace referencia originalmente el puntero. El uso de estas funciones sin tener en cuenta cuidadosamente dará lugar a un código frágil.
 
-3.  Tenga cuidado al usar \_ valores de puntero 32 en el código que se puede compilar como código de 64 bits. El compilador firmará el puntero cuando se asigne a un puntero nativo en el código de 64 bits, no extiende el puntero a cero.
-4.  Tenga cuidado al usar \_ valores de puntero 64 en el código que se puede compilar como código de 32 bits. El compilador firmará el puntero en el código de 32 bits, no extiende a cero el puntero.
-5.  Tenga cuidado al usar los parámetros OUT.
+3.  Tenga cuidado al usar valores POINTER \_ 32 en código que se pueden compilar como código de 64 bits. El compilador firmará el puntero cuando se asigne a un puntero nativo en código de 64 bits, no extenderá el puntero a cero.
+4.  Tenga cuidado al usar valores POINTER \_ 64 en código que se pueden compilar como código de 32 bits. El compilador firmará la extensión del puntero en código de 32 bits, no en el puntero de extensión cero.
+5.  Tenga cuidado con el uso de parámetros OUT.
 
     Por ejemplo, supongamos que tiene una función definida de la siguiente manera:
 
     `void func( OUT PULONG *PointerToUlong );`
 
-    No llame a esta función como se indica a continuación.
+    No llame a esta función como se muestra a continuación.
 
     ``` syntax
     ULONG ul;
@@ -56,20 +56,20 @@ Trasladar el código para compilar para Windows de 32 y 64 bits es sencillo. Sol
     lp = (PULONG)ul;
     ```
 
-    En su lugar, utilice la siguiente llamada.
+    En su lugar, use la siguiente llamada.
 
     ``` syntax
     PULONG lp;
     func(&lp);
     ```
 
-    Conversión &UL a **PULONG \*** evita un error del compilador, pero la función escribirá un valor de puntero de 64 bits en la memoria en &UL. Este código funciona en Windows de 32 bits, pero producirá daños en los datos en Windows de 64 bits y será sutil y difícil de encontrar. La línea inferior: no reproduzca trucos con el código de C: es mejor y sencillo.
+    La &de tipo ul a **PULONG \*** evita un error del compilador, pero la función escribirá un valor de puntero de 64 bits en la memoria en &ul. Este código funciona en Windows de 32 bits, pero provocará daños en los datos en el Windows de 64 bits y será sutil y difícil de encontrar. La línea de fondo: No jugar a trucos con el código C: es mejor sencillo y sencillo.
 
 6.  Tenga cuidado con las interfaces polimórficas.
 
-    No cree funciones que acepten parámetros **DWORD** para datos polimórficos. Si los datos pueden ser un puntero o un valor entero, use el \_ tipo uint PTR o **PVOID** .
+    No cree funciones que acepten **parámetros DWORD** para datos polimórficos. Si los datos pueden ser un puntero o un valor entero, use el tipo \_ UINT PTR **o PVOID.**
 
-    Por ejemplo, no cree una función que acepte una matriz de parámetros de excepción con el tipo de valores **DWORD** . La matriz debe ser una matriz de valores **DWORD \_ ptr** . Por lo tanto, los elementos de la matriz pueden contener direcciones o valores enteros de 32 bits. (La regla general es que si el tipo original es **DWORD** y debe ser el ancho del puntero, conviértalo en un valor de **DWORD \_ ptr** . Esa es la razón por la que hay tipos de precisión de puntero correspondientes). Si tiene código que usa **DWORD**, **ULong** u otros tipos de 32 bits de forma polimórfica (es decir, desea que el parámetro o el miembro de estructura contengan una dirección), use **uint \_ ptr** en lugar del tipo actual.
+    Por ejemplo, no cree una función que acepte una matriz de parámetros de excepción con el tipo **de valores DWORD.** La matriz debe ser una matriz de **valores \_ DWORD PTR.** Por lo tanto, los elementos de la matriz pueden contener direcciones o valores enteros de 32 bits. (La regla general es que, si el tipo original es **DWORD** y debe tener un ancho de puntero, conviénelo en un **valor \_ DWORD PTR.** Por eso hay tipos de precisión de puntero correspondientes). Si tiene código que usa **DWORD,** **ULONG** u otros tipos de 32 bits de forma polimórfica (es decir, realmente quiere que el miembro de parámetro o estructura mantenga una dirección), use **UINT \_ PTR** en lugar del tipo actual.
 
 7.  Use las nuevas funciones de clase de ventana.
 
@@ -80,41 +80,41 @@ Trasladar el código para compilar para Windows de 32 y 64 bits es sencillo. Sol
     -   [**SetClassLongPtr**](/windows/win32/api/winuser/nf-winuser-setclasslongptra)
     -   [**SetWindowLongPtr**](/windows/win32/api/winuser/nf-winuser-setwindowlongptra)
 
-    Estas funciones se pueden usar en Windows de 32 y 64 bits, pero son necesarias en Windows de 64 bits. Prepárese para la transición mediante el uso de estas funciones ahora.
+    Estas funciones se pueden usar en las funciones de 32 y 64 Windows, pero son necesarias en el Windows de 64 bits. Prepárese para la transición mediante estas funciones ahora.
 
-    Además, debe tener acceso a los punteros o a los identificadores de los datos privados de la clase mediante las nuevas funciones en Windows de 64 bits. Para ayudarle a encontrar estos casos, los siguientes índices no se definen en Winuser. h durante una compilación de 64 bits:
+    Además, debe tener acceso a punteros o identificadores en datos privados de clase mediante las nuevas funciones de 64 bits Windows. Para ayudar a encontrar estos casos, los siguientes índices no se definen en Winuser.h durante una compilación de 64 bits:
 
-    -   GWL \_ WndProc
-    -   GWL \_ hInstance
+    -   \_WNDPROC de GWL
+    -   GWL \_ HINSTANCE
     -   GWL \_ HWDPARENT
     -   GWL \_ USERDATA
 
-    En su lugar, Winuser. h define los nuevos índices siguientes:
+    En su lugar, Winuser.h define los siguientes índices nuevos:
 
-    -   GWLP \_ WndProc
-    -   GWLP \_ hInstance
+    -   GWLP \_ WNDPROC
+    -   GWLP \_ HINSTANCE
     -   GWLP \_ HWNDPARENT
     -   GWLP \_ USERDATA
-    -   identificador de GWLP \_
+    -   Id. de \_ GWLP
 
     Por ejemplo, el código siguiente no se compila:
 
     `SetWindowLong(hWnd, GWL_WNDPROC, (LONG)MyWndProc);`
 
-    Debe cambiarse de la siguiente manera:
+    Debe cambiarse como se muestra a continuación:
 
     `SetWindowLongPtr(hWnd, GWLP_WNDPROC, (LONG_PTR)MyWndProc);`
 
-    Al establecer el miembro **cbWndExtra** de la estructura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) , asegúrese de reservar espacio suficiente para los punteros. Por ejemplo, si está reservando bytes de tamaño (DWORD) para un valor de puntero, Reserve bytes de tamaño (DWORD \_ ptr).
+    Al establecer el **miembro cbWndExtra** de la estructura [**WNDCLASS,**](/windows/win32/api/winuser/ns-winuser-wndclassa) asegúrese de reservar suficiente espacio para los punteros. Por ejemplo, si está reservando actualmente bytes sizeof(DWORD) para un valor de puntero, reserve sizeof(DWORD \_ PTR) bytes.
 
-8.  Acceder a todos los datos de ventana y de clase mediante el **\_ desplazamiento de campo**.
+8.  Acceda a todos los datos de ventana y clase mediante **FIELD \_ OFFSET**.
 
-    Es habitual tener acceso a los datos de la ventana mediante desplazamientos codificados de forma rígida. Esta técnica no es portable a Windows de 64 bits. Para que el código sea portátil, acceda a los datos de la ventana y de la clase mediante la macro de **\_ desplazamiento de campo** . No asuma que el segundo puntero tiene un desplazamiento de 4.
+    Es habitual acceder a los datos de ventana mediante desplazamientos codificados de forma hard-code. Esta técnica no es portátil a 64 bits Windows. Para que el código sea portátil, acceda a los datos de la ventana y la clase mediante la macro **FIELD \_ OFFSET.** No suponga que el segundo puntero tiene un desplazamiento de 4.
 
-9.  Los tipos **lParam**, **wParam** y **LRESULT** cambian el tamaño con la plataforma.
+9.  Los **tipos LPARAM,** **WPARAM** y **LRESULT** cambian de tamaño con la plataforma.
 
-    Al compilar código de 64 bits, estos tipos se expanden hasta 64 bits, porque normalmente contienen punteros o tipos enteros. No mezcle estos valores con los valores **DWORD**, **ULong**, **uint**, **int**, **int** o **Long** . Examine cómo se usan estos tipos y asegúrese de que no trunca accidentalmente los valores.
+    Al compilar código de 64 bits, estos tipos se expanden a 64 bits, ya que normalmente contienen punteros o tipos enteros. No mezcle estos valores **con valores DWORD,** **ULONG,** **UINT,** **INT,** **int** o **long.** Examine cómo se usan estos tipos y asegúrese de que no trunca accidentalmente los valores.
 
- 
+ 
 
- 
+ 

@@ -4,12 +4,12 @@ ms.assetid: 66482541-63d4-439b-862f-7507605af5d8
 title: MF_SESSION_CONTENT_PROTECTION_MANAGER atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 753bd3e78be4d4996477cb597170c7a3396ae819766d3f4af9ac867055dd2dd1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c90321ae3c10fd7fa2ec39a4fb478e256291b049
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117691595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572788"
 ---
 # <a name="mf_session_content_protection_manager-attribute"></a>Atributo MF \_ SESSION \_ CONTENT PROTECTION \_ \_ MANAGER
 
@@ -19,7 +19,7 @@ Proporciona una interfaz de devolución de llamada para que la aplicación recib
 
 **IUnknown\***
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor de este atributo es un puntero a la interfaz [**DEIContentProtectionManager**](/windows/desktop/api/mfidl/nn-mfidl-imfcontentprotectionmanager) de la aplicación.
 
@@ -31,15 +31,15 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                               |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

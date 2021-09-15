@@ -4,12 +4,12 @@ ms.assetid: 1cb26594-6a15-4f36-b83a-f1c4418619d3
 title: Enumeraciones de API de impresión XPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 473204be02ed8b59669562ea5db65fa3bffe2a1fa7676183764fe2c9a69fad65
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 28c141f1f5d0ec6f452e2119e1d41691b6126f46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119718285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570516"
 ---
 # <a name="xps-print-api-enumerations"></a>Enumeraciones de API de impresión XPS
 

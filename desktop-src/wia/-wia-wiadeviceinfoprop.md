@@ -29,11 +29,11 @@ api_type:
 api_location:
 - wiadef.h
 ms.openlocfilehash: 29db0a527146218e19b3fe583fd48936f71dac29
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122623701"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570356"
 ---
 # <a name="device-information-property-constants"></a>Constantes de propiedades de información de dispositivo
 
@@ -55,19 +55,19 @@ Propiedades de información del dispositivo son propiedades que describen la ins
 <tbody>
 <tr class="odd">
 <td ><span id="WIA_DIP_DEV_ID"></span><span id="wia_dip_dev_id"></span><dl> <dt><strong>WIA_DIP_DEV_ID</strong></dt> <dt>DeviceInfoDevId</dt> </dl></td>
-<td >Cadena de identificador de dispositivo para el minidriver WIA. El servicio WIA crea y mantiene esta propiedad.<br/> Tipo: VT_BSTR, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a><br/></td>
+<td >Cadena de identificador de dispositivo para el minidriver WIA. El servicio WIA crea y mantiene esta propiedad.<br/> Tipo: VT_BSTR, Acceso: solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a><br/></td>
 </tr>
 <tr class="even">
 <td ><span id="WIA_DIP_VEND_DESC"></span><span id="wia_dip_vend_desc"></span><dl> <dt><strong>WIA_DIP_VEND_DESC</strong></dt> <dt>DeviceInfoVendDesc</dt> </dl></td>
-<td >Cadena de descripción del proveedor para el minidriver WIA. La descripción del proveedor se obtiene del archivo INF. Una aplicación lee esta propiedad para obtener una descripción del proveedor del dispositivo. El servicio WIA crea y mantiene esta propiedad.<br/> Tipo: VT_BSTR, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a><br/></td>
+<td >Cadena de descripción del proveedor para el minidriver WIA. La descripción del proveedor se obtiene del archivo INF. Una aplicación lee esta propiedad para obtener una descripción del proveedor del dispositivo. El servicio WIA crea y mantiene esta propiedad.<br/> Tipo: VT_BSTR, Acceso: solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a><br/></td>
 </tr>
 <tr class="odd">
 <td ><span id="WIA_DIP_DEV_DESC"></span><span id="wia_dip_dev_desc"></span><dl> <dt><strong>WIA_DIP_DEV_DESC</strong></dt> <dt>DeviceInfoDevDesc</dt> </dl></td>
-<td >Cadena de descripción del dispositivo para el minidriver WIA. El servicio WIA crea y mantiene esta propiedad. La cadena de descripción del dispositivo que contiene esta propiedad se obtiene del archivo INF. Una aplicación lee esta propiedad para obtener una descripción del dispositivo.<br/> Tipo: VT_BSTR, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a><br/></td>
+<td >Cadena de descripción del dispositivo para el minidriver WIA. El servicio WIA crea y mantiene esta propiedad. La cadena de descripción del dispositivo que contiene esta propiedad se obtiene del archivo INF. Una aplicación lee esta propiedad para obtener una descripción del dispositivo.<br/> Tipo: VT_BSTR, Acceso: solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a><br/></td>
 </tr>
 <tr class="even">
 <td ><span id="WIA_DIP_DEV_TYPE"></span><span id="wia_dip_dev_type"></span><dl> <dt><strong>WIA_DIP_DEV_TYPE</strong></dt> <dt>DeviceInfoDevType</dt> </dl></td>
-<td >El tipo de dispositivo y el subtipo de dispositivo. El servicio WIA crea y mantiene esta propiedad. Use la GET_STIDEVICE_TYPE macro para obtener el tipo de dispositivo. El tipo de dispositivo y el subtipo se obtienen del archivo INF. Una aplicación lee esta propiedad para determinar si usa un escáner, una cámara o un dispositivo de vídeo.<br/> Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a><br/> Actualmente, los tipos de dispositivo se definen de la manera siguiente. El asterisco * indica que el tipo de dispositivo no es compatible con Windows Vista y versiones posteriores. El asterisco doble ** indica que el tipo de dispositivo no es compatible con Windows Server 2003, Windows Vista o posterior. <br/> 
+<td >El tipo de dispositivo y el subtipo de dispositivo. El servicio WIA crea y mantiene esta propiedad. Use la macro GET_STIDEVICE_TYPE para obtener el tipo de dispositivo. El tipo de dispositivo y el subtipo se obtienen del archivo INF. Una aplicación lee esta propiedad para determinar si usa un escáner, una cámara o un dispositivo de vídeo.<br/> Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a><br/> Actualmente, los tipos de dispositivo se definen de la manera siguiente. El asterisco * indica que el tipo de dispositivo no es compatible con Windows Vista y versiones posteriores. El asterisco doble ** indica que el tipo de dispositivo no es compatible con Windows Server 2003, Windows Vista o posterior. <br/> 
 <table>
 <thead>
 <tr class="header">
@@ -85,7 +85,7 @@ Propiedades de información del dispositivo son propiedades que describen la ins
 <tr class="even">
 <td>DeviceDeviceTypeScanner</td>
 <td>0x0001</td>
-<td>Dispositivo del analizador (consulte <a href="-wia-wiaitempropscannerdevice.md"><strong>el WIA_DPS_DOCUMENT_HANDLING_CAPABILITIES</strong></a> para determinar si el analizador está plano o está conectado a hojas).</td>
+<td>Dispositivo del analizador (vea <a href="-wia-wiaitempropscannerdevice.md"><strong>el WIA_DPS_DOCUMENT_HANDLING_CAPABILITIES</strong></a> para determinar si el analizador está plano o está conectado a hojas).</td>
 </tr>
 <tr class="odd">
 <td>DeviceDeviceTypeDigitalCamera*</td>
@@ -173,17 +173,17 @@ Propiedades de información del dispositivo son propiedades que describen la ins
 </tr>
 <tr class="even">
 <td ><span id="WIA_DIP_STI_GEN_CAPABILITIES"></span><span id="wia_dip_sti_gen_capabilities"></span><dl> <dt><strong>WIA_DIP_STI_GEN_CAPABILITIES</strong></dt> <dt>DeviceInfoStiGenCapabilities</dt> </dl></td>
-<td ><p>Funcionalidades GENÉRICAS PARA EL DISPOSITIVO obtenidas del archivo INF. El servicio WIA crea y mantiene esta propiedad. Una aplicación lee esta propiedad para determinar las funcionalidades GENÉRICAS del dispositivo.</p>
+<td ><p>Las funcionalidades GENÉRICAS PARA EL DISPOSITIVO que se obtienen del archivo INF. El servicio WIA crea y mantiene esta propiedad. Una aplicación lee esta propiedad para determinar las funcionalidades GENÉRICAS DEL DISPOSITIVO.</p>
 <p>Tipo: <strong>VT_I4</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
 </tr>
 <tr class="odd">
 <td ><span id="WIA_DIP_WIA_VERSION"></span><span id="wia_dip_wia_version"></span><dl> <dt><strong>WIA_DIP_WIA_VERSION</strong></dt> <dt>DeviceInfoWiaVersion</dt> </dl></td>
-<td ><p>Número (como una cadena) de la versión actual de WIA que está instalada en el sistema. Una aplicación lee esta propiedad para determinar la versión de WIA que está instalada en el sistema. El servicio WIA crea y mantiene esta propiedad. Esta propiedad está disponible en Windows XP y versiones posteriores.</p>
+<td ><p>Número (como una cadena) de la versión actual de WIA instalada en el sistema. Una aplicación lee esta propiedad para determinar la versión de WIA que está instalada en el sistema. El servicio WIA crea y mantiene esta propiedad. Esta propiedad está disponible en Windows XP y versiones posteriores.</p>
 <p>Tipo: <strong>VT_BSTR</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
 </tr>
 <tr class="even">
 <td ><span id="WIA_DIP_DRIVER_VERSION"></span><span id="wia_dip_driver_version"></span><dl> <dt><strong>WIA_DIP_DRIVER_VERSION</strong></dt> <dt>DeviceInfoDriverVersion</dt> </dl></td>
-<td ><p>La versión de DLL actual del minidriver WIA. El servicio WIA crea y mantiene esta propiedad. Esta propiedad está disponible en Windows XP y versiones posteriores.</p>
+<td ><p>La versión del archivo DLL actual del minidriver de WIA. El servicio WIA crea y mantiene esta propiedad. Esta propiedad está disponible en Windows XP y versiones posteriores.</p>
 <p>Tipo: <strong>VT_BSTR</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
 </tr>
 <tr class="odd">
@@ -193,7 +193,7 @@ Propiedades de información del dispositivo son propiedades que describen la ins
 </tr>
 <tr class="even">
 <td ><span id="WIA_DIP_STI_DRIVER_VERSION"></span><span id="wia_dip_sti_driver_version"></span><dl> <dt><strong>WIA_DIP_STI_DRIVER_VERSION</strong></dt> <dt>DeviceInfoStiDriverVersion</dt> </dl></td>
-<td ><p>Versión genérica del controlador DESTE. El servicio WIA crea y mantiene esta propiedad. Una aplicación lee esta propiedad para determinar la versión genérica del controlador DESTE. Esta propiedad está disponible en Windows Vista y versiones posteriores.</p>
+<td ><p>Versión genérica del controlador DESTE. El servicio WIA crea y mantiene esta propiedad. Una aplicación lee esta propiedad para determinar la versión genérica del controlador GENERIC. Esta propiedad está disponible en Windows Vista y versiones posteriores.</p>
 <p>Tipo: <strong>VT_BSTR</strong>, Acceso: Solo lectura, Valores válidos: <a href="-wia-property-attributes.md">WIA_PROP_NONE</a></p></td>
 </tr>
 </tbody>

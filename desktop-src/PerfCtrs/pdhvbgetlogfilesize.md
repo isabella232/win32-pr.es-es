@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Pdh.dll
-ms.openlocfilehash: cd3925eee621ac205615f17b26767096151d459628ca7d331a7aaee3336b27ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b9f490477704086bd9aa8c53dd32456d486471e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119674795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476656"
 ---
 # <a name="pdhvbgetlogfilesize-function"></a>Función PdhVbGetLogFileSize
 
@@ -51,7 +51,7 @@ Puntero a una variable que recibe el tamaño del archivo de registro, en bytes.
 
 Si la función se realiza correctamente, devuelve 0.
 
-Si se produce un error en la función, el valor devuelto es un [código de error del sistema](/windows/desktop/Debug/system-error-codes) o un código de error [PDH](pdh-error-codes.md). A continuación se den los valores posibles.
+Si se produce un error en la función, el valor devuelto es un [código de error del sistema](/windows/desktop/Debug/system-error-codes) o un código de error [PDH](pdh-error-codes.md). Los siguientes son valores posibles.
 
 
 
@@ -71,7 +71,7 @@ Si se produce un error en la función, el valor devuelto es un [código de error
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                               |

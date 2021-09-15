@@ -1,6 +1,6 @@
 ---
-title: Reproductor de Windows Media Sdk
-description: Reproductor de Windows Media Sdk
+title: Reproductor de Windows Media SDK
+description: Reproductor de Windows Media SDK
 ms.assetid: 10e3995f-1528-4895-a0f7-d60f2449afc0
 keywords:
 - Reproductor de Windows Media,documentation
@@ -18,14 +18,14 @@ keywords:
 - versiones de Reproductor de Windows Media,SDK para la versión 12
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12250b140ca2e85638f8a53625445faa10bf5c40a6243ca3aa0b327d4bc58c0a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3e5a80ef6c9574a90ffca1433c8541d7432971de
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119900545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571105"
 ---
-# <a name="windows-media-player-sdk"></a>Reproductor de Windows Media Sdk
+# <a name="windows-media-player-sdk"></a>Reproductor de Windows Media SDK
 
 En esta documentación se describe el Kit de desarrollo Reproductor de Windows Media software (SDK) de Microsoft. El SDK Reproductor de Windows Media es uno de los componentes de Microsoft Windows SDK. Otros componentes multimedia incluyen el SDK Microsoft Media Foundation, el SDK de formato multimedia de Microsoft Windows y el SDK de Microsoft Servicios de Windows Media.
 
@@ -36,7 +36,7 @@ El SDK Reproductor de Windows Media documenta las tecnologías de programación 
 | Sección                                                                      | Descripción                                                                                                                                                                                                                                                                                                                       |
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Acerca del SDK de Reproductor de Windows Media](about-the-windows-media-player-sdk.md) | En esta sección se proporcionan detalles sobre cómo buscar información específica en el SDK. Incluye una sección sobre las nuevas características e información sobre cómo usar los ejemplos incluidos con el SDK.                                                                                                                                     |
-| [Reproductor de Windows Media Modelo de objetos](windows-media-player-object-model.md)   | El control de Reproductor de Windows Media microsoft es un control de ActiveX de Microsoft que se usa para agregar funcionalidades de reproducción multimedia digital a páginas web. Proporciona una interfaz de programación para representar secuencias y archivos multimedia digitales.                                                                                                     |
+| [Reproductor de Windows Media Modelo de objetos](windows-media-player-object-model.md)   | El control de Reproductor de Windows Media de Microsoft es un control ActiveX microsoft que se usa para agregar funcionalidades de reproducción multimedia digital a las páginas web. Proporciona una interfaz de programación para representar secuencias y archivos multimedia digitales.                                                                                                     |
 | [Reproductor de Windows Media Pieles](windows-media-player-skins.md)                 | Las máscaras son una tecnología basada en XML que se usa para personalizar la interfaz de usuario de Reproductor de Windows Media. También puede usar máscaras Reproductor de Windows Media Mobile para personalizar la interfaz de usuario de Reproductor de Windows Media Mobile.                                                                                                                |
 | [Reproductor de Windows Media Complementos](windows-media-player-plug-ins.md)           | Los complementos son objetos que amplían Reproductor de Windows Media funcionalidad de varias maneras. Los tipos de complementos incluyen visualizaciones personalizadas, complementos de interfaz de usuario, complementos DSP y complementos de representación. Reproductor de Windows Media La compatibilidad con complementos móviles también se describe en esta sección.                                              |
 | [Windows Metarchivos multimedia](windows-media-metafiles.md)                       | Windows Los metarchivos multimedia son documentos XML que proporcionan información sobre un elemento multimedia y su presentación. Los metarchivos se pueden usar para organizar elementos multimedia en listas de reproducción que pueden incluir funcionalidad para el cambio de secuencias sin problemas, la inserción de anuncios y otras características.                                                          |

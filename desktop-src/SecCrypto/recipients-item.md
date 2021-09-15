@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 82a9e45ee82c42f659d6fa9e60f0b96122ee8d0f701d2d039df6ce995d1c778a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2a80b472c8257597356c626a9e88aad97c447f4d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118900802"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476383"
 ---
 # <a name="recipientsitem-property"></a>Propiedad Recipients.Item
 
@@ -26,7 +26,7 @@ ms.locfileid: "118900802"
 
 La **propiedad Item** recupera un objeto de la colección [**Recipients.**](recipients.md) Esta es la propiedad predeterminada.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -39,20 +39,20 @@ Recipients.Item( _
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Variante que representa el elemento indizado en la [**colección Recipients.**](recipients.md)
+Variante que representa el elemento indexado de la [**colección Recipients.**](recipients.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

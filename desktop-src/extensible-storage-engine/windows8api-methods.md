@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.wind
 ms:contentKeyID: 55104457
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: bdfcbee5e4673068bf98126523dfdd582bedbc3bd82c49efbe8140df68e27e55
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d8eb8b822affcbf41c375f7ef23b6a71d03afc64
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119470875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475963"
 ---
 # <a name="windows8api-methods"></a>Métodos de Windows8Api
 
@@ -60,7 +60,7 @@ El [tipo Windows8Api](./windows8api-class.md) expone los miembros siguientes.
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335378(v=exchg.10).md">JetOpenTemporaryTable2</a></td>
-<td>Crea una tabla temporal con un único índice. Una tabla temporal almacena y recupera registros igual que una tabla normal creada mediante JetCreateTableColumnIndex. Sin embargo, las tablas temporales son mucho más rápidas que las tablas normales debido a su naturaleza volátil. También se pueden usar para ordenar y realizar rápidamente la eliminación de duplicados en conjuntos de registros cuando se accede a ellos de una manera puramente secuencial. Vea también <a href="dn292231(v=exchg.10).md">JetOpenTempTable(JET_SESID, [], Int32, TempTableGrbit, JET_TABLEID, [])</a>, &quot; Api.JetOpenTempTable2, &quot; <a href="dn292233(v=exchg.10).md">JetOpenTempTable3(JET_SESID, [], Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, []).</a> <a href="dn335326(v=exchg.10).md">JetOpenTemporaryTable(JET_SESID, JET_OPENTEMPORARYTABLE)</a>.</td>
+<td>Crea una tabla temporal con un único índice. Una tabla temporal almacena y recupera registros como una tabla normal creada mediante JetCreateTableColumnIndex. Sin embargo, las tablas temporales son mucho más rápidas que las tablas normales debido a su naturaleza volátil. También se pueden usar para ordenar y realizar la eliminación de duplicados rápidamente en conjuntos de registros cuando se accede a ellos de una manera puramente secuencial. Consulte también <a href="dn292231(v=exchg.10).md">JetOpenTempTable(JET_SESID, [], Int32, TempTableGrbit, JET_TABLEID, [])</a>, &quot; Api.JetOpenTempTable2 &quot; , <a href="dn292233(v=exchg.10).md">JetOpenTempTable3(JET_SESID, [], Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, []).</a> <a href="dn335326(v=exchg.10).md">JetOpenTemporaryTable(JET_SESID, JET_OPENTEMPORARYTABLE)</a>.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
@@ -80,12 +80,12 @@ El [tipo Windows8Api](./windows8api-class.md) expone los miembros siguientes.
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335495(v=exchg.10).md">JetSetSessionParameter</a></td>
-<td>Establece un parámetro en el estado de sesión proporcionado, que se usa durante la duración de esta sesión o hasta que se restablece.</td>
+<td>Establece un parámetro en el estado de sesión proporcionado, que se usa durante la vigencia de esta sesión o hasta que se restablezca.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335494(v=exchg.10).md">JetStopServiceInstance2</a></td>
-<td>Prepara una instancia para la terminación. También se puede usar para reanudar un tiempo de incoación anterior.</td>
+<td>Prepara una instancia para la finalización. También se puede usar para reanudar un tiempo de incoyunción anterior.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>

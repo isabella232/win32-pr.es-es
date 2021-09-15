@@ -11,12 +11,12 @@ api_name:
 - UserName
 api_type:
 - Schema
-ms.openlocfilehash: 836a2d26c5de63da754b562ce418026db44a9603a303b63bec80b2959ff9cdc3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 53ad1bde74f2d2a1649fa5fdee23ef70ab53b09d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118065781"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475859"
 ---
 # <a name="username-userlogoncred-element"></a>Elemento UserName (UserLogonCred)
 
@@ -32,13 +32,13 @@ Este elemento es opcional.
  />
 ```
 
-El elemento [**UserLogonCred**](schema-userlogoncred-contexttype-element.md) define el elemento **UserName.**
+El **elemento UserName** se define mediante el [**elemento UserLogonCred.**](schema-userlogoncred-contexttype-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio para \| UWP\]<br/> |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                         |

@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a28a8dfad6e5d9bc7bb603632e2eb08ceb5810f9bf02f395d825fc2d7ac64c24
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bc679a96600bff5aa4ca805018d364a6aeea8174
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119055043"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476270"
 ---
 # <a name="cdromburnstatechange-event-of-the-axwindowsmediaplayer-object"></a>Evento CdromChangeStateChange del objeto AxWindowsMediaPlayer
 
@@ -45,7 +45,7 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 
 
-| Propiedad   | Descripción                                                                                               |
+| Propiedad.   | Descripción                                                                                               |
 |------------|-----------------------------------------------------------------------------------------------------------|
 | pCdromRom (pCdrom ) | WMPLib.IWMPCdromRomThe interfaz que representa la operación de grabación que produjo el error.<br/> |
 | wmpbs      | WMPLib.WMPStateEl valor de enumeración que indica el nuevo estado.<br/>                         |

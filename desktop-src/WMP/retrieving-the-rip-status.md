@@ -3,23 +3,23 @@ title: Recuperar el estado de desgarr
 description: Recuperar el estado de desgarr
 ms.assetid: 9907bfdd-eae7-4ca2-b488-5a6ad11416f5
 keywords:
-- Reproductor de Windows Media, cds
-- Reproductor de Windows Media modelo de objetos, cds
-- modelo de objetos, resalte de CD
-- Reproductor de Windows Media ActiveX control de datos, cds
+- Reproductor de Windows Media,CD al día
+- Reproductor de Windows Media modelo de objetos, algarada de CD
+- modelo de objetos, algarada de CD
+- Reproductor de Windows Media ActiveX control, cds
 - ActiveX control, cds
-- Reproductor de Windows Media Control ActiveX dispositivos móviles, cds
+- Reproductor de Windows Media Control ActiveX dispositivos móviles, algarada de CD
 - Reproductor de Windows Media Móvil, cds
-- Cd retriev,retrieving rip status (Recuperación del estado de desgarre)
+- Recuperación del estado de desgarre de CD
 - retriev CDs,retrieving rip status (Recuperación del estado de desgarre)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a3210fa9e0db5f9260989d7bebb3650770cec7626892bc20546a6b602fb98955
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3be1fce1a46f9cc2d8477cabcc12a3a1b5bd159d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118570196"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476187"
 ---
 # <a name="retrieving-the-rip-status"></a>Recuperar el estado de desgarr
 

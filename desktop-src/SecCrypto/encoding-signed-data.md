@@ -4,12 +4,12 @@ ms.assetid: 40d1c417-6d88-4421-920f-8b40d88d28ce
 title: Codificación de datos firmados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43e5c3ab338c4e7b251416f1a488747eb0c9b897c1fa02082afcb580cb12341b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: be4a542fe0890a6ee9d51ebc1a5ee6b98bab4242
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119874854"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476438"
 ---
 # <a name="encoding-signed-data"></a>Codificación de datos firmados
 
@@ -17,7 +17,7 @@ ms.locfileid: "119874854"
 
 En la ilustración siguiente se muestra el procedimiento para codificar un mensaje firmado. En la lista que sigue a la ilustración se describen los pasos.
 
-Un mensaje puede tener varios firmantes, algoritmos hash y certificados. Aunque en la ilustración solo se muestran los certificados, [*las CRL*](../secgloss/c-gly.md)y [*las CL*](../secgloss/c-gly.md) pueden usar el mismo proceso. Caben en la ilustración dondequiera que se muestran los certificados.
+Un mensaje puede tener varios firmantes, algoritmos hash y certificados. Aunque en la ilustración solo se muestran certificados, [*CRL*](../secgloss/c-gly.md)y [*CL,*](../secgloss/c-gly.md) pueden usar el mismo proceso. Caben en la ilustración dondequiera que se muestran los certificados.
 
 ![codificación de un mensaje firmado](images/signmsg2.png)
 
@@ -47,7 +47,7 @@ Use las funciones de mensaje de bajo nivel para realizar las tareas que acaba de
 1.  Cree o recupere el contenido.
 2.  Obtener un proveedor de servicios criptográficos.
 3.  Obtenga los certificados de firmante.
-4.  Inicialice [**la estructura \_ CMSG SIGNER \_ ENCODE \_ INFO.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_signer_encode_info)
+4.  Inicialice [**la estructura CMSG \_ SIGNER \_ ENCODE \_ INFO.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_signer_encode_info)
 5.  Inicialice [**la estructura \_ CMSG SIGNED \_ ENCODE \_ INFO.**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_signed_encode_info)
 6.  Llame [**a CryptMsgCalculateEncodedLength**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength) para obtener el tamaño del blob del mensaje codificado. Asigne memoria para él.
 7.  Llame a [**CryptMsgOpenToEncode,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode)pasando CMSG SIGNED para dwMsgType y un puntero \_ a [**CMSG \_ SIGNED \_ ENCODE \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_signed_encode_info) para *pvMsgEncodeInfo* para obtener un identificador al mensaje abierto. 

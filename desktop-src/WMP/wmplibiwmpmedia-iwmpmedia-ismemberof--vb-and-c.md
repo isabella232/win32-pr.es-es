@@ -5,7 +5,7 @@ ms.assetid: 491e0dd5-38e5-47a5-9c94-f1d27d297f8d
 keywords:
 - Método isMemberOf Reproductor de Windows Media
 - Método isMemberOf Reproductor de Windows Media , interfaz IWMPMedia
-- Interfaz IWMPMedia Reproductor de Windows Media , método isMemberOf
+- Interfaz IWMPMedia Reproductor de Windows Media método , isMemberOf
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 485121f0ac9c4c441ff90e34b90ef5c9475c22995565b018d3f0e00dc5d94740
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f627e9b2f0e1c4b226dda13d280d521ad52df2ee
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117746020"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476152"
 ---
 # <a name="iwmpmediaismemberof-method"></a>IWMPMedia::isMemberOf (método)
 
@@ -64,7 +64,7 @@ Interfaz **WMPLib.IWMPPlaylist.**
 
 Valor **System.Boolean** que indica si el elemento multimedia es miembro de la lista de reproducción.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método no puede comprobar las listas de reproducción recuperadas a través de **la interfaz IWMPMediaCollection.** Para probar si un elemento multimedia es miembro de una lista de reproducción con nombre determinada, recupere la colección de listas de reproducción con la propiedad **AxWindowsMediaPlayer.playlistCollection.** Una vez recuperada la colección, recupere la lista de reproducción individual llamando al **método IWMPPlaylistCollection.getByName.**
 

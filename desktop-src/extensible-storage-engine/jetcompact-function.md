@@ -21,11 +21,11 @@ api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: ea0baef0e01b9fc6dbbd3a553eb28424f02fe45b
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122987478"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570724"
 ---
 # <a name="jetcompact-function"></a>JetCompact (Función)
 
@@ -77,7 +77,7 @@ Grupo de bits que especifica cero o más de las opciones siguientes.
 | <p>Value</p> | <p>Significado</p> | 
 |--------------|----------------|
 | <p>JET_bitCompactRepair</p> | <p>Se usa cuando se sabe que la base de datos de origen está dañada. Permite un conjunto completo de comportamientos nuevos diseñados para recuperar tantos datos como sea posible de la base de datos de origen. <strong>JetCompact</strong> con este conjunto de opciones puede devolver JET_errSuccess pero no copiar todos los datos creados en la base de datos de origen. Se omitirán los datos que se encontraban en partes dañadas de la base de datos de origen.</p> | 
-| <p>JET_bitCompactStats</p> | <p>Hace <strong>que JetCompact</strong> vuelque las estadísticas de la base de datos de origen en un archivo denominado DFRGINFO.TXT. Las estadísticas incluyen el nombre de cada tabla de la base de datos de origen, el número de filas de cada tabla, el tamaño total en bytes de todas las filas de cada tabla, el tamaño total en bytes de todas las columnas de tipo <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a> o <a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a> que eran lo suficientemente grandes como para almacenarse independientes del registro, el número de páginas hoja de índice agrupado y el número de páginas hoja de valor largo. Además, también se vuelca el tamaño de la base de datos de origen, la base de datos de destino, el tiempo necesario para la compactación de la base de datos y el espacio temporal de la base de datos.</p> | 
+| <p>JET_bitCompactStats</p> | <p>Hace <strong>que JetCompact</strong> vuelque las estadísticas de la base de datos de origen en un archivo denominado DFRGINFO.TXT. Las estadísticas incluyen el nombre de cada tabla de la base de datos de origen, el número de filas de cada tabla, el tamaño total en bytes de todas las filas de cada tabla, el tamaño total en bytes de todas las columnas de tipo <a href="gg269213(v=exchg.10).md">JET_coltypLongText</a> o <a href="gg269213(v=exchg.10).md">JET_coltypLongBinary</a> que eran lo suficientemente grandes como para almacenarse separadas del registro, el número de páginas hoja de índice agrupado y el número de páginas hoja de valor largo. Además, también se vuelca el tamaño de la base de datos de origen, la base de datos de destino, el tiempo necesario para la compactación de la base de datos y el espacio temporal de la base de datos.</p> | 
 
 
 
@@ -108,7 +108,7 @@ En caso de error, la base de datos de destino puede existir, pero no es una copi
 
 La compactación de una base de datos también se usa para actualizar una base de datos de un formato de versión anterior a una versión más moderna. Un parámetro opcional es *pconvert*, que contiene una estructura que puede contener una descripción de un archivo DLL de versión anterior que se usará para leer el formato de la base de datos de origen. Esta característica se descontinuó en Windows Server 2003. Después de Windows Server 2003, las nuevas versiones de ESE siempre pueden leer versiones anteriores del formato de base de datos y, por tanto, esta característica no es necesaria.
 
-La densidad deseada de los datos después de una operación compacta se especifica cuando se crean tablas e índices. La densidad debe estar entre el 20 % y el 100 %. Si una base de datos se lee principalmente y no se actualiza, las aplicaciones establecerán la densidad en el 100 % para reducir el número de operaciones de E/S durante el procesamiento de consultas. Sin embargo, si los datos se actualizan con frecuencia con operaciones que aumentan el tamaño de los datos almacenados junto con el registro, o si se insertan datos nuevos con frecuencia, la aplicación elegirá una densidad inferior para que las actualizaciones encuentren más a menudo los recursos necesarios disponibles. La operación de compactación de la base de datos hace que la base de datos se pueda colocar idealmente según el relleno elegido por la aplicación.
+La densidad deseada de los datos después de una operación compacta se especifica cuando se crean tablas e índices. La densidad debe estar entre el 20 % y el 100 %. Si una base de datos se lee principalmente y no se actualiza, las aplicaciones establecerán la densidad en el 100 % para reducir el número de operaciones de E/S durante el procesamiento de consultas. Sin embargo, si los datos se actualizan con frecuencia con operaciones que aumentan el tamaño de los datos almacenados junto con el registro, o si se insertan datos nuevos con frecuencia, la aplicación elegirá una densidad menor para que las actualizaciones encuentren más a menudo los recursos necesarios disponibles. La operación de compactación de la base de datos hace que la base de datos se pueda colocar idealmente según el relleno elegido por la aplicación.
 
 La compactación de la base de datos es una operación sin conexión. No se puede realizar mientras la base de datos está en uso. Como resultado, normalmente se realiza como parte de un proceso de compilación de desarrollo de una aplicación que entrega un conjunto de datos como parte de sí mismo.
 
@@ -123,7 +123,7 @@ La compactación de base de datos sin conexión toca cada bit de datos de una ba
 | <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
 | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 | <p><strong>Unicode</strong></p> | <p>Se implementa <strong>como JetCompactW</strong> (Unicode) y <strong>JetCompactA</strong> (ANSI).</p> | 
 
 

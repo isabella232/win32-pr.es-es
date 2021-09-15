@@ -5,12 +5,12 @@ ms.assetid: 04d3facf-21ec-45ca-ad9b-78fdcddc7136
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd883436954cb6e1f0270646f1a57d564f3d51d29b6023bec749d1728fda40fd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f19821cff5e8730c376e5c80fef07e67974d31d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118807557"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570877"
 ---
 # <a name="descriptor-heaps"></a>Montones de descriptores
 

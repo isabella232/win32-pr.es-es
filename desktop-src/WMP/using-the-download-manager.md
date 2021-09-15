@@ -11,12 +11,12 @@ keywords:
 - Administrador de descarga
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a271849e22d17ec406cea24aa0afb92631bf533b39ea2beb45d5cc74b635d0f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cecb7b99ae36d3881fdf80eaad7d851205b9b2e7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118830713"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476162"
 ---
 # <a name="using-the-download-manager"></a>Uso del Administrador de descargas
 

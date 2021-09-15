@@ -4,12 +4,12 @@ description: Estas interfaces no se admiten y no se deben usar. En su lugar, use
 ms.assetid: 5B53EA50-FE0F-4FA2-BB9B-77D0D915B55D
 ms.topic: article
 ms.date: 02/11/2020
-ms.openlocfilehash: b3cd31e8bb17edc6f36893b02643399c58b7a3ec100a06fc584841bc51615b1b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7c93051890a67535c79bfdd111a36d03e71dcbb9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118541832"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570936"
 ---
 # <a name="other-apis"></a>Otras API
 

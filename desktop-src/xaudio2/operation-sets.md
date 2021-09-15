@@ -4,12 +4,12 @@ ms.assetid: eec13a06-7364-dc0a-03e1-4aa6bd2aeb09
 title: Conjuntos de operaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5726a61bbad8cd06aa4c5b020dc003bc7c30e2d3eeab24750a950421a130d87e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 39f9a1178ffeeb0c9bca6cfcef0ce4b1213e3497
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119025973"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571128"
 ---
 # <a name="operation-sets"></a>Conjuntos de operaciones
 
@@ -29,7 +29,7 @@ Describe los conjuntos de operaciones XAudio2.
 <span id="How_to__Group_Audio_Methods_as_an_Operation_Set"></span><span id="how_to__group_audio_methods_as_an_operation_set"></span><span id="HOW_TO__GROUP_AUDIO_METHODS_AS_AN_OPERATION_SET"></span>[Cómo: Agrupar métodos de audio como un conjunto de operaciones](how-to--group-audio-methods-as-an-operation-set.md)
 </dt> <dd>
 
-Describe cómo usar conjuntos de operaciones XAudio2 para que un grupo de llamadas a métodos suba efecto al mismo tiempo.
+Describe cómo usar conjuntos de operaciones XAudio2 para que un grupo de llamadas de método suba al mismo tiempo.
 
 </dd> </dl>
 

@@ -4,12 +4,12 @@ ms.assetid: 2de30c3a-f982-4a65-bb25-a76b99d9ee13
 title: System.Media.DVDID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a318d0a9e240bf7d9cbf0b1daaa0aa266927d3e9fdaa811b0871e8d4a88b0c2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2fe034244326c12c9fb4f9f6f926c5647487a751
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117683524"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570448"
 ---
 # <a name="systemmediadvdid"></a>System.Media.DVDID
 
@@ -28,7 +28,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

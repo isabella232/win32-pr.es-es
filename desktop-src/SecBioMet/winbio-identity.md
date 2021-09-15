@@ -3,7 +3,7 @@ title: WINBIO_IDENTITY estructura (Winbio \_ types.h)
 description: Contiene un valor de identificación asociado a una plantilla biométrica.
 ms.assetid: 58a5f4ba-2f58-466c-90fd-9480c3c095db
 keywords:
-- WINBIO_IDENTITY estructura Windows API de marco biométrico
+- WINBIO_IDENTITY estructura Windows API de Marco biométrico
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c677a341386bcc937061798f406397028c23c10b65989480da975a9fdf81a3c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8092754b9107029e0be5800bbd5bc98bc3efb91c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118910123"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476528"
 ---
-# <a name="winbio_identity-structure"></a>Estructura WINBIO \_ IDENTITY
+# <a name="winbio_identity-structure"></a>Estructura DE \_ WINBIO IDENTITY
 
 La **estructura WINBIO \_ IDENTITY** contiene un valor de identificación asociado a una plantilla biométrica.
 
@@ -45,11 +45,11 @@ typedef struct _WINBIO_IDENTITY {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
-**Type**
+**Tipo**
 </dt> <dd>
 
 Especifica el formato de la información de identidad contenida en esta estructura. Puede ser uno de los siguientes valores:
@@ -59,9 +59,9 @@ Especifica el formato de la información de identidad contenida en esta estructu
 | Value                                                                                                                                                                                         | Significado                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
 | <span id="WINBIO_ID_TYPE_NULL"></span><span id="winbio_id_type_null"></span><dl> <dt>**TIPO DE IDENTIFICADOR DE WINBIO \_ \_ \_ NULL**</dt> </dl>             | La plantilla no tiene ningún identificador asociado.<br/>                                   |
-| <span id="WINBIO_ID_TYPE_WILDCARD"></span><span id="winbio_id_type_wildcard"></span><dl> <dt>**CARÁCTER \_ COMODÍN DE TIPO \_ DE IDENTIFICADOR DE WINBIO \_**</dt> </dl> | La estructura coincide con todas las identidades de plantilla.<br/>                       |
-| <span id="WINBIO_ID_TYPE_GUID"></span><span id="winbio_id_type_guid"></span><dl> <dt>**GUID DE TIPO \_ DE IDENTIFICADOR \_ DE \_ WINBIO**</dt> </dl>             | La estructura contiene un GUID asociado a la plantilla.<br/>          |
-| <span id="WINBIO_ID_TYPE_SID"></span><span id="winbio_id_type_sid"></span><dl> <dt>**SID \_ DE TIPO DE IDENTIFICADOR \_ \_ DE WINBIO**</dt> </dl>                | La estructura contiene el SID de cuenta asociado a la plantilla.<br/> |
+| <span id="WINBIO_ID_TYPE_WILDCARD"></span><span id="winbio_id_type_wildcard"></span><dl> <dt>**CARÁCTER COMODÍN \_ DEL TIPO DE IDENTIFICADOR \_ DE WINBIO \_**</dt> </dl> | La estructura coincide con todas las identidades de plantilla.<br/>                       |
+| <span id="WINBIO_ID_TYPE_GUID"></span><span id="winbio_id_type_guid"></span><dl> <dt>**GUID DE TIPO \_ DE IDENTIFICADOR \_ \_ DE WINBIO**</dt> </dl>             | La estructura contiene un GUID asociado a la plantilla.<br/>          |
+| <span id="WINBIO_ID_TYPE_SID"></span><span id="winbio_id_type_sid"></span><dl> <dt>**SID DE \_ TIPO \_ DE IDENTIFICADOR \_ DE WINBIO**</dt> </dl>                | La estructura contiene el SID de cuenta asociado a la plantilla.<br/> |
 
 
 
@@ -72,14 +72,14 @@ Especifica el formato de la información de identidad contenida en esta estructu
 **Valor**
 </dt> <dd>
 
-Unión que puede contener uno de los siguientes valores:
+Una unión que puede contener uno de los valores siguientes:
 
 <dl> <dt>
 
 **Null**
 </dt> <dd>
 
-Contiene 1 si el miembro **Type** es **WINBIO \_ ID TYPE \_ \_ NULL.**
+Contiene 1 si el miembro **Type** es **WINBIO \_ ID TYPE \_ \_ NULL**.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Matriz de caracteres sin signo que contienen el SID. El tamaño máximo actual d
 
 ## <a name="remarks"></a>Observaciones
 
-Esta estructura se usa en las siguientes funciones:
+Esta estructura se usa en las funciones siguientes:
 
 -   [**WinBioDeleteTemplate**](/windows/desktop/api/Winbio/nf-winbio-winbiodeletetemplate)
 -   [**WinBioEnrollCommit**](/windows/desktop/api/Winbio/nf-winbio-winbioenrollcommit)
@@ -137,9 +137,9 @@ Esta estructura se usa en las siguientes funciones:
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 \[ aplicaciones de escritorio\]<br/>                                                                    |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
-| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 

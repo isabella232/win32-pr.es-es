@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 561541f170fbe6dc5342b359e5deae69d0c92469ad2d692ee4ea3b9d59904885
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a5992803a04a771aed716251bd25ca2eceb9f94d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119737245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474629"
 ---
 # <a name="imsrdpclient10-interface"></a>Interfaz IMsRdpClient10
 
 Proporciona los métodos y propiedades necesarios para configurar y usar el control de cliente. Deriva de la [**interfaz IMsRdpClient9.**](imsrdpclient9.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IMsRdpClient10** hereda de [**IMsRdpClient9**](imsrdpclient9.md). **IMsRdpClient10** también tiene estos tipos de miembros:
 
@@ -50,7 +50,7 @@ La **interfaz IMsRdpClient10** tiene estos métodos.
 | [**Volver a conectar**](imsrdpclient8-reconnect.md)                                       | Se vuelve a conectar a la sesión remota con el nuevo ancho y alto del escritorio.<br/>  |
 | [**RequestClose**](imsrdpclient-requestclose.md)                                  | Solicita un cierre correcto del control Escritorio remoto ActiveX datos.<br/>      |
 | [**SendRemoteAction**](imsrdpclient8-sendremoteaction.md)                         | Hace que se realice una acción en la sesión remota.<br/>                  |
-| [**SetVirtualChannelOptions**](imsrdpclient-setvirtualchanneloptions.md)          | Establece las opciones de canal virtual para el control Escritorio remoto ActiveX virtual.<br/> |
+| [**SetVirtualChannelOptions**](imsrdpclient-setvirtualchanneloptions.md)          | Establece las opciones de canal virtual para el control Escritorio remoto ActiveX.<br/> |
 | [**SyncSessionDisplaySettings**](imsrdpclient9-syncsessiondisplaysettings.md)     | Sincroniza la configuración de visualización de la sesión.<br/>                                   |
 | [**UpdateSessionDisplaySettings**](/previous-versions/windows/desktop/legacy/mt703457(v=vs.85)) | Actualiza la configuración de visualización de la sesión.<br/>                                        |
 
@@ -64,7 +64,7 @@ La **interfaz IMsRdpClient10** tiene estas propiedades.
 
 
 
-| Propiedad                                                                             | Tipo de acceso           | Descripción                                                                                                                                                                                                |
+| Propiedad.                                                                             | Tipo de acceso           | Descripción                                                                                                                                                                                                |
 |:-------------------------------------------------------------------------------------|:----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AdvancedSettings2**](imsrdpclient-advancedsettings2.md)<br/>               | Solo lectura<br/>  | Recupera un puntero a la [**interfaz IMsRdpClientAdvancedSettings.**](imsrdpclientadvancedsettings-interface.md) La interfaz se puede usar para establecer la configuración avanzada para el control de cliente.<br/> |
 | [**AdvancedSettings3**](imsrdpclient2-advancedsettings3.md)<br/>              | Solo lectura<br/>  | Recupera un puntero a la [**interfaz IMsRdpClientAdvancedSettings2.**](imsrdpclientadvancedsettings2.md) La interfaz se puede usar para establecer la configuración avanzada para el control de cliente.<br/>         |
@@ -74,10 +74,10 @@ La **interfaz IMsRdpClient10** tiene estas propiedades.
 | [**AdvancedSettings7**](imsrdpclient6-advancedsettings7.md)<br/>              | Solo lectura<br/>  | Recupera la [**interfaz IMsRdpClientAdvancedSettings6.**](imsrdpclientadvancedsettings5.md)<br/>                                                                                                 |
 | [**AdvancedSettings8**](imsrdpclient7-advancedsettings8.md)<br/>              | Solo lectura<br/>  | Recupera un objeto que admite la [**interfaz IMsRdpClientAdvancedSettings7.**](imsrdpclientadvancedsettings7.md)<br/>                                                                         |
 | [**AdvancedSettings9**](imsrdpclient8-advancedsettings9.md)<br/>              | Solo lectura<br/>  | Contiene un objeto que admite la [**interfaz IMsRdpClientAdvancedSettings8.**](imsrdpclientadvancedsettings8.md)<br/>                                                                          |
-| [**Colordepth**](imsrdpclient-colordepth.md)<br/>                             | Lectura/escritura<br/> | Profundidad de color (en bits por píxel) de la conexión del control.<br/>                                                                                                                               |
-| [**ConnectedStatusText**](imsrdpclient2-connectedstatustext.md)<br/>          | Lectura/escritura<br/> | Contiene el texto que se muestra en el área cliente del control mientras el control está en estado conectado.<br/>                                                                              |
+| [**Colordepth**](imsrdpclient-colordepth.md)<br/>                             | Lectura y escritura<br/> | Profundidad de color (en bits por píxel) de la conexión del control.<br/>                                                                                                                               |
+| [**ConnectedStatusText**](imsrdpclient2-connectedstatustext.md)<br/>          | Lectura y escritura<br/> | Contiene el texto que se muestra en el área cliente del control mientras el control está en estado conectado.<br/>                                                                              |
 | [**ExtendedDisconnectReason**](imsrdpclient-extendeddisconnectreason.md)<br/> | Solo lectura<br/>  | Contiene información extendida sobre el motivo de desconexión del control.<br/>                                                                                                                     |
-| [**Fullscreen**](imsrdpclient-fullscreen.md)<br/>                             | Lectura/escritura<br/> | Determina si el control de cliente está en modo de pantalla completa.<br/>                                                                                                                                   |
+| [**Fullscreen**](imsrdpclient-fullscreen.md)<br/>                             | Lectura y escritura<br/> | Determina si el control de cliente está en modo de pantalla completa.<br/>                                                                                                                                   |
 | [**MsRdpClientShell**](imsrdpclient5-msrdpclientshell.md)<br/>                | Solo lectura<br/>  | Recupera la interfaz de configuración de cliente que admite scripts [**IMsRdpClientShell**](imsrdpclientshell.md).<br/>                                                                                               |
 | [**RemoteProgram**](imsrdpclient5-remoteprogram.md)<br/>                      | Solo lectura<br/>  | Recupera un objeto que admite la [**interfaz ITSRemoteProgram.**](itsremoteprogram.md)<br/>                                                                                                   |
 | [**RemoteProgram2**](imsrdpclient7-remoteprogram2.md)<br/>                    | Solo lectura<br/>  | Recupera un objeto que admite la [**interfaz ITSRemoteProgram2.**](itsremoteprogram2.md)<br/>                                                                                                 |
@@ -93,7 +93,7 @@ La **interfaz IMsRdpClient10** tiene estas propiedades.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener más información sobre Conexión web a Escritorio remoto, vea [Requisitos para Conexión web a Escritorio remoto](requirements-for-remote-desktop-web-connection.md).
 

@@ -1,15 +1,15 @@
 ---
-description: Obtenga información sobre la propiedad System.ItemFolderPathDisplay, que representa la ruta de acceso para mostrar fácil de usar de la carpeta primaria de un elemento.
+description: Obtenga información sobre la propiedad System.ItemFolderPathDisplay, que representa la ruta de acceso de presentación fácil de usar de la carpeta primaria de un elemento.
 ms.assetid: 16f67edc-ca8a-4c2e-9d9b-be8600446e51
 title: System.ItemFolderPathDisplay
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8fd2288f12073fe8e36707bf49aca2bc5e000d0bbe25d95fba0736b4e77af44
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c12909b29790ea2c016154cea9fccf7c53e45630
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119822345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570461"
 ---
 # <a name="systemitemfolderpathdisplay"></a>System.ItemFolderPathDisplay
 
@@ -31,21 +31,21 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 
-Si [System.ItemPathDisplay es](./props-system-itempathdisplay.md) VT \_ EMPTY, esta propiedad también debe estar vacía. De lo contrario, el origen de datos de System.ItemPathDisplay debe derivarlo correctamente.
+Si [System.ItemPathDisplay es](./props-system-itempathdisplay.md) VT \_ EMPTY, esta propiedad también debe estar vacía. De lo contrario, el origen de datos debe derivarlo correctamente de System.ItemPathDisplay.
 
 Valores de ejemplo:
 
 
 
-| Ruta de acceso                                   | ItemFolderPathDisplay    |
+| Path                                   | ItemFolderPathDisplay    |
 |----------------------------------------|--------------------------|
-| c: \\ archivos \\ de \\hello.txt         | c: \\ archivos \\ personales      |
+| c: \\ archivos personales \\ \\hello.txt         | c: \\ archivos \\ personales      |
 | \\\\servidor \\ compartido \\ mydir \\goodnews.doc | \\\\server \\ share \\ mydir |
-| \\\\servidor \\ compartido \\numbers.xls         | \\\\recurso \\ compartido de servidor        |
+| \\\\servidor \\ compartidonumbers.xls \\         | \\\\recurso \\ compartido de servidor        |
 | c: \\ food \\ MyFolder                     | c: \\ comida                 |
 | /Mailbox Account/Inbox/'Re: Hello!'    | /Cuenta de buzón/Bandeja de entrada   |
 

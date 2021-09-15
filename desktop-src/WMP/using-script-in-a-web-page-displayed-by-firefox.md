@@ -20,22 +20,22 @@ keywords:
 - Inserción de páginas web, ejemplo de scripting
 - Reproductor de Windows Media,Firefox
 - Reproductor de Windows Media modelo de objetos,Firefox
-- object model,Firefox
+- modelo de objetos, Firefox
 - Reproductor de Windows Media Mobile,Firefox
-- Reproductor de Windows Media ActiveX control,Firefox
+- control Reproductor de Windows Media ActiveX, Firefox
 - Reproductor de Windows Media Control de ActiveX móvil,Firefox
 - ActiveX control, Firefox
 - Firefox, ejemplo de scripting
-- Inserción de páginas web, Firefox
+- Inserción de páginas web,Firefox
 - ejemplo de scripting para la inserción de páginas web
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 450b03f7adefca1a887fb31207f0a3280e1925c9d3e1f1066df370d87f0a7779
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b8629f87f954d12602999f76483fdd36ab279290
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119762065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476168"
 ---
 # <a name="using-script-in-a-web-page-displayed-by-firefox"></a>Usar script en una página web mostrada por Firefox
 
@@ -56,7 +56,7 @@ El script de una página web puede usar el modelo de objetos Player para control
 
 
 
-Muchos de los objetos del Reproductor de Windows Media modelo de objetos son compatibles con Internet Explorer y el complemento firefox. Sin embargo, hay algunos objetos que no son compatibles con el complemento firefox. En la tabla siguiente se enumeran todos los objetos del modelo de objetos player y se muestran los objetos admitidos por el complemento firefox.
+Muchos de los objetos del Reproductor de Windows Media modelo de objetos son compatibles con Internet Explorer y el complemento firefox. Sin embargo, hay algunos objetos que no son compatibles con el complemento firefox. En la tabla siguiente se enumeran todos los objetos del modelo de objetos player y se muestran los objetos que admite el complemento firefox.
 
 
 
@@ -64,23 +64,23 @@ Muchos de los objetos del Reproductor de Windows Media modelo de objetos son com
 |-----------------------------------------------------|-----------------|
 | [Cdrom](cdrom-object.md)                           | No              |
 | [CdromCollection](cdromcollection-object.md)       | No              |
-| [ClosedCaption](closedcaption-object.md)           | Sí             |
+| [ClosedCaption](closedcaption-object.md)           | sí             |
 | [Controles](controls-object.md)                     | No              |
-| [Dvd](dvd-object.md)                               | No              |
-| [Error](error-object.md)                           | Sí             |
-| [ErrorItem](erroritem-object.md)                   | Sí             |
-| [Elementos multimedia](media-object.md)                           | Sí             |
+| [DVD](dvd-object.md)                               | No              |
+| [Error](error-object.md)                           | sí             |
+| [ErrorItem](erroritem-object.md)                   | sí             |
+| [Elementos multimedia](media-object.md)                           | sí             |
 | [MediaCollection](mediacollection-object.md)       | No              |
 | [MetadataPicture](metadatapicture-object.md)       | No              |
 | [MetadataText](metadatatext-object.md)             | No              |
-| [Red](network-object.md)                       | Sí             |
-| [Reproductor](player-object.md)                         | Sí             |
+| [Network](network-object.md)                       | sí             |
+| [Reproductor](player-object.md)                         | sí             |
 | [PlayerApplication](playerapplication-object.md)   | No              |
-| [Lista de reproducción](playlist-object.md)                     | Sí             |
+| [Lista de reproducción](playlist-object.md)                     | sí             |
 | [PlaylistArray](playlistarray-object.md)           | No              |
 | [PlaylistCollection](playlistcollection-object.md) | No              |
 | [Consultar](query-object.md)                           | No              |
-| [Configuración](settings-object.md)                     | Sí             |
+| [Configuración](settings-object.md)                     | sí             |
 | [StringCollection](stringcollection-object.md)     | No              |
 
 
@@ -93,13 +93,13 @@ El complemento Firefox admite la propiedad **Player.pluginVersionInfo,** pero no
 
 El complemento Firefox admite el **objeto Media,** incluida [la propiedad getItemInfoByType.](media-getiteminfobytype.md) Sin embargo, en un explorador Firefox, la **propiedad getItemInfoByType** no admite los tipos de valor devuelto **MetadataText** y **MetadataPicture.**
 
-El complemento Firefox admite el [objeto Configuración](settings-object.md) excepto para el método [setMode](settings-setmode.md) y la [propiedad requestMediaAccessRights.](settings-requestmediaaccessrights.md) En un explorador Firefox, la **propiedad requestMediaAccessRight** siempre devuelve false.
+El complemento firefox admite el objeto [Configuración](settings-object.md) excepto para el [método setMode](settings-setmode.md) y la [propiedad requestMediaAccessRights.](settings-requestmediaaccessrights.md) En un explorador Firefox, la **propiedad requestMediaAccessRight** siempre devuelve false.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Uso del Reproductor de Windows Media Control con Firefox**](using-the-windows-media-player-control-with-firefox.md)
+[**Uso de Reproductor de Windows Media Control con Firefox**](using-the-windows-media-player-control-with-firefox.md)
 </dt> </dl>
 
  

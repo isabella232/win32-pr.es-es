@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e6362c734cbbf30defa8fed75f28c6f39397d75977488d9efc170d2647a9b3d3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a2e9fe545cb16f8ac1fef1935b9d7e97075521b6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119950365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573057"
 ---
 # <a name="mul"></a>mul
 
@@ -73,7 +73,7 @@ Hay 9 versiones sobrecargadas de esta función; las versiones sobrecargadas cont
 | 4       |      |         |                                                               |                                                                |                                                                          |
 |         | x    | in      | vector                                                        | float, int                                                     | cualquiera                                                                      |
 |         | y    | in      | escalar                                                        | float, int                                                     | 1                                                                        |
-|         | Ret  | out     | vector                                                        | float, int                                                     | mismas dimensiones que la entrada x                                             |
+|         | Ret  | out     | vector                                                        | float, int                                                     | las mismas dimensiones que la entrada x                                             |
 | 5       |      |         |                                                               |                                                                |                                                                          |
 |         | x    | in      | vector                                                        | float, int                                                     | cualquiera                                                                      |
 |         | y    | in      | vector                                                        | float, int                                                     | las mismas dimensiones que la entrada x                                             |
@@ -107,13 +107,13 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible |
 |------------------------------------------------------------------------------------|-----------|
-| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) y modelos de sombreador superiores | Sí       |
+| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) y modelos de sombreador superiores | sí       |
 
 
 
  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

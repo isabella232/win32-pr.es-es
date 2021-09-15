@@ -3,7 +3,7 @@ title: Función gluQuadricTexture (Glu.h)
 description: La función gluQuadricTexture especifica si se van a texturar los cuádigos.
 ms.assetid: 11681497-f099-4856-a0ac-6a44abd3e1a1
 keywords:
-- Función GluQuadricTexture OpenGL
+- Función gluQuadricTexture OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bbde88e0a878fd59e01ad0a450cf4cbe9831c4ad867c8029373586a8efe830eb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0cc395564b6c6f30f38a8c5129c489d0bfca6b80
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118937486"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476701"
 ---
-# <a name="gluquadrictexture-function"></a>Función gluQuadricTexture
+# <a name="gluquadrictexture-function"></a>función gluQuadricTexture
 
 La **función gluQuadricTexture** especifica si se van a texturar los cuádigos.
 
@@ -70,7 +70,7 @@ Marca que indica si se van a generar coordenadas de textura. Los valores siguien
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función gluQuadricTexture** especifica si se van a generar coordenadas de textura para los cuádigos representados con **quadObject**.
 

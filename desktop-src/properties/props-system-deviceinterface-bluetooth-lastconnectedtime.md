@@ -4,12 +4,12 @@ ms.assetid: b741f3a2-f4e5-4c29-b7b9-b6798e262a7c
 title: System.DeviceInterface. Bluetooth. LastConnectedTime
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ca52afccb138c9d3f71acf77dd9ad5cc082a5afbc16bd479519c5a9ce475e6c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ed1743b11bcc35c5b5273f635ab7d381ceb69c88
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119946505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573328"
 ---
 # <a name="systemdeviceinterfacebluetoothlastconnectedtime"></a>System.DeviceInterface. Bluetooth. LastConnectedTime
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

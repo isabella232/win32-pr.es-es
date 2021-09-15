@@ -5,22 +5,22 @@ ms.assetid: 30935099-7f33-4745-8a31-f9a28ab78b63
 ms.tgt_platform: multiple
 keywords:
 - Propiedad AdvancedSettings4 Servicios de Escritorio remoto
-- Propiedad AdvancedSettings4 Servicios de Escritorio remoto interfaz , IMsRdpClient3
-- Interfaz IMsRdpClient3 Servicios de Escritorio remoto propiedad , AdvancedSettings4
-- Propiedad AdvancedSettings4 Servicios de Escritorio remoto interfaz , IMsRdpClient4
-- Interfaz IMsRdpClient4 Servicios de Escritorio remoto propiedad , AdvancedSettings4
-- Propiedad AdvancedSettings4 Servicios de Escritorio remoto interfaz , IMsRdpClient5
-- Interfaz IMsRdpClient5 Servicios de Escritorio remoto propiedad , AdvancedSettings4
-- Propiedad AdvancedSettings4 Servicios de Escritorio remoto interfaz , IMsRdpClient6
-- Interfaz IMsRdpClient6 Servicios de Escritorio remoto propiedad , AdvancedSettings4
-- Propiedad AdvancedSettings4 Servicios de Escritorio remoto interfaz , IMsRdpClient7
-- Interfaz IMsRdpClient7 Servicios de Escritorio remoto propiedad , AdvancedSettings4
-- Propiedad AdvancedSettings4 Servicios de Escritorio remoto interfaz , IMsRdpClient8
-- Interfaz IMsRdpClient8 Servicios de Escritorio remoto propiedad , AdvancedSettings4
-- Propiedad AdvancedSettings4 Servicios de Escritorio remoto interfaz , IMsRdpClient9
-- Interfaz IMsRdpClient9 Servicios de Escritorio remoto propiedad , AdvancedSettings4
-- Propiedad AdvancedSettings4 Servicios de Escritorio remoto interfaz , IMsRdpClient10
-- Interfaz IMsRdpClient10 Servicios de Escritorio remoto propiedad , AdvancedSettings4
+- Interfaz AdvancedSettings4 Servicios de Escritorio remoto , IMsRdpClient3
+- Interfaz IMsRdpClient3 Servicios de Escritorio remoto , propiedad AdvancedSettings4
+- Propiedad AdvancedSettings4 Servicios de Escritorio remoto , interfaz IMsRdpClient4
+- Interfaz IMsRdpClient4 Servicios de Escritorio remoto , propiedad AdvancedSettings4
+- Propiedad AdvancedSettings4 Servicios de Escritorio remoto , interfaz IMsRdpClient5
+- Interfaz IMsRdpClient5 Servicios de Escritorio remoto , propiedad AdvancedSettings4
+- Propiedad AdvancedSettings4 Servicios de Escritorio remoto , interfaz IMsRdpClient6
+- Interfaz IMsRdpClient6 Servicios de Escritorio remoto , propiedad AdvancedSettings4
+- Propiedad AdvancedSettings4 Servicios de Escritorio remoto , interfaz IMsRdpClient7
+- Interfaz IMsRdpClient7 Servicios de Escritorio remoto , propiedad AdvancedSettings4
+- Propiedad AdvancedSettings4 Servicios de Escritorio remoto , interfaz IMsRdpClient8
+- Interfaz IMsRdpClient8 Servicios de Escritorio remoto , propiedad AdvancedSettings4
+- Propiedad AdvancedSettings4 Servicios de Escritorio remoto , interfaz IMsRdpClient9
+- Interfaz IMsRdpClient9 Servicios de Escritorio remoto , propiedad AdvancedSettings4
+- Propiedad AdvancedSettings4 Servicios de Escritorio remoto , interfaz IMsRdpClient10
+- Interfaz IMsRdpClient10 Servicios de Escritorio remoto , propiedad AdvancedSettings4
 topic_type:
 - apiref
 api_name:
@@ -46,12 +46,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77e8bd4d5562f5f7b73eac6c580fe7b033a10b8ce7f0471b2d1ca969cd7ae0ce
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c7a229c28b645e7920212a04cc44ca5a9ce42be3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120033545"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474621"
 ---
 # <a name="imsrdpclient3advancedsettings4-property"></a>Propiedad IMsRdpClient3::AdvancedSettings4
 
@@ -72,13 +72,13 @@ HRESULT get_AdvancedSettings4(
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Puntero a la [**interfaz IMsRdpClientAdvancedSettings3.**](imsrdpclientadvancedsettings3.md) La interfaz se puede usar para establecer la configuración avanzada para el control de cliente.
+Puntero a la [**interfaz IMsRdpClientAdvancedSettings3.**](imsrdpclientadvancedsettings3.md) La interfaz se puede usar para establecer la configuración avanzada del control de cliente.
 
 ## <a name="error-codes"></a>Códigos de error
 
 Si el método se realiza correctamente, **se devuelve S \_ OK.** Cualquier otro **valor HRESULT** indica que se ha dado error en la llamada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad no se puede establecer cuando el control está conectado.
 
@@ -94,7 +94,7 @@ Para obtener más información sobre Conexión web a Escritorio remoto, vea [Req
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                         |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl> |
-| IID<br/>                      | IID IMsRdpClient3 se define como \_ 91b7cbc5-a72e-4fa0-9300-d647d7e897ff<br/>       |
+| IID<br/>                      | IID \_ IMsRdpClient3 se define como 91b7cbc5-a72e-4fa0-9300-d647d7e897ff<br/>       |
 
 
 

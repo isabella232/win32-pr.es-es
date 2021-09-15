@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 4ef512c62058d2f4726c21aa8631fef5230ec35ecfe39a3b8dc5470fc93b74e4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 41e77f3803fa65db1573c6619ebf1265b7418924
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117767169"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476468"
 ---
 # <a name="ekuscount-property"></a>Propiedad EKUs.Count
 
@@ -41,7 +41,7 @@ EKUs.Count As Long
 
 Número de objetos [**EKU**](eku.md) de la colección. Cada **objeto EKU** representa una única propiedad de uso de clave extendida (EKU) de un certificado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **propiedad Count** se puede usar para especificar el último objeto [**EKU**](eku.md) de una colección al recuperar un objeto **EKU** específico mediante la [**propiedad EKUs.Item.**](ekus-item.md)
 

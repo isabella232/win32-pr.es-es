@@ -4,12 +4,12 @@ ms.assetid: 08f1872b-6e4d-44ee-abc7-48685e435acc
 title: Información general sobre extensibilidad de metadatos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7d38206fb02c47edbe9744deb6ceb0093277d8354f8717aa89c3f1976bdeb51
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6576585f7f35628432504086695dd6c64091d3b0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119088177"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570341"
 ---
 # <a name="metadata-extensibility-overview"></a>Información general sobre extensibilidad de metadatos
 
@@ -19,11 +19,11 @@ En este tema se incluyen las siguientes secciones.
 
 -   [Requisitos previos](#prerequisites)
 -   [Introducción](#introduction)
--   [Crear un lector de metadatos](#creating-a-metadata-reader)
+-   [Creación de un lector de metadatos](#creating-a-metadata-reader)
     -   [IWICMetadataReader (interfaz)](#iwicmetadatareader-interface)
     -   [IWICPersistStream (interfaz)](#iwicpersiststream-interface)
     -   [IWICStreamProvider (interfaz)](#iwicstreamprovider-interface)
--   [Crear un escritor de metadatos](#creating-a-metadata-writer)
+-   [Creación de un escritor de metadatos](#creating-a-metadata-writer)
     -   [IWICMetadataWriter (Interfaz)](#iwicmetadatawriter-interface)
     -   [IWICPersistStream (interfaz)](#iwicpersiststream-interface)
     -   [IWICStreamProvider (interfaz)](#iwicstreamprovider-interface)
@@ -31,40 +31,40 @@ En este tema se incluyen las siguientes secciones.
     -   [Claves del Registro del controlador de metadatos](#metadata-handler-registry-keys)
     -   [Lectores de metadatos](#metadata-readers)
     -   [Escritores de metadatos](#metadata-writers)
-    -   [Firmar un controlador de metadatos](#signing-a-metadata-handler)
+    -   [Firma de un controlador de metadatos](#signing-a-metadata-handler)
 -   [Consideraciones especiales](#special-considerations)
     -   [PROPVARIANTS](#propvariants)
-    -   [Controladores de 8BIM](#8bim-handlers)
+    -   [8Bim Handlers (Controladores de 8BIM)](#8bim-handlers)
 -   [Temas relacionados](#related-topics)
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Para entender este tema, debe tener una comprensión detallada de WIC, sus componentes y metadatos para imágenes. Para obtener más información sobre los metadatos de WIC, vea [Información general sobre los metadatos de WIC.](-wic-about-metadata.md) Para obtener más información sobre los componentes de WIC, vea Windows Imaging Component Overview (Información general sobre componentes de creación [de imágenes).](-wic-about-windows-imaging-codec.md)
+Para entender este tema, debe tener una comprensión detallada de WIC, sus componentes y metadatos para imágenes. Para obtener más información sobre los metadatos de WIC, vea Información [general sobre los metadatos de WIC.](-wic-about-metadata.md) Para obtener más información sobre los componentes de WIC, vea el Windows información general del [componente de creación de imágenes.](-wic-about-windows-imaging-codec.md)
 
 ## <a name="introduction"></a>Introducción
 
-Como se describe en Información general de metadatos de [WIC,](-wic-about-metadata.md)a menudo hay varios bloques de metadatos dentro de una imagen, cada uno de los que expone diferentes tipos de información en diferentes formatos de metadatos. Para interactuar con un formato de metadatos insertado dentro de una imagen, una aplicación debe usar un controlador de metadatos adecuado. WIC proporciona varios controladores de metadatos (lectores y escritores de metadatos) que permiten leer y escribir tipos específicos de metadatos, como Exif o XMP.
+Como se describe en información general sobre metadatos de [WIC,](-wic-about-metadata.md)a menudo hay varios bloques de metadatos dentro de una imagen, cada uno de los que expone distintos tipos de información en diferentes formatos de metadatos. Para interactuar con un formato de metadatos insertado dentro de una imagen, una aplicación debe usar un controlador de metadatos adecuado. WIC proporciona varios controladores de metadatos (tanto lectores de metadatos como escritores) que permiten leer y escribir tipos específicos de metadatos, como Exif o XMP.
 
 Además de los controladores nativos proporcionados, WIC proporciona API que permiten crear nuevos controladores de metadatos que participan en la detección de componentes en tiempo de ejecución de WIC. Esto permite a las aplicaciones que usan WIC leer y escribir los formatos de metadatos personalizados.
 
 Los pasos siguientes permiten a los controladores de metadatos participar en la detección de metadatos en tiempo de ejecución de WIC.
 
--   Implemente una clase de controlador de lector de metadatos [**(IWICMetadataReader)**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatareader)que exponga las interfaces WIC necesarias para leer el formato de metadatos personalizado. Esto permite a las aplicaciones basadas en WIC leer el formato de metadatos de la misma manera que leen los formatos de metadatos nativos.
--   Implemente una clase de controlador metadata-writer [**(IWICMetadataWriter)**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatawriter)que exponga las interfaces WIC necesarias para codificar el formato de metadatos personalizado. Esto permite a las aplicaciones basadas en WIC serializar el formato de metadatos en formatos de imagen admitidos.
--   Firmar digitalmente y registrar los controladores de metadatos. Esto permite detectar los controladores de metadatos en tiempo de ejecución mediante la coincidencia del patrón de identificación en el Registro con el patrón incrustado en el archivo de imagen.
+-   Implemente una clase de controlador de lector de metadatos [**(IWICMetadataReader)**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatareader)que exponga las interfaces WIC necesarias para leer el formato de metadatos personalizado. Esto permite que las aplicaciones basadas en WIC lean el formato de metadatos de la misma manera que leen los formatos de metadatos nativos.
+-   Implemente una clase de controlador de escritor de metadatos [**(IWICMetadataWriter)**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatawriter)que exponga las interfaces WIC necesarias para codificar el formato de metadatos personalizado. Esto permite a las aplicaciones basadas en WIC serializar el formato de metadatos en formatos de imagen admitidos.
+-   Firmar y registrar digitalmente los controladores de metadatos. Esto permite detectar los controladores de metadatos en tiempo de ejecución haciendo coincidir el patrón de identificación en el Registro con el patrón incrustado en el archivo de imagen.
 
-## <a name="creating-a-metadata-reader"></a>Crear un lector de metadatos
+## <a name="creating-a-metadata-reader"></a>Creación de un lector de metadatos
 
-El acceso principal a los bloques de metadatos dentro de un códec es a través de la [**interfaz IWICMetadataBlockReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader) que implementa cada códec WIC. Esta interfaz enumera cada uno de los bloques de metadatos insertados en un formato de imagen para que se pueda detectar y crear una instancia del controlador de metadatos adecuado para cada bloque. Los bloques de metadatos que WIC no reconoce se consideran desconocidos y se definen como EL GUID CLSID \_ WICUnknownMetadataReader. Para que WIC reconozca el formato de metadatos, debe crear una clase que implemente tres interfaces: [**IWICMetadataReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatareader), [**IWICPersistStream**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicpersiststream)e [**IWICStreamProvider.**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicstreamprovider)
+El acceso principal a los bloques de metadatos dentro de un códec es a través de la [**interfaz IWICMetadataBlockReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader) que implementa cada códec WIC. Esta interfaz enumera cada uno de los bloques de metadatos insertados en un formato de imagen para que se puedan detectar y crear instancias del controlador de metadatos adecuado para cada bloque. Los bloques de metadatos que WIC no reconoce se consideran desconocidos y se definen como GUID CLSID \_ WICUnknownMetadataReader. Para que WIC reconozca el formato de metadatos, debe crear una clase que implemente tres interfaces: [**IWICMetadataReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatareader), [**IWICPersistStream**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicpersiststream)e [**IWICStreamProvider.**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicstreamprovider)
 
 > [!Note]  
-> Si el formato de metadatos tiene restricciones que representan que algunos métodos de las interfaces necesarias son inadecuados, estos métodos deben devolver \_ WINCODEC ERR \_ UNSUPPORTEDOPERATION.
+> Si el formato de metadatos tiene restricciones que representan algunos métodos de las interfaces necesarias como inadecuados, estos métodos deben devolver WINCODEC \_ ERR \_ UNSUPPORTEDOPERATION.
 
  
 
 ### <a name="iwicmetadatareader-interface"></a>IWICMetadataReader (interfaz)
 
-La [**interfaz IWICMetadataReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatareader) debe implementarse al crear un lector de metadatos. Esta interfaz proporciona acceso a los elementos de metadatos de subling dentro del flujo de datos de un formato de metadatos.
+La [**interfaz IWICMetadataReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatareader) debe implementarse al crear un lector de metadatos. Esta interfaz proporciona acceso a los elementos de metadatos de subling en el flujo de datos de un formato de metadatos.
 
 El código siguiente muestra la definición de la interfaz del lector de metadatos tal como se define en el archivo wincodecsdk.idl.
 
@@ -157,19 +157,19 @@ if (SUCCEEDED(hr))
 
 
 
-El **método GetValue** recupera un elemento de metadatos específico por esquema o identificador. Este método es similar al **método GetValueByIndex,** salvo que recupera un elemento de metadatos que tiene un esquema o identificador específicos.
+El **método GetValue** recupera un elemento de metadatos específico por esquema o identificador. Este método es similar al **método GetValueByIndex,** salvo que recupera un elemento de metadatos que tiene un esquema o un identificador específicos.
 
 El **método GetEnumerator** devuelve un enumerador de cada elemento de metadatos del bloque de metadatos. Esto permite a las aplicaciones usar un enumerador para navegar por el formato de metadatos.
 
 Si el formato de metadatos no tiene una noción de esquemas para los elementos de metadatos, getValue... Los métodos deben omitir esta propiedad. Sin embargo, si el formato admite la nomenclatura de esquema, debe prever un **valor** NULL.
 
-Si un elemento de metadatos es un bloque de metadatos incrustado, cree un controlador de metadatos a partir de la subtransmisión del contenido insertado y devuelva el nuevo controlador de metadatos. Si no hay ningún lector de metadatos disponible para el bloque anidado, cree una instancia y devuelva un lector de metadatos desconocido. Para crear un nuevo lector de metadatos para el bloque incrustado, llame a los métodos **CreateMetadataReaderFromContainer** o **CreateMetadataReader** del generador de componentes o llame a la función [**WICMatchMetadataContent.**](/windows/desktop/api/wincodecsdk/nf-wincodecsdk-wicmatchmetadatacontent)
+Si un elemento de metadatos es un bloque de metadatos incrustado, cree un controlador de metadatos a partir de la subsección del contenido incrustado y devuelva el nuevo controlador de metadatos. Si no hay ningún lector de metadatos disponible para el bloque anidado, cree una instancia y devuelva un lector de metadatos desconocido. Para crear un nuevo lector de metadatos para el bloque incrustado, llame a los métodos **CreateMetadataReaderFromContainer** o **CreateMetadataReader** del generador de componentes, o llame a la función [**WICMatchMetadataContent.**](/windows/desktop/api/wincodecsdk/nf-wincodecsdk-wicmatchmetadatacontent)
 
 Si el flujo de metadatos contiene contenido big-endian, el lector de metadatos es responsable de intercambiar los valores de datos que procesa. También es responsable de informar a los lectores de metadatos anidados de que están trabajando con el flujo de datos big-endian. Sin embargo, todos los valores deben devolverse en formato little-endian.
 
 Implemente la compatibilidad con la navegación del espacio de nombres mediante consultas en las que el identificador del elemento de metadatos sea `VT_CLSID` (un GUID) correspondiente a un formato de metadatos. Si se identifica un lector de metadatos anidado para ese formato durante el análisis, se debe devolver. Esto permite a las aplicaciones usar un lector de consultas de metadatos para buscar en el formato de metadatos.
 
-Al obtener un elemento de metadatos por identificador, debe usar [propVariantChangeType Function](/windows/win32/api/propvarutil/nf-propvarutil-propvariantchangetype) para convertir el identificador en el tipo esperado. Por ejemplo, el lector IFD coercerá un identificador para que escriba para que coincida con el tipo de datos de un identificador de etiqueta `VT_UI2` IFD USHORT. Para ello, el tipo de entrada y el tipo esperado [deben ser PROPVARIANT.](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) Esto no es necesario, pero esta coerción simplifica el código que llama al lector para consultar elementos de metadatos.
+Al obtener un elemento de metadatos por identificador, debe usar la función [PropVariantChangeType](/windows/win32/api/propvarutil/nf-propvarutil-propvariantchangetype) para convertir el identificador en el tipo esperado. Por ejemplo, el lector IFD coercerá un identificador de tipo para que coincida con el tipo de datos de un identificador de etiqueta `VT_UI2` IFD USHORT. Para ello, el tipo de entrada y el tipo esperado deben [ser PROPVARIANT.](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) Esto no es necesario, pero esta coerción simplifica el código que llama al lector para consultar los elementos de metadatos.
 
 ### <a name="iwicpersiststream-interface"></a>IWICPersistStream (interfaz)
 
@@ -194,7 +194,7 @@ interface IWICPersistStream : IPersistStream
 };
 ```
 
-El **método LoadEx** proporciona al lector de metadatos un flujo de datos que contiene el bloque de metadatos. El lector analiza esta secuencia para acceder a los elementos de metadatos subyacentes. El lector de metadatos se inicializa con una sub secuencia que se coloca al principio del contenido de metadatos sin formato. Si el lector no requiere la secuencia completa, la subtransmisión se limita en intervalo solo al contenido del bloque de metadatos. De lo contrario, el flujo de metadatos completo se proporciona con la posición establecida al principio del bloque de metadatos.
+El **método LoadEx** proporciona al lector de metadatos un flujo de datos que contiene el bloque de metadatos. El lector analiza esta secuencia para acceder a los elementos de metadatos subyacentes. El lector de metadatos se inicializa con una sub secuencia que se coloca al principio del contenido de metadatos sin procesar. Si el lector no requiere la secuencia completa, la subsección está limitada en intervalo solo al contenido del bloque de metadatos; De lo contrario, el flujo de metadatos completo se proporciona con la posición establecida al principio del bloque de metadatos.
 
 Los **escritores de** metadatos usan el método SaveEx para serializar el bloque de metadatos. Cuando **se usa SaveEx** en un lector de metadatos, debe devolver WINCODEC \_ ERR \_ UNSUPPORTEDOPERATION.
 
@@ -226,24 +226,24 @@ interface IWICStreamProvider : IUnknown
 
 El **método GetStream** recupera una referencia a la secuencia de metadatos. La secuencia que devuelve debe tener el puntero de secuencia restablecido a la posición inicial. Si el formato de metadatos requiere acceso completo a la secuencia, la posición inicial debe ser el inicio del bloque de metadatos.
 
-El **método GetPersistOptions** devuelve las opciones actuales de la secuencia de la [**enumeración WICPersistOptions.**](/windows/desktop/api/Wincodecsdk/ne-wincodecsdk-wicpersistoptions)
+El **método GetPersistOptions** devuelve las opciones actuales del flujo de la [**enumeración WICPersistOptions.**](/windows/desktop/api/Wincodecsdk/ne-wincodecsdk-wicpersistoptions)
 
 El **método GetPreferredVendorGUID** devuelve el GUID del proveedor del lector de metadatos.
 
 El **método RefreshStream** actualiza el flujo de metadatos. Este método debe llamar a **LoadEx con** un **flujo NULL** para los bloques de metadatos anidados. Esto es necesario porque es posible que los bloques de metadatos anidados y sus elementos ya no existan, debido a la edición en contexto.
 
-## <a name="creating-a-metadata-writer"></a>Crear un escritor de metadatos
+## <a name="creating-a-metadata-writer"></a>Creación de un escritor de metadatos
 
-Un escritor de metadatos es un tipo de controlador de metadatos que proporciona una manera de serializar un bloque de metadatos en un marco de imagen o fuera de un marco individual si el formato de imagen lo admite. El acceso principal a los escritores de metadatos dentro de un códec es a través de la [**interfaz IWICMetadataBlockWriter**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockwriter) que implementa cada codificador WIC. Esta interfaz permite a las aplicaciones enumerar cada uno de los bloques de metadatos insertados en una imagen para que se puedan detectar y crear instancias del escritor de metadatos adecuado para cada bloque de metadatos. Los bloques de metadatos que no tienen un escritor de metadatos correspondiente se consideran desconocidos y se definen como EL GUID CLSID \_ WICUnknownMetadataReader. Para permitir que las aplicaciones habilitadas para WIC serialice y escriban el formato de metadatos, debe crear una clase que implemente las interfaces siguientes: [**IWICMetadataWriter**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatawriter), [**IWICMetadataReader,**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatareader) [**IWICPersistStream e**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicpersiststream) [**IWICStreamProvider**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicstreamprovider).
+Un escritor de metadatos es un tipo de controlador de metadatos que proporciona una manera de serializar un bloque de metadatos en un marco de imagen o fuera de un marco individual si el formato de imagen lo admite. El acceso principal a los escritores de metadatos dentro de un códec es a través de la [**interfaz IWICMetadataBlockWriter**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockwriter) que implementa cada codificador WIC. Esta interfaz permite a las aplicaciones enumerar cada uno de los bloques de metadatos insertados en una imagen para que se puedan detectar y crear instancias del escritor de metadatos adecuado para cada bloque de metadatos. Los bloques de metadatos que no tienen un escritor de metadatos correspondiente se consideran desconocidos y se definen como GUID CLSID \_ WICUnknownMetadataReader. Para permitir que las aplicaciones habilitadas para WIC serialice y escriban el formato de metadatos, debe crear una clase que implemente las interfaces siguientes: [**IWICMetadataWriter**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatawriter), [**IWICMetadataReader,**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatareader) [**IWICPersistStream**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicpersiststream)e [**IWICStreamProvider**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicstreamprovider).
 
 > [!Note]  
-> Si el formato de metadatos tiene restricciones que representan que algunos métodos de las interfaces necesarias son inadecuados, estos métodos deben devolver \_ WINCODEC ERR \_ UNSUPPORTEDOPERATION.
+> Si el formato de metadatos tiene restricciones que representan algunos métodos de las interfaces necesarias como inadecuados, estos métodos deben devolver WINCODEC \_ ERR \_ UNSUPPORTEDOPERATION.
 
  
 
 ### <a name="iwicmetadatawriter-interface"></a>IWICMetadataWriter (Interfaz)
 
-El escritor de metadatos debe implementar la interfaz [**IWICMetadataWriter.**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatawriter) Además, dado que **IWICMetadataWriter** hereda de [**IWICMetadataReader,**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatareader)también debe implementar todos los métodos de **IWICMetadataReader**. Dado que ambos tipos de controlador requieren la misma herencia de interfaz, es posible que desee crear una sola clase que proporciona funcionalidad de lectura y escritura.
+El escritor de metadatos debe implementar la interfaz [**IWICMetadataWriter.**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatawriter) Además, dado que **IWICMetadataWriter** hereda de [**IWICMetadataReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatareader), también debe implementar todos los métodos de **IWICMetadataReader**. Dado que ambos tipos de controlador requieren la misma herencia de interfaz, es posible que desee crear una sola clase que proporciona la funcionalidad de lectura y escritura.
 
 El código siguiente muestra la definición de la interfaz del escritor de metadatos tal como se define en el archivo wincodecsdk.idl.
 
@@ -280,17 +280,17 @@ El **método SetValueByIndex** escribe el elemento de metadatos especificado en 
 
 El **método RemoveValue** quita el elemento de metadatos especificado del flujo de metadatos.
 
-El **método RemoveValueByIndex** quita del flujo de metadatos el elemento de metadatos en el índice especificado. Después de quitar un elemento, se espera que los elementos de metadatos restantes ocupen el índice desocupado si el índice no es el último. También se espera que el recuento cambie después de quitar el elemento.
+El **método RemoveValueByIndex** quita del flujo de metadatos el elemento de metadatos en el índice especificado. Después de quitar un elemento, se espera que los elementos de metadatos restantes ocupen el índice vacío si el índice no es el último índice. También se espera que el recuento cambie después de quitar el elemento.
 
 Es responsabilidad del escritor de metadatos convertir los elementos [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) a la estructura subyacente que requiere el formato. Sin embargo, a diferencia del lector de metadatos, los tipos VARIANT normalmente no se deben convertir en tipos diferentes, ya que el autor de la llamada indica específicamente qué tipo de datos usar.
 
-El escritor de metadatos debe confirmar todos los elementos de metadatos en el flujo de imágenes, incluidos los valores ocultos o no reconocidos. Esto incluye bloques de metadatos anidados desconocidos. Sin embargo, es responsabilidad del codificador establecer los elementos de metadatos críticos antes de iniciar la operación de guardado.
+El escritor de metadatos debe confirmar todos los elementos de metadatos en la secuencia de imágenes, incluidos los valores ocultos o no reconocidos. Esto incluye bloques de metadatos anidados desconocidos. Sin embargo, es responsabilidad del codificador establecer los elementos de metadatos críticos antes de iniciar la operación de guardado.
 
 Si el flujo de metadatos contiene contenido big-endian, el escritor de metadatos es responsable de intercambiar los valores de datos que procesa. También es responsable de informar a los escritores de metadatos anidados de que están trabajando con un flujo de datos big-endian cuando se guarda.
 
-Implemente la compatibilidad con la creación y eliminación de espacios de nombres al admitir operaciones de conjunto y eliminación en elementos de metadatos con un tipo `VT_CLSID` de (un GUID) correspondiente a un formato de metadatos. El escritor de metadatos llama a la función [**WICSerializeMetadataContent**](/windows/desktop/api/wincodecsdk/nf-wincodecsdk-wicserializemetadatacontent) para insertar correctamente el contenido del escritor de metadatos anidado en el escritor de metadatos primario.
+Implemente compatibilidad con la creación y eliminación de espacios de nombres mediante la compatibilidad con operaciones set y remove en elementos de metadatos con un tipo `VT_CLSID` de (un GUID) correspondiente a un formato de metadatos. El escritor de metadatos llama a la función [**WICSerializeMetadataContent**](/windows/desktop/api/wincodecsdk/nf-wincodecsdk-wicserializemetadatacontent) para insertar correctamente el contenido del escritor de metadatos anidado en el escritor de metadatos primario.
 
-Si el formato de metadatos admite la codificación local, usted es responsable de administrar el relleno necesario. Para obtener más información sobre la codificación local, vea Información general sobre metadatos [de WIC](-wic-about-metadata.md) e Información general sobre la lectura y escritura de [metadatos de imagen.](-wic-codec-readingwritingmetadata.md)
+Si el formato de metadatos admite la codificación local, usted es responsable de administrar el relleno necesario. Para obtener más información sobre la codificación local, vea Introducción a los metadatos de [WIC](-wic-about-metadata.md) e Información general sobre la [lectura y escritura de metadatos de imagen.](-wic-codec-readingwritingmetadata.md)
 
 ### <a name="iwicpersiststream-interface"></a>IWICPersistStream (interfaz)
 
@@ -317,7 +317,7 @@ interface IWICPersistStream : IPersistStream
 
 El **método LoadEx** proporciona al controlador de metadatos un flujo de datos que contiene el bloque de metadatos.
 
-El **método SaveEx** serializa los metadatos en una secuencia. Si la secuencia proporcionada es la misma que la secuencia de inicialización, debe realizar la codificación local. Si se admite la codificación in-place, este método debe devolver WINCODEC \_ ERR TOOMUCHMETADATA cuando no hay suficiente relleno para realizar la codificación \_ en su lugar. Si no se admite la codificación local, este método debe devolver WINCODEC \_ ERR \_ UNSUPPORTEDOPERATION.
+El **método SaveEx** serializa los metadatos en una secuencia. Si la secuencia proporcionada es la misma que la secuencia de inicialización, debe realizar la codificación local. Si se admite la codificación in-place, este método debe devolver WINCODEC \_ ERR TOOMUCHMETADATA cuando no hay suficiente relleno para realizar la codificación \_ local. Si no se admite la codificación in-place, este método debe devolver WINCODEC \_ ERR \_ UNSUPPORTEDOPERATION.
 
 El **método IPersistStream::GetSizeMax** debe implementarse y debe devolver el tamaño exacto del contenido de metadatos que se escribiría en el guardado posterior.
 
@@ -340,16 +340,16 @@ Para instalar un controlador de metadatos, debe proporcionar el ensamblado del c
 
 ### <a name="metadata-handler-registry-keys"></a>Claves del Registro del controlador de metadatos
 
-Cada controlador de metadatos se identifica mediante un CLSID único y cada controlador debe registrar su CLSID en el GUID del identificador de categoría del controlador de metadatos. El identificador de categoría de cada tipo de controlador se define en wincodec.idl; el nombre del identificador de categoría para los lectores es CATID WICMetadataReader y el nombre del identificador de categoría para los escritores \_ es CATID \_ WICMetadataWriter.
+Cada controlador de metadatos se identifica mediante un CLSID único y cada controlador debe registrar su CLSID en el GUID de identificador de categoría del controlador de metadatos. El identificador de categoría de cada tipo de controlador se define en wincodec.idl; el nombre del identificador de categoría para los lectores es CATID WICMetadataReader y el nombre del identificador de categoría para los escritores \_ es CATID \_ WICMetadataWriter.
 
-Cada controlador de metadatos se identifica mediante un CLSID único y cada controlador debe registrar su CLSID en el GUID del identificador de categoría del controlador de metadatos. El identificador de categoría de cada tipo de controlador se define en wincodec.idl; el nombre del identificador de categoría para los lectores es CATID WICMetadataReader y el nombre del identificador de categoría para los escritores \_ es CATID \_ WICMetadataWriter.
+Cada controlador de metadatos se identifica mediante un CLSID único y cada controlador debe registrar su CLSID en el GUID de identificador de categoría del controlador de metadatos. El identificador de categoría de cada tipo de controlador se define en wincodec.idl; el nombre del identificador de categoría para los lectores es CATID WICMetadataReader y el nombre del identificador de categoría para los escritores \_ es CATID \_ WICMetadataWriter.
 
 > [!Note]  
-> En las siguientes listas de claves del Registro, {Reader CLSID} hace referencia al CLSID único que se proporciona para el lector de metadatos. {WRITER CLSID} hace referencia al CLSID único que se proporciona para el escritor de metadatos. {CLSID del controlador} hace referencia al CLSID del lector, al CLSID del escritor o a ambos, en función de los controladores que proporcione. {GUID de contenedor} hace referencia al objeto contenedor (formato de imagen o formato de metadatos) que puede contener el bloque de metadatos.
+> En las siguientes listas de claves del Registro, {Reader CLSID} hace referencia al CLSID único que se proporciona para el lector de metadatos. {Writer CLSID} hace referencia al CLSID único que se proporciona para el escritor de metadatos. {CLSID de controlador} hace referencia al CLSID del lector, al CLSID del escritor o a ambos, dependiendo de los controladores que proporcione. {GUID de contenedor} hace referencia al objeto contenedor (formato de imagen o formato de metadatos) que puede contener el bloque de metadatos.
 
  
 
-Las siguientes claves del Registro registran el controlador de metadatos con los otros controladores de metadatos disponibles:
+Las siguientes claves del Registro registran el controlador de metadatos con los demás controladores de metadatos disponibles:
 
 ``` syntax
 [HKEY_CLASSES_ROOT\CLSID\{CATID_WICMetadataReaders}\Instance\{Reader CLSID}]
@@ -361,7 +361,7 @@ CLSID={Writer CLSID}
 Friendly Name="Writer Name"
 ```
 
-Además de registrar los controladores en sus respectivas categorías, también debe registrar claves adicionales que proporcionen información específica para el controlador. Los lectores y escritores comparten requisitos de clave del Registro similares. La sintaxis siguiente muestra cómo registrar un controlador. Tanto el controlador de lector como el controlador de escritor deben registrarse de esta manera, con sus CLID respectivos:
+Además de registrar los controladores en sus respectivas categorías, también debe registrar claves adicionales que proporcionen información específica para el controlador. Los lectores y escritores comparten requisitos de clave del Registro similares. La sintaxis siguiente muestra cómo registrar un controlador. Tanto el controlador de lector como el controlador de escritor deben registrarse de esta manera, con sus respectivos CLSID:
 
 ``` syntax
 [HKEY_CLASSES_ROOT\CLSID\{CLSID}]
@@ -388,9 +388,9 @@ FriendlyName="Friendly Name"
 
 ### <a name="metadata-readers"></a>Lectores de metadatos
 
-El registro del lector de metadatos también incluye claves que describen cómo se puede incrustar el lector en un formato de contenedor. Un formato de contenedor puede ser un formato de imagen como TIFF o JPEG; también puede ser otro formato de metadatos, como un bloque de metadatos IFD. Los formatos de contenedor de imágenes admitidos de forma nativa se muestran en wincodec.idl; cada formato de contenedor de imágenes se define como un GUID con un nombre que comienza por \_ GUID ContainerFormat. Los formatos de contenedor de metadatos admitidos de forma nativa se enumeran en wincodecsdk.idl; cada formato de contenedor de metadatos se define como un GUID con un nombre que comienza por GUID \_ MetadataFormat.
+El registro del lector de metadatos también incluye claves que describen cómo se puede incrustar el lector en un formato de contenedor. Un formato de contenedor puede ser un formato de imagen como TIFF o JPEG; también puede ser otro formato de metadatos, como un bloque de metadatos IFD. Los formatos de contenedor de imágenes compatibles de forma nativa se enumeran en wincodec.idl; cada formato de contenedor de imágenes se define como un GUID con un nombre que comienza por \_ GUID ContainerFormat. Los formatos de contenedor de metadatos admitidos de forma nativa se enumeran en wincodecsdk.idl; cada formato de contenedor de metadatos se define como un GUID con un nombre que comienza por GUID \_ MetadataFormat.
 
-Las claves siguientes registran un contenedor compatible con el lector de metadatos y los datos necesarios para leer de ese contenedor. Cada contenedor admitido por el lector debe registrarse de esta manera.
+Las siguientes claves registran un contenedor compatible con el lector de metadatos y los datos necesarios para leer desde ese contenedor. Cada contenedor admitido por el lector debe registrarse de esta manera.
 
 ``` syntax
 [HKEY_CLASSES_ROOT\CLSID\{Reader CLSID}\Containers\{Container GUID}\0]
@@ -400,15 +400,15 @@ Las claves siguientes registran un contenedor compatible con el lector de metada
 "DataOffset"=dword:00000006
 ```
 
-La clave pattern describe el patrón binario que se usa para hacer coincidir el bloque de metadatos con el lector. Al definir un patrón para el lector de metadatos, debe ser lo suficientemente confiable como para que una coincidencia positiva signifique que el lector de metadatos puede comprender los metadatos del bloque de metadatos que se está procesando.
+La clave Pattern describe el patrón binario que se usa para hacer coincidir el bloque de metadatos con el lector. Al definir un patrón para el lector de metadatos, debe ser lo suficientemente confiable como para que una coincidencia positiva significa que el lector de metadatos puede comprender los metadatos del bloque de metadatos que se está procesando.
 
 La clave DataOffset describe el desplazamiento fijo de los metadatos del encabezado de bloque. Esta clave es opcional y, si no se especifica, significa que los metadatos reales no se pueden encontrar utilizando un desplazamiento fijo del encabezado de bloque.
 
 ### <a name="metadata-writers"></a>Escritores de metadatos
 
-El registro del escritor de metadatos también incluye claves que describen cómo escribir el encabezado anterior al contenido de metadatos insertado en un formato de contenedor. Al igual que con el lector, un formato de contenedor puede ser un formato de imagen u otro bloque de metadatos.
+El registro del escritor de metadatos también incluye claves que describen cómo escribir el encabezado que precede al contenido de metadatos insertado en un formato de contenedor. Al igual que con el lector, un formato de contenedor puede ser un formato de imagen u otro bloque de metadatos.
 
-Las claves siguientes registran un contenedor compatible con el escritor de metadatos y los datos necesarios para escribir el encabezado y los metadatos. Cada contenedor admitido por el escritor debe registrarse de esta manera.
+Las siguientes claves registran un contenedor compatible con el escritor de metadatos y los datos necesarios para escribir el encabezado y los metadatos. Cada contenedor admitido por el escritor debe registrarse de esta manera.
 
 ``` syntax
 [HKEY_CLASSES_ROOT\CLSID\{Writer CLSID}\Containers\{Container GUID}]
@@ -417,17 +417,17 @@ Las claves siguientes registran un contenedor compatible con el escritor de meta
 "WriteOffset"=dword:00000000
 ```
 
-La clave WriteHeader describe el patrón binario del encabezado de bloque de metadatos que se va a escribir. Este patrón binario coincide con la clave de patrón del lector del formato de metadatos.
+La clave WriteHeader describe el patrón binario del encabezado de bloque de metadatos que se va a escribir. Este patrón binario coincide con la clave de patrón de lector del formato de metadatos.
 
-La clave WriteOffset describe el desplazamiento fijo del encabezado de bloque en el que se deben escribir los metadatos. Esta clave es opcional y, si no se especifica, significa que los metadatos reales no se deben escribir con el encabezado .
+La clave WriteOffset describe el desplazamiento fijo del encabezado de bloque en el que se deben escribir los metadatos. Esta clave es opcional y, si no se especifica, significa que los metadatos reales no deben escribirse con el encabezado .
 
-### <a name="signing-a-metadata-handler"></a>Firmar un controlador de metadatos
+### <a name="signing-a-metadata-handler"></a>Firma de un controlador de metadatos
 
 Todos los controladores de metadatos deben estar firmados digitalmente para participar en el proceso de detección de WIC. WIC no cargará ningún controlador que no esté firmado por una entidad de certificación de confianza. Para obtener más información sobre la firma digital, vea [Introducción a la firma de código.](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537361(v=vs.85))
 
 ## <a name="special-considerations"></a>Consideraciones especiales
 
-En las secciones siguientes se incluye información adicional que debe tener en cuenta al crear sus propios controladores de metadatos.
+Las secciones siguientes incluyen información adicional que debe tener en cuenta al crear sus propios controladores de metadatos.
 
 ### <a name="propvariants"></a>PROPVARIANTS
 
@@ -437,8 +437,8 @@ WIC usa [PROPVARIANT para representar](/windows/win32/api/propidlbase/ns-propidl
 
 | El tipo de metadatos es...          | Uso del tipo PROPVARIANT      | Propiedad PROPVARIANT                                                                                                                                                                                                                                                           |
 |------------------------------|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Vacío o inexistente.       | VT \_ EMPTY                 | No es aplicable.                                                                                                                                                                                                                                                                |
-| Sin definir.                   | BLOB \_ DE VT                  | Use la propiedad blob para establecer el tamaño y el puntero al objeto BLOB asignado mediante CoTaskMemAlloc.                                                                                                                                                                           |
+| Vacío o inexistente.       | VT \_ EMPTY                 | No aplicable.                                                                                                                                                                                                                                                                |
+| Sin definir.                   | VT \_ BLOB                  | Use la propiedad blob para establecer el tamaño y el puntero al objeto BLOB asignado mediante CoTaskMemAlloc.                                                                                                                                                                           |
 | Un bloque de metadatos.            | VT \_ UNKNOWN               | Este tipo usa la propiedad asínval.                                                                                                                                                                                                                                           |
 | Matriz de tipos.           | VT \_ VECTOR \| VT \_ {type}  | Use la propiedad ca{type} para establecer el recuento y el puntero a la matriz asignada mediante CoTaskMemAlloc.                                                                                                                                                                            |
 | Matriz de bloques de metadatos. | VT \_ VECTOR \| VT \_ VARIANT | Use la propiedad capropvar para establecer la matriz de variantes.                                                                                                                                                                                                                       |

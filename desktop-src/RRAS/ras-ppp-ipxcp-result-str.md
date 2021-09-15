@@ -1,9 +1,9 @@
 ---
 title: RAS_PPP_IPXCP_RESULT estructura (Rassapi.h)
-description: La estructura RAS PPP IPXCP RESULT se usa para notificar el resultado de una operación de proyección de paquetes de internetwork Exchange \_ \_ PPP \_ (IPX) para un puerto.
+description: La estructura RAS PPP IPXCP RESULT se usa para notificar el resultado de una operación de proyección de paquetes de internetwork Exchange PPP \_ \_ \_ (IPX) para un puerto.
 ms.assetid: e1236e1b-f0ef-46cf-a12f-35529215752c
 keywords:
-- RAS_PPP_IPXCP_RESULT ras de estructura
+- RAS_PPP_IPXCP_RESULT estructura RAS
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bc79b7700fc47176928688b517377f5e02903da04841b50949937448065086d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5bb7ca4d006bd1a1df5a645799998b463c0b14f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117789609"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476640"
 ---
 # <a name="ras_ppp_ipxcp_result-structure"></a>Estructura DE \_ \_ RESULTADOs DE IPXCP de RAS PPP \_
 
-\[La **estructura \_ DE \_ RESULTADOs IPXCP \_ de PPP ras** no se admite desde Windows Vista.\]
+\[La **estructura RAS PPP \_ \_ IPXCP \_ RESULT** no se admite desde Windows Vista.\]
 
 La **estructura RAS PPP \_ \_ IPXCP \_ RESULT** se usa para notificar el resultado de una operación de proyección de paquetes de internetwork Exchange PPP (IPX) para un puerto.
 
@@ -39,7 +39,7 @@ typedef struct _RAS_PPP_IPXCP_RESULT {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -67,7 +67,7 @@ Cadena Unicode terminada en NULL que especifica la dirección IPX asignada al cl
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                       |
-| Header<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Rassapi.h</dt> </dl> |
 
 
 

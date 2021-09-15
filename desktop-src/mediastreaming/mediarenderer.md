@@ -4,7 +4,7 @@ description: Implementa la interfaz IMediaRenderer que representa un dispositivo
 ms.assetid: bac7898f-1334-4e28-92c7-6de464884eaf
 keywords:
 - MediaRenderer class Media Streaming API
-- MediaRenderer class Media Streaming API , descrito
+- Clase MediaRenderer Media Streaming API , descrita
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b003c0c24838b77e044fc0bf14beaac0c97eeebd64415d74ca77bd2e8a44a105
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d14cdea89535fc680874905a9fb2b3358595baab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117870832"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570601"
 ---
 # <a name="mediarenderer-class"></a>Clase MediaRenderer
 
-Implementa la interfaz [**IMediaRenderer que**](imediarenderer.md) representa un dispositivo DLNA Digital Media Renderer (DMR).
+Implementa la interfaz [**IMediaRenderer**](imediarenderer.md) que representa un dispositivo DLNA Digital Media Renderer (DMR).
 
 **MediaRenderer** tiene estos tipos de miembros:
 
@@ -46,11 +46,11 @@ La **clase MediaRenderer** tiene estos métodos.
 | [**GetVolumeAsync**](/previous-versions/windows/desktop/legacy/hh828967(v=vs.85))                                       | Consulta la DMR de forma asincrónica para su nivel de volumen de audio actual.<br/>                                                                                                                                                                                                                                                                                             |
 | [**PauseAsync**](mediarenderer-pauseasync.md)                                               | Indica a la DMR de forma asincrónica que pause la reproducción del contenido actual.<br/>                                                                                                                                                                                                                                                                                         |
 | [**PlayAsync**](/previous-versions/windows/desktop/legacy/hh828972(v=vs.85))                                                 | Indica a la DMR de forma asincrónica que reprodúe el contenido especificado mediante una llamada al método [**SetSourceFromUriAsync**](/previous-versions/windows/desktop/legacy/hh828983(v=vs.85)), [**SetSourceFromStreamAsync**](/previous-versions/windows/desktop/legacy/hh828982(v=vs.85))o [**SetSourceFromMediaSourceAsync.**](/previous-versions/windows/desktop/legacy/hh828981(v=vs.85))<br/>                       |
-| [**PlayAtSpeedAsync**](/previous-versions/windows/desktop/legacy/hh828973(v=vs.85))                                   | Indica a la DMR de forma asincrónica que reprodúe el contenido especificado mediante una llamada al método [**SetSourceFromUriAsync**](/previous-versions/windows/desktop/legacy/hh828983(v=vs.85)), [**SetSourceFromStreamAsync**](/previous-versions/windows/desktop/legacy/hh828982(v=vs.85))o [**SetSourceFromMediaSourceAsync**](/previous-versions/windows/desktop/legacy/hh828981(v=vs.85)) a la velocidad especificada.<br/> |
-| [**remove \_ RenderingParametersUpdate**](/previous-versions/windows/desktop/legacy/hh828974(v=vs.85))  | Anula el registro de un controlador de eventos para el [**evento RenderingParametersUpdate.**](renderingparametersupdate.md)<br/>                                                                                                                                                                                                                                                     |
-| [**remove \_ TransportParametersUpdate**](/previous-versions/windows/desktop/legacy/hh828975(v=vs.85))  | Anula el registro de un controlador de eventos para el [**evento TransportParametersUpdate.**](transportparametersupdate.md)<br/>                                                                                                                                                                                                                                                     |
+| [**PlayAtSpeedAsync**](/previous-versions/windows/desktop/legacy/hh828973(v=vs.85))                                   | Indica a dmr de forma asincrónica que reprodúe el contenido especificado mediante una llamada al método [**SetSourceFromUriAsync**](/previous-versions/windows/desktop/legacy/hh828983(v=vs.85)), [**SetSourceFromStreamAsync**](/previous-versions/windows/desktop/legacy/hh828982(v=vs.85))o [**SetSourceFromMediaSourceAsync**](/previous-versions/windows/desktop/legacy/hh828981(v=vs.85)) a la velocidad especificada.<br/> |
+| [**remove \_ RenderingParametersUpdate**](/previous-versions/windows/desktop/legacy/hh828974(v=vs.85))  | Anula el registro de un controlador de eventos [**para el evento RenderingParametersUpdate.**](renderingparametersupdate.md)<br/>                                                                                                                                                                                                                                                     |
+| [**remove \_ TransportParametersUpdate**](/previous-versions/windows/desktop/legacy/hh828975(v=vs.85))  | Anula el registro de un controlador de eventos [**para el evento TransportParametersUpdate.**](transportparametersupdate.md)<br/>                                                                                                                                                                                                                                                     |
 | [**SeekAsync**](/previous-versions/windows/desktop/legacy/hh828976(v=vs.85))                                                 | Indica a la DMR de forma asincrónica que busque un desplazamiento de tiempo determinado.<br/>                                                                                                                                                                                                                                                                                          |
-| [**SetMuteAsync**](/previous-versions/windows/desktop/legacy/hh828977(v=vs.85))                                           | Indica a la DMR de forma asincrónica que silencie o desmuescie el audio.<br/>                                                                                                                                                                                                                                                                                           |
+| [**SetMuteAsync**](/previous-versions/windows/desktop/legacy/hh828977(v=vs.85))                                           | Indica a la DMR de forma asincrónica que mute o desmute el audio.<br/>                                                                                                                                                                                                                                                                                           |
 | [**SetNextSourceFromMediaSourceAsync**](/previous-versions/windows/desktop/legacy/hh828978(v=vs.85)) | Indica a la DMR de forma asincrónica que prepare el contenido especificado para reproducirlo una vez que el contenido actual haya terminado de reproducirse.<br/>                                                                                                                                                                                                                                   |
 | [**SetNextSourceFromStreamAsync**](/previous-versions/windows/desktop/legacy/hh828979(v=vs.85))           | Indica a la DMR de forma asincrónica que prepare la secuencia multimedia especificada para reproducirla una vez que el contenido actual haya terminado de reproducirse.<br/>                                                                                                                                                                                                                              |
 | [**SetNextSourceFromUriAsync**](/previous-versions/windows/desktop/legacy/hh828980(v=vs.85))                 | Indica a la DMR de forma asincrónica que prepare el contenido identificado por el URI especificado para reproducirlo una vez que el contenido actual haya terminado de reproducirse.<br/>                                                                                                                                                                                                             |

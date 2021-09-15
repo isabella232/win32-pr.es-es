@@ -13,25 +13,25 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e54cb405e9bed39bb893ca4bdba2b3da45060cf84e7cbb61a2e634c645ef7daf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 75a1ddad5e3844c32e2b46d03badc4b00af4c773
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119646815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476184"
 ---
 # <a name="returnbutton"></a>RETURNBUTTON
 
-Se trata de un **button** predefinido con los siguientes valores predeterminados.
+Se trata de un **button predefinido** con los siguientes valores predeterminados.
 
 ``` syntax
 onclick="jscript:view.returnToMediaCenter();"
 upToolTip="Return to Full Mode"
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esto crea un control **BUTTON** que devuelve el Reproductor al centro multimedia. La información sobre herramientas se localiza. Todas las propiedades de **este BOTÓN** se pueden invalidar especificándolos explícitamente.
+Esto crea un control **BUTTON** que devuelve el reproductor al centro multimedia. La información sobre herramientas está localizada. Todas las propiedades de **este BOTÓN** se pueden invalidar si se especifican explícitamente.
 
 ## <a name="requirements"></a>Requisitos
 

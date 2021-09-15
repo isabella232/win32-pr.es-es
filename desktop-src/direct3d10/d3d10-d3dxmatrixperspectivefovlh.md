@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 32c3745a16061805ae165c3542e8bb7f8aba6c7e8d932cfcc169186c6d4a14e0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cea1bec170664993332b1cde1de375c416209209
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118304479"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573076"
 ---
 # <a name="d3dxmatrixperspectivefovlh-function-d3dx10mathh"></a>Función D3DXMatrixPerspectiveFovLH (D3DX10Math.h)
 
@@ -95,7 +95,7 @@ Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
 Puntero a una estructura D3DXMATRIX que es una matriz de proyección de perspectiva a la izquierda.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el parámetro pOut. De esta manera, la función D3DXMatrixPerspectiveFovLH se puede usar como parámetro para otra función.
 

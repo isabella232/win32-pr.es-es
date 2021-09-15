@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 5258a37ac32e663b45bb2a82f8b0691cca3e1e76c303e8d4f9b7156e4f5a423e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 56fd6eaeb5a00549cbb4ee659b99ece391e0ebed
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117767088"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476462"
 ---
 # <a name="ekus-object"></a>Objeto EKUs
 
@@ -34,7 +34,7 @@ La **colección EKUs** se usa para realizar las siguientes tareas:
 -   Recuperar un objeto [**EKU específico**](eku.md) de la colección.
 -   Recorrer en iteración la colección.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto EKUs** tiene estos tipos de miembros:
 
@@ -46,17 +46,17 @@ El **objeto EKUs** tiene estas propiedades.
 
 
 
-| Propiedad                                     | Tipo de acceso          | Descripción                                                                                                                                                                                                                     |
+| Propiedad.                                     | Tipo de acceso          | Descripción                                                                                                                                                                                                                     |
 |:---------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**\_NewEnum**](ekus-newenum.md)<br/> | Solo lectura<br/> | Recupera una [**interfaz IEnumVARIANT en**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) un objeto que se puede usar para enumerar la colección. Esta propiedad está oculta en Visual Basic Scripting Edition (VBScript).<br/> |
-| [**Contar**](ekus-count.md)<br/>       | Solo lectura<br/> | Recupera el número de objetos [**EKU**](eku.md) de la colección.<br/>                                                                                                                                                |
-| [**Elemento**](ekus-item.md)<br/>         | Solo lectura<br/> | Recupera el objeto [**EKU**](eku.md) que representa la propiedad EKU indizada. Esta es la propiedad predeterminada.<br/>                                                                                                      |
+| [**Count**](ekus-count.md)<br/>       | Solo lectura<br/> | Recupera el número de objetos [**EKU**](eku.md) de la colección.<br/>                                                                                                                                                |
+| [**Artículo**](ekus-item.md)<br/>         | Solo lectura<br/> | Recupera el objeto [**EKU**](eku.md) que representa la propiedad EKU indizada. Esta es la propiedad predeterminada.<br/>                                                                                                      |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La propiedad [**ExtendedKeyUsage.EKUs**](extendedkeyusage-ekus.md) recupera esta colección.
 

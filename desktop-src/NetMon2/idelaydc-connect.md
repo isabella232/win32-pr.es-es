@@ -15,11 +15,11 @@ api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
 ms.openlocfilehash: e91db1dae0c67c5f35e46841867d3d3e15058cf0
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122477320"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476736"
 ---
 # <a name="idelaydcconnect-method"></a>IDelaydC::Conectar método
 
@@ -73,7 +73,7 @@ Controlar un blob de error que contiene información de error adicional.
 
 ## <a name="return-value"></a>Valor devuelto
 
-Si este método es correcto, el valor devuelto es NMERR \_ SUCCESS.
+Si este método se realiza correctamente, el valor devuelto es NMERR \_ SUCCESS.
 
 Si el método no es correcto, el valor devuelto es uno de los siguientes códigos de error (que incluyen los errores devueltos por la llamada **interna IDelaydC::Configure):**
 
@@ -83,31 +83,31 @@ Si el método no es correcto, el valor devuelto es uno de los siguientes código
 | Código devuelto | Descripción | 
 |-------------|-------------|
 | <dl><dt><strong>NMERR_ALREADY_CONNECTED</strong></dt></dl> | Esta instancia del objeto COM de NPP ya está conectada a la red.<br /> | 
-| <dl><dt><strong>NMERR_BLOB_CONVERSION_ERROR</strong></dt></dl> | El BLOB de configuración está dañado. Este error lo genera la <strong>llamada IDelaydC::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_BLOB_CONVERSION_ERROR</strong></dt></dl> | El BLOB de configuración está dañado. La llamada a <strong>IDelaydC::Configure</strong> genera este error.<br /> | 
 | <dl><dt><strong>NMERR_BLOB_ENTRY_DOES_NOT_EXIST</strong></dt></dl> | Al BLOB de entrada especificado por <em>hInputBlob</em> le falta una entrada necesaria para realizar esta operación. Este error lo pueden generar las llamadas <strong>IDelaydC::Conectar</strong> <strong>o IDelaydC::Configure.</strong> Mire el blob de error devuelto por <em>hErrorBlob para</em> determinar qué entrada no se encontró.<br /> | 
-| <dl><dt><strong>NMERR_BLOB_NOT_INITIALIZED</strong></dt></dl> | No se ha llamado a la función <strong>CreateBlob.</strong> Este error lo genera la <strong>llamada IDelaydC::Configure.</strong><br /> | 
-| <dl><dt><strong>NMERR_BLOB_STRING_INVALID</strong></dt></dl> | La cadena no termina en NULL. Este error lo genera la <strong>llamada IDelaydC::Configure.</strong><br /> | 
-| <dl><dt><strong>NMERR_ILLEGAL_TRIGGER</strong></dt></dl> | La parte del desencadenador del BLOB de entrada está dañada. Este error lo genera la <strong>llamada IDelaydC::Configure.</strong><br /> | 
-| <dl><dt><strong>NMERR_INVALID_BLOB</strong></dt></dl> | El objeto especificado en <em>hInputBlob</em> no es un BLOB. Este error lo genera la <strong>llamada IDelaydC::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_BLOB_NOT_INITIALIZED</strong></dt></dl> | No se ha llamado a la función <strong>CreateBlob.</strong> La llamada a <strong>IDelaydC::Configure</strong> genera este error.<br /> | 
+| <dl><dt><strong>NMERR_BLOB_STRING_INVALID</strong></dt></dl> | La cadena no termina en NULL. La llamada a <strong>IDelaydC::Configure</strong> genera este error.<br /> | 
+| <dl><dt><strong>NMERR_ILLEGAL_TRIGGER</strong></dt></dl> | La parte del desencadenador del BLOB de entrada está dañada. La llamada a <strong>IDelaydC::Configure</strong> genera este error.<br /> | 
+| <dl><dt><strong>NMERR_INVALID_BLOB</strong></dt></dl> | El objeto especificado en <em>hInputBlob</em> no es un BLOB. La llamada a <strong>IDelaydC::Configure</strong> genera este error.<br /> | 
 | <dl><dt><strong>NMERR_NO_DEFAULT_CAPTURE_DIRECTORY</strong></dt></dl> | El directorio de captura predeterminado no se estableció en el Registro. Use la ruta de acceso siguiente para establecer el directorio de captura. <br /><pre class="syntax" data-space="preserve"><code>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\nm\Parameters\CapturePath</code></pre> | 
-| <dl><dt><strong>NMERR_OUT_OF_MEMORY</strong></dt></dl> | No había memoria disponible para realizar esta operación. Este error lo genera la <strong>llamada IDelaydC::Configure.</strong><br /> | 
-| <dl><dt><strong>NMERR_TIMEOUT</strong></dt></dl> | Se ha pasado el tiempo de espera de la solicitud. Este error lo genera la <strong>llamada IDelaydC::Configure.</strong><br /> | 
-| <dl><dt><strong>NMERR_UPLEVEL_BLOB</strong></dt></dl> | El número de versión del BLOB especificado en <em>hInputBlob</em> es incorrecto. Este error lo genera la <strong>llamada IDelaydC::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_OUT_OF_MEMORY</strong></dt></dl> | No había memoria disponible para realizar esta operación. La llamada a <strong>IDelaydC::Configure</strong> genera este error.<br /> | 
+| <dl><dt><strong>NMERR_TIMEOUT</strong></dt></dl> | Se ha producido un tiempo de espera de la solicitud. Este error lo genera la <strong>llamada IDelaydC::Configure.</strong><br /> | 
+| <dl><dt><strong>NMERR_UPLEVEL_BLOB</strong></dt></dl> | El número de versión del BLOB especificado en <em>hInputBlob</em> es incorrecto. La llamada a <strong>IDelaydC::Configure</strong> genera este error.<br /> | 
 
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cuando se **llama Conectar** método , el NPP llama automáticamente a **IDelaydC::Configure** mediante el BLOB proporcionado por *hInputBlob*. Tenga en cuenta que los códigos de error devueltos por la llamada a **IDelaydC::Configure** se devuelven y devuelven mediante la llamada **IDelaydC::Conectar** llamada.
+Cuando se **Conectar** al método , el NPP llama automáticamente a **IDelaydC::Configure** mediante el BLOB proporcionado por *hInputBlob*. Tenga en cuenta que los códigos de error devueltos por la llamada a **IDelaydC::Configure** se devuelven y se devuelven mediante la llamada **a IDelaydC::Conectar** llamada.
 
-Se debe llamar a este método para poder empezar a capturar fotogramas. Tenga en cuenta que cuando se conecta a la red mediante este método, debe seguir usando los métodos de interfaz **IDelaydC** para capturar fotogramas.
+Se debe llamar a este método para poder empezar a capturar fotogramas. Tenga en cuenta que al conectarse a la red mediante este método, debe seguir usando los métodos de interfaz **IDelaydC** para capturar fotogramas.
 
 El BLOB de entrada especificado por el parámetro *hInputBlob* se puede obtener llamando a **GetNPPBlobFromUI,** **GetNPPBlobTable** y **SelectNPPBlobFromTable.**
 
-El blob de error devuelto en *hErrorBlob* contiene información de error que el desarrollador o la aplicación pueden usar para solucionar problemas. El blob de error devuelto por *hErrorBlob* contiene entradas que Monitor de red no se pudieron comprender o encontrar en el BLOB de entrada especificado en *hInputBlob*. Por ejemplo, si se devuelve NMERR BLOB ENTRY DOES NOT EXIST, la entrada Monitor de red no se pudo encontrar se incluye en el \_ \_ blob de error \_ \_ \_ devuelto.
+El BLOB de error devuelto en *hErrorBlob* contiene información de error que el desarrollador o la aplicación pueden usar para solucionar problemas. El blob de error devuelto por *hErrorBlob* contiene entradas que Monitor de red no se pudieron entender ni encontrar en el BLOB de entrada especificado en *hInputBlob*. Por ejemplo, si se devuelve NMERR BLOB ENTRY DOES NOT EXIST, la entrada Monitor de red no se encuentra se incluye en el \_ \_ blob de error \_ \_ \_ devuelto.
 
 
 
@@ -123,7 +123,7 @@ El blob de error devuelto en *hErrorBlob* contiene información de error que el 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
@@ -132,7 +132,7 @@ El blob de error devuelto en *hErrorBlob* contiene información de error que el 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

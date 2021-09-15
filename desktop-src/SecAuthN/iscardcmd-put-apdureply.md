@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: 749c0aee678a036160b52db635f2f096c68e0d20b2295c05387c5b57bbe2befc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0292f3ebd4e5f18638ad496cdf15cd9f5c4320f5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119481465"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476561"
 ---
-# <a name="iscardcmdput_apdureply-method"></a>Método ISCardCmd::p ut \_ ApduReply
+# <a name="iscardcmdput_apdureply-method"></a>MÉTODO ISCardCmd::p ut \_ ApduReply
 
 \[El **método \_ put ApduReply** está disponible para su uso en los sistemas operativos especificados en la sección Requisitos. No está disponible para su uso en Windows Server 2003 con Service Pack 1 (SP1) y versiones posteriores, Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. Los [módulos de tarjeta inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) proporcionan una funcionalidad similar.\]
 
@@ -58,14 +58,14 @@ El método devuelve uno de los siguientes valores posibles.
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Operación completada correctamente.<br/>         |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | El *parámetro pReplyApdu* no es válido.<br/>  |
-| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | Se pasó un puntero no válido *en pReplyApdu*.<br/> |
+| <dl> <dt>**PUNTERO \_ E**</dt> </dl>     | Se pasó un puntero no válido *en pReplyApdu.*<br/> |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memoria insuficiente<br/>                            |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener una APDU de respuesta existente, llame [**a get \_ ApduReply**](iscardcmd-get-apdureply.md).
 
@@ -98,11 +98,11 @@ if (FAILED(hr))
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
 | Fin de compatibilidad de cliente<br/>    | Windows XP<br/>                                                                   |
 | Fin de compatibilidad de servidor<br/>    | Windows Server 2003<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Scarddat.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scarddat.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID ISCardCmd se define como \_ D5778AE3-43DE-11D0-9171-00AA00C18068<br/>            |

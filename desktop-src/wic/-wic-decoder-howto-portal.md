@@ -4,12 +4,12 @@ ms.assetid: 1098b4a1-9f40-4d99-be8d-ab8f9c4172e7
 title: Temas de cómo descodificar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54ca5e00bdd73b151ab69e085a00215fd21b198a04176c9ea9fb4993bf09f18c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a2b25fc2796ac1ed5fe5c75eb38c42511947f9d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118965164"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570328"
 ---
 # <a name="decoder-how-to-topics"></a>Temas de cómo descodificar
 

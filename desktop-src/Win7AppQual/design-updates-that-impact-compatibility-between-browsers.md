@@ -5,11 +5,11 @@ title: Diseñar actualizaciones que afectan a la compatibilidad entre explorador
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 7bc0600b0c0e79003a86c5b3777f7f569d8c73ef
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122625931"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571017"
 ---
 # <a name="design-updates-that-impact-compatibility-between-browsers"></a>Diseñar actualizaciones que afectan a la compatibilidad entre exploradores
 

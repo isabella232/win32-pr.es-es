@@ -15,11 +15,11 @@ api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
 ms.openlocfilehash: d0a07748781a567c889e879e2e99462d8cfb876a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110763"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476718"
 ---
 # <a name="iespdisconnect-method"></a>Método IESP::D isconnect
 
@@ -50,13 +50,13 @@ Si el método no se realiza correctamente, el valor devuelto es uno de los sigui
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**CAPTURA DE \_ NMERR**</dt> </dl>      | El NPP captura datos. No se puede desconectar de la red mientras la captura de datos está en curso.<br/> |
 | <dl> <dt>**NMERR \_ NO \_ CONECTADO**</dt> </dl> | El NPP no está conectado a la red.<br/>                                                             |
-| <dl> <dt>**NMERR \_ NOT \_ ESP**</dt> </dl>       | El NPP está conectado a la red, pero no con el [método IESP::Connect.](iesp-connect.md)<br/>       |
+| <dl> <dt>**NMERR \_ NOT \_ ESP**</dt> </dl>       | El NPP está conectado a la red, pero no con el [método IESP::Conectar.](iesp-connect.md)<br/>       |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No se puede llamar a este método cuando el NPP captura datos. Debe llamar al método **IESP::Stop** antes de llamar a **IESP::D isconnect**.
 
@@ -64,7 +64,7 @@ No se puede llamar a este método cuando el NPP captura datos. Debe llamar al m�
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
@@ -73,14 +73,14 @@ No se puede llamar a este método cuando el NPP captura datos. Debe llamar al m�
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
 [IESP](iesp.md)
 </dt> <dt>
 
-[IESP::Connect](iesp-connect.md)
+[IESP::Conectar](iesp-connect.md)
 </dt> <dt>
 
 [IESP::Stop](iesp-stop.md)

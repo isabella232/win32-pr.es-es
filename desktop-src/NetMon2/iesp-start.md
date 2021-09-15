@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 8023b9db00834b10fcce84510df5ccbafec0c7a2f6654ef73d71754e7c563044
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6dd0d1159132e594b6d48ea6799da5846eeb626e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118365585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476717"
 ---
 # <a name="iespstart-method"></a>IESP::Start (método)
 
@@ -66,9 +66,9 @@ Si el método no se realiza correctamente, el valor devuelto es uno de los sigui
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-La ubicación del [*archivo de captura*](c.md) se especifica en el registro de Windows, pero puede usar Monitor de red para cambiar la ubicación del directorio.
+La ubicación del [*archivo de captura*](c.md) se especifica en el registro Windows, pero puede usar Monitor de red para cambiar la ubicación del directorio.
 
 Al reiniciar la captura mediante los métodos IESP::Start e [IESP::Stop,](iesp-stop.md) debe llamar al método [IESP::Configure](iesp-configure.md) para volver a configurar la conexión cada vez que llame a IESP::Start para reiniciar la captura de datos. Al iniciar y detener la captura con estos tres métodos, se crea un nuevo archivo de captura cada vez que se inicia la captura.
 
@@ -81,7 +81,7 @@ Al reiniciar la captura mediante los métodos IESP::Start e [IESP::Stop,](iesp-s
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                                                                     |
@@ -90,7 +90,7 @@ Al reiniciar la captura mediante los métodos IESP::Start e [IESP::Stop,](iesp-s
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

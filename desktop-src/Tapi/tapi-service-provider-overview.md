@@ -4,20 +4,20 @@ ms.assetid: 57dedad1-7264-48fc-9ac2-c6c72f7fee27
 title: Información general sobre el proveedor de servicios TAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29871b21124eab7ea4e7e84a9e7e8ca49853cb7a236c6f7a482dbf842a568304
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e847ed49879e9ff55662477a762fa7297443d12
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117760311"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476308"
 ---
 # <a name="tapi-service-provider-overview"></a>Información general sobre el proveedor de servicios TAPI
 
-Las aplicaciones TAPI residen en su propio espacio de proceso. Las aplicaciones TAPI cargan Tapi32.dll o Tapi3.dll en su proceso, y TAPI se comunica con TAPISRV a través de una interfaz RPC privada. Un TSP se ejecuta en el contexto de TAPISRV. Un TSP determinado puede residir en un equipo distinto del equipo del usuario y se accede a él mediante un TSP remoto. TAPISRV se implementa como un proceso de servicio dentro de SVCHOST. Un MSP reside dentro del espacio de proceso de la aplicación y siempre es local.
+Las aplicaciones TAPI residen en su propio espacio de proceso. Las aplicaciones TAPI cargan Tapi32.dll o Tapi3.dll en su proceso, y TAPI se comunica con TAPISRV a través de una interfaz RPC privada. Un TSP se ejecuta en el contexto de TAPISRV. Un TSP determinado puede residir en un equipo que no sea el equipo del usuario y se accede a él mediante un TSP remoto. TAPISRV se implementa como un proceso de servicio dentro de SVCHOST. Un MSP reside dentro del espacio de proceso de la aplicación y siempre es local.
 
 Se puede considerar que un par TSP/MSP tiene una ruta de comunicación privada virtual. La información se puede enviar entre los dos mediante búferes opacos que no son interpretados por TAPISRV o el archivo DLL de TAPI.
 
-Algunos proveedores de servicios implementan operaciones específicas del hardware implicado. TAPI 2.x proporciona acceso a estas operaciones a través de la [**función lineDevSpecific**](/windows/win32/api/tapi/nf-tapi-linedevspecific) o [**phoneDevSpecific.**](/windows/win32/api/tapi/nf-tapi-phonedevspecific) TAPI 3.x expone interfaces [específicas del proveedor.](./provider-specific-interfaces.md)
+Algunos proveedores de servicios implementan operaciones específicas del hardware implicado. TAPI 2.x proporciona acceso a estas operaciones a través de la [**función lineDevSpecific**](/windows/win32/api/tapi/nf-tapi-linedevspecific) o [**phoneDevSpecific.**](/windows/win32/api/tapi/nf-tapi-phonedevspecific) TAPI 3.x expone interfaces [específicas del proveedor](./provider-specific-interfaces.md).
 
 En el diagrama siguiente se muestra el flujo de controles e información, que muestra un TSP independiente (Unimodem) y un par TSP/MSP (H.323).
 
@@ -31,7 +31,7 @@ En el diagrama siguiente se muestra el progreso de una llamada entrante que impl
 
 -   El TSP envía un mensaje [**\_ LINE NEWCALL**](line-newcall.md) a TAPISRV. El [**estado de la**](./linecallstate--constants.md) llamada es LINECALLSTATE \_ OFFERING.
 -   TAPISRV notifica a los clientes la llamada.
--   TAPI3 crea el objeto TAPI Call y, a continuación, llama a [**ITMSPAddress::CreateMSPCall**](/windows/win32/api/tapi3/nf-tapi3-itmspaddress-createmspcall), que implementa el MSP.
+-   TAPI3 crea el objeto TAPI Call y, a continuación, llama a [**ITMSPAddress::CreateMSPCall**](/windows/win32/api/tapi3/nf-tapi3-itmspaddress-createmspcall), que se implementa mediante el MSP.
 -   El MSP crea un objeto de llamada MSP y secuencias predeterminadas en función de los tipos [**de medios**](./tapimediatype--constants.md) necesarios para la llamada. Devuelve un puntero IUnknown al objeto de llamada MSP.
 -   TAPI3 agrega el objeto de llamada MSP al objeto de llamada TAPI, lo que hace que interfaces como [**ITStreamControl**](/windows/win32/api/tapi3if/nn-tapi3if-itstreamcontrol) estén disponibles para la aplicación. A continuación, notifica a la aplicación la nueva llamada.
 

@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b17df75902ec41eed935a9b10dbbf4799c92bae2a54c76b4ed676c9e7a3a572
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e66edd858451e5d1a58b2a91f9f2362d4cabe9da
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119586435"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570245"
 ---
 # <a name="drm_drmheader_contentid"></a>DRM \_ DRMHeader \_ ContentID
 
@@ -31,7 +31,7 @@ g \_ wszWMDRM \_ DRMHeader \_ ContentID
 
 **CADENA DE \_ TIPO \_ WMT**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo está presente con el contenido de la versión 7 de DRM. Se puede recuperar con [**IWMDRMReader::GetDRMProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-getdrmproperty). Para establecer el identificador de contenido en el archivo [**mediante IWMDRMWriter::SetDRMAttribute,**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmwriter-setdrmattribute) debe usar la [**propiedad \_ ContentID de DRM.**](drm-contentid.md)
 

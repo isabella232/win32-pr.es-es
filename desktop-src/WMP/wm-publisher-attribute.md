@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 22aa04eecb3999b3029948739eef51dab094d0ebf9b65ba01ccdcf6de59efc18
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 00bd0d2ab2b6d886639cffa1df0770dfe329f7f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119053793"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571077"
 ---
 # <a name="wmpublisher-attribute"></a>Atributo WM/Publisher
 
@@ -32,13 +32,13 @@ El **atributo WM/Publisher** es el nombre de la empresa que publicó el contenid
 -   [DVDs](dvd-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se almacena tanto en la biblioteca (o caché) como en el archivo multimedia digital.
 
-**Label**, **ReleasedBy** y **Studio son** alias para este atributo.
+**Las** **etiquetas , ReleasedBy** y **Studio son** alias para este atributo.
 
-La constante Windows SDK de formato multimedia para este atributo es g \_ wszWMPublisher.
+La Windows DEL SDK de formato multimedia para este atributo es g \_ wszWMPublisher.
 
 Para determinar si puede cambiar el valor de este atributo, use el [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
@@ -46,13 +46,13 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: 2377763b-9b3b-49ec-ab6c-476b8009ddcb
 title: Responsabilidades de los consumidores del documento PrintCapabilities
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f49cd8f843bfa39a4313b0958fe9874f1263403e3fb3b2f22e2c965927bf6f25
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ec123509515de32b88c7352dcf0fc2c2b54504ff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118470257"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570545"
 ---
 # <a name="responsibilities-of-consumers-of-the-printcapabilities-document"></a>Responsabilidades de los consumidores del documento PrintCapabilities
 
@@ -35,7 +35,7 @@ Los consumidores de documentos PrintCapabilities tienen ciertas obligaciones que
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

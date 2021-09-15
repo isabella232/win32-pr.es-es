@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wiascr.dll
-ms.openlocfilehash: 3cbf60c935a88a62786c7c516ec0e768d65019c02d4419c44d928cee704a67b3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9b70f7a1698ecdb4de023786f21a6ef9d55f681d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119450785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573156"
 ---
 # <a name="itemitemtype-property"></a>Propiedad Item.ItemType
 
@@ -41,7 +41,7 @@ Los valores siguientes son posibles:
 
 
 
-| Valor  | Descripción                                     |
+| Value  | Descripción                                     |
 |--------|-------------------------------------------------|
 | device | El elemento es un dispositivo de hardware WIA.              |
 | folder | El elemento es una carpeta que contiene otros elementos. |
@@ -53,7 +53,7 @@ Los valores siguientes son posibles:
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Un elemento puede tener más de un tipo. Por ejemplo, cada imagen es de los tipos "image" y "file". **ItemType** devuelve una cadena que incluye todos los tipos válidos para el elemento, separados por punto y coma. Por ejemplo, "image;file". No hay espacios en esta cadena y no hay un punto y coma al final.
 
@@ -61,9 +61,9 @@ Un elemento puede tener más de un tipo. Por ejemplo, cada imagen es de los tipo
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                        |
+| Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows solo aplicaciones \[ de escritorio XP\]<br/>                                        |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
 | Archivo DLL<br/>                      | <dl> <dt>Wiascr.dll (versión 4.90 o posterior)</dt> </dl> |
 

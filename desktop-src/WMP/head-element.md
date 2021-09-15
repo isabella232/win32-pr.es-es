@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a865419a005927cd85ea6b03d4fabad2e2ac3ef15a840b3bd01209a4df00c075
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8708a8a683f7457e6568df3a897c71253ad76c02
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118339176"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476246"
 ---
 # <a name="head-element"></a>elemento head
 
@@ -46,7 +46,7 @@ Este elemento no tiene atributos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Normalmente, **el elemento** principal contiene un elemento **title** y uno o varios elementos **meta** que definen las características globales de la lista de reproducción.
 
@@ -70,7 +70,7 @@ Normalmente, **el elemento** principal contiene un elemento **title** y uno o va
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|----------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior.<br/> |
 

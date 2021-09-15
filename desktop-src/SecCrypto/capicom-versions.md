@@ -4,12 +4,12 @@ ms.assetid: 03e93c58-2e6e-42a2-8578-b4c2ad1a6199
 title: Versiones de CAPICOM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 892427d8243e71328b418a7228b77f73b580e8e6df99e667d0129e09616697aa
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4d965ef9df4dbfa8d95aed7f0e51873b6abf5bd3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117772001"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476513"
 ---
 # <a name="capicom-versions"></a>Versiones de CAPICOM
 

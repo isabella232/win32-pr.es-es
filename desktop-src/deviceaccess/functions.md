@@ -4,12 +4,12 @@ description: Funciones en el API de acceso a dispositivos.
 ms.assetid: DCD5DAD6-E8C2-4EA4-AE66-A47AE0759ED0
 ms.topic: article
 ms.date: 02/11/2020
-ms.openlocfilehash: 602a6a916a756bf3c9dbfe02ad08c3fd8e0f6423a7eb278677d6b812b3f4f736
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ac7eb5fc007457cb4c547e46e14fdbfdb598776a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120029065"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570944"
 ---
 # <a name="device-access-api-functions"></a>API de acceso a dispositivos funciones
 

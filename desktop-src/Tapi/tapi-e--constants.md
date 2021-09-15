@@ -4,12 +4,12 @@ ms.assetid: d242e0e8-99ae-4f5b-9f2d-e7e25953f7c8
 title: TAPI_E_ constantes (Tapi3err.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d874aaef60daa7a7b3881e3f1ddb89e2cba3c9be5a25a8f577dd387afe07682
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d2311cc7e9a66e4f987ff62d716285a2f8be63f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119873005"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476324"
 ---
 # <a name="tapi_e_-constants"></a>Constantes \_ TAPI E \_
 
@@ -59,7 +59,7 @@ Los métodos y funciones TAPI pueden devolver una constante \_ TAPI \_ E. Estas 
 | <span id="TAPI_E_TARGETSELF"></span><span id="tapi_e_targetself"></span><dl> <dt>**TAPI \_ E \_ TARGETSELF**</dt> <dt>((HRESULT)0x80040027L)</dt> </dl>                                                           | No existe ningún destino de prioridad superior para la entrega de llamadas. <br/>                                                                                                                                                     |
 | <span id="TAPI_E_USERUSERINFOTOOBIG"></span><span id="tapi_e_useruserinfotoobig"></span><dl> <dt>**TAPI \_ E \_ USERUSERINFOTOOBIG**</dt> <dt>((HRESULT)0x80040028L)</dt> </dl>                                   | La cantidad de información de usuario-usuario supera el máximo permitido. <br/>                                                                                                                                         |
 | <span id="TAPI_E_REINIT"></span><span id="tapi_e_reinit"></span><dl> <dt>**TAPI \_ E \_ REINIT**</dt> <dt>((HRESULT)0x80040029L)</dt> </dl>                                                                       | La operación no se puede completar hasta que todas las aplicaciones TAPI se apaguen y reinicialicen. <br/>                                                                                                                  |
-| <span id="TAPI_E_ADDRESSBLOCKED"></span><span id="tapi_e_addressblocked"></span><dl> <dt>**TAPI \_ E \_ ADDRESSBLOCKED**</dt> <dt>((HRESULT)0x8004002AL)</dt> </dl>                                               | No se permite llamar a este número. <br/>                                                                                                                                                                 |
+| <span id="TAPI_E_ADDRESSBLOCKED"></span><span id="tapi_e_addressblocked"></span><dl> <dt>**TAPI \_ E \_ ADDRESSBLOCKED**</dt> <dt>((HRESULT)0x8004002AL)</dt> </dl>                                               | No se le permite llamar a este número. <br/>                                                                                                                                                                 |
 | <span id="TAPI_E_BILLINGREJECTED"></span><span id="tapi_e_billingrejected"></span><dl> <dt>**TAPI \_ E \_ BILLINGREJECTED**</dt> <dt>((HRESULT)0x8004002BL)</dt> </dl>                                            | Se rechazó el número de tarjeta de llamada u otra información de facturación. <br/>                                                                                                                                         |
 | <span id="TAPI_E_INVALFEATURE"></span><span id="tapi_e_invalfeature"></span><dl> <dt>**TAPI \_ E \_ INVALFEATURE**</dt> <dt>((HRESULT)0x8004002CL)</dt> </dl>                                                     | La característica específica del dispositivo no es válida. <br/>                                                                                                                                                                    |
 | <span id="TAPI_E_INVALBUTTONLAMPID"></span><span id="tapi_e_invalbuttonlampid"></span><dl> <dt>**TAPI \_ E \_ INVALBUTTONLAMPID**</dt> <dt>((HRESULT)0x8004002DL)</dt> </dl>                                      | El identificador del botón o la bombilla no es válido. <br/>                                                                                                                                                                          |
@@ -75,7 +75,7 @@ Los métodos y funciones TAPI pueden devolver una constante \_ TAPI \_ E. Estas 
 | <span id="TAPI_E_REQUESTFAILED"></span><span id="tapi_e_requestfailed"></span><dl> <dt>**TAPI \_ E \_ REQUESTFAILED**</dt> <dt>((HRESULT)0x80040037L)</dt> </dl>                                                  | Error en la solicitud por motivos no especificados. <br/>                                                                                                                                                                |
 | <span id="TAPI_E_REQUESTCANCELLED"></span><span id="tapi_e_requestcancelled"></span><dl> <dt>**TAPI \_ E \_ REQUESTCANCELLED**</dt> <dt>((HRESULT)0x80040038L)</dt> </dl>                                         | La solicitud se canceló. <br/>                                                                                                                                                                                 |
 | <span id="TAPI_E_INVALPRIVILEGE"></span><span id="tapi_e_invalprivilege"></span><dl> <dt>**TAPI \_ E \_ INVALPRIVILEGE**</dt> <dt>((HRESULT)0x80040039L)</dt> </dl>                                               | El nivel de [**privilegios de**](/windows/desktop/api/Tapi3if/ne-tapi3if-call_privilege) la aplicación no es válido para la operación actual. <br/>                                                                                                          |
-| <span id="TAPI_E_INVALIDDIRECTION"></span><span id="tapi_e_invaliddirection"></span><dl> <dt>**TAPI \_ E \_ INVALIDDIRECTION**</dt> <dt>((HRESULT)0x8004003AL)</dt> </dl>                                         | La [**dirección de TERMINAL \_**](/windows/desktop/api/Tapi3if/ne-tapi3if-terminal_direction) pasada no era válida. <br/>                                                                                                                               |
+| <span id="TAPI_E_INVALIDDIRECTION"></span><span id="tapi_e_invaliddirection"></span><dl> <dt>**TAPI \_ E \_ INVALIDDIRECTION**</dt> <dt>((HRESULT)0x8004003AL)</dt> </dl>                                         | La [**dirección \_ de TERMINAL**](/windows/desktop/api/Tapi3if/ne-tapi3if-terminal_direction) pasada no era válida. <br/>                                                                                                                               |
 | <span id="TAPI_E_INVALIDTERMINAL"></span><span id="tapi_e_invalidterminal"></span><dl> <dt>**TAPI \_ E \_ INVALIDTERMINAL**</dt> <dt>((HRESULT)0x8004003BL)</dt> </dl>                                            | El terminal pasado no era válido para esta operación. <br/>                                                                                                                                                     |
 | <span id="TAPI_E_INVALIDTERMINALCLASS"></span><span id="tapi_e_invalidterminalclass"></span><dl> <dt>**TAPI \_ E \_ INVALIDTERMINALCLASS**</dt> <dt>((HRESULT)0x8004003CL)</dt> </dl>                             | La [**clase de terminal**](terminal-class.md) no es válida. <br/>                                                                                                                                                   |
 | <span id="TAPI_E_NODRIVER"></span><span id="tapi_e_nodriver"></span><dl> <dt>**TAPI \_ E \_ NODRIVER**</dt> <dt>((HRESULT)0x8004003DL)</dt> </dl>                                                                 | Se quitó el proveedor de servicios. <br/>                                                                                                                                                                          |
@@ -117,7 +117,7 @@ Los métodos y funciones TAPI pueden devolver una constante \_ TAPI \_ E. Estas 
 | Requisito | Value |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versión de TAPI<br/> | Requiere TAPI 3.0 o posterior<br/>                                                 |
-| Header<br/>       | <dl> <dt>Tapi3err.h</dt> </dl> |
+| Encabezado<br/>       | <dl> <dt>Tapi3err.h</dt> </dl> |
 
 
 

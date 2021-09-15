@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: bc69294f3b36b7652f7f0279e02926a279ef80e19f5d109dcfb22185101bf7b6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6fe48ef207132eb48e0e34ff712e8e9824fbf46c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118505633"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476056"
 ---
 # <a name="texture2dsamplecmplevelzero-methods"></a>Métodos Texture2D::SampleCmpLevelZero
 
@@ -34,11 +34,11 @@ Muestrea un [**objeto Texture2D**](sm5-object-texture2d.md) solo en el nivel 0 d
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Consulte [Texture-Object](dx-graphics-hlsl-to-type.md).
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

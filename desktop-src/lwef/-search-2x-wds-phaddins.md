@@ -1,30 +1,30 @@
 ---
 title: Desarrollo de complementos de controlador de protocolos
-description: Puede extender Microsoft Windows Desktop Search (WDS) para incluir nuevos almacenes de datos implementando un controlador de protocolo personalizado.
+description: Puede extender Microsoft Windows Desktop Search (WDS) para incluir nuevos almacenes de datos mediante la implementación de un controlador de protocolo personalizado.
 ms.assetid: 2447d95f-5832-453c-8857-3b4f4c158177
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fc107c8ca51d43e2602206eb993cea6cac6dd9ec866670235daf7fb81452f5e6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 45a8688621f7d2fda653d769c0e1dfdadd240f49
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119726505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475884"
 ---
 # <a name="developing-protocol-handler-add-ins"></a>Desarrollo de complementos de controlador de protocolos
 
 > [!NOTE]
 > Windows Desktop Search 2.x es una tecnología obsoleta que estaba disponible originalmente como complemento para Windows XP y Windows Server 2003. En versiones posteriores, use [Windows Search en](../search/-search-3x-wds-overview.md) su lugar.
 
-Puede extender Microsoft Windows Desktop Search (WDS) para incluir nuevos almacenes de datos implementando un controlador de protocolo personalizado.
+Puede extender Microsoft Windows Desktop Search (WDS) para incluir nuevos almacenes de datos mediante la implementación de un controlador de protocolo personalizado.
 
 ## <a name="indexing-data-stores-with-protocol-handlers"></a>Indexación de almacenes de datos con controladores de protocolo
 
 Un almacén de datos es un origen de contenido (un sistema de base de datos, un directorio, un sistema de archivos) donde se almacenan los datos y se pueden rastrear mediante el indexador WDS. El almacén puede ser jerárquico (como una base de datos) o basado en vínculos (como un sitio web). Un controlador de protocolo permite que aplicaciones de indexación como WDS rastreen sistemáticamente los nodos de un almacén de datos para extraer información pertinente para incluirla en el índice. Cada controlador de protocolo se usa para indexar un tipo específico de almacén de datos. WDS incluye controladores de protocolo para almacenes del sistema de archivos y para almacenes de datos de Microsoft Outlook y Microsoft Outlook Express (almacenes de correo electrónico, . Archivos PST, y así sucesivamente). Al indexar Outlook correo electrónico, por ejemplo, el controlador de protocolo rastrea todos los mensajes de todas las carpetas que extraen información de cada mensaje y datos adjuntos. Esta información se pasa al indexador para incluirla en el catálogo de WDS.
 
-A menudo, los usuarios necesitan buscar en otros almacenes de datos, como bases de datos heredadas, almacenes de correo electrónico o estructuras de datos no compatibles con WDS. Puede extender WDS para rastrear un nuevo almacén de datos mediante o implementando un controlador de protocolo específicamente para ese almacén de datos. En primer lugar, primero debe determinar si ya existe un controlador de protocolo para el almacén de datos, quizás para su uso con otra aplicación como SharePoint Services. Si es así, puede instalar ese controlador de protocolo en el sistema. Sin embargo, si no existe otro controlador de protocolo, deberá implementar uno. Los controladores de protocolo WDS usan las mismas especificaciones de diseño que SharePoint Services, y a menudo se pueden usar indistintamente.
+A menudo, los usuarios necesitan buscar en otros almacenes de datos, como bases de datos heredadas, almacenes de correo electrónico o estructuras de datos no compatibles con WDS. Puede extender WDS para rastrear un nuevo almacén de datos mediante o implementando un controlador de protocolo específicamente para ese almacén de datos. En primer lugar, primero debe determinar si ya existe un controlador de protocolo para el almacén de datos, quizás para su uso con otra aplicación como SharePoint Services. Si es así, puede instalar ese controlador de protocolo en el sistema. Sin embargo, si no existe otro controlador de protocolo, deberá implementar uno. Los controladores de protocolo WDS usan las mismas especificaciones de diseño SharePoint Services, y a menudo se pueden usar indistintamente.
 
-Además, si el almacén de datos contiene tipos de datos o archivos distintos de uno de los 200 tipos de archivo admitidos por WDS, también debe implementar un filtro para tener acceso e indexar el contenido de los elementos del almacén. WDS 2.x usa el controlador de protocolos y la [**tecnología IFilter**](/windows/desktop/api/filter/nn-filter-ifilter)que usa SharePoint Services. Si ya tiene filtros para un almacén y un tipo de archivo específicos instalados en el sistema que se va a indexar, WDS usa las interfaces existentes para indexar estos datos.
+Además, si el almacén de datos contiene tipos de datos o archivos distintos de uno de los 200 tipos de archivo admitidos por WDS, también debe implementar un filtro para tener acceso e indexar el contenido de los elementos del almacén. WDS 2.x usa el controlador de protocolo y la [**tecnología IFilter**](/windows/desktop/api/filter/nn-filter-ifilter)que usa SharePoint Services. Si ya tiene filtros para un almacén y un tipo de archivo específicos instalados en el sistema que se va a indexar, WDS usa las interfaces existentes para indexar estos datos.
 
  
 

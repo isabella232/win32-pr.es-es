@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ffc7ab3a0f0e68b7dc3abb595ba22da75c92a4de219ea04b0cb2366d9ce20874
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6ef494620e6759a503ec7c966c94e04ce671de74
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120110055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570164"
 ---
 # <a name="wmalbumcoverurl"></a>WM/AlbumCoverURL
 

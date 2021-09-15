@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 588a7fdc02fb59a9dc156f9f141b210d36e4cef131bf353d6c98d9c055392a28
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 92bf3d64d36c043e9e33b897294ff74a3fda0445
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118063004"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468751"
 ---
 # <a name="imfmediaengineclassfactoryexistypesupported-method"></a>MÉTODO IMFMediaEngineClassFactoryEx::IsTypeSupported
 
@@ -70,11 +70,11 @@ Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario,
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
-| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 

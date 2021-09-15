@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 71246aaa2897540b272360a790718f8d5900934108c98dfcc6b4023898f9f2db
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6b6aaea772376b0e57c006a56a5a1bb30bc497c9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119104591"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468706"
 ---
-# <a name="mf_mse_error-enumeration"></a>MF \_ MSE \_ ERROR (enumeración)
+# <a name="mf_mse_error-enumeration"></a>Enumeración \_ MF MSE \_ ERROR
 
 Define los distintos estados de error de la extensión de origen de medios.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -56,7 +56,7 @@ Especifica un error con la red.
 
 </dd> <dt>
 
-<span id="MF_MSE_ERROR_DECODE"></span><span id="mf_mse_error_decode"></span>**DESCODIFICACIÓN \_ DE \_ ERRORES DE MF MSE \_**
+<span id="MF_MSE_ERROR_DECODE"></span><span id="mf_mse_error_decode"></span>**DESCODIFICACIÓN \_ DE ERRORES DE MSE \_ \_ DE MF**
 </dt> <dd>
 
 Especifica un error con lacoding.
@@ -74,15 +74,15 @@ Especifica un error desconocido.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Windows 8.1 solo aplicaciones de escritorio\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | Windows Server 2012 Solo aplicaciones \[ de escritorio R2\]<br/>                                      |
-| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

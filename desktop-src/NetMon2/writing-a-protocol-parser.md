@@ -4,12 +4,12 @@ ms.assetid: 0be87b33-aab0-4986-8a86-914e0a7b8f2d
 title: Escribir un analizador de protocolos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e934867952fc02734ef205cdbdc961db9d4c6f81197ba3229a49b8598400047a
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 338c224dd036df747af6ab805dae273f6ad3f510
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120128815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476715"
 ---
 # <a name="writing-a-protocol-parser"></a>Escribir un analizador de protocolos
 

@@ -4,12 +4,12 @@ ms.assetid: 8c2420de-292f-481e-b06b-54cc174a8faf
 title: Obtención de información en un monitor de pantalla
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4b446b379d1d90dd32eedb47d356d2de0fb9e07d1f30eba9e65e470a3f24e82
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8e8b120563e9ceed2e87d66e5bb79790a0f7c771
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117886728"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570677"
 ---
 # <a name="getting-information-on-a-display-monitor"></a>Obtención de información en un monitor de pantalla
 

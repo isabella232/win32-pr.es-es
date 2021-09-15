@@ -1,19 +1,19 @@
 ---
-description: Representa la hora real de reproducción de un archivo multimedia y se mide en unidades de 100 NS, no en milisegundos.
+description: Representa el tiempo de reproducción real de un archivo multimedia y se mide en unidades de 100ns, no en milisegundos.
 ms.assetid: 5548f421-6475-4419-b677-5d9eb625a373
-title: System. Media. Duration
+title: System.Media.Duration
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 8d14b461363346dd6214bc4e5a458995cda22bc3
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105721335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570445"
 ---
-# <a name="systemmediaduration"></a>System. Media. Duration
+# <a name="systemmediaduration"></a>System.Media.Duration
 
-Representa la hora real de reproducción de un archivo multimedia y se mide en unidades de 100 NS, no en milisegundos.
+Representa el tiempo de reproducción real de un archivo multimedia y se mide en unidades de 100ns, no en milisegundos.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -107,7 +107,7 @@ propertyDescription
 
 ## <a name="remarks"></a>Observaciones
 
-Los valores PKEY se definen en Propkey. h.
+Los valores PKEY se definen en Propkey.h.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -122,7 +122,7 @@ Los valores PKEY se definen en Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[Requerida](./propdesc-schema-typeinfo.md)
+[typeInfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
@@ -134,7 +134,7 @@ Los valores PKEY se definen en Propkey. h.
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[Numérico](./propdesc-schema-numberformat.md)
+[numberFormat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -152,7 +152,7 @@ Los valores PKEY se definen en Propkey. h.
 [filterControl](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
-[Consulta](./propdesc-schema-querycontrol.md)
+[queryControl](./propdesc-schema-querycontrol.md)
 </dt> </dl>
 
  

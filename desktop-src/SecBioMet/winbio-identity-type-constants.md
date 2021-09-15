@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2f0e51d30e45b16dd7683d746cdef7ab5f75aaf62611102dd4dcd3e7bd07c8b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dad068c6838f0a3a675970b7c9359b12ea8faa2c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118910197"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476529"
 ---
-# <a name="winbio_identity_type-constants"></a>Constantes DE \_ TIPO DE \_ IDENTIDAD WINBIO
+# <a name="winbio_identity_type-constants"></a>Constantes DE \_ TIPO \_ DE IDENTIDAD WINBIO
 
-Las siguientes **constantes DE TIPO DE IDENTIDAD \_ \_ DE WINBIO** se pueden usar para especificar el formato de la información de identidad contenida en la [**estructura DE IDENTIDAD \_ DE WINBIO.**](winbio-identity.md)
+Las siguientes constantes DE TIPO DE IDENTIDAD **\_ \_ DE WINBIO** se pueden usar para especificar el formato de la información de identidad contenida en la [**estructura DE IDENTIDAD \_ DE WINBIO.**](winbio-identity.md)
 
 
 
@@ -43,9 +43,9 @@ Las siguientes **constantes DE TIPO DE IDENTIDAD \_ \_ DE WINBIO** se pueden usa
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                    |
+| Cliente mínimo compatible<br/> | Windows 7 \[ aplicaciones de escritorio\]<br/>                                                                    |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                       |
-| Header<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Winbio \_ types.h (incluir Winbio.h)</dt> </dl> |
 
 
 

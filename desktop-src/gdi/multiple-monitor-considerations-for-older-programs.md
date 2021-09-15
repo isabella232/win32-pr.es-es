@@ -4,12 +4,12 @@ ms.assetid: 908cf88c-69ed-4855-817d-ba749e14ff85
 title: Consideraciones de varios monitores para programas anteriores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4444d3de54886c4743c17f7348482f154e21a11d027cd05014ac5eb26cb6a249
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: feebb356cb2f9c5480c84f1718b51d6e866ef621
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117698771"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475921"
 ---
 # <a name="multiple-monitor-considerations-for-older-programs"></a>Consideraciones de varios monitores para programas anteriores
 

@@ -1,20 +1,20 @@
 ---
 description: 'Más información sobre: Propiedades ByteColumnValue'
-title: Propiedades ByteColumnValue
+title: Propiedades byteColumnValue
 TOCTitle: ByteColumnValue properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.ByteColumnValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.bytecolumnvalue_properties(v=EXCHG.10)
 ms:contentKeyID: 55100961
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: d1c0a861cbc7adf7b1c0b9ea6f036b9ced6d14f7e8688e89d48c81c25b26554c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 164eed167771ccc1bd6a23181ceaafc3049fd367
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117902121"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570828"
 ---
-# <a name="bytecolumnvalue-properties"></a>Propiedades ByteColumnValue
+# <a name="bytecolumnvalue-properties"></a>Propiedades byteColumnValue
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
@@ -50,7 +50,7 @@ El [tipo ByteColumnValue](./bytecolumnvalue-class.md) expone los miembros siguie
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn334225(v=exchg.10).md">Duración</a></td>
-<td>Obtiene la longitud de bytes de un valor de columna, que es cero si la columna es null; de lo contrario, coincide con el tamaño de esta columna de tamaño fijo. (Se hereda de <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T). &gt; </a></td>
+<td>Obtiene la longitud de bytes de un valor de columna, que es cero si la columna es NULL; de lo contrario, coincide con el tamaño de esta columna de tamaño fijo. (Se hereda de <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T). &gt; </a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>

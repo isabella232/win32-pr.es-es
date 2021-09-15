@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: c956aacd7b61243fbaeb26ed1a29ed0fee4522d83d8b4ef3ac25b3b1921b42a9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d9bd711bbc97997045989f2eb4ffdbc51ae3559
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118900812"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476387"
 ---
 # <a name="recipientsclear-method"></a>Método Recipients.Clear
 
@@ -47,18 +47,18 @@ Este método no devuelve ningún valor. Una aplicación que usa este método deb
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Objetos criptografía**](cryptography-objects.md)
+[**Objetos de criptografía**](cryptography-objects.md)
 </dt> <dt>
 
 [**Recipients**](recipients.md)

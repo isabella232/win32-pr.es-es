@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: baa02c3b6d207cbcc2bf487f51c0e96dc2f2dd98748edc81efb58ac957fac4ed
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d05ffb1eeff199297943e678783731a26a38092a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118937631"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476700"
 ---
 # <a name="gluquadricorientation-function"></a>función gluQuadricOrientation
 
@@ -70,7 +70,7 @@ Orientación deseada. Los valores siguientes son válidos.
 
 Esta función no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **función gluQuadricOrientation** especifica qué tipo de orientación se desea para los cuádigos representados con **quadObject**. La interpretación de hacia fuera y hacia dentro depende del cuádigo que se dibuja.
 

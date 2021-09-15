@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b86417db68b6e538e9a3a5ab4300a5f31fb0a2138d7158490c18d5877009c422
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e1f527fae20d24e97114afa1f07b427d799c26c6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119362415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570744"
 ---
 # <a name="jet_errinfobasiccontentequals-method"></a>JET_ERRINFOBASIC. Método ContentEquals
 
@@ -61,7 +61,7 @@ public bool ContentEquals(
 
 #### <a name="parameters"></a>Parámetros
 
-  - Otros  
+  - otro  
     Tipo: [Microsoft.Isam.Esent.Interop.Windows8.JET_ERRINFOBASIC](./jet-errinfobasic-class.md)  
     
     Instancia de que se va a comparar con esta instancia.

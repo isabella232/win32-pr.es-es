@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vist
 ms:contentKeyID: 55104282
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 1ada48839d05f1eaeec5eae5fe541ea89c5e0b641bba35441b3f189bf2973ba0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2c5e4c89dcf37285634fd6fc5e53468bf98e4d07
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119106843"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475964"
 ---
 # <a name="vistaapi-members"></a>Miembros de VistaApi
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-API DE ESENT que se admiten por primera vez en Windows Vista.
+API de ESENT que se admiten por primera vez en Windows Vista.
 
 El [tipo VistaApi](./vistaapi-class.md) expone los miembros siguientes.
 
@@ -57,12 +57,12 @@ El [tipo VistaApi](./vistaapi-class.md) expone los miembros siguientes.
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn351265(v=exchg.10).md">JetInit3</a></td>
-<td>Inicialice el motor de base de datos DE ESENT.</td>
+<td>Inicialice el motor de base de datos de ESENT.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335326(v=exchg.10).md">JetOpenTemporaryTable</a></td>
-<td>Crea una tabla temporal con un único índice. Una tabla temporal almacena y recupera registros igual que una tabla normal creada mediante JetCreateTableColumnIndex. Sin embargo, las tablas temporales son mucho más rápidas que las tablas normales debido a su naturaleza volátil. También se pueden usar para ordenar y realizar rápidamente la eliminación de duplicados en conjuntos de registros cuando se accede a ellos de una manera puramente secuencial. Vea también <a href="dn292231(v=exchg.10).md">JetOpenTempTable(JET_SESID, [], Int32, TempTableGrbit, JET_TABLEID, [])</a>, <a href="dn292233(v=exchg.10).md">JetOpenTempTable3(JET_SESID, [], Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, []).</a></td>
+<td>Crea una tabla temporal con un único índice. Una tabla temporal almacena y recupera registros igual que una tabla normal creada mediante JetCreateTableColumnIndex. Sin embargo, las tablas temporales son mucho más rápidas que las tablas normales debido a su naturaleza volátil. También se pueden usar para ordenar y realizar la eliminación de duplicados rápidamente en conjuntos de registros cuando se accede a ellos de una manera puramente secuencial. Vea también <a href="dn292231(v=exchg.10).md">JetOpenTempTable(JET_SESID, [], Int32, TempTableGrbit, JET_TABLEID, [])</a>, <a href="dn292233(v=exchg.10).md">JetOpenTempTable3(JET_SESID, [], Int32, JET_UNICODEINDEX, TempTableGrbit, JET_TABLEID, []).</a></td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
@@ -77,7 +77,7 @@ El [tipo VistaApi](./vistaapi-class.md) expone los miembros siguientes.
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335341(v=exchg.10).md">JetOSSnapshotPrepareInstance</a></td>
-<td>Selecciona una instancia específica para formar parte de la sesión de instantáneas.</td>
+<td>Selecciona una instancia específica para formar parte de la sesión de instantánea.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
@@ -95,7 +95,7 @@ El [tipo VistaApi](./vistaapi-class.md) expone los miembros siguientes.
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

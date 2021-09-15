@@ -6,16 +6,16 @@ keywords:
 - ActiveX Control, accesibilidad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6bac5c4d2a27e5f069f2242999438eebe85e2ea7df1a6bc94890aec142db246c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1a3a76aa72fadef502a6a4319284ab34fdd5214d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120098115"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476132"
 ---
 # <a name="use-msaa-to-make-a-windowless-activex-control-accessible"></a>Uso de MSAA para hacer que un control de ActiveX sin ventanas sea accesible
 
-Describe cómo usar la API Microsoft Active Accessibility para asegurarse de que el control ActiveX de Microsoft sin ventanas es accesible para las aplicaciones cliente de tecnología de asistencia (AT).
+Describe cómo usar la API Microsoft Active Accessibility para asegurarse de que el control de ActiveX de Microsoft sin ventanas es accesible para las aplicaciones cliente de tecnología de asistencia (AT).
 
 ## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
@@ -68,7 +68,7 @@ STDMETHODIMP CMyAccessibleMSAAControl::QueryService(REFGUID guidService,
 
 ### <a name="step-3-delegate-iaccessibleget_accparent-method-calls-to-the-control-sites-iaccessiblewindowlesssitegetparentaccessible-method"></a>Paso 3: Delegar llamadas del método IAccessible::get accParent al método \_ IAccessibleWindowlessSite::GetParentAccessible del sitio de control.
 
-Cuando un cliente solicita el objeto primario del control sin ventana, el contenedor llama al método [**IAccessible::get \_ accParent del**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent) control. La **implementación de get \_ accParent** debe delegar al [**método IAccessibleWindowlessSite::GetParentAccessible**](/windows/desktop/api/oleacc/nf-oleacc-iaccessiblewindowlesssite-getparentaccessible) del contenedor.
+Cuando un cliente solicita el objeto primario del control sin ventana, el contenedor llama al método [**IAccessible::get \_ accParent del**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent) control. La **implementación de get \_ accParent** debe delegar en [**el método IAccessibleWindowlessSite::GetParentAccessible**](/windows/desktop/api/oleacc/nf-oleacc-iaccessiblewindowlesssite-getparentaccessible) del contenedor.
 
 En este ejemplo se muestra cómo implementar el [**\_ método get accParent.**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent)
 
@@ -104,7 +104,7 @@ HRESULT CMyAccessibleMSAAControl::get_accParent(IDispatch **ppdispParent)
 
 ### <a name="step-4-acquire-a-range-of-object-ids-to-assign-to-the-event-sources-in-your-windowless-control"></a>Paso 4: Adquirir un intervalo de los iDs de objeto que se van a asignar a los orígenes de eventos en el control sin ventana.
 
-Al igual que los controles basados en ventanas, un control de ActiveX sin ventana llama a la función [**NotifyWinEvent**](/windows/desktop/api/Winuser/nf-winuser-notifywinevent) para notificar a los clientes de eventos importantes. Los parámetros de función incluyen el identificador de objeto del elemento que genera el evento. El control sin ventanas debe asignar los id. de objeto mediante un valor de un intervalo adquirido mediante una llamada al método [**IAccessibleWindowlessSite::AcquireObjectIdRange**](/windows/desktop/api/oleacc/nf-oleacc-iaccessiblewindowlesssite-acquireobjectidrange) del sitio de control.
+Al igual que los controles basados en ventanas, un control ActiveX sin ventana llama a la función [**NotifyWinEvent**](/windows/desktop/api/Winuser/nf-winuser-notifywinevent) para notificar a los clientes de eventos importantes. Los parámetros de función incluyen el identificador de objeto del elemento que genera el evento. El control sin ventanas debe asignar los id. de objeto mediante un valor de un intervalo adquirido mediante una llamada al método [**IAccessibleWindowlessSite::AcquireObjectIdRange**](/windows/desktop/api/oleacc/nf-oleacc-iaccessiblewindowlesssite-acquireobjectidrange) del sitio de control.
 
 En este ejemplo se muestra cómo adquirir un intervalo de valores de identificador de objeto desde el contenedor de controles.
 
@@ -131,7 +131,7 @@ SafeRelease(&pWindowlessSite);
 
 Cuando un control sin ventana llama a la función [**NotifyWinEvent,**](/windows/desktop/api/Winuser/nf-winuser-notifywinevent) el control especifica el identificador de objeto del elemento de interfaz de usuario que genera el evento y especifica el contenedor de controles como la ventana que responderá a los mensajes [**\_ WM GETOBJECT**](wm-getobject.md) en nombre del control.
 
-Si una aplicación cliente responde al evento , el contenedor de controles recibe un mensaje [**\_ GETOBJECT**](wm-getobject.md) de WM que incluye el identificador de objeto del elemento de interfaz de usuario que ha producido el evento. El contenedor de controles responde buscando el control sin ventanas que "posee" el identificador de objeto y, a continuación, llamando al método [**IAccessibleHandler::AccessibleObjectFromID**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessiblehandler-accessibleobjectfromid) de ese control. El **método AccessibleObjectFromID** devuelve el puntero de interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) para el elemento de interfaz de usuario y el contenedor de controles reenvía el puntero a la aplicación cliente.
+Si una aplicación cliente responde al evento , el contenedor de control recibe un mensaje [**\_ WM GETOBJECT**](wm-getobject.md) que incluye el identificador de objeto del elemento de la interfaz de usuario que ha producido el evento. El contenedor de controles responde buscando el control sin ventanas que "posee" el identificador de objeto y, a continuación, llamando al método [**IAccessibleHandler::AccessibleObjectFromID**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessiblehandler-accessibleobjectfromid) de ese control. El **método AccessibleObjectFromID** devuelve el puntero de interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) para el elemento de interfaz de usuario y el contenedor de controles reenvía el puntero a la aplicación cliente.
 
 ## <a name="related-topics"></a>Temas relacionados
 

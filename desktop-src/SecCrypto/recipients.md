@@ -14,11 +14,11 @@ api_type:
 api_location:
 - Capicom.dll
 ms.openlocfilehash: e0f0f6474c6ed8883eb591591eff387fe387f7d6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108103743"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476374"
 ---
 # <a name="recipients-object"></a>Objeto Recipients
 
@@ -35,7 +35,7 @@ El **objeto Recipients** se usa para realizar las siguientes tareas:
 -   Recuperar un objeto **Recipients** específico de la colección.
 -   Recorrer en iteración la colección.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto Recipients** tiene estos tipos de miembros:
 
@@ -52,7 +52,7 @@ El **objeto Recipients** tiene estos métodos.
 |:------------------------------------|:---------------------------------------------------------------------------------------|
 | [**Añadir**](recipients-add.md)       | Agrega un [**objeto Certificate**](certificate.md) a la colección.<br/>         |
 | [**Borrar**](recipients-clear.md)   | Quita todos los [**objetos Certificate**](certificate.md) de la colección.<br/> |
-| [**Quitar**](recipients-remove.md) | Quita un [**objeto Certificate**](certificate.md) de la colección.<br/>    |
+| [**Remove**](recipients-remove.md) | Quita un [**objeto Certificate**](certificate.md) de la colección.<br/>    |
 
 
 
@@ -64,17 +64,17 @@ El **objeto Recipients** tiene estas propiedades.
 
 
 
-| Propiedad                                           | Tipo de acceso          | Descripción                                                                                                                                                                                                                     |
+| Propiedad.                                           | Tipo de acceso          | Descripción                                                                                                                                                                                                                     |
 |:---------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**\_NewEnum**](recipients-newenum.md)<br/> | Solo lectura<br/> | Recupera una [**interfaz IEnumVARIANT en**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) un objeto que se puede usar para enumerar la colección. Esta propiedad está oculta en Visual Basic Scripting Edition (VBScript).<br/> |
-| [**Contar**](recipients-count.md)<br/>       |                      | Número de objetos de la **colección Recipients.**<br/>                                                                                                                                                              |
-| [**Elemento**](recipients-item.md)<br/>         |                      | Objeto indexado de la colección. Esta es la propiedad predeterminada.<br/>                                                                                                                                                   |
+| [**Count**](recipients-count.md)<br/>       |                      | Número de objetos de la **colección Recipients.**<br/>                                                                                                                                                              |
+| [**Artículo**](recipients-item.md)<br/>         |                      | Objeto indexado de la colección. Esta es la propiedad predeterminada.<br/>                                                                                                                                                   |
 
 
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 No **se puede crear** el objeto Recipients.
 
@@ -82,18 +82,18 @@ No **se puede crear** el objeto Recipients.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------------|----------------------------------------------------------------------------------------|
 | Redistribuible<br/> | CAPICOM 2.0 o posterior en Windows Server 2003 y Windows XP<br/>                  |
 | Archivo DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Objetos de criptografía**](cryptography-objects.md)
+[**Objetos criptografía**](cryptography-objects.md)
 </dt> </dl>
 
  

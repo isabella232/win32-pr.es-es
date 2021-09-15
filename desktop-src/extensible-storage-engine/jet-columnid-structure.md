@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: estructura de JET_COLUMNID'
-title: Estructura de JET_COLUMNID
+description: 'Más información sobre: estructura JET_COLUMNID datos'
+title: JET_COLUMNID estructura
 TOCTitle: JET_COLUMNID structure
 ms:assetid: T:Microsoft.Isam.Esent.Interop.JET_COLUMNID
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columnid(v=EXCHG.10)
@@ -25,18 +25,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 163c10250e9d1f109b9557f8d222790c71561f7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105678379"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475987"
 ---
-# <a name="jet_columnid-structure"></a>Estructura de JET_COLUMNID
+# <a name="jet_columnid-structure"></a>JET_COLUMNID estructura
 
 Un JET_COLUMNID identifica una columna dentro de una tabla.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -62,6 +62,6 @@ Todos los miembros estáticos públicos (Shared de Visual Basic) de este tipo so
 
 #### <a name="reference"></a>Referencia
 
-[Miembros de JET_COLUMNID](./jet-columnid-members.md)
+[JET_COLUMNID miembros](./jet-columnid-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

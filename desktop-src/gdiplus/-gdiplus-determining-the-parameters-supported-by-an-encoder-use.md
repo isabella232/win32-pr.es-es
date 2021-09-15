@@ -4,16 +4,16 @@ ms.assetid: 2e1a5279-dd9d-46de-822c-d356a344f340
 title: Determinar los parámetros admitidos por un codificador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c842b14a2d14af578eede428e79018a2d266ea6133ed61a9bd0736e8dadc97e7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ad9bd76abb0b9f01bf55fd738df77cd086bc757c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118977575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570668"
 ---
 # <a name="determining-the-parameters-supported-by-an-encoder"></a>Determinar los parámetros admitidos por un codificador
 
-La [**clase Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) proporciona el método [**Image::GetEncoderParameterList**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getencoderparameterlist) para que pueda determinar los parámetros admitidos por un codificador de imagen determinado. El **método Image::GetEncoderParameterList** devuelve una matriz de [**objetos EncoderParameter.**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) Debe asignar un búfer para recibir esa matriz antes de llamar a **Image::GetEncoderParameterList**. Puede llamar a [**Image::GetEncoderParameterListSize**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getencoderparameterlistsize) para determinar el tamaño del búfer necesario.
+La [**clase Image**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-image) proporciona el método [**Image::GetEncoderParameterList**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getencoderparameterlist) para que pueda determinar los parámetros admitidos por un codificador de imagen determinado. El **método Image::GetEncoderParameterList** devuelve una matriz de objetos [**EncoderParameter.**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter) Debe asignar un búfer para recibir esa matriz antes de llamar a **Image::GetEncoderParameterList**. Puede llamar a [**Image::GetEncoderParameterListSize**](/windows/desktop/api/Gdiplusheaders/nf-gdiplusheaders-image-getencoderparameterlistsize) para determinar el tamaño del búfer necesario.
 
 La siguiente aplicación de consola obtiene la lista de parámetros para el codificador JPEG. La función main se basa en la función auxiliar GetEncoderClsid, que se muestra en [Recuperación](-gdiplus-retrieving-the-class-identifier-for-an-encoder-use.md)del identificador de clase para un codificador .
 

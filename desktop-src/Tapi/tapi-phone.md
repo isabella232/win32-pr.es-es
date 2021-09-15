@@ -4,12 +4,12 @@ ms.assetid: c2e52fdf-e07a-4897-8af5-0a101d6c237a
 title: tapi/phone
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96b3238fb2e83d4f6e5e565f40b3ab3b124236ae2c89f879cb284d4a5997f662
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0c704a6999982fb0c23a8b02439a3d0e61b3af8c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119002723"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476313"
 ---
 # <a name="tapiphone"></a>tapi/phone
 

@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5816703fd7b0db95bae9070e40928a9bfa1fe99decd5473eee94d8bbf17a3528
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1028b78e74ed10c572feb904baa8ec395087ee3a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117950432"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476333"
 ---
 # <a name="tf_ss_-constants"></a>Constantes \_ de TF \_ \* SS
 
@@ -39,7 +39,7 @@ Las constantes de TF SS, definidas antes del tiempo de ejecución en la \_ \_ \*
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **miembro dwStaticFlags** de la estructura TF \_ STATUS usa estas constantes.
 
@@ -52,8 +52,8 @@ El **miembro dwStaticFlags** de la estructura TF \_ STATUS usa estas constantes.
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                 |
 | Redistribuible<br/>          | TSF 1.0 en Windows 2000 Professional<br/>                                      |
-| Header<br/>                   | <dl> <dt>Msctf.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>Msctf.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Msctf.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>Msctf.idl</dt> </dl> |
 
 
 

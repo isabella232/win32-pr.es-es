@@ -4,12 +4,12 @@ description: Puede mejorar la experiencia de los usuarios con Microsoft Windows 
 ms.assetid: 899f3fd1-1ae9-45fe-ae6d-26d4f07bf6e4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9198fc56b8ca09e61909b1828d7d00b964bb12c0e13308583eb36a4e2211f3c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: adbd6b0f4c647c47e11d14aea5e5af748a59ba53
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118976875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475887"
 ---
 # <a name="adding-icons-and-context-menus-with-shell-extensions"></a>Agregar iconos y menús contextuales con extensiones de shell
 
@@ -74,7 +74,7 @@ Esta interfaz no se usa directamente. Lo usa la implementación del sistema de a
 
 ## <a name="ishellfolder"></a>IShellFolder
 
-La interfaz **IShellFolder** se usa para administrar carpetas y se requiere una implementación parcial para que las interfaces de icono y contexto implementadas para un controlador de protocolo se comporten correctamente en la interfaz de usuario de resultados de la búsqueda de Windows Desktop. La mayor parte de la funcionalidad necesaria se expone a través **del método GetUIObjectOf.** Este método permite que un complemento consulte las interfaces **IExtractIcon** **e IContextMenu.**
+La interfaz **IShellFolder** se usa para administrar carpetas y se requiere una implementación parcial para que las interfaces de icono e contexto implementadas para un controlador de protocolo se comporten correctamente en la interfaz de usuario de resultados de la búsqueda de escritorio de Windows. La mayor parte de la funcionalidad necesaria se expone a través **del método GetUIObjectOf.** Este método permite que un complemento consulte las interfaces **IExtractIcon** **e IContextMenu.**
 
 La **interfaz IShellFolder** usa PIDL en lugar de direcciones URL. A diferencia de los requisitos de una extensión de espacio de nombres completa, los complementos pueden usar una estructura IDL simple que contiene solo la dirección URL.
 
@@ -123,7 +123,7 @@ La acción predeterminada en el menú contextual es la misma que se hace cuando 
 
 ## <a name="code-sample"></a>Ejemplo de código
 
-El [controlador de protocolo personalizado Interfaz de usuario ejemplo](-search-2x-wds-ph-ui-samplecode.md) muestra una implementación de **IShellFolder** e interfaces compatibles, e incluye compatibilidad para manipular las PIDL.
+El [controlador de protocolo personalizado Interfaz de usuario código](-search-2x-wds-ph-ui-samplecode.md) de ejemplo muestra una implementación de **IShellFolder** e interfaces compatibles e incluye compatibilidad para manipular las PIDL.
 
 ## <a name="related-topics"></a>Temas relacionados
 

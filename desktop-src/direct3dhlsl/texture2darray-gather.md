@@ -1,5 +1,5 @@
 ---
-title: Métodos texture2DArray::Texture2DArray Gather
+title: Métodos Texture2DArray::Texture2DArray Gather
 description: Muestrea un objeto Texture2DArray y devuelve los cuatro componentes.
 ms.assetid: eea1dd00-0061-4601-a218-979eb0ecd36d
 keywords:
@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 4b973060e30385087c653e47c692ac4d44e3eb63f528eb4e6f2ced65431100c0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: cd10959490a85583cab01814f9cdb012859317a4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119485215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476050"
 ---
 # <a name="texture2darraygather-methods"></a>Métodos Texture2DArray::Gather
 

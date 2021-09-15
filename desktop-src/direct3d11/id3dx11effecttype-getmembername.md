@@ -5,7 +5,7 @@ ms.assetid: cd231741-09e1-4e69-9384-5cdfbf83fc8b
 keywords:
 - Método GetMemberName Direct3D 11
 - Método GetMemberName Direct3D 11, interfaz ID3DX11EffectType
-- Interfaz ID3DX11EffectType Direct3D 11, método GetMemberName
+- Interfaz ID3DX11EffectType Direct3D 11 , método GetMemberName
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db740b11e8da886d1c2b3339b1cdf64fa941dcb4947e9f399be8b49b2747bbe5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a4aa9a24067d8ef19680ca58e41659da850659b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118532347"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476062"
 ---
 # <a name="id3dx11effecttypegetmembername-method"></a>Método ID3DX11EffectType::GetMemberName
 
@@ -58,7 +58,7 @@ Tipo: **[ **LPCSTR**](/windows/desktop/WinProg/windows-data-types)**
 
 Nombre del miembro.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 > [!Note]  
 > El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo effects. Para obtener más información sobre el uso del origen de Efectos 11, vea [Diferencias entre los efectos 10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)

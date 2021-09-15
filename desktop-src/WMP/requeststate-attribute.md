@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 545ed92345a1b9dfce2072e8a0917660bc36afe2c89e47cb6c0f2f1e50520bf0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bb77fd3ff1510f9b18fd5632e64bf499bacbc3e3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117746324"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476196"
 ---
 # <a name="requeststate-attribute"></a>Atributo RequestState
 
@@ -27,7 +27,7 @@ El **atributo RequestState** es el estado de solicitud de información multimedi
 
 -   [Elementos de audio](audio-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la biblioteca.
 

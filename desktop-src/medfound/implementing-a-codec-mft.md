@@ -4,12 +4,12 @@ ms.assetid: b15bda0a-0fdd-4601-975d-a71c47c974bf
 title: Implementación de un MFT de códec
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bca6d0ce72ea65f400cb0c3c9249250f95c3c746e6f25c982a0a721bb87f12c6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4412db23747e9a6b3468e9e428120d099b2445ff
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117878322"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475816"
 ---
 # <a name="implementing-a-codec-mft"></a>Implementación de un MFT de códec
 
@@ -34,11 +34,11 @@ El procedimiento siguiente se usa para inicializar un codificador:
 4.  Llame [**a IMFTransform::GetInputAvailableType para**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getinputavailabletype) obtener una lista de tipos de entrada compatibles. (Este paso puede omitirse).
 5.  Llame [**a IMFTransform::SetInputType para**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setinputtype) establecer el formato de entrada sin comprimir.
 
-Después de establecer el tipo de salida en el paso 3, el método [**GetInputAvailableType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getinputavailabletype) debe devolver una lista de tipos de entrada que sean compatibles con el tipo de salida actual. En otras palabras, los tipos devueltos por **GetInputAvailableType** en este momento deben ser válidos [**para SetInputType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setinputtype).
+Después de establecer el tipo de salida en el paso 3, el método [**GetInputAvailableType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getinputavailabletype) debe devolver una lista de tipos de entrada que sean compatibles con el tipo de salida actual. En otras palabras, los tipos devueltos **por GetInputAvailableType** en este momento deben ser válidos [**para SetInputType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setinputtype).
 
-En el caso de los descodificadores, se invierte el orden en el que se establecen los tipos: el tipo de entrada se establece primero, seguido del tipo de salida. Una vez establecido el tipo de entrada, el método [**IMFTransform::GetOutputAvailableType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype) debe devolver una lista de tipos que se pueden pasar al método [**IMFTransform::SetOutputType.**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype)
+En el caso de los descodificadores, se invierte el orden en el que se establecen los tipos: el tipo de entrada se establece primero, seguido del tipo de salida. Una vez establecido el tipo de entrada, el método [**IMFTransform::GetOutputAvailableType**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype) debe devolver una lista de tipos que se pueden pasar al [**método IMFTransform::SetOutputType.**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-setoutputtype)
 
-Los codificadores y descodificadores deben admitir NV12 como un formato común sin comprimir. Esto garantiza que los componentes de canalización pueden interoperar con conversiones de espacio de colores mínimas. Por supuesto, también se pueden admiten otros formatos.
+Los codificadores y descodificadores deben admitir NV12 como un formato común sin comprimir. Esto garantiza que los componentes de canalización puedan interoperar con conversiones de espacio de colores mínimas. Por supuesto, también se pueden admiten otros formatos.
 
 ## <a name="decoders"></a>Decodificadores
 
@@ -72,7 +72,7 @@ El origen de medios podría adjuntar los siguientes atributos de televisa a los 
 | Atributo                                                                                   | Descripción                                    |
 |---------------------------------------------------------------------------------------------|------------------------------------------------|
 | [**MFSampleExtension \_ RepeatFirstField**](mfsampleextension-repeatfirstfield-attribute.md) | Equivalente a la marca "repeat first field" (RFF). |
-| [**MFSampleExtension \_ BottomFieldFirst**](mfsampleextension-bottomfieldfirst-attribute.md) | Inversa a la marca "top field first" (TFF).       |
+| [**MFSampleExtension \_ BottomFieldFirst**](mfsampleextension-bottomfieldfirst-attribute.md) | Al contrario de la marca "top field first" (TFF).       |
 
 
 

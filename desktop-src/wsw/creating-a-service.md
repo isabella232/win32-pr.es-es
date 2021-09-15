@@ -4,16 +4,16 @@ description: La creación de un servicio web se simplifica en gran medida en WWS
 ms.assetid: 3536d1c6-6179-4f69-9cc8-27fe6ae30826
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93f6daadbfcd1d06f76bf5bef97559214e36015d3f72ff440e77f4293a47ea57
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f4700324a84962047f403ca7ad090adc3e9f4e99
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119805745"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570113"
 ---
 # <a name="creating-a-service"></a>Crear un servicio
 
-La creación de un servicio web se simplifica en gran medida en WWSAPI mediante [service model](service-model-layer-overview.md) API [ yWsUtil.exe](wsutil-compiler-tool.md) herramienta. El modelo de servicio proporciona una API que permite al servicio y al cliente enviar y recibir [mensajes](message.md) a través de un [canal](channel.md) como llamadas al método C. La herramienta WsUtil genera códigos auxiliares y encabezados para implementar el servicio.
+La creación de un servicio web se simplifica en gran medida en WWSAPI mediante [service model](service-model-layer-overview.md) API y la [WsUtil.exe](wsutil-compiler-tool.md) web. El modelo de servicio proporciona una API que permite al servicio y al cliente enviar y recibir [mensajes](message.md) a través de un [canal](channel.md) a medida que llama al método C. La herramienta WsUtil genera códigos auxiliares y encabezados para implementar el servicio.
 
 ## <a name="implementing-a-calculator-service-using-wwsapi"></a>Implementación de un servicio de calculadora mediante WWSAPI
 

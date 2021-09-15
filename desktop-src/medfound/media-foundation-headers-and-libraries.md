@@ -5,11 +5,11 @@ title: Media Foundation encabezados y bibliotecas
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a6db7650c98f6491fa6db4010273475b4bd103a2
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122467472"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468737"
 ---
 # <a name="media-foundation-headers-and-libraries"></a>Media Foundation encabezados y bibliotecas
 
@@ -17,7 +17,7 @@ En este tema se enumeran los encabezados y bibliotecas que definen todas las MED
 
 Para buscar el encabezado y la biblioteca de un elemento de API específico, consulte las páginas de referencia de Media Foundation [Programming Reference](media-foundation-programming-reference.md).
 
-## <a name="headers"></a>Encabezados
+## <a name="headers"></a>encabezados
 
 -   codecapi.h
 -   d3d11.h
@@ -73,7 +73,7 @@ Una aplicación que use cualquiera de estas funciones debe vincularse a un conju
 | Versión del SDK | Bibliotecas | 
 |-------------|-----------|
 | Windows SDK para Windows Vista<br /> Windows SDK para Windows Server 2008<br /> | evr.lib<br /> mf.lib<br /> mfplat.lib<br /> | 
-| Windows SDK para Windows 7 | Si la plataforma de destino Windows Vista o Windows Server 2008, vincule las bibliotecas siguientes:<br /><ul><li>evr_vista.lib</li><li>mf_vista.lib</li><li>mfplat_vista.lib</li></ul>Si la plataforma de destino Windows 7 o posterior, vincule las bibliotecas siguientes:<br /><ul><li>evr.lib</li><li>mf.lib</li><li>mfplat.lib</li></ul> | 
+| Windows SDK para Windows 7 | Si la plataforma de destino Windows Vista o Windows Server 2008, vincule las bibliotecas siguientes:<br /><ul><li>evr_vista.lib</li><li>mf_vista.lib</li><li>mfplat_vista.lib</li></ul>Si la plataforma de destino Windows 7 o posterior, vincule las siguientes bibliotecas:<br /><ul><li>evr.lib</li><li>mf.lib</li><li>mfplat.lib</li></ul> | 
 
 
 

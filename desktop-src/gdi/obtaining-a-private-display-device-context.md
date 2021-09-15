@@ -4,16 +4,16 @@ ms.assetid: 9c4ed127-a88f-4946-9d7c-f77899152c31
 title: Obtención de un contexto de dispositivo de presentación privado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ab21ced9c9c3beb1c4133d78271d24389b40f144156c60b1085679e922256ad
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ed679ecadd694cd8781d0de8b4409fde15d22b38
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119469155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475919"
 ---
 # <a name="obtaining-a-private-display-device-context"></a>Obtención de un contexto de dispositivo de presentación privado
 
-Una aplicación que realiza numerosas operaciones de dibujo en el área cliente de su ventana debe usar un controlador de dominio de pantalla privado. Para crear este tipo de controlador de dominio, la aplicación debe especificar la constante **\_ OWNDC** de CS para el miembro de estilo de la estructura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) al registrar la clase window. Después de registrar la clase window, la aplicación obtiene un identificador que identifica un controlador de dominio de pantalla privado mediante una llamada a la [**función GetDC.**](/windows/desktop/api/Winuser/nf-winuser-getdc)
+Una aplicación que realiza numerosas operaciones de dibujo en el área cliente de su ventana debe usar un controlador de dominio de pantalla privado. Para crear este tipo de controlador de dominio, la aplicación debe especificar la constante **\_ OWNDC** de CS para el miembro de estilo de la estructura [**WNDCLASS**](/windows/win32/api/winuser/ns-winuser-wndclassa) al registrar la clase de ventana. Después de registrar la clase window, la aplicación obtiene un identificador que identifica un controlador de dominio de pantalla privado mediante una llamada a la [**función GetDC.**](/windows/desktop/api/Winuser/nf-winuser-getdc)
 
 En el ejemplo siguiente se muestra cómo crear un controlador de dominio de pantalla privado.
 

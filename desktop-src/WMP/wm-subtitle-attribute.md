@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54e825f4ebfff07010c46b7150076bba69325cd96be4793611027a2dc148cb35
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a82630f6f8dbd36df5d71b942ea2949bb6237e65
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120000865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571073"
 ---
 # <a name="wmsubtitle-attribute"></a>Atributo WM/SubTitle
 
@@ -28,7 +28,7 @@ El **atributo WM/SubTitle** es el subtítulo del contenido.
 -   [Elementos de audio](audio-item-attributes.md)
 -   [Atributos de archivo multimedia Windows uso frecuente](commonly-used-windows-media-file-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se almacena tanto en la biblioteca como en el archivo multimedia digital.
 
@@ -48,7 +48,7 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

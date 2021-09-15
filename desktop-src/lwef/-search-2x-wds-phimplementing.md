@@ -4,12 +4,12 @@ description: La creación de un controlador de protocolo implica implementar ISe
 ms.assetid: d4bcf370-4152-4cfd-a92e-eb9196d23ab4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32e33a7ebf6d5f14d0ec4d78031e25b17d59bac5fb99ee7ea6d20046fbe95c78
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2c5a88ca5137b012431fff75bf5975a8b4820121
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119963495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475885"
 ---
 # <a name="implementing-a-protocol-handler-for-wds"></a>Implementar un controlador de protocolo para WDS
 
@@ -57,7 +57,7 @@ Para una dirección URL especificada, la interfaz [**IUrlAccessor**](/windows/de
 
 Gran parte del diseño del objeto **UrlAccessor** depende de si la estructura es jerárquica o basada en vínculos. En el caso de los almacenes de datos jerárquicos, el objeto **UrlAccessor** debe encontrar un filtro que pueda enumerar su contenido. Otra distinción entre los controladores de protocolo jerárquicos y basados en vínculos es el uso del método IsDirectory. En los controladores de protocolos basados en vínculos, este método debe devolver S \_ FALSE. Los controladores de protocolo jerárquicos deben devolver S \_ OK para los contenedores.
 
-Para obtener más instrucciones sobre cómo implementar una [**interfaz IUrlAccessor,**](/windows/desktop/api/searchapi/nn-searchapi-iurlaccessor) consulte la [**referencia de la interfaz IUrlAccessor.**](/windows/desktop/api/searchapi/nn-searchapi-iurlaccessor)
+Para obtener más instrucciones sobre cómo implementar una [**interfaz IUrlAccessor,**](/windows/desktop/api/searchapi/nn-searchapi-iurlaccessor) consulte la referencia de [**la interfaz IUrlAccessor.**](/windows/desktop/api/searchapi/nn-searchapi-iurlaccessor)
 
 **IProtocolHandlerSite**
 
@@ -87,7 +87,7 @@ En el código de ejemplo siguiente se muestra cómo compilar el DIRLINK WITH TIM
 >
 > **ESTE CÓDIGO E INFORMACIÓN SE PROPORCIONAN "TAL Y COMO ESTÁN" SIN GARANTÍA DE NINGÚN TIPO, YA SEA EXPRESA O IMPLÍCITA, INCLUIDAS, ENTRE OTRAS, LAS GARANTÍAS IMPLÍCITAS DE COMERCIABILIDAD O IDONEIDAD PARA UN PROPÓSITO DETERMINADO.**
 >
-> Copyright (C) Microsoft. All rights reserved.
+> Copyright (C) Microsoft. Todos los derechos reservados.
 
  
 
@@ -171,7 +171,7 @@ La dirección URL física es la dirección URL que procesa **el objeto UrlAccess
 
  
 
-Si el código no emite displayFolder o FolderName, estos valores se calculan a partir de DisplayUrl. Las barras diagonales de la dirección URL denotan contenedores dentro del almacén o del sistema de archivos.
+Si el código no emite displayFolder o FolderName, estos valores se calculan a partir de DisplayUrl. Las barras diagonales de la dirección URL denotan contenedores dentro del almacén o sistema de archivos.
 
 ## <a name="adding-protocol-handler-options-functionality"></a>Agregar funcionalidad de opciones de controlador de protocolos
 

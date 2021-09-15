@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: f002be332097baa0ad0947367259d15f0657d276770682b709402e2f0a333290
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aee48fe3d9ba56cba90c9645a3fb9752e3367a20
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117771772"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476492"
 ---
 # <a name="icertificate2export-method"></a>ICertificate2::Export (método)
 
@@ -46,7 +46,7 @@ Certificate.Export( _
 *EncodingType* \[ en, opcional\]
 </dt> <dd>
 
-Valor de la enumeración [**CAPICOM \_ ENCODING \_ TYPE**](capicom-encoding-type.md) que especifica el tipo de codificación para la operación de exportación. El valor predeterminado es **CAPICOM \_ ENCODE \_ BASE64.** En la siguiente tabla se muestran los valores posibles.
+Valor de la enumeración [**CAPICOM \_ ENCODING \_ TYPE**](capicom-encoding-type.md) que especifica el tipo de codificación para la operación de exportación. El valor predeterminado es **CAPICOM \_ ENCODE \_ BASE64**. En la siguiente tabla se muestran los valores posibles.
 
 
 

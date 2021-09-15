@@ -1,26 +1,26 @@
 ---
-description: Es posible que las aplicaciones que se porte desde WinINet a WinHTTP necesiten usar la misma configuración de proxy automático que pueden recuperar en WinINet o Internet Explorer (IE).
+description: Es posible que las aplicaciones que se porte desde WinINet a WinHTTP deba usar la misma configuración de proxy automático que pueden recuperar en WinINet o Internet Explorer (IE).
 ms.assetid: c3e867d8-9d67-4e6a-8551-1fa846e089ed
 title: Establecimiento de configuraciones de proxy de WinINet en WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eefa060d24036a02752a5eefacc9ea6672dec9bb77bad30f653c8f382490a487
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 91306f6591e0aab0f96fa010ee2a83d3f32c8fb4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133058"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476128"
 ---
 # <a name="setting-wininet-proxy-configurations-in-winhttp"></a>Establecimiento de configuraciones de proxy de WinINet en WinHTTP
 
 ## <a name="setting-automatic-proxy-on-winhttp-51"></a>Configuración del proxy automático en WinHTTP 5.1
 
-Es posible que las aplicaciones que se porte desde WinINet a WinHTTP necesiten usar la misma configuración de proxy automático que pueden recuperar en WinINet o Internet Explorer (IE). La API WinHTTP versión 5.1 puede recuperar y usar esta configuración de proxy. En general, WinHTTP especifica los servidores de omisión de proxy y proxy por sesión cuando se crea la sesión. Esta configuración se puede invalidar por solicitud.
+Es posible que las aplicaciones que se porte desde WinINet a WinHTTP deba usar la misma configuración de proxy automático que pueden recuperar en WinINet o Internet Explorer (IE). La API WinHTTP versión 5.1 puede recuperar y usar esta configuración de proxy. En general, WinHTTP especifica los servidores de omisión de proxy y proxy por sesión cuando se crea la sesión. Esta configuración se puede invalidar por solicitud.
 
 Para usar la misma configuración de proxy que WinINet o IE, el cliente WinHTTP debe establecer la configuración de proxy para la sesión. Además, si IE o WinINet están configurados para usar la detección automática de proxy web (WPAD), el cliente WinHTTP que usa esa configuración debe establecer la configuración del proxy por solicitud. En las secciones siguientes se describe cómo especificar la configuración de proxy para una sesión y una solicitud:
 
 -   [Establecer la configuración de proxy en una sesión](#setting-the-proxy-configuration-on-a-session)
--   [Establecer la configuración de proxy en una única solicitud](#setting-the-proxy-configuration-on-a-single-request)
+-   [Establecer la configuración del proxy en una única solicitud](#setting-the-proxy-configuration-on-a-single-request)
 
 ## <a name="setting-the-proxy-configuration-on-a-session"></a>Establecer la configuración de proxy en una sesión
 
@@ -32,7 +32,7 @@ Antes de crear una sesión, la aplicación llama [**a WinHttpGetIEProxyConfigFor
 
 La aplicación debe asegurarse de que la configuración del Registro de un usuario individual se carga en el registro antes de llamar a [**WinHttpGetIEProxyConfigForCurrentUser**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetieproxyconfigforcurrentuser). Si esta configuración no se carga en el Registro, **WinHttpGetIEProxyConfigForCurrentUser** no puede obtener la configuración del proxy. La configuración del Registro para un usuario individual se puede cargar en el Registro mediante una llamada a la **función LoadUserProfile.** Si la carga de la configuración del Registro del usuario no es una opción, la aplicación puede llamar a [**WinHttpOpen**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpopen) con el **\_ \_ \_ \_ PROXY** PREDETERMINADO de TIPO DE ACCESO WINHTTP especificado en el *parámetro dwAcessType.* Al especificar el proxy predeterminado en la llamada a **WinHttpOpen,** se indica a la API WinHTTP que recupere la configuración de proxy establecida mediante la utilidadproxycfg.exe [**WinHTTP.**](proxycfg-exe--a-proxy-configuration-tool.md) Una vez cargada la configuración del Registro para un usuario individual, la aplicación sigue los pasos descritos en La aplicación se ejecuta en una cuenta de usuario para establecer el nombre de proxy y los servidores de omisión de proxy. [](#the-application-is-running-on-a-user-account)
 
-## <a name="setting-the-proxy-configuration-on-a-single-request"></a>Establecer la configuración de proxy en una única solicitud
+## <a name="setting-the-proxy-configuration-on-a-single-request"></a>Establecer la configuración del proxy en una única solicitud
 
 Antes de crear la sesión, la aplicación llama a [**WinHttpGetIEProxyConfigForCurrentUser**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetieproxyconfigforcurrentuser) para determinar si WinINet e IE están configurados para usar WPAD. **WinHttpGetIEProxyConfigForCurrentUser** devuelve la estructura DE CONFIGURACIÓN DEL PROXY DE [**\_ \_ \_ IE \_ \_**](/windows/win32/api/winhttp/ns-winhttp-winhttp_current_user_ie_proxy_config) DE USUARIO ACTUAL DE WINHTTP que contiene el **miembro fAutoDetect.** Un valor **TRUE para** este miembro indica que se usa WPAD y que el miembro **lpszAutoConfigUrl** contiene la dirección URL de WPAD.
 

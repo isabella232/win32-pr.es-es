@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: dbde9ecd-4197-45b9-bd38-776818102580
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a8153ee380d9171af34d65ae358aee5ae4f46bd606900ca509d1c66a4209698c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5e31f73cbc52a09ad44ee98862d3fd98a113c8ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119001873"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474648"
 ---
 # <a name="w-task-scheduler"></a>W (Programador de tareas)
 
@@ -21,7 +21,7 @@ A B C D [E](e.md) F G H [I](i.md) J K L M N O [P](p.md) Q R [S](s.md) [T](t.md) 
 <span id="_msb_work_items_gly"></span><span id="_MSB_WORK_ITEMS_GLY"></span>**elementos de trabajo**
 </dt> <dd>
 
-Elemento que se puede programar mediante el Programador de tareas servicio. Puede ser cualquier elemento que el servicio Programador de tareas se ejecute en un momento especificado por los desencadenadores del elemento.
+Elemento que se puede programar mediante el servicio Programador de tareas cliente. Puede ser cualquier elemento que el servicio de Programador de tareas se ejecute en el momento especificado por los desencadenadores del elemento.
 
 Actualmente, las tareas son el único tipo válido de elemento de trabajo.
 

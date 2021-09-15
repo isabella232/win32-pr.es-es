@@ -4,8 +4,8 @@ description: Obtiene una descripción del tipo de efecto.
 ms.assetid: 08a8a1b6-fe2d-431b-a0e4-d628f0ceb1a0
 keywords:
 - Método GetDesc Direct3D 11
-- Método GetDesc Direct3D 11, interfaz ID3DX11EffectType
-- Interfaz ID3DX11EffectType Direct3D 11, método GetDesc
+- Método GetDesc Direct3D 11 , interfaz ID3DX11EffectType
+- Interfaz ID3DX11EffectType direct3D 11, método GetDesc
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 381f885a15dede6a500e82b08a1f24e4f0542ffa46211e5b68ef7f73f40d0f0b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 9c1ee52e4c6628c00b0155e5bd3081b6c4fd8c46
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119460785"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476064"
 ---
 # <a name="id3dx11effecttypegetdesc-method"></a>Método ID3DX11EffectType::GetDesc
 
@@ -63,7 +63,7 @@ Devuelve uno de los siguientes códigos [de retorno de Direct3D 11.](d3d11-graph
 La descripción de la variable de efecto contiene datos sobre el nombre, las anotaciones, la semántica, las marcas y el desplazamiento del búfer del tipo de efecto.
 
 > [!Note]  
-> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen Effects 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> El SDK de DirectX no proporciona archivos binarios compilados para efectos. Debe usar el origen De efectos 11 para compilar la aplicación de tipo de efectos. Para obtener más información sobre el uso del origen de Efectos 11, vea Diferencias entre los efectos [10 y los efectos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 

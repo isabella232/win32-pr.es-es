@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2eab2067d3d16c3ae0864ba7ddf04b5666efa0186d0a7d55ebd5eddaa7533790
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6330849a433787dd09fad536f005d91f60376013
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119829905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572912"
 ---
 # <a name="wm_ncxbuttonup-message"></a>Mensaje \_ NCXBUTTONUP de WM
 
@@ -69,7 +69,7 @@ Puntero a una [**estructura POINTS**](/previous-versions//dd162808(v=vs.85)) que
 
 Si una aplicación procesa este mensaje, debe devolver **TRUE**. Para obtener más información sobre cómo procesar el valor devuelto, vea la sección Comentarios.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use el código siguiente para obtener la información en el *parámetro wParam.*
 
@@ -96,7 +96,7 @@ yPos = GET_Y_LPARAM(lParam);
 
  
 
-De forma predeterminada, la [**función DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) prueba el punto especificado para obtener la posición del cursor y realiza la acción adecuada. Si procede, envía el mensaje [**\_ SYSCOMMAND de WM**](/windows/desktop/menurc/wm-syscommand) a la ventana.
+De forma predeterminada, la función [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) prueba el punto especificado para obtener la posición del cursor y realiza la acción adecuada. Si procede, envía el mensaje [**\_ SYSCOMMAND de WM**](/windows/desktop/menurc/wm-syscommand) a la ventana.
 
 A diferencia de los mensajes [**\_ WM NCLBUTTONUP,**](wm-nclbuttonup.md) [**WM \_ NCMBUTTONUP**](wm-ncmbuttonup.md)y [**WM \_ NCRBUTTONUP,**](wm-ncrbuttonup.md) una aplicación debe devolver **TRUE** desde este mensaje si lo procesa. Esto permitirá que el software que simula este mensaje en sistemas de Windows anteriores a Windows 2000 determine si el procedimiento de ventana procesó el mensaje o llamó a [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para procesarlo.
 
@@ -104,7 +104,7 @@ A diferencia de los mensajes [**\_ WM NCLBUTTONUP,**](wm-nclbuttonup.md) [**WM \
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                      |
@@ -112,7 +112,7 @@ A diferencia de los mensajes [**\_ WM NCLBUTTONUP,**](wm-nclbuttonup.md) [**WM \
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -152,7 +152,7 @@ A diferencia de los mensajes [**\_ WM NCLBUTTONUP,**](wm-nclbuttonup.md) [**WM \
 [**MAKEPOINTS**](/windows/desktop/api/wingdi/nf-wingdi-makepoints)
 </dt> <dt>
 
-[**Puntos**](/previous-versions//dd162808(v=vs.85))
+[**PUNTOS**](/previous-versions//dd162808(v=vs.85))
 </dt> </dl>
 
  

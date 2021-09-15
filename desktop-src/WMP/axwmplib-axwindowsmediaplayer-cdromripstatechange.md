@@ -1,9 +1,9 @@
 ---
 title: Evento CdromRipStateChange del objeto AxWindowsMediaPlayer
-description: El evento CdromRipStateChange se produce cuando cambia el estado de una operación de copia desde CD.
+description: El evento CdromRipStateChange tiene lugar cuando una operación de direccionamiento de CD cambia de estado.
 ms.assetid: 0a0bd11f-a685-4c4e-8704-8eabe80d6f86
 keywords:
-- Evento CdromRipStateChange del objeto AxWindowsMediaPlayer Media Player de Windows
+- Evento CdromRipStateChange del objeto AxWindowsMediaPlayer Reproductor de Windows Media
 topic_type:
 - apiref
 api_name:
@@ -15,15 +15,15 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 20fae9eb1fa6d5f65876e3f6758a7594f0bdbb19
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105698477"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476266"
 ---
 # <a name="cdromripstatechange-event-of-the-axwindowsmediaplayer-object"></a>Evento CdromRipStateChange del objeto AxWindowsMediaPlayer
 
-El evento CdromRipStateChange se produce cuando cambia el estado de una operación de copia desde CD.
+El evento CdromRipStateChange tiene lugar cuando una operación de direccionamiento de CD cambia de estado.
 
 ``` syntax
 [C#]
@@ -45,10 +45,10 @@ El controlador asociado a este evento es de tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 
 
-| Propiedad  | Descripción                                                                                              |
+| Propiedad.  | Descripción                                                                                              |
 |-----------|----------------------------------------------------------------------------------------------------------|
-| pCdromRip | Interfaz WMPLib. IWMPCdromRipThe que representa la operación de copia desde CD que provocó el error.<br/> |
-| wmprs     | Valor de enumeración WMPLib. WMPRipStateThe que indica el nuevo estado.<br/>                         |
+| pCdromRip | WMPLib.IWMPCdromRipLa interfaz que representa la operación de control que produjo el error.<br/> |
+| wmprs     | WMPLib.WMPRipStateEl valor de enumeración que indica el nuevo estado.<br/>                         |
 
 
 

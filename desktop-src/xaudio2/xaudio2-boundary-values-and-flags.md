@@ -5,11 +5,11 @@ title: Valores y marcas de límite de XAudio2 (Xaudio2.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 11293b55a44b0aefdeacf95b9e36e90a626de2c1
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122470711"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571120"
 ---
 # <a name="xaudio2-boundary-values-and-flags"></a>Valores y marcas de límite de XAudio2
 
@@ -87,7 +87,7 @@ Constantes XAudio2 que especifican parámetros predeterminados, valores máximos
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ### <a name="platform-requirements"></a>Requisitos de la plataforma
 
@@ -103,7 +103,7 @@ Windows 10 (XAudio2.9); Windows 8, Windows Phone 8 (XAudio 2.8); SDK de DirectX 
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

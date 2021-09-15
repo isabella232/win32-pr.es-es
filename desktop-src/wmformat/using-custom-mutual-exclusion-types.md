@@ -9,12 +9,12 @@ keywords:
 - perfiles, tipos de exclusión mutua personalizados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7162b8d0588031e934e55425af03cd0d2e8d0a58524b19251521ec2ab6848094
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 051e95bfb3f5ef8e39af31368227cf4918b897d2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117845083"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570188"
 ---
 # <a name="using-custom-mutual-exclusion-types"></a>Usar tipos de exclusión mutua personalizados
 

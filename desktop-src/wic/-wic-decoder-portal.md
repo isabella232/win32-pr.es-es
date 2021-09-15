@@ -1,19 +1,19 @@
 ---
-description: Esta sección contiene temas conceptuales y de procedimientos que describen los descodificadores de mapa de bits Windows Imaging Component (WIC) que se usan para descodificar imágenes digitales.
+description: Esta sección contiene temas conceptuales y de procedimientos que describen los descodificadores de mapa de bits de Windows Imaging Component (WIC) que se usan para descodificar imágenes digitales.
 ms.assetid: a5d166f1-341b-496e-b63f-ecfae89032ff
 title: Decoding Digital Images
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a48614218d1d32c4fe2795d3115e01aa7859d8938270eaa0c11dd3d3b481e87
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c1a5e83712d2163ce77f9f3b74ec3afedc46f85
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118711330"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570325"
 ---
 # <a name="decoding-digital-images"></a>Decoding Digital Images
 
-Esta sección contiene temas conceptuales y de procedimientos que describen los descodificadores de mapa de bits Windows Imaging Component (WIC) que se usan para descodificar imágenes digitales.
+Esta sección contiene temas conceptuales y de procedimientos que describen los descodificadores de mapa de bits de Windows Imaging Component (WIC) que se usan para descodificar imágenes digitales.
 
 ## <a name="in-this-section"></a>En esta sección
 

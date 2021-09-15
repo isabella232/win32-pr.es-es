@@ -4,12 +4,12 @@ ms.assetid: 64ef260a-ed7f-4253-a644-bd3352b0ee41
 title: Decoder-Specific entradas del Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e1ea0f0027e9b6dd6d1d114ef6cc5a3de715369b3d202d946343ed7abac2ea2b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 17485e7adca62abd31643d84d371a0002724ea9f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118033142"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570316"
 ---
 # <a name="decoder-specific-registry-entries"></a>Decoder-Specific entradas del Registro
 
@@ -45,13 +45,13 @@ HKEY_CLASSES_ROOT
 
 
 
-| Valor       | Descripción                                                                                                                                                                                                                                                                                                                     |
+| Value       | Descripción                                                                                                                                                                                                                                                                                                                     |
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Posición    | Desplazamiento en el archivo donde se puede encontrar el patrón.                                                                                                                                                                                                                                                                        |
 | Length      | Longitud del patrón.                                                                                                                                                                                                                                                                                                      |
-| Patrón     | Bits reales que representan el patrón. Estos son los bits que coinciden con el patrón de identificación en un archivo de imagen durante la detección.                                                                                                                                                                                |
+| Patrón     | Bits reales que representan el patrón. Estos son los bits que se comparan con el patrón de identificación en un archivo de imagen durante la detección.                                                                                                                                                                                |
 | Máscara        | Permite valores comodín en patrones. La máscara se aplica realizando una operación AND lógica en el patrón y la máscara. Se omite cualquier bit del patrón que se corresponda con un bit de la máscara con un valor de 0.                                                                                                       |
-| EndOfStream | El desplazamiento del patrón de identificación debe calcularse desde el final de la secuencia, en lugar de desde el principio. Algunos formatos de imagen coloca el patrón de identificación en o cerca del final del archivo. Dado que el valor predeterminado es buscar desde el principio, a menos que el patrón esté cerca del final del archivo, puede omitir esta entrada. |
+| EndOfStream | El desplazamiento del patrón de identificación debe calcularse desde el final de la secuencia, en lugar de desde el principio. Algunos formatos de imagen coloca el patrón de identificación al final del archivo o cerca de este. Dado que el valor predeterminado es buscar desde el principio, a menos que el patrón esté cerca del final del archivo, puede omitir esta entrada. |
 
 
 
@@ -83,7 +83,7 @@ Dado que las entradas de los lectores de metadatos también se usan para la dete
 | Value      | Descripción                                                                                                                                                                                                                                                                 |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Posición   | Desplazamiento en el contenedor del bloque de metadatos donde se puede encontrar el encabezado de metadatos. Para los bloques de metadatos de nivel superior, este es el desplazamiento en la secuencia de archivos. Para los bloques de metadatos anidados en otros bloques de metadatos, es el desplazamiento relativo al bloque de metadatos que lo contiene. |
-| Patrón    | Bits reales que representan el patrón. Estos son los bits que coinciden con el patrón de identificación en un archivo de imagen durante la detección.                                                                                                                            |
+| Patrón    | Bits reales que representan el patrón. Estos son los bits que se comparan con el patrón de identificación en un archivo de imagen durante la detección.                                                                                                                            |
 | Máscara       | Normalmente, el controlador de metadatos define el encabezado de metadatos. Debe usar el encabezado de metadatos estándar para cada lector, a menos que, por algún motivo, el patrón tenga un formato diferente en el contenedor.                                                          |
 | DataOffset | Desplazamiento desde el principio del encabezado de metadatos en el que comienzan los datos reales. En los casos en los que los metadatos no se encuentran en un desplazamiento específico del encabezado, se puede omitir esta entrada.                                                                            |
 

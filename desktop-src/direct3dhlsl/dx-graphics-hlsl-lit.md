@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4d3f941fe3aad52f352f5a36d3642141b31e08ef00c25dd8687c8fc7a8ed2de3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6dbf6f1e53218355ba1ee9ccf58dac6176007218
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118791631"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573061"
 ---
 # <a name="lit"></a>Encendido
 
@@ -48,7 +48,7 @@ Donde el vector n es el vector normal, l es la dirección a la luz y h es el vec
 | Elemento                                                                       | Descripción                                                                              |
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | <span id="n_dot_l"></span><span id="N_DOT_L"></span>*n \_ punto \_ l*<br/> | \[en \] El producto de puntos de la superficie normalizada normal y el vector de luz.<br/> |
-| <span id="n_dot_h"></span><span id="N_DOT_H"></span>*n \_ punto \_ h*<br/> | \[en \] Producto de puntos del vector de medio ángulo y normal de la superficie.<br/>       |
+| <span id="n_dot_h"></span><span id="N_DOT_H"></span>*n \_ punto \_ h*<br/> | \[en \] El producto de puntos del vector de ángulo medio y la superficie normal.<br/>       |
 | <span id="m"></span><span id="M"></span>*M*<br/>                     | \[en \] Un exponente especular.<br/>                                                   |
 
 
@@ -82,7 +82,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible           |
 |------------------------------------------------------------------------------------|---------------------|
-| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | Sí                 |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) y modelos de sombreador superiores | sí                 |
 | [Shader Model 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | sí (solo \_ frente a \_ 1 1) |
 
 

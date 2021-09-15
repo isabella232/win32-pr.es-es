@@ -3,25 +3,25 @@ title: Tamaños de imagen
 description: Tamaños de imagen
 ms.assetid: f639ac34-f173-4b84-95ac-360d7fc40d1b
 keywords:
-- Reproductor de Windows Media Máscaras móviles, archivos de arte
+- Reproductor de Windows Media Máscaras móviles, archivos art
 - skins,art files
-- archivos para máscaras,art
-- archivos de arte para máscaras, tamaños de imagen
+- archivos para máscaras, art
+- archivos art para máscaras, tamaños de imagen
 - Reproductor de Windows Media Máscaras móviles, tamaños de imagen
 - máscaras, tamaños de imagen
 - tamaños de imagen en máscaras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a0e2fbed1e1343369d5b01d883ff57073ad6e4a4864e97005e82c6083593f32
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3d672532be9830c58a580d37161b3d9a0adf04ae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119509275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476226"
 ---
 # <a name="image-sizes"></a>Tamaños de imagen
 
-Debe tener en cuenta el tamaño del área de presentación al crear ilustraciones para máscaras. En la tabla siguiente se muestran los tamaños de área de presentación para diferentes configuraciones de pantalla.
+Debe tener en cuenta el tamaño del área de presentación al crear ilustraciones para máscaras. En la tabla siguiente se muestran los tamaños de área de presentación para distintas configuraciones de pantalla.
 
 
 

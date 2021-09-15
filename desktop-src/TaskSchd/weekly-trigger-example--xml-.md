@@ -1,6 +1,6 @@
 ---
 title: Ejemplo de desencadenador semanal (XML)
-description: El CÓDIGO XML de este ejemplo define una tarea que Bloc de notas cada dos semanas.
+description: El código XML de este ejemplo define una tarea que Bloc de notas cada dos semanas.
 ms.assetid: 1911e8b1-2583-440c-a6ed-d71080b60987
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7c038c21db137ce9180d76cecf4c2885274f7cdd72720b12b919f9a39e98e575
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bf8c2683311aecc427e9570a0452c746375eca01
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119001819"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474643"
 ---
 # <a name="weekly-trigger-example-xml"></a>Ejemplo de desencadenador semanal (XML)
 
-El CÓDIGO XML de este ejemplo define una tarea que Bloc de notas cada dos semanas.
+El código XML de este ejemplo define una tarea que Bloc de notas cada dos semanas.
 
-Para registrar una tarea definida en XML, puede usar la función [**ITaskFolder::RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) [**(TaskFolder.RegisterTask**](taskfolder-registertask.md) para scripting) o la herramienta de línea de comandos Schtasks.exe. Si usa la herramienta Schtasks.exe (ubicada en el directorio C: Windows System32), puede usar el siguiente comando para registrar la \\ \\ tarea: **schtasks /create /XML** *<path to the XML file containing the task definition>* **/tn** *<task name>* .
+Para registrar una tarea definida en XML, puede usar la función [**ITaskFolder::RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) ([**TaskFolder.RegisterTask**](taskfolder-registertask.md) para scripting) o la herramienta de línea de comandos Schtasks.exe de comandos. Si usa la herramienta Schtasks.exe (ubicada en el directorio C: Windows System32), puede usar el siguiente comando para registrar la \\ \\ tarea: **schtasks /create /XML** *<path to the XML file containing the task definition>* **/tn** *<task name>* .
 
-## <a name="to-define-a-task-to-start-notepad-every-other-week-on-monday-at-800-am"></a>Para definir una tarea para iniciar Bloc de notas cada semana el lunes a las 8:00 a. m.
+## <a name="to-define-a-task-to-start-notepad-every-other-week-on-monday-at-800-am"></a>Para definir una tarea que se inicie cada Bloc de notas el lunes a las 8:00 a. m.
 
-En el ejemplo XML siguiente se muestra cómo definir una tarea con una sola acción de ejecución (a partir de Bloc de notas), un desencadenador de calendario único (inicia la tarea cada dos semanas el lunes a las 8:00 a. m.) y otras opciones de configuración de tareas que afectan a cómo controla la tarea Programador de tareas.
+En el ejemplo XML siguiente se muestra cómo definir una tarea con una sola acción de ejecución (a partir de Bloc de notas), un desencadenador de calendario único (inicia la tarea cada dos semanas el lunes a las 8:00 a. m.) y otras configuraciones de tareas que afectan a la forma en que Programador de tareas controla la tarea.
 
 
 ```XML
@@ -74,7 +74,7 @@ This sample schedules a task to start on a bi-weekly basis.
 
 ## <a name="taskscheduler-schema-elements"></a>Elementos de esquema TaskScheduler
 
-Estos son algunos elementos importantes que hay que tener en cuenta al usar este ejemplo.
+Estos son algunos elementos importantes que debe tener en cuenta al usar este ejemplo.
 
 -   [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md)
 

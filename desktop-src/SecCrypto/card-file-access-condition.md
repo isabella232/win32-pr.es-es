@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Cardmod.h
-ms.openlocfilehash: e9a38e7d67e413352de693f52b07ba11bf34858854fa708b41a735152ad3ed2f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d3ef9fc81c9ab3bff5f3992c3aedeb3f923648ea
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117771991"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476510"
 ---
 # <a name="card_file_access_condition-enumeration"></a>Enumeración CARD \_ FILE \_ ACCESS \_ CONDITION
 
 La **\_ enumeración CARD FILE \_ ACCESS \_ CONDITION** especifica los permisos de control de acceso para un archivo en una [*tarjeta inteligente.*](../secgloss/s-gly.md)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -86,11 +86,11 @@ Se desconocen los permisos de acceso para el archivo.
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP, Windows xp \[ solo aplicaciones de escritorio\]<br/>                              |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 Windows Server 2003 \[\]<br/>            |
-| Header<br/>                   | <dl> <dt>Cardmod.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Cardmod.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

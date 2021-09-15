@@ -4,12 +4,12 @@ description: Para usar el transporte de cola de mensajes en una aplicación clie
 ms.assetid: f90318a6-0be6-4e1a-a1a5-1709808b5d3b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46d9775e720c725ad3b0d06a0be0cf67aa438f739c6a0d1162f4940ac59e561e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1274c888506a6868eb7ded5ba96c5f1ea8dc8b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118924652"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476597"
 ---
 # <a name="system-requirements-for-rpc-message-queuing-applications"></a>Requisitos del sistema para RPC-Message queuing Applications
 
@@ -19,7 +19,7 @@ Los requisitos de los equipos servidor son:
 
 -   Microsoft Windows Server 2003, Windows XP o Windows 2000 o posterior.
 -   SQL Server versión 6.5 o posterior.
--   Controlador principal Enterprise Message Queuing o controlador de sitio principal.
+-   Controlador principal Enterprise Message Queuing o controlador de sitio primario.
 -   DLL de transporte del lado servidor RPC (RpcMqSvr.dll).
 
 Los requisitos de los equipos cliente son:

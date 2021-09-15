@@ -4,18 +4,18 @@ description: La aplicación de línea de comandos JActiveX es un componente de V
 ms.assetid: b356eb85-5dd4-475b-8d53-8c13a84aa976
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae611e56c44b78398817cd0c78804d343fa97754f80fb3b036ea2705c801070f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9975e060a3967f927440111719045378aa812f16
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119992655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127571008"
 ---
 # <a name="jactivex-command-line-tool"></a>Herramienta de Command-Line JActiveX
 
-La aplicación de línea de comandos JActiveX es un componente de Visual J++ 6.0. Lee la biblioteca de tipos de un control ActiveX Microsoft y genera los archivos de código fuente de Java correspondientes. A continuación, puede compilar estos archivos de origen e importarlos en la aplicación Java.
+La aplicación de línea de comandos JActiveX es un componente de Visual J++ 6.0. Lee la biblioteca de tipos de un control de ActiveX Microsoft y genera los archivos de código fuente de Java correspondientes. A continuación, puede compilar estos archivos de origen e importarlos en la aplicación Java.
 
-Para generar archivos de código fuente de Java para un objeto COM, desde el símbolo del sistema, ejecute:
+Para generar archivos de origen de Java para un objeto COM, desde el símbolo del sistema, ejecute:
 
 **nombre de archivo de jactivex** 
 

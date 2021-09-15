@@ -4,14 +4,14 @@ ms.assetid: 6140c9d8-0e5b-49f2-a4a6-cc1f2a0bed0a
 title: WM_SPOOLERSTATUS mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ee2869c468517abf466b348583748e391fc1f2a4226c74b5811fffabdb5eeb89
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 460e36e44f219bcbe6f514d7d368accddae46b83
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119460345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570540"
 ---
-# <a name="wm_spoolerstatus-message"></a>Mensaje \_ SPOOLERSTATUS de WM
+# <a name="wm_spoolerstatus-message"></a>Mensaje \_ DE WM SPOOLERSTATUS
 
 El **mensaje \_ WM SPOOLERSTATUS** se envía desde el Administrador de impresión cada vez que se agrega o quita un trabajo de la cola del Administrador de impresión.
 
@@ -36,7 +36,7 @@ LRESULT CALLBACK WindowProc(
 *wParam* 
 </dt> <dd>
 
-Marca \_ JOBSTATUS de PR.
+Marca \_ JOBSTATUS de pr.
 
 </dd> <dt>
 
@@ -51,11 +51,11 @@ La palabra de orden bajo especifica el número de trabajos restantes en la cola 
 
 Una aplicación debe devolver cero si procesa este mensaje.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este mensaje es solo con fines informativos. Este mensaje es de aviso y no tiene semántica de entrega garantizada. Las aplicaciones no deben suponer que recibirán un mensaje \_ WM SPOOLERSTATUS para cada cambio en el estado del colador.
+Este mensaje es solo con fines informativos. Este mensaje es de aviso y no tiene semántica de entrega garantizada. Las aplicaciones no deben asumir que recibirán un mensaje \_ WM SPOOLERSTATUS para cada cambio en el estado del colador.
 
-El mensaje \_ WM SPOOLERSTATUS no se admite después de Windows XP. Para recibir una notificación de los cambios en el estado de la cola de impresión, puede usar [**FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md) y [**FindNextPrinterChangeNotification**](findnextprinterchangenotification.md).
+El mensaje \_ WM SPOOLERSTATUS no se admite después Windows XP. Para recibir notificaciones de los cambios en el estado de la cola de impresión, puede usar [**FindFirstPrinterChangeNotification**](findfirstprinterchangenotification.md) y [**FindNextPrinterChangeNotification**](findnextprinterchangenotification.md).
 
 ## <a name="requirements"></a>Requisitos
 

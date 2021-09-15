@@ -4,12 +4,12 @@ description: . | Mensajes DDE
 ms.assetid: 23ed5218-bd01-42ba-9995-d3e98a5012d1
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 07c5705a3a745ed40b1bd57ff4d1dd3193d16a8646f6cb00481ade1ffa534657
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3d03deca94a2196b96d02410d32a40fa5555a433
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119499325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476102"
 ---
 # <a name="dde-messages"></a>Mensajes DDE
 

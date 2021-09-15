@@ -4,16 +4,16 @@ description: Acerca de la API de Network List Manager
 ms.assetid: 675cf7ed-9f57-4d62-8091-1f4e8812f2ad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 704bedb3a1029c2be3c123c65a896b1765f191b886af9b354d747abd5e1698e7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6230251e627671b7fd33adbf50b3904703bc9847
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119065184"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476758"
 ---
 # <a name="about-the-network-list-manager-api"></a>Acerca de la API de Network List Manager
 
-El entorno Windows de red de Microsoft permite a los equipos de varios equipos conectarse a varias redes simultáneamente. Puede haber varias redes inalámbricas disponibles junto con la LAN y las conexiones de acceso telefónico. Network List Manager identifica las redes disponibles y devuelve datos de atributos de red a la aplicación.
+El entorno de Windows microsoft permite a los equipos de varios equipos conectarse a varias redes simultáneamente. Puede haber varias redes inalámbricas disponibles junto con la LAN y las conexiones de acceso telefónico. Network List Manager identifica las redes disponibles y devuelve datos de atributos de red a la aplicación.
 
 La API de Network List Manager interactúa con el servicio Network List Manager para identificar y recuperar las propiedades de cada red a la que se conecta el equipo. Cada red se identifica de forma única con una firma de red en función de las propiedades de identificación única de esa red. Cuando una aplicación se registra para las notificaciones del Administrador de listas de redes, la aplicación recibe notificaciones sobre la disponibilidad de nuevas conexiones de red o cambios en las conexiones de red existentes. Las aplicaciones pueden ajustar su lógica en función de la red a la que están conectadas. a qué conexión de red están conectados; o cuáles son las propiedades de red. Con esta información, las aplicaciones pueden ajustar sus acciones en función de las condiciones de red actuales.
 

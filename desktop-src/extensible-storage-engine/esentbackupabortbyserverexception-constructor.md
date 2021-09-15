@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a50533b9cf6f8688fc1fb01536e49551fb17b9245831798da24e0c31d75fc821
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 69b4021ea176dc4350dce63012f6b1df15f13167
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119623225"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127573024"
 ---
 # <a name="esentbackupabortbyserverexception-constructor"></a>Constructor EsentBackupAbortByServerException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentBackupAbortByServerException()
 public EsentBackupAbortByServerException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

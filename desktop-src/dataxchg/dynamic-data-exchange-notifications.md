@@ -1,15 +1,15 @@
 ---
 title: Notificaciones de DDE
-description: . | Notificaciones DDE
+description: . | Notificaciones de DDE
 ms.assetid: 8e8a007a-d8de-417f-81be-bc90a55663e5
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: def031efccc015039b598452ca0ca37ba570641415e619f8aa12f4c308f13528
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bec02bac87876829bcc9a8e67f5e047a9d562260
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117915278"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476101"
 ---
 # <a name="dde-notifications"></a>Notificaciones de DDE
 

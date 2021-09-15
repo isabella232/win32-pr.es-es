@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: de968c83fee7ae68dcd756bdf83d529593eeb30b3c2776b03cda812bcd442c50
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 82cd60dbb65517beb65a3a7cb413e1d93ac72062
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118974744"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127572864"
 ---
 # <a name="d3dauthenticatedchannel_configure_input-structure"></a>D3DAUTHENTICATEDCHANNEL \_ CONFIGURE \_ INPUT structure
 
@@ -38,7 +38,7 @@ typedef struct _D3DAUTHENTICATEDCHANNEL_CONFIGURE_INPUT {
 
 
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 <dl> <dt>
 
@@ -52,7 +52,7 @@ Estructura [**D3D \_ OMAC**](d3d-omac.md) que contiene un código de autenticaci
 **ConfigureType**
 </dt> <dd>
 
-GUID que especifica el comando. Para obtener una lista de valores, [vea Content Protection Comandos](content-protection-commands.md).
+GUID que especifica el comando. Para obtener una lista de valores, [vea Content Protection Commands](content-protection-commands.md).
 
 </dd> <dt>
 
@@ -76,13 +76,13 @@ Número de secuencia de consulta. Al principio de la sesión, genere un número 
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows 7 \[ aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
-| Header<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

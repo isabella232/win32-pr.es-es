@@ -19,11 +19,11 @@ api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 7ce2f5e6072e1c59820121ca652de9237b1c226f
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988998"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475975"
 ---
 # <a name="jetindexrecordcount-function"></a>JetIndexRecordCount (Función)
 
@@ -32,7 +32,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jetindexrecordcount-function"></a>JetIndexRecordCount (Función)
 
-La **función JetIndexRecordCount** cuenta el número de entradas del índice actual desde la posición actual hacia delante. La posición actual se incluye en el recuento. El recuento puede ser mayor que el número total de registros de la tabla si el índice actual está sobre una columna con varios valores y las instancias de la columna tienen varios valores. Si la tabla está vacía, se devolverá 0 para el recuento.
+La **función JetIndexRecordCount** cuenta el número de entradas del índice actual desde la posición actual hacia delante. La posición actual se incluye en el recuento. El recuento puede ser mayor que el número total de registros de la tabla si el índice actual se encuentra sobre una columna de varios valores y las instancias de la columna tienen varios valores. Si la tabla está vacía, se devolverá 0 para el recuento.
 
 ```cpp
     JET_ERR JET_API JetIndexRecordCount(
@@ -55,7 +55,7 @@ Cursor que se va a usar para esta llamada.
 
 *pcrec*
 
-Puntero a un valor long sin signo para recibir el recuento.
+Puntero a un valor largo sin signo para recibir el recuento.
 
 *crecMax*
 
@@ -70,28 +70,28 @@ Esta función devuelve el [JET_ERR](./jet-err.md) tipo de datos con uno de los s
 |--------------------|--------------------|
 | <p>JET_errSuccess</p> | <p>La operación se ha completado correctamente.</p> | 
 | <p>JET_errClientRequestToStopJetService</p> | <p>La operación no se puede completar porque toda la actividad de la instancia asociada a la sesión ha dejado de funcionar como resultado de una llamada a <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p> | 
-| <p>JET_errInstanceUnavailable</p> | <p>La operación no se puede completar porque la instancia de asociada a la sesión encontró un error irreales que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows XP:</strong>  Este valor devuelto se introduce en Windows XP.</p> | 
+| <p>JET_errInstanceUnavailable</p> | <p>La operación no se puede completar porque la instancia de asociada a la sesión encontró un error irrevocado que requiere que se revoque el acceso a todos los datos para proteger la integridad de los datos.</p><p><strong>Windows XP:</strong>  Este valor devuelto se introduce en Windows XP.</p> | 
 | <p>JET_errNoCurrentRecord</p> | <p>El cursor no está actualmente en un registro y la tabla no está vacía.</p><p><strong>Windows XP, Windows Server 2003, Windows 2000 Server y Windows 2000 Professional:</strong>  Si el cursor se coloca en un índice vacío o un intervalo de índice, <strong>JetIndexRecordCount</strong> devuelve erróneamente JET_errNoCurrentRecord.</p> | 
-| <p>JET_errNotInitialized</p> | <p>La operación no se puede completar porque aún no se ha inicializado la instancia asociada a la sesión.</p> | 
+| <p>JET_errNotInitialized</p> | <p>La operación no se puede completar porque todavía no se ha inicializado la instancia asociada a la sesión.</p> | 
 | <p>JET_errRestoreInProgress</p> | <p>La operación no se puede completar porque hay una operación de restauración en curso en la instancia asociada a la sesión.</p> | 
 | <p>JET_errSessionSharingViolation</p> | <p>No se puede usar la misma sesión para más de un subproceso al mismo tiempo.</p><p><strong>Windows XP:</strong>  Este valor devuelto se introduce en Windows XP.</p> | 
-| <p>JET_errTermInProgress</p> | <p>La operación no se puede completar porque se está cerrando la instancia de asociada a la sesión.</p> | 
+| <p>JET_errTermInProgress</p> | <p>La operación no se puede completar porque se está cerrando la instancia asociada a la sesión.</p> | 
 
 
 
 Si esta función se realiza correctamente, el número exacto de entradas de índice, incluida la posición actual y hasta *crecMax* (si no es 0), se devuelve en el valor long sin signo al que apunta *pcrec*.
 
-Si se produce un error en esta función, no se realiza ningún cambio en la memoria asignada en *los objetos precpos*.
+Si se produce un error en esta función, no se realiza ningún cambio en la memoria asignada en *precpos*.
 
 #### <a name="remarks"></a>Observaciones
 
-Si la tabla no está vacía, el cursor debe colocarse en el registro desde el que se va a comenzar el recuento. El recuento incluirá este registro y el recuento se reenviará hasta el límite especificado en *crecMax*. Si *crecMax es* 0, la operación continuará contando hasta el final del índice.
+Si la tabla no está vacía, el cursor debe colocarse en el registro desde el que se va a comenzar el recuento. El recuento incluirá este registro y el recuento se reenviará hasta el límite especificado en *crecMax.* Si *crecMax* es 0, la operación continuará contando hasta el final del índice.
 
-Los intervalos de índice se pueden usar para construir limitaciones de fin de índice artificiales para el recuento. De esta manera, los subrangos de un índice se pueden contar exactamente. El cursor debe colocarse en la primera fila del intervalo. Se debe establecer el final de la clave de intervalo y, a continuación, se debe usar [JetSetIndexRange](./jetsetindexrange-function.md) para establecer el intervalo superior, ya sea de forma inclusiva o exclusiva. Por último, se debe llamar a **JetIndexRecordCount** para contar exactamente el intervalo.
+Los intervalos de índice se pueden usar para crear limitaciones de fin de índice artificiales para el recuento. De esta manera, los subrangos de un índice se pueden contar exactamente. El cursor debe colocarse en la primera fila del intervalo. Se debe establecer el final de la clave de intervalo y, a continuación, se debe usar [JetSetIndexRange](./jetsetindexrange-function.md) para establecer el intervalo superior, ya sea de forma inclusiva o exclusiva. Por último, se debe llamar a **JetIndexRecordCount** para contar exactamente el intervalo.
 
-**JetIndexRecordCount sigue** la semántica de las transacciones y devuelve un recuento que es preciso para esta sesión determinada en su estado transaccional actual.
+**JetIndexRecordCount sigue** la semántica de las transacciones y devuelve un recuento que es preciso para esta sesión concreta en su estado transaccional actual.
 
-**JetIndexRecordCount accede** a las páginas hoja de índice para contar exactamente las entradas. Por lo tanto, puede realizar una gran cantidad de E/S y puede ser lenta. La *limitación crecMax* debe usarse para evitar una carga excesiva. Si un intervalo es grande, es posible contar el intervalo de forma aproximada mediante [JetGetRecordPosition](./jetgetrecordposition-function.md).
+**JetIndexRecordCount accede** a las páginas hoja de índice para contar exactamente las entradas. Por lo tanto, puede realizar una gran cantidad de E/S y puede ser lenta. La *limitación crecMax* debe usarse para evitar una carga excesiva. Si un intervalo es grande, es posible contar el intervalo de forma aproximada mediante [JetGetRecordPosition.](./jetgetrecordposition-function.md)
 
 **Windows XP, Windows Server 2003, Windows 2000 Server y Windows 2000 Professional:**  Si el cursor se coloca en un índice vacío o un intervalo de índice, **JetIndexRecordCount** devuelve erróneamente JET_errNoCurrentRecord en lugar de devolver un recuento de registros de cero. La aplicación debe comprobar si el índice o el intervalo de índice están vacíos en este caso.
 
@@ -104,7 +104,7 @@ Los intervalos de índice se pueden usar para construir limitaciones de fin de �
 | <p><strong>Server</strong></p> | <p>Requiere Windows Server 2008, Windows Server 2003 o Windows 2000 Server.</p> | 
 | <p><strong>Header</strong></p> | <p>Declarado en Esent.h.</p> | 
 | <p><strong>Library</strong></p> | <p>Use ESENT.lib.</p> | 
-| <p><strong>DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
+| <p><strong>Archivo DLL</strong></p> | <p>Requiere ESENT.dll.</p> | 
 
 
 

@@ -1,29 +1,29 @@
 ---
-description: Los métodos de encuentro usan las enumeraciones siguientes para establecer e informar sobre eventos y estados.
+description: Los métodos de Encuentro usan las enumeraciones siguientes para establecer eventos y estados e informar sobre estos.
 ms.assetid: 3daada54-5007-4042-b5ba-94c7083f051f
-title: Enumeraciones de encuentro
+title: Enumeraciones rendezvous
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6936a3396907b1f7f61ed880e4baa9e50e3588e15686ac63c1f80aa14c97d619
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ef8f7b90c1b1f880364de6475f9269415de0f4f2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119773635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127474698"
 ---
-# <a name="rendezvous-enumerations"></a>Enumeraciones de encuentro
+# <a name="rendezvous-enumerations"></a>Enumeraciones rendezvous
 
-\[Los controles e interfaces de conferencias de telefonía IP de encuentro no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
+\[Los controles e interfaces de conferencia de telefonía IP de Rendezvous no están disponibles para su uso en Windows Vista, Windows Server 2008 y versiones posteriores del sistema operativo. La API de cliente RTC proporciona una funcionalidad similar.\]
 
-Los métodos de encuentro usan las enumeraciones siguientes para establecer e informar sobre eventos y estados.
+Los métodos de Encuentro usan las enumeraciones siguientes para establecer eventos y estados e informar sobre estos.
 
 [**JUEGO \_ DE CARACTERES DE \_ BLOB**](blob-character-set.md)
 
-[**TIPO DE \_ DIRECTORIO**](/windows/desktop/api/Rend/ne-rend-directory_type)
+[**TIPO \_ DE DIRECTORIO**](/windows/desktop/api/Rend/ne-rend-directory_type)
 
-[**TIPO \_ DE OBJETO DE \_ DIRECTORIO**](/windows/desktop/api/Rend/ne-rend-directory_object_type)
+[**TIPO \_ DE OBJETO \_ DIRECTORY**](/windows/desktop/api/Rend/ne-rend-directory_object_type)
 
-[**ÁMBITO DE PUBLICIDAD DE RND \_ \_**](/windows/desktop/api/Rend/ne-rend-rnd_advertising_scope)
+[**ÁMBITO DE PUBLICIDAD DE LA \_ \_ RND**](/windows/desktop/api/Rend/ne-rend-rnd_advertising_scope)
 
  
 

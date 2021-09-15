@@ -4,12 +4,12 @@ ms.assetid: 08f119f9-cacd-4000-96b6-60c8c0055e9c
 title: MFT_AudioDelay ejemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea4af3d89c7dda4a67a2fece09ff9e6d3bc0a63927e94b259df40334fd9ba29b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 39d382ce7d1c5e9475bef85f11ef9754345e123b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120012675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468602"
 ---
 # <a name="mft_audiodelay-sample"></a>Ejemplo de \_ AudioDelay de MFT
 

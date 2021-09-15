@@ -4,12 +4,12 @@ ms.assetid: 3d8de05b-3cf3-4f9f-98b9-65873592152a
 title: Captura de audio y vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48f91e9872c60a6bb57d5011c3b87a8f24134736c4fab317cededb9293d428e8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d895c5ff05c2c4e1bb82aa2c9b296cc7f460b577
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117880900"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475846"
 ---
 # <a name="audiovideo-capture"></a>Captura de audio y vídeo
 

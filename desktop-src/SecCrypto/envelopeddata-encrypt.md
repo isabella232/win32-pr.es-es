@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: df4741538ae11dbe1b158fd9b8e8a6c8632c427f9a0e8376e8cd10c9056461fe
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ecdb665a8e70ff329f25398eb855ff3e82c96cfa
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117766095"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476412"
 ---
 # <a name="envelopeddataencrypt-method"></a>Método EnvelopedData.Encrypt
 
@@ -41,17 +41,17 @@ EnvelopedData.Encrypt( _
 
 <dl> <dt>
 
-*EncodingType* \[ en, opcional\]
+*EncodingType* \[ in, opcional\]
 </dt> <dd>
 
-Valor de la enumeración [**\_ CAPICOM ENCODING \_ TYPE**](capicom-encoding-type.md) que indica el tipo de codificación utilizado para codificar los datos sobreados. El valor de codificación predeterminado es CAPICOM \_ ENCODE \_ BASE64. Este parámetro puede ser uno de los valores siguientes.
+Valor de la enumeración [**CAPICOM \_ ENCODING \_ TYPE**](capicom-encoding-type.md) que indica el tipo de codificación utilizado para codificar los datos sobreados. El valor de codificación predeterminado es CAPICOM \_ ENCODE \_ BASE64. Este parámetro puede ser uno de los valores siguientes.
 
 
 
 | Valor                                                                                                                                                                                  | Significado                                                                                                                                                                                                                            |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="CAPICOM_ENCODE_ANY"></span><span id="capicom_encode_any"></span><dl> <dt>**CAPICOM \_ ENCODE \_ ANY**</dt> </dl>          | Este tipo de codificación solo se usa cuando los datos de entrada tienen un tipo de codificación desconocido. Si este valor se usa para especificar el tipo de codificación de la salida, se usará CAPICOM \_ ENCODE \_ BASE64 en su lugar. Introducido en CAPICOM 2.0.<br/> |
-| <span id="CAPICOM_ENCODE_BASE64"></span><span id="capicom_encode_base64"></span><dl> <dt>**CODIFICACIÓN \_ CAPICOM \_ BASE64**</dt> </dl> | Los datos se guardan como una cadena codificada en base64.<br/>                                                                                                                                                                               |
+| <span id="CAPICOM_ENCODE_BASE64"></span><span id="capicom_encode_base64"></span><dl> <dt>**CAPICOM \_ ENCODE \_ BASE64**</dt> </dl> | Los datos se guardan como una cadena codificada en base64.<br/>                                                                                                                                                                               |
 | <span id="CAPICOM_ENCODE_BINARY"></span><span id="capicom_encode_binary"></span><dl> <dt>**CAPICOM \_ ENCODE \_ BINARY**</dt> </dl> | Los datos se guardan como una secuencia binaria pura.<br/>                                                                                                                                                                                |
 
 
@@ -64,11 +64,11 @@ Valor de la enumeración [**\_ CAPICOM ENCODING \_ TYPE**](capicom-encoding-type
 
 Este método devuelve un BLOB que contiene los datos sobreados en una cadena codificada.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El BLOB devuelto contiene el contenido cifrado y una clave de sesión cifrada para cada destinatario previsto. Estas claves de sesión se cifran mediante la clave pública de cada destinatario. Las claves de sesión cifradas solo se pueden descifrar con la clave privada de un destinatario.
 
-Si la [**propiedad Recipients**](envelopeddata-recipients.md) no contiene ninguna información, este método busca posibles destinatarios en el almacén de certificados AddressBook del usuario actual. Si se encuentra más de un destinatario potencial, se pide al usuario que seleccione un destinatario de un cuadro de diálogo de selección.
+Si la [**propiedad Recipients**](envelopeddata-recipients.md) no contiene ninguna información, este método busca posibles destinatarios en el almacén de certificados AddressBook del usuario actual. Si se encuentra más de un destinatario potencial, se le pedirá al usuario que seleccione un destinatario en un cuadro de diálogo de selección.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,11 +83,11 @@ Si la [**propiedad Recipients**](envelopeddata-recipients.md) no contiene ningun
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**Objetos criptografía**](cryptography-objects.md)
+[**Objetos de criptografía**](cryptography-objects.md)
 </dt> <dt>
 
 [**EnvelopedData**](envelopeddata.md)

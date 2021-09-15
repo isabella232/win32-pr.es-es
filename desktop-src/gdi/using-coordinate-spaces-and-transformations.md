@@ -4,12 +4,12 @@ ms.assetid: 61db38d7-9371-4ff1-b96b-1bed4c2a2749
 title: Uso de espacios de coordenadas y transformaciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9eebfea7465d434761ff5b463898fbd92b156b1fa6c1bf1255e4ebb2f0cf9bb6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2b75f9cab36946eee157ade824e7012018bf80d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117885710"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475907"
 ---
 # <a name="using-coordinate-spaces-and-transformations"></a>Uso de espacios de coordenadas y transformaciones
 
@@ -18,12 +18,12 @@ Esta sección contiene un ejemplo que muestra las siguientes tareas:
 -   Dibujar gráficos con unidades predefinidas.
 -   Centrar gráficos en el área cliente de la aplicación.
 -   Escalar la salida de gráficos a la mitad de su tamaño original.
--   Traducción de la salida de gráficos de 3/4 de pulgada a la derecha.
--   Rotación de gráficos de 30 grados.
+-   Traducción de la salida de gráficos 3/4 de pulgada a la derecha.
+-   Girar gráficos 30 grados.
 -   Salida de gráficos de cizallamiento a lo largo del eje X.
 -   Reflejar la salida de gráficos sobre un eje horizontal imaginario dibujado a través de su punto medio.
 
-El ejemplo siguiente se usó para crear las ilustraciones que aparecen anteriormente en esta información general.
+El ejemplo siguiente se usó para crear las ilustraciones que aparecen anteriormente en esta introducción.
 
 
 ```C++

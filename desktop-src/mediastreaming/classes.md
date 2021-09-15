@@ -4,12 +4,12 @@ description: Media Streaming API proporciona las clases siguientes.
 ms.assetid: E537FCE0-5AE5-41BC-903D-AE67CE9F4D78
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 451a276950502db4df80b7c04d506702041d4c8d61cabdce7e7ebc67d8708c89
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b90ace112563a5c1bf1fee7455877434371adb26
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118056938"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127475555"
 ---
 # <a name="classes-media-streaming-api"></a>Clases (Media Streaming API)
 
@@ -31,8 +31,8 @@ Media [Streaming API proporciona](media-streaming-api-portal.md) las clases sigu
 | [**GetStreamPropertiesOperation**](getstreampropertiesoperation.md)<br/>         | Registra un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por [**GetStreamPropertiesAsync**](/previous-versions/windows/desktop/legacy/hh829001(v=vs.85)) y proporciona un método que devuelve los resultados de la operación.<br/>                                                                                                                            |
 | [**GetTransportInformationOperation**](gettransportinformationoperation.md)<br/> | Registra un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por [**GetTransportInformationAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-gettransportinformationasync) y proporciona un método que devuelve los resultados de la operación.<br/>                                                                                                                    |
 | [**GetVolumeOperation**](getvolumeoperation.md)<br/>                             | Registra un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por [**GetVolumeAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getvolumeasync) y proporciona un método que devuelve los resultados de la operación.<br/>                                                                                                                                                |
-| [**MediaRenderer**](mediarenderer.md)<br/>                                       | Implementa la interfaz [**IMediaRenderer que**](imediarenderer.md) representa un dispositivo DLNA Digital Media Renderer (DMR).<br/>                                                                                                                                                                                                                                            |
-| [**PlaybackOperation**](playbackoperation.md)<br/>                               | Registra un controlador de eventos que se invoca cuando se completa una operación asincrónica iniciada por uno de los métodos de reproducción de [**MediaRenderer**](mediarenderer.md) y proporciona un método que devuelve los resultados de la operación.<br/>                                                                                                                                      |
+| [**Representador de medios**](mediarenderer.md)<br/>                                       | Implementa la interfaz [**IMediaRenderer que**](imediarenderer.md) representa un dispositivo DLNA Digital Media Renderer (DMR).<br/>                                                                                                                                                                                                                                            |
+| [**PlaybackOperation**](playbackoperation.md)<br/>                               | Registra un controlador de eventos que se invoca cuando se completa una operación asincrónica iniciada por uno de los métodos de reproducción [**de MediaRenderer**](mediarenderer.md) y proporciona un método que devuelve los resultados de la operación.<br/>                                                                                                                                      |
 | [**StreamSelectOperation**](streamselectoperation.md)<br/>                       | Registra un controlador de eventos que se invoca cuando se completa la operación asincrónica iniciada por [**GetMuteAsync**](/previous-versions/windows/desktop/api/windows.media.streaming/nf-windows-media-streaming-imediarenderer-getmuteasync) y proporciona un método que devuelve los resultados de la operación.<br/>                                                                                                                                                    |
 | [**StreamSelector**](streamselector.md)<br/>                                     | Implementa la [**interfaz IStreamSelectorStatics**](/previous-versions/windows/desktop/api/windows.media.streaming/nn-windows-media-streaming-istreamselectorstatics) y permite seleccionar una secuencia.<br/>                                                                                                                                                                                                                                                        |
 

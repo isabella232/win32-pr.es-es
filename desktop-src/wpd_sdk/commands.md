@@ -4,12 +4,12 @@ ms.assetid: f579745a-5327-4c8b-bfa7-fe81d9657a3b
 title: Comandos (API de WPD)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a723e9eff52bf0b0b301d1fba672db5887afebef701a312786aeafb4decb733f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 974c6b2b68949e53ae778ed56adcfcb10d2edd5d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118431118"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570153"
 ---
 # <a name="commands-wpd-api"></a>Comandos (API de WPD)
 
@@ -17,7 +17,7 @@ La aplicación cliente y el controlador se comunican mediante comandos que se en
 
 Un comando se identifica mediante una **estructura PROPERTYKEY.** Se trata de dos partes: una parte GUID (el *miembro fmtid)* y una parte DWORD (el *miembro pid).* La parte GUID se usa para indicar la categoría a la que pertenece el comando (los comandos relacionados pertenecen a la misma categoría y, por tanto, tendrán el mismo *fmtid).* La parte DWORD indica el identificador del comando y se usa para distinguir los comandos individuales dentro de una categoría de comandos (los valores *pid* de los comandos de la misma categoría serán diferentes).
 
-En la tabla siguiente se enumeran las categorías de comandos que Windows Portable Devices define. Los fabricantes de dispositivos pueden definir sus propios comandos mediante la creación de sus propias categorías de comandos e iDs de comandos. Sin embargo, un fabricante no debe agregar comandos a las categorías enumeradas a continuación, ya que microsoft los reserva.
+En la tabla siguiente se enumeran las categorías de comandos que Windows los dispositivos portátiles. Los fabricantes de dispositivos pueden definir sus propios comandos mediante la creación de sus propias categorías de comandos e iDs de comandos. Sin embargo, un fabricante no debe agregar comandos a las categorías enumeradas a continuación, ya que microsoft los reserva.
 
 **Categorías de comandos**
 

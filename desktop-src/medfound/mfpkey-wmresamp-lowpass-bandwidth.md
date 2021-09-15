@@ -4,20 +4,20 @@ ms.assetid: 7d9b5949-2d9e-436a-9e44-61c6fc86f973
 title: MFPKEY_WMRESAMP_LOWPASS_BANDWIDTH propiedad (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f6121ac9c5e755bd1d7b4a3584c1cb1a363ee5a3606d1e565be7caff7b0247f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a419c713f7172aa61f828af416d4807435d87797
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119953265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468605"
 ---
-# <a name="mfpkey_wmresamp_lowpass_bandwidth-property"></a>Propiedad LOWPASS BANDWIDTH de MFPKEY \_ WMRESAMP \_ \_
+# <a name="mfpkey_wmresamp_lowpass_bandwidth-property"></a>Propiedad LOWPASS BANDWIDTH de \_ MFPKEY WMRESAMP \_ \_
 
 Especifica el ancho de banda de filtro de paso bajo, como porcentaje de la frecuencia de muestreo de destino.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Solo está disponible mediante [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Solo está disponible mediante [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de datos
 
@@ -27,9 +27,9 @@ VT \_ R4
 
 -   [Audio Resampler DSP](audioresampler.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-El intervalo válido de esta propiedad es de 0,0 a 1,0, ambos inclusive
+El intervalo válido de esta propiedad es de 0,0 a 1,0, ambos inclusive.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ El intervalo válido de esta propiedad es de 0,0 a 1,0, ambos inclusive
 
 | Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                    |
-| Header<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

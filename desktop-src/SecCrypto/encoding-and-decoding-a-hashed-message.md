@@ -4,12 +4,12 @@ ms.assetid: c1a65452-c634-4cc6-9afe-d6bf11d999d1
 title: Codificación y codificación de un mensaje con hash
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bed6ffae240d9139de471f16dcaaf2ed3e29d5bc92c8d7507b981c2af67541c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d91d165634c1ae00a59f2c77b1fc5a36b53dbd96
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117766751"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476447"
 ---
 # <a name="encoding-and-decoding-a-hashed-message"></a>Codificación y codificación de un mensaje con hash
 
@@ -28,7 +28,7 @@ Al crear un mensaje con hash, puede haber varios algoritmos hash y varios hashes
 
 Para usar funciones de mensaje de bajo nivel para realizar las tareas que se han descrito, use el procedimiento siguiente.
 
-**Para crear un algoritmo hash y codificar un mensaje mediante funciones de mensaje de bajo nivel**
+**Para codificar y codificar un mensaje mediante funciones de mensaje de bajo nivel**
 
 1.  Cree o recupere el contenido que se va a hash.
 2.  Obtener un proveedor de servicios criptográficos.
@@ -36,7 +36,7 @@ Para usar funciones de mensaje de bajo nivel para realizar las tareas que se han
 4.  Llame [**a CryptMsgCalculateEncodedLength**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength) para obtener el tamaño del blob del mensaje codificado. Asigne memoria para él.
 5.  Llame a [**CryptMsgOpenToEncode,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode)pasando CMSG HASHED para el parámetro dwMsgType y un puntero a \_  [**\_ CMSG HASHED \_ ENCODE \_ INFO**](/windows/desktop/api/Wincrypt/ns-wincrypt-cmsg_hashed_encode_info) para el parámetro *pvMsgEncodeInfo.* Como resultado de esta llamada, se obtiene un identificador para el mensaje abierto.
 6.  Llame a [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate), pasando el identificador recuperado en el paso 5 y un puntero a los datos que se deben codificar y codificar. Se puede llamar a esta función tantas veces como sea necesario para completar el proceso de codificación.
-7.  Llame [**a CryptMsgGetParam,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam)pasando el identificador recuperado en el paso 5 y los tipos de parámetro adecuados para acceder a los datos codificados deseados. Por ejemplo, pase CMSG CONTENT PARAM para \_ obtener un puntero a todo el mensaje \_ [*PKCS \# 7.*](../secgloss/p-gly.md)
+7.  Llame [**a CryptMsgGetParam,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam)pasando el identificador recuperado en el paso 5 y los tipos de parámetro adecuados para tener acceso a los datos codificados deseados. Por ejemplo, pase CMSG CONTENT PARAM para \_ obtener un puntero a todo el mensaje \_ [*PKCS \# 7.*](../secgloss/p-gly.md)
 
     Si el resultado de esta codificación [](../secgloss/i-gly.md) se va a usar como datos internos para otro mensaje codificado, como un mensaje con sobres, se debe pasar CMSG \_ BARE CONTENT \_ \_ PARAM. Para obtener un ejemplo en el que se muestra esto, vea [Código alternativo para codificar un mensaje con sobres](alternate-code-for-encoding-an-enveloped-message.md).
 
@@ -58,7 +58,7 @@ Los dos procedimientos siguientes descodifican y, a continuación, comprueban lo
 1.  Llame [**a CryptMsgControl**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcontrol)y pase CMSG \_ CTRL VERIFY HASH para comprobar los \_ \_ hashes.
 2.  Llame [**a CryptMsgClose**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgclose) para cerrar el mensaje.
 
-Para obtener un programa de ejemplo, vea [Programa de C de ejemplo: Codificación y decodización de un mensaje con hash](example-c-program-encoding-and-decoding-a-hashed-message.md).
+Para obtener un programa de ejemplo, vea Programa de C de [ejemplo: Codificación y decodización de un mensaje con hash](example-c-program-encoding-and-decoding-a-hashed-message.md).
 
  
 

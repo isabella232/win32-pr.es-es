@@ -4,18 +4,18 @@ ms.assetid: 116f59e9-da65-430d-b5de-e7cd9686bd19
 title: Palabras clave públicas de PrintTicket
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fdd62eedc21928cccb784452c7b0f6a8b96bb0b18e97668409531326a4261d8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 492b8590681fa6b55effe6db6ebff4b408b76325
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119886315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127570557"
 ---
 # <a name="printticket-public-keywords"></a>Palabras clave públicas de PrintTicket
 
 Este tema no es actual. Para obtener la información más reciente, vea [La especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-En la sección siguiente se especifican las descripciones de propiedades específicas de PrintTicket y los inicializadores de parámetros que pueden ser aplicables a printticket.
+En la sección siguiente se especifican las descripciones de propiedades específicas de PrintTicket y los inicializadores de parámetros que pueden ser aplicables a un PrintTicket.
 
 ## <a name="printticket-specific-property-descriptions-usage"></a>Uso de descripciones de propiedades específicas de PrintTicket
 
@@ -29,7 +29,7 @@ Los inicializadores de parámetros toman la forma de tipos de elemento Parameter
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

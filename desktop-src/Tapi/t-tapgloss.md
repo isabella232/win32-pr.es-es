@@ -5,12 +5,12 @@ ms.assetid: 36b1d6c3-2d57-4b38-a35f-6bf632411c6e
 title: T (API de telefonía)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fef6d897365042552429cc7679363c2e23152cef6492dfc84f25b6b32fb7a99
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 342a27d4ed54458f8645ac5bb49b7ea49baafb02
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119518405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476328"
 ---
 # <a name="t-telephony-api"></a>T (API de telefonía)
 
@@ -25,7 +25,7 @@ Un vínculo de transmisión digital con una capacidad de 1544 Mbps. En Estados U
 
 </dd> <dt>
 
-<span id="tapi2.tapi_tapgloss"></span><span id="TAPI2.TAPI_TAPGLOSS"></span>**Tapi**
+<span id="tapi2.tapi_tapgloss"></span><span id="TAPI2.TAPI_TAPGLOSS"></span>**TAPI**
 </dt> <dd>
 
 Vea *Interfaz de programación de aplicaciones de telefonía (TAPI).*
@@ -39,7 +39,7 @@ Una aplicación de servicio de soporte técnico que proporciona un contexto de e
 
 </dd> <dt>
 
-<span id="tapi2.tdd_tapgloss"></span><span id="TAPI2.TDD_TAPGLOSS"></span>**Tdd**
+<span id="tapi2.tdd_tapgloss"></span><span id="TAPI2.TDD_TAPGLOSS"></span>**TDD**
 </dt> <dd>
 
 Consulte *Telecommunications Devices for the Deaf (TDD) [Dispositivos de telecomunicaciones para el dispositivo de telecomunicaciones (TDD)].*
@@ -56,7 +56,7 @@ Un dispositivo de datos para la transmisión de señales codificadas. Normalment
 <span id="tapi2.telephony_tapgloss"></span><span id="TAPI2.TELEPHONY_TAPGLOSS"></span>**Telefonía**
 </dt> <dd>
 
-La ciencia de la transmisión de señales de voz, datos, vídeo o imágenes a lo largo de una distancia mediante tecnología que integra los equipos con la red telefónica.
+La ciencia de la transmisión de señales de voz, datos, vídeo o imágenes a lo largo de una distancia mediante tecnología que integra equipos con la red telefónica.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Modelo de control de llamadas de entidad que permite a una aplicación establece
 <span id="tapi2.time_to_live_ttl__tapgloss"></span><span id="TAPI2.TIME_TO_LIVE_TTL__TAPGLOSS"></span>**período de vida (TTL)**
 </dt> <dd>
 
-Valor del intervalo de 0 a 255 que define el ámbito dentro del cual se deben enviar paquetes de multidifusión a través de una red mediante el Protocolo de Internet (IP). El ámbito se define en términos de lo local o remoto que es el destino de un paquete. Cada enrutador disminuye el TTL en uno. Cuando el valor alcanza un límite inferior predefinido, el enrutador lanza el paquete. Los requisitos actuales de la red troncal de multidifusión (MCCI), disponibles en el sitio de ftp://ftp.isi.edu/mbone/faq.txt, definen los siguientes ámbitos estándar: red local, 1; sitio local, 15; región, 63; world, 127. Otras configuraciones pueden tener significado local; Por ejemplo, 31 podría indicar todos los sitios dentro de una organización determinada.
+Valor del intervalo de 0 a 255 que define el ámbito dentro del cual se deben enviar paquetes de multidifusión a través de una red mediante el Protocolo de Internet (IP). El ámbito se define en términos de lo local o remoto que es el destino de un paquete. Cada enrutador disminuye el TTL en uno. Cuando el valor alcanza un límite inferior predefinido, el enrutador lanza el paquete. Los requisitos actuales de la red troncal de multidifusión (MCCI), disponibles en el sitio ftp://ftp.isi.edu/mbone/faq.txt, definen los siguientes ámbitos estándar: red local, 1; sitio local, 15; región, 63; world, 127. Otras configuraciones pueden tener significado local; Por ejemplo, 31 podría indicar todos los sitios de una organización determinada.
 
 </dd> <dt>
 
@@ -95,7 +95,7 @@ Vea [Interfaz del proveedor de servicios de telefonía (TSPI).](./telephony-serv
 
 </dd> <dt>
 
-<span id="tapi2.ttl_tapgloss"></span><span id="TAPI2.TTL_TAPGLOSS"></span>**Ttl**
+<span id="tapi2.ttl_tapgloss"></span><span id="TAPI2.TTL_TAPGLOSS"></span>**TTL**
 </dt> <dd>
 
 Vea *período de vida (TTL).*

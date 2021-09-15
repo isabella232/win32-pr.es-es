@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: d2e3ab848caa24cb77a8cb45e992eeac7365af0de743fa148b07b484239fa658
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e1d8cdea3e43bbe10ee87f8f4aa605740a15e6ac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117771954"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127476506"
 ---
 # <a name="certificatearchived-property"></a>Propiedad Certificate.Archived
 
@@ -28,7 +28,7 @@ La **propiedad Archived** establece o recupera un valor booleano que indica si e
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -41,12 +41,12 @@ Certificate.Archived As Boolean
 
 Valor booleano que indica si se archiva el certificado. Si **es true,** el certificado se archiva. Tenga en cuenta que al cambiar el valor **de false** **a true** se archiva el certificado.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Esta propiedad genera CAPICOM \_ E NOT ALLOWED cuando se crea un script desde una aplicación basada en \_ \_ web.
 
 > [!Note]  
-> Un certificado archivado no está visible en la interfaz de usuario de administración de certificados. Además, los certificados archivados no se incluirán en el método [**Store.Open**](store-open.md) a menos que se especifique CAPICOM \_ STORE OPEN INCLUDE \_ \_ \_ ARCHIVED.
+> Un certificado archivado no es visible en la interfaz de usuario de administración de certificados. Además, los certificados archivados no se incluirán en el método [**Store.Open**](store-open.md) a menos que se especifique CAPICOM \_ STORE OPEN INCLUDE \_ \_ \_ ARCHIVED.
 
  
 

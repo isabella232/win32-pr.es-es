@@ -1,6 +1,6 @@
 ---
 title: Recurso BITMAP
-description: Define un mapa de bits que una aplicación usa en su pantalla o como elemento en un menú o control.
+description: Define un mapa de bits que una aplicación usa en su pantalla o como un elemento en un menú o control.
 ms.assetid: 2db2f7f0-735f-4aac-9813-c04a2f7788b2
 keywords:
 - Menús de recursos BITMAP y otros recursos
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff75f235e8aa1787e93f9420b4d7ed27f440cdc09510547295ebced4ec494bdd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8e5bed33fb66d9deb85e1f25165f3f7a0f664961
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118734903"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468559"
 ---
 # <a name="bitmap-resource"></a>Recurso BITMAP
 
-Define un mapa de bits que una aplicación usa en su pantalla o como elemento en un menú o control.
+Define un mapa de bits que una aplicación usa en su pantalla o como un elemento en un menú o control.
 
 ``` syntax
 nameID BITMAP filename
@@ -45,7 +45,7 @@ Nombre del archivo que contiene el recurso. El nombre debe ser un nombre de arch
 
 </dd> </dl>
 
-Algunos atributos también se admiten para la compatibilidad con versiones anteriores. Para obtener más información, vea [Atributos de recursos comunes](common-resource-attributes.md).
+Algunos atributos también se admiten por compatibilidad con versiones anteriores. Para más información, consulte [Atributos de recursos comunes.](common-resource-attributes.md)
 
 ## <a name="examples"></a>Ejemplos
 
@@ -60,7 +60,7 @@ disk1   BITMAP "disk.bmp"
 
 <dl> <dt>
 
-[Uso de mapas de bits](/windows/desktop/gdi/using-bitmaps)
+[Usar mapas de bits](/windows/desktop/gdi/using-bitmaps)
 </dt> <dt>
 
 [**LoadBitmap**](/windows/desktop/api/winuser/nf-winuser-loadbitmapa)
