@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shldisp.h
 ms.assetid: 0699eb16-d6ef-46e3-bd02-d35512536275
-ms.openlocfilehash: a694ced28663a005bfdacd406adb3f6b3d6cd0300db2a101c9fdee4bf215a23d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: fa59a70c04e7f78a315955aeabb9477c6f28c80d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119821125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468127"
 ---
 # <a name="webwizardhostfinalnext-method"></a>Método WebWizardHost.FinalNext
 
@@ -37,7 +37,7 @@ iRetVal = WebWizardHost.FinalNext()
 
 Este método no tiene parámetros.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando el asistente muestra la última página HTML del  lado  servidor y el usuario hace clic en el botón Siguiente o Finalizar, el servidor invoca **FinalNext** en el controlador de eventos de ese botón.
 
@@ -49,8 +49,8 @@ Cuando el asistente muestra la última página HTML del  lado  servidor y el usu
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                            |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                   |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl> |
 
 
 

@@ -5,11 +5,11 @@ ms.assetid: 6F1F2AAE-B2E4-4F26-8BDF-A3DE8F5C5460
 ms.topic: article
 ms.date: 04/02/2019
 ms.openlocfilehash: 9a87fadac85906dfd07fd4c568185125039207d9
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122885204"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466377"
 ---
 # <a name="ease-of-access---assistive-technology-registration"></a>Accesibilidad de tecnología de asistencia
 
@@ -32,21 +32,21 @@ Las aplicaciones de accesibilidad se registran con Centro de accesibilidad media
 | Nombre de la aplicación            | Nombre de la aplicación, que se encuentra en un archivo de recursos. Este valor del Registro contiene una cadena en un formato especificado. Podría ser una versión localizada del nombre de la aplicación, si la aplicación se localiza en idiomas distintos del inglés. El nombre aparece en la Centro de accesibilidad.<br/>                                                                                                                                                                                                                                                                                       | Mandatory          | Localizada     |
 | ATExe                       | Nombre del archivo ejecutable de la aplicación o la imagen. Windows este valor para determinar si la aplicación de accesibilidad se está ejecutando.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                            | Mandatory          | No localizado |
 | CopySettingsToLockedDesktop | Valor **DWORD** que indica si se debe copiar la configuración de la aplicación de accesibilidad en el escritorio bloqueado.<br/> Si este valor es 1, la aplicación puede escribir la configuración en una ubicación del registro de usuarios y Windows copia la configuración en la misma ubicación del registro de usuario para el escritorio bloqueado. Esto permite que la aplicación conserve su estado desde el escritorio "normal" al escritorio bloqueado.<br/>                                                                                                                                                             | Opcionales           | No localizado |
-| Descripción                 | Breve descripción de la aplicación, de un archivo de recursos. Este valor del Registro contiene una cadena en un formato especificado. Podría ser una versión localizada de la descripción, si la aplicación se localiza en idiomas distintos del inglés. La longitud de esta cadena debe ser inferior a 512 caracteres.<br/> La descripción aparece en la Centro de accesibilidad para proporcionar información adicional sobre la aplicación de accesibilidad al usuario.<br/> Este valor también se puede usar para notificar al usuario que la aplicación no se usa en el escritorio seguro.<br/>      | Mandatory          | Localizada     |
-| Perfil                     | Fragmento corto de XML que especifica los artículos que proporciona la aplicación. Garantiza que la aplicación aparece en la categoría correcta de la Centro de accesibilidad.<br/>                                                                                                                                                                                                                                                                                                                                                                                                  | Mandatory          | No localizado |
-| PassiveAutoStartBehavior    | <p>Valor **DWORD** que indica si el comportamiento de inicio automático heredado está habilitado.</p><p>El valor predeterminado es 0, lo que indica que un AT requiere un comportamiento de inicio automático heredado. Esto hace que la configuración "Iniciar después del inicio de sesión" de ese AT se aprotebe en la configuración rápida (OOBE) y Panel de control (consulte **Panel de control -> Accesibilidad -> Centro de accesibilidad -> Cambiar** configuración de inicio de sesión) e inicia automáticamente el AT después de UAC y la pantalla de bloqueo.</p><p>Un valor de 1 indica que AT debe usar el nuevo comportamiento de inicio automático en el que la configuración "Iniciar después del inicio de sesión" para ese AT no está activada en la experiencia de configuración predeterminada (OOBE) y Panel de control, y AT se inicia automáticamente una vez por sesión de usuario (en el inicio de sesión) solo si la opción "iniciar después de iniciar sesión" está activada.</p>                                                                                                                                                                                                                                                                                                                                                                                                  | Opcionales          | No localizado |
+| Descripción                 | Breve descripción de la aplicación, de un archivo de recursos. Este valor del Registro contiene una cadena en un formato especificado. Podría ser una versión localizada de la descripción, si la aplicación se localiza en idiomas distintos del inglés. La longitud de esta cadena debe ser inferior a 512 caracteres.<br/> La descripción aparece en el Centro de accesibilidad para proporcionar información adicional sobre la aplicación de accesibilidad al usuario.<br/> Este valor también se puede usar para notificar al usuario que la aplicación no se usa en el escritorio seguro.<br/>      | Mandatory          | Localizada     |
+| Perfil                     | Fragmento corto de XML que especifica los artículos que proporciona la aplicación. Garantiza que la aplicación aparece en la categoría correcta en el Centro de accesibilidad.<br/>                                                                                                                                                                                                                                                                                                                                                                                                  | Mandatory          | No localizado |
+| PassiveAutoStartBehavior    | <p>Valor **DWORD** que indica si el comportamiento de inicio automático heredado está habilitado.</p><p>El valor predeterminado es 0, lo que indica que un AT requiere un comportamiento de inicio automático heredado. Esto hace que la configuración "Iniciar después del inicio de sesión" de ese AT esté activada en La experiencia rápida (OOBE) y Panel de control (consulte **Panel de control -> Accesibilidad -> Centro de accesibilidad -> Cambiar** configuración de inicio de sesión) e inicia automáticamente el AT después de UAC y la pantalla de bloqueo.</p><p>Un valor de 1 indica que AT debe usar el nuevo comportamiento de inicio automático en el que la configuración "Iniciar después del inicio de sesión" para ese AT no está activada en la experiencia de configuración predeterminada (OOBE) y Panel de control, y AT se inicia automáticamente una vez por sesión de usuario (en el inicio de sesión) solo si la opción "iniciar después del inicio de sesión" está activada.</p>                                                                                                                                                                                                                                                                                                                                                                                                  | Opcional          | No localizado |
 | SecureDesktopAccommodation  | Nombre de una aplicación de accesibilidad alternativa que se ejecutará en el escritorio seguro en lugar de esta aplicación. La alternativa puede ser una aplicación diferente, una versión diferente de la misma aplicación, una de las aplicaciones de accesibilidad que se incluyen en Windows o "none" si no desea ejecutar ninguna aplicación de accesibilidad en el escritorio seguro. <br/>                                                                                                                                                                                                               | Opcionales           | No localizado |
 | Perfil simple              | Valor que describe cómo clasificar la aplicación en una palabra o dos: lector de pantalla, lupa o teclado en pantalla, por ejemplo.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Mandatory          | No localizado |
 | StartExe                    | Ruta de acceso completa del ejecutable. Este valor se usa para iniciar la aplicación de accesibilidad.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Mandatory          | No localizado |
 | StartParams                 | Argumentos de la línea de comandos. Estos valores se usan junto con StartExe para iniciar la aplicación.<br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Opcionales           | No localizado |
-| TerminateOnDesktopSwitch    | Valor **DWORD** que especifica cómo responde la aplicación de accesibilidad a las transiciones hacia o desde el escritorio seguro.<br/> Si este valor no existe o es 1, Windows finaliza y reinicia la aplicación en cada transición hacia o desde el escritorio seguro. Este es el comportamiento predeterminado.<br/> Si este valor es 0, Windows la aplicación de accesibilidad en una transición de escritorio. La aplicación continúa ejecutándose en el escritorio anterior y Windows inicia una nueva instancia en el nuevo escritorio si una instancia aún no se está ejecutando allí.<br/> | Opcionales           | No localizado |
+| TerminateOnDesktopSwitch    | Valor **DWORD** que especifica cómo responde la aplicación de accesibilidad a las transiciones hacia o desde el escritorio seguro.<br/> Si este valor no existe o es 1, Windows y reinicia la aplicación en cada transición hacia o desde el escritorio seguro. Este es el comportamiento predeterminado.<br/> Si este valor es 0, Windows la aplicación de accesibilidad en una transición de escritorio. La aplicación continúa ejecutándose en el escritorio anterior y Windows inicia una nueva instancia en el nuevo escritorio si una instancia aún no se está ejecutando allí.<br/> | Opcional           | No localizado |
 
 
  
 
 ### <a name="localization"></a>Localización
 
-Los valores del Registro de Nombre de aplicación y Descripción deben ser localizables para admitir Interfaz de usuario multilingüe (LDAP).
+Los valores del Registro de Nombre de la aplicación y Descripción deben ser localizables para admitir Interfaz de usuario multilingüe (LDAP).
 
 Estas cadenas tienen el siguiente formato, donde los corchetes angulares significan los elementos necesarios y los corchetes significan un elemento opcional.
 
@@ -133,7 +133,7 @@ Si la clave del Registro **SecureDesktopAccommodation** de la aplicación de acc
 
 Si la clave **SecureDesktopAccommodation** de la aplicación está establecida en "none", use la clave **Description** para decir al usuario que la aplicación no está disponible en el escritorio seguro y no se proporciona ninguna alternativa.
 
-Windows muestra el texto Descripción en las ubicaciones pertinentes del Centro de accesibilidad.
+Windows muestra el texto Descripción en las ubicaciones pertinentes de la Centro de accesibilidad.
 
 ### <a name="running-at-installation-and-on-the-logon-desktop"></a>Ejecución durante la instalación y en el escritorio de inicio de sesión
 
@@ -159,7 +159,7 @@ Si la **clave TerminateOnDesktopSwitch** existe y está establecida en 0, Window
 Las desventajas de no ejecutarse en un trabajo incluyen:
 
 -   Dado que la aplicación no se reinicia en las transiciones de escritorio, debe detectar cuándo está inactivo el escritorio actual y responder correctamente. Por ejemplo, la aplicación debe dejar el control del hardware para que la versión de escritorio segura de la aplicación pueda usarla y la aplicación debe entrar en modo de suspensión para evitar el uso de recursos de procesador.
--   Si la aplicación se puede iniciar a través de menú Inicio, Windows Explorer o la línea de comandos, es necesario informar al Centro de accesibilidad la aplicación. Para obtener más información, **vea Windows Logo key + U**.
+-   Si la aplicación se puede iniciar a través de menú Inicio, Windows Explorer o la línea de comandos, es necesario informar Centro de accesibilidad la aplicación. Para obtener más información, **vea Windows Logotipo + U**.
 -   Dado que varias copias de la aplicación se pueden ejecutar simultáneamente en distintos escritorios, la aplicación debe escribirse para admitir varias copias en ejecución.
 
 ### <a name="windows-logo-key--u"></a>Windows Tecla logotipo + U
@@ -178,7 +178,7 @@ Si la aplicación de accesibilidad está configurada para ejecutarse fuera de un
 
 Independientemente de cómo esté configurada la aplicación, si proporciona una manera de salir desde dentro de la aplicación, como un botón Cerrar, la aplicación debe notificar al Centro de accesibilidad que está saliendo.
 
-Una aplicación notifica al Centro de accesibilidad estableciendo una clave temporal del Registro y, a continuación, insertando la combinación Windows tecla Logotipo + tecla U en el flujo de entrada.
+Una aplicación notifica a la Centro de accesibilidad estableciendo una clave temporal del Registro y, a continuación, insertando la combinación Windows tecla Logotipo + tecla U en el flujo de entrada.
 
 La aplicación debe crear la clave temporal en la siguiente ubicación.
 
@@ -213,7 +213,7 @@ SendInput(ARRAYSIZE(input), input, sizeof(input[0]));
 
 ### <a name="windows-logo-key--volume-up"></a>Windows Tecla logotipo + Subir volumen
 
-Cuando el usuario inicia la aplicación de accesibilidad presionando la combinación de teclas Logotipo y Subir volumen de Windows (por ejemplo, en un dispositivo de tableta), el Centro de accesibilidad pasa el siguiente argumento de línea de comandos a la aplicación:
+Cuando el usuario inicia la aplicación de accesibilidad presionando la combinación de teclas logotipo de Windows + subir volumen (por ejemplo, en un dispositivo de tableta), el Centro de accesibilidad pasa el siguiente argumento de línea de comandos a la aplicación:
 
 **/hardwarebuttonlaunch**
 
@@ -321,7 +321,7 @@ Los valores de la tabla están bajo la clave siguiente:
 
  
 
-Si la aplicación proporciona un lector de pantalla y una lupa de pantalla en un único ejecutable, los valores del componente de lector de pantalla podrían tener este aspecto:
+Si la aplicación proporciona un lector de pantalla y una lupa de pantalla en un solo archivo ejecutable, los valores del componente de lector de pantalla podrían tener este aspecto:
 
 
 

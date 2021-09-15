@@ -52,12 +52,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d488148497ae95f7b26157b043251e509f72aee577534ccccc07f9766551591
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2bbb2e0ada3ad1808fc7ba38321008b46dc358bc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118324969"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465505"
 ---
 # <a name="control-type-identifiers"></a>Identificadores de tipo de control
 
@@ -115,11 +115,11 @@ En este tema se describen las constantes con nombre que se usan para identificar
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                     |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                            |
-| Header<br/>                   | <dl> <dt>UIAutomationClient.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>UIAutomationClient.h</dt> </dl> |
 
 
 

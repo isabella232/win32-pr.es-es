@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0229e33567896d322b4c5b041056345cfc6833397996d3d1e393c9a1cd7bda58
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: da45ff8f3da29e7ddf51078d5f143ffb7db76f56
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120122635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466395"
 ---
 # <a name="wmmediaoriginalbroadcastdatetime-attribute"></a>Atributo WM/MediaOriginalBroadcastDateTime
 
@@ -27,7 +27,7 @@ El **atributo WM/MediaOriginalBroadcastDateTime** especifica la fecha y hora en 
 
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La Windows SDK de formato multimedia para este atributo es g \_ wszWMMediaOriginalBroadcastDateTime.
 
@@ -43,7 +43,7 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

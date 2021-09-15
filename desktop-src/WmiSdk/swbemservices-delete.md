@@ -1,5 +1,5 @@
 ---
-description: Elimina la clase o instancia especificada en la ruta de acceso del objeto. Solo puede eliminar objetos en el espacio de nombres actual.
+description: Elimina la clase o instancia que se especifica en la ruta de acceso del objeto. Solo puede eliminar objetos en el espacio de nombres actual.
 ms.assetid: 7dabab12-e8ee-4d44-932f-f3239b6f066e
 ms.tgt_platform: multiple
 title: Método SWbemServices.Delete (Wbemdisp.h)
@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: fff97be43f5689acd51b811e81d72e053f4c7ae6b4df398329016304bf418535
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 690dc595471baa5514d7f1ab84a8f6def16ee5b0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119995655"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465485"
 ---
 # <a name="swbemservicesdelete-method"></a>Método SWbemServices.Delete
 
@@ -53,7 +53,7 @@ SWbemServices.Delete( _
 *strObjectPath* 
 </dt> <dd>
 
-Obligatorio. Cadena que contiene la ruta de acceso del objeto que desea eliminar. Para obtener más información, [vea Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
+Necesario. Cadena que contiene la ruta de acceso del objeto que desea eliminar. Para obtener más información, [vea Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
 
 </dd> <dt>
 
@@ -123,7 +123,7 @@ No hay suficiente memoria para completar la operación.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El **método SWbemServices.Delete** se puede usar cuando a la propiedad de clave del objeto no se le proporciona un valor, porque este método solo requiere una ruta de acceso de objeto como entrada. Este método se puede usar en situaciones en las que se produce un error [**en SWbemObject.Delete \_**](swbemobject-delete-.md) por falta de un valor de clave. Si el objeto se confirma en WMI a través [**de SWbemObject.Put \_**](swbemobject-put-.md), se obtuvo un objeto [**SWbemObjectPath**](swbemobjectpath.md) a través de la llamada.
 
@@ -179,7 +179,7 @@ Set objSWbemService = Nothing
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemServices<br/>                                                         |
@@ -187,7 +187,7 @@ Set objSWbemService = Nothing
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

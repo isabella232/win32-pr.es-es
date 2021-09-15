@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9c47d85d3dfa2b15b31971a6b6d123259fa1db10c441cc7e7d1b4ab8f3eb1ed3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e0f54cb2e71edd30cf97389a0221bca0e2ef8051
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119132958"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465614"
 ---
 # <a name="winhttprequest-object-reference"></a>Referencia del objeto WinHttpRequest
 
@@ -31,7 +31,7 @@ El objeto COM WinHTTP para su uso con lenguajes de scripting.
 
 </dd> </dl>
 
- Para más información, consulte [Acerca de WinHTTP.](about-winhttp.md)
+ Para obtener más información, vea [Acerca de WinHTTP.](about-winhttp.md)
 
 Consulte [Elección de una interfaz WinHTTP](choosing-a-winhttp-interface.md) para ver una comparación de las interfaces C++ (WinHTTP) y WinHttpRequest. También se describe cómo usar las herramientas administrativas incluidas con WinHTTP.
 

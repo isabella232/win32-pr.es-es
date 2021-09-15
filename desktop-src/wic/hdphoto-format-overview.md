@@ -4,12 +4,12 @@ ms.assetid: C73752AB-3D6E-4D92-9FDE-CB68B6A9743C
 title: Información general sobre el formato HD Photo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 772c295051186069dd7be1a3efa3bfbb4e6ea919b2ab9fbe77ffd52cad1676a1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 62c526667c6bf77d340e895bdb66dc073134c33d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119881955"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466874"
 ---
 # <a name="hd-photo-format-overview"></a>Información general sobre el formato HD Photo
 
@@ -97,7 +97,7 @@ Opciones específicas del codificador de fotos en HD
 | [IgnoreOverlap](#ignoreoverlap-option) | VT \_ BOOL | **TRUE**, **FALSE** | **FALSE** |
 
 
-Si hay una opción de codificador en la lista [**de opciones IPropertyBag2**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768192(v=vs.85)) que el códec no admite, se omite.
+Si hay una opción de codificador en la [**lista de opciones IPropertyBag2**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768192(v=vs.85)) que el códec no admite, se omite.
 
 ### <a name="imagequality-option"></a>Opción ImageQuality
 
@@ -111,7 +111,7 @@ Especifica la calidad de compresión deseada. 0.0 indica el esquema de compresi�
 
 HD Photo no admite esta opción de codificador. Este valor se omite si está presente en la [**lista de parámetros IPropertyBag2.**](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768192(v=vs.85))
 
-### <a name="lossless-option"></a>Opción sin pérdida de datos
+### <a name="lossless-option"></a>Opción sin pérdida
 
 Especifica si se debe usar el modo de compresión de pérdidas. En el caso del formato de imagen hd photo, este valor invalida el [valor de la opción ImageQuality.](#imagequality-option)
 
@@ -167,7 +167,7 @@ En la tabla siguiente se enumeran las opciones de submuestreo disponibles.
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 3     | La codificación 4:4:4 conserva la resolución completa del conflicto.                                                                                                                                                                                                                                            |
 | 2     | La codificación 4:2:2 reduce la resolución de los ruidos a 1/2 de resolución de luminosidad.                                                                                                                                                                                                                      |
-| 1     | La codificación 4:2:0 reduce la resolución de ruido a 1/4 de resolución de luminosidad.                                                                                                                                                                                                                      |
+| 1     | La codificación 4:2:0 reduce la resolución de los ruidos a 1/4 de resolución de luminosidad.                                                                                                                                                                                                                      |
 | 0     | La codificación 4:0:0 descarta todo el contenido de la escala y solo conserva la luminosidad. Dado que el códec usa una definición ligeramente modificada de luminosidad para mejorar el rendimiento, se recomienda convertir una imagen RGB a monocromática antes de la codificación en lugar de usar este modo de submuestreo. |
 
 
@@ -178,7 +178,7 @@ El valor predeterminado es 3 si [ImageQuality](#imagequality-option) > 0,8; de l
 
 ### <a name="horizontaltileslices-verticaltileslices-options"></a>HorizontalTileSlices, Opciones de VerticalTileSlices
 
-Especifique el mosaico horizontal y vertical de la imagen antes de realizar la codificación de compresión para obtener un rendimiento óptimo de descodificación de región. Al dividir la imagen en iconos rectangulares durante la codificación, puede descodificar las regiones de la imagen sin procesar todo el flujo de datos comprimido. El valor predeterminado de 0 no especifica ninguna subdivisión, por lo que toda la imagen se trata como un solo icono. Un valor de 1 para cada parámetro crea una única división horizontal y una sola división vertical, dividiendo eficazmente la imagen en cuatro iconos de igual tamaño. El valor máximo de 4095 para cada parámetro divide la imagen en 4096 filas de mosaico con 4096 iconos por fila. En otras palabras, los valores de parámetro son iguales al número de mosaicos horizontales y verticales (respectivamente) menos 1. Un icono nunca puede tener menos de 16 píxeles de ancho o alto, por lo que el codificador HD Photo podría ajustar este parámetro para mantener el tamaño mínimo de mosaico necesario. Dado que hay una sobrecarga de almacenamiento y procesamiento asociada a cada icono, debe elegir estos valores cuidadosamente para satisfacer el escenario específico.
+Especifique el mosaico horizontal y vertical de la imagen antes de realizar la codificación de compresión para obtener un rendimiento óptimo de descodificación de región. Al dividir la imagen en iconos rectangulares durante la codificación, puede descodificar regiones de la imagen sin procesar todo el flujo de datos comprimido. El valor predeterminado de 0 no especifica ninguna subdivisión, por lo que toda la imagen se trata como un solo icono. Un valor de 1 para cada parámetro crea una única división horizontal y una sola división vertical, dividiendo eficazmente la imagen en cuatro iconos de igual tamaño. El valor máximo de 4095 para cada parámetro divide la imagen en 4096 filas de mosaico con 4096 iconos por fila. En otras palabras, los valores de parámetro son iguales al número de mosaicos horizontales y verticales (respectivamente) menos 1. Un icono nunca puede tener menos de 16 píxeles de ancho o alto, por lo que el codificador HD Photo podría ajustar este parámetro para mantener el tamaño mínimo de mosaico necesario. Dado que hay una sobrecarga de almacenamiento y procesamiento asociada a cada icono, debe elegir estos valores cuidadosamente para satisfacer el escenario específico.
 
 [HorizontalTileSlices:](/windows)el valor predeterminado es (Ancho de imagen – 1) >> 8.
 
@@ -194,55 +194,55 @@ El valor predeterminado es **TRUE y** se recomienda que las aplicaciones y los d
 
 Al establecer esta opción en **TRUE,** se indica al códec que codifica la información del canal alfa como un canal intercalado adicional, sin correlación con los canales de contenido de la imagen. Este modo es útil cuando necesita descodificar alfa simultáneamente con la imagen en un escenario de streaming.
 
-Al establecer este parámetro en **FALSE,** se genera un canal alfa plana, codificado como una imagen independiente con su propio valor de calidad opcional. Mediante el uso de un canal alfa planar, puede descodificar los datos de imagen y el canal alfa de forma independiente. Los canales alfa intercalados solo se admiten para determinados formatos de píxel RGB. Puede asociar un canal alfa planar con cualquier formato de imagen que defina un canal alfa.
+Si se establece este parámetro en **FALSE,** se genera un canal alfa planar, codificado como una imagen independiente con su propio valor de calidad opcional. Mediante el uso de un canal alfa planar, puede descodificar los datos de imagen y el canal alfa de forma independiente. Los canales alfa intercalados solo se admiten para determinados formatos de píxel RGB. Puede asociar un canal alfa planar con cualquier formato de imagen que defina un canal alfa.
 
 El valor predeterminado es **FALSE**.
 
 ### <a name="alphaquality-option"></a>Opción AlphaQuality
 
-Especifica la calidad de compresión de la imagen de canal alfa plana. Un valor de 1 establece el modo sin pérdida. Al aumentar los valores, se aumentan las relaciones de compresión y se reduce la calidad de la imagen.
+Especifica la calidad de compresión de la imagen de canal alfa planar. Un valor de 1 establece el modo sin pérdida. Al aumentar los valores, se aumentan las relaciones de compresión y se reduce la calidad de la imagen.
 
 El valor predeterminado es 1.
 
-### <a name="compresseddomaintranscode-option"></a>Opción CompressedDomainTranscode
+### <a name="compresseddomaintranscode-option"></a>CompressedDomainTranscode (opción)
 
-Con HD Photo puede realizar varias operaciones de transformación de archivos sin realmentecoding los datos comprimidos y volver a codificar en el archivo de destino. Las operaciones de dominio comprimido son muy eficaces y evitan cualquier pérdida de calidad adicional que sea típica al descodificar y volver a codificar una imagen comprimida por pérdida.
+Con HD Photo puede realizar una serie de operaciones de transformación de archivos sin realmente descodir los datos comprimidos y volver a codificar en el archivo de destino. Las operaciones de dominio comprimido son muy eficaces y evitan cualquier pérdida de calidad adicional típica al descodificar y volver a codificar una imagen comprimida por pérdida.
 
 Se admiten las siguientes operaciones de dominio comprimido:
 
 -   Recortar una región de la imagen.
--   Realice una transformación de rotación/volteo.
+-   Realice una transformación de rotación o de volteo.
 -   Descartar datos de frecuencia (lo que permite crear un archivo de imagen más pequeño).
 -   Reorganizar la imagen entre el orden secuencial espacial y de frecuencia.
 
-El codificador HD Photo realiza una operación de transcodificación de dominio comprimido cuando codifica una imagen hd photo mediante un descodificador HD Photo como origen de la imagen. Según las opciones de codificación seleccionadas, el códec usa una operación de dominio comprimido si es posible. Si una aplicación decide impedir explícitamente las operaciones de transcodificación de dominios comprimidos, debe establecer la opción *UseCodecOptions* en **TRUE** y la opción *CompressedDomainTranscode* en **FALSE.**
+El codificador HD Photo realiza una operación de transcodificación de dominios comprimidos cuando codifica una imagen de foto de HD mediante un descodificador hd photo como origen de la imagen. En función de las opciones de codificación seleccionadas, el códec usa una operación de dominio comprimido si es posible. Si una aplicación decide impedir explícitamente las operaciones de transcodificación de dominios comprimidos, debe establecer la opción *UseCodecOptions* en **TRUE** y la opción *CompressedDomainTranscode* en **FALSE.**
 
 Cuando el códec realiza una operación de dominio comprimido, solo se permiten ciertos parámetros de codificador y valores de propiedad.
 
--   Se omiten las opciones básicas del [codificador ImageQuality,](#imagequality-option) [CompressionQuality](/windows) y [Lossless.](#lossless-option)
--   Se omiten las opciones de codificador específicas de HD Photo [Quality](#quality-option), [Overlap,](#overlap-option) [InterleavedAlpha](#interleavedalpha-option) y [AlphaQuality.](#alphaquality-option)
+-   Se omiten las opciones básicas del codificador [ImageQuality,](#imagequality-option) [CompressionQuality](/windows) [y Lossless.](#lossless-option)
+-   Se omiten las opciones de codificador específicas de hd Photo [Quality](#quality-option), [Overlap,](#overlap-option) [InterleavedAlpha](#interleavedalpha-option) y [AlphaQuality.](#alphaquality-option)
 -   Si está presente, [las opciones HorizontalTileSlices](/windows) y [VerticalTileSlices](/windows) deben establecerse en cero. El tamaño del icono de una imagen no se puede cambiar como parte de una transcodificación de dominio comprimido.
 -   Puede cambiar la organización de la imagen entre la frecuencia y el orden espacial especificando el valor adecuado de las [opciones FrequencyOrdering.](/windows)
 -   Se puede realizar una rotación cardinal o una operación de volteo horizontal o vertical en función del valor especificado en la opción del codificador [BitmapTransform.](#bitmaptransform-option)
--   La imagen se puede recortar especificando la región deseada mediante el [**parámetro WICRect**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-writesource) del método de codificador **WriteSource.**
+-   La imagen se puede recortar especificando la región deseada mediante el parámetro [**WICRect**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-writesource) del método de codificador **WriteSource.**
 -   Los datos de imagen o alfa se pueden descartar especificando los valores adecuados en las opciones [ImageDataDiscard](#imagedatadiscard-option) o [AlphaDataDiscard,](#alphadatadiscard-option) lo que reduce el tamaño de archivo codificado y reduce eficazmente la resolución de la nueva imagen.
 
-El valor predeterminado es **TRUE y** se recomienda que las aplicaciones y los dispositivos siempre usen el orden de frecuencia a menos que tenga motivos específicos de rendimiento o de aplicación para usar el orden espacial.
+El valor predeterminado es **TRUE y** se recomienda que las aplicaciones y los dispositivos siempre usen el orden de frecuencia, a menos que tenga motivos específicos de rendimiento o de aplicación para usar el orden espacial.
 
 ### <a name="imagedatadiscard-option"></a>Opción ImageDataDiscard
 
-Este parámetro solo es válido si la [opción CompressedDomainTranscode](#compresseddomaintranscode-option) es **TRUE**; De lo contrario, se omite. [ImageDataDiscard](#imagedatadiscard-option) especifica la cantidad de datos de imagen que se descartarán durante una transcodificación de dominio comprimido. Si la imagen contiene un canal alfa intercalado, este descarte de datos se aplica también al canal alfa, con las excepciones que se describen más adelante en esta sección.
+Este parámetro solo es válido si la [opción CompressedDomainTranscode](#compresseddomaintranscode-option) es **TRUE**; De lo contrario, se omite. [ImageDataDiscard](#imagedatadiscard-option) especifica la cantidad de datos de imagen que se descartarán durante una transcodificación de dominio comprimido. Si la imagen contiene un canal alfa intercalado, este descarte de datos se aplica también al canal alfa, con las excepciones como se describe más adelante en esta sección.
 
-Se permiten los siguientes valores.
+Se permiten los valores siguientes.
 
 
 
 | Value | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0     | No se descartan datos de frecuencia de la imagen.                                                                                                                                                                                                                                                                                                                                                                                        |
-| 1     | Los FlexBits se descartan, lo que hace una reducción arbitraria de la calidad de la imagen transcodificada sin cambiar la resolución efectiva de la imagen. La reducción exacta del tamaño del archivo o la reducción de calidad específica depende de numerosos factores y no se puede especificar ni predecir. Este valor devuelve un error si se especifica para un canal alfa intercalado.                                                    |
-| 2     | Se descarta la banda de datos de frecuencia HighPass (que también incluye FlexBits), lo que reduce eficazmente la resolución de la imagen transcodificada en un factor de 4 en ambas dimensiones. Las dimensiones reales de la imagen transcodificada siguen siendo las mismas, pero pierde todos los detalles de cada bloque de píxeles de 4x4. Por lo tanto, debe muestrear la imagen transcodificada en consecuencia cada vez que la descodifique.                            |
-| 3     | Se descartan las bandas de datos de frecuencia HighPass y LowPass (que también incluye los FlexBits), lo que reduce eficazmente la resolución de la imagen transcodificada en un factor de 16 en ambas dimensiones. Las dimensiones reales de la imagen transcodificada siguen siendo las mismas, pero pierde todos los detalles en cada macrobloque de 16 x 16 píxeles de píxeles. Por lo tanto, debe muestrear la imagen transcodificada en consecuencia cada vez que la descodifique. |
+| 1     | Los FlexBits se descartan, lo que reduce arbitrariamente la calidad de la imagen transcodificada sin cambiar la resolución efectiva de la imagen. La reducción exacta del tamaño de archivo o la reducción de calidad específica depende de numerosos factores y no se puede especificar ni predecir. Este valor devuelve un error si se especifica para un canal alfa intercalado.                                                    |
+| 2     | La banda de datos de frecuencia HighPass se descarta (que también incluye los FlexBits), lo que reduce eficazmente la resolución de la imagen transcodificada en un factor de 4 en ambas dimensiones. Las dimensiones reales de la imagen transcodificada siguen siendo las mismas, pero pierde todos los detalles de cada bloque de píxeles de 4x4. Por lo tanto, debe muestrear la imagen transcodificada en consecuencia cada vez que la descodifique.                            |
+| 3     | Las bandas de datos de frecuencia HighPass y LowPass se descartan (lo que también incluye los FlexBits), lo que reduce eficazmente la resolución de la imagen transcodificada en un factor de 16 en ambas dimensiones. Las dimensiones reales de la imagen transcodificada siguen siendo las mismas, pero pierde todos los detalles de cada macrobloque de 16 x 16 píxeles. Por lo tanto, debe muestrear la imagen transcodificada en consecuencia cada vez que la descodifique. |
 
 
 
@@ -252,17 +252,17 @@ El valor predeterminado es 0.
 
 ### <a name="alphadatadiscard-option"></a>Opción AlphaDataDiscard
 
-Esta opción solo es válida si la propiedad [CompressedDomainTranscode](#compresseddomaintranscode-option) es **TRUE** y la imagen contiene un canal alfa planar o intercalado; De lo contrario, se omite. Especifica la cantidad de datos de frecuencia alfa que se descartarán durante una transcodificación de dominio comprimido. Se permiten los valores siguientes para un canal alfa plana.
+Esta opción solo es válida si la propiedad [CompressedDomainTranscode](#compresseddomaintranscode-option) es **TRUE** y la imagen contiene un canal alfa planar o intercalado; De lo contrario, se omite. Especifica la cantidad de datos de frecuencia alfa que se descartarán durante una transcodificación de dominio comprimido. Se permiten los siguientes valores para un canal alfa planar.
 
 
 
 | Value | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0     | No se descartan datos de frecuencia de la imagen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| 1     | Los FlexBits se descartan, lo que hace una reducción arbitraria de la calidad del canal alfa planar para la imagen transcodificada sin cambiar la resolución efectiva. La reducción exacta del tamaño del archivo o la reducción de calidad específica depende de numerosos factores y no se puede especificar ni predecir.                                                                                                                                                                                                                                                |
-| 2     | Se descarta la banda de datos de frecuencia HighPass (que también incluye flexbits), lo que reduce eficazmente la resolución del canal alfa planar de imagen transcodificada en un factor de 4 en ambas dimensiones. Las dimensiones reales de la imagen transcodificada siguen siendo las mismas, pero la imagen pierde todos los detalles del canal alfa plana en cada bloque de 4 x 4 píxeles. Por lo tanto, la imagen transcodificada se debe muestrear en consecuencia cada vez que se descodifica. Normalmente, solo debe establecer este valor si establece la propiedad ImageDataDiscard en el mismo valor. |
-| 3     | Se descartan las bandas de datos de frecuencia HighPass y LowPass (que también incluye los FlexBits), lo que reduce eficazmente la resolución de la imagen transcodificada en un factor de 16 en ambas dimensiones. Las dimensiones reales de la imagen transcodificada siguen siendo las mismas, pero la imagen pierde todos los detalles en cada macrobloque de 16 x 16 píxeles de píxeles. Por lo tanto, la imagen transcodificada se debe muestrear en consecuencia cada vez que se descodifica. Normalmente, solo debe establecer este valor cuando establezca la propiedad ImageDataDiscard en el mismo valor.               |
-| 4     | El canal Alfa se descarta completamente. El formato de píxel de la imagen transcodificada cambia para reflejar la eliminación del canal alfa.                                                                                                                                                                                                                                                                                                                                                                                                               |
+| 1     | Los FlexBits se descartan, lo que hace una reducción arbitraria de la calidad del canal alfa planar para la imagen transcodificada sin cambiar la resolución efectiva. La reducción exacta del tamaño de archivo o la reducción de calidad específica depende de numerosos factores y no se puede especificar ni predecir.                                                                                                                                                                                                                                                |
+| 2     | Se descarta la banda de datos de frecuencia HighPass (que también incluye los FlexBits), lo que reduce eficazmente la resolución del canal alfa planar de imagen transcodificada en un factor de 4 en ambas dimensiones. Las dimensiones reales de la imagen transcodificada siguen siendo las mismas, pero la imagen pierde todos los detalles del canal alfa planar en cada bloque de 4 x 4 píxeles. Por lo tanto, la imagen transcodificada se debe muestrear en consecuencia cada vez que se descodifica. Normalmente, debe establecer este valor solo cuando establezca la propiedad ImageDataDiscard en el mismo valor. |
+| 3     | Las bandas de datos de frecuencia HighPass y LowPass se descartan (lo que también incluye los FlexBits), lo que reduce eficazmente la resolución de la imagen transcodificada en un factor de 16 en ambas dimensiones. Las dimensiones reales de la imagen transcodificada siguen siendo las mismas, pero la imagen pierde todos los detalles de cada macrobloque de 16 x 16 píxeles. Por lo tanto, la imagen transcodificada se debe muestrear en consecuencia cada vez que se descodifica. Normalmente, este valor solo se debe establecer cuando se establece la propiedad ImageDataDiscard en el mismo valor.               |
+| 4     | El canal Alfa se descarta completamente. El formato de píxel de la imagen transcodificada se cambia para reflejar la eliminación del canal alfa.                                                                                                                                                                                                                                                                                                                                                                                                               |
 
 
 
@@ -274,19 +274,19 @@ Ningún valor predeterminado.
 
 ### <a name="ignoreoverlap-option"></a>Opción IgnoreOverlap
 
-Esta opción solo es válida si la propiedad [CompressedDomainTranscode](#compresseddomaintranscode-option) es **TRUE** y se solicita una transcodificación de subr regiones de exactamente uno o varios iconos. La operación predeterminada para una transcodificación de región (o descodificación) es expandir la región solicitada para incluir los píxeles circundantes necesarios para la descodificación superpuesta de los bordes de la región. Cuando este parámetro se establece en **TRUE**, se omiten los píxeles circundantes y solo se extraen los iconos o mosaicos seleccionados. De nuevo, esto requiere que la región solicitada coincida exactamente con las coordenadas de uno o varios iconos. Si la imagen de origen no está en mosaico o si la región solicitada especifica iconos parciales, este parámetro se omite.
+Esta opción solo es válida si la propiedad [CompressedDomainTranscode](#compresseddomaintranscode-option) es **TRUE** y se solicita una transcodificación de subr regiones de exactamente uno o varios iconos. La operación predeterminada para una transcodificación de región (o descodificación) es expandir la región solicitada para incluir los píxeles circundantes necesarios para la descodificación superpuesta de los bordes de la región. Cuando este parámetro se establece en **TRUE,** se omiten los píxeles circundantes y solo se extraen los iconos o mosaicos seleccionados. De nuevo, esto requiere que la región solicitada coincida exactamente con las coordenadas de uno o varios iconos. Si la imagen de origen no está en mosaico o si la región solicitada especifica iconos parciales, se omite este parámetro.
 
 El valor predeterminado es **FALSE**.
 
 ## <a name="decoding"></a>Descodificación
 
-La API de decoding de WIC está diseñada para ser independiente del códec y lacoding de imágenes para códecs habilitados para WIC es básicamente la misma. Para obtener más información sobre lacoding de imágenes, vea Información general [sobre la decodación.](-wic-creating-decoder.md) Para obtener más información sobre el uso de datos de imagen descodificados, vea Información general sobre orígenes [de mapa de bits](-wic-bitmapsources.md).
+La API de decoding de WIC está diseñada para ser independiente del códec y lacoding de imágenes para códecs habilitados para WIC es básicamente la misma. Para obtener más información sobre lacodación de imágenes, vea Información general [sobre la decodación.](-wic-creating-decoder.md) Para obtener más información sobre el uso de datos de imagen descodificados, vea Información general sobre orígenes [de mapa de bits](-wic-bitmapsources.md).
 
 ### <a name="iwicbitmapsourcetransform-support"></a>Compatibilidad con IWICBitmapSourceTransform
 
-Además de las interfaces necesarias para ser un códec habilitado para WIC, el descodificador hd photo nativo también admite [**IWICBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsourcetransform). La **interfaz IWICBitmapSourceTransform proporciona** una opción avanzada para la decodización de un flujo de bits de imagen. En lugar de simplemente devolver una imagen completa mediante [**IWICBitmapFrameDecode,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)la interfaz **IWICBitmapSourceTransform** habilita las siguientes opciones de descodificador.
+Además de las interfaces necesarias para ser un códec habilitado para WIC, el descodificador hd photo nativo también admite [**IWICBitmapSourceTransform**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsourcetransform). La **interfaz IWICBitmapSourceTransform** proporciona una opción avanzada para lacodización de un flujo de bits de imagen. En lugar de simplemente devolver una imagen completa mediante [**IWICBitmapFrameDecode,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)la interfaz **IWICBitmapSourceTransform** habilita las siguientes opciones de descodificador.
 
--   Descodificar una sub-región rectangular de la imagen.
+-   Descodificar una subrcuera rectangular de la imagen.
 -   Descodificación a una resolución inferior
 -   Descodificación a un formato de píxel diferente
 -   Realización de una transformación (rotación/volteo) durante lacodización

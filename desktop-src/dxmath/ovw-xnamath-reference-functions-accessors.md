@@ -4,12 +4,12 @@ ms.assetid: 6e7453b8-0dee-6fc5-cbac-fe20e4e3ef60
 title: Funciones del accessor de vectores de directXMath Library
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a164375d23b15f02debcb110297f7fce63c6032eb5828acb8454b3bde4e7a846
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2107638a6ccd5805858b4c67b74c0811675f2492
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118087806"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465889"
 ---
 # <a name="directxmath-library-vector-accessor-functions"></a>Funciones del accessor de vectores de directXMath Library
 

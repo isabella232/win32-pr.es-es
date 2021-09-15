@@ -1,35 +1,35 @@
 ---
-title: Ejemplos de Tracelogging de C/C++
-description: En este tema se incluyen ejemplos de Tracelogging de C/C++.
+title: Ejemplos de seguimiento de C/C++
+description: Este tema contiene ejemplos de seguimiento de C/C++.
 ms.assetid: FB0A29B9-D1F7-4F13-AA75-5963A0699F7A
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 727aa0f46abb9dcffa1d71dac0880c401003cff5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104418573"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467946"
 ---
-# <a name="cc-tracelogging-examples"></a>Ejemplos de Tracelogging de C/C++
+# <a name="cc-tracelogging-examples"></a>Ejemplos de seguimiento de C/C++
 
-En este tema se incluyen ejemplos de Tracelogging de C/C++.
+Este tema contiene ejemplos de seguimiento de C/C++.
 
 > [!IMPORTANT]
-> Vincule advapi32. lib al compilar estos ejemplos.
+> Vincule advapi32.lib al compilar estos ejemplos.
 
- 
+ 
 
--   [Registrar tipos de datos intrínsecos](#log-intrinsic-data-types)
+-   [Tipos de datos intrínsecos de registro](#log-intrinsic-data-types)
 -   [Campos de evento de nombre](#name-event-fields)
--   [Nivel de detalle de eventos de registro](#log-event-verbosity-level)
--   [Palabras clave de registro de eventos](#log-event-keywords)
--   [Datos de eventos de matriz de registro](#log-array-event-data)
+-   [Nivel de detalle de los eventos de registro](#log-event-verbosity-level)
+-   [Palabras clave de eventos de registro](#log-event-keywords)
+-   [Datos de eventos de la matriz de registros](#log-array-event-data)
 -   [Datos de eventos de estructura de registro](#log-structure-event-data)
 
-### <a name="log-intrinsic-data-types"></a>Registrar tipos de datos intrínsecos
+### <a name="log-intrinsic-data-types"></a>Tipos de datos intrínsecos de registro
 
-En este ejemplo se muestra cómo registrar tipos de datos intrínsecos, como enteros, booleanos, etc.
+En este ejemplo se muestra cómo registrar tipos de datos intrínsecos, como enteros, booleanos, entre otros.
 
 
 ```C++
@@ -164,7 +164,7 @@ void TraceLoggingSample::BasicDataTypes()
 
 ### <a name="name-event-fields"></a>Campos de evento de nombre
 
-En el ejemplo se muestra cómo asignar un nombre a los campos de eventos.
+En el ejemplo se muestra cómo dar nombre a los campos de evento.
 
 
 ```C++
@@ -221,7 +221,7 @@ void TraceLoggingSample::NamingData()
 
 
 
-### <a name="log-event-verbosity-level"></a>Nivel de detalle de eventos de registro
+### <a name="log-event-verbosity-level"></a>Nivel de detalle del evento de registro
 
 En este ejemplo se muestra cómo registrar eventos por nivel de detalle.
 
@@ -279,7 +279,7 @@ void TraceLoggingSample::LevelsAndKeywords()
 
 ### <a name="log-event-keywords"></a>Palabras clave de eventos de registro
 
-Este ejemplo muestra cómo establecer palabras clave de eventos. El filtrado de eventos puede realizarse por nivel y palabra clave. Por ejemplo, los eventos de error o de finalización de escenarios se pueden agrupar en palabras clave independientes para que pueda filtrar fácilmente esos eventos.
+En este ejemplo se muestra cómo establecer palabras clave de evento. El filtrado de eventos se puede realizar por nivel y palabra clave. Por ejemplo, los eventos de finalización del escenario o los eventos de error se pueden agrupar en palabras clave independientes para que pueda filtrar fácilmente esos eventos.
 
 
 ```C++
@@ -325,7 +325,7 @@ void TraceLoggingSample::CombineKeywords()
 
 
 
-### <a name="log-array-event-data"></a>Datos de eventos de matriz de registro
+### <a name="log-array-event-data"></a>Datos de eventos de la matriz de registros
 
 En este ejemplo se muestra cómo registrar matrices como datos de eventos.
 
@@ -429,7 +429,7 @@ void TraceLoggingSample::Structs()
 
 
 
-### <a name="how-to-fix-tracelogging-cc-build-errors"></a>Cómo corregir errores de compilación de C/C++ de TraceLogging
+### <a name="how-to-fix-tracelogging-cc-build-errors"></a>Cómo corregir errores de compilación de C/C++ de seguimiento
 
 Error de compilación
 
@@ -439,13 +439,13 @@ Error   2       error LNK2001: unresolved external symbol __imp__EventSetInforma
 Error   3       error LNK2001: unresolved external symbol __imp__EventRegister@16       App.xaml.obj    PrintPreview
 ```
 
-Fix
+Corrección
 
-Corrija este error mediante la vinculación de advapi32. lib en el proyecto.
+Corrija este error vinculando advapi32.lib en el proyecto.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -15,13 +15,13 @@ api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
 ms.openlocfilehash: 3ec2b1137e7959a646c2943ab1aa7a5c3428d3c0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109952"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466462"
 ---
-# <a name="iportabledevicekeycollectionremoveat-method"></a>IPortableDeviceKeyCollection::RemoveAt (Método)
+# <a name="iportabledevicekeycollectionremoveat-method"></a>IPortableDeviceKeyCollection::RemoveAt (método)
 
 El **método RemoveAt** quita el elemento almacenado en la ubicación especificada por el índice especificado.
 
@@ -49,7 +49,7 @@ Especifica el índice del elemento que se va a quitar.
 
 ## <a name="return-value"></a>Valor devuelto
 
-El método devuelve un **valor HRESULT.** Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
+El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen los que se indican en la tabla siguiente, entre otros.
 
 
 
@@ -62,7 +62,7 @@ El método devuelve un **valor HRESULT.** Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Debe especificar un índice de base cero.
 
@@ -77,11 +77,11 @@ Debe especificar un índice de base cero.
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**IPortableDeviceKeyCollection (interfaz)**](iportabledevicekeycollection.md)
+[**IPortableDeviceKeyCollection (Interfaz)**](iportabledevicekeycollection.md)
 </dt> </dl>
 
  

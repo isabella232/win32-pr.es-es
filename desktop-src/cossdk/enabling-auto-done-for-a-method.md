@@ -1,17 +1,17 @@
 ---
 description: Puede habilitar la característica auto-done para cualquier método expuesto por un componente para el que esté habilitada la activación JIT de COM+. Si la activación JIT está deshabilitada, la función auto-done no está disponible.
 ms.assetid: d699b85c-441f-4ea6-8d03-d1fa9a8a357f
-title: Habilitar Auto-Done para un método
+title: Habilitación de Auto-Done para un método
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58eec7a7b87284145ea880338bfe61db2aa1afca06f1f83ee811e4375a1e473c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0130e5f8b2fde6c6755ef4174892aa35be8a24cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119637695"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465691"
 ---
-# <a name="enabling-auto-done-for-a-method"></a>Habilitar Auto-Done para un método
+# <a name="enabling-auto-done-for-a-method"></a>Habilitación de Auto-Done para un método
 
 Puede habilitar la característica auto-done para cualquier método expuesto por un componente para el que esté habilitada la activación JIT de COM+. Si la activación JIT está deshabilitada, la función auto-done no está disponible.
 
@@ -30,7 +30,7 @@ Cuando se habilita la función auto-done, se cambia el comportamiento predetermi
 
 3.  Para habilitar el proceso automático, active la **casilla Desactivar automáticamente este objeto cuando este método devuelva** . Si la casilla no está disponible, primero debe habilitar la activación JIT para el componente. (Consulte[Habilitación de la activación JIT para un componente para](enabling-jit-activation-for-a-component.md) obtener instrucciones detalladas).
 
-4.  Haga clic en **Aceptar**.
+4.  Haga clic en **OK**.
 
 ## <a name="related-topics"></a>Temas relacionados
 

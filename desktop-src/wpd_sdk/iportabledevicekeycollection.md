@@ -14,18 +14,18 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 0f648020ddb82db2a619f75bb125e94c7679f8dd3061ac282fcc0f911a498a77
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: c246fabe7ced72a5aad6d30101df8035a159a923
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119839395"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466461"
 ---
 # <a name="iportabledevicekeycollection-interface"></a>IPortableDeviceKeyCollection (interfaz)
 
 La **interfaz IPortableDeviceKeyCollection** contiene una colección de **valores PROPERTYKEY.** Esta interfaz se puede recuperar de un método o, si se requiere un nuevo objeto, llamar a **CoCreate** con **CLSID \_ PortableDeviceKeyCollection**.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IPortableDeviceKeyCollection** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IPortableDeviceKeyCollection** también tiene estos tipos de miembros:
 

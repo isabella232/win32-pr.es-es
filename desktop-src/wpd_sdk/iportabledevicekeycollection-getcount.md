@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: d5cd44ebcb17df00f8af2dad5d92445346c3c929500a78fce28358c0cf39a2cd
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e867a171039a97cc0f83198f72eecaeb57ad3c16
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118194420"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466199"
 ---
 # <a name="iportabledevicekeycollectiongetcount-method"></a>IPortableDeviceKeyCollection::GetCount (método)
 
@@ -64,7 +64,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
 ## <a name="examples"></a>Ejemplos
 
-Para obtener un ejemplo de cómo usar este método, vea [Recuperar eventos de servicio admitidos.](retrieving-supported-events.md)
+Para obtener un ejemplo de cómo usar este método, vea [Recuperación de eventos de servicio admitidos.](retrieving-supported-events.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -77,17 +77,17 @@ Para obtener un ejemplo de cómo usar este método, vea [Recuperar eventos de se
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**IPortableDeviceKeyCollection (Interfaz)**](iportabledevicekeycollection.md)
+[**IPortableDeviceKeyCollection (interfaz)**](iportabledevicekeycollection.md)
 </dt> <dt>
 
 [Recuperación de eventos de servicio admitidos](retrieving-supported-events.md)
 </dt> <dt>
 
-[Recuperación de métodos de servicio admitidos](retrieving-supported-methods.md)
+[Recuperar métodos de servicio admitidos](retrieving-supported-methods.md)
 </dt> </dl>
 
  

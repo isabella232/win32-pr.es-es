@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 385a52811cc8deb7e1c221737bd97391122160de065ca28111132ee6c5e4a859
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 367c5a40af45fd573f7f5033b9be3b037079cb30
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119447765"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467085"
 ---
 # <a name="drm_http_status-enumeration-wmdrmsdkh"></a>DRM_HTTP_STATUS enumeración (Wmdrmsdk.h)
 
@@ -94,7 +94,7 @@ La estructura WM [**\_ INDIVIDUALIZE \_ STATUS**](drmwm-individualize-status.md)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

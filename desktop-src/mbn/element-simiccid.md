@@ -7,12 +7,12 @@ MSHAttr:
 title: SimIccID
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80d3ace6c4944bc8cd8a50fcde13db9f0962aa29
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.openlocfilehash: 89b7c679683d98e1a4039c90f1dfb37d4ff765e3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122479911"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465922"
 ---
 # <a name="span-idwwan_profile_v4element_simiccidspanmbnprofileextsimiccid-v4"></a><span id="WWAN_profile_v4.element_SimIccID"></span>MBNProfileExt \/ SimIccID (v4)
 
@@ -26,7 +26,7 @@ Número de identificación de SIM para dispositivos GSM. Para más información,
 [\<ModemDMConfigProfile\>](element-modemdmconfigprofile.md)  
 &nbsp;&nbsp;**\<SimIccID\>**
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` syntax
 <SimIccID>
@@ -60,7 +60,9 @@ Ninguno.
 ## <a name="requirements"></a>Requisitos
 
 
-| | | <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
+| Requisito | Value |
+|------------|----------|
+| <p>Espacio de nombres</p> | <p>https://www.microsoft.com/networking/WWAN/profile/v4</p> | 
 
 
  

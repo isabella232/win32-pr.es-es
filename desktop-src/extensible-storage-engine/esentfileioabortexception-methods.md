@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101687
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: b340c0450c67463c23dea73b07c35a5820129d7367b0d4913ced2546dd7d047d
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8eeb3fc823e7b0acb13e1e56edb769e676ae5848
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120020775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466033"
 ---
 # <a name="esentfileioabortexception-methods"></a>Métodos de EsentFileIOAbortException 
 

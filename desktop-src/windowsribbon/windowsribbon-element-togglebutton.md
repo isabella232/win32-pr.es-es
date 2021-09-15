@@ -14,11 +14,11 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: c92a5985b560738d7119a6c5de354ad703f58894
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122626971"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466241"
 ---
 # <a name="togglebutton-element"></a>Elemento ToggleButton
 
@@ -93,7 +93,7 @@ No hay elementos secundarios.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Opcional o obligatorio, según el elemento primario.
 
@@ -134,7 +134,7 @@ En esta sección del código se muestra **una declaración de elemento ToggleBut
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

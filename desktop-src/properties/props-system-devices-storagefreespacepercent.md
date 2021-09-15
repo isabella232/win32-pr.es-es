@@ -1,19 +1,19 @@
 ---
-description: Espacio de almacenamiento libre total en el dispositivo, como porcentaje.
+description: Espacio total de almacenamiento libre en el dispositivo, como porcentaje.
 ms.assetid: ede845c6-abd8-4bb1-b0d8-c1f3facffa41
 title: System.Devices.StorageFreeSpacePercent
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64c46cd5e8eef5c7daf90f27844555c1511e4a4604cfd27e0ed4b2829b30316d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: df717e488d1fabac811a2629a75160a2e7f81df9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119097064"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468505"
 ---
 # <a name="systemdevicesstoragefreespacepercent"></a>System.Devices.StorageFreeSpacePercent
 
-Espacio de almacenamiento libre total en el dispositivo, como porcentaje.
+Espacio total de almacenamiento libre en el dispositivo, como porcentaje.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -51,7 +51,7 @@ propertyDescription
             defineToken = STORAGESPACE_10_PERCENT
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

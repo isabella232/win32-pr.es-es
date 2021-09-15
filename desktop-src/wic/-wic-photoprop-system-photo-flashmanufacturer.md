@@ -4,18 +4,18 @@ ms.assetid: f62e85ec-2dc6-456b-a43b-7b76d162b608
 title: Directiva de metadatos de fotos de System.Photo.FlashManufacturer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0d81a57967e5b3f1139b0efabd85266bec80d10e06fb18251b0a6b9ef61a1e3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: aa1e785dfd00662acf065021a3c80de5c587586c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118964814"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466252"
 ---
 # <a name="systemphotoflashmanufacturer-photo-metadata-policy"></a>Directiva de metadatos de fotos de System.Photo.FlashManufacturer
 
 Directiva de metadatos de fotos para [la propiedad System.Photo.FlashManufacturer.](../properties/props-system-photo-flashmanufacturer.md)
 
-### <a name="pkey"></a>Pkey
+### <a name="pkey"></a>PKEY
 
 PKEY \_ Photo \_ FlashManufacturer
 
@@ -33,7 +33,7 @@ VT \_ LPWSTR
 
 ### <a name="input-type"></a>Tipo de entrada
 
-String.
+Cadena
 
 ### <a name="conflict-resolution-policy"></a>Directiva de resolución de conflictos
 
@@ -45,7 +45,7 @@ Si el archivo está en formato JPEG, el controlador usará la ruta de acceso sig
 
 
 
-| Pedido | Ruta de acceso                                  | Formato de disco | Formato de datos | Requerido |
+| Pedido | Path                                  | Formato de disco | Formato de datos | Obligatorio |
 |-------|---------------------------------------|-------------|-------------|----------|
 | 1     | /xmp/MicrosoftPhoto:FlashManufacturer | Unicode     |             | Sí      |
 
@@ -59,7 +59,7 @@ Si el archivo está en formato TIFF, el controlador usará el siguiente orden de
 
 
 
-| Pedido | Ruta de acceso                                      | Formato de disco | Formato de datos | Requerido |
+| Pedido | Path                                      | Formato de disco | Formato de datos | Obligatorio |
 |-------|-------------------------------------------|-------------|-------------|----------|
 | 1     | /ifd/xmp/MicrosoftPhoto:FlashManufacturer | Unicode     |             | Sí      |
 
@@ -67,7 +67,7 @@ Si el archivo está en formato TIFF, el controlador usará el siguiente orden de
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 ## <a name="related-topics"></a>Temas relacionados
 

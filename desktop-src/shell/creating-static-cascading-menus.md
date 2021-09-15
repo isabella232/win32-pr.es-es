@@ -9,16 +9,16 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 22fdc261012697affd99b5a1491ef5829fcc5329d5570ae4e3c37dcd111b457f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d812b4d3d2fb0754002cb37d72718e4fe861ce15
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119456335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468264"
 ---
 # <a name="creating-static-cascading-menus"></a>Crear menús estáticos en cascada
 
-En Windows 7 y versiones posteriores, la implementación del menú en cascada se admite a través de la configuración del Registro. Antes de Windows 7, la creación de menús en cascada solo era posible mediante la implementación de la [**interfaz IContextMenu.**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-icontextmenu) En Windows 7 y versiones posteriores, debe recurrir a las soluciones basadas en código del Modelo de objetos componentes (COM) solo cuando los métodos estáticos no son suficientes.
+En Windows 7 y versiones posteriores, la implementación del menú en cascada se admite a través de la configuración del Registro. Antes de Windows 7, la creación de menús en cascada solo era posible mediante la implementación de la [**interfaz IContextMenu.**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-icontextmenu) En Windows 7 y versiones posteriores, debe recurrir a las soluciones basadas en código del Modelo de objetos componentes (COM) solo cuando los métodos estáticos no sean suficientes.
 
 La siguiente captura de pantalla proporciona un ejemplo de un menú en cascada.
 

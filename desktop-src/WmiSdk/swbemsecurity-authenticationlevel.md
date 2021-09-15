@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 0cbb765241fabb86a14a5d74f7a839d5d81b017856b6da349b9ec04fd8535a4a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 63ae9e529de010e0a0ca7b8bc1da7dc8dc4891b3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118312719"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465491"
 ---
 # <a name="swbemsecurityauthenticationlevel-property"></a>Propiedad SWbemSecurity.AuthenticationLevel
 
@@ -30,7 +30,7 @@ Para obtener una explicación de esta sintaxis, vea [Document Conventions for th
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```VB
@@ -41,13 +41,13 @@ SWbemSecurity.AuthenticationLevel As Integer
 
 ## <a name="property-value"></a>Valor de propiedad
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La configuración authenticationLevel permite solicitar el nivel de autenticación y privacidad de DCOM que se usará a lo largo de una conexión. Configuración de autenticación sin autenticación a autenticación cifrada por paquete.
 
 
 
-| Valor        | Descripción                                                                                                                                                                                                                                                                                                            |
+| Value        | Descripción                                                                                                                                                                                                                                                                                                            |
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Ninguno         | No usa ninguna autenticación. Se omiten todas las opciones de seguridad.<br/>                                                                                                                                                                                                                                         |
 | Valor predeterminado      | Usa una negociación de seguridad estándar para seleccionar un nivel de autenticación. Esta es la configuración recomendada porque el cliente implicado en la transacción se negociará con el nivel de autenticación especificado por el servidor.<br/> DCOM no seleccionará el valor Ninguno durante una sesión de negociación.<br/> |
@@ -85,7 +85,7 @@ Set objinst = GetObject("WinMgmts:{impersonationLevel=impersonate,authentication
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |

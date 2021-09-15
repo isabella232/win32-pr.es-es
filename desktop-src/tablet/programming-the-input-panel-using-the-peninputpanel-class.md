@@ -4,22 +4,22 @@ ms.assetid: f83c7709-86dc-4c64-ad17-2ad660eb57b7
 title: Programar el panel de entrada mediante la clase PenInputPanel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d430b002fb967652aea046919ec7341a984f420f756fd936e8c68dbfce8c055
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 80e00d1cb10983255ab2e532aa08de6e9e6a0fb5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118449394"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467965"
 ---
 # <a name="programming-the-input-panel-using-the-peninputpanel-class"></a>Programar el panel de entrada mediante la clase PenInputPanel
 
-\[[**PenInputPanel**](peninputpanel-class.md) se ha reemplazado por [Microsoft.Ink.TextInput](/previous-versions/ms581554(v=vs.100)). Consulte Programar el [panel de entrada de texto](programming-the-text-input-panel.md).\]
+\[[**PenInputPanel**](peninputpanel-class.md) se ha reemplazado [por Microsoft.Ink.TextInput](/previous-versions/ms581554(v=vs.100)). Consulte Programar el [panel de entrada de texto](programming-the-text-input-panel.md).\]
 
 Descripción del uso del [**objeto PenInputPanel**](peninputpanel-class.md) para programar el panel de entrada de Tablet PC de nivel de sistema.
 
 ## <a name="input-panel-vs-the-peninputpanel-object"></a>Panel de entrada frente al objeto PenInputPanel
 
-En la versión 1.0 de Microsoft Windows XP Tablet PC Edition, el panel de entrada de Tablet PC de nivel de sistema proporciona un mecanismo universal para realizar la entrada de texto en la plataforma Windows, pero no proporciona acceso mediante programación. En Windows XP Tablet PC Edition Software Development Kit (SDK) versión 1.5 y posteriores, el objeto [**PenInputPanel**](peninputpanel-class.md) permite integrar las herramientas de entrada de texto directamente en las aplicaciones y proporcionar un nivel de control que no estaba disponible previamente. A partir de Windows XP Tablet PC Edition 2005, el Panel de entrada de nivel de sistema se ha actualizado para incluir la funcionalidad de entrada local proporcionada por el objeto **PenInputPanel** y mucho más.
+En la versión 1.0 de Microsoft Windows XP Tablet PC Edition, el panel de entrada de Tablet PC de nivel de sistema proporciona un mecanismo universal para realizar la entrada de texto en la plataforma Windows, pero no proporciona acceso mediante programación. En Windows XP Tablet PC Edition Software Development Kit (SDK) versión 1.5 y posteriores, el objeto [**PenInputPanel**](peninputpanel-class.md) permite integrar herramientas de entrada de texto directamente en las aplicaciones y proporcionar un nivel de control que no estaba disponible anteriormente. A partir de Windows XP Tablet PC Edition 2005, el panel de entrada de nivel de sistema se ha actualizado para incluir la funcionalidad de entrada local proporcionada por el objeto **PenInputPanel** y mucho más.
 
 En el gráfico siguiente se muestra el panel de entrada que se muestra sobre el [ejemplo de ejemplo de formulario de notificaciones](auto-claims-form-sample.md) automáticas.
 
@@ -59,7 +59,7 @@ theInputPanel.AutoShow = false;
 
 
 
-Para deshabilitar el Panel de entrada para varios controles en una sola aplicación, cree una instancia de un objeto [**PenInputPanel**](peninputpanel-class.md) para cada control y establezca la propiedad [**AutoShow**](/windows/win32/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_autoshow)en **False** para cada uno o cree una instancia de un único **PenInputPanel** y muévolo del control al control a medida que cambia el foco de entrada. Para obtener más información sobre estas dos técnicas, vea el [tema Ejemplo PenInputPanel.](peninputpanel-sample.md)
+Para deshabilitar el Panel de entrada para varios controles en una sola aplicación, cree una instancia de un objeto [**PenInputPanel**](peninputpanel-class.md) para cada control y establezca la propiedad [**AutoShow**](/windows/win32/api/peninputpanel/nf-peninputpanel-ipeninputpanel-get_autoshow)en **False** para cada uno o cree una instancia de un único **PenInputPanel** y muévolo del control al control a medida que cambia el foco de entrada. Para obtener más información sobre estas dos técnicas, vea el tema De ejemplo [PenInputPanel.](peninputpanel-sample.md)
 
 ### <a name="disabling-input-panel-through-the-registry"></a>Deshabilitar el panel de entrada a través del Registro
 
@@ -69,7 +69,7 @@ Establecer la clave del Registro en cero impide que la interfaz de usuario (UI) 
 
 `[HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\WindowsNT\TabletTIP\DisableInPlace]``"C:\Program Files\My App\MyApp.exe"=dword:00000000`
 
-Si sigue teniendo un problema en la aplicación después de deshabilitar la interfaz de usuario del Panel de entrada, puede que sea necesario deshabilitar el marco subyacente, que consulta la aplicación para la ubicación del caret. Por ejemplo, el Panel de entrada puede exponer un error en el código de seguimiento del carácter de referencia de la aplicación. Al desactivar la consulta de seguimiento del carácter de diálogo, también se impide que aparezca la interfaz de usuario del Panel de entrada. Para deshabilitar el marco de trabajo, establezca la `EnableCaretTracking` clave del Registro en cero. Busque esta clave en `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\AppCompatFlags\CaretTracking\` .
+Si sigue teniendo un problema en la aplicación después de deshabilitar la interfaz de usuario del Panel de entrada, puede que sea necesario deshabilitar el marco subyacente, que consulta la aplicación para la ubicación del caret. Por ejemplo, el Panel de entrada puede exponer un error en el código de seguimiento del carácter de referencia de la aplicación. Al desactivar la consulta de seguimiento del carácter de diálogo, también se impide que aparezca la interfaz de usuario del Panel de entrada. Para deshabilitar el marco, establezca la clave `EnableCaretTracking` del Registro en cero. Busque esta clave en `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\AppCompatFlags\CaretTracking\` .
 
 > [!Note]  
 > Las herramientas de accesibilidad y la tecnología de voz de Windows XP también usan este marco, por lo que deshabilitar la consulta también deshabilita estas características en la aplicación.
@@ -89,7 +89,7 @@ Estas API funcionan en un entorno de confianza parcial, como una página web, lo
 
 ## <a name="the-peninputpanel-object"></a>El objeto PenInputPanel
 
-En el resto de este tema se describe cómo usar el [**objeto PenInputPanel**](peninputpanel-class.md) en las aplicaciones habilitadas para Tablet PC. Más concretamente, este tema hace referencia al objeto **PenInputPanel** al analizar el objeto de programación, el panel de entrada del lápiz al hacer referencia al elemento de la interfaz de usuario y el panel de entrada de PC (o panel de entrada) cuando se hace referencia al panel de entrada global que se encuentra normalmente en el lado de la pantalla tablet PC.
+En el resto de este tema se describe cómo usar el [**objeto PenInputPanel**](peninputpanel-class.md) en las aplicaciones habilitadas para Tablet PC. Más concretamente, este tema hace referencia al objeto **PenInputPanel** al analizar el objeto de programación, el panel de entrada de lápiz al hacer referencia al elemento de la interfaz de usuario y el panel de entrada de PC (o panel de entrada) al hacer referencia al panel de entrada global que se encuentra normalmente en el lado de la pantalla de Tablet PC.
 
 En las secciones siguientes se describen el [**objeto PenInputPanel**](peninputpanel-class.md) y la interfaz de usuario.
 

@@ -1,22 +1,22 @@
 ---
 description: Esta sección contiene las clases e interfaces principales de la biblioteca COM de Tablet PC.
 ms.assetid: 8bdd9674-9ace-457d-a3bd-167c7710bafc
-title: Clases e interfaces de PC de tableta principal
+title: Clases e interfaces básicas de Tablet PC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7b91b1c0288ef8ea76af4ef195400140eebec9172596d2f631d7a239a323e98
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6dc1986da5f5337862df65db563b1f6172b38936
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119941224"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468011"
 ---
-# <a name="core-tablet-pc-classes-and-interfaces"></a>Clases e interfaces de PC de tableta principal
+# <a name="core-tablet-pc-classes-and-interfaces"></a>Clases e interfaces básicas de Tablet PC
 
 Esta sección contiene las clases e interfaces principales de la biblioteca COM de Tablet PC.
 
 -   [**IInkCursor (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursor)
--   [**IInkCursorButton (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursorbutton)
+-   [**IInkCursorButton (Interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursorbutton)
 -   [**IInkCursorButtons (Interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursorbuttons)
 -   [**IInkCursors (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcursors)
 -   [**IInkCustomStrokes (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkcustomstrokes)
@@ -26,7 +26,7 @@ Esta sección contiene las clases e interfaces principales de la biblioteca COM 
 -   [**IInkExtendedProperties (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkextendedproperties)
 -   [**IInkExtendedProperty (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkextendedproperty)
 -   [**IInkGesture (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkgesture)
--   [**IInkRecognitionAlternate (Interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionalternate)
+-   [**IInkRecognitionAlternate (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionalternate)
 -   [**IInkRecognitionAlternates (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionalternates)
 -   [**IInkRecognitionResult (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognitionresult)
 -   [**IInkRecognizer (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognizer)
@@ -34,7 +34,7 @@ Esta sección contiene las clases e interfaces principales de la biblioteca COM 
 -   [**IInkRecognizerContext2 (Interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkrecognizercontext2)
 -   [**IInkStrokeDisp (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkstrokedisp)
 -   [**IInkTablet (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet)
--   [**Interfaz IInkTablet2**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet2)
+-   [**IInkTablet2 (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet2)
 -   [**IInkTablet3**](/windows/win32/api/msinkaut/nn-msinkaut-iinktablet3)
 -   [**IInkWordList2 (interfaz)**](/windows/desktop/api/msinkaut/nn-msinkaut-iinkwordlist2)
 -   [**InkCollector (clase)**](inkcollector-class.md)
@@ -47,7 +47,7 @@ Esta sección contiene las clases e interfaces principales de la biblioteca COM 
 -   [**Colección InkRecognizers**](/previous-versions/windows/desktop/legacy/ms702438(v=vs.85))
 -   [**InkRectangle (clase)**](inkrectangle-class.md)
 -   [**InkRenderer (clase)**](inkrenderer-class.md)
--   [**InkStrokes Collection**](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85))
+-   [**Colección InkStrokes**](/previous-versions/windows/desktop/legacy/ms703293(v=vs.85))
 -   [**Colección InkTablets**](/previous-versions/windows/desktop/legacy/ms704832(v=vs.85))
 -   [**InkTransform (clase)**](inktransform-class.md)
 -   [**InkWordList (clase)**](inkwordlist-class.md)

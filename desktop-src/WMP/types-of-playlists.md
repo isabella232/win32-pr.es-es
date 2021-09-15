@@ -16,16 +16,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 1bb49eda25bd0804571732a81073a448048cd43d0597b03acf1bfa1554c88be2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f5fde41caeace1fe49018ab1f6f3e86384d377ca
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120001685"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465811"
 ---
 # <a name="types-of-playlists"></a>Tipos de listas de reproducción
 
-Windows Las listas de reproducción de metarchivo multimedia, a las que simplemente se hace referencia como listas de reproducción en este documento, tienen extensiones .lot, .wvx o .asx. Las listas de reproducción con estas extensiones se usan para acceder a Windows Media con extensiones de nombre de archivo .wma, .wmv y .asf, respectivamente.
+Windows Las listas de reproducción de metarchivos multimedia, a las que simplemente se hace referencia como listas de reproducción en este documento, tienen extensiones .lot, .wvx o .asx. Las listas de reproducción con estas extensiones se usan para acceder a Windows Media con extensiones de nombre de archivo .wma, .wmv y .asf, respectivamente.
 
 ## <a name="related-topics"></a>Temas relacionados
 

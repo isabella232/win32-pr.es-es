@@ -1,7 +1,7 @@
 ---
 description: Recupera el cuerpo de la entidad de respuesta como texto.
 ms.assetid: 87caf64f-be11-45c9-af1e-997a55c5e76e
-title: Propiedad IWinHttpRequest::ResponseText
+title: IWinHttpRequest::ResponseText, propiedad
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: e43169ee789a067b75444e5f19e5bb7985ce402efd4b89c08f049dbcad9a7049
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 93e0a9b17ba356f9ce6b038be114f5f2c9804eab
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118563193"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465448"
 ---
-# <a name="iwinhttprequestresponsetext-property"></a>Propiedad IWinHttpRequest::ResponseText
+# <a name="iwinhttprequestresponsetext-property"></a>IWinHttpRequest::ResponseText, propiedad
 
 La **propiedad ResponseText** recupera el cuerpo de la entidad de respuesta como texto.
 
@@ -53,13 +53,13 @@ strResponseText = WinHttpRequest.ResponseText
 
 ## <a name="error-codes"></a>Códigos de error
 
-El valor devuelto es **S \_ OK on** success o un valor de error en caso contrario.
+El valor devuelto es **S \_ OK si se** ejecuta correctamente o un valor de error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta propiedad solo se puede invocar después de llamar [**al**](iwinhttprequest-send.md) método Send.
+Esta propiedad solo se puede invocar después [**de**](iwinhttprequest-send.md) llamar al método Send.
 
-Cuando se usa esta propiedad en modo sincrónico, el límite del número de caracteres que devuelve es aproximadamente 2 169 895.
+Cuando se usa esta propiedad en modo sincrónico, el límite en el número de caracteres que devuelve es de aproximadamente 2 169 895.
 
 > [!Note]  
 > Para Windows XP y Windows 2000, consulte la sección [Requisitos](winhttp-start-page.md) en tiempo de ejecución de la página de inicio de WinHTTP.
@@ -179,18 +179,18 @@ WScript.Echo( WinHttpReq.ResponseText);
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>            |
+| Cliente mínimo compatible<br/> | Windows XP, Windows 2000 Professional solo con aplicaciones de escritorio SP3 \[\]<br/>            |
 | Servidor mínimo compatible<br/> | Windows Server 2003, Windows 2000 Server solo con aplicaciones de escritorio SP3 \[\]<br/>         |
 | Redistribuible<br/>          | WinHTTP 5.0 y Internet Explorer 5.01 o posterior en Windows XP y Windows 2000.<br/> |
-| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Winhttp.lib</dt> </dl>     |
 | Archivo DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
@@ -206,7 +206,7 @@ WScript.Echo( WinHttpReq.ResponseText);
 [**ResponseStream**](iwinhttprequest-responsestream.md)
 </dt> <dt>
 
-[Versiones de WinHTTP](winhttp-versions.md)
+[Versiones winHTTP](winhttp-versions.md)
 </dt> </dl>
 
  

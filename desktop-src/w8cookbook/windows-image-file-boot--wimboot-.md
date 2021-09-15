@@ -4,12 +4,12 @@ description: Windows Arranque de archivo de imagen (WimBoot)
 ms.assetid: 1C4EFC42-6698-4981-8C55-D1DFC6309F31
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 687a230188c3b13317d8176d8209cf5e38026c3b6f161be7ffe0c2ed760976ee
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d9f14ea506226e2c16d771ecec52fa31a8c871b4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119932125"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467135"
 ---
 # <a name="windows-image-file-boot-wimboot"></a>Windows Arranque de archivo de imagen (WimBoot)
 

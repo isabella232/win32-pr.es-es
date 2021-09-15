@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 8f5507755a6929cee9811f1f935e93b347aed9ebe57f2e0237365cdfbbf4b109
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 8d31d05e9eef889d9018e4806cf4c882dba3060e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120090325"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468173"
 ---
 # <a name="ishelldispatch3addtorecent-method"></a>Método IShellDispatch3.AddToRecent
 
@@ -58,7 +58,7 @@ Tipo: **Variant**
 
 Cadena **que** contiene la ruta de acceso del archivo que se agregará a la lista de documentos usados recientemente.
 
-**Windows Vista:** establezca este parámetro en **NULL para** borrar la carpeta de documentos recientes.
+**Windows Vista:** establezca este parámetro en **null para** borrar la carpeta de documentos recientes.
 
 </dd> <dt>
 
@@ -83,7 +83,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="examples"></a>Ejemplos
 
-En los ejemplos siguientes se muestra el uso **de AddToRecent** para JScript, VBScript y Visual Basic.
+En los ejemplos siguientes se muestra el uso de **AddToRecent** para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -178,12 +178,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |
 
 

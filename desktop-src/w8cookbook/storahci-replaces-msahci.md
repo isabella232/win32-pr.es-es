@@ -4,12 +4,12 @@ description: StorAHCI reemplaza a MSAHCI
 ms.assetid: 9C6FAFA7-A6B3-4D3A-94EE-B53626DBF183
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6affffe41dd00c009ebb7bebf508dac1b63bec673c17783f594d22969822e542
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: b7a41a9b113ba33c35e3a1a1c4b2ea5dad3054c8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119932145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466268"
 ---
 # <a name="storahci-replaces-msahci"></a>StorAHCI reemplaza a MSAHCI
 
@@ -25,7 +25,7 @@ StorAHCI, un minipuerto storport, admite controladores de interfaz avanzada de c
 
 ## <a name="manifestation"></a>Manifestación
 
-No debe haber ningún cambio en la funcionalidad o el rendimiento; este controlador admite todos los mismos dispositivos que admite MSAHCI.
+No debe haber ningún cambio en la funcionalidad ni en el rendimiento; este controlador admite todos los mismos dispositivos que admite MSAHCI.
 
 Este cambio es transparente para el usuario.
 

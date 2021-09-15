@@ -4,12 +4,12 @@ description: Documentación de referencia sobre las claves de propiedad para el 
 ms.assetid: b1c3eead-d200-46b4-92fc-47bcd5e28542
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab0202cf62c15673e486c5b6df76441067d1be8d934e19bf944c60d69b6d6a6c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ab867bcc483edd51b68b5bd6c0716ff74ba7d634
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119932495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466520"
 ---
 # <a name="color-picker-properties"></a>Selector de colores propiedades
 

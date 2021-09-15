@@ -10,11 +10,11 @@ keywords:
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d9561897fb68f53aaa4ba33e433cf6d6120ec315
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122474921"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465837"
 ---
 # <a name="trackcsv"></a>track.csv
 
@@ -25,7 +25,7 @@ La columna Formato de la tabla siguiente describe la forma en que se formatea ca
 
 
 
-| Campo | Requerido | Formato | Descripción | 
+| Campo | Obligatorio | Formato | Descripción | 
 |-------|----------|--------|-------------|
 | Trackid | Sí | Entero no negativo. Ejemplo: 32789<br /> | Identificador único proporcionado por el proveedor de contenido. Debe ser menor que 2^32.Sugerencia de rendimiento: si los identificaciónes asignados a las pistas del mismo álbum se numeran consecutivamente, la compresión del catálogo será más eficaz. Sin embargo, no se requiere la numeración consecutiva de pistas de álbum.<br /> | 
 | TrackTitle | Sí | Cadena Unicode. Ejemplo: Blues de Raygun Aldes | Nombre de la pista. | 
@@ -37,11 +37,11 @@ La columna Formato de la tabla siguiente describe la forma en que se formatea ca
 | HasPreviewClip | Sí | booleano. Puede ser 0 o 1. Ejemplo: 0<br /> | Indica si la pista tiene un clip de vista previa. | 
 | HasVideoClip | Sí | booleano. Puede ser 0 o 1. Ejemplo: 0<br /> | Indica si la pista tiene un clip de vídeo. | 
 | ParentalRating | Sí | Enumeración. Puede ser N, E o C.Ejemplo: N<br /> | Indica la clasificación de asesoramiento parental. Los valores N, E y C son normales, explícitos y limpios. | 
-| LinkedAlbumID | Sí | Entero no negativo. Debe ser el identificador de un álbum. Ejemplo: 32423 | Identificador del álbum que contiene esta pista.<blockquote>[!Note]<br />Cada pista debe pertenecer a un álbum. Es decir, para cada pista, el campo LinkedAlbumID debe ser igual a uno de los id. de álbum del album.csv archivo.</blockquote><br /> | 
+| LinkedAlbumID | Sí | Entero no negativo. Debe ser el identificador de un álbum. Ejemplo: 32423 | Identificador del álbum que contiene esta pista.<blockquote>[!Note]<br />Cada pista debe pertenecer a un álbum. Es decir, para cada pista, el campo LinkedAlbumID debe ser igual a uno de los id. del album.csv disco.</blockquote><br /> | 
 | LinkedTrackArtist_ArtistIDs | Sí | Lista de enteros. La lista contiene los IDs de los intérpretes, separados por punto y coma. Ejemplo: 41322;12321; 82123; | Lista de los IDs correspondientes a los intérpretes colaboradores. | 
 | Composer | No | Cadena Unicode. Ejemplo: Fuenía | Compositor de la pista. Si el género de la pista no tiene establecido el campo HasComposer, se omitirá el valor Composer campo. Normalmente solo se usa para pistas clásicas o de jazz. | 
 | Popularidad | Sí | Entero no negativo o Float.Example: 1252.6<br /> | Determina la posición de la pista en la lista cuando se ordena por popularidad. Un número menor indica una mayor popularidad. | 
-| StarRating | No | Float.Example: 4.21<br /> | La clasificación por estrellas se redondeará a la estrella de 1/4 más cercana Reproductor de Windows Media antes de mostrarse en la Reproductor de Windows Media usuario. | 
+| StarRating | No | Float.Example: 4.21<br /> | La clasificación de estrella se redondeará a la estrella 1/4 más cercana Reproductor de Windows Media antes de mostrarse en la Reproductor de Windows Media usuario. | 
 
 
 

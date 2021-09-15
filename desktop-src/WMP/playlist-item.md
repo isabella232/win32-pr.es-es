@@ -3,9 +3,9 @@ title: Método Playlist.item
 description: El método item recupera el elemento multimedia en el índice especificado.
 ms.assetid: a564f6db-ede4-4c85-87ca-0e2539d914c2
 keywords:
-- item method Reproductor de Windows Media
-- item method Reproductor de Windows Media , Playlist (Clase)
-- Clase de lista de reproducción Reproductor de Windows Media , método de elemento
+- método item Reproductor de Windows Media
+- método item Reproductor de Windows Media , clase Playlist
+- Clase playlist Reproductor de Windows Media método , item
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72987feb8438edc50c28bb6349b44c4f43736549c92a293794a6bc728ed7853a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 79c69386871aeec33dbc36a066ce3f75e80d7514
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119862235"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466171"
 ---
 # <a name="playlistitem-method"></a>Método Playlist.item
 
@@ -51,15 +51,15 @@ retVal = Playlist.item(
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método devuelve un **objeto Media.**
+Este método devuelve un **objeto** Media.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca](library-access.md).
+Para usar este método, se requiere acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo JScript siguiente se usa *Lista de reproducción*. **elemento para** recuperar un elemento multimedia de la lista de reproducción actual en función de una selección de usuario. Se creó un elemento SELECT HTML con el nombre "weblist" y se rellenaron con los títulos de la lista de reproducción actual. El **objeto Player** se creó con id. = "Player".
+En el ejemplo JScript siguiente se usa *Lista de reproducción*. **elemento para** recuperar un elemento multimedia de la lista de reproducción actual en función de una selección de usuario. Se creó un elemento HTML SELECT con el nombre "weblist" y se rellena con los títulos de la lista de reproducción actual. El **objeto Player** se creó con id. = "Player".
 
 
 ```JScript

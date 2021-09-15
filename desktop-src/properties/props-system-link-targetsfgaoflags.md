@@ -1,19 +1,19 @@
 ---
-description: Las marcas IShellFolder::GetAttributesOf para el destino de un vínculo, con los atributos \_ SFGAO PKEYSFGAOMASK enmascarados.
+description: Las marcas IShellFolder::GetAttributesOf para el destino de un vínculo, con atributos \_ SFGAO PKEYSFGAOMASK enmascarados.
 ms.assetid: ac17754c-efd5-4894-8013-dd67a5d2e486
 title: System.Link.TargetSFGAOFlags
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 46e67f053441b0533f736adfae7280a2b046708babb72c68abfd4bd6fce24a15
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e5e9b35a61b890d608394ecffbcad3bb50d36b3a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118231183"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468472"
 ---
 # <a name="systemlinktargetsfgaoflags"></a>System.Link.TargetSFGAOFlags
 
-Las [**marcas IShellFolder::GetAttributesOf**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getattributesof) para el destino de un vínculo, con los atributos \_ SFGAO PKEYSFGAOMASK enmascarados.
+Las [**marcas IShellFolder::GetAttributesOf**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-getattributesof) para el destino de un vínculo, con atributos \_ SFGAO PKEYSFGAOMASK enmascarados.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -46,7 +46,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

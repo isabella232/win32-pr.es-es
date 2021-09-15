@@ -1,22 +1,22 @@
 ---
-description: WMI tiene extensiones o proveedores que permiten acceder a otras características del sistema operativo, como Active Directory, ODBC y SNMP. También puede acceder a los datos de los controladores de dispositivos.
+description: WMI tiene extensiones o proveedores que le permiten acceder a otras características del sistema operativo, como Active Directory, ODBC y SNMP. También puede acceder a los datos de los controladores de dispositivo.
 ms.assetid: 63ca64e0-1731-47bb-8ed0-51fcdb114863
 ms.tgt_platform: multiple
 title: Acceso a otras características del sistema operativo con WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7828597d653153118544093c6abb4c005fc537e775ec1ed8cbace654f3688fb
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 1ac4c639702c0456ed2e0560b703228ed8552e03
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119374885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465781"
 ---
 # <a name="accessing-other-operating-system-features-with-wmi"></a>Acceso a otras características del sistema operativo con WMI
 
-WMI tiene extensiones o proveedores que permiten acceder a otras características del sistema operativo, como Active Directory, ODBC y SNMP. También puede acceder a los datos de los controladores de dispositivos.
+WMI tiene extensiones o proveedores que le permiten acceder a otras características del sistema operativo, como Active Directory, ODBC y SNMP. También puede acceder a los datos de los controladores de dispositivo.
 
-Las extensiones WMI no están disponibles en todos los sistemas operativos. Para obtener más información, vea [Disponibilidad del sistema operativo de componentes WMI.](operating-system-availability-of-wmi-components.md)
+Las extensiones WMI no están disponibles en todos los sistemas operativos. Para obtener más información, [vea Disponibilidad del sistema operativo de componentes WMI](operating-system-availability-of-wmi-components.md).
 
 En los temas siguientes se proporciona información sobre el acceso a otras características del sistema operativo:
 

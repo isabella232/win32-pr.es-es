@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102228
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5ea48e500665d5a7976b4bdee6e324414d260b0b70732494468b6797bcca8661
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 48e635d1a66f282b8b88ef5a11b62d8c43164122
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119782725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467260"
 ---
 # <a name="esentlogwritefailexception-properties"></a>Propiedades de EsentLogWriteFailException
 
@@ -34,7 +34,7 @@ El [tipo EsentLogWriteFailException](./esentlogwritefailexception-class.md) expo
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentLogWriteFailException](./esentlogwritefailexception-class.md) expo
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

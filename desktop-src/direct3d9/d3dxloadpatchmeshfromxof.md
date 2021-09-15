@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8bfdf0faf0a9a8d8d32d38899cdd666d7c4a5d3910119ac36cbca2bf8bb33430
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: aa2e75e34927d0bb3c68445b994ee0911adb08f7
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119564835"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465437"
 ---
 # <a name="d3dxloadpatchmeshfromxof-function"></a>Función D3DXLoadPatchMeshFromXof
 
@@ -60,7 +60,7 @@ Puntero a una [**interfaz ID3DXFileData,**](id3dxfiledata.md) que representa el 
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinación de una o varias [**marcas D3DXMESH,**](./d3dxmesh.md) especificando opciones de creación para la malla.
+Combinación de una o varias [**marcas D3DXMESH,**](./d3dxmesh.md) especificando las opciones de creación para la malla.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Puntero al dispositivo desde el que se crea la malla.
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Matriz de materiales contenida en la malla. Cada material se indexa mediante una [**interfaz ID3DXBuffer.**](id3dxbuffer.md)
+Matriz de materiales contenidos en la malla. Cada material se indexa mediante una [**interfaz ID3DXBuffer.**](id3dxbuffer.md)
 
 </dd> <dt>
 
@@ -87,7 +87,7 @@ Matriz de materiales contenida en la malla. Cada material se indexa mediante una
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Puntero a un búfer que contiene una matriz de instancias de efecto, una por grupo de atributos en la malla devuelta. Una instancia de efecto es una instancia determinada de información de estado que se usa para inicializar un efecto. Vea [**D3DXEFFECTINSTANCE.**](d3dxeffectinstance.md) Para obtener más información sobre el acceso al búfer, [**vea ID3DXBuffer**](id3dxbuffer.md).
+Puntero a un búfer que contiene una matriz de instancias de efecto, una por grupo de atributos en la malla devuelta. Una instancia de efecto es una instancia determinada de información de estado que se usa para inicializar un efecto. Vea [**D3DXEFFECTINSTANCE**](d3dxeffectinstance.md). Para obtener más información sobre el acceso al búfer, [**vea ID3DXBuffer**](id3dxbuffer.md).
 
 </dd> <dt>
 
@@ -115,11 +115,11 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si la función se realiza correctamente, el valor devuelto es D3D \_ OK. Si se produce un error en la función, el valor devuelto puede ser uno de los siguientes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-En el caso de los archivos de malla que no contienen información de instancia de efecto, las instancias de efecto predeterminadas se generarán a partir de la información de material del archivo .x. Una instancia de efecto predeterminada tendrá valores predeterminados que corresponden a los miembros de la [**estructura D3DMATERIAL9.**](d3dmaterial9.md)
+Para los archivos de malla que no contienen información de instancia de efecto, las instancias de efecto predeterminadas se generarán a partir de la información de material del archivo .x. Una instancia de efecto predeterminada tendrá valores predeterminados que corresponden a los miembros de la [**estructura D3DMATERIAL9.**](d3dmaterial9.md)
 
-El nombre de textura predeterminado también se rellena, pero se controla de forma diferente. El nombre será , que corresponde a una variable de efecto por el nombre Texture0@Name de "Texture0" con una anotación denominada "Name". Contendrá el nombre del archivo de cadena para la textura.
+El nombre de textura predeterminado también se rellena, pero se controla de forma diferente. El nombre será , que corresponde a una variable de efecto por el nombre Texture0@Name de "Texture0" con una anotación denominada "Name". Contendrá el nombre de archivo de cadena para la textura.
 
 ## <a name="requirements"></a>Requisitos
 

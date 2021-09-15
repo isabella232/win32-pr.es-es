@@ -1,19 +1,19 @@
 ---
-description: A Windows Vista, la vista Panel de control categoría proporciona vínculos de tarea debajo del icono de cada elemento de Panel de control como se muestra aquí.
+description: A Windows Vista, la vista Panel de control categoría proporciona vínculos de tarea debajo de cada icono Panel de control elemento, como se muestra aquí.
 ms.assetid: 54a03536-6fe6-4304-a555-58e5bca128b9
 title: Crear vínculos de tareas que se pueden buscar para un elemento Panel de control búsqueda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7be43d98ea6c0f1cdf2d9c399aa1377d6b7b46a36fed10b3d6a4796ce49f92d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6b4e98e8a6e07f84e8012b58cefe8e0d249fc069
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119943405"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468271"
 ---
 # <a name="creating-searchable-task-links-for-a-control-panel-item"></a>Crear vínculos de tareas que se pueden buscar para un elemento Panel de control búsqueda
 
-A Windows Vista, la vista Panel de control categoría proporciona vínculos de tarea debajo del icono de cada elemento de Panel de control como se muestra aquí.
+A Windows Vista, la vista Panel de control categoría proporciona vínculos de tarea debajo de cada icono Panel de control elemento, como se muestra aquí.
 
 ![vínculos de tareas en la página de categorías de mantenimiento y sistema](images/controlpaneltasklinks.png)
 
@@ -37,7 +37,7 @@ Los mejores vínculos de tareas sirven para tres propósitos:
 
 1.  Proporcione un acceso directo a la funcionalidad del Panel de control elemento.
 2.  Proporcione palabras clave para que los usuarios puedan buscar con su propio lenguaje. Es posible que un usuario quiera escribir "compactación" porque conoce el término técnico. Un usuario puede escribir "DB too big" o "database filesize". Agregar palabras clave adecuadas a la tarea significa que los usuarios pueden encontrar su Panel de control elemento.
-3.  Proporcione sugerencias sobre lo que hace Panel de control elemento. Cuando un usuario ve los vínculos debajo del icono de un elemento de Panel de control, puede obtener más información sobre para qué se usa el elemento de Panel de control que el nombre y el icono que solo puede proporcionar.
+3.  Proporcione sugerencias sobre lo que hace Panel de control elemento. Cuando un usuario ve los vínculos debajo del icono de un elemento de Panel de control, puede obtener más información sobre para qué se usa el elemento Panel de control de lo que solo el nombre y el icono pueden proporcionar.
 
 Los vínculos de tareas deben centrarse en el usuario final, no en la tecnología ni en las características. Por ejemplo, "Habilitar compactación de base de datos" sería una redacción mal escrita porque es una jerga técnica desconocida para la mayoría de los usuarios. "Hacer que mi archivo de base de datos sea más pequeño" es mejor porque menciona el objetivo final real del usuario en lugar del mecanismo para llegar allí. El objetivo no es simplificar en exceso, sino decir la tarea en términos de lo que el usuario quiere lograr.
 
@@ -112,7 +112,7 @@ Los vínculos de tareas se definen en un archivo XML. En esta sección se propor
 
 
 > [!Note]  
-> A partir de Windows 7, un elemento Panel de control se puede identificar por su nombre canónico en lugar de por su nombre ejecutable: el elemento **>sh:controlpanel** de<se puede usar en lugar de **<sh:command>**. El **<elemento sh:controlpanel**>también proporciona un atributo para especificar la página del elemento en el que debe abrirse. A continuación se muestra un ejemplo del **<elemento sh:controlpanel>** siguiente:
+> A partir de Windows 7, un elemento Panel de control se puede identificar por su nombre canónico en lugar de por su nombre ejecutable: el elemento **>sh:controlpanel** de<se puede usar en lugar de **<sh:command>**. El **<elemento sh:controlpanel>** también proporciona un atributo para especificar la página del elemento en el que debe abrirse. A continuación se muestra un ejemplo del **<sh:controlpanel>** elemento:
 
  
 

@@ -4,30 +4,30 @@ description: Documentación de referencia sobre las claves de propiedad para el 
 ms.assetid: fe0f4255-c429-4821-a180-38a3bdbf0623
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9404adb6c51e0a175297ba0987a31a2e06d0da13913bf789935b3567e533401b
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 987b2bfda06a56df0cfe31eed9a3bc2f22241dc0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120056275"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466519"
 ---
 # <a name="font-control-properties"></a>Propiedades del control de fuentes
 
-Documentación de referencia sobre las claves de propiedad para el control de fuentes del marco [de la](windowsribbon-controls-fontcontrol.md)cinta de opciones .
+Documentación de referencia sobre las claves de propiedad para el control de fuentes del marco de la cinta [de opciones](windowsribbon-controls-fontcontrol.md).
 
 
 
 | Tema                                                                                                                               | Contenido                                                                          |
 |-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [FontProperties de PKEY de interfaz \_ \_ de usuario](windowsribbon-reference-properties-uipkey-fontproperties.md)                                            | Identifica la propiedad \_ FontProperties de PKEY de la \_ interfaz de usuario.<br/>                      |
+| [FontProperties de PKEY de la \_ interfaz de \_ usuario](windowsribbon-reference-properties-uipkey-fontproperties.md)                                            | Identifica la propiedad \_ FontProperties de PKEY de la \_ interfaz de usuario.<br/>                      |
 | [UI \_ PKEY \_ FontProperties \_ BackgroundColor](/windows/desktop/windowsribbon/windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolor) | Identifica la propiedad \_ \_ BackgroundColor PKEY FontProperties \_ de la interfaz de usuario.<br/>     |
 | [UI \_ PKEY \_ FontProperties \_ BackgroundColorType](windowsribbon-reference-properties-uipkey-fontproperties-backgroundcolortype.md)   | Identifica la propiedad \_ \_ BackgroundColorType de PKEY de la interfaz \_ de usuario.<br/> |
 | [UI \_ PKEY \_ FontProperties \_ Bold](windowsribbon-reference-properties-uipkey-fontproperties-bold.md)                                 | Identifica la propiedad \_ FontProperties Bold de PKEY de la \_ interfaz de \_ usuario.<br/>                |
 | [UI \_ PKEY \_ FontProperties \_ ChangedProperties](windowsribbon-reference-properties-uipkey-fontproperties-changedproperties.md)       | Identifica la propiedad \_ FontProperties ChangedProperties de la interfaz de usuario \_ PKEY. \_<br/>   |
 | [UI \_ PKEY \_ FontProperties \_ DeltaSize](windowsribbon-reference-properties-uipkey-fontproperties-deltasize.md)                       | Identifica la propiedad \_ \_ DeltaSize de PKEY FontProperties \_ de la interfaz de usuario.<br/>           |
 | [Familia \_ FontProperties de PKEY de interfaz \_ de \_ usuario](windowsribbon-reference-properties-uipkey-fontproperties-family.md)                             | Identifica la propiedad de familia \_ FontProperties de PKEY \_ de la interfaz de \_ usuario.<br/>              |
-| [UI \_ PKEY \_ FontProperties \_ ForegroundColor](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolor.md)           | Identifica la propiedad \_ ForegroundColor PKEY FontProperties de la \_ interfaz de \_ usuario.<br/>     |
-| [UI \_ PKEY \_ FontProperties \_ ForegroundColorType](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolortype.md)   | Identifica la propiedad \_ \_ ForegroundColorType de PKEY de la interfaz \_ de usuario.<br/> |
+| [UI \_ PKEY \_ FontProperties \_ ForegroundColor](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolor.md)           | Identifica la propiedad \_ \_ ForegroundColor PKEY FontProperties de la \_ interfaz de usuario.<br/>     |
+| [UI \_ PKEY \_ FontProperties \_ ForegroundColorType](windowsribbon-reference-properties-uipkey-fontproperties-foregroundcolortype.md)   | Identifica la propiedad \_ \_ ForegroundColorType de PKEY de la interfaz de \_ usuario.<br/> |
 | [UI \_ PKEY \_ FontProperties \_ Italic](windowsribbon-reference-properties-uipkey-fontproperties-italic.md)                             | Identifica la propiedad \_ FontProperties Italic de PKEY de la \_ interfaz de \_ usuario.<br/>              |
 | [Tamaño \_ de fuente PKEY de la interfaz de \_ \_ usuarioPropiedades](windowsribbon-reference-properties-uipkey-fontproperties-size.md)                                 | Identifica la propiedad \_ FontProperties Size de PKEY \_ de la interfaz de \_ usuario.<br/>                |
 | [\_Tachado de \_ FontProperties de PKEY de la \_ interfaz de usuario](windowsribbon-reference-properties-uipkey-fontproperties-strikethrough.md)               | Identifica la propiedad \_ \_ Tachado PKEY FontProperties de la \_ interfaz de usuario.<br/>       |

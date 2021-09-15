@@ -10,11 +10,11 @@ api_location: ''
 topic_type:
 - kbArticle
 ms.openlocfilehash: 90937e4aa3c93c14957ec0db7f081c1cb598989e
-ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122481971"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468035"
 ---
 # <a name="shell-path-handling-functions"></a>Funciones de control de rutas de acceso de shell
 
@@ -78,7 +78,7 @@ En esta sección se describen las funciones Windows control de rutas de acceso d
 | <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathrenameextensiona"><strong>PathRenameExtension</strong></a><br /> | Reemplaza la extensión de un nombre de archivo por una nueva extensión. Si el nombre de archivo no contiene una extensión, la extensión se adjuntará al final de la cadena.<br /><blockquote>[!Note]<br />El uso incorrecto de esta función puede provocar una saturación del búfer. Se recomienda usar la función <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchrenameextension"><strong>PathCchRenameExtension</strong></a> más segura en su lugar.</blockquote><br /> | 
 | <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathsearchandqualifya"><strong>PathSearchAndQualify</strong></a><br /> | Determina si una ruta de acceso determinada tiene el formato correcto y está completa.<br /> | 
 | <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathsetdlgitempatha"><strong>PathSetDlgItemPath</strong></a><br /> | Establece el texto de un control secundario en una ventana o cuadro de diálogo, mediante <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathcompactpatha"><strong>PathCompactPath</strong></a> para asegurarse de que la ruta de acceso se ajuste al control.<br /> | 
-| <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathskiproota"><strong>PathSkipRoot</strong></a><br /> | Recupera un puntero al primer carácter de una ruta de acceso después de la letra de unidad o los elementos de la ruta de acceso un servidor/recurso compartido UNC.<br /> | 
+| <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathskiproota"><strong>PathSkipRoot</strong></a><br /> | Recupera un puntero al primer carácter de una ruta de acceso después de la letra de unidad o los elementos de ruta de acceso un servidor/recurso compartido UNC.<br /> | 
 | <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathstrippatha"><strong>PathStripPath</strong></a><br /> | Quita la parte de la ruta de acceso de un archivo y una ruta de acceso completos.<br /> | 
 | <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathstriptoroota"><strong>PathStripToRoot</strong></a><br /> | Quita todos los elementos de archivos y directorios de una ruta de acceso, excepto la información raíz.<br /><blockquote>[!Note]<br />El uso incorrecto de esta función puede provocar una saturación del búfer. Se recomienda el uso de la función <a href="/windows/desktop/api/pathcch/nf-pathcch-pathcchstriptoroot"><strong>PathCchStripToRoot</strong></a> más segura en su lugar.</blockquote><br /> | 
 | <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-pathundecoratea"><strong>PathUndecorate</strong></a><br /> | Quita la decoración de una cadena de ruta de acceso.<br /> | 
@@ -96,7 +96,7 @@ En esta sección se describen las funciones Windows control de rutas de acceso d
 | <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlgetlocationa"><strong>UrlGetLocation</strong></a><br /> | Recupera la ubicación de una dirección URL.<br /> | 
 | <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlgetparta"><strong>UrlGetPart</strong></a><br /> | Acepta una cadena de dirección URL y devuelve una parte especificada de esa dirección URL.<br /> | 
 | <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlhasha"><strong>UrlHash</strong></a><br /> | Aplica un algoritmo hash a una cadena de dirección URL.<br /> | 
-| <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlisa"><strong>Direcciones URL</strong></a><br /> | Comprueba si una dirección URL es un tipo especificado.<br /> | 
+| <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlisa"><strong>UrlIs</strong></a><br /> | Comprueba si una dirección URL es un tipo especificado.<br /> | 
 | <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlisfileurla"><strong>UrlIsFileUrl</strong></a><br /> | Prueba una dirección URL para determinar si es una dirección URL de archivo.<br /> | 
 | <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlisnohistorya"><strong>UrlIsNoHistory</strong></a><br /> | Devuelve si una dirección URL es una dirección URL que los exploradores normalmente no incluyen en el historial de navegación.<br /> | 
 | <a href="/windows/desktop/api/Shlwapi/nf-shlwapi-urlisopaquea"><strong>UrlIsOpaque</strong></a><br /> | Devuelve si una dirección URL es opaca.<br /> | 

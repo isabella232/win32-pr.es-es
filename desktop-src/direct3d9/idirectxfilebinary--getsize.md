@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 1af59f6a32d163275df02d1469ba4777bf5c5152535c2df52fcf7d7c40218e2e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 664e2bf026df6d9e4b5bc07067ce1ce7fe7669db
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119846945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465749"
 ---
-# <a name="idirectxfilebinarygetsize-method"></a>IDirectXFileBinary::GetSize (Método)
+# <a name="idirectxfilebinarygetsize-method"></a>IDirectXFileBinary::GetSize (método)
 
 Recupera el tamaño de los datos binarios. En desuso.
 
@@ -53,7 +53,7 @@ Puntero al tamaño devuelto de los datos binarios, en bytes.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser DXFILEERR \_ BADVALUE.
+Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método , el valor devuelto puede ser DXFILEERR \_ BADVALUE.
 
 ## <a name="requirements"></a>Requisitos
 

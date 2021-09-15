@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: e246a1ada6cdf9935ae2ce9f8ca2a0ae25ced8ea08db8e98fef59a8fbc66ef40
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ed670ed4af3882e38faf2699429c3d1c076f3056
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117679479"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468221"
 ---
 # <a name="folderitemsitem-method"></a>Método FolderItems.Item
 
@@ -39,7 +39,7 @@ FolderItems.Item(
 
 <dl> <dt>
 
-*iIndex* \[ in, opcional\]
+*iIndex* \[ en, opcional\]
 </dt> <dd>
 
 Tipo: **Variant**
@@ -54,7 +54,7 @@ Referencia de objeto al [**objeto FolderItem.**](folderitem.md)
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se **usa Item** para recuperar el [**objeto FolderItem**](folderitem.md) que representa el Notepad.exe que se encuentra en Windows carpeta. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
+En el ejemplo siguiente se **usa Item** para recuperar el [**objeto FolderItem**](folderitem.md) que representa el Notepad.exe que se encuentra en la Windows carpeta. Se muestra un uso adecuado para JScript, VBScript y Visual Basic.
 
 JScript:
 
@@ -164,12 +164,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional, Windows aplicaciones de escritorio XP \[\]<br/>                                         |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                           |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 4.71 o posterior)</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ ms.assetid: 08371790-b23b-4d2e-9aea-b2c95c854401
 title: Implementación de IWICDevelopRaw
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e68a78705fcfb53651d1099d01d17d9ddff554df9632a5cc322db229bc04d38d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 683dc2baf0496694943b7640d3f3ed521dc477a6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118965014"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467934"
 ---
 # <a name="implementing-iwicdevelopraw"></a>Implementación de IWICDevelopRaw
 
@@ -21,7 +21,7 @@ Además, algunos métodos e interfaces que son opcionales para otros códecs se 
 
 Configuración establecer mediante los métodos [**IWICDevelopRaw**](/windows/desktop/api/Wincodec/nn-wincodec-iwicdevelopraw) debe conservarse mediante el códec de forma coherente con la forma en que se conservan otros metadatos, pero nunca debe sobrescribir la configuración original de "Como toma". Al conservar los metadatos e implementar [**LoadParameterSet**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-loadparameterset) y [**GetCurrentParameterSet,**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getcurrentparameterset)permite que las aplicaciones de procesamiento sin procesar recuperen y apliquen la configuración de procesamiento entre sesiones.
 
-Un propósito principal de la interfaz [**IWICDevelopRaw**](/windows/desktop/api/Wincodec/nn-wincodec-iwicdevelopraw) es permitir que los desarrolladores de aplicaciones compilen una interfaz de usuario para ajustar los parámetros sin procesar que funcionarán de la forma más coherente posible en diferentes códecs. Suponga que un usuario final ajustará los parámetros mediante un control deslizante, con sus valores mínimo y máximo asignados a los intervalos mínimo y máximo para el parámetro. Para admitir esto, debe hacer todo lo posible por tratar todos los intervalos de parámetros como lineales. Para asegurarse de que los controles deslizantes no sean demasiado sensibles, también debe admitir un intervalo lo más amplio posible para cada parámetro, que abarca al menos el 50 % del intervalo máximo posible. Por ejemplo, si el intervalo máximo posible de contraste va de gris puro a negro y blanco puro, con el valor predeterminado asignado a 0,0, el intervalo mínimo admitido por un códec sería de al menos la mitad entre el valor predeterminado y el gris puro en el extremo bajo (–1,0), a al menos a la mitad entre el valor predeterminado y el blanco y negro puro en el extremo superior (+1,0).
+Un propósito principal de la interfaz [**IWICDevelopRaw**](/windows/desktop/api/Wincodec/nn-wincodec-iwicdevelopraw) es permitir que los desarrolladores de aplicaciones compilen una interfaz de usuario para ajustar los parámetros sin procesar que funcionarán de la forma más coherente posible en diferentes códecs. Supongamos que un usuario final ajustará los parámetros mediante un control deslizante, con sus valores mínimo y máximo asignados a los intervalos mínimo y máximo para el parámetro. Para admitir esto, debe hacer todo lo posible por tratar todos los intervalos de parámetros como lineales. Para asegurarse de que los controles deslizantes no sean demasiado sensibles, también debe admitir un intervalo lo más amplio posible para cada parámetro, que abarca al menos el 50 % del intervalo máximo posible. Por ejemplo, si el intervalo máximo posible de contraste va de gris puro a negro y blanco puro, con el valor predeterminado asignado a 0,0, el intervalo mínimo admitido por un códec sería de al menos la mitad entre el valor predeterminado y el gris puro en el extremo bajo (–1,0), a al menos a la mitad entre el valor predeterminado y el blanco y negro puro en el extremo superior (+1,0).
 
 
 ```C++
@@ -164,7 +164,7 @@ enum WICRawParameterSet
 
 ### <a name="getcurrentparameterset"></a>GetCurrentParameterSet
 
-[**GetCurrentParameterSet**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getcurrentparameterset) devuelve un **IPropertyBag2 con** el conjunto de parámetros actual. A continuación, el autor de la llamada puede pasar este parámetro establecido al codificador para usarlo como opciones del codificador.
+[**GetCurrentParameterSet**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getcurrentparameterset) devuelve un **objeto IPropertyBag2** con el conjunto de parámetros actual. A continuación, el autor de la llamada puede pasar este parámetro establecido al codificador para usarlo como opciones del codificador.
 
 ### <a name="setgetexposurecompensation"></a>Set/GetExposureCompensation
 
@@ -172,19 +172,19 @@ enum WICRawParameterSet
 
 ### <a name="setgetcurrentparameterrgb-setgetnamedwhitepoint-setgetwhitepointkelvin"></a>Set/GetCurrentParameterRGB, Set/GetNamedWhitePoint, Set/GetwhitePointVin
 
-Todas estas funciones proporcionan maneras de obtener y establecer el punto blanco, ya sea como un valor RGB, un valor con nombre preestablecido o como un valor de Kelvin. El intervalo aceptable para Kelvin es de 1500 a 30 000.
+Todas estas funciones proporcionan maneras de obtener y establecer el punto blanco, ya sea como un valor RGB, un valor preestablecido denominado o como un valor de Kelvin. El intervalo aceptable para Kelvin es de 1500 a 30 000.
 
 ### <a name="setgetcontrast"></a>Set/GetContrast
 
-[**GetContrast**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getcontrast) y [**SetContrast**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setcontrast) indican la cantidad de contraste que se aplicará a la salida. El intervalo válido para especificar el contraste es de -1,0 a +1,0, siendo el contraste predeterminado 0,0.
+[**GetContrast**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getcontrast) y [**SetContrast**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setcontrast) indican la cantidad de contraste que se aplicará a la salida. El intervalo válido para especificar el contraste es de –1,0 a +1,0, siendo el contraste predeterminado 0,0.
 
 ### <a name="setgetgamma"></a>Set/GetGamma
 
-[**GetGamma**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getgamma) y [**SetGamma indican**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setgamma) la gamma que se aplicará. El intervalo válido para Gamma es de 0,2 a 5,0, siendo 1,0 el valor predeterminado. Gamma normalmente se implementa mediante la función de energía gamma tradicional (una función de energía lineal con ganancia de unity). El brillo aumenta con el aumento de Gamma y disminuye a medida que Gamma se aproxima a cero. (Tenga en cuenta que el valor mínimo es distinto de cero, porque cero daría lugar a un error de división por cero en los cálculos gamma tradicionales. El límite mínimo lógico es 1/máx., por lo que el mínimo es 0,2).
+[**GetGamma**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getgamma) y [**SetGamma indican**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setgamma) la gamma que se aplicará. El intervalo válido para Gamma es de 0,2 a 5,0, siendo 1,0 el valor predeterminado. Gamma normalmente se implementa mediante la función de energía gamma tradicional (una función de energía lineal con ganancia de unidad). El brillo aumenta con el aumento de Gamma y disminuye a medida que Gamma se aproxima a cero. (Tenga en cuenta que el valor mínimo es distinto de cero, porque cero daría lugar a un error de división por cero en los cálculos gamma tradicionales. El límite mínimo lógico es 1/máx., por lo que el mínimo es 0,2).
 
 ### <a name="setgetsharpness"></a>Set/GetSharpness
 
-[**GetSharpness**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getsharpness) [**y SetSharpness**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setsharpness) indican la cantidad de ajuste que se debe aplicar. El intervalo válido es de –1,0 a +1,0, siendo 0,0 la cantidad predeterminada de ajuste, y –1,0 que indica que no hay ningún ajuste.
+[**GetSharpness**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getsharpness) [**y SetSharpness**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setsharpness) indican la cantidad de ajuste que se debe aplicar. El intervalo válido es de –1.0 a +1.0, siendo 0.0 la cantidad predeterminada de ajuste y –1.0 que indica que no hay ningún ajuste.
 
 ### <a name="setgetsaturation"></a>Set/GetSaturation
 
@@ -192,7 +192,7 @@ Todas estas funciones proporcionan maneras de obtener y establecer el punto blan
 
 ### <a name="setgettint"></a>Set/GetTint
 
-[**GetTint**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-gettint) y [**SetTint**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-settint) indican el tono que se debe aplicar, en un sesgo verde/biaso de bia. El intervalo válido es de -1,0 a +1,0, con verde en el lado negativo de la escala y el color rojo en el positivo. La escala de tono se define como ortogonal a temperatura de color.
+[**GetTint**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-gettint) y [**SetTint**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-settint) indican el tono que se debe aplicar, en un sesgo verde/biaso de green/biat. El intervalo válido es de -1,0 a +1,0, con verde en el lado negativo de la escala y de color rojo en el positivo. La escala de tono se define como ortogonal a temperatura de color.
 
 ### <a name="setgetnoisereduction"></a>Set/GetNoiseReduction
 
@@ -238,7 +238,7 @@ Cuando el autor de la llamada pasa **NULL** en el parámetro *pToneCurve,* debe 
 
 ### <a name="setgetrendermode"></a>Set/GetRenderMode
 
-[**GetRenderMode**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getrendermode) y [**SetRenderMode**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setrendermode) indican el nivel de calidad de salida que requiere el autor de la llamada. Cuando un usuario ajusta parámetros, la aplicación debe mostrar una aproximación muy rápida del aspecto de la imagen real si se aplican los cambios. Para este fin, la imagen normalmente se muestra en la resolución de pantalla o menos, en lugar de la resolución de imagen real, para proporcionar comentarios inmediatos al usuario. Aquí es cuando una aplicación solicita la calidad del modo borrador, por lo que debería ser muy rápido. Cuando el usuario ha realizado todos los cambios, los ha vista previamente en modo borrador y ha decidido descodificar la imagen completa con la configuración actual, la aplicación solicita un descodificación de mejor calidad. Normalmente, esto también se solicita para imprimir. Cuando se requiere un equilibrio razonable entre la velocidad y la calidad, la aplicación solicita calidad normal.
+[**GetRenderMode**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getrendermode) y [**SetRenderMode**](/windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setrendermode) indican el nivel de calidad de salida que requiere el autor de la llamada. Cuando un usuario ajusta los parámetros, la aplicación debe mostrar una aproximación muy rápida de cómo será la imagen real si se aplican los cambios. Para este fin, la imagen normalmente se muestra en la resolución de pantalla o menos, en lugar de la resolución de imagen real, para proporcionar comentarios inmediatos al usuario. Aquí es cuando una aplicación solicita la calidad del modo borrador, por lo que debería ser muy rápido. Cuando el usuario ha realizado todos los cambios, los ha vista previamente en modo borrador y ha decidido descodificar la imagen completa con la configuración actual, la aplicación solicita un descodificación de mejor calidad. Normalmente, esto también se solicita para imprimir. Cuando se requiere un equilibrio razonable entre la velocidad y la calidad, la aplicación solicita calidad normal.
 
 
 ```C++

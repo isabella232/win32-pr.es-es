@@ -1,5 +1,5 @@
 ---
-description: Define las marcas usadas para controlar el número o las matrices que aplica el sistema al realizar la mezcla de vértices de varias matrices.
+description: Define las marcas usadas para controlar el número o las matrices que el sistema aplica al realizar la mezcla de vértices multimatrix.
 ms.assetid: 5314f455-ce5f-4ff5-81fc-d3dffc8705b7
 title: Enumeración D3DVERTEXBLENDFLAGS (D3D9Types.h)
 ms.topic: reference
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: ecc7f99e26088ff03b626604279bffe5c64ddb82b95a6f6219b637b3fce5a59b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0b4d22740a9ad06a9848dc7649d62ac06d37a056
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118527309"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465391"
 ---
 # <a name="d3dvertexblendflags-enumeration"></a>Enumeración D3DVERTEXBLENDFLAGS
 
-Define las marcas usadas para controlar el número o las matrices que aplica el sistema al realizar la mezcla de vértices de varias matrices.
+Define las marcas usadas para controlar el número o las matrices que el sistema aplica al realizar la mezcla de vértices multimatrix.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -86,7 +86,7 @@ Use una sola matriz con un peso de 1,0.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los miembros de este tipo se usan con el estado de representación D3DRS \_ VERTEXBLEND.
 

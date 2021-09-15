@@ -1,5 +1,5 @@
 ---
-description: Más información sobre los métodos Int16ColumnValue
+description: 'Más información sobre: Métodos Int16ColumnValue'
 title: Métodos Int16ColumnValue
 TOCTitle: Int16ColumnValue methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.Int16ColumnValue
@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.int1
 ms:contentKeyID: 55103327
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: c6b1de2e5c7d2087695e52f0f040b6213bb55101e47a2cecb895b1399e0d5532
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64dfabbfc68ab07bf52ec4a80af952cb77fb6dae
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119834335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465418"
 ---
 # <a name="int16columnvalue-methods"></a>Métodos Int16ColumnValue
 
@@ -35,7 +35,7 @@ El [tipo Int16ColumnValue](./int16columnvalue-class.md) expone los miembros sigu
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
 <td><a href="dn334178(v=exchg.10).md">CheckDataCount</a></td>
-<td>Asegúrese de que los datos recuperados son exactamente el tamaño necesario para la estructura. Se produce una excepción si hay un error de coincidencia. (Se hereda de <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T). &gt; </a></td>
+<td>Asegúrese de que los datos recuperados son exactamente el tamaño necesario para la estructura. Se produce una excepción si hay una discrepancia. (Se hereda de <a href="dn334171(v=exchg.10).md">ColumnValueOfStruct &lt; T). &gt; </a></td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>

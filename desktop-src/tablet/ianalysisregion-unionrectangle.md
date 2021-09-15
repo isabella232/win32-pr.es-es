@@ -1,5 +1,5 @@
 ---
-description: Expande el área de esta región IAnalysisRegion al área creada por su unión con el rectángulo especificado.
+description: Expande el área de esta IAnalysisRegion al área creada por su unión con el rectángulo especificado.
 ms.assetid: 9b12f509-4f6a-43b0-9639-bef060fd6d50
 title: Método IAnalysisRegion::UnionRectangle (IACom.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: da3eefb3a527646ba416d62783421d6dfe9be5706c0527df7eb321d3945b6f92
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 3a28a60eae95641225dd9c01791d89a9c38ada82
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119596764"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467994"
 ---
 # <a name="ianalysisregionunionrectangle-method"></a>IAnalysisRegion::UnionRectangle (método)
 
-Expande el área de [**esta región IAnalysisRegion**](ianalysisregion.md) al área creada por su unión con el rectángulo especificado.
+Expande el área de [**esta IAnalysisRegion**](ianalysisregion.md) al área creada por su unión con el rectángulo especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,7 +50,7 @@ Puntero al rectángulo con el que se va a combinar, en coordenadas de espacio de
 
 Para obtener una descripción de los valores [devueltos, vea Clases e interfaces: análisis de entrada de lápiz.](classes-and-interfaces---ink-analysis.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Las coordenadas del rectángulo están en unidades HIMETRIC.
 
@@ -60,11 +60,11 @@ Si alguna de las áreas es infinita, la nueva área también es infinita.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                                     |
-| Header<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>IACom.h (también requiere IACom \_ i.c)</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

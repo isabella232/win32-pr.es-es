@@ -16,16 +16,16 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: b703ab1384286ecfc3a797f88ec18cafe8b6142acf586c7f96e4ae9b4085f7cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 73addea189815d1594d0963fbdd6e20c562b3be3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118312504"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465596"
 ---
 # <a name="swbemservicesreferencesto-method"></a>Método SWbemServices.ReferencesTo
 
-El **método ReferencesTo** del objeto [**SWbemServices**](swbemservices.md) devuelve una colección de todas las clases o instancias de asociación que hacen referencia a una clase o instancia de origen específica. Este método realiza la misma función que la [consulta REFERENCES OF](references-of-statement.md) WQL.
+El **método ReferencesTo** del objeto [**SWbemServices**](swbemservices.md) devuelve una colección de todas las clases o instancias de asociación que hacen referencia a una clase o instancia de origen específica. Este método realiza la misma función que realiza [la consulta REFERENCES OF](references-of-statement.md) WQL.
 
 Se llama a este método en el modo semisincronoso. Para obtener más información, vea [Llamar a un método](calling-a-method.md).
 
@@ -56,7 +56,7 @@ objWbemObjectSet = .ReferencesTo( _
 *strObjectPath* 
 </dt> <dd>
 
-Obligatorio. Cadena que contiene la ruta de acceso del objeto del origen para este método. Para obtener más información, [vea Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
+Necesario. Cadena que contiene la ruta de acceso del objeto del origen para este método. Para obtener más información, [vea Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Hace que se devuelva un enumerador de solo avance. Los enumeradores de solo avan
 
 </dt> <dd>
 
-Hace Windows Management Instrumentation (WMI) conservar punteros a objetos de la enumeración hasta que el cliente libera el enumerador.
+Hace Windows Management Instrumentation (WMI) conserve punteros a objetos de la enumeración hasta que el cliente libere el enumerador.
 
 </dd> <dt>
 
@@ -214,19 +214,19 @@ Hace que WMI devuelva datos de modificación de clase con la definición de clas
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para obtener más información sobre la consulta WQL asociada REFERENCES OF, las instancias de origen y los objetos de asociación, vea [LA INSTRUCCIÓN ASSOCIATORS OF](associators-of-statement.md).
+Para obtener más información sobre las referencias de consulta WQL asociada, instancias de origen y objetos de asociación, vea [LA INSTRUCCIÓN ASSOCIATORS OF](associators-of-statement.md).
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemServices<br/>                                                         |

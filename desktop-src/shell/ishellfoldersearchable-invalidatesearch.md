@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 6985a299-8547-4db4-99f9-d46dafe4789b
-ms.openlocfilehash: 5f443f3abd4a5cf2c1d0fc473c9267660d05c183a02c7f7705c1fabcbc9a8918
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 43d76c6a27b301a61474b8028af16e5e540cf2ce
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119596575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468151"
 ---
 # <a name="ishellfoldersearchableinvalidatesearch-method"></a>IShellFolderSearchable::InvalidateSearch (método)
 
@@ -64,7 +64,7 @@ Tipo: **HRESULT**
 
 Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Cuando se invalida una carpeta de búsqueda, puede realizar la limpieza de los recursos que ha usado. El **método IShellFolderSearchable::InvalidateSearch** puede hacer que se cancele una búsqueda asincrónica y dará lugar a la versión final del objeto de interfaz [**IShellFolderSearchableCallback.**](ishellfoldersearchablecallback.md)
 
@@ -72,7 +72,7 @@ Cuando se invalida una carpeta de búsqueda, puede realizar la limpieza de los r
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                             |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                   |

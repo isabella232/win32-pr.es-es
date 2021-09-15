@@ -10,16 +10,16 @@ keywords:
 - Función de representación, contexto de dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35e07247de9496cd0221b6031e65c0f68def0bade8ce1c814c5096daff486098
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 08c315d5004565644750f4adcd099fc165e81575
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119507155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467923"
 ---
 # <a name="using-device-contexts"></a>Uso de contextos de dispositivo
 
-El contexto del dispositivo es un identificador estándar para un contexto de dispositivo. Necesita esto para muchas funciones de dibujo para que Microsoft Windows la ventana en la que dibujar. Por ejemplo, para dibujar un rectángulo, debe especificar el contexto del dispositivo.
+El contexto del dispositivo es un identificador estándar para un contexto de dispositivo. Lo necesitará para muchas funciones de dibujo para que Microsoft Windows la ventana en la que dibujar. Por ejemplo, para dibujar un rectángulo, debe especificar el contexto del dispositivo.
 
 
 ```C++

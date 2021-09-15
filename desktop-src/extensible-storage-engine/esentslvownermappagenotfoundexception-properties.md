@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102887
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 17a79052a9948172e9f3250da850dcd4c2284763eabf03586aaabd1de9dc8747
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 553428b79a03a7986d432a30d138e7f96c4c4e3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117897301"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465636"
 ---
 # <a name="esentslvownermappagenotfoundexception-properties"></a>Propiedades de EsentSLVOwnerMapPageNotFoundException
 
@@ -34,7 +34,7 @@ El [tipo EsentSLVOwnerMapPageNotFoundException](./esentslvownermappagenotfoundex
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentSLVOwnerMapPageNotFoundException](./esentslvownermappagenotfoundex
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

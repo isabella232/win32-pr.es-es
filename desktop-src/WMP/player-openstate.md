@@ -14,18 +14,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2f7c0b88d3cab5d5bae4efb1e9a2a5032709943d82484b073302bf0b45a6f5b5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b87ad682a0c9ea6420ec291cbe66a7f81c9062e4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118995985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466012"
 ---
 # <a name="playeropenstate"></a>Player.openState
 
 La **propiedad openState** recupera un valor que indica el estado del origen de contenido.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 *player* . **openState**
 
@@ -35,7 +35,7 @@ Esta propiedad es un número de solo **lectura** (**long**). La constante de enu
 
 
 
-| Value | Estado                   | Descripción                                                                                                                                            |
+| Value | State                   | Descripción                                                                                                                                            |
 |-------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0     | No definido               | Reproductor de Windows Media está en un estado indefinido.                                                                                                         |
 | 1     | PlaylistChanging        | La nueva lista de reproducción está a punto de cargarse.                                                                                                                    |
@@ -49,13 +49,13 @@ Esta propiedad es un número de solo **lectura** (**long**). La constante de enu
 | 9     | MediaLocating           | Reproductor de Windows Media está localizando el elemento multimedia. El archivo puede ser local o remoto.                                                                      |
 | 10    | MediaConnecting         | Conectarse al servidor que contiene el elemento multimedia.                                                                                                    |
 | 11    | MediaLoading            | Se ha ubicado el elemento multimedia y ahora se está recuperando.                                                                                                |
-| 12    | MediaOpening            | Se ha recuperado el elemento multimedia y ahora se está abierto.                                                                                                 |
+| 12    | MediaOpening            | El elemento multimedia se ha recuperado y ahora se está abierto.                                                                                                 |
 | 13    | MediaOpen               | El elemento multimedia ya está abierto.                                                                                                                                |
 | 14    | BeginCodecAcquisition   | Inicio de la adquisición de códecs.                                                                                                                            |
 | 15    | EndCodecAcquisition     | La adquisición de códecs se ha completado.                                                                                                                         |
 | 16    | BeginLicenseAcquisition | Adquirir una licencia para reproducir contenido protegido con DRM.                                                                                                     |
 | 17    | EndLicenseAcquisition   | Se ha adquirido la licencia para reproducir contenido protegido con DRM.                                                                                               |
-| 18    | BeginIndividualization  | Iniciar la individualización de DRM.                                                                                                                           |
+| 18    | BeginIndividualization  | Inicie la individualización de DRM.                                                                                                                           |
 | 19    | EndIndividualization    | Se ha completado la individualización de DRM.                                                                                                              |
 | 20    | MediaWaiting            | Esperando el elemento multimedia.                                                                                                                                |
 | 21    | OpeningUnknownURL       | Abrir una dirección URL con un tipo desconocido.                                                                                                                    |
@@ -64,9 +64,9 @@ Esta propiedad es un número de solo **lectura** (**long**). La constante de enu
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Reproductor de Windows Media se garantiza que los estados se produzcan en un orden determinado. Además, no todos los estados se producen necesariamente durante una secuencia de eventos. No debe escribir código que se base en el orden de estado.
+Reproductor de Windows Media no se garantiza que los estados se produzcan en un orden determinado. Además, no todos los estados se producen necesariamente durante una secuencia de eventos. No debe escribir código que se base en el orden de estado.
 
 ## <a name="requirements"></a>Requisitos
 

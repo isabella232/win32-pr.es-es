@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 428bff1f3fd76cd7c4589d5084435f8a675ab0d73bf0ff02052b2212d2c2dea9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ed52aaf0b4c740b675129c81843c0bd49c7f428e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117728971"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466060"
 ---
 # <a name="idirectxfiledatagetdata-method"></a>IDirectXFileData::GetData (método)
 
@@ -47,7 +47,7 @@ HRESULT GetData(
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Puntero al nombre del miembro para el que se recuperan los datos. Especifique **NULL** para recuperar todos los datos de los miembros necesarios.
+Puntero al nombre del miembro para el que se recuperarán los datos. Especifique **NULL** para recuperar todos los datos de los miembros necesarios.
 
 </dd> <dt>
 
@@ -73,11 +73,11 @@ Dirección de un puntero al búfer para recibir los datos asociados a szMember. 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método , el valor devuelto puede ser uno de los siguientes valores: DXFILEERR \_ BADARRAYSIZE, DXFILEERR \_ BADDataReference, DXFILEERR \_ BADVALUE.
+Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se produce un error en el método, el valor devuelto puede ser uno de los siguientes valores: DXFILEERR \_ BADARRAYSIZE, DXFILEERR \_ BADDataReference y DXFILEERR \_ BADVALUE.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Este método recupera los datos de los miembros necesarios de un objeto de datos, pero no de los miembros opcionales (secundarios). Use [**IDirectXFileData::GetNextObject para**](idirectxfiledata--getnextobject.md) recuperar objetos secundarios.
+Este método recupera los datos de los miembros necesarios de un objeto de datos, pero no los datos de los miembros opcionales (secundarios). Use [**IDirectXFileData::GetNextObject para**](idirectxfiledata--getnextobject.md) recuperar objetos secundarios.
 
 ## <a name="requirements"></a>Requisitos
 

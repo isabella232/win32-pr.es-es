@@ -4,16 +4,16 @@ ms.assetid: a480ba61-807e-4d0e-bda2-f1876e0bb13c
 title: WM_MDITILE mensaje (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 379394d413c0c9d15b9f63297934b97da6aff65b4ae5d803627cb0107493c4e7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0cf7ee38fbb3622e2d17bf4cea5a28b6b492a244
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118436222"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466231"
 ---
 # <a name="wm_mditile-message"></a>Mensaje \_ MDITILE de WM
 
-Una aplicación envía el **mensaje \_ MDITILE** de WM a una ventana de cliente de interfaz de múltiples documentos (MDI) para organizar todas sus ventanas secundarias MDI en un formato de icono.
+Una aplicación envía el mensaje **\_ MDITILE** de WM a una ventana de cliente de interfaz de múltiples documentos (MDI) para organizar todas sus ventanas secundarias MDI en un formato de icono.
 
 
 ```C++
@@ -33,7 +33,7 @@ Opción de tiling. Este parámetro puede ser uno de los siguientes valores, comb
 
 
 
-| Valor                                                                                                                                                                                                                                    | Significado                                |
+| Value                                                                                                                                                                                                                                    | Significado                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
 | <span id="MDITILE_HORIZONTAL"></span><span id="mditile_horizontal"></span><dl> <dt>**MDITILE \_ Horizontal**</dt> <dt>0x0001</dt> </dl> | Ventanas de iconos horizontalmente.<br/> |
 | <span id="MDITILE_VERTICAL"></span><span id="mditile_vertical"></span><dl> <dt>**MDITILE \_ Vertical**</dt> <dt>0x0000</dt> </dl>       | Ventanas de iconos verticalmente.<br/>   |
@@ -63,7 +63,7 @@ Si se produce un error en el mensaje, el valor devuelto es **FALSE.**
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                               |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                     |
@@ -71,7 +71,7 @@ Si se produce un error en el mensaje, el valor devuelto es **FALSE.**
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

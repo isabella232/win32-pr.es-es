@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 58f95a62d17ccafd308666a5632a1f7a42ebfda6ca0a54dfb6dfa9d9eda9b684
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3bf8980fa29841d3c5341daeeccf26cea05db80c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119715485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468289"
 ---
 # <a name="cpl_getcount-message"></a>Mensaje \_ GETCOUNT de CPL
 
@@ -38,7 +38,7 @@ Se envía a la [**función CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_pro
 
 La [**función CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) devuelve el número de cuadros de diálogo que admite Panel de control aplicación.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este mensaje se envía inmediatamente después del [**mensaje \_ INIT de CPL.**](cpl-init.md)
 

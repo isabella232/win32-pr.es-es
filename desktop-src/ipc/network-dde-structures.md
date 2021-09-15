@@ -4,12 +4,12 @@ ms.assetid: 1cbfd363-4fe4-452a-950d-637e9b96ca16
 title: Estructuras DDE de red
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25b7a44a3b2c4fe153b15566b41b9a8f22a4d95e488697db1423396349a6c886
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 81780ad389e2e18c28afd88b7056067861667483
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118756057"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465925"
 ---
 # <a name="network-dde-structures"></a>Estructuras DDE de red
 

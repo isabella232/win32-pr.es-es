@@ -7,21 +7,21 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.wind
 ms:contentKeyID: 55104255
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 7b582b98730e9fb9659f798d9d5c88613ecdeff8964bd2d514906a4a5ffef0a4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 48911f9b9157c3775283bbcca9cff94d4a813c26
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119106833"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466576"
 ---
 # <a name="windows7api-members"></a>Miembros de Windows7Api
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-API DE ESENT que se admiten por primera vez en Windows 7 (Windows Server 2008 R2).
+API de ESENT que se admiten por primera vez en Windows 7 (Windows Server 2008 R2).
 
-El [tipo Windows7Api](./windows7api-class.md) expone los miembros siguientes.
+El [tipo Windows7Api](./windows7api-class.md) expone los siguientes miembros.
 
 ## <a name="methods"></a>Métodos
 
@@ -55,7 +55,7 @@ El [tipo Windows7Api](./windows7api-class.md) expone los miembros siguientes.
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

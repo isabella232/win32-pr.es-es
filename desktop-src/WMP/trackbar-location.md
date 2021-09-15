@@ -9,12 +9,12 @@ keywords:
 - barras de seguimiento en máscaras, ubicación
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 375f3226010813dbdec9f690b9baa80b614147a2fb0bcd76989a78e0d0d34bd9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: eb195d24e56606dfe49a78f75b6357bbdd094473
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120001715"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465834"
 ---
 # <a name="trackbar-location"></a>Ubicación de la barra de seguimiento
 

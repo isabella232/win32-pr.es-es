@@ -4,7 +4,7 @@ description: La propiedad errorCount obtiene el número de errores de la cola de
 ms.assetid: a30750c8-2025-4087-bd2b-f313ccbde38c
 keywords:
 - errorCount, propiedad Reproductor de Windows Media
-- ErrorCount, propiedad Reproductor de Windows Media , interfaz IWMPError
+- ErrorCount, propiedad Reproductor de Windows Media interfaz , IWMPError
 - Interfaz IWMPError Reproductor de Windows Media , propiedad errorCount
 topic_type:
 - apiref
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 42d288d1476318b1cace98d4b7549b7f5755b383da19d88ce04cbcf271326ac8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b62c16f07260847c91f1c9f18885587444a4ceb8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118568777"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465714"
 ---
-# <a name="iwmperrorerrorcount-property"></a>Propiedad IWMPError::errorCount
+# <a name="iwmperrorerrorcount-property"></a>IWMPError::errorCount, propiedad
 
 La **propiedad errorCount** obtiene el número de errores de la cola de errores.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,9 +48,9 @@ Public ReadOnly Property errorCount As System.Int32
 
 **System.Int32** que es el número de errores.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Debe establecer **IWMPSettings.enableErrorDialogs** en **false** si decide mostrar mensajes de error personalizados.
+Si decide mostrar mensajes de error **personalizados, debe establecer IWMPSettings.enableErrorDialogs** en **false.**
 
 ## <a name="examples"></a>Ejemplos
 
@@ -98,7 +98,7 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

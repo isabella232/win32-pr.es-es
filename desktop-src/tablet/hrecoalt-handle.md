@@ -4,14 +4,14 @@ ms.assetid: de3242f4-bce3-4139-9cb4-85eb33f375b1
 title: Identificador HRECOALT (Recapis.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d9ab2f3dfd4df34254ef74e238592223fb4defe1af013fcc829dd8d18705e9f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 4416b96730d97f0bf17d6e0bd10f3fd56cce4860
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118967579"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468000"
 ---
-# <a name="hrecoalt-handle"></a>Identificador de HRECOALT
+# <a name="hrecoalt-handle"></a>Identificador HRECOALT
 
 El **identificador HRECOALT** está obsoleto.
 
@@ -22,9 +22,9 @@ typedef HANDLE HRECOALT;
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Estas funciones están obsoletas y los reconocedores de aplicaciones personalizados no deben implementar estas funciones.
+Estas funciones están obsoletas y no deben implementarse mediante reconocedores de aplicaciones personalizados.
 
 -   [**DestroyAlternate**](/windows/desktop/api/recapis/nf-recapis-destroyalternate)
 -   [**GetConfidenceLevel**](/previous-versions/windows/desktop/legacy/ms704829(v=vs.85))
@@ -43,7 +43,7 @@ Estas funciones están obsoletas y los reconocedores de aplicaciones personaliza
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de XP Tablet PC \[ Edition\]<br/>                        |
 | Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                            |
-| Header<br/>                   | <dl> <dt>Recapis.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Recapis.h</dt> </dl> |
 
 
 

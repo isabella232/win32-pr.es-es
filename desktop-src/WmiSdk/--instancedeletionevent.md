@@ -17,12 +17,12 @@ api_type:
 - Schema
 api_location:
 - All
-ms.openlocfilehash: a210f67e7e71d9980a3eeb88ae54fad7fee3ec62597b81ae7253a2893a437a7f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 018bac665aa95393fc1a9c7e51ad42038e8b27c3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118320889"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466120"
 ---
 # <a name="__instancedeletionevent-class"></a>\_\_InstanceDeletionEvent (clase)
 
@@ -41,7 +41,7 @@ class __InstanceDeletionEvent : __InstanceOperationEvent
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **\_ \_ clase InstanceDeletionEvent** tiene estos tipos de miembros:
 
@@ -94,7 +94,7 @@ Para obtener más información sobre el **uso de valores uint64** en scripts, ve
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La **\_ \_ clase InstanceDeletionEvent** se deriva de [**\_ \_ InstanceOperationEvent.**](--instanceoperationevent.md)
 
@@ -114,7 +114,7 @@ El [ejemplo de](https://Gallery.TechNet.Microsoft.Com/060a9adb-f99b-4f34-ba65-19
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|--------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>       |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/> |

@@ -4,12 +4,12 @@ description: Las propiedades IAccessible proporcionan una manera para que los de
 ms.assetid: c51fd8a1-dc23-4d64-8921-e0a795c3ffb8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76a3c9ef5d56c6d963a05ac84b5e2cacafde488c377ebcc73fa1e2c4be1adab2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 47c88a808889403f88d414f7ad950b3e431c00e1
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133968"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466127"
 ---
 # <a name="choosing-which-properties-to-support"></a>Elección de las propiedades que se admitirán
 
@@ -19,7 +19,7 @@ Los servidores deben admitir las siguientes propiedades y métodos para cada obj
 
 -   [**Nombre**](name-property.md)
 -   [**Role**](role-property.md)
--   [**Estado**](state-property.md)
+-   [**State**](state-property.md)
 -   [**Location**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acclocation) e [ **IAccessible::accHitTest**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acchittest)
 -   [**Parent**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent) e [ **IAccessible::accNavigate**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accnavigate)
 

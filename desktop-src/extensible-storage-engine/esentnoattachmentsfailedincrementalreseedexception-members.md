@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55107290
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 521af148fa129701cfa6b9e588daf46ad7f3f6e17f8559865f272cba30984811
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 55ff568e0316f5cc4bc5dfde6f345a0f559c8e4f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119363675"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466601"
 ---
 # <a name="esentnoattachmentsfailedincrementalreseedexception-members"></a>Miembros de EsentNoAttachmentsFailedIncrementalReseedException
 
@@ -164,7 +164,7 @@ Superior
 
 Superior
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

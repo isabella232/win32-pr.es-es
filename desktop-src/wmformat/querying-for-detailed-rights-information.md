@@ -9,30 +9,30 @@ keywords:
 - DRM (administración de derechos digitales), consulta de derechos detallados
 - administración de derechos digitales (DRM), consultas de derechos detalladas
 - DRM (administración de derechos digitales), consultas de derechos detalladas
-- API extendidas de cliente DRM, consultando derechos detallados
-- API extendidas de cliente, consultando derechos detallados
+- API extendidas de cliente DRM, consulta de derechos detallados
+- API extendidas de cliente, consulta de derechos detallados
 - API extendidas de cliente DRM, consultas de derechos detalladas
 - API extendidas de cliente, consultas de derechos detalladas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff27904686016870151dbf91affc7c4e5241a9ae9fef02b86a5786fe1f5d506d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d3a21fa974f0289c4e4e8983ee6d4fd1757de824
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119084528"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466685"
 ---
 # <a name="querying-for-detailed-rights-information"></a>Consulta de información detallada sobre los derechos
 
-Mediante el método [**IWMDRMLicenseQuery::QueryLicenseState,**](iwmdrmlicensequery-querylicensestate.md) puede obtener información detallada sobre los derechos concedidos por las licencias para un identificador de clave. La información que obtiene de este método se agrega de todas las licencias del almacén de licencias local que se aplican al identificador de clave especificado.
+Mediante el [**método IWMDRMLicenseQuery::QueryLicenseState,**](iwmdrmlicensequery-querylicensestate.md) puede obtener información detallada sobre los derechos concedidos por las licencias para un identificador de clave. La información que obtiene de este método se agrega de todas las licencias del almacén de licencias local que se aplican al identificador de clave especificado.
 
-**QueryLicenseState usa** la estructura [**DRM LICENSE STATE DATA \_ \_ \_ para**](drmdrm-license-state-data.md) mostrar información agregada sobre todas las licencias del identificador de clave especificado. Este uso es diferente del de otros objetos del SDK Windows Media Format.
+**QueryLicenseState usa** la estructura [**DRM LICENSE STATE \_ \_ \_ DATA**](drmdrm-license-state-data.md) para mostrar información agregada sobre todas las licencias para el identificador de clave especificado. Este uso es diferente del de otros objetos del SDK Windows Media Format.
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[**Obtener información de licencias en el almacén de licencias local**](getting-information-from-licenses-in-the-local-license-store.md)
+[**Obtención de información de licencias en el almacén de licencias local**](getting-information-from-licenses-in-the-local-license-store.md)
 </dt> </dl>
 
  

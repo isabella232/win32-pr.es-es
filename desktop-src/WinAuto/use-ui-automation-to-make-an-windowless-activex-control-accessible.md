@@ -1,21 +1,21 @@
 ---
 title: Cómo usar Automatización de la interfaz de usuario para que un control de ActiveX sin ventanas sea accesible
-description: Describe cómo usar Microsoft Automatización de la interfaz de usuario \ 32; API para asegurarse de que las aplicaciones cliente de tecnología de asistencia (AT) pueden acceder al control de ActiveX sin ventanas de Microsoft.
+description: Describe cómo usar Microsoft Automatización de la interfaz de usuario \ 32; API para asegurarse de que las aplicaciones cliente de tecnología de asistencia (AT) pueden acceder al control de ActiveX de Microsoft sin ventanas.
 ms.assetid: D584E90D-6537-4F48-8553-0DCA061FAF2A
 keywords:
 - Control de ActiveX sin ventanas, accesibilidad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68ef56d5f3a06bbfa21502c791163f2251506a10fda7da9d07ee04941ad39de1
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: ba0ada1d26463b0654c1808f6e4fd43f571687d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119570365"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466624"
 ---
 # <a name="how-to-use-ui-automation-to-make-a-windowless-activex-control-accessible"></a>Cómo usar Automatización de la interfaz de usuario para que un control de ActiveX sin ventanas sea accesible
 
-Describe cómo usar microsoft Automatización de la interfaz de usuario API para asegurarse de que el control de ActiveX de Microsoft sin ventanas es accesible para las aplicaciones cliente de tecnología de asistencia (AT).
+Describe cómo usar microsoft Automatización de la interfaz de usuario API para asegurarse de que el control de Microsoft ActiveX sin ventanas es accesible para las aplicaciones cliente de tecnología de asistencia (AT).
 
 ## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
@@ -24,10 +24,10 @@ Describe cómo usar microsoft Automatización de la interfaz de usuario API para
 -   [Controles ActiveX](/windows/desktop/com/activex-controls)
 -   [Automatización de la interfaz de usuario](entry-uiauto-win32.md)
 
-### <a name="prerequisites"></a>Prerrequisitos
+### <a name="prerequisites"></a>Requisitos previos
 
 -   C/C++
--   Programación de Microsoft Win32 y Component Object Model (COM)
+-   Programación de Microsoft Win32 y modelo de objetos componentes (COM)
 -   Controles de ActiveX sin ventanas
 -   Automatización de la interfaz de usuario proveedores
 
@@ -35,7 +35,7 @@ Describe cómo usar microsoft Automatización de la interfaz de usuario API para
 
 ### <a name="step-1-implement-the-ui-automation-provider-interfaces"></a>Paso 1: Implementar las interfaces Automatización de la interfaz de usuario proveedor de recursos.
 
-Para que la aplicación sea accesible, debe implementar las interfaces del proveedor de Automatización de la interfaz de usuario para el control ActiveX sin ventanas, [**incluidos IRawElementProviderSimple,**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) [**IRawElementProviderFragment,**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragment) [**IRawElementProviderFragmentRoot**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragmentroot)e [**IRawElementProviderAdviseEvents**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovideradviseevents). Debe implementar estas interfaces como lo haría para un control basado en ventanas, excepto como se describe en los pasos siguientes. Para obtener más información sobre la implementación de interfaces de proveedor de UIA, vea Automatización de la interfaz de usuario Guía del programador [del proveedor de aplicaciones](uiauto-providerportal.md).
+Para que la aplicación sea accesible, debe implementar las interfaces del proveedor de Automatización de la interfaz de usuario para el control ActiveX sin ventanas, [**incluidos IRawElementProviderSimple,**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) [**IRawElementProviderFragment**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragment), [**IRawElementProviderFragmentRoot**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementproviderfragmentroot)e [**IRawElementProviderAdviseEvents**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovideradviseevents). Debe implementar estas interfaces como lo haría para un control basado en ventanas, excepto como se describe en los pasos siguientes. Para obtener más información sobre cómo implementar interfaces de proveedor UIA, vea Automatización de la interfaz de usuario Guía del programador [del proveedor de aplicaciones](uiauto-providerportal.md).
 
 ### <a name="step-2-implement-the-iserviceprovider-interface"></a>Paso 2: Implementar la interfaz IServiceProvider.
 
@@ -66,9 +66,9 @@ STDMETHODIMP CMyAccessibleUIAControl::QueryService(REFGUID guidService,
 
 
 
-### <a name="step-3-implement-the-irawelementproviderfragmentnavigate-method"></a>Paso 3: Implementar el método IRawElementProviderFragment::Navigate.
+### <a name="step-3-implement-the-irawelementproviderfragmentnavigate-method"></a>Paso 3: Implemente el método IRawElementProviderFragment::Navigate.
 
-Cuando se llama al método [**IRawElementProviderFragment::Navigate**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderfragment-navigate) del control sin ventana para navegar al proveedor raíz del control sin ventana o al mismo nivel, el método **Navigate** debe delegar en el método [**IRawElementProviderWindowlessSite::GetAdjacentFragment**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-irawelementproviderwindowlesssite-getadjacentfragment) del contenedor de controles.
+Cuando se llama al método [**IRawElementProviderFragment::Navigate**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderfragment-navigate) del control sin ventanas para navegar al proveedor raíz del control sin ventanas o al mismo nivel, el método **Navigate** debe delegar en el método [**IRawElementProviderWindowlessSite::GetAdjacentFragment**](/windows/desktop/api/uiautomationcore/nf-uiautomationcore-irawelementproviderwindowlesssite-getadjacentfragment) del contenedor de controles.
 
 En el ejemplo siguiente se muestra cómo implementar el [**método Navigate.**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderfragment-navigate)
 
@@ -116,7 +116,7 @@ STDMETHODIMP CMyAccessibleUIAControl::Navigate(NavigateDirection direction,
 
 
 
-### <a name="step-4-implement-the-irawelementproviderfragmentgetruntimeid-method"></a>Paso 4: Implementar el método IRawElementProviderFragment::GetRuntimeId.
+### <a name="step-4-implement-the-irawelementproviderfragmentgetruntimeid-method"></a>Paso 4: Implemente el método IRawElementProviderFragment::GetRuntimeId.
 
 Cuando el control sin ventana recibe una llamada a su método [**IRawElementProviderFragment::GetRuntimeId,**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementproviderfragment-getruntimeid) el control debe hacer lo siguiente:
 
@@ -182,7 +182,7 @@ STDMETHODIMP CMyAccessibleUIAControl::GetRuntimeId(SAFEARRAY **ppRetVal)
 [Uso de MSAA para hacer que un control de ActiveX sin ventanas sea accesible](use-msaa-to-make-an-windowless-activex-control-accessible.md)
 </dt> <dt>
 
-[Accesibilidad del control ActiveX sin ventanas](windowless-activex-control-accessibility.md)
+[Accesibilidad de ActiveX control sin ventanas](windowless-activex-control-accessibility.md)
 </dt> </dl>
 
  

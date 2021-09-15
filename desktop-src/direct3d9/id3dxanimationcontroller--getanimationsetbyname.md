@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 8b417bf9434b712903e61839807f71765b2e3c69916430f162a67febe65fc6cf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d520625e457a50fe962ae74d6e25fc17e2beb729
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118297048"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466082"
 ---
 # <a name="id3dxanimationcontrollergetanimationsetbyname-method"></a>Método ID3DXAnimationController::GetAnimationSetByName
 
@@ -46,7 +46,7 @@ HRESULT GetAnimationSetByName(
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
-Cadena que contiene el nombre del conjunto de animación.
+Cadena que contiene el nombre del conjunto de animaciones.
 
 </dd> <dt>
 
@@ -65,7 +65,7 @@ Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).as
 
 Si el método se realiza correctamente, el valor devuelto es S \_ OK. Si se produce un error en el método, se devolverá el siguiente valor: D3DERR \_ INVALIDCALL.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El controlador de animación contiene una matriz de conjuntos de animación. Este método devuelve un conjunto de animaciones que tiene el nombre especificado.
 
@@ -80,7 +80,7 @@ El controlador de animación contiene una matriz de conjuntos de animación. Est
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: bcbdf4d930b2a67c56572a9788592b943748f6e41c30483728f3cc24732ffa18
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: adc8811c11f67b9fc92628740bd15df2086948d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119897494"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465482"
 ---
 # <a name="swbemservicesdeleteasync-method"></a>Método SWbemServices.DeleteAsync
 
@@ -29,7 +29,7 @@ El **método DeleteAsync** del [**objeto SWbemServices**](swbemservices.md) elim
 
 Si un proveedor dinámico proporciona la clase o instancia, a veces no es posible eliminar este objeto a menos que el proveedor admita la eliminación de clases o instancias.
 
-Se llama al método en modo asincrónico. Para obtener más información, vea [Llamar a un método](calling-a-method.md).
+Se llama al método en el modo asincrónico. Para obtener más información, vea [Llamar a un método](calling-a-method.md).
 
 Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
@@ -55,14 +55,14 @@ SWbemServices.DeleteAsync( _
 *ObjWbemSink* \[ Opcional\]
 </dt> <dd>
 
-Receptor de objetos que recibe los resultados de la eliminación. Cree un [**objeto SWbemSink**](swbemsink.md) para recibir los objetos.
+Receptor de objetos que recibe los resultados de la eliminación. Cree un [**objeto SWbemSink**](swbemsink.md) para recibir los objetos .
 
 </dd> <dt>
 
 *strObjectPath* 
 </dt> <dd>
 
-Obligatorio. Cadena que contiene la ruta de acceso del objeto que desea eliminar. Para obtener más información, [vea Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
+Necesario. Cadena que contiene la ruta de acceso del objeto al objeto que desea eliminar. Para obtener más información, [vea Describir la ubicación de un objeto WMI](describing-the-location-of-a-wmi-object.md).
 
 </dd> <dt>
 
@@ -80,7 +80,7 @@ Determina si se devuelven actualizaciones de estado. Este parámetro puede acept
 
 </dt> <dd>
 
-Hace que las llamadas asincrónicas envíen actualizaciones de estado al controlador de eventos [**OnProgress**](swbemsink-onprogress.md) para el receptor de objetos.
+Hace que las llamadas asincrónicas envíen actualizaciones de estado al controlador de eventos [**OnProgress**](swbemsink-onprogress.md) para el receptor del objeto.
 
 </dd> <dt>
 
@@ -98,7 +98,7 @@ Impide que las llamadas asincrónicas envíen actualizaciones de estado al contr
 *objWbemNamedValueSet* \[ Opcional\]
 </dt> <dd>
 
-Normalmente, esto es indefinido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que está atendiendo la solicitud. Un proveedor que admita o requiera dicha información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
+Normalmente, esto no está definido. De lo contrario, se trata de un objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cuyos elementos representan la información de contexto que puede usar el proveedor que está atendiendo la solicitud. Un proveedor que admita o requiera dicha información debe documentar los nombres de valor reconocidos, el tipo de datos del valor, los valores permitidos y la semántica.
 
 </dd> <dt>
 
@@ -161,11 +161,11 @@ No se encontró el elemento solicitado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta llamada se devuelve inmediatamente. El estado de la operación de eliminación se devuelve al autor de la llamada a través de una devolución de llamada entregada al receptor especificado en *objWbemSink*. Puede realizar el procesamiento final en la implementación de *objWbemSink*. [**Evento OnCompleted.**](swbemsink-oncompleted.md)
+Esta llamada se devuelve inmediatamente. El estado de la operación de eliminación se devuelve al autor de la llamada a través de una devolución de llamada entregada al receptor que se especifica en *objWbemSink*. Puede realizar el procesamiento final en la implementación de *objWbemSink*. [**Evento OnCompleted.**](swbemsink-oncompleted.md)
 
-Una devolución de llamada asincrónica permite a un usuario no autenticado proporcionar datos al receptor. Esto supone riesgos de seguridad para los scripts y las aplicaciones. Para eliminar los riesgos, vea [Establecer la seguridad en una llamada asincrónica.](setting-security-on-an-asynchronous-call.md)
+Una devolución de llamada asincrónica permite que un usuario no autenticado proporcione datos al receptor. Esto supone riesgos de seguridad para los scripts y las aplicaciones. Para eliminar los riesgos, vea [Establecer la seguridad en una llamada asincrónica.](setting-security-on-an-asynchronous-call.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -175,7 +175,7 @@ Una devolución de llamada asincrónica permite a un usuario no autenticado prop
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemServices<br/>                                                         |
@@ -183,7 +183,7 @@ Una devolución de llamada asincrónica permite a un usuario no autenticado prop
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

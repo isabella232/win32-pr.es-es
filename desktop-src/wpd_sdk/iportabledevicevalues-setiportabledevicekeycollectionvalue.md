@@ -14,14 +14,14 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 100dd614978260824fa14cefc22e1bf7fdd5d11e474e4f58124685fc8d8f2eac
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: face82230b9dd3bf6cbde18aaee8dd857e17d0a3
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118963574"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466456"
 ---
-# <a name="iportabledevicevaluessetiportabledevicekeycollectionvalue-method"></a>Método IPortableDeviceValues::SetIPortableDeviceKeyCollectionValue
+# <a name="iportabledevicevaluessetiportabledevicekeycollectionvalue-method"></a>IPortableDeviceValues::SetIPortableDeviceKeyCollectionValue (método)
 
 El **método SetIPortableDeviceKeyCollectionValue** agrega un nuevo valor **SetIPortableDeviceKeyCollectionValue** (tipo VT UNKNOWN) o \_ sobrescribe uno existente.
 
@@ -51,7 +51,7 @@ HRESULT SetIPortableDeviceKeyCollectionValue(
 *pValue* \[ En\]
 </dt> <dd>
 
-Puntero a una **interfaz IPortableDeviceKeyCollection** que especifica el nuevo valor. El SDK copia una referencia a la interfaz enviada y llama **a AddRef** en ella.
+Puntero a una **interfaz IPortableDeviceKeyCollection** que especifica el nuevo valor. El SDK copia una referencia a la interfaz enviada y llama a **AddRef** en ella.
 
 </dd> </dl>
 
@@ -69,7 +69,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si un valor existente tiene la misma clave especificada por el parámetro *key,* sobrescribe el valor existente sin ninguna advertencia. La memoria de clave existente se libera correctamente.
 
@@ -84,11 +84,11 @@ Si un valor existente tiene la misma clave especificada por el parámetro *key,*
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
+[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::GetIPortableDeviceKeyCollectionValue**](iportabledevicevalues-getiportabledevicekeycollectionvalue.md)

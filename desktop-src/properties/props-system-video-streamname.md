@@ -4,12 +4,12 @@ ms.assetid: 8c1ba002-df19-4007-abbb-977b1f51e832
 title: System.Video.StreamName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c486a498c8276421a920346dcb475b939e6d8e80cb7b4faa8fdde35043f83d02
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: e4d92376a8edab133601b8ccaa3012e8fe45be40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119597895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468357"
 ---
 # <a name="systemvideostreamname"></a>System.Video.StreamName
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

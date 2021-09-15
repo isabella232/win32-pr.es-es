@@ -1,19 +1,19 @@
 ---
-description: Modo del Programa de exposición de la cámara en el momento en que se tomó la foto, según se lee en la información del archivo de imagen intercambiable (EXIF).
+description: Modo del programa de exposición de la cámara en el momento en que se tomó la foto, como se lee en la información del archivo de imagen intercambiable (EXIF).
 ms.assetid: d27003b4-f30a-4c48-b32f-933b2f29182a
 title: System.Photo.ExposureProgram
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1c7c537255c235082402c71d784ab75b20202a085228c8631b68bc77ddd0a5f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 07e0678f4316cf5aee9c5e13b26518208bf546c5
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118229980"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468397"
 ---
 # <a name="systemphotoexposureprogram"></a>System.Photo.ExposureProgram
 
-Modo del Programa de exposición de la cámara en el momento en que se tomó la foto, según se lee en la información del archivo de imagen intercambiable (EXIF).
+Modo del programa de exposición de la cámara en el momento en que se tomó la foto, como se lee en la información del archivo de imagen intercambiable (EXIF).
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507, Windows 8.1, Windows 8, Windows 7
 
@@ -130,7 +130,7 @@ propertyDescription
             defineName = PHOTO_EXPOSUREPROGRAM_LANDSCAPE
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 
@@ -138,7 +138,7 @@ Los valores PKEY se definen en Propkey.h.
 
 <dl> <dt>
 
-[Exchangeable Image File Format para cámaras digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format para cámaras de imágenes digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
 [propertyDescription](./propdesc-schema-propertydescription.md)

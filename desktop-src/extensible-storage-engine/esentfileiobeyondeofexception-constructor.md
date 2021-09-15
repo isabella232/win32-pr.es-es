@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 36bdc66f6e1ae816bcdd1a09612f17542e86d311110837dde4071e17d030995b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b69e9389e5741adf0dd2d6cb191db8bac48e7ee9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119838865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466028"
 ---
 # <a name="esentfileiobeyondeofexception-constructor"></a>Constructor EsentFileIOBeyondEOFException
 

@@ -14,11 +14,11 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ms.openlocfilehash: c2f954d7b96d3ec2304cd63cd689241a46384fda
-ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122626741"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467123"
 ---
 # <a name="splitbuttongallery-element"></a>Elemento SplitButtonGallery
 
@@ -54,7 +54,7 @@ Representa un [control Split Button Gallery (Dividir](windowsribbon-controls-spl
 <tr class="header">
 <th>Atributo</th>
 <th>Tipo</th>
-<th>Obligatorio</th>
+<th>Requerido</th>
 <th>Descripción</th>
 </tr>
 </thead>
@@ -123,7 +123,7 @@ Solo se aplica a galerías donde el valor del atributo <em>Type</em> es igual a 
 | Elemento                                                                                                 | Descripción                                        |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**Button**](windowsribbon-element-button.md)<br/>                                               | Puede producirse una o varias veces<br/> <br/> |
-| [**CheckBox**](windowsribbon-element-checkbox.md)<br/>                                           | Puede producirse una o varias veces<br/> <br/> |
+| [**Casilla**](windowsribbon-element-checkbox.md)<br/>                                           | Puede producirse una o varias veces<br/> <br/> |
 | [**SplitButton**](windowsribbon-element-splitbutton.md)<br/>                                     | Puede producirse una o varias veces<br/> <br/> |
 | [**SplitButtonGallery.MenuGroups**](windowsribbon-element-splitbuttongallery-menugroups.md)<br/> | Debe producirse exactamente una vez<br/> <br/>     |
 | [**SplitButtonGallery.MenuLayout**](windowsribbon-element-splitbuttongallery-menulayout.md)<br/> | Puede producirse como máximo una vez<br/> <br/>      |
@@ -176,7 +176,7 @@ Windows 8 y versiones más recientes.
 
 
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Opcional.
 
@@ -186,7 +186,7 @@ Puede producirse una o varias veces para cada [**elemento ControlGroup**](window
 
 [Interfaz de usuario \_ Una aplicación usa PKEY \_ BooleanValue](windowsribbon-reference-properties-uipkey-booleanvalue.md) para consultar el estado de alternancia del control de botón de **splitButtonGallery.**
 
-En la siguiente captura de pantalla se muestra el [control](windowsribbon-controls-splitbuttongallery.md) Galería de botones de división de cinta Microsoft Paint para Windows 7.
+En la siguiente captura de pantalla se muestra el [control](windowsribbon-controls-splitbuttongallery.md) Galería de botones de división de la cinta Microsoft Paint para Windows 7.
 
 ![captura de pantalla de un control de galería de botón de división en Microsoft Paint para Windows 7.](images/controls/splitbuttongallery.png)
 
@@ -246,7 +246,7 @@ En esta sección de código se muestran las declaraciones de control **SplitButt
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

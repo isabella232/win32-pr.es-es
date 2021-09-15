@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 93a09280fd8ab6e4b60efadeca92fcb54636175494d4f1d1508a2216b37d350d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b188f7f4634e43c0ccacfe1f9aea8fd48f8c1407
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117714042"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465641"
 ---
 # <a name="esentcolumnindexedexception-constructor"></a>Constructor EsentColumnIndexedException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentColumnIndexedException()
 public EsentColumnIndexedException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

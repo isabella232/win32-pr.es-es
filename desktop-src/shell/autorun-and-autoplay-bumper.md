@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 1e93affa174ba51361e268bf25a978ee62c544da5de2b04cefe25bd4cf5efd4c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 63a0e2161a4c5479864116322d2c87997c4d779e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119593525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468302"
 ---
 # <a name="autorun-and-autoplay"></a>Ejecución automática y reproducción automática
 

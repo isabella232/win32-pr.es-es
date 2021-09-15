@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d5f9edca154ff6402028ba873c1643e330ab316a54a63f14fa4f9b5bdb244483
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 89633d71dd75f4ef5e804aefddc85cf00ad5c03b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119134548"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465856"
 ---
 # <a name="themesavepreference"></a>THEME.savePreference
 
@@ -42,7 +42,7 @@ Cadena **que** especifica la clave del valor de preferencia que se guardará.
 <span id="theValue"></span><span id="thevalue"></span><span id="THEVALUE"></span>*theValue*
 </dt> <dd>
 
-Cadena **que** especifica el valor que se debe guardar.
+Cadena **que** especifica el valor que se guardará.
 
 </dd> </dl>
 
@@ -50,9 +50,9 @@ Cadena **que** especifica el valor que se debe guardar.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Una preferencia es un par clave-valor que se puede almacenar en el Registro para conservar información sobre el estado de Reproductor de Windows Media entre ejecuciones. Esta característica se puede usar, por ejemplo, para guardar la configuración de personalización de modo que no tenga que volver a especificarse cada vez que Reproductor de Windows Media se inicia.
+Una preferencia es un par clave-valor que se puede almacenar en el Registro para conservar información sobre el estado de las Reproductor de Windows Media entre ejecuciones. Esta característica se puede usar, por ejemplo, para guardar la configuración de personalización de modo que no tenga que volver a especificarse cada vez que Reproductor de Windows Media se inicia.
 
 Las preferencias no están cifradas y, por tanto, no son un método seguro para conservar los datos. No use preferencias para almacenar datos privados.
 

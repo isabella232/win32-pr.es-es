@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 32907d972a9f53eafeea4183d7c7152a922f589ec75bd9a1d378a2ed433f02f7
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 94a423e700c4a42e2ae7f7e522d83a5a4bd9bf3a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119044843"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466335"
 ---
 # <a name="d3dxmatrixlookatlh-function-d3dx9mathh"></a>Función D3DXMatrixLookAtLH (D3dx9math.h)
 
@@ -57,7 +57,7 @@ Puntero a la [**estructura D3DXMATRIX**](d3dxmatrix.md) que es el resultado de l
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Puntero a la [**estructura D3DXVECTOR3**](d3dxvector3.md) que define el punto ocular. Este valor se usa en la traducción.
+Puntero a la [**estructura D3DXVECTOR3**](d3dxvector3.md) que define el punto de los ojos. Este valor se usa en la traducción.
 
 </dd> <dt>
 
@@ -85,7 +85,7 @@ Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
 Puntero a una [**estructura D3DXMATRIX**](d3dxmatrix.md) que es una matriz de mirada a la izquierda.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El valor devuelto para esta función es el mismo valor devuelto en el *parámetro pOut.* De esta manera, la **función D3DXMatrixLookAtLH** se puede usar como parámetro para otra función.
 
@@ -116,7 +116,7 @@ yaxis = cross(zaxis, xaxis)
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

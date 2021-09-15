@@ -5,7 +5,7 @@ ms.assetid: b308957a-0d7e-45be-8625-db198b276dad
 keywords:
 - Método setProxyBypassForLocal Reproductor de Windows Media
 - Método setProxyBypassForLocal Reproductor de Windows Media , interfaz IWMPNetwork
-- Interfaz IWMPNetwork Reproductor de Windows Media , método setProxyBypassForLocal
+- Interfaz IWMPNetwork Reproductor de Windows Media método , setProxyBypassForLocal
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc751d05c87e780a2006e232d0b5d95e5d937e2719ad7e0c17ef6ac3d4b15333
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 35f869125d43529a039804fe28c0f0dc493f481e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118331148"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467021"
 ---
 # <a name="iwmpnetworksetproxybypassforlocal-method"></a>IWMPNetwork::setProxyBypassForLocal (método)
 
@@ -73,15 +73,15 @@ Valor **System.Boolean** que indica si se omite el servidor proxy.
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este método no tiene ningún efecto a menos que el valor recuperado de **IWMPNetwork.getProxySettings** sea 2 (use la configuración manual).
 
-Este método produce un error a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
+Se produce un error en este método a menos que la aplicación que realiza la llamada se ejecute en el equipo local o intranet.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo de código siguiente se usa **setProxyBypassForLocal para** especificar si se omite el servidor proxy Reproductor de Windows Media, cuando se usa el protocolo MMS, si el servidor de origen está en una red local. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
+En el ejemplo de código siguiente se usa **setProxyBypassForLocal** para especificar si se omite el servidor proxy Reproductor de Windows Media, cuando se usa el protocolo MMS, si el servidor de origen está en una red local. El **objeto AxWMPLib.AxWindowsMediaPlayer** se representa mediante la variable denominada player.
 
 
 ```CSharp
@@ -164,7 +164,7 @@ End If
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior<br/>                                                                      |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

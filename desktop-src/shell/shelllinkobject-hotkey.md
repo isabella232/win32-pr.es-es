@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 5b741b40d0947119109d3496a214ccdd75c59272fd7c5f4d0eac569a5b24c3a0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 23ab8615421eee7289e5f0bb58582bf8e0d48f17
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119591905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468049"
 ---
 # <a name="shelllinkobjecthotkey-property"></a>Propiedad ShellLinkObject.Hotkey
 
@@ -26,7 +26,7 @@ Obtiene o establece el método abreviado de teclado para el vínculo.
 
 Esta propiedad es de lectura y escritura.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```JScript
@@ -38,7 +38,7 @@ ShellLinkObject.Hotkey(iHotkey) = iHotkey
 
 ## <a name="property-value"></a>Valor de propiedad
 
-Método abreviado de teclado del vínculo. El método abreviado de teclado virtual está en el byte de orden bajo y las marcas modificadoras están en el byte de orden superior. Las marcas modificadoras pueden ser una combinación de los valores siguientes.
+método abreviado de teclado del vínculo. El método abreviado de teclado virtual está en el byte de orden bajo y las marcas modificadoras están en el byte de orden alto. Las marcas modificadoras pueden ser una combinación de los valores siguientes.
 
 <dt>
 
@@ -218,12 +218,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 2000 Professional solo con aplicaciones de escritorio sp3 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 

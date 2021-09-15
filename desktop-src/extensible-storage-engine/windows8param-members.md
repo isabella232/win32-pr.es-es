@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.wind
 ms:contentKeyID: 55104471
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 5340a8741e3c0709f4ab537e90f33a8cc197bb55e2fef30e55db3bea8e49c957
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 10a91be2c3f20fb762d5f1a79344fd4cb5c66a21
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119779875"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465865"
 ---
 # <a name="windows8param-members"></a>Miembros de Windows8Param
 
@@ -21,7 +21,7 @@ Incluir miembros heredados
 
 Parámetros del sistema que se introdujeron en Windows 8.
 
-El [tipo Windows8Param](./windows8param-class.md) expone los siguientes miembros.
+El [tipo Windows8Param](./windows8param-class.md) expone los miembros siguientes.
 
 ## <a name="fields"></a>Campos
 
@@ -52,7 +52,7 @@ El [tipo Windows8Param](./windows8param-class.md) expone los siguientes miembros
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>
 <td><a href="dn335510(v=exchg.10).md">HungIOActions</a></td>
-<td>Conjunto de acciones que se realizarán en las E/S que aparecen como no ejecutadas.</td>
+<td>Conjunto de acciones que se deben realizar en las E/S que aparecen como no ejecutadas.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Miembro estático" alt="Static member" /></td>

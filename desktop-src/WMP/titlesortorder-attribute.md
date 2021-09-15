@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72e85f9ca04ec62b3d8b867c74de4188deb1992903550e4af150ba0b87b42e47
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d407f0606b0125e748406b21570585a449897639
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120122795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465841"
 ---
 # <a name="titlesortorder-attribute"></a>Atributo TitleSortOrder
 
-El **atributo TitleSortOrder** es el valor que se usa para ordenar la **columna Title** de la biblioteca.
+El **atributo TitleSortOrder** es el valor que se va a usar para ordenar la **columna Title** de la biblioteca.
 
 ## <a name="applies-to"></a>Se aplica a
 
@@ -29,7 +29,7 @@ El **atributo TitleSortOrder** es el valor que se usa para ordenar la **columna 
 -   [Otros elementos](other-item-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo solo se almacena en la biblioteca.
 

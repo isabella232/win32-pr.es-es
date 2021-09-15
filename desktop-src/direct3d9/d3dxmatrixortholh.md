@@ -15,11 +15,11 @@ api_location:
 - d3dx9.lib
 - d3dx9.dll
 ms.openlocfilehash: 5492a6caba87025d83562c0327ac0e1f5a76f269
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107503"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465389"
 ---
 # <a name="d3dxmatrixortholh-function-d3dx9mathh"></a>Función D3DXMatrixOrthoLH (D3dx9math.h)
 
@@ -85,7 +85,7 @@ Valor z mínimo del volumen de vista que se conoce como z-near.
 
 Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Valor z máximo del volumen de vista que se conoce como z-far.
+Valor z máximo del volumen de vista al que se hace referencia como z-far.
 
 </dd> </dl>
 
@@ -95,7 +95,7 @@ Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
 Puntero al [**D3DXMATRIX resultante.**](../direct3d10/d3d10-d3dxmatrix.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Todos los parámetros de la **función D3DXMatrixOrthoLH** son distancias en el espacio de la cámara. Los parámetros describen las dimensiones del volumen de vista.
 

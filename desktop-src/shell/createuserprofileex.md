@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Userenv.dll
-ms.openlocfilehash: e6a507c508d508bc11946fe4c68d79e459135956e0a0539dd4c9a0fee2f04a7f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 8dbb76293fda769ec720221ca1bfa4474af1620c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118050822"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468272"
 ---
 # <a name="createuserprofileex-function"></a>Función CreateUserProfileEx
 
@@ -98,9 +98,9 @@ Tamaño del búfer especificado por *lpProfileDir*, en TCHAR.
 
 Tipo: **BOOL**
 
-**TRUE** si el perfil de usuario se crea como parte de una migración de perfil desde Windows 9x; de lo contrario, **FALSE**.
+**TRUE** si el perfil de usuario se crea como parte de una migración de perfil de Windows 9x; de lo contrario, **FALSE**.
 
-Cuando **es TRUE,** el perfil de usuario se configura en el directorio de perfil predeterminado, normalmente C: \\ Documents y Configuración \\ *UserName*. Si ese directorio ya existe, se usa. Si no es así, se crea.
+Cuando **es TRUE,** el perfil de usuario se configura en el directorio de perfil predeterminado( normalmente C: \\ Documentos y Configuración \\ *UserName*. Si ese directorio ya existe, se usa. Si no es así, se crea.
 
 Si **es FALSE,** se crea el directorio de perfil predeterminado si no existe. Si el directorio de perfil predeterminado ya existe, se crea un nuevo directorio para este perfil de usuario.
 
@@ -112,15 +112,15 @@ Tipo: **BOOL**
 
 Devuelve **TRUE** si el nuevo perfil de usuario se creó correctamente; de lo contrario, **FALSE**.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta función no se declara en los encabezados del Kit de desarrollo de software (SDK) y no tiene ninguna biblioteca de importación asociada. Debe usar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular a Userenv.dll. Se hace referencia a la versión ANSI de la función **CreateUserProfileExA** desde Userenv.dll como ordinal 153. Se hace referencia a la versión Unicode **CreateUserProfileExW** como ordinal 154.
+Esta función no se declara en los encabezados del Kit de desarrollo de software (SDK) y no tiene ninguna biblioteca de importación asociada. Debe usar las funciones [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) y [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular a Userenv.dll. Se hace referencia a la versión ANSI de la función **CreateUserProfileExA** Userenv.dll como ordinal 153. Se hace referencia a la versión Unicode **CreateUserProfileExW** como ordinal 154.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-----------------------------------|----------------------------------------------------------------------------------------|
 | Fin de compatibilidad de cliente<br/>  | Windows XP<br/>                                                                  |
 | Archivo DLL<br/>                    | <dl> <dt>Userenv.dll</dt> </dl> |

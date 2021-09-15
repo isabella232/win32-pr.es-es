@@ -9,12 +9,12 @@ keywords:
 - IManipulationProcessor interface,methods
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 161ac2fc0d30c70e0f305de55a3f65b2eb827a925615977ce726eaa200615806
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 995a848e18b8308d46ceda717bf7eec291953505
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118964204"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466223"
 ---
 # <a name="methods-imanipulationprocessor"></a>Métodos (IManipulationProcessor)
 

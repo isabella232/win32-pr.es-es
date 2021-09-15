@@ -4,12 +4,12 @@ ms.assetid: 832f2e6d-26ff-416e-a92e-ebaa33d4e7e5
 title: Operaciones de administración de COM+ dentro de transacciones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4182b143de38d838aea7c5aabd2d91bdb84f94480b2bed4c4441e204412ac834
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 21612ffec1b9f082dc6a91861882a71f18fb07be
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118308254"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465573"
 ---
 # <a name="com-administration-operations-within-transactions"></a>Operaciones de administración de COM+ dentro de transacciones
 
@@ -37,7 +37,7 @@ Normalmente, sin la presencia de una transacción, los cambios pendientes se esc
 
 Sin embargo, dentro de una transacción, [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) solo afecta a la memoria caché, no a la propia RegDB, y **SaveChanges** devuelve inmediatamente si todos los cambios se han confirmado transaccionalmente en RegDB. No hay ninguna garantía de que [**StartApplication**](/windows/desktop/api/ComAdmin/nf-comadmin-icomadmincatalog-startapplication) use datos nuevos posteriores a **la devolución de SaveChanges.** Si necesita llamar a **StartApplication** en este contexto, es aconsejable esperar algún período antes de hacerlo.
 
-## <a name="transaction-time-out-period"></a>Período de Time-Out transacción
+## <a name="transaction-time-out-period"></a>Período de Time-Out transacciones
 
 Si está realizando numerosas operaciones de administración dentro de una transacción, puede ser una transacción de larga duración. En este caso, el valor de tiempo de espera de la transacción puede ser un problema. Esto viene determinado por el valor de tiempo de espera de transacción establecido para el componente que inicia la transacción o por la configuración de tiempo de espera de todo el equipo para la máquina donde se ejecuta ese componente. Si está realizando numerosas operaciones dentro de una transacción, es aconsejable establecer el período de tiempo de espera de la transacción adecuado en un valor lo suficientemente largo y, si es necesario, restaurar la configuración original cuando haya terminado.
 
@@ -54,7 +54,7 @@ Si se produce un error al instalar una aplicación COM+ existente desde un archi
 
 ## <a name="recovering-in-the-event-of-system-hangs"></a>La recuperación en caso de que el sistema se desasocupe
 
-Si un componente que realiza operaciones de administración dentro de una transacción se bloqueara mientras mantiene un bloqueo de escritura en el código del servidor de catálogo, impediría que todos los demás realizara cambios en el catálogo. En caso de que esto suceda, puede borrar el bloqueo en el catálogo cerrando y reiniciando la aplicación Del sistema.
+Si un componente que realiza operaciones de administración dentro de una transacción se bloqueara mientras mantiene un bloqueo de escritura en el código del servidor de catálogo, impediría que todos los demás realizara cambios en el catálogo. En caso de que esto suceda, puede borrar el bloqueo en el catálogo apagando y reiniciando la aplicación Del sistema.
 
 ## <a name="scripting-with-a-transactioncontext-object"></a>Scripting con un objeto TransactionContext
 

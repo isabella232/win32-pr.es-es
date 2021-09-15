@@ -4,12 +4,12 @@ ms.assetid: 31824f21-04b1-45ca-adfa-15fd348e14a1
 title: Implementación de IWICMetadataBlockWriter
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43d49912ece0cc1e3c2299ace0a15f112ef7ab65ac03863b855b8a9ee64e62e1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 62044ce9695a45a8fe052d67479158aa9e4baf6d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118964974"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467932"
 ---
 # <a name="implementing-iwicmetadatablockwriter"></a>Implementación de IWICMetadataBlockWriter
 
@@ -21,7 +21,7 @@ ms.locfileid: "118964974"
 -   [SetWriterByIndex](#setwriterbyindex)
 -   [RemoveWriterByIndex](#removewriterbyindex)
 
-La clase de codificación de nivel de marco implementa esta interfaz para exponer todos los bloques de metadatos y solicitar el escritor de metadatos adecuado para cada bloque. Si el formato de imagen admite metadatos globales, fuera de cualquier marco individual, también debe implementar esta interfaz en la clase de codificador de nivel de contenedor. Para obtener una explicación más detallada de los controladores de metadatos, consulte la sección sobre [**IWICMetadataBlockReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader) en la sección Sobre la implementación de un descodificador de WIC-Enabled.
+La clase de codificación de nivel de marco implementa esta interfaz para exponer todos los bloques de metadatos y solicitar el escritor de metadatos adecuado para cada bloque. Si el formato de imagen admite metadatos globales, fuera de cualquier fotograma individual, también debe implementar esta interfaz en la clase de codificador de nivel de contenedor. Para obtener una explicación más detallada de los controladores de metadatos, consulte la sección sobre [**IWICMetadataBlockReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader) en la sección Sobre la implementación de un descodificador de WIC-Enabled.
 
 ``` syntax
 interface IWICMetadataBlockWriter : IWICMetadataBlockReader
@@ -37,7 +37,7 @@ interface IWICMetadataBlockWriter : IWICMetadataBlockReader
 
 ### <a name="initializefromblockreader"></a>InitializeFromBlockReader
 
-[**InitializeFromBlockReader**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockwriter-initializefromblockreader) usa [**IWICMetadataBlockReader para**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader) inicializar el escritor de bloques. Puede obtener **IWICMetadataBlockReader desde** el descodificador que descodificó la imagen.
+[**InitializeFromBlockReader usa**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockwriter-initializefromblockreader) [**IWICMetadataBlockReader para**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader) inicializar el escritor de bloques. Puede obtener **IWICMetadataBlockReader desde** el descodificador que descodificó la imagen.
 
 
 ```C++
@@ -63,7 +63,7 @@ Dado que al inicializar [**IWICMetadataBlockWriter**](/windows/desktop/api/Winco
 
 ### <a name="getwriterbyindex"></a>GetWriterByIndex
 
-[**GetWriterByIndex devuelve**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockwriter-getwriterbyindex) el [**objeto IWICMetadataWriter**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatawriter) para el enésimo bloque de metadatos, donde n es el valor pasado en el *parámetro nIndex.* Si no hay ningún escritor de metadatos registrado que pueda controlar el tipo de metadatos en el bloque enésimo, el generador de componentes devolverá el controlador de metadatos desconocido, que tratará el bloque de metadatos como un objeto binario grande (BLOB). La serializará como una secuencia de bits sin intentar analizarla.
+[**GetWriterByIndex devuelve**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockwriter-getwriterbyindex) el [**objeto IWICMetadataWriter**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatawriter) para el enésimo bloque de metadatos, donde n es el valor pasado en el *parámetro nIndex.* Si no hay ningún escritor de metadatos registrado que pueda controlar el tipo de metadatos en el enésimo bloque, el generador de componentes devolverá el controlador de metadatos desconocido, que tratará el bloque de metadatos como un objeto binario grande (BLOB). La serializará como una secuencia de bits sin intentar analizarla.
 
 ### <a name="addwriter"></a>AddWriter
 
@@ -71,11 +71,11 @@ Dado que al inicializar [**IWICMetadataBlockWriter**](/windows/desktop/api/Winco
 
 ### <a name="setwriterbyindex"></a>SetWriterByIndex
 
-[**SetWriterByIndex**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockwriter-setwriterbyindex) se usa para agregar un escritor de metadatos en un índice específico de la colección. Si actualmente existe un escritor de metadatos en ese índice, el nuevo debe reemplazarlo.
+[**SetWriterByIndex se**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockwriter-setwriterbyindex) usa para agregar un escritor de metadatos en un índice específico de la colección. Si actualmente existe un escritor de metadatos en ese índice, el nuevo debe reemplazarlo.
 
 ### <a name="removewriterbyindex"></a>RemoveWriterByIndex
 
-[**RemoveWriterByIndex**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockwriter-removewriterbyindex) se usa para quitar un escritor de metadatos de la colección.
+[**RemoveWriterByIndex se**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwicmetadatablockwriter-removewriterbyindex) usa para quitar un escritor de metadatos de la colección.
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -90,10 +90,10 @@ Dado que al inicializar [**IWICMetadataBlockWriter**](/windows/desktop/api/Winco
 [Instalación y registro de CODEC](-wic-codecinstallandreg.md)
 </dt> <dt>
 
-[Cómo escribir un códec WIC-Enabled datos](-wic-howtowriteacodec.md)
+[Cómo escribir un códec de WIC-Enabled](-wic-howtowriteacodec.md)
 </dt> <dt>
 
-[Windows Información general sobre componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
+[Windows Información general sobre los componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
 </dt> </dl>
 
  

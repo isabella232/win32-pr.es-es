@@ -4,21 +4,21 @@ description: Trabajar con dispositivos portátiles
 ms.assetid: 145ede07-a23b-486b-a561-9c87a48b72a8
 keywords:
 - Reproductor de Windows Media dispositivos portátiles
-- Reproductor de Windows Media de objetos, dispositivos portátiles
+- Reproductor de Windows Media modelo de objetos, dispositivos portátiles
 - modelo de objetos, dispositivos portátiles
-- Reproductor de Windows Media ActiveX, dispositivos portátiles
-- ActiveX, dispositivos portátiles
-- Reproductor de Windows Media Control ActiveX dispositivos móviles, dispositivos portátiles
+- Reproductor de Windows Media ActiveX control, dispositivos portátiles
+- ActiveX control, dispositivos portátiles
+- Reproductor de Windows Media Control de ActiveX móviles, dispositivos portátiles
 - Reproductor de Windows Media Dispositivos móviles y portátiles
 - dispositivos portátiles, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 34cbff16b293ac4ab438c1b018608497d2a61cdfa6fb727332d5b50a27de313c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b64c6e7047864b899a2d7dca2ba4754cc7cb5dc2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117745512"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467338"
 ---
 # <a name="working-with-portable-devices"></a>Trabajar con dispositivos portátiles
 
@@ -88,7 +88,7 @@ Tenga en cuenta que el índice que se muestra en los ejemplos anteriores no es e
 
 ## <a name="cleaning-up"></a>Limpieza
 
-En los ejemplos se usa la siguiente función para liberar la memoria de la matriz de dispositivos y liberar los punteros de interfaz:
+En los ejemplos se usa la siguiente función para liberar la memoria en la matriz de dispositivos y para liberar los punteros de interfaz:
 
 
 ```C++
@@ -136,7 +136,7 @@ bConnected)
 
 
 
-Los detalles de esta función no son pertinentes para las discusiones de esta sección, pero tenga en cuenta que esta función realiza tareas como habilitar o deshabilitar controles y cambiar el texto para mostrar en la interfaz de usuario.
+Los detalles de esta función no son pertinentes para las discusiones de esta sección, pero tenga en cuenta que esta función realiza tareas como habilitar o deshabilitar controles y cambiar el texto de presentación en la interfaz de usuario.
 
 La enumeración UIState se definió de la siguiente manera:
 
@@ -165,7 +165,7 @@ En las secciones siguientes se proporcionan explicaciones del código de ejemplo
 
 <dl> <dt>
 
-[**Guía de control del reproductor**](player-control-guide.md)
+[**Guía de control de reproductor**](player-control-guide.md)
 </dt> </dl>
 
  

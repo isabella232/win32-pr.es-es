@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 161840971181db3594257b1ae2440c3c1c06b35a871b21c4cbeddad56527a9d6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ebf130b4542992e18de49d58801f789d40106fef
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118783906"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466039"
 ---
 # <a name="apijetretrievekey-method"></a>Método Api.JetRetrieveKey
 
-Recupera la clave para la entrada de índice en la posición actual de un cursor. Consulte también [RetrieveKey(JET_SESID, JET_TABLEID, RetrieveKeyGrbit).](./api.retrievekey-method.md)
+Recupera la clave de la entrada de índice en la posición actual de un cursor. Consulte también [RetrieveKey(JET_SESID, JET_TABLEID, RetrieveKeyGrbit).](./api.retrievekey-method.md)
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -111,13 +111,13 @@ public static void JetRetrieveKey(
   - grbit  
     Tipo: [Microsoft.Isam.Esent.Interop.RetrieveKeyGrbit](./retrievekeygrbit-enumeration.md)  
     
-    Recuperar opciones de clave.
+    Recuperar las opciones de clave.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 
-[Api (clase)](./api-class.md)
+[Clase de API](./api-class.md)
 
 [Miembros de api](./api-members.md)
 

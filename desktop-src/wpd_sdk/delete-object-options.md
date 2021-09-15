@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 018c47a383a4fcd95d25bd13b00628678c6fa4a71e608f82544429020ea3f2c1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3a1fb8ce9a443c7cc93019804094dca84a635c40
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118194889"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466467"
 ---
 # <a name="delete_object_options-enumeration"></a>DELETE \_ OBJECT \_ OPTIONS (enumeración)
 
 El **tipo \_ de \_ enumeración DELETE OBJECT OPTIONS** describe las opciones que admite un dispositivo al eliminar un objeto.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```C++
@@ -54,7 +54,7 @@ Elimine el objeto y todos sus elementos secundarios.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 La aplicación puede recuperar las opciones de eliminación que admite el dispositivo llamando a [**IPortableDeviceCapabilities::GetCommandOptions**](/windows/desktop/api/PortableDeviceApi/nf-portabledeviceapi-iportabledevicecapabilities-getcommandoptions) para el comando **WPD \_ COMMAND OBJECT MANAGEMENT DELETE \_ \_ \_ \_ OBJECTS.** Debe examinar el valor de la opción **WPD \_ OPTION OBJECT MANAGEMENT \_ \_ \_ RECURSIVE \_ DELETE \_ SUPPORTED** que este método devuelve en un [**objeto IPortableDeviceValuesCollection.**](iportabledevicevaluescollection.md)
 
@@ -68,7 +68,7 @@ La aplicación puede recuperar las opciones de eliminación que admite el dispos
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

@@ -1,8 +1,8 @@
 ---
-description: El método SWbemRefresher. DeleteAll quita todos los elementos de la colección en el objeto SWbemRefresher. Objeto SWbemRefresher.
+description: El método SWbemRefresher.DeleteAll quita todos los elementos de la colección en el objeto SWbemRefresher. Objeto SWbemRefresher.
 ms.assetid: c6e462d3-52b3-40c0-9a9c-fa268415a5f0
 ms.tgt_platform: multiple
-title: Método SWbemRefresher. DeleteAll (Wbemdisp. h)
+title: Método SWbemRefresher.DeleteAll (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,17 +17,17 @@ api_type:
 api_location:
 - Wbemdisp.dll
 ms.openlocfilehash: ddeb1c5fc8e7fb1f9c5682a2da0d9a1d6f53ba5d
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105707555"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465497"
 ---
-# <a name="swbemrefresherdeleteall-method"></a>SWbemRefresher. DeleteAll, método
+# <a name="swbemrefresherdeleteall-method"></a>Método SWbemRefresher.DeleteAll
 
-El método **SWbemRefresher. deleteAll** quita todos los elementos de la colección en el objeto [**SWbemRefresher**](swbemrefresher.md) .
+El **método SWbemRefresher.DeleteAll** quita todos los elementos de la colección en el [**objeto SWbemRefresher.**](swbemrefresher.md)
 
-Para obtener una explicación de esta sintaxis, vea [convenciones de documentos para la API de scripting](document-conventions-for-the-scripting-api.md).
+Para obtener una explicación de esta sintaxis, vea [Document Conventions for the Scripting API](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -48,7 +48,7 @@ Este método no devuelve ningún valor.
 
 ## <a name="remarks"></a>Observaciones
 
-El [**SWbemRefreshableItem**](swbemrefreshableitem.md) correspondiente para cada elemento quitado tiene su propiedad [**actualizador**](swbemrefreshableitem-refresher.md) establecida en **null**, lo que indica que ya no tiene un actualizador primario.
+El [**elemento SWbemRefreshableItem**](swbemrefreshableitem.md) correspondiente para cada elemento quitado tiene su propiedad [**Refresher**](swbemrefreshableitem-refresher.md) establecida en **NULL,** lo que indica que ya no tiene un actualizador primario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,15 +58,15 @@ El [**SWbemRefreshableItem**](swbemrefreshableitem.md) correspondiente para cada
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemRefresher<br/>                                                        |
-| IID<br/>                      | \_ISWBEMREFRESHER IID<br/>                                                         |
+| IID<br/>                      | IID \_ ISWbemRefresher<br/>                                                         |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

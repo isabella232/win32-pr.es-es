@@ -14,18 +14,18 @@ api_type:
 api_location:
 - d3dxof.lib
 - d3dxof.dll
-ms.openlocfilehash: 72b3ffa54d9ec0362100b2e2f1ac54b417d1425d0e6e311da3f9b5b7d30a553a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 30d2fb26e3752e302726edce51354369f3b067eb
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118800215"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466057"
 ---
 # <a name="idirectxfiledata-interface"></a>Interfaz IDirectXFileData
 
 Las aplicaciones usan los métodos de la interfaz IDirectXFileData para compilar o acceder a la jerarquía inmediata del objeto de datos. Las restricciones de plantilla determinan la jerarquía. Los tipos de datos permitidos por la plantilla se denominan miembros opcionales. Los miembros opcionales no son necesarios, pero un objeto podría perder información importante sin ellos. Estos miembros opcionales se guardan como elementos secundarios del objeto de datos. Los secundarios pueden ser otro objeto de datos, una referencia a un objeto de datos anterior o un objeto binario. En desuso.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 La **interfaz IDirectXFileData** hereda de [**IDirectXFileObject**](idirectxfileobject.md). **IDirectXFileData también** tiene estos tipos de miembros:
 
@@ -50,7 +50,7 @@ La **interfaz IDirectXFileData tiene** estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 El GUID de la interfaz IDirectXFileData es IID \_ IDirectXFileData.
 
@@ -74,7 +74,7 @@ typedef interface IDirectXFileData *LPDIRECTXFILEDATA;
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

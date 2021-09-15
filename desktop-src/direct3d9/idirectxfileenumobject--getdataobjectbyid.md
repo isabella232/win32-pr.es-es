@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dxof.lib
 - D3dxof.dll
-ms.openlocfilehash: 49bee0f513bcca71a98e72fb3f51e1bcc458083ce9b165b3e5163fb5f6b71708
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a27ac17963d4876a3cb0a26d05b63f4c34bf99fc
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118292236"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466052"
 ---
 # <a name="idirectxfileenumobjectgetdataobjectbyid-method"></a>IDirectXFileEnumObject::GetDataObjectById (método)
 
@@ -76,7 +76,7 @@ Si el método se realiza correctamente, el valor devuelto es DXFILE \_ OK. Si se
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

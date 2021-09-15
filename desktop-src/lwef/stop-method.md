@@ -1,19 +1,19 @@
 ---
-title: Método Stop (características heredadas Windows entorno)
+title: Método Stop (características heredadas Windows entorno de ejecución)
 description: Stop (Método)
 ms.assetid: 68372f72-db9c-447c-a3e4-488940c730d7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 572a93db5697aaae0dcfed6b45a834323c106bba447d2d9a8e94109f788af25c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 20192634c197559ca54bb8af3d8a29f37beb53e2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118745967"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467219"
 ---
-# <a name="stop-method-legacy-windows-environment-features"></a>Método Stop (características heredadas Windows entorno)
+# <a name="stop-method-legacy-windows-environment-features"></a>Método Stop (características heredadas Windows entorno de ejecución)
 
-\[Microsoft Agent está en desuso a partir Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
+\[Microsoft Agent está en desuso a partir de Windows 7 y puede no estar disponible en versiones posteriores de Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Detiene la animación del carácter especificado.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxis**
 </dt> <dd>
 
-*agent***. Caracteres ("**_CharacterID_*_"). Solicitud de_ *  \[ *detenerse*\]
+*agent***. Caracteres ("**_CharacterID_*_"). Detener_ *  \[ *solicitud*\]
 
 
 
@@ -41,9 +41,9 @@ Detiene la animación del carácter especificado.
 
 </dd> </dl>
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Para especificar el parámetro de solicitud, debe crear una variable y asignar la solicitud de animación que desea detener. Si no establece el  parámetro Request, el servidor detiene todas las animaciones del carácter, incluidas las llamadas [**Get**](get-method.md) en  cola, y borra su cola de animación a menos que el carácter esté reproduciendo actualmente su animación **Oculta** o Mostrando. Este método no detiene las llamadas **Get** que no están en cola.
+Para especificar el parámetro de solicitud, debe crear una variable y asignar la solicitud de animación que desea detener. Si no establece el  parámetro Request, el servidor detiene todas las animaciones del carácter, incluidas las llamadas [**Get**](get-method.md) en  cola, y borra su cola de animación a menos que el carácter esté reproduciendo su animación **Ocultando** o Mostrando. Este método no detiene las llamadas **Get** que no están en cola.
 
 Para detener una animación específica o [**una llamada Get,**](get-method.md) declare una variable de objeto y asigne la solicitud de animación a esa variable:
 

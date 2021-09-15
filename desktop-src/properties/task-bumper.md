@@ -4,12 +4,12 @@ ms.assetid: 918def4b-c8dd-4094-b7b0-af8f8061b22e
 title: Tarea
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b518c29910d2fb9662b57d63b016b998460c7c3d0d3b74e35387dcdb76a7d97
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 17184c9899dc9deb7786ae9059fd18a42daf9064
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118052387"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468329"
 ---
 # <a name="task"></a>Tarea
 

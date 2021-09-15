@@ -1,6 +1,6 @@
 ---
 description: De forma predeterminada, a Windows vista Panel de control no se muestran los elementos cuando Windows se ejecuta en modo seguro.
-title: Acceso a la Panel de control en Caja fuerte modo de acceso
+title: Acceso al Panel de control en Caja fuerte modo de acceso
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: f37bcb0f-9417-4cc4-a57d-4f67a9ccda19
@@ -9,14 +9,14 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 777a44c7fe30b0481096a1c5d62c98410277a3bc76169925aff4ae5e59e549d8
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 0f7a401bbc22a7f8de3618f844bfe463fa3baa50
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119710795"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468305"
 ---
-# <a name="accessing-the-control-panel-in-safe-mode"></a>Acceso a la Panel de control en Caja fuerte modo de acceso
+# <a name="accessing-the-control-panel-in-safe-mode"></a>Acceso al Panel de control en Caja fuerte modo de acceso
 
 De forma predeterminada, a Windows vista Panel de control no se muestran los elementos cuando Windows se ejecuta en modo seguro. Para permitir que un nuevo Panel de control elemento se vea en modo seguro, se pueden establecer los valores del Registro adecuados para el tipo de elemento. Los valores se interpretan de la siguiente manera:
 
@@ -32,7 +32,7 @@ De forma predeterminada, a Windows vista Panel de control no se muestran los ele
 
  
 
-En este ejemplo se muestran las entradas necesarias para un elemento implementado como .cpl o .dll archivo. Especifica que el elemento debe aparecer en modo seguro con redes.
+En este ejemplo se muestran las entradas necesarias para un elemento implementado como un .cpl o .dll archivo. Especifica que el elemento debe aparecer en modo seguro con redes.
 
 ```
 HKEY_LOCAL_MACHINE

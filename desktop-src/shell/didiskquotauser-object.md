@@ -1,6 +1,6 @@
 ---
-description: Permite a un cliente administrar la configuración de cuota global de disco de un volumen NTFS. Este objeto hace que la funcionalidad esencial de la interfaz DIDiskQuotaUser esté disponible para scripting y aplicaciones basadas Visual Basic Microsoft.
-title: DiDiskQuotaUser, objeto
+description: Permite a un cliente administrar la configuración de cuota de disco global de un volumen NTFS. Este objeto hace que la funcionalidad esencial de la interfaz DIDiskQuotaUser esté disponible para scripting y aplicaciones basadas Visual Basic Microsoft.
+title: Objeto DIDiskQuotaUser
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 0cdf3293-3dcf-44e7-a80d-4eacf9d09fbf
-ms.openlocfilehash: 65d8397ed07fc3ebab9fd4846b008f97c1b7e756366118314b978f94b64c8636
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b370056f40320561a38b1f77fbcf9a53ee35686a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119032813"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468262"
 ---
-# <a name="didiskquotauser-object"></a>DiDiskQuotaUser, objeto
+# <a name="didiskquotauser-object"></a>Objeto DIDiskQuotaUser
 
-Permite a un cliente administrar la configuración de cuota global de disco de un volumen NTFS. Este objeto hace que la funcionalidad esencial de la **interfaz DIDiskQuotaUser** esté disponible para scripting y aplicaciones basadas Visual Basic Microsoft.
+Permite a un cliente administrar la configuración de cuota de disco global de un volumen NTFS. Este objeto hace que la funcionalidad esencial de la **interfaz DIDiskQuotaUser** esté disponible para scripting y aplicaciones basadas Visual Basic Microsoft.
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto DIDiskQuotaUser** tiene estos tipos de miembros:
 
@@ -51,16 +51,16 @@ El **objeto DIDiskQuotaUser** tiene estas propiedades.
 
 
 
-| Propiedad                                                                        | Tipo de acceso           | Descripción                                                                                          |
+| Propiedad.                                                                        | Tipo de acceso           | Descripción                                                                                          |
 |:--------------------------------------------------------------------------------|:----------------------|:-----------------------------------------------------------------------------------------------------|
 | [**AccountContainerName**](didiskquotauser-accountcontainername.md)<br/> | Solo lectura<br/>  | Obtiene el nombre del contenedor de cuentas del usuario.<br/>                                            |
 | [**AccountStatus**](didiskquotauser-accountstatus.md)<br/>               | Solo lectura<br/>  | Obtiene el estado de la cuenta del usuario.<br/>                                                    |
 | [**Displayname**](didiskquotauser-displayname.md)<br/>                   | Solo lectura<br/>  | Obtiene el nombre para mostrar del usuario.<br/>                                                             |
-| [**ID**](didiskquotauser-id.md)<br/>                                     | Solo lectura<br/>  | Obtiene un identificador que identifica de forma única al usuario.<br/>                                             |
+| [**id**](didiskquotauser-id.md)<br/>                                     | Solo lectura<br/>  | Obtiene un identificador que identifica de forma única al usuario.<br/>                                             |
 | [**LogonName**](didiskquotauser-logonname.md)<br/>                       | Solo lectura<br/>  | Obtiene el nombre de la cuenta de inicio de sesión del usuario.<br/>                                                       |
-| [**QuotaLimit**](didiskquotauser-quotalimit.md)<br/>                     | Lectura/escritura<br/> | Establece u obtiene el límite de cuota actual [**del usuario.**](diskquotacontrol-object.md)<br/>           |
+| [**QuotaLimit**](didiskquotauser-quotalimit.md)<br/>                     | Lectura y escritura<br/> | Establece u obtiene el límite de cuota actual [**del usuario.**](diskquotacontrol-object.md)<br/>           |
 | [**QuotaLimitText**](didiskquotauser-quotalimittext.md)<br/>             | Solo lectura<br/>  | Obtiene el límite de cuota actual [**del usuario**](diskquotacontrol-object.md) como una cadena de texto. <br/> |
-| [**QuotaThreshold**](didiskquotauser-quotathreshold.md)<br/>             | Lectura/escritura<br/> | Establece u obtiene el umbral de advertencia del usuario, en bytes.<br/>                                      |
+| [**QuotaThreshold**](didiskquotauser-quotathreshold.md)<br/>             | Lectura y escritura<br/> | Establece u obtiene el umbral de advertencia del usuario, en bytes.<br/>                                      |
 | [**QuotaThresholdText**](didiskquotauser-quotathresholdtext.md)<br/>     | Solo lectura<br/>  | Obtiene el umbral de advertencia del usuario como una cadena de texto.<br/>                                       |
 | [**QuotaUsed**](didiskquotauser-quotaused.md)<br/>                       | Solo lectura<br/>  | Obtiene el uso actual del disco del usuario, en bytes.<br/>                                             |
 | [**QuotaUsedText**](didiskquotauser-quotausedtext.md)<br/>               | Solo lectura<br/>  | Obtiene el uso actual del disco del usuario como una cadena de texto.<br/>                                      |
@@ -69,11 +69,11 @@ El **objeto DIDiskQuotaUser** tiene estas propiedades.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Cada usuario del volumen administrado por el objeto [**DiskQuotaControl**](diskquotacontrol-object.md) tiene asociado un objeto **DIDiskQuotaUser.** Este objeto permite a un cliente administrar la configuración de un usuario individual. Hay varias maneras de obtener el objeto **DIDiskQuotaUser de** un usuario:
+Cada usuario del volumen administrado por el objeto [**DiskQuotaControl**](diskquotacontrol-object.md) tiene asociado un **objeto DIDiskQuotaUser.** Este objeto permite a un cliente administrar la configuración de un usuario individual. Hay varias maneras de obtener el objeto **DIDiskQuotaUser** de un usuario:
 
--   Los **objetos DIDiskQuotaUser** para todos los usuarios con cuotas en el volumen se exponen como una colección y se pueden enumerar. A continuación se describe cómo enumerar **objetos DIDiskQuotaUser.**
+-   Los **objetos DIDiskQuotaUser** para todos los usuarios con cuotas en el volumen se exponen como una colección y se pueden enumerar. A continuación se muestra una explicación de **cómo enumerar los objetos DIDiskQuotaUser.**
 -   Al agregar un nuevo usuario, el [**método AddUser**](diskquotacontrol-adduser.md) devuelve el objeto **DIDiskQuotaUser del** usuario.
 -   Si tiene el nombre del usuario, el [**método FindUser**](diskquotacontrol-finduser.md) devuelve el objeto **DIDiskQuotaUser del** usuario.
 
@@ -82,12 +82,12 @@ Cada usuario del volumen administrado por el objeto [**DiskQuotaControl**](diskq
 Los **objetos DIDiskQuotaUser** para todos los usuarios con una cuota en el volumen se exponen como una colección. El [**objeto DiskQuotaControl**](diskquotacontrol-object.md) exporta un método de enumerador estándar que permite enumerar la colección de objetos **DIDiskQuotaUser.** El procedimiento siguiente muestra cómo realizar la enumeración con Microsoft JScript (compatible con la especificación del lenguaje ECMA 262). Puede usar un procedimiento similar con Visual Basic o Microsoft Visual Basic Scripting Edition (VBScript).
 
 1.  Cree un nuevo [**objeto DiskQuotaControl.**](diskquotacontrol-object.md)
-2.  Inicialíctelo [**con Inicializar**](diskquotacontrol-initialize.md).
-3.  Cree un nuevo JScript **objeto Enumerador.**
-4.  Use un **bucle for** para enumerar los **objetos DIDiskQuotaUser.** No es necesario establecer un valor inicial. El método **moveNext** del objeto enumerador notifica al método **item** que devuelva el siguiente **objeto DIDiskQuotaUser.** El **método atEnd** devuelve **false** cuando se llega al final de la lista.
+2.  Inicialícítelo [**con Inicializar**](diskquotacontrol-initialize.md).
+3.  Cree un nuevo objeto JScript **enumerador.**
+4.  Use un **bucle for** para enumerar los **objetos DIDiskQuotaUser.** No es necesario establecer un valor inicial. El método **moveNext** del objeto enumerador notifica al método **item** que devuelva el siguiente objeto **DIDiskQuotaUser.** El **método atEnd** devuelve **false** cuando se llega al final de la lista.
 5.  Según sea necesario, use el objeto **DIDiskQuotaUser** devuelto por el método **item** del enumerador para recuperar o establecer una o varias de las propiedades de cuota de disco del usuario asociado.
 
-En el fragmento de código siguiente se muestra cómo enumerar **objetos DIDiskQuotaUser** con JScript. El **argumento \_ Volume Label** que se pasa a la función **EnumUsers** es un valor de cadena que contiene una etiqueta de volumen como "C: \\ \\ ".
+El fragmento de código siguiente muestra cómo enumerar objetos **DIDiskQuotaUser** con JScript. El **argumento \_ Volume Label** que se pasa a la función **EnumUsers** es un valor de cadena que contiene una etiqueta de volumen como "C: \\ \\ ".
 
 
 ```
@@ -130,7 +130,7 @@ function EnumUsers(Volume_Label)
 
 <dl> <dt>
 
-[**Objeto shell**](shell.md)
+[**Objeto Shell**](shell.md)
 </dt> </dl>
 
  

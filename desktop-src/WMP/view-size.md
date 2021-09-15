@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e0d9bd583b280f39bee38f0e109e6bb2bba6ce08ec0e7cea4c082b4a6db55739
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: def9b416dfe5eda052ef430b587fa1c6017b4e5f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119615315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465915"
 ---
 # <a name="viewsize"></a>VIEW.size
 
@@ -56,9 +56,9 @@ Cadena que especifica el borde o la esquina que se va a mover al cambiar el tama
 
 Este método no devuelve ningún valor.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Normalmente se llama a este método desde dentro **de un controlador onmousedown.** Se encarga del redimensionamiento mientras se arrastra el mouse y deja de tener el tamaño cuando se libera el botón del mouse. Si el tamaño de **view** está restringido, no puede arrastrar el mouse para cambiar el tamaño de la vista más **allá** de los límites restringidos.
+Normalmente se llama a este método desde dentro **de un controlador onmousedown.** Se encarga del redimensionamiento mientras se arrastra el mouse y deja de hacer el tamaño cuando se libera el botón del mouse. Si el tamaño de **view** está restringido, no puede arrastrar el mouse para cambiar el tamaño de la vista más **allá** de los límites restringidos.
 
 ## <a name="examples"></a>Ejemplos
 
@@ -80,7 +80,7 @@ Normalmente se llama a este método desde dentro **de un controlador onmousedown
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 

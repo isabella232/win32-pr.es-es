@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: c02e65bb17e07b3d75c4949730141831e5b146011e77478d95c8976b792c1c5f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: df8b52a5bd5267cf88eaf101a0589000099dd600
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118094560"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466081"
 ---
 # <a name="id3dxanimationcontrollergetcurrentpriorityblend-method"></a>Método ID3DXAnimationController::GetCurrentPriorityBlend
 

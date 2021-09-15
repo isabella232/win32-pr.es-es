@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102017
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: cd853f559928a87b9ebf393b78d3cb505ac82b2a0d6b013bce2b83b9f31761cb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6e9e84c44ec3a4e6f2da233423c8ab312ae8b720
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119115965"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466023"
 ---
 # <a name="esentinvalidplaceholdercolumnexception-properties"></a>Propiedades de EsentInvalidPlaceholderColumnException
 
 Incluir miembros protegidos  
 Incluir miembros heredados  
 
-El [tipo EsentInvalidPlaceholderColumnException](./esentinvalidplaceholdercolumnexception-class.md) expone los siguientes miembros.
+El [tipo EsentInvalidPlaceholderColumnException](./esentinvalidplaceholdercolumnexception-class.md) expone los miembros siguientes.
 
 ## <a name="properties"></a>Propiedades
 
@@ -34,7 +34,7 @@ El [tipo EsentInvalidPlaceholderColumnException](./esentinvalidplaceholdercolumn
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Datos</a></td>
+<td><a href="/dotnet/api/system.exception.data#System_Exception_Data">Data</a></td>
 <td>(Se hereda de la <a href="/dotnet/api/system.exception">excepción</a>).</td>
 </tr>
 <tr class="even">
@@ -83,7 +83,7 @@ El [tipo EsentInvalidPlaceholderColumnException](./esentinvalidplaceholdercolumn
 
 Superior
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 #### <a name="reference"></a>Referencia
 

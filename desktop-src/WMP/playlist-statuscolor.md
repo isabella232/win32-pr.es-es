@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8363c8b466d2b6fe6cf8d0858256e3974fcb8f5ea34c73c724e13eb9008f56e9
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 23df2ca06a196db032993de7a75fae61cbcda5df
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118335668"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466150"
 ---
 # <a name="playliststatuscolor"></a>PLAYLIST.statusColor
 
@@ -29,13 +29,13 @@ El **atributo statusColor** especifica o recupera el color de la línea de estad
 
 ## <a name="possible-values"></a>Valores posibles
 
-Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer Microsoft. Tiene un valor predeterminado igual al valor del atributo **backgroundColor.**
+Este atributo es una cadena de **lectura** y escritura que contiene cualquier valor de color Internet Explorer microsoft. Tiene un valor predeterminado igual al valor del atributo **backgroundColor.**
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|---------------------------------------------------|
 | Versión<br/> | Reproductor de Windows Media serie 9 o posterior<br/> |
 
@@ -48,7 +48,7 @@ Este atributo es una cadena de **lectura** y escritura que contiene cualquier va
 [**Referencia de color**](color-reference.md)
 </dt> <dt>
 
-[**ELEMENTO PLAYLIST**](playlist-element.md)
+[**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
 [**PLAYLIST.backgroundImage**](playlist-backgroundimage.md)

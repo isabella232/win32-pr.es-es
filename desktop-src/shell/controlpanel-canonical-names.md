@@ -1,28 +1,28 @@
 ---
-description: A Windows Vista, Panel de control elementos incluidos con Windows reciben un nombre canónico que se puede usar en una llamada API o una instrucción de línea de comandos para iniciar ese elemento mediante programación.
+description: A Windows Vista, Panel de control elementos incluidos con Windows reciben un nombre canónico que se puede usar en una llamada API o en una instrucción de línea de comandos para iniciar ese elemento mediante programación.
 ms.assetid: A02DFC9F-646D-40d8-901C-7239A820DE2C
 title: Nombres canónicos de Panel de control elementos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aebf831bfb1cb86c41a8f97c2bfa041dad836e4b77f8fd233cb94d4a3951c38d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a55fc360b0d3db0f85a057977d1898c59d09d5cd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119943475"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468293"
 ---
 # <a name="canonical-names-of-control-panel-items"></a>Nombres canónicos de Panel de control elementos
 
-A Windows Vista, Panel de control elementos incluidos con Windows reciben un nombre canónico que se puede usar en una llamada [API](executing-control-panel-items.md) o una instrucción de línea de comandos para iniciar ese elemento mediante programación. A partir Windows 7 y Windows Server 2008 R2, los nombres canónicos se pueden usar en una directiva de grupo para ocultar elementos Panel de control específicos. En este tema se proporcionan detalles para cada elemento Panel de control: nombre canónico, GUID, nombre del módulo y las versiones del sistema operativo que reconocen el nombre canónico.
+A Windows Vista, Panel de control elementos incluidos con Windows reciben un nombre canónico que se puede usar en una llamada [API](executing-control-panel-items.md) o en una instrucción de línea de comandos para iniciar ese elemento mediante programación. A partir de Windows 7 y Windows Server 2008 R2, los nombres canónicos se pueden usar en una directiva de grupo para ocultar elementos Panel de control específicos. En este tema se proporcionan detalles Panel de control elemento: nombre canónico, GUID, nombre del módulo y las versiones del sistema operativo que reconocen el nombre canónico.
 
 > [!Note]  
-> Los nombres canónicos Panel de control los elementos no se admiten antes de Windows Vista.
+> Los nombres canónicos Panel de control no se admiten antes de Windows Vista.
 
  
 
 -   [Panel de control canónicos](#control-panel-canonical-names)
 -   [Nombres canónicos Panel de control en desuso](#deprecated-control-panel-canonical-names)
--   [Uso de nombres canónicos en directiva de grupo](#using-canonical-names-in-local-group-policy)
+-   [Usar nombres canónicos en directiva de grupo](#using-canonical-names-in-local-group-policy)
 -   [Comentarios:](#remarks)
 
 ## <a name="control-panel-canonical-names"></a>Panel de control canónicos
@@ -259,7 +259,7 @@ Estos son los elementos Panel de control disponibles en Windows 8.1:
 
     | Nombre de página   | Aperturas                                  |
     |-------------|----------------------------------------|
-    | pageUserHub | Elección de un usuario y configuración de la seguridad de la familia |
+    | pageUserHub | Elección de un usuario y configuración de la seguridad familiar |
 
     
 
@@ -320,7 +320,7 @@ Estos son los elementos Panel de control disponibles en Windows 8.1:
     |-----------|-------------|
     | 1         | Seguridad    |
     | 2         | Privacidad     |
-    | 3         | Content     |
+    | 3         | Contenido     |
     | 4         | Conexiones |
     | 5         | Programas    |
     | 6         | Avanzado    |
@@ -342,7 +342,7 @@ Estos son los elementos Panel de control disponibles en Windows 8.1:
 -   **GUID:**{0D2A3442-5181-4E3A-9BD4-83BD10AF3D76}
 -   **Sistema operativo compatible:** Windows Vista, Windows 7, Windows 8, Windows 8.1
 -   **Nombre del** módulo: @%SystemRoot% \\ System32 \\isnssrv.dll,-5005
--   Este Panel de control elemento solo se verá en las versiones de servidor de Windows.
+-   Este Panel de control solo se verá en las versiones de servidor de Windows.
 
 ### <a name="keyboard"></a>Keyboard
 
@@ -383,7 +383,7 @@ Estos son los elementos Panel de control disponibles en Windows 8.1:
 -   **GUID:**{AB3BE6AA-7561-4838-AB77-ACF8427DF426}
 -   **Sistema operativo compatible:** Windows 7, Windows 8, Windows 8.1
 -   **Nombre del** módulo: @%SystemRoot% \\ System32 \\mpiocpl.dll,-1000
--   Este Panel de control elemento solo se verá en las versiones de servidor de Windows.
+-   Este Panel de control solo se verá en las versiones de servidor de Windows.
 
 ### <a name="network-and-sharing-center"></a>Centro de redes y recursos compartidos
 
@@ -426,7 +426,7 @@ Estos son los elementos Panel de control disponibles en Windows 8.1:
 
      
 
-### <a name="personalization"></a>Personalization
+### <a name="personalization"></a>Personalización
 
 -   **Nombre canónico:** Microsoft.Personalization
 -   **GUID:**{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921}
@@ -449,7 +449,7 @@ Estos son los elementos Panel de control disponibles en Windows 8.1:
 -   **GUID:**{40419485-C444-4567-851A-2DD7BFA1684D}
 -   **Sistema operativo compatible:** Windows 7, Windows 8, Windows 8.1
 -   **Nombre del** módulo: @%SystemRoot% \\ System32 \\telephon.cpl,-1
--   La ventana que se inicia este valor se titulada "Información de ubicación" en las versiones de Windows antes de Windows 8. La interfaz de usuario del elemento cambia considerablemente a Windows 8.
+-   La ventana que se inicia este valor se titula "Información de ubicación" en las versiones de Windows anteriores a Windows 8. La interfaz de usuario del elemento ha cambiado considerablemente a Windows 8.
 
 ### <a name="power-options"></a>Opciones de energía
 
@@ -502,7 +502,7 @@ Estos son los elementos Panel de control disponibles en Windows 8.1:
 
     | Nombre de página | Aperturas          |
     |-----------|----------------|
-    | 1         | Ubicación       |
+    | 1         | Location       |
     | 2         | Administrativo |
 
     
@@ -528,14 +528,14 @@ Estos son los elementos Panel de control disponibles en Windows 8.1:
 -   **Nombre canónico:** Microsoft.SpeechRecognition
 -   **GUID:**{58E3C745-D971-4081-9034-86E34B30836A}
 -   **Sistema operativo compatible:** Windows 7, Windows 8, Windows 8.1
--   **Nombre del módulo:**@%SystemRoot% \\ System32 \\ \\ SpeechUx \\speechuxcpl.dll,-1
+-   **Nombre del** módulo: @%SystemRoot% \\ System32 \\ \\ SpeechUx \\speechuxcpl.dll,-1
 
 ### <a name="storage-spaces"></a>Espacios de almacenamiento
 
 -   **Nombre canónico:** Microsoft.StorageSpaces
 -   **GUID:**{F942C606-0914-47AB-BE56-1321B8035096}
 -   **Sistema operativo compatible:** Windows 8, Windows 8.1
--   **Nombre del** módulo: @C: \\ Windows \\ System32 \\SpaceControl.dll,-1
+-   **Nombre del** @C: \\ módulo: Windows \\ System32 \\SpaceControl.dll,-1
 
 ### <a name="sync-center"></a>Centro de sincronización
 
@@ -614,7 +614,7 @@ Estos son los elementos Panel de control disponibles en Windows 8.1:
 -   **Nombre canónico:** Microsoft.WindowsFirewall
 -   **GUID:**{4026492F-2F69-46B8-B9BF-5654FC07E423}
 -   **Sistema operativo compatible:** Windows Vista, Windows 7, Windows 8, Windows 8.1
--   **Nombre del** módulo: @C: \\ Windows \\ system32 \\FirewallControlPanel.dll,-12122
+-   **Nombre del** @C: \\ módulo: Windows \\ system32 \\FirewallControlPanel.dll,-12122
 -   **Páginas**
 
     | Nombre de página         | Aperturas        |
@@ -661,11 +661,11 @@ Estos son los elementos Panel de control disponibles en Windows 8.1:
 -   **Nombre canónico:** Microsoft.WorkFolders
 -   **GUID:**{ECDB0924-4208-451E-8EE0-373C0956DE16}
 -   **Sistema operativo compatible:** Windows 8.1
--   **Nombre del** módulo: @C: \\ Windows \\ System32 \\WorkfoldersControl.dll,-1
+-   **Nombre del** @C: \\ módulo: Windows \\ System32 \\WorkfoldersControl.dll,-1
 
 ## <a name="deprecated-control-panel-canonical-names"></a>Nombres canónicos Panel de control en desuso
 
-Los siguientes son nombres canónicos que ya no se usan a Windows 8.1 o posterior. Algunos se han quitado por completo. Otros se han rematado en estas situaciones:
+Los siguientes son nombres canónicos que ya no se usan a Windows 8.1 o posterior. Algunos se han quitado por completo. Otras se han rematado en estas situaciones:
 
 -   Se cambia Panel de control nombre de un elemento. Al elemento cuyo nombre se ha cambiado se le da un nuevo nombre canónico, pero mantiene el mismo GUID. En este caso, el nombre canónico anterior inicia el nombre Panel de control elemento. Tenga en cuenta que es posible que el elemento que se inicia no use la misma interfaz de usuario que la versión anterior de ese elemento.
 -   La funcionalidad de uno o varios elementos Panel de control se mueve o se consolida en un nuevo elemento. En este caso, el nombre canónico anterior se asigna al nuevo elemento Panel de control más adecuado.
@@ -677,7 +677,7 @@ Los siguientes son nombres canónicos que ya no se usan a Windows 8.1 o posterio
 
 
 
-| Nombre canónico en desuso                                   | Control Panel Item                | GUID                                   | Notas                                                                                                                                                                                                                                                                                                                                                     |
+| Nombre canónico en desuso                                   | Panel de control elemento                | GUID                                   | Notas                                                                                                                                                                                                                                                                                                                                                     |
 |-------------------------------------------------------------|-----------------------------------|----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Microsoft.AddHardware                                       | Agregar hardware                      | {7A979262-40CE-46ff-AEEE-7884AC3B6136} | Mapas a [Microsoft.DevicesAndPrinters a](#devices-and-printers) partir Windows 7.                                                                                                                                                                                                                                                                            |
 | Microsoft.AudioDevicesAnd SoundThemes                        | Sonido                             | {F2DDFC82-8F12-4CDD-B7DC-D4FE1425AA4D} | Mapas a [Microsoft.Sound](#sound) a partir de Windows 7.                                                                                                                                                                                                                                                                                                        |
@@ -686,9 +686,9 @@ Los siguientes son nombres canónicos que ya no se usan a Windows 8.1 o posterio
 | Microsoft.DesktopGadgets                                    | Desktop Gadgets                   | {37efd44d-ef8d-41b1-940d-96973a50e9e0} | Se ha quitado a Windows 8.                                                                                                                                                                                                                                                                                                                                  |
 | Microsoft.GetProgramsOnline                                 | Azure Marketplace               | {3e7efb4c-faf1-453d-89eb-56026875ef90} | Se ha quitado a partir Windows 7.                                                                                                                                                                                                                                                                                                                                  |
 | Microsoft.OptionOptions                                   | Infrarrojos                          | {A0275511-0E86-4ECA-97C2-ECD8F1221D08} | Mapas a [Microsoft.Locución](#infrared) a partir de Windows 7.                                                                                                                                                                                                                                                                                                  |
-| Microsoft.Language                                          | Lenguaje                          | {BF782CC9-5A52-4A17-806C-2A894FFEEAC5} | Se ha quitado a Windows 10, versión 1803                                                                                                                                                                                                                                                                                                                    |
+| Microsoft.Language                                          | Idioma                          | {BF782CC9-5A52-4A17-806C-2A894FFEEAC5} | Se ha quitado a Windows 10, versión 1803                                                                                                                                                                                                                                                                                                                    |
 | Microsoft.LocationAndOtherSensors                           | Ubicación y otros sensores        | {E9950154-C418-419e-A90A-20C5287AE24B} | Mapas a [Microsoft.LocationSettings](#infrared) a Windows 8.                                                                                                                                                                                                                                                                                          |
-| Microsoft.PenAndInputDevices                                | Lápiz y dispositivos de entrada             | {F82DF8F7-8B9F-442E-A48C-818EA735FF9B} | Mapas a [Microsoft.PenAndTouch](#pen-and-touch) a partir de Windows 7.                                                                                                                                                                                                                                                                                          |
+| Microsoft.PenAndInputDevices                                | Lápiz y dispositivos de entrada             | {F82DF8F7-8B9F-442E-A48C-818EA735FF9B} | Mapas a [Microsoft.PenAndTouch a](#pen-and-touch) partir de Windows 7.                                                                                                                                                                                                                                                                                          |
 | Microsoft.PeopleNearMe                                      | People Near Me (Gente que esté cerca)                    | {5224F545-A443-4859-BA23-7B5A95BDC8EF} | Se ha quitado a Windows 8.                                                                                                                                                                                                                                                                                                                                  |
 | Microsoft.PerformanceInformationAndTools                    | Información y herramientas de rendimiento | {78F3955E-3B90-4184-BD14-5397C15F1EFC} | Se ha quitado a Windows 8.1.                                                                                                                                                                                                                                                                                                                                |
 | Microsoft.PhoneAndModemOptions                              | Teléfono y módem                   | {40419485-C444-4567-851A-2DD7BFA1684D} | Mapas a [Microsoft.PhoneAndModem](#phone-and-modem) a partir Windows 7.                                                                                                                                                                                                                                                                                      |
@@ -696,9 +696,9 @@ Los siguientes son nombres canónicos que ya no se usan a Windows 8.1 o posterio
 | Microsoft.ProblemReportsAndSolutions                        | Informes de problemas y soluciones     | {FCFEECAE-EE1B-4849-AE50-685DCF7717EC} | Mapas a [Microsoft.ActionCenter](#action-center) a partir de Windows 7.                                                                                                                                                                                                                                                                                         |
 | Microsoft.RegionalAndLanguageOptions                        | Configuración regional y de idioma     | {62D8ED13-C9D0-4CE8-A914-47DD628FB1B0} | Mapas a [Microsoft.RegionAndLanguage](#region) a partir Windows 7. Tenga en cuenta que a Windows 8, región e idioma tenían cada uno su propio Panel de control elemento. Microsoft.RegionalAndLanguageOptions y Microsoft.RegionAndLanguage abren actualmente el elemento Región. Debe usar [Microsoft.Language para acceder](#location-settings) al elemento Language. |
 | Microsoft.SecurityCenter                                    | Centro de seguridad de Windows           | {087DA31B-0DD3-4537-8E23-64A18591F88B} | Mapas a [Microsoft.ActionCenter](#action-center) a partir de Windows 7.                                                                                                                                                                                                                                                                                         |
-| Microsoft.SpeechRecognitionOptions                          | Opciones de reconocimiento de voz        | {58E3C745-D971-4081-9034-86E34B30836A} | Mapas a [Microsoft.SpeechRecognition](#speech-recognition) a partir Windows 7.                                                                                                                                                                                                                                                                               |
+| Microsoft.SpeechRecognitionOptions                          | Opciones de reconocimiento de voz        | {58E3C745-D971-4081-9034-86E34B30836A} | Mapas a [Microsoft.SpeechRecognition](#speech-recognition) a partir de Windows 7.                                                                                                                                                                                                                                                                               |
 | Microsoft.TaskbarAndStartMenu                               | Barra de tareas y menú Inicio            | {0DF44EAA-FF21-4412-828E-260A8728E7F1} | Mapas a [Microsoft.Taskbar](#speech-recognition) a Windows 8.                                                                                                                                                                                                                                                                                         |
-| Microsoft.WelcomeCenter                                     | Centro de bienvenida                    | {CB1B7F8C-C50A-4176-B604-9E24DEE8D4D1} | Mapas a Microsoft.GettingStarted en Windows 7. Inicia la página Panel de control página principal a Windows 8.                                                                                                                                                                                                                                                      |
+| Microsoft.WelcomeCenter                                     | Centro de bienvenida                    | {CB1B7F8C-C50A-4176-B604-9E24DEE8D4D1} | Mapas a Microsoft.GettingStarted en Windows 7. Inicia la página Panel de control principal a Windows 8.                                                                                                                                                                                                                                                      |
 | Microsoft.WindowsSidebarProperties                          | Windows Propiedades de la barra lateral        | {37efd44d-ef8d-41b1-940d-96973a50e9e0} | Mapas a Microsoft.DesktopGadgets en Windows 7. Se ha quitado a Windows 8.                                                                                                                                                                                                                                                                                   |
 | Microsoft.WindowsSideShow                                   | Windows SideShow                  | {E95A4861-D57A-4be1-AD0F-35267E261739} | Característica en desuso Windows 8, quitada a Windows 8.1.                                                                                                                                                                                                                                                                                               |
 
@@ -714,31 +714,31 @@ A partir Windows 7, puede usar nombres canónicos para restringir el acceso a el
 
 Use este método si desea mostrar más elementos Panel de control que desea ocultar.
 
-1.  Ejecute el archivo Gpedit.msc para iniciar el Editor de directivas de grupo local. También puede escribir "directiva de grupo" en el Windows 8.1 pantalla Inicio seleccione Editar directiva de **grupo** en los resultados de la búsqueda.
+1.  Ejecute el archivo Gpedit.msc para iniciar el Editor de directivas de grupo local. También puede escribir "directiva de grupo" en la Windows 8.1 pantalla Inicio y seleccionar Editar directiva de **grupo en** los resultados de la búsqueda.
 2.  Seleccione **Configuración de** usuario  >  **Plantillas administrativas**  >  **Panel de control**.
 3.  Seleccione **Ocultar elementos Panel de control especificados.**
 4.  En la **ventana Ocultar elementos Panel de control especificados** que se abre, haga clic en **Habilitado.**
-5.  Haga clic **en el** botón Mostrar del panel Opciones para mostrar la lista de elementos Panel de control no permitidos.
-6.  En la **ventana Mostrar** contenido que se abre, escriba un nombre canónico en la **columna** Valor. Repita este paso las veces que sea necesario.
-7.  Haga clic en **Aceptar**.
+5.  Haga clic **en el** botón Mostrar del panel Opciones para mostrar la lista de elementos no Panel de control permitidos.
+6.  En la **ventana Mostrar** contenido que se abre, escriba un nombre canónico en la **columna** Valor . Repita este paso las veces que sea necesario.
+7.  Haga clic en **OK**.
 
 ### <a name="showing-individual-control-panel-items"></a>Mostrar elementos de Panel de control individuales
 
 Use este método si desea ocultar más elementos Panel de control que desea mostrar.
 
-1.  Ejecute el archivo Gpedit.msc para iniciar el Editor de directivas de grupo local. También puede escribir "directiva de grupo" en el Windows 8.1 pantalla Inicio seleccione Editar directiva de **grupo** en los resultados de la búsqueda.
+1.  Ejecute el archivo Gpedit.msc para iniciar el Editor de directivas de grupo local. También puede escribir "directiva de grupo" en la Windows 8.1 pantalla Inicio y seleccionar Editar directiva de **grupo en** los resultados de la búsqueda.
 2.  Seleccione **Configuración de** usuario  >  **Plantillas administrativas**  >  **Panel de control**.
 3.  Seleccione **Mostrar solo los elementos Panel de control especificados.**
 4.  En la **ventana Mostrar solo elementos Panel de control especificados** que se abre, haga clic en **Habilitado.** Esto oculta todo el Panel de control.
-5.  Haga clic **en el botón** Mostrar del panel Opciones para mostrar la lista de elementos Panel de control permitidos.
-6.  En la **ventana Mostrar** contenido que se abre, escriba un nombre canónico en la **columna** Valor. Repita este paso las veces que sea necesario.
-7.  Haga clic en **Aceptar**.
+5.  Haga clic **en el** botón Mostrar del panel Opciones para mostrar la lista de elementos Panel de control permitidos.
+6.  En la **ventana Mostrar** contenido que se abre, escriba un nombre canónico en la **columna** Valor . Repita este paso las veces que sea necesario.
+7.  Haga clic en **OK**.
 
-Si desea quitar todas las entradas que ha agregado a una lista Mostrar u ocultar elementos de Panel de control, vuelva  a la pantalla del paso 4 y seleccione No configurado para borrar la lista. Si desea conservar las entradas pero suspender las restricciones, seleccione **Deshabilitado.**
+Si desea quitar todas las entradas que ha agregado a una lista Mostrar u ocultar elementos de Panel de control, vuelva a la pantalla en el paso 4 y seleccione **No** configurado para borrar la lista. Si desea conservar las entradas pero suspender las restricciones, seleccione **Deshabilitado.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Es posible que vea elementos en la Panel de control que no aparecen aquí. Esos elementos no forman parte de Windows, sino que se agregan durante la instalación de diversos software y hardware, como Microsoft Office o una tarjeta de vídeo. Los elementos que no Windows Panel de control pueden tener o no un nombre canónico. Para buscar el nombre canónico de un elemento Panel de control no aparece aquí, busque en el Registro en estas rutas de acceso:
+Es posible que vea elementos en el Panel de control que no aparecen aquí. Esos elementos no forman parte de Windows, sino que se agregan durante la instalación de diversos software y hardware, como Microsoft Office o una tarjeta de vídeo. Los elementos que no Windows Panel de control pueden tener o no un nombre canónico. Para buscar el nombre canónico de un elemento Panel de control no aparece aquí, busque en el Registro en estas rutas de acceso:
 
 ```
 HKEY_CLASSES_ROOT
@@ -756,13 +756,13 @@ HKEY_LOCAL_MACHINE
                System.ApplicationName
 ```
 
-Para obtener más información que pueda ayudarle a detectar los CLSID necesarios, vea [Cómo](how-to-register-an-executable-control-panel-item-registration-.md) registrar elementos ejecutables Panel de control y Cómo registrar [dll Panel de control elementos](how-to-register-dll-control-panel-item-registration-.md).
+Para obtener más información que pueda ayudarle a detectar los CLSID necesarios, vea [How to Register Executable Panel de control Items](how-to-register-an-executable-control-panel-item-registration-.md) y How to Register DLL Panel de control [Items](how-to-register-dll-control-panel-item-registration-.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 <dl> <dt>
 
-[Ejecutar elementos Panel de control datos](executing-control-panel-items.md)
+[Ejecución de Panel de control de datos](executing-control-panel-items.md)
 </dt> <dt>
 
 [**IOpenControlPanel**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-iopencontrolpanel)

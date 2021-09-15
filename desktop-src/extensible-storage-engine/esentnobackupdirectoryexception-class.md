@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 716167d26f199ce6698c3bd1a94676635cdcacce31345bae4d1cea5102da650f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c95f5d0bf272e31e4f31ece7d7e82c47f037542
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118263806"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465455"
 ---
 # <a name="esentnobackupdirectoryexception-class"></a>Clase EsentNoBackupDirectoryException
 
@@ -48,7 +48,7 @@ Clase base para JET_err. Excepciones NoBackupDirectory.
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 ``` vb
 'Declaration

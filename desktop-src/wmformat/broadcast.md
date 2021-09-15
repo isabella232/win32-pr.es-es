@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b233a74deb71efe041ab5ad2f5e4ffa421d048a70c5b97e8f7ac38499bd18df
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bbf9e7d94682f8dbf08850f87954a934fd909afe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119086174"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467108"
 ---
 # <a name="broadcast"></a>Difusión
 
@@ -31,7 +31,7 @@ g \_ wszWMBroadcast
 
 **WMT \_ TYPE \_ BOOL**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Se trata de un atributo codificado.
 

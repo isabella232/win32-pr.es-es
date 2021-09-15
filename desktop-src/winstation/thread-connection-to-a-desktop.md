@@ -4,12 +4,12 @@ description: Una vez que un proceso se conecta a una estación de ventana, el si
 ms.assetid: 45016619-ed11-4b0c-84e3-f8662553c64d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 97cb6f57debd0ed85953ee458d7235acee0aa0b4b274b70670a46dedfb7be03d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a503390468ea5ed1771ece7a942a2d615ac6f0a9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118030597"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466501"
 ---
 # <a name="thread-connection-to-a-desktop"></a>Conexión de subprocesos a un escritorio
 

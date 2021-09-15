@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0351ad27e18750832151e8820dec8594319024791850f1ab92764e175d9582b1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1e01c35ad5a77c5a78a705d0188f771e0466a761
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118332967"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465511"
 ---
 # <a name="viewminimize"></a>VIEW.minimize
 
@@ -55,9 +55,9 @@ Este método no devuelve ningún valor.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------|------------------------------------------------------|
-| Versión<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
+| Version<br/> | Reproductor de Windows Media versión 7.0 o posterior<br/> |
 
 
 

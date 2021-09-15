@@ -5,11 +5,11 @@ title: Descodificador de AAC
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 9daf50196029f484264ddb33c8e10a25e61cb0dc
-ms.sourcegitcommit: 61a4c522182aa1cacbf5669683d9570a3bf043b2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122885386"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466567"
 ---
 # <a name="aac-decoder"></a>Descodificador de AAC
 
@@ -79,7 +79,7 @@ El descodificador admite los siguientes tipos de salida:
 |---------|-------------|
 | <strong>MFAudioFormat_Float</strong> | Audio de punto flotante IEEE. | 
 | <strong>MFAudioFormat_PCM</strong> | Audio PCM de 16 bits. | 
-| <strong>MFAudioFormat_AAC</strong> | Requiere Windows 8. <br /> Este tipo de salida se puede usar para convertir una secuencia de AAC en el formato LOAS/LATM al formato ADTS. <br /> Para convertir un flujo LOAS/LATM en un flujo de ADTS, establezca el tipo de entrada en <strong>MFAudioFormat_AAC</strong> con el tipo de carga 3 (LOAS). A continuación, establezca el tipo <strong>de salida MFAudioFormat_AAC</strong> con el tipo de carga 1 (ADTS). El descodificador volverá a formatear el conainter sin descodificar la secuencia de bits. <br /><blockquote>[!Note]<br />El descodificador no <strong>registra</strong> MFAudioFormat_AAC como un tipo de salida. Sin embargo, <strong>si</strong> la aplicación establece el tipo de entrada como se describe, el método <a href="/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype"><strong>IMFTransform::GetOutputAvailableType</strong></a> devuelve MFAudioFormat_AAC en la lista de tipos de salida disponibles.</blockquote><br /><br /> | 
+| <strong>MFAudioFormat_AAC</strong> | Requiere Windows 8. <br /> Este tipo de salida se puede usar para convertir una secuencia de AAC en el formato LOAS/LATM al formato ADTS. <br /> Para convertir un flujo LOAS/LATM en un flujo de ADTS, establezca el tipo de entrada <strong>en MFAudioFormat_AAC</strong> con el tipo de carga 3 (LOAS). A continuación, establezca el tipo <strong>de salida MFAudioFormat_AAC</strong> con el tipo de carga 1 (ADTS). El descodificador volverá a formatear el conainter sin descodificar la secuencia de bits. <br /><blockquote>[!Note]<br />El descodificador no <strong>registra</strong> MFAudioFormat_AAC como un tipo de salida. Sin embargo, <strong>si</strong> la aplicación establece el tipo de entrada como se describe, el método <a href="/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputavailabletype"><strong>IMFTransform::GetOutputAvailableType</strong></a> devuelve MFAudioFormat_AAC en la lista de tipos de salida disponibles.</blockquote><br /><br /> | 
 
 
 
@@ -157,7 +157,7 @@ El descodificador de AAC implementa el [**método IMFTransform::GetAttributes.**
 |-----------|-------------|
 | <a href="/windows/desktop/DirectShow/avdecaudiodualmono-property"><strong>CODECAPI_AVDecAudioDualMono</strong></a> | Especifica si el audio de 2 canales se codifica como estéreo o mono dual. Tratar como de solo lectura. | 
 | <a href="/windows/desktop/DirectShow/avdecaudiodualmonorepromode-property"><strong>CODECAPI_AVDecAudioDualMonoReproMode</strong></a> | Especifica cómo el descodificador reproduce el audio mono dual. El valor predeterminado es <strong>eAVDecAudioDualMonoReproMode_LEFT_MONO</strong>salida Ch1 a los altavoces izquierdo y derecho. <br /> Las aplicaciones pueden establecer esta propiedad para cambiar el comportamiento predeterminado.<br /> | 
-| <a href="mft-support-dynamic-format-change-attribute.md"><strong>MFT_SUPPORT_DYNAMIC_FORMAT_CHANGE</strong></a> | El descodificador de AAC no controla los cambios de formato dinámico y debe vaciarse o purgarse antes de establecer un nuevo tipo de medio de entrada. Trate este atributo como de solo lectura. <br /><blockquote>[!Note]<br />El descodificador de AAC notifica incorrectamente un valor <strong>de TRUE</strong> para este atributo.</blockquote><br /><br /> En Windows 7, el descodificador notifica incorrectamente un valor de <strong>TRUE</strong> para este atributo. En Windows 8, el descodificador notifica <strong>FALSE</strong>, que es el valor correcto.<br /> | 
+| <a href="mft-support-dynamic-format-change-attribute.md"><strong>MFT_SUPPORT_DYNAMIC_FORMAT_CHANGE</strong></a> | El descodificador de AAC no controla los cambios de formato dinámico y se debe vaciar o purgar antes de establecer un nuevo tipo de medio de entrada. Trate este atributo como de solo lectura. <br /><blockquote>[!Note]<br />El descodificador de AAC notifica incorrectamente un valor <strong>de TRUE</strong> para este atributo.</blockquote><br /><br /> En Windows 7, el descodificador notifica incorrectamente un valor de <strong>TRUE</strong> para este atributo. En Windows 8, el descodificador notifica <strong>FALSE</strong>, que es el valor correcto.<br /> | 
 
 
 
@@ -170,7 +170,7 @@ Este es un ejemplo del tipo de medio de entrada necesario para una secuencia AAC
 
 
 
-| Atributo                                                                                      | Valor                                                                                |
+| Atributo                                                                                      | Value                                                                                |
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | [**MF_MT_MAJOR_TYPE**](mf-mt-major-type-attribute.md)                                      | **MFMediaType_Audio**                                                               |
 | [**MF_MT_SUBTYPE**](mf-mt-subtype-attribute.md)                                             | **MFAudioFormat_AAC**                                                               |
@@ -203,7 +203,7 @@ Dado este tipo de entrada, use el siguiente tipo de medio de salida para obtener
 
 
 
-| Atributo                                                                                    | Valor                    |
+| Atributo                                                                                    | Value                    |
 |----------------------------------------------------------------------------------------------|--------------------------|
 | [**MF_MT_MAJOR_TYPE**](mf-mt-major-type-attribute.md)                                    | **MFMediaType_Audio**   |
 | [**MF_MT_SUBTYPE**](mf-mt-subtype-attribute.md)                                           | **MFAudioFormat_Float** |
@@ -218,13 +218,13 @@ Dado este tipo de entrada, use el siguiente tipo de medio de salida para obtener
 
  
 
-Si se instala el complemento de actualización de plataforma para Windows Vista, el descodificador de audio AAC está disponible en Windows Vista, pero solo se puede acceder a él en Windows Vista mediante el lector de [origen](source-reader.md).
+Si se instala el complemento de actualización de plataforma para Windows Vista, el descodificador de audio AAC está disponible en Windows Vista, pero solo se puede acceder a él en Windows Vista mediante el lector de origen [.](source-reader.md)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                                                                                                                                  |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                                                                                                                     |

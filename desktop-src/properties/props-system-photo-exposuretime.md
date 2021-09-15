@@ -1,19 +1,19 @@
 ---
-description: Tiempo de exposición de la foto, en segundos, según se lee en la información del archivo de imagen intercambiable (EXIF).
+description: Tiempo de exposición de la foto, en segundos, según se lee en la información de Archivo de imagen intercambiable (EXIF).
 ms.assetid: 44f7e6d5-c4d9-4b41-b6c6-15145abb7983
 title: System.Photo.ExposureTime
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2bc1c767344187efd0107d4efa7bcec23d6f099497d9a26f29b89153a73a2e0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5811a3d375f41883d1db8f392e714b7bbe0dfa8b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118723870"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468394"
 ---
 # <a name="systemphotoexposuretime"></a>System.Photo.ExposureTime
 
-Tiempo de exposición de la foto, en segundos, según se lee en la información del archivo de imagen intercambiable (EXIF). Esta propiedad se calcula a [partir de System.Photo.ExposureTimeNumerator](./props-system-photo-exposuretimenumerator.md) y [System.Photo.ExposureTimeDenominator.](./props-system-photo-exposuretimedenominator.md)
+Tiempo de exposición de la foto, en segundos, según se lee en la información de Archivo de imagen intercambiable (EXIF). Esta propiedad se calcula a partir [de System.Photo.ExposureTimeNumerator](./props-system-photo-exposuretimenumerator.md) y [System.Photo.ExposureTimeDenominator.](./props-system-photo-exposuretimedenominator.md)
 
 A continuación se muestra una lista de posibles valores tomados de la especificación EXIF 2.2.
 
@@ -51,7 +51,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 
@@ -59,7 +59,7 @@ Los valores PKEY se definen en Propkey.h.
 
 <dl> <dt>
 
-[Exchangeable Image File Format para cámaras Digital Still: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
+[Exchangeable Image File Format para cámaras de imágenes digitales: Exif versión 2.2](https://www.exif.org/Exif2-2.PDF)
 </dt> <dt>
 
 [propertyDescription](./propdesc-schema-propertydescription.md)

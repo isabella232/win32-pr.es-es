@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: adef3e7bc32da34d4cfec684318fec7b2798e92a2ceeb7f9568a7c7b2237602a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 923e1b39b8bebfb81ea65a990110f393ad246f4c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120001135"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466416"
 ---
 # <a name="wmdirector-attribute"></a>Atributo WM/Director
 
@@ -29,7 +29,7 @@ El **atributo WM/Director** es el nombre del director.
 -   [DVDs](dvd-attributes.md)
 -   [Elementos de vídeo](video-item-attributes.md)
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo se almacena tanto en la biblioteca (o caché) como en el archivo multimedia digital.
 
@@ -49,7 +49,7 @@ Para determinar si puede cambiar el valor de este atributo, use el [método Medi
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

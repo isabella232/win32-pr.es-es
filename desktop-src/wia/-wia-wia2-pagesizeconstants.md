@@ -1,5 +1,5 @@
 ---
-description: Los siguientes son tamaños de página válidos para Windows de elementos de adquisición de imágenes (WIA) 2.0, como WIA \_ IPS \_ PAGE \_ SIZE. Dimensiones en milésimas de pulgada.
+description: Los siguientes son tamaños de página válidos para Windows propiedades de elemento de adquisición de imágenes (WIA) 2.0, como WIA \_ IPS \_ PAGE \_ SIZE. Dimensiones en milésimas de pulgada.
 ms.assetid: 64f2296b-7104-49be-9632-f075d06f94aa
 title: Constantes de tamaño de página de WIA 2.0 (Wiadef.h)
 ms.topic: reference
@@ -70,16 +70,16 @@ api_type:
 - HeaderDef
 api_location:
 - wiadef.h
-ms.openlocfilehash: 75d0f336d2ccca997d9b5d24cd4ade1b5994c7b4dab8f7fa8c7027b2d8b60988
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: d3b8751f69b96b5286828de670359628c94c5aac
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120056865"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466261"
 ---
 # <a name="wia-20-page-size-constants"></a>Constantes de tamaño de página de WIA 2.0
 
-Los siguientes son tamaños de página válidos para Windows de elementos de adquisición de imágenes (WIA) 2.0, como WIA \_ IPS \_ PAGE \_ SIZE. Dimensiones en milésimas de pulgada.
+Los siguientes son tamaños de página válidos para Windows propiedades de elemento de adquisición de imágenes (WIA) 2.0, como WIA \_ IPS \_ PAGE \_ SIZE. Dimensiones en milésimas de pulgada.
 
 
 
@@ -95,7 +95,7 @@ Los siguientes son tamaños de página válidos para Windows de elementos de adq
 | <span id="WIA_PAGE_BUSINESSCARD"></span><span id="wia_page_businesscard"></span><dl> <dt>**WIA \_ PAGE \_ BUSINESSCARD**</dt> <dt>6</dt> </dl>    | 3543 x 2165<br/>                                        |
 | <span id="WIA_PAGE_ISO_A0"></span><span id="wia_page_iso_a0"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ A0**</dt> <dt>7</dt> </dl>                     | 33110 x 46811<br/>                                      |
 | <span id="WIA_PAGE_ISO_A1"></span><span id="wia_page_iso_a1"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ A1**</dt> <dt>8</dt> </dl>                     | 23385 x 33110<br/>                                      |
-| <span id="WIA_PAGE_ISO_A2"></span><span id="wia_page_iso_a2"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ A2**</dt> <dt>9</dt> </dl>                     | 16535 x 23385<br/>                                      |
+| <span id="WIA_PAGE_ISO_A2"></span><span id="wia_page_iso_a2"></span><dl> <dt>**WIA \_ PAGE \_ ISO \_ A2**</dt> <dt>9</dt> </dl>                     | 16535 x 23385<br/>                                      |
 | <span id="WIA_PAGE_ISO_A3"></span><span id="wia_page_iso_a3"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ A3**</dt> <dt>10</dt> </dl>                    | 11692 x 16535<br/>                                      |
 | <span id="WIA_PAGE_ISO_A4"></span><span id="wia_page_iso_a4"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ A4**</dt> <dt>0</dt> </dl>                     | 8267 x 11692<br/>                                       |
 | <span id="WIA_PAGE_ISO_A5"></span><span id="wia_page_iso_a5"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ A5**</dt> <dt>11</dt> </dl>                    | 5826 x 8267<br/>                                        |
@@ -103,7 +103,7 @@ Los siguientes son tamaños de página válidos para Windows de elementos de adq
 | <span id="WIA_PAGE_ISO_A7"></span><span id="wia_page_iso_a7"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ A7**</dt> <dt>13</dt> </dl>                    | 2913 x 4133<br/>                                        |
 | <span id="WIA_PAGE_ISO_A8"></span><span id="wia_page_iso_a8"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ A8**</dt> <dt>14</dt> </dl>                    | 2047 x 2913<br/>                                        |
 | <span id="WIA_PAGE_ISO_A9"></span><span id="wia_page_iso_a9"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ A9**</dt> <dt>15</dt> </dl>                    | 1456 x 2047<br/>                                        |
-| <span id="WIA_PAGE_ISO_A10"></span><span id="wia_page_iso_a10"></span><dl> <dt>**WIA \_ PAGE \_ ISO \_ A10**</dt> <dt>16</dt> </dl>                 | 1023 x 1456<br/>                                        |
+| <span id="WIA_PAGE_ISO_A10"></span><span id="wia_page_iso_a10"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ A10**</dt> <dt>16</dt> </dl>                 | 1023 x 1456<br/>                                        |
 | <span id="WIA_PAGE_ISO_B0"></span><span id="wia_page_iso_b0"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ B0**</dt> <dt>17</dt> </dl>                    | 39370 x 55669<br/>                                      |
 | <span id="WIA_PAGE_ISO_B1"></span><span id="wia_page_iso_b1"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ B1**</dt> <dt>18</dt> </dl>                    | 27834 x 39370<br/>                                      |
 | <span id="WIA_PAGE_ISO_B2"></span><span id="wia_page_iso_b2"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ B2**</dt> <dt>19</dt> </dl>                    | 19685 x 27834<br/>                                      |
@@ -121,7 +121,7 @@ Los siguientes son tamaños de página válidos para Windows de elementos de adq
 | <span id="WIA_PAGE_ISO_C3"></span><span id="wia_page_iso_c3"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ C3**</dt> <dt>31</dt> </dl>                    | 12755 x 18031<br/>                                      |
 | <span id="WIA_PAGE_ISO_C4"></span><span id="wia_page_iso_c4"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ C4**</dt> <dt>32</dt> </dl>                    | 9015 x 12755 (desenlazado)<br/>                            |
 | <span id="WIA_PAGE_ISO_C5"></span><span id="wia_page_iso_c5"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ C5**</dt> <dt>33</dt> </dl>                    | 6377 x 9015 (plegado una vez)<br/>                          |
-| <span id="WIA_PAGE_ISO_C6_"></span><span id="wia_page_iso_c6_"></span><dl> <dt> **PÁGINA WIA \_ \_ ISO \_ C6**</dt> <dt>34</dt> </dl>                 | 4488 x 6377 (plegado dos veces)<br/>                         |
+| <span id="WIA_PAGE_ISO_C6_"></span><span id="wia_page_iso_c6_"></span><dl> <dt> **PÁGINA DE WIA \_ ISO \_ \_ C6**</dt> <dt>34</dt> </dl>                 | 4488 x 6377 (plegado dos veces)<br/>                         |
 | <span id="WIA_PAGE_ISO_C7"></span><span id="wia_page_iso_c7"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ C7**</dt> <dt>35</dt> </dl>                    | 3188 x 4488<br/>                                        |
 | <span id="WIA_PAGE_ISO_C8"></span><span id="wia_page_iso_c8"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ C8**</dt> <dt>36</dt> </dl>                    | 2244 x 3188<br/>                                        |
 | <span id="WIA_PAGE_ISO_C9"></span><span id="wia_page_iso_c9"></span><dl> <dt>**WIA \_ PÁGINA \_ ISO \_ C9**</dt> <dt>37</dt> </dl>                    | 1574 x 2244<br/>                                        |
@@ -139,10 +139,10 @@ Los siguientes son tamaños de página válidos para Windows de elementos de adq
 | <span id="WIA_PAGE_JIS_B10"></span><span id="wia_page_jis_b10"></span><dl> <dt>**WIA \_ PAGE \_ JIS \_ B10**</dt> <dt>49</dt> </dl>                 | 1259 x 1771<br/>                                        |
 | <span id="WIA_PAGE_JIS_2A"></span><span id="wia_page_jis_2a"></span><dl> <dt>**WIA \_ PAGE \_ JIS \_ 2A**</dt> <dt>50</dt> </dl>                    | 46811 x 66220<br/>                                      |
 | <span id="WIA_PAGE_JIS_4A"></span><span id="wia_page_jis_4a"></span><dl> <dt>**WIA \_ PAGE \_ JIS \_ 4A**</dt> <dt>51</dt> </dl>                    | 66220 x 93622<br/>                                      |
-| <span id="WIA_PAGE_DIN_2B"></span><span id="wia_page_din_2b"></span><dl> <dt>**WIA \_ PAGE \_ \_ LOB 2B**</dt> <dt>52</dt> </dl>                    | 55669 x 78740<br/>                                      |
-| <span id="WIA_PAGE_DIN_4B"></span><span id="wia_page_din_4b"></span><dl> <dt>**WIA \_ PAGE \_ \_ LOB 4B**</dt> <dt>53</dt> </dl>                    | 78740 x 111338<br/>                                     |
+| <span id="WIA_PAGE_DIN_2B"></span><span id="wia_page_din_2b"></span><dl> <dt>**WIA \_ PAGE \_ DIN \_ 2B**</dt> <dt>52</dt> </dl>                    | 55669 x 78740<br/>                                      |
+| <span id="WIA_PAGE_DIN_4B"></span><span id="wia_page_din_4b"></span><dl> <dt>**WIA \_ PAGE \_ DIN \_ 4B**</dt> <dt>53</dt> </dl>                    | 78740 x 111338<br/>                                     |
 | <span id="WIA_PAGE_AUTO"></span><span id="wia_page_auto"></span><dl> <dt>**WIA \_ PAGE \_ AUTO**</dt> <dt>100</dt> </dl>                          | El controlador detecta automáticamente el tamaño de página.<br/>            |
-| <span id="WIA_PAGE_CUSTOM_BASE"></span><span id="wia_page_custom_base"></span><dl> <dt>**WIA \_ PÁGINA \_ BASE \_ PERSONALIZADA**</dt> <dt>0X8000</dt> </dl> | El tamaño de página ya lo conocen el controlador y la aplicación.<br/> |
+| <span id="WIA_PAGE_CUSTOM_BASE"></span><span id="wia_page_custom_base"></span><dl> <dt>**WIA \_ Página \_ personalizada \_ base**</dt> <dt>0x8000</dt> </dl> | El tamaño de página ya lo conocen el controlador y la aplicación.<br/> |
 
 
 
@@ -154,7 +154,7 @@ Los siguientes son tamaños de página válidos para Windows de elementos de adq
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                      |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                |
-| Header<br/>                   | <dl> <dt>Wiadef.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wiadef.h</dt> </dl> |
 
 
 

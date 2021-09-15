@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: f5aa8ab3ba61d752cfe4d9f8ecd29bf4fcd06c3dbadde94e51ac9a05a8504b43
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 614e42512b17a0d8a6950ac96914128b8746c685
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118452821"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468079"
 ---
 # <a name="shellfolderitemextendedproperty-method"></a>Método ShellFolderItem.ExtendedProperty
 
@@ -52,11 +52,11 @@ Valor **string** que especifica la propiedad . Para obtener información detalla
 
 Tipo: **\* Variant**
 
-El resultado que devuelve este método contiene el valor de la propiedad , si existe para el elemento especificado. El valor tendrá escritura completa; por ejemplo, las fechas se devuelven como fechas, no como cadenas.
+Cuando este método vuelve, contiene el valor de la propiedad , si existe para el elemento especificado. El valor tendrá escritura completa; por ejemplo, las fechas se devuelven como fechas, no como cadenas.
 
-Este método devuelve una cadena de longitud cero si la propiedad es válida pero no existe para el elemento especificado o un código de error de lo contrario.
+Este método devuelve una cadena de longitud cero si la propiedad es válida pero no existe para el elemento especificado, o un código de error en caso contrario.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Hay dos maneras de especificar una propiedad. La primera es asignar el nombre conocido de la propiedad, como "Author" o "Date", a *sPropName*. Sin embargo, cada propiedad es miembro de un conjunto de propiedades del Modelo de objetos componentes (COM) y también se puede identificar especificando su identificador de formato (FMTID) y el identificador de propiedad (PID). Un [**FMTID**](../stg/structured-storage-serialized-property-set-format.md) es un GUID que identifica el conjunto de propiedades y un [**PID**](../stg/structured-storage-serialized-property-set-format.md) es un entero que identifica una propiedad determinada dentro del conjunto de propiedades.
 
@@ -203,12 +203,12 @@ End Sub
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Professional<br/>                                                    |
 | Servidor mínimo compatible<br/> | \[Solo aplicaciones de escritorio\] de Windows 2000 Server<br/>                                                          |
 | Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 5.0 o posterior)</dt> </dl> |
 
 

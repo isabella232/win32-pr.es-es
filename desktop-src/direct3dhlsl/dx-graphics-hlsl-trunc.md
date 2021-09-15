@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0845e619e8674d729735da1b639802df256d9c210615d71578a4e1effd777e39
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 34493f60e60bc0dce35f5f9db50360265191c742
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119845775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466946"
 ---
 # <a name="trunc"></a>trunc
 
@@ -50,9 +50,9 @@ Trunca un valor de punto flotante al componente entero.
 
 Valor de entrada truncado en un componente entero.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
-Esta función trunca un valor de punto flotante al componente entero. Dado un valor de punto flotante de 1,6, la función trunc devolvería 1,0, donde como la función round [**(HlSL de DirectX)**](dx-graphics-hlsl-round.md) devolvería 2,0.
+Esta función trunca un valor de punto flotante al componente entero. Dado un valor de punto flotante de 1,6, la función trunc devolvería 1,0, donde como la función [**round (DirectX HLSL)**](dx-graphics-hlsl-round.md) devolvería 2,0.
 
 ## <a name="type-description"></a>Descripción del tipo
 
@@ -60,8 +60,8 @@ Esta función trunca un valor de punto flotante al componente entero. Dado un va
 
 | Nombre | [**Tipo de plantilla**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Size                         |
 |------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|------------------------------|
-| *x*  | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vector** o **matriz** | [**Flotador**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                          |
-| Ret  | El mismo tipo que la entrada x                                                                                           | [**Flotador**](/windows/desktop/WinProg/windows-data-types)                        | Las mismas dimensiones que la entrada x |
+| *x*  | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vector** o **matriz** | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | cualquiera                          |
+| Ret  | El mismo tipo que la entrada x                                                                                           | [**FLOAT**](/windows/desktop/WinProg/windows-data-types)                        | Mismas dimensiones que la entrada x |
 
 
 
@@ -75,7 +75,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 | Modelo de sombreador                                                                       | Compatible |
 |------------------------------------------------------------------------------------|-----------|
-| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) y modelos de sombreador superiores | Sí       |
+| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) y modelos de sombreador superiores | sí       |
 
 
 
@@ -91,7 +91,7 @@ Esta función se admite en los siguientes modelos de sombreador.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

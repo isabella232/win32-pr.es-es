@@ -18,12 +18,12 @@ keywords:
 - API extendidas de cliente, acerca de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d37e5bcd615aaf9ca9c36f20161c261320fc6e261aa5ac630572336309d1aae0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: f605395c5db172c94bf8b5bfada3bdc0aa33c433
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119085887"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466865"
 ---
 # <a name="concepts"></a>Conceptos
 
@@ -39,7 +39,7 @@ Los siguientes conceptos básicos son importantes para comprender las API extend
 
 <dl> <dt>
 
-[**Acerca de las API extendidas de Windows DRM multimedia**](about-the-windows-media-drm-client-extended-apis.md)
+[**Acerca de las API extendidas Windows de cliente DRM multimedia**](about-the-windows-media-drm-client-extended-apis.md)
 </dt> </dl>
 
  

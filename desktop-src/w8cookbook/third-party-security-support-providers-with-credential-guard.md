@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a5c773379e3b7fa52e2095d8db676dddc081e51806fd8f615d2b3a4b744fea95
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a036ba5db5b86ab7c186b25e4d858b1badc60bd0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119706755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467137"
 ---
 # <a name="third-party-security-support-providers-with-credential-guard"></a>Proveedores de soporte técnico de seguridad de terceros con Credential Guard
 

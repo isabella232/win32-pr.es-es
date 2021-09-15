@@ -4,18 +4,18 @@ description: En este tema se explica cómo los clientes acceden a la implementac
 ms.assetid: e057bbe8-5dd7-41fc-a5d5-bcf4c1c6433d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f03bd58ec80a29f13e0428de4655aa7200144122b1a1889259844db078aa9dc
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 77b14b935bd7ed432ea4d378034763635309213f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120098105"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466621"
 ---
 # <a name="using-iaccessibleex-from-a-client"></a>Uso de IAccessibleEx desde un cliente
 
 En este tema se explica cómo los clientes acceden a la implementación [**de IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) de un servidor y la usan para obtener Automatización de la interfaz de usuario propiedades y patrones de control para los elementos de la interfaz de usuario.
 
-Los procedimientos y ejemplos de esta sección suponen un cliente [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) que ya está en proceso y un servidor Microsoft Active Accessibility existente. También suponen que el cliente ya ha obtenido un objeto **IAccessible** mediante una de las funciones del marco de accesibilidad, como [**AccessibleObjectFromEvent,**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent) [**AccessibleObjectFromPoint**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfrompoint)o [**AccessibleObjectFromWindow.**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromwindow)
+En los procedimientos y ejemplos de esta sección se supone que hay un cliente [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) que ya está en proceso y un servidor Microsoft Active Accessibility existente. También suponen que el cliente ya ha obtenido un objeto **IAccessible** mediante una de las funciones del marco de accesibilidad, como [**AccessibleObjectFromEvent,**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromevent) [**AccessibleObjectFromPoint**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfrompoint)o [**AccessibleObjectFromWindow.**](/windows/desktop/api/Oleacc/nf-oleacc-accessibleobjectfromwindow)
 
 ### <a name="obtaining-an-iaccessibleex-interface-from-the-iaccessible-interface"></a>Obtención de una interfaz IAccessibleEx desde la interfaz IAccessible
 
@@ -217,13 +217,13 @@ El ejemplo anterior se aplica a las propiedades que no están asociadas a un pat
 
 ### <a name="retrieving-an-iaccessible-interface-from-an-irawelementprovidersimple-interface"></a>Recuperar una interfaz IAccessible desde una interfaz IRawElementProviderSimple
 
-Si un cliente obtiene la interfaz [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) para un elemento de interfaz de usuario, el cliente puede usar esa interfaz para obtener una interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) correspondiente para el elemento. Esto resulta útil si el cliente necesita tener acceso a las Microsoft Active Accessibility propiedades del elemento.
+Si un cliente obtiene la interfaz [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) para un elemento de interfaz de usuario, el cliente puede usar esa interfaz para obtener una interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) correspondiente para el elemento. Esto resulta útil si el cliente necesita tener acceso al Microsoft Active Accessibility propiedades del elemento.
 
 Un cliente puede obtener la interfaz [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) como un valor de propiedad (por ejemplo, llamando a [**IRawElementProviderSimple::GetPropertyValue**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irawelementprovidersimple-getpropertyvalue) con UIA LabeledByPropertyId) o como un elemento recuperado por un método \_ (por ejemplo, llamando a [**ISelectionProvider::GetSelection**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iselectionprovider-getselection) para recuperar una matriz de interfaces **IRawElementProviderSimple** de elementos seleccionados). Después de obtener la **interfaz IRawElementProviderSimple,** un cliente puede usarla para obtener un [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) correspondiente siguiendo estos pasos:
 
 -   Intente usar QueryInterface para obtener la [**interfaz IAccessibleEx.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex)
 -   Si se produce un error en QueryInterface, llame a [**IAccessibleEx::ConvertReturnedElement**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-convertreturnedelement) en la [**instancia de IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) de la que se obtuvo originalmente la propiedad.
--   Llame al [**método GetIAccessiblePair en**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-getiaccessiblepair) la nueva [**instancia de IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) para obtener un identificador secundario e interfae [**de IAccessible.**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
+-   Llame al [**método GetIAccessiblePair en**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-iaccessibleex-getiaccessiblepair) la nueva instancia [**de IAccessibleEx**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iaccessibleex) para obtener un identificador secundario e interfae [**de IAccessible.**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 
 El siguiente fragmento de código muestra cómo obtener la interfaz [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) de una interfaz [**IRawElementProviderSimple**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-irawelementprovidersimple) obtenida previamente.
 

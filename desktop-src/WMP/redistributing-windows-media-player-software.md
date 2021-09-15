@@ -9,12 +9,12 @@ keywords:
 - redistribución de software
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 078fc47ed65bdac4217bf1dc52abbb325fa34c90c2e6e3dacbb996c2aba4f0e1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5c027fa77294f3a9017e3bbc19eead1196297e3b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118333508"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465621"
 ---
 # <a name="redistributing-windows-media-player-software"></a>Redistribuir Reproductor de Windows Media software
 

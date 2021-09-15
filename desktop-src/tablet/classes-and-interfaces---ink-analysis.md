@@ -4,12 +4,12 @@ ms.assetid: 712908e1-2d1d-4e42-8c80-71354b03d318
 title: Clases e interfaces de análisis de entrada de lápiz
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48335b0e7bf6e29ee90cf1dbf8fb3e96fd761c4b8c0194daaa9d7365fe89d5c0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 95d1c157a08a4b7366c20a712c120265320ab4f9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119937025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468012"
 ---
 # <a name="ink-analysis-classes-and-interfaces"></a>Clases e interfaces de análisis de entrada de lápiz
 

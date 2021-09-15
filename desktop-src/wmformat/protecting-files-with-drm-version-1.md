@@ -13,29 +13,29 @@ keywords:
 - ASF (formato de sistemas avanzados),WMStubDRM.lib
 - WMStubDRM.lib, crear archivos protegidos
 - WMStubDRM.lib,archivos protegidos
-- digital rights management (DRM),WMStubDRM.lib
+- administración de derechos digitales (DRM),WMStubDRM.lib
 - DRM (administración de derechos digitales),WMStubDRM.lib
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b500f3711b8c92324cbd87d4dc199a8a0bb803cba69357a23f139fb96f8281f
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d3e4d1ae9c0d3835c20f75b4e61c262a85a26f4
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119084542"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466689"
 ---
 # <a name="protecting-files-with-drm-version-1"></a>Protección de archivos con DRM versión 1
 
-Cuando se aplica este tipo de protección, se genera una licencia drm versión 1 que solo es válida en la máquina desde la que se realizó la solicitud de licencia. Dado que no se establece ninguna clave o valor de ed. de clave, no hay ninguna manera de generar licencias portables para el contenido protegido mediante esta técnica. Sin embargo, al usar el SDK Windows Media Format 7.1 o posterior, las licencias se pueden recuperar en Microsoft License Migration Service.
+Cuando se aplica este tipo de protección, se genera una licencia DRM versión 1 que solo es válida en la máquina desde la que se realizó la solicitud de licencia. Dado que no se establece ninguna clave o valor de ed. de clave, no hay ninguna manera de generar licencias portables para el contenido protegido mediante esta técnica. Sin embargo, al usar Windows SDK de formato multimedia 7.1 o posterior, las licencias se pueden recuperar en Microsoft License Migration Service.
 
 Para proteger los archivos ASF mediante DRM versión 1, realice los pasos siguientes:
 
 1.  Vincule el archivo WMStubDRM.lib al proyecto y, si es necesario, desvincule wmvcore.lib.
 2.  Llame a [**la función WMCreateWriter**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-wmcreatewriter) para crear el escritor. El primer argumento está reservado y debe establecerse en **NULL.**
-3.  Establezca un perfil para que el escritor lo use mediante una llamada a [**IWMWriter::SetProfile**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-setprofile) o [**IWMWriter::SetProfileByID**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriter-setprofilebyid). Debe establecer un perfil en el sistema de escritura antes de establecer los atributos drm. DRM solo se admite para perfiles que usan los códecs Windows Media Audio o Windows Media Video.
-4.  Con el [**método IWMHeaderInfo::SetAttribute,**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmheaderinfo-setattribute) establezca las siguientes propiedades drm. La **propiedad \_ Usar DRM** indica a los componentes de DRM que protejan el contenido mediante DRM versión 1. La **propiedad \_ Marcas** DRM especifica los derechos que se incluirán en la licencia local que se creará para el contenido. El **valor \_ DE NIVEL** DE DRM también se almacena en la licencia; especifica el nivel mínimo necesario para acceder al contenido. 150 es el nivel recomendado para el contenido de la versión 1 de DRM.
+3.  Establezca un perfil para que el escritor lo use mediante una llamada a [**IWMWriter::SetProfile**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriter-setprofile) o [**IWMWriter::SetProfileByID**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmwriter-setprofilebyid). Debe establecer un perfil en el sistema de escritura antes de establecer los atributos DRM. DRM solo se admite para los perfiles que usan los códecs Windows Audio multimedia o Windows de vídeo multimedia.
+4.  Con el [**método IWMHeaderInfo::SetAttribute,**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmheaderinfo-setattribute) establezca las siguientes propiedades DRM. La **propiedad \_ Usar DRM** indica a los componentes de DRM que protejan el contenido mediante DRM versión 1. La **propiedad \_ Marcas** DRM especifica los derechos que se incluirán en la licencia local que se creará para el contenido. El **valor \_ DE NIVEL** DE DRM también se almacena en la licencia; especifica el nivel mínimo necesario para acceder al contenido. 150 es el nivel recomendado para el contenido de la versión 1 de DRM.
 
-    | Atributo      | Valor                                                                                       |
+    | Atributo      | Value                                                                                       |
     |----------------|---------------------------------------------------------------------------------------------|
     | **Uso de \_ DRM**   | **TRUE**                                                                                    |
     | **Marcas \_ DRM** | WMT \_ RIGHT \_ PLAYBACK \| WMT \_ RIGHT \_ COPY \_ TO \_ NON \_ SDMI \_ DEVICE \| WMT \_ RIGHT \_ COPY \_ TO \_ CD |

@@ -14,14 +14,14 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 7f015333a8d384743d0e8ea16000252a4e60fd24ab0637b92ee3d85ddb42a1c5
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3f0c545a4daceed75971b0e659f85d72eca6d98f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118697093"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466449"
 ---
-# <a name="iportabledevicevaluessetiportabledevicevaluescollectionvalue-method"></a>IPortableDeviceValues::SetIPortableDeviceValuesCollectionValue (método)
+# <a name="iportabledevicevaluessetiportabledevicevaluescollectionvalue-method"></a>IPortableDeviceValues::SetIPortableDeviceValuesCollectionValue (Método)
 
 El **método SetIPortableDeviceValuesCollectionValue** agrega un nuevo valor **IPortableDeviceValuesCollection** (tipo VT UNKNOWN) o \_ sobrescribe uno existente.
 
@@ -51,7 +51,7 @@ HRESULT SetIPortableDeviceValuesCollectionValue(
 *pValue* \[ En\]
 </dt> <dd>
 
-Puntero a una **interfaz IPortableDeviceValuesCollection** que especifica el nuevo valor. El SDK copia una referencia a la interfaz enviada y llama a **AddRef** en ella.
+Puntero a una **interfaz IPortableDeviceValuesCollection** que especifica el nuevo valor. El SDK copia una referencia a la interfaz enviada y llama **a AddRef** en ella.
 
 </dd> </dl>
 
@@ -69,7 +69,7 @@ El método devuelve un valor **HRESULT**. Entre los valores posibles se incluyen
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Si un valor existente tiene la misma clave especificada por el parámetro *key,* sobrescribe el valor existente sin ninguna advertencia. La memoria de clave existente se libera correctamente.
 
@@ -84,11 +84,11 @@ Si un valor existente tiene la misma clave especificada por el parámetro *key,*
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 
-[**IPortableDeviceValues (Interfaz)**](iportabledevicevalues.md)
+[**IPortableDeviceValues (interfaz)**](iportabledevicevalues.md)
 </dt> <dt>
 
 [**IPortableDeviceValues::GetIPortableDeviceValuesCollectionValue**](iportabledevicevalues-getiportabledevicevaluescollectionvalue.md)

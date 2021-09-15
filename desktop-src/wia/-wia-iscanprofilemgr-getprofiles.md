@@ -1,7 +1,7 @@
 ---
-description: Obtiene todos los perfiles de digitalización disponibles para el usuario en el sistema en el que se ejecuta la aplicación.
+description: Obtiene todos los perfiles de examen disponibles para el usuario en el sistema en el que se ejecuta la aplicación.
 ms.assetid: 9787079e-283c-4f6d-b97c-cfc1349ada30
-title: 'IScanProfileMgr:: GetProfiles (método) (Scanprofilemgr. h)'
+title: Método IScanProfileMgr::GetProfiles (Scanprofilemgr.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,15 +14,15 @@ api_type:
 api_location:
 - Scanprofilemgr.h
 ms.openlocfilehash: 13949fe08dd547ecb5319e18ecc84139ccd310bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103813883"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466538"
 ---
-# <a name="iscanprofilemgrgetprofiles-method"></a>IScanProfileMgr:: GetProfiles (método)
+# <a name="iscanprofilemgrgetprofiles-method"></a>IScanProfileMgr::GetProfiles (método)
 
-Obtiene todos los perfiles de digitalización disponibles para el usuario en el sistema en el que se ejecuta la aplicación.
+Obtiene todos los perfiles de examen disponibles para el usuario en el sistema en el que se ejecuta la aplicación.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -43,13 +43,13 @@ HRESULT GetProfiles(
 *pulNumProfiles* \[ in, out\]
 </dt> <dd>
 
-Tipo: **ULong \** _
+Tipo: **ULONG \***
 
-Cuando se pasa, puntero al número máximo de perfiles que se van a devolver. Cuando se devuelve, un puntero al número de perfiles devueltos.
+Cuando se pasa, un puntero al número máximo de perfiles que se devolverán. Cuando se devuelve, un puntero al número de perfiles devueltos.
 
 </dd> <dt>
 
-_ppScanProfile * \[ out\]
+*ppScanProfile* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IScanProfile**](-wia-iscanprofile.md)\*\***
@@ -62,11 +62,11 @@ Dirección de una matriz de punteros a perfiles.
 
 Tipo: **HRESULT**
 
-Si este método se ejecuta correctamente, devuelve **S \_ correcto**. De lo contrario, devuelve un código de error **HRESULT** .
+Si este método se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
 ## <a name="remarks"></a>Observaciones
 
-Si el número total de perfiles disponibles para el usuario es menor que el valor pasado a *pulNumProfiles*, *pulNumProfiles* devuelve ese total. De lo contrario, devuelve el mismo valor que se le ha pasado.
+Si el número total de perfiles disponibles para el usuario es menor que el valor pasado a *pulNumProfiles,* *pulNumProfiles* devuelve ese total. De lo contrario, devuelve el mismo valor que se le pasó.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,10 +74,10 @@ Si el número total de perfiles disponibles para el usuario es menor que el valo
 
 | Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Vista \[\]<br/>                                              |
-| Servidor mínimo compatible<br/> | Solo aplicaciones de escritorio de Windows Server 2008 \[\]<br/>                                        |
-| Encabezado<br/>                   | <dl> <dt>Scanprofilemgr. h</dt> </dl> |
-| IDL<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio de Vista\]<br/>                                              |
+| Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[\]<br/>                                        |
+| Encabezado<br/>                   | <dl> <dt>Scanprofilemgr.h</dt> </dl> |
+| IDL<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Si el número total de perfiles disponibles para el usuario es menor que el valo
 [**IScanProfileMgr**](-wia-iscanprofilemgr.md)
 </dt> <dt>
 
-[Esquema de análisis de perfil](-wia-scan-profile-schema.md)
+[Esquema de perfil de examen](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shsvcs.dll
 ms.assetid: ff0ad023-42ea-4c74-adae-af55527b6ac3
-ms.openlocfilehash: 42f2da51bac93733a74113d3a567802975aca18be2a34f6fa349ff65349749c3
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c22f01835f9c526e95a4330e6ad35d370421e604
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118460559"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468274"
 ---
 # <a name="createhardwareeventmoniker-function"></a>Función CreateHardwareEventMoniker
 
@@ -76,7 +76,7 @@ Tipo: **HRESULT**
 
 Si esta función se realiza correctamente, devuelve **S \_ OK**. De lo contrario, devuelve un código de error **HRESULT.**
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Use **CreateHardwareEventMoniker al** registrar aplicaciones en ejecución para que esas aplicaciones tengan acceso a eventos de Reproducción automática. Para usar eventos de Reproducción automática en aplicaciones en ejecución, primero debe crear un nuevo componente que implemente la [**interfaz IHWEventHandler.**](/windows/desktop/api/Shobjidl/nn-shobjidl-ihweventhandler) Inicialice esta interfaz con el valor InitCmdLine de la entrada del controlador en particular bajo la clave **Handlers,** porque AutoPlay no llama al [**método Initialize.**](/windows/desktop/api/Shobjidl/nf-shobjidl-ihweventhandler-initialize)
 
@@ -84,7 +84,7 @@ Debe llamar a **CreateHardwareEventMoniker para** obtener un moniker que represe
 
 Tenga en **cuenta que CreateHardwareEventMoniker** no está definido en un archivo de encabezado. Para usarlo en el código, debe obtener un identificador para el archivo Shsvcs.dll mediante una llamada a [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya). A continuación, use ese identificador en una llamada a [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para obtener una instancia de la **función CreateHardwareEventMoniker.**
 
-La llamada a [**IRunningObjectTable::Register**](/windows/win32/api/objidl/nf-objidl-irunningobjecttable-register) requiere que escriba la siguiente **información de AppID** en el Registro.
+La llamada a [**IRunningObjectTable::Register**](/windows/win32/api/objidl/nf-objidl-irunningobjecttable-register) requiere que escriba la **siguiente información de AppID** en el Registro.
 
 ```
 HKEY_CLASSES_ROOT
@@ -106,11 +106,11 @@ HKEY_CLASSES_ROOT
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows XP \[ solo aplicaciones de escritorio\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                  |
-| Header<br/>                   | <dl> <dt>None</dt> </dl>       |
+| Encabezado<br/>                   | <dl> <dt>Ninguna</dt> </dl>       |
 | Archivo DLL<br/>                      | <dl> <dt>Shsvcs.dll</dt> </dl> |
 
 

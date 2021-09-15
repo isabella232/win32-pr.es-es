@@ -4,12 +4,12 @@ ms.assetid: a6ab1708-dd82-4960-b908-f1daef7374ef
 title: Consultas de metadatos de formato de imagen nativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 463315a1fb18f0f3dc177635f7e63505589e239257dc9cc25fcfa0773ddb25f4
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4be5e9c0f853e4c5e48fb5eb41f2d2ab27b4f4d6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119882385"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467929"
 ---
 # <a name="native-image-format-metadata-queries"></a>Consultas de metadatos de formato de imagen nativo
 
@@ -33,17 +33,17 @@ En este tema se incluyen las siguientes secciones.
 
 ## <a name="prerequisites"></a>Prerrequisitos
 
-Para entender este tema, debe estar familiarizado con el sistema de metadatos de Windows Imaging Component (WIC), tal y como se describe en La introducción a los metadatos [de WIC.](-wic-about-metadata.md) También debe estar familiarizado con el lenguaje de consulta que se usa para leer y escribir metadatos, como se describe en Información general del lenguaje [de consulta de metadatos](-wic-codec-metadataquerylanguage.md).
+Para entender este tema, debe estar familiarizado con el sistema de metadatos de Windows Imaging Component (WIC), tal y como se describe en Información general sobre metadatos [de WIC.](-wic-about-metadata.md) También debe estar familiarizado con el lenguaje de consulta que se usa para leer y escribir metadatos, como se describe en Información general del lenguaje [de consulta de metadatos](-wic-codec-metadataquerylanguage.md).
 
 ## <a name="photo-metadata-policy-expression"></a>Expresión de directiva de metadatos de fotos
 
-Además de admitir el lenguaje de consulta de metadatos, [WIC](-wic-api.md) también acepta nombres de propiedad canónicos del Windows [propiedad .](../properties/windows-properties-system.md) WIC admite un subconjunto del espacio de nombres Windows propiedad que es relevante para los formatos de imagen, como se describe en Directivas de [metadatos de fotos](photo-metadata-policies.md). Una Windows que se usa como consulta de metadatos de WIC se conoce como expresión de directiva de metadatos de fotos.
+Además de admitir el lenguaje de consulta de metadatos, [WIC](-wic-api.md) también acepta nombres de propiedad canónicos del sistema [de Windows propiedades.](../properties/windows-properties-system.md) WIC admite un subconjunto del espacio de nombres Windows propiedad que es relevante para los formatos de imagen, como se describe en Directivas de [metadatos de fotos](photo-metadata-policies.md). Una Windows que se usa como consulta de metadatos de WIC se conoce como una expresión de directiva de metadatos de fotos.
 
 Por ejemplo, la expresión de directiva de metadatos de fotos para la marca de orientación EXIF es:
 
 -   [System.Photo.Orientation](-wic-photoprop-system-photo-orientation.md)
 
-En general, las expresiones de directiva se recomiendan en las consultas de metadatos nativos para los elementos de metadatos de imagen comunes que cubre el espacio de nombres Windows propiedad. El lenguaje de consulta de metadatos es más adecuado para los casos en los que se necesita acceso de bajo nivel a elementos de metadatos de imagen específicos, o para elementos de metadatos personalizados o avanzados que no son compatibles con el sistema de propiedades Windows de metadatos. Para obtener más información, vea [Expresiones de directiva de metadatos de fotos.](-wic-codec-metadataquerylanguage.md)
+En general, las expresiones de directiva se recomiendan en las consultas de metadatos nativos para los elementos de metadatos de imagen comunes cubiertos por el espacio de nombres Windows propiedad. El lenguaje de consulta de metadatos es más adecuado para los casos en los que se necesita acceso de bajo nivel a elementos de metadatos de imagen específicos o para elementos de metadatos personalizados o avanzados que no son compatibles con el sistema de propiedades Windows de metadatos. Para obtener más información, vea [Expresiones de directiva de metadatos de fotos.](-wic-codec-metadataquerylanguage.md)
 
 ## <a name="file-format-specific-metadata"></a>Metadatos específicos del formato de archivo
 
@@ -53,7 +53,7 @@ Las secciones siguientes contienen tablas que muestran las consultas de metadato
 -   **Nombre:** nombre del elemento de metadatos.
 -   **Tipo:** tipo del elemento de metadatos recuperado de la ruta de acceso de consulta. Los metadatos recuperados por [WIC](-wic-api.md) se devuelven en forma de PROPVARIANT, que informa del tipo de datos mediante vartype enumeration.on.
 
-La API de metadatos de WIC usa las rutas de acceso de consulta para acceder a los metadatos incrustados de una imagen. En el código de ejemplo siguiente se muestra cómo usar [**IWICMetadataQueryReader para**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader) consultar el bloque de metadatos IFD de un JPEG.
+La API de metadatos de WIC usa las rutas de acceso de consulta para acceder a los metadatos incrustados de una imagen. En el código de ejemplo siguiente se muestra cómo [**usar IWICMetadataQueryReader para**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader) consultar el bloque de metadatos IFD de un JPEG.
 
 
 ```
@@ -83,7 +83,7 @@ if (SUCCEEDED(hr))
 
 ### <a name="gif-metadata"></a>Metadatos GIF
 
-El Formato de intercambio de gráficos de imagen gif (GIF) admite metadatos globales y de nivel de fotograma. En las dos secciones siguientes se proporcionan las rutas de acceso de consulta de metadatos disponibles para los metadatos globales y de nivel de fotograma de GIF.
+El formato Formato de intercambio de gráficos de imagen gif (GIF) admite metadatos globales y de nivel de fotograma. En las dos secciones siguientes se proporcionan las rutas de acceso de consulta de metadatos disponibles para los metadatos globales y de nivel de fotograma de GIF.
 
 > [!Note]  
 > Para obtener una lista completa de metadatos GIF junto con información más detallada, consulte el [estándar GIF](https://www.w3.org/Graphics/GIF/spec-gif89a.txt) en el sitio web de W3C.
@@ -165,9 +165,9 @@ En la tabla siguiente se proporcionan las rutas de acceso de consulta de metadat
 |--------------------------------------------------------|------------------|-------------------------------------------|
 | /tEXt o / \[ \* \] tEXt donde \* = 0 a N                 | Fragmento de texto       | VT \_ UNKNOWN: lector o escritor de consultas tEXt    |
 | /tEXt/{str= \* } where = identifying keyword for \* text |                  | VT \_ LPSTR                                 |
-| /gAMA                                                  | Fragmento gama       | VT \_ UNKNOWN: lector o escritor de consultas gAMA    |
+| /gAMA                                                  | Gama Chunk       | VT \_ UNKNOWN: lector o escritor de consultas gAMA    |
 | /gAMA/ImageGamma                                       |                  | VT \_ UI4                                   |
-| /iTXt o / \[ \* \] iTXt, donde \* = 0 a N                 | Fragmento de IText      | VT \_ UNKNOWN: lector o escritor de consultas de iTXt    |
+| /iTXt o / \[ \* \] iTXt donde \* = 0 a N                 | Fragmento de IText      | VT \_ UNKNOWN: lector o escritor de consultas de iTXt    |
 | /iTXt/Keyword                                          |                  | VT \_ LPSTR                                 |
 | /iTXt/CompressionFlag                                  |                  | VT \_ UI1                                   |
 | /iTXt/LanguageTag                                      |                  | LPSTR                                     |
@@ -223,13 +223,13 @@ En la tabla siguiente se proporcionan las rutas de acceso de consulta de metadat
 | /ifd                                          | 0 IFD           | VT UNKNOWN: lector o escritor \_ de consultas |
 | /ifd/{ushort= \* } donde = \* 0 a 65535        | Entrada IFD por identificador | Variable                            |
 | /ifd/thumb o /ifd/{ushort=330}               | IFD en miniatura   | VT UNKNOWN: lector o escritor \_ de consultas |
-| /ifd/xmp o /ifd/{ushort=700}                 | Xmp             | VT UNKNOWN: lector o escritor \_ de consultas |
-| /ifd/exif o /ifd/{ushort=34665}              | Exif            | VT UNKNOWN: lector o escritor \_ de consultas |
+| /ifd/xmp o /ifd/{ushort=700}                 | XMP             | VT UNKNOWN: lector o escritor \_ de consultas |
+| /ifd/exif o /ifd/{ushort=34665}              | EXIF            | VT UNKNOWN: lector o escritor \_ de consultas |
 | /ifd/gps o /ifd/{ushort=34853}               | GPS             | VT UNKNOWN: lector o escritor \_ de consultas |
 | /ifd/exif/interop o /ifd/exif/{ushort=40965} | Interop         | VT UNKNOWN: lector o escritor \_ de consultas |
-| /ifd/iptc o /ifd/{ushort=33723}              | Iptc            | VT UNKNOWN: lector o escritor \_ de consultas |
+| /ifd/iptc o /ifd/{ushort=33723}              | IPTC            | VT UNKNOWN: lector o escritor \_ de consultas |
 | /ifd/iptc/{str= \* } where = palabra clave \* IPTC    | Entrada IPTC      | Variable                            |
-| /ifd/irb/8bimiptc/iptc                        | Iptc            | VT UNKNOWN: lector o escritor \_ de consultas |
+| /ifd/irb/8bimiptc/iptc                        | IPTC            | VT UNKNOWN: lector o escritor \_ de consultas |
 | /ifd/irb/8bimiptc/iptc/{str= \* }               | Entrada IPTC      | Variable                            |
 
 
@@ -241,7 +241,7 @@ En la tabla siguiente se proporcionan las rutas de acceso de consulta de metadat
 El formato de imagen JPEG admite metadatos de nivel de fotograma.
 
 > [!Note]  
-> Para obtener una lista completa de los metadatos JPEG junto con información más detallada, consulte el [estándar EXIF JPEG](http://www.cipa.jp/std/documents/e/DC-008-2010_E.pdf).
+> Para obtener una lista completa de los metadatos JPEG junto con información más detallada, consulte [el estándar EXIF JPEG](http://www.cipa.jp/std/documents/e/DC-008-2010_E.pdf).
 
  
 
@@ -253,7 +253,7 @@ En la tabla siguiente se proporcionan las rutas de acceso de consulta de metadat
 
 | Ruta de acceso                                                               | Nombre                 | Tipo                                          |
 |--------------------------------------------------------------------|----------------------|-----------------------------------------------|
-| /app0                                                              | App0                 | VT \_ UNKNOWN: lector o escritor de consultas app0        |
+| /app0                                                              | App0                 | VT \_ UNKNOWN- Lector de consultas/escritor de App0        |
 | /app0/{ushort=0}                                                   | Versión              | VT \_ UI2                                       |
 | /app0/{ushort=1}                                                   | Unidades                | VT \_ UI1                                       |
 | /app0/{ushort=2}                                                   | DpiX                 | VT \_ UI2                                       |
@@ -261,16 +261,16 @@ En la tabla siguiente se proporcionan las rutas de acceso de consulta de metadat
 | /app0/{ushort=4}                                                   | Xthumbnail           | VT \_ UI1                                       |
 | /app0/{ushort=5}                                                   | Ythumbnail           | VT \_ UI1                                       |
 | /app0/{ushort=6}                                                   | ThumbnailData        | VT \_ BLOB                                      |
-| /app1                                                              | Aplicación 1                 | VT \_ UNKNOWN: lector o escritor de consultas App1        |
+| /app1                                                              | Aplicación 1                 | VT \_ UNKNOWN- Lector/escritor de consultas App1        |
 | /app1/ifd o /app1/{ushort=0}                                     | 0 IFD                | VT \_ UNKNOWN: lector o escritor de consultas IFD         |
 | /app1/ifd/exif o /app1/ifd/{ushort=34665}                         | EXIF IFD             | VT \_ UNKNOWN– Lector/escritor de consultas EXIF        |
 | /app1/thumb o /app1/{ushort=1}                                   | IFD en miniatura        | VT UNKNOWN: escritor o lector de \_ consultas subIFD      |
 | /app13                                                             | App13                | VT \_ UNKNOWN: lector o escritor de consultas app13       |
-| /app13/irb o /app13/{ushort=0}                                    | Irb                  | VT \_ UNKNOWN: lector/escritor de consultas IRB         |
+| /app13/irb o /app13/{ushort=0}                                    | IRB                  | VT \_ UNKNOWN: lector/escritor de consultas IRB         |
 | /app13/irb/{ulonglong= \* } where = \* IRB Identifier (consulte la especificación de IRB) | Entrada irb            | VT \_ UNKNOWN: lector o escritor de consultas desconocidos     |
 | /app13/irb/{ulonglong= \* }/{}                                       | Contenido de la entrada irb   | BLOB \_ DE VT                                      |
 | /app13/irb/8bimiptc o /app13/irb/{ulonglong=61857348781060}       | 8BIMIPTC             | VT \_ UNKNOWN - 8BIMIPTC Query Reader/Writer    |
-| /app13/irb/8bimiptc/iptc                                           | Iptc                 | VT \_ UNKNOWN: lector/escritor de consultas IPTC        |
+| /app13/irb/8bimiptc/iptc                                           | IPTC                 | VT \_ UNKNOWN: lector o escritor de consultas IPTC        |
 | /app13/irb/8bimiptc/iptc/{str= \* }                                  | Entrada IPTC           | Variable                                      |
 | /app13/irb/8bimResInfo o /app13/irb/{ulonglong=61857348781037}    | Información de resolución de 8BIM | VT UNKNOWN: lector o escritor \_ de consultas             |
 | /app13/irb/8bimResInfo/PString                                     |                      | VT \_ LPSTR                                     |
@@ -286,7 +286,7 @@ En la tabla siguiente se proporcionan las rutas de acceso de consulta de metadat
 | /luminance/TableEntry                                              |                      | VT \_ UI1 \| VT \_ VECTOR                         |
 | /chrominance                                                       | Chrominance          | VT \_ UNKNOWN - Chrominance Query Reader/Writer |
 | /chrominance/TableEntry                                            |                      | VT \_ UI1 \| VT \_ VECTOR                         |
-| /xmp                                                               | Xmp                  | VT \_ UNKNOWN: lector o escritor de consultas XMP         |
+| /xmp                                                               | XMP                  | VT \_ UNKNOWN: lector o escritor de consultas XMP         |
 
 
 
@@ -305,7 +305,7 @@ Las secciones siguientes contienen información sobre los formatos de metadatos 
 
  
 
-Por ejemplo, para acceder a [la marca Orientation](-wic-photoprop-system-photo-orientation.md) en un archivo JPEG, use la expresión siguiente:
+Por ejemplo, para acceder a [la marca Orientation](-wic-photoprop-system-photo-orientation.md) en un archivo JPEG, use la siguiente expresión:
 
 -   /app1/ifd/{ushort=274}
 
@@ -317,7 +317,7 @@ En este ejemplo, tenga en cuenta que los distintos formatos de imagen pueden alm
 
 ### <a name="ifd-metadata"></a>Metadatos de IFD
 
-Un IFD, o directorio de archivo de imagen, es una estructura de datos definida en el estándar TIFF que puede contener metadatos de imagen. Identifica cada elemento de metadatos mediante una etiqueta de tipo ushort. JPEG, TIFF y JPEG-XR admiten metadatos IFD. Los formatos de terceros, como algunos formatos sin procesar de la cámara, también pueden admitir metadatos IFD.
+Un IFD, o directorio de archivo de imagen, es una estructura de datos definida en el estándar TIFF que puede contener metadatos de imagen. Identifica cada elemento de metadatos mediante una etiqueta de tipo ushort. JPEG, TIFF y JPEG-XR admiten metadatos IFD. Los formatos de terceros, como algunos formatos sin formato de cámara, también pueden admitir metadatos IFD.
 
 La tabla aquí proporciona rutas de consulta de metadatos relativas para acceder a algunos elementos de metadatos IFD usados habitualmente. La estructura de datos IFD permite la extensibilidad de terceros y esta tabla no es una lista exhaustiva. Consulte el estándar TIFF para obtener más información.
 
@@ -327,7 +327,7 @@ La tabla aquí proporciona rutas de consulta de metadatos relativas para acceder
  
 
 > [!Note]  
-> Algunos elementos de metadatos de la tabla aquí requieren interpretación adicional o información para usarse correctamente, consulte el estándar TIFF. Por ejemplo, el elemento de metadatos [PhotometricInterpretation](-wic-photoprop-system-photo-photometricinterpretation.md) devuelve un PROPVARIANT de tipo VT \_ UI2. Sin embargo, según el estándar TIFF, se interpreta como una enumeración. Consulte el estándar TIFF para obtener más información.
+> Algunos elementos de metadatos de la tabla requieren interpretación adicional o información para usarse correctamente, consulte el estándar TIFF. Por ejemplo, el elemento de metadatos [PhotometricInterpretation](-wic-photoprop-system-photo-photometricinterpretation.md) devuelve un PROPVARIANT de tipo VT \_ UI2. Sin embargo, según el estándar TIFF, se interpreta como una enumeración. Consulte el estándar TIFF para obtener más información.
 
  
 
@@ -350,7 +350,7 @@ La tabla aquí proporciona rutas de consulta de metadatos relativas para acceder
 | /{ushort=296}   | ResolutionUnit            | VT \_ UI2                                        |
 | /{ushort=306}   | DateTime                  | VT \_ LPSTR                                      |
 | /{ushort=270}   | ImageDescription          | VT \_ LPSTR                                      |
-| /{ushort=271}   | Make                      | VT \_ LPSTR                                      |
+| /{ushort=271}   | Asegúrese                      | VT \_ LPSTR                                      |
 | /{ushort=272}   | Modelo                     | VT \_ LPSTR                                      |
 | /{ushort=305}   | Software                  | VT \_ LPSTR                                      |
 | /{ushort=315}   | Artista                    | VT \_ LPSTR                                      |
@@ -369,15 +369,15 @@ La tabla aquí proporciona rutas de consulta de metadatos relativas para acceder
 
 Los metadatos EXIF se definen como parte de la especificación EXIF JPEG. Los metadatos EXIF se basan en la estructura de datos IFD, tal como se define en el estándar TIFF, y proporcionan atributos adicionales, como información sobre los dispositivos y atributos de fotografía utilizados para crear la imagen. Identifica cada elemento de metadatos mediante una etiqueta de tipo ushort. JPEG, TIFF y JPEG-XR admiten metadatos EXIF. Los formatos de terceros, como algunos formatos sin formato de cámara, también pueden admitir metadatos EXIF.
 
-En la tabla siguiente se proporcionan rutas de acceso de consulta de metadatos relativas para acceder a algunos elementos de metadatos EXIF usados habitualmente. La estructura de datos EXIF permite la extensibilidad de terceros y esta tabla no es una lista exhaustiva. Consulte el estándar EXIF para obtener más información.
+En la tabla siguiente se proporcionan rutas de acceso de consulta de metadatos relativas para acceder a algunos elementos de metadatos EXIF usados con frecuencia. La estructura de datos EXIF permite la extensibilidad de terceros y esta tabla no es una lista exhaustiva. Consulte el estándar EXIF para obtener más información.
 
 > [!Note]  
-> Muchos elementos de metadatos EXIF se definen en el estándar EXIF como tipo "RATIONAL" o "SRATIONAL". Un "RATIONAL" consta de un numerador y un denominador, que son enteros de 32 bits sin signo. El numerador está contenido en los 32 bits altos y el denominador en los 32 bits inferiores. En [WIC](-wic-api.md), se devuelven como PROPVARIANT con un tipo de VT UI8 o VT I8, respectivamente; el valor real se almacena como \_ \_ ULARGE INTEGER o LARGE \_ \_ INTEGER, respectivamente. Para acceder al numerador y al denominador, lea los miembros HighPart y LowPart del valor ULARGE INTEGER o \_ LARGE \_ INTEGER.
+> Muchos elementos de metadatos EXIF se definen en el estándar EXIF como tipo "RATIONAL" o "SRATIONAL". Un "RATIONAL" consta de un numerador y un denominador, que son enteros de 32 bits sin signo. El numerador se encuentra en los 32 bits altos y el denominador en los 32 bits inferiores. En [WIC](-wic-api.md), se devuelven como PROPVARIANT con un tipo de VT UI8 o VT I8, respectivamente; el valor real se almacena como \_ \_ ULARGE INTEGER o LARGE \_ \_ INTEGER, respectivamente. Para acceder al numerador y al denominador, lea los miembros HighPart y LowPart del valor ULARGE \_ INTEGER o LARGE \_ INTEGER.
 
  
 
 > [!Note]  
-> Algunos elementos de metadatos de la tabla siguiente requieren una interpretación o información adicional para usarse correctamente. Por ejemplo, el elemento [de metadatos ColorSpace](-wic-photoprop-system-image-colorspace.md) devuelve un PROPVARIANT de tipo VT \_ UI2. Sin embargo, según el estándar EXIF, se interpreta como una enumeración. Consulte el estándar EXIF para obtener más información.
+> Algunos elementos de metadatos de la tabla siguiente requieren interpretación o información adicionales para su uso correcto. Por ejemplo, el elemento de [metadatos ColorSpace](-wic-photoprop-system-image-colorspace.md) devuelve un VALOR PROPVARIANT de tipo VT \_ UI2. Sin embargo, según el estándar EXIF, se interpreta como una enumeración. Consulte el estándar EXIF para obtener más información.
 
  
 
@@ -385,12 +385,12 @@ En la tabla siguiente se proporcionan rutas de acceso de consulta de metadatos r
 
 | Ruta relativa   | Nombre                      | Tipo                  |
 |-----------------|---------------------------|-----------------------|
-| /{ushort=36864} | ExifVersion               | BLOB \_ DE VT              |
-| /{ushort=40960} | FlashpixVersion           | BLOB \_ DE VT              |
+| /{ushort=36864} | ExifVersion               | VT \_ BLOB              |
+| /{ushort=40960} | FlashpixVersion           | VT \_ BLOB              |
 | /{ushort=40961} | ColorSpace                | VT \_ UI2               |
 | /{ushort=40962} | PixelXDimension           | VT \_ UI2 o VT \_ UI4    |
 | /{ushort=40963} | PixelYDimension           | VT \_ UI2 o VT \_ UI4    |
-| /{ushort=37500} | MakerNote                 | BLOB \_ DE VT              |
+| /{ushort=37500} | MakerNote                 | VT \_ BLOB              |
 | /{ushort=37510} | UserComment               | VT \_ LPWSTR            |
 | /{ushort=36867} | DateTimeOriginal          | VT \_ LPSTR             |
 | /{ushort=36868} | DateTimeDigitized         | VT \_ LPSTR             |
@@ -405,15 +405,15 @@ En la tabla siguiente se proporcionan rutas de acceso de consulta de metadatos r
 | /{ushort=33437} | FNumber                   | VT \_ UI8               |
 | /{ushort=34850} | ExposureProgram           | VT \_ UI2               |
 | /{ushort=34852} | SpectralSensitivity       | VT \_ LPSTR             |
-| /{ushort=34855} | Desenserción de las fotografías   | VT \_ VECTOR \| VT \_ UI2 |
-| /{ushort=34856} | OECF                      | BLOB \_ DE VT              |
+| /{ushort=34855} | FotoríaSensibilidad   | VT \_ VECTOR \| VT \_ UI2 |
+| /{ushort=34856} | OECF                      | VT \_ BLOB              |
 | /{ushort=34864} | SensitivityType           | VT \_ UI2               |
 | /{ushort=34865} | StandardOutputSensitivity | VT \_ UI4               |
 | /{ushort=34866} | RecommendedExposureIndex  | VT \_ UI4               |
 | /{ushort=34867} | ISOSpeed                  | VT \_ UI4               |
 | /{ushort=34868} | ISOSpeedLatitudeyyy       | VT \_ UI4               |
 | /{ushort=34869} | ISOSpeedLatitudezzz       | VT \_ UI4               |
-| /{ushort=37377} | SpeedSpeedValue         | VT \_ I8                |
+| /{ushort=37377} | El valor de la propiedad Desenlazable         | VT \_ I8                |
 | /{ushort=37378} | ApertureValue             | VT \_ UI8               |
 | /{ushort=37379} | BrightnessValue           | VT \_ I8                |
 | /{ushort=37380} | ExposureBiasValue         | VT \_ I8                |
@@ -425,27 +425,27 @@ En la tabla siguiente se proporcionan rutas de acceso de consulta de metadatos r
 | /{ushort=37386} | Focallength               | VT \_ UI8               |
 | /{ushort=37396} | SubjectArea               | VT \_ VECTOR \| VT \_ UI2 |
 | /{ushort=41483} | FlashEnergy               | VT \_ UI8               |
-| /{ushort=41484} | SpatialFrequencyResponse  | BLOB \_ DE VT              |
+| /{ushort=41484} | SpatialFrequencyResponse  | VT \_ BLOB              |
 | /{ushort=41486} | FocalPlaneXResolution     | VT \_ UI8               |
 | /{ushort=41487} | FocalPlaneYResolution     | VT \_ UI8               |
 | /{ushort=41488} | FocalPlaneResolutionUnit  | VT \_ UI2               |
 | /{ushort=41492} | SubjectLocation           | VT \_ VECTOR \| VT \_ UI2 |
 | /{ushort=41493} | ExposureIndex             | VT \_ UI8               |
 | /{ushort=41495} | SensingMethod             | VT \_ UI2               |
-| /{ushort=41728} | FileSource                | VT \_ BLOB              |
-| /{ushort=41729} | SceneType                 | VT \_ BLOB              |
-| /{ushort=41730} | CFAPattern                | VT \_ BLOB              |
+| /{ushort=41728} | FileSource                | BLOB \_ DE VT              |
+| /{ushort=41729} | SceneType                 | BLOB \_ DE VT              |
+| /{ushort=41730} | CFAPattern                | BLOB \_ DE VT              |
 | /{ushort=41985} | CustomRendered            | VT \_ UI2               |
 | /{ushort=41986} | ExposureMode              | VT \_ UI2               |
 | /{ushort=41987} | WhiteBalance              | VT \_ UI2               |
 | /{ushort=41988} | DigitalZoomRatio          | VT \_ UI8               |
-| /{ushort=41989} | FocalLengthIn35mmLíning     | VT \_ UI2               |
+| /{ushort=41989} | FocalLengthIn35mmDur     | VT \_ UI2               |
 | /{ushort=41990} | SceneCaptureType          | VT \_ UI2               |
 | /{ushort=41991} | GainControl               | VT \_ UI8               |
 | /{ushort=41992} | Compare                  | VT \_ UI2               |
 | /{ushort=41993} | Saturación                | VT \_ UI2               |
 | /{ushort=41994} | Nitidez                 | VT \_ UI2               |
-| /{ushort=41995} | DeviceSettingDescription  | VT \_ BLOB              |
+| /{ushort=41995} | DeviceSettingDescription  | BLOB \_ DE VT              |
 | /{ushort=41996} | SubjectDistanceRange      | VT \_ UI2               |
 
 
@@ -456,15 +456,15 @@ En la tabla siguiente se proporcionan rutas de acceso de consulta de metadatos r
 
 Los metadatos GPS contienen información de geolocalización y se definen como parte de la especificación EXIF JPEG. Identifica cada elemento de metadatos mediante una etiqueta de tipo ushort. JPEG, TIFF y JPEG-XR admiten metadatos GPS; Los formatos de terceros, como algunos formatos sin formato de cámara, también pueden admitir metadatos GPS.
 
-En la tabla siguiente se proporcionan rutas de acceso de consulta de metadatos relativas para acceder a algunos elementos de metadatos GPS usados habitualmente. Esta tabla no es una lista exhaustiva; Consulte el estándar EXIF para obtener más información.
+En la tabla siguiente se proporcionan rutas de consulta de metadatos relativas para acceder a algunos elementos de metadatos GPS usados habitualmente. Esta tabla no es una lista exhaustiva; Consulte el estándar EXIF para obtener más información.
 
 > [!Note]  
-> Muchos elementos de metadatos GPS se definen en el estándar EXIF como tipo "RATIONAL". Un "RATIONAL" consta de un numerador y un denominador, que son enteros de 32 bits sin signo. El numerador se encuentra en los 32 bits altos y el denominador en los 32 bits inferiores. En [WIC](-wic-api.md), se devuelven como PROPVARIANT con un tipo de VT \_ UI8. El valor real se almacena como ULARGE \_ INTEGER. Para acceder al numerador y al denominador, lea los miembros HighPart y LowPart del valor INTEGER de \_ ULARGE.
+> Muchos elementos de metadatos GPS se definen en el estándar EXIF como tipo "RATIONAL". Un "RATIONAL" consta de un numerador y un denominador, que son enteros de 32 bits sin signo. El numerador está contenido en los 32 bits altos y el denominador en los 32 bits inferiores. En [WIC](-wic-api.md), se devuelven como PROPVARIANT con un tipo de VT \_ UI8. El valor real se almacena como ULARGE \_ INTEGER. Para acceder al numerador y al denominador, lea los miembros HighPart y LowPart del valor INTEGER de \_ ULARGE.
 
  
 
 > [!Note]  
-> Algunos elementos de metadatos de la tabla requieren una interpretación o información adicionales para su uso correcto. Por ejemplo, el elemento de metadatos GPSLatitudeRef devuelve un PROPVARIANT de tipo VT \_ LPSTR. Según el estándar EXIF, esta cadena es "N" o "S", que representa la latitud norte o sur. Consulte el estándar EXIF para obtener más información.
+> Algunos elementos de metadatos de la tabla requieren una interpretación o información adicional para usarse correctamente. Por ejemplo, el elemento de metadatos GPSLatitudeRef devuelve un PROPVARIANT de tipo VT \_ LPSTR. Según el estándar EXIF, esta cadena es "N" o "S", que representa la latitud norte o sur. Consulte el estándar EXIF para obtener más información.
 
  
 
@@ -499,21 +499,21 @@ XMP es un estándar de metadatos extensible basado en XML. Los elementos de meta
 
 El estándar XMP se puede obtener de: <https://www.adobe.com/devnet/xmp.html> .
 
-XMP y permite a las entidades de terceros publicar sus propios esquemas o espacios de nombres, que les permiten definir nuevos elementos de metadatos sin tener que modificar el estándar XMP. Un esquema XMP se identifica de forma única mediante una dirección URL, pero [WIC](-wic-api.md) proporciona un conjunto de identificadores descriptivos para esquemas conocidos.
+XMP y permite que las entidades de terceros publiquen sus propios esquemas o espacios de nombres, lo que les permite definir nuevos elementos de metadatos sin tener que modificar el estándar XMP. Un esquema XMP se identifica de forma única mediante una dirección URL, pero [WIC](-wic-api.md) proporciona un conjunto de identificadores descriptivos para esquemas conocidos.
 
-Los elementos de metadatos XMP se identifican mediante un nombre de cadena, así como un identificador de esquema. Como procedimiento recomendado, cada consulta de metadatos XMP debe especificar el esquema y el nombre. Si falta el identificador de esquema, JPEG intentará hacer coincidir el nombre de metadatos en todos los espacios de nombres presentes en el paquete de metadatos XMP.
+Los elementos de metadatos XMP se identifican mediante un nombre de cadena, así como un identificador de esquema. Como procedimiento recomendado, cada consulta de metadatos XMP debe especificar el esquema y el nombre. Si falta el identificador de esquema, JPEG intentará coincidir con el nombre de metadatos en todos los espacios de nombres presentes en el paquete de metadatos XMP.
 
 Por ejemplo, para obtener la propiedad Rating tal como se define en el esquema XMP en una imagen JPEG, use la consulta siguiente:
 
 -   /xmp/{wstr=https://ns.adobe.com/xap/1.0/}:Rating
 
-La primera parte, "/xmp", recupera el lector o escritor de metadatos XMP para la imagen. " https://ns.adobe.com/xap/1.0/ " es la dirección URL del esquema XMP, tal como se define en el estándar XMP. La dirección URL se incluye en una expresión de datos para permitir el uso de caracteres como una barra diagonal (/). Por último, "Clasificación" es el nombre real del elemento de metadatos definido por el esquema XMP y se separa del identificador de esquema mediante dos puntos (:).
+La primera parte, "/xmp", recupera el lector o escritor de metadatos XMP para la imagen. " https://ns.adobe.com/xap/1.0/ " es la dirección URL del esquema XMP, tal como se define en el estándar XMP. La dirección URL se incluye en una expresión de datos para permitir el uso de caracteres como una barra diagonal (/). Por último, "Rating" es el nombre real del elemento de metadatos definido por el esquema XMP y está separado del identificador de esquema por dos puntos (:).
 
 En este ejemplo, WIC proporciona un identificador descriptivo para el esquema XMP que se puede usar en lugar de la dirección URL completa. Por lo tanto, la consulta anterior se puede volver a escribir como:
 
 -   /xmp/xmp:Rating
 
-[WIC](-wic-api.md) proporciona prefijos de esquema descriptivos para los siguientes esquemas usados habitualmente:
+[WIC](-wic-api.md) proporciona prefijos de esquema descriptivos para los siguientes esquemas de uso frecuente:
 
 
 
@@ -543,7 +543,7 @@ En este ejemplo, WIC proporciona un identificador descriptivo para el esquema XM
 | Iptc4xmpCore   | https://iptc.org/std/Iptc4xmpCore/1.0/xmlns/       | <https://www.iptc.org/cms/site/index.html?channel=CH0099> |
 | MicrosoftPhoto | https://ns.microsoft.com/photo/1.0/                | [Introducción al etiquetado de personas](-wic-people-tagging.md)       |
 | MP             | https://ns.microsoft.com/photo/1.2/                | [Introducción al etiquetado de personas](-wic-people-tagging.md)       |
-| Iipm           | https://ns.microsoft.com/photo/1.2/t/RegionInfo\#  | [Introducción al etiquetado de personas](-wic-people-tagging.md)       |
+| IIPM           | https://ns.microsoft.com/photo/1.2/t/RegionInfo\#  | [Introducción al etiquetado de personas](-wic-people-tagging.md)       |
 | MPReg          | https://ns.microsoft.com/photo/1.2/t/Region\#      | [Introducción al etiquetado de personas](-wic-people-tagging.md)       |
 
 
@@ -559,7 +559,7 @@ Si no hay ningún prefijo de esquema descriptivo para un esquema determinado, po
 **Conceptual**
 </dt> <dt>
 
-[Windows Información general sobre los componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
+[Windows Información general sobre componentes de creación de imágenes](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
 [Introducción a los metadatos de WIC](-wic-about-metadata.md)

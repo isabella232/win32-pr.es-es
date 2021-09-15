@@ -4,12 +4,12 @@ ms.assetid: 5550dc25-20c1-44a5-a45a-6402503e1ff8
 title: System.RatingText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a725e2d768318c0556ecf7d47b123caa1f0a4c93cc1b225ce8749e03f10bb22c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f366c622d1df42fdde1d2f3de8274e1cb6ca0497
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119598155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468371"
 ---
 # <a name="systemratingtext"></a>System.RatingText
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

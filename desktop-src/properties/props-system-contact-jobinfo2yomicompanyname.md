@@ -4,12 +4,12 @@ ms.assetid: 9f105c3b-4617-4684-b8be-2939967841c1
 title: System.Contact.JobInfo2YomiCompanyName
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e77f1a533f543d65c6dd9fa383a47929d5d64175c4766b7bccb874bc28e7d33e
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 86200593d5e66938fda7860de115ecf4c9bca3fe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119717815"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466799"
 ---
 # <a name="systemcontactjobinfo2yomicompanyname"></a>System.Contact.JobInfo2YomiCompanyName
 
@@ -28,7 +28,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

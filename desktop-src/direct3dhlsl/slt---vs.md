@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 76117b802826d9c8b95264cdc07071c85db4a395e66124fc923ba5f9f11b9d7e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f6476ec24f82295d56b04682dfa4320547672b43
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120095185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466940"
 ---
 # <a name="slt---vs"></a>slt- vs
 
 Calcula el signo si el primer origen es menor que el segundo origen.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 
@@ -31,13 +31,13 @@ Calcula el signo si el primer origen es menor que el segundo origen.
 
  
 
-where
+, donde
 
 -   dst es el registro de destino.
 -   src0 es un registro de origen.
 -   src1 es un registro de origen.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 
 

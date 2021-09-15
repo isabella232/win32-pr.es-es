@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 8f02095415ff2682e1f2a2eeb21c4afe0754b72251f6129856f1b6a415913cf4
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 501b1396bd08ad8fd06f25da9b7030d4ce28d1e0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118720921"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468172"
 ---
 # <a name="ishelldispatch3-object"></a>Objeto IShellDispatch3
 
@@ -29,7 +29,7 @@ Extiende el [**objeto IShellDispatch2.**](ishelldispatch2-object.md) **IShellDis
 
  
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
 El **objeto IShellDispatch3** tiene estos tipos de miembros:
 
@@ -49,7 +49,7 @@ El **objeto IShellDispatch3** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Para obtener una explicación de Windows servicios, consulte la [documentación de](../services/services.md) servicios.
 
@@ -57,17 +57,17 @@ Para obtener una explicación de Windows servicios, consulte la [documentación 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Solo \[ aplicaciones de escritorio XP\]<br/>                                                                   |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2003 \[\]<br/>                                                          |
-| Header<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
-| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| Encabezado<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| IDL<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
 | Archivo DLL<br/>                      | <dl> <dt>Shell32.dll (versión 6.0 o posterior)</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 <dl> <dt>
 

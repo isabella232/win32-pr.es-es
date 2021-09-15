@@ -24,16 +24,16 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8be28048f1328acfd8ae634e55d095e81a5ae859972b206b817d4f3c3e01a410
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 7ad8618fb9fe3486ca15b0883002f40cd29a2193
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119786415"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466326"
 ---
 # <a name="columnvaluetostring-method"></a>Método ColumnValue.ToString
 
-Devuelve una [cadena](/dotnet/api/system.string) que representa el objeto [ColumnValue actual.](./columnvalue-class.md)
+Devuelve un [objeto String](/dotnet/api/system.string) que representa el [valor columnValue actual.](./columnvalue-class.md)
 
 **Espacio de nombres:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
@@ -57,9 +57,9 @@ public abstract string ToString()
 #### <a name="return-value"></a>Valor devuelto
 
 Tipo: [System.String](/dotnet/api/system.string)  
-Cadena [que](/dotnet/api/system.string) representa el objeto [ColumnValue actual.](./columnvalue-class.md)  
+Cadena [que](/dotnet/api/system.string) representa el valor [ColumnValue actual.](./columnvalue-class.md)  
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

@@ -17,12 +17,12 @@ keywords:
 - metadata,reading at playback
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f62100da8c2f27e626e27ae6686e08f7217867ec2775f69292aac495d218fcb8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 42a2515dd62092d02a45b0261fe2b501e0833a31
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119027353"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466666"
 ---
 # <a name="reading-metadata-at-playback"></a>Leer metadatos en reproducción
 

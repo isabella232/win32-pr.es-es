@@ -4,12 +4,12 @@ ms.assetid: 628ca677-31eb-47d9-bcc6-d7777f8aaf7c
 title: Recognizer Lattice (estructura)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc5610d60428bd3259672f43e45efa59c25f78b7ddc5909c363610eaf08520e1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 46bbfe71674571ae0554509dfa8477569ef8b44d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118716032"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467161"
 ---
 # <a name="recognizer-lattice-structure"></a>Recognizer Lattice (estructura)
 
@@ -39,7 +39,7 @@ En los ejemplos siguientes se usan los trazos de la palabra "juntos", como se mu
 
 ![trazos para la palabra "together"](images/1d5fa9fb-6c38-49b8-8caa-2b6dcc1d5dec.gif)
 
-Un entramado se compone de una o varias columnas, una para cada segmento. A su vez, cada columna contiene uno o varios elementos. Un elemento contiene una alternativa de reconocimiento discreto. Para obtener más información sobre las columnas, vea [**la estructura RECO \_ LATTICE \_ COLUMN.**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice_column) Para obtener más información sobre los elementos, vea [**la estructura RECO \_ LATTICE \_ ELEMENT.**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice_element)
+Un entramado se compone de una o varias columnas, una para cada segmento. A su vez, cada columna contiene uno o varios elementos. Un elemento contiene una alternativa de reconocimiento discreto. Para más información sobre las columnas, consulte la [**estructura RECO \_ LATTICE \_ COLUMN.**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice_column) Para obtener más información sobre los elementos, vea [**la estructura RECO \_ LATTICE \_ ELEMENT.**](/windows/win32/api/rectypes/ns-rectypes-reco_lattice_element)
 
 El reconocedor podría devolver un único segmento al evaluar la muestra de entrada de lápiz que se muestra en el ejemplo anterior. En este caso, la celosía contiene una sola columna con un solo elemento.
 

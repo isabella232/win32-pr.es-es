@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_
 ms:contentKeyID: 55103480
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: eef054e3cfa5a10fed058c087c2161357737c8a6902139fcba64af5a7f86b397
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2b7b6d95f9d6c2648d1e1bd06712b1cfde13d8af
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119112474"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466595"
 ---
 # <a name="jet_columndef-members"></a>JET_COLUMNDEF miembros
 
@@ -21,7 +21,7 @@ Incluir miembros heredados
 
 Describe una columna de una tabla de una base de datos ESENT.
 
-El [JET_COLUMNDEF](./jet-columndef-class.md) expone los miembros siguientes.
+El [JET_COLUMNDEF](./jet-columndef-class.md) muestra los miembros siguientes.
 
 ## <a name="constructors"></a>Constructores
 
@@ -59,7 +59,7 @@ Superior
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
 <td><a href="dn335080(v=exchg.10).md">cbMax</a></td>
-<td>Obtiene o establece la longitud máxima de la columna. Esto solo es significativo para las columnas de tipo <a href="hh577895(v=exchg.10).md">Text</a>, <a href="hh577895(v=exchg.10).md">LongText</a>, <a href="hh577895(v=exchg.10).md">Binary</a> <a href="hh577895(v=exchg.10).md">y LongBinary</a>.</td>
+<td>Obtiene o establece la longitud máxima de la columna. Esto solo es significativo para las columnas de tipo <a href="hh577895(v=exchg.10).md">Text</a>, <a href="hh577895(v=exchg.10).md">LongText</a>, <a href="hh577895(v=exchg.10).md">Binary</a> y <a href="hh577895(v=exchg.10).md">LongBinary</a>.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propiedad pública" alt="Public property" /></td>
@@ -136,7 +136,7 @@ Superior
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335039(v=exchg.10).md">ToString</a></td>
-<td>Devuelve una <a href="/dotnet/api/system.string">cadena</a> que representa el objeto <a href="dn335038(v=exchg.10).md">JET_COLUMNDEF</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
+<td>Devuelve un <a href="/dotnet/api/system.string">objeto String</a> que representa el objeto <a href="dn335038(v=exchg.10).md">JET_COLUMNDEF</a>. (Invalida <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>).</td>
 </tr>
 </tbody>
 </table>

@@ -4,12 +4,12 @@ ms.assetid: 011b8830-60a4-4c37-a7a7-4948f87bffcc
 title: System.GPS.LongitudeRef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d303fff4ea76df12f4113e5a079bc168a9f6927fdf7a534f65f674fd50bb76c1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 64d554f44fbbb1afb343703f6c1509d7ce3488d0
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118466521"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468491"
 ---
 # <a name="systemgpslongituderef"></a>System.GPS.LongitudeRef
 
@@ -45,7 +45,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

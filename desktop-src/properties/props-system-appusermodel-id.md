@@ -4,24 +4,24 @@ ms.assetid: 07858b3c-e601-40ec-a87a-d66612d5473a
 title: System.AppUserModel.ID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dd60b64598a620221ec2b610b10cbc05002f38aaf633e51e788b24797620cab
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 82c636b2c946f1138f4a25c3129a7a3b44d31558
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119033743"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466801"
 ---
 # <a name="systemappusermodelid"></a>System.AppUserModel.ID
 
-Identificador de modelo de usuario de aplicación explícito (AppUserModelID) que se usa para asociar procesos, archivos y ventanas a una aplicación determinada. En algunos casos, es suficiente confiar en el AppUserModelID interno asignado a un proceso por el sistema. Sin embargo, una aplicación que posee varios procesos o una aplicación que se ejecuta en un proceso host podría necesitar identificarse explícitamente a través de esta propiedad para que pueda agrupar sus ventanas dispares en un solo botón de la barra de tareas y controlar el contenido de la aplicación Lista de accesos directos.
+Identificador de modelo de usuario de aplicación explícito (AppUserModelID) que se usa para asociar procesos, archivos y ventanas a una aplicación determinada. En algunos casos, es suficiente con basarse en el AppUserModelID interno asignado a un proceso por el sistema. Sin embargo, una aplicación que posee varios procesos o una aplicación que se ejecuta en un proceso host podría tener que identificarse explícitamente a través de esta propiedad para que pueda agrupar sus ventanas dispares en un solo botón de la barra de tareas y controlar el contenido de la aplicación Lista de accesos directos.
 
 Para establecer esta propiedad en una ventana, use [**SHGetPropertyStoreForWindow**](/windows/desktop/api/Shellapi/nf-shellapi-shgetpropertystoreforwindow) para recuperar el almacén de propiedades de la ventana y use los métodos de ese objeto [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore) recuperado para establecer la propiedad [System.AppUserModel.ID]() de esa ventana.
 
-Para obtener más información, [vea Application User Model IDs (AppUserModelIDs) ( Id. de modelo de usuario de aplicación [AppUserModelID]).](../shell/appids.md)
+Para obtener más información, vea Id. de modelo de usuario [de aplicación (AppUserModelIDs).](../shell/appids.md)
 
 En el momento en [System.AppUserModel.ID]() se establece la propiedad , se notifica a la barra de tareas que actualice su información en la ventana o acceso directo dado que AppUserModelID.
 
-Se pueden usar otras propiedades de ventana y acceso directo junto con un AppUserModelID explícito para controlar aún más la agrupación y el anclar asociados a una ventana, el nombre para mostrar y el icono que se usa para ella en la barra de tareas y el comando para iniciar una aplicación anclada a la barra de tareas o una nueva instancia de la aplicación a través del Lista de accesos directos de esa aplicación. Estas propiedades deben establecerse antes de establecer la [System.AppUserModel.ID]() propiedad . Para obtener más información, vea los temas siguientes:
+Se pueden usar otras propiedades de ventana y acceso directo junto con un AppUserModelID explícito para controlar aún más la agrupación y el anclar asociados a una ventana, el nombre para mostrar y el icono que se usa para ella en la barra de tareas y el comando para iniciar una aplicación anclada a la barra de tareas o una nueva instancia de la aplicación a través del Lista de accesos directos de esa aplicación. Estas propiedades deben establecerse antes de establecer [System.AppUserModel.ID]() propiedad . Para obtener más información, vea los temas siguientes:
 
 -   [System.AppUserModel.PreventPinning](./props-system-appusermodel-preventpinning.md)
 -   [System.AppUserModel.RelaunchCommand](./props-system-appusermodel-relaunchcommand.md)
@@ -44,7 +44,7 @@ propertyDescription
       IsInnate = false
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 
@@ -52,7 +52,7 @@ Los valores PKEY se definen en Propkey.h.
 
 <dl> <dt>
 
-[Id. de modelo de usuario de aplicación (AppUserModelID)](../shell/appids.md)
+[Id. de modelo de usuario de aplicación (AppUserModelIDs)](../shell/appids.md)
 </dt> <dt>
 
 [**SHGetPropertyStoreForWindow**](/windows/desktop/api/Shellapi/nf-shellapi-shgetpropertystoreforwindow)

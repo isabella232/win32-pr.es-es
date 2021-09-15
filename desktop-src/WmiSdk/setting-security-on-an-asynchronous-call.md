@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Establecer la seguridad en una llamada asincrónica
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 228dbf5d84a85f28d5d57afb12823c93c95f9b259ebe95a15e949eec10543d84
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e39f78315814d3b66c97e60a6b8045d7ea9e7afe
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118992335"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465600"
 ---
 # <a name="setting-security-on-an-asynchronous-call"></a>Establecer la seguridad en una llamada asincrónica
 
@@ -20,7 +20,7 @@ Los riesgos de seguridad para las llamadas asincrónicas existen porque WMI redu
 
 El nivel de autenticación mínimo **es RPC \_ C \_ AUTHN \_ LEVEL \_ PKT** **(wbemAuthenticationLevelPkt** para scripting). Sin embargo, puede especificar un nivel superior, como **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY** (**wbemAuthenticationLevelPktPrivacy**). Se recomienda que los scripts o aplicaciones cliente establezcan el nivel de autenticación en **RPC \_ C \_ AUTHN \_ LEVEL \_ DEFAULT** (**wbemAuthenticationLevelDefault**), lo que permite negociar el nivel de autenticación al nivel especificado por el servidor.
 
-El valor del Registro **HKEY \_ LOCAL \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ **UnsecAppAccessControlDefault** controla si WMI busca un nivel de autenticación aceptable en las devoluciones de llamada. Este es el único mecanismo para proteger la seguridad del receptor para las llamadas asincrónicas realizadas en scripts o Visual Basic. De forma predeterminada, esta clave del Registro se establece en cero. Si la clave del Registro es cero, WMI no comprueba los niveles de autenticación. Para proteger las llamadas asincrónicas en scripting, establezca la clave del Registro en 1. Los clientes de C++ pueden llamar [**a IWbemUnsecuredControl::CreateSinkStub para**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemunsecuredapartment-createsinkstub) controlar el acceso al receptor. El valor se crea en cualquier lugar de forma predeterminada.
+El valor del Registro **HKEY \_ LOCAL \_ MACHINE** \\ **Software** \\ **Microsoft** \\ **WBEM** \\ **CIMOM** \\ **UnsecAppAccessControlDefault** controla si WMI busca un nivel de autenticación aceptable en las devoluciones de llamada. Este es el único mecanismo para proteger la seguridad del receptor para las llamadas asincrónicas realizadas en scripting o Visual Basic. De forma predeterminada, esta clave del Registro se establece en cero. Si la clave del Registro es cero, WMI no comprueba los niveles de autenticación. Para proteger las llamadas asincrónicas en scripting, establezca la clave del Registro en 1. Los clientes de C++ pueden llamar [**a IWbemUnsecuredControl::CreateSinkStub para**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemunsecuredapartment-createsinkstub) controlar el acceso al receptor. El valor se crea en cualquier lugar de forma predeterminada.
 
 En los temas siguientes se proporcionan ejemplos de configuración de la seguridad de llamadas asincrónicas:
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ca2bd1827eedf88af5a4bfa2cacc1806554adf84c8e21e57890e08f683ffe4af
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d87fc8be01a4623f799e6949180be7fd01da84e6
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119836345"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467259"
 ---
 # <a name="esentmustrollbackexception-constructor"></a>Constructor EsentMustRollbackException
 
@@ -52,7 +52,7 @@ Dim instance As New EsentMustRollbackException()
 public EsentMustRollbackException()
 ```
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 #### <a name="reference"></a>Referencia
 

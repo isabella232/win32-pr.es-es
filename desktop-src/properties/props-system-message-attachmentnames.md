@@ -4,12 +4,12 @@ ms.assetid: c299ffa4-9bf9-4e05-8395-399d68cc6715
 title: System.Message.AttachmentNames
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 210e5eb257188a0f4d0c2d991106b013bcfe85fecbdeb602512a60b26b50f9ee
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 160f146a03193deb74ec2f904a6c3fc485412d23
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120090905"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466791"
 ---
 # <a name="systemmessageattachmentnames"></a>System.Message.AttachmentNames
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

@@ -1,20 +1,20 @@
 ---
-description: Las aplicaciones, los procesos y las ventanas pueden optar por dejar de estar disponibles para anclarse a la barra de tareas o para su inclusión en la lista de uso más frecuente (MFU) de menú Inicio.
+description: Las aplicaciones, los procesos y las ventanas pueden optar por dejar de estar disponibles para anclarse a la barra de tareas o para su inclusión en la lista De uso más frecuente (MFU) de menú Inicio.
 title: Cómo excluir elementos de la anclación de la barra de tareas y listas recientes o frecuentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3adb60353836e436f4327837c30448c7628a435048cc2a41b0464d56341f410
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: af7f32ad641832703804f94b8cc28f47ea9cabb2
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118223569"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468201"
 ---
 # <a name="how-to-exclude-items-from-taskbar-pinning-and-recentfrequent-lists"></a>Cómo excluir elementos de la anclación de la barra de tareas y listas recientes o frecuentes
 
 Las aplicaciones, los procesos y las ventanas pueden optar por dejar de estar  disponibles para anclarse a la barra de tareas o para su inclusión en la lista De uso más frecuente (MFU) del menú Inicio.
 
-## <a name="instructions"></a>Instrucciones
+## <a name="instructions"></a>Instructions
 
 
 Hay tres mecanismos para lograr la exclusión de elementos de las listas ancladas de la barra de tareas y las listas recientes o frecuentes:
@@ -49,9 +49,9 @@ Hay tres mecanismos para lograr la exclusión de elementos de las listas anclada
                             AppUserModelID3
     ```
 
-    Cada entrada es un **valor REG \_ NULL** con el nombre de AppUserModelID. Los AppUserModelID que se encuentran en esta lista no se pueden anclar y no se pueden incluir en la **lista** MFU del menú Inicio.
+    Cada entrada es un **valor REG \_ NULL** con el nombre de AppUserModelID. Los AppUserModelID que se encuentran en esta lista no se pueden anclar y no pueden incluirse en la **lista** MFU del menú Inicio.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Tenga en cuenta que determinados archivos ejecutables, así como los accesos directos que contienen determinadas cadenas en sus nombres, se excluyen automáticamente de la anclar e incluir en la lista MFU.
 
@@ -60,7 +60,7 @@ Tenga en cuenta que determinados archivos ejecutables, así como los accesos dir
 
  
 
-Si alguna de las cadenas siguientes, independientemente de las mayúsculas y minúsculas, se incluye en el nombre del acceso directo, el programa no se puede anclar y no se muestra en la lista de uso más frecuente (no se aplica a Windows 10):
+Si alguna de las cadenas siguientes, independientemente de las mayúsculas y minúsculas, se incluyen en el nombre del acceso directo, el programa no se puede anclar y no se muestra en la lista de uso más frecuente (no es aplicable a Windows 10):
 
 -   Documentación
 -   Ayuda
@@ -69,10 +69,10 @@ Si alguna de las cadenas siguientes, independientemente de las mayúsculas y min
 -   Léame
 -   Leer primero
 -   Léame
--   Quitar
--   Configurar
+-   Remove
+-   Configuración
 -   Soporte técnico
--   What's New
+-   Novedades
 
 La siguiente lista de programas no se puede anclar y se excluye de la lista de uso más frecuente:
 

@@ -1,8 +1,8 @@
 ---
-description: El objeto SWbemRefresher es un objeto contenedor que puede actualizar los datos de todos los objetos que se le han agregado. Conjunto de objetos agregados; cada elemento representado por una instancia de SWbemRefreshableItem se puede tratar como una colección y enumerarse.
+description: El objeto SWbemRefresher es un objeto contenedor que puede actualizar los datos de todos los objetos agregados a él. El conjunto de objetos agregados, cada elemento representado por una instancia de SWbemRefreshableItem se puede tratar como una colección y enumerarse.
 ms.assetid: cc5872a1-932b-4b68-9f5e-a91d35c8e117
 ms.tgt_platform: multiple
-title: Objeto SWbemRefresher (Wbemdisp. h)
+title: Objeto SWbemRefresher (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,39 +16,39 @@ api_type:
 api_location:
 - Wbemdisp.dll
 ms.openlocfilehash: f763ec4f738b612b9f2fef32871a63d6b170f96d
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104003391"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465492"
 ---
 # <a name="swbemrefresher-object"></a>Objeto SWbemRefresher
 
-El objeto **SWbemRefresher** es un objeto contenedor que puede actualizar los datos de todos los objetos que se agregan a él. Las instancias únicas y los enumeradores de instancia se pueden agregar o quitar del contenedor. El conjunto de objetos agregados, cada uno de los cuales se representa mediante una instancia de [**SWbemRefreshableItem**](swbemrefreshableitem.md) , se puede tratar como una colección y se pueden enumerar. Las instancias de WMI de cualquier clase se pueden agregar al objeto **SWbemRefresher** . Aunque el proveedor de los datos de instancia no sea un proveedor de alto rendimiento, el objeto actualizador todavía puede actualizar los datos en la llamada de [**actualización**](swbemrefresher-refresh.md) . Si los datos se proporcionan a través de un proveedor de alto rendimiento y la propiedad [**reconexión automática**](swbemrefresher-autoreconnect.md) es **true**, el objeto **SWbemRefresher** intenta restablecer una conexión interrumpida con el proveedor de datos. Este objeto se puede crear mediante la llamada **CreateObject** de VBScript.
+El **objeto SWbemRefresher** es un objeto contenedor que puede actualizar los datos de todos los objetos que se le agregan. Las instancias únicas y los enumeradores de instancia se pueden agregar o quitar del contenedor. El conjunto de objetos agregados, cada elemento representado por una instancia [**de SWbemRefreshableItem,**](swbemrefreshableitem.md) se puede tratar como una colección y enumerarse. Las instancias wmi de cualquier clase se pueden agregar al **objeto SWbemRefresher.** Incluso si el proveedor para los datos de instancia no es un proveedor de alto rendimiento, el objeto de actualizador todavía puede actualizar los datos en la [**llamada de**](swbemrefresher-refresh.md) actualización. Si los datos se proporcionan a través de un proveedor de alto rendimiento y la propiedad [**AutoReconnect**](swbemrefresher-autoreconnect.md) es **TRUE,** el objeto **SWbemRefresher** intenta restablecer una conexión rota con el proveedor de datos. Este objeto se puede crear mediante la llamada **CreateObject de** VBScript.
 
-La operación de actualización se puede realizar mediante una llamada al método [**SWbemRefresher. Refresh**](swbemrefresher-refresh.md) o al método [**SWbemObjectEx. \_ Refresh**](swbemobjectex-refresh-.md) .
+La operación de actualización se puede llevar a cabo llamando al método [**SWbemRefresher.Refresh**](swbemrefresher-refresh.md) o al [**método SWbemObjectEx.Refresh. \_**](swbemobjectex-refresh-.md)
 
-## <a name="members"></a>Miembros
+## <a name="members"></a>Members
 
-El objeto **SWbemRefresher** tiene estos tipos de miembros:
+El **objeto SWbemRefresher** tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-El objeto **SWbemRefresher** tiene estos métodos.
+El **objeto SWbemRefresher** tiene estos métodos.
 
 
 
 | Método                                        | Descripción                                                                                           |
 |:----------------------------------------------|:------------------------------------------------------------------------------------------------------|
-| [**Agréguela**](swbemrefresher-add.md)             | Agrega un nuevo objeto actualizable a la colección en el objeto actualizador.<br/>                   |
-| [**AddEnum**](swbemrefresher-addenum.md)     | Agrega un nuevo enumerador al objeto actualizador.<br/>                                             |
-| [**DeleteAll**](swbemrefresher-deleteall.md) | Quita todos los elementos de la colección en el objeto actualizador.<br/>                             |
-| [**Elemento**](swbemrefresher-item.md)           | Devuelve un elemento actualizador especificado de la colección.<br/>                                    |
-| [**Actualizaciones**](swbemrefresher-refresh.md)     | Actualiza todos los elementos contenidos en el objeto actualizador.<br/>                          |
-| [**Retirar**](swbemrefresher-remove.md)       | Quita del actualizador el objeto de elemento de actualización o el conjunto de objetos con un índice especificado.<br/> |
+| [**Añadir**](swbemrefresher-add.md)             | Agrega un nuevo objeto actualizable a la colección en el objeto de actualizador.<br/>                   |
+| [**AddEnum**](swbemrefresher-addenum.md)     | Agrega un nuevo enumerador al objeto de actualizador.<br/>                                             |
+| [**DeleteAll**](swbemrefresher-deleteall.md) | Quita todos los elementos de la colección en el objeto de actualizador.<br/>                             |
+| [**Elemento**](swbemrefresher-item.md)           | Devuelve un elemento de actualizador especificado de la colección.<br/>                                    |
+| [**Actualizar**](swbemrefresher-refresh.md)     | Actualiza todos los elementos contenidos en el objeto de actualizador.<br/>                          |
+| [**Remove**](swbemrefresher-remove.md)       | Quita del actualizador el objeto de elemento de actualización o el conjunto de objetos con un índice especificado.<br/> |
 
 
 
@@ -56,14 +56,14 @@ El objeto **SWbemRefresher** tiene estos métodos.
 
 ### <a name="properties"></a>Propiedades
 
-El objeto **SWbemRefresher** tiene estas propiedades.
+El **objeto SWbemRefresher** tiene estas propiedades.
 
 
 
 | Propiedad                                                         | Tipo de acceso          | Descripción                                                                                                           |
 |:-----------------------------------------------------------------|:---------------------|:----------------------------------------------------------------------------------------------------------------------|
-| [**Reconexión automática**](swbemrefresher-autoreconnect.md)<br/> | Solo lectura<br/> | Indica si el actualizador se vuelve a conectar automáticamente a un proveedor remoto si se interrumpe la conexión.<br/> |
-| [**Contabiliza**](swbemrefresher-count.md)<br/>                 | Solo lectura<br/> | Contiene el número de elementos del objeto actualizador.<br/>                                                      |
+| [**Conexión automática**](swbemrefresher-autoreconnect.md)<br/> | Solo lectura<br/> | Indica si el actualizador se vuelve a conectar automáticamente a un proveedor remoto si se ha roto la conexión.<br/> |
+| [**Contar**](swbemrefresher-count.md)<br/>                 | Solo lectura<br/> | Contiene el número de elementos del objeto de actualización.<br/>                                                      |
 
 
 
@@ -71,7 +71,7 @@ El objeto **SWbemRefresher** tiene estas propiedades.
 
 ## <a name="examples"></a>Ejemplos
 
-En el ejemplo siguiente se muestra cómo crear un objeto **SWbemRefresher** , mediante los métodos [**Add**](swbemrefresher-add.md) y [**AddEnum**](swbemrefresher-addenum.md) para almacenar una instancia única y una instancia de enumeración, la actualización de los datos y el uso de la propiedad Item para obtener los objetos [**SWbemRefreshableItem**](swbemrefreshableitem.md) .
+En el ejemplo siguiente se muestra la creación de un objeto **SWbemRefresher,** el uso de los métodos [**Add**](swbemrefresher-add.md) y [**AddEnum**](swbemrefresher-addenum.md) para almacenar una instancia única y una instancia de enumeración, la actualización de los datos y el uso de la propiedad Item para obtener los objetos [**SWbemRefreshableItem.**](swbemrefreshableitem.md)
 
 
 ```VB
@@ -127,15 +127,15 @@ next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo compatible<br/> | Windows Server 2008<br/>                                                          |
-| Encabezado<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | Archivo DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | CLSID \_ SWbemRefresher<br/>                                                        |
-| IID<br/>                      | \_ISWBEMREFRESHER IID<br/>                                                         |
+| IID<br/>                      | IID \_ ISWbemRefresher<br/>                                                         |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
@@ -145,7 +145,7 @@ next
 [**SWbemObjectEx**](swbemobjectex.md)
 </dt> <dt>
 
-[Scripting de objetos de API](scripting-api-objects.md)
+[Objetos de API de scripting](scripting-api-objects.md)
 </dt> </dl>
 
  

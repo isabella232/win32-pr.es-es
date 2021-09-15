@@ -10,12 +10,12 @@ keywords:
 - objetos de búfer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 349fcbf5207d28a693950875b4a9b1da1b3ee4bc3bff40361e57c0a004ce6c84
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0a8a9a3c6acfa0b0780b07f2853f60fdd68d0eaf
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119931575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467105"
 ---
 # <a name="buffer-object"></a>Buffer (objeto)
 

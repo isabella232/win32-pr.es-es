@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102511
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: bacab7aa4f119b7d2f6ea7d0fc2423d21ecbb4cb040e0f8f505f7a377748b4a8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: c0f9fd3c12230d7e16bb523b9cb9cae2ad663857
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118262075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466823"
 ---
 # <a name="esentoutofmemoryexception-properties"></a>Propiedades de EsentOutOfMemoryException
 

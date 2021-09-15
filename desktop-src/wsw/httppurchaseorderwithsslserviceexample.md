@@ -5,15 +5,15 @@ ms.assetid: 814660d7-98d7-4038-8243-d2f37929d516
 keywords:
 - HttpPurchaseOrderWithSslServiceExample Native-Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54f963dcc5b25c4b0239fa02450216073f049d975d39c6370de1bca58cc51487
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b5f3a6192bf36184269063457d9c10dcc1fa3588
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118963144"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466634"
 ---
 # <a name="httppurchaseorderwithsslserviceexample"></a>HttpPurchaseOrderWithSslServiceExample
 

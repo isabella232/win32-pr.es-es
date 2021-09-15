@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 085bec9a9937c8dbd02fad6df785f4bce7afea90a74117e745f09cb5135633d8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bdb58edbb3ffd99e8be557fdb05a7e51298fda14
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118117725"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465845"
 ---
 # <a name="title-element-metafile"></a>ELEMENTO TITLE (metarchivo)
 
@@ -49,13 +49,13 @@ Este elemento no tiene atributos.
 
 ## <a name="remarks"></a>Observaciones
 
-Este elemento define una cadena de texto que especifica el título de un **elemento ASX** o **ENTRY.** El título se muestra en el panel de presentación y en el **cuadro de diálogo** Propiedades.
+Este elemento define una cadena de texto que especifica el título de un **elemento ASX** o **ENTRY.** El título se muestra en el panel de pantalla y en el **cuadro de diálogo** Propiedades.
 
-Cuando este elemento aparece dentro de un **elemento ASX,** el texto se muestra como **Mostrar** información. Cuando este elemento aparece dentro de un **elemento ENTRY,** el texto se muestra como **Información de** clip.
+Cuando este elemento aparece dentro de un **elemento ASX,** el texto se muestra como **Mostrar** información. Cuando este elemento aparece dentro de **un elemento ENTRY,** el texto se muestra como **Información de** recorte.
 
 Si también se usa un elemento **MOREINFO** con el elemento asociado (primario), es el texto del título en el que el usuario hace clic para acceder a la dirección URL definida en el **elemento MOREINFO.**
 
-Cada elemento **ASX y** **ENTRY** primario debe contener como máximo un elemento **SECUNDARIO TITLE.** Varios **elementos TITLE** después de la primera se omitirán y no se mostrarán.
+Cada elemento **PRIMARIO ASX** y **ENTRY** debe contener como máximo un elemento **SECUNDARIO TITLE.** Se **omitirán** varios elementos TITLE después del primero y no se mostrarán.
 
 ## <a name="examples"></a>Ejemplos
 

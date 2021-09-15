@@ -9,12 +9,12 @@ keywords:
 - perfiles, extensiones de unidad de datos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e971acb9edacbbb38334dfef9405f3a97569eaf2cb3e5c386562e3885e4ba1c8
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: dc7e6794b95128d180bc3922f9bf03a15a2749df
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117656098"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466497"
 ---
 # <a name="configuring-data-unit-extensions"></a>Configuración de extensiones de unidades de datos
 
@@ -22,7 +22,7 @@ Los ejemplos escritos en archivos ASF pueden contener información adicional apa
 
 Para usar extensiones de unidad de datos, debe configurar la secuencia en el perfil para que las acepte. Para configurar una extensión de unidad de datos para un flujo, realice los pasos siguientes.
 
-1.  Obtenga un puntero a la [**interfaz IWMStreamConfig2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamconfig2) llamando al **método QueryInterface** de [**IWMStreamConfig**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamconfig).
+1.  Obtenga un puntero a la [**interfaz IWMStreamConfig2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamconfig2) llamando al **método QueryInterface** [**de IWMStreamConfig**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamconfig).
 2.  Llame [**a IWMStreamConfig2::AddDataUnitExtension**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstreamconfig2-adddataunitextension) para registrar un tipo de extensión de unidad de datos para la secuencia.
 
 Puede examinar todos los tipos de extensión de unidad de datos registrados actualmente para una secuencia llamando a [**IWMStreamConfig2::GetDataUnitExtensionCount**](/previous-versions/windows/desktop/api/wmsdkidl/nf-wmsdkidl-iwmstreamconfig2-getdataunitextensioncount) para recuperar el número de tipos de extensión de unidad de datos registrados. A continuación, puede recorrer en bucle todos los tipos mediante llamadas a [**IWMStreamConfig2::GetDataUnitExtension**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstreamconfig2-getdataunitextension) para cada uno.

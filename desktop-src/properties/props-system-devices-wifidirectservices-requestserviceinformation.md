@@ -4,16 +4,16 @@ ms.assetid: 39be864d-8e30-4554-b824-06c3e72e1b09
 title: System.Devices.WiFiDirectServices.RequestServiceInformation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 167a24c86142a136bba04de70abb439595330b0eafb0a652353f4661e02db784
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 0bf4e5ffbf549a05c343b295d44dfe5faaad057a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119598525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466559"
 ---
 # <a name="systemdeviceswifidirectservicesrequestserviceinformation"></a>System.Devices.WiFiDirectServices.RequestServiceInformation
 
-Wi-Fi servicio de solicitud de Direct Services
+Wi-Fi servicio de solicitud de Servicios directos
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507"></a>Windows 10, versión 1703, Windows 10, versión 1607, Windows 10, versión 1511, Windows 10, versión 1507
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

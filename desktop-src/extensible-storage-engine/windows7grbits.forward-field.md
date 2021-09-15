@@ -1,6 +1,6 @@
 ---
-description: 'Más información acerca de: Windows7Grbits. Forward (campo)'
-title: Campo Windows7Grbits. Forward (Microsoft. ISAM. esent. Interop. Windows7)
+description: Más información sobre el campo Windows7Grbits.Forward
+title: Campo Windows7Grbits.Forward (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: Forward field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows7.Windows7Grbits.Forward
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.windows7grbits.forward(v=EXCHG.10)
@@ -25,18 +25,18 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 8ab7b7162e7246b9d0656b41363e6da54a92acc4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104543667"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465877"
 ---
-# <a name="windows7grbitsforward-field"></a>Windows7Grbits. Forward (campo)
+# <a name="windows7grbitsforward-field"></a>Campo Windows7Grbits.Forward
 
-Sugerencia que el recorrido secuencial estará en la dirección hacia delante.
+Sugerencia de que el recorrido secuencial estará en dirección hacia delante.
 
-**Espacio de nombres:**  [Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Ensamblado:**  Microsoft. ISAM. esent. Interop (en Microsoft.Isam.Esent.Interop.dll)
+**Espacio de nombres:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Ensamblado:**  Microsoft.Isam.Esent.Interop (en Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -61,4 +61,4 @@ public const SetTableSequentialGrbit Forward
 
 [Miembros de Windows7Grbits](./windows7grbits-members.md)
 
-[Espacio de nombres Microsoft. ISAM. esent. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Espacio de nombres Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

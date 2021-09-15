@@ -4,12 +4,12 @@ ms.assetid: 7778abb3-7a1c-4963-8793-ff9d326226d9
 title: System.Photo.PeopleNames
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a890bfc64eedac50e47a0edbeb3810dee93fb989df0d9ae33145a35ea23e131
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: a5fcdb3b8c85ac70719b486d4ddd5b303ebd6447
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120010305"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468380"
 ---
 # <a name="systemphotopeoplenames"></a>System.Photo.PeopleNames
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

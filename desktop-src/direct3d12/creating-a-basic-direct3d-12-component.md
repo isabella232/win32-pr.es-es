@@ -6,12 +6,12 @@ ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: project-verbatim
-ms.openlocfilehash: c5195401ff34cef7125372e3bd01c192dad232ef7f7d5db69119d807cb2d8419
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: d0c7ead9ce67ee23a0668304a006d6cd67fb3d67
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118807650"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466365"
 ---
 # <a name="creating-a-basic-direct3d-12-component"></a>Crear un componente básico de Direct3D 12
 
@@ -23,7 +23,7 @@ En este tema se describe el flujo de llamada para crear un componente básico de
 -   [Flujo de código para una aplicación sencilla](#code-flow-for-a-simple-app)
     -   [Inicialización](#initialize)
     -   [Actualizar](#update)
-    -   [Representar](#render)
+    -   [Render](#render)
     -   [Destruir](#destroy)
 -   [Ejemplo de código para una aplicación sencilla](#code-example-for-a-simple-app)
     -   [Clase D3D12HelloTriangle](#class-d3d12hellotriangle)
@@ -47,7 +47,7 @@ El bucle más externo de un programa D3D 12 sigue un proceso de gráficos muy es
 -   [Inicialización](#initialize)
 -   **Repetir**
     -   [Actualizar](#update)
-    -   [Representar](#render)
+    -   [Render](#render)
 -   [Destruir](#destroy)
 
 ### <a name="initialize"></a>Inicialización
@@ -689,7 +689,7 @@ Se llama a las siguientes API y procesos en orden:
 -   [**ID3D12Fence::GetCompletedValue**](/windows/win32/api/d3d12/nf-d3d12-id3d12fence-getcompletedvalue)
 -   [**ID3D12Fence::SetEventOnCompletion**](/windows/win32/api/d3d12/nf-d3d12-id3d12fence-seteventoncompletion)
 -   Espere al evento.
--   Actualice el índice de fotogramas: [**IDXGISwapChain3::GetCurrentBackBufferIndex**](/windows/win32/api/dxgi1_4/nf-dxgi1_4-idxgiswapchain3-getcurrentbackbufferindex).
+-   Actualice el índice del marco: [**IDXGISwapChain3::GetCurrentBackBufferIndex**](/windows/win32/api/dxgi1_4/nf-dxgi1_4-idxgiswapchain3-getcurrentbackbufferindex).
 
 
 ```cpp
@@ -719,7 +719,7 @@ void D3D12HelloTriangle::WaitForPreviousFrame()
 
 ### <a name="ondestroy"></a>OnDestroy()
 
-Cierre la aplicación de forma limpia.
+Cierre correctamente la aplicación.
 
 -   Espere a que finalice la GPU.
 -   Cierre el evento.

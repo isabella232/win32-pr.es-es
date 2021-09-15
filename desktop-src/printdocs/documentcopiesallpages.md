@@ -4,12 +4,12 @@ ms.assetid: 6319e8fc-787f-4bc8-8436-1b498b3882d2
 title: DocumentCopiesAllPages
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc9ca45514896984f3edfa19eb2e703270883fe67b9d9b1a61806fff9a567d4e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 05bf82c23b764f3fe1f8257f4cdb2e7fa03374bd
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119353945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468537"
 ---
 # <a name="documentcopiesallpages"></a>DocumentCopiesAllPages
 
@@ -24,7 +24,7 @@ Especifica el número de copias de un documento.
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|-------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/> |
 | Prefijo de ámbito <br/> | Documento<br/>     |
@@ -71,14 +71,14 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                        |
+| Propiedad.                | xsi:type           | Value                        |
 |-------------------------|--------------------|------------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>        |
 | DefaultValue<br/> | integer<br/> | 1<br/>                 |
 | MaxValue<br/>     | integer<br/> | no definido<br/>         |
 | MinValue<br/>     | integer<br/> | 1<br/>                 |
 | Mandatory<br/>    | string<br/>  | psk:Unconditional<br/> |
-| Varios<br/>     | integer<br/> | 1<br/>                 |
+| Múltiple<br/>     | integer<br/> | 1<br/>                 |
 | UnitType<br/>     | string<br/>  | Copias<br/>            |
 
 

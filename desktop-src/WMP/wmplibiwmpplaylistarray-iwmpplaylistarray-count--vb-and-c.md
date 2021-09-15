@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bffea9aa34a614a720ac6e3293167a746cc31c628d9ed22389dab651d03bf715
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 174636364fc0c5e0805ed2d1bdd822ff97c63a1a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118331132"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466996"
 ---
 # <a name="iwmpplaylistarraycount-property"></a>IWMPPlaylistArray::count, propiedad
 
 La **propiedad count** obtiene el número de listas de reproducción de la matriz de listas de reproducción.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxis
 
 
 ```CSharp
@@ -48,7 +48,7 @@ Public ReadOnly Property count As System.Int32
 
 **System.Int32 que** es el número de listas de reproducción de la matriz.
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para obtener más información, vea [Acceso a la biblioteca.](library-access.md)
 
@@ -56,7 +56,7 @@ Antes de usar esta propiedad, debe tener acceso de lectura a la biblioteca. Para
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
 | Versión<br/>   | Reproductor de Windows Media serie 9 o posterior.<br/>                                                                     |
 | Espacio de nombres<br/> | **WMPLib**<br/>                                                                                                  |

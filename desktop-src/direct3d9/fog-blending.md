@@ -4,12 +4,12 @@ ms.assetid: b5b43f12-bbed-4464-aebc-02ad6dab1951
 title: Blending de Blend (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f60f3402daf71a3fce14af936334c3d96e928d3469452eafb94d139594bb0b19
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: fa918715a7bbe37b200568a0a9098135c5558b0d
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119894025"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465381"
 ---
 # <a name="fog-blending-direct3d-9"></a>Blending de Blend (Direct3D 9)
 

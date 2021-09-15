@@ -4,12 +4,12 @@ description: Además de diseñar clases que implementan métodos y propiedades I
 ms.assetid: d140206a-9918-438b-96bd-df141da2f04b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49abceb3b38b4495d871605634c8f95353c35b4b6bcd0c54dda374c75572fbea
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e005af4f02430376bc013a45c68cdecef8c0feba
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119133898"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466125"
 ---
 # <a name="creating-proxy-objects"></a>Crear objetos proxy
 

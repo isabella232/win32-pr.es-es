@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bdc1f2765688cd736353095450a95c6edd03817d32fbf23fbf16bd997f4e4a3
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 21c8218273350edede9f210f491c8b7fc2fb0c4f
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119858055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466368"
 ---
 # <a name="constants-d3d12h"></a>Constantes (D3D12.h)
 
@@ -106,9 +106,9 @@ Las siguientes constantes se declaran en d3d12.h, para su uso por un título D3D
 | D3D12 \_ CS \_ 4 \_ X \_ BUCKET15 \_ MAX \_ BYTES \_ TGSM \_ WRITABLE \_ PER \_ THREAD               | 16               |
 | D3D12 \_ CS \_ 4 \_ X \_ BUCKET15 \_ MAX \_ NUM \_ THREADS \_ PER \_ GROUP                         | 768              |
 | D3D12 \_ CS \_ 4 \_ X \_ DISPATCH \_ MAX \_ THREAD \_ GROUPS \_ IN \_ Z \_ DIMENSION                 | 1                |
-| D3D12 \_ CS \_ 4 \_ X \_ ALINEACIÓN DE BYTES \_ UAV SIN \_ \_ FORMATO                                       | 256              |
+| D3D12 \_ CS \_ 4 X ALINEACIÓN DE BYTES \_ \_ \_ UAV SIN \_ \_ FORMATO                                       | 256              |
 | D3D12 \_ CS 4 X SUBPROCESOS MÁXIMOS DE GRUPO \_ DE \_ \_ \_ \_ \_ \_ SUBPROCESOS POR \_ GRUPO                         | 768              |
-| D3D12 \_ CS \_ 4 \_ X GRUPO DE \_ \_ \_ SUBPROCESOS MÁX. \_ X                                           | 768              |
+| D3D12 \_ CS \_ 4 \_ X GRUPO DE \_ \_ \_ SUBPROCESOS \_ MÁX. X                                           | 768              |
 | D3D12 \_ CS \_ 4 \_ X GRUPO DE \_ \_ SUBPROCESOS \_ \_ MÁX. Y                                           | 768              |
 | D3D12 \_ CS \_ 4 \_ X \_ UAV \_ REGISTER \_ COUNT                                            | 1                |
 | D3D12 \_ CS \_ DISPATCH \_ MAX \_ THREAD \_ GROUPS \_ PER \_ DIMENSION                         | 65535            |
@@ -118,13 +118,13 @@ Las siguientes constantes se declaran en d3d12.h, para su uso por un título D3D
 | PUERTOS DE LECTURA DEL REGISTRO DE \_ RECURSOS \_ DE TGSM de CS \_ \_ \_ \_ D3D12                                 | 1                |
 | COMPONENTES DE REGISTRO \_ \_ THREADGROUPID DE CS D3D12 \_ \_                                   | 3                |
 | D3D12 \_ CS \_ THREADGROUPID \_ REGISTER \_ COUNT                                        | 1                |
-| COMPONENTES DE REGISTRO \_ \_ DE THREADIDINGROUPFLATTENED DE \_ D3D12 CS \_                        | 1                |
+| COMPONENTES DE REGISTRO \_ \_ DE THREADIDINGROUPFLATTENED \_ DE D3D12 CS \_                        | 1                |
 | D3D12 \_ CS \_ THREADIDINGROUPFLATTENED \_ REGISTER \_ COUNT                             | 1                |
 | COMPONENTES DE REGISTRO \_ \_ THREADIDINGROUP DE CS D3D12 \_ \_                                 | 3                |
 | D3D12 \_ CS \_ THREADIDINGROUP \_ REGISTER \_ COUNT                                      | 1                |
-| COMPONENTES DE REGISTRO DE THREADID DE CS D3D12 \_ \_ \_ \_                                        | 3                |
+| COMPONENTES DE REGISTRO DE THREADID de CS D3D12 \_ \_ \_ \_                                        | 3                |
 | D3D12 \_ CS \_ THREADID \_ REGISTER \_ COUNT                                             | 1                |
-| NÚMERO MÁXIMO DE SUBPROCESOS POR \_ \_ \_ \_ \_ \_ \_ GRUPO DE SUBPROCESOS DE CS D3D12                               | 1024             |
+| NÚMERO MÁXIMO DE SUBPROCESOS POR GRUPO DE SUBPROCESOS D3D12 \_ CS \_ \_ \_ \_ \_ \_                               | 1024             |
 | D3D12 \_ CS \_ THREAD \_ GROUP \_ MAX \_ X                                                 | 1024             |
 | D3D12 \_ CS \_ THREAD \_ GROUP \_ MAX \_ Y                                                 | 1024             |
 | D3D12 \_ CS \_ THREAD \_ GROUP \_ MAX \_ Z                                                 | 64               |
@@ -214,7 +214,7 @@ Las siguientes constantes se declaran en d3d12.h, para su uso por un título D3D
 | D3D12 \_ GS \_ INPUT \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                                | 32               |
 | D3D12 \_ GS \_ INPUT \_ REGISTER \_ COUNT                                                | 32               |
 | LECTURAS DEL REGISTRO DE ENTRADA DE D3D12 \_ GS \_ POR \_ \_ \_ \_ INST                                     | 2                |
-| PUERTOS DE LECTURA DEL REGISTRO DE ENTRADA D3D12 \_ GS \_ \_ \_ \_                                          | 1                |
+| PUERTOS DE LECTURA DEL REGISTRO DE ENTRADA DE D3D12 \_ GS \_ \_ \_ \_                                          | 1                |
 | VÉRTICES DEL REGISTRO DE ENTRADA DE D3D12 \_ GS \_ \_ \_                                             | 32               |
 | D3D12 \_ GS \_ MAX \_ INSTANCE \_ COUNT                                                  | 32               |
 | NÚMERO MÁXIMO DE VÉRTICES DE SALIDA DE D3D12 \_ GS \_ ENTRE \_ \_ \_ \_ \_ INSTANCIAS                         | 1024             |
@@ -277,54 +277,54 @@ Las siguientes constantes se declaran en d3d12.h, para su uso por un título D3D
 | D3D12 \_ MANTENER VISTAS DE ACCESO NO \_ \_ \_ ORDENADO                                            | 0xffffffff       |
 | GAMMA LINEAL D3D12 \_ \_                                                             | 1,0f             |
 | D3D12 \_ VERSIÓN \_ PRINCIPAL                                                            | 12               |
-| D3D12 \_ MAX \_ BORDER \_ COLOR \_ COMPONENT                                             | 1.0f             |
-| PROFUNDIDAD MÁXIMA DE D3D12 \_ \_                                                                | 1.0f             |
+| COMPONENTE DE COLOR MÁXIMO DE BORDE D3D12 \_ \_ \_ \_                                             | 1,0f             |
+| PROFUNDIDAD MÁXIMA DE D3D12 \_ \_                                                                | 1,0f             |
 | D3D12 \_ MAX \_ MAXANISOTROPY                                                        | 16               |
-| D3D12 \_ MAX \_ MULTISAMPLE \_ SAMPLE \_ COUNT                                           | 32               |
+| NÚMERO MÁXIMO DE MUESTRAS DE EJEMPLO DE D3D12 \_ \_ \_ \_ MAX                                           | 32               |
 | VALOR DE POSICIÓN MÁXIMA DE D3D12 \_ \_ \_                                                      | 3.402823466e+34f |
-| D3D12 \_ MAX \_ ROOT \_ COST                                                           | 64               |
+| COSTO RAÍZ MÁXIMO DE D3D12 \_ \_ \_                                                           | 64               |
 | D3D12 \_ MAX \_ TEXTURE \_ DIMENSION \_ 2 \_ TO \_ EXP                                       | 17               |
 | D3D12 \_ VERSIÓN \_ SECUNDARIA                                                            | 0                |
 | COMPONENTE DE COLOR DE BORDE MÍNIMO D3D12 \_ \_ \_ \_                                             | 0,0f             |
-| PROFUNDIDAD MÍNIMA de D3D12 \_ \_                                                                | 0,0f             |
+| PROFUNDIDAD MÍNIMA D3D12 \_ \_                                                                | 0,0f             |
 | D3D12 \_ MIN \_ MAXANISOTROPY                                                        | 0                |
 | D3D12 \_ MIP \_ LOD \_ BIAS \_ MAX                                                       | 15.99f           |
 | D3D12 \_ MIP \_ LOD \_ BIAS \_ MIN                                                       | -16.0f           |
 | D3D12 \_ MIP \_ LOD \_ FRACTIONAL \_ BIT \_ COUNT                                          | 8                |
 | D3D12 \_ MIP \_ LOD \_ RANGE \_ BIT \_ COUNT                                               | 8                |
-| ANCHO DE LÍNEA DE \_ \_ ANTIALIAS MULTISAMPLE \_ DE D3D12 \_                                       | 1.4f             |
+| ANCHO DE LÍNEA D3D12 \_ \_ MULTISAMPLE ANTIALIAS \_ \_                                       | 1,4f             |
 | D3D12 \_ NONSAMPLE \_ FETCH \_ OUT \_ OF \_ RANGE \_ ACCESS \_ RESULT                          | 0                |
-| FIN DE LOS VALORES DE ESPACIO DE REGISTRO RESERVADO DEL SISTEMA OPERATIVO D3D12 \_ \_ \_ \_ \_ \_                                | 0xffffffff       |
-| SE INICIAN LOS VALORES DE ESPACIO DE REGISTRO RESERVADO DEL SISTEMA \_ \_ \_ \_ OPERATIVO \_ \_ D3D12                              | 0xfffffff8       |
+| FINAL DE VALORES DE ESPACIO DE REGISTRO RESERVADO DEL SISTEMA OPERATIVO D3D12 \_ \_ \_ \_ \_ \_                                | 0xffffffff       |
+| SE INICIAN LOS VALORES DE ESPACIO DE REGISTRO RESERVADO DEL SISTEMA OPERATIVO D3D12 \_ \_ \_ \_ \_ \_                              | 0xfffffff8       |
 | ICONO EMPAQUETADO DE D3D12 \_ \_                                                              | 0xffffffff       |
 | NÚMERO DE BITS DEL INTERVALO DE \_ \_ DIRECCIONES DE PÍXELES \_ \_ D3D12 \_                                         | 15               |
-| NÚMERO DE BITS DEL INTERVALO DE DIRECCIONES DE PÍXELES DE \_ \_ \_ \_ \_ PRECARGA \_ \_ DE D3D12                           | 16               |
+| NÚMERO DE BITS DEL INTERVALO DE DIRECCIONES DE PÍXELES DE \_ \_ \_ \_ \_ PRECARGA \_ \_ D3D12                           | 16               |
 | D3D12 \_ PS \_ CS \_ UAV \_ REGISTER \_ COMPONENTS                                         | 1                |
 | D3D12 \_ PS \_ CS \_ UAV \_ REGISTER \_ COUNT                                              | 8                |
 | D3D12 \_ PS \_ CS \_ UAV \_ REGISTER \_ READS \_ PER \_ INST                                   | 1                |
-| PUERTOS DE LECTURA DEL REGISTRO DE UAV de D3D12 \_ PS \_ CS \_ \_ \_ \_                                        | 1                |
+| D3D12 PUERTOS DE LECTURA DE \_ \_ REGISTRO DE \_ UAV de PS CS \_ \_ \_                                        | 1                |
 | VALOR PREDETERMINADO DE \_ \_ FRONTFACING DE D3D12 PS \_ \_                                           | 0xffffffff       |
 | D3D12 \_ PS \_ FRONTFACING \_ FALSE \_ VALUE                                             | 0                |
 | D3D12 \_ PS \_ FRONTFACING \_ TRUE \_ VALUE                                              | 0xffffffff       |
-| COMPONENTES DEL REGISTRO DE ENTRADA DE D3D12 \_ PS \_ \_ \_                                           | 4                |
+| COMPONENTES DE REGISTRO DE ENTRADA DE PS D3D12 \_ \_ \_ \_                                           | 4                |
 | D3D12 \_ PS \_ INPUT \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                                | 32               |
 | D3D12 \_ PS \_ INPUT \_ REGISTER \_ COUNT                                                | 32               |
 | D3D12 \_ PS \_ INPUT \_ REGISTER \_ READS \_ PER \_ INST                                     | 2                |
-| PUERTOS DE LECTURA DEL REGISTRO \_ DE ENTRADA DE D3D12 PS \_ \_ \_ \_                                          | 1                |
+| PUERTOS DE LECTURA DEL REGISTRO DE \_ ENTRADA DE D3D12 PS \_ \_ \_ \_                                          | 1                |
 | D3D12 \_ PS \_ LEGACY \_ PIXEL \_ CENTER \_ FRACTIONAL \_ COMPONENT                          | 0,0f             |
 | COMPONENTES DE REGISTRO DE PROFUNDIDAD DE SALIDA DE D3D12 \_ PS \_ \_ \_ \_                                   | 1                |
 | D3D12 \_ PS \_ OUTPUT \_ DEPTH \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                        | 32               |
 | D3D12 \_ PS \_ OUTPUT \_ DEPTH \_ REGISTER \_ COUNT                                        | 1                |
-| COMPONENTES DE REGISTRO DE MÁSCARA \_ DE SALIDA DE D3D12 PS \_ \_ \_ \_                                    | 1                |
+| COMPONENTES DE REGISTRO DE MÁSCARA DE SALIDA DE D3D12 \_ PS \_ \_ \_ \_                                    | 1                |
 | D3D12 \_ PS \_ OUTPUT \_ MASK \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                         | 32               |
 | D3D12 \_ PS \_ OUTPUT \_ MASK \_ REGISTER \_ COUNT                                         | 1                |
 | COMPONENTES DEL REGISTRO DE SALIDA DE D3D12 \_ PS \_ \_ \_                                          | 4                |
 | D3D12 \_ PS \_ OUTPUT \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                               | 32               |
 | D3D12 \_ PS \_ OUTPUT \_ REGISTER \_ COUNT                                               | 8                |
 | D3D12 \_ PS \_ PIXEL \_ CENTER \_ FRACTIONAL \_ COMPONENT                                  | 0,5f             |
-| ALINEACIÓN DE BYTES \_ \_ SRV DE UAV SIN FORMATO \_ \_ \_ D3D12                                            | 16               |
-| ALINEACIÓN DE BYTES \_ AABB DE RAYTRACING \_ DE \_ D3D12 \_                                         | 8                |
-| ALINEACIÓN DE BYTES DE LA ESTRUCTURA DE ACELERACIÓN \_ DE RAYOS D3D12 \_ \_ \_ \_                      | 256              |
+| ALINEACIÓN DE BYTES SRV de \_ \_ UAV \_ SIN \_ \_ FORMATO D3D12                                            | 16               |
+| D3D12 \_ RAYTRACING \_ AABB \_ BYTE \_ ALIGNMENT                                         | 8                |
+| ALINEACIÓN DE BYTES DE LA ESTRUCTURA DE ACELERACIÓN DE RAYOS D3D12 \_ \_ \_ \_ \_                      | 256              |
 | ALINEACIÓN DE BYTES DESC DE LA INSTANCIA DE D3D12 \_ \_ \_ \_ \_ RAYTRACING                               | 16               |
 | D3D12 \_ RAYTRACING \_ MAX \_ ATTRIBUTE \_ SIZE \_ IN \_ BYTES                               | 32               |
 | PROFUNDIDAD DE RECURSIVIDAD DE SEGUIMIENTO DECLARABLE MÁXIMA DE D3D12 \_ RAYTRACING \_ \_ \_ \_ \_                      | 31               |
@@ -342,7 +342,7 @@ Las siguientes constantes se declaran en d3d12.h, para su uso por un título D3D
 | D3D12 \_ REQ \_ GS \_ INVOCATION \_ 32BIT \_ OUTPUT \_ COMPONENT \_ LIMIT                      | 1024             |
 | D3D12 \_ REQ \_ IMMEDIATE \_ CONSTANT \_ BUFFER \_ ELEMENT \_ COUNT                          | 4096             |
 | D3D12 \_ REQ \_ MAXANISOTROPY                                                        | 16               |
-| D3D12 \_ REQ \_ MIP \_ LEVELS                                                          | 15               |
+| NIVELES DE \_ MIP DE REQ de D3D12 \_ \_                                                          | 15               |
 | D3D12 \_ REQ \_ MULTI \_ ELEMENT \_ STRUCTURE \_ SIZE \_ IN \_ BYTES                           | 2048             |
 | D3D12 \_ REQ \_ RASTERIZER \_ OBJECT \_ COUNT \_ PER \_ DEVICE                               | 4096             |
 | D3D12 \_ REQ \_ RENDER \_ TO \_ BUFFER \_ WINDOW \_ WIDTH                                    | 16384            |
@@ -364,7 +364,7 @@ Las siguientes constantes se declaran en d3d12.h, para su uso por un título D3D
 | VERSIÓN PRINCIPAL DEL SOMBREADOR D3D12 \_ \_ \_                                                    | 5                |
 | INSTANCIAS MÁXIMAS DEL SOMBREADOR D3D12 \_ \_ \_                                                    | 65535            |
 | INTERFACES MÁXIMAS DE SOMBREADOR D3D12 \_ \_ \_                                                   | 253              |
-| SITIOS DE LLAMADA DE INTERFAZ MÁXIMA DE \_ \_ SOMBREADOR \_ \_ D3D12 \_                                       | 4096             |
+| SITIOS DE LLAMADA DE INTERFAZ MÁXIMA DEL \_ \_ SOMBREADOR \_ \_ D3D12 \_                                       | 4096             |
 | TIPOS MÁXIMOS DE SOMBREADOR D3D12 \_ \_ \_                                                        | 65535            |
 | VERSIÓN SECUNDARIA DEL SOMBREADOR D3D12 \_ \_ \_                                                    | 1                |
 | VALOR DEL PANEL DE INSTRUCCIONES DE DESPLAZAMIENTO D3D12 \_ \_ \_ \_                                            | 0                |
@@ -385,40 +385,40 @@ Las siguientes constantes se declaran en d3d12.h, para su uso por un título D3D
 | VERSIÓN DE ESPECIFICACIÓN D3D12 \_ \_                                                             | 1.16             |
 | D3D12 \_ SRGB \_ GAMMA                                                               | 2.2f             |
 | D3D12 \_ SRGB \_ TO FLOAT \_ \_ DENOMINATOR \_ 1                                           | 12.92f           |
-| D3D12 \_ SRGB \_ TO FLOAT \_ \_ DENOMINATOR \_ 2                                           | 1,055f           |
+| D3D12 \_ SRGB \_ TO FLOAT \_ \_ DENOMINATOR \_ 2                                           | 1.055f           |
 | D3D12 \_ SRGB \_ TO \_ FLOAT \_ EXPONENT                                                 | 2.4f             |
 | D3D12 \_ SRGB \_ TO \_ FLOAT \_ OFFSET                                                   | 0,055f           |
-| D3D12 \_ SRGB \_ TO \_ FLOAT \_ THRESHOLD                                                | 0,04045f         |
+| D3D12 \_ SRGB \_ TO \_ FLOAT \_ THRESHOLD                                                | 0.04045f         |
 | D3D12 \_ SRGB \_ TO \_ FLOAT \_ TOLERANCE \_ IN \_ ULP                                       | 0,5f             |
 | NÚMERO DE BITS DE COMPONENTES \_ ESTÁNDAR D3D12 \_ \_ \_                                           | 32               |
-| NÚMERO DE BITS DE COMPONENTES ESTÁNDAR D3D12 \_ \_ \_ \_ \_ DOUBLED                                  | 64               |
+| D3D12 \_ STANDARD \_ COMPONENT \_ BIT \_ COUNT \_ DOUBLED                                  | 64               |
 | D3D12 \_ STANDARD \_ MAXIMUM \_ ELEMENT \_ ALIGNMENT \_ BYTE \_ MULTIPLE                     | 4                |
-| NÚMERO DE COMPONENTES DE PÍXEL \_ ESTÁNDAR D3D12 \_ \_ \_                                         | 128              |
-| RECUENTO DE ELEMENTOS DE PÍXEL ESTÁNDAR D3D12 \_ \_ \_ \_                                           | 32               |
+| NÚMERO DE COMPONENTES DE \_ PÍXEL ESTÁNDAR DE D3D12 \_ \_ \_                                         | 128              |
+| D3D12 \_ STANDARD \_ PIXEL \_ ELEMENT \_ COUNT                                           | 32               |
 | TAMAÑO DE VECTOR ESTÁNDAR D3D12 \_ \_ \_                                                    | 4                |
-| RECUENTO DE ELEMENTOS DE VÉRTICE ESTÁNDAR D3D12 \_ \_ \_ \_                                          | 32               |
+| D3D12 \_ STANDARD \_ VERTEX \_ ELEMENT \_ COUNT                                          | 32               |
 | RECUENTO TOTAL DE COMPONENTES DE VÉRTICES ESTÁNDAR D3D12 \_ \_ \_ \_ \_                                 | 64               |
-| NÚMERO DE BITS \_ FRACCIONALES DE SUBPÍXEL D3D12 \_ \_ \_                                          | 8                |
-| D3D12 NÚMERO DE \_ BITS \_ FRACCIONAMIENTOS \_ DE FRACCIÓN DE D3D12 \_                                          | 8                |
-| FIN DE LOS VALORES DE ESPACIO DE REGISTRO RESERVADO DEL SISTEMA D3D12 \_ \_ \_ \_ \_ \_                            | 0xffffffff       |
-| SE INICIAN LOS VALORES DE ESPACIO DE REGISTRO RESERVADO DEL \_ \_ \_ \_ SISTEMA \_ \_ D3D12                          | 0xfffffff0       |
+| D3D12 \_ SUBPIXEL \_ FRACTIONAL \_ BIT \_ COUNT                                          | 8                |
+| D3D12 NÚMERO DE \_ BITS \_ FRACCIONAMIENTOS \_ DE SUBTERFUNDO DE D3D12 \_                                          | 8                |
+| FIN DE LOS VALORES DE ESPACIO DE REGISTRO RESERVADO DEL \_ \_ \_ \_ SISTEMA \_ \_ D3D12                            | 0xffffffff       |
+| SE INICIAN LOS VALORES DE ESPACIO DE REGISTRO RESERVADO \_ \_ DEL \_ \_ SISTEMA \_ \_ D3D12                          | 0xfffffff0       |
 | D3D12 \_ TESSELLATOR \_ MAX \_ EVEN \_ TESSELLATION \_ FACTOR                              | 64               |
 | D3D12 \_ TESSELLATOR \_ MAX \_ ISOLINE \_ DENSITY \_ TESSELLATION \_ FACTOR                  | 64               |
-| FACTOR DE TESELACIÓN IMPAR MÁXIMO DE \_ TESSELLATOR \_ D3D12 \_ \_ \_                               | 63               |
-| FACTOR DE TESELACIÓN \_ MÁXIMA DE TESSELLATOR \_ D3D12 \_ \_                                    | 64               |
+| D3D12 \_ TESSELLATOR \_ MAX \_ ODD \_ TESSELLATION \_ FACTOR                               | 63               |
+| D3D12 \_ TESSELLATOR \_ MAX \_ TESSELLATION \_ FACTOR                                    | 64               |
 | D3D12 \_ TESSELLATOR \_ MIN \_ EVEN \_ TESSELLATION \_ FACTOR                              | 2                |
-| FACTOR DE TESELACIÓN DE DENSIDAD ISOLÍNEA MÍNIMA DE D3D12 \_ \_ \_ \_ \_ TESSELLATOR \_                  | 1                |
-| FACTOR DE TESELACIÓN IMPAR MÍNIMO DE D3D12 \_ \_ \_ \_ TESSELLATOR \_                               | 1                |
-| NÚMERO DE BITS DE INTERVALO DE DIRECCIONES \_ DE TEXEL D3D12 \_ \_ \_ \_                                         | 16               |
+| D3D12 \_ TESSELLATOR \_ MIN \_ ISOLINE \_ DENSITY \_ TESSELLATION \_ FACTOR                  | 1                |
+| D3D12 \_ TESSELLATOR \_ MIN \_ ODD \_ TESSELLATION \_ FACTOR                               | 1                |
+| NÚMERO DE BITS DEL INTERVALO DE \_ DIRECCIONES DE TEXEL D3D12 \_ \_ \_ \_                                         | 16               |
 | ALINEACIÓN DEL TONO DE DATOS DE TEXTURA D3D12 \_ \_ \_ \_                                           | 256              |
-| ALINEACIÓN DE COLOCACIÓN DE DATOS DE TEXTURA D3D12 \_ \_ \_ \_                                       | 512              |
-| TAMAÑO DEL ICONO DE RECURSO EN MOSAICO DE D3D12 \_ \_ EN \_ \_ \_ \_ BYTES                                    | 65536            |
-| RECUENTO DE \_ RANURAS UAV D3D12 \_ \_                                                          | 64               |
-| D3D12 \_ RESULTADO DE ACCESO A MEMORIA SIN \_ \_ \_ ENLAZAR                                           | 0                |
-| VENTANILLA DE D3D12 \_ Y ÍNDICE MÁXIMO DE \_ \_ DESERCIÓN \_ \_                                    | 15               |
-| RECUENTO DE OBJETOS DE VENTANILLA D3D12 \_ \_ Y DE \_ INDESTE RECUENTO \_ DE OBJETOS POR \_ \_ \_ CANALIZACIÓN                  | 16               |
+| ALINEACIÓN DE LA COLOCACIÓN DE DATOS DE TEXTURA D3D12 \_ \_ \_ \_                                       | 512              |
+| TAMAÑO DE MOSAICO DE RECURSOS EN MOSAICO DE D3D12 \_ \_ EN \_ \_ \_ \_ BYTES                                    | 65536            |
+| D3D12 \_ UAV \_ SLOT \_ COUNT                                                          | 64               |
+| D3D12 \_ UNBOUND \_ MEMORY \_ ACCESS \_ RESULT                                           | 0                |
+| VENTANILLA DE D3D12 \_ \_ E \_ INDICE MAX DE LA VENTANILLA DE D3D12 \_ \_                                    | 15               |
+| VENTANILLA DE D3D12 Y RECUENTO DE OBJETOS DE LA VENTANILLA DE D3D12 \_ \_ POR \_ \_ \_ \_ \_ CANALIZACIÓN                  | 16               |
 | LÍMITES MÁXIMOS DE VENTANILLA D3D12 \_ \_ \_                                                     | 32767            |
-| LÍMITES MÍNIMOS DE VENTANILLA D3D12 \_ \_ \_                                                     | -32768           |
+| LÍMITES \_ \_ MÍNIMOS DE VENTANILLA D3D12 \_                                                     | -32768           |
 | D3D12 \_ VS \_ INPUT \_ REGISTER \_ COMPONENTS                                           | 4                |
 | D3D12 \_ VS \_ INPUT \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                                | 32               |
 | D3D12 \_ VS \_ INPUT \_ REGISTER \_ COUNT                                                | 32               |
@@ -428,7 +428,7 @@ Las siguientes constantes se declaran en d3d12.h, para su uso por un título D3D
 | D3D12 \_ VS \_ OUTPUT \_ REGISTER \_ COMPONENT \_ BIT \_ COUNT                               | 32               |
 | D3D12 \_ VS \_ OUTPUT \_ REGISTER \_ COUNT                                               | 32               |
 | D3D12 \_ WHQL \_ CONTEXT \_ COUNT \_ FOR \_ RESOURCE \_ LIMIT                                | 10               |
-| D3D12 \_ WHQL \_ DRAWINDEXED \_ INDEXED \_ INDEX COUNT \_ 2 TO \_ \_ EXP                               | 25               |
+| D3D12 \_ WHQL \_ DRAWINDEXED \_ \_ INDEXED INDEX COUNT \_ 2 \_ TO \_ EXP                               | 25               |
 | D3D12 \_ WHQL \_ DRAW \_ VERTEX \_ COUNT \_ 2 \_ TO \_ EXP                                     | 25               |
 
 ## <a name="requirements"></a>Requisitos
@@ -439,7 +439,7 @@ Las siguientes constantes se declaran en d3d12.h, para su uso por un título D3D
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

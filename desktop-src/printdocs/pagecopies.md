@@ -1,15 +1,15 @@
 ---
-description: Lea la información de referencia sobre el parámetro PageCopies. Este tema no está actual. Para obtener la información más reciente, vea Especificación del esquema de impresión.
+description: Lea información de referencia sobre el parámetro PageCopies. Este tema no está al día. Para obtener la información más reciente, vea Especificación del esquema de impresión.
 ms.assetid: a15fe075-6696-4c70-b658-ae62d542bb4e
 title: PageCopies
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bba414a7c1d3d846f204c74d98b649ef40cb32443d12730b8dfcf157f07ea431
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 5002850fa1df5a86b0022a941e3b2a1f7e414a44
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "120091915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466297"
 ---
 # <a name="pagecopies"></a>PageCopies
 
@@ -24,7 +24,7 @@ Especifica el número de copias de una página.
 
 
 
-| Nombre | Valor |
+| Nombre | Value |
 |----------------------------|-------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/> |
 | Prefijo de ámbito <br/> | Página<br/>         |
@@ -71,14 +71,14 @@ En la tabla siguiente se describen las características de las variables definid
 
 
 
-| Propiedad                | xsi:type           | Valor                        |
+| Propiedad                | xsi:type           | Value                        |
 |-------------------------|--------------------|------------------------------|
 | DataType<br/>     | string<br/>  | xs:integer<br/>        |
 | DefaultValue<br/> | integer<br/> | 1<br/>                 |
 | MaxValue<br/>     | integer<br/> | no definido<br/>         |
 | MinValue<br/>     | integer<br/> | 1<br/>                 |
 | Mandatory<br/>    | string<br/>  | psk:Unconditional<br/> |
-| Varios<br/>     | integer<br/> | 1<br/>                 |
+| Múltiple<br/>     | integer<br/> | 1<br/>                 |
 | UnitType<br/>     | string<br/>  | Copias<br/>            |
 
 
@@ -89,7 +89,7 @@ En la tabla siguiente se describen las características de las variables definid
 
 <dl> <dt>
 
-[Especificación del esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
+[Especificación de esquema de impresión](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip)
 </dt> </dl>
 
  

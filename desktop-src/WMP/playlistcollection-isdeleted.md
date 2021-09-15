@@ -5,7 +5,7 @@ ms.assetid: 5023927a-5d1a-4b61-8122-476947d537c4
 keywords:
 - Método isDeleted Reproductor de Windows Media
 - Método isDeleted Reproductor de Windows Media , clase PlaylistCollection
-- Clase PlaylistCollection Reproductor de Windows Media , método isDeleted
+- Clase PlaylistCollection Reproductor de Windows Media método , isDeleted
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a59f6ad587740911d55ae2837607c651e3f3be875bfb24f8bfa765ba415e9bc0
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3fed3e7e8ff41f23d0f9f741ea99f3382d20532e
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119862205"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466141"
 ---
 # <a name="playlistcollectionisdeleted-method"></a>Método PlaylistCollection.isDeleted
 

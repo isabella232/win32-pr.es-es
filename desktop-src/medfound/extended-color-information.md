@@ -4,12 +4,12 @@ ms.assetid: 05ca73c6-d105-47bc-96bc-b784f669febe
 title: Información de color extendida
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07ffce83acccd2004156d55c0711836271d9ad5cfe7a6ac395e0d9fcbb418142
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 29ba43180a0f1e5253540088c1638f59d52380c9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119466375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466908"
 ---
 # <a name="extended-color-information"></a>Información de color extendida
 
@@ -17,22 +17,22 @@ Si sabe algo sobre el color RGB, sabe que (255, 255, 255) es el triplete RGB de 
 
 La respuesta puede ser sorprendente: sin información adicional, este triplete no define ningún color determinado. El significado de cualquier valor RGB depende del *espacio de color*. Si no se conoce el espacio de color, en sentido estricto, no se conoce el color.
 
-Un espacio de color define cómo se debe reproducir la representación numérica de un valor de color determinado como luz física. Cuando el vídeo se codifica en un espacio de colores pero se muestra en otro, da como resultado colores distorsionados, a menos que el vídeo se corrija por colores. Por lo tanto, para lograr una fidelidad de color precisa, es fundamental conocer el espacio de color del vídeo de origen. Anteriormente, la canalización de vídeo de Windows no tenía información sobre el espacio de colores previsto. A partir Windows Vista, tanto DirectShow como Media Foundation información de color extendida en el tipo de medio. Esta información también está disponible para la aceleración de vídeo de DirectX (DXVA).
+Un espacio de color define cómo se debe reproducir la representación numérica de un valor de color determinado como luz física. Cuando el vídeo se codifica en un espacio de colores pero se muestra en otro, da como resultado colores distorsionados, a menos que el vídeo se corrija por colores. Por lo tanto, para lograr una fidelidad de color precisa, es fundamental conocer el espacio de color del vídeo de origen. Anteriormente, la canalización de vídeo de Windows no tenía información sobre el espacio de color previsto. A partir Windows Vista, tanto DirectShow como Media Foundation información de color extendida en el tipo de medio. Esta información también está disponible para la aceleración de vídeo de DirectX (DXVA).
 
-La manera estándar de describir matemáticamente un espacio de color es usar el espacio de colores XYZ de CIE, definido por la International Commission on Desaprobación (CIE). No es práctico usar valores CIE XYZ directamente en vídeo, pero el espacio de colores xyz de CIE se puede usar como una representación intermedia al convertir entre espacios de color.
+La manera estándar de describir matemáticamente un espacio de color es usar el espacio de colores XYZ de CIE, definido por la International Commission on Desaprobación (CIE). No es práctico usar valores XYZ de CIE directamente en vídeo, pero el espacio de colores XYZ de CIE se puede usar como una representación intermedia al convertir entre espacios de colores.
 
 Para reproducir los colores con precisión, se necesita la siguiente información:
 
 -   Color principal. Los elementos principales de color definen cómo se representan los valores tmulus de CIE XYZ como componentes RGB. En efecto, las primarias de color definen el "significado" de un valor RGB determinado.
--   Función de transferencia. La función de transferencia es una función que convierte los valores RGB lineales en valores no lineales de R'G'B'. Esta función también se denomina *corrección gamma*.
+-   Función de transferencia. La función de transferencia es una función que convierte los valores RGB lineales en valores no lineales de R'G'B'. Esta función también se denomina *corrección gamma.*
 -   Matriz de transferencia. La matriz de transferencia define cómo R'G'B' se convierte a Y'PbPr.
--   Muestreo de muestreo de muestreo. La mayoría de los vídeos de YUV se transmiten con menos resolución en los componentes de los componentes de la zona que el luma. El muestreo de muestreo se indica mediante fourcc del formato de vídeo. Por ejemplo, YUY2 es un formato 4:2:2, lo que significa que las muestras de muestras se muestrean horizontalmente por un factor de 2.
+-   Muestreo de muestreo de muestreo. La mayoría de los vídeos de YUV se transmiten con menos resolución en los componentes de los componentes de la zona que el luma. El muestreo de muestreo se indica mediante el FOURCC del formato de vídeo. Por ejemplo, YUY2 es un formato 4:2:2, lo que significa que las muestras de muestras se muestrean horizontalmente por un factor de 2.
 -   Siting de croma. Cuando se muestrea el brillo, la posición de las muestras de muestreo con respecto a las muestras de luma determina cómo se deben interpolar las muestras que faltan.
 -   Intervalo nominal. El intervalo nominal define cómo se escalan los valores de Y'PbPr a Y'CbCr.
 
 ## <a name="color-space-in-media-types"></a>Espacio de color en tipos de medios
 
-DirectShow, Media Foundation y directX Video Acceleration (DXVA) tienen diferentes formas de representar formatos de vídeo. Afortunadamente, es fácil traducir la información de espacio de color de una a otra, porque las enumeraciones pertinentes son las mismas.
+DirectShow, Media Foundation y aceleración de vídeo de DirectX (DXVA) tienen distintas maneras de representar formatos de vídeo. Afortunadamente, es fácil traducir la información de espacio de color de una a otra, porque las enumeraciones pertinentes son las mismas.
 
 -   DXVA 1.0: la información de espacio de color se proporciona en la [**estructura \_ DXVA ExtendedFormat.**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_extendedformat)
 -   DXVA 2.0: la información de espacio de color se proporciona en la estructura [**de estructura \_ DXVA2 ExtendedFormat.**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_extendedformat) Esta estructura es idéntica a la estructura DXVA 1.0 y el significado de los campos es el mismo.
@@ -103,7 +103,7 @@ Es posible que otros componentes necesiten usar la información de espacio de co
 
 -   Los convertidores de espacio de colores de software deben usar información de espacio de color al seleccionar un algoritmo de conversión.
 -   Los mezcladores de vídeo, como el mezclador de representador de vídeo mejorado (EVR), deben usar la información de color al mezclar secuencias de vídeo de diferentes tipos de contenido.
--   Las API de procesamiento de vídeo DXVA y los DDIs permiten al autor de la llamada especificar información de espacio de color. La GPU debe usar esta información cuando realice mezclas de vídeo de tipo "hardward".
+-   Las API de procesamiento de vídeo DXVA y los DDIs permiten al autor de la llamada especificar información de espacio de color. La GPU debe usar esta información cuando realice mezclas de vídeo de entrada dura.
 
 ## <a name="related-topics"></a>Temas relacionados
 

@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: be29e4a1bd6721b8f53dbe2394be3552ca4845143cf948f130ef55e11881b518
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7108dfc094f3183950dd94e5398263f4bf7cfd5c
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119589245"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467942"
 ---
 # <a name="tracelogging-managed-quick-start"></a>Seguimiento de registros administrados Inicio rápido
 
@@ -72,7 +72,7 @@ Para poder registrar eventos, debe crear una instancia de la clase EventSource. 
 
 La instancia es estática porque solo debe haber una instancia de un proveedor específico en la aplicación a la vez.
 
-### <a name="log-tracelogging-events"></a>Registrar eventos de registro de seguimiento
+### <a name="log-tracelogging-events"></a>Eventos de registro de seguimiento
 
 Una vez creado el proveedor, el código siguiente del ejemplo anterior registra un evento simple.
 
@@ -83,9 +83,9 @@ Una vez creado el proveedor, el código siguiente del ejemplo anterior registra 
 
 
 
-### <a name="log-structured-event-payload-data"></a>Registrar datos de carga de eventos estructurados
+### <a name="log-structured-event-payload-data"></a>Registro de datos de carga de eventos estructurados
 
-Puede definir datos de carga estructurados que se registran con el evento . Proporcione datos de carga estructurados como un tipo anónimo o como una instancia de una clase que se ha anotado con el atributo como se muestra `[EventData]` en el ejemplo siguiente.
+Puede definir datos de carga estructurados que se registran con el evento . Proporcione datos de carga estructurados como un tipo anónimo o como una instancia de una clase anotada con el atributo , como se muestra `[EventData]` en el ejemplo siguiente.
 
 
 ```CSharp
@@ -115,9 +115,9 @@ El atributo reemplaza la necesidad de crear manualmente un archivo de manifiesto
 
 ## <a name="summary-and-next-steps"></a>Resumen y pasos siguientes
 
-Vea [Registrar y mostrar eventos de](tracelogging-record-and-display-tracelogging-events.md) seguimiento para obtener información sobre cómo capturar y ver los datos de TraceLogging mediante las versiones internas más recientes de Windows Performance Tools (WPT).
+Vea [Registrar y mostrar eventos de](tracelogging-record-and-display-tracelogging-events.md) seguimiento para obtener información sobre cómo capturar y ver datos de TraceLogging mediante las versiones internas más recientes de Windows Performance Tools (WPT).
 
-Consulte [Ejemplos de registro de seguimiento de .NET](tracelogging-net-examples.md) para obtener más ejemplos administrados de TraceLogging.
+Consulte [Ejemplos de registro de seguimiento de .NET](tracelogging-net-examples.md) para obtener más ejemplos de seguimiento administrados.
 
  
 

@@ -16,11 +16,11 @@ api_type:
 api_location: ''
 ROBOTS: INDEX,FOLLOW
 ms.openlocfilehash: 3a521970d749aad5b752bc8cd224455b5854e424
-ms.sourcegitcommit: 4665ebce0c106bdb52eef36e544280b496b6f50b
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122988168"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127467229"
 ---
 # <a name="jet_snt"></a>JET_SNT
 
@@ -29,7 +29,7 @@ _**Se aplica a:** Windows | Windows Servidor_
 
 ## <a name="jet_snt"></a>JET_SNT
 
-El [JET_SNT]() de constantes describe los puntos del progreso de una operación sobre qué información se solicita en una llamada a la función de JET_PFNSTATUS [de](./jet-pfnstatus-callback-function.md) llamada.
+El [JET_SNT]() de constantes describe los puntos del progreso de una operación sobre qué información se solicita en una llamada a la función JET_PFNSTATUS [de](./jet-pfnstatus-callback-function.md) llamada.
 
 
 | <p>Constante o valor</p> | <p>Descripción</p> | 

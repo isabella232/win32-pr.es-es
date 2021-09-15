@@ -1,5 +1,5 @@
 ---
-description: Devuelve identificadores a la sesión criptográfica y al dispositivo Direct3D que están asociados a un dispositivo descodificador de Aceleración de vídeo 2 (DXVA-2) de DirectX especificado.
+description: Devuelve identificadores a la sesión criptográfica y al dispositivo Direct3D asociados a un dispositivo descodificador de DirectX Video Acceleration 2 (DXVA-2) especificado.
 ms.assetid: 90b3bcf3-2988-48de-8acd-62e385d4fdf0
 title: D3DAUTHENTICATEDQUERY_CRYPTOSESSION (D3d9types.h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 3ee1cabc69122ebd7eb7d81c64eb761439e6a3c0cde20dd376c3581b9aed0738
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: e824514c3fef4e3e036b8f2973d3a958c4e135ec
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118974674"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127465921"
 ---
 # <a name="d3dauthenticatedquery_cryptosession"></a>D3DAUTHENTICATEDQUERY \_ CRYPTOSESSION
 
-Devuelve identificadores a la sesión criptográfica y al dispositivo Direct3D que están asociados a un dispositivo descodificador de Aceleración de vídeo 2 (DXVA-2) de DirectX especificado.
+Devuelve identificadores a la sesión criptográfica y al dispositivo Direct3D asociados a un dispositivo descodificador de DirectX Video Acceleration 2 (DXVA-2) especificado.
 
 
 
@@ -36,12 +36,12 @@ Devuelve identificadores a la sesión criptográfica y al dispositivo Direct3D q
 
  
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los siguientes tipos de canal admiten esta consulta:
 
 -   **HARDWARE DEL CONTROLADOR D3DAUTHENTICATEDCHANNEL \_ \_**
--   **SOFTWARE DEL CONTROLADOR D3DAUTHENTICATEDCHANNEL \_ \_**
+-   **SOFTWARE DE CONTROLADOR D3DAUTHENTICATEDCHANNEL \_ \_**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,13 +49,13 @@ Los siguientes tipos de canal admiten esta consulta:
 
 | Requisito | Value |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                             |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio solo\]<br/>                                             |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                                |
-| Header<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

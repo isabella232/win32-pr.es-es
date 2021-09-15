@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 062cb2c7dfed3bb2b617d58278ee8aa1bd69e8733776704eac92d315c8412774
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 14384dc6e0ed84871d58cf728e1c269ebc30b0d9
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119937075"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468214"
 ---
 # <a name="folderitemverbsapplication-property"></a>Propiedad FolderItemVerbs.Application
 

@@ -4,12 +4,12 @@ ms.assetid: F8C27A2B-A138-4efd-A843-78668643D1DB
 title: System.Device.PrinterURL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 832eb7686753f0435289c76d11b0996da1cca1f108a24bd80640b2835310c93d
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5ba880ae7f838de9de63a00d85cf3b102be44245
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119946525"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127466562"
 ---
 # <a name="systemdeviceprinterurl"></a>System.Device.PrinterURL
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

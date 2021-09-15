@@ -4,12 +4,12 @@ ms.assetid: 0d1b651a-fd48-4bc4-92fd-f0eb6c72e264
 title: System.Photo.CameraSerialNumber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e69805c9d27825767b9134c7c8605135400a2222616e6a69b76bd8ae993968cf
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7d4674fb5fbe2472fbaf49c13ce23b5d88dd976a
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118970144"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468431"
 ---
 # <a name="systemphotocameraserialnumber"></a>System.Photo.CameraSerialNumber
 
@@ -30,7 +30,7 @@ propertyDescription
       type = String
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 

@@ -4,12 +4,12 @@ ms.assetid: e0fb2092-0427-40c9-9e09-aefc5ef017e6
 title: System.ParsingPath
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de98a39806d2db752c72da9706eaf35b4b6b5296cb82f3a75bee4d35add3680c
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: ae62243ff37464617f87654f8ca1f04c3ea606da
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118230403"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127468446"
 ---
 # <a name="systemparsingpath"></a>System.ParsingPath
 
@@ -31,7 +31,7 @@ propertyDescription
       IsInnate = true
 ```
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Los valores PKEY se definen en Propkey.h.
 
