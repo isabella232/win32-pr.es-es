@@ -16,22 +16,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1f35365d56ce9391a746e479e1b59034342ebf62
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.openlocfilehash: 853ce5b6c1dfb9c90b7a5800f41a8a54fe094c0f
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127174865"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520269"
 ---
 # <a name="ibackgroundcopyerror-interface"></a>IBackgroundCopyError (interfaz)
 
 Use la **interfaz IBackgroundCopyError** para determinar la causa de un error y si el proceso de transferencia puede continuar.
 
-DO crea un objeto de error solo cuando el estado del trabajo es BG_JOB_STATE_ERROR o BG_JOB_STATE_TRANSIENT_ERROR. DO no crea un objeto de error cuando se produce un error en un método de interfaz **IBackgroundCopyXXXX.** El objeto de error está disponible hasta que do comienza a transferir datos (el estado del trabajo cambia a BG_JOB_STATE_TRANSFERRING) para el trabajo.
+Optimización de distribución crea un objeto de error solo cuando el estado del trabajo es BG_JOB_STATE_ERROR o BG_JOB_STATE_TRANSIENT_ERROR. Optimización de distribución no crea un objeto de error cuando se produce un error en un método de interfaz **IBackgroundCopyXXXX.** El objeto de error está disponible hasta Optimización de distribución comienza a transferir datos (el estado del trabajo cambia a BG_JOB_STATE_TRANSFERRING) para el trabajo.
 
 Para obtener un **objeto IBackgroundCopyError,** llame al [**método IBackgroundCopyJob::GetError.**](ibackgroundcopyjob-geterror.md)
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 La **interfaz IBackgroundCopyError** hereda de [**la interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IBackgroundCopyError** también tiene estos tipos de miembros:
 
@@ -39,7 +39,7 @@ La **interfaz IBackgroundCopyError** hereda de [**la interfaz IUnknown.**](/wind
 
 ### <a name="methods"></a>Métodos
 
-La **interfaz IBackgroundCopyError tiene** estos métodos.
+La **interfaz IBackgroundCopyError** tiene estos métodos.
 
 
 
@@ -68,7 +68,7 @@ La **interfaz IBackgroundCopyError tiene** estos métodos.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

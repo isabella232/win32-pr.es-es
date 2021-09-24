@@ -3,19 +3,19 @@ title: Módulo 1. Su primer Windows programa
 description: Módulo 1. Su primer Windows programa
 ms.assetid: 73848144-bf02-4382-a476-7f5a35447727
 ms.topic: article
-ms.date: 05/31/2018
-ms.openlocfilehash: 6515b012f968707379ebf24023c3d282c50d6fd6
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.date: 09/10/2021
+ms.openlocfilehash: da2f3f549955cd7d07a218d882fbf996ffcce8e9
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127159912"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520730"
 ---
 # <a name="module-1-your-first-windows-program"></a>Módulo 1. Su primer Windows programa
 
 En este módulo, escribiremos un programa de escritorio Windows mínimo. Lo único que hace es crear y mostrar una ventana en blanco. Este primer programa contiene unas 50 líneas de código, sin contar las líneas en blanco y los comentarios. Será nuestro punto de partida; más adelante agregaremos gráficos, texto, datos de entrada del usuario y otras características.
 
-Si busca más detalles sobre cómo crear una aplicación de escritorio Windows tradicional en Visual Studio, consulte Tutorial: Crear una aplicación de escritorio de Windows [tradicional (C++).](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019)
+Si busca más detalles sobre cómo crear una aplicación de escritorio Windows tradicional en Visual Studio, consulte Tutorial: Crear una aplicación de escritorio de Windows [(C++)](/cpp/windows/walkthrough-creating-windows-desktop-applications-cpp?view=vs-2019)tradicional.
 
 ![captura de pantalla del programa de ejemplo](images/window01.png)
 

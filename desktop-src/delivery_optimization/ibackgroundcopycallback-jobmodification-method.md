@@ -1,6 +1,6 @@
 ---
 title: Método JobModification de IBackgroundCopyCallback (Deliveryoptimization.h)
-description: Optimización de distribución (DO) llama a la implementación del método JobModification cuando se ha modificado el trabajo.
+description: Optimización de distribución llama a la implementación del método JobModification cuando se ha modificado el trabajo.
 ms.assetid: 4AC2575F-57FB-45E6-B29C-12DF615237F3
 keywords:
 - Método JobModification
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ceeb390fc8592c1e8e1d03efdb432056bd131a6e
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.openlocfilehash: 275e0ebe780a85a919e7c7692739273048e1fb85
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127566769"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128521352"
 ---
 # <a name="ibackgroundcopycallbackjobmodification-method"></a>IBackgroundCopyCallback::JobModification (método)
 
-Optimización de distribución (DO) llama a la implementación del método [**JobModification**](https://www.bing.com/search?q=**JobModification**) cuando se ha modificado el trabajo. El servicio genera este evento cuando se transfieren bytes, se han agregado archivos al trabajo, se han modificado las propiedades o se ha cambiado el estado del trabajo.
+Optimización de distribución llama a la implementación del [**método JobModification**](https://www.bing.com/search?q=**JobModification**) cuando se ha modificado el trabajo. El servicio genera este evento cuando se transfieren bytes, se han agregado archivos al trabajo, se han modificado las propiedades o se ha cambiado el estado del trabajo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,7 +47,7 @@ HRESULT JobModification(
 *pJob* \[ En\]
 </dt> <dd>
 
-Contiene los métodos para acceder a la información de propiedad, progreso y estado del trabajo. No liberar *pJob*; DO libera la interfaz cuando devuelve [**el método JobModification.**](https://www.bing.com/search?q=**JobModification**)
+Contiene los métodos para acceder a la información de propiedad, progreso y estado del trabajo. No liberar *pJob*; Optimización de distribución libera la interfaz cuando devuelve [**el método JobModification.**](https://www.bing.com/search?q=**JobModification**)
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Este método debe devolver S_OK.
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

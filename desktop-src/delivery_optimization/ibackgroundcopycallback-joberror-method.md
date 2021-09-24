@@ -1,6 +1,6 @@
 ---
 title: Método IBackgroundCopyCallback JobError (Deliveryoptimization.h)
-description: Optimización de distribución (DO) llama a la implementación del método JobError cuando el estado del trabajo cambia a BG_JOB_STATE_ERROR.
+description: Optimización de distribución llama a la implementación del método JobError cuando el estado del trabajo cambia a BG_JOB_STATE_ERROR.
 ms.assetid: 121712A5-98EB-4B2F-A004-A3BDF9C1332B
 keywords:
 - Método JobError
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0122f5777303506be5fd81d0966b00f828bf2073
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.openlocfilehash: 434af6a2e64cae16b0b6605c6b3d426d9c37736b
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127566772"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520226"
 ---
 # <a name="ibackgroundcopycallbackjoberror-method"></a>IBackgroundCopyCallback::JobError (método)
 
-Optimización de distribución (DO) llama a la implementación del [**método JobError**](https://www.bing.com/search?q=**JobError**) cuando el estado del trabajo cambia a BG_JOB_STATE_ERROR.
+Optimización de distribución llama a la implementación del [**método JobError**](https://www.bing.com/search?q=**JobError**) cuando el estado del trabajo cambia a BG_JOB_STATE_ERROR.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -47,22 +47,22 @@ HRESULT JobError(
 *pJob* \[ En\]
 </dt> <dd>
 
-Contiene información relacionada con el trabajo, como el número de bytes y archivos transferidos antes de que se produjese el error. También contiene los métodos para reanudar y cancelar el trabajo. No liberar *pJob*; DO libera la interfaz cuando devuelve [**el método JobError.**](https://www.bing.com/search?q=**JobError**)
+Contiene información relacionada con el trabajo, como el número de bytes y archivos transferidos antes de que se produjese el error. También contiene los métodos para reanudar y cancelar el trabajo. No liberar *pJob*; Optimización de distribución libera la interfaz cuando devuelve [**el método JobError.**](https://www.bing.com/search?q=**JobError**)
 
 </dd> <dt>
 
 *pError* \[ En\]
 </dt> <dd>
 
-Contiene información de error, como el archivo que se está procesando en el momento en que se produjo el error grave y una descripción del error. No liberar *pError*; DO libera la interfaz cuando devuelve [**el método JobError.**](https://www.bing.com/search?q=**JobError**)
+Contiene información de error, como el archivo que se está procesando en el momento en que se produjo el error grave y una descripción del error. No liberar *pError*; Optimización de distribución libera la interfaz cuando se devuelve [**el método JobError.**](https://www.bing.com/search?q=**JobError**)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor devuelto
 
-Este método debe devolver **S_OK**; De lo contrario, do continúa con la llamada a este **método hasta S_OK** se devuelve. Por motivos de rendimiento, debe limitar el número de veces que devuelve un valor distinto de **S_OK** varias veces. Como alternativa a la devolución de un código de error, considere la posibilidad de devolver **siempre S_OK** y controlar el error internamente. El intervalo en el que se llama a este método es arbitrario.
+Este método debe devolver **S_OK**; De lo contrario, Optimización de distribución a este método hasta **que S_OK** se devuelve. Por motivos de rendimiento, debe limitar el número de veces que devuelve un valor distinto de **S_OK** varias veces. Como alternativa a devolver un código de error, considere la posibilidad de devolver **siempre S_OK** control del error internamente. El intervalo en el que se llama a este método es arbitrario.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
 Después de determinar la causa del error, realice una de las siguientes opciones:
 
@@ -72,7 +72,7 @@ Después de determinar la causa del error, realice una de las siguientes opcione
 
 Los errores transitorios no generan llamadas al [**método JobError.**](https://www.bing.com/search?q=**JobError**)
 
-DO devuelve BG_ERROR_CONTEXT_REMOTE_FILE si el trabajo ha producido un error HTTP 403, BG_ERROR_CONTEXT_NONE lo contrario.
+Optimización de distribución devuelve BG_ERROR_CONTEXT_REMOTE_FILE si el trabajo ha producido un error HTTP 403, BG_ERROR_CONTEXT_NONE lo contrario.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ DO devuelve BG_ERROR_CONTEXT_REMOTE_FILE si el trabajo ha producido un error HTT
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

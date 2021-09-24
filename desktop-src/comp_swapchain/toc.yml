@@ -1,0 +1,9 @@
+- name: Cadena de intercambio de composición
+  href: comp-swapchain-portal.md
+  items:
+    - name: Guía de programación de cadenas de intercambio de composición
+      href: comp-swapchain.md
+    - name: Ejemplos de código de cadena de intercambio de composición
+      href: comp-swapchain-examples.md
+    - name: Glosario de cadena de intercambio de composición
+      href: comp-swapchain-glossary.md

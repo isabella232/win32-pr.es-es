@@ -1,6 +1,6 @@
 ---
 title: Método GetProperty de IBackgroundCopyJob5 (Deliveryoptimization.h)
-description: Método genérico para obtener Optimización de distribución de trabajo (DO).
+description: Método genérico para obtener Optimización de distribución de trabajo.
 ms.assetid: 22BA2FAB-3F24-4801-8FB7-CB6F9E8DFBB3
 keywords:
 - Método GetProperty
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2141afba2d2f58a08c62d609b9029c07ae07923e35f43e985f61a13a02aa68d2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6c09d5886acb7d1bada165180e3d26bdf6505a6b
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118542804"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520277"
 ---
 # <a name="ibackgroundcopyjob5getproperty-method"></a>IBackgroundCopyJob5::GetProperty (método)
 
-Método genérico para obtener Optimización de distribución de trabajo (DO).
+Método genérico para obtener Optimización de distribución de trabajo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -76,12 +76,12 @@ El método devuelve los siguientes valores devueltos.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows 10, versión 1709 \[ solo aplicaciones de escritorio\]<br/>                                           |
+| Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | Archivo DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyJob5 se define como E847030C-BBBA-4657-AF6D-484AA42BF1FE<br/>              |

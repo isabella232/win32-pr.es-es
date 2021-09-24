@@ -4,20 +4,20 @@ ms.assetid: f3f455bb-7563-4920-a728-f75fa5854dc9
 title: Usar objetos de evento (sincronización)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8466ca1104a4d8e6ddaaed3e0618bea3db68bd1954aaf3b859f66fb93a3aac79
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 50fdca3994aa5ecb6ea2b0a2dde4ba5a2527c7d6
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117765336"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128521362"
 ---
 # <a name="using-event-objects-synchronization"></a>Usar objetos de evento (sincronización)
 
 Las aplicaciones pueden usar [objetos de evento](event-objects.md) en varias situaciones para notificar a un subproceso en espera la aparición de un evento. Por ejemplo, las operaciones de E/S superpuestas en archivos, canalizaciones con nombre y dispositivos de comunicaciones usan un objeto de evento para indicar su finalización. Para obtener más información sobre el uso de objetos de evento en operaciones de E/S superpuestas, vea [Synchronization and Overlapped Input and Output](synchronization-and-overlapped-input-and-output.md).
 
-En el ejemplo siguiente se usan objetos de evento para evitar que varios subprocesos lean desde un búfer de memoria compartida mientras un subproceso maestro escribe en ese búfer. En primer lugar, el subproceso maestro usa la [**función CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) para crear un objeto de evento de restablecimiento manual cuyo estado inicial no essignaled. A continuación, crea varios subprocesos de lector. El subproceso maestro realiza una operación de escritura y, a continuación, establece el objeto de evento en el estado señalado cuando ha terminado de escribir.
+En el ejemplo siguiente se usan objetos de evento para evitar que varios subprocesos lean desde un búfer de memoria compartido mientras un subproceso maestro escribe en ese búfer. En primer lugar, el subproceso maestro usa la [**función CreateEvent**](/windows/win32/api/synchapi/nf-synchapi-createeventa) para crear un objeto de evento de restablecimiento manual cuyo estado inicial no essignaled. A continuación, crea varios subprocesos de lector. El subproceso maestro realiza una operación de escritura y, a continuación, establece el objeto de evento en el estado señalado cuando ha terminado de escribir.
 
-Antes de iniciar una operación de lectura, cada subproceso de lector usa [**WaitForSingleObject para**](/windows/win32/api/winbase/nf-winbase-registerwaitforsingleobject) esperar a que se señale el objeto de evento de restablecimiento manual. Cuando **se devuelve WaitForSingleObject,** esto indica que el subproceso principal está listo para que comience su operación de lectura.
+Antes de iniciar una operación de lectura, cada subproceso de lector usa [**WaitForSingleObject para**](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject) esperar a que se señale el objeto de evento de restablecimiento manual. Cuando **se devuelve WaitForSingleObject,** esto indica que el subproceso principal está listo para que comience su operación de lectura.
 
 
 ```C++

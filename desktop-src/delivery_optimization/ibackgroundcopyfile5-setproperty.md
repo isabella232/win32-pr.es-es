@@ -1,6 +1,6 @@
 ---
 title: Método IBackgroundCopyFile5 SetProperty (Deliveryoptimization.h)
-description: Establece una propiedad genérica de una transferencia de Optimización de distribución (DO).
+description: Establece una propiedad genérica de una Optimización de distribución de archivos.
 ms.assetid: 63B6806E-47D6-49B0-9867-628C110540D0
 keywords:
 - SetProperty (método)
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7f519ee77af0ae6e0c3d1d036aeeb6a8ad712870
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.openlocfilehash: 4730625c702ee2554b43dd96730287b0322c6f28
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126884852"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520128"
 ---
 # <a name="ibackgroundcopyfile5setproperty-method"></a>IBackgroundCopyFile5::SetProperty (Método)
 
-Establece una propiedad genérica de una transferencia de Optimización de distribución (DO).
+Establece una propiedad genérica de una Optimización de distribución de archivos.
 
 ## <a name="syntax"></a>Sintaxis
 

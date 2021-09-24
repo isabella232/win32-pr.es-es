@@ -4,12 +4,12 @@ ms.assetid: 31512657-c413-9e6e-e343-1ea677a02b8c
 title: Biblioteca interna
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f26d2a6171a14abebbec0665233c66f873ed7ede2c3b8f01fb70ed406ffea33b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 3100a8e83a6935071722d5d1733400fa8824c62a
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119118155"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128521232"
 ---
 # <a name="library-internals"></a>Biblioteca interna
 
@@ -30,19 +30,19 @@ Para mejorar la portabilidad y optimizar el diseño de datos, debe usar las conv
 
 **Para archivos de 32 Windows**
 
-En el caso de las Windows de 32 bits, hay dos convenciones de llamada disponibles para el paso eficaz de valores [ \_ \_ m128](/cpp/cpp/m128) (que implementa [**XMVECTOR**](xmvector-data-type.md) en esa plataforma). El estándar es [ \_ \_ fastcall](https://docs.microsoft.com/cpp/cpp/fastcall), que puede pasar los tres primeros valores [ \_ \_ m128](/cpp/cpp/m128) (instancias **XMVECTOR)** como argumentos a una función en un registro *de SSE/SSE2.* [ \_ \_ fastcall](https://docs.microsoft.com/cpp/cpp/fastcall) pasa los argumentos restantes a través de la pila.
+En el caso de las Windows de 32 bits, hay dos convenciones de llamada disponibles para el paso eficaz de valores [ \_ \_ m128](/cpp/cpp/m128) (que implementa [**XMVECTOR**](xmvector-data-type.md) en esa plataforma). El estándar es [ \_ \_ fastcall](/cpp/cpp/fastcall), que puede pasar los tres primeros valores [ \_ \_ m128](/cpp/cpp/m128) (instancias **XMVECTOR)** como argumentos a una función en un registro *de SSE/SSE2.* [ \_ \_ fastcall](/cpp/cpp/fastcall) pasa los argumentos restantes a través de la pila.
 
-Los compiladores de Microsoft Visual Studio más recientes admiten una nueva convención de llamada, vectorcall, que puede pasar hasta seis valores \_ \_ [ \_ \_ m128](/cpp/cpp/m128) (instancias [**XMVECTOR)**](xmvector-data-type.md) como argumentos a una función en un registro *SSE/SSE2.* También puede pasar agregados vectoriales heterogéneos (también conocidos como [**XMMATRIX)**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix)a través de registros *SSE/SSE2* si hay espacio suficiente.
+Los compiladores de Microsoft Visual Studio más recientes admiten una nueva convención de llamada, vectorcall, que puede pasar hasta seis valores \_ \_ [ \_ \_ m128](/cpp/cpp/m128) (instancias [**XMVECTOR)**](xmvector-data-type.md) como argumentos a una función en un registro *de SSE/SSE2.* También puede pasar agregados vectoriales heterogéneos (también conocidos como [**XMMATRIX)**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix)a través de registros *SSE/SSE2* si hay espacio suficiente.
 
 **Para las ediciones de 64 bits de Windows**
 
-En el caso de las Windows de 64 bits, hay dos convenciones de llamada disponibles para el paso eficaz de [ \_ \_ valores m128.](/cpp/cpp/m128) El estándar es [ \_ \_ fastcall](https://docs.microsoft.com/cpp/cpp/fastcall), que pasa todos los [ \_ \_ valores m128](/cpp/cpp/m128) de la pila.
+En el caso de las Windows de 64 bits, hay dos convenciones de llamada disponibles para el paso eficaz de [ \_ \_ valores m128.](/cpp/cpp/m128) El estándar es [ \_ \_ fastcall](/cpp/cpp/fastcall), que pasa todos los [ \_ \_ valores m128](/cpp/cpp/m128) de la pila.
 
 Los Visual Studio más recientes admiten la convención de llamada vectorcall, que puede pasar hasta seis valores \_ \_ [ \_ \_ m128](/cpp/cpp/m128) (instancias [**XMVECTOR)**](xmvector-data-type.md) como argumentos a una función en un registro *SSE/SSE2.* También puede pasar agregados vectoriales heterogéneos (también conocidos como [**XMMATRIX)**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix)a través de registros *SSE/SSE2* si hay espacio suficiente.
 
 **Para Windows en ARM**
 
-La Windows arm & ARM64 admite pasar los cuatro primeros valores \_ \_ n128 (instancias [**XMVECTOR)**](xmvector-data-type.md) en el registro.
+La Windows en ARM & ARM64 admite pasar los cuatro primeros valores \_ \_ n128 (instancias [**XMVECTOR)**](xmvector-data-type.md) en el registro.
 
 **Solución DirectXMath**
 
@@ -54,7 +54,7 @@ Los alias **FXMVECTOR,** **GXMVECTOR,** **HXMVECTOR** y **CXMVECTOR** admiten es
 -   Use el alias **CXMVECTOR** para pasar cualquier otra instancia de [**XMVECTOR**](xmvector-data-type.md) usada como argumentos.
 
 > [!Note]  
-> Para los parámetros de salida, use siempre XMVECTOR o XMVECTOR& y ignórlos con respecto a las reglas anteriores para \* los parámetros de entrada.
+> Para los parámetros de salida, use siempre XMVECTOR o XMVECTOR& omitirlos con respecto a las reglas anteriores para \* los parámetros de entrada.
 
  
 
@@ -90,7 +90,7 @@ XMMATRIX XM_CALLCONV XMMatrixMultiplyTranspose(FXMMATRIX M1, CXMMATRIX M2);
 
 
 
-Para admitir estas convenciones de llamada, estos alias de tipo se definen de la siguiente manera (los parámetros deben pasarse por valor para que el compilador los tenga en cuenta para pasarlos en el registro):
+Para admitir estas convenciones de llamada, estos alias de tipo se definen de la siguiente manera (los parámetros se deben pasar por valor para que el compilador los tenga en cuenta para pasarlos en el registro):
 
 **Para aplicaciones de 32 Windows bits**
 
@@ -172,7 +172,7 @@ typedef const XMMATRIX& CXMMATRIX;
 
 ## <a name="graphics-library-type-equivalence"></a>Equivalencia de tipos de biblioteca de gráficos
 
-Para admitir el uso de la biblioteca DirectXMath, muchos tipos y estructuras de directXMath Library son equivalentes a las implementaciones de Windows de los tipos **D3DDECLTYPE** y **D3DFORMAT,** así como los tipos [**\_ DXGI FORMAT.**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format)
+Para admitir el uso de la biblioteca DirectXMath, muchos tipos y estructuras de directXMath Library son equivalentes a las implementaciones de Windows de los tipos **D3DDECLTYPE** y **D3DFORMAT,** así como los tipos [**DXGI \_ FORMAT.**](/windows/win32/api/dxgiformat/ne-dxgiformat-dxgi_format)
 
 | DirectXMath                      | D3DDECLTYPE                                                                           | D3DFORMAT                                                     | FORMATO \_ DXGI                                                                                                                                                                                            |
 |----------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -223,45 +223,45 @@ Para admitir el uso de la biblioteca DirectXMath, muchos tipos y estructuras de 
 
 ## <a name="global-constants-in-the-directxmath-library"></a>Constantes globales en la biblioteca DirectXMath
 
-Para reducir el tamaño del segmento de datos, la biblioteca DirectXMath usa la macro [XMGLOBALCONST](xmglobalconst.md) para hacer uso de una serie de constantes internas globales en su implementación. Por convención, estas constantes globales internas tienen el prefijo **g \_ XM**. Normalmente, son uno de los tipos siguientes: [**XMVECTORU32,**](xmvectoru32-data-type.md) [**XMVECTORF32**](xmvectorf32-data-type.md)o **XMVECVECVEC32**.
+Para reducir el tamaño del segmento de datos, la biblioteca DirectXMath usa la macro [XMGLOBALCONST](xmglobalconst.md) para hacer uso de una serie de constantes internas globales en su implementación. Por convención, estas constantes globales internas tienen como prefijo **g \_ XM**. Normalmente, son uno de los siguientes tipos: [**XMVECTORU32,**](xmvectoru32-data-type.md) [**XMVECTORF32**](xmvectorf32-data-type.md)o **XMVECVECVEC32**.
 
-Estas constantes globales internas están sujetas a cambios en futuras revisiones de la biblioteca DirectXMath. Use funciones públicas que encapsulan las constantes cuando sea posible en lugar del uso directo de **valores globales \_ g XM.** También puede declarar sus propias constantes globales mediante [XMGLOBALCONST](xmglobalconst.md).
+Estas constantes globales internas están sujetas a cambios en futuras revisiones de la biblioteca DirectXMath. Use funciones públicas que encapsulan las constantes cuando sea posible en lugar del uso directo de **valores globales de g \_ XM.** También puede declarar sus propias constantes globales mediante [XMGLOBALCONST](xmglobalconst.md).
 
 ## <a name="windows-sse-versus-sse2"></a>Windows SSE frente a SSE2
 
-El conjunto de instrucciones SSE solo proporciona compatibilidad con vectores de punto flotante de precisión sencilla. DirectXMath debe usar el conjunto de instrucciones SSE2 para proporcionar compatibilidad con vectores enteros. SSE2 es compatible con todos los procesadores Intel desde la introducción de Pentium 4, todos los procesadores AMD K8 y posteriores y todos los procesadores compatibles con x64.
+El conjunto de instrucciones SSE proporciona compatibilidad solo con vectores de punto flotante de precisión sencilla. DirectXMath debe usar el conjunto de instrucciones SSE2 para proporcionar compatibilidad con vectores enteros. SSE2 es compatible con todos los procesadores Intel desde la introducción de Pentium 4, todos los procesadores AMD K8 y posteriores, y todos los procesadores compatibles con x64.
 
 > [!Note]  
-> Windows 8 para x86 o posterior requiere compatibilidad con SSE2. Todas las versiones de Windows x64 requieren compatibilidad con SSE2. Windows en ARM/ARM64 requiere ARM \_ NEON.
+> Windows 8 para x86 o posterior requiere compatibilidad con SSE2. Todas las versiones Windows x64 requieren compatibilidad con SSE2. Windows arm/ARM64 requiere ARM \_ NEON.
 
  
 
 ## <a name="routine-variants"></a>Variantes rutinarias
 
-Hay varias variantes de las funciones de DirectXMath que facilitan el trabajo:
+Hay varias variantes de las funciones de DirectXMath que facilitan su trabajo:
 
--   Funciones de comparación para crear bifurcaciones condicionales complicadas basadas en un número menor de operaciones de comparación de vectores. El nombre de estas funciones termina en "R", como XMVector3InBoundsR. Las funciones devuelven un registro de comparación como un valor devuelto UINT o como un parámetro UINT out. Puede usar las macros **XMComparision \*** para probar el valor.
+-   Funciones de comparación para crear bifurcaciones condicionales complicadas basadas en un número menor de operaciones de comparación de vectores. El nombre de estas funciones termina en "R", como XMVector3InBoundsR. Las funciones devuelven un registro de comparación como un valor devuelto UINT o como un parámetro de salida UINT. Puede usar las macros **XMComparision \*** para probar el valor.
 -   Funciones por lotes para realizar operaciones de estilo por lotes en matrices de vectores más grandes. El nombre de estas funciones termina en "Stream", como [**XMVector3TransformStream.**](/windows/win32/api/directxmath/nf-directxmath-xmvector3transformstream) Las funciones funcionan en una matriz de entradas y generan una matriz de salidas. Normalmente, toman un paso de entrada y salida.
--   Funciones de estimación que implementan una estimación más rápida en lugar de un resultado más lento y preciso. El nombre de estas funciones termina en "Est", como [**XMVector3NormalizeEst.**](/windows/win32/api/directxmath/nf-directxmath-xmvector3normalizeest) El impacto en la calidad y el rendimiento del uso de la estimación varía de una plataforma a otra, pero se recomienda usar variantes de estimación para el código sensible al rendimiento.
+-   Funciones de estimación que implementan una estimación más rápida en lugar de un resultado más lento y preciso. El nombre de estas funciones termina en "Est", como [**XMVector3NormalizeEst.**](/windows/win32/api/directxmath/nf-directxmath-xmvector3normalizeest) El impacto en la calidad y el rendimiento del uso de la estimación varía de una plataforma a otra, pero se recomienda usar variantes de estimación para el código que tiene en cuenta el rendimiento.
 
 ## <a name="platform-inconsistencies"></a>Incoherencias de la plataforma
 
-La biblioteca DirectXMath está pensada para usarse en juegos y aplicaciones gráficas sensibles al rendimiento. Por lo tanto, la implementación está diseñada para una velocidad óptima que realiza un procesamiento normal en todas las plataformas admitidas. Es probable que los resultados en condiciones de límite, especialmente los que generan especiales de punto flotante, varíen de destino a destino. Este comportamiento también dependerá de otras configuraciones en tiempo de ejecución, como la palabra de control x87 para el destino no intrínseco de Windows de 32 bits o la palabra de control SSE para Windows 32 bits y 64 bits. Además, habrá diferencias en las condiciones de límite entre varios proveedores de CPU.
+La biblioteca DirectXMath está pensada para usarse en juegos y aplicaciones de gráficos sensibles al rendimiento. Por lo tanto, la implementación está diseñada para una velocidad óptima que realiza un procesamiento normal en todas las plataformas admitidas. Es probable que los resultados en condiciones de límite, especialmente los que generan especiales de punto flotante, varían de destino a destino. Este comportamiento también dependerá de otras configuraciones en tiempo de ejecución, como la palabra de control x87 para el destino no intrínsecos de 32 bits de Windows o la palabra de control SSE para Windows de 32 y 64 bits. Además, habrá diferencias en las condiciones de límite entre varios proveedores de CPU.
 
-No use DirectXMath en aplicaciones científicas u otras en las que la precisión numérica sea primordial. Además, esta limitación se refleja en la falta de compatibilidad con cálculos de precisión doble u otros cálculos de precisión extendida.
+No use DirectXMath en aplicaciones científicas u otras en las que la precisión numérica sea fundamental. Además, esta limitación se refleja en la falta de compatibilidad con cálculos de precisión doble u otros cálculos de precisión extendidos.
 
 > [!Note]  
-> Las rutas de acceso de código escalar XM NO INTRINSICS generalmente se escriben para \_ \_ el \_ \_ cumplimiento, no para el rendimiento. Los resultados de la condición de límite también variarán.
+> Por lo general, las rutas de acceso de código escalar XM NO INTRINSICS se \_ \_ \_ \_ escriben para el cumplimiento, no para el rendimiento. Los resultados de la condición de límite también variarán.
 
  
 
 ## <a name="platform-specific-extensions"></a>Extensiones específicas de la plataforma
 
-La biblioteca DirectXMath está diseñada para simplificar la programación SIMD de C++ proporcionando una excelente compatibilidad con plataformas x86, x64 y Windows RT mediante instrucciones intrínsecas ampliamente admitidas (SSE2 y ARM-NEON).
+La biblioteca DirectXMath está diseñada para simplificar la programación SIMD de C++ proporcionando una excelente compatibilidad con plataformas x86, x64 y Windows RT mediante instrucciones intrínsecas ampliamente compatibles (SSE2 y ARM-NEON).
 
-Sin embargo, hay ocasiones en las que las instrucciones específicas de la plataforma pueden resultar beneficiosas. Debido a la forma en que se implementa DirectXMath, en muchos casos es trivial usar tipos DirectXMath directamente en instrucciones intrínsecas estándar admitidas por el compilador y usar DirectXMath como ruta de acceso de reserva para plataformas que no admiten la instrucción extendida.
+Sin embargo, hay ocasiones en las que las instrucciones específicas de la plataforma pueden resultar beneficiosas. Debido a la forma en que se implementa DirectXMath, en muchos casos es trivial usar los tipos directXMath directamente en instrucciones intrínsecas compatibles con el compilador estándar y usar DirectXMath como ruta de acceso de reserva para las plataformas que no admiten la instrucción extendida.
 
-Por ejemplo, este es un ejemplo simplificado de aprovechamiento de la instrucción dot-product de SSE 4.1. Tenga en cuenta que debe proteger explícitamente la ruta de acceso del código para evitar generar excepciones de instrucciones no válidas en tiempo de ejecución. Asegúrese de que las rutas de acceso de código hacen un trabajo lo suficientemente importante como para justificar el costo adicional de la bifurcación, la complejidad del mantenimiento de varias rutas de acceso de código, entre otras.
+Por ejemplo, este es un ejemplo simplificado de cómo aprovechar la instrucción dot-product de SSE 4.1. Tenga en cuenta que debe proteger explícitamente la ruta de acceso del código para evitar generar excepciones de instrucciones no válidas en tiempo de ejecución. Asegúrese de que las rutas de acceso de código hacen un trabajo lo suficientemente importante como para justificar el costo adicional de la bifurcación, la complejidad de mantener varias rutas de acceso de código, y así sucesivamente.
 
 
 ```
@@ -359,7 +359,3 @@ Para más información sobre las extensiones específicas de la plataforma, cons
 
 [Guía de programación de DirectXMath](ovw-xnamath-progguide.md)
 </dt> </dl>
-
- 
-
- 

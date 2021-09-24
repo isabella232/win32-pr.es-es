@@ -44,7 +44,7 @@
     - name: Referencia de DirectComposition
       href: reference.md
       items:
-        - name: Funciones
+        - name: Functions
           href: functions.md
           items:
             - name: DCompositionAttachMouseDragToHwnd
@@ -234,7 +234,7 @@
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevice-createscaletransform
                 - name: Método CreateScaleTransform3D
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevice-createscaletransform3d
-                - name: Método CreateTransformwTransform
+                - name: Método CreateSkewTransform
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevice-createskewtransform
                 - name: Método CreateSurface
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevice-createsurface
@@ -283,7 +283,7 @@
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevice2-createscaletransform
                 - name: Método CreateScaleTransform3D
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevice2-createscaletransform3d
-                - name: Método CreateTransformwTransform
+                - name: Método CreateSkewTransform
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevice2-createskewtransform
                 - name: Método CreateSurface
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositiondevice2-createsurface
@@ -579,7 +579,7 @@
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform-setangle(float)
                     - name: Método SetAngle(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform-setangle(idcompositionanimation)
-                - name: Métodos SetCenterX
+                - name: Métodos setCenterX
                   href: idcompositionskewtransform-setcenterx-overloaded.md
                   items:
                     - name: Método SetCenterX(float)
@@ -634,7 +634,7 @@
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setaxisz(idcompositionanimation)
                     - name: Método SetAxisZ(IDCompositionAnimation)
                       href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionrotatetransform3d-setaxisz(idcompositionanimation)
-                - name: Métodos SetCenterX
+                - name: Métodos setCenterX
                   href: idcompositionrotatetransform3d-setcenterx-overloaded.md
                   items:
                     - name: Método SetCenterX(float)
@@ -658,7 +658,7 @@
             - name: IDCompositionScaleTransform
               href: /windows/desktop/api/dcomp/nn-dcomp-idcompositionscaletransform
               items:
-                - name: Métodos SetCenterX
+                - name: Métodos setCenterX
                   href: /previous-versions/windows/desktop/legacy/hh449036(v=vs.85)
                   items:
                     - name: Método SetCenterX(float)
@@ -952,7 +952,7 @@
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-addvisual
                 - name: Método RemoveAllVisuals
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-removeallvisuals
-                - name: RemoveVisual (método)
+                - name: Método RemoveVisual
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-removevisual
                 - name: Método SetBitmapInterpolationMode
                   href: /windows/desktop/api/dcomp/nf-dcomp-idcompositionvisual-setbitmapinterpolationmode
@@ -1068,3 +1068,5 @@
       href: directcomposition-code-samples.md
     - name: Glosario de DirectComposition
       href: directcomposition-glossary.md
+    - name: Reloj compositor
+      href: compositor-clock/compositor-clock.md

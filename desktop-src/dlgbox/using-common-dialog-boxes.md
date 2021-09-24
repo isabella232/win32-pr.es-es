@@ -7,12 +7,12 @@ keywords:
 - cuadros de diálogo comunes, mediante
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5da09fcc99cdde617c3fbdaf34e4465d9a768b0073c5dbd6d461a19060ca92bb
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 1d5652c87ab3a8549513f70512e17b344d99a3e2
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118985305"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128521272"
 ---
 # <a name="using-common-dialog-boxes"></a>Usar cuadros de diálogo comunes
 
@@ -33,7 +33,7 @@ En este tema se describe el código de ejemplo que muestra un **cuadro de** diá
 En este ejemplo se usa [**la estructura CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1) para inicializar el cuadro de diálogo de la siguiente manera:
 
 -   Inicializa el **miembro lpCustColors** con un puntero a una matriz estática de valores. Los colores de la matriz son inicialmente negros, pero la matriz estática conserva los colores personalizados creados por el usuario para las llamadas [**a ChooseColor**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85)) posteriores.
--   Establece la **marca CC \_ RGBINIT** e inicializa el miembro **rgbResult** para especificar el color que se selecciona inicialmente cuando se abre el cuadro de diálogo. Si no se especifica, la selección inicial es negra. En el ejemplo se usa la variable estática *rgbCurrent* para conservar el valor seleccionado entre llamadas [**a ChooseColor.**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85))
+-   Establece la **marca CC \_ RGBINIT** e inicializa el **miembro rgbResult** para especificar el color que se selecciona inicialmente cuando se abre el cuadro de diálogo. Si no se especifica, la selección inicial es negra. En el ejemplo se usa la variable estática *rgbCurrent* para conservar el valor seleccionado entre las llamadas [**a ChooseColor.**](/previous-versions/windows/desktop/legacy/ms646912(v=vs.85))
 -   Establece la **marca CC \_ FULLOPEN** para que siempre se muestre la extensión de colores personalizados del cuadro de diálogo.
 
 
@@ -105,9 +105,7 @@ if (ChooseFont(&cf)==TRUE)
 ## <a name="opening-a-file"></a>Apertura de un archivo
 
 > [!Note]  
-> A partir Windows Vista, el cuadro de diálogo Archivo común se ha reemplazado por el cuadro de diálogo Elemento común cuando se usa para abrir un archivo. Se recomienda usar Common Item Dialog API en lugar de Common File Dialog API. Para obtener más información, vea [Common Item Dialog](/windows/win32/shell/common-file-dialog).
-
- 
+> A partir Windows Vista, el cuadro de diálogo De archivo común se ha reemplazado por el cuadro de diálogo elemento común cuando se usa para abrir un archivo. Se recomienda usar Common Item Dialog API en lugar de Common File Dialog API. Para obtener más información, vea [Common Item Dialog](../shell/common-file-dialog.md).
 
 En este tema se describe  el código de ejemplo que muestra un cuadro de diálogo Abrir para que un usuario pueda especificar la unidad, el directorio y el nombre de un archivo que se va a abrir. El código de ejemplo inicializa primero una [**estructura OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) y, a continuación, llama a la [**función GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea) para mostrar el cuadro de diálogo.
 
@@ -350,7 +348,7 @@ BOOL CALLBACK PaintHook(HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 ## <a name="finding-text"></a>Buscar texto
 
-En este tema se describe el  código de ejemplo que muestra y administra un cuadro de diálogo Buscar para que el usuario pueda especificar los parámetros de una operación de búsqueda. El cuadro de diálogo envía mensajes al procedimiento de ventana para que pueda realizar la operación de búsqueda.
+En este tema se describe el código de ejemplo que muestra y administra un **cuadro** de diálogo Buscar para que el usuario pueda especificar los parámetros de una operación de búsqueda. El cuadro de diálogo envía mensajes al procedimiento de ventana para que pueda realizar la operación de búsqueda.
 
 El código para mostrar y administrar **un** cuadro de diálogo Reemplazar es similar, salvo que usa la [**función ReplaceText**](/windows/desktop/api/Commdlg/nf-commdlg-replacetexta) para mostrar el cuadro de diálogo. El **cuadro de** diálogo Reemplazar también envía mensajes en respuesta a los clics del usuario en los botones **Reemplazar** **y** Reemplazar todo.
 
@@ -427,9 +425,3 @@ if (message == uFindReplaceMsg)
     return 0; 
 }
 ```
-
-
-
- 
-
- 

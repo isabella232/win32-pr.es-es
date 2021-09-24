@@ -4,12 +4,12 @@ ms.assetid: bcbf8ae1-ed49-fdf7-812d-b2089537ab28
 title: Optimización de código con la biblioteca DirectXMath
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 263434b5e7295f630f284517299cec036b33b064d35dc5085a83d67c8244366a
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c88657115f026eee4c4ce8dd51075c03a50e272
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118984725"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520652"
 ---
 # <a name="code-optimization-with-the-directxmath-library"></a>Optimización de código con la biblioteca DirectXMath
 
@@ -63,7 +63,7 @@ Las versiones alineadas de los intrínsecos [SSE](/previous-versions/visualstudi
 
 Por este motivo, las operaciones de DirectXMath que usan [**objetos XMVECTOR**](xmvector-data-type.md) y [**XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) suponen que esos objetos tienen una alineación de 16 bytes. Esto es automático para las asignaciones basadas en la pila, si el código se compila en la biblioteca DirectXMath mediante la configuración recomendada del compilador Windows (vea Usar la compilación correcta [Configuración](#use-correct-compilation-settings)). Sin embargo, es importante asegurarse de que la asignación del montón que contiene objetos **XMVECTOR** y **XMMATRIX,** o las convierte a estos tipos, cumple estos requisitos de alineación.
 
-Aunque las asignaciones de memoria Windows de 64 bits están alineadas con 16 bytes, de forma predeterminada en las versiones de 32 bits de Windows la memoria asignada solo está alineada con 8 bytes. Para obtener información sobre cómo controlar la alineación de la memoria, [ \_ vea \_ malloc alineado.](https://docs.microsoft.com/cpp/c-runtime-library/reference/aligned-malloc)
+Aunque las asignaciones de memoria Windows de 64 bits están alineadas con 16 bytes, de forma predeterminada en las versiones de 32 bits de Windows la memoria asignada solo está alineada con 8 bytes. Para obtener información sobre cómo controlar la alineación de la memoria, [ \_ vea \_ malloc alineado.](/cpp/c-runtime-library/reference/aligned-malloc)
 
 Al usar tipos directXMath alineados con la biblioteca de plantillas estándar (STL), deberá proporcionar un asignador personalizado que garantice la alineación de 16 bytes. Consulte el [blog](https://devblogs.microsoft.com/cppblog/the-mallocator/) de Visual C++ Team para obtener un ejemplo de escritura de un asignador personalizado (en lugar de malloc/free, querrá usar malloc alineado y alineado libremente en \_ la \_ \_ \_ implementación).
 
@@ -78,7 +78,7 @@ Por comodidad, una serie de tipos como [**XMVECTOR**](xmvector-data-type.md) y [
 
 ## <a name="denormals"></a>Desnormalizados
 
-Para admitir cálculos cercanos a 0, el estándar de punto flotante IEEE 754 incluye compatibilidad con el subdesbordmiento gradual. El subdesbordmiento gradual se implementa mediante el uso de valores desnormalizados y muchas implementaciones de hardware son lentas al controlar desnormales. Una optimización que se debe tener en cuenta es deshabilitar el control de desnormales para las operaciones de vector usadas por DirectXMath.
+Para admitir cálculos cercanos a 0, el estándar de punto flotante IEEE 754 incluye compatibilidad con el subdesbordmiento gradual. El subdesborde gradual se implementa mediante el uso de valores desnormalizados, y muchas implementaciones de hardware son lentas al controlar desnormales. Una optimización que se debe tener en cuenta es deshabilitar el control de desnormales para las operaciones vectoriales que usa DirectXMath.
 
 El cambio del control de los desnormales se realiza mediante el uso de la rutina del [ \_ equipo \_ ](/cpp/c-runtime-library/reference/controlfp-s) de control en una base previa al subproceso y puede dar lugar a mejoras de rendimiento. Use este código para cambiar el control de los desnormales:
 
@@ -92,7 +92,7 @@ El cambio del control de los desnormales se realiza mediante el uso de la rutina
 
 
 > [!Note]  
-> En versiones de 64 bits de Windows, las instrucciones [de SSE](/previous-versions/visualstudio/visual-studio-2010/t467de55(v=vs.100)) se usan para todos los cálculos, no solo para las operaciones de vector. Cambiar el control desnormal afecta a todos los cálculos de punto flotante del programa, no solo a las operaciones de vector usadas por DirectXMath.
+> En las versiones de 64 bits de Windows, las instrucciones [de SSE](/previous-versions/visualstudio/visual-studio-2010/t467de55(v=vs.100)) se usan para todos los cálculos, no solo para las operaciones de vector. Cambiar el control desnormal afecta a todos los cálculos de punto flotante del programa, no solo a las operaciones de vector usadas por DirectXMath.
 
  
 
@@ -100,7 +100,7 @@ El cambio del control de los desnormales se realiza mediante el uso de la rutina
 
 DirectXMath admite vectores de 4 valores de punto flotante de precisión sencilla o cuatro valores de 32 bits (con o sin signo).
 
-Dado que los conjuntos de instrucciones usados para implementar la biblioteca DirectXMath tienen la capacidad de tratar los mismos datos que varios tipos diferentes(por ejemplo, tratar el mismo vector que los datos de punto flotante y entero) se pueden lograr optimizaciones determinadas. Puede obtener estas optimizaciones mediante las rutinas de inicialización de vector entero y los operadores de bits para manipular valores de punto flotante.
+Dado que los conjuntos de instrucciones usados para implementar la biblioteca DirectXMath tienen la capacidad de tratar los mismos datos que varios tipos diferentes(por ejemplo, tratar el mismo vector que los datos de punto flotante y entero) se pueden lograr optimizaciones determinadas. Puede obtener estas optimizaciones mediante las rutinas de inicialización de vectores enteros y los operadores de bits para manipular valores de punto flotante.
 
 El formato binario de números de punto flotante de precisión sencilla que usa la biblioteca DirectXMath se ajusta completamente al estándar IEEE 764:
 
@@ -110,7 +110,7 @@ El formato binario de números de punto flotante de precisión sencilla que usa 
      1 bit   8 bits     23 bits
 ```
 
-Al trabajar con el número de punto flotante de precisión sencilla IEEE 764, es importante tener en cuenta que algunas representaciones tienen un significado especial (es decir, no se ajustan a la descripción anterior). Algunos ejemplos son los siguientes:
+Al trabajar con el número de punto flotante de precisión sencilla IEEE 764, es importante tener en cuenta que algunas representaciones tienen un significado especial (es decir, no se ajustan a la descripción anterior). Algunos ejemplos son:
 
 -   Cero positivo es 0
 -   Cero negativo es 0x80000000
@@ -127,9 +127,9 @@ Existe un formulario de plantilla para [**XMVectorSwechle,**](/windows/win32/api
 Un uso común de DirectXMath es realizar cálculos gráficos para usarlos con Direct3D. Con Direct3D 10.x y Direct3D 11.x, puede usar la biblioteca DirectXMath de estas maneras directas:
 
 -   Use las [](ovw-xnamath-reference-constants.md) constantes de espacio de nombres Colors directamente en el *parámetro ColorRGBA* en una llamada al método [**ID3D11DeviceContext::ClearRenderTargetView**](/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-clearrendertargetview) o [**ID3D10Device::ClearRenderTargetView.**](/windows/win32/api/d3d10/nf-d3d10-id3d10device-clearrendertargetview) Para Direct3D 9, debe convertir al tipo [**XMCOLOR**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmcolor) para usarlo como parámetro *Color* en una llamada al método [**IDirect3DDevice9::Clear.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-clear)
--   Use los [**tipos XMFLOAT4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4) / [**XMVECTOR**](xmvector-data-type.md) y [**XMFLOAT4X4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x4)XMMATRIX para configurar estructuras de búfer constante para la referencia de los tipos / [](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) HLSL [**float4**](../direct3dhlsl/dx-graphics-hlsl-scalar.md) o [**matrix**](../direct3dhlsl/dx-graphics-hlsl-matrix.md)/float4x4.
+-   Use los [**tipos XMFLOAT4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4) / [**XMVECTOR**](xmvector-data-type.md) y [**XMFLOAT4X4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x4)XMMATRIX para configurar estructuras de búfer constante para la referencia de los tipos / [](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) HLSL [**float4**](../direct3dhlsl/dx-graphics-hlsl-scalar.md) o [**matriz**](../direct3dhlsl/dx-graphics-hlsl-matrix.md)/float4x4.
     > [!Note]  
-    > [**XMFLOAT4X4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x4) / [**Los tipos XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) están en formato de fila principal. Por lo tanto, si usa el modificador del compilador /Zpr (la marca de compilación [**D3DCOMPILE \_ PACK MATRIX COLUMN \_ \_ \_ MAJOR)**](../direct3dhlsl/d3dcompile-constants.md) u omite la palabra clave principal de fila al declarar el tipo de matriz en \_ HLSL, debe transponer la matriz al establecerla en el búfer constante. [](../direct3dhlsl/dx-graphics-hlsl-appendix-keywords.md)
+    > [**XMFLOAT4X4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4x4) / [**Los tipos XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) están en formato principal de fila. Por lo tanto, si usa el modificador del compilador /Zpr (la marca de compilación [**D3DCOMPILE \_ PACK MATRIX COLUMN \_ \_ \_ MAJOR)**](../direct3dhlsl/d3dcompile-constants.md) u omite la palabra clave principal de fila al declarar el tipo de matriz en \_ HLSL, debe transponer la matriz al establecerla en el búfer constante. [](../direct3dhlsl/dx-graphics-hlsl-appendix-keywords.md)
 
      
 
@@ -141,7 +141,3 @@ Un uso común de DirectXMath es realizar cálculos gráficos para usarlos con Di
 
 [Guía de programación de DirectXMath](ovw-xnamath-progguide.md)
 </dt> </dl>
-
- 
-
- 

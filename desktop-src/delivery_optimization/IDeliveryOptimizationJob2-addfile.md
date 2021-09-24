@@ -1,6 +1,6 @@
 ---
 title: Método AddFile IDeliveryOptimizationJob2
-description: El método AddFile agrega un único archivo a un trabajo de DO existente.
+description: El método AddFile agrega un único archivo a un trabajo Optimización de distribución existente.
 keywords:
 - AddFile (método)
 - Método AddFile, interfaz IDeliveryOptimizationJob2
@@ -16,16 +16,16 @@ api_type:
 ms.topic: reference
 ms.date: 01/18/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e6d27bca855bb9c719b485060fabf1f10b7130bd864569e74f98516ca76b8fb1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 217215d6f4aaf96de8deab37d08cc492392c0631
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118544640"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128519897"
 ---
 # <a name="ideliveryoptimizationjob2addfilewithranges-method"></a>Método IDeliveryOptimizationJob2::AddFileWithRanges
 
-El método AddFile agrega un único archivo a un trabajo de DO existente.
+El método AddFile agrega un único archivo a un trabajo Optimización de distribución existente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -54,7 +54,7 @@ Cadena de identificador de archivo, que identifica de forma única el archivo qu
 *remoteUrl* \[ En\]
 </dt> <dd>
 
-La dirección URL del archivo que do intentará conectarse para descargar el archivo.
+La dirección URL del Optimización de distribución intentará conectarse para descargar el archivo.
 
 </dd> <dt>
 
@@ -92,12 +92,12 @@ Este método devuelve S_OK correcto o uno de los valores HRESULT estándar en ca
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Valor |
+| Requisito | Value |
 |---------------------------|---------------------------------------------------------------------------------|
 | Cliente mínimo compatible  | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]                                  |
 | Servidor mínimo compatible  | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]                              |
-| Header                    | Deliveryoptimization.h                                                          |
-| Idl                       | DeliveryOptimization.idl                                                        |
+| Encabezado                    | Deliveryoptimization.h                                                          |
+| IDL                       | DeliveryOptimization.idl                                                        |
 | Biblioteca                   | Dosvc.lib                                                                       |
 | Archivo DLL                       | Dosvc.dll                                                                       |
 | IID                       | IID_IDeliveryOptimizationJob se define como EE2584CF-A69C-4848-B633-2649962B3EF7 |

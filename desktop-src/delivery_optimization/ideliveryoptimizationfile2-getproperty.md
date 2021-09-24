@@ -1,6 +1,6 @@
 ---
 title: IDeliveryOptimizationFile2::GetProperty (método)
-description: Este método devuelve una sola propiedad del archivo DO. | IDeliveryOptimizationFile2::GetProperty (método)
+description: Este método devuelve una sola propiedad del Optimización de distribución archivo. | IDeliveryOptimizationFile2::GetProperty (método)
 keywords:
 - Método GetProperty
 - Método GetProperty, interfaz IDeliveryOptimizationFile2
@@ -16,16 +16,16 @@ api_type:
 ms.topic: reference
 ms.date: 01/18/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d0f181eebe2aff8ccbbbf6d5400e3d5a78f123e2304567a413ecf4a35357229b
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: b3b89c054d1d45023a0237aa6f1f3e186c2c836e
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118542095"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520966"
 ---
 # <a name="ideliveryoptimizationfile2getproperty-method"></a>IDeliveryOptimizationFile2::GetProperty (método)
 
-Este método devuelve una sola propiedad del archivo DO.
+Este método devuelve una sola propiedad del Optimización de distribución archivo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,12 +68,12 @@ Este método devuelve los siguientes valores HRESULT.
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Valor |
+| Requisito | Value |
 |---------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible  | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]                                   |
 | Servidor mínimo compatible  | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]                               |
-| Header                    | Deliveryoptimization.h                                                           |
-| Idl                       | DeliveryOptimization.idl                                                         |
+| Encabezado                    | Deliveryoptimization.h                                                           |
+| IDL                       | DeliveryOptimization.idl                                                         |
 | Biblioteca                   | Dosvc.lib                                                                        |
 | Archivo DLL                       | Dosvc.dll                                                                        |
 | IID                       | IID_IDeliveryOptimizationJob2 se define como 18995A26-BF59-4MIENTO-9F8B-D5092D5A2405 |

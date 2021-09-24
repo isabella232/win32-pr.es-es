@@ -1,6 +1,6 @@
 ---
 title: Método IBackgroundCopyJob SetNotifyInterface (Deliveryoptimization.h)
-description: Identifica la implementación de la interfaz IBackgroundCopyCallback que se debe realizar. Use la interfaz IBackgroundCopyCallback para recibir notificaciones de eventos relacionados con el trabajo.
+description: Identifica la implementación de la interfaz IBackgroundCopyCallback que se Optimización de distribución. Use la interfaz IBackgroundCopyCallback para recibir notificaciones de eventos relacionados con el trabajo.
 ms.assetid: 792211FC-440E-4D2C-A6C7-CE9EFB86571C
 keywords:
 - Método SetNotifyInterface
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bd54255d87ee3f15f87d692e06b7a503e773634ab4ec30c3f388388233aab2b9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 66d7f8d10ff08bf95a9477f91dcc4e3f43469a6a
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119793415"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128519846"
 ---
 # <a name="ibackgroundcopyjobsetnotifyinterface-method"></a>IBackgroundCopyJob::SetNotifyInterface (método)
 
-Identifica la implementación de la interfaz [**IBackgroundCopyCallback**](ibackgroundcopycallback.md) que se debe realizar. Use la **interfaz IBackgroundCopyCallback para** recibir notificaciones de eventos relacionados con el trabajo.
+Identifica la implementación de la interfaz [**IBackgroundCopyCallback**](ibackgroundcopycallback.md) que se Optimización de distribución. Use la **interfaz IBackgroundCopyCallback para** recibir notificaciones de eventos relacionados con el trabajo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -68,7 +68,7 @@ Este método devuelve los siguientes **valores HRESULT,** así como otros.
 
 Llame a este método solo si implementa la [**interfaz IBackgroundCopyCallback.**](ibackgroundcopycallback.md) Use el **método SetNotifyInterface** junto con el método [**SetNotifyFlags**](ibackgroundcopyjob-setnotifyflags.md) para especificar el tipo de notificación que desea recibir.
 
-La interfaz de notificación deja de ser válida cuando finaliza la aplicación; DO no conserva la interfaz de notificación. Como resultado, el proceso de inicialización de la aplicación debe llamar al método **SetNotifyInterface** en los trabajos existentes para los que desea recibir la notificación. Si necesita capturar la información de estado y progreso que se ha producido desde la última vez que se ha ejecutado la aplicación, sondee la información de estado y progreso durante la inicialización de la aplicación.
+La interfaz de notificación deja de ser válida cuando finaliza la aplicación; Optimización de distribución no conserva la interfaz de notificación. Como resultado, el proceso de inicialización de la aplicación debe llamar al método **SetNotifyInterface** en los trabajos existentes para los que desea recibir la notificación. Si necesita capturar información de estado y progreso que se produjo desde la última vez que se ha ejecutado la aplicación, sondee la información de estado y progreso durante la inicialización de la aplicación.
 
 Solo el propietario o creador del trabajo o un administrador pueden registrarse para recibir notificaciones.
 
@@ -76,19 +76,19 @@ Solo el propietario o creador del trabajo o un administrador pueden registrarse 
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | Archivo DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyJob se define como 37668D37-507E-4160-9316-26306D150B12<br/>               |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

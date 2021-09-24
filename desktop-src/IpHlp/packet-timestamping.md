@@ -1,14 +1,14 @@
 ---
 title: Marca de tiempo de paquetes
-description: Las API de marca de tiempo de paquetes del asistente de IP proporcionan la capacidad de determinar la funcionalidad de marca de tiempo de un adaptador de red y consultar marcas de tiempo del adaptador de red en forma de marcas de tiempo cruzadas.
+description: Las API de marca de tiempo de paquetes del asistente de IP proporcionan la capacidad de determinar la funcionalidad de marca de tiempo de un adaptador de red y de consultar marcas de tiempo desde el adaptador de red en forma de marcas de tiempo cruzadas.
 ms.topic: article
 ms.date: 01/19/2021
-ms.openlocfilehash: 12da7189dbae5f38085cdf4ad5f8e9ac1214cff7ddd0b683ecd97b70b2786c51
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 09fde15293fee21bc61fd02c307e2bc4d13800ce
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119146638"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128519638"
 ---
 # <a name="packet-timestamping"></a>Marca de tiempo de paquetes
 
@@ -18,45 +18,45 @@ Muchas tarjetas de interfaz de red (NIC o adaptadores de red) pueden generar una
 
 Las marcas de tiempo se pueden usar, por ejemplo, para calcular el tiempo empleado por un paquete dentro de la pila de red de la máquina antes de enviarse o recibirse desde la conexión. PtP puede usar esos cálculos para mejorar la precisión de la sincronización de la hora. La compatibilidad con la marca de tiempo de paquetes de los adaptadores de red está orientada a veces específicamente para el protocolo PTP. En otros casos, se proporciona soporte técnico más general.
 
-Las API de marca de tiempo Windows la capacidad de admitir la funcionalidad de marca de tiempo de hardware de los adaptadores de red para el protocolo PTP versión 2. En general, las características incluyen proporcionar la capacidad a los controladores de adaptadores de red para admitir marcas de tiempo y para que las aplicaciones en modo de usuario consuman marcas de tiempo asociadas a paquetes a través de [sockets de Windows](/windows/win32/winsock/windows-sockets-start-page-2) (consulte Marca de tiempo [winsock](/windows/win32/winsock/winsock-timestamping)). Además, también está disponible la capacidad de generar marcas de tiempo de software, lo que permite que un controlador de red genere marcas de tiempo en el software. Estos marcas de tiempo de software se generan mediante controladores NIC mediante el equivalente en modo kernel [**de QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) (QPC). Sin embargo, no se admite la *habilitación conjunta* de marcas de tiempo de hardware y software.
+Las API de marca de tiempo Windows la capacidad de admitir la funcionalidad de marca de tiempo de hardware de los adaptadores de red para el protocolo PTP versión 2. En general, las características incluyen proporcionar la capacidad de los controladores de adaptadores de red para admitir marcas de tiempo y para que las aplicaciones en modo de usuario consuman marcas de tiempo asociadas a los paquetes a través de [sockets](../winsock/windows-sockets-start-page-2.md) de Windows (consulte Marcas de tiempo de [Winsock](../winsock/winsock-timestamping.md)). Además, también está disponible la capacidad de generar marcas de tiempo de software, lo que permite que un controlador de red genere marcas de tiempo en el software. Estos controladores NIC generan estas marcas de tiempo de software mediante el equivalente en modo kernel [**de QueryPerformanceCounter**](/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter) (QPC). Sin embargo, no se admite tener *las marcas* de tiempo de hardware y software habilitadas juntas.
 
-En concreto, las API de marca de tiempo de paquetes del Asistente de protocolos de Internet (asistente de IP) descritas en este tema proporcionan la capacidad de las aplicaciones en modo de usuario para determinar la funcionalidad de marca de tiempo de un adaptador de red y para consultar marcas de tiempo del adaptador de red en forma de marcas de tiempo cruzadas (que se describen a continuación).
+En concreto, las API de marca de tiempo de paquetes del asistente de protocolos de Internet (asistente de IP) que se describen en este tema proporcionan la capacidad de las aplicaciones en modo de usuario para determinar la funcionalidad de marca de tiempo de un adaptador de red y para consultar marcas de tiempo desde el adaptador de red en forma de marcas de tiempo cruzadas (que se describen a continuación).
 
 ## <a name="supporting-precision-time-protocol-version-2"></a>Compatibilidad con el protocolo de tiempo de precisión versión 2
 
-Como se mencionó, el objetivo principal de la compatibilidad con la marca de tiempo en Windows es admitir el protocolo Precision Time Protocol versión 2 (PTPv2). En PTPv2, no todos los mensajes necesitan una marca de tiempo. En concreto, los mensajes de eventos PTP usan marcas de tiempo. Actualmente, el ámbito de la compatibilidad es PTPv2 a través del Protocolo de datagramas de usuario (UDP). No se admite PTP a través de Ethernet sin procesar.
+Como se mencionó, el objetivo principal de la compatibilidad con la marca de tiempo en Windows es admitir el protocolo Precision Time Protocol versión 2 (PTPv2). Dentro de PTPv2, no todos los mensajes necesitan una marca de tiempo. En concreto, los mensajes de eventos PTP usan marcas de tiempo. Actualmente, el ámbito de la compatibilidad es PTPv2 a través del Protocolo de datagramas de usuario (UDP). No se admite PTP a través de Ethernet sin formato.
 
-La marca de tiempo es compatible con PTPv2 que funciona en *modo de dos* pasos. *2* paso hace referencia al modo en el que las marcas de tiempo reales de los paquetes PTP no se generan sobre la marcha en el hardware, sino que se recuperan del hardware y se transmiten como mensajes independientes (por ejemplo, mediante un mensaje de seguimiento).
+La marca de tiempo es compatible con PTPv2 que funciona en *modo de 2* pasos. *2* paso hace referencia al modo en el que las marcas de tiempo reales de los paquetes PTP no se generan sobre la marcha en el hardware, sino que se recuperan del hardware y se transmiten como mensajes independientes (por ejemplo, mediante un mensaje de seguimiento).
 
 En resumen, puede usar las API de marca de tiempo de paquetes del asistente de protocolos de Internet (asistente de IP), junto con la compatibilidad con marcas de tiempo de Winsock, en una aplicación PTPv2 para mejorar su precisión de sincronización de hora.
 
 ## <a name="retrieving-the-timestamping-capabilities-of-a-network-adapter"></a>Recuperación de las funcionalidades de marca de tiempo de un adaptador de red
 
-Una aplicación como un servicio de sincronización de hora PTP debe determinar la funcionalidad de marca de tiempo de un adaptador de red. Con las funcionalidades recuperadas, la aplicación puede decidir si quiere o no usar marcas de tiempo.
+Una aplicación como un servicio de sincronización de hora de PTP debe determinar la funcionalidad de marca de tiempo de un adaptador de red. Con las funcionalidades recuperadas, la aplicación puede decidir si quiere o no usar marcas de tiempo.
 
-Incluso si un adaptador de red *admite* marcas de tiempo, es necesario mantener desactivada la capacidad de forma predeterminada. Un adaptador activa la marca de tiempo cuando se le indica que lo haga. Windows proporciona API para que una aplicación recupere la funcionalidad del hardware, así como qué funcionalidades están activadas.
+Incluso si un adaptador de *red admite* marcas de tiempo, es necesario mantener la capacidad desactivada de forma predeterminada. Un adaptador activa la marca de tiempo cuando se le indica que lo haga. Windows proporciona API para que una aplicación recupere la funcionalidad del hardware, así como qué funcionalidades están activadas.
 
 Para recuperar las funcionalidades de marca de tiempo admitidas de un adaptador de red, llame a la función [**GetInterfaceSupportedTimestampCapabilities,**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfacesupportedtimestampcapabilities) proporcionando el identificador único local (LUID) del adaptador de red y, a cambio, recuperando las funcionalidades de marca de tiempo admitidas en forma de [**un objeto INTERFACE_TIMESTAMP_CAPABILITIES.**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_timestamp_capabilities)
 
-El código devuelto por **GetInterfaceSupportedTimestampCapabilities** indica si la llamada se ha  producido correctamente y si se ha recuperado o no un valor INTERFACE_TIMESTAMP_CAPABILITIES rellenado.
+El código devuelto por **GetInterfaceSupportedTimestampCapabilities** indica si la llamada se ha  producido correctamente o no, y si se ha recuperado un valor INTERFACE_TIMESTAMP_CAPABILITIES rellenado.
 
 Para recuperar las funcionalidades de marca de tiempo habilitadas actualmente de un adaptador de red, llame a la función [**GetInterfaceActiveTimestampCapabilities,**](/windows/win32/api/iphlpapi/nf-iphlpapi-getinterfaceactivetimestampcapabilities) proporcionando el identificador único local (LUID) del adaptador de red y, a cambio, recuperando las funcionalidades de marca de tiempo habilitadas en forma de [**un objeto INTERFACE_TIMESTAMP_CAPABILITIES.**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_timestamp_capabilities)
 
-De nuevo, el código devuelto de **GetInterfaceActiveTimestampCapabilities** indica que se ha producido un error o correcto, y si se ha recuperado o **no** un valor INTERFACE_TIMESTAMP_CAPABILITIES válido.
+De nuevo, el código devuelto desde **GetInterfaceActiveTimestampCapabilities** indica que  se ha producido un error o se ha recuperado un valor INTERFACE_TIMESTAMP_CAPABILITIES válido.
 
-Los adaptadores de red pueden admitir una variedad de funcionalidades de marca de tiempo. Por ejemplo, algunos adaptadores pueden crear marcas de tiempo en cada paquete durante el envío y la recepción, mientras que otros solo admiten paquetes PTPv2. La [**INTERFACE_TIMESTAMP_CAPABILITIES**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_timestamp_capabilities) describe las funcionalidades exactas que admite un adaptador de red.
+Los adaptadores de red pueden admitir una variedad de funcionalidades de marca de tiempo. Por ejemplo, algunos adaptadores pueden crear marcas de tiempo de cada paquete durante el envío y la recepción, mientras que otros solo admiten paquetes PTPv2. La [**INTERFACE_TIMESTAMP_CAPABILITIES**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_timestamp_capabilities) describe las funcionalidades exactas que admite un adaptador de red.
 
 ## <a name="retrieving-cross-timestamps-from-a-network-adapter"></a>Recuperación de marcas de tiempo cruzadas desde un adaptador de red
 
-Cuando se usan marcas de tiempo de hardware, una aplicación PTP debe establecer una relación (por ejemplo, mediante técnicas matemáticas adecuadas) entre el reloj de hardware del adaptador de red y un reloj del sistema. Esto es necesario para que un valor que representa una hora de la unidad de un reloj se pueda convertir en la unidad de otro reloj. Se proporcionan marcas de tiempo cruzadas para este propósito y la aplicación puede muestrear marcas de tiempo cruzadas periódicamente para establecer dicha relación.
+Cuando se usan marcas de tiempo de hardware, una aplicación PTP debe establecer una relación (por ejemplo, mediante técnicas matemáticas adecuadas) entre el reloj de hardware del adaptador de red y un reloj del sistema. Esto es necesario para que un valor que representa una hora de la unidad de un reloj se pueda convertir en la unidad de otro reloj. Las marcas de tiempo cruzadas se proporcionan para este propósito y la aplicación puede muestrear marcas de tiempo cruzadas periódicamente para establecer dicha relación.
 
-Para ello, llame a la función [**CaptureInterfaceHardwareCrossTimestamp,**](/windows/win32/api/iphlpapi/nf-iphlpapi-captureinterfacehardwarecrosstimestamp) proporcionando el identificador único local (LUID) del adaptador de red y, a cambio, recuperando la marca de tiempo del adaptador de red en forma de un [**objeto INTERFACE_HARDWARE_CROSSTIMESTAMP.**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_hardware_crosstimestamp)
+Para ello, llame a la función [**CaptureInterfaceHardwareCrossTimestamp,**](/windows/win32/api/iphlpapi/nf-iphlpapi-captureinterfacehardwarecrosstimestamp) proporcionando el identificador único local (LUID) del adaptador de red y, a cambio, recuperando la marca de tiempo del adaptador de red en forma de [**un objeto INTERFACE_HARDWARE_CROSSTIMESTAMP.**](/windows/win32/api/iphlpapi/ns-iphlpapi-interface_hardware_crosstimestamp)
 
 ## <a name="timestamp-capability-change-notifications"></a>Notificaciones de cambio de funcionalidad de marca de tiempo
 
-Para recibir una notificación si cambian las funciones de marca de tiempo de un adaptador de red, llame a la función [**RegisterInterfaceTimestampConfigChange**](/windows/win32/api/iphlpapi/nf-iphlpapi-registerinterfacetimestampconfigchange) y proporcione un puntero a la función de devolución de llamada que ha implementado, junto con un contexto opcional asignado por el autor de la llamada.
+Para recibir una notificación en caso de que cambien las funciones de marca de tiempo de un adaptador de red, llame a la función [**RegisterInterfaceTimestampConfigChange**](/windows/win32/api/iphlpapi/nf-iphlpapi-registerinterfacetimestampconfigchange) y proporcione un puntero a la función de devolución de llamada que ha implementado, junto con un contexto opcional asignado por el autor de la llamada.
 
-**RegisterInterfaceTimestampConfigChange** devuelve un identificador que puede pasar posteriormente a [**UnregisterInterfaceTimestampConfigChange**](/windows/win32/api/iphlpapi/nf-iphlpapi-unregisterinterfacetimestampconfigchange) para anular el registro de la función de devolución de llamada.
+**RegisterInterfaceTimestampConfigChange** devuelve un identificador que se puede pasar posteriormente a [**UnregisterInterfaceTimestampConfigChange**](/windows/win32/api/iphlpapi/nf-iphlpapi-unregisterinterfacetimestampconfigchange) para anular el registro de la función de devolución de llamada.
 
 ## <a name="code-example-1mdashretrieving-timestamp-capabilities-and-cross-timestamps"></a>Ejemplo de código 1: &mdash; recuperación de funcionalidades de marca de tiempo y marcas de tiempo cruzadas
 

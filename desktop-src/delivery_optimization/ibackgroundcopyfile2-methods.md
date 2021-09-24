@@ -1,17 +1,17 @@
 ---
-title: Métodos IBackgroundCopyFile2 (DO)
-description: La interfaz IBackgroundCopyFile2 expone los métodos siguientes. | Métodos IBackgroundCopyFile2 (DO)
+title: Métodos IBackgroundCopyFile2 (Optimización de distribución)
+description: La interfaz IBackgroundCopyFile2 expone los métodos siguientes. | Métodos IBackgroundCopyFile2 (Optimización de distribución)
 ms.assetid: AD6AA1B9-A308-414E-BFC6-7B42CEC3A1AE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 265a7e2d0f426ee2d7e2061dfeec62e42e4a38a7d6db0fb4888f1d2a76c91702
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 9c7eb100d7fa38a7da5384a06abd073242105b5d
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119755585"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128521332"
 ---
-# <a name="ibackgroundcopyfile2-methods-do"></a>Métodos IBackgroundCopyFile2 (DO)
+# <a name="ibackgroundcopyfile2-methods-delivery-optimization"></a>Métodos IBackgroundCopyFile2 (Optimización de distribución)
 
 La [**interfaz IBackgroundCopyFile2**](ibackgroundcopyfile2.md) expone los métodos siguientes.
 

@@ -1,6 +1,6 @@
 ---
 title: D3DX12_MESH_SHADER_PIPELINE_STATE_DESC estructura (D3dx12.h)
-description: Para [los sombreadores mesh/amplifications](https://microsoft.github.io/DirectX-Specs/d3d/MeshShader.html), puede usar los datos de [effectPipelineStateDescription](https://github.com/Microsoft/DirectXTK12/wiki/EffectPipelineStateDescription), con **D3DX12_MESH_SHADER_PIPELINE_STATE_DESC**, para proporcionar todo el estado.
+description: En [el caso de los sombreadores mesh/amplifications](https://microsoft.github.io/DirectX-Specs/d3d/MeshShader.html), puede usar los datos de [effectPipelineStateDescription](https://github.com/Microsoft/DirectXTK12/wiki/EffectPipelineStateDescription), con **D3DX12_MESH_SHADER_PIPELINE_STATE_DESC**, para proporcionar todo el estado.
 keywords:
 - D3DX12_MESH_SHADER_PIPELINE_STATE_DESC estructura
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 08/02/2021
-ms.openlocfilehash: 99ffe747a6cd916f82e3d2ae52f9fa368203da91
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.openlocfilehash: 59601833259279d6086c35f075f800e666f04aef
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127570884"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520093"
 ---
 # <a name="d3dx12_mesh_shader_pipeline_state_desc-structure"></a>D3DX12_MESH_SHADER_PIPELINE_STATE_DESC estructura
 
-Para [los sombreadores mesh/amplifications](https://microsoft.github.io/DirectX-Specs/d3d/MeshShader.html), puede usar los datos de [effectPipelineStateDescription](https://github.com/Microsoft/DirectXTK12/wiki/EffectPipelineStateDescription), con **D3DX12_MESH_SHADER_PIPELINE_STATE_DESC**, para proporcionar todo el estado.
+En [el caso de los sombreadores mesh/amplifications](https://microsoft.github.io/DirectX-Specs/d3d/MeshShader.html), puede usar los datos de [effectPipelineStateDescription](https://github.com/Microsoft/DirectXTK12/wiki/EffectPipelineStateDescription), con **D3DX12_MESH_SHADER_PIPELINE_STATE_DESC**, para proporcionar todo el estado.
 
 Consulte también [CD3DX12_PIPELINE_STATE_STREAM2](cd3dx12-pipeline-state-stream1.md).
 
@@ -53,7 +53,7 @@ struct D3DX12_MESH_SHADER_PIPELINE_STATE_DESC
 };
 ```
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 `pRootSignature`
 
@@ -87,7 +87,7 @@ Describe el estado de mezcla.
 
 `SampleMask`
 
-Tipo: **[UINT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[UINT](../winprog/windows-data-types.md)**
 
 Máscara de ejemplo para el estado de mezcla.
 
@@ -111,9 +111,9 @@ Describe el tipo y el orden de los datos primitivos.
 
 `NumRenderTargets`
 
-Tipo: **[UINT](/windows/win32/winprog/windows-data-types)**
+Tipo: **[UINT](../winprog/windows-data-types.md)**
 
-Número de formatos de destino de representación en *el miembro RTVFormats.*
+Número de formatos de destino de representación en el *miembro RTVFormats.*
 
 `RTVFormats`
 

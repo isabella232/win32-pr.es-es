@@ -1,6 +1,6 @@
 ---
 title: MDM_RemoteWipe clase
-description: La clase MDM \_ RemoteWipe permite el borrado remoto de un dispositivo.
+description: La clase \_ RemoteWipe de MDM permite un borrado remoto de un dispositivo.
 ms.assetid: 8c7c8705-8694-4ce3-ba21-ca610fe1f547
 keywords:
 - MDM_RemoteWipe clase
@@ -17,18 +17,19 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 800d59ad1b2bc281027e3181faa7ff33103bd1e934584bbc91e3d34bd7cea5d9
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 6ca943ed0b226f9006733b3e9d8745172cfe9e08
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119587835"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520062"
 ---
-# <a name="mdm_remotewipe-class"></a>\_Mdm RemoteWipe (clase)
+# <a name="mdm_remotewipe-class"></a>\_Clase RemoteWipe de MDM
 
-\[Parte de la información está relacionada con el producto publicado previamente que se puede modificar considerablemente antes de su lanzamiento comercial. Microsoft no otorga ninguna garantía, explícita o implícita, con respecto a la información proporcionada aquí.\]
+> [!NOTE]
+> **Parte de la información hace referencia al producto de versión preliminar, el cual puede sufrir importantes modificaciones antes de que se publique la versión comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.**
 
-La **clase MDM \_ RemoteWipe** permite el borrado remoto de un dispositivo.
+La **clase \_ RemoteWipe** de MDM permite un borrado remoto de un dispositivo.
 
 La siguiente sintaxis se simplifica desde el código de Managed Object Format (MOF) e incluye todas las propiedades heredadas.
 
@@ -45,24 +46,21 @@ class MDM_RemoteWipe
 
 ## <a name="members"></a>Miembros
 
-La **clase \_ Mdm RemoteWipe** tiene estos tipos de miembros:
+La **clase \_ RemoteWipe** mdm tiene estos tipos de miembros:
 
 -   [Métodos](#methods)
 -   [Propiedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-La **clase \_ Mdm RemoteWipe** tiene estos métodos.
-
-
+La **clase \_ RemoteWipe de MDM** tiene estos métodos.
 
 | Método                                              | Descripción                                              |
 |:----------------------------------------------------|:---------------------------------------------------------|
-| [**doWipeMethod**](mdm-remotewipe-dowipemethod.md) | Desencadena el dispositivo para iniciar el borrado remoto.<br/> |
-
-
-
- 
+| [**doWipeMethod**](mdm-remotewipe-dowipemethod.md) | Desencadena el dispositivo para iniciar el borrado remoto. |
+| [**doWipePersistProvisionedDataMethod**](mdm-remotewipe-dowipepersistprovisioneddatamethod.md) | Desencadena el dispositivo para realizar una copia de seguridad de los datos de aprovisionamiento en una ubicación persistente y realizar un borrado remoto en el dispositivo. La información de la que se ha hecho una copia de seguridad se restaurará y se aplicará al dispositivo cuando se reanude. |
+| [**doWipePersistUserDataMethod**](mdm-remotewipe-dowipepersistuserdatamethod.md) | Desencadena el dispositivo para iniciar el borrado remoto mientras se conservan los datos y las cuentas de usuario. |
+| [**doWipeProtectedMethod**](mdm-remotewipe-dowipeprotectedmethod.md) | Desencadena el dispositivo para iniciar el borrado remoto en el dispositivo y limpiar completamente la unidad interna. En algunas configuraciones de dispositivo, este comando puede dejar que el dispositivo no pueda arrancar. |
 
 ### <a name="properties"></a>Propiedades
 
@@ -79,7 +77,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Identifica el nombre del nodo primario. Para esta clase, la cadena es "RemoteWipe".
@@ -95,7 +93,7 @@ Tipo de datos: **cadena**
 Tipo de acceso: solo lectura
 </dt> <dt>
 
-Calificadores: [ **key**](/windows/desktop/WmiSdk/key-qualifier)
+Calificadores: [ **clave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 Describe la ruta de acceso completa al nodo primario. Para esta clase, la cadena es "./Vendor/MSFT/"
@@ -108,8 +106,6 @@ En el ejemplo siguiente se muestra cómo usar RemoteWipe e invocar doWipeMethod.
 
 > [!Note]  
 > Este ejemplo debe ejecutarse en el usuario del sistema local. Para ello, descargue la herramienta psexec desde y <https://technet.microsoft.com/sysinternals/bb897553.aspx> ejecute desde un símbolo del sistema de administración con `psexec.exe -i -s cmd.exe` privilegios elevados.
-
- 
 
 ``` syntax
 $namespaceName = "root\cimv2\mdm\dmmap"
@@ -135,24 +131,17 @@ catch [Exception]
 
 ## <a name="requirements"></a>Requisitos
 
-
-
 | Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | \[Windows 10 solo aplicaciones de escritorio\]<br/>                                                    |
-| Servidor mínimo compatible<br/> | No se admite ninguno<br/>                                                                      |
-| Espacio de nombres<br/>                | DMMap \\ de MDM \\ de CIMv2 \\ raíz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
-| Archivo DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
+| Cliente mínimo compatible | \[Windows 10 solo aplicaciones de escritorio\]                                                    |
+| Servidor mínimo compatible | No se admite ninguno                                                                      |
+| Espacio de nombres                | DMMap \\ de MDM de CIMv2 \\ \\ raíz                                                             |
+| MOF                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
+| Archivo DLL                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
-
-
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
-[Uso de scripting de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
+[Uso de scripts de PowerShell con el proveedor de puente WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)
 </dt> </dl>
-
- 
-

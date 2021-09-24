@@ -16,12 +16,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 593f06f74dde7e6891417871cd16dc3730ef005fb90a0a1b6cf5377fda7ebcd0
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 4bde9b7991911c0589b3df668133d9092484bbb2
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119461975"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520632"
 ---
 # <a name="ibackgroundcopyjob5-interface"></a>Interfaz IBackgroundCopyJob5
 
@@ -43,8 +43,8 @@ La **interfaz IBackgroundCopyJob5** tiene estos métodos.
 
 | Método                                                 | Descripción                                                |
 |:-------------------------------------------------------|:-----------------------------------------------------------|
-| [**Getproperty**](ibackgroundcopyjob5-getproperty.md) | Método genérico para obtener las propiedades del trabajo do.<br/> |
-| [**Setproperty**](ibackgroundcopyjob5-setproperty.md) | Método genérico para establecer las propiedades del trabajo do.<br/> |
+| [**Getproperty**](ibackgroundcopyjob5-getproperty.md) | Método genérico para obtener Optimización de distribución de trabajo.<br/> |
+| [**Setproperty**](ibackgroundcopyjob5-setproperty.md) | Método genérico para establecer Optimización de distribución de trabajo.<br/> |
 
 
 
@@ -58,15 +58,15 @@ La **interfaz IBackgroundCopyJob5** tiene estos métodos.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | Archivo DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyJob5 se define como E847030C-BBBA-4657-AF6D-484AA42BF1FE<br/>              |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

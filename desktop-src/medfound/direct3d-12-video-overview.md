@@ -4,12 +4,12 @@ ms.assetid: ''
 title: Introducción al vídeo de Direct3D 12
 ms.topic: article
 ms.date: 06/03/2019
-ms.openlocfilehash: b21587f2784b34131da9c050655b6f3fbe43582d
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.openlocfilehash: 2b5f57cd5d9daaa3a7a32dbf822894d3373141ca
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127573420"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128519937"
 ---
 # <a name="direct3d-12-video-overview"></a>Introducción al vídeo de Direct3D 12
 
@@ -51,8 +51,8 @@ Llame [a ID3D12VideoDevice::CreateVideoDecoderHeap](/windows/desktop/api/d3d12vi
 
 ### <a name="decoding-a-frame"></a>Decoding a frame
 
-Todos los parámetros de entrada y salida para las operaciones de procesamiento de vídeo se organizan en una estructura de parámetros de [entrada,](/windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_decode_input_stream_arguments)D3D12_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS y una estructura de parámetros de [salida, D3D12_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS](/windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_decode_output_stream_arguments).
-La aplicación administra los marcos de referencia y, como tal, debe establecer los fotogramas de referencia para cada operación de decodificación.
+Todos los parámetros de entrada y salida de las operaciones de procesamiento de vídeo se organizan en una estructura de parámetros de [entrada,](/windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_decode_input_stream_arguments)D3D12_VIDEO_DECODE_INPUT_STREAM_ARGUMENTS y una estructura de parámetros de [salida, D3D12_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS](/windows/desktop/api/d3d12video/ns-d3d12video-d3d12_video_decode_output_stream_arguments).
+La aplicación administra los fotogramas de referencia y, como tal, debe establecer los fotogramas de referencia para cada operación de decodificación.
 Cuando la lista de comandos se grabe correctamente, llame a [ID3D12CommandQueue::ExecuteCommandLists](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists) en la cola de comandos de vídeo para enviar lacoding de fotogramas a la GPU.
 
 
@@ -62,7 +62,7 @@ Si el descodificador admite la conversión, habilite las conversiones deseadas r
 ##  <a name="querying-decoding-status"></a>Consulta del estado de lacoding 
 Use los métodos [ID3D12VideoDecodeCommandList::BeginQuery](/windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-beginquery) e [ID3D12VideoDecodeCommandList::EndQuery](/windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-endquery) para consultar el estado de la operación de descodificación.
 
-La [D3D12_QUERY_DATA_VIDEO_DECODE_STATISTICS](/windows/win32/api/d3d12video/ns-d3d12video-d3d12_query_data_video_decode_statistics) se usa para describir las estadísticas de descodificación de vídeo. Para obtener una instancia de esta estructura, llame a [ID3D12VideoDecodeCommandList::EndQuery](/windows/win32/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-endquery), pasando el valor de tipo de consulta del [montón D3D12_QUERY_TYPE_VIDEO_DECODE_STATISTIC](/windows/win32/api/d3d12/ne-d3d12-d3d12_query_type). Tenga en cuenta que esta consulta no [usa ID3D12VideoDecodeCommandList::BeginQuery](/windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-beginquery).
+La [D3D12_QUERY_DATA_VIDEO_DECODE_STATISTICS](/windows/win32/api/d3d12video/ns-d3d12video-d3d12_query_data_video_decode_statistics) estructura se usa para describir las estadísticas de descodificación de vídeo. Para obtener una instancia de esta estructura, llame a [ID3D12VideoDecodeCommandList::EndQuery](/windows/win32/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-endquery), pasando el valor de tipo de consulta del [montón D3D12_QUERY_TYPE_VIDEO_DECODE_STATISTIC](/windows/win32/api/d3d12/ne-d3d12-d3d12_query_type). Tenga en cuenta que esta consulta no usa [ID3D12VideoDecodeCommandList::BeginQuery](/windows/desktop/api/d3d12video/nf-d3d12video-id3d12videodecodecommandlist-beginquery).
 
 ## <a name="video-processing"></a>Procesamiento de vídeo
 
@@ -74,7 +74,7 @@ Las siguientes funcionalidades de Direct3D 11 no se admiten en el procesamiento 
 - Tarifas personalizadas.  En su lugar, hay una velocidad de entrada y salida dada durante la grabación del comando [ID3D12VideoProcessCommandList::P rocessFrames.](/windows/desktop/api/d3d12video/nf-d3d12video-id3d12videoprocesscommandlist-processframes)
 - Ahora solo hay dos modos de desinteresado disponibles: [BOB](/windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_process_deinterlace_flags) y [CUSTOM.](/windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_process_deinterlace_flags) Se han eliminado otros modos. CUSTOM es un modo de desinterlazado de alta calidad proporcionado por el proveedor de hardware.
 - Todos los formatos estéreo opcionales [de D3D11_VIDEO_PROCESSOR_STEREO_CAPS](/windows/desktop/api/d3d11/ne-d3d11-d3d11_video_processor_stereo_caps) ya no se admiten. En su lugar, [nono](/windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_frame_stereo_format), [horizontal,](/windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_frame_stereo_format) [vertical](/windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_frame_stereo_format)y [independiente](/windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_frame_stereo_format) son obligatorios para todos los dispositivos de hardware si se admite estéreo.
-- No hay ningún equivalente para [D3D11_VIDEO_PROCESSOR_FORMAT_CAPS](/windows/desktop/api/d3d11/ne-d3d11-d3d11_video_processor_format_caps) o [D3D11_VIDEO_PROCESSOR_AUTO_STREAM_CAPS](/windows/desktop/api/d3d11/ne-d3d11-d3d11_video_processor_auto_stream_caps). En su lugar, los formatos de entrada y salida son argumentos para la creación del procesador de vídeo y, en ese momento, se debe saber si el procesador de vídeo puede o no puede realizar la operación con el formato especificado. El [D3D12_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS](/windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_process_auto_processing_flags) se usa para indicar si las características de procesamiento automático están disponibles.
+- No hay ningún equivalente para [D3D11_VIDEO_PROCESSOR_FORMAT_CAPS](/windows/desktop/api/d3d11/ne-d3d11-d3d11_video_processor_format_caps) [o D3D11_VIDEO_PROCESSOR_AUTO_STREAM_CAPS](/windows/desktop/api/d3d11/ne-d3d11-d3d11_video_processor_auto_stream_caps). En su lugar, los formatos de entrada y salida son argumentos para la creación del procesador de vídeo y, en ese momento, se debe saber si el procesador de vídeo puede o no puede realizar la operación con el formato especificado. El [D3D12_VIDEO_PROCESS_AUTO_PROCESSING_FLAGS](/windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_process_auto_processing_flags) se usa para indicar si las características de procesamiento automático están disponibles.
 - No hay ningún equivalente para [D3D11_VIDEO_PROCESSOR_CAPS_LEGACY](/windows/desktop/api/d3d11/ne-d3d11-d3d11_video_processor_feature_caps).
 - No hay ningún equivalente para [D3D11_VIDEO_PROCESSOR_CAPS_CONSTRICTION](/windows/desktop/api/d3d11/ne-d3d11-d3d11_video_processor_feature_caps).
 - Al convertir de estéreo a mono, se supone que la vista de línea base es 0.
@@ -94,14 +94,14 @@ Cuando se registra la lista de comandos, llame a [ID3D12CommandQueue::ExecuteCom
 
 ## <a name="tiers"></a>Niveles
 
-El vídeo de Direct3D 12 define niveles que agrupan las funcionalidades de los dispositivos de hardware, de modo que la aplicación pueda tener menos rutas de acceso de código para satisfacer la variedad de hardware. Los niveles se especifican con la enumeración [D3D12_VIDEO_DECODE_TIER](/windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_decode_tier) datos.
+El vídeo de Direct3D 12 define niveles que agrupan las funcionalidades de los dispositivos de hardware, de modo que la aplicación pueda tener menos rutas de acceso de código para satisfacer la variedad de hardware. Los niveles se especifican con la [enumeración D3D12_VIDEO_DECODE_TIER](/windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_decode_tier) datos.
 
 En todos los niveles, estará disponible lo siguiente:
 
 - No es necesario recrear el descodificador en los cambios de resolución. Solo es necesario volver a crear el montón del descodificador al cambiar la resolución.
-- La aplicación administrará todos los fotogramas de referencia. Esto permite al sistema ahorrar memoria, ya que no es necesario asignar el número máximo de DPB en el momento de la creación del descodificador en algunos niveles, y proporciona flexibilidad a las aplicaciones en escenarios de cambio de resolución.
+- La aplicación administrará todos los fotogramas de referencia. Esto permite al sistema ahorrar memoria, ya que no es necesario asignar el número máximo de DPB en el momento de la creación del descodificador en algunos niveles y proporciona flexibilidad a las aplicaciones en escenarios de cambio de resolución.
 
-Tenga en cuenta que los niveles son superconjuntos. Una aplicación puede decidir realizar el nivel 1 y no usar las características de nivel superior, lo que se permite, pero puede que no proporcione un rendimiento óptimo. Para obtener más información sobre las funcionalidades asociadas a diferentes niveles, [consulte D3D12_VIDEO_DECODE_TIER](/windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_decode_tier).
+Tenga en cuenta que los niveles son superconjuntos. Una aplicación puede decidir realizar el nivel 1 y no usar las características de nivel superior, lo que se permite, pero puede que no proporcione un rendimiento óptimo. Para obtener más información sobre las funcionalidades asociadas a distintos niveles de nivel, [consulte D3D12_VIDEO_DECODE_TIER](/windows/desktop/api/d3d12video/ne-d3d12video-d3d12_video_decode_tier).
 
 ## <a name="reference-frames"></a>Marcos de referencia
 
@@ -110,17 +110,20 @@ Con el vídeo de Direct3D 12, los fotogramas de referencia se pasan explícitame
 
 ## <a name="directx-12-fences"></a>Barreras de DirectX 12
 
-En DirectX 12, la aplicación es responsable de sincronizar el acceso a sus búferes. En el caso de la decodificación, será necesario agregar barreras a los búferes de entrada y a los búferes de salida. Cada barrera tiene un valor asociado y se usa para la sincronización de la CPU y los motores de hardware. Para obtener más información, [vea Using Resource Barriers to Synchronize Resource States in Direct3D 12 ( Uso de barreras de recursos para sincronizar estados de recursos en Direct3D 12).](/windows/desktop/direct3d12/using-resource-barriers-to-synchronize-resource-states-in-direct3d-12)
+En DirectX 12, la aplicación es responsable de sincronizar el acceso a sus búferes. En el caso de la decodificación, será necesario agregar barreras a los búferes de entrada y a los búferes de salida. Cada barrera tiene un valor asociado y se usa para la sincronización de la CPU y los motores de hardware. Para obtener más información, [vea Usar barreras de recursos para sincronizar estados de recursos en Direct3D 12.](/windows/desktop/direct3d12/using-resource-barriers-to-synchronize-resource-states-in-direct3d-12)
 
 Una implementación típica tendrá una barrera para cada búfer de entrada. En el caso de los búferes de entrada, es posible que el búfer esté disponible antes de que se haga todo el proceso de descodización. El sistema omitirá este caso y asumirá que el búfer de entrada está disponible cuando se realiza lacoding.
-Una implementación también normalmente tendrá una barrera para cada búfer de salida. En el caso de enviar la salida al compositor, por ejemplo, se necesita una barrera que se señale cuando finalmente se realiza esa presentación de ese marco, lo que indica que la salida está de nuevo disponible para el descodificador.
+Una implementación también normalmente tendrá una barrera para cada búfer de salida. En el caso de enviar la salida al compositor, por ejemplo, se necesita una barrera que se señale cuando esa presentación de ese marco se realiza finalmente, lo que indica que la salida está de nuevo disponible para el descodificador.
 
 
 ## <a name="related-topics"></a>Temas relacionados
 
-<dl> <dt>API de vídeo 
-[de Direct3D 12](direct3d-12-video-apis.md) 
- [Media Foundation de programación](media-foundation-programming-guide.md)
+<dl> <dt>
+ 
+[API de vídeo de Direct3D 12](direct3d-12-video-apis.md)
+</dt> <dt>
+ 
+[Media Foundation de programación](media-foundation-programming-guide.md)
 </dt> </dl>
 
  

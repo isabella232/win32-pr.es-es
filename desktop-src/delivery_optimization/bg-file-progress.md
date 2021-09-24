@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 93507b8aeefa9c0ea16f70f67e221ecc4218427f
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.openlocfilehash: 03d84fba3ac9747639d0e2992e63e201d7498118
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126964015"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128521017"
 ---
 # <a name="bg_file_progress-structure"></a>BG_FILE_PROGRESS estructura
 
@@ -39,16 +39,16 @@ typedef struct _BG_FILE_PROGRESS {
 
 
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 <dl> <dt>
 
 **BytesTotal**
 </dt> <dd>
 
-Tamaño del archivo en bytes. Si DO no puede determinar el tamaño del archivo (por ejemplo, si el archivo o el servidor no existe), el valor se DO_UNKNOWN_FILE_SIZE.
+Tamaño del archivo en bytes. Si Optimización de distribución puede determinar el tamaño del archivo (por ejemplo, si el archivo o el servidor no existe), el valor se DO_UNKNOWN_FILE_SIZE.
 
-Si va a descargar intervalos de un archivo, **BytesTotal** refleja el número total de bytes que desea descargar del archivo.
+Si va a descargar intervalos desde un archivo, **BytesTotal** refleja el número total de bytes que desea descargar del archivo.
 
 </dd> <dt>
 
@@ -62,13 +62,13 @@ Número de bytes transferidos.
 **Completado**
 </dt> <dd>
 
-En el caso de las descargas, el **valor es TRUE** si el archivo está disponible para el usuario; de lo contrario, el valor es **FALSE.** Los archivos están disponibles para el usuario después de llamar al [**método IBackgroundCopyJob::Complete.**](ibackgroundcopyjob-complete.md) Si el **método Complete** genera un error transitorio, los archivos procesados antes de que se produjo el error estarán disponibles para el usuario. los demás no lo son. Use el **miembro Completed** para determinar si el archivo está disponible para el usuario cuando se produce un error **en Completar.**
+En el caso de las descargas, el valor **es TRUE** si el archivo está disponible para el usuario; de lo contrario, el valor es **FALSE.** Los archivos están disponibles para el usuario después de llamar al [**método IBackgroundCopyJob::Complete.**](ibackgroundcopyjob-complete.md) Si el **método Complete** genera un error transitorio, los archivos procesados antes de que se produjo el error estarán disponibles para el usuario; los demás no lo son. Use el **miembro Completed** para determinar si el archivo está disponible para el usuario cuando se produce un error **en Complete.**
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para determinar si do ha transferido el archivo, puede hacer lo siguiente:
+Para determinar si Optimización de distribución el archivo, puede hacer lo siguiente:
 
 -   Compare **BytesTransferred** con **BytesTotal.**
 

@@ -17,12 +17,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e4a2ed93a264aa12d61291c3562a455a026e0dfd0d727648b7d13f6ffe360015
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: bba92c30c30af213dad716d708e066b55d000d26
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119636025"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520072"
 ---
 # <a name="ibackgroundcopyfile2setremotename-method"></a>IBackgroundCopyFile2::SetRemoteName (método)
 
@@ -58,7 +58,7 @@ Este método devuelve los siguientes valores devueltos, así como otros.
 
 | Código devuelto                                                                                  | Descripción                                                                                                           |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>S_OK**</dt> </dl>     | Success<br/>                                                                                                    |
+| <dl> <dt>S_OK**</dt> </dl>     | Correcto<br/>                                                                                                    |
 | <dl> <dt>**E_INVALIDARG**</dt> </dl> | El nuevo nombre remoto es una dirección URL no válida o la nueva dirección URL es demasiado larga (la dirección URL no puede superar los 2200 caracteres).<br/> |
 
 
@@ -71,25 +71,25 @@ Normalmente, se llama a este método si desea cambiar la dirección URL utilizad
 
 Este método no serializa cuando devuelve . Para serializar el cambio, [**suspenda**](ibackgroundcopyjob-suspend.md) el trabajo, llame a este método (si cambia varios archivos en el trabajo, use un bucle) y [**reanude**](ibackgroundcopyjob-resume.md) el trabajo. Llamar al **método IBackgroundCopyJob::Resume** serializa el cambio.
 
-Si la marca de tiempo o el tamaño de archivo del nuevo nombre remoto son diferentes del nombre remoto anterior o el nuevo servidor no admite la reanudación del punto de comprobación (para los nombres remotos HTTP), DO reinicia la descarga. De lo contrario, la transferencia se reanuda desde la misma posición en el nuevo servidor. DO no reinicia los archivos ya transferidos.
+Si la marca de tiempo o el tamaño del archivo del nuevo nombre remoto es diferente del nombre remoto anterior o el nuevo servidor no admite la reanudación del punto de comprobación (para los nombres remotos HTTP), Optimización de distribución reinicia la descarga. De lo contrario, la transferencia se reanuda desde la misma posición en el nuevo servidor. Optimización de distribución no reinicia los archivos ya transferidos.
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | Archivo DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyFile2 se define como 83e81b93-0873-474d-8a8c-f2018b1a939c<br/>             |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

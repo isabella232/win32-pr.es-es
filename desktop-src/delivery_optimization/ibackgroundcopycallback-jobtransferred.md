@@ -1,6 +1,6 @@
 ---
 title: Método IBackgroundCopyCallback JobTransferred (Deliveryoptimization.h)
-description: Optimización de distribución (DO) llama a la implementación del método JobTransferred cuando todos los archivos del trabajo se han transferido correctamente.
+description: Optimización de distribución llama a la implementación del método JobTransferred cuando todos los archivos del trabajo se han transferido correctamente.
 ms.assetid: D3088279-2D26-4707-9BA2-19D2758EA1CC
 keywords:
 - Método JobTransferred
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6c5c358978da1731152ca6f7de8c3f7a92a1da86
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.openlocfilehash: 5af8b1f6c9448da7141c041c52bd8ae3620f1360
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127566760"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128521242"
 ---
 # <a name="ibackgroundcopycallbackjobtransferred-method"></a>IBackgroundCopyCallback::JobTransferred (Método)
 
-Optimización de distribución (DO) llama a la implementación del **método JobTransferred** cuando todos los archivos del trabajo se han transferido correctamente.
+Optimización de distribución llama a la implementación del **método JobTransferred** cuando todos los archivos del trabajo se han transferido correctamente.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ HRESULT JobTransferred(
 *pJob* \[ En\]
 </dt> <dd>
 
-Contiene información relacionada con el trabajo, como la hora en que se completó el trabajo, el número de bytes transferidos y el número de archivos transferidos. No liberar *pJob*; DO libera la interfaz cuando se devuelve el método .
+Contiene información relacionada con el trabajo, como la hora en que se completó el trabajo, el número de bytes transferidos y el número de archivos transferidos. No liberar *pJob*; Optimización de distribución libera la interfaz cuando se devuelve el método .
 
 </dd> </dl>
 
@@ -54,11 +54,11 @@ Contiene información relacionada con el trabajo, como la hora en que se complet
 
 Este método debe devolver S_OK.
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Normalmente, la implementación debe llamar al [**método IBackgroundCopyJob::Complete**](ibackgroundcopyjob-complete.md) para confirmar que DO ha transferido correctamente los archivos. Los archivos de descarga y el archivo de respuesta no están disponibles en el cliente hasta que se llama al **método** Complete.
+Normalmente, la implementación debe llamar al método [**IBackgroundCopyJob::Complete**](ibackgroundcopyjob-complete.md) para confirmar que Optimización de distribución ha transferido correctamente los archivos. Los archivos de descarga y el archivo de respuesta no están disponibles en el cliente hasta que se llama al **método** Complete.
 
-Si no llama al método [**Complete**](ibackgroundcopyjob-complete.md) o al método [**IBackgroundCopyJob::Cancel,**](ibackgroundcopyjob-cancel.md) DO cancela el trabajo después de 30 días y elimina los archivos incompletos.
+Si no llama al método [**Complete**](ibackgroundcopyjob-complete.md) o al método [**IBackgroundCopyJob::Cancel**](ibackgroundcopyjob-cancel.md) Optimización de distribución cancela el trabajo después de 30 días y elimina los archivos incompletos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Si no llama al método [**Complete**](ibackgroundcopyjob-complete.md) o al méto
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

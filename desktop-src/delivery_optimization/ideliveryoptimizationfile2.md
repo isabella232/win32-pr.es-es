@@ -1,8 +1,8 @@
 ---
-title: Interfaz IDeliveryOptimizationFile2
-description: IDeliveryOptimizationFile2 admite la configuración y obtención de propiedades de archivo opcionales.
+title: IDeliveryOptimizationFile2 (interfaz)
+description: IDeliveryOptimizationFile2 admite la configuración y la obtención de propiedades de archivo opcionales.
 keywords:
-- Interfaz IDeliveryOptimizationFile2
+- IDeliveryOptimizationFile2 (interfaz)
 - Interfaz IDeliveryOptimizationFile2, descrita
 topic_type:
 - apiref
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 01/18/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ed7409635444885b662688ce94c300aae6e62186dd76bd7278b3e7445ef50c90
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7e5ef827758e054ed391303a283b490e0db66d3b
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118542050"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520052"
 ---
-# <a name="ideliveryoptimizationfile2-interface"></a>Interfaz IDeliveryOptimizationFile2
+# <a name="ideliveryoptimizationfile2-interface"></a>IDeliveryOptimizationFile2 (interfaz)
 
-**IDeliveryOptimizationFile2** admite la configuración y obtención de propiedades de archivo opcionales. 
+**IDeliveryOptimizationFile2** admite la configuración y la obtención de propiedades de archivo opcionales. 
 
 ## <a name="members"></a>Miembros
 
@@ -38,17 +38,17 @@ La **interfaz IDeliveryOptimizationFile2** tiene estos métodos.
 
 | Método                                                 | Descripción                                                  |
 |:-------------------------------------------------------|:-------------------------------------------------------------|
-| [**Getproperty**](ideliveryoptimizationfile2-getproperty.md)  | Este método devuelve una sola propiedad del archivo DO. |
-| [**Setproperty**](ideliveryoptimizationfile2-setproperty.md)  | Este método establece una única propiedad del archivo DO.    |
+| [**Getproperty**](ideliveryoptimizationfile2-getproperty.md)  | Este método devuelve una única propiedad del Optimización de distribución archivo. |
+| [**Setproperty**](ideliveryoptimizationfile2-setproperty.md)  | Este método establece una única propiedad del Optimización de distribución archivo.    |
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------|-----------------------------------------------------------------------------------|
 | Cliente mínimo compatible      | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]                                    |
 | Servidor mínimo compatible      | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]                                |
-| Header                        | Deliveryoptimization.h                                                            |
-| Idl                           | DeliveryOptimization.idl                                                          |
+| Encabezado                        | Deliveryoptimization.h                                                            |
+| IDL                           | DeliveryOptimization.idl                                                          |
 | Biblioteca                       | Dosvc.lib                                                                         |
 | Archivo DLL                           | Dosvc.dll                                                                         |
 | IID                           | IID_IDeliveryOptimizationFile2 se define como 3A87296F-6EC2-4126-AB29-E3F8DC4CC390 |

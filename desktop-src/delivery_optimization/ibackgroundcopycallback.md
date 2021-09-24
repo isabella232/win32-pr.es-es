@@ -1,9 +1,9 @@
 ---
 title: Interfaz IBackgroundCopyCallback (Deliveryoptimization.h)
-description: Implemente la interfaz IBackgroundCopyCallback para recibir una notificación de que un trabajo se ha completado, se ha modificado o está en error. Los clientes usan esta interfaz en lugar de sondear el estado del trabajo.
+description: Implemente la interfaz IBackgroundCopyCallback para recibir la notificación de que un trabajo se ha completado, se ha modificado o está en error. Los clientes usan esta interfaz en lugar de sondear el estado del trabajo.
 ms.assetid: CF85D852-1B4E-4BC2-B6A6-0035ED3C439C
 keywords:
-- IBackgroundCopyCallback (interfaz)
+- Interfaz IBackgroundCopyCallback
 - Interfaz IBackgroundCopyCallback, descrita
 topic_type:
 - apiref
@@ -16,18 +16,18 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4169acec87e4d1e8a31eecaa4f93b9404aafb714
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.openlocfilehash: f6bfb59e18c9b15730667c7c3c7d08ee3cbd0105
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127566757"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128521382"
 ---
-# <a name="ibackgroundcopycallback-interface"></a>IBackgroundCopyCallback (interfaz)
+# <a name="ibackgroundcopycallback-interface"></a>Interfaz IBackgroundCopyCallback
 
-Implemente **la interfaz IBackgroundCopyCallback** para recibir una notificación de que un trabajo se ha completado, se ha modificado o está en error. Los clientes usan esta interfaz en lugar de sondear el estado del trabajo.
+Implemente **la interfaz IBackgroundCopyCallback** para recibir la notificación de que un trabajo se ha completado, se ha modificado o está en error. Los clientes usan esta interfaz en lugar de sondear el estado del trabajo.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 La **interfaz IBackgroundCopyCallback** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IBackgroundCopyCallback** también tiene estos tipos de miembros:
 
@@ -49,11 +49,11 @@ La **interfaz IBackgroundCopyCallback** tiene estos métodos.
 
  
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-Para recibir notificaciones, llame al método [**IBackgroundCopyJob::SetNotifyInterface**](ibackgroundcopyjob-setnotifyinterface.md) para especificar el puntero de interfaz a la implementación **de IBackgroundCopyCallback.** Para especificar qué notificaciones desea recibir, llame al [**método IBackgroundCopyJob::SetNotifyFlags.**](ibackgroundcopyjob-setnotifyflags.md)
+Para recibir notificaciones, llame al método [**IBackgroundCopyJob::SetNotifyInterface**](ibackgroundcopyjob-setnotifyinterface.md) para especificar el puntero de interfaz a la implementación **de IBackgroundCopyCallback.** Para especificar qué notificaciones desea recibir, llame al método [**IBackgroundCopyJob::SetNotifyFlags.**](ibackgroundcopyjob-setnotifyflags.md)
 
-DO llamará a las devoluciones de llamada siempre que el puntero de interfaz sea válido. La interfaz de notificación ya no es válida cuando finaliza la aplicación; DO no conserva la interfaz de notificación. Como resultado, el proceso de inicialización de la aplicación debe llamar al método [**SetNotifyInterface**](ibackgroundcopyjob-setnotifyinterface.md) en los trabajos existentes para los que desea recibir la notificación.
+Optimización de distribución llamará a las devoluciones de llamada siempre que el puntero de interfaz sea válido. La interfaz de notificación ya no es válida cuando finaliza la aplicación; Optimización de distribución conserva la interfaz de notificación. Como resultado, el proceso de inicialización de la aplicación debe llamar al método [**SetNotifyInterface**](ibackgroundcopyjob-setnotifyinterface.md) en los trabajos existentes para los que desea recibir una notificación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,7 +71,7 @@ DO llamará a las devoluciones de llamada siempre que el puntero de interfaz sea
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 

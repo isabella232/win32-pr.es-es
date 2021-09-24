@@ -1,6 +1,6 @@
 ---
 title: BITS_FILE_PROPERTY_VALUE estructura (Deliveryoptimization.h)
-description: La BITS_FILE_PROPERTY_VALUE de datos proporciona el valor de propiedad del archivo DO basado en un valor de la BITS_FILE_PROPERTY_ID enumeración.
+description: La BITS_FILE_PROPERTY_VALUE de datos proporciona el valor de propiedad del archivo Optimización de distribución basado en un valor de la enumeración BITS_FILE_PROPERTY_ID datos.
 ms.assetid: 56A634F9-FB30-49D5-BD03-DD59AEF702C1
 keywords:
 - BITS_FILE_PROPERTY_VALUE estructura
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 639ea0523c5b92d9764671cb573497223ef968fd
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.openlocfilehash: 10cceedf2e3da2578c9e3f7d0e8131b98f78093b
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127567165"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520880"
 ---
 # <a name="bits_file_property_value-structure"></a>BITS_FILE_PROPERTY_VALUE estructura
 
-La **BITS_FILE_PROPERTY_VALUE** de datos proporciona el valor de propiedad del archivo DO basado en un valor de la [**BITS_FILE_PROPERTY_ID**](bits-file-property-id-.md) enumeración.
+La **BITS_FILE_PROPERTY_VALUE** de datos proporciona el valor de propiedad del archivo Optimización de distribución basado en un valor de la [**enumeración BITS_FILE_PROPERTY_ID**](bits-file-property-id-.md) datos.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -37,7 +37,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 <dl> <dt>
 

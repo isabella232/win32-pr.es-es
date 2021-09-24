@@ -1,6 +1,6 @@
 ---
 title: BITS_JOB_PROPERTY_ID enumeración (Deliveryoptimization.h)
-description: La BITS_JOB_PROPERTY_ID especifica el identificador de la propiedad para el trabajo do. Esta enumeración se usa en la BITS_JOB_PROPERTY_VALUE para determinar el tipo de valor contenido en la unión.
+description: La BITS_JOB_PROPERTY_ID especifica el identificador de la propiedad para el Optimización de distribución trabajo. Esta enumeración se usa en la BITS_JOB_PROPERTY_VALUE para determinar el tipo de valor contenido en la unión.
 ms.assetid: B0F3C6C2-474F-4FD8-990A-770FAA993550
 keywords:
 - BITS_JOB_PROPERTY_ID enumeración
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cd1d00d4dc12b27c1c80b0e18bb095641a56e322
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.openlocfilehash: 99b463583901882270138408378432fceb636442
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127567164"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520517"
 ---
 # <a name="bits_job_property_id-enumeration"></a>BITS_JOB_PROPERTY_ID enumeración
 
-La **BITS_JOB_PROPERTY_ID** especifica el identificador de la propiedad para el trabajo do. Esta enumeración se usa en la [**BITS_JOB_PROPERTY_VALUE**](bits-job-property-value-.md) para determinar el tipo de valor contenido en la unión.
+La **BITS_JOB_PROPERTY_ID** especifica el identificador de la propiedad para el Optimización de distribución trabajo. Esta enumeración se usa en la [**BITS_JOB_PROPERTY_VALUE**](bits-job-property-value-.md) para determinar el tipo de valor contenido en la unión.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,7 +60,7 @@ Esta propiedad usa el **BITS_JOB_PROPERTY_VALUE** **de Dword.**
 <span id="BITS_JOB_PROPERTY_NOTIFICATION_CLSID"></span><span id="bits_job_property_notification_clsid"></span>**BITS_JOB_PROPERTY_NOTIFICATION_CLSID**
 </dt> <dd>
 
-Identificador que se usa para registrar una [devolución](https://www.bing.com/search?q=register+a+COM+callback) de llamada COM mediante CLSID para recibir notificaciones sobre el progreso y la finalización de un trabajo do. El CLSID debe hacer referencia a una clase asociada a un servidor COM fuera de proceso registrado. También se puede establecer en **GUID_NULL** borrar un CLSID de notificación establecido previamente.
+Identificador que se usa para registrar una [devolución](https://www.bing.com/search?q=register+a+COM+callback) de llamada COM mediante CLSID para recibir notificaciones sobre el progreso y la finalización de un Optimización de distribución trabajo. El CLSID debe hacer referencia a una clase asociada a un servidor COM fuera de proceso registrado. También se puede establecer en **GUID_NULL** borrar un CLSID de notificación establecido previamente.
 
 Esta propiedad usa el **BITS_JOB_PROPERTY_VALUE** **de CLsID.**
 

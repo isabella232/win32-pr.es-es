@@ -1,6 +1,6 @@
 ---
 title: Método IBackgroundCopyJob SetNoProgressTimeout (Deliveryoptimization.h)
-description: Establece el período de tiempo que Optimización de distribución (DO) intenta transferir el archivo después de que se produzca una condición de error transitorio. Si hay progreso, se restablece el temporizador.
+description: Establece el período de tiempo durante el Optimización de distribución intenta transferir el archivo después de que se produzca una condición de error transitorio. Si hay progreso, se restablece el temporizador.
 ms.assetid: DC86F74F-8429-4D78-B425-CAF19867B05E
 keywords:
 - Método SetNoProgressTimeout
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: dcf6905388d54103aaac34ae934c89e2fd8ccc16ce32a384eb730376606351b6
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 6e2bc77cf8a5c560cdc8a7bc7dd819c1dbe7a286
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118542932"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520082"
 ---
 # <a name="ibackgroundcopyjobsetnoprogresstimeout-method"></a>IBackgroundCopyJob::SetNoProgressTimeout (método)
 
-Establece el período de tiempo que Optimización de distribución (DO) intenta transferir el archivo después de que se produzca una condición de error transitorio. Si hay progreso, se restablece el temporizador.
+Establece el período de tiempo durante el Optimización de distribución intenta transferir el archivo después de que se produzca una condición de error transitorio. Si hay progreso, se restablece el temporizador.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -46,7 +46,7 @@ HRESULT SetNoProgressTimeout(
 *RetryPeriod* \[ En\]
 </dt> <dd>
 
-Tiempo, en segundos, que do intenta transferir el archivo una vez que no se ha realizado ningún progreso. El período de reintento predeterminado para el trabajo de prioridad alta es de 3600 segundos (1 hora) y para el trabajo de prioridad baja es de 86 400 segundos (24 horas).
+Tiempo, en segundos, que Optimización de distribución intenta transferir el archivo después de que no se haya realizado ningún progreso. El período de reintento predeterminado para el trabajo de prioridad alta es de 3600 segundos (1 hora) y para el trabajo de prioridad baja es de 86 400 segundos (24 horas).
 
 </dd> </dl>
 
@@ -67,18 +67,18 @@ Este método devuelve los siguientes **valores HRESULT,** así como otros.
 
 ## <a name="remarks"></a>Comentarios
 
-Si DO no progresa durante el período de reintento, mueve el estado del trabajo de BG_JOB_STATE_TRANSIENT_ERROR a BG_JOB_STATE_ERROR. Si solicita una notificación de error, DO llama a la [**devolución de llamada JobError.**](https://www.bing.com/search?q=**JobError**)
+Si Optimización de distribución no progresa durante el período de reintento, mueve el estado del trabajo de BG_JOB_STATE_TRANSIENT_ERROR a BG_JOB_STATE_ERROR. Si solicita una notificación de error, Optimización de distribución llamada a la [**devolución de llamada JobError.**](https://www.bing.com/search?q=**JobError**)
 
 ## <a name="requirements"></a>Requisitos
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo compatible<br/> | Windows 10, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                           |
 | Servidor mínimo compatible<br/> | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]<br/>                                       |
-| Header<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| IDL<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | Archivo DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyJob se define como 37668D37-507E-4160-9316-26306D150B12<br/>               |

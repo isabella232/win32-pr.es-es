@@ -4,12 +4,12 @@ ms.assetid: e67d0282-9090-43e6-aedf-bb1fc0443221
 title: Enumeración ASSOCF
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d52de3ce181033358fc20ca3e4f8759b61f72ed
-ms.sourcegitcommit: 4e94fc75fad7b2a0f3c92a26f97e89924e59b7a9
+ms.openlocfilehash: 9b92a917baf518d8b6f1ebba196e6c3e53e9fdb9
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122786701"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520290"
 ---
 # <a name="assocf-enumeration"></a>Enumeración ASSOCF
 
@@ -17,15 +17,26 @@ Proporciona información a los [**métodos de interfaz IQueryAssociations.**](/w
 
 ## <a name="syntax"></a>Sintaxis
 
-
-
-
-| C++ | 
-|-----|
-| <pre><code>typedef enum  {   ASSOCF_NONE                  = 0x00000000,  ASSOCF_INIT_NOREMAPCLSID     = 0x00000001,  ASSOCF_INIT_BYEXENAME        = 0x00000002,  ASSOCF_OPEN_BYEXENAME        = 0x00000002,  ASSOCF_INIT_DEFAULTTOSTAR    = 0x00000004,  ASSOCF_INIT_DEFAULTTOFOLDER  = 0x00000008,  ASSOCF_NOUSERSETTINGS        = 0x00000010,  ASSOCF_NOTRUNCATE            = 0x00000020,  ASSOCF_VERIFY                = 0x00000040,  ASSOCF_REMAPRUNDLL           = 0x00000080,  ASSOCF_NOFIXUPS              = 0x00000100,  ASSOCF_IGNOREBASECLASS       = 0x00000200,  ASSOCF_INIT_IGNOREUNKNOWN    = 0x00000400,  ASSOCF_INIT_FIXED_PROGID     = 0x00000800,  ASSOCF_IS_PROTOCOL           = 0x00001000,  ASSOCF_INIT_FOR_FILE         = 0x00002000} ASSOCF;</code></pre> | 
-
-
-
+```cpp
+typedef enum  {
+    ASSOCF_NONE                  = 0x00000000,  
+    ASSOCF_INIT_NOREMAPCLSID     = 0x00000001,  
+    ASSOCF_INIT_BYEXENAME        = 0x00000002,  
+    ASSOCF_OPEN_BYEXENAME        = 0x00000002,  
+    ASSOCF_INIT_DEFAULTTOSTAR    = 0x00000004,  
+    ASSOCF_INIT_DEFAULTTOFOLDER  = 0x00000008,  
+    ASSOCF_NOUSERSETTINGS        = 0x00000010,  
+    ASSOCF_NOTRUNCATE            = 0x00000020,  
+    ASSOCF_VERIFY                = 0x00000040,  
+    ASSOCF_REMAPRUNDLL           = 0x00000080,  
+    ASSOCF_NOFIXUPS              = 0x00000100,  
+    ASSOCF_IGNOREBASECLASS       = 0x00000200,  
+    ASSOCF_INIT_IGNOREUNKNOWN    = 0x00000400,  
+    ASSOCF_INIT_FIXED_PROGID     = 0x00000800,  
+    ASSOCF_IS_PROTOCOL           = 0x00001000,  
+    ASSOCF_INIT_FOR_FILE         = 0x00002000
+} ASSOCF;
+```
 
 ## <a name="constants"></a>Constantes
 
@@ -61,7 +72,7 @@ Especifica que solo se debe buscar **HKEY \_ CLASSES \_ ROOT** y que se debe omi
 
 Especifica que la cadena de devolución no se debe truncar. En su lugar, devuelva un valor de error y el tamaño necesario para la cadena completa.
 
- <span id="ASSOCF_VERIFY"></span><span id="assocf_verify"></span>**COMPROBACIÓN DE ASSOCF \_** 
+ <span id="ASSOCF_VERIFY"></span><span id="assocf_verify"></span>**ASSOCF \_ VERIFY** 
 
 Indica a [**los métodos IQueryAssociations**](/windows/win32/api/shlwapi/nn-shlwapi-iqueryassociations) que comprueben que los datos son precisos. Esta configuración permite a **los métodos IQueryAssociations** leer datos del disco duro del usuario para la comprobación. Por ejemplo, pueden comprobar el nombre descriptivo del Registro con el que se almacena en el .exe archivo. Establecer esta marca normalmente reduce la eficacia del método .
 
@@ -71,7 +82,7 @@ Indica a [**los métodos IQueryAssociations**](/windows/win32/api/shlwapi/nn-shl
 
  <span id="ASSOCF_NOFIXUPS"></span><span id="assocf_nofixups"></span>**ASSOCF \_ NOFIXUPS** 
 
-Indica a [**los métodos IQueryAssociations**](/windows/win32/api/shlwapi/nn-shlwapi-iqueryassociations) que no corrija errores en el Registro, como el nombre descriptivo de una función que no coincide con el que se encuentra en el archivo .exe.
+Indica a [**los métodos IQueryAssociations**](/windows/win32/api/shlwapi/nn-shlwapi-iqueryassociations) que no corrija errores en el Registro, como el nombre descriptivo de una función que no coincide con el que se encuentra en el .exe archivo.
 
  <span id="ASSOCF_IGNOREBASECLASS"></span><span id="assocf_ignorebaseclass"></span>**ASSOCF \_ IGNOREBASECLASS** 
 
@@ -91,7 +102,7 @@ Especifica que se debe omitir el valor BaseClass.
 
  <span id="ASSOCF_INIT_FOR_FILE"></span><span id="assocf_init_for_file"></span>**ASSOCF \_ INIT \_ FOR \_ FILE** 
 
-**Introducido en Windows 8.1**. Especifica que el ProgID se corresponde con una asociación basada en la extensión de archivo. Use junto con **ASSOCF \_ INIT \_ FIXED \_ PROGID**.
+**Se introdujo en Windows 8.1**. Especifica que el ProgID se corresponde con una asociación basada en la extensión de archivo. Use junto con **ASSOCF \_ INIT \_ FIXED \_ PROGID**.
 
  
 

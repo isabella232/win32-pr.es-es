@@ -1,6 +1,6 @@
 ---
 title: BG_FILE_RANGE estructura (Deliveryoptimization.h)
-description: La BG_FILE_RANGE identifica un intervalo de bytes que se van a descargar de un archivo.
+description: La BG_FILE_RANGE estructura identifica un intervalo de bytes que se van a descargar de un archivo.
 ms.assetid: 58993C51-E42E-4E44-9E8A-15E982B25413
 keywords:
 - BG_FILE_RANGE estructura
@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cedabfb066a5905adb2ed8eac9996fd77c0e12be
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.openlocfilehash: 7d26785ba90ef6602ba7f5d0f4137d54e0b3044c
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126884857"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128521172"
 ---
 # <a name="bg_file_range-structure"></a>BG_FILE_RANGE estructura
 
@@ -38,7 +38,7 @@ typedef struct {
 
 
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 <dl> <dt>
 
@@ -56,9 +56,9 @@ Longitud del intervalo, en bytes. No especifique una longitud de cero bytes. Par
 
 </dd> </dl>
 
-## <a name="remarks"></a>Observaciones
+## <a name="remarks"></a>Comentarios
 
-El intervalo debe existir en el archivo o do genera un **error DO_E_INVALID_RANGE** error.
+El intervalo debe existir en el archivo o Optimización de distribución genera un **error DO_E_INVALID_RANGE** error.
 
 ## <a name="requirements"></a>Requisitos
 

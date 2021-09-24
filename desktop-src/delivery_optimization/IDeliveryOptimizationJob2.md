@@ -14,12 +14,12 @@ api_type:
 ms.topic: reference
 ms.date: 01/18/2019
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4960b754d70aa8ff16e60fc8614fba455f57768caa261d3b50c8c78093919626
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7868dc29a746566291a10f6b8f8854f33fe2221f
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118811148"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128521192"
 ---
 # <a name="ideliveryoptimizationjob2-interface"></a>Interfaz IDeliveryOptimizationJob2
 
@@ -37,18 +37,18 @@ La **interfaz IDeliveryOptimizationJob2** tiene estos métodos.
 
 | Método                                              | Descripción                                                          |
 |:----------------------------------------------------|----------------------------------------------------------------------|
-| [**AddFile**](ideliveryoptimizationjob2-addfile.md) | El método AddFile agrega un único archivo a un trabajo de DO existente.         |
-| [**Getproperty**](ideliveryoptimizationjob2-getproperty.md) | El método AddFile agrega un único archivo a un trabajo de DO existente. |
+| [**AddFile**](ideliveryoptimizationjob2-addfile.md) | El método AddFile agrega un único archivo a un trabajo Optimización de distribución existente.         |
+| [**Getproperty**](ideliveryoptimizationjob2-getproperty.md) | El método AddFile agrega un único archivo a un trabajo Optimización de distribución existente. |
 | [**Setproperty**](ideliveryoptimizationjob2-setproperty.md) | Este método no se usa.                                       |
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Valor |
+| Requisito | Value |
 |--------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]                                   |
 | Servidor mínimo compatible | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]                               |
-| Header                   | Deliveryoptimization.h                                                           |
-| Idl                      | DeliveryOptimization.idl                                                         |
+| Encabezado                   | Deliveryoptimization.h                                                           |
+| IDL                      | DeliveryOptimization.idl                                                         |
 | Biblioteca                  | Dosvc.lib                                                                        |
 | Archivo DLL                      | Dosvc.dll                                                                        |
 | IID                      | IID_IDeliveryOptimizationJob2 se define como 18995A26-BF59-4MIENTO-9F8B-D5092D5A2405 |

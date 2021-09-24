@@ -1,6 +1,6 @@
 ---
 title: Interfaz IBackgroundCopyFile5 (Deliveryoptimization.h)
-description: Use esta interfaz para obtener o establecer propiedades genéricas de Optimización de distribución (DO) de archivos.
+description: Use esta interfaz para obtener o establecer propiedades genéricas de Optimización de distribución de archivos.
 ms.assetid: 2D729717-62D2-4C69-92FE-F4289EC48DF1
 keywords:
 - Interfaz IBackgroundCopyFile5
@@ -16,20 +16,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2f23fdb99ba24b4faeca7a65930bf83d4634a979
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.openlocfilehash: 8274d256399efbf03f1365e55609bc601590ee47
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126884849"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128519947"
 ---
 # <a name="ibackgroundcopyfile5-interface"></a>Interfaz IBackgroundCopyFile5
 
-Use esta interfaz para obtener o establecer propiedades genéricas de Optimización de distribución (DO) de archivos.
+Use esta interfaz para obtener o establecer propiedades genéricas de Optimización de distribución de archivos.
 
 Para obtener un puntero de interfaz **IBackgroundCopyFile5,** llame al método **IBackgroundCopyFile::QueryInterface** mediante __uuidof(IBackgroundCopyFile5) para el identificador de interfaz.
 
-## <a name="members"></a>Members
+## <a name="members"></a>Miembros
 
 La **interfaz IBackgroundCopyFile5** hereda de la [**interfaz IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IBackgroundCopyFile5** también tiene estos tipos de miembros:
 

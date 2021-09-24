@@ -1,6 +1,6 @@
 ---
 title: BITS_JOB_TRANSFER_POLICY enumeración (Deliveryoptimization.h)
-description: La enumeración BITS_JOB_TRANSFER_POLICY define los valores de identificador correspondientes a las propiedades do.
+description: La enumeración BITS_JOB_TRANSFER_POLICY define los valores de identificador correspondientes a Optimización de distribución propiedades.
 ms.assetid: 4811ADBF-F097-4340-BFF2-52CC9556ACF6
 keywords:
 - BITS_JOB_TRANSFER_POLICY enumeración
@@ -16,16 +16,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 455752375b76e574923ccdd96d1d05fc9142c16c
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.openlocfilehash: 8c9efef27820a2a731bb6efdd1a06b7312ca55ae
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127070356"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520332"
 ---
 # <a name="bits_job_transfer_policy-enumeration"></a>BITS_JOB_TRANSFER_POLICY enumeración
 
-La **enumeración BITS_JOB_TRANSFER_POLICY** define los valores de identificador correspondientes a las propiedades do.
+La **enumeración BITS_JOB_TRANSFER_POLICY** define los valores de identificador correspondientes a Optimización de distribución propiedades.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,7 +63,7 @@ Especifica que el trabajo se transferirá cuando la conectividad esté disponibl
 <span id="BITS_JOB_TRANSFER_POLICY_NO_SURCHARGE"></span><span id="bits_job_transfer_policy_no_surcharge"></span>**BITS_JOB_TRANSFER_POLICY_NO_SURCHARGE**
 </dt> <dd>
 
-Especifica que el trabajo se transferirá solo cuando la conectividad esté disponible, lo que no está sujeto a un sobrecargo.
+Especifica que el trabajo se transferirá solo cuando haya conectividad disponible que no esté sujeta a un sobrecargo.
 
 </dd> <dt>
 

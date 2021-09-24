@@ -3,18 +3,18 @@ title: Proveedores de sistemas
 description: Habilite los eventos del proveedor de seguimiento del sistema con EnableTraceEx2.
 ms.topic: article
 ms.date: 06/02/2021
-ms.openlocfilehash: 46c141c6449594b8030ce24bb901b0afede33f3f6e2cefcaa36f4df4bf0dde0e
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f32b31f1c1a59c3a1507a37279def248f57e66e2
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119812155"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520312"
 ---
 # <a name="system-providers"></a>Proveedores de sistemas
  
-A partir Windows 10 la compilación 20348 del SDK, los eventos del proveedor de seguimiento del sistema se pueden habilitar de la misma manera que otros proveedores de ETW, con [EnableTraceEx2.](/windows/win32/api/evntrace/nf-evntrace-enabletraceex2)  Las distintas marcas y máscaras de grupo [asociadas](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) al proveedor de seguimiento del sistema se han asignado a nuevos proveedores de seguimiento, denominados proveedores de sistema, y palabras clave de coincidencia.  
+A partir Windows 10 la compilación 20348 del SDK, los eventos del proveedor de seguimiento del sistema se pueden habilitar de la misma manera que otros proveedores de ETW, con [EnableTraceEx2.](/windows/win32/api/evntrace/nf-evntrace-enabletraceex2)  Las diferentes marcas y máscaras de grupo [asociadas](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) al proveedor de seguimiento del sistema se han asignado a nuevos proveedores de seguimiento, denominados proveedores de sistema, y palabras clave correspondientes.  
  
-Al igual que habilitar el proveedor de seguimiento del sistema [directamente,](/windows/win32/etw/logging-mode-constants) los proveedores del sistema solo pueden habilitarse mediante una sesión con el EVENT_TRACE_SYSTEM_LOGGER_MODE establecido.
+Al igual que habilitar el proveedor de seguimiento del sistema directamente, los proveedores del sistema solo pueden habilitarse mediante una [sesión con el EVENT_TRACE_SYSTEM_LOGGER_MODE](./logging-mode-constants.md) establecido.
 
 ## <a name="system-provider-reference"></a>Referencia del proveedor del sistema
 
@@ -30,11 +30,11 @@ Al igual que habilitar el proveedor de seguimiento del sistema [directamente,](/
 * [Proveedor de objetos del sistema](#system-object-provider)
 * [Proveedor de energía del sistema](#system-power-provider)
 * [Proveedor de procesos del sistema](#system-process-provider)
-* [Proveedor de perfiles del sistema](#system-profile-provider)
+* [Proveedor de perfiles de sistema](#system-profile-provider)
 * [Proveedor del Registro del sistema](#system-registry-provider)
 * [Proveedor del programador del sistema](#system-scheduler-provider)
-* [Proveedor de syscall del sistema](#system-syscall-provider)
-* [Proveedor de temporizador del sistema](#system-timer-provider)
+* [Proveedor de llamadas del sistema](#system-syscall-provider)
+* [Proveedor de temporizadores del sistema](#system-timer-provider)
  
 ### <a name="system-alpc-provider"></a>Proveedor DE ALPC del sistema
 
@@ -105,7 +105,7 @@ GUID: SystemInterruptProviderGuid {d4providere17-b545-4888-858b-744169015b25}
  
 ### <a name="system-io-provider"></a>Proveedor de E/S del sistema 
 
-Proporciona eventos relacionados con varios tipos de E/S, incluidos el disco, la memoria caché y la red.
+Proporciona eventos relacionados con varios tipos de E/S, incluidos el disco, la caché y la red.
 
 GUID: SystemIoProviderGuid {3d5c43e3-0f1c-4202-b817-174c0070dc79}
 
@@ -122,11 +122,11 @@ GUID: SystemIoProviderGuid {3d5c43e3-0f1c-4202-b817-174c0070dc79}
 | SYSTEM_IO_KW_CC | PERF_CC |
 | SYSTEM_IO_KW_NETWORK | PERF_NETWORK, EVENT_TRACE_FLAG_NETWORK_TCPIP |
 
-Nota: Al habilitar la palabra SYSTEM_IO_KW_DRIVERS clave , también se habilitarán SYSTEM_IO_KW_FILENAME automáticamente.  El SYSTEM_IO_KW_FILENAME también se activa automáticamente cuando el proveedor de memoria del sistema está habilitado con la SYSTEM_MEMORY_KW_MEMORY clave.
+Nota: Al habilitar la SYSTEM_IO_KW_DRIVERS clave , también se habilitarán SYSTEM_IO_KW_FILENAME automáticamente.  El SYSTEM_IO_KW_FILENAME también se activa automáticamente cuando el proveedor de memoria del sistema está habilitado con la palabra SYSTEM_MEMORY_KW_MEMORY clave.
  
 ### <a name="system-io-filter-provider"></a>Proveedor de filtros de E/S del sistema 
 
-Proporciona eventos relacionados con el filtrado de E/S, incluidos los tiempos y los errores.
+Proporciona eventos relacionados con el filtrado de E/S, incluido el tiempo y los errores.
 
 GUID: SystemIoFilterProviderGuid {fbd09363-9e22-4661-b8bf-e7a34b535b8c}
 
@@ -174,8 +174,8 @@ GUID: SystemMemoryProviderGuid {82958ca9-b6cd-47f8-a3a8-03ae85a4bc24}
 | SYSTEM_MEMORY_KW_VAMAP | PERF_VAMAP, EVENT_TRACE_FLAG_VAMAP |
 
 Notas: 
-* Al habilitar SYSTEM_MEMORY_KW_MEMORY palabra clave , también se habilitarán SYSTEM_IO_KW_FILENAME en el proveedor de E/S del sistema.
-* Los eventos habilitados por el SYSTEM_MEMORY_KW_POOL admiten un filtro de etiquetas de grupo para escribir eventos de forma selectiva solo para determinadas etiquetas de grupo.  Esto se configura como un [filtro esquematizado en](/windows/win32/api/evntprov/ns-evntprov-event_filter_descriptor) el proveedor de memoria del sistema.  El filtro PoolTag se construye de la manera siguiente:
+* Al habilitar SYSTEM_MEMORY_KW_MEMORY palabra clave, también se habilitarán SYSTEM_IO_KW_FILENAME en el proveedor de E/S del sistema.
+* Los eventos habilitados por el SYSTEM_MEMORY_KW_POOL admiten un filtro de etiquetas de grupo para escribir eventos de forma selectiva solo para determinadas etiquetas de grupo.  Se configura como un filtro [esquematizado en](/windows/win32/api/evntprov/ns-evntprov-event_filter_descriptor) el proveedor de memoria del sistema.  El filtro PoolTag se construye de la siguiente manera:
 
     ```cpp
     {
@@ -236,7 +236,7 @@ GUID: SystemProcessProviderGuid {151f55dc-467d-471f-83b5-5f889d46ff66}
 | SYSTEM_PROCESS_KW_THREAD | PERF_THREAD, EVENT_TRACE_FLAG_THREAD |
 | SYSTEM_PROCESS_KW_LOADER | PERF_LOADER, EVENT_TRACE_FLAG_IMAGE_LOAD |
  
-### <a name="system-profile-provider"></a>Proveedor de perfiles de sistema 
+### <a name="system-profile-provider"></a>Proveedor de perfiles del sistema 
 
 Proporciona eventos de generación de perfiles.
 
@@ -249,7 +249,7 @@ GUID: SystemProfileProviderGuid {bfeb0324-1cee-496f-a409-2ac2b48a6322}
  
 ### <a name="system-registry-provider"></a>Proveedor del Registro del sistema 
 
-Proporciona eventos relacionados con el Registro.
+Proporciona eventos relacionados con el registro.
 
 GUID: SystemRegistryProviderGuid {16156bd9-fab4-4cfa-a232-89d1099058e3}
 
@@ -278,7 +278,7 @@ GUID: SystemSchedulerProviderGuid {599a2a76-4d91-4910-9ac7-7d33f2e97a6c}
 | SYSTEM_SCHEDULER_KW_IDEAL_PROCESSOR | PERF_IDEAL_PROCESSOR |
 | SYSTEM_SCHEDULER_KW_CONTEXT_SWITCH | PERF_CONTEXT_SWITCH, EVENT_TRACE_FLAG_CSWITCH |
  
-### <a name="system-syscall-provider"></a>Proveedor de llamadas del sistema 
+### <a name="system-syscall-provider"></a>Proveedor de syscall del sistema 
 
 Proporciona eventos con información sobre las llamadas del sistema.
 
@@ -288,7 +288,7 @@ GUID: SystemSyscallProviderGuid {434286f7-6f1b-45bb-b37e-95f623046c7c}
 | ------- | ------------------------------------- |
 | SYSTEM_SYSCALL_KW_GENERAL | PERF_SYSCALL, EVENT_TRACE_FLAG_SYSTEMCALL |
  
-### <a name="system-timer-provider"></a>Proveedor de temporizadores del sistema 
+### <a name="system-timer-provider"></a>Proveedor de temporizador del sistema 
 
 Proporciona eventos relacionados con los temporizadores del kernel.
 

@@ -1,6 +1,6 @@
 ---
 title: IDeliveryOptimizationJob2::GetProperty (método)
-description: Devuelve una sola propiedad del trabajo do.
+description: Devuelve una sola propiedad del Optimización de distribución trabajo.
 keywords:
 - Método GetProperty
 - Método GetProperty, interfaz IDeliveryOptimizationJob2
@@ -16,16 +16,16 @@ api_type:
 ms.topic: reference
 ms.date: 01/18/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cdca86cb374eded0eabcc1d623d2218a6dc1f4cd5613a18e16b4ec9ab93156b1
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2b849d4d9871a730e420f95b52f26b73b8e7b7a7
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "118811256"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128520642"
 ---
 # <a name="ideliveryoptimizationjob2getproperty-method"></a>IDeliveryOptimizationJob2::GetProperty (método)
 
-Este método devuelve una sola propiedad del trabajo do.
+Este método devuelve una sola propiedad del Optimización de distribución trabajo.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -60,21 +60,21 @@ Este método devuelve los siguientes valores HRESULT.
 
 | Código devuelto                  | Descripción          |
 |------------------------------|----------------------|
-| **S_OK**                     | Success              |
+| **S_OK**                     | Correcto              |
 | **DO_E_UNKNOWN_PROPERTY_ID** | Identificador de propiedad desconocido. |
 
 ## <a name="requirements"></a>Requisitos
 
-| Requisito | Valor |
+| Requisito | Value |
 |---------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo compatible  | Windows 10, solo aplicaciones de escritorio de la versión 1803 \[\]                                   |
 | Servidor mínimo compatible  | Windows Servidor, solo aplicaciones de escritorio de la versión 1709 \[\]                               |
-| Header                    | Deliveryoptimization.h                                                           |
-| Idl                       | DeliveryOptimization.idl                                                         |
+| Encabezado                    | Deliveryoptimization.h                                                           |
+| IDL                       | DeliveryOptimization.idl                                                         |
 | Biblioteca                   | Dosvc.lib                                                                        |
 | Archivo DLL                       | Dosvc.dll                                                                        |
 | IID                       | IID_IDeliveryOptimizationJob2 se define como 18995A26-BF59-4MIENTO-9F8B-D5092D5A2405 |
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [**IDeliveryOptimizationJob2**](ideliveryoptimizationjob2.md)

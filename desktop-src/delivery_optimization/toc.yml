@@ -1,10 +1,10 @@
-- name: Optimización de distribución (DO)
+- name: Optimización de distribución
   href: delivery-optimization-portal.md
   items:
-    - name: Referencia de DO
+    - name: Optimización de distribución referencia
       href: do-reference.md
       items:
-        - name: Enumeraciones DO
+        - name: Optimización de distribución enumeraciones
           href: do-enumerations.md
           items:
             - name: BG_ERROR_CONTEXT
@@ -35,7 +35,7 @@
               href: downloadmode.md
             - name: SwarmStatus
               href: swarmstatus.md
-        - name: Interfaces DO
+        - name: Optimización de distribución interfaces
           href: do-interfaces.md
           items:
             - name: IBackgroundCopyCallback
@@ -240,9 +240,9 @@
                   href: ./do/nf-do-idomanager-createdownload.md
                 - name: Método EnumDownloads
                   href: ./do/nf-do-idomanager-enumdownloads.md
-        - name: Valores devueltos de DO
+        - name: Optimización de distribución valores devueltos
           href: do-return-values.md
-        - name: Estructuras y uniones de DO
+        - name: Optimización de distribución estructuras y uniones
           href: do-structures-and-unions.md
           items:
             - name: BG_FILE_PROGRESS

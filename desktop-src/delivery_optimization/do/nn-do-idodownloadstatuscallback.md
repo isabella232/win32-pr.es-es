@@ -14,12 +14,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: d91ff44e3b4f4247983ec81d53257347c8bcfa523f85855dcd0d37074f4b38fc
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: a6db896bf8d70e795b16512d22027c7ab6a02e91
+ms.sourcegitcommit: 2c13d0f1620f7c089687ef1d97e8c1d22e5d537a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119498955"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128521342"
 ---
 # <a name="idodownloadstatuscallback-interface"></a>Interfaz IDODownloadStatusCallback
 
@@ -31,7 +31,7 @@ La **interfaz IDODownloadStatusCallback** tiene estos métodos.
 
 | Método | Descripción |
 | ---- |:---- |
-| [IDODownloadStatusCallback::OnStatusChanged](./nf-do-idodownloadstatuscallback-onstatuschanged.md) | DO llama a la implementación de este método cada vez que cambia un estado de descarga. |
+| [IDODownloadStatusCallback::OnStatusChanged](./nf-do-idodownloadstatuscallback-onstatuschanged.md) | Optimización de distribución llama a la implementación de este método cada vez que cambia un estado de descarga. |
 
 ## <a name="requirements"></a>Requisitos
 
