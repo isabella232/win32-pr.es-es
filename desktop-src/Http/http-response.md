@@ -8,26 +8,26 @@ keywords:
 - PHTTP_RESPONSE
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a8445021aa61b94ae83a55937b1db5ca4e3c577
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.openlocfilehash: d6a2eb4f39dacabaaba25cc9ffa00a67a51386b4
+ms.sourcegitcommit: 9af6ac4cb91d550a671511c4c05d970abc20226e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127266287"
+ms.lasthandoff: 09/26/2021
+ms.locfileid: "129018347"
 ---
 # <a name="http_response"></a>RESPUESTA \_ HTTP
 
 La versión de la estructura **HTTP \_ RESPONSE** depende de la versión de la cola de solicitudes que se usa de la siguiente manera:
 
--   Cola de solicitudes de LA API del servidor HTTP versión 1.0: se trata de una [**estructura HTTP \_ REQUEST \_ V1.**](/windows/desktop/api/Http/ns-http-http_request_v1)
--   Cola de solicitudes de LA API del servidor HTTP versión 2.0: se trata de una [**estructura HTTP \_ REQUEST \_ V2.**](/windows/desktop/api/Http/ns-http-http_request_v2)
+-   HTTP Server API Versión 1.0: [**estructura HTTP \_ RESPONSE \_ V1.**](/windows/win32/api/http/ns-http-http_response_v1)
+-   HTTP Server API Versión 2.0: [**estructura HTTP \_ RESPONSE \_ V2.**](/windows/win32/api/http/ns-http-http_response_v2)
 
-No use [**HTTP \_ REQUEST \_ V1**](/windows/desktop/api/Http/ns-http-http_request_v1) y [**HTTP REQUEST \_ \_ V2**](/windows/desktop/api/Http/ns-http-http_request_v2) directamente en el código; en su lugar, el uso de **HTTP \_ RESPONSE** garantiza el uso de la versión adecuada de la estructura en función de la versión de la cola de solicitudes.
+No use [**HTTP \_ RESPONSE \_ V1**](/windows/win32/api/http/ns-http-http_response_v1) y [**HTTP RESPONSE \_ \_ V2**](/windows/win32/api/http/ns-http-http_response_v2) directamente en el código; en su lugar, el uso de **HTTP \_ RESPONSE** garantiza que se use la versión adecuada de la estructura en función de la versión de la cola de solicitudes.
 
 
 ```C++
-typedef HTTP_REQUEST_V1 HTTP_RESPONSE;
-typedef HTTP_REQUEST_V2 HTTP_RESPONSE;
+typedef HTTP_RESPONSE_V1 HTTP_RESPONSE;
+typedef HTTP_RESPONSE_V2 HTTP_RESPONSE;
 typedef HTTP_RESPONSE* PHTTP_RESPONSE;
 ```
 
@@ -35,14 +35,14 @@ typedef HTTP_RESPONSE* PHTTP_RESPONSE;
 
 <dl> <dt>
 
-**RESPUESTA \_ HTTP**
+**HTTP \_ RESPONSE_V1**
 </dt> <dd>
 
 La solicitud era de una cola de solicitudes v1.
 
 </dd> <dt>
 
-**RESPUESTA \_ HTTP**
+**HTTP \_ RESPONSE_V2**
 </dt> <dd>
 
 La solicitud era de una cola de solicitudes v2.
