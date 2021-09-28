@@ -4,12 +4,12 @@ ms.assetid: a05b496a-bd4c-4065-8060-df0f8930cde7
 title: Windows Información general sobre componentes de creación de imágenes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92f4276a70b94fd190b7254d8d3d2666581c0c9dbb991dee3ac6e0568b6ee649
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 73eeb50935144e0781cc6282e8af48c932d5f787
+ms.sourcegitcommit: e3dd89486530e3657279bee8d66d923b613703e4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119772515"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129146732"
 ---
 # <a name="windows-imaging-component-overview"></a>Windows Información general sobre componentes de creación de imágenes
 
@@ -43,7 +43,7 @@ WIC incluye varios códecs integrados. Los siguientes códecs estándar se propo
 | JPEG (Grupo conjunto de expertos en fotografía), JFIF Specification 1.02                                  | image/jpeg, image/jpe, image/jpg | Sí      | Sí      |
 | PNG (gráficos de red portátiles), especificación PNG 1.2                                            | image/png                        | Sí      | Sí      |
 | TIFF (Tagged Image File Format), especificación TIFF 6.0                                           | image/tiff, image/tif            | Sí      | Sí      |
-| Windows Media Photo, [HD Photo Specification 1.0](https://www.microsoft.com/whdc/xps/wmphoto.mspx) | image/vnd.ms-febt                | Sí      | Sí      |
+| Windows Media Photo, [HD Photo Specification 1.0](https://www.microsoft.com/whdc/xps/wmphoto.mspx) | image/vnd.ms-photo               | Sí      | Sí      |
 | DDS (DirectDraw Surface)                                                                          | image/vnd.ms-dds                 | Sí      | Sí      |
 
 
