@@ -4,14 +4,14 @@ ms.assetid: 33db8621-114a-4531-908f-f30034441973
 title: MF_TRANSCODE_TOPOLOGYMODE atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 36e8715c135e074956af2280b8474172e94e69e1cca20cd01b020fc6dc79076c
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: f700397914faf7fee35e7f82027d8f8771e8b099
+ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119663845"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127360451"
 ---
-# <a name="mf_transcode_topologymode-attribute"></a>Atributo \_ MF TRANSCODE \_ TOPOLOGYMODE
+# <a name="mf_transcode_topologymode-attribute"></a>Atributo MF \_ TRANSCODE \_ TOPOLOGYMODE
 
 Especifica para una topología de transcodificación si el cargador de topologías cargará transformaciones basadas en hardware.
 
@@ -23,20 +23,20 @@ El modo de topología especifica si se pueden usar transformaciones de hardware 
 
 ## <a name="getset"></a>Obtener o establecer
 
-Para obtener este atributo, llame [**aATTRIBUTEAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obtener este atributo, llame [**a IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para establecer este atributo, llame [**aATTRIBUTEAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para establecer este atributo, llame [**a IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
-## <a name="remarks"></a>Comentarios
+## <a name="remarks"></a>Observaciones
 
 Este atributo es opcional. Debe tener uno de los siguientes valores.
 
 
 
-| Valor                                              | Descripción                                                                                                                                                                                                                                                                       |
+| Value                                              | Descripción                                                                                                                                                                                                                                                                       |
 |----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **\_SE PERMITE EL HARDWARE MF TRANSCODE \_ TOPOLOGYMODE \_ \_** | El cargador de topologías cargará las MTA basadas en hardware, como los descodificadores de hardware, cuando estén disponibles.<br/> El cargador de topologías vuelve automáticamente a la descodificación de software si no se encuentra ningún descodificador de hardware o si un descodificador de hardware no se conecta por algún motivo.<br/> |
-| **MF \_ TRANSCODE \_ TOPOLOGYMODE \_ SOFTWARE \_ ONLY**    | El cargador de topologías solo cargará las MTA de software, incluidos los descodificadores de software.                                                                                                                                                                                                    |
+| **MF \_ TRANSCODE \_ TOPOLOGYMODE \_ HARDWARE \_ ALLOWED** | El cargador de topologías cargará los MFT basados en hardware, como los descodificadores de hardware, cuando estén disponibles.<br/> El cargador de topologías vuelve automáticamente a la descodificación de software si no se encuentra ningún descodificador de hardware o si un descodificador de hardware no se puede conectar por algún motivo.<br/> |
+| **MF \_ TRANSCODE \_ TOPOLOGYMODE \_ SOFTWARE \_ ONLY**    | El cargador de topologías cargará solo las MTA de software, incluidos los descodificadores de software.                                                                                                                                                                                                    |
 
 
 
@@ -44,7 +44,7 @@ Este atributo es opcional. Debe tener uno de los siguientes valores.
 
 El valor predeterminado es **MF \_ TRANSCODE \_ TOPOLOGYMODE \_ SOFTWARE \_ ONLY**.
 
-Si el cargador de topologías inserta un MFT de hardware en la topología, establece el atributo atributo de dirección URL de HARDWARE de [MFT \_ ENUM \_ \_ \_ ](mft-enum-hardware-url-attribute.md) en el nodo de topología. Para comprobar si existe un MFT de hardware, enumere los nodos de la topología resuelta y compruebe si este atributo está presente.
+Si el cargador de topologías inserta un MFT de hardware en la topología, establece el atributo [MFT \_ ENUM \_ HARDWARE URL \_ \_ Attribute](mft-enum-hardware-url-attribute.md) en el nodo de topología. Para comprobar si hay un MFT de hardware, enumere los nodos de la topología resuelta y compruebe si este atributo está presente.
 
 La constante GUID para este atributo se exporta desde mfuuid.lib.
 
@@ -52,15 +52,15 @@ La constante GUID para este atributo se exporta desde mfuuid.lib.
 
 
 
-| Requisito | Valor |
+| Requisito | Value |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo compatible<br/> | Windows solo 7 \[ aplicaciones de escritorio\]<br/>                                         |
+| Cliente mínimo compatible<br/> | Windows 7 aplicaciones \[ de escritorio\]<br/>                                         |
 | Servidor mínimo compatible<br/> | Windows Solo aplicaciones de escritorio de Server 2008 \[ R2\]<br/>                            |
-| Header<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Encabezado<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 <dl> <dt>
 
