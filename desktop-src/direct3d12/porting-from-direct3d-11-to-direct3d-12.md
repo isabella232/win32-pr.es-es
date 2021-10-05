@@ -5,12 +5,12 @@ ms.assetid: 9EB4AC6B-AFDD-4673-8EB3-54272C151784
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8ccf4a0bd10032d94ecaf4a88cc442f3a7ad516
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.openlocfilehash: 8d4e945d7296349ec4c9e08f1dd14f6ef70ab4bb
+ms.sourcegitcommit: 4bce34d062cfaeb0234d0950db0b5558000327c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127072928"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "129542125"
 ---
 # <a name="porting-from-direct3d-11-to-direct3d-12"></a>Portar de Direct3D 11 a Direct3D 12
 
@@ -80,7 +80,7 @@ En Direct3D 12, esta configuración de estado de canalización se ha combinado e
 
 Estas llamadas reemplazan todas las llamadas individuales para establecer sombreadores, diseño de entrada, estado de mezcla, estado de rasterizador, estado de galería de símbolos de profundidad, y así sucesivamente, en Direct3D 11
 
-- Métodos del dispositivo 11: ``CreateInputLayout`` ``CreateXShader`` , , ``CreateDepthStencilState`` yD ``CreateRasterizerState`` .
+- Métodos del dispositivo 11: ``CreateInputLayout`` ``CreateXShader`` , , y ``CreateDepthStencilState`` ``CreateRasterizerState`` .
 - Métodos del contexto de dispositivo 11:  ``IASetInputLayout`` , , , y ``xxSetShader`` ``OMSetBlendState`` ``OMSetDepthStencilState`` ``RSSetState`` .
 
 Aunque Direct3D 12 puede admitir blobs de sombreador compilados más antiguos, los sombreadores deben compilarse mediante el modelo de sombreador 5.1 con las API FXC/D3DCompile o mediante el modelo de sombreador 6 mediante el compilador DXIL DXC. Debe validar la compatibilidad de Shader Model 6 con [**CheckFeatureSupport**](/windows/win32/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport) **y D3D12_FEATURE_SHADER_MODEL**.
@@ -93,7 +93,7 @@ En Direct3D 12, el envío de trabajo es muy explícito y controlado por la aplic
 
 Por [**último, ID3D12CommandQueue**](/windows/win32/api/d3d12/nn-d3d12-id3d12commandqueue) es una cola de primer en salir que almacena el orden correcto de las listas de comandos para su envío a la GPU. Solo cuando una lista de comandos haya completado la ejecución en la GPU, el controlador envía la siguiente lista de comandos de la cola.
 
-En Direct3D 11 no hay ningún concepto explícito de una cola de comandos. En la configuración común de Direct3D 12, la lista de comandos D3D12_COMMAND_LIST_TYPE_DIRECT abierta actualmente para el marco actual se puede considerar análoga **al** contexto inmediato de Direct3D 11. Esto proporciona muchas de las mismas funciones.
+En Direct3D 11 no hay ningún concepto explícito de una cola de comandos. En la configuración común de Direct3D 12, la lista de comandos de **D3D12_COMMAND_LIST_TYPE_DIRECT** abierta actualmente para el marco actual se puede considerar análoga al contexto inmediato de Direct3D 11. Esto proporciona muchas de las mismas funciones.
 
 
 | D3D11DeviceContext                  | ID3D12GraphicsCommand List     |
@@ -119,7 +119,7 @@ En Direct3D 11 no hay ningún concepto explícito de una cola de comandos. En la
 | CopyResource                        | CopyResource                   |
 
 > [!NOTE]
-> Una lista de comandos creada **con D3D12_COMMAND_LIST_TYPE_BUNDLE** es simliar a un contexto aplazado. Direct3D 12 también admite la abiilty  para acceder a  algunas características de un contexto inmediato simultáneamente a la representación a través de D3D12_COMMAND_LIST_TYPE_COPY y **D3D12_COMMAND_LIST_TYPE_COMPUTE** de lista de comandos.
+> Una lista de comandos creada **con D3D12_COMMAND_LIST_TYPE_BUNDLE** es simliar a un contexto diferido. Direct3D 12 también admite la abiilty para acceder *a*  algunas características de un contexto inmediato simultáneamente a la representación a través de D3D12_COMMAND_LIST_TYPE_COPY y D3D12_COMMAND_LIST_TYPE_COMPUTE de **lista** de comandos.
 
 ## <a name="cpugpu-synchronization"></a>Sincronización de CPU/GPU
 
@@ -127,11 +127,11 @@ En Direct3D 11, la sincronización de CPU/GPU era en gran medida automática y n
 
 En Direct3D 12, la aplicación debe administrar explícitamente las dos escalas de tiempo (CPU y GPU). Esto requiere que la aplicación mantenga la información sobre qué recursos necesita la GPU y durante cuánto tiempo. Esto también significa que la aplicación es responsable de garantizar que el contenido de los recursos (recursos confirmados, montones, asignadores de comandos, por ejemplo) no cambie hasta que la GPU haya terminado de usarlos.
 
-El objeto principal para sincronizar las escalas de tiempo es [**el objeto ID3D12Fence.**](/windows/win32/api/d3d12/nn-d3d12-id3d12fence) El funcionamiento de las barreras es bastante sencillo, ya que permiten que la GPU señale cuando se ha completado una tarea. Tanto la GPU como la CPU pueden señalar y pueden esperar en barreras.
+El objeto principal para sincronizar las escalas de tiempo es [**el objeto ID3D12Fence.**](/windows/win32/api/d3d12/nn-d3d12-id3d12fence) El funcionamiento de las barreras es bastante sencillo, ya que permiten que la GPU señale cuando ha completado una tarea. Tanto la GPU como la CPU pueden señalar y pueden esperar en barreras.
 
 Normalmente, el enfoque es que al enviar una lista de comandos para su ejecución, la GPU transmite una señal de barrera al finalizar (cuando ha terminado de leer los datos), lo que permite que la CPU reutilice o destruya los recursos.
 
-En Direct3D 11, la marca de mapa [**D3D11DeviceContext::Map**](/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-map) flag D3D11 MAP WRITE DISCARD trata básicamente cada recurso como una fuente infinita de memoria en la que la aplicación podría escribir (un proceso conocido como "cambio de \_ \_ \_ nombre"). En Direct3D 12 de nuevo, el proceso es explícito: es necesario asignar memoria adicional y se deben usar barreras para sincronizar las operaciones. Los búferes en anillo (que constan de búferes grandes) pueden ser una buena técnica para esto; consulte el escenario de búfer en anillo en [Fence-Based Resource Management](fence-based-resource-management.md).
+En Direct3D 11, la marca [**ID3D11DeviceContext::Map**](/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-map) flag D3D11 MAP WRITE DISCARD trata básicamente cada recurso como una fuente infinita de memoria en la que la aplicación podría escribir (un proceso conocido como "cambio de \_ \_ \_ nombre"). En Direct3D 12 de nuevo, el proceso es explícito: se debe asignar memoria adicional y se deben usar barreras para sincronizar las operaciones. Los búferes en anillo (que constan de búferes grandes) pueden ser una buena técnica para esto, consulte el escenario de búfer en anillo en Administración de recursos basada en [barreras](fence-based-resource-management.md).
 
 ![uso de un búfer en anillo](images/ring-buffer-1.png)
 
@@ -143,7 +143,7 @@ Las firmas raíz detallan las asignaciones entre el número de ranura de firma r
 
 Una de las implicaciones de este sistema es que la aplicación es responsable de cambiar el nombre de las tablas de descriptores, lo que permite a los desarrolladores comprender el costo de rendimiento de cambiar incluso un único descriptor por llamada a draw.
 
-Una nueva característica de Direct3D 12 es que una aplicación puede controlar qué descriptores se comparten entre las fases del sombreador. En Direct3D 11, los recursos, como los UAV, se comparten entre todas las fases del sombreador. Al permitir que los descriptores se deshabiliten para determinadas fases del sombreador, los registros que usan los descriptores que se han deshabilitado están disponibles para que los utilicen los descriptores que están habilitados para una fase de sombreador determinada.
+Una nueva característica de Direct3D 12 es que una aplicación puede controlar qué descriptores se comparten entre las fases del sombreador. En Direct3D 11, los recursos como UAV se comparten entre todas las fases del sombreador. Al permitir que los descriptores se deshabiliten para determinadas fases del sombreador, los registros que usan los descriptores que se han deshabilitado están disponibles para que los utilicen los descriptores que están habilitados para una fase de sombreador determinada.
 
 En la tabla siguiente se muestra una firma raíz de ejemplo.
 
@@ -169,11 +169,11 @@ En Direct3D 11, el estado del recurso no lo mantiene la aplicación, sino el con
 
 En Direct3D 12, el mantenimiento del estado de los recursos se convierte en responsabilidad de la aplicación, para habilitar el paralelismo completo en la grabación de listas de comandos: la aplicación debe controlar las escalas de tiempo de grabación de las listas de comandos (que se pueden realizar en paralelo) y las escalas de tiempo de ejecución que deben ser secuenciales.
 
-El método [**ResourceBarija**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) controla una transición de estado de recurso. Principalmente, la aplicación debe informar al controlador cuándo cambia el uso de recursos. Por ejemplo, si un recurso se usa como destino de representación y, a continuación, se va a usar como entrada para un sombreador de vértices en la siguiente llamada a draw, esto podría requerir un breve período de detención en la operación de GPU para completar la operación de destino de representación antes de controlar el sombreador de vértices.
+El método [**ResourceBarija**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resourcebarrier) controla una transición de estado de recurso. Principalmente, la aplicación debe informar al controlador cuando cambia el uso de recursos. Por ejemplo, si un recurso se usa como destino de representación y, a continuación, se va a usar como entrada para un sombreador de vértices en la siguiente llamada a draw, esto puede requerir un breve período de detención en la operación de GPU para completar la operación de destino de representación antes de controlar el sombreador de vértices.
 
 Este sistema permite la sincronización más específica (las detenciones de GPU) de la canalización de gráficos, así como vaciados de caché y posiblemente algunos cambios de diseño de memoria (como la vista de destino de representación para descomprimir la vista de galería de símbolos de profundidad).
 
-Esto se conoce como barrera de transición. Hay otros tipos de barreras, en Direct3D 11, [**id3D11DeviceContext2::TiledResourceBarresource habilitó**](/windows/win32/api/d3d11_2/nf-d3d11_2-id3d11devicecontext2-tiledresourcebarrier) la misma memoria física para que la usen dos recursos en mosaico diferentes. En Direct3D 12, esto se conoce como una "barrera de alias". Las barreras de alias se pueden usar para los recursos en mosaico y colocados en Direct3D 12. Además, existe la barrera UAV. En Direct3D 11, es necesario serializar todas las operaciones de envío y dibujo de UAV, aunque estas operaciones se pueden canalizaciones o funcionan en paralelo. Para Direct3D 12, esta restricción se quita mediante la adición de una barrera UAV. Una barrera UAV garantiza que las operaciones de UAV son secuenciales, por lo que si una segunda operación requiere que la primera se complete, la segunda se verá forzada a esperar por la adición de la barrera. La operación predeterminada para los UAV es simplemente que las operaciones continúen lo más rápido posible.
+Esto se conoce como barrera de transición. Hay otros tipos de barreras, en Direct3D 11, [**id3D11DeviceContext2::TiledResourceBartero**](/windows/win32/api/d3d11_2/nf-d3d11_2-id3d11devicecontext2-tiledresourcebarrier) habilitó la misma memoria física para que la usen dos recursos en mosaico diferentes. En Direct3D 12, esto se conoce como una "barrera de alias". Las barreras de alias se pueden usar para los recursos en mosaico y colocados en Direct3D 12. Además, existe la barrera UAV. En Direct3D 11, es necesario serializar todas las operaciones de envío y dibujo de UAV, aunque estas operaciones se pueden canalizaciones o funcionan en paralelo. Para Direct3D 12, esta restricción se quita mediante la adición de una barrera UAV. Una barrera UAV garantiza que las operaciones de UAV son secuenciales, por lo que si una segunda operación requiere que la primera se complete, la segunda se verá forzada a esperar por la adición de la barrera. La operación predeterminada para los UAV es simplemente que las operaciones continúen lo más rápido posible.
 
 Claramente, hay mejoras de rendimiento si se puede paralelizar una carga de trabajo.
 
@@ -192,7 +192,7 @@ En Direct3D 11 había algunos métodos que simplificaban varias operaciones de n
 
 ## <a name="odds-and-ends"></a>Probabilidades y finales
 
-En la tabla siguiente se muestra una serie de características que son similares entre Direct3D 11 y 12, pero no son idénticas.
+En la tabla siguiente se muestra una serie de características similares entre Direct3D 11 y 12, pero que no son idénticas.
 
 
 
@@ -201,10 +201,10 @@ En la tabla siguiente se muestra una serie de características que son similares
 | [**ID3D11Query**](/windows/win32/api/d3d11/nn-d3d11-id3d11query)                                              | [**ID3D12QueryHeap**](/windows/win32/api/d3d12/nn-d3d12-id3d12queryheap) permite agrupar las consultas, lo que reduce el costo.                                                                                                                                                                                                                                                                                                                                     |
 | [**ID3D11Predicate**](/windows/win32/api/d3d11/nn-d3d11-id3d11predicate)                                      | La predicación ahora está habilitada al tener datos en un búfer totalmente transparente. El objeto Id3D 11 [**ID3D11Predicate**](/windows/win32/api/d3d11/nn-d3d11-id3d11predicate) se reemplaza por [**ID3D12Resource::Map**](/windows/win32/api/d3d12/nf-d3d12-id3d12resource-map), que debe seguir una llamada a [**ResolveQueryData**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-resolvequerydata) y una operación de sincronización de GPU mediante una barrera para esperar a que los datos estén listos. Consulte [Predication](predication.md). |
 | Contador oculto UAV/SO                                                                  | La aplicación es responsable de la asignación y administración de contadores SO/UAV. Consulte [Contadores de salida de flujo y](stream-output-counters.md) [Contadores de UAV.](uav-counters.md)                                                                                                                                                                                                                                                             |
-| MinLOD dinámico de recursos (nivel mínimo de detalle)                                       | Se ha movido al minLOD estático del descriptor SRV.                                                                                                                                                                                                                                                                                                                                                                                 |
+| MinLOD dinámico de recursos (nivel mínimo de detalle)                                       | Esto se ha movido al minLOD estático del descriptor SRV.                                                                                                                                                                                                                                                                                                                                                                                 |
 | Draw \* Indirect/[**DispatchIndirect**](/windows/win32/api/d3d11/nf-d3d11-id3d11devicecontext-dispatchindirect) | Los métodos indirectos de dibujo se combinan en el único [**método ExecuteIndirect.**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-executeindirect)                                                                                                                                                                                                                                                                                                        |
-| Los formatos depthStencil se intercalan                                                   | Los formatos depthStencil son planas. Por ejemplo, un formato de 24 bits de profundidad, 8 bits de galería de símbolos se almacenarían con el formato 24/8/24/8... etc en Direct3D 11, pero como 24/24/24... seguido de 8/8/8... en Direct3D 12. Tenga en cuenta que cada plano es su propio subrecurso en D3D12 (consulte [Subrecursos).](subresources.md)                                                                                                                    |
-| [**ResizeTilePool**](/windows/win32/api/d3d11_2/nf-d3d11_2-id3d11devicecontext2-resizetilepool)                   | Los recursos reservados se pueden asignar a varios montones. Cuando se hubiera crecido un grupo de mosaicos en D3D11, se puede asignar un montón adicional en D3D12 en su lugar.                                                                                                                                                                                                                                                                               |
+| Los formatos depthStencil se intercalan                                                   | Los formatos depthStencil son planas. Por ejemplo, un formato de 24 bits de profundidad, 8 bits de galería de símbolos se almacenaría con el formato 24/8/24/8... etc en Direct3D 11, pero como 24/24/24... seguido de 8/8/8... en Direct3D 12. Tenga en cuenta que cada plano es su propio subrecurso en D3D12 (consulte [Subrecursos).](subresources.md)                                                                                                                    |
+| [**ResizeTilePool**](/windows/win32/api/d3d11_2/nf-d3d11_2-id3d11devicecontext2-resizetilepool)                   | Los recursos reservados se pueden asignar a varios montones. Cuando se habría aumentado un grupo de mosaicos en D3D11, se puede asignar un montón adicional en D3D12 en su lugar.                                                                                                                                                                                                                                                                               |
 
 
 
