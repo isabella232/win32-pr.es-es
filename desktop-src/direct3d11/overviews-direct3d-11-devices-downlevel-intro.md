@@ -9,17 +9,14 @@ keywords:
 - nivel de característica, DirectX
 ms.topic: article
 ms.date: 09/01/2020
-ms.openlocfilehash: e1ca80faa816ff7601f0a33893a708fafa7f2d3f
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.openlocfilehash: 311257c8ba0881d6937a33083f4077cf31bdc77e
+ms.sourcegitcommit: b1f058e2360e54c07cb988a3204ec33f47889122
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127465439"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "129454601"
 ---
 # <a name="direct3d-feature-levels"></a>Niveles de característica de Direct3D
-
-> [!NOTE]
-> **Parte de la información hace referencia al producto de versión preliminar, el cual puede sufrir importantes modificaciones antes de que se publique la versión comercial. Microsoft no ofrece ninguna garantía, expresa o implícita, con respecto a la información que se ofrece aquí.**
 
 Para controlar la diversidad de tarjetas de vídeo en máquinas nuevas y existentes, Microsoft Direct3D 11 presenta el concepto de niveles de características. En este tema se deba a los niveles de características de Direct3D.
 
@@ -75,13 +72,13 @@ Las siguientes características están disponibles para los niveles de caracter�
 | [Compresión BC4/BC5](../direct3d10/d3d10-graphics-programming-guide-resources-block-compression.md) | Sí | Sí | Sí | Sí | Sí | Sí | Sí | No |
 | [Compresión BC6H/BC7](texture-block-compression-in-direct3d-11.md) | Sí | Sí | Sí | Sí | Sí | No | No | No |
 | [Alfa a cobertura](./d3d10-graphics-programming-guide-blend-state.md) | Sí | Sí | Sí | Sí | Sí | Sí | Sí | No |
-| [Formatos extendidos (BGRA, y así sucesivamente)](overviews-direct3d-11-devices-downlevel-exceptions.md) | Sí | Sí | Sí | Sí | Sí | Opcional | Opcional | Sí |
+| [Formatos extendidos (BGRA, y así sucesivamente)](overviews-direct3d-11-devices-downlevel-exceptions.md) | Sí | Sí | Sí | Sí | Sí | Opcional | Opcionales | Sí |
 | [Formato de color de alta densidad XR de 10 bits](overviews-direct3d-11-devices-downlevel-exceptions.md) | Sí | Sí | Sí | Sí | Sí | Opcional | Opcional | N/D |
 | [Operaciones lógicas (fusión de salida)](/windows/win32/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) | Sí | Sí | Sí | Sí | Opcional<sup>1</sup> | Opcional<sup>1</sup> | Opcional<sup>1</sup> | No |
 | Rasterización independiente del destino | Sí | Sí | Sí | Sí | No | No | No | No |
-| [Varios destinos de representación (MRT) con ForcedSampleCount 1](/windows/win32/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) | Sí | Sí | Sí | Sí | Opcional<sup>1</sup> | Opcional<sup>1</sup> | Opcional<sup>1</sup> | No |
-| Ranuras UAV | En capas<sup>9</sup> | 64 | 64 | 64 | 8 | 1 | 1 | N/D |
-| <b>Nivel \\ de característica</b> | <b>12 \_ 2<sup>8</sup></b> | <b>12 \_ 1<sup>0</sup></b> | <b>12 \_ 0<sup>0</sup></b> | <b>11 \_ 1<sup>1</sup></b> | <b>11 \_ 0</b> | <b>10 \_ 1</b> | <b>10 \_ 0</b> | <b>9 \_ 3<sup>7</sup></b> |
+| [Destino de representación múltiple (MRT) con ForcedSampleCount 1](/windows/win32/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) | Sí | Sí | Sí | Sí | Opcional<sup>1</sup> | Opcional<sup>1</sup> | Opcional<sup>1</sup> | No |
+| Ranuras UAV | En niveles<sup>9</sup> | 64 | 64 | 64 | 8 | 1 | 1 | N/D |
+| <b>Nivel \\ de característica de características</b> | <b>12 \_ 2<sup>8</sup></b> | <b>12 \_ 1<sup>0</sup></b> | <b>12 \_ 0<sup>0</sup></b> | <b>11 \_ 1<sup>1</sup></b> | <b>11 \_ 0</b> | <b>10 \_ 1</b> | <b>10 \_ 0</b> | <b>9 \_ 3<sup>7</sup></b> |
 | UAV en cada fase | Sí | Sí | Sí | Sí | No | No | No | N/D |
 | [Número máximo de muestras forzadas para la representación solo de UAV](/windows/win32/api/D3D11/ns-d3d11-d3d11_feature_data_d3d11_options) | 16 | 16 | 16 | 16 | 8 | N/D | N/D | N/D |
 | Desplazamiento de búfer constante y actualizaciones parciales | Sí | Sí | Sí | Sí | Opcional<sup>1</sup> | Opcional<sup>1</sup> | Opcional<sup>1</sup> | Sí<sup>1</sup> |
@@ -156,8 +153,8 @@ Las siguientes características están disponibles para los niveles de caracter�
 | Elementos de vértice superpuestos | Sí | No |
 | Máscaras de escritura independientes | No | No |
 | Instancing | No | No |
-| No potencias de 2 condicionalmente<sup>3</sup> | Sí | Sí |
-| No potencias de 2 incondicionalmente<sup>4</sup> | No | No |
+| Nonpowers-of-2 condicionalmente<sup>3</sup> | Sí | Sí |
+| Nonpowers-of-2 unconditionally<sup>4</sup> | No | No |
 
 ## <a name="footnotes-for-the-tables"></a>Notas al pie de las tablas
 
@@ -165,27 +162,27 @@ Las siguientes características están disponibles para los niveles de caracter�
 
 <sup>1 Requiere</sup> el entorno de ejecución de Direct3D 11.1.
 
-<sup>2</sup> El modelo de sombreador 5.0 y superior puede admitir opcionalmente sombreadores de doble precisión, sombreadores extendidos de doble precisión, instrucciones de **sombreador SAD4** y sombreadores de precisión parcial. Para determinar las opciones del modelo de sombreador 5.0 disponibles para DirectX 11, llame a [**ID3D11Device::CheckFeatureSupport**](/windows/win32/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport). Cierta compatibilidad depende del hardware en el que se ejecute. El modelo de sombreador 5.1 y versiones posteriores solo se admiten a través de la API de DirectX 12, independientemente del nivel de característica que se esté utilizando. DirectX 11 solo admite hasta el modelo de sombreador 5.0. La API de DirectX 12 solo baja al nivel de característica 11 \_ 0.
+<sup>2</sup> El modelo de sombreador 5.0 y superior puede admitir opcionalmente sombreadores de precisión doble, sombreadores extendidos de precisión doble, la instrucción de **sombreador SAD4** y sombreadores de precisión parcial. Para determinar las opciones del modelo de sombreador 5.0 que están disponibles para DirectX 11, llame a [**ID3D11Device::CheckFeatureSupport.**](/windows/win32/api/D3D11/nf-d3d11-id3d11device-checkfeaturesupport) Cierta compatibilidad depende del hardware en el que se ejecute. El modelo de sombreador 5.1 y versiones posteriores solo se admiten a través de la API de DirectX 12, independientemente del nivel de característica que se esté utilizando. DirectX 11 solo admite hasta el modelo de sombreador 5.0. La API de DirectX 12 solo baja al nivel de característica 11 \_ 0.
 
-<sup>3</sup> En los niveles de características 9 1, 9 2 y 9 3, el dispositivo de pantalla admite el uso de \_ \_ texturas 2D con dimensiones que no son potencias de dos en dos \_ condiciones. En primer lugar, solo se puede crear un nivel de mapa de MIP para cada textura y, en segundo lugar, no se permite ningún modo de muestreador de encapsulado para texturas (es decir, los miembros **AddressU,** **AddressV** y **AddressW** de [**D3D11 \_ SAMPLER \_ DESC**](/windows/win32/api/D3D11/ns-d3d11-d3d11_sampler_desc) no se pueden establecer en [**D3D11 \_ TEXTURE ADDRESS \_ \_ WRAP**](/windows/win32/api/D3D11/ne-d3d11-d3d11_texture_address_mode)).
+<sup>3</sup> En los niveles de características \_ 9 1, 9 2 y 9 3, el dispositivo de pantalla admite el uso de \_ texturas 2D con dimensiones que no son potencias de dos en dos \_ condiciones. En primer lugar, solo se puede crear un nivel de mapa MIP para cada textura y, en segundo lugar, no se permite ningún modo de muestreador de encapsulado para texturas (es decir, los miembros **AddressU,** **AddressV** y **AddressW** de [**D3D11 \_ SAMPLER \_ DESC**](/windows/win32/api/D3D11/ns-d3d11-d3d11_sampler_desc) no se pueden establecer en [**D3D11 \_ TEXTURE ADDRESS \_ \_ WRAP**](/windows/win32/api/D3D11/ne-d3d11-d3d11_texture_address_mode)).
 
-<sup>4</sup> En los niveles de características 10 \_ 0, 10 1 y 11 0, el dispositivo de pantalla admite incondicionalmente el uso de \_ texturas 2D con dimensiones que no son potencias de \_ dos.
+<sup>4</sup> En los niveles de características 10 \_ 0, 10 1 y 11 0, el dispositivo de visualización admite incondicionalmente el uso de \_ texturas 2D con dimensiones que no son potencias de \_ dos.
 
-<sup>5</sup> Sombreador de vértices 2a con 256 instrucciones, 32 registros temporales, control de flujo estático de profundidad 4, control de flujo dinámico de profundidad 24 y D3DVS20CAPS \_ PREDICATION. Sombreador de píxeles 2x con 512 instrucciones, 32 registros temporales, control de flujo estático de profundidad 4, control de flujo dinámico de profundidad 24, D3DPS20CAPS \_ ARBITRARYSWHIBLE, D3DPS20CAPS \_ GRADIENTINSTRUCTIONS, D3DPS20CAPS \_ PREDICATION, D3DPS20CAPS \_ NODEPENDENTREADLIMIT y D3DPS20CAPS \_ NOTESTRUCTIONLIMIT.
+<sup>5</sup> Sombreador de vértices 2a con 256 instrucciones, 32 registros temporales, control de flujo estático de profundidad 4, control de flujo dinámico de profundidad 24 y PREDICACIÓN D3DVS20CAPS. \_ Sombreador de píxeles 2x con instrucciones 512, 32 registros temporales, control de flujo estático de profundidad 4, control de flujo dinámico de profundidad 24, \_ \_ D3DPS20CAPS ARBITRARYSWHIBLE, D3DPS20CAPS GRADIENTINSTRUCTIONS, D3DPS20CAPS \_ PREDICATION, D3DPS20CAPS \_ NODEPENDENTREADLIMIT y D3DPS20CAPS \_ NOTESTRUCTIONLIMIT.
 
 <sup>6 niveles</sup> superiores opcionales.
 
-<sup>7</sup> Para el nivel de característica 9_3, los únicos métodos de representación admitidos son **Draw**, **DrawIndexed** y **DrawIndexInstanced.** Además, para el nivel de característica 9_3, la representación de listas de puntos solo se admite para la representación a través de **Draw**.
+<sup>7</sup> Para el nivel de característica 9_3, los únicos métodos de representación admitidos son **Draw**, **DrawIndexed** y **DrawIndexInstanced.** Además, para el nivel de característica 9_3, la representación de lista de puntos solo se admite para la representación a través **de Draw**.
 
 <sup>8 Requiere</sup> el entorno de ejecución de Direct3D 12.
 
-<sup>9</sup> En la API de Direct3D 12 hay límites en el número de descriptores en un montón CBV/SRV/UAV. Consulte [Niveles de hardware para](../direct3d12/hardware-support.md) más información. Por separado, hay un límite en el número de UAV en todas las tablas de descriptores en todas las fases, que se basa en el nivel [de enlace de recursos](https://microsoft.github.io/DirectX-Specs/d3d/ResourceBinding.html#levels-of-hardware-support).
+<sup>9</sup> En la API de Direct3D 12 hay límites en el número de descriptores de un montón CBV/SRV/UAV. Consulte [Niveles de hardware para](../direct3d12/hardware-support.md) más información. Por separado, hay un límite en el número de UAV en todas las tablas de descriptores en todas las fases, que se basa en el [nivel de enlace de recursos](https://microsoft.github.io/DirectX-Specs/d3d/ResourceBinding.html#levels-of-hardware-support).
 
 Para más información sobre la compatibilidad con formatos en distintos niveles de características de hardware, consulte:
 
 - [Compatibilidad con formato DXGI para hardware de nivel 12.1 de características de Direct3D](../direct3ddxgi/hardware-support-for-direct3d-12-1-formats.md)
 - [Compatibilidad con formato DXGI para hardware de nivel 12.0 de características de Direct3D](../direct3ddxgi/hardware-support-for-direct3d-12-0-formats.md)
-- [Compatibilidad con formato DXGI para hardware de nivel 11.1 de características de Direct3D](../direct3ddxgi/format-support-for-direct3d-11-1-feature-level-hardware.md)
+- [Compatibilidad con el formato DXGI para hardware de nivel 11.1 de características de Direct3D](../direct3ddxgi/format-support-for-direct3d-11-1-feature-level-hardware.md)
 - [Compatibilidad con formato DXGI para hardware de nivel 11.0 de características de Direct3D](../direct3ddxgi/format-support-for-direct3d-11-0-feature-level-hardware.md)
 - [Compatibilidad de hardware con formatos Direct3D 10Level9](/previous-versions/ff471324(v=vs.85))
 - [Compatibilidad de hardware con formatos de Direct3D 10.1](/previous-versions/cc627091(v=vs.85))

@@ -4,19 +4,19 @@ description: En este tema se describe cómo crear y animar un objeto visual que 
 ms.assetid: 8912CCF9-C343-45CB-AB31-55D26C118AF2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b882d1be2642f341e74a193605b217a9b7e2d0cc295370c7a5ec8bee4a844f03
-ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.openlocfilehash: 20663dfbc7fd247fe155ffbbd859101d8706cf4a
+ms.sourcegitcommit: b1f058e2360e54c07cb988a3204ec33f47889122
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119670975"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "129454631"
 ---
 # <a name="how-to-animate-the-bitmap-of-a-layered-child-window"></a>Cómo animar el mapa de bits de una ventana secundaria en capas
 
 > [!NOTE]
-> Para las aplicaciones Windows 10, se recomienda usar Windows.UI.Composition API en lugar de DirectComposition. Para obtener más información, [consulte Modernización de la aplicación de escritorio mediante la capa visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> Para las aplicaciones de Windows 10, se recomienda usar Windows.UI.Composition API en lugar de DirectComposition. Para obtener más información, [consulte Modernización de la aplicación de escritorio mediante la capa visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
-En este tema se describe cómo crear y animar un objeto visual que usa el mapa de bits de una ventana secundaria en capas como contenido del objeto visual. En el ejemplo descrito en este tema se usa una transformación de escala animada para "aumentar" el mapa de bits de una ventana secundaria de tamaño de posición a tamaño completo. Para obtener más información sobre las ventanas en capas, vea [Mapas de bits de ventana](bitmap-surfaces.md).
+En este tema se describe cómo crear y animar un objeto visual que usa el mapa de bits de una ventana secundaria en capas como contenido del objeto visual. En el ejemplo descrito en este tema se usa una transformación de escala animada para "aumentar" el mapa de bits de una ventana secundaria desde el tamaño del control al tamaño completo. Para obtener más información sobre las ventanas en capas, vea [Mapas de bits de ventana.](bitmap-surfaces.md)
 
 ## <a name="what-you-need-to-know"></a>Lo que necesita saber
 
@@ -32,13 +32,13 @@ En este tema se describe cómo crear y animar un objeto visual que usa el mapa d
 -   Microsoft Win32
 -   Modelo de objetos componentes (COM)
 
-## <a name="instructions"></a>Instructions
+## <a name="instructions"></a>Instrucciones
 
 ### <a name="step-1-create-a-layered-child-window"></a>Paso 1: Crear una ventana secundaria en capas
 
 Siga estos pasos para crear una ventana secundaria en capas.
 
-1.  Registre la clase de ventana secundaria y cree una ventana secundaria que tenga el [**estilo WS \_ EX \_ LAYERED.**](/windows/desktop/winmsg/extended-window-styles) En el ejemplo siguiente, especifique la resolución de pantalla en píxeles por pulgada lógica y es el `m_dpiX` identificador de la ventana principal de la `m_dpiY` `m_hwndMain` aplicación.
+1.  Registre la clase de ventana secundaria y cree una ventana secundaria que tenga el estilo [**\_ \_ LAYERED de WS EX.**](/windows/desktop/winmsg/extended-window-styles) En el ejemplo siguiente, especifique la resolución de pantalla en píxeles por pulgada lógica y es el identificador `m_dpiX` de la ventana principal de la `m_dpiY` `m_hwndMain` aplicación.
 ```C++
     HWND m_hwndLayeredChild;
 
@@ -54,9 +54,9 @@ HRESULT hr = S_OK;
     wcex.hInstance      = HINST_THISCOMPONENT;
     wcex.hIcon          = NULL;
     wcex.hCursor        = LoadCursor(NULL, IDC_ARROW);
-    wcex.hbrBackground  = (HBRUSH) GetStockObject (GRAY_BRUSH);
+    wcex.hbrBackground  = (HBRUSH) GetStockObject(GRAY_BRUSH);
     wcex.lpszMenuName   = NULL;
-    wcex.lpszClassName  = L&quot;DCompLayeredChildWindow&quot;;
+    wcex.lpszClassName  = L"DCompLayeredChildWindow";
     wcex.hIconSm        = NULL;
 
     if (!RegisterClassExW(&wcex))
@@ -65,17 +65,17 @@ HRESULT hr = S_OK;
     }
 
     m_hwndLayeredChild = CreateWindowEx(WS_EX_LAYERED,
-        L&quot;DCompLayeredChildWindow&quot;,                
-        NULL,                                    
-        WS_CHILD | WS_CLIPSIBLINGS,             
-        0, 
-        0, 
+        L"DCompLayeredChildWindow",
+        NULL,
+        WS_CHILD | WS_CLIPSIBLINGS,
+        0,
+        0,
         static_cast<UINT>(ceil(640.0f * m_dpiX / 96.0f)),
-        static_cast<UINT>(ceil(480.0f * m_dpiY / 96.0f)),                                  
-        m_hwndMain,                               
-        NULL,                                     
-        HINST_THISCOMPONENT,                    
-        this);                                   
+        static_cast<UINT>(ceil(480.0f * m_dpiY / 96.0f)),
+        m_hwndMain,
+        NULL,
+        HINST_THISCOMPONENT,
+        this);
 ```
 
 
@@ -93,18 +93,18 @@ HRESULT hr = S_OK;
 
     
 
-3.  Represente algún contenido en la ventana secundaria.
+3.  Representar parte del contenido en la ventana secundaria.
 
 ### <a name="step-2-initialize-directcomposition-objects"></a>Paso 2: Inicializar objetos DirectComposition
 
-Cree el objeto de dispositivo y el objeto de destino de composición. Para obtener más información, [vea Cómo inicializar DirectComposition](initialize-directcomposition.md).
+Cree el objeto de dispositivo y el objeto de destino de composición. Para obtener más información, [vea How to initialize DirectComposition](initialize-directcomposition.md).
 
 ### <a name="step-3-create-a-visual-object-and-set-the-layered-child-windows-bitmap-as-the-content-property"></a>Paso 3: Crear un objeto visual y establecer el mapa de bits de la ventana secundaria en capas como la propiedad content
 
-Siga estos pasos para crear un objeto visual, establezca su propiedad de contenido para usar el mapa de bits de la ventana secundaria en capas y, a continuación, agregue el objeto visual al árbol visual.
+Siga estos pasos para crear un objeto visual, establezca su propiedad content para usar el mapa de bits de la ventana secundaria en capas y, a continuación, agregue el objeto visual al árbol visual.
 
 1.  Llame a [**IDCompositionDevice::CreateVisual**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createvisual) para crear un objeto visual.
-2.  Cree una superficie de Microsoft DirectComposition para la ventana secundaria superada pasando el identificador de la ventana secundaria a la [**función CreateSurfaceFromHwnd.**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createsurfacefromhwnd)
+2.  Cree una superficie de Microsoft DirectComposition para la ventana secundaria en capas pasando el identificador de la ventana secundaria a la [**función CreateSurfaceFromHwnd.**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-createsurfacefromhwnd)
 3.  Llame al método [**IDCompositionVisual::SetContent**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-setcontent) del objeto visual para establecer la nueva superficie como el contenido visual de la ventana secundaria superada.
 4.  Agregue el objeto visual al árbol visual. Para agregar el objeto visual a la raíz del árbol, llame al [**método IDCompositionTarget::SetRoot.**](/windows/win32/api/dcomp/nf-dcomp-idcompositiontarget-setroot) Para agregar el objeto visual como elemento secundario de otro objeto visual, use el [**método IDCompositionVisual::AddVisual**](/windows/win32/api/dcomp/nf-dcomp-idcompositionvisual-addvisual) del objeto visual primario.
 
@@ -161,7 +161,7 @@ if (SUCCEEDED(hr))
 
 Use los métodos de la interfaz [**IDCompositionAnimation**](/windows/desktop/api/DcompAnimation/nn-dcompanimation-idcompositionanimation) del objeto de animación para crear una función de animación.
 
-En el ejemplo siguiente se crea una función de animación sencilla que consta de un segmento polinómico cúbica y un segmento final.
+En el ejemplo siguiente se crea una función de animación simple que consta de un segmento polinómico cúbica y un segmento final.
 
 
 ```C++
@@ -211,9 +211,9 @@ hr = pVisual->SetTransform(pScale);
 
 
 
-### <a name="step-8-cloak-the-layered-child-window"></a>Paso 8: Ocultación de la ventana secundaria en capas
+### <a name="step-8-cloak-the-layered-child-window"></a>Paso 8: Desastroso de la ventana secundaria en capas
 
-Antes de confirmar la animación, use la función [**DwmSetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmsetwindowattribute) con la [**marca \_ DWMWAWINDOW PARA**](/windows/desktop/api/dwmapi/ne-dwmapi-dwmwindowattribute) "ocultar" la ventana secundaria en capas. La protección quita la ventana secundaria en capas de la vista mientras la versión animada de la vista de mapa de bits de la ventana se representa en la pantalla.
+Antes de confirmar la animación, use la función [**DwmSetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmsetwindowattribute) con la marca [**DWMWA \_ COMMITT**](/windows/desktop/api/dwmapi/ne-dwmapi-dwmwindowattribute) para "ocultar" la ventana secundaria en capas. Al quitar la ventana secundaria en capas de la vista, la versión animada de la vista de mapa de bits de la ventana se representa en la pantalla.
 
 
 ```C++
@@ -226,13 +226,13 @@ DwmSetWindowAttribute(pDemoApp->m_hwndLayeredChild,
 
 
 
-### <a name="step-9-commit-the-composition"></a>Paso 9: Confirmar la composición
+### <a name="step-9-commit-the-composition"></a>Paso 9: Confirmación de la composición
 
 Use el [**método IDCompositionDevice::Commit**](/windows/win32/api/dcomp/nf-dcomp-idcompositiondevice-commit) para confirmar el lote de comandos en Microsoft DirectComposition para su procesamiento. La animación aparecerá en la ventana de destino.
 
 ### <a name="step-10-uncloak-the-layered-child-window"></a>Paso 10: Desencapso de la ventana secundaria en capas
 
-Una vez finalizada la animación, use la [**función DwmSetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmsetwindowattribute) con la marca **\_ DWMWAWINDOW PARA** desencapso de la ventana secundaria en capas.
+Una vez finalizada la animación, use la función [**DwmSetWindowAttribute**](/windows/desktop/api/dwmapi/nf-dwmapi-dwmsetwindowattribute) con la marca **DWMWAWINDOW \_ PARA** desencapsmar la ventana secundaria en capas.
 
 ### <a name="step-11-release-directcomposition-objects"></a>Paso 11: Liberar objetos DirectComposition
 
@@ -397,7 +397,7 @@ private:
 //
 // AnimateLayeredChildWindow.cpp
 //
-// THIS CODE AND INFORMATION IS PROVIDED &quot;AS IS&quot; WITHOUT WARRANTY OF
+// THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
 // ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
 // THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
 // PARTICULAR PURPOSE.
@@ -408,7 +408,7 @@ private:
 //   of the child window from thumbsize to fullsize. Click the child
 //   window again to reset.
 
-#include &quot;AnimateLayeredChildWindow.h&quot;
+#include "AnimateLayeredChildWindow.h"
 
 #define TIMER_ID 100
 
@@ -506,10 +506,10 @@ HRESULT DemoApp::InitializeMainWindow()
         wcex.cbClsExtra    = 0;
         wcex.cbWndExtra    = sizeof(LONG_PTR);
         wcex.hInstance     = HINST_THISCOMPONENT;
-        wcex.hbrBackground = (HBRUSH)(COLOR_WINDOW+1);;
+        wcex.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
         wcex.lpszMenuName  = NULL;
         wcex.hCursor       = LoadCursor(NULL, IDC_ARROW);
-        wcex.lpszClassName = L&quot;DirectCompDemoApp&quot;;
+        wcex.lpszClassName = L"DirectCompDemoApp";
 
         RegisterClassEx(&wcex);
 
@@ -534,8 +534,8 @@ HRESULT DemoApp::InitializeMainWindow()
         float height = static_cast<float>(rect.bottom - rect.top);
 
         m_hwndMain = CreateWindow(
-            L&quot;DirectCompDemoApp&quot;,
-            L&quot;DirectComposition Demo Application&quot;,
+            L"DirectCompDemoApp",
+            L"DirectComposition Demo Application",
             WS_OVERLAPPED | WS_SYSMENU,
             CW_USEDEFAULT,
             CW_USEDEFAULT,
@@ -588,7 +588,7 @@ HRESULT DemoApp::InitializeLayeredChildWindow()
     wcex.hCursor        = LoadCursor(NULL, IDC_ARROW);
     wcex.hbrBackground  = (HBRUSH) GetStockObject (GRAY_BRUSH);
     wcex.lpszMenuName   = NULL;
-    wcex.lpszClassName  = L&quot;DCompLayeredChildWindow&quot;;
+    wcex.lpszClassName  = L"DCompLayeredChildWindow";
     wcex.hIconSm        = NULL;
     
     if (!RegisterClassExW(&wcex))
@@ -597,17 +597,17 @@ HRESULT DemoApp::InitializeLayeredChildWindow()
     }
 
     m_hwndLayeredChild = CreateWindowEx(WS_EX_LAYERED,
-        L&quot;DCompLayeredChildWindow&quot;,                
-        NULL,                                    
-        WS_CHILD | WS_CLIPSIBLINGS,             
-        0, 
-        0, 
+        L"DCompLayeredChildWindow",
+        NULL,
+        WS_CHILD | WS_CLIPSIBLINGS,
+        0,
+        0,
         static_cast<UINT>(ceil(640.0f * m_dpiX / 96.0f)),
-        static_cast<UINT>(ceil(480.0f * m_dpiY / 96.0f)),                                  
-        m_hwndMain,                               
-        NULL,                                     
-        HINST_THISCOMPONENT,                    
-        this);                                   
+        static_cast<UINT>(ceil(480.0f * m_dpiY / 96.0f)),
+        m_hwndMain,
+        NULL,
+        HINST_THISCOMPONENT,
+        this);
 
     hr = m_hwndLayeredChild ? S_OK : E_FAIL;
     if (SUCCEEDED(hr))
@@ -725,8 +725,8 @@ HRESULT DemoApp::CreateDeviceResources()
         hr = LoadResourceD2DBitmap(
             m_pRenderTarget,
             m_pWICFactory,
-            L&quot;WhiteFlowers&quot;,
-            L&quot;Image&quot;,
+            L"WhiteFlowers",
+            L"Image",
             &m_pBitmap
             );
     }

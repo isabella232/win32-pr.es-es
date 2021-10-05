@@ -7,30 +7,29 @@ keywords:
 - detección de varios puntos táctiles
 - seguimiento de varios puntos táctiles
 ms.topic: article
-ms.date: 05/31/2018
-ms.openlocfilehash: 13b9eaf665b850eea8925bd531ffd1e9ec3fcf40
-ms.sourcegitcommit: d75fc10b9f0825bbe5ce5045c90d4045e3c53243
+ms.date: 10/01/2021
+ms.openlocfilehash: f983f6350f33654253300be081b78ddcc843dd15
+ms.sourcegitcommit: b1f058e2360e54c07cb988a3204ec33f47889122
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127359939"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "129454591"
 ---
 # <a name="detecting-and-tracking-multiple-touch-points"></a>Detección y seguimiento de varios puntos táctiles
 
 En los pasos siguientes se explica cómo realizar un seguimiento de varios puntos táctiles mediante Windows Touch.
 
-1.  Cree una aplicación y habilite Windows Touch.
-2.  Agregue un controlador para [**WM \_ TOUCH y**](wm-touchdown.md) puntos de seguimiento.
-3.  Dibuje los puntos.
+1. Cree una aplicación y habilite Windows Touch.
+2. Agregue un controlador para [**WM \_ TOUCH y**](wm-touchdown.md) puntos de seguimiento.
+3. Dibuje los puntos.
 
 Una vez que la aplicación se ejecute, se representarán círculos bajo cada toque. En la siguiente captura de pantalla se muestra el aspecto de la aplicación mientras se ejecuta.
 
 ![captura de pantalla que muestra una aplicación que representa puntos táctiles como círculos verdes y amarillos](images/multitouchpoints.png)
 
-## <a name="create-an-application-and-enable-windows-touch"></a>Creación de una aplicación y habilitación de Windows Touch
+## <a name="create-an-application-and-enable-windows-touch"></a>Creación de una aplicación y habilitación Windows Touch
 
-Comience con una aplicación de Microsoft Win32 con el asistente Microsoft Visual Studio aplicaciones. Una vez completado el asistente, agregue compatibilidad con los mensajes táctiles de Windows estableciendo la versión de Windows en targetver.h e incluyendo windows.h y windowsx.h en la aplicación. En el código siguiente se muestra cómo establecer la Windows en targetver.h.
-
+Comience con una aplicación De Microsoft Win32 con el asistente Microsoft Visual Studio aplicaciones. Una vez completado el asistente, agregue compatibilidad con los mensajes de Windows Touch estableciendo la versión de Windows en targetver.h e incluyendo windows.h y windowsx.h en la aplicación. El código siguiente muestra cómo establecer la versión Windows en targetver.h.
 
 ```C++
 #ifndef WINVER                  // Specifies that the minimum required platform is Windows 7.
@@ -50,10 +49,7 @@ Comience con una aplicación de Microsoft Win32 con el asistente Microsoft Visua
 #endif
 ```
 
-
-
 El código siguiente muestra cómo se deben agregar las directivas include. Además, puede crear algunas variables globales que se usarán más adelante.
-
 
 ```C++
 #include <windows.h>    // included for Windows Touch
@@ -89,12 +85,9 @@ COLORREF colors[] = { RGB(153,255,51),
 
 ```
 
-
-
 ## <a name="add-handler-for-wm_touch-and-track-points"></a>Agregar controlador para WM \_ TOUCH y puntos de seguimiento
 
 En primer lugar, declare algunas variables que usa el [**controlador WM \_ TOUCH**](wm-touchdown.md) en [**WndProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)).
-
 
 ```C++
 int wmId, wmEvent, i, x, y;
@@ -104,10 +97,7 @@ PTOUCHINPUT pInputs;
 POINT ptInput;   
 ```
 
-
-
 Ahora, inicialice las variables usadas para almacenar puntos táctiles y registre la ventana para la entrada táctil desde el **método InitInstance.**
-
 
 ```C++
 BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
@@ -140,10 +130,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 }
 ```
 
-
-
 A continuación, [**controle el mensaje \_ WM TOUCH**](wm-touchdown.md) desde [**el método WndProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) El código siguiente muestra una implementación del controlador para **WM \_ TOUCH**.
-
 
 ```C++
 case WM_TOUCH:        
@@ -178,17 +165,12 @@ case WM_TOUCH:
   }  
 ```
 
-
-
 > [!Note]  
-> Para usar la función [**ScreenToClient,**](/windows/desktop/api/winuser/nf-winuser-screentoclient) debe tener compatibilidad con valores altos de PPP en la aplicación. Para obtener más información sobre la compatibilidad con valores altos de PPP, consulte la [sección Valores altos]( ../hidpi/high-dpi-desktop-application-development-on-windows.md) de PPP de MSDN.
-
- 
+> Para usar la función [**ScreenToClient,**](/windows/desktop/api/winuser/nf-winuser-screentoclient) debe tener compatibilidad con valores altos de PPP en la aplicación. Para obtener más información sobre la compatibilidad con valores altos de PPP, vea [Valores altos de PPP.]( ../hidpi/high-dpi-desktop-application-development-on-windows.md)
 
 Ahora, cuando un usuario toque la pantalla, las posiciones que está tocándose se almacenarán en la matriz de puntos. El **miembro dwID** de la [**estructura TOUCHINPUT**](/windows/win32/api/winuser/ns-winuser-touchinput) almacena un identificador que dependerá del hardware.
 
 Para solucionar el problema del miembro dwID que depende del hardware, el controlador de casos [**WM \_ TOUCH**](wm-touchdown.md) usa una función, **GetContactIndex**, que asigna el miembro **dwID** de la estructura [**TOUCHINPUT**](/windows/win32/api/winuser/ns-winuser-touchinput) a un punto que se dibuja en la pantalla. El código siguiente muestra una implementación de esta función.
-
 
 ```C++
 // This function is used to return an index given an ID
@@ -208,12 +190,26 @@ int GetContactIndex(int dwID){
 }
 ```
 
-
+> [!Important]
+> **Windows 11 y versiones más recientes**
+>
+> *Algunas interacciones táctiles de tres y cuatro dedos ya no funcionarán en Windows aplicaciones de forma predeterminada.*
+>
+> De forma predeterminada, el sistema ahora consume interacciones táctiles de tres y cuatro dedos para operaciones como cambiar o minimizar ventanas y cambiar escritorios virtuales. Como estas interacciones se controlan ahora en el nivel del sistema, la funcionalidad de la aplicación podría verse afectada por este cambio.
+>
+> Para admitir interacciones de tres o cuatro dedos dentro de una aplicación, se ha introducido una nueva configuración de usuario que especifica si el sistema controla o no estas interacciones:
+>
+> **Bluetooth & dispositivos > touch > "Gestos táctiles de tres y cuatro dedos"**
+>
+> Cuando se establece en "On" (valor predeterminado), el sistema controlará las interacciones de tres y cuatro dedos (las aplicaciones no podrán admitirlas).
+>
+> Cuando se establece en "Desactivado", las aplicaciones pueden usar interacciones de tres y cuatro dedos (el sistema no las controlará).
+>
+> Si la aplicación debe admitir estas interacciones, se recomienda informar a los usuarios de esta configuración y proporcionar un vínculo que inicie la aplicación Configuración a la página correspondiente (ms-settings:devices-touch). Para más información, consulte [Selector. Método LaunchUriAsync](/uwp/api/windows.system.launcher.launchuriasync).
 
 ## <a name="draw-the-points"></a>Dibujar los puntos
 
 Declare las siguientes variables para la rutina de dibujo.
-
 
 ```C++
     // For double buffering
@@ -229,10 +225,7 @@ Declare las siguientes variables para la rutina de dibujo.
     int index;
 ```
 
-
-
 El *memDC* de contexto de presentación de memoria se usa para almacenar un contexto de gráficos temporal que se intercambia con el contexto de presentación representado, *hdc*, para eliminar el parpadeo. Implemente la rutina de dibujo, que toma los puntos que ha almacenado y dibuja un círculo en los puntos. El código siguiente muestra cómo podría implementar el [**controlador WM \_ PAINT.**](/windows/desktop/gdi/wm-paint)
-
 
 ```C++
   case WM_PAINT:
@@ -265,8 +258,6 @@ El *memDC* de contexto de presentación de memoria se usa para almacenar un cont
     break;
 ```
 
-
-
 Al ejecutar la aplicación, ahora debería tener un aspecto parecido al de la ilustración al principio de esta sección.
 
 Para disfrutar, puede dibujar algunas líneas adicionales alrededor de los puntos táctiles. En la siguiente captura de pantalla se muestra el aspecto de la aplicación con algunas líneas adicionales dibujadas alrededor de los círculos.
@@ -275,11 +266,4 @@ Para disfrutar, puede dibujar algunas líneas adicionales alrededor de los punto
 
 ## <a name="related-topics"></a>Temas relacionados
 
-<dl> <dt>
-
 [Windows Entrada táctil](guide-multi-touch-input.md)
-</dt> </dl>
-
- 
-
- 
