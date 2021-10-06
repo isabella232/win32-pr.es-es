@@ -4,16 +4,16 @@ ms.assetid: b7326b09-0829-4e76-80d0-e4ecdf7f556e
 title: Eventos de reactivación del sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f67ec53b474e303bada3a27bda1adea8170d5be2d6a84354fc17094ddec7da2
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 7f363820425f143b9a669008ce45df7e7d014817
+ms.sourcegitcommit: 5c2f3d7242e53805cc45deb2b251aaa64750ea46
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119143228"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129584569"
 ---
 # <a name="system-wake-up-events"></a>Eventos de reactivación del sistema
 
-La siguiente información se aplica a las reactivaciones de suspensión [(S3) e hibernación (S4).](/windows-hardware/drivers/kernel/system-sleeping-states) Para las reactivaciones del modo de espera moderno (S0 Low Power Idle), consulte las [transiciones de inactivo a activo.](/windows-hardware/design/device-experiences/transition-from-idle-to-active)
+La siguiente información se aplica a las reactivaciones de suspensión [(S3) e hibernación (S4).](/windows-hardware/drivers/kernel/system-sleeping-states) Para las reactivaciones del modo de espera moderno (S0 low power idle), consulte transición entre [los estados inactivo y activo](/windows-hardware/design/device-experiences/transitioning-between-idle-and-active-states).
 
 La aplicación puede restaurar un equipo que se encuentra en estado de suspensión al estado de funcionamiento mediante un temporizador programado o un evento de dispositivo. Esto se conoce como evento *de reactivación.* Use un [objeto de temporizador que se](/windows/desktop/Sync/waitable-timer-objects) puede esperar para especificar la hora a la que se debe reactivar el sistema. Para crear el objeto, use la [**función CreateWaitableTimer.**](/windows/win32/api/synchapi/nf-synchapi-createwaitabletimerw) Para establecer el temporizador, use la [**función SetWaitableTimer.**](/windows/desktop/api/synchapi/nf-synchapi-setwaitabletimer) El *parámetro pDueTime* especifica cuándo se señalará el temporizador. Para especificar que el sistema debe activarse cuando se señale el temporizador, establezca el *parámetro fResume* en **TRUE.**
 
